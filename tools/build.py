@@ -13,7 +13,19 @@ ISSUES = "https://github.com/VadneyK/internships/issues"
 
 meta_path = os.path.join(ROOT, "data", "meta.json")
 meta = json.load(open(meta_path)) if os.path.exists(meta_path) else {"count": 0, "checked_label": "Oct 7, 2026"}
-ver = str(int(time.time()))[-6:]
+def _asset_version():
+    """Cache-busting version: a hash of the CSS, JS and data files, so rebuilding without changes gives identical pages."""
+    import glob
+    import hashlib
+    h = hashlib.sha1()
+    paths = sorted(glob.glob(os.path.join(ROOT, "assets", "css", "*.css")) + glob.glob(os.path.join(ROOT, "assets", "js", "*.js")) + [os.path.join(ROOT, "data", "entries.json")])
+    for pth in paths:
+        if os.path.exists(pth):
+            h.update(open(pth, "rb").read())
+    return h.hexdigest()[:8]
+
+
+ver = _asset_version()
 
 layout = open(os.path.join(SRC, "_layout.html"), encoding="utf-8").read()
 PAGES = ["find", "playbook", "resume", "rules", "contribute", "about"]

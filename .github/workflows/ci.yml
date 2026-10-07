@@ -33,8 +33,7 @@ jobs:
           python3 tools/build.py
       - name: Fail if generated files are out of date
         run: |
-          # Version strings in page URLs change on every build, so ignore those lines.
-          git diff --exit-code -I '\?v=[0-9]\+' -- data/entries.json data/entries.csv data/meta.json '*.html' || {
+          git diff --exit-code -- data/entries.json data/entries.csv data/meta.json sitemap.xml robots.txt '*.html' || {
             echo "::error::Generated files are out of date. Run: python3 tools/build_data.py && python3 tools/build.py, then commit."
             exit 1
           }
