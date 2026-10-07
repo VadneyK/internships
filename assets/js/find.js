@@ -53,7 +53,8 @@
     html += "<h3>" + G.esc(e.name) + "</h3>";
     html += '<p class="org">' + G.esc(e.org || "") + (e.city ? " &middot; " + G.esc(e.city) : "") + "</p>";
     html += '<p class="what">' + G.esc(e.what_you_do || "") + "</p>";
-    html += '<div class="row"><span class="tag ghost">' + G.esc(ageText(e)) + "</span>" + (e.pay_detail ? '<span class="tag ghost">' + G.esc(e.pay_detail) + "</span>" : "") + "</div>";
+    html += '<div class="row"><span class="tag ghost">' + G.esc(ageText(e)) + "</span></div>";
+    if (e.pay_detail) html += '<p class="pay"><b>Pay or cost:</b> ' + G.esc(e.pay_detail) + "</p>";
     html += deadlineLine(e);
     html += "<details><summary>Who can apply and how</summary><dl>";
     if (e.who_can_apply) html += "<div><dt>Who can apply</dt><dd>" + G.esc(e.who_can_apply) + "</dd></div>";
