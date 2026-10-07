@@ -6,7 +6,7 @@
 
 Classification:
   ok       2xx or 3xx
-  blocked  403, 429, 999 or a bot wall (the site refuses scripts; check by hand, not a failure)
+  blocked  any other 4xx (403, 405, 429, 999...) or a bot wall: the site refuses scripts, so check by hand (not a failure)
   broken   404, 410, DNS failure, certificate error, or 5xx twice in a row
 """
 import argparse
@@ -39,10 +39,10 @@ def check(url):
                 last = e.code
                 if method == "HEAD" and e.code in (403, 404, 405, 410, 501):
                     continue  # many servers answer HEAD badly; confirm with GET before judging
-                if e.code in (403, 429, 999):
-                    return ("blocked", e.code)
                 if e.code in (404, 410):
                     return ("broken", e.code)
+                if method == "GET" and e.code < 500 or e.code in (403, 429, 999):
+                    return ("blocked", e.code)  # the site refuses scripts; a person should check in a browser
             except (urllib.error.URLError, ssl.SSLError, TimeoutError, ConnectionError) as e:
                 reason = getattr(e, "reason", e)
                 last = str(reason)[:80]
