@@ -1,0 +1,44 @@
+{
+  "id": "acwdb-youth-innovation-2",
+  "name": "Alameda County Youth Innovation Program",
+  "org": "Alameda County Workforce Development Board",
+  "regions": [
+    "alameda",
+    "east-bay",
+    "fremont",
+    "oakland"
+  ],
+  "city": "Hayward, CA (providers across Alameda County)",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Help preparing for college and jobs, including internships and apprenticeships, plus work experience, mentoring, career counseling and financial literacy.",
+  "min_age": 16,
+  "max_age": 21,
+  "grades": null,
+  "who_can_apply": "Ages 16 to 21 who are currently in high school or college. Out-of-school youth ages 16 to 24 use a separate county youth program.",
+  "paid_type": "mixed",
+  "pay_detail": "Not stated on the page. Services include paid and unpaid work experience, so ask the provider about pay.",
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Rolling.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Contact one of the providers listed on the program page: Eden ROP in Hayward, (510) 293-2900, or Tri-Valley ROP in Livermore, (925) 487-4153. County line: 510-259-3842.",
+  "needs_work_permit": true,
+  "url": "https://acwdb.org/youth-innovation/",
+  "apply_url": "https://acwdb.org/youth-innovation/",
+  "sources_fetched": [
+    "https://acwdb.org/youth-innovation/",
+    "https://acwdb.org/youth/",
+    "https://www.acwdb.org",
+    "https://socialservices.alamedacountyca.gov/about-us/Government-and-Community-Relations/divisions/workforce-development-board"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "Two providers only: Eden ROP (Hayward) and Tri-Valley ROP (Livermore), so which one serves you depends on where you live. Pay is not stated. A Hayward AJCC fact sheet (Rubicon Programs) mentions federal WIOA youth ages 14 to 24 with at least one barrier; ask your provider about younger teens."
+}

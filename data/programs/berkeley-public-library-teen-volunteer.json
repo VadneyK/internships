@@ -1,0 +1,40 @@
+{
+  "id": "berkeley-public-library-teen-volunteer",
+  "name": "Berkeley Public Library Teen Volunteer and Youth Worker",
+  "org": "Berkeley Public Library",
+  "regions": [
+    "berkeley"
+  ],
+  "city": "Berkeley, CA",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "any"
+  ],
+  "what_you_do": "Volunteer at a Berkeley library (Teen Volunteer Application), or work as a paid Youth Worker, up to 15 hours a week, hired through Berkeley YouthWorks.",
+  "min_age": 14,
+  "max_age": 25,
+  "grades": null,
+  "who_can_apply": "Teen volunteer: fill out the application (no age stated). Youth Worker: ages 14 to 25, no experience needed; a work permit is required if under 18.",
+  "paid_type": "mixed",
+  "pay_detail": "Volunteering is unpaid. Youth Worker jobs are paid (rate not posted; no benefits).",
+  "season": "year-round",
+  "duration": "Youth Worker up to 15 hours a week",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Library page says YouthWorks accepts applications in March and October only. YouthWorks lists a Winter 2027 interest form due Oct 30, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Volunteers: complete the Teen Volunteer Application form. Paid work: go through Berkeley YouthWorks (2180 Milvia St, 510-981-4970); see the YouthWorks page for the current interest form.",
+  "needs_work_permit": true,
+  "url": "https://www.berkeleypubliclibrary.org/teens/jobs-and-volunteering",
+  "apply_url": "https://forms.office.com/g/EjVD1khRnm",
+  "sources_fetched": [
+    "https://www.berkeleypubliclibrary.org/teens/jobs-and-volunteering",
+    "https://berkeleyca.gov/youthworks"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "The library page also lists other groups that take teen volunteers. Berkeley YouthWorks may require Berkeley residency."
+}

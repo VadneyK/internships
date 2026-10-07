@@ -1,0 +1,43 @@
+{
+  "id": "work2future-youth",
+  "name": "work2future Young Adult Program",
+  "org": "City of San Jose, work2future",
+  "regions": [
+    "san-jose",
+    "silicon-valley"
+  ],
+  "city": "San Jose, CA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any",
+    "business-finance",
+    "health",
+    "tech-cs"
+  ],
+  "what_you_do": "Career advising, job readiness workshops, paid work experience and connections to employers for young people in Santa Clara County.",
+  "min_age": 16,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Santa Clara County residents ages 16 to 24 who are low-income and have at least one barrier to employment or education.",
+  "paid_type": "mixed",
+  "pay_detail": "Paid work experience; the page says earn up to $25 an hour. Other services are free.",
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Enrollment is open year-round.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Call the San Jose Job Center at 408-794-1101 or the Gilroy center at 408-758-3477 and ask about the young adult program.",
+  "needs_work_permit": true,
+  "url": "https://www.work2future.org/young-adults/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.work2future.org/",
+    "https://www.work2future.org/young-adults/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "San Jose Works, a partner program for ages 14 to 29, is also listed on the page. Income and barrier rules apply. Job centers may be open by appointment only."
+}

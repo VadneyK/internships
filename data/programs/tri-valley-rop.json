@@ -1,0 +1,46 @@
+{
+  "id": "tri-valley-rop",
+  "name": "Tri-Valley ROP (Regional Occupational Program)",
+  "org": "Tri-Valley ROP",
+  "regions": [
+    "east-bay",
+    "alameda"
+  ],
+  "city": "Livermore, CA",
+  "type": "school-pathway",
+  "fields": [
+    "trades",
+    "health",
+    "tech-cs",
+    "engineering",
+    "education",
+    "law-government"
+  ],
+  "what_you_do": "Free career classes (30+ courses in about 10 career areas such as building trades, health science, IT and public services) for students in Dublin, Livermore and Pleasanton high schools.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "High school students in Dublin Unified, Livermore Valley Joint Unified or Pleasanton Unified school districts.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Free classes; you earn high school elective credit (many satisfy a-g requirements)",
+  "season": "school-year",
+  "duration": null,
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Registration for the 2026-2027 school year is closed. Talk to your school's College and Career Specialist or counselor.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Sign up through your high school's regular class registration; your school's College and Career Specialist finishes the ROP signup. Phone (925) 455-4800.",
+  "needs_work_permit": false,
+  "url": "https://www.tvrop.org",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.tvrop.org",
+    "https://www.tvrop.org/students-parents/student-registration",
+    "https://www.tvrop.org/students-parents/faqs"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "You must arrange your own transportation to off-site classes. Classes run at six high schools and Las Positas College, during the school day and after school."
+}

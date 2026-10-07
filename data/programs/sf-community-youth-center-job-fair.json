@@ -1,0 +1,40 @@
+{
+  "id": "sf-community-youth-center-job-fair",
+  "name": "Community Youth Center Youth Job Fair",
+  "org": "Community Youth Center of San Francisco",
+  "regions": [
+    "san-francisco"
+  ],
+  "city": "San Francisco, CA (Stonestown Galleria)",
+  "type": "paid-youth-program",
+  "fields": [
+    "any",
+    "education",
+    "tech-cs"
+  ],
+  "what_you_do": "One-day job fair for youth looking for work: meet employers, learn about openings, get resume help, practice interviews, take headshots and get free professional clothing.",
+  "min_age": 14,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Youth ages 14 to 24. Register with the Google Form on the DCYF listing.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free event",
+  "season": "fall",
+  "duration": "Wed Oct 14, 2026, 12 to 4 p.m.",
+  "status": "event",
+  "opens_iso": null,
+  "deadline_text": "Wednesday, October 14, 2026, 12:00 to 4:00 p.m. at Stonestown Galleria.",
+  "deadline_iso": "2026-10-14",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Register using the form linked from the sf.gov youth opportunities page. Bring a resume if you have one.",
+  "needs_work_permit": false,
+  "url": "https://www.sf.gov/opportunities-for-youth-ages-14-24",
+  "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLSe3AVLzOyaO2MSIox5_v5-gRPsBiJf-bTmrPYatTZqMGpyShA/viewform",
+  "sources_fetched": [
+    "https://www.sf.gov/opportunities-for-youth-ages-14-24"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "The page does not list which employers will attend. It is a free event, not a job offer."
+}

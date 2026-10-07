@@ -1,0 +1,40 @@
+{
+  "id": "major-league-hacking",
+  "name": "Major League Hacking (MLH) hackathons",
+  "org": "Major League Hacking",
+  "regions": [
+    "virtual"
+  ],
+  "city": "Mostly in-person events; some online",
+  "type": "virtual",
+  "fields": [
+    "tech-cs"
+  ],
+  "what_you_do": "Student hackathons and coding events run by MLH, plus a 12-week remote Fellowship that pays a stipend. Most listed hackathons do not say high school students can enter.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Rules differ by event. On the 2027 events list only one event (hackPHS in New Jersey) is marked High School. The Fellowship page gives no age or student rule. Read each event page.",
+  "paid_type": "unpaid",
+  "pay_detail": "Event costs are not listed on the pages read; check each event. The Fellowship pays a stipend (amount not stated).",
+  "season": "year-round",
+  "duration": "Weekend events; Fellowship is 12 weeks",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Dates differ by event. See the 2027 season events list. California events listed: DiamondHacks (La Jolla, Apr 4 to 5, 2027) and LA Hacks (Los Angeles, Apr 16 to 18, 2027).",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Browse the events list on mlh.com and read each event's age rule before registering.",
+  "needs_work_permit": false,
+  "url": "https://www.mlh.com/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.mlh.com/",
+    "https://www.mlh.com/seasons/2027/events",
+    "https://fellowship.mlh.com/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 3,
+  "notes": "The pages read did not state a minimum age. Many MLH events are aimed at college students, so check before you plan travel."
+}

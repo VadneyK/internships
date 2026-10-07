@@ -1,0 +1,41 @@
+{
+  "id": "congressional-app-challenge",
+  "name": "Congressional App Challenge",
+  "org": "Congressional App Challenge (House of Representatives)",
+  "regions": [
+    "national",
+    "virtual",
+    "statewide"
+  ],
+  "city": "Virtual",
+  "type": "entrepreneurship",
+  "fields": [
+    "tech-cs"
+  ],
+  "what_you_do": "Build an app in any language and submit it to your House district. Winners are shown at the US Capitol.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Middle and high school",
+  "who_can_apply": "Middle or high school students living in the US (citizenship not required). Solo or teams up to four. Half the team must live in the district.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free",
+  "season": "fall",
+  "duration": "Build time before the deadline",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "The 2026 deadline for registering and submitting is October 26, 2026.",
+  "deadline_iso": "2026-10-26",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Register on the Student Registration page, then submit the app online.",
+  "needs_work_permit": false,
+  "url": "https://www.congressionalappchallenge.us/",
+  "apply_url": "https://www.congressionalappchallenge.us/",
+  "sources_fetched": [
+    "https://www.congressionalappchallenge.us/",
+    "https://www.congressionalappchallenge.us/rules/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "Any language or platform is allowed, solo or teams up to four. Check the Participating Districts page on the site to confirm your district takes part."
+}

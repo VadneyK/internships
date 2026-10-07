@@ -1,0 +1,38 @@
+{
+  "id": "ousd-linked-learning-work-based-learning",
+  "name": "OUSD Linked Learning: Pathways, Internships and Work Permits",
+  "org": "Oakland Unified School District, High School Linked Learning Office",
+  "regions": [
+    "oakland"
+  ],
+  "city": "Oakland, CA (1011 Union St)",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Career pathways, internships and job placement help, dual enrollment with Peralta Colleges, and work permit processing for OUSD students.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "OUSD high school students.",
+  "paid_type": "mixed",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": null,
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Ongoing; talk to your school's pathway or career counselor. No dates posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Ask your school's Linked Learning or pathway coordinator, or call the district at (510) 879-8000. The office also processes work permits for students.",
+  "needs_work_permit": false,
+  "url": "https://www.ousd.org/linkedlearning",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.ousd.org/linkedlearning"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "The office handles work permits (needed for any paid job under 18). Check the pathways pages on the OUSD site to find work-based learning at your school."
+}

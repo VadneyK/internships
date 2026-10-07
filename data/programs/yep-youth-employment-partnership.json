@@ -1,0 +1,42 @@
+{
+  "id": "yep-youth-employment-partnership",
+  "name": "Youth Employment Partnership (YEP) summer and afterschool jobs",
+  "org": "Youth Employment Partnership, Inc.",
+  "regions": [
+    "alameda",
+    "east-bay",
+    "oakland"
+  ],
+  "city": "Oakland, CA (2300 International Blvd)",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Paid job training and work placements for Oakland youth, including summer programs (Oakland Summer Rising, Team Oakland, Career Try-Out) and afterschool jobs.",
+  "min_age": 14,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Oakland youth. YEP's job training serves ages 14 to 24. The City of Oakland's summer list shows YEP's summer program for ages 14 to 18.",
+  "paid_type": "paid",
+  "pay_detail": "Paid; about 100 hours of work in the City summer program (hourly rate not posted)",
+  "season": "year-round",
+  "duration": "Summer: about 100 hours, June 1 to Sept 30 (City list). Afterschool jobs during the school year.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No closing dates posted. YEP lists an Afterschool Job Application and a Young Adult Program Application 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Use the application links on yep.org/how-you-join, or call 510-533-3447 or visit 2300 International Blvd, Oakland.",
+  "needs_work_permit": true,
+  "url": "https://www.yep.org",
+  "apply_url": "https://www.yep.org/how-you-join/",
+  "sources_fetched": [
+    "https://www.oaklandca.gov/Government/Working-for-Oakland/Summer-Jobs-and-Internships-for-Youth/Youth-Employment-and-Training",
+    "https://www.yep.org",
+    "https://www.yep.org/how-you-join/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "The YEP page does not give pay rates. Age 14 to 18 for summer comes from the City of Oakland table; the 19 to 24 programs are for older youth."
+}

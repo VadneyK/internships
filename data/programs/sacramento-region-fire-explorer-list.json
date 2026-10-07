@@ -1,0 +1,41 @@
+{
+  "id": "sacramento-region-fire-explorer-list",
+  "name": "Sacramento County fire explorer, academy and high school fire pathways list",
+  "org": "Sacramento Metropolitan Fire District",
+  "regions": [
+    "sacramento"
+  ],
+  "city": "Sacramento County, CA",
+  "type": "volunteer",
+  "fields": [
+    "law-government",
+    "health"
+  ],
+  "what_you_do": "A Metro Fire page listing local youth fire programs: City of Sacramento Firefighter Youth Academy, Cosumnes Explorers, and school fire pathways at Del Campo, SAVA, Inderkum and Valley High.",
+  "min_age": 14,
+  "max_age": 20,
+  "grades": "9 to 12",
+  "who_can_apply": "The page says programs are typically ages 14 to 20 and often need a 2.0 GPA, high school enrollment and parent consent under 18. Each program has its own rules.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": null,
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Varies by program. Spring 2027 for the Sacramento academy and Cosumnes Explorers.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Use the links on the Metro Fire page and contact each program directly.",
+  "needs_work_permit": false,
+  "url": "https://metrofire.ca.gov/fire-service-explorer-cadet-programs-sacramento-county-region",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://metrofire.ca.gov/fire-service-explorer-cadet-programs-sacramento-county-region",
+    "https://www.cityofsacramento.gov/fire/join-sacramento-fire/youth-programs/sfya",
+    "https://www.cosumnescsd.gov/1356/Fire-Explorer-Program"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Details from the programs' own pages: Sacramento Firefighter Youth Academy is free, ages 14 to 17, 9 months of Saturdays 8 am to 2 pm starting end of July, 35 spots, applications open in spring. Cosumnes Fire Explorers are ages 15 to 18 (juniors and seniors), 2.0 GPA, and applications for next school year open in spring 2027."
+}

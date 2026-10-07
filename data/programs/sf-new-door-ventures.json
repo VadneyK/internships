@@ -1,0 +1,39 @@
+{
+  "id": "sf-new-door-ventures",
+  "name": "New Door Ventures Employment Program",
+  "org": "New Door Ventures",
+  "regions": [
+    "san-francisco"
+  ],
+  "city": "San Francisco, CA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Six month paid internships with employer partners, plus job coaching, for young people who are out of school or work.",
+  "min_age": 17,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Ages 17 to 24. Aimed at 'opportunity youth' who are out of school or not working.",
+  "paid_type": "paid",
+  "pay_detail": "Paid (rate not posted)",
+  "season": "year-round",
+  "duration": "6 months",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Applications accepted all year (per the sf.gov youth listing).",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply on the New Door intake portal linked from their site. The application link is on the official page.",
+  "needs_work_permit": true,
+  "url": "https://www.newdoor.org/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.newdoor.org/",
+    "https://www.sf.gov/opportunities-for-youth-ages-14-24"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 3,
+  "notes": "Mainly for 17 year olds and older who are not in a regular school path; not the usual fit for a student who is in school. Pay is not stated on the pages read."
+}

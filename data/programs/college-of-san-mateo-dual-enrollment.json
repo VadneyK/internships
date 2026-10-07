@@ -1,0 +1,40 @@
+{
+  "id": "college-of-san-mateo-dual-enrollment",
+  "name": "College of San Mateo Dual Enrollment and Concurrent Enrollment",
+  "org": "College of San Mateo",
+  "regions": [
+    "silicon-valley",
+    "peninsula"
+  ],
+  "city": "San Mateo, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take free college classes at College of San Mateo while in high school. Dual enrollment (through partner high schools) includes free books and materials; concurrent enrollment is free for up to 11 units a semester.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "Concurrent enrollment: high school students in grades 9 to 12. Dual enrollment: students at CSM's partner high schools; talk to your school counselor.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Free. Dual enrollment includes textbooks and materials; concurrent enrollment is free for up to 11 units per semester.",
+  "season": "school-year",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No application deadline stated on the pages read.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Create an OpenCCC account and apply to CSM online. For dual enrollment, meet with your high school counselor first, then register with the Dual Enrollment team. Questions: csmoutreach@smccd.edu.",
+  "needs_work_permit": false,
+  "url": "https://collegeofsanmateo.edu/highschool/",
+  "apply_url": "https://www.opencccapply.net/cccapply-welcome?cccMisCode=372",
+  "sources_fetched": [
+    "https://collegeofsanmateo.edu/highschool/",
+    "https://collegeofsanmateo.edu/dualenrollment/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Dual enrollment is only through CSM's partner high schools. Concurrent enrollment is open to any high schooler but may need your counselor's approval at some schools. Skyline and Canada colleges run similar programs (not checked here)."
+}

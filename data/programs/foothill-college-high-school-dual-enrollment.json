@@ -1,0 +1,40 @@
+{
+  "id": "foothill-college-high-school-dual-enrollment",
+  "name": "Foothill College High School Dual Enrollment",
+  "org": "Foothill College",
+  "regions": [
+    "peninsula",
+    "silicon-valley"
+  ],
+  "city": "Los Altos Hills and Sunnyvale, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take real Foothill College classes for college and high school credit while in high school, on campus, online, or at Sunnyvale Center. Free up to 11 units a quarter.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "Any current high school student in grades 9 to 12. Apply to Foothill, then submit the Special Admit form signed by a parent or guardian and your high school principal or administrator. Meet course prerequisites; talk to your high school counselor.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "No cost up to 11 units in a regular quarter (6 in summer), counting Foothill and De Anza together. Textbooks and other fees are not covered.",
+  "season": "school-year",
+  "duration": "One quarter at a time",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No single deadline stated. Submit the form before you register each quarter.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply for admission to Foothill, submit the Special Admit form (parent and principal signatures, plus an unofficial transcript if asked), register, and pay any fees. Admissions: (650) 949-7325.",
+  "needs_work_permit": false,
+  "url": "https://foothill.edu/high-school/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://foothill.edu/high-school/",
+    "https://foothill.edu/high-school/faq.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "Foothill can give a free Clipper SmartPass for VTA buses and light rail. Undocumented students are welcome. Grades go on your permanent college record, and your parents cannot see college records. Partner-district options also exist: Middle College, College Now! (MVLA), Firebird Academy (Fremont Union)."
+}

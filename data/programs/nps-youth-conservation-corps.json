@@ -1,0 +1,40 @@
+{
+  "id": "nps-youth-conservation-corps",
+  "name": "National Park Service Youth Conservation Corps (YCC)",
+  "org": "National Park Service",
+  "regions": [
+    "national",
+    "san-francisco",
+    "statewide"
+  ],
+  "city": "Participating national parks (see the NPS park list)",
+  "type": "paid-youth-program",
+  "fields": [
+    "environment"
+  ],
+  "what_you_do": "Paid summer conservation jobs at national parks, working outdoors on park projects. Each park runs its own program.",
+  "min_age": 15,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Ages 15 to 18, permanent US residents, and able to commute daily. Nearly all sites are day programs with no housing.",
+  "paid_type": "paid",
+  "pay_detail": "At least the higher of the state or federal minimum wage, usually for a 40 hour week",
+  "season": "summer",
+  "duration": "8 to 10 weeks (can go up to 18), usually 40 hours per week",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Applications for the 2027 season open in late January or early February 2027. Closing dates are set by each park and are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Check the NPS YCC page in late January or early February 2027 for the park list and contacts, then apply to the park you want.",
+  "needs_work_permit": true,
+  "url": "https://www.nps.gov/subjects/youthprograms/ycc.htm",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.nps.gov/subjects/youthprograms/ycc.htm"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "Applications are closed right now. Each park runs its own program, so check whether a park near you takes part. Contact the national office through the link on the NPS page with general questions."
+}

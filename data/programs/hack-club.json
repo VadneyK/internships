@@ -1,0 +1,39 @@
+{
+  "id": "hack-club",
+  "name": "Hack Club",
+  "org": "Hack Club",
+  "regions": [
+    "national",
+    "virtual"
+  ],
+  "city": "Virtual and school clubs",
+  "type": "virtual",
+  "fields": [
+    "tech-cs"
+  ],
+  "what_you_do": "Free teen coding community with school clubs, an online Slack, game jams, hackathons and hardware events.",
+  "min_age": 13,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Teens ages 13 to 18. Free forever for teenagers.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free",
+  "season": "year-round",
+  "duration": "Ongoing",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Join anytime.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Join through hackclub.com and find or start a club.",
+  "needs_work_permit": false,
+  "url": "https://hackclub.com/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://hackclub.com/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "Free for teens. The page lists about 1,500 clubs and events such as game jams and a hardware hackathon in San Francisco."
+}

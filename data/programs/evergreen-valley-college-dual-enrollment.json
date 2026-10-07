@@ -1,0 +1,39 @@
+{
+  "id": "evergreen-valley-college-dual-enrollment",
+  "name": "Evergreen Valley College Dual Enrollment and CCAP",
+  "org": "Evergreen Valley College",
+  "regions": [
+    "san-jose",
+    "silicon-valley"
+  ],
+  "city": "San Jose, CA",
+  "type": "pre-college",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take free college classes while in high school: open classes at your own choice (up to 11 units, 7 in summer) or cohort classes at partner high schools (CCAP, up to 15 units a semester).",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "California students without a high school diploma or GED, with approval from your school counselor or principal. Adult school students in GED programs can also join.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "No enrollment fees for dual enrollment students; material fees are waived for CCAP students only",
+  "season": "school-year",
+  "duration": "By semester",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline stated on the page.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Submit the dual enrollment application, get your high school counselor or principal to approve, then enroll. Counseling: mycounselor@evc.edu, 408-270-6475.",
+  "needs_work_permit": false,
+  "url": "https://www.evc.edu/programs-academics/academic-resources/dual-enrollment",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.evc.edu/programs-academics/academic-resources/dual-enrollment"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "CCAP classes are closed cohort classes held at partner high schools, so ask your school if it has an agreement. The page does not state a grade or age rule. Textbook costs for non-CCAP students are not stated."
+}

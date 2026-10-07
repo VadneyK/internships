@@ -1,0 +1,40 @@
+{
+  "id": "chabot-dual-enrollment",
+  "name": "Chabot College Early College (Dual Enrollment)",
+  "org": "Chabot College",
+  "regions": [
+    "east-bay",
+    "alameda"
+  ],
+  "city": "Hayward, CA",
+  "type": "pre-college",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Tuition-free Individual Dual Enrollment (classes at Chabot or online), CCAP classes at your high school, and a summer academy.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "Current high school students. Each semester you complete a Chabot application and the concurrent enrollment packet. You can take any class except basic skills and PE.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Enrollment fees are waived. Out-of-state and international students pay $370 per unit. You buy your own books and arrange your own transportation. Maximum 11 units.",
+  "season": "year-round",
+  "duration": "Per term",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Rolling by term.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply to Chabot, pick a class, complete the IDE Enrollment Form, then register through MyPortal. Questions: cc-earlycollege@chabotcollege.edu or 510-723-6701.",
+  "needs_work_permit": false,
+  "url": "https://chabotcollege.edu/academics/early-college/new-student.php",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://chabotcollege.edu/academics/early-college/new-student.php",
+    "https://chabotcollege.edu/earlycollege/ide.php"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Also offers CCAP classes at your high school and a Summer Academy. Middle schoolers have a separate Bridge to College program."
+}

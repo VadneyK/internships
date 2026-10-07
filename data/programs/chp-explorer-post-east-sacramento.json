@@ -1,0 +1,37 @@
+{
+  "id": "chp-explorer-post-east-sacramento",
+  "name": "CHP Explorer Post (East Sacramento)",
+  "org": "California Highway Patrol",
+  "regions": [
+    "sacramento",
+    "statewide"
+  ],
+  "city": "Sacramento, CA",
+  "type": "volunteer",
+  "fields": [
+    "law-government"
+  ],
+  "what_you_do": "Explorer post for teens who want a law enforcement career, with training and mentoring from CHP officers.",
+  "min_age": 15,
+  "max_age": 20,
+  "grades": "9 to 12",
+  "who_can_apply": "The CHP lists 15 to 20 for Explorers; the East Sacramento post page snippet says ages 15 to 21.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Rolling.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "See the CHP Explorer post locator and contact the East Sacramento post.",
+  "needs_work_permit": false,
+  "url": "https://www.chp.ca.gov/chp-careers/explorer/locate-an-explorer-post/260-east-sacramento",
+  "apply_url": null,
+  "sources_fetched": [],
+  "verified": "snippet-only",
+  "verified_on": "2026-10-07",
+  "priority": 3,
+  "notes": "The CHP site blocked WebFetch (403) and a browser tab loaded blank, so ages come from search results and are unconfirmed. CHP has other posts. Confirm age limits and meeting times with the post."
+}

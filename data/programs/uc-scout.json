@@ -1,0 +1,39 @@
+{
+  "id": "uc-scout",
+  "name": "UC Scout Online High School Courses",
+  "org": "University of California (UC Santa Cruz)",
+  "regions": [
+    "statewide",
+    "virtual"
+  ],
+  "city": "Virtual",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "UC-approved online high school and AP courses that meet A-G requirements, self-paced.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "High school students looking to get ahead or recover credit. The site mentions free options for California public schools and scholarship applications for eligible students.",
+  "paid_type": "mixed",
+  "pay_detail": "Fees vary by course; the site mentions free options for CA public schools and scholarships (prices not on the home page)",
+  "season": "year-round",
+  "duration": "Self-paced",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Fall 2026 enrollment is open (as of Oct 7, 2026).",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Enroll from the courses page, ask your school counselor about school-paid seats, or call (408) 450-4962.",
+  "needs_work_permit": false,
+  "url": "https://www.ucscout.org/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.ucscout.org/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 3,
+  "notes": "This is coursework, not a job. Included because many teens use it to free up schedule time for jobs and internships."
+}

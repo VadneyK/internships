@@ -1,0 +1,38 @@
+{
+  "id": "sf-ccsf-dual-enrollment",
+  "name": "CCSF Dual Enrollment (free college classes)",
+  "org": "City College of San Francisco and SFUSD",
+  "regions": [
+    "san-francisco"
+  ],
+  "city": "San Francisco, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take free City College classes while in high school and earn both high school and college credit.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "SFUSD high school students, through a partnership with City College. Talk to your high school counselor about which classes are offered. Non-SFUSD students, or SFUSD students who want a class their school does not offer, use the Concurrent Enrollment page.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free",
+  "season": "school-year",
+  "duration": "By semester",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Not stated on the page. Ask your counselor before each term.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Talk to your high school counselor. Questions: dualenrollment@ccsf.edu. Non-SFUSD students use the CCSF Concurrent Enrollment page.",
+  "needs_work_permit": false,
+  "url": "https://www.ccsf.edu/academics/high-school-programs/dual-enrollment",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.ccsf.edu/academics/high-school-programs/dual-enrollment"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Classes can be at your high school or at a CCSF location. A permission consent form for high school students is linked on the page. Grade and credit rules are not stated on the page, so ask your counselor."
+}

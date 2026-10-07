@@ -1,0 +1,39 @@
+{
+  "id": "california-partnership-academies",
+  "name": "California Partnership Academies (CPA)",
+  "org": "California Department of Education",
+  "regions": [
+    "statewide"
+  ],
+  "city": "California (sites in many districts)",
+  "type": "school-pathway",
+  "fields": [
+    "any",
+    "health",
+    "tech-cs",
+    "engineering"
+  ],
+  "what_you_do": "A three-year 'school within a school' for grades 10 to 12 that mixes academics with a career focus, business mentors and internships.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "10 to 12",
+  "who_can_apply": "Students at schools that host an academy. Each academy sets its own application. Search the school's website for 'Partnership Academy'.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Not confirmed. Counted as school credit.",
+  "season": "school-year",
+  "duration": "3 years",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Application is through the school that hosts the academy.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Ask your counselor if your school has an academy, or check nearby high schools. Whether students from other districts may transfer in depends on the district's open enrollment rules.",
+  "needs_work_permit": false,
+  "url": "https://www.cde.ca.gov/ci/gs/hs/cpagen.asp",
+  "apply_url": null,
+  "sources_fetched": [],
+  "verified": "snippet-only",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "The CDE site blocked automated access on 2026-10-07 (bot check), so this card could not be re-confirmed against the official page. Grades 10 to 12 and the school-within-a-school model need confirming. Academies are run by individual schools, so ask your counselor. Fremont Unified says some CTE courses sit inside Partnership Academies."
+}

@@ -1,0 +1,38 @@
+{
+  "id": "berkeley-youthworks",
+  "name": "Berkeley YouthWorks",
+  "org": "City of Berkeley",
+  "regions": [
+    "berkeley"
+  ],
+  "city": "Berkeley, CA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Paid, part-time, temporary internships through the City of Berkeley, plus a Ready to Work workshop series that pays a stipend.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Berkeley residents (proof of residency at onboarding). Priority for youth facing barriers, such as foster care or legal system involvement, English learners, young parents, and students with IEPs or 504 plans. The page states no age rule.",
+  "paid_type": "paid",
+  "pay_detail": "Wage not posted. Ready to Work workshop stipend if you attend at least 7 of 8 sessions.",
+  "season": "year-round",
+  "duration": "Winter 2027 placements run January to March 2027",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Interest form for Winter 2027 is due October 30, 2026. Summer 2027 information is expected February 2027. Fall 2026 is full through November 2026.",
+  "deadline_iso": "2026-10-30",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the online YouthWorks interest form. Chosen candidates get an email for a 15 to 20 minute interview. Contact: youthworks@berkeleyca.gov, (510) 981-4970.",
+  "needs_work_permit": true,
+  "url": "https://berkeleyca.gov/youthworks",
+  "apply_url": "https://berkeleyca.gov/youthworks",
+  "sources_fetched": [
+    "https://berkeleyca.gov/youthworks"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "An interest form does not guarantee a placement. Berkeley Public Library lists the Youth Worker age as 14 to 25. Berkeley residents only."
+}

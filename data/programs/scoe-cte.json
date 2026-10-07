@@ -1,0 +1,42 @@
+{
+  "id": "scoe-cte",
+  "name": "Sacramento County Office of Education Career Technical Education",
+  "org": "Sacramento County Office of Education (SCOE)",
+  "regions": [
+    "sacramento"
+  ],
+  "city": "Sacramento, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any",
+    "trades",
+    "health",
+    "tech-cs"
+  ],
+  "what_you_do": "County CTE courses across 15 industry sectors that mix technical training with academics. A course catalog is posted on the SCOE CTE site.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Not stated on the page. Which classes you can take depends on your school district. Ask your counselor.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": null,
+  "season": "school-year",
+  "duration": null,
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Course catalog online; no student deadline posted on the page.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Not stated on the page. Ask your school counselor and look at the SCOE CTE course catalog. Contacts listed: Michelle McIntosh (Director), mmcintosh@scoe.net; Raelynn Sharp (Project Specialist), rsharp@scoe.net.",
+  "needs_work_permit": false,
+  "url": "https://ccr.scoe.net/programs/cte",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://ccr.scoe.net/programs/cte",
+    "https://www.scoe.net/programs/Academic-Instructional-Support/Career-Technical-Education-CTE/index.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "The pages describe CTE (career technical education, 15 industry sectors) and list staff contacts. They do not list eligibility, enrollment steps, dates or work-based learning details. Treat this as a starting point and call SCOE. Age and grade are not stated, so ask your counselor."
+}

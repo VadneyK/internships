@@ -1,0 +1,39 @@
+{
+  "id": "berkeley-humane-teen-volunteer",
+  "name": "Berkeley Humane Volunteer (teens 12 and up)",
+  "org": "Berkeley Humane",
+  "regions": [
+    "berkeley"
+  ],
+  "city": "Berkeley, CA",
+  "type": "volunteer",
+  "fields": [
+    "science",
+    "any"
+  ],
+  "what_you_do": "Help in the thrift shop, at adoption events, in the vet clinic, with foster care or with office work after a volunteer orientation.",
+  "min_age": 12,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Age 12 or older. Ages 12 to 15 must have a parent or guardian with them 1 to 1. Age 16 and up can volunteer alone with a release form.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Rolling. Internships are 18+ only.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Sign up for a General Volunteer Orientation online, read the manual, attend orientation. Contact volunteer@berkeleyhumane.org, (510) 845-7735.",
+  "needs_work_permit": false,
+  "url": "https://www.berkeleyhumane.org/volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.berkeleyhumane.org/volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Internships need 18 or older (10 to 20 plus hours a week for 3 months or more)."
+}

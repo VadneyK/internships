@@ -1,0 +1,38 @@
+{
+  "id": "sacramento-works-youth-wioa",
+  "name": "Sacramento Works for Youth (WIOA)",
+  "org": "Sacramento Employment and Training Agency (SETA)",
+  "regions": [
+    "sacramento"
+  ],
+  "city": "Sacramento, CA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Job search help, career workshops, resume and interview coaching, mentoring, training, and paid work experience.",
+  "min_age": 16,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Sacramento County youth ages 16 to 24. Federal WIOA eligibility rules apply, so ask a Job Center whether you qualify.",
+  "paid_type": "paid",
+  "pay_detail": "Paid work experience is one service. Wage not posted on the page.",
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Recruitment is year-round.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Visit a Sacramento Works Job Center (find one on the Sacramento Works site). Staff at each center help youth access services.",
+  "needs_work_permit": true,
+  "url": "https://sacworks.seta.net/program/sacramento-works-for-youth-wioa/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://sacworks.seta.net/program/sacramento-works-for-youth-wioa/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Designed for youth with extra barriers. Work experience is one of several services in a case-managed plan, not an open job board. Ages 16 to 24 are served, so this is mostly for older teens."
+}

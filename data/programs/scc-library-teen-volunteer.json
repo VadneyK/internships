@@ -1,0 +1,39 @@
+{
+  "id": "scc-library-teen-volunteer",
+  "name": "Santa Clara County Library District Teen Volunteers (tutor a K-6 student)",
+  "org": "Santa Clara County Library District",
+  "regions": [
+    "silicon-valley",
+    "san-jose"
+  ],
+  "city": "Santa Clara County, CA",
+  "type": "volunteer",
+  "fields": [
+    "education"
+  ],
+  "what_you_do": "Teens 14 and older can volunteer with the Santa Clara County Library District, including tutoring a kindergarten to grade 6 student after school.",
+  "min_age": 14,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Volunteers must be 14 or older.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": null,
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Ongoing. No deadline posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply through the volunteer page at sccld.org/volunteer or ask a local library.",
+  "needs_work_permit": false,
+  "url": "https://sccld.org/teens",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://sccld.org/teens"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "Serves the library district branches, not every city in the county (San Jose has its own library). Hours, training and schedule are on the volunteer page. See the separate homework-help tutor card."
+}

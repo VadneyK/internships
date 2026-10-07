@@ -1,0 +1,40 @@
+{
+  "id": "san-jose-public-library-teen-volunteer",
+  "name": "San Jose Public Library Teen Volunteers (Teens Reach, Book Reviewer)",
+  "org": "San Jose Public Library",
+  "regions": [
+    "san-jose",
+    "silicon-valley"
+  ],
+  "city": "San Jose, CA",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "arts-media"
+  ],
+  "what_you_do": "Teens ages 12 to 18 can join Teens Reach to help plan library activities, or earn service hours by writing book reviews as a Teen Book Reviewer.",
+  "min_age": 12,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "The page lists teen programs for ages 12 to 18. A minimum age for general volunteering is not stated. Sign up through the volunteer page and an orientation (on-site or virtual).",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": null,
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Rolling.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use \"Sign Up to Volunteer\" on the library volunteer page and the Better Impact system, and attend an orientation. Email volunteer@sjlibrary.org.",
+  "needs_work_permit": false,
+  "url": "https://www.sjpl.org/volunteer/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.sjpl.org/volunteer/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "Teen Book Reviewer roles are listed on Better Impact. See also the separate Teens Reach card."
+}

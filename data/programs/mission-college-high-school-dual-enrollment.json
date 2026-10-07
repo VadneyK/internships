@@ -1,0 +1,38 @@
+{
+  "id": "mission-college-high-school-dual-enrollment",
+  "name": "Mission College High School Dual Enrollment",
+  "org": "Mission College (West Valley-Mission district)",
+  "regions": [
+    "silicon-valley"
+  ],
+  "city": "Santa Clara, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "High schoolers take Mission College classes. Enrollment fees are waived and you pay only for books and materials.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "High school students prepared for college-level work. Students in 9th grade or below need special approval from the Director of Outreach and Student Development. English and math placement rules apply. No GPA rule stated.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Enrollment fees waived; you pay only for textbooks and materials (many courses have no textbook cost)",
+  "season": "school-year",
+  "duration": "By term (fall, winter, spring, summer)",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadlines listed on the page. Follow the term dates.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply through OpenCCC, do the placement assessment, submit the Dual Enrollment Form (parent and school counselor signatures, 2 to 3 business days), meet prerequisites, then register in the My Mission portal. Phone (408) 855-5007.",
+  "needs_work_permit": false,
+  "url": "https://missioncollege.edu/student_services/outreach/hs-students.html",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://missioncollege.edu/student_services/outreach/hs-students.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Unit limits: up to 8 in fall or spring (non-MECHS students), 6 in winter, 9 in summer; more needs a petition. Undocumented students are welcome. Getting to campus is on you."
+}

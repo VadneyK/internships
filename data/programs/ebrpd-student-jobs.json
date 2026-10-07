@@ -1,0 +1,44 @@
+{
+  "id": "ebrpd-student-jobs",
+  "name": "East Bay Regional Park District Youth and Student Jobs",
+  "org": "East Bay Regional Park District",
+  "regions": [
+    "oakland",
+    "east-bay",
+    "berkeley"
+  ],
+  "city": "Oakland, CA and parks across Alameda and Contra Costa counties",
+  "type": "paid-youth-program",
+  "fields": [
+    "environment",
+    "sports",
+    "education"
+  ],
+  "what_you_do": "Seasonal paid student jobs such as recreation leader, lifeguard, gate attendant, student laborer and interpretive student aide, with pathways from high school to college.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Gate Attendant (high school pathway): at least 16 and completed 10th grade. Other jobs have their own rules; check each posting.",
+  "paid_type": "paid",
+  "pay_detail": "Pay is not posted on the youth pages. See each job posting.",
+  "season": "summer",
+  "duration": "Seasonal",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "No jobs were posted on governmentjobs.com on Oct 7, 2026. Watch ebparks.org/jobs/youth and governmentjobs.com/careers/ebparks.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Apply on governmentjobs.com/careers/ebparks. HR: (510) 544-2154.",
+  "needs_work_permit": true,
+  "url": "https://www.ebparks.org/jobs/youth",
+  "apply_url": "https://www.governmentjobs.com/careers/ebparks",
+  "sources_fetched": [
+    "https://www.ebparks.org/jobs/youth",
+    "https://www.ebparks.org/jobs/youth/park-ops-pathway-1",
+    "https://www.governmentjobs.com/careers/ebparks"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "The 16 minimum is from the Gate Attendant page; other roles (for example lifeguard) may differ. The park district says it hires hundreds of seasonal students each year."
+}

@@ -1,0 +1,39 @@
+{
+  "id": "sac-public-library-teen-volunteers",
+  "name": "Teen volunteers at Sacramento Public Library",
+  "org": "Sacramento Public Library",
+  "regions": [
+    "sacramento"
+  ],
+  "city": "Sacramento County, CA",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "what_you_do": "Help at a Sacramento Public Library branch with daily branch work, events and programs. You can drop in or take a scheduled spot.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Teens can volunteer. A parent or guardian must sign the application before you start. The page does not state ages; ask your branch.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Rolling. The library says processing takes about a month and placement can take 2 to 3 months.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Submit the online volunteer application. Teens who need school hours can ask about drop-in volunteering at a branch.",
+  "needs_work_permit": false,
+  "url": "https://www.saclibrary.org/about-us/volunteer-opportunities/volunteer-library",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.saclibrary.org/about-us/volunteer-opportunities/volunteer-library"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "Many people apply, so a spot is not guaranteed. Drop-in is the quickest way to start; scheduled volunteering needs a longer onboarding. Court-ordered hours are not accepted."
+}

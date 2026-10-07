@@ -1,0 +1,43 @@
+{
+  "id": "sf-project-pull",
+  "name": "Project Pull",
+  "org": "SF Public Utilities Commission and partner City departments",
+  "regions": [
+    "san-francisco"
+  ],
+  "city": "San Francisco, CA",
+  "type": "paid-youth-program",
+  "fields": [
+    "engineering",
+    "environment",
+    "science",
+    "business-finance"
+  ],
+  "what_you_do": "Paid summer internships in City departments for high school students, with a focus on STEAM careers and public service, such as architecture, business, engineering and science.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "San Francisco high school students (there are separate college tracks). The application page says details are coming soon.",
+  "paid_type": "paid",
+  "pay_detail": "Paid (rate not posted on the page read)",
+  "season": "summer",
+  "duration": "About 8 weeks (per the SFPUC page)",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2027 timeline on the application page says 'details coming soon'. Dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Use the High School Internship application page. Questions: sfprojectpull1996@gmail.com.",
+  "needs_work_permit": true,
+  "url": "https://sf.gov/information/project-pull",
+  "apply_url": "https://www.sf.gov/apply-internship-project-pull",
+  "sources_fetched": [
+    "https://sf.gov/information/project-pull",
+    "https://www.sf.gov/apply-internship-project-pull",
+    "https://sfpuc.gov/about-us/careers-sfpuc/internships-and-youth-employment"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "The pages do not list age, pay or a deadline yet. Check the application page in early 2027."
+}

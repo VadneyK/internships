@@ -1,0 +1,39 @@
+{
+  "id": "roseville-library-teen-volunteers",
+  "name": "Volunteer at the Roseville Public Library",
+  "org": "City of Roseville Library",
+  "regions": [
+    "sacramento"
+  ],
+  "city": "Roseville, CA",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "what_you_do": "Volunteer at the Roseville Public Library. Library staff talk with you after you send the Volunteer Form and decide what you will do.",
+  "min_age": 13,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Must be 13 or older.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Rolling.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Complete the online Volunteer Form and a staff member will contact you. (916) 774-5221",
+  "needs_work_permit": false,
+  "url": "https://www.roseville.ca.gov/prl/library/support_us/volunteer_form.php",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.roseville.ca.gov/prl/library/support_us/volunteer_form.php"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "The page lists no parent permission rule, tasks, or hours. Call (916) 774-5221 or ask the staff member who contacts you."
+}

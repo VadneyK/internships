@@ -1,0 +1,39 @@
+{
+  "id": "sccld-homework-help-tutor",
+  "name": "Santa Clara County Library District Teen Volunteer Tutor",
+  "org": "Santa Clara County Library District",
+  "regions": [
+    "silicon-valley"
+  ],
+  "city": "Campbell, Cupertino, Gilroy, Los Altos, Milpitas, Morgan Hill and Saratoga, CA",
+  "type": "volunteer",
+  "fields": [
+    "education"
+  ],
+  "what_you_do": "Teens tutor kindergarten to grade 6 students with homework help after school at a library. You can earn community service hours.",
+  "min_age": 14,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Age 14 or older, free one afternoon Monday to Thursday from 3:30 to 6pm for a whole semester, and about 7 hours of training.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "school-year",
+  "duration": "One semester",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Ongoing. No deadline posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill in the volunteer application on the library's volunteer page.",
+  "needs_work_permit": false,
+  "url": "https://sccld.org/volunteer/",
+  "apply_url": "https://sccld.org/volunteer/",
+  "sources_fetched": [
+    "https://sccld.org/teens",
+    "https://sccld.org/volunteer/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "The page lists these libraries: Campbell, Cupertino, Gilroy, Los Altos, Milpitas, Morgan Hill and Saratoga. Check that your branch is included. Training is online (about 7 hours)."
+}

@@ -1,0 +1,41 @@
+{
+  "id": "uc-davis-upward-bound",
+  "name": "UC Davis Upward Bound",
+  "org": "UC Davis School of Education",
+  "regions": [
+    "sacramento",
+    "davis"
+  ],
+  "city": "Sacramento area, CA",
+  "type": "school-pathway",
+  "fields": [
+    "education",
+    "any"
+  ],
+  "what_you_do": "Free college-prep help during the school year plus a summer program on the UC Davis campus.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "high school",
+  "who_can_apply": "High school students at partner schools in Sacramento, Solano, Shasta and Siskiyou counties who are low income or whose parents did not attend college.",
+  "paid_type": "unpaid",
+  "pay_detail": "No fee listed on the page. Confirm with the program.",
+  "season": "year-round",
+  "duration": "school year plus summer",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline posted. Check with an Upward Bound advisor at your school.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Get an application from the Upward Bound advisor at your school (Shasta County students ask the GO Center). Send student info and a short essay, a parent-signed eligibility form and two recommendation letters back to the advisor. Questions: eduadvising@ucdavis.edu or 530-752-5887.",
+  "needs_work_permit": false,
+  "url": "https://education.ucdavis.edu/upward-bound",
+  "apply_url": "https://education.ucdavis.edu/upward-bound-join",
+  "sources_fetched": [
+    "https://education.ucdavis.edu/upward-bound",
+    "https://education.ucdavis.edu/upward-bound-join"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Only available at partner schools. Federally funded TRIO program for low-income or first-generation students. No fee or stipend is listed on the pages read, so ask."
+}

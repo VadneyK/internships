@@ -1,0 +1,41 @@
+{
+  "id": "san-jose-youth-commission",
+  "name": "San Jose Youth Commission and Youth Advisory Council",
+  "org": "City of San Jose",
+  "regions": [
+    "silicon-valley",
+    "san-jose"
+  ],
+  "city": "San Jose, CA",
+  "type": "civic-government",
+  "fields": [
+    "law-government",
+    "social-impact"
+  ],
+  "what_you_do": "Teens advise the San Jose Mayor and City Council on youth issues. The Youth Advisory Council (YAC) is open now; Youth Commission recruitment is closed.",
+  "min_age": 13,
+  "max_age": 20,
+  "grades": null,
+  "who_can_apply": "Youth Advisory Council: ages 13 to 19 who live in a San Jose City Council district. Youth Commission: ages 14 to 20, must live in the district they represent, two-year term (up to two terms), meets 4th Monday at 6:30 p.m.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "school-year",
+  "duration": "Two-year term",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Youth Advisory Council: no deadline posted. Youth Commission: recruitment is closed, no reopening date posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the District Youth Advisory Application for the YAC. A Youth Commissioner contacts you within about two weeks.",
+  "needs_work_permit": false,
+  "url": "https://www.sjpl.org/youth-commission",
+  "apply_url": "https://www.sjpl.org/youth-commission/join-your-district-youth-advisory-council/",
+  "sources_fetched": [
+    "https://www.sjpl.org/youth-commission",
+    "https://www.sjpl.org/youth-commission/join-your-district-youth-advisory-council/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Page is hosted by the library. Some council districts are unavailable or paused. YAC members earn community service hours. Pay not mentioned."
+}

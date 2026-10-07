@@ -1,0 +1,41 @@
+{
+  "id": "san-jose-works",
+  "name": "San Jose Works",
+  "org": "City of San Jose (work2future and Mayor's Gang Prevention Task Force)",
+  "regions": [
+    "silicon-valley",
+    "san-jose"
+  ],
+  "city": "San Jose, CA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Paid work experience and job help for San Jose youth. Teens ages 14 to 18 with barriers to work get placed in paid jobs and training; ages 16 to 29 get job services.",
+  "min_age": 14,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "San Jose residents. The paid work experience is for ages 14 to 18 who face barriers to employment. Job help (resumes, job fairs) is open to ages 16 to 29. Free to join.",
+  "paid_type": "paid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline posted on the city pages. Apply any time with the online youth application.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the online Youth Application on the San Jose Works page. A staff member contacts you afterward.",
+  "needs_work_permit": true,
+  "url": "https://www.sanjoseca.gov/your-government/departments-offices/office-of-the-city-manager/economic-development/san-jos-works",
+  "apply_url": "https://www.sanjoseca.gov/your-government/departments-offices/office-of-the-city-manager/economic-development/san-jos-works/youth-application",
+  "sources_fetched": [
+    "https://www.sanjoseca.gov/your-government/departments-offices/office-of-the-city-manager/economic-development/san-jos-works",
+    "https://www.sanjoseca.gov/your-government/departments-offices/office-of-the-city-manager/economic-development/san-jos-works/faq",
+    "https://www.sanjoseca.gov/your-government/departments-offices/office-of-the-city-manager/economic-development/san-jos-works/youth-application"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "Pay rate and placement dates are not posted on the pages I read. The paid work experience is for youth 14 to 18 with barriers to employment; placement is not guaranteed. The FAQ says job help is free for San Jose residents 16 to 29. Under 18 needs a work permit."
+}

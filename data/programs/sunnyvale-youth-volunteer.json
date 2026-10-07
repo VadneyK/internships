@@ -1,0 +1,39 @@
+{
+  "id": "sunnyvale-youth-volunteer",
+  "name": "City of Sunnyvale Youth Volunteer Program",
+  "org": "City of Sunnyvale",
+  "regions": [
+    "silicon-valley"
+  ],
+  "city": "Sunnyvale, CA",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "what_you_do": "Youth 13 and older can volunteer at special events, with office tasks, or with young people or seniors, including library roles.",
+  "min_age": 13,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Age 13 and up. Most roles require volunteers 18 and older to be fingerprinted and cleared first, so ask which roles take teens.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Ongoing. Roles are posted as needed.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill one application: general, library, or recreation and senior center. Volunteer Resources: 408-730-7533.",
+  "needs_work_permit": false,
+  "url": "https://www.sunnyvale.ca.gov/your-government/get-involved/volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.sunnyvale.ca.gov/your-government/get-involved/volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Official page read directly. Fill out only one application."
+}

@@ -1,0 +1,42 @@
+{
+  "id": "acwdb-youth-innovation",
+  "name": "Youth Innovation Program (WIOA In-School Youth)",
+  "org": "Alameda County Workforce Development Board",
+  "regions": [
+    "oakland",
+    "east-bay",
+    "alameda"
+  ],
+  "city": "Alameda County, CA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Help getting into college, jobs and work-based learning like internships and apprenticeships, with mentoring and support services.",
+  "min_age": 16,
+  "max_age": 21,
+  "grades": "Currently in high school or college",
+  "who_can_apply": "Ages 16 to 21, currently in high school or college. Alameda County program. No income or residency rule is listed on the page.",
+  "paid_type": "mixed",
+  "pay_detail": "Not stated. The youth page mentions paid and unpaid work experience but gives no wage.",
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Ongoing",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Contact a regional provider: Eden Area ROP in Hayward, (510) 293-2900, or Tri-Valley ROP in Livermore, (925) 487-4153. Main ACWDB line: (510) 259-3842.",
+  "needs_work_permit": true,
+  "url": "https://www.acwdb.org/youth/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.acwdb.org/youth/",
+    "https://acwdb.org/youth-innovation/",
+    "https://acwdb.org/future-force/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Out-of-school youth ages 16 to 24 use the Future Force program instead: La Familia (Eden Area) (925) 935-2643, Ohlone College (Tri Cities) (510) 742-2323, International Rescue Committee (North Cities) (510) 857-6884."
+}

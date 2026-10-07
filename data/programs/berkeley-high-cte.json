@@ -1,0 +1,45 @@
+{
+  "id": "berkeley-high-cte",
+  "name": "Berkeley High CTE Pathways",
+  "org": "Berkeley Unified School District",
+  "regions": [
+    "berkeley",
+    "east-bay",
+    "alameda"
+  ],
+  "city": "Berkeley, CA",
+  "type": "school-pathway",
+  "fields": [
+    "health",
+    "law-government",
+    "arts-media",
+    "tech-cs",
+    "engineering",
+    "trades"
+  ],
+  "what_you_do": "Career pathways at Berkeley High in six areas: health, public service, arts and media, IT, engineering, and building trades. Students can earn credit for an internship or work-based learning.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "Berkeley High students in grades 9 to 12.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": null,
+  "season": "school-year",
+  "duration": null,
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Choose pathway classes during course selection.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "The page does not describe enrollment. Contact CTE Manager Wyn Skeels, WynSkeels@berkeley.net, (510) 644-8727, or your counselor.",
+  "needs_work_permit": false,
+  "url": "https://www.berkeleyschools.net/teaching-and-learning/cte/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.berkeleyschools.net/teaching-and-learning/cte/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Pathway classes meet the a-g college entry requirements. Middle schoolers get a STEM exploration track."
+}

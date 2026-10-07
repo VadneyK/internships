@@ -1,0 +1,40 @@
+{
+  "id": "las-positas-dual-enrollment",
+  "name": "Las Positas College CCAP Dual Enrollment",
+  "org": "Las Positas College",
+  "regions": [
+    "east-bay",
+    "alameda"
+  ],
+  "city": "Livermore, CA",
+  "type": "pre-college",
+  "fields": [
+    "any",
+    "trades"
+  ],
+  "what_you_do": "Free college classes for high school students in Dublin, Livermore and Pleasanton and Tri-Valley ROP, aimed at career technical pathways. Tuition and fees are waived and required materials are provided.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "High school students in partner districts: Dublin, Livermore, Pleasanton and Tri-Valley ROP, plus San Ramon Valley USD (welding) and TUSD (fire safety training). Residency and citizenship rules apply; ask Admissions & Records.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Free; tuition and fees waived and required materials provided (parking may cost extra for classes at LPC)",
+  "season": "year-round",
+  "duration": "Per term",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Rolling by term.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Sign the CCAP Dual Enrollment form (once for all of high school) with your school counselor. Questions: lpc-dualenrollment@laspositascollege.edu.",
+  "needs_work_permit": false,
+  "url": "https://laspositascollege.edu/educationalpartnerships/dualenrollmenthome.php",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://laspositascollege.edu/educationalpartnerships/dualenrollmenthome.php"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Offered during and after the school day. Ages are not stated on the page."
+}

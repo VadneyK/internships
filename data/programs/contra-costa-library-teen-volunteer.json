@@ -1,0 +1,39 @@
+{
+  "id": "contra-costa-library-teen-volunteer",
+  "name": "Contra Costa County Library Teen Volunteers",
+  "org": "Contra Costa County Library",
+  "regions": [
+    "east-bay"
+  ],
+  "city": "Contra Costa County, CA (Richmond, Concord, Pleasant Hill and other branches)",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "tech-cs"
+  ],
+  "what_you_do": "Teen roles include Summer Read volunteer, Computer Docent and Homework Help.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Entering 8th grade or above (Summer Read); age 16+ for other roles",
+  "who_can_apply": "Summer Read: entering 8th grade or above, with parent consent. Computer Docent and Homework Help: age 16 or older.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": "Summer Read 1 to 2 hours a week; Computer Docents at least 2 hours a week",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Summer Read recruiting starts in April. Some libraries take volunteers on a limited basis.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the volunteer interest form on ccclib.org/volunteer. You may be called for an interview. Forms stay on file for six months.",
+  "needs_work_permit": false,
+  "url": "https://ccclib.org/volunteer/",
+  "apply_url": "https://ccclib.org/volunteer/",
+  "sources_fetched": [
+    "https://ccclib.org/volunteer/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Contact your branch to see if it is taking volunteers now."
+}

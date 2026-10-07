@@ -1,0 +1,39 @@
+{
+  "id": "oakland-owdb-summer-jobs-partners",
+  "name": "Oakland Workforce Development Board Youth Summer Jobs (Lao Family, YEP, Trybe)",
+  "org": "Oakland Workforce Development Board (City of Oakland)",
+  "regions": [
+    "oakland"
+  ],
+  "city": "Oakland, CA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Job readiness training, work-based learning and paid work experience for Oakland youth through three partner agencies.",
+  "min_age": 16,
+  "max_age": 21,
+  "grades": null,
+  "who_can_apply": "Oakland youth ages 16 to 21, per this City page.",
+  "paid_type": "paid",
+  "pay_detail": "Not stated on this page; the City's MSYEP page says at least Oakland's minimum wage",
+  "season": "summer",
+  "duration": null,
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No dates posted. Contact the partners for the current cycle.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Contact Lao Family Community Development (510) 533-8850, Youth Employment Partnership (510) 533-3447, or Trybe (510) 985-9915. OWDB email: OWDB@oaklandca.gov.",
+  "needs_work_permit": true,
+  "url": "https://www.oaklandca.gov/Government/Working-for-Oakland/Summer-Jobs-and-Internships-for-Youth/Looking-for-a-Summer-Job",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.oaklandca.gov/Government/Working-for-Oakland/Summer-Jobs-and-Internships-for-Youth/Looking-for-a-Summer-Job",
+    "https://oaklandca.gov/topics/connecting-youth-employers-for-summer-jobs"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "This City page is older than the MSYEP page (which lists partners with other ages, such as YEP 14 to 18 and Lao Family 16 to 21). Treat 16 to 21 as the safe range and confirm with the partner."
+}

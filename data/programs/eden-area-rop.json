@@ -1,0 +1,47 @@
+{
+  "id": "eden-area-rop",
+  "name": "Eden Area ROP (Regional Occupational Program)",
+  "org": "Eden Area ROP",
+  "regions": [
+    "alameda",
+    "east-bay",
+    "oakland"
+  ],
+  "city": "Hayward, CA",
+  "type": "school-pathway",
+  "fields": [
+    "education",
+    "food-hospitality",
+    "health",
+    "law-government",
+    "tech-cs",
+    "trades",
+    "business-finance"
+  ],
+  "what_you_do": "Career classes taken in high school at the Eden Area ROP center in Hayward or at some home schools. Pathways include welding, auto, construction, culinary, dental assisting, cybersecurity, first responder and education careers.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "11 to 12",
+  "who_can_apply": "Juniors and seniors attending high school in the Castro Valley, Hayward, San Leandro or San Lorenzo Unified school districts.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": null,
+  "season": "school-year",
+  "duration": "Classes are held Monday to Friday; course length varies by class",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Enroll through your home school counselor; the page gives no class start dates.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Ask your home high school counselor to contact the Eden Area ROP career counselor at (510) 293-2973. Main office (510) 293-2900.",
+  "needs_work_permit": false,
+  "url": "https://www.edenrop.org/high-school-programs",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.edenrop.org/high-school-programs",
+    "https://www.edenrop.org"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "Center is at 26316 Hesperian Blvd, Hayward. Cost, pay and ages are not stated on the page. Some pathways are offered only at certain high schools. Students outside the four districts are not listed as eligible. Work-based learning is mentioned (for example in education careers) but no formal internship structure is described."
+}

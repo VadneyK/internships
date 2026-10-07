@@ -1,0 +1,40 @@
+{
+  "id": "novaworks-young-adult-services",
+  "name": "NOVAworks Young Adult Services",
+  "org": "NOVAworks (workforce board)",
+  "regions": [
+    "silicon-valley",
+    "peninsula"
+  ],
+  "city": "Sunnyvale, CA (serves San Mateo County and northern Santa Clara County)",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Free career coaching and training for eligible young adults, plus a paid internship of about 400 hours for people 18 and older. Teens 17 can start with coaching and work readiness.",
+  "min_age": 17,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Ages 17 to 24 who live in San Mateo County or Cupertino, Los Altos, Milpitas, Mountain View, Palo Alto, Santa Clara or Sunnyvale. High school students who live outside the area qualify if their school is inside it. In-school youth 17 to 21 need low household income plus justice involvement, unstable housing or foster care.",
+  "paid_type": "mixed",
+  "pay_detail": "Coaching is free. Paid internships start at $19.50 per hour (Sunnyvale minimum wage), at least $7,800 for 400 hours. Internships are for ages 18 and up.",
+  "season": "year-round",
+  "duration": "4 to 5 weeks of career readiness first, then an internship (most interns work 10 to 20 hours a week)",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Open enrollment. No deadline posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the short interest form on the NOVAworks Young Adults page, then meet a Career Advisor. You can also email youngadults@novaworks.org, call 408-730-7640 or text 408-568-7776.",
+  "needs_work_permit": true,
+  "url": "https://novaworks.org/young-adults/",
+  "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLSfIhvOG3IBipD9ZzgwzgkG8ujBUNS-7ZUiwiWILxtnY-3aY8Q/viewform",
+  "sources_fetched": [
+    "https://novaworks.org/young-adults/",
+    "https://youth.smcgov.org/directory-youth_servic/listing/nova"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 3,
+  "notes": "Narrow eligibility. The FAQ says internships are 18 and up, so a 17 year old gets coaching and training first. Teens under 17 do not qualify. Most applicants need a documented barrier and income under the program limits."
+}

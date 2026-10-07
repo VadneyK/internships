@@ -1,0 +1,40 @@
+{
+  "id": "sacramento-spca-youth",
+  "name": "Sacramento SPCA Youth Service Projects",
+  "org": "Sacramento SPCA",
+  "regions": [
+    "sacramento"
+  ],
+  "city": "Sacramento, CA",
+  "type": "volunteer",
+  "fields": [
+    "environment",
+    "social-impact"
+  ],
+  "what_you_do": "Youth groups and students can do community service projects from home. These do not involve working with the animals.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Regular volunteers must be 18. Students and scouts can do community service projects without direct animal care. The page states no youth age range.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": null,
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Rolling.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the online Community Service Application, or take the online New Volunteer Orientation. Questions: rmaier@sspca.org, 916-504-2807.",
+  "needs_work_permit": false,
+  "url": "https://www.sspca.org/volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.sspca.org/volunteer",
+    "https://www.sspca.org/community-service-projects"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 3,
+  "notes": "You can become a regular volunteer at 18. Court-ordered hours are not offered. You will not get a confirmation after you send the application; you may start a project any time."
+}

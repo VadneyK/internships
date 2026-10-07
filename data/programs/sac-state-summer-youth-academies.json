@@ -1,0 +1,43 @@
+{
+  "id": "sac-state-summer-youth-academies",
+  "name": "Summer Youth Academies",
+  "org": "Sacramento State College of Continuing Education",
+  "regions": [
+    "sacramento"
+  ],
+  "city": "Sacramento, CA",
+  "type": "pre-college",
+  "fields": [
+    "tech-cs",
+    "engineering",
+    "arts-media",
+    "business-finance",
+    "health"
+  ],
+  "what_you_do": "One-week summer academies in coding, engineering and robotics, health careers, entrepreneurship, fashion, fire and emergency services and more.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "entering 7 to 12",
+  "who_can_apply": "Students entering grades 7 to 12. Academies are sorted into 7th to 10th and 9th to 12th grade groups.",
+  "paid_type": "fee-based",
+  "pay_detail": "Estimated cost $205 to $520 per academy.",
+  "season": "summer",
+  "duration": "1 week each (2026: June 22 to July 31)",
+  "status": "opens-soon",
+  "opens_iso": "2027-03-01",
+  "deadline_text": "The 2027 schedule is posted in January 2027. Online registration opens Monday, March 1, 2027. No closing date stated.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Choose an academy once the 2027 schedule is posted, then register online starting March 1, 2027.",
+  "needs_work_permit": false,
+  "url": "https://cce.csus.edu/programs/summer-youth-academies",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://cce.csus.edu/programs/summer-youth-academies",
+    "https://www.csus.edu/experience/alumni-association/programs/summer-programs.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Offerings change each year; the page lists 2026 courses as examples. Some academies are online and some are in person, and the same course may have an online and an in-person section. Open to students entering grades 7 to 12."
+}

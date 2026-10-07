@@ -1,0 +1,40 @@
+{
+  "id": "sf-pre-register-to-vote",
+  "name": "California Pre-Register to Vote (ages 16 and 17)",
+  "org": "California Secretary of State",
+  "regions": [
+    "san-francisco",
+    "statewide"
+  ],
+  "city": "California",
+  "type": "civic-government",
+  "fields": [
+    "law-government"
+  ],
+  "what_you_do": "Sign up early so you are on the voter list the day you turn 18. Pairs well with the SF elections ambassador program.",
+  "min_age": 16,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "California residents ages 16 and 17 who are US citizens and not in prison for a felony or ruled mentally unable to vote by a court.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free",
+  "season": "year-round",
+  "duration": "A few minutes",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Always open.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill in the online form at registertovote.ca.gov (linked from the Secretary of State page).",
+  "needs_work_permit": false,
+  "url": "https://www.sos.ca.gov/elections/pre-register-16-vote-18",
+  "apply_url": "https://registertovote.ca.gov/",
+  "sources_fetched": [
+    "https://www.sos.ca.gov/elections/pre-register-16-vote-18",
+    "https://www.sf.gov/opportunities-for-youth-ages-14-24"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 3,
+  "notes": "Not a job or internship, but a real civic step. Your registration becomes active when you turn 18. Citizenship is required."
+}

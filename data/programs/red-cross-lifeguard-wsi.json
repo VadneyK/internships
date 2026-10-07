@@ -1,0 +1,41 @@
+{
+  "id": "red-cross-lifeguard-wsi",
+  "name": "American Red Cross Lifeguard and Water Safety Instructor courses",
+  "org": "American Red Cross (taught by local pools, cities and YMCAs)",
+  "regions": [
+    "statewide"
+  ],
+  "city": "Local pools across California",
+  "type": "apprenticeship-trades",
+  "fields": [
+    "sports",
+    "education"
+  ],
+  "what_you_do": "Red Cross certification courses for lifeguarding and for swim instruction. Lifeguard students must be 15 by the last day of class and pass a swimming skills test.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Lifeguarding: at least 15 years old by the last day of class, plus a swim test (swim, tread water, timed event). Water Safety Instructor and Basic Swim Instructor: at least 15 by the end of the course.",
+  "paid_type": "fee-based",
+  "pay_detail": "Course fees are set by each provider and are not listed on the pages read.",
+  "season": "year-round",
+  "duration": "Lifeguarding: about 27 hours in person, or about 6 hours online plus about 21.5 hours in person",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Ongoing. Class dates depend on the provider.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Use Find a Class on the Red Cross lifeguarding page to pick a pool or YMCA class near you, and check the fee.",
+  "needs_work_permit": false,
+  "url": "https://www.redcross.org/take-a-class/lifeguarding",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.redcross.org/take-a-class/lifeguarding",
+    "https://www.redcross.org/take-a-class/lifeguarding/lifeguard-training/lifeguard-classes",
+    "https://www.redcross.org/take-a-class/swimming/water-safety/water-safety-instructor-certification"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Final test is a 50-question exam with an 80% pass mark. Certificate lasts 2 years. Before the update this file said Water Safety Instructor needs age 16; the Red Cross page says 15. For lifeguard jobs, check each employer's page for pay and work permit rules."
+}

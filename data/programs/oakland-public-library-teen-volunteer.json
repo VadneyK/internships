@@ -1,0 +1,40 @@
+{
+  "id": "oakland-public-library-teen-volunteer",
+  "name": "Oakland Public Library Teen Volunteer Program",
+  "org": "Oakland Public Library",
+  "regions": [
+    "oakland"
+  ],
+  "city": "Oakland, CA (16 branches)",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "arts-media",
+    "any"
+  ],
+  "what_you_do": "Help at a library branch with teen programs, social media, book and film picks, and art/design projects. Counts for community service hours.",
+  "min_age": 13,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Ages 13 to 17, or 18 and still in high school. Also takes teens with court-ordered service hours.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": "Shifts when the library is open; the form asks for morning and afternoon or evening availability, any day of the week",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Rolling. Not every branch has space at all times.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the online Teen Volunteer Application, or stop by a branch.",
+  "needs_work_permit": false,
+  "url": "https://oaklandlibrary.org/teenvolunteers",
+  "apply_url": "https://oaklandlibrary.org/teenvolunteers",
+  "sources_fetched": [
+    "https://oaklandlibrary.org/teenvolunteers"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "The library cannot promise a spot at a specific branch. About two thirds of library volunteers are teens, per the page."
+}

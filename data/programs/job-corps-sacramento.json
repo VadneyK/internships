@@ -1,0 +1,42 @@
+{
+  "id": "job-corps-sacramento",
+  "name": "Job Corps Sacramento Center",
+  "org": "U.S. Department of Labor Job Corps",
+  "regions": [
+    "sacramento",
+    "statewide"
+  ],
+  "city": "Sacramento, CA",
+  "type": "apprenticeship-trades",
+  "fields": [
+    "trades",
+    "health"
+  ],
+  "what_you_do": "Free live-in career training with pre-apprenticeship tracks (construction, carpentry, cement masonry) and Certified Nurse Assistant, plus high school or GED help.",
+  "min_age": 16,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Ages 16 to 24 who are low income and meet citizenship, residency or other approved status rules, plus background checks (per the national Job Corps site). Mostly fits teens who are out of school or want a different path. Housing is on campus.",
+  "paid_type": "stipend",
+  "pay_detail": "Free tuition, housing, meals and basic medical care, plus a monthly living allowance (amount not stated).",
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Ongoing enrollment. No dates posted on the Sacramento page.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply at enroll.jobcorps.gov or call 800-733-JOBS (800-733-5627).",
+  "needs_work_permit": false,
+  "url": "https://sacramento.jobcorps.gov/node/2385",
+  "apply_url": "https://enroll.jobcorps.gov",
+  "sources_fetched": [
+    "https://sacramento.jobcorps.gov/node/2385",
+    "https://www.jobcorps.gov/",
+    "https://www.deseret.com/education/2026/08/12/99-job-corps-centers-including-clearfields-to-stay-open-as-settlement-is-reached/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 3,
+  "notes": "Residential, so you live on campus at 3100 Meadowview Rd, Sacramento. The Sacramento page lists the trades (building construction, carpentry, cement masonry, Certified Nurse Assistant) but not the age or income rules, which come from jobcorps.gov. A federal settlement reported Aug 12, 2026 kept all 99 centers open, but that article does not name Sacramento, so confirm the center is enrolling."
+}

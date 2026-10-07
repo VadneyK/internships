@@ -1,0 +1,38 @@
+{
+  "id": "khan-academy-career-courses",
+  "name": "Khan Academy college and careers courses",
+  "org": "Khan Academy",
+  "regions": [
+    "virtual"
+  ],
+  "city": "Virtual",
+  "type": "virtual",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Free online lessons on the Khan Academy Life skills page: financial literacy, personal finance, entrepreneurship, career exploration and college admissions.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Open to anyone. The site says its mission is a free education for anyone, anywhere. The page states no age rule.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free (the site says it is a nonprofit offering free education)",
+  "season": "year-round",
+  "duration": "Self-paced",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Always open.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Go to the page, pick a course, and sign up for a free account if you want to save progress.",
+  "needs_work_permit": false,
+  "url": "https://www.khanacademy.org/college-careers-more",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.khanacademy.org/college-careers-more"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 3,
+  "notes": "The page loads slowly because it builds in your browser. Course list seen: Financial Literacy, Personal Finance, Entrepreneurship, Careers, College admissions, Career Exploration."
+}

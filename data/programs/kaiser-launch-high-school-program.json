@@ -1,0 +1,48 @@
+{
+  "id": "kaiser-launch-high-school-program",
+  "name": "KP LAUNCH High School Program",
+  "org": "Kaiser Permanente",
+  "regions": [
+    "silicon-valley",
+    "san-jose",
+    "peninsula",
+    "fremont",
+    "east-bay",
+    "oakland",
+    "san-francisco",
+    "sacramento"
+  ],
+  "city": "Northern California Kaiser Permanente service areas",
+  "type": "paid-youth-program",
+  "fields": [
+    "health",
+    "business-finance",
+    "any"
+  ],
+  "what_you_do": "Seven-week full-time paid summer job in healthcare support and admin roles, with weekly workshops, mentoring and networking. Little patient contact.",
+  "min_age": 16,
+  "max_age": 19,
+  "grades": "Current high school student (priority to juniors and seniors) or Class of 2027 graduate",
+  "who_can_apply": "Be 16 to 19 by June 1, 2027, live in a Northern California Kaiser Permanente service area, have proof of legal US work eligibility, and be free Monday to Friday about 8am to 5pm. Priority goes to juniors and seniors. Children of Kaiser employees or physicians cannot apply. The program aims at students who lack resources to explore health careers.",
+  "paid_type": "paid",
+  "pay_detail": "$25 per hour minimum, paid every two weeks, up to 40 hours a week",
+  "season": "summer",
+  "duration": "7 weeks, June 14 to July 30, 2027",
+  "status": "opens-soon",
+  "opens_iso": "2026-11-16",
+  "deadline_text": "Opens Nov 16, 2026 at 9am Pacific; closes Jan 8, 2027 at 5pm Pacific.",
+  "deadline_iso": "2027-01-08",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply only on the KP LAUNCH online portal during the window (email submissions are not reviewed). You need a resume and a personal statement of up to 750 words. Questions: KP.LAUNCH@kp.org.",
+  "needs_work_permit": true,
+  "url": "https://kplaunch.kaiserpermanente.org/high-school-program/",
+  "apply_url": "https://kplaunch.kaiserpermanente.org/apply-now/",
+  "sources_fetched": [
+    "https://kplaunch.kaiserpermanente.org/high-school-program/",
+    "https://kplaunch.kaiserpermanente.org/internship-program-updates/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "Full-time hours, so no summer school or camp overlap. Competitive (a Kaiser story reportedly cited about 3,300 applicants for 318 spots, not confirmed here). Placement sites vary, so check that your area is offered. Kaiser may ask for COVID vaccine proof."
+}

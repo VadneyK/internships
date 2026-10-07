@@ -1,0 +1,40 @@
+{
+  "id": "sf-youthworks",
+  "name": "SF YouthWorks",
+  "org": "City and County of San Francisco, run with JCYC and DCYF",
+  "regions": [
+    "san-francisco"
+  ],
+  "city": "San Francisco, CA",
+  "type": "paid-youth-program",
+  "fields": [
+    "law-government",
+    "any"
+  ],
+  "what_you_do": "Paid job readiness workshops and internships in City departments such as the SFPUC, the Public Library and SFO Airport, with mentoring and college tours.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "11 to 12",
+  "who_can_apply": "11th or 12th graders (rising juniors, rising seniors and graduating seniors) who live in or go to school in San Francisco and can get a work permit. Youth Leadership Team members must have finished a full YouthWorks session.",
+  "paid_type": "paid",
+  "pay_detail": "$19.61 per hour for school-year interns; $20.36 per hour for Youth Leadership Team members",
+  "season": "year-round",
+  "duration": "School-year and summer internships",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026-27 school-year application is closed (the DCYF newsletter listed Sept 14, 2026). The Youth Leadership Team application is marked coming soon. Summer dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Create an account and apply through the JCYC Workhub portal. Expect a short application and an interview step.",
+  "needs_work_permit": true,
+  "url": "https://www.jcycworkhub.org/programs/youthworks",
+  "apply_url": "https://www.jcycworkhub.org/programs/youthworks",
+  "sources_fetched": [
+    "https://www.jcycworkhub.org/programs/youthworks",
+    "https://www.sf.gov/september-2026-dcyf-newsletter"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "Interns work in City departments such as the SFPUC, the Library and SFO. Former interns can return as paid Youth Leadership Team members. Ask JCYC about work permit help."
+}

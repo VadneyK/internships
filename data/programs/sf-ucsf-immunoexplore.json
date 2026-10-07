@@ -1,0 +1,39 @@
+{
+  "id": "sf-ucsf-immunoexplore",
+  "name": "UCSF ImmunoExplore Summer Camp",
+  "org": "UCSF Immunology Program",
+  "regions": [
+    "san-francisco"
+  ],
+  "city": "San Francisco, CA",
+  "type": "pre-college",
+  "fields": [
+    "science",
+    "health"
+  ],
+  "what_you_do": "Free summer camp at UCSF's Parnassus campus with lectures, games, patient panels and live anatomy dissections, mentored by UCSF students.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Bay Area high school students who have limited chances to take part in biomedical research. Grade range not posted.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free",
+  "season": "summer",
+  "duration": "Short summer camp (dates not posted)",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The page says 2026 camper applications were open (the page title still says Summer Camp 2025). No 2027 dates are posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill in the Google Form linked from the ImmunoExplore page.",
+  "needs_work_permit": false,
+  "url": "https://immunox.ucsf.edu/community/immunoexplore",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://immunox.ucsf.edu/community/immunoexplore"
+  ],
+  "verified": "snippet-only",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "The page looks out of date: it is titled Summer Camp 2025 but mentions 2026 applications, and gives no grades, dates or deadline. Confirm everything with ImmunoX before relying on it."
+}

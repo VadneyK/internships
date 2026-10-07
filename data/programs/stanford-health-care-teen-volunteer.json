@@ -1,0 +1,39 @@
+{
+  "id": "stanford-health-care-teen-volunteer",
+  "name": "Stanford Health Care High School Volunteer Program",
+  "org": "Stanford Health Care",
+  "regions": [
+    "silicon-valley",
+    "peninsula"
+  ],
+  "city": "Stanford and Palo Alto, CA",
+  "type": "volunteer",
+  "fields": [
+    "health"
+  ],
+  "what_you_do": "Non-clinical volunteer roles in the hospital, one shift a week for at least six months. It is not shadowing and does not count as clinical hours.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "Age 16 or older. Inpatient unit roles need 18. Needs 6 to 8 hours of online training, a background check, a health screening (including a TB test), and orientation within 30 days of selection.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer",
+  "season": "year-round",
+  "duration": "At least 1 shift per week for 6 months (inpatient roles: 1 year)",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "The page says to use the portal to see the next application dates. Dates not shown on the page I read.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Apply on volunteer.stanfordhealthcare.org. Questions: VolunteerResources@stanfordhealthcare.org or 650-723-7424.",
+  "needs_work_permit": false,
+  "url": "https://stanfordhealthcare.org/for-patients-visitors/volunteering.html",
+  "apply_url": "https://volunteer.stanfordhealthcare.org",
+  "sources_fetched": [
+    "https://stanfordhealthcare.org/for-patients-visitors/volunteering.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Stanford says this does not count for school clinical-hour needs and has no shadowing."
+}

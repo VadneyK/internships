@@ -1,0 +1,40 @@
+{
+  "id": "zooniverse",
+  "name": "Zooniverse Citizen Science",
+  "org": "Zooniverse",
+  "regions": [
+    "virtual"
+  ],
+  "city": "Virtual",
+  "type": "volunteer",
+  "fields": [
+    "science",
+    "environment"
+  ],
+  "what_you_do": "Help real researchers by classifying images, audio and text for hundreds of online projects.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Open to volunteers online. The pages read state no age rule; check the user agreement.",
+  "paid_type": "unpaid",
+  "pay_detail": "No cost stated on the pages read; it is a volunteer research site",
+  "season": "year-round",
+  "duration": "Whenever you want",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Always open.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Go to zooniverse.org, pick a project, and make an account if the project asks.",
+  "needs_work_permit": false,
+  "url": "https://www.zooniverse.org/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.zooniverse.org/",
+    "https://www.zooniverse.org/about/faq"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 3,
+  "notes": "Minimum age is not stated on the home page or FAQ. Projects span arts, biology, climate, history, language, medicine, nature, physics, space and social science."
+}

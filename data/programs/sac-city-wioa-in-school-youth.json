@@ -1,0 +1,38 @@
+{
+  "id": "sac-city-wioa-in-school-youth",
+  "name": "WIOA In-School Youth Program",
+  "org": "City of Sacramento Youth, Parks and Community Enrichment",
+  "regions": [
+    "sacramento"
+  ],
+  "city": "Sacramento, CA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Career planning, workforce workshops, case management and paid work experience (internships, job shadowing or part-time work).",
+  "min_age": null,
+  "max_age": 18,
+  "grades": "high school senior",
+  "who_can_apply": "Enrolled high school seniors who can get a work permit if under 18, are low income, and meet at least one barrier (for example disability, English learner, foster or homeless, justice-involved, parenting, or struggling academically).",
+  "paid_type": "paid",
+  "pay_detail": "Wage not posted on the page.",
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Download the application from the page and email or hand it in, or pick up a paper copy at Belle Cooledge Community Center (9:30 am to 4:30 pm). WIOA@cityofsacramento.org",
+  "needs_work_permit": true,
+  "url": "https://www.cityofsacramento.gov/ypce/youth-employment/wioa",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.cityofsacramento.gov/ypce/youth-employment/wioa"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Only for low-income students with at least one listed barrier. You can qualify as low-income through free or reduced lunch, SNAP or TANF, or a qualifying ZIP code. Work experience must start at age 18 or younger."
+}

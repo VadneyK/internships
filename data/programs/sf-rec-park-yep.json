@@ -1,0 +1,40 @@
+{
+  "id": "sf-rec-park-yep",
+  "name": "YEP! Youth Employment Program",
+  "org": "San Francisco Recreation and Park Department",
+  "regions": [
+    "san-francisco"
+  ],
+  "city": "San Francisco, CA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any",
+    "environment",
+    "sports"
+  ],
+  "what_you_do": "First-job experience at rec centers and parks: arts, sports, aquatics, gardening, cooking and facility operations.",
+  "min_age": 14,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "Teens ages 14 to 17 in San Francisco.",
+  "paid_type": "paid",
+  "pay_detail": "Pay not posted on the page read",
+  "season": "year-round",
+  "duration": "Up to 25 hours per week in summer; 10 hours per week in the school year",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No dates posted. Email the program to ask when the next round opens.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Email yep@sfgov.org or call Yuri Ugarte at 415-452-3863.",
+  "needs_work_permit": true,
+  "url": "https://sfrecpark.org/workreation",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://sfrecpark.org/workreation"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "This page replaced the older Workreation name on the department site. An older listing says applicants need work-permit papers and no citizenship is required."
+}

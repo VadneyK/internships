@@ -1,0 +1,41 @@
+{
+  "id": "ca-das-apprenticeship-info",
+  "name": "California Division of Apprenticeship Standards: how apprenticeship works and minimum ages",
+  "org": "California Department of Industrial Relations, Division of Apprenticeship Standards",
+  "regions": [
+    "statewide"
+  ],
+  "city": "California",
+  "type": "apprenticeship-trades",
+  "fields": [
+    "trades",
+    "engineering"
+  ],
+  "what_you_do": "The state agency that registers apprenticeships. Use its search tool to find registered apprenticeship and pre-apprenticeship programs near you.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "California law says an apprentice must be at least 16 (Labor Code 3077, in the state child labor guide). Each registered program sets its own minimum age, education and tests, shown in the DAS search, and may set a higher age.",
+  "paid_type": "paid",
+  "pay_detail": "DAS describes apprenticeship as earn-and-learn. Wages depend on the program; DAS has a tool to look up apprenticeship wages.",
+  "season": "year-round",
+  "duration": null,
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Each program sets its own application window.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Use the Apprenticeship Search on the DAS site, check each program's minimum age and requirements, and apply the way the listing says.",
+  "needs_work_permit": true,
+  "url": "https://www.dir.ca.gov/das/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.dir.ca.gov/das/",
+    "https://www.dir.ca.gov/databases/das/descOfAppr.html",
+    "https://www.dir.ca.gov/dlse/ChildLaborLawPamphlet.pdf"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "The DAS homepage states no age rule. The 16 minimum comes from the 2013 DLSE child labor guide, which also says apprentices need a school-issued work permit. DAS's How to Become an Apprentice page says search results list each program's minimum age. DAS runs a youth apprenticeship grant and reports 5,776 registered pre-apprentices on its homepage."
+}

@@ -1,0 +1,30 @@
+name: Monthly refresh list
+
+on:
+  schedule:
+    - cron: "5 15 1 * *" # 1st of each month, 15:05 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build the refresh list
+        run: python3 tools/freshness.py --out refresh.md
+      - name: Open an issue if anything needs a look
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if grep -q '^- \[ \]' refresh.md; then
+            gh issue create --title "Refresh list $(date -u +%Y-%m)" --label refresh --body-file refresh.md
+          else
+            echo "Everything is fresh."
+          fi

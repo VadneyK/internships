@@ -1,0 +1,40 @@
+{
+  "id": "sf-sfpuc-ssip-cityworks",
+  "name": "SSIP CityWorks (Sewer System Internship Program)",
+  "org": "San Francisco Public Utilities Commission",
+  "regions": [
+    "san-francisco"
+  ],
+  "city": "San Francisco, CA",
+  "type": "paid-youth-program",
+  "fields": [
+    "engineering",
+    "environment",
+    "trades"
+  ],
+  "what_you_do": "Paid summer internship at the SFPUC or a private engineering firm working on the sewer system, for students from southeast San Francisco neighborhoods.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Starts after 11th grade",
+  "who_can_apply": "High school students from San Francisco's southeast neighborhoods; internships start after junior year.",
+  "paid_type": "paid",
+  "pay_detail": "Paid (rate not posted)",
+  "season": "summer",
+  "duration": "Summer",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No dates posted on the SFPUC page.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "The SFPUC page does not list an application. It says SFUSD students are referred through SFUSD's Career and Technical Education office, so ask them or the SFPUC workforce team.",
+  "needs_work_permit": true,
+  "url": "https://sfpuc.gov/about-us/careers-sfpuc/internships-and-youth-employment",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://sfpuc.gov/about-us/careers-sfpuc/internships-and-youth-employment"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Narrow neighborhood focus (southeast San Francisco). The same SFPUC page also lists YouthWorks and Project Pull."
+}

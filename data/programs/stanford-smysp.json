@@ -1,0 +1,41 @@
+{
+  "id": "stanford-smysp",
+  "name": "Stanford Medical Youth Science Program (SMYSP)",
+  "org": "Stanford School of Medicine",
+  "regions": [
+    "silicon-valley",
+    "peninsula",
+    "san-jose"
+  ],
+  "city": "Stanford, CA",
+  "type": "pre-college",
+  "fields": [
+    "health",
+    "science"
+  ],
+  "what_you_do": "Five-week, tuition-free summer program on Stanford's campus for juniors from low-income and first-generation backgrounds who want to explore medicine.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Current juniors",
+  "who_can_apply": "Current high school juniors who are low-income and first-generation college students living in Northern California. About 24 students are admitted.",
+  "paid_type": "unpaid",
+  "pay_detail": "Tuition free. Housing and stipend not stated.",
+  "season": "summer",
+  "duration": "About 5 weeks (2026: June 22 to July 26)",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "2026 deadline was March 23, 2026. 2027 dates not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online through the SlideRoom link on the SMYSP page when it opens. Contact: smysp-team@stanford.edu.",
+  "needs_work_permit": false,
+  "url": "https://med.stanford.edu/che/smysp.html",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://med.stanford.edu/che/smysp.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "The 2027 timing is a guess from last year."
+}

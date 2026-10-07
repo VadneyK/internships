@@ -1,0 +1,43 @@
+{
+  "id": "san-mateo-county-jobs-for-youth",
+  "name": "Jobs for Youth (County of San Mateo)",
+  "org": "County of San Mateo Human Resources",
+  "regions": [
+    "silicon-valley",
+    "peninsula"
+  ],
+  "city": "Redwood City, CA",
+  "type": "civic-government",
+  "fields": [
+    "law-government",
+    "any"
+  ],
+  "what_you_do": "Free job-skills workshops, a members-only job and internship board, and twenty $2,000 scholarships a year for San Mateo County youth. The county summer internship is for ages 18 to 21.",
+  "min_age": 14,
+  "max_age": 21,
+  "grades": null,
+  "who_can_apply": "San Mateo County youth ages 14 to 21 can join. The county summer internship is only for members ages 18 to 21. You must attend a 1 hour job prep workshop before using the job board.",
+  "paid_type": "mixed",
+  "pay_detail": "Workshops and job board are free. Twenty $2,000 scholarships each year. Pay for the county summer internship is not stated on the pages I read.",
+  "season": "year-round",
+  "duration": "County summer internship: June to August, about 8 to 10 weeks, 20 to 40 hours a week",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Membership: register any time. Summer internship: 2026 applications are closed; the page says next summer opens early 2027 (no date posted). Scholarship deadline not stated.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Register as a student member on jobsforyouth.org, attend the 1 hour job prep workshop, then use the job board. For the internship you also attend a mandatory orientation.",
+  "needs_work_permit": null,
+  "url": "https://jobsforyouth.org",
+  "apply_url": "https://jobsforyouth.org/student-registration/",
+  "sources_fetched": [
+    "https://jobsforyouth.org",
+    "https://www.smcgov.org/hr/jobs-youth",
+    "https://jobsforyouth.org/student-registration/",
+    "https://jobsforyouth.org/internships/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Teens under 18 can use the workshops and job board but not the county internship. Phone 650-599-7215, email jobsforyouth@smcgov.org. Must be a San Mateo County resident for the internship."
+}

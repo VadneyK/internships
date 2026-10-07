@@ -1,0 +1,38 @@
+{
+  "id": "pathful-explore",
+  "name": "Pathful Explore (virtual career exploration)",
+  "org": "Pathful",
+  "regions": [
+    "virtual"
+  ],
+  "city": "Virtual",
+  "type": "virtual",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Online career exploration with videos, assessments and virtual chats with professionals, used by schools.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "K-12",
+  "who_can_apply": "K-12 students, through their school or district. The Pathful site lists logins for schools and does not describe individual student sign-up.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free to students if your school licenses it; pricing is not on the site",
+  "season": "school-year",
+  "duration": "Self-paced",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Depends on your school.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Ask your counselor whether your school has Pathful. Login pages are listed on pathful.com (app.pathful.com/login).",
+  "needs_work_permit": false,
+  "url": "https://www.pathful.com/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.pathful.com/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 3,
+  "notes": "The home page names Pathful and Pathful Junior and does not use the name Pathful Explore. It is a school-run tool; individual students likely cannot join without a school plan."
+}

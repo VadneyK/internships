@@ -1,0 +1,39 @@
+{
+  "id": "smccd-dual-enrollment",
+  "name": "Skyline College Dual Enrollment (San Mateo County CCD)",
+  "org": "Skyline College, San Mateo County Community College District",
+  "regions": [
+    "peninsula",
+    "silicon-valley"
+  ],
+  "city": "San Bruno, CA",
+  "type": "pre-college",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Tuition-free college classes taken through your high school, so you earn high school and college credit at the same time.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "Students at partner high schools: Jefferson Union HSD, San Mateo Union HSD, South San Francisco USD, Sequoia Union HSD and Gateway charter school. Need a C or better to get college credit.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Free",
+  "season": "school-year",
+  "duration": "Per term",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline on the page. Ask your counselor about each term.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Sign up through your high school (talk to your counselor), submit the Skyline application on CCCApply, then attend an enrollment workshop to register and get parent approval.",
+  "needs_work_permit": false,
+  "url": "https://skylinecollege.edu/careerandworkforce/dualenrollment.php",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://skylinecollege.edu/careerandworkforce/dualenrollment.php"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "Grades become part of a permanent college record and can affect financial aid and college admission. Contacts on the page: hendrieg@smccd.edu or fuentesa@smccd.edu. Canada College and College of San Mateo run their own dual enrollment pages, not checked here."
+}

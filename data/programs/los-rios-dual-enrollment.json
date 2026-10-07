@@ -1,0 +1,40 @@
+{
+  "id": "los-rios-dual-enrollment",
+  "name": "Los Rios Dual Enrollment and CCAP (American River, Cosumnes River, Folsom Lake, Sacramento City)",
+  "org": "Los Rios Community College District",
+  "regions": [
+    "davis",
+    "sacramento",
+    "yolo"
+  ],
+  "city": "Sacramento area, CA",
+  "type": "pre-college",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take free college classes while in high school, either on your own at a Los Rios college (special admit) or in a class at your high school through a CCAP agreement.",
+  "min_age": 14,
+  "max_age": 18,
+  "grades": "9 to 12",
+  "who_can_apply": "At least 14 years old or already started ninth grade. Needs a parent or guardian signature and a recommendation from your high school principal.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Tuition is free. Other fees may apply, such as the student representation fee. Books may cost extra.",
+  "season": "year-round",
+  "duration": "Per semester",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No single deadline. Apply and register by each college's term dates.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Talk to your high school counselor, pick the Los Rios college that offers the class, apply at that college as a dual enrollment student (parent signature and principal recommendation needed), then register.",
+  "needs_work_permit": false,
+  "url": "https://losrios.edu/admissions/dual-enrollment",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://losrios.edu/admissions/dual-enrollment"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "Credits go on a permanent college transcript. Whether you also get high school credit depends on your school, so ask your counselor. Your school does not need a CCAP agreement for you to take a college class. Application deadlines are by college term."
+}

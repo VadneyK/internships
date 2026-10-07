@@ -1,0 +1,121 @@
+title: How to Find Internships: a Teen Guide for Davis, Silicon Valley and Oakland
+desc: A free guide for high schoolers in Northern California. Real programs with real deadlines, the work-permit rules, and a message that gets a yes.
+scripts: home
+---
+<section class="hero" style="padding-top:2.2rem;">
+  <img class="splat s1" src="assets/img/splat-yellow.svg" alt="" width="800" height="800">
+  <img class="splat s2" src="assets/img/splat-orange.svg" alt="" width="800" height="800">
+  <div class="wrap inner">
+    <span class="tag y eyebrow">Grades 7 to 12 &middot; Davis &middot; Silicon Valley &middot; Oakland</span>
+    <h1><span class="a">How to find</span><span class="b stroke">Internships</span></h1>
+    <img class="swoosh" src="assets/img/swoosh.svg" alt="" width="600" height="60">
+    <p class="lede" style="margin-top:1rem;">A free guide for teens in Northern California. Real programs with real deadlines, plus the one move that beats every job site: asking a person.</p>
+    <div class="cta">
+      <a class="btn" href="find.html">Find a program</a>
+      <a class="btn alt" href="playbook.html">Write your message</a>
+    </div>
+    <div class="stats" aria-label="At a glance">
+      <div class="stat"><b>{{count}}</b><span>programs checked</span></div>
+      <div class="stat"><b>3</b><span>hubs: Davis, Silicon Valley, Oakland</span></div>
+      <div class="stat"><b>$0</b><span>no sign-up, no tracking</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="secret">
+  <div class="wrap">
+    <span class="tag eyebrow">The one thing to know</span>
+    <h2>People beat <span class="orange">job sites</span></h2>
+    <div class="grid g2" style="align-items:start;">
+      <div>
+        <p class="lede">A <b>referral</b> is when someone who already works somewhere says, &ldquo;You should talk to this person.&rdquo;</p>
+        <p>In one big study of hiring, referrals were under 2% of the applications. But they were about 17% of the people hired. Job sites brought in almost half of all applications and about a quarter of the hires.</p>
+        <p>That study covers adult jobs. The idea carries over: people say yes to people they know. So your first move is not a website. It is a short message to one adult who already knows you.</p>
+        <p class="small muted">Source: Gem 2025 Recruiting Benchmarks, company hiring data from 2021 to 2024. For college internships, Handshake reports applications per posting more than doubled from January 2023 to January 2025, so posted openings are crowded.</p>
+      </div>
+      <figure class="card" style="margin:0;" aria-label="Chart: referrals are a tiny share of applications but a big share of hires">
+        <figcaption class="caps" style="margin-bottom:.8rem;">Share of applications vs share of hires</figcaption>
+        <div class="bars" role="img" aria-label="Referrals: 1.6 percent of applications and 17.1 percent of hires. Job sites: 49 percent of applications and 24.6 percent of hires.">
+          <div class="brow"><span class="bl">Referrals</span>
+            <div class="bt"><div class="trk"><div class="bar a" style="--w:1.64"></div></div><span class="bk"><b>1.6%</b> of applications</span></div>
+            <div class="bt"><div class="trk"><div class="bar h" style="--w:17.09"></div></div><span class="bk"><b>17.1%</b> of hires</span></div>
+          </div>
+          <div class="brow"><span class="bl">Job sites</span>
+            <div class="bt"><div class="trk"><div class="bar a" style="--w:48.98"></div></div><span class="bk"><b>49%</b> of applications</span></div>
+            <div class="bt"><div class="trk"><div class="bar h" style="--w:24.55"></div></div><span class="bk"><b>24.6%</b> of hires</span></div>
+          </div>
+        </div>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="moves" style="background:var(--paper-2); border-block:3px solid var(--edge);">
+  <div class="wrap">
+    <h2>Three moves</h2>
+    <div class="grid g3">
+      <article class="card">
+        <span class="tag y">Move 1</span>
+        <h3 style="margin-top:.7rem;">Where to look</h3>
+        <p>Start with people you know. Then check programs built for teens in your area, or make your own with volunteering or shadowing.</p>
+        <a class="btn sm" href="find.html">Browse {{count}} programs</a>
+      </article>
+      <article class="card">
+        <span class="tag y">Move 2</span>
+        <h3 style="margin-top:.7rem;">How to reach out</h3>
+        <p>Five short lines. Who you are, how you know them, what you are curious about, one small ask, and a thank you.</p>
+        <a class="btn sm" href="playbook.html">Build your message</a>
+      </article>
+      <article class="card">
+        <span class="tag y">Move 3</span>
+        <h3 style="margin-top:.7rem;">Foot in the door</h3>
+        <p>Thank people fast, follow up once, and say yes to small jobs. Doing small things well gets you asked back.</p>
+        <a class="btn sm" href="playbook.html#after">See how</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="start">
+  <div class="wrap">
+    <span class="tag eyebrow">Start here</span>
+    <h2>What fits <span class="orange">you</span>?</h2>
+    <form class="card" id="picker" onsubmit="return false" aria-label="Find matching programs">
+      <div class="formgrid">
+        <div class="field"><label for="pAge">How old are you?</label>
+          <select id="pAge"><option value="">Pick your age</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option></select></div>
+        <div class="field"><label for="pHub">Where do you live or go to school?</label>
+          <select id="pHub"><option value="">Anywhere in NorCal</option></select></div>
+        <div class="field"><label for="pField">What are you curious about?</label>
+          <select id="pField"><option value="">Anything</option></select></div>
+      </div>
+    </form>
+    <div id="matches" class="results" style="margin-top:1.2rem;" aria-live="polite"></div>
+    <p id="matchMore" style="margin-top:1rem;" hidden></p>
+  </div>
+</section>
+
+<section id="soon" style="background:var(--paper-2); border-block:3px solid var(--edge);">
+  <div class="wrap">
+    <span class="tag o eyebrow">Next deadlines</span>
+    <h2>Closing <span class="orange">soon</span></h2>
+    <ul class="tl" id="soonList"><li><div class="d">...</div><div>Loading</div></li></ul>
+    <p style="margin-top:1rem;"><a class="btn alt sm" href="find.html?view=dates">See every deadline by month</a></p>
+  </div>
+</section>
+
+<section id="young">
+  <div class="wrap">
+    <div class="grid g2">
+      <div class="callout">
+        <h3>Under 16?</h3>
+        <p>You do not need a fancy internship. Shadowing a grown-up for an afternoon, volunteering at a library or hospital, and starting a small project all count, and many are open at 13 or 14.</p>
+        <p><a class="btn sm dark" href="find.html?age=14">Programs open at 14</a></p>
+      </div>
+      <div class="callout plain">
+        <h3>Parents and youth leaders</h3>
+        <p>The fastest help is an introduction: one coworker, neighbor or church member who will take a 15-minute call from a teen. Then read the <a href="rules.html">work permit and pay rules</a> and the <a href="rules.html#scams">scam checklist</a> together.</p>
+      </div>
+    </div>
+  </div>
+</section>

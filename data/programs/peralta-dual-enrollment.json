@@ -1,0 +1,46 @@
+{
+  "id": "peralta-dual-enrollment",
+  "name": "Peralta Colleges Dual Enrollment (Laney, Merritt, Berkeley City, College of Alameda)",
+  "org": "Peralta Community College District",
+  "regions": [
+    "alameda",
+    "berkeley",
+    "east-bay",
+    "oakland"
+  ],
+  "city": "Oakland, CA",
+  "type": "pre-college",
+  "fields": [
+    "any",
+    "health",
+    "trades"
+  ],
+  "what_you_do": "Take free college classes while in high school, on a Peralta campus or through CCAP classes arranged with your school. Courses go on your permanent college transcript.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "High school students from Oakland, Berkeley and Alameda. Needs counselor and parent or guardian signatures on the High School Special Enrollment Form.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Tuition and fees excused. Unit caps: CCAP 15 units fall or spring; other dual enrollment 11 units fall or spring; 9 units in summer.",
+  "season": "school-year",
+  "duration": "Per term (fall, spring, summer)",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadlines posted. Register each term.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Meet your counselor, apply to a Peralta college, submit the High School Special Enrollment Form, give transcript and photo ID, meet a college counselor, then register.",
+  "needs_work_permit": false,
+  "url": "https://merritt.edu/dual-enrollment",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://merritt.edu/dual-enrollment",
+    "https://www.peralta.edu/dual-enrollment",
+    "https://www.peralta.edu/dual-enrollment/students",
+    "https://www.peralta.edu/dual-enrollment/summer-institute"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "Peralta also runs a free Summer Institute for Bay Area high schoolers including incoming 9th graders (2026 dates were June 22 to July 31; no application deadline posted). The old OUSD page mentions a stipend; the Peralta page does not."
+}

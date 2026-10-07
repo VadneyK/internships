@@ -1,0 +1,40 @@
+{
+  "id": "yolo-county-library-youth-volunteers",
+  "name": "Youth volunteers at Yolo County Library branches",
+  "org": "Yolo County Library",
+  "regions": [
+    "davis",
+    "yolo"
+  ],
+  "city": "Yolo County, CA (West Sacramento, Winters, Esparto, Clarksburg, Yolo and others)",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "what_you_do": "Help library staff at a branch. A separate Youth Volunteer Application is available.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Opportunities are limited and differ by branch. The Mary L. Stephens Davis Branch is not accepting applications right now. The page does not list a minimum age.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline. Applications are accepted at branches.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Download the Youth Volunteer Application (PDF) from the volunteer page and email it or drop it off at the branch you want.",
+  "needs_work_permit": false,
+  "url": "https://yolocountylibrary.org/volunteer/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.yolocountylibrary.org/volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Call the branch first (main number 530-666-8005). The page said the Mary L. Stephens Davis Branch was not accepting volunteer applications when checked."
+}

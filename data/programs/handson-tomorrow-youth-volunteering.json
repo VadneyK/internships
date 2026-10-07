@@ -1,0 +1,44 @@
+{
+  "id": "handson-tomorrow-youth-volunteering",
+  "name": "HandsOn Bay Area Youth Volunteering (HandsOn Tomorrow paused)",
+  "org": "HandsOn Bay Area",
+  "regions": [
+    "east-bay",
+    "peninsula",
+    "san-francisco",
+    "silicon-valley"
+  ],
+  "city": "Bay Area, CA",
+  "type": "leadership",
+  "fields": [
+    "any",
+    "social-impact"
+  ],
+  "what_you_do": "Monthly volunteer projects open to younger volunteers, found on the HandsOn Community Calendar. The 2-week HandsOn Tomorrow summer program (up to 40 hours) is not running in summer 2026.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school (for HandsOn Tomorrow and the Youth Council)",
+  "who_can_apply": "Monthly projects: filter the calendar by age to see which are open to you. HandsOn Tomorrow and the Youth Volunteer Council are for Bay Area high school students; the Council requires finishing HandsOn Tomorrow first.",
+  "paid_type": "unpaid",
+  "pay_detail": "No cost or pay stated on the pages",
+  "season": "year-round",
+  "duration": "Monthly projects; HandsOn Tomorrow was 2 weeks",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Monthly projects: sign up on the Community Calendar. HandsOn Tomorrow will not run in summer 2026 and no later dates are posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use the Community Calendar at handsonbayarea.org/calendar and filter by age. Email info@handsonbayarea.org or call 415-541-9616.",
+  "needs_work_permit": false,
+  "url": "https://www.handsonbayarea.org/youth",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.handsonbayarea.org/tomorrow",
+    "https://www.handsonbayarea.org/youth",
+    "https://www.handsonbayarea.org/youthcouncil"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 3,
+  "notes": "HandsOn Tomorrow is paused (no summer 2026 session) and the Youth Volunteer Council needs HandsOn Tomorrow first, so for now the monthly calendar projects are the way in. Age limits vary by project."
+}

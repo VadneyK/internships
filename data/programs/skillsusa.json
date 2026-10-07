@@ -1,0 +1,42 @@
+{
+  "id": "skillsusa",
+  "name": "SkillsUSA",
+  "org": "SkillsUSA",
+  "regions": [
+    "statewide",
+    "national"
+  ],
+  "city": "School chapters",
+  "type": "school-pathway",
+  "fields": [
+    "trades",
+    "engineering",
+    "any"
+  ],
+  "what_you_do": "Career and technical education club with skills contests, leadership training and employer connections.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Middle and high school",
+  "who_can_apply": "Middle school, high school and college CTE students in a school chapter. Virtual chapters exist for students without a classroom chapter.",
+  "paid_type": "fee-based",
+  "pay_detail": "Membership dues are not stated on the pages read; ask your CTE teacher.",
+  "season": "school-year",
+  "duration": "School year",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Join through your CTE teacher. No cycle stated.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Ask your CTE teacher, or use the 12 Steps to Start a Chapter or Virtual Chapter on skillsusa.org. Phone 844-875-4557, email customercare@skillsusa.org.",
+  "needs_work_permit": false,
+  "url": "https://www.skillsusa.org/about/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.skillsusa.org/about/",
+    "https://www.skillsusa.org/students/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 3,
+  "notes": "Most useful if your school has a trades or tech CTE pathway."
+}

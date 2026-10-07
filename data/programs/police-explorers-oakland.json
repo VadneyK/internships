@@ -1,0 +1,40 @@
+{
+  "id": "police-explorers-oakland",
+  "name": "Oakland Police Explorers",
+  "org": "Oakland Police Department",
+  "regions": [
+    "oakland",
+    "east-bay",
+    "alameda"
+  ],
+  "city": "Oakland, CA",
+  "type": "volunteer",
+  "fields": [
+    "law-government"
+  ],
+  "what_you_do": "Weekly meetings with law enforcement training and physical training, ride-alongs, community service details and conferences.",
+  "min_age": 14,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "High school students at least 14.5 years old, 2.0 GPA, average or better attendance and discipline, no felony or serious misdemeanor.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": null,
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No intake dates posted. Contact the coordinator.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Email Explorer Coordinator Officer Charles Stone at cstone@oaklandca.gov, or Oakland PAL (Officer Jumaal Hill) at 510-615-5758 or oaklandpal@oaklandpal.org.",
+  "needs_work_permit": false,
+  "url": "https://www.oaklandca.gov/resources/oakland-police-youth-services",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.oaklandca.gov/resources/oakland-police-youth-services"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "The page gives a minimum age of 14.5 and no upper limit. The page does not give meeting times or dates, so ask the coordinator. Oakland PD also runs the Police Activities League."
+}

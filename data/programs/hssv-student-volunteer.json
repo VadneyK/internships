@@ -1,0 +1,41 @@
+{
+  "id": "hssv-student-volunteer",
+  "name": "Humane Society Silicon Valley Student Volunteer Program",
+  "org": "Humane Society Silicon Valley",
+  "regions": [
+    "silicon-valley",
+    "san-jose"
+  ],
+  "city": "Milpitas / Santa Clara County, CA",
+  "type": "volunteer",
+  "fields": [
+    "environment",
+    "social-impact"
+  ],
+  "what_you_do": "Students under 18 can foster cats or dogs at home with a parent or guardian, or make no-sew fleece blankets for shelter animals, and earn service hours.",
+  "min_age": null,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "On-site animal care volunteers must be 18 or older. Students under 18 can foster with a parent or guardian's support or make fleece blankets.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid; no cost stated. HSSV provides foster supplies.",
+  "season": "year-round",
+  "duration": null,
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Rolling.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Email volunteer@hssv.org or see the student opportunities page for fostering and blanket instructions.",
+  "needs_work_permit": false,
+  "url": "https://www.hssv.org/volunteer/",
+  "apply_url": "https://www.hssv.org/volunteer/student-opportunities/",
+  "sources_fetched": [
+    "https://www.hssv.org/volunteer/",
+    "https://www.hssv.org/volunteer/student-opportunities/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 3,
+  "notes": "No hands-on shelter work until 18. Service hours: 2 fleece blankets = 1 hour (0.5 hour each); fostering is counted by care time. Email for a service hour verification letter."
+}

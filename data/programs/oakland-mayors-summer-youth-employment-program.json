@@ -1,0 +1,40 @@
+{
+  "id": "oakland-mayors-summer-youth-employment-program",
+  "name": "Mayor's Summer Youth Employment Program (MSYEP)",
+  "org": "City of Oakland, Oakland Workforce Development Board, and partner nonprofits",
+  "regions": [
+    "oakland"
+  ],
+  "city": "Oakland, CA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Paid summer work experience (up to about 100 hours) with job readiness training, run through partner nonprofits. You apply to the partner group, not the City.",
+  "min_age": 14,
+  "max_age": 21,
+  "grades": null,
+  "who_can_apply": "Must live in Oakland. No work experience needed. Free. Partner groups set their own ages (for example YEP 14 to 18, Youth UpRising 14 to 21, Lao Family 16 to 21).",
+  "paid_type": "paid",
+  "pay_detail": "At least Oakland's minimum wage; exact rate set by each partner",
+  "season": "summer",
+  "duration": "Up to 100 paid hours (varies by partner)",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Deadlines vary by partner. For Summer 2026 one partner (ACOE) closed recruitment June 18, 2026. 2027 dates not posted; check partner sites in early 2027.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Pick a partner from the City list (YEP, Youth UpRising, Lao Family, Trybe, Rising Sun, Destiny Arts, Soccer Without Borders, YouthBeat, Alameda County Office of Education GCGI-GET) and apply on that group's site or by phone.",
+  "needs_work_permit": true,
+  "url": "https://www.oaklandca.gov/Government/Working-for-Oakland/Summer-Jobs-and-Internships-for-Youth/Youth-Employment-and-Training",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://oaklandca.gov/topics/connecting-youth-employers-for-summer-jobs",
+    "https://www.oaklandca.gov/Government/Working-for-Oakland/Summer-Jobs-and-Internships-for-Youth/Youth-Employment-and-Training",
+    "https://www.oaklandca.gov/News-Releases/City-Council-Advances-Major-Investment-in-Summer-Opportunities-for-Oakland-Youth"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "City Council approved more than $3.1 million for 2026 and 2027 summer youth jobs, so a 2027 round is expected. Another City page lists ages 16 to 21, so check each partner's own age rule. Under-18 workers need a work permit (OUSD Linked Learning can help OUSD students)."
+}

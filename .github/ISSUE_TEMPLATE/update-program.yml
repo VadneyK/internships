@@ -1,0 +1,39 @@
+name: Report a wrong date, rule or broken link
+description: A program changed, closed, or its link stopped working.
+title: "Fix: "
+labels: ["update"]
+body:
+  - type: input
+    id: program
+    attributes:
+      label: Which program?
+      description: The name on the card, or its web address.
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is wrong?
+      options:
+        - Dates or deadline
+        - Age or grade rule
+        - Pay or cost
+        - Link is broken
+        - Program ended or paused
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What should it say?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Where did you read this?
+      description: Link to the official page that shows the right information.
+      placeholder: https://
+    validations:
+      required: true

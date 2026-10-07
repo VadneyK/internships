@@ -1,0 +1,41 @@
+{
+  "id": "sf-mission-bit",
+  "name": "Mission Bit Free Coding Classes",
+  "org": "Mission Bit",
+  "regions": [
+    "san-francisco"
+  ],
+  "city": "San Francisco, CA",
+  "type": "pre-college",
+  "fields": [
+    "tech-cs"
+  ],
+  "what_you_do": "Free semester-long coding and computer science classes for high schoolers, in person or remote, plus workshops, self-paced courses and events.",
+  "min_age": 14,
+  "max_age": 18,
+  "grades": "High school",
+  "who_can_apply": "Ages 14 to 18 (high school). Priority goes to youth underrepresented in tech, students at high schools with few or no computer science classes, and girls and LGBTQIA+ youth. Online classes are for San Francisco students only.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free",
+  "season": "school-year",
+  "duration": "Semester long. Fall 2026 classes ran Sep 8 to Dec 4, 2026.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Fall 2026 class registration is closed. Spring 2027 classes are not posted yet. Workshops and events are posted separately (College Connections is Nov 7, 2026).",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Pick a class and register on the Mission Bit Classes page when registration opens.",
+  "needs_work_permit": false,
+  "url": "https://www.missionbit.org/programs/",
+  "apply_url": "https://www.missionbit.org/classes/",
+  "sources_fetched": [
+    "https://www.missionbit.org/programs/",
+    "https://www.missionbit.org/classes/",
+    "https://www.missionbit.org/workshops-events/",
+    "https://www.sf.gov/opportunities-for-youth-ages-14-24"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "Mission Bit's Tech Start career prep is ages 18 to 26, not for most high schoolers. College Connections (Nov 7, 2026, 10:30 a.m. to noon at Chase Center, grades 9 to 12) closes registration Oct 27, 2026 per sf.gov."
+}

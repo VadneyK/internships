@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install Python tools
+        run: pip install jsonschema
+      - name: Validate every program file
+        run: python3 tools/validate.py
+      - name: Python tests
+        run: python3 -m unittest discover -s tests -v
+      - name: JavaScript tests
+        run: node --test tests/
+      - name: Rebuild data and pages
+        run: |
+          python3 tools/build_data.py
+          python3 tools/build.py
+      - name: Fail if generated files are out of date
+        run: |
+          # Version strings in page URLs change on every build, so ignore those lines.
+          git diff --exit-code -I '\?v=[0-9]\+' -- data/entries.json data/entries.csv data/meta.json '*.html' || {
+            echo "::error::Generated files are out of date. Run: python3 tools/build_data.py && python3 tools/build.py, then commit."
+            exit 1
+          }
+      - name: No em dashes or en dashes in text
+        run: |
+          if grep -rIl --exclude-dir=.git --exclude-dir=fonts -P '\x{2014}|\x{2013}' . ; then
+            echo "::error::Found an em dash or en dash. Use a comma, colon, or the word 'to'."
+            exit 1
+          fi

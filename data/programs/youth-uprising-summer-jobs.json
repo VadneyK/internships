@@ -1,0 +1,39 @@
+{
+  "id": "youth-uprising-summer-jobs",
+  "name": "Youth UpRising Summer Jobs and Job Readiness",
+  "org": "Youth UpRising",
+  "regions": [
+    "oakland"
+  ],
+  "city": "Oakland, CA (8711 MacArthur Blvd)",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Job readiness training and paid summer jobs or internships for East Oakland youth, plus career and education services all year.",
+  "min_age": 14,
+  "max_age": 21,
+  "grades": null,
+  "who_can_apply": "East Oakland youth. The City of Oakland list shows YU summer jobs for ages 14 to 21. YU serves ages 13 to 24 overall.",
+  "paid_type": "paid",
+  "pay_detail": "Paid (100 hours of fully paid work per the City list); rate not posted",
+  "season": "summer",
+  "duration": "About 100 hours over 4 to 6 weeks (City list)",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No dates posted on the site. Contact YU in spring for the next summer.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Call 510-777-9909 or visit 8711 MacArthur Blvd, Oakland. The site gives no online form.",
+  "needs_work_permit": true,
+  "url": "https://www.youthuprising.org",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.youthuprising.org",
+    "https://www.oaklandca.gov/Government/Working-for-Oakland/Summer-Jobs-and-Internships-for-Youth/Youth-Employment-and-Training"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "YU's own site has no summer job details, so the ages and hours come from the City of Oakland's 2026 list. Also a referral partner for EBMUD's high school internship."
+}

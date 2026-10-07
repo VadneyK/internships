@@ -1,0 +1,40 @@
+{
+  "id": "ca-chp-explorer",
+  "name": "California Highway Patrol Explorer Program",
+  "org": "California Highway Patrol",
+  "regions": [
+    "statewide"
+  ],
+  "city": "Local CHP area offices, California",
+  "type": "volunteer",
+  "fields": [
+    "law-government"
+  ],
+  "what_you_do": "Teens in Explorer posts train in law enforcement skills and can compete at the CHP statewide Explorer competition in West Sacramento. Contact CHP to find a post.",
+  "min_age": 15,
+  "max_age": 21,
+  "grades": null,
+  "who_can_apply": "The 2026 competition packet says ages 15 to 21. The official page does not list local post rules like GPA or background checks, so ask the Explorer office.",
+  "paid_type": "unpaid",
+  "pay_detail": "No pay is stated on the official page. The 2026 state competition cost $150 per explorer, paid by the team.",
+  "season": "year-round",
+  "duration": "Not stated. The state competition was April 25 to 26, 2026.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No sign-up dates for joining a post are posted. The 2026 state competition (April 25 to 26, 2026) has passed.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Email CHPExplorers@chp.ca.gov or call (916) 843-3210 to ask how to join a post near you.",
+  "needs_work_permit": false,
+  "url": "https://www.chp.ca.gov/programs-services/programs/explorer-program/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.chp.ca.gov/",
+    "https://www.chp.ca.gov/programs-services/programs/explorer-program/",
+    "https://www.chp.ca.gov/siteassets/forms/programs--services/2026-explorer-information-packet.pdf"
+  ],
+  "verified": "snippet-only",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "The official CHP page is mostly about the statewide competition, not how a teen joins a post. Age 15 to 21 comes from the competition packet. Whether a post near you exists, and any background check or GPA rule, must be confirmed with CHP."
+}

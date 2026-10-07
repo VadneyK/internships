@@ -1,0 +1,38 @@
+{
+  "id": "west-valley-college-concurrent-enrollment",
+  "name": "West Valley College Concurrent Enrollment",
+  "org": "West Valley College",
+  "regions": [
+    "silicon-valley"
+  ],
+  "city": "Saratoga, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Students in grades 9 to 12 take West Valley College classes for free. Middle College and on-campus dual enrollment exist for some districts.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "Concurrent enrollment: grades 9 to 12. Middle College: juniors and seniors from LGSUHSD and CUHSD. Dual enrollment on high school campuses: CUHSD (Campbell Union High School District) students only.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Free (per the college page)",
+  "season": "school-year",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline on the page. Follow the college's term dates.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Start at the college's high school students page and apply through the admissions portal; the page also covers assessment, orientation and registration.",
+  "needs_work_permit": false,
+  "url": "https://www.westvalley.edu/high-school-students/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.westvalley.edu/high-school-students/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Ask the college about unit limits and your counselor about credit."
+}

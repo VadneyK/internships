@@ -1,0 +1,40 @@
+{
+  "id": "de-anza-dual-enrollment",
+  "name": "De Anza College Dual Enrollment",
+  "org": "De Anza College",
+  "regions": [
+    "silicon-valley",
+    "san-jose"
+  ],
+  "city": "Cupertino, CA",
+  "type": "pre-college",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take De Anza College classes, online or on campus, while in high school. Many courses count toward CSU or UC credit.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "Students enrolled in any California high school, grades 9 to 12 (rising 9th graders included). Needs permission from a parent or guardian and your school principal. No GPA requirement.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "No enrollment fees for up to 11 units a quarter (De Anza and Foothill combined). You still pay for textbooks in most courses and may pay other fees.",
+  "season": "school-year",
+  "duration": "Quarter system (fall, winter, spring, summer); a standard class is 12 weeks",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No single deadline. Apply for admission before the quarter you want; see the De Anza academic calendar.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Talk to your school counselor, apply for admission, set up MyPortal, finish the Dual Enrollment overview, check prerequisites, submit the school permission form, then register. Questions: outreach@deanza.edu.",
+  "needs_work_permit": false,
+  "url": "https://www.deanza.edu/dual/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.deanza.edu/dual/",
+    "https://www.deanza.edu/dual/faqs.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Math and English classes need an assessment (usually based on your school transcript). Students can buy a VTA SmartPass for unlimited bus and light rail rides. Undocumented students can take part. Parents cannot see your college records without your written consent."
+}

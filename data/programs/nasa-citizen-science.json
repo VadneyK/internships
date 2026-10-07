@@ -1,0 +1,40 @@
+{
+  "id": "nasa-citizen-science",
+  "name": "NASA Citizen Science Projects",
+  "org": "NASA",
+  "regions": [
+    "virtual",
+    "national"
+  ],
+  "city": "Virtual",
+  "type": "volunteer",
+  "fields": [
+    "science",
+    "environment"
+  ],
+  "what_you_do": "Join one of 49 NASA science projects online, such as classifying images or tracking clouds, with only a phone or laptop.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Open to everyone, and no citizenship is needed. Age rules vary by project: some (GLOBE Observer, NeMO-Net) are marked kid friendly; Growing Beyond Earth is for middle and high school teachers.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free",
+  "season": "year-round",
+  "duration": "Whenever you want",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Always open.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Browse the project list, pick one, and follow that project's own sign-up steps.",
+  "needs_work_permit": false,
+  "url": "https://science.nasa.gov/citizen-science/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://science.nasa.gov/citizen-science/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Some projects need a telescope or other gear. Projects are free to join."
+}

@@ -1,0 +1,42 @@
+{
+  "id": "smash-residential",
+  "name": "SMASH Residential (UC Berkeley site)",
+  "org": "SMASH",
+  "regions": [
+    "oakland",
+    "berkeley",
+    "east-bay"
+  ],
+  "city": "Oakland and Berkeley, CA",
+  "type": "pre-college",
+  "fields": [
+    "tech-cs",
+    "science"
+  ],
+  "what_you_do": "A free STEM program with a summer living at a university partner (UC Berkeley for the Bay Area), with computer science, college success and elective classes and mentors from STEM careers.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "10 and 11 at application",
+  "who_can_apply": "Students in grade 10 or 11 with a 3.0 GPA, strong math scores, at a public or scholarship-funded private high school, with strong interest in computer science. Bay Area schools within the radius are preferred.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free; tuition-free",
+  "season": "year-round",
+  "duration": "One year with a residential summer",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "Application dates for 2026 to 27 are not posted. Join the interest list for updates.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Join the interest list on smash.org/programs and watch for the application. Contact devo@smash.org.",
+  "needs_work_permit": false,
+  "url": "https://www.smash.org/programs",
+  "apply_url": "https://www.smash.org/programs",
+  "sources_fetched": [
+    "https://www.smash.org",
+    "https://www.smash.org/programs"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "Based in Oakland (2148 Broadway). SMASH Virtual is a separate online option for a national audience; its cost is not stated. SMASH Morehouse is for males and SMASH Spelman for females."
+}

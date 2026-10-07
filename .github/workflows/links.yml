@@ -1,0 +1,35 @@
+name: Weekly link check
+
+on:
+  schedule:
+    - cron: "17 14 * * 1" # Mondays, 14:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check links
+        run: python3 tools/linkcheck.py --out link-report.md
+      - name: Open or update the link-check issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if grep -q '^## Broken' link-report.md; then
+            existing=$(gh issue list --label link-check --state open --json number --jq '.[0].number // empty')
+            if [ -n "$existing" ]; then
+              gh issue comment "$existing" --body-file link-report.md
+            else
+              gh issue create --title "Broken program links ($(date -u +%Y-%m-%d))" --label link-check --body-file link-report.md
+            fi
+          else
+            echo "No broken links."
+          fi

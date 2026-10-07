@@ -1,0 +1,39 @@
+{
+  "id": "alameda-county-library-teen-volunteer",
+  "name": "Alameda County Library Teen Volunteers (Fremont, Newark, Union City)",
+  "org": "Alameda County Library",
+  "regions": [
+    "silicon-valley",
+    "fremont"
+  ],
+  "city": "Fremont, Newark and Union City, CA",
+  "type": "volunteer",
+  "fields": [
+    "education"
+  ],
+  "what_you_do": "Teens can find volunteer roles at Alameda County Library branches through its Better Impact portal.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Ages and requirements vary by role and are shown on the portal. Not stated on the page I read.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Ongoing.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Browse and apply on the library's Better Impact volunteer portal. Phone 510-745-1500. The application link is on the official page.",
+  "needs_work_permit": false,
+  "url": "https://aclibrary.org/teens",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://aclibrary.org/teens"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 3,
+  "notes": "The teen page is thin. Ask the Fremont Main Library which roles take teens."
+}

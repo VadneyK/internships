@@ -1,0 +1,42 @@
+{
+  "id": "forage-job-simulations",
+  "name": "Forage Virtual Job Simulations",
+  "org": "Forage",
+  "regions": [
+    "virtual",
+    "national"
+  ],
+  "city": "Virtual",
+  "type": "virtual",
+  "fields": [
+    "business-finance",
+    "tech-cs",
+    "law-government",
+    "any"
+  ],
+  "what_you_do": "Free, self-paced online job simulations that copy real work tasks and let you compare your answers to model answers. Over 250 simulations from more than 90 employers.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Open access and free. The page does not state an age minimum, so check the terms and the Minors privacy notice.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free",
+  "season": "year-round",
+  "duration": "Self-paced, usually a few hours",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Always open.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Create a free account and pick a simulation at theforage.com.",
+  "needs_work_permit": false,
+  "url": "https://www.theforage.com/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.theforage.com/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Good for a resume line, but it is not a job or an internship. The page has no age minimum and links a privacy notice for minors, so read the terms and ask a parent before signing up."
+}

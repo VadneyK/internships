@@ -1,0 +1,42 @@
+{
+  "id": "youth-community-service-palo-alto",
+  "name": "Youth Community Service (YCS)",
+  "org": "Youth Community Service",
+  "regions": [
+    "silicon-valley",
+    "peninsula"
+  ],
+  "city": "Palo Alto, CA (serves Palo Alto, East Palo Alto and nearby)",
+  "type": "volunteer",
+  "fields": [
+    "social-impact",
+    "education"
+  ],
+  "what_you_do": "Nonprofit that connects youth with service projects, a peer mental health leadership program, school programs and a service award.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Service award is for grades K to 12; Summer of Service is for high school",
+  "who_can_apply": "For the Service Award: students in grades K to 12 who live or go to school in Santa Clara or San Mateo County. High schoolers need 100 hours within 12 months. Other programs list no clear age rule.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Ongoing. Service Award cycles run in four windows; the current one is Fall 2026, Sep 1 to Nov 30, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Create an account on the Do Service platform at volunteer.youthcommunityservice.org. Phone 650-858-8019 or email ycs@youthcommunityservice.org.",
+  "needs_work_permit": false,
+  "url": "https://www.youthcommunityservice.org/",
+  "apply_url": "https://volunteer.youthcommunityservice.org",
+  "sources_fetched": [
+    "https://www.youthcommunityservice.org/",
+    "https://www.youthcommunityservice.org/ycs-award",
+    "https://www.youthcommunityservice.org/ycs-programs"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "Also offers a scholarship and one-day service pop-ups. Based at 780 Arastradero Rd, Palo Alto."
+}

@@ -1,0 +1,41 @@
+{
+  "id": "ryse-center-richmond",
+  "name": "RYSE Center (youth membership and paid internships)",
+  "org": "RYSE Center",
+  "regions": [
+    "east-bay"
+  ],
+  "city": "Richmond, CA (3939 Bissell Ave)",
+  "type": "paid-youth-program",
+  "fields": [
+    "arts-media",
+    "social-impact",
+    "health"
+  ],
+  "what_you_do": "Free youth center with arts, health, organizing and career programs, and paid seasonal internships for members.",
+  "min_age": 13,
+  "max_age": 21,
+  "grades": null,
+  "who_can_apply": "Young people ages 13 to 21. Membership is free.",
+  "paid_type": "mixed",
+  "pay_detail": "Membership free; internships are paid (rate not posted)",
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Membership: join at an enrollment session. Cohorts and internships have separate windows (see notes).",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Register for an enrollment session at rysecenter.org/for-youth, then watch each cohort's application. Phone (510) 374-3401.",
+  "needs_work_permit": true,
+  "url": "https://rysecenter.org",
+  "apply_url": "https://rysecenter.org/for-youth",
+  "sources_fetched": [
+    "https://rysecenter.org",
+    "https://rysecenter.org/rysing-leaders"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Per the cohort page: Food Justice, Public Health, Health and Wellness Career Exploration and STAY FLY TAY Law applications are listed as releasing December 2026; Mock Trial January 2027; Roots to RYSE (summer) Spring 2027; YOUTHBRIDGE internship May 2027. Pay and ages for each cohort are not stated."
+}

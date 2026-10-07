@@ -1,0 +1,39 @@
+{
+  "id": "sf-myeep",
+  "name": "Mayor's Youth Employment and Education Program (MYEEP)",
+  "org": "Japanese Community Youth Council (JCYC), funded by SF DCYF; Buchanan YMCA is a partner site",
+  "regions": [
+    "san-francisco"
+  ],
+  "city": "San Francisco, CA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Job readiness training and paid work experience for younger teens, plus homework help and mentoring.",
+  "min_age": 14,
+  "max_age": 17,
+  "grades": "9 to 10",
+  "who_can_apply": "San Francisco youth ages 14 to 17 (the DCYF newsletter lists grades 9 and 10 for this round). Apply through the JCYC Workhub.",
+  "paid_type": "paid",
+  "pay_detail": "Paid work experience (hourly rate not posted on the pages read)",
+  "season": "year-round",
+  "duration": "School year: Oct to April, with an 8 hour per week internship Jan to April. Summer: June to August, 20 hours per week.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "School-year round closed Sept 14, 2026. The YMCA page says summer applications are due the first week of April; school-year applications the first week of September.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online through the JCYC Workhub (jcycworkhub.org). Ask the YMCA contact on the program page about your neighborhood site.",
+  "needs_work_permit": true,
+  "url": "https://www.ymcasf.org/myeep",
+  "apply_url": "https://www.jcycworkhub.org/",
+  "sources_fetched": [
+    "https://www.ymcasf.org/myeep",
+    "https://www.sf.gov/september-2026-dcyf-newsletter"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 1,
+  "notes": "Pay rate is not stated on the pages read, so ask your site. Contact the Buchanan YMCA ((415) 931-9622) about eligibility."
+}

@@ -1,0 +1,38 @@
+{
+  "id": "ca-state-parks-volunteers",
+  "name": "California State Parks Volunteers in Parks (youth)",
+  "org": "California State Parks",
+  "regions": [
+    "statewide"
+  ],
+  "city": "Statewide parks",
+  "type": "volunteer",
+  "fields": [
+    "environment"
+  ],
+  "what_you_do": "Volunteer or student intern roles at state parks. People under 18 can volunteer with written parent or guardian permission.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Under 18 needs written parent or guardian permission. Specific age minimums vary by park.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Varies by park",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Rolling.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply online through the State Parks volunteer portal or print a paper application and mail it to the park you want. Questions: Volunteer.inparksprogram@parks.ca.gov or (916) 653-9069. The application link is on the official page.",
+  "needs_work_permit": false,
+  "url": "https://www.parks.ca.gov/volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.parks.ca.gov/volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "A criminal background check may be required. Park-level age minimums were not on the page, so ask the park. Student volunteer or intern roles are mentioned only as a general possibility at local parks. No Junior Ranger details were on this page."
+}

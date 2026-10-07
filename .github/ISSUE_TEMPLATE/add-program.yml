@@ -1,0 +1,77 @@
+name: Add a program
+description: Suggest an internship, paid youth program, volunteer spot, research program or shadowing option for teens.
+title: "Add: "
+labels: ["new-program"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. Please do not put your phone number, address or anyone's private information in this form. Everything here is public.
+        We only list programs we can confirm on the program's own website. A maintainer will turn this into a card.
+  - type: input
+    id: name
+    attributes:
+      label: Program name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Official web page
+      description: The program's own page (not a news story or a list on another site).
+      placeholder: https://
+    validations:
+      required: true
+  - type: input
+    id: org
+    attributes:
+      label: Who runs it
+    validations:
+      required: true
+  - type: input
+    id: city
+    attributes:
+      label: City or area
+      placeholder: Oakland, Davis, San Jose, online...
+    validations:
+      required: true
+  - type: input
+    id: ages
+    attributes:
+      label: Age or grade rule
+      description: Copy what the page says (for example "ages 16 to 19" or "juniors and seniors").
+    validations:
+      required: true
+  - type: input
+    id: pay
+    attributes:
+      label: Pay, stipend, or cost to the student
+    validations:
+      required: true
+  - type: input
+    id: dates
+    attributes:
+      label: Application dates for this school year
+      description: If next year's dates are not posted yet, say so and give last year's.
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What do students do there?
+      description: Two sentences, in your own words.
+    validations:
+      required: true
+  - type: textarea
+    id: apply
+    attributes:
+      label: How do you apply?
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you send
+      options:
+        - label: I read the program's own web page, and the details above match it.
+          required: true
+        - label: This is not a paid "guaranteed internship" service, and it does not ask students for money just to apply.
+          required: true

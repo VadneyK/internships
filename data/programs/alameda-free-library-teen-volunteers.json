@@ -1,0 +1,40 @@
+{
+  "id": "alameda-free-library-teen-volunteers",
+  "name": "Alameda Free Library Teen Volunteers (Book Reviewers and Coding with LEGO)",
+  "org": "Alameda Free Library",
+  "regions": [
+    "alameda"
+  ],
+  "city": "Alameda, CA (Main Library)",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "tech-cs"
+  ],
+  "what_you_do": "Write teen book reviews (1 service hour each, one a month) or help younger kids with LEGO coding activities.",
+  "min_age": 12,
+  "max_age": 17,
+  "grades": "7 to 12",
+  "who_can_apply": "Teen Book Reviewers: grades 7 to 12. Coding with LEGO: ages 12 to 17.",
+  "paid_type": "unpaid",
+  "pay_detail": "Community service hours only",
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Rolling",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "LEGO program: email Fernanda Nunez at fnunez@alamedaca.gov. Book reviews: use the Teen Book Reviews page. Questions: refdesk@alamedaca.gov or 510-747-7777.",
+  "needs_work_permit": false,
+  "url": "https://www.alamedafree.org/PROGRAMS-SERVICES/Teen-Services/Teen-Volunteer-Information",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.alamedafree.org/PROGRAMS-SERVICES/Teen-Services/Teen-Volunteer-Information",
+    "https://www.alamedafree.org/Teen-Services/Teen-Volunteer-Information"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Book reviews are limited to one a month. No coding experience needed for LEGO."
+}

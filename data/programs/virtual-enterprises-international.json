@@ -1,0 +1,39 @@
+{
+  "id": "virtual-enterprises-international",
+  "name": "Virtual Enterprises International",
+  "org": "Virtual Enterprises International",
+  "regions": [
+    "virtual"
+  ],
+  "city": "School-based",
+  "type": "school-pathway",
+  "fields": [
+    "business-finance"
+  ],
+  "what_you_do": "A class where students run a simulated business, with trade shows, competitions and a Youth Business Summit.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12 (middle school version for 7 to 8)",
+  "who_can_apply": "Students at partner schools. Schools join by filling out an interest form and talking with a VEI Regional Director.",
+  "paid_type": "unpaid",
+  "pay_detail": "School/district pays (cost not public)",
+  "season": "school-year",
+  "duration": "School year",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Depends on your school.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Ask your school or counselor about the program. Contact info@veinternational.org or 855-740-6555.",
+  "needs_work_permit": false,
+  "url": "https://www.veinternational.org/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.veinternational.org/",
+    "https://www.veinternational.org/for-schools"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 3,
+  "notes": "Not an individual sign-up; your school must be a partner. Cost to schools is not posted."
+}
