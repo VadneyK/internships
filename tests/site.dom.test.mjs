@@ -157,9 +157,9 @@ for (const file of PAGES) {
     assert.ok(desc && desc.getAttribute("content").trim().length > 0, "empty meta description");
   });
 
-  test(`${file}: header nav has 6 links`, async () => {
+  test(`${file}: header nav has 7 links`, async () => {
     const { document } = await load(file);
-    assert.equal(document.querySelectorAll("nav.nav a").length, 6);
+    assert.equal(document.querySelectorAll("nav.nav a").length, 7);
   });
 
   if (file !== "404.html" && file !== "index.html") {

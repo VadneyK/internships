@@ -1,6 +1,6 @@
 {
   "id": "ala-girls-state-california",
-  "name": "American Legion Auxiliary California Girls State",
+  "name": "California Girls State (American Legion Auxiliary)",
   "org": "American Legion Auxiliary, Department of California",
   "regions": [
     "statewide"
@@ -10,7 +10,7 @@
   "fields": [
     "law-government"
   ],
-  "what_you_do": "A one-week summer leadership session for 11th grade girls, run by the American Legion Auxiliary. Each delegate is chosen and sponsored by a local Auxiliary Unit. The pages read do not describe the daily activities.",
+  "what_you_do": "You attend a one-week summer leadership session for 11th grade girls, run by the American Legion Auxiliary. A local Auxiliary Unit chooses and sponsors each delegate. The pages do not describe the daily activities.",
   "min_age": null,
   "max_age": null,
   "grades": "11th grade (the site says each delegate is an 11th grader during the 2025-26 school year)",
@@ -25,7 +25,7 @@
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Ask your school counselor or contact a local American Legion Auxiliary Unit (the site has a spreadsheet to find one). Each Unit picks a delegate and two alternates. Students at schools with no sponsoring Unit can use the START HERE online application as Department alternate applicants.",
-  "needs_work_permit": null,
+  "needs_work_permit": false,
   "url": "https://cagirlsstate.org/",
   "apply_url": null,
   "sources_fetched": [
@@ -36,5 +36,5 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "Separate from the coed American Legion Boys & Girls State program in ca-boys-girls-state.json (no separate Boys State card was made). The FAQ says a student may apply to either American Legion CA Boys State or American Legion Auxiliary CA Girls State, but not both. Selection criteria, grade-school rules beyond the 11th grade note, and cost are not stated on the pages read."
+  "notes": "Separate from the coed American Legion California Boys State (Boys & Girls State) program, which has its own card on this site. The FAQ says a student may apply to either American Legion CA Boys State or American Legion Auxiliary CA Girls State, but not both. Selection criteria, grade-school rules beyond the 11th grade note, and cost are not stated on the pages read."
 }

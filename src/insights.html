@@ -1,0 +1,68 @@
+title: The Numbers: What Is Out There for Teens
+desc: Charts built from the real list of teen programs: what is open now, how your age changes your options, where the paid work is, and what kinds of programs exist.
+scripts: insights
+---
+<section style="padding-block:2rem 1rem;">
+  <div class="wrap">
+    <span class="tag y eyebrow">Insights</span>
+    <h1 style="font-size:clamp(2.2rem,7vw,4rem);">The <span class="orange">numbers</span></h1>
+    <p class="lede">Every chart here comes from the same list as the <a href="find.html">Programs page</a>, and every bar is a link that opens that filter. The counts update when the list does.</p>
+    <div class="stats" id="topStats" aria-label="At a glance"></div>
+  </div>
+</section>
+
+<section id="today" style="padding-block:1.5rem 2rem;">
+  <div class="wrap">
+    <h2>What can you do today?</h2>
+    <p id="todayLead"></p>
+    <div id="chartStatus" class="chart"></div>
+  </div>
+</section>
+
+<section id="age" style="background:var(--paper-2); border-block:3px solid var(--edge);">
+  <div class="wrap">
+    <h2>How your age changes your options</h2>
+    <p id="ageLead"></p>
+    <div id="chartAge" class="chart cols" role="group" aria-label="Programs open to each age"></div>
+    <p class="small muted">Orange is the part of each bar that pays (a wage or a stipend). A program counts for an age when it does not rule that age out.</p>
+  </div>
+</section>
+
+<section id="paid" style="padding-block:2rem;">
+  <div class="wrap">
+    <h2>Where is the paid work?</h2>
+    <p>Free means volunteer or school credit. &ldquo;Costs money&rdquo; programs charge you, like a summer course. Pick the area that is closest to you.</p>
+    <div id="chartHubs" class="chart"></div>
+    <div class="chips legend" aria-hidden="true"><span class="key k1"></span> Paid or stipend <span class="key k2"></span> Free or volunteer <span class="key k3"></span> Costs money</div>
+  </div>
+</section>
+
+<section id="kinds" style="background:var(--paper-2); border-block:3px solid var(--edge);">
+  <div class="wrap">
+    <h2>What kinds of programs exist?</h2>
+    <div class="grid g2" style="align-items:start;">
+      <div><h3>By kind</h3><div id="chartTypes" class="chart"></div></div>
+      <div><h3>By interest</h3><div id="chartFields" class="chart"></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="season" style="padding-block:2rem;">
+  <div class="wrap">
+    <h2>When does it happen?</h2>
+    <div id="chartSeason" class="chart"></div>
+    <h3 style="margin-top:2rem;">Dates coming up</h3>
+    <p class="small muted">Only deadlines confirmed for this cycle are listed. Many programs have not posted next year&rsquo;s dates yet. See <a href="find.html?view=dates">the by-deadline view</a> for everything with a date.</p>
+    <ul class="tl" id="soonDates"></ul>
+  </div>
+</section>
+
+<section id="trust" style="background:var(--paper-2); border-block:3px solid var(--edge);">
+  <div class="wrap">
+    <h2>How much can you trust these numbers?</h2>
+    <div class="grid g2">
+      <div class="card"><p id="trustText"></p></div>
+      <div class="callout plain"><p><b>Counts are not quality.</b> A bigger bar means more listed programs, not better ones. Programs repeat across areas when they serve more than one. Always confirm dates on the program&rsquo;s own site.</p></div>
+    </div>
+  </div>
+</section>

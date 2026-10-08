@@ -37,8 +37,8 @@ test("age filter respects min and max", () => {
   assert.equal(L.ageOk({ ...base, min_age: null, max_age: null }, 13), true);
 });
 test("matches: text search needs every word", () => {
-  assert.equal(L.matches(base, { q: "health oakland" }, NOW), true);
-  assert.equal(L.matches(base, { q: "health sacramento" }, NOW), false);
+  assert.equal(L.matches(base, { q: "example oakland" }, NOW), true);
+  assert.equal(L.matches(base, { q: "example sacramento" }, NOW), false);
 });
 test("matches: pay groups", () => {
   assert.equal(L.matches(base, { paid: ["pay"] }, NOW), true);

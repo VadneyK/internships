@@ -79,7 +79,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "Out-of-school youth ages 16 to 24 use the Future Force program instead: La Familia (Eden Area) (925) 935-2643, Ohlone College (Tri Cities) (510) 742-2323, International Rescue Committee (North Cities) (510) 857-6884.",
+  "notes": "Out-of-school youth ages 16 to 24 use the Future Force program instead: La Familia (Eden Area) (925) 935-2643, Ohlone College (Tri Cities) (510) 742-2323, International Rescue Committee (North Cities) (510) 857-6884. See also Alameda County Youth Innovation Program, a separate listing from the same county board that names the same two providers (Eden ROP and Tri-Valley ROP).",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -114,7 +114,7 @@
   "how_to_apply": "Contact one of the providers listed on the program page: Eden ROP in Hayward, (510) 293-2900, or Tri-Valley ROP in Livermore, (925) 487-4153. County line: 510-259-3842.",
   "needs_work_permit": true,
   "url": "https://acwdb.org/youth-innovation/",
-  "apply_url": "https://acwdb.org/youth-innovation/",
+  "apply_url": null,
   "sources_fetched": [
    "https://acwdb.org/youth-innovation/",
    "https://acwdb.org/youth/",
@@ -124,12 +124,12 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 1,
-  "notes": "Two providers only: Eden ROP (Hayward) and Tri-Valley ROP (Livermore), so which one serves you depends on where you live. Pay is not stated. A Hayward AJCC fact sheet (Rubicon Programs) mentions federal WIOA youth ages 14 to 24 with at least one barrier; ask your provider about younger teens.",
+  "notes": "Two providers only: Eden ROP (Hayward) and Tri-Valley ROP (Livermore), so which one serves you depends on where you live. Pay is not stated. A Hayward AJCC fact sheet (Rubicon Programs) mentions federal WIOA youth ages 14 to 24 with at least one barrier; ask your provider about younger teens. See also Youth Innovation Program (WIOA In-School Youth), a separate listing from the same county board that names the same two providers.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
   "id": "ala-girls-state-california",
-  "name": "American Legion Auxiliary California Girls State",
+  "name": "California Girls State (American Legion Auxiliary)",
   "org": "American Legion Auxiliary, Department of California",
   "regions": [
    "statewide"
@@ -139,7 +139,7 @@
   "fields": [
    "law-government"
   ],
-  "what_you_do": "A one-week summer leadership session for 11th grade girls, run by the American Legion Auxiliary. Each delegate is chosen and sponsored by a local Auxiliary Unit. The pages read do not describe the daily activities.",
+  "what_you_do": "You attend a one-week summer leadership session for 11th grade girls, run by the American Legion Auxiliary. A local Auxiliary Unit chooses and sponsors each delegate. The pages do not describe the daily activities.",
   "min_age": null,
   "max_age": null,
   "grades": "11th grade (the site says each delegate is an 11th grader during the 2025-26 school year)",
@@ -154,7 +154,7 @@
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Ask your school counselor or contact a local American Legion Auxiliary Unit (the site has a spreadsheet to find one). Each Unit picks a delegate and two alternates. Students at schools with no sponsoring Unit can use the START HERE online application as Department alternate applicants.",
-  "needs_work_permit": null,
+  "needs_work_permit": false,
   "url": "https://cagirlsstate.org/",
   "apply_url": null,
   "sources_fetched": [
@@ -165,7 +165,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "Separate from the coed American Legion Boys & Girls State program in ca-boys-girls-state.json (no separate Boys State card was made). The FAQ says a student may apply to either American Legion CA Boys State or American Legion Auxiliary CA Girls State, but not both. Selection criteria, grade-school rules beyond the 11th grade note, and cost are not stated on the pages read.",
+  "notes": "Separate from the coed American Legion California Boys State (Boys & Girls State) program, which has its own card on this site. The FAQ says a student may apply to either American Legion CA Boys State or American Legion Auxiliary CA Girls State, but not both. Selection criteria, grade-school rules beyond the 11th grade note, and cost are not stated on the pages read.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -263,7 +263,7 @@
    "education",
    "arts-media"
   ],
-  "what_you_do": "Teens suggest ideas for library events and projects. 1 service hour per meeting.",
+  "what_you_do": "You suggest ideas for library events and projects. You earn 1 service hour per meeting.",
   "min_age": null,
   "max_age": null,
   "grades": null,
@@ -288,7 +288,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 3,
-  "notes": "Meets at the Main Library in the Stafford Room. The page states no age rule, so ask the library if you are younger than 12 or older than 17.",
+  "notes": "Meets at the Main Library in the Stafford Room. The page states no age rule, so ask the library if you are younger than 12 or older than 17. See also Alameda Free Library Teen Volunteers (Book Reviewers and Coding with LEGO) for volunteer roles such as book reviews and LEGO coding.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -329,7 +329,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "Book reviews are limited to one a month. No coding experience needed for LEGO.",
+  "notes": "Book reviews are limited to one a month. No coding experience needed for LEGO. See also Alameda Free Library Teen Advisory Group (TAG) for the advisory role, where teens suggest ideas for library events and projects.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -344,11 +344,11 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Free fair where students meet employers, schools, nonprofits and trade groups to explore careers, part-time jobs, internships and training.",
+  "what_you_do": "You can attend this free fair, where you meet employers, schools, nonprofits and trade groups to explore careers, part-time jobs, internships and training.",
   "min_age": null,
   "max_age": null,
   "grades": null,
-  "who_can_apply": "Local youth, especially students in Alameda Unified School District career technical education (CTE) programs.",
+  "who_can_apply": "Local youth, especially students in Alameda Unified School District career technical education programs.",
   "paid_type": "unpaid",
   "pay_detail": "Free event",
   "season": "spring",
@@ -385,7 +385,7 @@
    "science",
    "any"
   ],
-  "what_you_do": "Free tutoring, academic advising, college application and financial aid help, campus visits and career exploration, with monthly Saturday Academies and a required summer part.",
+  "what_you_do": "You get free tutoring, academic advising, help with college applications and financial aid, campus visits and career exploration. The program also has monthly Saturday Academies and a required summer part.",
   "min_age": null,
   "max_age": null,
   "grades": "9 to 12",
@@ -429,7 +429,7 @@
    "business-finance",
    "any"
   ],
-  "what_you_do": "Paid summer internship at BART, 10 to 20 hours a week, in person.",
+  "what_you_do": "You get a paid summer internship at BART, 10 to 20 hours a week, in person.",
   "min_age": 16,
   "max_age": null,
   "grades": null,
@@ -475,7 +475,7 @@
    "engineering",
    "trades"
   ],
-  "what_you_do": "Career pathways at Berkeley High in six areas: health, public service, arts and media, IT, engineering, and building trades. Students can earn credit for an internship or work-based learning.",
+  "what_you_do": "You can follow career pathways at Berkeley High in six areas: health, public service, arts and media, IT, engineering and building trades. You can earn credit for an internship or work-based learning.",
   "min_age": null,
   "max_age": null,
   "grades": "9 to 12",
@@ -674,7 +674,7 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Paid, part-time, temporary internships through the City of Berkeley, plus a Ready to Work workshop series that pays a stipend.",
+  "what_you_do": "You can get a paid, part-time, temporary internship through the City of Berkeley. The Ready to Work workshop series pays a stipend.",
   "min_age": null,
   "max_age": null,
   "grades": null,
@@ -691,7 +691,7 @@
   "how_to_apply": "Fill out the online YouthWorks interest form. Chosen candidates get an email for a 15 to 20 minute interview. Contact: youthworks@berkeleyca.gov, (510) 981-4970.",
   "needs_work_permit": true,
   "url": "https://berkeleyca.gov/youthworks",
-  "apply_url": "https://berkeleyca.gov/youthworks",
+  "apply_url": null,
   "sources_fetched": [
    "https://berkeleyca.gov/youthworks"
   ],
@@ -714,7 +714,7 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Coaching for current and former foster youth on career interests, resumes, budgeting, job connections, and training or apprenticeship options.",
+  "what_you_do": "If you are a current or former foster youth in Alameda County, you get coaching on career interests, resumes, budgeting, job connections, and training or apprenticeship options.",
   "min_age": null,
   "max_age": null,
   "grades": null,
@@ -729,7 +729,7 @@
   "deadline_iso": null,
   "deadline_confidence": "rolling",
   "how_to_apply": "Call 510.980.9010 or email info@beyondemancipation.org (both from the site footer). Staff connect youth to coaching, training and job resources.",
-  "needs_work_permit": null,
+  "needs_work_permit": false,
   "url": "https://beyondemancipation.org/",
   "apply_url": null,
   "sources_fetched": [
@@ -798,7 +798,7 @@
   "fields": [
    "tech-cs"
   ],
-  "what_you_do": "Workshops in robotics, art and AI for girls ages 7 to 18, plus free Code Along videos on YouTube and mentoring chances.",
+  "what_you_do": "You can join workshops in robotics, art and AI for girls ages 7 to 18. Free Code Along videos on YouTube and mentoring chances are also available.",
   "min_age": 7,
   "max_age": 18,
   "grades": null,
@@ -868,7 +868,7 @@
  },
  {
   "id": "ca-boys-girls-state",
-  "name": "American Legion California Boys & Girls State",
+  "name": "American Legion California Boys State (Boys & Girls State)",
   "org": "American Legion Department of California",
   "regions": [
    "statewide"
@@ -878,7 +878,7 @@
   "fields": [
    "law-government"
   ],
-  "what_you_do": "Week-long summer program at Sacramento State where students who finished junior year run a mock state government. Open to all genders since 2023.",
+  "what_you_do": "You spend a week at Sacramento State in a summer program for students who finished junior year. You run a mock state government. It has been open to all genders since 2023.",
   "min_age": 16,
   "max_age": 17,
   "grades": "Finished 11th grade, with at least one semester of high school left",
@@ -907,7 +907,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "Two separate programs: this one is coed since 2023. American Legion Auxiliary California Girls State (cagirlsstate.org) is its own program, ran June 22 to 27, 2026 for 11th graders sponsored by a local Auxiliary Unit, one delegate per school. You can apply to only one. Old note about a 2020 article and Sanger phone was out of date.",
+  "notes": "Two separate programs: this one is coed since 2023. California Girls State (American Legion Auxiliary, cagirlsstate.org) is its own program, ran June 22 to 27, 2026 for 11th graders sponsored by a local Auxiliary Unit, one delegate per school. You can apply to only one. Old note about a 2020 article and Sanger phone was out of date.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -928,7 +928,7 @@
   "grades": null,
   "who_can_apply": "Ages 15 to 21, per the 2026 Explorer competition packet (this is the competition age rule). Post membership rules such as GPA or background checks are not stated on the pages read.",
   "paid_type": "unpaid",
-  "pay_detail": "No pay stated. 2026 competition fees were $150 per explorer, $125 per advisor and $75 per spectator.",
+  "pay_detail": "Unpaid. Cost to you: 2026 competition fees were $150 per explorer, $125 per advisor and $75 per spectator.",
   "season": "year-round",
   "duration": "Not stated for post membership. The 2026 competition ran April 24 to 26, 2026.",
   "status": "unconfirmed",
@@ -947,7 +947,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "Both official pages were read on 2026-10-07. The program page covers the statewide competition and does not say how to join a post. The 2026 packet is the source for the 15 to 21 age rule, which it states for the competition. Whether a post near you has room, and any background check or GPA rule, must be asked of CHP. The CHP East Sacramento post page returns 403 to automated reads, so use the email or phone above.",
+  "notes": "Both official pages were read on 2026-10-07. The program page covers the statewide competition and does not say how to join a post. The 2026 packet is the source for the 15 to 21 age rule, which it states for the competition. Whether a post near you has room, and any background check or GPA rule, must be asked of CHP. The CHP East Sacramento post page returns 403 to automated reads, so use the email or phone above. See also CHP Explorer Post (East Sacramento) for a local post. Ages differ by source: the 2026 competition packet says 15 to 21, while the CHP lists 15 to 20 for Explorers.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -963,7 +963,7 @@
    "trades",
    "engineering"
   ],
-  "what_you_do": "The state agency that registers apprenticeships. Use its search tool to find registered apprenticeship and pre-apprenticeship programs near you.",
+  "what_you_do": "You can use the Apprenticeship Search to find registered apprenticeship and pre-apprenticeship programs near you. The state agency that registers them is the Division of Apprenticeship Standards.",
   "min_age": 16,
   "max_age": null,
   "grades": null,
@@ -1004,7 +1004,7 @@
   "fields": [
    "environment"
   ],
-  "what_you_do": "Volunteer or student intern roles at state parks. People under 18 can volunteer with written parent or guardian permission.",
+  "what_you_do": "You can volunteer or intern at state parks. If you are under 18, you can volunteer with written permission from a parent or guardian.",
   "min_age": null,
   "max_age": null,
   "grades": null,
@@ -1043,11 +1043,11 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "School-supervised work or job-sampling that earns credit. Exploratory WEE is unpaid career sampling (can start at age 12). General and Career Technical WEE are paid jobs with a related class.",
+  "what_you_do": "Work Experience Education (WEE) is a school-supervised job that earns class credit. Exploratory WEE is unpaid job sampling and can start at age 12. General and Career Technical WEE are paid jobs that come with a related class.",
   "min_age": 12,
   "max_age": null,
   "grades": null,
-  "who_can_apply": "Your school district must run an approved WEE program. Exploratory WEE students can be as young as 12 and do not need a work permit. General WEE usually needs a work permit. Career Technical WEE needs a job related to a CTE class you take.",
+  "who_can_apply": "Your school district must run an approved WEE program. Exploratory WEE students can be as young as 12 and do not need a work permit. General WEE usually needs a work permit. Career Technical WEE needs a job related to a career technical class you take.",
   "paid_type": "mixed",
   "pay_detail": "Exploratory is unpaid. General and Career Technical WEE combine paid work with a class.",
   "season": "school-year",
@@ -1085,7 +1085,7 @@
    "education",
    "any"
   ],
-  "what_you_do": "Youth clubs and projects in science, agriculture, leadership and community service, with teen leader roles.",
+  "what_you_do": "You can join youth clubs and projects in science, agriculture, leadership and community service. Teen leader roles are also available.",
   "min_age": null,
   "max_age": null,
   "grades": null,
@@ -1167,7 +1167,7 @@
    "tech-cs",
    "engineering"
   ],
-  "what_you_do": "A three-year 'school within a school' for grades 10 to 12 that mixes academics with a career focus, business mentors and internships.",
+  "what_you_do": "You can join a three-year 'school within a school' for grades 10 to 12. It mixes academics with a career focus, business mentors and internships.",
   "min_age": null,
   "max_age": null,
   "grades": "10 to 12",
@@ -1204,7 +1204,7 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Case management, career exploration and paid workforce preparation and work experience for high school students who qualify.",
+  "what_you_do": "If you are a high school student who qualifies, you get a case manager, career exploration, and paid job training and work experience.",
   "min_age": null,
   "max_age": null,
   "grades": "High school",
@@ -1244,7 +1244,7 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Tuition-free Individual Dual Enrollment (classes at Chabot or online), CCAP classes at your high school, and a summer academy.",
+  "what_you_do": "Tuition-free college classes while you are in high school. You can take individual classes at Chabot College or online, take college classes offered at your own high school, or attend a summer academy.",
   "min_age": null,
   "max_age": null,
   "grades": "High school",
@@ -1286,7 +1286,7 @@
    "education",
    "engineering"
   ],
-  "what_you_do": "A three-year STEM and workforce program. Teens work museum floor shifts explaining science, join inquiry teams on engineering and tech projects, and can take leadership roles in later years.",
+  "what_you_do": "You spend three years in this STEM and workforce program. You work museum floor shifts explaining science, join inquiry teams on engineering and tech projects, and can take leadership roles in later years.",
   "min_age": null,
   "max_age": null,
   "grades": "Typically enters the summer before 10th grade and stays through 12th grade",
@@ -1326,7 +1326,7 @@
   "fields": [
    "law-government"
   ],
-  "what_you_do": "Explorer post for teens who want a law enforcement career, with training and mentoring from CHP officers.",
+  "what_you_do": "You can join an Explorer post for teens who want a law enforcement career. You get training and mentoring from CHP officers.",
   "min_age": 15,
   "max_age": 20,
   "grades": "9 to 12",
@@ -1348,7 +1348,7 @@
   "verified": "snippet-only",
   "verified_on": "2026-10-07",
   "priority": 3,
-  "notes": "The CHP site blocked WebFetch (403) and a browser tab loaded blank, so ages come from search results and are unconfirmed. CHP has other posts. Confirm age limits and meeting times with the post.",
+  "notes": "The CHP site blocked WebFetch (403) and a browser tab loaded blank, so ages come from search results and are unconfirmed. CHP has other posts. Confirm age limits and meeting times with the post. See also California Highway Patrol Explorer Program for the statewide competition. Ages differ by source: the CHP lists 15 to 20 for Explorers, while the post page snippet says 15 to 21.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -1367,7 +1367,7 @@
    "food-hospitality",
    "science"
   ],
-  "what_you_do": "School-year cohort that visits farms, conservation sites, ag businesses and colleges (at least six field days) and builds resume, interview and speaking skills.",
+  "what_you_do": "You are in a school-year group that visits farms, conservation sites, agriculture businesses and colleges (at least six field days). You build resume, interview and speaking skills.",
   "min_age": null,
   "max_age": null,
   "grades": "high school",
@@ -1409,7 +1409,7 @@
    "food-hospitality",
    "science"
   ],
-  "what_you_do": "Year-long paid internship at a school garden: weekly garden hours, a workforce class, field trips to farms and guest speakers.",
+  "what_you_do": "You get a year-long paid internship at a school garden. It includes weekly garden hours, a workforce class, field trips to farms and guest speakers.",
   "min_age": null,
   "max_age": null,
   "grades": "high school",
@@ -1500,7 +1500,7 @@
   "pay_detail": "Not stated on the page",
   "season": "school-year",
   "duration": "Not stated on the page",
-  "status": "unconfirmed",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
   "deadline_text": "Applications are currently closed. Join the interest list to hear about the next round.",
   "deadline_iso": null,
@@ -1549,7 +1549,7 @@
   "how_to_apply": "Register on the Student Registration page, then submit the app online.",
   "needs_work_permit": false,
   "url": "https://www.congressionalappchallenge.us/",
-  "apply_url": "https://www.congressionalappchallenge.us/",
+  "apply_url": null,
   "sources_fetched": [
    "https://www.congressionalappchallenge.us/",
    "https://www.congressionalappchallenge.us/rules/"
@@ -1572,7 +1572,7 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Free college classes (no tuition, books or enrollment fees) for students of West Contra Costa USD (including Middle College High School on campus), Leadership Public Schools and Griffin Technology Academies.",
+  "what_you_do": "You can take free college classes (no tuition, books or enrollment fees) if you attend West Contra Costa USD, Leadership Public Schools, Griffin Technology Academies or Middle College High School on campus.",
   "min_age": null,
   "max_age": null,
   "grades": "High school",
@@ -1629,7 +1629,7 @@
   "how_to_apply": "Fill out the volunteer interest form on ccclib.org/volunteer. You may be called for an interview. Forms stay on file for six months.",
   "needs_work_permit": false,
   "url": "https://ccclib.org/volunteer/",
-  "apply_url": "https://ccclib.org/volunteer/",
+  "apply_url": null,
   "sources_fetched": [
    "https://ccclib.org/volunteer/"
   ],
@@ -1657,7 +1657,7 @@
    "tech-cs",
    "health"
   ],
-  "what_you_do": "Four-week residential summer program with college-level math and science courses and hands-on projects.",
+  "what_you_do": "You spend four weeks living on campus in a summer program with college-level math and science courses and hands-on projects.",
   "min_age": null,
   "max_age": null,
   "grades": "8 to 12",
@@ -1745,7 +1745,7 @@
    "law-government",
    "health"
   ],
-  "what_you_do": "Classroom and hands-on training in fire and EMS, with leadership practice and community service hours.",
+  "what_you_do": "You get classroom and hands-on fire training, with leadership practice and community service hours.",
   "min_age": 15,
   "max_age": 18,
   "grades": "11 to 12",
@@ -1908,7 +1908,7 @@
    "trades",
    "any"
   ],
-  "what_you_do": "School classes in career pathways inside seven industry sectors, taught in a sequence of courses. The district also offers student internships through its CTE program.",
+  "what_you_do": "You can take school classes in career pathways inside seven industry sectors, taught in a sequence of courses. The district also offers student internships through its career program.",
   "min_age": null,
   "max_age": null,
   "grades": "9 to 12",
@@ -2031,7 +2031,7 @@
    "business-finance",
    "food-hospitality"
   ],
-  "what_you_do": "School clubs that prepare students for marketing, finance, hospitality and management careers, with competitions and conferences.",
+  "what_you_do": "You can join a school club that prepares you for marketing, finance, hospitality and management careers. It has competitions and conferences.",
   "min_age": null,
   "max_age": null,
   "grades": "High school",
@@ -2077,7 +2077,7 @@
    "law-government",
    "arts-media"
   ],
-  "what_you_do": "School course with weekly coaching on resumes, cover letters and interviews. You get an unpaid internship placement or prep for paid work. Sites include Davis Public Library, Davis Vanguard, Mercy General and Pemberton Engineering.",
+  "what_you_do": "You take a school course with weekly coaching on resumes, cover letters and interviews. You get an unpaid internship or prep for paid work. Sites include Davis Public Library, Davis Vanguard, Mercy General and Pemberton Engineering.",
   "min_age": null,
   "max_age": null,
   "grades": "high school (DJUSD students)",
@@ -2109,7 +2109,8 @@
   "name": "Dublin L.E.A.D. Summer Program",
   "org": "City of Dublin, Parks and Community Services",
   "regions": [
-   "oakland"
+   "east-bay",
+   "alameda"
   ],
   "city": "Dublin, CA",
   "type": "leadership",
@@ -2148,7 +2149,8 @@
   "name": "Dublin Youth Advisory Committee (YAC)",
   "org": "City of Dublin, Parks and Community Services",
   "regions": [
-   "oakland"
+   "east-bay",
+   "alameda"
   ],
   "city": "Dublin, CA",
   "type": "civic-government",
@@ -2196,7 +2198,7 @@
    "social-impact",
    "education"
   ],
-  "what_you_do": "Volunteer and student internship options at a youth group that offers life coaching, school partnerships and community organizing.",
+  "what_you_do": "You can volunteer or do a student internship at a youth group that offers life coaching, school partnerships and community organizing.",
   "min_age": null,
   "max_age": null,
   "grades": null,
@@ -2239,7 +2241,7 @@
    "science",
    "trades"
   ],
-  "what_you_do": "Paid 6 week summer internship (about 16 hours a week) at the water utility.",
+  "what_you_do": "You get a paid 6 week summer internship (about 16 hours a week) at the water utility.",
   "min_age": null,
   "max_age": null,
   "grades": null,
@@ -2282,7 +2284,7 @@
    "sports",
    "education"
   ],
-  "what_you_do": "Seasonal paid student jobs such as recreation leader, lifeguard, gate attendant, student laborer and interpretive student aide, with pathways from high school to college.",
+  "what_you_do": "You can get seasonal paid student jobs such as recreation leader, lifeguard, gate attendant, student laborer and interpretive student aide. The jobs include pathways from high school to college.",
   "min_age": 16,
   "max_age": null,
   "grades": null,
@@ -2324,7 +2326,7 @@
    "environment",
    "social-impact"
   ],
-  "what_you_do": "After-school environmental justice program for Berkeley teens and young adults (8 weeks in summer or 12 weeks in spring). Topics include zero waste, climate resilience and food systems. Paid.",
+  "what_you_do": "You join an after-school environmental justice program for Berkeley teens and young adults (8 weeks in summer or 12 weeks in spring). Topics include zero waste, climate resilience and food systems. It is paid.",
   "min_age": 15,
   "max_age": 24,
   "grades": null,
@@ -2359,8 +2361,7 @@
   "org": "Eden Area ROP",
   "regions": [
    "alameda",
-   "east-bay",
-   "oakland"
+   "east-bay"
   ],
   "city": "Hayward, CA",
   "type": "school-pathway",
@@ -2373,7 +2374,7 @@
    "trades",
    "business-finance"
   ],
-  "what_you_do": "Career classes taken in high school at the Eden Area ROP center in Hayward or at some home schools. Pathways include welding, auto, construction, culinary, dental assisting, cybersecurity, first responder and education careers.",
+  "what_you_do": "You take career classes during high school at the Eden Area ROP career center in Hayward or at some home high schools. Class choices include welding, auto, construction, culinary arts, dental assisting, cybersecurity, first responder and education careers.",
   "min_age": null,
   "max_age": null,
   "grades": "11 to 12",
@@ -2413,7 +2414,7 @@
   "fields": [
    "health"
   ],
-  "what_you_do": "A year-long hospital volunteer program for teens in Mountain View and Los Gatos.",
+  "what_you_do": "You can join a year-long hospital volunteer program for teens in Mountain View and Los Gatos.",
   "min_age": 14,
   "max_age": null,
   "grades": "Finished 8th grade",
@@ -2494,7 +2495,7 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Take free college classes while in high school: open classes at your own choice (up to 11 units, 7 in summer) or cohort classes at partner high schools (CCAP, up to 15 units a semester).",
+  "what_you_do": "You can take free college classes while in high school. You can pick open classes (up to 11 units, 7 in summer), or take a set of college classes taught at a partner high school (up to 15 units a semester).",
   "min_age": null,
   "max_age": null,
   "grades": null,
@@ -2537,7 +2538,7 @@
    "health",
    "engineering"
   ],
-  "what_you_do": "Career exploration posts in 12 fields such as health care, law enforcement, fire and EMS, engineering, and law and government, with hands-on activities.",
+  "what_you_do": "You can join career exploration posts in 12 fields such as health care, law enforcement, fire, engineering, and law and government. The posts include hands-on activities.",
   "min_age": 14,
   "max_age": 20,
   "grades": null,
@@ -2619,7 +2620,7 @@
    "education",
    "sports"
   ],
-  "what_you_do": "Leadership training (decision-making, conflict resolution, teamwork), then you volunteer with campers ages 6 to 10 in the Destination Recreation summer camp. You get a T-shirt and a Friday lunch.",
+  "what_you_do": "You get leadership training (decision-making, conflict resolution, teamwork). Then you volunteer with campers ages 6 to 10 in the Destination Recreation summer camp. You get a T-shirt and a Friday lunch.",
   "min_age": 13,
   "max_age": 15,
   "grades": null,
@@ -2748,11 +2749,11 @@
    "engineering",
    "health"
   ],
-  "what_you_do": "CTE courses at middle and high schools in 15 sectors and 58 pathways, some inside California Partnership Academies or regional occupational programs.",
+  "what_you_do": "You can take career and technical education classes at Fremont Unified middle and high schools in 15 industry sectors and 58 career pathways. Some are inside California Partnership Academies or regional occupational programs.",
   "min_age": null,
   "max_age": null,
   "grades": "6 to 12",
-  "who_can_apply": "Students at Fremont Unified middle and high schools. The page says limited English is not a barrier to joining CTE programs.",
+  "who_can_apply": "Students at Fremont Unified middle and high schools. The page says limited English is not a barrier to joining career and technical education programs.",
   "paid_type": "unpaid-credit",
   "pay_detail": "Not stated on the page",
   "season": "school-year",
@@ -2793,7 +2794,7 @@
    "business-finance",
    "tech-cs"
   ],
-  "what_you_do": "Eight weeks of business technology and professional skills training, then a paid, year-long internship at a partner company, plus college and career coaching.",
+  "what_you_do": "You take eight weeks of business technology and job skills training, then work a paid, year-long internship at a partner company. You also get college and career coaching.",
   "min_age": null,
   "max_age": null,
   "grades": "Rising seniors (going into 12th grade)",
@@ -2835,7 +2836,7 @@
    "tech-cs",
    "any"
   ],
-  "what_you_do": "Free programs for high school girls: coding (Code the Game, grades 10 to 12), college access, leadership, and paid summer internships at Bay Area companies.",
+  "what_you_do": "You can join free programs for high school girls, including coding (Code the Game, grades 10 to 12), college access and leadership. Some programs offer paid summer internships at Bay Area companies.",
   "min_age": null,
   "max_age": null,
   "grades": "9 to 12",
@@ -2876,7 +2877,7 @@
   "fields": [
    "tech-cs"
   ],
-  "what_you_do": "Free coding clubs (grades 3 to 12, after school or weekends) and a free self-paced online Pathways program for high school students.",
+  "what_you_do": "You can join a free coding club (grades 3 to 12, after school or on weekends) or take the free, self-paced online Pathways program for high school students.",
   "min_age": null,
   "max_age": null,
   "grades": "Clubs: grades 3 to 12 (split 3 to 5 and 6 to 12). Pathways: high school.",
@@ -3000,7 +3001,7 @@
   "fields": [
    "tech-cs"
   ],
-  "what_you_do": "Free teen coding community with school clubs, an online Slack, game jams, hackathons and hardware events.",
+  "what_you_do": "You can join Hack Club, a free teen coding community with school clubs, an online Slack, game jams, hackathons and hardware events.",
   "min_age": 13,
   "max_age": 18,
   "grades": null,
@@ -3039,7 +3040,7 @@
   "fields": [
    "tech-cs"
   ],
-  "what_you_do": "October event with online challenges, livestreams and over 500 local in-person fests. This year it focuses on open source and open-weight AI.",
+  "what_you_do": "In October you can join online challenges and livestreams, or go to one of over 500 local in-person fests. This year the event focuses on open source and open-weight AI.",
   "min_age": null,
   "max_age": null,
   "grades": null,
@@ -3082,7 +3083,7 @@
    "any",
    "social-impact"
   ],
-  "what_you_do": "Monthly volunteer projects open to younger volunteers, found on the HandsOn Community Calendar. The 2-week HandsOn Tomorrow summer program (up to 40 hours) is not running in summer 2026.",
+  "what_you_do": "You can join monthly volunteer projects for younger volunteers. Find them on the HandsOn Community Calendar and filter by age to see which are open to you.",
   "min_age": null,
   "max_age": null,
   "grades": "High school (for HandsOn Tomorrow and the Youth Council)",
@@ -3108,7 +3109,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 3,
-  "notes": "HandsOn Tomorrow is paused (no summer 2026 session) and the Youth Volunteer Council needs HandsOn Tomorrow first, so for now the monthly calendar projects are the way in. Age limits vary by project.",
+  "notes": "HandsOn Tomorrow, a 2-week summer program (up to 40 hours), is paused and is not running in summer 2026. The Youth Volunteer Council needs HandsOn Tomorrow first, so for now the monthly calendar projects are the way in. Age limits vary by project.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -3158,7 +3159,8 @@
   "name": "H.A.R.D. Volunteer Program (Hayward Area Recreation and Park District)",
   "org": "Hayward Area Recreation and Park District (H.A.R.D.)",
   "regions": [
-   "oakland"
+   "east-bay",
+   "alameda"
   ],
   "city": "Hayward, CA",
   "type": "volunteer",
@@ -3197,7 +3199,8 @@
   "name": "Hayward Public Library Teen Volunteer Opportunities",
   "org": "Hayward Public Library (City of Hayward)",
   "regions": [
-   "oakland"
+   "east-bay",
+   "alameda"
   ],
   "city": "Hayward, CA",
   "type": "volunteer",
@@ -3237,7 +3240,8 @@
   "name": "Hayward Youth Commission",
   "org": "City of Hayward (City Clerk's Office)",
   "regions": [
-   "oakland"
+   "east-bay",
+   "alameda"
   ],
   "city": "Hayward, CA",
   "type": "leadership",
@@ -3287,7 +3291,7 @@
    "business-finance",
    "tech-cs"
   ],
-  "what_you_do": "Free 15 month program (800+ hours): two 7-week summers plus a year of after-school sessions in coding, entrepreneurship and leadership, for Black male high school students.",
+  "what_you_do": "You can join a free 15 month program (800+ hours) for Black male high school students. It has two 7-week summers plus a year of after-school sessions in coding, entrepreneurship and leadership.",
   "min_age": null,
   "max_age": null,
   "grades": "Rising 9 to 11",
@@ -3370,7 +3374,7 @@
   "fields": [
    "health"
   ],
-  "what_you_do": "Student group for health science students with skills contests, leadership events and health career exploration.",
+  "what_you_do": "You can join this student group for health science students. It has skills contests, leadership events and health career exploration.",
   "min_age": null,
   "max_age": null,
   "grades": "Secondary and college students (exact grades not stated)",
@@ -3413,7 +3417,7 @@
   ],
   "what_you_do": "Students under 18 can foster cats or dogs at home with a parent or guardian, or make no-sew fleece blankets for shelter animals, and earn service hours.",
   "min_age": null,
-  "max_age": 17,
+  "max_age": null,
   "grades": null,
   "who_can_apply": "On-site animal care volunteers must be 18 or older. Students under 18 can foster with a parent or guardian's support or make fleece blankets.",
   "paid_type": "unpaid",
@@ -3453,7 +3457,7 @@
    "business-finance",
    "tech-cs"
   ],
-  "what_you_do": "A new Fremont career education center with a money-management simulation (JA Finance Park), a student business program (JA Company Program) and career summits with mentors from companies.",
+  "what_you_do": "You will be able to join a new career center in Fremont, coming in early 2027. It offers a money-management simulation, a student business program and career summits with company mentors.",
   "min_age": null,
   "max_age": null,
   "grades": null,
@@ -3494,7 +3498,7 @@
    "trades",
    "health"
   ],
-  "what_you_do": "Free live-in career training with pre-apprenticeship tracks (construction, carpentry, cement masonry) and Certified Nurse Assistant, plus high school or GED help.",
+  "what_you_do": "You can get free live-in career training in construction, carpentry, cement masonry or as a Certified Nurse Assistant, plus help finishing high school or earning a high school equivalency.",
   "min_age": 16,
   "max_age": 24,
   "grades": null,
@@ -3578,7 +3582,7 @@
   "fields": [
    "business-finance"
   ],
-  "what_you_do": "School and community programs on entrepreneurship, investing and personal finance led by volunteers. JA also lists Job Shadow and Finance Park experiences. A Silicon Valley JA Launchpad center is coming in early 2027.",
+  "what_you_do": "You can join Junior Achievement programs on entrepreneurship, investing and personal finance, led by volunteers. Job shadow and Finance Park experiences are also listed, and a Silicon Valley Launchpad center is coming in early 2027.",
   "min_age": null,
   "max_age": null,
   "grades": "High school",
@@ -3628,7 +3632,7 @@
    "business-finance",
    "any"
   ],
-  "what_you_do": "Seven-week full-time paid summer job in healthcare support and admin roles, with weekly workshops, mentoring and networking. Little patient contact.",
+  "what_you_do": "You get a seven-week, full-time paid summer job in healthcare support or admin roles. You also get weekly workshops, mentoring and networking, with little patient contact.",
   "min_age": 16,
   "max_age": 19,
   "grades": "Current high school student (priority to juniors and seniors) or Class of 2027 graduate",
@@ -3670,7 +3674,7 @@
    "social-impact",
    "any"
   ],
-  "what_you_do": "Student-led service, leadership and fundraising through a club at your school; you can start a club if there is none.",
+  "what_you_do": "You do service, leadership and fundraising through a student-led club at your school. If your school has no club, you can start one.",
   "min_age": null,
   "max_age": null,
   "grades": "High school",
@@ -3710,7 +3714,7 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Free online lessons on the Khan Academy Life skills page: financial literacy, personal finance, entrepreneurship, career exploration and college admissions.",
+  "what_you_do": "You can take free online lessons on the Khan Academy Life skills page. Topics include financial literacy, personal finance, entrepreneurship, career exploration and college admissions.",
   "min_age": null,
   "max_age": null,
   "grades": null,
@@ -3751,7 +3755,7 @@
   "fields": [
    "tech-cs"
   ],
-  "what_you_do": "Free coding programs for girls and gender-expansive teens ages 13 to 18: a two-day Code-a-Bration or a two-week Camp in summer.",
+  "what_you_do": "You can join a free coding program for girls and gender-expansive teens ages 13 to 18. Choices include a two-day Code-a-Bration or a two-week Camp in summer.",
   "min_age": 13,
   "max_age": 18,
   "grades": null,
@@ -3790,11 +3794,11 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Paid summer work experience (up to about 100 hours) with job readiness training, offered through the City of Oakland summer youth jobs program (MSYEP).",
+  "what_you_do": "You get a paid summer work experience of up to about 100 hours, with job readiness training, through the City of Oakland's summer youth jobs program.",
   "min_age": 16,
   "max_age": 21,
   "grades": null,
-  "who_can_apply": "Oakland youth ages 16 to 21, per the City of Oakland MSYEP partner table. Oakland residency is required for MSYEP.",
+  "who_can_apply": "Oakland youth ages 16 to 21, per the City of Oakland summer youth jobs partner table. Oakland residency is required for that program.",
   "paid_type": "paid",
   "pay_detail": "At least Oakland's minimum wage (MSYEP rule); exact rate not posted",
   "season": "summer",
@@ -3823,14 +3827,15 @@
   "name": "Summer Youth Volunteer Program",
   "org": "Livermore Area Recreation and Park District (LARPD)",
   "regions": [
-   "oakland"
+   "east-bay",
+   "alameda"
   ],
   "city": "Livermore, CA",
   "type": "volunteer",
   "fields": [
    "education"
   ],
-  "what_you_do": "Teens help LARPD staff run summer camps, sports, arts and crafts, and recreation programs, and can join open space projects with park rangers. Volunteers earn community service hours.",
+  "what_you_do": "Teens help Livermore Area Recreation and Park District staff run summer camps, sports, arts and crafts, and recreation programs, and can join open space projects with park rangers. Volunteers earn community service hours.",
   "min_age": 13,
   "max_age": 17,
   "grades": null,
@@ -3873,11 +3878,11 @@
    "any",
    "trades"
   ],
-  "what_you_do": "Free college classes for high school students in Dublin, Livermore and Pleasanton and Tri-Valley ROP, aimed at career technical pathways. Tuition and fees are waived and required materials are provided.",
+  "what_you_do": "You can take free Las Positas College classes in high school, aimed at career technical pathways, through partner programs in Dublin, Livermore, Pleasanton and Tri-Valley. Tuition and fees are waived, and required materials are provided.",
   "min_age": null,
   "max_age": null,
   "grades": null,
-  "who_can_apply": "High school students in partner districts: Dublin, Livermore, Pleasanton and Tri-Valley ROP, plus San Ramon Valley USD (welding) and TUSD (fire safety training). Residency and citizenship rules apply; ask Admissions & Records.",
+  "who_can_apply": "High school students in partner districts: Dublin, Livermore, Pleasanton and Tri-Valley, plus San Ramon Valley USD (welding) and TUSD (fire safety training). Residency and citizenship rules apply; ask Admissions & Records.",
   "paid_type": "unpaid-credit",
   "pay_detail": "Free; tuition and fees waived and required materials provided (parking may cost extra for classes at LPC)",
   "season": "year-round",
@@ -3915,7 +3920,7 @@
    "science",
    "tech-cs"
   ],
-  "what_you_do": "Six week in-person STEM program with machine learning and data science projects, computer science coursework and talks with scientists.",
+  "what_you_do": "You spend six weeks in person at Berkeley Lab, at least 4 days a week. You work on machine learning and data science projects, take computer science classes and hear talks from scientists.",
   "min_age": null,
   "max_age": null,
   "grades": "10 and 11",
@@ -3930,7 +3935,7 @@
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Apply online through the Berkeley Lab K-12 program page when it opens (the 2026 application ran through apply.mykaleidoscope.com).",
-  "needs_work_permit": null,
+  "needs_work_permit": false,
   "url": "https://k12education.lbl.gov/programs/high-school/BLDAP",
   "apply_url": null,
   "sources_fetched": [
@@ -3960,7 +3965,7 @@
    "science",
    "tech-cs"
   ],
-  "what_you_do": "Paid six week summer research internship with a Berkeley Lab mentor in areas like data science, experimental research, coding and science communication.",
+  "what_you_do": "You get a paid six-week summer research internship with a Berkeley Lab mentor. Areas include data science, experimental research, coding and science communication.",
   "min_age": 16,
   "max_age": 18,
   "grades": "10 to 12",
@@ -4003,7 +4008,7 @@
    "science",
    "engineering"
   ],
-  "what_you_do": "Free spring break camp at Berkeley Lab for bilingual, native Spanish speaking students who are English learners, with STEM careers exposure.",
+  "what_you_do": "You can join a free spring break camp at Berkeley Lab for bilingual students who are native Spanish speakers and English learners. It includes exposure to careers in science, technology, engineering and math.",
   "min_age": null,
   "max_age": null,
   "grades": null,
@@ -4012,7 +4017,7 @@
   "pay_detail": "Free",
   "season": "spring",
   "duration": "April 8 to 11, 2026 (spring break)",
-  "status": "unconfirmed",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
   "deadline_text": "2026 applications are closed; no 2027 dates posted.",
   "deadline_iso": null,
@@ -4035,7 +4040,9 @@
   "name": "League of Volunteers Teen Volunteers (Summer Recreation)",
   "org": "League of Volunteers (nonprofit, 501(c)(3))",
   "regions": [
-   "oakland"
+   "east-bay",
+   "alameda",
+   "fremont"
   ],
   "city": "Newark, CA (serves Fremont, Newark and Union City)",
   "type": "volunteer",
@@ -4084,7 +4091,7 @@
   "fields": [
    "law-government"
   ],
-  "what_you_do": "Four-week online summer program about California policy, with talks from state leaders and professional skills workshops. You earn a stipend at the end.",
+  "what_you_do": "You can take a four-week online summer program about California policy. It includes talks from state leaders and professional skills workshops, and you earn a stipend at the end.",
   "min_age": null,
   "max_age": null,
   "grades": "sophomore, junior or senior",
@@ -4126,7 +4133,7 @@
    "education",
    "science"
   ],
-  "what_you_do": "Help run science summer camps: lead games and activities, prep materials, support campers. Training in May, full time work in summer.",
+  "what_you_do": "You help run science summer camps by leading games and activities, preparing materials and supporting campers. Training is in May, and the job is full time in summer.",
   "min_age": null,
   "max_age": null,
   "grades": "Entering 11 or 12",
@@ -4168,16 +4175,16 @@
    "science",
    "education"
   ],
-  "what_you_do": "Teens staff exhibits (planetarium, Ingenuity Challenges, Outdoor Nature Lab, Animal Discovery Zone). Minimum 21 summer hours or 2 shifts a month in the school year.",
-  "min_age": 14,
-  "max_age": 18,
+  "what_you_do": "You staff exhibits such as the planetarium, Ingenuity Challenges, Outdoor Nature Lab and Animal Discovery Zone. The minimum is 21 summer hours or 2 shifts a month during the school year.",
+  "min_age": null,
+  "max_age": null,
   "grades": "9 and up",
   "who_can_apply": "Entering 9th grade or older and age 14 by June 1 (2024 cycle wording); not a current volunteer. Own transportation to Berkeley.",
   "paid_type": "unpaid",
   "pay_detail": null,
   "season": "year-round",
   "duration": "Summer minimum 21 hours; school year two 3-hour shifts a month",
-  "status": "unconfirmed",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
   "deadline_text": "Paused: no new cohort in 2025, with a relaunch planned for 2026 (page text dates from Dec 2024). Last posted window closed Jan 16, 2024. No current cohort confirmed.",
   "deadline_iso": null,
@@ -4193,7 +4200,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "The volunteer page now says it is not taking new adult volunteers and lists no teen program. Call or email to ask whether the redesigned teen program has launched.",
+  "notes": "The volunteer page now says it is not taking new adult volunteers and lists no teen program. Call or email to ask whether the redesigned teen program has launched. The age rules in who_can_apply come from 2024 wording, so the age fields are blank.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -4201,7 +4208,8 @@
   "name": "Livermore Area Youth Advisory Commission (LAYAC)",
   "org": "City of Livermore",
   "regions": [
-   "oakland"
+   "east-bay",
+   "alameda"
   ],
   "city": "Livermore, CA",
   "type": "civic-government",
@@ -4273,7 +4281,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "Phone 650.948.9427; the page gives no email address. Pay is not stated on the current official page, so paid_type is a judgment based on the 2024 article and should be confirmed. The lahstalon.org article is a 2024 news piece, used only for the interview and volunteer details. The museum's adult docent roles are separate and not for teens.",
+  "notes": "Phone 650.948.9427; the page gives no email address. Pay is not stated on the current official page, so we list it as unpaid based on a 2024 article; confirm with the museum. The lahstalon.org article is a 2024 news piece, used only for the interview and volunteer details. The museum's adult docent roles are separate and not for teens.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -4290,7 +4298,7 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Take free college classes while in high school, either on your own at a Los Rios college (special admit) or in a class at your high school through a CCAP agreement.",
+  "what_you_do": "You can take free college classes while in high school. You can enroll on your own at a Los Rios college (special admit), or take a college class at your high school through an agreement between your school and the college.",
   "min_age": 14,
   "max_age": 18,
   "grades": "9 to 12",
@@ -4329,7 +4337,7 @@
   "fields": [
    "tech-cs"
   ],
-  "what_you_do": "Student hackathons and coding events run by MLH, plus a 12-week remote Fellowship that pays a stipend. Most listed hackathons do not say high school students can enter.",
+  "what_you_do": "Student hackathons (short coding contests) and coding events run by Major League Hacking, plus a 12-week remote Fellowship that pays a stipend. Most listed hackathons do not say high school students can enter.",
   "min_age": null,
   "max_age": null,
   "grades": null,
@@ -4434,7 +4442,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "Competitive, and closed now. Members must attend at least 75 percent of meetings. Contact Da'Shawn Williams, Recreation Coordinator, 650-330-2248. The page lists two email addresses (dlwilliams@menlopark.org and dlwilliams@menlopark.gov); confirm which is current. An older city notice said about 8 hours per month; the current page says about 6. The page does not mention pay, so paid_type is a judgment and should be confirmed.",
+  "notes": "Competitive, and closed now. Members must attend at least 75 percent of meetings. Contact Da'Shawn Williams, Recreation Coordinator, 650-330-2248. The page lists two email addresses (dlwilliams@menlopark.org and dlwilliams@menlopark.gov); confirm which is current. An older city notice said about 8 hours per month; the current page says about 6. The page does not mention pay, so we list it as unpaid; confirm with the city.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -4617,7 +4625,7 @@
    "environment",
    "law-government"
   ],
-  "what_you_do": "Summer program that introduces high school students to regional issues like transportation planning, housing, environmental justice and air quality, through talks with experts from the partner agencies.",
+  "what_you_do": "A summer program introducing high school students to regional problems like transportation planning, housing, environmental justice (how pollution and development affect different communities) and air quality. You hear talks from experts at partner agencies.",
   "min_age": 15,
   "max_age": null,
   "grades": "Completed 9th grade",
@@ -4704,7 +4712,7 @@
    "tech-cs",
    "health"
   ],
-  "what_you_do": "A 12-week online, self-paced program on space biology, bioinformatics and computational biology, about 20 hours a week.",
+  "what_you_do": "A 12-week online program you do at your own pace, about 20 hours a week. Topics include space biology, bioinformatics (using computers to study biology data) and computational biology.",
   "min_age": null,
   "max_age": null,
   "grades": "Rising juniors and seniors (and college freshmen)",
@@ -4744,7 +4752,7 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Free career coaching and training for eligible young adults, plus a paid internship of about 400 hours for people 18 and older. Teens 17 can start with coaching and work readiness.",
+  "what_you_do": "You can get free career coaching and training if you are an eligible young adult. You can also take a paid internship of about 400 hours if you are 18 or older. If you are 17, you can start with coaching and work readiness.",
   "min_age": 17,
   "max_age": 24,
   "grades": null,
@@ -4786,7 +4794,7 @@
   "fields": [
    "environment"
   ],
-  "what_you_do": "Paid summer conservation jobs at national parks, working outdoors on park projects. Each park runs its own program.",
+  "what_you_do": "You can get a paid summer conservation job at a national park, working outdoors on park projects. Each park runs its own program.",
   "min_age": 15,
   "max_age": 18,
   "grades": null,
@@ -4825,7 +4833,7 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Paid summer work experience (up to about 100 hours) with job readiness training, run through partner nonprofits. You apply to the partner group, not the City.",
+  "what_you_do": "You get paid summer work experience of up to about 100 hours, with job readiness training, through partner nonprofits. You apply to the partner group, not the City.",
   "min_age": 14,
   "max_age": 21,
   "grades": null,
@@ -4866,7 +4874,7 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Job readiness training, work-based learning and paid work experience for Oakland youth through three partner agencies.",
+  "what_you_do": "You can get job readiness training, work-based learning and paid work experience through one of three partner agencies, if you are an Oakland youth.",
   "min_age": 16,
   "max_age": 21,
   "grades": null,
@@ -4908,7 +4916,7 @@
    "education",
    "food-hospitality"
   ],
-  "what_you_do": "Part-time and seasonal City recreation jobs: recreation aide, recreation leader, recreation specialist, sports official, lifeguard, water safety instructor and pool staff.",
+  "what_you_do": "You can apply for part-time and seasonal City recreation jobs, such as recreation aide, recreation leader, recreation specialist, sports official, lifeguard, water safety instructor and pool staff.",
   "min_age": null,
   "max_age": null,
   "grades": null,
@@ -4948,7 +4956,7 @@
    "education",
    "arts-media"
   ],
-  "what_you_do": "Monthly teen group that works with library staff on projects and programs and earns service credit. Meets at Main (TeenZone), 81st Ave, Asian, Cesar Chavez, Dimond and Rockridge branches.",
+  "what_you_do": "You can join a monthly teen group that works with library staff on projects and programs and earns service credit. It meets at Main (TeenZone), 81st Ave, Asian, Cesar Chavez, Dimond and Rockridge branches.",
   "min_age": 13,
   "max_age": 18,
   "grades": null,
@@ -4989,7 +4997,7 @@
    "arts-media",
    "any"
   ],
-  "what_you_do": "Help at a library branch with teen programs, social media, book and film picks, and art/design projects. Counts for community service hours.",
+  "what_you_do": "You help at a library branch with teen programs, social media, book and film picks, and art and design projects. The hours count as community service.",
   "min_age": 13,
   "max_age": 18,
   "grades": null,
@@ -5006,7 +5014,7 @@
   "how_to_apply": "Fill out the online Teen Volunteer Application, or stop by a branch.",
   "needs_work_permit": false,
   "url": "https://oaklandlibrary.org/teenvolunteers",
-  "apply_url": "https://oaklandlibrary.org/teenvolunteers",
+  "apply_url": null,
   "sources_fetched": [
    "https://oaklandlibrary.org/teenvolunteers"
   ],
@@ -5030,7 +5038,7 @@
    "environment",
    "education"
   ],
-  "what_you_do": "About 200 hours over 7 weeks teaching guests in the Habitarium and California Trail. Up to 6 interns.",
+  "what_you_do": "You spend about 200 hours over 7 weeks teaching guests in the Habitarium and California Trail. Up to 6 interns are chosen.",
   "min_age": null,
   "max_age": null,
   "grades": "Entering 11 or 12",
@@ -5158,7 +5166,7 @@
    "engineering",
    "business-finance"
   ],
-  "what_you_do": "Paid summer internships and after-school internships for OUSD high school students, listed by employer with dates and pay. Pathway teachers can also connect you to internships.",
+  "what_you_do": "You can find paid summer internships and after-school internships for Oakland Unified high school students. The district lists them by employer, with dates and pay. Your pathway teachers can also connect you to internships.",
   "min_age": null,
   "max_age": null,
   "grades": "9 to 12",
@@ -5197,13 +5205,13 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Career pathways, internships and job placement help, dual enrollment with Peralta Colleges, and work permit processing for OUSD students.",
+  "what_you_do": "You can get help with career pathways, internships and job placement, plus dual enrollment (college classes while in high school) with Peralta Colleges. The office also processes work permits for Oakland Unified students.",
   "min_age": null,
   "max_age": null,
   "grades": "9 to 12",
   "who_can_apply": "OUSD high school students.",
   "paid_type": "mixed",
-  "pay_detail": null,
+  "pay_detail": "Rate not posted (checked 2026-10-07)",
   "season": "year-round",
   "duration": null,
   "status": "year-round",
@@ -5267,7 +5275,7 @@
  },
  {
   "id": "palo-alto-library-tlab",
-  "name": "Teen Library Advisory Board (TLAB)",
+  "name": "Teen Library Advisory Board (Palo Alto City Library)",
   "org": "Palo Alto City Library",
   "regions": [
    "silicon-valley",
@@ -5320,7 +5328,7 @@
    "social-impact",
    "education"
   ],
-  "what_you_do": "A group of 15 to 20 high school students who plan and lead events for teens in Palo Alto.",
+  "what_you_do": "You can join a group of 15 to 20 high school students who plan and lead events for teens in Palo Alto.",
   "min_age": null,
   "max_age": null,
   "grades": "High school",
@@ -5401,7 +5409,7 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Online career exploration with videos, assessments and virtual chats with professionals, used by schools.",
+  "what_you_do": "You can explore careers online through videos, assessments and virtual chats with professionals. Your school has to license Pathful for you to use it.",
   "min_age": null,
   "max_age": null,
   "grades": "K-12",
@@ -5445,7 +5453,7 @@
    "health",
    "trades"
   ],
-  "what_you_do": "Take free college classes while in high school, on a Peralta campus or through CCAP classes arranged with your school. Courses go on your permanent college transcript.",
+  "what_you_do": "Take free college classes while in high school, on a Peralta campus or through classes arranged with your school. Courses go on your permanent college transcript.",
   "min_age": null,
   "max_age": null,
   "grades": "9 to 12",
@@ -5489,7 +5497,7 @@
    "environment",
    "food-hospitality"
   ],
-  "what_you_do": "Paid youth internships at an urban farm and nursery: sustainable farming, food distribution, school gardens, with job training and food safety certifications and mentors from the community.",
+  "what_you_do": "You do a paid youth internship at an urban farm and nursery, learning sustainable farming, food distribution and school gardens. You get job training, food safety certifications and mentors from the community.",
   "min_age": null,
   "max_age": null,
   "grades": null,
@@ -5523,7 +5531,8 @@
   "name": "Pleasanton Youth Commission",
   "org": "City of Pleasanton",
   "regions": [
-   "oakland"
+   "east-bay",
+   "alameda"
   ],
   "city": "Pleasanton, CA",
   "type": "civic-government",
@@ -5570,7 +5579,7 @@
   "fields": [
    "law-government"
   ],
-  "what_you_do": "Training classes and monthly meetings, a mandatory 9 week Police Cadet Academy on Sundays, and at least 10 volunteer hours a month in community service.",
+  "what_you_do": "You go to training classes and monthly meetings, complete a mandatory 9 week Police Cadet Academy on Sundays, and do at least 10 volunteer hours a month in community service.",
   "min_age": 14,
   "max_age": 20,
   "grades": null,
@@ -5610,11 +5619,11 @@
   "fields": [
    "law-government"
   ],
-  "what_you_do": "Wednesday night meetings, training, ride-alongs, traffic and crowd control at events, and Explorer competitions.",
+  "what_you_do": "You attend Wednesday night meetings and training, go on ride-alongs, help with traffic and crowd control at events, and join Explorer competitions.",
   "min_age": 14,
   "max_age": 19,
   "grades": null,
-  "who_can_apply": "Ages 14 to 21 but not yet 19 and a half, full-time student, 2.5 GPA, must pass a background check.",
+  "who_can_apply": "Ages 14 to 19 (not yet 19 and a half), full-time student, 2.5 GPA, must pass a background check.",
   "paid_type": "unpaid",
   "pay_detail": null,
   "season": "year-round",
@@ -5649,7 +5658,7 @@
   "fields": [
    "law-government"
   ],
-  "what_you_do": "Practical police training, volunteering at community events, and statewide Explorer competitions with police scenarios, led by officers and dispatchers.",
+  "what_you_do": "You get practical police training, volunteer at community events, and compete in statewide Explorer competitions with police scenarios. Officers and dispatchers lead the program.",
   "min_age": 14,
   "max_age": 21,
   "grades": null,
@@ -5690,7 +5699,7 @@
   "fields": [
    "law-government"
   ],
-  "what_you_do": "Weekly meetings with law enforcement training and physical training, ride-alongs, community service details and conferences.",
+  "what_you_do": "You go to weekly meetings with law enforcement and physical training, go on ride-alongs, do community service details and attend conferences.",
   "min_age": 14,
   "max_age": null,
   "grades": "9 to 12",
@@ -5730,7 +5739,7 @@
   "fields": [
    "education"
   ],
-  "what_you_do": "A Red Cross course for young sitters on caring for infants and children, safety and emergencies. The online option also covers starting a babysitting business.",
+  "what_you_do": "You take a Red Cross course on caring for infants and children, safety and emergencies. The online option also covers starting a babysitting business.",
   "min_age": 11,
   "max_age": null,
   "grades": null,
@@ -5771,7 +5780,7 @@
    "sports",
    "education"
   ],
-  "what_you_do": "Red Cross certification courses for lifeguarding and for swim instruction. Lifeguard students must be 15 by the last day of class and pass a swimming skills test.",
+  "what_you_do": "You can take Red Cross courses for lifeguarding or swim instruction. Lifeguard students must be 15 by the last day of class and pass a swimming skills test.",
   "min_age": 15,
   "max_age": null,
   "grades": null,
@@ -5855,7 +5864,7 @@
    "science",
    "engineering"
   ],
-  "what_you_do": "World's largest pre-college science fair. You first win a spot at a local Society-affiliated fair, then compete at ISEF in 22 categories.",
+  "what_you_do": "It is the world's largest pre-college science fair. You first win a spot at a local fair affiliated with the Society for Science, then compete at ISEF in 22 categories.",
   "min_age": null,
   "max_age": null,
   "grades": "9 to 12 or equivalent",
@@ -5937,7 +5946,7 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Paid internships up to 100 hours with local businesses, government and nonprofits, plus workshops and career coaching.",
+  "what_you_do": "You get a paid internship of up to 100 hours with local businesses, government or nonprofits, plus workshops and career coaching.",
   "min_age": 16,
   "max_age": 21,
   "grades": null,
@@ -5978,7 +5987,7 @@
    "environment",
    "trades"
   ],
-  "what_you_do": "Paid job doing home energy and water efficiency visits (Green House Calls), then an externship at groups such as GRID Alternatives, BayREN or Berkeley Lab.",
+  "what_you_do": "You do a paid job making home energy and water efficiency visits, called Green House Calls, then an externship at groups such as GRID Alternatives or Berkeley Lab.",
   "min_age": 15,
   "max_age": 24,
   "grades": null,
@@ -6020,7 +6029,7 @@
    "education",
    "sports"
   ],
-  "what_you_do": "10 hours of training, then up to 50 hours of job experience training helping with summer programs, camps and classes.",
+  "what_you_do": "You get 10 hours of training, then up to 50 hours of job experience helping with summer programs, camps and classes.",
   "min_age": 13,
   "max_age": null,
   "grades": null,
@@ -6100,7 +6109,7 @@
    "science",
    "engineering"
   ],
-  "what_you_do": "Free summer program for 100 top students: one week of STEM classes, five weeks of individual research with a mentor, and one week of reports and presentations.",
+  "what_you_do": "You join a free summer program for 100 top students. It has one week of STEM classes, five weeks of individual research with a mentor, and one week of reports and presentations.",
   "min_age": null,
   "max_age": null,
   "grades": "Rising seniors (juniors)",
@@ -6143,7 +6152,7 @@
    "social-impact",
    "health"
   ],
-  "what_you_do": "Free youth center with arts, health, organizing and career programs, and paid seasonal internships for members.",
+  "what_you_do": "You can join the free RYSE youth center for arts, health, organizing and career programs. Members can apply for paid seasonal internships.",
   "min_age": 13,
   "max_age": 21,
   "grades": null,
@@ -6223,7 +6232,7 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Career planning, workforce workshops, case management and paid work experience (internships, job shadowing or part-time work).",
+  "what_you_do": "You get career planning, workforce workshops, case management and paid work experience, such as internships, job shadowing or part-time work.",
   "min_age": null,
   "max_age": 18,
   "grades": "high school senior",
@@ -6263,7 +6272,7 @@
    "education",
    "sports"
   ],
-  "what_you_do": "Training in teamwork, lesson planning and recreation activities. Completing it helps you apply for the city's Seasonal Rec Aide job.",
+  "what_you_do": "You get training in teamwork, lesson planning and recreation activities. Completing it helps you apply for the city's Seasonal Rec Aide job.",
   "min_age": 16,
   "max_age": 18,
   "grades": null,
@@ -6303,7 +6312,7 @@
    "environment",
    "trades"
   ],
-  "what_you_do": "Paid weekend crew work in city parks: weeding, trimming, leaf and trash removal, with training.",
+  "what_you_do": "You do paid weekend crew work in city parks, such as weeding, trimming, and leaf and trash removal, with training.",
   "min_age": 14,
   "max_age": 17,
   "grades": null,
@@ -6342,7 +6351,7 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Six-week paid work-based learning program on communication, teamwork, leadership and money skills, plus bonus workshops.",
+  "what_you_do": "You join a paid six-week program on communication, teamwork, leadership and money skills, with optional bonus workshops.",
   "min_age": 13,
   "max_age": 18,
   "grades": "middle or high school",
@@ -6382,7 +6391,7 @@
    "any",
    "social-impact"
   ],
-  "what_you_do": "Eight-week workforce readiness program where teens plan a community service project.",
+  "what_you_do": "You join an eight-week workforce readiness program and plan a community service project.",
   "min_age": 13,
   "max_age": 18,
   "grades": "middle or high school",
@@ -6465,7 +6474,7 @@
    "business-finance",
    "health"
   ],
-  "what_you_do": "One-week summer academies in coding, engineering and robotics, health careers, entrepreneurship, fashion, fire and emergency services and more.",
+  "what_you_do": "You can take one-week summer academies in coding, engineering and robotics, health careers, entrepreneurship, fashion, fire and emergency services and more.",
   "min_age": null,
   "max_age": null,
   "grades": "entering 7 to 12",
@@ -6506,7 +6515,7 @@
    "law-government",
    "social-impact"
   ],
-  "what_you_do": "Six-week summer program about local government with daily classes with teachers (Mon to Thu, 9 am to 2 pm) and afternoon internships at city locations.",
+  "what_you_do": "You take a six-week summer program about local government. It has daily classes with teachers (Mon to Thu, 9 am to 2 pm) and afternoon internships at city locations.",
   "min_age": null,
   "max_age": null,
   "grades": "current 9 to 11",
@@ -6594,7 +6603,7 @@
   "grades": null,
   "who_can_apply": "Ages 14 to 19, 2.75 GPA (proof needed), letter of recommendation, interview, $30 uniform fee, mandatory in-person training Jan 10, 2027.",
   "paid_type": "unpaid",
-  "pay_detail": "Volunteer. $30 uniform fee.",
+  "pay_detail": "Unpaid. Cost to you: $30 uniform fee.",
   "season": "winter",
   "duration": "Jan to April 2027. 3-hour weekend shifts, at least 2 shifts (6 hours) per month",
   "status": "opens-soon",
@@ -6669,7 +6678,7 @@
    "law-government",
    "health"
   ],
-  "what_you_do": "A Metro Fire page listing local youth fire programs: City of Sacramento Firefighter Youth Academy, Cosumnes Explorers, and school fire pathways at Del Campo, SAVA, Inderkum and Valley High.",
+  "what_you_do": "This Metro Fire page lists local youth fire programs: City of Sacramento Firefighter Youth Academy, Cosumnes Explorers, and school fire pathways at Del Campo, SAVA, Inderkum and Valley High.",
   "min_age": 14,
   "max_age": 20,
   "grades": "9 to 12",
@@ -6751,11 +6760,11 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Job search help, career workshops, resume and interview coaching, mentoring, training, and paid work experience.",
+  "what_you_do": "You can get job search help, career workshops, resume and interview coaching, mentoring, training and paid work experience.",
   "min_age": 16,
   "max_age": 24,
   "grades": null,
-  "who_can_apply": "Sacramento County youth ages 16 to 24. Federal WIOA eligibility rules apply, so ask a Job Center whether you qualify.",
+  "who_can_apply": "Sacramento County youth ages 16 to 24. Federal eligibility rules apply, so ask a Job Center whether you qualify.",
   "paid_type": "paid",
   "pay_detail": "Paid work experience is one service. Wage not posted on the page.",
   "season": "year-round",
@@ -6791,7 +6800,7 @@
    "food-hospitality",
    "social-impact"
   ],
-  "what_you_do": "A drop-in youth center with mentoring, classes (sewing, English Club, robotics) and job training that includes hands-on work. Community service hours and volunteering are also offered.",
+  "what_you_do": "You can drop in at this youth center for mentoring, classes (sewing, English Club, robotics) and job training that includes hands-on work. Community service hours and volunteering are also offered.",
   "min_age": 14,
   "max_age": 24,
   "grades": null,
@@ -6899,7 +6908,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 1,
-  "notes": "Teen Book Reviewer roles are listed on Better Impact. See also the separate Teens Reach card.",
+  "notes": "Teen Book Reviewer roles are listed on Better Impact. See also the separate Teens Reach card. The Teens Reach card appears to describe the same program, and the age range differs between pages (12 vs 13), so confirm with the library.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -6915,13 +6924,13 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Paid work experience and job help for San Jose youth. Teens ages 14 to 18 with barriers to work get placed in paid jobs and training; ages 16 to 29 get job services.",
+  "what_you_do": "You can get paid work experience and job help in San Jose. If you are 14 to 18 and face barriers to work, you can be placed in paid jobs and training. Job services are open to ages 16 to 29.",
   "min_age": 14,
   "max_age": 18,
   "grades": null,
   "who_can_apply": "San Jose residents. The paid work experience is for ages 14 to 18 who face barriers to employment. Job help (resumes, job fairs) is open to ages 16 to 29. Free to join.",
   "paid_type": "paid",
-  "pay_detail": null,
+  "pay_detail": "Rate not posted (checked 2026-10-07)",
   "season": "year-round",
   "duration": null,
   "status": "rolling",
@@ -6969,7 +6978,7 @@
   "duration": "Two-year term",
   "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "Youth Advisory Council: no deadline posted. Youth Commission: recruitment is closed, no reopening date posted.",
+  "deadline_text": "Youth Advisory Council (open now): no deadline posted. Youth Commission (closed): recruitment is closed, no reopening date posted.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
   "how_to_apply": "Fill out the District Youth Advisory Application for the YAC. A Youth Commissioner contacts you within about two weeks.",
@@ -7000,7 +7009,7 @@
    "law-government",
    "any"
   ],
-  "what_you_do": "Free job-skills workshops, a members-only job and internship board, and twenty $2,000 scholarships a year for San Mateo County youth. The county summer internship is for ages 18 to 21.",
+  "what_you_do": "You can take free job-skills workshops and use a members-only job and internship board. Twenty $2,000 scholarships a year are available for San Mateo County youth, and the county summer internship is for ages 18 to 21.",
   "min_age": 14,
   "max_age": 21,
   "grades": null,
@@ -7060,7 +7069,7 @@
   "how_to_apply": "Pick a branch and apply for a role on Better Impact through the library volunteer page, or email volunteer@smcl.org.",
   "needs_work_permit": false,
   "url": "https://smcl.org/volunteer/",
-  "apply_url": "https://smcl.org/volunteer/",
+  "apply_url": null,
   "sources_fetched": [
    "https://smcl.org/volunteer/"
   ],
@@ -7085,7 +7094,7 @@
    "social-impact",
    "law-government"
   ],
-  "what_you_do": "A weekend emergency response course (fire safety, search and rescue, stop the bleed, disaster psychology) after which teens can help their community in disasters. Earn 20+ volunteer hours.",
+  "what_you_do": "You take a weekend emergency response course on fire safety, search and rescue, stop the bleed and disaster psychology. After it, you can help your community in disasters and earn 20+ volunteer hours.",
   "min_age": 13,
   "max_age": 18,
   "grades": null,
@@ -7127,7 +7136,7 @@
    "law-government",
    "any"
   ],
-  "what_you_do": "An eight week paid county internship plus job-readiness workshops, hiring events and coaching from an Employment Counselor. Interns work up to 30 hours a week.",
+  "what_you_do": "You get an eight week paid county internship, plus job-readiness workshops, hiring events and coaching from an Employment Counselor. You work up to 30 hours a week.",
   "min_age": 16,
   "max_age": 24,
   "grades": null,
@@ -7159,8 +7168,7 @@
   "name": "Santa Clara County Library District Teen Volunteers (tutor a K-6 student)",
   "org": "Santa Clara County Library District",
   "regions": [
-   "silicon-valley",
-   "san-jose"
+   "silicon-valley"
   ],
   "city": "Santa Clara County, CA",
   "type": "volunteer",
@@ -7191,7 +7199,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 1,
-  "notes": "Serves the library district branches, not every city in the county (San Jose has its own library). Hours, training and schedule are on the volunteer page. See the separate homework-help tutor card.",
+  "notes": "Serves the library district branches, not every city in the county (San Jose has its own library). Hours, training and schedule are on the volunteer page. See the separate homework-help tutor card (Santa Clara County Library District Teen Volunteer Tutor) for a similar after-school tutoring role.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -7264,7 +7272,7 @@
   "how_to_apply": "Fill in the volunteer application on the library's volunteer page.",
   "needs_work_permit": false,
   "url": "https://sccld.org/volunteer/",
-  "apply_url": "https://sccld.org/volunteer/",
+  "apply_url": null,
   "sources_fetched": [
    "https://sccld.org/teens",
    "https://sccld.org/volunteer/"
@@ -7272,7 +7280,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 1,
-  "notes": "The page lists these libraries: Campbell, Cupertino, Gilroy, Los Altos, Milpitas, Morgan Hill and Saratoga. Check that your branch is included. Training is online (about 7 hours).",
+  "notes": "The page lists these libraries: Campbell, Cupertino, Gilroy, Los Altos, Milpitas, Morgan Hill and Saratoga. Check that your branch is included. Training is online (about 7 hours). The broader card (Santa Clara County Library District Teen Volunteers) also includes after-school tutoring of a kindergarten to grade 6 student.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -7290,7 +7298,7 @@
    "health",
    "tech-cs"
   ],
-  "what_you_do": "County CTE courses across 15 industry sectors that mix technical training with academics. A course catalog is posted on the SCOE CTE site.",
+  "what_you_do": "Through the Sacramento County Office of Education, you can take career technical education courses in 15 industry sectors. The courses mix technical training with academics. The course catalog is posted online.",
   "min_age": null,
   "max_age": null,
   "grades": null,
@@ -7331,7 +7339,7 @@
    "arts-media",
    "education"
   ],
-  "what_you_do": "Free after-school writing help, workshops, summer programs and college and leadership support. SFPL lists stipended leadership and writing roles for grades 8 to 12.",
+  "what_you_do": "You can get free after-school writing help, workshops, summer programs, and college and leadership support. SFPL lists leadership and writing roles for grades 8 to 12 that pay a stipend.",
   "min_age": 6,
   "max_age": 18,
   "grades": "Programs for ages 6 to 18; stipended roles for grades 8 to 12",
@@ -7415,7 +7423,7 @@
    "environment",
    "education"
   ],
-  "what_you_do": "Multi-year, year-round paid internship where teens do fieldwork, teach visitors, and join research projects, after school and on Saturdays.",
+  "what_you_do": "You do a paid, year-round internship that lasts 2 to 3 years. You do fieldwork, teach visitors and join research projects after school and on Saturdays.",
   "min_age": null,
   "max_age": null,
   "grades": "9 to 10 at entry",
@@ -7495,7 +7503,7 @@
    "education",
    "tech-cs"
   ],
-  "what_you_do": "One-day job fair for youth looking for work: meet employers, learn about openings, get resume help, practice interviews, take headshots and get free professional clothing.",
+  "what_you_do": "You can attend this one-day job fair. You meet employers, learn about openings, get resume help, practice interviews, take headshots and get free professional clothing.",
   "min_age": 14,
   "max_age": 24,
   "grades": null,
@@ -7576,7 +7584,7 @@
    "science",
    "education"
   ],
-  "what_you_do": "Paid museum job: help visitors at exhibits, lead demonstrations such as cow's eye dissections, and help run museum operations. More than 60 hours of training.",
+  "what_you_do": "You do a paid museum job. You help visitors at exhibits, lead demonstrations such as cow's eye dissections, and help run museum operations. You get more than 60 hours of training.",
   "min_age": 15,
   "max_age": 18,
   "grades": "High school",
@@ -7618,7 +7626,7 @@
    "any",
    "social-impact"
   ],
-  "what_you_do": "Free Saturday program that teaches basic firefighting and EMS skills, CPR and first aid, plus life skills like financial literacy, leadership and time management.",
+  "what_you_do": "You take a free Saturday program that teaches basic firefighting, CPR and first aid, plus life skills like financial literacy, leadership and time management.",
   "min_age": null,
   "max_age": null,
   "grades": "High school",
@@ -7702,7 +7710,7 @@
   "fields": [
    "tech-cs"
   ],
-  "what_you_do": "Free semester-long coding and computer science classes for high schoolers, in person or remote, plus workshops, self-paced courses and events.",
+  "what_you_do": "You can take free semester-long coding and computer science classes, in person or remote, plus workshops, self-paced courses and events.",
   "min_age": 14,
   "max_age": 18,
   "grades": "High school",
@@ -7744,7 +7752,7 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Job readiness training and paid work experience for younger teens, plus homework help and mentoring.",
+  "what_you_do": "As a younger teen, you get job readiness training and paid work experience, plus homework help and mentoring.",
   "min_age": 14,
   "max_age": 17,
   "grades": "9 to 10",
@@ -7784,7 +7792,7 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Six month paid internships with employer partners, plus job coaching, for young people who are out of school or work.",
+  "what_you_do": "You can get a six month paid internship with employer partners, plus job coaching, if you are out of school or work.",
   "min_age": 17,
   "max_age": 24,
   "grades": null,
@@ -7826,7 +7834,7 @@
    "law-government",
    "tech-cs"
   ],
-  "what_you_do": "Paid summer internships with local organizations and businesses, plus career workshops and mentorship. Black 2 San Francisco is a separate 6 week program for 30 students.",
+  "what_you_do": "You can get a paid summer internship with local organizations and businesses, plus career workshops and mentorship. Black 2 San Francisco is a separate 6 week program for 30 students.",
   "min_age": 13,
   "max_age": 24,
   "grades": null,
@@ -7910,7 +7918,7 @@
    "science",
    "business-finance"
   ],
-  "what_you_do": "Paid summer internships in City departments for high school students, with a focus on STEAM careers and public service, such as architecture, business, engineering and science.",
+  "what_you_do": "You can get a paid summer internship in City departments, with a focus on public service and careers such as architecture, business, engineering and science.",
   "min_age": null,
   "max_age": null,
   "grades": null,
@@ -7953,7 +7961,7 @@
    "environment",
    "sports"
   ],
-  "what_you_do": "First-job experience at rec centers and parks: arts, sports, aquatics, gardening, cooking and facility operations.",
+  "what_you_do": "You get first-job experience at rec centers and parks, in areas such as arts, sports, aquatics, gardening, cooking and facility operations.",
   "min_age": 14,
   "max_age": 17,
   "grades": null,
@@ -8037,7 +8045,7 @@
    "environment",
    "trades"
   ],
-  "what_you_do": "Paid summer internship at the SFPUC or a private engineering firm working on the sewer system, for students from southeast San Francisco neighborhoods.",
+  "what_you_do": "A paid summer internship at the San Francisco Public Utilities Commission or at a private engineering firm that works on the sewer system, for students from southeast San Francisco neighborhoods.",
   "min_age": null,
   "max_age": null,
   "grades": "Starts after 11th grade",
@@ -8079,13 +8087,13 @@
    "health",
    "science"
   ],
-  "what_you_do": "Teen volunteering at the SF Zoo: Nature Trail (ages 12 to 14) shows small animals to guests; Junior Zoologists (15 to 17) help with animal care; Leadership Fellows (grades 10 to 12) help run Zoo Camp.",
+  "what_you_do": "You can volunteer at the SF Zoo in three teen programs: Nature Trail (ages 12 to 14) shows small animals to guests, Junior Zoologists (ages 15 to 17) help with animal care, and Leadership Fellows (grades 10 to 12) help run Zoo Camp.",
   "min_age": 12,
   "max_age": 17,
   "grades": null,
   "who_can_apply": "Nature Trail: ages 12 to 14. Junior Zoologists: ages 15 to 17. Leadership Fellows: entering grades 10 to 12 in fall 2026 (ages 15 to 17 per the zoo's volunteer page).",
   "paid_type": "unpaid",
-  "pay_detail": "Volunteer program; pay not stated. Nature Trail and Junior Zoologists require buying a $40 uniform.",
+  "pay_detail": "Unpaid. Cost to you: Nature Trail and Junior Zoologists require buying a $40 uniform.",
   "season": "summer",
   "duration": "Nature Trail: Memorial Day weekend to Labor Day, at least 7 days a month. Junior Zoologists: 2 days a month for 6 months. Leadership Fellows: Mon to Fri, 8:15 am to 4 pm, mid June to early Aug (2026: June 15 to Aug 7).",
   "status": "closed-expect-reopen",
@@ -8122,7 +8130,7 @@
    "science",
    "health"
   ],
-  "what_you_do": "Free summer camp at UCSF's Parnassus campus with lectures, games, Q&A sessions, patient panels and live anatomy dissections, mentored by UCSF students and faculty.",
+  "what_you_do": "You can attend a free summer camp at UCSF's Parnassus campus with lectures, games, Q&A sessions, patient panels and live anatomy dissections. UCSF students and faculty mentor you.",
   "min_age": null,
   "max_age": null,
   "grades": null,
@@ -8162,7 +8170,7 @@
    "science",
    "health"
   ],
-  "what_you_do": "Eight week paid summer research internship at UCSF with a scientist mentor, plus college counseling and a trip to a college campus.",
+  "what_you_do": "You do a paid eight-week summer research internship at UCSF with a scientist mentor. The program also includes college counseling and a trip to a college campus.",
   "min_age": null,
   "max_age": null,
   "grades": "Rising seniors (current juniors)",
@@ -8202,7 +8210,7 @@
   "fields": [
    "arts-media"
   ],
-  "what_you_do": "Free after-school art programs led by professional artists for public high school students, building creative, technical and leadership skills.",
+  "what_you_do": "You can join free after-school art programs for public high school students. Professional artists lead them, and they build creative, technical and leadership skills.",
   "min_age": null,
   "max_age": null,
   "grades": "High school",
@@ -8242,7 +8250,7 @@
    "law-government",
    "any"
   ],
-  "what_you_do": "Paid job readiness workshops and internships in City departments such as the SFPUC, the Public Library and SFO Airport, with mentoring and college tours.",
+  "what_you_do": "You can do paid job readiness workshops and internships in City departments such as the Public Library and SFO Airport. The program also offers mentoring and college tours.",
   "min_age": null,
   "max_age": null,
   "grades": "11 to 12",
@@ -8259,7 +8267,7 @@
   "how_to_apply": "Create an account and apply through the JCYC Workhub portal. Expect a short application and an interview step.",
   "needs_work_permit": true,
   "url": "https://www.jcycworkhub.org/programs/youthworks",
-  "apply_url": "https://www.jcycworkhub.org/programs/youthworks",
+  "apply_url": null,
   "sources_fetched": [
    "https://www.jcycworkhub.org/programs/youthworks",
    "https://www.sf.gov/september-2026-dcyf-newsletter"
@@ -8310,7 +8318,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 1,
-  "notes": "Meeting times differ by branch (for example Rose Garden Thursdays 4 p.m., Almaden Tuesdays 4:30 p.m.). Other SJPL teen roles include Teen Book Reviewer. TeenHQ is at the King Library, 150 E San Fernando.",
+  "notes": "Meeting times differ by branch (for example Rose Garden Thursdays 4 p.m., Almaden Tuesdays 4:30 p.m.). Other SJPL teen roles include Teen Book Reviewer. TeenHQ is at the King Library, 150 E San Fernando. This appears to be the same program as san-jose-public-library-teen-volunteer, and the age range differs between pages (12 vs 13). Confirm with the library.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -8369,11 +8377,11 @@
    "engineering",
    "any"
   ],
-  "what_you_do": "Career and technical education club with skills contests, leadership training and employer connections.",
+  "what_you_do": "You can join a career and technical education club at school. It offers skills contests, leadership training and connections to employers.",
   "min_age": null,
   "max_age": null,
   "grades": "Middle and high school",
-  "who_can_apply": "Middle school, high school and college CTE students in a school chapter. Virtual chapters exist for students without a classroom chapter.",
+  "who_can_apply": "Middle school, high school and college students in career and technical education, in a school chapter. Virtual chapters exist for students without a classroom chapter.",
   "paid_type": "fee-based",
   "pay_detail": "Membership dues are not stated on the pages read; ask your CTE teacher.",
   "season": "school-year",
@@ -8411,7 +8419,7 @@
    "science",
    "engineering"
   ],
-  "what_you_do": "A team quiz competition on science and math at SLAC. Winning teams can move on to the national event. Volunteers are also needed.",
+  "what_you_do": "You can compete on a high school team in a science and math quiz at SLAC. Winning teams can move on to the national event, and volunteers are also needed.",
   "min_age": null,
   "max_age": null,
   "grades": "High school",
@@ -8452,7 +8460,7 @@
    "science",
    "engineering"
   ],
-  "what_you_do": "Free one-week science camp for high schoolers from all backgrounds, held on the SLAC and Stanford campuses, with hands-on science.",
+  "what_you_do": "You can attend a free one-week science camp for high schoolers from all backgrounds. It has hands-on science on the SLAC and Stanford campuses.",
   "min_age": null,
   "max_age": null,
   "grades": "High school",
@@ -8494,7 +8502,7 @@
    "tech-cs",
    "science"
   ],
-  "what_you_do": "A free STEM program with a summer living at a university partner (UC Berkeley for the Bay Area), with computer science, college success and elective classes and mentors from STEM careers.",
+  "what_you_do": "You can join a free STEM program (science, technology, engineering and math) with a summer living at a university partner, such as UC Berkeley. It includes computer science, college success, elective classes and STEM career mentors.",
   "min_age": null,
   "max_age": null,
   "grades": "10 and 11 at application",
@@ -8511,7 +8519,7 @@
   "how_to_apply": "Join the interest list on smash.org/programs and watch for the application. Contact devo@smash.org.",
   "needs_work_permit": false,
   "url": "https://www.smash.org/programs",
-  "apply_url": "https://www.smash.org/programs",
+  "apply_url": null,
   "sources_fetched": [
    "https://www.smash.org",
    "https://www.smash.org/programs"
@@ -8535,7 +8543,7 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Tuition-free college classes taken through your high school, so you earn high school and college credit at the same time.",
+  "what_you_do": "You can take tuition-free college classes through your high school and earn high school and college credit at the same time.",
   "min_age": null,
   "max_age": null,
   "grades": "High school",
@@ -8580,11 +8588,11 @@
    "tech-cs",
    "trades"
   ],
-  "what_you_do": "Six-week paid summer internship at SMUD in areas such as IT, engineering, customer service, vehicle mechanics, accounting, HR and marketing.",
+  "what_you_do": "You do a paid six-week summer internship in areas such as IT, engineering, customer service, vehicle mechanics, accounting, HR and marketing.",
   "min_age": 16,
   "max_age": null,
   "grades": "current junior or senior",
-  "who_can_apply": "16 or older (by June 2 in the 2026 cycle), current junior or senior, 2.5 GPA or higher, attends an eligible school in the SMUD service area, no relatives at SMUD, own transportation.",
+  "who_can_apply": "16 or older (by June 2 in the 2026 cycle), current junior or senior, 2.5 GPA or higher, attends an eligible school in the service area, no relatives who work for the internship host, own transportation.",
   "paid_type": "paid",
   "pay_detail": "$16.90 per hour (2026), about 36 hours per week.",
   "season": "summer",
@@ -8622,7 +8630,7 @@
    "tech-cs",
    "science"
   ],
-  "what_you_do": "Mentored, hands-on summer research in health AI, working with real-world health data on problems at the intersection of AI and medicine.",
+  "what_you_do": "You do mentored, hands-on summer research in health AI. You work with real-world health data on problems where AI and medicine meet.",
   "min_age": null,
   "max_age": null,
   "grades": "High school",
@@ -8646,7 +8654,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "Re-read the AIMI page on 2026-10-07. The dates are for the Summer 2027 program. The page does not state pay or cost, length, detailed eligibility or whether the program is in person, so paid_type and needs_work_permit are placeholders until confirmed. Confirm those with aimi-hs-programs@stanford.edu before applying. The Summer Health AI Bootcamp is a separate program on the same site and is not covered here.",
+  "notes": "Re-read the AIMI page on 2026-10-07. The dates are for the Summer 2027 program. The page does not state pay or cost, length, detailed eligibility or whether the program is in person, so the pay and work-permit answers are not confirmed. Confirm those with aimi-hs-programs@stanford.edu before applying. The Summer Health AI Bootcamp is a separate program on the same site and is not covered here.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -8664,7 +8672,7 @@
    "tech-cs",
    "science"
   ],
-  "what_you_do": "Two-week in-person summer program on health topics that affect Asian communities, AI basics and precision health data, with leadership skills.",
+  "what_you_do": "You attend a two-week in-person summer program on health topics that affect Asian communities, AI basics, leadership skills and precision health data.",
   "min_age": 14,
   "max_age": null,
   "grades": "Rising 10th, 11th and 12th graders",
@@ -8704,7 +8712,7 @@
   "fields": [
    "health"
   ],
-  "what_you_do": "Teen volunteers in five areas: mother and baby care, play and recreation, support services, education, and community-based activities.",
+  "what_you_do": "You can volunteer as a teen in one of five areas: mother and baby care, play and recreation, support services, education, and community-based activities.",
   "min_age": null,
   "max_age": null,
   "grades": "Teen",
@@ -8746,7 +8754,7 @@
    "health",
    "tech-cs"
   ],
-  "what_you_do": "Eight-week summer genetics and genomics research in a Stanford lab, 4 hours a day, 5 days a week (about 20 hours a week).",
+  "what_you_do": "You do an eight-week summer genetics and genomics research project in a Stanford lab, 4 hours a day, 5 days a week (about 20 hours a week).",
   "min_age": 16,
   "max_age": null,
   "grades": "High school",
@@ -8786,7 +8794,7 @@
   "fields": [
    "health"
   ],
-  "what_you_do": "Non-clinical volunteer roles in the hospital, one shift a week for at least six months. It is not shadowing and does not count as clinical hours.",
+  "what_you_do": "You can do non-medical volunteer roles in the hospital, one shift a week for at least six months. It is not shadowing and does not count as clinical hours.",
   "min_age": 16,
   "max_age": null,
   "grades": "High school",
@@ -8827,7 +8835,7 @@
   "fields": [
    "health"
   ],
-  "what_you_do": "Two-week hands-on medicine course with skills like ultrasound, dissection and suturing. This is a paid program for students, not a job.",
+  "what_you_do": "You take a two-week hands-on medicine course with skills like ultrasound, dissection and suturing. This is a fee-based program. You pay to attend, and it is not a job.",
   "min_age": 16,
   "max_age": null,
   "grades": "Rising juniors and seniors",
@@ -8871,7 +8879,7 @@
    "health",
    "science"
   ],
-  "what_you_do": "Seven-week summer internship in pediatrics at Stanford, about 30 hours a week, for students from nearby counties.",
+  "what_you_do": "You do a seven-week summer internship in pediatrics at Stanford, about 30 hours a week. It is for students from nearby counties.",
   "min_age": 16,
   "max_age": null,
   "grades": "Rising juniors and seniors",
@@ -8915,7 +8923,7 @@
    "tech-cs",
    "science"
   ],
-  "what_you_do": "One live online college-style course, Monday to Friday for two weeks, for middle and high school students. You may take only one course per summer.",
+  "what_you_do": "You can take one live online college-style course, Monday to Friday for two weeks, as a middle or high school student. You may take only one course per summer.",
   "min_age": 13,
   "max_age": 19,
   "grades": "Grades 8 to 11",
@@ -8958,13 +8966,13 @@
    "health",
    "science"
   ],
-  "what_you_do": "Eight weeks of full-time biomedical lab research with Stanford faculty and graduate student mentors, plus morning lectures at the start.",
+  "what_you_do": "You do eight weeks of full-time biomedical lab research with Stanford faculty and graduate student mentors. Morning lectures are held at the start.",
   "min_age": 16,
   "max_age": null,
   "grades": "Juniors and seniors (classes of 2027 and 2028 for the 2027 program)",
   "who_can_apply": "Juniors or seniors now (classes of 2027 and 2028), 16 or older by June 2027, living in and attending high school in the U.S., and a U.S. citizen or green card holder. Local Bay Area students are strongly favored. You must live with a family member or guardian.",
   "paid_type": "unpaid",
-  "pay_detail": "No program cost. Most students get no stipend; a very limited number of need-based stipends exist. 2026 application fee was $50, waivable for family income under $80,000.",
+  "pay_detail": "Unpaid. Cost to you: the 2026 application fee was $50 (waivable for family income under $80,000). No program cost. Most students get no stipend; a very limited number of need-based stipends exist.",
   "season": "summer",
   "duration": "8 weeks, about 40 hours a week, tentatively June 7 to July 29, 2027",
   "status": "opens-soon",
@@ -9003,7 +9011,7 @@
    "health",
    "science"
   ],
-  "what_you_do": "Five-week, tuition-free summer program on Stanford's campus for juniors from low-income and first-generation backgrounds who want to explore medicine.",
+  "what_you_do": "You can join a five-week, tuition-free summer program on Stanford's campus to explore medicine. It is for current juniors from low-income and first-generation backgrounds.",
   "min_age": null,
   "max_age": null,
   "grades": "Current juniors",
@@ -9088,7 +9096,7 @@
    "tech-cs",
    "trades"
   ],
-  "what_you_do": "Career technical classes for high school students in 22 pathways, including AI engineering, auto repair, culinary arts, nursing careers, HVAC, animation and fire science. Some give college credit or pre-apprenticeship.",
+  "what_you_do": "High school job-skills classes in 22 career tracks, including AI engineering, auto repair, culinary arts, nursing, heating and cooling (HVAC), animation and fire science. Some give college credit, and some prepare you for an apprenticeship (paid job training).",
   "min_age": null,
   "max_age": null,
   "grades": "High school",
@@ -9179,7 +9187,7 @@
    "education",
    "law-government"
   ],
-  "what_you_do": "Free career classes (30+ courses in about 10 career areas such as building trades, health science, IT and public services) for students in Dublin, Livermore and Pleasanton high schools.",
+  "what_you_do": "You can take free career classes through your Dublin, Livermore or Pleasanton high school. There are 30 or more courses in about 10 career areas, such as building trades, health science, IT and public services.",
   "min_age": null,
   "max_age": null,
   "grades": "9 to 12",
@@ -9220,11 +9228,11 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Skills building, leadership training and paid internships for East Bay youth. In the City's summer jobs list, Trybe offers a 100 hour summer job for East Oakland youth.",
+  "what_you_do": "You can get skills building, leadership training and paid internships with Trybe, an East Bay youth program. The City's summer jobs list shows that Trybe offers a 100 hour summer job for East Oakland youth.",
   "min_age": null,
   "max_age": null,
   "grades": null,
-  "who_can_apply": "East Bay youth. Trybe's old 2022 posting asked for age 16 or older with photo ID and SSN or ITIN, and offered a stipend option for under 16. Current rules are not posted.",
+  "who_can_apply": "Current rules are not posted. Older postings (2022) said 16 and up with photo ID; confirm with the program.",
   "paid_type": "paid",
   "pay_detail": "City of Oakland's 2026 list says paid, 100 hours, at least Oakland minimum wage. Trybe's own 2022 posting said $15.06 per hour (old).",
   "season": "summer",
@@ -9306,11 +9314,11 @@
    "health",
    "science"
   ],
-  "what_you_do": "A 10-week spring program on Tuesday afternoons: lab safety, pipetting, lab demos, 3D printing, and a visit to the Center for Valley Fever.",
+  "what_you_do": "A 10-week spring program on Tuesday afternoons. You learn lab safety and how to use pipettes (tools that measure small amounts of liquid), watch lab demonstrations, try 3D printing, and visit the Center for Valley Fever.",
   "min_age": null,
   "max_age": null,
   "grades": "high school",
-  "who_can_apply": "Students in CTE programs at Davis Senior High, MLK Jr. High, Da Vinci Charter Academy and Esparto High (2025 cohort). Through DJUSD, students are matched to internships by the Internship Specialist.",
+  "who_can_apply": "Students in career programs at Davis Senior High, MLK Jr. High, Da Vinci Charter Academy and Esparto High (2025 cohort). Through DJUSD, students are matched to internships by the Internship Specialist.",
   "paid_type": "unpaid",
   "pay_detail": "The DJUSD CTE page says its internships are unpaid. The UC Davis article does not mention pay.",
   "season": "spring",
@@ -9351,10 +9359,10 @@
    "engineering",
    "business-finance"
   ],
-  "what_you_do": "Two-week on-campus summer program where you pick a subject (for example pre-med, forensics, equine science, startup entrepreneurship) and live in a UC Davis dorm.",
+  "what_you_do": "You spend two weeks on the UC Davis campus studying a subject you pick, such as pre-med, forensics, equine science or startup entrepreneurship. You live in a UC Davis dorm.",
   "min_age": null,
   "max_age": null,
-  "grades": "rising 9 to 12 (apply page); other UC Davis pages say ages 16 to 18",
+  "grades": "rising 9 to 12",
   "who_can_apply": "High-achieving high school students. No minimum GPA. Admission is first come, first served once your application is complete. No academic credit.",
   "paid_type": "fee-based",
   "pay_detail": "2025 tuition was $6,985 plus a $100 application fee (includes dorm and meals). 2027 price not posted yet.",
@@ -9368,7 +9376,7 @@
   "how_to_apply": "Fill out the online application, two short-answer questions, and pay the application fee. Transcript and personal statement are optional but helpful.",
   "needs_work_permit": false,
   "url": "https://discoveryprograms.ucdavis.edu/summer-uc-davis/apply",
-  "apply_url": "https://discoveryprograms.ucdavis.edu/summer-uc-davis/apply",
+  "apply_url": null,
   "sources_fetched": [
    "https://discoveryprograms.ucdavis.edu/summer-uc-davis/apply",
    "https://continue.cpe.ucdavis.edu/subject-areas/summer-pre-college-programs/dates-and-fees"
@@ -9376,7 +9384,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 3,
-  "notes": "Expensive. The program moved to a new website (discoveryprograms.ucdavis.edu), and the fee page still shows 2025 numbers, so confirm the 2027 price and deadline. Age rule differs between UC Davis pages. A $1,500 deposit is due at enrollment. The apply page says a decision takes about 10 business days after your application is complete.",
+  "notes": "Expensive. The program moved to a new website (discoveryprograms.ucdavis.edu), and the fee page still shows 2025 numbers, so confirm the 2027 price and deadline. Age rule differs between UC Davis pages: other UC Davis pages say ages 16 to 18. A $1,500 deposit is due at enrollment. The apply page says a decision takes about 10 business days after your application is complete.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -9393,7 +9401,7 @@
    "education",
    "any"
   ],
-  "what_you_do": "Free college-prep help during the school year plus a summer program on the UC Davis campus.",
+  "what_you_do": "You get free college-prep help during the school year, plus a summer program on the UC Davis campus.",
   "min_age": null,
   "max_age": null,
   "grades": "high school",
@@ -9437,7 +9445,7 @@
    "environment",
    "health"
   ],
-  "what_you_do": "Six-week summer residential program. You work in a UC Davis lab with a faculty mentor on a real project and write a research paper.",
+  "what_you_do": "You spend six weeks living on campus in a summer program. You work in a UC Davis lab with a faculty mentor on a real project and write a research paper.",
   "min_age": 16,
   "max_age": 17,
   "grades": "rising 11 to 12",
@@ -9479,7 +9487,7 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "UC-approved online high school and AP courses that meet A-G requirements, self-paced.",
+  "what_you_do": "You can take UC-approved online high school and AP courses at your own pace.",
   "min_age": null,
   "max_age": null,
   "grades": "High school",
@@ -9512,14 +9520,15 @@
   "org": "UCSF Health / UCSF Benioff Children's Hospitals",
   "regions": [
    "oakland",
-   "east-bay"
+   "east-bay",
+   "san-francisco"
   ],
   "city": "Oakland, CA (BCH Oakland) and San Francisco",
   "type": "volunteer",
   "fields": [
    "health"
   ],
-  "what_you_do": "Non-clinical hospital volunteering: visit and talk with patients, light clerical work, and help patients and visitors find their way. No shadowing, research or internships.",
+  "what_you_do": "You can do non-medical volunteer work at a hospital: visit and talk with patients, do light office work, and help patients and visitors find their way. No shadowing, research or internships.",
   "min_age": 16,
   "max_age": null,
   "grades": null,
@@ -9560,7 +9569,7 @@
   "fields": [
    "law-government"
   ],
-  "what_you_do": "Paid job on the Senate floor and in offices while attending the Senate Page School, for one semester or the summer.",
+  "what_you_do": "You get a paid job on the Senate floor and in offices while you attend the Senate Page School, for one semester or the summer.",
   "min_age": 16,
   "max_age": 17,
   "grades": "11 (semester); rising 11 or 12 (summer)",
@@ -9601,7 +9610,7 @@
   "fields": [
    "law-government"
   ],
-  "what_you_do": "One week in Washington, DC meeting Senators and officials, with a $12,500 college scholarship. Two students are chosen per state, and all trip costs are paid.",
+  "what_you_do": "You spend one week in Washington, DC meeting Senators and officials. The program comes with a $12,500 college scholarship. Two students are chosen per state, and all trip costs are paid.",
   "min_age": null,
   "max_age": null,
   "grades": "Juniors and seniors (rising juniors and seniors may apply)",
@@ -9725,7 +9734,7 @@
   "fields": [
    "business-finance"
   ],
-  "what_you_do": "A class where students run a simulated business, with trade shows, competitions and a Youth Business Summit.",
+  "what_you_do": "You can take a class where you run a simulated business, with trade shows, competitions and a Youth Business Summit.",
   "min_age": null,
   "max_age": null,
   "grades": "9 to 12 (middle school version for 7 to 8)",
@@ -9766,7 +9775,7 @@
   "fields": [
    "health"
   ],
-  "what_you_do": "Hospital volunteer roles for high school students at Washington Hospital in Fremont. Openings depend on what the hospital needs.",
+  "what_you_do": "You can apply to volunteer in hospital roles at Washington Hospital in Fremont as a high school student. Openings depend on what the hospital needs.",
   "min_age": 16,
   "max_age": null,
   "grades": "Not seniors",
@@ -9808,7 +9817,7 @@
    "sports",
    "social-impact"
   ],
-  "what_you_do": "Summer mentoring and volunteer program. You help staff at city summer camps with set up, clean up, crafts, activities and special events.",
+  "what_you_do": "You help staff at city summer camps with set up, clean up, crafts, activities and special events. It is a summer mentoring and volunteer program.",
   "min_age": 14,
   "max_age": 16,
   "grades": null,
@@ -9927,11 +9936,11 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Free college classes for high school students: CCAP classes at partner high schools (eleven offer them, including Woodland, Pioneer, Winters) or classes online or on campus.",
+  "what_you_do": "You can take free college classes as a high school student. Some are offered at partner high schools (eleven offer them, including Woodland, Pioneer and Winters), and others are online or on campus.",
   "min_age": null,
   "max_age": null,
   "grades": "9 to 12",
-  "who_can_apply": "Current high school students who have finished 8th grade (non-CCAP route). CCAP classes are offered at partner high schools; ask your counselor. Tuition is free for 11 units or fewer.",
+  "who_can_apply": "Current high school students who have finished 8th grade. Partner high school classes are arranged through your counselor. Tuition is free for 11 units or fewer.",
   "paid_type": "unpaid-credit",
   "pay_detail": "Free up to 11 units ($46 per unit fee waived); books may cost",
   "season": "year-round",
@@ -10010,7 +10019,7 @@
    "health",
    "tech-cs"
   ],
-  "what_you_do": "Career advising, job readiness workshops, paid work experience and connections to employers for young people in Santa Clara County.",
+  "what_you_do": "You can get career advising, job readiness workshops, paid work experience and connections to employers in Santa Clara County.",
   "min_age": 16,
   "max_age": 24,
   "grades": null,
@@ -10097,7 +10106,7 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Pick a career interest, get matched by YCOE staff with a vetted mentor at a business, agency or nonprofit, and complete about 60 hours of hands-on learning.",
+  "what_you_do": "You pick a career interest. Yolo County Office of Education staff match you with a vetted mentor at a business, agency or nonprofit, and you complete about 60 hours of hands-on learning.",
   "min_age": null,
   "max_age": null,
   "grades": null,
@@ -10138,7 +10147,7 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Paid job training and work placements for Oakland youth, including summer programs (Oakland Summer Rising, Team Oakland, Career Try-Out) and afterschool jobs.",
+  "what_you_do": "You can get paid job training and work placements in Oakland, including summer programs (Oakland Summer Rising, Team Oakland, Career Try-Out) and afterschool jobs.",
   "min_age": 14,
   "max_age": 24,
   "grades": null,
@@ -10302,7 +10311,7 @@
    "law-government",
    "social-impact"
   ],
-  "what_you_do": "Weekly local meetings, then in-person conferences in November and February where teens act as legislators, lawyers and judges.",
+  "what_you_do": "You attend weekly local meetings, then in-person conferences in November and February where you act as legislators, lawyers and judges.",
   "min_age": null,
   "max_age": null,
   "grades": "9 to 12",
@@ -10384,7 +10393,7 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Paid, WIOA-funded work experience with a local employer, plus help with job searches, resumes, interviews, and school or training options.",
+  "what_you_do": "You can get paid work experience with a local employer, plus help with job searches, resumes, interviews, and school or training options.",
   "min_age": 17,
   "max_age": 24,
   "grades": null,
@@ -10425,7 +10434,7 @@
    "education",
    "social-impact"
   ],
-  "what_you_do": "Help library staff at a branch. A separate Youth Volunteer Application is available.",
+  "what_you_do": "You help library staff at a Yolo County Library branch. Opportunities differ by branch.",
   "min_age": null,
   "max_age": null,
   "grades": null,
@@ -10507,7 +10516,7 @@
    "social-impact",
    "education"
   ],
-  "what_you_do": "Nonprofit that connects youth with service projects, a peer mental health leadership program, school programs and a service award.",
+  "what_you_do": "You can take part in service projects, a peer mental health leadership program, school programs and a service award run by this nonprofit.",
   "min_age": null,
   "max_age": null,
   "grades": "Service award is for grades K to 12; Summer of Service is for high school",
@@ -10549,7 +10558,7 @@
   "fields": [
    "arts-media"
   ],
-  "what_you_do": "Youth media group: learn journalism, audio storytelling and digital content, with editors as mentors. Teens keep control of their own stories.",
+  "what_you_do": "You can join a youth media group and learn journalism, audio storytelling and digital content, with editors as mentors. You keep control of your own stories.",
   "min_age": 14,
   "max_age": 24,
   "grades": null,
@@ -10564,7 +10573,7 @@
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Fill out the Google Form linked on youthradio.org.",
-  "needs_work_permit": null,
+  "needs_work_permit": false,
   "url": "https://www.youthradio.org",
   "apply_url": "https://forms.gle/ds5VFroqFf8H2KtGA",
   "sources_fetched": [
@@ -10588,13 +10597,13 @@
   "fields": [
    "arts-media"
   ],
-  "what_you_do": "Arts training and paid jobs for low-income and homeless youth.",
+  "what_you_do": "You can get arts training and paid jobs if you are a low-income or homeless young person.",
   "min_age": 15,
   "max_age": 25,
   "grades": null,
   "who_can_apply": "Ages 15 to 25, low-income or homeless youth (per the Berkeley Public Library jobs page).",
   "paid_type": "paid",
-  "pay_detail": null,
+  "pay_detail": "Rate not posted (checked 2026-10-07)",
   "season": "year-round",
   "duration": null,
   "status": "unconfirmed",
@@ -10628,7 +10637,7 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Job readiness training and paid summer jobs or internships for East Oakland youth, plus career and education services all year.",
+  "what_you_do": "You can get job readiness training and paid summer jobs or internships in East Oakland, plus career and education services all year.",
   "min_age": 14,
   "max_age": 21,
   "grades": null,
@@ -10668,9 +10677,9 @@
   "fields": [
    "arts-media"
   ],
-  "what_you_do": "Free media training in classrooms and afterschool clubs. Advanced students can join a pre-apprentice program and paid fee-for-service projects at YouthBeat PRO.",
-  "min_age": null,
-  "max_age": null,
+  "what_you_do": "You can get free media training in classrooms and afterschool clubs. Advanced students can join a pre-apprentice program and paid fee-for-service projects at YouthBeat PRO.",
+  "min_age": 16,
+  "max_age": 21,
   "grades": "middle and high school",
   "who_can_apply": "Oakland middle and high school students. The City summer jobs list shows Media Careers for ages 16 to 21 (June to September).",
   "paid_type": "mixed",

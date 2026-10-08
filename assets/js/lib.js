@@ -118,7 +118,7 @@
     if (s.noPermit && e.needs_work_permit === true) return false;
     if (s.saved && (s.savedIds || []).indexOf(e.id) === -1) return false;
     if (s.q) {
-      var hay = [e.name, e.org, e.city, e.what_you_do, e.notes, e.who_can_apply, (e.fields || []).map(function (f) { return FIELDS[f] || ""; }).join(" "), (e.regions || []).map(regionLabel).join(" "), TYPES[e.type]].join(" ").toLowerCase();
+      var hay = [e.name, e.org, e.city, e.what_you_do, e.notes, e.who_can_apply, (e.regions || []).map(regionLabel).join(" "), TYPES[e.type]].join(" ").toLowerCase();
       var words = s.q.toLowerCase().split(/\s+/).filter(Boolean);
       var padded = " " + hay.replace(/[^a-z0-9]+/g, " ");
       /* each search word must start a word in the text, so "paid" does not match "unpaid" */
@@ -201,12 +201,61 @@
     return m ? { subject: m[1], body: m[2] } : { subject: "", body: msg };
   }
 
+  /* ---- Insights: counts for the charts. Pure, so it is tested. ---- */
+  var STATUS_GROUPS = [
+    ["open", "Open now", "open-now"], ["soon", "Opens soon", "opens-soon"], ["anytime", "Apply any time", "rolling,year-round,event"],
+    ["closed", "Closed, back next cycle", "closed-expect-reopen"], ["unknown", "Dates not posted", "unconfirmed"]
+  ];
+  function insights(list, now) {
+    var out = { total: list.length, status: [], ages: [], hubs: [], months: [], types: [], fields: [], facts: {} };
+    STATUS_GROUPS.forEach(function (g) {
+      out.status.push({ id: g[0], label: g[1], n: list.filter(function (e) { return g[2].split(",").indexOf(effStatus(e, now)) > -1; }).length });
+    });
+    for (var a = 13; a <= 18; a++) {
+      var ok = list.filter(function (e) { return ageOk(e, a); });
+      out.ages.push({ age: a, n: ok.length, paid: ok.filter(function (e) { return e.paid_type === "paid" || e.paid_type === "stipend" || e.paid_type === "mixed"; }).length });
+    }
+    HUBS.forEach(function (h) {
+      var l = list.filter(function (e) { return hubsOf(e).indexOf(h[0]) > -1; });
+      var row = { id: h[0], label: h[1], n: l.length };
+      PAID_GROUPS.forEach(function (g) { row[g[0]] = l.filter(function (e) { return g[2].indexOf(e.paid_type) > -1; }).length; });
+      out.hubs.push(row);
+    });
+    var byMonth = {};
+    list.forEach(function (e) {
+      var d = futureDeadline(e, now); if (!d) return;
+      var k = d.getFullYear() * 100 + d.getMonth();
+      (byMonth[k] = byMonth[k] || []).push({ name: e.name, id: e.id, date: toISO(d) });
+    });
+    Object.keys(byMonth).sort().forEach(function (k) {
+      var y = Math.floor(k / 100), m = k % 100;
+      out.months.push({ key: +k, label: MONTHS[m] + " " + y, n: byMonth[k].length, items: byMonth[k].sort(function (x, y2) { return x.date < y2.date ? -1 : 1; }) });
+    });
+    var sc = {};
+    list.forEach(function (e) { var k = e.season || "year-round"; sc[k] = (sc[k] || 0) + 1; });
+    out.seasons = [["summer", "Summer"], ["school-year", "School year"], ["fall", "Fall"], ["winter", "Winter"], ["spring", "Spring"], ["year-round", "Year-round"]].map(function (x) { return { id: x[0], label: x[1], n: sc[x[0]] || 0 }; });
+    var tc = {}, fc = {};
+    list.forEach(function (e) { tc[e.type] = (tc[e.type] || 0) + 1; (e.fields || []).forEach(function (f) { if (f !== "any") fc[f] = (fc[f] || 0) + 1; }); });
+    out.types = Object.keys(tc).map(function (k) { return { id: k, label: TYPES[k] || k, n: tc[k] }; }).sort(function (a2, b) { return b.n - a2.n; });
+    out.fields = Object.keys(fc).map(function (k) { return { id: k, label: FIELDS[k] || k, n: fc[k] }; }).sort(function (a2, b) { return b.n - a2.n; });
+    var f = out.facts;
+    f.fetched = list.filter(function (e) { return e.verified === "fetched"; }).length;
+    f.noPermit = list.filter(function (e) { return e.needs_work_permit !== true; }).length;
+    f.paid14 = list.filter(function (e) { return ageOk(e, 14) && (e.paid_type === "paid" || e.paid_type === "stipend"); }).length;
+    f.free = list.filter(function (e) { return e.paid_type === "unpaid" || e.paid_type === "unpaid-credit"; }).length;
+    f.cost = list.filter(function (e) { return e.paid_type === "fee-based"; }).length;
+    var a15 = out.ages[2].n, a16 = out.ages[3].n;
+    f.jump16 = a15 ? Math.round((a16 / a15 - 1) * 100) : 0;
+    f.paidJump = out.ages[1].paid ? Math.round((out.ages[3].paid / out.ages[1].paid - 1) * 100) : 0;
+    return out;
+  }
+
   return {
     REGIONS: REGIONS, HUBS: HUBS, TYPES: TYPES, FIELDS: FIELDS, PAID: PAID, PAID_GROUPS: PAID_GROUPS, MONTHS: MONTHS, MONTH_NAMES: MONTH_NAMES,
     esc: esc, safeUrl: safeUrl, parseISO: parseISO, fmtDate: fmtDate, daysUntil: daysUntil, hubsOf: hubsOf,
     effStatus: effStatus, futureDeadline: futureDeadline, isOpenish: isOpenish, isAnytime: isAnytime, ageOk: ageOk,
     matches: matches, rank: rank, compare: compare, sortList: sortList, ageText: ageText,
     STATUSES: STATUSES, toISO: toISO, addDays: addDays, followUpISO: followUpISO, planSummary: planSummary,
-    icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage
+    icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights
   };
 });
