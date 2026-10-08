@@ -28,7 +28,7 @@ jobs:
       - name: Install JavaScript test tools
         run: npm ci
       - name: JavaScript tests (logic and page behavior in jsdom)
-        run: node --test tests/
+        run: node --test tests/*.test.mjs
       - name: Rebuild data and pages
         run: |
           python3 tools/build_data.py

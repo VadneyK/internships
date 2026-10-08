@@ -7,8 +7,8 @@ Every change goes through the same loop: build, test, deploy, check the live sit
 |---|---|---|
 | `tools/validate.py` | A program file with a missing field, a bad date, a dash character, or a contradiction (for example a deadline with no confirmation) | `python3 tools/validate.py` |
 | Python tests | The data tools themselves | `python3 -m unittest discover -s tests -v` |
-| `tests/lib.test.mjs` | The filter, date and plan logic, with no browser | `node --test tests/` |
-| `tests/*.dom.test.mjs` | Real pages loaded in jsdom with their real scripts: click, type, and check what appears | `npm ci` once, then `node --test tests/` |
+| `tests/lib.test.mjs` | The filter, date and plan logic, with no browser | `node --test tests/*.test.mjs` |
+| `tests/*.dom.test.mjs` | Real pages loaded in jsdom with their real scripts: click, type, and check what appears | `npm ci` once, then `node --test tests/*.test.mjs` |
 | Rebuild and diff | Someone edited a generated page by hand or forgot to rebuild | `python3 tools/build_data.py && python3 tools/build.py && git status` |
 | Dash scan | An em dash or en dash anywhere in the text | see `ci.yml` |
 

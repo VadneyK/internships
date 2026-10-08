@@ -46,7 +46,7 @@ python3 tools/build_data.py      # data/programs/*.json  ->  data/entries.json, 
 python3 tools/build.py           # src/*.html + layout   ->  the pages in the repo root
 python3 -m unittest discover -s tests -v
 npm ci            # once, installs the page-test tool (jsdom)
-node --test tests/
+node --test tests/*.test.mjs
 
 python3 -m http.server 8000      # then open http://localhost:8000
 ```
