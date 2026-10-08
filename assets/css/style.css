@@ -377,3 +377,7 @@ tr:last-child td { border-bottom: 0; }
   .crow { grid-template-columns: minmax(5.5rem, 8rem) minmax(0, 1fr) auto; font-size: .92rem; }
   .chart.cols { gap: .35rem; }
 }
+
+/* known gaps */
+.gaplist { display: grid; gap: .6rem; padding-left: 1.1rem; }
+#gaps ul { margin: .4rem 0 0; padding-left: 1.1rem; display: grid; gap: .4rem; }

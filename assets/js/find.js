@@ -110,6 +110,19 @@
     box.innerHTML = html || '<div class="card empty"><h3>No upcoming deadlines match</h3><p>Clear a filter or switch to Cards.</p></div>';
   }
 
+  /* known gaps for the areas you are looking at, each linked to its issue */
+  var gaps = [];
+  function paintGaps() {
+    var box = $("gaps"); if (!box) return;
+    var mine = state.hubs.length ? gaps.filter(function (g) { return g.hubs.some(function (h) { return state.hubs.indexOf(h) > -1; }); }) : [];
+    if (!mine.length) { box.hidden = true; box.innerHTML = ""; return; }
+    box.hidden = false;
+    box.innerHTML = "<h3>Known gaps in this area</h3><ul>" + mine.map(function (g) {
+      return "<li><b>" + G.esc(g.title) + ".</b> " + G.esc(g.text) + ' <a href="https://github.com/VadneyK/internships/issues/' + g.issue + '">Issue ' + g.issue + "</a></li>";
+    }).join("") + "</ul>";
+  }
+  fetch("data/gaps.json").then(function (r) { return r.json(); }).then(function (g) { gaps = g; paintGaps(); }).catch(function () {});
+
   var PAGE = 60, shown = PAGE;
   function render(resetPage) {
     if (resetPage) shown = PAGE;
@@ -118,6 +131,7 @@
     $("savedN").textContent = G.saved.ids().length;
     var out = $("out"), dates = $("dates");
     $("listActions").hidden = !state.saved;
+    paintGaps();
     if (state.view === "dates") {
       out.hidden = true; dates.hidden = false; renderDates(list); persist(); return;
     }

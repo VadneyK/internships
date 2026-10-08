@@ -53,6 +53,10 @@ def build(name):
         "checked": meta.get("checked_label", ""),
         "issues": ISSUES,
     }
+    gaps = json.load(open(os.path.join(ROOT, "data", "gaps.json"), encoding="utf-8"))
+    import html as _html
+    rep["gaps_list"] = "\n".join(
+        '      <li><b>%s.</b> %s <a href="%s/%d">Issue %d</a></li>' % (_html.escape(g["title"]), _html.escape(g["text"]), ISSUES, g["issue"], g["issue"]) for g in gaps)
     for p in PAGES:
         rep["cur_" + p] = ' aria-current="page"' if p == name else ""
     # body first so tokens inside the body are replaced too
