@@ -11,29 +11,29 @@
   "fields": [
     "any"
   ],
-  "what_you_do": "Juniors and seniors take 2 to 3 free college classes plus 4 high school classes on the San Jose City College campus and earn a diploma plus transferable credit.",
+  "what_you_do": "Juniors and seniors take 2 to 3 free college classes (6 to 9 college credits) plus 4 high school classes on the San Jose City College campus, and earn a high school diploma plus transferable college credit.",
   "min_age": null,
   "max_age": null,
   "grades": "11 to 12",
-  "who_can_apply": "Juniors and seniors. Application needs administrator and teacher recommendations, parent and student questionnaires and an unofficial transcript. Whether students outside San Jose Unified can apply is not stated on the page I read.",
+  "who_can_apply": "Juniors and seniors. The application needs an administrator recommendation, a teacher recommendation (core subjects), a parent questionnaire, a student questionnaire and an unofficial transcript, plus a 504 plan if applicable. The page does not say whether students outside San Jose Unified may apply.",
   "paid_type": "unpaid-credit",
-  "pay_detail": "Free college classes (6 to 9 college credits)",
+  "pay_detail": "Free college classes (6 to 9 college credits). The page does not state other costs.",
   "season": "school-year",
-  "duration": "2 years",
+  "duration": "Junior and senior years (the page does not state a fixed length)",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "No deadline shown on the SJCC page. The application steps are on the SJUSD Middle College site, which I could not open.",
+  "deadline_text": "Not stated on the San Jose City College page. Ask the Middle College office for the application timeline.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Submit the application packet (recommendations, parent and student questionnaires, transcript) to the Middle College office in Business Building B-107, or follow the SJUSD application portal.",
+  "how_to_apply": "Deliver the application packet (administrator and teacher recommendations, parent and student questionnaires, unofficial transcript) to the Middle College office, Business Building B-107, San Jose City College. Questions: Lisa Canton, lcanton@sjusd.org, 408-298-2191 ext. 3996.",
   "needs_work_permit": false,
   "url": "https://sjcc.edu/about/middle-college.aspx",
   "apply_url": null,
   "sources_fetched": [
     "https://sjcc.edu/about/middle-college.aspx"
   ],
-  "verified": "snippet-only",
+  "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "Could not confirm the deadline, selection rules or whether students outside San Jose Unified can apply: the SJUSD application page linked from the SJCC page returned an error. Contact Lisa Canton, lcanton@sjusd.org, 408-298-2191 ext. 3996."
+  "notes": "Re-read the SJCC Middle College page on 2026-10-07. The SJUSD Middle College page it links to (https://www.sjusd.org/our-schools/middle-college/nav/) returns 404, so the district's application steps, deadline and selection rules could not be confirmed. Students are responsible for their own transportation. Students from SJUSD can still play sports and join clubs at their home high schools. Confirm the deadline and whether non-SJUSD students can apply with Lisa Canton before applying."
 }

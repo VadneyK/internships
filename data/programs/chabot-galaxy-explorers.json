@@ -9,31 +9,32 @@
   "type": "volunteer",
   "fields": [
     "science",
-    "education"
+    "education",
+    "engineering"
   ],
-  "what_you_do": "High school volunteer program with STEM career exposure and workplace skills training, earning service credit.",
+  "what_you_do": "A three-year STEM and workforce program. Teens work museum floor shifts explaining science, join inquiry teams on engineering and tech projects, and can take leadership roles in later years.",
   "min_age": null,
   "max_age": null,
-  "grades": "High school",
-  "who_can_apply": "High school students. No age, grade or other rule is posted on the page.",
-  "paid_type": "unpaid",
-  "pay_detail": null,
+  "grades": "Typically enters the summer before 10th grade and stays through 12th grade",
+  "who_can_apply": "High school students. The page encourages students of all backgrounds to apply, especially Oakland public and charter school students. No skills, experience or GPA is needed. Admission is competitive: an initial review, then an information session for applicants and families. Age and residency rules are not stated.",
+  "paid_type": "fee-based",
+  "pay_detail": "Annual tuition is $1,500 per student (one payment by June 1, or $750 by June 1 and $750 by September 1). The need-based Career Access program covers tuition and adds a stipend. 12th-grade Interns receive a stipend.",
   "season": "year-round",
-  "duration": null,
-  "status": "unconfirmed",
+  "duration": "3 years (summer before 10th grade through 12th grade)",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Not posted",
+  "deadline_text": "Applications open each year from February 1 to March 31. Decisions in early May, orientation early to mid June. The page does not list 2027 dates.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
-  "how_to_apply": "Use the 'I'm Interested' link on chabotspace.org/volunteer, or call (510) 336-7300.",
-  "needs_work_permit": false,
-  "url": "https://www.chabotspace.org/volunteer/",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Online application from February 1 to March 31, then an initial review and an information session for applicants and families. The page also has an interest survey to get application updates.",
+  "needs_work_permit": null,
+  "url": "https://chabotspace.org/education/teen-volunteers-galaxy-explorers/",
   "apply_url": null,
   "sources_fetched": [
-    "https://www.chabotspace.org/volunteer/"
+    "https://chabotspace.org/education/teen-volunteers-galaxy-explorers/"
   ],
-  "verified": "snippet-only",
+  "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "Only a short description is posted. Ages, dates and the apply steps are not stated, so call (510) 336-7300 before planning around this."
+  "notes": "Corrected on 2026-10-07 after reading the program's own page. The old chabotspace.org/volunteer/ link now returns 404, so the card points to the Galaxy Explorers page. This is a fee-based program ($1,500 a year tuition) unless the family qualifies for Career Access, which is based on need and census tract data. Floor shifts are 2 per month in the school year and 3 per month in summer. Whether paid Interns need a California work permit is not stated, so needs_work_permit is null."
 }

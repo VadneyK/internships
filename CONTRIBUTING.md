@@ -45,6 +45,7 @@ python3 tools/validate.py        # check every program file
 python3 tools/build_data.py      # data/programs/*.json  ->  data/entries.json, entries.csv, meta.json
 python3 tools/build.py           # src/*.html + layout   ->  the pages in the repo root
 python3 -m unittest discover -s tests -v
+npm ci            # once, installs the page-test tool (jsdom)
 node --test tests/
 
 python3 -m http.server 8000      # then open http://localhost:8000
@@ -87,3 +88,5 @@ python3 -m http.server 8000      # then open http://localhost:8000
 
 Every contributor is thanked in [`CONTRIBUTORS.md`](CONTRIBUTORS.md). Ask a maintainer if you would like a line you can use on a resume.
 Only list what you actually did.
+
+More on tests: [docs/TESTING.md](docs/TESTING.md).

@@ -48,6 +48,7 @@
   var MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   var MONTH_NAMES = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
+  function regionLabel(id) { for (var i = 0; i < REGIONS.length; i++) if (REGIONS[i][0] === id) return REGIONS[i][1]; return ""; }
   function esc(s) {
     return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
@@ -117,9 +118,11 @@
     if (s.noPermit && e.needs_work_permit === true) return false;
     if (s.saved && (s.savedIds || []).indexOf(e.id) === -1) return false;
     if (s.q) {
-      var hay = [e.name, e.org, e.city, e.what_you_do, e.notes, e.who_can_apply, (e.fields || []).join(" "), (e.regions || []).join(" "), TYPES[e.type]].join(" ").toLowerCase();
+      var hay = [e.name, e.org, e.city, e.what_you_do, e.notes, e.who_can_apply, (e.fields || []).map(function (f) { return FIELDS[f] || ""; }).join(" "), (e.regions || []).map(regionLabel).join(" "), TYPES[e.type]].join(" ").toLowerCase();
       var words = s.q.toLowerCase().split(/\s+/).filter(Boolean);
-      if (!words.every(function (w) { return hay.indexOf(w) > -1; })) return false;
+      var padded = " " + hay.replace(/[^a-z0-9]+/g, " ");
+      /* each search word must start a word in the text, so "paid" does not match "unpaid" */
+      if (!words.every(function (w) { return padded.indexOf(" " + w.replace(/[^a-z0-9]+/g, " ")) > -1; })) return false;
     }
     return true;
   }
@@ -159,10 +162,51 @@
     return bits.join(" · ") || "All high school ages";
   }
 
+  /* ---- Outreach plan helpers (playbook page) ---- */
+  var STATUSES = [
+    ["", "Not sent yet"], ["sent", "Sent"], ["replied", "They replied"], ["meeting", "Meeting set"], ["thanked", "Thanked them"]
+  ];
+  function pad2(n) { return (n < 10 ? "0" : "") + n; }
+  function toISO(d) { return d.getFullYear() + "-" + pad2(d.getMonth() + 1) + "-" + pad2(d.getDate()); }
+  function addDays(iso, n) {
+    var d = parseISO(iso); if (!d) return "";
+    d.setDate(d.getDate() + n); return toISO(d);
+  }
+  /* The one-week follow-up date. Only people with status "sent" and a send date have one. */
+  function followUpISO(p) { return p && p.s === "sent" && p.d ? addDays(p.d, 7) : ""; }
+  function planSummary(people, now) {
+    var named = people.filter(function (p) { return p && p.n && p.n.trim(); });
+    var sent = named.filter(function (p) { return p.s; }).length;
+    var today = toISO(startOfDay(now)), next = null;
+    named.forEach(function (p) {
+      var f = followUpISO(p);
+      if (f && (!next || f < next.date)) next = { name: p.n.trim(), date: f, due: f <= today };
+    });
+    return { named: named.length, sent: sent, next: next };
+  }
+  function icsEscape(t) { return String(t || "").replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\r?\n/g, "\\n"); }
+  /* One all-day calendar event as .ics text. dateISO is YYYY-MM-DD. */
+  function icsEvent(o) {
+    var day = o.dateISO.replace(/-/g, ""), end = addDays(o.dateISO, 1).replace(/-/g, "");
+    var stamp = (o.stamp || new Date()).toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
+    return ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Teen Internship Guide//EN", "CALSCALE:GREGORIAN", "BEGIN:VEVENT",
+      "UID:" + o.uid + "@vadneyk.github.io", "DTSTAMP:" + stamp, "DTSTART;VALUE=DATE:" + day, "DTEND;VALUE=DATE:" + end,
+      "SUMMARY:" + icsEscape(o.title), "DESCRIPTION:" + icsEscape(o.desc), "END:VEVENT", "END:VCALENDAR", ""].join("\r\n");
+  }
+  function mailtoHref(subject, body) { return "mailto:?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body); }
+  function smsHref(body) { return "sms:?&body=" + encodeURIComponent(body); }
+  /* Split "Subject: ...\n\nbody" into parts. */
+  function splitMessage(msg) {
+    var m = /^Subject:\s*(.*)\n\n([\s\S]*)$/.exec(msg);
+    return m ? { subject: m[1], body: m[2] } : { subject: "", body: msg };
+  }
+
   return {
     REGIONS: REGIONS, HUBS: HUBS, TYPES: TYPES, FIELDS: FIELDS, PAID: PAID, PAID_GROUPS: PAID_GROUPS, MONTHS: MONTHS, MONTH_NAMES: MONTH_NAMES,
     esc: esc, safeUrl: safeUrl, parseISO: parseISO, fmtDate: fmtDate, daysUntil: daysUntil, hubsOf: hubsOf,
     effStatus: effStatus, futureDeadline: futureDeadline, isOpenish: isOpenish, isAnytime: isAnytime, ageOk: ageOk,
-    matches: matches, rank: rank, compare: compare, sortList: sortList, ageText: ageText
+    matches: matches, rank: rank, compare: compare, sortList: sortList, ageText: ageText,
+    STATUSES: STATUSES, toISO: toISO, addDays: addDays, followUpISO: followUpISO, planSummary: planSummary,
+    icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage
   };
 });

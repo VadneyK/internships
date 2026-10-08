@@ -1,42 +1,41 @@
 {
   "id": "stanford-aimi-summer-research-internship",
   "name": "Stanford AIMI Summer Research Internship",
-  "org": "Stanford Center for AI in Medicine and Imaging",
+  "org": "Stanford Center for Artificial Intelligence in Medicine and Imaging (AIMI)",
   "regions": [
     "silicon-valley",
-    "peninsula",
-    "virtual"
+    "peninsula"
   ],
-  "city": "Stanford, CA",
+  "city": "Palo Alto, CA",
   "type": "research",
   "fields": [
     "health",
     "tech-cs",
     "science"
   ],
-  "what_you_do": "Mentored, hands-on summer research with real health data, using artificial intelligence to study problems in medicine.",
+  "what_you_do": "Mentored, hands-on summer research in health AI, working with real-world health data on problems at the intersection of AI and medicine.",
   "min_age": null,
   "max_age": null,
   "grades": "High school",
-  "who_can_apply": "High school students. Age, grade and location rules are not on the page. Ask staff or attend the Nov 10 info session.",
+  "who_can_apply": "High school students, per the page. The page does not state age, grade range, residency or citizenship rules.",
   "paid_type": "mixed",
-  "pay_detail": "Pay or cost not stated on the page",
+  "pay_detail": "Not stated on the page",
   "season": "summer",
-  "duration": null,
+  "duration": "Not stated on the page",
   "status": "opens-soon",
   "opens_iso": "2026-11-10",
-  "deadline_text": "Summer 2027: application opens Nov 10, 2026 and closes Feb 1, 2027. Free online info session Tue Nov 10, 2026, 5 to 6pm Pacific.",
+  "deadline_text": "Summer 2027 program. Application opens Nov 10, 2026 and closes Feb 1, 2027. Free online info session Tue Nov 10, 2026, 5 to 6 pm Pacific, open to students and parents.",
   "deadline_iso": "2027-02-01",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Application opens Nov 10, 2026. The page says the info session covers the application process. Questions: aimi-hs-programs@stanford.edu.",
-  "needs_work_permit": false,
+  "how_to_apply": "Apply when the application opens on Nov 10, 2026 (the page does not describe the form). Attend the free info session on Nov 10, 2026, or RSVP through the page. Questions: aimi-hs-programs@stanford.edu.",
+  "needs_work_permit": null,
   "url": "https://aimi.stanford.edu/education/summer-research-internship",
   "apply_url": null,
   "sources_fetched": [
     "https://aimi.stanford.edu/education/summer-research-internship"
   ],
-  "verified": "snippet-only",
+  "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "The page does not state eligibility, length, pay or cost, or whether it is in person. Confirm all of that before applying."
+  "notes": "Re-read the AIMI page on 2026-10-07. The dates are for the Summer 2027 program. The page does not state pay or cost, length, detailed eligibility or whether the program is in person, so paid_type and needs_work_permit are placeholders until confirmed. Confirm those with aimi-hs-programs@stanford.edu before applying. The Summer Health AI Bootcamp is a separate program on the same site and is not covered here."
 }

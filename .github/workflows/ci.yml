@@ -12,20 +12,22 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
-          node-version: "20"
+          node-version: "22"
       - name: Install Python tools
         run: pip install jsonschema
       - name: Validate every program file
         run: python3 tools/validate.py
       - name: Python tests
         run: python3 -m unittest discover -s tests -v
-      - name: JavaScript tests
+      - name: Install JavaScript test tools
+        run: npm ci
+      - name: JavaScript tests (logic and page behavior in jsdom)
         run: node --test tests/
       - name: Rebuild data and pages
         run: |

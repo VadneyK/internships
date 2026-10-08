@@ -1,0 +1,39 @@
+{
+  "id": "ymca-silicon-valley-camp-campbell-cabin-leader",
+  "name": "Outdoor Science School Cabin Leader (Camp Campbell)",
+  "org": "YMCA of Silicon Valley",
+  "regions": [
+    "silicon-valley"
+  ],
+  "city": "Boulder Creek, CA (Camp Campbell)",
+  "type": "leadership",
+  "fields": [
+    "education"
+  ],
+  "what_you_do": "Teens mentor students during five-day outdoor science school sessions in the redwoods, guiding activities and helping keep camp safe and fun. Leaders get a full day of training before students arrive.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": "10th grade or higher",
+  "who_can_apply": "Must be at least 15 years old, in 10th grade or higher, and in good academic standing. A High School Authorization Form must be signed by members of your school. No prior training is required, according to the FAQ.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Pay not stated. The page says this is a way to earn Service-Learning credit for graduation.",
+  "season": "school-year",
+  "duration": "Five days per session (typically Monday to Friday). Session dates are not stated.",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Applications for the 2026-27 school year open in August and close in the middle of May. The exact closing date is not stated.",
+  "deadline_iso": null,
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Complete the online application through the Learn More and Sign Up link, get a High School Authorization Form signed by members of your school, and watch email for further instructions. The page recommends applying at least two weeks before your session dates.",
+  "needs_work_permit": false,
+  "url": "https://www.ymcasv.org/ymca-camp-campbell/outdoor-education/cabin-leaders",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.ymcasv.org/ymca-camp-campbell/outdoor-education/cabin-leaders",
+    "https://ymcasv.org/education-enrichment/leadership-development"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Camp Campbell is at 16275 Highway 9, Boulder Creek, CA 95006, per the cabin-leaders page. This is an unpaid volunteer role, so no work permit is needed. The same YMCA's Youth and Government program is already in ymca-silicon-valley-youth-and-government.json. Leaders in Training is also listed on the leadership page, but its age and details are not stated, so it is not a card."
+}

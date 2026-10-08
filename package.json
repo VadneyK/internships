@@ -1,0 +1,12 @@
+{
+  "name": "teen-internship-guide",
+  "private": true,
+  "description": "Tests for the Teen Internship Guide static site. The site itself has no build dependencies.",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test tests/"
+  },
+  "devDependencies": {
+    "jsdom": "^26.1.0"
+  }
+}

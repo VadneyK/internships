@@ -1,7 +1,7 @@
 {
   "id": "svcte-silicon-valley-career-technical-education",
   "name": "Silicon Valley Career Technical Education (SVCTE)",
-  "org": "Silicon Valley Career Technical Education (MetroED)",
+  "org": "Silicon Valley Career Technical Education (Metropolitan Education District)",
   "regions": [
     "san-jose",
     "silicon-valley"
@@ -16,29 +16,33 @@
     "tech-cs",
     "trades"
   ],
-  "what_you_do": "Career classes while in high school: AI engineering, auto repair, healthcare, construction, HVAC, animation, fire science and more. Some give college credit or pre-apprenticeship.",
+  "what_you_do": "Career technical classes for high school students in 22 pathways, including AI engineering, auto repair, culinary arts, nursing careers, HVAC, animation and fire science. Some give college credit or pre-apprenticeship.",
   "min_age": null,
   "max_age": null,
   "grades": "High school",
-  "who_can_apply": "The page does not list eligibility. Ask your school counselor or call SVCTE.",
+  "who_can_apply": "The pages read do not list eligibility rules. Shadow Days require your home school counselor's approval. Ask your counselor or call SVCTE about enrollment.",
   "paid_type": "unpaid-credit",
-  "pay_detail": null,
+  "pay_detail": "Not stated. Dual enrollment courses earn college credit. The site links a Schedule of Fees page that was not read, so ask about costs.",
   "season": "school-year",
   "duration": null,
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Ask your counselor for enrollment dates.",
+  "deadline_text": "Not stated on the pages read. Ask your counselor for enrollment dates.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Talk to your school counselor. The page offers campus tours and shadow days. Phone 408-723-6403.",
+  "how_to_apply": "Talk to your school counselor about enrolling in SVCTE courses. To visit, apply for a Shadow Day through the SVCTE site (your counselor must approve it). Phone (408) 723-6403, Monday to Friday, 7 a.m. to 4 p.m. The site lists Milthon Marquez as Post-Secondary Planning Coach.",
   "needs_work_permit": false,
   "url": "https://svcte.metroed.net/",
   "apply_url": null,
   "sources_fetched": [
-    "https://svcte.metroed.net/"
+    "https://svcte.metroed.net/",
+    "https://svcte.metroed.net/About-Us/Visit-SVCTE/Shadow-Days/index.html",
+    "https://svcte.metroed.net/Course-Information/College-CreditPre-Apprenticeship/Dual-Enrollment/index.html",
+    "https://svcte.metroed.net/Course-Information/Internships/index.html",
+    "https://svcte.metroed.net/Course-Information/Post-Secondary-Options/index.html"
   ],
-  "verified": "snippet-only",
+  "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 1,
-  "notes": "More than 24 career pathways. Mentions dual enrollment, UC a-g courses and an ironworkers pre-apprenticeship. The page lists a Schedule of Fees without prices, so ask about costs. Grades, deadlines and eligibility not on the page."
+  "notes": "Re-read the SVCTE home page and the Shadow Days, Dual Enrollment, Internships and Post-Secondary Options pages on 2026-10-07. The homepage lists 22 career technical courses (the old file said more than 24 pathways). Dual enrollment courses are taught by college professors at the high school campus. Shadow Days: after talking to your home school counselor, submit interest on the site; the counselor must approve it, and you get a confirmation 7 days before the visit. Eligibility, costs, deadlines and enrollment dates are not stated on the pages read."
 }

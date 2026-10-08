@@ -19,23 +19,28 @@ scripts: playbook
 <section id="map" style="padding-block:1.5rem 2rem;">
   <div class="wrap">
     <h2>1. Your people map</h2>
-    <p>Write five adults you already know and what they do for work. Adults you know a little count. A parent&rsquo;s coworker, someone from church, your coach, the owner of the shop you visit every week.</p>
-    <div class="grid g2" style="align-items:start;">
-      <div class="card">
-        <div id="peopleRows" class="stack"></div>
-        <p class="small muted" style="margin-top:.8rem;">Saved on this device only. <button class="chip" type="button" id="clearMap">Clear</button></p>
-      </div>
-      <div class="card flat">
-        <h3>Stuck? Ask yourself</h3>
-        <ul>
-          <li>Who does my family call when the car breaks, the sink leaks, or someone gets sick?</li>
-          <li>Who at church works in a job I find interesting?</li>
-          <li>Which teachers or coaches have a side job or a career before teaching?</li>
-          <li>Which shops, offices or clinics do I visit every month?</li>
-          <li>Who has a business, even a small one?</li>
-        </ul>
-        <p class="small muted">Not sure what they do? That is a good first question to ask.</p>
-      </div>
+    <p>Write five adults you already know and what they do for work. Adults you know a little count. A parent&rsquo;s coworker, someone from church, your coach, the owner of the shop you visit every week. Then press <b>Write to them</b> on any card.</p>
+    <div class="plansum" aria-live="polite">
+      <span class="big" id="planSummary">0 of 5 sent</span>
+      <span id="planNext" class="small"></span>
+    </div>
+    <div class="people" id="people"></div>
+    <div class="chips" style="margin-top:1rem;">
+      <button class="btn alt sm" type="button" id="addPerson">Add another person</button>
+      <button class="btn sm" type="button" id="planPng">Save my plan as an image</button>
+      <button class="chip" type="button" id="clearMap">Clear everything</button>
+    </div>
+    <p class="small muted" style="margin-top:.8rem;">This works like a notebook in your own browser. We never see what you type, and it is gone if you switch phones or clear your browser data. Save the image if you want to keep it.</p>
+    <div class="card flat" style="margin-top:1.5rem;">
+      <h3>Stuck? Ask yourself</h3>
+      <ul>
+        <li>Who does my family call when the car breaks, the sink leaks, or someone gets sick?</li>
+        <li>Who at church works in a job I find interesting?</li>
+        <li>Which teachers or coaches have a side job or a career before teaching?</li>
+        <li>Which shops, offices or clinics do I visit every month?</li>
+        <li>Who has a business, even a small one?</li>
+      </ul>
+      <p class="small muted">Not sure what they do? That is a good first question to ask.</p>
     </div>
   </div>
 </section>
@@ -89,7 +94,10 @@ scripts: playbook
         <ul class="check" id="checks" style="margin-top:.9rem;"></ul>
         <div class="chips" style="margin-top:1rem;">
           <button class="btn" type="button" id="copyMsg">Copy message</button>
-          <button class="btn alt" type="button" id="printMsg">Print</button>
+          <a class="btn alt" id="sendMail" href="#">Open in my email app</a>
+          <a class="btn alt" id="sendSms" href="#" hidden>Open in Messages</a>
+          <button class="btn alt" type="button" id="shareMsg" hidden>Share it</button>
+          <button class="btn dark" type="button" id="markSent" hidden>I sent it</button>
         </div>
         <p class="small muted" style="margin-top:.8rem;">Check the spelling of their name. Read it out loud once. If you are under 18, show a parent or another trusted adult before you send it.</p>
       </div>
@@ -144,17 +152,6 @@ scripts: playbook
     </div>
     <h3 style="margin-top:2rem;">Say yes to small stuff</h3>
     <p>Filing, setup, cleanup, running errands. Small jobs done well are how people decide to give you bigger ones.</p>
-
-    <h3 style="margin-top:2rem;">Track your messages</h3>
-    <p class="small muted">Aim for five messages. Expect a few answers. That is normal.</p>
-    <div class="tablewrap" tabindex="0" role="region" aria-label="Message tracker"><table>
-      <thead><tr><th>Name</th><th>Sent on</th><th>Follow up on</th><th>What happened</th></tr></thead>
-      <tbody>
-        <tr><td>&nbsp;</td><td></td><td></td><td></td></tr><tr><td>&nbsp;</td><td></td><td></td><td></td></tr>
-        <tr><td>&nbsp;</td><td></td><td></td><td></td></tr><tr><td>&nbsp;</td><td></td><td></td><td></td></tr>
-        <tr><td>&nbsp;</td><td></td><td></td><td></td></tr>
-      </tbody></table></div>
-    <p class="noprint" style="margin-top:1rem;"><button class="btn sm alt" type="button" id="printTracker">Print this tracker</button></p>
 
     <h3 style="margin-top:2rem;" id="walkin">Walking into a local business</h3>
     <div class="grid g2">

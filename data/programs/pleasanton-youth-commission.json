@@ -1,0 +1,38 @@
+{
+  "id": "pleasanton-youth-commission",
+  "name": "Pleasanton Youth Commission",
+  "org": "City of Pleasanton",
+  "regions": [
+    "oakland"
+  ],
+  "city": "Pleasanton, CA",
+  "type": "civic-government",
+  "fields": [
+    "law-government"
+  ],
+  "what_you_do": "Students are appointed to a city commission to give the City Council advice and feedback on community issues that affect young people.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Middle school, 9th grade, or 11th grade seats (fall 2026 recruitment)",
+  "who_can_apply": "Must reside within Pleasanton city limits. Seats are set aside by grade: middle school, 9th grade, and 11th grade (fall 2026 ad: 3 seats each).",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer appointed seat. No pay is stated in the recruitment ad.",
+  "season": "school-year",
+  "duration": null,
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Fall 2026 recruitment: apply by 5:00 PM on Tuesday, August 18, 2026. That deadline has passed. The next recruitment date is not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online through the City of Pleasanton boards and commissions page (link at the bottom of the page, per the recruitment ad). Questions: Office of the City Clerk, 925-931-5027.",
+  "needs_work_permit": false,
+  "url": "https://www.cityofpleasantonca.gov/assets/our-government/board-commissions/Recruitment-Ad-FALL-2026.pdf",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.cityofpleasantonca.gov/assets/our-government/board-commissions/Recruitment-Ad-FALL-2026.pdf"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "The next recruitment date is not posted in the ad we read; deadline_confidence is last-year-pattern because the most recent cycle was fall 2026. The recruitment ad describes city commissions in general; the Youth Commission's own duties and term length were not on a page we could open, so what_you_do is based on the ad's general description."
+}

@@ -72,3 +72,43 @@ test("ageText", () => {
   assert.equal(L.ageText({ min_age: 14, max_age: null }), "Ages 14+");
   assert.equal(L.ageText({ min_age: null, max_age: null, grades: null }), "All high school ages");
 });
+
+test("followUpISO: one week after the send date, only when status is sent", () => {
+  assert.equal(L.followUpISO({ s: "sent", d: "2026-10-07" }), "2026-10-14");
+  assert.equal(L.followUpISO({ s: "sent", d: "2026-12-28" }), "2027-01-04");
+  assert.equal(L.followUpISO({ s: "replied", d: "2026-10-07" }), "");
+  assert.equal(L.followUpISO({ s: "sent" }), "");
+});
+test("planSummary counts sent messages and finds the next follow-up", () => {
+  const people = [{ n: "Mrs. Lee", s: "sent", d: "2026-10-07" }, { n: "Mr. Chen", s: "sent", d: "2026-10-01" }, { n: "Coach" }, {}];
+  const sum = L.planSummary(people, NOW);
+  assert.equal(sum.named, 3);
+  assert.equal(sum.sent, 2);
+  assert.deepEqual(sum.next, { name: "Mr. Chen", date: "2026-10-08", due: false });
+  assert.equal(L.planSummary(people, new Date(2026, 9, 9).getTime()).next.due, true);
+  assert.equal(L.planSummary([{}, {}], NOW).next, null);
+});
+test("icsEvent makes an all-day event with escaped text", () => {
+  const ics = L.icsEvent({ uid: "u1", title: "Follow up, Mrs. Lee", desc: "Line one\nLine; two", dateISO: "2026-10-14", stamp: new Date(Date.UTC(2026, 9, 7, 12, 0, 0)) });
+  assert.match(ics, /DTSTART;VALUE=DATE:20261014/);
+  assert.match(ics, /DTEND;VALUE=DATE:20261015/);
+  assert.match(ics, /SUMMARY:Follow up\\, Mrs. Lee/);
+  assert.ok(ics.includes("DESCRIPTION:Line one\\nLine\\; two"));
+  assert.match(ics, /DTSTAMP:20261007T120000Z/);
+  assert.ok(ics.endsWith("END:VCALENDAR\r\n"));
+});
+test("mailto and sms links are encoded; splitMessage separates the subject", () => {
+  assert.equal(L.mailtoHref("Hi & bye", "a b\nc"), "mailto:?subject=Hi%20%26%20bye&body=a%20b%0Ac");
+  assert.equal(L.smsHref("Hi there?"), "sms:?&body=Hi%20there%3F");
+  assert.deepEqual(L.splitMessage("Subject: Quick question\n\nHi Mrs. Lee"), { subject: "Quick question", body: "Hi Mrs. Lee" });
+  assert.deepEqual(L.splitMessage("Hi, this is Sam."), { subject: "", body: "Hi, this is Sam." });
+});
+
+test("search matches the start of words, so 'paid' does not find 'unpaid'", () => {
+  const paid = { ...base, name: "Paid Summer Internship", what_you_do: "Earn money." };
+  const unpaid = { ...base, type: "volunteer", id: "y", name: "Volunteer Hours", what_you_do: "An unpaid role." };
+  assert.equal(L.matches(paid, { q: "paid" }, NOW), true);
+  assert.equal(L.matches(unpaid, { q: "paid" }, NOW), false);
+  assert.equal(L.matches(unpaid, { q: "volun" }, NOW), true);
+  assert.equal(L.matches(paid, { q: "summer intern" }, NOW), true);
+});

@@ -43,6 +43,35 @@
     } else fallback();
   };
 
+  /* save a file to the device (text or a Blob) */
+  G.download = function (name, data, mime) {
+    var blob = data instanceof Blob ? data : new Blob([data], { type: mime || "text/plain" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob); a.download = name;
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 4000);
+  };
+
+  /* print ONE thing, not the whole page: copy it into a print-only layer, print, remove it */
+  G.printOnly = function (node, title) {
+    if (document.getElementById("printRoot")) return; /* a print is already open */
+    var root = document.createElement("div");
+    root.id = "printRoot";
+    root.appendChild(node.cloneNode(true));
+    document.body.appendChild(root);
+    document.body.classList.add("print-one");
+    var oldTitle = document.title;
+    if (title) document.title = title;
+    function done() {
+      window.removeEventListener("afterprint", done);
+      document.body.classList.remove("print-one");
+      if (root.parentNode) root.parentNode.removeChild(root);
+      document.title = oldTitle;
+    }
+    window.addEventListener("afterprint", done);
+    window.print(); /* afterprint cleans up once the dialog closes */
+  };
+
   /* safe storage */
   G.store = {
     get: function (k, d) { try { var v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } },

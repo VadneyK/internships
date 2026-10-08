@@ -1,0 +1,40 @@
+{
+  "id": "ala-girls-state-california",
+  "name": "American Legion Auxiliary California Girls State",
+  "org": "American Legion Auxiliary, Department of California",
+  "regions": [
+    "statewide"
+  ],
+  "city": "California (session location not stated on the site)",
+  "type": "leadership",
+  "fields": [
+    "law-government"
+  ],
+  "what_you_do": "A one-week summer leadership session for 11th grade girls, run by the American Legion Auxiliary. Each delegate is chosen and sponsored by a local Auxiliary Unit. The pages read do not describe the daily activities.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "11th grade (the site says each delegate is an 11th grader during the 2025-26 school year)",
+  "who_can_apply": "Girls in 11th grade who are selected and sponsored by a local American Legion Auxiliary Unit. Each high school may have only one delegate. If a school has no sponsoring Unit, a student can apply as a Department (statewide) alternate applicant. Age rules are not stated.",
+  "paid_type": "unpaid",
+  "pay_detail": "Cost not stated on the pages read. The site says there are opportunities for scholarship consideration, including the Samsung American Legion Scholarship.",
+  "season": "summer",
+  "duration": "One week. The 2026 session (83rd) ran June 22-27, 2026.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "2026 session: June 22-27, 2026. 2027 dates and application deadlines are not posted on the site.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Ask your school counselor or contact a local American Legion Auxiliary Unit (the site has a spreadsheet to find one). Each Unit picks a delegate and two alternates. Students at schools with no sponsoring Unit can use the START HERE online application as Department alternate applicants.",
+  "needs_work_permit": null,
+  "url": "https://cagirlsstate.org/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://cagirlsstate.org/",
+    "https://cagirlsstate.org/faq",
+    "https://cagirlsstate.org/delegates-alternates"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "Separate from the coed American Legion Boys & Girls State program in ca-boys-girls-state.json (no separate Boys State card was made). The FAQ says a student may apply to either American Legion CA Boys State or American Legion Auxiliary CA Girls State, but not both. Selection criteria, grade-school rules beyond the 11th grade note, and cost are not stated on the pages read."
+}

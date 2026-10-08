@@ -37,7 +37,7 @@
     var r = get(), h = "";
     var contact = [r.city, r.email, r.phone].filter(Boolean).join("  |  ");
     h += "<h2>" + G.esc(r.name || "Your name") + '</h2><p class="contact">' + G.esc(contact) + "</p>";
-    if (r.school) {
+    if (r.school || r.grad || r.note) {
       h += "<h3>EDUCATION</h3>" + '<div class="rrow"><span>' + G.esc(r.school) + "</span><span>" + G.esc(r.grad) + "</span></div>" + (r.note ? "<div>" + G.esc(r.note) + "</div>" : "");
     }
     if (r.exp.length) {
@@ -55,7 +55,7 @@
   function asText() {
     var r = get(), t = [];
     t.push((r.name || "").toUpperCase()); t.push([r.city, r.email, r.phone].filter(Boolean).join(" | ")); t.push("");
-    if (r.school) { t.push("EDUCATION"); t.push(r.school + (r.grad ? ", " + r.grad : "")); if (r.note) t.push(r.note); t.push(""); }
+    if (r.school || r.grad || r.note) { t.push("EDUCATION"); t.push([r.school, r.grad].filter(Boolean).join(", ")); if (r.note) t.push(r.note); t.push(""); }
     if (r.exp.length) { t.push("EXPERIENCE"); r.exp.forEach(function (x) { t.push([x.t, x.o].filter(Boolean).join(", ") + (x.d ? " (" + x.d + ")" : "")); x.b.forEach(function (b) { t.push("- " + b); }); }); t.push(""); }
     if (r.act.length) { t.push("ACTIVITIES"); r.act.forEach(function (a) { t.push("- " + a); }); t.push(""); }
     if (r.skills.length) { t.push("SKILLS"); t.push(r.skills.join(", ")); t.push(""); }
@@ -67,7 +67,7 @@
     $("rf").querySelectorAll("input, textarea").forEach(function (i) { i.value = ""; });
     render(); $("rName").focus();
   });
-  $("rPrint").addEventListener("click", function () { window.print(); });
+  $("rPrint").addEventListener("click", function () { G.printOnly($("rv"), (($("rName").value || "My").replace(/[^a-z0-9]+/gi, "") || "My") + "_Resume"); });
   $("rCopy").addEventListener("click", function () { G.copy(asText()); });
   render();
 })();

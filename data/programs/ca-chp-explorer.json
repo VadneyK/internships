@@ -10,31 +10,30 @@
   "fields": [
     "law-government"
   ],
-  "what_you_do": "Teens in Explorer posts train in law enforcement skills and can compete at the CHP statewide Explorer competition in West Sacramento. Contact CHP to find a post.",
+  "what_you_do": "Teens in Explorer posts train in law enforcement skills and can compete at the CHP statewide Explorer competition, held at the CHP Academy in West Sacramento. Contact CHP to find a post.",
   "min_age": 15,
   "max_age": 21,
   "grades": null,
-  "who_can_apply": "The 2026 competition packet says ages 15 to 21. The official page does not list local post rules like GPA or background checks, so ask the Explorer office.",
+  "who_can_apply": "Ages 15 to 21, per the 2026 Explorer competition packet (this is the competition age rule). Post membership rules such as GPA or background checks are not stated on the pages read.",
   "paid_type": "unpaid",
-  "pay_detail": "No pay is stated on the official page. The 2026 state competition cost $150 per explorer, paid by the team.",
+  "pay_detail": "No pay stated. 2026 competition fees were $150 per explorer, $125 per advisor and $75 per spectator.",
   "season": "year-round",
-  "duration": "Not stated. The state competition was April 25 to 26, 2026.",
+  "duration": "Not stated for post membership. The 2026 competition ran April 24 to 26, 2026.",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "No sign-up dates for joining a post are posted. The 2026 state competition (April 25 to 26, 2026) has passed.",
+  "deadline_text": "No post sign-up dates are stated. The 2026 competition registration opened December 2025 and full payment was due February 23, 2026. Both have passed.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Email CHPExplorers@chp.ca.gov or call (916) 843-3210 to ask how to join a post near you.",
+  "how_to_apply": "Email CHPExplorers@chp.ca.gov or call (916) 843-3210 (both listed in the 2026 packet) to ask how to join a post near you.",
   "needs_work_permit": false,
   "url": "https://www.chp.ca.gov/programs-services/programs/explorer-program/",
   "apply_url": null,
   "sources_fetched": [
-    "https://www.chp.ca.gov/",
     "https://www.chp.ca.gov/programs-services/programs/explorer-program/",
     "https://www.chp.ca.gov/siteassets/forms/programs--services/2026-explorer-information-packet.pdf"
   ],
-  "verified": "snippet-only",
+  "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "The official CHP page is mostly about the statewide competition, not how a teen joins a post. Age 15 to 21 comes from the competition packet. Whether a post near you exists, and any background check or GPA rule, must be confirmed with CHP."
+  "notes": "Both official pages were read on 2026-10-07. The program page covers the statewide competition and does not say how to join a post. The 2026 packet is the source for the 15 to 21 age rule, which it states for the competition. Whether a post near you has room, and any background check or GPA rule, must be asked of CHP. The CHP East Sacramento post page returns 403 to automated reads, so use the email or phone above."
 }

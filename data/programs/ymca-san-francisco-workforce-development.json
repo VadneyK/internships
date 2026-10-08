@@ -1,0 +1,39 @@
+{
+  "id": "ymca-san-francisco-workforce-development",
+  "name": "YMCA of San Francisco Workforce Development (Teens)",
+  "org": "YMCA of Greater San Francisco",
+  "regions": [
+    "san-francisco"
+  ],
+  "city": "San Francisco, CA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Teens 14 and older build job skills, get job readiness training and certifications, and may get paid internships and job placements. What is offered varies by YMCA branch.",
+  "min_age": 14,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "The page lists the program for ages 14 to 24 and older. Grade level, residency and other rules are not stated.",
+  "paid_type": "mixed",
+  "pay_detail": "Paid internships are mentioned at the Urban Services YMCA. Wage and hours are not stated. Other activities are not described as paid.",
+  "season": "year-round",
+  "duration": null,
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "Not stated on the page.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Not stated on the page. The page says to contact the Workforce Development team. Phone numbers listed: Urban Services YMCA (415) 561-0631; Bayview Hunters Point YMCA (415) 822-7728; Chinatown YMCA (415) 576-9622.",
+  "needs_work_permit": null,
+  "url": "https://www.ymcasf.org/program/workforce-development/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.ymcasf.org/program/workforce-development/",
+    "https://www.ymcasf.org/teens"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-07",
+  "priority": 2,
+  "notes": "This is an umbrella page for several branch programs. Season, wage, hours and deadlines are not stated, so call a branch before a teen applies. The ymcasf.org/teens page lists teens ages 13-18 across programs, but it gives no details for Workforce Development. Contact emails on the page are obfuscated and were not confirmed, so none are listed."
+}

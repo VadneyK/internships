@@ -66,6 +66,7 @@
     html += '<div class="actions">';
     if (u) html += '<a class="btn sm" href="' + G.esc(u) + '" target="_blank" rel="noopener">Official page</a>';
     if (a && a !== u) html += '<a class="btn sm alt" href="' + G.esc(a) + '" target="_blank" rel="noopener">Apply</a>';
+    if (futureDeadline(e)) html += '<button class="btn sm alt noprint" type="button" data-cal="' + G.esc(e.id) + '">Add deadline to calendar</button>';
     html += '<button class="star noprint" type="button" data-id="' + G.esc(e.id) + '" aria-pressed="' + saved + '" aria-label="' + (saved ? "Remove " : "Save ") + G.esc(e.name) + ' to my list" title="Save to my list">&#9733;</button>';
     html += "</div>";
     html += '<p class="checked">' + vtag + " Checked " + G.esc(e.verified_on_label || "Oct 7, 2026") + "</p>";
@@ -217,6 +218,15 @@
   $("viewDates").addEventListener("click", function () { state.view = "dates"; syncChips(); render(false); });
   $("reset").addEventListener("click", resetAll);
   document.addEventListener("click", function (ev) {
+    var cal = ev.target.closest("[data-cal]");
+    if (cal) {
+      var pe = all.filter(function (x) { return x.id === cal.getAttribute("data-cal"); })[0];
+      if (pe && pe.deadline_iso) {
+        G.download(pe.id + "-deadline.ics", L.icsEvent({ uid: "deadline-" + pe.id, title: "Deadline: " + pe.name, desc: (pe.deadline_text || "") + " " + (G.safeUrl(pe.apply_url || pe.url) || ""), dateISO: pe.deadline_iso }), "text/calendar");
+        G.toast("Calendar file saved. Open it to add the deadline.");
+      }
+      return;
+    }
     var s = ev.target.closest(".star");
     if (s) {
       var on = G.saved.toggle(s.getAttribute("data-id"));
@@ -237,7 +247,14 @@
       var el = document.getElementById("p-" + id); if (el) { el.scrollIntoView({ behavior: "smooth", block: "center" }); el.querySelector("details").open = true; }
     }
   });
-  $("printList").addEventListener("click", function () { window.print(); });
+  $("printList").addEventListener("click", function () {
+    var ids = G.saved.ids(), keep = all.filter(function (e) { return ids.indexOf(e.id) > -1; });
+    var d = document.createElement("div");
+    d.innerHTML = "<h1>My internship list</h1><ol>" + keep.map(function (e) {
+      return "<li><b>" + G.esc(e.name) + "</b> (" + G.esc(e.org || "") + ")<br>" + G.esc(e.deadline_text || "") + "<br>" + G.esc(e.url || "") + "</li>";
+    }).join("") + "</ol><p>From vadneyk.github.io/internships. Confirm dates on each program's own site.</p>";
+    G.printOnly(d, "My internship list");
+  });
   $("copyList").addEventListener("click", function () {
     var ids = G.saved.ids(), txt = all.filter(function (e) { return ids.indexOf(e.id) > -1; }).map(function (e) {
       return "- " + e.name + " (" + (e.org || "") + ")\n  " + (e.deadline_text || "") + "\n  " + (e.url || "");
