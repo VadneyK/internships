@@ -90,3 +90,5 @@ Every contributor is thanked in [`CONTRIBUTORS.md`](CONTRIBUTORS.md). Ask a main
 Only list what you actually did.
 
 More on tests: [docs/TESTING.md](docs/TESTING.md).
+
+The open work lives on the public board: https://github.com/users/VadneyK/projects/1 . Columns run Backlog, Ready, In progress, In review, Done. Pick a card labeled `good first issue` or `no code needed`, comment that you are taking it, and move on from there.
