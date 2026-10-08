@@ -23,7 +23,7 @@
       '<label class="sr" for="ps' + i + '">Status for person ' + (i + 1) + '</label><select class="pstat" id="ps' + i + '" data-i="' + i + '" data-k="s">' + opts + "</select></div>" +
       '<div class="field"><label for="pn' + i + '">Name</label><input id="pn' + i + '" data-i="' + i + '" data-k="n" type="text" autocomplete="off" placeholder="Mrs. Lee" value="' + G.esc(r.n || "") + '"></div>' +
       '<div class="field"><label for="pw' + i + '">What they do</label><input id="pw' + i + '" data-i="' + i + '" data-k="w" type="text" autocomplete="off" placeholder="dentist" value="' + G.esc(r.w || "") + '"></div>' +
-      '<div class="field"><label for="ph' + i + '">How I know them</label><input id="ph' + i + '" data-i="' + i + '" data-k="h" type="text" autocomplete="off" placeholder="my friend\'s mom" value="' + G.esc(r.h || "") + '"></div>' +
+      '<div class="field"><label for="ph' + i + '">How I know them (one sentence)</label><input id="ph' + i + '" data-i="' + i + '" data-k="h" type="text" autocomplete="off" placeholder="I\'m in youth group with her son." value="' + G.esc(r.h || "") + '"></div>' +
       '<div class="pfoot" id="pf' + i + '"></div></article>';
   }
   function footHtml(r, i) {
