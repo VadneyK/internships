@@ -41,7 +41,7 @@ jobs:
           }
       - name: No em dashes or en dashes in text
         run: |
-          if grep -rIl --exclude-dir=.git --exclude-dir=fonts -P '\x{2014}|\x{2013}' . ; then
+          if grep -rIl --exclude-dir=.git --exclude-dir=fonts --exclude-dir=node_modules -P '\x{2014}|\x{2013}' . ; then
             echo "::error::Found an em dash or en dash. Use a comma, colon, or the word 'to'."
             exit 1
           fi
