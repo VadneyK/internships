@@ -67,4 +67,21 @@
     }
     out.innerHTML = "<h3>" + G.esc(d.name) + "</h3><ol>" + d.steps.map(function (s) { return "<li>" + G.esc(s) + "</li>"; }).join("") + '</ol><p class="small muted">Read on Oct 9, 2026: <a href="' + G.esc(d.url) + '" target="_blank" rel="noopener">' + G.esc(d.read) + "</a>. Always confirm with your school before you go.</p>";
   });
+
+  /* rides: every city comes from data/transit.json, each with the pages we read */
+  fetch("data/transit.json").then(function (r) { return r.json(); }).then(function (d) {
+    var sel = $("rideSel"), out = $("rideOut");
+    d.places.forEach(function (p) { var o = document.createElement("option"); o.value = p.id; o.textContent = p.name + " (" + p.state + ")"; sel.appendChild(o); });
+    $("rideDrive").innerHTML = "<p><b>" + G.esc(d.driving.headline) + ".</b> " + G.esc(d.driving.text) + ' <a href="' + G.esc(d.driving.source.u) + '" target="_blank" rel="noopener">' + G.esc(d.driving.source.t) + "</a>. Not covered here: " + d.gaps.map(G.esc).join(" ") + "</p>";
+    function row(k, v) { return "<div><dt>" + k + "</dt><dd>" + G.esc(v) + "</dd></div>"; }
+    sel.addEventListener("change", function () {
+      var p = d.places.filter(function (x) { return x.id === sel.value; })[0];
+      if (!p) { out.innerHTML = '<p class="muted">Pick a city to see the card to get, what it costs, what to bring and whether it works for a job.</p>'; return; }
+      out.innerHTML = "<h3>" + G.esc(p.name) + "</h3><dl class=\"facts\">" + row("Where to get it", p.get) + row("What it costs", p.cost) + row("Who qualifies", p.who) + row("What to bring", p.bring) + row("Does it work for a job?", p.work) + row("How long it lasts", p.ends) + "</dl>" +
+        '<p class="row"><a class="btn sm" href="' + G.esc(p.plan.u) + '" target="_blank" rel="noopener">Plan your trip: ' + G.esc(p.plan.t) + "</a></p>" +
+        '<p class="small muted">Read on ' + G.esc(d.read) + " from: " + p.sources.map(function (s) { return '<a href="' + G.esc(s.u) + '" target="_blank" rel="noopener">' + G.esc(s.t) + "</a>"; }).join(" &middot; ") + ". Programs and prices change, so confirm on the agency page.</p>";
+    });
+    var want = new URLSearchParams(location.search).get("ride");
+    if (want) { sel.value = want; sel.dispatchEvent(new Event("change")); }
+  }).catch(function () { $("rideOut").innerHTML = '<p class="muted">The ride answers could not load. Use the table below or ask your school office.</p>'; });
 })();

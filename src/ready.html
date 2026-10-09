@@ -1,5 +1,5 @@
 title: Get Ready for Your First Job: Permit, Papers, Pay and a Ride
-desc: A checklist for teens in Northern California: how to get a work permit at your school, which papers to bring, how pay and paycheck forms work, and free or cheap rides to work. Sourced to official pages.
+desc: A checklist for teens in California, Atlanta, New York and Chicago: how to get a work permit at your school, which papers to bring, how pay and paycheck forms work, and free or cheap rides to work. Sourced to official pages.
 scripts: ready
 ---
 <section style="padding-block:2rem 1rem;">
@@ -13,6 +13,7 @@ scripts: ready
     <div class="plansum" style="margin-top:1.2rem;"><span class="big" id="readySum">0 of 0 done</span></div>
     <ol class="steps row" id="readyList" aria-label="Your checklist"></ol>
     <p class="small muted"><button class="chip" type="button" id="readyReset">Start over</button></p>
+    <p class="small">A parent has to sign the permit. <a href="languages.html">Official pages in Spanish, Chinese, Korean, Vietnamese and Tagalog</a>.</p>
   </div>
 </section>
 
@@ -72,7 +73,13 @@ scripts: ready
 <section id="ride">
   <div class="wrap">
     <h2>4. A ride to work</h2>
-    <p>A free or cheap bus pass can decide whether a job works. Each agency sets its own youth rules. The shared Clipper card is the way to get most youth discounts in the Bay Area. Pick the place you live.</p>
+    <p>A free or cheap bus pass can decide whether a job works. Each agency sets its own youth rules, and in most of these places the first step is to ask your school office for the card before your first shift.</p>
+    <div class="field" style="max-width:26rem;"><label for="rideSel">Pick where you live</label>
+      <select id="rideSel"><option value="">Choose one</option></select></div>
+    <div class="card" id="rideOut" aria-live="polite" style="margin:1rem 0;"><p class="muted">Pick a city to see the card to get, what it costs, what to bring and whether it works for a job. For the Bay Area and Sacramento, see the table below.</p></div>
+    <div class="callout plain" id="rideDrive" style="margin:0 0 1.2rem;"></div>
+    <h3 id="bayRide">Bay Area and Sacramento</h3>
+    <p>The shared Clipper card is the way to get most youth discounts in the Bay Area.</p>
     <div class="tablewrap" tabindex="0" role="region" aria-label="Youth transit options by area"><table>
       <thead><tr><th>Area</th><th>What teens get</th><th>How</th></tr></thead>
       <tbody>

@@ -43,3 +43,18 @@ test("ready: every transit row links out safely", async () => {
   assert.ok(links.length >= 8);
   for (const a of links) assert.match(a.getAttribute("rel") || "", /noopener/);
 });
+
+test("ready: every city in the ride picker shows its card, cost, what to bring and the pages we read", async () => {
+  const { window, document } = await loadPage("ready.html"); await tick(120);
+  const sel = document.getElementById("rideSel");
+  assert.ok(sel.options.length >= 7, "six cities plus the prompt");
+  for (const o of [...sel.options].slice(1)) {
+    type(window, sel, o.value);
+    const out = document.getElementById("rideOut");
+    assert.match(out.textContent, /Where to get it/);
+    assert.match(out.textContent, /What to bring/);
+    assert.doesNotMatch(out.textContent, /undefined|NaN/);
+    assert.ok([...out.querySelectorAll("a")].every((a) => /^https:\/\//.test(a.href)), o.value + " links must be https");
+  }
+  assert.match(document.getElementById("rideDrive").textContent, /Do not take a job that has you driving/);
+});

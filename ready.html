@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Get Ready for Your First Job: Permit, Papers, Pay and a Ride</title>
-<meta name="description" content="A checklist for teens in Northern California: how to get a work permit at your school, which papers to bring, how pay and paycheck forms work, and free or cheap rides to work. Sourced to official pages.">
+<meta name="description" content="A checklist for teens in California, Atlanta, New York and Chicago: how to get a work permit at your school, which papers to bring, how pay and paycheck forms work, and free or cheap rides to work. Sourced to official pages.">
 <meta name="theme-color" content="#151515">
 <link rel="canonical" href="https://vadneyk.github.io/internships/ready.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Get Ready for Your First Job: Permit, Papers, Pay and a Ride">
-<meta property="og:description" content="A checklist for teens in Northern California: how to get a work permit at your school, which papers to bring, how pay and paycheck forms work, and free or cheap rides to work. Sourced to official pages.">
+<meta property="og:description" content="A checklist for teens in California, Atlanta, New York and Chicago: how to get a work permit at your school, which papers to bring, how pay and paycheck forms work, and free or cheap rides to work. Sourced to official pages.">
 <meta property="og:url" content="https://vadneyk.github.io/internships/ready.html">
 <meta property="og:image" content="https://vadneyk.github.io/internships/assets/img/og.jpg">
 <meta property="og:image:width" content="1200">
@@ -20,8 +20,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=ecd480e2">
-<link rel="stylesheet" href="assets/css/style.css?v=ecd480e2">
+<link rel="stylesheet" href="assets/css/fonts.css?v=3df88a7d">
+<link rel="stylesheet" href="assets/css/style.css?v=3df88a7d">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -62,6 +62,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <div class="plansum" style="margin-top:1.2rem;"><span class="big" id="readySum">0 of 0 done</span></div>
     <ol class="steps row" id="readyList" aria-label="Your checklist"></ol>
     <p class="small muted"><button class="chip" type="button" id="readyReset">Start over</button></p>
+    <p class="small">A parent has to sign the permit. <a href="languages.html">Official pages in Spanish, Chinese, Korean, Vietnamese and Tagalog</a>.</p>
   </div>
 </section>
 
@@ -121,7 +122,13 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
 <section id="ride">
   <div class="wrap">
     <h2>4. A ride to work</h2>
-    <p>A free or cheap bus pass can decide whether a job works. Each agency sets its own youth rules. The shared Clipper card is the way to get most youth discounts in the Bay Area. Pick the place you live.</p>
+    <p>A free or cheap bus pass can decide whether a job works. Each agency sets its own youth rules, and in most of these places the first step is to ask your school office for the card before your first shift.</p>
+    <div class="field" style="max-width:26rem;"><label for="rideSel">Pick where you live</label>
+      <select id="rideSel"><option value="">Choose one</option></select></div>
+    <div class="card" id="rideOut" aria-live="polite" style="margin:1rem 0;"><p class="muted">Pick a city to see the card to get, what it costs, what to bring and whether it works for a job. For the Bay Area and Sacramento, see the table below.</p></div>
+    <div class="callout plain" id="rideDrive" style="margin:0 0 1.2rem;"></div>
+    <h3 id="bayRide">Bay Area and Sacramento</h3>
+    <p>The shared Clipper card is the way to get most youth discounts in the Bay Area.</p>
     <div class="tablewrap" tabindex="0" role="region" aria-label="Youth transit options by area"><table>
       <thead><tr><th>Area</th><th>What teens get</th><th>How</th></tr></thead>
       <tbody>
@@ -184,7 +191,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       </div>
       <div>
         <h2 class="fh">Quick links</h2>
-        <p><a href="find.html">Find a program</a><br><a href="playbook.html">Write your message</a><br><a href="resume.html">Build a first resume</a><br><a href="ready.html">Get ready for day one</a><br><a href="permit.html">Do I need a work permit?</a><br><a href="insights.html">The numbers</a><br><a href="rules.html">Work permit and pay rules</a><br><a href="states.html">Rules in Georgia, New York, Illinois</a><br><a href="contribute.html">Help build this guide</a></p>
+        <p><a href="find.html">Find a program</a><br><a href="playbook.html">Write your message</a><br><a href="resume.html">Build a first resume</a><br><a href="ready.html">Get ready for day one</a><br><a href="permit.html">Do I need a work permit?</a><br><a href="languages.html">Work rules in your language</a><br><a href="insights.html">The numbers</a><br><a href="rules.html">Work permit and pay rules</a><br><a href="states.html">Rules in Georgia, New York, Illinois</a><br><a href="contribute.html">Help build this guide</a></p>
       </div>
       <div>
         <h2 class="fh">About this page</h2>
@@ -195,9 +202,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=ecd480e2"></script>
-<script src="assets/js/common.js?v=ecd480e2"></script>
-<script src="assets/js/ready.js?v=ecd480e2"></script>
+<script src="assets/js/lib.js?v=3df88a7d"></script>
+<script src="assets/js/common.js?v=3df88a7d"></script>
+<script src="assets/js/ready.js?v=3df88a7d"></script>
 
 </body>
 </html>
