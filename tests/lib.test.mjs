@@ -160,5 +160,5 @@ test("permits.json: every state answers every kind, with sources and no placehol
     s.links.forEach((l) => assert.match(l.u, /^(https:\/\/|[a-z]+\.html)/));
     assert.ok(L.REGIONS.length > 0 && L.STATE_OF);
   });
-  assert.doesNotMatch(JSON.stringify(PERMITS), /undefined|NaN|TODO|—|–/);
+  assert.doesNotMatch(JSON.stringify(PERMITS), new RegExp("undefined|NaN|TODO|" + String.fromCharCode(0x2014) + "|" + String.fromCharCode(0x2013)));
 });
