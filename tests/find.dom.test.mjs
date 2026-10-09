@@ -180,7 +180,7 @@ test("find: kind, interest, verified-only and no-work-permit filters narrow the 
 
   document.getElementById("noPermit").click();
   assert.ok(shownCount(document) < total, "no-work-permit should narrow the list");
-  assert.equal(shownCount(document), DATA.filter((e) => e.needs_work_permit !== true).length);
+  assert.equal(shownCount(document), DATA.filter((e) => e.needs_work_permit === false).length);
   assertRendered(document, "no permit");
   assert.equal(params(window).get("nopermit"), "1");
   document.getElementById("noPermit").click();
@@ -215,7 +215,7 @@ test("find: reloading with the URL it wrote restores the same filters and result
 
 test("find: a URL with checked and no-permit filters loads with those filters applied", async () => {
   const { document, errors } = await loadFind({ search: "?checked=1&nopermit=1" });
-  assert.equal(shownCount(document), DATA.filter((e) => e.verified === "fetched" && e.needs_work_permit !== true).length);
+  assert.equal(shownCount(document), DATA.filter((e) => e.verified === "fetched" && e.needs_work_permit === false).length);
   assertRendered(document, "restored from URL");
   assert.equal(pressed(document.getElementById("onlyVerified")), true);
   assert.equal(pressed(document.getElementById("noPermit")), true);
@@ -480,4 +480,12 @@ test("find: a city link in the URL opens with that city chosen", async () => {
   const { document } = await loadFind({ search: "?at=city:davis" });
   assert.equal(document.getElementById("place").value, "city:davis");
   assert.match(document.getElementById("count").textContent, /^\d+ of \d+ programs$/);
+});
+
+test("find: a deep link to a program past the first page renders it and opens it", async () => {
+  const late = DATA.map((e) => e.id).filter((id) => id.startsWith("virginia-tech"))[0];
+  assert.ok(late);
+  const { document } = await loadFind({ search: "#p-" + late });
+  await tick(100);
+  assert.ok(document.getElementById("p-" + late), "the card should be on the page");
 });

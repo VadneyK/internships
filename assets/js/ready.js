@@ -5,13 +5,13 @@
   var $ = function (id) { return document.getElementById(id); };
 
   var ITEMS = [
-    ["job", "I have a job offer. The permit comes after the offer.", "#permit"],
-    ["form", "I started the work permit form and my parent and employer signed it.", "#permit"],
-    ["permit", "I have my permit before my first shift.", "#permit"],
+    ["job", "I have a job offer. In most places the permit comes after the offer.", "#permit"],
+    ["form", "I started the permit or papers my state asks for, and my parent and employer signed what they need to.", "#permit"],
+    ["permit", "I know whether I need a permit, and if I do I have it before my first shift.", "#permit"],
     ["docs", "I know which two documents I will bring on day one.", "#papers"],
     ["ssn", "I have a Social Security card or a birth certificate with a seal, or I ordered one.", "#papers"],
     ["bank", "I know how I will be paid, and where the money goes.", "#money"],
-    ["tax", "I filled out the W-4 and DE 4 with a parent.", "#money"],
+    ["tax", "I filled out the W-4 and my state's form with a parent.", "#money"],
     ["ride", "I know how I will get to work.", "#ride"]
   ];
 
@@ -72,9 +72,11 @@
   fetch("data/transit.json").then(function (r) { return r.json(); }).then(function (d) {
     var sel = $("rideSel"), out = $("rideOut");
     d.places.forEach(function (p) { var o = document.createElement("option"); o.value = p.id; o.textContent = p.name + " (" + p.state + ")"; sel.appendChild(o); });
+    sel.appendChild(Object.assign(document.createElement("option"), { value: "other", textContent: "Somewhere else" }));
     $("rideDrive").innerHTML = "<p><b>" + G.esc(d.driving.headline) + ".</b> " + G.esc(d.driving.text) + ' <a href="' + G.esc(d.driving.source.u) + '" target="_blank" rel="noopener">' + G.esc(d.driving.source.t) + "</a>. Not covered here: " + d.gaps.map(G.esc).join(" ") + "</p>";
     function row(k, v) { return "<div><dt>" + k + "</dt><dd>" + G.esc(v) + "</dd></div>"; }
     sel.addEventListener("change", function () {
+      if (sel.value === "other") { out.innerHTML = "<p>We have not read your transit agency yet. Ask your school office, or look for a youth pass on the agency's own website.</p>"; return; }
       var p = d.places.filter(function (x) { return x.id === sel.value; })[0];
       if (!p) { out.innerHTML = '<p class="muted">Pick a city to see the card to get, what it costs, what to bring and whether it works for a job.</p>'; return; }
       out.innerHTML = "<h3>" + G.esc(p.name) + "</h3><dl class=\"facts\">" + row("Where to get it", p.get) + row("What it costs", p.cost) + row("Who qualifies", p.who) + row("What to bring", p.bring) + row("Does it work for a job?", p.work) + row("How long it lasts", p.ends) + "</dl>" +

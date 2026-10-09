@@ -106,8 +106,8 @@
       });
       sel.appendChild(g);
     }
-    group("Areas", "area", L.AREAS);
-    group("Cities", "city", L.CITIES);
+    group("Cities", "city", L.CITIES.slice().sort(function (a, b) { return a[1] < b[1] ? -1 : 1; }));
+    group("Bigger areas", "area", L.AREAS);
     if (keep) sel.value = keep;
   };
   G.REGIONS = L.REGIONS; G.HUBS = L.HUBS; G.TYPES = L.TYPES; G.FIELDS = L.FIELDS; G.PAID = L.PAID;

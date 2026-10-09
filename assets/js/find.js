@@ -77,7 +77,7 @@
     if (u) html += '<a class="btn sm" href="' + G.esc(u) + '" target="_blank" rel="noopener">Official page</a>';
     if (a && a !== u) html += '<a class="btn sm alt" href="' + G.esc(a) + '" target="_blank" rel="noopener">Apply</a>';
     if (futureDeadline(e)) html += '<button class="btn sm alt noprint" type="button" data-cal="' + G.esc(e.id) + '">Add deadline to calendar</button>';
-    html += '<button class="star noprint" type="button" data-id="' + G.esc(e.id) + '" aria-pressed="' + saved + '" aria-label="' + (saved ? "Remove " : "Save ") + G.esc(e.name) + ' to my list" title="Save to my list">&#9733;</button>';
+    html += '<button class="star noprint" type="button" data-id="' + G.esc(e.id) + '" aria-pressed="' + saved + '" aria-label="' + (saved ? "Remove " + G.esc(e.name) + " from my list" : "Save " + G.esc(e.name) + " to my list") + '" title="Save to my list">&#9733;</button>';
     html += "</div>";
     html += '<p class="checked">' + vtag + " Checked " + G.esc(e.verified_on_label || "Oct 7, 2026") + "</p>";
     html += "</article>";
@@ -128,7 +128,7 @@
     var mine = hubsNow.length ? gaps.filter(function (g) { return g.hubs.some(function (h) { return hubsNow.indexOf(h) > -1; }); }) : [];
     if (!mine.length) { box.hidden = true; box.innerHTML = ""; return; }
     box.hidden = false;
-    box.innerHTML = "<h3>Known gaps in this area</h3><ul>" + mine.map(function (g) {
+    box.innerHTML = "<h2 style=\"font-size:1.1rem;\">Known gaps in this area</h2><ul>" + mine.map(function (g) {
       return "<li><b>" + G.esc(g.title) + ".</b> " + G.esc(g.text) + ' <a href="https://github.com/VadneyK/internships/issues/' + g.issue + '">Issue ' + g.issue + "</a></li>";
     }).join("") + "</ul>";
   }
@@ -139,11 +139,12 @@
     if (!state.place) { box.hidden = true; box.innerHTML = ""; return; }
     var name = G.esc(L.placeLabel(state.place));
     box.hidden = false;
+    var caNote = (L.placeRegions(state.place) || []).indexOf("statewide") > -1 ? " Counts include California-wide programs." : "";
     box.innerHTML = realN === 0
       ? "<b>We have not found programs in " + name + " yet.</b> Showing online and national programs you can do from anywhere. <a href=\"contribute.html\">Know one? Help add it.</a>"
       : realN < 3
         ? "<b>Only " + realN + " program" + (realN === 1 ? "" : "s") + " found in " + name + " so far,</b> so online and national programs are included too. <a href=\"contribute.html\">Know another? Help add it.</a>"
-        : "Showing programs in <b>" + name + "</b>.";
+        : "Showing programs in <b>" + name + "</b>." + caNote;
   }
 
   var PAGE = 60, shown = PAGE;
@@ -249,7 +250,12 @@
     var fc = {}; all.forEach(function (e) { (e.fields || []).forEach(function (f) { fc[f] = (fc[f] || 0) + 1; }); });
     chipGroup("fieldChips", Object.keys(G.FIELDS).filter(function (k) { return k !== "any" && fc[k]; }).map(function (k) { return [k, G.FIELDS[k], fc[k]]; }), "fields");
     readURL(); syncChips(); render(true);
-    if (location.hash.indexOf("#p-") === 0) { var el = document.querySelector(location.hash); if (el) el.scrollIntoView(); }
+    if (location.hash.indexOf("#p-") === 0) {
+      var wantId = location.hash.slice(3), idx = sortList(all.filter(matches)).map(function (e) { return e.id; }).indexOf(wantId);
+      if (idx >= shown) { shown = idx + 1; render(false); }
+      var el = document.getElementById("p-" + wantId);
+      if (el) { var det = el.querySelector("details"); if (det) det.open = true; el.scrollIntoView(); }
+    }
   }).catch(function (err) {
     $("count").textContent = "Could not load the list.";
     $("out").innerHTML = '<div class="card empty" style="grid-column:1/-1"><h3>Something went wrong</h3><p>' + G.esc(err.message) + ". Reload the page, or open the <a href=\"data/entries.csv\">spreadsheet version</a>.</p></div>";

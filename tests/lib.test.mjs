@@ -189,3 +189,25 @@ test("places: every city and area resolves to real region ids, and matches filte
   assert.equal(L.matches({ regions: ["madison"] }, { place: "area:midwest" }, Date.now()), true);
   assert.deepEqual(L.hubsOfPlace("city:boston"), ["east"]);
 });
+
+test("permitFor: 18 year olds get no youth hours, a too-young answer links nothing false", () => {
+  const a = L.permitFor(PERMITS, "ca", 18, "job");
+  assert.equal(a.verdict, "adult");
+  assert.equal(a.hours, "");
+  const y = L.permitFor(PERMITS, "ca", 13, "job");
+  assert.equal(y.verdict, "young");
+  assert.equal(y.hours, "");
+  assert.doesNotMatch(y.text, /usual first steps/);
+});
+
+test("no-permit filter only keeps programs that say no permit is needed", () => {
+  const unknown = { regions: ["oakland"], needs_work_permit: null }, no = { regions: ["oakland"], needs_work_permit: false }, yes = { regions: ["oakland"], needs_work_permit: true };
+  assert.equal(L.matches(unknown, { noPermit: true }, Date.now()), false);
+  assert.equal(L.matches(no, { noPermit: true }, Date.now()), true);
+  assert.equal(L.matches(yes, { noPermit: true }, Date.now()), false);
+});
+
+test("areas include California-wide programs like their own cities do", () => {
+  assert.ok(L.placeRegions("area:bay-area").indexOf("statewide") > -1);
+  assert.equal(L.placeRegions("area:midwest").indexOf("statewide"), -1);
+});

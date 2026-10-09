@@ -1,5 +1,5 @@
-title: Programs for High Schoolers in California, Atlanta, New York and Chicago
-desc: Search every paid youth program, internship, research program, volunteer spot and shadowing option we could verify for teens in California, Atlanta, New York and Chicago.
+title: Programs for High Schoolers in 36 Cities Across the US and Vancouver
+desc: Search every paid youth program, internship, research program, volunteer spot and shadowing option we could verify for teens in California, Atlanta, New York, Chicago and more than 20 other cities.
 scripts: find
 ---
 <section style="padding-block: 2rem 1rem;">
@@ -26,7 +26,7 @@ scripts: find
         <p class="small" id="placeNote" hidden style="margin:.5rem 0 0;"></p>
       </div>
       <div class="fgroup">
-        <span class="lbl" id="l-hub">Quick picks</span>
+        <span class="lbl" id="l-hub">Or tap a popular area</span>
         <div class="chips" id="hubChips" role="group" aria-labelledby="l-hub"></div>
       </div>
       <div class="formgrid">
@@ -60,6 +60,8 @@ scripts: find
           </select>
         </div>
       </div>
+      <details class="fgroup" id="moreFilters">
+      <summary class="lbl" style="cursor:pointer;">More filters: pay, kind, interest</summary>
       <div class="fgroup">
         <span class="lbl" id="l-paid">Pay</span>
         <div class="chips" id="paidChips" role="group" aria-labelledby="l-paid"></div>
@@ -72,6 +74,7 @@ scripts: find
         <span class="lbl" id="l-field">Interest</span>
         <div class="chips" id="fieldChips" role="group" aria-labelledby="l-field"></div>
       </div>
+      </details>
       <div class="chips" style="align-items:center;">
         <button class="chip" type="button" id="onlyVerified" aria-pressed="false">Only show programs checked on the official site</button>
         <button class="chip" type="button" id="noPermit" aria-pressed="false">No work permit needed</button>
@@ -104,7 +107,7 @@ scripts: find
     <div id="gaps" class="callout" hidden></div>
 
     <h2 class="sr">Results</h2>
-    <div id="out" class="results" aria-live="polite"></div>
+    <div id="out" class="results"></div>
     <div id="dates" hidden></div>
     <noscript><p class="callout bad">This page needs JavaScript to filter the list. You can also read the plain list in <a href="data/entries.csv">the spreadsheet file</a>.</p></noscript>
   </div>

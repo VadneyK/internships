@@ -136,7 +136,7 @@
     if (m && m[1] === "city" && city(m[2])) out = CITIES[CITIES.indexOf(city(m[2]))][2].slice();
     if (m && m[1] === "area") {
       for (var a = 0; a < AREAS.length; a++) if (AREAS[a][0] === m[2]) {
-        out = []; AREAS[a][2].forEach(function (cid) { var c = city(cid); if (c) c[2].forEach(function (r) { if (r !== "statewide" && out.indexOf(r) < 0) out.push(r); }); });
+        out = []; AREAS[a][2].forEach(function (cid) { var c = city(cid); if (c) c[2].forEach(function (r) { if (out.indexOf(r) < 0) out.push(r); }); });
       }
     }
     if (out) _placeCache[place] = out;
@@ -218,16 +218,17 @@
   var PERMIT_STATES = ["ca", "ga", "ny", "il", "wa", "tx", "mn", "wi", "in", "oh", "mi", "nc", "md", "va", "nj", "pa", "ma", "bc"];
   function permitFor(data, st, age, kind) {
     var s = data && data.states && data.states[st];
-    if (!s) return { verdict: "nostate", headline: "We have not read your state yet", text: "We have read California, Georgia, New York and Illinois. Ask your school office or your state labor department. The US Department of Labor lists them at dol.gov/agencies/whd/contact/state-labor-offices." };
+    if (!s) return { verdict: "nostate", headline: "We have not read your state yet", text: "We have read 17 states and British Columbia. Ask your school office or your state labor department. The US Department of Labor lists them at dol.gov/agencies/whd/contact/state-labor-offices." };
     var a = +age, k = s.kinds[kind];
     if (!k || !(a >= 0)) return null;
+    var jobLikeEarly = kind === "job" || kind === "program" || kind === "family";
     var base = { state: st, stateName: s.name, permit: s.permit, kind: kind, age: a };
-    var band = a >= 16 ? "16" : a >= 14 ? "14" : a >= 12 ? "12" : "";
-    base.hours = band ? (s.hours[band] || "") : "";
+    var band = a >= 18 ? "" : a >= 16 ? "16" : a >= 14 ? "14" : a >= 12 ? "12" : "";
+    base.hours = band && !(jobLikeEarly && a < s.minAge.job) ? (s.hours[band] || "") : "";
     base.wage = s.wage;
     var jobLike = kind === "job" || kind === "program" || kind === "family";
     if (a >= 18) return Object.assign(base, { verdict: "adult", headline: "You do not need a youth work permit", text: s.adult });
-    if (jobLike && a < s.minAge.job) return Object.assign(base, { verdict: "young", headline: "Most paid jobs start at 14", text: s.minAge.note + " Odd jobs for neighbors and volunteering are the usual first steps." });
+    if (jobLike && a < s.minAge.job) return Object.assign(base, { verdict: "young", headline: "Most paid jobs start at 14", text: s.minAge.note + " See what you can do before 14." });
     if (k.permit === true) {
       if (a >= s.needBelow) return Object.assign(base, { verdict: "none", headline: "You do not need a permit at " + a, text: s.adult });
       return Object.assign(base, { verdict: "need", headline: "You need a " + s.permit, text: k.text });
@@ -340,7 +341,7 @@
     if (s.types && s.types.length && s.types.indexOf(e.type) === -1) return false;
     if (s.fields && s.fields.length && !(e.fields || []).some(function (f) { return f === "any" || s.fields.indexOf(f) > -1; })) return false;
     if (s.verified && e.verified !== "fetched") return false;
-    if (s.noPermit && e.needs_work_permit === true) return false;
+    if (s.noPermit && e.needs_work_permit !== false) return false;
     if (s.saved && (s.savedIds || []).indexOf(e.id) === -1) return false;
     if (s.q) {
       var hay = [e.name, e.org, e.city, e.what_you_do, e.notes, e.who_can_apply, (e.regions || []).map(regionLabel).join(" "), TYPES[e.type]].join(" ").toLowerCase();
@@ -465,7 +466,7 @@
     out.fields = Object.keys(fc).map(function (k) { return { id: k, label: FIELDS[k] || k, n: fc[k] }; }).sort(function (a2, b) { return b.n - a2.n; });
     var f = out.facts;
     f.fetched = list.filter(function (e) { return e.verified === "fetched"; }).length;
-    f.noPermit = list.filter(function (e) { return e.needs_work_permit !== true; }).length;
+    f.noPermit = list.filter(function (e) { return e.needs_work_permit === false; }).length;
     f.paid14 = list.filter(function (e) { return ageOk(e, 14) && (e.paid_type === "paid" || e.paid_type === "stipend"); }).length;
     f.free = list.filter(function (e) { return e.paid_type === "unpaid" || e.paid_type === "unpaid-credit"; }).length;
     f.cost = list.filter(function (e) { return e.paid_type === "fee-based"; }).length;

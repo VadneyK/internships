@@ -11,7 +11,7 @@
     $("lGaps").innerHTML = d.gaps.map(function (g) { return "<li>" + G.esc(g) + "</li>"; }).join("");
     function paint() {
       var lang = $("lLang").value, st = $("lState").value;
-      var rows = d.rows.filter(function (r) { return (!lang || r.lang.indexOf(lang) > -1) && (!st || r.state === st || (st !== "All states" && r.state === "All states" && false)); });
+      var rows = d.rows.filter(function (r) { return (!lang || r.lang.indexOf(lang) > -1) && (!st || r.state === st || r.state === "All states"); });
       $("lCount").textContent = rows.length + " official page" + (rows.length === 1 ? "" : "s") + (lang ? " in " + names[lang] : "") + (st ? " for " + st : "");
       $("lList").innerHTML = rows.length ? rows.map(function (r) {
         return '<li class="card"><span class="tag ghost">' + G.esc(r.state) + "</span> " + r.lang.map(function (c) { return '<span class="tag y">' + G.esc(names[c] || c) + "</span>"; }).join(" ") +

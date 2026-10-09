@@ -30,6 +30,7 @@
       if (s.district) h += '<p>In California the exact steps depend on your school district. <a href="ready.html#permit">Pick your district on the Get ready page</a>.</p>';
     }
     if (r.verdict === "ask") h += "<p><b>Who to call:</b> " + G.esc(s.call) + "</p>";
+    if (r.verdict === "young") h += '<p><a class="btn sm" href="younger.html">What you can do at 12 and 13</a></p>';
     if (r.hours) h += "<h3>Hours you may work at " + G.esc(String(age)) + "</h3><p>" + G.esc(r.hours) + "</p>";
     if (r.verdict !== "young" && r.verdict !== "adult") h += "<h3>Pay</h3><p>" + G.esc(r.wage) + "</p>";
     h += '<p class="small muted">Read on ' + G.esc(s.read) + " from: " + links(s.links) + ". Questions: " + G.esc(s.call) + ".</p></article>";
