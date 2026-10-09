@@ -322,3 +322,17 @@ test("home: shared saved list (common.js) toggles and persists", async () => {
   assert.equal(TIG.saved.toggle("xyz"), true);
   assert.equal(window.localStorage.getItem("saved"), '["xyz"]');
 });
+
+test("states: the more-states picker shows a card for every added state with the permit finder link", async () => {
+  const { window, document } = await loadPage("states.html"); await new Promise((r) => setTimeout(r, 150));
+  const sel = document.getElementById("moreSel");
+  assert.ok(sel.options.length >= 15);
+  for (const o of [...sel.options].slice(1)) {
+    sel.value = o.value; sel.dispatchEvent(new window.Event("change", { bubbles: true }));
+    const out = document.getElementById("moreOut");
+    assert.match(out.textContent, /Minimum wage/);
+    assert.match(out.textContent, /Who to ask/);
+    assert.doesNotMatch(out.textContent, /undefined|NaN/);
+    assert.match(out.querySelector("a.btn").href, /permit\.html\?state=/);
+  }
+});

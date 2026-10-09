@@ -391,6 +391,1301 @@
     },
     "16": null
    }
+  },
+  "wa": {
+   "name": "Washington",
+   "read": "Oct 9, 2026",
+   "permit": "Parent and school authorization form (the employer holds the Minor Work Permit)",
+   "needBelow": 18,
+   "issuer": "The employer gets the Minor Work Permit endorsement. You, a parent, your employer and a school official sign the authorization form.",
+   "steps": [
+    "Get the job first. The employer must have a Minor Work Permit endorsement on their business license (the fee is $0).",
+    "Fill out the parent and school authorization form, or the parent authorization for summer work form if you are hired only for summer break.",
+    "Get the form signed by your employer, you, a school official and your parent or guardian.",
+    "Give it to your employer. It expires each Sept 30 and must be renewed every year."
+   ],
+   "bring": [
+    "The authorization form with all four signatures",
+    "Your parent or guardian",
+    "A school official to sign (school year)"
+   ],
+   "timing": "Not stated on the pages we read.",
+   "renew": "The form expires each school year on Sept 30 and must be renewed.",
+   "call": "Washington Labor and Industries (lni.wa.gov/TeenWorkers)",
+   "links": [
+    {
+     "t": "L&I: how to hire minors",
+     "u": "https://lni.wa.gov/workers-rights/youth-employment/how-to-hire-minors"
+    },
+    {
+     "t": "L&I: hours of work",
+     "u": "https://www.lni.wa.gov/workers-rights/youth-employment/hours-of-work"
+    },
+    {
+     "t": "Minor work permit endorsement (DOR)",
+     "u": "https://dor.wa.gov/manage-business/state-endorsements/minor-work-permit"
+    },
+    {
+     "t": "Washington minimum wage",
+     "u": "https://lni.wa.gov/news-events/article/25-27/"
+    }
+   ],
+   "hours": {
+    "14": "School week: up to 3 hours a day (8 on Saturday and Sunday), 16 a week, 7 a.m. to 7 p.m. School out: up to 8 hours a day, 40 a week, 7 a.m. to 7 p.m. (9 p.m. from June 1 to Labor Day).",
+    "16": "School week: up to 4 hours a day (8 Friday to Sunday), 20 a week, 7 a.m. to 10 p.m. School out: up to 8 hours a day, 48 a week, 5 a.m. to midnight. Generally no work during the hours your neighborhood school is in session."
+   },
+   "wage": "$17.13 an hour in 2026. Employers may pay 85 percent of that ($14.56) to workers 14 and 15. Seattle's minimum is higher.",
+   "limits": {
+    "14": {
+     "schoolDay": 3,
+     "nonSchoolDay": 8,
+     "schoolWeek": 16,
+     "offWeek": 40,
+     "earliest": 7,
+     "latest": 19,
+     "latestSummer": 21
+    },
+    "16": {
+     "schoolDay": 4,
+     "nonSchoolDay": 8,
+     "schoolWeek": 20,
+     "offWeek": 48,
+     "earliest": 5,
+     "latest": 24,
+     "latestSummer": null
+    }
+   },
+   "minAge": {
+    "job": 14,
+    "note": "In general the minimum age to work in Washington is 14."
+   },
+   "kinds": {
+    "job": {
+     "permit": true,
+     "text": "Every minor needs a parent and school authorization form for each paid job at a private employer. Public employers such as state and city governments are not covered by Washington's child labor rules."
+    },
+    "program": {
+     "permit": true,
+     "text": "A paid youth program is a paid job, so the job rule applies. Read the program's own steps for what to turn in."
+    },
+    "odd": {
+     "permit": null,
+     "text": "The pages we read do not say whether odd jobs for neighbors need a permit. Ask Washington L&I (lni.wa.gov/TeenWorkers)."
+    },
+    "own": {
+     "permit": null,
+     "text": "The pages we read do not say whether running your own small business needs a permit. Ask Washington L&I (lni.wa.gov/TeenWorkers)."
+    },
+    "volunteer": {
+     "permit": false,
+     "text": "Washington's child labor rules apply to minor employees, not volunteers. Federal rules still apply."
+    },
+    "intern": {
+     "permit": null,
+     "text": "We found no page here that sets its own internship rule, so the federal fact sheet is the guide: a for-profit generally must pay an intern who is really an employee. Ask a parent or school counselor to check an unpaid one at a business, and ask Washington L&I (lni.wa.gov/TeenWorkers)."
+    },
+    "family": {
+     "permit": null,
+     "text": "The pages we read do not say about work for a parent's business. Ask Washington L&I (lni.wa.gov/TeenWorkers)."
+    },
+    "acting": {
+     "permit": null,
+     "text": "The pages we read do not say about acting or modeling. Ask Washington L&I (lni.wa.gov/TeenWorkers)."
+    }
+   },
+   "adult": "At 18 you do not need a minor work authorization in Washington."
+  },
+  "tx": {
+   "name": "Texas",
+   "read": "Oct 9, 2026",
+   "permit": "Certificate of Age (optional, some employers ask)",
+   "needBelow": 0,
+   "issuer": "Texas Workforce Commission",
+   "steps": [
+    "Texas does not require a work permit for teens on the pages we read.",
+    "Ask the employer whether they want a Certificate of Age. If they do, get the form from the Texas Workforce Commission.",
+    "Have proof of your age ready, such as a birth certificate."
+   ],
+   "bring": [
+    "Proof of age",
+    "The Certificate of Age form, only if your employer asks"
+   ],
+   "timing": "Not stated on the pages we read.",
+   "renew": "Not stated on the pages we read.",
+   "call": "Texas Workforce Commission child labor line (twc.texas.gov)",
+   "links": [
+    {
+     "t": "TWC: Texas child labor law",
+     "u": "https://twc.texas.gov/jobseekers/texas-child-labor-law"
+    },
+    {
+     "t": "TWC child labor summary",
+     "u": "https://www.twc.texas.gov/sites/default/files/fdcm/docs/whcl-75s-twc.pdf"
+    },
+    {
+     "t": "Certificate of Age form",
+     "u": "https://www.twc.texas.gov/sites/default/files/fdcm/docs/application-certificate-age-twc.pdf"
+    },
+    {
+     "t": "Texas minimum wage",
+     "u": "https://www.twc.texas.gov/jobseekers/texas-minimum-wage-law"
+    }
+   ],
+   "hours": {
+    "14": "At most employers the federal limits apply and they are stricter: school days up to 3 hours, school weeks up to 18 hours, non-school days up to 8 hours, 40 a week when school is out, between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). Texas also says no more than 8 hours a day or 48 a week, nothing before 5 a.m., and nothing past 10 p.m. before a school day.",
+    "16": "A child who is 16 or 17 has no restrictions on the number of hours or times of day they may work."
+   },
+   "wage": "$7.25 an hour (Texas follows the federal minimum wage).",
+   "limits": {
+    "14": {
+     "schoolDay": 3,
+     "nonSchoolDay": 8,
+     "schoolWeek": 18,
+     "offWeek": 40,
+     "earliest": 7,
+     "latest": 19,
+     "latestSummer": 21
+    },
+    "16": null
+   },
+   "minAge": {
+    "job": 14,
+    "note": "It is illegal to employ a child under 14 in Texas except under specific circumstances."
+   },
+   "kinds": {
+    "job": {
+     "permit": false,
+     "text": "The Texas pages we read do not require a work permit for teens. Some employers may ask for a Certificate of Age from the Texas Workforce Commission."
+    },
+    "program": {
+     "permit": false,
+     "text": "A paid youth program is a paid job, so the job rule applies. Read the program's own steps for what to turn in."
+    },
+    "odd": {
+     "permit": null,
+     "text": "The pages we read do not say whether odd jobs for neighbors need a permit. Ask the Texas Workforce Commission."
+    },
+    "own": {
+     "permit": null,
+     "text": "The pages we read do not say whether running your own small business needs a permit. Ask the Texas Workforce Commission."
+    },
+    "volunteer": {
+     "permit": null,
+     "text": "The pages we read do not say whether volunteering needs a permit. Ask the Texas Workforce Commission."
+    },
+    "intern": {
+     "permit": null,
+     "text": "We found no page here that sets its own internship rule, so the federal fact sheet is the guide: a for-profit generally must pay an intern who is really an employee. Ask a parent or school counselor to check an unpaid one at a business, and ask the Texas Workforce Commission."
+    },
+    "family": {
+     "permit": null,
+     "text": "The pages we read do not say about work for a parent's business. Ask the Texas Workforce Commission."
+    },
+    "acting": {
+     "permit": null,
+     "text": "The pages we read do not say about acting or modeling. Ask the Texas Workforce Commission."
+    }
+   },
+   "adult": "At 18 you do not need a Certificate of Age."
+  },
+  "mn": {
+   "name": "Minnesota",
+   "read": "Oct 9, 2026",
+   "permit": "Employment certificate (only for school-day work during school hours)",
+   "needBelow": 0,
+   "issuer": "The school district superintendent",
+   "steps": [
+    "Minnesota does not require a general work permit on the pages we read.",
+    "A minor under 16 needs an employment certificate only to work on school days during school hours.",
+    "Keep proof of age ready, such as a birth certificate. Employers keep it in payroll records."
+   ],
+   "bring": [
+    "Proof of age"
+   ],
+   "timing": "Not stated on the pages we read.",
+   "renew": "Not stated on the pages we read.",
+   "call": "Minnesota Department of Labor and Industry (dli.mn.gov/child-labor)",
+   "links": [
+    {
+     "t": "DLI: child labor",
+     "u": "https://dli.mn.gov/child-labor"
+    },
+    {
+     "t": "DLI: age and hours restrictions",
+     "u": "https://dli.mn.gov/business/employment-practices/age-hours-restrictions"
+    },
+    {
+     "t": "DLI: teen workers",
+     "u": "https://dli.mn.gov/business/employment-practices/teen-workers"
+    },
+    {
+     "t": "Minnesota minimum wage",
+     "u": "https://dli.mn.gov/minwage"
+    }
+   ],
+   "hours": {
+    "14": "At most employers the federal limits apply and they are stricter: school days up to 3 hours, school weeks up to 18 hours, non-school days up to 8 hours, 40 a week when school is out, between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). Minnesota's own limit for under 16: not before 7 a.m. or after 9 p.m., no more than 8 hours in 24 or 40 a week.",
+    "16": "High school students 16 and 17 may not work after 11 p.m. on evenings before school days or before 5 a.m. on school days. With written parent permission this moves to 11:30 p.m. and 4:30 a.m."
+   },
+   "wage": "$11.41 an hour in 2026 and $11.87 from Jan 1, 2027. Minneapolis and Saint Paul have their own higher minimums.",
+   "limits": {
+    "14": {
+     "schoolDay": 3,
+     "nonSchoolDay": 8,
+     "schoolWeek": 18,
+     "offWeek": 40,
+     "earliest": 7,
+     "latest": 19,
+     "latestSummer": 21
+    },
+    "16": null
+   },
+   "minAge": {
+    "job": 14,
+    "note": "Fourteen is the minimum age of employment in Minnesota, with exceptions such as newspaper carriers at 11."
+   },
+   "kinds": {
+    "job": {
+     "permit": false,
+     "text": "Minnesota does not require a general work permit. Under 16 you need an employment certificate only to work on school days during school hours."
+    },
+    "program": {
+     "permit": false,
+     "text": "A paid youth program is a paid job, so the job rule applies. Read the program's own steps for what to turn in."
+    },
+    "odd": {
+     "permit": null,
+     "text": "The pages we read do not say whether odd jobs for neighbors need a permit. Ask the Minnesota Department of Labor and Industry."
+    },
+    "own": {
+     "permit": null,
+     "text": "The pages we read do not say whether running your own small business needs a permit. Ask the Minnesota Department of Labor and Industry."
+    },
+    "volunteer": {
+     "permit": null,
+     "text": "The pages we read do not say whether volunteering needs a permit. Ask the Minnesota Department of Labor and Industry."
+    },
+    "intern": {
+     "permit": null,
+     "text": "We found no page here that sets its own internship rule, so the federal fact sheet is the guide: a for-profit generally must pay an intern who is really an employee. Ask a parent or school counselor to check an unpaid one at a business, and ask the Minnesota Department of Labor and Industry."
+    },
+    "family": {
+     "permit": null,
+     "text": "The pages we read do not say about work for a parent's business. Ask the Minnesota Department of Labor and Industry."
+    },
+    "acting": {
+     "permit": null,
+     "text": "The pages we read do not say about acting or modeling. Ask the Minnesota Department of Labor and Industry."
+    }
+   },
+   "adult": "At 18 you have no special youth rules in Minnesota."
+  },
+  "wi": {
+   "name": "Wisconsin",
+   "read": "Oct 9, 2026",
+   "permit": "Work permit for 14 and 15 year olds",
+   "needBelow": 16,
+   "issuer": "Your parent or guardian applies and pays for the permit. The employer must reimburse the $10 fee by your first paycheck.",
+   "steps": [
+    "Get the job first.",
+    "Your parent or guardian applies for the work permit through the Wisconsin Department of Workforce Development.",
+    "Give the permit to your employer before you start."
+   ],
+   "bring": [
+    "Your parent or guardian",
+    "Proof of age"
+   ],
+   "timing": "Not stated on the pages we read.",
+   "renew": "Not stated on the pages we read.",
+   "call": "Wisconsin Department of Workforce Development (dwd.wisconsin.gov)",
+   "links": [
+    {
+     "t": "DWD: employment of minors guide",
+     "u": "https://dwd.wisconsin.gov/er/laborstandards/workpermit/minoremployment.htm"
+    },
+    {
+     "t": "DWD: work permits",
+     "u": "https://dwd.wisconsin.gov/er/laborstandards/workpermit/"
+    },
+    {
+     "t": "DWD: hours minors may work",
+     "u": "https://dwd.wisconsin.gov/eworkboard/minor-time/"
+    }
+   ],
+   "hours": {
+    "14": "School days: up to 3 hours a day and 18 a week. Non-school days: up to 8 hours a day and 40 a week. 7 a.m. to 7 p.m., or 9 p.m. from June 1 to Labor Day.",
+    "16": "State and federal laws do not limit the hours that minors 16 and older may work, but not during required school attendance."
+   },
+   "wage": "$7.25 an hour. Employers may pay $5.90 an hour for the first 90 days.",
+   "limits": {
+    "14": {
+     "schoolDay": 3,
+     "nonSchoolDay": 8,
+     "schoolWeek": 18,
+     "offWeek": 40,
+     "earliest": 7,
+     "latest": 19,
+     "latestSummer": 21
+    },
+    "16": null
+   },
+   "minAge": {
+    "job": 14,
+    "note": "Minors must be at least 14 to be employed in most gainful occupations."
+   },
+   "kinds": {
+    "job": {
+     "permit": true,
+     "text": "Most employers hiring minors need a valid work permit for each minor before work starts. The DWD pages disagree on the ages (one says 12 to 15, one says 14 and 15), so confirm with DWD."
+    },
+    "program": {
+     "permit": true,
+     "text": "A paid youth program is a paid job, so the job rule applies. Read the program's own steps for what to turn in."
+    },
+    "odd": {
+     "permit": null,
+     "text": "The pages we read do not say whether odd jobs for neighbors need a permit. Ask the Wisconsin Department of Workforce Development."
+    },
+    "own": {
+     "permit": null,
+     "text": "The pages we read do not say whether running your own small business needs a permit. Ask the Wisconsin Department of Workforce Development."
+    },
+    "volunteer": {
+     "permit": false,
+     "text": "A work permit is not needed for volunteer work for a nonprofit organization, not as an employee."
+    },
+    "intern": {
+     "permit": null,
+     "text": "We found no page here that sets its own internship rule, so the federal fact sheet is the guide: a for-profit generally must pay an intern who is really an employee. Ask a parent or school counselor to check an unpaid one at a business, and ask the Wisconsin Department of Workforce Development."
+    },
+    "family": {
+     "permit": null,
+     "text": "The pages we read do not say about work for a parent's business. Ask the Wisconsin Department of Workforce Development."
+    },
+    "acting": {
+     "permit": null,
+     "text": "The pages we read do not say about acting or modeling. Ask the Wisconsin Department of Workforce Development."
+    }
+   },
+   "adult": "At 16 and older you do not need a work permit in Wisconsin."
+  },
+  "in": {
+   "name": "Indiana",
+   "read": "Oct 9, 2026",
+   "permit": "No work permit",
+   "needBelow": 0,
+   "issuer": "Indiana does not issue work permits",
+   "steps": [
+    "Indiana no longer requires work permits for 14 through 17 year olds on the state pages we read.",
+    "Ask your employer what proof of age they want.",
+    "Check the hour rules for your age below."
+   ],
+   "bring": [
+    "Proof of age, if your employer asks"
+   ],
+   "timing": "Not stated on the pages we read.",
+   "renew": "Not stated on the pages we read.",
+   "call": "Indiana Department of Labor Youth Employment Division: (317) 232-2655",
+   "links": [
+    {
+     "t": "Indiana DOL: youth employment",
+     "u": "https://www.in.gov/dol/youth-employment/youth-employment-home"
+    },
+    {
+     "t": "Work restrictions poster (July 1, 2026)",
+     "u": "https://www.in.gov/dol/publications/Youth%20Employment%20Form%20Update%20July%201%202026.pdf"
+    }
+   ],
+   "hours": {
+    "14": "School days: up to 3 hours. School weeks: up to 18 hours. Non-school days: up to 8 hours, 40 a week. Not before 7 a.m. or after 7 p.m. (9 p.m. from June 1 to Labor Day). Not during school hours.",
+    "16": "There are no hour restrictions for 16 and 17 year olds."
+   },
+   "wage": "$7.25 an hour. Employers may pay $4.25 to workers under 20 for the first 90 days.",
+   "limits": {
+    "14": {
+     "schoolDay": 3,
+     "nonSchoolDay": 8,
+     "schoolWeek": 18,
+     "offWeek": 40,
+     "earliest": 7,
+     "latest": 19,
+     "latestSummer": 21
+    },
+    "16": null
+   },
+   "minAge": {
+    "job": 14,
+    "note": "We did not find an explicit minimum working age on the Indiana pages. The rules are written for 14 to 15 and 16 to 17 year olds, and the federal minimum is 14."
+   },
+   "kinds": {
+    "job": {
+     "permit": false,
+     "text": "Indiana no longer requires work permits for ages 14 to 17."
+    },
+    "program": {
+     "permit": false,
+     "text": "A paid youth program is a paid job, so the job rule applies. Read the program's own steps for what to turn in."
+    },
+    "odd": {
+     "permit": null,
+     "text": "The pages we read do not say whether odd jobs for neighbors need a permit. Ask the Indiana Department of Labor, (317) 232-2655."
+    },
+    "own": {
+     "permit": null,
+     "text": "The pages we read do not say whether running your own small business needs a permit. Ask the Indiana Department of Labor, (317) 232-2655."
+    },
+    "volunteer": {
+     "permit": null,
+     "text": "The pages we read do not say whether volunteering needs a permit. Ask the Indiana Department of Labor, (317) 232-2655."
+    },
+    "intern": {
+     "permit": null,
+     "text": "We found no page here that sets its own internship rule, so the federal fact sheet is the guide: a for-profit generally must pay an intern who is really an employee. Ask a parent or school counselor to check an unpaid one at a business, and ask the Indiana Department of Labor, (317) 232-2655."
+    },
+    "family": {
+     "permit": null,
+     "text": "The pages we read do not say about work for a parent's business. Ask the Indiana Department of Labor, (317) 232-2655."
+    },
+    "acting": {
+     "permit": null,
+     "text": "The pages we read do not say about acting or modeling. Ask the Indiana Department of Labor, (317) 232-2655."
+    }
+   },
+   "adult": "No work permit is needed in Indiana."
+  },
+  "mi": {
+   "name": "Michigan",
+   "read": "Oct 9, 2026",
+   "permit": "Youth employment permit (statewide online system)",
+   "needBelow": 18,
+   "issuer": "From Oct 2, 2026 the state's online youth employment permit system, used by the employer and the minor. Local schools no longer issue permits.",
+   "steps": [
+    "Get the job first.",
+    "You and your employer complete the permit in the state's online system (YEPP).",
+    "Do not start work before the permit is valid."
+   ],
+   "bring": [
+    "Your parent or guardian, if the system asks",
+    "Proof of age"
+   ],
+   "timing": "Not stated on the pages we read.",
+   "renew": "Not stated on the pages we read.",
+   "call": "Michigan Department of Labor and Economic Opportunity (michigan.gov/leo)",
+   "links": [
+    {
+     "t": "Michigan: youth employment",
+     "u": "https://www.michigan.gov/en/leo/initiatives/youth-employment"
+    },
+    {
+     "t": "Michigan YESA page",
+     "u": "https://www.michigan.gov/leo/bureaus-agencies/ber/wage-and-hour/youth-employment-standards-act-yesa"
+    },
+    {
+     "t": "New permit system, Oct 1, 2026",
+     "u": "https://www.michigan.gov/leo/news/2026/10/01/new-youth-employment-permit-portal-helps-protect-michigan-young-workers"
+    },
+    {
+     "t": "Michigan minimum wage",
+     "u": "https://www.michigan.gov/leo/bureaus-agencies/ber/wage-and-hour/min-wage"
+    }
+   ],
+   "hours": {
+    "14": "At most employers the federal limits apply and they are stricter: school days up to 3 hours, school weeks up to 18 hours, non-school days up to 8 hours, 40 a week when school is out, between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). Michigan's own rules also say not before 7 a.m. or after 9 p.m. for 14 and 15, and no more than 48 hours of school and work combined in a week.",
+    "16": "Not more than 24 hours in a workweek when school is in session, or 48 when it is not. Not before 6 a.m. or after 10:30 p.m. Sunday to Thursday, and not after 11:30 p.m. Friday and Saturday. These limits come from a state webinar PDF, so confirm with the state."
+   },
+   "wage": "$13.73 an hour in 2026 and $15.00 from Jan 1, 2027. Workers 16 and 17 may be paid 85 percent.",
+   "limits": {
+    "14": {
+     "schoolDay": 3,
+     "nonSchoolDay": 8,
+     "schoolWeek": 18,
+     "offWeek": 40,
+     "earliest": 7,
+     "latest": 19,
+     "latestSummer": 21
+    },
+    "16": {
+     "schoolDay": 10,
+     "nonSchoolDay": 10,
+     "schoolWeek": 24,
+     "offWeek": 48,
+     "earliest": 6,
+     "latest": 22,
+     "latestSummer": null
+    }
+   },
+   "minAge": {
+    "job": 14,
+    "note": "In general the minimum age for youth employment in Michigan is 14."
+   },
+   "kinds": {
+    "job": {
+     "permit": true,
+     "text": "A minor must have a valid work permit before starting work. Michigan's page says the law covers employers of anyone under 18, including volunteers, so ask the program about a volunteer role."
+    },
+    "program": {
+     "permit": true,
+     "text": "A paid youth program is a paid job, so the job rule applies. Read the program's own steps for what to turn in."
+    },
+    "odd": {
+     "permit": null,
+     "text": "The pages we read do not say whether odd jobs for neighbors need a permit. Ask the Michigan Department of Labor and Economic Opportunity."
+    },
+    "own": {
+     "permit": null,
+     "text": "The pages we read do not say whether running your own small business needs a permit. Ask the Michigan Department of Labor and Economic Opportunity."
+    },
+    "volunteer": {
+     "permit": null,
+     "text": "The pages we read do not say whether volunteering needs a permit. Ask the Michigan Department of Labor and Economic Opportunity."
+    },
+    "intern": {
+     "permit": null,
+     "text": "We found no page here that sets its own internship rule, so the federal fact sheet is the guide: a for-profit generally must pay an intern who is really an employee. Ask a parent or school counselor to check an unpaid one at a business, and ask the Michigan Department of Labor and Economic Opportunity."
+    },
+    "family": {
+     "permit": null,
+     "text": "The pages we read do not say about work for a parent's business. Ask the Michigan Department of Labor and Economic Opportunity."
+    },
+    "acting": {
+     "permit": null,
+     "text": "The pages we read do not say about acting or modeling. Ask the Michigan Department of Labor and Economic Opportunity."
+    }
+   },
+   "adult": "At 18 you do not need a youth employment permit in Michigan."
+  },
+  "nc": {
+   "name": "North Carolina",
+   "read": "Oct 9, 2026",
+   "permit": "Youth Employment Certificate",
+   "needBelow": 18,
+   "issuer": "The employer starts it in the state's online system. You, a parent or guardian and the employer sign it electronically.",
+   "steps": [
+    "Get a firm job offer first.",
+    "Your employer starts the certificate in the state system. You and a parent should not start it.",
+    "You, a parent or guardian and the employer sign electronically before your first day."
+   ],
+   "bring": [
+    "Your parent or guardian",
+    "Proof of age"
+   ],
+   "timing": "Not stated on the pages we read.",
+   "renew": "Not stated on the pages we read.",
+   "call": "North Carolina Department of Labor (labor.nc.gov)",
+   "links": [
+    {
+     "t": "NCDOL: apply for a certificate",
+     "u": "https://www.labor.nc.gov/workplace-rights/youth-employment-rules/apply-youth-employment-certificate"
+    },
+    {
+     "t": "NCDOL: youth employment rules",
+     "u": "https://www.labor.nc.gov/workplace-rights/youth-employment-rules"
+    },
+    {
+     "t": "NCDOL: work hour limits",
+     "u": "https://www.labor.nc.gov/workplace-rights/youth-employment-rules/work-hour-limitations-youths"
+    }
+   ],
+   "hours": {
+    "14": "No more than 3 hours a day when school is in session or 8 when it is not. No more than 18 hours a week in school weeks or 40 when school is out, and only outside school hours. A 30 minute break after 5 hours in a row. North Carolina adopts the federal limits, so 7 a.m. to 7 p.m. applies (9 p.m. in summer).",
+    "16": "You cannot work between 11 p.m. and 5 a.m. when there is school the next day, unless a parent and your principal give written permission. The page sets no other daily or weekly cap for 16 and 17."
+   },
+   "wage": "$7.25 an hour (the page says currently, and gives no year).",
+   "limits": {
+    "14": {
+     "schoolDay": 3,
+     "nonSchoolDay": 8,
+     "schoolWeek": 18,
+     "offWeek": 40,
+     "earliest": 7,
+     "latest": 19,
+     "latestSummer": 21
+    },
+    "16": null
+   },
+   "minAge": {
+    "job": 14,
+    "note": "Work is generally not permitted for youths under 14 in North Carolina, with exceptions."
+   },
+   "kinds": {
+    "job": {
+     "permit": true,
+     "text": "Youth under 18 who work in North Carolina must have a Youth Employment Certificate."
+    },
+    "program": {
+     "permit": true,
+     "text": "A paid youth program is a paid job, so the job rule applies. Read the program's own steps for what to turn in."
+    },
+    "odd": {
+     "permit": null,
+     "text": "The pages we read do not say whether odd jobs for neighbors need a permit. Ask the North Carolina Department of Labor."
+    },
+    "own": {
+     "permit": null,
+     "text": "The pages we read do not say whether running your own small business needs a permit. Ask the North Carolina Department of Labor."
+    },
+    "volunteer": {
+     "permit": null,
+     "text": "The pages we read do not say whether volunteering needs a permit. Ask the North Carolina Department of Labor."
+    },
+    "intern": {
+     "permit": null,
+     "text": "We found no page here that sets its own internship rule, so the federal fact sheet is the guide: a for-profit generally must pay an intern who is really an employee. Ask a parent or school counselor to check an unpaid one at a business, and ask the North Carolina Department of Labor."
+    },
+    "family": {
+     "permit": null,
+     "text": "The pages we read do not say about work for a parent's business. Ask the North Carolina Department of Labor."
+    },
+    "acting": {
+     "permit": null,
+     "text": "The pages we read do not say about acting or modeling. Ask the North Carolina Department of Labor."
+    }
+   },
+   "adult": "At 18 you do not need a Youth Employment Certificate."
+  },
+  "nj": {
+   "name": "New Jersey",
+   "read": "Oct 9, 2026",
+   "permit": "Working papers (online)",
+   "needBelow": 18,
+   "issuer": "The New Jersey Department of Labor, online. Schools are no longer part of the process.",
+   "steps": [
+    "Get the job offer first.",
+    "Apply for working papers online with the state, with a parent.",
+    "Your employer must register online too."
+   ],
+   "bring": [
+    "Your parent or guardian",
+    "Proof of age"
+   ],
+   "timing": "Not stated on the pages we read.",
+   "renew": "Not stated on the pages we read.",
+   "call": "New Jersey Department of Labor and Workforce Development (nj.gov/labor/youngworkers)",
+   "links": [
+    {
+     "t": "NJ working papers",
+     "u": "https://www.nj.gov/labor/youngworkers/find-a-job/working-papers/index.shtml"
+    },
+    {
+     "t": "NJ workers under 18",
+     "u": "https://www.nj.gov/labor/myworkrights/worker-protections/workers_under_18/"
+    },
+    {
+     "t": "NJ press release on working papers",
+     "u": "https://nj.gov/labor/lwdhome/press/2026/20260406_workingpapers.shtml"
+    },
+    {
+     "t": "NJ minimum wage",
+     "u": "https://www.nj.gov/labor/lwdhome/press/2025/20251001_Minimum_Wage.shtml"
+    }
+   ],
+   "hours": {
+    "14": "Workers under 16 may not work more than 40 hours a week and 8 hours a day. At most employers the federal limits apply and they are stricter: school days up to 3 hours, school weeks up to 18 hours, non-school days up to 8 hours, 40 a week when school is out, between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day).",
+    "16": "Workers 16 and up may work up to 50 hours in a week and 10 hours a day only between the last day of school and Labor Day. A school-week limit of about 40 hours a week and 8 hours a day appears in a state page summary, so confirm it. A 30 minute break after 6 hours in a row."
+   },
+   "wage": "$15.92 an hour in 2026 for most employees, and $16.48 from Jan 1, 2027.",
+   "limits": {
+    "14": {
+     "schoolDay": 3,
+     "nonSchoolDay": 8,
+     "schoolWeek": 18,
+     "offWeek": 40,
+     "earliest": 7,
+     "latest": 19,
+     "latestSummer": 21
+    },
+    "16": {
+     "schoolDay": 8,
+     "nonSchoolDay": 10,
+     "schoolWeek": 40,
+     "offWeek": 50,
+     "earliest": 6,
+     "latest": 23,
+     "latestSummer": null
+    }
+   },
+   "minAge": {
+    "job": 14,
+    "note": "Minors must be at least 14 to work in most jobs in New Jersey, with limited exceptions."
+   },
+   "kinds": {
+    "job": {
+     "permit": true,
+     "text": "Every New Jersey minor under 18 must have working papers before starting work, and employers register online."
+    },
+    "program": {
+     "permit": true,
+     "text": "A paid youth program is a paid job, so the job rule applies. Read the program's own steps for what to turn in."
+    },
+    "odd": {
+     "permit": null,
+     "text": "The pages we read do not say whether odd jobs for neighbors need a permit. Ask the New Jersey Department of Labor."
+    },
+    "own": {
+     "permit": null,
+     "text": "The pages we read do not say whether running your own small business needs a permit. Ask the New Jersey Department of Labor."
+    },
+    "volunteer": {
+     "permit": null,
+     "text": "The pages we read do not say whether volunteering needs a permit. Ask the New Jersey Department of Labor."
+    },
+    "intern": {
+     "permit": null,
+     "text": "We found no page here that sets its own internship rule, so the federal fact sheet is the guide: a for-profit generally must pay an intern who is really an employee. Ask a parent or school counselor to check an unpaid one at a business, and ask the New Jersey Department of Labor."
+    },
+    "family": {
+     "permit": null,
+     "text": "The pages we read do not say about work for a parent's business. Ask the New Jersey Department of Labor."
+    },
+    "acting": {
+     "permit": null,
+     "text": "The pages we read do not say about acting or modeling. Ask the New Jersey Department of Labor."
+    }
+   },
+   "adult": "At 18 you do not need working papers in New Jersey."
+  },
+  "pa": {
+   "name": "Pennsylvania",
+   "read": "Oct 9, 2026",
+   "permit": "Work permit",
+   "needBelow": 18,
+   "issuer": "A school district issuing officer. You may apply in person or virtually.",
+   "steps": [
+    "Get the job first.",
+    "Apply with the issuing officer at your school district.",
+    "Under 16, a parent or guardian fills out a written statement that grants permission and acknowledges the duties and hours (Form LLC-75)."
+   ],
+   "bring": [
+    "Your parent or guardian",
+    "Proof of age",
+    "Form LLC-75 if you are under 16"
+   ],
+   "timing": "Not stated on the pages we read.",
+   "renew": "The Education Department page says the permit lasts until age 18. That came from a page summary, so confirm.",
+   "call": "Pennsylvania Department of Labor and Industry (pa.gov/agencies/dli)",
+   "links": [
+    {
+     "t": "PA Child Labor Act",
+     "u": "https://www.pa.gov/agencies/dli/resources/compliance-laws-and-regulations/labor-management-relations/child-labor-act.html"
+    },
+    {
+     "t": "PA minimum wage FAQ",
+     "u": "https://www.pa.gov/agencies/dli/resources/compliance-laws-and-regulations/labor-management-relations/pennsylvania-s-minimum-wage-act/wage-faqs"
+    },
+    {
+     "t": "PA Education Department: child labor law",
+     "u": "https://www.pa.gov/agencies/education/programs-and-services/schools/school-services/child-labor-law"
+    }
+   ],
+   "hours": {
+    "14": "School in session: 7 a.m. to 7 p.m., up to 3 hours on school days and 18 hours a school week. School out: 7 a.m. to 9 p.m., up to 8 hours a day and 40 a week.",
+    "16": "School in session: 6 a.m. to midnight, up to 8 hours on school days and 28 hours a school week. School out: 6 a.m. to 1 a.m., up to 10 hours a day and 48 a week."
+   },
+   "wage": "$7.25 an hour.",
+   "limits": {
+    "14": {
+     "schoolDay": 3,
+     "nonSchoolDay": 8,
+     "schoolWeek": 18,
+     "offWeek": 40,
+     "earliest": 7,
+     "latest": 19,
+     "latestSummer": 21
+    },
+    "16": {
+     "schoolDay": 8,
+     "nonSchoolDay": 10,
+     "schoolWeek": 28,
+     "offWeek": 48,
+     "earliest": 6,
+     "latest": 24,
+     "latestSummer": null
+    }
+   },
+   "minAge": {
+    "job": 14,
+    "note": "Minors under 14 may not work in any occupation, with very limited exceptions such as caddies at 12 and news carriers at 11."
+   },
+   "kinds": {
+    "job": {
+     "permit": true,
+     "text": "Pennsylvania requires work permits for minors under 18."
+    },
+    "program": {
+     "permit": true,
+     "text": "A paid youth program is a paid job, so the job rule applies. Read the program's own steps for what to turn in."
+    },
+    "odd": {
+     "permit": null,
+     "text": "The pages we read do not say whether odd jobs for neighbors need a permit. Ask the Pennsylvania Department of Labor and Industry."
+    },
+    "own": {
+     "permit": null,
+     "text": "The pages we read do not say whether running your own small business needs a permit. Ask the Pennsylvania Department of Labor and Industry."
+    },
+    "volunteer": {
+     "permit": null,
+     "text": "The pages we read do not say whether volunteering needs a permit. Ask the Pennsylvania Department of Labor and Industry."
+    },
+    "intern": {
+     "permit": null,
+     "text": "We found no page here that sets its own internship rule, so the federal fact sheet is the guide: a for-profit generally must pay an intern who is really an employee. Ask a parent or school counselor to check an unpaid one at a business, and ask the Pennsylvania Department of Labor and Industry."
+    },
+    "family": {
+     "permit": null,
+     "text": "The pages we read do not say about work for a parent's business. Ask the Pennsylvania Department of Labor and Industry."
+    },
+    "acting": {
+     "permit": null,
+     "text": "The pages we read do not say about acting or modeling. Ask the Pennsylvania Department of Labor and Industry."
+    }
+   },
+   "adult": "At 18 you do not need a work permit in Pennsylvania."
+  },
+  "ma": {
+   "name": "Massachusetts",
+   "read": "Oct 9, 2026",
+   "permit": "Work permit (employment permit)",
+   "needBelow": 18,
+   "issuer": "The superintendent of schools' office.",
+   "steps": [
+    "Get the job first.",
+    "Apply at the superintendent of schools' office. At 14 or 15, a doctor must fill out the Physician's Certificate of Health part.",
+    "Give the permit to your employer."
+   ],
+   "bring": [
+    "Your parent or guardian",
+    "Proof of age",
+    "A doctor's certificate if you are 14 or 15"
+   ],
+   "timing": "Not stated on the pages we read.",
+   "renew": "Not stated on the pages we read.",
+   "call": "Massachusetts Attorney General's Fair Labor Division (mass.gov blocked our reader, so confirm there)",
+   "links": [
+    {
+     "t": "City of Boston with the Attorney General: youth worker rights",
+     "u": "https://www.boston.gov/departments/youth-employment-and-opportunity/know-your-rights-and-responsibilities-youth-worker"
+    },
+    {
+     "t": "Boston: landing a summer job",
+     "u": "https://www.boston.gov/departments/youth-employment-and-opportunity/landing-summer-job-or-internship"
+    },
+    {
+     "t": "Massachusetts law on employing children",
+     "u": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter149/Section86"
+    }
+   ],
+   "hours": {
+    "14": "School year: 7 a.m. to 7 p.m. and not during school hours, up to 3 hours a school day and 18 a week. Summer (July 1 to Labor Day): 7 a.m. to 9 p.m., up to 8 hours a day and 40 a week.",
+    "16": "6 a.m. to 10 p.m. on school nights, up to 48 hours a week and 9 hours a day. After 8 p.m. an adult must be at the workplace to supervise 14 to 17 year olds."
+   },
+   "wage": "At least $15.00 an hour under state law. We could not read the current 2026 rate because mass.gov blocked our reader.",
+   "limits": {
+    "14": {
+     "schoolDay": 3,
+     "nonSchoolDay": 8,
+     "schoolWeek": 18,
+     "offWeek": 40,
+     "earliest": 7,
+     "latest": 19,
+     "latestSummer": 21
+    },
+    "16": {
+     "schoolDay": 9,
+     "nonSchoolDay": 9,
+     "schoolWeek": 48,
+     "offWeek": 48,
+     "earliest": 6,
+     "latest": 22,
+     "latestSummer": null
+    }
+   },
+   "minAge": {
+    "job": 14,
+    "note": "A person may not employ a child other than one over 14 who has an employment permit from the superintendent of schools."
+   },
+   "kinds": {
+    "job": {
+     "permit": true,
+     "text": "If you are under 18 you must get a work permit before you start a new job."
+    },
+    "program": {
+     "permit": true,
+     "text": "A paid youth program is a paid job, so the job rule applies. Read the program's own steps for what to turn in."
+    },
+    "odd": {
+     "permit": null,
+     "text": "The pages we read do not say whether odd jobs for neighbors need a permit. Ask the Massachusetts Attorney General's Fair Labor Division."
+    },
+    "own": {
+     "permit": null,
+     "text": "The pages we read do not say whether running your own small business needs a permit. Ask the Massachusetts Attorney General's Fair Labor Division."
+    },
+    "volunteer": {
+     "permit": null,
+     "text": "The pages we read do not say whether volunteering needs a permit. Ask the Massachusetts Attorney General's Fair Labor Division."
+    },
+    "intern": {
+     "permit": null,
+     "text": "We found no page here that sets its own internship rule, so the federal fact sheet is the guide: a for-profit generally must pay an intern who is really an employee. Ask a parent or school counselor to check an unpaid one at a business, and ask the Massachusetts Attorney General's Fair Labor Division."
+    },
+    "family": {
+     "permit": null,
+     "text": "The pages we read do not say about work for a parent's business. Ask the Massachusetts Attorney General's Fair Labor Division."
+    },
+    "acting": {
+     "permit": null,
+     "text": "The pages we read do not say about acting or modeling. Ask the Massachusetts Attorney General's Fair Labor Division."
+    }
+   },
+   "adult": "At 18 you do not need a youth work permit in Massachusetts."
+  },
+  "bc": {
+   "name": "British Columbia (Canada)",
+   "read": "Oct 9, 2026",
+   "permit": "Written parental consent (and a child employment permit for some ages and jobs)",
+   "needBelow": 16,
+   "issuer": "Your parent or guardian gives written permission. The employer keeps it on file.",
+   "steps": [
+    "A parent or guardian gives written permission for you to work. The employer keeps a record.",
+    "You must work under the direct supervision of someone who is at least 19.",
+    "Ages 12 to 15 need a permit unless the work is light work such as lifeguard, camp leader, server, cashier or tutor. Ask the Employment Standards Branch."
+   ],
+   "bring": [
+    "Written permission from a parent or guardian"
+   ],
+   "timing": "Not stated on the pages we read.",
+   "renew": "Not stated on the pages we read.",
+   "call": "BC Employment Standards Branch (gov.bc.ca, young people)",
+   "links": [
+    {
+     "t": "BC: hiring young people",
+     "u": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/hiring/young-people"
+    },
+    {
+     "t": "BC minimum wage",
+     "u": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/wages/minimum-wage"
+    }
+   ],
+   "hours": {
+    "14": "Children under 15 cannot work during school hours, more than 4 hours on school days, more than 7 hours on a non-school day, more than 20 hours in a week with 5 school days, or more than 35 hours a week when school is not in session.",
+    "16": "Employers of children 15 or older follow the standard rules for hours of work."
+   },
+   "wage": "C$18.25 an hour as of June 1, 2026.",
+   "limits": {
+    "14": null,
+    "16": null
+   },
+   "minAge": {
+    "job": 14,
+    "note": "Children 12 and 13, and 14 and 15, need a permit unless they do light work only."
+   },
+   "kinds": {
+    "job": {
+     "permit": null,
+     "text": "In British Columbia a parent or guardian must give written permission for a child to work, and ages 12 to 15 may need a child employment permit unless the work is light work. Ask the Employment Standards Branch."
+    },
+    "program": {
+     "permit": null,
+     "text": "A paid youth program is a paid job, so the job rule applies. Read the program's own steps for what to turn in."
+    },
+    "odd": {
+     "permit": null,
+     "text": "The pages we read do not say whether odd jobs for neighbors need a permit. Ask the BC Employment Standards Branch."
+    },
+    "own": {
+     "permit": null,
+     "text": "The pages we read do not say whether running your own small business needs a permit. Ask the BC Employment Standards Branch."
+    },
+    "volunteer": {
+     "permit": null,
+     "text": "The pages we read do not say whether volunteering needs a permit. Ask the BC Employment Standards Branch."
+    },
+    "intern": {
+     "permit": null,
+     "text": "We found no page here that sets its own internship rule, so the federal fact sheet is the guide: a for-profit generally must pay an intern who is really an employee. Ask a parent or school counselor to check an unpaid one at a business, and ask the BC Employment Standards Branch."
+    },
+    "family": {
+     "permit": null,
+     "text": "The pages we read do not say about work for a parent's business. Ask the BC Employment Standards Branch."
+    },
+    "acting": {
+     "permit": null,
+     "text": "The pages we read do not say about acting or modeling. Ask the BC Employment Standards Branch."
+    }
+   },
+   "adult": "At 16 and older the employer follows the regular employment standards, with the parent consent rule for under 19 limited to supervision."
+  },
+  "oh": {
+   "name": "Ohio",
+   "read": "Oct 9, 2026",
+   "permit": "Working permit (age and schooling certificate)",
+   "needBelow": 18,
+   "issuer": "Your school issues it, from a form you complete with your employer and a parent.",
+   "steps": [
+    "Get the job first. Complete the pre-application form with your potential employer and your parent or legal guardian.",
+    "Take the form to your school. The school issues the permit based on the form.",
+    "Ages 16 and 17 need no permit for nonagricultural, nonhazardous work during summer vacation. They need proof of age and a signed parent or guardian consent statement."
+   ],
+   "bring": [
+    "The pre-application form",
+    "Your parent or guardian",
+    "Proof of age",
+    "A doctor's certificate, if the form asks for one"
+   ],
+   "timing": "Not stated on the pages we read.",
+   "renew": "Not stated on the pages we read.",
+   "call": "Ohio Department of Commerce, Minor Work Permits (minorworkpermit.com.ohio.gov)",
+   "links": [
+    {
+     "t": "Ohio minor work permits",
+     "u": "https://minorworkpermit.com.ohio.gov/"
+    },
+    {
+     "t": "Ohio minor labor law poster (2016)",
+     "u": "https://dam.assets.ohio.gov/image/upload/com.ohio.gov/documents/laws_MLLPoster.pdf"
+    },
+    {
+     "t": "Ohio law on minor hours (effective Oct 9, 2026)",
+     "u": "https://codes.ohio.gov/ohio-revised-code/section-4109.07"
+    },
+    {
+     "t": "Ohio law on age and schooling certificates",
+     "u": "https://codes.ohio.gov/ohio-revised-code/section-4109.02"
+    }
+   ],
+   "hours": {
+    "14": "Under 16: not before 7 a.m. Not after 9 p.m. from June 1 to Sept 1, or after 7 p.m. at other times (7 to 9 p.m. the night before a non-school day with parent approval). Up to 3 hours on a school day, 18 hours in a school week, 8 hours on a non-school day, 40 hours when school is out. A 30 minute rest after 5 hours in a row. This law took effect Oct 9, 2026.",
+    "16": "Ages 16 and 17 may not work after 11 p.m. on a night before a school day, or before 7 a.m. on a school day (6 a.m. if not employed after 8 p.m. the night before)."
+   },
+   "wage": "We could not confirm Ohio's 2026 minimum wage because the state's website was down when we checked. Under 16, the employer must pay at least the federal $7.25.",
+   "limits": {
+    "14": {
+     "schoolDay": 3,
+     "nonSchoolDay": 8,
+     "schoolWeek": 18,
+     "offWeek": 40,
+     "earliest": 7,
+     "latest": 19,
+     "latestSummer": 21
+    },
+    "16": null
+   },
+   "minAge": {
+    "job": 14,
+    "note": "Every minor 14 through 17 needs a working permit under Ohio law. We did not find a Commerce page that states the minimum age outright."
+   },
+   "kinds": {
+    "job": {
+     "permit": true,
+     "text": "Every minor 14 through 17 needs a working permit unless Ohio law says otherwise. Ages 16 and 17 need none for nonagricultural, nonhazardous summer-vacation work."
+    },
+    "program": {
+     "permit": true,
+     "text": "A paid youth program is a paid job, so the job rule applies. Read the program's own steps for what to turn in."
+    },
+    "odd": {
+     "permit": null,
+     "text": "The pages we read do not say whether odd jobs for neighbors need a permit. Ask the Ohio Department of Commerce."
+    },
+    "own": {
+     "permit": null,
+     "text": "The pages we read do not say whether running your own small business needs a permit. Ask the Ohio Department of Commerce."
+    },
+    "volunteer": {
+     "permit": false,
+     "text": "Minors who work for a nonprofit organization and receive no compensation are exempt from the permit rule."
+    },
+    "intern": {
+     "permit": null,
+     "text": "We found no page here that sets its own internship rule, so the federal fact sheet is the guide: a for-profit generally must pay an intern who is really an employee. Ask a parent or school counselor to check an unpaid one at a business, and ask the Ohio Department of Commerce."
+    },
+    "family": {
+     "permit": null,
+     "text": "The pages we read do not say about work for a parent's business. Ask the Ohio Department of Commerce."
+    },
+    "acting": {
+     "permit": null,
+     "text": "The pages we read do not say about acting or modeling. Ask the Ohio Department of Commerce."
+    }
+   },
+   "adult": "At 18 you do not need a minor work permit in Ohio."
+  },
+  "md": {
+   "name": "Maryland",
+   "read": "Oct 9, 2026",
+   "permit": "Work permit",
+   "needBelow": 18,
+   "issuer": "The state: see the Maryland Division of Labor and Industry page for how to apply.",
+   "steps": [
+    "Get the job offer first. Maryland does not issue permits until you are offered a job.",
+    "Apply for the work permit through the Maryland Division of Labor and Industry.",
+    "Give a copy to your employer before you start."
+   ],
+   "bring": [
+    "Your parent or guardian",
+    "Proof of age",
+    "The job offer details"
+   ],
+   "timing": "Not stated on the pages we read.",
+   "renew": "Not stated on the pages we read.",
+   "call": "Maryland Division of Labor and Industry (labor.maryland.gov)",
+   "links": [
+    {
+     "t": "Maryland: employment of minors",
+     "u": "https://labor.maryland.gov/LABOR/wages/empm.shtml"
+    },
+    {
+     "t": "Maryland: hours and wages facts",
+     "u": "https://labor.maryland.gov/labor/wages/wagehrfacts.shtml"
+    }
+   ],
+   "hours": {
+    "14": "At most employers the federal limits apply and they are stricter: school days up to 3 hours, school weeks up to 18 hours, non-school days up to 8 hours, 40 a week when school is out, between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). This matches Maryland's page.",
+    "16": "Ages 16 and 17 may not spend more than 12 hours in a combination of school and work each day, and must have at least 8 straight hours off from work and school in each 24 hours."
+   },
+   "wage": "$15.00 an hour statewide. Employees under 18 must earn at least 85 percent of the state rate. Prince George's County is $15.30 from July 1, 2026, and Montgomery County is $15.95, $16.50 or $18.00 depending on the employer's size.",
+   "limits": {
+    "14": {
+     "schoolDay": 3,
+     "nonSchoolDay": 8,
+     "schoolWeek": 18,
+     "offWeek": 40,
+     "earliest": 7,
+     "latest": 19,
+     "latestSummer": 21
+    },
+    "16": null
+   },
+   "minAge": {
+    "job": 14,
+    "note": "Work permits are not issued to minors under the age of 14."
+   },
+   "kinds": {
+    "job": {
+     "permit": true,
+     "text": "Work permits are required for all minors under 18 to work in Maryland. They are not issued to minors under 14, and not until a job has been offered."
+    },
+    "program": {
+     "permit": true,
+     "text": "A paid youth program is a paid job, so the job rule applies. Read the program's own steps for what to turn in."
+    },
+    "odd": {
+     "permit": null,
+     "text": "The pages we read do not say whether odd jobs for neighbors need a permit. Ask the Maryland Division of Labor and Industry."
+    },
+    "own": {
+     "permit": null,
+     "text": "The pages we read do not say whether running your own small business needs a permit. Ask the Maryland Division of Labor and Industry."
+    },
+    "volunteer": {
+     "permit": null,
+     "text": "The pages we read do not say whether volunteering needs a permit. Ask the Maryland Division of Labor and Industry."
+    },
+    "intern": {
+     "permit": null,
+     "text": "We found no page here that sets its own internship rule, so the federal fact sheet is the guide: a for-profit generally must pay an intern who is really an employee. Ask a parent or school counselor to check an unpaid one at a business, and ask the Maryland Division of Labor and Industry."
+    },
+    "family": {
+     "permit": null,
+     "text": "The pages we read do not say about work for a parent's business. Ask the Maryland Division of Labor and Industry."
+    },
+    "acting": {
+     "permit": null,
+     "text": "The pages we read do not say about acting or modeling. Ask the Maryland Division of Labor and Industry."
+    }
+   },
+   "adult": "At 18 you do not need a minor work permit in Maryland."
+  },
+  "va": {
+   "name": "Virginia",
+   "read": "Oct 9, 2026",
+   "permit": "Employment certificate (ages 14 and 15)",
+   "needBelow": 16,
+   "issuer": "Your school division. Do not start until you have a firm job offer.",
+   "steps": [
+    "Get a firm offer of employment first.",
+    "Start the employment certificate registration only after the offer.",
+    "Give the certificate to your employer before you work."
+   ],
+   "bring": [
+    "Your parent or guardian",
+    "Proof of age",
+    "The job offer details"
+   ],
+   "timing": "Not stated on the pages we read.",
+   "renew": "Not stated on the pages we read.",
+   "call": "Virginia Department of Labor and Industry (doli.virginia.gov)",
+   "links": [
+    {
+     "t": "Virginia: youth employment",
+     "u": "https://doli.virginia.gov/programs/labor-law/youth-employment/"
+    },
+    {
+     "t": "Virginia labor laws",
+     "u": "https://doli.virginia.gov/programs/labor-law/virginia-labor-laws/"
+    },
+    {
+     "t": "Virginia minimum wage poster 2026",
+     "u": "https://doli.virginia.gov/wp-content/uploads/2025/12/2026-Virginia-Minimum-Wage-Poster.pdf"
+    }
+   ],
+   "hours": {
+    "14": "At most employers the federal limits apply and they are stricter: school days up to 3 hours, school weeks up to 18 hours, non-school days up to 8 hours, 40 a week when school is out, between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). This matches Virginia's page.",
+    "16": "The Virginia page lists no hour limits for 16 and 17 year olds. They may not work in particularly hazardous jobs."
+   },
+   "wage": "$12.77 an hour as of Jan 1, 2026.",
+   "limits": {
+    "14": {
+     "schoolDay": 3,
+     "nonSchoolDay": 8,
+     "schoolWeek": 18,
+     "offWeek": 40,
+     "earliest": 7,
+     "latest": 19,
+     "latestSummer": 21
+    },
+    "16": null
+   },
+   "minAge": {
+    "job": 14,
+    "note": "A minor may generally work once they have reached the age of fourteen."
+   },
+   "kinds": {
+    "job": {
+     "permit": true,
+     "text": "All 14 and 15 year old workers in Virginia must get an Employment Certificate before doing any work. The page says nothing about 16 and 17 year olds needing one."
+    },
+    "program": {
+     "permit": true,
+     "text": "A paid youth program is a paid job, so the job rule applies. Read the program's own steps for what to turn in."
+    },
+    "odd": {
+     "permit": null,
+     "text": "The pages we read do not say whether odd jobs for neighbors need a permit. Ask the Virginia Department of Labor and Industry."
+    },
+    "own": {
+     "permit": null,
+     "text": "The pages we read do not say whether running your own small business needs a permit. Ask the Virginia Department of Labor and Industry."
+    },
+    "volunteer": {
+     "permit": null,
+     "text": "The pages we read do not say whether volunteering needs a permit. Ask the Virginia Department of Labor and Industry."
+    },
+    "intern": {
+     "permit": null,
+     "text": "We found no page here that sets its own internship rule, so the federal fact sheet is the guide: a for-profit generally must pay an intern who is really an employee. Ask a parent or school counselor to check an unpaid one at a business, and ask the Virginia Department of Labor and Industry."
+    },
+    "family": {
+     "permit": null,
+     "text": "The pages we read do not say about work for a parent's business. Ask the Virginia Department of Labor and Industry."
+    },
+    "acting": {
+     "permit": null,
+     "text": "The pages we read do not say about acting or modeling. Ask the Virginia Department of Labor and Industry."
+    }
+   },
+   "adult": "At 16 and older you do not need an employment certificate in Virginia, on the pages we read."
   }
  },
  "kinds": [

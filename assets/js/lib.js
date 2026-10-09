@@ -199,7 +199,7 @@
     oakland: "ca", berkeley: "ca", alameda: "ca", "east-bay": "ca", "san-francisco": "ca", statewide: "ca",
     "orange-county": "ca", "los-angeles": "ca", "inland-empire": "ca", "san-diego": "ca",
     atlanta: "ga", georgia: "ga", "new-york-city": "ny", "new-york-state": "ny", chicago: "il", illinois: "il",
-    seattle: "wa", washington: "wa", vancouver: "", "british-columbia": "", austin: "tx", texas: "tx", "twin-cities": "mn", minnesota: "mn", champaign: "il", madison: "wi", wisconsin: "wi", lafayette: "in", bloomington: "in", indiana: "in", columbus: "oh", cincinnati: "oh", ohio: "oh", "ann-arbor": "mi", lansing: "mi", michigan: "mi", triangle: "nc", "north-carolina": "nc", "college-park": "md", maryland: "md", fairfax: "va", charlottesville: "va", blacksburg: "va", virginia: "va", "new-brunswick": "nj", "new-jersey": "nj", pittsburgh: "pa", philadelphia: "pa", pennsylvania: "pa", boston: "ma", massachusetts: "ma", "santa-barbara": "ca", merced: "ca",
+    seattle: "wa", washington: "wa", vancouver: "bc", "british-columbia": "bc", austin: "tx", texas: "tx", "twin-cities": "mn", minnesota: "mn", champaign: "il", madison: "wi", wisconsin: "wi", lafayette: "in", bloomington: "in", indiana: "in", columbus: "oh", cincinnati: "oh", ohio: "oh", "ann-arbor": "mi", lansing: "mi", michigan: "mi", triangle: "nc", "north-carolina": "nc", "college-park": "md", maryland: "md", fairfax: "va", charlottesville: "va", blacksburg: "va", virginia: "va", "new-brunswick": "nj", "new-jersey": "nj", pittsburgh: "pa", philadelphia: "pa", pennsylvania: "pa", boston: "ma", massachusetts: "ma", "santa-barbara": "ca", merced: "ca",
     virtual: "", national: ""
   };
   function stateOf(e) {
@@ -215,7 +215,7 @@
     verdict: need, none, ask (the pages we read do not say), young, adult, or nostate.
   */
   /* States whose rules are in data/permits.json. Add a state here in the same change that adds it there (a test checks they match). */
-  var PERMIT_STATES = ["ca", "ga", "ny", "il"];
+  var PERMIT_STATES = ["ca", "ga", "ny", "il", "wa", "tx", "mn", "wi", "in", "oh", "mi", "nc", "md", "va", "nj", "pa", "ma", "bc"];
   function permitFor(data, st, age, kind) {
     var s = data && data.states && data.states[st];
     if (!s) return { verdict: "nostate", headline: "We have not read your state yet", text: "We have read California, Georgia, New York and Illinois. Ask your school office or your state labor department. The US Department of Labor lists them at dol.gov/agencies/whd/contact/state-labor-offices." };

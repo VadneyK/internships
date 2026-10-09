@@ -36,7 +36,7 @@
       lastText = "My availability\n" + (lines.length ? lines.join("\n") : "(none yet)") + "\nAbout " + r.total + " hours a week. I cannot work: " + (no.length ? no.join(", ") : "none") + ".";
       var h = "<h3>" + r.total + " hours a week offered</h3><p>" + (lines.length ? G.esc(lines.join(". ")) + "." : "No days chosen yet.") + "</p>";
       if (!age || !st) h += '<p class="muted">Pick your age and state to check the hour limits.</p>';
-      else if (!r.limited) h += "<p><b>No state or federal hour limit applies at " + G.esc(age) + "</b> on the pages we read. Dangerous jobs are still off limits. " + G.esc(pm.states[st].hours["16"] || "") + "</p>";
+      else if (!r.limited) h += "<p><b>We found no daily or weekly hour cap for age " + G.esc(age) + " in " + G.esc(pm.states[st].name) + "</b> on the pages we read. Dangerous jobs are still off limits. " + G.esc(pm.states[st].hours[+age >= 16 ? "16" : "14"] || "") + "</p>";
       else if (r.problems.length) h += '<p><b>Heads up:</b></p><ul>' + r.problems.map(function (x) { return "<li>" + G.esc(x) + "</li>"; }).join("") + "</ul><p class=\"small muted\">Your plan is what you offer. Ask to be scheduled for less. Limits from the " + G.esc(pm.states[st].name) + " pages on the <a href=\"permit.html?state=" + G.esc(st) + "\">permit finder</a>.</p>";
       else h += "<p><b>Within the limits we found</b> for age " + G.esc(age) + " in " + G.esc(pm.states[st].name) + ". " + G.esc(pm.states[st].hours[+age >= 16 ? "16" : "14"] || "") + "</p>";
       $("aOut").innerHTML = h;

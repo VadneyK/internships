@@ -77,7 +77,8 @@
 
   fetch("data/permits.json").then(function (r) { return r.json(); }).then(function (d) {
     data = d;
-    Object.keys(d.states).forEach(function (k) { opt($("pState"), k, d.states[k].name); });
+    var first = ["ca", "ga", "ny", "il"], rest = Object.keys(d.states).filter(function (k) { return first.indexOf(k) < 0; }).sort(function (a, b) { return d.states[a].name < d.states[b].name ? -1 : 1; });
+    first.concat(rest).forEach(function (k) { opt($("pState"), k, d.states[k].name); });
     for (var a = 12; a <= 17; a++) opt($("pAge"), String(a), String(a));
     opt($("pAge"), "18", "18 or older");
     d.kinds.forEach(function (k) { opt($("pKind"), k[0], k[1]); });

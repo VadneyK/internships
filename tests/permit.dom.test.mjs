@@ -12,7 +12,7 @@ async function pick(page, st, age, kind) {
 test("permit: loads with no errors and asks for all three answers", async () => {
   const p = await loadPage("permit.html"); await tick();
   assert.deepEqual(p.errors, []);
-  assert.equal(p.document.getElementById("pState").options.length, 5);
+  assert.ok(p.document.getElementById("pState").options.length >= 19, "four first states, fourteen more, and the prompt");
   assert.match(p.document.getElementById("pOut").textContent, /Pick all three/);
   assert.equal(p.document.getElementById("packetSec").hidden, true);
 });
@@ -50,6 +50,15 @@ test("permit: the page can be opened from a program card link", async () => {
 });
 
 test("permit: a state we have not read says so instead of a blank page", async () => {
-  const p = await loadPage("permit.html", { search: "?state=wa&age=15&kind=job" }); await tick();
+  const p = await loadPage("permit.html", { search: "?state=zz&age=15&kind=job" }); await tick();
   assert.match(p.document.getElementById("pOut").textContent, /have not read your state/);
+});
+
+test("permit: Washington, Texas, Michigan and Ohio give a plain answer with sources", async () => {
+  for (const [st, want] of [["wa", /authorization form/i], ["tx", /does not require a work permit|Certificate of Age/i], ["mi", /valid work permit/i], ["oh", /working permit/i]]) {
+    const p = await loadPage("permit.html", { search: "?state=" + st + "&age=15&kind=job" }); await tick(150);
+    assert.match(p.document.getElementById("pOut").textContent, want, st);
+    assert.doesNotMatch(p.document.getElementById("pOut").textContent, /undefined|NaN/);
+    assert.ok(p.document.querySelectorAll("#pOut a").length >= 2, st + " should link its sources");
+  }
 });
