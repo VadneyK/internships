@@ -168,7 +168,7 @@ test("leaders: each print button calls print only after print-one is set, with j
     const c = calls[0];
     assert.equal(c.bodyHasPrintOne, true, "body should have print-one when print is called for " + sheet);
     assert.equal(c.rootChildCount, 1, "printRoot should hold one sheet for " + sheet);
-    assert.equal(c.rootFirstId, sheet, "printRoot should hold " + sheet);
+    assert.equal(c.rootFirstId, "", "the print copy must not repeat the sheet id " + sheet);
     assert.ok(c.rootText.includes(marker), sheet + " print layer should include its text");
     assert.equal(c.title, btn.getAttribute("data-title"), "document title should be the sheet title during print");
 

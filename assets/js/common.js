@@ -57,7 +57,10 @@
     if (document.getElementById("printRoot")) return; /* a print is already open */
     var root = document.createElement("div");
     root.id = "printRoot";
-    root.appendChild(node.cloneNode(true));
+    var copy = node.cloneNode(true);
+    copy.removeAttribute("id");
+    copy.querySelectorAll("[id]").forEach(function (n) { n.removeAttribute("id"); }); /* no duplicate ids while printing */
+    root.appendChild(copy);
     document.body.appendChild(root);
     document.body.classList.add("print-one");
     var oldTitle = document.title;
