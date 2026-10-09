@@ -1,0 +1,90 @@
+title: Apply and Interview: Availability, Practice Questions, References and Thank-You Note
+desc: A free prep sheet for a first job: plan your availability against the hour limits for your age, practice 12 common interview questions, line up references, and write a thank-you note. Sourced to state workforce agencies and libraries.
+scripts: interview
+navparent: resume
+---
+<section style="padding-block:2rem 1rem;">
+  <div class="wrap">
+    <p class="small muted" style="margin:0 0 .6rem;"><a href="resume.html">Resume</a> &rsaquo; Apply and interview</p>
+    <span class="tag y eyebrow">Before you apply</span>
+    <h1 style="font-size:clamp(2.2rem,7vw,4rem);">Apply and <span class="orange">interview</span></h1>
+    <p class="lede">Four things make a first application strong: the days and hours you can work, a few people who already said yes to be a reference, a short answer to &ldquo;tell me about yourself,&rdquo; and two questions to ask. Everything you type stays in this browser. Last read Oct 9, 2026.</p>
+    <div class="callout plain small" style="margin-top:1rem;max-width:52rem;">
+      <p id="evidence"></p>
+    </div>
+    <ol class="steps row" id="appTips" aria-label="Application tips" style="margin-top:1rem;"></ol>
+    <p class="small muted" id="appSrc"></p>
+  </div>
+</section>
+
+<section id="availability" style="background:var(--paper-2); border-block:3px solid var(--edge);">
+  <div class="wrap">
+    <h2>1. Your days and hours</h2>
+    <p>Pick the hours you could work each day. We compare them with the hour limits for your age and state. Your availability is not your schedule: an employer can schedule you for less, and the limits apply to the hours you actually work.</p>
+    <div class="grid g3" style="align-items:end;max-width:52rem;">
+      <div class="field"><label for="aAge">Your age</label><select id="aAge"><option value="">Choose</option></select></div>
+      <div class="field"><label for="aState">State</label><select id="aState"><option value="">Choose</option></select></div>
+      <div class="field"><label for="aSchool">When</label><select id="aSchool"><option value="1">School is in session</option><option value="0">School is out (summer, break)</option></select></div>
+    </div>
+    <div class="tablewrap" tabindex="0" role="region" aria-label="Weekly availability"><table>
+      <thead><tr><th>Day</th><th>From</th><th>To</th></tr></thead>
+      <tbody id="aRows"></tbody>
+    </table></div>
+    <div class="card" id="aOut" aria-live="polite" style="margin-top:1rem;"><p class="muted">Pick your age and state, then set your hours.</p></div>
+    <p class="row"><button class="btn sm" type="button" id="aCopy">Copy my availability</button> <button class="btn sm alt" type="button" id="aPrint">Print my prep sheet</button></p>
+  </div>
+</section>
+
+<section id="practice">
+  <div class="wrap">
+    <h2>2. Practice questions</h2>
+    <p>Twelve questions teens get asked. Write a few words for each, not a script. Your notes are saved on this device only.</p>
+    <div class="grid g2" id="qList" style="align-items:start;"></div>
+    <div class="callout plain" style="margin-top:1rem;"><p id="payNote"></p></div>
+  </div>
+</section>
+
+<section id="ask" style="background:var(--paper-2); border-block:3px solid var(--edge);">
+  <div class="wrap">
+    <h2>3. Ask, bring and wear</h2>
+    <div class="grid g2" style="align-items:start;">
+      <article class="card"><h3>Two questions to ask them</h3><p class="small muted">Pick two.</p><ul id="askList"></ul><p class="small muted" id="askSrc"></p></article>
+      <article class="card"><h3>The day of</h3><ul id="dayList"></ul></article>
+    </div>
+  </div>
+</section>
+
+<section id="references">
+  <div class="wrap">
+    <h2>4. References</h2>
+    <ul id="refRules"></ul>
+    <p class="small muted" id="refGap"></p>
+    <div id="refRows" class="grid g2" style="align-items:start;"></div>
+  </div>
+</section>
+
+<section id="thanks" style="background:var(--paper-2); border-block:3px solid var(--edge);">
+  <div class="wrap">
+    <h2>5. Thank-you note</h2>
+    <p id="thanksTiming"></p>
+    <div class="grid g2" style="align-items:start;">
+      <article class="card">
+        <div class="field"><label for="tTo">Interviewer&rsquo;s name</label><input id="tTo" type="text" autocomplete="off"></div>
+        <div class="field"><label for="tJob">The job</label><input id="tJob" type="text" autocomplete="off" placeholder="for example, cashier at the garden center"></div>
+        <div class="field"><label for="tHelp">One way you can help</label><input id="tHelp" type="text" autocomplete="off" placeholder="for example, I can work weekends"></div>
+        <div class="field"><label for="tName">Your first name</label><input id="tName" type="text" autocomplete="off"></div>
+      </article>
+      <article class="card"><pre id="tText" style="white-space:pre-wrap;font:inherit;"></pre>
+        <p class="row"><a class="btn sm" id="tMail" href="#">Open in my email app</a> <button class="btn sm alt" type="button" id="tCopy">Copy the note</button></p></article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>What we could not find</h2>
+    <ul id="iGaps"></ul>
+    <div id="iPrint" class="packet" hidden></div>
+    <p class="small muted">Also see <a href="resume.html">build a resume</a>, <a href="playbook.html">write your message</a> and the <a href="ready.html">Get ready checklist</a>.</p>
+  </div>
+</section>

@@ -81,7 +81,28 @@
      "text": "Acting and modeling use a different permit from the Labor Commissioner, not the school permit. Call 833-526-4636 before you accept."
     }
    },
-   "adult": "Graduates of high school and teens with a certificate of proficiency do not need a permit. At 18 you do not need one."
+   "adult": "Graduates of high school and teens with a certificate of proficiency do not need a permit. At 18 you do not need one.",
+   "limits": {
+    "14": {
+     "schoolDay": 3,
+     "nonSchoolDay": 8,
+     "schoolWeek": 18,
+     "offWeek": 40,
+     "earliest": 7,
+     "latest": 19,
+     "latestSummer": 21
+    },
+    "16": {
+     "schoolDay": 4,
+     "nonSchoolDay": 8,
+     "schoolWeek": 48,
+     "offWeek": 48,
+     "earliest": 5,
+     "latest": 22,
+     "latestSummer": null
+    },
+    "12": null
+   }
   },
   "ga": {
    "name": "Georgia",
@@ -164,7 +185,19 @@
      "text": "Georgia has its own page for minors in entertainment. Start at dol.georgia.gov/employers/child-labor-and-minors-entertainment and ask Georgia DOL Child Labor: 1-877-709-8185."
     }
    },
-   "adult": "At 16 and older you do not need an Employment Certificate in Georgia."
+   "adult": "At 16 and older you do not need an Employment Certificate in Georgia.",
+   "limits": {
+    "14": {
+     "schoolDay": 3,
+     "nonSchoolDay": 8,
+     "schoolWeek": 18,
+     "offWeek": 40,
+     "earliest": 7,
+     "latest": 19,
+     "latestSummer": 21
+    },
+    "16": null
+   }
   },
   "ny": {
    "name": "New York",
@@ -244,7 +277,28 @@
      "text": "Child performers have separate rules in New York that we did not read. Ask the State Department of Labor: 888-469-7365."
     }
    },
-   "adult": "At 18 you do not need working papers in New York."
+   "adult": "At 18 you do not need working papers in New York.",
+   "limits": {
+    "14": {
+     "schoolDay": 3,
+     "nonSchoolDay": 8,
+     "schoolWeek": 18,
+     "offWeek": 40,
+     "earliest": 7,
+     "latest": 19,
+     "latestSummer": 21
+    },
+    "16": {
+     "schoolDay": 4,
+     "nonSchoolDay": 8,
+     "schoolWeek": 28,
+     "offWeek": 48,
+     "earliest": 6,
+     "latest": 22,
+     "latestSummer": null,
+     "weekdayOnly": true
+    }
+   }
   },
   "il": {
    "name": "Illinois",
@@ -324,7 +378,19 @@
      "text": "Illinois has separate rules for child performers that we did not read. Ask Illinois DOL child labor questions: 312-793-5570."
     }
    },
-   "adult": "At 16 and older you do not need a certificate in Illinois."
+   "adult": "At 16 and older you do not need a certificate in Illinois.",
+   "limits": {
+    "14": {
+     "schoolDay": 3,
+     "nonSchoolDay": 8,
+     "schoolWeek": 18,
+     "offWeek": 40,
+     "earliest": 7,
+     "latest": 19,
+     "latestSummer": 21
+    },
+    "16": null
+   }
   }
  },
  "kinds": [

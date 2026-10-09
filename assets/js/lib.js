@@ -236,6 +236,34 @@
     return Object.assign(base, { verdict: "ask", headline: "Check before you start", text: k.text });
   }
 
+  /*
+    Check a weekly availability plan against the hour limits we read for an age and state.
+    limits is permits.json states[st].limits; days is 7 items (Monday first) of {from, to} in 24 hour numbers or null.
+    This checks the hours a teen offers, which is more than they would be scheduled, so it is a heads-up, not a ruling.
+  */
+  var DAY_NAMES = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+  function hoursCheck(limits, age, inSchool, days) {
+    var a = +age, band = a >= 16 ? "16" : a >= 14 ? "14" : "";
+    var total = 0, per = days.map(function (d) { return d && d.from != null && d.to != null && d.to > d.from ? d.to - d.from : 0; });
+    per.forEach(function (h) { total += h; });
+    var out = { total: total, perDay: per, problems: [], limited: false };
+    var lim = band && limits ? limits[band] : null;
+    if (!lim) return out;
+    out.limited = true;
+    days.forEach(function (d, i) {
+      if (!per[i]) return;
+      var schoolDay = inSchool && (lim.weekdayOnly ? i <= 3 : i <= 4);
+      var max = schoolDay ? lim.schoolDay : lim.nonSchoolDay;
+      if (per[i] > max) out.problems.push(DAY_NAMES[i] + ": " + per[i] + " hours is more than the " + max + " hour limit on " + (schoolDay ? "a school day" : "a day off from school") + " at " + a + ".");
+      var latest = !inSchool && lim.latestSummer ? lim.latestSummer : lim.latest;
+      if (d.from < lim.earliest) out.problems.push(DAY_NAMES[i] + ": starting before " + lim.earliest + " a.m. is not allowed at " + a + ".");
+      if (d.to > latest) out.problems.push(DAY_NAMES[i] + ": working past " + (latest > 12 ? latest - 12 + " p.m." : latest + " a.m.") + " is not allowed at " + a + ".");
+    });
+    var cap = inSchool ? lim.schoolWeek : lim.offWeek;
+    if (total > cap) out.problems.push("The week adds up to " + total + " hours, more than the " + cap + " hour limit " + (inSchool ? "while school is in session" : "when school is out") + " at " + a + ".");
+    return out;
+  }
+
   function hubsOf(e) {
     var out = [];
     HUBS.forEach(function (h) {
@@ -433,6 +461,6 @@
     effStatus: effStatus, futureDeadline: futureDeadline, isOpenish: isOpenish, isAnytime: isAnytime, ageOk: ageOk,
     matches: matches, rank: rank, compare: compare, sortList: sortList, ageText: ageText,
     STATUSES: STATUSES, toISO: toISO, addDays: addDays, followUpISO: followUpISO, planSummary: planSummary,
-    icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf, STATE_OF: STATE_OF, permitFor: permitFor, PERMIT_STATES: PERMIT_STATES, CITIES: CITIES, AREAS: AREAS, placeRegions: placeRegions, placeLabel: placeLabel, hubsOfPlace: hubsOfPlace
+    icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf, STATE_OF: STATE_OF, permitFor: permitFor, hoursCheck: hoursCheck, PERMIT_STATES: PERMIT_STATES, CITIES: CITIES, AREAS: AREAS, placeRegions: placeRegions, placeLabel: placeLabel, hubsOfPlace: hubsOfPlace
   };
 });
