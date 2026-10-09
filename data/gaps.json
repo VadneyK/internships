@@ -1,8 +1,59 @@
 [
-  {"id": "sv-cities", "hubs": ["sv"], "title": "Some Silicon Valley city programs are missing", "text": "Santa Clara city teen programs, Los Altos city teen programs and Cupertino Leaders in Training are not listed yet. Those city sites block automated checks, so someone has to read them in a browser.", "issue": 1},
-  {"id": "east-bay-cities", "hubs": ["oak"], "title": "Some East Bay city programs are missing", "text": "San Leandro, Union City and Fremont youth commissions, and Pleasanton and Livermore library teen volunteers, are not listed yet.", "issue": 2},
-  {"id": "hospitals", "hubs": ["oak", "sv", "davis"], "title": "Hospital teen volunteering is only partly covered", "text": "Kaiser, Santa Clara Valley Medical Center and Sutter Davis may have teen volunteer programs we could not confirm. Alta Bates Summit and Alameda Health System are 18 and up, so they are not listed.", "issue": 3},
-  {"id": "davis-seasonal", "hubs": ["davis"], "title": "Davis and West Sacramento seasonal jobs are missing", "text": "City lifeguard, camp counselor and recreation leader jobs are not listed, because the city sites block automated checks. Check the City of Davis and City of West Sacramento jobs pages yourself.", "issue": 4},
-  {"id": "confirm-first", "hubs": [], "title": "A few cards say Confirm first", "text": "These cards were not read on the program's own page, usually because the site blocked us. Check the details on the official site before you rely on them.", "issue": 5},
-  {"id": "clubs", "hubs": ["sv", "oak", "davis", "sf"], "title": "Boys and Girls Clubs are only partly covered", "text": "Only Oakland has a teen job card. Other clubs did not post teen details on their official pages.", "issue": 6}
+  {
+    "id": "sv-cities",
+    "hubs": [
+      "sv"
+    ],
+    "title": "Some Silicon Valley city programs are missing",
+    "text": "Los Altos city teen programs and Cupertino Leaders in Training are not listed yet. Those pages did not give ages or dates when we last read them.",
+    "issue": 1
+  },
+  {
+    "id": "east-bay-cities",
+    "hubs": [
+      "oak"
+    ],
+    "title": "Some East Bay city programs are missing",
+    "text": "Pleasanton and Livermore library teen volunteers are not listed yet. San Leandro, Union City and Fremont are listed, but the San Leandro and Fremont commission pages do not say how to apply.",
+    "issue": 2
+  },
+  {
+    "id": "hospitals",
+    "hubs": [
+      "oak",
+      "sv",
+      "davis"
+    ],
+    "title": "Hospital teen volunteering is only partly covered",
+    "text": "Kaiser Permanente and Sutter Davis may have teen volunteer programs we could not confirm. Alta Bates Summit and Alameda Health System are 18 and up, so they are not listed.",
+    "issue": 3
+  },
+  {
+    "id": "davis-seasonal",
+    "hubs": [
+      "davis"
+    ],
+    "title": "Davis and West Sacramento summer jobs are not posted yet",
+    "text": "City lifeguard and camp counselor jobs were not posted when we last checked in October. Seasonal jobs are usually posted in winter and spring, so check the City of Davis and City of West Sacramento job pages then. Davis Junior Basketball is hiring teens now.",
+    "issue": 4
+  },
+  {
+    "id": "confirm-first",
+    "hubs": [],
+    "title": "A few cards say Confirm first",
+    "text": "These cards were not read on the program's own page, usually because the site blocked us. Check the details on the official site before you rely on them.",
+    "issue": 5
+  },
+  {
+    "id": "clubs",
+    "hubs": [
+      "sv",
+      "oak",
+      "davis",
+      "sf"
+    ],
+    "title": "Boys and Girls Clubs are only partly covered",
+    "text": "Only Oakland has a teen job card. Other clubs did not post teen details on their official pages.",
+    "issue": 6
+  }
 ]
