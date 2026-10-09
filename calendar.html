@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Page Not Found</title>
-<meta name="description" content="That page does not exist. Try the program list or the playbook.">
+<title>What Opens When: A Month by Month Calendar of Teen Programs</title>
+<meta name="description" content="See which teen jobs, internships and volunteer programs take applications each month, so you can plan ahead. Pick a month, a place and your age. Dates come from each program's own page and mostly describe the last cycle.">
 <meta name="theme-color" content="#151515">
-<link rel="canonical" href="https://vadneyk.github.io/internships/404.html">
+<link rel="canonical" href="https://vadneyk.github.io/internships/calendar.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Page Not Found">
-<meta property="og:description" content="That page does not exist. Try the program list or the playbook.">
-<meta property="og:url" content="https://vadneyk.github.io/internships/404.html">
+<meta property="og:title" content="What Opens When: A Month by Month Calendar of Teen Programs">
+<meta property="og:description" content="See which teen jobs, internships and volunteer programs take applications each month, so you can plan ahead. Pick a month, a place and your age. Dates come from each program's own page and mostly describe the last cycle.">
+<meta property="og:url" content="https://vadneyk.github.io/internships/calendar.html">
 <meta property="og:image" content="https://vadneyk.github.io/internships/assets/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -26,7 +26,7 @@
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
 </head>
-<body class="page-404">
+<body class="page-calendar">
 <a class="skip" href="#main">Skip to content</a>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
   <symbol id="flame" viewBox="0 0 64 64">
@@ -38,7 +38,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   <div class="wrap">
     <a class="brand" href="index.html"><svg aria-hidden="true"><use href="#flame"/></svg><span>Find <b>Internships</b></span></a>
     <nav class="nav" aria-label="Main">
-      <a href="find.html">Programs</a>
+      <a href="find.html" aria-current="page">Programs</a>
       <a href="playbook.html">Playbook</a>
       <a href="resume.html">Resume</a>
       <a href="ready.html">Get ready</a>
@@ -51,12 +51,29 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </header>
 <main id="main">
-<section style="padding-block:3rem;">
+<section style="padding-block:2rem 1rem;">
   <div class="wrap">
-    <span class="tag y eyebrow">Error 404</span>
-    <h1>Not <span class="orange">found</span></h1>
-    <p class="lede">That page is not here. Try one of these instead.</p>
-    <div class="chips"><a class="btn" href="index.html">Home</a><a class="btn alt" href="find.html">Find a program</a><a class="btn alt" href="playbook.html">Playbook</a></div>
+    <p class="small muted" style="margin:0 0 .6rem;"><a href="find.html">Programs</a> &rsaquo; What opens when</p>
+    <span class="tag y eyebrow">Plan ahead</span>
+    <h1 style="font-size:clamp(2.2rem,7vw,4rem);">What opens <span class="orange">when</span></h1>
+    <p class="lede">Most summer programs take applications in winter and spring, so the time to get ready is now. Pick a month to see which programs take applications then. Last read Oct 9, 2026.</p>
+    <div class="callout plain small" style="margin-top:1rem;max-width:52rem;"><p id="calNote"></p></div>
+  </div>
+</section>
+
+<section style="background:var(--paper-2); border-block:3px solid var(--edge);">
+  <div class="wrap">
+    <div class="chips" id="months" role="group" aria-label="Month"></div>
+    <div class="grid g2" style="align-items:end;max-width:40rem;margin-top:1rem;">
+      <div class="field"><label for="cPlace">Where</label><select id="cPlace"><option value="">Everywhere</option></select></div>
+      <div class="field"><label for="cAge">Your age</label><select id="cAge"><option value="">Any age</option></select></div>
+    </div>
+    <p class="small" id="cCount" aria-live="polite"></p>
+    <h2 id="hClose" hidden>Deadlines this month</h2>
+    <ul class="langlist" id="cClose" style="list-style:none;padding:0;display:grid;gap:1rem;"></ul>
+    <h2 id="hOpen" hidden>Applications open</h2>
+    <ul class="langlist" id="cOpen" style="list-style:none;padding:0;display:grid;gap:1rem;"></ul>
+    <div class="card" id="cNone" hidden><p>Nothing found for that month. Many programs do not state their months, so also check <a href="find.html?when=anytime">programs you can apply to anytime</a>.</p></div>
   </div>
 </section>
 
@@ -84,6 +101,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="assets/js/lib.js?v=0ff92b99"></script>
 <script src="assets/js/common.js?v=0ff92b99"></script>
+<script src="assets/js/calendar.js?v=0ff92b99"></script>
 
 </body>
 </html>

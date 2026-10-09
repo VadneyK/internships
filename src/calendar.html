@@ -1,0 +1,30 @@
+title: What Opens When: A Month by Month Calendar of Teen Programs
+desc: See which teen jobs, internships and volunteer programs take applications each month, so you can plan ahead. Pick a month, a place and your age. Dates come from each program's own page and mostly describe the last cycle.
+scripts: calendar
+navparent: find
+---
+<section style="padding-block:2rem 1rem;">
+  <div class="wrap">
+    <p class="small muted" style="margin:0 0 .6rem;"><a href="find.html">Programs</a> &rsaquo; What opens when</p>
+    <span class="tag y eyebrow">Plan ahead</span>
+    <h1 style="font-size:clamp(2.2rem,7vw,4rem);">What opens <span class="orange">when</span></h1>
+    <p class="lede">Most summer programs take applications in winter and spring, so the time to get ready is now. Pick a month to see which programs take applications then. Last read Oct 9, 2026.</p>
+    <div class="callout plain small" style="margin-top:1rem;max-width:52rem;"><p id="calNote"></p></div>
+  </div>
+</section>
+
+<section style="background:var(--paper-2); border-block:3px solid var(--edge);">
+  <div class="wrap">
+    <div class="chips" id="months" role="group" aria-label="Month"></div>
+    <div class="grid g2" style="align-items:end;max-width:40rem;margin-top:1rem;">
+      <div class="field"><label for="cPlace">Where</label><select id="cPlace"><option value="">Everywhere</option></select></div>
+      <div class="field"><label for="cAge">Your age</label><select id="cAge"><option value="">Any age</option></select></div>
+    </div>
+    <p class="small" id="cCount" aria-live="polite"></p>
+    <h2 id="hClose" hidden>Deadlines this month</h2>
+    <ul class="langlist" id="cClose" style="list-style:none;padding:0;display:grid;gap:1rem;"></ul>
+    <h2 id="hOpen" hidden>Applications open</h2>
+    <ul class="langlist" id="cOpen" style="list-style:none;padding:0;display:grid;gap:1rem;"></ul>
+    <div class="card" id="cNone" hidden><p>Nothing found for that month. Many programs do not state their months, so also check <a href="find.html?when=anytime">programs you can apply to anytime</a>.</p></div>
+  </div>
+</section>
