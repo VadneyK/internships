@@ -449,3 +449,13 @@ test("find: Print my list calls window.print only after adding #printRoot, and r
   assert.equal(document.body.classList.contains("print-one"), false);
   assert.deepEqual(errors, []);
 });
+
+test("find: out-of-state cards never mention a California work permit", async () => {
+  for (const where of ["atl", "nyc", "chi"]) {
+    const { document } = await loadFind({ search: "?where=" + where });
+    const text = [...document.querySelectorAll("article.prog")].map((c) => c.textContent).join(" ");
+    assert.ok(text.length > 0, where + " should show cards");
+    assert.doesNotMatch(text, /California work permit/, where + " card mentions California rules");
+    if (where === "nyc") assert.match(text, /New York requires working papers/);
+  }
+});

@@ -60,7 +60,15 @@
     if (e.who_can_apply) html += "<div><dt>Who can apply</dt><dd>" + G.esc(e.who_can_apply) + "</dd></div>";
     if (e.how_to_apply) html += "<div><dt>How to apply</dt><dd>" + G.esc(e.how_to_apply) + "</dd></div>";
     if (e.duration) html += "<div><dt>How long</dt><dd>" + G.esc(e.duration) + "</dd></div>";
-    if (e.needs_work_permit === true) html += "<div><dt>Work permit</dt><dd>Paid work under 18 needs a California work permit. See the <a href=\"rules.html\">Rules page</a>.</dd></div>";
+    if (e.needs_work_permit === true) {
+      var st = L.stateOf(e);
+      var permit = { ca: "Paid work under 18 needs a California work permit. See the <a href=\"rules.html\">Rules page</a>.",
+        ga: "Georgia requires a work permit for paid work under 16. See <a href=\"states.html#georgia\">the Georgia rules</a>.",
+        ny: "New York requires working papers for ages 14 to 17. See <a href=\"states.html#newyork\">the New York rules</a>.",
+        il: "Illinois requires an employment certificate for paid work under 16. See <a href=\"states.html#illinois\">the Illinois rules</a>." }[st] ||
+        "Teens often need a work permit for paid work. The rules depend on your state: see <a href=\"rules.html\">California</a> or <a href=\"states.html\">other states</a>.";
+      html += "<div><dt>Work permit</dt><dd>" + permit + "</dd></div>";
+    }
     if (e.notes) html += "<div><dt>Good to know</dt><dd>" + G.esc(e.notes) + "</dd></div>";
     html += "</dl></details>";
     html += '<div class="actions">';

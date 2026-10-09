@@ -70,6 +70,17 @@
   function startOfDay(now) { var d = new Date(now || Date.now()); d.setHours(0, 0, 0, 0); return d; }
   function daysUntil(d, now) { return Math.round((d - startOfDay(now)) / 86400000); }
 
+  /* Which state's rules apply to a program: ca, ga, ny, il, or "" for online and national programs. */
+  var STATE_OF = { atlanta: "ga", georgia: "ga", "new-york-city": "ny", "new-york-state": "ny", chicago: "il", illinois: "il", virtual: "", national: "" };
+  function stateOf(e) {
+    var rs = e.regions || [];
+    for (var i = 0; i < rs.length; i++) {
+      if (Object.prototype.hasOwnProperty.call(STATE_OF, rs[i])) { if (STATE_OF[rs[i]]) return STATE_OF[rs[i]]; }
+      else return "ca";
+    }
+    return "";
+  }
+
   function hubsOf(e) {
     var out = [];
     HUBS.forEach(function (h) {
@@ -263,6 +274,6 @@
     effStatus: effStatus, futureDeadline: futureDeadline, isOpenish: isOpenish, isAnytime: isAnytime, ageOk: ageOk,
     matches: matches, rank: rank, compare: compare, sortList: sortList, ageText: ageText,
     STATUSES: STATUSES, toISO: toISO, addDays: addDays, followUpISO: followUpISO, planSummary: planSummary,
-    icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights
+    icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf
   };
 });

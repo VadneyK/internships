@@ -112,3 +112,13 @@ test("search matches the start of words, so 'paid' does not find 'unpaid'", () =
   assert.equal(L.matches(unpaid, { q: "volun" }, NOW), true);
   assert.equal(L.matches(paid, { q: "summer intern" }, NOW), true);
 });
+
+test("stateOf picks the state whose rules apply", () => {
+  assert.equal(L.stateOf({ regions: ["oakland"] }), "ca");
+  assert.equal(L.stateOf({ regions: ["statewide"] }), "ca");
+  assert.equal(L.stateOf({ regions: ["orange-county", "san-diego"] }), "ca");
+  assert.equal(L.stateOf({ regions: ["atlanta", "georgia"] }), "ga");
+  assert.equal(L.stateOf({ regions: ["new-york-city"] }), "ny");
+  assert.equal(L.stateOf({ regions: ["chicago"] }), "il");
+  assert.equal(L.stateOf({ regions: ["virtual", "national"] }), "");
+});
