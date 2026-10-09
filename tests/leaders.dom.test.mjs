@@ -5,7 +5,7 @@ import { loadPage, type } from "./dom-helper.mjs";
 const FIELD_IDS = ["gName", "gDate", "gPlace", "gLead", "gContact"];
 const REF_IDS = ["rTeen", "rWriter", "rKnown", "rJob", "rStory", "rQuality"];
 const SHEETS = ["outParent", "outGuest", "outSignup", "outEval", "outRef"];
-const DASH = /[–—]/; // en dash and em dash, written as escapes
+const DASH = /[\u2013\u2014]/; // en dash and em dash, written as escapes
 
 const GROUP = {
   gName: "Hillside Youth Group",
