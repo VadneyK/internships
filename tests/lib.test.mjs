@@ -113,6 +113,11 @@ test("search matches the start of words, so 'paid' does not find 'unpaid'", () =
   assert.equal(L.matches(paid, { q: "summer intern" }, NOW), true);
 });
 
+test("every region maps to a state table entry, and unknown regions never fall back to California", () => {
+  L.REGIONS.forEach((r) => assert.ok(Object.prototype.hasOwnProperty.call(L.STATE_OF, r[0]), "no state entry for " + r[0]));
+  assert.equal(L.stateOf({ regions: ["austin-not-yet-added"] }), "");
+});
+
 test("stateOf picks the state whose rules apply", () => {
   assert.equal(L.stateOf({ regions: ["oakland"] }), "ca");
   assert.equal(L.stateOf({ regions: ["statewide"] }), "ca");
