@@ -1,0 +1,40 @@
+{
+  "id": "emory-pre-college-program",
+  "name": "Emory Pre-College Program",
+  "org": "Emory University",
+  "city": "Atlanta, GA",
+  "regions": [
+    "atlanta"
+  ],
+  "type": "pre-college",
+  "fields": [
+    "any",
+    "science"
+  ],
+  "what_you_do": "Take a college course taught by Emory faculty over two to four weeks in summer, with residential or commuter options. A 3-week Pre-Med Institute and 6-week credit courses are also offered.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Current sophomores and juniors",
+  "who_can_apply": "High school students; the page says it serves current sophomores and juniors. Application needs transcript and recommendations.",
+  "paid_type": "fee-based",
+  "pay_detail": "2026 prices: 2-week noncredit course $5,510 residential or $3,925 commuter; 3-week institute $8,264 residential; 4 weeks $11,020. $70 application fee. 2027 prices not posted.",
+  "season": "summer",
+  "duration": "2 to 6 weeks (2027 noncredit sessions June 13 to 26, June 27 to July 10, July 11 to 24)",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Applications for 2027 open in December 2026. Deadlines: noncredit sessions May 3, 2027; Pre-Med Institute Feb 1, 2027; credit Summer College April 20 and June 7, 2027.",
+  "deadline_iso": "2027-05-03",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Choose a program and course, review costs, then start the online application (transcript, recommendations, $70 fee). After acceptance, complete the pre-arrival checklist and pay the $350 enrollment deposit.",
+  "needs_work_permit": null,
+  "url": "https://precollege.emory.edu/index.html",
+  "priority": 3,
+  "notes": "Expensive. The nearest deadline is the Pre-Med Institute on Feb 1, 2027 (deadline_iso shows the main May 3 date). Financial aid deadline was May 1 in 2026. Information sessions are in November and December 2026.",
+  "sources_fetched": [
+    "https://precollege.emory.edu/index.html",
+    "https://precollege.emory.edu/cost-and-scholarships/index.html"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09"
+}

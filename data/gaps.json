@@ -55,5 +55,41 @@
     "title": "Boys and Girls Clubs are only partly covered",
     "text": "Only Oakland has a teen job card. Other clubs did not post teen details on their official pages.",
     "issue": 6
+  },
+  {
+    "id": "socal-pages",
+    "hubs": [
+      "socal"
+    ],
+    "title": "Some Southern California city pages could not be read",
+    "text": "Costa Mesa's youth pages do not state job ages, and Anaheim, Fullerton and several LA museum and hospital pages blocked our reader. Santa Ana and Anaheim are thin here.",
+    "issue": 19
+  },
+  {
+    "id": "atl-pages",
+    "hubs": [
+      "atl"
+    ],
+    "title": "Some Atlanta pages could not be read",
+    "text": "The City of Atlanta's own Summer Youth Employment pages and the airport's youth workforce programs blocked our reader, so pay and signup details come from other official pages.",
+    "issue": 20
+  },
+  {
+    "id": "nyc-pages",
+    "hubs": [
+      "nyc"
+    ],
+    "title": "New York Parks, NYPL and several museums are missing",
+    "text": "NYC Parks, the New York Public Library and the AMNH, Met and MoMA teen pages blocked our reader, so those programs are not listed yet.",
+    "issue": 21
+  },
+  {
+    "id": "chi-pages",
+    "hubs": [
+      "chi"
+    ],
+    "title": "Some Chicago and Elgin pages could not be read",
+    "text": "The Cook County Forest Preserves Conservation Corps, Elgin's School District U-46 career pages and the Hoffman Estates parks pages blocked our reader.",
+    "issue": 22
   }
 ]

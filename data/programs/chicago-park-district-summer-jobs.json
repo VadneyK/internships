@@ -1,0 +1,43 @@
+{
+  "id": "chicago-park-district-summer-jobs",
+  "name": "Chicago Park District summer jobs (lifeguard, recreation leader, junior laborer)",
+  "org": "Chicago Park District",
+  "type": "paid-youth-program",
+  "fields": [
+    "sports",
+    "environment",
+    "education"
+  ],
+  "what_you_do": "Teens 16 and up work in the parks as lifeguards, day camp recreation leaders, special recreation leaders (camps for kids and adults with intellectual disabilities) or junior laborers doing landscape work.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Ages 16 and older for lifeguards, recreation leaders, special recreation leaders and junior laborers. The page does not state a residency rule, so check with the Park District.",
+  "paid_type": "paid",
+  "pay_detail": "2026 rates: lifeguard $20.50 per hour; recreation leader, special recreation leader and junior laborer $17.77 per hour.",
+  "season": "summer",
+  "duration": "Recreation leaders about 6 weeks, mid-June to early Aug. Junior laborers start April, May or June.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "All four 2026 summer positions are marked closed. 2027 dates not posted. The Park District holds free Teen Opportunity Fairs in Feb and March (Feb 21 to Mar 14 in 2026) where teens can apply.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online through the Park District job site from the Learn More and Apply Now links on the Summer Jobs page, or at a Teen Opportunity Fair. Applications must be in by the closed date on each job posting.",
+  "needs_work_permit": false,
+  "url": "https://www.chicagoparkdistrict.com/summer-jobs",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.chicagoparkdistrict.com/summer-jobs",
+    "https://www.chicagoparkdistrict.com/teen-opportunity-fairs",
+    "https://www.chicagoparkdistrict.com/jobs",
+    "https://labor.illinois.gov/faqs/child-labor-faq.html"
+  ],
+  "priority": 1,
+  "notes": "Work permit: Illinois requires employment certificates only for minors under 16 (Illinois Dept. of Labor FAQ). All of these jobs start at 16. Teens 13 to 15 should see the Recreation Leader in Training program. Fair email: teensinthepark@chicagoparkdistrict.com.",
+  "regions": [
+    "chicago"
+  ],
+  "city": "Chicago, IL",
+  "verified": "fetched",
+  "verified_on": "2026-10-09"
+}

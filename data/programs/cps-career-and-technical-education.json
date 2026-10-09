@@ -1,0 +1,48 @@
+{
+  "id": "cps-career-and-technical-education",
+  "name": "CPS Career and Technical Education (CTE) pathways",
+  "org": "Chicago Public Schools",
+  "type": "school-pathway",
+  "fields": [
+    "tech-cs",
+    "health",
+    "trades",
+    "business-finance",
+    "food-hospitality",
+    "arts-media",
+    "education",
+    "law-government",
+    "engineering",
+    "environment"
+  ],
+  "what_you_do": "High school career programs in 11 areas (agricultural sciences, construction, business, culinary, education, health, IT, law and public safety, manufacturing, media, personal care, transportation) with hands-on learning and industry certifications.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Chicago Public Schools students. 8th graders apply through GoCPS when they apply to high school; freshmen and 10th graders ask their school counselor.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": null,
+  "season": "school-year",
+  "duration": "Multi-year pathway",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "GoCPS high school application dates are not stated on the CTE page; check GoCPS.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Rank CTE programs on your GoCPS high school application (8th grade), or talk to your counselor (9th and 10th grade). Email CTE@cps.edu for questions.",
+  "needs_work_permit": null,
+  "url": "https://www.cps.edu/academics/career-and-technical-education/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.cps.edu/academics/career-and-technical-education/",
+    "https://www.cps.edu/academics/work-based-learning/"
+  ],
+  "priority": 2,
+  "notes": "Which pathways are offered differs by school; the CTE Matrix and Guide to CTE Programs on the page list them. CPS Work-Based Learning (internships, co-op) builds on these pathways. Contact: 773-553-2108.",
+  "regions": [
+    "chicago"
+  ],
+  "city": "Chicago, IL",
+  "verified": "fetched",
+  "verified_on": "2026-10-09"
+}

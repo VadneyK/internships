@@ -1,0 +1,39 @@
+{
+  "id": "la-county-library-teen-volunteer",
+  "name": "LA County Library Teen Volunteer and Teen Advisory Board",
+  "org": "County of Los Angeles Public Library",
+  "regions": [
+    "los-angeles"
+  ],
+  "city": "Los Angeles County, CA",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "what_you_do": "Help at your local library with kids' storytimes and art activities, computer and printing help, cleaning and sorting materials and displays. Teen Advisory Boards plan programs.",
+  "min_age": 14,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Anyone 14 and older can volunteer. Teen Advisory Boards are open to teens at libraries that have one.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid; students can earn school service credit.",
+  "season": "year-round",
+  "duration": "Varies by library",
+  "status": "year-round",
+  "deadline_text": "No deadline. Ask your local LA County Library about current openings.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Contact your local LA County Library branch to ask about volunteer openings and whether it has a Teen Advisory Board.",
+  "needs_work_permit": false,
+  "url": "https://lacountylibrary.org/volunteer/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://lacountylibrary.org/volunteer/",
+    "https://lacountylibrary.org/teens/"
+  ],
+  "priority": 2,
+  "notes": "This covers LA County Library branches (unincorporated areas and many cities), not the City of Los Angeles library system (see the LAPL card). Tasks vary by branch and season.",
+  "verified": "fetched",
+  "verified_on": "2026-10-09"
+}

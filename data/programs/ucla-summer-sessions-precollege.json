@@ -1,0 +1,41 @@
+{
+  "id": "ucla-summer-sessions-precollege",
+  "name": "UCLA Summer Sessions for high school students",
+  "org": "UCLA Office of Summer Sessions",
+  "regions": [
+    "los-angeles"
+  ],
+  "city": "Los Angeles, CA",
+  "type": "pre-college",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take UCLA college courses in the summer, either alongside UCLA undergraduates or in a 3-week focused program (engineering, economics, politics, architecture and more). Earn UCLA credit.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "High school students. The Summer Precollege Focus Series requires being at least 15 by the first day of Summer Sessions, and some programs set older ages. Regular summer courses must come from a pre-approved high school list.",
+  "paid_type": "fee-based",
+  "pay_detail": "Fee-based. Ask UCLA Summer Sessions for current fees. Scholarship programs described on the page include BASE and Summer Scholars Support.",
+  "season": "summer",
+  "duration": "Focus Series: 3 weeks; other formats vary (2026 sessions ran June 22 to July 31)",
+  "status": "unconfirmed",
+  "deadline_text": "Summer 2026 enrollment is closed. Summer 2027 programs and dates are not posted yet; the site offers a sign-up for 2027 updates.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Apply or enroll through each program page on summer.ucla.edu. California students in grades 9 to 11 can apply for Summer Scholars Support (need and merit scholarships), and 10th and 11th graders from under-resourced California communities can apply for BASE, a free 6-week online course with a UCLA mentor.",
+  "needs_work_permit": false,
+  "url": "https://summer.ucla.edu/student-types/high-school-students/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://summer.ucla.edu/student-types/high-school-students/",
+    "https://summer.ucla.edu/summer-programs/summer-precollege-focus-series/",
+    "https://summer.ucla.edu/scholarship-opportunities/",
+    "https://summer.ucla.edu/fee-calculator/",
+    "https://summer.ucla.edu/fees-payment-and-financial-aid/"
+  ],
+  "priority": 3,
+  "notes": "Out-of-state and international students cannot receive UCLA Summer Sessions financial aid. Exact program prices were not found; use UCLA's fee calculator before applying.",
+  "verified": "fetched",
+  "verified_on": "2026-10-09"
+}

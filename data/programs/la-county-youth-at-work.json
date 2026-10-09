@@ -1,0 +1,39 @@
+{
+  "id": "la-county-youth-at-work",
+  "name": "LA County Youth@Work",
+  "org": "LA County Department of Economic Opportunity (DEO)",
+  "regions": [
+    "los-angeles"
+  ],
+  "city": "Los Angeles County, CA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Do a paid, part-time first job with a local employer while taking a work-readiness class. You sign up through a nearby America's Job Center of California (AJCC).",
+  "min_age": 14,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "LA County residents who are 14 to 24 when they enroll and have the legal right to work in the U.S. The county gives priority to youth with high needs, such as current or former foster youth, youth touched by the justice system, youth who are or were homeless, and LGBTQ+ youth.",
+  "paid_type": "paid",
+  "pay_detail": "Paid work experience for about 140 hours plus a class. The page does not state an hourly wage.",
+  "season": "year-round",
+  "duration": "About 160 hours in all: up to 140 hours of paid work plus 20 hours of job-readiness class",
+  "status": "unconfirmed",
+  "deadline_text": "No deadline is posted. Fill out the youth interest form and an AJCC contacts you within 48 hours. In 2025 the summer jobs started July 1.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the Youth Interest Form on the Youth@Work page. AJCC staff reach out within 48 hours to check eligibility and match you with an employer.",
+  "needs_work_permit": true,
+  "url": "https://opportunity.lacounty.gov/youthatwork/",
+  "apply_url": "https://yaw.opportunity.lacounty.gov/yaw-participant",
+  "sources_fetched": [
+    "https://opportunity.lacounty.gov/youthatwork/",
+    "https://lacounty.gov/2025/06/20/la-county-deo-kicks-off-summer-with-youthwork-hiring-events/",
+    "https://www.dir.ca.gov/dlse/ChildLaborLawPamphlet.pdf"
+  ],
+  "priority": 1,
+  "notes": "The county released a Youth@Work Program Review and Redesign Report on August 25, 2026, so rules and pay for 2027 may change. Under 18 you need a California work permit before the first day. The pay figure is the 2025 summer rate from the county's own news release, not a 2027 promise. Long Beach youth can also use the City of Long Beach center (see the LBWIN card).",
+  "verified": "fetched",
+  "verified_on": "2026-10-09"
+}

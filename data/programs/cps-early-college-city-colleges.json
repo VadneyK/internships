@@ -1,0 +1,40 @@
+{
+  "id": "cps-early-college-city-colleges",
+  "name": "CPS Early College: dual credit and dual enrollment at City Colleges of Chicago",
+  "org": "Chicago Public Schools and City Colleges of Chicago",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Juniors and seniors take college courses for free, either at their own high school (dual credit) or on a City Colleges campus (dual enrollment), including career pathway courses like aviation, construction, culinary, IT and nursing.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": "11-12",
+  "who_can_apply": "Students currently enrolled at a Chicago Public Schools high school, including home-schooled students per City Colleges. A 2.5 GPA and strong attendance are typical requirements. If your GPA is lower, the page says recommendation letters are accepted. Under 16 needs a principal recommendation and approval from the college president.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Free college credit. The page says you earn college credit for free.",
+  "season": "school-year",
+  "duration": "Per semester; dual enrollment is one course per semester at a City Colleges campus",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Register once per academic year. Deadlines not stated; talk to your counselor early.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Talk to your high school counselor, get approval from the dual enrollment coordinator at your City Colleges campus, complete the City Colleges application and pick classes. Do not pay for or enroll in a class before talking to the Early College team.",
+  "needs_work_permit": false,
+  "url": "https://pages.ccc.edu/early-college/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://pages.ccc.edu/early-college/",
+    "https://www.cps.edu/academics/college-credit/early-college-programs/",
+    "https://www.cps.edu/academics/college-credit/"
+  ],
+  "priority": 1,
+  "notes": "Undocumented students are eligible (CPS page). Some courses need ACT, SAT or City Colleges placement scores; many courses have no prerequisites. Jumpstart Pathways and Runway 606 are related CPS options. Seven campuses; each has a dual enrollment coordinator.",
+  "regions": [
+    "chicago"
+  ],
+  "city": "Chicago, IL",
+  "verified": "fetched",
+  "verified_on": "2026-10-09"
+}

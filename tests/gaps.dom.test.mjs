@@ -6,7 +6,7 @@ import { loadPage, tick } from "./dom-helper.mjs";
 const GAPS = JSON.parse(fs.readFileSync(new URL("../data/gaps.json", import.meta.url), "utf8"));
 
 test("gaps.json: every gap has a title, text, a whole-number issue and known hub ids", () => {
-  const hubs = new Set(["davis", "sv", "oak", "sf", "state", "online"]);
+  const hubs = new Set(["davis", "sv", "oak", "sf", "state", "socal", "atl", "nyc", "chi", "online"]);
   const ids = new Set();
   for (const g of GAPS) {
     assert.ok(g.title && g.text, g.id + " needs a title and text");

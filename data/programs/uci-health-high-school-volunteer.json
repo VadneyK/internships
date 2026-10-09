@@ -1,0 +1,37 @@
+{
+  "id": "uci-health-high-school-volunteer",
+  "name": "UCI Health High School Volunteer Program",
+  "org": "UCI Health (UCI Medical Center)",
+  "regions": [
+    "orange-county"
+  ],
+  "city": "Orange, CA",
+  "type": "volunteer",
+  "fields": [
+    "health"
+  ],
+  "what_you_do": "Volunteer one weekly three-hour shift at UCI Medical Center. Aimed at students thinking about a medical career and students who like helping others.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "High school students ages 16 and over. Selection looks at your application, your ability to keep the weekly schedule, past community service, and your education and career interests.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid.",
+  "season": "year-round",
+  "duration": "One 3-hour shift a week, Monday to Friday 4 to 7 p.m., minimum 75 hours",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Volunteer applications are currently closed. The page says it is under construction and will be back soon, with no date.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "The page does not describe the application steps. Email ucimcvolunteer@uci.edu or call 714-456-5541 to ask when applications reopen.",
+  "needs_work_permit": false,
+  "url": "https://www.ucihealth.org/volunteer/high-school-students",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.ucihealth.org/volunteer/high-school-students"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "Requires a physician-signed medical clearance with immunity proof (measles, mumps, rubella, varicella), Tdap, hepatitis B series, COVID-19 vaccine with booster, flu shot in season, and a negative TB blood test within 90 days of your start date. Also a three-hour orientation. "
+}

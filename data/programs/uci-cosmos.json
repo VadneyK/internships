@@ -1,0 +1,45 @@
+{
+  "id": "uci-cosmos",
+  "name": "COSMOS at UC Irvine (California State Summer School for Mathematics and Science)",
+  "org": "University of California, Irvine (COSMOS)",
+  "regions": [
+    "orange-county"
+  ],
+  "city": "Irvine, CA",
+  "type": "pre-college",
+  "fields": [
+    "science",
+    "engineering",
+    "tech-cs"
+  ],
+  "what_you_do": "Live on campus for four weeks and take a hands-on, lab-heavy STEM course (a cluster) taught by faculty, researchers and scientists.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "8 to 12",
+  "who_can_apply": "California high school students in grades 8 to 12, per the COSMOS application site. A GPA of 3.5 or above is typical.",
+  "paid_type": "fee-based",
+  "pay_detail": "Fee-based residential program. The 2027 cost is not stated on UCI's page, so check the COSMOS site for the current fee.",
+  "season": "summer",
+  "duration": "4 weeks, residential (2027 session dates TBA)",
+  "status": "opens-soon",
+  "opens_iso": "2027-01-06",
+  "deadline_text": "Statewide COSMOS dates: application opens Jan 6, 2027 at 8:00 AM and closes Feb 5, 2027. Financial aid forms postmarked by Feb 6, 2027. Decisions Mar 25, 2027. UCI's own pages still show 2026 dates, so confirm there.",
+  "deadline_iso": "2027-02-05",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Online application with a personal statement, teacher recommendation(s), transcripts and a parent or guardian e-signature, plus the application fee. You choose one campus and cluster. Pay one-third of tuition by Apr 7, 2027 and the rest by Apr 16, 2027 if accepted.",
+  "needs_work_permit": false,
+  "url": "https://cosmos.uci.edu",
+  "apply_url": "https://cosmos-ucop.ucdavis.edu/",
+  "sources_fetched": [
+    "https://cosmos.uci.edu",
+    "https://cosmos.uci.edu/prospective-students",
+    "https://cosmos.uci.edu/faqs/",
+    "https://www.cosmos.uci.edu/1176-2/",
+    "https://cosmos-ucop.ucdavis.edu/app/main/page/dates-deadlines",
+    "https://cosmos-ucop.ucdavis.edu/app/main/page/program-overview"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "Competitive: about 160 to 200 students per campus. UCI says the 2027 application will be available in January 2027 and to watch for info sessions in December. Students must live on campus for the full program. COSMOS runs on several UC campuses; this card is the UC Irvine campus."
+}

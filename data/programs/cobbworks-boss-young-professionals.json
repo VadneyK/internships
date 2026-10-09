@@ -1,0 +1,39 @@
+{
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "cobbworks-boss-young-professionals",
+  "name": "B.O.S.S. Young Professionals Program (CobbWorks)",
+  "org": "CobbWorks (Cobb County workforce board, WorkSource Cobb)",
+  "regions": [
+    "atlanta"
+  ],
+  "city": "Cobb County, GA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "A career pathway program with free education tuition, paid work experience, job readiness workshops, career coaching, and GED or diploma help for young adults in Cobb County.",
+  "min_age": 16,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Cobb County residents ages 16 to 24 who meet income qualifications (decided at eligibility) and are in one of the program's target groups.",
+  "paid_type": "paid",
+  "pay_detail": "Participants can earn up to $8,500 across the program's activities, according to the program page.",
+  "season": "year-round",
+  "duration": "Not stated. Participants enter at any stage.",
+  "status": "rolling",
+  "deadline_text": "Year-round. No application dates are posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the B.O.S.S. application inquiry form online (it asks if you live in Cobb County, are 16 to 24, and are in school), or call 770-528-4300 or email bossinfo@cobbworks.org.",
+  "needs_work_permit": false,
+  "url": "https://www.worksourcecobb.org/boss",
+  "apply_url": "https://www.worksourcecobb.org/boss-application",
+  "sources_fetched": [
+    "https://www.worksourcecobb.org/boss",
+    "https://www.worksourcecobb.org/boss-application",
+    "https://dol.georgia.gov/child-labor-employment-certificate-instructions"
+  ],
+  "priority": 2,
+  "notes": "Funded through WIOA, so participants must meet eligibility rules. The same site lists a PowerUp! plumbing pre-apprenticeship and a Cobb County Fire P.R.E.P. Academy for young adults; ages are not stated, so ask CobbWorks. The main cobbworks.org site returned an error, so this entry uses worksourcecobb.org. Georgia requires a work permit only under 16, and this program starts at 16."
+}

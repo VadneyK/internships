@@ -1,0 +1,41 @@
+{
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "opens_iso": null,
+  "id": "nyc-dycd-work-learn-grow",
+  "name": "Work, Learn & Grow (WLG)",
+  "org": "NYC Department of Youth and Community Development (DYCD)",
+  "regions": [
+    "new-york-city"
+  ],
+  "city": "New York, NY",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "A school-year follow-up to SYEP. You take a CUNY course, join skill-building sessions and do a paid internship, with the chance to earn college credit.",
+  "min_age": 16,
+  "max_age": 20,
+  "grades": null,
+  "who_can_apply": "NYC residents legally allowed to work in the U.S. who took part in the 2026 Summer Youth Employment Program as CareerReady (ages 16 to 19 in a CareerReady partner high school) or in Special Initiatives (ages 16 to 20, in high school or a high school equivalency program), as of Oct 26, 2026.",
+  "paid_type": "paid",
+  "pay_detail": "New York State minimum wage, paid every two weeks (DYCD FAQ).",
+  "season": "school-year",
+  "duration": "22 weeks, Oct 26, 2026 to Apr 3, 2027, 250 hours total",
+  "status": "open-now",
+  "deadline_text": "The WLG application page lists a deadline of October 9, 2026. The FAQ PDF lists the application period as Sept 8 to Oct 2, 2026, so confirm with your SYEP provider.",
+  "deadline_iso": "2026-10-09",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Use the WLG online application (CareerReady or Special Initiatives link), or ask your SYEP provider for help. If selected, submit documents online or in person to your provider.",
+  "needs_work_permit": true,
+  "url": "https://www.nyc.gov/site/dycd/services/jobs-internships/work-learn-grow-employment-program.page",
+  "apply_url": "https://worklearngrow.yepsonline.org/",
+  "sources_fetched": [
+    "https://www.nyc.gov/site/dycd/services/jobs-internships/work-learn-grow-employment-program.page",
+    "https://www.nyc.gov/assets/dycd/downloads/pdf/WLG_Participant_FAQs.pdf",
+    "https://worklearngrow.yepsonline.org/",
+    "https://dol.ny.gov/working-papers"
+  ],
+  "priority": 3,
+  "notes": "Only for teens who were in 2026 SYEP through a partner school or Special Initiatives provider, so most teens cannot start here. Internet access is required. Closing today or very soon as of the verification date. Teens under 18 need NYS working papers (NYS Department of Labor)."
+}

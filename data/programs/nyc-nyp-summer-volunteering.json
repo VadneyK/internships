@@ -1,0 +1,39 @@
+{
+  "id": "nyc-nyp-summer-volunteering",
+  "name": "Summer Only Volunteering",
+  "org": "NewYork-Presbyterian Hospital",
+  "regions": [
+    "new-york-city"
+  ],
+  "city": "New York City (select NYP campuses)",
+  "type": "volunteer",
+  "fields": [
+    "health"
+  ],
+  "what_you_do": "Volunteer in a hospital for the summer in a role matched to the campus and the department. Placements vary by campus, so you list your preferred program and location on the application.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Applicants must be at least 16 (18 for some programs; check each campus). The Queens and Hudson Valley campuses do not offer Summer Only volunteering. Spots are limited.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteering.",
+  "season": "summer",
+  "duration": "Minimum 120 service hours over the summer.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications are accepted January 1 to March 31 (the page gives no year; expect Jan 1 to Mar 31, 2027).",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the online volunteer application and choose Summer Only plus your preferred program and campus. A volunteer services representative contacts you for an interview if a spot is open.",
+  "needs_work_permit": false,
+  "url": "https://www.nyp.org/volunteer/summer-volunteering",
+  "apply_url": "https://nyp.vsyslive.com/pages/app/STAND",
+  "sources_fetched": [
+    "https://www.nyp.org/volunteer/summer-volunteering",
+    "https://www.nyp.org/volunteer/volunteer-programs-and-locations"
+  ],
+  "priority": 1,
+  "notes": "Many NYP roles (emergency department, palliative care and others) are 18+. Brooklyn Methodist also runs a Junior Volunteer Program that was marked full when searched; its own page was not read for details. This entry covers the system-wide Summer Only option only.",
+  "opens_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09"
+}

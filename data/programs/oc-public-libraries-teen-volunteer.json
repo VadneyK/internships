@@ -1,0 +1,38 @@
+{
+  "id": "oc-public-libraries-teen-volunteer",
+  "name": "OC Public Libraries Teen Volunteer",
+  "org": "OC Public Libraries (County of Orange)",
+  "regions": [
+    "orange-county"
+  ],
+  "city": "Orange County, CA (any OC Public Libraries branch)",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "what_you_do": "Help a local library branch organize library materials and take part in library events. Shifts are flexible and include weekdays and weekends.",
+  "min_age": 12,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "Teens are typically 12 to 17, but each branch sets its own age range, so check with your local branch. Court-ordered community service is not offered.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Flexible shifts, set by the branch",
+  "status": "year-round",
+  "deadline_text": "No deadline. Openings are limited and depend on each branch.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Contact your local branch to confirm there is an opening. Once a spot is confirmed, fill out the OCCR Volunteer Registration Form, print it, and drop it off at the branch.",
+  "needs_work_permit": false,
+  "url": "https://libraries.oc.gov/landing-page/volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://libraries.oc.gov/landing-page/volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 1,
+  "notes": "The registration form is shared by several county agencies, so some questions may not apply to you. Ask your branch what it needs. Arrive on time and tell the branch as early as you can if you miss a shift. OC Public Libraries points teens who need court-ordered hours to the OneOC Court Referral Program."
+}

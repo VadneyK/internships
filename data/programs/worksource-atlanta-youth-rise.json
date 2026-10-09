@@ -1,0 +1,39 @@
+{
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "worksource-atlanta-youth-rise",
+  "name": "Youth R.I.S.E. (Reaching Independence through Skills and Employment)",
+  "org": "WorkSource Atlanta (City of Atlanta workforce board)",
+  "regions": [
+    "atlanta"
+  ],
+  "city": "Atlanta, GA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Free year-round help for Atlanta youth: paid work experience and internships, job readiness workshops, GED or high school support, and short training that leads to credentials.",
+  "min_age": 16,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "City of Atlanta residents ages 16 to 24 who are WIOA eligible. In-school youth are generally 16 to 21, must meet income and other criteria, and may have a barrier such as disability, English learner, foster care, homeless, justice-involved or parenting. A WorkSource Atlanta Eligibility Specialist makes the final decision.",
+  "paid_type": "paid",
+  "pay_detail": "Paid work experience and internships are one service. Wage not posted on the page. Services are no cost.",
+  "season": "year-round",
+  "duration": "Year-round, no set end date",
+  "status": "rolling",
+  "deadline_text": "Year-round, first come first served. After the online orientation you have 30 days to submit all documents or your application may be closed.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "1) Finish the online youth orientation. 2) Create a profile in the WorkSource Georgia portal and save your SID number. 3) Upload your documents. 4) Book an eligibility appointment, or email WSAYouth@AtlantaGa.Gov with subject Ready to RISE. 5) Take the My Next Move career assessment. 6) Eligibility review.",
+  "needs_work_permit": false,
+  "url": "https://worksourceatlanta.org/job-seekers/youth-services/",
+  "apply_url": "https://worksourceatlanta.org/job-seekers/youth-services/youth-eligibility/",
+  "sources_fetched": [
+    "https://worksourceatlanta.org/job-seekers/youth-services/",
+    "https://worksourceatlanta.org/job-seekers/youth-services/youth-eligibility/",
+    "https://dol.georgia.gov/child-labor-employment-certificate-instructions"
+  ],
+  "priority": 1,
+  "notes": "Eligibility is income and barrier based, so not every teen qualifies. The document list includes a Social Security card and proof of address; this is the official city workforce board, but upload documents only through the portal named on the page. Under 18 using parent documents: proof of relationship and shared address is needed. Georgia requires a work permit only under 16, and this program starts at 16."
+}

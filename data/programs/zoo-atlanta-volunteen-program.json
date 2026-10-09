@@ -1,0 +1,40 @@
+{
+  "id": "zoo-atlanta-volunteen-program",
+  "name": "Volunteen Program (Zoo Atlanta)",
+  "org": "Zoo Atlanta",
+  "city": "Atlanta, GA",
+  "type": "volunteer",
+  "fields": [
+    "science",
+    "environment",
+    "education"
+  ],
+  "what_you_do": "Serve at the Zoo for a full program year in areas like habitat interpretation, public events, conservation projects, Safari Camp and animal nutrition. Training week is required.",
+  "min_age": 14,
+  "max_age": 17,
+  "who_can_apply": "Teens 14 to 17 years old by June 1, 2027 who are enrolled in high school (or equivalent) for the coming school year.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. $30 orientation fee covers name badge, uniform shirt and access card. Scholarships available for qualified applicants.",
+  "season": "year-round",
+  "duration": "June 1 to May 31. At least 160 hours total: 100 in summer, 30 in fall, 30 in spring. Required training week June 7 to 11, 2027.",
+  "status": "opens-soon",
+  "opens_iso": "2027-01-01",
+  "deadline_text": "Applications open 9 a.m. Jan 1 and close 5 p.m. Jan 31 (the page prints no year; it is for the June 2027 program year, so Jan 2027). A free Program Preview is Nov 14, 10 a.m. to noon, with registration.",
+  "deadline_iso": "2027-01-31",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Online application plus an essay of 2 pages or less written by the teen alone (AI-looking essays are rejected), and one recommendation from a non-family adult. Selected teens interview in person in March and attend orientation with a parent in April.",
+  "needs_work_permit": false,
+  "url": "https://zooatlanta.org/program/volunteen-program/",
+  "priority": 1,
+  "notes": "Staff review in February, notification of next steps by March 1. A current TB test is needed each year by June 1. Shifts are A.M., P.M. or full day. The page does not print a year beside Jan 1 and Jan 31; the year is read from the 2027 program-year details.",
+  "regions": [
+    "atlanta"
+  ],
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "sources_fetched": [
+    "https://zooatlanta.org/program/volunteen-program/"
+  ]
+}

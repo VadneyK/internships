@@ -1,0 +1,40 @@
+{
+  "id": "santa-ana-zoo-volunteer",
+  "name": "Santa Ana Zoo Volunteers (including Zoo Buddies)",
+  "org": "Santa Ana Zoo (City of Santa Ana)",
+  "regions": [
+    "orange-county"
+  ],
+  "city": "Santa Ana, CA",
+  "type": "volunteer",
+  "fields": [
+    "environment",
+    "science",
+    "social-impact"
+  ],
+  "what_you_do": "Volunteer at the zoo, either as a short-term Zoo Greeter or in a long-term role. Younger teens can join as a Zoo Buddies pair with a parent or guardian.",
+  "min_age": 12,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Volunteers must be at least 12 years old with an adult, or 15 years old on their own. Zoo Buddies is for ages 12 to 14, who must volunteer with a parent or guardian age 18 or older, and both complete the requirements together.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Short-term: 40 hours or less (Greeter shifts Fri to Sun, 10 a.m. to 4 p.m.). Long-term: more than 40 hours (shifts every day, 8 a.m. to 5 p.m.).",
+  "status": "rolling",
+  "deadline_text": "No deadline. Long-term volunteers do an online and an in-person orientation offered every other month.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Long-term volunteers and Zoo Buddies apply with the online volunteer application on the zoo page. Short-term volunteers contact the zoo through its Contact Us page. The zoo does not accept walk-up volunteers.",
+  "needs_work_permit": false,
+  "url": "https://santaanazoo.org/volunteer-as-an-individual",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://santaanazoo.org/volunteer-as-an-individual",
+    "https://www.santa-ana.gov/volunteer-program"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 1,
+  "notes": "Short-term needs the City of Santa Ana one-time volunteer waiver. Long-term needs the city volunteer application, a TB test and a background check. The City of Santa Ana volunteer page says volunteers under 18 must complete a minor waiver form. The Santa Ana library teen volunteer program was not listed because the only page found was from 2021."
+}

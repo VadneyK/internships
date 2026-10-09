@@ -1,0 +1,41 @@
+{
+  "id": "hire-las-youth",
+  "name": "Hire LA's Youth",
+  "org": "City of Los Angeles Economic and Workforce Development Department (EWDD)",
+  "regions": [
+    "los-angeles"
+  ],
+  "city": "Los Angeles, CA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Get a starter job with work-skills training, career coaching and money lessons. One sub-program puts high school students to work helping elementary kids in LA's BEST after-school programs.",
+  "min_age": 14,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Ages 14 to 24 living in the City of Los Angeles. The checklist PDF we read (2024 version) lists the other eligibility rules, so check the current one.",
+  "paid_type": "paid",
+  "pay_detail": "Paid. The home page does not state an hourly rate.",
+  "season": "summer",
+  "duration": "Varies. Student to Student Success is up to 140 hours in one school semester (20 hours of training, up to 120 hours of service).",
+  "status": "unconfirmed",
+  "deadline_text": "The site banner says it is accepting applications but gives no dates, and its document library page still shows a 2022 summer banner. Call EWDD at 213-744-7300 to confirm the current cycle.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Create an application on the Hire LA site, then bring or upload proof of age, right-to-work (I-9) documents, City of LA residency and the family income form.",
+  "needs_work_permit": null,
+  "url": "https://hirelayouth.com/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://hirelayouth.com/",
+    "https://hirelayouth.com/Pages/DocumentLibrary.aspx?Status=Main",
+    "https://hirelayouth.com/Images/Documents/2024_HLAY%20GF_Program%20Eligibility_Checklist.pdf",
+    "https://ewdd.lacity.gov/index.php/youth/youthsource",
+    "https://www.dir.ca.gov/dlse/ChildLaborLawPamphlet.pdf"
+  ],
+  "priority": 1,
+  "notes": "Cycle dates are not confirmed, so check with EWDD before counting on a summer 2027 spot. The same city department runs 14 free YouthSource Centers for ages 14 to 24 (school help, job readiness, some paid internships); ask at your nearest center, for example Boyle Heights 323-526-5800 or South LA 323-903-6926. Under 18 you need a California work permit.",
+  "verified": "fetched",
+  "verified_on": "2026-10-09"
+}

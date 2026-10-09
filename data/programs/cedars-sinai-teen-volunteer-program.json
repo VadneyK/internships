@@ -1,0 +1,39 @@
+{
+  "id": "cedars-sinai-teen-volunteer-program",
+  "name": "Cedars-Sinai Teen Volunteer Program",
+  "org": "Cedars-Sinai Medical Center Volunteer Services",
+  "regions": [
+    "los-angeles"
+  ],
+  "city": "Los Angeles, CA",
+  "type": "volunteer",
+  "fields": [
+    "health"
+  ],
+  "what_you_do": "Help at a large hospital by scanning and entering data, welcoming new patients, answering phones, and delivering flowers and amenities. Teens do not do research or assist with medical procedures.",
+  "min_age": 14,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Students 14 to 18 enrolled in high school with a transcript showing at least a 3.2 GPA. New volunteers and one parent or guardian must attend a mandatory in-person Teen Information Session.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Volunteers buy the required volunteer jacket for $30 (cash) and wear black or white scrubs.",
+  "season": "year-round",
+  "duration": "Winter/Spring and Fall: one 2-hour shift a week for 10 weeks (20 hours). Summer: two 4-hour shifts a week for 5 weeks (40 hours).",
+  "status": "opens-soon",
+  "opens_iso": "2026-11-23",
+  "deadline_text": "2027 sessions: Winter/Spring (Jan 25 to Apr 4) applications Nov 23, 2026; Summer (Jun 21 to Jul 25) applications Mar 29, 2027; Fall (Oct 4 to Dec 12) applications Aug 2, 2027. First come, first served; each application closes when spots fill.",
+  "deadline_iso": null,
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Submit the online application with your transcript, finish the online volunteer orientation, complete health screening and flu vaccine (flu season Nov 1 to Apr 30), and attend the Teen Information Session (Monday, Jan 11, 2027, 5:30 to 7:00 p.m.).",
+  "needs_work_permit": false,
+  "url": "https://www.cedars-sinai.org/volunteer-services/high-school-students.html",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.cedars-sinai.org/volunteer-services/high-school-students.html",
+    "https://www.cedars-sinai.org/volunteer-services/high-school-students.model.json"
+  ],
+  "priority": 2,
+  "notes": "Spots are limited and fill fast, so apply the day the window opens. Shifts run Monday to Sunday. Teens who want research should look at Cedars-Sinai's separate INSPIRE Internship Program (not checked here). Questions: TeenVolunteerProgram@cshs.org or 310-423-8044.",
+  "verified": "fetched",
+  "verified_on": "2026-10-09"
+}

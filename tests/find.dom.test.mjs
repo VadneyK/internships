@@ -317,7 +317,8 @@ test("find: star saves a program, the My list count updates, and the saved-only 
 // behavior the task asks for (every filter control updates the URL and survives reload).
 // Design choice: a personal list must not travel in a shared link, so saved-only is kept out of the URL.
 test("find: the saved-only view is kept out of the URL on purpose", async () => {
-  const id = DATA[0].id;
+  // pick a program that is actually on the first page of cards (the list is ranked and paged)
+  const id = (await loadFind()).document.querySelector("article.prog .star").getAttribute("data-id");
   const a = await loadFind({ storage: { saved: [id] } });
   const before = a.window.location.search;
   a.document.getElementById("savedOnly").click();
@@ -327,7 +328,8 @@ test("find: the saved-only view is kept out of the URL on purpose", async () => 
 });
 
 test("find: a saved program is still counted after reload", async () => {
-  const id = DATA[0].id;
+  // pick a program that is actually on the first page of cards (the list is ranked and paged)
+  const id = (await loadFind()).document.querySelector("article.prog .star").getAttribute("data-id");
   const { document, errors } = await loadFind({ storage: { saved: [id] } });
   assert.equal(document.getElementById("savedN").textContent, "1");
   assert.equal(document.querySelector('.star[data-id="' + id + '"]').getAttribute("aria-pressed"), "true");

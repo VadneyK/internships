@@ -1,0 +1,39 @@
+{
+  "id": "fulton-county-library-teen-volunteers",
+  "name": "Teen Volunteers (Fulton County Library System)",
+  "org": "Fulton County Library System (Atlanta-Fulton Public Library)",
+  "city": "Atlanta and Fulton County, GA",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "any"
+  ],
+  "what_you_do": "Help library branches with 1 to 2 hour shifts: shelving, clerical tasks, crowd control at events and helping the Friends of the Library. Some branches have Teen Advisory Boards.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "Youth under 18 may apply with a parent or guardian signature. The page does not state a minimum age, so ask Volunteer Services.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "1 to 2 hour shifts after orientation",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Applications are always accepted, but most projects are full and most locations have a waitlist.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Under 18: download and print the PDF application, sign it, get a parent or guardian signature, and return it to Volunteer Services by email, mail, fax or drop-off. Then attend orientation. Email vol.services@fultoncountyga.gov or call 404-613-0125.",
+  "needs_work_permit": false,
+  "url": "https://fulcolibrary.org/volunteer-at-fcls",
+  "priority": 2,
+  "notes": "The page says the library is currently on hold for community service hour requirements, so students who need school hours must contact Volunteer Services early. Teen Advisory Boards exist at some branches; ask the Youth Services Librarian. Library Systems for DeKalb and Cobb counties are separate.",
+  "regions": [
+    "atlanta"
+  ],
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "sources_fetched": [
+    "https://fulcolibrary.org/volunteer-at-fcls"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "cobb-schools-work-based-learning",
+  "name": "CTAE Work-Based Learning, Cobb County School District",
+  "org": "Cobb County School District",
+  "regions": [
+    "atlanta"
+  ],
+  "city": "Cobb County, GA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Juniors and seniors leave school for one or more class periods to work in a career-related job, internship or youth apprenticeship, earning school credit. They keep a career portfolio and employers send evaluations.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": "11-12",
+  "who_can_apply": "Cobb County School District juniors and seniors who are 16 or older. Your high school's Work-Based Learning coordinator gives school-specific rules.",
+  "paid_type": "mixed",
+  "pay_detail": "Placements may be paid or non-paid, according to the district page.",
+  "season": "school-year",
+  "duration": "A school year; students can be in WBL both junior and senior year. A 90-minute block needs at least 7.5 work hours a week.",
+  "status": "unconfirmed",
+  "deadline_text": "No dates are posted on the district page. Ask your school's coordinator for the application window.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Apply through your high school's Work-Based Learning coordinator. All applications must be completed in full before they are considered. The district page lists a coordinator for each high school.",
+  "needs_work_permit": false,
+  "url": "https://www.cobbk12.org/ctae-work-based-learning",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.cobbk12.org/ctae-work-based-learning",
+    "https://dol.georgia.gov/child-labor-employment-certificate-instructions"
+  ],
+  "priority": 2,
+  "notes": "District CTAE and WBL coordinator on the page: Sapph Espinoza. The job should relate to your career goals and CTAE coursework. Georgia requires a work permit only under 16, and this program starts at 16."
+}

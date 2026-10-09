@@ -1,0 +1,39 @@
+{
+  "id": "cps-cooperative-education",
+  "name": "CPS Cooperative Education (senior-year work study)",
+  "org": "Chicago Public Schools",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Seniors spend the afternoon of a school day on a paid, year-long job or internship that matches a career path, with an individual training plan and a co-op teacher who visits the worksite.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": "12 (apply in 11th grade)",
+  "who_can_apply": "High school seniors at least 16 years old with a 2.0 GPA, excellent attendance and a counselor recommendation.",
+  "paid_type": "paid",
+  "pay_detail": "Students earn wages; the rate is not stated on the page.",
+  "season": "school-year",
+  "duration": "One school year, at least 180 hours a semester (about 10 hours a week); 3 elective credits",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "Students must apply during junior year. Application dates not stated on the page.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Apply in 11th grade through your school; contact the citywide Cooperative Education coordinator (773-553-2108) for the process.",
+  "needs_work_permit": false,
+  "url": "https://www.cps.edu/academics/work-based-learning/cooperative-education/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.cps.edu/academics/work-based-learning/cooperative-education/",
+    "https://labor.illinois.gov/faqs/child-labor-faq.html"
+  ],
+  "priority": 2,
+  "notes": "Placement and training partners listed on the page include Genesys Works and Urban Alliance. Work permit: Illinois requires one only for under 16 and the minimum age is 16. Cutting school or work can cost credit.",
+  "regions": [
+    "chicago"
+  ],
+  "city": "Chicago, IL",
+  "verified": "fetched",
+  "verified_on": "2026-10-09"
+}

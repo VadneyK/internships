@@ -1,0 +1,39 @@
+{
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "georgia-work-based-learning-gadoe",
+  "name": "Georgia Work-Based Learning (including Youth Apprenticeship)",
+  "org": "Georgia Department of Education, Career, Technical and Agricultural Education",
+  "regions": [
+    "georgia"
+  ],
+  "city": "Georgia (through your high school)",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "State program with four options: cooperative education (paid), internship (paid or unpaid), Youth Apprenticeship (paid), and Employability Skill Development for students who already have a job. All link school courses to a work site.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "High school students, through their own school's Work-Based Learning coordinator. The state page lists no age or grade rules. Districts set their own (Gwinnett, Fulton County and Cobb above say juniors and seniors age 16 or older).",
+  "paid_type": "mixed",
+  "pay_detail": "Co-op and Youth Apprenticeship are paid work-site experiences. Internships may be paid or unpaid.",
+  "season": "school-year",
+  "duration": "Varies by option. An Employability Skill Development placement can last up to one school year.",
+  "status": "rolling",
+  "deadline_text": "Set by each school or district. No state dates are posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Ask your school's Work-Based Learning coordinator or counselor. Internships can happen only after coursework related to the placement. Co-op students must be enrolled in a course directly related to the job.",
+  "needs_work_permit": null,
+  "url": "https://gadoe.org/ctae/work-based-learning/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://gadoe.org/ctae/work-based-learning/",
+    "https://dol.georgia.gov/individuals/youth-specialized-services",
+    "https://dol.georgia.gov/child-labor-employment-certificate-instructions"
+  ],
+  "priority": 1,
+  "notes": "Youth Apprenticeship in Georgia is run through the Department of Education and local schools. The Georgia Department of Labor youth page covers work permits and child labor rules only. Georgia Work Ready was not researched. Georgia requires a work permit for students under 16 (see the Georgia Department of Labor work permit page)."
+}

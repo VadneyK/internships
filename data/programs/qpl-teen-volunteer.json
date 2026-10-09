@@ -1,0 +1,41 @@
+{
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "opens_iso": null,
+  "id": "qpl-teen-volunteer",
+  "name": "Queens Public Library Teen Volunteering (ages 14-17)",
+  "org": "Queens Public Library",
+  "regions": [
+    "new-york-city"
+  ],
+  "city": "Queens, NY",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "social-impact",
+    "any"
+  ],
+  "what_you_do": "Volunteer on library projects in Queens, either ongoing roles or one-day events. Hours earn community service credit, and you can request a Service Verification Letter.",
+  "min_age": 14,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "Teens ages 14 to 17 with a signed parent consent form. The page says some projects do not require NYS working papers, so check each project's description. Students at schools outside the country or the state may use a waiver.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Volunteer hours count as community service credit.",
+  "season": "year-round",
+  "duration": "Varies by project",
+  "status": "year-round",
+  "deadline_text": "Minors can apply year-round. Approval and placement can take up to 30 days, longer in summer and fall.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Get the parent consent form and NYS working papers (from your high school office), create a volunteer account, search projects and click Express Interest/Sign Up, then interview and get an offer letter. Questions: volunteer@queenslibrary.org.",
+  "needs_work_permit": true,
+  "url": "https://volunteer.queenslibrary.org/under_18",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://volunteer.queenslibrary.org/under_18",
+    "https://dol.ny.gov/working-papers"
+  ],
+  "priority": 1,
+  "notes": "Library says some projects do not need working papers, so check each listing. Working papers take 1-3 weeks from your school, so start early. They are issued regardless of immigration status. Under-14s can only volunteer with a parent or guardian."
+}
