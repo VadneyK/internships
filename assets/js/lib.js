@@ -86,6 +86,30 @@
     return "";
   }
 
+  /*
+    Which permit a teen needs: data is data/permits.json, st a state id (ca, ga, ny, il), age 12 to 18, kind one of data.kinds.
+    verdict: need, none, ask (the pages we read do not say), young, adult, or nostate.
+  */
+  function permitFor(data, st, age, kind) {
+    var s = data && data.states && data.states[st];
+    if (!s) return { verdict: "nostate", headline: "We have not read your state yet", text: "We have read California, Georgia, New York and Illinois. Ask your school office or your state labor department. The US Department of Labor lists them at dol.gov/agencies/whd/contact/state-labor-offices." };
+    var a = +age, k = s.kinds[kind];
+    if (!k || !(a >= 0)) return null;
+    var base = { state: st, stateName: s.name, permit: s.permit, kind: kind, age: a };
+    var band = a >= 16 ? "16" : a >= 14 ? "14" : a >= 12 ? "12" : "";
+    base.hours = band ? (s.hours[band] || "") : "";
+    base.wage = s.wage;
+    var jobLike = kind === "job" || kind === "program" || kind === "family";
+    if (a >= 18) return Object.assign(base, { verdict: "adult", headline: "You do not need a youth work permit", text: s.adult });
+    if (jobLike && a < s.minAge.job) return Object.assign(base, { verdict: "young", headline: "Most paid jobs start at 14", text: s.minAge.note + " Odd jobs for neighbors and volunteering are the usual first steps." });
+    if (k.permit === true) {
+      if (a >= s.needBelow) return Object.assign(base, { verdict: "none", headline: "You do not need a permit at " + a, text: s.adult });
+      return Object.assign(base, { verdict: "need", headline: "You need a " + s.permit, text: k.text });
+    }
+    if (k.permit === false) return Object.assign(base, { verdict: "none", headline: "You do not need a permit for this", text: k.text });
+    return Object.assign(base, { verdict: "ask", headline: "Check before you start", text: k.text });
+  }
+
   function hubsOf(e) {
     var out = [];
     HUBS.forEach(function (h) {
@@ -279,6 +303,6 @@
     effStatus: effStatus, futureDeadline: futureDeadline, isOpenish: isOpenish, isAnytime: isAnytime, ageOk: ageOk,
     matches: matches, rank: rank, compare: compare, sortList: sortList, ageText: ageText,
     STATUSES: STATUSES, toISO: toISO, addDays: addDays, followUpISO: followUpISO, planSummary: planSummary,
-    icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf, STATE_OF: STATE_OF
+    icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf, STATE_OF: STATE_OF, permitFor: permitFor
   };
 });

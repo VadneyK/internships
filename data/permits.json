@@ -1,0 +1,364 @@
+{
+ "read": "Oct 9, 2026",
+ "states": {
+  "ca": {
+   "name": "California",
+   "read": "Oct 7, 2026",
+   "permit": "Permit to Employ and Work",
+   "needBelow": 18,
+   "issuer": "The school you attend. Home-schooled, private and charter students go through their own school.",
+   "steps": [
+    "Get the job offer first. Schools usually will not issue a permit until an employer agrees to hire you.",
+    "Fill out the Statement of Intent (form B1-1). You, a parent or guardian, and your employer all sign it. Your school has it online or at the counselor or career office.",
+    "Turn it in at your school. The school checks it and issues the Permit (form B1-4) with the most hours you may work.",
+    "Give the permit to your employer. They keep it on file."
+   ],
+   "bring": [
+    "The signed Statement of Intent (form B1-1)",
+    "Proof of age, such as a birth certificate",
+    "The name and contact of your employer",
+    "A parent or guardian to sign"
+   ],
+   "timing": "Some districts take a day and some take up to a week. Start one to two weeks before your first shift.",
+   "renew": "Permits issued during the school year run out soon after the next school year starts, so renew it each year.",
+   "call": "California Labor Commissioner: 833-526-4636",
+   "district": true,
+   "links": [
+    {
+     "t": "Permit form B1-4",
+     "u": "https://www.dir.ca.gov/dlse/dlseformB1-4.pdf"
+    },
+    {
+     "t": "Hours and ages charts",
+     "u": "https://www.dir.ca.gov/dlse/MinorsSummaryCharts.pdf"
+    },
+    {
+     "t": "Full California rules on this site",
+     "u": "rules.html#permit"
+    }
+   ],
+   "hours": {
+    "12": "School days: no work. Non-school days: up to 8 hours. Only between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). You need to have finished 7th grade to work while school is in session.",
+    "14": "School days: up to 3 hours, outside school hours. Non-school days: up to 8 hours. School weeks: up to 18 hours. When school is out: up to 8 hours a day and 40 a week. Only between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day).",
+    "16": "School days: up to 4 hours. Non-school days: up to 8 hours. Up to 48 hours a week. Between 5 a.m. and 10 p.m. (12:30 a.m. before a non-school day)."
+   },
+   "wage": "$16.90 an hour in 2026 and $17.40 from Jan 1, 2027. Some cities pay more, so ask your employer for the rate.",
+   "minAge": {
+    "job": 14,
+    "note": "At 12 and 13 you can do things like babysitting, pet care, yard work and newspaper delivery."
+   },
+   "kinds": {
+    "job": {
+     "permit": true,
+     "text": "Almost every worker under 18 needs a Permit to Employ and Work for each paid job at a business, even in summer."
+    },
+    "program": {
+     "permit": true,
+     "text": "A paid city or nonprofit youth program is a paid job, so the same permit applies. Many programs tell you what to turn in, so read their instructions and ask which school form they want."
+    },
+    "odd": {
+     "permit": false,
+     "text": "Babysitting, lawn mowing, yard work and other occasional odd jobs in private homes do not need a permit."
+    },
+    "own": {
+     "permit": false,
+     "text": "Running your own business (tutoring, pet care, selling crafts) does not need a permit. Delivering newspapers on your own route does not either."
+    },
+    "volunteer": {
+     "permit": false,
+     "text": "True unpaid volunteering does not need a permit. Have your parent's permission on file with your school (California regulation 5 CCR 10121)."
+    },
+    "intern": {
+     "permit": null,
+     "text": "An unpaid internship at a nonprofit, school or library is usually fine and is not a paid job, so no work permit. At a for-profit company it is only allowed if you are the one who mainly benefits, like a class. Otherwise it should be a paid job, and then you need the permit."
+    },
+    "family": {
+     "permit": true,
+     "text": "Working for your parent's business usually still needs a permit, and the usual age and hour rules apply. The exception is farm or home work on property the parent controls."
+    },
+    "acting": {
+     "permit": null,
+     "text": "Acting and modeling use a different permit from the Labor Commissioner, not the school permit. Call 833-526-4636 before you accept."
+    }
+   },
+   "adult": "Graduates of high school and teens with a certificate of proficiency do not need a permit. At 18 you do not need one."
+  },
+  "ga": {
+   "name": "Georgia",
+   "read": "Oct 9, 2026",
+   "permit": "Employment Certificate (work permit)",
+   "needBelow": 16,
+   "issuer": "Your school (you get a data sheet there), or the county school superintendent's office if you do not go to school.",
+   "steps": [
+    "Line up the job first. Your employer fills in a section about the job.",
+    "Get the data sheet from your school, or start online with Georgia DOL.",
+    "Bring a certified birth certificate.",
+    "Get the school letter saying you are enrolled full time and your attendance is in good standing. It is updated each January."
+   ],
+   "bring": [
+    "Certified birth certificate",
+    "The data sheet with the employer's section filled in",
+    "School letter: enrolled full time, attendance in good standing"
+   ],
+   "timing": "Not stated on the pages we read. Ask your school office how long it takes.",
+   "renew": "Not stated on the pages we read.",
+   "call": "Georgia DOL Child Labor unit: 1-877-709-8185, childlabor@gdol.ga.gov",
+   "links": [
+    {
+     "t": "Georgia DOL instructions",
+     "u": "https://dol.georgia.gov/child-labor-employment-certificate-instructions"
+    },
+    {
+     "t": "Start online",
+     "u": "https://dol.georgia.gov/get-youth-work-permit-online"
+    },
+    {
+     "t": "School letter",
+     "u": "https://dol.georgia.gov/child-labor-school-attendance-requirements"
+    },
+    {
+     "t": "Georgia rules on this site",
+     "u": "states.html#georgia"
+    }
+   ],
+   "hours": {
+    "14": "At most employers the federal limits apply, and they are stricter. School days: up to 3 hours. School weeks: up to 18 hours. Non-school days: up to 8 hours. When school is out: up to 40 hours a week. Only between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day).",
+    "16": "Georgia and federal law set no hour limits at 16 and 17. Dangerous jobs are still off limits, and anyone 17 or younger may not take orders for or serve alcohol, except where it is sold to take off the premises."
+   },
+   "wage": "$7.25 an hour at nearly every employer.",
+   "minAge": {
+    "job": 14,
+    "note": "Most non-farm jobs covered by federal law start at 14."
+   },
+   "kinds": {
+    "job": {
+     "permit": true,
+     "text": "Every minor under 16 needs an Employment Certificate for a paid job. At 16 and 17 it is not required."
+    },
+    "program": {
+     "permit": true,
+     "text": "A paid youth program is a paid job, so under 16 you need the Employment Certificate. Ask the program what they want you to turn in."
+    },
+    "odd": {
+     "permit": null,
+     "text": "The Georgia pages we read do not say whether odd jobs for neighbors need a certificate. Ask Georgia DOL Child Labor: 1-877-709-8185."
+    },
+    "own": {
+     "permit": null,
+     "text": "The Georgia pages we read do not say whether running your own small business needs a certificate. Ask Georgia DOL Child Labor: 1-877-709-8185."
+    },
+    "volunteer": {
+     "permit": false,
+     "text": "Volunteering without pay does not need a permit, and a work permit is not required if you are not being paid for community service."
+    },
+    "intern": {
+     "permit": null,
+     "text": "We found no Georgia page that sets its own internship rule, so the federal fact sheet is the guide. If the internship is unpaid, a work permit is not required for unpaid community service. If it asks for regular hours and real jobs for free, ask a parent or counselor to check it."
+    },
+    "family": {
+     "permit": null,
+     "text": "The Georgia pages we read do not cover work for a parent's business. Ask Georgia DOL Child Labor: 1-877-709-8185."
+    },
+    "acting": {
+     "permit": null,
+     "text": "Georgia has its own page for minors in entertainment. Start at dol.georgia.gov/employers/child-labor-and-minors-entertainment and ask Georgia DOL Child Labor: 1-877-709-8185."
+    }
+   },
+   "adult": "At 16 and older you do not need an Employment Certificate in Georgia."
+  },
+  "ny": {
+   "name": "New York",
+   "read": "Oct 9, 2026",
+   "permit": "Working papers (employment certificate)",
+   "needBelow": 18,
+   "issuer": "Your school. In New York City you apply at your own school, or at the public high school nearest home if you are not in school.",
+   "steps": [
+    "For a part-time student job you do not need an employer first.",
+    "Fill out the application and have a parent sign it.",
+    "Bring proof of age, a doctor's note that you are fit to work, and your school ID or a recent report card.",
+    "Hand it in at school. Your employer keeps your original papers."
+   ],
+   "bring": [
+    "Parent-signed application",
+    "Proof of age, such as a birth certificate with a seal",
+    "A doctor's note from the last 12 months (a school sports physical counts)",
+    "School ID or a recent report card"
+   ],
+   "timing": "Not stated on the pages we read. The state says a new digital process starts in 2027.",
+   "renew": "Not stated on the pages we read.",
+   "call": "New York State Department of Labor: 888-469-7365 or 888-525-2267",
+   "links": [
+    {
+     "t": "NY DOL working papers",
+     "u": "https://dol.ny.gov/working-papers"
+    },
+    {
+     "t": "NYC Public Schools",
+     "u": "https://www.schools.nyc.gov/get-involved/students/working-papers"
+    },
+    {
+     "t": "New York rules on this site",
+     "u": "states.html#newyork"
+    }
+   ],
+   "hours": {
+    "14": "School in session: not before 7 a.m. or after 7 p.m., up to 3 hours on a school day, 8 on a non-school day, 18 a week, 6 days a week. School closed all week: up to 8 hours a day and 40 a week.",
+    "16": "School in session: up to 4 hours on a day before a school day (Monday to Thursday), 8 hours Friday to Sunday and holidays, 28 a week, 6 days a week. Not before 6 a.m. and generally not after 10 p.m., or midnight with a parent's written permission."
+   },
+   "wage": "$17.00 an hour in New York City, Long Island and Westchester, and $16.00 in the rest of the state (2026).",
+   "minAge": {
+    "job": 14,
+    "note": "Ages 14 to 17 need working papers for any job in New York."
+   },
+   "kinds": {
+    "job": {
+     "permit": true,
+     "text": "Ages 14 to 17 need an employment certificate, called working papers, for any job in New York."
+    },
+    "program": {
+     "permit": true,
+     "text": "A paid youth program is a job, so ages 14 to 17 need working papers. Many programs, including the NYC summer youth program, tell you what to turn in, so read their steps."
+    },
+    "odd": {
+     "permit": false,
+     "text": "Babysitting and casual yard work or chores at home are exempt from working papers."
+    },
+    "own": {
+     "permit": null,
+     "text": "The New York pages we read do not say whether your own small business needs working papers. Ask the State Department of Labor: 888-469-7365."
+    },
+    "volunteer": {
+     "permit": null,
+     "text": "Unpaid volunteers are allowed at charitable, educational or religious organizations, and they may not replace or add to paid staff. The pages we read do not require working papers for volunteers, so confirm with your school."
+    },
+    "intern": {
+     "permit": null,
+     "text": "New York is stricter than most states. A for-profit can have an unpaid intern only if all its criteria are met, including a clear written notice before the internship starts that no wages are paid. For nonprofits there is no intern exemption, only volunteers. If you are unsure, ask the state labor department."
+    },
+    "family": {
+     "permit": null,
+     "text": "The New York pages we read do not cover work for a parent's business. Ask the State Department of Labor: 888-469-7365."
+    },
+    "acting": {
+     "permit": null,
+     "text": "Child performers have separate rules in New York that we did not read. Ask the State Department of Labor: 888-469-7365."
+    }
+   },
+   "adult": "At 18 you do not need working papers in New York."
+  },
+  "il": {
+   "name": "Illinois",
+   "read": "Oct 9, 2026",
+   "permit": "Employment certificate",
+   "needBelow": 16,
+   "issuer": "A school issuing officer. The Illinois Department of Labor does not issue it. Call your school district or Regional Office of Education first.",
+   "steps": [
+    "Get a letter of intent to hire from the employer naming the job and hours.",
+    "You and a parent apply in person, unless your school allows remote.",
+    "Bring proof of age, a school schedule statement and a physical-fitness statement.",
+    "The school may not charge a fee."
+   ],
+   "bring": [
+    "Letter of intent to hire (job and hours)",
+    "Proof of age",
+    "School schedule statement",
+    "Physical-fitness statement"
+   ],
+   "timing": "Not stated on the pages we read. Call your school district first.",
+   "renew": "The certificate lasts one year for that employer.",
+   "call": "Illinois Department of Labor child labor questions: 312-793-5570, hotline 800-645-5784",
+   "links": [
+    {
+     "t": "IDOL child labor FAQ",
+     "u": "https://labor.illinois.gov/faqs/child-labor-faq.html"
+    },
+    {
+     "t": "ISBE work permits",
+     "u": "https://www.isbe.net/Pages/Work-Permits.aspx"
+    },
+    {
+     "t": "Illinois rules on this site",
+     "u": "states.html#illinois"
+    }
+   ],
+   "hours": {
+    "14": "No more than 18 hours in a school week, 40 when school is out, 3 hours on a school day, 8 hours in any 24 hours, and only between 7 a.m. and 7 p.m. (until 9 p.m. from June 1 to Labor Day). A meal break of at least 30 minutes by the 5th hour in a row.",
+    "16": "The Illinois child labor law does not limit your hours at 16 and 17, and federal law does not either."
+   },
+   "wage": "$15.00 an hour. Under 18 you may be paid $13.00 for your first 650 hours in a year with one employer. Chicago is $17.05 from July 1, 2026.",
+   "minAge": {
+    "job": 14,
+    "note": "Most non-farm jobs covered by federal law start at 14."
+   },
+   "kinds": {
+    "job": {
+     "permit": true,
+     "text": "Illinois requires a certificate for workers under 16. It is not required at 16 or 17."
+    },
+    "program": {
+     "permit": true,
+     "text": "A paid youth program is a paid job, so under 16 you need the certificate. Programs such as the Chicago summer youth jobs tell you what to turn in, so read their steps."
+    },
+    "odd": {
+     "permit": null,
+     "text": "The Illinois pages we read do not say whether odd jobs for neighbors need a certificate. Ask Illinois DOL child labor questions: 312-793-5570."
+    },
+    "own": {
+     "permit": null,
+     "text": "The Illinois pages we read do not say whether your own small business needs a certificate. Ask Illinois DOL child labor questions: 312-793-5570."
+    },
+    "volunteer": {
+     "permit": null,
+     "text": "The Illinois pages we read do not say whether volunteering needs a certificate. Ask Illinois DOL child labor questions: 312-793-5570."
+    },
+    "intern": {
+     "permit": null,
+     "text": "We found no Illinois page that sets its own internship rule, so the federal fact sheet is the guide. If an internship asks you to work regular hours and do real jobs for free, ask a parent or counselor to check it."
+    },
+    "family": {
+     "permit": null,
+     "text": "The Illinois pages we read do not cover work for a parent's business. Ask Illinois DOL child labor questions: 312-793-5570."
+    },
+    "acting": {
+     "permit": null,
+     "text": "Illinois has separate rules for child performers that we did not read. Ask Illinois DOL child labor questions: 312-793-5570."
+    }
+   },
+   "adult": "At 16 and older you do not need a certificate in Illinois."
+  }
+ },
+ "kinds": [
+  [
+   "job",
+   "A paid job at a business, store, restaurant, camp or pool"
+  ],
+  [
+   "program",
+   "A paid city or nonprofit youth program"
+  ],
+  [
+   "odd",
+   "Babysitting, yard work or odd jobs for neighbors"
+  ],
+  [
+   "own",
+   "My own small business (tutoring, crafts, pet care)"
+  ],
+  [
+   "volunteer",
+   "Unpaid volunteering at a nonprofit, church or library"
+  ],
+  [
+   "intern",
+   "An unpaid internship"
+  ],
+  [
+   "family",
+   "Working for my parent's business"
+  ],
+  [
+   "acting",
+   "Acting or modeling"
+  ]
+ ]
+}

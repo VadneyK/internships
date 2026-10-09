@@ -67,6 +67,8 @@
         ny: "New York requires working papers for ages 14 to 17. See <a href=\"states.html#newyork\">the New York rules</a>.",
         il: "Illinois requires an employment certificate for paid work under 16. See <a href=\"states.html#illinois\">the Illinois rules</a>." }[st] ||
         "Teens often need a work permit for paid work. The rules depend on your state: see <a href=\"rules.html\">California</a> or <a href=\"states.html\">other states</a>.";
+      var pk = (e.paid_type === "paid" || e.paid_type === "stipend" || e.paid_type === "mixed") && e.type === "paid-youth-program" ? "program" : "job";
+      permit += st ? ' <a href="permit.html?state=' + st + "&kind=" + pk + '">Find your exact permit and steps</a>.' : ' <a href="permit.html">Find your permit</a>.';
       html += "<div><dt>Work permit</dt><dd>" + permit + "</dd></div>";
     }
     if (e.notes) html += "<div><dt>Good to know</dt><dd>" + G.esc(e.notes) + "</dd></div>";

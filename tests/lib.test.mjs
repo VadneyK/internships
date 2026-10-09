@@ -127,3 +127,38 @@ test("stateOf picks the state whose rules apply", () => {
   assert.equal(L.stateOf({ regions: ["chicago"] }), "il");
   assert.equal(L.stateOf({ regions: ["virtual", "national"] }), "");
 });
+
+import fs from "node:fs";
+const PERMITS = JSON.parse(fs.readFileSync(new URL("../data/permits.json", import.meta.url), "utf8"));
+
+test("permitFor: the right permit for the right age, state and kind", () => {
+  const f = (st, age, kind) => L.permitFor(PERMITS, st, age, kind);
+  assert.equal(f("ca", 15, "job").verdict, "need");
+  assert.equal(f("ca", 17, "job").verdict, "need");
+  assert.equal(f("ca", 18, "job").verdict, "adult");
+  assert.equal(f("ca", 13, "job").verdict, "young");
+  assert.equal(f("ca", 13, "odd").verdict, "none");
+  assert.equal(f("ca", 16, "volunteer").verdict, "none");
+  assert.equal(f("ga", 15, "job").verdict, "need");
+  assert.equal(f("ga", 16, "job").verdict, "none");
+  assert.equal(f("il", 15, "program").verdict, "need");
+  assert.equal(f("il", 16, "job").verdict, "none");
+  assert.equal(f("ny", 17, "job").verdict, "need");
+  assert.equal(f("ny", 15, "odd").verdict, "none");
+  assert.equal(f("ny", 15, "own").verdict, "ask");
+  assert.equal(f("tx", 15, "job").verdict, "nostate");
+  assert.match(f("ca", 15, "job").hours, /3 hours/);
+  assert.match(f("ny", 17, "job").hours, /28 a week/);
+});
+
+test("permits.json: every state answers every kind, with sources and no placeholder text", () => {
+  const kinds = PERMITS.kinds.map((k) => k[0]);
+  Object.keys(PERMITS.states).forEach((st) => {
+    const s = PERMITS.states[st];
+    kinds.forEach((k) => assert.ok(s.kinds[k] && s.kinds[k].text, st + " has no answer for " + k));
+    assert.ok(s.links.length >= 2 && s.call && s.read && s.steps.length >= 3 && s.bring.length >= 3, st);
+    s.links.forEach((l) => assert.match(l.u, /^(https:\/\/|[a-z]+\.html)/));
+    assert.ok(L.REGIONS.length > 0 && L.STATE_OF);
+  });
+  assert.doesNotMatch(JSON.stringify(PERMITS), /undefined|NaN|TODO|—|–/);
+});
