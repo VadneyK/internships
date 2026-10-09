@@ -28,7 +28,7 @@ def _asset_version():
 ver = _asset_version()
 
 layout = open(os.path.join(SRC, "_layout.html"), encoding="utf-8").read()
-PAGES = ["find", "playbook", "resume", "insights", "rules", "contribute", "about"]
+PAGES = ["find", "playbook", "resume", "ready", "insights", "rules", "contribute", "leaders", "about"]
 
 def build(name):
     raw = open(os.path.join(SRC, name + ".html"), encoding="utf-8").read()
@@ -52,6 +52,7 @@ def build(name):
         "count": str(meta.get("count", 0)),
         "checked": meta.get("checked_label", ""),
         "issues": ISSUES,
+        "robots": '\n<meta name="robots" content="noindex">' if fields.get("noindex") == "true" else "",
     }
     gaps = json.load(open(os.path.join(ROOT, "data", "gaps.json"), encoding="utf-8"))
     import html as _html
@@ -83,7 +84,7 @@ for fn in sorted(os.listdir(SRC)):
 
 # robots.txt and sitemap.xml
 import datetime as _dt
-_pages = ["index"] + PAGES
+_pages = ["index"] + [p for p in PAGES if p != "leaders"]  # leaders is unlisted until the owner approves it
 _today = meta.get("checked", _dt.date.today().isoformat())
 _urls = "".join("  <url><loc>%s%s</loc><lastmod>%s</lastmod></url>\n" % (BASE, "" if p == "index" else p + ".html", _today) for p in _pages)
 open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + _urls + "</urlset>\n")

@@ -157,13 +157,13 @@ for (const file of PAGES) {
     assert.ok(desc && desc.getAttribute("content").trim().length > 0, "empty meta description");
   });
 
-  test(`${file}: header nav has 7 links`, async () => {
+  test(`${file}: header nav has 8 links`, async () => {
     const { document } = await load(file);
-    assert.equal(document.querySelectorAll("nav.nav a").length, 7);
+    assert.equal(document.querySelectorAll("nav.nav a").length, 8);
   });
 
-  if (file !== "404.html" && file !== "index.html") {
-    // Home is not one of the six nav links (the brand link goes home), so only the other pages mark a current nav link.
+  if (!["404.html", "index.html", "leaders.html"].includes(file)) {
+    // Home and the leaders page are not nav links (footer links only), so only the other pages mark a current nav link.
     test(`${file}: exactly one nav link has aria-current="page"`, async () => {
       const { document } = await load(file);
       const current = document.querySelectorAll('nav.nav a[aria-current="page"]');

@@ -381,3 +381,6 @@ tr:last-child td { border-bottom: 0; }
 /* known gaps */
 .gaplist { display: grid; gap: .6rem; padding-left: 1.1rem; }
 #gaps ul { margin: .4rem 0 0; padding-left: 1.1rem; display: grid; gap: .4rem; }
+
+/* long fill-in lines (underscores) must wrap on narrow screens */
+.letter { overflow-wrap: anywhere; }

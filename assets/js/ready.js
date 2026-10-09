@@ -1,0 +1,70 @@
+/* Get ready page: a saved checklist and a school-district picker. Everything stays on this device. */
+(function () {
+  "use strict";
+  var G = window.TIG;
+  var $ = function (id) { return document.getElementById(id); };
+
+  var ITEMS = [
+    ["job", "I have a job offer. The permit comes after the offer.", "#permit"],
+    ["form", "I started the work permit form and my parent and employer signed it.", "#permit"],
+    ["permit", "I have my permit before my first shift.", "#permit"],
+    ["docs", "I know which two documents I will bring on day one.", "#papers"],
+    ["ssn", "I have a Social Security card or a birth certificate with a seal, or I ordered one.", "#papers"],
+    ["bank", "I know how I will be paid, and where the money goes.", "#money"],
+    ["tax", "I filled out the W-4 and DE 4 with a parent.", "#money"],
+    ["ride", "I know how I will get to work.", "#ride"]
+  ];
+
+  var DISTRICTS = {
+    davis: {
+      name: "Davis Joint Unified",
+      steps: ["During the school year, your school issues the permit. Pick up the application at your school office.", "Fill it out with your employer and a parent, then drop it off at the school office.", "Allow about three days. The permit is given directly to you.", "In summer, permits are processed electronically through Davis Senior High. Contact Fabiola Gutierrez at fgutierrez@djusd.net."],
+      url: "https://www.djusd.net/departments/student_support_services/work_permit", read: "DJUSD work permit page"
+    },
+    oakland: {
+      name: "Oakland Unified",
+      steps: ["You must start the application yourself. A parent or employer cannot fill it out for you, or it will be denied.", "You need your parent's email and your employer's email. You fill in your part, route it to your parent, and it then goes to your employer.", "Each school has a work permit point person. The district office is (510) 879-3085, or email workpermits@ousd.org.", "The page said 2025-26 permits expired August 9, 2026, and schools began 2026-27 applications on August 3, 2026. Ask whether you need a new one."],
+      url: "https://www.ousd.org/high-school-linked-learning-office/for-students-families/work-permits", read: "OUSD work permits page"
+    },
+    sf: {
+      name: "San Francisco Unified",
+      steps: ["High school students apply at their school site. In summer, on school breaks, and for middle school students, the Transcripts, Records and Work Permits Office at 20 Cook St. handles it.", "You must be a current SFUSD student age 13 or older and have satisfactory attendance.", "During the school year you need a 2.0 GPA. You do not need the GPA for a summer permit. A counselor can look at an exemption.", "Bring the state application form (CDE Form B1-1) signed by you, a parent, and your employer, plus proof of age."],
+      url: "https://www.sfusd.edu/services/student-services/transcripts-work-permits-student-records/1-work-permits", read: "SFUSD work permits page"
+    },
+    sj: {
+      name: "San Jose Unified",
+      steps: ["Work permits are available for students ages 14 to 18. Get hired first, then fill out the request form.", "Get signatures from your employer and a parent or guardian, and sign it yourself.", "Submit the scanned form digitally. Processing can take up to three business days.", "You need regular attendance and a 2.0 GPA. This is from San Jose High's page. Other San Jose Unified schools may differ, so ask your school's office."],
+      url: "https://sjhs.sjusd.org/student-resources/work-permits", read: "San Jose High work permit page"
+    }
+  };
+
+  var done = G.store.get("ready", {});
+  var list = $("readyList");
+  function paint() {
+    list.innerHTML = ITEMS.map(function (it, i) {
+      var on = !!done[it[0]];
+      return '<li><div><label style="display:flex;gap:.6rem;align-items:flex-start;font-weight:700;cursor:pointer;"><input type="checkbox" data-k="' + it[0] + '"' + (on ? " checked" : "") + ' style="margin-top:.3rem;width:1.2rem;height:1.2rem;"><span>' + G.esc(it[1]) + '</span></label> <a class="small" href="' + it[2] + '">See how</a></div></li>';
+    }).join("");
+    var n = ITEMS.filter(function (it) { return done[it[0]]; }).length;
+    $("readySum").textContent = n + " of " + ITEMS.length + " done";
+  }
+  list.addEventListener("change", function (e) {
+    var k = e.target.getAttribute("data-k"); if (!k) return;
+    done[k] = e.target.checked; G.store.set("ready", done); paint();
+  });
+  $("readyReset").addEventListener("click", function () { done = {}; G.store.set("ready", done); paint(); });
+  paint();
+
+  var sel = $("dist");
+  Object.keys(DISTRICTS).forEach(function (k) { var o = document.createElement("option"); o.value = k; o.textContent = DISTRICTS[k].name; sel.appendChild(o); });
+  ["Fremont Unified", "Sacramento City Unified", "Another district or a charter or private school"].forEach(function (n) { var o = document.createElement("option"); o.value = "other"; o.textContent = n; sel.appendChild(o); });
+  sel.addEventListener("change", function () {
+    var out = $("distOut"), d = DISTRICTS[sel.value];
+    if (!sel.value) { return; }
+    if (!d) {
+      out.innerHTML = "<p>We did not find a district-wide page for this one. Ask your school's main office or attendance office. During the school year the school you attend issues the permit. The common steps are: get hired, fill out the form with your employer and a parent, hand it in, and wait a few days. Charter and private schools often use their own office, and some districts do not issue permits for them.</p>";
+      return;
+    }
+    out.innerHTML = "<h3>" + G.esc(d.name) + "</h3><ol>" + d.steps.map(function (s) { return "<li>" + G.esc(s) + "</li>"; }).join("") + '</ol><p class="small muted">Read on Oct 9, 2026: <a href="' + G.esc(d.url) + '" target="_blank" rel="noopener">' + G.esc(d.read) + "</a>. Always confirm with your school before you go.</p>";
+  });
+})();

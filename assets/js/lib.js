@@ -13,7 +13,10 @@
     ["davis", "Davis"], ["sacramento", "Sacramento"], ["yolo", "Yolo County"],
     ["silicon-valley", "Silicon Valley"], ["san-jose", "San Jose"], ["peninsula", "Peninsula"], ["fremont", "Fremont"],
     ["oakland", "Oakland"], ["berkeley", "Berkeley"], ["alameda", "Alameda"], ["east-bay", "East Bay"],
-    ["san-francisco", "San Francisco"], ["statewide", "California"], ["virtual", "Online"], ["national", "National"]
+    ["san-francisco", "San Francisco"], ["statewide", "California"],
+    ["orange-county", "Orange County"], ["los-angeles", "Los Angeles"], ["inland-empire", "Inland Empire"], ["san-diego", "San Diego"],
+    ["atlanta", "Atlanta"], ["georgia", "Georgia"], ["new-york-city", "New York City"], ["new-york-state", "New York State"],
+    ["chicago", "Chicago area"], ["illinois", "Illinois"], ["virtual", "Online"], ["national", "National"]
   ];
   /* Hubs group the regions into the areas teens recognize. [id, label, region ids] */
   var HUBS = [
@@ -22,6 +25,10 @@
     ["oak", "Oakland and East Bay", ["oakland", "berkeley", "alameda", "east-bay"]],
     ["sf", "San Francisco", ["san-francisco"]],
     ["state", "California-wide", ["statewide"]],
+    ["socal", "Southern California", ["orange-county", "los-angeles", "inland-empire", "san-diego"]],
+    ["atl", "Atlanta and Georgia", ["atlanta", "georgia"]],
+    ["nyc", "New York", ["new-york-city", "new-york-state"]],
+    ["chi", "Chicago and Illinois", ["chicago", "illinois"]],
     ["online", "Online and national", ["virtual", "national"]]
   ];
   var TYPES = {
