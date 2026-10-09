@@ -83,6 +83,11 @@
     d.kinds.forEach(function (k) { opt($("pKind"), k[0], k[1]); });
     var q = new URLSearchParams(location.search);
     ["State", "Age", "Kind"].forEach(function (n) { var v = q.get(n.toLowerCase()); if (v) $("p" + n).value = v; });
+    var asked = q.get("state");
+    if (asked && !d.states[asked]) {
+      var u = L.permitFor(d, asked, 15, "job");
+      $("pOut").innerHTML = '<article class="card verdict ask"><h2>' + G.esc(u.headline) + "</h2><p>" + G.esc(u.text) + "</p></article>";
+    }
     ["pState", "pAge", "pKind"].forEach(function (id) { $(id).addEventListener("change", render); });
     ["mName", "mEmp", "mTo"].forEach(function (id) { $(id).addEventListener("input", paintMsg); $(id).addEventListener("change", paintMsg); });
     $("mCopy").addEventListener("click", function () { G.copy($("mText").textContent); });

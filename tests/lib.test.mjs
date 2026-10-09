@@ -162,3 +162,26 @@ test("permits.json: every state answers every kind, with sources and no placehol
   });
   assert.doesNotMatch(JSON.stringify(PERMITS), new RegExp("undefined|NaN|TODO|" + String.fromCharCode(0x2014) + "|" + String.fromCharCode(0x2013)));
 });
+
+test("PERMIT_STATES matches the states in permits.json", () => {
+  assert.deepEqual([...L.PERMIT_STATES].sort(), Object.keys(PERMITS.states).sort());
+});
+
+test("places: every city and area resolves to real region ids, and matches filters by place", () => {
+  const known = new Set(L.REGIONS.map((r) => r[0]));
+  L.CITIES.forEach((c) => c[2].forEach((r) => assert.ok(known.has(r), c[0] + " has unknown region " + r)));
+  L.AREAS.forEach((a) => {
+    a[2].forEach((cid) => assert.ok(L.CITIES.some((c) => c[0] === cid), a[0] + " has unknown city " + cid));
+    assert.ok(L.placeRegions("area:" + a[0]).length > 0);
+  });
+  assert.equal(L.placeRegions("city:nowhere"), null);
+  assert.equal(L.placeLabel("city:boston"), "Boston");
+  const boston = { regions: ["boston"] }, ca = { regions: ["statewide"] }, online = { regions: ["virtual"] };
+  assert.equal(L.matches(boston, { place: "city:boston" }, Date.now()), true);
+  assert.equal(L.matches(ca, { place: "city:boston" }, Date.now()), false);
+  assert.equal(L.matches(ca, { place: "city:san-diego" }, Date.now()), true, "California-wide programs count for California cities");
+  assert.equal(L.matches(online, { place: "city:boston" }, Date.now()), false);
+  assert.equal(L.matches(online, { place: "city:boston", placeOnline: true }, Date.now()), true);
+  assert.equal(L.matches({ regions: ["madison"] }, { place: "area:midwest" }, Date.now()), true);
+  assert.deepEqual(L.hubsOfPlace("city:boston"), ["east"]);
+});

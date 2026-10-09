@@ -459,3 +459,25 @@ test("find: out-of-state cards never mention a California work permit", async ()
     if (where === "nyc") assert.match(text, /New York requires working papers/);
   }
 });
+
+test("find: the city and area picker lists every city with a count, filters, saves to the URL, and explains thin places", async () => {
+  const { window, document } = await loadFind({ search: "" });
+  const sel = document.getElementById("place");
+  assert.ok(sel.querySelectorAll("option").length > 40, "all cities and areas should be listed");
+  assert.match([...sel.options].find((o) => o.value === "city:boston").textContent, /Boston \(none yet\)|Boston \(\d+\)/);
+  type(window, sel, "city:san-diego"); await tick();
+  assert.equal(document.querySelectorAll("#hubChips .chip[aria-pressed=true]").length, 0, "picking a city clears the area chips");
+  assert.match(window.location.search, /at=city%3Asan-diego/);
+  type(window, sel, "city:seattle"); await tick();
+  const note = document.getElementById("placeNote");
+  assert.equal(note.hidden, false);
+  assert.doesNotMatch(note.textContent, /undefined|NaN/);
+  chip(document, "hubChips", "oak").click(); await tick();
+  assert.equal(sel.value, "", "picking an area chip clears the city");
+});
+
+test("find: a city link in the URL opens with that city chosen", async () => {
+  const { document } = await loadFind({ search: "?at=city:davis" });
+  assert.equal(document.getElementById("place").value, "city:davis");
+  assert.match(document.getElementById("count").textContent, /^\d+ of \d+ programs$/);
+});

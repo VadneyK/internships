@@ -94,6 +94,22 @@
 
   /* labels and helpers come from lib.js (pure functions, unit tested) */
   var L = G.lib;
+  /* Fill a select with every city and area, each with how many programs it has. A city with none says so, so nobody thinks the site is broken. */
+  G.fillPlaces = function (sel, entries, keep) {
+    function n(place) { var c = 0; entries.forEach(function (e) { if (L.matches(e, { place: place }, Date.now())) c++; }); return c; }
+    function group(label, kind, list) {
+      var g = document.createElement("optgroup"); g.label = label;
+      list.forEach(function (x) {
+        var c = n(kind + ":" + x[0]), o = document.createElement("option");
+        o.value = kind + ":" + x[0]; o.textContent = x[1] + (c ? " (" + c + ")" : " (none yet)");
+        g.appendChild(o);
+      });
+      sel.appendChild(g);
+    }
+    group("Areas", "area", L.AREAS);
+    group("Cities", "city", L.CITIES);
+    if (keep) sel.value = keep;
+  };
   G.REGIONS = L.REGIONS; G.HUBS = L.HUBS; G.TYPES = L.TYPES; G.FIELDS = L.FIELDS; G.PAID = L.PAID;
   G.esc = L.esc; G.safeUrl = L.safeUrl; G.parseISO = L.parseISO; G.fmtDate = L.fmtDate; G.daysUntil = L.daysUntil;
 

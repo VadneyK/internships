@@ -8,7 +8,6 @@
   var L = G.lib;
   function fut(e) { return L.futureDeadline(e, Date.now()); }
 
-  G.HUBS.forEach(function (h) { var o = document.createElement("option"); o.value = h[0]; o.textContent = h[1]; $("pHub").appendChild(o); });
   var fields = Object.keys(G.FIELDS).filter(function (k) { return k !== "any"; });
   fields.forEach(function (k) { var o = document.createElement("option"); o.value = k; o.textContent = G.FIELDS[k]; $("pField").appendChild(o); });
 
@@ -16,12 +15,12 @@
     var age = $("pAge").value, hub = $("pHub").value, field = $("pField").value;
     var box = $("matches"), more = $("matchMore");
     if (!age && !hub && !field) { box.innerHTML = ""; more.hidden = true; return; }
-    var hubs = hub ? [hub] : [], fl = field ? [field] : [];
+    var fl = field ? [field] : [];
     var list = L.sortList(all.filter(function (e) {
-      return L.matches(e, { hubs: hubs, age: age, fields: fl }, Date.now());
+      return L.matches(e, { place: hub, age: age, fields: fl }, Date.now());
     }), "best", Date.now());
     var q = new URLSearchParams();
-    if (age) q.set("age", age); if (hub) q.set("where", hub); if (field) q.set("interest", field);
+    if (age) q.set("age", age); if (hub) q.set("at", hub); if (field) q.set("interest", field);
     var top = list.slice(0, 4);
     if (!top.length) {
       box.innerHTML = '<div class="card empty" style="grid-column:1/-1"><h3>No exact match yet</h3><p>Try a different area or interest, or browse everything.</p></div>';
@@ -41,6 +40,7 @@
 
   G.loadEntries().then(function (data) {
     all = data;
+    G.fillPlaces($("pHub"), all);
     var soon = all.filter(function (e) { return fut(e) && e.deadline_confidence === "confirmed-2026-27"; })
       .sort(function (a, b) { return fut(a) - fut(b) || (a.priority || 3) - (b.priority || 3); }).slice(0, 8);
     $("soonList").innerHTML = soon.length ? soon.map(function (e) {

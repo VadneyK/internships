@@ -4,7 +4,7 @@
   var G = window.TIG;
   var $ = function (id) { return document.getElementById(id); };
   var all = [];
-  var state = { q: "", hubs: [], age: "", when: "", season: "", paid: [], types: [], fields: [], verified: false, noPermit: false, view: "cards", sort: "best", saved: false };
+  var state = { q: "", hubs: [], place: "", age: "", when: "", season: "", paid: [], types: [], fields: [], verified: false, noPermit: false, view: "cards", sort: "best", saved: false };
 
   var L = G.lib, PAID_GROUPS = L.PAID_GROUPS;
   function now() { return Date.now(); }
@@ -68,7 +68,7 @@
         il: "Illinois requires an employment certificate for paid work under 16. See <a href=\"states.html#illinois\">the Illinois rules</a>." }[st] ||
         "Teens often need a work permit for paid work. The rules depend on your state: see <a href=\"rules.html\">California</a> or <a href=\"states.html\">other states</a>.";
       var pk = (e.paid_type === "paid" || e.paid_type === "stipend" || e.paid_type === "mixed") && e.type === "paid-youth-program" ? "program" : "job";
-      permit += st ? ' <a href="permit.html?state=' + st + "&kind=" + pk + '">Find your exact permit and steps</a>.' : ' <a href="permit.html">Find your permit</a>.';
+      permit += st && L.PERMIT_STATES.indexOf(st) > -1 ? ' <a href="permit.html?state=' + st + "&kind=" + pk + '">Find your exact permit and steps</a>.' : ' <a href="permit.html">Find your permit</a>.';
       html += "<div><dt>Work permit</dt><dd>" + permit + "</dd></div>";
     }
     if (e.notes) html += "<div><dt>Good to know</dt><dd>" + G.esc(e.notes) + "</dd></div>";
@@ -124,7 +124,8 @@
   var gaps = [];
   function paintGaps() {
     var box = $("gaps"); if (!box) return;
-    var mine = state.hubs.length ? gaps.filter(function (g) { return g.hubs.some(function (h) { return state.hubs.indexOf(h) > -1; }); }) : [];
+    var hubsNow = state.hubs.length ? state.hubs : state.place ? L.hubsOfPlace(state.place) : [];
+    var mine = hubsNow.length ? gaps.filter(function (g) { return g.hubs.some(function (h) { return hubsNow.indexOf(h) > -1; }); }) : [];
     if (!mine.length) { box.hidden = true; box.innerHTML = ""; return; }
     box.hidden = false;
     box.innerHTML = "<h3>Known gaps in this area</h3><ul>" + mine.map(function (g) {
@@ -133,10 +134,26 @@
   }
   fetch("data/gaps.json").then(function (r) { return r.json(); }).then(function (g) { gaps = g; paintGaps(); }).catch(function () {});
 
+  function paintPlaceNote(realN) {
+    var box = $("placeNote"); if (!box) return;
+    if (!state.place) { box.hidden = true; box.innerHTML = ""; return; }
+    var name = G.esc(L.placeLabel(state.place));
+    box.hidden = false;
+    box.innerHTML = realN === 0
+      ? "<b>We have not found programs in " + name + " yet.</b> Showing online and national programs you can do from anywhere. <a href=\"contribute.html\">Know one? Help add it.</a>"
+      : realN < 3
+        ? "<b>Only " + realN + " program" + (realN === 1 ? "" : "s") + " found in " + name + " so far,</b> so online and national programs are included too. <a href=\"contribute.html\">Know another? Help add it.</a>"
+        : "Showing programs in <b>" + name + "</b>.";
+  }
+
   var PAGE = 60, shown = PAGE;
   function render(resetPage) {
     if (resetPage) shown = PAGE;
+    state.placeOnline = false;
     var list = sortList(all.filter(matches));
+    var realN = list.length;
+    if (state.place && realN < 3) { state.placeOnline = true; list = sortList(all.filter(matches)); }
+    paintPlaceNote(realN);
     $("count").textContent = list.length + " of " + all.length + " programs";
     $("savedN").textContent = G.saved.ids().length;
     var out = $("out"), dates = $("dates");
@@ -167,6 +184,7 @@
       var b = ev.target.closest(".chip"); if (!b) return;
       var v = b.getAttribute("data-val"), arr = state[key], i = arr.indexOf(v);
       if (i > -1) arr.splice(i, 1); else arr.push(v);
+      if (key === "hubs") state.place = "";
       syncChips(); render(true);
     });
   }
@@ -175,6 +193,7 @@
       var arr = state[b.getAttribute("data-key")];
       b.setAttribute("aria-pressed", String(arr.indexOf(b.getAttribute("data-val")) > -1));
     });
+    $("place").value = state.place || "";
     $("onlyVerified").setAttribute("aria-pressed", String(state.verified));
     $("noPermit").setAttribute("aria-pressed", String(state.noPermit));
     $("savedOnly").setAttribute("aria-pressed", String(state.saved));
@@ -182,8 +201,8 @@
     $("viewDates").setAttribute("aria-pressed", String(state.view === "dates"));
   }
   function resetAll() {
-    state = { q: "", hubs: [], age: "", when: "", season: "", paid: [], types: [], fields: [], verified: false, noPermit: false, view: state.view, sort: "best", saved: false };
-    $("q").value = ""; $("age").value = ""; $("when").value = ""; $("season").value = ""; $("sort").value = "best";
+    state = { q: "", hubs: [], place: "", age: "", when: "", season: "", paid: [], types: [], fields: [], verified: false, noPermit: false, view: state.view, sort: "best", saved: false };
+    $("q").value = ""; $("place").value = ""; $("age").value = ""; $("when").value = ""; $("season").value = ""; $("sort").value = "best";
     syncChips(); render(true);
   }
 
@@ -192,6 +211,7 @@
     var p = new URLSearchParams();
     if (state.q) p.set("q", state.q);
     if (state.hubs.length) p.set("where", state.hubs.join(","));
+    if (state.place) p.set("at", state.place);
     if (state.age) p.set("age", state.age);
     if (state.when) p.set("when", state.when);
     if (state.season) p.set("season", state.season);
@@ -209,7 +229,7 @@
     var p = new URLSearchParams(location.search);
     function list(k) { return (p.get(k) || "").split(",").filter(Boolean); }
     state.q = p.get("q") || "";
-    state.hubs = list("where"); state.age = p.get("age") || ""; state.when = p.get("when") || ""; state.season = p.get("season") || "";
+    state.hubs = list("where"); state.place = p.get("at") || ""; if (state.place && !L.placeRegions(state.place)) state.place = ""; if (state.place) state.hubs = []; state.age = p.get("age") || ""; state.when = p.get("when") || ""; state.season = p.get("season") || "";
     state.paid = list("pay"); state.types = list("kind"); state.fields = list("interest");
     state.verified = p.get("checked") === "1"; state.noPermit = p.get("nopermit") === "1";
     state.view = p.get("view") === "dates" ? "dates" : "cards"; state.sort = p.get("sort") || "best";
@@ -219,7 +239,9 @@
   G.loadEntries().then(function (data) {
     all = data;
     var hubCounts = {}; all.forEach(function (e) { hubOf(e).forEach(function (h) { hubCounts[h] = (hubCounts[h] || 0) + 1; }); });
-    chipGroup("hubChips", G.HUBS.map(function (h) { return [h[0], h[1], hubCounts[h[0]] || 0]; }), "hubs");
+    chipGroup("hubChips", G.HUBS.filter(function (h) { return hubCounts[h[0]]; }).map(function (h) { return [h[0], h[1], hubCounts[h[0]]]; }), "hubs");
+    G.fillPlaces($("place"), all);
+    $("place").addEventListener("change", function (e) { state.place = e.target.value; if (state.place) state.hubs = []; syncChips(); render(true); });
     chipGroup("paidChips", PAID_GROUPS.map(function (g) { return [g[0], g[1]]; }), "paid");
     var tc = {}; all.forEach(function (e) { tc[e.type] = (tc[e.type] || 0) + 1; });
     chipGroup("typeChips", Object.keys(G.TYPES).filter(function (k) { return tc[k]; }).map(function (k) { return [k, G.TYPES[k], tc[k]]; }), "types");

@@ -16,7 +16,45 @@
     ["san-francisco", "San Francisco"], ["statewide", "California"],
     ["orange-county", "Orange County"], ["los-angeles", "Los Angeles"], ["inland-empire", "Inland Empire"], ["san-diego", "San Diego"],
     ["atlanta", "Atlanta"], ["georgia", "Georgia"], ["new-york-city", "New York City"], ["new-york-state", "New York State"],
-    ["chicago", "Chicago area"], ["illinois", "Illinois"], ["virtual", "Online"], ["national", "National"]
+    ["chicago", "Chicago area"], ["illinois", "Illinois"],
+    ["seattle", "Seattle area"],
+    ["washington", "Washington State"],
+    ["vancouver", "Vancouver, BC"],
+    ["british-columbia", "British Columbia"],
+    ["austin", "Austin"],
+    ["texas", "Texas"],
+    ["twin-cities", "Minneapolis and St. Paul"],
+    ["minnesota", "Minnesota"],
+    ["champaign", "Champaign-Urbana"],
+    ["madison", "Madison"],
+    ["wisconsin", "Wisconsin"],
+    ["lafayette", "West Lafayette"],
+    ["bloomington", "Bloomington, Indiana"],
+    ["indiana", "Indiana"],
+    ["columbus", "Columbus"],
+    ["cincinnati", "Cincinnati"],
+    ["ohio", "Ohio"],
+    ["ann-arbor", "Ann Arbor"],
+    ["lansing", "Lansing and East Lansing"],
+    ["michigan", "Michigan"],
+    ["triangle", "Raleigh and Chapel Hill"],
+    ["north-carolina", "North Carolina"],
+    ["college-park", "College Park, Maryland"],
+    ["maryland", "Maryland"],
+    ["fairfax", "Fairfax, Virginia"],
+    ["charlottesville", "Charlottesville"],
+    ["blacksburg", "Blacksburg"],
+    ["virginia", "Virginia"],
+    ["new-brunswick", "Central New Jersey"],
+    ["new-jersey", "New Jersey"],
+    ["pittsburgh", "Pittsburgh"],
+    ["philadelphia", "Philadelphia"],
+    ["pennsylvania", "Pennsylvania"],
+    ["boston", "Boston"],
+    ["massachusetts", "Massachusetts"],
+    ["santa-barbara", "Santa Barbara"],
+    ["merced", "Merced"],
+    ["virtual", "Online"], ["national", "National"]
   ];
   /* Hubs group the regions into the areas teens recognize. [id, label, region ids] */
   var HUBS = [
@@ -25,12 +63,97 @@
     ["oak", "Oakland and East Bay", ["oakland", "berkeley", "alameda", "east-bay"]],
     ["sf", "San Francisco", ["san-francisco"]],
     ["state", "California-wide", ["statewide"]],
-    ["socal", "Southern California", ["orange-county", "los-angeles", "inland-empire", "san-diego"]],
+    ["socal", "Southern California", ["orange-county", "los-angeles", "inland-empire", "san-diego", "santa-barbara"]],
     ["atl", "Atlanta and Georgia", ["atlanta", "georgia"]],
     ["nyc", "New York", ["new-york-city", "new-york-state"]],
     ["chi", "Chicago and Illinois", ["chicago", "illinois"]],
+    ["cv", "Merced and Central Valley", ["merced"]],
+    ["sea", "Seattle and Washington", ["seattle", "washington"]],
+    ["van", "Vancouver, BC", ["vancouver", "british-columbia"]],
+    ["aus", "Austin and Texas", ["austin", "texas"]],
+    ["midwest", "Midwest campuses", ["twin-cities", "champaign", "madison", "lafayette", "bloomington", "columbus", "cincinnati", "ann-arbor", "lansing", "minnesota", "wisconsin", "indiana", "ohio", "michigan"]],
+    ["east", "East Coast", ["triangle", "college-park", "fairfax", "charlottesville", "blacksburg", "new-brunswick", "pittsburgh", "philadelphia", "boston", "north-carolina", "maryland", "virginia", "new-jersey", "pennsylvania", "massachusetts"]],
     ["online", "Online and national", ["virtual", "national"]]
   ];
+  /* Cities and areas for the "Where" picker. [id, label, region ids]. A teen picks a city; a city covers its metro region plus its state-wide programs. */
+  var CITIES = [
+    ["davis", "Davis and Sacramento", ["davis", "yolo", "sacramento", "statewide"]],
+    ["berkeley", "Berkeley and the East Bay", ["berkeley", "oakland", "alameda", "east-bay", "statewide"]],
+    ["san-francisco", "San Francisco", ["san-francisco", "statewide"]],
+    ["silicon-valley", "Silicon Valley and San Jose", ["silicon-valley", "san-jose", "peninsula", "fremont", "statewide"]],
+    ["merced", "Merced", ["merced", "statewide"]],
+    ["los-angeles", "Los Angeles", ["los-angeles", "statewide"]],
+    ["irvine", "Irvine and Orange County", ["orange-county", "statewide"]],
+    ["pomona", "Pomona", ["los-angeles", "inland-empire", "statewide"]],
+    ["riverside", "Riverside", ["inland-empire", "statewide"]],
+    ["san-diego", "San Diego", ["san-diego", "statewide"]],
+    ["santa-barbara", "Santa Barbara", ["santa-barbara", "statewide"]],
+    ["seattle", "Seattle", ["seattle", "washington"]],
+    ["vancouver", "Vancouver, BC", ["vancouver", "british-columbia"]],
+    ["austin", "Austin", ["austin", "texas"]],
+    ["minneapolis", "Minneapolis and St. Paul", ["twin-cities", "minnesota"]],
+    ["chicago", "Chicago", ["chicago", "illinois"]],
+    ["elgin", "Elgin", ["chicago", "illinois"]],
+    ["urbana-champaign", "Urbana-Champaign", ["champaign", "illinois"]],
+    ["madison", "Madison", ["madison", "wisconsin"]],
+    ["west-lafayette", "West Lafayette", ["lafayette", "indiana"]],
+    ["bloomington", "Bloomington, Indiana", ["bloomington", "indiana"]],
+    ["columbus", "Columbus", ["columbus", "ohio"]],
+    ["cincinnati", "Cincinnati", ["cincinnati", "ohio"]],
+    ["ann-arbor", "Ann Arbor", ["ann-arbor", "michigan"]],
+    ["east-lansing", "East Lansing", ["lansing", "michigan"]],
+    ["raleigh-chapel-hill", "Raleigh and Chapel Hill", ["triangle", "north-carolina"]],
+    ["college-park", "College Park, Maryland", ["college-park", "maryland"]],
+    ["fairfax", "Fairfax, Virginia", ["fairfax", "virginia"]],
+    ["charlottesville", "Charlottesville", ["charlottesville", "virginia"]],
+    ["blacksburg", "Blacksburg", ["blacksburg", "virginia"]],
+    ["new-brunswick", "New Brunswick, New Jersey", ["new-brunswick", "new-jersey"]],
+    ["new-york-city", "New York City", ["new-york-city", "new-york-state"]],
+    ["philadelphia", "Philadelphia", ["philadelphia", "pennsylvania"]],
+    ["pittsburgh", "Pittsburgh", ["pittsburgh", "pennsylvania"]],
+    ["boston", "Boston", ["boston", "massachusetts"]],
+    ["atlanta", "Atlanta", ["atlanta", "georgia"]]
+  ];
+  /* Areas are groups of cities, in the words teens and leaders use. [id, label, city ids] */
+  var AREAS = [
+    ["bay-area", "Bay Area", ["berkeley", "san-francisco", "silicon-valley"]],
+    ["inland-socal", "Inland Southern California", ["pomona", "riverside"]],
+    ["west-coast", "West Coast", ["davis", "berkeley", "san-francisco", "silicon-valley", "merced", "los-angeles", "irvine", "pomona", "riverside", "san-diego", "santa-barbara", "seattle", "vancouver"]],
+    ["pacific-northwest", "Pacific Northwest", ["seattle", "vancouver"]],
+    ["texas", "Texas", ["austin"]],
+    ["midwest", "Midwest", ["minneapolis", "chicago", "elgin", "urbana-champaign", "madison", "west-lafayette", "bloomington", "columbus", "cincinnati", "ann-arbor", "east-lansing"]],
+    ["northeast", "Northeast", ["new-york-city", "new-brunswick", "philadelphia", "pittsburgh", "boston"]],
+    ["dc-area", "DC area", ["college-park", "fairfax"]],
+    ["east-coast", "East Coast", ["new-york-city", "new-brunswick", "philadelphia", "pittsburgh", "boston", "college-park", "fairfax", "charlottesville", "blacksburg", "raleigh-chapel-hill"]],
+    ["southeast", "Southeast", ["atlanta", "raleigh-chapel-hill", "charlottesville", "blacksburg"]]
+  ];
+  var _placeCache = {};
+  /* "city:boston" or "area:midwest" to the region ids it covers, or null if unknown */
+  function placeRegions(place) {
+    if (_placeCache[place]) return _placeCache[place];
+    var m = /^(city|area):(.+)$/.exec(place || ""), out = null;
+    function city(id) { for (var i = 0; i < CITIES.length; i++) if (CITIES[i][0] === id) return CITIES[i]; return null; }
+    if (m && m[1] === "city" && city(m[2])) out = CITIES[CITIES.indexOf(city(m[2]))][2].slice();
+    if (m && m[1] === "area") {
+      for (var a = 0; a < AREAS.length; a++) if (AREAS[a][0] === m[2]) {
+        out = []; AREAS[a][2].forEach(function (cid) { var c = city(cid); if (c) c[2].forEach(function (r) { if (r !== "statewide" && out.indexOf(r) < 0) out.push(r); }); });
+      }
+    }
+    if (out) _placeCache[place] = out;
+    return out;
+  }
+  function placeLabel(place) {
+    var m = /^(city|area):(.+)$/.exec(place || ""); if (!m) return "";
+    var list = m[1] === "city" ? CITIES : AREAS;
+    for (var i = 0; i < list.length; i++) if (list[i][0] === m[2]) return list[i][1];
+    return "";
+  }
+  /* the hubs a place touches, used to show known gaps */
+  function hubsOfPlace(place) {
+    var rs = placeRegions(place) || [], out = [];
+    HUBS.forEach(function (h) { if (h[2].some(function (r) { return rs.indexOf(r) > -1; })) out.push(h[0]); });
+    return out;
+  }
   var TYPES = {
     "paid-youth-program": "Paid youth program", "internship": "Internship", "research": "Research",
     "volunteer": "Volunteer", "shadowing": "Job shadowing", "pre-college": "Pre-college",
@@ -76,6 +199,7 @@
     oakland: "ca", berkeley: "ca", alameda: "ca", "east-bay": "ca", "san-francisco": "ca", statewide: "ca",
     "orange-county": "ca", "los-angeles": "ca", "inland-empire": "ca", "san-diego": "ca",
     atlanta: "ga", georgia: "ga", "new-york-city": "ny", "new-york-state": "ny", chicago: "il", illinois: "il",
+    seattle: "wa", washington: "wa", vancouver: "", "british-columbia": "", austin: "tx", texas: "tx", "twin-cities": "mn", minnesota: "mn", champaign: "il", madison: "wi", wisconsin: "wi", lafayette: "in", bloomington: "in", indiana: "in", columbus: "oh", cincinnati: "oh", ohio: "oh", "ann-arbor": "mi", lansing: "mi", michigan: "mi", triangle: "nc", "north-carolina": "nc", "college-park": "md", maryland: "md", fairfax: "va", charlottesville: "va", blacksburg: "va", virginia: "va", "new-brunswick": "nj", "new-jersey": "nj", pittsburgh: "pa", philadelphia: "pa", pennsylvania: "pa", boston: "ma", massachusetts: "ma", "santa-barbara": "ca", merced: "ca",
     virtual: "", national: ""
   };
   function stateOf(e) {
@@ -90,6 +214,8 @@
     Which permit a teen needs: data is data/permits.json, st a state id (ca, ga, ny, il), age 12 to 18, kind one of data.kinds.
     verdict: need, none, ask (the pages we read do not say), young, adult, or nostate.
   */
+  /* States whose rules are in data/permits.json. Add a state here in the same change that adds it there (a test checks they match). */
+  var PERMIT_STATES = ["ca", "ga", "ny", "il"];
   function permitFor(data, st, age, kind) {
     var s = data && data.states && data.states[st];
     if (!s) return { verdict: "nostate", headline: "We have not read your state yet", text: "We have read California, Georgia, New York and Illinois. Ask your school office or your state labor department. The US Department of Labor lists them at dol.gov/agencies/whd/contact/state-labor-offices." };
@@ -148,6 +274,10 @@
 
   /* state: {q, hubs[], age, when, season, paid[], types[], fields[], verified, noPermit, saved, savedIds[]} */
   function matches(e, s, now) {
+    if (s.place) {
+      var pr = placeRegions(s.place), rs = e.regions || [];
+      if (pr && !pr.some(function (r) { return rs.indexOf(r) > -1; }) && !(s.placeOnline && (rs.indexOf("virtual") > -1 || rs.indexOf("national") > -1))) return false;
+    }
     if (s.hubs && s.hubs.length && !hubsOf(e).some(function (h) { return s.hubs.indexOf(h) > -1; })) return false;
     if (!ageOk(e, s.age)) return false;
     if (s.when === "open" && !isOpenish(e, now)) return false;
@@ -266,7 +396,7 @@
       var l = list.filter(function (e) { return hubsOf(e).indexOf(h[0]) > -1; });
       var row = { id: h[0], label: h[1], n: l.length };
       PAID_GROUPS.forEach(function (g) { row[g[0]] = l.filter(function (e) { return g[2].indexOf(e.paid_type) > -1; }).length; });
-      out.hubs.push(row);
+      if (row.n) out.hubs.push(row);
     });
     var byMonth = {};
     list.forEach(function (e) {
@@ -303,6 +433,6 @@
     effStatus: effStatus, futureDeadline: futureDeadline, isOpenish: isOpenish, isAnytime: isAnytime, ageOk: ageOk,
     matches: matches, rank: rank, compare: compare, sortList: sortList, ageText: ageText,
     STATUSES: STATUSES, toISO: toISO, addDays: addDays, followUpISO: followUpISO, planSummary: planSummary,
-    icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf, STATE_OF: STATE_OF, permitFor: permitFor
+    icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf, STATE_OF: STATE_OF, permitFor: permitFor, PERMIT_STATES: PERMIT_STATES, CITIES: CITIES, AREAS: AREAS, placeRegions: placeRegions, placeLabel: placeLabel, hubsOfPlace: hubsOfPlace
   };
 });

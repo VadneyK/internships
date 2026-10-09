@@ -48,3 +48,8 @@ test("permit: the page can be opened from a program card link", async () => {
   const p = await loadPage("permit.html", { search: "?state=il&age=14&kind=job" }); await tick();
   assert.match(p.document.getElementById("pOut").textContent, /Employment certificate/i);
 });
+
+test("permit: a state we have not read says so instead of a blank page", async () => {
+  const p = await loadPage("permit.html", { search: "?state=wa&age=15&kind=job" }); await tick();
+  assert.match(p.document.getElementById("pOut").textContent, /have not read your state/);
+});
