@@ -58,8 +58,9 @@ def build(name):
     import html as _html
     rep["gaps_list"] = "\n".join(
         '      <li><b>%s.</b> %s <a href="%s/%d">Issue %d</a></li>' % (_html.escape(g["title"]), _html.escape(g["text"]), ISSUES, g["issue"], g["issue"]) for g in gaps)
+    nav_page = fields.get("navparent", "").strip() or name
     for p in PAGES:
-        rep["cur_" + p] = ' aria-current="page"' if p == name else ""
+        rep["cur_" + p] = ' aria-current="page"' if p == nav_page else ""
     # body first so tokens inside the body are replaced too
     for k, v in rep.items():
         out = out.replace("{{" + k + "}}", v)

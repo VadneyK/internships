@@ -162,8 +162,8 @@ for (const file of PAGES) {
     assert.equal(document.querySelectorAll("nav.nav a").length, 8);
   });
 
-  if (!["404.html", "index.html", "leaders.html", "states.html", "permit.html"].includes(file)) {
-    // Home, the leaders page, the permit finder and the other-states page are not nav links (linked from the Rules page, Get ready and the footer), so only the other pages mark a current nav link.
+  if (!["404.html", "index.html", "leaders.html", "states.html"].includes(file)) {
+    // Home, the leaders page and the other-states page are not nav links (linked from the Rules page, Get ready and the footer), so only the other pages mark a current nav link.
     test(`${file}: exactly one nav link has aria-current="page"`, async () => {
       const { document } = await load(file);
       const current = document.querySelectorAll('nav.nav a[aria-current="page"]');
