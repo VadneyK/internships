@@ -21,13 +21,13 @@ scripts: find
         <input class="search" id="q" type="search" placeholder="Try: hospital, coding, Oakland, paid, animals" autocomplete="off">
       </div>
       <div class="fgroup">
-        <span class="lbl" id="l-hub">Where</span>
-        <div class="chips" id="hubChips" role="group" aria-labelledby="l-hub"></div>
+        <label class="lbl" for="place">Where</label>
+        <select class="sel" id="place"><option value="">Anywhere (pick a city or area)</option></select>
+        <p class="small" id="placeNote" hidden style="margin:.5rem 0 0;"></p>
       </div>
       <div class="fgroup">
-        <label class="lbl" for="place">Or pick a city or area</label>
-        <select class="sel" id="place"><option value="">Any city or area</option></select>
-        <p class="small" id="placeNote" hidden style="margin:.5rem 0 0;"></p>
+        <span class="lbl" id="l-hub">Quick picks</span>
+        <div class="chips" id="hubChips" role="group" aria-labelledby="l-hub"></div>
       </div>
       <div class="formgrid">
         <div class="fgroup">

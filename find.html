@@ -20,8 +20,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=2bf9f638">
-<link rel="stylesheet" href="assets/css/style.css?v=2bf9f638">
+<link rel="stylesheet" href="assets/css/fonts.css?v=c6e96bad">
+<link rel="stylesheet" href="assets/css/style.css?v=c6e96bad">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -70,13 +70,13 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
         <input class="search" id="q" type="search" placeholder="Try: hospital, coding, Oakland, paid, animals" autocomplete="off">
       </div>
       <div class="fgroup">
-        <span class="lbl" id="l-hub">Where</span>
-        <div class="chips" id="hubChips" role="group" aria-labelledby="l-hub"></div>
+        <label class="lbl" for="place">Where</label>
+        <select class="sel" id="place"><option value="">Anywhere (pick a city or area)</option></select>
+        <p class="small" id="placeNote" hidden style="margin:.5rem 0 0;"></p>
       </div>
       <div class="fgroup">
-        <label class="lbl" for="place">Or pick a city or area</label>
-        <select class="sel" id="place"><option value="">Any city or area</option></select>
-        <p class="small" id="placeNote" hidden style="margin:.5rem 0 0;"></p>
+        <span class="lbl" id="l-hub">Quick picks</span>
+        <div class="chips" id="hubChips" role="group" aria-labelledby="l-hub"></div>
       </div>
       <div class="formgrid">
         <div class="fgroup">
@@ -191,9 +191,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=2bf9f638"></script>
-<script src="assets/js/common.js?v=2bf9f638"></script>
-<script src="assets/js/find.js?v=2bf9f638"></script>
+<script src="assets/js/lib.js?v=c6e96bad"></script>
+<script src="assets/js/common.js?v=c6e96bad"></script>
+<script src="assets/js/find.js?v=c6e96bad"></script>
 
 </body>
 </html>

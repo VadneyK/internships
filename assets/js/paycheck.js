@@ -11,9 +11,9 @@
     function paint() {
       var r = L.paycheck(d, $("mPreset").value, $("mWage").value, $("mHours").value, $("mParent").checked);
       if (!r) { $("mOut").innerHTML = '<p class="muted">Enter a rate and the hours.</p>'; return; }
-      var h = '<table><tbody><tr><th scope="row">Pay before anything comes out</th><td>' + usd(r.gross) + "</td></tr>" +
+      var h = '<div class="tablewrap" tabindex="0" role="region" aria-label="Your paycheck estimate"><table><tbody><tr><th scope="row">Pay before anything comes out</th><td>' + usd(r.gross) + "</td></tr>" +
         r.lines.map(function (l) { return '<tr><th scope="row">&minus; ' + G.esc(l.label) + "</th><td>" + usd(l.amount) + "</td></tr>"; }).join("") +
-        '<tr><th scope="row"><b>Left before income tax</b></th><td><b>' + usd(r.left) + "</b></td></tr></tbody></table>";
+        '<tr><th scope="row"><b>Left before income tax</b></th><td><b>' + usd(r.left) + "</b></td></tr></tbody></table></div>";
       var notes = r.lines.map(function (l) { return "<li>" + G.esc(d.lineNotes[l.key]) + "</li>"; });
       if (r.possibleDisability != null) notes.push("<li>" + G.esc(d.lineNotes.dis) + " That would be up to " + usd(r.possibleDisability) + ".</li>");
       if (r.parentBiz) notes.push("<li>" + G.esc(d.parentNote) + " " + a(d.parentSource.t, d.parentSource.u) + ".</li>");

@@ -239,7 +239,8 @@
   G.loadEntries().then(function (data) {
     all = data;
     var hubCounts = {}; all.forEach(function (e) { hubOf(e).forEach(function (h) { hubCounts[h] = (hubCounts[h] || 0) + 1; }); });
-    chipGroup("hubChips", G.HUBS.filter(function (h) { return hubCounts[h[0]]; }).map(function (h) { return [h[0], h[1], hubCounts[h[0]]]; }), "hubs");
+    var QUICK = ["davis", "sv", "oak", "sf", "state", "socal", "atl", "nyc", "chi", "online"];
+    chipGroup("hubChips", G.HUBS.filter(function (h) { return hubCounts[h[0]] && QUICK.indexOf(h[0]) > -1; }).map(function (h) { return [h[0], h[1], hubCounts[h[0]]]; }), "hubs");
     G.fillPlaces($("place"), all);
     $("place").addEventListener("change", function (e) { state.place = e.target.value; if (state.place) state.hubs = []; syncChips(); render(true); });
     chipGroup("paidChips", PAID_GROUPS.map(function (g) { return [g[0], g[1]]; }), "paid");
