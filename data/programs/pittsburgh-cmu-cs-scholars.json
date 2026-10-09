@@ -1,0 +1,38 @@
+{
+  "id": "pittsburgh-cmu-cs-scholars",
+  "name": "CS Scholars",
+  "org": "Carnegie Mellon University Pre-College Programs",
+  "regions": [
+    "pittsburgh"
+  ],
+  "city": "Pittsburgh, PA",
+  "type": "pre-college",
+  "fields": [
+    "tech-cs"
+  ],
+  "what_you_do": "Four weeks living on the CMU campus learning computer science through classes, group projects, faculty lectures and visits with tech companies. All costs are covered.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": "10th grade at time of application",
+  "who_can_apply": "Students at least 16 by the program start, in 10th grade when applying, and U.S. citizens or permanent residents with a green card. Meant for students who lack access or resources in computer science.",
+  "paid_type": "unpaid",
+  "pay_detail": "Fully funded: tuition, housing and meals are free; limited travel help for families with transportation barriers",
+  "season": "summer",
+  "duration": "4 weeks, June 26 to July 24, 2027, residential",
+  "status": "unconfirmed",
+  "deadline_text": "Application deadline February 1, 2027. Decisions released April 1, 2027.",
+  "deadline_iso": "2027-02-01",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply online through the CMU Pre-College application portal by February 1, 2027. Residential only; full participation required.",
+  "needs_work_permit": false,
+  "apply_url": "https://apply-precollege.studentaffairs.cmu.edu/apply/",
+  "url": "https://www.cmu.edu/pre-college/academic-programs/computer-science-scholars.html",
+  "sources_fetched": [
+    "https://www.cmu.edu/pre-college/academic-programs/computer-science-scholars.html",
+    "https://www.cmu.edu/pre-college/admission/index.html"
+  ],
+  "priority": 2,
+  "notes": "Status is unconfirmed only because the application opening date is not posted; the 2027 deadlines are confirmed on the program pages (the apply portal could not be read). Limited spots. The admission page lists two different dates for this application (February 1 and March 1, 2027); the program page and the deadlines table both say February 1, 2027, so apply by then. Completers may be invited back to AI Scholars.",
+  "verified": "fetched",
+  "verified_on": "2026-10-09"
+}

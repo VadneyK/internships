@@ -1,0 +1,40 @@
+{
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "museum-life-science-summer-camp-youth-volunteer",
+  "name": "Summer Camp Youth Volunteer",
+  "org": "Museum of Life and Science",
+  "regions": [
+    "triangle"
+  ],
+  "city": "Durham, NC",
+  "type": "volunteer",
+  "fields": [
+    "science",
+    "education"
+  ],
+  "what_you_do": "Youth volunteers help camp staff set up the classroom each day and work directly with campers on experiments, projects and activities.",
+  "min_age": 14,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "Youth volunteers ages 14 to 17.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "summer",
+  "duration": "Camp weeks; schedule not stated on the pages read",
+  "status": "unconfirmed",
+  "deadline_text": "No 2027 deadline posted on the pages read. Check with the museum in early 2027.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Apply through the museum's volunteer portal (MyImpactPage) via the Learn more link on the Volunteer page. General museum volunteer steps listed: application, background check, new volunteer orientation. Questions: volunteer@lifeandscience.org.",
+  "needs_work_permit": false,
+  "url": "https://www.lifeandscience.org/support/volunteer/",
+  "sources_fetched": [
+    "https://www.lifeandscience.org/support/volunteer/",
+    "https://app.betterimpact.com/PublicOrganization/e1b60cb7-664a-44f8-a376-be68afb1fba7/1"
+  ],
+  "priority": 2,
+  "notes": "The camp-specific application page returned an error, so the camp schedule, requirements and deadline were not confirmed. The general volunteer perk is a free membership after 100 hours in a year (not confirmed for youth)."
+}

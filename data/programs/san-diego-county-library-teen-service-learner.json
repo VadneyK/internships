@@ -1,0 +1,39 @@
+{
+  "id": "san-diego-county-library-teen-service-learner",
+  "name": "Teen Service Learner",
+  "org": "San Diego County Library",
+  "regions": [
+    "san-diego"
+  ],
+  "city": "San Diego County, CA (branch libraries)",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "what_you_do": "Help branch staff organize library materials and take part in library events while earning community service hours and work experience.",
+  "min_age": 12,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "Teens, generally ages 12 to 17. The exact age range varies by branch, so ask your branch.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. You earn community service hours.",
+  "season": "year-round",
+  "duration": "Flexible hours, weekdays and Saturdays",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline posted. Ask your branch.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Ask a staff member at your San Diego County Library branch how to sign up.",
+  "needs_work_permit": false,
+  "url": "https://www.sdcl.org/volunteers",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.sdcl.org/volunteers"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "Run by the County library system, which is separate from the City of San Diego Public Library. The page lists no teen requirements; the background check and medical exam it mentions are for adult volunteers. Confirm your branch's age range before going."
+}

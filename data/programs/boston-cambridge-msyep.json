@@ -1,0 +1,39 @@
+{
+  "id": "boston-cambridge-msyep",
+  "name": "Mayor's Summer Youth Employment Program (MSYEP)",
+  "org": "City of Cambridge Department of Human Service Programs",
+  "regions": [
+    "boston"
+  ],
+  "city": "Cambridge, MA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Work a six-week summer job (20 hours a week) in a city department or nonprofit, such as camps, libraries, senior centers, arts, STEM or landscaping, plus college tours and financial literacy sessions.",
+  "min_age": 14,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Cambridge residents who are 14 through the summer after finishing high school and eligible to work in the U.S. Priority goes to students eligible for free or reduced lunch and lower-income families.",
+  "paid_type": "paid",
+  "pay_detail": "Paid minimum wage by the City; the page says $15.00 per hour for Summer 2025 (the page has not been updated with a 2026 rate)",
+  "season": "summer",
+  "duration": "6 weeks, 20 hours a week",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Information about the 2027 program will be posted in early spring 2027. Hiring paperwork starts in mid-April.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Apply online through Trax, the Department of Human Service Programs enrollment system. All applications go on a waitlist for review, which does not mean the program is full. Staff then schedule hiring paperwork (original ID and Social Security card needed).",
+  "needs_work_permit": true,
+  "url": "https://www.cambridgema.gov/services/mayorssummeryouthemploymentprogram",
+  "sources_fetched": [
+    "https://www.cambridgema.gov/services/mayorssummeryouthemploymentprogram",
+    "https://www.boston.gov/departments/youth-employment-and-opportunity/know-your-rights-and-responsibilities-youth-worker",
+    "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter149/Section86"
+  ],
+  "priority": 1,
+  "notes": "Questions: youthemployment@cambridgema.gov. The page does not mention a work permit; Massachusetts requires one for workers under 18 (M.G.L. c.149 s.86; Boston youth worker rights page written with the state Attorney General's Office). Participants may not miss more than 5 program days.  There is no fixed maximum age on the page; eligibility ends after the summer following high school graduation.",
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "apply_url": null
+}

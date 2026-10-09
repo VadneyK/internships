@@ -1,0 +1,39 @@
+{
+  "grades": "High school junior or senior",
+  "min_age": null,
+  "max_age": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "bloomington-iu-open-program",
+  "name": "OPEN Program (take IU Bloomington classes while in high school)",
+  "org": "Indiana University Bloomington, Undergraduate Education",
+  "regions": [
+    "bloomington"
+  ],
+  "city": "Bloomington, IN",
+  "type": "pre-college",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Qualified local juniors and seniors enroll in regular IU Bloomington courses for college credit, during the school year or summer, on a space-available basis.",
+  "who_can_apply": "High school juniors or seniors with a GPA of at least 3.0, recommended by a principal or guidance counselor, living with a parent or guardian within commuting distance of campus. IU GPA of at least 2.5 is also required once enrolled.",
+  "paid_type": "fee-based",
+  "pay_detail": "Students pay the regular IU undergraduate credit-hour and mandatory fees (student health fee waived). Dollar amounts are not stated on the program page.",
+  "season": "year-round",
+  "duration": "One or more courses per term (fall, spring or summer)",
+  "status": "rolling",
+  "deadline_text": "Applications accepted about three months before to two weeks before each semester starts. No late applications.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Talk to your high school counselor, then email openprgm@iu.edu for the form and instructions.",
+  "needs_work_permit": false,
+  "url": "https://undergraduate.indiana.edu/pathways/precollege-programs/open/index.html",
+  "sources_fetched": [
+    "https://undergraduate.indiana.edu/pathways/precollege-programs/open/index.html",
+    "https://undergraduate.indiana.edu/pathways/precollege-programs/open/applying-scheduling.html",
+    "https://undergraduate.indiana.edu/pathways/precollege-programs/open/fees-services.html"
+  ],
+  "priority": 3,
+  "notes": "Only for students who live close enough to commute to Bloomington. Costs are real college credit fees. Not a job."
+}

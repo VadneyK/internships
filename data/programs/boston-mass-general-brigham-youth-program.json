@@ -1,0 +1,40 @@
+{
+  "id": "boston-mass-general-brigham-youth-program",
+  "name": "Mass General Brigham Youth Program",
+  "org": "Mass General Brigham",
+  "regions": [
+    "boston"
+  ],
+  "city": "Boston, MA",
+  "type": "paid-youth-program",
+  "fields": [
+    "health",
+    "science"
+  ],
+  "what_you_do": "Explore health care careers through hands-on activities and mentoring, then hold paid school-year and summer internships in hospital departments and labs, with college and career advising.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Join in 10th grade",
+  "who_can_apply": "Sophomores at the Edward M. Kennedy Academy for Health Careers, Revere High School, Chelsea High School or any Boston public school. A 3.0 GPA is required to apply.",
+  "paid_type": "paid",
+  "pay_detail": "Paid internships in 11th and 12th grade and paid summer jobs (hourly rate not stated)",
+  "season": "year-round",
+  "duration": "Multi-year: exploration in 10th grade, paid internships in 11th and 12th grade",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The page says applications open in the spring and selections are finalized in the summer. The 2026 link was due to appear in spring 2026; no 2027 date is posted. Summer jobs are recruited through the Boston Private Industry Council (PIC).",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Ask your school guidance counselor (or PIC career specialist) in the fall and watch the program page for the spring application link. For summer jobs, contact your school's PIC career specialist.",
+  "needs_work_permit": true,
+  "url": "https://www.massgeneralbrigham.org/en/about/community-health/programs-resources/youth",
+  "sources_fetched": [
+    "https://www.massgeneralbrigham.org/en/about/community-health/programs-resources/youth",
+    "https://www.boston.gov/departments/youth-employment-and-opportunity/know-your-rights-and-responsibilities-youth-worker",
+    "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter149/Section86"
+  ],
+  "priority": 1,
+  "notes": "Combines the old Mass General Youth Scholars and Brigham Student Success Jobs programs. Sites include Mass General Hospital, Brigham and Women's, Faulkner Hospital and Mass Eye and Ear. Paid jobs under 18 need a Massachusetts work permit (state rule: M.G.L. c.149 s.86 and the Boston youth worker rights page; not on the MGB page).",
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "apply_url": null
+}

@@ -1,0 +1,40 @@
+{
+  "opens_iso": null,
+  "apply_url": null,
+  "grades": null,
+  "min_age": null,
+  "max_age": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "kcls-teen-advisory-boards",
+  "name": "King County Library System Teen Advisory Boards",
+  "org": "King County Library System",
+  "regions": [
+    "seattle"
+  ],
+  "city": "King County, WA (branches outside the city of Seattle)",
+  "type": "leadership",
+  "fields": [
+    "social-impact"
+  ],
+  "what_you_do": "Teen volunteers meet with a librarian to give input on library services and co-design library programs and events.",
+  "who_can_apply": "Teens. The page does not state ages; ask the teen librarian at your branch. Each board sets its own meeting schedule.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Members earn volunteer credit, and can ask for a reference letter after 10 hours of volunteering within 6 months.",
+  "season": "school-year",
+  "duration": "Ongoing; meeting schedules vary by branch",
+  "status": "year-round",
+  "deadline_text": "No deadline. The page lists upcoming meetings (for example Maple Valley, Lake Forest Park, Newport Way and Federal Way); contact the local library to join.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Contact your local librarian (Teen Services Librarian) or go to an open Teen Advisory Board meeting listed on the page. If your branch has no board, ask about starting one.",
+  "needs_work_permit": false,
+  "url": "https://kcls.org/teen-advisory-boards/",
+  "sources_fetched": [
+    "https://kcls.org/teen-advisory-boards/",
+    "https://kcls.org/volunteer/",
+    "https://lni.wa.gov/workers-rights/youth-employment/how-to-hire-minors"
+  ],
+  "priority": 2,
+  "notes": "KCLS serves King County outside the city of Seattle (its branches include Maple Valley, Lake Forest Park, Newport Way and Federal Way). The Seattle Public Library volunteer page showed no current volunteer openings when read on 2026-10-09. Washington L&I says its child labor rules 'only apply to minor employees, not volunteers.'"
+}

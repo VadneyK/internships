@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "min_age": 14,
+  "max_age": 17,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "philadelphia-zoo-volun-teens",
+  "name": "Volun-TEENS, Philadelphia Zoo",
+  "org": "Philadelphia Zoo",
+  "regions": [
+    "philadelphia"
+  ],
+  "city": "Philadelphia, PA",
+  "type": "volunteer",
+  "fields": [
+    "environment",
+    "science",
+    "education"
+  ],
+  "what_you_do": "Teach zoo guests about animals and conservation through games and interactive activities while building public speaking, leadership and time management skills.",
+  "who_can_apply": "Teens ages 14 to 17.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Not stated",
+  "status": "unconfirmed",
+  "deadline_text": "The page says to stay tuned for details about the next recruitment period; no dates listed.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Email the zoo through the contact link on the volunteer page. No application link is listed.",
+  "needs_work_permit": false,
+  "url": "https://www.philadelphiazoo.org/volunteer/",
+  "priority": 2,
+  "notes": "Separate options: Special Events volunteers (13+ for family events) apply through an online form; school groups of grades 9 to 12 can join Boo at the Zoo takeover shifts (those 2026 dates have passed). Docents must be 21+.",
+  "sources_fetched": [
+    "https://www.philadelphiazoo.org/volunteer/"
+  ]
+}

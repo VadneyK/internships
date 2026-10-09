@@ -1,0 +1,38 @@
+{
+  "apply_url": "https://champaign.org/form-volunteer-application",
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "grades": null,
+  "min_age": 16,
+  "max_age": null,
+  "id": "champaign-public-library-volunteers",
+  "name": "Champaign Public Library Volunteers",
+  "org": "Champaign Public Library",
+  "regions": [
+    "champaign"
+  ],
+  "city": "Champaign, IL",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "any"
+  ],
+  "what_you_do": "Help the library with sorting and shelving, bookstore cashier shifts, storytime help, a summer Club Fred program and other listed roles. Training is provided.",
+  "who_can_apply": "Volunteers must be at least 16. If you are 16 or 17 you need a signed waiver from a parent or guardian.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid.",
+  "season": "year-round",
+  "duration": "Typically 2 to 3 hours a week; a 4-month minimum is preferred",
+  "status": "rolling",
+  "deadline_text": "No deadline.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Complete the online volunteer application, then schedule the required interview. Contact: Eva Liu, Volunteer Coordinator, volunteer@champaign.org, 217-403-2000 x3.",
+  "needs_work_permit": false,
+  "url": "https://champaign.org/volunteer",
+  "sources_fetched": [
+    "https://champaign.org/volunteer"
+  ],
+  "priority": 2,
+  "notes": "Open roles change, so look at the current listings on the page. The Douglass Branch's Club Fred program is a summer role."
+}

@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "min_age": 14,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": null,
+  "id": "lansing-greater-lansing-food-bank-volunteer",
+  "name": "Greater Lansing Food Bank Volunteer Shifts",
+  "org": "Greater Lansing Food Bank",
+  "regions": [
+    "lansing"
+  ],
+  "city": "Lansing, MI",
+  "type": "volunteer",
+  "fields": [
+    "social-impact",
+    "food-hospitality"
+  ],
+  "what_you_do": "Sort food and build Weekend Kits in the warehouse, or help at Mobile Food Pantries and, in season, the Garden Project.",
+  "who_can_apply": "All volunteers must be at least 14 years old.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Single shifts; weekday warehouse shifts are about 2 hours",
+  "status": "rolling",
+  "deadline_text": "Sign up for open shifts any time; many shifts book 2 to 3 weeks out.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Register once through Volunteer Hub, then pick a shift from the schedule. Groups of four or more email the volunteer program manager.",
+  "url": "https://greaterlansingfoodbank.org/volunteer",
+  "sources_fetched": [
+    "https://greaterlansingfoodbank.org/volunteer",
+    "https://www.michigan.gov/leo/bureaus-agencies/ber/wage-and-hour/youth-employment-standards-act-yesa"
+  ],
+  "priority": 2,
+  "notes": "Not teen-specific, but open to teens 14 and up. Warehouse shifts are 9 to 11 a.m. and 1:30 to 3:30 p.m. Monday to Friday, with some late afternoon, evening and weekend shifts at Mobile Food Pantries. Michigan's youth employment page (Youth Employment Standards Act) says the law covers employers of anyone under 18 including volunteers, so ask the program whether a work permit is needed."
+}

@@ -1,0 +1,43 @@
+{
+  "grades": null,
+  "min_age": 14,
+  "max_age": 24,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": null,
+  "id": "michigan-wioa-youth-michigan-works",
+  "name": "WIOA Youth Program through your local Michigan Works! agency",
+  "org": "Michigan Department of Labor and Economic Opportunity, delivered by local Michigan Works! agencies (Michigan Works! Southeast for Washtenaw County, Capital Area Michigan Works! for the Lansing area)",
+  "regions": [
+    "michigan",
+    "ann-arbor",
+    "lansing"
+  ],
+  "city": "Michigan (statewide, run locally)",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Free job-readiness help for young people facing barriers: tutoring, mentoring, paid and unpaid work experience including summer jobs, skills training and help planning for college or a career.",
+  "who_can_apply": "In-school youth ages 14 to 21 who are low income and have at least one listed barrier (for example basic skills deficient, English language learner, homeless or foster youth, pregnant or parenting, disability). Out-of-school youth ages 16 to 24 with a listed barrier.",
+  "paid_type": "mixed",
+  "pay_detail": "Not stated. The state page lists both paid and unpaid work experiences, including summer employment, as possible services.",
+  "season": "year-round",
+  "duration": "Varies by local agency",
+  "status": "year-round",
+  "deadline_text": "Operated year round by local Michigan Works! agencies. No state deadline is posted.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Call Michigan Works! at 1-800-285-WORKS (9675) or find your local agency by ZIP code at michiganworks.org, then ask about WIOA Youth eligibility.",
+  "url": "https://www.michigan.gov/leo/bureaus-agencies/wd/programs-services/workforce-innovation-and-opportunity-act-wioa-youth-program",
+  "sources_fetched": [
+    "https://www.michigan.gov/leo/bureaus-agencies/wd/programs-services/workforce-innovation-and-opportunity-act-wioa-youth-program",
+    "https://www.camw.org/",
+    "https://www.camw.org/career-seekers/camw-connections-wioa",
+    "https://www.michigan.gov/leo/bureaus-agencies/ber/wage-and-hour/youth-employment-standards-act-yesa"
+  ],
+  "priority": 2,
+  "notes": "Not open to every teen: eligibility depends on income and barriers, so a short call to the local agency is the real first step. The state page does not list a local application form or local youth contacts. Capital Area Michigan Works!' own site (camw.org) mentions WIOA and says 259 youth were served but does not describe its youth program in detail. Work experience for anyone under 18 in Michigan needs a work permit under the state's youth employment law."
+}

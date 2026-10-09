@@ -1,0 +1,39 @@
+{
+  "grades": "Grades 10 to 12",
+  "min_age": 15,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "edison-middlesex-college-high-school-scholars",
+  "name": "High School Scholars Program, Middlesex College",
+  "org": "Middlesex College",
+  "regions": [
+    "new-brunswick"
+  ],
+  "city": "Edison, NJ",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take real college courses during the school day, on campus or online, and earn college credit while still in high school.",
+  "who_can_apply": "Students in grades 10 to 12 who are at least 15 years old.",
+  "paid_type": "fee-based",
+  "pay_detail": "$150 per course plus textbooks for in-county residents; students from other counties, states or countries pay the out-of-county rate (not listed).",
+  "season": "school-year",
+  "duration": "Courses of 3 to 4 credits; up to 8 credits per semester",
+  "status": "rolling",
+  "deadline_text": "No deadline listed on the page.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Download the application and email it to k12partnerships@middlesexcollege.edu, or call 732-906-2554 to schedule a virtual appointment.",
+  "needs_work_permit": false,
+  "url": "https://www.middlesexcollege.edu/admissions/high-school-dual-enrollment/",
+  "priority": 2,
+  "notes": "Separate Dual Enrollment: in participating districts, college courses are taught at the high school. Ask your counselor.",
+  "sources_fetched": [
+    "https://www.middlesexcollege.edu/admissions/high-school-dual-enrollment/",
+    "https://www.middlesexcollege.edu/youth-programs/k-12-programs/"
+  ]
+}

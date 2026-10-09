@@ -1,0 +1,42 @@
+{
+  "id": "boston-futurebos-youth-jobs",
+  "name": "futureBOS youth jobs (SuccessLink)",
+  "org": "City of Boston Office of Youth Employment and Opportunity",
+  "regions": [
+    "boston"
+  ],
+  "city": "Boston, MA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Browse and apply to paid jobs and paid career-readiness programs with City of Boston agencies and nonprofits across the city, in summer and during the school year.",
+  "min_age": 14,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Youth jobs are for ages 14 to 18 (leader jobs for 19 to 24). Must be 14 by the start of the job, have finished 6th grade, and be legally permitted to work in the U.S. Most opportunities are limited to full-time Boston residents; some have extra requirements.",
+  "paid_type": "paid",
+  "pay_detail": "Youth jobs (ages 14 to 18) are paid $15 an hour; leader jobs (19 to 24) $20 an hour. Professional development programs pay a stipend.",
+  "season": "year-round",
+  "duration": "Summer 2026 ran June 23 to August 29. School-year jobs are limited to up to 8 hours a week for youth; summer up to 25 hours a week.",
+  "status": "open-now",
+  "deadline_text": "School-year 2026-27 opportunities are open now and more are added through spring. Summer 2026 applications were rolling and closed; summer 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Browse the futureBOS catalog, apply to at least three jobs, then get an offer and finish onboarding (work permit if under 18, proof of identity and work authorization, proof of school enrollment). City of Boston agency jobs can be onboarded in one visit to the YEO office at 1483 Tremont Street.",
+  "needs_work_permit": true,
+  "url": "https://www.boston.gov/departments/youth-employment-and-opportunity/youth-jobs",
+  "apply_url": "https://www.boston.gov/futurebos",
+  "sources_fetched": [
+    "https://www.boston.gov/departments/youth-employment-and-opportunity/youth-jobs",
+    "https://www.boston.gov/departments/youth-employment-and-opportunity/successlink-jobs-faq",
+    "https://www.boston.gov/departments/youth-employment-and-opportunity/landing-summer-job-or-internship",
+    "https://www.boston.gov/news/mayor-michelle-wu-announces-launch-bostons-summer-youth-jobs-program",
+    "https://www.boston.gov/departments/youth-employment-and-opportunity/know-your-rights-and-responsibilities-youth-worker",
+    "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter149/Section86"
+  ],
+  "priority": 1,
+  "notes": "Questions: futurebos@boston.gov or 617-635-4202. Under-18 workers need a Massachusetts work permit for the specific job (a doctor must sign for ages 14 and 15); the city page explains the steps. The $15 rate is quoted from the city FAQ. The state minimum wage statute (M.G.L. c.151 s.1) says a wage of less than $15.00 per hour is presumed oppressive and unreasonable; the current 2026 minimum wage page from the state Department of Labor Standards could not be read (403), so confirm the rate in your job offer. The work permit rule is M.G.L. c.149 s.86.",
+  "verified": "fetched",
+  "verified_on": "2026-10-09"
+}

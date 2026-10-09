@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "min_age": 16,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "philadelphia-parks-rec-lifeguard",
+  "name": "Become a Lifeguard, Philadelphia Parks and Recreation",
+  "org": "Philadelphia Parks and Recreation Aquatics",
+  "regions": [
+    "philadelphia"
+  ],
+  "city": "Philadelphia, PA",
+  "type": "paid-youth-program",
+  "fields": [
+    "sports"
+  ],
+  "what_you_do": "Train for free, earn Red Cross lifeguard certification, then work as a lifeguard at a city pool through the summer.",
+  "who_can_apply": "You must be 16 or older to work as a city lifeguard; you can attend the screening at 15.",
+  "paid_type": "paid",
+  "pay_detail": "Starts at $16.85 per hour, about 35 hours a week from June through August. Red Cross certification is free for ages 16 to 24 who work at a Parks and Rec pool.",
+  "season": "summer",
+  "duration": "June through August, about 35 hours a week; free training runs year-round",
+  "status": "year-round",
+  "deadline_text": "Free training is offered year-round; reserve a slot on Eventbrite.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Choose a pool and contact its supervisor, train with Aquatics staff to pass the screening, then finish the Red Cross certification and pre-employment steps. Contact: lifeguard@phila.gov.",
+  "needs_work_permit": true,
+  "url": "https://www.phila.gov/services/working-jobs/city-jobs-and-internships/become-a-lifeguard/",
+  "priority": 1,
+  "notes": "Free training is at Lincoln High School and Friends Select School. Pennsylvania's Department of Labor and Industry page says children need a work permit from their school district's issuing officer; workers under 16 also need a parent statement (Form LLC-75).",
+  "sources_fetched": [
+    "https://www.phila.gov/services/working-jobs/city-jobs-and-internships/become-a-lifeguard/",
+    "https://www.pa.gov/agencies/dli/resources/compliance-laws-and-regulations/labor-management-relations/child-labor-act.html"
+  ]
+}

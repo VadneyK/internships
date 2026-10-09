@@ -1,0 +1,42 @@
+{
+  "grades": null,
+  "min_age": 11,
+  "max_age": 17,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": "https://volunteer.bloomerang.co/volunteer/#/join-party?k=yy0iehuoo53eo5&e=62270&fromOrg",
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": null,
+  "id": "ann-arbor-ymca-youth-volunteer-corps",
+  "name": "Youth Volunteer Corps and youth volunteer roles at the Ann Arbor YMCA",
+  "org": "Ann Arbor YMCA",
+  "regions": [
+    "ann-arbor"
+  ],
+  "city": "Ann Arbor, MI",
+  "type": "volunteer",
+  "fields": [
+    "social-impact",
+    "education",
+    "sports"
+  ],
+  "what_you_do": "Join service-learning projects with the Youth Volunteer Corps, or volunteer as a youth helper in swim lessons, day camps or the Y on the Fly sports program.",
+  "who_can_apply": "The Youth Volunteer Corps is for teens ages 11 to 17. Ages for the other youth volunteer roles are not stated on the page. Youth sports coaches must be at least 14.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Varies: one-off service projects or ongoing roles",
+  "status": "rolling",
+  "deadline_text": "No deadline stated. Apply any time with the volunteer application.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use the Begin your application button on the volunteering page. Questions: volunteer@annarborymca.org.",
+  "url": "https://www.annarborymca.org/why-the-y/volunteering/",
+  "sources_fetched": [
+    "https://www.annarborymca.org/",
+    "https://www.annarborymca.org/why-the-y/volunteering/",
+    "https://www.michigan.gov/leo/bureaus-agencies/ber/wage-and-hour/youth-employment-standards-act-yesa"
+  ],
+  "priority": 2,
+  "notes": "The page's own link to a Youth Volunteer Corps page was a dead link when checked, so details of YVC projects and dates are not confirmed. The Y also lists other volunteer roles that appear aimed at adults. Michigan's youth employment page (Youth Employment Standards Act) says the law covers employers of anyone under 18 including volunteers, so ask the program whether a work permit is needed."
+}

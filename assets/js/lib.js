@@ -264,6 +264,26 @@
     return out;
   }
 
+  /*
+    A first paycheck estimate from sourced items only. data is data/money.json. Each tax is rounded to the cent on its own line, the way a pay stub does.
+    Income tax is not estimated: it depends on the W-4 and the state form.
+  */
+  function cents(x) { return Math.round((x + 1e-9) * 100) / 100; }
+  function paycheck(data, presetId, wage, hours, parentBiz) {
+    var p = null; data.presets.forEach(function (x) { if (x.id === presetId) p = x; });
+    if (!p || wage === "" || hours === "" || wage == null || hours == null) return null;
+    var w = +wage, h = +hours;
+    if (!(w >= 0) || !(h >= 0)) return null;
+    var r = data.rates, gross = cents(w * h), lines = [], left = gross;
+    function add(key, label, amt) { lines.push({ key: key, label: label, amount: amt }); left = cents(left - amt); }
+    if (!parentBiz) { add("ss", "Social Security", cents(gross * r.ss)); add("medicare", "Medicare", cents(gross * r.medicare)); }
+    if (p.extra.indexOf("sdi") > -1) add("sdi", "California SDI", cents(gross * r.sdi));
+    if (p.extra.indexOf("pfl") > -1) add("pfl", "NY Paid Family Leave", cents(gross * r.pfl));
+    var out = { gross: gross, lines: lines, left: left, state: p.state, parentBiz: !!parentBiz };
+    if (p.extra.indexOf("pfl") > -1) out.possibleDisability = Math.min(cents(gross * r.nyDisabilityRate), r.nyDisabilityWeekCap);
+    return out;
+  }
+
   function hubsOf(e) {
     var out = [];
     HUBS.forEach(function (h) {
@@ -461,6 +481,6 @@
     effStatus: effStatus, futureDeadline: futureDeadline, isOpenish: isOpenish, isAnytime: isAnytime, ageOk: ageOk,
     matches: matches, rank: rank, compare: compare, sortList: sortList, ageText: ageText,
     STATUSES: STATUSES, toISO: toISO, addDays: addDays, followUpISO: followUpISO, planSummary: planSummary,
-    icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf, STATE_OF: STATE_OF, permitFor: permitFor, hoursCheck: hoursCheck, PERMIT_STATES: PERMIT_STATES, CITIES: CITIES, AREAS: AREAS, placeRegions: placeRegions, placeLabel: placeLabel, hubsOfPlace: hubsOfPlace
+    icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf, STATE_OF: STATE_OF, permitFor: permitFor, hoursCheck: hoursCheck, paycheck: paycheck, PERMIT_STATES: PERMIT_STATES, CITIES: CITIES, AREAS: AREAS, placeRegions: placeRegions, placeLabel: placeLabel, hubsOfPlace: hubsOfPlace
   };
 });

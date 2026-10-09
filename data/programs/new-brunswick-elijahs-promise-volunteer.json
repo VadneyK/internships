@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "min_age": 16,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "new-brunswick-elijahs-promise-volunteer",
+  "name": "Soup Kitchen Volunteering, Elijah's Promise",
+  "org": "Elijah's Promise",
+  "regions": [
+    "new-brunswick"
+  ],
+  "city": "New Brunswick, NJ",
+  "type": "volunteer",
+  "fields": [
+    "food-hospitality",
+    "social-impact"
+  ],
+  "what_you_do": "Help prepare and serve meals, clean, and greet guests at the Elijah's Promise soup kitchen on weekday and Saturday mornings.",
+  "who_can_apply": "Volunteers must be at least 16. Anyone under 18 must come with a guardian, and you must secure an individual volunteer slot for both the adult and child.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Court-ordered service hours are not accepted.",
+  "season": "year-round",
+  "duration": "One shift at a time, Monday to Saturday between 8:00 am and 12:30 pm",
+  "status": "year-round",
+  "deadline_text": "Sign up for open shifts online; if none show, they are filled.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Register for a shift on the volunteer site linked from the page; a minor and the supervising adult each need their own slot. Questions: volunteer@elijahspromise.org or 732-545-9002 ext. 122.",
+  "needs_work_permit": false,
+  "url": "https://elijahspromise.org/volunteer/",
+  "priority": 2,
+  "notes": "Wear closed-toed shoes and long pants; expect to stand for the whole shift. Only five people fit in the kitchen at once. Large groups are booked through January 2027.",
+  "sources_fetched": [
+    "https://elijahspromise.org/volunteer/",
+    "https://elijahspromise.org/"
+  ]
+}

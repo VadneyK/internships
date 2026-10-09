@@ -1,0 +1,38 @@
+{
+  "id": "fairfax-county-public-library-youth-volunteers",
+  "name": "Fairfax County Public Library volunteering (youth 12 and up)",
+  "org": "Fairfax County Public Library",
+  "regions": [
+    "fairfax"
+  ],
+  "city": "Fairfax County, VA",
+  "type": "volunteer",
+  "fields": [
+    "education"
+  ],
+  "what_you_do": "Volunteer at a Fairfax County library branch to gain skills and experience and meet service requirements. Each branch has its own volunteer coordinator.",
+  "min_age": 12,
+  "max_age": null,
+  "who_can_apply": "The library's volunteer guide is for adults, youth ages 12 and over, corporate groups, and people who need to fulfill a service requirement.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid.",
+  "season": "year-round",
+  "duration": null,
+  "status": "year-round",
+  "deadline_text": "No deadline stated.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Contact the volunteer coordinator for your branch (the guide lists names and phone numbers) or use the Volunteer Login link in the library's volunteering guide.",
+  "needs_work_permit": false,
+  "url": "https://research.fairfaxcounty.gov/volunteer",
+  "sources_fetched": [
+    "https://research.fairfaxcounty.gov/volunteer",
+    "https://research.fairfaxcounty.gov/c.php?g=726036&p=5233320"
+  ],
+  "priority": 2,
+  "notes": "The guide does not spell out the sign-up steps for teens, so call your branch coordinator first. Unpaid volunteering, so no work permit.",
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09"
+}

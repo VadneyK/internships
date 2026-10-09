@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "min_age": null,
+  "max_age": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "deadline_iso": null,
+  "id": "merced-muhsd-dual-enrollment-merced-college",
+  "name": "Dual Enrollment and Merced College Classes (Merced Union High School District)",
+  "org": "Merced Union High School District and Merced College",
+  "regions": [
+    "merced"
+  ],
+  "city": "Merced, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Earn college credit in high school three ways: online CCAP classes made for high schoolers, Merced College classes taken outside the school day, or college courses built into select high school classes.",
+  "who_can_apply": "Students in good academic standing at a Merced Union High School District school (Atwater, Buhach Colony, El Capitan, Golden Valley, Livingston, Merced, Sequoia, Yosemite). Complete the Merced College application, a parent consent form and a High School Permit.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Free: students can take college courses at no cost, up to 11 units a semester. Textbook fees are waived for CCAP classes; textbook fees apply for concurrent enrollment.",
+  "season": "year-round",
+  "duration": "By semester",
+  "status": "rolling",
+  "deadline_text": "No dates posted on the district page; check with your school's Pathway Counselor.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Apply to Merced College, submit the parent consent form and High School Permit, and talk to your school's Pathway Counselor.",
+  "needs_work_permit": false,
+  "url": "https://www.muhsd.org/14428_4",
+  "sources_fetched": [
+    "https://www.muhsd.org/14428_4",
+    "https://www.muhsd.org/14383_4"
+  ],
+  "priority": 2,
+  "notes": "College privacy law applies once you enroll: parents do not get progress updates from Merced College. A college GPA below 2.0 can affect future college eligibility and financial aid."
+}

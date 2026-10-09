@@ -1,0 +1,41 @@
+{
+  "grades": "Current high school students (graduating seniors not eligible)",
+  "min_age": 16,
+  "max_age": 18,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "new-brunswick-rutgers-summer-scholars",
+  "name": "Rutgers Summer Scholars Program",
+  "org": "Rutgers University-New Brunswick Pre-College Summer Programs",
+  "regions": [
+    "new-brunswick"
+  ],
+  "city": "New Brunswick, NJ",
+  "type": "pre-college",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take up to two introductory college courses at Rutgers-New Brunswick for real college credit during the summer.",
+  "who_can_apply": "Current high school students ages 16 to 18 (must be 16 by the course start date) with at least a 3.0 unweighted GPA, who are U.S. citizens or permanent residents. Graduating seniors are not eligible.",
+  "paid_type": "fee-based",
+  "pay_detail": "2026 rates per credit: in-state $482 (Arts and Sciences) to $551 (SEBS), out-of-state $1,148 to $1,338, plus a one-time $162 student fee. Courses are typically 3 credits; up to two courses.",
+  "season": "summer",
+  "duration": "Summer Session I (started May 26, 2026) or Session II (started July 6, 2026)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "2026: applications opened February 2; last day to apply May 17 (Session I) and June 28 (Session II). 2027 dates not posted.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Online application plus unweighted transcript, a Parent/Guardian Permission Form and a letter of recommendation (teacher or anyone who knows your work). Reviewed first come, first served; decisions in 5 to 7 business days.",
+  "needs_work_permit": false,
+  "url": "https://precollegesummer.rutgers.edu/scholars",
+  "priority": 2,
+  "notes": "Some courses need extra technology or prerequisite courses. Withdrawing after the add/drop period puts a W on a Rutgers transcript. Questions: summerscholars@rutgers.edu.",
+  "sources_fetched": [
+    "https://precollegesummer.rutgers.edu/scholars",
+    "https://precollegesummer.rutgers.edu/scholars/tuition",
+    "https://precollegesummer.rutgers.edu/scholars/dates",
+    "https://precollegesummer.rutgers.edu/scholars/application"
+  ]
+}

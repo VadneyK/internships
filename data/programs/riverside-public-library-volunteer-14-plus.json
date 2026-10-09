@@ -1,0 +1,39 @@
+{
+  "id": "riverside-public-library-volunteer-14-plus",
+  "name": "Library Volunteer (ages 14 and up)",
+  "org": "Riverside Public Library (City of Riverside)",
+  "regions": [
+    "inland-empire"
+  ],
+  "city": "Riverside, CA",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "what_you_do": "Volunteer at a City of Riverside library branch. Teens 14 and older can apply through the City volunteer portal.",
+  "min_age": 14,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Anyone at least 14 years old who can pass a Department of Justice background check. The library cannot accept court-ordered volunteers.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "At least 30 total hours at one library before switching",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline posted. Apply any time.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Create an account at riversideca.cervistech.com, find a Library opportunity, click 'Apply to participate', then wait for an email or call. If approved you book a processing appointment with Human Resources at City Hall and get cleared by background check.",
+  "needs_work_permit": false,
+  "url": "https://riversideca.gov/library/how/volunteer-us",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://riversideca.gov/library/how/volunteer-us"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "This is the City of Riverside library, not the Riverside County Library System. The page does not describe teen-specific roles; it applies to all volunteers ages 14 and up."
+}

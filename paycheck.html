@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Your First Paycheck: What Comes Out, Tax Forms by State, and What to Do If Pay Is Wrong</title>
+<meta name="description" content="Estimate what a first paycheck looks like in California, Georgia, New York and Illinois using only sourced numbers, understand the W-4 and state withholding forms, and learn how to get unpaid wages. Facts from the IRS, state labor and tax agencies and the CFPB.">
+<meta name="theme-color" content="#151515">
+<link rel="canonical" href="https://vadneyk.github.io/internships/paycheck.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Your First Paycheck: What Comes Out, Tax Forms by State, and What to Do If Pay Is Wrong">
+<meta property="og:description" content="Estimate what a first paycheck looks like in California, Georgia, New York and Illinois using only sourced numbers, understand the W-4 and state withholding forms, and learn how to get unpaid wages. Facts from the IRS, state labor and tax agencies and the CFPB.">
+<meta property="og:url" content="https://vadneyk.github.io/internships/paycheck.html">
+<meta property="og:image" content="https://vadneyk.github.io/internships/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/fonts.css?v=2bf9f638">
+<link rel="stylesheet" href="assets/css/style.css?v=2bf9f638">
+<script>
+try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+</head>
+<body class="page-paycheck">
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="flame" viewBox="0 0 64 64">
+    <path d="M34 2C36 12 46 18 50 30C54 42 46 58 32 61C18 58 10 46 14 34C16 28 21 25 23 19C24 24 28 26 29 21C30 15 31 8 34 2Z" fill="currentColor"/>
+    <path d="M32 59C25 57 21 51 23 45C24 41 28 39 29 35C33 39 38 42 38 49C38 54 36 58 32 59Z" fill="#f6c431"/>
+  </symbol>
+</svg>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg aria-hidden="true"><use href="#flame"/></svg><span>Find <b>Internships</b></span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="find.html">Programs</a>
+      <a href="playbook.html">Playbook</a>
+      <a href="resume.html">Resume</a>
+      <a href="ready.html" aria-current="page">Get ready</a>
+      <a href="insights.html">Numbers</a>
+      <a href="rules.html">Rules</a>
+      <a href="contribute.html">Help build this</a>
+      <a href="about.html">About</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch light and dark mode" title="Light / dark">&#9681;</button>
+  </div>
+</header>
+<main id="main">
+<section style="padding-block:2rem 1rem;">
+  <div class="wrap">
+    <p class="small muted" style="margin:0 0 .6rem;"><a href="ready.html">Get ready</a> &rsaquo; Your first paycheck</p>
+    <span class="tag y eyebrow">Money</span>
+    <h1 style="font-size:clamp(2.2rem,7vw,4rem);">Your first <span class="orange">paycheck</span></h1>
+    <p class="lede">Your check is smaller than hours times pay rate. This page shows what comes out, which forms to fill out on your first day, and what to do if your pay is wrong. Last read Oct 9, 2026.</p>
+    <div class="callout plain small" style="margin-top:1rem;max-width:52rem;"><p><b>Facts, not tax advice.</b> We only show amounts we have a source for. Ask a parent or a tax preparer about your own situation.</p></div>
+  </div>
+</section>
+
+<section id="est" style="background:var(--paper-2); border-block:3px solid var(--edge);">
+  <div class="wrap">
+    <h2>1. Estimate one paycheck</h2>
+    <div class="grid g3" style="align-items:end;max-width:52rem;">
+      <div class="field"><label for="mPreset">Where and what rate</label><select id="mPreset"></select></div>
+      <div class="field"><label for="mWage">Hourly rate ($)</label><input id="mWage" type="number" min="0" step="0.01" inputmode="decimal"></div>
+      <div class="field"><label for="mHours">Hours in the pay period</label><input id="mHours" type="number" min="0" step="0.5" inputmode="decimal" value="12"></div>
+    </div>
+    <label style="display:flex;gap:.5rem;align-items:center;margin:.6rem 0;"><input type="checkbox" id="mParent"> I work for my parent's own business (not a corporation) and I am under 18</label>
+    <div class="card" id="mOut" aria-live="polite"></div>
+    <p class="small muted" id="mSrc"></p>
+  </div>
+</section>
+
+<section id="forms">
+  <div class="wrap">
+    <h2>2. The tax forms on your first day</h2>
+    <p id="mLeft"></p>
+    <div class="grid g2" id="mForms" style="align-items:start;"></div>
+    <p class="small" id="mFile"></p>
+  </div>
+</section>
+
+<section id="wrong" style="background:var(--paper-2); border-block:3px solid var(--edge);">
+  <div class="wrap">
+    <h2>3. If your pay is late or wrong</h2>
+    <div class="field" style="max-width:20rem;"><label for="mState">State</label><select id="mState"></select></div>
+    <div class="card" id="mWrong" aria-live="polite" style="margin-top:1rem;"></div>
+    <p class="small" id="mWrongNote"></p>
+  </div>
+</section>
+
+<section id="bank">
+  <div class="wrap">
+    <h2>4. Where the money goes</h2>
+    <ul id="mBank"></ul>
+    <p class="small muted" id="mBankSrc"></p>
+    <h2>What this page leaves out</h2>
+    <ul id="mGaps"></ul>
+  </div>
+</section>
+
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h2 class="fh">Teen internship guide</h2>
+        <p>Free. No sign-up, no ads, no tracking. Everything you type here stays in your browser.</p>
+        <p class="small">Last checked <b>Oct 9, 2026</b> &middot; 615 programs</p>
+      </div>
+      <div>
+        <h2 class="fh">Quick links</h2>
+        <p><a href="find.html">Find a program</a><br><a href="playbook.html">Write your message</a><br><a href="resume.html">Build a first resume</a><br><a href="ready.html">Get ready for day one</a><br><a href="calendar.html">What opens when</a><br><a href="paycheck.html">Your first paycheck</a><br><a href="younger.html">Ages 12 to 14: start here</a><br><a href="interview.html">Apply and interview prep</a><br><a href="permit.html">Do I need a work permit?</a><br><a href="languages.html">Work rules in your language</a><br><a href="insights.html">The numbers</a><br><a href="rules.html">Work permit and pay rules</a><br><a href="states.html">Rules in Georgia, New York, Illinois</a><br><a href="contribute.html">Help build this guide</a></p>
+      </div>
+      <div>
+        <h2 class="fh">About this page</h2>
+        <p>Made by Kentaro Vadney for the &ldquo;How to Find Internships&rdquo; table at Ignition NorCal 2026. This is an unofficial student resource. It is not an official publication of Ignition, Acts 2 Network or AYM, and the programs listed are not affiliated with them.</p>
+        <p class="small">Spot something wrong or out of date? <a href="https://github.com/VadneyK/internships/issues">Tell us on GitHub</a>. Always confirm dates and rules on the program&rsquo;s own site before you apply.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="assets/js/lib.js?v=2bf9f638"></script>
+<script src="assets/js/common.js?v=2bf9f638"></script>
+<script src="assets/js/paycheck.js?v=2bf9f638"></script>
+
+</body>
+</html>

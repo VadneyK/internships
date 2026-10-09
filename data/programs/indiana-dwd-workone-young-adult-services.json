@@ -1,0 +1,41 @@
+{
+  "grades": null,
+  "min_age": 14,
+  "max_age": 24,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "indiana-dwd-workone-young-adult-services",
+  "name": "WorkOne young adult (youth) services",
+  "org": "Indiana Department of Workforce Development, WorkOne Career Centers",
+  "regions": [
+    "lafayette",
+    "bloomington",
+    "indiana"
+  ],
+  "city": "Statewide, with WorkOne centers in Lafayette and other Indiana cities",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Career advising and job-readiness help for young people through WorkOne centers. Pay or work placements are not described on the page; ask the center what is offered.",
+  "who_can_apply": "The state page says in-school young adults ages 14 to 21 and out-of-school young adults ages 16 to 24 may be eligible. Eligibility rules beyond age are not stated.",
+  "paid_type": "mixed",
+  "pay_detail": "Not stated",
+  "season": "year-round",
+  "duration": "Not stated",
+  "status": "year-round",
+  "deadline_text": "No deadline posted. Contact a WorkOne center.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Connect with your local WorkOne Career Center (Lafayette office serves Tippecanoe County; schedule by appointment through the WorkOne West Central site). Ask about the young adult program.",
+  "needs_work_permit": null,
+  "url": "https://www.in.gov/dwd/job-seekers/young-adults",
+  "sources_fetched": [
+    "https://www.in.gov/dwd/job-seekers/young-adults",
+    "https://www.in.gov/workonewestcentral/about",
+    "http://www.workonewestcentral.org/60.html"
+  ],
+  "priority": 3,
+  "notes": "This is the state workforce agency's WIOA-style youth help, not a single job. The WorkOne West Central about page (older) says a youth program for ages 16 to 24 is offered; the newer state page says 14 to 21 in school. The Bloomington (South Central) WorkOne regional page was not read, so confirm locally. Call before going."
+}

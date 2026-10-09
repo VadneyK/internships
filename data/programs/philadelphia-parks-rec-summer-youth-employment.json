@@ -1,0 +1,41 @@
+{
+  "grades": null,
+  "min_age": 14,
+  "max_age": 24,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "philadelphia-parks-rec-summer-youth-employment",
+  "name": "Parks and Rec Summer Youth Employment Program",
+  "org": "Philadelphia Parks and Recreation",
+  "regions": [
+    "philadelphia"
+  ],
+  "city": "Philadelphia, PA",
+  "type": "paid-youth-program",
+  "fields": [
+    "social-impact",
+    "sports",
+    "education"
+  ],
+  "what_you_do": "Work at recreation centers, playgrounds, Playstreets and special initiatives, help with younger children, and build communication and leadership skills.",
+  "who_can_apply": "Youth and young adults ages 14 to 24. Residency is not stated on this page (the parent C2L-PHL program requires Philadelphia residency).",
+  "paid_type": "paid",
+  "pay_detail": "Not stated on the page",
+  "season": "summer",
+  "duration": "Summer",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The page still says registration closed for the C2L-PHL Summer 2025 program. No 2026 or 2027 dates posted.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Not described on this page; positions come through C2L-PHL. Questions: PPRC2L@phila.gov or 215-683-3683.",
+  "needs_work_permit": true,
+  "url": "https://www.phila.gov/programs/parks-rec-summer-youth-employment-program/",
+  "priority": 2,
+  "notes": "Check the C2L-PHL listing for the actual application. The page I read had not been updated after Summer 2025. Pennsylvania Department of Labor and Industry says work permits are required for minors under 18 hired to fill a position; the Parks and Rec page itself does not mention permits.",
+  "sources_fetched": [
+    "https://www.phila.gov/programs/parks-rec-summer-youth-employment-program/",
+    "https://www.pa.gov/agencies/dli/resources/compliance-laws-and-regulations/labor-management-relations/child-labor-act.html"
+  ]
+}

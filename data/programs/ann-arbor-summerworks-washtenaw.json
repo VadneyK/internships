@@ -1,0 +1,43 @@
+{
+  "grades": null,
+  "min_age": 16,
+  "max_age": 24,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": true,
+  "id": "ann-arbor-summerworks-washtenaw",
+  "name": "SummerWorks (Washtenaw County Summer Youth Employment Program)",
+  "org": "SummerWorks: Michigan Works! Southeast, Washtenaw County OCED, University of Michigan Poverty Solutions and partners",
+  "regions": [
+    "ann-arbor"
+  ],
+  "city": "Ann Arbor, MI (Washtenaw County)",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Weekly professional development, an adult mentor, and for those selected a paid 10 week summer internship with a local employer.",
+  "who_can_apply": "Ages 16 to 24 when programming begins (you must turn 16 by June 1 of the program year) AND you live in, or attend school in, Washtenaw County. Participants may take part for up to three years.",
+  "paid_type": "paid",
+  "pay_detail": "Internships pay $15 or $17 per hour depending on whether you have finished high school or an equivalent (employer FAQ). About 20 to 25 hours a week.",
+  "season": "summer",
+  "duration": "Program runs April to August; internship is 10 weeks between June and August",
+  "status": "closed-expect-reopen",
+  "deadline_text": "2026 cycle: applications opened Jan 15 and were due Mar 22, 2026; internship period June 15 to Aug 21, 2026. The site says 2027 applications open in mid-January and are usually open late January to late March. 2027 closing date is not posted.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Online application (opens January): your contact info, parent or guardian contact, approximate household income, possible summer conflicts, and one reference who is not a relative. Accepted minors need a parent or guardian signature.",
+  "url": "https://www.summerworks.info/young-adults",
+  "sources_fetched": [
+    "https://www.summerworks.info/",
+    "https://www.summerworks.info/about",
+    "https://www.summerworks.info/young-adults",
+    "https://www.summerworks.info/applynow",
+    "https://www.summerworks.info/employer-faq",
+    "https://www.michigan.gov/leo/bureaus-agencies/ber/wage-and-hour/youth-employment-standards-act-yesa"
+  ],
+  "priority": 1,
+  "notes": "A paid internship is not guaranteed: the site says a subset of participants is selected, though staff aim to match everyone. After acceptance you need I-9 identification documents and a bank account in your name for pay (this is for payroll, not a fee). Professional development is Tuesday or Wednesday evenings online, then Fridays 10am to 2pm in person from June. Michigan requires a work permit for minors under 18 to work; as of Oct 2, 2026 permits are issued through the state's Youth Employment Permit Portal, not schools. Contact: mail@summerworks.info."
+}

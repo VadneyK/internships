@@ -1,0 +1,42 @@
+{
+  "grades": "East Lansing High School students",
+  "min_age": null,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": null,
+  "id": "lansing-east-lansing-library-teen-action-group",
+  "name": "Teen Action Group (TAG) at East Lansing Public Library",
+  "org": "East Lansing Public Library (City of East Lansing)",
+  "regions": [
+    "lansing"
+  ],
+  "city": "East Lansing, MI",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "any"
+  ],
+  "what_you_do": "East Lansing High School students can log limited volunteer hours by participating in our Teen Action Group.",
+  "who_can_apply": "The library page says East Lansing High School students can log limited volunteer hours through the Teen Action Group. Ages are not stated.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "school-year",
+  "duration": "Not stated on the page.",
+  "status": "unconfirmed",
+  "deadline_text": "No current dates found. The library is not currently accepting general volunteers; TAG is the exception named on the current page.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "For more information, contact Rheanna Reeder or Zandra Blake.",
+  "url": "https://www.elpl.org/volunteer-at-the-east-lansing-public-library/",
+  "sources_fetched": [
+    "https://www.elpl.org/volunteer-at-the-east-lansing-public-library/",
+    "https://www.elpl.org/teens/",
+    "https://www.elpl.org/blogs/post/join-the-teen-action-group-tag/",
+    "https://www.michigan.gov/leo/bureaus-agencies/ber/wage-and-hour/youth-employment-standards-act-yesa"
+  ],
+  "priority": 3,
+  "notes": "The detailed TAG description is from a May 2022 library post that the site marks as possibly out of date, so confirm meeting times and who can join with the library first. Page also says the library is not accepting general volunteers at this time. Michigan's youth employment page (Youth Employment Standards Act) says the law covers employers of anyone under 18 including volunteers, so ask the program whether a work permit is needed."
+}

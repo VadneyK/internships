@@ -1,0 +1,41 @@
+{
+  "grades": "High school students",
+  "min_age": 16,
+  "max_age": 18,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": null,
+  "id": "ann-arbor-trinity-health-teen-volunteer",
+  "name": "Trinity Health Ann Arbor Teen Volunteer Program",
+  "org": "Trinity Health Michigan, Ann Arbor and Livingston",
+  "regions": [
+    "ann-arbor"
+  ],
+  "city": "Ann Arbor, MI",
+  "type": "volunteer",
+  "fields": [
+    "health"
+  ],
+  "what_you_do": "High school students volunteer in the hospital to improve the patient experience and get a first look at working in health care.",
+  "who_can_apply": "High school students ages 16 to 18.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Year-round roles with some seasonal placements (a summer teen cohort exists)",
+  "status": "unconfirmed",
+  "deadline_text": "No application dates posted. The 2026 Ann Arbor summer teen orientation was June 24, 2026, 11am to 4pm; no later orientation is listed.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Use the Apply Now button on the Ann Arbor and Livingston volunteer page (the link goes to the hospital's volunteer system at stjoemercyann.vsysweb.com). Then an interview, paperwork, health screening and a required orientation.",
+  "url": "https://www.trinityhealthmichigan.org/foundation-and-giving/volunteer/ann-arbor-and-livingston",
+  "sources_fetched": [
+    "https://www.trinityhealthmichigan.org/foundation-and-giving/volunteer",
+    "https://www.trinityhealthmichigan.org/foundation-and-giving/volunteer/ann-arbor-and-livingston",
+    "https://www.trinityhealthmichigan.org/foundation-and-giving/volunteer/ann-arbor-and-livingston/application-requirements",
+    "https://www.michigan.gov/leo/bureaus-agencies/ber/wage-and-hour/youth-employment-standards-act-yesa"
+  ],
+  "priority": 1,
+  "notes": "Requirements listed for volunteers: interview, two TB skin tests, proof of varicella and MMR immunity, Tdap, this year's flu shot, health clearance form, one non-relative reference, and orientation; background checks apply to volunteers 18 and over. Also on the same page: The Farm at Trinity Health takes volunteers age 15 and up (no background check under 18). The Apply Now link is http, not https, so it is not in the apply_url field. Volunteer office phone is on the page. Michigan's youth employment page (Youth Employment Standards Act) says the law covers employers of anyone under 18 including volunteers, so ask the program whether a work permit is needed."
+}

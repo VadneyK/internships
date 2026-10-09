@@ -1,0 +1,39 @@
+{
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "capital-area-nextgen-youth-services",
+  "name": "Capital Area NextGen Youth Services",
+  "org": "Capital Area Workforce Development Board (NCWorks Career Centers)",
+  "regions": [
+    "triangle"
+  ],
+  "city": "Raleigh, NC",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Youth specialists help young job seekers with tutoring, career exploration, entry-level job training and mock interviews.",
+  "min_age": 14,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Ages 14 to 24 in Wake and Johnston counties per the Capital Area youth page. The NextGen site says the program serves young adults facing barriers such as legal issues, home problems or missed education, and lists Wake, Johnston, Chatham, Lee and Orange counties. Exact eligibility rules and income limits are not stated.",
+  "paid_type": "mixed",
+  "pay_detail": "Apprenticeships and work experience are listed as services. Whether work experience is paid is not stated.",
+  "season": "year-round",
+  "duration": "Not stated",
+  "status": "unconfirmed",
+  "deadline_text": "The page does not state a deadline or enrollment status. Use the Complete an Interest Form button.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the interest form for your county at capitalareanextgen.org, or use the Request More Information form on the Capital Area youth page.",
+  "needs_work_permit": null,
+  "url": "https://capitalareancworks.com/job-seekers/youth-services/",
+  "sources_fetched": [
+    "https://capitalareancworks.com/job-seekers/youth-services/",
+    "https://capitalareanextgen.org/"
+  ],
+  "priority": 3,
+  "notes": "This is the federal workforce (WIOA) style youth program for Wake County. Durham is covered by a different workforce board and is not listed. The pages do not say whether 14 to 17 year olds qualify in every case; ask the career center."
+}

@@ -1,0 +1,39 @@
+{
+  "opens_iso": null,
+  "apply_url": null,
+  "grades": null,
+  "min_age": 16,
+  "max_age": 24,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "seattle-youth-employment-program",
+  "name": "Seattle Youth Employment Program (SYEP)",
+  "org": "City of Seattle Human Services Department",
+  "regions": [
+    "seattle"
+  ],
+  "city": "Seattle, WA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Paid summer internships in City departments, local businesses and nonprofits (July 6 to Aug 18 in 2026), plus a school-year Learn & Earn job skills program with stipends.",
+  "who_can_apply": "Age 16 to 24 at the start of the program (you can apply at 15 if you will be 16 by the start date). You must live in Seattle or attend Seattle Public Schools or Seattle Colleges, and household income must be at or below 80% of Area Median Income (for example $81,700 for 1 person, $116,650 for 4).",
+  "paid_type": "mixed",
+  "pay_detail": "Internship: at least Seattle's minimum wage, listed as $21.30 per hour. Learn & Earn Foundations: $325 stipend at the end of each module. Pathways: monthly stipend, amount not stated.",
+  "season": "summer",
+  "duration": "Internship about 6 weeks (July 6 to Aug 18, 2026). Foundations: October 2026 to March 2027 (tentative), 2-hour weekly sessions.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "2026 internship applications ran March 18 to May 5, 2026 (closed). Learn & Earn Foundations 2026-27 applications ran Aug 11 to Sept 25, 2026 (closed). 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Create an account and complete the online application at youthconnect.powerappsportals.us (the page links a help guide). The 250 internship spots are chosen by lottery. Pathways requires finishing SYEP Foundations or passing the Assessment of Skill.",
+  "needs_work_permit": null,
+  "url": "https://www.seattle.gov/humanservices/services-and-programs/preparing-youth-for-success/seattle-youth-employment-program",
+  "sources_fetched": [
+    "https://www.seattle.gov/humanservices/services-and-programs/preparing-youth-for-success/seattle-youth-employment-program",
+    "https://lni.wa.gov/workers-rights/youth-employment/how-to-hire-minors"
+  ],
+  "priority": 1,
+  "notes": "Proof of authorization to work in the U.S. is required for the internship, and an SSN or ITIN is needed to receive stipends and take part. The SYEP page does not mention work permits. Placements include City departments, which Washington L&I says are exempt from state child labor rules ('Public entities, including state and municipal governments, are not subject to Washington's child labor rules'; federal rules still apply), and private businesses and nonprofits, which are not exempt, so ask your placement about the parent/school authorization form. Questions: SYEP@seattle.gov or 206-386-1375."
+}

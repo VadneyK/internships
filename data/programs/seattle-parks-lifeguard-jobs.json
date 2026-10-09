@@ -1,0 +1,40 @@
+{
+  "opens_iso": null,
+  "apply_url": null,
+  "grades": null,
+  "min_age": 16,
+  "max_age": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "seattle-parks-lifeguard-jobs",
+  "name": "Seattle Parks and Recreation Lifeguard",
+  "org": "Seattle Parks and Recreation",
+  "regions": [
+    "seattle"
+  ],
+  "city": "Seattle, WA",
+  "type": "paid-youth-program",
+  "fields": [
+    "sports"
+  ],
+  "what_you_do": "Watch swimmers, respond to emergencies and help teach swim skills at city swim beaches and indoor and outdoor pools.",
+  "who_can_apply": "Seattle Parks summer jobs are open to ages 16 and up (18 and up for some positions). Lifeguards need a current American Red Cross Lifeguarding, First Aid and CPR/AED certification. The Red Cross course requires being at least 15 on or before the last class and passing a swim test.",
+  "paid_type": "paid",
+  "pay_detail": "Listed on the Parks summer jobs page as 'starts at $26.92' (the unit is not stated on the page).",
+  "season": "year-round",
+  "duration": "Summer-only at beaches and outdoor pools, or year-round at indoor pools",
+  "status": "rolling",
+  "deadline_text": "The last posting closed June 16, 2026. The Aquatics page says Temporary/Intermittent Lifeguards are hired year-round, even when no posting is active.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Get Red Cross certified. Then apply on GovernmentJobs.com when a listing is active, or email an Aquatic Application (or resume and cover letter) to parksaquatics@seattle.gov, or give it to the Aquatic Center Coordinator at any Seattle indoor pool. Hired lifeguards pass a background check, a physical and the NW Lifeguard Test. Call 206-684-4078.",
+  "needs_work_permit": false,
+  "url": "https://www.seattle.gov/parks/about-us/jobs/aquatics-employment-and-training",
+  "sources_fetched": [
+    "https://www.seattle.gov/parks/about-us/jobs/aquatics-employment-and-training",
+    "https://www.seattle.gov/parks/about-us/jobs/summer-employment-opportunities",
+    "https://lni.wa.gov/workers-rights/youth-employment/how-to-hire-minors"
+  ],
+  "priority": 1,
+  "notes": "Red Cross certifications last 2 years. The cost of the Red Cross course is not stated on the Parks pages. Seattle Parks is a municipal employer; Washington L&I says state and municipal governments are not subject to Washington's child labor rules (federal rules still apply)."
+}

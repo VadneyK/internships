@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "min_age": 13,
+  "max_age": 17,
+  "opens_iso": null,
+  "apply_url": "https://cityofsantabarbara.perfectmind.com/23701/Clients/BookMe4BookingPages/BookingCoursesPage?calendarId=78ba1a4e-fe62-4fbb-b98e-742d0b6a11a3&widgetId=73e0f759-582c-4577-baac-c8b6a2b9fad6&embed=False&singleCalendarWidget=true",
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "deadline_iso": null,
+  "id": "santa-barbara-parks-rec-junior-counselor",
+  "name": "Junior Counselor Program (Parks and Recreation)",
+  "org": "City of Santa Barbara Parks and Recreation",
+  "regions": [
+    "santa-barbara"
+  ],
+  "city": "Santa Barbara, CA",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "sports"
+  ],
+  "what_you_do": "Help summer camp counselors with daily activities while earning volunteer service hours and building leadership skills.",
+  "who_can_apply": "Teens ages 13 to 17.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Volunteer service hours.",
+  "season": "summer",
+  "duration": "Summer camp season; length not stated",
+  "status": "unconfirmed",
+  "deadline_text": "No dates are posted on the page. Use the Register link or call Parks and Recreation at 805-564-5418.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Use the Register button on the Teens and Early Adults page.",
+  "needs_work_permit": false,
+  "url": "https://sbparksandrec.santabarbaraca.gov/activities/teen-and-early-adult-recreation#junior-counselor",
+  "sources_fetched": [
+    "https://sbparksandrec.santabarbaraca.gov/activities/teen-and-early-adult-recreation"
+  ],
+  "priority": 2,
+  "notes": "The same page also lists a Job Apprentice Program and a free Arts Alliance mentoring program; those pages gave no ages or pay, so they are not listed."
+}
