@@ -384,3 +384,6 @@ tr:last-child td { border-bottom: 0; }
 
 /* long fill-in lines (underscores) must wrap on narrow screens */
 .letter { overflow-wrap: anywhere; }
+
+/* Tap targets: at least 44px tall on small buttons and chips */
+.chip, .star, .btn.sm { min-height: 2.75rem; }

@@ -48,7 +48,7 @@ test("ready: every city in the ride picker shows its card, cost, what to bring a
   const { window, document } = await loadPage("ready.html"); await tick(120);
   const sel = document.getElementById("rideSel");
   assert.ok(sel.options.length >= 7, "six cities plus the prompt");
-  for (const o of [...sel.options].slice(1)) {
+  for (const o of [...sel.options].slice(1).filter((x) => x.value !== "other")) {
     type(window, sel, o.value);
     const out = document.getElementById("rideOut");
     assert.match(out.textContent, /Where to get it/);
@@ -57,4 +57,10 @@ test("ready: every city in the ride picker shows its card, cost, what to bring a
     assert.ok([...out.querySelectorAll("a")].every((a) => /^https:\/\//.test(a.href)), o.value + " links must be https");
   }
   assert.match(document.getElementById("rideDrive").textContent, /Do not take a job that has you driving/);
+});
+
+test("ready: a city we have not read says so instead of showing nothing", async () => {
+  const { window, document } = await loadPage("ready.html"); await tick(120);
+  type(window, document.getElementById("rideSel"), "other");
+  assert.match(document.getElementById("rideOut").textContent, /have not read your transit agency/);
 });

@@ -224,7 +224,7 @@
     if (state.view === "dates") p.set("view", "dates");
     if (state.sort !== "best") p.set("sort", state.sort);
     var qs = p.toString();
-    try { history.replaceState(null, "", location.pathname + (qs ? "?" + qs : "")); } catch (e) {}
+    try { history.replaceState(null, "", location.pathname + (qs ? "?" + qs : "") + location.hash); } catch (e) {}
   }
   function readURL() {
     var p = new URLSearchParams(location.search);
@@ -249,9 +249,10 @@
     chipGroup("typeChips", Object.keys(G.TYPES).filter(function (k) { return tc[k]; }).map(function (k) { return [k, G.TYPES[k], tc[k]]; }), "types");
     var fc = {}; all.forEach(function (e) { (e.fields || []).forEach(function (f) { fc[f] = (fc[f] || 0) + 1; }); });
     chipGroup("fieldChips", Object.keys(G.FIELDS).filter(function (k) { return k !== "any" && fc[k]; }).map(function (k) { return [k, G.FIELDS[k], fc[k]]; }), "fields");
+    var wantHash = location.hash;
     readURL(); syncChips(); render(true);
-    if (location.hash.indexOf("#p-") === 0) {
-      var wantId = location.hash.slice(3), idx = sortList(all.filter(matches)).map(function (e) { return e.id; }).indexOf(wantId);
+    if (wantHash.indexOf("#p-") === 0) {
+      var wantId = wantHash.slice(3), idx = sortList(all.filter(matches)).map(function (e) { return e.id; }).indexOf(wantId);
       if (idx >= shown) { shown = idx + 1; render(false); }
       var el = document.getElementById("p-" + wantId);
       if (el) { var det = el.querySelector("details"); if (det) det.open = true; el.scrollIntoView(); }
