@@ -2,7 +2,7 @@
 """Stamp the shared header/footer onto each page in src/ and write plain static HTML to the repo root.
 
 Each src/<name>.html starts with header lines (`title:`, `desc:`, `scripts:`) then a line `---`, then the body.
-Tokens {{count}}, {{checked}} come from data/meta.json (written by tools/merge.py).
+Tokens {{count}}, {{checked}} come from data/meta.json (written by tools/build_data.py).
 """
 import json, os, re, sys, time
 

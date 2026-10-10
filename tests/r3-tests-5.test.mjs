@@ -77,7 +77,8 @@ for (const page of pages) {
 
 test("the sweep saw real data requests across the pages", () => {
   assert.ok(totalRequests.length >= 8, `only ${totalRequests.length} requests logged, check the hook`);
-  assert.ok(totalRequests.some((u) => u.endsWith("/data/entries.json")), "no page loaded data/entries.json");
+  /* find.html draws its cards from the lite file; the full text file loads only when a card is opened (tests/r1-perf-scale-3.test.mjs) */
+  assert.ok(totalRequests.some((u) => u.endsWith("/data/entries-lite.json")), "no page loaded data/entries-lite.json");
 });
 
 // ---------- interactive states ----------

@@ -274,3 +274,44 @@ test("gradePhrase: 'Grade 10' and '6' give clean grammar, not 'grade grade' or '
   assert.equal(L.gradePhrase("3"), "in 3rd grade");
   assert.equal(L.gradePhrase("4"), "in 4th grade");
 });
+test("rank: cost tier and age fit come after the group and the deadline bucket", () => {
+  const fee = { ...base, id: "f", name: "F", paid_type: "fee-based", deadline_iso: "2026-10-10" };
+  const paid = { ...base, id: "p", name: "P", paid_type: "paid", deadline_iso: "2027-03-01" };
+  assert.deepEqual(L.sortList([paid, fee], "best", NOW).map((e) => e.id), ["f", "p"]);
+  assert.equal(L.rank(paid, NOW).length + 1, L.rank(paid, NOW, { age: 16 }).length);
+  assert.equal(L.rank(paid, NOW, { age: 16 })[3], 0);
+});
+
+/* The order the Find sort note describes (find.js SORT_NOTE_HEAD). NOW is Oct 7 2026, so the day counts are in the comments. */
+const prog = (id, paid_type, deadline_iso, extra) => ({ ...base, id, name: id, paid_type, deadline_iso, status: "open-now", ...(extra || {}) });
+const ids = (list, mode, profile) => L.sortList(list, mode || "best", NOW, profile).map((e) => e.id);
+
+test("sort note order: inside the 3 week bucket, cost comes before the nearest deadline", () => {
+  const paid18 = prog("paid18", "paid", "2026-10-25");   // 18 days
+  const free2 = prog("free2", "unpaid", "2026-10-09");   // 2 days
+  const free21 = prog("free21", "unpaid", "2026-10-28"); // 21 days, last day of the bucket
+  const paid22 = prog("paid22", "paid", "2026-10-29");   // 22 days, outside the bucket
+  assert.deepEqual(ids([paid22, free21, free2, paid18]), ["paid18", "free2", "free21", "paid22"]);
+});
+
+test("sort note order: paid, then unpaid or pay not stated, then costs money, then nearest deadline", () => {
+  const fee5 = prog("fee5", "fee-based", "2026-10-12");     // 5 days
+  const notStated5 = prog("notStated5", "not-stated", "2026-10-12"); // 5 days
+  const paid20 = prog("paid20", "paid", "2026-10-27");     // 20 days
+  const paid7 = prog("paid7", "stipend", "2026-10-14");    // 7 days
+  assert.deepEqual(ids([fee5, paid20, notStated5, paid7]), ["paid7", "paid20", "notStated5", "fee5"]);
+});
+
+test("sort note order: age fit comes before the nearest deadline, and only when an age is set", () => {
+  const fitLate = prog("fitLate", "paid", "2026-10-25", { min_age: 13, max_age: 15 }); // 18 days, fits 15
+  const noFitSoon = prog("noFitSoon", "paid", "2026-10-15", { min_age: 16, max_age: 19 }); // 8 days, does not fit 15
+  assert.deepEqual(ids([fitLate, noFitSoon]), ["noFitSoon", "fitLate"]);
+  assert.deepEqual(ids([fitLate, noFitSoon], "best", { age: 15 }), ["fitLate", "noFitSoon"]);
+});
+
+test("sort note order: open with a deadline, then open with no deadline, then the rest, and groups beat cost", () => {
+  const withDeadline = prog("withDeadline", "unpaid", "2026-11-06"); // 30 days, open with a deadline
+  const openNoDeadline = prog("openNoDeadline", "paid", null);        // open, no deadline
+  const rolling = { ...base, id: "rolling", name: "rolling", paid_type: "paid", status: "rolling", deadline_iso: null };
+  assert.deepEqual(ids([rolling, openNoDeadline, withDeadline]), ["withDeadline", "openNoDeadline", "rolling"]);
+});

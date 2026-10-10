@@ -151,15 +151,16 @@ test("rank: open with a deadline sorts before open without one, then anytime, cl
 });
 test("rank: missing priority defaults to 3 and missing name does not throw", () => {
   const r = L.rank({ id: "z", status: "rolling" }, NOW);
-  assert.equal(r[2], 3);
+  assert.equal(r[4], 3);
 });
-test("rank: always returns five parts, with days only for group 0", () => {
+test("rank: always returns seven parts without a profile, with days only for group 0", () => {
+  // group, deadline bucket, cost tier, days, priority, verified, name (an age fit key is added only with a profile age)
   for (const e of FIX) {
     const r = L.rank(e, NOW);
-    assert.equal(r.length, 5);
-    if (r[0] !== 0) assert.equal(r[1], 0);
+    assert.equal(r.length, 7);
+    if (r[0] !== 0) assert.equal(r[3], 0);
   }
-  assert.equal(L.rank(FIX[0], NOW)[1], 13);
+  assert.equal(L.rank(FIX[0], NOW)[3], 13);
 });
 
 test("compare: antisymmetric on every pair in the fixture", () => {

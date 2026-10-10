@@ -3,7 +3,9 @@
   "use strict";
   var G = window.TIG;
   var $ = function (id) { return document.getElementById(id); };
-  var all = [];
+  var all = []; /* the card file: enough to match, sort and draw the closing-soon list */
+  var liteById = null; /* the lite file by id, loaded the first time the picker needs the four result cards */
+  var pickRun = 0; /* counts picker changes so a slow download never draws over a newer pick */
 
   var L = G.lib;
   function fut(e) { return L.futureDeadline(e, Date.now()); }
@@ -28,17 +30,23 @@
     var fl = field ? [field] : [];
     var list = L.sortList(all.filter(function (e) {
       return L.matches(e, { place: hub, age: age, fields: fl }, Date.now());
-    }), "best", Date.now());
+    }), "best", Date.now(), { age: age });
     var q = new URLSearchParams();
     if (age) q.set("age", age); if (hub) q.set("at", hub); if (field) q.set("interest", field);
     var top = list.slice(0, 4);
-    if (!top.length) {
-      box.innerHTML = '<div class="card empty" style="grid-column:1/-1"><h3>No exact match yet</h3><p>Try a different area or interest, or browse everything.</p></div>';
-      status.textContent = "No programs match yet. Try a different area or interest.";
-    } else {
+    var run = ++pickRun;
+    function showMore() {
+      more.hidden = false;
+      var younger = (age === "12" || age === "13" ? ' <a class="btn sm alt" href="younger.html">Under 14? Read the ages 12 to 14 page</a>' : "");
+      /* No matches: a plain link to the whole Programs page, never a "See all 0" button that opens an empty list */
+      if (!list.length) { more.innerHTML = '<a class="btn" href="find.html">Browse all programs</a>' + younger; return; }
+      more.innerHTML = '<a class="btn" href="find.html?' + G.esc(q.toString()) + '">See all ' + list.length + " matches</a>" + younger;
+    }
+    function draw() {
       status.textContent = list.length === 1 ? "1 program matches. Details below." :
         list.length + " programs match. " + (list.length > top.length ? "Showing the top " + top.length + " below." : "Details below.");
-      box.innerHTML = top.map(function (e) {
+      box.innerHTML = top.map(function (c) {
+        var e = liteById[c.id] || c;
         var u = G.safeUrl(e.url);
         var who = e.name + (e.org ? ", " + e.org : "");
         return '<article class="card prog"><div class="row"><span class="tag ' + (e.paid_type === "paid" || e.paid_type === "stipend" ? "y" : "ghost") + '">' + G.esc(G.PAID[e.paid_type] || "") + '</span><span class="tag ghost">' + G.esc(G.TYPES[e.type] || "") + "</span></div>" +
@@ -47,14 +55,29 @@
           '<div class="actions">' + (u ? '<a class="btn sm" href="' + G.esc(u) + '" target="_blank" rel="noopener" aria-label="' + G.esc("Official page for " + who) + '">Official page</a>' : "") + '<a class="btn sm alt" href="find.html?' + G.esc(q.toString()) + "#p-" + G.esc(e.id) + '" aria-label="' + G.esc("Details for " + who) + '">Details</a></div></article>';
       }).join("");
     }
-    more.hidden = false;
-    more.innerHTML = '<a class="btn" href="find.html?' + G.esc(q.toString()) + '">See all ' + list.length + " matches</a>" +
-      (age === "12" || age === "13" ? ' <a class="btn sm alt" href="younger.html">Under 14? Read the ages 12 to 14 page</a>' : "");
+    if (!top.length) {
+      box.innerHTML = '<div class="card empty" style="grid-column:1/-1"><h3>No exact match yet</h3><p>Try a different area or interest, or browse everything.</p></div>';
+      status.textContent = "No programs match yet. Try a different area or interest.";
+    } else if (liteById) {
+      draw();
+    } else {
+      /* The result cards need the long text, so the lite file loads now, once. The count and link are known already. */
+      box.innerHTML = "";
+      status.textContent = "Your matches are loading.";
+      G.loadEntries(true).then(function (rows) {
+        liteById = {};
+        rows.forEach(function (r) { liteById[r.id] = r; });
+        if (run === pickRun) draw();
+      }).catch(function () {
+        if (run === pickRun) status.textContent = "The match details could not load. Use the See all matches button instead.";
+      });
+    }
+    showMore();
   }
   ["pAge", "pHub", "pField"].forEach(function (id) { $(id).addEventListener("change", pick); });
   linkAge();
 
-  G.loadEntries(true).then(function (data) {
+  G.loadEntries("card").then(function (data) {
     all = data;
     G.fillPlaces($("pHub"), all);
     var soon = all.filter(function (e) { return fut(e) && e.deadline_confidence === "confirmed-2026-27"; })

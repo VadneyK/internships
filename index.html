@@ -20,8 +20,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=7646bea0">
-<link rel="stylesheet" href="assets/css/style.css?v=7646bea0">
+<link rel="stylesheet" href="assets/css/fonts.css?v=89dd6f94">
+<link rel="stylesheet" href="assets/css/style.css?v=89dd6f94">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -58,7 +58,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <span class="tag y eyebrow">Grades 7 to 12 &middot; Many states &middot; Vancouver, BC</span>
     <h1><span class="a">How to find</span><span class="b stroke">Internships</span></h1>
     <img class="swoosh" src="assets/img/swoosh.svg" alt="" width="600" height="60">
-    <p class="lede" style="margin-top:1rem;">A free guide for teens. It started in California, Atlanta, New York and Chicago, and now lists programs in more states, such as Texas, Ohio and Pennsylvania, plus Vancouver, BC. Real programs, with the deadlines we could confirm, and the one move that beats every job site: asking a person.</p>
+    <p class="lede" style="margin-top:1rem;">A free guide for teens. Pick your age to see real programs, with the deadlines we could confirm, then learn the one move that beats every job site: asking a person.</p>
     <div class="cta">
       <a class="btn" href="find.html">Find a program</a>
       <a class="btn alt" href="playbook.html">Write your message</a>
@@ -70,9 +70,38 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     </nav>
     <div class="stats" aria-label="At a glance">
       <div class="stat"><b>1187</b><span>programs checked</span></div>
-      <div class="stat"><b>Many</b><span>areas: start with California, Atlanta, New York and Chicago</span></div>
+      <div class="stat"><b>12 to 18</b><span>ages the picker covers</span></div>
       <div class="stat"><b>$0</b><span>no sign-up, no tracking</span></div>
     </div>
+  </div>
+</section>
+
+<section id="start">
+  <div class="wrap">
+    <span class="tag eyebrow">Start here</span>
+    <h2>What fits <span class="orange">you</span>?</h2>
+    <form class="card" id="picker" onsubmit="return false" aria-label="Find matching programs">
+      <div class="formgrid">
+        <div class="field"><label for="pAge">How old are you?</label>
+          <select id="pAge"><option value="">Pick your age</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option></select></div>
+        <div class="field"><label for="pHub">Where do you live or go to school?</label>
+          <select id="pHub"><option value="">Anywhere</option></select></div>
+        <div class="field"><label for="pField">What are you curious about?</label>
+          <select id="pField"><option value="">Anything</option></select></div>
+      </div>
+    </form>
+    <p id="matchStatus" class="sr" role="status"></p>
+    <div id="matches" class="results" style="margin-top:1.2rem;"></div>
+    <p id="matchMore" style="margin-top:1rem;" hidden></p>
+  </div>
+</section>
+
+<section id="soon" style="background:var(--paper-2); border-block:3px solid var(--edge);">
+  <div class="wrap">
+    <span class="tag o eyebrow">Next deadlines</span>
+    <h2>Closing <span class="orange">soon</span></h2>
+    <ul class="tl" id="soonList"><li><div class="d">...</div><div>Loading</div></li></ul>
+    <p style="margin-top:1rem;"><a class="btn alt sm" href="find.html?view=dates">See every deadline by month</a></p>
   </div>
 </section>
 
@@ -141,35 +170,6 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </section>
 
-<section id="start">
-  <div class="wrap">
-    <span class="tag eyebrow">Start here</span>
-    <h2>What fits <span class="orange">you</span>?</h2>
-    <form class="card" id="picker" onsubmit="return false" aria-label="Find matching programs">
-      <div class="formgrid">
-        <div class="field"><label for="pAge">How old are you?</label>
-          <select id="pAge"><option value="">Pick your age</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option></select></div>
-        <div class="field"><label for="pHub">Where do you live or go to school?</label>
-          <select id="pHub"><option value="">Anywhere</option></select></div>
-        <div class="field"><label for="pField">What are you curious about?</label>
-          <select id="pField"><option value="">Anything</option></select></div>
-      </div>
-    </form>
-    <p id="matchStatus" class="sr" role="status"></p>
-    <div id="matches" class="results" style="margin-top:1.2rem;"></div>
-    <p id="matchMore" style="margin-top:1rem;" hidden></p>
-  </div>
-</section>
-
-<section id="soon" style="background:var(--paper-2); border-block:3px solid var(--edge);">
-  <div class="wrap">
-    <span class="tag o eyebrow">Next deadlines</span>
-    <h2>Closing <span class="orange">soon</span></h2>
-    <ul class="tl" id="soonList"><li><div class="d">...</div><div>Loading</div></li></ul>
-    <p style="margin-top:1rem;"><a class="btn alt sm" href="find.html?view=dates">See every deadline by month</a></p>
-  </div>
-</section>
-
 <section id="young">
   <div class="wrap">
     <div class="grid g2">
@@ -181,6 +181,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <div class="callout plain">
         <h3>Parents and youth leaders</h3>
         <p>The fastest help is an introduction: one coworker, neighbor or church member who will take a 15-minute call from a teen. Then read the <a href="rules.html">work permit and pay rules</a> and the <a href="rules.html#scams">scam checklist</a> together.</p>
+        <p>See the <a href="parents.html">For parents</a> page, or <a href="safety.html">Safe at work</a> if a teen has a problem on the job.</p>
       </div>
     </div>
   </div>
@@ -226,9 +227,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=7646bea0"></script>
-<script src="assets/js/common.js?v=7646bea0"></script>
-<script src="assets/js/home.js?v=7646bea0"></script>
+<script src="assets/js/lib.js?v=89dd6f94"></script>
+<script src="assets/js/common.js?v=89dd6f94"></script>
+<script src="assets/js/home.js?v=89dd6f94"></script>
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-/* Shared helpers: theme, toast, copy, data loading, saved list. No tracking, no network calls except loading data/entries.json. */
+/* Shared helpers: theme, toast, copy, data loading, saved list. No tracking, no network calls except loading the data files under data/. */
 (function () {
   "use strict";
   var G = (window.TIG = window.TIG || {});
@@ -113,12 +113,13 @@
         return v === undefined ? d : v;
       } catch (e) { return d; }
     },
-    set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+    /* true when the browser kept the value, false when it refused (private mode, full, blocked) */
+    set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch (e) { return false; } }
   };
 
   /* data */
-  var cache, liteCache, coreCache, cardCache;
-  /* G.loadEntries() is the full file (find.js). G.loadEntries(true) is the lite file: same ids and order, without the long text fields, for pages that only show a few fields. G.loadEntries("core") is the core file: same ids and order, only the keys lib.js needs to match by age, status, season and region. G.loadEntries("card") is the card file: same ids and order, only the short fields the Calendar and Numbers pages read. */
+  var cache, liteCache, coreCache, cardCache, detailCache;
+  /* G.loadEntries() is the full file (find.js). G.loadEntries(true) is the lite file: same ids and order, without the long text fields, for pages that only show a few fields. G.loadEntries("core") is the core file: same ids and order, only the keys lib.js needs to match by age, status, season and region. G.loadEntries("card") is the card file: same ids and order, only the short fields the Calendar and Numbers pages read. G.loadEntries("detail") is the detail file: same ids and order, only id plus the long text (who_can_apply, how_to_apply, notes) that the Programs page fills in after it has drawn the cards from the lite file. */
   function checkJson(r) {
     if (!r.ok) throw new Error("Could not load programs (" + r.status + ")");
     return r.json();
@@ -131,6 +132,14 @@
     if (lite === "card") {
       if (!cardCache) cardCache = fetch("data/entries-card.json", { cache: "no-cache" }).then(checkJson);
       return cardCache;
+    }
+    if (lite === "detail") {
+      if (!detailCache) {
+        detailCache = fetch("data/entries-detail.json", { cache: "no-cache" }).then(checkJson);
+        /* a failed load is not kept, so the next try starts a new request */
+        detailCache.catch(function () { detailCache = null; });
+      }
+      return detailCache;
     }
     if (lite) {
       if (!liteCache) liteCache = fetch("data/entries-lite.json", { cache: "no-cache" }).then(checkJson);
@@ -145,11 +154,11 @@
   /* Fill a select with every city and area, each with how many programs it has. A city with none says so, so nobody thinks the site is broken. */
   G.fillPlaces = function (sel, entries, keep) {
     if (!L) return;
-    function n(place) { var c = 0; entries.forEach(function (e) { if (L.matches(e, { place: place }, Date.now())) c++; }); return c; }
+    var counts = L.placeCounts(entries);
     function group(label, kind, list) {
       var g = document.createElement("optgroup"); g.label = label;
       list.forEach(function (x) {
-        var c = n(kind + ":" + x[0]), o = document.createElement("option");
+        var c = counts[kind + ":" + x[0]], o = document.createElement("option");
         o.value = kind + ":" + x[0]; o.textContent = x[1] + (c ? " (" + c + ")" : " (none yet)");
         g.appendChild(o);
       });
@@ -165,13 +174,19 @@
   }
 
   /* saved list shared by the Programs page and the home page */
+  /* mem is the in-memory copy used only while the browser refuses to keep the list, so a star stays on until the page closes.
+     G.saved.kept is false after a write the browser refused. */
+  var savedMem = null;
   G.saved = {
-    ids: function () { return G.store.get("saved", []); },
+    kept: true,
+    ids: function () { return savedMem ? savedMem.slice() : G.store.get("saved", []); },
     has: function (id) { return G.saved.ids().indexOf(id) > -1; },
     toggle: function (id) {
       var a = G.saved.ids(), i = a.indexOf(id);
       if (i > -1) a.splice(i, 1); else a.push(id);
-      G.store.set("saved", a); return i === -1;
+      G.saved.kept = G.store.set("saved", a);
+      savedMem = G.saved.kept ? null : a.slice();
+      return i === -1;
     }
   };
   /* Warn which links open a new tab. Every a[target=_blank] gets "(opens in a new tab)" in its name:

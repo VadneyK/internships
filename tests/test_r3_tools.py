@@ -65,6 +65,9 @@ class CoreFileTests(unittest.TestCase):
 
 
 def run_freshness(*argv):
+    # The default cap of 150 rows is for the GitHub issue; these tests look at every row.
+    if "--max-items" not in argv:
+        argv = (*argv, "--max-items", "1000000")
     out = io.StringIO()
     with mock.patch.object(sys, "argv", ["freshness.py", *argv]), contextlib.redirect_stdout(out):
         code = freshness.main()
@@ -103,12 +106,12 @@ class FreshnessMainTests(unittest.TestCase):
         )
         self.assertEqual(len(item_lines(text)), expected)
 
-    def test_rows_are_sorted_by_first_region_then_name(self):
+    def test_rows_are_sorted_by_urgency_then_oldest_check_then_region_then_name(self):
         _, text = run_freshness("--today", TODAY)
         keys = []
         for line in item_lines(text):
             d = program_for_line(line, self.by_id)
-            keys.append((d["regions"][0], d["name"]))
+            keys.append(freshness.urgency_key(d, self.today))
         self.assertEqual(keys, sorted(keys))
 
     def test_each_row_carries_its_program_url_and_a_reason(self):

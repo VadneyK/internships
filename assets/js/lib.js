@@ -342,6 +342,48 @@
     return true;
   }
 
+  /*
+    Search text. Each entry's padded lowercase text is built once and kept in a WeakMap. The signature
+    (lengths of notes and who_can_apply) makes it rebuild when the detail text is merged in later.
+    The parsed words of the last query string are kept too, so one keystroke parses once, not once per program.
+  */
+  var _hay = typeof WeakMap === "function" ? new WeakMap() : null, _qStr = null, _qNeedles = [];
+  function buildHaystack(e) {
+    var hay = [e.name, e.org, e.city, e.what_you_do, e.notes, e.who_can_apply, (e.regions || []).map(regionLabel).join(" "), TYPES[e.type]].join(" ").toLowerCase();
+    return " " + hay.replace(/[^a-z0-9]+/g, " ");
+  }
+  function haystack(e) {
+    if (!_hay) return buildHaystack(e);
+    var sig = (e.notes ? String(e.notes).length : -1) + ":" + (e.who_can_apply ? String(e.who_can_apply).length : -1);
+    var c = _hay.get(e);
+    if (!c || c.sig !== sig) { c = { sig: sig, text: buildHaystack(e) }; _hay.set(e, c); }
+    return c.text;
+  }
+  function queryNeedles(q) {
+    if (q !== _qStr) {
+      _qNeedles = q.toLowerCase().split(/\s+/).filter(Boolean).map(function (w) { return " " + w.replace(/[^a-z0-9]+/g, " "); });
+      _qStr = q;
+    }
+    return _qNeedles;
+  }
+
+  /* How many entries are in each city and area, in one pass. Same counts as matches(e, {place: key}) for every key. */
+  function placeCounts(entries) {
+    var keys = [], regs = [], counts = {}, i, j, k;
+    CITIES.forEach(function (c) { keys.push("city:" + c[0]); });
+    AREAS.forEach(function (a) { keys.push("area:" + a[0]); });
+    for (i = 0; i < keys.length; i++) { regs.push(placeRegions(keys[i]) || null); counts[keys[i]] = 0; }
+    for (j = 0; j < entries.length; j++) {
+      var rs = entries[j].regions || [];
+      for (i = 0; i < keys.length; i++) {
+        var pr = regs[i];
+        if (!pr) { counts[keys[i]]++; continue; }
+        for (k = 0; k < pr.length; k++) if (rs.indexOf(pr[k]) > -1) { counts[keys[i]]++; break; }
+      }
+    }
+    return counts;
+  }
+
   /* state: {q, hubs[], age, when, season, paid[], types[], fields[], verified, noPermit, saved, savedIds[]} */
   function matches(e, s, now) {
     if (s.place) {
@@ -365,41 +407,150 @@
     if (s.noPermit && e.needs_work_permit !== false) return false;
     if (s.saved && (s.savedIds || []).indexOf(e.id) === -1) return false;
     if (s.q) {
-      var hay = [e.name, e.org, e.city, e.what_you_do, e.notes, e.who_can_apply, (e.regions || []).map(regionLabel).join(" "), TYPES[e.type]].join(" ").toLowerCase();
-      var words = s.q.toLowerCase().split(/\s+/).filter(Boolean);
-      var padded = " " + hay.replace(/[^a-z0-9]+/g, " ");
+      var needles = queryNeedles(s.q), padded = haystack(e);
       /* each search word must start a word in the text, so "paid" does not match "unpaid" */
-      if (!words.every(function (w) { return padded.indexOf(" " + w.replace(/[^a-z0-9]+/g, " ")) > -1; })) return false;
+      for (var i = 0; i < needles.length; i++) if (padded.indexOf(needles[i]) === -1) return false;
     }
     return true;
   }
 
-  /* Lower rank sorts first: open with a deadline (soonest), open, anytime, closed, unknown; then priority, verified, name. */
-  function rank(e, now) {
+  /*
+    Live chip counts. For each chip, how many entries match when the current state is kept but that one facet
+    (hubs, paid, types or fields) is replaced by just that chip. For hubs the place is cleared too, because
+    choosing a hub chip clears the place. The filters are independent, so each entry is tested once per facet
+    with that facet left out, then counted under the chips it belongs to. Nothing is stored between calls.
+    Returns {hubs:{id:n}, paid:{id:n}, types:{id:n}, fields:{id:n}} with every chip id present, zeros included.
+  */
+  function facetCounts(list, state, now) {
+    var st = state || {}, out = { hubs: {}, paid: {}, types: {}, fields: {} };
+    HUBS.forEach(function (h) { out.hubs[h[0]] = 0; });
+    PAID_GROUPS.forEach(function (g) { out.paid[g[0]] = 0; });
+    Object.keys(TYPES).forEach(function (k) { out.types[k] = 0; });
+    Object.keys(FIELDS).forEach(function (k) { if (k !== "any") out.fields[k] = 0; });
+    var noHubs = Object.assign({}, st, { hubs: [], place: "" }),
+        noPaid = Object.assign({}, st, { paid: [] }),
+        noTypes = Object.assign({}, st, { types: [] }),
+        noFields = Object.assign({}, st, { fields: [] });
+    (list || []).forEach(function (e) {
+      if (matches(e, noHubs, now)) hubsOf(e).forEach(function (h) { if (h in out.hubs) out.hubs[h]++; });
+      if (matches(e, noPaid, now)) PAID_GROUPS.forEach(function (g) { if (g[2].indexOf(e.paid_type) > -1) out.paid[g[0]]++; });
+      if (matches(e, noTypes, now) && e.type in out.types) out.types[e.type]++;
+      if (matches(e, noFields, now)) {
+        var fl = e.fields || [], any = fl.indexOf("any") > -1;
+        Object.keys(out.fields).forEach(function (k) { if (any || fl.indexOf(k) > -1) out.fields[k]++; });
+      }
+    });
+    return out;
+  }
+
+  /*
+    Empty-state help. For each filter that is on, turn off just that one, count the matches and keep it if the count is above 0.
+    Returns [{key, label, count}], highest count first, at most 3. My list stays as it is. Does not change the state.
+    A place with fewer than 3 matches is widened to online programs, as the Programs page does.
+  */
+  var RELAX = [["q"], ["age"], ["when"], ["season"], ["paid", "pay", PAID_GROUPS], ["types", "type", TYPES], ["fields", "interest", FIELDS], ["verified"], ["noPermit"], ["hubs", "area", HUBS], ["place"]];
+  var WHEN_NAMES = { "open": "Open or opening soon", "60": "Deadline in the next 60 days", "anytime": "Apply anytime", "closed": "Closed now, check back" };
+  function relaxLabel(r, st) {
+    var k = r[0], v = st[k];
+    if (k === "q") return "Remove the search word";
+    if (k === "age") return "Remove age " + v;
+    if (k === "when") return "Remove " + (WHEN_NAMES[v] || "the timing filter");
+    if (k === "season") return "Remove the season filter";
+    if (k === "verified") return "Remove Only checked on the official site";
+    if (k === "noPermit") return "Remove No work permit needed";
+    if (k === "place") return "Remove place: " + placeLabel(v);
+    if (v.length > 1) return "Remove the " + v.length + " " + r[1] + " filters";
+    var t = r[2], n = Array.isArray(t) ? (t.filter(function (x) { return x[0] === v[0]; })[0] || [])[1] : t[v[0]];
+    return "Remove " + r[1] + ": " + (n || v[0]);
+  }
+  function relaxOptions(list, state, now) {
+    var st = state || {}, found = [], entries = list || [];
+    function count(s) { return entries.filter(function (e) { return matches(e, s, now); }).length; }
+    RELAX.forEach(function (r, order) {
+      var k = r[0], v = st[k];
+      if (Array.isArray(v) ? !v.length : !v) return;
+      var s = Object.assign({}, st, { placeOnline: false }), n;
+      s[k] = Array.isArray(v) ? [] : typeof v === "boolean" ? false : "";
+      n = count(s);
+      if (s.place && n < 3) { s.placeOnline = true; n = count(s); }
+      if (n > 0) found.push({ key: k, label: relaxLabel(r, st), count: n, order: order });
+    });
+    found.sort(function (a, b) { return b.count - a.count || a.order - b.order; });
+    return found.slice(0, 3).map(function (o) { return { key: o.key, label: o.label, count: o.count }; });
+  }
+
+  /*
+    Lower rank sorts first. Keys in order:
+    1. group: open with a deadline, open, anytime, closed, unknown.
+    2. deadline bucket (group 0 only): 0 if the deadline is 21 days away or less, else 1.
+    3. cost tier: 0 paid, stipend or mixed; 1 unpaid, unpaid-credit or pay not stated; 2 fee-based.
+    4. age fit, only when profile.age is set: 0 if a min or max age is stated and fits, 1 if no age is stated, 2 if it does not fit.
+    5. days to the deadline (group 0), then priority, verified, name.
+    With no profile the age key is left out, so the order does not depend on age.
+  */
+  var SOON_DAYS = 21;
+  function costTier(e) {
+    var t = e.paid_type;
+    if (t === "paid" || t === "stipend" || t === "mixed") return 0;
+    if (t === "fee-based") return 2;
+    return 1;
+  }
+  function rank(e, now, profile) {
     var d = futureDeadline(e, now), st = effStatus(e, now), group;
     if (isOpenish(e, now) && d) group = 0;
     else if (isOpenish(e, now)) group = 1;
     else if (isAnytime(e, now)) group = 2;
     else if (st === "closed-expect-reopen") group = 3;
     else group = 4;
-    return [group, group === 0 ? daysUntil(d, now) : 0, e.priority || 3, e.verified === "fetched" ? 0 : 1, e.name];
+    var days = group === 0 ? daysUntil(d, now) : 0;
+    var r = [group, group === 0 && days > SOON_DAYS ? 1 : 0, costTier(e)];
+    if (profile && profile.age) {
+      var stated = e.min_age != null || e.max_age != null;
+      r.push(stated ? (ageOk(e, profile.age) ? 0 : 2) : 1);
+    }
+    r.push(days, e.priority || 3, e.verified === "fetched" ? 0 : 1, e.name);
+    return r;
   }
-  function compare(a, b, now) {
-    var x = rank(a, now), y = rank(b, now);
+  function compareRanks(x, y) {
     for (var i = 0; i < x.length; i++) { if (x[i] < y[i]) return -1; if (x[i] > y[i]) return 1; }
     return 0;
   }
-  function sortList(list, mode, now) {
+  function compare(a, b, now, profile) { return compareRanks(rank(a, now, profile), rank(b, now, profile)); }
+  /*
+    Sorting calls the comparator about n log n times and rank() parses dates, so 'best' and 'deadline'
+    compute rank() (and futureDeadline for 'deadline') once per entry, sort those pairs, then unwrap.
+    The tie-break order is the same as compare(), and Array.sort is stable.
+    profile is optional: {age: 15} turns on the age fit key.
+  */
+  function sortList(list, mode, now, profile) {
     var l = list.slice();
-    if (mode === "name") l.sort(function (a, b) { return a.name.localeCompare(b.name); });
-    else if (mode === "deadline") l.sort(function (a, b) {
-      var da = futureDeadline(a, now), db = futureDeadline(b, now);
-      if (da && db) return da - db || compare(a, b, now);
-      if (da) return -1; if (db) return 1; return compare(a, b, now);
+    if (mode === "name") { l.sort(function (a, b) { return a.name.localeCompare(b.name); }); return l; }
+    var byDeadline = mode === "deadline", n = l.length, pairs = new Array(n), i;
+    for (i = 0; i < n; i++) pairs[i] = { e: l[i], r: api.rank(l[i], now, profile), d: byDeadline ? futureDeadline(l[i], now) : null };
+    if (byDeadline) pairs.sort(function (a, b) {
+      if (a.d && b.d) return a.d - b.d || compareRanks(a.r, b.r);
+      if (a.d) return -1; if (b.d) return 1; return compareRanks(a.r, b.r);
     });
-    else l.sort(function (a, b) { return compare(a, b, now); });
+    else pairs.sort(function (a, b) { return compareRanks(a.r, b.r); });
+    for (i = 0; i < n; i++) l[i] = pairs[i].e;
     return l;
   }
+  /*
+    The "Good fit for you" strip. list is already filtered by the chosen age and place.
+    Keeps programs that are open now, opening soon, apply anytime or year-round, drops fee-based ones,
+    and with an age chosen keeps only a stated age range that fits. Then the first n by the "best" order.
+  */
+  var PICK_STATUS = ["open-now", "opens-soon", "rolling", "year-round"];
+  function topPicks(list, profile, now, n) {
+    var p = profile || {}, keep = (list || []).filter(function (e) {
+      if (PICK_STATUS.indexOf(effStatus(e, now)) === -1) return false;
+      if (e.paid_type === "fee-based") return false;
+      if (p.age && (e.min_age == null && e.max_age == null || !ageOk(e, p.age))) return false;
+      return true;
+    });
+    return sortList(keep, "best", now, p).slice(0, n == null ? 3 : Math.max(0, n));
+  }
+
   function ageText(e) {
     var bits = [];
     if (e.min_age != null && e.max_age != null) bits.push("Ages " + e.min_age + " to " + e.max_age);
@@ -513,13 +664,14 @@
     return "in " + t + " grade";
   }
 
-  return {
+  var api = {
     REGIONS: REGIONS, HUBS: HUBS, TYPES: TYPES, FIELDS: FIELDS, PAID: PAID, PAID_GROUPS: PAID_GROUPS, MONTHS: MONTHS, MONTH_NAMES: MONTH_NAMES,
     esc: esc, regionLabel: regionLabel, safeUrl: safeUrl, parseISO: parseISO, fmtDate: fmtDate, daysUntil: daysUntil, hubsOf: hubsOf,
     effStatus: effStatus, futureDeadline: futureDeadline, knownDeadline: knownDeadline, isOpenish: isOpenish, isAnytime: isAnytime, ageOk: ageOk,
-    matches: matches, rank: rank, compare: compare, sortList: sortList, ageText: ageText,
+    matches: matches, facetCounts: facetCounts, relaxOptions: relaxOptions, placeCounts: placeCounts, rank: rank, compare: compare, sortList: sortList, topPicks: topPicks, ageText: ageText,
     STATUSES: STATUSES, toISO: toISO, addDays: addDays, followUpISO: followUpISO, planSummary: planSummary,
     icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf, STATE_OF: STATE_OF, permitFor: permitFor, hoursCheck: hoursCheck, paycheck: paycheck, PERMIT_STATES: PERMIT_STATES, CITIES: CITIES, AREAS: AREAS, placeRegions: placeRegions, placeLabel: placeLabel, hubsOfPlace: hubsOfPlace,
     gradePhrase: gradePhrase
   };
+  return api;
 });

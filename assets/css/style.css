@@ -177,6 +177,9 @@ main [id], .prog { scroll-margin-top: 5rem; }
 .chip:hover { background: var(--paper-2); }
 .chip[aria-pressed="true"] { background: var(--tag-bg); color: var(--tag-fg); }
 .chip .n { opacity: .65; font-weight: 500; margin-left: .25rem; }
+.chip .n:empty { display: none; }
+.chip.zero { color: var(--ink-2); border-style: dashed; font-weight: 500; }
+.chip.zero[aria-pressed="true"] { color: var(--tag-fg); border-style: solid; }
 
 /* cards */
 .card { background: var(--surface); border: 3px solid var(--edge); border-radius: var(--radius); box-shadow: var(--shadow); padding: 1.1rem 1.15rem; min-width: 0; }
@@ -242,6 +245,9 @@ main [id], .prog { scroll-margin-top: 5rem; }
 .empty { text-align: center; padding: 2.5rem 1rem; }
 .month { margin-top: 1.6rem; }
 .month h3 { background: var(--tag-bg); color: var(--tag-fg); display: inline-block; padding: .35rem .7rem; border-radius: 4px; font-size: 1rem; }
+.picks { margin: 0 0 1.25rem; max-width: 52rem; }
+.picklist { list-style: decimal; margin: .6rem 0 0; padding-left: 1.4rem; display: grid; gap: .6rem; }
+.picklist li { padding-left: .2rem; line-height: 1.4; }
 .tl { list-style: none; padding: 0; margin: .8rem 0 0; display: grid; gap: .6rem; }
 .tl li { display: grid; grid-template-columns: 5.2rem 1fr; gap: .8rem; align-items: start; background: var(--surface); border: 2px solid var(--edge); border-radius: 8px; padding: .6rem .75rem; margin: 0; }
 .tl .d { font-family: var(--display); font-stretch: 108%; font-style: italic; font-weight: 900; text-transform: uppercase; line-height: 1; }

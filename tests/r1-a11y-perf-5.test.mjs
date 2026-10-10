@@ -33,12 +33,20 @@ test("home, calendar, insights and younger scripts never read the dropped keys",
     DROPPED.forEach((k) => assert.ok(!src.includes(k), f + ".js mentions " + k));
     if (f === "younger") assert.match(src, /G\.loadEntries\("core"\)/, f + ".js should load the core file");
     else if (f === "calendar" || f === "insights") assert.match(src, /G\.loadEntries\("card"\)/, f + ".js should load the card file");
-    else assert.match(src, /G\.loadEntries\(true\)/, f + ".js should load the lite file");
+    else {
+      /* home: the card file first, the lite file only when the picker is used */
+      assert.match(src, /G\.loadEntries\("card"\)/, f + ".js should load the card file first");
+      assert.match(src, /G\.loadEntries\(true\)/, f + ".js should load the lite file second");
+    }
   }
 });
 
-test("find.js still loads the full file", () => {
-  assert.match(read("assets/js/find.js"), /G\.loadEntries\(\)/);
+test("find.js loads the lite file first, then the detail file for the long text", () => {
+  const find = read("assets/js/find.js");
+  assert.match(find, /G\.loadEntries\(true\)/);
+  assert.match(find, /G\.loadEntries\("detail"\)/);
+  assert.doesNotMatch(find, /G\.loadEntries\(\)/);
   assert.match(read("assets/js/common.js"), /data\/entries\.json/);
   assert.match(read("assets/js/common.js"), /data\/entries-lite\.json/);
+  assert.match(read("assets/js/common.js"), /data\/entries-detail\.json/);
 });

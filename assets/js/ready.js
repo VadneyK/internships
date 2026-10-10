@@ -53,6 +53,8 @@
     Array.prototype.forEach.call(list.querySelectorAll("input[data-k]"), function (b) { b.checked = !!done[b.getAttribute("data-k")]; });
     var t = sumText();
     $("readySum").textContent = t;
+    var allDone = ITEMS.every(function (it) { return !!done[it[0]]; });
+    $("readyDone").hidden = !allDone;
     if (announce) $("readyStatus").textContent = t;
   }
   list.addEventListener("change", function (e) {

@@ -83,6 +83,16 @@ def validate_program(path, data, schema=None):
         problems.append("%s: fee-based programs must say the cost in pay_detail" % name)
     if data.get("url") and re.search(r"\s", data["url"]):
         problems.append("%s: url contains whitespace" % name)
+    for key, val in data.items():
+        if isinstance(val, str) and (val != val.strip() or "\t" in val or "\n" in val or "  " in val):
+            problems.append("%s: %s has stray whitespace (leading or trailing space, tab, newline, or two spaces in a row)" % (name, key))
+    if isinstance(lo, int) and not isinstance(lo, bool) and lo > 18:
+        problems.append("%s: min_age is over 18; the guide is for ages 12 to 18" % name)
+    if isinstance(hi, int) and not isinstance(hi, bool) and hi < 12:
+        problems.append("%s: max_age is under 12; the guide is for ages 12 to 18" % name)
+    how = data.get("how_to_apply")
+    if isinstance(how, str) and len(how.strip()) < 20:
+        problems.append("%s: how_to_apply is too short (under 20 characters); say how to apply" % name)
     return problems
 
 

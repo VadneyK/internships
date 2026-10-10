@@ -47,10 +47,10 @@ class EnumTests(unittest.TestCase):
 
 class AgeTests(unittest.TestCase):
     def test_min_age_range(self):
-        for age in (4, 26, -1):
+        for age in (4, 26, -1, 19, 25):  # 19 to 25 pass the schema but the guide is for ages 12 to 18
             with self.subTest(age=age):
                 self.assertTrue(problems(bad_with(min_age=age, max_age=None)))
-        for age in (5, 25):
+        for age in (5, 18):
             with self.subTest(age=age):
                 self.assertEqual(problems(bad_with(min_age=age, max_age=None)), [])
 
@@ -119,7 +119,7 @@ class ValidateMainTests(unittest.TestCase):
         return code, out.getvalue()
 
     def test_clean_set_passes(self):
-        b = bad_with(id="second-program", url="https://example.org/second")
+        b = bad_with(id="second-program", name="Second Program", url="https://example.org/second")
         code, text = self.run_main([("example-program.json", GOOD), ("second-program.json", b)])
         self.assertEqual(code, 0, text)
         self.assertIn("OK: 2 programs valid", text)

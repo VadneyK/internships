@@ -2294,7 +2294,7 @@
   "deadline_confidence": "rolling",
   "how_to_apply": "Call 510.980.9010 or email info@beyondemancipation.org (both from the site footer). Staff connect youth to coaching, training and job resources.",
   "needs_work_permit": false,
-  "url": "https://beyondemancipation.org/",
+  "url": "https://beyondemancipation.org/programs-services-2/employment-support/",
   "apply_url": null,
   "sources_fetched": [
    "https://beyondemancipation.org/",
@@ -3312,7 +3312,7 @@
    "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter149/Section86"
   ],
   "priority": 1,
-  "notes": "Questions: youthemployment@cambridgema.gov. The page does not mention a work permit; Massachusetts requires one for workers under 18 (M.G.L. c.149 s.86; Boston youth worker rights page written with the state Attorney General's Office). Participants may not miss more than 5 program days.  There is no fixed maximum age on the page; eligibility ends after the summer following high school graduation.",
+  "notes": "Questions: youthemployment@cambridgema.gov. The page does not mention a work permit; Massachusetts requires one for workers under 18 (M.G.L. c.149 s.86; Boston youth worker rights page written with the state Attorney General's Office). Participants may not miss more than 5 program days. There is no fixed maximum age on the page; eligibility ends after the summer following high school graduation.",
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "apply_url": null,
@@ -5293,7 +5293,7 @@
   "status": "unconfirmed",
   "deadline_text": "The page does not state a deadline or enrollment status. Use the Complete an Interest Form button.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Fill out the interest form for your county at capitalareanextgen.org, or use the Request More Information form on the Capital Area youth page.",
   "needs_work_permit": null,
   "url": "https://capitalareancworks.com/job-seekers/youth-services/",
@@ -7976,7 +7976,8 @@
   "name": "Healthcare Experience and Research in Oncology (HERO)",
   "org": "University of Chicago Medicine Comprehensive Cancer Center",
   "regions": [
-   "chicago"
+   "chicago",
+   "virtual"
   ],
   "city": "Online (Chicago area residents)",
   "type": "pre-college",
@@ -20823,7 +20824,7 @@
   "deadline_confidence": "unknown",
   "how_to_apply": "Use the Register to Volunteer link for the teen volunteer call on the League site, or email lov@lov.org. Phone (510) 793-5683.",
   "needs_work_permit": false,
-  "url": "https://www.lov.org/",
+  "url": "https://www.lov.org/volunteer",
   "apply_url": null,
   "sources_fetched": [
    "https://www.lov.org/",
@@ -27881,7 +27882,7 @@
   "opens_iso": null,
   "deadline_text": "The page does not state a deadline or whether applications are open now.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Download the High School Student Application Packet from the volunteer page. Email it to Volunteer@maimo.org. Or mail it to Department of Volunteer and Student Services, 5014 Fort Hamilton Parkway, Brooklyn, NY 11219. Phone 718-283-3980. They send medical clearance forms after they get your application.",
   "needs_work_permit": false,
   "url": "https://maimo.org/careers-and-volunteers/volunteer/volunteer-programs/#:~:text=High%20school%20volunteer%20programs",
@@ -29726,7 +29727,8 @@
   "name": "Leadership Scholars",
   "org": "Sadie Nash Leadership Project",
   "regions": [
-   "new-york-city"
+   "new-york-city",
+   "new-jersey"
   ],
   "city": "New York City (all five boroughs) and Newark, NJ",
   "type": "leadership",
@@ -29767,7 +29769,8 @@
   "name": "Nash U Leadership Internship",
   "org": "Sadie Nash Leadership Project",
   "regions": [
-   "new-york-city"
+   "new-york-city",
+   "new-jersey"
   ],
   "city": "New York City (all five boroughs) and Newark, NJ",
   "type": "internship",
@@ -29808,7 +29811,8 @@
   "name": "Siblinghood Academy",
   "org": "Sadie Nash Leadership Project",
   "regions": [
-   "new-york-city"
+   "new-york-city",
+   "new-jersey"
   ],
   "city": "New York City (all five boroughs) and Newark, NJ",
   "type": "leadership",
@@ -29849,7 +29853,8 @@
   "name": "Summer Institute",
   "org": "Sadie Nash Leadership Project",
   "regions": [
-   "new-york-city"
+   "new-york-city",
+   "new-jersey"
   ],
   "city": "New York City (all five boroughs) and Newark, NJ",
   "type": "leadership",
@@ -35678,7 +35683,8 @@
   "name": "Research Science Institute (RSI)",
   "org": "Center for Excellence in Education with MIT",
   "regions": [
-   "national"
+   "national",
+   "boston"
   ],
   "city": "Cambridge, MA",
   "type": "research",
@@ -36470,7 +36476,7 @@
   "deadline_confidence": "unknown",
   "how_to_apply": "Use the Register buttons on the Programs page, call 916-248-1081, or use the contact form.",
   "needs_work_permit": false,
-  "url": "https://www.sacyouthcenter.org/",
+  "url": "https://www.sacyouthcenter.org/programs",
   "apply_url": null,
   "sources_fetched": [
    "https://www.sacyouthcenter.org/",
@@ -43096,7 +43102,7 @@
   "deadline_confidence": "unknown",
   "how_to_apply": "Call (510) 985-9915 or email info@oaklandtrybe.org. Trybe also has a Jobs/Internships page on its site.",
   "needs_work_permit": true,
-  "url": "https://oaklandtrybe.org",
+  "url": "https://www.oaklandtrybe.org/jobs-internships",
   "apply_url": null,
   "sources_fetched": [
    "https://oaklandtrybe.org",
@@ -43732,7 +43738,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "priority": 2,
-  "notes": "Requires a physician-signed medical clearance with immunity proof (measles, mumps, rubella, varicella), Tdap, hepatitis B series, COVID-19 vaccine with booster, flu shot in season, and a negative TB blood test within 90 days of your start date. Also a three-hour orientation. ",
+  "notes": "Requires a physician-signed medical clearance with immunity proof (measles, mumps, rubella, varicella), Tdap, hepatitis B series, COVID-19 vaccine with booster, flu shot in season, and a negative TB blood test within 90 days of your start date. Also a three-hour orientation.",
   "verified_on_label": "Oct 9, 2026"
  },
  {
@@ -44463,7 +44469,7 @@
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Online application with the $85 fee. Email summer@usc.edu with questions.",
   "needs_work_permit": false,
-  "url": "https://precollege.usc.edu/",
+  "url": "https://precollege.usc.edu/summer-programs/program-overview/",
   "apply_url": null,
   "sources_fetched": [
    "https://precollege.usc.edu/",
@@ -44535,7 +44541,7 @@
   ],
   "what_you_do": "Restore aircraft or the ship, work in the radio room, do outreach, or help visitors. Teens 16 and 17 work with an adult.",
   "min_age": 16,
-  "max_age": 18,
+  "max_age": null,
   "grades": null,
   "who_can_apply": "Ages 16 and up for aircraft restoration, ship restoration, radio, community outreach and visitor services (16 and 17 year olds work with an adult). Collections: 18 and up. Docents, events, security: 21 and up.",
   "paid_type": "unpaid",

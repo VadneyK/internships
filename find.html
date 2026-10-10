@@ -20,8 +20,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=7646bea0">
-<link rel="stylesheet" href="assets/css/style.css?v=7646bea0">
+<link rel="stylesheet" href="assets/css/fonts.css?v=89dd6f94">
+<link rel="stylesheet" href="assets/css/style.css?v=89dd6f94">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -70,6 +70,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
         <label class="lbl" for="place">Where</label>
         <select class="sel" id="place"><option value="">Anywhere (pick a city or area)</option></select>
         <p class="small" id="placeNote" hidden style="margin:.5rem 0 0;"></p>
+        <p class="small muted" id="prefNote" hidden style="margin:.5rem 0 0;">Using the age and area you picked last time. Press Clear all to start over.</p>
       </div>
       <div class="fgroup">
         <span class="lbl" id="l-hub">Or tap a popular area</span>
@@ -163,6 +164,13 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <p><b>How to read this list.</b> A <span class="tag good">Read on official site</span> tag means we opened the program&rsquo;s own page. It does not mean that page gave every age, pay or date, so check those with the program before you plan around them. <span class="tag warn">Confirm first</span> means we found it but could not read the official page, so check it yourself before you plan around it. Programs that already closed are still here with the month they usually reopen. A <span class="tag warn">Based on last year</span> tag means the date follows last cycle's pattern, and the program has not posted new dates yet.</p>
     </details>
 
+    <p id="picksNudge" class="small muted" style="margin:0 0 1rem;">Pick your age and area to see programs picked for you.</p>
+    <section id="picks" class="callout plain picks" aria-labelledby="picksH" hidden>
+      <h2 id="picksH" style="font-size:1.25rem;">Good fit for you</h2>
+      <p class="small muted">Picked from your age and area. Dates and rules can change, so check the official page.</p>
+      <ol class="picklist" id="picksList"></ol>
+    </section>
+
     <h2 class="sr">Results</h2>
     <div id="out" class="results"></div>
     <div id="dates" hidden></div>
@@ -176,6 +184,16 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <h3>Don&rsquo;t see your town?</h3>
       <p><a href="contribute.html#gaps">See the known gaps</a> and the issue for each one.</p>
       <p>Ask your school counselor for the &ldquo;work-based learning&rdquo; or &ldquo;career technical education&rdquo; list for your district, then use the <a href="playbook.html">Playbook</a> to ask people you know. Know a program that should be here? <a href="https://github.com/VadneyK/internships/issues">Tell us on GitHub</a> and include the program&rsquo;s web page.</p>
+    </div>
+  </div>
+</section>
+
+<section class="nextstep" id="next-step">
+  <div class="wrap">
+    <div class="callout">
+      <h2>Your next step</h2>
+      <p>Ask one person instead of a website. Write a short message to someone you know and ask for help.</p>
+      <p><a class="btn" href="playbook.html">Write your message</a></p>
     </div>
   </div>
 </section>
@@ -220,9 +238,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=7646bea0"></script>
-<script src="assets/js/common.js?v=7646bea0"></script>
-<script src="assets/js/find.js?v=7646bea0"></script>
+<script src="assets/js/lib.js?v=89dd6f94"></script>
+<script src="assets/js/common.js?v=89dd6f94"></script>
+<script src="assets/js/find.js?v=89dd6f94"></script>
 
 </body>
 </html>

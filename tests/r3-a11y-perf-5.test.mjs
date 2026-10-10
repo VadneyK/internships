@@ -41,7 +41,7 @@ test("card file is compact JSON under 55 percent of the lite file", () => {
   assert.ok(ratio < 0.55, "card is " + Math.round(ratio * 100) + " percent of entries-lite.json");
 });
 
-test("common.js loads and caches the card file; the other modes are unchanged; home.js still uses the lite file", () => {
+test("common.js loads and caches the card file; the other modes are unchanged; home.js loads the card file first and the lite file second", () => {
   const common = read("assets/js/common.js");
   assert.match(common, /data\/entries-card\.json/);
   assert.match(common, /cardCache/);
@@ -53,7 +53,9 @@ test("common.js loads and caches the card file; the other modes are unchanged; h
     assert.match(s, /G\.loadEntries\("card"\)/);
     assert.doesNotMatch(s, /loadEntries\(true\)|entries-lite|entries\.json/);
   }
-  assert.match(read("assets/js/home.js"), /G\.loadEntries\(true\)/);
+  const home = read("assets/js/home.js");
+  assert.match(home, /G\.loadEntries\("card"\)/);
+  assert.match(home, /G\.loadEntries\(true\)/);
 });
 
 test("lib.insights over the card file deep-equals lib.insights over the lite file", () => {
