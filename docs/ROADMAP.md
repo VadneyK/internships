@@ -15,3 +15,12 @@
 - A counselor guide: how to use the site with a class
 - More hubs: Sacramento County deep dive, Contra Costa, Santa Cruz, North Bay
 - A youth-run advisory group that reviews the site each quarter
+
+## Youth-first design rules (added 2026-10-10)
+These came from a review of how a 12 to 18 year old uses the site on a phone.
+- **A fixed, readable guide beats a chat box.** Every answer is text a person wrote down, checked against an official page, and dated. The same question always gets the same answer, nothing a teen types leaves the browser, and a parent can read exactly what their teen sees. The parents page says this in plain words (section "How this guide works"). Do not add a live chatbot.
+- **Tap, do not pick from a dropdown.** Short lists are big tap tiles (`TIG.tilePicker`, or `data-tiles` on a `<select>`); the real select stays in the page, hidden, so links, saved choices and tests still work. The Where picker is two taps: a part of the country, then a city (`PICK_GROUPS` in `assets/js/lib.js`). Lists longer than 30 stay a dropdown.
+- **Show only what was picked.** An answer panel must never keep content for a place the teen did not choose (the ride picker once showed the Bay Area table under every city).
+- **Answers are labelled panels, not an indented list.** `dl.facts` shows a small label over a short answer; "Not stated" is shown quietly.
+- **Phone first.** The eight nav links fold behind one Menu button under 40rem. Tap targets are at least 44px.
+- Ideas not built yet: a one-question-at-a-time version of the Get ready checklist; folding long pages (Get ready, Rules) into sections that open on tap; a "send this to a parent" button on every answer; remove the older "popular area" chips on Programs now that Where is two taps.
