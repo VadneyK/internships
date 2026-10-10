@@ -24,7 +24,10 @@ function refSort(list, mode, now) {
 const ids = (l) => l.map((e) => e.id);
 const MODES = ["best", "deadline", "name"];
 
-test("the real data has 1,187 entries", () => { assert.equal(entries.length, 1187); });
+test("the real data has as many entries as data/meta.json says", () => {
+  const meta = JSON.parse(fs.readFileSync(new URL("../data/meta.json", import.meta.url), "utf8"));
+  assert.equal(entries.length, meta.count);
+});
 
 test("same id order as the reference sort for every mode and fixed date", () => {
   for (const now of NOWS) for (const mode of MODES) {

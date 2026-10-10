@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "fields": [
+    "environment"
+  ],
+  "regions": [
+    "vancouver"
+  ],
+  "id": "lynn-canyon-ecology-centre-volunteer",
+  "name": "Lynn Canyon Ecology Centre Volunteer",
+  "org": "District of North Vancouver, Lynn Canyon Ecology Centre",
+  "city": "North Vancouver, BC",
+  "type": "volunteer",
+  "what_you_do": "Help keep Lynn Canyon Park clean (age 10+) or provide support during the spring and summer mini-camps for kids (age 13+).",
+  "min_age": 10,
+  "who_can_apply": "Park clean-up age 10 and up (10 to 14 with an adult). Mini-camp assistant age 13 and up. School field-trip assistant is 18 and up.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Volunteers get a free pin, a yearly certificate and a membership discount.",
+  "season": "year-round",
+  "duration": "Mini-camp: at least one full camp. Clean-up: up to 1 hour a week.",
+  "status": "rolling",
+  "deadline_text": "2026 summer mini-camps were full for volunteers. The Ecology Centre answers applications within 10 business days.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill in the online volunteer form on the page and choose the position.",
+  "url": "https://ecologycentre.ca/volunteer/",
+  "notes": "Mini-camps run over spring and summer break and some Pro-D days. A police check is needed only for the 18+ field-trip role.",
+  "sources_fetched": [
+    "https://ecologycentre.ca/volunteer/"
+  ]
+}

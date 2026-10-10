@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "opens_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 1,
+  "notes": "The county page says Harbor helps run the program. The Eligibility and Application tabs could not be read in the text copy. Check the income rules and the form on the page. Ohio work permit rules are not on the page.",
+  "id": "cincinnati-hamilton-county-youth-employment-program",
+  "name": "Hamilton County Youth Employment Program",
+  "org": "Hamilton County Job and Family Services",
+  "regions": [
+    "cincinnati"
+  ],
+  "city": "Cincinnati, OH",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "You get a paid job and job training all year. Training covers resumes, interviews, work habits, customer service and solving problems.",
+  "min_age": 14,
+  "max_age": 21,
+  "who_can_apply": "Hamilton County residents ages 14 to 21. You can join if your family income is low or if something makes it hard for you to get a job.",
+  "paid_type": "paid",
+  "pay_detail": "$13 per hour",
+  "season": "year-round",
+  "duration": "Year-round; summer jobs are a main part",
+  "status": "rolling",
+  "deadline_text": "The county page has a Youth Apply Here link and no closing date. Summer slots can fill early, so apply in winter.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use the Youth Apply Here link on the county page. Phone 513-946-0400, email Hamil_yep@jfs.ohio.gov, daily 9 am to 4 pm.",
+  "url": "https://hcjfs.org/youthemployment",
+  "sources_fetched": [
+    "https://hcjfs.org/youthemployment",
+    "https://hcjfs.org/services/workforce_development/youth_employment_program.php"
+  ]
+}

@@ -13,7 +13,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DATA = path.join(ROOT, "data");
 const TOOLS = path.join(ROOT, "tools");
 const DETAIL_FIELDS = ["who_can_apply", "how_to_apply", "notes"];
-const GZIP_LIMIT = 250000;
+const GZIP_LIMIT = 290000;
 
 function readText(file) {
   return fs.readFileSync(path.join(DATA, file), "utf8");
@@ -81,7 +81,7 @@ test("each detail row holds only id plus the long text fields that program has",
   });
 });
 
-test("entries-detail.json gzips to at most 250,000 bytes", () => {
+test("entries-detail.json gzips to at most 290,000 bytes", () => {
   const gz = zlib.gzipSync(committedBytes, { level: 9 });
   assert.ok(gz.length <= GZIP_LIMIT, `gzipped size ${gz.length} is over ${GZIP_LIMIT}`);
 });

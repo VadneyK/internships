@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": false,
+  "priority": 2,
+  "max_age": null,
+  "min_age": 16,
+  "id": "bloomington-habitat-monroe-county-volunteer",
+  "name": "Construction Volunteer and Student Chapters",
+  "org": "Habitat for Humanity of Monroe County",
+  "regions": [
+    "bloomington"
+  ],
+  "city": "Bloomington, IN",
+  "type": "volunteer",
+  "fields": [
+    "trades",
+    "social-impact"
+  ],
+  "what_you_do": "Help build homes people can afford on build days. You need no experience. Training and tools are provided. You can also work at the ReStore or join the Habitat club at Bloomington High School North or South.",
+  "who_can_apply": "Volunteers must be at least 16. You must be 18 to use power tools. Student chapters exist at Bloomington High School North and South.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer. Lunch is provided for construction site volunteers.",
+  "season": "year-round",
+  "duration": "Ongoing; many volunteers come weekly, monthly or for special events",
+  "status": "year-round",
+  "deadline_text": "No deadline. Contact Habitat to sign up for a build day.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Email ec@monroecountyhabitat.org to sign up for a build day. You can also use the contact form on the volunteer page.",
+  "url": "https://www.monroecountyhabitat.org/volunteer",
+  "notes": "Wear closed-toe shoes and clothes you do not mind getting dirty. Groups such as schools can sign up together. ReStore roles are listed but the page does not state a separate age for them.",
+  "sources_fetched": [
+    "https://www.monroecountyhabitat.org/volunteer"
+  ]
+}

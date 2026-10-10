@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "max_age": 17,
+  "min_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": "https://nbfpl.org/images/pdfs/TeenVolunteerApplication2018.pdf",
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "fields": [
+    "education",
+    "any"
+  ],
+  "pay_detail": "Unpaid",
+  "duration": "Regular, ongoing help; hours not stated",
+  "id": "new-brunswick-free-public-library-teen-volunteer",
+  "name": "Teen Volunteer at New Brunswick Free Public Library",
+  "org": "New Brunswick Free Public Library",
+  "regions": [
+    "new-brunswick",
+    "new-jersey"
+  ],
+  "city": "New Brunswick, NJ",
+  "type": "volunteer",
+  "what_you_do": "Help with library events as an unpaid volunteer. The library has its own form for volunteers under 18.",
+  "who_can_apply": "The library says a volunteer is someone 16 or older who helps on a regular basis. If you are under 18, use the teen form. Call the library to ask if younger teens can apply.",
+  "paid_type": "unpaid",
+  "season": "year-round",
+  "status": "year-round",
+  "deadline_text": "No deadline posted. Apply any time.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Download and print the teen volunteer application from the volunteering page, fill it out, and bring it to the library at 60 Livingston Ave. There is no online submission. Phone: (732) 745-5108.",
+  "url": "https://nbfpl.org/about/volunteering",
+  "sources_fetched": [
+    "https://nbfpl.org/about/volunteering"
+  ],
+  "notes": "The teen form file name says 2018, so ask the library if it is still current. The page does not mention work permits; ask the library."
+}

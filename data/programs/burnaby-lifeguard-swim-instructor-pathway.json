@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "fields": [
+    "sports"
+  ],
+  "regions": [
+    "vancouver"
+  ],
+  "id": "burnaby-lifeguard-swim-instructor-pathway",
+  "name": "Become a Lifeguard and Swim Instructor",
+  "org": "City of Burnaby Parks, Recreation and Culture",
+  "city": "Burnaby, BC",
+  "type": "paid-youth-program",
+  "what_you_do": "Take Lifesaving Society courses with the City. They are Bronze Medallion, Bronze Cross, First Aid, then pool lifeguard and swim teacher. They prepare you to work at Burnaby pools.",
+  "min_age": 13,
+  "who_can_apply": "Age minimums by course. Bronze Medallion is 13 or older. You must swim 400 m in under 12 minutes. Bronze Cross is 13 or older. First Aid is 14 or older. Lifeguard and instructor courses are 15 or older.",
+  "paid_type": "fee-based",
+  "pay_detail": "Course fees not stated on the page read. The page says lifeguard jobs have great pay and flexible hours but gives no rate.",
+  "season": "year-round",
+  "duration": "Several courses in a series",
+  "status": "rolling",
+  "deadline_text": "No deadline stated. Register for courses online or at a pool front desk.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Check the age and skills table. Then sign up for courses with the City (WebReg). You can also ask at a rec center with an indoor pool. Email questions to the address on the page.",
+  "url": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities/become-a-lifeguard",
+  "notes": "The page says extra certificates help but are not required to be a lifeguard with the City. This covers the instructor and fitness leader certificates. Pay and job age rules are not stated. The page says courses can earn high school credits.",
+  "sources_fetched": [
+    "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities/become-a-lifeguard"
+  ]
+}

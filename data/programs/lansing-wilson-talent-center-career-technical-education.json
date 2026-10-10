@@ -1,0 +1,43 @@
+{
+  "grades": "11 to 12",
+  "min_age": null,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": false,
+  "priority": 2,
+  "notes": "Ask your school counselor how your district sends students here.",
+  "fields": [
+    "health",
+    "trades",
+    "tech-cs",
+    "engineering",
+    "food-hospitality",
+    "law-government"
+  ],
+  "id": "lansing-wilson-talent-center-career-technical-education",
+  "name": "Wilson Talent Center career and technical programs",
+  "org": "Ingham Intermediate School District, Wilson Talent Center",
+  "regions": [
+    "lansing"
+  ],
+  "city": "Lansing area, MI (Ingham County)",
+  "type": "school-pathway",
+  "what_you_do": "Take career classes as a junior or senior. You can choose car repair, welding, hair care, cooking or coding. You can also choose cyber safety, patient care, sports medicine or criminal justice.",
+  "who_can_apply": "High school juniors and seniors. The page does not say which districts are eligible or whether outside students can enroll.",
+  "paid_type": "not-stated",
+  "pay_detail": "Cost not listed",
+  "season": "school-year",
+  "duration": "School year",
+  "status": "unconfirmed",
+  "deadline_text": "The page says the application for Fall 2027 is open. No deadline is listed. First day for 2026-27 students was Aug 26, 2026.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Use the Apply Now button on the program page (watch the tutorial video first). Phone 517-244-1330.",
+  "url": "https://www.inghamisd.org/programs/career-technical-education/capitalareacareercenter/",
+  "sources_fetched": [
+    "https://www.inghamisd.org/programs/career-technical-education/capitalareacareercenter/"
+  ]
+}

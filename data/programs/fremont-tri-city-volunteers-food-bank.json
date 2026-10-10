@@ -1,0 +1,41 @@
+{
+  "min_age": 14,
+  "max_age": null,
+  "grades": null,
+  "pay_detail": null,
+  "duration": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": false,
+  "priority": 2,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "fremont-tri-city-volunteers-food-bank",
+  "name": "Tri-City Volunteers Food Bank and Mobile Pantry volunteering",
+  "org": "Tri-City Volunteers (TCV)",
+  "regions": [
+    "fremont",
+    "east-bay",
+    "alameda"
+  ],
+  "city": "Fremont, CA",
+  "type": "volunteer",
+  "fields": [
+    "social-impact",
+    "food-hospitality"
+  ],
+  "what_you_do": "You volunteer at the Tri-City Volunteers food bank and mobile pantry. You sign up on the volunteer portal.",
+  "who_can_apply": "Age 14 and up. Teens aged 14 and 15 must come with an adult who also registers as a volunteer. Under 14 is not accepted.",
+  "paid_type": "unpaid",
+  "season": "year-round",
+  "status": "rolling",
+  "deadline_text": "No deadline stated. Sign up for shifts on the portal.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Create an account at volunteer.tcvfoodbank.org, sign the Volunteer Handbook and Consent forms, then sign up for shifts. Email volunteer@tcvfoodbank.org or call 510-598-4066.",
+  "url": "https://tcvfoodbank.org/volunteer/",
+  "notes": "TCV does not sign court or traffic ticket hours. The page did not say whether school service hours are signed, so ask. Orientation was not mentioned on this page.",
+  "sources_fetched": [
+    "https://tcvfoodbank.org/volunteer/"
+  ]
+}

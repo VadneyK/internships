@@ -1,0 +1,43 @@
+{
+  "grades": null,
+  "max_age": null,
+  "min_age": 16,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": "https://www.uml.edu/propel/apply.aspx",
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 1,
+  "fields": [
+    "engineering",
+    "science",
+    "health"
+  ],
+  "pay_detail": "Paid summer internship; rate not stated",
+  "duration": "Summer 2026 started June 29; length not stated",
+  "id": "massachusetts-umass-lowell-propel-research-internship",
+  "name": "PROPEL Summer Research Internship",
+  "org": "UMass Lowell (PROPEL Careers Program)",
+  "regions": [
+    "massachusetts"
+  ],
+  "city": "Lowell, MA",
+  "type": "research",
+  "what_you_do": "A paid summer internship in a UMass Lowell research lab. You work on real engineering or life science projects with teachers and student mentors. You learn lab skills and safety.",
+  "who_can_apply": "You must be 16 or older when the internship starts. You must go to, or just have left, one of these. A trade high school under Chapter 74. A public or charter high school in a listed Gateway City, like Lowell, Lawrence, Worcester, Springfield, Lynn or Brockton. Or a public high school where 25% or more of students have low income.",
+  "paid_type": "paid",
+  "season": "summer",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Summer 2026 applications were due Feb 28, 2026. 2027 dates not posted.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the online form. Write a 250 word essay. Share something that shows your STEM interest, like a poster, slides, posts, a podcast or a video. Make a 1 minute video about yourself. Get a reference from a teacher. Questions: PROPEL@uml.edu.",
+  "url": "https://www.uml.edu/propel/about.aspx",
+  "sources_fetched": [
+    "https://www.uml.edu/propel/about.aspx",
+    "https://www.uml.edu/propel/apply.aspx",
+    "https://www.uml.edu/propel/application-instructions.aspx",
+    "https://www.uml.edu/academics/summer/"
+  ],
+  "notes": "Eligibility depends on your school type or city. Check the Gateway City list on the apply page. Ask about a Massachusetts work permit."
+}

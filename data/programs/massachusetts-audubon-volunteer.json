@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "max_age": null,
+  "min_age": 16,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "fields": [
+    "environment",
+    "education"
+  ],
+  "pay_detail": "Unpaid. Students can earn community service credit. 50 hours a year earns a Volunteer ID card with free sanctuary admission.",
+  "duration": "One day to weekly shifts; some positions are seasonal",
+  "id": "massachusetts-audubon-volunteer",
+  "name": "Mass Audubon Volunteer Opportunities",
+  "org": "Mass Audubon",
+  "regions": [
+    "massachusetts"
+  ],
+  "city": "Massachusetts (sanctuaries across the state)",
+  "type": "volunteer",
+  "what_you_do": "Volunteer at a Mass Audubon wildlife sanctuary. Greet visitors, care for trails and gardens, help with programs, or log the wildlife you see.",
+  "who_can_apply": "Volunteers are mostly 16 or older, unless a parent or guardian comes along. The minimum age changes by job. Some jobs need training or a background check (CORI or SORI).",
+  "paid_type": "unpaid",
+  "season": "year-round",
+  "status": "year-round",
+  "deadline_text": "No deadline. Positions are posted on the volunteer portal.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Browse and respond to openings on the Mass Audubon Volunteer Portal. Large groups can use the group volunteer form.",
+  "url": "https://www.massaudubon.org/get-involved/volunteer",
+  "sources_fetched": [
+    "https://www.massaudubon.org/get-involved/volunteer"
+  ],
+  "notes": "Busiest months are May to September. Younger teens can ask about parent-accompanied options."
+}

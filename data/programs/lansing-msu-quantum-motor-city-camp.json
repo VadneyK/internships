@@ -1,0 +1,41 @@
+{
+  "grades": "High school",
+  "min_age": null,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": false,
+  "priority": 2,
+  "notes": "The card links to the camp's own page (ryanlarose.com), which gives the extended April 25 deadline. The MSU summer programs page, which lists several camps, still says April 18. The MSU page lists no GPA rule. The same page lists the paid High School Engineering Institute ($1,199) and a game design camp.",
+  "fields": [
+    "engineering",
+    "science",
+    "tech-cs"
+  ],
+  "id": "lansing-msu-quantum-motor-city-camp",
+  "name": "Quantum Motor City Camp (MSU)",
+  "org": "Michigan State University College of Engineering",
+  "regions": [
+    "lansing"
+  ],
+  "city": "East Lansing, MI",
+  "type": "pre-college",
+  "what_you_do": "Learn the basics of quantum tech. Program a real quantum computer. Tour a quantum computing lab. Get ready to apply to college. You stay and eat on campus.",
+  "who_can_apply": "Students in high school.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free. Paid for by the National Science Foundation, including on-campus housing and meals.",
+  "season": "summer",
+  "duration": "3 days, residential. 2026 dates: July 29 to 31.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "2026 application deadline was Saturday, April 25, 2026 (extended from April 18). 2027 dates are not posted.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the online Quantum Motor City Camp form. It is linked on the MSU Engineering summer programs page. Questions: Ryan LaRose, rmlarose@msu.edu.",
+  "url": "https://www.ryanlarose.com/quantum-motor-city.html",
+  "sources_fetched": [
+    "https://www.ryanlarose.com/quantum-motor-city.html",
+    "https://engineering.msu.edu/academics/k-12/summer-programs"
+  ]
+}

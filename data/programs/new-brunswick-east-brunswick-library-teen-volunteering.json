@@ -1,0 +1,40 @@
+{
+  "grades": "Grade 8 and up (including the summer before 8th grade)",
+  "max_age": 18,
+  "min_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "fields": [
+    "education",
+    "any"
+  ],
+  "pay_detail": "Unpaid. Volunteer hours count as community service.",
+  "duration": "Monthly shifts; shifts fill fast",
+  "id": "new-brunswick-east-brunswick-library-teen-volunteering",
+  "name": "Teen Volunteering (Teen Action Group)",
+  "org": "East Brunswick Public Library",
+  "regions": [
+    "new-brunswick",
+    "new-jersey"
+  ],
+  "city": "East Brunswick, NJ",
+  "type": "volunteer",
+  "what_you_do": "Sign up for monthly library volunteer shifts. Staff post the sign-up links each month, and each shift must be logged with the hour form to count.",
+  "who_can_apply": "East Brunswick residents in or entering 8th grade and up. Use the teen application, not the adult one.",
+  "paid_type": "unpaid",
+  "season": "year-round",
+  "status": "closed-expect-reopen",
+  "deadline_text": "New volunteers are accepted only in June and December. Next window: December (dates within the month not stated).",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the online teen volunteer application in June or December, wait for the welcome email, join the Remind app, then sign up for shifts. Questions: teens@ebpl.org.",
+  "url": "https://www.ebpl.org/node/707",
+  "sources_fetched": [
+    "https://www.ebpl.org/node/707"
+  ],
+  "notes": "Online application only, no paper forms. The page does not say whether Teen Action Group meetings count as service hours."
+}

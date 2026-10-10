@@ -19,6 +19,7 @@ ROOT_URL_ALLOW = (
     "ala-girls-state-california",
     "black-girls-code",
     "ca-boys-girls-state",
+    "camp-ignite-bc-firefighting-camp-for-young-women",  # one-page camp site, no deeper page exists
     "california-ffa",
     "cassadaga-job-corps-center",
     "congressional-app-challenge",

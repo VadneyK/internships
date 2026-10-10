@@ -31,7 +31,7 @@ const PAGE_ALLOW = [
   ["cassadaga-job-corps-center", "delawarevalley-job-corps-center", "edison-job-corps-center", "glenmont-job-corps-center", "grafton-job-corps-center", "iroquois-job-corps-center", "keystone-job-corps-center", "oneonta-job-corps-center", "philadelphia-job-corps-center", "pittsburgh-job-corps-center", "redrock-job-corps-center"], // jobcorps.gov: separate centers with their own pages share the national enrollment page as apply_url
   ["job-corps-georgia-brunswick-turner", "job-corps-minnesota-hubert-h-humphrey", "job-corps-sacramento", "job-corps-texas-gary-san-marcos", "job-corps-washington-centers"], // enroll.jobcorps.gov: separate centers with their own pages share the national enrollment page as apply_url
   ["fermilab-prism", "fermilab-valor-jrotc"], // fermilab.wd5.myworkdayjobs.com/en-US/FermilabCareers: one page lists several programs
-  ["lansing-msu-high-school-engineering-institute", "lansing-msu-making-a-game-of-it-ai"], // engineering.msu.edu/academics/k-12/summer-programs: one page lists several programs
+  ["lansing-msu-high-school-engineering-institute", "lansing-msu-making-a-game-of-it-ai"],// engineering.msu.edu/academics/k-12/summer-programs: one page lists several programs
   ["nyc-dycd-ladders-for-leaders", "nyc-dycd-summer-youth-employment-program"], // application.nycsyep.com: one page lists several programs
   ["oakland-public-library-teen-advisory-board", "oakland-public-library-teen-volunteer"], // oaklandlibrary.org/teenvolunteers: one page lists several programs
   ["pittsburgh-cmu-cs-scholars", "pittsburgh-cmu-pre-college-programs", "pittsburgh-cmu-summer-academy-math-science"], // apply-precollege.studentaffairs.cmu.edu/apply: one page lists several programs

@@ -1,0 +1,41 @@
+{
+  "grades": null,
+  "min_age": 16,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": true,
+  "priority": 1,
+  "notes": "Pay and dates are from the 2025 post, so check the 2027 posting. Michigan requires a work permit for workers under 18. From Oct 2, 2026 permits are issued through the state Youth Employment Permit Portal. Aquatic center is at 6400 Abbot Road.",
+  "fields": [
+    "sports",
+    "food-hospitality"
+  ],
+  "id": "lansing-east-lansing-family-aquatic-center-jobs",
+  "name": "East Lansing Family Aquatic Center summer jobs",
+  "org": "City of East Lansing, Family Aquatic Center",
+  "regions": [
+    "lansing"
+  ],
+  "city": "East Lansing, MI",
+  "type": "paid-youth-program",
+  "what_you_do": "Work as a lifeguard, slide worker or customer helper at the city pool. You need no experience. The city trains you in May in Red Cross lifeguarding, CPR, first aid and AED.",
+  "who_can_apply": "Age 16 or older. You can work at least 25 hours a week, with some weekends and holidays.",
+  "paid_type": "paid",
+  "pay_detail": "2025 pay: lifeguards $14.50 an hour, slide operators and customer service $13 an hour.",
+  "season": "summer",
+  "duration": "2025 season: May 31 to Sept 1, 2025",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Last posting was March 11, 2025 for summer 2025. No deadline was listed. The jobs page showed no seasonal openings in October 2026, so expect spring hiring.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply through the City of East Lansing jobs page. You can sign up for job alerts there.",
+  "url": "https://www.cityofeastlansing.com/CivicAlerts.aspx?AID=2278",
+  "sources_fetched": [
+    "https://www.cityofeastlansing.com/CivicAlerts.aspx?AID=2278",
+    "https://cityofeastlansing.com/jobs.aspx?CatID=Seasonal-Employment-99&CommunityJobs=False",
+    "https://www.michigan.gov/leo/bureaus-agencies/ber/wage-and-hour/youth-employment-standards-act-yesa"
+  ]
+}

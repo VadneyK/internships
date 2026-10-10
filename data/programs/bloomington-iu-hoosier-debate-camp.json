@@ -1,0 +1,41 @@
+{
+  "grades": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": false,
+  "priority": 3,
+  "max_age": null,
+  "min_age": null,
+  "id": "bloomington-iu-hoosier-debate-camp",
+  "name": "Hoosier Debate Camp",
+  "org": "Indiana Debate Team, Indiana University Bloomington",
+  "regions": [
+    "bloomington"
+  ],
+  "city": "Bloomington, IN",
+  "type": "pre-college",
+  "fields": [
+    "law-government",
+    "education"
+  ],
+  "what_you_do": "A week-long debate camp on the IU campus. You pick a lab in public speaking, Public Forum, Lincoln Douglas or Policy debate and work with IU coaches. No experience needed.",
+  "who_can_apply": "Students of all backgrounds and experience levels. The IU O'Neill School page says middle and high school students. Exact ages are not stated.",
+  "paid_type": "fee-based",
+  "pay_detail": "2026 prices: housing and meals $950 ($150 deposit plus $800 tuition); commuter with meals $750; commuter without meals $500. Scholarships awarded on a rolling basis after May 15.",
+  "season": "summer",
+  "duration": "About 1 week (check-in July 5, check-out July 12 in 2026)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "2026 camp ran July 5 to 12; deposits were due by May 23 and financial aid forms by May 23 for the first wave. 2027 dates are not posted.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Register and pay the deposit through the camp sign up page (IU Conferences payment page). Financial aid form is separate.",
+  "url": "https://hoosierdebate.indiana.edu/debatecamp/index.html",
+  "sources_fetched": [
+    "https://hoosierdebate.indiana.edu/debatecamp/index.html",
+    "https://oneill.indiana.edu/student-experience/precollege/index.html",
+    "https://hoosierdebate.indiana.edu/debatecamp/pay%20rates.html",
+    "https://hoosierdebate.indiana.edu/debatecamp/sign%20up.html"
+  ],
+  "notes": "Labs may be cancelled if too few students sign up, and you would be offered another lab. Camp size is limited. The camp says it is cheaper than many other university camps."
+}

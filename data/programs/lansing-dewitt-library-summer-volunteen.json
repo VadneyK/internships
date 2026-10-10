@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "min_age": 14,
+  "max_age": 18,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": true,
+  "priority": 2,
+  "notes": "The library requires a work permit form even though this is volunteering. Library is at 13101 Schavey Rd, DeWitt. The page also lists an At-Home Teen Service Hour Program for school-year hours.",
+  "fields": [
+    "education",
+    "any"
+  ],
+  "id": "lansing-dewitt-library-summer-volunteen",
+  "name": "Summer VolunTeen program (DeWitt District Library)",
+  "org": "DeWitt District Library",
+  "regions": [
+    "lansing"
+  ],
+  "city": "DeWitt, MI (Lansing area)",
+  "type": "volunteer",
+  "what_you_do": "Help library staff with craft prep, program setup and cleanup, and handing out Summer Reading prizes. Some teens can keep volunteering during the school year.",
+  "who_can_apply": "You must be at least 14 by June 6 for the summer program (the VolunTeen page lists youth ages 13 to 18 in general). You need to be free for at least two 2-hour shifts a week.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Earn volunteer hours.",
+  "season": "summer",
+  "duration": "June, July and August (2026)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "2026 applications were accepted April 15 to May 21. Orientation was May 27 or 28. 2027 dates are not posted.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the VolunTeen form and a work permit form. There is one for ages 14 to 15 and one for ages 16 to 17. Then go to orientation. Email lhutting@dewittlibrary.org with questions.",
+  "url": "https://www.dewittlibrary.org/teens/volunteens",
+  "sources_fetched": [
+    "https://www.dewittlibrary.org/volunteers",
+    "https://www.dewittlibrary.org/teens/volunteens"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "grades": "11 to 12",
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "fields": [
+    "trades",
+    "food-hospitality"
+  ],
+  "regions": [
+    "vancouver"
+  ],
+  "id": "vcc-dual-credit-high-school-trades",
+  "name": "VCC Dual Credit (high school trades and culinary foundation programs)",
+  "org": "Vancouver Community College with Lower Mainland school districts",
+  "city": "Vancouver, BC",
+  "type": "school-pathway",
+  "what_you_do": "Take trades or cooking basics courses at VCC in your last years of high school. Examples are car repair, baking and hair styling.",
+  "min_age": null,
+  "who_can_apply": "High school students in partner school districts, including Vancouver, Surrey, Richmond and Langley. Process starts in grade 11 for courses in grade 12.",
+  "paid_type": "mixed",
+  "pay_detail": "VCC lists program tuition (for example $2,513 for Baking Foundation High School). Application and student fees are waived if accepted. School district may pay tuition for select courses.",
+  "season": "school-year",
+  "duration": "Varies by program (about 6 months to 40 weeks)",
+  "status": "rolling",
+  "deadline_text": "No single deadline. Your school district career office sets the date.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Talk to the career staff at your school district. You need two references, a letter from a counselor or school leader, a letter from a parent, and the form.",
+  "url": "https://www.vcc.ca/programscourses/dual-credit/",
+  "notes": "Recommended B or higher in English 11 and Math 11. Tuition amounts are from the VCC page read and can change. Ask your district whether it pays.",
+  "sources_fetched": [
+    "https://www.vcc.ca/programscourses/dual-credit/"
+  ]
+}

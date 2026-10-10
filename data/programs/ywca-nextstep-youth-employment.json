@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "max_age": 30,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 3,
+  "fields": [
+    "any"
+  ],
+  "regions": [
+    "british-columbia"
+  ],
+  "id": "ywca-nextstep-youth-employment",
+  "name": "YWCA NextStep",
+  "org": "YWCA Metro Vancouver",
+  "city": "British Columbia (virtual and in person)",
+  "type": "paid-youth-program",
+  "what_you_do": "A free 12-week program with workshops, one-to-one support and a community project. You set goals and get real experience through volunteering, entry-level work or going back to school.",
+  "min_age": 16,
+  "who_can_apply": "Ages 16 to 30 who have no job or not enough work. You must have the right to work in Canada. You must face barriers to work or more school. The page says barriers are required.",
+  "paid_type": "stipend",
+  "pay_detail": "Free. Financial incentives for finishing milestones and a completion bonus (amounts not stated).",
+  "season": "year-round",
+  "duration": "12 weeks (7 weeks of workshops, 5 weeks one-to-one)",
+  "status": "rolling",
+  "deadline_text": "Registration is ongoing. Virtual cohorts start Sep 28, Oct 13 and Oct 19, 2026. Port Coquitlam Oct 26, 2026. Prince George Jan 4, 2027. Langley and Kelowna Jan 11, 2027.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Register on the page or go to an info session. Email nextstep@ywcabc.org or call 236-985-4551.",
+  "url": "https://ywcavan.org/nextstep",
+  "sources_fetched": [
+    "https://ywcavan.org/nextstep",
+    "https://ywcavan.org/programs/services-job-seekers-and-employers",
+    "https://ywcavan.org/ywca-employment-programs-schedule"
+  ],
+  "notes": "The page gives both six and seven weeks of group workshops, so confirm the schedule. The card url redirects to ywcabc.org. Other YWCA youth programs are not listed here."
+}

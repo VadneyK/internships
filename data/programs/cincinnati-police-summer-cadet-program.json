@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "opens_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 2,
+  "notes": "The Summer Cadet Program section gives ages 16 to 18 and part-time summer work. It gives no pay, hours, dates or application link. The separate Public Safety Cadet program on the same page is for young adults. Confirm with the department.",
+  "id": "cincinnati-police-summer-cadet-program",
+  "name": "Cincinnati Police Summer Cadet Program",
+  "org": "Cincinnati Police Department",
+  "regions": [
+    "cincinnati"
+  ],
+  "city": "Cincinnati, OH",
+  "type": "civic-government",
+  "fields": [
+    "law-government"
+  ],
+  "what_you_do": "You work part time over the summer for the Cincinnati Police Department and learn about police work. The page says it gives help to people who may choose police work as a career.",
+  "min_age": 16,
+  "max_age": 18,
+  "who_can_apply": "Students ages 16 through 18. Other rules are not stated on the page read.",
+  "paid_type": "not-stated",
+  "pay_detail": "Described as part-time summer work for the department. The wage is not stated on the pages read.",
+  "season": "summer",
+  "duration": "Part time over the summer; exact weeks not stated",
+  "status": "unconfirmed",
+  "deadline_text": "No current dates are posted on the police page. A January 2024 city news item said the 2024 police cadet application had its own deadline, so check in winter.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "The Youth Services page gives no link or dates for the Summer Cadet Program. Check that page or its Facebook page for news.",
+  "url": "https://www.cincinnati-oh.gov/police/youth-services/",
+  "sources_fetched": [
+    "https://www.cincinnati-oh.gov/police/youth-services/",
+    "https://cincinnati-oh.gov/cityofcincinnati/news/application-process-open-for-cpd-and-cfd-cadet-programs"
+  ]
+}

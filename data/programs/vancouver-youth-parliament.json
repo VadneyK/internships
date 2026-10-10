@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "max_age": 18,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "fields": [
+    "law-government"
+  ],
+  "regions": [
+    "vancouver"
+  ],
+  "id": "vancouver-youth-parliament",
+  "name": "Vancouver Youth Parliament (VYP)",
+  "org": "BC Youth Parliament",
+  "city": "Vancouver, BC",
+  "type": "leadership",
+  "what_you_do": "Debate real issues in a mock parliament over a weekend. Then join the fundraising and service events for the year.",
+  "min_age": 14,
+  "who_can_apply": "Ages 14 to 18 as of Dec 31, in the Vancouver region. This includes Vancouver, North Vancouver, West Vancouver, Burnaby and Richmond. A youth group, like a school or community group, must name you. Five members of that group must sign.",
+  "paid_type": "fee-based",
+  "pay_detail": "$60 registration fee; financial help may be asked for by email",
+  "season": "winter",
+  "duration": "One weekend session plus events during the year",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The 39th session (Feb 6 to 8, 2026) closed applications Feb 1, 2026. The next one is expected around the same time.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Download the form. Find a sponsor group and five people to name you. Add a personal note if you did not take part last year. Fill out the online form and upload your files.",
+  "url": "https://bcyp.org/vyp",
+  "notes": "Contact vyp@bcyp.org for session questions and registrar@bcyp.org for applying. The 40th session dates were not posted when read.",
+  "sources_fetched": [
+    "https://bcyp.org/vyp"
+  ]
+}

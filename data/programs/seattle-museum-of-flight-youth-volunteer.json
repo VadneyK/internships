@@ -1,0 +1,39 @@
+{
+  "id": "seattle-museum-of-flight-youth-volunteer",
+  "name": "Youth Volunteer (ages 16 to 17)",
+  "org": "The Museum of Flight",
+  "regions": [
+    "seattle"
+  ],
+  "city": "Seattle, WA",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "engineering"
+  ],
+  "what_you_do": "Teen volunteers help visitors at the air and space museum. Roles include guiding tours, helping with school trips, and acting out history with costumes and props. Open roles are listed on the page.",
+  "min_age": 16,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "The page says anyone age 16 and above can volunteer. Youth use the Youth Volunteer Application. One reference is required (the Youth Reference Form). Not all roles are open to youth.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "The museum asks for 8 hours a month; hours vary by role",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Roles are recruited by season. No single deadline. Browse current roles and apply online.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the Youth (16-17) Volunteer form. Attach the Youth Reference Form. The Volunteer Office reviews it and may set up an interview. New volunteers go to an orientation.",
+  "needs_work_permit": false,
+  "url": "https://www.museumofflight.org/volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.museumofflight.org/volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "Exact museum address is not on the page read. The page does not state an upper age limit of 17; max_age is kept at 17 only because the card needs an integer, so confirm with the Volunteer Office (volunteers@museumofflight.org). Not a paid job."
+}

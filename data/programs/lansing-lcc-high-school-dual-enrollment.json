@@ -1,0 +1,38 @@
+{
+  "grades": "Finished 8th grade",
+  "min_age": 14,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": false,
+  "priority": 2,
+  "notes": "The LCC application asks for a Social Security Number. The page says it is needed for financial aid after you graduate high school.",
+  "fields": [
+    "any"
+  ],
+  "id": "lansing-lcc-high-school-dual-enrollment",
+  "name": "High School Dual Enrollment at Lansing Community College",
+  "org": "Lansing Community College",
+  "regions": [
+    "lansing"
+  ],
+  "city": "Lansing, MI",
+  "type": "school-pathway",
+  "what_you_do": "Take regular college classes with LCC students while you finish high school and earn college credit. Homeschool students can take part too.",
+  "who_can_apply": "Students working toward a high school diploma who finished 8th grade before their first college class. Homeschool students can apply.",
+  "paid_type": "fee-based",
+  "pay_detail": "Cost not stated. The page says many school districts cover some or all of the tuition, and homeschool students may self-pay.",
+  "season": "year-round",
+  "duration": "By semester",
+  "status": "rolling",
+  "deadline_text": "No deadline posted on the page read. Dual enrollment information sessions are listed on the LCC site.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply online as \"High School Student (Age 14+)\" or with your counselor. Turn on your account and set your placement levels. Hand in the Dual Enrollment Approval Form, signed by a parent and a counselor. Then go to orientation and sign the FERPA release.",
+  "url": "https://www.lcc.edu/community/college-credit-in-hs/dual.html",
+  "sources_fetched": [
+    "https://www.lcc.edu/community/college-credit-in-hs/dual.html"
+  ]
+}

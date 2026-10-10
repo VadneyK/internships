@@ -21,7 +21,9 @@ const KNOWN = {
   "nyc-manhattan-university-mechanical-engineering-summer-institute": "2027-06-01",
   "pittsburgh-cmu-cs-scholars": "2027-02-01",
   "pittsburgh-cmu-pre-college-programs": "2027-03-01",
-  "pittsburgh-cmu-summer-academy-math-science": "2027-02-01"
+  "pittsburgh-cmu-summer-academy-math-science": "2027-02-01",
+  "richmond-rcmp-youth-academy": "2027-04-06",
+  "richmond-sd38-biomedical-health-science-dual-credit": "2027-03-09"
 };
 const byId = (id) => ENTRIES.find((e) => e.id === id);
 const iso = (d) => d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");

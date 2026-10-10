@@ -1,0 +1,41 @@
+{
+  "grades": "High school",
+  "min_age": null,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": "https://www.neutral-zone.org/teen-registration-form",
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": false,
+  "priority": 2,
+  "notes": "This is a free teen center, not a paid job. Future Corps for high schoolers meets the first Monday of each month, 4 to 6 PM, and helps with first-job support. Neutral Zone is at 310 E Washington St, Ann Arbor.",
+  "fields": [
+    "arts-media",
+    "tech-cs",
+    "social-impact"
+  ],
+  "id": "ann-arbor-neutral-zone-teen-programs",
+  "name": "Neutral Zone free teen programs and youth-led projects",
+  "org": "Neutral Zone",
+  "regions": [
+    "ann-arbor"
+  ],
+  "city": "Ann Arbor, MI",
+  "type": "leadership",
+  "what_you_do": "Drop in after school or join weekly programs. Some are music production, running a concert venue, game design, and first job and college planning. Teens can also start their own project.",
+  "who_can_apply": "Any teen of high school age. It is best to sign up ahead, but you can sign up when you come.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free. Donations are welcome.",
+  "season": "school-year",
+  "duration": "Weekly programs all school year",
+  "status": "year-round",
+  "deadline_text": "School year 2026-27 programs run weekdays. Drop-in is Monday to Friday, 2 to 6 PM. No deadline is posted.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the teen sign up form on the website or sign up when you come. Questions: Hananiah Wiggins, hananiah@neutral-zone.org, (734) 214-9995.",
+  "url": "https://www.neutral-zone.org/school-year-programs-202627",
+  "sources_fetched": [
+    "https://www.neutral-zone.org/",
+    "https://www.neutral-zone.org/school-year-programs-202627"
+  ]
+}

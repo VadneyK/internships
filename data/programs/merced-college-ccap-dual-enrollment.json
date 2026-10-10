@@ -1,0 +1,38 @@
+{
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "pay_detail": "No tuition and no books.",
+  "duration": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": false,
+  "priority": 2,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "merced-college-ccap-dual-enrollment",
+  "name": "College and Career Access Pathways (CCAP) at Merced College",
+  "org": "Merced College",
+  "regions": [
+    "merced"
+  ],
+  "city": "Merced, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "You take Merced College classes offered through your high school and earn college credit. The program is aimed at students who may not already be college bound.",
+  "who_can_apply": "Students at high schools that offer Merced College CCAP courses. Grade levels and partner schools are not listed. Ask your counselor.",
+  "paid_type": "unpaid",
+  "season": "school-year",
+  "status": "rolling",
+  "deadline_text": "You apply for each semester you plan to attend. No dates were listed on the page.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply online with the CCAP link. A parent fills out the Dual Enrollment Parent Consent Form. Pick classes with your counselor. Then give the K-12 Permit PDF to your high school CCAP counselor.",
+  "url": "https://www.mccd.edu/student-support/support-programs/college-career-access-pathways/",
+  "notes": "The Dual Enrollment Coordinator is Jourdan L. French. Her number is 209-384-6189. For classes taken on campus, see the separate Merced College K-12 concurrent enrollment card.",
+  "sources_fetched": [
+    "https://www.mccd.edu/student-support/support-programs/college-career-access-pathways/"
+  ]
+}

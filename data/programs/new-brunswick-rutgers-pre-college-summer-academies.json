@@ -1,0 +1,44 @@
+{
+  "grades": "Finishing grade 10 or 11",
+  "max_age": 18,
+  "min_age": 16,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 3,
+  "fields": [
+    "science",
+    "engineering",
+    "business-finance",
+    "law-government",
+    "health"
+  ],
+  "pay_detail": "2026 cost was $2,899 for most academies ($3,887.50 to $5,068 for the two credit academies), with a $500 non-refundable deposit. Includes dorm for the week.",
+  "duration": "One week, residential",
+  "id": "new-brunswick-rutgers-pre-college-summer-academies",
+  "name": "Rutgers Pre-College Summer Academies",
+  "org": "Rutgers University-New Brunswick, Office of Summer and Winter Sessions",
+  "regions": [
+    "new-brunswick",
+    "new-jersey"
+  ],
+  "city": "New Brunswick, NJ",
+  "type": "pre-college",
+  "what_you_do": "Live on the Rutgers campus for one week. You take workshops and talks on one topic, such as space, engineering, pre law and mock trial, physical therapy or college readiness.",
+  "who_can_apply": "High school students finishing sophomore or junior year, ages 16 to 18. The page states this age rule for Summer 2026, so check the 2027 rules. U.S. and international students.",
+  "paid_type": "fee-based",
+  "season": "summer",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The Summer 2026 application is closed. Summer 2027 dates are not posted; the page offers an email list for updates.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Online application on the Pre-College Summer site. Join the email list for 2027 updates.",
+  "url": "https://precollegesummer.rutgers.edu/academies",
+  "sources_fetched": [
+    "https://precollegesummer.rutgers.edu/academies",
+    "https://precollegesummer.rutgers.edu/academies/costs"
+  ],
+  "notes": "Costs money. Check the Costs page for the current year before planning. The page did not list financial aid; ask the program."
+}

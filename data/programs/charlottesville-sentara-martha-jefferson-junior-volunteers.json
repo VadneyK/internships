@@ -1,0 +1,38 @@
+{
+  "opens_iso": null,
+  "grades": null,
+  "min_age": 15,
+  "max_age": 18,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 3,
+  "needs_work_permit": false,
+  "deadline_iso": null,
+  "fields": [
+    "health"
+  ],
+  "sources_fetched": [
+    "https://www.sentara.com/hospitalslocations/martha-jefferson-hospital/about-us/volunteers"
+  ],
+  "season": "summer",
+  "id": "charlottesville-sentara-martha-jefferson-junior-volunteers",
+  "name": "Junior Volunteers (Sentara Martha Jefferson Hospital)",
+  "org": "Sentara Martha Jefferson Hospital",
+  "regions": [
+    "charlottesville"
+  ],
+  "city": "Charlottesville, VA",
+  "type": "volunteer",
+  "what_you_do": "Volunteer at the hospital during the summer. The page does not list tasks for junior volunteers.",
+  "who_can_apply": "Junior volunteers ages 15 to 18 for the summer months.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid.",
+  "duration": "Summer months; hours not stated",
+  "status": "unconfirmed",
+  "deadline_text": "No dates or deadline are posted on the page.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "The page has a general volunteer link (Apply here). It does not say it is for junior volunteers. Call the volunteer office to ask.",
+  "url": "https://www.sentara.com/hospitalslocations/martha-jefferson-hospital/about-us/volunteers",
+  "notes": "Only the age range and summer timing are posted. GPA, grade, hours, and deadlines are not stated. Confirm everything before applying."
+}

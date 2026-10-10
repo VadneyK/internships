@@ -1,0 +1,41 @@
+{
+  "grades": "High school (finished 9th grade for summer)",
+  "min_age": null,
+  "max_age": null,
+  "opens_iso": "2027-03-01",
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": true,
+  "priority": 1,
+  "notes": "Michigan requires a work permit for workers under 18. From Oct 2, 2026 permits come through the state Youth Employment Permit Portal.",
+  "fields": [
+    "environment",
+    "food-hospitality",
+    "social-impact"
+  ],
+  "id": "ann-arbor-growing-hope-teen-leadership-program",
+  "name": "Teen Leadership Program (Growing Hope urban farm)",
+  "org": "Growing Hope",
+  "regions": [
+    "ann-arbor"
+  ],
+  "city": "Ypsilanti, MI",
+  "type": "paid-youth-program",
+  "what_you_do": "Work on an urban farm. Learn farming, cooking, food justice and how to organize your community. You lead garden and cooking workshops. Summer is 8 weeks. The after-school program runs September to May.",
+  "who_can_apply": "High-school-aged youth who live in Ypsilanti and the surrounding townships. For the summer, you must have finished 9th grade and cannot miss more than 4 days. The school-year program is for teens who finished the summer program in good standing.",
+  "paid_type": "paid",
+  "pay_detail": "$14 an hour, plus free weekly produce bags in the growing season.",
+  "season": "summer",
+  "duration": "Summer 2027: June 15 to Aug 6, Monday to Thursday, 9 AM to 2:30 PM. After school: Sept to May, Tue/Wed/Thu, 4 to 6 PM.",
+  "status": "opens-soon",
+  "deadline_text": "Summer 2027 applications open March 1, 2027. A closing date is not posted.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply through the Youth and Schools page when applications open. Questions: Jenny Pritchett, jenny@growinghope.net.",
+  "url": "https://www.growinghope.net/youth---schools",
+  "sources_fetched": [
+    "https://www.growinghope.net/youth---schools",
+    "https://www.michigan.gov/leo/bureaus-agencies/ber/wage-and-hour/youth-employment-standards-act-yesa"
+  ]
+}

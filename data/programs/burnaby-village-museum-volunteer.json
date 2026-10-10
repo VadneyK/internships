@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "fields": [
+    "arts-media"
+  ],
+  "regions": [
+    "vancouver"
+  ],
+  "id": "burnaby-village-museum-volunteer",
+  "name": "Burnaby Village Museum Volunteer Program",
+  "org": "City of Burnaby, Burnaby Village Museum",
+  "city": "Burnaby, BC",
+  "type": "volunteer",
+  "what_you_do": "Greet visitors in old time clothes. Help with school programs and special events, work with old objects, or help at camps. The museum is a 10 acre village from the past.",
+  "min_age": 14,
+  "who_can_apply": "Age 14 or older. If you are under 18, a parent must say yes. You need good English, health coverage, 2 references and the right to volunteer in Canada. You must be able to walk the 10 acre site.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "At least 1 year and 35 hours of service per year",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Intakes: February (spring/summer) and September (fall/winter) for costumed interpretation, school programs and events. Camps: February and April. Collections and sewing: ongoing.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Pick a job on the museum volunteer page. Then apply online.",
+  "url": "https://burnabyvillagemuseum.ca/EN/main/support/volunteers.html",
+  "notes": "The page lists the intake months but not the year, so confirm the next date. The City of Burnaby volunteer page also lists Camps and playgrounds volunteering for youth 14 and older.",
+  "sources_fetched": [
+    "https://burnabyvillagemuseum.ca/EN/main/support/volunteers.html",
+    "https://www.burnaby.ca/our-city/get-involved/volunteer"
+  ]
+}

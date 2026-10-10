@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "max_age": 18,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 3,
+  "fields": [
+    "any"
+  ],
+  "regions": [
+    "vancouver"
+  ],
+  "id": "surrey-yep-youth-engagement-proposal",
+  "name": "YEP Projects (Youth Engagement Proposal)",
+  "org": "City of Surrey",
+  "city": "Surrey, BC",
+  "type": "leadership",
+  "what_you_do": "Pitch a youth-led project for Surrey, like an event, public art or a workshop. Funding may be available but is not guaranteed.",
+  "min_age": 13,
+  "who_can_apply": "Ages 13 to 18 who live, learn, work or volunteer in Surrey. You lead or take part in the project.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not a job. Eligible projects may get funding, not guaranteed.",
+  "season": "year-round",
+  "duration": "Depends on the project",
+  "status": "rolling",
+  "deadline_text": "No deadline stated.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the YEP Project Application Form.",
+  "url": "https://www.surrey.ca/about-surrey/youth-engagement/yep-projects",
+  "notes": "Funding requests are reviewed one by one.",
+  "sources_fetched": [
+    "https://www.surrey.ca/about-surrey/youth-engagement/yep-projects"
+  ]
+}

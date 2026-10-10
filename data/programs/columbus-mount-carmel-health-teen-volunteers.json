@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "apply_url": null,
+  "needs_work_permit": false,
+  "deadline_iso": null,
+  "opens_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 2,
+  "notes": "Sites listed: Mount Carmel Dublin, East, Grove City, St. Ann's and New Albany. Phones: East 614-234-6658, Grove City 614-663-6700, St. Ann's 380-898-4097, New Albany 614-663-6334. Completing the application does not guarantee a spot.",
+  "id": "columbus-mount-carmel-health-teen-volunteers",
+  "name": "Mount Carmel Health Teen Program (volunteer)",
+  "org": "Mount Carmel Health System",
+  "regions": [
+    "columbus"
+  ],
+  "city": "Columbus area, OH",
+  "type": "volunteer",
+  "fields": [
+    "health"
+  ],
+  "what_you_do": "You volunteer one shift a week at a Mount Carmel hospital. You help patients and visitors. Jobs depend on the hospital and when you can come.",
+  "min_age": 16,
+  "max_age": 18,
+  "who_can_apply": "High school students ages 16 to 18. A parent or guardian must take part in the TB test step.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer",
+  "season": "year-round",
+  "duration": "One shift (about 4 hours) a week. Summer: weekdays 8 am to 4 pm. School year: weekday evenings 4 to 7 pm or weekends 8 am to 8 pm.",
+  "status": "year-round",
+  "deadline_text": "The Teen Program runs year-round. No deadline is listed.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the online part of the Teen Program form. Mail or hand in the paper part to Volunteer Services. Then you interview and take a TB test. You go to a volunteer orientation and a unit orientation.",
+  "url": "https://www.mountcarmelhealth.com/for-patients/after-your-visit/volunteer",
+  "sources_fetched": [
+    "https://www.mountcarmelhealth.com/for-patients/after-your-visit/volunteer"
+  ]
+}

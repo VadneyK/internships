@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "fields": [
+    "any"
+  ],
+  "regions": [
+    "vancouver"
+  ],
+  "id": "north-vancouver-recreation-nvrc-volunteer",
+  "name": "Volunteer with North Vancouver Recreation and Culture (NVRC)",
+  "org": "North Vancouver Recreation and Culture Commission",
+  "city": "North Vancouver, BC",
+  "type": "volunteer",
+  "what_you_do": "Help with swimming, young kids programs, fitness and special events. You can also help with general recreation.",
+  "min_age": 14,
+  "who_can_apply": "Age 14 or older. Some roles need an older age or certificates (for example Aquatics needs age 15, Bronze Cross and Swim Instructor). Under 18 needs a parent signature.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Varies. Early years roles ask for 4 to 6 months.",
+  "status": "rolling",
+  "deadline_text": "No deadline stated.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "There are eight steps. Fill out the online form. Give two references. Sign the volunteer agreement. Get a police check at the RCMP where you live. Sign the photo release. Upload your forms. Go to orientation. Then email volunteer@nvrc.ca.",
+  "url": "https://www.nvrc.ca/about-us/employment-volunteering/volunteering",
+  "notes": "Contact volunteer@nvrc.ca or 604-983-6345. The police check must be done where you live.",
+  "sources_fetched": [
+    "https://www.nvrc.ca/about-us/employment-volunteering/volunteering"
+  ]
+}

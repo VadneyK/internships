@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": false,
+  "priority": 2,
+  "max_age": 18,
+  "min_age": 12,
+  "org": "The Media School, Indiana University Bloomington",
+  "regions": [
+    "bloomington"
+  ],
+  "city": "Bloomington, IN",
+  "type": "pre-college",
+  "season": "summer",
+  "status": "closed-expect-reopen",
+  "deadline_confidence": "last-year-pattern",
+  "id": "bloomington-iu-game-development-camp",
+  "name": "IU Game Development Camp (in person)",
+  "fields": [
+    "tech-cs",
+    "arts-media"
+  ],
+  "what_you_do": "A five-day camp where you build your own video game from start to finish in IU's game design labs. Pick Game Art and Storytelling, 2D, or 3D (Unreal Engine 5). Beginners are welcome.",
+  "who_can_apply": "Students ages 12 to 18. The minimum age varies by camp, so check the page for each session. No experience needed.",
+  "paid_type": "fee-based",
+  "pay_detail": "Overnight $850, day camp $500. Scholarships are available.",
+  "duration": "5 days",
+  "deadline_text": "2027 session dates are listed as coming soon on the camp page. No deadline stated.",
+  "how_to_apply": "Sign up online on the camp website. The scholarship form is separate.",
+  "url": "https://gamecamp.indiana.edu/in-person/index.html",
+  "sources_fetched": [
+    "https://gamecamp.indiana.edu/in-person/index.html",
+    "https://gamecamp.indiana.edu/",
+    "https://mediaschool.indiana.edu/academics/precollege/index.html"
+  ],
+  "notes": "Overnight tuition includes dorm lodging. Day camp is an option for local students. Tuition includes meals, a t-shirt, a thumb drive and a water bottle. Media School also lists June and July 2027 weeks."
+}

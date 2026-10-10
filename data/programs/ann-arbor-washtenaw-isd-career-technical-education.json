@@ -1,0 +1,43 @@
+{
+  "grades": "High school",
+  "min_age": null,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": false,
+  "priority": 3,
+  "notes": "Programs differ by school. Ann Arbor, Chelsea, Dexter, Lincoln, Manchester, Milan, Saline, Whitmore Lake and Ypsilanti each list their own. Washtenaw ISD phone: (734) 994-8100.",
+  "fields": [
+    "trades",
+    "tech-cs",
+    "health",
+    "food-hospitality",
+    "engineering"
+  ],
+  "id": "ann-arbor-washtenaw-isd-career-technical-education",
+  "name": "Career Technical Education high school programs (Washtenaw ISD)",
+  "org": "Washtenaw Intermediate School District with local school districts",
+  "regions": [
+    "ann-arbor"
+  ],
+  "city": "Washtenaw County, MI",
+  "type": "school-pathway",
+  "what_you_do": "Take career classes while in high school. Your school may offer health science, car repair, cooking, computer safety, hair and skin care, welding, drones and more.",
+  "who_can_apply": "Students in the county school districts that run each program. The page says to contact your district CTE director or high school counselor. Other-district rules are not stated.",
+  "paid_type": "unpaid",
+  "pay_detail": "Not stated",
+  "season": "school-year",
+  "duration": "School year",
+  "status": "rolling",
+  "deadline_text": "Not posted. The 2026-27 program list is on the page.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Talk to your high school counselor or your district CTE director. The page does not list steps.",
+  "url": "https://www.washtenawisd.org/career-technical-education/programs/high-school/",
+  "sources_fetched": [
+    "https://www.washtenawisd.org/career-technical-education-home/",
+    "https://www.washtenawisd.org/career-technical-education/programs/high-school/"
+  ]
+}

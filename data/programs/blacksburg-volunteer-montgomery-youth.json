@@ -1,0 +1,38 @@
+{
+  "opens_iso": null,
+  "grades": null,
+  "min_age": null,
+  "max_age": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 3,
+  "needs_work_permit": false,
+  "deadline_iso": null,
+  "fields": [
+    "social-impact"
+  ],
+  "sources_fetched": [
+    "https://www.montgomerycountyva.gov/1/departments-services/human-services/volunteer-montgomery/faqs"
+  ],
+  "season": "year-round",
+  "id": "blacksburg-volunteer-montgomery-youth",
+  "name": "Volunteer Montgomery (volunteers under 18)",
+  "org": "Montgomery County, Virginia, Human Services",
+  "regions": [
+    "blacksburg"
+  ],
+  "city": "Montgomery County, VA",
+  "type": "volunteer",
+  "what_you_do": "Join the county volunteer program. The page does not list specific projects for minors.",
+  "who_can_apply": "Anyone who lives in Montgomery County can join. If you are under 18, a parent or guardian must come to every activity. They must also fill out a sign up form. No minimum age is listed.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid.",
+  "duration": "No required hours",
+  "status": "rolling",
+  "deadline_text": "No deadline.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the volunteer sign up form linked on the FAQ page. Call 540-382-5775 or email hayesaw@montgomerycountyva.gov. Hours are Mon to Fri, 8:30 to 5.",
+  "url": "https://www.montgomerycountyva.gov/1/departments-services/human-services/volunteer-montgomery/faqs",
+  "notes": "Teens need an adult with them, so it works best for families or a parent who volunteers too. A volunteer inactive for more than 12 months may be removed from the roll."
+}

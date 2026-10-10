@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "apply_url": null,
+  "needs_work_permit": false,
+  "deadline_iso": null,
+  "opens_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 3,
+  "notes": "Teens 13 and older can also visit the museum on their own at any time, per the page.",
+  "id": "columbus-museum-of-art-teen-studio",
+  "name": "Teen Studio (free, ages 13 to 19)",
+  "org": "Columbus Museum of Art",
+  "regions": [
+    "columbus"
+  ],
+  "city": "Columbus, OH",
+  "type": "leadership",
+  "fields": [
+    "arts-media"
+  ],
+  "what_you_do": "A free, teens-only art workshop at the museum with snacks. A quarterly version called Teen Studio: Unwind is also offered.",
+  "min_age": 13,
+  "max_age": 19,
+  "who_can_apply": "Teens ages 13 to 19. Free registration; drop-ins are welcome.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free; includes museum admission",
+  "season": "school-year",
+  "duration": "Every second Thursday, 5 to 7 pm. Teen Studio: Unwind is quarterly, 5 to 7 pm.",
+  "status": "year-round",
+  "deadline_text": "Ongoing. Specific dates for Unwind are not listed on the page read.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Register for free on the museum events listings, or drop in.",
+  "url": "https://www.columbusmuseum.org/teens-at-cma",
+  "sources_fetched": [
+    "https://www.columbusmuseum.org/teens-at-cma"
+  ]
+}

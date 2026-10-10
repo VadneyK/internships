@@ -1,0 +1,42 @@
+{
+  "grades": "Freshman, sophomore or junior year",
+  "apply_url": null,
+  "needs_work_permit": null,
+  "deadline_iso": "2027-04-01",
+  "opens_iso": "2027-01-15",
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 2,
+  "notes": "Two phone numbers appear on OSC pages, so email is the safer contact. The page does not mention financial aid. It was formerly called the Summer Institute.",
+  "id": "columbus-osc-stem-institute",
+  "name": "STEM Institute (Ohio Supercomputer Center)",
+  "org": "Ohio Supercomputer Center",
+  "regions": [
+    "columbus",
+    "ohio"
+  ],
+  "city": "Columbus, OH",
+  "type": "pre-college",
+  "fields": [
+    "tech-cs",
+    "science",
+    "engineering"
+  ],
+  "what_you_do": "A 2 week camp where you live on campus. You work in small teams and use supercomputers to solve science and engineering problems. Talks cover Unix, Python, cyber safety and supercomputers. You tour Ohio State labs.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "Ohio residents in their freshman, sophomore or junior year of high school.",
+  "paid_type": "fee-based",
+  "pay_detail": "$600 per student ($60 per day) for housing, meals, tuition, trips and insurance. OSC says the real cost is about four times that.",
+  "season": "summer",
+  "duration": "2 weeks, June 6 to 17, 2027",
+  "status": "opens-soon",
+  "deadline_text": "Applications open January 15 and close April 1, 2027. Accepted students are told in April.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the online STEM Institute application when it opens. Email si-contact@osc.edu.",
+  "url": "https://www.osc.edu/education/si",
+  "sources_fetched": [
+    "https://www.osc.edu/education/si",
+    "https://www.osc.edu/education/si/faqs"
+  ]
+}

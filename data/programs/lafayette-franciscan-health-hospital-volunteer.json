@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": false,
+  "priority": 3,
+  "max_age": null,
+  "min_age": null,
+  "id": "lafayette-franciscan-health-hospital-volunteer",
+  "name": "Hospital Volunteer Program at Franciscan Health Lafayette East",
+  "org": "Franciscan Health",
+  "regions": [
+    "lafayette"
+  ],
+  "city": "Lafayette, IN",
+  "type": "volunteer",
+  "fields": [
+    "health"
+  ],
+  "what_you_do": "Help at the hospital without doing medical work. You might deliver mail, work the welcome desk, guide patients to their rooms, or do office tasks.",
+  "who_can_apply": "The Franciscan Health page says volunteers include men, women and teens. Minimum age for Lafayette East is not stated; the system page says each hospital sets its own age rules. Ask the volunteer manager.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer",
+  "season": "year-round",
+  "duration": "Usually once or twice a week for 3 to 4 hours, plus orientation and at least 2 days of training",
+  "status": "year-round",
+  "deadline_text": "No deadline stated. Apply online any time.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill in the online volunteer form on the Lafayette page. You can also call Lisa Green at 765-502-4249. She is the Volunteer Services Manager.",
+  "url": "https://www.franciscanhealth.org/community/volunteer/franciscan-health-lafayette-east",
+  "sources_fetched": [
+    "https://www.franciscanhealth.org/community/volunteer/franciscan-health-lafayette-east",
+    "https://www.franciscanhealth.org/community/volunteer"
+  ],
+  "notes": "Call to check the minimum age before you apply. The hospice program has its own form. It was not checked for teen rules."
+}

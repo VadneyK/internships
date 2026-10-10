@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "min_age": 15,
+  "max_age": 18,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": false,
+  "priority": 2,
+  "notes": "It has a military style setup, but the page says you do not have to join the military. The page calls it a program for at risk youth who want to finish high school.",
+  "fields": [
+    "any"
+  ],
+  "id": "michigan-youth-challenge-academy",
+  "name": "Michigan Youth Challenge Academy (MYCA)",
+  "org": "Michigan National Guard, Michigan Department of Military and Veterans Affairs",
+  "regions": [
+    "michigan"
+  ],
+  "city": "Michigan (statewide)",
+  "type": "school-pathway",
+  "what_you_do": "A free program with a 5 and a half month stay on site and 12 months of follow up. You work on your diploma, leadership, job skills, fitness, life skills and community service.",
+  "who_can_apply": "Ages 15 1/2 to 18 on day one (15 1/2 means you turn 16 during the cycle). Must be a Michigan resident and a U.S. citizen or legally present, not yet have a high school diploma, not be on reporting probation, and have no felonies. Ages 15 1/2 can only do credit recovery and return to their high school.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free to parents. No obligation to join the military.",
+  "season": "year-round",
+  "duration": "5.5 months residential plus 12 months after. Cycles start mid-January and mid-July.",
+  "status": "unconfirmed",
+  "deadline_text": "Two cycles a year. The January start application opens Aug 1. The July start application opens Feb 1. The application takes place over the 4 to 5 months before each cycle. No closing date is posted.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the Inquiry Form on the MYCA site. Then follow the steps on the Admissions Process list.",
+  "url": "https://www.michigan.gov/myca/discover/eligibility",
+  "sources_fetched": [
+    "https://www.michigan.gov/myca",
+    "https://www.michigan.gov/myca/discover/eligibility"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "min_age": 14,
+  "max_age": 26,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": null,
+  "priority": 2,
+  "notes": "Work-based learning is one of five services. Ask your school transition coordinator or counselor too.",
+  "fields": [
+    "any"
+  ],
+  "id": "michigan-mrs-pre-employment-transition-services",
+  "name": "Pre-Employment Transition Services for students with disabilities (Michigan Rehabilitation Services)",
+  "org": "Michigan Rehabilitation Services, Michigan Department of Labor and Economic Opportunity",
+  "regions": [
+    "michigan"
+  ],
+  "city": "Michigan (statewide)",
+  "type": "school-pathway",
+  "what_you_do": "Get help with job exploration, work-based learning, planning for college or training, workplace readiness, and speaking up for yourself. Staff work with your school and IEP team.",
+  "who_can_apply": "Students with disabilities ages 14 to 26 who are in school or have been accepted at school after high school. If you are under 18, a parent or guardian must sign a consent form. Your school fills out a form that shows the disability.",
+  "paid_type": "unpaid",
+  "pay_detail": "MRS pays for services in your employment plan. Not a wage.",
+  "season": "year-round",
+  "duration": "Ongoing",
+  "status": "rolling",
+  "deadline_text": "No deadline. Apply any time.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use the MRS Online Application. Forms MRS-4.0a (parent consent) and MRS-4.0b (school verification) are on the page. Phone 517-241-5324 or toll-free 800-605-6722.",
+  "url": "https://www.michigan.gov/leo/bureaus-agencies/mrs/mrs-for-students",
+  "sources_fetched": [
+    "https://www.michigan.gov/leo/bureaus-agencies/mrs/mrs-for-students"
+  ]
+}

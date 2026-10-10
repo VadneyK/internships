@@ -1,0 +1,39 @@
+{
+  "grades": "Starts in 11th grade",
+  "min_age": null,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": false,
+  "priority": 2,
+  "notes": "This is a school program, not a job.",
+  "fields": [
+    "any"
+  ],
+  "id": "lansing-crtec-capital-region-technical-early-college",
+  "name": "Capital Region Technical Early College (CRTEC)",
+  "org": "Clinton County RESA, Eaton RESA and Ingham ISD",
+  "regions": [
+    "lansing"
+  ],
+  "city": "Lansing area, MI (Clinton, Eaton and Ingham counties)",
+  "type": "school-pathway",
+  "what_you_do": "Start in 11th grade and finish in 13th grade. Earn college credit toward a degree or certifications and get career-related experience.",
+  "who_can_apply": "Students who attend a public school full time in Clinton, Eaton or Ingham County. You can take courses offered across the region.",
+  "paid_type": "unpaid",
+  "pay_detail": "Tuition is free.",
+  "season": "school-year",
+  "duration": "3 years (11th to 13th grade)",
+  "status": "unconfirmed",
+  "deadline_text": "Application steps and deadlines are not posted on the page. Contact a coordinator.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Contact a coordinator: Pam Kunkel-Chappell at Ingham ISD, 517.244.1329. Others are listed on the site for Clinton and Eaton counties.",
+  "url": "https://crtec.org/programs/",
+  "sources_fetched": [
+    "https://crtec.org/",
+    "https://crtec.org/programs/"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "grades": "11 to 12",
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": "2027-03-02",
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 1,
+  "fields": [
+    "trades"
+  ],
+  "regions": [
+    "vancouver"
+  ],
+  "id": "richmond-sd38-youth-train-in-trades",
+  "name": "Youth TRAIN in Trades (Richmond SD38)",
+  "org": "Richmond School District 38 Career Programs",
+  "city": "Richmond, BC",
+  "type": "apprenticeship-trades",
+  "what_you_do": "Start Level 1 trades training at a college while still in high school. You earn high school and college credit. You are signed up as an apprentice with SkilledTradesBC.",
+  "min_age": null,
+  "who_can_apply": "Students at Richmond SD38 schools. Sixteen trades are offered. Some are welding, wood building, electrical work, cooking, car repair, plumbing and hair styling.",
+  "paid_type": "unpaid",
+  "pay_detail": "School district pays tuition for the first level (the page says this often saves $2,500 to $5,000)",
+  "season": "school-year",
+  "duration": "One full program, taken in the 2027-28 school year for this intake",
+  "status": "open-now",
+  "deadline_text": "Applications for 2027-28 are open. Preferred deadline Feb 2, 2027. Second deadline Mar 2, 2027.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Get the form from the district page. You can also ask your counsellor or career advisor. Or check your school Career Programs board.",
+  "url": "https://careerprograms.sd38.bc.ca/dual-credit-programs/youth-train-trades",
+  "sources_fetched": [
+    "https://careerprograms.sd38.bc.ca/dual-credit-programs/youth-train-trades",
+    "https://careerprograms.sd38.bc.ca/node/61"
+  ],
+  "notes": "Email careerprograms@sd38.bc.ca for questions."
+}

@@ -131,8 +131,8 @@ function linkProblems(doc, rel) {
 }
 
 // Finds page references inside free text: page.html, page.html#frag, page.html?a=b#frag.
-// A reference must not be glued to a path or host (so "a.org/60.html" and "internships/interview.html" are skipped).
-const REF = /(?<![\w./:@-])([A-Za-z0-9_-]+\.html)((?:\?[\w=&;%.-]*)?)((?:#[\w%-]*)?)/g;
+// A reference must not be glued to a path or host (so "a.org/60.html", "internships/interview.html" and "pay%20rates.html" are skipped).
+const REF = /(?<![\w./:@%-])([A-Za-z0-9_-]+\.html)((?:\?[\w=&;%.-]*)?)((?:#[\w%-]*)?)/g;
 function refsInText(text) {
   const out = [];
   for (const m of text.matchAll(REF)) out.push({ href: m[1] + m[2] + m[3], endsAtEdge: m.index + m[0].length === text.length });

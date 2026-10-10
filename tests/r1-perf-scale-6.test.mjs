@@ -60,14 +60,14 @@ test("1: a plain load sorts the list at most once", async () => {
 });
 
 test("2: a place with fewer than 3 real matches sorts once and keeps its note", async () => {
-  const real = LITE.filter((e) => L.matches(e, { place: "city:boston", types: ["volunteer"] }, NOW));
-  assert.ok(real.length > 0 && real.length < 3, "fixture: Boston volunteer has " + real.length + " real matches");
-  const { window, document } = await load("?at=city:boston&kind=volunteer");
+  const real = LITE.filter((e) => L.matches(e, { place: "city:ann-arbor", types: ["research"] }, NOW));
+  assert.ok(real.length > 0 && real.length < 3, "fixture: Ann Arbor research has " + real.length + " real matches");
+  const { window, document } = await load("?at=city:ann-arbor&kind=research");
   assert.ok(window.__calls.sort <= 1, "sortList calls: " + window.__calls.sort);
   const note = document.getElementById("placeNote");
   assert.equal(note.hidden, false);
-  assert.match(note.textContent, new RegExp("^Only " + real.length + " program" + (real.length === 1 ? "" : "s") + " found in Boston so far, so online and national programs are included too\\."));
-  const wide = LITE.filter((e) => L.matches(e, { place: "city:boston", types: ["volunteer"], placeOnline: true }, NOW));
+  assert.match(note.textContent, new RegExp("^Only " + real.length + " program" + (real.length === 1 ? "" : "s") + " found in Ann Arbor so far, so online and national programs are included too\\."));
+  const wide = LITE.filter((e) => L.matches(e, { place: "city:ann-arbor", types: ["research"], placeOnline: true }, NOW));
   assert.equal(document.getElementById("count").textContent, wide.length + " of " + LITE.length + " programs");
 });
 

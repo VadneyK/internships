@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "min_age": null,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": null,
+  "priority": 3,
+  "notes": "Ask staff whether a teen needs a parent signature. The page does not say.",
+  "fields": [
+    "environment"
+  ],
+  "id": "ann-arbor-parks-volunteer-in-the-parks",
+  "name": "Volunteer in the Parks (City of Ann Arbor)",
+  "org": "City of Ann Arbor Parks and Recreation",
+  "regions": [
+    "ann-arbor"
+  ],
+  "city": "Ann Arbor, MI",
+  "type": "volunteer",
+  "what_you_do": "Sign up for park projects such as the Huron River cleanup, Trash Trailblazers, Breeding Bird Survey, Adopt-a-Park and playground maintenance. Groups of 5 to 30 can request a project.",
+  "who_can_apply": "The page says individuals and groups of all ages can volunteer. No minimum age is stated.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "One-day to long-term. Group projects run April to October.",
+  "status": "year-round",
+  "deadline_text": "No deadline. Event dates are on the online volunteer calendar.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Individuals use the online volunteer calendar and sign-up. Groups submit the Group Volunteer Inquiry form. Email a2parksevents@a2gov.org or call 734.794.6627.",
+  "url": "https://www.a2gov.org/parks-and-recreation/administrative/volunteer-in-the-parks/",
+  "sources_fetched": [
+    "https://www.a2gov.org/parks-and-recreation/",
+    "https://www.a2gov.org/parks-and-recreation/administrative/volunteer-in-the-parks/"
+  ]
+}

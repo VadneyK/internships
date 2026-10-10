@@ -1,0 +1,40 @@
+{
+  "grades": "High school",
+  "min_age": null,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": false,
+  "priority": 3,
+  "notes": "Ask your school if it has a team. FIRST in Michigan also runs FTC and FIRST LEGO League for younger students.",
+  "fields": [
+    "engineering",
+    "tech-cs"
+  ],
+  "id": "michigan-first-robotics-competition",
+  "name": "FIRST Robotics Competition (FRC) in Michigan",
+  "org": "FIRST in Michigan",
+  "regions": [
+    "michigan"
+  ],
+  "city": "Michigan (statewide)",
+  "type": "leadership",
+  "what_you_do": "Join a team of high school students that builds a robot with mentors from industry. The team competes at district events and the state championship.",
+  "who_can_apply": "Teams of high school students. The page does not give an age or grade rule. It links to Start a Team and Run a Team.",
+  "paid_type": "not-stated",
+  "pay_detail": "Registration cost not stated. Scholarships are listed through FIRST.",
+  "season": "school-year",
+  "duration": "Build and competition season",
+  "status": "unconfirmed",
+  "deadline_text": "No 2027 dates are posted on the FRC page. It only shows 2026 events.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Join an existing school or community team or use the Start a Team link on the FIRST in Michigan site. Contact on the page: Gail Alpert, 248.425.4148.",
+  "url": "https://firstinmichigan.us/FRC",
+  "sources_fetched": [
+    "https://firstinmichigan.us/",
+    "https://firstinmichigan.us/FRC"
+  ]
+}

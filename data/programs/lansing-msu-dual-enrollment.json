@@ -1,0 +1,41 @@
+{
+  "grades": "9.5 to 12 (after one full semester of high school)",
+  "min_age": null,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": "2026-12-19",
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": false,
+  "priority": 2,
+  "notes": "You cannot do dual enrollment at MSU in the summer right after you finish high school. Dual enrollment students cannot get MSU scholarships or financial aid.",
+  "fields": [
+    "any"
+  ],
+  "id": "lansing-msu-dual-enrollment",
+  "name": "MSU Dual Enrollment (college classes in high school)",
+  "org": "Michigan State University, University Outreach and Engagement",
+  "regions": [
+    "lansing"
+  ],
+  "city": "East Lansing, MI",
+  "type": "school-pathway",
+  "what_you_do": "Take regular MSU classes from an approved list while you are still in high school. You earn college credit.",
+  "who_can_apply": "U.S.-based students in grades 9.5 to 12 with a 3.0 GPA or above who are still taking at least one class at their home high school. Official transcript required.",
+  "paid_type": "fee-based",
+  "pay_detail": "In-state freshman tuition: $588.50 for 1 credit, $1,177 for 2, $1,765.50 for 3, $2,354 for 4 (through Fall 2026). Books not included. Your district may pay part under state law.",
+  "season": "year-round",
+  "duration": "By semester",
+  "status": "open-now",
+  "deadline_text": "The page lists an application deadline of Dec 19, 2026 for the term it codes SS27 (the page does not spell out the term name). Deadlines for the 2026 terms (April 11, May 30 and July 31, 2026) have passed. Apply at least 4 weeks before the semester starts.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Pick a course from the Designated Course List, then apply on the Applying page. Questions: DEINFO@MSU.EDU.",
+  "url": "https://dualenrollment.msu.edu/applying",
+  "sources_fetched": [
+    "https://dualenrollment.msu.edu/",
+    "https://dualenrollment.msu.edu/eligibility",
+    "https://dualenrollment.msu.edu/cost",
+    "https://dualenrollment.msu.edu/applying"
+  ]
+}

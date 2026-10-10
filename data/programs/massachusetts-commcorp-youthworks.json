@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "max_age": 25,
+  "min_age": 14,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": "https://commcorp.org/hubfs/FIND-A-YOUTHWORKS-PROGRAM-NEAR-YOU%20(1).pdf",
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 1,
+  "fields": [
+    "any"
+  ],
+  "pay_detail": "At least the state minimum wage; hours and pay vary by site",
+  "duration": "6 to 8 weeks in summer; a year-round option runs September to May",
+  "id": "massachusetts-commcorp-youthworks",
+  "name": "YouthWorks",
+  "org": "Commonwealth Corporation, with local MassHire workforce boards",
+  "regions": [
+    "massachusetts"
+  ],
+  "city": "Massachusetts (statewide, through local workforce boards)",
+  "type": "paid-youth-program",
+  "what_you_do": "Work a paid summer or school year job at a public, private or nonprofit site. You also take paid job training in skills like talking and leading.",
+  "who_can_apply": "Ages 14 to 25 with family income at or under 200% of the federal poverty line. You also need at least one listed factor. Examples are one income in the home, being a person of color, a disability, no stable home, or leaving school. Apply through the program in your town.",
+  "paid_type": "paid",
+  "season": "summer",
+  "status": "closed-expect-reopen",
+  "deadline_text": "No youth deadline is posted. Local programs set their own dates. Summer 2027 dates not posted.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Find your town on the 'Find a YouthWorks Program Near You' list, then contact that local workforce board program.",
+  "url": "https://commcorp.org/programs/youthworks/",
+  "sources_fetched": [
+    "https://commcorp.org/programs/youthworks/",
+    "https://commcorp.org/hubfs/wp-migrated/FAQs-for-Young-People.pdf",
+    "https://commcorp.org/hubfs/FIND-A-YOUTHWORKS-PROGRAM-NEAR-YOU%20(1).pdf"
+  ],
+  "notes": "Each local program picks its own jobs and dates. Seats are limited. Whether a Massachusetts work permit is needed was not stated on these pages; ask the local program."
+}

@@ -1,0 +1,41 @@
+{
+  "grades": null,
+  "max_age": 17,
+  "min_age": 12,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "pay_detail": "Unpaid. Kindness Club gives 1 volunteer hour per meeting.",
+  "duration": "School year 2026-27 for the Teen Action Group; Kindness Club meetings; summer Reading Buddies",
+  "id": "new-brunswick-franklin-township-library-teen-volunteering",
+  "name": "Teen Volunteering (Teen Action Group and Kindness Club)",
+  "org": "Franklin Township Public Library (Somerset, NJ)",
+  "regions": [
+    "new-brunswick",
+    "new-jersey"
+  ],
+  "city": "Somerset (Franklin Township), NJ",
+  "type": "volunteer",
+  "what_you_do": "Earn volunteer hours. You can make teen social media posts, decorate the Young Adult Room, make bookmarks to give away, and write letters to seniors in nursing homes and to soldiers far from home.",
+  "who_can_apply": "Students ages 12 to 17 who live in Franklin Township (Somerset County). You need a Franklin Township library card that is active. Reading Buddies are teens going into grades 8 to 12.",
+  "paid_type": "unpaid",
+  "season": "year-round",
+  "status": "rolling",
+  "deadline_text": "The Teen Action Group form is for the September 2026 to August 2027 school year. Kindness Club needs no application, but teens must register for each meeting. Summer 2026 Reading Buddies applications are closed.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the Teen Action Group form on the teen volunteering page. Register online for each Kindness Club meeting. Questions: use the Reference Desk form or call 732-873-8700, option 3.",
+  "url": "https://www.franklintwp.org/teens/teen-volunteering/",
+  "sources_fetched": [
+    "https://www.franklintwp.org/teens/teen-volunteering/",
+    "https://franklintwp.org/category/teen-volunteering"
+  ],
+  "notes": "Only for Franklin Township residents with an active Franklin Township library card. The page does not give the Kindness Club meeting date or place. Search the teen event calendar."
+}

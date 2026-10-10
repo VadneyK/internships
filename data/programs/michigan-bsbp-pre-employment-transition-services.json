@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "min_age": 14,
+  "max_age": 26,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": null,
+  "priority": 3,
+  "notes": "Programs may target a certain age group, interest or skill.",
+  "fields": [
+    "any"
+  ],
+  "id": "michigan-bsbp-pre-employment-transition-services",
+  "name": "Pre-Employment Transition Services for blind and low vision students (BSBP)",
+  "org": "Bureau of Services for Blind Persons, Michigan Department of Labor and Economic Opportunity",
+  "regions": [
+    "michigan"
+  ],
+  "city": "Michigan (statewide)",
+  "type": "school-pathway",
+  "what_you_do": "Students who are blind or have low vision get help planning the move from high school to college or work. BSBP runs programs for students in cities around Michigan throughout the year.",
+  "who_can_apply": "Students ages 14 to 26 with a visual impairment. The school can refer you at your IEP meeting.",
+  "paid_type": "unpaid",
+  "pay_detail": "Not stated",
+  "season": "year-round",
+  "duration": "Programs run throughout the year",
+  "status": "rolling",
+  "deadline_text": "No deadline. Check the program calendar on the page for current programs.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Contact your local BSBP office or your school special education office. You can also fill out the form at the IEP meeting.",
+  "url": "https://www.michigan.gov/leo/bureaus-agencies/bureau-of-services-for-blind-persons/pre-employment-transition-services",
+  "sources_fetched": [
+    "https://www.michigan.gov/leo/bureaus-agencies/bureau-of-services-for-blind-persons/pre-employment-transition-services"
+  ]
+}

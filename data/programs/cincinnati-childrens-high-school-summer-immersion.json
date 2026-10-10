@@ -1,0 +1,40 @@
+{
+  "grades": "Graduating seniors",
+  "apply_url": null,
+  "needs_work_permit": null,
+  "deadline_iso": "2027-02-01",
+  "opens_iso": "2026-11-01",
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 1,
+  "notes": "The page does not give the year for Nov 1 and Feb 1; the year is inferred from the line that the new program starts in summer 2027. More details are to be posted. Pay and exact dates are not posted yet.",
+  "id": "cincinnati-childrens-high-school-summer-immersion",
+  "name": "High School Summer Immersion Program",
+  "org": "Cincinnati Children's",
+  "regions": [
+    "cincinnati"
+  ],
+  "city": "Cincinnati, OH",
+  "type": "internship",
+  "fields": [
+    "health",
+    "science"
+  ],
+  "what_you_do": "A one month summer program. You learn by doing and grow work skills with experts across the hospital. It replaces the earlier paid summer internship.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "High school seniors who are about to graduate, from the Cincinnati area.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated for the new program. The old program was a paid, part-time position.",
+  "season": "summer",
+  "duration": "One month, starting summer 2027",
+  "status": "opens-soon",
+  "deadline_text": "Online application opens Nov 1 and closes Feb 1, for summer 2027.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply online between Nov 1 and Feb 1. Questions: hssummerinternship@cchmc.org.",
+  "url": "https://www.cincinnatichildrens.org/education/research/high-school/summer-internship",
+  "sources_fetched": [
+    "https://www.cincinnatichildrens.org/education/research/high-school/summer-internship",
+    "https://www.cincinnatichildrens.org/education/research/high-school"
+  ]
+}

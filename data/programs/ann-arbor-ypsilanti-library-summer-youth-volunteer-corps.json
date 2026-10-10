@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "min_age": 14,
+  "max_age": 18,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": "https://forms.gle/tc1QX8U4zxAHhUb17",
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": true,
+  "priority": 2,
+  "notes": "The library says teens need a work permit even for this volunteer role. Michigan rules cover volunteers under 18. Permits now go through the state Youth Employment Permit Portal (since Oct 2, 2026).",
+  "fields": [
+    "education",
+    "any"
+  ],
+  "id": "ann-arbor-ypsilanti-library-summer-youth-volunteer-corps",
+  "name": "Summer Youth Volunteer Corps (Ypsilanti District Library)",
+  "org": "Ypsilanti District Library",
+  "regions": [
+    "ann-arbor"
+  ],
+  "city": "Ypsilanti, MI",
+  "type": "volunteer",
+  "what_you_do": "Help with kids STEAM programs, the garden, and games like Pokemon cards and chess. You attend a one-hour training first.",
+  "who_can_apply": "Teens ages 14 to 18.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Earn volunteer hours.",
+  "season": "summer",
+  "duration": "Summer. Hours are not stated.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The page says the application for 2027 summer volunteers opens in late April.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the Summer Corps form on the page when it opens in late April, then attend a one-hour training. A work permit is provided at orientation. Phone: 734-482-4110.",
+  "url": "https://www.ypsilibrary.org/interests/teens/youth-volunteers/",
+  "sources_fetched": [
+    "https://www.ypsilibrary.org/volunteer/",
+    "https://www.ypsilibrary.org/interests/teens/youth-volunteers/"
+  ]
+}
