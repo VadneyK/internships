@@ -252,6 +252,21 @@
   G.syncTiles = function () { Array.prototype.forEach.call(document.querySelectorAll("select"), function (s) { if (s._tpSync) s._tpSync(); }); };
   setTimeout(G.syncTiles, 0);
   window.addEventListener("load", G.syncTiles);
+  /* "Send to a parent": <p class="share-parent" data-share="short sentence"> gets a text-message link and a copy button. The link is built when it is clicked,
+     from the page address as it is then (so it carries the state, age or city already picked). Nothing is sent by us; the teen's own messages app opens. */
+  G.shareToParent = function () {
+    Array.prototype.forEach.call(document.querySelectorAll(".share-parent[data-share]"), function (box) {
+      if (box._done) return; box._done = true;
+      var say = box.getAttribute("data-share");
+      function body() { return say + " " + location.href; }
+      var a = document.createElement("a"); a.className = "btn sm alt"; a.textContent = "Text this to a parent"; a.href = "sms:";
+      a.addEventListener("click", function () { a.href = L && L.smsHref ? L.smsHref(body()) : "sms:"; });
+      var c = document.createElement("button"); c.type = "button"; c.className = "btn sm alt"; c.textContent = "Copy link";
+      c.addEventListener("click", function () { G.copy(location.href); });
+      box.appendChild(a); box.appendChild(document.createTextNode(" ")); box.appendChild(c);
+    });
+  };
+  setTimeout(function () { G.shareToParent(); }, 0);
   /* The Where picker: part of the country first, then its cities (and "All of ..." areas). sel must already hold the options from fillPlaces. */
   G.placeTiles = function (sel) {
     if (!L || !L.PICK_GROUPS) return;
