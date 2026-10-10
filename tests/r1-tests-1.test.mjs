@@ -19,6 +19,11 @@ const ALLOW = {
   "pittsburgh-cmu-cs-scholars": ["undated-status-has-deadline"],
   "pittsburgh-cmu-pre-college-programs": ["undated-status-has-deadline"],
   "pittsburgh-cmu-summer-academy-math-science": ["undated-status-has-deadline"],
+  // Same pattern, added with the College Park cards. The page gives a confirmed 2026-27 date but does not say the application is open yet,
+  // so the status stays unconfirmed and the date shows in the Find dates view only.
+  "college-park-pg-parks-shakespeare-in-the-parks-apprenticeship": ["undated-status-has-deadline"],
+  "college-park-pg-parks-teen-performance-ensemble": ["undated-status-has-deadline"],
+  "college-park-umd-sparc-robotics-certificate": ["undated-status-has-deadline"],
 };
 
 const isDate = (v) => typeof v === "string" && /^\d{4}-\d{2}-\d{2}$/.test(v);

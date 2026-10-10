@@ -21,6 +21,8 @@ const ALLOWLIST = {
     "Sources conflict: the CHP lists ages 15 to 20 while the East Sacramento post says 15 to 21; stored 15 to 20.",
   "boston-futurebos-youth-jobs":
     "Youth jobs are ages 14 to 18 and leader jobs are ages 19 to 24; stored as one range, 14 to 24.",
+  "wisconsin-wing-civil-air-patrol-cadets":
+    "Sources conflict: the Wisconsin Wing site labels the cadet program ages 12 to 19 while the national CAP page says 12 to 18; stored 12 to 18.",
   "oakland-public-library-teen-volunteer":
     "Who can apply reads 'ages 13 to 17, or 18 and still in high school'; stored 13 to 18.",
 };

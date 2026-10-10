@@ -1,0 +1,43 @@
+{
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "opens_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "apply_url": null,
+  "deadline_iso": null,
+  "needs_work_permit": false,
+  "priority": 2,
+  "id": "nc-skillsusa-association",
+  "name": "SkillsUSA North Carolina",
+  "org": "SkillsUSA North Carolina",
+  "regions": [
+    "north-carolina"
+  ],
+  "city": "Statewide, North Carolina (school chapters)",
+  "type": "school-pathway",
+  "fields": [
+    "trades",
+    "engineering",
+    "tech-cs",
+    "health"
+  ],
+  "what_you_do": "Join a SkillsUSA chapter in your career and technical education class. Build job skills and take on leadership roles. Compete in state and national skills contests.",
+  "who_can_apply": "High school (secondary) and college (postsecondary) students in career and technical education pathways.",
+  "paid_type": "fee-based",
+  "pay_detail": "Student membership is $14, per the NC SkillsUSA join page.",
+  "season": "school-year",
+  "duration": "School year",
+  "status": "rolling",
+  "deadline_text": "To compete at the national level, a student must be joined in membership on the SkillsUSA national site by March 1 each year.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Ask your career and technical education (CTE) teacher about your school's chapter. Your advisor signs you up on the national SkillsUSA registration site. It is linked from the NC join page.",
+  "url": "https://www.skillsusanc.org/join",
+  "sources_fetched": [
+    "https://www.skillsusanc.org/",
+    "https://www.skillsusanc.org/join",
+    "https://www.skillsusanc.org/skillsusa-membership-deadline"
+  ],
+  "notes": "Contacts on the site: information line 919-675-1241, info@SkillsUSAnc.org, P.O. Box 88, Oxford, NC 27565. The March 1 date is described as an annual national deadline, not tied to a named year."
+}

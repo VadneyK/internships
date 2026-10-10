@@ -12,7 +12,7 @@
   "fields": [
     "any"
   ],
-  "what_you_do": "You pick a career interest. Yolo County Office of Education staff match you with a vetted mentor at a business, agency or nonprofit, and you complete about 60 hours of hands-on learning.",
+  "what_you_do": "You pick a career interest. Yolo County Office of Education staff match you with a vetted mentor. The mentor works at a business, agency or nonprofit. You complete about 60 hours of hands-on learning.",
   "min_age": null,
   "max_age": null,
   "grades": null,
@@ -27,7 +27,7 @@
   "deadline_iso": null,
   "deadline_confidence": "rolling",
   "how_to_apply": "Tell your school College and Career Center or counselor, or email CCR@ycoe.org.",
-  "needs_work_permit": null,
+  "needs_work_permit": true,
   "url": "https://www.ycoe.org/College-and-Career-Readiness/Work-Based-Learning/index.html",
   "apply_url": null,
   "sources_fetched": [
@@ -36,5 +36,5 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 1,
-  "notes": "B-Unbound is the online platform for finding opportunities (interviews, tours, job shadowing, projects, internships). Placement depends on available mentors, so ask early. The stipend is paid after you finish the requirements. Email: CCR@ycoe.org."
+  "notes": "B-Unbound is the online platform for finding opportunities (interviews, tours, job shadowing, projects, internships). Placement depends on available mentors, so ask early. The stipend is paid after you finish the requirements. Email: CCR@ycoe.org. Paid work for people under 18 in California needs a Permit to Employ and Work. See permit.html?state=ca for the exact permit and steps."
 }

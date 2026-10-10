@@ -13,7 +13,7 @@
   "fields": [
     "any"
   ],
-  "what_you_do": "Career exploration and academic support for high school juniors and seniors: college application help, work readiness training, service learning and leadership activities, plus a paid six-week summer internship.",
+  "what_you_do": "This program helps high school juniors and seniors explore careers. You get academic support and college application help. You learn to be ready for work. You do service learning and leadership. There is a paid six-week summer internship.",
   "min_age": 16,
   "max_age": 21,
   "grades": "11-12",
@@ -27,7 +27,7 @@
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Contact a Learn & Earn provider from the DYCD list, or call DYCD Community Connect at 1-800-246-4646. Providers check your eligibility.",
-  "needs_work_permit": null,
+  "needs_work_permit": true,
   "url": "https://www.nyc.gov/site/dycd/services/jobs-internships/learn-and-earn.page",
   "apply_url": null,
   "sources_fetched": [
@@ -36,5 +36,5 @@
     "https://dol.ny.gov/working-papers"
   ],
   "priority": 2,
-  "notes": "Income-based, with extra eligibility rules listed on the page. Teens under 18 need NYS working papers (NYS Department of Labor)."
+  "notes": "Income-based, with extra eligibility rules listed on the page. Teens under 18 need NYS working papers (NYS Department of Labor). See permit.html?state=ny for the exact permit and steps."
 }

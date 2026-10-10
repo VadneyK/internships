@@ -4,7 +4,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { createRequire } from "node:module";
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 const require = createRequire(import.meta.url);
 globalThis.self = globalThis;
 const L = require("../assets/js/lib.js");
@@ -83,9 +83,10 @@ function assertNoNaN(v, path) {
 const ids = (l) => l.map((e) => e.id);
 function isSubset(small, big) { const b = new Set(ids(big)); return ids(small).every((id) => b.has(id)); }
 
-test("data: all 612 real programs load", () => {
+test("data: all real programs load", () => {
   assert.ok(Array.isArray(ENTRIES));
-  assert.equal(ENTRIES.length, 612, "seed " + SEED);
+  const files = readdirSync(new URL("../data/programs/", import.meta.url)).filter((f) => f.endsWith(".json") && !f.startsWith("_"));
+  assert.equal(ENTRIES.length, files.length, "seed " + SEED);
   assert.equal(new Set(ids(ENTRIES)).size, ENTRIES.length, "ids are unique");
 });
 

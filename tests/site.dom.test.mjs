@@ -315,8 +315,10 @@ test("home: age 12 keeps the ages 12 to 14 link in the zero-match empty state", 
   type(window, document.getElementById("pAge"), "12");
   await tick();
   assert.ok(document.querySelector("#matchMore a[href='younger.html']"), "no link after choosing age 12");
-  type(window, document.getElementById("pHub"), "city:ann-arbor");
-  type(window, document.getElementById("pField"), "trades");
+  // The catalog now has a match for every place and interest at age 12, so no real filter reaches the empty state.
+  // Force it: make the shared filter match nothing, then pick again. This checks the page, not the data.
+  window.TIG.lib.matches = () => false;
+  type(window, document.getElementById("pHub"), document.querySelector("#pHub option[value^='city:']").value);
   await tick();
   assert.ok(document.querySelector("#matches .empty"), "expected the empty-state card for this filter");
   assert.ok(document.querySelector("#matchMore a[href='younger.html']"), "link missing in the empty state");

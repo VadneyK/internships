@@ -1,4 +1,4 @@
-// Breadcrumbs: the six text trails are a real Breadcrumb navigation, the separator is drawn by CSS, and no other page has one.
+// Breadcrumbs: the eight text trails are a real Breadcrumb navigation, the separator is drawn by CSS, and no other page has one.
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
@@ -10,14 +10,16 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const read = (p) => fs.readFileSync(path.join(ROOT, p), "utf8");
 const SEPARATOR = "›"; // the old &rsaquo; character, which must no longer appear in any text node
 
-// The six pages, with the parent link and the current page name exactly as the old trail paragraph had them.
+// The eight pages, with the parent link and the current page name exactly as the old trail paragraph had them.
 const CASES = [
   { file: "calendar.html", href: "find.html", parent: "Programs", current: "What opens when" },
   { file: "interview.html", href: "resume.html", parent: "Resume", current: "Apply and interview" },
   { file: "languages.html", href: "ready.html", parent: "Get ready", current: "In your language" },
   { file: "paycheck.html", href: "ready.html", parent: "Get ready", current: "Your first paycheck" },
+  { file: "safety.html", href: "ready.html", parent: "Get ready", current: "Safe at work" },
   { file: "permit.html", href: "ready.html", parent: "Get ready", current: "Work permit finder" },
   { file: "younger.html", href: "ready.html", parent: "Get ready", current: "Ages 12 to 14" },
+  { file: "parents.html", href: "ready.html", parent: "Get ready", current: "For parents" },
 ];
 
 // Static jsdom parse of a built page. No scripts run, which is enough for structure checks.

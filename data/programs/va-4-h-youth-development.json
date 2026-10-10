@@ -1,0 +1,38 @@
+{
+  "min_age": 5,
+  "max_age": 19,
+  "grades": null,
+  "opens_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "apply_url": null,
+  "deadline_iso": null,
+  "needs_work_permit": false,
+  "priority": 2,
+  "id": "va-4-h-youth-development",
+  "name": "Virginia 4-H",
+  "org": "Virginia Cooperative Extension (Virginia Tech and Virginia State University)",
+  "regions": [
+    "virginia"
+  ],
+  "city": "Statewide, Virginia (a local Extension office in each area)",
+  "type": "leadership",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Join a local 4-H club, camp or project and learn by doing. Leadership, citizenship and life skills are taught through projects, camps, and county, state and national events.",
+  "who_can_apply": "4-H participants are youth ages 5 to 19. Community 4-H clubs are for ages 9 through 18. You join by contacting your local Virginia Cooperative Extension office.",
+  "paid_type": "unpaid",
+  "pay_detail": "Cost is not stated on the page read. Ask your local Extension office.",
+  "season": "year-round",
+  "duration": "Year-round, ongoing",
+  "status": "year-round",
+  "deadline_text": "No single deadline. Clubs, camps and events set their own dates.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Contact your local Virginia Cooperative Extension office and ask about the 4-H program.",
+  "url": "https://ext.vt.edu/4h-youth.html",
+  "sources_fetched": [
+    "https://ext.vt.edu/4h-youth.html"
+  ],
+  "notes": "The page also lists a 4-H State Congress, camps, maker education, shooting education and youth leadership opportunities. Details such as dates and fees for those were not on the page read."
+}

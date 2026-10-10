@@ -14,7 +14,7 @@ const PAGES = fs.readdirSync(ROOT).filter((f) => f.endsWith(".html")).sort();
 const CSS = fs.readFileSync(path.join(ROOT, "assets/css/style.css"), "utf8").replace(/\/\*[\s\S]*?\*\//g, "");
 
 // The link targets in the Quick links column, in order, taken from src/_layout.html before this change.
-// The ticket said 13, but the old line held 14 links separated by 13 line breaks. All 14 are kept so no link is lost.
+// The ticket said 13, but the old line held 14 links separated by 13 line breaks. All 14 are kept so no link is lost. The 15th, safety.html (Safe at work), was added with the Safe at work page. The 16th, parents.html (For parents), was added with the For parents page.
 const QUICK_HREFS = [
   "find.html",
   "playbook.html",
@@ -22,7 +22,9 @@ const QUICK_HREFS = [
   "ready.html",
   "calendar.html",
   "paycheck.html",
+  "safety.html",
   "younger.html",
+  "parents.html",
   "interview.html",
   "permit.html",
   "languages.html",
@@ -65,7 +67,7 @@ function toRem(v) {
 }
 
 for (const file of PAGES) {
-  test(`${file}: Quick links is a list with 14 items, one link each`, () => {
+  test(`${file}: Quick links is a list with ${QUICK_HREFS.length} items, one link each`, () => {
     const doc = staticDoc(file);
     const col = quickLinksColumn(doc);
     assert.ok(col, "no footer column headed Quick links");

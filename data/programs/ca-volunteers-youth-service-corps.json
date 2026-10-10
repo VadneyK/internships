@@ -1,0 +1,47 @@
+{
+  "opens_iso": null,
+  "apply_url": null,
+  "min_age": 16,
+  "max_age": 30,
+  "grades": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": true,
+  "priority": 1,
+  "id": "ca-volunteers-youth-service-corps",
+  "name": "California Volunteers Youth Service Corps",
+  "org": "California Volunteers (Office of the Governor), run through partner cities and counties",
+  "regions": [
+    "los-angeles",
+    "oakland",
+    "sacramento",
+    "san-francisco",
+    "san-jose",
+    "orange-county",
+    "inland-empire",
+    "san-diego"
+  ],
+  "city": "California (23 partner cities, counties and tribes)",
+  "type": "paid-youth-program",
+  "fields": [
+    "social-impact",
+    "any"
+  ],
+  "what_you_do": "Paid service and job experience for young people in their own community. Members work through a city or county partner. The state page does not list job duties.",
+  "who_can_apply": "Ages 16 to 30 on the first day of service. You must meet at least one of: foster care, justice involved, mental health or substance abuse system, low income, hard time finding work, or unemployed and/or out of school.",
+  "paid_type": "paid",
+  "pay_detail": "At least minimum wage; the rate varies by location (page wording).",
+  "season": "year-round",
+  "duration": "Not stated on the state page; set by each local program",
+  "status": "unconfirmed",
+  "deadline_text": "The state page does not say whether applications are open. Each partner city or county runs its own application.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Pick your local program from the partner list on the state page and apply through its link. Or use the state interest form. State office: info@californiavolunteers.ca.gov (say Youth Service Corps) or (916) 323-7646.",
+  "url": "https://www.californiavolunteers.ca.gov/youth-jobs-corps/",
+  "sources_fetched": [
+    "https://www.californiavolunteers.ca.gov/youth-jobs-corps/",
+    "https://www.cde.ca.gov/ci/ct/we/workpermitsforstudents.asp"
+  ],
+  "notes": "Partner list on the page: Anaheim, Antioch, Bakersfield, Chula Vista, Fresno, Irvine, La Puente, Long Beach, Los Angeles, Oakland, Rancho Cucamonga, Riverside, Sacramento, San Francisco, San Diego, San Jose, Santa Cruz, South Gate, Stockton, Marin County, Monterey County, Mechoopda Band of Chico Rancheria and Ramona Band of Cahuilla. California requires a work permit for minors in paid jobs (CDE page), so under 18 you will need one. The state page does not say whether each city requires you to live there, so check the local program."
+}

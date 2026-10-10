@@ -1,4 +1,4 @@
-# Teen Internship Guide for California, Atlanta, New York and Chicago
+# Teen Internship Guide for Many States and Vancouver, BC
 
 [![CI](https://github.com/VadneyK/internships/actions/workflows/ci.yml/badge.svg)](https://github.com/VadneyK/internships/actions/workflows/ci.yml)
 [![Links](https://github.com/VadneyK/internships/actions/workflows/links.yml/badge.svg)](https://github.com/VadneyK/internships/actions/workflows/links.yml)
@@ -8,7 +8,7 @@
 **Live site: <https://vadneyk.github.io/internships/>**
 
 A free, searchable guide to internships, paid youth programs, research, volunteering and job shadowing for high school students in
-California, Atlanta, New York and Chicago, plus the work-permit rules, a message builder that helps you ask an adult for a chance, and a one-page resume builder.
+many states and Vancouver, BC, plus the work-permit rules, a message builder that helps you ask an adult for a chance, and a one-page resume builder.
 
 It started as a handout for the "How to Find Internships" table at Ignition NorCal 2026 and grew into an open project that students help run.
 It is an unofficial student resource. It is not an official publication of Ignition, Acts 2 Network or any program listed.

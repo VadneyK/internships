@@ -14,6 +14,10 @@ const ALLOWLIST = {
   "atlanta-parks-rec-teen-leaders": "teen leader activities are free, summer job pay is not stated",
   "champaign-county-rpc-youth-services": "pay not stated for youth, a separate page covers wages",
   "ecc-dual-credit": "mixed tuition rules, no pay statement",
+  "boston-museum-of-science-youth-internships": "the museum pages do not state pay",
+  "merced-county-office-of-education-high-school-rop": "cost, pay and credit are not stated on the page",
+  "philadelphia-mural-arts-art-education": "cost and pay are not stated on the pages read",
+  "pittsburgh-boys-girls-clubs-workforce-pathways": "cost and pay are not stated on the pages read",
 };
 
 // Cards flipped from mixed, stipend or unpaid-credit to unpaid this round, whose pay_detail

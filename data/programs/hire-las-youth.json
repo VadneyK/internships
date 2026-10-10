@@ -14,7 +14,7 @@
   "min_age": 14,
   "max_age": 24,
   "grades": null,
-  "who_can_apply": "Ages 14 to 24 living in the City of Los Angeles. The checklist PDF we read (2024 version) lists the other eligibility rules, so check the current one.",
+  "who_can_apply": "Ages 14 to 24 living in the City of Los Angeles. The checklist PDF we read (2024 version) lists the other rules on who can join. Check the current one.",
   "paid_type": "paid",
   "pay_detail": "Paid. The home page does not state an hourly rate.",
   "season": "summer",
@@ -24,7 +24,7 @@
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Create an application on the Hire LA site, then bring or upload proof of age, right-to-work (I-9) documents, City of LA residency and the family income form.",
-  "needs_work_permit": null,
+  "needs_work_permit": true,
   "url": "https://hirelayouth.com/",
   "apply_url": null,
   "sources_fetched": [
@@ -35,7 +35,7 @@
     "https://www.dir.ca.gov/dlse/ChildLaborLawPamphlet.pdf"
   ],
   "priority": 1,
-  "notes": "Cycle dates are not confirmed, so check with EWDD before counting on a summer 2027 spot. The same city department runs 14 free YouthSource Centers for ages 14 to 24 (school help, job readiness, some paid internships); ask at your nearest center, for example Boyle Heights 323-526-5800 or South LA 323-903-6926. Under 18 you need a California work permit.",
+  "notes": "Cycle dates are not confirmed, so check with EWDD before counting on a summer 2027 spot. The same city department runs 14 free YouthSource Centers for ages 14 to 24 (school help, job readiness, some paid internships); ask at your nearest center, for example Boyle Heights 323-526-5800 or South LA 323-903-6926. Under 18 you need a California work permit. See permit.html?state=ca for the exact permit and steps.",
   "verified": "fetched",
   "verified_on": "2026-10-09"
 }

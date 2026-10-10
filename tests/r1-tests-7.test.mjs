@@ -27,7 +27,7 @@ const ROOT_HTML = listFiles(".", ".html");
 const JS_FILES = listFiles("assets/js", ".js");
 
 // The five data files whose url fields are links a teen can tap.
-const URL_FILES = ["transit.json", "languages.json", "interview.json", "permits.json", "younger.json"];
+const URL_FILES = ["transit.json", "languages.json", "interview.json", "permits.json", "younger.json", "safety.json"];
 
 // Known real hits. Each one matches on exact file, check and text.
 const KNOWN_HITS = [

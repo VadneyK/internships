@@ -1,0 +1,39 @@
+{
+  "id": "texas-parks-wildlife-state-parks-volunteer",
+  "name": "Texas State Parks Volunteer Program",
+  "org": "Texas Parks and Wildlife Department",
+  "regions": [
+    "texas"
+  ],
+  "city": "Statewide, TX (state parks)",
+  "type": "volunteer",
+  "fields": [
+    "environment"
+  ],
+  "what_you_do": "Volunteer at a Texas state park. Jobs include special events, gift shop and office help, trail and grounds work, plant restoration, and leading tours and nature programs.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Volunteers must be at least 16. Anyone under 16 must come with a parent or guardian. Everyone under 18 needs a parent or guardian's signed permission, and a parent signs the liability waiver. Each opening can add its own requirements. Minors cannot do some kinds of work.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. The FAQ mentions no volunteer fees or costs.",
+  "season": "year-round",
+  "duration": "Varies by opening",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Apply any time. Openings are listed in the online portal.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Search openings in the TPWD volunteer portal and apply online. Or contact a park's volunteer coordinator. TPWD checks your application and matches you to an opening. Questions: Volunteer@TPWD.Texas.gov or 512-389-8674.",
+  "needs_work_permit": false,
+  "url": "https://tpwd.texas.gov/state-parks/help-parks",
+  "apply_url": "https://tpwd.samaritan.com/recruiter/index.php?class=VolunteerNavigation&recruiterID=1353&act=CONTROL:OPP_SEARCH_LINK",
+  "sources_fetched": [
+    "https://tpwd.texas.gov/state-parks/help-parks",
+    "https://tpwd.texas.gov/volunteer/faqs.phtml"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "Park host jobs are long RV-based stays and are not a fit for most teens. The page lists Buffalo Soldiers, State Park Ambassadors and Texas Outdoor Family as special programs, but this card does not cover their age rules. Volunteers 18 and older in ongoing roles must pass a yearly background check."
+}

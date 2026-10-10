@@ -1,0 +1,40 @@
+{
+  "id": "vancouver-space-centre-teen-volunteer",
+  "name": "H.R. MacMillan Space Centre teen volunteer",
+  "org": "H.R. MacMillan Space Centre",
+  "regions": [
+    "vancouver"
+  ],
+  "city": "Vancouver, BC",
+  "type": "volunteer",
+  "fields": [
+    "science",
+    "education"
+  ],
+  "what_you_do": "You volunteer at Vancouver's space science centre. You welcome visitors. You help set up headsets. You keep visitor flow smooth for the summer Augmented Reality Experience. You get education and skills training.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Teens age 16 and older, and adults. No other rule is stated on the page.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role. The page lists education and skills training and mentions telescope viewing on some evening shifts as a volunteer benefit.",
+  "season": "year-round",
+  "duration": "Not stated. The summer Augmented Reality role is weekly support.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No dates are posted. The page refers to \"this summer\" without a year.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the \"Volunteer with us\" form linked on the Space Centre careers page. Questions can go to careers@spacecentre.ca.",
+  "needs_work_permit": null,
+  "url": "https://spacecentre.ca/volunteer",
+  "apply_url": "https://spacecentre.ca/careers",
+  "sources_fetched": [
+    "https://spacecentre.ca/volunteer",
+    "https://spacecentre.ca/careers"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 3,
+  "notes": "Age 16 and up, so 13 to 15 year olds cannot apply. The pages do not give shift length, hours or a start date, so ask before you plan. This is in Canada, so British Columbia rules apply and this guide has not checked them. The details came from a summarized fetch of the Space Centre pages (the raw pages would not load for a second check)."
+}

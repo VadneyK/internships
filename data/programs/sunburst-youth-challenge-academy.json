@@ -1,0 +1,41 @@
+{
+  "opens_iso": null,
+  "apply_url": "https://theburst.formstack.com/forms/orientation_registration",
+  "min_age": 15,
+  "max_age": 18,
+  "grades": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "priority": 2,
+  "id": "sunburst-youth-challenge-academy",
+  "name": "Sunburst Youth Challenge Academy (National Guard)",
+  "org": "California National Guard and State of California (Sunburst Youth Academy)",
+  "regions": [
+    "orange-county"
+  ],
+  "city": "Los Alamitos, CA (residential)",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "This is a free, live in leadership academy for teens who are behind in school. Cadets work on discipline, life skills and school credits. The site says up to 65 high school credits. There is support for 12 months after graduation.",
+  "who_can_apply": "Ages 15 and a half to 18 (must turn 16 before the end of the residential phase and not turn 19 before the start). U.S. citizen or lawful permanent resident. At risk of dropping out or behind in credits. Never convicted of a felony or under indictment. Must be willing to be drug free, able to do the program (sports physical), and must volunteer; it cannot be court ordered.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free to attend (page wording).",
+  "season": "year-round",
+  "duration": "22 week residential program (per the site's video text), then support for 12 months. Class 39 begins January 2027.",
+  "status": "open-now",
+  "deadline_text": "Class 39 begins in January 2027. Applications are accepted on an ongoing basis. The next in person orientation is October 24, 2026 at 1 PM at 4022 Saratoga Ave, Bldg 21, Los Alamitos. A Final Roll Call is held in December; without a finished application and roll call you will not be considered for Class 39.",
+  "deadline_iso": null,
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Register for and go to an in person orientation. This is the first step. You get the application there. Then you send in documents. You do a one on one interview of up to an hour. You go to an invited roll call. Phone 562-936-1759, call or text (916) 639-2260, or email admissions@SunburstYouthAcademy.com.",
+  "url": "https://www.sunburstadmissions.com/how-to-apply",
+  "sources_fetched": [
+    "https://www.sunburstadmissions.com/",
+    "https://www.sunburstadmissions.com/about",
+    "https://www.sunburstadmissions.com/how-to-apply",
+    "https://calguard.ca.gov/youth/"
+  ],
+  "notes": "The eligibility page lists documents to submit including a California ID, birth certificate and Social Security card, so go with a parent or guardian. The pages read did not say which counties are served. The eligibility page still shows the earlier class dates (January to June 2026)."
+}

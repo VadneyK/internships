@@ -1,0 +1,871 @@
+{
+ "checked": "2026-10-10",
+ "start": {
+  "steps": [
+   {
+    "text": "Tell a parent, a teacher or another adult you trust.",
+    "src": {
+     "t": "EEOC, Tips for Youth @ Work",
+     "u": "https://www.eeoc.gov/youth/tips-youth-work"
+    }
+   },
+   {
+    "text": "If something seems unsafe, tell your supervisor or shift leader. If you get hurt, tell your employer right away.",
+    "src": {
+     "t": "OSHA, Safe Work for Young Workers",
+     "u": "https://www.osha.gov/young-workers/safe-work-for-young-workers"
+    },
+    "src2": {
+     "t": "California, I was injured at work",
+     "u": "https://www.dir.ca.gov/dwc/injuredworker.htm"
+    }
+   },
+   {
+    "text": "Keep records of what happens. The EEOC says to include the names, phone numbers and addresses of anyone who saw it.",
+    "src": {
+     "t": "EEOC, Tips for Youth @ Work",
+     "u": "https://www.eeoc.gov/youth/tips-youth-work"
+    }
+   },
+   {
+    "text": "Call one of the offices below with your adult. Some deadlines are as short as 30 days, so do not wait.",
+    "src": {
+     "t": "OSHA, File a Complaint",
+     "u": "https://www.osha.gov/workers/file-complaint"
+    }
+   }
+  ],
+  "note": "Employers cannot punish you for speaking up (see section 5). These offices answer questions about work. If someone is hurt right now, get help from an adult near you first."
+ },
+ "sections": [
+  {
+   "id": "rights",
+   "title": "1. Your right to a safe workplace and training",
+   "plain": "OSHA says young workers have the right to a safe place to work and to safety training they can understand. Employers must pay for most required safety gear. Ask questions if something seems unsafe. New York's youth page says a worker can say no to a task that risks serious injury or death. The California pages we read talk about safety, heat and training, but do not say in plain words that a teen may refuse unsafe work. The Georgia and Illinois youth pages we read do not list a right to safe work or training for teens, so this page does not claim one for those states.",
+   "points": [
+    {
+     "text": "OSHA lists a safe workplace as a right of young workers.",
+     "quote": "Work in a safe place.",
+     "url": "https://www.osha.gov/young-workers/safe-work-for-young-workers",
+     "source": "US OSHA, Safe Work for Young Workers"
+    },
+    {
+     "text": "OSHA says workers should get safety training in a language they understand.",
+     "quote": "Receive safety and health training in a language that you understand.",
+     "url": "https://www.osha.gov/young-workers/safe-work-for-young-workers",
+     "source": "US OSHA, Safe Work for Young Workers"
+    },
+    {
+     "text": "OSHA says you can ask questions when something seems unsafe.",
+     "quote": "Ask questions if you don't understand instructions or if something seems unsafe.",
+     "url": "https://www.osha.gov/young-workers/safe-work-for-young-workers",
+     "source": "US OSHA, Safe Work for Young Workers"
+    },
+    {
+     "text": "OSHA says you should be trained on required safety gear.",
+     "quote": "Use and be trained on required safety gear, such as hard hats, goggles and ear plugs.",
+     "url": "https://www.osha.gov/young-workers/safe-work-for-young-workers",
+     "source": "US OSHA, Safe Work for Young Workers"
+    },
+    {
+     "text": "OSHA says the employer must tell you what to do if you get hurt.",
+     "quote": "Tell you what to do if you get hurt on the job.",
+     "url": "https://www.osha.gov/young-workers/safe-work-for-young-workers",
+     "source": "US OSHA, Safe Work for Young Workers"
+    },
+    {
+     "text": "OSHA says employers pay for most safety gear.",
+     "quote": "Employers must also pay for most types of required safety gear.",
+     "url": "https://www.osha.gov/young-workers/parents-educators",
+     "source": "US OSHA, Parents and Educators"
+    },
+    {
+     "text": "OSHA says you can file a confidential complaint about a serious hazard.",
+     "quote": "File a confidential complaint with OSHA if you believe there is a serious hazard or that your employer is not following OSHA standards.",
+     "url": "https://www.osha.gov/young-workers/safe-work-for-young-workers",
+     "source": "US OSHA, Safe Work for Young Workers"
+    },
+    {
+     "text": "OSHA tells young workers to report unsafe conditions to a supervisor.",
+     "quote": "Report unsafe conditions to a shift/team leader or supervisor.",
+     "url": "https://www.osha.gov/young-workers/safe-work-for-young-workers",
+     "source": "US OSHA, Safe Work for Young Workers"
+    },
+    {
+     "text": "For parents: OSHA says to help your teen report hazards, and to OSHA if needed.",
+     "quote": "Help your young worker report hazards to managers or, if necessary, to OSHA if a work environment seems unsafe.",
+     "url": "https://www.osha.gov/young-workers/parents-educators",
+     "source": "US OSHA, Parents and Educators"
+    },
+    {
+     "text": "New York lists a safe workplace in its Youth Workers Bill of Rights.",
+     "quote": "You have the right to a safe workplace",
+     "url": "https://dol.ny.gov/youthworkers",
+     "source": "New York State Department of Labor, Youth Worker Information Hub"
+    },
+    {
+     "text": "New York says a young worker may say no to a task that risks serious injury or death.",
+     "quote": "If your employer asks you to do something that poses a risk of serious injury or death you have the right to say no.",
+     "url": "https://dol.ny.gov/youthworkers",
+     "source": "New York State Department of Labor, Youth Worker Information Hub"
+    },
+    {
+     "text": "California's July 2026 release says young workers may be especially at risk from heat, and says heat rules include training.",
+     "quote": "Young workers may be especially vulnerable",
+     "url": "https://dir.ca.gov/DIRNews/2026/2026-59.html",
+     "source": "California Department of Industrial Relations, News Release 2026-59"
+    },
+    {
+     "text": "California says safety complaints can be filed confidentially (page lists Cal/OSHA 833-579-0927).",
+     "quote": "Complaints about workplace safety and health hazards can be filed confidentially with",
+     "url": "https://dir.ca.gov/DIRNews/2026/2026-59.html",
+     "source": "California Department of Industrial Relations, News Release 2026-59"
+    },
+    {
+     "text": "Georgia's child labor FAQ says the child labor rules exist to keep minors safe. It does not list a teen right to safety training.",
+     "quote": "ensure the safety of minors in the work place.",
+     "url": "https://dol.georgia.gov/faqs-individuals/individuals-faqs-child-labor",
+     "source": "Georgia Department of Labor, Individuals FAQs, Child Labor"
+    }
+   ]
+  },
+  {
+   "id": "hazards",
+   "title": "2. Jobs under 18 may not do",
+   "plain": "Federal law sets 18 as the minimum age for jobs the Secretary of Labor calls hazardous. The US Department of Labor page lists these in plain words: meat slicers and similar machines, power woodworking machines, balers and trash compactors, forklifts and similar lifting equipment, bakery machines, metal-forming machines, power saws, roofing, driving as a job, explosives, demolition, mining, radioactive materials, brick and tile making, trenching deeper than four feet, and logging or sawmills. Some of these have narrow exceptions, so the page uses words like generally and most. Ages 14 and 15 have extra limits. Georgia, Illinois and New York have their own lists too.",
+   "points": [
+    {
+     "text": "The 18-year minimum age for hazardous nonfarm jobs.",
+     "quote": "The FLSA establishes an 18-year minimum age for those nonagricultural occupations",
+     "url": "https://www.dol.gov/agencies/whd/fact-sheets/43-child-labor-non-agriculture",
+     "source": "US DOL Wage and Hour Division, Fact Sheet 43 (revised December 2016)"
+    },
+    {
+     "text": "Ages 14 and 15 also cannot do the hazardous jobs.",
+     "quote": "Child Labor Regulation No. 3 also bans 14- and 15-year-olds from performing any work proscribed by the HOs.",
+     "url": "https://www.dol.gov/agencies/whd/fact-sheets/43-child-labor-non-agriculture",
+     "source": "US DOL Wage and Hour Division, Fact Sheet 43"
+    },
+    {
+     "text": "The federal fact sheet lists 17 Hazardous Occupations Orders. One of them covers roofing.",
+     "quote": "Roofing operations and work performed on or about a roof",
+     "url": "https://www.dol.gov/agencies/whd/fact-sheets/43-child-labor-non-agriculture",
+     "source": "US DOL Wage and Hour Division, Fact Sheet 43"
+    },
+    {
+     "text": "No meat slicers, saws or choppers.",
+     "quote": "Kids under 18 cannot operate power-driven meat processing machines, such as meat slicers, saws and meat choppers",
+     "url": "https://www.dol.gov/agencies/whd/child-labor/what-jobs-are-off-limits",
+     "source": "US DOL Wage and Hour Division, What jobs are off limits"
+    },
+    {
+     "text": "No power woodworking machines.",
+     "quote": "Kids under 18 cannot operate power-driven woodworking machines, including chain saws, nailing machines and sanders.",
+     "url": "https://www.dol.gov/agencies/whd/child-labor/what-jobs-are-off-limits",
+     "source": "US DOL Wage and Hour Division, What jobs are off limits"
+    },
+    {
+     "text": "No balers or trash compactors.",
+     "quote": "Kids under 18 cannot operate balers, compactors (including trash compactors)",
+     "url": "https://www.dol.gov/agencies/whd/child-labor/what-jobs-are-off-limits",
+     "source": "US DOL Wage and Hour Division, What jobs are off limits"
+    },
+    {
+     "text": "No forklifts and similar lifting equipment (page says most).",
+     "quote": "Kids under 18 cannot operate, ride, or help use most power-driven hoisting apparatus",
+     "url": "https://www.dol.gov/agencies/whd/child-labor/what-jobs-are-off-limits",
+     "source": "US DOL Wage and Hour Division, What jobs are off limits"
+    },
+    {
+     "text": "Bakery machines are off limits.",
+     "quote": "Kids under 18 generally cannot operate, clean or repair power-driven bakery machines",
+     "url": "https://www.dol.gov/agencies/whd/child-labor/what-jobs-are-off-limits",
+     "source": "US DOL Wage and Hour Division, What jobs are off limits"
+    },
+    {
+     "text": "Metal forming, punching and shearing machines are off limits.",
+     "quote": "Kids under 18 cannot operate power-driven metal-working machines, including forming, punching and shearing machines.",
+     "url": "https://www.dol.gov/agencies/whd/child-labor/what-jobs-are-off-limits",
+     "source": "US DOL Wage and Hour Division, What jobs are off limits"
+    },
+    {
+     "text": "Power saws are off limits.",
+     "quote": "Kids under 18 cannot operate or help on power-driven circular saws, band saws, guillotine shears, chain saws",
+     "url": "https://www.dol.gov/agencies/whd/child-labor/what-jobs-are-off-limits",
+     "source": "US DOL Wage and Hour Division, What jobs are off limits"
+    },
+    {
+     "text": "Roofing is off limits, even work on the ground.",
+     "quote": "Kids under 18 cannot do most jobs in roofing operations, including work performed on the ground",
+     "url": "https://www.dol.gov/agencies/whd/child-labor/what-jobs-are-off-limits",
+     "source": "US DOL Wage and Hour Division, What jobs are off limits"
+    },
+    {
+     "text": "Driving as a job is generally off limits.",
+     "quote": "Kids under 18 generally cannot drive motor vehicles or work outside the vehicle as a driver's helper",
+     "url": "https://www.dol.gov/agencies/whd/child-labor/what-jobs-are-off-limits",
+     "source": "US DOL Wage and Hour Division, What jobs are off limits"
+    },
+    {
+     "text": "Places that make or store explosives are generally off limits.",
+     "quote": "Kids under 18 generally cannot work where explosives are manufactured or stored.",
+     "url": "https://www.dol.gov/agencies/whd/child-labor/what-jobs-are-off-limits",
+     "source": "US DOL Wage and Hour Division, What jobs are off limits"
+    },
+    {
+     "text": "Demolition is off limits.",
+     "quote": "Kids under 18 cannot do jobs in wrecking, demolition and ship-breaking operations.",
+     "url": "https://www.dol.gov/agencies/whd/child-labor/what-jobs-are-off-limits",
+     "source": "US DOL Wage and Hour Division, What jobs are off limits"
+    },
+    {
+     "text": "Radioactive materials are off limits.",
+     "quote": "Kids under 18 cannot do jobs where they are exposed to radioactive substances and ionizing radiation.",
+     "url": "https://www.dol.gov/agencies/whd/child-labor/what-jobs-are-off-limits",
+     "source": "US DOL Wage and Hour Division, What jobs are off limits"
+    },
+    {
+     "text": "Trenches deeper than four feet are off limits.",
+     "quote": "working in a trench more than four feet deep",
+     "url": "https://www.dol.gov/agencies/whd/child-labor/what-jobs-are-off-limits",
+     "source": "US DOL Wage and Hour Division, What jobs are off limits"
+    },
+    {
+     "text": "Georgia: 14 and 15 year olds can only do jobs on the state's allowed list.",
+     "quote": "Any job not specifically permitted for 14 and 15 year-olds, as listed below, is prohibited.",
+     "url": "https://dol.georgia.gov/child-labor-hazardous-occupations",
+     "source": "Georgia Department of Labor, Child Labor Hazardous Occupations"
+    },
+    {
+     "text": "Georgia says its hazardous list is based on federal law.",
+     "quote": "The state definition of child labor hazardous occupations is based on federal law.",
+     "url": "https://dol.georgia.gov/child-labor-hazardous-occupations",
+     "source": "Georgia Department of Labor, Child Labor Hazardous Occupations"
+    },
+    {
+     "text": "New York says workers under 18 cannot be given jobs the law calls too dangerous.",
+     "quote": "Workers under 18 years old cannot be hired or asked to do jobs the law says are too dangerous for young people.",
+     "url": "https://dol.ny.gov/youthworkers",
+     "source": "New York State Department of Labor, Youth Worker Information Hub"
+    },
+    {
+     "text": "Illinois has its own list of hazardous jobs and workplaces for minors (the Illinois page frames its Child Labor Law as protecting workers under 16).",
+     "quote": "There are 27 specific occupations, and 7 specific workplaces, which are considered \"hazardous\" or inappropriate for employment of minors.",
+     "url": "https://labor.illinois.gov/faqs/child-labor-faq.html",
+     "source": "Illinois Department of Labor, Child Labor Law FAQ"
+    },
+    {
+     "text": "Illinois compliance page example from its list.",
+     "quote": "in construction work, including demolition and repair;",
+     "url": "https://labor.illinois.gov/laws-rules/fls/child-labor-law-compliance.html",
+     "source": "Illinois Department of Labor, Child Labor Law Compliance"
+    }
+   ]
+  },
+  {
+   "id": "harassment",
+   "title": "3. Harassment and discrimination: what it is and how to report it",
+   "plain": "The EEOC runs a youth section for teen workers. Its page says the laws protect you from being harassed by anyone in your workplace. Harassment is unwelcome behavior based on things like race, color, religion or sex. To break the law, it has to be severe (very serious) or happen often. The EEOC youth pages say to tell the person to stop if you feel comfortable, tell a manager, talk to a parent or another adult, keep records, and file with the EEOC. The EEOC deadline is generally 180 calendar days, and longer in some places. The EEOC pages we read do not state a minimum age. California's civil rights agency gives a three year deadline. New York's youth page says harassment based on race or ethnicity is against the law. The Georgia youth pages we read do not cover harassment. The Illinois Department of Labor page lists the number for the Illinois Department of Human Rights.",
+   "points": [
+    {
+     "text": "What harassment is.",
+     "quote": "Harassment is unwelcome conduct that is based on race, color, religion, sex",
+     "url": "https://www.eeoc.gov/harassment",
+     "source": "US EEOC, Harassment"
+    },
+    {
+     "text": "Protection covers anyone who harasses you at work, on the EEOC's youth page.",
+     "quote": "The laws enforced by EEOC protect you from being harassed by anyone in your workplace.",
+     "url": "https://www.eeoc.gov/youth/harassment-faqs",
+     "source": "US EEOC, Youth Harassment FAQs"
+    },
+    {
+     "text": "When it becomes illegal.",
+     "quote": "the conduct must either be severe (meaning very serious) or pervasive (meaning that it occurred frequently)",
+     "url": "https://www.eeoc.gov/youth/harassment-faqs",
+     "source": "US EEOC, Youth Harassment FAQs"
+    },
+    {
+     "text": "Step: tell the person to stop if you feel okay doing that.",
+     "quote": "If you feel comfortable, tell the person harassing you to stop.",
+     "url": "https://www.eeoc.gov/youth/tips-youth-work",
+     "source": "US EEOC, Tips for Youth @ Work"
+    },
+    {
+     "text": "Step: tell a manager.",
+     "quote": "Report the behavior to your manager or another manager in your company.",
+     "url": "https://www.eeoc.gov/youth/tips-youth-work",
+     "source": "US EEOC, Tips for Youth @ Work"
+    },
+    {
+     "text": "Step: talk to a trusted adult.",
+     "quote": "Talk to your parents, teachers, or another adult.",
+     "url": "https://www.eeoc.gov/youth/tips-youth-work",
+     "source": "US EEOC, Tips for Youth @ Work"
+    },
+    {
+     "text": "Step: keep records.",
+     "quote": "Keep records including witness names, telephone numbers and addresses.",
+     "url": "https://www.eeoc.gov/youth/tips-youth-work",
+     "source": "US EEOC, Tips for Youth @ Work"
+    },
+    {
+     "text": "Step: file with the EEOC.",
+     "quote": "File a complaint with the EEOC.",
+     "url": "https://www.eeoc.gov/youth/tips-youth-work",
+     "source": "US EEOC, Tips for Youth @ Work"
+    },
+    {
+     "text": "EEOC filing deadline.",
+     "quote": "In general, you need to file a charge within 180 calendar days from the day the discrimination took place.",
+     "url": "https://www.eeoc.gov/time-limits-filing-charge",
+     "source": "US EEOC, Time Limits For Filing A Charge"
+    },
+    {
+     "text": "The deadline can be longer.",
+     "quote": "The 180 calendar day filing deadline is extended to 300 calendar days",
+     "url": "https://www.eeoc.gov/time-limits-filing-charge",
+     "source": "US EEOC, Time Limits For Filing A Charge"
+    },
+    {
+     "text": "California: harassment is banned even at very small workplaces.",
+     "quote": "Harassment is prohibited in all workplaces, even those with fewer than five employees.",
+     "url": "https://calcivilrights.ca.gov/employment/",
+     "source": "California Civil Rights Department, Employment"
+    },
+    {
+     "text": "California: how to start a complaint.",
+     "quote": "Start by filing an “Intake Form.”",
+     "url": "https://calcivilrights.ca.gov/employment/",
+     "source": "California Civil Rights Department, Employment"
+    },
+    {
+     "text": "California: complaint deadline.",
+     "quote": "must be filed within three years from the date an alleged discriminatory act occurred",
+     "url": "https://calcivilrights.ca.gov/employment/",
+     "source": "California Civil Rights Department, Employment"
+    },
+    {
+     "text": "New York lists a discrimination free workplace as a right of youth workers.",
+     "quote": "You have the right to a discrimination-free workplace",
+     "url": "https://dol.ny.gov/youthworkers",
+     "source": "New York State Department of Labor, Youth Worker Information Hub"
+    },
+    {
+     "text": "New York says harassment because of race or ethnicity is against the law.",
+     "quote": "It is against the law to be treated unfairly or harassed at your job because of your race or ethnicity",
+     "url": "https://dol.ny.gov/youthworkers",
+     "source": "New York State Department of Labor, Youth Worker Information Hub"
+    },
+    {
+     "text": "New York: how to file a complaint with its labor department.",
+     "quote": "You can file a complaint with the Department of Labor by filling out this form:",
+     "url": "https://dol.ny.gov/youthworkers",
+     "source": "New York State Department of Labor, Youth Worker Information Hub"
+    }
+   ]
+  },
+  {
+   "id": "injuries",
+   "title": "4. If you get hurt: report it right away",
+   "plain": "Tell your boss about any injury as soon as you can. Many states give a deadline after which you can lose benefits: 30 days in California, Georgia and New York, and 45 days in Illinois. Workers' compensation is the system that pays for care after a job injury. State by state: California's glossary says employee includes minors. New York's booklet for minors says it covers minors and pays double if a minor is hurt while working illegally. Georgia's Supervisor's Manual (July 2019) says employee includes minors. Illinois' handbook does not mention minors, but the Illinois Act says compensation goes up 50 percent for a worker under 16 who is illegally employed. The Georgia documents are dated July 2019 and the Illinois handbook is dated January 2013, so ask the state office if the rule has changed.",
+   "points": [
+    {
+     "text": "California: tell your supervisor fast.",
+     "quote": "Make sure your supervisor is notified of your injury as soon as possible.",
+     "url": "https://www.dir.ca.gov/dwc/injuredworker.htm",
+     "source": "California DIR, Division of Workers' Compensation, I was injured at work"
+    },
+    {
+     "text": "California: 30 day warning.",
+     "quote": "If you don’t report your injury within 30 days, you could lose your right to receive workers’ compensation benefits.",
+     "url": "https://www.dir.ca.gov/dwc/injuredworker.htm",
+     "source": "California DIR, Division of Workers' Compensation, I was injured at work"
+    },
+    {
+     "text": "California: employer pays for medical care. (The page does not mention minors.)",
+     "quote": "Medical care must be paid for by your employer if you get hurt on the job",
+     "url": "https://www.dir.ca.gov/dwc/injuredworker.htm",
+     "source": "California DIR, Division of Workers' Compensation, I was injured at work"
+    },
+    {
+     "text": "California: minors count as employees in the DWC glossary.",
+     "quote": "The term employee includes undocumented workers and minors.",
+     "url": "https://www.dir.ca.gov/dwc/wcglossary.htm",
+     "source": "California DIR, Division of Workers' Compensation, Glossary"
+    },
+    {
+     "text": "Georgia: report right away and no later than 30 days (Employee Handbook, July 2019).",
+     "quote": "You must report any accident immediately, but not later than 30 days after the accident, to your employer",
+     "url": "https://sbwc.georgia.gov/document/publication/employee-handbook/download",
+     "source": "Georgia State Board of Workers' Compensation, Employee Handbook"
+    },
+    {
+     "text": "Georgia FAQ: waiting too long can cost benefits.",
+     "quote": "If you wait longer than 30 days, you may lose your benefits.",
+     "url": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs",
+     "source": "Georgia State Board of Workers' Compensation, Law FAQs"
+    },
+    {
+     "text": "Georgia: employers with three or more workers need coverage. The FAQ page does not mention minors.",
+     "quote": "any business with three or more workers, including regular part-time workers",
+     "url": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs",
+     "source": "Georgia State Board of Workers' Compensation, Law FAQs"
+    },
+    {
+     "text": "Georgia: the Supervisor's Manual (July 2019) says employee includes minors.",
+     "quote": "“Employee” generally means every person, including minors, in the service of another",
+     "url": "https://sbwc.georgia.gov/document/publication/supervisors-manual/download",
+     "source": "Georgia State Board of Workers' Compensation, Supervisor's Manual (July 2019)"
+    },
+    {
+     "text": "New York: workers' compensation covers an injured minor.",
+     "quote": "Workers’ Compensation is payable when a minor is injured in any way in the course of his or her employment.",
+     "url": "https://dol.ny.gov/system/files/documents/2026/03/p882-1-26-26.pdf",
+     "source": "New York State Department of Labor, Laws Governing the Employment of Minors (P882, 01/26)"
+    },
+    {
+     "text": "New York: report in writing right away.",
+     "quote": "An injured youngster should report the accident immediately and in writing to his or her employer or foreman.",
+     "url": "https://dol.ny.gov/system/files/documents/2026/03/p882-1-26-26.pdf",
+     "source": "New York State Department of Labor, Laws Governing the Employment of Minors (P882, 01/26)"
+    },
+    {
+     "text": "New York: medical care is paid even with no lost time.",
+     "quote": "Medical benefits are payable regardless of whether the employee has lost time from the job",
+     "url": "https://dol.ny.gov/system/files/documents/2026/03/p882-1-26-26.pdf",
+     "source": "New York State Department of Labor, Laws Governing the Employment of Minors (P882, 01/26)"
+    },
+    {
+     "text": "New York: double pay if the minor was working in violation of the law.",
+     "quote": "his or her compensation is double the regular award",
+     "url": "https://dol.ny.gov/system/files/documents/2026/03/p882-1-26-26.pdf",
+     "source": "New York State Department of Labor, Laws Governing the Employment of Minors (P882, 01/26)"
+    },
+    {
+     "text": "New York: the employer pays the cost, not the worker.",
+     "quote": "The cost of providing workers’ compensation insurance must be met entirely by the employer.",
+     "url": "https://dol.ny.gov/system/files/documents/2026/03/p882-1-26-26.pdf",
+     "source": "New York State Department of Labor, Laws Governing the Employment of Minors (P882, 01/26)"
+    },
+    {
+     "text": "New York youth page: a 30 day warning about telling your employer you were hurt.",
+     "quote": "If you do not let your employer know you were injured at work within 30 days",
+     "url": "https://dol.ny.gov/youthworkers",
+     "source": "New York State Department of Labor, Youth Worker Information Hub"
+    },
+    {
+     "text": "Illinois: 45 day outer limit to tell the employer. The handbook does not mention minors.",
+     "quote": "Generally, the employee must notify the employer as soon as practicable, but no later than 45 days after the accident.",
+     "url": "https://iwcc.illinois.gov/content/dam/soi/en/web/iwcc/about/handbook/documents/handbook.pdf",
+     "source": "Illinois Workers' Compensation Commission, Handbook on Workers' Compensation"
+    },
+    {
+     "text": "Illinois Act: compensation rises 50 percent for a worker under 16 who is illegally employed.",
+     "quote": "the injured employee is under 16 years of age at the time of the accident and is illegally employed",
+     "url": "https://iwcc.illinois.gov/content/dam/soi/en/web/iwcc/documents/act.pdf",
+     "source": "Illinois Workers' Compensation Act, Section 7(h)"
+    }
+   ]
+  },
+  {
+   "id": "retaliation",
+   "title": "5. Punishment for speaking up (retaliation)",
+   "plain": "Employers cannot punish you for using your safety or workplace rights. OSHA, the Department of Labor, the EEOC, California, New York and Illinois all say so on pages we read. If you think you were punished for speaking up, the OSHA page says deadlines vary and can be as short as 30 days, so act fast. The Georgia youth and workers' compensation pages we read do not address retaliation, so this page makes no Georgia claim about it.",
+   "points": [
+    {
+     "text": "OSHA: safety rights come without punishment.",
+     "quote": "Exercise your workplace safety rights without retaliation or discrimination.",
+     "url": "https://www.osha.gov/young-workers/safe-work-for-young-workers",
+     "source": "US OSHA, Safe Work for Young Workers"
+    },
+    {
+     "text": "OSHA: you can file a whistleblower complaint.",
+     "quote": "You have the right to file a whistleblower complaint with OSHA if you believe your employer retaliated against you",
+     "url": "https://www.osha.gov/workers/file-complaint",
+     "source": "US OSHA, File a Complaint"
+    },
+    {
+     "text": "OSHA: the deadline can be short.",
+     "quote": "Filing deadline is 30-180 days (deadlines vary with each statute)",
+     "url": "https://www.osha.gov/workers/file-complaint",
+     "source": "US OSHA, File a Complaint"
+    },
+    {
+     "text": "US Department of Labor: no punishment for using your rights.",
+     "quote": "An employer cannot retaliate against a worker for exercising their rights",
+     "url": "https://www.dol.gov/agencies/whd/youthrules",
+     "source": "US DOL Wage and Hour Division, YouthRules"
+    },
+    {
+     "text": "US Department of Labor: what an adverse action is.",
+     "quote": "would dissuade a reasonable employee from raising a concern",
+     "url": "https://www.dol.gov/agencies/whd/retaliation",
+     "source": "US DOL Wage and Hour Division, Retaliation"
+    },
+    {
+     "text": "EEOC: you cannot be punished for reporting discrimination.",
+     "quote": "you cannot legally be punished or fired for reporting job discrimination.",
+     "url": "https://www.eeoc.gov/youth/tips-youth-work",
+     "source": "US EEOC, Tips for Youth @ Work"
+    },
+    {
+     "text": "California: no punishment for a job injury.",
+     "quote": "It’s illegal for your employer to punish or fire you for having a job injury",
+     "url": "https://www.dir.ca.gov/dwc/injuredworker.htm",
+     "source": "California DIR, Division of Workers' Compensation, I was injured at work"
+    },
+    {
+     "text": "California Labor Commissioner youth brochure.",
+     "quote": "Retaliation is illegal!",
+     "url": "https://www.dir.ca.gov/dlse/Youth-Advocate-Brochure.pdf",
+     "source": "California Labor Commissioner's Office, Youth Advocate Program brochure"
+    },
+    {
+     "text": "New York: no firing or punishment for reporting a problem.",
+     "quote": "Your employer cannot fire or punish you for reporting a problem at your workplace.",
+     "url": "https://dol.ny.gov/youthworkers",
+     "source": "New York State Department of Labor, Youth Worker Information Hub"
+    },
+    {
+     "text": "Illinois Department of Labor: retaliation is against state law.",
+     "quote": "It is against Illinois law for an employer to retaliate against a worker for exercising their rights",
+     "url": "https://labor.illinois.gov/file-a-workplace-complaint.html",
+     "source": "Illinois Department of Labor, File a Workplace Complaint"
+    },
+    {
+     "text": "Illinois workers' compensation: no firing or harassing for claiming benefits.",
+     "quote": "harass, discharge, refuse to rehire, or discriminate in any way against an employee",
+     "url": "https://iwcc.illinois.gov/content/dam/soi/en/web/iwcc/about/handbook/documents/handbook.pdf",
+     "source": "Illinois Workers' Compensation Commission, Handbook on Workers' Compensation"
+    }
+   ]
+  },
+  {
+   "id": "call",
+   "title": "6. Who to call",
+   "plain": "Federal and state offices answer questions by phone. OSHA is for unsafe work. The Wage and Hour Division is for child labor and pay. The EEOC is for harassment and discrimination. Each state office below handles child labor, workers' compensation, or harassment in that state. Every number is copied from the page named under it. Two Georgia pages gave different Wage and Hour numbers, so for Georgia we list only the Georgia Child Labor Section and the national Wage and Hour number. Calling an office is not legal advice from us, and we cannot say what an office will tell you.",
+   "points": [
+    {
+     "text": "OSHA invites young workers to call with questions or to ask for an inspection.",
+     "quote": "Call us on our toll-free number: 1-800-321-OSHA (6742) to get answers to your questions,",
+     "url": "https://www.osha.gov/young-workers/safe-work-for-young-workers",
+     "source": "US OSHA, Safe Work for Young Workers"
+    },
+    {
+     "text": "Wage and Hour helpline hours and number.",
+     "quote": "call our toll-free information and helpline, available 8 a.m. to 5 p.m. in your time zone, 1-866-4USWAGE (1-866-487-9243).",
+     "url": "https://www.dol.gov/agencies/whd/fact-sheets/43-child-labor-non-agriculture",
+     "source": "US DOL Wage and Hour Division, Fact Sheet 43"
+    },
+    {
+     "text": "DOL says complaints are free and private.",
+     "quote": "Many investigations are initiated by complaints, which are free and confidential.",
+     "url": "https://www.dol.gov/agencies/whd/youthrules",
+     "source": "US DOL Wage and Hour Division, YouthRules"
+    },
+    {
+     "text": "EEOC number for questions.",
+     "quote": "Call 1-800-669-4000",
+     "url": "https://www.eeoc.gov/youth/tips-youth-work",
+     "source": "US EEOC, Tips for Youth @ Work"
+    },
+    {
+     "text": "California: Division of Workers' Compensation live help.",
+     "quote": "You can also call the DWC Information Services Center at 1-800-736-7401 to speak to a live representative.",
+     "url": "https://www.dir.ca.gov/dwc/injuredworker.htm",
+     "source": "California DIR, Division of Workers' Compensation"
+    },
+    {
+     "text": "New York: help to file a complaint.",
+     "quote": "If you need additional assistance to file your complaint, please call: 888-525-2267.",
+     "url": "https://dol.ny.gov/youthworkers",
+     "source": "New York State Department of Labor, Youth Worker Information Hub"
+    },
+    {
+     "text": "Illinois: the Illinois Department of Labor complaint page lists 312-793-5570 under child labor. The page says its Child Labor Law protects workers under 16.",
+     "quote": "The Child Labor Law protects workers under the age of 16 by:",
+     "url": "https://labor.illinois.gov/file-a-workplace-complaint.html",
+     "source": "Illinois Department of Labor, File a Workplace Complaint"
+    }
+   ]
+  }
+ ],
+ "callHeading": "What the pages say about calling",
+ "hotlines": [
+  {
+   "name": "US OSHA (workplace safety)",
+   "group": "National",
+   "top": true,
+   "phone": "1-800-321-OSHA (6742); TTY 1-877-889-5627",
+   "numbers": [
+    {
+     "label": "",
+     "display": "1-800-321-OSHA (6742)",
+     "tel": "+18003216742"
+    },
+    {
+     "label": "TTY",
+     "display": "1-877-889-5627",
+     "tel": "+18778895627"
+    }
+   ],
+   "url": "https://www.osha.gov/young-workers/parents-educators",
+   "covers": "Questions, asking for an inspection, safety complaints, whistleblower complaints"
+  },
+  {
+   "name": "US Department of Labor, Wage and Hour Division",
+   "group": "National",
+   "top": true,
+   "phone": "1-866-4-US-WAGE (1-866-487-9243)",
+   "numbers": [
+    {
+     "label": "",
+     "display": "1-866-4-US-WAGE (1-866-487-9243)",
+     "tel": "+18664879243"
+    }
+   ],
+   "url": "https://www.dol.gov/agencies/whd/fact-sheets/43-child-labor-non-agriculture",
+   "covers": "Child labor rules, jobs off limits, pay, retaliation. Open 8 a.m. to 5 p.m. in your time zone."
+  },
+  {
+   "name": "US EEOC",
+   "group": "National",
+   "top": true,
+   "phone": "1-800-669-4000; TTY 1-800-669-6820; ASL video phone 1-844-234-5122",
+   "numbers": [
+    {
+     "label": "",
+     "display": "1-800-669-4000",
+     "tel": "+18006694000"
+    },
+    {
+     "label": "TTY",
+     "display": "1-800-669-6820",
+     "tel": "+18006696820"
+    },
+    {
+     "label": "ASL video phone",
+     "display": "1-844-234-5122",
+     "tel": "+18442345122"
+    }
+   ],
+   "url": "https://www.eeoc.gov/youth/tips-youth-work",
+   "covers": "Harassment and discrimination at work, retaliation for reporting it"
+  },
+  {
+   "name": "California Cal/OSHA (worker safety questions)",
+   "group": "California",
+   "top": false,
+   "phone": "833-579-0927",
+   "numbers": [
+    {
+     "label": "",
+     "display": "833-579-0927",
+     "tel": "+18335790927"
+    }
+   ],
+   "url": "https://dir.ca.gov/DIRNews/2026/2026-59.html",
+   "covers": "Workplace safety and health hazards in California. A live, bilingual Cal/OSHA representative answers 9 a.m. to 7 p.m., Monday to Friday."
+  },
+  {
+   "name": "California Labor Commissioner's Office",
+   "group": "California",
+   "top": false,
+   "phone": "833-526-4636 (1-833-LCO-INFO)",
+   "numbers": [
+    {
+     "label": "",
+     "display": "833-526-4636 (1-833-LCO-INFO)",
+     "tel": "+18335264636"
+    }
+   ],
+   "url": "https://dir.ca.gov/DIRNews/2026/2026-59.html",
+   "covers": "Wages, breaks, retaliation and labor laws in California. Open 8 a.m. to 5 p.m., Monday to Friday. The youth brochure lists the email YAP@dir.ca.gov."
+  },
+  {
+   "name": "California Division of Workers' Compensation Information Services Center",
+   "group": "California",
+   "top": false,
+   "phone": "1-800-736-7401",
+   "numbers": [
+    {
+     "label": "",
+     "display": "1-800-736-7401",
+     "tel": "+18007367401"
+    }
+   ],
+   "url": "https://www.dir.ca.gov/dwc/injuredworker.htm",
+   "covers": "Work injury claims and benefits in California"
+  },
+  {
+   "name": "California Civil Rights Department",
+   "group": "California",
+   "top": false,
+   "phone": "800-884-1684 (voice); 800-700-2320 (TTY)",
+   "numbers": [
+    {
+     "label": "Voice",
+     "display": "800-884-1684",
+     "tel": "+18008841684"
+    },
+    {
+     "label": "TTY",
+     "display": "800-700-2320",
+     "tel": "+18007002320"
+    }
+   ],
+   "url": "https://calcivilrights.ca.gov/employment/",
+   "covers": "Workplace harassment and discrimination complaints in California"
+  },
+  {
+   "name": "Georgia Department of Labor, Child Labor Section",
+   "group": "Georgia",
+   "top": false,
+   "phone": "877.709.8185",
+   "numbers": [
+    {
+     "label": "",
+     "display": "877.709.8185",
+     "tel": "+18777098185"
+    }
+   ],
+   "url": "https://dol.georgia.gov/documents/child-labor-summary-sheet",
+   "covers": "Georgia child labor questions"
+  },
+  {
+   "name": "Georgia State Board of Workers' Compensation",
+   "group": "Georgia",
+   "top": false,
+   "phone": "(404) 656-3818 in the Atlanta area or 1-800-533-0682 outside the Atlanta area",
+   "numbers": [
+    {
+     "label": "Atlanta area",
+     "display": "(404) 656-3818",
+     "tel": "+14046563818"
+    },
+    {
+     "label": "Outside the Atlanta area",
+     "display": "1-800-533-0682",
+     "tel": "+18005330682"
+    }
+   ],
+   "url": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs",
+   "covers": "Work injury claims and questions in Georgia"
+  },
+  {
+   "name": "New York State Department of Labor (complaint help)",
+   "group": "New York",
+   "top": false,
+   "phone": "888-525-2267",
+   "numbers": [
+    {
+     "label": "",
+     "display": "888-525-2267",
+     "tel": "+18885252267"
+    }
+   ],
+   "url": "https://dol.ny.gov/youthworkers",
+   "covers": "Help filing a labor or child labor complaint in New York"
+  },
+  {
+   "name": "New York State Department of Labor (general number)",
+   "group": "New York",
+   "top": false,
+   "phone": "1-877-466-9757",
+   "numbers": [
+    {
+     "label": "",
+     "display": "1-877-466-9757",
+     "tel": "+18774669757"
+    }
+   ],
+   "url": "https://dol.ny.gov/system/files/documents/2026/03/p882-1-26-26.pdf",
+   "covers": "General New York labor department line, printed on the New York booklet for minors (P882, 01/26)"
+  },
+  {
+   "name": "Illinois Department of Labor, Child Labor",
+   "group": "Illinois",
+   "top": false,
+   "phone": "312-793-5570",
+   "numbers": [
+    {
+     "label": "",
+     "display": "312-793-5570",
+     "tel": "+13127935570"
+    }
+   ],
+   "url": "https://labor.illinois.gov/file-a-workplace-complaint.html",
+   "covers": "Child labor complaints and questions in Illinois"
+  },
+  {
+   "name": "Illinois Department of Labor, Helpline",
+   "group": "Illinois",
+   "top": false,
+   "phone": "Chicago 312-793-2800; Springfield 217-782-6206; TTY (800) 526-0844",
+   "numbers": [
+    {
+     "label": "Chicago",
+     "display": "312-793-2800",
+     "tel": "+13127932800"
+    },
+    {
+     "label": "Springfield",
+     "display": "217-782-6206",
+     "tel": "+12177826206"
+    },
+    {
+     "label": "TTY",
+     "display": "(800) 526-0844",
+     "tel": "+18005260844"
+    }
+   ],
+   "url": "https://labor.illinois.gov/file-a-workplace-complaint.html",
+   "covers": "General Illinois workplace questions and complaints"
+  },
+  {
+   "name": "Illinois Workers' Compensation Commission",
+   "group": "Illinois",
+   "top": false,
+   "phone": "866-352-3033 (toll-free in Illinois); 312-814-6500 (Chicago)",
+   "numbers": [
+    {
+     "label": "Toll-free in Illinois",
+     "display": "866-352-3033",
+     "tel": "+18663523033"
+    },
+    {
+     "label": "Chicago",
+     "display": "312-814-6500",
+     "tel": "+13128146500"
+    }
+   ],
+   "url": "https://iwcc.illinois.gov/resources/resources-for/faq.html",
+   "covers": "Work injury claims in Illinois"
+  },
+  {
+   "name": "Illinois Department of Human Rights (listed on the Illinois Department of Labor page)",
+   "group": "Illinois",
+   "top": false,
+   "phone": "(312) 814-6200",
+   "numbers": [
+    {
+     "label": "",
+     "display": "(312) 814-6200",
+     "tel": "+13128146200"
+    }
+   ],
+   "url": "https://labor.illinois.gov/file-a-workplace-complaint.html",
+   "covers": "Employment discrimination in Illinois"
+  }
+ ],
+ "gaps": [
+  "The EEOC pages we read do not say how old you must be to file a complaint.",
+  "The California pages we read do not say in plain words that a teen may refuse unsafe work. The Georgia and Illinois youth pages we read do not list a right to safe work or safety training. Only New York's page says a worker may say no to a task that risks serious injury or death.",
+  "We found no Georgia youth page about harassment or about punishment for speaking up, so this page makes no Georgia claim on those.",
+  "The California injured worker page, the Illinois workers' compensation handbook and the Georgia workers' compensation FAQ do not mention minors.",
+  "The Georgia workers' compensation documents are dated July 2019 and the Illinois handbook is dated January 2013. Ask the state office if the rule has changed.",
+  "Three official pages would not open for us: the New York Division of Human Rights page on sexual harassment (blocked) and two Illinois pages (not found). So there is no New York Division of Human Rights number here. The Illinois Department of Human Rights number comes only from the Illinois Department of Labor complaint page.",
+  "Two Georgia pages gave different Wage and Hour phone numbers, so we list only the national Wage and Hour number."
+ ]
+}

@@ -9,7 +9,8 @@ const full = JSON.parse(read("data/entries.json"));
 const lite = JSON.parse(read("data/entries-lite.json"));
 
 test("lite file has the same ids in the same order as entries.json", () => {
-  assert.equal(full.length, 612);
+  const files = fs.readdirSync(new URL("../data/programs/", import.meta.url)).filter((f) => f.endsWith(".json") && !f.startsWith("_"));
+  assert.equal(full.length, files.length);
   assert.equal(lite.length, full.length);
   assert.deepEqual(lite.map((e) => e.id), full.map((e) => e.id));
 });

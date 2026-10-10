@@ -23,7 +23,11 @@ test("survivor covers statewide and silicon-valley with the sign-up link", () =>
   assert.equal(e.paid_type, "fee-based");
 });
 
-test("only one card is named Youth and Government", () => {
-  const hits = read("data/entries.json").filter((e) => /youth (and|&) government/i.test(e.name));
+// Separate state programs of the same YMCA model government. Each runs its own conference in its own state,
+// so each is its own card. The test guards against a second California card.
+const OTHER_STATES = ["illinois-ymca-youth-and-government", "indiana-ymca-youth-and-government", "ohio-ymca-youth-and-government"];
+
+test("only one California card is named Youth and Government", () => {
+  const hits = read("data/entries.json").filter((e) => /youth (and|&) government/i.test(e.name) && !OTHER_STATES.includes(e.id));
   assert.equal(hits.length, 1, hits.map((e) => e.id).join(", "));
 });

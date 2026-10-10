@@ -1,0 +1,42 @@
+{
+  "id": "pennsylvania-keystone-boys-state",
+  "name": "Keystone Boys State",
+  "org": "The American Legion Department of Pennsylvania",
+  "regions": [
+    "pennsylvania"
+  ],
+  "city": "Pennsylvania (held at Messiah University, Mechanicsburg, in 2026)",
+  "type": "civic-government",
+  "fields": [
+    "law-government"
+  ],
+  "what_you_do": "Spend a week in a pretend state called Keystone. You run for office and debate bills.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Finished 11th grade, with at least one semester of high school left",
+  "who_can_apply": "Boys who live in Pennsylvania, have finished their junior year and have at least one semester of high school left. You cannot have gone to a Boys State before. Leadership, character and school service count.",
+  "paid_type": "unpaid",
+  "pay_detail": "No pay. American Legion posts and the Department pay the fees, so little or no cost to the family.",
+  "season": "summer",
+  "duration": "One week (2026 session ran Sunday June 14 to Saturday June 20)",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The application page lists a 2025 registration date and the 2026 session dates (June 14 to June 20, 2026). No 2027 dates are posted on the page read.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Register online on the Keystone Boys State site when registration opens. Posts also sponsor students; use the Legion post locator on the Pennsylvania Legion page.",
+  "needs_work_permit": false,
+  "url": "https://www.paboysstate.org/application-process",
+  "apply_url": "https://www.paboysstate.org/",
+  "sources_fetched": [
+    "https://www.paboysstate.org/",
+    "https://www.paboysstate.org/application-process",
+    "https://www.paboysstate.org/about",
+    "https://www.paboysstate.org/registration-closed",
+    "https://pa-legion.com/programs/student-and-youth/keystone-boys-state-program/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "Boys only. A matching Girls State program is run by the American Legion Auxiliary, not this one. Check the Boys State site for the 2027 location and dates, because 2026 was at Messiah University."
+}

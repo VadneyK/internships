@@ -1,0 +1,39 @@
+{
+  "id": "merced-college-k12-concurrent-enrollment",
+  "name": "K-12 Concurrent Enrollment (Merced College)",
+  "org": "Merced College",
+  "regions": [
+    "merced"
+  ],
+  "city": "Merced, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take real Merced College classes while you are still in high school, tuition free (limitations may apply). Talk to your high school counselor about which courses fit your schedule.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "K-12 students (high school students check with a counselor)",
+  "who_can_apply": "K-12 students. Ask your high school counselor if you are eligible. English C1000 is only open to eligible 11th and 12th graders. K-8 students need a written recommendation from their principal or designee. They also need current transcripts.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "K-12 students can enroll in Merced College classes tuition free (limitations may apply). Some physical activity courses need an extra K-12 Permit, and some fees may still apply.",
+  "season": "year-round",
+  "duration": "By semester, including summer",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No dates are listed on the page. Registration timing is on the College's When is Registration page.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "1) Apply for admission for the semester you want. 2) Turn in the Dual Enrollment Parent Consent Form once during high school, after you get your 7 digit Merced College ID. 3) Complete the K-12 Permit form for your school level. 4) Wait for the email that lets you register in the MC Portal. 5) Pay fees online or at the Student Fees Office. Phone for the Merced campus: 209-384-6000.",
+  "needs_work_permit": false,
+  "url": "https://www.mccd.edu/enroll-at-merced-college/k-12-students/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.mccd.edu/",
+    "https://www.mccd.edu/enroll-at-merced-college/k-12-students/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "This is the college's own concurrent enrollment page. Merced Union High School District also has its own dual enrollment partnership with Merced College (see that separate card). Kinesiology courses with a physical activity part are capped at 10 percent of K-12 seats."
+}

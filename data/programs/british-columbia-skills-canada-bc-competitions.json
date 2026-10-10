@@ -1,0 +1,43 @@
+{
+  "id": "british-columbia-skills-canada-bc-competitions",
+  "name": "Skills Canada BC Competitions (regionals and provincials)",
+  "org": "Skills Canada BC",
+  "regions": [
+    "british-columbia"
+  ],
+  "city": "Regional events around British Columbia, provincials in Abbotsford",
+  "type": "school-pathway",
+  "fields": [
+    "trades",
+    "engineering",
+    "tech-cs",
+    "arts-media"
+  ],
+  "what_you_do": "Compete with other students. Pick a trade or tech skill, such as animation or robotics. The site lists contests. They are regional, provincial and national.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Jr. Skills Projects are for grades 6 to 9. Other competitions are labelled Sec. (secondary) or PS (post-secondary).",
+  "who_can_apply": "Students who are active at a school or college. Your teacher, instructor or career coordinator must sign you up. The exact rules are in the provincial rules document.",
+  "paid_type": "unpaid",
+  "pay_detail": "No fees are listed on the pages read.",
+  "season": "winter",
+  "duration": "Regionals in February to March 2027, provincials on April 14, 2027",
+  "status": "event",
+  "opens_iso": null,
+  "deadline_text": "Regionals run February to March 2027 in communities around the province, exact dates not posted yet. Provincials: April 14, 2027 at Abbotsford Tradex. Nationals: May 27 and 28, 2027 in Calgary. Registration deadlines are not listed.",
+  "deadline_iso": null,
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Talk to your teacher, instructor or career coordinator. They sign you up through the Skills Canada BC registration page. It needs a password. You get it from the organization or your regional coordinator.",
+  "needs_work_permit": null,
+  "url": "https://skillscanada.bc.ca/competitions/2027-regionals-competitions/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.skillscanada.bc.ca",
+    "https://skillscanada.bc.ca/competitions/2027-regionals-competitions/",
+    "https://skillscanada.bc.ca/resources/faq/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 3,
+  "notes": "Students cannot sign themselves up. Regional registration goes through a teacher login. The provincial rule document at skillscanada.bc.ca/competitions/rules-and-regulations/ lists exact eligibility. The British Columbia work rule is not verified for this card."
+}

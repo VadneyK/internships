@@ -28,7 +28,7 @@ def _asset_version():
 ver = _asset_version()
 
 layout = open(os.path.join(SRC, "_layout.html"), encoding="utf-8").read()
-PAGES = ["find", "playbook", "resume", "ready", "permit", "languages", "interview", "calendar", "younger", "paycheck", "insights", "rules", "states", "contribute", "leaders", "about"]
+PAGES = ["find", "playbook", "resume", "ready", "permit", "languages", "interview", "calendar", "younger", "parents", "paycheck", "safety", "insights", "rules", "states", "contribute", "leaders", "about"]
 
 def build(name):
     raw = open(os.path.join(SRC, name + ".html"), encoding="utf-8").read()

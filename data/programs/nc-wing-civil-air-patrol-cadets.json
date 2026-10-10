@@ -1,0 +1,42 @@
+{
+  "min_age": 12,
+  "max_age": 18,
+  "grades": null,
+  "opens_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "apply_url": null,
+  "deadline_iso": null,
+  "needs_work_permit": false,
+  "priority": 2,
+  "id": "nc-wing-civil-air-patrol-cadets",
+  "name": "Civil Air Patrol cadets, North Carolina Wing",
+  "org": "Civil Air Patrol, North Carolina Wing",
+  "regions": [
+    "north-carolina"
+  ],
+  "city": "Statewide, North Carolina (squadrons in many towns)",
+  "what_you_do": "Cadets fly, learn to lead, hike, camp and get in shape. Teens meet weekly with a local squadron and can go to summer encampments and other wing events.",
+  "who_can_apply": "Teens ages 12 to 18, per the national Civil Air Patrol page. Cadets join a local cadet or composite squadron, and you may join any one in the wing.",
+  "pay_detail": "Annual cadet dues are $60 for North Carolina in CAP's dues table, which also says national dues went up $10 for FY27. Uniform costs are not stated on the pages read.",
+  "how_to_apply": "Fill out the interest form on the NC Wing page. Then contact a squadron and visit a meeting with your parents. Go to at least three weekly meetings. Then complete the membership application and pay dues.",
+  "url": "https://ncwg.cap.gov/join/caps-teen-program/how-to-join-the-civil-air-patrol/",
+  "sources_fetched": [
+    "https://ncwg.cap.gov/join/caps-teen-program/how-to-join-the-civil-air-patrol/",
+    "https://www.gocivilairpatrol.com/join/youth-in-cadet-program/",
+    "https://www.gocivilairpatrol.com/join/membership-dues/"
+  ],
+  "notes": "Volunteer youth program, not a job. NC Wing office: 3520 Alamance Road, Burlington, NC 27215, 336-290-7473, info@ncwgcap.org. The NC Wing site lists a 2027 summer encampment page.",
+  "type": "leadership",
+  "fields": [
+    "engineering",
+    "science",
+    "any"
+  ],
+  "season": "year-round",
+  "paid_type": "unpaid",
+  "duration": "Weekly squadron meetings all year",
+  "status": "rolling",
+  "deadline_text": "No deadline. You can join any time through a local squadron.",
+  "deadline_confidence": "rolling"
+}

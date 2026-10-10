@@ -1,0 +1,39 @@
+{
+  "opens_iso": null,
+  "apply_url": null,
+  "min_age": 14,
+  "max_age": 24,
+  "grades": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": true,
+  "priority": 2,
+  "id": "ca-edd-youth-employment-services",
+  "name": "EDD Employment Services for Youth (America's Job Centers of California)",
+  "org": "California Employment Development Department (EDD)",
+  "regions": [
+    "statewide"
+  ],
+  "city": "California (local America's Job Center of California offices)",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Get youth job services. Go to your local America's Job Center of California. EDD lists mentoring, school help and skills training. It lists leadership development. Work experience can be paid or unpaid. It has internships, apprenticeships and job shadowing.",
+  "who_can_apply": "Young people ages 14 to 24 who meet certain requirements. The EDD page does not list the requirements. It points to the Youth Employment Opportunity Program page and fact sheet for criteria.",
+  "paid_type": "mixed",
+  "pay_detail": "The services are free (the page says Job Centers connect employers with job seekers at no cost). Work experience can be paid or unpaid; no pay rate is given.",
+  "season": "year-round",
+  "duration": "Ongoing, set by each local center",
+  "status": "rolling",
+  "deadline_text": "No application dates. Visit or contact your local center any time.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Find your local America's Job Center of California with the EDD Office Locator (edd.ca.gov/en/Office_Locator/). The page also suggests building a resume in CalJOBS and visiting the center to ask about internships, apprenticeships and training.",
+  "url": "https://edd.ca.gov/en/jobs_and_training/Services_for_Youth/",
+  "sources_fetched": [
+    "https://edd.ca.gov/en/jobs_and_training/Services_for_Youth/",
+    "https://www.cde.ca.gov/ci/ct/we/workpermitsforstudents.asp"
+  ],
+  "notes": "The EDD page does not say the youth services are free. It says Job Centers connect employers with job seekers at no cost. Eligibility criteria are not on the EDD page read; it links to the YEOP services and eligibility criteria. Teens under 18 who take a paid job in California need a work permit from their school (CDE page)."
+}

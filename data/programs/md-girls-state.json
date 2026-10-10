@@ -1,0 +1,41 @@
+{
+  "min_age": null,
+  "max_age": null,
+  "grades": "Rising high school seniors (finished grade 11, at least one semester left)",
+  "opens_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "apply_url": null,
+  "deadline_iso": null,
+  "needs_work_permit": false,
+  "priority": 2,
+  "id": "md-girls-state",
+  "name": "Maryland Girls State",
+  "org": "American Legion Auxiliary, Department of Maryland",
+  "city": "Salisbury, MD (Salisbury University)",
+  "what_you_do": "Spend a week in a model state government. Girls run for city, county and state office, take part in legislative sessions and a mock trial, and learn how government works.",
+  "who_can_apply": "Girls who have finished their junior year of high school by the start of the session, in public, private or home school, with at least one semester left. You cannot have attended any other Girls State.",
+  "pay_detail": "Free. The FAQ says there is no cost to the student or family. Sponsors such as American Legion posts pay.",
+  "duration": "One week. The 2027 session is June 20 to 25, 2027",
+  "deadline_text": "2027 session: June 20 to 25, 2027 at Salisbury University. The 2026 application ran Nov 15, 2025 to May 1, 2026. The 2027 application dates are not posted yet.",
+  "how_to_apply": "Apply online using the Apply now link on the Maryland Boys & Girls State site. Accepted students usually hear back in 2 to 3 weeks.",
+  "url": "https://mdboysgirlsstate.org/girls-state",
+  "notes": "Students under 17 sleep in college dorms, usually two to a room. The Girls State page lists a Samsung American Legion Scholarship presentation on the last day.",
+  "regions": [
+    "maryland"
+  ],
+  "type": "civic-government",
+  "fields": [
+    "law-government"
+  ],
+  "paid_type": "unpaid",
+  "season": "summer",
+  "status": "closed-expect-reopen",
+  "deadline_confidence": "last-year-pattern",
+  "sources_fetched": [
+    "https://mdboysgirlsstate.org/",
+    "https://mdboysgirlsstate.org/boys-state",
+    "https://mdboysgirlsstate.org/girls-state",
+    "https://mdboysgirlsstate.org/faqs"
+  ]
+}

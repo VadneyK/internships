@@ -1,0 +1,42 @@
+{
+  "opens_iso": null,
+  "apply_url": null,
+  "min_age": null,
+  "max_age": null,
+  "grades": "Students enrolled in a Georgia agricultural education class (middle and high school)",
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "priority": 2,
+  "id": "georgia-ffa-association",
+  "name": "Georgia FFA Association",
+  "org": "Georgia FFA Association and Georgia Agricultural Education (Georgia Department of Education)",
+  "regions": [
+    "georgia"
+  ],
+  "city": "Georgia (through school agricultural education programs)",
+  "type": "leadership",
+  "fields": [
+    "environment",
+    "business-finance",
+    "science",
+    "any"
+  ],
+  "what_you_do": "Take agriculture classes at school and join FFA: leadership contests, career development events, Supervised Agricultural Experience projects, and state and national conventions.",
+  "who_can_apply": "Students enrolled in agricultural education classes at a Georgia school with an ag program. The membership page says every student in those classes becomes an FFA member.",
+  "paid_type": "unpaid",
+  "pay_detail": "Not a job. The membership page lists a yearly affiliation fee of $9.05 per high school student ($5.05 national, $4.00 state) and $900 per chapter for middle school. The page does not say whether families pay it.",
+  "season": "school-year",
+  "duration": "Ongoing during the school year",
+  "status": "year-round",
+  "deadline_text": "No membership deadline listed on the page. Enrollment follows your agriculture class schedule.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Sign up for an agricultural education class at your school. Ask your counselor or ag teacher. The state page says a student is expected to be in ag classes to join FFA.",
+  "url": "https://www.georgiaffa.org/membership",
+  "sources_fetched": [
+    "https://www.georgiaffa.org/",
+    "https://www.georgiaffa.org/membership"
+  ],
+  "notes": "If your school has no ag program you cannot join through it. The state site links a 2026-2027 state agricultural education calendar for event dates."
+}

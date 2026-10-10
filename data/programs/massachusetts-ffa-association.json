@@ -1,0 +1,40 @@
+{
+  "id": "massachusetts-ffa-association",
+  "name": "Massachusetts FFA",
+  "org": "Massachusetts FFA Association",
+  "regions": [
+    "massachusetts"
+  ],
+  "city": "Massachusetts (school chapters)",
+  "type": "leadership",
+  "fields": [
+    "environment",
+    "business-finance"
+  ],
+  "what_you_do": "Join an FFA chapter at a school that teaches agricultural education. FFA builds leadership, personal growth and career skills. It does this through hands-on experiences.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Students at a Massachusetts school with an FFA chapter. The state site lists the chapters (the list includes vocational, technical and agricultural high schools). It does not state an age rule.",
+  "paid_type": "unpaid",
+  "pay_detail": "Costs are not stated on the pages read. Ask your ag teacher.",
+  "season": "school-year",
+  "duration": "Ongoing while you are in agricultural education",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline posted. You join through your school.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Find your school on the Massachusetts FFA Chapters page. The page does not say how to join, so ask your school how to sign up.",
+  "needs_work_permit": false,
+  "url": "https://www.massffa.org/about-us/chapters",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.massffa.org/",
+    "https://www.massffa.org/about-us/chapters"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 3,
+  "notes": "The chapters page lists schools such as Bay Path Regional Vocational Technical H.S. in Charlton, Bristol County Agricultural High School in Dighton and Minuteman High School. Check the full list for your area. The site describes FFA as an intracurricular student group."
+}
