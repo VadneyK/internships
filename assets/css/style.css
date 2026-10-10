@@ -148,6 +148,14 @@ li { margin-bottom: .35em; }
 .nav a[aria-current="page"] { background: var(--tag-bg); color: var(--tag-fg); }
 .theme-btn { border: 2px solid var(--edge); background: var(--surface); color: var(--ink); border-radius: 999px; width: 2.75rem; height: 2.75rem; cursor: pointer; display: grid; place-items: center; font-size: 1.05rem; }
 @media (max-width: 40rem) { .nav { margin-left: 0; width: 100%; order: 3; } .theme-btn { margin-left: auto; } .top { position: static; } }
+/* On a phone the eight links fold behind one Menu button (the links are still in the page; without scripts they all show) */
+.menu-btn { display: none; }
+@media (max-width: 40rem) {
+  .menu-btn { display: inline-flex; align-items: center; margin-left: auto; font: inherit; font-family: var(--display); font-stretch: 105%; font-weight: 800; font-style: italic; text-transform: uppercase; font-size: .85rem; letter-spacing: .02em; color: var(--ink); background: var(--surface); border: 2px solid var(--edge); border-radius: 999px; min-height: 2.75rem; padding: 0 1rem; cursor: pointer; }
+  .menu-btn + .theme-btn { margin-left: 0; }
+  .top.menu-js .nav { display: none; }
+  .top.menu-js.open .nav { display: flex; }
+}
 /* Jump-link targets (On this page chips, find.html#id deep links) stop under the sticky header on desktop */
 main [id], .prog { scroll-margin-top: 5rem; }
 

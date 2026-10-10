@@ -37,3 +37,16 @@ test("find: age, timing and season are tap tiles that drive the same hidden sele
   [...document.querySelectorAll("#age + .tp .tile")].find((t) => t.textContent === "15").click();
   assert.equal(document.getElementById("age").value, "15");
 });
+
+test("phone menu: one Menu button controls the nav, toggles aria-expanded, and Escape closes it", async () => {
+  const { window, document } = await loadPage("index.html"); await tick(100);
+  const m = document.querySelector(".menu-btn"), top = document.querySelector("header.top");
+  assert.ok(m, "a Menu button");
+  assert.equal(m.getAttribute("aria-expanded"), "false");
+  assert.equal(document.getElementById(m.getAttribute("aria-controls")).tagName, "NAV");
+  m.click();
+  assert.equal(m.getAttribute("aria-expanded"), "true"); assert.ok(top.classList.contains("open"));
+  top.dispatchEvent(new window.KeyboardEvent("keydown", { key: "Escape", bubbles: true }));
+  assert.equal(m.getAttribute("aria-expanded"), "false");
+  assert.equal(document.querySelectorAll(".nav a").length, 8, "all eight links are still in the page");
+});

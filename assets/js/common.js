@@ -23,6 +23,21 @@
     });
   }
 
+  /* phone menu: one button opens the eight links. The links stay in the page for everyone else. */
+  (function () {
+    var top = document.querySelector("header.top"), nav = top && top.querySelector(".nav");
+    if (!nav || !btn) return;
+    if (!nav.id) nav.id = "mainNav";
+    var m = document.createElement("button"); m.type = "button"; m.className = "menu-btn"; m.textContent = "Menu";
+    m.setAttribute("aria-expanded", "false"); m.setAttribute("aria-controls", nav.id);
+    btn.parentNode.insertBefore(m, btn);
+    top.classList.add("menu-js");
+    m.addEventListener("click", function () {
+      var on = !top.classList.contains("open"); top.classList.toggle("open", on); m.setAttribute("aria-expanded", String(on));
+    });
+    top.addEventListener("keydown", function (e) { if (e.key === "Escape" && top.classList.contains("open")) { top.classList.remove("open"); m.setAttribute("aria-expanded", "false"); m.focus(); } });
+  })();
+
   /* toast */
   var toastEl = document.getElementById("toast");
   var toastTimer;
