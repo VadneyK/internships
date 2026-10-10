@@ -68,6 +68,7 @@
   var sel = $("dist");
   Object.keys(DISTRICTS).forEach(function (k) { var o = document.createElement("option"); o.value = k; o.textContent = DISTRICTS[k].name; sel.appendChild(o); });
   ["Fremont Unified", "Sacramento City Unified", "Another district or a charter or private school"].forEach(function (n) { var o = document.createElement("option"); o.value = "other"; o.textContent = n; sel.appendChild(o); });
+  G.tilePicker(sel);
   sel.addEventListener("change", function () {
     var out = $("distOut"), d = DISTRICTS[sel.value];
     if (!sel.value) { $("distStatus").textContent = ""; return; }
@@ -83,15 +84,19 @@
   fetch("data/transit.json").then(function (r) { return r.json(); }).then(function (d) {
     var sel = $("rideSel"), out = $("rideOut");
     d.places.forEach(function (p) { var o = document.createElement("option"); o.value = p.id; o.textContent = p.name + " (" + p.state + ")"; sel.appendChild(o); });
+    sel.appendChild(Object.assign(document.createElement("option"), { value: "bay", textContent: "Bay Area and Sacramento (California)" }));
     sel.appendChild(Object.assign(document.createElement("option"), { value: "other", textContent: "Somewhere else" }));
+    G.tilePicker(sel);
     $("rideDrive").innerHTML = "<p><b>" + G.esc(d.driving.headline) + ".</b> " + G.esc(d.driving.text) + ' <a href="' + G.esc(d.driving.source.u) + '" target="_blank" rel="noopener">' + G.esc(d.driving.source.t) + "</a>. Not covered here: " + d.gaps.map(G.esc).join(" ") + "</p>";
-    function row(k, v) { return "<div><dt>" + k + "</dt><dd>" + G.esc(v) + "</dd></div>"; }
+    function row(k, v, key) { var ns = /^(not stated|the pages? (do|does) not)/i.test(v); return "<div" + (key ? ' class="key"' : "") + "><dt>" + k + "</dt><dd" + (ns ? ' class="ns"' : "") + ">" + G.esc(v) + "</dd></div>"; }
     sel.addEventListener("change", function () {
       $("rideStatus").textContent = sel.value ? "Transit answer for " + sel.options[sel.selectedIndex].textContent + " is listed below." : "";
+      $("bayRide").hidden = sel.value !== "bay";
+      if (sel.value === "bay") { out.innerHTML = "<h3>Bay Area and Sacramento</h3><p>Pick your area in the table below. Most Bay Area youth discounts use one shared Clipper card.</p>"; return; }
       if (sel.value === "other") { out.innerHTML = "<p>We have not read your transit agency yet. Ask your school office, or look for a youth pass on the agency's own website.</p>"; return; }
       var p = d.places.filter(function (x) { return x.id === sel.value; })[0];
-      if (!p) { out.innerHTML = '<p class="muted">Pick a city to see the card to get, what it costs, what to bring and whether it works for a job.</p>'; return; }
-      out.innerHTML = "<h3>" + G.esc(p.name) + "</h3><dl class=\"facts\">" + row("Where to get it", p.get) + row("What it costs", p.cost) + row("Who qualifies", p.who) + row("What to bring", p.bring) + row("Does it work for a job?", p.work) + row("How long it lasts", p.ends) + "</dl>" +
+      if (!p) { out.innerHTML = '<p class="muted">Tap a place to see the card to get, what it costs, what to bring and whether it works for a job.</p>'; return; }
+      out.innerHTML = "<h3>" + G.esc(p.name) + "</h3><dl class=\"facts\">" + row("Where to get it", p.get, 1) + row("What it costs", p.cost, 1) + row("Who qualifies", p.who) + row("What to bring", p.bring) + row("Does it work for a job?", p.work) + row("How long it lasts", p.ends) + "</dl>" +
         '<p class="row"><a class="btn sm" href="' + G.esc(p.plan.u) + '" target="_blank" rel="noopener">Plan your trip: ' + G.esc(p.plan.t) + "</a></p>" +
         '<p class="small muted">Read on ' + G.esc(d.read) + " from: " + p.sources.map(function (s) { return '<a href="' + G.esc(s.u) + '" target="_blank" rel="noopener">' + G.esc(s.t) + "</a>"; }).join(" &middot; ") + ". Programs and prices change, so confirm on the agency page.</p>";
     });

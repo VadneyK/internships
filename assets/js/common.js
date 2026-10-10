@@ -168,6 +168,87 @@
     group("Bigger areas", "area", L.AREAS);
     if (keep) sel.value = keep;
   };
+  /* Tap tiles: turn a short <select> into big buttons. The select stays in the page (hidden) and is the source of truth,
+     so deep links, saved choices and tests that set its value keep working. A tile is an option, found by its position
+     (several options can share a value). opts.groups = [{label, items:[optionIndex...]}] adds a first step of group tiles.
+     opts.anyLabel keeps the empty option as a tile with that label. Call select._tpSync() after setting .value in code. */
+  G.tilePicker = function (sel, opts) {
+    opts = opts || {};
+    if (!sel || sel._tp) return sel && sel._tp;
+    var wrap = document.createElement("div"); wrap.className = "tp";
+    var lab = sel.id && document.querySelector('label[for="' + sel.id + '"]');
+    if (lab) { if (!lab.id) lab.id = sel.id + "Lbl"; wrap.setAttribute("role", "group"); wrap.setAttribute("aria-labelledby", lab.id); }
+    sel.classList.add("tp-hidden"); sel.setAttribute("tabindex", "-1"); sel.setAttribute("aria-hidden", "true");
+    sel.parentNode.insertBefore(wrap, sel.nextSibling);
+    var open = -1;
+    function mk(text, onclick) {
+      var b = document.createElement("button"); b.type = "button"; b.className = "tile"; b.textContent = text; b.setAttribute("aria-pressed", "false");
+      b.addEventListener("click", onclick); return b;
+    }
+    function groupOf(i) { var g = opts.groups || []; for (var k = 0; k < g.length; k++) if (g[k].items.indexOf(i) > -1) return k; return -1; }
+    function pick(i) { sel.selectedIndex = i; sel.dispatchEvent(new Event("change", { bubbles: true })); }
+    function paint(keepOpen) {
+      wrap.textContent = "";
+      var tooLong = !opts.groups && sel.options.length > (opts.max || 30);
+      sel.classList.toggle("tp-hidden", !tooLong); wrap.hidden = tooLong;
+      if (tooLong) { sel.removeAttribute("tabindex"); sel.removeAttribute("aria-hidden"); return; }
+      sel.setAttribute("tabindex", "-1"); sel.setAttribute("aria-hidden", "true");
+      var cur = sel.selectedIndex, g = opts.groups || [];
+      var first = document.createElement("div"); first.className = "tp-row"; wrap.appendChild(first);
+      if (opts.anyLabel && sel.options.length && sel.options[0].value === "") {
+        var any = mk(opts.anyLabel, function () { open = -1; pick(0); }); any.setAttribute("aria-pressed", cur === 0 ? "true" : "false"); first.appendChild(any);
+      }
+      if (g.length) {
+        var vis = groupOf(cur); if (vis > -1 && keepOpen !== true) open = vis;
+        g.forEach(function (grp, k) {
+          var b = mk(grp.label, function () { open = open === k ? -1 : k; paint(true); });
+          b.setAttribute("aria-pressed", open === k ? "true" : "false"); b.setAttribute("aria-expanded", open === k ? "true" : "false"); first.appendChild(b);
+        });
+        if (open > -1) {
+          var sub = document.createElement("div"); sub.className = "tp-sub";
+          var cap = document.createElement("p"); cap.className = "tp-cap"; cap.textContent = "Now pick one in " + g[open].label; sub.appendChild(cap);
+          var row = document.createElement("div"); row.className = "tp-row"; sub.appendChild(row);
+          g[open].items.forEach(function (i) { var b = mk(opts.labelFor ? opts.labelFor(i, sel.options[i].textContent) : sel.options[i].textContent, function () { pick(i); }); b.setAttribute("aria-pressed", cur === i ? "true" : "false"); row.appendChild(b); });
+          wrap.appendChild(sub);
+        }
+      } else {
+        for (var i = 0; i < sel.options.length; i++) {
+          if (sel.options[i].value === "" && !(opts.anyLabel && i === 0) && (opts.skipEmpty !== false)) continue;
+          if (opts.anyLabel && i === 0) continue;
+          (function (i) { var b = mk(sel.options[i].textContent, function () { pick(i); }); b.setAttribute("aria-pressed", cur === i ? "true" : "false"); first.appendChild(b); })(i);
+        }
+      }
+    }
+    sel.addEventListener("change", function () { paint(); });
+    sel._tpSync = function () { paint(); }; sel._tp = { paint: paint };
+    /* options added later (data loaded after the page) repaint too */
+    if (window.MutationObserver) new MutationObserver(function () { paint(); }).observe(sel, { childList: true });
+    paint();
+    return sel._tp;
+  };
+  /* Any <select data-tiles> becomes tap tiles. data-tiles-any="Any age" keeps the empty first option as a tile with that label. Lists longer than 30 stay a normal dropdown. */
+  G.autoTiles = function () {
+    Array.prototype.forEach.call(document.querySelectorAll("select[data-tiles]"), function (sel) {
+      G.tilePicker(sel, sel.hasAttribute("data-tiles-any") ? { anyLabel: sel.getAttribute("data-tiles-any") } : {});
+    });
+  };
+  G.autoTiles();
+  /* code that sets a select's .value does not fire an event, so repaint every picker once the page scripts have run, and on load */
+  G.syncTiles = function () { Array.prototype.forEach.call(document.querySelectorAll("select"), function (s) { if (s._tpSync) s._tpSync(); }); };
+  setTimeout(G.syncTiles, 0);
+  window.addEventListener("load", G.syncTiles);
+  /* The Where picker: part of the country first, then its cities (and "All of ..." areas). sel must already hold the options from fillPlaces. */
+  G.placeTiles = function (sel) {
+    if (!L || !L.PICK_GROUPS) return;
+    var at = {}; for (var i = 0; i < sel.options.length; i++) at[sel.options[i].value] = i;
+    var groups = L.PICK_GROUPS.map(function (g) {
+      var items = [];
+      g[1].forEach(function (a) { if (at["area:" + a] != null) items.push(at["area:" + a]); });
+      g[2].forEach(function (c) { if (at["city:" + c] != null) items.push(at["city:" + c]); });
+      return { label: g[0], items: items };
+    });
+    G.tilePicker(sel, { anyLabel: "Anywhere", groups: groups, labelFor: function (i, t) { return sel.options[i].value.indexOf("area:") === 0 ? "All of " + t : t; } });
+  };
   if (L) {
     G.REGIONS = L.REGIONS; G.HUBS = L.HUBS; G.TYPES = L.TYPES; G.FIELDS = L.FIELDS; G.PAID = L.PAID;
     G.esc = L.esc; G.safeUrl = L.safeUrl; G.parseISO = L.parseISO; G.fmtDate = L.fmtDate; G.daysUntil = L.daysUntil;

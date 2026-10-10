@@ -47,8 +47,8 @@ test("ready: every transit row links out safely", async () => {
 test("ready: every city in the ride picker shows its card, cost, what to bring and the pages we read", async () => {
   const { window, document } = await loadPage("ready.html"); await tick(120);
   const sel = document.getElementById("rideSel");
-  assert.ok(sel.options.length >= 7, "six cities plus the prompt");
-  for (const o of [...sel.options].slice(1).filter((x) => x.value !== "other")) {
+  assert.ok(sel.options.length >= 8, "six cities, the Bay Area and the prompt");
+  for (const o of [...sel.options].slice(1).filter((x) => x.value !== "other" && x.value !== "bay")) {
     type(window, sel, o.value);
     const out = document.getElementById("rideOut");
     assert.match(out.textContent, /Where to get it/);
@@ -91,4 +91,35 @@ test("ready: nothing was deleted when the opening paragraph was shortened", asyn
   const { document } = await loadPage("ready.html");
   assert.ok(document.body.textContent.includes("certified copy of a birth certificate"));
   assert.ok(document.body.textContent.includes("federal W-4"));
+});
+
+test("ready: the Bay Area table shows only when Bay Area is picked, never under another city (it used to be stuck on every pick)", async () => {
+  const { window, document } = await loadPage("ready.html"); await tick(120);
+  const sel = document.getElementById("rideSel"), bay = document.getElementById("bayRide");
+  assert.equal(bay.hidden, true, "hidden before any pick");
+  type(window, sel, "bay");
+  assert.equal(bay.hidden, false);
+  assert.match(document.getElementById("rideOut").textContent, /Bay Area and Sacramento/);
+  for (const v of ["atlanta", "nyc", "other", ""]) { type(window, sel, v); assert.equal(bay.hidden, true, "hidden for " + (v || "no pick")); }
+  type(window, sel, "atlanta");
+  assert.doesNotMatch(document.getElementById("rideOut").textContent, /Sacramento|Clipper/);
+});
+
+test("ready: the ride picker is big tap tiles, one per place, and a tap picks it", async () => {
+  const { window, document } = await loadPage("ready.html"); await tick(120);
+  const tiles = [...document.querySelectorAll("#rideSel + .tp .tile")];
+  assert.ok(tiles.length >= 8, "a tile for each place plus somewhere else");
+  const atl = tiles.find((t) => /Atlanta/.test(t.textContent));
+  atl.click();
+  assert.equal(document.getElementById("rideSel").value, "atlanta");
+  assert.match(document.getElementById("rideOut").textContent, /MARTA|Breeze/);
+  assert.equal([...document.querySelectorAll("#rideSel + .tp .tile")].filter((t) => t.getAttribute("aria-pressed") === "true").length, 1);
+});
+
+test("ready: the ride answer is laid out as labelled panels, with 'not stated' shown quietly", async () => {
+  const { window, document } = await loadPage("ready.html"); await tick(120);
+  type(window, document.getElementById("rideSel"), "atlanta");
+  const panels = document.querySelectorAll("#rideOut dl.facts > div");
+  assert.ok(panels.length >= 6);
+  assert.ok(document.querySelector("#rideOut dd.ns"), "Atlanta says 'Not stated' for how long it lasts");
 });

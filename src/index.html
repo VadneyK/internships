@@ -34,11 +34,11 @@ scripts: home
     <form class="card" id="picker" onsubmit="return false" aria-label="Find matching programs">
       <div class="formgrid">
         <div class="field"><label for="pAge">How old are you?</label>
-          <select id="pAge"><option value="">Pick your age</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option></select></div>
+          <select id="pAge" data-tiles><option value="">Pick your age</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option></select></div>
         <div class="field"><label for="pHub">Where do you live or go to school?</label>
-          <select id="pHub"><option value="">Anywhere</option></select></div>
+          <select id="pHub" data-tiles data-tiles-any="Anywhere"><option value="">Anywhere</option></select></div>
         <div class="field"><label for="pField">What are you curious about?</label>
-          <select id="pField"><option value="">Anything</option></select></div>
+          <select id="pField" data-tiles data-tiles-any="Anything"><option value="">Anything</option></select></div>
       </div>
     </form>
     <p id="matchStatus" class="sr" role="status"></p>

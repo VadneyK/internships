@@ -118,7 +118,7 @@ test("parents: loads clean, draws every part, and shows no undefined or NaN", as
   }
   assert.doesNotMatch(document.body.textContent, /undefined|NaN|\{\{/);
   const nav = [...document.querySelectorAll("#main nav.chips a")];
-  assert.deepEqual(nav.map((a) => a.getAttribute("href")), ["#sign", "#help", "#money", "#young", "#safe", "#gaps"]);
+  assert.deepEqual(nav.map((a) => a.getAttribute("href")), ["#sign", "#help", "#money", "#young", "#safe", "#how", "#gaps"]);
   for (const a of nav) assert.ok(document.getElementById(a.getAttribute("href").slice(1)), `${a.getAttribute("href")} has no target`);
 });
 
@@ -305,4 +305,13 @@ test("parents.json: plain words, about 8th grade on average and no very hard sta
   assert.ok(mean <= 8, `mean grade ${mean.toFixed(2)}`);
   const hard = grades.filter((x) => x.g > 12).map((x) => `${x.s.where} ${x.g.toFixed(1)}`);
   assert.deepEqual(hard, []);
+});
+
+test("parents: says plainly this is a fixed guide, not a chat, and is honest that tools helped find the facts", async () => {
+  const { document } = await loadPage("parents.html"); await tick(200);
+  const how = document.getElementById("how").textContent;
+  assert.match(how, /No chat box/);
+  assert.match(how, /No account/);
+  assert.match(how, /Computer tools helped/);
+  assert.match(how, /not stated/);
 });

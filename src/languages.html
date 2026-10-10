@@ -16,8 +16,8 @@ navparent: ready
 <section style="background:var(--paper-2); border-block:3px solid var(--edge);">
   <div class="wrap">
     <div class="grid g2" style="align-items:end;max-width:40rem;">
-      <div class="field"><label for="lLang">Language</label><select id="lLang"><option value="">Any language</option></select></div>
-      <div class="field"><label for="lState">Place</label><select id="lState"><option value="">All places</option></select></div>
+      <div class="field"><label for="lLang">Language</label><select id="lLang" data-tiles data-tiles-any="Any language"><option value="">Any language</option></select></div>
+      <div class="field"><label for="lState">Place</label><select id="lState" data-tiles data-tiles-any="All places"><option value="">All places</option></select></div>
     </div>
     <p class="small" id="lCount" aria-live="polite"></p>
     <ul class="langlist" id="lList" style="list-style:none;padding:0;display:grid;gap:1rem;"></ul>

@@ -40,7 +40,7 @@ scripts: ready
     <h2>1. Work permit</h2>
     <p class="row"><a class="btn sm" href="permit.html">Find your exact permit</a> <span class="small muted">Pick your state, age and kind of work.</span></p>
     <p>If you are under 18 and have a paid job at a business, California requires a work permit, unless you have graduated high school or have a certificate of proficiency. You get the job first, then your school issues the permit. The employer and a parent also sign. The full rules on hours and ages are on the <a href="rules.html#permit">Rules page</a>.</p>
-    <div class="field" style="max-width:26rem;"><label for="dist">Pick your school district</label>
+    <div class="field" style="max-width:26rem;"><label for="dist">Tap your school district</label>
       <select id="dist"><option value="">Choose one</option></select></div>
     <p class="sr" id="distStatus" role="status"></p>
     <div class="card" id="distOut" style="margin-top:1rem;"><p class="muted">Pick a district to see its steps. If yours is not listed, ask your school&rsquo;s main office or attendance office. They issue permits during the school year, and in most districts the steps are the same: get hired, fill out the form with your employer and a parent, hand it in, wait a few days.</p></div>
@@ -93,13 +93,12 @@ scripts: ready
   <div class="wrap">
     <h2>4. A ride to work</h2>
     <p>A free or cheap bus pass can decide whether a job works. Each agency sets its own youth rules. In some places the school gives you the card, and in others (Orange County, San Diego, LA reduced fare) you sign up yourself, so read the "Where to get it" line before your first shift.</p>
-    <div class="field" style="max-width:26rem;"><label for="rideSel">Pick where you live</label>
+    <div class="field"><label for="rideSel">Tap where you live</label>
       <select id="rideSel"><option value="">Choose one</option></select></div>
     <p class="sr" id="rideStatus" role="status"></p>
-    <div class="card" id="rideOut" style="margin:1rem 0;"><p class="muted">Pick a city to see the card to get, what it costs, what to bring and whether it works for a job. For the Bay Area and Sacramento, see the table below.</p></div>
-    <div class="callout plain" id="rideDrive" style="margin:0 0 1.2rem;"></div>
-    <h3 id="bayRide">Bay Area and Sacramento</h3>
-    <p>The shared Clipper card is the way to get most youth discounts in the Bay Area.</p>
+    <div class="card" id="rideOut" style="margin:1rem 0;"><p class="muted">Tap a place above. You will see the card to get, what it costs, what to bring and whether it works for a job.</p></div>
+    <div id="bayRide" hidden>
+    <p>The shared Clipper card is the way to get most youth discounts in the Bay Area. Find your area in the table.</p>
     <div class="tablewrap" tabindex="0" role="region" aria-label="Youth transit options by area"><table>
       <thead><tr><th scope="col">Area</th><th scope="col">What teens get</th><th scope="col">How</th></tr></thead>
       <tbody>
@@ -113,6 +112,8 @@ scripts: ready
         <tr><th scope="row">Caltrain</th><td>Youth fares for riders 18 and under. No fee for a Youth Clipper card.</td><td>Apply online at clippercard.com. <a href="https://www.caltrain.com/fares/ticket-types" target="_blank" rel="noopener">Caltrain</a></td></tr>
       </tbody></table></div>
     <p class="small muted" style="margin-top:.8rem;">Under 13, a parent or guardian completes the Clipper application. <a href="https://www.clippercard.com/discounts.html" target="_blank" rel="noopener">Clipper discounts</a>. Clipper START is for adults 19 to 64, not teens. Prices are left off here because they change; the agency page has the current ones.</p>
+    </div>
+    <div class="callout plain" id="rideDrive" style="margin:0 0 1.2rem;"></div>
     <div class="callout plain" style="margin-top:1.2rem;"><p><b>Cannot get there?</b> Say so when you apply. Ask whether a parent can drive you at first, whether another employee lives near you, and whether shifts can start after your bus arrives.</p></div>
   </div>
 </section>

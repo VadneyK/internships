@@ -380,7 +380,7 @@
       var arr = state[b.getAttribute("data-key")];
       b.setAttribute("aria-pressed", String(arr.indexOf(b.getAttribute("data-val")) > -1));
     });
-    $("place").value = state.place || "";
+    $("place").value = state.place || ""; ["place", "age", "when", "season"].forEach(function (id) { if ($(id)._tpSync) $(id)._tpSync(); });
     $("onlyVerified").setAttribute("aria-pressed", String(state.verified));
     $("noPermit").setAttribute("aria-pressed", String(state.noPermit));
     $("savedOnly").setAttribute("aria-pressed", String(state.saved));
@@ -506,6 +506,8 @@
     var QUICK = ["davis", "sv", "oak", "sf", "state", "socal", "atl", "nyc", "chi", "online"];
     chipGroup("hubChips", G.HUBS.filter(function (h) { return hubCounts[h[0]] && QUICK.indexOf(h[0]) > -1; }).map(function (h) { return [h[0], h[1], hubCounts[h[0]]]; }), "hubs");
     G.fillPlaces($("place"), all);
+    G.placeTiles($("place"));
+    ["age", "when", "season"].forEach(function (id) { G.tilePicker($(id), { anyLabel: $(id).options[0].textContent }); });
     $("place").addEventListener("change", function (e) { state.place = e.target.value; if (state.place) state.hubs = []; savePrefs(); hidePrefNote(); syncChips(); render(true); });
     chipGroup("paidChips", PAID_GROUPS.map(function (g) { return [g[0], g[1]]; }), "paid");
     var tc = {}; all.forEach(function (e) { tc[e.type] = (tc[e.type] || 0) + 1; });

@@ -127,6 +127,16 @@
     ["east-coast", "East Coast", ["new-york-city", "new-brunswick", "philadelphia", "pittsburgh", "boston", "college-park", "fairfax", "charlottesville", "blacksburg", "raleigh-chapel-hill"]],
     ["southeast", "Southeast", ["atlanta", "raleigh-chapel-hill", "charlottesville", "blacksburg"]]
   ];
+  /* How the Where picker groups cities for a teen: a part of the country first, then the cities in it. Every city is in exactly one group.
+     [label, area ids shown first as "All of ...", city ids]. This is how the picker is laid out, not a claim about how any network groups its cities. */
+  var PICK_GROUPS = [
+    ["California", ["bay-area"], ["davis", "berkeley", "san-francisco", "silicon-valley", "merced", "los-angeles", "irvine", "pomona", "riverside", "san-diego", "santa-barbara"]],
+    ["Pacific Northwest", ["pacific-northwest"], ["seattle", "vancouver"]],
+    ["Texas", ["texas"], ["austin"]],
+    ["Midwest", ["midwest"], ["minneapolis", "chicago", "elgin", "urbana-champaign", "madison", "west-lafayette", "bloomington", "columbus", "cincinnati", "ann-arbor", "east-lansing"]],
+    ["Northeast", ["northeast"], ["new-york-city", "new-brunswick", "philadelphia", "pittsburgh", "boston"]],
+    ["South and DC area", ["southeast", "dc-area"], ["atlanta", "raleigh-chapel-hill", "charlottesville", "blacksburg", "college-park", "fairfax"]]
+  ];
   var _placeCache = {};
   /* "city:boston" or "area:midwest" to the region ids it covers, or null if unknown */
   function placeRegions(place) {
@@ -670,7 +680,7 @@
     effStatus: effStatus, futureDeadline: futureDeadline, knownDeadline: knownDeadline, isOpenish: isOpenish, isAnytime: isAnytime, ageOk: ageOk,
     matches: matches, facetCounts: facetCounts, relaxOptions: relaxOptions, placeCounts: placeCounts, rank: rank, compare: compare, sortList: sortList, topPicks: topPicks, ageText: ageText,
     STATUSES: STATUSES, toISO: toISO, addDays: addDays, followUpISO: followUpISO, planSummary: planSummary,
-    icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf, STATE_OF: STATE_OF, permitFor: permitFor, hoursCheck: hoursCheck, paycheck: paycheck, PERMIT_STATES: PERMIT_STATES, CITIES: CITIES, AREAS: AREAS, placeRegions: placeRegions, placeLabel: placeLabel, hubsOfPlace: hubsOfPlace,
+    icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf, STATE_OF: STATE_OF, permitFor: permitFor, hoursCheck: hoursCheck, paycheck: paycheck, PERMIT_STATES: PERMIT_STATES, CITIES: CITIES, AREAS: AREAS, PICK_GROUPS: PICK_GROUPS, placeRegions: placeRegions, placeLabel: placeLabel, hubsOfPlace: hubsOfPlace,
     gradePhrase: gradePhrase
   };
   return api;

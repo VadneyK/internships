@@ -238,6 +238,7 @@ main [id], .prog { scroll-margin-top: 5rem; }
 .star[aria-pressed="true"] { background: var(--yellow); color: #151515; }
 @media (forced-colors: active) {
   .chip[aria-pressed="true"] { forced-color-adjust: none; background: Highlight; color: HighlightText; }
+  .tile[aria-pressed="true"] { forced-color-adjust: none; background: Highlight; color: HighlightText; }
   .star[aria-pressed="true"] { forced-color-adjust: none; background: Highlight; color: HighlightText; }
   :focus-visible { outline: 3px solid Highlight; outline-offset: 3px; }
 }
@@ -446,3 +447,22 @@ tr:last-child th { border-bottom: 0; }
 
 /* Tap targets: at least 44px tall on small buttons and chips */
 .chip, .star, .btn.sm { min-height: 2.75rem; }
+
+/* Tap tiles: a short list of choices as big buttons instead of a dropdown. The real <select> stays in the page, hidden, and stays in sync. */
+.tp-hidden { position: absolute !important; width: 1px; height: 1px; margin: -1px; padding: 0; border: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.tp { display: grid; gap: .6rem; margin-top: .2rem; }
+.tp-row { display: flex; flex-wrap: wrap; gap: .5rem; }
+.tile { font: inherit; font-size: 1.02rem; font-weight: 700; color: var(--ink); background: var(--surface); border: 2px solid var(--edge); border-radius: 12px; padding: .55rem 1rem; cursor: pointer; min-height: 3rem; text-align: left; }
+.tile:hover { background: var(--paper-2); }
+.tile[aria-pressed="true"] { background: var(--tag-bg); color: var(--tag-fg); }
+.tile .n { font-weight: 500; opacity: .7; margin-left: .3rem; }
+.tp-sub { border-left: 4px solid var(--edge); padding-left: .8rem; display: grid; gap: .4rem; }
+.tp-sub .tp-cap { font-size: .85rem; font-weight: 700; color: var(--ink-2); margin: 0; }
+
+/* Answer facts: a label over a short answer, in a grid of small panels (rides, state rules, paycheck rules) */
+dl.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: .7rem; margin: .8rem 0 0; }
+dl.facts > div { background: var(--paper); border: 2px solid var(--edge); border-radius: 10px; padding: .65rem .85rem; min-width: 0; }
+dl.facts dt { font-size: .78rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; color: var(--ink-2); }
+dl.facts dd { margin: .25rem 0 0; overflow-wrap: anywhere; }
+dl.facts dd.ns { color: var(--ink-2); font-style: italic; }
+dl.facts > div.key { border-width: 3px; }

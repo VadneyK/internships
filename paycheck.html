@@ -20,8 +20,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=89dd6f94">
-<link rel="stylesheet" href="assets/css/style.css?v=89dd6f94">
+<link rel="stylesheet" href="assets/css/fonts.css?v=f5d8e821">
+<link rel="stylesheet" href="assets/css/style.css?v=f5d8e821">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -84,7 +84,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   <div class="wrap">
     <h2>1. Estimate one paycheck</h2>
     <div class="grid g3" style="align-items:end;max-width:62rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr));">
-      <div class="field"><label for="mPreset">Where and what rate</label><select id="mPreset"></select></div>
+      <div class="field"><label for="mPreset">Where and what rate</label><select id="mPreset" data-tiles></select></div>
       <div class="field"><label for="mWage">Hourly rate ($)</label><input id="mWage" type="number" min="0" step="0.01" inputmode="decimal"></div>
       <div class="field"><label for="mHours">Hours on this paycheck</label><input id="mHours" type="number" min="0" step="0.5" inputmode="decimal" value="12"></div>
     </div>
@@ -108,7 +108,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
 <section id="wrong" style="background:var(--paper-2); border-block:3px solid var(--edge);">
   <div class="wrap">
     <h2>3. If your pay is late or wrong</h2>
-    <div class="field" style="max-width:20rem;"><label for="mState">State</label><select id="mState"></select></div>
+    <div class="field" style="max-width:20rem;"><label for="mState">State</label><select id="mState" data-tiles></select></div>
     <div class="card" id="mWrong" aria-live="polite" style="margin-top:1rem;"></div>
     <p class="small" id="mWrongNote"></p>
   </div>
@@ -173,9 +173,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=89dd6f94"></script>
-<script src="assets/js/common.js?v=89dd6f94"></script>
-<script src="assets/js/paycheck.js?v=89dd6f94"></script>
+<script src="assets/js/lib.js?v=f5d8e821"></script>
+<script src="assets/js/common.js?v=f5d8e821"></script>
+<script src="assets/js/paycheck.js?v=f5d8e821"></script>
 
 </body>
 </html>

@@ -20,8 +20,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=89dd6f94">
-<link rel="stylesheet" href="assets/css/style.css?v=89dd6f94">
+<link rel="stylesheet" href="assets/css/fonts.css?v=f5d8e821">
+<link rel="stylesheet" href="assets/css/style.css?v=f5d8e821">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -65,8 +65,8 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   <div class="wrap">
     <div class="chips" id="months" role="group" aria-label="Month"></div>
     <div class="grid g2" style="align-items:end;max-width:40rem;margin-top:1rem;">
-      <div class="field"><label for="cPlace">Where</label><select id="cPlace"><option value="">Everywhere</option></select></div>
-      <div class="field"><label for="cAge">Your age</label><select id="cAge"><option value="">Any age</option></select></div>
+      <div class="field"><label for="cPlace">Where</label><select id="cPlace" data-tiles data-tiles-any="Everywhere"><option value="">Everywhere</option></select></div>
+      <div class="field"><label for="cAge">Your age</label><select id="cAge" data-tiles data-tiles-any="Any age"><option value="">Any age</option></select></div>
     </div>
     <p class="small" id="cCount" aria-live="polite"></p>
     <h2 id="hClose" hidden>Deadlines this month</h2>
@@ -128,9 +128,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=89dd6f94"></script>
-<script src="assets/js/common.js?v=89dd6f94"></script>
-<script src="assets/js/calendar.js?v=89dd6f94"></script>
+<script src="assets/js/lib.js?v=f5d8e821"></script>
+<script src="assets/js/common.js?v=f5d8e821"></script>
+<script src="assets/js/calendar.js?v=f5d8e821"></script>
 
 </body>
 </html>
