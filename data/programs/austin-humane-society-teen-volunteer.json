@@ -1,0 +1,38 @@
+{
+  "regions": [
+    "austin"
+  ],
+  "city": "Austin, TX",
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": false,
+  "grades": null,
+  "min_age": 14,
+  "max_age": null,
+  "id": "austin-humane-society-teen-volunteer",
+  "name": "Austin Humane Society Teen Volunteer",
+  "org": "Austin Humane Society",
+  "type": "volunteer",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Help care for animals, mostly by getting cats and dogs used to people. You also help with outreach projects that work to end pet homelessness in Central Texas.",
+  "who_can_apply": "Ages 14 and up. Ages 14 and 15 need a parent or guardian over 21 to train and volunteer with them at all times. Ages 16 and 17 can volunteer on their own with parental consent given on the online application.",
+  "paid_type": "fee-based",
+  "pay_detail": "Unpaid. One time registration fee of $20 for students ($35 for adults), paid at orientation.",
+  "season": "year-round",
+  "duration": "At least 3 months, 2 hours per week",
+  "status": "year-round",
+  "deadline_text": "No deadline. Register any time.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Pay the fee, go to a virtual welcome orientation, finish online training, then take a hands on training session and pick a shift. Start from the Get Started button on the volunteer page.",
+  "url": "https://austinhumanesociety.org/volunteer/",
+  "sources_fetched": [
+    "https://austinhumanesociety.org/volunteer/",
+    "https://austinhumanesociety.org/programs/youth-programming/"
+  ],
+  "priority": 2,
+  "notes": "The youth page does not list a fee, but the volunteer page does. The clinic volunteer program was not part of what I read."
+}

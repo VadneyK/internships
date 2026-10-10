@@ -1,0 +1,38 @@
+{
+  "id": "philadelphia-jefferson-northeast-summer-student-volunteer",
+  "grades": null,
+  "apply_url": null,
+  "deadline_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "min_age": 16,
+  "max_age": null,
+  "name": "Summer Student Volunteer Program, Jefferson Health Northeast",
+  "org": "Jefferson Health Northeast (Torresdale, Frankford and Bucks County hospitals)",
+  "regions": [
+    "philadelphia"
+  ],
+  "city": "Philadelphia, PA (Torresdale)",
+  "type": "volunteer",
+  "fields": [
+    "health"
+  ],
+  "what_you_do": "Volunteer in a hospital unit one day a week for eight summer weeks. Each day is four hours. You get an orientation and on-the-job training first.",
+  "who_can_apply": "Students 16 or older who can keep a regular weekly shift. Needs two school references from teachers and proof of vaccines (measles, mumps, rubella and a TB test).",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Volunteers get their own transportation.",
+  "season": "summer",
+  "duration": "8 weeks, 4 hours a day, one day a week",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The program page gives no application dates and no year. The 2024 packet said applications are accepted from February until April.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Send the application, two letters of support from teachers and shot forms to the Volunteer Services Department. You can send by mail, scan, fax or email. Phone: 215-612-4170.",
+  "needs_work_permit": false,
+  "url": "https://www.jeffersonhealth.org/volunteer/frankford-torresdale-and-bucks-county/summer-student-volunteer-program",
+  "sources_fetched": [
+    "https://www.jeffersonhealth.org/volunteer/frankford-torresdale-and-bucks-county/summer-student-volunteer-program",
+    "https://www.jeffersonhealth.org/content/dam/health2021/documents/volunteer/2024-student-volunteer-application-frankford-torresdale-bucks.pdf"
+  ],
+  "notes": "Facts come from the 2024 application packet on the Jefferson site. The program web page shows only its title (checked 2026-10-09 with a normal fetch and with curl), so the age, time, pay and how-to-apply details are not confirmed on the page. Confirm the current dates, ages and form first. Spots are limited."
+}

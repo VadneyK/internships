@@ -1,0 +1,39 @@
+{
+  "regions": [
+    "austin"
+  ],
+  "city": "Austin, TX",
+  "deadline_iso": null,
+  "apply_url": "https://www.volgistics.com/appform/1192387372",
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": false,
+  "grades": null,
+  "min_age": 13,
+  "max_age": 18,
+  "id": "austin-thinkery-volunteens",
+  "name": "VolunTeen Program",
+  "org": "Thinkery Austin (children's museum)",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "science"
+  ],
+  "what_you_do": "Teens do 60 hours of training, then give 40 hours of service at the museum. Thinkery says 208 VolunTeens served 8,880 hours in its last reported year.",
+  "who_can_apply": "Teens ages 13 to 18. Other rules are not stated on the page I could read.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer service. Cost and pay are not stated on the page I could read.",
+  "season": "year-round",
+  "duration": "60 hours of training plus 40 hours of service",
+  "status": "unconfirmed",
+  "deadline_text": "Dates and application window are not stated on the page I could read.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Thinkery's VolunTeens web address forwards to an online volunteer application (Volgistics). That form needs JavaScript, so I could not read it. Check it for the current steps.",
+  "url": "https://thinkeryaustin.org/volunteens/",
+  "sources_fetched": [
+    "https://thinkeryaustin.org/?p=32619",
+    "https://thinkeryaustin.org/volunteens/"
+  ],
+  "priority": 2,
+  "notes": "Thinkery also runs a teen Counselor in Training program for summer camps. Its page was not found (404), so it is not listed here. Check the dates, cost and application window before you apply."
+}

@@ -1,0 +1,38 @@
+{
+  "regions": [
+    "austin"
+  ],
+  "city": "Austin, TX",
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": null,
+  "grades": null,
+  "min_age": 14,
+  "max_age": 24,
+  "id": "austin-wfs-capital-area-youth-services",
+  "name": "Youth Career Services",
+  "org": "Workforce Solutions Capital Area",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Free work readiness and life skills training, personal guidance, work experience and help earning a credential for low income youth. In school students are served through Climb the Ladder CTX.",
+  "who_can_apply": "Youth ages 14 to 24 (out of school youth services target ages 16 to 24). The page says low income youth. For training scholarships and case managed help, the main page lists U.S. work authorization, living in Austin or Travis County, and one more need related to work, income or school.",
+  "paid_type": "mixed",
+  "pay_detail": "Work experience is part of the services. Paid work experience is named only for the SEAL program (students with disabilities ages 16 to 22). Pay amounts are not stated.",
+  "season": "year-round",
+  "duration": "Not stated",
+  "status": "rolling",
+  "deadline_text": "No deadline listed. Start any time.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Click Get Started on the Youth Services page. It leads to the Jumpstart Your Career registration form and a career info session. You can also use the contact page or call your local career center.",
+  "url": "https://wfscapitalarea.com/job-seekers/youth-services/",
+  "sources_fetched": [
+    "https://www.wfscapitalarea.com/?p=57",
+    "https://wfscapitalarea.com/job-seekers/youth-services/"
+  ],
+  "priority": 2,
+  "notes": "The Jumpstart form asks for the last four digits of a Social Security number. It uses them to check your info on WorkInTexas.com. Summer jobs through SEAL need year round part in WIOA. No income limit is listed."
+}

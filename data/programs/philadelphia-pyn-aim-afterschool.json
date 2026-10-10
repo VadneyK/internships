@@ -1,0 +1,37 @@
+{
+  "id": "philadelphia-pyn-aim-afterschool",
+  "grades": null,
+  "apply_url": null,
+  "deadline_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 3,
+  "min_age": null,
+  "max_age": null,
+  "name": "AIM Afterschool, Philadelphia Youth Network",
+  "org": "Philadelphia Youth Network (PYN)",
+  "regions": [
+    "philadelphia"
+  ],
+  "city": "Philadelphia, PA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Go to a supervised after-school program. It has homework help and career workshops. It also has activities for leadership and life skills.",
+  "who_can_apply": "Middle school students in the School District of Philadelphia. They must go to one of the PYN school sites.",
+  "paid_type": "unpaid",
+  "pay_detail": "Not stated; no cost is listed on the page read.",
+  "season": "school-year",
+  "duration": "School year (2026-27 sites are listed on the page)",
+  "status": "year-round",
+  "deadline_text": "The page says enrollment is open all year round.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the online forms in the PYN application portal. There are no paper applications. Send questions to afterschool@pyninc.org.",
+  "needs_work_permit": false,
+  "url": "https://www.pyninc.org/aimafterschool",
+  "notes": "For middle schoolers, so it suits younger teens. Pick a school site from the list on the page.",
+  "sources_fetched": [
+    "https://www.pyninc.org/aimafterschool"
+  ]
+}

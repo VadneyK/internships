@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "apply_url": null,
+  "opens_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": null,
+  "max_age": null,
+  "min_age": 12,
+  "duration": "Single sessions listed on the online calendar",
+  "pay_detail": "Unpaid. You can print your service hours from the volunteer portal.",
+  "id": "foodbank-central-eastern-nc-youth-volunteers",
+  "name": "Volunteer sessions (Food Bank of Central and Eastern North Carolina)",
+  "org": "Food Bank of Central & Eastern North Carolina",
+  "regions": [
+    "triangle"
+  ],
+  "city": "Raleigh and Durham, NC",
+  "type": "volunteer",
+  "fields": [
+    "social-impact",
+    "food-hospitality"
+  ],
+  "what_you_do": "Join a volunteer shift in a warehouse. You check that food is safe and pack family-size boxes. You sort and repack produce and groceries. You also label containers.",
+  "who_can_apply": "Ages 12 and up for regular sessions. Volunteers under 16 must be with an adult at all times. Kids ages 5 to 11 have special Kids Day sessions.",
+  "paid_type": "unpaid",
+  "season": "year-round",
+  "status": "year-round",
+  "deadline_text": "Sessions are listed on a calendar at each location. No deadline.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Sign up online for a session before you go. You can pick the Raleigh or Durham site, or another Food Bank site. Signing up counts as signing the volunteer form. Groups need chaperones. The Food Bank suggests 1 chaperone for every 5 youth.",
+  "url": "https://foodbankcenc.org/volunteer",
+  "priority": 2,
+  "notes": "Raleigh coordinator: volunteerservices@foodbankcenc.org, 984.339.1010. Durham coordinator: cstone@foodbankcenc.org, 919.956.2513 (option 4). Follow the dress and safety rules given at orientation.",
+  "sources_fetched": [
+    "https://foodbankcenc.org/volunteer"
+  ]
+}

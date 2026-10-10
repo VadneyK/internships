@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "The page has no teen-only section or list of teen roles, so ask the volunteer office what is open for 13 to 17 year olds. The phone number printed on the page has a non-Virginia area code; use the email.",
+  "id": "fairfax-ncs-community-volunteers",
+  "name": "Neighborhood and Community Services Volunteers (age 13 and up)",
+  "org": "Fairfax County Neighborhood and Community Services",
+  "regions": [
+    "fairfax"
+  ],
+  "city": "Fairfax County, VA",
+  "type": "volunteer",
+  "fields": [
+    "social-impact",
+    "education"
+  ],
+  "what_you_do": "Volunteer at county community centers, teen centers and youth programs. You build ties in your town and earn service hours. Jobs are posted in the county volunteer portal.",
+  "min_age": 13,
+  "max_age": null,
+  "who_can_apply": "Anyone at least 13 years old. You must finish a county volunteer orientation and a criminal background check.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Varies by opening",
+  "status": "year-round",
+  "deadline_text": "No deadline. Apply any time.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Make a profile at volunteer.fairfaxcounty.gov and search the word NCS. Apply to openings. Go to an NCS Volunteer Orientation and pass the background check. Email ncs-volunteers@fairfaxcounty.gov.",
+  "url": "https://www.fairfaxcounty.gov/neighborhood-community-services/volunteer",
+  "sources_fetched": [
+    "https://www.fairfaxcounty.gov/neighborhood-community-services/volunteer"
+  ]
+}

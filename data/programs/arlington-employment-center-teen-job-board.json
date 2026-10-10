@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": true,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "In Virginia, 14 and 15 year olds must have a work permit (Youth Employment Certificate) to work; under 14 cannot get one. The page links the state Department of Labor and Industry portal. The separate Youth Employment Program on the same site is for ages 18 to 24, not teens.",
+  "id": "arlington-employment-center-teen-job-board",
+  "name": "Arlington Employment Center Teen Job Seekers and Teen Job Board",
+  "org": "Arlington Employment Center (Arlington County)",
+  "regions": [
+    "fairfax"
+  ],
+  "city": "Arlington, VA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Free help finding a first job. You get a resume template and a 1-on-1 resume review. You also get interview practice videos and a mock interview. A Teen Job Board lists local openings.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "Teens. The page states no age or residency rule for the teen services.",
+  "paid_type": "paid",
+  "pay_detail": "Pay depends on the employer. Services are free.",
+  "season": "year-round",
+  "duration": "Ongoing",
+  "status": "year-round",
+  "deadline_text": "No deadline. Use any time.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Write your resume with the template, then apply for jobs on the Teen Job Board (hosted on Indeed). Book 1-on-1 resume or mock interview sessions through the Microsoft Forms link on the page.",
+  "url": "https://www.arlingtonva.us/Government/Programs/AEC/Teen-Job-Seekers",
+  "sources_fetched": [
+    "https://www.arlingtonva.us/Government/Programs/AEC/Teen-Job-Seekers"
+  ]
+}

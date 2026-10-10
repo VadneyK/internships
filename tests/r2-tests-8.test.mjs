@@ -21,7 +21,18 @@ const NAME_CITY_ALLOW = [
 // Pages are compared by host (without www.) plus path (without trailing slash). Query and fragment are ignored.
 const PAGE_ALLOW = [
   ["berkeley-youthworks", "ecology-center-youth-environmental-academy"], // berkeleyca.gov/youthworks: one page lists several programs
-  ["bloomington-wonderlab-teen-volunteer", "bloomington-wonderlab-wondercamp-high-school-intern"], // volgistics.com/ex/portal.dll/ap: one page lists several programs
+  ["bloomington-wonderlab-teen-volunteer", "bloomington-wonderlab-wondercamp-high-school-intern", "columbus-worthington-libraries-volunteens"], // volgistics.com/ex/portal.dll/ap: volgistics.com is a volunteer portal host shared by several organizations
+  ["indiana-world-food-prize-youth-institute-purdue", "lafayette-purdue-agriculture-science-research-institute"], // ag.purdue.edu/department/oap/camps.html: one page lists several programs; each card links to its own section with a text fragment
+  ["madison-bgc-dane-county-career-exploration-program", "madison-bgc-dane-county-summer-internship-program"], // bgcdc.org/whatweoffer/summerinternships: one page lists several programs; each card links to its own section with a text fragment
+  ["twin-cities-juxtaposition-arts-jxtalabs-apprenticeships", "twin-cities-juxtaposition-arts-valt-drawing"], // forms.office.com/r/8Nkty1Xy0p: one application form covers several programs
+  ["chicago-genesys-works-internship", "twin-cities-genesys-works-internship"], // genesysworks.org/for-students-and-families/application-process: one national application page covers several cities
+  ["loudoun-prcs-teen-volunteer-program", "loudoun-youth-advisory-council"], // loudoun.gov/Teens: one page lists several programs; each card links to its own section with a text fragment
+  ["ut-mccombs-dynamc-accounting-academy", "ut-mccombs-future-executive-academy", "ut-mccombs-subiendo-academy-rising-leaders"], // mccombs.utexas.edu summer-high-school-programs: one page lists several programs; each card links to its own section with a text fragment
+  ["pittsburgh-grow-pittsburgh-urban-farmers-in-training", "pittsburgh-learn-and-earn-summer"], // partner4work.org/learn-earn: one page covers several programs
+  ["college-park-pg-parks-artrepreneur", "college-park-pg-parks-young-stars"], // pgparks.com/activities-events/teen_preteen_programs: one page lists several programs; each card links to its own section with a text fragment
+  ["round-rock-library-teen-advisory-board", "round-rock-library-teen-summer-reading-volunteer"], // roundrocktexas.gov library volunteer page: one page lists several programs; each card links to its own section with a text fragment
+  ["twin-cities-three-rivers-baker-counselor-in-training", "twin-cities-three-rivers-eastman-naturalist-youth-leader", "twin-cities-three-rivers-silverwood-teen-arts-council"], // threeriversparks.org/page/teen-volunteer-opportunities: one page lists several programs; each card links to its own section with a text fragment
+  ["pittsburgh-warhol-tech25-teen-dj-academy", "pittsburgh-warhol-youth-arts-council"], // warhol.org/teens: one page lists several programs; each card links to its own section with a text fragment
   ["boston-mit-mites-saturdays", "boston-mit-mites-summer"], // mites.mit.edu/discover-mites/apply-to-mites: one page lists several programs
   ["champaign-urbana-park-district-cit", "champaign-urbana-park-district-fresh-crew"], // urbanaparks.org/teen-programs: one page lists several programs
   ["chicago-youth-works-summer-jobs", "chicagobility-ages-14-15", "cpl-summer-teen-internships"], // chicagoyouthworks.org: one page lists several programs

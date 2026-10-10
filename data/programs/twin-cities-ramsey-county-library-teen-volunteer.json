@@ -1,0 +1,38 @@
+{
+  "id": "twin-cities-ramsey-county-library-teen-volunteer",
+  "name": "Teen volunteer application",
+  "org": "Ramsey County Library",
+  "regions": [
+    "twin-cities"
+  ],
+  "city": "Ramsey County, MN",
+  "type": "volunteer",
+  "fields": [
+    "education"
+  ],
+  "what_you_do": "Teens help with library materials, teen services, children's services or other tasks. Branches include Maplewood, Mounds View, New Brighton, North St. Paul, Roseville, Shoreview and White Bear Lake. Some tasks involve lifting and pushing carts.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Volunteers under 18 use the teen form. A parent or guardian must sign it. No minimum age is stated.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer",
+  "season": "year-round",
+  "duration": "Not stated",
+  "status": "year-round",
+  "deadline_text": "No deadline is listed.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the online teen volunteer application. Pick the roles, the times you are free and the branch you like.",
+  "needs_work_permit": null,
+  "url": "https://www.rclreads.org/teen-volunteer-application/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.rclreads.org/teen-volunteer-application/",
+    "https://www.rclreads.org/volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 3,
+  "notes": "Some positions need a background check. The form asks for a personal reference and emergency contact. It also asks about required service hours if you need them for school."
+}

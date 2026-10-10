@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "Ask the Lanham coordinator for the semester due date, since the page does not list one for Lanham.",
+  "id": "college-park-luminis-doctors-community-student-volunteers",
+  "name": "Luminis Health Student Volunteer Program (Doctors Community Medical Center, Lanham)",
+  "org": "Luminis Health Doctors Community Medical Center",
+  "regions": [
+    "college-park",
+    "maryland"
+  ],
+  "city": "Lanham, MD",
+  "type": "volunteer",
+  "fields": [
+    "health"
+  ],
+  "what_you_do": "Volunteer at a hospital you are placed in for a full semester. You work at least 3 hours a week.",
+  "min_age": 16,
+  "max_age": null,
+  "who_can_apply": "Students at least 16 years old by the orientation date. No grade rule listed. Needs proof of immunizations (MMR, varicella, hepatitis B, Tdap, current flu shot, TB screen).",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "school-year",
+  "duration": "One semester, at least 3 hours per week",
+  "status": "rolling",
+  "deadline_text": "The Lanham campus was accepting student applications when read. Deadlines are listed only for the Annapolis campus (Summer May 1, Fall Aug 1, Spring Dec 1).",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the student form linked on the page. Go to the required orientation. Send shot records. The Lanham contact is Valerie Nicholas, Volunteer Coordinator. Her address is vnic100@luminishealth.org.",
+  "url": "https://www.luminishealth.org/en/volunteer/student-volunteers",
+  "sources_fetched": [
+    "https://www.luminishealth.org/en/volunteer/student-volunteers"
+  ]
+}

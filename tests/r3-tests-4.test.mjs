@@ -11,13 +11,13 @@ import fs from "node:fs";
 // When content improves: lower the constants to the new measured values (the failure
 // message prints them). Never raise a constant to make a new card pass; rewrite the card.
 
-// ---- Constants measured on 2026-10-10 after the 856 card rewrite. The 331 cards added later were written to stay within the counts, and the four card means were lowered to the new measured values (lower them when content improves) ----
+// ---- Constants measured on 2026-10-10 after the 856 card rewrite. The cards added later were written to stay within the counts. On 2026-10-10 the 240 cards of the city data wave were rewritten in plainer words, and the four card constants were lowered to the new measured values (lower them when content improves) ----
 const MEASURED = {
   fields: {
-    what_you_do: { mean: 6.59, aboveLimit: 77 },
-    who_can_apply: { mean: 6.68, aboveLimit: 235 },
-    how_to_apply: { mean: 7.9, aboveLimit: 398 },
-    notes: { mean: 6.81, aboveLimit: 242 },
+    what_you_do: { mean: 6.4, aboveLimit: 77 },
+    who_can_apply: { mean: 6.28, aboveLimit: 232 },
+    how_to_apply: { mean: 7.32, aboveLimit: 394 },
+    notes: { mean: 6.43, aboveLimit: 240 },
   },
   pages: { mean: 4.87, aboveLimit: 0 },
 };

@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 3,
+  "notes": "Not a job or internship. Listed because it is a real university program for teens in tech and game design. Check the page for the next session.",
+  "id": "fairfax-gmu-mason-game-and-technology-academy",
+  "name": "Mason Game and Technology Academy (MGTA) classes",
+  "org": "George Mason University",
+  "regions": [
+    "fairfax"
+  ],
+  "city": "Fairfax and Manassas, VA",
+  "type": "pre-college",
+  "fields": [
+    "tech-cs",
+    "arts-media"
+  ],
+  "what_you_do": "Weekend and summer classes in game design with Unity, Python game programming, and 2D game art. Students build games and art projects.",
+  "min_age": 9,
+  "max_age": 17,
+  "who_can_apply": "Fall 2026 classes by age: 9 to 17 for 2D art, 11 to 17 for Unity, 13 to 17 for advanced Python (needs prior programming). Younger-only classes run in Manassas. Typing and basic computer skills expected.",
+  "paid_type": "fee-based",
+  "pay_detail": "$595 per fall class. Scholarships page exists but gives no details.",
+  "season": "school-year",
+  "duration": "Fall 2026: six Saturdays 10 a.m. to 3 p.m. at Fairfax; summer classes are five days, 9 a.m. to 4 p.m.",
+  "status": "rolling",
+  "deadline_text": "Fall 2026 teen classes are closed. No deadline listed; classes cancel with a full refund if too few sign up. Summer 2026 registration closed, 2027 dates not posted.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Use the Register link on the MGTA page when registration opens for a class.",
+  "url": "https://mgta.gmu.edu/mgta-program/",
+  "sources_fetched": [
+    "https://mgta.gmu.edu/mgta-program/"
+  ]
+}

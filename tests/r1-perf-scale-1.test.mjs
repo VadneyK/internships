@@ -10,13 +10,13 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
-// Limits in bytes, about 10 percent above the sizes measured on 2026-10-10. Raised the same day for the city data wave: the guide grew from 1,187 to 1,370 programs (about 15 percent), so the four data limits grew by the same share. To raise one on purpose, change its number here in the same pull request and say why in that PR.
+// Limits in bytes, about 10 percent above the sizes measured on 2026-10-10. Raised the same day for the city data waves: the guide grew from 1,187 to 1,610 programs (about 36 percent), so the four data limits grew with it. To raise one on purpose, change its number here in the same pull request and say why in that PR.
 const LIMITS = {
   data: {
-    "data/entries.json": { raw: 3050000, gzip: 700000 },
-    "data/entries-lite.json": { raw: 1730000, gzip: 380000 },
-    "data/entries-card.json": { raw: 870000, gzip: 126000 },
-    "data/entries-core.json": { raw: 270000, gzip: 27000 },
+    "data/entries.json": { raw: 3530000, gzip: 800000 },
+    "data/entries-lite.json": { raw: 2020000, gzip: 440000 },
+    "data/entries-card.json": { raw: 1025000, gzip: 146000 },
+    "data/entries-core.json": { raw: 320000, gzip: 32000 },
   },
   liteBytesPerProgram: 1300,
   rootPage: 32000,
@@ -107,15 +107,15 @@ test("the whole repo is within budget", () => {
   assert.deepEqual(problems, [], problems.join("\n"));
 });
 
-// Mutation test: a fake size table with entries-lite.json at 1,800,000 raw bytes must be reported.
-// The raw limit (1,730,000) is broken, and so is the per-program limit, because 1,800,000 / 1,370 is about 1,314 bytes per program (limit 1,300).
+// Mutation test: a fake size table with entries-lite.json at 2,150,000 raw bytes must be reported.
+// The raw limit (2,020,000) is broken, and so is the per-program limit, because 2,150,000 / 1,610 is about 1,335 bytes per program (limit 1,300).
 // Every other file in the fake table is inside its limit, so no other file may be reported.
-test("mutation: a lite file at 1,800,000 bytes is reported, and only lite is reported", () => {
-  const fake = { ...repoSizes, [LITE]: { bytes: 1800000, gzip: repoSizes[LITE].gzip } };
+test("mutation: a lite file at 2,150,000 bytes is reported, and only lite is reported", () => {
+  const fake = { ...repoSizes, [LITE]: { bytes: 2150000, gzip: repoSizes[LITE].gzip } };
   const problems = budgetProblems(fake, programCount);
   assert.deepEqual(problems, [
-    `${LITE} is 1800000 bytes, over the limit of 1730000 bytes`,
-    `${LITE} is ${Math.round(1800000 / programCount)} bytes per program (1800000 bytes for ${programCount} programs), over the limit of 1300 bytes per program`,
+    `${LITE} is 2150000 bytes, over the limit of 2020000 bytes`,
+    `${LITE} is ${Math.round(2150000 / programCount)} bytes per program (2150000 bytes for ${programCount} programs), over the limit of 1300 bytes per program`,
   ]);
 });
 

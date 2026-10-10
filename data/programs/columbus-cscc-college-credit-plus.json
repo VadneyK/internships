@@ -1,0 +1,40 @@
+{
+  "grades": "Grades 7 to 12",
+  "apply_url": "https://wd1-student.myworkdaysite.com/cscc/CSCC_CCP",
+  "min_age": null,
+  "max_age": null,
+  "pay_detail": "Courses and textbooks are free for public school students. Transportation and other costs are the student's.",
+  "duration": "Semester courses",
+  "deadline_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 1,
+  "needs_work_permit": false,
+  "notes": "The college application asks you to have your Social Security number ready. Use a personal email, not a school email. Send your unofficial high school transcripts or ACT/SAT scores to your CCP advisor.",
+  "id": "columbus-cscc-college-credit-plus",
+  "name": "College Credit Plus at Columbus State",
+  "org": "Columbus State Community College",
+  "regions": [
+    "columbus",
+    "ohio"
+  ],
+  "city": "Columbus, OH",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take real college classes at Columbus State while you are in grades 7 to 12. You earn college credit and meet high school graduation rules at the same time.",
+  "who_can_apply": "Ohio residents in grades 7 to 12. New students need a 3.0 unweighted GPA, or ACT or SAT scores that qualify, or Columbus State placement test scores that qualify. Middle schoolers must take the reading and writing placement tests. They must reach the needed score in at least one area.",
+  "paid_type": "unpaid-credit",
+  "season": "school-year",
+  "status": "rolling",
+  "deadline_text": "Public school students turn in a Letter of Intent to their high school by April 1. Homeschool and non-public students apply for state CCP funding by April 1.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Give your school a Letter of Intent. Apply to Columbus State. There is no fee or essay. Finish online onboarding. Show that you meet one of the eligibility rules. Then sign up for classes with your counselor.",
+  "url": "https://www.cscc.edu/academics/college-credit-plus/ccp-Admissions.shtml",
+  "sources_fetched": [
+    "https://www.cscc.edu/academics/college-credit-plus/",
+    "https://www.cscc.edu/academics/college-credit-plus/ccp-Admissions.shtml",
+    "https://www.cscc.edu/academics/college-credit-plus/parents.shtml"
+  ]
+}

@@ -11,6 +11,10 @@ const ENTRIES = JSON.parse(readFileSync(new URL("../data/entries.json", import.m
 const NOW = new Date(2026, 9, 10).getTime(); // the checked date in data/meta.json
 
 const KNOWN = {
+  "bloomington-iu-jacobs-composition-academy": "2027-01-11",
+  "champaign-illinois-arabic-high-school-program": "2027-04-11",
+  "nc-museum-natural-sciences-cafe-coordinators": "2027-04-19",
+  "nc-museum-natural-sciences-climate-resilience-institute": "2027-04-09",
   "bloomington-iu-jacobs-dance-summer-intensives": "2027-02-08",
   "college-park-pg-parks-shakespeare-in-the-parks-apprenticeship": "2027-03-01",
   "college-park-pg-parks-teen-performance-ensemble": "2027-02-07",

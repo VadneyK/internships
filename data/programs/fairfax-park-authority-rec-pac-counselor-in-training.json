@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "This FAQ page looks old. It links to 2019 Rec-PAC sites. Check the fee, dates and deadline with the Park Authority at 703-324-8700 before you apply.",
+  "id": "fairfax-park-authority-rec-pac-counselor-in-training",
+  "name": "Rec-PAC Counselor-in-Training (C.I.T.)",
+  "org": "Fairfax County Park Authority",
+  "regions": [
+    "fairfax"
+  ],
+  "city": "Fairfax County, VA",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "sports"
+  ],
+  "what_you_do": "Help staff at summer Rec-PAC school sites, RECenters, parks and camps run by the Park Authority.",
+  "min_age": 14,
+  "max_age": 17,
+  "who_can_apply": "Any teen aged 14 to 17. Rec-PAC school sites have no interview; camp sites at Rec Centers and parks need an interview.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Counts as volunteer hours. The FAQ lists a $160 fee for the whole summer at school-based Rec-PAC sites.",
+  "season": "summer",
+  "duration": "At least one week encouraged, up to the full summer; school sites run 8:15 a.m. to 4 p.m. Monday to Friday",
+  "status": "unconfirmed",
+  "deadline_text": "FAQ says Rec-PAC applications were due June 14 (page does not give a year). Rec Center sites: contact the site to set an interview.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Rec-PAC school sites: fill out the application and return it to the Rec-PAC office. Rec Center and park camp sites: contact the site for an interview. All CITs attend a 3-hour training and pass a knowledge test.",
+  "url": "https://www.fairfaxcounty.gov/parks/node/1227",
+  "sources_fetched": [
+    "https://www.fairfaxcounty.gov/parks/node/1227"
+  ]
+}

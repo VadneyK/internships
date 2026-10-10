@@ -1,0 +1,38 @@
+{
+  "grades": "Grades 7 to 12 (2026-2027 school year)",
+  "apply_url": null,
+  "min_age": null,
+  "max_age": null,
+  "pay_detail": "Unpaid volunteer",
+  "duration": null,
+  "deadline_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 3,
+  "needs_work_permit": false,
+  "notes": "The page says the library is postponing adult volunteering for now. Call the youth department with questions.",
+  "id": "columbus-bexley-library-teen-volunteers",
+  "name": "Teen Volunteering at Bexley Public Library",
+  "org": "Bexley Public Library",
+  "regions": [
+    "columbus"
+  ],
+  "city": "Bexley, OH",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "any"
+  ],
+  "what_you_do": "Teens volunteer at the library. The page does not list tasks.",
+  "who_can_apply": "Teens who are at least 13 years old or in grades 7 to 12 during the 2026-2027 school year. The page says the teen program is currently full.",
+  "paid_type": "unpaid",
+  "season": "summer",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The page says the teen volunteer program is currently full and that applications for summer volunteering will open April 1. No year is shown.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Email teen@bexleylibrary.org to join the teen volunteer email list. That is how you hear about openings. The summer application opens April 1.",
+  "url": "https://www.bexleylibrary.org/volunteer",
+  "sources_fetched": [
+    "https://www.bexleylibrary.org/volunteer"
+  ]
+}

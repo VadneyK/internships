@@ -1,0 +1,37 @@
+{
+  "grades": null,
+  "apply_url": null,
+  "min_age": null,
+  "max_age": null,
+  "pay_detail": "Unpaid volunteer. The page also lists unpaid internships for school credit.",
+  "duration": null,
+  "deadline_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "needs_work_permit": false,
+  "notes": "Ask the park or property near you what age it takes. The list of tasks on the page is general and not every property offers every task.",
+  "id": "indiana-dnr-volunteers-under-18",
+  "name": "Volunteer with Indiana DNR (youth volunteer agreement for under 18)",
+  "org": "Indiana Department of Natural Resources",
+  "regions": [
+    "indiana"
+  ],
+  "city": "Indiana (state parks, nature centers and other DNR properties)",
+  "type": "volunteer",
+  "fields": [
+    "environment"
+  ],
+  "what_you_do": "Help at DNR properties. Jobs include working at nature centers, fixing trails and planting native plants. You can also pull invasive plants, clean streams, check birdhouses, or share photos and art. You set up your project with a property.",
+  "who_can_apply": "Open to adults and youth. If you are younger than 18, a guardian fills out the Youth Volunteer Service Agreement. The page does not state a minimum age.",
+  "paid_type": "unpaid",
+  "season": "year-round",
+  "status": "year-round",
+  "deadline_text": "No deadline. Schedules are flexible and set with the property.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Create a Volunteer Profile and send the signed Youth Volunteer Service Agreement (guardian signs) to dnrvolunteer@dnr.IN.gov. Check CERVIS for current projects or contact a property near you. Phone 463-203-6562.",
+  "url": "https://www.in.gov/dnr/about-us/volunteer-and-internship-opportunities",
+  "sources_fetched": [
+    "https://www.in.gov/dnr/about-us/volunteer-and-internship-opportunities"
+  ]
+}

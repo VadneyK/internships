@@ -90,6 +90,11 @@ ROOT_URL_ALLOW = (
     "youth-uprising-summer-jobs",
     "youthbeat-media-careers",
     "zooniverse",
+    "college-park-umd-brin-maryland-mathematics-camp",  # own site for this one camp
+    "fairfax-gmu-washington-journalism-and-media-conference",  # own site for this one conference
+    "fairfax-gmu-wyse-washington-youth-summit-environment",  # own site for this one summit
+    "minnesota-youth-institute-mnyi",  # own site for this one program
+    "philadelphia-police-explorer-cadets-post-991",  # own site for this one post
 )
 
 

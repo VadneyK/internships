@@ -1,0 +1,37 @@
+{
+  "grades": null,
+  "apply_url": null,
+  "min_age": null,
+  "max_age": null,
+  "pay_detail": "Varies by employer. Each posting sets its own pay.",
+  "duration": null,
+  "deadline_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "needs_work_permit": null,
+  "notes": "The site has a Create Your Account link for learners. The page does not state age rules for postings, so check each posting. Ask your school counselor if your school is a partner. The site moved from indianaintern.net to workandlearnindiana.com.",
+  "id": "indiana-work-and-learn-indiana",
+  "name": "Work and Learn Indiana (free internship and work-based learning matching site)",
+  "org": "Work and Learn Indiana, with the Indiana Commission for Higher Education",
+  "regions": [
+    "indiana"
+  ],
+  "city": "Indiana (statewide)",
+  "type": "internship",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "A free website where Indiana employers post internships and other work-based learning. Learners search by region and apply. High schools, colleges and employers can join.",
+  "who_can_apply": "The page says anyone seeking a work-based learning experience, and lists high schools among its partners. It does not state a minimum age. Learners can create an account on the site.",
+  "paid_type": "not-stated",
+  "season": "year-round",
+  "status": "year-round",
+  "deadline_text": "No deadline. Postings come and go, so each one has its own date.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Make a free learner account on the site. Search for chances by region. Then apply to each one you like.",
+  "url": "https://www.indianaintern.net/work_and_learn_indiana",
+  "sources_fetched": [
+    "https://www.indianaintern.net/work_and_learn_indiana"
+  ]
+}

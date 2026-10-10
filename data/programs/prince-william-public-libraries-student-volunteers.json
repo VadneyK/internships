@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 3,
+  "notes": "Adult volunteer roles on the same page need age 18. Branch list is at pwcva.gov/department/library/branch-locations-hours/.",
+  "id": "prince-william-public-libraries-student-volunteers",
+  "name": "Prince William Public Libraries Student Volunteer Program",
+  "org": "Prince William Public Libraries",
+  "regions": [
+    "fairfax",
+    "virginia"
+  ],
+  "city": "Prince William County, VA",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "any"
+  ],
+  "what_you_do": "Student volunteers help at library branches. The page says there is a wide range of activities but does not list them.",
+  "min_age": 13,
+  "max_age": null,
+  "who_can_apply": "Students age 13 or older.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Not stated",
+  "status": "year-round",
+  "deadline_text": "No deadline stated.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the student volunteer application in person at the branch you choose, or contact the branch. Volunteer Office: 703-792-6100.",
+  "url": "https://www.pwcva.gov/department/library/volunteer-and-internship-opportunities",
+  "sources_fetched": [
+    "https://www.pwcva.gov/department/library/volunteer-and-internship-opportunities"
+  ]
+}

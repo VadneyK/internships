@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "apply_url": null,
+  "min_age": null,
+  "max_age": null,
+  "pay_detail": "Unpaid volunteer opportunities",
+  "duration": null,
+  "deadline_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "needs_work_permit": false,
+  "notes": "You need an account on the volunteer network site. Parks volunteer pages on the city site list events, camps and clean-ups but do not state ages.",
+  "id": "bloomington-volunteer-network",
+  "name": "City of Bloomington Volunteer Network",
+  "org": "City of Bloomington, Community and Family Resources",
+  "regions": [
+    "bloomington"
+  ],
+  "city": "Bloomington, IN",
+  "type": "volunteer",
+  "fields": [
+    "social-impact",
+    "any"
+  ],
+  "what_you_do": "A free site that lists volunteer jobs from 300 or more local nonprofits, plus events and trainings. You make an account and sign up for opportunities.",
+  "who_can_apply": "The city says it connects volunteers of all ages. Each posting sets its own rules, so check the listing for age limits.",
+  "paid_type": "unpaid",
+  "season": "year-round",
+  "status": "year-round",
+  "deadline_text": "No deadline. Each opportunity has its own date.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Search for chances at BloomingtonVolunteerNetwork.org. Make an account and sign up. Call the coordinator at 812-349-3433.",
+  "url": "https://bloomington.in.gov/volunteer",
+  "sources_fetched": [
+    "https://bloomington.in.gov/volunteer",
+    "https://www.bloomingtonvolunteernetwork.org/"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "apply_url": null,
+  "min_age": 12,
+  "max_age": 18,
+  "pay_detail": "Unpaid. Earns service hours.",
+  "duration": null,
+  "deadline_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "needs_work_permit": false,
+  "notes": "Phone 614-882-7277, option 5. No direct application link was on the page. Lead volunteers need at least 4 to 6 hours a month and summer volunteers at least 2 hours a month.",
+  "id": "columbus-westerville-library-teen-volunteers",
+  "name": "Teen Volunteer Programs (Westerville Public Library)",
+  "org": "Westerville Public Library",
+  "regions": [
+    "columbus"
+  ],
+  "city": "Westerville, OH",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "any"
+  ],
+  "what_you_do": "Teens earn service hours by helping library staff. There are two roles. Summer Volunteers give out prizes and help kids sign up to read. Lead Volunteers help at events and get materials ready.",
+  "who_can_apply": "Ages 12 to 18. Lead Volunteers are ages 16 to 18. Requirements vary and spaces are limited.",
+  "paid_type": "unpaid",
+  "season": "year-round",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Summer Volunteers (ages 12 to 18, May to July) is marked not yet accepting applications. Lead Volunteers is marked currently full. The page gives no year.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Read the teen volunteer rules page. Fill out an application, even if you have volunteered before. Go to an orientation before your first shift. Use the phone number in the notes for questions.",
+  "url": "https://westervillelibrary.org/teen-volunteers/",
+  "sources_fetched": [
+    "https://westervillelibrary.org/teen-volunteers/",
+    "https://westervillelibrary.org/volunteer/"
+  ]
+}

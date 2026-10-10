@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": "https://forms.office.com/r/3We50d6ykS",
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": false,
+  "deadline_iso": null,
+  "id": "champaign-urbana-free-library-teen-volunteers",
+  "name": "Teen Volunteer at The Urbana Free Library",
+  "org": "The Urbana Free Library",
+  "regions": [
+    "champaign"
+  ],
+  "city": "Urbana, IL",
+  "type": "volunteer",
+  "fields": [
+    "education"
+  ],
+  "what_you_do": "Teens 14 to 18 help the library. Jobs include finding books and items, helping with programs, the seed swap, gardening and book sale setup. Some roles, like Teen Open Lab, need an interview.",
+  "min_age": 14,
+  "max_age": 18,
+  "who_can_apply": "Ages 14 to 18 can volunteer on their own with a parent or guardian signing the consent. Under 14 may not volunteer alone.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid (the form says no money is paid)",
+  "season": "year-round",
+  "duration": "At least 3 months, at least 1 hour a week, shifts up to 3 hours. Some roles need a longer commitment.",
+  "status": "year-round",
+  "deadline_text": "Apply any time. No deadline is posted.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the online volunteer application. Or email volunteer@urbanafree.org. Teens 14 to 18 need a parent or guardian to read and sign a consent form. They must do it before the first onboarding interview. The paper form asks for two references who are not family.",
+  "url": "https://urbanafreelibrary.org/about-us/volunteer",
+  "sources_fetched": [
+    "https://urbanafreelibrary.org/about-us/volunteer",
+    "https://urbanafreelibrary.org/sites/default/files/pdfs/volunteer_app0323_fill.pdf",
+    "https://urbanafreelibrary.org/node/25"
+  ],
+  "priority": 2,
+  "notes": "Roles marked with a star on the form (Teen Open Lab, Computer Lab, Archives, Seed Exchange, Home Delivery Driver) need extra interviews and longer commitments. Teen Open Lab shifts are Monday to Thursday 3 to 5:30 pm. Library hours are on the form. Phone 217-367-4057."
+}

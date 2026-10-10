@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": "https://volunteer.loudoun.gov/acts/console.php?console_id=0403&console_type=application&ht=1",
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "Questions: 703-777-0343. Also see PRCS Connect (bit.ly/PRCSteens) for current teen programs.",
+  "id": "loudoun-prcs-teen-volunteer-program",
+  "name": "Loudoun Parks and Recreation Teen Volunteer Program",
+  "org": "Loudoun County Parks, Recreation and Community Services (PRCS)",
+  "regions": [
+    "fairfax",
+    "virginia"
+  ],
+  "city": "Loudoun County, VA",
+  "type": "volunteer",
+  "fields": [
+    "any",
+    "social-impact"
+  ],
+  "what_you_do": "Volunteer in many county rec programs and earn service hours. Look in the volunteer portal for teen openings.",
+  "min_age": 14,
+  "max_age": 18,
+  "who_can_apply": "Teens ages 14 to 18. The page does not state a residency rule.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Varies by opening",
+  "status": "year-round",
+  "deadline_text": "No deadline stated. Apply any time.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Look for teen openings in the Loudoun volunteer portal. Then send the PRCS volunteer application.",
+  "url": "https://www.loudoun.gov/Teens#:~:text=Teen%20Volunteer",
+  "sources_fetched": [
+    "https://www.loudoun.gov/Teens"
+  ]
+}
