@@ -1,0 +1,41 @@
+{
+  "regions": [
+    "los-angeles"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "grades": null,
+  "needs_work_permit": false,
+  "id": "long-beach-parks-recreation-marine-volunteer",
+  "name": "Long Beach Parks, Recreation and Marine Volunteer (13 and up)",
+  "org": "City of Long Beach Parks, Recreation and Marine",
+  "city": "Long Beach, CA",
+  "type": "volunteer",
+  "fields": [
+    "any",
+    "sports",
+    "environment"
+  ],
+  "what_you_do": "Volunteer at local parks, after school sites and senior centers. You can also help at special events, youth sports and summer programs. Other spots are the Teen Center and El Dorado Nature Center.",
+  "min_age": 13,
+  "max_age": null,
+  "who_can_apply": "People ages 13 and over.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "Not stated",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline stated.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use the online 'Apply to Volunteer' link. It is in the BetterImpact portal. For questions, call (562) 570-3226 or write to prmvolunteers@longbeach.gov.",
+  "url": "https://www.longbeach.gov/park/recreation-programs/programs-and-classes/volunteer-opportunities/",
+  "sources_fetched": [
+    "https://www.longbeach.gov/park/recreation-programs/teen-programs/",
+    "https://www.longbeach.gov/park/recreation-programs/programs-and-classes/volunteer-opportunities/"
+  ],
+  "priority": 2,
+  "notes": "The page does not list hours or what each role does. Ask which sites take 13 year olds."
+}

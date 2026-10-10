@@ -1,0 +1,39 @@
+{
+  "id": "nyc-dycd-train-and-earn",
+  "name": "Train & Earn",
+  "org": "NYC Department of Youth and Community Development (DYCD)",
+  "regions": [
+    "new-york-city"
+  ],
+  "city": "New York City (citywide, including Manhattan and the Bronx)",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "A job training program for young people who are out of school and not working. The program includes paid internships.",
+  "min_age": 16,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Young people ages 16 to 24 who are not in school and not working. The page also lists a high school diploma or equivalent, U.S. work authorization, and Selective Service registration (for males).",
+  "paid_type": "paid",
+  "pay_detail": "The page says the program includes paid internships. It does not state the pay rate.",
+  "season": "year-round",
+  "duration": "Not stated",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No dates are posted. Contact DYCD Community Connect (1-800-246-4646) to find a provider.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "The page has no application form. Call DYCD Community Connect at 1-800-246-4646 to find a provider near you.",
+  "needs_work_permit": null,
+  "url": "https://www.nyc.gov/site/dycd/services/jobs-internships/train-and-earn.page",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.nyc.gov/site/dycd/services/jobs-internships/train-and-earn.page",
+    "https://www.nyc.gov/site/dycd/services/jobs-internships.page"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 3,
+  "notes": "The page says the program is for ages 16 to 24 who are not in school and not working. Target industries are Infrastructure, Healthcare, Technology, Media and Government. The page does not state the pay rate, the program length or whether a work permit is needed."
+}

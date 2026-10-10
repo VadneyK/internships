@@ -8,7 +8,7 @@ const require = createRequire(import.meta.url);
 globalThis.self = globalThis;
 const L = require("../assets/js/lib.js");
 const ENTRIES = JSON.parse(readFileSync(new URL("../data/entries.json", import.meta.url), "utf8"));
-const NOW = new Date(2026, 9, 9).getTime();
+const NOW = new Date(2026, 9, 10).getTime(); // the checked date in data/meta.json
 
 const KNOWN = {
   "bloomington-iu-jacobs-dance-summer-intensives": "2027-02-08",
@@ -18,6 +18,7 @@ const KNOWN = {
   "emory-pre-college-program": "2027-05-03",
   "nc-museum-natural-sciences-junior-interpreters": "2027-03-22",
   "nyc-columbia-pre-college-nyc-commuter-summer": "2027-04-01",
+  "nyc-manhattan-university-mechanical-engineering-summer-institute": "2027-06-01",
   "pittsburgh-cmu-cs-scholars": "2027-02-01",
   "pittsburgh-cmu-pre-college-programs": "2027-03-01",
   "pittsburgh-cmu-summer-academy-math-science": "2027-02-01"
@@ -52,7 +53,7 @@ test("a closed card with a last-year pattern or a past date returns null", () =>
 
 test("today counts, and unconfirmed cards work the same way", () => {
   const base = byId("pittsburgh-cmu-cs-scholars");
-  const today = Object.assign({}, base, { deadline_iso: "2026-10-09" });
+  const today = Object.assign({}, base, { deadline_iso: "2026-10-10" });
   assert.ok(L.knownDeadline(today, NOW));
   const unconf = Object.assign({}, base, { status: "unconfirmed" });
   assert.ok(L.knownDeadline(unconf, NOW));

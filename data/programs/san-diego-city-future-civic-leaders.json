@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "max_age": 15,
+  "apply_url": "https://app.betterimpact.com/PublicEnterprise/EnterpriseGvi?enterpriseGuid=e7ef01a2-fd5d-40e9-a8d0-78324d817ec7&gviGuid=fe6d5e9f-9676-4b3b-b220-73682507f094",
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "priority": 2,
+  "notes": "Only for ages 13 to 15, so a 16 year old is too old. For older teens, see the City paid internships. Confirm the current cycle with workreadiness@sandiego.gov, the contact listed on the City page.",
+  "id": "san-diego-city-future-civic-leaders",
+  "name": "Future Civic Leaders",
+  "org": "City of San Diego (Internship and Work Readiness Program)",
+  "regions": [
+    "san-diego"
+  ],
+  "city": "San Diego, CA",
+  "type": "civic-government",
+  "fields": [
+    "law-government",
+    "social-impact"
+  ],
+  "what_you_do": "Learn about local government and build leadership skills. You meet in person once a month and online every week. You do volunteer projects, go on City job shadows and join skill workshops.",
+  "min_age": 13,
+  "who_can_apply": "Middle and high school students ages 13 to 15 who can come to the meetings. You show interest in service and leadership.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Gift card rewards at 40 service hours and a certificate signed by the Mayor at 80 hours.",
+  "season": "school-year",
+  "duration": "Weekly online meeting (Mondays 5:30 to 6:30 p.m.) plus one in-person meeting a month",
+  "status": "unconfirmed",
+  "deadline_text": "No deadline is listed on the application page.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill in the online form linked from the City youth volunteer page. Questions? Write to workreadiness@sandiego.gov.",
+  "url": "https://www.sandiego.gov/volunteer-program/youth",
+  "sources_fetched": [
+    "https://www.sandiego.gov/volunteer-program/youth",
+    "https://app.betterimpact.com/PublicEnterprise/EnterpriseGvi?enterpriseGuid=e7ef01a2-fd5d-40e9-a8d0-78324d817ec7&gviGuid=fe6d5e9f-9676-4b3b-b220-73682507f094"
+  ]
+}

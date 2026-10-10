@@ -1,0 +1,37 @@
+{
+  "grades": null,
+  "max_age": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "priority": 2,
+  "notes": "The consent form also covers Coastline College and Orange Coast College in the same district. Only one parent consent form is needed for all high school years. The page says tuition is free, but students may still owe college fees and course costs. It offers a Foundation financial aid form and a possible fee waiver.",
+  "id": "orange-county-golden-west-college-dual-concurrent-enrollment",
+  "name": "Golden West College Dual and Concurrent Enrollment",
+  "org": "Golden West College (Coast Community College District)",
+  "regions": [
+    "orange-county"
+  ],
+  "city": "Huntington Beach, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take college classes while in high school. Dual enrollment classes are taught at partner high schools during the school day. Concurrent classes are on the Golden West campus or online.",
+  "min_age": null,
+  "who_can_apply": "Current high school students. You need a parent consent form and one Dual Enrollment Release Form. Concurrent students also submit a Concurrent Enrollment Release Form from their high school every term. High school students cannot register for a college class without a valid release form on file.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Tuition is free. Dual enrollment classes taught at a high school are free; concurrent students pay college fees and books unless their district covers them. A limited number of help grants are offered.",
+  "season": "year-round",
+  "duration": "By term: fall, winter/spring and summer",
+  "status": "rolling",
+  "deadline_text": "The page was taking Fall 2026 forms. Registration for high school students started June 4, 2026. Check the page for each new term.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply to Golden West College (new students create an Open CCC account) and write down your CCCID number. Then turn in the consent forms and get your high school's approval. Dual enrollment classes are taught at your high school, so your counselor adds you to the roster. Concurrent students use a Concurrent Enrollment Release Form and register in MyGWC. Questions: dualenrollment@gwc.cccd.edu.",
+  "url": "https://www.goldenwestcollege.edu/dualenrollment/index.html",
+  "sources_fetched": [
+    "https://www.goldenwestcollege.edu/dualenrollment/index.html"
+  ]
+}

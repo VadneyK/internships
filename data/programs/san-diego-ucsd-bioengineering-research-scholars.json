@@ -1,0 +1,41 @@
+{
+  "grades": "Grades 9 to 12",
+  "max_age": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "priority": 3,
+  "notes": "Costs a lot. Scholarships exist for some Research Scholars programs but the scholarship page did not list Bioengineering. Email precollege@ucsd.edu with questions.",
+  "id": "san-diego-ucsd-bioengineering-research-scholars",
+  "name": "UC San Diego Bioengineering Research Scholars",
+  "org": "UC San Diego Department of Bioengineering and Division of Extended Studies",
+  "regions": [
+    "san-diego",
+    "virtual"
+  ],
+  "city": "La Jolla, San Diego, CA (live online)",
+  "type": "pre-college",
+  "fields": [
+    "science",
+    "engineering",
+    "health"
+  ],
+  "what_you_do": "Take live online bioengineering courses with a loaner lab kit. Start with an intro course, then a research workshop, then plan and carry out your own project with a university lab.",
+  "min_age": null,
+  "who_can_apply": "Students in grades 9 to 12. Entry is by application. The intro course (BE-BOAT) comes first.",
+  "paid_type": "fee-based",
+  "pay_detail": "Tuition $2,700 for the BE-BOAT intro course. Other course prices are on the course pages.",
+  "season": "winter",
+  "duration": "About 7 weeks (Winter 2027 intro course: Jan 9 to Feb 27, 2027)",
+  "status": "open-now",
+  "deadline_text": "Winter 2027 application deadline Dec 18, 2026, with a last call through Jan 3, 2027. Space is limited and may fill sooner.",
+  "deadline_iso": "2026-12-18",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply online. You hear back 7 to 10 business days later. Payment is due within 2 weeks of acceptance.",
+  "url": "https://researchscholars.ucsd.edu/currentprograms/bioengineering/index.html",
+  "sources_fetched": [
+    "https://researchscholars.ucsd.edu/currentprograms/bioengineering/index.html",
+    "https://researchscholars.ucsd.edu/currentprograms/bioengineering/beboat-drawer.html"
+  ]
+}

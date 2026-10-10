@@ -24,6 +24,8 @@ const ALLOW = {
   "college-park-pg-parks-shakespeare-in-the-parks-apprenticeship": ["undated-status-has-deadline"],
   "college-park-pg-parks-teen-performance-ensemble": ["undated-status-has-deadline"],
   "college-park-umd-sparc-robotics-certificate": ["undated-status-has-deadline"],
+  // Same pattern: the page gives a registration deadline of 2027-06-01 but the registration form could not be read, so the card stays unconfirmed.
+  "nyc-manhattan-university-mechanical-engineering-summer-institute": ["undated-status-has-deadline"],
 };
 
 const isDate = (v) => typeof v === "string" && /^\d{4}-\d{2}-\d{2}$/.test(v);

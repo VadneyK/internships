@@ -1,0 +1,40 @@
+{
+  "id": "nyc-parks-lifeguard-program",
+  "name": "NYC Parks Lifeguard Program",
+  "org": "NYC Department of Parks and Recreation",
+  "regions": [
+    "new-york-city"
+  ],
+  "city": "New York City (pools and beaches in all five boroughs, including Manhattan and the Bronx)",
+  "type": "paid-youth-program",
+  "fields": [
+    "sports"
+  ],
+  "what_you_do": "Pass a swim test and a vision test. Take a 16-session training course. Then work as a lifeguard at a city pool or beach in the summer.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Age 16 or older by the first day of work. The test page said 16 by July 18, 2026. You must swim 50 yards and meet the vision rule.",
+  "paid_type": "paid",
+  "pay_detail": "$22 per hour for lifeguards who finish training and get a post. Lifeguards also get a $908 training payment after the summer season.",
+  "season": "summer",
+  "duration": "Training course of 16 sessions, then the summer season. Beaches open Memorial Day weekend and outdoor pools open in late June. Both close the Sunday after Labor Day. You work five or six days a week.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "No test dates are open for registration right now. The page says qualifying tests run from late October through late February in all five boroughs. Sign up on the Parks site to get a notice when dates open.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Register for a qualifying test on the Parks page when dates open (or join the notice list). Pass the swim and vision test, then do the training. A letter from an eye doctor can replace the on-site vision exam.",
+  "needs_work_permit": null,
+  "url": "https://www.nycgovparks.org/opportunities/jobs/lifeguards",
+  "apply_url": "https://www.nycgovparks.org/reg/life-guard-test",
+  "sources_fetched": [
+    "https://www.nycgovparks.org/opportunities/jobs/lifeguards",
+    "https://www.nycgovparks.org/reg/life-guard-test",
+    "https://www.nycgovparks.org/opportunities/jobs"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 1,
+  "notes": "The two Parks pages disagree on the swim time. The main page says 50 yards in 50 seconds or less. The test page says 50 yards in 40 seconds or less with proper form. Plan for the faster one. The pages do not say whether a work permit is needed for 16 and 17 year olds."
+}

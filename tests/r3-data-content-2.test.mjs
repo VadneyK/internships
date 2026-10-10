@@ -94,3 +94,32 @@ test("cards whose pay is not stated are mixed, never unpaid", () => {
     assert.equal(e.paid_type, "mixed", id + " must not be labelled unpaid when pay is not stated");
   }
 });
+
+// Cards whose pay is not stated on the page. They use paid_type "not-stated", which the pay filter
+// leaves out of "Paid or stipend", so an unknown role is never shown as paid.
+const NOT_STATED_IDS = [
+  "atlanta-public-schools-work-based-learning",
+  "aurora-better-employment-outcomes-initiative",
+  "chicago-adler-planetarium-astro-ambassadors",
+  "chicago-adler-planetarium-far-horizons-teens",
+  "chicago-lincoln-park-zoo-conservation-ambassadors-board",
+  "chicago-mikva-cps-student-advisory-council",
+  "chicago-mikva-safety-and-justice-council",
+  "chicago-mikva-student-election-judges",
+  "chicago-mikva-teen-health-council",
+  "naperville-mayors-chief-of-staff-internship",
+  "nyc-brooklyn-borough-president-youth-advisory-council",
+  "nyc-brooklyn-maimonides-science-scholars",
+  "nyc-staten-island-historic-richmond-town-high-school-apprenticeship",
+  "nyc-staten-island-wagner-college-high-school-internship",
+  "santa-ana-city-student-intern",
+  "the-trade-collective-evanston",
+];
+
+test("cards whose pay is not stated have paid_type not-stated", () => {
+  for (const id of NOT_STATED_IDS) {
+    const e = byId.get(id);
+    assert.ok(e, id + " missing");
+    assert.equal(e.paid_type, "not-stated", id + " must be not-stated when pay is not stated");
+  }
+});

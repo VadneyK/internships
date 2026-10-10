@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "max_age": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "priority": 2,
+  "notes": "The Conservancy internships are unpaid. They need a related degree or college enrollment, so they are not for high schoolers.",
+  "id": "huntington-beach-bolsa-chica-conservancy-volunteer",
+  "name": "Bolsa Chica Conservancy Volunteer Days",
+  "org": "Bolsa Chica Conservancy",
+  "regions": [
+    "orange-county"
+  ],
+  "city": "Huntington Beach, CA",
+  "type": "volunteer",
+  "fields": [
+    "environment",
+    "science"
+  ],
+  "what_you_do": "Pull invasive plants, plant native ones and pick up trash at the Bolsa Chica wetlands. After a 3 hour training, long-term volunteers can lead wetland activities. They can also restore habitat. Some host visitors at the center.",
+  "min_age": 8,
+  "who_can_apply": "Restoration days are for ages 8 to adult. Kids under 14 need an adult with them. Age rules for long-term volunteer roles are not stated on the pages read.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Restoration events are the last Saturday of each month, 9 a.m. to noon. Long-term volunteers start with a monthly 3 hour training.",
+  "status": "year-round",
+  "deadline_text": "No deadline. Events happen monthly.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Come to a restoration day (wear closed-toe shoes and bring water) or sign up for the monthly volunteer training. A waiver form is on the volunteer page. Contact Kenny at 714-846-1114.",
+  "url": "https://bolsachica.org/volunteer/",
+  "sources_fetched": [
+    "https://bolsachica.org/volunteer/",
+    "https://bolsachica.org/long-term-volunteer-info/",
+    "https://bolsachica.org/internships/"
+  ]
+}

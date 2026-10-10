@@ -44,6 +44,8 @@ test("matches: pay groups", () => {
   assert.equal(L.matches(base, { paid: ["pay"] }, NOW), true);
   assert.equal(L.matches(base, { paid: ["free"] }, NOW), false);
   assert.equal(L.matches({ ...base, paid_type: "fee-based" }, { paid: ["fee"] }, NOW), true);
+  assert.equal(L.matches({ ...base, paid_type: "not-stated" }, { paid: ["pay"] }, NOW), false);
+  assert.equal(L.matches({ ...base, paid_type: "not-stated" }, { paid: ["unknown"] }, NOW), true);
 });
 test("matches: verified-only and no-permit toggles", () => {
   assert.equal(L.matches({ ...base, verified: "snippet-only" }, { verified: true }, NOW), false);

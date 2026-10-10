@@ -1,0 +1,40 @@
+{
+  "id": "nyc-public-schools-p-tech-early-college",
+  "name": "NYC P-TECH Early College and Career High Schools",
+  "org": "NYC Public Schools (Department of Education)",
+  "regions": [
+    "new-york-city"
+  ],
+  "city": "New York City (schools in Manhattan and the Bronx include Inwood Early College, MECA, EChem and H.E.R.O. High)",
+  "type": "school-pathway",
+  "fields": [
+    "tech-cs",
+    "health",
+    "engineering"
+  ],
+  "what_you_do": "Six-year public high schools where you earn a diploma and a free college associate degree in a STEM field. You also do work-based learning with industry partners. This includes job shadowing and internships.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Enter in 9th grade",
+  "who_can_apply": "Students entering high school in New York City. The program starts with career exploration in 9th grade, and college courses can begin as early as 10th grade. The page does not list entry rules for each school.",
+  "paid_type": "unpaid",
+  "pay_detail": "The degree is free: courses, materials and college textbooks cost nothing. Internships are listed as a possible part of work-based learning; pay is not stated.",
+  "season": "school-year",
+  "duration": "Six years or less (grades 9 to 14)",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "The page gives no application dates. You apply through the regular NYC high school admissions process (MySchools). Check the MySchools site for the dates.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "The page says admission is unscreened (Educational Option method). Attend an information session, open house or high school fair, then rank a P-TECH school as a top choice on your high school application. Check each school's process on its website or at MySchools.nyc.",
+  "needs_work_permit": null,
+  "url": "https://www.schools.nyc.gov/learning/student-journey/career-connected-learning/ptech-high-schools",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.schools.nyc.gov/learning/student-journey/career-connected-learning/ptech-high-schools"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 3,
+  "notes": "This is a school choice made before 9th grade, so it fits 8th graders and their families. The page names five schools in Manhattan and the Bronx. Examples are Inwood Early College for Health and Information Technologies and Urban Assembly New York Harbor School. Check each listing to see how students get in."
+}

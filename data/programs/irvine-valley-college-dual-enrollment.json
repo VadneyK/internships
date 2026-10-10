@@ -1,0 +1,38 @@
+{
+  "grades": "Grades K to 12 (grades 9 to 12 for most options)",
+  "max_age": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "priority": 2,
+  "notes": "IVC/IUSD Summer College is for grades 9 to 11 at seven Irvine high schools. These are Creekside, Irvine, Northwood, Portola, San Joaquin, University and Woodbridge. The Early College Pathway is for some students who are admitted before grade 9. It is at Beckman and San Joaquin.",
+  "id": "irvine-valley-college-dual-enrollment",
+  "name": "Irvine Valley College Dual Enrollment",
+  "org": "Irvine Valley College",
+  "regions": [
+    "orange-county"
+  ],
+  "city": "Irvine, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take regular IVC college classes while in school. You can take up to 11 units a semester, on campus or online. IVC also has high school partner classes and an Early College Pathway. It also runs an Irvine school district summer college.",
+  "min_age": null,
+  "who_can_apply": "Grades 9 to 12 need parent and principal consent. Grades K to 8 also need instructor approval. You must meet each class prerequisite. There must be open seats.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Per-unit enrollment fees are waived for grades 9 to 12 (not for K to 8). You pay the college health fee and buy textbooks.",
+  "season": "year-round",
+  "duration": "By semester or summer session",
+  "status": "rolling",
+  "deadline_text": "No single deadline. Follow the steps for each term on the IVC page.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Find a class in the IVC schedule, write down its CRN, then complete the General Enrollment Form steps with parent and school approvals. The Director of Dual Enrollment is listed on the page.",
+  "url": "https://www.ivc.edu/dual-enrollment",
+  "sources_fetched": [
+    "https://www.ivc.edu/dual-enrollment",
+    "https://www.ivc.edu/dual-enrollment/general"
+  ]
+}

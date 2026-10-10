@@ -11,13 +11,13 @@ import fs from "node:fs";
 // When content improves: lower the constants to the new measured values (the failure
 // message prints them). Never raise a constant to make a new card pass; rewrite the card.
 
-// ---- Constants measured on 2026-10-10 after the 856 card rewrite (lower them when content improves) ----
+// ---- Constants measured on 2026-10-10 after the 856 card rewrite. The 331 cards added later were written to stay within the counts, and the four card means were lowered to the new measured values (lower them when content improves) ----
 const MEASURED = {
   fields: {
-    what_you_do: { mean: 6.69, aboveLimit: 77 },
-    who_can_apply: { mean: 7.17, aboveLimit: 235 },
-    how_to_apply: { mean: 8.57, aboveLimit: 398 },
-    notes: { mean: 7.21, aboveLimit: 242 },
+    what_you_do: { mean: 6.59, aboveLimit: 77 },
+    who_can_apply: { mean: 6.68, aboveLimit: 235 },
+    how_to_apply: { mean: 7.9, aboveLimit: 398 },
+    notes: { mean: 6.81, aboveLimit: 242 },
   },
   pages: { mean: 4.87, aboveLimit: 0 },
 };

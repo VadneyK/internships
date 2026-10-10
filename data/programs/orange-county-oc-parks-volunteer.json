@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "max_age": null,
+  "apply_url": "https://letsgooutside.org/volunteer/trained-volunteers/oc-parks/",
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "priority": 2,
+  "notes": "Volunteers 16 and 17 need parent permission. The page lists historic docent, backcountry patrol and OC Zoo roles. It lists others too.",
+  "id": "orange-county-oc-parks-volunteer",
+  "name": "OC Parks Volunteer",
+  "org": "OC Parks (County of Orange)",
+  "regions": [
+    "orange-county"
+  ],
+  "city": "Orange County, CA (regional parks, trails, beaches, nature centers)",
+  "type": "volunteer",
+  "fields": [
+    "environment",
+    "education"
+  ],
+  "what_you_do": "Volunteer in county parks as a historic docent or in backcountry patrol. Other roles include OC Zoo chances. Training includes first aid and CPR.",
+  "min_age": 16,
+  "who_can_apply": "Volunteers must be 18, or 16 with parent permission. You must pass a background check and give at least 36 hours a year. The page does not give a separate age rule for OC Zoo roles.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Long term; at least 36 hours a year. The page also lists short term volunteer opportunities.",
+  "status": "rolling",
+  "deadline_text": "No deadline stated. Sign up any time.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Complete the brief interest form linked from the OC Parks Volunteers page and tell them the work that interests you. Pass a background check and attend training. For short term opportunities, search the activity listing. Questions: volunteer@ocparks.com.",
+  "url": "https://parks.oc.gov/about-us/volunteer/oc-parks-volunteers",
+  "sources_fetched": [
+    "https://parks.oc.gov/about-us/volunteer/oc-parks-volunteers",
+    "https://parks.oc.gov/about-us/volunteer",
+    "https://letsgooutside.org/volunteer/trained-volunteers/oc-parks/"
+  ]
+}

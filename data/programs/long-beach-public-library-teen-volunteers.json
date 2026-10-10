@@ -1,0 +1,39 @@
+{
+  "regions": [
+    "los-angeles"
+  ],
+  "apply_url": "https://forms.office.com/g/HNyKNX5pjB",
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "grades": null,
+  "needs_work_permit": false,
+  "id": "long-beach-public-library-teen-volunteers",
+  "name": "Long Beach Public Library Teen Volunteers",
+  "org": "Long Beach Public Library",
+  "city": "Long Beach, CA",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "any"
+  ],
+  "what_you_do": "Help the library staff. You put materials in order and support library programs.",
+  "min_age": 13,
+  "max_age": 17,
+  "who_can_apply": "Teens ages 13 to 17.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "Not stated",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline stated.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the Volunteer Interest Form linked on the library's volunteer page. Questions: lbpl_volunteers@lbpl.org.",
+  "url": "https://www.longbeach.gov/library/connect/volunteer-opportunities/",
+  "priority": 2,
+  "notes": "Hours, locations and training are not listed on the page. Ask by email.",
+  "sources_fetched": [
+    "https://www.longbeach.gov/library/connect/volunteer-opportunities/"
+  ]
+}

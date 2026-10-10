@@ -1,0 +1,39 @@
+{
+  "regions": [
+    "los-angeles"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "grades": null,
+  "needs_work_permit": false,
+  "id": "treepeople-volunteer-events",
+  "name": "TreePeople Volunteer Events (all ages with parent consent)",
+  "org": "TreePeople",
+  "city": "Los Angeles, CA",
+  "type": "volunteer",
+  "fields": [
+    "environment"
+  ],
+  "what_you_do": "Sign up for tree planting and other volunteer events. They are listed on the TreePeople events calendar.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "No age limit. Minors need a signed parental consent form. Volunteers 15 and under (the FAQ says under 15) need an adult chaperone age 21 or older, one adult per 10 young volunteers.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "Single events; calendar posted at least a month ahead",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Sign up for each event on the Events Calendar. No program deadline.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Sign up for an event on the TreePeople events calendar. The confirmation email has the waiver and parent consent forms. Groups must email volunteer@treepeople.org first.",
+  "url": "https://treepeople.org/volunteer/",
+  "sources_fetched": [
+    "https://treepeople.org/jobs-internships/",
+    "https://treepeople.org/volunteer/"
+  ],
+  "priority": 3,
+  "notes": "TreePeople's jobs page lists only an 18+ fellowship, so this is the way in for teens. The page gives two versions of the chaperone age rule (15 and under vs under 15), so confirm by email."
+}

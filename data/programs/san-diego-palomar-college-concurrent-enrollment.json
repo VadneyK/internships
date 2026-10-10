@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "max_age": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "priority": 2,
+  "notes": "Part-time (11 units or fewer) enrollment fee is waived. Everyone pays the mandatory Health Fee and Student Center Fee. The same page lists GEAR UP, Upward Bound and Educational Talent Search for some North County schools.",
+  "id": "san-diego-palomar-college-concurrent-enrollment",
+  "name": "Palomar College Concurrent Enrollment for High Schoolers",
+  "org": "Palomar College",
+  "regions": [
+    "san-diego"
+  ],
+  "city": "San Marcos, Escondido, Fallbrook and Rancho Bernardo, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take real college classes at Palomar on campus or online while you are in high school. Dual enrollment classes can also be taught at some high schools. The classes count toward a college certificate or degree.",
+  "min_age": null,
+  "who_can_apply": "High school students with approval from their high school district and a parent or guardian. Students under 16 also need each instructor to sign an Under 16 form. Home-schooled students need extra forms.",
+  "paid_type": "mixed",
+  "pay_detail": "The $46 per unit tuition is waived for concurrent enrollment. You pay for books and some fees. Dual enrollment at partner high schools is free.",
+  "season": "year-round",
+  "duration": "Up to 7 units in fall or spring and 5 units in summer without a petition",
+  "status": "rolling",
+  "deadline_text": "No single deadline. Check the Palomar calendar for each term.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Get approval from your high school district and a parent. Apply online to Palomar. Fill out the K12 Special Admission Approval Form once. Turn it in at Enrollment Services or email it to admissions@palomar.edu.",
+  "url": "https://www.palomar.edu/high-school-students/",
+  "sources_fetched": [
+    "https://www.palomar.edu/high-school-students/",
+    "https://www.palomar.edu/enrollmentservices/welcome-to-the-admissions-department/steps-enrollment-k12-special-admission/"
+  ]
+}

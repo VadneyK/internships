@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "max_age": null,
+  "apply_url": "https://sdfb.volunteerhub.com/vv2/",
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "priority": 1,
+  "notes": "Good for a first volunteer experience or school service hours. Shifts are at the Miramar warehouse and the North County site in Vista. Wear closed-toe shoes.",
+  "id": "san-diego-food-bank-youth-volunteer",
+  "name": "San Diego Food Bank Volunteer Shifts",
+  "org": "San Diego Food Bank",
+  "regions": [
+    "san-diego"
+  ],
+  "city": "San Diego (Miramar) and Vista, CA",
+  "type": "volunteer",
+  "fields": [
+    "social-impact",
+    "food-hospitality"
+  ],
+  "what_you_do": "Sort and bag produce, pack food boxes and bags, and help at community food distributions. No training needed. A short orientation starts each shift.",
+  "min_age": 11,
+  "who_can_apply": "Ages 11 to 15 can volunteer with a registered adult (18+). Ages 16 and up can sign up on their own. School groups from middle and high school are welcome.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "One shift at a time. You can come once or on a regular basis.",
+  "status": "year-round",
+  "deadline_text": "No deadline. All volunteer visits must be scheduled in advance.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Create an account on the Food Bank volunteer site, then sign up for open shifts. Under 18 volunteers use the minor waiver, which guardians sign.",
+  "url": "https://www.sandiegofoodbank.org/volunteer-opportunities/",
+  "sources_fetched": [
+    "https://www.sandiegofoodbank.org/volunteer-opportunities/",
+    "https://www.sandiegofoodbank.org/volunteer-opportunities/faqs/"
+  ]
+}

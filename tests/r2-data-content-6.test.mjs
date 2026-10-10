@@ -25,6 +25,10 @@ const ALLOWLIST = {
     "Sources conflict: the Wisconsin Wing site labels the cadet program ages 12 to 19 while the national CAP page says 12 to 18; stored 12 to 18.",
   "oakland-public-library-teen-volunteer":
     "Who can apply reads 'ages 13 to 17, or 18 and still in high school'; stored 13 to 18.",
+  "brookhaven-police-cadet-program":
+    "Sources conflict: the page lists ages 14 to 18 in one place and 14 to 19 in another; stored 14 to 19 so no one who may qualify is hidden.",
+  "wilmette-library-teen-volunteers":
+    "The main program is for grades 9 to 12 (ages left empty). The 11 to 13 range is a separate library helper role, so it is not stored as the age range.",
 };
 
 const strictMatch = (card) => {

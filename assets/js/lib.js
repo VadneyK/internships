@@ -168,12 +168,13 @@
   };
   var PAID = {
     "paid": "Paid", "stipend": "Stipend", "unpaid": "Unpaid", "unpaid-credit": "Unpaid, school credit",
-    "fee-based": "Costs money", "mixed": "Mixed"
+    "fee-based": "Costs money", "mixed": "Mixed", "not-stated": "Pay not stated"
   };
   var PAID_GROUPS = [
     ["pay", "Paid or stipend", ["paid", "stipend", "mixed"]],
     ["free", "Free or volunteer", ["unpaid", "unpaid-credit"]],
-    ["fee", "Costs money", ["fee-based"]]
+    ["fee", "Costs money", ["fee-based"]],
+    ["unknown", "Pay not stated", ["not-stated"]]
   ];
   var MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   var MONTH_NAMES = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];

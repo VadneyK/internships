@@ -1,0 +1,37 @@
+{
+  "grades": null,
+  "max_age": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "priority": 2,
+  "notes": "The one-time parent consent form is also honored at Golden West College and Coastline College. After you graduate you must re-apply as a first-time college student. Help: fpr@occ.cccd.edu.",
+  "id": "costa-mesa-orange-coast-college-dual-enrollment",
+  "name": "Orange Coast College Dual Enrollment",
+  "org": "Orange Coast College (Coast Community College District)",
+  "regions": [
+    "orange-county"
+  ],
+  "city": "Costa Mesa, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take OCC college classes while in high school, on campus or online (concurrent), or in classes held at a partner high school (CCAP). Classes earn college units and can count toward high school credit.",
+  "min_age": null,
+  "who_can_apply": "Students who have finished 8th grade. A parent must send a one-time consent form. Your high school principal signs the concurrent form.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Per-unit enrollment fees are waived. Concurrent students pay the College Service, Student Health and Student Representation fees plus books and supplies. CCAP classes at high schools may only need textbooks.",
+  "season": "year-round",
+  "duration": "By term. Up to 11 units in fall or spring, 10 in summer, 3 in winter.",
+  "status": "rolling",
+  "deadline_text": "No fixed date. Apply for the term you want. Forms take at least 7 to 10 business days to process.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply online to OCC. Pick \"Enrolling in High School and College at the same time.\" Then your parent sends in the consent form. You email the signed Concurrent Enrollment Form to dualenrollment@occ.cccd.edu. Only handwritten signatures count.",
+  "url": "https://orangecoastcollege.edu/admissions-aid/enrollment/admissions/high-school-students.html",
+  "sources_fetched": [
+    "https://orangecoastcollege.edu/admissions-aid/enrollment/admissions/high-school-students.html"
+  ]
+}

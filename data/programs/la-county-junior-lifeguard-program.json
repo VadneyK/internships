@@ -1,0 +1,39 @@
+{
+  "regions": [
+    "los-angeles"
+  ],
+  "apply_url": "https://juniorlifeguards.fire.lacounty.gov",
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "grades": null,
+  "needs_work_permit": false,
+  "id": "la-county-junior-lifeguard-program",
+  "name": "Los Angeles County Junior Lifeguard Program (ages 9 to 17, with Cadets 16 to 17)",
+  "org": "Los Angeles County Fire Department Lifeguards",
+  "city": "Los Angeles County beaches, CA",
+  "type": "leadership",
+  "fields": [
+    "sports",
+    "any"
+  ],
+  "what_you_do": "A four-week summer ocean safety program at county beaches. Older returning teens can move up to the Life Saving Team (15 to 17) or Cadets (16 to 17).",
+  "min_age": 9,
+  "max_age": 17,
+  "who_can_apply": "Youth ages 9 to 17 in LA County. New participants must pass a 100-yard freestyle swim test (1:30.00 for ages 14 to 17). Cadets must be 16 or 17 as of July 1 with at least two years in the program, one as an A.",
+  "paid_type": "fee-based",
+  "pay_detail": "About $635 per child for Summer 2026 (the page says the fee schedule was under review). Financial aid needs a federal tax return.",
+  "season": "summer",
+  "duration": "Two 4-week sessions in 2026: June 15 to July 10 and July 13 to August 7",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Summer 2026 swim tests ran March 14 to April 12. The page says new Junior Lifeguard information is posted each January or February, and parents can expect registration in February or March. Summer 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Register online when the season opens, usually in February or March. New participants must pass a swim test. They must bring a birth certificate or passport. Cadet and Life Saving Team applications are separate. They are posted later.",
+  "url": "https://fire.lacounty.gov/junior-lifeguard-program/",
+  "priority": 3,
+  "notes": "The page calls the $635 an estimated operating cost and says the fee schedule is under review. Costs money and is mainly for younger kids; teens 16 to 17 can reach Cadets. Not every beach offers afternoon sessions or Session 2. Refund rules and absence limits are on the page.",
+  "sources_fetched": [
+    "https://fire.lacounty.gov/junior-lifeguard-program/"
+  ]
+}

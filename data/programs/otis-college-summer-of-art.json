@@ -1,0 +1,40 @@
+{
+  "regions": [
+    "los-angeles"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "grades": null,
+  "needs_work_permit": false,
+  "id": "otis-college-summer-of-art",
+  "name": "Otis College Summer of Art",
+  "org": "Otis College of Art and Design",
+  "city": "Los Angeles, CA",
+  "type": "pre-college",
+  "fields": [
+    "arts-media"
+  ],
+  "what_you_do": "A four-week summer art program on campus for high school students. Pick a specialty and a drawing studio. Earn college credit. Show your work in a final show. Housing is available.",
+  "min_age": 14,
+  "max_age": 19,
+  "who_can_apply": "High school students and young creatives ages 14.5 to 19. No grade level is listed.",
+  "paid_type": "fee-based",
+  "pay_detail": "2026 prices as posted: $4,390 full program (3 college credits) or $2,690 per individual class; $7,315 or $5,615 with housing. A $150 health center fee applies. 2027 prices are not posted.",
+  "season": "summer",
+  "duration": "4 weeks in July 2027. The main page says July 7 to 30; the dates page says orientation July 6, classes July 8 to July 30.",
+  "status": "opens-soon",
+  "opens_iso": "2026-11-16",
+  "deadline_text": "Registration begins Nov 16, 2026. Scholarship application deadline is April 16, 2027 (no exceptions); the registration deadline is listed as not set yet. Info sessions on Zoom: Tue Feb 9 6:00 PM and Thu Mar 18 12:00 PM (2027).",
+  "deadline_iso": null,
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Use Register Now on the Summer of Art page. Questions: soa@otis.edu or 310-665-6850. Scholarships have their own application.",
+  "url": "https://www.otis.edu/extension/youth-programs/summer-art/index.html",
+  "sources_fetched": [
+    "https://www.otis.edu/extension/youth-programs/summer-art/index.html",
+    "https://www.otis.edu/extension/youth-programs/summer-art/important-dates.html",
+    "https://www.otis.edu/extension/youth-programs/summer-art/tuition-fees/index.html"
+  ],
+  "priority": 2,
+  "notes": "The page says ages 14.5 to 19; min_age is entered as 14 because the field takes whole years. Costs money. Prices shown are the 2026 numbers. In 2026 the early discount deadline was April 25. The April 16, 2027 date is the scholarship deadline, not the registration deadline."
+}

@@ -1,0 +1,39 @@
+{
+  "id": "spelman-early-college-program",
+  "name": "Early College Program (ECP)",
+  "org": "Spelman College",
+  "regions": [
+    "atlanta"
+  ],
+  "city": "Atlanta, GA",
+  "type": "pre-college",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take one real college course for four weeks on campus: English 101, Biology 100 or Dance 132. You earn four college credits with a grade of C or better.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Current high school juniors (11th grade)",
+  "who_can_apply": "Female high school students in 11th grade with a 3.0 GPA and at least a 3.0 in English and science. Parent permission is required. One page also says juniors and seniors, so confirm your grade.",
+  "paid_type": "fee-based",
+  "pay_detail": "Biology $4,500, English $4,500, Dance $4,400 (subject to change)",
+  "season": "summer",
+  "duration": "4 weeks, residential, June 19 to July 16, 2027",
+  "status": "opens-soon",
+  "opens_iso": "2027-01-29",
+  "deadline_text": "Applications open Jan 29, 2027 and close Mar 29, 2027. No late submissions accepted.",
+  "deadline_iso": "2027-03-29",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the Summer Programs Interest Form for news. Then apply in the online portal when it opens Jan 29, 2027.",
+  "needs_work_permit": false,
+  "url": "https://www.spelman.edu/academics/summer-programs/early-college-program.html",
+  "apply_url": "https://apply.spelman.edu/register/summerprograms",
+  "sources_fetched": [
+    "https://www.spelman.edu/academics/summer-programs/",
+    "https://www.spelman.edu/academics/summer-programs/early-college-program.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 3,
+  "notes": "Costs money. The Mar 29 closing date is on the main summer programs page; the ECP page itself does not give a due date."
+}

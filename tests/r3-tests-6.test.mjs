@@ -356,7 +356,7 @@ test("isOpenish and isAnytime: an opening date that has arrived flips opens-soon
 
 const STATUSES7 = ["open-now", "opens-soon", "rolling", "year-round", "event", "closed-expect-reopen", "unconfirmed"];
 const SEASONS6 = ["summer", "school-year", "fall", "winter", "spring", "year-round"];
-const PAID6 = ["paid", "stipend", "mixed", "unpaid", "unpaid-credit", "fee-based"];
+const PAID6 = ["paid", "stipend", "mixed", "unpaid", "unpaid-credit", "fee-based", "not-stated"];
 const TYPE_IDS = Object.keys(L.TYPES);
 const FIELD_IDS = Object.keys(L.FIELDS);
 const REGION_IDS = L.REGIONS.map((r) => r[0]);
@@ -396,7 +396,7 @@ test("insights(single card): pinned counts and every group sums to the total", (
   assert.deepEqual(out.status.map((g) => g.n), [1, 0, 0, 0, 0]);
   assert.deepEqual(out.ages.map((a) => a.n), [0, 0, 0, 1, 1, 1]);
   assert.deepEqual(out.ages.map((a) => a.paid), [0, 0, 0, 1, 1, 1]);
-  assert.deepEqual(out.hubs, [{ id: "oak", label: "Oakland and East Bay", n: 1, pay: 1, free: 0, fee: 0 }]);
+  assert.deepEqual(out.hubs, [{ id: "oak", label: "Oakland and East Bay", n: 1, pay: 1, free: 0, fee: 0, unknown: 0 }]);
   assert.deepEqual(out.months.map((m) => [m.label, m.n]), [["Jan 2027", 1]]);
   assert.deepEqual(out.types, [{ id: "paid-youth-program", label: "Paid youth program", n: 1 }]);
   assert.deepEqual(out.fields, [{ id: "health", label: "Health", n: 1 }]);
@@ -449,7 +449,7 @@ test("insights: 200 seeded lists keep every group summing to the total, with no 
       assert.ok(a.n <= size && a.paid <= a.n, "ages bounded, " + tag);
     });
     out.hubs.forEach((h) => {
-      assert.equal(h.pay + h.free + h.fee, h.n, "paid groups cover every hub row, " + tag);
+      assert.equal(h.pay + h.free + h.fee + h.unknown, h.n, "paid groups cover every hub row, " + tag);
       assert.ok(h.n >= 1 && h.n <= size, tag);
     });
     assert.ok(out.facts.fetched <= size && out.facts.noPermit <= size, tag);

@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "max_age": 25,
+  "apply_url": "https://boards.sandiego.gov/",
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "priority": 2,
+  "notes": "Seats are nominated by the Mayor and each Councilmember (2 each). Contact is the Office of Child and Youth Success. The chair's bio on the About page says she first learned of the commission through the Employ & Empower internship.",
+  "id": "san-diego-city-youth-commission",
+  "name": "San Diego Youth Commission",
+  "org": "City of San Diego (Office of Child and Youth Success)",
+  "regions": [
+    "san-diego"
+  ],
+  "city": "San Diego, CA",
+  "type": "civic-government",
+  "fields": [
+    "law-government",
+    "social-impact"
+  ],
+  "what_you_do": "Advise the Mayor and City Council about youth issues. Examples are school, jobs, housing and mental health. You learn about city life, public policy and leadership. You also practice networking.",
+  "min_age": 14,
+  "who_can_apply": "Ages 14 to 25 who live in or go to school in the City of San Diego. You must be able to serve a 2 year term and go to monthly in-person meetings.",
+  "paid_type": "unpaid",
+  "pay_detail": "Not stated; this is an advisory board",
+  "season": "year-round",
+  "duration": "2 year term, monthly meetings (currently Saturday mornings at a public library)",
+  "status": "rolling",
+  "deadline_text": "The page says some of the 20 seats are unfilled and invites youth to apply. No deadline is listed.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply on the City boards website. Choose Youth Commission and your seat from the Boards and Seats menu.",
+  "url": "https://www.sandiego.gov/youth-commission",
+  "sources_fetched": [
+    "https://www.sandiego.gov/youth-commission",
+    "https://www.sandiego.gov/youth-commission/about",
+    "https://www.sandiego.gov/youth-commission/how-to-apply"
+  ]
+}
