@@ -1,0 +1,39 @@
+{
+  "grades": "Grades 6 to 12 (high school volunteers: grades 9 to 12 and at least 14)",
+  "min_age": 12,
+  "max_age": 18,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "piscataway-public-library-teen-volunteer",
+  "name": "Teen Volunteer Program, Piscataway Public Library",
+  "org": "Piscataway Public Library",
+  "regions": [
+    "new-brunswick"
+  ],
+  "city": "Piscataway, NJ",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "any"
+  ],
+  "what_you_do": "Help with library programs and special projects. Middle schoolers can join Adopt-a-Shelf. They help keep teen spaces and collections neat. They also advise on new purchases.",
+  "who_can_apply": "Piscataway residents only. Grades 6 to 12 and at least 12 years old; high school volunteers must be in grades 9 to 12 and at least 14. Must sign a Teen Volunteer Code of Conduct at training.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid; earns community service hours",
+  "season": "year-round",
+  "duration": "Regularly scheduled volunteer hours after training",
+  "status": "year-round",
+  "deadline_text": "Adopt-a-Shelf: the Session 1 application period has ended; Session 2 applications open November 2 (year not stated on the page). High school volunteers attend an orientation session; check the library calendar for dates.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "High school: attend a library orientation session with a mandatory training video, then enroll if you meet requirements. Adopt-a-Shelf (grades 6 to 8): apply on the volunteering page when the session opens. Questions: teens@piscatawaylibrary.org (subject line Volunteer).",
+  "needs_work_permit": false,
+  "url": "https://www.piscatawaylibrary.org/about-us/volunteering",
+  "priority": 1,
+  "notes": "Latecomers are not admitted to training sessions. Open only to Piscataway residents.",
+  "sources_fetched": [
+    "https://www.piscatawaylibrary.org/about-us/volunteering"
+  ]
+}

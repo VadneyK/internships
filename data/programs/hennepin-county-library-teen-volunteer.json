@@ -1,0 +1,38 @@
+{
+  "id": "hennepin-county-library-teen-volunteer",
+  "name": "Teen volunteers",
+  "org": "Hennepin County Library",
+  "regions": [
+    "twin-cities"
+  ],
+  "city": "Hennepin County, MN",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "what_you_do": "Help at a local Hennepin County library. Positions vary by library.",
+  "min_age": 14,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Teens ages 14 to 18. Only a limited number of teen volunteer spots exist at some libraries.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Not stated",
+  "status": "year-round",
+  "deadline_text": "No deadline stated. Ask your local library whether it has a teen opening.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Ask your local Hennepin County library about teen openings. If there is one, fill out the teen volunteer application (PDF), bring it to the library, and a staff member will contact you. Questions: Volunteer Services, 612-543-8633.",
+  "needs_work_permit": false,
+  "url": "https://www.hclib.org/about/volunteer",
+  "sources_fetched": [
+    "https://www.hclib.org/about/volunteer"
+  ],
+  "priority": 2,
+  "notes": "Adult volunteers have a different process. The phone line is staffed Monday to Friday, 8:30 a.m. to 5:00 p.m.",
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "apply_url": null
+}

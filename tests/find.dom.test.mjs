@@ -180,7 +180,7 @@ test("find: kind, interest, verified-only and no-work-permit filters narrow the 
 
   document.getElementById("noPermit").click();
   assert.ok(shownCount(document) < total, "no-work-permit should narrow the list");
-  assert.equal(shownCount(document), DATA.filter((e) => e.needs_work_permit !== true).length);
+  assert.equal(shownCount(document), DATA.filter((e) => e.needs_work_permit === false).length);
   assertRendered(document, "no permit");
   assert.equal(params(window).get("nopermit"), "1");
   document.getElementById("noPermit").click();
@@ -215,7 +215,7 @@ test("find: reloading with the URL it wrote restores the same filters and result
 
 test("find: a URL with checked and no-permit filters loads with those filters applied", async () => {
   const { document, errors } = await loadFind({ search: "?checked=1&nopermit=1" });
-  assert.equal(shownCount(document), DATA.filter((e) => e.verified === "fetched" && e.needs_work_permit !== true).length);
+  assert.equal(shownCount(document), DATA.filter((e) => e.verified === "fetched" && e.needs_work_permit === false).length);
   assertRendered(document, "restored from URL");
   assert.equal(pressed(document.getElementById("onlyVerified")), true);
   assert.equal(pressed(document.getElementById("noPermit")), true);
@@ -317,7 +317,8 @@ test("find: star saves a program, the My list count updates, and the saved-only 
 // behavior the task asks for (every filter control updates the URL and survives reload).
 // Design choice: a personal list must not travel in a shared link, so saved-only is kept out of the URL.
 test("find: the saved-only view is kept out of the URL on purpose", async () => {
-  const id = DATA[0].id;
+  // pick a program that is actually on the first page of cards (the list is ranked and paged)
+  const id = (await loadFind()).document.querySelector("article.prog .star").getAttribute("data-id");
   const a = await loadFind({ storage: { saved: [id] } });
   const before = a.window.location.search;
   a.document.getElementById("savedOnly").click();
@@ -327,7 +328,8 @@ test("find: the saved-only view is kept out of the URL on purpose", async () => 
 });
 
 test("find: a saved program is still counted after reload", async () => {
-  const id = DATA[0].id;
+  // pick a program that is actually on the first page of cards (the list is ranked and paged)
+  const id = (await loadFind()).document.querySelector("article.prog .star").getAttribute("data-id");
   const { document, errors } = await loadFind({ storage: { saved: [id] } });
   assert.equal(document.getElementById("savedN").textContent, "1");
   assert.equal(document.querySelector('.star[data-id="' + id + '"]').getAttribute("aria-pressed"), "true");
@@ -372,8 +374,8 @@ test("find: By deadline view renders without errors and lists the dated programs
   assert.equal(pressed(document.getElementById("viewDates")), true);
 
   const now = Date.now();
-  const withDeadline = DATA.filter((e) => L.futureDeadline(e, now)).length;
-  const openOther = DATA.filter((e) => !L.futureDeadline(e, now) && (L.isAnytime(e, now) || L.isOpenish(e, now))).length;
+  const withDeadline = DATA.filter((e) => L.knownDeadline(e, now)).length;
+  const openOther = DATA.filter((e) => !L.knownDeadline(e, now) && (L.isAnytime(e, now) || L.isOpenish(e, now))).length;
   assert.equal(document.querySelectorAll("#dates li").length, withDeadline + Math.min(80, openOther));
   assert.deepEqual(errors, []);
 
@@ -445,5 +447,158 @@ test("find: Print my list calls window.print only after adding #printRoot, and r
   window.dispatchEvent(new window.Event("afterprint"));
   assert.equal(document.getElementById("printRoot"), null);
   assert.equal(document.body.classList.contains("print-one"), false);
+  assert.deepEqual(errors, []);
+});
+
+test("find: out-of-state cards never mention a California work permit", async () => {
+  for (const where of ["atl", "nyc", "chi"]) {
+    const { document } = await loadFind({ search: "?where=" + where });
+    const text = [...document.querySelectorAll("article.prog")].map((c) => c.textContent).join(" ");
+    assert.ok(text.length > 0, where + " should show cards");
+    assert.doesNotMatch(text, /California work permit/, where + " card mentions California rules");
+    if (where === "nyc") assert.match(text, /New York requires working papers/);
+  }
+});
+
+test("find: the city and area picker lists every city with a count, filters, saves to the URL, and explains thin places", async () => {
+  const { window, document } = await loadFind({ search: "" });
+  const sel = document.getElementById("place");
+  assert.ok(sel.querySelectorAll("option").length > 40, "all cities and areas should be listed");
+  assert.match([...sel.options].find((o) => o.value === "city:boston").textContent, /Boston \(none yet\)|Boston \(\d+\)/);
+  type(window, sel, "city:san-diego"); await tick();
+  assert.equal(document.querySelectorAll("#hubChips .chip[aria-pressed=true]").length, 0, "picking a city clears the area chips");
+  assert.match(window.location.search, /at=city%3Asan-diego/);
+  type(window, sel, "city:seattle"); await tick();
+  const note = document.getElementById("placeNote");
+  assert.equal(note.hidden, false);
+  assert.doesNotMatch(note.textContent, /undefined|NaN/);
+  chip(document, "hubChips", "oak").click(); await tick();
+  assert.equal(sel.value, "", "picking an area chip clears the city");
+});
+
+test("find: a city link in the URL opens with that city chosen", async () => {
+  const { document } = await loadFind({ search: "?at=city:davis" });
+  assert.equal(document.getElementById("place").value, "city:davis");
+  assert.match(document.getElementById("count").textContent, /^\d+ of \d+ programs$/);
+});
+
+test("find: a deep link to a program past the first page renders it and opens it", async () => {
+  const late = DATA.map((e) => e.id).filter((id) => id.startsWith("virginia-tech"))[0];
+  assert.ok(late);
+  const { document } = await loadFind({ search: "#p-" + late });
+  await tick(100);
+  assert.ok(document.getElementById("p-" + late), "the card should be on the page");
+});
+
+// Teen flow: the tag key is folded away, the related links sit under the toolbar, and the filters come
+// before any long paragraph on the page.
+test("find: How to read the tags is a closed details with the full explanation", async () => {
+  const { document, errors } = await loadFind();
+  const box = document.querySelector("details#howToRead");
+  assert.ok(box, "a details element for the tag key should exist");
+  assert.equal(box.hasAttribute("open"), false, "the tag key should start closed");
+  assert.equal(box.querySelector("summary").textContent.trim(), "How to read the tags");
+  const text = box.textContent;
+  for (const phrase of ["How to read this list.", "Read on official site", "Confirm first", "usually reopen"]) {
+    assert.ok(text.includes(phrase), "tag key is missing: " + phrase);
+  }
+  assert.deepEqual(errors, []);
+});
+
+test("find: links to the calendar, the work permit finder and the ages 12 to 14 page sit under the toolbar", async () => {
+  const { document } = await loadFind();
+  const row = document.getElementById("relatedLinks");
+  assert.ok(row, "a related links row should exist");
+  const links = [...row.querySelectorAll("a")].map((a) => [a.getAttribute("href"), a.textContent.trim()]);
+  assert.deepEqual(links, [
+    ["calendar.html", "What opens when"],
+    ["permit.html", "Do I need a work permit?"],
+    ["younger.html", "Ages 12 to 14"],
+  ]);
+  for (const href of ["calendar.html", "permit.html", "younger.html"]) {
+    assert.ok(document.querySelector("main a[href='" + href + "']"), "find.html should link to " + href);
+  }
+});
+
+test("find: the filters come before every paragraph longer than 30 words in the first section", async () => {
+  const { window, document } = await loadFind();
+  const first = document.querySelector("main section");
+  assert.ok(first && first.querySelector("h1"), "the first section should be the page heading");
+  const filters = document.getElementById("filters");
+  assert.ok(filters, "the filters form should exist");
+  const words = (p) => p.textContent.trim().split(/\s+/).length;
+  for (const p of first.querySelectorAll("p")) {
+    if (words(p) <= 30) continue;
+    assert.ok(
+      filters.compareDocumentPosition(p) & window.Node.DOCUMENT_POSITION_FOLLOWING,
+      "a long paragraph in the first section comes before the filters: " + p.textContent.trim().slice(0, 40)
+    );
+  }
+  const key = document.querySelector("details#howToRead p");
+  assert.ok(key && words(key) > 30, "the tag key paragraph should be the long one");
+  assert.ok(
+    filters.compareDocumentPosition(key) & window.Node.DOCUMENT_POSITION_FOLLOWING,
+    "the tag key should come after the filters"
+  );
+});
+
+// Keyboard focus must stay on the page when the list is rebuilt.
+test("find: Show more moves focus to the first new card and announces it", async () => {
+  const { document, errors } = await loadFind();
+  assert.ok(shownCount(document) > PAGE_SIZE * 2 - 1, "needs more than 60 results");
+  const out = document.getElementById("out");
+  const cards = [...document.querySelectorAll("article.prog")];
+  assert.ok(cards.every((c) => c.getAttribute("tabindex") === "-1"), "each card can take focus");
+  const countBefore = document.getElementById("count").textContent;
+  const more = document.getElementById("more");
+  more.focus();
+  assert.equal(document.activeElement, more);
+  more.click();
+  await tick();
+  const now = [...document.querySelectorAll("article.prog")];
+  assert.equal(now.length, PAGE_SIZE * 2);
+  assert.notEqual(document.activeElement, document.body);
+  assert.ok(out.contains(document.activeElement));
+  assert.equal(document.activeElement, now[PAGE_SIZE], "focus lands on the first newly added card");
+  assert.match(document.getElementById("toast").textContent, new RegExp("Showing " + PAGE_SIZE + " more programs"));
+  assert.equal(document.getElementById("count").textContent, countBefore);
+  assert.deepEqual(errors, []);
+});
+
+test("find: Clear all filters on the empty state keeps focus on the filters", async () => {
+  const { window, document, errors } = await loadFind();
+  type(window, document.getElementById("q"), "zxqvjwk");
+  await tick(SEARCH_DEBOUNCE);
+  const reset = document.getElementById("emptyReset");
+  reset.focus();
+  reset.click();
+  await tick();
+  assert.notEqual(document.activeElement, document.body);
+  assert.ok([document.getElementById("q"), document.getElementById("reset")].includes(document.activeElement));
+  assert.equal(document.getElementById("q").value, "");
+  assert.deepEqual(errors, []);
+});
+
+test("find: un-starring a card in My list keeps focus on another control", async () => {
+  const { document, errors } = await loadFind();
+  const stars = [...document.querySelectorAll("article.prog .star")].slice(0, 2);
+  const ids = stars.map((s) => s.getAttribute("data-id"));
+  stars.forEach((s) => s.click());
+  document.getElementById("savedOnly").click();
+  await tick();
+  assert.equal(cardCount(document), 2);
+  const first = document.querySelector('.star[data-id="' + ids[0] + '"]');
+  first.focus();
+  first.click();
+  await tick();
+  assert.equal(cardCount(document), 1);
+  assert.notEqual(document.activeElement, document.body);
+  const other = document.querySelector('.star[data-id="' + ids[1] + '"]');
+  assert.ok(document.activeElement === other || document.activeElement === document.getElementById("savedOnly"));
+  assert.equal(document.activeElement, other, "focus goes to the remaining card's star");
+  other.click();
+  await tick();
+  assert.equal(cardCount(document), 0);
+  assert.equal(document.activeElement, document.getElementById("savedOnly"), "last card gone, focus goes to the My list toggle");
   assert.deepEqual(errors, []);
 });

@@ -1,0 +1,42 @@
+{
+  "min_age": null,
+  "max_age": null,
+  "grades": "Middle and high school (the page says national FFA has members in grades 5 to 12)",
+  "opens_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "apply_url": null,
+  "deadline_iso": null,
+  "needs_work_permit": false,
+  "priority": 2,
+  "id": "nc-ffa-association",
+  "name": "North Carolina FFA",
+  "org": "North Carolina FFA Association (NC State University Agricultural Education)",
+  "regions": [
+    "north-carolina"
+  ],
+  "city": "Statewide, North Carolina (school chapters)",
+  "type": "leadership",
+  "fields": [
+    "environment",
+    "science",
+    "business-finance",
+    "any"
+  ],
+  "what_you_do": "Join an FFA chapter at your school. Learn hands-on agriculture skills. Run a supervised agricultural experience project. Compete in leadership and career events.",
+  "who_can_apply": "Students in grades 5 to 12 who belong to a school FFA chapter, which runs through a school agricultural education program. Homeschool students can join if they take an agriculture course and have an SAE project (for example through the NCSU Agriscience Academy chapter).",
+  "paid_type": "fee-based",
+  "pay_detail": "2026-27 dues: $12 for high school students ($7 national plus $5 state) and $8 for middle school students ($7 national plus $1 state). Many chapters collect these through the school.",
+  "season": "school-year",
+  "duration": "Membership year runs Aug 1 to July 31",
+  "status": "rolling",
+  "deadline_text": "The membership year runs Aug 1, 2026 to July 31, 2027. The state membership deadline is March 1, 2027.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Ask your school counselor or agriculture teacher if your school has an FFA chapter. Take an agriculture class. The chapter advisor sends in the roster and dues. Homeschool families use the Homeschool FFA Membership Application on the page.",
+  "url": "https://www.ncffa.org/membership",
+  "sources_fetched": [
+    "https://www.ncffa.org/",
+    "https://www.ncffa.org/membership"
+  ],
+  "notes": "The state office is at 4111 Beryl Road, Raleigh, NC 27606, 919-515-4206. The site says North Carolina has over 47,000 FFA members. If your school has no ag program, the page explains how a school can start one."
+}

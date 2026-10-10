@@ -1,0 +1,45 @@
+{
+  "id": "job-corps-washington-centers",
+  "name": "Job Corps (Cascades, Curlew and Columbia Basin centers, Washington)",
+  "org": "U.S. Department of Labor Job Corps",
+  "regions": [
+    "washington"
+  ],
+  "city": "Sedro-Woolley, Curlew and Moses Lake, WA",
+  "type": "apprenticeship-trades",
+  "fields": [
+    "trades",
+    "tech-cs",
+    "health",
+    "environment"
+  ],
+  "what_you_do": "Free live-on-campus career training. Centers list computer and medical assistant, carpentry, cement masonry, human services, fire management and nursing assistant training.",
+  "min_age": 16,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Generally ages 16 through 24. You must be low income. You must meet citizenship, residency or other approved status rules. You must meet background rules. You must be ready and motivated. The pages read do not explain rules for applicants under 18.",
+  "paid_type": "stipend",
+  "pay_detail": "Training is free. The national site lists free housing, meals, basic medical care and a living allowance. The allowance amount is not stated on the pages read.",
+  "season": "year-round",
+  "duration": "Not stated on the pages read",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Open enrollment: you can start the application at any time.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Go to enroll.jobcorps.gov. Click Apply Now. Make a MyJobCorps account. Upload the papers that show you are eligible. Then have an interview with an admissions representative. Phone for Curlew and Columbia Basin: 877-763-0580.",
+  "needs_work_permit": null,
+  "url": "https://cascades.jobcorps.gov/",
+  "apply_url": "https://enroll.jobcorps.gov",
+  "sources_fetched": [
+    "https://cascades.jobcorps.gov/",
+    "https://curlew.jobcorps.gov/",
+    "https://columbiabasin.jobcorps.gov/",
+    "https://www.jobcorps.gov/",
+    "https://www.jobcorps.gov/admissions-process"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 3,
+  "notes": "Addresses: Cascades, 2060 Powerhouse Drive, Sedro-Woolley, WA 98284. Curlew, 3 Campus St, Curlew, WA 99118. Columbia Basin, 6739 24th Ave NE Bldg 2402, Moses Lake, WA 98837. Job Corps is a training program, not a job. Each center page shows only a few of its trades; use See More on the center page for the full list."
+}

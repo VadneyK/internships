@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "max_age": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "priority": 2,
+  "notes": "Closed-toe shoes are required. Shifts are posted one month ahead.",
+  "id": "san-diego-feeding-san-diego-volunteer",
+  "name": "Feeding San Diego Volunteer",
+  "org": "Feeding San Diego",
+  "regions": [
+    "san-diego"
+  ],
+  "city": "San Diego, CA",
+  "type": "volunteer",
+  "fields": [
+    "social-impact",
+    "food-hospitality"
+  ],
+  "what_you_do": "Help pack and hand out food. In the Distribution Center, volunteers are 6 and up. At food distributions out in the community, volunteers are 14 and up.",
+  "min_age": 14,
+  "who_can_apply": "At food handouts, volunteers must be 14 or older. Anyone 15 or younger needs a chaperone over 18. The Distribution Center takes volunteers who are 6 and up.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Single shifts; you sign up for dates that work for you",
+  "status": "year-round",
+  "deadline_text": "No deadline.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Sign up for shifts through the volunteer page on the Feeding San Diego website. Shifts are posted one month in advance.",
+  "url": "https://feedingsandiego.org/get-involved/volunteer/",
+  "sources_fetched": [
+    "https://feedingsandiego.org/get-involved/volunteer/"
+  ]
+}

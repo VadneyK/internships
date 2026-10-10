@@ -1,0 +1,43 @@
+{
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "opens_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "apply_url": null,
+  "deadline_iso": null,
+  "needs_work_permit": true,
+  "priority": 1,
+  "id": "nc-youth-apprenticeship",
+  "name": "North Carolina Youth Apprenticeship",
+  "org": "NC Community Colleges, ApprenticeshipNC",
+  "regions": [
+    "north-carolina"
+  ],
+  "city": "Statewide, North Carolina (employers and community college partners)",
+  "type": "apprenticeship-trades",
+  "fields": [
+    "trades",
+    "engineering",
+    "health",
+    "any"
+  ],
+  "what_you_do": "Work a paid job with a mentor at an employer while taking related classes at a community college or training center. You can start as early as 16 while in high school.",
+  "who_can_apply": "Start as early as age 16. You must be enrolled in high school or be a high school graduate, interested in a high-demand career field, and ready to do both on-the-job learning and classroom instruction.",
+  "paid_type": "paid",
+  "pay_detail": "Apprentices are paid employees from day one, with raises as you gain skills. The wage depends on the employer and is not stated.",
+  "season": "year-round",
+  "duration": "Varies by apprenticeship",
+  "status": "rolling",
+  "deadline_text": "No single deadline. Each employer or program sets its own hiring.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Find a Registered Apprenticeship opportunity on the ApprenticeshipNC site and apply by contacting the program sponsor or employer. Questions: apprenticeshipnc@nccommunitycolleges.edu or 919-807-6988. The page also mentions youth apprenticeship consortia that serve high school students.",
+  "url": "https://www.nccommunitycolleges.edu/businesses/apprenticeships/unique-pathways/youth-apprenticeships/",
+  "sources_fetched": [
+    "https://www.nccommunitycolleges.edu/businesses/apprenticeships/unique-pathways/youth-apprenticeships/",
+    "https://www.nccommunitycolleges.edu/businesses/apprenticeships/",
+    "https://www.labor.nc.gov/workplace-rights/youth-employment-rules/apply-youth-employment-certificate"
+  ],
+  "notes": "The NC Department of Labor says youth under 18 who work in North Carolina must have a Youth Employment Certificate, started by the employer once you have a job offer. Some jobs are off limits to people under 18 unless a supervised practice agreement is approved. Specific openings and employers change, so use the Find Apprenticeship Opportunities tool."
+}

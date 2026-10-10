@@ -1,0 +1,37 @@
+{
+  "grades": null,
+  "max_age": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "priority": 2,
+  "notes": "SCC is phasing out the paper Special Admit Form for high school dual enrollment. It now goes through the portal.",
+  "id": "orange-santiago-canyon-college-dual-enrollment",
+  "name": "Santiago Canyon College Early College (Dual Enrollment)",
+  "org": "Santiago Canyon College",
+  "regions": [
+    "orange-county"
+  ],
+  "city": "Orange, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "High school students take college classes for free, transferable credit. Classes can be at the high school, at SCC, on weekends or online.",
+  "min_age": null,
+  "who_can_apply": "High school students (special admit students). Students in grades K to 8 need approval from an SCC division dean. High school students sign up through the SCC Dual Enrollment Portal.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "The page says free transferable college units. Fees for books or other costs are not listed on the page.",
+  "season": "year-round",
+  "duration": "By semester",
+  "status": "rolling",
+  "deadline_text": "No deadline stated. See the Important Dates link on the page.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply to SCC. Make your dual enrollment profile in the portal with your SCC student email. Send a course request. Then confirm your enrollment. Phone (714) 628-4764 or earlycollege@sccollege.edu.",
+  "url": "https://www.sccollege.edu/students/studentservices/earlycollege/",
+  "sources_fetched": [
+    "https://www.sccollege.edu/students/studentservices/earlycollege/"
+  ]
+}

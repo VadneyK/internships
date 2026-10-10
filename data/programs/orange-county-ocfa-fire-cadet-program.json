@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "max_age": 21,
+  "apply_url": "https://ocfa.org/residents/fire-cadet-interest/",
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "priority": 2,
+  "notes": "OCFA serves many Orange County cities. Ask which cadet post is nearest to you.",
+  "id": "orange-county-ocfa-fire-cadet-program",
+  "name": "OCFA Fire Cadet Program",
+  "org": "Orange County Fire Authority",
+  "regions": [
+    "orange-county"
+  ],
+  "city": "Orange County, CA (cadet posts at fire stations)",
+  "type": "shadowing",
+  "fields": [
+    "health",
+    "trades",
+    "social-impact"
+  ],
+  "what_you_do": "Learn basic fire skills in a 10 week trainee academy. Then join cadet activities. These include hydrant care and crowd and traffic control at Fire Authority events. You also help with public information programs. Cadets can observe the ride-along program.",
+  "min_age": 16,
+  "who_can_apply": "Ages 16 to 21 with a 2.0 GPA or higher, no arrests or convictions, and fire-safe grooming. Anyone over 18 also does a background check.",
+  "paid_type": "unpaid",
+  "pay_detail": "Not stated; described as a community-based youth program",
+  "season": "year-round",
+  "duration": "10 week Fire Cadet Trainee Academy (9 weeks at cadet posts, final exam in week 10)",
+  "status": "unconfirmed",
+  "deadline_text": "The trainee academy is held once a year. The page does not list the next start date.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the Cadet Interest Form on the OCFA site to join the interest list. Later, people on the list are asked to finish a longer form.",
+  "url": "https://ocfa.org/residents/fire-cadet/",
+  "sources_fetched": [
+    "https://ocfa.org/residents/fire-cadet/",
+    "https://ocfa.org/residents/fire-cadet-interest/"
+  ]
+}

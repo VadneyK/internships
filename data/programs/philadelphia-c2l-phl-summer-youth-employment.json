@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "min_age": 12,
+  "max_age": 24,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "philadelphia-c2l-phl-summer-youth-employment",
+  "name": "Career Connected Learning PHL (C2L-PHL) Summer Program",
+  "org": "City of Philadelphia Office of Children and Families, with JEVS Human Services",
+  "regions": [
+    "philadelphia"
+  ],
+  "city": "Philadelphia, PA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "The City funds this program. It includes paid service learning, project-based learning and internships. You learn about careers and get mentoring. You build work skills and shadow workers on the job.",
+  "who_can_apply": "Philadelphia residents ages 12 to 24. In-school youth get priority. You can apply to one program per cycle.",
+  "paid_type": "stipend",
+  "pay_detail": "Stipend on a prepaid debit card, paid every other week; total $1,300 to $1,500 depending on the program (hourly rate not listed).",
+  "season": "summer",
+  "duration": "Summer program (plus school-year programming)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Summer 2026 applications are closed. FAQ: summer applications open between March and April each year.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply through the C2L-PHL Youth Portal (phila.gov/c2l-phl). Documents: photo ID, school records, Social Security card, birth certificate or passport, and a work permit. Not first come, first served. Help: C2LPHL@jevs.org or 833-750-5627.",
+  "needs_work_permit": true,
+  "url": "https://www.phila.gov/programs/career-connected-learning-phl-c2l-phl/",
+  "priority": 1,
+  "notes": "Application is English only; call for help in other languages. Roughly 8,000 city-funded slots a summer (per PYN's site). Paid work for people under 18 in Pennsylvania needs a work permit. See permit.html?state=pa for the exact permit and steps.",
+  "sources_fetched": [
+    "https://www.phila.gov/programs/career-connected-learning-phl-c2l-phl/",
+    "https://www.phila.gov/programs/career-connected-learning-phl-c2l-phl/frequently-asked-questions/"
+  ]
+}

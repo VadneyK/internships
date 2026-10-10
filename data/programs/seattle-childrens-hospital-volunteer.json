@@ -1,0 +1,41 @@
+{
+  "opens_iso": null,
+  "apply_url": null,
+  "grades": null,
+  "min_age": 16,
+  "max_age": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "seattle-childrens-hospital-volunteer",
+  "name": "Seattle Children's Hospital Volunteer Program",
+  "org": "Seattle Children's",
+  "regions": [
+    "seattle"
+  ],
+  "city": "Seattle, WA",
+  "type": "volunteer",
+  "fields": [
+    "health"
+  ],
+  "what_you_do": "Weekly volunteer shifts at the hospital and regional clinics. Roles vary; see the position summaries on the volunteer site.",
+  "who_can_apply": "People 16 and over for some positions and 18 and over for others. You must meet the minimum age when you apply.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Volunteers get a badge and free on-site parking.",
+  "season": "year-round",
+  "duration": "Most shifts are 3 hours on the same day and time every week; at least 6 months in a row (check each role)",
+  "status": "unconfirmed",
+  "deadline_text": "Applications open each March, July and November and stay open until positions are filled. The site lists the next open date (not read).",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online during an open period (you have one hour to finish), complete online training and forms within 2 weeks, do a 1-hour virtual group interview, then accept a placement. Onboarding includes a Washington State background check, an in-person health screening and a 90-minute orientation. Email VolunteerServices@seattlechildrens.org or call 206-987-4655.",
+  "needs_work_permit": false,
+  "url": "https://seattlechildrens.vsyslive.com/",
+  "sources_fetched": [
+    "https://seattlechildrens.vsyslive.com/",
+    "https://www.seattlechildrens.org/giving/volunteer/",
+    "https://www.seattlechildrens.org/giving/volunteer/youth-service-projects/",
+    "https://lni.wa.gov/workers-rights/youth-employment/how-to-hire-minors"
+  ],
+  "priority": 2,
+  "notes": "The youth service projects page (for ages under 16, such as donation drives or junior guilds) still carries a COVID-era notice, so it may be out of date. Nearly all shifts are weekdays starting between 9am and 2pm. Washington L&I says its child labor rules 'only apply to minor employees, not volunteers.'"
+}

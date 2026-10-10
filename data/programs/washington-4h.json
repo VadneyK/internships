@@ -1,0 +1,38 @@
+{
+  "id": "washington-4h",
+  "name": "Washington 4-H",
+  "org": "Washington State University Extension, Washington 4-H",
+  "regions": [
+    "washington"
+  ],
+  "city": "Statewide, WA",
+  "type": "leadership",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Join a local 4-H club and pick one or more projects. Meet regularly. Clubs are led by elected youth officers. They take part in service learning, community outreach and other activities.",
+  "min_age": 5,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Youth starting at age 5 up to those who have not yet reached their 19th birthday on October 1 of the current 4-H year. Clubs run through your county WSU Extension office.",
+  "paid_type": "unpaid",
+  "pay_detail": "The statewide Join page does not list fees. Fees may be set by county, so ask your local Extension office.",
+  "season": "year-round",
+  "duration": "One 4-H year. Enrollment opens each Oct. 1.",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Enrollment opens on October 1 each year. The statewide Join page gives no closing date.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Choose your project or projects. Find a club through your county WSU Extension 4-H office. Or start one if none exists. Talk with local staff, then enroll through 4-H Online. Then go to meetings and events.",
+  "needs_work_permit": false,
+  "url": "https://extension.wsu.edu/4h/join/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://extension.wsu.edu/4h/join/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "Fees, clubs and projects differ by county. This is a youth club and leadership program, not a paid job."
+}

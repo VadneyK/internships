@@ -1,0 +1,39 @@
+{
+  "id": "medshare-youth-volunteers",
+  "name": "Youth Volunteer Sessions at MedShare",
+  "org": "MedShare",
+  "regions": [
+    "atlanta"
+  ],
+  "city": "Decatur, GA (MedShare headquarters)",
+  "type": "volunteer",
+  "fields": [
+    "health",
+    "social-impact"
+  ],
+  "what_you_do": "Sort, label and pack medical supplies in a 3-hour morning or afternoon shift. The supplies go to hospitals and clinics.",
+  "min_age": 10,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "Youth ages 10 to 17. Ages 10 to 13 must come with a parent or guardian. Ages 14 and up can volunteer on their own. A signed parent permission form is required for all youth.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer",
+  "season": "year-round",
+  "duration": "One session at a time: Wed and Fri 9 am to noon; Thu and Sat 9 am to noon and 1 to 4 pm",
+  "status": "year-round",
+  "deadline_text": "No deadline. Register for a session before you arrive.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Click Register on the volunteer page to pick a session. Everyone must register before arriving. Groups of 5 or fewer register one by one. Larger groups fill out the group request form.",
+  "needs_work_permit": false,
+  "url": "https://www.medshare.org/volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.medshare.org/volunteer",
+    "https://www.medshare.org/contact"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "The volunteer page does not name its work site. The only address on the contact page is the Decatur headquarters at 3240 Clifton Springs Road. Confirm the site when you register. MedShare does not host court-ordered or required community service."
+}

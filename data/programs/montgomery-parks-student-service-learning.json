@@ -1,0 +1,40 @@
+{
+  "min_age": 14,
+  "max_age": null,
+  "grades": null,
+  "opens_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "apply_url": null,
+  "deadline_iso": null,
+  "needs_work_permit": false,
+  "priority": 2,
+  "id": "montgomery-parks-student-service-learning",
+  "name": "Montgomery Parks volunteering and Student Service Learning hours",
+  "org": "Montgomery Parks (M-NCPPC, Montgomery County, Maryland)",
+  "regions": [
+    "college-park"
+  ],
+  "city": "Montgomery County, MD (park sites countywide; office in Wheaton)",
+  "type": "volunteer",
+  "fields": [
+    "environment",
+    "social-impact"
+  ],
+  "what_you_do": "Help at stream and park cleanups and natural surface trail workdays. Some chances are approved for Student Service Learning hours.",
+  "who_can_apply": "Volunteers without a parent or guardian must be 14 years old. Some jobs have higher age limits. Younger children can volunteer with a parent. This is the Family Volunteer program. The adult must register separately.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteering. Only opportunities approved by MCPS and the Montgomery County Volunteer Center give SSL hours.",
+  "season": "year-round",
+  "duration": "Varies by project",
+  "status": "year-round",
+  "deadline_text": "No deadline is listed. Browse the opportunities list and sign up for events.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Open the SSL Opportunities list on the Montgomery Parks site. Pick an event approved for SSL hours. Then register. You log in or create a volunteer account. Email parksvolunteers@montgomeryparks.org with questions.",
+  "url": "https://montgomeryparks.org/support/volunteer/ssl/",
+  "sources_fetched": [
+    "https://montgomeryparks.org/get-involved/volunteer/",
+    "https://montgomeryparks.org/support/volunteer/ssl/"
+  ],
+  "notes": "If you need many SSL hours in a short time, the page says that is only sometimes possible. Contacts on the page: Montgomery Parks Customer Service (301) 495-2595, and Volunteer Services 301-495-2504 on the main volunteer page. Office: 2425 Reedie Drive, 12th Floor, Wheaton, MD 20902."
+}

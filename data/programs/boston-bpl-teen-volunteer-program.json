@@ -1,0 +1,39 @@
+{
+  "id": "boston-bpl-teen-volunteer-program",
+  "name": "Teen Volunteer Program",
+  "org": "Boston Public Library",
+  "regions": [
+    "boston"
+  ],
+  "city": "Boston, MA",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "what_you_do": "You help in a library branch. You shelve books and set up displays. You make book lists and write book reviews. You help lead gaming programs. You learn customer service and job skills.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "Teens in grades 9 to 12.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer, unpaid",
+  "season": "year-round",
+  "duration": "Fall (September to December) and spring (January to June) cycles; five skill workshops on Monday afternoons at 4 p.m. on Zoom",
+  "status": "year-round",
+  "deadline_text": "The page says the program runs year-round, in a fall cycle (September to December) and a spring cycle (January to June). No application deadline is posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Email volunteer@bpl.org or call 617-859-2304 to ask about openings and apply.",
+  "needs_work_permit": false,
+  "url": "https://www.bpl.org/teen-volunteer-program/",
+  "sources_fetched": [
+    "https://www.bpl.org/teen-volunteer-program/",
+    "https://www.bpl.org/volunteer-at-bpl/"
+  ],
+  "priority": 1,
+  "notes": "Sites: Brighton, Central Library, Teen Central, Codman Square, East Boston, Grove Hall, Hyde Park, Mattapan, Roslindale, Shaw-Roxbury and West Roxbury. Workshops include resume building, privacy training and know your rights in the workplace.",
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "apply_url": null
+}

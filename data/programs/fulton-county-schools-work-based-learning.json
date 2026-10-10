@@ -1,0 +1,39 @@
+{
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "fulton-county-schools-work-based-learning",
+  "name": "Work-Based Learning, Fulton County Schools",
+  "org": "Fulton County Schools",
+  "regions": [
+    "atlanta"
+  ],
+  "city": "Fulton County, GA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Juniors and seniors earn high school credit. They work under supervision at an approved job site. This can be an internship, an apprenticeship or a clinical experience. The job must match the student's career pathway.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": "11-12",
+  "who_can_apply": "Fulton County Schools students who are at least 16, in 11th or 12th grade, and following a defined career pathway. Individual schools may add rules. Students in Atlanta Public Schools use their own district.",
+  "paid_type": "mixed",
+  "pay_detail": "School credit. The district page does not state pay. The state says internships may be paid or unpaid and co-ops and apprenticeships are paid.",
+  "season": "school-year",
+  "duration": "Per school term",
+  "status": "unconfirmed",
+  "deadline_text": "No dates are posted on the district page. Ask your school's Work-Based Learning coordinator for the application window.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Print and finish the WBL Interest Form. Give it to your school's WBL coordinator. Students who meet the requirements are issued an application. Grades, attendance, discipline and related coursework are reviewed. You must follow up on job leads yourself.",
+  "needs_work_permit": false,
+  "url": "https://www.fultonschools.org/all-departments/academics/learning-teaching/academic-programs/ctae/work-based-learning",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.fultonschools.org/all-departments/academics/learning-teaching/academic-programs/ctae/work-based-learning",
+    "https://gadoe.org/ctae/work-based-learning/",
+    "https://dol.georgia.gov/child-labor-employment-certificate-instructions"
+  ],
+  "priority": 2,
+  "notes": "District contact listed on the page: Leslie McHann, 470-254-0466. Georgia requires a work permit only under 16, and this program starts at 16."
+}

@@ -1,0 +1,39 @@
+{
+  "opens_iso": null,
+  "apply_url": null,
+  "grades": null,
+  "min_age": 15,
+  "max_age": 30,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "vancouver-bgc-south-coast-youth-employability",
+  "name": "Youth Employability Program (BGC South Coast BC)",
+  "org": "BGC South Coast BC",
+  "regions": [
+    "vancouver"
+  ],
+  "city": "Vancouver, BC",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "This is an 8-week program. About four weeks are job skills workshops and certificate training. Certificates include First Aid, WHMIS, Superhost and Serving It Right. Then you get up to four weeks of paid work experience with a local employer.",
+  "who_can_apply": "Ages 15 to 30 who need to find work. The page does not list other eligibility rules.",
+  "paid_type": "paid",
+  "pay_detail": "Participants are paid to take part, with a completion bonus for finishing all 8 weeks. Amounts are not stated on the page. Free to join.",
+  "season": "year-round",
+  "duration": "8 weeks per session",
+  "status": "unconfirmed",
+  "deadline_text": "Sessions run every other month (the page gives Oct, Dec, Feb, Apr as examples) and recruiting starts one month before each start date. No events were listed when read.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Click an event under Upcoming Events on the page to apply. Central office: 604-879-6554 or info@bgcbc.ca. Seats are limited.",
+  "needs_work_permit": null,
+  "url": "https://www.bgcbc.ca/youth-employability/",
+  "sources_fetched": [
+    "https://www.bgcbc.ca/youth-employability/",
+    "https://www.bgcbc.ca/"
+  ],
+  "priority": 1,
+  "notes": "Canada, so British Columbia Employment Standards rules have not been added to this guide yet. The page did not say where the workshops are held."
+}

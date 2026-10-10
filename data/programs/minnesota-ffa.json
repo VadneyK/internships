@@ -1,0 +1,41 @@
+{
+  "id": "minnesota-ffa",
+  "name": "Minnesota FFA",
+  "org": "Minnesota FFA Association",
+  "regions": [
+    "minnesota"
+  ],
+  "city": "Statewide, MN",
+  "type": "school-pathway",
+  "fields": [
+    "environment",
+    "business-finance",
+    "science"
+  ],
+  "what_you_do": "Join an agriculture class and your school's FFA chapter. You build leadership and career skills. Members can go to leadership conferences, a winter leadership summit and the State FFA Convention.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be enrolled in an agriculture, food and natural resources (AFNR) course at a school with an agricultural education program. The page lists no age or grade rule. If your school has no program, the site links to how to start one.",
+  "paid_type": "fee-based",
+  "pay_detail": "National FFA dues are $7 a year. Minnesota State FFA dues are $11 starting in 2026. That is $18 for both. Local chapters and regions may charge more.",
+  "season": "school-year",
+  "duration": "School year, tied to your ag class",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No application deadline. You join through your school's agriculture program.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Talk to your school counselor or agriculture teacher and sign up for an agriculture course. Joining FFA goes through that class.",
+  "needs_work_permit": false,
+  "url": "https://mnffa.org/how-to-join",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://mnffa.org/",
+    "https://mnffa.org/how-to-join"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "The home page reports 218 agricultural education programs in Minnesota. Ask your counselor whether your school has one."
+}

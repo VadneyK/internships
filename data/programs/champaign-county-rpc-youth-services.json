@@ -1,0 +1,39 @@
+{
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "grades": null,
+  "min_age": 14,
+  "max_age": 24,
+  "id": "champaign-county-rpc-youth-services",
+  "name": "Youth Services (Workforce Development)",
+  "org": "Champaign County Regional Planning Commission",
+  "regions": [
+    "champaign"
+  ],
+  "city": "Champaign, IL",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Get career planning and job search help. Get resume and interview practice. Get work experience. These services are for young people at the Champaign County workNet center.",
+  "who_can_apply": "Ages 14 to 24 who meet at least one condition, such as low family income, a disability, being a school dropout, homeless or foster youth, or needing extra help to finish school or get a job.",
+  "paid_type": "mixed",
+  "pay_detail": "Not stated for youth. A separate Work Experience page says qualified interns can have up to 240 hours of wages covered.",
+  "season": "year-round",
+  "duration": "Not stated",
+  "status": "rolling",
+  "deadline_text": "None stated on the page.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "The page gives no workNet address or walk-in hours. General CCRPC office: 1776 E Washington St, Urbana, IL 61802, (217) 328-3313.",
+  "needs_work_permit": null,
+  "url": "https://www.ccrpc.org/divisions/workforce_development/job_seeker_services/youth_service_programs_eligibility.php",
+  "sources_fetched": [
+    "https://www.ccrpc.org/divisions/workforce_development/job_seeker_services/youth_service_programs_eligibility.php",
+    "https://www.ccrpc.org/divisions/workforce_development/index.php",
+    "https://www.ccrpc.org/divisions/workforce_development/work_experience.php"
+  ],
+  "priority": 3,
+  "notes": "Eligibility rules apply, so not every teen qualifies. Call to ask about summer paid placements. The workforce site may be updated separately at eciwork.net. Illinois requires an employment certificate under age 16 (see the Illinois rules on this site)."
+}

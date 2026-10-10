@@ -20,8 +20,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=2254fadf">
-<link rel="stylesheet" href="assets/css/style.css?v=2254fadf">
+<link rel="stylesheet" href="assets/css/fonts.css?v=e1f7e4bc">
+<link rel="stylesheet" href="assets/css/style.css?v=e1f7e4bc">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -41,6 +41,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <a href="find.html">Programs</a>
       <a href="playbook.html">Playbook</a>
       <a href="resume.html">Resume</a>
+      <a href="ready.html">Get ready</a>
       <a href="insights.html" aria-current="page">Numbers</a>
       <a href="rules.html">Rules</a>
       <a href="contribute.html">Help build this</a>
@@ -49,12 +50,12 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch light and dark mode" title="Light / dark">&#9681;</button>
   </div>
 </header>
-<main id="main">
+<main id="main" tabindex="-1">
 <section style="padding-block:2rem 1rem;">
   <div class="wrap">
     <span class="tag y eyebrow">Insights</span>
     <h1 style="font-size:clamp(2.2rem,7vw,4rem);">The <span class="orange">numbers</span></h1>
-    <p class="lede">Every chart here comes from the same list as the <a href="find.html">Programs page</a>, and every bar is a link that opens that filter. The counts update when the list does.</p>
+    <p class="lede">Every chart here comes from the same list as the <a href="find.html">Programs page</a>, and almost every bar is a link that opens that filter. The counts update when the list does.</p>
     <div class="stats" id="topStats" aria-label="At a glance"></div>
   </div>
 </section>
@@ -92,6 +93,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <div><h3>By kind</h3><div id="chartTypes" class="chart"></div></div>
       <div><h3>By interest</h3><div id="chartFields" class="chart"></div></div>
     </div>
+    <p class="small muted" id="fieldsNote">The Programs page also lists programs that are open to any interest, so its count for an interest is higher than the bar here.</p>
   </div>
 </section>
 
@@ -99,9 +101,55 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   <div class="wrap">
     <h2>When does it happen?</h2>
     <div id="chartSeason" class="chart"></div>
+    <p class="small muted" id="seasonNote">The Programs page also lists programs that run in any season, so its count for a season is higher than the bar here.</p>
     <h3 style="margin-top:2rem;">Dates coming up</h3>
     <p class="small muted">Only deadlines confirmed for this cycle are listed. Many programs have not posted next year&rsquo;s dates yet. See <a href="find.html?view=dates">the by-deadline view</a> for everything with a date.</p>
     <ul class="tl" id="soonDates"></ul>
+  </div>
+</section>
+
+<section id="research" style="padding-block:2rem;">
+  <div class="wrap">
+    <h2>What the research says about first jobs</h2>
+    <p>Most of the strong studies are about big programs for low-income city teens, so each card says who was studied. That is not the same as you finding a job on your own. Where we could not find the original study, we left the claim out.</p>
+    <div class="grid g2" style="align-items:start;">
+      <article class="card"><span class="tag y">Pay</span><h3 style="margin-top:.6rem;">A summer job pays that year</h3>
+        <p>Teens who won New York City&rsquo;s summer job lottery ended the year about <b>$876 ahead</b> after counting other earnings they gave up.</p>
+        <p class="small muted">Who: about 294,000 lottery applicants ages 14 to 21 in New York City, 2005 to 2008. Source: <a href="https://www.nber.org/papers/w20810" target="_blank" rel="noopener">Gelber, Isen and Kessler</a>.</p></article>
+      <article class="card"><span class="tag y">Careful</span><h3 style="margin-top:.6rem;">Do not count on it to raise later pay</h3>
+        <p>The same study found about <b>$100 a year less</b> in earnings over the next three years, and no change in college enrollment. A first job helps you in other ways: people who know you, a reference, and proof you show up.</p>
+        <p class="small muted">Same study as above.</p></article>
+      <article class="card"><span class="tag y">Programs</span><h3 style="margin-top:.6rem;">Mentored job programs can change a lot</h3>
+        <p>In Chicago, an 8-week job with an adult mentor led to <b>43% fewer violent-crime arrests</b> over 16 months. In Boston, winners graduated on time <b>4.4 points more often</b> (63.4% in the comparison group). Chicago found no school gain, so it is not a rule.</p>
+        <p class="small muted">Who: low-income city teens in organized programs, not ordinary jobs. Sources: <a href="https://www.science.org/doi/10.1126/science.1257809" target="_blank" rel="noopener">Heller, Science 2014</a>; <a href="https://www.povertyactionlab.org/sites/default/files/research-paper/WP_4188_School%26%23039%3Bs-Out-Summer-Youth-Employment-Program_Modestino-Paulsen-Jan2022.pdf" target="_blank" rel="noopener">Modestino and Paulsen</a>.</p></article>
+      <article class="card"><span class="tag y">School year</span><h3 style="margin-top:.6rem;">Keep school-year hours under 20</h3>
+        <p>In a national study of students, those working <b>over 20 hours a week</b> did worse in school than those who worked less. This is a link, not proof, because students who choose long hours may differ in other ways.</p>
+        <p class="small muted">Source: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2926992/" target="_blank" rel="noopener">Staff, Schulenberg and Bachman, 2010</a>.</p></article>
+      <article class="card"><span class="tag y">Work in school</span><h3 style="margin-top:.6rem;">A school program with real work built in</h3>
+        <p>Students in Career Academies earned <b>11% more per year</b> for the next 8 years, mostly young men. It had no effect on diplomas. Ask your counselor about career pathway classes, work experience credit and Regional Occupational programs.</p>
+        <p class="small muted">Who: students at 9 mostly urban high schools in a randomized study. Source: <a href="https://files.givewell.org/files/unitedstates/NAF/Kemple%202008.pdf" target="_blank" rel="noopener">MDRC, 2008</a>.</p></article>
+      <article class="card"><span class="tag y">Normal</span><h3 style="margin-top:.6rem;">If you do not have a job yet, you are with most teens</h3>
+        <p>On average in June and July 2026, <b>35.5%</b> of US 16 to 19 year olds were employed, up from 33.8% in summer 2025. So far that summer it was <b>about 24%</b> for 16 and 17 year olds and <b>about 48%</b> for 18 and 19 year olds. In summer 2000 it was 51.7%.</p>
+        <p class="small muted">National numbers, not California. Source: <a href="https://www.pewresearch.org/short-reads/2026/08/19/after-a-long-fade-is-teen-summer-employment-in-the-us-rebounding/" target="_blank" rel="noopener">Pew Research Center</a>, from BLS data.</p></article>
+      <article class="card"><span class="tag y">People</span><h3 style="margin-top:.6rem;">Referrals are rare and powerful</h3>
+        <p>In one hiring dataset, referrals were <b>1.64% of applications</b> but <b>17.09% of hires</b>.</p>
+        <p class="small muted">Who: employers using one hiring system, mostly office jobs, data through December 2024. It shows what happens, not that asking causes an offer. Source: <a href="https://lp.gem.com/rs/972-IVV-330/images/2025%20Recruiting%20Benchmarks%20-%20Gem.pdf?version=0" target="_blank" rel="noopener">Gem 2025 Benchmarks Report</a>.</p></article>
+      <article class="card"><span class="tag y">People</span><h3 style="margin-top:.6rem;">People you know a little can matter most</h3>
+        <p>In experiments on more than 20 million LinkedIn members, <b>acquaintances</b> created the most job moves. In less digital industries, closer ties mattered more, which is closer to a local job for a teen.</p>
+        <p class="small muted">Who: adult professionals, not teens. Source: <a href="https://www.science.org/doi/10.1126/science.abl4476" target="_blank" rel="noopener">Rajkumar and others, Science 2022</a>.</p></article>
+      <article class="card"><span class="tag y">Adults</span><h3 style="margin-top:.6rem;">An adult who knows you helps, but it is no magic raise</h3>
+        <p>A review of 30 studies found that having a natural mentor, like a teacher, coach, relative or religious leader, goes with better results for young people. The effect is small, and <b>how close and caring the relationship is matters about twice as much</b> as simply having one. In one national study, a mentor alone did not significantly change later pay.</p>
+        <p class="small muted">Sources: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6174947/" target="_blank" rel="noopener">Van Dam and others, 2018</a>; <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4643259/" target="_blank" rel="noopener">Timpe and Lunkenheimer, 2015</a>. These show a link, not proof.</p></article>
+      <article class="card"><span class="tag y">Normal</span><h3 style="margin-top:.6rem;">About half of students have three adults who support them</h3>
+        <p><b>52%</b> of students in grades 6 to 12 in one large survey said three or more adults other than their parents support them. So about half do not. That is why the Playbook starts with a people map.</p>
+        <p class="small muted">Who: 121,157 students in communities that ran the survey, 2012 to 2015, so it is not a random sample. Source: <a href="https://thenationalcouncil.org/wp-content/uploads/2021/09/Developmental-Assets-among-U.S.-Youth-2018-Update.pdf" target="_blank" rel="noopener">Search Institute</a>.</p></article>
+      <article class="card"><span class="tag y">Employers</span><h3 style="margin-top:.6rem;">Work ethic matters most</h3>
+        <p><b>80.3% of employers</b> said professionalism and work ethic (on time, reliable, works well with others) is very important for high school hires. <b>70.3%</b> said new high school hires fell short on it.</p>
+        <p class="small muted">Who: 431 employers in 2006, with a 4.8% response rate, so treat it as old and rough. Source: <a href="https://files.eric.ed.gov/fulltext/ED519465.pdf" target="_blank" rel="noopener">Are They Really Ready to Work?</a></p></article>
+    </div>
+    <div class="callout plain" style="margin-top:1.5rem;">
+      <p><b>What we could not find.</b> No study we could read measures what a typical Northern California teen gets from an ordinary first job. We also left out popular claims, like &ldquo;working teens earn 16% more later,&rdquo; because we could not open the original study. We found no good national number on how many applications a teen needs, so we do not quote one.</p>
+    </div>
   </div>
 </section>
 
@@ -122,11 +170,29 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <div>
         <h2 class="fh">Teen internship guide</h2>
         <p>Free. No sign-up, no ads, no tracking. Everything you type here stays in your browser.</p>
-        <p class="small">Last checked <b>Oct 7, 2026</b> &middot; 259 programs</p>
+        <p class="small">Last checked <b>Oct 10, 2026</b> &middot; 1187 programs</p>
       </div>
       <div>
         <h2 class="fh">Quick links</h2>
-        <p><a href="find.html">Find a program</a><br><a href="playbook.html">Write your message</a><br><a href="resume.html">Build a first resume</a><br><a href="insights.html">The numbers</a><br><a href="rules.html">Work permit and pay rules</a><br><a href="contribute.html">Help build this guide</a></p>
+        <ul class="qlinks">
+          <li><a href="find.html">Find a program</a></li>
+          <li><a href="playbook.html">Write your message</a></li>
+          <li><a href="resume.html">Build a first resume</a></li>
+          <li><a href="ready.html">Get ready for day one</a></li>
+          <li><a href="calendar.html">What opens when</a></li>
+          <li><a href="paycheck.html">Your first paycheck</a></li>
+          <li><a href="safety.html">Safe at work</a></li>
+          <li><a href="younger.html">Ages 12 to 14: start here</a></li>
+          <li><a href="parents.html">For parents</a></li>
+          <li><a href="interview.html">Apply and interview prep</a></li>
+          <li><a href="permit.html">Do I need a work permit?</a></li>
+          <li><a href="languages.html">Work rules in your language</a></li>
+          <li><a href="insights.html">The numbers</a></li>
+          <li><a href="rules.html">Work permit and pay rules</a></li>
+          <li><a href="states.html">Rules in Georgia, New York, Illinois</a></li>
+          <li><a href="share.html">Share this guide (QR codes)</a></li>
+          <li><a href="contribute.html">Help build this guide</a></li>
+        </ul>
       </div>
       <div>
         <h2 class="fh">About this page</h2>
@@ -137,9 +203,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=2254fadf"></script>
-<script src="assets/js/common.js?v=2254fadf"></script>
-<script src="assets/js/insights.js?v=2254fadf"></script>
+<script src="assets/js/lib.js?v=e1f7e4bc"></script>
+<script src="assets/js/common.js?v=e1f7e4bc"></script>
+<script src="assets/js/insights.js?v=e1f7e4bc"></script>
 
 </body>
 </html>

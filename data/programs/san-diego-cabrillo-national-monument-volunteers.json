@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "max_age": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "priority": 3,
+  "notes": "Ask the park about age rules for each repeat role, since the page does not say.",
+  "id": "san-diego-cabrillo-national-monument-volunteers",
+  "name": "Cabrillo National Monument Volunteers-In-Parks",
+  "org": "National Park Service, Cabrillo National Monument",
+  "regions": [
+    "san-diego"
+  ],
+  "city": "San Diego (Point Loma), CA",
+  "type": "volunteer",
+  "fields": [
+    "environment",
+    "education"
+  ],
+  "what_you_do": "Volunteer at a national park. Roles include removing invasive plants and greeting visitors. You can help with Junior Ranger programs and protect tide pools. You can also guide science activities.",
+  "min_age": 8,
+  "who_can_apply": "Group volunteering (3 to 25 people) takes volunteers age 8 and up. The page does not give an age rule for individual volunteers.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "One-time service days or recurring roles",
+  "status": "year-round",
+  "deadline_text": "Group projects are open year-round. No deadline stated.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "For one-time or individual service, email cabr_volunteers@nps.gov. Groups use the Group volunteering page on the park website.",
+  "url": "https://www.nps.gov/cabr/getinvolved/volunteer.htm",
+  "sources_fetched": [
+    "https://www.nps.gov/cabr/getinvolved/volunteer.htm"
+  ]
+}

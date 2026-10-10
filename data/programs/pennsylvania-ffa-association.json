@@ -1,0 +1,40 @@
+{
+  "id": "pennsylvania-ffa-association",
+  "name": "Pennsylvania FFA Association",
+  "org": "Pennsylvania FFA Association",
+  "regions": [
+    "pennsylvania"
+  ],
+  "city": "Pennsylvania (school chapters)",
+  "type": "leadership",
+  "fields": [
+    "environment",
+    "business-finance"
+  ],
+  "what_you_do": "Join an FFA chapter at your school through agricultural education. Take part in leadership and career events, and do a hands-on project called a Supervised Agricultural Experience.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Students enrolled in agricultural education at a school with an FFA chapter. All students in agricultural education are on the official roster. The page does not state an age rule.",
+  "paid_type": "unpaid",
+  "pay_detail": "Costs are not stated on the pages read. Ask your ag teacher.",
+  "season": "school-year",
+  "duration": "Ongoing while you are in agricultural education",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline posted. You join through your school's agricultural education program.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Sign up for agricultural education at a school that has an FFA chapter. Use the Chapter Locator on the Pennsylvania FFA site to find one near you.",
+  "needs_work_permit": false,
+  "url": "https://www.paffa.org/about-ffa",
+  "apply_url": "https://www.paffa.org/chapter-locator",
+  "sources_fetched": [
+    "https://www.paffa.org/",
+    "https://www.paffa.org/about-ffa"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 3,
+  "notes": "The state page says nearly 16,000 students are members, in four regions. Members compete at chapter, regional, state and national events. The National FFA Organization has its own listing in other cards. This one is the Pennsylvania state page."
+}

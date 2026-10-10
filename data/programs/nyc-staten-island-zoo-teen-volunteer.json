@@ -1,0 +1,40 @@
+{
+  "id": "nyc-staten-island-zoo-teen-volunteer",
+  "name": "Teen Volunteer",
+  "org": "Staten Island Zoo",
+  "regions": [
+    "new-york-city"
+  ],
+  "city": "Staten Island, NY",
+  "type": "volunteer",
+  "fields": [
+    "environment",
+    "science",
+    "education"
+  ],
+  "what_you_do": "Help at the zoo in teen roles. Examples are Zoofari counselor helper and Education volunteer. Zoo staff train and supervise you.",
+  "min_age": 14,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Teens who are at least 14 years old. You must be able to work on your own and on a team and be available on a regular basis. Some roles (like animal diet prep) are adults only.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role.",
+  "season": "year-round",
+  "duration": "Minimum 3 months, can be extended. Regular availability needed.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Applications are accepted on a rolling basis. Placement depends on availability.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the Teen Volunteer application form linked on the zoo volunteer page. All volunteers go through a background check. The zoo cannot give status updates. It only contacts qualified candidates.",
+  "needs_work_permit": false,
+  "url": "https://www.statenislandzoo.org/volunteer-job-opportunities#volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.statenislandzoo.org/volunteer-job-opportunities"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "Limited spaces. Volunteers in animal care jobs must show a negative TB test and proof of COVID-19 vaccination, per the page."
+}

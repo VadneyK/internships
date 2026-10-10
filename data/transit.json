@@ -1,0 +1,171 @@
+{
+ "read": "Oct 9, 2026",
+ "places": [
+  {
+   "id": "nyc",
+   "name": "New York City",
+   "state": "New York",
+   "get": "Your school. Ask the Parent Coordinator. The MTA does not hand out Student OMNY cards.",
+   "cost": "Free Student OMNY card: 4 free rides a day, any time, with transfers, on weekends and in summer. Without it a ride is $3, capped at $35 a week.",
+   "who": "Grades 7 to 12 who live under 0.5 mile from school are not eligible. There are exceptions for medical needs, temporary housing, foster care and safety.",
+   "bring": "The pages do not list any papers. Ask your school.",
+   "work": "Not stated. The school page says the card is for getting to school and school activities. The OMNY page says take up to four free trips any time. Ask your school before you count on it for a job.",
+   "ends": "No end date stated.",
+   "plan": {
+    "t": "MTA app (the only official planner we could confirm)",
+    "u": "https://www.mta.info/guides/apps"
+   },
+   "sources": [
+    {
+     "t": "NYC Public Schools: Student OMNY cards",
+     "u": "https://www.schools.nyc.gov/school-life/transportation/student-omny-cards"
+    },
+    {
+     "t": "OMNY: students",
+     "u": "https://omny.info/students"
+    },
+    {
+     "t": "Who is eligible",
+     "u": "https://www.schools.nyc.gov/school-life/transportation/bus-eligibility"
+    }
+   ]
+  },
+  {
+   "id": "chicago",
+   "name": "Chicago",
+   "state": "Illinois",
+   "get": "Your school. Chicago Public Schools issue the Student Ventra Card directly. If your school does not, order one by mail: $2.00, 7 to 10 business days, and it is mailed to your school.",
+   "cost": "$0.75 a ride on CTA and Pace, at any time, in the school year and summer. Students ages 7 to 20.",
+   "who": "Full-time students. College students do not qualify.",
+   "bring": "Nothing for CPS students. Other schools use the mail order form.",
+   "work": "Yes. The student fare works 24 hours a day, 7 days a week, so any trip counts, including to a job.",
+   "ends": "This is a pilot. A card for 2026-27 gets the student fare that school year, and after Oct 1, 2027 you pay full fare unless it is renewed. CPS renews automatically.",
+   "plan": {
+    "t": "CTA trip planner",
+    "u": "https://www.transitchicago.com/planatrip/"
+   },
+   "sources": [
+    {
+     "t": "CTA: students",
+     "u": "https://www.transitchicago.com/students/"
+    },
+    {
+     "t": "Mail order form",
+     "u": "https://www.transitchicago.com/assets/1/6/Student_Ventra_Card_-_New_Card_Order_Form.pdf"
+    }
+   ]
+  },
+  {
+   "id": "atlanta",
+   "name": "Atlanta",
+   "state": "Georgia",
+   "get": "There is no student fare card. Some schools hand out discounted 10-trip MARTA passes that work on weekdays. Ask your school. School contact: upass@itsmarta.com.",
+   "cost": "A regular fare is $2.50, with up to 4 free transfers in 3 hours. A Breeze card is a one-time $2.00, or tap a contactless bank card or phone. Passes you can buy: 7-day $23.75, 30-day $95.",
+   "who": "Teens 13 and up pay full fare unless their school gives them a pass.",
+   "bring": "The pages do not list any papers.",
+   "work": "School passes work on weekdays only. Whether they work in summer is not stated.",
+   "ends": "Not stated.",
+   "plan": {
+    "t": "MARTA trip planner",
+    "u": "https://itsmarta.com/ride/planner"
+   },
+   "sources": [
+    {
+     "t": "MARTA student program",
+     "u": "https://itsmarta.com/student-program.aspx"
+    },
+    {
+     "t": "MARTA fares and transfers",
+     "u": "https://itsmarta.com/ride/how-to-pay/fares-and-transfers"
+    },
+    {
+     "t": "Ways to pay",
+     "u": "https://itsmarta.com/ride/how-to-pay/ways-to-pay"
+    }
+   ]
+  },
+  {
+   "id": "la",
+   "name": "Los Angeles",
+   "state": "California",
+   "get": "Your school, if it joined the Student GoPass program (look up your school on the Metro page). If it did not, apply for a Reduced Fare TAP card online or at a Metro Customer Center.",
+   "cost": "GoPass is free on Metro and about 20 other agencies. Reduced Fare is $0.75 a ride, never more than $2.50 a day or $6 in 7 days. A regular fare is $1.75.",
+   "who": "K-12 students at a school that joined GoPass. Reduced Fare is for students under 21 enrolled in a Los Angeles County school.",
+   "bring": "GoPass: pick up the TAP card at school, activate it online or call 866-TAPTOGO, then wait 1 hour. Reduced Fare: proof of enrollment, and a guardian signature if you are under 18. The current document list was behind a bot wall, so confirm it.",
+   "work": "Yes. Metro says GoPass riders can ride anywhere, anytime. Not valid on Metrolink or Commuter Express.",
+   "ends": "The 2026-27 GoPass works through Sept 30, 2027, so summer is covered.",
+   "plan": {
+    "t": "LA Metro trip planner",
+    "u": "https://www.metro.net/riding/trip-planner/"
+   },
+   "sources": [
+    {
+     "t": "LA Metro: Student GoPass",
+     "u": "https://www.metro.net/fares/gopass/"
+    },
+    {
+     "t": "LA Metro: K-12 Reduced Fare",
+     "u": "https://www.metro.net/fares/student-k-12-discount/"
+    }
+   ]
+  },
+  {
+   "id": "orange",
+   "name": "Orange County",
+   "state": "California",
+   "get": "You apply, not your school. Apply online at octa.net/Youth or at the OCTA Store. Phone: (714) 560-6282.",
+   "cost": "Free OC Bus rides for ages 6 to 18.",
+   "who": "Ages 6 to 18. OC Bus fixed routes only.",
+   "bring": "A Wave card number, a document with your name and birthdate (like a student ID), a recent photo, and a signed parent consent form. A young teen cannot finish this alone.",
+   "work": "Yes. OCTA says the pass is good all the time, including daily trips to school, work and appointments.",
+   "ends": "Finish registration by Dec 31, 2026. The pass lasts two years and ends the month you turn 19. Without approval, a Wave card may be charged the regular $2.00 fare.",
+   "plan": {
+    "t": "OCTA trip planner",
+    "u": "https://octa.net/getting-around/trip-planner/trip-planner"
+   },
+   "sources": [
+    {
+     "t": "OCTA: Youth Ride Free",
+     "u": "https://octa.net/getting-around/bus/oc-bus/fares-and-passes/youth-ride-free"
+    },
+    {
+     "t": "OCTA: for youths",
+     "u": "https://octa.net/getting-around/bus/oc-bus/fares-and-passes/youth-ride-free/for-youths"
+    }
+   ]
+  },
+  {
+   "id": "sandiego",
+   "name": "San Diego",
+   "state": "California",
+   "get": "Download the PRONTO app and make a virtual card, or buy a PRONTO card ($2 fee) and set it to Youth online, by phone at (619) 595-5636, or in person.",
+   "cost": "Free on MTS and NCTD for everyone 18 and under with a Youth PRONTO account.",
+   "who": "Ages 18 and under. Kids 5 and under ride free with no card.",
+   "bring": "Carry a school photo ID, another photo ID with your birthdate, or a birth certificate. A school ID alone does not give free rides. The PRONTO Youth account does.",
+   "work": "Yes. MTS lists getting to work as a use, and there is no school-year limit.",
+   "ends": "This is a pilot through June 30, 2027. Online sign-up is processed the next business day.",
+   "plan": {
+    "t": "MTS trip planner",
+    "u": "https://www.sdmts.com/getting-around/trip-planner"
+   },
+   "sources": [
+    {
+     "t": "MTS: Youth Opportunity Pass",
+     "u": "https://www.sdmts.com/fares/youth-opportunity-pass-program"
+    }
+   ]
+  }
+ ],
+ "driving": {
+  "headline": "Do not take a job that has you driving",
+  "text": "Under federal law a teen under 17 may not drive on public roads as part of a job. A 17 year old may only do limited, occasional driving, and only if every condition is met. Your state may be stricter. Ask your state labor agency.",
+  "source": {
+   "t": "US Department of Labor, Fact Sheet 34",
+   "u": "https://www.dol.gov/agencies/whd/fact-sheets/34-child-labor-motor-vehicles"
+  }
+ },
+ "gaps": [
+  "No agency page we read sets a minimum age to ride alone. Ask your school or the transit agency.",
+  "Teen driving rules for work in California, Georgia, New York and Illinois were not read. Ask the state labor agency."
+ ]
+}

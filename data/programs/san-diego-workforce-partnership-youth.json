@@ -1,0 +1,38 @@
+{
+  "id": "san-diego-workforce-partnership-youth",
+  "name": "San Diego Workforce Partnership youth career services",
+  "org": "San Diego Workforce Partnership",
+  "regions": [
+    "san-diego"
+  ],
+  "city": "San Diego County, CA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "You can sign up for free career centers. They offer training and one-on-one coaching. Some people get paid on-the-job work experience.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Free career centers. The page says it has helped thousands of 16 to 24 year olds and states no eligibility age, so ask.",
+  "paid_type": "mixed",
+  "pay_detail": "Services are free. Some opportunities include paid training or paid on-the-job work experience; rates are not stated.",
+  "season": "year-round",
+  "duration": "Varies by program",
+  "status": "rolling",
+  "deadline_text": "No deadline. The online application takes about 10 to 15 minutes, then staff contact you about next steps.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Complete the online program application (10 to 15 minutes). The team follows up about next steps.",
+  "needs_work_permit": null,
+  "url": "https://workforce.org/c2csd",
+  "apply_url": "https://portal.workforce.org/s/program-application?recordId=a3Z1N000002Op14UAC",
+  "sources_fetched": [
+    "https://workforce.org/c2csd",
+    "https://workforce.org/our-programs/"
+  ],
+  "priority": 2,
+  "notes": "The programs page also lists GenAI, workforce support for in-school youth across San Diego County school systems, and EXCEL for in-school and out-of-school young adults in the South Bay; their ages and dates were not checked. Pay and permit rules for under-18 placements are not stated.",
+  "verified": "fetched",
+  "verified_on": "2026-10-09"
+}

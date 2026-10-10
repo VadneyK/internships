@@ -1,0 +1,43 @@
+{
+  "min_age": 12,
+  "max_age": 18,
+  "grades": null,
+  "opens_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "apply_url": null,
+  "deadline_iso": null,
+  "needs_work_permit": false,
+  "priority": 2,
+  "id": "college-park-composite-squadron-cap-cadets",
+  "name": "College Park Composite Squadron, Civil Air Patrol cadets",
+  "org": "Civil Air Patrol, Maryland Wing (College Park Composite Squadron, MD-011)",
+  "regions": [
+    "college-park"
+  ],
+  "city": "College Park, MD (College Park Airport)",
+  "what_you_do": "Cadets fly, learn to lead, hike, camp and get in shape. This squadron meets on Wednesday evenings at the College Park Airport.",
+  "who_can_apply": "Teens ages 12 to 18, per the national Civil Air Patrol page. This is a composite squadron, which means it has both cadets and adult members.",
+  "pay_detail": "Annual cadet dues are $55 for Maryland in CAP's dues table, which also says national dues went up $10 for FY27. Uniform costs are not stated on the pages read.",
+  "duration": "Weekly meetings, Wednesdays 6:45 to 9:00",
+  "how_to_apply": "Email the squadron commander to ask about visiting a meeting with a parent. CAP's usual steps are listed on the Virginia and North Carolina wing pages. They are to go to at least three weekly meetings. Then complete the membership application.",
+  "url": "https://mdwg.cap.gov/squadrons/college-park/",
+  "sources_fetched": [
+    "https://mdwg.cap.gov/squadrons/college-park/",
+    "https://www.gocivilairpatrol.com/join/youth-in-cadet-program/",
+    "https://www.gocivilairpatrol.com/join/membership-dues/",
+    "https://vawg.cap.gov/join/become-a-cadet-ages-12-18/"
+  ],
+  "notes": "Volunteer youth program, not a job. Squadron location: 6709 Corporal Frank Scott Drive, College Park, MD 20740. Commander listed on the page: Capt. Estelle Roche, estelle.roche@mdwg.cap.gov. The meeting time is from the squadron page; confirm before you go.",
+  "type": "leadership",
+  "fields": [
+    "engineering",
+    "science",
+    "any"
+  ],
+  "season": "year-round",
+  "paid_type": "unpaid",
+  "status": "rolling",
+  "deadline_text": "No deadline. You can join any time through a local squadron.",
+  "deadline_confidence": "rolling"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "dekalb-library-teen-advisory-board",
+  "name": "Teen Advisory Board (DeKalb County Public Library)",
+  "org": "DeKalb County Public Library",
+  "city": "DeKalb County, GA",
+  "type": "civic-government",
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "what_you_do": "You plan and run a teen library project or program. You share ideas at monthly meetings. You help promote reading and library services.",
+  "min_age": 14,
+  "max_age": 18,
+  "who_can_apply": "Teens ages 14 to 18 who live in DeKalb County.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Members earn volunteer hours for attending meetings.",
+  "season": "school-year",
+  "duration": "Monthly meetings for the school year; at least one meeting must be in person",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Applications for the 2026-2027 school year are closed. The page does not say when the next application opens.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "The page gives no application steps; check the library's Teens Get Involved page and volunteer page for the next cycle.",
+  "needs_work_permit": false,
+  "url": "https://dekalblibrary.org/support-us/teens-get-involved",
+  "priority": 2,
+  "notes": "Meeting dates were listed as coming soon. Members can miss a meeting by telling advisors through Slack or the pre-meeting survey. A search result also described a separate Teen Library Board Trustee seat, but that was not on the page read.",
+  "regions": [
+    "atlanta"
+  ],
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "sources_fetched": [
+    "https://dekalblibrary.org/support-us/teens-get-involved"
+  ]
+}

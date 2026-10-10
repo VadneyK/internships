@@ -1,0 +1,41 @@
+{
+  "id": "oak-park-park-district-seasonal-jobs",
+  "grades": null,
+  "apply_url": "https://www.paycomonline.net/v4/ats/web.php/jobs?clientkey=41D8300184906117978771C10E755DC6",
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 1,
+  "needs_work_permit": null,
+  "duration": "Seasonal, with set start and end dates",
+  "pay_detail": "Pay is listed on the job postings, not on the main jobs page.",
+  "name": "Summer and Seasonal Park District Jobs",
+  "org": "Park District of Oak Park",
+  "regions": [
+    "chicago"
+  ],
+  "city": "Oak Park, IL",
+  "type": "paid-youth-program",
+  "fields": [
+    "sports",
+    "education",
+    "environment",
+    "food-hospitality"
+  ],
+  "what_you_do": "Work a summer job at parks, recreation centers, pools, camps and youth programs. The district says it is the largest youth employer in the area. It hires about 300 summer workers a year.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "Open to job seekers. The page does not list minimum ages. Check the age on each job posting.",
+  "paid_type": "paid",
+  "season": "summer",
+  "status": "rolling",
+  "deadline_text": "No dates are posted on the jobs page. Applications are kept for one year, then you must reapply.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the online job form. You can upload a resume and cover letter. Hiring supervisors review it. The district cannot talk about forms with anyone but the person who applied.",
+  "url": "https://pdop.org/jobs/",
+  "notes": "The page does not say when seasonal hiring opens. Check it in winter. Inclusion partner jobs are handled by WSSRA, a partner group. Illinois: the Evanston Township High School work permit page says workers under 16 need a work permit (employment certificate) before starting.",
+  "sources_fetched": [
+    "https://pdop.org/jobs/",
+    "https://www.eths202.org/beyond-eths/work-permit"
+  ]
+}

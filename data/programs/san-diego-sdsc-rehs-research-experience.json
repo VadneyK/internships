@@ -1,0 +1,40 @@
+{
+  "grades": "Grades 10 to 12",
+  "max_age": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "priority": 1,
+  "notes": "The page calls it a volunteer internship. Pick project prerequisites carefully. Students may do only one REHS internship per summer. 2027 dates are not posted, so check the page in early 2027.",
+  "id": "san-diego-sdsc-rehs-research-experience",
+  "name": "Research Experience for High School Students (REHS)",
+  "org": "San Diego Supercomputer Center, UC San Diego",
+  "regions": [
+    "san-diego"
+  ],
+  "city": "La Jolla, San Diego, CA",
+  "type": "research",
+  "fields": [
+    "tech-cs",
+    "science",
+    "engineering"
+  ],
+  "what_you_do": "Work for 8 weeks on a real computing research project with a UC San Diego mentor and grad students. You learn to test ideas with code and finish with a scientific poster.",
+  "min_age": 16,
+  "who_can_apply": "Southern California residents in grade 10, 11 or 12 who have finished a semester of high school. You are 16 by June 15 and have a 3.0 GPA or higher. You are college bound. You must come to the final poster session.",
+  "paid_type": "fee-based",
+  "pay_detail": "Free to apply. Registration fee is $2,000 if accepted. Full and partial scholarships are available based on need.",
+  "season": "summer",
+  "duration": "8 weeks, 10 to 20 hours a week (2026 ran June 8 to July 31)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "2026 applications ran Feb 15 to Mar 15, 2026. The 2027 dates are not posted yet.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online (free). Mentors read applications and interview students. If you accept, you get a registration link and pay by the end of May unless you get a scholarship.",
+  "url": "https://education.sdsc.edu/studenttech/rehs/",
+  "sources_fetched": [
+    "https://education.sdsc.edu/studenttech/rehs/",
+    "https://www.sdsc.edu/education/internships.html"
+  ]
+}

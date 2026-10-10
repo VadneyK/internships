@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "max_age": null,
+  "apply_url": "https://app.betterimpact.com/Application?OrganizationGuid=51c58df1-5490-4bba-9dd2-a28145514bf6&ApplicationFormNumber=1",
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "priority": 1,
+  "notes": "Not every role needs fingerprints. The page lists Tecolote Nature Center and Tri-Canyon among its chances.",
+  "id": "san-diego-parks-and-recreation-volunteer",
+  "name": "San Diego Parks and Recreation Volunteer Program",
+  "org": "City of San Diego Parks and Recreation Department",
+  "regions": [
+    "san-diego"
+  ],
+  "city": "San Diego, CA",
+  "type": "volunteer",
+  "fields": [
+    "environment",
+    "sports",
+    "social-impact"
+  ],
+  "what_you_do": "Help with park clean-ups, tree planting, youth sports and recreation programs. You can also help at community events. There are roles at Tecolote Nature Center, aquatics, golf and AgeWell Services.",
+  "min_age": 13,
+  "who_can_apply": "Minimum age is 13. Under 13 must come with an adult. Volunteers (including 13 to 17 year olds) who work with minors, seniors or people with disabilities must be fingerprinted and cleared by state law.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "One-time events or regular roles",
+  "status": "rolling",
+  "deadline_text": "No deadline stated.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Register on the volunteer sign-up page, then pick events or roles. Fingerprinting is by appointment (619-236-6686) for roles that need it. Wear closed-toe shoes and bring water, a hat and sunscreen.",
+  "url": "https://www.sandiego.gov/park-and-recreation/general-info/employment/volunteer",
+  "sources_fetched": [
+    "https://www.sandiego.gov/park-and-recreation/general-info/employment/volunteer"
+  ]
+}

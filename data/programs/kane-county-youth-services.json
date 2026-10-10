@@ -1,0 +1,38 @@
+{
+  "opens_iso": null,
+  "apply_url": null,
+  "min_age": 16,
+  "max_age": 24,
+  "grades": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": null,
+  "id": "kane-county-youth-services",
+  "name": "Kane County Workforce Development Youth Services (WIOA Youth)",
+  "org": "Kane County Workforce Development Division",
+  "regions": [
+    "chicago"
+  ],
+  "city": "Kane, DeKalb and Kendall Counties (Elgin area), IL",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "You can get paid work experience. You can do internships and job shadowing. Apprenticeships are also an option. You get resume and interview coaching. You can get GED prep and tutoring. You also get help with life skills, transportation and child care.",
+  "who_can_apply": "Ages 16 to 24 who live in Kane, DeKalb or Kendall County. The page lists no income or other rules (federal workforce funding rules may apply, so ask the provider).",
+  "paid_type": "mixed",
+  "pay_detail": "Paid work experience is one of the services; pay rate is not stated.",
+  "season": "year-round",
+  "duration": "Varies by provider",
+  "status": "unconfirmed",
+  "deadline_text": "No dates posted. You contact a provider and they explain how to start.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Pick a provider on the page and contact them directly. Providers in Kane County include Elgin Community College and Business & Career Services Inc. Waubonsee Community College covers Kane and Kendall. Not sure where to start? Call 630-762-2085.",
+  "url": "https://www2.kanecountyil.gov/WDD/Pages/youthServices.aspx",
+  "sources_fetched": [
+    "https://www2.kanecountyil.gov/WDD/Pages/youthServices.aspx"
+  ],
+  "priority": 2,
+  "notes": "Starts at age 16, so it fits older high schoolers. The page names one contact person but lists an email that does not match that name, so phone first. Funded by a U.S. Department of Labor grant per the page. Elgin Community College's own Future Workforce Leaders program is one of the providers."
+}

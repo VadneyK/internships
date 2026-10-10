@@ -1,0 +1,39 @@
+{
+  "id": "pomona-valley-hospital-high-school-volunteer",
+  "name": "High School Volunteer Program",
+  "org": "Pomona Valley Hospital Medical Center",
+  "regions": [
+    "inland-empire",
+    "los-angeles"
+  ],
+  "city": "Pomona, CA",
+  "type": "volunteer",
+  "fields": [
+    "health"
+  ],
+  "what_you_do": "You volunteer one shift a week in the hospital. It helps you explore medical careers.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 11",
+  "who_can_apply": "Students currently in 9th, 10th or 11th grade. The page does not list an age rule.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "At least 1 year; one 3-hour shift a week (up to 3 shifts)",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "No dates posted. The same page says the hospital is currently only accepting adult volunteer applications, so check before applying.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Use the 'Click here to apply for high school volunteer opportunities' link on the page, or call the hospital volunteer office to confirm if high school applications are open.",
+  "needs_work_permit": false,
+  "url": "https://www.pvhmc.org/patients-visitors/additional-services/volunteer-program/high-school-volunteers/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.pvhmc.org/patients-visitors/additional-services/volunteer-program/high-school-volunteers/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "CONFIRM FIRST: the page offers a high school application link but also says only adult applications are being accepted right now. Scheduled Monday to Friday shifts."
+}

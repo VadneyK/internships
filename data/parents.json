@@ -1,0 +1,557 @@
+{
+ "pages": {
+  "permit.html": "Work permit finder",
+  "languages.html": "In your language",
+  "playbook.html": "The Playbook",
+  "interview.html": "Apply and interview",
+  "paycheck.html": "Your first paycheck",
+  "younger.html": "Ages 12 to 14",
+  "rules.html": "The Rules",
+  "ready.html": "Get ready"
+ },
+ "sign": {
+  "lead": {
+   "t": "A parent usually has to sign the work permit.",
+   "p": "languages.html"
+  },
+  "states": [
+   {
+    "id": "ca",
+    "name": "California",
+    "permit": "Permit to Employ and Work",
+    "need": "Under 18",
+    "parent": "A parent or guardian signs the Statement of Intent (form B1-1) with the teen and the employer. Then the school issues the permit (form B1-4). Bring proof of age, such as a birth certificate.",
+    "call": "California Labor Commissioner: 833-526-4636",
+    "p": "permit.html?state=ca"
+   },
+   {
+    "id": "ga",
+    "name": "Georgia",
+    "permit": "Employment Certificate (work permit)",
+    "need": "Under 16",
+    "parent": "The pages we read do not say that a parent signs. The teen gets a data sheet at school and the employer fills in a section. Bring a certified birth certificate and a school letter that says the teen is enrolled full time with good attendance.",
+    "call": "Georgia DOL Child Labor unit: 1-877-709-8185, childlabor@gdol.ga.gov",
+    "p": "permit.html?state=ga"
+   },
+   {
+    "id": "ny",
+    "name": "New York",
+    "permit": "Working papers (employment certificate)",
+    "need": "Under 18",
+    "parent": "A parent signs the application. The teen also brings proof of age, a doctor's note from the last 12 months (a school sports physical counts) and a school ID or a recent report card.",
+    "call": "New York State Department of Labor: 888-469-7365 or 888-525-2267",
+    "p": "permit.html?state=ny"
+   },
+   {
+    "id": "il",
+    "name": "Illinois",
+    "permit": "Employment certificate",
+    "need": "Under 16",
+    "parent": "A parent applies in person with the teen, unless the school allows remote. The employer gives a letter of intent to hire. Also bring proof of age, a school schedule statement and a physical-fitness statement. The school may not charge a fee.",
+    "call": "Illinois Department of Labor child labor questions: 312-793-5570, hotline 800-645-5784",
+    "p": "permit.html?state=il"
+   },
+   {
+    "id": "wa",
+    "name": "Washington",
+    "permit": "Parent and school authorization form (the employer holds the Minor Work Permit)",
+    "need": "Under 18",
+    "parent": "A parent or guardian, the teen, the employer and a school official all sign the parent and school authorization form. A teen hired only for summer break uses the parent authorization for summer work form. It expires each Sept 30 and must be renewed every year.",
+    "call": "Washington Labor and Industries (lni.wa.gov/TeenWorkers)",
+    "p": "permit.html?state=wa"
+   },
+   {
+    "id": "tx",
+    "name": "Texas",
+    "permit": "Certificate of Age (optional, some employers ask)",
+    "need": "No general permit",
+    "parent": "Texas does not require a work permit on the pages we read. Ask the employer whether they want a Certificate of Age. If they do, get the form from the Texas Workforce Commission.",
+    "call": "Texas Workforce Commission child labor line (twc.texas.gov)",
+    "p": "permit.html?state=tx"
+   },
+   {
+    "id": "mn",
+    "name": "Minnesota",
+    "permit": "Employment certificate (only for school-day work during school hours)",
+    "need": "No general permit",
+    "parent": "Minnesota does not require a general work permit on the pages we read. Under 16, an employment certificate is needed only to work on school days during school hours. Keep proof of age ready.",
+    "call": "Minnesota Department of Labor and Industry (dli.mn.gov/child-labor)",
+    "p": "permit.html?state=mn"
+   },
+   {
+    "id": "wi",
+    "name": "Wisconsin",
+    "permit": "Work permit for 14 and 15 year olds",
+    "need": "Under 16",
+    "parent": "A parent or guardian applies for the permit through the Wisconsin Department of Workforce Development and pays for it. The employer must reimburse the $10 fee by the teen's first paycheck.",
+    "call": "Wisconsin Department of Workforce Development (dwd.wisconsin.gov)",
+    "p": "permit.html?state=wi"
+   },
+   {
+    "id": "in",
+    "name": "Indiana",
+    "permit": "No work permit",
+    "need": "No general permit",
+    "parent": "Indiana no longer requires work permits for 14 through 17 year olds on the state pages we read. Ask the employer what proof of age they want.",
+    "call": "Indiana Department of Labor Youth Employment Division: (317) 232-2655",
+    "p": "permit.html?state=in"
+   },
+   {
+    "id": "mi",
+    "name": "Michigan",
+    "permit": "Youth employment permit (statewide online system)",
+    "need": "Under 18",
+    "parent": "The teen and the employer complete the permit in the state's online system. The pages we read say to bring a parent or guardian if the system asks. Local schools no longer issue permits.",
+    "call": "Michigan Department of Labor and Economic Opportunity (michigan.gov/leo)",
+    "p": "permit.html?state=mi"
+   },
+   {
+    "id": "nc",
+    "name": "North Carolina",
+    "permit": "Youth Employment Certificate",
+    "need": "Under 18",
+    "parent": "The employer starts the certificate in the state's online system. A parent should not start it. A parent or guardian, the teen and the employer sign it electronically before the first day.",
+    "call": "North Carolina Department of Labor (labor.nc.gov)",
+    "p": "permit.html?state=nc"
+   },
+   {
+    "id": "nj",
+    "name": "New Jersey",
+    "permit": "Working papers (online)",
+    "need": "Under 18",
+    "parent": "A parent helps the teen apply for working papers online with the state. The employer must register online too.",
+    "call": "New Jersey Department of Labor and Workforce Development (nj.gov/labor/youngworkers)",
+    "p": "permit.html?state=nj"
+   },
+   {
+    "id": "pa",
+    "name": "Pennsylvania",
+    "permit": "Work permit",
+    "need": "Under 18",
+    "parent": "The teen applies with the issuing officer at the school district, in person or virtually. Under 16, a parent or guardian fills out a written statement that grants permission and says they know the duties and hours (Form LLC-75).",
+    "call": "Pennsylvania Department of Labor and Industry (pa.gov/agencies/dli)",
+    "p": "permit.html?state=pa"
+   },
+   {
+    "id": "ma",
+    "name": "Massachusetts",
+    "permit": "Work permit (employment permit)",
+    "need": "Under 18",
+    "parent": "Apply at the superintendent of schools' office. Bring a parent or guardian and proof of age. At 14 or 15, a doctor must fill out the Physician's Certificate of Health part.",
+    "call": "Massachusetts Attorney General's Fair Labor Division (mass.gov blocked our reader, so confirm there)",
+    "p": "permit.html?state=ma"
+   },
+   {
+    "id": "bc",
+    "name": "British Columbia (Canada)",
+    "permit": "Written parental consent (and a child employment permit for some ages and jobs)",
+    "need": "Under 16",
+    "parent": "A parent or guardian gives written permission for the teen to work, and the employer keeps it on file. The teen must work under the direct supervision of someone who is at least 19.",
+    "call": "BC Employment Standards Branch (gov.bc.ca, young people)",
+    "p": "permit.html?state=bc"
+   },
+   {
+    "id": "oh",
+    "name": "Ohio",
+    "permit": "Working permit (age and schooling certificate)",
+    "need": "Under 18",
+    "parent": "A parent or legal guardian completes the pre-application form with the teen and the employer. The teen takes it to school. Ages 16 and 17 need no permit for nonagricultural, nonhazardous work during summer vacation, but need proof of age and a signed parent or guardian consent statement.",
+    "call": "Ohio Department of Commerce, Minor Work Permits (minorworkpermit.com.ohio.gov)",
+    "p": "permit.html?state=oh"
+   },
+   {
+    "id": "md",
+    "name": "Maryland",
+    "permit": "Work permit",
+    "need": "Under 18",
+    "parent": "Get the job offer first. Then apply through the Maryland Division of Labor and Industry. Bring a parent or guardian, proof of age and the job offer details.",
+    "call": "Maryland Division of Labor and Industry (labor.maryland.gov)",
+    "p": "permit.html?state=md"
+   },
+   {
+    "id": "va",
+    "name": "Virginia",
+    "permit": "Employment certificate (ages 14 and 15)",
+    "need": "Under 16",
+    "parent": "Get a firm job offer first. Then start the employment certificate registration. The school division handles it. Bring a parent or guardian, proof of age and the job offer details.",
+    "call": "Virginia Department of Labor and Industry (doli.virginia.gov)",
+    "p": "permit.html?state=va"
+   }
+  ],
+  "note": {
+   "t": "Who signs, and what to bring, is different in each state. When the pages we read do not say, the finder tells you to check before you start and gives the number to call. We have read 17 states and British Columbia so far. If your state is not listed, pick \"My state is not listed\" to see who to ask.",
+   "p": "permit.html"
+  },
+  "others": [
+   {
+    "t": "On the first day the teen fills out Form I-9 and shows original documents within three business days of starting. Photocopies do not count, except a certified copy of a birth certificate. The employer must let the teen choose which acceptable document to show.",
+    "p": "ready.html#papers"
+   },
+   {
+    "t": "A replacement Social Security card is free. It arrives in 5 to 10 business days after the request is complete. Call 1-800-772-1213 to ask what is needed.",
+    "p": "ready.html#papers"
+   },
+   {
+    "t": "California only: a birth certificate costs $31 a copy (since Jan 1, 2026) and the state says the average wait is 4 to 6 weeks, plus mail time. An authorized copy needs a notarized form. A parent can help the teen order it, so start early.",
+    "p": "ready.html#papers"
+   },
+   {
+    "t": "For a city summer program, gather a photo ID or school ID, a Social Security card or number, a proof of address (a bill or school letter), the latest report card and a parent who can sign. Many portals open for only a few weeks.",
+    "p": "ready.html#city"
+   },
+   {
+    "t": "On the first day the teen also fills out the federal Form W-4 and, in some states, a state tax form. The Get ready page says to ask a parent to sit with the teen.",
+    "p": "ready.html#money"
+   }
+  ]
+ },
+ "languages": {
+  "lead": {
+   "t": "These are the official pages and forms in other languages that we could open and read. We do not translate anything ourselves.",
+   "p": "languages.html"
+  },
+  "list": [
+   {
+    "code": "es",
+    "name": "Spanish"
+   },
+   {
+    "code": "zh",
+    "name": "Chinese"
+   },
+   {
+    "code": "ko",
+    "name": "Korean"
+   },
+   {
+    "code": "vi",
+    "name": "Vietnamese"
+   },
+   {
+    "code": "tl",
+    "name": "Tagalog"
+   },
+   {
+    "code": "uk",
+    "name": "Ukrainian"
+   }
+  ],
+  "p": "languages.html"
+ },
+ "help": {
+  "lead": {
+   "t": "Most teens never ask. The Playbook walks a teen through four steps: a people map, a message, sending it, and what to do after a yes.",
+   "p": "playbook.html"
+  },
+  "playbook": [
+   {
+    "t": "The Playbook gives teens a five-line message. The lines are who you are, how you know them, what you are curious about, one small ask with a time limit, and a thank you. The last line makes it easy to say no.",
+    "p": "playbook.html#message"
+   },
+   {
+    "t": "If a teen is under 18, the Playbook says to show a parent or another trusted adult before the message is sent.",
+    "p": "playbook.html#message"
+   },
+   {
+    "t": "A teen can send the message from their own email or a parent's, or hand it to a parent to pass on. The Playbook also says to ask a parent or youth leader to read it first.",
+    "p": "playbook.html#send"
+   },
+   {
+    "t": "The people map has five adults a teen already knows. The Playbook says a parent's coworker, someone from church, a coach or the owner of a shop the teen visits every week all count.",
+    "p": "playbook.html#map"
+   },
+   {
+    "t": "If the teen hears nothing, wait one week and send one short follow-up. Then move on to the next name.",
+    "p": "playbook.html#send"
+   },
+   {
+    "t": "To walk into a local business, go with a parent the first time, during a slow hour. Skip the walk-in if the place is busy or the teen is alone and not comfortable.",
+    "p": "playbook.html#walkin"
+   },
+   {
+    "t": "Everything a teen types into the Playbook stays on that device.",
+    "p": "playbook.html"
+   }
+  ],
+  "interview": [
+   {
+    "t": "Four things make a first application strong. They are the days and hours the teen can work. They are people who already said yes to be a reference. They are a short answer to \"tell me about yourself.\" And they are two questions to ask.",
+    "p": "interview.html"
+   },
+   {
+    "t": "Availability is not a schedule. An employer can schedule the teen for less, and the hour limits apply to the hours the teen actually works.",
+    "p": "interview.html#availability"
+   },
+   {
+    "t": "For practice questions, a teen should write a few words for each, not a script.",
+    "p": "interview.html#practice"
+   },
+   {
+    "t": "On interview day, a parent can help the teen practice and give a ride, but should not come in with the teen.",
+    "p": "interview.html#ask"
+   },
+   {
+    "t": "A teen should have four references ready, ask each person first, and not write someone down without telling them. Good choices are a teacher, a coach, a family the teen babysits for, a boss or a volunteer supervisor.",
+    "p": "interview.html#references"
+   },
+   {
+    "t": "The sources do not say whether a parent, relative or youth pastor can be a reference. If a form says no relatives, use a teacher, coach or supervisor.",
+    "p": "interview.html#references"
+   }
+  ]
+ },
+ "money": {
+  "lead": {
+   "t": "A first check is smaller than hours times pay rate.",
+   "p": "paycheck.html"
+  },
+  "pay": [
+   {
+    "t": "California's minimum wage is $16.90 an hour in 2026 and $17.40 on Jan 1, 2027. Teens get the same minimum wage as adults. Some cities pay more.",
+    "p": "rules.html#pay"
+   },
+   {
+    "t": "The paycheck page uses Georgia $7.25 (the federal minimum). In New York it uses $17.00 in New York City, Long Island and Westchester and $16.00 in the rest of the state. In Illinois outside Chicago it uses $13.00 for under 18 in the first 650 hours, and $15.00 after 650 hours or at 18 and older.",
+    "p": "paycheck.html#est"
+   },
+   {
+    "t": "Social Security tax is 6.2 percent of pay and Medicare tax is 1.45 percent. The employer pays a matching amount. Income tax is not in the estimate, because it depends on the tax forms the teen files.",
+    "p": "paycheck.html#est"
+   },
+   {
+    "t": "Babysitting and other personal-attendant work are exempt from the California state minimum wage. The rate is up to the teen and the family.",
+    "p": "rules.html#pay"
+   }
+  ],
+  "taxes": [
+   {
+    "t": "A teen can check \"exempt from withholding\" on the federal W-4 only if both are true: no federal income tax liability last year and none expected this year. Being a student does not make a teen exempt. Exempt never stops Social Security or Medicare tax. A teen who claims exempt may owe tax and penalties at filing.",
+    "p": "paycheck.html#forms"
+   },
+   {
+    "t": "The state forms are different. California uses Form DE 4, Georgia uses G-4 and Illinois uses IL-W-4. New York has a separate exemption form for young workers, IT-2104-E.",
+    "p": "paycheck.html#forms"
+   },
+   {
+    "t": "Georgia trap: a teen can claim exempt on the G-4 only if the teen filed a Georgia return last year and owed nothing. A teen starting a first job who did not file last year cannot check exempt.",
+    "p": "paycheck.html#forms"
+   },
+   {
+    "t": "If a teen does not have to file a return but tax was withheld, the teen should still file to get it back. A parent or tax preparer can help.",
+    "p": "paycheck.html#forms"
+   },
+   {
+    "t": "If a teen under 18 works for a parent's own unincorporated business (a sole proprietorship, or a partnership where both partners are the teen's parents), no Social Security or Medicare tax is taken. Income tax can still be withheld. This does not apply to a corporation. Ask a tax preparer.",
+    "p": "paycheck.html#est"
+   },
+   {
+    "t": "If a teen earns $400 or more from self-employment after costs, the IRS says the teen pays self-employment tax and files a return. Parents who pay a young sitter should read IRS Publication 926 and ask the IRS or a tax professional what applies to them.",
+    "p": "younger.html#money"
+   }
+  ],
+  "wrong": [
+   {
+    "t": "It is illegal for an employer to punish a teen for asking about pay or filing a claim. A teen who is unsure can ask a parent or call the number for the state.",
+    "p": "paycheck.html#wrong"
+   },
+   {
+    "t": "To ask about unpaid wages, call the number for your state. California: 833-526-4636 (Labor Commissioner). Georgia: 1-866-487-9243 (US Department of Labor Wage and Hour). New York: 888-469-7365. Illinois: 312-793-2804.",
+    "p": "paycheck.html#wrong"
+   }
+  ],
+  "bank": [
+   {
+    "t": "Federal law does not stop a minor from opening a savings account. State law decides how much a minor can do alone.",
+    "p": "paycheck.html#bank"
+   },
+   {
+    "t": "A parent can open the account for you, and may add both names. On a joint account, either person can usually withdraw all the money and close it.",
+    "p": "paycheck.html#bank"
+   },
+   {
+    "t": "Banks usually ask for your name, birth date, address and an ID number such as a Social Security number. Some accept a student ID. Ask what they need before you go.",
+    "p": "paycheck.html#bank"
+   },
+   {
+    "t": "Ask about fees: a monthly fee, a minimum balance, fees per transaction, and overdraft. A payroll card can have its own fees.",
+    "p": "paycheck.html#bank"
+   },
+   {
+    "t": "A custodial account for a child counts as the child's money for deposit insurance, up to $250,000.",
+    "p": "paycheck.html#bank"
+   },
+   {
+    "t": "The FDIC says minors can open a custodial account (the teen owns it, an adult manages it) or a joint account with an adult. Under 18, an adult may need to open the account with the teen. Only open a joint account with an adult you trust, because both people can take the money out.",
+    "p": "ready.html#money"
+   }
+  ]
+ },
+ "young": {
+  "lead": {
+   "t": "Most paid jobs start at 14. Before that, a teen can build skills, earn from people the family knows, and get a record that makes a first real job easier.",
+   "p": "younger.html"
+  },
+  "items": [
+   {
+    "t": "Federal law sets 14 as the minimum age for most non-farm jobs. Under federal law alone, a 13 year old may still help a neighbor with yard work or babysit, because those jobs are not covered. States can be stricter, and the stricter rule applies. For example, New York says a babysitter must be at least 14.",
+    "p": "younger.html#grid"
+   },
+   {
+    "t": "To ask a state about a 12 or 13 year old: California 833-526-4636, Georgia 877-709-8185, New York 888-525-2267, Illinois 312-793-5570.",
+    "p": "younger.html#grid"
+   },
+   {
+    "t": "First jobs should be for family, neighbors and friends a parent knows. Get the parents' permission first, and send a parent or another trusted adult along to meet someone new. Meet and stay in a public place.",
+    "p": "younger.html#safety"
+   },
+   {
+    "t": "The teen should not open the door for anyone when the parents are not home.",
+    "p": "younger.html#safety"
+   },
+   {
+    "t": "Before every job the teen should write down the address, have every parent and guardian phone number, and know about allergies and who to call in an emergency. Practice first by babysitting siblings or family friends while an adult is home.",
+    "p": "younger.html#safety"
+   },
+   {
+    "t": "Red Cross Babysitting Basics online is for ages 11 and up. It takes about 4 hours in six self-paced modules and costs $45.00. The certificate is valid for two years.",
+    "p": "younger.html#safety"
+   },
+   {
+    "t": "Care.com, Thumbtack, TaskRabbit, Wag and PayPal are 18 and over. Venmo is 18, with Teen Accounts for ages 13 to 17 that a parent opens. Cash App is 18, with a parent-sponsored account from 13.",
+    "p": "younger.html#safety"
+   },
+   {
+    "t": "Do not use a parent's account to get around an age rule. A parent can post or pay for the teen.",
+    "p": "younger.html#safety"
+   },
+   {
+    "t": "Groups that teach business skills include Junior Achievement, 4-H, Scouts BSA, Girl Scouts and Boys and Girls Clubs.",
+    "p": "younger.html#ladder"
+   }
+  ]
+ },
+ "safe": {
+  "lead": {
+   "t": "Reaching out to adults is a skill, and doing it safely is part of the skill.",
+   "p": "rules.html#safe"
+  },
+  "contact": [
+   {
+    "t": "Start with adults a parent knows, or who are connected through school, church, a team or a program.",
+    "p": "rules.html#safe"
+   },
+   {
+    "t": "Show a parent the message first, and copy a parent on early emails to adults the teen does not know well.",
+    "p": "rules.html#safe"
+   },
+   {
+    "t": "Use email or a group thread where a parent can see, not private direct messages.",
+    "p": "rules.html#safe"
+   },
+   {
+    "t": "Meet where people can see the teen: a library, an office lobby, a coffee shop, or a video call with a parent nearby. The teen tells a parent who, where and when.",
+    "p": "rules.html#safe"
+   },
+   {
+    "t": "Do not share a home address, school schedule, live location or photos with someone the teen has not met through a trusted adult.",
+    "p": "rules.html#safe"
+   }
+  ],
+  "flags": [
+   {
+    "t": "An adult asks the teen to keep messages secret from parents.",
+    "p": "rules.html#safe"
+   },
+   {
+    "t": "An adult wants to move to a private app or meet alone.",
+    "p": "rules.html#safe"
+   },
+   {
+    "t": "Anyone asks for or sends pictures that make the teen uncomfortable.",
+    "p": "rules.html#safe"
+   },
+   {
+    "t": "If anyone shares or threatens to share an explicit picture of a teen, tell a trusted adult. Report it to the National Center for Missing and Exploited Children (CyberTipline, 1-800-843-5678).",
+    "p": "rules.html#safe"
+   }
+  ],
+  "online": [
+   {
+    "t": "LinkedIn says it is not for anyone under 16. At 16 or 17 it is optional, and a parent should look over the profile.",
+    "p": "rules.html#online"
+   },
+   {
+    "t": "Handshake is 16 with a school account and 18 without. Indeed is generally 16, and under the age of adulthood it should be used with a parent or guardian.",
+    "p": "rules.html#online"
+   }
+  ],
+  "scams": [
+   {
+    "t": "The Federal Trade Commission says reported losses from job scams more than tripled from 2020 to 2023.",
+    "p": "rules.html#scams"
+   },
+   {
+    "t": "Did a stranger contact the teen first? Slow down, especially by text, WhatsApp or Telegram about easy online \"tasks.\"",
+    "p": "rules.html#scams"
+   },
+   {
+    "t": "Does it cost anything? Fees, starter kits, training, certifications and \"refundable\" deposits are warning signs. Real employers and the government never charge to hire you.",
+    "p": "rules.html#scams"
+   },
+   {
+    "t": "Did they send a check or ask the teen to move money? The check will be fake. The bank can take the money back weeks later.",
+    "p": "rules.html#scams"
+   },
+   {
+    "t": "Search the name plus \"scam,\" \"review\" or \"complaint.\" Look for a real website, address and phone number.",
+    "p": "rules.html#scams"
+   },
+   {
+    "t": "Some companies sell internship programs to teens for thousands of dollars. Ask who the real host is, whether the teen will do real work, what the refund policy is, and whether the same thing could be set up for free.",
+    "p": "rules.html#scams"
+   },
+   {
+    "t": "If a teen loses money, call the bank or payment app right away. Report it at ReportFraud.ftc.gov. In California, also report it to the California Attorney General.",
+    "p": "rules.html#scams"
+   }
+  ],
+  "work": [
+   {
+    "t": "California: if a teen is not paid, paid too little, or gets no breaks, call the Labor Commissioner at 833-526-4636 (English and Spanish, Monday to Friday, 8 a.m. to 5 p.m.). Keep the schedule, hours and pay stubs.",
+    "p": "rules.html#help"
+   },
+   {
+    "t": "A teen who is asked to do a job that is not allowed at that age can say no and tell the school's work permit office.",
+    "p": "rules.html#help"
+   }
+  ]
+ },
+ "gaps": {
+  "items": [
+   {
+    "t": "Whether a parent, relative or youth pastor can be a reference.",
+    "p": "interview.html#references"
+   },
+   {
+    "t": "Whether a child may walk a neighbor's dog for pay: no state or federal page names pet care.",
+    "p": "younger.html#money"
+   },
+   {
+    "t": "What to charge for odd jobs. No official source gives rates, so we do not either.",
+    "p": "younger.html#money"
+   },
+   {
+    "t": "Whether a parent's insurance covers a young sitter or yard worker.",
+    "p": "younger.html#money"
+   },
+   {
+    "t": "Whether a young worker can file a wage claim alone in each state. The paycheck page says to ask a parent to help.",
+    "p": "paycheck.html#bank"
+   },
+   {
+    "t": "Which questions an employer cannot ask. Ask your state labor agency.",
+    "p": "interview.html"
+   }
+  ]
+ }
+}

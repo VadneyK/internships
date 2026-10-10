@@ -1,24 +1,58 @@
-title: How to Find Internships: a Teen Guide for Davis, Silicon Valley and Oakland
-desc: A free guide for high schoolers in Northern California. Real programs with real deadlines, the work-permit rules, and a message that gets a yes.
+title: How to Find Internships: a Teen Guide for the US and Vancouver
+desc: A free guide for high schoolers in the US and Vancouver, BC. It started in California, Atlanta, New York and Chicago. Real programs, with the deadlines we could confirm, the work-permit rules, and a message that gets a yes.
 scripts: home
 ---
 <section class="hero" style="padding-top:2.2rem;">
   <img class="splat s1" src="assets/img/splat-yellow.svg" alt="" width="800" height="800">
   <img class="splat s2" src="assets/img/splat-orange.svg" alt="" width="800" height="800">
   <div class="wrap inner">
-    <span class="tag y eyebrow">Grades 7 to 12 &middot; Davis &middot; Silicon Valley &middot; Oakland</span>
+    <span class="tag y eyebrow">Grades 7 to 12 &middot; Many states &middot; Vancouver, BC</span>
     <h1><span class="a">How to find</span><span class="b stroke">Internships</span></h1>
     <img class="swoosh" src="assets/img/swoosh.svg" alt="" width="600" height="60">
-    <p class="lede" style="margin-top:1rem;">A free guide for teens in Northern California. Real programs with real deadlines, plus the one move that beats every job site: asking a person.</p>
+    <p class="lede" style="margin-top:1rem;">A free guide for teens. Pick your age to see real programs, with the deadlines we could confirm, then learn the one move that beats every job site: asking a person.</p>
     <div class="cta">
       <a class="btn" href="find.html">Find a program</a>
       <a class="btn alt" href="playbook.html">Write your message</a>
     </div>
+    <nav class="chips" aria-label="Jump to" style="margin-top:1rem;">
+      <a class="chip" style="text-decoration:none;" href="#start">What fits me</a>
+      <a class="chip" style="text-decoration:none;" href="#soon">Closing soon</a>
+      <a class="chip" style="text-decoration:none;" href="#offer">Work permit</a>
+    </nav>
     <div class="stats" aria-label="At a glance">
       <div class="stat"><b>{{count}}</b><span>programs checked</span></div>
-      <div class="stat"><b>3</b><span>hubs: Davis, Silicon Valley, Oakland</span></div>
+      <div class="stat"><b>12 to 18</b><span>ages the picker covers</span></div>
       <div class="stat"><b>$0</b><span>no sign-up, no tracking</span></div>
     </div>
+  </div>
+</section>
+
+<section id="start">
+  <div class="wrap">
+    <span class="tag eyebrow">Start here</span>
+    <h2>What fits <span class="orange">you</span>?</h2>
+    <form class="card" id="picker" onsubmit="return false" aria-label="Find matching programs">
+      <div class="formgrid">
+        <div class="field"><label for="pAge">How old are you?</label>
+          <select id="pAge" data-tiles><option value="">Pick your age</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option></select></div>
+        <div class="field"><label for="pHub">Where do you live or go to school?</label>
+          <select id="pHub" data-tiles data-tiles-any="Anywhere"><option value="">Anywhere</option></select></div>
+        <div class="field"><label for="pField">What are you curious about?</label>
+          <select id="pField" data-tiles data-tiles-any="Anything"><option value="">Anything</option></select></div>
+      </div>
+    </form>
+    <p id="matchStatus" class="sr" role="status"></p>
+    <div id="matches" class="results" style="margin-top:1.2rem;"></div>
+    <p id="matchMore" style="margin-top:1rem;" hidden></p>
+  </div>
+</section>
+
+<section id="soon" style="background:var(--paper-2); border-block:3px solid var(--edge);">
+  <div class="wrap">
+    <span class="tag o eyebrow">Next deadlines</span>
+    <h2>Closing <span class="orange">soon</span></h2>
+    <ul class="tl" id="soonList"><li><div class="d">...</div><div>Loading</div></li></ul>
+    <p style="margin-top:1rem;"><a class="btn alt sm" href="find.html?view=dates">See every deadline by month</a></p>
   </div>
 </section>
 
@@ -76,31 +110,14 @@ scripts: home
   </div>
 </section>
 
-<section id="start">
+<section id="offer">
   <div class="wrap">
-    <span class="tag eyebrow">Start here</span>
-    <h2>What fits <span class="orange">you</span>?</h2>
-    <form class="card" id="picker" onsubmit="return false" aria-label="Find matching programs">
-      <div class="formgrid">
-        <div class="field"><label for="pAge">How old are you?</label>
-          <select id="pAge"><option value="">Pick your age</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option></select></div>
-        <div class="field"><label for="pHub">Where do you live or go to school?</label>
-          <select id="pHub"><option value="">Anywhere in NorCal</option></select></div>
-        <div class="field"><label for="pField">What are you curious about?</label>
-          <select id="pField"><option value="">Anything</option></select></div>
-      </div>
-    </form>
-    <div id="matches" class="results" style="margin-top:1.2rem;" aria-live="polite"></div>
-    <p id="matchMore" style="margin-top:1rem;" hidden></p>
-  </div>
-</section>
-
-<section id="soon" style="background:var(--paper-2); border-block:3px solid var(--edge);">
-  <div class="wrap">
-    <span class="tag o eyebrow">Next deadlines</span>
-    <h2>Closing <span class="orange">soon</span></h2>
-    <ul class="tl" id="soonList"><li><div class="d">...</div><div>Loading</div></li></ul>
-    <p style="margin-top:1rem;"><a class="btn alt sm" href="find.html?view=dates">See every deadline by month</a></p>
+    <div class="card" style="display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between;">
+      <div><span class="tag y">Got a yes?</span>
+        <h3 style="margin-top:.6rem;">Find out which work permit you need</h3>
+        <p style="margin:0;">Pick your state, age and kind of work. You get the exact permit, the steps, and a checklist to print.</p></div>
+      <a class="btn" href="permit.html">Do I need a permit?</a>
+    </div>
   </div>
 </section>
 
@@ -110,11 +127,12 @@ scripts: home
       <div class="callout">
         <h3>Under 16?</h3>
         <p>You do not need a fancy internship. Shadowing a grown-up for an afternoon, volunteering at a library or hospital, and starting a small project all count, and many are open at 13 or 14.</p>
-        <p><a class="btn sm dark" href="find.html?age=14">Programs open at 14</a></p>
+        <p><a class="btn sm dark" href="find.html?age=14">Programs open at 14</a> <a class="btn sm dark" href="younger.html">Ages 12 to 14: start here</a></p>
       </div>
       <div class="callout plain">
         <h3>Parents and youth leaders</h3>
         <p>The fastest help is an introduction: one coworker, neighbor or church member who will take a 15-minute call from a teen. Then read the <a href="rules.html">work permit and pay rules</a> and the <a href="rules.html#scams">scam checklist</a> together.</p>
+        <p>See the <a href="parents.html">For parents</a> page, or <a href="safety.html">Safe at work</a> if a teen has a problem on the job.</p>
       </div>
     </div>
   </div>

@@ -1,0 +1,39 @@
+{
+  "opens_iso": null,
+  "apply_url": null,
+  "grades": "11 and 12",
+  "min_age": null,
+  "max_age": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "washington-running-start",
+  "name": "Running Start",
+  "org": "Washington State Board for Community and Technical Colleges",
+  "regions": [
+    "washington"
+  ],
+  "city": "Washington (34 community and technical colleges)",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "11th and 12th graders take college classes at a Washington community or technical college. They earn high school and college credit.",
+  "who_can_apply": "High school juniors and seniors in Washington. The SBCTC page does not list other requirements; contact the college's Running Start coordinator.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "No tuition. Students and families pay mandatory fees, books and transportation.",
+  "season": "year-round",
+  "duration": "Per quarter or semester",
+  "status": "rolling",
+  "deadline_text": "Deadlines are not stated on the SBCTC page; they vary by college.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Contact the Running Start coordinator at the college you want to attend (the SBCTC page links a coordinator list) and your high school counselor.",
+  "needs_work_permit": false,
+  "url": "https://www.sbctc.edu/colleges-staff/programs-services/running-start/",
+  "sources_fetched": [
+    "https://www.sbctc.edu/colleges-staff/programs-services/running-start/",
+    "https://www.lni.wa.gov/workers-rights/youth-employment/hours-of-work"
+  ],
+  "priority": 2,
+  "notes": "Work hours tie-in from Washington L&I: 16 and 17 year olds enrolled in a bona fide college program, such as Running Start, may work non-school week hours during the regular school year (employers should ask for proof such as a college transcript)."
+}

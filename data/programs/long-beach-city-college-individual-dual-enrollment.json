@@ -1,0 +1,38 @@
+{
+  "regions": [
+    "los-angeles"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "grades": null,
+  "needs_work_permit": false,
+  "id": "long-beach-city-college-individual-dual-enrollment",
+  "name": "Long Beach City College Individual Dual Enrollment",
+  "org": "Long Beach City College",
+  "city": "Long Beach, CA",
+  "type": "pre-college",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take college classes at Long Beach City College while you are in middle or high school. Students with 12 or more units by senior year can earn a graduation medallion.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "Active middle or high school students who meet each course's prerequisites. No minimum GPA is listed.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Tuition and enrollment fees are free. Course material fees, textbooks and supplies are not covered (a Textbook Loan Program exists for hardship).",
+  "season": "school-year",
+  "duration": "By term",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadlines listed on the page. See the college's Registration Dates and Academic Calendar pages.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply free on OPENCCC. You get your Viking ID by email. Then turn in the High School Dual Enrollment Form with all signatures. Finish New Student Orientation with a score of 80% or higher on the final test. Then register once Admissions confirms your form.",
+  "url": "https://www.lbcc.edu/dual-enrollment",
+  "priority": 2,
+  "notes": "Students who stop attending for two main terms must reapply. Taking college classes does not affect Long Beach College Promise eligibility. To take extra units, file the Unit Max Petition.",
+  "sources_fetched": [
+    "https://www.lbcc.edu/dual-enrollment"
+  ]
+}

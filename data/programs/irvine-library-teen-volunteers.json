@@ -1,0 +1,38 @@
+{
+  "id": "irvine-library-teen-volunteers",
+  "name": "Irvine Public Library Teen Volunteers",
+  "org": "Irvine Public Library (City of Irvine)",
+  "regions": [
+    "orange-county"
+  ],
+  "city": "Irvine, CA",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "what_you_do": "You help library staff with programs and crafts. You also help with the seed library and toy cleaning. You can help run the Summer Reading Program. Or join the Teen Advisory Group (TAG) for service projects. TAG also gives feedback on teen programs.",
+  "min_age": 14,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "High school students ages 14 and over (program assistance and toy cleaning are ages 14 to 17). Teen Summer Reading volunteers are students in grades 8 to 11. Each library has up to 20 TAG memberships.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Summer Reading volunteers work a weekly two-hour shift. Other roles vary.",
+  "status": "unconfirmed",
+  "deadline_text": "The undated page says: Summer Reading applications ran May 9 to May 30, school-year roles reopen Saturday, August 1, and TAG is full with a wait list for applications after August 26. No year is shown, so confirm current openings.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Submit the Teen Volunteer Application on the library's volunteer system at www.volgistics.com/appform/337674493. A required orientation comes before the summer program.",
+  "needs_work_permit": false,
+  "url": "https://www.cityofirvine.gov/node/90102",
+  "apply_url": "https://www.volgistics.com/appform/337674493",
+  "sources_fetched": [
+    "https://www.cityofirvine.gov/node/90102"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "The page lists no library contact; it points to the volunteer coordinator, and the City of Irvine main number is 949-724-6000. The page writes the Teen Volunteer Application link as volgistics.com/appform/337674493 and links it over https, so apply_url uses https."
+}

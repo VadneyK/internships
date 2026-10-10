@@ -6,47 +6,314 @@
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "id", "name", "org", "regions", "city", "type", "fields", "what_you_do", "min_age", "max_age", "grades",
-    "who_can_apply", "paid_type", "pay_detail", "season", "duration", "status", "deadline_text", "deadline_iso",
-    "deadline_confidence", "how_to_apply", "needs_work_permit", "url", "apply_url", "sources_fetched", "verified",
-    "verified_on", "priority", "notes"
+    "id",
+    "name",
+    "org",
+    "regions",
+    "city",
+    "type",
+    "fields",
+    "what_you_do",
+    "min_age",
+    "max_age",
+    "grades",
+    "who_can_apply",
+    "paid_type",
+    "pay_detail",
+    "season",
+    "duration",
+    "status",
+    "deadline_text",
+    "deadline_iso",
+    "deadline_confidence",
+    "how_to_apply",
+    "needs_work_permit",
+    "url",
+    "apply_url",
+    "sources_fetched",
+    "verified",
+    "verified_on",
+    "priority",
+    "notes"
   ],
   "properties": {
-    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "description": "kebab-case, same as the file name without .json" },
-    "name": { "type": "string", "minLength": 3 },
-    "org": { "type": "string", "minLength": 2 },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "kebab-case, same as the file name without .json"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 3
+    },
+    "org": {
+      "type": "string",
+      "minLength": 2
+    },
     "regions": {
-      "type": "array", "minItems": 1, "uniqueItems": true,
-      "items": { "enum": ["davis", "sacramento", "yolo", "silicon-valley", "san-jose", "peninsula", "fremont", "oakland", "berkeley", "alameda", "east-bay", "san-francisco", "statewide", "virtual", "national"] }
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "davis",
+          "sacramento",
+          "yolo",
+          "silicon-valley",
+          "san-jose",
+          "peninsula",
+          "fremont",
+          "oakland",
+          "berkeley",
+          "alameda",
+          "east-bay",
+          "san-francisco",
+          "statewide",
+          "seattle",
+          "washington",
+          "vancouver",
+          "british-columbia",
+          "austin",
+          "texas",
+          "twin-cities",
+          "minnesota",
+          "champaign",
+          "madison",
+          "wisconsin",
+          "lafayette",
+          "bloomington",
+          "indiana",
+          "columbus",
+          "cincinnati",
+          "ohio",
+          "ann-arbor",
+          "lansing",
+          "michigan",
+          "triangle",
+          "north-carolina",
+          "college-park",
+          "maryland",
+          "fairfax",
+          "charlottesville",
+          "blacksburg",
+          "virginia",
+          "new-brunswick",
+          "new-jersey",
+          "pittsburgh",
+          "philadelphia",
+          "pennsylvania",
+          "boston",
+          "massachusetts",
+          "santa-barbara",
+          "merced",
+          "virtual",
+          "national",
+          "orange-county",
+          "los-angeles",
+          "inland-empire",
+          "san-diego",
+          "atlanta",
+          "georgia",
+          "new-york-city",
+          "new-york-state",
+          "chicago",
+          "illinois"
+        ]
+      }
     },
-    "city": { "type": "string" },
-    "type": { "enum": ["paid-youth-program", "internship", "research", "volunteer", "shadowing", "pre-college", "apprenticeship-trades", "civic-government", "virtual", "entrepreneurship", "school-pathway", "leadership"] },
+    "city": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "paid-youth-program",
+        "internship",
+        "research",
+        "volunteer",
+        "shadowing",
+        "pre-college",
+        "apprenticeship-trades",
+        "civic-government",
+        "virtual",
+        "entrepreneurship",
+        "school-pathway",
+        "leadership"
+      ]
+    },
     "fields": {
-      "type": "array", "minItems": 1, "uniqueItems": true,
-      "items": { "enum": ["health", "tech-cs", "engineering", "science", "environment", "arts-media", "business-finance", "law-government", "education", "trades", "social-impact", "food-hospitality", "sports", "any"] }
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "health",
+          "tech-cs",
+          "engineering",
+          "science",
+          "environment",
+          "arts-media",
+          "business-finance",
+          "law-government",
+          "education",
+          "trades",
+          "social-impact",
+          "food-hospitality",
+          "sports",
+          "any"
+        ]
+      }
     },
-    "what_you_do": { "type": "string", "minLength": 10, "maxLength": 260, "description": "Plain words, about an 8th grade reading level." },
-    "min_age": { "type": ["integer", "null"], "minimum": 5, "maximum": 25 },
-    "max_age": { "type": ["integer", "null"], "minimum": 5, "maximum": 30 },
-    "grades": { "type": ["string", "null"] },
-    "who_can_apply": { "type": "string" },
-    "paid_type": { "enum": ["paid", "stipend", "unpaid", "unpaid-credit", "fee-based", "mixed"] },
-    "pay_detail": { "type": ["string", "null"] },
-    "season": { "enum": ["summer", "school-year", "winter", "spring", "fall", "year-round"] },
-    "duration": { "type": ["string", "null"] },
-    "status": { "enum": ["open-now", "opens-soon", "closed-expect-reopen", "rolling", "year-round", "event", "unconfirmed"] },
-    "opens_iso": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$", "description": "Optional. When status is opens-soon, the date applications open. The site flips the card to Open now on that date." },
-    "deadline_text": { "type": "string", "description": "Exact dates with the year. If 2027 dates are not posted, the last known cycle." },
-    "deadline_iso": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$", "description": "Next closing date, if known." },
-    "deadline_confidence": { "enum": ["confirmed-2026-27", "last-year-pattern", "rolling", "unknown"] },
-    "how_to_apply": { "type": "string" },
-    "needs_work_permit": { "type": ["boolean", "null"] },
-    "url": { "type": "string", "pattern": "^https://" },
-    "apply_url": { "type": ["string", "null"], "pattern": "^https://" },
-    "sources_fetched": { "type": "array", "items": { "type": "string", "pattern": "^https?://" } },
-    "verified": { "enum": ["fetched", "snippet-only"], "description": "fetched = a person read the official page; snippet-only = could not, confirm first." },
-    "verified_on": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
-    "priority": { "enum": [1, 2, 3], "description": "1 great fit for most teens, 2 narrower or competitive, 3 niche." },
-    "notes": { "type": "string" }
+    "what_you_do": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 260,
+      "description": "Plain words, about an 8th grade reading level."
+    },
+    "min_age": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 5,
+      "maximum": 25
+    },
+    "max_age": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 5,
+      "maximum": 30
+    },
+    "grades": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "who_can_apply": {
+      "type": "string"
+    },
+    "paid_type": {
+      "enum": [
+        "paid",
+        "stipend",
+        "unpaid",
+        "unpaid-credit",
+        "fee-based",
+        "mixed",
+        "not-stated"
+      ]
+    },
+    "pay_detail": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "season": {
+      "enum": [
+        "summer",
+        "school-year",
+        "winter",
+        "spring",
+        "fall",
+        "year-round"
+      ]
+    },
+    "duration": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "open-now",
+        "opens-soon",
+        "closed-expect-reopen",
+        "rolling",
+        "year-round",
+        "event",
+        "unconfirmed"
+      ]
+    },
+    "opens_iso": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "Optional. When status is opens-soon, the date applications open. The site flips the card to Open now on that date."
+    },
+    "deadline_text": {
+      "type": "string",
+      "description": "Exact dates with the year. If 2027 dates are not posted, the last known cycle."
+    },
+    "deadline_iso": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "Next closing date, if known."
+    },
+    "deadline_confidence": {
+      "enum": [
+        "confirmed-2026-27",
+        "last-year-pattern",
+        "rolling",
+        "unknown"
+      ]
+    },
+    "how_to_apply": {
+      "type": "string"
+    },
+    "needs_work_permit": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "url": {
+      "type": "string",
+      "pattern": "^https://"
+    },
+    "apply_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^https://"
+    },
+    "sources_fetched": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^https?://"
+      }
+    },
+    "verified": {
+      "enum": [
+        "fetched",
+        "snippet-only"
+      ],
+      "description": "fetched = a person read the official page; snippet-only = could not, confirm first."
+    },
+    "verified_on": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "priority": {
+      "enum": [
+        1,
+        2,
+        3
+      ],
+      "description": "1 great fit for most teens, 2 narrower or competitive, 3 niche."
+    },
+    "notes": {
+      "type": "string"
+    }
   }
 }

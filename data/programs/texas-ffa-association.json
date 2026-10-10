@@ -1,0 +1,43 @@
+{
+  "id": "texas-ffa-association",
+  "name": "Texas FFA Association",
+  "org": "Texas FFA Association",
+  "regions": [
+    "texas"
+  ],
+  "city": "Statewide, TX",
+  "type": "school-pathway",
+  "fields": [
+    "environment",
+    "business-finance",
+    "science"
+  ],
+  "what_you_do": "Take an agricultural science class at school and join your local FFA chapter. FFA is a student-led leadership group. Members earn degrees and can join contests, speaking events and leadership programs.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Agricultural science classes start no earlier than 7th grade. Junior FFA starts at 3rd grade.",
+  "who_can_apply": "Students who sign up for an agricultural science class at a school with an FFA chapter. The FAQ says the grade depends on the district and that home-schooled students are not covered by the program. Junior FFA needs age 8 and 3rd grade.",
+  "paid_type": "fee-based",
+  "pay_detail": "National dues $7 plus Texas dues $9 is $16 a year, not counting area, district or local dues. Junior FFA is $9 a year (state only).",
+  "season": "school-year",
+  "duration": "School year, tied to your agricultural science class",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No application deadline. You join through your school's agriculture program.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Your first contact is your local agricultural science teacher. Sign up for an agricultural science class.",
+  "needs_work_permit": false,
+  "url": "https://www.texasffa.org/faq",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.texasffa.org/",
+    "https://www.texasffa.org/membership",
+    "https://www.texasffa.org/what-is-ffa",
+    "https://www.texasffa.org/faq"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "Junior FFA is a state-only membership at $9 a year, says the membership page."
+}

@@ -15,7 +15,7 @@ GOOD = {
     "min_age": 16, "max_age": 19, "grades": None, "who_can_apply": "Oakland students.", "paid_type": "paid",
     "pay_detail": "$20 per hour", "season": "summer", "duration": "6 weeks", "status": "open-now",
     "deadline_text": "Closes Jan 8, 2027", "deadline_iso": "2027-01-08", "deadline_confidence": "confirmed-2026-27",
-    "how_to_apply": "Online form.", "needs_work_permit": True, "url": "https://example.org/program", "apply_url": None,
+    "how_to_apply": "Fill in the online form on the program page.", "needs_work_permit": True, "url": "https://example.org/program", "apply_url": None,
     "sources_fetched": ["https://example.org/program"], "verified": "fetched", "verified_on": "2026-10-07", "priority": 1, "notes": "",
 }
 
@@ -79,6 +79,17 @@ class FreshnessTests(unittest.TestCase):
         self.assertTrue(any("deadline" in r for r in freshness.needs_refresh(d, dt.date(2027, 1, 20), 999)))
         d["status"] = "rolling"
         self.assertFalse(any("deadline" in r for r in freshness.needs_refresh(d, dt.date(2027, 1, 20), 999)))
+
+    def test_open_card_flagged_the_day_its_deadline_passes(self):
+        d = copy.deepcopy(GOOD)
+        self.assertEqual(freshness.needs_refresh(d, dt.date(2027, 1, 8), 999), [])
+        reasons = freshness.needs_refresh(d, dt.date(2027, 1, 9), 999)
+        self.assertTrue(any("status says open" in r and "2027-01-08" in r for r in reasons))
+
+    def test_opens_soon_with_past_deadline_flagged(self):
+        d = copy.deepcopy(GOOD); d["status"] = "opens-soon"; d["opens_iso"] = "2026-12-01"
+        reasons = freshness.needs_refresh(d, dt.date(2027, 1, 9), 999)
+        self.assertTrue(any("status says open" in r for r in reasons))
 
     def test_snippet_only_flagged(self):
         d = copy.deepcopy(GOOD); d["verified"] = "snippet-only"

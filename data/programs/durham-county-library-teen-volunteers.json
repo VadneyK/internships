@@ -1,0 +1,39 @@
+{
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "durham-county-library-teen-volunteers",
+  "name": "Durham County Library Teen Volunteers",
+  "org": "Durham County Library",
+  "regions": [
+    "triangle"
+  ],
+  "city": "Durham, NC",
+  "type": "volunteer",
+  "fields": [
+    "education"
+  ],
+  "what_you_do": "Teens help at a library branch with shelving, pulling books, tutoring and prepping crafts. Tasks depend on the branch and the time.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "6-12",
+  "who_can_apply": "The For Teens page says the program is for all tweens and teens in grades 6 to 12. The general volunteer page says all volunteers must be 14 or older.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": "Ongoing, set with the branch",
+  "status": "year-round",
+  "deadline_text": "No deadline stated. Each branch decides whether it can host volunteers; availability is not guaranteed.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Contact the teen librarian at your preferred branch. The general volunteer page also says to fill out the volunteer application form (PDF) and bring it to your nearest library.",
+  "needs_work_permit": false,
+  "url": "https://durhamcountylibrary.org/for-teens/",
+  "sources_fetched": [
+    "https://durhamcountylibrary.org/for-teens/",
+    "https://durhamcountylibrary.org/volunteer-opportunities/"
+  ],
+  "priority": 1,
+  "notes": "The two Durham County Library pages disagree on age: the teen page says grades 6 to 12, the general volunteer page says 14 or older. Ask the teen librarian which applies. The library says it cannot currently host court-mandated community service hours."
+}

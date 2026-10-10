@@ -1,0 +1,40 @@
+{
+  "id": "san-bernardino-county-spark-syep",
+  "name": "SPARK Summer Youth Employment Program (San Bernardino County)",
+  "org": "County of San Bernardino Human Resources",
+  "regions": [
+    "inland-empire"
+  ],
+  "city": "San Bernardino County, CA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any",
+    "law-government"
+  ],
+  "what_you_do": "Work a paid summer job in a San Bernardino County department while joining workshops, mentoring and career exploration. You earn a certificate of completion.",
+  "min_age": 16,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "San Bernardino County residents ages 16 to 24 by the start date, legally authorized to work in the U.S., with a valid California ID card. Under 18 needs an approved work permit before day one.",
+  "paid_type": "paid",
+  "pay_detail": "$16.90 per hour in 2026 (about 28 hours a week).",
+  "season": "summer",
+  "duration": "2026: about six weeks, June 15 to July 24, Monday to Friday",
+  "status": "closed-expect-reopen",
+  "deadline_text": "2026 applications opened March 16 and closed at the first 800 applications or March 27, whichever came first. 2025 applications opened March 15. 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online through the county's job site when the window opens in March, upload proof of age and residency, attend orientation, then get matched to a job.",
+  "needs_work_permit": true,
+  "url": "https://hr.sbcounty.gov/spark-syep/",
+  "apply_url": "https://www.governmentjobs.com/careers/sanbernardino",
+  "sources_fetched": [
+    "https://hr.sbcounty.gov/spark-syep/",
+    "https://www.governmentjobs.com/careers/sanbernardino/jobs/5214196/spark-youth-employment-program",
+    "https://main.sbcounty.gov/2025/03/13/san-bernardino-countys-spark-program-launches-this-saturday/"
+  ],
+  "priority": 1,
+  "notes": "Very fast: the 2026 posting closed after 800 applications. Check hr.sbcounty.gov/spark-syep/ in early March 2027 and have proof of age, residency and a California ID ready. The county page shows a PDF on how to apply.",
+  "verified": "fetched",
+  "verified_on": "2026-10-09"
+}

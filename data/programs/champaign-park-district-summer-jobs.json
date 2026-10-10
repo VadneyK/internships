@@ -1,0 +1,41 @@
+{
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "grades": null,
+  "min_age": 15,
+  "max_age": null,
+  "id": "champaign-park-district-summer-jobs",
+  "name": "Champaign Park District Seasonal and Summer Jobs",
+  "org": "Champaign Park District",
+  "regions": [
+    "champaign"
+  ],
+  "city": "Champaign, IL",
+  "type": "paid-youth-program",
+  "fields": [
+    "sports",
+    "environment",
+    "food-hospitality",
+    "education"
+  ],
+  "what_you_do": "These are seasonal park district jobs. Examples are lifeguard and swim instructor at Sholem Aquatic Center. Others are summer camp staff, Prairie Farm, sports and grounds positions.",
+  "who_can_apply": "The page says 15 year olds can apply for lifeguard and swim instructor. Minimum ages for other jobs are not stated; check each posting.",
+  "paid_type": "paid",
+  "pay_detail": "Not stated on the pages read. Lifeguard certification is covered 100% by the Park District.",
+  "season": "summer",
+  "duration": "Seasonal jobs run April to November and do not exceed 6 months; summer camp is a 10-week program",
+  "status": "rolling",
+  "deadline_text": "No application dates or deadlines listed on the page.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply online through the District's job listings (linked from the Employment Opportunities page). Aquatics questions: Ryan Hays, ryan.hays@champaignparks.org. HR: hr@champaignparks.org.",
+  "needs_work_permit": null,
+  "url": "https://champaignparks.org/summer-hiring-center/",
+  "sources_fetched": [
+    "https://champaignparks.org/summer-hiring-center/",
+    "https://champaignparks.org/employment-opportunities/"
+  ],
+  "priority": 1,
+  "notes": "Lifeguard classes are run by the District in Champaign-Urbana. Concession workers get a paid-for Food Handler's certification. Illinois requires an employment certificate under age 16 (see the Illinois rules on this site)."
+}

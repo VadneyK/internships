@@ -1,0 +1,42 @@
+{
+  "grades": "Programs begin in 10th grade",
+  "min_age": null,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "philadelphia-school-district-career-technical-education",
+  "name": "Career and Technical Education (CTE), School District of Philadelphia",
+  "org": "School District of Philadelphia",
+  "regions": [
+    "philadelphia"
+  ],
+  "city": "Philadelphia, PA",
+  "type": "school-pathway",
+  "fields": [
+    "trades",
+    "health",
+    "tech-cs",
+    "food-hospitality",
+    "business-finance"
+  ],
+  "what_you_do": "Career programs in over 43 occupational areas (healthcare, IT, culinary, construction and more), a three-year course of study with work-based learning such as internships and apprenticeships.",
+  "who_can_apply": "District high school students starting in 10th grade. Middle schoolers choose a CTE program on their School Selection application; high schoolers can join if their school has the program and space allows.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "School program; the page does not say whether internships are paid.",
+  "season": "school-year",
+  "duration": "Typically 3 years, 1,080 hours of instruction; some programs 1 or 2 years",
+  "status": "rolling",
+  "deadline_text": "Follow the School Selection timeline for middle schoolers; high schoolers ask their counselor.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Middle school: pick schools that offer your CTE program on the School Selection application. High school: talk to your school counselor.",
+  "needs_work_permit": null,
+  "url": "https://www.philasd.org/cte/",
+  "priority": 2,
+  "notes": "The page notes that students ages 14 to 17 need working papers to work. Which schools offer which programs is in the CTE Programs List.",
+  "sources_fetched": [
+    "https://www.philasd.org/cte/"
+  ]
+}

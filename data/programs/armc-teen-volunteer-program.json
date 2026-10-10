@@ -1,0 +1,38 @@
+{
+  "id": "armc-teen-volunteer-program",
+  "name": "Teen Volunteer Program",
+  "org": "Arrowhead Regional Medical Center (San Bernardino County)",
+  "regions": [
+    "inland-empire"
+  ],
+  "city": "Colton, CA",
+  "type": "volunteer",
+  "fields": [
+    "health"
+  ],
+  "what_you_do": "Volunteer at the county hospital on one weekly shift. You give at least 100 hours of service.",
+  "min_age": 14,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Anyone at least 14 and a half years old. The page lists this rule for all volunteers and links a separate Teen Volunteer Application.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "At least 100 hours; one 2-hour shift a week",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No dates posted. Apply any time.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Complete the Teen Volunteer Application (Google form on the page). Questions: armc-volunteers@armc.sbcounty.gov or Volunteer Management, 400 N. Pepper Avenue, Colton, CA 92324.",
+  "needs_work_permit": false,
+  "url": "https://www.arrowheadregional.org/get-involved/",
+  "apply_url": "https://forms.gle/p4K8EYBB3TB8tpQu7",
+  "sources_fetched": [
+    "https://www.arrowheadregional.org/get-involved/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "Minimum age is 14 and a half. The page lists no application deadline or start dates."
+}

@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "min_age": 14,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": null,
+  "id": "ann-arbor-food-gatherers-volunteer",
+  "name": "Food Gatherers Volunteer Shifts (warehouse and Community Kitchen)",
+  "org": "Food Gatherers (Washtenaw County food bank)",
+  "regions": [
+    "ann-arbor"
+  ],
+  "city": "Ann Arbor, MI",
+  "type": "volunteer",
+  "fields": [
+    "social-impact",
+    "food-hospitality"
+  ],
+  "what_you_do": "You sort and repackage donated food in the warehouse. Or you prepare and serve meals at the Community Kitchen. You also clean up there. The kitchen is in downtown Ann Arbor.",
+  "who_can_apply": "Age 14 or older to volunteer alone at the warehouse or Community Kitchen. Younger kids can come with an adult. The warehouse takes ages 8 and up. The kitchen takes ages 12 and up.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Single shifts; you can volunteer as often as you like",
+  "status": "rolling",
+  "deadline_text": "Shifts open for sign-up 3 months ahead and fill quickly.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Create a user account with Individual Registration and sign up for shifts in advance; no walk-ins. If you need school hours signed or an observer will attend, call the volunteer coordinator first.",
+  "url": "https://www.foodgatherers.org/get-involved/volunteer/",
+  "sources_fetched": [
+    "https://www.foodgatherers.org/get-involved/volunteer/",
+    "https://www.michigan.gov/leo/bureaus-agencies/ber/wage-and-hour/youth-employment-standards-act-yesa"
+  ],
+  "priority": 2,
+  "notes": "Not teen-specific, but a steady way for teens 14 and up to earn volunteer hours. Warehouse work involves moderate lifting. Groups of four or more use a separate group form. Michigan's youth employment page (Youth Employment Standards Act) says the law covers employers of anyone under 18 including volunteers, so ask the program whether a work permit is needed."
+}

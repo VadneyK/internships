@@ -18,22 +18,24 @@
   "max_age": null,
   "grades": "10 to 12",
   "who_can_apply": "Students at schools that host an academy. Each academy sets its own application. Search the school's website for 'Partnership Academy'.",
-  "paid_type": "unpaid-credit",
-  "pay_detail": "Not confirmed. Counted as school credit.",
+  "paid_type": "mixed",
+  "pay_detail": "The CDE page does not say whether internships pay or give school credit. Ask the school.",
   "season": "school-year",
   "duration": "3 years",
-  "status": "year-round",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Application is through the school that hosts the academy.",
+  "deadline_text": "The CDE page lists no student application dates. Each school sets its own.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Ask your counselor if your school has an academy, or check nearby high schools. Whether students from other districts may transfer in depends on the district's open enrollment rules.",
+  "how_to_apply": "Ask your counselor if your school has an academy. The CDE page links a directory of academies (a spreadsheet updated September 2026). The page does not say how students apply.",
   "needs_work_permit": false,
   "url": "https://www.cde.ca.gov/ci/gs/hs/cpagen.asp",
   "apply_url": null,
-  "sources_fetched": [],
-  "verified": "snippet-only",
-  "verified_on": "2026-10-07",
+  "sources_fetched": [
+    "https://www.cde.ca.gov/ci/gs/hs/cpagen.asp"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
   "priority": 2,
-  "notes": "The CDE site blocked automated access on 2026-10-07 (bot check), so this card could not be re-confirmed against the official page. Grades 10 to 12 and the school-within-a-school model need confirming. Academies are run by individual schools, so ask your counselor. Fremont Unified says some CTE courses sit inside Partnership Academies."
+  "notes": "Read the CDE page on 2026-10-09. It confirms a three-year program for grades 10 to 12, structured as a school-within-a-school, with academics plus career technical education, business partnerships, mentoring and internships. It posts only school and district grant dates, not student application dates, and does not say whether students from other districts may transfer in. Academies are run by individual schools, so ask your counselor. Fremont Unified says some CTE courses sit inside Partnership Academies."
 }

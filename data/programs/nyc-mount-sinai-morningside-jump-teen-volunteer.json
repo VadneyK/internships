@@ -1,0 +1,38 @@
+{
+  "id": "nyc-mount-sinai-morningside-jump-teen-volunteer",
+  "name": "Junior Medical Program (JuMP) and high school volunteering",
+  "org": "Mount Sinai Morningside",
+  "regions": [
+    "new-york-city"
+  ],
+  "city": "Manhattan, NY (Morningside Heights)",
+  "type": "volunteer",
+  "fields": [
+    "health"
+  ],
+  "what_you_do": "JuMP is a 6-week summer program. Students aged 15 to 17 learn from healthcare staff in clinical and non-clinical areas. High schoolers can also join as Unit Support volunteers. They visit patients and help orient them.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Volunteers must be 15 or older. JuMP is for ages 15 to 17 and requires full availability for all six weeks. Unit Support is open to high school students. The emergency department and some other roles are 18+.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. The page lists no JuMP cost or pay.",
+  "season": "summer",
+  "duration": "JuMP: 6 weeks, 100 hours. Unit Support: one 3-hour shift a week; the page lists a 100 hour minimum for high school students.",
+  "status": "unconfirmed",
+  "deadline_text": "JuMP applications are accepted January 1 to March 1 (no year given on the page; expect Jan 1 to Mar 1, 2027). Space is limited. The process can take 4 to 8 weeks.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Online application, one letter of recommendation from a non-relative, and a resume.",
+  "needs_work_permit": false,
+  "url": "https://www.mountsinai.org/locations/morningside/about/volunteer",
+  "apply_url": "https://mountsinai.vsyslive.com/pages/MSM",
+  "sources_fetched": [
+    "https://www.mountsinai.org/locations/morningside/about/volunteer"
+  ],
+  "priority": 2,
+  "notes": "Read through the fetch tool because direct downloads were blocked. The page says volunteers need a valid Social Security number (a hospital clearance rule on the official site) and pay for their own medical clearance. Other Mount Sinai campuses have their own pages and age rules that were not read.",
+  "opens_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09"
+}

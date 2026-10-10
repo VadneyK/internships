@@ -1,0 +1,39 @@
+{
+  "opens_iso": null,
+  "apply_url": null,
+  "min_age": null,
+  "max_age": null,
+  "grades": "6 to 12",
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "id": "geneva-library-volunteens",
+  "name": "Volunteens at Geneva Public Library",
+  "org": "Geneva Public Library District",
+  "regions": [
+    "chicago"
+  ],
+  "city": "Geneva, IL",
+  "type": "volunteer",
+  "fields": [
+    "any",
+    "education"
+  ],
+  "what_you_do": "Volunteer for library tasks. After you register, the library emails sign-up sheets showing when help is needed and you choose time slots that fit your schedule.",
+  "who_can_apply": "Geneva Public Library patrons in grades 6 to 12.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "school-year",
+  "duration": "Fall 2026 session: Sept 14 to Dec 4, 2026",
+  "status": "rolling",
+  "deadline_text": "Fall 2026 session runs Sept 14 to Dec 4, 2026. No registration deadline is listed. Dates for the next session are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Register as a Volunteen using the sign-up form on the page. Contact: geneva.library@gpld.org or (630) 232-0780, 227 S. Seventh St., Geneva.",
+  "url": "https://gpld.org/volunteens",
+  "sources_fetched": [
+    "https://gpld.org/volunteens"
+  ],
+  "priority": 2,
+  "notes": "Service hours are flexible and are not listed as a set number. The page does not describe the registration steps beyond the sign-up form."
+}

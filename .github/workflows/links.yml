@@ -9,26 +9,41 @@ permissions:
   contents: read
   issues: write
 
+concurrency: { group: link-check, cancel-in-progress: false }
+
 jobs:
   links:
     runs-on: ubuntu-latest
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - name: Check links
-        run: python3 tools/linkcheck.py --out link-report.md
+        run: python3 tools/linkcheck.py --out link-report.md --workers 16 --budget-minutes 40
+      - name: Upload the full link report
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: link-report
+          path: link-report.md
       - name: Open or update the link-check issue
         env:
           GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
           if grep -q '^## Broken' link-report.md; then
+            cp link-report.md issue-body.md
+            if [ "$(wc -c < link-report.md)" -gt 60000 ]; then
+              head -c 60000 link-report.md > issue-body.md
+              printf '\nThe report was too long for an issue and was cut short. The full report is the link-report artifact on this run: %s\n' "$RUN_URL" >> issue-body.md
+            fi
             existing=$(gh issue list --label link-check --state open --json number --jq '.[0].number // empty')
             if [ -n "$existing" ]; then
-              gh issue comment "$existing" --body-file link-report.md
+              gh issue comment "$existing" --body-file issue-body.md
             else
-              gh issue create --title "Broken program links ($(date -u +%Y-%m-%d))" --label link-check --body-file link-report.md
+              gh issue create --title "Broken program links ($(date -u +%Y-%m-%d))" --label link-check --body-file issue-body.md
             fi
           else
             echo "No broken links."

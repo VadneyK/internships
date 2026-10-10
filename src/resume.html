@@ -7,10 +7,16 @@ scripts: resume
     <span class="tag y eyebrow">Optional but handy</span>
     <h1 style="font-size:clamp(2.2rem,7vw,4rem);">Your first <span class="orange">resume</span></h1>
     <p class="lede">You do not need a resume to send a message to someone you know. You will need one when a program, a boss or a mentor asks. One page is plenty.</p>
+    <p><a class="btn sm alt" href="interview.html">Next: apply and interview prep</a></p>
+    <nav class="chips noprint" aria-label="On this page" style="margin-top:1rem;">
+      <a class="chip" style="text-decoration:none" href="#basics">1. What goes on it</a>
+      <a class="chip" style="text-decoration:none" href="#build">2. Build it</a>
+      <a class="chip" style="text-decoration:none" href="#next">3. Next steps</a>
+    </nav>
   </div>
 </section>
 
-<section class="noprint" style="padding-block:1rem 2rem;">
+<section class="noprint" id="basics" style="padding-block:1rem 2rem;">
   <div class="wrap">
     <h2 class="sr">The basics</h2>
     <div class="grid g2" style="align-items:start;">
@@ -29,7 +35,7 @@ scripts: resume
         <h3>Make each line do work</h3>
         <p>Start with an action word. Add a number if you can.</p>
         <div class="tablewrap" tabindex="0" role="region" aria-label="Resume bullet examples" style="box-shadow:none;border-width:2px;"><table style="min-width:0">
-          <thead><tr><th>Weak</th><th>Stronger</th></tr></thead>
+          <thead><tr><th scope="col">Weak</th><th scope="col">Stronger</th></tr></thead>
           <tbody>
             <tr><td>Helped at the car wash</td><td>Washed 40 cars in 3 hours to raise $600 for youth group</td></tr>
             <tr><td>Babysat</td><td>Watched two kids ages 4 and 7 every Friday for a year</td></tr>
@@ -53,10 +59,11 @@ scripts: resume
   </div>
 </section>
 
-<section style="background:var(--paper-2); border-block:3px solid var(--edge); padding-block:2.2rem;">
+<section id="build" style="background:var(--paper-2); border-block:3px solid var(--edge); padding-block:2.2rem;">
   <div class="wrap">
     <h2 class="noprint">Build it</h2>
     <p class="noprint">The example below is made up. Replace it with your own. When you are done, press Print and choose Save as PDF. Name the file <b>FirstLast_Resume.pdf</b>. Nothing you type is sent anywhere.</p>
+    <p class="noprint small muted">Nothing is saved unless you tick Keep my draft on this device. If you do, the draft stays on this device only, except your email and phone, which are never saved. On a shared computer, leave the box unticked, or press Clear the example before you leave.</p>
     <div class="grid g2" style="align-items:start;">
       <form class="card noprint" id="rf" onsubmit="return false">
         <h3>About you</h3>
@@ -80,7 +87,8 @@ Youth group, sound crew, 2024 to present</textarea></div>
         <h3 style="margin-top:1.2rem;">Skills and awards</h3>
         <div class="field"><label for="rSkills">Skills, separated by commas</label><input id="rSkills" type="text" autocomplete="off" value="Spanish (conversational), Google Docs and Sheets, basic Python, CPR certified"></div>
         <div class="field" style="margin-top:.7rem;"><label for="rAwards">Awards (optional, separated by commas)</label><input id="rAwards" type="text" autocomplete="off" value="Honor Roll, 2025"></div>
-        <div class="chips" style="margin-top:1rem;">
+        <label style="display:flex;gap:.5rem;align-items:center;margin-top:1rem;"><input type="checkbox" id="rKeep" autocomplete="off"> Keep my draft on this device</label>
+        <div class="chips" style="margin-top:.6rem;">
           <button class="btn alt sm" type="button" id="rClear">Clear the example</button>
         </div>
       </form>
@@ -107,6 +115,19 @@ Youth group, sound crew, 2024 to present</textarea></div>
         <h3>What about references?</h3>
         <p>Ask a teacher, coach, youth leader or past supervisor before you list them. Say what you are applying for. Keep their contact info in a separate note and share it only when someone asks.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="noprint" id="next" style="padding-block:2.2rem;">
+  <div class="wrap">
+    <h2>Next steps</h2>
+    <p>Your resume is the first step. Here is where to go next.</p>
+    <div class="chips" style="margin-top:1rem;">
+      <a class="btn sm alt" href="interview.html">Apply and interview prep</a>
+      <a class="btn sm alt" href="playbook.html">Write your message</a>
+      <a class="btn sm alt" href="find.html">Find a program</a>
+      <a class="btn sm alt" href="permit.html">Do I need a work permit?</a>
     </div>
   </div>
 </section>

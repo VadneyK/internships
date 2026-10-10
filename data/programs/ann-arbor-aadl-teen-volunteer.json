@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "min_age": 14,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": null,
+  "id": "ann-arbor-aadl-teen-volunteer",
+  "name": "Ann Arbor District Library Volunteer Program (teens and adults)",
+  "org": "Ann Arbor District Library",
+  "regions": [
+    "ann-arbor"
+  ],
+  "city": "Ann Arbor, MI",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "any"
+  ],
+  "what_you_do": "Prepare materials for library programs, give occasional program support and do shelf reading. Shelving books is done by paid staff.",
+  "who_can_apply": "Anyone 14 or older. Ages 14 to 17 need a signed permission slip from a parent or guardian.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Ongoing; you commit to the shifts you sign up for",
+  "status": "rolling",
+  "deadline_text": "No deadline stated. Apply any time with the online form, then attend a volunteer orientation.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the online volunteer application. After review you are contacted with details on signing up for a required volunteer orientation, then you pick shifts.",
+  "url": "https://aadl.org/volunteer",
+  "sources_fetched": [
+    "https://aadl.org/volunteer",
+    "https://www.michigan.gov/leo/bureaus-agencies/ber/wage-and-hour/youth-employment-standards-act-yesa"
+  ],
+  "priority": 1,
+  "notes": "Library does not offer court-ordered community service. Older library posts mention a summer teen volunteer program, but the current page only describes the year-round program. Michigan's youth employment page (Youth Employment Standards Act) says the law covers employers of anyone under 18 including volunteers, so ask the program whether a work permit is needed."
+}

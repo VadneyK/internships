@@ -1,0 +1,41 @@
+{
+  "grades": null,
+  "max_age": 24,
+  "apply_url": "https://santa-ana.gov/say-employment-program-interest-form/",
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": true,
+  "priority": 1,
+  "notes": "Two city pages describe the same program with slightly different rules. Call (714) 565-2600 or email SAYEmployment@santa-ana.org to confirm which one fits you. The interest form is for a reopening notice. The main page says applications are open. The interest page says the program is closed to new applications.",
+  "id": "santa-ana-say-youth-employment-program",
+  "name": "Santa Ana Youth (SAY) Employment Program",
+  "org": "Santa Ana WORK Center (City of Santa Ana)",
+  "regions": [
+    "orange-county"
+  ],
+  "city": "Santa Ana, CA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any",
+    "social-impact"
+  ],
+  "what_you_do": "Get a paid work placement at a public agency or a local group. The Youth Service Corps version works on climate action and food access. It also works on school and public service projects.",
+  "min_age": 16,
+  "who_can_apply": "Santa Ana residents ages 16 to 24 who can work in the U.S. by law. The Youth Service Corps version serves ages 16 to 30 and picks Santa Ana residents first. You must meet two of several need rules, such as low income or out of school.",
+  "paid_type": "paid",
+  "pay_detail": "Paid. The pay rate is not stated on the pages read.",
+  "season": "year-round",
+  "duration": "15 to 20 hours a week; hours are flexible around school",
+  "status": "unconfirmed",
+  "deadline_text": "Conflicting city pages. The main program page says applications are now open, while the interest page says the program is currently closed to new applications and offers a form to get a notice when it reopens. Call (714) 565-2600 to confirm before applying.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Complete the online application and upload the required documents. Youth under 18 must submit a Request for Work Permit form. Selection is first come, first served and spaces are limited. Call (714) 565-2600 or email SAYEmployment@santa-ana.org to confirm.",
+  "url": "https://santa-ana.gov/youth-employment-program/",
+  "sources_fetched": [
+    "https://santa-ana.gov/youth-employment-program/",
+    "https://santa-ana.gov/californianforall-youth-employment-program/",
+    "https://santa-ana.gov/say-employment-program-interest-form/",
+    "https://santa-ana.gov/departments/santa-ana-work-center/"
+  ]
+}

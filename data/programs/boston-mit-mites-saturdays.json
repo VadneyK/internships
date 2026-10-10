@@ -1,0 +1,41 @@
+{
+  "id": "boston-mit-mites-saturdays",
+  "name": "MITES Saturdays",
+  "org": "MIT (MITES, Introduction to Technology, Engineering and Science)",
+  "regions": [
+    "boston"
+  ],
+  "city": "Cambridge, MA",
+  "type": "pre-college",
+  "fields": [
+    "science",
+    "engineering",
+    "tech-cs"
+  ],
+  "what_you_do": "You take Saturday STEM classes at MIT during the school year. Topics range from robotics to bioengineering. It is a multi-year program with college application guidance. Lunch is free.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "7 to 10 at time of application",
+  "who_can_apply": "Public school students from Boston, Cambridge or Lawrence, MA in 7th, 8th, 9th or 10th grade who are U.S. citizens or permanent residents (green card). Exceptions are not made.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free of charge. Students pay only their own transportation to MIT (Lawrence students get free transport).",
+  "season": "school-year",
+  "duration": "8 Saturdays in spring and 8 in fall, 10:00 a.m. to 3:30 p.m., for up to about five and a half years",
+  "status": "unconfirmed",
+  "deadline_text": "The application deadline is not stated on the program pages read. Check the Apply page.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Create a profile in the MITES application portal and submit the MITES Saturdays application (separate from the Summer and Semester application).",
+  "needs_work_permit": false,
+  "url": "https://mites.mit.edu/discover-mites/mites-saturdays/",
+  "apply_url": "https://mites.mit.edu/discover-mites/apply-to-mites/",
+  "sources_fetched": [
+    "https://mites.mit.edu/",
+    "https://mites.mit.edu/discover-mites/mites-saturdays/",
+    "https://mites.mit.edu/discover-mites/apply-to-mites/"
+  ],
+  "priority": 2,
+  "notes": "Students are expected to keep A and B grades; no minimum GPA to apply. The program encourages applicants who are underrepresented in STEM or from lower-income families or the first in their family to attend college.",
+  "verified": "fetched",
+  "verified_on": "2026-10-09"
+}

@@ -1,0 +1,41 @@
+{
+  "min_age": 12,
+  "max_age": 18,
+  "grades": null,
+  "opens_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "apply_url": null,
+  "deadline_iso": null,
+  "needs_work_permit": false,
+  "priority": 2,
+  "id": "va-wing-civil-air-patrol-cadets",
+  "name": "Civil Air Patrol cadets, Virginia Wing",
+  "org": "Civil Air Patrol, Virginia Wing",
+  "regions": [
+    "virginia"
+  ],
+  "city": "Statewide, Virginia (squadrons from Winchester to Virginia Beach)",
+  "what_you_do": "Cadets fly, learn to lead, hike, camp and get in shape. Teens meet weekly with a local squadron and can go to the wing's summer encampment.",
+  "who_can_apply": "Be at least 12 and not yet 19. Be a U.S. citizen or a lawful permanent resident (National Headquarters may waive this for some lawfully admitted noncitizens).",
+  "pay_detail": "Annual cadet dues are $45 for Virginia in CAP's dues table, which also says national dues went up $10 for FY27. Uniform costs are not stated on the pages read.",
+  "how_to_apply": "Use the unit locator to find a cadet or composite squadron. Visit a meeting with your parents. Go to at least three weekly meetings. Then complete the application. Or apply online if your squadron says you can.",
+  "url": "https://vawg.cap.gov/join/become-a-cadet-ages-12-18/",
+  "sources_fetched": [
+    "https://vawg.cap.gov/join/become-a-cadet-ages-12-18/",
+    "https://www.gocivilairpatrol.com/join/membership-dues/"
+  ],
+  "notes": "Volunteer youth program, not a job. Virginia Wing HQ: 7401 Airfield Drive, Richmond, VA 23237, 804-454-7356. The wing site lists squadrons in Blacksburg, Charlottesville, Herndon, Springfield, Richmond and other towns.",
+  "type": "leadership",
+  "fields": [
+    "engineering",
+    "science",
+    "any"
+  ],
+  "season": "year-round",
+  "paid_type": "unpaid",
+  "duration": "Weekly squadron meetings all year",
+  "status": "rolling",
+  "deadline_text": "No deadline. You can join any time through a local squadron.",
+  "deadline_confidence": "rolling"
+}

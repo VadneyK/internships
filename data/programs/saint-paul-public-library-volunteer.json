@@ -1,0 +1,38 @@
+{
+  "id": "saint-paul-public-library-volunteer",
+  "name": "Library volunteer (teens 14 and up)",
+  "org": "Saint Paul Public Library",
+  "regions": [
+    "twin-cities"
+  ],
+  "city": "Saint Paul, MN",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "what_you_do": "Volunteer at a neighborhood library. You can be a reading mentor. You can be a homework tutor. You can be a tech assistant. Other roles are teen mentor, garden helper and library assistant.",
+  "min_age": 14,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Volunteers must be 14 years of age or older.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Not stated",
+  "status": "year-round",
+  "deadline_text": "No deadline stated.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the online volunteer application (general, or the Reading Together and Homework Center form), pass a background check, and attend volunteer orientation and training. Opportunities are posted on Idealist. Volunteer Services: VolunteerSPPL@ci.stpaul.mn.us or 651-266-7432.",
+  "needs_work_permit": false,
+  "url": "https://sppl.org/volunteer/",
+  "sources_fetched": [
+    "https://sppl.org/volunteer/"
+  ],
+  "priority": 2,
+  "notes": "Not a teen-only program; open to anyone 14 and older.",
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "apply_url": null
+}

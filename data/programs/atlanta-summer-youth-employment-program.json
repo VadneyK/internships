@@ -1,0 +1,41 @@
+{
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "atlanta-summer-youth-employment-program",
+  "name": "Summer Youth Employment Program (SYEP)",
+  "org": "City of Atlanta, Department of Labor and Employment Services",
+  "regions": [
+    "atlanta"
+  ],
+  "city": "Atlanta, GA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Get matched with a summer job, internship or skills-trade program at an Atlanta employer. Spots are competitive. The city does not promise you one.",
+  "min_age": 14,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Atlanta youth ages 14 to 24. Documents asked for: original birth certificate, proof of City of Atlanta residency, state or school photo ID, original Social Security card, and a work permit for anyone under 16.",
+  "paid_type": "paid",
+  "pay_detail": "Paid. The page says competitive wages and does not state a rate.",
+  "season": "summer",
+  "duration": "June 8 to July 16 in 2026 (about 6 weeks). Some positions may extend.",
+  "status": "unconfirmed",
+  "deadline_text": "The 2026 program ran in June and July. Registration was a waiting list when we read the page. 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Register online on the city's SYEP sign-up page with an email address you check daily. Upload your documents in the SYEP portal when asked. You are matched to openings, invited to orientation, and sent an offer letter. Some employers interview first.",
+  "needs_work_permit": true,
+  "url": "https://atlyearoftheyouth.com/summer-jobs",
+  "apply_url": "https://afterschoolhq.com/ADOLES/activity/2026summeryouthemployment",
+  "sources_fetched": [
+    "https://atlyearoftheyouth.com/summer-jobs",
+    "https://afterschoolhq.com/ADOLES/activity/2026summeryouthemployment",
+    "https://cdn.prod.website-files.com/605b905d0921c80603fd8bd1/69bae98beb9da8477c1ca4c7_SYEP%20Participant%20FAQ.pdf",
+    "https://atlyearoftheyouth.com/syep-connect-with-us",
+    "https://dol.georgia.gov/child-labor-employment-certificate-instructions"
+  ],
+  "priority": 1,
+  "notes": "A work permit is needed only for ages 14 and 15 (Georgia requires one under 16). You start it after you have a job offer, through your school district. Not guaranteed: the city says selection is competitive. Questions: syep@atlantaga.gov or (404) 546-3000. The registration list asks for an original Social Security card; this is the official city program, so upload documents only inside the SYEP portal and never send them by email or text. The city's atlantaga.gov pages blocked automated reading, so confirm the 2027 timeline with the SYEP team."
+}

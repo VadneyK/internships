@@ -2,7 +2,7 @@
 """Stamp the shared header/footer onto each page in src/ and write plain static HTML to the repo root.
 
 Each src/<name>.html starts with header lines (`title:`, `desc:`, `scripts:`) then a line `---`, then the body.
-Tokens {{count}}, {{checked}} come from data/meta.json (written by tools/merge.py).
+Tokens {{count}}, {{checked}} come from data/meta.json (written by tools/build_data.py).
 """
 import json, os, re, sys, time
 
@@ -28,7 +28,7 @@ def _asset_version():
 ver = _asset_version()
 
 layout = open(os.path.join(SRC, "_layout.html"), encoding="utf-8").read()
-PAGES = ["find", "playbook", "resume", "insights", "rules", "contribute", "about"]
+PAGES = ["find", "playbook", "resume", "ready", "permit", "languages", "interview", "calendar", "younger", "parents", "paycheck", "safety", "share", "insights", "rules", "states", "contribute", "leaders", "about"]
 
 def build(name):
     raw = open(os.path.join(SRC, name + ".html"), encoding="utf-8").read()
@@ -38,6 +38,8 @@ def build(name):
         '<script src="assets/js/%s.js?v=%s"></script>\n' % (s.strip(), ver)
         for s in fields.get("scripts", "").split(",") if s.strip()
     )
+    # lib.js (filter, date and permit logic) only loads on pages that have a script of their own
+    libscript = '<script src="assets/js/lib.js?v=%s"></script>\n' % ver if scripts else ""
     page = name
     out = layout
     rep = {
@@ -49,12 +51,19 @@ def build(name):
         "page": page,
         "content": body,
         "scripts": scripts,
+        "libscript": libscript,
         "count": str(meta.get("count", 0)),
         "checked": meta.get("checked_label", ""),
         "issues": ISSUES,
+        "robots": '\n<meta name="robots" content="noindex">' if fields.get("noindex") == "true" else "",
     }
+    gaps = json.load(open(os.path.join(ROOT, "data", "gaps.json"), encoding="utf-8"))
+    import html as _html
+    rep["gaps_list"] = "\n".join(
+        '      <li><b>%s.</b> %s <a href="%s/%d">Issue %d</a></li>' % (_html.escape(g["title"]), _html.escape(g["text"]), ISSUES, g["issue"], g["issue"]) for g in gaps)
+    nav_page = fields.get("navparent", "").strip() or name
     for p in PAGES:
-        rep["cur_" + p] = ' aria-current="page"' if p == name else ""
+        rep["cur_" + p] = ' aria-current="page"' if p == nav_page else ""
     # body first so tokens inside the body are replaced too
     for k, v in rep.items():
         out = out.replace("{{" + k + "}}", v)
@@ -79,7 +88,7 @@ for fn in sorted(os.listdir(SRC)):
 
 # robots.txt and sitemap.xml
 import datetime as _dt
-_pages = ["index"] + PAGES
+_pages = ["index"] + [p for p in PAGES if p != "leaders"]  # leaders is unlisted until the owner approves it
 _today = meta.get("checked", _dt.date.today().isoformat())
 _urls = "".join("  <url><loc>%s%s</loc><lastmod>%s</lastmod></url>\n" % (BASE, "" if p == "index" else p + ".html", _today) for p in _pages)
 open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + _urls + "</urlset>\n")

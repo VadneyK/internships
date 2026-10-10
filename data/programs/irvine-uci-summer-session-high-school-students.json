@@ -1,0 +1,39 @@
+{
+  "grades": "Rising 11th and 12th graders",
+  "max_age": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "priority": 3,
+  "notes": "This is real college credit and costs real money. The grade stays on a college record. The page names two grade groups (graduating 2027 or 2028; and 11th or 12th grade in Fall 2026), so check which one fits you. The fee page says 2026 Summer Session fees were pending the state budget and may change.",
+  "id": "irvine-uci-summer-session-high-school-students",
+  "name": "UCI Summer Session for High School Students",
+  "org": "UC Irvine Summer Session",
+  "regions": [
+    "orange-county"
+  ],
+  "city": "Irvine, CA",
+  "type": "pre-college",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take one real UC Irvine college course in the summer, picked from a pre-approved list of courses numbered 1 to 99. Courses are taught at a college level.",
+  "min_age": null,
+  "who_can_apply": "High school students who will graduate in 2027 or 2028. The page also describes 11th or 12th grade in Fall 2026. You need an unweighted GPA of 3.0 or higher in college prep classes. You need a strong reason to take one UCI course.",
+  "paid_type": "fee-based",
+  "pay_detail": "The fee page lists high school students under visiting non-UC students: $400 per unit plus a $296 campus fee and $5.50 per unit tech fee. Some courses add materials fees.",
+  "season": "summer",
+  "duration": "One summer course (Summer Session sessions)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Dates for Summer 2027 are not posted yet. Check the Summer Session calendar in spring.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the Enrollment Form. Send it to the Summer Session office. Add a copy of your latest high school transcript.",
+  "url": "https://summer.uci.edu/students/",
+  "sources_fetched": [
+    "https://summer.uci.edu/students/",
+    "https://summer.uci.edu/faq/",
+    "https://summer.uci.edu/fees/"
+  ]
+}

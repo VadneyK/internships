@@ -1,0 +1,359 @@
+{
+ "read": "Oct 9, 2026",
+ "states": [
+  [
+   "ca",
+   "California"
+  ],
+  [
+   "ga",
+   "Georgia"
+  ],
+  [
+   "ny",
+   "New York"
+  ],
+  [
+   "il",
+   "Illinois"
+  ]
+ ],
+ "calls": {
+  "ca": "Labor Commissioner 833-526-4636",
+  "ga": "Georgia DOL Child Labor 877-709-8185",
+  "ny": "NY Division of Labor Standards 888-525-2267",
+  "il": "Illinois DOL child labor 312-793-5570"
+ },
+ "federal": "Federal law sets 14 as the minimum age for most non-farm jobs. Under federal law alone, a 13 year old may still help a neighbor with yard work or babysit, because those jobs are not covered. States can be stricter, and the stricter rule applies. For example, New York says a babysitter must be at least 14.",
+ "federalSource": {
+  "t": "US Department of Labor eLaws: under 14",
+  "u": "https://webapps.dol.gov/elaws/whd/flsa/cl/t13.asp"
+ },
+ "rows": [
+  {
+   "job": "Babysitting",
+   "cells": {
+    "ca": {
+     "t": "No permit for irregular odd jobs in private homes, such as babysitting.",
+     "s": {
+      "t": "California hours and ages chart",
+      "u": "https://www.dir.ca.gov/dlse/MinorsSummaryCharts.pdf"
+     }
+    },
+    "ga": {
+     "t": "Not stated on the pages we read.",
+     "s": null
+    },
+    "ny": {
+     "t": "No working papers needed, but the babysitter must be at least 14.",
+     "s": {
+      "t": "New York Department of Labor, P882",
+      "u": "https://dol.ny.gov/laws-governing-employment-minors-p882"
+     }
+    },
+    "il": {
+     "t": "No permit for babysitting outside school hours at a private home.",
+     "s": {
+      "t": "Illinois Department of Labor FAQ",
+      "u": "https://labor.illinois.gov/faqs/child-labor-faq.html"
+     }
+    }
+   }
+  },
+  {
+   "job": "Yard work for a neighbor",
+   "cells": {
+    "ca": {
+     "t": "No permit for irregular odd jobs in private homes, such as yard work.",
+     "s": {
+      "t": "California hours and ages chart",
+      "u": "https://www.dir.ca.gov/dlse/MinorsSummaryCharts.pdf"
+     }
+    },
+    "ga": {
+     "t": "Not stated on the pages we read.",
+     "s": null
+    },
+    "ny": {
+     "t": "Not stated for 12 and 13. At 14 and 15, casual yard work and chores at a home need no certificate if no power machinery is used.",
+     "s": {
+      "t": "New York Department of Labor, P882",
+      "u": "https://dol.ny.gov/laws-governing-employment-minors-p882"
+     }
+    },
+    "il": {
+     "t": "Raking a neighbor's leaves for pay needs no permit. If a landscaping company hires you, the child labor law applies.",
+     "s": {
+      "t": "Illinois Department of Labor FAQ",
+      "u": "https://labor.illinois.gov/faqs/child-labor-faq.html"
+     }
+    }
+   }
+  },
+  {
+   "job": "Pet care",
+   "cells": {
+    "ca": {
+     "t": "Pet care is not named on the chart.",
+     "s": null
+    },
+    "ga": {
+     "t": "Not stated on the pages we read.",
+     "s": null
+    },
+    "ny": {
+     "t": "Not stated on the pages we read.",
+     "s": null
+    },
+    "il": {
+     "t": "Not stated on the pages we read.",
+     "s": null
+    }
+   }
+  },
+  {
+   "job": "Newspaper route",
+   "cells": {
+    "ca": {
+     "t": "No permit if you are self-employed on a regular route and at least 12.",
+     "s": {
+      "t": "California hours and ages chart",
+      "u": "https://www.dir.ca.gov/dlse/MinorsSummaryCharts.pdf"
+     }
+    },
+    "ga": {
+     "t": "Under 16 may deliver newspapers in residential areas from 5 a.m. to 9 p.m.",
+     "s": {
+      "t": "Georgia child labor laws and rules",
+      "u": "https://dol.georgia.gov/document/child-labor/child-labor-georgia-laws-and-rules-regulating-employment-children/download"
+     }
+    },
+    "ny": {
+     "t": "Age 11 and up with a Newspaper Carrier Permit (AT-23), outside school hours.",
+     "s": {
+      "t": "New York Department of Labor, P882",
+      "u": "https://dol.ny.gov/laws-governing-employment-minors-p882"
+     }
+    },
+    "il": {
+     "t": "No permit outside school hours.",
+     "s": {
+      "t": "Illinois Department of Labor FAQ",
+      "u": "https://labor.illinois.gov/faqs/child-labor-faq.html"
+     }
+    }
+   }
+  },
+  {
+   "job": "Your own small business",
+   "cells": {
+    "ca": {
+     "t": "Any self-employed minor needs no permit.",
+     "s": {
+      "t": "California hours and ages chart",
+      "u": "https://www.dir.ca.gov/dlse/MinorsSummaryCharts.pdf"
+     }
+    },
+    "ga": {
+     "t": "Not stated on the pages we read. Ask Georgia DOL.",
+     "s": null
+    },
+    "ny": {
+     "t": "Not stated under 14. The street-trades permit for self-employed youth starts at 14.",
+     "s": {
+      "t": "New York Department of Labor, P882",
+      "u": "https://dol.ny.gov/laws-governing-employment-minors-p882"
+     }
+    },
+    "il": {
+     "t": "Not stated on the pages we read.",
+     "s": null
+    }
+   }
+  },
+  {
+   "job": "Volunteering",
+   "cells": {
+    "ca": {
+     "t": "No permit for true unpaid volunteering. Have a parent's permission on file with your school (5 CCR 10121).",
+     "s": {
+      "t": "5 CCR 10121",
+      "u": "https://law.cornell.edu/regulations/california/5-CCR-10121"
+     }
+    },
+    "ga": {
+     "t": "No permit for unpaid volunteering or unpaid community service.",
+     "s": {
+      "t": "Georgia DOL instructions",
+      "u": "https://dol.georgia.gov/child-labor-employment-certificate-instructions"
+     }
+    },
+    "ny": {
+     "t": "A Queens library page says under 14 may not volunteer unless a parent or guardian directly supervises, citing state law. That is a library's description, not a labor department page.",
+     "s": {
+      "t": "Queens Public Library",
+      "u": "https://volunteer.queenslibrary.org/under_18"
+     }
+    },
+    "il": {
+     "t": "Not stated on the pages we read.",
+     "s": null
+    }
+   }
+  }
+ ],
+ "conflicts": [
+  "Georgia: the DOL summary sheet says the minimum age is 14, while the state code contemplates employment certificates from age 12. Neither says plainly what a 12 or 13 year old may do for a neighbor. Call 877-709-8185.",
+  "New York: a footnote says federal law sets 14 as the minimum for delivering periodicals, while federal pages say newspaper delivery is exempt at any age. Ask before you start a route.",
+  "Babysitting: the Red Cross says most states have no minimum age, while New York says 14."
+ ],
+ "train": [
+  {
+   "t": "Red Cross Babysitting Basics (online)",
+   "d": "Ages 11 and up. About 4 hours, six self-paced modules, $45.00. You print a certificate that is valid for two years. It includes starting a babysitting business.",
+   "u": "https://www.redcross.org/take-a-class/classes/babysitting-basics-online/a6R0V0000015FUP.html"
+  },
+  {
+   "t": "Red Cross first aid and CPR",
+   "d": "The Red Cross says standard first aid, CPR and AED classes have no age requirement. The test is whether you can do chest compressions and rescue breaths. The online child and baby course is $37.00 and takes about 2 hours 25 minutes. Online-only does not meet workplace rules, so it is for your own skills.",
+   "u": "https://www.redcross.org/take-a-class/resources/articles/what-to-expect-wear-bring-red-cross-cpr-aed-class"
+  },
+  {
+   "t": "Red Cross Babysitter's Training (in person)",
+   "d": "For ages 11 to 15 or 16, depending on which Red Cross page you read. Find a class by ZIP code. Price varies by location.",
+   "u": "https://www.redcross.org/take-a-class/babysitting/babysitting-child-care-training/babysitting-classes"
+  }
+ ],
+ "before": [
+  "Write down the address, or save it on your phone.",
+  "Have every parent and guardian phone number.",
+  "Know about allergies and who to call in an emergency.",
+  "Practice first by babysitting siblings or family friends while an adult is home.",
+  "Leave a short summary or check-in text for the parents afterward."
+ ],
+ "beforeSource": {
+  "t": "Red Cross babysitting tips",
+  "u": "https://www.redcross.org/take-a-class/resources/articles/babysitting-tips"
+ },
+ "strangers": [
+  "Tell a parent who, where and when for every job.",
+  "Your first jobs should be for family, neighbors and friends your parent knows.",
+  "Get your parents' permission first, and take a parent or another trusted adult with you to meet someone new.",
+  "Meet and stay in a public place.",
+  "Do not open the door for anyone when your parents are not home."
+ ],
+ "strangersNote": "This also comes from a child safety nonprofit, which wrote it for meeting people you know from online. It applies to any new customer.",
+ "strangersSource": {
+  "t": "National Center for Missing and Exploited Children",
+  "u": "https://www.missingkids.org/netsmartz/topics/online-enticement"
+ },
+ "sites": [
+  [
+   "Care.com",
+   "18",
+   "https://www.care.com/about/terms"
+  ],
+  [
+   "Thumbtack",
+   "18",
+   "https://www.thumbtack.com/terms/"
+  ],
+  [
+   "TaskRabbit",
+   "18",
+   "https://support.taskrabbit.com/hc/en-us/articles/204411070"
+  ],
+  [
+   "Wag (pet care)",
+   "18",
+   "https://www.wagwalking.com/terms"
+  ],
+  [
+   "Venmo",
+   "18, with Teen Accounts for ages 13 to 17 that a parent opens",
+   "https://venmo.com/legal/us-user-agreement/"
+  ],
+  [
+   "PayPal",
+   "18",
+   "https://www.paypal.com/us/legalhub/paypal/useragreement-full"
+  ],
+  [
+   "Cash App",
+   "18, with a parent-sponsored account from 13",
+   "https://cash.app/legal/us/en-us/tos"
+  ]
+ ],
+ "sitesNote": "Nextdoor, Upwork and Rover would not load for us, so ask a parent to read their rules before you sign up. Do not use a parent's account to get around an age rule. A parent can post or pay for you.",
+ "ladder": [
+  {
+   "age": "11 to 13",
+   "t": "Build skills and a record",
+   "d": "Take the Red Cross course. Join a group with projects: 4-H, Scouts, Girl Scouts, a Boys and Girls Club, or a library teen council where there is one. Ask whether your school has Junior Achievement."
+  },
+  {
+   "age": "12 to 13",
+   "t": "Odd jobs for people you know",
+   "d": "Use the grid above for your state. Family and neighbors first, with a parent who knows the details."
+  },
+  {
+   "age": "14",
+   "t": "Your first job with a permit",
+   "d": "Most paid jobs start at 14, and many states need a permit. Use the work permit finder."
+  }
+ ],
+ "groups": [
+  {
+   "n": "Junior Achievement",
+   "d": "Grades 6 to 9: work readiness, personal finance, and a company program where students plan and run a small business. It runs through schools and after-school sites. Find a local office by ZIP.",
+   "u": "https://www.juniorachievement.org/programs/"
+  },
+  {
+   "n": "4-H",
+   "d": "County based. Enroll through the county Extension office. National pages say ages 8 or 9 to 18. No national fee, local costs vary.",
+   "u": "https://4-h.org/about/ways-to-participate/"
+  },
+  {
+   "n": "Scouts BSA",
+   "d": "Ages 11 to 17. The annual national fee is $85 plus any local fees. The Entrepreneurship merit badge teaches starting and running a business.",
+   "u": "https://www.scouting.org/programs/scouts-bsa/"
+  },
+  {
+   "n": "Girl Scouts",
+   "d": "Grades K to 12. Annual dues are $65 plus local fees. The cookie program builds business skills.",
+   "u": "https://www.girlscouts.org/en/about-girl-scouts/join.html"
+  },
+  {
+   "n": "Boys and Girls Clubs",
+   "d": "Ages 6 to 18. Membership cost varies by Club.",
+   "u": "https://www.bgca.org/about-us/faqs/"
+  }
+ ],
+ "money": [
+  "If you earn $400 or more from self-employment after your costs, the IRS says you pay self-employment tax and file a return. Ask a parent to read the IRS page with you.",
+  "A parent can open a youth savings account for you. The CFPB says some states do not let minors open their own account.",
+  "On a joint account, everyone named on it can withdraw money.",
+  "Parents who pay a young sitter should read IRS Publication 926 and ask the IRS or a tax professional what applies to them."
+ ],
+ "moneySources": [
+  {
+   "t": "IRS: self-employment tax",
+   "u": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"
+  },
+  {
+   "t": "CFPB: youth savings",
+   "u": "https://www.consumerfinance.gov/about-us/blog/heres-why-you-should-open-a-savings-account-for-your-kids"
+  },
+  {
+   "t": "IRS Publication 926",
+   "u": "https://www.irs.gov/publications/p926"
+  }
+ ],
+ "gaps": [
+  "Whether a child may walk a neighbor's dog for pay: no state or federal page names pet care.",
+  "Whether a 12 or 13 year old needs a certificate for odd jobs in Georgia, and whether yard work or pet care is allowed under 14 in New York.",
+  "What to charge: no official source gives rates, so we do not either.",
+  "Whether a lemonade stand or craft sale needs a city permit or sales tax: not covered by the pages we read.",
+  "Whether a parent's insurance covers a young sitter or yard worker."
+ ]
+}

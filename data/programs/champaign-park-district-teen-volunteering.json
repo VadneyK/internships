@@ -1,0 +1,40 @@
+{
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "grades": null,
+  "min_age": 13,
+  "max_age": null,
+  "id": "champaign-park-district-teen-volunteering",
+  "name": "Champaign Park District Teen Volunteering",
+  "org": "Champaign Park District",
+  "regions": [
+    "champaign"
+  ],
+  "city": "Champaign, IL",
+  "type": "volunteer",
+  "fields": [
+    "any",
+    "environment",
+    "arts-media"
+  ],
+  "what_you_do": "You can volunteer at parks and programs. Examples include special events and Prairie Farm (May to August). Others are Virginia Theatre, sports and summer programs.",
+  "who_can_apply": "Teens at least 13 years old who are enthusiastic, hardworking and willing to learn. Teen volunteers may work at most 25 hours a week.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Hours can count toward high school volunteer requirements.",
+  "season": "year-round",
+  "duration": "Varies by role",
+  "status": "rolling",
+  "deadline_text": "No deadline. Volunteers register on the Champaign Park District Volunteer Portal.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Create an account on the Champaign Park District Volunteer Portal, then view opportunities. Questions: volunteer@champaignparks.org.",
+  "needs_work_permit": false,
+  "url": "https://champaignparks.org/volunteer/",
+  "sources_fetched": [
+    "https://champaignparks.org/volunteer/",
+    "https://champaignparks.org/summer-hiring-center/"
+  ],
+  "priority": 2,
+  "notes": "Some roles (for example Prairie Farm) run only part of the year."
+}

@@ -1,0 +1,37 @@
+{
+  "id": "san-bernardino-county-wioa-youth",
+  "name": "San Bernardino County WIOA Youth Programs (Youth Forward)",
+  "org": "San Bernardino County Workforce Development Board",
+  "regions": [
+    "inland-empire"
+  ],
+  "city": "San Bernardino County, CA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "You can get free help with job skills and leadership. You also get help with career exploring, mentoring and work experience. A local youth provider in your part of the county offers it.",
+  "min_age": 16,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Eligible youth ages 16 to 24. Specific eligibility rules are given by each provider.",
+  "paid_type": "mixed",
+  "pay_detail": "Work experience is one of the services. Pay is not stated on the page.",
+  "season": "year-round",
+  "duration": "Varies by provider",
+  "status": "year-round",
+  "deadline_text": "No deadline. Openings depend on each provider's capacity, so call the provider that serves your city.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Contact one of the providers listed on the county's youth page. Openings depend on each provider's capacity.",
+  "needs_work_permit": null,
+  "url": "https://workforce.sbcounty.gov/youth/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://workforce.sbcounty.gov/youth/"
+  ],
+  "priority": 2,
+  "notes": "This is the year-round option when the summer SPARK program is closed. Phone numbers for each provider are on the county page. The page does not say whether 16 and 17 year olds are paid, so ask the provider about work permits.",
+  "verified": "fetched",
+  "verified_on": "2026-10-09"
+}

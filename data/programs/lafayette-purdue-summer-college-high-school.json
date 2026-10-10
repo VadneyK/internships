@@ -1,0 +1,45 @@
+{
+  "grades": null,
+  "min_age": 15,
+  "max_age": 17,
+  "opens_iso": "2026-12-01",
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "lafayette-purdue-summer-college-high-school",
+  "name": "Summer College for High School Students (short-term residential courses)",
+  "org": "Purdue University, Office of Summer and Winter Sessions",
+  "regions": [
+    "lafayette"
+  ],
+  "city": "West Lafayette, IN",
+  "type": "pre-college",
+  "fields": [
+    "engineering",
+    "tech-cs",
+    "health",
+    "business-finance",
+    "science"
+  ],
+  "what_you_do": "You live on the West Lafayette campus for one or two weeks. You take a short college course. It is for 1 or 2 credit hours. Subjects include coding, cybersecurity, pharmacy, nursing, nuclear energy and business.",
+  "who_can_apply": "High school students. Main page says ages 15 to 17. Application page: priority for GPA 3.30 or higher and at least 16 who have finished sophomore year, younger students may apply. Residential courses require being under 18 for the whole program. Course-specific rules apply.",
+  "paid_type": "fee-based",
+  "pay_detail": "Summer 2026 prices: $60 application fee. Tuition and fees $347.85 per credit hour for Indiana residents ($948.30 nonresident). Room and board $377.95 for a 1-week program, $907.08 for 2 weeks. Some courses add $60 or $200 program fees. Scholarships exist.",
+  "season": "summer",
+  "duration": "1 or 2 weeks, residential, June and July",
+  "status": "opens-soon",
+  "deadline_text": "Summer 2027 application opens December 1, 2026. Last cycle: priority deadline February 1, final deadline April 1. 2027 deadlines not posted.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Online Summer College application: essay, high school transcript, up to three short-term course choices, $60 non-refundable fee. Admitted students first get one course; more are offered as space allows in late March to early April.",
+  "needs_work_permit": false,
+  "url": "https://www.purdue.edu/summer-high-school/",
+  "sources_fetched": [
+    "https://www.purdue.edu/summer-high-school/",
+    "https://www.purdue.edu/summer-high-school/enrollment-options/Short-Term Courses.php",
+    "https://www.purdue.edu/summer-high-school/costs/index.php",
+    "https://www.purdue.edu/summer-high-school/What to Expect1/Applying to Summer College for High School Students.php"
+  ],
+  "priority": 2,
+  "notes": "Costs are summer 2026 and may change. Some courses were full for 2026 and some were canceled. The listed short courses include PREFACE and MITE, which are pre-college engineering workshops, with their own eligibility. The student pays; this is not a job."
+}

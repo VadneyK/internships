@@ -16,24 +16,25 @@
   "grades": null,
   "who_can_apply": "Ages 15 to 25, low-income or homeless youth (per the Berkeley Public Library jobs page).",
   "paid_type": "paid",
-  "pay_detail": "Rate not posted (checked 2026-10-07)",
+  "pay_detail": "Job training rate not posted (checked 2026-10-09). The home page lists a $300 stipend for full participation in some workshop series.",
   "season": "year-round",
   "duration": null,
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Not posted",
+  "deadline_text": "Not posted. The home page FAQ says YSA is not actively accepting applications.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Email jobtraining@youthspiritartworks.org or call 510-858-7229.",
+  "how_to_apply": "Call (510) 858-7229 or email community@youthspiritartworks.org (both on the home page) and ask about job training. The Berkeley Public Library jobs page lists jobtraining@youthspiritartworks.org.",
   "needs_work_permit": true,
   "url": "https://www.youthspiritartworks.org",
   "apply_url": null,
   "sources_fetched": [
     "https://www.berkeleypubliclibrary.org/teens/jobs-and-volunteering",
-    "https://youthspiritartworks.org/"
+    "https://youthspiritartworks.org/",
+    "https://www.youthspiritartworks.org"
   ],
-  "verified": "snippet-only",
-  "verified_on": "2026-10-07",
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
   "priority": 3,
-  "notes": "Ages and contact come from the library page. The group's home page shows free arts workshops and drop-in events for ages 14 to 25 but no job training details, so ask about jobs. Not on the City of Oakland's 2026 summer jobs list."
+  "notes": "Read the home page on 2026-10-09. It says YSA serves transitional age youth 14 to 25 at 1740 Alcatraz Ave, Berkeley, with free drop-in hours, workshops and events; some workshop series pay a $300 stipend for full participation. The home page does not describe a job training program or its pay, so the 15 to 25 age range, the paid jobs and the jobtraining email come from the library page and are unconfirmed. The FAQ says YSA is not actively accepting applications. Ask before you plan around a job. Not on the City of Oakland's 2026 summer jobs list."
 }

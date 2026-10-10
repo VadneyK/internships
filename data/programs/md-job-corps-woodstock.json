@@ -1,0 +1,41 @@
+{
+  "min_age": 16,
+  "max_age": 24,
+  "grades": null,
+  "opens_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "apply_url": null,
+  "deadline_iso": null,
+  "needs_work_permit": null,
+  "priority": 3,
+  "id": "md-job-corps-woodstock",
+  "name": "Woodstock Job Corps Center",
+  "org": "U.S. Department of Labor Job Corps",
+  "regions": [
+    "maryland"
+  ],
+  "city": "Woodstock, MD",
+  "type": "apprenticeship-trades",
+  "fields": [
+    "trades",
+    "health"
+  ],
+  "what_you_do": "This is a free career training campus. The center page lists pre-apprentice training in bricklaying, building construction and carpentry. It also lists Clinical Medical Assistant. More programs are under See More.",
+  "who_can_apply": "Generally ages 16 through 24. You must be low income. You must meet citizenship or residency rules. You must meet background rules. The pages read do not explain the rules for applicants under 18.",
+  "paid_type": "stipend",
+  "pay_detail": "Free. The national site says Job Corps covers housing, meals, basic medical care and a living allowance. The living allowance amount is not stated on the pages read.",
+  "season": "year-round",
+  "duration": "Not stated on the pages read",
+  "status": "rolling",
+  "deadline_text": "Open enrollment: you can start at any time. The process usually takes about two months.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Make a MyJobCorps account on jobcorps.gov. Fill out the application. Upload the documents that show you are eligible. Then connect with an admissions representative. Call 800-733-5627 with questions.",
+  "url": "https://woodstock.jobcorps.gov/",
+  "sources_fetched": [
+    "https://woodstock.jobcorps.gov/",
+    "https://woodstock.jobcorps.gov/training-programs",
+    "https://www.jobcorps.gov/admissions-process"
+  ],
+  "notes": "Center address: 10900 Old Court Rd, Woodstock, MD 21163. No closure notice showed on the pages read on 2026-10-09. The application asks for ID, Social Security number and proof of income. Only enter these on the official jobcorps.gov site, with a parent or guardian. A parent should ask an admissions representative about the rules for 16 and 17 year olds."
+}

@@ -1,0 +1,37 @@
+{
+  "grades": "Ninth grade and up",
+  "max_age": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "priority": 2,
+  "notes": "All classes make a permanent college record, so choose with care. Your high school district decides if the class counts toward graduation.",
+  "id": "san-diego-cuyamaca-college-dual-concurrent-enrollment",
+  "name": "Cuyamaca College Dual and Concurrent Enrollment",
+  "org": "Cuyamaca College",
+  "regions": [
+    "san-diego"
+  ],
+  "city": "El Cajon (Rancho San Diego), CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take college classes for credit while still in high school. Classes can count for both high school and college. You can take up to 11 units (4 classes) on campus or online.",
+  "min_age": null,
+  "who_can_apply": "Students now in high school, in at least 9th grade. You need high school approval and written parent approval before you apply. You can appeal if you do not meet every rule.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Tuition is waived for concurrent enrollment. You pay minimal fees and buy textbooks.",
+  "season": "year-round",
+  "duration": "By semester or session",
+  "status": "rolling",
+  "deadline_text": "Start at least one month before the semester or session. No set deadline on the page.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply online to become a Cuyamaca student. Then get approval from your high school administrator. A parent or guardian must approve too. Do this every term, before you register.",
+  "url": "https://www.cuyamaca.edu/admissions/high-school-students.php",
+  "sources_fetched": [
+    "https://www.cuyamaca.edu/admissions/high-school-students.php"
+  ]
+}

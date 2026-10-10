@@ -1,0 +1,39 @@
+{
+  "id": "austin-library-youth-volunteer",
+  "name": "Youth Volunteer Program",
+  "org": "Austin Public Library",
+  "regions": [
+    "austin"
+  ],
+  "city": "Austin, TX",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "what_you_do": "Help library staff with checkout and programs. You help set up and take down programs. You re-shelve books and run teen clubs. You do light clean-up. You usually work with the youth librarians.",
+  "min_age": 13,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "Teens 13 to 17 (no younger than 13 and no older than 17 by Aug 1 for fall, Dec 1 for spring, or May 1 for summer). Must pass a background check (fingerprinting for ages 15+ who lived outside Texas in the last seven years) and attend a mandatory orientation.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Fall (Oct-Dec) and spring (Mar-May): 10 weeks, one 2-hour shift a week. Summer (June-July): 8 weeks, one 2 to 4 hour shift a week.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Windows each year: fall Jul 1-31, spring Dec 1-31, summer Mar 1-31. The fall window has closed; the next one is spring, Dec 1-31 (the page gives these windows without a year).",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Complete the online application posted on the Teen Volunteer Program page during the window. There may be an interview with the volunteer coordinator; you get three business days to accept an offer. Not every applicant gets a placement.",
+  "needs_work_permit": false,
+  "url": "https://library.austintexas.gov/node/1734565",
+  "apply_url": "https://library.austintexas.gov/volunteer#teen",
+  "sources_fetched": [
+    "https://library.austintexas.gov/node/1734565",
+    "https://library.austintexas.libguides.com/teens/volunteer"
+  ],
+  "priority": 1,
+  "notes": "Placement depends on the library branch and supervisor, and the library gets more applicants than placements. Contact: APL.Volunteers@austintexas.gov. Limit of two absences per season.",
+  "verified": "fetched",
+  "verified_on": "2026-10-09"
+}

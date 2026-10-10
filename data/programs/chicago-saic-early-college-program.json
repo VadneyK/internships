@@ -1,0 +1,39 @@
+{
+  "id": "chicago-saic-early-college-program",
+  "name": "SAIC Early College Program (ECP) courses",
+  "org": "School of the Art Institute of Chicago",
+  "regions": [
+    "chicago"
+  ],
+  "city": "Chicago, IL",
+  "type": "pre-college",
+  "fields": [
+    "arts-media"
+  ],
+  "what_you_do": "High school students take art and design classes in fall, spring or summer. Examples are figure drawing, animation, fashion and comics. You build work for your portfolio for art school.",
+  "min_age": 14,
+  "max_age": 18,
+  "grades": "High school; college credit only for those who finished sophomore year",
+  "who_can_apply": "High school students ages 14 to 18. The 1.0 college-credit option is for juniors and seniors ages 15 to 18.",
+  "paid_type": "fee-based",
+  "pay_detail": "Noncredit 10-week course $661; 1.0 college credit course $1,982; supplies about $50 to $200 extra. The Smith Scholarship covers 100% of noncredit course tuition for Illinois students. Limited need-based aid.",
+  "season": "school-year",
+  "duration": "10-week courses in fall and spring; the page does not state a summer course length",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Register online for each term. No fixed deadline stated on the pages read.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Sign up for courses on the Early College Program page. For the Smith Scholarship, fill out the scholarship form. Upload your household 1040 and send in three pieces of art to SlideRoom. For need-based aid, say yes at sign-up and upload the 1040 in DocuSign.",
+  "needs_work_permit": false,
+  "url": "https://www.saic.edu/high-school-programs",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.saic.edu/high-school-programs",
+    "https://www.saic.edu/high-school-programs/early-college-program-classes/tuition-financial-assistance"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 3,
+  "notes": "Costs money unless you win the Smith Scholarship or aid. Aid is first come, first served."
+}

@@ -1,0 +1,41 @@
+{
+  "id": "scvmc-volunteer-services",
+  "name": "Santa Clara Valley Medical Center Volunteers",
+  "org": "Santa Clara Valley Medical Center",
+  "regions": [
+    "silicon-valley",
+    "san-jose"
+  ],
+  "city": "San Jose, CA",
+  "type": "volunteer",
+  "fields": [
+    "health",
+    "social-impact"
+  ],
+  "what_you_do": "You staff the hospital information desks or the volunteer office for your first 100 hours. Then you move to an area you like. After 6 months and 100 hours you can ask about shadowing.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Age 15 or older. You must give one 4-hour shift a week for at least six months in a row and at least 100 hours. They cannot take summer-only or school-break-only volunteers.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": "At least 6 months and 100 hours",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline stated. Applications are accepted online year-round, and the office is looking for weekday morning or afternoon shifts.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the online application and a volunteer reference form, then interview, attend a 2-hour orientation, pass a background check and health screening.",
+  "needs_work_permit": false,
+  "url": "https://scvmc.scvh.org/giving-volunteering/volunteer-services/how-become-volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://scvmc.scvh.org/giving-volunteering/volunteer-services/how-become-volunteer",
+    "https://scvmc.scvh.org/giving-volunteering/volunteer-services"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "The health screening asks for proof of vaccines, a flu shot, immunity to measles, mumps, rubella and varicella, a Tdap shot, and a TB test within the last 3 months. Ask your parent to start gathering records early. Questions: vmcvolunteer@hhs.sccgov.org."
+}

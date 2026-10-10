@@ -1,0 +1,37 @@
+{
+  "id": "worksource-dekalb-wioa-youth-services",
+  "name": "WorkSource DeKalb Youth Services (WIOA)",
+  "org": "WorkSource DeKalb, DeKalb County Government",
+  "regions": [
+    "atlanta"
+  ],
+  "city": "DeKalb County, GA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Career planning, help finishing high school or a GED, skills training and a paid work experience placement, with a mentor and job placement help. Free.",
+  "min_age": 16,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "DeKalb County residents ages 16 to 24 who face barriers to work. The page does not define barriers.",
+  "paid_type": "paid",
+  "pay_detail": "$13 per hour for paid work experience, up to 14 weeks. Up to $250 more in milestone rewards. Free to join.",
+  "season": "year-round",
+  "duration": "Paid work experience up to 14 weeks",
+  "status": "rolling",
+  "deadline_text": "No deadline is listed.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply online at ATLworks.org. Send everything it asks for. An eligibility specialist reviews it and replies within 7 business days. Then you meet the specialist and make a career plan.",
+  "needs_work_permit": null,
+  "url": "https://dekalbcountyga.gov/departments/worksource-dekalb/services",
+  "sources_fetched": [
+    "https://dekalbcountyga.gov/departments/worksource-dekalb/services"
+  ],
+  "priority": 1,
+  "notes": "The page does not mention work permits. Contact 404-371-2000 (Mon to Fri, 8:00 am to 4:30 pm) or 311CCC@dekalbcountyga.gov.",
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "apply_url": null
+}

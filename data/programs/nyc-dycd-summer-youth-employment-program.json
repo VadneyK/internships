@@ -1,0 +1,45 @@
+{
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "opens_iso": null,
+  "id": "nyc-dycd-summer-youth-employment-program",
+  "name": "Summer Youth Employment Program (SYEP)",
+  "org": "NYC Department of Youth and Community Development (DYCD)",
+  "regions": [
+    "new-york-city"
+  ],
+  "city": "New York, NY",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Ages 14-15 do paid, project-based career activities. Ages 16 and up work paid summer jobs. Providers across the city place them. You learn work-readiness and financial literacy skills.",
+  "min_age": 14,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Youth ages 14 to 24 who live in the five boroughs of NYC and are legally allowed to work in the U.S. Some options (school-based, NYCHA, foster care, homeless youth) have extra rules.",
+  "paid_type": "paid",
+  "pay_detail": "Ages 16-24 (2026): $17.00 per hour, 25 hours a week. Ages 14-15 (2026): up to $700 for about 12.5 hours a week.",
+  "season": "summer",
+  "duration": "6 weeks",
+  "status": "closed-expect-reopen",
+  "deadline_text": "2026 applications closed March 13, 2026. 2027 dates are not posted yet.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online at application.nycsyep.com or on paper with an SYEP provider. One application only. Community-based placements are picked by random lottery. Have ID documents ready (proof of age, identity, address, Social Security).",
+  "needs_work_permit": true,
+  "url": "https://www.nyc.gov/site/dycd/services/jobs-internships/summer-youth-employment-program-syep.page",
+  "apply_url": "https://application.nycsyep.com/",
+  "sources_fetched": [
+    "https://www.nyc.gov/site/dycd/services/jobs-internships/summer-youth-employment-program-syep.page",
+    "https://www.nyc.gov/site/dycd/services/jobs-internships/about-syep.page",
+    "https://application.nycsyep.com/",
+    "https://www.nyc.gov/site/dycd/services/jobs-internships/syep-documents.page",
+    "https://www.nyc.gov/assets/dycd/downloads/pdf/OY_FAQs_SYEP_2026.pdf",
+    "https://www.nyc.gov/assets/dycd/downloads/pdf/YY_FAQs_SYEP_2026.pdf",
+    "https://www.nyc.gov/assets/dycd/downloads/pdf/YY_Document_list_2026.pdf",
+    "https://dol.ny.gov/working-papers"
+  ],
+  "priority": 1,
+  "notes": "Pay and hours above are the 2026 numbers and may change. Free to apply. NYS Department of Labor says anyone 14-17 needs working papers (employment certificate) to hold a job in New York State; ask your SYEP provider what they need from you. Teens in school-based (CareerReady) options apply through their school. You pay your own transportation and meals."
+}

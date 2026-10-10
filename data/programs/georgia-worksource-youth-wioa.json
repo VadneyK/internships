@@ -1,0 +1,41 @@
+{
+  "opens_iso": null,
+  "apply_url": null,
+  "min_age": 14,
+  "max_age": 24,
+  "grades": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": null,
+  "priority": 2,
+  "id": "georgia-worksource-youth-wioa",
+  "name": "WorkSource Georgia Youth (WIOA)",
+  "org": "Technical College System of Georgia, Office of Workforce Development (WorkSource Georgia)",
+  "regions": [
+    "georgia"
+  ],
+  "city": "Georgia (served through local WorkSource offices)",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "A state youth employment program run through local WorkSource offices. Services listed include tutoring, paid and unpaid work experiences, leadership development, adult mentoring, counseling, financial literacy and GED services.",
+  "who_can_apply": "Youth ages 14 to 24 who face barriers to education, training or employment. Both in-school and out-of-school youth are served. The page does not list the exact barriers or income rules.",
+  "paid_type": "mixed",
+  "pay_detail": "Free to join. The services page lists paid and unpaid work experiences, but the pages read give no pay rate.",
+  "season": "year-round",
+  "duration": "Not stated",
+  "status": "rolling",
+  "deadline_text": "No application dates listed on the state pages.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "The state pages give no application steps. They give no list of local offices. Use the contact page at tcsg.edu or the WorkSource Georgia portal (worksourcegaportal.com). Find your local office there.",
+  "url": "https://www.tcsg.edu/worksource/strategic-populations/worksource-youth/",
+  "sources_fetched": [
+    "https://www.tcsg.edu/worksource/",
+    "https://www.tcsg.edu/worksource/strategic-populations/",
+    "https://www.tcsg.edu/worksource/strategic-populations/worksource-youth/",
+    "https://www.tcsg.edu/worksource/worksource-georgia-services/services-for-individuals/"
+  ],
+  "notes": "The pages read do not say how to enroll. A call to your local WorkSource office is the real next step. The services page says the Occupational Skills part is for ages 18 to 24. So 14 to 17 year olds would use the other services. Atlanta area teens may also see the city and county programs listed separately in this guide."
+}

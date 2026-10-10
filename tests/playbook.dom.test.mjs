@@ -43,3 +43,17 @@ test("playbook: your details are remembered and Clear everything wipes them", as
   b.document.getElementById("clearMap").click();
   assert.equal(b.document.getElementById("fMe").value, "");
 });
+
+test("playbook: after-the-yes callout links to the next steps, and the map links to the program list", async () => {
+  const { document } = await loadPage("playbook.html");
+  const after = document.getElementById("after");
+  const callout = [...after.querySelectorAll(".callout")].find((c) => /Got a yes\? Do these next/.test(c.textContent));
+  assert.ok(callout, "callout headed 'Got a yes? Do these next' is in the #after section");
+  const hrefs = [...callout.querySelectorAll("a")].map((a) => a.getAttribute("href"));
+  for (const target of ["permit.html", "ready.html", "resume.html", "interview.html"]) {
+    assert.ok(hrefs.includes(target), `callout links to ${target}`);
+  }
+  const map = document.getElementById("map");
+  const mapHrefs = [...map.querySelectorAll("a")].map((a) => a.getAttribute("href"));
+  assert.ok(mapHrefs.includes("find.html"), "the people map links to find.html");
+});

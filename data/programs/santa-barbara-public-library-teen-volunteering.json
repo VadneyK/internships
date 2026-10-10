@@ -1,0 +1,41 @@
+{
+  "grades": "Book reviews: grades 7-12. Teen Advisory Board: high school students.",
+  "min_age": null,
+  "max_age": null,
+  "opens_iso": null,
+  "apply_url": "https://forms.cloud.microsoft/g/vEMhbvTijs",
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "deadline_iso": null,
+  "id": "santa-barbara-public-library-teen-volunteering",
+  "name": "Teen Volunteering and Teen Advisory Board (Santa Barbara Public Library)",
+  "org": "Santa Barbara Public Library",
+  "regions": [
+    "santa-barbara"
+  ],
+  "city": "Santa Barbara, CA",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "what_you_do": "You earn community service hours at the library. You can join Teen Volunteer Time. You can join the Teen Advisory Board to plan teen programs and shape the collection. You can also write book reviews.",
+  "who_can_apply": "Teens. Book reviews are for grades 7 to 12. The Teen Advisory Board is for high school students and requires a Library Services Orientation for Teens first. Volunteers ages 16 and over are welcome to complete an 8-hour training.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Community service hours (1 hour per book review, up to 5 reviews a month).",
+  "season": "year-round",
+  "duration": "Teen Volunteer Time: Thursdays 4:15 PM at Central Library (or Saturdays 11 AM to 12:30 PM at Eastside Library). Advisory Board: twice a month on Tuesdays, 5-6:30 PM, during the school year and once a month during the summer.",
+  "status": "year-round",
+  "deadline_text": "Teen Advisory Board applications are taken at the start of each school term. Teen Volunteer Time and book reviews are ongoing.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Teen Volunteer Time: pre-register to guarantee a spot, or drop in. Advisory Board: send in the application and go to the orientation. Book reviews: send them through the library form.",
+  "needs_work_permit": false,
+  "url": "https://library.santabarbaraca.gov/classes-events/teen-services-events",
+  "sources_fetched": [
+    "https://library.santabarbaraca.gov/about-sbpl/volunteer-library",
+    "https://library.santabarbaraca.gov/node/15652",
+    "https://library.santabarbaraca.gov/classes-events/teen-services-events"
+  ],
+  "priority": 1,
+  "notes": "The apply link is the Teen Advisory Board form. Service-hour sign-off requests go to the Teen Services Librarian and take up to 3 business days. The library cannot sign court-ordered community service."
+}

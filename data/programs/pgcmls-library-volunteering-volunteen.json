@@ -1,0 +1,37 @@
+{
+  "id": "pgcmls-library-volunteering-volunteen",
+  "name": "Library volunteering and VolunTEEN",
+  "org": "Prince George's County Memorial Library System",
+  "regions": [
+    "college-park"
+  ],
+  "city": "Prince George's County, MD",
+  "type": "volunteer",
+  "fields": [
+    "education"
+  ],
+  "what_you_do": "Help at a branch as a library, computer, facility or program aide. Or earn up to 6 service hours through VolunTEEN. Teens over the age of 15 can help in the Kids Achieve Club homework program.",
+  "min_age": 14,
+  "max_age": null,
+  "who_can_apply": "Volunteers must be at least 14 (library system rule). VolunTEEN is for grades 6 to 12. The Kids Achieve Club welcomes teens over 15. Volunteers cannot staff the Circulation or Information desks.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Student service learning hours are available.",
+  "season": "year-round",
+  "duration": "Temporary (limited) or regular (at least 6 months) schedules",
+  "status": "year-round",
+  "deadline_text": "No deadline. Kids Achieve Club interviews: June for September programs, November for January programs.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Get a volunteer application from your local branch. Ask for the volunteer coordinator. For VolunTEEN, sign up through the Beanstack app.",
+  "needs_work_permit": false,
+  "url": "https://www.pgcmls.info/website/461",
+  "sources_fetched": [
+    "https://www.pgcmls.info/website/461"
+  ],
+  "priority": 2,
+  "notes": "The page says volunteers must be vaccinated and that the library is accepting volunteers; check with your branch for the current rule. Unpaid volunteering, so no work permit.",
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09"
+}

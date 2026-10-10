@@ -1,0 +1,40 @@
+{
+  "grades": "Grades 8 to 11 (College Apps Academy is for grade 12)",
+  "max_age": null,
+  "apply_url": "https://realitychangers.org/apply/",
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "priority": 2,
+  "notes": "This is a college-prep program, not a job. It is a good fit for a teen who wants help planning for college and careers. First-generation means neither parent or guardian has a four-year U.S. degree.",
+  "id": "san-diego-reality-changers-college-town",
+  "name": "Reality Changers College Town",
+  "org": "Reality Changers",
+  "regions": [
+    "san-diego"
+  ],
+  "city": "San Diego, CA (Downtown)",
+  "type": "school-pathway",
+  "fields": [
+    "education",
+    "any"
+  ],
+  "what_you_do": "A free after-school and summer program. You get tutoring, mentoring and college workshops and tours. You also go on service trips, try career experiences and practice public speaking. The page says partners offer access to internships and college courses.",
+  "min_age": null,
+  "who_can_apply": "Students who go to school in San Diego County and will be the first in their family to graduate from a four-year college. You must meet the program entry rules and reapply each year.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free for students and families. Not a paid program.",
+  "season": "school-year",
+  "duration": "3 or more hours a week after school, plus summer",
+  "status": "rolling",
+  "deadline_text": "Applications are taken all year. All applicants are added to a waitlist, and staff follow up with next steps.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the online application. You get a confirmation email and staff follow up with next steps.",
+  "url": "https://realitychangers.org/collegetown/",
+  "sources_fetched": [
+    "https://realitychangers.org/collegetown/",
+    "https://realitychangers.org/apply/",
+    "https://realitychangers.org/"
+  ]
+}

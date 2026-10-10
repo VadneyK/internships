@@ -11,7 +11,7 @@
     "any",
     "social-impact"
   ],
-  "what_you_do": "You take a free Saturday program that teaches basic firefighting, CPR and first aid, plus life skills like financial literacy, leadership and time management.",
+  "what_you_do": "This is a free Saturday program. It teaches basic firefighting, CPR and first aid. It also teaches life skills, such as money skills, leadership and time management.",
   "min_age": null,
   "max_age": null,
   "grades": "High school",
@@ -26,7 +26,7 @@
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Use the Apply page on the academy's website.",
-  "needs_work_permit": null,
+  "needs_work_permit": true,
   "url": "https://www.sffireyouthacademy.org",
   "apply_url": "https://www.sffireyouthacademy.org/apply",
   "sources_fetched": [
@@ -38,5 +38,5 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "The site does not list an age range or application dates, so ask the academy. Because it pays a stipend, ask whether a work permit is needed. It is a project of the SF Black Firefighters Association."
+  "notes": "The site does not list an age range or application dates, so ask the academy. It is a project of the SF Black Firefighters Association. Paid work for people under 18 in California needs a Permit to Employ and Work. See permit.html?state=ca for the exact permit and steps."
 }

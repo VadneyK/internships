@@ -1,0 +1,40 @@
+{
+  "id": "new-york-state-parks-lifeguard",
+  "name": "New York State Parks Lifeguard",
+  "org": "New York State Parks, Recreation and Historic Preservation (OPRHP)",
+  "regions": [
+    "new-york-state"
+  ],
+  "city": "New York State (state parks, pools and beaches; Long Island has its own process)",
+  "type": "paid-youth-program",
+  "fields": [
+    "sports",
+    "environment"
+  ],
+  "what_you_do": "Work as a lifeguard at a state park pool or beach during the summer season. You pass a qualifier and complete lifeguard training. On Long Island the training is 40 hours and paid.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Strong swimmers who meet the age and certification rules. Outside Long Island, the minimum age is 15 for pool posts and 16 for other posts. On Long Island the minimum is 17 (16 for pool posts only). You also need a background check, a medical form and an interview.",
+  "paid_type": "paid",
+  "pay_detail": "Paid job. Candidates are in pay status during the mandatory 40 hours of training. The hourly rate is not stated on the page read.",
+  "season": "summer",
+  "duration": "Seasonal; the page says the peak operating season is May through September",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No application deadline is posted on the page read. Register for a lifeguard qualifier; the page links the qualifier dates.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the lifeguard job application and email it to the address on the page. Then sign up for a qualifier. Long Island has its own preregistration. After you pass, regional staff tell you the next steps.",
+  "needs_work_permit": true,
+  "url": "https://parks.ny.gov/about/employment/lifeguards",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://parks.ny.gov/about/employment",
+    "https://parks.ny.gov/about/employment/lifeguards"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 1,
+  "notes": "The minimum age depends on region (see who_can_apply). Confirm your age with the regional office. The New York Department of Labor page returned an access error. Paid work for people under 18 in New York needs working papers (employment certificate). See permit.html?state=ny for the exact permit and steps."
+}

@@ -1,0 +1,46 @@
+{
+  "id": "wisconsin-dwd-youth-apprenticeship",
+  "name": "Wisconsin Youth Apprenticeship",
+  "org": "Wisconsin Department of Workforce Development (DWD)",
+  "regions": [
+    "wisconsin"
+  ],
+  "city": "Statewide, Wisconsin (run through local regional coordinators)",
+  "type": "apprenticeship-trades",
+  "fields": [
+    "trades",
+    "engineering",
+    "health",
+    "business-finance",
+    "tech-cs"
+  ],
+  "what_you_do": "Work a paid job in a career field you pick. You also take related classes. When you finish, you earn a state Certificate of Occupational Proficiency.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school juniors and seniors",
+  "who_can_apply": "High school juniors and seniors. The applicant page lists no GPA, age or residency rule. You also need an employer to hire you.",
+  "paid_type": "paid",
+  "pay_detail": "You earn a paycheck from day one. The pay rate is not stated on the page.",
+  "season": "school-year",
+  "duration": "Not stated on the pages read. Work and classes run during high school.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "The 2025-26 DWD calendar lists March 1, 2026 as the YA enrollment deadline for grant funding. 2026-27 student deadlines are not posted there. Ask your regional coordinator.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Pick a career area. Talk with your counselor and parents. Contact your local YA Regional Coordinator and apply. Then interview with employers. After you are hired you go to orientation and safety training.",
+  "needs_work_permit": null,
+  "url": "https://dwd.wisconsin.gov/apprenticeship/ya/",
+  "apply_url": "https://dwd.wisconsin.gov/apprenticeship/ya/applicants.htm",
+  "sources_fetched": [
+    "https://dwd.wisconsin.gov/apprenticeship/ya/",
+    "https://dwd.wisconsin.gov/apprenticeship/ya/applicants.htm",
+    "https://dwd.wisconsin.gov/apprenticeship/ya/childlabor.htm",
+    "https://dwd.wisconsin.gov/apprenticeship/ya/calendar.htm",
+    "https://dwd.wisconsin.gov/er/laborstandards/workpermit/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 1,
+  "notes": "Wisconsin's youth apprenticeship page says work permits are no longer required for 16 and 17 year olds. The Wisconsin work permit page says 14 and 15 year olds still need a permit ($10 fee, repaid by the employer by the first paycheck). A 15 year old junior is possible, so ask your coordinator. Student learner status does not override minor employment laws. DWD phone (608) 266-3131."
+}

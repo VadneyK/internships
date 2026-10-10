@@ -1,0 +1,38 @@
+{
+  "id": "mfrl-teen-library-volunteer",
+  "name": "Teen Library Volunteer",
+  "org": "Montgomery-Floyd Regional Library (Blacksburg and Christiansburg branches)",
+  "regions": [
+    "blacksburg"
+  ],
+  "city": "Blacksburg and Christiansburg, VA",
+  "type": "volunteer",
+  "fields": [
+    "education"
+  ],
+  "what_you_do": "You help with library programs. You plan youth programs. You decorate the teen area and tidy shelves. You do community service projects. Shifts are 1 to 2 hours.",
+  "min_age": 11,
+  "max_age": null,
+  "who_can_apply": "Teens must be 11 or older. Volunteering is during the school year, with extra hours in summer for the Summer Reading Program.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid.",
+  "season": "year-round",
+  "duration": "1 to 2 hour shifts",
+  "status": "year-round",
+  "deadline_text": "No deadline stated.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the Teen Volunteer Application and return it to the front desk. An application does not guarantee acceptance. Missing 3 shifts without notice removes you from the schedule.",
+  "needs_work_permit": false,
+  "url": "https://www.mfrl.org/teens.php?service=involved",
+  "apply_url": "https://www.mfrl.org/wp/wp-content/uploads/Teen-Vol-Application.doc",
+  "sources_fetched": [
+    "https://www.mfrl.org/teens.php?service=involved",
+    "https://www.mfrl.org/"
+  ],
+  "priority": 2,
+  "notes": "The page was last updated Nov 12, 2024, so call your branch to confirm. Unpaid volunteering, so no work permit.",
+  "grades": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09"
+}

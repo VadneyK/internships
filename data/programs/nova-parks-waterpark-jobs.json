@@ -1,0 +1,39 @@
+{
+  "id": "nova-parks-waterpark-jobs",
+  "name": "Waterpark seasonal jobs with free training",
+  "org": "NOVA Parks (Northern Virginia Regional Park Authority)",
+  "regions": [
+    "fairfax"
+  ],
+  "city": "Northern Virginia (Fairfax, Alexandria and Arlington waterparks)",
+  "type": "paid-youth-program",
+  "fields": [
+    "sports",
+    "food-hospitality"
+  ],
+  "what_you_do": "You can work summer jobs at a NOVA Parks waterpark. Jobs include attendant, lifeguard, water safety instructor and cook. Uniforms and training are free.",
+  "min_age": 14,
+  "max_age": null,
+  "who_can_apply": "Attendants must be at least 14, lifeguards at least 15, cooks at least 16.",
+  "paid_type": "paid",
+  "pay_detail": "Pay rates not stated on the page. Free uniforms and free training.",
+  "season": "summer",
+  "duration": "Seasonal (summer)",
+  "status": "rolling",
+  "deadline_text": "Page says NOVA Parks is hiring; no deadline stated.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use the 'Apply Now' link under the position on the Waterpark Employment page (current listings: lifeguard at Atlantis and Pirate's Cove, water safety instructor at Great Waves and Ocean Dunes).",
+  "needs_work_permit": null,
+  "url": "https://www.novaparks.com/waterparks/waterpark-employment",
+  "sources_fetched": [
+    "https://www.novaparks.com/waterparks/waterpark-employment",
+    "https://www.novaparks.com/employment"
+  ],
+  "priority": 2,
+  "notes": "Atlantis is at Bull Run and Pirate's Cove at Pohick Bay (Fairfax County); Great Waves is in Alexandria and Ocean Dunes is at Upton Hill in Arlington. Virginia rule (Virginia Department of Labor and Industry): 14 and 15 year olds need an Employment Certificate before working; the page read does not list a certificate for 16 and 17 year olds.",
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09"
+}

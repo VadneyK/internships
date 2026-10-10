@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "max_age": 21,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "priority": 2,
+  "notes": "Phone on the page: 619-643-2505. Pay is not mentioned, so treat it as unpaid until the department says otherwise.",
+  "id": "san-diego-fire-rescue-cadet-program",
+  "name": "San Diego Fire-Rescue Cadet Program",
+  "org": "San Diego Fire-Rescue Department (City of San Diego)",
+  "regions": [
+    "san-diego"
+  ],
+  "city": "San Diego, CA",
+  "type": "shadowing",
+  "fields": [
+    "health",
+    "trades",
+    "social-impact"
+  ],
+  "what_you_do": "Learn firefighting skills in classes taught by SDFD staff, such as hose lays, ladders, search and rescue, CPR and first aid. Certified cadets can do ride-alongs with fire crews. A one week academy runs each summer.",
+  "min_age": 16,
+  "who_can_apply": "Ages 16 to 21 with at least a 2.0 GPA. The page does not name a city residency rule.",
+  "paid_type": "unpaid",
+  "pay_detail": "Not stated; described as a youth program",
+  "season": "year-round",
+  "duration": "Ongoing. A one week Cadet Academy is held each summer.",
+  "status": "rolling",
+  "deadline_text": "New cadets are accepted quarterly. No dates are posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "To get on the waitlist, email sdfdcadets@sandiego.gov. Give your name and date of birth, and say that you want to join.",
+  "url": "https://www.sandiego.gov/fire/careers/fire-cadet-program",
+  "sources_fetched": [
+    "https://www.sandiego.gov/fire/careers/fire-cadet-program"
+  ]
+}

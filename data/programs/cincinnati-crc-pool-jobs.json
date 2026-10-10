@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "cincinnati-crc-pool-jobs",
+  "name": "Aquatics Jobs: Lifeguard and Pool Staff",
+  "org": "Cincinnati Recreation Commission",
+  "regions": [
+    "cincinnati"
+  ],
+  "city": "Cincinnati, OH",
+  "type": "paid-youth-program",
+  "fields": [
+    "sports"
+  ],
+  "what_you_do": "You can work part-time or seasonal jobs at Cincinnati public pools. Lifeguards keep pool users safe. Gate and pool monitors handle customer service. They also watch behavior around the pool.",
+  "min_age": 15,
+  "max_age": null,
+  "who_can_apply": "Lifeguards must be 15 or older, hold current American Red Cross Lifeguard Training/First Aid and CPR for the Professional Rescuer/AED certifications, and pass a water skills test. The page does not give an age for gate or pool monitors.",
+  "paid_type": "paid",
+  "pay_detail": "Paid; rate not stated on the page",
+  "season": "summer",
+  "duration": "Seasonal and part-time; dates not stated",
+  "status": "unconfirmed",
+  "deadline_text": "No dates are posted on the page. A 2026 lifeguard screening registration form is linked.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Register for the required lifeguard course screening on the page, then apply to the open positions. Questions: CRC Aquatics, 513-357-7665.",
+  "needs_work_permit": true,
+  "url": "https://cincinnati-oh.gov/crc/aquatics/aquatics-employment/",
+  "sources_fetched": [
+    "https://cincinnati-oh.gov/crc/aquatics/aquatics-employment/",
+    "https://codes.ohio.gov/ohio-revised-code/section-4109.02"
+  ],
+  "priority": 1,
+  "notes": "Lifeguards also attend pre-season and on-site pool training and pass an annual water skills review. Check the page for current screening dates. Ohio law (ORC 4109.02) requires an age and schooling certificate (work permit) for working minors of school age; 16 and 17 year olds working in the summer months can instead give the employer proof of age and a signed parent or guardian consent statement."
+}

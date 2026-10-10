@@ -1,0 +1,41 @@
+{
+  "id": "chicago-youth-works-summer-jobs",
+  "name": "Chicago Youth Works (formerly One Summer Chicago): summer jobs",
+  "org": "City of Chicago Dept. of Family and Support Services",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "The City runs a summer youth jobs program. It places young people in paid jobs. Partners include the Park District, CPS and City Colleges. Others are the Chicago Housing Authority, the Forest Preserves and Lincoln Park Zoo.",
+  "min_age": 16,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "City of Chicago residents. The program covers ages 14 to 24, but most summer jobs are for ages 16 to 24 (14 and 15 year olds: see Chicagobility). Under 18 needs a parent or guardian consent form if offered a job.",
+  "paid_type": "paid",
+  "pay_detail": "Paid. The pay rate is set by each partner and is not stated on the program pages. Most summer jobs run 20 to 25 hours a week.",
+  "season": "summer",
+  "duration": "At least 6 weeks; in 2026 most programs ran June 22 to July 31",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "2026 application ran March 10 to May 29, 2026. 2027 dates not posted; expect late winter or spring.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Complete the online Chicago Youth Works application (about 20 minutes, can be saved) plus any partner applications for jobs you choose. Online only. Partners contact applicants for interviews. More applicants than jobs, and you can accept only one position.",
+  "needs_work_permit": false,
+  "url": "https://www.chicagoyouthworks.org/faq",
+  "apply_url": "https://www.chicagoyouthworks.org/",
+  "sources_fetched": [
+    "https://www.chicagoyouthworks.org/",
+    "https://www.chicagoyouthworks.org/faq",
+    "https://www.chicago.gov/city/en/depts/fss/provdrs/youth/svcs/youth-employment.html",
+    "https://www.chicago.gov/city/en/depts/mayor/press_room/press_releases/2026/march/chicago-youth-works-launch.html"
+  ],
+  "priority": 1,
+  "notes": "The FAQ says youth 16 and older do not need a work permit. Some pages on the site are leftovers from old years, so trust the FAQ and the City press release for 2026. Questions: hotline 312-743-0208. Applicants with DACA need a Social Security number for City-funded jobs. Year-round Chicago Youth Service Corps (ages 16 to 24) is also part of this program.",
+  "regions": [
+    "chicago"
+  ],
+  "city": "Chicago, IL",
+  "verified": "fetched",
+  "verified_on": "2026-10-09"
+}

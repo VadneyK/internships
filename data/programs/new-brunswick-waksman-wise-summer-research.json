@@ -1,0 +1,40 @@
+{
+  "grades": "High school students who completed a high school biology course",
+  "min_age": null,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "new-brunswick-waksman-wise-summer-research",
+  "name": "Waksman Institute Summer Experience (WISE)",
+  "org": "Waksman Institute of Microbiology, Rutgers University",
+  "regions": [
+    "new-brunswick"
+  ],
+  "city": "Piscataway, NJ",
+  "type": "research",
+  "fields": [
+    "science",
+    "health"
+  ],
+  "what_you_do": "This is two weeks of lab work and bioinformatics. The work is on duckweed DNA at the Waksman Institute. Students' vetted sequences are published on GenBank with their names.",
+  "who_can_apply": "High school students who have completed a high school level biology course. No age or grade range is stated on the page.",
+  "paid_type": "fee-based",
+  "pay_detail": "$2,200 for the in-person WISE (non-refundable, due 2 weeks after approval). A virtual vWISE costs $600.",
+  "season": "summer",
+  "duration": "Two weeks, Monday to Friday (2026 sessions: June 22 to July 2, July 27 to August 7; vWISE August 10 to 21)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "2026 application opened February 2, 2026 and was first come, first served (sessions expected to fill). Application forms for the Summer 2027 WISE Programs will be posted in late January 2027.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Online application posted on the WISE page; first come, first served. Pay the fee within 2 weeks of approval.",
+  "needs_work_permit": false,
+  "url": "https://wssp.rutgers.edu/wise",
+  "priority": 3,
+  "notes": "In-person sessions are non-residential at the Waksman Institute on the Busch campus in Piscataway. The year-long Waksman Student Scholars Program (WSSP) is a separate, school-based program that starts with teachers.",
+  "sources_fetched": [
+    "https://wssp.rutgers.edu/wise",
+    "https://wssp.rutgers.edu/"
+  ]
+}

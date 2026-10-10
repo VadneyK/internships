@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "columbus-recparks-seasonal-lifeguard",
+  "name": "Seasonal Lifeguard",
+  "org": "Columbus Recreation and Parks Department",
+  "regions": [
+    "columbus"
+  ],
+  "city": "Columbus, OH",
+  "type": "paid-youth-program",
+  "fields": [
+    "sports"
+  ],
+  "what_you_do": "Lifeguard jobs are open now. The jobs are seasonal.",
+  "min_age": 15,
+  "max_age": null,
+  "who_can_apply": "Age 15 or older with the swimming skills needed. Must finish the American Red Cross Lifeguard Training course (the City waives the course fee if you are hired). Completing the course does not guarantee a job.",
+  "paid_type": "paid",
+  "pay_detail": "$20 an hour (seasonal)",
+  "season": "summer",
+  "duration": "Summer season; dates not stated",
+  "status": "unconfirmed",
+  "deadline_text": "The page says the City is hiring seasonal lifeguards for the summer. No application dates are posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Submit the Lifeguard Interest Form, take the pre-course swimming skills test, finish the Red Cross course, then submit the employment application.",
+  "needs_work_permit": true,
+  "url": "https://columbusrecparks.com/wellness/aquatics/lifeguards/",
+  "sources_fetched": [
+    "https://columbusrecparks.com/wellness/aquatics/lifeguards/",
+    "https://columbusrecparks.com/wellness/aquatics/",
+    "https://columbusrecparks.com/connect/employment/",
+    "https://codes.ohio.gov/ohio-revised-code/section-4109.02"
+  ],
+  "priority": 1,
+  "notes": "The City also offers Red Cross lifeguard training classes for ages 15 and older. Ohio law (ORC 4109.02) requires an age and schooling certificate (work permit) for working minors of school age; 16 and 17 year olds working in the summer months can instead give the employer proof of age and a signed parent or guardian consent statement. The page is not dated, so check that hiring is open."
+}

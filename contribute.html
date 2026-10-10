@@ -20,8 +20,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=2254fadf">
-<link rel="stylesheet" href="assets/css/style.css?v=2254fadf">
+<link rel="stylesheet" href="assets/css/fonts.css?v=e1f7e4bc">
+<link rel="stylesheet" href="assets/css/style.css?v=e1f7e4bc">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -41,6 +41,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <a href="find.html">Programs</a>
       <a href="playbook.html">Playbook</a>
       <a href="resume.html">Resume</a>
+      <a href="ready.html">Get ready</a>
       <a href="insights.html">Numbers</a>
       <a href="rules.html">Rules</a>
       <a href="contribute.html" aria-current="page">Help build this</a>
@@ -49,7 +50,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch light and dark mode" title="Light / dark">&#9681;</button>
   </div>
 </header>
-<main id="main">
+<main id="main" tabindex="-1">
 <section style="padding-block:2rem 1rem;">
   <div class="wrap">
     <span class="tag y eyebrow">Open source &middot; students welcome</span>
@@ -58,6 +59,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <div class="chips" style="margin-top:1rem;">
       <a class="btn" href="https://github.com/VadneyK/internships/issues/new?template=add-program.yml">Add a program</a>
       <a class="btn alt" href="https://github.com/VadneyK/internships/issues/new?template=update-program.yml">Report a wrong date</a>
+      <a class="btn alt" href="https://github.com/users/VadneyK/projects/1">See the work board</a>
       <a class="btn alt" href="https://github.com/VadneyK/internships">See the code</a>
     </div>
   </div>
@@ -113,10 +115,38 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </section>
 
+<section id="gaps">
+  <div class="wrap">
+    <h2>Known gaps</h2>
+    <p>These are the holes we already know about. Each one has an issue with the details, so you can pick one up. Most need someone with a browser, because the city and county sites block automated checks.</p>
+    <ul class="gaplist">
+      <li><b>Some Silicon Valley city programs are missing.</b> Los Altos city teen programs and Cupertino Leaders in Training are not listed yet. Those pages did not give ages or dates when we last read them. <a href="https://github.com/VadneyK/internships/issues/1">Issue 1</a></li>
+      <li><b>Some East Bay city programs are missing.</b> Pleasanton and Livermore library teen volunteers are not listed yet. San Leandro, Union City and Fremont are listed, but the San Leandro and Fremont commission pages do not say how to apply. <a href="https://github.com/VadneyK/internships/issues/2">Issue 2</a></li>
+      <li><b>Hospital teen volunteering is only partly covered.</b> Kaiser Permanente and Sutter Davis may have teen volunteer programs we could not confirm. Alta Bates Summit and Alameda Health System are 18 and up, so they are not listed. <a href="https://github.com/VadneyK/internships/issues/3">Issue 3</a></li>
+      <li><b>Davis and West Sacramento summer jobs are not posted yet.</b> City lifeguard and camp counselor jobs were not posted when we last checked in October. Seasonal jobs are usually posted in winter and spring, so check the City of Davis and City of West Sacramento job pages then. Davis Junior Basketball is hiring teens now. <a href="https://github.com/VadneyK/internships/issues/4">Issue 4</a></li>
+      <li><b>A few cards say Confirm first.</b> These cards were not read on the program&#x27;s own page, usually because the site blocked us. Check the details on the official site before you rely on them. <a href="https://github.com/VadneyK/internships/issues/5">Issue 5</a></li>
+      <li><b>Boys and Girls Clubs are only partly covered.</b> Only Oakland has a teen job card. Other clubs did not post teen details on their official pages. <a href="https://github.com/VadneyK/internships/issues/6">Issue 6</a></li>
+      <li><b>Some Southern California city pages could not be read.</b> Costa Mesa&#x27;s youth pages do not state job ages, and Anaheim and several LA museum and hospital pages blocked our reader. Anaheim is thin here. <a href="https://github.com/VadneyK/internships/issues/19">Issue 19</a></li>
+      <li><b>Some Atlanta pages could not be read.</b> The City of Atlanta&#x27;s own Summer Youth Employment pages and the airport&#x27;s youth workforce programs blocked our reader, so pay and signup details come from other official pages. <a href="https://github.com/VadneyK/internships/issues/20">Issue 20</a></li>
+      <li><b>Some New York Parks, NYPL and museum programs are missing.</b> NYC Parks teen programs other than lifeguards are missing. The New York Public Library and the AMNH, Met and MoMA teen pages blocked our reader, so those programs are not listed yet. <a href="https://github.com/VadneyK/internships/issues/21">Issue 21</a></li>
+      <li><b>Some Chicago and Elgin pages could not be read.</b> The Cook County Forest Preserves Conservation Corps, Elgin&#x27;s School District U-46 career pages and the Hoffman Estates parks pages blocked our reader. <a href="https://github.com/VadneyK/internships/issues/22">Issue 22</a></li>
+      <li><b>Pacific Northwest and Vancouver.</b> Some Seattle and Vancouver library, Park Board, hospital and museum pages blocked our reader, so those programs are not listed yet. <a href="https://github.com/VadneyK/internships/issues/23">Issue 23</a></li>
+      <li><b>Texas and Twin Cities.</b> Children&#x27;s Minnesota, Hennepin Healthcare, the Minneapolis Institute of Art and Austin&#x27;s workforce youth program blocked our reader, so those programs are not listed yet. <a href="https://github.com/VadneyK/internships/issues/24">Issue 24</a></li>
+      <li><b>Midwest campuses.</b> Madison and Parks jobs, Indiana hospital and city pages, Ohio state pages and University of Michigan programs blocked our reader. Ohio&#x27;s 2026 minimum wage is not on the site yet. <a href="https://github.com/VadneyK/internships/issues/25">Issue 25</a></li>
+      <li><b>East Coast.</b> Durham and Raleigh youth jobs, several Maryland and Philadelphia hospitals and libraries, and the Massachusetts state pages blocked our reader. <a href="https://github.com/VadneyK/internships/issues/26">Issue 26</a></li>
+      <li><b>Santa Barbara, Merced, San Diego and Inland Empire.</b> City of Merced and UC Merced, Cottage Health, Riverside County workforce and the City of Pomona blocked our reader, so those programs are not listed yet. <a href="https://github.com/VadneyK/internships/issues/27">Issue 27</a></li>
+    </ul>
+  </div>
+</section>
+
 <section>
   <div class="wrap">
     <h2>Adopt a region</h2>
     <p>Each hub needs someone who checks it every quarter: Davis and Sacramento, Silicon Valley, Oakland and the East Bay, San Francisco, and online and statewide programs. A &ldquo;region captain&rdquo; re-reads about 15 official pages, updates the dates, and closes the matching issues. Say you want a region in an <a href="https://github.com/VadneyK/internships/issues">issue</a> and a maintainer will help you start.</p>
+    <div class="callout">
+      <h3>Spread the word</h3>
+      <p>Handing this to a youth group or a table? <a href="share.html">Copy a link or print a QR code</a> for each city and tool.</p>
+    </div>
     <div class="callout">
       <h3>Teachers, counselors and youth leaders</h3>
       <p>Use this as a service-learning or computer science project. The <a href="https://github.com/VadneyK/internships/blob/main/CONTRIBUTING.md">contributor guide</a> has a one-hour lesson plan for a class or club.</p>
@@ -131,11 +161,29 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <div>
         <h2 class="fh">Teen internship guide</h2>
         <p>Free. No sign-up, no ads, no tracking. Everything you type here stays in your browser.</p>
-        <p class="small">Last checked <b>Oct 7, 2026</b> &middot; 259 programs</p>
+        <p class="small">Last checked <b>Oct 10, 2026</b> &middot; 1187 programs</p>
       </div>
       <div>
         <h2 class="fh">Quick links</h2>
-        <p><a href="find.html">Find a program</a><br><a href="playbook.html">Write your message</a><br><a href="resume.html">Build a first resume</a><br><a href="insights.html">The numbers</a><br><a href="rules.html">Work permit and pay rules</a><br><a href="contribute.html">Help build this guide</a></p>
+        <ul class="qlinks">
+          <li><a href="find.html">Find a program</a></li>
+          <li><a href="playbook.html">Write your message</a></li>
+          <li><a href="resume.html">Build a first resume</a></li>
+          <li><a href="ready.html">Get ready for day one</a></li>
+          <li><a href="calendar.html">What opens when</a></li>
+          <li><a href="paycheck.html">Your first paycheck</a></li>
+          <li><a href="safety.html">Safe at work</a></li>
+          <li><a href="younger.html">Ages 12 to 14: start here</a></li>
+          <li><a href="parents.html">For parents</a></li>
+          <li><a href="interview.html">Apply and interview prep</a></li>
+          <li><a href="permit.html">Do I need a work permit?</a></li>
+          <li><a href="languages.html">Work rules in your language</a></li>
+          <li><a href="insights.html">The numbers</a></li>
+          <li><a href="rules.html">Work permit and pay rules</a></li>
+          <li><a href="states.html">Rules in Georgia, New York, Illinois</a></li>
+          <li><a href="share.html">Share this guide (QR codes)</a></li>
+          <li><a href="contribute.html">Help build this guide</a></li>
+        </ul>
       </div>
       <div>
         <h2 class="fh">About this page</h2>
@@ -146,8 +194,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=2254fadf"></script>
-<script src="assets/js/common.js?v=2254fadf"></script>
+<script src="assets/js/common.js?v=e1f7e4bc"></script>
 
 </body>
 </html>

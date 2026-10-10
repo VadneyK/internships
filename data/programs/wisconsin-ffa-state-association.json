@@ -1,0 +1,42 @@
+{
+  "id": "wisconsin-ffa-state-association",
+  "name": "Wisconsin FFA membership through your school ag class",
+  "org": "Wisconsin FFA Association (Wisconsin Agricultural Education)",
+  "regions": [
+    "wisconsin"
+  ],
+  "city": "Statewide, Wisconsin",
+  "type": "leadership",
+  "fields": [
+    "environment",
+    "science",
+    "business-finance",
+    "any"
+  ],
+  "what_you_do": "Join FFA through your school's agriculture program. FFA members build leadership and career skills and can go to events like the state convention.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "5th to 12th grade (Affiliation program)",
+  "who_can_apply": "Students in a school agricultural education program that has an active FFA chapter. The Affiliation program page says grades 5th to 12th. No age limit is listed.",
+  "paid_type": "fee-based",
+  "pay_detail": "Traditional membership is $15 total ($8 state, $7 national). Local chapters may charge more. Affiliation program fees depend on enrollment and are paid by the school.",
+  "season": "school-year",
+  "duration": "School year",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No membership deadline is posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Contact your school's ag education teacher. If your school has no program, contact the state ag education staff. Ask about starting one.",
+  "needs_work_permit": false,
+  "url": "https://wisconsinaged.org/wi-ffa-membership",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://wisconsinaged.org/",
+    "https://wisconsinaged.org/wi-ffa-membership"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "Not a job. The site has a Local Chapter Locator that links to Find a Program. Your school must have an ag program and an FFA chapter. The Affiliation fee is based on enrollment. The page does not say who pays it, so the claim in pay_detail that the school pays is not confirmed by this page."
+}

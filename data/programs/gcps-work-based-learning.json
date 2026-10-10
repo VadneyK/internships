@@ -1,0 +1,39 @@
+{
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "id": "gcps-work-based-learning",
+  "name": "Work-Based Learning (Internships), Gwinnett County Public Schools",
+  "org": "Gwinnett County Public Schools",
+  "regions": [
+    "atlanta"
+  ],
+  "city": "Gwinnett County, GA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Juniors and seniors work in a job linked to their career goal and earn school credit. The program also covers apprenticeships. Students must job search and interview themselves, with help from the school coordinator.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": "11-12",
+  "who_can_apply": "Gwinnett County Public Schools juniors and seniors who are 16 by September 1 and have coursework that matches their career choice. The school reviews grades, attendance and discipline.",
+  "paid_type": "mixed",
+  "pay_detail": "School credit. The GCPS page does not state pay. The state says internships may be paid or unpaid and co-ops and apprenticeships are paid.",
+  "season": "school-year",
+  "duration": "One semester at a time as a school elective",
+  "status": "unconfirmed",
+  "deadline_text": "No dates are posted on the district page. Forms go to your school's Work-Based Learning coordinator; ask when the next semester deadline is.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Apply through your school's Work-Based Learning coordinator. Forms: electronic agreement, WBL application, recommendation form and job site information form. Forms are uploaded in the WBL class when the semester starts. Apprenticeships need a post-high-school plan.",
+  "needs_work_permit": false,
+  "url": "https://www.gcpsk12.org/programs-and-services/college-and-career-development/academies-and-career-technical-and-agricultural-education/work-based-learning-internships",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.gcpsk12.org/programs-and-services/college-and-career-development/academies-and-career-technical-and-agricultural-education/work-based-learning-internships",
+    "https://gadoe.org/ctae/work-based-learning/",
+    "https://dol.georgia.gov/child-labor-employment-certificate-instructions"
+  ],
+  "priority": 2,
+  "notes": "No home-office or private-residence placements. The program cannot guarantee a job. Georgia requires a work permit only under 16, and this program starts at 16."
+}

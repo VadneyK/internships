@@ -1,0 +1,42 @@
+{
+  "id": "georgia-tech-dual-enrollment",
+  "name": "Dual Enrollment at Georgia Tech",
+  "org": "Georgia Institute of Technology, Office of Undergraduate Admission",
+  "regions": [
+    "atlanta",
+    "georgia"
+  ],
+  "city": "Atlanta, GA (online and some on campus)",
+  "type": "pre-college",
+  "fields": [
+    "engineering",
+    "tech-cs",
+    "science"
+  ],
+  "what_you_do": "Take real Georgia Tech college courses while you are still in high school. Several courses are online (distance courses), and a limited number are on campus.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Students in a Georgia high school or Georgia home school. You need a 3.5 unweighted GPA and ACT, PSAT or SAT scores. You need precalculus and two finished college-level courses (AP, DE or IB). You also need proof of lawful presence in the U.S.",
+  "paid_type": "mixed",
+  "pay_detail": "Most Georgia students get state funding that covers enrollment (30 credit hour limit). Self-pay in fall 2026 is $353.93 per credit hour for Georgia residents, plus fees ($531 for online-only).",
+  "season": "school-year",
+  "duration": "By term: fall, spring and summer (summer is distance computer science only)",
+  "status": "unconfirmed",
+  "deadline_text": "Windows listed without years: Fall apply May 15 to June 15. Spring apply Sept 25 to Oct 20. Summer (distance CS only) apply March 1 to 31.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Submit the Georgia Tech Dual Enrollment application in the term window. Add your high school transcript and test scores. Add AP scores if needed and proof of lawful presence. Apply for state funding at GAFutures.org.",
+  "needs_work_permit": false,
+  "url": "https://admission.gatech.edu/dual-enrollment",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://admission.gatech.edu/dual-enrollment",
+    "https://admission.gatech.edu/dual-enrollment/application-and-admission",
+    "https://admission.gatech.edu/dual-enrollment/enrollment-and-financial-information"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "Competitive. Funding can be denied if you used your 30 hours, your high school does not take part, the course is not eligible (on-campus), or you are not a U.S. citizen, eligible non-citizen or Georgia resident. Out-of-state tuition is $1,153.46 per credit hour. Decisions come about 3 weeks after the window closes."
+}

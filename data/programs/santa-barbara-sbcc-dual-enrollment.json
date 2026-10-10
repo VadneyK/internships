@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "min_age": null,
+  "max_age": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "deadline_iso": null,
+  "id": "santa-barbara-sbcc-dual-enrollment",
+  "name": "Dual Enrollment (Santa Barbara City College)",
+  "org": "Santa Barbara City College",
+  "regions": [
+    "santa-barbara"
+  ],
+  "city": "Santa Barbara, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "You take real college courses while in high school. Santa Barbara and Carpinteria Unified students can take them at their high school. All high school and home school students can take them on the SBCC campus or online.",
+  "who_can_apply": "High school and home school students. High-school-based courses are for Santa Barbara and Carpinteria Unified students only. Some courses are restricted. Complete the SBCC application and the dual enrollment steps first.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Applying to SBCC is free. High-school-based courses cost nothing. For online and campus courses, enrollment fees are waived but students pay student fees and textbooks.",
+  "season": "year-round",
+  "duration": "By semester",
+  "status": "rolling",
+  "deadline_text": "Fall 2026 dual enrollment registration began July 1. Deadlines for each term are on the Dual Enrollment calendar on the SBCC page.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply to SBCC through CCCApply, then follow the Steps to Enrollment for your course type. Contact dualenrollment@sbcc.edu or 805-898-8170.",
+  "needs_work_permit": false,
+  "url": "https://www.sbcc.edu/dualenrollment/",
+  "sources_fetched": [
+    "https://www.sbcc.edu/dualenrollment/"
+  ],
+  "priority": 2,
+  "notes": "Your school counselor or College and Career Center can help choose courses."
+}

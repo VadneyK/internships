@@ -1,0 +1,38 @@
+{
+  "id": "montgomery-county-teenworks-employment-program",
+  "name": "TeenWorks Employment Program",
+  "org": "Montgomery County Recreation (Youth Development)",
+  "regions": [
+    "college-park"
+  ],
+  "city": "Montgomery County, MD",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "You work as a county employee at a host site. Host sites include afterschool programs, a farm, communications, finance and special events. You have a coach. You get 30 hours of job training. You finish a capstone project.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "Montgomery County residents who are high school students and at least 15, can work for a full year, attend a mandatory information session, and have a parent or guardian's consent.",
+  "paid_type": "paid",
+  "pay_detail": "Minimum wage (county FAQ). Maximum hours depend on grade when first hired: 9th grade 350, 10th grade 300, 11th and 12th grade 200.",
+  "season": "year-round",
+  "duration": "Full-year commitment; assignments run 200 to 350 hours",
+  "status": "unconfirmed",
+  "deadline_text": "Application windows on the page: Jan 2 to Mar 30 (spring/summer) and Aug 1 to Nov 30 (fall/winter). The page does not state the year, so the fall/winter window may be open now.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Attend the mandatory TeenWorks information session, interview with the TeenWorks team, then complete the county employment application when the posting is available. Phone 240-777-8080.",
+  "needs_work_permit": true,
+  "url": "https://www.montgomerycountymd.gov/montgomery-county-recreation/activities-programs/youth-development/teenworks-employment-program",
+  "sources_fetched": [
+    "https://www.montgomerycountymd.gov/montgomery-county-recreation/activities-programs/youth-development/teenworks-employment-program",
+    "https://www.montgomerycountymd.gov/montgomery-county-recreation/how/employment-opportunities"
+  ],
+  "priority": 1,
+  "notes": "The 15 year minimum comes from the Recreation employment page, not the program page. The window dates have no year on the page, so confirm that the fall/winter window is still open. TeenWorks staff are seasonal county employees. Maryland rule (Maryland Department of Labor): work permits are required for all minors under 18 to work in Maryland, issued only after a job offer.",
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09"
+}

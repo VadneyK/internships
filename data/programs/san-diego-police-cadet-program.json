@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "max_age": 21,
+  "apply_url": "https://app.betterimpact.com/Application?OrganizationGuid=2561c556-d051-45f2-9154-5606fc751789&ApplicationFormNumber=1",
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "priority": 2,
+  "notes": "The activities page describes some activities. One is minor decoy work with detectives. A parent should read the page. You must finish the Cadet Academy first. Then you can become a cadet.",
+  "id": "san-diego-police-cadet-program",
+  "name": "San Diego Police Cadet Program",
+  "org": "San Diego Police Department (City of San Diego)",
+  "regions": [
+    "san-diego"
+  ],
+  "city": "San Diego, CA",
+  "type": "shadowing",
+  "fields": [
+    "law-government",
+    "social-impact"
+  ],
+  "what_you_do": "A volunteer role with no police powers. Cadets train twice a month and go on ride-alongs. They help with traffic control and security at community events.",
+  "min_age": 16,
+  "who_can_apply": "Ages 16 to 21. You need to be a high school graduate or have at least a 2.0 GPA if still in school. You pass a written exam, a character interview and a background check.",
+  "paid_type": "unpaid",
+  "pay_detail": "Described as a voluntary position",
+  "season": "year-round",
+  "duration": "Ongoing. You finish a Cadet Academy first, then go to two meetings a month (first and third Tuesday, 6 to 9 p.m.). Time ranges from 4 hours a month to over 40.",
+  "status": "rolling",
+  "deadline_text": "No deadline stated. Recruiting meetings are held on the second Tuesday of each month at 5 p.m.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the online form. Then go to a recruiting meeting at Police Plaza (4020 Murphy Canyon Rd). Bring a government photo ID. The meeting can last up to three hours. It includes a 20 question test.",
+  "url": "https://www.sandiego.gov/police/recruiting/opportunities/cadet",
+  "sources_fetched": [
+    "https://www.sandiego.gov/police/recruiting/opportunities/cadet",
+    "https://www.sandiego.gov/police/recruiting/cadet-meetings-and-activities",
+    "https://www.sandiego.gov/police/recruiting/volunteer"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "cassadaga-job-corps-center",
+  "name": "Cassadaga Job Corps Center",
+  "org": "U.S. Department of Labor Job Corps",
+  "regions": [
+    "new-york-state"
+  ],
+  "city": "Cassadaga, NY (campus with dorms)",
+  "type": "apprenticeship-trades",
+  "fields": [
+    "trades",
+    "health"
+  ],
+  "what_you_do": "Live on campus and train for a career at no cost. You also earn a high school diploma or equivalent. Training includes carpentry, electrical, painting, plumbing and more.",
+  "min_age": 16,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Generally ages 16 through 24. You must have a low income. You must meet citizenship or residency rules, or have other approved status. You must meet background rules. An Admissions Representative reads your application. This person decides if you can join.",
+  "paid_type": "stipend",
+  "pay_detail": "Free to students. The campus page lists furnished dorms, meals, basic medical care, books and supplies, and a living allowance paid in cash twice a month.",
+  "season": "year-round",
+  "duration": "Not stated on the pages read",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline posted. You start by making a MyJobCorps account on the Job Corps website.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Create a MyJobCorps account on jobcorps.gov. Finish the application. Then an Admissions Representative sets up an interview. They review your documents and a background check. They also help you pick a campus.",
+  "needs_work_permit": null,
+  "url": "https://cassadaga.jobcorps.gov/",
+  "apply_url": "https://www.jobcorps.gov/",
+  "sources_fetched": [
+    "https://cassadaga.jobcorps.gov/",
+    "https://cassadaga.jobcorps.gov/campus-life",
+    "https://cassadaga.jobcorps.gov/train",
+    "https://www.jobcorps.gov/i-am-a/student",
+    "https://www.jobcorps.gov/faqs"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 3,
+  "notes": "Mostly fits teens 16 and up who are out of school or want a different path. Housing: dorms are listed on the campus page. A center being listed on the Job Corps site does not prove it is enrolling right now, so confirm with an Admissions Representative. The training list above comes from the center's training page and may not be complete. Whether a state work permit applies was not checked."
+}

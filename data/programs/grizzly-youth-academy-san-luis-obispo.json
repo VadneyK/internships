@@ -1,0 +1,45 @@
+{
+  "opens_iso": null,
+  "apply_url": null,
+  "min_age": 16,
+  "max_age": 18,
+  "grades": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "priority": 2,
+  "id": "grizzly-youth-academy-san-luis-obispo",
+  "name": "Grizzly Youth Academy (National Guard Youth ChalleNGe)",
+  "org": "California National Guard / California Military Department",
+  "regions": [
+    "silicon-valley",
+    "san-jose",
+    "merced",
+    "santa-barbara"
+  ],
+  "city": "San Luis Obispo, CA (residential; serves listed central and southern counties)",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "A free, live in, structured program for teens who are behind in credits or at risk of dropping out. Cadets work on academics, leadership and life skills, and many can earn a GED.",
+  "who_can_apply": "Ages 16 to 18 by the first day of class. You must volunteer, since you cannot be forced. You must be credit deficient or at risk of dropping out. You must be a U.S. citizen or legal resident and a California resident. You must be clear of felony charges. You must live in one of these places: Santa Cruz, Santa Clara, Merced, Madera, Fresno, Monterey, San Benito, Kings, Tulare, Inyo, San Luis Obispo, Kern, Santa Barbara or Ventura County, or in Lancaster or Palmdale.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free to participants (the site says offered free of charge, paid by federal and state partnerships).",
+  "season": "year-round",
+  "duration": "Residential phase followed by a long check-in phase. The site's pages disagree on the total length (17.5 months on one page, 5.5 months residential plus 24 months after on another), so ask the academy.",
+  "status": "rolling",
+  "deadline_text": "No class start dates or deadlines on the pages read. Start with the online Interest Form and a required virtual orientation.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Make sure you meet the rules to apply. Fill out the Interest Form on the site. Then watch the required virtual orientation video. It is a must for the application.",
+  "url": "https://www.grizzlyyouthacademy.org/admissions/steps-to-join/",
+  "sources_fetched": [
+    "https://grizzlyyouthacademy.org/",
+    "https://www.grizzlyyouthacademy.org/admissions/steps-to-join/",
+    "https://www.grizzlyyouthacademy.org/the-program/program-overview/",
+    "https://www.grizzlyyouthacademy.org/the-program/faq/",
+    "https://calguard.ca.gov/youth/"
+  ],
+  "notes": "Meant for teens who dropped out or are at risk of dropping out. The FAQ says each ChalleNGe program runs its own admissions. Call or write the academy (contact page on its site) about county rules. Many cadets can earn a GED during the residential phase (FAQ). Some counties on the site have no separate region tag in this guide. They are Santa Cruz, Madera, Fresno, Monterey, San Benito, Kings, Tulare, Inyo, San Luis Obispo, Kern and Ventura. Lancaster and Palmdale are in Los Angeles County."
+}

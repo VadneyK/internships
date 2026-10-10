@@ -1,0 +1,43 @@
+{
+  "id": "boston-mit-beaver-works-summer-institute",
+  "name": "Beaver Works Summer Institute (BWSI)",
+  "org": "MIT Beaver Works",
+  "regions": [
+    "boston",
+    "national"
+  ],
+  "city": "Cambridge, MA",
+  "type": "pre-college",
+  "fields": [
+    "engineering",
+    "tech-cs",
+    "science"
+  ],
+  "what_you_do": "Take a free online course first. Then join a four week summer program. The courses are hands-on and project based. Topics include artificial intelligence, autonomy, radar and satellites. In person options are available.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Designed for students entering their senior year of high school",
+  "who_can_apply": "Students who live or attend high school in the United States and finish the online course and the separate summer application. You must be in the US for the July program. The page lists no age or citizenship rule.",
+  "paid_type": "fee-based",
+  "pay_detail": "Free for families with income and assets under $200,000 (housing is not covered for in person programs). Families above that pay $3,000. No stipend is mentioned.",
+  "season": "summer",
+  "duration": "Four week program in July. The online prerequisite course opens February 1.",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "The page says \"BWSI 2027 Online Prerequisites are Now Open!\" Self registration for the online course is open now. Approvals come in late January, the online course opens February 1, the summer application is sent in March, nominations are accepted through March 31, and the teacher or mentor recommendation is due April 2. The page does not give a final date for the summer application.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Sign yourself up through the Formstack link on the Summer Program Application page. No nomination is needed. Or have a teacher or mentor nominate you. Later you need three essays of 500 words or less each. You need a teacher or mentor recommendation. You need parent or guardian information with an electronic signature. You also need to finish the online prerequisite course. Contact: bwsi-admin@mit.edu.",
+  "needs_work_permit": false,
+  "url": "https://bwsi.mit.edu/apply-now/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://beaverworks.ll.mit.edu/CMS/bw/bwsi",
+    "https://bwsi.mit.edu/",
+    "https://bwsi.mit.edu/apply-now/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "Competitive. The cost wording on the page leaves the $200,000 to $200,001 range unclear, so ask BWSI if you are near that line. The online course is free and stays open to independent learners."
+}

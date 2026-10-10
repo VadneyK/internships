@@ -1,0 +1,258 @@
+{
+ "read": "Oct 9, 2026",
+ "presets": [
+  {
+   "id": "ca",
+   "label": "California, 2026 minimum ($16.90)",
+   "state": "ca",
+   "wage": 16.9,
+   "extra": [
+    "sdi"
+   ]
+  },
+  {
+   "id": "ga",
+   "label": "Georgia, federal minimum ($7.25)",
+   "state": "ga",
+   "wage": 7.25,
+   "extra": []
+  },
+  {
+   "id": "ny-nyc",
+   "label": "New York City, Long Island or Westchester ($17.00)",
+   "state": "ny",
+   "wage": 17.0,
+   "extra": [
+    "pfl"
+   ]
+  },
+  {
+   "id": "ny-up",
+   "label": "New York, rest of the state ($16.00)",
+   "state": "ny",
+   "wage": 16.0,
+   "extra": [
+    "pfl"
+   ]
+  },
+  {
+   "id": "il-youth",
+   "label": "Illinois outside Chicago, under 18, first 650 hours ($13.00)",
+   "state": "il",
+   "wage": 13.0,
+   "extra": []
+  },
+  {
+   "id": "il-adult",
+   "label": "Illinois outside Chicago, after 650 hours or 18 and older ($15.00)",
+   "state": "il",
+   "wage": 15.0,
+   "extra": []
+  }
+ ],
+ "rates": {
+  "ss": 0.062,
+  "medicare": 0.0145,
+  "sdi": 0.013,
+  "pfl": 0.00432,
+  "nyDisabilityRate": 0.005,
+  "nyDisabilityWeekCap": 0.6
+ },
+ "lineNotes": {
+  "ss": "Social Security tax, 6.2 percent of your pay. Your employer pays a matching amount.",
+  "medicare": "Medicare tax, 1.45 percent of your pay. Your employer pays a matching amount.",
+  "sdi": "California State Disability Insurance, 1.3 percent in 2026, with no wage cap.",
+  "pfl": "New York Paid Family Leave, 0.432 percent in 2026. Shown if your employer deducts it.",
+  "dis": "New York disability benefits: an employer is allowed, not required, to take 0.5 percent, up to $0.60 a week. Not subtracted here."
+ },
+ "parentNote": "If you work for your parent's own unincorporated business (a sole proprietorship, or a partnership where both partners are your parents) and you are under 18, no Social Security or Medicare tax is taken. Income tax can still be withheld. This does not apply to a corporation. Ask a tax preparer.",
+ "parentSource": {
+  "t": "IRS: family employees",
+  "u": "https://www.irs.gov/businesses/small-businesses-self-employed/family-employees"
+ },
+ "rateSources": [
+  {
+   "t": "IRS Topic 751: Social Security and Medicare rates",
+   "u": "https://www.irs.gov/taxtopics/tc751"
+  },
+  {
+   "t": "California EDD: SDI rate",
+   "u": "https://edd.ca.gov/en/payroll_taxes/rates_and_withholding/"
+  },
+  {
+   "t": "New York Paid Family Leave 2026 notice",
+   "u": "https://www.wcb.ny.gov/content/main/forms/PFLDocs/pfl-pay-deduction-notice-2026.pdf"
+  },
+  {
+   "t": "New York disability benefits",
+   "u": "https://www.wcb.ny.gov/content/main/DisabilityBenefits/employee-disability-benefits.jsp"
+  }
+ ],
+ "left": "Income tax is not in this estimate. How much federal and state income tax is taken depends on the W-4 and your state's form, which you fill out on your first day. The cards below explain the rules.",
+ "forms": [
+  {
+   "n": "Federal Form W-4",
+   "d": "You can check \"exempt from withholding\" only if both are true: you had no federal income tax liability last year and you expect none this year. Being a student does not make you automatically exempt. Exempt stops income tax only. It never stops Social Security or Medicare tax. If you claim exempt you may owe tax and penalties at filing, and you must submit a new W-4 by February 16, 2027.",
+   "src": {
+    "t": "Form W-4 (2026)",
+    "u": "https://www.irs.gov/pub/irs-pdf/fw4.pdf"
+   },
+   "src2": {
+    "t": "IRS Publication 505: exemption from withholding",
+    "u": "https://www.irs.gov/publications/p505"
+   }
+  },
+  {
+   "n": "California Form DE 4",
+   "d": "California uses its own form, separate from the W-4. With no DE 4 your employer must withhold as Single with zero allowances. You can claim exempt if you owed no federal and state income tax last year and expect none this year. An exempt DE 4 must be filed again by February 15 each year.",
+   "src": {
+    "t": "California DE 4",
+    "u": "https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de4.pdf"
+   }
+  },
+  {
+   "n": "Georgia Form G-4",
+   "d": "This is the trap. You can claim exempt on the Georgia form only if you filed a Georgia return last year and owed nothing on it. A teen starting a first job who did not file last year cannot check exempt, even if the federal W-4 exemption is allowed. Without a completed G-4 your employer withholds as though you are single with zero allowances.",
+   "src": {
+    "t": "Georgia Form G-4",
+    "u": "https://dor.georgia.gov/document/form/tsdemployeeswithholdingallowancecertificateg-4pdf/download"
+   }
+  },
+  {
+   "n": "New York Form IT-2104-E",
+   "d": "New York has a separate exemption form for young workers. You can claim exempt from New York State, New York City and Yonkers withholding if you are under 18 (or over 65, or a full-time student under 25), had no New York income tax liability last year, and expect none this year. You need a new form each year. The 2026 form expires April 30, 2027, and it warns of a $500 penalty for false information.",
+   "src": {
+    "t": "New York IT-2104-E",
+    "u": "https://www.tax.ny.gov/pdf/current_forms/it/it2104e_fill_in.pdf"
+   }
+  },
+  {
+   "n": "Illinois Form IL-W-4",
+   "d": "An \"exempt\" claim on the Illinois form is thrown out unless your federal W-4 also claims exempt. Even then, some Illinois tax may still be withheld. Without a completed, signed IL-W-4 your employer withholds on your whole pay with no allowances.",
+   "src": {
+    "t": "Illinois IL-W-4",
+    "u": "https://tax.illinois.gov/content/dam/soi/en/web/tax/forms/withholding/documents/currentyear/il-w-4.pdf"
+   }
+  }
+ ],
+ "fileNote": "If you do not have to file a return but tax was withheld, you should still file to get it back. Ask a parent or tax preparer.",
+ "states": [
+  {
+   "id": "ca",
+   "name": "California",
+   "freq": "At least twice a month, on paydays set in advance. If you are paid weekly or every two weeks, pay is due within 7 days after the pay period ends.",
+   "stub": "Every payment, including cash, must come with a pay stub showing gross pay, hours, all deductions, net pay, the pay dates, the employer and each hourly rate.",
+   "last": "If you are fired, all wages are due right away. If you quit and gave 72 hours notice, they are due on your last day. If you quit with less notice, they are due within 72 hours.",
+   "dd": "Direct deposit and payroll cards must be your own voluntary choice.",
+   "claim": "File a wage claim with the Labor Commissioner's Office, online, by email, mail or in person. Protection applies regardless of immigration status. Time limits: 3 years for minimum wage, overtime, missed breaks and illegal deductions, and 1 year for retaliation.",
+   "links": [
+    {
+     "t": "California paydays FAQ",
+     "u": "https://www.dir.ca.gov/dlse/faq_paydays.htm"
+    },
+    {
+     "t": "How to file a wage claim",
+     "u": "https://www.dir.ca.gov/dlse/HowToFileWageClaim.htm"
+    }
+   ],
+   "call": "833-526-4636"
+  },
+  {
+   "id": "ga",
+   "name": "Georgia",
+   "freq": "At least twice a month.",
+   "stub": "The Georgia pages we read do not say whether a pay stub is required.",
+   "last": "Not stated on the pages we read.",
+   "dd": "Georgia allows cash, check or direct deposit with your consent.",
+   "claim": "Georgia does not run its own wage claim process for minimum wage or overtime. The Georgia DOL says the US Department of Labor enforces it, which can be slow, and that a worker can also file in small claims court (Magistrate Court) in the employer's county.",
+   "links": [
+    {
+     "t": "Georgia DOL: employment issues",
+     "u": "https://dol.georgia.gov/laws-and-rules/obtain-information-about-employment-issue"
+    },
+    {
+     "t": "Georgia minimum wage",
+     "u": "https://dol.georgia.gov/minimum-wage"
+    }
+   ],
+   "call": "US Department of Labor Wage and Hour: 1-866-487-9243"
+  },
+  {
+   "id": "ny",
+   "name": "New York",
+   "freq": "Manual workers must be paid weekly. Others at least twice a month.",
+   "stub": "A wage statement is required with every payment.",
+   "last": "Not stated on the pages we read.",
+   "dd": "Direct deposit and payroll debit cards need your written consent after written notice. If you do not consent, the employer must pay by check or cash.",
+   "claim": "Fill in the Labor Standards Complaint Form (LS 223). The state will not take claims for wages earned more than three years ago. All workers have rights regardless of age, immigration status or work authorization.",
+   "links": [
+    {
+     "t": "New York: unpaid wages",
+     "u": "https://dol.ny.gov/unpaidwithheld-wages-and-wage-supplements"
+    },
+    {
+     "t": "New York: youth workers",
+     "u": "https://dol.ny.gov/youthworkers"
+    },
+    {
+     "t": "New York: pay frequency",
+     "u": "https://dol.ny.gov/frequency-pay"
+    }
+   ],
+   "call": "888-469-7365"
+  },
+  {
+   "id": "il",
+   "name": "Illinois",
+   "freq": "At least twice a month, no later than 13 days after the pay period ends. Final pay is due no later than the next regular payday.",
+   "stub": "The employer must give you a pay stub for each pay period.",
+   "last": "Final pay is due at separation if possible, and no later than the next regularly scheduled payday.",
+   "dd": "An employer cannot require direct deposit or a payroll card. You can ask for cash or a check. Payroll card fees must be disclosed in writing.",
+   "claim": "File a wage claim with the Illinois Department of Labor, online with an Illinois Public ID account. Complaints must be filed within one year after the wages were due.",
+   "links": [
+    {
+     "t": "Illinois: unpaid wages",
+     "u": "https://labor.illinois.gov/unpaidwages.html"
+    },
+    {
+     "t": "Illinois: wage payment FAQ",
+     "u": "https://labor.illinois.gov/faqs/wage-payment-faq.html"
+    },
+    {
+     "t": "Illinois: forms of payment",
+     "u": "https://labor.illinois.gov/faqs/form-of-payment.html"
+    }
+   ],
+   "call": "312-793-2804"
+  }
+ ],
+ "wrongNote": "It is illegal for an employer to punish you for asking about your pay or filing a claim. If you are unsure, ask a parent or call the number for your state.",
+ "bank": {
+  "t": "Opening a bank account",
+  "items": [
+   "Federal law does not stop a minor from opening a savings account. State law decides how much a minor can do alone.",
+   "A parent can open the account for you, and may add both names. On a joint account, either person can usually withdraw all the money and close it.",
+   "Banks usually ask for your name, birth date, address and an ID number such as a Social Security number. Some accept a student ID. Ask what they need before you go.",
+   "Ask about fees: a monthly fee, a minimum balance, fees per transaction, and overdraft. A payroll card can have its own fees.",
+   "A custodial account for a child counts as the child's money for deposit insurance, up to $250,000."
+  ],
+  "src": [
+   {
+    "t": "CFPB: savings accounts for kids",
+    "u": "https://www.consumerfinance.gov/about-us/blog/heres-why-you-should-open-a-savings-account-for-your-kids"
+   },
+   {
+    "t": "CFPB: joint accounts",
+    "u": "https://www.consumerfinance.gov/consumer-tools/bank-accounts/answers/key-terms/"
+   }
+  ]
+ },
+ "gaps": [
+  "Whether the New York Paid Family Leave deduction applies to a teen's first checks the same as to any employee.",
+  "Other city minimum wages and city taxes. Chicago is $17.05 from July 1, 2026 at employers with 4 or more employees (see Other states), and this estimate does not use it.",
+  "Tips and overtime, which are not in the estimate.",
+  "How much income tax will be withheld, which depends on the form you file.",
+  "Whether a minor can file a wage claim alone in Illinois, and the time limit for Georgia and New York retaliation claims.",
+  "Whether a young worker can file a wage claim alone in each state. Ask a parent to help."
+ ]
+}

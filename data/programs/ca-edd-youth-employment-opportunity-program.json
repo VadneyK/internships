@@ -1,0 +1,38 @@
+{
+  "opens_iso": null,
+  "apply_url": null,
+  "min_age": 15,
+  "max_age": 25,
+  "grades": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "priority": 2,
+  "id": "ca-edd-youth-employment-opportunity-program",
+  "name": "Youth Employment Opportunity Program (YEOP)",
+  "org": "California Employment Development Department (EDD)",
+  "regions": [
+    "statewide"
+  ],
+  "city": "California (YEOP specialists at local EDD offices)",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Peer mentors and career coaches help with resumes, interview practice and job search. They also run workshops. They can refer you to GED, diploma or job training programs. It is not a job placement program.",
+  "who_can_apply": "Youth ages 15 to 25 who need extra help to finish school or find work. Examples listed are offense history as a minor and teen parent. Others are foster care or no stable housing, and gang involvement or risk. Minority group, low income, and disability or reading difficulty are also listed. You may still qualify if you do not match these.",
+  "paid_type": "unpaid",
+  "pay_detail": "No pay. The page does not say whether services cost anything.",
+  "season": "year-round",
+  "duration": "Ongoing",
+  "status": "rolling",
+  "deadline_text": "No application dates. Contact a YEOP specialist any time.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "The page has no separate enrollment steps. Use the YEOP Contact Information page. It helps you reach a YEOP specialist in your area. Or contact your local America's Job Center of California.",
+  "url": "https://edd.ca.gov/en/jobs_and_training/Youth_Employment_Opportunity_Program/",
+  "sources_fetched": [
+    "https://edd.ca.gov/en/jobs_and_training/Youth_Employment_Opportunity_Program/"
+  ],
+  "notes": "The page says clearly: this is not a job placement program. It is help and coaching toward school and work."
+}

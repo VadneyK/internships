@@ -1,0 +1,40 @@
+{
+  "id": "new-jersey-american-legion-jersey-boys-state",
+  "name": "American Legion Jersey Boys State",
+  "org": "American Legion Department of New Jersey",
+  "regions": [
+    "new-jersey"
+  ],
+  "city": "New Jersey (held at Rider University)",
+  "type": "civic-government",
+  "fields": [
+    "law-government"
+  ],
+  "what_you_do": "Spend a week in a mock state government. You hear speakers, join discussions, run for office and take part in a sports program.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "11th grade (junior) with at least one semester of high school left",
+  "who_can_apply": "High school juniors with at least one semester left. Posts pick students with school help, or you can apply on your own as self-sponsored.",
+  "paid_type": "fee-based",
+  "pay_detail": "Post-sponsored: parents pay a $50 non-refundable fee and the post pays the rest. Self-sponsored: $50 non-refundable application fee plus $325 tuition if accepted (food, housing and supplies included). Scholarships may be available.",
+  "season": "summer",
+  "duration": "One week; delegates arrive on Father's Day (the 80th session began June 21, 2026)",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "For the 2026 session (began June 21, 2026) the home page said applications were open through June 7. 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "If a post sponsors you, your school staff recommend you. The local American Legion post interviews you. If you sponsor yourself, make an account on the ALJBS CampSite portal. Fill out the questionnaire. Add a 300 to 500 word essay, or a video or a counselor reference. Pay the $50 fee.",
+  "needs_work_permit": false,
+  "url": "https://aljbs.org/how-to-apply/",
+  "apply_url": "https://apply.aljbs.org",
+  "sources_fetched": [
+    "https://aljbs.org/",
+    "https://aljbs.org/how-to-apply/",
+    "https://aljbs.org/contact/faqs"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "Boys only (Jersey Girls State is a separate program). Post-sponsored and self-sponsored costs are in pay_detail."
+}
