@@ -64,3 +64,31 @@ test("ready: a city we have not read says so instead of showing nothing", async 
   type(window, document.getElementById("rideSel"), "other");
   assert.match(document.getElementById("rideOut").textContent, /have not read your transit agency/);
 });
+
+test("ready: the opening paragraph is short and the California part sits in its own callout", async () => {
+  const { document } = await loadPage("ready.html");
+  const lede = document.querySelector(".lede");
+  const words = lede.textContent.trim().split(/\s+/).length;
+  assert.ok(words <= 45, "lede should be at most 45 words, found " + words);
+  const callout = [...document.querySelectorAll(".callout")].find((c) => /Which parts are for California/.test(c.textContent));
+  assert.ok(callout, "the California callout should exist");
+});
+
+test("ready: the On this page chips link to six sections that exist on the page", async () => {
+  const { document } = await loadPage("ready.html");
+  const nav = document.querySelector('nav.chips[aria-label="On this page"]');
+  assert.ok(nav, "the On this page chip row should exist");
+  const links = [...nav.querySelectorAll("a")];
+  assert.equal(links.length, 6);
+  for (const a of links) {
+    const href = a.getAttribute("href") || "";
+    assert.match(href, /^#/, href + " should be a fragment link");
+    assert.ok(document.getElementById(href.slice(1)), "no element with id " + href.slice(1));
+  }
+});
+
+test("ready: nothing was deleted when the opening paragraph was shortened", async () => {
+  const { document } = await loadPage("ready.html");
+  assert.ok(document.body.textContent.includes("certified copy of a birth certificate"));
+  assert.ok(document.body.textContent.includes("federal W-4"));
+});

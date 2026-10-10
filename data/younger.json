@@ -24,7 +24,7 @@
   "ny": "NY Division of Labor Standards 888-525-2267",
   "il": "Illinois DOL child labor 312-793-5570"
  },
- "federal": "Federal law sets 14 as the minimum age for most non-farm jobs. A 13 year old may still help a neighbor with yard work or babysit, because those jobs are not covered. States can be stricter, and the stricter rule applies.",
+ "federal": "Federal law sets 14 as the minimum age for most non-farm jobs. Under federal law alone, a 13 year old may still help a neighbor with yard work or babysit, because those jobs are not covered. States can be stricter, and the stricter rule applies. For example, New York says a babysitter must be at least 14.",
  "federalSource": {
   "t": "US Department of Labor eLaws: under 14",
   "u": "https://webapps.dol.gov/elaws/whd/flsa/cl/t13.asp"
@@ -175,12 +175,18 @@
    "job": "Volunteering",
    "cells": {
     "ca": {
-     "t": "Not stated on the pages we read.",
-     "s": null
+     "t": "No permit for true unpaid volunteering. Have a parent's permission on file with your school (5 CCR 10121).",
+     "s": {
+      "t": "5 CCR 10121",
+      "u": "https://law.cornell.edu/regulations/california/5-CCR-10121"
+     }
     },
     "ga": {
-     "t": "Not stated on the pages we read.",
-     "s": null
+     "t": "No permit for unpaid volunteering or unpaid community service.",
+     "s": {
+      "t": "Georgia DOL instructions",
+      "u": "https://dol.georgia.gov/child-labor-employment-certificate-instructions"
+     }
     },
     "ny": {
      "t": "A Queens library page says under 14 may not volunteer unless a parent or guardian directly supervises, citing state law. That is a library's description, not a labor department page.",

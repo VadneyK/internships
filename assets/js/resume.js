@@ -1,4 +1,4 @@
-/* Resume builder: builds a one-page preview in the browser. Nothing is stored or sent. */
+/* Resume builder: builds a one-page preview in the browser. The draft is kept on this device only, and only when the person ticks "Keep my draft on this device" (never email or phone). Nothing is sent. */
 (function () {
   "use strict";
   var G = window.TIG;
@@ -18,6 +18,26 @@
       '<div class="field"><label for="xd' + i + '">Dates</label><input id="xd' + i + '" data-k="d" data-i="' + i + '" type="text" autocomplete="off" value="' + G.esc(x.d) + '"></div></div>' +
       '<div class="field" style="margin-top:.5rem;"><label for="xb' + i + '">What you did, one line each</label><textarea id="xb' + i + '" data-k="b" data-i="' + i + '" rows="3">' + G.esc(x.b) + "</textarea></div></fieldset>";
   }).join("");
+
+  /* Fields saved on this device, only when the "Keep my draft on this device" box is ticked (off by default). Email (rEmail) and phone (rPhone) are left out on purpose. */
+  var KEEP = $("rKeep");
+  var SAVE_IDS = ["rName", "rCity", "rSchool", "rGrad", "rEduNote", "rAct", "rSkills", "rAwards"];
+  EXAMPLES.forEach(function (x, i) { SAVE_IDS.push("xt" + i, "xo" + i, "xd" + i, "xb" + i); });
+  function saveDraft() {
+    var o = {};
+    SAVE_IDS.forEach(function (id) { o[id] = $(id).value; });
+    G.store.set("resume", o);
+  }
+  function restoreDraft() {
+    var saved = G.store.get("resume", null);
+    if (!saved || typeof saved !== "object") return;
+    /* Email and phone are never saved, so a restored draft starts with both blank instead of the example values. */
+    $("rEmail").value = "";
+    $("rPhone").value = "";
+    SAVE_IDS.forEach(function (id) {
+      if (typeof saved[id] === "string") $(id).value = saved[id];
+    });
+  }
 
   function lines(s) { return (s || "").split(/\n+/).map(function (x) { return x.trim(); }).filter(Boolean); }
   function val(id) { return $(id).value.trim(); }
@@ -62,12 +82,20 @@
     if (r.awards.length) { t.push("AWARDS"); t.push(r.awards.join(", ")); }
     return t.join("\n");
   }
-  $("rf").addEventListener("input", render);
+  $("rf").addEventListener("input", function () { render(); if (KEEP.checked) saveDraft(); });
+  KEEP.addEventListener("change", function () {
+    if (KEEP.checked) saveDraft();
+    else { try { localStorage.removeItem("resume"); } catch (e) {} }
+  });
   $("rClear").addEventListener("click", function () {
     $("rf").querySelectorAll("input, textarea").forEach(function (i) { i.value = ""; });
+    try { localStorage.removeItem("resume"); } catch (e) {}
     render(); $("rName").focus();
   });
   $("rPrint").addEventListener("click", function () { G.printOnly($("rv"), (($("rName").value || "My").replace(/[^a-z0-9]+/gi, "") || "My") + "_Resume"); });
   $("rCopy").addEventListener("click", function () { G.copy(asText()); });
+  /* A fresh visitor sees the box off. A person who kept a draft gets the box ticked and the draft back. */
+  KEEP.checked = Object.keys(G.store.get("resume", {})).length > 0;
+  if (KEEP.checked) restoreDraft();
   render();
 })();

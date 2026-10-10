@@ -23,9 +23,16 @@
     saved.av = saved.av || {};
     document.querySelectorAll("#aRows select").forEach(function (s) { var v = saved.av[s.getAttribute("data-d") + s.getAttribute("data-k")]; if (v) s.value = v; });
     if (saved.av.age) $("aAge").value = saved.av.age; if (saved.av.state) $("aState").value = saved.av.state;
+    try {
+      var qs = new URLSearchParams(location.search), qSt = qs.get("state"), qAge = qs.get("age");
+      if (qSt && Object.prototype.hasOwnProperty.call(pm.states, qSt) && /^1[4-7]$/.test(qAge || "")) { $("aState").value = qSt; $("aAge").value = qAge; }
+    } catch (e) { /* the address bar is optional */ }
     function days() { return DAYS.map(function (n, i) { var f = document.querySelector('[data-d="' + i + '"][data-k="from"]').value, t = document.querySelector('[data-d="' + i + '"][data-k="to"]').value; return f !== "" && t !== "" ? { from: +f, to: +t } : null; }); }
     function clock(h) { return h === 12 ? "noon" : h < 12 ? h + " a.m." : h - 12 + " p.m."; }
-    var lastText = "";
+    var lastText = "", msg = "";
+    /* One short line for screen readers, set only after a change (never on load). */
+    function say() { if (msg && $("aStatus").textContent !== msg) $("aStatus").textContent = msg; }
+    function changed() { paintAv(); say(); }
     function paintAv() {
       var ds = days(), age = $("aAge").value, st = $("aState").value;
       DAYS.forEach(function (n, i) { saved.av[i + "from"] = document.querySelector('[data-d="' + i + '"][data-k="from"]').value; saved.av[i + "to"] = document.querySelector('[data-d="' + i + '"][data-k="to"]').value; });
@@ -40,9 +47,21 @@
       else if (r.problems.length) h += '<p><b>Heads up:</b></p><ul>' + r.problems.map(function (x) { return "<li>" + G.esc(x) + "</li>"; }).join("") + "</ul><p class=\"small muted\">Your plan is what you offer. Ask to be scheduled for less. Limits from the " + G.esc(pm.states[st].name) + " pages on the <a href=\"permit.html?state=" + G.esc(st) + "\">permit finder</a>.</p>";
       else h += "<p><b>Within the limits we found</b> for age " + G.esc(age) + " in " + G.esc(pm.states[st].name) + ". " + G.esc(pm.states[st].hours[+age >= 16 ? "16" : "14"] || "") + "</p>";
       $("aOut").innerHTML = h;
+      msg = !age || !st ? "Pick your age and state to check the hour limits." : $("aOut").querySelector("h3").textContent + (!r.limited ? "." : r.problems.length ? ". Over a limit, see the details." : ". Within the limits we found.");
     }
-    ["aAge", "aState", "aSchool"].forEach(function (id) { $(id).addEventListener("change", paintAv); });
-    $("aRows").addEventListener("change", paintAv);
+    ["aAge", "aState", "aSchool"].forEach(function (id) { $(id).addEventListener("change", changed); });
+    $("aRows").addEventListener("change", changed);
+    function sel(d, k) { return document.querySelector('[data-d="' + d + '"][data-k="' + k + '"]'); }
+    $("aMon").addEventListener("click", function () {
+      var f = sel(0, "from").value, t = sel(0, "to").value;
+      if (f === "" || t === "") { G.toast("Set Monday first"); return; }
+      for (var i = 1; i <= 4; i++) { sel(i, "from").value = f; sel(i, "to").value = t; }
+      changed();
+    });
+    $("aClear").addEventListener("click", function () {
+      document.querySelectorAll("#aRows select").forEach(function (s) { s.value = ""; });
+      changed();
+    });
     $("aCopy").addEventListener("click", function () { G.copy(lastText); });
     paintAv();
 

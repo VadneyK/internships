@@ -184,12 +184,16 @@
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
     });
   }
-  function safeUrl(u) { return /^https?:\/\//i.test(u || "") ? u : ""; }
+  function safeUrl(u) { return typeof u === "string" && /^https?:\/\/[^\s\x00-\x1f\x7f]+$/i.test(u) ? u : ""; }
   function parseISO(s) {
     if (!/^\d{4}-\d{2}-\d{2}$/.test(s || "")) return null;
-    var p = s.split("-"); return new Date(+p[0], +p[1] - 1, +p[2]);
+    var p = s.split("-"), y = +p[0], m = +p[1], day = +p[2];
+    var d = new Date(y, m - 1, day);
+    // Reject days that do not exist (for example 2027-02-30), because Date would roll them over to the next month.
+    if (d.getFullYear() !== y || d.getMonth() !== m - 1 || d.getDate() !== day) return null;
+    return d;
   }
-  function fmtDate(d) { return MONTHS[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear(); }
+  function fmtDate(d) { if (!(d instanceof Date) || isNaN(d.getTime())) return ""; return MONTHS[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear(); }
   function startOfDay(now) { var d = new Date(now || Date.now()); d.setHours(0, 0, 0, 0); return d; }
   function daysUntil(d, now) { return Math.round((d - startOfDay(now)) / 86400000); }
 
@@ -217,10 +221,13 @@
   /* States whose rules are in data/permits.json. Add a state here in the same change that adds it there (a test checks they match). */
   var PERMIT_STATES = ["ca", "ga", "ny", "il", "wa", "tx", "mn", "wi", "in", "oh", "mi", "nc", "md", "va", "nj", "pa", "ma", "bc"];
   function permitFor(data, st, age, kind) {
-    var s = data && data.states && data.states[st];
+    var has = Object.prototype.hasOwnProperty, s = data && data.states && has.call(data.states, st) ? data.states[st] : null;
     if (!s) return { verdict: "nostate", headline: "We have not read your state yet", text: "We have read 17 states and British Columbia. Ask your school office or your state labor department. The US Department of Labor lists them at dol.gov/agencies/whd/contact/state-labor-offices." };
-    var a = +age, k = s.kinds[kind];
+    var a = +age, k = s.kinds && has.call(s.kinds, kind) ? s.kinds[kind] : null;
     if (!k || !(a >= 0)) return null;
+    /* An optional per-age override: kinds.x.under = {below, permit, text} replaces the answer for ages under "below". */
+    var un = k.under;
+    if (un && a < un.below) k = un;
     var jobLikeEarly = kind === "job" || kind === "program" || kind === "family";
     var base = { state: st, stateName: s.name, permit: s.permit, kind: kind, age: a };
     var band = a >= 18 ? "" : a >= 16 ? "16" : a >= 14 ? "14" : a >= 12 ? "12" : "";
@@ -231,7 +238,7 @@
     if (jobLike && a < s.minAge.job) return Object.assign(base, { verdict: "young", headline: "Most paid jobs start at 14", text: s.minAge.note + " See what you can do before 14." });
     if (k.permit === true) {
       if (a >= s.needBelow) return Object.assign(base, { verdict: "none", headline: "You do not need a permit at " + a, text: s.adult });
-      return Object.assign(base, { verdict: "need", headline: "You need a " + s.permit, text: k.text });
+      return Object.assign(base, { verdict: "need", headline: "You need " + (/^[aeiou]/i.test(s.permit) ? "an " : "a ") + s.permit, text: k.text });
     }
     if (k.permit === false) return Object.assign(base, { verdict: "none", headline: "You do not need a permit for this", text: k.text });
     return Object.assign(base, { verdict: "ask", headline: "Check before you start", text: k.text });
@@ -244,7 +251,7 @@
   */
   var DAY_NAMES = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
   function hoursCheck(limits, age, inSchool, days) {
-    var a = +age, band = a >= 16 ? "16" : a >= 14 ? "14" : "";
+    var a = +age, band = a >= 18 ? "" : a >= 16 ? "16" : a >= 14 ? "14" : "";
     var total = 0, per = days.map(function (d) { return d && d.from != null && d.to != null && d.to > d.from ? d.to - d.from : 0; });
     per.forEach(function (h) { total += h; });
     var out = { total: total, perDay: per, problems: [], limited: false };
@@ -255,13 +262,13 @@
       if (!per[i]) return;
       var schoolDay = inSchool && (lim.weekdayOnly ? i <= 3 : i <= 4);
       var max = schoolDay ? lim.schoolDay : lim.nonSchoolDay;
-      if (per[i] > max) out.problems.push(DAY_NAMES[i] + ": " + per[i] + " hours is more than the " + max + " hour limit on " + (schoolDay ? "a school day" : "a day off from school") + " at " + a + ".");
-      var latest = !inSchool && lim.latestSummer ? lim.latestSummer : lim.latest;
-      if (d.from < lim.earliest) out.problems.push(DAY_NAMES[i] + ": starting before " + lim.earliest + " a.m. is not allowed at " + a + ".");
-      if (d.to > latest) out.problems.push(DAY_NAMES[i] + ": working past " + (latest > 12 ? latest - 12 + " p.m." : latest + " a.m.") + " is not allowed at " + a + ".");
+      if (max != null && per[i] > max) out.problems.push(DAY_NAMES[i] + ": " + per[i] + " hours is more than the " + max + " hour limit on " + (schoolDay ? "a school day" : "a day off from school") + " at " + a + ".");
+      var latest = !inSchool && lim.latestSummer != null ? lim.latestSummer : lim.latest;
+      if (lim.earliest != null && d.from < lim.earliest) out.problems.push(DAY_NAMES[i] + ": starting before " + lim.earliest + " a.m. is not allowed at " + a + ".");
+      if (latest != null && d.to > latest) out.problems.push(DAY_NAMES[i] + ": working past " + (latest > 12 ? latest - 12 + " p.m." : latest + " a.m.") + " is not allowed at " + a + ".");
     });
     var cap = inSchool ? lim.schoolWeek : lim.offWeek;
-    if (total > cap) out.problems.push("The week adds up to " + total + " hours, more than the " + cap + " hour limit " + (inSchool ? "while school is in session" : "when school is out") + " at " + a + ".");
+    if (cap != null && total > cap) out.problems.push("The week adds up to " + total + " hours, more than the " + cap + " hour limit " + (inSchool ? "while school is in session" : "when school is out") + " at " + a + ".");
     return out;
   }
 
@@ -309,6 +316,19 @@
     if (!d || d < startOfDay(now)) return null;
     var st = effStatus(e, now);
     return st === "open-now" || st === "opens-soon" || st === "rolling" || st === "event" ? d : null;
+  }
+  /*
+    For the Find dates view and the calendar button only. Same as futureDeadline, plus a confirmed
+    2026-27 date on a closed or unconfirmed card. It never feeds rank(), the 60 day filter or the status tags.
+  */
+  function knownDeadline(e, now) {
+    var d = futureDeadline(e, now);
+    if (d) return d;
+    var st = effStatus(e, now);
+    if (st !== "closed-expect-reopen" && st !== "unconfirmed") return null;
+    if (e.deadline_confidence !== "confirmed-2026-27") return null;
+    var k = parseISO(e.deadline_iso);
+    return k && k >= startOfDay(now) ? k : null;
   }
   function isOpenish(e, now) { var s = effStatus(e, now); return s === "open-now" || s === "opens-soon"; }
   function isAnytime(e, now) { var s = effStatus(e, now); return s === "rolling" || s === "year-round" || s === "event"; }
@@ -413,6 +433,7 @@
   function icsEscape(t) { return String(t || "").replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\r?\n/g, "\\n"); }
   /* One all-day calendar event as .ics text. dateISO is YYYY-MM-DD. */
   function icsEvent(o) {
+    if (!o || !parseISO(o.dateISO)) return "";
     var day = o.dateISO.replace(/-/g, ""), end = addDays(o.dateISO, 1).replace(/-/g, "");
     var stamp = (o.stamp || new Date()).toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
     return ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Teen Internship Guide//EN", "CALSCALE:GREGORIAN", "BEGIN:VEVENT",
@@ -476,12 +497,28 @@
     return out;
   }
 
+  /* The words that follow "I'm" in a message to an adult, from the grade a teen typed.
+     "10th", "10th grade", "10" and "10 grade" give "in 10th grade"; "sophomore" gives "a sophomore".
+     "Grade 6" and "6" give "in 6th grade". Anything else is kept as typed, with " grade" added unless it already contains the word grade. */
+  function gradePhrase(raw) {
+    var t = String(raw == null ? "" : raw).trim();
+    if (!t) return "in [grade]";
+    var cls = /^(freshman|sophomore|junior|senior)(\s+grade)?$/i.exec(t);
+    if (cls) return "a " + cls[1].toLowerCase();
+    var num = /^(\d{1,2})(?:st|nd|rd|th)?(?:\s+grade)?$/i.exec(t.replace(/^grade\s+/i, ""));
+    var n = num ? +num[1] : 0;
+    if (n >= 1 && n <= 12) return "in " + n + (["th", "st", "nd", "rd"][n] || "th") + " grade";
+    if (/\bgrade\b/i.test(t)) return "in " + t;
+    return "in " + t + " grade";
+  }
+
   return {
     REGIONS: REGIONS, HUBS: HUBS, TYPES: TYPES, FIELDS: FIELDS, PAID: PAID, PAID_GROUPS: PAID_GROUPS, MONTHS: MONTHS, MONTH_NAMES: MONTH_NAMES,
-    esc: esc, safeUrl: safeUrl, parseISO: parseISO, fmtDate: fmtDate, daysUntil: daysUntil, hubsOf: hubsOf,
-    effStatus: effStatus, futureDeadline: futureDeadline, isOpenish: isOpenish, isAnytime: isAnytime, ageOk: ageOk,
+    esc: esc, regionLabel: regionLabel, safeUrl: safeUrl, parseISO: parseISO, fmtDate: fmtDate, daysUntil: daysUntil, hubsOf: hubsOf,
+    effStatus: effStatus, futureDeadline: futureDeadline, knownDeadline: knownDeadline, isOpenish: isOpenish, isAnytime: isAnytime, ageOk: ageOk,
     matches: matches, rank: rank, compare: compare, sortList: sortList, ageText: ageText,
     STATUSES: STATUSES, toISO: toISO, addDays: addDays, followUpISO: followUpISO, planSummary: planSummary,
-    icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf, STATE_OF: STATE_OF, permitFor: permitFor, hoursCheck: hoursCheck, paycheck: paycheck, PERMIT_STATES: PERMIT_STATES, CITIES: CITIES, AREAS: AREAS, placeRegions: placeRegions, placeLabel: placeLabel, hubsOfPlace: hubsOfPlace
+    icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf, STATE_OF: STATE_OF, permitFor: permitFor, hoursCheck: hoursCheck, paycheck: paycheck, PERMIT_STATES: PERMIT_STATES, CITIES: CITIES, AREAS: AREAS, placeRegions: placeRegions, placeLabel: placeLabel, hubsOfPlace: hubsOfPlace,
+    gradePhrase: gradePhrase
   };
 });

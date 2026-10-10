@@ -11,6 +11,13 @@
 
   /* people map and tracker. Each person: n name, w what they do, h how I know them, s status, d date sent (YYYY-MM-DD) */
   var rows = G.store.get("people", []);
+  /* a damaged save must not break the page: every row is an object, every field a string, and a date only stays if it is a real date */
+  rows = rows.map(function (r) {
+    r = r !== null && typeof r === "object" && !Array.isArray(r) ? r : {};
+    ["n", "w", "h", "s", "d"].forEach(function (k) { r[k] = typeof r[k] === "string" ? r[k] : ""; });
+    if (r.d && !L.parseISO(r.d)) r.d = "";
+    return r;
+  });
   while (rows.length < 5) rows.push({});
   var MAX = 8;
   var box = $("people");
@@ -35,7 +42,7 @@
       var fd = L.parseISO(f), due = f <= today();
       html += "<p>Sent " + G.esc(L.fmtDate(L.parseISO(r.d))) + ". " + (due ? '<span class="due">Time to follow up.</span> ' : "Follow up on <b>" + G.esc(L.fmtDate(fd)) + "</b>. ") +
         '<button class="chip" type="button" data-ics="' + i + '">Add to my calendar</button></p>';
-    } else if (r.s === "replied") html += "<p>Say thank you within a day, then ask for the 15 minutes.</p>";
+    } else if (r.s === "replied") html += "<p>Say thank you within 1 to 2 days, then ask for the 15 minutes.</p>";
     else if (r.s === "meeting") html += "<p>Prepare two questions. See step 4 below.</p>";
     else if (r.s === "thanked") html += "<p>Nice. Check in again in a few months with one line about what you did.</p>";
     return html;
@@ -177,7 +184,7 @@
   function build() {
     var to = $("fTo").value.trim() || "[their name]";
     var meName = $("fMe").value.trim() || "[your name]";
-    var grade = $("fGrade").value.trim() || "[grade]";
+    var phrase = L.gradePhrase($("fGrade").value);
     var school = $("fSchool").value.trim() || "[school]";
     var how = $("fHow").value.trim() || "[how you know them]";
     var cur = $("fCurious").value.trim() || "[what you are curious about]";
@@ -186,9 +193,9 @@
     var s = how; if (!/[.!?]$/.test(s)) s += ".";
     var msg;
     if (fmt === "text") {
-      msg = "Hi " + to + ", this is " + meName + ". I'm in " + grade + " grade at " + school + ". " + s + " I'm curious about " + cur + ". " + ASK[ask][1] + (when ? " " + when : "") + "? Totally fine if you're busy. Thanks!";
+      msg = "Hi " + to + ", this is " + meName + ". I'm " + phrase + " at " + school + ". " + s + " I'm curious about " + cur + ". " + ASK[ask][1] + (when ? " " + when : "") + "? Totally fine if you're busy. Thanks!";
     } else {
-      msg = "Subject: Quick question from a student at " + school + "\n\nHi " + to + ",\n\nMy name is " + meName + " and I'm in " + grade + " grade at " + school + ". " + s + "\n\nI'm curious about " + cur + ". " + ASK[ask][0] + (when ? " " + when : "") + "?\n\nTotally fine if you're busy. Thank you for reading this!\n\n" + meName;
+      msg = "Subject: Quick question from a student at " + school + "\n\nHi " + to + ",\n\nMy name is " + meName + " and I'm " + phrase + " at " + school + ". " + s + "\n\nI'm curious about " + cur + ". " + ASK[ask][0] + (when ? " " + when : "") + "?\n\nTotally fine if you're busy. Thank you for reading this!\n\n" + meName;
     }
     $("letter").textContent = msg;
     me = { n: $("fMe").value, g: $("fGrade").value, s: $("fSchool").value }; G.store.set("me", me);
@@ -211,7 +218,17 @@
     ];
     $("checks").innerHTML = checks.map(function (c) { return '<li class="' + (c[0] ? "ok" : "") + '"><span class="box" aria-hidden="true">' + (c[0] ? "&#10003;" : "") + "</span><span>" + c[1] + (c[0] ? '<span class="sr"> (done)</span>' : '<span class="sr"> (not yet)</span>') + "</span></li>"; }).join("");
   }
-  ["fTo", "fMe", "fGrade", "fSchool", "fHow", "fCurious", "fWhen", "fAsk", "fFormat"].forEach(function (id) { $(id).addEventListener("input", build); $(id).addEventListener("change", build); });
+  /* Screen readers hear one short, debounced note instead of the whole letter after each keystroke. */
+  var statusTimer;
+  function onEdit() {
+    build();
+    clearTimeout(statusTimer);
+    statusTimer = setTimeout(function () {
+      var n = parseInt($("wc").textContent, 10) || 0;
+      $("letterStatus").textContent = "Message updated. " + n + (n === 1 ? " word." : " words.");
+    }, 800);
+  }
+  ["fTo", "fMe", "fGrade", "fSchool", "fHow", "fCurious", "fWhen", "fAsk", "fFormat"].forEach(function (id) { $(id).addEventListener("input", onEdit); $(id).addEventListener("change", onEdit); });
   /* sendable: hand the message to the phone's own email or Messages app. This page never sends anything. */
   function updateSendUi() {
     var msg = $("letter").textContent, isText = $("fFormat").value === "text";

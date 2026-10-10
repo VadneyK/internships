@@ -1,22 +1,27 @@
-title: How to Find Internships: a Teen Guide for California, Atlanta, New York and Chicago
-desc: A free guide for high schoolers in California, Atlanta, New York and Chicago. Real programs with real deadlines, the work-permit rules, and a message that gets a yes.
+title: How to Find Internships: a Teen Guide for the US and Vancouver
+desc: A free guide for high schoolers in the US and Vancouver, BC. It started in California, Atlanta, New York and Chicago. Real programs, with the deadlines we could confirm, the work-permit rules, and a message that gets a yes.
 scripts: home
 ---
 <section class="hero" style="padding-top:2.2rem;">
   <img class="splat s1" src="assets/img/splat-yellow.svg" alt="" width="800" height="800">
   <img class="splat s2" src="assets/img/splat-orange.svg" alt="" width="800" height="800">
   <div class="wrap inner">
-    <span class="tag y eyebrow">Grades 7 to 12 &middot; California &middot; Atlanta &middot; New York &middot; Chicago</span>
+    <span class="tag y eyebrow">Grades 7 to 12 &middot; Many states &middot; Vancouver, BC</span>
     <h1><span class="a">How to find</span><span class="b stroke">Internships</span></h1>
     <img class="swoosh" src="assets/img/swoosh.svg" alt="" width="600" height="60">
-    <p class="lede" style="margin-top:1rem;">A free guide for teens in California, Atlanta, New York and Chicago. Real programs with real deadlines, plus the one move that beats every job site: asking a person.</p>
+    <p class="lede" style="margin-top:1rem;">A free guide for teens. It started in California, Atlanta, New York and Chicago, and now lists programs in more states, such as Texas, Ohio and Pennsylvania, plus Vancouver, BC. Real programs, with the deadlines we could confirm, and the one move that beats every job site: asking a person.</p>
     <div class="cta">
       <a class="btn" href="find.html">Find a program</a>
       <a class="btn alt" href="playbook.html">Write your message</a>
     </div>
+    <nav class="chips" aria-label="Jump to" style="margin-top:1rem;">
+      <a class="chip" style="text-decoration:none;" href="#start">What fits me</a>
+      <a class="chip" style="text-decoration:none;" href="#soon">Closing soon</a>
+      <a class="chip" style="text-decoration:none;" href="#offer">Work permit</a>
+    </nav>
     <div class="stats" aria-label="At a glance">
       <div class="stat"><b>{{count}}</b><span>programs checked</span></div>
-      <div class="stat"><b>5</b><span>areas: California, Atlanta, New York, Chicago</span></div>
+      <div class="stat"><b>Many</b><span>areas: start with California, Atlanta, New York and Chicago</span></div>
       <div class="stat"><b>$0</b><span>no sign-up, no tracking</span></div>
     </div>
   </div>
@@ -101,7 +106,8 @@ scripts: home
           <select id="pField"><option value="">Anything</option></select></div>
       </div>
     </form>
-    <div id="matches" class="results" style="margin-top:1.2rem;" aria-live="polite"></div>
+    <p id="matchStatus" class="sr" role="status"></p>
+    <div id="matches" class="results" style="margin-top:1.2rem;"></div>
     <p id="matchMore" style="margin-top:1rem;" hidden></p>
   </div>
 </section>
@@ -121,7 +127,7 @@ scripts: home
       <div class="callout">
         <h3>Under 16?</h3>
         <p>You do not need a fancy internship. Shadowing a grown-up for an afternoon, volunteering at a library or hospital, and starting a small project all count, and many are open at 13 or 14.</p>
-        <p><a class="btn sm dark" href="find.html?age=14">Programs open at 14</a></p>
+        <p><a class="btn sm dark" href="find.html?age=14">Programs open at 14</a> <a class="btn sm dark" href="younger.html">Ages 12 to 14: start here</a></p>
       </div>
       <div class="callout plain">
         <h3>Parents and youth leaders</h3>

@@ -3,6 +3,9 @@
 
   data/entries.json  all programs, one array
   data/entries.csv   same, as a spreadsheet
+  data/entries-lite.json  same ids and order, without the long text fields (small file for pages that show a few fields)
+  data/entries-core.json  same ids and order, only the keys lib.js needs to match by age (tiny file for the Ages 12 to 14 page)
+  data/entries-card.json  same ids and order, only the keys the Calendar and Numbers pages read (no long text)
   data/meta.json     counts and the "last checked" date shown in the footer
 
 Run:  python3 tools/build_data.py        (then python3 tools/build.py for the pages)
@@ -15,6 +18,12 @@ import sys
 import proglib
 
 OUT_DIR = os.path.join(proglib.ROOT, "data")
+LITE_DROP = ("notes", "sources_fetched", "how_to_apply", "who_can_apply")
+CORE_KEYS = ("id", "min_age", "max_age", "status", "deadline_iso", "opens_iso", "regions", "season")
+CARD_KEYS = (
+    "id", "name", "org", "city", "url", "paid_type", "type", "fields", "grades", "needs_work_permit", "verified", "priority",
+    "deadline_confidence", "min_age", "max_age", "status", "deadline_iso", "opens_iso", "regions", "season",
+)
 CSV_COLUMNS = [
     "id", "name", "org", "city", "regions", "type", "fields", "min_age", "max_age", "grades", "paid_type", "pay_detail",
     "season", "duration", "status", "deadline_text", "deadline_iso", "deadline_confidence", "needs_work_permit",
@@ -36,6 +45,18 @@ def main():
     }
     with open(os.path.join(OUT_DIR, "entries.json"), "w", encoding="utf-8") as f:
         json.dump(programs, f, ensure_ascii=False, indent=1)
+        f.write("\n")
+    lite = [{k: v for k, v in d.items() if k not in LITE_DROP} for d in programs]
+    with open(os.path.join(OUT_DIR, "entries-lite.json"), "w", encoding="utf-8") as f:
+        json.dump(lite, f, ensure_ascii=False, separators=(",", ":"))
+        f.write("\n")
+    core = [{k: d[k] for k in CORE_KEYS if k in d} for d in programs]
+    with open(os.path.join(OUT_DIR, "entries-core.json"), "w", encoding="utf-8") as f:
+        json.dump(core, f, ensure_ascii=False, separators=(",", ":"))
+        f.write("\n")
+    card = [{k: d[k] for k in CARD_KEYS if k in d} for d in programs]
+    with open(os.path.join(OUT_DIR, "entries-card.json"), "w", encoding="utf-8") as f:
+        json.dump(card, f, ensure_ascii=False, separators=(",", ":"))
         f.write("\n")
     with open(os.path.join(OUT_DIR, "meta.json"), "w", encoding="utf-8") as f:
         json.dump(meta, f, indent=1)

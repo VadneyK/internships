@@ -33,5 +33,5 @@
   "verified": "snippet-only",
   "verified_on": "2026-10-07",
   "priority": 3,
-  "notes": "The CHP site blocked WebFetch (403) and a browser tab loaded blank, so ages come from search results and are unconfirmed. CHP has other posts. Confirm age limits and meeting times with the post. See also California Highway Patrol Explorer Program for the statewide competition. Ages differ by source: the CHP lists 15 to 20 for Explorers, while the post page snippet says 15 to 21."
+  "notes": "The CHP site blocked WebFetch (403) and a browser tab loaded blank, so ages come from search results and are unconfirmed. CHP has other posts. Confirm age limits and meeting times with the post. See also California Highway Patrol Explorer Program for the statewide competition. Ages differ by source: the CHP lists 15 to 20 for Explorers, while the post page snippet says 15 to 21. Re-checked on 2026-10-09: the CHP post page returned HTTP 403 again, so it could not be read and the card stays snippet-only."
 }

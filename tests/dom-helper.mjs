@@ -26,8 +26,10 @@ function server() {
   return serverPromise;
 }
 
-/* storage values are JSON-encoded; rawStorage values are stored as given (for example theme: "dark") */
-export async function loadPage(file, { search = "", storage = {}, rawStorage = {} } = {}) {
+/* storage values are JSON-encoded; rawStorage values are stored as given (for example theme: "dark")
+   setup(window): optional, runs first in beforeParse, before any page script (for example to make localStorage throw)
+   now: optional millisecond timestamp; new Date() and Date.now() start there and keep ticking, while new Date(args), Date.UTC and Date.parse are unchanged */
+export async function loadPage(file, { search = "", storage = {}, rawStorage = {}, setup, now } = {}) {
   const port = await server();
   const errors = [];
   const vc = new VirtualConsole();
@@ -39,6 +41,17 @@ export async function loadPage(file, { search = "", storage = {}, rawStorage = {
     pretendToBeVisual: true,
     virtualConsole: vc,
     beforeParse(w) {
+      if (typeof setup === "function") setup(w);
+      if (typeof now === "number") {
+        const RealDate = w.Date;
+        const t0 = RealDate.now();
+        const clock = () => now + (RealDate.now() - t0);
+        class FakeDate extends RealDate {
+          constructor(...a) { if (a.length === 0) super(clock()); else super(...a); }
+          static now() { return clock(); }
+        }
+        w.Date = FakeDate;
+      }
       for (const [k, v] of Object.entries(storage)) w.localStorage.setItem(k, JSON.stringify(v));
       for (const [k, v] of Object.entries(rawStorage)) w.localStorage.setItem(k, v);
       w.fetch = (u, o) => fetch(new URL(String(u), w.location.href), o); // jsdom has no fetch; use Node's, against the local server

@@ -20,20 +20,20 @@
   "pay_detail": null,
   "season": "year-round",
   "duration": null,
-  "status": "rolling",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "Not posted",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "The home page links to a volunteer page on ebayc.org. Contact EBAYC directly.",
+  "how_to_apply": "The home page has a Sign Up button for volunteers, but the volunteer page it links to showed a 404 error on 2026-10-09. Contact EBAYC directly (offices in Oakland and Sacramento are listed on the home page).",
   "needs_work_permit": false,
   "url": "https://www.ebayc.org",
   "apply_url": null,
   "sources_fetched": [
     "https://www.ebayc.org"
   ],
-  "verified": "snippet-only",
-  "verified_on": "2026-10-07",
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
   "priority": 3,
-  "notes": "The home page says it welcomes volunteers, volunteer groups and student internships but gives no ages, dates or pay. The volunteer page linked from it did not load (404) on Oct 7, 2026. Confirm the minimum age with EBAYC."
+  "notes": "Read the home page on 2026-10-09. It says EBAYC has many volunteer opportunities and welcomes volunteer groups and student internships, but it gives no ages, dates or pay. The volunteer page linked from it (ebayc.org/volunteer/) returned a 404 error on Oct 7 and again on Oct 9, 2026. Confirm the minimum age with EBAYC."
 }

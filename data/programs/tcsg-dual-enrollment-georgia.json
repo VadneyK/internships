@@ -29,11 +29,15 @@
   "how_to_apply": "Get approval from your high school and parent or guardian, apply to the college, and apply for dual enrollment funding at GAfutures.org. Atlanta Tech asks for PSAT, SAT, ACT or Accuplacer scores (a 2.6 HOPE GPA can be used for 11th and 12th graders).",
   "needs_work_permit": false,
   "url": "https://www.tcsg.edu/dualenrollment/for-students-parents/",
-  "apply_url": null,
+  "apply_url": "https://www.gafutures.org/hope-state-aid-programs/scholarships-grants/dual-enrollment/application-procedure/",
   "sources_fetched": [
     "https://www.tcsg.edu/dualenrollment/for-students-parents/",
-    "https://www.atlantatech.edu/dual-enrollment/"
+    "https://www.atlantatech.edu/dual-enrollment/",
+    "https://www.gafutures.org/",
+    "https://www.gafutures.org/hope-state-aid-programs/scholarships-grants/dual-enrollment/",
+    "https://www.gafutures.org/hope-state-aid-programs/scholarships-grants/dual-enrollment/application-procedure/",
+    "https://secure.gafutures.org/"
   ],
   "priority": 1,
-  "notes": "Atlanta Tech funding rules on its page: 15 funded hours per semester, a 30 hour total, and funding ends after two course withdrawals. Atlanta Tech high school contact: hsadmissions@atlantatech.edu or 404-225-4511. This is a course program, not a job, so no work permit applies."
+  "notes": "Atlanta Tech funding rules on its page: 15 funded hours per semester, a 30 hour total, and funding ends after two course withdrawals. Atlanta Tech high school contact: hsadmissions@atlantatech.edu or 404-225-4511. This is a course program, not a job, so no work permit applies. The TCSG page sends students to GAfutures.org. The GAfutures Dual Enrollment Application Procedure page says students must apply to the college first, then complete the online Dual Enrollment Funding application; its Apply Now button opens secure.gafutures.org, which shows a GAfutures sign-in page first."
 }

@@ -38,6 +38,8 @@ def build(name):
         '<script src="assets/js/%s.js?v=%s"></script>\n' % (s.strip(), ver)
         for s in fields.get("scripts", "").split(",") if s.strip()
     )
+    # lib.js (filter, date and permit logic) only loads on pages that have a script of their own
+    libscript = '<script src="assets/js/lib.js?v=%s"></script>\n' % ver if scripts else ""
     page = name
     out = layout
     rep = {
@@ -49,6 +51,7 @@ def build(name):
         "page": page,
         "content": body,
         "scripts": scripts,
+        "libscript": libscript,
         "count": str(meta.get("count", 0)),
         "checked": meta.get("checked_label", ""),
         "issues": ISSUES,

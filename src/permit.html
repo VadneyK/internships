@@ -1,11 +1,11 @@
 title: Do I Need a Work Permit? Pick Your Job and Get the Exact Steps
-desc: Pick your state, age and kind of work (18 states and British Columbia) and see whether you need a work permit, which one, who issues it, what to bring, and a printable checklist and message to your school. California, Georgia, New York and Illinois, from official pages.
+desc: Pick your state, age and kind of work (17 states and British Columbia) and see whether you need a work permit, which one, who issues it, what to bring, and a printable checklist and message to your school. California, Georgia, New York and Illinois, from official pages.
 scripts: permit
 navparent: ready
 ---
 <section style="padding-block:2rem 1rem;">
   <div class="wrap">
-    <p class="small muted" style="margin:0 0 .6rem;"><a href="ready.html">Get ready</a> &rsaquo; Work permit finder</p>
+    <nav class="breadcrumb small muted" aria-label="Breadcrumb"><ol><li><a href="ready.html">Get ready</a></li><li aria-current="page">Work permit finder</li></ol></nav>
     <span class="tag y eyebrow">Papers for your job</span>
     <h1 style="font-size:clamp(2.2rem,7vw,4rem);">Do I need a <span class="orange">permit</span>?</h1>
     <p class="lede">Pick your state, your age and the kind of work. You get a plain answer, the exact permit if you need one, who gives it to you, what to bring, and a checklist you can print or a message you can send to your school. Last read from official pages on Oct 9, 2026.</p>
@@ -26,13 +26,14 @@ navparent: ready
       <div class="field"><label for="pKind">What kind of work?</label>
         <select id="pKind"><option value="">Choose one</option></select></div>
     </div>
-    <p class="small muted">Not listed? We have read 17 states and British Columbia so far. For another state, ask your school office or your state labor department.</p>
+    <p class="small muted">Not listed? We have read 17 states and British Columbia so far. Pick &ldquo;My state is not listed&rdquo; at the end of the state list to see who to ask.</p>
   </div>
 </section>
 
 <section id="answer">
   <div class="wrap">
-    <div id="pOut" aria-live="polite"><p class="muted">Pick all three to see your answer.</p></div>
+    <p class="sr" id="pStatus" role="status"></p>
+    <div id="pOut"><p class="muted">Pick all three to see your answer.</p></div>
   </div>
 </section>
 

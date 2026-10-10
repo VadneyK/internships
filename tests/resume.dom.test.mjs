@@ -230,3 +230,71 @@ test("resume: a very long name and 40 bullets do not throw and render in full", 
 
   assert.deepEqual(errors, []);
 });
+
+test("resume: the keep box is off by default and nothing is saved until it is ticked", async () => {
+  const a = await loadPage("resume.html");
+  assert.equal(a.document.getElementById("rKeep").checked, false);
+  type(a.window, a.document.getElementById("rName"), "Jordan Lee");
+  assert.equal(a.window.localStorage.getItem("resume"), null);
+  const b = await loadPage("resume.html");
+  assert.equal(preview(b.document).querySelector("h2").textContent, "Alex Rivera");
+  assert.deepEqual(b.errors, []);
+});
+
+test("resume: ticking the box saves the draft, unticking removes it, and email or phone never land in storage", async () => {
+  const a = await loadPage("resume.html");
+  a.document.getElementById("rKeep").click();
+  type(a.window, a.document.getElementById("rName"), "Jordan Lee");
+  type(a.window, a.document.getElementById("rEmail"), "secret.person@example.org");
+  type(a.window, a.document.getElementById("rPhone"), "(510) 555-0111");
+  type(a.window, a.document.getElementById("xt2"), "Dog walker");
+  const raw = a.window.localStorage.getItem("resume");
+  assert.ok(raw, "draft should be stored");
+  assert.ok(!raw.includes("secret.person@example.org"));
+  assert.ok(!raw.includes("555-0111"));
+  assert.ok(!Object.keys(JSON.parse(raw)).some((k) => /email|phone|rEmail|rPhone/i.test(k)));
+  a.document.getElementById("rKeep").click();
+  assert.equal(a.window.localStorage.getItem("resume"), null, "unticking removes the saved draft");
+  type(a.window, a.document.getElementById("rName"), "Not saved");
+  assert.equal(a.window.localStorage.getItem("resume"), null);
+  assert.deepEqual(a.errors, []);
+});
+
+test("resume: a saved draft ticks the box on load, restores the draft, and leaves email and phone blank", async () => {
+  const raw = JSON.stringify({ rName: "Jordan Lee", rSchool: "Berkeley High School", xt2: "Dog walker" });
+  const b = await loadPage("resume.html", { rawStorage: { resume: raw } });
+  assert.equal(b.document.getElementById("rKeep").checked, true);
+  assert.equal(b.document.getElementById("rName").value, "Jordan Lee");
+  assert.equal(b.document.getElementById("xt2").value, "Dog walker");
+  assert.equal(b.document.getElementById("rEmail").value, "");
+  assert.equal(preview(b.document).querySelector("h2").textContent, "Jordan Lee");
+  assert.equal(b.window.localStorage.getItem("resume"), raw, "stored draft is left alone on load");
+  assert.deepEqual(b.errors, []);
+});
+
+test("resume: damaged saved values leave the box off and show the example", async () => {
+  for (const bad of ["5", "[1]", "null", "\"text\""]) {
+    const c = await loadPage("resume.html", { rawStorage: { resume: bad } });
+    assert.equal(c.document.getElementById("rKeep").checked, false, "box off for " + bad);
+    assert.equal(preview(c.document).querySelector("h2").textContent, "Alex Rivera", "example shown for " + bad);
+    assert.deepEqual(c.errors, []);
+  }
+});
+
+test("resume: Clear the example removes the saved draft", async () => {
+  const a = await loadPage("resume.html", { rawStorage: { resume: JSON.stringify({ rName: "Sam Kim" }) } });
+  assert.equal(a.document.getElementById("rKeep").checked, true);
+  assert.equal(a.document.getElementById("rName").value, "Sam Kim");
+  a.document.getElementById("rClear").click();
+  const left = a.window.localStorage.getItem("resume");
+  assert.ok(left === null || left === "" || left === "{}");
+  const b = await loadPage("resume.html");
+  assert.equal(preview(b.document).querySelector("h2").textContent, "Alex Rivera");
+});
+
+test("resume: with empty storage the example still loads", async () => {
+  const { document, window } = await loadPage("resume.html");
+  assert.equal(window.localStorage.getItem("resume"), null);
+  assert.equal(document.getElementById("rName").value, "Alex Rivera");
+  assert.equal(preview(document).querySelector("h2").textContent, "Alex Rivera");
+});

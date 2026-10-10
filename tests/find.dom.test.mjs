@@ -374,8 +374,8 @@ test("find: By deadline view renders without errors and lists the dated programs
   assert.equal(pressed(document.getElementById("viewDates")), true);
 
   const now = Date.now();
-  const withDeadline = DATA.filter((e) => L.futureDeadline(e, now)).length;
-  const openOther = DATA.filter((e) => !L.futureDeadline(e, now) && (L.isAnytime(e, now) || L.isOpenish(e, now))).length;
+  const withDeadline = DATA.filter((e) => L.knownDeadline(e, now)).length;
+  const openOther = DATA.filter((e) => !L.knownDeadline(e, now) && (L.isAnytime(e, now) || L.isOpenish(e, now))).length;
   assert.equal(document.querySelectorAll("#dates li").length, withDeadline + Math.min(80, openOther));
   assert.deepEqual(errors, []);
 
@@ -488,4 +488,117 @@ test("find: a deep link to a program past the first page renders it and opens it
   const { document } = await loadFind({ search: "#p-" + late });
   await tick(100);
   assert.ok(document.getElementById("p-" + late), "the card should be on the page");
+});
+
+// Teen flow: the tag key is folded away, the related links sit under the toolbar, and the filters come
+// before any long paragraph on the page.
+test("find: How to read the tags is a closed details with the full explanation", async () => {
+  const { document, errors } = await loadFind();
+  const box = document.querySelector("details#howToRead");
+  assert.ok(box, "a details element for the tag key should exist");
+  assert.equal(box.hasAttribute("open"), false, "the tag key should start closed");
+  assert.equal(box.querySelector("summary").textContent.trim(), "How to read the tags");
+  const text = box.textContent;
+  for (const phrase of ["How to read this list.", "Read on official site", "Confirm first", "usually reopen"]) {
+    assert.ok(text.includes(phrase), "tag key is missing: " + phrase);
+  }
+  assert.deepEqual(errors, []);
+});
+
+test("find: links to the calendar, the work permit finder and the ages 12 to 14 page sit under the toolbar", async () => {
+  const { document } = await loadFind();
+  const row = document.getElementById("relatedLinks");
+  assert.ok(row, "a related links row should exist");
+  const links = [...row.querySelectorAll("a")].map((a) => [a.getAttribute("href"), a.textContent.trim()]);
+  assert.deepEqual(links, [
+    ["calendar.html", "What opens when"],
+    ["permit.html", "Do I need a work permit?"],
+    ["younger.html", "Ages 12 to 14"],
+  ]);
+  for (const href of ["calendar.html", "permit.html", "younger.html"]) {
+    assert.ok(document.querySelector("main a[href='" + href + "']"), "find.html should link to " + href);
+  }
+});
+
+test("find: the filters come before every paragraph longer than 30 words in the first section", async () => {
+  const { window, document } = await loadFind();
+  const first = document.querySelector("main section");
+  assert.ok(first && first.querySelector("h1"), "the first section should be the page heading");
+  const filters = document.getElementById("filters");
+  assert.ok(filters, "the filters form should exist");
+  const words = (p) => p.textContent.trim().split(/\s+/).length;
+  for (const p of first.querySelectorAll("p")) {
+    if (words(p) <= 30) continue;
+    assert.ok(
+      filters.compareDocumentPosition(p) & window.Node.DOCUMENT_POSITION_FOLLOWING,
+      "a long paragraph in the first section comes before the filters: " + p.textContent.trim().slice(0, 40)
+    );
+  }
+  const key = document.querySelector("details#howToRead p");
+  assert.ok(key && words(key) > 30, "the tag key paragraph should be the long one");
+  assert.ok(
+    filters.compareDocumentPosition(key) & window.Node.DOCUMENT_POSITION_FOLLOWING,
+    "the tag key should come after the filters"
+  );
+});
+
+// Keyboard focus must stay on the page when the list is rebuilt.
+test("find: Show more moves focus to the first new card and announces it", async () => {
+  const { document, errors } = await loadFind();
+  assert.ok(shownCount(document) > PAGE_SIZE * 2 - 1, "needs more than 60 results");
+  const out = document.getElementById("out");
+  const cards = [...document.querySelectorAll("article.prog")];
+  assert.ok(cards.every((c) => c.getAttribute("tabindex") === "-1"), "each card can take focus");
+  const countBefore = document.getElementById("count").textContent;
+  const more = document.getElementById("more");
+  more.focus();
+  assert.equal(document.activeElement, more);
+  more.click();
+  await tick();
+  const now = [...document.querySelectorAll("article.prog")];
+  assert.equal(now.length, PAGE_SIZE * 2);
+  assert.notEqual(document.activeElement, document.body);
+  assert.ok(out.contains(document.activeElement));
+  assert.equal(document.activeElement, now[PAGE_SIZE], "focus lands on the first newly added card");
+  assert.match(document.getElementById("toast").textContent, new RegExp("Showing " + PAGE_SIZE + " more programs"));
+  assert.equal(document.getElementById("count").textContent, countBefore);
+  assert.deepEqual(errors, []);
+});
+
+test("find: Clear all filters on the empty state keeps focus on the filters", async () => {
+  const { window, document, errors } = await loadFind();
+  type(window, document.getElementById("q"), "zxqvjwk");
+  await tick(SEARCH_DEBOUNCE);
+  const reset = document.getElementById("emptyReset");
+  reset.focus();
+  reset.click();
+  await tick();
+  assert.notEqual(document.activeElement, document.body);
+  assert.ok([document.getElementById("q"), document.getElementById("reset")].includes(document.activeElement));
+  assert.equal(document.getElementById("q").value, "");
+  assert.deepEqual(errors, []);
+});
+
+test("find: un-starring a card in My list keeps focus on another control", async () => {
+  const { document, errors } = await loadFind();
+  const stars = [...document.querySelectorAll("article.prog .star")].slice(0, 2);
+  const ids = stars.map((s) => s.getAttribute("data-id"));
+  stars.forEach((s) => s.click());
+  document.getElementById("savedOnly").click();
+  await tick();
+  assert.equal(cardCount(document), 2);
+  const first = document.querySelector('.star[data-id="' + ids[0] + '"]');
+  first.focus();
+  first.click();
+  await tick();
+  assert.equal(cardCount(document), 1);
+  assert.notEqual(document.activeElement, document.body);
+  const other = document.querySelector('.star[data-id="' + ids[1] + '"]');
+  assert.ok(document.activeElement === other || document.activeElement === document.getElementById("savedOnly"));
+  assert.equal(document.activeElement, other, "focus goes to the remaining card's star");
+  other.click();
+  await tick();
+  assert.equal(cardCount(document), 0);
+  assert.equal(document.activeElement, document.getElementById("savedOnly"), "last card gone, focus goes to the My list toggle");
+  assert.deepEqual(errors, []);
 });

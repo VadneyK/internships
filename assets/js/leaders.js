@@ -93,11 +93,19 @@
     ]);
   }
 
+  /* One short, debounced note for screen readers instead of re-reading the whole letter on each keystroke. */
+  var refTimer;
+  function onRefEdit() {
+    renderRef();
+    clearTimeout(refTimer);
+    refTimer = setTimeout(function () { $("refStatus").textContent = "Letter updated."; }, 800);
+  }
+
   function save() {
     var o = {}; FIELDS.forEach(function (id) { o[id] = $(id).value; }); G.store.set("leader", o);
   }
   FIELDS.forEach(function (id) { $(id).addEventListener("input", function () { save(); render(); }); });
-  ["rTeen", "rWriter", "rKnown", "rJob", "rStory", "rQuality"].forEach(function (id) { $(id).addEventListener("input", renderRef); });
+  ["rTeen", "rWriter", "rKnown", "rJob", "rStory", "rQuality"].forEach(function (id) { $(id).addEventListener("input", onRefEdit); });
 
   document.addEventListener("click", function (e) {
     var p = e.target.closest("[data-print]");

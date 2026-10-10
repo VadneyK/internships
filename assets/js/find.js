@@ -13,6 +13,7 @@
   function sortList(list) { return L.sortList(list, state.sort, now()); }
   function cmp(a, b) { return L.compare(a, b, now()); }
   function futureDeadline(e) { return L.futureDeadline(e, now()); }
+  function knownDeadline(e) { return L.knownDeadline(e, now()); }
     function anytime(e) { return L.isAnytime(e, now()); }
   function isOpenish(e) { return L.isOpenish(e, now()); }
   function statusTag(e) {
@@ -48,7 +49,7 @@
       ? '<span class="tag good">Read on official site</span>'
       : '<span class="tag warn">Confirm first</span>';
     var hubs = (e.regions || []).map(function (r) { var f = G.REGIONS.filter(function (x) { return x[0] === r; })[0]; return f ? f[1] : ""; }).filter(Boolean);
-    var html = '<article class="card prog" id="p-' + G.esc(e.id) + '">';
+    var html = '<article class="card prog" tabindex="-1" id="p-' + G.esc(e.id) + '">';
     html += '<div class="row">' + statusTag(e) + paidTag(e) + '<span class="tag ghost">' + G.esc(G.TYPES[e.type] || e.type) + "</span></div>";
     html += "<h3>" + G.esc(e.name) + "</h3>";
     html += '<p class="org">' + G.esc(e.org || "") + (e.city ? " &middot; " + G.esc(e.city) : "") + "</p>";
@@ -74,9 +75,9 @@
     if (e.notes) html += "<div><dt>Good to know</dt><dd>" + G.esc(e.notes) + "</dd></div>";
     html += "</dl></details>";
     html += '<div class="actions">';
-    if (u) html += '<a class="btn sm" href="' + G.esc(u) + '" target="_blank" rel="noopener">Official page</a>';
-    if (a && a !== u) html += '<a class="btn sm alt" href="' + G.esc(a) + '" target="_blank" rel="noopener">Apply</a>';
-    if (futureDeadline(e)) html += '<button class="btn sm alt noprint" type="button" data-cal="' + G.esc(e.id) + '">Add deadline to calendar</button>';
+    if (u) html += '<a class="btn sm" href="' + G.esc(u) + '" target="_blank" rel="noopener" aria-label="' + G.esc("Official page for " + e.name + (e.org ? ", " + e.org : "")) + '">Official page</a>';
+    if (a && a !== u) html += '<a class="btn sm alt" href="' + G.esc(a) + '" target="_blank" rel="noopener" aria-label="' + G.esc("Apply to " + e.name + (e.org ? ", " + e.org : "")) + '">Apply</a>';
+    if (knownDeadline(e)) html += '<button class="btn sm alt noprint" type="button" data-cal="' + G.esc(e.id) + '" aria-label="' + G.esc("Add deadline to calendar for " + e.name) + '">Add deadline to calendar</button>';
     html += '<button class="star noprint" type="button" data-id="' + G.esc(e.id) + '" aria-pressed="' + saved + '" aria-label="' + (saved ? "Remove " + G.esc(e.name) + " from my list" : "Save " + G.esc(e.name) + " to my list") + '" title="Save to my list">&#9733;</button>';
     html += "</div>";
     html += '<p class="checked">' + vtag + " Checked " + G.esc(e.verified_on_label || "Oct 7, 2026") + "</p>";
@@ -86,10 +87,10 @@
 
   function renderDates(list) {
     var box = $("dates");
-    var withD = list.filter(futureDeadline).sort(function (a, b) { return futureDeadline(a) - futureDeadline(b) || cmp(a, b); });
+    var withD = list.filter(knownDeadline).sort(function (a, b) { return knownDeadline(a) - knownDeadline(b) || cmp(a, b); });
     var months = {}, order = [];
     withD.forEach(function (e) {
-      var d = futureDeadline(e), k = d.getFullYear() * 100 + d.getMonth();
+      var d = knownDeadline(e), k = d.getFullYear() * 100 + d.getMonth();
       if (!months[k]) { months[k] = []; order.push(k); }
       months[k].push(e);
     });
@@ -99,21 +100,21 @@
       var y = Math.floor(k / 100), m = k % 100;
       html += '<div class="month"><h3>' + names[m] + " " + y + "</h3><ul class=\"tl\">";
       months[k].forEach(function (e) {
-        var d = futureDeadline(e);
-        html += '<li><div class="d">' + names[m].slice(0, 3) + " " + d.getDate() + "<small>closes</small></div><div><b>" + G.esc(e.name) + "</b> " + paidTag(e) +
+        var d = knownDeadline(e), own = futureDeadline(e) ? "" : " " + statusTag(e);
+        html += '<li><div class="d">' + names[m].slice(0, 3) + " " + d.getDate() + "<small>closes</small></div><div><b>" + G.esc(e.name) + "</b> " + paidTag(e) + own +
           '<br><span class="small muted">' + G.esc(e.org || "") + " &middot; " + G.esc(ageText(e)) + "</span>" +
           (e.deadline_confidence === "last-year-pattern" ? ' <span class="tag warn">Based on last year</span>' : "") +
-          '<br><a href="#p-' + G.esc(e.id) + '" data-jump="' + G.esc(e.id) + '">See card</a>' +
-          (G.safeUrl(e.url) ? ' &middot; <a href="' + G.esc(G.safeUrl(e.url)) + '" target="_blank" rel="noopener">Official page</a>' : "") + "</div></li>";
+          '<br><a href="#p-' + G.esc(e.id) + '" data-jump="' + G.esc(e.id) + '" aria-label="' + G.esc("See card for " + e.name) + '">See card</a>' +
+          (G.safeUrl(e.url) ? ' &middot; <a href="' + G.esc(G.safeUrl(e.url)) + '" target="_blank" rel="noopener" aria-label="' + G.esc("Official page for " + e.name) + '">Official page</a>' : "") + "</div></li>";
       });
       html += "</ul></div>";
     });
-    var open = list.filter(function (e) { return !futureDeadline(e) && (anytime(e) || isOpenish(e)); });
+    var open = list.filter(function (e) { return !knownDeadline(e) && (anytime(e) || isOpenish(e)); });
     if (open.length) {
       html += '<div class="month"><h3>Apply anytime or no fixed date</h3><ul class="tl">';
       open.slice(0, 80).forEach(function (e) {
         html += '<li><div class="d">Open<small>anytime</small></div><div><b>' + G.esc(e.name) + "</b> " + paidTag(e) + '<br><span class="small muted">' + G.esc(e.deadline_text || "") + "</span> " +
-          (G.safeUrl(e.url) ? '<a href="' + G.esc(G.safeUrl(e.url)) + '" target="_blank" rel="noopener">Official page</a>' : "") + "</div></li>";
+          (G.safeUrl(e.url) ? '<a href="' + G.esc(G.safeUrl(e.url)) + '" target="_blank" rel="noopener" aria-label="' + G.esc("Official page for " + e.name) + '">Official page</a>' : "") + "</div></li>";
       });
       html += "</ul></div>";
     }
@@ -148,7 +149,10 @@
   }
 
   var PAGE = 60, shown = PAGE;
-  function render(resetPage) {
+  /* render() rebuilds #out, which deletes the focused control. "keep" says where focus goes next:
+     { cardIndex: n } focuses the card at list position n, { starId: id } focuses that card's star,
+     { el: element } focuses that element. */
+  function render(resetPage, keep) {
     if (resetPage) shown = PAGE;
     state.placeOnline = false;
     var list = sortList(all.filter(matches));
@@ -164,14 +168,35 @@
       out.hidden = true; dates.hidden = false; renderDates(list); persist(); return;
     }
     out.hidden = false; dates.hidden = true;
-    if (!list.length) {
+    if (!list.length && state.saved && !G.saved.ids().length) {
+      out.innerHTML = '<div class="card empty" style="grid-column:1/-1"><h3>Your list is empty</h3><p>Tap the star on a program card to save it here. Your list stays on this device.</p><button class="btn" type="button" id="showAll">Show all programs</button></div>';
+      var sa = $("showAll");
+      if (sa) sa.onclick = function () {
+        state.saved = false; syncChips(); render(true);
+        var first = $("out").querySelector("article.prog");
+        (first || $("savedOnly")).focus();
+      };
+    } else if (!list.length) {
       out.innerHTML = '<div class="card empty" style="grid-column:1/-1"><h3>Nothing matches yet</h3><p>Try a different age or area, or clear the filters. Programs near you may also appear under &ldquo;California&rdquo; or &ldquo;Online and national&rdquo;.</p><button class="btn" type="button" id="emptyReset">Clear all filters</button></div>';
-      var er = $("emptyReset"); if (er) er.onclick = resetAll;
+      var er = $("emptyReset"); if (er) er.onclick = function () { resetAll(); $("q").focus(); G.toast("Filters cleared"); };
     } else {
       var slice = list.slice(0, shown);
       out.innerHTML = slice.map(card).join("") + (list.length > shown ? '<div class="pager" style="grid-column:1/-1"><button class="btn alt" type="button" id="more">Show more (' + (list.length - shown) + " left)</button></div>" : "");
-      var more = $("more"); if (more) more.onclick = function () { shown += PAGE; render(false); };
+      var more = $("more");
+      if (more) more.onclick = function () {
+        var from = shown;
+        shown += PAGE;
+        render(false, { cardIndex: from });
+        G.toast("Showing " + (Math.min(shown, $("out").querySelectorAll("article.prog").length) - from) + " more programs");
+      };
+      if (keep && keep.cardIndex != null && slice[keep.cardIndex]) {
+        var nc = $("p-" + slice[keep.cardIndex].id); if (nc) nc.focus();
+      }
     }
+    if (keep && keep.starId) {
+      var ns = out.querySelector('.star[data-id="' + keep.starId + '"]');
+      (ns || keep.el || $("savedOnly")).focus();
+    } else if (keep && keep.el) keep.el.focus();
     persist();
   }
 
@@ -239,6 +264,10 @@
 
   G.loadEntries().then(function (data) {
     all = data;
+    /* drop saved ids for programs that no longer exist, so the Saved count and the empty-list card stay right */
+    var known = {}; all.forEach(function (e) { known[e.id] = true; });
+    var savedIds = G.saved.ids(), liveIds = savedIds.filter(function (id) { return known[id]; });
+    if (liveIds.length !== savedIds.length) G.store.set("saved", liveIds);
     var hubCounts = {}; all.forEach(function (e) { hubOf(e).forEach(function (h) { hubCounts[h] = (hubCounts[h] || 0) + 1; }); });
     var QUICK = ["davis", "sv", "oak", "sf", "state", "socal", "atl", "nyc", "chi", "online"];
     chipGroup("hubChips", G.HUBS.filter(function (h) { return hubCounts[h[0]] && QUICK.indexOf(h[0]) > -1; }).map(function (h) { return [h[0], h[1], hubCounts[h[0]]]; }), "hubs");
@@ -275,7 +304,7 @@
     var cal = ev.target.closest("[data-cal]");
     if (cal) {
       var pe = all.filter(function (x) { return x.id === cal.getAttribute("data-cal"); })[0];
-      if (pe && pe.deadline_iso) {
+      if (pe && pe.deadline_iso && knownDeadline(pe)) {
         G.download(pe.id + "-deadline.ics", L.icsEvent({ uid: "deadline-" + pe.id, title: "Deadline: " + pe.name, desc: (pe.deadline_text || "") + " " + (G.safeUrl(pe.apply_url || pe.url) || ""), dateISO: pe.deadline_iso }), "text/calendar");
         G.toast("Calendar file saved. Open it to add the deadline.");
       }
@@ -286,7 +315,12 @@
       var on = G.saved.toggle(s.getAttribute("data-id"));
       s.setAttribute("aria-pressed", String(on));
       $("savedN").textContent = G.saved.ids().length;
-      if (state.saved && !on) render(false);
+      if (state.saved && !on) {
+        var cardEl = s.closest("article.prog"), nb = cardEl && (cardEl.nextElementSibling && cardEl.nextElementSibling.matches("article.prog") ? cardEl.nextElementSibling : cardEl.previousElementSibling && cardEl.previousElementSibling.matches("article.prog") ? cardEl.previousElementSibling : null);
+        var nextStar = nb && nb.querySelector(".star");
+        var lost = document.activeElement === document.body || $("out").contains(document.activeElement);
+        render(false, lost ? { starId: nextStar ? nextStar.getAttribute("data-id") : "", el: $("savedOnly") } : null);
+      }
       G.toast(on ? "Saved to your list" : "Removed from your list");
       return;
     }

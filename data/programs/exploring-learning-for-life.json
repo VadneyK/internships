@@ -31,12 +31,14 @@
   "how_to_apply": "Use the Council Locator on exploring.org or joinexploring.org to find a unit near you.",
   "needs_work_permit": false,
   "url": "https://www.exploring.org/",
-  "apply_url": null,
+  "apply_url": "https://joinexploring.org/",
   "sources_fetched": [
-    "https://www.exploring.org/"
+    "https://www.exploring.org/",
+    "https://joinexploring.org/",
+    "https://www.scouting.org/about/local-council-locator/"
   ],
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "Exploring.org was only readable in part; fees, Scouting membership rules and California posts were not listed. The page names Learning for Life Corporation in its copyright line."
+  "notes": "Exploring.org was only readable in part; fees, Scouting membership rules and California posts were not listed. The page names Learning for Life Corporation in its copyright line. apply_url is the joinexploring.org home page, which has an Enter ZIP Code box for Exploring posts and clubs near you. On exploring.org, the Council Locator heading links to the contact page, and the scouting.org Local Council Locator finds a council, not a unit."
 }

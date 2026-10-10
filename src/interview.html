@@ -5,13 +5,20 @@ navparent: resume
 ---
 <section style="padding-block:2rem 1rem;">
   <div class="wrap">
-    <p class="small muted" style="margin:0 0 .6rem;"><a href="resume.html">Resume</a> &rsaquo; Apply and interview</p>
+    <nav class="breadcrumb small muted" aria-label="Breadcrumb"><ol><li><a href="resume.html">Resume</a></li><li aria-current="page">Apply and interview</li></ol></nav>
     <span class="tag y eyebrow">Before you apply</span>
     <h1 style="font-size:clamp(2.2rem,7vw,4rem);">Apply and <span class="orange">interview</span></h1>
     <p class="lede">Four things make a first application strong: the days and hours you can work, a few people who already said yes to be a reference, a short answer to &ldquo;tell me about yourself,&rdquo; and two questions to ask. Everything you type stays in this browser. Last read Oct 9, 2026.</p>
     <div class="callout plain small" style="margin-top:1rem;max-width:52rem;">
       <p id="evidence"></p>
     </div>
+    <nav class="chips" aria-label="On this page" style="margin-top:1rem;">
+      <a class="chip" style="text-decoration:none" href="#availability">1. Days and hours</a>
+      <a class="chip" style="text-decoration:none" href="#practice">2. Practice questions</a>
+      <a class="chip" style="text-decoration:none" href="#ask">3. Ask and bring</a>
+      <a class="chip" style="text-decoration:none" href="#references">4. References</a>
+      <a class="chip" style="text-decoration:none" href="#thanks">5. Thank-you note</a>
+    </nav>
     <ol class="steps row" id="appTips" aria-label="Application tips" style="margin-top:1rem;"></ol>
     <p class="small muted" id="appSrc"></p>
   </div>
@@ -26,11 +33,14 @@ navparent: resume
       <div class="field"><label for="aState">State</label><select id="aState"><option value="">Choose</option></select></div>
       <div class="field"><label for="aSchool">When</label><select id="aSchool"><option value="1">School is in session</option><option value="0">School is out (summer, break)</option></select></div>
     </div>
+    <p class="small muted">The hour check covers ages 14 to 17. Younger? See <a href="younger.html">Ages 12 to 14</a>.</p>
     <div class="tablewrap" tabindex="0" role="region" aria-label="Weekly availability"><table>
-      <thead><tr><th>Day</th><th>From</th><th>To</th></tr></thead>
+      <thead><tr><th scope="col">Day</th><th scope="col">From</th><th scope="col">To</th></tr></thead>
       <tbody id="aRows"></tbody>
     </table></div>
-    <div class="card" id="aOut" aria-live="polite" style="margin-top:1rem;"><p class="muted">Pick your age and state, then set your hours.</p></div>
+    <p class="sr" id="aStatus" role="status"></p>
+    <div class="card" id="aOut" style="margin-top:1rem;"><p class="muted">Pick your age and state, then set your hours.</p></div>
+    <p class="row"><button class="btn sm alt" type="button" id="aMon">Use Monday for Tuesday to Friday</button> <button class="btn sm alt" type="button" id="aClear">Clear all hours</button></p>
     <p class="row"><button class="btn sm" type="button" id="aCopy">Copy my availability</button> <button class="btn sm alt" type="button" id="aPrint">Print my prep sheet</button></p>
   </div>
 </section>
@@ -38,7 +48,7 @@ navparent: resume
 <section id="practice">
   <div class="wrap">
     <h2>2. Practice questions</h2>
-    <p>Twelve questions teens get asked. Write a few words for each, not a script. Your notes are saved on this device only.</p>
+    <p>Twelve questions teens get asked. Write a few words for each, not a script. Your notes are saved on this device only. Reference names and their phone or email contacts are saved on this device too.</p>
     <div class="grid g2" id="qList" style="align-items:start;"></div>
     <div class="callout plain" style="margin-top:1rem;"><p id="payNote"></p></div>
   </div>
@@ -85,6 +95,6 @@ navparent: resume
     <h2>What we could not find</h2>
     <ul id="iGaps"></ul>
     <div id="iPrint" class="packet" hidden></div>
-    <p class="small muted">Also see <a href="resume.html">build a resume</a>, <a href="playbook.html">write your message</a> and the <a href="ready.html">Get ready checklist</a>.</p>
+    <p class="small muted">Also see <a href="resume.html">build a resume</a>, <a href="playbook.html">write your message</a> and the <a href="ready.html">Get ready checklist</a>. Got an offer? <a href="permit.html">Check your permit</a>, then read <a href="paycheck.html">Your first paycheck</a>.</p>
   </div>
 </section>

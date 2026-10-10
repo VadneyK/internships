@@ -63,3 +63,17 @@ test("interview: sits under the Resume nav item and every source link is https",
   assert.match(document.querySelector('nav a[aria-current="page"]').textContent, /Resume/);
   for (const a of document.querySelectorAll("#qList a, #askSrc a, #appSrc a")) assert.match(a.href, /^https:\/\//);
 });
+
+test("interview: the Also see line links to the permit finder and the paycheck page", async () => {
+  const { document } = await loadPage("interview.html"); await tick(150);
+  const hrefs = [...document.querySelectorAll("a")].map((a) => a.getAttribute("href"));
+  for (const h of ["permit.html", "paycheck.html"]) assert.ok(hrefs.includes(h), h);
+});
+
+test("interview: the What we could not find list flags the old question sources by year", async () => {
+  const { document, errors } = await loadPage("interview.html"); await tick(150);
+  assert.deepEqual(errors, []);
+  const gaps = [...document.querySelectorAll("#iGaps li")].map((li) => li.textContent).join("\n");
+  assert.match(gaps, /2015/, "Illinois workNet list is dated May 2015");
+  assert.match(gaps, /2012/, "NYC Summer Youth Employment Program guide is dated 2012");
+});

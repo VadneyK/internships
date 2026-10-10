@@ -24,15 +24,15 @@
   "deadline_text": "The undated page says: Summer Reading applications ran May 9 to May 30, school-year roles reopen Saturday, August 1, and TAG is full with a wait list for applications after August 26. No year is shown, so confirm current openings.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Submit the Teen Volunteer Application on the library's volunteer system. A required orientation comes before the summer program.",
+  "how_to_apply": "Submit the Teen Volunteer Application on the library's volunteer system at www.volgistics.com/appform/337674493. A required orientation comes before the summer program.",
   "needs_work_permit": false,
   "url": "https://www.cityofirvine.gov/node/90102",
-  "apply_url": null,
+  "apply_url": "https://www.volgistics.com/appform/337674493",
   "sources_fetched": [
     "https://www.cityofirvine.gov/node/90102"
   ],
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "priority": 2,
-  "notes": "The page lists no library contact; it points to the volunteer coordinator, and the City of Irvine main number is 949-724-6000. The page writes the application link as volgistics.com/appform/337674493 (search for it on the volunteer system)."
+  "notes": "The page lists no library contact; it points to the volunteer coordinator, and the City of Irvine main number is 949-724-6000. The page writes the Teen Volunteer Application link as volgistics.com/appform/337674493 and links it over https, so apply_url uses https."
 }

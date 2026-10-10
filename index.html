@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>How to Find Internships: a Teen Guide for California, Atlanta, New York and Chicago</title>
-<meta name="description" content="A free guide for high schoolers in California, Atlanta, New York and Chicago. Real programs with real deadlines, the work-permit rules, and a message that gets a yes.">
+<title>How to Find Internships: a Teen Guide for the US and Vancouver</title>
+<meta name="description" content="A free guide for high schoolers in the US and Vancouver, BC. It started in California, Atlanta, New York and Chicago. Real programs, with the deadlines we could confirm, the work-permit rules, and a message that gets a yes.">
 <meta name="theme-color" content="#151515">
 <link rel="canonical" href="https://vadneyk.github.io/internships/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="How to Find Internships: a Teen Guide for California, Atlanta, New York and Chicago">
-<meta property="og:description" content="A free guide for high schoolers in California, Atlanta, New York and Chicago. Real programs with real deadlines, the work-permit rules, and a message that gets a yes.">
+<meta property="og:title" content="How to Find Internships: a Teen Guide for the US and Vancouver">
+<meta property="og:description" content="A free guide for high schoolers in the US and Vancouver, BC. It started in California, Atlanta, New York and Chicago. Real programs, with the deadlines we could confirm, the work-permit rules, and a message that gets a yes.">
 <meta property="og:url" content="https://vadneyk.github.io/internships/">
 <meta property="og:image" content="https://vadneyk.github.io/internships/assets/img/og.jpg">
 <meta property="og:image:width" content="1200">
@@ -20,8 +20,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=3c859005">
-<link rel="stylesheet" href="assets/css/style.css?v=3c859005">
+<link rel="stylesheet" href="assets/css/fonts.css?v=7e7ed858">
+<link rel="stylesheet" href="assets/css/style.css?v=7e7ed858">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -50,22 +50,27 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch light and dark mode" title="Light / dark">&#9681;</button>
   </div>
 </header>
-<main id="main">
+<main id="main" tabindex="-1">
 <section class="hero" style="padding-top:2.2rem;">
   <img class="splat s1" src="assets/img/splat-yellow.svg" alt="" width="800" height="800">
   <img class="splat s2" src="assets/img/splat-orange.svg" alt="" width="800" height="800">
   <div class="wrap inner">
-    <span class="tag y eyebrow">Grades 7 to 12 &middot; California &middot; Atlanta &middot; New York &middot; Chicago</span>
+    <span class="tag y eyebrow">Grades 7 to 12 &middot; Many states &middot; Vancouver, BC</span>
     <h1><span class="a">How to find</span><span class="b stroke">Internships</span></h1>
     <img class="swoosh" src="assets/img/swoosh.svg" alt="" width="600" height="60">
-    <p class="lede" style="margin-top:1rem;">A free guide for teens in California, Atlanta, New York and Chicago. Real programs with real deadlines, plus the one move that beats every job site: asking a person.</p>
+    <p class="lede" style="margin-top:1rem;">A free guide for teens. It started in California, Atlanta, New York and Chicago, and now lists programs in more states, such as Texas, Ohio and Pennsylvania, plus Vancouver, BC. Real programs, with the deadlines we could confirm, and the one move that beats every job site: asking a person.</p>
     <div class="cta">
       <a class="btn" href="find.html">Find a program</a>
       <a class="btn alt" href="playbook.html">Write your message</a>
     </div>
+    <nav class="chips" aria-label="Jump to" style="margin-top:1rem;">
+      <a class="chip" style="text-decoration:none;" href="#start">What fits me</a>
+      <a class="chip" style="text-decoration:none;" href="#soon">Closing soon</a>
+      <a class="chip" style="text-decoration:none;" href="#offer">Work permit</a>
+    </nav>
     <div class="stats" aria-label="At a glance">
-      <div class="stat"><b>615</b><span>programs checked</span></div>
-      <div class="stat"><b>5</b><span>areas: California, Atlanta, New York, Chicago</span></div>
+      <div class="stat"><b>612</b><span>programs checked</span></div>
+      <div class="stat"><b>Many</b><span>areas: start with California, Atlanta, New York and Chicago</span></div>
       <div class="stat"><b>$0</b><span>no sign-up, no tracking</span></div>
     </div>
   </div>
@@ -107,7 +112,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
         <span class="tag y">Move 1</span>
         <h3 style="margin-top:.7rem;">Where to look</h3>
         <p>Start with people you know. Then check programs built for teens in your area, or make your own with volunteering or shadowing.</p>
-        <a class="btn sm" href="find.html">Browse 615 programs</a>
+        <a class="btn sm" href="find.html">Browse 612 programs</a>
       </article>
       <article class="card">
         <span class="tag y">Move 2</span>
@@ -150,7 +155,8 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
           <select id="pField"><option value="">Anything</option></select></div>
       </div>
     </form>
-    <div id="matches" class="results" style="margin-top:1.2rem;" aria-live="polite"></div>
+    <p id="matchStatus" class="sr" role="status"></p>
+    <div id="matches" class="results" style="margin-top:1.2rem;"></div>
     <p id="matchMore" style="margin-top:1rem;" hidden></p>
   </div>
 </section>
@@ -170,7 +176,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <div class="callout">
         <h3>Under 16?</h3>
         <p>You do not need a fancy internship. Shadowing a grown-up for an afternoon, volunteering at a library or hospital, and starting a small project all count, and many are open at 13 or 14.</p>
-        <p><a class="btn sm dark" href="find.html?age=14">Programs open at 14</a></p>
+        <p><a class="btn sm dark" href="find.html?age=14">Programs open at 14</a> <a class="btn sm dark" href="younger.html">Ages 12 to 14: start here</a></p>
       </div>
       <div class="callout plain">
         <h3>Parents and youth leaders</h3>
@@ -187,11 +193,26 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <div>
         <h2 class="fh">Teen internship guide</h2>
         <p>Free. No sign-up, no ads, no tracking. Everything you type here stays in your browser.</p>
-        <p class="small">Last checked <b>Oct 9, 2026</b> &middot; 615 programs</p>
+        <p class="small">Last checked <b>Oct 9, 2026</b> &middot; 612 programs</p>
       </div>
       <div>
         <h2 class="fh">Quick links</h2>
-        <p><a href="find.html">Find a program</a><br><a href="playbook.html">Write your message</a><br><a href="resume.html">Build a first resume</a><br><a href="ready.html">Get ready for day one</a><br><a href="calendar.html">What opens when</a><br><a href="paycheck.html">Your first paycheck</a><br><a href="younger.html">Ages 12 to 14: start here</a><br><a href="interview.html">Apply and interview prep</a><br><a href="permit.html">Do I need a work permit?</a><br><a href="languages.html">Work rules in your language</a><br><a href="insights.html">The numbers</a><br><a href="rules.html">Work permit and pay rules</a><br><a href="states.html">Rules in Georgia, New York, Illinois</a><br><a href="contribute.html">Help build this guide</a></p>
+        <ul class="qlinks">
+          <li><a href="find.html">Find a program</a></li>
+          <li><a href="playbook.html">Write your message</a></li>
+          <li><a href="resume.html">Build a first resume</a></li>
+          <li><a href="ready.html">Get ready for day one</a></li>
+          <li><a href="calendar.html">What opens when</a></li>
+          <li><a href="paycheck.html">Your first paycheck</a></li>
+          <li><a href="younger.html">Ages 12 to 14: start here</a></li>
+          <li><a href="interview.html">Apply and interview prep</a></li>
+          <li><a href="permit.html">Do I need a work permit?</a></li>
+          <li><a href="languages.html">Work rules in your language</a></li>
+          <li><a href="insights.html">The numbers</a></li>
+          <li><a href="rules.html">Work permit and pay rules</a></li>
+          <li><a href="states.html">Rules in Georgia, New York, Illinois</a></li>
+          <li><a href="contribute.html">Help build this guide</a></li>
+        </ul>
       </div>
       <div>
         <h2 class="fh">About this page</h2>
@@ -202,9 +223,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=3c859005"></script>
-<script src="assets/js/common.js?v=3c859005"></script>
-<script src="assets/js/home.js?v=3c859005"></script>
+<script src="assets/js/lib.js?v=7e7ed858"></script>
+<script src="assets/js/common.js?v=7e7ed858"></script>
+<script src="assets/js/home.js?v=7e7ed858"></script>
 
 </body>
 </html>

@@ -155,6 +155,40 @@ test("permitFor: the right permit for the right age, state and kind", () => {
   assert.match(f("ny", 17, "job").hours, /28 a week/);
 });
 
+test("permitFor: a kind can override its answer for younger ages, so the headline never beats its text", () => {
+  const f = (st, age, kind) => L.permitFor(PERMITS, st, age, kind);
+  [12, 13].forEach((age) => {
+    const r = f("ny", age, "odd");
+    assert.equal(r.verdict, "ask");
+    assert.equal(r.headline, "Check before you start");
+    assert.match(r.text, /babysitter must be at least 14/);
+    assert.match(r.text, /Yard work for 12 and 13 year olds is not stated/);
+    assert.match(r.text, /888-469-7365/);
+  });
+  [14, 15].forEach((age) => assert.equal(f("mn", age, "job").verdict, "ask"));
+  const mn = f("mn", 15, "job");
+  assert.equal(mn.headline, "Check before you start");
+  assert.match(mn.text, /Under 16 you need an employment certificate only to work on school days during school hours\./);
+  [14, 15].forEach((age) => assert.equal(f("ny", age, "odd").verdict, "none"));
+  [16, 17].forEach((age) => assert.equal(f("mn", age, "job").verdict, "none"));
+  assert.equal(f("mn", 16, "job").headline, "You do not need a permit for this");
+  assert.equal(f("ca", 12, "odd").verdict, "none");
+});
+
+test("permitFor: the headline uses a or an to match the permit name", () => {
+  assert.equal(L.permitFor(PERMITS, "ny", 15, "job").headline, "You need a Working papers (employment certificate)");
+  const fake = { states: { xx: { name: "X", permit: "Employment certificate", needBelow: 18, minAge: { job: 14, note: "n" }, hours: {}, wage: "w", adult: "a", kinds: { job: { permit: true, text: "t" } } } } };
+  assert.equal(L.permitFor(fake, "xx", 15, "job").headline, "You need an Employment certificate");
+  fake.states.xx.permit = "Work permit";
+  assert.equal(L.permitFor(fake, "xx", 15, "job").headline, "You need a Work permit");
+  Object.keys(PERMITS.states).forEach((st) => {
+    for (let age = 14; age <= 17; age++) {
+      const r = L.permitFor(PERMITS, st, age, "job");
+      assert.doesNotMatch(r.headline, /\bYou need a [AEIOUaeiou]/);
+    }
+  });
+});
+
 test("permits.json: every state answers every kind, with sources and no placeholder text", () => {
   const kinds = PERMITS.kinds.map((k) => k[0]);
   Object.keys(PERMITS.states).forEach((st) => {
@@ -210,4 +244,31 @@ test("no-permit filter only keeps programs that say no permit is needed", () => 
 test("areas include California-wide programs like their own cities do", () => {
   assert.ok(L.placeRegions("area:bay-area").indexOf("statewide") > -1);
   assert.equal(L.placeRegions("area:midwest").indexOf("statewide"), -1);
+});
+
+test("every card's regions are known to the site (in REGIONS and with a STATE_OF key); a typo is caught", () => {
+  const cards = JSON.parse(fs.readFileSync(new URL("../data/entries.json", import.meta.url), "utf8"));
+  const known = new Set(L.REGIONS.map((r) => r[0]));
+  // Returns "card id / region" pairs that the site would silently drop or mis-state. Empty regions are fine.
+  const unknownRegions = (list) => {
+    const bad = [];
+    list.forEach((c) => (c.regions || []).forEach((r) => {
+      if (!known.has(r) || !Object.prototype.hasOwnProperty.call(L.STATE_OF, r)) bad.push(c.id + " / " + r);
+    }));
+    return bad;
+  };
+  assert.deepEqual(unknownRegions(cards), [], "a card uses a region the site does not list");
+  const typo = JSON.parse(JSON.stringify(cards[0]));
+  typo.regions = ["oaklnd"];
+  assert.deepEqual(unknownRegions([typo]), [typo.id + " / oaklnd"]);
+});
+
+test("gradePhrase: 'Grade 10' and '6' give clean grammar, not 'grade grade' or 'in 6 grade'", () => {
+  assert.equal(L.gradePhrase("Grade 10"), "in 10th grade");
+  assert.equal(L.gradePhrase("grade 6"), "in 6th grade");
+  assert.equal(L.gradePhrase("6"), "in 6th grade");
+  assert.equal(L.gradePhrase("1"), "in 1st grade");
+  assert.equal(L.gradePhrase("2"), "in 2nd grade");
+  assert.equal(L.gradePhrase("3"), "in 3rd grade");
+  assert.equal(L.gradePhrase("4"), "in 4th grade");
 });

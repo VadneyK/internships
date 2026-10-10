@@ -20,12 +20,12 @@
   "pay_detail": "Free",
   "season": "summer",
   "duration": "Not stated (summer camp; dates not posted)",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "The page says 2026 camper applications are open, but its title still reads Summer Camp 2025 and the summer 2026 camp has already passed. No 2027 dates are posted.",
+  "deadline_text": "The page is out of date (titled Summer Camp 2025, it says 2026 applications are open but posts no dates), so email the program through the Contact Us link before applying.",
   "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Fill in the Google Form linked from the ImmunoExplore page.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Email the program first, through the Contact Us link on the ImmunoX site, because the page is out of date. The page links a Google Form for 2026 camper applications.",
   "needs_work_permit": false,
   "url": "https://immunox.ucsf.edu/community/immunoexplore",
   "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLSeh3fu02ldq5PJF2XT-jWX53DRfOqtvdSpUgOUHQ5cmiCZkCQ/viewform",
@@ -33,7 +33,7 @@
     "https://immunox.ucsf.edu/community/immunoexplore"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-10-09",
   "priority": 2,
-  "notes": "Re-read the ImmunoX page on 2026-10-07. It is titled Summer Camp 2025 but mentions 2026 applications, so it may be out of date. Grades, camp dates and deadlines are not posted. The apply link is the Google Form linked on the page. Confirm dates and grade range with ImmunoX before applying."
+  "notes": "Re-read the ImmunoX page on 2026-10-09. It is still titled ImmunoExplore - Summer Camp 2025. It says 2026 Camper Applications are now open and links the Google Form. It posts no grade range, camp dates or deadlines, so none are listed here. Confirm dates and grades with ImmunoX before applying."
 }

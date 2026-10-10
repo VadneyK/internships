@@ -48,3 +48,21 @@ test("paycheck page: sits under Get ready", async () => {
   const { document } = await loadPage("paycheck.html"); await tick(100);
   assert.match(document.querySelector('nav a[aria-current="page"]').textContent, /Get ready/);
 });
+
+test("paycheck page: ?state= picks the matching preset and state, and ignores unknown values", async () => {
+  const ny = await loadPage("paycheck.html", { search: "?state=ny" }); await tick(200);
+  assert.deepEqual(ny.errors, []);
+  assert.equal(ny.document.getElementById("mPreset").value, "ny-nyc");
+  assert.equal(ny.document.getElementById("mState").selectedOptions[0].textContent, "New York");
+  assert.match(ny.document.getElementById("mOut").textContent, /\$187\.51|\$/);
+  const zz = await loadPage("paycheck.html", { search: "?state=zz" }); await tick(200);
+  assert.deepEqual(zz.errors, []);
+  assert.equal(zz.document.getElementById("mPreset").value, "ca");
+  assert.match(zz.document.getElementById("mOut").textContent, /\$184\.65/);
+});
+
+test("paycheck page: a Next line points to find and interview", async () => {
+  const { document } = await loadPage("paycheck.html"); await tick(100);
+  const hrefs = [...document.querySelectorAll("#mNext a")].map((a) => a.getAttribute("href"));
+  for (const h of ["find.html", "interview.html"]) assert.ok(hrefs.includes(h), h);
+});

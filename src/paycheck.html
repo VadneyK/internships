@@ -1,15 +1,21 @@
 title: Your First Paycheck: What Comes Out, Tax Forms by State, and What to Do If Pay Is Wrong
-desc: Estimate what a first paycheck looks like in California, Georgia, New York and Illinois (Social Security and Medicare apply everywhere) using only sourced numbers, understand the W-4 and state withholding forms, and learn how to get unpaid wages. Facts from the IRS, state labor and tax agencies and the CFPB.
+desc: Estimate what a first paycheck looks like in California, Georgia, New York and Illinois using only sourced numbers, understand the W-4 and state withholding forms, and learn how to get unpaid wages. Facts from the IRS, state labor and tax agencies and the CFPB.
 scripts: paycheck
 navparent: ready
 ---
 <section style="padding-block:2rem 1rem;">
   <div class="wrap">
-    <p class="small muted" style="margin:0 0 .6rem;"><a href="ready.html">Get ready</a> &rsaquo; Your first paycheck</p>
+    <nav class="breadcrumb small muted" aria-label="Breadcrumb"><ol><li><a href="ready.html">Get ready</a></li><li aria-current="page">Your first paycheck</li></ol></nav>
     <span class="tag y eyebrow">Money</span>
     <h1 style="font-size:clamp(2.2rem,7vw,4rem);">Your first <span class="orange">paycheck</span></h1>
     <p class="lede">Your check is smaller than hours times pay rate. This page shows what comes out, which forms to fill out on your first day, and what to do if your pay is wrong. Last read Oct 9, 2026.</p>
-    <div class="callout plain small" style="margin-top:1rem;max-width:52rem;"><p><b>Facts, not tax advice.</b> We only show amounts we have a source for. Ask a parent or a tax preparer about your own situation.</p><p>This page covers California, Georgia, New York and Illinois. In another state the Social Security and Medicare part is the same, but the state tax form and minimum wage are different. See <a href="permit.html">the work permit finder</a> for your state's minimum wage and the number to call.</p></div>
+    <div class="callout plain small" style="margin-top:1rem;max-width:52rem;"><p><b>Facts, not tax advice.</b> We only show amounts we have a source for. Ask a parent or a tax preparer about your own situation.</p><p>This page covers California, Georgia, New York and Illinois. Social Security and Medicare apply to most jobs in every state. The exception is working for your parent's own unincorporated business when you are under 18. In another state the state tax form and minimum wage are different. See <a href="permit.html">the work permit finder</a> for your state's minimum wage and the number to call.</p></div>
+    <nav class="chips" aria-label="On this page" style="margin-top:1rem;">
+      <a class="chip" style="text-decoration:none" href="#est">1. Estimate</a>
+      <a class="chip" style="text-decoration:none" href="#forms">2. Tax forms</a>
+      <a class="chip" style="text-decoration:none" href="#wrong">3. Late or wrong pay</a>
+      <a class="chip" style="text-decoration:none" href="#bank">4. Where it goes</a>
+    </nav>
   </div>
 </section>
 
@@ -19,10 +25,12 @@ navparent: ready
     <div class="grid g3" style="align-items:end;max-width:62rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr));">
       <div class="field"><label for="mPreset">Where and what rate</label><select id="mPreset"></select></div>
       <div class="field"><label for="mWage">Hourly rate ($)</label><input id="mWage" type="number" min="0" step="0.01" inputmode="decimal"></div>
-      <div class="field"><label for="mHours">Hours in the pay period</label><input id="mHours" type="number" min="0" step="0.5" inputmode="decimal" value="12"></div>
+      <div class="field"><label for="mHours">Hours on this paycheck</label><input id="mHours" type="number" min="0" step="0.5" inputmode="decimal" value="12"></div>
     </div>
+    <p class="small muted" id="mOther" hidden></p>
     <label style="display:flex;gap:.5rem;align-items:center;margin:.6rem 0;"><input type="checkbox" id="mParent"> I work for my parent's own business (not a corporation) and I am under 18</label>
-    <div class="card" id="mOut" aria-live="polite"></div>
+    <div class="card" id="mOut"></div>
+    <p class="sr" id="mStatus" role="status"></p>
     <p class="small muted" id="mSrc"></p>
   </div>
 </section>
@@ -52,5 +60,6 @@ navparent: ready
     <p class="small muted" id="mBankSrc"></p>
     <h2>What this page leaves out</h2>
     <ul id="mGaps"></ul>
+    <p class="small" id="mNext">Next: no job yet? <a href="find.html">Browse programs</a>. Have an interview coming up? <a href="interview.html">Get ready for it</a>.</p>
   </div>
 </section>

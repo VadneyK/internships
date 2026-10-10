@@ -5,11 +5,17 @@ navparent: ready
 ---
 <section style="padding-block:2rem 1rem;">
   <div class="wrap">
-    <p class="small muted" style="margin:0 0 .6rem;"><a href="ready.html">Get ready</a> &rsaquo; Ages 12 to 14</p>
+    <nav class="breadcrumb small muted" aria-label="Breadcrumb"><ol><li><a href="ready.html">Get ready</a></li><li aria-current="page">Ages 12 to 14</li></ol></nav>
     <span class="tag y eyebrow">Ages 12 to 14</span>
     <h1 style="font-size:clamp(2.2rem,7vw,4rem);">Too young for a job? <span class="orange">Start here.</span></h1>
     <p class="lede">Most paid jobs start at 14. Before that, you can build skills, earn from people you know, and get a record that makes your first real job easier. Show this page to a parent. Last read Oct 9, 2026.</p>
-    <div class="callout plain small" style="margin-top:1rem;max-width:52rem;"><p><b>This is a summary, not legal advice.</b> A blank cell means the state page we read does not say. It does not mean allowed, and it does not mean banned. Ask the number in the last row before you start.</p></div>
+    <div class="callout plain small" style="margin-top:1rem;max-width:52rem;"><p><b>This is a summary, not legal advice.</b> A cell that says Not stated means the state page we read does not say. It does not mean allowed, and it does not mean banned. Ask the number in the last row before you start.</p></div>
+    <nav class="chips" aria-label="On this page" style="margin-top:1rem;">
+      <a class="chip" style="text-decoration:none" href="#grid">1. At my age</a>
+      <a class="chip" style="text-decoration:none" href="#safety">2. Stay safe</a>
+      <a class="chip" style="text-decoration:none" href="#ladder">3. Path to a job</a>
+      <a class="chip" style="text-decoration:none" href="#money">4. Money facts</a>
+    </nav>
     <p class="row"><a class="btn" href="find.html?age=13">See <span id="n13">the</span> programs that take 13 year olds</a> <a class="btn alt" href="permit.html">Work permit finder (14 and up)</a></p>
   </div>
 </section>
@@ -18,6 +24,8 @@ navparent: ready
   <div class="wrap">
     <h2>1. Can I do this at my age?</h2>
     <p id="fedNote"></p>
+    <div class="field" style="max-width:20rem;"><label for="yState">Show one state</label>
+      <select id="yState"><option value="">All four states</option></select></div>
     <div class="tablewrap" tabindex="0" role="region" aria-label="What a 12 or 13 year old may do, by state"><table id="gridT"></table></div>
     <h3>Where the pages disagree</h3>
     <ul id="conflicts"></ul>
@@ -54,6 +62,7 @@ navparent: ready
     <h2>What we could not find</h2>
     <ul id="yGaps"></ul>
     <div id="yPack" class="packet" hidden></div>
+    <p id="yNext">Next: see <a href="find.html?age=13">programs that take your age</a>, plan for your first job at 14 with the <a href="permit.html">work permit finder</a>, or start a <a href="resume.html">first resume</a>.</p>
     <p class="small muted">Questions about a program? <a href="contribute.html">Tell us</a>. See also the <a href="rules.html">California rules</a> and <a href="states.html">other states</a>.</p>
   </div>
 </section>

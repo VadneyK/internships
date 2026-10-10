@@ -80,6 +80,17 @@ class FreshnessTests(unittest.TestCase):
         d["status"] = "rolling"
         self.assertFalse(any("deadline" in r for r in freshness.needs_refresh(d, dt.date(2027, 1, 20), 999)))
 
+    def test_open_card_flagged_the_day_its_deadline_passes(self):
+        d = copy.deepcopy(GOOD)
+        self.assertEqual(freshness.needs_refresh(d, dt.date(2027, 1, 8), 999), [])
+        reasons = freshness.needs_refresh(d, dt.date(2027, 1, 9), 999)
+        self.assertTrue(any("status says open" in r and "2027-01-08" in r for r in reasons))
+
+    def test_opens_soon_with_past_deadline_flagged(self):
+        d = copy.deepcopy(GOOD); d["status"] = "opens-soon"; d["opens_iso"] = "2026-12-01"
+        reasons = freshness.needs_refresh(d, dt.date(2027, 1, 9), 999)
+        self.assertTrue(any("status says open" in r for r in reasons))
+
     def test_snippet_only_flagged(self):
         d = copy.deepcopy(GOOD); d["verified"] = "snippet-only"
         self.assertTrue(any("never read" in r for r in freshness.needs_refresh(d, dt.date(2026, 10, 8), 120)))

@@ -40,27 +40,36 @@
 
   var done = G.store.get("ready", {});
   var list = $("readyList");
-  function paint() {
-    list.innerHTML = ITEMS.map(function (it, i) {
-      var on = !!done[it[0]];
-      return '<li><div><label style="display:flex;gap:.6rem;align-items:flex-start;font-weight:700;cursor:pointer;"><input type="checkbox" data-k="' + it[0] + '"' + (on ? " checked" : "") + ' style="margin-top:.3rem;width:1.2rem;height:1.2rem;"><span>' + G.esc(it[1]) + '</span></label> <a class="small" href="' + it[2] + '">See how</a></div></li>';
+  /* Build the list once so focus stays on the box you toggled; later changes only update checked states and the count. */
+  function build() {
+    list.innerHTML = ITEMS.map(function (it) {
+      return '<li><div><label style="display:flex;gap:.6rem;align-items:flex-start;font-weight:700;cursor:pointer;"><input type="checkbox" data-k="' + it[0] + '" style="margin-top:.3rem;width:1.2rem;height:1.2rem;"><span>' + G.esc(it[1]) + '</span></label> <a class="small" href="' + it[2] + '" aria-label="' + G.esc("See how: " + it[1]) + '">See how</a></div></li>';
     }).join("");
-    var n = ITEMS.filter(function (it) { return done[it[0]]; }).length;
-    $("readySum").textContent = n + " of " + ITEMS.length + " done";
+  }
+  function sumText() {
+    return ITEMS.filter(function (it) { return done[it[0]]; }).length + " of " + ITEMS.length + " done";
+  }
+  function paint(announce) {
+    Array.prototype.forEach.call(list.querySelectorAll("input[data-k]"), function (b) { b.checked = !!done[b.getAttribute("data-k")]; });
+    var t = sumText();
+    $("readySum").textContent = t;
+    if (announce) $("readyStatus").textContent = t;
   }
   list.addEventListener("change", function (e) {
     var k = e.target.getAttribute("data-k"); if (!k) return;
-    done[k] = e.target.checked; G.store.set("ready", done); paint();
+    done[k] = e.target.checked; G.store.set("ready", done); paint(true);
   });
-  $("readyReset").addEventListener("click", function () { done = {}; G.store.set("ready", done); paint(); });
-  paint();
+  $("readyReset").addEventListener("click", function () { done = {}; G.store.set("ready", done); paint(true); $("readyReset").focus(); });
+  build();
+  paint(false);
 
   var sel = $("dist");
   Object.keys(DISTRICTS).forEach(function (k) { var o = document.createElement("option"); o.value = k; o.textContent = DISTRICTS[k].name; sel.appendChild(o); });
   ["Fremont Unified", "Sacramento City Unified", "Another district or a charter or private school"].forEach(function (n) { var o = document.createElement("option"); o.value = "other"; o.textContent = n; sel.appendChild(o); });
   sel.addEventListener("change", function () {
     var out = $("distOut"), d = DISTRICTS[sel.value];
-    if (!sel.value) { return; }
+    if (!sel.value) { $("distStatus").textContent = ""; return; }
+    $("distStatus").textContent = "Steps for " + sel.options[sel.selectedIndex].textContent + " are listed below.";
     if (!d) {
       out.innerHTML = "<p>We did not find a district-wide page for this one. Ask your school's main office or attendance office. During the school year the school you attend issues the permit. The common steps are: get hired, fill out the form with your employer and a parent, hand it in, and wait a few days. Charter and private schools often use their own office, and some districts do not issue permits for them.</p>";
       return;
@@ -76,6 +85,7 @@
     $("rideDrive").innerHTML = "<p><b>" + G.esc(d.driving.headline) + ".</b> " + G.esc(d.driving.text) + ' <a href="' + G.esc(d.driving.source.u) + '" target="_blank" rel="noopener">' + G.esc(d.driving.source.t) + "</a>. Not covered here: " + d.gaps.map(G.esc).join(" ") + "</p>";
     function row(k, v) { return "<div><dt>" + k + "</dt><dd>" + G.esc(v) + "</dd></div>"; }
     sel.addEventListener("change", function () {
+      $("rideStatus").textContent = sel.value ? "Transit answer for " + sel.options[sel.selectedIndex].textContent + " is listed below." : "";
       if (sel.value === "other") { out.innerHTML = "<p>We have not read your transit agency yet. Ask your school office, or look for a youth pass on the agency's own website.</p>"; return; }
       var p = d.places.filter(function (x) { return x.id === sel.value; })[0];
       if (!p) { out.innerHTML = '<p class="muted">Pick a city to see the card to get, what it costs, what to bring and whether it works for a job.</p>'; return; }

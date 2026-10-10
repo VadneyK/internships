@@ -5,18 +5,27 @@
   var $ = function (id) { return document.getElementById(id); };
   function a(t, u) { return '<a href="' + G.esc(u) + '" target="_blank" rel="noopener">' + G.esc(t) + "</a>"; }
   function li(arr) { return arr.map(function (x) { return "<li>" + G.esc(x) + "</li>"; }).join(""); }
-  Promise.all([fetch("data/younger.json").then(function (r) { return r.json(); }), G.loadEntries()]).then(function (res) {
+  Promise.all([fetch("data/younger.json").then(function (r) { return r.json(); }), G.loadEntries("core")]).then(function (res) {
     var d = res[0], all = res[1];
     var n13 = all.filter(function (e) { return L.matches(e, { age: "13" }, Date.now()) && e.min_age != null && e.min_age <= 13; }).length;
     $("n13").textContent = n13;
     $("fedNote").innerHTML = G.esc(d.federal) + " " + a(d.federalSource.t, d.federalSource.u) + ".";
-    var head = "<thead><tr><th scope=\"col\">What you want to do</th>" + d.states.map(function (s) { return "<th scope=\"col\">" + G.esc(s[1]) + "</th>"; }).join("") + "</tr></thead>";
-    var body = "<tbody>" + d.rows.map(function (r) {
-      return "<tr><th scope=\"row\">" + G.esc(r.job) + "</th>" + d.states.map(function (s) {
-        var c = r.cells[s[0]]; return "<td>" + G.esc(c.t) + (c.s ? '<br><span class="small">' + a(c.s.t, c.s.u) + "</span>" : "") + "</td>";
-      }).join("") + "</tr>";
-    }).join("") + "<tr><th scope=\"row\">Who to ask</th>" + d.states.map(function (s) { return "<td>" + G.esc(d.calls[s[0]]) + "</td>"; }).join("") + "</tr></tbody>";
-    $("gridT").innerHTML = head + body;
+    function drawGrid(only) {
+      var sts = d.states.filter(function (s) { return !only || s[0] === only; });
+      var head = "<thead><tr><th scope=\"col\">What you want to do</th>" + sts.map(function (s) { return "<th scope=\"col\">" + G.esc(s[1]) + "</th>"; }).join("") + "</tr></thead>";
+      var body = "<tbody>" + d.rows.map(function (r) {
+        return "<tr><th scope=\"row\">" + G.esc(r.job) + "</th>" + sts.map(function (s) {
+          var c = r.cells[s[0]]; return "<td>" + G.esc(c.t) + (c.s ? '<br><span class="small">' + a(c.s.t, c.s.u) + "</span>" : "") + "</td>";
+        }).join("") + "</tr>";
+      }).join("") + "<tr><th scope=\"row\">Who to ask</th>" + sts.map(function (s) { return "<td>" + G.esc(d.calls[s[0]]) + "</td>"; }).join("") + "</tr></tbody>";
+      $("gridT").innerHTML = head + body;
+    }
+    var ys = $("yState");
+    d.states.forEach(function (s) { var o = document.createElement("option"); o.value = s[0]; o.textContent = s[1]; ys.appendChild(o); });
+    var want = ""; try { want = new URLSearchParams(location.search).get("state") || ""; } catch (e) {}
+    ys.value = d.states.some(function (s) { return s[0] === want; }) ? want : "";
+    drawGrid(ys.value);
+    ys.addEventListener("change", function () { drawGrid(ys.value); });
     $("conflicts").innerHTML = li(d.conflicts);
     $("train").innerHTML = d.train.map(function (t) { return "<li><b>" + G.esc(t.t) + ".</b> " + G.esc(t.d) + " " + a("Official page", t.u) + "</li>"; }).join("");
     $("before").innerHTML = li(d.before); $("beforeSrc").innerHTML = "From " + a(d.beforeSource.t, d.beforeSource.u) + ".";

@@ -38,19 +38,19 @@
     }
    ],
    "hours": {
-    "12": "School days: no work. Non-school days: up to 8 hours. Only between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). You need to have finished 7th grade to work while school is in session.",
-    "14": "School days: up to 3 hours, outside school hours. Non-school days: up to 8 hours. School weeks: up to 18 hours. When school is out: up to 8 hours a day and 40 a week. Only between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day).",
-    "16": "School days: up to 4 hours. Non-school days: up to 8 hours. Up to 48 hours a week. Between 5 a.m. and 10 p.m. (12:30 a.m. before a non-school day)."
+    "12": "School days: no work. Non-school days: up to 8 hours. Only between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day).",
+    "14": "School days: up to 3 hours, outside school hours. Non-school days: up to 8 hours. School weeks: up to 18 hours. When school is out: up to 8 hours a day and 40 a week. Only between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). At 14 to 17, you need to have finished 7th grade to work while school is in session.",
+    "16": "School days: up to 4 hours. Non-school days: up to 8 hours. Up to 48 hours a week. Between 5 a.m. and 10 p.m. (12:30 a.m. before a non-school day). At 14 to 17, you need to have finished 7th grade to work while school is in session."
    },
    "wage": "$16.90 an hour in 2026 and $17.40 from Jan 1, 2027. Some cities pay more, so ask your employer for the rate.",
    "minAge": {
     "job": 14,
-    "note": "At 12 and 13 you can do things like babysitting, pet care, yard work and newspaper delivery."
+    "note": "At 12 and 13 you can do things like babysitting, yard work and newspaper delivery. A self-employed minor needs no permit, but no page we read names pet care, so ask the Labor Commissioner at 833-526-4636 first."
    },
    "kinds": {
     "job": {
      "permit": true,
-     "text": "Almost every worker under 18 needs a Permit to Employ and Work for each paid job at a business, even in summer."
+     "text": "Almost every worker under 18 needs a Permit to Employ and Work for each paid job at a business, even in summer. Graduates of high school and teens with a certificate of proficiency do not need one."
     },
     "program": {
      "permit": true,
@@ -62,7 +62,7 @@
     },
     "own": {
      "permit": false,
-     "text": "Running your own business (tutoring, pet care, selling crafts) does not need a permit. Delivering newspapers on your own route does not either."
+     "text": "Running your own business (tutoring, selling crafts) does not need a permit. Delivering newspapers on your own route does not either. A self-employed minor needs no permit. Pet care is not named on the state chart, so ask the Labor Commissioner at 833-526-4636."
     },
     "volunteer": {
      "permit": false,
@@ -234,13 +234,17 @@
      "u": "https://www.schools.nyc.gov/get-involved/students/working-papers"
     },
     {
+     "t": "NY laws on employment of minors (P882)",
+     "u": "https://dol.ny.gov/laws-governing-employment-minors-p882-english"
+    },
+    {
      "t": "New York rules on this site",
      "u": "states.html#newyork"
     }
    ],
    "hours": {
-    "14": "School in session: not before 7 a.m. or after 7 p.m., up to 3 hours on a school day, 8 on a non-school day, 18 a week, 6 days a week. School closed all week: up to 8 hours a day and 40 a week.",
-    "16": "School in session: up to 4 hours on a day before a school day (Monday to Thursday), 8 hours Friday to Sunday and holidays, 28 a week, 6 days a week. Not before 6 a.m. and generally not after 10 p.m., or midnight with a parent's written permission."
+    "14": "School in session: not before 7 a.m. or after 7 p.m., up to 3 hours on a school day, 8 on a non-school day, 18 a week, 6 days a week. School closed all week: up to 8 hours a day and 40 a week. When school is closed: not between 9 p.m. and 7 a.m.",
+    "16": "School in session: up to 4 hours on a day before a school day (Monday to Thursday), 8 hours Friday to Sunday and holidays, 28 a week, 6 days a week. Not before 6 a.m. and generally not after 10 p.m., or midnight with a parent's written permission. When school is not in session: up to 48 hours a week, and not between midnight and 6 a.m."
    },
    "wage": "$17.00 an hour in New York City, Long Island and Westchester, and $16.00 in the rest of the state (2026).",
    "minAge": {
@@ -258,7 +262,8 @@
     },
     "odd": {
      "permit": false,
-     "text": "Babysitting and casual yard work or chores at home are exempt from working papers."
+     "text": "No working papers are needed for babysitting or casual yard work or chores at home, but New York DOL says the babysitter must be at least 14. Yard work for 12 and 13 year olds is not stated. Ask: 888-469-7365.",
+     "under": {"below": 14, "permit": null, "text": "At 12 or 13 you are too young to babysit under state rules: New York DOL says a babysitter must be at least 14. Yard work for 12 and 13 year olds is not stated. Ask: 888-469-7365."}
     },
     "own": {
      "permit": null,
@@ -266,7 +271,8 @@
     },
     "volunteer": {
      "permit": null,
-     "text": "Unpaid volunteers are allowed at charitable, educational or religious organizations, and they may not replace or add to paid staff. The pages we read do not require working papers for volunteers, so confirm with your school."
+     "text": "Unpaid volunteers are allowed at charitable, educational or religious organizations, and they may not replace or add to paid staff. The pages we read do not require working papers for volunteers, so confirm with your school.",
+     "under": {"below": 14, "permit": null, "text": "A Queens Public Library page says under 14 may not volunteer unless a parent or guardian directly supervises, citing state law. That is a library description, not a labor department page. Ask the State Department of Labor: 888-469-7365."}
     },
     "intern": {
      "permit": null,
@@ -299,7 +305,7 @@
      "offWeek": 48,
      "earliest": 6,
      "latest": 22,
-     "latestSummer": null,
+     "latestSummer": 24,
      "weekdayOnly": true
     }
    }
@@ -335,6 +341,10 @@
      "u": "https://www.isbe.net/Pages/Work-Permits.aspx"
     },
     {
+     "t": "Chicago minimum wage (BACP)",
+     "u": "https://www.chicago.gov/city/en/depts/bacp/supp_info/minimumwageinformation.html"
+    },
+    {
      "t": "Illinois rules on this site",
      "u": "states.html#illinois"
     }
@@ -343,7 +353,7 @@
     "14": "No more than 18 hours in a school week, 40 when school is out, 3 hours on a school day, 8 hours in any 24 hours, and only between 7 a.m. and 7 p.m. (until 9 p.m. from June 1 to Labor Day). A meal break of at least 30 minutes by the 5th hour in a row.",
     "16": "The Illinois child labor law does not limit your hours at 16 and 17, and federal law does not either."
    },
-   "wage": "$15.00 an hour. Under 18 you may be paid $13.00 for your first 650 hours in a year with one employer. Chicago is $17.05 from July 1, 2026.",
+   "wage": "$15.00 an hour. Under 18 you may be paid $13.00 for your first 650 hours in a year with one employer. Chicago is $17.05 from July 1, 2026 at employers with 4 or more employees. The city page we read does not say if this covers workers under 18.",
    "minAge": {
     "job": 14,
     "note": "Most non-farm jobs covered by federal law start at 14."
@@ -359,7 +369,7 @@
     },
     "odd": {
      "permit": null,
-     "text": "The Illinois pages we read do not say whether odd jobs for neighbors need a certificate. Ask Illinois DOL child labor questions: 312-793-5570."
+     "text": "The Illinois DOL FAQ says no permit for babysitting outside school hours at a private home, and none for raking a neighbor's leaves for pay. Other odd jobs are not stated. Ask Illinois DOL child labor questions: 312-793-5570."
     },
     "own": {
      "permit": null,
@@ -454,9 +464,9 @@
      "nonSchoolDay": 8,
      "schoolWeek": 20,
      "offWeek": 48,
-     "earliest": 5,
-     "latest": 24,
-     "latestSummer": null
+     "earliest": 7,
+     "latest": 22,
+     "latestSummer": 24
     }
    },
    "minAge": {
@@ -655,7 +665,8 @@
    "kinds": {
     "job": {
      "permit": false,
-     "text": "Minnesota does not require a general work permit. Under 16 you need an employment certificate only to work on school days during school hours."
+     "text": "Minnesota does not require a general work permit. Under 16 you need an employment certificate only to work on school days during school hours.",
+     "under": {"below": 16, "permit": null, "text": "Under 16 you need an employment certificate only to work on school days during school hours. Your answer depends on your schedule. Work after school, on weekends or in summer is outside that rule, but if a shift would fall in school hours on a school day, ask your school district superintendent first."}
     },
     "program": {
      "permit": false,
@@ -899,7 +910,7 @@
    ],
    "hours": {
     "14": "At most employers the federal limits apply and they are stricter: school days up to 3 hours, school weeks up to 18 hours, non-school days up to 8 hours, 40 a week when school is out, between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). Michigan's own rules also say not before 7 a.m. or after 9 p.m. for 14 and 15, and no more than 48 hours of school and work combined in a week.",
-    "16": "Not more than 24 hours in a workweek when school is in session, or 48 when it is not. Not before 6 a.m. or after 10:30 p.m. Sunday to Thursday, and not after 11:30 p.m. Friday and Saturday. These limits come from a state webinar PDF, so confirm with the state."
+    "16": "Not more than 24 hours in a workweek when school is in session, or 48 when it is not. Not before 6 a.m. or after 10:30 p.m. Sunday to Thursday, and not after 11:30 p.m. Friday and Saturday. The state gives two late hours, so we check against 10 p.m. to stay safe. These limits come from a state webinar PDF, so confirm with the state."
    },
    "wage": "$13.73 an hour in 2026 and $15.00 from Jan 1, 2027. Workers 16 and 17 may be paid 85 percent.",
    "limits": {
@@ -913,8 +924,8 @@
      "latestSummer": 21
     },
     "16": {
-     "schoolDay": 10,
-     "nonSchoolDay": 10,
+     "schoolDay": null,
+     "nonSchoolDay": null,
      "schoolWeek": 24,
      "offWeek": 48,
      "earliest": 6,
@@ -945,7 +956,7 @@
     },
     "volunteer": {
      "permit": null,
-     "text": "The pages we read do not say whether volunteering needs a permit. Ask the Michigan Department of Labor and Economic Opportunity."
+     "text": "Michigan's page says the youth employment law covers employers of anyone under 18, including volunteers, so a volunteer role may need a permit. Ask the program and the Michigan Department of Labor and Economic Opportunity."
     },
     "intern": {
      "permit": null,
@@ -1111,8 +1122,8 @@
      "nonSchoolDay": 10,
      "schoolWeek": 40,
      "offWeek": 50,
-     "earliest": 6,
-     "latest": 23,
+     "earliest": null,
+     "latest": null,
      "latestSummer": null
     }
    },
@@ -1493,12 +1504,14 @@
    },
    "kinds": {
     "job": {
-     "permit": true,
-     "text": "Every minor 14 through 17 needs a working permit unless Ohio law says otherwise. Ages 16 and 17 need none for nonagricultural, nonhazardous summer-vacation work."
+     "permit": null,
+     "text": "Ages 16 and 17 need a working permit during the school year but none for nonagricultural, nonhazardous summer-vacation work. They need proof of age and a signed parent or guardian consent statement. Ask the Ohio Department of Commerce which applies to your job.",
+     "under": {"below": 16, "permit": true, "text": "Every minor 14 or 15 needs a working permit."}
     },
     "program": {
-     "permit": true,
-     "text": "A paid youth program is a paid job, so the job rule applies. Read the program's own steps for what to turn in."
+     "permit": null,
+     "text": "A paid youth program is a paid job, so the job rule applies. Ages 16 and 17 need a working permit during the school year but none for nonagricultural, nonhazardous summer-vacation work. Read the program's own steps for what to turn in.",
+     "under": {"below": 16, "permit": true, "text": "Every minor 14 or 15 needs a working permit."}
     },
     "odd": {
      "permit": null,

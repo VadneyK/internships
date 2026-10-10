@@ -37,14 +37,14 @@
   },
   {
    "id": "il-youth",
-   "label": "Illinois, under 18, first 650 hours ($13.00)",
+   "label": "Illinois outside Chicago, under 18, first 650 hours ($13.00)",
    "state": "il",
    "wage": 13.0,
    "extra": []
   },
   {
    "id": "il-adult",
-   "label": "Illinois, after 650 hours or 18 and older ($15.00)",
+   "label": "Illinois outside Chicago, after 650 hours or 18 and older ($15.00)",
    "state": "il",
    "wage": 15.0,
    "extra": []
@@ -249,7 +249,7 @@
  },
  "gaps": [
   "Whether the New York Paid Family Leave deduction applies to a teen's first checks the same as to any employee.",
-  "City minimum wages and city taxes, such as Chicago's higher minimum.",
+  "Other city minimum wages and city taxes. Chicago is $17.05 from July 1, 2026 at employers with 4 or more employees (see Other states), and this estimate does not use it.",
   "Tips and overtime, which are not in the estimate.",
   "How much income tax will be withheld, which depends on the form you file.",
   "Whether a minor can file a wage claim alone in Illinois, and the time limit for Georgia and New York retaliation claims.",

@@ -3,6 +3,9 @@
 
 A program needs a refresh when:
   - nobody has verified it in the last --days days (default 120), or
+  - its status is open-now or opens-soon and its deadline has passed (flagged the same day), or
+  - its status is opens-soon and its opening date has arrived (flagged the same day), or
+  - its status is open-now and its opening date is still in the future, or
   - its deadline passed more than a week ago and it is not rolling, so the next cycle's dates are probably posted, or
   - it is still marked snippet-only (we never read the official page).
 
@@ -22,8 +25,15 @@ def needs_refresh(d, today, days):
     if age > days:
         reasons.append("last verified %d days ago" % age)
     close = proglib.parse_iso(d.get("deadline_iso"))
-    if close and (today - close).days > 7 and d["status"] not in ("rolling", "year-round"):
+    if close and d["status"] in ("open-now", "opens-soon") and close < today:
+        reasons.append("status says open but the deadline %s has passed; mark it closed-expect-reopen" % d["deadline_iso"])
+    elif close and (today - close).days > 7 and d["status"] not in ("rolling", "year-round"):
         reasons.append("deadline %s has passed; look for next year's dates" % d["deadline_iso"])
+    opens = proglib.parse_iso(d.get("opens_iso"))
+    if opens and d["status"] == "opens-soon" and opens <= today:
+        reasons.append("status says opens soon but the opening date %s has arrived; mark it open-now" % d["opens_iso"])
+    if opens and d["status"] == "open-now" and opens > today:
+        reasons.append("status says open now but it does not open until %s" % d["opens_iso"])
     if d["verified"] != "fetched":
         reasons.append("official page was never read")
     return reasons

@@ -1,4 +1,4 @@
-/* Insights page: charts built from data/entries.json. Counting logic lives in lib.js (insights) and is tested. */
+/* Insights page: charts built from data/entries-card.json. Counting logic lives in lib.js (insights) and is tested. */
 (function () {
   "use strict";
   var G = window.TIG, L = G.lib;
@@ -8,13 +8,14 @@
   function link(params) { var q = new URLSearchParams(params).toString(); return "find.html" + (q ? "?" + q : ""); }
   function rows(el, items, max, hrefOf, cls) {
     el.innerHTML = items.map(function (it) {
-      return '<a class="crow" href="' + G.esc(hrefOf(it)) + '"><span class="cl">' + G.esc(it.label) + '</span>' +
+      var href = hrefOf(it), tag = href ? "a" : "div";
+      return "<" + tag + ' class="crow"' + (href ? ' href="' + G.esc(href) + '"' : "") + '><span class="cl">' + G.esc(it.label) + '</span>' +
         '<span class="ctrack"><i class="' + (cls || "k1") + '" style="width:' + (max ? Math.max(it.n ? 2 : 0, Math.round(it.n / max * 100)) : 0) + '%"></i></span>' +
-        '<span class="cn">' + it.n + "</span></a>";
+        '<span class="cn">' + it.n + "</span></" + tag + ">";
     }).join("");
   }
 
-  G.loadEntries().then(function (list) {
+  G.loadEntries("card").then(function (list) {
     var d = L.insights(list, Date.now()), f = d.facts;
 
     $("topStats").innerHTML =
@@ -26,7 +27,7 @@
     var open = d.status[0].n + d.status[1].n, any = d.status[2].n;
     $("todayLead").textContent = open + " programs are open or opening soon, and " + any + " more take applications any time (like library volunteering). Start with the any-time ones if nothing is open yet.";
     var smax = Math.max.apply(null, d.status.map(function (s) { return s.n; }));
-    rows($("chartStatus"), d.status, smax, function (it) { return it.id === "unknown" ? link({}) : link({ when: WHEN[it.id] }); }, "k2");
+    rows($("chartStatus"), d.status, smax, function (it) { return it.id === "unknown" ? null : link({ when: WHEN[it.id] }); }, "k2");
 
     /* age */
     var amax = Math.max.apply(null, d.ages.map(function (a) { return a.n; }));

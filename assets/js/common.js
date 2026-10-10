@@ -3,15 +3,23 @@
   "use strict";
   var G = (window.TIG = window.TIG || {});
 
-  /* theme toggle */
+  /* theme toggle: the label never changes; aria-pressed says whether dark mode is on */
   var btn = document.getElementById("themeBtn");
+  function currentTheme() {
+    var cur = document.documentElement.getAttribute("data-theme");
+    if (!cur) cur = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    return cur;
+  }
+  function showThemeState() {
+    btn.setAttribute("aria-pressed", currentTheme() === "dark" ? "true" : "false");
+  }
   if (btn) {
+    showThemeState();
     btn.addEventListener("click", function () {
-      var cur = document.documentElement.getAttribute("data-theme");
-      if (!cur) cur = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-      var next = cur === "dark" ? "light" : "dark";
+      var next = currentTheme() === "dark" ? "light" : "dark";
       document.documentElement.setAttribute("data-theme", next);
       try { localStorage.setItem("theme", next); } catch (e) {}
+      showThemeState();
     });
   }
 
@@ -75,27 +83,68 @@
     window.print(); /* afterprint cleans up once the dialog closes */
   };
 
+  /* Browsers print a closed <details> as just its summary, so open every one in main for the print,
+     then put each back the way it was. Screen view does not change. */
+  var detailsForPrint = null;
+  window.addEventListener("beforeprint", function () {
+    if (detailsForPrint) return; /* already opened for this print */
+    var all = document.querySelectorAll("main details");
+    detailsForPrint = [];
+    for (var i = 0; i < all.length; i++) {
+      detailsForPrint.push([all[i], all[i].open]);
+      all[i].open = true;
+    }
+  });
+  window.addEventListener("afterprint", function () {
+    if (!detailsForPrint) return;
+    for (var i = 0; i < detailsForPrint.length; i++) detailsForPrint[i][0].open = detailsForPrint[i][1];
+    detailsForPrint = null;
+  });
+
   /* safe storage */
   G.store = {
-    get: function (k, d) { try { var v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } },
+    get: function (k, d) {
+      try {
+        var raw = localStorage.getItem(k); if (raw === null) return d;
+        var v = JSON.parse(raw);
+        /* damaged or edited saves: keep the value only when it has the same kind as the default */
+        if (Array.isArray(d)) return Array.isArray(v) ? v : d;
+        if (d !== null && typeof d === "object") return v !== null && typeof v === "object" && !Array.isArray(v) ? v : d;
+        return v === undefined ? d : v;
+      } catch (e) { return d; }
+    },
     set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
   };
 
   /* data */
-  var cache;
-  G.loadEntries = function () {
-    if (cache) return cache;
-    cache = fetch("data/entries.json", { cache: "no-cache" }).then(function (r) {
-      if (!r.ok) throw new Error("Could not load programs (" + r.status + ")");
-      return r.json();
-    });
+  var cache, liteCache, coreCache, cardCache;
+  /* G.loadEntries() is the full file (find.js). G.loadEntries(true) is the lite file: same ids and order, without the long text fields, for pages that only show a few fields. G.loadEntries("core") is the core file: same ids and order, only the keys lib.js needs to match by age, status, season and region. G.loadEntries("card") is the card file: same ids and order, only the short fields the Calendar and Numbers pages read. */
+  function checkJson(r) {
+    if (!r.ok) throw new Error("Could not load programs (" + r.status + ")");
+    return r.json();
+  }
+  G.loadEntries = function (lite) {
+    if (lite === "core") {
+      if (!coreCache) coreCache = fetch("data/entries-core.json", { cache: "no-cache" }).then(checkJson);
+      return coreCache;
+    }
+    if (lite === "card") {
+      if (!cardCache) cardCache = fetch("data/entries-card.json", { cache: "no-cache" }).then(checkJson);
+      return cardCache;
+    }
+    if (lite) {
+      if (!liteCache) liteCache = fetch("data/entries-lite.json", { cache: "no-cache" }).then(checkJson);
+      return liteCache;
+    }
+    if (!cache) cache = fetch("data/entries.json", { cache: "no-cache" }).then(checkJson);
     return cache;
   };
 
   /* labels and helpers come from lib.js (pure functions, unit tested) */
-  var L = G.lib;
+  var L = G.lib || null; /* pages with no script of their own do not load lib.js */
   /* Fill a select with every city and area, each with how many programs it has. A city with none says so, so nobody thinks the site is broken. */
   G.fillPlaces = function (sel, entries, keep) {
+    if (!L) return;
     function n(place) { var c = 0; entries.forEach(function (e) { if (L.matches(e, { place: place }, Date.now())) c++; }); return c; }
     function group(label, kind, list) {
       var g = document.createElement("optgroup"); g.label = label;
@@ -110,8 +159,10 @@
     group("Bigger areas", "area", L.AREAS);
     if (keep) sel.value = keep;
   };
-  G.REGIONS = L.REGIONS; G.HUBS = L.HUBS; G.TYPES = L.TYPES; G.FIELDS = L.FIELDS; G.PAID = L.PAID;
-  G.esc = L.esc; G.safeUrl = L.safeUrl; G.parseISO = L.parseISO; G.fmtDate = L.fmtDate; G.daysUntil = L.daysUntil;
+  if (L) {
+    G.REGIONS = L.REGIONS; G.HUBS = L.HUBS; G.TYPES = L.TYPES; G.FIELDS = L.FIELDS; G.PAID = L.PAID;
+    G.esc = L.esc; G.safeUrl = L.safeUrl; G.parseISO = L.parseISO; G.fmtDate = L.fmtDate; G.daysUntil = L.daysUntil;
+  }
 
   /* saved list shared by the Programs page and the home page */
   G.saved = {
@@ -123,4 +174,28 @@
       G.store.set("saved", a); return i === -1;
     }
   };
+  /* Warn which links open a new tab. Every a[target=_blank] gets "(opens in a new tab)" in its name:
+     appended to aria-label when it has one, otherwise as a visually hidden .sr span. Safe to run again. */
+  var NEWTAB = /opens in a new tab/i;
+  G.markNewTabLinks = function (root) {
+    var links = (root || document).querySelectorAll('a[target="_blank"]');
+    for (var i = 0; i < links.length; i++) {
+      var a = links[i], label = a.getAttribute("aria-label");
+      if (label) {
+        if (!NEWTAB.test(label)) a.setAttribute("aria-label", label + ", opens in a new tab");
+      } else if (!a.querySelector("span.sr[data-newtab]") && !NEWTAB.test(a.textContent)) {
+        var m = document.createElement("span");
+        m.className = "sr"; m.setAttribute("data-newtab", "");
+        m.textContent = " (opens in a new tab)";
+        a.appendChild(m);
+      }
+    }
+  };
+  (function () {
+    var main = document.querySelector("main");
+    G.markNewTabLinks(document);
+    if (!main || !window.MutationObserver || G.newTabObserver) return;
+    G.newTabObserver = new MutationObserver(function () { G.markNewTabLinks(main); });
+    G.newTabObserver.observe(main, { childList: true, subtree: true });
+  })();
 })();

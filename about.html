@@ -20,8 +20,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=3c859005">
-<link rel="stylesheet" href="assets/css/style.css?v=3c859005">
+<link rel="stylesheet" href="assets/css/fonts.css?v=7e7ed858">
+<link rel="stylesheet" href="assets/css/style.css?v=7e7ed858">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -50,12 +50,12 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch light and dark mode" title="Light / dark">&#9681;</button>
   </div>
 </header>
-<main id="main">
+<main id="main" tabindex="-1">
 <section style="padding-block:2rem 1rem;">
   <div class="wrap">
     <span class="tag y eyebrow">About</span>
     <h1 style="font-size:clamp(2.2rem,7vw,4rem);">About this <span class="orange">guide</span></h1>
-    <p class="lede">A free, open-source list of ways for teens in California, Atlanta, New York and Chicago to get real experience, with the rules and the messages that help you get a yes.</p>
+    <p class="lede">A free, open-source list of ways for teens to get real experience. It started in California, Atlanta, New York and Chicago, and now lists programs in more states, such as Texas, Ohio and Pennsylvania, plus Vancouver, BC. It also has the rules and the messages that help you get a yes.</p>
   </div>
 </section>
 
@@ -114,13 +114,13 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
         <ul>
           <li>No accounts, no sign-up, no ads, no analytics, no cookies.</li>
           <li>The message builder, people map and resume builder run in your browser. What you type is not sent to us or anyone else.</li>
-          <li>Your saved list, people map and light/dark choice are stored on your own device so they are there next time. Clear them any time with the buttons on the page or in your browser settings.</li>
+          <li>Your saved list, people map, message details (your name, grade and school), first-job checklist, interview notes, availability, reference contacts, resume draft (only if you tick &ldquo;Keep my draft on this device&rdquo;), youth leader group details and light/dark choice are stored on your own device so they are there next time. Most have a Clear button on their page. You can also clear this site&rsquo;s data any time in your browser settings.</li>
           <li>Fonts and pictures are served from this site. The page makes no requests to other companies.</li>
         </ul>
       </div>
       <div class="callout plain">
         <h3>Using this on a shared computer?</h3>
-        <p>Press &ldquo;Clear&rdquo; on the people map and clear your resume before you leave. The resume builder does not save anything unless you print or copy it.</p>
+        <p>Press &ldquo;Clear everything&rdquo; on the people map and clear your resume before you leave. The resume draft is saved only if you tick &ldquo;Keep my draft on this device&rdquo; (off by default), and your email and phone are never saved. The interview page&rsquo;s &ldquo;Clear all hours&rdquo; button clears only the hours, so notes and references need a browser data clear: clear this site&rsquo;s data in your browser settings before you leave.</p>
       </div>
     </div>
   </div>
@@ -160,11 +160,26 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <div>
         <h2 class="fh">Teen internship guide</h2>
         <p>Free. No sign-up, no ads, no tracking. Everything you type here stays in your browser.</p>
-        <p class="small">Last checked <b>Oct 9, 2026</b> &middot; 615 programs</p>
+        <p class="small">Last checked <b>Oct 9, 2026</b> &middot; 612 programs</p>
       </div>
       <div>
         <h2 class="fh">Quick links</h2>
-        <p><a href="find.html">Find a program</a><br><a href="playbook.html">Write your message</a><br><a href="resume.html">Build a first resume</a><br><a href="ready.html">Get ready for day one</a><br><a href="calendar.html">What opens when</a><br><a href="paycheck.html">Your first paycheck</a><br><a href="younger.html">Ages 12 to 14: start here</a><br><a href="interview.html">Apply and interview prep</a><br><a href="permit.html">Do I need a work permit?</a><br><a href="languages.html">Work rules in your language</a><br><a href="insights.html">The numbers</a><br><a href="rules.html">Work permit and pay rules</a><br><a href="states.html">Rules in Georgia, New York, Illinois</a><br><a href="contribute.html">Help build this guide</a></p>
+        <ul class="qlinks">
+          <li><a href="find.html">Find a program</a></li>
+          <li><a href="playbook.html">Write your message</a></li>
+          <li><a href="resume.html">Build a first resume</a></li>
+          <li><a href="ready.html">Get ready for day one</a></li>
+          <li><a href="calendar.html">What opens when</a></li>
+          <li><a href="paycheck.html">Your first paycheck</a></li>
+          <li><a href="younger.html">Ages 12 to 14: start here</a></li>
+          <li><a href="interview.html">Apply and interview prep</a></li>
+          <li><a href="permit.html">Do I need a work permit?</a></li>
+          <li><a href="languages.html">Work rules in your language</a></li>
+          <li><a href="insights.html">The numbers</a></li>
+          <li><a href="rules.html">Work permit and pay rules</a></li>
+          <li><a href="states.html">Rules in Georgia, New York, Illinois</a></li>
+          <li><a href="contribute.html">Help build this guide</a></li>
+        </ul>
       </div>
       <div>
         <h2 class="fh">About this page</h2>
@@ -175,8 +190,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=3c859005"></script>
-<script src="assets/js/common.js?v=3c859005"></script>
+<script src="assets/js/common.js?v=7e7ed858"></script>
 
 </body>
 </html>

@@ -35,5 +35,5 @@
   "verified": "snippet-only",
   "verified_on": "2026-10-07",
   "priority": 3,
-  "notes": "Confirm first. The membership and duties come from Livermore Municipal Code Chapter 2.51, read on the code publisher's page. The city's own teen page (livermoreca.gov) returned HTTP 403 to both our fetch tools, so the application process, term, and dates are not confirmed. The municipal code gives 15 youth seats and 3 adult seats; the code does not say how seats are filled."
+  "notes": "Confirm first. The membership and duties come from Livermore Municipal Code Chapter 2.51, read on the code publisher's page. The city's own teen page (livermoreca.gov) returned HTTP 403 to both our fetch tools, so the application process, term, and dates are not confirmed. The municipal code gives 15 youth seats and 3 adult seats; the code does not say how seats are filled. Re-checked on 2026-10-09: the City teen page returned HTTP 403 again, so it could not be read and the card stays snippet-only."
 }

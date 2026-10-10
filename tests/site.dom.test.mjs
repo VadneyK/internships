@@ -13,6 +13,9 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const PAGES = fs.readdirSync(ROOT).filter((f) => f.endsWith(".html")).sort();
 const EM_OR_EN_DASH = /[\u2013\u2014]/;
 const BAD_TOKEN = /NaN|undefined|\{\{/;
+// Hard-coded city counts and the old "5 areas" stat. The stat text runs straight into the number before it (for example "checked5areas"), so the 5 has no word boundary before it.
+const CITY_COUNT = /(?<![0-9])\d+\s+(?:other\s+)?cities\b/i;
+const FIVE_AREAS = /(?<![0-9])5\s*areas\b/i;
 
 // Static parse of a built file (no scripts run). Used for link and anchor targets.
 const parsedCache = new Map();
@@ -210,6 +213,16 @@ for (const file of PAGES) {
     assert.equal(hit, null, hit ? `token "${hit[0]}" near: "${text.slice(Math.max(0, hit.index - 40), hit.index + 40)}"` : "");
   });
 
+  test(`${file}: no hard-coded city count or "5 areas" in the page text`, async () => {
+    const { document } = await load(file);
+    const metaText = [...document.querySelectorAll("meta[content]")].map((m) => m.getAttribute("content"));
+    const text = [document.title, ...metaText, document.body.textContent].join(" ");
+    for (const re of [CITY_COUNT, FIVE_AREAS]) {
+      const hit = text.match(re);
+      assert.equal(hit, null, hit ? `"${hit[0]}" near: "${text.slice(Math.max(0, hit.index - 40), hit.index + 60)}"` : "");
+    }
+  });
+
   test(`${file}: every img has an alt attribute`, async () => {
     const { document } = await load(file);
     const missing = [...document.querySelectorAll("img")].filter((img) => !img.hasAttribute("alt")).map((img) => img.getAttribute("src"));
@@ -287,6 +300,41 @@ test("home: quick-start picker shows real matches and a count", async () => {
   for (const c of cards) assert.ok(c.querySelector("h3").textContent.trim().length > 0);
 });
 
+test("home: age 13 shows a link to the ages 12 to 14 page under the match button", async () => {
+  const { window, document } = await load("index.html");
+  type(window, document.getElementById("pAge"), "13");
+  await tick();
+  const link = document.querySelector("#matchMore a[href='younger.html']");
+  assert.ok(link, "no link to younger.html after choosing age 13");
+  assert.equal(link.textContent.trim(), "Under 14? Read the ages 12 to 14 page");
+  assert.match(document.getElementById("matchMore").textContent, /See all (\d+) matches/);
+});
+
+test("home: age 12 keeps the ages 12 to 14 link in the zero-match empty state", async () => {
+  const { window, document } = await load("index.html");
+  type(window, document.getElementById("pAge"), "12");
+  await tick();
+  assert.ok(document.querySelector("#matchMore a[href='younger.html']"), "no link after choosing age 12");
+  type(window, document.getElementById("pHub"), "city:ann-arbor");
+  type(window, document.getElementById("pField"), "trades");
+  await tick();
+  assert.ok(document.querySelector("#matches .empty"), "expected the empty-state card for this filter");
+  assert.ok(document.querySelector("#matchMore a[href='younger.html']"), "link missing in the empty state");
+});
+
+test("home: age 16 does not show the ages 12 to 14 link", async () => {
+  const { window, document } = await load("index.html");
+  type(window, document.getElementById("pAge"), "16");
+  await tick();
+  assert.equal(document.querySelectorAll("#matchMore a[href='younger.html'], #matches a[href='younger.html']").length, 0);
+  assert.match(document.getElementById("matchMore").textContent, /See all (\d+) matches/);
+});
+
+test("home: the Under 16 callout links to the ages 12 to 14 page", async () => {
+  const { document } = await load("index.html");
+  assert.ok(document.querySelector("#young a[href='younger.html']"), "no younger.html link in the Under 16 callout");
+});
+
 test("home: stat numbers and footer count match data/entries.json", async () => {
   const { document } = await load("index.html");
   const total = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "entries.json"), "utf8")).length;
@@ -335,4 +383,31 @@ test("states: the more-states picker shows a card for every added state with the
     assert.doesNotMatch(out.textContent, /undefined|NaN/);
     assert.match(out.querySelector("a.btn").href, /permit\.html\?state=/);
   }
+});
+
+// The state counts on the permit and states pages come from data/permits.json. Non-BC keys are the states.
+// States page detail covers Georgia, New York and Illinois, and the Rules page covers California, so the picker covers the rest.
+test("permit and states pages: state counts match the non-BC keys in data/permits.json", () => {
+  const permits = JSON.parse(fs.readFileSync(path.join(ROOT, "data/permits.json"), "utf8"));
+  const keys = Object.keys(permits.states);
+  assert.ok(keys.includes("bc"), "data/permits.json has a bc key");
+  const stateCount = keys.filter((k) => k !== "bc").length;
+  const pickerCount = keys.filter((k) => !["bc", "ca", "ga", "ny", "il"].includes(k)).length;
+
+  const permitDoc = parsedFile("permit.html");
+  const desc = permitDoc.querySelector('meta[name="description"]').getAttribute("content");
+  assert.match(desc, new RegExp(`\\(${stateCount} states and British Columbia\\)`), "permit.html description state count");
+  assert.ok(permitDoc.body.textContent.includes(`${stateCount} states and British Columbia`), "permit.html body state count");
+
+  const statesDoc = parsedFile("states.html");
+  assert.ok(statesDoc.title.includes(`${pickerCount} More States`), `states.html title says ${pickerCount} More States`);
+  const statesDesc = statesDoc.querySelector('meta[name="description"]').getAttribute("content");
+  assert.ok(statesDesc.includes(`${pickerCount} more states and British Columbia`), "states.html description picker count");
+  assert.ok(statesDoc.body.textContent.includes(`covers ${pickerCount} more states and British Columbia`), "states.html lede picker count");
+});
+
+// The Pew summer job figures are averages for June and July 2026 (plus "so far" counts for the age groups), not a full summer count.
+test("insights page: the summer job card says the 2026 figure is a June and July average", () => {
+  const doc = parsedFile("insights.html");
+  assert.ok(doc.body.textContent.includes("June and July 2026"), "insights.html says June and July 2026");
 });

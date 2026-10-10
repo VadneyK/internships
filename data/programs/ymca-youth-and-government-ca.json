@@ -3,7 +3,8 @@
   "name": "YMCA Youth and Government (Model Legislature and Court)",
   "org": "YMCA California",
   "regions": [
-    "statewide"
+    "statewide",
+    "silicon-valley"
   ],
   "city": "California (ends at Sacramento)",
   "type": "civic-government",
@@ -11,13 +12,13 @@
     "law-government",
     "social-impact"
   ],
-  "what_you_do": "You attend weekly local meetings, then in-person conferences in November and February where you act as legislators, lawyers and judges.",
+  "what_you_do": "You go to weekly local meetings. At in-person conferences in November and February, you act as a lawmaker, lawyer or judge.",
   "min_age": null,
   "max_age": null,
   "grades": "9 to 12",
-  "who_can_apply": "High school students in grades 9 to 12. Join a local delegation. Cost and sign-up steps are not posted on the page.",
+  "who_can_apply": "High school students in grades 9 to 12 from anywhere in California. Join a local delegation. Cost and sign-up steps are not posted on either page.",
   "paid_type": "fee-based",
-  "pay_detail": "Fee not posted on the page I read; ask your local YMCA about cost and scholarships",
+  "pay_detail": "The fee is not posted on either page I read; ask your local YMCA about cost and scholarships",
   "season": "school-year",
   "duration": "Weekly meetings plus conferences in November and February",
   "status": "unconfirmed",
@@ -25,15 +26,16 @@
   "deadline_text": "Sign-up dates are not stated on the page. A conference is planned for November, so ask now.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Contact the program director at (626) 604-4210 or use the inquiry form on the YMCA of Orange County site.",
+  "how_to_apply": "Two ways to reach the program. Southern California: contact the program director at (626) 604-4210 or use the inquiry form on the YMCA of Orange County site. Silicon Valley area: click 'Sign up for more information' on the YMCA of Silicon Valley Leadership Development page, which opens the YMCA sign-up form. Neither page describes the application steps.",
   "needs_work_permit": false,
   "url": "https://ymcaoc.org/mlc/",
-  "apply_url": null,
+  "apply_url": "https://forms.ymcasv.org/view.php?id=76792",
   "sources_fetched": [
-    "https://ymcaoc.org/mlc/"
+    "https://ymcaoc.org/mlc/",
+    "https://www.ymcasv.org/education-enrichment/leadership-development"
   ],
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "Over 1,300 teens in more than 60 California delegations. This page is run by the YMCA of Orange County (Southern California) and lists no Northern California contact. Ask the director which delegation serves your area, and ask about cost and scholarships."
+  "notes": "Over 1,300 teens in more than 60 California delegations. The YMCA of Orange County page (Southern California) lists no Northern California contact. The YMCA of Silicon Valley lists the same statewide program and links a sign-up form for the Silicon Valley area. Ask the director which delegation serves your area, and ask about cost and scholarships. The YMCA of Silicon Valley Leadership Development page also lists other teen groups and a Model UN program for middle school students; they are not part of this entry."
 }

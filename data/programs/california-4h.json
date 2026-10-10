@@ -34,5 +34,5 @@
   "verified": "snippet-only",
   "verified_on": "2026-10-07",
   "priority": 3,
-  "notes": "The 4-H site blocked automated access on 2026-10-07 (403 and a bot check), so age rules and fees could not be read. Ages, fees and teen roles must be confirmed with your county 4-H office."
+  "notes": "The 4-H site blocked automated access on 2026-10-07 (403 and a bot check), so age rules and fees could not be read. Ages, fees and teen roles must be confirmed with your county 4-H office. Re-checked on 2026-10-09: the 4-H page returned HTTP 403 again, so it could not be read and the card stays snippet-only."
 }

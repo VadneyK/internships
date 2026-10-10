@@ -13,29 +13,30 @@
     "education",
     "tech-cs"
   ],
-  "what_you_do": "Teen volunteers in the museum's Holiday Helper program, Nov 23, 2026 to Jan 3, 2027. The page does not describe the duties.",
-  "min_age": null,
+  "what_you_do": "Teen volunteers lead hands-on science, tech and art activities for museum visitors during the holiday season. Volunteers complete six shifts of 3 to 4 hours.",
+  "min_age": 14,
   "max_age": null,
   "grades": "Teen",
-  "who_can_apply": "Teens. The page states no minimum age or other rules.",
+  "who_can_apply": "Teens who are 14 or older by Nov 21, 2026.",
   "paid_type": "unpaid",
   "pay_detail": null,
   "season": "winter",
-  "duration": "Nov 23, 2026 to Jan 3, 2027",
-  "status": "opens-soon",
-  "opens_iso": "2026-10-09",
-  "deadline_text": "Applications open Oct 9 to Oct 23, 2026.",
-  "deadline_iso": "2026-10-23",
-  "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Apply through the volunteer hub during the window. Questions: volunteer@thetech.org or 408-294-8324.",
+  "duration": "Six shifts in the peak windows: Nov 21 to 29 and Dec 19 to Jan 3",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "The official page gives no application dates as of Oct 9, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Use the Apply Here link on the official page (vhub.at/TeenVolunteer). Questions: volunteer@thetech.org or 408-294-8324.",
   "needs_work_permit": false,
   "url": "https://www.thetech.org/support-us/volunteer",
   "apply_url": null,
   "sources_fetched": [
-    "https://www.thetech.org/support-us/volunteer"
+    "https://www.thetech.org/support-us/volunteer",
+    "https://thetech.volunteerhub.com/vv2/lp/TeenVolunteer/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-10-09",
   "priority": 1,
-  "notes": "Very time-sensitive: the window is two weeks. Check with the museum about age rules before applying."
+  "notes": "The Oct 7 card said applications open Oct 9 to Oct 23, 2026. On Oct 9 the official page no longer shows that window, and the apply hub page shows no dates in its HTML (its content loads with JavaScript), so the status is unconfirmed. Re-check the official page for a new window. The page lists three mandatory 3.5-hour orientation and tour sessions on Saturdays Nov 14, Nov 21 and Dec 5, 2026, 9:00 AM to 12:30 PM. Applications are reviewed after the deadline by availability and answers. The page gives no year for Jan 3. The page's email addresses are encoded and could not be re-read on Oct 9; the email is kept from the Oct 7 read."
 }

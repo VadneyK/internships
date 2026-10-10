@@ -1,6 +1,12 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { loadPage, type, tick } from "./dom-helper.mjs";
+import { readFileSync } from "node:fs";
+import { join, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const repo = join(dirname(fileURLToPath(import.meta.url)), "..");
+const permits = JSON.parse(readFileSync(join(repo, "data/permits.json"), "utf8"));
 
 async function pick(page, st, age, kind) {
   const { window, document } = page;
@@ -61,4 +67,31 @@ test("permit: Washington, Texas, Michigan and Ohio give a plain answer with sour
     assert.doesNotMatch(p.document.getElementById("pOut").textContent, /undefined|NaN/);
     assert.ok(p.document.querySelectorAll("#pOut a").length >= 2, st + " should link its sources");
   }
+});
+
+test("permit: California's 7th grade rule is for 14 to 17, not for 12 and 13", async () => {
+  const p = await loadPage("permit.html", { search: "?state=ca&age=12&kind=job" }); await tick();
+  assert.doesNotMatch(permits.states.ca.hours["12"], /7th grade/);
+  assert.doesNotMatch(p.document.getElementById("pOut").textContent, /7th grade/);
+  const r = await loadPage("rules.html"); await tick();
+  assert.match(r.document.body.textContent, /At 14 to 17, you need to have finished 7th grade/);
+});
+
+test("permit: the answer links to the paycheck page for the same state, but not when too young", async () => {
+  const p = await loadPage("permit.html", { search: "?state=ga&age=15&kind=job" }); await tick();
+  const a = p.document.querySelector("#pOut a[href='paycheck.html?state=ga']");
+  assert.ok(a, "paycheck link present");
+  assert.match(a.textContent, /first paycheck in Georgia/);
+  const y = await loadPage("permit.html", { search: "?state=ca&age=12&kind=job" }); await tick();
+  assert.equal(y.document.querySelector("#pOut a[href^='paycheck.html']"), null);
+});
+
+test("permit: New York 12 year old babysitter is told the age limit, not just exempt", async () => {
+  const p = await loadPage("permit.html", { search: "?state=ny&age=12&kind=odd" }); await tick();
+  const out = p.document.getElementById("pOut").textContent;
+  assert.match(out, /at least 14/);
+  assert.match(out, /Yard work for 12 and 13 year olds is not stated/);
+  assert.equal(p.document.querySelector("#pOut .tag").textContent, "Check first");
+  assert.match(p.document.querySelector("#pOut h2").textContent, /Check before you start/);
+  assert.doesNotMatch(out, /undefined|NaN/);
 });

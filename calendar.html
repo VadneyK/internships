@@ -20,8 +20,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=3c859005">
-<link rel="stylesheet" href="assets/css/style.css?v=3c859005">
+<link rel="stylesheet" href="assets/css/fonts.css?v=7e7ed858">
+<link rel="stylesheet" href="assets/css/style.css?v=7e7ed858">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -50,10 +50,10 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch light and dark mode" title="Light / dark">&#9681;</button>
   </div>
 </header>
-<main id="main">
+<main id="main" tabindex="-1">
 <section style="padding-block:2rem 1rem;">
   <div class="wrap">
-    <p class="small muted" style="margin:0 0 .6rem;"><a href="find.html">Programs</a> &rsaquo; What opens when</p>
+    <nav class="breadcrumb small muted" aria-label="Breadcrumb"><ol><li><a href="find.html">Programs</a></li><li aria-current="page">What opens when</li></ol></nav>
     <span class="tag y eyebrow">Plan ahead</span>
     <h1 style="font-size:clamp(2.2rem,7vw,4rem);">What opens <span class="orange">when</span></h1>
     <p class="lede">Most summer programs take applications in winter and spring, so the time to get ready is now. Pick a month to see which programs take applications then. Last read Oct 9, 2026.</p>
@@ -74,6 +74,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <h2 id="hOpen" hidden>Applications open</h2>
     <ul class="langlist" id="cOpen" style="list-style:none;padding:0;display:grid;gap:1rem;"></ul>
     <div class="card" id="cNone" hidden><p>Nothing found for that month. Many programs do not state their months, so also check <a href="find.html?when=anytime">programs you can apply to anytime</a>.</p></div>
+    <p class="small muted" id="calNext">Next: <a href="playbook.html">Ask someone who works there</a>, check <a href="permit.html">the work permit finder</a>, or see <a href="younger.html">options for younger teens</a>.</p>
   </div>
 </section>
 
@@ -84,11 +85,26 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <div>
         <h2 class="fh">Teen internship guide</h2>
         <p>Free. No sign-up, no ads, no tracking. Everything you type here stays in your browser.</p>
-        <p class="small">Last checked <b>Oct 9, 2026</b> &middot; 615 programs</p>
+        <p class="small">Last checked <b>Oct 9, 2026</b> &middot; 612 programs</p>
       </div>
       <div>
         <h2 class="fh">Quick links</h2>
-        <p><a href="find.html">Find a program</a><br><a href="playbook.html">Write your message</a><br><a href="resume.html">Build a first resume</a><br><a href="ready.html">Get ready for day one</a><br><a href="calendar.html">What opens when</a><br><a href="paycheck.html">Your first paycheck</a><br><a href="younger.html">Ages 12 to 14: start here</a><br><a href="interview.html">Apply and interview prep</a><br><a href="permit.html">Do I need a work permit?</a><br><a href="languages.html">Work rules in your language</a><br><a href="insights.html">The numbers</a><br><a href="rules.html">Work permit and pay rules</a><br><a href="states.html">Rules in Georgia, New York, Illinois</a><br><a href="contribute.html">Help build this guide</a></p>
+        <ul class="qlinks">
+          <li><a href="find.html">Find a program</a></li>
+          <li><a href="playbook.html">Write your message</a></li>
+          <li><a href="resume.html">Build a first resume</a></li>
+          <li><a href="ready.html">Get ready for day one</a></li>
+          <li><a href="calendar.html">What opens when</a></li>
+          <li><a href="paycheck.html">Your first paycheck</a></li>
+          <li><a href="younger.html">Ages 12 to 14: start here</a></li>
+          <li><a href="interview.html">Apply and interview prep</a></li>
+          <li><a href="permit.html">Do I need a work permit?</a></li>
+          <li><a href="languages.html">Work rules in your language</a></li>
+          <li><a href="insights.html">The numbers</a></li>
+          <li><a href="rules.html">Work permit and pay rules</a></li>
+          <li><a href="states.html">Rules in Georgia, New York, Illinois</a></li>
+          <li><a href="contribute.html">Help build this guide</a></li>
+        </ul>
       </div>
       <div>
         <h2 class="fh">About this page</h2>
@@ -99,9 +115,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=3c859005"></script>
-<script src="assets/js/common.js?v=3c859005"></script>
-<script src="assets/js/calendar.js?v=3c859005"></script>
+<script src="assets/js/lib.js?v=7e7ed858"></script>
+<script src="assets/js/common.js?v=7e7ed858"></script>
+<script src="assets/js/calendar.js?v=7e7ed858"></script>
 
 </body>
 </html>

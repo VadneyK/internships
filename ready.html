@@ -20,8 +20,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=3c859005">
-<link rel="stylesheet" href="assets/css/style.css?v=3c859005">
+<link rel="stylesheet" href="assets/css/fonts.css?v=7e7ed858">
+<link rel="stylesheet" href="assets/css/style.css?v=7e7ed858">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -50,19 +50,32 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch light and dark mode" title="Light / dark">&#9681;</button>
   </div>
 </header>
-<main id="main">
+<main id="main" tabindex="-1">
 <section style="padding-block:2rem 1rem;">
   <div class="wrap">
     <span class="tag y eyebrow">Before day one</span>
     <h1 style="font-size:clamp(2.2rem,7vw,4rem);">Get <span class="orange">ready</span></h1>
-    <p class="lede">You got a yes. Now four things need to be lined up before you start: a work permit, your papers, a way to get paid, and a ride. Last read from official pages on Oct 9, 2026. The school district list, the California payday rule, the California tax form and the California birth certificate card are for <b>California</b>. For the permit in any other state use the <a href="permit.html">work permit finder</a> or <a href="states.html">the rules for your state</a>, and the ride picker below covers six cities. The Form I-9 papers, the Social Security card, the federal W-4 and Social Security and Medicare taxes apply everywhere in the US.</p>
+    <p class="lede">You got a yes. Now four things need to be lined up before you start: a work permit, your papers, a way to get paid, and a ride. Last read from official pages on Oct 9, 2026.</p>
+    <div class="callout plain small" style="margin-top:1rem;max-width:52rem;">
+      <p><b>Which parts are for California</b></p>
+      <p>The school district list, the California payday rule, the California tax form and the California birth certificate card are for <b>California</b>. For the permit in any other state use the <a href="permit.html">work permit finder</a> or <a href="states.html">the rules for your state</a>, and the ride picker below covers six cities. The Form I-9 papers, the Social Security card, the federal W-4 and Social Security and Medicare taxes apply to most jobs in every state. The exception is working for your parent's own unincorporated business when you are under 18 (see <a href="paycheck.html">Your first paycheck</a>).</p>
+    </div>
+    <nav class="chips" aria-label="On this page" style="margin-top:1rem;">
+      <a class="chip" style="text-decoration:none" href="#permit">1. Work permit</a>
+      <a class="chip" style="text-decoration:none" href="#papers">2. Your papers</a>
+      <a class="chip" style="text-decoration:none" href="#money">3. Getting paid</a>
+      <a class="chip" style="text-decoration:none" href="#ride">4. A ride</a>
+      <a class="chip" style="text-decoration:none" href="#city">City programs</a>
+      <a class="chip" style="text-decoration:none" href="#first">First day</a>
+    </nav>
     <div class="callout plain small" style="margin-top:1rem;max-width:52rem;">
       <p><b>This is a summary, not legal or tax advice.</b> Each section links to the page we read. Schools, transit agencies and employers can change their rules, so check the link before you rely on a date or a price. Your checklist below is saved on this device only.</p>
     </div>
     <div class="plansum" style="margin-top:1.2rem;"><span class="big" id="readySum">0 of 0 done</span></div>
+    <p class="sr" id="readyStatus" role="status"></p>
     <ol class="steps row" id="readyList" aria-label="Your checklist"></ol>
     <p class="small muted"><button class="chip" type="button" id="readyReset">Start over</button></p>
-    <p class="small">Wondering what comes out of your first check? <a href="paycheck.html">See your first paycheck</a>. Under 14? <a href="younger.html">Start here for ages 12 to 14</a>. A parent has to sign the permit. <a href="languages.html">Official pages in Spanish, Chinese, Korean, Vietnamese and Tagalog</a>.</p>
+    <p class="small">Wondering what comes out of your first check? <a href="paycheck.html">See your first paycheck</a>. Under 14? <a href="younger.html">Start here for ages 12 to 14</a>. A parent has to sign the permit. <a href="languages.html">Official pages in Spanish, Chinese, Korean, Vietnamese, Tagalog and Ukrainian</a>.</p>
   </div>
 </section>
 
@@ -70,10 +83,11 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   <div class="wrap">
     <h2>1. Work permit</h2>
     <p class="row"><a class="btn sm" href="permit.html">Find your exact permit</a> <span class="small muted">Pick your state, age and kind of work.</span></p>
-    <p>If you are under 18 and have a paid job at a business, California requires a work permit. You get the job first, then your school issues the permit. The employer and a parent also sign. The full rules on hours and ages are on the <a href="rules.html#permit">Rules page</a>.</p>
+    <p>If you are under 18 and have a paid job at a business, California requires a work permit, unless you have graduated high school or have a certificate of proficiency. You get the job first, then your school issues the permit. The employer and a parent also sign. The full rules on hours and ages are on the <a href="rules.html#permit">Rules page</a>.</p>
     <div class="field" style="max-width:26rem;"><label for="dist">Pick your school district</label>
       <select id="dist"><option value="">Choose one</option></select></div>
-    <div class="card" id="distOut" aria-live="polite" style="margin-top:1rem;"><p class="muted">Pick a district to see its steps. If yours is not listed, ask your school&rsquo;s main office or attendance office. They issue permits during the school year, and in most districts the steps are the same: get hired, fill out the form with your employer and a parent, hand it in, wait a few days.</p></div>
+    <p class="sr" id="distStatus" role="status"></p>
+    <div class="card" id="distOut" style="margin-top:1rem;"><p class="muted">Pick a district to see its steps. If yours is not listed, ask your school&rsquo;s main office or attendance office. They issue permits during the school year, and in most districts the steps are the same: get hired, fill out the form with your employer and a parent, hand it in, wait a few days.</p></div>
   </div>
 </section>
 
@@ -125,21 +139,22 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <p>A free or cheap bus pass can decide whether a job works. Each agency sets its own youth rules. In some places the school gives you the card, and in others (Orange County, San Diego, LA reduced fare) you sign up yourself, so read the "Where to get it" line before your first shift.</p>
     <div class="field" style="max-width:26rem;"><label for="rideSel">Pick where you live</label>
       <select id="rideSel"><option value="">Choose one</option></select></div>
-    <div class="card" id="rideOut" aria-live="polite" style="margin:1rem 0;"><p class="muted">Pick a city to see the card to get, what it costs, what to bring and whether it works for a job. For the Bay Area and Sacramento, see the table below.</p></div>
+    <p class="sr" id="rideStatus" role="status"></p>
+    <div class="card" id="rideOut" style="margin:1rem 0;"><p class="muted">Pick a city to see the card to get, what it costs, what to bring and whether it works for a job. For the Bay Area and Sacramento, see the table below.</p></div>
     <div class="callout plain" id="rideDrive" style="margin:0 0 1.2rem;"></div>
     <h3 id="bayRide">Bay Area and Sacramento</h3>
     <p>The shared Clipper card is the way to get most youth discounts in the Bay Area.</p>
     <div class="tablewrap" tabindex="0" role="region" aria-label="Youth transit options by area"><table>
-      <thead><tr><th>Area</th><th>What teens get</th><th>How</th></tr></thead>
+      <thead><tr><th scope="col">Area</th><th scope="col">What teens get</th><th scope="col">How</th></tr></thead>
       <tbody>
-        <tr><td>San Francisco (Muni)</td><td>Free for ages 18 and under. Cable cars excepted.</td><td>No sign-up. Just board. <a href="https://www.sfmta.com/getting-around/muni/fares/free-muni" target="_blank" rel="noopener">SFMTA</a></td></tr>
-        <tr><td>Sacramento (SacRT)</td><td>Free on buses and light rail for students in grades TK to 12. Current card is good through June 30, 2027.</td><td>Schools hand out cards. You can also get one at the SacRT customer service center. <a href="https://www.sacrt.com/sacrts-rydefreert-program-fare-free-transit-for-youth-grades-tk-12/" target="_blank" rel="noopener">SacRT</a></td></tr>
-        <tr><td>Yolo County (Yolobus)</td><td>Free on fixed routes for ages 18 and under. Fares listed are effective through June 30, 2027.</td><td>Board with a student ID if asked. <a href="https://yolobus.com/fares/" target="_blank" rel="noopener">Yolobus</a></td></tr>
-        <tr><td>Davis (Unitrans)</td><td>A 2024 form says youth 18 and under ride free with a Davis school ID or a Youth Pass. We could not confirm that this still applies.</td><td>Check with Unitrans before relying on it. <a href="https://unitrans.ucdavis.edu/" target="_blank" rel="noopener">Unitrans</a></td></tr>
-        <tr><td>Alameda County (local buses)</td><td>Free local bus pass for students in grades 6 to 12 at participating schools. Some districts give it only to families who qualify for free or reduced-price meals.</td><td>Apply through your school. <a href="https://www.alamedactc.org/programs-projects/studentpass" target="_blank" rel="noopener">Alameda CTC</a></td></tr>
-        <tr><td>BART and AC Transit</td><td>Youth ages 5 to 18 get 50% off with a Youth Clipper card.</td><td>Apply for a Youth Clipper card. Bring proof of age. <a href="https://www.bart.gov/tickets/discounts" target="_blank" rel="noopener">BART</a> &middot; <a href="https://www.actransit.org/discounts" target="_blank" rel="noopener">AC Transit</a></td></tr>
-        <tr><td>Santa Clara County (VTA)</td><td>Youth fares for ages 5 to 18, and a free Youth Clipper card. A Summer Youth Pass for 18 and under ran this year and VTA says it will return in summer 2027.</td><td>Apply for a free Youth Clipper card. <a href="https://www.vta.org/go/fares/clipper" target="_blank" rel="noopener">VTA</a></td></tr>
-        <tr><td>Caltrain</td><td>Youth fares for riders 18 and under. No fee for a Youth Clipper card.</td><td>Apply online at clippercard.com. <a href="https://www.caltrain.com/fares/ticket-types" target="_blank" rel="noopener">Caltrain</a></td></tr>
+        <tr><th scope="row">San Francisco (Muni)</th><td>Free for ages 18 and under. Cable cars excepted.</td><td>No sign-up. Just board. <a href="https://www.sfmta.com/getting-around/muni/fares/free-muni" target="_blank" rel="noopener">SFMTA</a></td></tr>
+        <tr><th scope="row">Sacramento (SacRT)</th><td>Free on buses and light rail for students in grades TK to 12. Current card is good through June 30, 2027.</td><td>Schools hand out cards. You can also get one at the SacRT customer service center. <a href="https://www.sacrt.com/sacrts-rydefreert-program-fare-free-transit-for-youth-grades-tk-12/" target="_blank" rel="noopener">SacRT</a></td></tr>
+        <tr><th scope="row">Yolo County (Yolobus)</th><td>Free on fixed routes for ages 18 and under. Fares listed are effective through June 30, 2027.</td><td>Board with a student ID if asked. <a href="https://yolobus.com/fares/" target="_blank" rel="noopener">Yolobus</a></td></tr>
+        <tr><th scope="row">Davis (Unitrans)</th><td>A 2024 form says youth 18 and under ride free with a Davis school ID or a Youth Pass. We could not confirm that this still applies.</td><td>Check with Unitrans before relying on it. <a href="https://unitrans.ucdavis.edu/" target="_blank" rel="noopener">Unitrans</a></td></tr>
+        <tr><th scope="row">Alameda County (local buses)</th><td>Free local bus pass for students in grades 6 to 12 at participating schools. Some districts give it only to families who qualify for free or reduced-price meals.</td><td>Apply through your school. <a href="https://www.alamedactc.org/programs-projects/studentpass" target="_blank" rel="noopener">Alameda CTC</a></td></tr>
+        <tr><th scope="row">BART and AC Transit</th><td>Youth ages 5 to 18 get 50% off with a Youth Clipper card.</td><td>Apply for a Youth Clipper card. Bring proof of age. <a href="https://www.bart.gov/tickets/discounts" target="_blank" rel="noopener">BART</a> &middot; <a href="https://www.actransit.org/discounts" target="_blank" rel="noopener">AC Transit</a></td></tr>
+        <tr><th scope="row">Santa Clara County (VTA)</th><td>Youth fares for ages 5 to 18, and a free Youth Clipper card. A Summer Youth Pass for 18 and under ran this year and VTA says it will return in summer 2027.</td><td>Apply for a free Youth Clipper card. <a href="https://www.vta.org/go/fares/clipper" target="_blank" rel="noopener">VTA</a></td></tr>
+        <tr><th scope="row">Caltrain</th><td>Youth fares for riders 18 and under. No fee for a Youth Clipper card.</td><td>Apply online at clippercard.com. <a href="https://www.caltrain.com/fares/ticket-types" target="_blank" rel="noopener">Caltrain</a></td></tr>
       </tbody></table></div>
     <p class="small muted" style="margin-top:.8rem;">Under 13, a parent or guardian completes the Clipper application. <a href="https://www.clippercard.com/discounts.html" target="_blank" rel="noopener">Clipper discounts</a>. Clipper START is for adults 19 to 64, not teens. Prices are left off here because they change; the agency page has the current ones.</p>
     <div class="callout plain" style="margin-top:1.2rem;"><p><b>Cannot get there?</b> Say so when you apply. Ask whether a parent can drive you at first, whether another employee lives near you, and whether shifts can start after your bus arrives.</p></div>
@@ -175,7 +190,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <li class="ok"><span class="box" aria-hidden="true">&#10003;</span><span>Bring your original documents and your signed work permit.</span></li>
       <li class="ok"><span class="box" aria-hidden="true">&#10003;</span><span>Ask: What is my schedule? Who is my supervisor? When is payday?</span></li>
       <li class="ok"><span class="box" aria-hidden="true">&#10003;</span><span>Write down your hours. If anything looks wrong on your first check, ask politely, then use the <a href="rules.html#help">help steps</a>.</span></li>
-      <li class="ok"><span class="box" aria-hidden="true">&#10003;</span><span>Within a day, send a thank-you to the person who hired you. See the <a href="playbook.html#after">Playbook</a>.</span></li>
+      <li class="ok"><span class="box" aria-hidden="true">&#10003;</span><span>Within 1 to 2 days, send a thank-you to the person who hired you. See the <a href="playbook.html#after">Playbook</a>.</span></li>
     </ul>
   </div>
 </section>
@@ -187,11 +202,26 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <div>
         <h2 class="fh">Teen internship guide</h2>
         <p>Free. No sign-up, no ads, no tracking. Everything you type here stays in your browser.</p>
-        <p class="small">Last checked <b>Oct 9, 2026</b> &middot; 615 programs</p>
+        <p class="small">Last checked <b>Oct 9, 2026</b> &middot; 612 programs</p>
       </div>
       <div>
         <h2 class="fh">Quick links</h2>
-        <p><a href="find.html">Find a program</a><br><a href="playbook.html">Write your message</a><br><a href="resume.html">Build a first resume</a><br><a href="ready.html">Get ready for day one</a><br><a href="calendar.html">What opens when</a><br><a href="paycheck.html">Your first paycheck</a><br><a href="younger.html">Ages 12 to 14: start here</a><br><a href="interview.html">Apply and interview prep</a><br><a href="permit.html">Do I need a work permit?</a><br><a href="languages.html">Work rules in your language</a><br><a href="insights.html">The numbers</a><br><a href="rules.html">Work permit and pay rules</a><br><a href="states.html">Rules in Georgia, New York, Illinois</a><br><a href="contribute.html">Help build this guide</a></p>
+        <ul class="qlinks">
+          <li><a href="find.html">Find a program</a></li>
+          <li><a href="playbook.html">Write your message</a></li>
+          <li><a href="resume.html">Build a first resume</a></li>
+          <li><a href="ready.html">Get ready for day one</a></li>
+          <li><a href="calendar.html">What opens when</a></li>
+          <li><a href="paycheck.html">Your first paycheck</a></li>
+          <li><a href="younger.html">Ages 12 to 14: start here</a></li>
+          <li><a href="interview.html">Apply and interview prep</a></li>
+          <li><a href="permit.html">Do I need a work permit?</a></li>
+          <li><a href="languages.html">Work rules in your language</a></li>
+          <li><a href="insights.html">The numbers</a></li>
+          <li><a href="rules.html">Work permit and pay rules</a></li>
+          <li><a href="states.html">Rules in Georgia, New York, Illinois</a></li>
+          <li><a href="contribute.html">Help build this guide</a></li>
+        </ul>
       </div>
       <div>
         <h2 class="fh">About this page</h2>
@@ -202,9 +232,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=3c859005"></script>
-<script src="assets/js/common.js?v=3c859005"></script>
-<script src="assets/js/ready.js?v=3c859005"></script>
+<script src="assets/js/lib.js?v=7e7ed858"></script>
+<script src="assets/js/common.js?v=7e7ed858"></script>
+<script src="assets/js/ready.js?v=7e7ed858"></script>
 
 </body>
 </html>

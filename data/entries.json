@@ -86,7 +86,8 @@
   "regions": [
    "oakland",
    "east-bay",
-   "alameda"
+   "alameda",
+   "fremont"
   ],
   "city": "Alameda County, CA",
   "type": "paid-youth-program",
@@ -119,52 +120,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "Out-of-school youth ages 16 to 24 use the Future Force program instead: La Familia (Eden Area) (925) 935-2643, Ohlone College (Tri Cities) (510) 742-2323, International Rescue Committee (North Cities) (510) 857-6884. See also Alameda County Youth Innovation Program, a separate listing from the same county board that names the same two providers (Eden ROP and Tri-Valley ROP).",
-  "verified_on_label": "Oct 7, 2026"
- },
- {
-  "id": "acwdb-youth-innovation-2",
-  "name": "Alameda County Youth Innovation Program",
-  "org": "Alameda County Workforce Development Board",
-  "regions": [
-   "alameda",
-   "east-bay",
-   "fremont",
-   "oakland"
-  ],
-  "city": "Hayward, CA (providers across Alameda County)",
-  "type": "paid-youth-program",
-  "fields": [
-   "any"
-  ],
-  "what_you_do": "Help preparing for college and jobs, including internships and apprenticeships, plus work experience, mentoring, career counseling and financial literacy.",
-  "min_age": 16,
-  "max_age": 21,
-  "grades": null,
-  "who_can_apply": "Ages 16 to 21 who are currently in high school or college. Out-of-school youth ages 16 to 24 use a separate county youth program.",
-  "paid_type": "mixed",
-  "pay_detail": "Not stated on the page. Services include paid and unpaid work experience, so ask the provider about pay.",
-  "season": "year-round",
-  "duration": null,
-  "status": "rolling",
-  "opens_iso": null,
-  "deadline_text": "Rolling.",
-  "deadline_iso": null,
-  "deadline_confidence": "rolling",
-  "how_to_apply": "Contact one of the providers listed on the program page: Eden ROP in Hayward, (510) 293-2900, or Tri-Valley ROP in Livermore, (925) 487-4153. County line: 510-259-3842.",
-  "needs_work_permit": true,
-  "url": "https://acwdb.org/youth-innovation/",
-  "apply_url": null,
-  "sources_fetched": [
-   "https://acwdb.org/youth-innovation/",
-   "https://acwdb.org/youth/",
-   "https://www.acwdb.org",
-   "https://socialservices.alamedacountyca.gov/about-us/Government-and-Community-Relations/divisions/workforce-development-board"
-  ],
-  "verified": "fetched",
-  "verified_on": "2026-10-07",
-  "priority": 1,
-  "notes": "Two providers only: Eden ROP (Hayward) and Tri-Valley ROP (Livermore), so which one serves you depends on where you live. Pay is not stated. A Hayward AJCC fact sheet (Rubicon Programs) mentions federal WIOA youth ages 14 to 24 with at least one barrier; ask your provider about younger teens. See also Youth Innovation Program (WIOA In-School Youth), a separate listing from the same county board that names the same two providers.",
+  "notes": "Out-of-school youth ages 16 to 24 use the Future Force program instead: La Familia (Eden Area) (925) 935-2643, Ohlone College (Tri Cities) (510) 742-2323, International Rescue Committee (North Cities) (510) 857-6884. The county page names only two providers, Eden ROP (Hayward) and Tri-Valley ROP (Livermore), and says to contact the one near you.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -336,7 +292,8 @@
   "org": "Alameda County Library",
   "regions": [
    "silicon-valley",
-   "fremont"
+   "fremont",
+   "alameda"
   ],
   "city": "Fremont, Newark and Union City, CA",
   "type": "volunteer",
@@ -848,7 +805,7 @@
   "grades": null,
   "who_can_apply": "Ages 16 to 24 living in Cherokee, Clayton, Douglas, Fayette, Gwinnett, Henry or Rockdale County. In-school or out-of-school youth who face a barrier such as offender history, homelessness, foster care, parenting, disability or being a basic-skills-deficient or English learner diploma holder.",
   "paid_type": "mixed",
-  "pay_detail": "The page does not mention wages, stipends or work experience pay. Ask your county provider what is offered.",
+  "pay_detail": "Cost and pay are not stated on the page. Ask the program before you count on either. The page does not mention wages, stipends or work experience pay.",
   "season": "year-round",
   "duration": "Year-round",
   "status": "year-round",
@@ -864,7 +821,7 @@
    "https://dol.georgia.gov/child-labor-employment-certificate-instructions"
   ],
   "priority": 2,
-  "notes": "This is the only Gwinnett and Clayton county youth workforce program found. The City of Atlanta, Fulton, DeKalb and Cobb are not on this page's county list; see their own entries. Providers named on the page: Cherokee Youth Works and Hearts to Nourish Hope. Georgia requires a work permit only under 16, and this program starts at 16.",
+  "notes": "This is the only Gwinnett and Clayton county youth workforce program found. The City of Atlanta, Fulton, DeKalb and Cobb are not on this page's county list; see their own entries. Providers named on the page: Cherokee Youth Works and Hearts to Nourish Hope. Georgia requires a work permit only under 16, and this program starts at 16. Re-read on 2026-10-09: the page says nothing about cost or pay, so the card is not in the paid group.",
   "verified_on_label": "Oct 9, 2026"
  },
  {
@@ -1091,19 +1048,19 @@
   "season": "summer",
   "duration": "The 2026 Teen Leaders Summer Academy ran June 8 to July 24, Monday to Friday.",
   "status": "unconfirmed",
-  "deadline_text": "Register as a Teen Leader by Dec 31, 2026 to be considered for the Parks and Recreation summer employment program. That date is a registration cutoff, not a job application. Registration is ongoing. The catalog says summer 2026 employment registration is closed.",
+  "deadline_text": "The catalog says teens must be registered prior to December 31, 2026 to be considered for the Parks and Recreation summer employment program, and that registration is ongoing. That date is a registration cutoff, not a job application. The catalog also says summer 2026 employment registration is closed.",
   "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Register for the Atlanta Teen Leader Program. The catalog lists atlantaga.gov/iparcs as the City registration site for its programs. Confirm the steps with your nearest participating recreation center.",
   "needs_work_permit": null,
   "url": "https://cdn.prod.website-files.com/605b905d0921c80603fd8bd1/69cd34b345bd638cd961afbf_2026%20DPR%20Summer%20Catalog%20and%20Safe%20Summer%20Guide.pdf",
-  "apply_url": null,
+  "apply_url": "https://www.atlantaga.gov/iparcs",
   "sources_fetched": [
    "https://cdn.prod.website-files.com/605b905d0921c80603fd8bd1/69cd34b345bd638cd961afbf_2026%20DPR%20Summer%20Catalog%20and%20Safe%20Summer%20Guide.pdf",
    "https://atlyearoftheyouth.com/"
   ],
   "priority": 2,
-  "notes": "Source is the City's 2026 summer catalog, so it does not say which summer the Dec 31, 2026 cutoff is for (most likely summer 2027). Ages and pay for the actual summer jobs are not stated. Georgia requires a work permit for any job under 16. The City's iParcs page blocked automated reading.",
+  "notes": "Source is the City's 2026 summer catalog, so it does not say which summer the Dec 31, 2026 registration cutoff is for. Ages and pay for the actual summer jobs are not stated. Georgia requires a work permit for any job under 16. The City's iParcs page blocked automated reading.",
   "verified_on_label": "Oct 9, 2026"
  },
  {
@@ -1453,7 +1410,7 @@
   "grades": "9 to 12",
   "who_can_apply": "Berkeley High students in grades 9 to 12.",
   "paid_type": "unpaid-credit",
-  "pay_detail": null,
+  "pay_detail": "Not stated on the page.",
   "season": "school-year",
   "duration": null,
   "status": "year-round",
@@ -1821,7 +1778,7 @@
   "grades": null,
   "who_can_apply": "Girls ages 7 to 18 for workshops. A separate College and Careers Community serves ages 18 plus.",
   "paid_type": "mixed",
-  "pay_detail": "Prices not posted; Code Along videos are free",
+  "pay_detail": "Workshop cost and pay are not stated on the home page. The Code Along videos on YouTube are free. The page does not say anyone is paid.",
   "season": "year-round",
   "duration": "Workshop length varies",
   "status": "year-round",
@@ -1839,7 +1796,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 3,
-  "notes": "The home page did not name a Bay Area chapter, prices or workshop dates. Check the events page for what is open now. Code Along videos are free on YouTube.",
+  "notes": "The home page did not name a Bay Area chapter, prices or workshop dates. Check the events page for what is open now. Code Along videos are free on YouTube. Home page shows no workshop price, so the card is not in the paid group.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -3141,7 +3098,7 @@
   "verified": "snippet-only",
   "verified_on": "2026-10-07",
   "priority": 3,
-  "notes": "The 4-H site blocked automated access on 2026-10-07 (403 and a bot check), so age rules and fees could not be read. Ages, fees and teen roles must be confirmed with your county 4-H office.",
+  "notes": "The 4-H site blocked automated access on 2026-10-07 (403 and a bot check), so age rules and fees could not be read. Ages, fees and teen roles must be confirmed with your county 4-H office. Re-checked on 2026-10-09: the 4-H page returned HTTP 403 again, so it could not be read and the card stays snippet-only.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -3206,29 +3163,31 @@
   "max_age": null,
   "grades": "10 to 12",
   "who_can_apply": "Students at schools that host an academy. Each academy sets its own application. Search the school's website for 'Partnership Academy'.",
-  "paid_type": "unpaid-credit",
-  "pay_detail": "Not confirmed. Counted as school credit.",
+  "paid_type": "mixed",
+  "pay_detail": "The CDE page does not say whether internships pay or give school credit. Ask the school.",
   "season": "school-year",
   "duration": "3 years",
-  "status": "year-round",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Application is through the school that hosts the academy.",
+  "deadline_text": "The CDE page lists no student application dates. Each school sets its own.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Ask your counselor if your school has an academy, or check nearby high schools. Whether students from other districts may transfer in depends on the district's open enrollment rules.",
+  "how_to_apply": "Ask your counselor if your school has an academy. The CDE page links a directory of academies (a spreadsheet updated September 2026). The page does not say how students apply.",
   "needs_work_permit": false,
   "url": "https://www.cde.ca.gov/ci/gs/hs/cpagen.asp",
   "apply_url": null,
-  "sources_fetched": [],
-  "verified": "snippet-only",
-  "verified_on": "2026-10-07",
+  "sources_fetched": [
+   "https://www.cde.ca.gov/ci/gs/hs/cpagen.asp"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
   "priority": 2,
-  "notes": "The CDE site blocked automated access on 2026-10-07 (bot check), so this card could not be re-confirmed against the official page. Grades 10 to 12 and the school-within-a-school model need confirming. Academies are run by individual schools, so ask your counselor. Fremont Unified says some CTE courses sit inside Partnership Academies.",
-  "verified_on_label": "Oct 7, 2026"
+  "notes": "Read the CDE page on 2026-10-09. It confirms a three-year program for grades 10 to 12, structured as a school-within-a-school, with academics plus career technical education, business partnerships, mentoring and internships. It posts only school and district grant dates, not student application dates, and does not say whether students from other districts may transfer in. Academies are run by individual schools, so ask your counselor. Fremont Unified says some CTE courses sit inside Partnership Academies.",
+  "verified_on_label": "Oct 9, 2026"
  },
  {
   "opens_iso": null,
-  "apply_url": null,
+  "apply_url": "https://www.capitalareanextgen.org/interest-form-for-wake-county",
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "id": "capital-area-nextgen-youth-services",
@@ -3797,7 +3756,10 @@
   "org": "University of Illinois Urbana-Champaign (WYSE)",
   "regions": [
    "champaign",
-   "illinois"
+   "illinois",
+   "indiana",
+   "michigan",
+   "wisconsin"
   ],
   "city": "Urbana-Champaign, IL",
   "type": "research",
@@ -4042,8 +4004,8 @@
   "max_age": 15,
   "grades": null,
   "who_can_apply": "Ages 13 to 15 who live in Chicago.",
-  "paid_type": "stipend",
-  "pay_detail": "The program page does not state pay. Confirm with the Park District before you plan around a stipend.",
+  "paid_type": "mixed",
+  "pay_detail": "The program page does not mention pay or a stipend. Confirm with the Park District before you plan around pay.",
   "season": "year-round",
   "duration": "Spring, fall and winter: 8 weeks, 6 hours a week. Summer: 6 weeks, 30 program days.",
   "status": "closed-expect-reopen",
@@ -4060,12 +4022,12 @@
    "https://www.chicagoparkdistrict.com/teen-opportunity-fairs"
   ],
   "priority": 2,
-  "notes": "The page says RIT is a job readiness program and participants are not Park District staff. The next sessions are posted online about a month before each starts.",
+  "notes": "Re-read on 2026-10-09: ages 13 to 15, Chicago residence, the apply step (contact the park) and the 2026 session dates all match the page. The page says RIT is a job readiness program and participants are not Park District staff. It does not mention pay, so the pay type was changed from stipend to no pay stated. The next sessions are posted online about a month before each starts.",
   "regions": [
    "chicago"
   ],
   "city": "Chicago, IL",
-  "verified": "snippet-only",
+  "verified": "fetched",
   "verified_on": "2026-10-09",
   "verified_on_label": "Oct 9, 2026"
  },
@@ -4270,7 +4232,7 @@
   "verified": "snippet-only",
   "verified_on": "2026-10-07",
   "priority": 3,
-  "notes": "The CHP site blocked WebFetch (403) and a browser tab loaded blank, so ages come from search results and are unconfirmed. CHP has other posts. Confirm age limits and meeting times with the post. See also California Highway Patrol Explorer Program for the statewide competition. Ages differ by source: the CHP lists 15 to 20 for Explorers, while the post page snippet says 15 to 21.",
+  "notes": "The CHP site blocked WebFetch (403) and a browser tab loaded blank, so ages come from search results and are unconfirmed. CHP has other posts. Confirm age limits and meeting times with the post. See also California Highway Patrol Explorer Program for the statewide competition. Ages differ by source: the CHP lists 15 to 20 for Explorers, while the post page snippet says 15 to 21. Re-checked on 2026-10-09: the CHP post page returned HTTP 403 again, so it could not be read and the card stays snippet-only.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -5597,7 +5559,7 @@
   "grades": null,
   "who_can_apply": "Chicago Public Schools students. 8th graders apply through GoCPS when they apply to high school; freshmen and 10th graders ask their school counselor.",
   "paid_type": "unpaid-credit",
-  "pay_detail": null,
+  "pay_detail": "Not stated on the page.",
   "season": "school-year",
   "duration": "Multi-year pathway",
   "status": "unconfirmed",
@@ -6502,7 +6464,7 @@
   "grades": "Current grades 9-12",
   "who_can_apply": "High school students in current grades 9 to 12 who are at least 14 to attend. (The page also lists middle school programs for grades 6-8.)",
   "paid_type": "fee-based",
-  "pay_detail": "2027 residential fee not yet posted (listed as TBD). Enrollment deposit: $500 before April 2, 2027, or $1,500 after April 1. Airport shuttle $45 each way; extra nights $120 each.",
+  "pay_detail": "2027 residential fee not yet posted (Duke lists it as to be determined). Enrollment deposit: $500 before April 2, 2027, or $1,500 after April 1. Airport shuttle $45 each way; extra nights $120 each.",
   "season": "summer",
   "duration": "Three sessions; dates to be announced in October 2026",
   "status": "unconfirmed",
@@ -6621,23 +6583,23 @@
   "pay_detail": null,
   "season": "year-round",
   "duration": null,
-  "status": "rolling",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "Not posted",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "The home page links to a volunteer page on ebayc.org. Contact EBAYC directly.",
+  "how_to_apply": "The home page has a Sign Up button for volunteers, but the volunteer page it links to showed a 404 error on 2026-10-09. Contact EBAYC directly (offices in Oakland and Sacramento are listed on the home page).",
   "needs_work_permit": false,
   "url": "https://www.ebayc.org",
   "apply_url": null,
   "sources_fetched": [
    "https://www.ebayc.org"
   ],
-  "verified": "snippet-only",
-  "verified_on": "2026-10-07",
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
   "priority": 3,
-  "notes": "The home page says it welcomes volunteers, volunteer groups and student internships but gives no ages, dates or pay. The volunteer page linked from it did not load (404) on Oct 7, 2026. Confirm the minimum age with EBAYC.",
-  "verified_on_label": "Oct 7, 2026"
+  "notes": "Read the home page on 2026-10-09. It says EBAYC has many volunteer opportunities and welcomes volunteer groups and student internships, but it gives no ages, dates or pay. The volunteer page linked from it (ebayc.org/volunteer/) returned a 404 error on Oct 7 and again on Oct 9, 2026. Confirm the minimum age with EBAYC.",
+  "verified_on_label": "Oct 9, 2026"
  },
  {
   "id": "ebmud-high-school-summer-internship",
@@ -6873,7 +6835,7 @@
   "grades": "11 to 12",
   "who_can_apply": "Juniors and seniors attending high school in the Castro Valley, Hayward, San Leandro or San Lorenzo Unified school districts.",
   "paid_type": "unpaid-credit",
-  "pay_detail": null,
+  "pay_detail": "Not stated on the page.",
   "season": "school-year",
   "duration": "Classes are held Monday to Friday; course length varies by class",
   "status": "year-round",
@@ -7052,7 +7014,7 @@
   "verified": "snippet-only",
   "verified_on": "2026-10-07",
   "priority": 3,
-  "notes": "Age and grade rules were not on the pages read, so confirm with the City before applying. Appointed seats, so competitive. Sign up for vacancy emails on elkgrove.gov to hear when a recruitment opens.",
+  "notes": "Age and grade rules were not on the pages read, so confirm with the City before applying. Appointed seats, so competitive. Sign up for vacancy emails on elkgrove.gov to hear when a recruitment opens. Re-checked on 2026-10-09: the City page returned HTTP 403, so it could not be read again and the card stays snippet-only.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -7208,14 +7170,16 @@
   "how_to_apply": "Use the Council Locator on exploring.org or joinexploring.org to find a unit near you.",
   "needs_work_permit": false,
   "url": "https://www.exploring.org/",
-  "apply_url": null,
+  "apply_url": "https://joinexploring.org/",
   "sources_fetched": [
-   "https://www.exploring.org/"
+   "https://www.exploring.org/",
+   "https://joinexploring.org/",
+   "https://www.scouting.org/about/local-council-locator/"
   ],
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "Exploring.org was only readable in part; fees, Scouting membership rules and California posts were not listed. The page names Learning for Life Corporation in its copyright line.",
+  "notes": "Exploring.org was only readable in part; fees, Scouting membership rules and California posts were not listed. The page names Learning for Life Corporation in its copyright line. apply_url is the joinexploring.org home page, which has an Enter ZIP Code box for Exploring posts and clubs near you. On exploring.org, the Council Locator heading links to the contact page, and the scouting.org Local Council Locator finds a council, not a unit.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -8360,7 +8324,7 @@
   "how_to_apply": "Make a VolunteerHub account (sachabitat.volunteerhub.com), register for and attend a one hour HabiTour orientation, then sign up for shifts. Email volunteers@habitatgreatersac.org or call (916) 440-1215.",
   "needs_work_permit": false,
   "url": "https://habitatgreatersac.org/get-involved/individual-volunteer-opportunities/",
-  "apply_url": null,
+  "apply_url": "https://sachabitat.volunteerhub.com/vv2/",
   "sources_fetched": [
    "https://habitatgreatersac.org/get-involved/individual-volunteer-opportunities/",
    "https://www.habitatgreatersac.org/volunteer"
@@ -9207,7 +9171,7 @@
   "what_you_do": "Career advising and job-readiness help for young people through WorkOne centers. Pay or work placements are not described on the page; ask the center what is offered.",
   "who_can_apply": "The state page says in-school young adults ages 14 to 21 and out-of-school young adults ages 16 to 24 may be eligible. Eligibility rules beyond age are not stated.",
   "paid_type": "mixed",
-  "pay_detail": "Not stated",
+  "pay_detail": "Cost and pay are not stated on the page. Ask the program before you count on either.",
   "season": "year-round",
   "duration": "Not stated",
   "status": "year-round",
@@ -9222,7 +9186,7 @@
    "http://www.workonewestcentral.org/60.html"
   ],
   "priority": 3,
-  "notes": "This is the state workforce agency's WIOA-style youth help, not a single job. The WorkOne West Central about page (older) says a youth program for ages 16 to 24 is offered; the newer state page says 14 to 21 in school. The Bloomington (South Central) WorkOne regional page was not read, so confirm locally. Call before going.",
+  "notes": "This is the state workforce agency's WIOA-style youth help, not a single job. The WorkOne West Central about page (older) says a youth program for ages 16 to 24 is offered; the newer state page says 14 to 21 in school. The Bloomington (South Central) WorkOne regional page was not read, so confirm locally. Call before going. Re-read on 2026-10-09: the state page says nothing about cost or pay, so the card is not in the paid group.",
   "verified_on_label": "Oct 9, 2026"
  },
  {
@@ -9291,17 +9255,17 @@
   "deadline_text": "The undated page says: Summer Reading applications ran May 9 to May 30, school-year roles reopen Saturday, August 1, and TAG is full with a wait list for applications after August 26. No year is shown, so confirm current openings.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Submit the Teen Volunteer Application on the library's volunteer system. A required orientation comes before the summer program.",
+  "how_to_apply": "Submit the Teen Volunteer Application on the library's volunteer system at www.volgistics.com/appform/337674493. A required orientation comes before the summer program.",
   "needs_work_permit": false,
   "url": "https://www.cityofirvine.gov/node/90102",
-  "apply_url": null,
+  "apply_url": "https://www.volgistics.com/appform/337674493",
   "sources_fetched": [
    "https://www.cityofirvine.gov/node/90102"
   ],
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "priority": 2,
-  "notes": "The page lists no library contact; it points to the volunteer coordinator, and the City of Irvine main number is 949-724-6000. The page writes the application link as volgistics.com/appform/337674493 (search for it on the volunteer system).",
+  "notes": "The page lists no library contact; it points to the volunteer coordinator, and the City of Irvine main number is 949-724-6000. The page writes the Teen Volunteer Application link as volgistics.com/appform/337674493 and links it over https, so apply_url uses https.",
   "verified_on_label": "Oct 9, 2026"
  },
  {
@@ -10469,7 +10433,8 @@
   "regions": [
    "berkeley",
    "oakland",
-   "east-bay"
+   "east-bay",
+   "san-francisco"
   ],
   "city": "Berkeley, CA",
   "type": "research",
@@ -10837,7 +10802,7 @@
   "verified": "snippet-only",
   "verified_on": "2026-10-07",
   "priority": 3,
-  "notes": "Confirm first. The membership and duties come from Livermore Municipal Code Chapter 2.51, read on the code publisher's page. The city's own teen page (livermoreca.gov) returned HTTP 403 to both our fetch tools, so the application process, term, and dates are not confirmed. The municipal code gives 15 youth seats and 3 adult seats; the code does not say how seats are filled.",
+  "notes": "Confirm first. The membership and duties come from Livermore Municipal Code Chapter 2.51, read on the code publisher's page. The city's own teen page (livermoreca.gov) returned HTTP 403 to both our fetch tools, so the application process, term, and dates are not confirmed. The municipal code gives 15 youth seats and 3 adult seats; the code does not say how seats are filled. Re-checked on 2026-10-09: the City teen page returned HTTP 403 again, so it could not be read and the card stays snippet-only.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -11418,7 +11383,7 @@
   "what_you_do": "Free career planning, skills training and work-based learning for young people, with a career planner who builds a plan with you.",
   "who_can_apply": "Young adults ages 16 to 24 in south central Wisconsin (job centers in Dane, Sauk and Jefferson counties). Whether in-school youth qualify is not stated.",
   "paid_type": "mixed",
-  "pay_detail": "Not stated. All WorkSmart Network services are free.",
+  "pay_detail": "Free. The page says all WorkSmart Network services are free of charge and does not say anyone is paid.",
   "season": "year-round",
   "duration": "Not stated",
   "status": "rolling",
@@ -11494,7 +11459,7 @@
   "max_age": null,
   "grades": null,
   "who_can_apply": "Rules differ by event. On the 2027 events list only one event (hackPHS in New Jersey) is marked High School. The Fellowship page gives no age or student rule. Read each event page.",
-  "paid_type": "unpaid",
+  "paid_type": "mixed",
   "pay_detail": "Event costs are not listed on the pages read; check each event. The Fellowship pays a stipend (amount not stated).",
   "season": "year-round",
   "duration": "Weekend events; Fellowship is 12 weeks",
@@ -11801,7 +11766,7 @@
   "max_age": 24,
   "opens_iso": null,
   "deadline_iso": null,
-  "apply_url": null,
+  "apply_url": "https://www.michiganworks.org/",
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "needs_work_permit": null,
@@ -11831,6 +11796,7 @@
   "url": "https://www.michigan.gov/leo/bureaus-agencies/wd/programs-services/workforce-innovation-and-opportunity-act-wioa-youth-program",
   "sources_fetched": [
    "https://www.michigan.gov/leo/bureaus-agencies/wd/programs-services/workforce-innovation-and-opportunity-act-wioa-youth-program",
+   "https://www.michiganworks.org/",
    "https://www.camw.org/",
    "https://www.camw.org/career-seekers/camw-connections-wioa",
    "https://www.michigan.gov/leo/bureaus-agencies/ber/wage-and-hour/youth-employment-standards-act-yesa"
@@ -13749,7 +13715,7 @@
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Online application, a group information session, full summer availability, onboarding, health clearance (TB test, MMR and varicella proof, flu shot) and a background check.",
-  "needs_work_permit": true,
+  "needs_work_permit": null,
   "url": "https://langone.vsyslive.com/pages/MANHATTAN",
   "apply_url": "https://langone.vsyslive.com/pages/app/LANGONEAPP?reqSite=DN05LBXU5724GUYE",
   "sources_fetched": [
@@ -13758,7 +13724,7 @@
    "https://nyulangone.org/volunteer"
   ],
   "priority": 1,
-  "notes": "The Brooklyn campus requires age 18+. Long Island has its own teen program (not read in detail). The FAQ page still shows old 2022 dates, so only the Manhattan page was used for dates. Med-career internships and research are handled separately through HRNTV@NYULangone.org.",
+  "notes": "The Brooklyn campus requires age 18+. Long Island has its own teen program (not read in detail). The FAQ page still shows old 2022 dates, so only the Manhattan page was used for dates. Med-career internships and research are handled separately through HRNTV@NYULangone.org. The Manhattan page and the volunteer page do not mention working papers, so the work permit answer is unknown.",
   "opens_iso": null,
   "verified": "fetched",
   "verified_on": "2026-10-09",
@@ -16124,7 +16090,8 @@
   "org": "Pomona College (Draper Center)",
   "regions": [
    "inland-empire",
-   "los-angeles"
+   "los-angeles",
+   "orange-county"
   ],
   "city": "Claremont, CA",
   "type": "pre-college",
@@ -16575,7 +16542,10 @@
   "org": "Rising Sun Center for Opportunity",
   "regions": [
    "oakland",
-   "east-bay"
+   "east-bay",
+   "san-francisco",
+   "silicon-valley",
+   "merced"
   ],
   "city": "Oakland, CA and Bay Area",
   "type": "paid-youth-program",
@@ -16682,7 +16652,7 @@
   "how_to_apply": "Create an account at riversideca.cervistech.com, find a Library opportunity, click 'Apply to participate', then wait for an email or call. If approved you book a processing appointment with Human Resources at City Hall and get cleared by background check.",
   "needs_work_permit": false,
   "url": "https://riversideca.gov/library/how/volunteer-us",
-  "apply_url": null,
+  "apply_url": "https://riversideca.cervistech.com/",
   "sources_fetched": [
    "https://riversideca.gov/library/how/volunteer-us"
   ],
@@ -17482,7 +17452,7 @@
   "grades": null,
   "who_can_apply": "Youth ages 14 to 24. The page gives no other rules.",
   "paid_type": "mixed",
-  "pay_detail": "Not stated. Ask the center whether classes cost anything and whether job training pays.",
+  "pay_detail": "Cost and pay are not stated on the pages read. Ask the center whether classes cost anything and whether job training pays.",
   "season": "year-round",
   "duration": null,
   "status": "rolling",
@@ -17853,7 +17823,7 @@
   "how_to_apply": "Apply for 'Recreation Aide' or 'Pool Guard 1' on the City's governmentjobs.com portal. The City then sends interview and skills-test details.",
   "needs_work_permit": null,
   "url": "https://sandiego.gov/pools/programs/specialized-programs",
-  "apply_url": null,
+  "apply_url": "https://www.governmentjobs.com/careers/sandiego?keywords=recreation%20aide",
   "sources_fetched": [
    "https://sandiego.gov/pools/programs/specialized-programs"
   ],
@@ -18065,7 +18035,7 @@
  },
  {
   "id": "san-jose-public-library-teen-volunteer",
-  "name": "San Jose Public Library Teen Volunteers (Teens Reach, Book Reviewer)",
+  "name": "San Jose Public Library Teen Volunteers (Teens Reach, Teen Book Reviewer)",
   "org": "San Jose Public Library",
   "regions": [
    "san-jose",
@@ -18075,33 +18045,36 @@
   "type": "volunteer",
   "fields": [
    "education",
-   "arts-media"
+   "arts-media",
+   "social-impact"
   ],
-  "what_you_do": "Teens ages 12 to 18 can join Teens Reach to help plan library activities, or earn service hours by writing book reviews as a Teen Book Reviewer.",
-  "min_age": 12,
+  "what_you_do": "Join Teens Reach, the library youth council, to help with kids crafts and Summer Learning sign-ups and to speak up as a library advisor. Or earn service hours by writing book reviews as a Teen Book Reviewer.",
+  "min_age": 13,
   "max_age": 18,
   "grades": null,
-  "who_can_apply": "The page lists teen programs for ages 12 to 18. A minimum age for general volunteering is not stated. Sign up through the volunteer page and an orientation (on-site or virtual).",
+  "who_can_apply": "Teens Reach is for ages 13 to 18. You need a strong interest in the library and must go to meetings and join in activities. The library does not list an age for Teen Book Reviewer on its volunteer page, so ask Volunteer Services if you are 12 or younger.",
   "paid_type": "unpaid",
   "pay_detail": null,
   "season": "year-round",
   "duration": null,
   "status": "year-round",
   "opens_iso": null,
-  "deadline_text": "Rolling.",
+  "deadline_text": "Rolling. Each branch has its own Teens Reach sign-up. No single deadline.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "Use \"Sign Up to Volunteer\" on the library volunteer page and the Better Impact system, and attend an orientation. Email volunteer@sjlibrary.org.",
+  "how_to_apply": "Teens Reach: find your branch's Teens Reach sign-up on Better Impact (each branch has its own) or ask the branch. Teen Book Reviewer: search for it on Better Impact from the library volunteer page, and attend an orientation (on-site or virtual). Questions: volunteer.sjpl@sjlibrary.org or volunteer@sjlibrary.org, or call Volunteer Services at 408-808-2181.",
   "needs_work_permit": false,
   "url": "https://www.sjpl.org/volunteer/",
   "apply_url": null,
   "sources_fetched": [
-   "https://www.sjpl.org/volunteer/"
+   "https://www.sjpl.org/volunteer/",
+   "https://www.sjpl.org/teensreach",
+   "https://www.sjpl.org/teenhq"
   ],
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 1,
-  "notes": "Teen Book Reviewer roles are listed on Better Impact. See also the separate Teens Reach card. The Teens Reach card appears to describe the same program, and the age range differs between pages (12 vs 13), so confirm with the library.",
+  "notes": "The volunteer page lists both Teens Reach and Teen Book Reviewer as teen roles, and links Teens Reach to its own page at sjpl.org/teensreach, so this one card covers both. Teens Reach meeting times differ by branch; check your branch's page. TeenHQ is at the King Library, 150 E San Fernando.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -19135,10 +19108,10 @@
    "https://www.sccfd.org/wp-content/uploads/2025/12/Teen-CERT-Academy-March-2026-Flyer.pdf"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-10-09",
   "priority": 1,
   "notes": "The March 2026 flyer said ages 13 to 17 and the website says 13 to 18, so check your age with them. Cost is not stated; the last academy was at Los Altos Hills Town Hall. Santa Clara County residents only.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Oct 9, 2026"
  },
  {
   "min_age": 12,
@@ -19403,7 +19376,7 @@
   "grades": null,
   "who_can_apply": "Not stated on the page. Which classes you can take depends on your school district. Ask your counselor.",
   "paid_type": "unpaid-credit",
-  "pay_detail": null,
+  "pay_detail": "Not stated on the page.",
   "season": "school-year",
   "duration": null,
   "status": "year-round",
@@ -19762,7 +19735,8 @@
   "name": "Changemakers in Computing",
   "org": "University of Washington Paul G. Allen School of Computer Science & Engineering",
   "regions": [
-   "seattle"
+   "seattle",
+   "washington"
   ],
   "city": "Seattle, WA",
   "type": "pre-college",
@@ -19872,7 +19846,7 @@
  },
  {
   "opens_iso": null,
-  "apply_url": null,
+  "apply_url": "https://youthconnect.powerappsportals.us/",
   "grades": null,
   "min_age": 16,
   "max_age": 24,
@@ -20723,12 +20697,12 @@
   "pay_detail": "Free",
   "season": "summer",
   "duration": "Not stated (summer camp; dates not posted)",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "The page says 2026 camper applications are open, but its title still reads Summer Camp 2025 and the summer 2026 camp has already passed. No 2027 dates are posted.",
+  "deadline_text": "The page is out of date (titled Summer Camp 2025, it says 2026 applications are open but posts no dates), so email the program through the Contact Us link before applying.",
   "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Fill in the Google Form linked from the ImmunoExplore page.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Email the program first, through the Contact Us link on the ImmunoX site, because the page is out of date. The page links a Google Form for 2026 camper applications.",
   "needs_work_permit": false,
   "url": "https://immunox.ucsf.edu/community/immunoexplore",
   "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLSeh3fu02ldq5PJF2XT-jWX53DRfOqtvdSpUgOUHQ5cmiCZkCQ/viewform",
@@ -20736,10 +20710,10 @@
    "https://immunox.ucsf.edu/community/immunoexplore"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-10-09",
   "priority": 2,
-  "notes": "Re-read the ImmunoX page on 2026-10-07. It is titled Summer Camp 2025 but mentions 2026 applications, so it may be out of date. Grades, camp dates and deadlines are not posted. The apply link is the Google Form linked on the page. Confirm dates and grade range with ImmunoX before applying.",
-  "verified_on_label": "Oct 7, 2026"
+  "notes": "Re-read the ImmunoX page on 2026-10-09. It is still titled ImmunoExplore - Summer Camp 2025. It says 2026 Camper Applications are now open and links the Google Form. It posts no grade range, camp dates or deadlines, so none are listed here. Confirm dates and grades with ImmunoX before applying.",
+  "verified_on_label": "Oct 9, 2026"
  },
  {
   "id": "sf-ucsf-sep-hs-intern",
@@ -20903,49 +20877,6 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
-  "id": "sjpl-teens-reach",
-  "name": "Teens Reach (San Jose Public Library teen council)",
-  "org": "San Jose Public Library",
-  "regions": [
-   "silicon-valley",
-   "san-jose"
-  ],
-  "city": "San Jose, CA (library branches)",
-  "type": "volunteer",
-  "fields": [
-   "education",
-   "social-impact"
-  ],
-  "what_you_do": "Teens ages 13 to 18 help with library programs (like kids crafts), sign up kids for Summer Learning and speak up as library advisors. Earn community service hours.",
-  "min_age": 13,
-  "max_age": 18,
-  "grades": null,
-  "who_can_apply": "Ages 13 to 18. You need a strong interest in the library, and you must go to meetings and join in activities.",
-  "paid_type": "unpaid",
-  "pay_detail": null,
-  "season": "year-round",
-  "duration": null,
-  "status": "rolling",
-  "opens_iso": null,
-  "deadline_text": "Each branch has its own sign-up. No single deadline.",
-  "deadline_iso": null,
-  "deadline_confidence": "rolling",
-  "how_to_apply": "Find your branch's Teens Reach sign-up on BetterImpact or ask the branch. Volunteer Services: 408-808-2181, volunteer.sjpl@sjlibrary.org.",
-  "needs_work_permit": false,
-  "url": "https://www.sjpl.org/teensreach",
-  "apply_url": null,
-  "sources_fetched": [
-   "https://www.sjpl.org/teensreach",
-   "https://www.sjpl.org/volunteer",
-   "https://www.sjpl.org/teenhq"
-  ],
-  "verified": "fetched",
-  "verified_on": "2026-10-07",
-  "priority": 1,
-  "notes": "Meeting times differ by branch (for example Rose Garden Thursdays 4 p.m., Almaden Tuesdays 4:30 p.m.). Other SJPL teen roles include Teen Book Reviewer. TeenHQ is at the King Library, 150 E San Fernando. This appears to be the same program as san-jose-public-library-teen-volunteer, and the age range differs between pages (12 vs 13). Confirm with the library.",
-  "verified_on_label": "Oct 7, 2026"
- },
- {
   "id": "sjsu-summer-open-university-high-school",
   "name": "SJSU Summer Session (Open University) for High School Students",
   "org": "San Jose State University",
@@ -21060,7 +20991,7 @@
   "how_to_apply": "A teacher or coach pre-registers the team on the National Science Bowl coach site (apps.orau.gov/nsb-coach). You do not need all team details for step one.",
   "needs_work_permit": false,
   "url": "https://www6.slac.stanford.edu/science-bowl",
-  "apply_url": null,
+  "apply_url": "https://apps.orau.gov/nsb-coach/PreRegistration/Dashboard",
   "sources_fetched": [
    "https://www6.slac.stanford.edu/science-bowl"
   ],
@@ -21260,7 +21191,7 @@
   "grades": "High school",
   "who_can_apply": "High school students, per the page. The page does not state age, grade range, residency or citizenship rules.",
   "paid_type": "mixed",
-  "pay_detail": "Not stated on the page",
+  "pay_detail": "Cost and pay are not stated on the page. Ask aimi-hs-programs@stanford.edu.",
   "season": "summer",
   "duration": "Not stated on the page",
   "status": "opens-soon",
@@ -21369,7 +21300,9 @@
   "org": "Stanford Department of Genetics",
   "regions": [
    "silicon-valley",
-   "peninsula"
+   "peninsula",
+   "san-francisco",
+   "east-bay"
   ],
   "city": "Stanford, CA",
   "type": "research",
@@ -21383,8 +21316,8 @@
   "max_age": null,
   "grades": "High school",
   "who_can_apply": "Live in Alameda, San Francisco, San Mateo, Santa Clara or Santa Cruz County; 16 or older by the start date; unweighted GPA of 3.0 or higher; some biology, chemistry or programming background.",
-  "paid_type": "mixed",
-  "pay_detail": "Application fee (amount not stated; waived for financial need). Stipend not stated on the page.",
+  "paid_type": "fee-based",
+  "pay_detail": "Application fee (amount not stated; waived for financial need). The page does not say anyone is paid.",
   "season": "summer",
   "duration": "8 weeks, 4 hours a day, 5 days a week (2026: June 15 to Aug 6)",
   "status": "closed-expect-reopen",
@@ -21782,13 +21715,17 @@
   "how_to_apply": "Get approval from your high school and parent or guardian, apply to the college, and apply for dual enrollment funding at GAfutures.org. Atlanta Tech asks for PSAT, SAT, ACT or Accuplacer scores (a 2.6 HOPE GPA can be used for 11th and 12th graders).",
   "needs_work_permit": false,
   "url": "https://www.tcsg.edu/dualenrollment/for-students-parents/",
-  "apply_url": null,
+  "apply_url": "https://www.gafutures.org/hope-state-aid-programs/scholarships-grants/dual-enrollment/application-procedure/",
   "sources_fetched": [
    "https://www.tcsg.edu/dualenrollment/for-students-parents/",
-   "https://www.atlantatech.edu/dual-enrollment/"
+   "https://www.atlantatech.edu/dual-enrollment/",
+   "https://www.gafutures.org/",
+   "https://www.gafutures.org/hope-state-aid-programs/scholarships-grants/dual-enrollment/",
+   "https://www.gafutures.org/hope-state-aid-programs/scholarships-grants/dual-enrollment/application-procedure/",
+   "https://secure.gafutures.org/"
   ],
   "priority": 1,
-  "notes": "Atlanta Tech funding rules on its page: 15 funded hours per semester, a 30 hour total, and funding ends after two course withdrawals. Atlanta Tech high school contact: hsadmissions@atlantatech.edu or 404-225-4511. This is a course program, not a job, so no work permit applies.",
+  "notes": "Atlanta Tech funding rules on its page: 15 funded hours per semester, a 30 hour total, and funding ends after two course withdrawals. Atlanta Tech high school contact: hsadmissions@atlantatech.edu or 404-225-4511. This is a course program, not a job, so no work permit applies. The TCSG page sends students to GAfutures.org. The GAfutures Dual Enrollment Application Procedure page says students must apply to the college first, then complete the online Dual Enrollment Funding application; its Apply Now button opens secure.gafutures.org, which shows a GAfutures sign-in page first.",
   "verified_on_label": "Oct 9, 2026"
  },
  {
@@ -21806,32 +21743,33 @@
    "education",
    "tech-cs"
   ],
-  "what_you_do": "Teen volunteers in the museum's Holiday Helper program, Nov 23, 2026 to Jan 3, 2027. The page does not describe the duties.",
-  "min_age": null,
+  "what_you_do": "Teen volunteers lead hands-on science, tech and art activities for museum visitors during the holiday season. Volunteers complete six shifts of 3 to 4 hours.",
+  "min_age": 14,
   "max_age": null,
   "grades": "Teen",
-  "who_can_apply": "Teens. The page states no minimum age or other rules.",
+  "who_can_apply": "Teens who are 14 or older by Nov 21, 2026.",
   "paid_type": "unpaid",
   "pay_detail": null,
   "season": "winter",
-  "duration": "Nov 23, 2026 to Jan 3, 2027",
-  "status": "opens-soon",
-  "opens_iso": "2026-10-09",
-  "deadline_text": "Applications open Oct 9 to Oct 23, 2026.",
-  "deadline_iso": "2026-10-23",
-  "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Apply through the volunteer hub during the window. Questions: volunteer@thetech.org or 408-294-8324.",
+  "duration": "Six shifts in the peak windows: Nov 21 to 29 and Dec 19 to Jan 3",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "The official page gives no application dates as of Oct 9, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Use the Apply Here link on the official page (vhub.at/TeenVolunteer). Questions: volunteer@thetech.org or 408-294-8324.",
   "needs_work_permit": false,
   "url": "https://www.thetech.org/support-us/volunteer",
   "apply_url": null,
   "sources_fetched": [
-   "https://www.thetech.org/support-us/volunteer"
+   "https://www.thetech.org/support-us/volunteer",
+   "https://thetech.volunteerhub.com/vv2/lp/TeenVolunteer/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-10-09",
   "priority": 1,
-  "notes": "Very time-sensitive: the window is two weeks. Check with the museum about age rules before applying.",
-  "verified_on_label": "Oct 7, 2026"
+  "notes": "The Oct 7 card said applications open Oct 9 to Oct 23, 2026. On Oct 9 the official page no longer shows that window, and the apply hub page shows no dates in its HTML (its content loads with JavaScript), so the status is unconfirmed. Re-check the official page for a new window. The page lists three mandatory 3.5-hour orientation and tour sessions on Saturdays Nov 14, Nov 21 and Dec 5, 2026, 9:00 AM to 12:30 PM. Applications are reviewed after the deadline by availability and answers. The page gives no year for Jan 3. The page's email addresses are encoded and could not be re-read on Oct 9; the email is kept from the Oct 7 read.",
+  "verified_on_label": "Oct 9, 2026"
  },
  {
   "id": "texas-childrens-north-austin-summer-junior-volunteer",
@@ -22232,8 +22170,8 @@
   "max_age": null,
   "grades": "High school",
   "who_can_apply": "High school students looking to get ahead or recover credit. The site mentions free options for California public schools and scholarship applications for eligible students.",
-  "paid_type": "mixed",
-  "pay_detail": "Fees vary by course; the site mentions free options for CA public schools and scholarships (prices not on the home page)",
+  "paid_type": "fee-based",
+  "pay_detail": "Fees vary by course and prices are not on the home page. The site lists free options for California public schools and scholarships. The page does not say anyone is paid.",
   "season": "year-round",
   "duration": "Self-paced",
   "status": "rolling",
@@ -22893,9 +22831,9 @@
   "pay_detail": "$12,500 college scholarship; travel, hotel and meals paid by the Hearst Foundations",
   "season": "spring",
   "duration": "Washington Week March 6 to 13, 2027",
-  "status": "open-now",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "California's deadline for the 2027 program is October 7, 2026 (today, as of this check). If you miss it, the next cycle is expected in fall 2027. States must report delegates by Dec 1, 2026.",
+  "deadline_text": "California's deadline for the 2027 program is October 7, 2026. That date has passed. The next cycle is expected in fall 2027.",
   "deadline_iso": "2026-10-07",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Ask your principal or counselor for the application, or email the California coordinator at ussyp@cde.ca.gov (California Department of Education, Sacramento).",
@@ -23212,8 +23150,8 @@
    "health"
   ],
   "what_you_do": "Summer Youth Volunteer Program. Volunteer at a VA facility as an individual or a group.",
-  "min_age": null,
-  "max_age": null,
+  "min_age": 14,
+  "max_age": 18,
   "grades": null,
   "who_can_apply": "Teens ages 14 to 18 (18-year-olds must be enrolled in high school). Based on the 2024 flyer; check the current year's rules.",
   "paid_type": "unpaid",
@@ -24539,49 +24477,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "Camp Campbell is at 16275 Highway 9, Boulder Creek, CA 95006, per the cabin-leaders page. This is an unpaid volunteer role, so no work permit is needed. The same YMCA's Youth and Government program is already in ymca-silicon-valley-youth-and-government.json. Leaders in Training is also listed on the leadership page, but its age and details are not stated, so it is not a card.",
-  "verified_on_label": "Oct 7, 2026"
- },
- {
-  "id": "ymca-silicon-valley-youth-and-government",
-  "name": "California YMCA Youth & Government",
-  "org": "YMCA of Silicon Valley",
-  "regions": [
-   "silicon-valley",
-   "statewide"
-  ],
-  "city": "Statewide program (listed by YMCA of Silicon Valley)",
-  "type": "leadership",
-  "fields": [
-   "education",
-   "law-government",
-   "social-impact"
-  ],
-  "what_you_do": "High school students model the California legislature and courts, build public speaking, writing and research skills, and can earn community service hours. The program has run for over 75 years.",
-  "min_age": null,
-  "max_age": null,
-  "grades": "High school",
-  "who_can_apply": "High school youth from throughout California, per the page. No other rules are stated.",
-  "paid_type": "mixed",
-  "pay_detail": "Cost not stated on the page. Ask the YMCA.",
-  "season": "school-year",
-  "duration": null,
-  "status": "unconfirmed",
-  "opens_iso": null,
-  "deadline_text": "Dates, fees and deadlines are not on the page.",
-  "deadline_iso": null,
-  "deadline_confidence": "unknown",
-  "how_to_apply": "Click 'Sign up for more information' on the YMCA Leadership Development page, which opens the YMCA sign-up form. The page does not describe the application steps.",
-  "needs_work_permit": false,
-  "url": "https://www.ymcasv.org/education-enrichment/leadership-development",
-  "apply_url": "https://forms.ymcasv.org/view.php?id=76792",
-  "sources_fetched": [
-   "https://www.ymcasv.org/education-enrichment/leadership-development"
-  ],
-  "verified": "fetched",
-  "verified_on": "2026-10-07",
-  "priority": 2,
-  "notes": "Re-read the YMCA Leadership Development page on 2026-10-07. The same page lists Friday Night Live and Youth Technology Incubator Leadership Councils (separate teen groups), college tours and other teen programs; they are not part of this entry. The Model UN item on the page is for middle school students. Season, dates, cost and deadlines are not on the page, so confirm them with the YMCA before applying.",
+  "notes": "Camp Campbell is at 16275 Highway 9, Boulder Creek, CA 95006, per the cabin-leaders page. This is an unpaid volunteer role, so no work permit is needed. The same YMCA's Youth and Government program is already in ymca-youth-and-government-ca.json. Leaders in Training is also listed on the leadership page, but its age and details are not stated, so it is not a card.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -24669,7 +24565,8 @@
   "name": "YMCA Youth and Government (Model Legislature and Court)",
   "org": "YMCA California",
   "regions": [
-   "statewide"
+   "statewide",
+   "silicon-valley"
   ],
   "city": "California (ends at Sacramento)",
   "type": "civic-government",
@@ -24677,13 +24574,13 @@
    "law-government",
    "social-impact"
   ],
-  "what_you_do": "You attend weekly local meetings, then in-person conferences in November and February where you act as legislators, lawyers and judges.",
+  "what_you_do": "You go to weekly local meetings. At in-person conferences in November and February, you act as a lawmaker, lawyer or judge.",
   "min_age": null,
   "max_age": null,
   "grades": "9 to 12",
-  "who_can_apply": "High school students in grades 9 to 12. Join a local delegation. Cost and sign-up steps are not posted on the page.",
+  "who_can_apply": "High school students in grades 9 to 12 from anywhere in California. Join a local delegation. Cost and sign-up steps are not posted on either page.",
   "paid_type": "fee-based",
-  "pay_detail": "Fee not posted on the page I read; ask your local YMCA about cost and scholarships",
+  "pay_detail": "The fee is not posted on either page I read; ask your local YMCA about cost and scholarships",
   "season": "school-year",
   "duration": "Weekly meetings plus conferences in November and February",
   "status": "unconfirmed",
@@ -24691,17 +24588,18 @@
   "deadline_text": "Sign-up dates are not stated on the page. A conference is planned for November, so ask now.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Contact the program director at (626) 604-4210 or use the inquiry form on the YMCA of Orange County site.",
+  "how_to_apply": "Two ways to reach the program. Southern California: contact the program director at (626) 604-4210 or use the inquiry form on the YMCA of Orange County site. Silicon Valley area: click 'Sign up for more information' on the YMCA of Silicon Valley Leadership Development page, which opens the YMCA sign-up form. Neither page describes the application steps.",
   "needs_work_permit": false,
   "url": "https://ymcaoc.org/mlc/",
-  "apply_url": null,
+  "apply_url": "https://forms.ymcasv.org/view.php?id=76792",
   "sources_fetched": [
-   "https://ymcaoc.org/mlc/"
+   "https://ymcaoc.org/mlc/",
+   "https://www.ymcasv.org/education-enrichment/leadership-development"
   ],
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "Over 1,300 teens in more than 60 California delegations. This page is run by the YMCA of Orange County (Southern California) and lists no Northern California contact. Ask the director which delegation serves your area, and ask about cost and scholarships.",
+  "notes": "Over 1,300 teens in more than 60 California delegations. The YMCA of Orange County page (Southern California) lists no Northern California contact. The YMCA of Silicon Valley lists the same statewide program and links a sign-up form for the Silicon Valley area. Ask the director which delegation serves your area, and ask about cost and scholarships. The YMCA of Silicon Valley Leadership Development page also lists other teen groups and a Model UN program for middle school students; they are not part of this entry.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -24969,27 +24867,28 @@
   "grades": null,
   "who_can_apply": "Ages 15 to 25, low-income or homeless youth (per the Berkeley Public Library jobs page).",
   "paid_type": "paid",
-  "pay_detail": "Rate not posted (checked 2026-10-07)",
+  "pay_detail": "Job training rate not posted (checked 2026-10-09). The home page lists a $300 stipend for full participation in some workshop series.",
   "season": "year-round",
   "duration": null,
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Not posted",
+  "deadline_text": "Not posted. The home page FAQ says YSA is not actively accepting applications.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Email jobtraining@youthspiritartworks.org or call 510-858-7229.",
+  "how_to_apply": "Call (510) 858-7229 or email community@youthspiritartworks.org (both on the home page) and ask about job training. The Berkeley Public Library jobs page lists jobtraining@youthspiritartworks.org.",
   "needs_work_permit": true,
   "url": "https://www.youthspiritartworks.org",
   "apply_url": null,
   "sources_fetched": [
    "https://www.berkeleypubliclibrary.org/teens/jobs-and-volunteering",
-   "https://youthspiritartworks.org/"
+   "https://youthspiritartworks.org/",
+   "https://www.youthspiritartworks.org"
   ],
-  "verified": "snippet-only",
-  "verified_on": "2026-10-07",
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
   "priority": 3,
-  "notes": "Ages and contact come from the library page. The group's home page shows free arts workshops and drop-in events for ages 14 to 25 but no job training details, so ask about jobs. Not on the City of Oakland's 2026 summer jobs list.",
-  "verified_on_label": "Oct 7, 2026"
+  "notes": "Read the home page on 2026-10-09. It says YSA serves transitional age youth 14 to 25 at 1740 Alcatraz Ave, Berkeley, with free drop-in hours, workshops and events; some workshop series pay a $300 stipend for full participation. The home page does not describe a job training program or its pay, so the 15 to 25 age range, the paid jobs and the jobtraining email come from the library page and are unconfirmed. The FAQ says YSA is not actively accepting applications. Ask before you plan around a job. Not on the City of Oakland's 2026 summer jobs list.",
+  "verified_on_label": "Oct 9, 2026"
  },
  {
   "id": "youth-uprising-summer-jobs",
