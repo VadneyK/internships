@@ -16,8 +16,8 @@ function server() {
       const s = http.createServer((req, res) => {
         const rel = decodeURIComponent(req.url.split("?")[0]).replace(/^\/+/, "") || "index.html";
         const p = path.join(ROOT, rel);
-        if (!p.startsWith(ROOT) || !fs.existsSync(p) || fs.statSync(p).isDirectory()) { res.writeHead(404); res.end("not found"); return; }
-        res.writeHead(200, { "Content-Type": TYPES[path.extname(p)] || "application/octet-stream" });
+        if (!p.startsWith(ROOT) || !fs.existsSync(p) || fs.statSync(p).isDirectory()) { res.writeHead(404, { Connection: "close" }); res.end("not found"); return; }
+        res.writeHead(200, { "Content-Type": TYPES[path.extname(p)] || "application/octet-stream", Connection: "close" });
         res.end(fs.readFileSync(p));
       });
       s.listen(0, "127.0.0.1", () => { s.unref(); resolve(s.address().port); });
