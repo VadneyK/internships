@@ -12,10 +12,12 @@
   var DOL = "dol.gov/agencies/whd/contact/state-labor-offices";
   function hasState(st) { return !!st && Object.prototype.hasOwnProperty.call(data.states, st); }
   /* The answer for a state we have not read. The labor offices address becomes a real link. */
-  function nostateCard(st) {
+  function nostateCard(st, age) {
+    var a = +age, link = function (t) { return t.split(DOL).join('<a href="https://www.' + DOL + '" target="_blank" rel="noopener">' + DOL + "</a>"); };
+    if (a >= 18) return '<article class="card verdict none" id="pAdultLine"><p><b>You are 18. You do not need a minor work permit. Go to <a href="jobs.html?age=18">Jobs that hire teens</a>.</b></p><p>Questions? The US Department of Labor lists state labor offices at ' + link(DOL) + ".</p></article>";
+    if (a >= 12 && a < 14) return '<article class="card verdict ask"><h2>We have not read your state yet</h2><p>Federal law says under 14 may not be employed in most non-farm jobs. A state can be stricter, and then the stricter rule applies. Ask your state labor office. The US Department of Labor lists them at ' + link(DOL) + '.</p><p><a class="btn sm" href="younger.html">What you can do at 12 and 13</a></p></article>';
     var u = L.permitFor(data, st, 15, "job");
-    var txt = G.esc(u.text).split(DOL).join('<a href="https://www.' + DOL + '" target="_blank" rel="noopener">' + DOL + "</a>");
-    return '<article class="card verdict ask"><h2>' + G.esc(u.headline) + "</h2><p>" + txt + "</p></article>";
+    return '<article class="card verdict ask"><h2>' + G.esc(u.headline) + "</h2><p>" + link(G.esc(u.text)) + "</p></article>";
   }
   function missingText(st, age, kind) {
     var m = [];
@@ -33,6 +35,7 @@
     if (!st) m.push("your state");
     if (!age) m.push("your age");
     if (!kind) m.push("the kind of work");
+    if (!m.length) return "";
     return "Pick " + (m.length === 3 ? "your state, your age and the kind of work" : m.length === 2 ? m[0] + " and " + m[1] : m[0]) + ".";
   }
   /* Get ready, paycheck and safety links in the page carry the picked state, so the teen does not pick it again. Paycheck only for the four states that page covers. Plain links when no state is picked or it is "other". */
@@ -50,7 +53,7 @@
   function changed() {
     render();
     syncNextLinks();
-    var h = $("pOut").querySelector("h2");
+    var h = $("pOut").querySelector("h2") || $("pAdultLine");
     say(h ? h.textContent : pickPrompt($("pState").value, $("pAge").value, $("pKind").value));
   }
 
@@ -83,7 +86,7 @@
     var st = $("pState").value, age = $("pAge").value, kind = $("pKind").value;
     var out = $("pOut"), sec = $("packetSec");
     cur = null; sec.hidden = true;
-    if (st === "other" || (st && !hasState(st))) { out.innerHTML = nostateCard(st); syncUrl(); return; }
+    if (st === "other" || (st && !hasState(st))) { out.innerHTML = nostateCard(st, age); syncUrl(); return; }
     if (!st || !age || !kind) { out.innerHTML = '<p class="muted">' + missingText(st, age, kind) + "</p>"; syncUrl(); return; }
     var r = L.permitFor(data, st, age, kind);
     syncUrl();
@@ -91,6 +94,7 @@
     var s = data.states[st];
     var cls = r.verdict === "need" ? "y" : r.verdict === "none" || r.verdict === "adult" ? "g" : "";
     var h = '<article class="card verdict ' + r.verdict + '"><span class="tag ' + cls + '">' + G.esc(r.verdict === "need" ? "You need one" : r.verdict === "none" || r.verdict === "adult" ? "No permit" : r.verdict === "young" ? "Too young for this" : "Check first") + "</span>";
+    if (r.verdict === "adult") h = h.replace("<span", '<p id="pAdultLine"><b>You are 18. You do not need a minor work permit. Go to <a href="jobs.html?age=18">Jobs that hire teens</a>.</b></p><span');
     /* Only when a message or checklist exists (need or ask): a short jump to the Get it done section. */
     if (r.verdict === "need" || r.verdict === "ask") h += '<p class="small"><a href="#packetSec">Jump to: send a message to your school or print your checklist</a></p>';
     var ny = st === "ny", wp = "working papers (permit)";
@@ -101,6 +105,8 @@
     var pastCutoff = r.verdict === "none" && s.kinds[r.kind] && s.kinds[r.kind].permit === true && r.age >= s.needBelow;
     if (pastCutoff) h += '<p id="pNoPermitLine"><b>You do not need a work permit here at this age. Your employer may still ask for proof of age.</b></p>';
     h += "<h2>" + G.esc(headline) + "</h2><p>" + G.esc(r.text) + "</p>";
+    /* British Columbia at 14 and 15: the plain answer is the three steps already read on the BC card. */
+    if (st === "bc" && r.verdict === "ask" && (r.age === 14 || r.age === 15) && (r.kind === "job" || r.kind === "program" || r.kind === "family")) h += '<div id="pBcPlain"><h3>Your answer in British Columbia at ' + r.age + "</h3>" + list(s.steps) + "</div>";
     if (pastCutoff) {
       h += '<details id="pUnder"><summary>If you were under ' + G.esc(String(s.needBelow)) + "</summary><h3>Who gives it to you</h3><p>" + G.esc(s.issuer) + "</p><h3>What to do, in order</h3>" + list(s.steps) + "<h3>What to bring</h3><ul>" + s.bring.map(function (b) { return "<li>" + G.esc(b) + "</li>"; }).join("") + "</ul></details>";
     }
@@ -221,6 +227,6 @@
     render();
     syncNextLinks();
     /* A bad ?state= value selects nothing, so the select stays empty: show the same answer as "not listed". */
-    if (asked && !$("pState").value) $("pOut").innerHTML = nostateCard(asked);
+    if (asked && !$("pState").value) $("pOut").innerHTML = nostateCard(asked, $("pAge").value);
   }).catch(function () { $("pOut").innerHTML = '<p class="muted">The permit answers could not load. Try again, or see the <a href="rules.html">California rules</a> or <a href="states.html">other states</a>.</p>'; $("pStatus").textContent = "The permit answers could not load. Try again."; });
 })();

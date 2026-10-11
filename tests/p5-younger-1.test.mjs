@@ -18,7 +18,7 @@ test("p5-younger-1: the section has a heading, a note, 4 work lines and a neighb
   const h = document.getElementById("nearH");
   assert.ok(h, "heading exists");
   assert.equal(h.textContent, "Work you can start this week near home");
-  assert.ok(document.getElementById("grid").contains(h), "section sits in the at-my-age part of the page");
+  assert.ok(document.getElementById("earn").contains(h), "section sits in the earning ideas part of the page, above the state grid (r2 younger ticket)");
   assert.ok(document.getElementById("nearNote").textContent.length > 0, "note is filled in");
   const items = document.querySelectorAll("#nearL li");
   assert.equal(items.length, 4, `4 lines, got ${items.length}`);

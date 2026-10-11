@@ -21,8 +21,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=c00245eb">
-<link rel="stylesheet" href="assets/css/style.css?v=c00245eb">
+<link rel="stylesheet" href="assets/css/fonts.css?v=43d762ab">
+<link rel="stylesheet" href="assets/css/style.css?v=43d762ab">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -83,17 +83,14 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </section>
 
-<section id="grid" style="background:var(--paper-2); border-block:3px solid var(--edge);">
+<section id="earn">
   <div class="wrap">
-    <h2>1. Can I do this at my age?</h2>
-    <p id="fedNote"></p>
-    <div class="field" style="max-width:20rem;"><label for="yState">Show one state</label>
-      <select id="yState" data-tiles data-tiles-any="All four states"><option value="">All four states</option></select></div>
-    <p class="small muted" id="yOther" style="margin-top:-0.5rem;">Not in these four states? The federal rule above still applies, and your state can be stricter. Use the <a href="permit.html">work permit finder</a> to see your state, or ask your state labor office.</p>
-    <p class="sr" id="yStatus" role="status"></p>
-    <div class="tablewrap" tabindex="0" role="region" aria-label="What a 12 or 13 year old may do, by state"><table id="gridT"></table></div>
-    <h3>Where the pages disagree</h3>
-    <ul id="conflicts"></ul>
+    <div class="callout plain" id="otherState" style="max-width:52rem;">
+      <h2 id="otherStateH">Any other state</h2>
+      <p id="otherStateRule"></p>
+      <ol id="otherStateSteps"></ol>
+      <p><a class="btn alt" id="otherStatePermit" href="permit.html">Open the work permit finder</a></p>
+    </div>
     <div id="near">
       <h3 id="nearH">Work you can start this week near home</h3>
       <p class="small muted" id="nearNote"></p>
@@ -105,6 +102,20 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </section>
 
+<section id="grid" style="background:var(--paper-2); border-block:3px solid var(--edge);">
+  <div class="wrap">
+    <h2>1. Can I do this at my age?</h2>
+    <p id="fedNote"></p>
+    <div class="field" style="max-width:20rem;"><label for="yState">Show one state</label>
+      <select id="yState" data-tiles data-tiles-any="All four states"><option value="">All four states</option></select></div>
+    <p class="small muted" id="yOther" style="margin-top:-0.5rem;">Not in these four states? The federal rule above still applies, and your state can be stricter. Use the <a href="permit.html">work permit finder</a> to see your state, or ask your state labor office.</p>
+    <p class="sr" id="yStatus" role="status"></p>
+    <div class="tablewrap" tabindex="0" role="region" aria-label="What a 12 or 13 year old may do, by state"><table id="gridT"></table></div>
+    <h3>Where the pages disagree</h3>
+    <ul id="conflicts"></ul>
+  </div>
+</section>
+
 <section id="safety">
   <div class="wrap">
     <h2>2. Stay safe and get trained</h2>
@@ -112,7 +123,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <article class="card"><h3>Training that exists</h3><ul id="train"></ul></article>
       <article class="card"><h3>Before every job</h3><ul id="before"></ul><p class="small muted" id="beforeSrc"></p></article>
       <article class="card"><h3>Only work for people your family knows</h3><ul id="strangers"></ul><p class="small muted" id="strangersNote"></p></article>
-      <article class="card"><h3>Apps and sites with an age rule</h3><div class="tablewrap" tabindex="0" role="region" aria-label="Minimum ages for job and payment sites"><table id="sitesT"></table></div><p class="small muted" id="sitesNote"></p></article>
+      <article class="card"><h3>Apps and sites with an age rule</h3><p class="small muted" id="sitesNone" hidden>Every app we checked has an age rule of 18 or older.</p><div class="tablewrap" id="sitesWrap" tabindex="0" role="region" aria-label="Apps and sites a young teen may use" hidden><table id="sitesOkT"></table></div>
+        <details id="sitesAdult" class="callout plain small"><summary>Apps you cannot join yet, and why</summary><p>These apps say you must be 18 or older. A parent can post a job or pay for you. Do not use a parent's account to get around the rule.</p><div class="tablewrap" tabindex="0" role="region" aria-label="Minimum ages for job and payment sites"><table id="sitesT"></table></div></details>
+        <p class="small muted" id="sitesNote"></p></article>
     </div>
     <p class="row"><button class="btn sm alt" type="button" id="yPrint">Print the safety card for a parent</button></p>
   </div>
@@ -192,9 +205,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=c00245eb"></script>
-<script src="assets/js/common.js?v=c00245eb"></script>
-<script src="assets/js/younger.js?v=c00245eb"></script>
+<script src="assets/js/lib.js?v=43d762ab"></script>
+<script src="assets/js/common.js?v=43d762ab"></script>
+<script src="assets/js/younger.js?v=43d762ab"></script>
 
 </body>
 </html>

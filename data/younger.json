@@ -390,5 +390,18 @@
   "What to charge: no official source gives rates, so we do not either.",
   "Whether a lemonade stand or craft sale needs a city permit or sales tax: not covered by the pages we read.",
   "Whether a parent's insurance covers a young sitter or yard worker."
- ]
+ ],
+ "otherState": {
+  "title": "Any other state",
+  "rule": "Federal law says children under 14 may not be employed in most non-farm jobs. Chores around private homes and casual babysitting are not covered. A state can be stricter, and then the stricter rule applies.",
+  "source": {
+   "t": "Fair Labor Standards Act, under 14 (US Department of Labor)",
+   "u": "https://webapps.dol.gov/elaws/whd/flsa/cl/t13.asp"
+  },
+  "steps": [
+   "Start with odd jobs for people your family knows, like chores or yard work for a neighbor.",
+   "Ask a parent before you say yes to any job. Show them this page.",
+   "Call your state labor office and ask what a child your age may do. Use the work permit finder to find your state."
+  ]
+ }
 }

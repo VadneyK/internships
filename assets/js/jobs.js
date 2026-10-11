@@ -34,7 +34,15 @@
     for (var i = 0; i < sel.options.length; i++) if (sel.options[i].value === c && c) return c;
     return "";
   }
-  function inState(e, st) { return !st || (e.where || []).some(function (w) { return w === "US" || w === st; }); }
+  /* A US-wide entry (where "US") never matches British Columbia. */
+  function inState(e, st) { return !st || (e.where || []).some(function (w) { return st === "BC" ? w === "BC" : (w === "US" || w === st); }); }
+  /* Rules have no where field: the BC ones start with the id prefix bc-. */
+  function isBcRule(e) { return String(e.id || "").indexOf("bc-") === 0; }
+  var BC_LINE = "British Columbia has its own rules. See the BC cards below.";
+  var USRULES_LEAD = "These come from US Department of Labor and OSHA pages. A state can be stricter, and then the state rule wins.";
+  var BCRULES_LEAD = "These are US rules. In British Columbia the rules come from the Employment Standards Branch.";
+  var AGE18_LINE = "The federal limits on dangerous jobs for workers under 18 do not apply at 18.";
+  var AGE18_URL = "https://www.dol.gov/agencies/whd/fact-sheets/43-child-labor-non-agriculture";
   function row(k, v) { return v ? "<div><dt>" + G.esc(k) + "</dt><dd>" + G.esc(v) + "</dd></div>" : ""; }
   function card(e) {
     return '<article class="card"><p class="small"><span class="tag y">Starts at ' + e.min_age + "</span> " + (e.caveat ? '<span class="tag caveat">' + G.esc(e.caveat) + "</span> " : "") + G.esc(e.kind) + "</p><h3>" + G.esc(e.name) + "</h3>" +
@@ -43,15 +51,28 @@
   }
   /* The hours rules are optional: if the file does not load, the strip points to the work permit finder. */
   var permitsP = G.fetchData("data/permits.json").then(function (r) { return r.json(); }).catch(function () { return null; });
+  /* younger.json is read only when Under 14 is picked, so other ages never download it. */
+  var yd, ydPending = false;
+  function loadYounger(done) {
+    if (yd !== undefined) return;
+    yd = null; ydPending = true;
+    G.fetchData("data/younger.json").then(function (r) { return r.json(); }).then(function (j) { yd = j; }).catch(function () { yd = null; }).then(function () { ydPending = false; done(); });
+  }
   G.fetchData("data/employers.json").then(function (r) { return r.json(); }).then(function (d) {
     return permitsP.then(function (pd) { return [d, pd]; });
   }).then(function (both) {
     var d = both[0], pd = both[1];
     $("jobsNote").innerHTML = "<p>" + G.esc(d.note) + " Last read " + G.esc(d.read) + ".</p>";
-    $("jRulesLead").textContent = "These come from US Department of Labor and OSHA pages. A state can be stricter, and then the state rule wins.";
-    $("jRules").innerHTML = d.rules.map(function (e) {
-      return '<article class="card"><h3>' + G.esc(e.name) + "</h3><p>" + G.esc(e.age_note) + '</p><p class="small muted">Source: ' + link(e.url, e.page_title) + "</p></article>";
-    }).join("");
+    function paintRules(st) {
+      var list = d.rules.filter(function (e) { return st === "BC" ? isBcRule(e) : !(st && isBcRule(e)); });
+      $("jRulesLead").textContent = st === "BC" ? BCRULES_LEAD : USRULES_LEAD;
+      $("jRules").innerHTML = list.map(function (e) {
+        return '<article class="card"><h3>' + G.esc(e.name) + "</h3><p>" + G.esc(e.age_note) + '</p><p class="small muted">Source: ' + link(e.url, e.page_title) + "</p></article>";
+      }).join("");
+    }
+    paintRules("");
+    var stLabel = document.querySelector('label[for="jState"]');
+    if (stLabel) stLabel.textContent = "Where do you live? (state or province)";
     var sel = $("jAge");
     [["u14", "Under 14"], ["14", "14"], ["15", "15"], ["16", "16"], ["17", "17"], ["18", "18"]].forEach(function (a) {
       sel.appendChild(Object.assign(document.createElement("option"), { value: a[0], textContent: a[1] }));
@@ -64,6 +85,7 @@
       stSel.appendChild(Object.assign(document.createElement("option"), { value: k, textContent: NAMES[k] }));
     });
     function hoursStrip(v, st) {
+      if (st === "BC") return '<div class="callout plain small" id="jHoursBox"><p>' + G.esc(BC_LINE) + "</p></div>";
       if (!st) return '<p class="small muted">Pick your state to see its hours rule for your age.</p>';
       if (v === "u14") return '<div class="callout plain small" id="jHoursBox"><p>Ages 12 and 13: see the <a href="younger.html">Ages 12 to 14 page</a> for what is allowed at your age.</p></div>';
       var age = Number(v), key = st.toLowerCase(), name = NAMES[st];
@@ -82,18 +104,27 @@
       setPermitLinks(v);
       $("jChips").innerHTML = "";
       $("jHelp").innerHTML = helpLines(st);
+      paintRules(st);
       $("jHours").innerHTML = v ? hoursStrip(v, st) : "";
       if (!v) { $("jStatus").textContent = ""; out.innerHTML = '<p class="muted">Tap your age to see who hires.</p>'; return; }
       if (v === "u14") {
-        $("jStatus").textContent = "Jobs for under 14 are listed below.";
-        out.innerHTML = '<div class="card"><h2>Under 14</h2><p>The US Department of Labor says children under 14 may not be employed in most non-farm jobs. Casual babysitting, chores at home and delivering newspapers are not covered. Rules for farm work are different, and a state can be stricter.</p><p class="row"><a class="btn" href="younger.html">Ages 12 to 14: start here</a> <a class="btn alt" href="find.html?age=13">Programs and volunteering</a></p></div>';
+        if (yd === undefined && st !== "BC") loadYounger(function () { if (sel.value === "u14") paint(); });
+        var ways = st === "BC" ? [] : ((yd && yd.near && yd.near.items) || []).slice(0, 6);
+        /* While younger.json loads, show a neutral status. The final status is set only after the load callback runs and paint repeats. */
+        var loadingYd = ydPending && st !== "BC";
+        $("jStatus").textContent = loadingYd ? "Loading ways to earn under 14." : ways.length ? "Ways to earn under 14 (ages 12 and 13) are listed below." : "No employer list for under 14. Read the notes on this page.";
+        var waysHtml = ways.length ? '<h2>Ways to earn at 12 and 13</h2><div class="grid g2" style="align-items:start;" id="jWays">' + ways.map(function (w) {
+          return '<article class="card"><p>' + G.esc(w.t) + '</p><p class="small muted">Source: ' + link(w.s && w.s.u, w.s && w.s.t) + "</p></article>";
+        }).join("") + "</div>" : "";
+        if (st === "BC") { out.innerHTML = '<div class="card" id="jBcYoung"><h2>Under 14</h2><p>For 12 and 13 in British Columbia, read the BC rules lower on this page. The US federal under 14 rules do not apply in Canada.</p></div>'; return; }
+        out.innerHTML = waysHtml + '<div class="card" style="margin-top:1rem;"><h2>Under 14</h2><p>The US Department of Labor says children under 14 may not be employed in most non-farm jobs. Casual babysitting, chores at home and delivering newspapers are not covered. Rules for farm work are different, and a state can be stricter.</p><p class="row"><a class="btn" href="younger.html">Ages 12 to 14: start here</a> <a class="btn alt" href="find.html?age=13">Programs and volunteering</a></p></div>';
         return;
       }
       var age = Number(v);
       var here = d.employers.filter(function (e) { return inState(e, st); });
       var can = here.filter(function (e) { return e.min_age <= age; }), later = here.filter(function (e) { return e.min_age > age; });
-      $("jStatus").textContent = can.length + " employers for age " + age + (st ? " in " + NAMES[st] : "") + " are listed below.";
-      var html = "", shownGroups = 0, chips = "";
+      $("jStatus").textContent = can.length + " employers for age " + age + (st ? " in " + NAMES[st] : "") + (can.length ? " are listed below." : ".");
+      var html = age === 18 ? '<p id="jAge18">' + G.esc(AGE18_LINE) + " Source: " + link(AGE18_URL, "US Department of Labor, Fact Sheet #43") + "</p>" : "", shownGroups = 0, chips = "";
       d.groups.forEach(function (g) {
         var list = can.filter(function (e) { return e.group === g[0]; });
         if (list.length) {

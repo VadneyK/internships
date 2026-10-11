@@ -367,6 +367,7 @@
     $("savedN").textContent = sv.length;
     var out = $("out"), dates = $("dates");
     $("listActions").hidden = !state.saved;
+    $("textList").hidden = $("emailList").hidden = !sv.length;
     $("listNextN").textContent = sv.length;
     $("listNext").hidden = !(state.saved && sv.length > 0);
     paintGaps();
@@ -671,10 +672,24 @@
     }).join("") + "</ol><p>From vadneyk.github.io/internships. Confirm dates on each program's own site.</p>";
     G.printOnly(d, "My internship list");
   });
-  $("copyList").addEventListener("click", function () {
-    var ids = savedIds(), txt = all.filter(function (e) { return ids.indexOf(e.id) > -1; }).map(function (e) {
+  /* The text for Copy my list, Text it to myself and Email it to myself. It starts with the site address, then one block per saved program. */
+  var SITE_URL = "https://vadneyk.github.io/internships/", MAIL_SUBJECT = "My first job list";
+  function listText() {
+    var ids = savedIds(), items = all.filter(function (e) { return ids.indexOf(e.id) > -1; }).map(function (e) {
       return "- " + e.name + " (" + (e.org || "") + ")\n  " + (e.deadline_text || "") + "\n  " + (e.url || "");
     }).join("\n");
-    G.copy(txt || "Your list is empty.");
+    return items ? SITE_URL + "\n\n" + items : "";
+  }
+  /* The two message links get their href when they are clicked, from the list as it is then. Nothing is sent by us; the teen's own messages app opens. */
+  $("textList").addEventListener("click", function () {
+    var txt = listText();
+    this.href = txt && L.smsHref ? L.smsHref(txt) : "sms:";
+  });
+  $("emailList").addEventListener("click", function () {
+    var txt = listText();
+    this.href = txt && L.mailtoHref ? L.mailtoHref(MAIL_SUBJECT, txt) : "mailto:";
+  });
+  $("copyList").addEventListener("click", function () {
+    G.copy(listText() || "Your list is empty.");
   });
 })();

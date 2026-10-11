@@ -23,7 +23,17 @@
       var gh = goals[gi].getAttribute("href").split("?")[0], gk = (goals[gi].getAttribute("href").split("?")[1] || "").replace(/&?age=\d+/, "");
       goals[gi].setAttribute("href", gh + (gk || age ? "?" : "") + gk + (age ? (gk ? "&" : "") + "age=" + encodeURIComponent(age) : ""));
     }
-    if (soon) soon.setAttribute("href", "find.html?view=dates" + (age ? "&age=" + encodeURIComponent(age) : ""));
+    if (soon) soon.setAttribute("href", "calendar.html" + ageQ);
+  }
+
+  /* The paying-job card follows the picked age. 12 and 13 get an Under 14 start; 18 has no minor permit step. */
+  var step1 = $("jobStep1"), young = $("jobYoung");
+  var step1Plain = step1 ? step1.innerHTML : "";
+  function drawJobNow() {
+    var age = $("pAge") ? $("pAge").value : "";
+    if (young) young.hidden = !(age === "12" || age === "13");
+    if (step1) step1.innerHTML = age === "18" ?
+      '<b>Step 1.</b> You are 18: no minor work permit.<br><a class="btn" href="jobs.html?age=18">See employers that hire at 18</a>' : step1Plain;
   }
 
   /* The closing-soon list follows the picked age and area (the field pick does not apply to it). announce is true only after a change. */
@@ -53,6 +63,7 @@
   function pick() {
     var run = ++pickRun; /* a newer pick, even a cleared one, makes any slower card load stale */
     linkAge();
+    drawJobNow();
     drawSoon(announceNext);
     var age = $("pAge").value, hub = $("pHub").value, field = $("pField").value;
     var box = $("matches"), more = $("matchMore"), status = $("matchStatus");

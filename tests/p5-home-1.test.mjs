@@ -11,7 +11,7 @@ test("p5-home-1: paying job card sits above the referral section with three butt
   const card = document.getElementById("job-now");
   assert.ok(card, "card exists");
   assert.match(card.textContent, /I want a paying job now/);
-  assert.deepEqual([...card.querySelectorAll("a.btn")].map((a) => a.getAttribute("href")), ["permit.html", "jobs.html", "playbook.html"]);
+  assert.deepEqual([...card.querySelectorAll("a.btn")].filter((a) => !a.closest("[hidden]")).map((a) => a.getAttribute("href")), ["permit.html", "jobs.html", "playbook.html"]);
   assert.ok(card.compareDocumentPosition(document.getElementById("secret")) & 4, "card comes before #secret");
   assert.deepEqual(errors, []);
 });

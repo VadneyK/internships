@@ -32,7 +32,7 @@ function linkProblems(doc, rel) {
   for (const a of doc.querySelectorAll("a[href]")) {
     const href = a.getAttribute("href").trim();
     const where = `${rel} -> "${href}"`;
-    if (/^(mailto|tel):/i.test(href)) continue;
+    if (/^(mailto|tel|sms):/i.test(href)) continue;
     if (/^javascript:/i.test(href)) { problems.push(`${where} (javascript: link)`); continue; }
     if (/^https?:\/\//i.test(href)) {
       const rel_ = a.getAttribute("rel") || "";

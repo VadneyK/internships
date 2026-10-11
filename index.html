@@ -21,8 +21,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=c00245eb">
-<link rel="stylesheet" href="assets/css/style.css?v=c00245eb">
+<link rel="stylesheet" href="assets/css/fonts.css?v=43d762ab">
+<link rel="stylesheet" href="assets/css/style.css?v=43d762ab">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -60,6 +60,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <h1><span class="a">How to find</span><span class="b stroke">Internships</span></h1>
     <img class="swoosh" src="assets/img/swoosh.svg" alt="" width="600" height="60">
     <p class="lede" style="margin-top:1rem;">A free guide for teens. Pick your age to see real programs, with the deadlines we could confirm, then learn the one move that beats every job site: asking a person.</p>
+    <p class="small muted" id="coverage">This guide covers the US and British Columbia, Canada. Metro Vancouver is included.</p>
     <div class="cta">
       <a class="btn" href="find.html">Find a program</a>
       <a class="btn alt" href="playbook.html">Write your message</a>
@@ -84,10 +85,14 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <span class="tag y eyebrow">Want money now?</span>
       <h2 style="margin-top:.5rem;">I want a paying job now</h2>
       <p>Three steps. Do them in order.</p>
+      <div id="jobYoung" hidden style="margin-bottom:1rem;">
+        <p><a class="btn" href="younger.html">Under 14? Start here</a></p>
+        <p class="small">Federal law sets 14 as the minimum age for most non-farm jobs. Your state can be stricter.</p>
+      </div>
       <ol class="small" style="list-style:none;padding:0;margin:0;display:grid;gap:.8rem;">
-        <li><b>Step 1.</b> Find out if you need a work permit.<br><a class="btn" href="permit.html">See if I need a work permit</a></li>
+        <li id="jobStep1"><b>Step 1.</b> Find out if you need a work permit.<br><a class="btn" href="permit.html">See if I need a work permit</a></li>
         <li><b>Step 2.</b> See which jobs hire people your age.<br><a class="btn" href="jobs.html">See who hires at my age</a></li>
-        <li><b>Step 3.</b> Ask a grown-up you know to tell the boss about you.<br><a class="btn" href="playbook.html">Ask someone I know to tell the boss about me</a></li>
+        <li><b>Step 3.</b> Ask a grown-up you know to tell the boss about you.<br><a class="btn" href="playbook.html">Ask someone I know to tell the boss about me</a><br><span id="noAdult">No adult to ask? Ask a school counselor, teacher, coach or librarian.</span></li>
       </ol>
     </div>
   </div>
@@ -128,7 +133,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <p id="soonNote" class="small muted" hidden></p>
     <p id="soonStatus" class="sr" role="status"></p>
     <ul class="tl" id="soonList"><li><div class="d">Soon</div><div>The list of closing dates needs JavaScript. See every deadline on the <a href="find.html?view=dates">Programs page</a>.</div></li></ul>
-    <p style="margin-top:1rem;"><a class="btn alt sm" href="find.html?view=dates">See every deadline by month</a></p>
+    <p style="margin-top:1rem;"><a class="btn alt sm" href="calendar.html">See every deadline by month</a></p>
   </div>
 </section>
 
@@ -263,9 +268,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=c00245eb"></script>
-<script src="assets/js/common.js?v=c00245eb"></script>
-<script src="assets/js/home.js?v=c00245eb"></script>
+<script src="assets/js/lib.js?v=43d762ab"></script>
+<script src="assets/js/common.js?v=43d762ab"></script>
+<script src="assets/js/home.js?v=43d762ab"></script>
 
 </body>
 </html>

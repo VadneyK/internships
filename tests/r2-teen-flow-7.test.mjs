@@ -4,7 +4,7 @@ import assert from "node:assert/strict";
 import { loadPage, type, tick } from "./dom-helper.mjs";
 
 const PLAIN_PERMIT = "permit.html";
-const PLAIN_DEADLINES = "find.html?view=dates";
+const PLAIN_DEADLINES = "calendar.html";
 
 async function loadHome() {
   const page = await loadPage("index.html");
@@ -51,7 +51,7 @@ test("r2-teen-flow-7: picking 15 carries the age into both links", async () => {
   await tick(30);
 
   assert.equal(document.querySelector("#offer a.btn").getAttribute("href"), "permit.html?age=15");
-  assert.equal(document.querySelector("#soon a.btn").getAttribute("href"), "find.html?view=dates&age=15");
+  assert.equal(document.querySelector("#soon a.btn").getAttribute("href"), "calendar.html?age=15");
   assert.deepEqual(errors, [], "no script errors on the page");
 });
 
