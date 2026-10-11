@@ -15,7 +15,8 @@ const LIMITS = {
   data: {
     "data/entries.json": { raw: 3530000, gzip: 800000 },
     // Raised from 2020000 to 2040000 on 2026-10-10 after the fact check: the page re-reads added about 6,000 bytes (0.3 percent) of plainer deadline_text across 266 cards, saying what the page does and does not state. No single card is the cause. Still about 1,145 bytes per program, under the per-program limit.
-    "data/entries-lite.json": { raw: 2040000, gzip: 440000 },
+    // Gzip limit raised from 440000 to 450000 on 2026-10-10: the card fixes this round (pay wording, opens-soon dates) put it at 440053.
+    "data/entries-lite.json": { raw: 2040000, gzip: 450000 },
     "data/entries-card.json": { raw: 1025000, gzip: 146000 },
     "data/entries-core.json": { raw: 320000, gzip: 32000 },
   },
@@ -25,7 +26,9 @@ const LIMITS = {
   script: 46000,
   // Raised from 34000 to 35000 on 2026-10-10: the merged upgrades added a few rules (the plain facts list and the Jobs output heading) and the sheet is 34005 bytes. Not caused by the data growth.
   // Raised again from 35000 to 36000 on 2026-10-10 for the 44 pixel tap targets (details summary, checkbox, breadcrumb) and the print rule for jump chips. The sheet is 35260 bytes.
-  stylesheet: 36000,
+  // Raised again from 36000 to 37000 on 2026-10-10 for the prefers-contrast block, the h1.display rule, the zero-count chip rule and the print rule for buttons. The sheet is 36345 bytes.
+  // Raised from 37000 to 38000 on 2026-10-10 for the print source line, the focus rings on yellow and dark surfaces, and the expanded tile state. The sheet is 37288 bytes.
+  stylesheet: 38000,
 };
 
 const LITE = "data/entries-lite.json";

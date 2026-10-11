@@ -61,6 +61,14 @@
       /* The anytime link keeps the age and area, so Programs opens with the same filters. */
       var anyLink = $("cNoneAnytime");
       if (anyLink) { var ap = new URLSearchParams(); ap.set("when", "anytime"); if (age) ap.set("age", age); if (place) ap.set("at", place); anyLink.setAttribute("href", "find.html?" + ap.toString()); }
+      /* The Next line keeps the age, and the state of the chosen area when it is a permit state, so the permit finder and jobs open with them. Plain links when nothing is chosen. */
+      var okAge = /^(1[2-8])$/.test(age) ? age : "", nst = L.stateFromPlace(place), permitSt = L.PERMIT_STATES.indexOf(nst) > -1 ? nst : "";
+      var np = new URLSearchParams(), nj = new URLSearchParams();
+      if (permitSt) np.set("state", permitSt);
+      if (okAge) { np.set("age", okAge); nj.set("age", okAge); }
+      var permitLink = document.querySelector('#calNext a[href^="permit.html"]'), jobsLink = document.querySelector('#calNext a[href^="jobs.html"]');
+      if (permitLink) permitLink.setAttribute("href", "permit.html" + (np.toString() ? "?" + np.toString() : ""));
+      if (jobsLink) jobsLink.setAttribute("href", "jobs.html" + (nj.toString() ? "?" + nj.toString() : ""));
       if (!rows.length) {
         var nb = nextBusy(place, age);
         if (nb) {

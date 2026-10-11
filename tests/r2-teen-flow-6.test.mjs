@@ -22,6 +22,7 @@ const PAGES = {
     ["#safety", "2. Stay safe"],
     ["#ladder", "3. Path to a job"],
     ["#money", "4. Money facts"],
+    ["#words", "Words you will see"],
   ],
 };
 
@@ -49,3 +50,20 @@ for (const [file, expected] of Object.entries(PAGES)) {
     assert.deepEqual(errors, [], "no script errors on the page");
   });
 }
+
+// Ticket r2-teen-flow-6 (Jobs and Ages 12 to 14): the permit page gets a closed "Words you will see" box.
+test("r2-teen-flow-6: permit.html has a closed Words you will see box with its terms", async () => {
+  const { document } = await loadPage("permit.html");
+  await tick(120);
+  const boxes = document.querySelectorAll("details#words");
+  assert.equal(boxes.length, 1);
+  const box = boxes[0];
+  assert.equal(box.querySelector("summary").textContent.trim(), "Words you will see");
+  assert.equal(box.open, false, "closed by default");
+  const text = document.body.textContent;
+  for (const term of ["Non-farm job", "Hazardous job", "Withhold", "W-4"]) {
+    assert.ok([...box.querySelectorAll("dt")].some((d) => d.textContent.trim() === term), term);
+    assert.ok(text.includes(term), term + " in page text");
+  }
+  assert.doesNotMatch(box.textContent, /[\u2013\u2014]/, "no dash characters");
+});

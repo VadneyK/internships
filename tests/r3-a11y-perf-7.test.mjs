@@ -58,7 +58,7 @@ test("every page with a scripts: field loads lib.js before common.js; every othe
   for (const f of fs.readdirSync(path.join(ROOT, "src"))) {
     if (f.startsWith("_") || !f.endsWith(".html")) continue;
     const head = read("src/" + f).split("\n---\n")[0];
-    const has = /^scripts:\s*\S/m.test(head);
+    const has = /^scripts:\s*\S/m.test(head) && !/^lib:\s*none/m.test(head); // `lib: none` pages (r2-a11y-perf-4) load no lib.js
     const s = srcs(read(f));
     const lib = s.findIndex((x) => x.includes("lib.js"));
     const common = s.findIndex((x) => x.includes("common.js"));

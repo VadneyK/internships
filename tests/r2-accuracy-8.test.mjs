@@ -1,48 +1,43 @@
-// Chicago youth pay is stated the same way everywhere, and the Illinois estimate says it is for outside Chicago (ticket r2-accuracy-8).
+// Transit card text on Get ready (ticket r2-accuracy-8).
+// The Yolobus row no longer says "Fares listed" (no fares are listed in that row), and the
+// Bay Area table has one "read on" line whose date comes from data/meta.json checked_label.
 // Run with: node --test tests/r2-accuracy-8.test.mjs
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 
-const read = (rel) => fs.readFileSync(new URL(`../${rel}`, import.meta.url), "utf8");
-const states = read("src/states.html");
-const permits = JSON.parse(read("data/permits.json"));
-const money = JSON.parse(read("data/money.json"));
+const rd = (p) => fs.readFileSync(new URL("../" + p, import.meta.url), "utf8");
+const META = JSON.parse(rd("data/meta.json"));
 
-const ilWage = permits.states.il.wage;
-const chicagoClause = (text) => {
-  const m = text.match(/Chicago is \$17\.05[^.]*\./);
-  return m ? m[0] : "";
-};
-
-test("the Chicago $17.05 figure agrees between states.html and permits.json", () => {
-  const stateMatch = states.match(/<b>Chicago:<\/b> <b>(\$[\d.]+)<\/b>/);
-  assert.ok(stateMatch, "states.html has a Chicago rate");
-  assert.equal(stateMatch[1], "$17.05");
-  assert.ok(ilWage.includes("Chicago is $17.05"), "permits il.wage has the Chicago rate");
-  assert.match(chicagoClause(ilWage), /at employers with 4 or more employees/, "permits il.wage keeps the 4 or more employees condition");
-  assert.match(states, /\$17\.05<\/b> from July 1, 2026 at employers with 4 or more employees/, "states.html keeps the same condition");
+test("ready: Yolobus row uses the agency-page sentence and drops 'Fares listed'", () => {
+  const src = rd("src/ready.html");
+  assert.match(
+    src,
+    /Free on fixed routes for ages 18 and under\. The agency page says this is effective through June 30, 2027\./
+  );
+  assert.doesNotMatch(src, /Fares listed/);
 });
 
-test("the Chicago rate in permits.json does not claim a youth same rate the city page does not state", () => {
-  assert.doesNotMatch(ilWage, /the city says youth workers get the same rate/);
-  assert.match(ilWage, /does not say if this covers workers under 18/);
+test("ready: one read-on line sits under the Bay Area table with the meta date", () => {
+  const src = rd("src/ready.html");
+  const label = META.checked_label;
+  assert.ok(label, "data/meta.json must carry checked_label");
+  const line = `We read these Bay Area pages on ${label}. Ages and discounts can change`;
+  assert.equal(src.split(line).length - 1, 1, "exactly one read-on line");
+  // The line comes after the table and before the Under 13 note.
+  const tableEnd = src.indexOf("</table></div>");
+  const lineAt = src.indexOf(line);
+  const under13 = src.indexOf("Under 13, a parent");
+  assert.ok(tableEnd > 0 && lineAt > tableEnd && lineAt < under13);
 });
 
-test("both Illinois money presets say they are for outside Chicago and keep their wage in the label", () => {
-  const il = money.presets.filter((p) => p.state === "il");
-  assert.deepEqual(il.map((p) => p.id), ["il-youth", "il-adult"]);
-  for (const p of il) {
-    assert.ok(p.label.startsWith("Illinois outside Chicago, "), p.id + ": " + p.label);
-    assert.ok(p.label.includes("outside Chicago"), p.id);
-    assert.ok(p.label.includes(`($${p.wage.toFixed(2)})`), p.id + " label has its wage");
-  }
+test("ready: built page carries the same Yolobus and read-on text", () => {
+  const built = rd("ready.html");
+  assert.match(built, /The agency page says this is effective through June 30, 2027\./);
+  assert.match(built, new RegExp(`We read these Bay Area pages on ${META.checked_label}\\.`));
+  assert.doesNotMatch(built, /Fares listed are effective/);
 });
 
-test("the money gaps line names Chicago's $17.05 rate and says the estimate does not use it", () => {
-  const gap = money.gaps.find((g) => g.startsWith("Other city minimum wages and city taxes."));
-  assert.ok(gap, "gaps has the city minimum wage line");
-  assert.ok(gap.includes("Chicago is $17.05 from July 1, 2026 at employers with 4 or more employees"));
-  assert.ok(gap.includes("this estimate does not use it"));
-  assert.ok(!money.gaps.some((g) => g.includes("such as Chicago's higher minimum")), "old gap line is gone");
+test("ready: no em dash or en dash in the source page", () => {
+  assert.doesNotMatch(rd("src/ready.html"), new RegExp("[\\u2013\\u2014]"));
 });

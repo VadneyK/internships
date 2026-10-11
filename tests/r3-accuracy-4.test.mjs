@@ -1,26 +1,36 @@
-// Georgia $4.25 youth wage: the permit finder must keep "consecutive" and "optional",
-// matching the Other states page (ticket r3-accuracy-4).
+// r3-accuracy-4: the Illinois unpaid wages phone number 312-793-2804 has no source
+// in the repo and is not on labor.illinois.gov/unpaidwages.html (read Oct 11, 2026).
+// The Illinois wage line must point to that page and its link instead of a number.
 // Run with: node --test tests/r3-accuracy-4.test.mjs
 import test from "node:test";
 import assert from "node:assert/strict";
-import fs from "node:fs";
+import { readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import { dirname, join } from "node:path";
 
-const PERMITS = JSON.parse(fs.readFileSync(new URL("../data/permits.json", import.meta.url), "utf8"));
-const STATES_HTML = fs.readFileSync(new URL("../src/states.html", import.meta.url), "utf8");
-const gaWage = PERMITS.states.ga.wage;
+const root = join(dirname(fileURLToPath(import.meta.url)), "..");
+const read = (p) => readFileSync(join(root, p), "utf8");
+const money = JSON.parse(read("data/money.json"));
+const parents = JSON.parse(read("data/parents.json"));
 
-test("permits.json Georgia wage says 90 consecutive days", () => {
-  assert.ok(gaWage.includes("90 consecutive days"), gaWage);
+const UNSOURCED = "312-793-2804";
+const WAGE_PAGE = "Use the Illinois unpaid wages page";
+
+test("money.json Illinois wage line names the page, not the unsourced number", () => {
+  const il = money.states.find((s) => s.id === "il");
+  assert.ok(il, "money.json has an il state");
+  assert.equal(il.call, WAGE_PAGE);
+  assert.ok(il.links.some((l) => l.u === "https://labor.illinois.gov/unpaidwages.html"));
 });
 
-test("permits.json Georgia wage says the youth rate is optional", () => {
-  assert.ok(gaWage.includes("optional"), gaWage);
+test("parents.json unpaid wages line has no 312-793-2804", () => {
+  const text = JSON.stringify(parents);
+  assert.equal(text.includes(UNSOURCED), false);
+  assert.ok(text.includes("Illinois: use the Illinois unpaid wages page."));
 });
 
-test("src/states.html Georgia pay says 90 consecutive days", () => {
-  assert.ok(STATES_HTML.includes("90 consecutive days"));
-});
-
-test("src/states.html Georgia pay says the youth rate is optional", () => {
-  assert.ok(STATES_HTML.includes("optional"));
+test("no data file keeps the unsourced Illinois wage number", () => {
+  for (const f of ["data/money.json", "data/parents.json"]) {
+    assert.equal(read(f).includes(UNSOURCED), false, f);
+  }
 });

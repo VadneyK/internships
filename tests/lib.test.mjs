@@ -146,7 +146,7 @@ test("permitFor: the right permit for the right age, state and kind", () => {
   assert.equal(f("il", 15, "program").verdict, "need");
   assert.equal(f("il", 16, "job").verdict, "none");
   assert.equal(f("ny", 17, "job").verdict, "need");
-  assert.equal(f("ny", 15, "odd").verdict, "none");
+  assert.equal(f("ny", 15, "odd").verdict, "ask");
   assert.equal(f("ny", 15, "own").verdict, "ask");
   assert.equal(f("zz", 15, "job").verdict, "nostate");
   assert.equal(f("wa", 15, "job").verdict, "need");
@@ -171,7 +171,7 @@ test("permitFor: a kind can override its answer for younger ages, so the headlin
   const mn = f("mn", 15, "job");
   assert.equal(mn.headline, "Check before you start");
   assert.match(mn.text, /Under 16 you need an employment certificate only to work on school days during school hours/);
-  [14, 15].forEach((age) => assert.equal(f("ny", age, "odd").verdict, "none"));
+  [14, 15].forEach((age) => assert.equal(f("ny", age, "odd").verdict, "ask"));
   [16, 17].forEach((age) => assert.equal(f("mn", age, "job").verdict, "none"));
   assert.equal(f("mn", 16, "job").headline, "You do not need a permit for this");
   assert.equal(f("ca", 12, "odd").verdict, "none");

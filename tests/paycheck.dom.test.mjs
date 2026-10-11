@@ -64,5 +64,5 @@ test("paycheck page: ?state= picks the matching preset and state, and ignores un
 test("paycheck page: a Next line points to find and interview", async () => {
   const { document } = await loadPage("paycheck.html"); await tick(100);
   const hrefs = [...document.querySelectorAll("#mNext a")].map((a) => a.getAttribute("href"));
-  for (const h of ["find.html", "interview.html"]) assert.ok(hrefs.includes(h), h);
+  for (const h of ["find.html", "interview.html?state=ca"]) assert.ok(hrefs.includes(h), h);
 });

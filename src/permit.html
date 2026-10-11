@@ -7,12 +7,25 @@ navparent: ready
   <div class="wrap">
     <nav class="breadcrumb small muted" aria-label="Breadcrumb"><ol><li><a href="ready.html">Get ready</a></li><li aria-current="page">Work permit finder</li></ol></nav>
     <span class="tag y eyebrow">Papers for your job</span>
-    <h1 style="font-size:clamp(2.2rem,7vw,4rem);">Do I need a <span class="orange">permit</span>?</h1>
+    <h1 class="display">Do I need a <span class="orange">permit</span>?</h1>
     <p class="lede">Pick your state, your age and the kind of work. You get a plain answer, the exact permit if you need one, who gives it to you, what to bring, and a checklist you can print or a message you can send to your school. Most pages last read Oct 9, 2026. The California card was read Oct 7, 2026.</p>
     <noscript><div class="callout bad"><p>This page needs JavaScript to answer your permit question. With JavaScript off, read the plain rules on the <a href="rules.html">Rules page</a>.</p></div></noscript>
     <div class="callout plain small" style="margin-top:1rem;max-width:52rem;">
       <p><b>This is a summary, not legal advice.</b> When the pages we read do not say, the answer is &ldquo;check before you start&rdquo; with who to call. Schools and employers can change their forms, so use the links to confirm.</p>
     </div>
+    <details id="words" class="callout plain small" style="margin-top:1rem;max-width:52rem;">
+      <summary>Words you will see</summary>
+      <dl>
+        <dt>Non-farm job</dt>
+        <dd>Any job that is not farm work; federal law sets 14 as the minimum age for most of them.</dd>
+        <dt>Hazardous job</dt>
+        <dd>A job the Secretary of Labor has declared hazardous; no one under 18 may do the jobs on that list.</dd>
+        <dt>Withhold</dt>
+        <dd>Your employer holds back part of each check to pay tax.</dd>
+        <dt>W-4</dt>
+        <dd>The federal form that tells your employer how much income tax to hold back from each check.</dd>
+      </dl>
+    </details>
   </div>
 </section>
 
@@ -45,13 +58,14 @@ navparent: ready
     <div class="grid g2" style="align-items:start;">
       <article class="card"><h3>Send a message</h3>
         <p class="small muted">Edit the blanks. Nothing is sent from this page. It opens your own email app or copies the text.</p>
-        <div class="field"><label for="mName">Your first name</label><input id="mName" type="text" autocomplete="off"></div>
+        <div class="field"><label for="mName">Your first name</label><input id="mName" type="text" autocomplete="given-name"></div>
         <div class="field"><label for="mEmp">Who is the employer?</label><input id="mEmp" type="text" autocomplete="off" placeholder="for example, the city pool"></div>
         <div class="field"><label for="mTo">Who is it for?</label>
           <select id="mTo"><option value="school">The school office</option><option value="employer">The employer</option></select></div>
         <pre class="card" id="mText" style="white-space:pre-wrap;font:inherit;"></pre>
         <div class="sr" id="mStatus" role="status"></div>
         <p class="row"><a class="btn sm" id="mMail" href="#">Open in my email app</a> <button class="btn sm alt" type="button" id="mCopy">Copy the message</button></p>
+        <p class="small" id="mBlankNote" role="status" aria-live="polite" hidden style="font-weight:700;"></p>
       </article>
       <article class="card"><h3>Print your checklist</h3>
         <p class="small muted">A one page sheet with the steps, what to bring and who to call, with blanks for the employer and the dates.</p>

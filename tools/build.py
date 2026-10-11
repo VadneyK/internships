@@ -38,8 +38,9 @@ def build(name):
         '<script src="assets/js/%s.js?v=%s"></script>\n' % (s.strip(), ver)
         for s in fields.get("scripts", "").split(",") if s.strip()
     )
-    # lib.js (filter, date and permit logic) only loads on pages that have a script of their own
-    libscript = '<script src="assets/js/lib.js?v=%s"></script>\n' % ver if scripts else ""
+    # lib.js (filter, date and permit logic) only loads on pages that have a script of their own.
+    # A page whose script never reads lib.js says `lib: none` in its header, so teens on slow data skip the download.
+    libscript = '<script src="assets/js/lib.js?v=%s"></script>\n' % ver if scripts and fields.get("lib", "").strip() != "none" else ""
     page = name
     out = layout
     rep = {

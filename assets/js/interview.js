@@ -7,6 +7,22 @@
   function save() { G.store.set("interview", saved); }
   function a(t, u) { return '<a href="' + G.esc(u) + '" target="_blank" rel="noopener">' + G.esc(t) + "</a>"; }
 
+  /* The permit, Get ready and younger links carry the age and state picked in the hours checker, so the teen does not enter them again.
+     Permit: state only for a permit state, age only 12 to 18. Younger: the four states that page reads. Nothing picked: the links stay plain.
+     Links inside the hours result card (#aOut) are left alone, because that card writes its own links. */
+  var PERMIT_AGE = /^(1[2-8])$/, YOUNG_LINK_ST = ["ca", "ga", "ny", "il"];
+  function setLinks(sel, href) {
+    document.querySelectorAll("main " + sel).forEach(function (el) { if (!$("aOut").contains(el)) el.setAttribute("href", href); });
+  }
+  function syncLinks(st, age) {
+    var pq = [];
+    if (L.PERMIT_STATES.indexOf(st) > -1) pq.push("state=" + encodeURIComponent(st));
+    if (PERMIT_AGE.test(age || "")) pq.push("age=" + encodeURIComponent(age));
+    setLinks('a[href^="permit.html"]', "permit.html" + (pq.length ? "?" + pq.join("&") : ""));
+    setLinks('a[href^="ready.html"]',"ready.html" + (L.PERMIT_STATES.indexOf(st) > -1 ? "?state=" + encodeURIComponent(st) : ""));
+    setLinks('a[href^="younger.html"]', "younger.html" + (YOUNG_LINK_ST.indexOf(st) > -1 ? "?state=" + encodeURIComponent(st) : ""));
+  }
+
   /* The tips need only interview.json. The weekly checker alone needs permits.json (state rules), so it loads on its own. */
   var permP = G.fetchData("data/permits.json").then(function (r) { return r.json(); });
   permP.catch(function () { /* handled below, or not needed if the tips fail first */ });
@@ -14,8 +30,14 @@
   G.fetchData("data/interview.json").then(function (r) { return r.json(); }).then(function (d) {
     $("evidence").textContent = d.evidence + " ";
     $("evidence").insertAdjacentHTML("beforeend", a(d.evidenceSource.t, d.evidenceSource.u));
-    $("appTips").innerHTML = d.app.map(function (t) { return "<li><div>" + G.esc(t) + "</div></li>"; }).join("");
-    $("appSrc").innerHTML = "From " + a("Illinois workNet", "https://apps.illinoisworknet.com/ArticleViewer/Article/Index/183/AppCall=1") + " and a public library teen guide.";
+    $("appTips").innerHTML = d.app.map(function (t, i) {
+      var s = (d.appSource || [])[i] || {};
+      var from = (s.src || []).map(function (x) { return a(x.t, x.u); }).join(", ");
+      var label = (from ? "Source: " + from + ". " : "") + (s.note ? G.esc(s.note) : "");
+      if (!from && !s.note) label = "Our suggestion, not from a source.";
+      return "<li><div>" + G.esc(t) + '<span class="small muted app-src" style="display:block;margin-top:.25rem;">' + label + "</span></div></li>";
+    }).join("");
+    $("appSrc").textContent = "Each tip names where it comes from, or says it is our suggestion.";
 
     /* availability */
     function initAvail(pm) {
@@ -65,6 +87,7 @@
       var ds = days(), age = $("aAge").value, st = $("aState").value;
       DAYS.forEach(function (n, i) { saved.av[i + "from"] = document.querySelector('[data-d="' + i + '"][data-k="from"]').value; saved.av[i + "to"] = document.querySelector('[data-d="' + i + '"][data-k="to"]').value; });
       saved.av.age = age; saved.av.state = st; save();
+      syncLinks(st, age);
       var lines = ds.map(function (x, i) { return x ? DAYS[i] + ": " + clock(x.from) + " to " + clock(x.to) : null; }).filter(Boolean);
       var no = ds.map(function (x, i) { return x ? null : DAYS[i]; }).filter(Boolean);
       var r = L.hoursCheck(st && pm.states[st] ? pm.states[st].limits : null, age, $("aSchool").value === "1", ds);
@@ -74,9 +97,9 @@
       if (!age || !st) h += '<p class="muted">Pick your age and state to check the hour limits.</p>';
       else if (!r.limited) h += "<p><b>This tool cannot check a plan against a number for age " + G.esc(age) + " in " + G.esc(pm.states[st].name) + ".</b> Here is what the state's pages say: " + G.esc(pm.states[st].hours[+age >= 16 ? "16" : "14"] || "Not stated.") + "</p>";
       else if (r.problems.length) h += '<p><b>Heads up:</b></p><ul>' + r.problems.map(function (x) { return "<li>" + G.esc(x) + "</li>"; }).join("") + "</ul><p class=\"small muted\">Your plan is what you offer. Ask to be scheduled for less. Limits from the " + G.esc(pm.states[st].name) + " pages on the <a href=\"permit.html?state=" + G.esc(st) + "\">permit finder</a>.</p>";
-      else h += "<p><b>Within the limits we found</b> for age " + G.esc(age) + " in " + G.esc(pm.states[st].name) + ". " + G.esc(pm.states[st].hours[+age >= 16 ? "16" : "14"] || "") + "</p>";
+      else h += "<p><b>Within the limits we found" + (r.unconfirmed ? " (some not confirmed)" : "") + "</b> for age " + G.esc(age) + " in " + G.esc(pm.states[st].name) + ". " + G.esc(pm.states[st].hours[+age >= 16 ? "16" : "14"] || "") + "</p>";
       $("aOut").innerHTML = h;
-      msg = !age || !st ? "Pick your age and state to check the hour limits." : $("aOut").querySelector("h3").textContent + (!r.limited ? "." : r.problems.length ? ". Over a limit, see the details." : ". Within the limits we found.");
+      msg = !age || !st ? "Pick your age and state to check the hour limits." : $("aOut").querySelector("h3").textContent + (!r.limited ? "." : r.problems.length ? ". Over a limit, see the details." : ". Within the limits we found" + (r.unconfirmed ? " (some not confirmed)" : "") + ".");
     }
     ["aAge", "aState", "aSchool"].forEach(function (id) { $(id).addEventListener("change", changed); });
     $("aRows").addEventListener("change", changed);
@@ -151,6 +174,9 @@
       var subject = "Thank you for talking with me";
       var body = "Hello " + to + ",\n\nThank you for your time and for talking with me about the " + job + ". I am still very interested. " + help.charAt(0).toUpperCase() + help.slice(1) + (/[.!?]$/.test(help) ? "" : ".") + "\n\nThank you again,\n" + me;
       $("tText").textContent = "Subject: " + subject + "\n\n" + body; $("tMail").href = L.mailtoHref(subject, body);
+      var blanks = L.blanksLeft(body), bn = $("tBlankNote");
+      bn.hidden = !blanks.length;
+      bn.textContent = blanks.length ? "Fill in before you send: " + blanks.join(", ") : "";
     }
     tf.forEach(function (id) { $(id).addEventListener("input", function () { paintT(); noteUpdated("tStatus", "Note updated."); }); }); paintT();
     $("tCopy").addEventListener("click", function () { G.copy($("tText").textContent); });

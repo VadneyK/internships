@@ -2,7 +2,7 @@
 // The permit answer links to the interview hours planner with the same state and age filled in.
 import test from "node:test";
 import assert from "node:assert/strict";
-import { loadPage, tick } from "./dom-helper.mjs";
+import { loadPage, tick, type } from "./dom-helper.mjs";
 
 const planLink = (document) => [...document.querySelectorAll("#pOut a")].find((a) => /Plan the hours you can offer/.test(a.textContent));
 
@@ -51,4 +51,26 @@ test("interview: saved state still loads when there are no params", async () => 
   const p = await loadPage("interview.html", { storage: { interview: { q: {}, refs: [], av: { state: "ga", age: "16" } } } }); await tick(150);
   assert.equal(p.document.getElementById("aState").value, "ga");
   assert.equal(p.document.getElementById("aAge").value, "16");
+});
+
+test("interview: picking NY and 16 carries state and age to permit, state to ready and younger; clearing puts the plain links back", async () => {
+  const p = await loadPage("interview.html"); await tick(150);
+  const { window, document } = p;
+  assert.deepEqual(p.errors, []);
+  const permit = () => document.querySelector('main a[href^="permit.html"]:not(#aOut a)').getAttribute("href");
+  const ready = () => document.querySelector('main a[href^="ready.html"]').getAttribute("href");
+  const younger = () => document.querySelector('main a[href^="younger.html"]').getAttribute("href");
+  assert.equal(permit(), "permit.html", "plain before anything is picked");
+  assert.equal(ready(), "ready.html");
+  assert.equal(younger(), "younger.html");
+  type(window, document.getElementById("aState"), "ny");
+  type(window, document.getElementById("aAge"), "16");
+  assert.equal(permit(), "permit.html?state=ny&age=16");
+  assert.equal(ready(), "ready.html?state=ny");
+  assert.equal(younger(), "younger.html?state=ny");
+  type(window, document.getElementById("aAge"), "");
+  type(window, document.getElementById("aState"), "");
+  assert.equal(permit(), "permit.html", "cleared: permit link is plain again");
+  assert.equal(ready(), "ready.html");
+  assert.equal(younger(), "younger.html");
 });

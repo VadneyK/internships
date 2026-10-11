@@ -64,7 +64,7 @@ test("G.toast twice leaves one toast element showing the latest text, and hides 
   assert.equal(all.length, 1);
   assert.equal(all[0].textContent, "second");
   assert.ok(all[0].classList.contains("show"));
-  await tick(2500);
+  await tick(4300);
   assert.equal(document.querySelectorAll("#toast").length, 1);
   assert.ok(!document.getElementById("toast").classList.contains("show"), "show class is removed after the timer");
 });

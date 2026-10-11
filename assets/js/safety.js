@@ -27,7 +27,22 @@
 
   var STATES = { ca: "California", ga: "Georgia", ny: "New York", il: "Illinois" };
   var sel = $("sState"), said = $("sCallStatus");
+  /* Keep the picked state in the Next links, so the teen does not pick it again on the next page.
+     Each link gets the state only when that page reads it: paycheck (ga, ny, il, ca), permit (all four), rules (ca). */
+  function syncNext(v) {
+    var box = $("sNext"); if (!box) return;
+    var st = STATES[v] ? v : "";
+    Array.prototype.forEach.call(box.querySelectorAll("a[href]"), function (a) {
+      var base = a.getAttribute("href").split("?")[0];
+      var ok = base === "paycheck.html" ? ["ga", "ny", "il", "ca"].indexOf(st) > -1
+        : base === "permit.html" ? !!st
+        : base === "rules.html" ? st === "ca"
+        : false;
+      a.setAttribute("href", ok ? base + "?state=" + st : base);
+    });
+  }
   function applyState(v, announce) {
+    syncNext(v);
     var groups = document.querySelectorAll("#sbody-call .hgroup"), shown = 0;
     Array.prototype.forEach.call(groups, function (g) {
       var name = g.getAttribute("data-group");

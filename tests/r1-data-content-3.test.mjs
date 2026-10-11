@@ -19,3 +19,28 @@ for (const ID of IDS) {
     assert.match(card.deadline_text, /October 9, 2026/);
   });
 }
+
+// Ticket r1-data-content-3. Group B: cards whose pay_detail says pay is not stated, not mentioned
+// or not listed must say not-stated, not unpaid (unpaid claims the page says there is no pay).
+const PAY_UNKNOWN_IDS = [
+  "la-metro-youth-council",
+  "minnesota-youth-council",
+  "nyc-bronx-community-college-upward-bound-math-science",
+  "boston-mit-primes",
+  "orange-county-choc-mi4-summer-internship",
+  "atlanta-public-schools-mentorship-internship",
+  "chattahoochee-riverkeeper-water-warriors",
+  "clbl-farms-leadership",
+];
+
+for (const id of PAY_UNKNOWN_IDS) {
+  test(`${id}: paid_type is not-stated, not unpaid`, () => {
+    const card = JSON.parse(fs.readFileSync(new URL(`../data/programs/${id}.json`, import.meta.url), "utf8"));
+    assert.equal(card.paid_type, "not-stated");
+  });
+}
+
+test("boston-mit-primes keeps the cost to join first in pay_detail", () => {
+  const card = JSON.parse(fs.readFileSync(new URL("../data/programs/boston-mit-primes.json", import.meta.url), "utf8"));
+  assert.ok(card.pay_detail.startsWith("Free to join."));
+});

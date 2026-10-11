@@ -29,9 +29,9 @@
   --shadow: 4px 4px 0 var(--edge);
   --shadow-sm: 3px 3px 0 var(--edge);
   --radius: 10px;
-  --display: "Archivo", "Arial Black", "Helvetica Neue", Arial, sans-serif;
-  --marker: "Permanent Marker", "Comic Sans MS", cursive;
-  --body: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --display: "Archivo", "Archivo Fallback", "Arial Black", "Helvetica Neue", Arial, sans-serif;
+  --marker: "Permanent Marker", "Permanent Marker Fallback", "Comic Sans MS", cursive;
+  --body: "DM Sans", "DM Sans Fallback", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   --speckle-opacity: 0.35;
   color-scheme: light;
 }
@@ -107,6 +107,12 @@ body::before {
   opacity: var(--speckle-opacity);
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .1  0 0 0 0 .1  0 0 0 0 .1  0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
 }
+/* Users who ask the OS for more contrast get full-strength secondary text and no speckle noise under the text.
+   The :root selectors match the specificity of the dark-mode blocks above, so this later block wins in both themes. */
+@media (prefers-contrast: more) {
+  :root, :root:not([data-theme="light"]), :root[data-theme] { --ink-2: var(--ink); }
+  body::before { display: none; }
+}
 img, svg { max-width: 100%; }
 a { color: var(--orange-text); text-underline-offset: 3px; text-decoration-thickness: 2px; }
 a:hover { color: var(--ink); }
@@ -121,6 +127,7 @@ main { flex: 1; }
 section { padding-block: 2.75rem; }
 h1, h2, h3, h4 { font-family: var(--display); font-stretch: 112%; font-weight: 900; font-style: italic; line-height: 1.02; text-transform: uppercase; letter-spacing: -.01em; margin: 0 0 .6em; text-wrap: balance; }
 h1 { font-size: clamp(2.5rem, 9vw, 5.5rem); }
+h1.display { font-size: clamp(2.2rem, 7vw, 4rem); }
 h2 { font-size: clamp(1.8rem, 5vw, 2.9rem); }
 h3 { font-size: 1.35rem; letter-spacing: 0; }
 h4 { font-size: 1.05rem; letter-spacing: .01em; }
@@ -193,6 +200,8 @@ label:has(> input[type="checkbox"]) { min-height: 2.75rem; }
 .chip .n { opacity: .65; font-weight: 500; margin-left: .25rem; }
 .chip .n:empty { display: none; }
 .chip.zero { color: var(--ink-2); border-style: dashed; font-weight: 500; }
+/* Zero-count chips: the count is full strength so it stays 4.5:1 or better (opacity blends it with the background). */
+.chip.zero .n { opacity: 1; }
 .chip.zero[aria-pressed="true"] { color: var(--tag-fg); border-style: solid; }
 
 /* cards */
@@ -373,14 +382,19 @@ tr:last-child th { border-bottom: 0; }
   body::before, .top, .foot, .noprint, .skip, .toast, .theme-btn { display: none !important; }
   /* Jump chips ("On this page", "Jump to", "Next steps") and breadcrumbs are buttons on screen only. Paper cannot click them. */
   main nav.chips, main nav.breadcrumb { display: none !important; }
+  /* Every button in the page body does nothing on paper (Print, Copy, Clear, Add a person, Save as picture, filter chips).
+     Only the chosen tap tile is kept, and it is a .tile so it is not matched here. */
+  main button:not(.tile) { display: none !important; }
   main details > summary::after { content: none; }
   /* Paper keeps the teen's own answer only: unselected tap tiles, the picker captions, the Show more pager,
      the "Text this to a parent" row and the Menu button stay on the screen. The selected tile still prints. */
-  .tp .tile[aria-pressed="false"], .tp-cap, .pager, .share-parent, .menu-btn { display: none !important; }
+  .tp .tile[aria-pressed="false"], .tp .tile[aria-expanded="false"], .tp-cap, .pager, .share-parent, .menu-btn { display: none !important; }
   body { background: #ffffff; color: #151515; display: block; }
   /* Browsers drop background colors on paper unless asked to keep them. Keep the tag fills, chart fills and the chosen tile. */
-  .tag, .k1, .k2, .k3, .bar, .meter > i, .tile[aria-pressed="true"] { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .tag, .k1, .k2, .k3, .bar, .meter > i, .tile[aria-pressed="true"], .tile[aria-expanded="true"] { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .printonly { display: block !important; }
+  /* The source line: the address and the last-checked date, so a printed sheet says where its numbers came from. */
+  .print-source { display: block; margin: 0 0 .6rem; color: #151515; }
   .resume { border: 0; box-shadow: none; max-width: none; padding: 0; }
   main, section, .wrap { padding: 0 !important; margin: 0 !important; max-width: none !important; }
   .prog, .card { break-inside: avoid; box-shadow: none; }
@@ -395,8 +409,11 @@ tr:last-child th { border-bottom: 0; }
   a { color: #151515; text-decoration: none; }
   /* Print the address after each link in the main content, so a paper copy keeps where it goes. Buttons and .noprint links are skipped. */
   main a[href^="http"]:not(.btn):not(.noprint)::after { content: " (" attr(href) ")"; overflow-wrap: anywhere; }
+  /* Program cards: the "Official page" and "Apply" buttons are .btn links, so the rule above skips them. Print their addresses too. */
+  .prog a.btn[href^="http"]:not(.noprint)::after { content: " (" attr(href) ")"; overflow-wrap: anywhere; }
 }
 .printonly { display: none; }
+.print-source { display: none; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .toast { position: fixed; left: 50%; bottom: calc(1.2rem + env(safe-area-inset-bottom, 0px)); transform: translate(-50%, 8px); background: var(--tag-bg); color: var(--tag-fg); padding: .6rem 1rem; border-radius: 8px; opacity: 0; pointer-events: none; transition: opacity .15s, transform .15s; z-index: 80; font-weight: 700; }
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
@@ -428,6 +445,11 @@ tr:last-child th { border-bottom: 0; }
 .callout:not(.plain):not(.warn):not(.bad) a:hover { color: #151515; text-decoration-thickness: 3px; }
 
 .callout.bad a, .callout.warn a { color: var(--ink); }
+
+/* The yellow callout (#f6c431) stays yellow in dark mode, where --focus #8ab4ff is about 1.3:1 on it. Use the light-mode blue there (about 3.9:1). */
+.callout:not(.plain):not(.warn):not(.bad) :focus-visible { outline-color: #0b57d0; }
+/* The footer is always #0d0c0c. The light-mode blue is only about 3.1:1 on it, so use the dark-mode light blue (about 9:1). */
+.foot :focus-visible { outline-color: #8ab4ff; }
 
 .prog .row .tag { white-space: normal; max-width: 100%; line-height: 1.25; }
 .prog .pay { margin: 0; font-size: .92rem; }
@@ -495,6 +517,8 @@ tr:last-child th { border-bottom: 0; }
 .tile[aria-pressed="true"] { background: var(--tag-bg); color: var(--tag-fg); }
 .tile .n { font-weight: 500; opacity: .7; margin-left: .3rem; }
 .tp-sub { border-left: 4px solid var(--edge); padding-left: .8rem; display: grid; gap: .4rem; }
+.tp-sub[hidden] { display: none; }
+.tile[aria-expanded="true"] { background: var(--tag-bg); color: var(--tag-fg); border-width: 4px; padding: calc(.55rem - 2px) calc(1rem - 2px); } /* thick border still shows when forced colors drop the fill */
 .tp-sub .tp-cap { font-size: .85rem; font-weight: 700; color: var(--ink-2); margin: 0; }
 
 /* Answer facts: a label over a short answer, in a grid of small panels (rides, state rules, paycheck rules) */

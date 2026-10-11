@@ -30,15 +30,7 @@ const JS_FILES = listFiles("assets/js", ".js");
 const URL_FILES = ["transit.json", "languages.json", "interview.json", "permits.json", "younger.json", "safety.json"];
 
 // Known real hits. Each one matches on exact file, check and text.
-const KNOWN_HITS = [
-  {
-    // Source: data/programs/indiana-dwd-workone-young-adult-services.json, sources_fetched list.
-    // Fix the program file to https, run tools/build_data.py, then delete this entry.
-    file: "data/entries.json",
-    check: "http",
-    text: "http://www.workonewestcentral.org/60.html",
-  },
-];
+const KNOWN_HITS = [];
 
 // ---------- helpers (pure, so the seeded test can exercise them) ----------
 

@@ -289,10 +289,14 @@
       if (max != null && per[i] > max) out.problems.push(DAY_NAMES[i] + ": " + per[i] + " hours is more than the " + max + " hour limit on " + (schoolDay ? "a school day" : "a day off from school") + " at " + a + ".");
       var latest = !inSchool && lim.latestSummer != null ? lim.latestSummer : lim.latest;
       if (lim.earliest != null && d.from < lim.earliest) out.problems.push(DAY_NAMES[i] + ": starting before " + lim.earliest + " a.m. is not allowed at " + a + ".");
-      if (latest != null && d.to > latest) out.problems.push(DAY_NAMES[i] + ": working past " + (latest > 12 ? latest - 12 + " p.m." : latest + " a.m.") + " is not allowed at " + a + ".");
+      if (latest != null && d.to > latest) out.problems.push(DAY_NAMES[i] + ": the end time is past the usual limit of " + (latest > 12 ? latest - 12 + " p.m." : latest + " a.m.") + " at " + a + "." + (lim.lateNote && lim.lateMax != null && d.to <= lim.lateMax ? " There is an exception: " + lim.lateNote + "." : ""));
     });
     var cap = inSchool ? lim.schoolWeek : lim.offWeek;
     if (cap != null && total > cap) out.problems.push("The week adds up to " + total + " hours, more than the " + cap + " hour limit " + (inSchool ? "while school is in session" : "when school is out") + " at " + a + ".");
+    if (lim.unconfirmed) {
+      out.unconfirmed = true;
+      out.problems = out.problems.map(function (x) { return x + " We could not confirm this limit, so check the card."; });
+    }
     return out;
   }
 
@@ -700,6 +704,23 @@
     return "in " + t + " grade";
   }
 
+  /* unfilled placeholders in a message: [bracketed words] and runs of 3 or more underscores, each listed once */
+  function blanksLeft(text) {
+    var found = String(text == null ? "" : text).match(/\[[^\[\]\n]+\]|_{3,}/g) || [];
+    return found.filter(function (b, i) { return found.indexOf(b) === i; });
+  }
+
+  /* Escape text, then make US phone numbers (like 833-526-4636, 1-877-709-8185, (317) 232-2655) tap-to-call and emails tap-to-mail. The visible text does not change. */
+  var CONTACT_RE = /([A-Za-z0-9._%+\-]+@[A-Za-z0-9\-]+(?:\.[A-Za-z0-9\-]+)*\.[A-Za-z]{2,})|((?<![\w(])(?:1[-. ])?(?:\(\d{3}\)\s?|\d{3}[-. ])\d{3}[-. ]\d{4}(?!\d))/g;
+  function linkContacts(text) {
+    return esc(text).replace(CONTACT_RE, function (m, mail, tel) {
+      if (mail) return '<a href="mailto:' + mail + '">' + mail + "</a>";
+      var d = tel.replace(/\D/g, "");
+      if (d.length === 10) d = "1" + d;
+      return '<a href="tel:+' + d + '">' + tel + "</a>";
+    });
+  }
+
   var api = {
     REGIONS: REGIONS, HUBS: HUBS, TYPES: TYPES, FIELDS: FIELDS, PAID: PAID, PAID_GROUPS: PAID_GROUPS, MONTHS: MONTHS, MONTH_NAMES: MONTH_NAMES,
     esc: esc, regionLabel: regionLabel, safeUrl: safeUrl, parseISO: parseISO, fmtDate: fmtDate, daysUntil: daysUntil, hubsOf: hubsOf,
@@ -707,7 +728,7 @@
     matches: matches, facetCounts: facetCounts, relaxOptions: relaxOptions, placeCounts: placeCounts, rank: rank, compare: compare, sortList: sortList, topPicks: topPicks, ageText: ageText,
     STATUSES: STATUSES, toISO: toISO, addDays: addDays, followUpISO: followUpISO, planSummary: planSummary,
     icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf, stateFromPlace: stateFromPlace, STATE_OF: STATE_OF, permitFor: permitFor, hoursCheck: hoursCheck, paycheck: paycheck, PERMIT_STATES: PERMIT_STATES, CITIES: CITIES, AREAS: AREAS, PICK_GROUPS: PICK_GROUPS, placeRegions: placeRegions, placeLabel: placeLabel, hubsOfPlace: hubsOfPlace,
-    gradePhrase: gradePhrase
+    gradePhrase: gradePhrase, blanksLeft: blanksLeft, linkContacts: linkContacts
   };
   return api;
 });

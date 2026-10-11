@@ -5,7 +5,7 @@ scripts: find
 <section style="padding-block: 2rem 1rem;">
   <div class="wrap">
     <span class="tag y eyebrow">{{count}} programs &middot; checked {{checked}}</span>
-    <h1 style="font-size: clamp(2.2rem, 7vw, 4rem);">Find a <span class="orange">program</span></h1>
+    <h1 class="display">Find a <span class="orange">program</span></h1>
     <p class="lede">Pick your area and your age. Every card links to the official page. Only some dates are confirmed for 2026 to 2027, so check each program's own page.</p>
     <p class="small muted" style="margin:.75rem 0 0;">To save a program, tap the star on its card. Your saved list is called My list, and it stays on this device.</p>
   </div>
@@ -80,6 +80,7 @@ scripts: find
         <button class="btn sm alt" type="button" id="reset">Clear all</button>
       </div>
     </form>
+    <a class="small noprint" href="#results">Jump to the results</a>
 
     <div class="toolbar">
       <p id="count" class="caps" aria-live="polite" style="margin:0;">Loading programs&hellip;</p>
@@ -125,7 +126,7 @@ scripts: find
       <ol class="picklist" id="picksList"></ol>
     </section>
 
-    <h2 class="sr">Results</h2>
+    <h2 class="sr" id="results" tabindex="-1">Results</h2>
     <div id="out" class="results"></div>
     <p id="printCut" class="printonly small muted" aria-hidden="true"></p>
     <div id="dates" hidden></div>

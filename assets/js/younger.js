@@ -7,9 +7,11 @@
   function li(arr) { return arr.map(function (x) { return "<li>" + G.esc(x) + "</li>"; }).join(""); }
   Promise.all([G.fetchData("data/younger.json").then(function (r) { return r.json(); }), G.loadEntries("core")]).then(function (res) {
     var d = res[0], all = res[1];
-    /* The age last saved on Programs (localStorage "findprefs"), read only. Only 12, 13 or 14 count here; anything else keeps 13. */
-    var nextAge = "13";
-    try {
+    /* The age from the address (?age=, sent by the permit finder), then the age last saved on Programs (localStorage "findprefs"), read only. Only 12, 13 or 14 count; anything else keeps 13. */
+    var nextAge = "13", qAge = "";
+    try { qAge = new URLSearchParams(location.search).get("age") || ""; } catch (e) { /* no address age */ }
+    if (/^(12|13|14)$/.test(qAge)) nextAge = qAge;
+    else try {
       var pa = G.store.get("findprefs", {});
       if (pa && typeof pa.age === "string" && /^(12|13|14)$/.test(pa.age)) nextAge = pa.age;
     } catch (e) { /* no saved age: keep 13 */ }
@@ -32,7 +34,7 @@
           var c = r.cells[s[0]]; return "<td>" + G.esc(c.t) + (c.s ? '<br><span class="small">' + a(c.s.t, c.s.u) + "</span>" : "") + "</td>";
         }).join("") + "</tr>";
       }).join("") + "<tr><th scope=\"row\">Who to ask</th>" + sts.map(function (s) { return "<td>" + G.esc(d.calls[s[0]]) + "</td>"; }).join("") + "</tr></tbody>";
-      $("gridT").innerHTML = head + body;
+      $("gridT").innerHTML = '<caption class="sr">What a 12 or 13 year old may do, by state</caption>' + head + body;
     }
     var ys = $("yState");
     d.states.forEach(function (s) { var o = document.createElement("option"); o.value = s[0]; o.textContent = s[1]; ys.appendChild(o); });
@@ -73,7 +75,7 @@
     $("train").innerHTML = d.train.map(function (t) { return "<li><b>" + G.esc(t.t) + ".</b> " + G.esc(t.d) + " " + a("Official page", t.u) + "</li>"; }).join("");
     $("before").innerHTML = li(d.before); $("beforeSrc").innerHTML = "From " + a(d.beforeSource.t, d.beforeSource.u) + ".";
     $("strangers").innerHTML = li(d.strangers); $("strangersNote").innerHTML = G.esc(d.strangersNote) + " " + a(d.strangersSource.t, d.strangersSource.u) + ".";
-    $("sitesT").innerHTML = "<thead><tr><th scope=\"col\">Site</th><th scope=\"col\">Minimum age</th></tr></thead><tbody>" + d.sites.map(function (s) { return "<tr><th scope=\"row\">" + a(s[0], s[2]) + "</th><td>" + G.esc(s[1]) + "</td></tr>"; }).join("") + "</tbody>";
+    $("sitesT").innerHTML = "<caption class=\"sr\">Minimum ages for job and payment sites</caption><thead><tr><th scope=\"col\">Site</th><th scope=\"col\">Minimum age</th></tr></thead><tbody>" + d.sites.map(function (s) { return "<tr><th scope=\"row\">" + a(s[0], s[2]) + "</th><td>" + G.esc(s[1]) + "</td></tr>"; }).join("") + "</tbody>";
     $("sitesNote").textContent = d.sitesNote;
     $("ladderL").innerHTML = d.ladder.map(function (x) { return "<li><div><b>Ages " + G.esc(x.age) + ": " + G.esc(x.t) + ".</b> " + G.esc(x.d) + "</div></li>"; }).join("");
     $("groups").innerHTML = d.groups.map(function (g) { return '<article class="card"><h3>' + G.esc(g.n) + "</h3><p>" + G.esc(g.d) + "</p><p>" + a("Official page", g.u) + "</p></article>"; }).join("");

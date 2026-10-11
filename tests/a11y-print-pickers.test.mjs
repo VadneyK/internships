@@ -68,6 +68,12 @@ test("print: unselected tap tiles are hidden", () => {
   assert.ok(hiddenSelectors().has('.tp .tile[aria-pressed="false"]'), 'no print rule hides .tp .tile[aria-pressed="false"]');
 });
 
+test("print: closed group tiles are hidden, the open group tile is kept", () => {
+  const hidden = hiddenSelectors();
+  assert.ok(hidden.has('.tp .tile[aria-expanded="false"]'), "no print rule hides closed group tiles");
+  assert.ok(!hidden.has('.tp .tile[aria-expanded="true"]'), "a print rule hides the open group tile");
+});
+
 test("print: picker captions, pager, parent-text row and Menu button are hidden", () => {
   const hidden = hiddenSelectors();
   for (const sel of [".tp-cap", ".pager", ".share-parent", ".menu-btn"]) {

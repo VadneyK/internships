@@ -42,7 +42,7 @@
     "14": "School days: up to 3 hours, outside school hours. Non-school days: up to 8 hours. School weeks: up to 18 hours. When school is out: up to 8 hours a day and 40 a week. Only between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). At 14 to 17, you need to have finished 7th grade to work while school is in session.",
     "16": "School days: up to 4 hours. Non-school days: up to 8 hours. Up to 48 hours a week. Between 5 a.m. and 10 p.m. (12:30 a.m. before a non-school day). At 14 to 17, you need to have finished 7th grade to work while school is in session."
    },
-   "wage": "$16.90 an hour in 2026 and $17.40 from Jan 1, 2027. Some cities pay more, so ask your employer for the rate.",
+   "wage": "$16.90 an hour in 2026 and $17.40 from Jan 1, 2027. Some cities pay more, so ask your employer for the rate. Fast food workers have a higher state minimum of $20.00 (as of the DIR minimum wage page we read on Oct 7, 2026).",
    "minAge": {
     "job": 14,
     "note": "At 12 and 13 you can do things like babysitting, yard work and newspaper delivery. A self-employed minor needs no permit, but no page we read names pet care, so ask the Labor Commissioner at 833-526-4636 first."
@@ -70,7 +70,7 @@
     },
     "intern": {
      "permit": null,
-     "text": "An unpaid internship at a nonprofit, school or library is usually fine and is not a paid job, so no work permit. At a for-profit company it is only allowed if you are the one who mainly benefits, like a class. Otherwise it should be a paid job, and then you need the permit."
+     "text": "An unpaid internship at a nonprofit, school or library is usually fine, with your parent's permission on file with your school (California regulation 5 CCR 10121). It is not a paid job, so no work permit. At a for-profit company it is only allowed if you are the one who mainly benefits, like a class. Otherwise it should be a paid job, and then you need the permit."
     },
     "family": {
      "permit": true,
@@ -99,7 +99,9 @@
      "offWeek": 48,
      "earliest": 5,
      "latest": 22,
-     "latestSummer": null
+     "latestSummer": null,
+     "lateNote": "12:30 a.m. before a non-school day",
+     "lateMax": 24.5
     },
     "12": null
    }
@@ -148,7 +150,7 @@
    ],
    "hours": {
     "14": "At most employers the federal limits apply, and they are stricter. School days: up to 3 hours. School weeks: up to 18 hours. Non-school days: up to 8 hours. When school is out: up to 40 hours a week. Only between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day).",
-    "16": "Georgia and federal law set no hour limits at 16 and 17. Dangerous jobs are still off limits, and anyone 17 or younger may not take orders for or serve alcohol, except where it is sold to take off the premises."
+    "16": "The pages we read set no hour limit at 16 and 17 (the Georgia work permit rule covers minors under 16). Ask the US Department of Labor or your state agency before you plan long shifts. Dangerous jobs are still off limits, and anyone 17 or younger may not take orders for or serve alcohol, except where it is sold to take off the premises."
    },
    "wage": "$7.25 an hour at nearly every employer. An employer may pay workers under 20 $4.25 during their first 90 consecutive days. That is optional for the employer, and after 90 days or at age 20 you must get the full minimum.",
    "minAge": {
@@ -246,7 +248,7 @@
     "14": "School in session: not before 7 a.m. or after 7 p.m., up to 3 hours on a school day, 8 on a non-school day, 18 a week, 6 days a week. School closed all week: up to 8 hours a day and 40 a week. When school is closed: not between 9 p.m. and 7 a.m.",
     "16": "School in session: up to 4 hours on a day before a school day (Monday to Thursday), 8 hours Friday to Sunday and holidays, 28 a week, 6 days a week. Not before 6 a.m. and generally not after 10 p.m., or midnight with a parent's written permission. When school is not in session: up to 48 hours a week, and not between midnight and 6 a.m."
    },
-   "wage": "$17.00 an hour in New York City, Long Island and Westchester, and $16.00 in the rest of the state (2026).",
+   "wage": "$17.00 an hour in New York City, Long Island and Westchester, and $16.00 in the rest of the state (2026). The state says these rates stay the same on January 1, 2027. There is no lower rate for teens on the pages we read.",
    "minAge": {
     "job": 14,
     "note": "Ages 14 to 17 need working papers for almost any job in New York. Farming and caddying are exempt."
@@ -261,7 +263,7 @@
      "text": "A paid youth program is a job, so ages 14 to 17 need working papers. Many programs, including the NYC summer youth program, tell you what to turn in, so read their steps."
     },
     "odd": {
-     "permit": false,
+     "permit": null,
      "text": "No working papers are needed for babysitting, but New York DOL says the babysitter must be at least 14. At 14 and 15, casual yard work or chores at a home need no certificate if no power machinery is used. Yard work for 12 and 13 year olds is not stated. Ask: 888-469-7365 or 888-525-2267.",
      "under": {"below": 14, "permit": null, "text": "At 12 or 13, New York DOL says a babysitter must be at least 14, though the Red Cross says most states have no minimum age. Yard work for 12 and 13 year olds is not stated. Ask: 888-469-7365 or 888-525-2267."}
     },
@@ -306,6 +308,8 @@
      "earliest": 6,
      "latest": 22,
      "latestSummer": 24,
+     "lateNote": "midnight with a parent's written permission",
+     "lateMax": 24,
      "weekdayOnly": true
     }
    }
@@ -351,7 +355,7 @@
    ],
    "hours": {
     "14": "No more than 18 hours in a school week, 40 when school is out, 3 hours on a school day, 8 hours in any 24 hours, and only between 7 a.m. and 7 p.m. (until 9 p.m. from June 1 to Labor Day). A meal break of at least 30 minutes by the 5th hour in a row.",
-    "16": "The Illinois child labor law does not limit your hours at 16 and 17, and federal law does not either."
+    "16": "The pages we read set no hour limit at 16 and 17 (the Illinois child labor law covers workers under 16). Ask the US Department of Labor or your state agency before you plan long shifts."
    },
    "wage": "$15.00 an hour. Under 18 you may be paid $13.00 for your first 650 hours in a year with one employer. Chicago is $17.05 from July 1, 2026 at employers with 4 or more employees. The city page we read does not say if this covers workers under 18.",
    "minAge": {
@@ -931,7 +935,8 @@
      "offWeek": 48,
      "earliest": 6,
      "latest": 22,
-     "latestSummer": null
+     "latestSummer": null,
+     "unconfirmed": true
     }
    },
    "minAge": {
@@ -1125,7 +1130,8 @@
      "offWeek": 50,
      "earliest": null,
      "latest": null,
-     "latestSummer": null
+     "latestSummer": null,
+     "unconfirmed": true
     }
    },
    "minAge": {
@@ -1496,7 +1502,9 @@
      "offWeek": 40,
      "earliest": 7,
      "latest": 19,
-     "latestSummer": 21
+     "latestSummer": 21,
+     "lateNote": "the night before a non-school day, 7 to 9 p.m. is allowed with parent approval",
+     "lateMax": 21
     },
     "16": null
    },

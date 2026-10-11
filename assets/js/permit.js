@@ -35,18 +35,47 @@
     if (!kind) m.push("the kind of work");
     return "Pick " + (m.length === 3 ? "your state, your age and the kind of work" : m.length === 2 ? m[0] + " and " + m[1] : m[0]) + ".";
   }
+  /* Get ready, paycheck and safety links in the page carry the picked state, so the teen does not pick it again. Paycheck only for the four states that page covers. Plain links when no state is picked or it is "other". */
+  var NEXT_PAGES = { "ready.html": null, "safety.html": null, "paycheck.html": ["ca", "ga", "ny", "il"] };
+  function syncNextLinks() {
+    var st = $("pState").value, links = document.querySelectorAll("main a[href]");
+    for (var i = 0; i < links.length; i++) {
+      var a = links[i], base = (a.getAttribute("href") || "").split("?")[0];
+      if (!Object.prototype.hasOwnProperty.call(NEXT_PAGES, base)) continue;
+      var only = NEXT_PAGES[base], on = hasState(st) && (!only || only.indexOf(st) > -1);
+      a.setAttribute("href", on ? base + "?state=" + encodeURIComponent(st) : base);
+    }
+  }
+
   function changed() {
     render();
+    syncNextLinks();
     var h = $("pOut").querySelector("h2");
     say(h ? h.textContent : pickPrompt($("pState").value, $("pAge").value, $("pKind").value));
   }
 
-  /* "No permit" answers end with one next step. Volunteer and internship go to their own lists; other kinds go to Jobs for this age, with the resume page. */
+  /* Programs go to Find with the age (only for 12 to 18). */
+  function programHref(age) {
+    var a = +age;
+    return a >= 12 && a <= 18 ? "find.html?age=" + encodeURIComponent(String(age)) : "find.html";
+  }
+  function jobsHref(age) { return +age <= 13 ? "jobs.html" : "jobs.html?age=" + encodeURIComponent(String(age)); }
+
+  /* "No permit" answers end with one next step. Volunteer and internship go to their own lists; programs go to Find; other kinds go to Jobs for this age, with the resume page. */
   function nextStep(kind, age) {
     if (kind === "volunteer") return '<p><b>What to do next:</b> <a href="find.html?kind=volunteer">Find volunteer roles</a>.</p>';
     if (kind === "intern") return '<p><b>What to do next:</b> <a href="find.html?kind=internship">Find internships</a>.</p>';
-    var jobs = +age <= 13 ? "jobs.html" : "jobs.html?age=" + encodeURIComponent(String(age));
-    return '<p><b>What to do next:</b> <a href="' + jobs + '">Find jobs that hire at your age</a>, or <a href="resume.html">build your first resume</a>.</p>';
+    if (kind === "program") return '<p><b>What to do next:</b> <a href="' + programHref(age) + '">Find programs you can apply to</a>.</p>';
+    return '<p><b>What to do next:</b> <a href="' + jobsHref(age) + '">Find jobs that hire at your age</a>, or <a href="resume.html">build your first resume</a>.</p>';
+  }
+
+  /* "Check first" answers end with one next step, after the Who to call line. The office shown comes first. */
+  function askStep(kind, age) {
+    var to = kind === "program" ? { h: programHref(age), t: "Find programs you can apply to" }
+      : kind === "volunteer" ? { h: "find.html?kind=volunteer", t: "Find volunteer roles" }
+      : kind === "intern" ? { h: "find.html?kind=internship", t: "Find internships" }
+      : { h: jobsHref(age), t: "Find jobs that hire at your age" };
+    return '<p><b>What to do next:</b> Contact the office shown above first. Then <a href="' + to.h + '">' + to.t + "</a>.</p>";
   }
 
   var cur = null;
@@ -72,8 +101,14 @@
       h += "<p><b>How long it takes:</b> " + G.esc(s.timing) + "</p><p><b>Keep it current:</b> " + G.esc(s.renew) + "</p>";
       if (s.district) h += '<p>In California the exact steps depend on your school district. <a href="ready.html#permit">Pick your district on the Get ready page</a>.</p>';
     }
-    if (r.verdict === "ask") h += "<p><b>Who to call:</b> " + G.esc(s.call) + "</p>";
-    if (r.verdict === "young") h += '<p><a class="btn sm" href="younger.html' + (["ca", "ga", "ny", "il"].indexOf(st) >= 0 ? "?state=" + st : "") + '">What you can do at 12 and 13</a></p>';
+    if (r.verdict === "ask") h += "<p><b>Who to call:</b> " + L.linkContacts(s.call) + "</p>" + askStep(r.kind, r.age);
+    /* The young link keeps the picked state (ca, ga, ny, il only) and the picked age when it is 12 or 13, so Ages 12 to 14 can send the next step to the same age. */
+    if (r.verdict === "young") {
+      var yq = [];
+      if (["ca", "ga", "ny", "il"].indexOf(st) >= 0) yq.push("state=" + st);
+      if (String(age) === "12" || String(age) === "13") yq.push("age=" + String(age));
+      h += '<p><a class="btn sm" href="younger.html' + (yq.length ? "?" + yq.join("&amp;") : "") + '">What you can do at 12 and 13</a></p>';
+    }
     if (r.hours) h += "<h3>Hours you may work at " + G.esc(String(age)) + "</h3><p>" + G.esc(r.hours) + "</p>";
     if (r.verdict !== "young" && r.verdict !== "adult") {
       h += "<h3>Pay</h3><p>" + G.esc(r.wage) + "</p>";
@@ -81,7 +116,7 @@
     }
     if ((r.verdict === "need" || r.verdict === "ask" || r.verdict === "none") && +age >= 14 && +age <= 17) h += '<p><a href="interview.html?state=' + encodeURIComponent(st) + "&amp;age=" + encodeURIComponent(age) + '#availability">Plan the hours you can offer</a></p>';
     if (r.verdict === "none" || r.verdict === "adult") h += nextStep(r.kind, r.age);
-    h += '<p class="small muted">Read on ' + G.esc(s.read) + " from: " + links(s.links) + ". Questions: " + G.esc(s.call) + ".</p></article>";
+    h += '<p class="small muted">Read on ' + G.esc(s.read) + " from: " + links(s.links) + ". Questions: " + L.linkContacts(s.call) + ".</p></article>";
     out.innerHTML = h;
     cur = r;
     if (r.verdict === "need" || r.verdict === "ask") { sec.hidden = false; paintPacket(r, s); paintMsg(); }
@@ -120,6 +155,9 @@
       : "Hello,\n\nThank you again for the offer. " + (need ? "Because of my age I need a " + s.permit + " from my school before my first shift, and it needs a part from you about the job and my hours." : "I want to check what papers you need from me before my first day.") + " Who should I send the form to, and what days and hours do you expect me to work?\n\nThank you,\n" + name;
     $("mText").textContent = "Subject: " + subject + "\n\n" + body;
     $("mMail").href = L.mailtoHref(subject, body);
+    var blanks = L.blanksLeft(body), bn = $("mBlankNote");
+    bn.hidden = !blanks.length;
+    bn.textContent = blanks.length ? "Fill in before you send: " + blanks.join(", ") : "";
     $("pPacket").innerHTML && cur && paintPacket(cur, s);
   }
 
@@ -167,6 +205,7 @@
     $("pPrint").addEventListener("click", function () { G.printOnly($("pPacket"), "Work permit checklist"); });
     var asked = q.get("state");
     render();
+    syncNextLinks();
     /* A bad ?state= value selects nothing, so the select stays empty: show the same answer as "not listed". */
     if (asked && !$("pState").value) $("pOut").innerHTML = nostateCard(asked);
   }).catch(function () { $("pOut").innerHTML = '<p class="muted">The permit answers could not load. Try again, or see the <a href="rules.html">California rules</a> or <a href="states.html">other states</a>.</p>'; $("pStatus").textContent = "The permit answers could not load. Try again."; });

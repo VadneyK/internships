@@ -7,9 +7,20 @@ navparent: ready
   <div class="wrap">
     <nav class="breadcrumb small muted" aria-label="Breadcrumb"><ol><li><a href="ready.html">Get ready</a></li><li aria-current="page">Jobs that hire teens</li></ol></nav>
     <span class="tag y eyebrow">A first paid job</span>
-    <h1 style="font-size:clamp(2.2rem,7vw,4rem);">Jobs that <span class="orange">hire teens</span></h1>
+    <h1 class="display">Jobs that <span class="orange">hire teens</span></h1>
     <p class="lede">Tap your age. You see real employers that say they hire at that age, with a link to the page that says so. A second tag shows when an age is for some jobs only or the posting is old. Programs and internships are on the <a href="find.html">Programs page</a>. This page is for regular jobs.</p>
     <div class="callout plain small" id="jobsNote" style="margin-top:1rem;max-width:52rem;"></div>
+    <details id="words" class="callout plain small">
+      <summary>Words you will see</summary>
+      <dl>
+        <dt>Non-farm job</dt>
+        <dd>Any job that is not farm work; federal law sets 14 as the minimum age for most of them.</dd>
+        <dt>Minimum age</dt>
+        <dd>The youngest age an employer says it hires for a job, as stated on that employer's own page.</dd>
+        <dt>Hazardous job</dt>
+        <dd>A job the Secretary of Labor has declared hazardous; no one under 18 may do the jobs on that list.</dd>
+      </dl>
+    </details>
   </div>
 </section>
 
@@ -18,6 +29,7 @@ navparent: ready
     <div class="field"><label for="jAge">How old are you?</label>
       <select id="jAge" data-tiles><option value="">Choose your age</option></select></div>
     <p class="sr" id="jStatus" role="status"></p>
+    <div id="jChips"></div>
     <div id="jOut"><p class="muted">Tap your age to see who hires.</p></div>
   </div>
 </section>
@@ -27,14 +39,14 @@ navparent: ready
     <h2>Rules every teen job follows</h2>
     <p class="small muted" id="jRulesLead"></p>
     <div class="grid g2" id="jRules" style="align-items:start;"></div>
-    <p class="row"><a class="btn" href="permit.html">Do I need a work permit?</a> <a class="btn alt" href="paycheck.html">See your first paycheck</a></p>
+    <p class="row"><a class="btn" id="jPermitRules" href="permit.html">Do I need a work permit?</a> <a class="btn alt" href="paycheck.html">See your first paycheck</a></p>
   </div>
 </section>
 
 <section class="nextstep" id="next-step">
   <div class="wrap">
     <h2>Your next step</h2>
-    <p class="row"><a class="btn" href="permit.html">Find your work permit</a></p>
+    <p class="row"><a class="btn" id="jPermitNext" href="permit.html">Find your work permit</a></p>
     <p class="row"><a class="btn alt" href="resume.html">Build a first resume</a> <a class="btn alt" href="interview.html">Practice the interview</a></p>
   </div>
 </section>

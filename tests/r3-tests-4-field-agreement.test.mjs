@@ -34,12 +34,10 @@ const ALLOW_PAY = [
   "georgia-deca-state-association",
   "georgia-tech-gtae-step",
   "hidden-genius-project-immersion",
-  "la-metro-youth-council",
   "larpd-summer-youth-volunteer",
   "lbnl-bldap",
   "madison-uw-engineering-summer-program",
   "michigan-mrs-pre-employment-transition-services",
-  "minnesota-youth-council",
   // Free program; the dollar amount is a scholarship, not pay to the student.
   "minnesota-youth-institute-mnyi",
   "nasa-genelab-for-high-schools",
@@ -50,7 +48,6 @@ const ALLOW_PAY = [
   "pomona-college-academy-for-youth-success",
   "richmond-sd38-youth-train-in-trades",
   "stanford-smysp",
-  "twin-cities-walker-art-center-teen-arts-council",
   // Free; the dollar amount is a later college scholarship, and the text says there is no stipend.
   "twin-cities-umn-rooted-in-stem",
   "waubonsee-upward-bound-aurora",
@@ -90,7 +87,6 @@ const ALLOW_AGE = [
   // Same pattern: min_age 8 is the youngest age with an adult; the text also names 13 to go alone.
   "madison-dane-county-humane-society-youth-volunteer",
   // The page lists activity ideas by age from 5 up and a youth policy for 16 and 17. min_age 12 is where the teen activities start; the text names 16 for new home building.
-  "austin-habitat-youth-volunteering",
 ];
 
 function ageMentions(text) {

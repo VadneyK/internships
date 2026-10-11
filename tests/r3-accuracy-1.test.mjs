@@ -70,9 +70,9 @@ test("hoursCheck: a null weekly cap skips the week check", () => {
 
 test("hoursCheck: a limit still flags when it is a number (MI latest 22, WA school week 22 and summer 24)", () => {
   const mi = L.hoursCheck(PM.states.mi.limits, 16, true, week({ 0: { from: 17, to: 23 } }));
-  assert.ok(mi.problems.some((p) => /working past 10 p\.m\./.test(p)), mi.problems.join("|"));
+  assert.ok(mi.problems.some((p) => /usual limit of 10 p\.m\./.test(p)), mi.problems.join("|"));
   const waSchool = L.hoursCheck(PM.states.wa.limits, 16, true, week({ 0: { from: 17, to: 23 } }));
-  assert.ok(waSchool.problems.some((p) => /working past 10 p\.m\./.test(p)), waSchool.problems.join("|"));
+  assert.ok(waSchool.problems.some((p) => /usual limit of 10 p\.m\./.test(p)), waSchool.problems.join("|"));
   const waOut = L.hoursCheck(PM.states.wa.limits, 16, false, week({ 0: { from: 17, to: 23 } }));
   assert.equal(waOut.problems.filter((p) => /past/.test(p)).length, 0, waOut.problems.join("|"));
   const waEarly = L.hoursCheck(PM.states.wa.limits, 16, true, week({ 0: { from: 6, to: 9 } }));

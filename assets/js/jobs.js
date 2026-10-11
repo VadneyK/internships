@@ -10,6 +10,20 @@
     if (s === "12" || s === "13" || s === "u14") return "u14";
     return ["14", "15", "16", "17", "18"].indexOf(s) > -1 ? s : "";
   }
+  /* Permit buttons carry the picked age (14 to 18 only). Under 14, no age, or anything else gives the plain permit page. */
+  function permitHref(v) { return ["14", "15", "16", "17", "18"].indexOf(String(v)) > -1 ? "permit.html?age=" + v : "permit.html"; }
+  function setPermitLinks(v) {
+    var h = permitHref(v);
+    ["jPermitRules", "jPermitNext"].forEach(function (id) { var a = $(id); if (a) a.setAttribute("href", h); });
+  }
+  /* Keeps the picked age in the address bar, so a reload or a copied link keeps it. Clearing removes it. */
+  function syncAddress(v) {
+    try {
+      var u = new URL(location.href);
+      if (v) u.searchParams.set("age", v); else u.searchParams.delete("age");
+      history.replaceState(history.state, "", u.pathname + u.search + u.hash);
+    } catch (e) {}
+  }
   function row(k, v) { return v ? "<div><dt>" + G.esc(k) + "</dt><dd>" + G.esc(v) + "</dd></div>" : ""; }
   function card(e) {
     return '<article class="card"><p class="small"><span class="tag y">Starts at ' + e.min_age + "</span> " + (e.caveat ? '<span class="tag caveat">' + G.esc(e.caveat) + "</span> " : "") + G.esc(e.kind) + "</p><h3>" + G.esc(e.name) + "</h3>" +
@@ -28,6 +42,8 @@
     });
     function paint() {
       var v = sel.value, out = $("jOut");
+      setPermitLinks(v);
+      $("jChips").innerHTML = "";
       if (!v) { $("jStatus").textContent = ""; out.innerHTML = '<p class="muted">Tap your age to see who hires.</p>'; return; }
       if (v === "u14") {
         $("jStatus").textContent = "Jobs for under 14 are listed below.";
@@ -37,17 +53,22 @@
       var age = Number(v);
       var can = d.employers.filter(function (e) { return e.min_age <= age; }), later = d.employers.filter(function (e) { return e.min_age > age; });
       $("jStatus").textContent = can.length + " employers for age " + age + " are listed below.";
-      var html = "", shownGroups = 0;
+      var html = "", shownGroups = 0, chips = "";
       d.groups.forEach(function (g) {
         var list = can.filter(function (e) { return e.group === g[0]; });
-        if (list.length) { shownGroups++; html += "<h2>" + G.esc(g[1]) + '</h2><div class="grid g2" style="align-items:start;">' + list.map(card).join("") + "</div>"; }
+        if (list.length) {
+          shownGroups++;
+          chips += '<a class="chip" style="text-decoration:none" href="#jg-' + G.esc(g[0]) + '">' + G.esc(g[1]) + '<span class="n">' + list.length + "</span></a>";
+          html += '<h2 id="jg-' + G.esc(g[0]) + '" tabindex="-1">' + G.esc(g[1]) + '</h2><div class="grid g2" style="align-items:start;">' + list.map(card).join("") + "</div>";
+        }
       });
+      $("jChips").innerHTML = shownGroups > 1 ? '<nav class="chips" aria-label="Job groups" style="margin-bottom:1rem;">' + chips + "</nav>" : "";
       if (shownGroups) $("jStatus").textContent += " They are in " + shownGroups + (shownGroups === 1 ? " job group." : " job groups.");
       if (!can.length) html += '<div class="card"><p>No employer on this page starts at your age yet. Try the <a href="find.html">Programs page</a>.</p></div>';
       if (later.length) html += '<details style="margin-top:1.4rem;"><summary class="lbl" style="cursor:pointer;">' + later.length + " employers that start older than " + age + "</summary><p class=\"small muted\">These say their minimum age is higher than " + age + ". They are here so you know who to try later.</p><div class=\"grid g2\" style=\"align-items:start;\">" + later.map(card).join("") + "</div></details>";
       out.innerHTML = html;
     }
-    sel.addEventListener("change", paint);
+    sel.addEventListener("change", function () { syncAddress(sel.value); paint(); });
     /* Start age: the address wins (an invalid ?age= leaves the picker empty), otherwise the age saved on Programs (read only). */
     var params = new URLSearchParams(location.search), start = "";
     if (params.has("age")) start = ageChoice(params.get("age"));

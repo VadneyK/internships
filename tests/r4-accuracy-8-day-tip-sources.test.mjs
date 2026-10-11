@@ -24,7 +24,7 @@ test("day[3] greeting tip names the Addison guide for eye contact and the Cal Po
   const t = D.day[3];
   assert.match(t, /The Addison library guide says to make eye contact\./);
   assert.match(t, /The Cal Poly Pomona guide says a handshake should be strong and confident\./);
-  assert.ok(t.endsWith(LABEL));
+  assert.ok(!t.includes(LABEL), "both sentences are sourced, so no suggestion label");
 });
 
 test("day[5] parent tip names the Cal Poly Pomona guide", () => {

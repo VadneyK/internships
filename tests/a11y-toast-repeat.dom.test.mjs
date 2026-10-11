@@ -36,9 +36,9 @@ test("#toast: a repeated message is re-announced, and stale text is cleared afte
   assert.ok(after.slice(emptyAt + 1).includes("Copied"), "Copied was set again after the empty step: " + JSON.stringify(seen));
   assert.equal(toast.textContent, "Copied");
 
-  // Wait until 3 seconds after the last call (the fade is at 2.2 s), then check nothing stale is left.
-  await tick(2850);
-  assert.equal(toast.classList.contains("show"), false, "show is gone after 3 seconds");
+  // Wait until 4.3 seconds after the last call (the fade is at 4 s), then check nothing stale is left.
+  await tick(4300);
+  assert.equal(toast.classList.contains("show"), false, "show is gone after 4 seconds");
   assert.equal(toast.textContent, "", "stale text is cleared after the fade");
 
   observer.disconnect();

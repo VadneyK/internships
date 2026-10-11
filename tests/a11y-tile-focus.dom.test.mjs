@@ -38,6 +38,7 @@ test("find.html: grouped Where picker keeps focus", async () => {
   let a = document.activeElement;
   assert.equal(a.textContent, gt);
   assert.equal(a.getAttribute("aria-expanded"), "true");
+  assert.equal(a.hasAttribute("aria-pressed"), false, "group tile is not a toggle");
   assert.ok(a.isConnected);
   const city = hub.querySelector(".tp-sub .tile");
   assert.ok(city, "sub tile");

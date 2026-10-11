@@ -27,6 +27,7 @@ const EXPECTED = {
   "interview.html": [
     { id: "aStatus", role: "status" },
     { id: "tStatus", role: "status" },
+    { id: "tBlankNote", role: "status" },
   ],
   "jobs.html": [{ id: "jStatus", role: "status" }],
   "languages.html": [{ id: "lCount", role: "aria-live=polite" }],
@@ -39,10 +40,12 @@ const EXPECTED = {
   "permit.html": [
     { id: "pStatus", role: "status" },
     { id: "mStatus", role: "status" },
+    { id: "mBlankNote", role: "status" },
   ],
   "playbook.html": [
     { id: "planLive", role: "aria-live=polite" },
     { id: "letterStatus", role: "status" },
+    { id: "blankNote", role: "status" },
   ],
   "ready.html": [
     { id: "readyStatus", role: "status" },

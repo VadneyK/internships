@@ -38,6 +38,22 @@
     }
   };
 
+  /* A teen outside California sees at the top where to go instead. Read only: nothing is saved or sent. */
+  try {
+    var L = G.lib, xs = new URLSearchParams(location.search).get("state"), other = "";
+    xs = typeof xs === "string" ? xs.toLowerCase() : "";
+    if (/^[a-z]{2}$/.test(xs)) other = xs;
+    else {
+      var fp = G.store.get("findprefs", {});
+      other = fp && typeof fp.place === "string" ? L.stateFromPlace(fp.place) : "";
+    }
+    if (other && other !== "ca") {
+      $("readyOtherPermit").setAttribute("href", L.PERMIT_STATES.indexOf(other) > -1 ? "permit.html?state=" + other : "permit.html");
+      $("readyOtherPay").setAttribute("href", ["ga", "ny", "il"].indexOf(other) > -1 ? "paycheck.html?state=" + other : "paycheck.html");
+      $("readyOtherState").hidden = false;
+    }
+  } catch (e) { /* the notice is optional */ }
+
   var done = G.store.get("ready", {});
   var list = $("readyList");
   /* Build the list once so focus stays on the box you toggled; later changes only update checked states and the count. */

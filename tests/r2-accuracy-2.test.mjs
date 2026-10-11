@@ -19,7 +19,7 @@ test("hoursCheck: NY 16 working Monday 5 p.m. to 11 p.m. with school out has no 
 
 test("hoursCheck: NY 16 with school in session still flags the same Monday 5 p.m. to 11 p.m. shift", () => {
   const r = L.hoursCheck(NY, 16, true, week({ 0: { from: 17, to: 23 } }));
-  assert.ok(r.problems.some((p) => p.startsWith("Monday") && /working past 10 p\.m\./.test(p)), r.problems.join("|"));
+  assert.ok(r.problems.some((p) => p.startsWith("Monday") && /past the usual limit of 10 p\.m\./.test(p)), r.problems.join("|"));
 });
 
 test("NY hours text states the school-out rules for 14 and 15 and for 16 and 17", () => {

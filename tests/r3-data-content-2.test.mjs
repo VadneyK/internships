@@ -8,28 +8,18 @@ const byId = new Map(entries.map((e) => [e.id, e]));
 // Cards whose pay_detail says pay is possible but unstated. They stay "mixed".
 const ALLOWLIST = {
   "capital-area-nextgen-youth-services": "work experience is listed, whether it is paid is not stated",
-  "san-bernardino-county-wioa-youth": "work experience is listed, pay is not stated",
   "ocwdb-ready-set-oc-young-adult": "work experience can be paid or unpaid, wage not stated",
   "atlanta-parks-rec-teen-leaders": "teen leader activities are free, summer job pay is not stated",
   "champaign-county-rpc-youth-services": "pay not stated for youth, a separate page covers wages",
   "ecc-dual-credit": "mixed tuition rules, no pay statement",
   "charlottesville-pvcc-dual-enrollment": "mixed tuition rules, no pay statement",
-  "merced-county-office-of-education-high-school-rop": "cost, pay and credit are not stated on the page",
-  "philadelphia-mural-arts-art-education": "cost and pay are not stated on the pages read",
-  "pittsburgh-boys-girls-clubs-workforce-pathways": "cost and pay are not stated on the pages read",
 };
 
 // Cards flipped from mixed, stipend or unpaid-credit to unpaid this round, whose pay_detail
 // does not say pay is stated. They stay mixed (pay unknown), not unpaid.
+// The group B cards (black-girls-code, madison, sacramento, stanford) moved to NOT_STATED_IDS below.
 const PAY_NOT_STATED_IDS = [
-  "arc-nextgen-youth-workforce",
-  "black-girls-code",
-  "california-partnership-academies",
   "chicago-park-district-recreation-leader-in-training",
-  "indiana-dwd-workone-young-adult-services",
-  "madison-wdbscw-wioa-youth",
-  "sacramento-youth-center",
-  "stanford-aimi-summer-research-internship",
 ];
 for (const id of PAY_NOT_STATED_IDS) {
   ALLOWLIST[id] = ALLOWLIST[id] || "pay not stated on the page, so not labelled unpaid";
@@ -97,6 +87,11 @@ test("cards whose pay is not stated are mixed, never unpaid", () => {
 // Cards whose pay is not stated on the page. They use paid_type "not-stated", which the pay filter
 // leaves out of "Paid or stipend", so an unknown role is never shown as paid.
 const NOT_STATED_IDS = [
+  "arc-nextgen-youth-workforce",
+  "california-partnership-academies",
+  "indiana-dwd-workone-young-adult-services",
+  "merced-county-office-of-education-high-school-rop",
+  "philadelphia-mural-arts-art-education",
   "atlanta-public-schools-work-based-learning",
   "aurora-better-employment-outcomes-initiative",
   "chicago-adler-planetarium-astro-ambassadors",
@@ -106,6 +101,14 @@ const NOT_STATED_IDS = [
   "chicago-mikva-safety-and-justice-council",
   "chicago-mikva-student-election-judges",
   "chicago-mikva-teen-health-council",
+  "pittsburgh-boys-girls-clubs-workforce-pathways",
+  "rfu-inspire-summer-research",
+  "sacramento-youth-center",
+  "stanford-aimi-summer-research-internship",
+  "twin-cities-minneapolis-parks-teen-teamworks",
+  "san-bernardino-county-wioa-youth",
+  "black-girls-code",
+  "madison-wdbscw-wioa-youth",
   "naperville-mayors-chief-of-staff-internship",
   "nyc-brooklyn-borough-president-youth-advisory-council",
   "nyc-brooklyn-maimonides-science-scholars",

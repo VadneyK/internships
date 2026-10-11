@@ -54,7 +54,7 @@
       showFields(errs);
       var r = L.paycheck(d, presetId(), $("mWage").value, $("mHours").value, $("mParent").checked);
       if (!r) { $("mOut").innerHTML = '<p class="muted">' + G.esc(firstProblem(errs) || "Enter a rate and the hours.") + "</p>"; return; }
-      var h = '<div class="tablewrap" tabindex="0" role="region" aria-label="Your paycheck estimate"><table><tbody><tr><th scope="row">Pay before anything comes out</th><td>' + usd(r.gross) + "</td></tr>" +
+      var h = '<div class="tablewrap" tabindex="0" role="region" aria-label="Your paycheck estimate"><table><caption class="sr">Your paycheck estimate</caption><tbody><tr><th scope="row">Pay before anything comes out</th><td>' + usd(r.gross) + "</td></tr>" +
         r.lines.map(function (l) { return '<tr><th scope="row">&minus; ' + G.esc(l.label) + "</th><td>" + usd(l.amount) + "</td></tr>"; }).join("") +
         '<tr><th scope="row"><b>Left before income tax</b></th><td><b>' + usd(r.left) + "</b></td></tr></tbody></table></div>";
       var notes = r.lines.map(function (l) { return "<li>" + G.esc(d.lineNotes[l.key]) + "</li>"; });
@@ -93,6 +93,17 @@
     function wrong() {
       var s = d.states.filter(function (x) { return x.id === $("mState").value; })[0];
       $("mWrong").innerHTML = "<h3>" + G.esc(s.name) + '</h3><dl class="facts">' + row("When you must be paid", s.freq) + row("Your pay stub", s.stub) + row("Your last paycheck", s.last) + row("Direct deposit and cards", s.dd) + row("How to get unpaid wages", s.claim) + row("Phone", s.call) + "</dl><p class=\"small\">" + s.links.map(function (l) { return a(l.t, l.u); }).join(" &middot; ") + "</p>";
+      linkState();
+    }
+    // The Next links carry the picked state, so safety, permit and interview open on that state. Find and jobs stay as they are.
+    function linkState() {
+      var sid = $("mState").value;
+      if (!sid) return;
+      var main = document.querySelector("main"); if (!main) return;
+      main.querySelectorAll("a[href]").forEach(function (el) {
+        var m = /^(safety|permit|interview)\.html(\?.*)?$/.exec(el.getAttribute("href") || "");
+        if (m) el.setAttribute("href", m[1] + ".html?state=" + encodeURIComponent(sid));
+      });
     }
     // The card is plain content (no live region). A short status line names the state after a choice.
     function announceState() {

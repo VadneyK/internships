@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { loadPage } from "./dom-helper.mjs";
 
 const CASES = [
-  { file: "paycheck.html", href: "safety.html", label: "Read Safe at work" },
+  { file: "paycheck.html", href: "safety.html?state=ca", label: "Read Safe at work" },
   { file: "safety.html", href: "share.html", label: "Share this guide with a friend" },
   { file: "interview.html", href: "permit.html", label: "Got an offer? Check your permit", extraLinks: 1 },
   { file: "parents.html", href: "permit.html", label: "Find the permit for your teen" },

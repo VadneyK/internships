@@ -38,11 +38,12 @@ const PARAMS_BY_PAGE = {
   "paycheck.html": ["state"],
   "interview.html": ["state", "age"],
   "jobs.html": ["age"],
-  "younger.html": ["state"],
+  "younger.html": ["state", "age"],
   "states.html": ["state"],
   "calendar.html": ["m", "at", "age"],
   "languages.html": ["lang", "state"],
-  "ready.html": ["ride"],
+  "ready.html": ["ride", "state"],
+  "safety.html": ["state"],
 };
 const KNOWN_PARAMS = new Set(Object.values(PARAMS_BY_PAGE).flat());
 
@@ -178,7 +179,7 @@ test("self-check: linkProblems reports a bad page, a bad id, a bad parameter, a 
     <a href="#nowhere">g</a>
     <a href="javascript:void(0)">h</a>
     <a href="https://example.org/" target="_blank">i</a>
-    <a href="ready.html?state=ca">j</a>
+    <a href="about.html?state=ca">j</a>
     <a href="find.html?view=table">k</a>
     </body>`).window.document;
   const problems = linkProblems(doc, "fake.html");

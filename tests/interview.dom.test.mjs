@@ -15,7 +15,7 @@ test("hoursCheck: California 14 year old in school, long days and a long week ar
   const ok = L.hoursCheck(ca, 14, true, [{ from: 15, to: 18 }, null, null, null, null, { from: 9, to: 17 }, null]);
   assert.deepEqual(ok.problems, []);
   const late = L.hoursCheck(ca, 15, true, [{ from: 17, to: 20 }, null, null, null, null, null, null]);
-  assert.ok(late.problems.some((p) => /past 7 p\.m\./.test(p)));
+  assert.ok(late.problems.some((p) => /usual limit of 7 p\.m\./.test(p)));
   const summer = L.hoursCheck(ca, 15, false, [{ from: 17, to: 20 }, null, null, null, null, null, null]);
   assert.deepEqual(summer.problems, [], "9 p.m. is allowed in summer");
   const week = L.hoursCheck(ca, 14, false, [0, 1, 2, 3, 4, 5, 6].map(() => ({ from: 9, to: 15 })));

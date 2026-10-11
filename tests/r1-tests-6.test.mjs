@@ -210,7 +210,7 @@ test("hoursCheck: New York 16 treats Friday as a day off from school (weekdayOnl
 test("hoursCheck: a late shift and an early start each name the day", () => {
   const lim = CA["14"];
   const late = L.hoursCheck(CA, 14, true, week([1, lim.latest - 2, lim.latest + 1]));
-  assert.ok(late.problems.some((p) => p.startsWith("Tuesday") && /working past 7 p\.m\./.test(p)), late.problems.join("|"));
+  assert.ok(late.problems.some((p) => p.startsWith("Tuesday") && /past the usual limit of 7 p\.m\./.test(p)), late.problems.join("|"));
   const early = L.hoursCheck(CA, 14, true, week([3, lim.earliest - 1, lim.earliest + 1]));
   assert.ok(early.problems.some((p) => p.startsWith("Thursday") && /before 7 a\.m\./.test(p)), early.problems.join("|"));
   // ending exactly at the latest hour is fine
@@ -222,15 +222,15 @@ test("hoursCheck: inSchool false uses the summer latest hour when the state has 
   assert.ok(lim.latestSummer > lim.latest);
   const plan = week([0, lim.latest - 1, lim.latestSummer]);
   const school = L.hoursCheck(CA, 14, true, plan);
-  assert.ok(school.problems.some((p) => p.startsWith("Monday") && /working past 7 p\.m\./.test(p)));
+  assert.ok(school.problems.some((p) => p.startsWith("Monday") && /past the usual limit of 7 p\.m\./.test(p)));
   assert.deepEqual(L.hoursCheck(CA, 14, false, plan).problems, []);
   const pastSummer = L.hoursCheck(CA, 14, false, week([0, lim.latestSummer - 2, lim.latestSummer + 1]));
-  assert.ok(pastSummer.problems.some((p) => p.startsWith("Monday") && /working past 9 p\.m\./.test(p)));
+  assert.ok(pastSummer.problems.some((p) => p.startsWith("Monday") && /past the usual limit of 9 p\.m\./.test(p)));
   // a band with no summer hour keeps the regular latest hour even when school is out
   const sixteen = CA["16"];
   assert.equal(sixteen.latestSummer, null);
   const late16 = L.hoursCheck(CA, 16, false, week([0, sixteen.latest - 1, sixteen.latest + 1]));
-  assert.ok(late16.problems.some((p) => p.startsWith("Monday") && /past 10 p\.m\./.test(p)));
+  assert.ok(late16.problems.some((p) => p.startsWith("Monday") && /past the usual limit of 10 p\.m\./.test(p)));
 });
 
 test("hoursCheck: a week over the cap is flagged once and a null limits object is safe", () => {

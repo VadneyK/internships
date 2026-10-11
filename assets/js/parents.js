@@ -22,7 +22,7 @@
     para("signLead", d.sign.lead);
     function drawStates(only) {
       var rows = d.sign.states.filter(function (s) { return !only || s.id === only; });
-      $("signT").innerHTML = "<thead><tr><th scope=\"col\">Place</th><th scope=\"col\">Permit</th><th scope=\"col\">What a parent does</th><th scope=\"col\">Who to call</th></tr></thead><tbody>" +
+      $("signT").innerHTML = "<caption class=\"sr\">Work permit by state: what a parent does</caption><thead><tr><th scope=\"col\">Place</th><th scope=\"col\">Permit</th><th scope=\"col\">What a parent does</th><th scope=\"col\">Who to call</th></tr></thead><tbody>" +
         rows.map(function (s) {
           return "<tr><th scope=\"row\">" + G.esc(s.name) + "</th>" +
             "<td><b>" + G.esc(s.need) + ".</b> " + G.esc(s.permit) + "</td>" +

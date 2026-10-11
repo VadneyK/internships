@@ -42,10 +42,13 @@
     m.setAttribute("aria-expanded", "false"); m.setAttribute("aria-controls", nav.id);
     btn.parentNode.insertBefore(m, btn);
     top.classList.add("menu-js");
-    m.addEventListener("click", function () {
-      var on = !top.classList.contains("open"); top.classList.toggle("open", on); m.setAttribute("aria-expanded", String(on));
-    });
-    top.addEventListener("keydown", function (e) { if (e.key === "Escape" && top.classList.contains("open")) { top.classList.remove("open"); m.setAttribute("aria-expanded", "false"); m.focus(); } });
+    function setOpen(on) { top.classList.toggle("open", on); m.setAttribute("aria-expanded", String(on)); }
+    m.addEventListener("click", function () { setOpen(!top.classList.contains("open")); });
+    top.addEventListener("keydown", function (e) { if (e.key === "Escape" && top.classList.contains("open")) { setOpen(false); m.focus(); } });
+    /* a chosen link (an in-page hash link or a page link) closes the menu */
+    nav.addEventListener("click", function (e) { var a = e.target && e.target.closest ? e.target.closest("a") : null; if (a) setOpen(false); });
+    /* focus that moves outside the header (Tab past the last link, for example) closes the menu. Focus is not moved. */
+    document.addEventListener("focusin", function (e) { if (top.classList.contains("open") && !top.contains(e.target)) setOpen(false); });
   })();
 
   /* toast */
@@ -60,7 +63,9 @@
       toastSet = setTimeout(function () { toastEl.textContent = msg; }, 30);
     } else toastEl.textContent = msg;
     toastEl.classList.add("show");
-    toastTimer = setTimeout(function () { toastEl.classList.remove("show"); toastEl.textContent = ""; }, 2200);
+    /* long enough to read: at least 4 s, and 60 ms per character for a long message, capped at 9 s */
+    var hold = Math.min(9000, Math.max(4000, 60 * String(msg).length));
+    toastTimer = setTimeout(function () { toastEl.classList.remove("show"); toastEl.textContent = ""; }, hold);
   };
 
   /* copy text, with a fallback for browsers that refuse the clipboard API */
@@ -246,6 +251,8 @@
     sel.classList.add("tp-hidden"); sel.setAttribute("tabindex", "-1"); sel.setAttribute("aria-hidden", "true");
     sel.parentNode.insertBefore(wrap, sel.nextSibling);
     var open = -1;
+    var tpBase = "tp" + (G._tpN = (G._tpN || 0) + 1);
+    function subId(k) { return (sel.id || tpBase) + "-sub" + k; }
     function mk(text, onclick) {
       var b = document.createElement("button"); b.type = "button"; b.className = "tile"; b.textContent = text; b.setAttribute("aria-pressed", "false");
       b.addEventListener("click", onclick); return b;
@@ -280,15 +287,16 @@
         var vis = groupOf(cur); if (vis > -1 && keepOpen !== true) open = vis;
         g.forEach(function (grp, k) {
           var b = mk(grp.label, function () { open = open === k ? -1 : k; paint(true); });
-          b.setAttribute("aria-pressed", open === k ? "true" : "false"); b.setAttribute("aria-expanded", open === k ? "true" : "false"); first.appendChild(b);
+          b.removeAttribute("aria-pressed"); b.setAttribute("aria-expanded", open === k ? "true" : "false"); b.setAttribute("aria-controls", subId(k)); first.appendChild(b);
         });
-        if (open > -1) {
-          var sub = document.createElement("div"); sub.className = "tp-sub";
-          var cap = document.createElement("p"); cap.className = "tp-cap"; cap.textContent = "Now pick one in " + g[open].label; sub.appendChild(cap);
+        /* Every group has its own sub row so aria-controls always points at a real id; closed ones are hidden. */
+        g.forEach(function (grp, k) {
+          var sub = document.createElement("div"); sub.className = "tp-sub"; sub.id = subId(k); sub.hidden = open !== k;
+          var cap = document.createElement("p"); cap.className = "tp-cap"; cap.textContent = "Now pick one in " + grp.label; sub.appendChild(cap);
           var row = document.createElement("div"); row.className = "tp-row"; sub.appendChild(row);
-          g[open].items.forEach(function (i) { var b = mk(opts.labelFor ? opts.labelFor(i, sel.options[i].textContent) : sel.options[i].textContent, function () { pick(i); }); b.setAttribute("aria-pressed", cur === i ? "true" : "false"); row.appendChild(b); });
+          grp.items.forEach(function (i) { var b = mk(opts.labelFor ? opts.labelFor(i, sel.options[i].textContent) : sel.options[i].textContent, function () { pick(i); }); b.setAttribute("aria-pressed", cur === i ? "true" : "false"); row.appendChild(b); });
           wrap.appendChild(sub);
-        }
+        });
       } else {
         for (var i = 0; i < sel.options.length; i++) {
           if (sel.options[i].value === "" && !(opts.anyLabel && i === 0) && (opts.skipEmpty !== false)) continue;

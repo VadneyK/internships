@@ -33,11 +33,13 @@ test("resume: email, phone and name fields use the right keyboard and skip spell
   }
 });
 
-test("resume: every named field keeps autocomplete off and a matching label", () => {
+test("resume: every named field has the expected autocomplete value and a matching label", () => {
   const doc = parse("resume.html");
-  for (const id of ["rName", "rEmail", "rPhone", "rCity", "rSchool"]) {
+  // Ticket r1-a11y-perf-4: the teen's own details use real tokens; school stays off.
+  const expected = { rName: "name", rEmail: "email", rPhone: "tel", rCity: "address-level2", rSchool: "off" };
+  for (const id of Object.keys(expected)) {
     const el = field(doc, id);
-    assert.equal(el.getAttribute("autocomplete"), "off", `#${id} autocomplete`);
+    assert.equal(el.getAttribute("autocomplete"), expected[id], `#${id} autocomplete`);
     const label = doc.querySelector(`label[for="${id}"]`);
     assert.ok(label && label.textContent.trim().length > 0, `#${id} has a label`);
   }

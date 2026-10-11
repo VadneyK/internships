@@ -286,7 +286,8 @@ test("parents.json: the phone numbers match the finder and the pay data", () => 
   }
   for (const st of money.states) {
     const ph = (st.call.match(/\d{1,3}-\d{3}-\d{3}-\d{4}|\d{3}-\d{3}-\d{4}/) || [])[0];
-    assert.ok(ph && all.includes(ph), `${st.id}: ${ph} (money.json) is on the parents page`);
+    if (!ph) { assert.ok(!/\d{3}-\d{4}/.test(st.call), `${st.id}: call text has a malformed number`); continue; } // a state may point to a page instead of a number
+    assert.ok(all.includes(ph), `${st.id}: ${ph} (money.json) is on the parents page`);
   }
 });
 

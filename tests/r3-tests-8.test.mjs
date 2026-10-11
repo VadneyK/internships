@@ -39,10 +39,7 @@ const HOST_ALLOW = {
 };
 
 // Sources that are not https, per card id, by exact URL. Remove the entry once the source is switched to https and read there.
-const HTTP_ALLOW = {
-  // This WorkOne page is linked over http only.
-  "indiana-dwd-workone-young-adult-services": ["http://www.workonewestcentral.org/60.html"],
-};
+const HTTP_ALLOW = {};
 
 // ---------- pure helpers (exported to the fixture checks below) ----------
 

@@ -1,25 +1,31 @@
-// Find and Home pages: no blanket "all dates are for 2026 to 2027" claim and no "real deadlines" promise (ticket r2-accuracy-3).
+// Volunteering wording on the rules page: no unconditional-vs-condition conflict, and the examples stay (ticket r2-accuracy-3).
 // Run with: node --test tests/r2-accuracy-3.test.mjs
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 
 const read = (rel) => fs.readFileSync(new URL(`../${rel}`, import.meta.url), "utf8");
+const QUICK = "For newspaper routes, unpaid volunteering at a nonprofit, or other work you run yourself, ask the Labor Commissioner at 833-526-4636.";
+const BULLET = "Volunteering at a nonprofit, library, hospital, church, or school program";
 
-for (const page of ["find.html", "index.html"]) {
-  test(`${page} does not claim every date is for the 2026 to 2027 school year`, () => {
-    assert.equal(read(page).includes("Dates are for the 2026 to 2027 school year"), false);
-  });
-
-  test(`${page} does not promise real deadlines`, () => {
-    assert.equal(read(page).includes("real deadlines"), false);
-  });
-}
-
-test("find.html explains the Based on last year tag", () => {
-  assert.ok(read("find.html").includes("Based on last year"));
+test("src/rules.html quick answer sends unpaid nonprofit volunteering to the Labor Commissioner, with no permission-free claim", () => {
+  const html = read("src/rules.html");
+  assert.ok(html.includes(QUICK));
+  assert.equal(html.includes("with your parent's permission on file with your school (California regulation 5 CCR 10121)"), false);
 });
 
-test("index.html says the deadlines are the ones we could confirm", () => {
-  assert.ok(read("index.html").includes("with the deadlines we could confirm"));
+test("src/rules.html 'Usually fine' bullet keeps hospital and church and has no permission clause", () => {
+  const html = read("src/rules.html");
+  assert.ok(html.includes(BULLET));
+  const start = html.indexOf('<section id="unpaid">');
+  const end = html.indexOf("</section>", start);
+  const section = html.slice(start, end);
+  assert.equal(section.includes("parent's permission on file"), false);
+});
+
+test("data/permits.json intern text carries the parent permission clause", () => {
+  const permits = JSON.parse(read("data/permits.json"));
+  const text = permits.states.ca.kinds.intern.text;
+  assert.ok(text.includes("with your parent's permission on file with your school (California regulation 5 CCR 10121)"), text);
+  assert.ok(text.includes("so no work permit"));
 });

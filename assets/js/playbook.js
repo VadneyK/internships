@@ -113,11 +113,15 @@
   });
 
   /* write a message to one person: fill the builder and jump to it */
-  function writeTo(i) {
+  /* fill the builder from one person and redraw the message, without moving focus */
+  function fillBuilder(i) {
     var r = rows[i];
     $("fToSel").value = String(i); $("fTo").value = r.n || "";
     if (r.h) { var h = r.h.trim(); $("fHow").value = h.charAt(0).toUpperCase() + h.slice(1) + (/[.!?]$/.test(h) ? "" : "."); }
     build();
+  }
+  function writeTo(i) {
+    fillBuilder(i);
     var msg = $("message");
     if (!msg.hasAttribute("tabindex")) msg.setAttribute("tabindex", "-1");
     msg.scrollIntoView({ behavior: G.motionOK() ? "smooth" : "auto", block: "start" });
@@ -125,8 +129,9 @@
     var next = ["fMe", "fGrade", "fSchool", "fHow", "fCurious"].filter(function (id) { return !$(id).value.trim(); })[0] || "fCurious";
     setTimeout(function () { $(next).focus({ preventScroll: true }); }, 350);
   }
+  /* a change event fires on every arrow key in the select, so picking a name only fills the fields and never moves focus (WCAG 3.2.2) */
   $("fToSel").addEventListener("change", function (e) {
-    if (e.target.value !== "") writeTo(+e.target.value); else build();
+    if (e.target.value !== "") fillBuilder(+e.target.value); else build();
   });
 
   /* a picture of your plan to keep or send to a parent */
@@ -203,6 +208,9 @@
     $("letter").textContent = msg;
     me = { n: $("fMe").value, g: $("fGrade").value, s: $("fSchool").value }; G.store.set("me", me);
     updateSendUi();
+    var blanks = L.blanksLeft(msg), note = $("blankNote");
+    note.hidden = !blanks.length;
+    note.textContent = blanks.length ? "Fill in before you send: " + blanks.join(", ") : "";
     var body = msg.replace(/^Subject:.*\n\n/, "");
     var words = (body.match(/\S+/g) || []).length;
     $("wc").textContent = words + " words";
@@ -242,6 +250,11 @@
     $("shareMsg").hidden = !navigator.share;
     var idx = $("fToSel").value;
     $("markSent").hidden = idx === "" || !rows[+idx] || !!rows[+idx].s;
+    $("addMark").hidden = idx !== "" || $("fTo").value.trim().length < 2 || emptyRowIndex() < 0 && rows.length >= MAX;
+  }
+  function emptyRowIndex() {
+    for (var i = 0; i < rows.length; i++) if (!(rows[i].n && rows[i].n.trim())) return i;
+    return -1;
   }
   $("copyMsg").addEventListener("click", function () { G.copy($("letter").textContent); });
   $("shareMsg").addEventListener("click", function () {
@@ -251,6 +264,19 @@
   $("markSent").addEventListener("click", function () {
     var idx = +$("fToSel").value; setStatus(idx, "sent");
     G.toast("Marked as sent. Follow-up reminder set for one week.");
+  });
+  $("addMark").addEventListener("click", function () {
+    var name = $("fTo").value.trim();
+    if ($("fToSel").value !== "" || name.length < 2) return;
+    var i = emptyRowIndex();
+    if (i < 0) { if (rows.length >= MAX) return; rows.push({}); i = rows.length - 1; }
+    var how = $("fHow").value.trim();
+    rows[i].n = name;
+    if (how) rows[i].h = how;
+    save(); paintAll();
+    $("fToSel").value = String(i);
+    setStatus(i, "sent");
+    G.toast("Added to your map and marked as sent. Follow-up reminder set for one week.");
   });
   document.querySelectorAll("[data-copy]").forEach(function (b) { b.addEventListener("click", function () { G.copy($(b.getAttribute("data-copy")).textContent); }); });
 

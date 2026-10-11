@@ -37,14 +37,14 @@
   },
   {
    "id": "il-youth",
-   "label": "Illinois outside Chicago, under 18, first 650 hours ($13.00)",
+   "label": "Illinois outside Chicago, under 18, first 650 hours in a year with one employer ($13.00)",
    "state": "il",
    "wage": 13.0,
    "extra": []
   },
   {
    "id": "il-adult",
-   "label": "Illinois outside Chicago, after 650 hours or 18 and older ($15.00)",
+   "label": "Illinois, state rate ($15.00), after 650 hours or 18 and older. Cook County outside Chicago is $15.40 for 18 and older",
    "state": "il",
    "wage": 15.0,
    "extra": []
@@ -223,7 +223,7 @@
      "u": "https://labor.illinois.gov/faqs/form-of-payment.html"
     }
    ],
-   "call": "312-793-2804"
+   "call": "Use the Illinois unpaid wages page"
   }
  ],
  "wrongNote": "It is illegal for an employer to punish you for asking about your pay or filing a claim. If you are unsure, ask a parent or call the number for your state.",
@@ -254,6 +254,7 @@
   "Tips and overtime, which are not in the estimate.",
   "How much income tax will be withheld, which depends on the form you file.",
   "Whether a minor can file a wage claim alone in Illinois, and the time limit for Georgia and New York retaliation claims.",
-  "Whether a young worker can file a wage claim alone in each state. Ask a parent to help."
+  "Whether a young worker can file a wage claim alone in each state. Ask a parent to help.",
+  "Fast food workers have a higher state minimum of $20.00 (as of the DIR minimum wage page we read on Oct 7, 2026)."
  ]
 }
