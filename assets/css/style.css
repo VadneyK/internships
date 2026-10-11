@@ -116,7 +116,7 @@ body::before {
 img, svg { max-width: 100%; }
 a { color: var(--orange-text); text-underline-offset: 3px; text-decoration-thickness: 2px; }
 a:hover { color: var(--ink); }
-:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
 .skip { position: absolute; left: -999px; top: 0; background: var(--tag-bg); color: var(--tag-fg); padding: .6rem 1rem; z-index: 100; }
 .skip:focus { left: 8px; top: 8px; }
 .wrap { width: 100%; max-width: 72rem; margin-inline: auto; padding-inline: 1rem; }
@@ -263,8 +263,10 @@ main details[open] > summary::after { content: "\2212"; }
 .prog dt { font-family: var(--display); font-style: italic; font-weight: 800; text-transform: uppercase; font-size: .75rem; letter-spacing: .05em; color: var(--ink-2); }
 .prog dd { margin: 0; }
 .prog .actions { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: auto; align-items: center; }
-.star { border: 2px solid var(--edge); background: var(--surface); color: var(--ink); border-radius: 8px; min-width: 2.25rem; min-height: 2.25rem; cursor: pointer; font-size: 1rem; }
+.star { border: 2px solid var(--edge); background: var(--surface); color: var(--ink); border-radius: 8px; min-width: 2.25rem; min-height: 2.25rem; cursor: pointer; font-size: 1rem; display: inline-flex; align-items: center; justify-content: center; gap: .3rem; padding: 0 .5rem; }
 .star[aria-pressed="true"] { background: var(--yellow); color: #151515; }
+.star-w { font-weight: 700; font-size: .875rem; }
+#count:focus { outline: 3px solid var(--focus); outline-offset: 3px; }
 @media (forced-colors: active) {
   .chip[aria-pressed="true"] { forced-color-adjust: none; background: Highlight; color: HighlightText; }
   .tile[aria-pressed="true"] { forced-color-adjust: none; background: Highlight; color: HighlightText; }

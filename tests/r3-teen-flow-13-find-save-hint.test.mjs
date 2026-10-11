@@ -85,7 +85,7 @@ test("r3-teen-flow-13: a rendered program card has the star control the lede nam
   assert.ok(card, "at least one card rendered");
   const star = card.querySelector("button.star");
   assert.ok(star, "the card has a star button");
-  assert.equal(star.textContent.trim(), "★", "the star glyph");
+  assert.equal(star.textContent.trim(), "☆", "the star glyph (outline when not saved)");
   assert.equal(star.getAttribute("title"), "Save to my list");
   assert.match(star.getAttribute("aria-label"), /^Save .+ to my list$/);
   assert.equal(star.getAttribute("aria-pressed"), "false");

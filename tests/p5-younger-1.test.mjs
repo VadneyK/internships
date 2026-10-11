@@ -22,7 +22,7 @@ test("p5-younger-1: the section has a heading, a note, 4 work lines and a neighb
   assert.ok(document.getElementById("nearNote").textContent.length > 0, "note is filled in");
   const items = document.querySelectorAll("#nearL li");
   assert.equal(items.length, 4, `4 lines, got ${items.length}`);
-  assert.match(document.getElementById("nearScript").textContent, /\[your name\]/);
+  assert.match(document.getElementById("nearScript").textContent, /\[your first name\]/);
 });
 
 test("p5-younger-1: every work line has a source link that goes to https", async () => {

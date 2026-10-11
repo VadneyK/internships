@@ -24,6 +24,8 @@ const LIMITS = {
   // Raised from 32000 to 32100 on 2026-10-10 for the footer link to the teachers and counselors handout, which every page carries. ready.html is 32009 bytes.
   // Raised from 32100 to 32300 on 2026-10-11 for the pick-your-state note on ready.html and paycheck.html and the age-based home card text. ready.html is about 32170 bytes.
   rootPage: 32300,
+  // One page has its own higher limit. Added 2026-10-11: safety.html now carries its summary and every point card with its source link in the page itself (about 40,000 bytes from data/safety.json), so the facts show with JavaScript off. The static text on the page is trimmed. It is 52,653 bytes. Every other root page keeps the limit above.
+  pageLimits: { "safety.html": 52700 },
   // Raised from 40000 to 46000 on 2026-10-10: lib.js grew to 41715 bytes for the live chip counts, empty-state options, top picks and the cost-tier sort. Gzipped it is about 11 KB. The other scripts are all under 40000.
   // Raised again from 46000 to 48000 on 2026-10-10 for the whole-state Where choices (the state list, its group lists and the state place lookup). lib.js is 47189 bytes.
   script: 48000,
@@ -82,8 +84,9 @@ export function budgetProblems(sizes, programCount) {
         }
       }
     } else if (!file.includes("/") && file.endsWith(".html")) {
-      if (size.bytes > LIMITS.rootPage) {
-        problems.push(`${file} is ${size.bytes} bytes, over the limit of ${LIMITS.rootPage} bytes for a root page`);
+      const pageLimit = LIMITS.pageLimits[file] ?? LIMITS.rootPage;
+      if (size.bytes > pageLimit) {
+        problems.push(`${file} is ${size.bytes} bytes, over the limit of ${pageLimit} bytes for a root page`);
       }
     } else if (file.startsWith("assets/js/") && file.endsWith(".js")) {
       if (size.bytes > LIMITS.script) {

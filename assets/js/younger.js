@@ -35,7 +35,7 @@
       var head = "<thead><tr><th scope=\"col\">What you want to do</th>" + sts.map(function (s) { return "<th scope=\"col\">" + G.esc(s[1]) + "</th>"; }).join("") + "</tr></thead>";
       var body = "<tbody>" + d.rows.map(function (r) {
         return "<tr><th scope=\"row\">" + G.esc(r.job) + "</th>" + sts.map(function (s) {
-          var c = r.cells[s[0]]; return "<td>" + G.esc(c.t) + (c.s ? '<br><span class="small">' + a(c.s.t, c.s.u) + "</span>" : "") + "</td>";
+          var c = r.cells[s[0]]; var NS = "Not stated on the pages we read.", unk = c.t.indexOf(NS) === 0, rest = unk ? c.t.slice(NS.length).trim() : ""; return "<td>" + (unk ? '<span class="tag ghost" style="white-space:normal;line-height:1.25;">' + G.esc(d.unknownChip) + "</span>" + (rest ? " " + G.esc(rest) : "") : G.esc(c.t)) + (c.s ? '<br><span class="small">' + a(c.s.t, c.s.u) + "</span>" : "") + "</td>";
         }).join("") + "</tr>";
       }).join("") + "<tr><th scope=\"row\">Who to ask</th>" + sts.map(function (s) { return "<td>" + G.esc(d.calls[s[0]]) + "</td>"; }).join("") + "</tr></tbody>";
       $("gridT").innerHTML = '<caption class="sr">What a 12 or 13 year old may do, by state</caption>' + head + body;
@@ -80,6 +80,8 @@
     $("nearH").textContent = d.near.title;
     $("nearNote").textContent = d.near.note;
     $("nearL").innerHTML = d.near.items.map(function (x) { return "<li>" + G.esc(x.t) + " Source: " + a(x.s.t, x.s.u) + ".</li>"; }).join("");
+    $("sitH").textContent = d.sitting.title; $("sitLabel").textContent = d.sitting.label; $("sitL").innerHTML = li(d.sitting.tips);
+    $("petH").textContent = d.petCare.title; $("petLabel").textContent = d.petCare.label; $("petNote").textContent = d.petCare.note; $("petL").innerHTML = li(d.petCare.tips);
     $("nearScript").textContent = d.near.script;
     $("train").innerHTML = d.train.map(function (t) { return "<li><b>" + G.esc(t.t) + ".</b> " + G.esc(t.d) + " " + a("Official page", t.u) + "</li>"; }).join("");
     $("before").innerHTML = li(d.before); $("beforeSrc").innerHTML = "From " + a(d.beforeSource.t, d.beforeSource.u) + ".";

@@ -82,6 +82,10 @@
 
   /* While render() builds cards it sets savedNow to a lookup of the saved ids it already read once, so each card does not read localStorage again. */
   var savedNow = null;
+  /* The star shows saved or not saved with a shape and a word, not color alone: an outline star, or a filled star and the word Saved. The button name and aria-pressed carry the state for screen readers, so the glyph and the word are hidden from them. */
+  function starInner(on) {
+    return '<span class="star-ic" aria-hidden="true">' + (on ? "&#9733;" : "&#9734;") + "</span>" + (on ? '<span class="star-w" aria-hidden="true">Saved</span>' : "");
+  }
   /* Saved ids that match a program in the loaded data. The count and the My list view use only these. An id the data no longer has (a renamed program) stays in storage untouched, so it comes back if the program returns. */
   function savedIds() {
     return G.saved.ids().filter(function (id) { return typeof id === "string" && Object.prototype.hasOwnProperty.call(byId, id); });
@@ -112,7 +116,7 @@
     if (u) html += '<a class="btn sm" href="' + G.esc(u) + '" target="_blank" rel="noopener" aria-label="' + G.esc("Official page for " + e.name + (e.org ? ", " + e.org : "")) + '">Official page</a>';
     if (a && a !== u) html += '<a class="btn sm alt" href="' + G.esc(a) + '" target="_blank" rel="noopener" aria-label="' + G.esc("Apply to " + e.name + (e.org ? ", " + e.org : "")) + '">Apply</a>';
     if (knownDeadline(e)) html += '<button class="btn sm alt noprint" type="button" data-cal="' + G.esc(e.id) + '" aria-label="' + G.esc("Add deadline to calendar for " + e.name) + '">Add deadline to calendar</button>';
-    html += '<button class="star noprint" type="button" data-id="' + G.esc(e.id) + '" aria-pressed="' + saved + '" aria-label="' + G.esc("Save " + e.name + " to my list") + '" title="Save to my list">&#9733;</button>';
+    html += '<button class="star noprint" type="button" data-id="' + G.esc(e.id) + '" aria-pressed="' + saved + '" aria-label="' + G.esc("Save " + e.name + " to my list") + '" title="Save to my list">' + starInner(saved) + '</button>';
     html += "</div>";
     html += '<p class="checked">' + vtag + " Checked " + G.esc(e.verified_on_label || "Oct 7, 2026") + "</p>";
     html += "</article>";
@@ -185,23 +189,29 @@
   }
   /* Help card above the results when a Where choice finds fewer than 5 programs. The button adds the state (from a city) and online and national programs. */
   var HELP_FEW = 5;
+  var COUNSELOR_ASK = "do we have a list of local jobs or job training for students? Some schools call it career tech or work-based learning.";
   function paintTownHelp(realN) {
     var box = $("townHelp"); if (!box) return;
     if (!state.place || realN >= HELP_FEW || state.saved) { box.hidden = true; box.innerHTML = ""; return; }
     var st = stateOfPlace(state.place), done = state.moreOnline && !st;
-    box.hidden = false;
-    box.innerHTML = "<h2 style=\"font-size:1.1rem;\">Not many programs near you?</h2>" +
-      "<p><b>Ask your school counselor:</b> do we have a list of local jobs or job training for students? Some schools call it career tech or work-based learning.</p>" +
-      (done ? "<p>Online and national programs are included in the list below.</p>"
-        : '<p><button class="btn alt sm" type="button" id="townMore">See statewide and online programs</button></p>') +
+    var more =(done ? "<p>Online and national programs are included in the list below.</p>"
+      : '<p><button class="btn alt sm" type="button" id="townMore">See statewide and online programs</button></p>') +
       '<p class="small muted">Know a program that should be here? <a href="contribute.html">Help add it.</a></p>';
+    var ask = "Ask your school counselor: " + COUNSELOR_ASK;
+    var none = !all.some(function (e) { return L.matches(e, { place: state.place }, now()); });
+    box.hidden = false;
+    box.innerHTML = none
+      ? '<h2 style="font-size:1.1rem;">We have no listings for this place yet</h2><p>Here are three things you can do now:</p>' +
+        '<ol><li>See <a href="jobs.html">jobs that hire teens</a>. Many do not need a program.</li>' +
+        '<li>Use the <a href="permit.html">work permit finder</a> to see if you need a permit for paid work.</li><li>' + ask + "</li></ol>" + more
+      : '<h2 style="font-size:1.1rem;">Not many programs near you?</h2><p><b>Ask your school counselor:</b> ' + COUNSELOR_ASK + "</p>" + more;
     var b = $("townMore");
     if (b) b.onclick = function () {
       var next = stateOfPlace(state.place);
       state.moreOnline = true;
       if (next) { state.place = next; state.hubs = []; }
       savePrefs(); hidePrefNote(); syncChips(); render(true);
-      var r = $("results"); if (r) r.focus();
+      var r = $("count"); if (r) r.focus();
     };
   }
 
@@ -436,7 +446,14 @@
       b.classList.toggle("zero", n === 0);
     });
   }
+  /* One-tap goals: each sets the Kind or Pay filter. A second tap turns it off. */
+  var GOALS = { volunteer: { types: ["volunteer"], paid: [] }, paid: { types: [], paid: ["pay"] }, research: { types: ["research"], paid: [] }, college: { types: ["pre-college"], paid: [] } };
+  function goalOn(k) { return state.types.join() === GOALS[k].types.join() && state.paid.join() === GOALS[k].paid.join(); }
+  function syncGoals() {
+    document.querySelectorAll("[data-goal]").forEach(function (b) { b.setAttribute("aria-pressed", String(goalOn(b.dataset.goal))); });
+  }
   function syncChips() {
+    syncGoals();
     document.querySelectorAll(".chip[data-key]").forEach(function (b) {
       var arr = state[b.getAttribute("data-key")];
       b.setAttribute("aria-pressed", String(arr.indexOf(b.getAttribute("data-val")) > -1));
@@ -611,6 +628,13 @@
   var qt;
   $("q").addEventListener("input", function (e) { clearTimeout(qt); var v = e.target.value; if (v.trim()) wantDetail(); qt = setTimeout(function () { state.q = v.trim(); render(true); }, 160); });
   ["age", "when", "season", "sort"].forEach(function (id) { $(id).addEventListener("change", function (e) { state[id] = e.target.value; if (id === "age") { savePrefs(); hidePrefNote(); } render(true); }); });
+  $("goalChips").addEventListener("click", function (ev) {
+    var b = ev.target.closest("[data-goal]"); if (!b) return;
+    var k = b.dataset.goal, off = goalOn(k);
+    state.types = off ? [] : GOALS[k].types.slice();
+    state.paid = off ? [] : GOALS[k].paid.slice();
+    syncChips(); render(true);
+  });
   $("onlyVerified").addEventListener("click", function () { state.verified = !state.verified; syncChips(); render(true); });
   $("noPermit").addEventListener("click", function () { state.noPermit = !state.noPermit; syncChips(); render(true); });
   $("savedOnly").addEventListener("click", function () { state.saved = !state.saved; syncChips(); render(true); });
@@ -620,7 +644,7 @@
   document.addEventListener("click", function (ev) {
     var rx = ev.target.closest("[data-relax]");
     if (rx) { clearOne(rx.getAttribute("data-relax")); return; }
-    if (ev.target.closest("[data-online-off]")) { state.moreOnline = false; syncChips(); render(true); var rs = $("results"); if (rs) rs.focus(); return; }
+    if (ev.target.closest("[data-online-off]")) { state.moreOnline = false; syncChips(); render(true); var rs = $("count"); if (rs) rs.focus(); return; }
     if (ev.target.closest("[data-relax-saved]")) { resetFilters(true); focusFirst(); return; }
     var cal = ev.target.closest("[data-cal]");
     if (cal) {
@@ -634,7 +658,7 @@
     var s = ev.target.closest(".star");
     if (s) {
       var on = G.saved.toggle(s.getAttribute("data-id"));
-      s.setAttribute("aria-pressed", String(on));
+      s.setAttribute("aria-pressed", String(on)); s.innerHTML = starInner(on);
       $("savedN").textContent = savedIds().length;
       if (state.saved && !on) {
         var cardEl = s.closest("article.prog"), nb = cardEl && (cardEl.nextElementSibling && cardEl.nextElementSibling.matches("article.prog") ? cardEl.nextElementSibling : cardEl.previousElementSibling && cardEl.previousElementSibling.matches("article.prog") ? cardEl.previousElementSibling : null);

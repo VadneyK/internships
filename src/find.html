@@ -14,6 +14,15 @@ scripts: find
 <section style="padding-block: 1rem 2rem;">
   <div class="wrap">
     <form class="filters" id="filters" role="search" aria-label="Filter programs" onsubmit="return false">
+      <div class="fgroup noprint">
+        <span class="lbl" id="l-goal">What do you want?</span>
+        <div class="chips" id="goalChips" role="group" aria-labelledby="l-goal">
+          <button class="chip" type="button" data-goal="volunteer" aria-pressed="false">Volunteering</button>
+          <button class="chip" type="button" data-goal="paid" aria-pressed="false">Paid job or paid program</button>
+          <button class="chip" type="button" data-goal="research" aria-pressed="false">Research</button>
+          <button class="chip" type="button" data-goal="college" aria-pressed="false">College classes</button>
+        </div>
+      </div>
       <div class="fgroup">
         <label class="lbl" for="q">Search</label>
         <input class="search" id="q" type="search" placeholder="Try: hospital, coding, Oakland, paid, animals" autocomplete="off">
@@ -83,7 +92,7 @@ scripts: find
     <a class="small noprint" href="#results">Jump to the results</a>
 
     <div class="toolbar">
-      <p id="count" class="caps" aria-live="polite" style="margin:0;">Loading programs&hellip;</p>
+      <p id="count" class="caps" tabindex="-1" aria-live="polite" style="margin:0;">Loading programs&hellip;</p>
       <div class="chips" style="align-items:center;">
         <div class="chips" role="group" aria-label="View">
           <button class="chip" type="button" id="viewCards" aria-pressed="true">Cards</button>

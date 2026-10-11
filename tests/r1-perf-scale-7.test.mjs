@@ -71,7 +71,7 @@ test("3: filtering with a text query is at least 3 times faster than the old way
 
 test("4: placeCounts equals the old per-place matches loop for every city, area and state key", () => {
   const keys = L.CITIES.map((c) => "city:" + c[0]).concat(L.AREAS.map((a) => "area:" + a[0]), L.STATES.map((a) => "state:" + a[0]));
-  assert.equal(keys.length, 46 + L.STATES.length);
+  assert.equal(keys.length, 47 + L.STATES.length);
   const counts = L.placeCounts(ENTRIES);
   assert.deepEqual(Object.keys(counts).sort(), keys.slice().sort());
   for (const k of keys) {
@@ -113,7 +113,7 @@ test("5: fillPlaces makes no matches calls and writes the same labels", async ()
   const empty = document.createElement("select");
   window.TIG.fillPlaces(empty, []);
   assert.ok([...empty.querySelectorAll("option")].every((o) => /\(none yet\)$/.test(o.textContent)));
-  assert.equal(empty.querySelectorAll("option").length, 46 + L.STATES.length);
+  assert.equal(empty.querySelectorAll("option").length, 47 + L.STATES.length);
 });
 
 // the old place check, copied from before this change

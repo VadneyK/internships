@@ -30,9 +30,50 @@ ver = _asset_version()
 layout = open(os.path.join(SRC, "_layout.html"), encoding="utf-8").read()
 PAGES = ["find", "playbook", "resume", "ready", "jobs", "permit", "languages", "interview", "calendar", "younger", "parents", "handout", "paycheck", "safety", "share", "insights", "rules", "states", "contribute", "leaders", "about"]
 
+def safety_static(body):
+    """Fill {{safety:<section id>}} in src/safety.html from data/safety.json.
+
+    The no-JavaScript view gets the same summary paragraph and point cards that assets/js/safety.js draws,
+    so each claim sits next to its source link and a data update changes the static page too.
+    """
+    import html as _h
+    data = json.load(open(os.path.join(ROOT, "data", "safety.json"), encoding="utf-8"))
+    sections = {s["id"]: s for s in data["sections"]}
+
+    # A phone number may appear in the static view only if it is a federal line or is on a state card in
+    # data/permits.json. A card whose quote holds any other number keeps its text and source link but not the quote.
+    # The live view (assets/js/safety.js) still shows the quote and the numbers from data/safety.json.
+    permits_digits = re.sub(r"\D", "", open(os.path.join(ROOT, "data", "permits.json"), encoding="utf-8").read())
+    federal = {"8003216742", "8664879243", "8006694000"}
+    phone = re.compile(r"(?<![\d.-])(?:\+?1[-. ]?)?\(?(\d{3})\)?[-. ]?(\d{3})[-.](\d{4})(?!\d)")
+
+    def static_ok(p):
+        for m in phone.finditer(p["text"] + " " + p["quote"]):
+            d = "".join(m.groups())
+            if d not in federal and d not in permits_digits:
+                return False
+        return True
+
+    def card(p):
+        quote = ('<p class="small"><q>%s</q></p>' % _h.escape(p["quote"], quote=False)) if static_ok(p) else ""
+        return ('<article class="card"><p>%s</p>%s<p class="small muted">Source: '
+                '<a href="%s" target="_blank" rel="noopener">%s</a></p></article>') % (
+            _h.escape(p["text"], quote=False), quote,
+            _h.escape(p["url"]), _h.escape(p["source"], quote=False))
+
+    def fill(m):
+        s = sections[m.group(1)]
+        cards = '<div class="grid g2" style="align-items:start;">' + "".join(card(p) for p in s["points"]) + "</div>"
+        return "<p>%s</p>%s" % (_h.escape(s["plain"], quote=False), cards)
+
+    return re.sub(r"\{\{safety:(\w+)\}\}", fill, body)
+
+
 def build(name):
     raw = open(os.path.join(SRC, name + ".html"), encoding="utf-8").read()
     head, body = raw.split("\n---\n", 1)
+    if name == "safety":
+        body = safety_static(body)
     fields = dict(re.findall(r"^(\w+):\s*(.*)$", head, flags=re.M))
     scripts = "".join(
         '<script src="assets/js/%s.js?v=%s"></script>\n' % (s.strip(), ver)

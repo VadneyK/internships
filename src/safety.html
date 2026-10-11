@@ -9,13 +9,26 @@ navparent: ready
     <span class="tag y eyebrow">Know your rights</span>
     <h1 class="display">Safe at <span class="orange">work</span></h1>
     <p class="lede">Most jobs are fine. This page is for the day something is not: a task that feels unsafe, an injury, or someone who treats you badly. It shows what official pages say, and who to call. Researched in October 2026.</p>
-    <noscript><div class="callout bad"><p>This page needs JavaScript to show its safety facts and phone numbers. With JavaScript off, read the plain rules on the <a href="rules.html">Rules page</a>.</p></div></noscript>
+    <noscript><div class="callout bad"><p>This page needs JavaScript for state numbers and the full facts. A summary and sources for each part show below. For plain rules, see the <a href="rules.html">Rules page</a>. For a state number, use <a href="permit.html">the work permit finder</a>.</p></div></noscript>
     <div class="callout" style="margin-top:1rem;max-width:52rem;" id="sStart" aria-labelledby="sStartH">
       <h2 id="sStartH" style="font-size:1.35rem;">Tell a trusted adult, then use these numbers</h2>
       <ol id="sSteps"></ol>
       <p class="small" id="sStartNote"></p>
-      <ul id="sTop" class="small" style="list-style:none;padding:0;display:grid;gap:.4rem;"></ul>
+      <ul id="sTop" class="small" style="list-style:none;padding:0;display:grid;gap:.4rem;"><li><b>US OSHA (workplace safety):</b> <a href="tel:+18003216742">1-800-321-OSHA (6742)</a> &middot; TTY: <a href="tel:+18778895627">1-877-889-5627</a></li><li><b>US Department of Labor, Wage and Hour Division:</b> <a href="tel:+18664879243">1-866-4-US-WAGE (1-866-487-9243)</a></li><li><b>US EEOC:</b> <a href="tel:+18006694000">1-800-669-4000</a> &middot; TTY: <a href="tel:+18006696820">1-800-669-6820</a> &middot; ASL video phone: <a href="tel:+18442345122">1-844-234-5122</a></li></ul>
       <p class="small">More numbers, including California, Georgia, New York and Illinois, are in <a href="#sec-call">Who to call</a>.</p>
+    </div>
+    <div class="callout warn" id="stranger-offer" style="margin-top:1rem;max-width:52rem;" aria-labelledby="strangerH">
+      <h2 id="strangerH" style="font-size:1.35rem;">Got an offer from someone you do not know?</h2>
+      <p>Stop and look for these red flags before you answer:</p>
+      <ul>
+        <li>You were recruited by a message from a stranger, with no company name.</li>
+        <li>The pay is cash only, with no forms and no pay stub.</li>
+        <li>They ask for photos, an ID or your address before an interview.</li>
+        <li>They will not talk to a parent.</li>
+        <li>They ask you to pay or buy something first.</li>
+      </ul>
+      <p><b>Show a parent before you reply.</b></p>
+      <p class="small">Read the <a href="rules.html#scams">scam checklist</a>. Check what a job may ask of a teen your age in <a href="permit.html">the work permit finder</a>.</p>
     </div>
     <div class="callout plain small" style="margin-top:1rem;max-width:52rem;">
       <p><b>This is a summary of official pages, not legal advice.</b> Each point shows the exact words from the page we read, with a link. Pages change, so open the link before you rely on a deadline or a phone number. We are not a lawyer and cannot tell you what to do about your own job.</p>
@@ -53,35 +66,35 @@ navparent: ready
 <section id="sec-rights" style="background:var(--paper-2); border-block:3px solid var(--edge);">
   <div class="wrap">
     <h2>1. Your right to a safe workplace and training</h2>
-    <div id="sbody-rights"><p class="muted">Loading the safety facts.</p></div>
+    <div id="sbody-rights">{{safety:rights}}</div>
   </div>
 </section>
 
 <section id="sec-hazards">
   <div class="wrap">
     <h2>2. Jobs under 18 may not do</h2>
-    <div id="sbody-hazards"></div>
+    <div id="sbody-hazards">{{safety:hazards}}</div>
   </div>
 </section>
 
 <section id="sec-harassment" style="background:var(--paper-2); border-block:3px solid var(--edge);">
   <div class="wrap">
     <h2>3. Harassment and discrimination: what it is and how to report it</h2>
-    <div id="sbody-harassment"></div>
+    <div id="sbody-harassment">{{safety:harassment}}</div>
   </div>
 </section>
 
 <section id="sec-injuries">
   <div class="wrap">
     <h2>4. If you get hurt: report it right away</h2>
-    <div id="sbody-injuries"></div>
+    <div id="sbody-injuries">{{safety:injuries}}</div>
   </div>
 </section>
 
 <section id="sec-retaliation" style="background:var(--paper-2); border-block:3px solid var(--edge);">
   <div class="wrap">
     <h2>5. Punishment for speaking up (retaliation)</h2>
-    <div id="sbody-retaliation"></div>
+    <div id="sbody-retaliation">{{safety:retaliation}}</div>
   </div>
 </section>
 
@@ -89,12 +102,19 @@ navparent: ready
   <div class="wrap">
     <h2>6. Who to call</h2>
     <div class="field" style="max-width:24rem;"><label for="sState">Show the numbers for one state</label>
-      <select id="sState" data-tiles data-tiles-any="All states"><option value="">All states</option><option value="ca">California</option><option value="ga">Georgia</option><option value="ny">New York</option><option value="il">Illinois</option><option value="other">Another state</option></select></div>
+      <select id="sState" data-tiles data-tiles-any="All states"><option value="">All states</option><option value="ca">California</option><option value="ga">Georgia</option><option value="ny">New York</option><option value="il">Illinois</option><option value="bc">British Columbia (Canada)</option><option value="in">Indiana</option><option value="md">Maryland</option><option value="ma">Massachusetts</option><option value="mi">Michigan</option><option value="mn">Minnesota</option><option value="nj">New Jersey</option><option value="nc">North Carolina</option><option value="oh">Ohio</option><option value="pa">Pennsylvania</option><option value="tx">Texas</option><option value="va">Virginia</option><option value="wa">Washington</option><option value="wi">Wisconsin</option><option value="other">Another state</option></select></div>
     <p class="sr" id="sCallStatus" role="status"></p>
-    <div id="sbody-call"></div>
+    <div id="sbody-call">{{safety:call}}</div>
   </div>
 </section>
 
+<section id="sec-statecalls" hidden>
+  <div class="wrap">
+    <h2>State offices from the work permit finder</h2>
+    <p id="sStateCallsLead" class="small">These numbers come from the state cards in <a href="permit.html">the work permit finder</a>. If a card has no phone number, we list none.</p>
+    <div id="sStateCalls"></div>
+  </div>
+</section>
 
 <section id="sec-gaps" style="background:var(--paper-2); border-block:3px solid var(--edge);">
   <div class="wrap">

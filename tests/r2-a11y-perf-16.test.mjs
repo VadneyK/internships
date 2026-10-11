@@ -20,12 +20,14 @@ const PAGES = {
   "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2030000 },
   "calendar.html": { allowed: ["calendar.json", "entries-card.json"], ceiling: 1040000 },
   "insights.html": { allowed: ["entries-stats.json"], ceiling: 530000 },
-  "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 336000 },
+  // younger.html: raised from 336000 to 340000 on 2026-10-11 (r5-younger-1: pet care card and address-safe script added 2.7 KB to younger.json)
+  "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 340000 },
   "interview.html": { allowed: ["interview.json", "permits.json"], ceiling: 95000 },
   "permit.html": { allowed: ["permits.json"], ceiling: 80000 },
   "paycheck.html": { allowed: ["money.json"], ceiling: 15000 },
   "ready.html": { allowed: ["transit.json"], ceiling: 10000 },
-  "safety.html": { allowed: ["safety.json"], ceiling: 45000 },
+  // safety.html: raised from 45000 to 125000 on 2026-10-11 (r5-safety-1: the other states' agency numbers come from permits.json, 79 KB)
+  "safety.html": { allowed: ["safety.json", "permits.json"], ceiling: 125000 },
   "handout.html": { allowed: [], ceiling: 0 },
   "parents.html": { allowed: ["parents.json"], ceiling: 30000 },
   "languages.html": { allowed: ["languages.json"], ceiling: 10000 },

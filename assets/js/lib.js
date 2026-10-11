@@ -102,6 +102,7 @@
     ["cincinnati", "Cincinnati", ["cincinnati", "ohio"]],
     ["ann-arbor", "Ann Arbor", ["ann-arbor", "michigan"]],
     ["east-lansing", "East Lansing", ["lansing", "michigan"]],
+    ["detroit", "Detroit (no Detroit-only listings yet, showing Michigan)", ["michigan"]],
     ["raleigh-chapel-hill", "Raleigh and Chapel Hill", ["triangle", "north-carolina"]],
     ["college-park", "College Park, Maryland", ["college-park", "maryland"]],
     ["fairfax", "Fairfax, Virginia", ["fairfax", "virginia"]],
@@ -133,7 +134,7 @@
     ["California", ["bay-area"], ["davis", "berkeley", "san-francisco", "silicon-valley", "merced", "los-angeles", "irvine", "pomona", "riverside", "san-diego", "santa-barbara"]],
     ["Pacific Northwest", ["pacific-northwest"], ["seattle", "vancouver"]],
     ["Texas", ["texas"], ["austin"]],
-    ["Midwest", ["midwest"], ["minneapolis", "chicago", "elgin", "urbana-champaign", "madison", "west-lafayette", "bloomington", "columbus", "cincinnati", "ann-arbor", "east-lansing"]],
+    ["Midwest", ["midwest"], ["minneapolis", "chicago", "elgin", "urbana-champaign", "madison", "west-lafayette", "bloomington", "columbus", "cincinnati", "ann-arbor", "east-lansing", "detroit"]],
     ["Northeast", ["northeast"], ["new-york-city", "new-brunswick", "philadelphia", "pittsburgh", "boston"]],
     ["South and DC area", ["southeast", "dc-area"], ["atlanta", "raleigh-chapel-hill", "charlottesville", "blacksburg", "college-park", "fairfax"]]
   ];

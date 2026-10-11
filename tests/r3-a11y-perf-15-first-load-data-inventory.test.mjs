@@ -26,7 +26,7 @@ export const TABLE = {
   "paycheck.html": { paths: ["data/money.json"], ceiling: 200000, reason: SMALL },
   "handout.html": { paths: [], ceiling: 200000, reason: "No data needed" },
   "ready.html": { paths: ["data/transit.json"], ceiling: 200000, reason: SMALL },
-  "safety.html": { paths: ["data/safety.json"], ceiling: 200000, reason: SMALL },
+  "safety.html": { paths: ["data/safety.json", "data/permits.json"], ceiling: 200000, reason: "Safe at work reads its own facts file plus the state cards in permits.json for the other states' agency numbers; both small" },
   "404.html": { paths: [], ceiling: 200000, reason: "No data needed" },
   "about.html": { paths: [], ceiling: 200000, reason: "No data needed" },
   "contribute.html": { paths: [], ceiling: 200000, reason: "No data needed" },

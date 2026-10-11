@@ -117,6 +117,10 @@
   });
   $("rPrint").addEventListener("click", function () { G.printOnly($("rv"), (($("rName").value || "My").replace(/[^a-z0-9]+/gi, "") || "My") + "_Resume"); });
   $("rCopy").addEventListener("click", function () { G.copy(asText()); });
+  /* Reference ask script: the copy buttons copy the text of the element named in data-copy. */
+  document.querySelectorAll("[data-copy]").forEach(function (b) {
+    b.addEventListener("click", function () { G.copy($(b.getAttribute("data-copy")).textContent); });
+  });
   /* A fresh visitor sees the box off. A person who kept a draft gets the box ticked and the draft back. */
   KEEP.checked = Object.keys(G.store.get("resume", {})).length > 0;
   if (KEEP.checked) restoreDraft();

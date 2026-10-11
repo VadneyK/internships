@@ -382,7 +382,7 @@
     }
    }
   ],
-  "script": "Hi, I'm [your name]. I live at [house number] on [street]. I'm looking for a few jobs near home this week, like yard work or chores. My parent, [parent's name], knows I'm asking. Could I help you with [job] on [day]? My parent can answer questions at [phone number]."
+  "script": "Hi, I'm [your first name]. I live on [street name] near you. I'm looking for a few jobs near home this week, like yard work or chores. My parent, [parent's name], knows I'm asking. Could I help you with [job] on [day]? My parent can answer questions at [parent phone number]."
  },
  "gaps": [
   "Whether a child may walk a neighbor's dog for pay: no state or federal page names pet care.",
@@ -403,5 +403,28 @@
    "Ask a parent before you say yes to any job. Show them this page.",
    "Call your state labor office and ask what a child your age may do. Use the work permit finder to find your state."
   ]
- }
+ },
+ "sitting": {
+  "title": "First visit rules for sitting jobs",
+  "label": "Safety tips, not the law",
+  "tips": [
+   "A parent meets the family at their home first, before you start.",
+   "Send a parent the address and the family's phone number.",
+   "Agree how often you will text a parent during the job.",
+   "If you feel unsafe, leave and call a parent or 911.",
+   "Know who to call, and where the adult is while you work."
+  ]
+ },
+ "petCare": {
+  "title": "Pet care and pet sitting",
+  "label": "Safety tips, not the law",
+  "note": "The federal rule pages in our data say casual home work like babysitting is not covered. No page we read names pet care. Ask a parent to call the state labor office to check.",
+  "tips": [
+   "Meet the owner and the pet first, with a parent.",
+   "Ask for the vet and emergency numbers.",
+   "Only walk dogs you can control.",
+   "Never keep a house key unless a parent says it is okay."
+  ]
+ },
+ "unknownChip": "Unknown, ask a parent to call"
 }

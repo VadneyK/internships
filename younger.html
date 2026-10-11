@@ -21,8 +21,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=27b05da5">
-<link rel="stylesheet" href="assets/css/style.css?v=27b05da5">
+<link rel="stylesheet" href="assets/css/fonts.css?v=dd61a038">
+<link rel="stylesheet" href="assets/css/style.css?v=dd61a038">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -122,6 +122,8 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <div class="grid g2" style="align-items:start;">
       <article class="card"><h3>Training that exists</h3><ul id="train"></ul></article>
       <article class="card"><h3>Before every job</h3><ul id="before"></ul><p class="small muted" id="beforeSrc"></p></article>
+      <article class="card" id="sitCard"><h3 id="sitH"></h3><p><span class="tag ghost" id="sitLabel"></span></p><ul id="sitL"></ul></article>
+      <article class="card" id="petCard"><h3 id="petH"></h3><p><span class="tag ghost" id="petLabel"></span></p><p id="petNote"></p><ul id="petL"></ul></article>
       <article class="card"><h3>Only work for people your family knows</h3><ul id="strangers"></ul><p class="small muted" id="strangersNote"></p></article>
       <article class="card"><h3>Apps and sites with an age rule</h3><p class="small muted" id="sitesNone" hidden>Every app we checked has an age rule of 18 or older.</p><div class="tablewrap" id="sitesWrap" tabindex="0" role="region" aria-label="Apps and sites a young teen may use" hidden><table id="sitesOkT"></table></div>
         <details id="sitesAdult" class="callout plain small"><summary>Apps you cannot join yet, and why</summary><p>These apps say you must be 18 or older. A parent can post a job or pay for you. Do not use a parent's account to get around the rule.</p><div class="tablewrap" tabindex="0" role="region" aria-label="Minimum ages for job and payment sites"><table id="sitesT"></table></div></details>
@@ -206,9 +208,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=27b05da5"></script>
-<script src="assets/js/common.js?v=27b05da5"></script>
-<script src="assets/js/younger.js?v=27b05da5"></script>
+<script src="assets/js/lib.js?v=dd61a038"></script>
+<script src="assets/js/common.js?v=dd61a038"></script>
+<script src="assets/js/younger.js?v=dd61a038"></script>
 
 </body>
 </html>

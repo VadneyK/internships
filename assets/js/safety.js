@@ -27,14 +27,56 @@
 
   var STATES = { ca: "California", ga: "Georgia", ny: "New York", il: "Illinois" };
   var sel = $("sState"), said = $("sCallStatus");
+  var PD = null; /* data/permits.json, once loaded: the state cards carry an agency phone line */
+  var BIG = { ca: 1, ga: 1, ny: 1, il: 1 }; /* these four have full hotline cards above, built from safety.json */
+  var PHONE = /(?:1[-. ])?(?:\(\d{3}\)\s?|\d{3}[-. ])\d{3}[-. ]\d{4}/g;
+  /* The agency line exactly as the permit card says it. Only a number already in that line becomes a tap-to-call link. */
+  function callLine(text) {
+    var out = "", last = 0, m;
+    PHONE.lastIndex = 0;
+    while ((m = PHONE.exec(text))) {
+      var digits = m[0].replace(/\D/g, "").slice(-10);
+      out += G.esc(text.slice(last, m.index)) + '<a href="tel:+1' + digits + '">' + G.esc(m[0]) + "</a>";
+      last = m.index + m[0].length;
+    }
+    return out + G.esc(text.slice(last));
+  }
+  function hasNumber(text) { PHONE.lastIndex = 0; return PHONE.test(text); }
+  /* Internal notes from the permit data (for example "mass.gov blocked our reader") never reach a teen. */
+  function cleanCall(text) {
+    return String(text || "")
+      .replace(/\s*\([^)]*(?:our reader|confirm there)[^)]*\)/gi, "")
+      .replace(/\s*No phone number is listed on this card\. Use the agency website\./, ". No phone number found. Use the agency website.")
+      .trim();
+  }
+  function stateCard(id) {
+    var s = PD.states[id];
+    return '<div class="card" data-state="' + G.esc(id) + '"><p><b>' + G.esc(s.name) + "</b></p><p>" + callLine(cleanCall(s.call)) + '</p><p class="small muted">Read the <a href="permit.html?state=' + G.esc(id) + '">' + G.esc(s.name) + ' work permit card</a>. Read ' + G.esc(s.read || PD.read || "") + ".</p></div>";
+  }
+  function renderStateCalls(v) {
+    var box = $("sStateCalls"), sec = $("sec-statecalls");
+    if (!box || !PD) return;
+    var ids = Object.keys(PD.states).filter(function (k) { return !BIG[k]; });
+    if (v) ids = ids.filter(function (k) { return k === v; });
+    /* States with a phone number come first, then the rest, each group in its own order. */
+    ids = ids.map(function (k, i) { return { k: k, i: i, n: hasNumber(String(PD.states[k].call || "")) }; })
+      .sort(function (x, y) { return (y.n - x.n) || (x.i - y.i); })
+      .map(function (x) { return x.k; });
+    box.innerHTML = '<div style="display:grid;gap:.9rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,19rem),1fr));align-items:start;">' + ids.map(stateCard).join("") + "</div>";
+    if (sec) sec.hidden = !ids.length;
+  }
+  function optName(v) {
+    for (var i = 0; sel && i < sel.options.length; i++) if (sel.options[i].value === v) return sel.options[i].textContent;
+    return v;
+  }
   /* Keep the picked state in the Next links, so the teen does not pick it again on the next page.
      Each link gets the state only when that page reads it: paycheck (ga, ny, il, ca), permit (all four), rules (ca). */
   function syncNext(v) {
     var box = $("sNext"); if (!box) return;
-    var st = STATES[v] ? v : "";
+    var st = v && v !== "other" ? v : "";
     Array.prototype.forEach.call(box.querySelectorAll("a[href]"), function (a) {
       var base = a.getAttribute("href").split("?")[0];
-      var ok = base === "paycheck.html" ? ["ga", "ny", "il", "ca"].indexOf(st) > -1
+      var ok = base === "paycheck.html" ? !!STATES[st]
         : base === "permit.html" ? !!st
         : base === "rules.html" ? st === "ca"
         : false;
@@ -43,6 +85,7 @@
   }
   function applyState(v, announce) {
     syncNext(v);
+    renderStateCalls(v);
     var groups = document.querySelectorAll("#sbody-call .hgroup"), shown = 0;
     Array.prototype.forEach.call(groups, function (g) {
       var name = g.getAttribute("data-group");
@@ -54,13 +97,20 @@
     if (!announce || !said) return;
     said.textContent = !v ? "Showing all " + shown + " numbers, for every state."
       : v === "other" ? "Showing the " + shown + " national numbers. For your state's own number, use the work permit finder."
-      : "Showing " + shown + " numbers: the national ones and " + STATES[v] + ".";
+      : "Showing " + shown + " numbers: the national ones and " + optName(v) + ".";
   }
   function wantState() {
     var w = ""; try { w = (new URLSearchParams(location.search).get("state") || "").toLowerCase(); } catch (e) {}
-    return STATES[w] ? w : "";
+    return w && w !== "other" && sel && optName(w) !== w ? w : "";
   }
   if (sel) sel.addEventListener("change", function () { applyState(sel.value, true); });
+
+  G.fetchData("data/permits.json").then(function (r) { return r.json(); }).then(function (d) {
+    if (!d || !d.states) throw new Error("shape");
+    PD = d; renderStateCalls(sel ? sel.value : "");
+  }).catch(function () {
+    var b = $("sStateCalls"); if (b) b.innerHTML = '<p class="muted">The state numbers could not load. Use <a href="permit.html">the work permit finder</a>.</p>';
+  });
 
   G.fetchData("data/safety.json").then(function (r) { return r.json(); }).then(function (d) {
     $("sSteps").innerHTML = d.start.steps.map(function (s) {
@@ -81,7 +131,7 @@
 
     $("sGaps").innerHTML = d.gaps.map(function (x) { return "<li>" + G.esc(x) + "</li>"; }).join("");
   }).catch(function () {
-    $("sbody-rights").innerHTML = '<p class="muted">The safety facts could not load. Try again.</p>';
+    $("sbody-rights").insertAdjacentHTML("beforeend", '<p class="muted">The rest of the safety facts could not load. Try again.</p>');
     $("sStatus").textContent = "The safety facts could not load. Try again.";
   });
 })();
