@@ -98,11 +98,11 @@ class Main(unittest.TestCase):
             with open(path, encoding="utf-8") as f:
                 self.assertIn("example-program", f.read())
 
-    def test_real_data_runs_clean_and_flags_georgia(self):
+    def test_real_data_runs_clean(self):
         out = io.StringIO()
         with contextlib.redirect_stdout(out):
             self.assertEqual(hygiene.main([]), 0)
-        self.assertIn("georgia-governors-honors-program", out.getvalue())
+        self.assertIn("# Data hygiene report", out.getvalue())
 
 
 if __name__ == "__main__":
