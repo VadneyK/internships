@@ -103,7 +103,7 @@ test("entries.json rows agree with their program files", () => {
   assert.deepEqual(bad.slice(0, 20), [], `${bad.length} fields differ`);
 });
 
-for (const name of ["lite", "card", "blurb", "stats", "core", "detail"]) {
+for (const name of ["lite", "stats", "core", "detail", "home"]) {
   test(`entries-${name}.json has the same ids in the same order as entries.json`, () => {
     const rows = readJson(`data/entries-${name}.json`);
     assert.ok(Array.isArray(rows));

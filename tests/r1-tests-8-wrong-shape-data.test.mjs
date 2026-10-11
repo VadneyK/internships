@@ -26,7 +26,7 @@ const NOTHING_TABLE = {};
 // page, the area where results or a message go, and the data files the page requests.
 const PAGES = [
   { page: "find.html", area: "count", files: ["entries-lite.json"] },
-  { page: "calendar.html", area: "cCount", files: ["calendar.json", "entries-card.json"] },
+  { page: "calendar.html", area: "cCount", files: ["calendar.json", "entries-cal.json"] },
   { page: "languages.html", area: "lCount", files: ["languages.json"] },
   { page: "interview.html", area: "aOut", files: ["interview.json", "permits.json"] },
   { page: "paycheck.html", area: "mOut", files: ["money.json"] },

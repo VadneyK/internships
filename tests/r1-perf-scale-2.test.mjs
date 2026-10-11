@@ -12,8 +12,11 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DATA = path.join(ROOT, "data");
 const TOOLS = path.join(ROOT, "tools");
-const DETAIL_FIELDS = ["who_can_apply", "how_to_apply", "notes"];
-const GZIP_LIMIT = 330000;
+const DETAIL_FIELDS = ["who_can_apply", "how_to_apply", "notes", "duration", "pay_detail"];
+// The detail file grew from about 330,000 gzipped bytes to 411,934 (level 9, 1,352,219 raw bytes)
+// because duration and pay_detail moved out of entries-lite.json into it (see r3-a11y-perf-6).
+// The limit is the current size plus about 3,000 bytes of headroom. Raise it only with a reason.
+const GZIP_LIMIT = 415000;
 
 function readText(file) {
   return fs.readFileSync(path.join(DATA, file), "utf8");
@@ -62,7 +65,7 @@ test("entries-detail.json has the same ids in the same order as entries.json", (
 
 test("lite row plus detail row equals the entries.json row minus sources_fetched, for every program", () => {
   entries.forEach((entry, i) => {
-    const { sources_fetched: _unused, ...expected } = entry;
+    const { sources_fetched: _unused, verified_on: _v, ...expected } = entry; // verified_on is no longer in lite (r3-a11y-perf-6)
     const merged = { ...lite[i], ...detail[i] };
     assert.deepStrictEqual(merged, expected, `program ${entry.id}`);
   });
@@ -81,7 +84,7 @@ test("each detail row holds only id plus the long text fields that program has",
   });
 });
 
-test("entries-detail.json gzips to at most 330,000 bytes", () => {
+test("entries-detail.json gzips to at most 415,000 bytes", () => {
   const gz = zlib.gzipSync(committedBytes, { level: 9 });
   assert.ok(gz.length <= GZIP_LIMIT, `gzipped size ${gz.length} is over ${GZIP_LIMIT}`);
 });

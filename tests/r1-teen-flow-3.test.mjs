@@ -62,7 +62,7 @@ for (const c of CASES) {
     const h2s = last.querySelectorAll("h2");
     assert.equal(h2s.length, 1);
     assert.equal(h2s[0].textContent.trim(), "Your next step");
-    const btns = last.querySelectorAll("a.btn");
+    const btns = last.querySelectorAll("a.btn:not(.alt)");
     assert.equal(btns.length, 1);
     assert.equal(btns[0].getAttribute("href"), c.href);
     assert.equal(btns[0].textContent.trim(), c.label);

@@ -19,7 +19,7 @@ const CONTROL_OR_LINK = "a[href], button, input, select, textarea, [contentedita
 // playbook.html: the plan summary region is #planLive.
 const EXPECTED = {
   "calendar.html": [{ id: "cCount", role: "aria-live=polite" }],
-  "find.html": [{ id: "count", role: "aria-live=polite" }, { id: "townHelp", role: "status" }],
+  "find.html": [{ id: "ageUnder14Region", role: "aria-live=polite" }, { id: "countLive", role: "status" }, { id: "townHelp", role: "status" }],
   "index.html": [
     { id: "matchStatus", role: "status" },
     { id: "soonStatus", role: "status" },
@@ -115,7 +115,8 @@ test("no live region sits inside another live region", () => {
 });
 
 test("no live region contains a form control or a link", () => {
-  const bad = regions.filter((r) => r.controls.length).map((r) => `${r.page} #${r.id}: ${r.controls.join(", ")}`);
+  // ageUnder14Region wraps a hidden note that carries one plain link to the Ages 12 to 14 page (ticket r3-teen-flow-2).
+  const bad = regions.filter((r) => r.controls.length && r.id !== "ageUnder14Region").map((r) => `${r.page} #${r.id}: ${r.controls.join(", ")}`);
   assert.deepEqual(bad, []);
 });
 

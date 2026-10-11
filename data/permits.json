@@ -45,7 +45,7 @@
    "wage": "$16.90 an hour in 2026 and $17.40 from Jan 1, 2027. Some cities pay more, so ask your employer for the rate. Fast food workers have a higher state minimum of $20.00 (as of the DIR minimum wage page we read on Oct 7, 2026).",
    "minAge": {
     "job": 14,
-    "note": "At 12 and 13 you can do things like babysitting, yard work and newspaper delivery. A self-employed minor needs no permit, but no page we read names pet care, so ask the Labor Commissioner at 833-526-4636 first."
+    "note": "At 12 and 13 the state chart says no permit for irregular odd jobs in private homes, such as babysitting and yard work, and none for a self-employed newspaper route at age 12 or older. The chart does not say these jobs skip the hour limits, so ask the Labor Commissioner at 833-526-4636 before you plan how much you can do. A self-employed minor needs no permit, but no page we read names pet care, so ask the Labor Commissioner at 833-526-4636 first."
    },
    "kinds": {
     "job": {
@@ -70,7 +70,7 @@
     },
     "intern": {
      "permit": null,
-     "text": "An unpaid internship at a nonprofit, school or library is usually fine, with your parent's permission on file with your school (California regulation 5 CCR 10121). It is not a paid job, so no work permit. At a for-profit company it is only allowed if you are the one who mainly benefits, like a class. Otherwise it should be a paid job, and then you need the permit."
+     "text": "An unpaid internship at a nonprofit, school or library is usually fine, with your parent's permission on file with your school (California regulation 5 CCR 10121). It is not a paid job, so no work permit. At a for-profit company, the federal test (U.S. Department of Labor Fact Sheet 71) weighs several factors, such as whether you are the one who mainly benefits, whether it is tied to school and whether it replaces paid staff. If the company is the one who mainly benefits, it should be a paid job, and then you need the permit."
     },
     "family": {
      "permit": true,
@@ -149,13 +149,13 @@
     }
    ],
    "hours": {
-    "14": "At most employers the federal limits apply, and they are stricter. School days: up to 3 hours. School weeks: up to 18 hours. Non-school days: up to 8 hours. When school is out: up to 40 hours a week. Only between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day).",
+    "14": "At most employers the federal limits apply, and they are stricter. School days: up to 3 hours. School weeks: up to 18 hours. Non-school days: up to 8 hours. When school is out: up to 40 hours a week. Only between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). Georgia also sets these limits: no work between 9 p.m. and 6 a.m. under 16, up to 4 hours on a school day, 8 on other days, 40 a week.",
     "16": "The pages we read set no hour limit at 16 and 17 (the Georgia work permit rule covers minors under 16). Ask the US Department of Labor or your state agency before you plan long shifts. Dangerous jobs are still off limits, and anyone 17 or younger may not take orders for or serve alcohol, except where it is sold to take off the premises."
    },
    "wage": "$7.25 an hour at nearly every employer. An employer may pay workers under 20 $4.25 during their first 90 consecutive days. That is optional for the employer, and after 90 days or at age 20 you must get the full minimum.",
    "minAge": {
     "job": 14,
-    "note": "Most non-farm jobs covered by federal law start at 14."
+    "note": "Federal law sets 14 for most non-farm jobs. The Georgia DOL summary sheet says the minimum age is 14. The state code mentions work certificates for some 12 and 13 year olds. Ask Georgia DOL: 1-877-709-8185."
    },
    "kinds": {
     "job": {
@@ -265,7 +265,7 @@
     "odd": {
      "permit": null,
      "text": "No working papers are needed for babysitting, but New York DOL says the babysitter must be at least 14. At 14 and 15, casual yard work or chores at a home need no certificate if no power machinery is used. Yard work for 12 and 13 year olds is not stated. Ask: 888-469-7365 or 888-525-2267.",
-     "under": {"below": 14, "permit": null, "text": "At 12 or 13, New York DOL says a babysitter must be at least 14, though the Red Cross says most states have no minimum age. Yard work for 12 and 13 year olds is not stated. Ask: 888-469-7365 or 888-525-2267."}
+     "under": {"below": 14, "permit": null, "text": "At 12 or 13, New York DOL says a babysitter must be at least 14, though the Red Cross page How Old Do You Have to Be to Babysit? says most states do not have laws that set a minimum age. Yard work for 12 and 13 year olds is not stated. Ask: 888-469-7365 or 888-525-2267.", "source": {"t": "Red Cross: How Old Do You Have to Be to Babysit?", "u": "https://www.redcross.org/take-a-class/resources/articles/how-old-do-you-have-to-be-to-babysit"}}
     },
     "own": {
      "permit": null,
@@ -373,7 +373,7 @@
     },
     "odd": {
      "permit": null,
-     "text": "The Illinois DOL FAQ says no permit for babysitting outside school hours at a private home, and none for raking a neighbor's leaves for pay. Other odd jobs are not stated. Ask Illinois DOL child labor questions: 312-793-5570."
+     "text": "The Illinois DOL FAQ says no permit for household chores or babysitting outside school hours at a private home when the work is not part of a business. Raking a neighbor's leaves is its example. If a landscaping company hires you, the child labor law applies. Ask Illinois DOL child labor questions: 312-793-5570."
     },
     "own": {
      "permit": null,
@@ -905,7 +905,7 @@
      "u": "https://www.michigan.gov/leo/bureaus-agencies/ber/wage-and-hour/youth-employment-standards-act-yesa"
     },
     {
-     "t": "New permit system, Oct 1, 2026",
+     "t": "News release, Oct 1, 2026",
      "u": "https://www.michigan.gov/leo/news/2026/10/01/new-youth-employment-permit-portal-helps-protect-michigan-young-workers"
     },
     {
@@ -1382,8 +1382,8 @@
    "issuer": "Your parent or guardian gives written permission. The employer keeps it on file.",
    "steps": [
     "A parent or guardian gives written permission for you to work. The employer keeps a record.",
-    "You must work under the direct supervision of someone who is at least 19.",
-    "Ages 12 to 15 need a permit unless the work is light work such as lifeguard, camp leader, server, cashier or tutor. Ask the Employment Standards Branch."
+    "Children must work under the direct supervision of someone who is at least 19 years old. The page gives no age bands for this rule, so we do not state one.",
+    "Under 16, an employer needs a child employment permit from the Director unless an exception applies. At 12 and 13 the exceptions are: camp assistant, assistant coach, referee or umpire, a family-owned business, or entertainment performance, with no work that is not light. At 14 and 15 light work only is also an exception. At 16 and older no permit is needed. Ask the Employment Standards Branch."
    ],
    "bring": [
     "Written permission from a parent or guardian"
@@ -1403,8 +1403,8 @@
    ],
    "hours": {
     "12": "Children under 15 cannot work during school hours, more than 4 hours on school days, more than 7 hours on a non-school day, more than 20 hours in a week with 5 school days, or more than 35 hours a week when school is not in session.",
-    "14": "Children under 15 cannot work during school hours, more than 4 hours on school days, more than 7 hours on a non-school day, more than 20 hours in a week with 5 school days, or more than 35 hours a week when school is not in session.",
-    "16": "Employers of children 15 or older follow the standard rules for hours of work."
+    "14": "Children under 15 cannot work during school hours, more than 4 hours on school days, more than 7 hours on a non-school day, more than 20 hours in a week with 5 school days, or more than 35 hours a week when school is not in session. At age 15 the standard hours of work rules apply.",
+    "16": "Age 15 and older: the standard hours of work rules apply."
    },
    "wage": "C$18.25 an hour as of June 1, 2026.",
    "limits": {
@@ -1413,7 +1413,7 @@
    },
    "minAge": {
     "job": 12,
-    "note": "Children 12 and 13, and 14 and 15, need a permit unless they do light work only."
+    "note": "Children 12 and 13 need a permit unless an exception applies (camp assistant, assistant coach, referee or umpire, family-owned business, entertainment). Children 14 and 15 have the same exceptions plus light work only."
    },
    "kinds": {
     "job": {
@@ -1449,7 +1449,7 @@
      "text": "The pages we read do not say about acting or modeling. Ask the BC Employment Standards Branch."
     }
    },
-   "adult": "At 16 and older the employer follows the regular employment standards, with the parent consent rule for under 19 limited to supervision."
+   "adult": "At 16 and older no child employment permit is needed. The employer follows the regular employment standards. The page gives no separate rule for workers under 19; the rule about supervision by someone 19 or older is stated for children, with no age band."
   },
   "oh": {
    "name": "Ohio",

@@ -114,6 +114,13 @@ def build(name):
     left = re.findall(r"\{\{(\w+)\}\}", out)
     if left:
         print("WARNING unreplaced tokens in", name, set(left))
+    if name == "404":
+        # GitHub Pages serves 404.html for any bad path at any depth, so relative links would resolve against the deep URL.
+        # Root-anchor every relative href and src on this one page. Other pages stay relative so local previews work.
+        # Limit: the "/internships/" prefix is hard-coded here, so 404.html only works where the site is served from
+        # /internships/ (the GitHub Pages project URL). A fork or custom domain must change this prefix (and BASE above).
+        # A <base href> from location.pathname was not used: a 404 page at a deep URL cannot tell where the site root is.
+        out = re.sub(r'(\s(?:href|src)=")(?![a-zA-Z][a-zA-Z0-9+.-]*:|#|/)([^"]*")', lambda m: m.group(1) + "/internships/" + m.group(2), out)
     for ch in ("\u2014", "\u2013"):
         if ch in out:
             print("ERROR dash character U+%04X in %s" % (ord(ch), name))

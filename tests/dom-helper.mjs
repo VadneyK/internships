@@ -17,7 +17,7 @@ function server() {
   if (!serverPromise) {
     serverPromise = new Promise((resolve) => {
       const s = http.createServer((req, res) => {
-        const rel = decodeURIComponent(req.url.split("?")[0]).replace(/^\/+/, "") || "index.html";
+        const rel = decodeURIComponent(req.url.split("?")[0]).replace(/^\/+/, "").replace(/^internships\//, "") || "index.html"; // the live site lives under /internships/; the 404 page links there
         const p = path.join(ROOT, rel);
         if (!p.startsWith(ROOT) || !fs.existsSync(p) || fs.statSync(p).isDirectory()) { badResponses.push("404 " + req.url); res.writeHead(404, { Connection: "close" }); res.end("not found"); return; }
         try {
@@ -35,8 +35,9 @@ function server() {
 /* storage values are JSON-encoded; rawStorage values are stored as given (for example theme: "dark")
    setup(window): optional, runs first in beforeParse, before any page script (for example to make localStorage throw)
    fetchLog: optional array; every fetch the page makes is pushed to it as { url, init }
+   lazy: optional; interview.html is otherwise nudged to load permits.json, as a teen using the hours checker would
    now: optional millisecond timestamp; new Date() and Date.now() start there and keep ticking, while new Date(args), Date.UTC and Date.parse are unchanged */
-export async function loadPage(file, { search = "", storage = {}, rawStorage = {}, setup, now, fetchLog } = {}) {
+export async function loadPage(file, { search = "", storage = {}, rawStorage = {}, setup, now, fetchLog, lazy } = {}) {
   const port = await server();
   const errors = [];
   const vc = new VirtualConsole();
@@ -71,6 +72,12 @@ export async function loadPage(file, { search = "", storage = {}, rawStorage = {
     },
   });
   await new Promise((r) => (dom.window.document.readyState === "complete" ? r() : dom.window.addEventListener("load", r)));
+  // interview.html loads the state rules (permits.json) only when the hours checker is used. Most tests drive the checker, so wake it
+  // here unless the test passes lazy: true to look at the page before any use.
+  if (!lazy && file === "interview.html") {
+    const sec = dom.window.document.getElementById("availability");
+    if (sec) sec.dispatchEvent(new dom.window.Event("focusin", { bubbles: true }));
+  }
   await new Promise((r) => setTimeout(r, 80)); // let async init (fetch of data/entries.json) finish
   // Some dropdowns get their options from a data file: wait (up to 2 s) until none that should have choices is still empty
   for (let i = 0; i < 40 && [...dom.window.document.querySelectorAll("select[data-tiles]")].some((x) => x.options.length < 2); i++) await new Promise((r) => setTimeout(r, 50));

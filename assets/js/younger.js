@@ -5,8 +5,21 @@
   var $ = function (id) { return document.getElementById(id); };
   function a(t, u) { return '<a href="' + G.esc(u) + '" target="_blank" rel="noopener">' + G.esc(t) + "</a>"; }
   function li(arr) { return arr.map(function (x) { return "<li>" + G.esc(x) + "</li>"; }).join(""); }
-  Promise.all([G.fetchData("data/younger.json").then(function (r) { return r.json(); }), G.loadEntries("core")]).then(function (res) {
-    var d = res[0], all = res[1];
+  /* The page draws from younger.json alone. The big core file only feeds the two program counts, so it never blocks the page. */
+  function fillCounts(all) {
+    var n13 = all.filter(function (e) { return L.matches(e, { age: "13" }, Date.now()) && e.min_age != null && e.min_age <= 13; }).length;
+    $("n13").textContent = n13;
+    var n12 = all.filter(function (e) { return L.matches(e, { age: "12" }, Date.now()) && e.min_age != null && e.min_age <= 12; }).length;
+    if (n12 > 0) $("n12").textContent = n12;
+    else $("age12Link").textContent = "Browse programs for age 12";
+  }
+  function plainCounts() {
+    var l13 = $("n13") && $("n13").parentNode, l12 = $("age12Link");
+    if (l13) l13.textContent = "Browse programs for age 13";
+    if (l12) l12.textContent = "Browse programs for age 12";
+  }
+  G.fetchData("data/younger.json").then(function (r) { return r.json(); }).then(function (d) {
+    try { G.loadEntries("core").then(fillCounts).catch(plainCounts); } catch (e) { plainCounts(); }
     /* The age from the address (?age=, sent by the permit finder), then the age last saved on Programs (localStorage "findprefs"), read only. Only 12, 13 or 14 count; anything else keeps 13. */
     var nextAge = "13", qAge = "";
     try { qAge = new URLSearchParams(location.search).get("age") || ""; } catch (e) { /* no address age */ }
@@ -20,11 +33,6 @@
     if (nsBtn) nsBtn.setAttribute("href", nextHref);
     var yNextA = document.querySelector("#yNext a");
     if (yNextA) yNextA.setAttribute("href", nextHref);
-    var n13 =all.filter(function (e) { return L.matches(e, { age: "13" }, Date.now()) && e.min_age != null && e.min_age <= 13; }).length;
-    $("n13").textContent = n13;
-    var n12 = all.filter(function (e) { return L.matches(e, { age: "12" }, Date.now()) && e.min_age != null && e.min_age <= 12; }).length;
-    if (n12 > 0) $("n12").textContent = n12;
-    else $("age12Link").textContent = "Browse programs for age 12";
     var os = d.otherState;
     $("otherStateH").textContent = os.title;
     $("otherStateRule").innerHTML = G.esc(os.rule) + " " + a(os.source.t, os.source.u) + ".";

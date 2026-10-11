@@ -392,7 +392,7 @@
 
   /*
     Search text. Each entry's padded lowercase text is built once and kept in a WeakMap. The signature
-    (lengths of notes and who_can_apply) makes it rebuild when the detail text is merged in later.
+    (the text fields and regions joined) makes it rebuild when any of them is edited or merged in later.
     The parsed words of the last query string are kept too, so one keystroke parses once, not once per program.
   */
   var _hay = typeof WeakMap === "function" ? new WeakMap() : null, _qStr = null, _qNeedles = [];
@@ -400,16 +400,19 @@
     var hay = [e.name, e.org, e.city, e.what_you_do, e.notes, e.who_can_apply, (e.regions || []).map(regionLabel).join(" "), TYPES[e.type]].join(" ").toLowerCase();
     return " " + hay.replace(/[^a-z0-9]+/g, " ");
   }
+  function haystackSig(e) {
+    return [e.name, e.org, e.city, e.what_you_do, e.notes, e.who_can_apply, e.type, (e.regions || []).join(",")].join("\u0001");
+  }
   function haystack(e) {
     if (!_hay) return buildHaystack(e);
-    var sig = (e.notes ? String(e.notes).length : -1) + ":" + (e.who_can_apply ? String(e.who_can_apply).length : -1);
+    var sig = haystackSig(e);
     var c = _hay.get(e);
     if (!c || c.sig !== sig) { c = { sig: sig, text: buildHaystack(e) }; _hay.set(e, c); }
     return c.text;
   }
   function queryNeedles(q) {
     if (q !== _qStr) {
-      _qNeedles = q.toLowerCase().split(/\s+/).filter(Boolean).map(function (w) { return " " + w.replace(/[^a-z0-9]+/g, " "); });
+      _qNeedles = q.toLowerCase().split(/\s+/).map(function (w) { return " " + w.replace(/[^a-z0-9]+/g, " "); }).filter(function (n) { return n.trim() !== ""; });
       _qStr = q;
     }
     return _qNeedles;
@@ -690,7 +693,7 @@
     });
     Object.keys(byMonth).sort().forEach(function (k) {
       var y = Math.floor(k / 100), m = k % 100;
-      out.months.push({ key: +k, label: MONTHS[m] + " " + y, n: byMonth[k].length, items: byMonth[k].sort(function (x, y2) { return x.date < y2.date ? -1 : 1; }) });
+      out.months.push({ key: +k, label: MONTHS[m] + " " + y, n: byMonth[k].length, items: byMonth[k].sort(function (x, y2) { return x.date < y2.date ? -1 : x.date > y2.date ? 1 : x.id < y2.id ? -1 : x.id > y2.id ? 1 : 0; }) });
     });
     var sc = {};
     list.forEach(function (e) { var k = e.season || "year-round"; sc[k] = (sc[k] || 0) + 1; });

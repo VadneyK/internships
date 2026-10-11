@@ -42,7 +42,7 @@ test("every teen page has one #next-step section.nextstep with a button to a rea
   for (const file of PAGES) {
     const block = nextStep(file);
     assert.ok(block.classList.contains("nextstep"), file + " next-step block has class nextstep");
-    const buttons = block.querySelectorAll("a.btn");
+    const buttons = block.querySelectorAll("a.btn:not(.alt)");
     if (file === "jobs.html") continue; // checked in the next test: jobs has three buttons by design
     assert.equal(buttons.length, 1, file + " has exactly one a.btn in #next-step");
     const href = buttons[0].getAttribute("href");

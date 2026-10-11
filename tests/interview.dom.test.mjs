@@ -77,3 +77,11 @@ test("interview: the What we could not find list flags the old question sources 
   assert.match(gaps, /2015/, "Illinois workNet list is dated May 2015");
   assert.match(gaps, /2012/, "NYC Summer Youth Employment Program guide is dated 2012");
 });
+
+// Cold path: the real first visit, with no pre-wake. permits.json must not download until the checker is used.
+test("interview: a cold load does not fetch permits.json, and the tips still draw", async () => {
+  const fetchLog = [];
+  const { document } = await loadPage("interview.html", { fetchLog, lazy: true });
+  assert.equal(fetchLog.filter((f) => /data\/permits\.json/.test(String(f.url))).length, 0, "permits.json not requested on plain load");
+  assert.ok(document.querySelectorAll("#appTips li").length > 0, "tips draw without it");
+});

@@ -4,7 +4,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 
 const read = (p) => fs.readFileSync(new URL("../" + p, import.meta.url), "utf8");
-const DROPPED = ["notes", "sources_fetched", "how_to_apply", "who_can_apply"];
+const DROPPED = ["notes", "sources_fetched", "how_to_apply", "who_can_apply", "duration", "pay_detail", "verified_on"];
 const full = JSON.parse(read("data/entries.json"));
 const lite = JSON.parse(read("data/entries-lite.json"));
 
@@ -32,7 +32,7 @@ test("home, calendar, insights and younger scripts never read the dropped keys",
     const src = read("assets/js/" + f + ".js");
     DROPPED.forEach((k) => assert.ok(!src.includes(k), f + ".js mentions " + k));
     if (f === "younger") assert.match(src, /G\.loadEntries\("core"\)/, f + ".js should load the core file");
-    else if (f === "calendar") assert.match(src, /G\.loadEntries\("card"\)/, f + ".js should load the card file");
+    else if (f === "calendar") assert.match(src, /G\.loadEntries\("cal"\)/, f + ".js should load the calendar file");
     else if (f === "insights") assert.match(src, /G\.loadEntries\("stats"\)/, f + ".js should load the stats file (r3-a11y-perf-6)");
     else {
       /* home: the card file first, then one small file per chosen program when the picker is used (r3-a11y-perf-2) */

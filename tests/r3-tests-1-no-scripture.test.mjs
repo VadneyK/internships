@@ -71,11 +71,6 @@ const ALLOWLIST = [
     reason: "Generated copy of the IU camp card: gospel is a music style, not religious content.",
   },
   {
-    file: "data/entries-blurb.json",
-    term: "gospel",
-    reason: "Generated copy of the IU camp card: gospel is a music style, not religious content.",
-  },
-  {
     file: "src/leaders.html",
     term: "bible",
     reason: "Church-leader page: a pastor or leader picks the Bible reading. Placeholder for the leader, not content.",

@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Apply and Interview: Availability, Practice Questions, References and Thank-You Note</title>
+<title>Apply and Interview: Practice Questions, References, Thank-You</title>
 <meta name="description" content="A free prep sheet for a first job: plan your availability against the hour limits for your age, practice 12 common interview questions, line up references, and write a thank-you note. Sourced to state workforce agencies and libraries.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#efede8">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#131211">
 <link rel="canonical" href="https://vadneyk.github.io/internships/interview.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Apply and Interview: Availability, Practice Questions, References and Thank-You Note">
+<meta property="og:title" content="Apply and Interview: Practice Questions, References, Thank-You">
 <meta property="og:description" content="A free prep sheet for a first job: plan your availability against the hour limits for your age, practice 12 common interview questions, line up references, and write a thank-you note. Sourced to state workforce agencies and libraries.">
 <meta property="og:url" content="https://vadneyk.github.io/internships/interview.html">
 <meta property="og:image" content="https://vadneyk.github.io/internships/assets/img/og.jpg">
@@ -21,8 +21,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=dd61a038">
-<link rel="stylesheet" href="assets/css/style.css?v=dd61a038">
+<link rel="stylesheet" href="assets/css/fonts.css?v=a85bf911">
+<link rel="stylesheet" href="assets/css/style.css?v=a85bf911">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -61,7 +61,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <div class="callout plain small" style="margin-top:1rem;max-width:52rem;">
       <p id="evidence"></p>
     </div>
-    <nav class="chips" aria-label="On this page" style="margin-top:1rem;">
+    <nav class="chips" id="parts" aria-label="On this page" style="margin-top:1rem;">
       <a class="chip" style="text-decoration:none" href="#availability">1. Days and hours</a>
       <a class="chip" style="text-decoration:none" href="#practice">2. Practice questions</a>
       <a class="chip" style="text-decoration:none" href="#ask">3. Ask and bring</a>
@@ -91,6 +91,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <div class="card" id="aOut" style="margin-top:1rem;"><p class="muted">Pick your age and state, then set your hours.</p></div>
     <p class="row"><button class="btn sm alt" type="button" id="aMon">Use Monday for Tuesday to Friday</button> <button class="btn sm alt" type="button" id="aClear">Clear all hours</button></p>
     <p class="row"><button class="btn sm" type="button" id="aCopy">Copy my availability</button> <button class="btn sm alt" type="button" id="aPrint">Print my prep sheet</button></p>
+  <p class="backtop noprint"><a href="#parts">Back to the list of parts</a></p>
   </div>
 </section>
 
@@ -100,16 +101,19 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <p>Twelve questions teens get asked. Write a few words for each, not a script. Your notes are saved on this device only. Reference names and their phone or email contacts are saved on this device too.</p>
     <div class="grid g2" id="qList" style="align-items:start;"></div>
     <div class="callout plain" style="margin-top:1rem;"><p id="payNote"></p></div>
+  <p class="backtop noprint"><a href="#parts">Back to the list of parts</a></p>
   </div>
 </section>
 
 <section id="ask" style="background:var(--paper-2); border-block:3px solid var(--edge);">
   <div class="wrap">
     <h2>3. Ask, bring and wear</h2>
+    <p class="small">Never pay to get a job. Never send your ID to a stranger. Tell an adult before an interview. More on <a href="safety.html">Safe at work</a> and the <a href="rules.html#scams">scam checklist</a>.</p>
     <div class="grid g2" style="align-items:start;">
       <article class="card"><h3>Two questions to ask them</h3><p class="small muted">Pick two.</p><ul id="askList"></ul><p class="small muted" id="askSrc"></p></article>
       <article class="card"><h3>The day of</h3><ul id="dayList"></ul><p class="small muted" id="daySrc"></p></article>
     </div>
+  <p class="backtop noprint"><a href="#parts">Back to the list of parts</a></p>
   </div>
 </section>
 
@@ -119,6 +123,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <ul id="refRules"></ul>
     <p class="small muted" id="refGap"></p>
     <div id="refRows" class="grid g2" style="align-items:start;"></div>
+  <p class="backtop noprint"><a href="#parts">Back to the list of parts</a></p>
   </div>
 </section>
 
@@ -128,16 +133,17 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <p id="thanksTiming"></p>
     <div class="grid g2" style="align-items:start;">
       <article class="card">
-        <div class="field"><label for="tTo">Interviewer&rsquo;s name</label><input id="tTo" type="text" autocomplete="off"></div>
+        <div class="field"><label for="tTo">Interviewer&rsquo;s name</label><input id="tTo" type="text" autocapitalize="words" autocomplete="off"></div>
         <div class="field"><label for="tJob">The job</label><input id="tJob" type="text" autocomplete="off" placeholder="for example, cashier at the garden center"></div>
         <div class="field"><label for="tHelp">One way you can help</label><input id="tHelp" type="text" autocomplete="off" placeholder="for example, I can work weekends"></div>
-        <div class="field"><label for="tName">Your first name</label><input id="tName" type="text" autocomplete="given-name"></div>
+        <div class="field"><label for="tName">Your first name</label><input id="tName" type="text" autocapitalize="words" autocomplete="given-name"></div>
       </article>
       <article class="card"><pre id="tText" style="white-space:pre-wrap;font:inherit;"></pre>
         <div class="sr" id="tStatus" role="status"></div>
         <p class="row"><a class="btn sm" id="tMail" href="#">Open in my email app</a> <button class="btn sm alt" type="button" id="tCopy">Copy the note</button></p>
         <p class="small" id="tBlankNote" role="status" aria-live="polite" hidden style="font-weight:700;"></p></article>
     </div>
+  <p class="backtop noprint"><a href="#parts">Back to the list of parts</a></p>
   </div>
 </section>
 
@@ -202,9 +208,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=dd61a038"></script>
-<script src="assets/js/common.js?v=dd61a038"></script>
-<script src="assets/js/interview.js?v=dd61a038"></script>
+<script src="assets/js/lib.js?v=a85bf911"></script>
+<script src="assets/js/common.js?v=a85bf911"></script>
+<script src="assets/js/interview.js?v=a85bf911"></script>
 
 </body>
 </html>

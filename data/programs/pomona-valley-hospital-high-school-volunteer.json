@@ -20,12 +20,12 @@
   "pay_detail": "Unpaid volunteer role",
   "season": "year-round",
   "duration": "At least 1 year; one 3-hour shift a week (up to 3 shifts)",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "No dates posted. The same page says the hospital is currently only accepting adult volunteer applications, so check before applying.",
+  "deadline_text": "No dates posted. The page says the hospital is currently only accepting adult applications, so high school applications may be closed.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Use the 'Click here to apply for high school volunteer opportunities' link on the page, or call the hospital volunteer office to confirm if high school applications are open.",
+  "how_to_apply": "The page has a link to its application site for high school volunteers. Use that link only to check whether high school applications are open. The page lists no phone number or email to ask about it.",
   "needs_work_permit": false,
   "url": "https://www.pvhmc.org/patients-visitors/additional-services/volunteer-program/high-school-volunteers/",
   "apply_url": null,
@@ -33,7 +33,7 @@
     "https://www.pvhmc.org/patients-visitors/additional-services/volunteer-program/high-school-volunteers/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "priority": 2,
   "notes": "CONFIRM FIRST: the page offers a high school application link but also says only adult applications are being accepted right now. Scheduled Monday to Friday shifts."
 }

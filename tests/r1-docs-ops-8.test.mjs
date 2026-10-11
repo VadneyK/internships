@@ -29,7 +29,7 @@ test("neither doc has an em dash or en dash character", () => {
 
 test("the file map names the generated, hand-edited, QR and tools files", () => {
   for (const s of [
-    "`data/entries-lite.json`", "`data/entries-core.json`", "`data/entries-card.json`",
+    "`data/entries-lite.json`", "`data/entries-core.json`", "`data/entries-cal.json`",
     "`data/permits.json`", "`data/states-lite.json`", "`data/calendar.json`", "`data/interview.json`", "`data/languages.json`",
     "`data/money.json`", "`data/parents.json`", "`data/safety.json`", "`data/transit.json`",
     "`data/younger.json`", "`data/gaps.json`", "`assets/qr/*.svg`",
@@ -41,7 +41,7 @@ test("the file map names the generated, hand-edited, QR and tools files", () => 
 });
 
 test("each generated entries file says it is built by build_data.py and never edited, and names its readers", () => {
-  const readers = { "entries-lite": ["find.js", "home.js"], "entries-core": ["younger.js"], "entries-card": ["calendar.js", "insights.js", "home.js"] };
+  const readers = { "entries-lite": ["find.js", "home.js"], "entries-core": ["younger.js"] };
   for (const [name, files] of Object.entries(readers)) {
     const row = rowOf(contrib, "| `data/" + name + ".json`");
     assert.ok(row, "no row for " + name);

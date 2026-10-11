@@ -15,7 +15,7 @@ const IDS = [
 ];
 const read = (rel) => JSON.parse(fs.readFileSync(new URL(rel, import.meta.url), "utf8"));
 const ENTRIES = read("../data/entries.json");
-const LITE = read("../data/entries-lite.json");
+const LITE = read("../data/entries-detail.json"); // pay_detail moved from lite to the detail file (r3-a11y-perf-6)
 
 test("every card whose paid_type is not unpaid has a non-empty pay_detail string", () => {
   const bad = ENTRIES.filter(
@@ -34,7 +34,7 @@ for (const id of IDS) {
     assert.equal(entry.pay_detail, "Not stated on the page.");
   });
 
-  test(`${id}: entries-lite.json carries the same pay_detail`, () => {
+  test(`${id}: entries-detail.json carries the same pay_detail`, () => {
     const entry = LITE.find((e) => e.id === id);
     assert.ok(entry, "lite entry exists");
     assert.equal(entry.pay_detail, "Not stated on the page.");

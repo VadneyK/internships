@@ -57,9 +57,10 @@ test("related chips: age 15 and a place are carried, then cleared", async () => 
   assert.deepEqual(hrefs(document), ["calendar.html?at=" + encodeURIComponent(place), "permit.html", "younger.html", "jobs.html"]);
 });
 
+// Ages 12 and 13 also carry the age to the Ages 12 to 14 page (ticket r3-teen-flow-2).
 test("related chips: ages 12 and 13 do not add age to permit", async () => {
   for (const a of ["12", "13"]) {
     const { document } = await load("?age=" + a);
-    assert.deepEqual(hrefs(document), ["calendar.html?age=" + a, "permit.html", "younger.html", "jobs.html?age=" + a]);
+    assert.deepEqual(hrefs(document), ["calendar.html?age=" + a, "permit.html", "younger.html?age=" + a, "jobs.html?age=" + a]);
   }
 });

@@ -13,10 +13,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const CARDS = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "entries.json"), "utf8"));
 
 // Same name and same city, different organizations. Each card is its own program with its own org page.
-const NAME_CITY_ALLOW = [
-  // pittsburgh, pa: three teen volunteer programs at three different organizations
-  ["pittsburgh-kamin-science-center-teen-volunteers", "pittsburgh-national-aviary-teen-volunteers", "pittsburgh-upmc-childrens-teen-volunteer"],
-];
+const NAME_CITY_ALLOW = [];
 
 // Pages are compared by host (without www.) plus path (without trailing slash). Query and fragment are ignored.
 const PAGE_ALLOW = [

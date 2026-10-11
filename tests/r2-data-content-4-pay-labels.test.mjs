@@ -18,8 +18,8 @@ test("NC Catalyst is mixed (free program, paid internships optional), not plainl
 test("Artists For Humanity stays paid and says the first 36 hours are unpaid", () => {
   const c = load("boston-artists-for-humanity-teen-jobs");
   assert.equal(c.paid_type, "paid");
-  assert.match(c.pay_detail, /^Paid after training/);
-  assert.match(c.pay_detail, /first 36 Foundation Studio hours are unpaid/);
+  assert.match(c.pay_detail, /^Rate not posted\./);
+  assert.match(c.pay_detail, /first 36 Foundation Studio hours, which are unpaid/);
 });
 
 test("Seattle WAGES stays paid, keeps its rate and hours, and says the first week is unpaid", () => {

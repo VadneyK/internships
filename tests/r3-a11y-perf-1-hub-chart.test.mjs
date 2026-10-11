@@ -19,7 +19,7 @@ test("Numbers hub chart: every row states paid, free and costs-money counts in t
   assert.ok(rows.length >= 10, "found the area rows");
 
   // The same numbers the page was drawn from, so the text is checked against real data, not against itself.
-  const list = await page.window.TIG.loadEntries("card");
+  const list = await page.window.TIG.loadEntries("stats");
   const hubs = page.window.TIG.lib.insights(list, Date.now()).hubs;
   assert.equal(rows.length, hubs.length, "one row per area with programs");
 

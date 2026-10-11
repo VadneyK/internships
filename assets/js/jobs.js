@@ -16,6 +16,11 @@
     var h = permitHref(v);
     ["jPermitRules", "jPermitNext"].forEach(function (id) { var a = $(id); if (a) a.setAttribute("href", h); });
   }
+  /* The interview link carries age 14 to 17 and a state the interview page has, only when both are picked. Otherwise it is plain. */
+  function interviewHref(v, st) {
+    var k = String(st || "").toLowerCase();
+    return /^1[4-7]$/.test(String(v)) && L.PERMIT_STATES.indexOf(k) > -1 ? "interview.html?state=" + encodeURIComponent(k) + "&age=" + v + "#availability" : "interview.html";
+  }
   /* Keeps the picked age in the address bar, so a reload or a copied link keeps it. Clearing removes it. */
   function syncAddress(v, st) {
     try {
@@ -50,7 +55,13 @@
       '<p class="small muted">Source: ' + link(e.url, e.page_title) + "</p></article>";
   }
   /* The hours rules are optional: if the file does not load, the strip points to the work permit finder. */
-  var permitsP = G.fetchData("data/permits.json").then(function (r) { return r.json(); }).catch(function () { return null; });
+  /* permits.json is read only once an age of 14 to 17 and a state are picked, so most visits never download it. */
+  var pd = null, pdState = 0, pdFailed = false;
+  function loadPermits(done) {
+    if (pdState) return;
+    pdState = 1;
+    G.fetchData("data/permits.json").then(function (r) { return r.json(); }).catch(function () { return null; }).then(function (j) { pd = j; pdFailed = !j; pdState = 2; done(); });
+  }
   /* younger.json is read only when Under 14 is picked, so other ages never download it. */
   var yd, ydPending = false;
   function loadYounger(done) {
@@ -59,9 +70,6 @@
     G.fetchData("data/younger.json").then(function (r) { return r.json(); }).then(function (j) { yd = j; }).catch(function () { yd = null; }).then(function () { ydPending = false; done(); });
   }
   G.fetchData("data/employers.json").then(function (r) { return r.json(); }).then(function (d) {
-    return permitsP.then(function (pd) { return [d, pd]; });
-  }).then(function (both) {
-    var d = both[0], pd = both[1];
     $("jobsNote").innerHTML = "<p>" + G.esc(d.note) + " Last read " + G.esc(d.read) + ".</p>";
     function paintRules(st) {
       var list = d.rules.filter(function (e) { return st === "BC" ? isBcRule(e) : !(st && isBcRule(e)); });
@@ -90,6 +98,12 @@
       if (v === "u14") return '<div class="callout plain small" id="jHoursBox"><p>Ages 12 and 13: see the <a href="younger.html">Ages 12 to 14 page</a> for what is allowed at your age.</p></div>';
       var age = Number(v), key = st.toLowerCase(), name = NAMES[st];
       var href = "permit.html?state=" + encodeURIComponent(key) + (age >= 14 && age <= 18 ? "&amp;age=" + age : "");
+      if (age >= 14 && age < 18 && !pdState) loadPermits(function () {
+        var sv = sel.value, ss = stSel.value;
+        if (!sv || sv === "u14" || !ss || ss === "BC") return;
+        $("jHours").innerHTML = hoursStrip(sv, ss);
+        if (pdFailed) $("jStatus").textContent = "The hours rules could not load. Use the work permit finder link for your state.";
+      });
       var r = pd && age >= 14 && age < 18 ? L.permitFor(pd, key, age, "job") : null;
       if (r && r.hours) return '<div class="callout plain small" id="jHoursBox"><p><b>Hours in ' + G.esc(name) + " at " + age + ".</b> " + G.esc(r.hours) + '</p><p><a href="' + href + '">See the full ' + G.esc(name) + " rules in the work permit finder</a></p></div>";
       return '<div class="callout plain small" id="jHoursBox"><p>Hours rules for your state: see the <a href="' + href + '">work permit finder</a>.</p></div>';
@@ -102,6 +116,7 @@
     function paint() {
       var v = sel.value, out = $("jOut"), st = stSel.value;
       setPermitLinks(v);
+      var ia = $("jInterviewNext"); if (ia) ia.setAttribute("href", interviewHref(v, st));
       $("jChips").innerHTML = "";
       $("jHelp").innerHTML = helpLines(st);
       paintRules(st);

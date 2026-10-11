@@ -1,100 +1,123 @@
-// Breadcrumbs: the eight text trails are a real Breadcrumb navigation, the separator is drawn by CSS, and no other page has one.
+// r3-a11y-perf-6: find.html reads every key in data/entries-lite.json, and duration, pay_detail and verified_on stay out of it.
+// The long text rows (duration, pay_detail) come with the detail file, and the card shows no empty label before that.
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
-import { JSDOM } from "jsdom";
+import { loadPage, type, tick } from "./dom-helper.mjs";
 
-const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const read = (p) => fs.readFileSync(path.join(ROOT, p), "utf8");
-const SEPARATOR = "›"; // the old &rsaquo; character, which must no longer appear in any text node
+const read = (p) => JSON.parse(fs.readFileSync(new URL("../" + p, import.meta.url), "utf8"));
+const full = read("data/entries.json");
+const lite = read("data/entries-lite.json");
+const detail = read("data/entries-detail.json");
+const byFull = new Map(full.map((e) => [e.id, e]));
 
-// The eight pages, with the parent link and the current page name exactly as the old trail paragraph had them.
-const CASES = [
-  { file: "calendar.html", href: "find.html", parent: "Programs", current: "What opens when" },
-  { file: "interview.html", href: "resume.html", parent: "Resume", current: "Apply and interview" },
-  { file: "languages.html", href: "ready.html", parent: "Get ready", current: "In your language" },
-  { file: "paycheck.html", href: "ready.html", parent: "Get ready", current: "Your first paycheck" },
-  { file: "safety.html", href: "ready.html", parent: "Get ready", current: "Safe at work" },
-  { file: "permit.html", href: "ready.html", parent: "Get ready", current: "Work permit finder" },
-  { file: "younger.html", href: "ready.html", parent: "Get ready", current: "Ages 12 to 14" },
-  { file: "jobs.html", href: "ready.html", parent: "Get ready", current: "Jobs that hire teens" },
-  { file: "parents.html", href: "ready.html", parent: "Get ready", current: "For parents" },
-  { file: "handout.html", href: "ready.html", parent: "Get ready", current: "Handout for teachers and counselors" },
-];
-
-// Static jsdom parse of a built page. No scripts run, which is enough for structure checks.
-const docs = new Map();
-function doc(file) {
-  if (!docs.has(file)) docs.set(file, new JSDOM(read(file)).window.document);
-  return docs.get(file);
-}
-
-function textNodes(root) {
-  const out = [];
-  const walker = root.ownerDocument.createTreeWalker(root, 4 /* NodeFilter.SHOW_TEXT */);
-  for (let n = walker.nextNode(); n; n = walker.nextNode()) out.push(n.nodeValue);
-  return out;
-}
-
-const crumbs = (d) => d.querySelectorAll('nav[aria-label="Breadcrumb"]');
-
-for (const c of CASES) {
-  test(`${c.file}: exactly one Breadcrumb nav with an ol of two li`, () => {
-    const d = doc(c.file);
-    assert.equal(crumbs(d).length, 1, "expected one Breadcrumb nav");
-    const ol = crumbs(d)[0].querySelectorAll(":scope > ol");
-    assert.equal(ol.length, 1, "expected one ol inside the Breadcrumb nav");
-    assert.equal(ol[0].querySelectorAll(":scope > li").length, 2, "expected two li in the ol");
-  });
-
-  test(`${c.file}: first li links to ${c.href} with the text "${c.parent}"`, () => {
-    const first = crumbs(doc(c.file))[0].querySelector("ol > li:first-child");
-    const link = first.querySelector("a");
-    assert.ok(link, "first li has no link");
-    assert.equal(link.getAttribute("href"), c.href);
-    assert.equal(link.textContent.trim(), c.parent);
-    assert.equal(first.querySelectorAll("a").length, 1, "first li should hold only the parent link");
-  });
-
-  test(`${c.file}: second li is the current page as plain text with aria-current="page"`, () => {
-    const second = crumbs(doc(c.file))[0].querySelector("ol > li:last-child");
-    assert.equal(second.getAttribute("aria-current"), "page");
-    assert.equal(second.querySelectorAll("a").length, 0, "current page should not be a link");
-    assert.equal(second.textContent.trim(), c.current);
-  });
-
-  test(`${c.file}: no text node contains the separator character U+203A`, () => {
-    for (const value of textNodes(doc(c.file).documentElement)) {
-      assert.ok(!value.includes(SEPARATOR), `text node has U+203A: ${JSON.stringify(value)}`);
-    }
-  });
-
-  test(`${c.file}: the old trail paragraph is gone`, () => {
-    const d = doc(c.file);
-    const trails = [...d.querySelectorAll("p.small.muted")].filter((p) => {
-      const text = p.textContent.replace(/\s+/g, " ").trim();
-      return text.startsWith(c.parent) && text.includes(c.current);
+test("duration, pay_detail and verified_on are absent from lite; duration and pay_detail are in detail for every id", () => {
+  lite.forEach((e) => ["duration", "pay_detail", "verified_on"].forEach((k) => assert.ok(!(k in e), e.id + " still has " + k)));
+  assert.equal(detail.length, full.length);
+  detail.forEach((d) => {
+    const f = byFull.get(d.id);
+    ["duration", "pay_detail"].forEach((k) => {
+      assert.equal(k in d, k in f, d.id + " presence of " + k);
+      if (k in f) assert.equal(d[k], f[k], d.id + "." + k);
     });
-    assert.equal(trails.length, 0, "a p.small.muted trail paragraph is still there");
   });
-}
-
-// The separator is drawn by a pseudo-element rule on the breadcrumb li, so screen readers do not announce it.
-test("style.css: a ::before or ::after rule draws the breadcrumb separator on the li", () => {
-  const css = read("assets/css/style.css").replace(/\/\*[\s\S]*?\*\//g, "");
-  const rules = [...css.matchAll(/([^{}]+)\{([^{}]*)\}/g)];
-  const separator = rules.filter(([, selector, body]) =>
-    selector.split(",").some((s) => /breadcrumb\b[^,]*\bli\b/.test(s) && /::(before|after)\s*$/.test(s.trim())) && /\bcontent\s*:/.test(body));
-  assert.ok(separator.length > 0, "no .breadcrumb li ::before/::after rule with a content declaration");
 });
 
-// Every other built page has no Breadcrumb nav.
-test("all other built pages have no Breadcrumb nav", () => {
-  const others = fs.readdirSync(ROOT).filter((f) => f.endsWith(".html") && !CASES.some((c) => c.file === f));
-  assert.ok(others.length > 0, "no other built pages found");
-  for (const f of others) {
-    assert.equal(crumbs(doc(f)).length, 0, `${f} has a Breadcrumb nav`);
+test("every key present in the lite file is read by find.js or lib.js during load, render and a search", async () => {
+  const read = new Set();
+  const liteKeys = new Set();
+  lite.forEach((e) => Object.keys(e).forEach((k) => liteKeys.add(k)));
+  const setup = (w) => {
+    let real;
+    Object.defineProperty(w, "fetch", {
+      configurable: true,
+      get() {
+        return (u, o) => {
+          if (!/data\/entries-lite\.json/.test(String(u))) return real(u, o);
+          return real(u, o).then((r) => ({
+            ok: r.ok, status: r.status,
+            json: () => r.json().then((rows) => rows.map((row) => new Proxy(row, {
+              get(t, k) { if (typeof k === "string") read.add(k); return t[k]; },
+              has(t, k) { if (typeof k === "string") read.add(k); return k in t; },
+            }))),
+          }));
+        };
+      },
+      set(f) { real = f; },
+    });
+  };
+  const { window, document, errors } = await loadPage("find.html", { setup });
+  await tick(150);
+  type(window, document.getElementById("q"), "summer");
+  await tick(400);
+  type(window, document.getElementById("q"), "");
+  const season = document.getElementById("season");
+  if (season && season.options.length > 1) type(window, season, season.options[1].value);
+  await tick(200);
+  assert.deepEqual(errors, []);
+  const unread = [...liteKeys].filter((k) => !read.has(k)).sort();
+  assert.deepEqual(unread, [], "keys in lite that no script read: " + unread.join(", "));
+  window.close();
+});
+
+test("before the detail file loads a card has no How long or Pay or cost label; after it loads both show with the same text as before", async () => {
+  const slow = [];
+  const setup = (w) => {
+    let real;
+    Object.defineProperty(w, "fetch", {
+      configurable: true,
+      get() {
+        return (u, o) => {
+          if (!/data\/entries-detail\.json/.test(String(u))) return real(u, o);
+          return new Promise((res, rej) => slow.push(() => real(u, o).then(res, rej)));
+        };
+      },
+      set(f) { real = f; },
+    });
+  };
+  const { window, document, errors } = await loadPage("find.html", { setup });
+  await tick(150);
+  const card = document.querySelector("article.prog");
+  assert.ok(card);
+  const id = card.id.slice(2);
+  const f = byFull.get(id);
+  card.querySelector("details").open = true;
+  card.querySelector("details").dispatchEvent(new window.Event("toggle", { bubbles: true }));
+  await tick(100);
+  assert.ok(!/How long|Pay or cost/.test(card.textContent), "no empty labels before the detail file");
+  assert.equal(card.querySelector(".pay"), null);
+  const paidTag = (document.querySelector("article.prog .tag") || {}).textContent;
+  assert.ok(paidTag !== undefined);
+  slow.splice(0).forEach((go) => go());
+  await tick(500);
+  const after = document.getElementById("p-" + id);
+  if (f.duration) assert.ok(after.textContent.includes("How long") && after.textContent.includes(f.duration), "How long row");
+  if (f.pay_detail) {
+    const pay = after.querySelector(".pay");
+    assert.ok(pay && pay.textContent.includes("Pay or cost") && pay.textContent.includes(f.pay_detail), "Pay or cost row");
   }
+  assert.deepEqual(errors, []);
+  window.close();
+});
+
+test("paid and unpaid tags come from paid_type in lite, before and after the detail file", async () => {
+  const { window, document } = await loadPage("find.html");
+  await tick(100);
+  const check = () => {
+    const cards = [...document.querySelectorAll("article.prog")].slice(0, 30);
+    assert.ok(cards.length);
+    cards.forEach((c) => {
+      const f = byFull.get(c.id.slice(2));
+      const tags = [...c.querySelectorAll(".row .tag")].map((t) => t.textContent);
+      const want = {
+        paid: "Paid", unpaid: "Unpaid",
+      }[f.paid_type];
+      if (want) assert.ok(tags.some((t) => t.toLowerCase().includes(want.toLowerCase())), f.id + " tags " + tags.join("|") + " for " + f.paid_type);
+    });
+  };
+  check();
+  document.querySelector("article.prog details").open = true;
+  await tick(1200);
+  check();
+  window.close();
 });

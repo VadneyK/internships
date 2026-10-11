@@ -24,7 +24,7 @@ const EXPECTED = [
   "placeCounts",
   "parse.entries",
   "parse.lite",
-  "parse.card",
+  "parse.home",
   "parse.core",
 ];
 

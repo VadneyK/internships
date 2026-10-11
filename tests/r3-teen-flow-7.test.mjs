@@ -20,6 +20,8 @@ const NEXT_LINKS = [
   ["playbook.html", "Write your message"],
   ["find.html", "Find a program"],
   ["permit.html", "Do I need a work permit?"],
+  ["jobs.html", "Jobs that hire teens"],
+  ["ready.html", "Get ready for day one"],
 ];
 
 test("r3-teen-flow-7: resume.html has exactly one On this page nav, marked noprint, with three chips that resolve", async () => {
@@ -56,7 +58,7 @@ test("r3-teen-flow-7: basics, build and next sections carry the ids the chips us
   assert.ok(document.getElementById("next").classList.contains("noprint"), "Next steps section does not print");
 });
 
-test("r3-teen-flow-7: the Next steps section is the last section and has the four onward links", async () => {
+test("r3-teen-flow-7: the Next steps section is the last section and has the six onward links", async () => {
   const { document, errors } = await loadPage("resume.html");
   await tick(120);
 
@@ -67,7 +69,7 @@ test("r3-teen-flow-7: the Next steps section is the last section and has the fou
 
   const next = document.getElementById("next");
   const links = [...next.querySelectorAll("a")];
-  assert.equal(links.length, NEXT_LINKS.length, "Next steps has the four links");
+  assert.equal(links.length, NEXT_LINKS.length, "Next steps has the six links");
   links.forEach((a, i) => {
     assert.equal(a.getAttribute("href"), NEXT_LINKS[i][0], "href for " + NEXT_LINKS[i][1]);
     assert.equal(a.textContent.trim(), NEXT_LINKS[i][1], "label for " + NEXT_LINKS[i][0]);

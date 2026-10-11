@@ -266,6 +266,7 @@ test("every rel=preload href in the pages resolves to a real file", () => {
       if (a.rel !== "preload") continue;
       checkedPerPage[page] += 1;
       const href = a.href ?? "";
+      if (page === "404.html" && href.startsWith("/internships/")) { if (!existsSync(join(ROOT, href.slice("/internships/".length).split(/[?#]/)[0]))) missing.push(`${page}: ${href}`); continue; } // 404.html is root-anchored on purpose
       if (!href || href.startsWith("/") || /^https?:\/\//.test(href) || href.startsWith("//")) {
         missing.push(`${page}: preload href must be a relative path, got "${href}"`);
         continue;

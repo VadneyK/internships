@@ -106,10 +106,10 @@ class StatsFileTests(unittest.TestCase):
         for r in self.stats:
             self.assertLessEqual(set(r), used)
 
-    def test_compact_and_under_60_percent_of_card_file(self):
+    def test_compact_and_under_60_percent_of_lite_file(self):
         raw = read_bytes(DATA_DIR, "entries-stats.json")
         self.assertEqual(raw.decode("utf-8"), json.dumps(self.stats, ensure_ascii=False, separators=(",", ":")) + "\n")
-        self.assertLess(len(raw), 0.6 * len(read_bytes(DATA_DIR, "entries-card.json")))
+        self.assertLess(len(raw), 0.6 * len(read_bytes(DATA_DIR, "entries-lite.json")))
 
 
 def run_freshness(*argv):

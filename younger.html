@@ -21,8 +21,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=dd61a038">
-<link rel="stylesheet" href="assets/css/style.css?v=dd61a038">
+<link rel="stylesheet" href="assets/css/fonts.css?v=a85bf911">
+<link rel="stylesheet" href="assets/css/style.css?v=a85bf911">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -61,7 +61,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <noscript><div class="callout bad"><p>This page needs JavaScript to match programs and states to your age. With JavaScript off, read the plain rules on the <a href="rules.html">Rules page</a>.</p></div></noscript>
     <p class="share-parent row small" data-share="Here is what I can do for work at my age:"><span class="muted">Show a parent this page, with your state picked:</span></p>
     <div class="callout plain small" style="margin-top:1rem;max-width:52rem;"><p><b>This is a summary, not legal advice.</b> A cell that says Not stated means the state page we read does not say. It does not mean allowed, and it does not mean banned. Ask the number in the last row before you start.</p></div>
-    <nav class="chips" aria-label="On this page" style="margin-top:1rem;">
+    <nav class="chips" id="parts" aria-label="On this page" style="margin-top:1rem;">
       <a class="chip" style="text-decoration:none" href="#grid">1. At my age</a>
       <a class="chip" style="text-decoration:none" href="#safety">2. Stay safe</a>
       <a class="chip" style="text-decoration:none" href="#ladder">3. Path to a job</a>
@@ -69,6 +69,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <a class="chip" style="text-decoration:none" href="#words">Words you will see</a>
     </nav>
     <p class="row"><a class="btn" href="find.html?age=13">See <span id="n13">the</span> programs that take 13 year olds</a> <a class="btn alt" id="age12Link" href="find.html?age=12">See <span id="n12">the</span> programs that take 12 year olds</a> <a class="btn alt" id="permitBtn" href="permit.html">Work permit finder (14 and up)</a></p>
+    <p class="small">Almost 14? <a href="jobs.html?age=u14">See jobs and what is allowed under 14</a>, or <a href="calendar.html">see what opens when</a>.</p>
     <details id="words" class="callout plain small">
       <summary>Words you will see</summary>
       <dl>
@@ -113,6 +114,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <div class="tablewrap" tabindex="0" role="region" aria-label="What a 12 or 13 year old may do, by state"><table id="gridT"></table></div>
     <h3>Where the pages disagree</h3>
     <ul id="conflicts"></ul>
+    <p class="backtop noprint"><a href="#parts">Back to the list of parts</a></p>
   </div>
 </section>
 
@@ -125,11 +127,12 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <article class="card" id="sitCard"><h3 id="sitH"></h3><p><span class="tag ghost" id="sitLabel"></span></p><ul id="sitL"></ul></article>
       <article class="card" id="petCard"><h3 id="petH"></h3><p><span class="tag ghost" id="petLabel"></span></p><p id="petNote"></p><ul id="petL"></ul></article>
       <article class="card"><h3>Only work for people your family knows</h3><ul id="strangers"></ul><p class="small muted" id="strangersNote"></p></article>
-      <article class="card"><h3>Apps and sites with an age rule</h3><p class="small muted" id="sitesNone" hidden>Every app we checked has an age rule of 18 or older.</p><div class="tablewrap" id="sitesWrap" tabindex="0" role="region" aria-label="Apps and sites a young teen may use" hidden><table id="sitesOkT"></table></div>
-        <details id="sitesAdult" class="callout plain small"><summary>Apps you cannot join yet, and why</summary><p>These apps say you must be 18 or older. A parent can post a job or pay for you. Do not use a parent's account to get around the rule.</p><div class="tablewrap" tabindex="0" role="region" aria-label="Minimum ages for job and payment sites"><table id="sitesT"></table></div></details>
+      <article class="card"><h3>Apps and sites with an age rule</h3><p class="small muted" id="sitesNone" hidden>Every app we checked has an age rule of 18 or older, though Venmo and Cash App list parent-run teen accounts from 13.</p><div class="tablewrap" id="sitesWrap" tabindex="0" role="region" aria-label="Apps and sites a young teen may use" hidden><table id="sitesOkT"></table></div>
+        <details id="sitesAdult" class="callout plain small"><summary>Apps with an age rule of 18, and teen accounts some offer</summary><p>These apps say you must be 18 or older. Venmo and Cash App also list teen accounts from age 13 that a parent opens or sponsors, shown in the table. A parent can post a job or pay for you. Do not use a parent's account to get around the rule.</p><div class="tablewrap" tabindex="0" role="region" aria-label="Minimum ages for job and payment sites"><table id="sitesT"></table></div></details>
         <p class="small muted" id="sitesNote"></p></article>
     </div>
     <p class="row"><button class="btn sm alt" type="button" id="yPrint">Print the safety card for a parent</button></p>
+    <p class="backtop noprint"><a href="#parts">Back to the list of parts</a></p>
   </div>
 </section>
 
@@ -139,6 +142,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <ol class="steps row" id="ladderL"></ol>
     <h3>Groups that teach business skills</h3>
     <div class="grid g3" id="groups" style="align-items:start;"></div>
+    <p class="backtop noprint"><a href="#parts">Back to the list of parts</a></p>
   </div>
 </section>
 
@@ -152,6 +156,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <div id="yPack" class="packet" hidden></div>
     <p id="yNext">Next: see <a href="find.html?age=13">programs that take your age</a>, plan for your first job at 14 with the <a href="permit.html">work permit finder</a>, or start a <a href="resume.html">first resume</a>.</p>
     <p class="small muted">Questions about a program? <a href="contribute.html">Tell us</a>. See also the <a href="rules.html">California rules</a> and <a href="states.html">other states</a>.</p>
+    <p class="backtop noprint"><a href="#parts">Back to the list of parts</a></p>
   </div>
 </section>
 
@@ -208,9 +213,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=dd61a038"></script>
-<script src="assets/js/common.js?v=dd61a038"></script>
-<script src="assets/js/younger.js?v=dd61a038"></script>
+<script src="assets/js/lib.js?v=a85bf911"></script>
+<script src="assets/js/common.js?v=a85bf911"></script>
+<script src="assets/js/younger.js?v=a85bf911"></script>
 
 </body>
 </html>

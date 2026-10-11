@@ -6,7 +6,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
-import { loadPage } from "./dom-helper.mjs";
+import { loadPage, tick } from "./dom-helper.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const L = createRequire(import.meta.url)(path.join(ROOT, "assets/js/lib.js"));
@@ -82,6 +82,12 @@ for (const [label, iso] of CLOCKS) {
     const now = new Date(iso).getTime();
     const { window, document } = await loadPage("find.html", { now });
     const out = document.getElementById("out");
+    // Pay and duration text come with the detail file (ticket r3-a11y-perf-6). Opening one card loads it for all cards.
+    const first = document.querySelector("article.prog details");
+    first.open = true;
+    first.dispatchEvent(new window.Event("toggle", { bubbles: true }));
+    for (let i = 0; i < 100 && !out.querySelector(".pay"); i++) await tick(50);
+    await tick(100);
     for (let i = 0; i < 100; i++) {
       const more = document.getElementById("more");
       if (!more) break;

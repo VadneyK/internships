@@ -156,8 +156,8 @@ test("print: every hex color used in print blocks is already in the light palett
 test("print: a link address is printed after links in main, but not after buttons or .noprint links", () => {
   const rules = allPrintRules(CSS);
   const addressRules = rules.filter((r) => r.decls.content && r.decls.content.includes("attr(href)"));
-  // Two rules print addresses: the general rule for links in main, and the rule for program-card buttons (.prog a.btn).
-  assert.equal(addressRules.length, 2, "exactly two print rules should print link addresses");
+  // Three rules print addresses: the general rule for links in main, the rule for program-card buttons (.prog a.btn), and the rule for Languages and Calendar card buttons (.card a.btn).
+  assert.equal(addressRules.length, 3, "exactly three print rules should print link addresses");
   const rule = addressRules.find((r) => r.selector.startsWith('main a[href^="http"]'));
   assert.ok(rule, "general address rule for links in main not found");
   assert.ok(

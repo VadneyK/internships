@@ -21,8 +21,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=dd61a038">
-<link rel="stylesheet" href="assets/css/style.css?v=dd61a038">
+<link rel="stylesheet" href="assets/css/fonts.css?v=a85bf911">
+<link rel="stylesheet" href="assets/css/style.css?v=a85bf911">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -109,7 +109,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <div class="grid g2" style="align-items:start;">
       <article class="card"><h3>Send a message</h3>
         <p class="small muted">Edit the blanks. Nothing is sent from this page. It opens your own email app or copies the text.</p>
-        <div class="field"><label for="mName">Your first name</label><input id="mName" type="text" autocomplete="given-name"></div>
+        <div class="field"><label for="mName">Your first name</label><input id="mName" type="text" autocapitalize="words" autocomplete="given-name"></div>
         <div class="field"><label for="mEmp">Who is the employer?</label><input id="mEmp" type="text" autocomplete="off" placeholder="for example, the city pool"></div>
         <div class="field"><label for="mTo">Who is it for?</label>
           <select id="mTo"><option value="school">The school office</option><option value="employer">The employer</option></select></div>
@@ -139,7 +139,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <div class="callout">
       <h2>Your next step</h2>
       <p>Once you know your permit steps, get ready for your first day.</p>
-      <p><a class="btn" href="ready.html">Get ready for day one</a></p>
+      <p><a class="btn" href="ready.html">Get ready for day one</a> <a class="btn alt" href="paycheck.html">See your first paycheck</a> <a class="btn alt" href="interview.html">Practice the interview</a></p>
     </div>
   </div>
 </section>
@@ -187,9 +187,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=dd61a038"></script>
-<script src="assets/js/common.js?v=dd61a038"></script>
-<script src="assets/js/permit.js?v=dd61a038"></script>
+<script src="assets/js/lib.js?v=a85bf911"></script>
+<script src="assets/js/common.js?v=a85bf911"></script>
+<script src="assets/js/permit.js?v=a85bf911"></script>
 
 </body>
 </html>

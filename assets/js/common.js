@@ -162,8 +162,8 @@
   G.dataUrl = function (path) { return dataVer ? path + "?v=" + dataVer : path; };
   /* no version in this script's src (dev server, a page not built by tools/build.py): ask for revalidation so a stale copy is not reused */
   G.fetchData = function (path) { return dataVer ? fetch(G.dataUrl(path)) : fetch(path, { cache: "no-cache" }); };
-  var cache, liteCache, coreCache, cardCache, homeCache, statsCache, detailCache, blurbCache;
-  /* G.loadEntries() is the full file (find.js). G.loadEntries(true) is the lite file: same ids and order, without the long text fields, for pages that only show a few fields. G.loadEntries("core") is the core file: same ids and order, only the keys lib.js needs to match by age, status, season and region. G.loadEntries("card") is the card file: same ids and order, only the short fields the Calendar and Numbers pages read. G.loadEntries("home") is the home file: same ids and order, only the keys the Home picker reads. G.loadEntries("stats") is the stats file: same ids and order, only the keys the Numbers page counts with. G.loadEntries("detail") is the detail file: same ids and order, only id plus the long text (who_can_apply, how_to_apply, notes) that the Programs page fills in after it has drawn the cards from the lite file. */
+  var cache, liteCache, coreCache, calCache, homeCache, statsCache, detailCache;
+  /* G.loadEntries() is the full file (find.js). G.loadEntries(true) is the lite file: same ids and order, without the long text fields, for pages that only show a few fields. G.loadEntries("core") is the core file: same ids and order, only the keys lib.js needs to match by age, status, season and region. G.loadEntries("cal") is the calendar file: the short card keys for only the programs listed in data/calendar.json. G.loadEntries("home") is the home file: same ids and order, only the keys the Home picker reads. G.loadEntries("stats") is the stats file: same ids and order, only the keys the Numbers page counts with. G.loadEntries("detail") is the detail file: same ids and order, only id plus the long text (who_can_apply, how_to_apply, notes) that the Programs page fills in after it has drawn the cards from the lite file. */
   function checkJson(r) {
     if (!r.ok) throw new Error("Could not load programs (" + r.status + ")");
     return r.json();
@@ -181,17 +181,9 @@
       if (!homeCache) homeCache = G.fetchData("data/entries-home.json").then(checkJson);
       return homeCache;
     }
-    if (lite === "card") {
-      if (!cardCache) cardCache = G.fetchData("data/entries-card.json").then(checkJson);
-      return cardCache;
-    }
-    if (lite === "blurb") {
-      if (!blurbCache) {
-        blurbCache = G.fetchData("data/entries-blurb.json").then(checkJson);
-        /* a failed load is not kept, so the next try starts a new request */
-        blurbCache.catch(function () { blurbCache = null; });
-      }
-      return blurbCache;
+    if (lite === "cal") {
+      if (!calCache) calCache = G.fetchData("data/entries-cal.json").then(checkJson);
+      return calCache;
     }
     if (lite === "detail") {
       if (!detailCache) {

@@ -19,6 +19,7 @@ const TOLERANCE = 1; // used only when the text has "under N" wording (see below
 // id -> one-line reason the card is legitimately different. Reviewed by the lead; empty on
 // first run. The test prints the unreviewed cases so they can be fixed or allow-listed.
 const ALLOW = {
+  "columbus-metro-parks-volunteer": "No upper age limit: most assignments are 16 and up, and the 11 to 15 range is only the Inniswood Metro Gardens junior option.",
   "wisconsin-wing-civil-air-patrol-cadets": "The two sources disagree (12 to 19 on the wing site, 12 to 18 on the national page). max_age 18 is the national page and the text names both.",
   "youth-uprising-summer-jobs": "max_age 21 is the summer jobs list for ages 14 to 21. The 13 to 24 range is the whole organization, not the summer jobs.",
   "berkeley-humane-teen-volunteer": "No upper age limit: the range in the text is the group that needs an adult with them, and older teens volunteer on their own.",
@@ -56,7 +57,6 @@ const ALLOW = {
   "seattle-parks-yesl-pre-employment-training": "max_age 18 is the Pre-Employment Training. The 15 to 21 range is the paid internships it leads to.",
   "tacoma-public-schools-jobs-253-summer-credential-programs": "Open to high school students. The 16 to 18 range is only the drone course age rule.",
   "twin-cities-open-arms-of-minnesota-youth-volunteers": "Ages 16 and up volunteer on their own. The 12 to 15 range is the group that needs a trained adult with them.",
-  "vancouver-stanley-park-ecology-youth-volunteer": "The 16 to 17 range names the youth roles, but the page does not say 18 year olds are shut out, so max_age stays null.",
   "wilmette-library-teen-volunteers": "The program is set by grades 9 to 12, not by age. The 11 to 13 range is a separate helper group.",
   "ymca-san-francisco-workforce-development": "The page says ages 14 to 24 and older, so there is no firm top age and max_age stays null.",
   // "austin-humane-society-teen-volunteer": "Tiered roles, 14 to 15 and 16 to 17; max_age 17 is the top tier.",

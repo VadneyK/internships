@@ -10,7 +10,7 @@ const read = (p) => readFileSync(join(root, p), "utf8");
 
 test("ready.html first day points to the sourced interview range instead of a flat 'ten minutes'", () => {
   const html = read("src/ready.html");
-  assert.ok(html.includes("Arrive a few minutes early. For an interview our sources say 5 to 10 minutes or more, see <a href=\"interview.html\">Apply and interview</a>."), "first-day line changed");
+  assert.ok(html.includes("Arrive a few minutes early. For an interview the Addison library guide says 5 to 10 minutes, see <a href=\"interview.html\">Apply and interview</a>."), "first-day line changed");
   assert.ok(!html.includes("Arrive ten minutes early"), "old flat line still present");
 });
 

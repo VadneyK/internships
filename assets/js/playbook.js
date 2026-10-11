@@ -28,7 +28,7 @@
     var opts = L.STATUSES.map(function (o) { return '<option value="' + o[0] + '"' + ((r.s || "") === o[0] ? " selected" : "") + ">" + o[1] + "</option>"; }).join("");
     return '<article class="card person" data-i="' + i + '"><div class="ph"><b>Person ' + (i + 1) + '</b>' +
       '<label class="sr" for="ps' + i + '">Status for person ' + (i + 1) + '</label><select class="pstat" id="ps' + i + '" data-i="' + i + '" data-k="s">' + opts + "</select></div>" +
-      '<div class="field"><label for="pn' + i + '">Name</label><input id="pn' + i + '" data-i="' + i + '" data-k="n" type="text" autocomplete="off" placeholder="Mrs. Lee" value="' + G.esc(r.n || "") + '"></div>' +
+      '<div class="field"><label for="pn' + i + '">Name</label><input id="pn' + i + '" data-i="' + i + '" data-k="n" type="text" autocapitalize="words" autocomplete="off" placeholder="Mrs. Lee" value="' + G.esc(r.n || "") + '"></div>' +
       '<div class="field"><label for="pw' + i + '">What they do</label><input id="pw' + i + '" data-i="' + i + '" data-k="w" type="text" autocomplete="off" placeholder="dentist" value="' + G.esc(r.w || "") + '"></div>' +
       '<div class="field"><label for="ph' + i + '">How I know them (one sentence)</label><input id="ph' + i + '" data-i="' + i + '" data-k="h" type="text" autocomplete="off" placeholder="I\'m in youth group with her son." value="' + G.esc(r.h || "") + '"></div>' +
       '<div class="pfoot" id="pf' + i + '"></div></article>';
@@ -56,6 +56,7 @@
     $("planSummary").textContent = sum.sent + " of " + Math.max(5, sum.named) + " sent";
     $("planNext").textContent = sum.next ? (sum.next.due ? "Follow up with " + sum.next.name + " now." : "Next follow-up: " + sum.next.name + " on " + L.fmtDate(L.parseISO(sum.next.date)) + ".") : "";
     $("planPng").disabled = sum.named === 0;
+    $("planHint").hidden = sum.named > 0;
     $("addPerson").hidden = rows.length >= MAX;
   }
   function paintAll() {

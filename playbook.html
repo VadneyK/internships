@@ -21,8 +21,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=dd61a038">
-<link rel="stylesheet" href="assets/css/style.css?v=dd61a038">
+<link rel="stylesheet" href="assets/css/fonts.css?v=a85bf911">
+<link rel="stylesheet" href="assets/css/style.css?v=a85bf911">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -77,9 +77,10 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <div class="people" id="people"></div>
     <div class="chips" style="margin-top:1rem;">
       <button class="btn alt sm" type="button" id="addPerson">Add another person</button>
-      <button class="btn sm" type="button" id="planPng">Save my plan as an image</button>
+      <button class="btn sm" type="button" id="planPng" aria-describedby="planHint">Save my plan as an image</button>
       <button class="chip" type="button" id="clearMap">Clear everything</button>
     </div>
+    <p class="small muted noprint" id="planHint">Add a name first. The image needs at least one person on your map.</p>
     <p class="small muted" style="margin-top:.8rem;">This works like a notebook in your own browser. We never see what you type, and it is gone if you switch phones or clear your browser data. Save the image if you want to keep it.</p>
     <div class="card flat" style="margin-top:1.5rem;">
       <h3>Stuck? Ask yourself</h3>
@@ -112,8 +113,8 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <form class="card" id="mb" onsubmit="return false">
         <div class="field" style="margin-bottom:.9rem;"><label for="fToSel">Pick someone from your people map (optional)</label><select id="fToSel"><option value="">Pick from your map, or type below</option></select></div>
         <div class="formgrid">
-          <div class="field"><label for="fTo">Their name</label><input id="fTo" type="text" placeholder="Mrs. Lee" autocomplete="off"></div>
-          <div class="field"><label for="fMe">Your first name</label><input id="fMe" type="text" placeholder="Grace" autocomplete="given-name"></div>
+          <div class="field"><label for="fTo">Their name</label><input id="fTo" type="text" autocapitalize="words" placeholder="Mrs. Lee" autocomplete="off"></div>
+          <div class="field"><label for="fMe">Your first name</label><input id="fMe" type="text" autocapitalize="words" placeholder="Grace" autocomplete="given-name"></div>
           <div class="field"><label for="fGrade">Your grade</label><input id="fGrade" type="text" placeholder="10th" autocomplete="off"></div>
           <div class="field"><label for="fSchool">Your school</label><input id="fSchool" type="text" placeholder="Alameda High" autocomplete="off"></div>
         </div>
@@ -164,6 +165,8 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
 <section id="send">
   <div class="wrap">
     <h2>3. Send it</h2>
+    <p class="small">Never pay to get a job. Never send your ID to a stranger. Tell an adult before an interview. More on <a href="safety.html">Safe at work</a> and the <a href="rules.html#scams">scam checklist</a>.</p>
+    <p>Wondering when a program takes applications? <a href="calendar.html">See what opens when</a> on the Calendar page.</p>
     <div class="grid g2" style="align-items:start;">
       <div class="stack">
         <div class="card"><h3>Pick a person and a day</h3><p>Choose one name from your map. Put the send date on your calendar. A message you never send helps nobody.</p></div>
@@ -211,7 +214,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <article class="card"><span class="tag y">During</span><h3 style="margin-top:.6rem;">Show up well</h3>
         <ul><li>Arrive about five minutes early for a chat with an adult. This is our suggestion, not from a source.</li><li>Put your phone away.</li><li>Bring a notebook and write things down.</li><li>Dress one step nicer than the people there.</li><li>Stop at the time you promised, unless they keep going.</li></ul></article>
       <article class="card"><span class="tag y">After</span><h3 style="margin-top:.6rem;">Keep the door open</h3>
-        <ul><li>Send a thank-you within 1 to 2 days.</li><li>Do the thing you said you would do, then tell them.</li><li>Ask who else you should talk to.</li><li>Check in every few months with one line about what you did.</li></ul></article>
+        <ul><li>Send a thank-you within 1 to 2 days. Our suggestion, not from a source.</li><li>Do the thing you said you would do, then tell them.</li><li>Ask who else you should talk to.</li><li>Check in every few months with one line about what you did.</li></ul></article>
     </div>
     <h3 style="margin-top:2rem;">Say yes to small stuff</h3>
     <p>Filing, setup, cleanup, running errands. Small jobs done well are how people decide to give you bigger ones.</p>
@@ -287,9 +290,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=dd61a038"></script>
-<script src="assets/js/common.js?v=dd61a038"></script>
-<script src="assets/js/playbook.js?v=dd61a038"></script>
+<script src="assets/js/lib.js?v=a85bf911"></script>
+<script src="assets/js/common.js?v=a85bf911"></script>
+<script src="assets/js/playbook.js?v=a85bf911"></script>
 
 </body>
 </html>

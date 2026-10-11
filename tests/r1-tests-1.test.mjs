@@ -38,7 +38,7 @@ test("every internal href and #fragment in built pages resolves", () => {
       const filePart = beforeHash.split("?")[0];
       let targetPage = page;
       if (filePart !== "") {
-        const rel = filePart.replace(/^\.\//, "");
+        const rel = filePart.replace(/^\.\//, "").replace(/^\/internships\//, ""); // 404.html links are root-anchored under /internships/
         const full = path.join(ROOT, rel === "" || rel.endsWith("/") ? rel + "index.html" : rel);
         if (!full.startsWith(ROOT) || !fs.existsSync(full) || fs.statSync(full).isDirectory()) {
           fails.push(page + ", " + href + " (file not found)");

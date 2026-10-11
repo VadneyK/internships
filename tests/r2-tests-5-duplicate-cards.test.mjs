@@ -26,10 +26,6 @@ function urlsOf(card) {
 
 // Keys are "normalized name|region". Each value lists the exact ids that share that key today.
 const NAME_REGION_ALLOW = new Map([
-  ["teen volunteer program|pittsburgh", {
-    ids: ["pittsburgh-kamin-science-center-teen-volunteers", "pittsburgh-national-aviary-teen-volunteers", "pittsburgh-upmc-childrens-teen-volunteer"],
-    reason: "Three different hospitals and museums (Kamin Science Center, National Aviary, UPMC Children's Hospital) use the same generic program name.",
-  }],
   ["high school volunteer program|inland-empire", {
     ids: ["pomona-valley-hospital-high-school-volunteer", "san-antonio-regional-hospital-high-school-volunteer"],
     reason: "Two different hospitals (Pomona Valley Hospital, San Antonio Regional Hospital) use the same generic program name.",

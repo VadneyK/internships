@@ -23,9 +23,26 @@
     setLinks('a[href^="younger.html"]', "younger.html" + (YOUNG_LINK_ST.indexOf(st) > -1 ? "?state=" + encodeURIComponent(st) : ""));
   }
 
-  /* The tips need only interview.json. The weekly checker alone needs permits.json (state rules), so it loads on its own. */
-  var permP = G.fetchData("data/permits.json").then(function (r) { return r.json(); });
-  permP.catch(function () { /* handled below, or not needed if the tips fail first */ });
+  /* The tips need only interview.json. The weekly checker alone needs permits.json (state rules), so it loads
+     the first time the teen uses the checker: focus, tap or change inside #availability, a #availability link,
+     an address with state or age, or the section scrolling near (when IntersectionObserver exists). */
+  var permP = null, goAvail = null, wired = false;
+  function startPerm() {
+    if (!permP) { permP = G.fetchData("data/permits.json").then(function (r) { return r.json(); }); permP.catch(function () { /* shown by the checker */ }); }
+    return permP;
+  }
+  function wantAvail() { startPerm(); if (goAvail && !wired) { wired = true; goAvail(); } }
+  var availSec = $("availability");
+  if (availSec) {
+    ["focusin", "pointerdown", "change"].forEach(function (ev) { availSec.addEventListener(ev, wantAvail); });
+    if ("IntersectionObserver" in window) {
+      var io = new IntersectionObserver(function (es) { if (es.some(function (e) { return e.isIntersecting; })) { io.disconnect(); wantAvail(); } }, { rootMargin: "400px 0px" });
+      io.observe(availSec);
+    }
+  }
+  var wantAtLoad = location.hash === "#availability" || /[?&](state|age)=/.test(location.search);
+  if (wantAtLoad) startPerm();
+  window.addEventListener("hashchange", function () { if (location.hash === "#availability") wantAvail(); });
   var lastText = "";
   G.fetchData("data/interview.json").then(function (r) { return r.json(); }).then(function (d) {
     $("evidence").textContent = d.evidence + " ";
@@ -117,10 +134,11 @@
     $("aCopy").addEventListener("click", function () { G.copy(lastText); });
     paintAv();
     }
-    permP.then(initAvail).catch(function () {
+    goAvail = function () { startPerm().then(initAvail).catch(function () {
       var m = "The state rules could not load, so the hours check is not available right now. Try again later.";
       $("aOut").innerHTML = '<p class="muted">' + m + "</p>"; $("aStatus").textContent = m;
-    });
+    }); };
+    if (wantAtLoad || permP) wantAvail();
 
     /* practice cards */
     $("qList").innerHTML = d.questions.map(function (q, i) {
@@ -139,7 +157,7 @@
     $("refGap").innerHTML = G.esc(d.refs.gap) + " " + a(d.refs.source.t, d.refs.source.u) + ".";
     saved.refs = saved.refs && saved.refs.length ? saved.refs : [{}, {}, {}, {}];
     $("refRows").innerHTML = saved.refs.map(function (r, i) {
-      return '<article class="card"><h3>Reference ' + (i + 1) + '</h3><div class="field"><label for="rn' + i + '">Name</label><input id="rn' + i + '" data-i="' + i + '" data-k="n" type="text" autocomplete="off"></div>' +
+      return '<article class="card"><h3>Reference ' + (i + 1) + '</h3><div class="field"><label for="rn' + i + '">Name</label><input id="rn' + i + '" data-i="' + i + '" data-k="n" type="text" autocapitalize="words" autocomplete="off"></div>' +
         '<div class="field"><label for="rw' + i + '">Who they are to you</label><input id="rw' + i + '" data-i="' + i + '" data-k="w" type="text" autocomplete="off" placeholder="teacher, coach, babysitting family"></div>' +
         '<div class="field"><label for="rc' + i + '">Phone or email</label><input id="rc' + i + '" data-i="' + i + '" data-k="c" type="text" autocomplete="off"></div>' +
         '<label style="display:flex;gap:.5rem;align-items:center;"><input type="checkbox" data-i="' + i + '" data-k="asked"> I asked them and they said yes</label>' +

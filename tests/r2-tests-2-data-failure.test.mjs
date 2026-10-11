@@ -18,15 +18,14 @@ const MESSAGE = /could not|try again|unavailable|not load/i;
 // Cases that fail today. Key: "page file mode". Value: why. Follow-up tickets come from this list.
 const KNOWN_GAPS = {
   "find.html entries-lite.json empty-array": "An empty program list is drawn as '0 of 0 programs', not a load failure. Fix in common.js checkJson or find.js: treat an empty entries file as a failed load.",
-  "calendar.html entries-card.json empty-array": "An empty program list is drawn as '0 programs in October'. Same root cause: no check that the entries file has rows.",
-  "younger.html entries-core.json empty-array": "An empty program list shows the normal federal note with no failure message; the program count is silently zero.",
+  "calendar.html entries-cal.json empty-array": "An empty program list is drawn as '0 programs in October'. Same root cause: no check that the entries file has rows.",
   "index.html entries-home.json empty-array": "An empty program list shows 'No confirmed deadlines in the next few weeks' instead of a load failure.",
 };
 
 // page, the area where results or the failure message go, and the required data files the page requests.
 const PAGES = [
   { page: "find.html", area: "count", also: "out", files: ["entries-lite.json"], optional: ["gaps.json", "entries-detail.json"] },
-  { page: "calendar.html", area: "cCount", files: ["calendar.json", "entries-card.json"] },
+  { page: "calendar.html", area: "cCount", files: ["calendar.json", "entries-cal.json"] },
   { page: "languages.html", area: "lCount", files: ["languages.json"] },
   { page: "interview.html", area: "aOut", files: ["interview.json", "permits.json"] },
   { page: "paycheck.html", area: "mOut", files: ["money.json"] },
@@ -34,7 +33,7 @@ const PAGES = [
   { page: "parents.html", area: "signLead", files: ["parents.json"] },
   { page: "ready.html", area: "rideOut", files: ["transit.json"] },
   { page: "safety.html", area: "sbody-rights", files: ["safety.json"] },
-  { page: "younger.html", area: "fedNote", files: ["younger.json", "entries-core.json"] },
+  { page: "younger.html", area: "fedNote", files: ["younger.json"], soft: ["entries-core.json"] },
   { page: "states.html", area: "moreOut", files: ["permits.json"] },
   { page: "insights.html", area: "todayLead", files: ["entries-stats.json"] },
   { page: "index.html", area: "soonList", files: ["entries-home.json"] },
@@ -94,7 +93,10 @@ async function runCase(spec, fileName, mode, optional) {
   if (!d.querySelector("nav")) problems.push("no nav");
   const area = d.getElementById(spec.area);
   const text = area ? area.textContent.trim() : "";
-  if (optional) {
+  if (optional === "soft") {
+    // only the program counts use this file; the page text must stay and no failure message is needed
+    if (!text) problems.push(`#${spec.area} is blank`);
+  } else if (optional) {
     const cards = d.querySelectorAll("#out article.prog").length;
     if (!cards) problems.push("the main list is blank");
   } else {
@@ -106,7 +108,7 @@ async function runCase(spec, fileName, mode, optional) {
 
 for (const spec of PAGES) {
   const file = spec.file || spec.page;
-  const targets = [...spec.files.map((f) => [f, false]), ...(spec.optional || []).map((f) => [f, true])];
+  const targets = [...spec.files.map((f) => [f, false]), ...(spec.optional || []).map((f) => [f, true]), ...(spec.soft || []).map((f) => [f, "soft"])];
   for (const [fileName, optional] of targets) {
     for (const mode of Object.keys(MODES)) {
       const key = `${file} ${fileName} ${mode}`;
@@ -125,7 +127,7 @@ for (const spec of PAGES) {
 
 test("every table entry matches a real fetch call in the page scripts", () => {
   const js = ["common.js", "find.js", "calendar.js", "languages.js", "interview.js", "paycheck.js", "permit.js", "parents.js", "ready.js", "safety.js", "younger.js", "states.js", "insights.js", "home.js"].map((f) => read("assets/js/" + f)).join("\n");
-  for (const spec of PAGES) for (const f of [...spec.files, ...(spec.optional || [])]) assert.ok(js.includes("data/" + f), `${spec.page}: no fetch of data/${f} in the scripts`);
+  for (const spec of PAGES) for (const f of [...spec.files, ...(spec.optional || []), ...(spec.soft || [])]) assert.ok(js.includes("data/" + f), `${spec.page}: no fetch of data/${f} in the scripts`);
 });
 
 test("no unhandled rejection leaked from any failure case", () => {

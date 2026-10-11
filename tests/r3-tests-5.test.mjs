@@ -134,7 +134,7 @@ test("younger.html: picking a state loads nothing broken", async () => {
 // ---------- static: paths named in scripts ----------
 
 const jsFiles = readdirSync(join(ROOT, "assets/js")).filter((f) => f.endsWith(".js")).sort();
-const cleanPath = (s) => s.split(/[?#]/)[0].replace(/^\.\//, "");
+const cleanPath = (s) => s.split(/[?#]/)[0].replace(/^\.\//, "").replace(/^\/internships\//, ""); // 404.html is root-anchored under /internships/
 
 test("every quoted data/*.json, assets/... or *.csv path in assets/js exists on disk", () => {
   const found = [];

@@ -44,6 +44,7 @@ scripts: find
             <option value="">Any age</option>
             <option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option>
           </select>
+          <div id="ageUnder14Region" aria-live="polite"><p class="small" id="ageUnder14Note" hidden style="margin:.5rem 0 0;">Federal law sets 14 as the minimum age for most non-farm jobs. Your state can be stricter. The <a href="younger.html">Ages 12 to 14 page</a> is made for you.</p></div>
         </div>
         <div class="fgroup">
           <label class="lbl" for="when">Timing</label>
@@ -92,7 +93,8 @@ scripts: find
     <a class="small noprint" href="#results">Jump to the results</a>
 
     <div class="toolbar">
-      <p id="count" class="caps" tabindex="-1" aria-live="polite" style="margin:0;">Loading programs&hellip;</p>
+      <p id="count" class="caps" tabindex="-1" style="margin:0;">Loading programs&hellip;</p>
+      <span id="countLive" class="sr" role="status"></span>
       <div class="chips" style="align-items:center;">
         <div class="chips" role="group" aria-label="View">
           <button class="chip" type="button" id="viewCards" aria-pressed="true">Cards</button>

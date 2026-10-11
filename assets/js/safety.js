@@ -1,7 +1,7 @@
 /* Safe at work: sourced points, hotlines and gaps. Content is data/safety.json. */
 (function () {
   "use strict";
-  var G = window.TIG;
+  var G = window.TIG, L = G.lib;
   var $ = function (id) { return document.getElementById(id); };
   function a(t, u) { return '<a href="' + G.esc(u) + '" target="_blank" rel="noopener">' + G.esc(t) + "</a>"; }
   function tel(n) { return '<a href="tel:' + G.esc(n.tel) + '">' + G.esc(n.display) + "</a>"; }
@@ -99,9 +99,14 @@
       : v === "other" ? "Showing the " + shown + " national numbers. For your state's own number, use the work permit finder."
       : "Showing " + shown + " numbers: the national ones and " + optName(v) + ".";
   }
+  function covered(x) { return Object.prototype.hasOwnProperty.call(STATES, x) ? x : ""; }
+  /* The state to start on. A ?state= in the address wins, even when it is unknown. Otherwise the area saved on Programs
+     (localStorage "findprefs", read only) counts when it sits in one of the four states here. */
   function wantState() {
     var w = ""; try { w = (new URLSearchParams(location.search).get("state") || "").toLowerCase(); } catch (e) {}
-    return w && w !== "other" && sel && optName(w) !== w ? w : "";
+    if (w) return w !== "other" && sel && optName(w) !== w ? w : "";
+    var pr = G.store.get("findprefs", {});
+    return covered(pr && typeof pr.place === "string" ? L.stateFromPlace(pr.place) : "");
   }
   if (sel) sel.addEventListener("change", function () { applyState(sel.value, true); });
 

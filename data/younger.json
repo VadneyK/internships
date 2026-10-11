@@ -82,7 +82,7 @@
      }
     },
     "il": {
-     "t": "Raking a neighbor's leaves for pay needs no permit. If a landscaping company hires you, the child labor law applies.",
+     "t": "Raking a neighbor's leaves for pay outside school hours needs no permit. If a landscaping company hires you, the child labor law applies.",
      "s": {
       "t": "Illinois Department of Labor FAQ",
       "u": "https://labor.illinois.gov/faqs/child-labor-faq.html"
@@ -205,8 +205,9 @@
  "conflicts": [
   "Georgia: the DOL summary sheet says the minimum age is 14, while the state code contemplates employment certificates from age 12. Neither says plainly what a 12 or 13 year old may do for a neighbor. Call 877-709-8185.",
   "New York: a footnote says federal law sets 14 as the minimum for delivering periodicals, while federal pages say newspaper delivery is exempt at any age. Ask before you start a route.",
-  "Babysitting: the Red Cross says most states have no minimum age, while New York says 14."
+  "Babysitting: the Red Cross page How Old Do You Have to Be to Babysit? says most states do not have laws that set a minimum age, while New York says 14."
  ],
+ "conflictsSource": {"t": "Red Cross: How Old Do You Have to Be to Babysit?", "u": "https://www.redcross.org/take-a-class/resources/articles/how-old-do-you-have-to-be-to-babysit"},
  "train": [
   {
    "t": "Red Cross Babysitting Basics (online)",

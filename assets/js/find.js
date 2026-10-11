@@ -55,6 +55,8 @@
 
   /* The inside of a card's <dl>. Before the detail file arrives it holds a short note in place of the long text. */
   function detailMode() { return detailState === "ready" || detailState === "fail" ? detailState : "wait"; }
+  /* pay_detail comes with the detail file, so the row stays out until then (no empty label) */
+  function payHtml(e) { return detailState === "ready" && e.pay_detail ? '<p class="pay"><b>Pay or cost:</b> ' + G.esc(e.pay_detail) + "</p>" : ""; }
   function detailBody(e) {
     var html = "", mode = detailMode(), ready = mode === "ready";
     if (!ready) {
@@ -64,7 +66,7 @@
     }
     if (ready && e.who_can_apply) html += "<div><dt>Who can apply</dt><dd>" + G.esc(e.who_can_apply) + "</dd></div>";
     if (ready && e.how_to_apply) html += "<div><dt>How to apply</dt><dd>" + G.esc(e.how_to_apply) + "</dd></div>";
-    if (e.duration) html += "<div><dt>How long</dt><dd>" + G.esc(e.duration) + "</dd></div>";
+    if (ready && e.duration) html += "<div><dt>How long</dt><dd>" + G.esc(e.duration) + "</dd></div>";
     if (e.needs_work_permit === true) {
       var st = L.stateOf(e);
       var permit = { ca: "Paid work under 18 needs a California work permit. See the <a href=\"rules.html\">Rules page</a>.",
@@ -108,7 +110,7 @@
     html += '<p class="org">' + G.esc(e.org || "") + (e.city ? " &middot; " + G.esc(e.city) : "") + "</p>";
     html += '<p class="what">' + G.esc(e.what_you_do || "") + "</p>";
     html += '<div class="row"><span class="tag ghost">' + G.esc(ageText(e)) + "</span></div>";
-    if (e.pay_detail) html += '<p class="pay"><b>Pay or cost:</b> ' + G.esc(e.pay_detail) + "</p>";
+    html += '<div data-pay>' + payHtml(e) + "</div>";
     html += deadlineLine(e);
     html += "<details><summary>Who can apply and how</summary><dl" + (detailMode() === "ready" ? "" : ' data-detail="' + detailMode() + '"') + ">" + detailBody(e);
     html += "</dl></details>";
@@ -365,6 +367,18 @@
     }
     G.toast("Showing " + (Math.min(shown, list.length) - from) + " more programs");
   }
+  /* The visible count (#count) updates at once. The spoken copy (#countLive, role=status) waits until typing stops, so a screen reader does not read a changing count over the person's typing. A filter or chip change is spoken right away. The first draw is not spoken, and the text is never cleared. */
+  var spoken = null, speakT, typingRender = false;
+  function announceCount(text) {
+    var typed = typingRender; typingRender = false;
+    clearTimeout(speakT);
+    var live = $("countLive");
+    if (!live) return;
+    if (spoken === null) { spoken = text; return; }
+    if (text === spoken) return;
+    if (!typed) { live.textContent = spoken = text; return; }
+    speakT = setTimeout(function () { var t = $("count").textContent; if (t !== spoken) live.textContent = spoken = t; }, 700);
+  }
   function render(resetPage, keep) {
     if (resetPage) shown = PAGE;
     var sv = savedIds(), cur = currentList(sv), list = cur.list, realN = cur.realN;
@@ -372,6 +386,7 @@
     paintPlaceNote(realN);
     paintTownHelp(realN);
     $("count").textContent = list.length + " of " + all.length + " programs";
+    announceCount($("count").textContent);
     paintPrintCut(list);
     paintSortNote();
     $("savedN").textContent = sv.length;
@@ -494,18 +509,28 @@
   /* The three related chips carry the chosen age and area (only the parts that are set). */
   function paintRelated() {
     var box = $("relatedLinks"); if (!box) return;
-    var cal = box.querySelector("a[href^='calendar.html']"), per = box.querySelector("a[href^='permit.html']"), jobs = box.querySelector("a[href^='jobs.html']");
+    var cal = box.querySelector("a[href^='calendar.html']"), per = box.querySelector("a[href^='permit.html']"), jobs = box.querySelector("a[href^='jobs.html']"), young = box.querySelector("a[href^='younger.html']");
     var c = new URLSearchParams();
     if (state.place) c.set("at", state.place);
     if (state.age) c.set("age", state.age);
     if (cal) cal.setAttribute("href", "calendar.html" + (c.toString() ? "?" + c.toString() : ""));
     if (per) per.setAttribute("href", "permit.html" + (state.age && state.age !== "12" && state.age !== "13" ? "?age=" + encodeURIComponent(state.age) : ""));
     if (jobs) jobs.setAttribute("href", "jobs.html" + (PREF_AGES.indexOf(state.age) > -1 ? "?age=" + encodeURIComponent(state.age) : ""));
+    if (young) young.setAttribute("href", "younger.html" + (state.age === "12" || state.age === "13" ? "?age=" + state.age : ""));
+  }
+  /* Under the age picker: for 12 or 13 only, a note that federal law sets 14 as the minimum for most non-farm jobs, with a link to the Ages 12 to 14 page for that age. */
+  function paintUnder14Note() {
+    var note = $("ageUnder14Note"), link = note && note.querySelector("a");
+    if (!note) return;
+    var under = state.age === "12" || state.age === "13";
+    note.hidden = !under;
+    if (link) link.setAttribute("href", under ? "younger.html?age=" + state.age : "younger.html");
   }
 
   /* url state */
   function persist() {
     paintRelated();
+    paintUnder14Note();
     var p = new URLSearchParams();
     if (state.q) p.set("q", state.q);
     if (state.hubs.length) p.set("where", state.hubs.join(","));
@@ -544,6 +569,7 @@
       var dl = cards[i].querySelector("dl"), e = byId[cards[i].id.slice(2)];
       if (!dl || !e || (dl.getAttribute("data-detail") || "ready") === mode) continue;
       dl.innerHTML = detailBody(e);
+      var slot = cards[i].querySelector("[data-pay]"); if (slot) slot.innerHTML = payHtml(e);
       if (mode === "ready") dl.removeAttribute("data-detail"); else dl.setAttribute("data-detail", mode);
     }
     var waits = $("out").querySelectorAll("[data-detail-wait]");
@@ -590,6 +616,36 @@
   /* Test hook: the HTML of one card, so a test can compare it with a card built from the full file. */
   G.cardHtml = function (e) { return card(e); };
 
+  /* A shared #p-<id> link. If the card is hidden by the filters or by My list only, clear them and say so. If the id is not in the data, show a note. */
+  function openLinked(id, first) {
+    var note = $("hashNote"); if (note) note.parentNode.removeChild(note);
+    var known = Object.prototype.hasOwnProperty.call(byId, id), cleared = false;
+    var at = known ? currentList(savedIds()).list.findIndex(function (e) { return e.id === id; }) : -1;
+    if (known && at < 0) {
+      clearTimeout(qt);
+      state = { q: "", hubs: [], place: "", age: "", when: "", season: "", paid: [], types: [], fields: [], verified: false, noPermit: false, view: state.view, sort: "best", saved: false };
+      $("q").value = ""; $("place").value = ""; $("age").value = ""; $("when").value = ""; $("season").value = ""; $("sort").value = "best";
+      hidePrefNote(); syncChips(); cleared = true;
+      at = currentList(savedIds()).list.findIndex(function (e) { return e.id === id; });
+    }
+    if (known && at < 0) known = false;
+    var visible = known && at >= 0 && !!document.getElementById("p-" + id);
+    if (known && (first || cleared || !visible)) {
+      shown = PAGE; if (at >= shown) shown = at + 1;
+      render(false);
+    } else if (!known && first) render(true);
+    if (!known) {
+      var n = document.createElement("p");
+      n.id = "hashNote"; n.className = "small"; n.setAttribute("role", "status");
+      n.innerHTML = 'That program is no longer on the list. <a href="find.html">See the full list</a>.';
+      $("out").parentNode.insertBefore(n, $("out"));
+      return;
+    }
+    var el = document.getElementById("p-" + id);
+    if (el) { var det = el.querySelector("details"); if (det) det.open = true; el.scrollIntoView(); try { el.focus({ preventScroll: true }); } catch (err) { el.focus(); } }
+    if (cleared) G.toast("Filters cleared to show this program");
+  }
+
   litePromise.then(function (data) {
     all = data;
     all.forEach(function (e) { byId[e.id] = e; });
@@ -608,25 +664,21 @@
     var wantHash = location.hash;
     readURL(); syncChips();
     var wantId = wantHash.indexOf("#p-") === 0 ? wantHash.slice(3) : "";
-    if (wantId) {
-      /* find the linked card in the list first, so the first draw already holds it (one filter and sort, no second draw) */
-      var at = currentList(savedIds()).list.findIndex(function (e) { return e.id === wantId; });
-      shown = PAGE; if (at >= shown) shown = at + 1;
-      render(false);
-    } else render(true);
+    if (wantId) openLinked(wantId, true);
+    else render(true);
     prefetchDetail();
-    if (wantId) {
-      var el = document.getElementById("p-" + wantId);
-      if (el) { var det = el.querySelector("details"); if (det) det.open = true; el.scrollIntoView(); try { el.focus({ preventScroll: true }); } catch (err) { el.focus(); } }
-      wantDetail();
-    }
+    if (wantId) wantDetail();
+    window.addEventListener("hashchange", function () {
+      if (location.hash.indexOf("#p-") === 0) { openLinked(location.hash.slice(3), false); wantDetail(); }
+    });
   }).catch(function (err) {
     $("count").textContent = "Could not load the list.";
+    if ($("countLive")) $("countLive").textContent = "Could not load the list.";
     $("out").innerHTML = '<div class="card empty" style="grid-column:1/-1"><h3>Something went wrong</h3><p>' + G.esc(err.message) + ". Reload the page, or open the <a href=\"data/entries.csv\">spreadsheet version</a>.</p></div>";
   });
 
   var qt;
-  $("q").addEventListener("input", function (e) { clearTimeout(qt); var v = e.target.value; if (v.trim()) wantDetail(); qt = setTimeout(function () { state.q = v.trim(); render(true); }, 160); });
+  $("q").addEventListener("input", function (e) { clearTimeout(qt); var v = e.target.value; if (v.trim()) wantDetail(); qt = setTimeout(function () { state.q = v.trim(); typingRender = true; render(true); }, 160); });
   ["age", "when", "season", "sort"].forEach(function (id) { $(id).addEventListener("change", function (e) { state[id] = e.target.value; if (id === "age") { savePrefs(); hidePrefNote(); } render(true); }); });
   $("goalChips").addEventListener("click", function (ev) {
     var b = ev.target.closest("[data-goal]"); if (!b) return;

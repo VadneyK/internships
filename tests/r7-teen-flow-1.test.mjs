@@ -7,7 +7,7 @@ test("soon list follows the saved age, and returns to 8 rows when cleared", asyn
   const { document, window, errors } = await loadPage("index.html", { storage: { findprefs: { age: "12" } } });
   const rows = () => [...document.querySelectorAll("#soonList li[data-id]")];
   assert.equal(document.getElementById("soonStatus").textContent, "", "no status on load");
-  const cardsRes = await window.fetch("data/entries-card.json");
+  const cardsRes = await window.fetch("data/entries-home.json");
   const raw = await cardsRes.json();
   const list = Array.isArray(raw) ? raw : raw.entries || raw.rows || [];
   const byId = Object.fromEntries(list.map((e) => [e.id, e]));

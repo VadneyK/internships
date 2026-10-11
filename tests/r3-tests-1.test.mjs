@@ -37,7 +37,7 @@ const PARAMS_BY_PAGE = {
   "permit.html": ["state", "age", "kind"],
   "paycheck.html": ["state"],
   "interview.html": ["state", "age"],
-  "jobs.html": ["age"],
+  "jobs.html": ["age", "state"],
   "younger.html": ["state", "age"],
   "states.html": ["state"],
   "calendar.html": ["m", "at", "age"],
@@ -92,7 +92,7 @@ function refProblems(where, href, { liveIds = null, selfFile = null, partial = f
       else if (!allowed.has(k)) problems.push(`${where} (${target} does not read "${k}")`);
       if (v === "" ) continue;
       if (k === "state" && !STATE_KEYS.has(v) && !(target === "languages.html")) problems.push(`${where} (state "${v}" is not in permits.json)`);
-      if (k === "age" && !(/^\d+$/.test(v) && +v >= 12 && +v <= 18)) problems.push(`${where} (age "${v}" is not 12 to 18)`);
+      if (k === "age" && !(/^\d+$/.test(v) && +v >= 12 && +v <= 18) && !(target === "jobs.html" && v === "u14")) problems.push(`${where} (age "${v}" is not 12 to 18, or u14 on the Jobs page)`);
       if (k === "view" && !["cards", "dates"].includes(v)) problems.push(`${where} (view "${v}" is not cards or dates)`);
       if (k === "kind" && target === "permit.html" && !KIND_KEYS.has(v)) problems.push(`${where} (kind "${v}" is not in permits.json)`);
     }

@@ -31,7 +31,6 @@ const ALLOW_PAY = [
   "chicago-goodman-theatre-youth-arts-council",
   "ecc-upward-bound",
   "fulton-county-youth-commission",
-  "georgia-deca-state-association",
   "georgia-tech-gtae-step",
   "hidden-genius-project-immersion",
   "larpd-summer-youth-volunteer",
@@ -46,18 +45,15 @@ const ALLOW_PAY = [
   "nyc-john-jay-upward-bound",
   "nyc-rockefeller-summer-science-research-program",
   "pomona-college-academy-for-youth-success",
-  "richmond-sd38-youth-train-in-trades",
   "stanford-smysp",
   // Free; the dollar amount is a later college scholarship, and the text says there is no stipend.
   "twin-cities-umn-rooted-in-stem",
   "waubonsee-upward-bound-aurora",
-  "ywca-elgin-youth-leadership-scholarship",
 ];
 
 // Rule B reason: the page says paid but gives no rate, so the text has no
 // conflict. The word volunteer or unpaid in the text is about something else.
 const ALLOW_UNPAID = [
-  "boston-boys-girls-clubs-ready-to-work",
   "sf-breakthrough-sf",
   // Paid; the unpaid part is only the first 36 Foundation Studio hours, and the text says the rate is not stated.
   "boston-artists-for-humanity-teen-jobs",
@@ -86,6 +82,8 @@ const ALLOW_AGE = [
   "ymca-orange-county-volunteer",
   // Same pattern: min_age 8 is the youngest age with an adult; the text also names 13 to go alone.
   "madison-dane-county-humane-society-youth-volunteer",
+  // min_age 8 is the youngest age with a parent or guardian; the text also names 16 to volunteer alone (r3-data-content-3).
+  "lansing-capital-area-humane-society-volunteer",
   // The page lists activity ideas by age from 5 up and a youth policy for 16 and 17. min_age 12 is where the teen activities start; the text names 16 for new home building.
 ];
 

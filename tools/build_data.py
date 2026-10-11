@@ -4,11 +4,10 @@
   data/entries.json  all programs, one array
   data/entries.csv   same, as a spreadsheet
   data/entries-lite.json  same ids and order, without the long text fields (small file for pages that show a few fields)
-  data/entries-blurb.json same ids and order, only id, what_you_do and deadline_text (the Home result cards)
   data/entries-core.json  same ids and order, only the keys lib.js needs to match by age (tiny file for the Ages 12 to 14 page)
-  data/entries-card.json  same ids and order, only the keys the Calendar and Numbers pages read (no long text)
-  data/entries-stats.json  same ids and order, only the keys the Numbers page counts with (smaller than the card file)
-  data/entries-home.json  same ids and order, only the keys the Home picker reads (smaller than the card file)
+  data/entries-cal.json  same card keys and order, only the programs named in data/calendar.json (the Calendar page)
+  data/entries-stats.json  same ids and order, only the keys the Numbers page counts with
+  data/entries-home.json  same ids and order, only the keys the Home picker reads
   data/entries-detail.json  same ids and order, only id plus the long text (who_can_apply, how_to_apply, notes) a program has, read when a card is opened
   data/meta.json     counts and the "last checked" date shown in the footer
 
@@ -22,7 +21,7 @@ import sys
 import proglib
 
 OUT_DIR = os.path.join(proglib.ROOT, "data")
-LITE_DROP = ("notes", "sources_fetched", "how_to_apply", "who_can_apply")
+LITE_DROP = ("notes", "sources_fetched", "how_to_apply", "who_can_apply", "duration", "pay_detail", "verified_on")
 CORE_KEYS = ("id", "min_age", "max_age", "status", "deadline_iso", "opens_iso", "regions", "season")
 CARD_KEYS = (
     "id", "name", "org", "city", "url", "paid_type", "type", "fields", "grades", "needs_work_permit", "verified", "priority",
@@ -38,8 +37,7 @@ HOME_KEYS = (
     "id", "name", "org", "city", "url", "paid_type", "fields", "priority", "deadline_confidence", "min_age", "max_age",
     "status", "deadline_iso", "opens_iso", "regions", "verified",
 )
-BLURB_KEYS = ("what_you_do", "deadline_text")
-DETAIL_KEYS = ("who_can_apply", "how_to_apply", "notes")
+DETAIL_KEYS = ("who_can_apply", "how_to_apply", "notes", "duration", "pay_detail")
 CSV_COLUMNS = [
     "id", "name", "org", "city", "regions", "type", "fields", "min_age", "max_age", "grades", "paid_type", "pay_detail",
     "season", "duration", "status", "deadline_text", "deadline_iso", "deadline_confidence", "needs_work_permit",
@@ -71,8 +69,13 @@ def main():
         json.dump(core, f, ensure_ascii=False, separators=(",", ":"))
         f.write("\n")
     card = [{k: d[k] for k in CARD_KEYS if k in d} for d in programs]
-    with open(os.path.join(OUT_DIR, "entries-card.json"), "w", encoding="utf-8") as f:
-        json.dump(card, f, ensure_ascii=False, separators=(",", ":"))
+    # The card rows are only a step toward the calendar file; no page fetches them, so they are not written out.
+    # Calendar file: the card rows whose id is an item in data/calendar.json, in card order.
+    with open(os.path.join(proglib.ROOT, "data", "calendar.json"), encoding="utf-8") as f:
+        cal_ids = {it["id"] for it in json.load(f)["items"]}
+    cal = [c for c in card if c["id"] in cal_ids]
+    with open(os.path.join(OUT_DIR, "entries-cal.json"), "w", encoding="utf-8") as f:
+        json.dump(cal, f, ensure_ascii=False, separators=(",", ":"))
         f.write("\n")
     # A key whose value is null is left out: lib.js reads a missing key and a null the same way (it tests for null, or parses a missing date as none).
     stats = [{k: d[k] for k in STATS_KEYS if d.get(k) is not None} for d in programs]
@@ -84,10 +87,6 @@ def main():
     home = [{k: d[k] for k in HOME_KEYS if d.get(k) is not None and (k != "deadline_confidence" or d[k] == "confirmed-2026-27")} for d in programs]
     with open(os.path.join(OUT_DIR, "entries-home.json"), "w", encoding="utf-8") as f:
         json.dump(home, f, ensure_ascii=False, separators=(",", ":"))
-        f.write("\n")
-    blurb = [{"id": d["id"], **{k: d[k] for k in BLURB_KEYS if k in d}} for d in programs]
-    with open(os.path.join(OUT_DIR, "entries-blurb.json"), "w", encoding="utf-8") as f:
-        json.dump(blurb, f, ensure_ascii=False, separators=(",", ":"))
         f.write("\n")
     detail = [{"id": d["id"], **{k: d[k] for k in DETAIL_KEYS if k in d}} for d in programs]
     with open(os.path.join(OUT_DIR, "entries-detail.json"), "w", encoding="utf-8") as f:

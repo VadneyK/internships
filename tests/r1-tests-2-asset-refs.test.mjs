@@ -57,8 +57,10 @@ function resolveFrom(fromDir, raw) {
   const lp = localPath(raw);
   if (!lp) return null;
   if (lp.bad) return { bad: lp.bad };
-  if (lp.path.startsWith("/")) return { bad: "absolute path (must be relative so it works under /internships/)" };
-  const target = path.posix.normalize(path.posix.join(fromDir, lp.path));
+  // 404.html is root-anchored under /internships/ on purpose (it is served at any depth); that prefix is the repo root here.
+  const isSite = lp.path.startsWith("/internships/");
+  if (lp.path.startsWith("/") && !isSite) return { bad: "absolute path (must be relative so it works under /internships/)" };
+  const target = path.posix.normalize(isSite ? lp.path.slice("/internships/".length) : path.posix.join(fromDir, lp.path));
   if (target === ".." || target.startsWith("../") || path.posix.isAbsolute(target)) return { bad: "points outside the repo" };
   return { target };
 }

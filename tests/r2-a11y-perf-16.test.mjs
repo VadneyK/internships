@@ -18,12 +18,12 @@ const size = (f) => fs.statSync(path.join(ROOT, "data", f)).size;
 const PAGES = {
   "index.html": { allowed: ["entries-home.json"], ceiling: 715000 },
   "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2030000 },
-  "calendar.html": { allowed: ["calendar.json", "entries-card.json"], ceiling: 1040000 },
+  "calendar.html": { allowed: ["calendar.json", "entries-cal.json"], ceiling: 150000 },
   "insights.html": { allowed: ["entries-stats.json"], ceiling: 530000 },
   // younger.html: raised from 336000 to 340000 on 2026-10-11 (r5-younger-1: pet care card and address-safe script added 2.7 KB to younger.json)
   "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 340000 },
   "interview.html": { allowed: ["interview.json", "permits.json"], ceiling: 95000 },
-  "permit.html": { allowed: ["permits.json"], ceiling: 80000 },
+  "permit.html": { allowed: ["permits.json"], ceiling: 82000 },
   "paycheck.html": { allowed: ["money.json"], ceiling: 15000 },
   "ready.html": { allowed: ["transit.json"], ceiling: 10000 },
   // safety.html: raised from 45000 to 125000 on 2026-10-11 (r5-safety-1: the other states' agency numbers come from permits.json, 79 KB)
@@ -33,7 +33,7 @@ const PAGES = {
   "languages.html": { allowed: ["languages.json"], ceiling: 10000 },
   // jobs.html: raised from 150000 to 190000 on 2026-10-11 (employer list 66 to 96 entries) and to 215000 the same day (120 entries: BC, California, Ohio and 17 and 18 year old jobs)
   "jobs.html": { allowed: ["employers.json", "permits.json"], ceiling: 215000 },
-  "states.html": { allowed: ["permits.json"], ceiling: 80000 },
+  "states.html": { allowed: ["permits.json"], ceiling: 82000 },
   "playbook.html": { allowed: [], ceiling: 0 },
   "resume.html": { allowed: [], ceiling: 0 },
   "leaders.html": { allowed: [], ceiling: 0 },

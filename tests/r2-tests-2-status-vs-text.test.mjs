@@ -42,7 +42,6 @@ export function scan(programs) {
   When the data is fixed the entry goes stale and the "allow list is current" test fails: delete it.
 */
 const ALLOW = {
-  "A:after-school-matters-chicago": "the passed dates are for the Fall 2026 start; text says the apply page is still open with no close date",
   "A:champaign-illinois-arabic-high-school-program": "only the early admission date passed; the April 2027 deadlines are ahead",
   "A:college-park-umd-sparc-robotics-certificate": "text says the page does not say whether applications are closed; it shows a Dec 1, 2026 deadline",
   "A:cook-memorial-library-teen-volunteers": "the closed items are the Summer 2026 period and the Seed Library; Fall 2026 applications are open until Oct 15, 2026",
@@ -53,7 +52,6 @@ const ALLOW = {
   "B:cincinnati-uc-early-it-summer-camp": "page says registration is open but gives no year; kept closed until the year is confirmed",
   "B:evanston-art-center-teen-board": "page says open but the board photo is from 2023-24; kept unconfirmed on purpose",
   "B:hire-las-youth": "banner says accepting but the site shows stale 2022 pages; kept unconfirmed until EWDD confirms",
-  "B:sf-girls-on-the-run-junior-coach": "the open banner is for Spring 2027 site registration; the Fall 2026 Junior Coach application is closed",
 };
 
 const ALL = scan(PROGRAMS);

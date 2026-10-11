@@ -63,7 +63,7 @@ if (entries.length !== meta.count) {
 const parseTexts = {
   "parse.entries": entriesText,
   "parse.lite": readData("entries-lite.json"),
-  "parse.card": readData("entries-card.json"),
+  "parse.home": readData("entries-home.json"),
   "parse.core": readData("entries-core.json"),
 };
 
@@ -108,7 +108,7 @@ const SCENARIOS = {
   placeCounts: () => placeCounts().length,
   "parse.entries": () => JSON.parse(parseTexts["parse.entries"]).length,
   "parse.lite": () => JSON.parse(parseTexts["parse.lite"]).length,
-  "parse.card": () => JSON.parse(parseTexts["parse.card"]).length,
+  "parse.home": () => JSON.parse(parseTexts["parse.home"]).length,
   "parse.core": () => JSON.parse(parseTexts["parse.core"]).length,
 };
 

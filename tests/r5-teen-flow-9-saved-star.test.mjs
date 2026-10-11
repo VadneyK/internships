@@ -49,7 +49,10 @@ test("#count is focusable by script and has a visible focus ring from the focus 
   const { document } = await loadPage("find.html");
   const count = document.getElementById("count");
   assert.equal(count.getAttribute("tabindex"), "-1");
-  assert.equal(count.getAttribute("aria-live"), "polite");
+  // Reconciled 2026-10-11 with r3-a11y-perf-27: #count is no longer a live region (it would read a changing count over typing).
+  // Focus still lands here, so a screen reader reads the count on focus. The spoken copy is the status region #countLive.
+  assert.equal(count.getAttribute("aria-live"), null);
+  assert.equal(document.getElementById("countLive").getAttribute("role"), "status");
   assert.match(CSS, /#count:focus\s*\{[^}]*outline:\s*3px solid var\(--focus\)/);
 });
 

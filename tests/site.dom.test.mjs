@@ -47,7 +47,7 @@ function linkProblems(doc, rel) {
     const filePart = decodeURIComponent(beforeHash.split("?")[0]);
     let target = rel;
     if (filePart) {
-      const abs = path.join(ROOT, filePart.replace(/^\/+/, ""));
+      const abs = path.join(ROOT, filePart.replace(/^\/+/, "").replace(/^internships\//, "")) /* 404.html is root-anchored under /internships/ */;
       if (!abs.startsWith(ROOT) || !fs.existsSync(abs) || !fs.statSync(abs).isFile()) {
         problems.push(`${where} (no such file)`);
         continue;

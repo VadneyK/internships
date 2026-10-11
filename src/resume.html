@@ -68,9 +68,9 @@ scripts: resume
       <form class="card noprint" id="rf" novalidate onsubmit="return false">
         <h3>About you</h3>
         <div class="formgrid">
-          <div class="field"><label for="rName">Full name</label><input id="rName" type="text" autocomplete="name" spellcheck="false" value="Alex Rivera"></div>
-          <div class="field"><label for="rEmail">Email</label><input id="rEmail" type="email" autocomplete="email" spellcheck="false" value="alex.rivera@example.com"></div>
-          <div class="field"><label for="rPhone">Phone (optional)</label><input id="rPhone" type="tel" autocomplete="tel" value="(510) 555-0142"></div>
+          <div class="field"><label for="rName">Full name</label><input id="rName" type="text" autocapitalize="words" autocomplete="name" spellcheck="false" value="Alex Rivera"></div>
+          <div class="field"><label for="rEmail">Email</label><input id="rEmail" type="email" autocapitalize="none" autocomplete="email" spellcheck="false" value="alex.rivera@example.com"></div>
+          <div class="field"><label for="rPhone">Phone (optional)</label><input id="rPhone" type="tel" inputmode="tel" autocapitalize="none" autocomplete="tel" value="(510) 555-0142"></div>
           <div class="field"><label for="rCity">City</label><input id="rCity" type="text" autocomplete="address-level2" spellcheck="false" value="Oakland, CA"></div>
         </div>
         <h3 style="margin-top:1.2rem;">Education</h3>
@@ -155,6 +155,8 @@ Youth group, sound crew, 2024 to present</textarea></div>
       <a class="btn sm alt" href="playbook.html">Write your message</a>
       <a class="btn sm alt" href="find.html">Find a program</a>
       <a class="btn sm alt" href="permit.html">Do I need a work permit?</a>
+      <a class="btn sm alt" href="jobs.html">Jobs that hire teens</a>
+      <a class="btn sm alt" href="ready.html">Get ready for day one</a>
     </div>
   </div>
 </section>

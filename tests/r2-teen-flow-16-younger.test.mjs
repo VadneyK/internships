@@ -29,8 +29,10 @@ test("r2-younger-1: 18+ apps sit in a closed details, none in an open table", as
   const det = document.getElementById("sitesAdult");
   assert.equal(det.tagName, "DETAILS");
   assert.equal(det.hasAttribute("open"), false);
-  assert.match(det.querySelector("summary").textContent, /Apps you cannot join yet, and why/);
+  assert.equal(det.querySelector("summary").textContent, "Apps with an age rule of 18, and teen accounts some offer");
   assert.match(det.textContent, /Care\.com/);
+  assert.match(det.textContent, /Venmo/);
+  assert.match(det.textContent, /Cash App/);
   assert.equal(det.querySelectorAll("tbody tr").length, 7);
   assert.equal(document.getElementById("sitesWrap"), null, "no open table of apps is left");
   assert.equal(document.getElementById("sitesNone").hidden, false);

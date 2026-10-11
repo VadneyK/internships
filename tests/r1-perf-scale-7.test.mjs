@@ -14,9 +14,10 @@ const NOW = new Date(2026, 9, 10, 12).getTime();
 function refQ(e, q) {
   if (!q) return true;
   var hay = [e.name, e.org, e.city, e.what_you_do, e.notes, e.who_can_apply, (e.regions || []).map(L.regionLabel).join(" "), L.TYPES[e.type]].join(" ").toLowerCase();
-  var words = q.toLowerCase().split(/\s+/).filter(Boolean);
+  // Words with no letters or digits (such as "---") are ignored, as the search now does (ticket r3-tests-2).
+  var words = q.toLowerCase().split(/\s+/).map(function (w) { return w.replace(/[^a-z0-9]+/g, " "); }).filter(function (w) { return w.trim() !== ""; });
   var padded = " " + hay.replace(/[^a-z0-9]+/g, " ");
-  return words.every(function (w) { return padded.indexOf(" " + w.replace(/[^a-z0-9]+/g, " ")) > -1; });
+  return words.every(function (w) { return padded.indexOf(" " + w) > -1; });
 }
 const ids = (list) => list.map((e) => e.id);
 const oldIds = (entries, q) => ids(entries.filter((e) => refQ(e, q)));

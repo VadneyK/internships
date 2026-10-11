@@ -63,10 +63,20 @@
   }
   /* Get ready, paycheck and safety links in the page carry the picked state, so the teen does not pick it again. Paycheck only for the four states that page covers. Plain links when no state is picked or it is "other". */
   var NEXT_PAGES = { "ready.html": null, "safety.html": null, "paycheck.html": ["ca", "ga", "ny", "il"] };
+  /* Interview and Jobs links carry the picked state and age together (age 14 to 17 only), as the Jobs page does. Otherwise they stay plain. Links in the #pOut result card are left alone. */
+  var CARRY_PAGES = { "interview.html": true, "jobs.html": true }, CARRY_AGE = /^1[4-7]$/;
+  function carryHref(base, st, age) {
+    var on = L.PERMIT_STATES.indexOf(st) > -1 && CARRY_AGE.test(String(age));
+    return on ? base + "?state=" + encodeURIComponent(st) + "&age=" + encodeURIComponent(String(age)) : base;
+  }
   function syncNextLinks() {
-    var st = $("pState").value, links = document.querySelectorAll("main a[href]");
+    var st = $("pState").value, age = $("pAge").value, links = document.querySelectorAll("main a[href]");
     for (var i = 0; i < links.length; i++) {
       var a = links[i], base = (a.getAttribute("href") || "").split("?")[0];
+      if (Object.prototype.hasOwnProperty.call(CARRY_PAGES, base)) {
+        if (!$("pOut").contains(a)) a.setAttribute("href", carryHref(base, st, age));
+        continue;
+      }
       if (!Object.prototype.hasOwnProperty.call(NEXT_PAGES, base)) continue;
       var only = NEXT_PAGES[base], on = hasState(st) && (!only || only.indexOf(st) > -1);
       a.setAttribute("href", on ? base + "?state=" + encodeURIComponent(st) : base);

@@ -53,7 +53,7 @@ function oldSoon(G, L) {
 }
 
 function oldCards(G, L, { age, hub = "", field = "" }) {
-  const list = L.sortList(lite.filter((e) => L.matches(e, { place: hub, age, fields: field ? [field] : [] }, Date.now())), "best", Date.now(), { age });
+  const list = L.sortList(lite.filter((e) => L.matches(e, { place: hub, age, fields: field ? [field] : [] }, NOW)), "best", NOW, { age });
   const q = new URLSearchParams();
   if (age) q.set("age", age); if (hub) q.set("at", hub); if (field) q.set("interest", field);
   const top = list.slice(0, 4);
@@ -106,7 +106,7 @@ test("r1-perf-scale-4: the four program files load on the first picker change, a
   assert.equal(p.document.getElementById("matchMore").hidden, false, "the See all link shows at once");
   await waitFor(() => box.children.length > 0);
   assert.equal(liteUrls(urls).length, 4);
-  assert.equal(urls.filter((u) => /entries-blurb\.json|entries-lite\.json|entries\.json/.test(u)).length, 0);
+  assert.equal(urls.filter((u) => /entries-lite\.json|entries\.json/.test(u)).length, 0);
   const exp = oldCards(G, G.lib, { age: "15" });
   assert.ok(exp.html.length === 4, "four cards expected");
   assert.equal(status.textContent, exp.status);

@@ -23,18 +23,12 @@ NOT_OPEN_NOW = re.compile(r"\bno\b|\bnot\b|each year|every ", re.I)
 
 # id -> reason
 ALLOW_DATE = {
-    "twin-cities-hamline-microscope-adventure-camp": "opens-soon, text names Mar 30, 2027, iso still null; needs a data fix",
 }
 ALLOW_AGES = {
-    "chicago-youth-works-summer-jobs": "multi-tier program, ages differ by tier",
-    "riverside-johnny-martin-sotelo-youth-opportunity-center": "multi-tier program, ages differ by tier",
-    "wisconsin-wing-civil-air-patrol-cadets": "multi-tier program, ages differ by tier",
     "boston-futurebos-youth-jobs": "max_age 24 covers a young-adult tier; text names the teen tier",
     "lansing-umh-sparrow-teen-volunteer": "min_age 16 but text says ages 17 to 18; needs a data fix",
 }
 ALLOW_OPEN = {
-    "cincinnati-uc-early-it-summer-camp": "page says Registration is Now Open with no dates; status needs a data fix",
-    "twin-cities-umn-go4brains-neuroscience": "page is stale and still says Summer 2026 is open; card notes it",
 }
 ALLOW_OPEN_LABEL = {
     "college-park-umd-sparc-robotics-certificate": "open-now, text says the page does not say whether applications are closed; needs a data fix",
@@ -43,12 +37,6 @@ ALLOW_SOON = {}
 ALLOW_PAY = {
     "atlanta-parks-rec-teen-leaders": "mixed, pay_detail says pay is not stated; needs a data fix",
     "champaign-county-rpc-youth-services": "mixed, pay_detail starts with not stated; needs a data fix",
-    "indiana-dwd-workone-young-adult-services": "mixed, pay_detail says cost and pay are not stated; needs a data fix",
-    "merced-county-office-of-education-high-school-rop": "mixed, pay_detail says pay is not stated; needs a data fix",
-    "philadelphia-mural-arts-art-education": "mixed, pay_detail says pay is not stated; needs a data fix",
-    "sacramento-youth-center": "mixed, pay_detail says pay is not stated; needs a data fix",
-    "san-bernardino-county-wioa-youth": "mixed, pay_detail says pay is not stated; needs a data fix",
-    "stanford-aimi-summer-research-internship": "mixed, pay_detail says pay is not stated; needs a data fix",
 }
 
 UNSURE_OPEN = re.compile(r"does not say whether|do not say whether|doesn't say whether", re.I)

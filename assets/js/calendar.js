@@ -4,10 +4,11 @@
   var G = window.TIG, L = G.lib;
   var $ = function (id) { return document.getElementById(id); };
   var MN = L.MONTH_NAMES, SH = L.MONTHS;
-  Promise.all([G.fetchData("data/calendar.json").then(function (r) { return r.json(); }), G.loadEntries("card")]).then(function (res) {
+  Promise.all([G.fetchData("data/calendar.json").then(function (r) { return r.json(); }), G.loadEntries("cal")]).then(function (res) {
     var cal = res[0], all = res[1], by = {};
     all.forEach(function (e) { by[e.id] = e; });
     $("calNote").textContent = cal.note;
+    /* The place picker offers only places that have at least one calendar program: all holds just the programs in calendar.json, so other places show "(none yet)". */
     G.fillPlaces($("cPlace"), all);
     for (var a = 12; a <= 18; a++) $("cAge").appendChild(Object.assign(document.createElement("option"), { value: String(a), textContent: String(a) }));
     var cur = new Date().getMonth() + 1, q = new URLSearchParams(location.search);
@@ -21,6 +22,11 @@
       var ageOpt = Array.prototype.some.call($("cAge").options, function (o) { return o.value === q.get("age"); });
       if (ageOpt) $("cAge").value = q.get("age");
     }
+    /* Drop the places with no calendar program. The one chosen by the address or saved area stays, so the page never silently widens the filter. */
+    Array.prototype.slice.call($("cPlace").querySelectorAll("option")).forEach(function (o) {
+      if (o.value && / \(none yet\)$/.test(o.textContent) && o.value !== $("cPlace").value) o.remove();
+    });
+    Array.prototype.slice.call($("cPlace").querySelectorAll("optgroup")).forEach(function (g) { if (!g.querySelector("option")) g.remove(); });
     ["cPlace", "cAge"].forEach(function (id) { if ($(id)._tpSync) $(id)._tpSync(); });
     $("months").innerHTML = SH.map(function (m, i) { return '<button class="chip" type="button" data-m="' + (i + 1) + '" aria-pressed="false">' + m + "</button>"; }).join("");
     function inWindow(it, m) {
@@ -65,10 +71,12 @@
       var okAge = /^(1[2-8])$/.test(age) ? age : "", nst = L.stateFromPlace(place), permitSt = L.PERMIT_STATES.indexOf(nst) > -1 ? nst : "";
       var np = new URLSearchParams(), nj = new URLSearchParams();
       if (permitSt) np.set("state", permitSt);
-      if (okAge) { np.set("age", okAge); nj.set("age", okAge); }
-      var permitLink = document.querySelector('#calNext a[href^="permit.html"]'), jobsLink = document.querySelector('#calNext a[href^="jobs.html"]');
-      if (permitLink) permitLink.setAttribute("href", "permit.html" + (np.toString() ? "?" + np.toString() : ""));
-      if (jobsLink) jobsLink.setAttribute("href", "jobs.html" + (nj.toString() ? "?" + nj.toString() : ""));
+      /* 14 to 18 go to both pages as that age. 12 and 13 go to Jobs as u14 (what its age picker accepts) and the permit link stays plain. */
+      if (okAge && +okAge >= 14) { np.set("age", okAge); nj.set("age", okAge); }
+      else if (okAge) nj.set("age", "u14");
+      var permitHref = "permit.html" + (np.toString() ? "?" + np.toString() : ""), jobsHref = "jobs.html" + (nj.toString() ? "?" + nj.toString() : "");
+      ["calNextPermit"].forEach(function (id) { if ($(id)) $(id).setAttribute("href", permitHref); });
+      ["calNextJobs", "cNoneJobs"].forEach(function (id) { if ($(id)) $(id).setAttribute("href", jobsHref); });
       if (!rows.length) {
         var nb = nextBusy(place, age);
         if (nb) {

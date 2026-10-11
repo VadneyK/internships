@@ -119,8 +119,8 @@ a:hover { color: var(--ink); }
 :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
 .skip { position: absolute; left: -999px; top: 0; background: var(--tag-bg); color: var(--tag-fg); padding: .6rem 1rem; z-index: 100; }
 .skip:focus { left: 8px; top: 8px; }
-.wrap { width: 100%; max-width: 72rem; margin-inline: auto; padding-inline: 1rem; }
-@media (min-width: 48rem) { .wrap { padding-inline: 1.5rem; } }
+.wrap { width: 100%; max-width: 72rem; margin-inline: auto; padding-left: max(1rem, env(safe-area-inset-left, 0px)); padding-right: max(1rem, env(safe-area-inset-right, 0px)); }
+@media (min-width: 48rem) { .wrap { padding-left: max(1.5rem, env(safe-area-inset-left, 0px)); padding-right: max(1.5rem, env(safe-area-inset-right, 0px)); } }
 main { flex: 1; }
 /* The skip link moves focus to <main> (tabindex -1). That focus is for screen readers and the next Tab, not a visual cue, so hide the ring here. */
 #main:focus { outline: none; }
@@ -144,7 +144,7 @@ li { margin-bottom: .35em; }
 .stroke { -webkit-text-stroke: 2px var(--edge); paint-order: stroke fill; text-shadow: 4px 4px 0 var(--edge); }
 
 /* header */
-.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; background: var(--paper); border-bottom: 3px solid var(--edge); }
+.top { position: static; top: env(safe-area-inset-top, 0px); z-index: 50; background: var(--paper); border-bottom: 3px solid var(--edge); }
 .top .wrap { display: flex; align-items: center; gap: .75rem 1.25rem; flex-wrap: wrap; padding-block: .65rem; }
 .brand { display: inline-flex; align-items: center; gap: .55rem; text-decoration: none; color: var(--ink); font-family: var(--display); font-stretch: 118%; font-weight: 900; font-style: italic; text-transform: uppercase; font-size: 1.1rem; line-height: 1; }
 .brand svg { width: 1.7rem; height: 1.7rem; flex: none; }
@@ -167,6 +167,13 @@ li { margin-bottom: .35em; }
 main [id], .prog { scroll-margin-top: 5rem; }
 /* Keyboard focus (Tab) scrolls the target under the sticky header on desktop too; the header is static at 40rem and under */
 @media (min-width: 40.0625rem) { html { scroll-padding-top: 5rem; } }
+/* The header only sticks when the screen is also tall enough (34rem). On a short wide screen (a phone held sideways) it stays static,
+   so it never covers a third of the screen. When it sticks, the wrapped header is about 8rem tall, so the jump and focus offsets match it. */
+@media (min-width: 40.0625rem) and (min-height: 34rem) {
+  .top { position: sticky; }
+  html { scroll-padding-top: 8rem; }
+  main [id], .prog { scroll-margin-top: 8rem; }
+}
 
 /* buttons, tags, chips */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; font-family: var(--display); font-stretch: 108%; font-weight: 900; font-style: italic; text-transform: uppercase; letter-spacing: .03em; font-size: .95rem; text-decoration: none; background: var(--orange); color: var(--on-orange); border: 3px solid var(--edge); border-radius: 8px; padding: .7rem 1.1rem; box-shadow: var(--shadow-sm); cursor: pointer; min-height: 2.75rem; transition: transform .08s, box-shadow .08s; }
@@ -177,6 +184,9 @@ main [id], .prog { scroll-margin-top: 5rem; }
 .btn.dark { background: var(--tag-bg); color: var(--tag-fg); }
 .btn.dark:hover { color: var(--tag-fg); }
 .btn.sm { font-size: .8rem; padding: .45rem .75rem; min-height: 2.25rem; border-width: 2px; box-shadow: 2px 2px 0 var(--edge); }
+/* A disabled button looks off: faded, dashed edge, no lift on hover, and the normal pointer is replaced with not-allowed. */
+.btn:disabled, .btn[disabled] { opacity: .5; border-style: dashed; box-shadow: none; cursor: not-allowed; }
+.btn:disabled:hover, .btn[disabled]:hover, .btn:disabled:active, .btn[disabled]:active { transform: none; box-shadow: none; }
 .tag { display: inline-flex; align-items: center; gap: .3rem; background: var(--tag-bg); color: var(--tag-fg); font-family: var(--display); font-stretch: 100%; font-weight: 800; font-style: italic; text-transform: uppercase; letter-spacing: .05em; font-size: .75rem; line-height: 1; padding: .38rem .55rem .34rem; border-radius: 4px; white-space: nowrap; }
 .tag.y { background: var(--yellow); color: #151515; }
 .tag.o { background: var(--orange); color: #151515; }
@@ -280,6 +290,7 @@ main details[open] > summary::after { content: "\2212"; }
   .bar.a { forced-color-adjust: none; background: GrayText; }
   .meter > i { forced-color-adjust: none; background: Highlight; }
   .meter.over > i { forced-color-adjust: none; background: CanvasText; }
+  .btn:disabled, .btn[disabled] { forced-color-adjust: none; opacity: 1; color: GrayText; border-color: GrayText; background: Canvas; }
 }
 .checked { font-size: .78rem; color: var(--ink-2); }
 .empty { text-align: center; padding: 2.5rem 1rem; }
@@ -341,10 +352,10 @@ tr:last-child th { border-bottom: 0; }
 .foot .cols { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); }
 .foot .fh { color: #f6c431; font-size: 1.05rem; letter-spacing: .01em; margin: 0 0 .6em; }
 .foot p { font-size: .92rem; }
-/* quick links: a real list, each link a tall tap target (about 36px) */
+/* quick links: a real list, each link a 2.75rem (44px) tap target, the same size as every other control */
 .foot .qlinks { list-style: none; padding-left: 0; margin: 0; font-size: .92rem; }
 .foot li { margin-bottom: 0; }
-.foot li a { display: inline-flex; align-items: center; min-height: 2.25rem; }
+.foot li a { display: inline-flex; align-items: center; min-height: 2.75rem; }
 
 /* resume preview + print */
 .resume { background: #fff; color: #111; border: 3px solid var(--edge); box-shadow: var(--shadow); padding: 1.5rem 1.6rem; font-family: "DM Sans", Arial, sans-serif; font-size: .92rem; line-height: 1.45; max-width: 46rem; }
@@ -400,6 +411,11 @@ tr:last-child th { border-bottom: 0; }
   .resume { border: 0; box-shadow: none; max-width: none; padding: 0; }
   main, section, .wrap { padding: 0 !important; margin: 0 !important; max-width: none !important; }
   .prog, .card { break-inside: avoid; box-shadow: none; }
+  /* Boxes that a teen must read whole stay on one page: safety notes and deadline callouts, Calendar month blocks,
+     Playbook people cards, numbered steps and fact boxes. A heading or a short run of text is never left alone at a page end. */
+  .callout, .person, .month, .steps > li, .facts > div { break-inside: avoid; }
+  h4, summary { break-after: avoid; page-break-after: avoid; }
+  p, li { orphans: 3; widows: 3; }
   /* Paper: margins on every page, wide tables fit the page width instead of being cut off at the edge,
      the header row repeats on each page, table rows do not split across pages, and headings stay with the text after them. */
   @page { margin: 12mm; }
@@ -413,6 +429,8 @@ tr:last-child th { border-bottom: 0; }
   main a[href^="http"]:not(.btn):not(.noprint)::after { content: " (" attr(href) ")"; overflow-wrap: anywhere; }
   /* Program cards: the "Official page" and "Apply" buttons are .btn links, so the rule above skips them. Print their addresses too. */
   .prog a.btn[href^="http"]:not(.noprint)::after { content: " (" attr(href) ")"; overflow-wrap: anywhere; }
+  /* Languages and Calendar cards: their "Open the official page" and "Official page" buttons are .btn links in a plain .card, so print their addresses too. */
+  .card a.btn[href^="http"]:not(.noprint)::after { content: " (" attr(href) ")"; overflow-wrap: anywhere; }
 }
 .printonly { display: none; }
 .print-source { display: none; }
@@ -506,6 +524,9 @@ tr:last-child th { border-bottom: 0; }
 
 /* long fill-in lines (underscores) must wrap on narrow screens */
 .letter { overflow-wrap: anywhere; }
+
+/* Long addresses and links (monospace code, URLs in the text) must wrap at 320px, so the page never scrolls sideways */
+main, main a, code { overflow-wrap: break-word; }
 
 /* Tap targets: at least 44px tall on small buttons and chips */
 .chip, .star, .btn.sm { min-height: 2.75rem; }

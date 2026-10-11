@@ -84,7 +84,7 @@ function scriptProblems(html) {
     if (!m) continue;
     const src = m[1] ?? m[2] ?? m[3];
     const line = html.slice(0, tag.index).split("\n").length;
-    if (!LOCAL_JS.test(src.split(/[?#]/)[0])) out.push(`line ${line}: <script src="${src}"> is not a relative assets/js path`);
+    if (!LOCAL_JS.test(src.split(/[?#]/)[0].replace(/^\/internships\//, ''))) /* 404.html is root-anchored under /internships/ */ out.push(`line ${line}: <script src="${src}"> is not a relative assets/js path`);
   }
   return out;
 }

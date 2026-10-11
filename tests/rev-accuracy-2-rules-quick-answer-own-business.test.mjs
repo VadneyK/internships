@@ -6,7 +6,8 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 
 const OLD = "or running your own small business, does not need one";
-const NEW = "A babysitting or yard-work job for neighbors does not need one. For newspaper routes, unpaid volunteering at a nonprofit, or other work you run yourself, ask the Labor Commissioner at 833-526-4636.";
+// Reworded by ticket r3-accuracy-1 so the quick answer matches the no-permit list.
+const NEW = "A babysitting or yard-work job for neighbors does not need one. Delivering newspapers on your own route (age 12 or older) and true unpaid volunteering, with parent permission on file with your school, need no permit either. For other work you run yourself, such as tutoring, selling crafts or pet care, the page does not name it, so ask the Labor Commissioner at 833-526-4636.";
 
 for (const rel of ["src/rules.html", "rules.html"]) {
   test(`${rel}: old own-business claim is gone`, () => {

@@ -88,7 +88,7 @@ for (const file of PAGES) {
 
   test(`${file}: Quick links hrefs match the list from before this change, in order`, () => {
     const col = quickLinksColumn(staticDoc(file));
-    const hrefs = [...col.querySelectorAll("li > a")].map((a) => a.getAttribute("href"));
+    const hrefs = [...col.querySelectorAll("li > a")].map((a) => a.getAttribute("href").replace(/^\/internships\//, "")); // 404.html is root-anchored
     assert.deepEqual(hrefs, QUICK_HREFS);
   });
 

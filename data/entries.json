@@ -140,9 +140,9 @@
   "pay_detail": "Paid stipend based on program level and frequency. Dollar amounts vary by program and are not stated on the apply page.",
   "season": "year-round",
   "duration": "Spring: late Feb to mid May. Summer: late June to early Aug. Fall 2026: Sept 28 to Dec 12.",
-  "status": "open-now",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "The apply page still says the Fall 2026 application is open, with no closing date stated and spaces limited. Fall 2026 applications opened Aug 26, the interviews were Sept 21 to 23, and programs started Sept 28, so those dates have passed. Spring 2027 applications open in January; summer 2027 in April (per the session timeline).",
+  "deadline_text": "Fall 2026 applications opened Aug 26. Fall programs started Sept 28, 2026, and the fall interviews (Sept 21 to 23) have passed, so the fall round is over. Spring 2027 applications open in January, and summer 2027 applications open in April (per the session timeline on the apply page).",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Apply online (up to six programs, ranked). Save your Application ID for the Teen Dashboard. Most programs require an interview; offers must be accepted within 72 hours. A parent/guardian consent form is required after you accept.",
@@ -155,7 +155,7 @@
    "https://www.afterschoolmatters.org/"
   ],
   "priority": 1,
-  "notes": "One program per session. A Social Security number or ITIN is not required for every program; teens without one should contact ASM. Applying again each session needs a new application. The fall page says the application is open, but programs began Sept 28, so confirm spots remain. Work permit rules for under-16 not stated on ASM pages.",
+  "notes": "One program per session. A Social Security number or ITIN is not required for every program; teens without one should contact ASM. Applying again each session needs a new application. The apply page still shows fall 2026 wording, but fall programs began Sept 28, so the fall round is over for new applicants until the spring window opens. Work permit rules for under-16 not stated on ASM pages.",
   "regions": [
    "chicago"
   ],
@@ -772,7 +772,7 @@
   "min_age": null,
   "max_age": null,
   "opens_iso": "2026-10-12",
-  "deadline_iso": null,
+  "deadline_iso": "2026-10-12",
   "apply_url": null,
   "verified": "fetched",
   "verified_on": "2026-10-10",
@@ -799,7 +799,7 @@
   "duration": "8 weeks, June 14 to Aug 6, 2027. You must be on campus at least 35 of the 40 days.",
   "status": "opens-soon",
   "deadline_text": "The BioMed Focus 2027 interest form opens Monday, Oct 12, 2026. No closing date is posted.",
-  "deadline_confidence": "unknown",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Fill out the online interest form. One letter of recommendation is required. The page does not describe the later steps.",
   "url": "https://biomed-focus.medicine.umich.edu/about",
   "sources_fetched": [
@@ -977,10 +977,10 @@
   "min_age": 12,
   "max_age": 17,
   "opens_iso": "2026-10-19",
-  "deadline_iso": null,
+  "deadline_iso": "2026-10-19",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "needs_work_permit": null,
   "id": "ann-arbor-hshv-junior-volunteer",
   "name": "Junior Volunteer Program at Humane Society of Huron Valley",
@@ -1012,7 +1012,7 @@
   ],
   "priority": 1,
   "notes": "Demand is higher than space, so you may wait months. After training you volunteer without a parent present. Inactive for 6 months or more means retaking the training. Shelter is at 3100 Cherry Hill Rd, Ann Arbor. Michigan's youth employment page (Youth Employment Standards Act) says the law covers employers of anyone under 18 including volunteers, so ask the program whether a work permit is needed.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "grades": null,
@@ -1409,7 +1409,7 @@
   "season": "year-round",
   "duration": "Year-round roles with some seasonal placements (a summer teen cohort exists)",
   "status": "unconfirmed",
-  "deadline_text": "No application dates posted. The 2026 Ann Arbor summer teen orientation was June 24, 2026, 11am to 4pm; no later orientation is listed.",
+  "deadline_text": "No application dates posted. The newest date on the page is old: a summer teen orientation on June 24, 2026. No later orientation is listed. Ask the volunteer office about the next one.",
   "deadline_confidence": "unknown",
   "how_to_apply": "Use the Apply Now button on the Ann Arbor and Livingston volunteer page (the link goes to the hospital's volunteer system at stjoemercyann.vsysweb.com). Then an interview, paperwork, health screening and a required orientation.",
   "url": "https://www.trinityhealthmichigan.org/foundation-and-giving/volunteer/ann-arbor-and-livingston",
@@ -2106,7 +2106,7 @@
   "deadline_text": "No dates or deadline listed.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Use the Learn More and Sign Up link on the volunteer page, which opens a Google Form.",
+  "how_to_apply": "Use the Learn More and Sign Up link on the volunteer page, which opens a Google Form. You can also call the Armory at (626) 792-5101.",
   "url": "https://www.armoryarts.org/support/volunteer",
   "priority": 2,
   "notes": "Hours and session dates are not on the page. The Armory's Fall Studio 2026 classes are on a separate page.",
@@ -4421,7 +4421,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 3,
-  "notes": "Corrected on 2026-10-07. The site loaded this time (the earlier certificate error is gone). The homepage and employment page say who is served and what coaching covers, but do not state an age range, costs or an intake process, so those are left null or not stated. This is a coaching service rather than a paid job, so the type is the closest available. The employment page lists outside job boards and training partners (Civicorps, Oakland Private Industry Council, EASTBAY Works), which are separate organizations. The jobs page is for B:E staff openings, not youth jobs. Call before relying on it.",
+  "notes": "Corrected on 2026-10-07. The site loaded this time (the earlier certificate error is gone). The homepage and employment page say who is served and what coaching covers, but do not state an age range, costs or an intake process, so those are left blank or not stated. This is a coaching service rather than a paid job, so the type is the closest available. The employment page lists outside job boards and training partners (Civicorps, Oakland Private Industry Council, EASTBAY Works), which are separate organizations. The jobs page is for B:E staff openings, not youth jobs. Call before relying on it.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -6831,7 +6831,7 @@
   "what_you_do": "Start with 36 hours of unpaid Foundation Studio training, then get paid to work in an art or design studio such as painting, graphic design, photography, 3D design, animation or video.",
   "who_can_apply": "Teens enrolled in a Boston Public School, or who live in Boston (night, day, homeschool or GED programs count). You must be authorized to work in the US. No art experience needed. No age range is listed.",
   "paid_type": "paid",
-  "pay_detail": "Paid after training. The rate is not stated on the page. The first 36 Foundation Studio hours are unpaid.",
+  "pay_detail": "Rate not posted. Paid work starts after the first 36 Foundation Studio hours, which are unpaid.",
   "season": "year-round",
   "duration": "School year: Tue to Thu, 3:00 to 6:00 p.m. Summer: Mon to Thu, 11:00 a.m. to 5:15 p.m.",
   "status": "rolling",
@@ -7022,7 +7022,7 @@
   "grades": null,
   "who_can_apply": "Teen members of Boys & Girls Clubs of Boston, which serves ages 6 to 18 at clubs in Boston and Chelsea. The page gives no age rule for the workforce program itself.",
   "paid_type": "paid",
-  "pay_detail": "The page says the internships are paid but gives no pay rate. The Clubs report about 500 teen jobs and internships a year.",
+  "pay_detail": "Rate not posted. The page says the internships are paid. The Clubs report about 500 teen jobs and internships a year.",
   "season": "year-round",
   "duration": "Not stated",
   "status": "unconfirmed",
@@ -8073,7 +8073,7 @@
   "season": "summer",
   "duration": "4 weeks, June 26 to July 24, 2027, residential",
   "status": "opens-soon",
-  "deadline_text": "Application opens Oct 16 in SlideRoom (the page says summer 2027 and does not print the year). Deadline Dec 21. Teacher forms due Dec 23, and late forms are accepted until Jan 20 but delay decisions. Decisions by email mid to late March. Admitted students confirm in early April.",
+  "deadline_text": "Applications for summer 2027 open October 16 in SlideRoom. Deadline Dec 21, 2026. Teacher forms due Dec 23, and late forms are accepted until Jan 20 but delay decisions. Decisions by email mid to late March. Admitted students confirm in early April.",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Online SlideRoom application: three personal essays, and online forms from one math teacher and one science teacher.",
   "url": "https://wtp.mit.edu/application/",
@@ -9017,8 +9017,8 @@
   ],
   "what_you_do": "Cadets fly, learn to lead, hike, camp and get in shape. This squadron has members aged 12 and older. It welcomes people who like search and rescue, flying in Cessna aircraft and cyber security.",
   "who_can_apply": "Teens ages 12 to 18 (the Virginia Wing page says to be at least 12 and not yet 19, and a U.S. citizen or lawful permanent resident). The squadron has both teen and adult members.",
-  "paid_type": "unpaid",
-  "pay_detail": "Annual cadet dues are $45 for Virginia in CAP's dues table, which also says national dues went up $10 for FY27. Uniform costs are not stated on the program pages.",
+  "paid_type": "fee-based",
+  "pay_detail": "Not a job. Annual cadet dues are $45 for Virginia in CAP's dues table, which also says national dues went up $10 for FY27. Uniform costs are not stated on the program pages.",
   "season": "year-round",
   "duration": "Weekly meetings, Thursday nights 6:30 to 9:00",
   "status": "rolling",
@@ -10552,7 +10552,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-10",
   "needs_work_permit": null,
-  "deadline_iso": null,
+  "deadline_iso": "2026-11-01",
   "id": "champaign-illinois-discover-architecture",
   "name": "Discover Architecture",
   "org": "School of Architecture, University of Illinois Urbana-Champaign",
@@ -14108,7 +14108,7 @@
   "min_age": 16,
   "max_age": 24,
   "grades": null,
-  "who_can_apply": "City of Chicago residents. The program covers ages 14 to 24, but most summer jobs are for ages 16 to 24 (14 and 15 year olds: see Chicagobility). Under 18 needs a parent or guardian consent form if offered a job.",
+  "who_can_apply": "City of Chicago residents. The program covers ages 14 to 24, but most summer jobs are for ages 16 to 24 (14 and 15 year olds: see Chicagobility). Under 18 needs a parent or guardian consent form if offered a job. The youngest age in the whole program is 14, but most summer jobs are for 16 and up.",
   "paid_type": "paid",
   "pay_detail": "Paid. The pay rate is set by each partner and is not stated on the program pages. Most summer jobs run 20 to 25 hours a week.",
   "season": "summer",
@@ -15190,15 +15190,15 @@
   "what_you_do": "Attend a free day camp. Learn cybersecurity, software development, game development and data and cloud technologies. Hear from IT leaders. Build a team project with a college student mentor.",
   "min_age": null,
   "max_age": null,
-  "grades": null,
-  "who_can_apply": "High school students who like technology. The camp page does not state a grade range.",
+  "grades": "9 to 12",
+  "who_can_apply": "Rising 9th graders through rising 12th graders who like technology. The camp FAQ page gives this grade range.",
   "paid_type": "unpaid",
   "pay_detail": "Free to attend. A light breakfast and lunch are provided each day. No pay.",
   "season": "summer",
   "duration": "June 1 to June 18, Monday to Friday, 10 a.m. to 4 p.m. The page does not state a year and calls it a one three-week day camp.",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "The camp page has a Registration is Now Open notice for June 1 to 18, Monday to Friday. Spots are first come, first served. The page shows no year and no closing date, so a teen cannot tell which summer it means. Ask the program to confirm the year before applying.",
+  "deadline_text": "The camp page has a Registration is Now Open notice for June 1 to 18, Monday to Friday. Spots are first come, first served. The page shows no year and no closing date, so a teen cannot tell which summer it means. The registration notice may be from a past year: the same page still links an Early IT Summer Camp 2023 Application. Email ucearlyit@ucmail.uc.edu to confirm the year before applying.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Use the Register Here link on the Early IT Summer Camp page. Tell them in your application if cost or lack of resources could keep you from taking part. Questions: ucearlyit@ucmail.uc.edu. There is a parent or guardian orientation on Zoom.",
@@ -15212,7 +15212,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-10",
   "priority": 2,
-  "notes": "The camp page has a Registration is Now Open notice, but it gives no closing date and no year for the June 1 to 18 dates, so the status stays closed-expect-reopen until the year is confirmed. The page says the camp is offered at no charge to students. Check the dates and status before sending a teen.",
+  "notes": "The camp page has a Registration is Now Open notice, but it gives no closing date and no year for the June 1 to 18 dates, so the status stays closed-expect-reopen until the year is confirmed. The camp FAQ page gives the grade range (rising 9th through rising 12th graders) and says the camp is free. Check the dates and status before sending a teen.",
   "verified_on_label": "Oct 10, 2026"
  },
  {
@@ -15843,7 +15843,7 @@
   "city": "College Park, MD (College Park Airport)",
   "what_you_do": "Cadets fly, learn to lead, hike, camp and get in shape. This squadron meets on Wednesday evenings at the College Park Airport.",
   "who_can_apply": "Teens ages 12 to 18, per the national Civil Air Patrol page. This is a composite squadron, which means it has both cadets and adult members.",
-  "pay_detail": "Annual cadet dues are $55 for Maryland in CAP's dues table, which also says national dues went up $10 for FY27. Uniform costs are not stated on the program pages.",
+  "pay_detail": "Not a job. Annual cadet dues are $55 for Maryland in CAP's dues table, which also says national dues went up $10 for FY27. Uniform costs are not stated on the program pages.",
   "duration": "Weekly meetings, Wednesdays 6:45 to 9:00",
   "how_to_apply": "Email the squadron commander to ask about visiting a meeting with a parent. CAP's usual steps are listed on the Virginia and North Carolina wing pages. They are to go to at least three weekly meetings. Then complete the membership application.",
   "url": "https://mdwg.cap.gov/squadrons/college-park/",
@@ -15861,7 +15861,7 @@
    "any"
   ],
   "season": "year-round",
-  "paid_type": "unpaid",
+  "paid_type": "fee-based",
   "status": "unconfirmed",
   "deadline_text": "No application deadline is stated on the squadron page. Email the commander to ask how to start.",
   "deadline_confidence": "unknown",
@@ -16936,7 +16936,7 @@
   "what_you_do": "Volunteer in central Ohio parks, for example as a naturalist, trail volunteer or on wildlife projects. Junior Volunteers at Inniswood Metro Gardens help with flowerbeds and children's programs.",
   "min_age": 11,
   "max_age": null,
-  "who_can_apply": "Most assignments are for ages 16 and up. Volunteers and Junior Volunteers ages 11 and over may help at Inniswood Metro Gardens; the Inniswood training is in March.",
+  "who_can_apply": "Most assignments are for ages 16 and up. Ages 11 to 15 can help only at Inniswood Metro Gardens, as Junior Volunteers. The Inniswood training is in March.",
   "paid_type": "unpaid",
   "pay_detail": "Unpaid volunteer",
   "season": "year-round",
@@ -17836,7 +17836,7 @@
   "duration": null,
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "priority": 2,
   "needs_work_permit": false,
   "notes": "Phone 614-882-7277, option 5. No direct application link was on the page. Lead volunteers need at least 4 to 6 hours a month and summer volunteers at least 2 hours a month.",
@@ -17857,7 +17857,7 @@
   "paid_type": "unpaid",
   "season": "year-round",
   "status": "closed-expect-reopen",
-  "deadline_text": "Summer Volunteers (ages 12 to 18, May to July) is marked not yet accepting applications. Lead Volunteers is marked currently full. The page gives no year.",
+  "deadline_text": "Summer Volunteers (ages 12 to 18, May to July) is marked not yet accepting applications. Lead Volunteers (ages 16 to 18) is marked currently full. The page gives no year. Call 614-882-7277, option 5, to ask when applications open.",
   "deadline_confidence": "unknown",
   "how_to_apply": "Read the teen volunteer rules page. Fill out an application, even if you have volunteered before. Go to an orientation before your first shift. Use the phone number in the notes for questions.",
   "url": "https://westervillelibrary.org/teen-volunteers/",
@@ -17865,7 +17865,7 @@
    "https://westervillelibrary.org/teen-volunteers/",
    "https://westervillelibrary.org/volunteer/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "grades": "Entering grades 7 to 12",
@@ -20798,7 +20798,7 @@
   "duration": "By term",
   "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "Register each term. Fall 2026 term runs Aug 24 to Dec 12, 2026; registration is still open for 8-week classes starting in October. Winter Session 2027 (Jan 4 to Feb 4, 2027) and Spring Semester 2027 (Feb 16 to Jun 12, 2027) registration opens in November 2026.",
+  "deadline_text": "Fall 2026 (Aug 24 to Dec 12, 2026): registration is still open only for 8-week classes that start in October. The page gives no exact October date, so act soon. For the full term, Winter Session 2027 (Jan 4 to Feb 4, 2027) and Spring Semester 2027 (Feb 16 to Jun 12, 2027) registration starts in November 2026.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
   "how_to_apply": "Do the Steps for Dual Enrollment each term you want to register. The steps are listed on a separate page. Call 310-660-3344 or email dualenrollment@elcamino.edu.",
@@ -21239,7 +21239,7 @@
    "https://www.endeavorhealth.org/give/volunteer",
    "https://app.betterimpact.com/Application?OrganizationGuid=1e4558b1-46c4-471f-843f-b19587ac91d3&ApplicationFormNumber=2"
   ],
-  "notes": "Hours per week and the length of service are not on the pages. Ask Volunteer Services. Background checks are only for ages 18 and up.",
+  "notes": "Hours per week and the length of service are not on the pages. Ask Volunteer Services. Background checks are only for ages 18 and up. Age 14 applies at Edward and Elmhurst hospitals; most roles are for 16 and up.",
   "verified_on_label": "Oct 9, 2026"
  },
  {
@@ -21278,7 +21278,7 @@
    "https://www.endeavorhealth.org/give/volunteer",
    "https://app.betterimpact.com/Application?OrganizationGuid=c3f0292f-1ecc-4095-8856-66df6fc0a694&ApplicationFormNumber=2"
   ],
-  "notes": "The Elmhurst application page had no hours or length details, so ask the volunteer office. Background checks are only for ages 18 and up.",
+  "notes": "The Elmhurst application page had no hours or length details, so ask the volunteer office. Background checks are only for ages 18 and up. Age 14 applies at Edward and Elmhurst hospitals; most roles are for 16 and up.",
   "verified_on_label": "Oct 9, 2026"
  },
  {
@@ -22736,7 +22736,7 @@
   "grades": "Grades 9 to 12",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "Saturdays 1 to 4 p.m., February 6 to April 24, 2027 (no sessions March 20 and 27)",
@@ -22769,7 +22769,7 @@
   "sources_fetched": [
    "https://education.fnal.gov/program/saturday-morning-quantum-in-chicago/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "opens_iso": "2026-10-05",
@@ -24143,7 +24143,7 @@
   ],
   "what_you_do": "Join a school DECA chapter to prepare for college and careers. Members go to conferences, compete in DECA's competitive events and can earn a share of scholarships. The state hosts events like a Fall Rally.",
   "who_can_apply": "Students at a Georgia school with a DECA chapter. The state page does not list grade or age rules.",
-  "paid_type": "unpaid",
+  "paid_type": "fee-based",
   "pay_detail": "Not a job. Student dues are $16 ($8 national and $8 state), per the state page.",
   "season": "school-year",
   "duration": "Membership is for one school year",
@@ -24226,7 +24226,7 @@
   ],
   "what_you_do": "Take agriculture classes at school and join FFA: leadership contests, career development events, Supervised Agricultural Experience projects, and state and national conventions.",
   "who_can_apply": "Students enrolled in agricultural education classes at a Georgia school with an ag program. The membership page says every student in those classes becomes an FFA member.",
-  "paid_type": "unpaid",
+  "paid_type": "fee-based",
   "pay_detail": "Not a job. The membership page lists a yearly affiliation fee of $9.05 per high school student ($5.05 national, $4.00 state) and $900 per chapter for middle school. The page does not say whether families pay it.",
   "season": "school-year",
   "duration": "Ongoing during the school year",
@@ -24763,7 +24763,7 @@
   "status": "opens-soon",
   "opens_iso": "2026-10-19",
   "deadline_text": "Registration opens Oct 19, 2026 for Winter 2027 (Jump Start only) and Nov 30, 2026 for Spring 2027 (Dual Enrollment and Jump Start).",
-  "deadline_iso": null,
+  "deadline_iso": "2026-10-19",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Apply at OpenCCCApply. Then send the Annual Digital Form signed by a parent and your counselor. Find classes, clear any prerequisites and register in MyGCC. Email dual@glendale.edu or call (818) 240-1000 ext. 4767.",
   "url": "https://www.glendale.edu/students/sos-outreach/high-school/index.html",
@@ -27028,7 +27028,7 @@
   "duration": "School year, ending with a state conference",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Closed: the scholarship portal closed October 1, 2026 (decisions come before November 1). Not known: whether you can still register, the conference dates and a general registration deadline are not posted on the program page. Ask your Delegation Advisor or the state office.",
+  "deadline_text": "The scholarship portal closed October 1, 2026 (decisions come before November 1). The program page does not say if you can still register, and it posts no general registration deadline or conference dates. Ask your Delegation Advisor or the state office before you count on a spot.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Get the registration link from your local Delegation Advisor. A student and a parent or guardian both sign the code of conduct. You pick a preferred role and give your State Senator and State Representative. Contact the state office if you have no delegation.",
@@ -30203,7 +30203,7 @@
   "season": "spring",
   "duration": "3 days. The listed session was March 16 to 18, 2025.",
   "status": "unconfirmed",
-  "deadline_text": "The program page is out of date. It only lists the March 16 to 18, 2025 session. Email Darren Bagley at bagleyda@msu.edu to ask about the next dates before you apply.",
+  "deadline_text": "The newest date on the program page is March 16 to 18, 2025, which is old. No newer session is listed. Email Darren Bagley at bagleyda@msu.edu to ask about the next dates before you apply.",
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Sign up through 4-H Online. Contact Darren Bagley, bagleyda@msu.edu.",
   "url": "https://spartanyouth.msu.edu/resources/0-9/4-h-capitol-experience-summit/",
@@ -30254,7 +30254,7 @@
  {
   "grades": null,
   "opens_iso": "2026-10-12",
-  "deadline_iso": null,
+  "deadline_iso": "2026-10-12",
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
@@ -30274,16 +30274,16 @@
    "social-impact"
   ],
   "what_you_do": "Help care for shelter animals: socialize dogs and cats, walk dogs, do housekeeping or laundry, greet visitors, and help at events and education programs.",
-  "min_age": 16,
+  "min_age": 8,
   "max_age": null,
-  "who_can_apply": "Ages 16 and up volunteer on their own. Ages 8 to 15 can volunteer only with a parent or guardian (21 or older) who stays with them. Everyone must attend an orientation.",
+  "who_can_apply": "Ages 8 to 15 can volunteer only with a parent or guardian (21 or older) who stays with them. Ages 16 and up volunteer on their own. Everyone must attend an orientation.",
   "paid_type": "fee-based",
   "pay_detail": "Unpaid. A one-time program fee is due at sign-up: $30 for ages 16 and up, $15 for ages 8 to 15 (covers t-shirt and badge, non-refundable).",
   "season": "year-round",
   "duration": "Ongoing shifts. Shelter volunteer hours: 12 to 7 p.m. Monday to Friday, 11 a.m. to 5 p.m. Saturday.",
   "status": "opens-soon",
   "deadline_text": "Next orientations: Nov 10 (5:30 to 7:30 p.m.) and Nov 20 (2 to 4 p.m.), 2026. Registration opens Oct 12. A Dec 8 orientation opens Nov 2.",
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Pre-register for an orientation on the shelter website and pay the fee. Then book each shift in the volunteer portal before you come in.",
   "url": "https://adoptlansing.org/get-involved/volunteer/",
   "sources_fetched": [
@@ -31315,7 +31315,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "needs_work_permit": null,
   "id": "lansing-umh-sparrow-teen-volunteer",
   "name": "UM Health-Sparrow Teen Volunteer Program",
@@ -31346,7 +31346,7 @@
   ],
   "priority": 1,
   "notes": "Expect a criminal background check, proof of MMR, varicella and Tdap immunizations (or titers), and a flu vaccine Nov to March; teens wear a provided smock apron and closed toe shoes. Volunteers must attend at least 75 percent of shifts. Free parking for active volunteers. Volunteer Services phone is on the page. Michigan's youth employment page (Youth Employment Standards Act) says the law covers employers of anyone under 18 including volunteers, so ask the program whether a work permit is needed.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "grades": "Rising 5th to 12th (Five-Day Intensive); rising 8th through college (Advanced Workshop)",
@@ -33248,7 +33248,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "grades": null,
-  "min_age": 10,
+  "min_age": 14,
   "max_age": 17,
   "id": "madison-henry-vilas-zoo-teen-volunteers",
   "name": "Henry Vilas Zoo Volunteer Program (teens 14 to 17)",
@@ -33263,7 +33263,7 @@
    "science"
   ],
   "what_you_do": "Help at the zoo in roles such as gate greeter, goat yard attendant, events and wildlife champion. Training is given.",
-  "who_can_apply": "Teens ages 14 to 17 can volunteer on their own in many roles. Ages 10 to 14 can only volunteer with a parent or guardian, and only in some roles (gate greeters, goat yard, events, wildlife champions).",
+  "who_can_apply": "Teens ages 14 to 17 can volunteer on their own in many roles. Ages 10 to 14 can only volunteer with a parent or guardian, and only in some roles (gate greeters, goat yard, events, wildlife champions). The youngest age for any role is 10, with a parent or guardian.",
   "paid_type": "unpaid",
   "pay_detail": "Unpaid. The zoo does not do last-minute school hour confirmations.",
   "season": "summer",
@@ -39817,7 +39817,7 @@
   "city": "Statewide, North Carolina (squadrons in many towns)",
   "what_you_do": "Cadets fly, learn to lead, hike, camp and get in shape. Teens meet weekly with a local squadron and can go to summer encampments and other wing events.",
   "who_can_apply": "Teens ages 12 to 18, per the national Civil Air Patrol page. Cadets join a local cadet or composite squadron, and you may join any one in the wing.",
-  "pay_detail": "Annual cadet dues are $60 for North Carolina in CAP's dues table, which also says national dues went up $10 for FY27. Uniform costs are not stated on the program pages.",
+  "pay_detail": "Not a job. Annual cadet dues are $60 for North Carolina in CAP's dues table, which also says national dues went up $10 for FY27. Uniform costs are not stated on the program pages.",
   "how_to_apply": "Fill out the interest form on the NC Wing page. Then contact a squadron and visit a meeting with your parents. Go to at least three weekly meetings. Then complete the membership application and pay dues.",
   "url": "https://ncwg.cap.gov/join/caps-teen-program/how-to-join-the-civil-air-patrol/",
   "sources_fetched": [
@@ -39833,7 +39833,7 @@
    "any"
   ],
   "season": "year-round",
-  "paid_type": "unpaid",
+  "paid_type": "fee-based",
   "duration": "Weekly squadron meetings all year",
   "status": "rolling",
   "deadline_text": "No deadline. You can join any time through a local squadron.",
@@ -39874,7 +39874,7 @@
   "status": "rolling",
   "deadline_text": "No single deadline. Each employer or program sets its own hiring.",
   "deadline_confidence": "rolling",
-  "how_to_apply": "Find a Registered Apprenticeship opportunity on the ApprenticeshipNC site and apply by contacting the program sponsor or employer. Questions: apprenticeshipnc@nccommunitycolleges.edu or 919-807-6988. The page also mentions youth apprenticeship consortia that serve high school students.",
+  "how_to_apply": "Find a Registered Apprenticeship opportunity on the ApprenticeshipNC site and contact the program sponsor or employer to apply. Questions: apprenticeshipnc@nccommunitycolleges.edu or 919-807-6988. The page also mentions youth apprenticeship consortia that serve high school students.",
   "url": "https://www.nccommunitycolleges.edu/businesses/apprenticeships/unique-pathways/youth-apprenticeships/",
   "sources_fetched": [
    "https://www.nccommunitycolleges.edu/businesses/apprenticeships/unique-pathways/youth-apprenticeships/",
@@ -41306,7 +41306,7 @@
   "apply_url": null,
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "priority": 2,
   "min_age": null,
   "max_age": null,
@@ -41328,7 +41328,7 @@
   "season": "school-year",
   "duration": "Shelvers get one 1 hour shift a week. The Teen Advisory Board meets about twice a month.",
   "status": "closed-expect-reopen",
-  "deadline_text": "Weekly volunteering registration for 2026-2027 is closed. The page says Teen Advisory Board applications open in September, at the start of each school year. Join the volunteer mailing list for new openings.",
+  "deadline_text": "Weekly volunteering registration for 2026-2027 is closed. The Teen Advisory Board note on the page is out of date (it names the 2025-2026 year) and gives no opening date; an earlier read of the page said applications open in September. Join the volunteer mailing list for new openings.",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Apply with the Teen Advisory Board form on the page. For volunteering, email the Teen Volunteer Coordinator and join the volunteer mailing list. Shelvers interview and train first.",
   "needs_work_permit": false,
@@ -41338,7 +41338,7 @@
    "https://plainsborolibrary.org/teen-advisory-board-2/"
   ],
   "notes": "Selection is not first come first served.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "id": "new-brunswick-plainsboro-township-recreation-volunteers",
@@ -42855,7 +42855,7 @@
   "grades": "High school juniors and seniors when you apply",
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "apply_url": null,
   "deadline_iso": null,
   "needs_work_permit": false,
@@ -42880,7 +42880,7 @@
   "season": "summer",
   "duration": "Seven weeks, mid-June to early August (2027 dates to be decided)",
   "status": "closed-expect-reopen",
-  "deadline_text": "Not open yet. The page says the 2027 job announcement is expected on USAJOBS in mid-October 2026, with applications due at the end of January 2027. A lower line says applications generally open Nov 1 and close in the last week of January, so the open date is not firm.",
+  "deadline_text": "Not open yet as of Oct 11. The page (updated Sept 14) says the 2027 job announcement is expected on USAJOBS in mid-October, with applications due at the end of January 2027. A lower line says applications generally open Nov 1, so the open date is not firm.",
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Watch for the SHIP job announcement on USAJOBS and follow the application page linked from the SHIP page. The page says to read the application process page for the full steps.",
   "url": "https://www.nist.gov/ship",
@@ -42889,7 +42889,7 @@
    "https://www.nist.gov/careers/student-opportunities"
   ],
   "notes": "The page lists two NIST campuses (Boulder, CO and Gaithersburg, MD); this card is for Gaithersburg. The 2026 poster session was held in Gaithersburg on Aug 6, 2026. The exact application dates for 2027 were not final on the page, so check it again in late October.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "grades": "8 to 12",
@@ -45486,10 +45486,10 @@
    "https://opportunitynetwork.org/apply/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "priority": 1,
   "notes": "Admitted Fellows must come to all days of the Summer Institute. A family member must come to an orientation. The application asks for household income. The program uses it to check the income limit. The pages do not say if a work permit is needed.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "id": "nyc-parks-lifeguard-program",
@@ -45918,7 +45918,7 @@
   "duration": "7 weeks, Mon Jun 21 to Thu Aug 5, 2027, full time (about 35 hours a week, roughly 9 a.m. to 5 p.m.).",
   "status": "opens-soon",
   "opens_iso": "2026-10-15",
-  "deadline_text": "Applications for SSRP 2027 open Oct 15, 2026. The deadline is not posted yet. The last cycle closed Fri Jan 2, 2026 (letters of recommendation due Jan 5), with Zoom interviews in March and decisions in April.",
+  "deadline_text": "Applications for SSRP 2027 open Oct 15, 2026. No deadline is posted yet. The 2026 cycle is closed. The last cycle's deadline was Friday, January 2, 2026 (letters of recommendation due Monday, January 5, 2026).",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Online application plus a letter of recommendation and a transcript (to confirm you are in high school). Selected applicants get a Zoom interview.",
@@ -45932,8 +45932,8 @@
   "priority": 2,
   "notes": "Very competitive (about 32 students a year). You must attend the entire program with no gaps. Minors cannot work with human patients. You may not use SSRP work in science competitions. The page labels its glance box SSRP 2026 but lists the 2027 dates. Contact: program administrator listed on the page, 1230 York Ave.",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on": "2026-10-10",
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "id": "nyc-sadie-nash-leadership-scholars",
@@ -47838,7 +47838,7 @@
   "season": "summer",
   "duration": "Four-month program with a four-week externship (the 2026 externship was in July)",
   "status": "unconfirmed",
-  "deadline_text": "Student sign-up dates are not on the page. The 2026 host company sign-up deadline was Mar 26, 2026 (per the 2026 host flyer).",
+  "deadline_text": "Student sign-up dates are not on the page. The newest date found is old: a March 26, 2026 deadline for host companies, not for students. Ask the Girls Inc. Programs Team how and when girls sign up.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "The page has a Contact Us link. Ask the Girls Inc. Programs Team how girls sign up.",
@@ -47877,9 +47877,9 @@
   "season": "year-round",
   "duration": "By term: fall, winter/spring and summer",
   "status": "open-now",
-  "deadline_text": "The page says Now accepting applications and consent forms for Fall 2026. High school registration for Fall 2026 begins June 4, 2026. No closing date is posted, so check the page for each new term.",
+  "deadline_text": "The page says it is accepting applications and consent forms for Fall 2026, and high school registration for Fall 2026 began June 4, 2026. It gives no Fall 2026 class start date or last day to register, so email dualenrollment@gwc.cccd.edu to ask if you can still join this term. Winter/Spring and Summer terms are also listed, with no 2027 dates posted yet.",
   "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Apply to Golden West College (new students create an Open CCC account) and write down your CCCID number. Then turn in the consent forms and get your high school's approval. Dual enrollment classes are taught at your high school, so your counselor adds you to the roster. Concurrent students use a Concurrent Enrollment Release Form and register in MyGWC. Questions: dualenrollment@gwc.cccd.edu.",
   "url": "https://www.goldenwestcollege.edu/dualenrollment/index.html",
   "sources_fetched": [
@@ -49686,7 +49686,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "id": "philadelphia-franklin-institute-stem-scholars",
   "name": "STEM Scholars, The Franklin Institute",
   "org": "The Franklin Institute",
@@ -49707,7 +49707,7 @@
   "season": "school-year",
   "duration": "Four years, grades 9 to 12; research window of 10 weeks between late June and early September",
   "status": "closed-expect-reopen",
-  "deadline_text": "Applications for the next freshman cohort are currently closed; check back for the 2027 class. FAQ says applications usually open late September or early October and are due mid-December.",
+  "deadline_text": "Applications for the next freshman cohort are closed as of Oct 11; the page says check back for the 2027 class. The FAQ says applications usually open late September or early October and are due mid-December. No 2027 dates are posted yet.",
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Online application, essay, transcript, two recommendation letters, then an interview with Youth Programs staff.",
   "needs_work_permit": null,
@@ -49718,7 +49718,7 @@
    "https://www.fi.edu/en/stem-scholars",
    "https://www.fi.edu/en/science-and-education/youth-and-community-programs"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "id": "philadelphia-independence-seaport-museum-teen-ambassadors",
@@ -51498,7 +51498,7 @@
  },
  {
   "id": "pittsburgh-kamin-science-center-teen-volunteers",
-  "name": "Teen Volunteer Program",
+  "name": "Teen Volunteer Program at Kamin Science Center",
   "org": "Kamin Science Center (formerly Carnegie Science Center)",
   "regions": [
    "pittsburgh"
@@ -51738,7 +51738,7 @@
  },
  {
   "id": "pittsburgh-national-aviary-teen-volunteers",
-  "name": "Teen Volunteer Program",
+  "name": "Teen Volunteer Program at National Aviary",
   "org": "National Aviary",
   "regions": [
    "pittsburgh"
@@ -52177,7 +52177,7 @@
  },
  {
   "id": "pittsburgh-upmc-childrens-teen-volunteer",
-  "name": "Teen Volunteer Program",
+  "name": "Teen Volunteer Program at UPMC Children's Hospital of Pittsburgh",
   "org": "UPMC Children's Hospital of Pittsburgh",
   "regions": [
    "pittsburgh"
@@ -52765,12 +52765,12 @@
   "pay_detail": "Unpaid volunteer role",
   "season": "year-round",
   "duration": "At least 1 year; one 3-hour shift a week (up to 3 shifts)",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "No dates posted. The same page says the hospital is currently only accepting adult volunteer applications, so check before applying.",
+  "deadline_text": "No dates posted. The page says the hospital is currently only accepting adult applications, so high school applications may be closed.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Use the 'Click here to apply for high school volunteer opportunities' link on the page, or call the hospital volunteer office to confirm if high school applications are open.",
+  "how_to_apply": "The page has a link to its application site for high school volunteers. Use that link only to check whether high school applications are open. The page lists no phone number or email to ask about it.",
   "needs_work_permit": false,
   "url": "https://www.pvhmc.org/patients-visitors/additional-services/volunteer-program/high-school-volunteers/",
   "apply_url": null,
@@ -52778,10 +52778,10 @@
    "https://www.pvhmc.org/patients-visitors/additional-services/volunteer-program/high-school-volunteers/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "priority": 2,
   "notes": "CONFIRM FIRST: the page offers a high school application link but also says only adult applications are being accepted right now. Scheduled Monday to Friday shifts.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "id": "pretend-city-volunteer-and-teen-programs",
@@ -53655,7 +53655,7 @@
   "min_age": null,
   "who_can_apply": "Students at Richmond SD38 schools. Sixteen trades are offered. Some are welding, wood building, electrical work, cooking, car repair, plumbing and hair styling.",
   "paid_type": "unpaid",
-  "pay_detail": "School district pays tuition for the first level (the page says this often saves $2,500 to $5,000)",
+  "pay_detail": "Unpaid. The school district pays tuition for the first level (the page says this often saves $2,500 to $5,000).",
   "season": "school-year",
   "duration": "One full program, taken in the 2027-28 school year for this intake",
   "status": "open-now",
@@ -54013,9 +54013,9 @@
   "city": "Riverside, CA",
   "type": "leadership",
   "what_you_do": "A city youth center with tutoring, SAT and college application help, FAFSA help, computer access, camps and volunteer chances. Teens in Action is the free afterschool program for 13 to 18 year olds.",
-  "min_age": 13,
+  "min_age": 14,
   "max_age": 22,
-  "who_can_apply": "The center serves ages 14 to 22. Teens in Action serves ages 13 to 18.",
+  "who_can_apply": "The center serves ages 14 to 22. Teens in Action serves ages 13 to 18. The youngest age at this site is 13, for Teens in Action.",
   "paid_type": "unpaid",
   "pay_detail": "Teens in Action is free. Costs of other programs are not stated. No pay.",
   "season": "year-round",
@@ -54652,7 +54652,7 @@
   "duration": "6 weeks (fall 2025 sessions shown)",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "The page shows only fall 2025 sessions (registration opened September 8, 2025) and posts no 2026 session. Email NNworkforce@cityofsacramento.org to ask about the next session before you apply.",
+  "deadline_text": "The page shows only the Fall/Winter 2025 session (registration opened September 8, 2025; program dates October 8 to November 13, 2025) and posts no 2026 session. Email NNworkforce@cityofsacramento.org to ask about the next session before you apply.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Register through ActiveNet using the Register Here button when a session is open. NNworkforce@cityofsacramento.org",
@@ -56317,7 +56317,7 @@
   "max_age": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "needs_work_permit": false,
   "priority": 3,
   "notes": "Health clearances include MMR, chickenpox, Tdap, TB blood test, and flu and COVID vaccine or a declination. Check the page for when high school applications reopen.",
@@ -56340,7 +56340,7 @@
   "season": "year-round",
   "duration": "At least 1 year and 100 service hours, with 75 percent attendance",
   "status": "closed-expect-reopen",
-  "deadline_text": "The high school application is closed, and the page does not say when it will reopen. The adult application reopens Oct 19.",
+  "deadline_text": "The high school application is closed, and the page does not say when it will reopen. The adult and college applications reopen Oct 19.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "When the form opens, submit it. Then go to an in-person info session at Sharp Memorial. After that there is an interview. Onboarding includes a background check and health clearances.",
@@ -56348,7 +56348,7 @@
   "sources_fetched": [
    "https://www.sharp.com/volunteers/metro"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "grades": "Grades 9 to 12",
@@ -56665,7 +56665,7 @@
   "deadline_text": "Youth Commission: recruitment is closed, no reopening date posted. Youth Advisory Council: the page has an apply button but does not say if it is open, and says some districts are unavailable or paused. No deadline posted.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "The Youth Commission is closed. For the Youth Advisory Council, fill out the District Youth Advisory Application. Some districts are paused, so ask the Youth Commission first. A Youth Commissioner contacts you within about two weeks.",
+  "how_to_apply": "The Youth Commission is closed. For the Youth Advisory Council, fill out the District Youth Advisory Application. Some districts are paused, so ask the Youth Commission first. A Youth Commissioner contacts you within about two weeks. You can also email Youthcommission@sanjoseca.gov.",
   "needs_work_permit": false,
   "url": "https://www.sjpl.org/youth-commission",
   "apply_url": "https://www.sjpl.org/youth-commission/join-your-district-youth-advisory-council/",
@@ -57858,7 +57858,7 @@
   "duration": "3 day academy (Friday evening to Sunday)",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Join the waitlist for the next academy. The site shows January 8 to 10 with no year printed. The last academy was March 13 to 15, 2026.",
+  "deadline_text": "The newest date on the site is old or unclear. It shows an academy on January 8 to 10 with no year printed, and says the most recent academy was in March 2026. Join the waitlist to hear about the next one.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Join the waitlist form on the Teen CERT website or email scctcert@gmail.com to be told when the next academy opens. Paperwork drop-off happened before the last academy.",
@@ -58343,7 +58343,7 @@
   "paid_type": "paid",
   "season": "summer",
   "status": "unconfirmed",
-  "deadline_text": "The latest job fair post is dated February 18, 2025. It lists fairs on March 19, April 16 and May 8, 2025 at the Community Recreation Center, 505 N. Springinsguth Road. No 2026 fair dates are posted. The district job board has openings listed.",
+  "deadline_text": "The newest date on the page is old. The latest job fair post is dated February 18, 2025, and lists fairs on March 19, April 16 and May 8, 2025 at the Community Recreation Center, 505 N. Springinsguth Road. No newer fair dates are posted. Ask the district or check its job board for current openings.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Go to a job fair. Or apply on the district's online job board (BambooHR). Questions: Alex Khodan, Supervisor of Aquatics, alkhodan@parkfun.com.",
@@ -58692,7 +58692,7 @@
   "min_age": 16,
   "max_age": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "id": "seattle-childrens-hospital-volunteer",
   "name": "Seattle Children's Hospital Volunteer Program",
   "org": "Seattle Children's",
@@ -58711,7 +58711,7 @@
   "season": "year-round",
   "duration": "Most shifts are 3 hours on the same day and time every week; at least 6 months in a row (check each role)",
   "status": "closed-expect-reopen",
-  "deadline_text": "The volunteer portal says applications open each March, July and November, annually, and remain open until positions are filled. None of those windows is open today (October 2026); the next one is November 2026.",
+  "deadline_text": "The volunteer portal says applications open each March, July and November and stay open until positions are filled. None of those windows is open as of Oct 11; the next one is November.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Apply online during an open period (you have one hour to finish), complete online training and forms within 2 weeks, do a 1-hour virtual group interview, then accept a placement. Onboarding includes a Washington State background check, an in-person health screening and a 90-minute orientation. Email VolunteerServices@seattlechildrens.org or call 206-987-4655.",
@@ -58725,7 +58725,7 @@
   ],
   "priority": 2,
   "notes": "The youth service projects page (for ages under 16, such as donation drives or junior guilds) still carries a COVID-era notice, so it may be out of date. Nearly all shifts are weekdays starting between 9am and 2pm. Washington L&I says its child labor rules 'only apply to minor employees, not volunteers.'",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "id": "seattle-childrens-research-training-program-high-school",
@@ -58956,7 +58956,7 @@
   "duration": "Weekly meetings through the school year",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Dates for this year are not posted on the program pages. The only call for applications found was for 2023-24 (deadline Oct 10, 2023), so check the Henry teen page.",
+  "deadline_text": "The newest date on the page is old. The only call for applications listed is for 2023-24, with a deadline of October 10, 2023. No newer call is posted. Ask the museum if a new call is open.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "The only call for applications found is from 2023-24, so check the Henry teen page or ask the museum if a new call is open. Submit the Call for Applications form when it is open.",
@@ -60153,7 +60153,7 @@
   "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-10-09",
   "needs_work_permit": false,
   "deadline_iso": null,
   "min_age": null,
@@ -60178,7 +60178,7 @@
   "paid_type": "fee-based",
   "season": "school-year",
   "status": "open-now",
-  "deadline_text": "Delegations start meeting Oct 19, 2026 (some later, up to Nov 4). Open houses are listed for Oct 8 and Oct 14. The page prints no year for the open houses, so they may have passed. No sign-up deadline stated.",
+  "deadline_text": "Fill out the interest form before your branch's first meeting. Delegations start meeting Oct 19 to Oct 22, 2026 (Bellevue Oct 20, Coal Creek Oct 19, Dale Turner Oct 22, East Madison Oct 21, Northshore Oct 21, Snoqualmie Valley Oct 22), and Sammamish starts Nov 4. A free open house is Wednesday, Oct 14, 6:00 to 7:30 pm at the East Madison YMCA, no RSVP. The Oct 8 open house has passed. No sign-up deadline is stated.",
   "deadline_confidence": "unknown",
   "how_to_apply": "Fill out the interest form on the page and the Y connects you to the closest delegation. Email ygseattleyag@seattleymca.org with questions.",
   "url": "https://www.seattleymca.org/programs/youthprograms/youth-government",
@@ -60186,7 +60186,7 @@
    "https://www.seattleymca.org/programs/youthprograms/youth-government"
   ],
   "notes": "The page also describes Mock Trial for grades 6 to 12, but no branch-based Mock Trial teams are offered in 2026-27.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Oct 9, 2026"
  },
  {
   "id": "seattle-youth-commission",
@@ -60410,7 +60410,7 @@
   "grades": "Grades 9 to 12",
   "who_can_apply": "Any current high school student in grades 9 to 12. Preference goes to students in Breakthrough now. It also goes to people who are or were Breakthrough volunteers.",
   "paid_type": "paid",
-  "pay_detail": "Paid through San Francisco's Opportunities for All program (rate not posted on the page). Some hours also count toward school volunteer requirements.",
+  "pay_detail": "Rate not posted. Paid through San Francisco's Opportunities for All program. Some hours also count toward school volunteer requirements.",
   "season": "summer",
   "duration": "Summer 2026 ran orientation June 15 to 18, then June 22 to July 31, 2026, about 6 weeks",
   "status": "closed-expect-reopen",
@@ -60661,7 +60661,7 @@
   "duration": "Saturdays 9 a.m. to 1 p.m., following the SFUSD calendar. A 2025 news article said 15 weeks each fall.",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Not stated on the academy's site. A 2025 news article reported an Aug 11, 2025 deadline for the fall class.",
+  "deadline_text": "The academy's site shows no class dates or deadline. The newest deadline found is old: a news article from 2025 reported an Aug 11, 2025 deadline for the fall class. Ask the academy if applications are open.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Use the Apply page on the academy's website.",
@@ -60705,7 +60705,7 @@
   "duration": "8 to 10 weeks, 1.5 to 3 hours per week; season starts early September, 5K on Nov 14, 2026",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "The fall 2026 Junior Coach application was due Aug 26, 2026 (season started early September; 5K on Nov 14, 2026). No spring dates; a banner says Spring 2027 site registration is open.",
+  "deadline_text": "The fall Junior Coach application was due Aug 26 (season started early September; 5K on Nov 14, 2026). The page lists no spring Junior Coach dates. A banner about Spring 2027 is for site registration, not Junior Coach applications.",
   "deadline_iso": null,
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Complete the Junior Coach application on the Girls on the Run Bay Area site. Email admin@gotrbayarea.org or call (415) 863-8942 to ask about late spots or the next season.",
@@ -60717,10 +60717,10 @@
    "https://www.sf.gov/opportunities-for-youth-ages-14-24"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-10-10",
   "priority": 2,
   "notes": "The Oct 12, 2026 date on the sf.gov listing is for adult coaches (18 and up), not Junior Coaches. Teams meet at least once a week.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "id": "sf-mission-bit",
@@ -62343,7 +62343,7 @@
   "apply_url": null,
   "opens_iso": "2026-10-20",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "needs_work_permit": null,
   "max_age": null,
   "min_age": null,
@@ -62366,8 +62366,8 @@
   "paid_type": "not-stated",
   "season": "year-round",
   "status": "opens-soon",
-  "deadline_text": "New student applications open October 20, 2026. Deadline is in January 2027 (no day stated). Information session in December.",
-  "deadline_iso": null,
+  "deadline_text": "New student applications open October 20, 2026. Materials are due in January (the page gives no day or year). Information session in December.",
+  "deadline_iso": "2026-10-20",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Print the form for your grade, add the latest report card, End of Grade scores, a teacher recommendation and family questions, and drop it at the W.G. Pearson Center, 1200 Spaulding Street, Monday to Thursday 9 AM to 6 PM. Chosen by lottery.",
   "url": "https://studentudurham.org/enroll/",
@@ -62376,7 +62376,7 @@
   "sources_fetched": [
    "https://studentudurham.org/enroll/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "id": "sugar-grove-library-volunteens",
@@ -64266,7 +64266,7 @@
   "season": "year-round",
   "duration": "Monthly meetings in the school year plus 3 weeks in summer (2026 dates are not on the page)",
   "status": "closed-expect-reopen",
-  "deadline_text": "Fall 2026 applications are closed (the deadline was April 19). The next application opens in early fall; no date posted. Online info sessions Oct 8, Nov 5, Dec 3, 2026 and Jan 7, Feb 4, Mar 4, Apr 8, 2027 (RSVP required).",
+  "deadline_text": "Fall 2026 applications are closed (the deadline was April 19). The page says Fall 2027 applications open in early fall; no date posted yet. Online info sessions Nov 5, Dec 3, 2026 and Jan 7, Feb 4, Mar 4, Apr 8, 2027 (RSVP required).",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Send the online application, a one page essay, transcripts and the FAFSA (Dunwoody code 004641). You also have an interview with staff. Email p2c@dunwoody.edu.",
@@ -64427,8 +64427,8 @@
   "duration": "1 week, July 12 to 16, 2027, 9 am to 5 pm",
   "status": "opens-soon",
   "opens_iso": "2026-10-26",
-  "deadline_text": "Registration opens Monday, Oct 26, 2026. Scholarship application due March 30, 2027.",
-  "deadline_iso": null,
+  "deadline_text": "Registration opens Monday, Oct 26, 2026. Scholarship application due March 30, 2027 (supporting documents due April 15, 2027).",
+  "deadline_iso": "2026-10-26",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Use the Apply or Request Info links on the camp page. For a scholarship, show proof of SNAP, TANF or FDPIR benefits (or tax forms) and proof of at least a C average in science.",
   "needs_work_permit": null,
@@ -65494,7 +65494,7 @@
   "season": "school-year",
   "duration": "January of 10th grade to December of 12th grade",
   "status": "closed-expect-reopen",
-  "deadline_text": "Applications open the first week of November and close the first week of December. The latest cycle closed Monday, Dec. 1; decisions by Dec. 19, 2026. No 2027 dates are posted.",
+  "deadline_text": "Closed. The page says the latest application closed Monday, Dec. 1, with decisions by Dec. 19, 2026. The usual pattern is that applications open the first week of November and close the first week of December. No dates are posted for the next round.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Fill out the online application. It needs a note from a STEM teacher or counselor, personal essays, your GPA and a list of your courses.",
@@ -65655,7 +65655,7 @@
   "duration": "10 weeks (2025 cohort: Mar 18 to May 22)",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "2026-27 cohort not confirmed. Last known cohort ran Mar 18 to May 22, 2025.",
+  "deadline_text": "The newest date found is old. The news article covers a cohort that ran Mar 18 to May 22, 2025, and no 2026-27 cohort is posted. Ask your school's CTE teacher or the internship specialist if it is running.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Ask your school's CTE teacher or the DJUSD Internship Specialist (Alexha Contreras, 530-757-5400 ext 170). The DJUSD list shows an internship in the spring. It is at the UC Davis Center for Valley Fever.",
@@ -67616,7 +67616,7 @@
   "city": "Statewide, Virginia (squadrons from Winchester to Virginia Beach)",
   "what_you_do": "Cadets fly, learn to lead, hike, camp and get in shape. Teens meet weekly with a local squadron and can go to the wing's summer encampment.",
   "who_can_apply": "Be at least 12 and not yet 19. Be a U.S. citizen or a lawful permanent resident (National Headquarters may waive this for some lawfully admitted noncitizens).",
-  "pay_detail": "Annual cadet dues are $45 for Virginia in CAP's dues table, which also says national dues went up $10 for FY27. Uniform costs are not stated on the program pages.",
+  "pay_detail": "Not a job. Annual cadet dues are $45 for Virginia in CAP's dues table, which also says national dues went up $10 for FY27. Uniform costs are not stated on the program pages.",
   "how_to_apply": "Use the unit locator to find a cadet or composite squadron. Visit a meeting with your parents. Go to at least three weekly meetings. Then complete the application. Or apply online if your squadron says you can.",
   "url": "https://vawg.cap.gov/join/become-a-cadet-ages-12-18/",
   "sources_fetched": [
@@ -67631,7 +67631,7 @@
    "any"
   ],
   "season": "year-round",
-  "paid_type": "unpaid",
+  "paid_type": "fee-based",
   "duration": "Weekly squadron meetings all year",
   "status": "rolling",
   "deadline_text": "No deadline. You can join any time through a local squadron.",
@@ -67746,7 +67746,7 @@
   "season": "school-year",
   "duration": "Thursdays 4 to 7 PM, October 15, 2026 to February 11, 2027",
   "status": "open-now",
-  "deadline_text": "Registration for fall 2026 is open (no closing date stated). The scholarship deadline was September 15, 2026.",
+  "deadline_text": "Registration for fall 2026 is open as of Oct 10, 2026, with no closing date stated. The program starts Oct 15, 2026. The scholarship deadline was September 15, 2026.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Apply through the Emily Carr University Continuing Studies website (Apply Now link on the page). Questions: teens@ecuad.ca.",
@@ -68096,7 +68096,7 @@
   "apply_url": null,
   "grades": null,
   "min_age": 12,
-  "max_age": null,
+  "max_age": 17,
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "id": "vancouver-stanley-park-ecology-youth-volunteer",
@@ -68438,7 +68438,7 @@
   "status": "unconfirmed",
   "deadline_text": "2027 dates and deadline not found on the program pages. Ask your school counselor.",
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "The application starts at the local school district level. Forms are on the Virginia Department of Education Summer Residential Governor's School page.",
+  "how_to_apply": "The application starts at the local school district level. Forms are on the Virginia Department of Education Summer Residential Governor's School page. You can also email MHSgovschool@radford.edu.",
   "url": "https://www.radford.edu/news/2026/governors-school-mhs-26.html",
   "sources_fetched": [
    "https://www.radford.edu/news/2026/governors-school-mhs-26.html",
@@ -68918,7 +68918,7 @@
   "season": "year-round",
   "duration": "Minimum 6 months, one day a week on a regular set day and time",
   "status": "opens-soon",
-  "deadline_text": "Applications open for only about 24 to 48 hours. The page tells students to check on the 15th of October, December, February, April, June and August. The next check date is October 15, 2026. Both applications were listed as closed on 2026-10-09.",
+  "deadline_text": "Applications open for only about 24 to 48 hours. The page says the next application check date is October 15, 2026, and to check on the 15th of October, December, February, April, June and August. On 2026-10-10 the page showed both campuses as CURRENT STATUS: CLOSED.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Review the current junior-eligible openings, then submit the online application for one campus during an open window. Selected students interview, give two references, finish medical screenings and attend orientation.",
@@ -69235,7 +69235,7 @@
   "status": "opens-soon",
   "opens_iso": "2026-11-01",
   "deadline_text": "Applications for the 2027 session open Nov 1, 2026. No closing date is posted.",
-  "deadline_iso": null,
+  "deadline_iso": "2026-11-01",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Apply online when applications open on the Page Program page. Pick the weeks you can do with care. Senate contact: SenatePageProgram@leg.wa.gov, 360-786-7498. House contact: 360-786-7889.",
   "needs_work_permit": true,
@@ -69246,10 +69246,10 @@
    "https://leg.wa.gov/learn-and-participate/civic-education-programs/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "priority": 1,
   "notes": "The page lists no closing date, so apply soon after Nov 1. Check the Page Program page for the current application link. Paid work for people under 18 in Washington needs a parent and school authorization form (the employer holds the Minor Work Permit). See permit.html?state=wa for the exact permit and steps.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "grades": null,
@@ -69971,7 +69971,7 @@
   "grades": "Teens in grades 9 to 12. Kids ages 11 to 13 may apply as library helpers with a parent's approval.",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-10-09",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "School year positions, plus summer positions that run June to August",
@@ -69988,22 +69988,22 @@
    "arts-media"
   ],
   "what_you_do": "Help with youth programs and prepare program materials. Write book reviews and make social media posts. In summer, work the Summer Reading Club booth or the Studio maker space. You help patrons with arts, crafts and tech.",
-  "min_age": null,
+  "min_age": 11,
   "max_age": null,
-  "who_can_apply": "The program is for teens in grades 9 to 12. Kids ages 11 to 13 can apply to serve as library helpers for certain youth programs with parent or guardian approval.",
+  "who_can_apply": "Teens in grades 9 to 12 can join the teen program. Kids ages 11 to 13 can apply to be library helpers for certain youth programs, with parent or guardian approval.",
   "paid_type": "unpaid",
   "season": "year-round",
   "status": "open-now",
-  "deadline_text": "Applications for school year teen volunteers were open when read (October 2026). Summer 2026 applications closed for the season. 2027 summer dates are not posted yet.",
+  "deadline_text": "The page says applications for school year teen volunteers are now open, with no closing date stated. Summer 2026 applications closed for the season. 2027 summer dates are not posted yet.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Summer was closed as of 2026-10-10. School year applications are open. Go to the volunteering page. Fill out the volunteer form there. If you have a question, write to teenvolunteers@wilmettelibrary.info.",
+  "how_to_apply": "Summer 2026 applications are closed for the season. School year applications are open. Go to the volunteering page. Fill out the volunteer form there. If you have a question, write to teenvolunteers@wilmettelibrary.info.",
   "url": "https://www.wilmettelibrary.info/about-us/volunteering",
   "notes": "Summer jobs run June to August. Krista Hutley is the teen librarian. Eti Berland is the school engagement librarian. They are the teen volunteer coordinators. The Studio program has its own info sheet.",
   "sources_fetched": [
    "https://www.wilmettelibrary.info/about-us/volunteering"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Oct 9, 2026"
  },
  {
   "id": "wisconsin-badger-boys-state",
@@ -70274,7 +70274,7 @@
   "min_age": 12,
   "max_age": 18,
   "grades": null,
-  "who_can_apply": "The Wisconsin Wing site labels the cadet program as ages 12 to 19. The national CAP cadet page says between 12 and 18. The interest form lists grades 6 through 12 and high school graduates.",
+  "who_can_apply": "The Wisconsin Wing site labels the cadet program as ages 12 to 19. The national CAP cadet page says between 12 and 18. This guide uses the national ages, 12 to 18, so ask the squadron if you are 19. The interest form lists grades 6 through 12 and high school graduates.",
   "paid_type": "unpaid",
   "pay_detail": "Dues and fees are not stated on the program pages. Ask the squadron.",
   "season": "year-round",
@@ -71529,7 +71529,7 @@
   "priority": 3,
   "needs_work_permit": false,
   "duration": "Yearly award",
-  "pay_detail": "One $2,000 scholarship each year",
+  "pay_detail": "Unpaid. The $2,000 scholarship each year is an award, not wages.",
   "name": "Youth Leadership Award and Scholarship",
   "org": "YWCA Elgin",
   "regions": [

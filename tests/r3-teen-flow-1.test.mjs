@@ -61,10 +61,10 @@ test("style.css: the phone (max-width 40rem) block makes .top position static", 
   assert.ok(positions.includes("static"), `expected .top { position: static } on phones, found: ${positions.join(", ") || "none"}`);
 });
 
-test("style.css: .top stays sticky on desktop (outside any media query)", () => {
-  const desktop = RULES.filter((r) => r.media === null && selectorsOf(r).includes(".top"));
+test("style.css: .top stays sticky on tall desktop screens (min-width and min-height media block)", () => {
+  const desktop = RULES.filter((r) => r.media && /min-width/.test(r.media) && /min-height/.test(r.media) && selectorsOf(r).includes(".top"));
   const positions = desktop.map((r) => declaration(r.body, "position"));
-  assert.ok(positions.includes("sticky"), `expected a top-level .top { position: sticky }, found: ${positions.join(", ") || "none"}`);
+  assert.ok(positions.includes("sticky"), `expected a .top { position: sticky } on tall desktop screens, found: ${positions.join(", ") || "none"}`);
 });
 
 // Convert a CSS length such as "5rem" to rem (px assumed 16 per rem). Returns NaN for anything else.
