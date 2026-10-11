@@ -15,7 +15,7 @@ test("ready: the checklist comes up the screen, with at most one callout above i
   const list = document.getElementById("readyList");
   assert.ok(list, "#readyList should exist");
   const before = [...document.querySelectorAll(".callout")].filter(
-    (c) => c.compareDocumentPosition(list) & document.DOCUMENT_POSITION_FOLLOWING,
+    (c) => !c.matches("details:not([open])") && c.compareDocumentPosition(list) & document.DOCUMENT_POSITION_FOLLOWING,
   );
   assert.ok(before.length <= 1, "at most one callout should come before #readyList, found " + before.length);
 });

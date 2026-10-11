@@ -37,6 +37,7 @@ const PARAMS_BY_PAGE = {
   "permit.html": ["state", "age", "kind"],
   "paycheck.html": ["state"],
   "interview.html": ["state", "age"],
+  "jobs.html": ["age"],
   "younger.html": ["state"],
   "states.html": ["state"],
   "calendar.html": ["m", "at", "age"],

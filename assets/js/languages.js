@@ -5,7 +5,7 @@
   var $ = function (id) { return document.getElementById(id); };
   // Splits "Native (English)" into the native part and the bracketed English part, so only the native part gets a lang span.
   var splitName = function (name) { var m = /^(.*?) \(([^()]*)\)$/.exec(name); return m ? [m[1], " (" + m[2] + ")"] : [name, ""]; };
-  fetch("data/languages.json").then(function (r) { return r.json(); }).then(function (d) {
+  G.fetchData("data/languages.json").then(function (r) { return r.json(); }).then(function (d) {
     var names = Object.create(null); // no prototype, so a code like "__proto__" is never a real entry
     var known = function (c) { return Object.prototype.hasOwnProperty.call(names, c); };
     d.languages.forEach(function (l) {
@@ -29,8 +29,11 @@
       $("lCount").textContent = rows.length + " official page" + (rows.length === 1 ? "" : "s") + (lang && known(lang) ? " in " + names[lang] : "") + (st ? " for " + st : "");
       $("lList").innerHTML = rows.length ? rows.map(function (r) {
         var hl = r.lang.length ? ' hreflang="' + G.esc(r.lang[0]) + '"' : "";
+        /* The name says the page title and languages, so each link is different to a screen reader and voice control */
+        var langNames = r.lang.map(function (c) { return known(c) ? names[c] : c; });
+        var who = r.title + (langNames.length ? ", " + langNames.join(", ") : "");
         return '<li class="card"><span class="tag ghost">' + G.esc(r.state) + "</span> " + r.lang.map(chip).join(" ") +
-          "<h3 style=\"margin-top:.6rem;\">" + G.esc(r.title) + "</h3><p>" + G.esc(r.covers) + '</p><p class="row"><a class="btn sm" href="' + G.esc(r.url) + '" target="_blank" rel="noopener"' + hl + '>Open the official page</a> <span class="small muted">' + G.esc(r.from) + "</span></p></li>";
+          "<h3 style=\"margin-top:.6rem;\">" + G.esc(r.title) + "</h3><p>" + G.esc(r.covers) + '</p><p class="row"><a class="btn sm" href="' + G.esc(r.url) + '" target="_blank" rel="noopener"' + hl + ' aria-label="' + G.esc("Open the official page for " + who) + '">Open the official page</a> <span class="small muted">' + G.esc(r.from) + "</span></p></li>";
       }).join("") : '<li class="card"><p>Nothing in that language for that place yet. Try "All places", or see the list below of what we could not find.</p></li>';
     }
     ["lLang", "lState"].forEach(function (id) { $(id).addEventListener("change", paint); });

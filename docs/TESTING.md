@@ -8,11 +8,15 @@ Every change goes through the same loop: build, test, deploy, check the live sit
 | `tools/validate.py` | A program file with a missing field, a bad date, a dash character, or a contradiction (for example a deadline with no confirmation) | `python3 tools/validate.py` |
 | Python tests | The data tools, plus the docs and workflow files | `python3 -m unittest discover -s tests -v` |
 | `tests/lib.test.mjs` | The filter, date and plan logic, with no browser | `node --test tests/*.test.mjs` |
+| `tests/r3-a11y-perf-14-find-gaps-lazy.test.mjs` | Find page: `data/gaps.json` is not requested until a place or hub is chosen, is requested once by the versioned URL, and a failed request leaves the cards up with no console error |
+| `tests/r1-a11y-perf-2-versioned-data.test.mjs` | A data file requested without the build version (`?v=`), or with cache no-cache, on Home, Programs, Calendar or Ages 12 to 14 | `node --test tests/r1-a11y-perf-2-versioned-data.test.mjs` |
 | Speed numbers | How long search, sort, place counts and loading the data take. Run it before and after a change to compare; CI fails only if a median goes over a loose ceiling (`tests/r1-perf-scale-8.test.mjs`) | `node tools/bench-matches.mjs` |
 | `tests/*.dom.test.mjs` | Real pages loaded in jsdom with their real scripts: click, type, and check what appears | `npm ci` once, then `node --test tests/*.test.mjs` |
 | Rebuild and diff | Someone edited a generated page by hand or forgot to rebuild | `python3 tools/build_data.py && python3 tools/build.py && git status` |
 | `tools/hygiene.py` | Soft data problems that need a person's eye: open cards whose page printed no year, rolling or open cards that say full or closed, odd age limits, and home-page links when a deeper page was read. Read only, prints a checklist, never fails CI | `python3 tools/hygiene.py` |
 | `tests/r2-a11y-perf-11.test.mjs` | The Home picker loads the small `data/entries-blurb.json` (id, what_you_do, deadline_text) for its four cards and never the 1.5 MB lite file | `node --test tests/r2-a11y-perf-11.test.mjs` |
+| `tests/r3-a11y-perf-9-interview-independent-load.test.mjs` | The Resume interview tips load from `interview.json` alone: if `permits.json` fails or is slow, the tips still show and the hours checker says the state rules could not load | `node --test tests/r3-a11y-perf-9-interview-independent-load.test.mjs` |
+| `tests/r3-a11y-perf-15-first-load-data-inventory.test.mjs` | Every page's first-load `data/` requests match an in-file table (page, paths, byte ceiling, reason). A new fetch, a dropped fetch, or a page over its ceiling fails until the table is reviewed | `node --test tests/r3-a11y-perf-15-first-load-data-inventory.test.mjs` |
 | Dash scan | An em dash or en dash anywhere in the text | see `ci.yml` |
 
 ## Scheduled checks

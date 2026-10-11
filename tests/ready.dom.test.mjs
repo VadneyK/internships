@@ -18,6 +18,7 @@ test("ready: checking items updates the count, is remembered, and Start over cle
   assert.equal(a.document.getElementById("readySum").textContent, "2 of 8 done");
   const b = await loadPage("ready.html", { storage: { ready: { job: true, docs: true } } });
   assert.equal(b.document.getElementById("readySum").textContent, "2 of 8 done");
+  b.window.confirm = () => true;
   b.document.getElementById("readyReset").click();
   assert.equal(b.document.getElementById("readySum").textContent, "0 of 8 done");
 });

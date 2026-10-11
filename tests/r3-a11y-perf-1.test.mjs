@@ -25,7 +25,8 @@ test("ready: toggling a checkbox keeps focus on it and announces the count", asy
 });
 
 test("ready: Start over unchecks everything and keeps focus on the button", async () => {
-  const { document } = await loadPage("ready.html", { storage: { ready: { job: true, docs: true } } });
+  const { window, document } = await loadPage("ready.html", { storage: { ready: { job: true, docs: true } } });
+  window.confirm = () => true;
   const reset = document.getElementById("readyReset");
   reset.focus(); reset.click();
   assert.ok([...document.querySelectorAll("#readyList input")].every((b) => !b.checked));

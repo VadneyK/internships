@@ -40,3 +40,22 @@ test("jobs: under 14 gets the federal rule and the ages 12 to 14 page, not a lis
   assert.ok(document.querySelector('#jOut a[href="younger.html"]'));
   assert.equal(document.querySelectorAll("#jRules .card").length, d.rules.length);
 });
+
+test("employers.json: an age_note that says some jobs only, filled, or old needs a caveat", () => {
+  const re = /filled|waitlist|has already ended|already ended|may be out of date|posting is from|dated|Many seasonal roles begin|many seasonal roles begin/i;
+  for (const e of d.employers) {
+    const old = /\b(19\d\d|20(0\d|1\d|2[0-5]))\b/.test(e.age_note);
+    if (re.test(e.age_note) || old) assert.ok(e.caveat && e.caveat.trim(), e.id + " needs a caveat");
+    if (e.caveat) assert.doesNotMatch(e.caveat, /[\u2013\u2014]/, e.id);
+  }
+});
+
+test("jobs: a caveat shows as a second tag on the card", async () => {
+  const { window, document } = await loadPage("jobs.html"); await tick(150);
+  type(window, document.getElementById("jAge"), "16");
+  const cp = d.employers.find((e) => e.id === "cedar-point");
+  const card = [...document.querySelectorAll("#jOut .card")].find((c) => c.querySelector("h3").textContent === cp.name);
+  assert.ok(card, "card shown");
+  assert.equal(card.querySelector(".tag.caveat").textContent, cp.caveat);
+  assert.match(card.querySelector(".tag.y").textContent, /Starts at 14/);
+});

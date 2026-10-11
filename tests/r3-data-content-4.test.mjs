@@ -1,21 +1,22 @@
-import test from 'node:test';
-import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 
-const want = {
-  'ann-arbor-food-gatherers-volunteer': [8, null],
-  'madison-childrens-museum-volunteers': [8, null],
-  'madison-henry-vilas-zoo-teen-volunteers': [10, 17],
-  'ann-arbor-summer-festival-volunteer': [12, null],
-  'evanston-aspire-careers-in-healthcare': [17, null],
-  'new-brunswick-free-public-library-teen-volunteer': [16, 17],
-  'naacp-jmrl-library-internship-scholarship': [null, null],
-  'lansing-umh-sparrow-teen-volunteer': [16, 18],
+// Ticket r3-data-content-4: cards whose pay_detail says pay is not stated are "not-stated", not "mixed".
+const entries = JSON.parse(readFileSync(new URL("../data/entries.json", import.meta.url), "utf8"));
+const byId = new Map(entries.map((e) => [e.id, e]));
+
+const FIXED = {
+  "boston-museum-of-science-youth-internships": "Pay is not stated on the museum pages.",
+  "nyc-brooklyn-cbh-summer-scholars-internship": "Pay is not stated on the page. Ask CBH Education whether there is a stipend.",
+  "ousd-linked-learning-work-based-learning": "Rate not posted (checked 2026-10-07)",
 };
-for (const [id, [min, max]] of Object.entries(want)) {
-  test(`${id} ages match its text`, () => {
-    const p = JSON.parse(readFileSync(new URL(`../data/programs/${id}.json`, import.meta.url), 'utf8'));
-    assert.equal(p.min_age, min);
-    assert.equal(p.max_age, max);
-  });
-}
+
+test("r3-data-content-4: the three not-stated cards are not-stated and keep their pay_detail", () => {
+  for (const [id, text] of Object.entries(FIXED)) {
+    const e = byId.get(id);
+    assert.ok(e, id + " missing");
+    assert.equal(e.paid_type, "not-stated", id + " must be not-stated when pay is not stated");
+    assert.equal(e.pay_detail, text, id + " pay_detail changed");
+  }
+});

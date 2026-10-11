@@ -21,8 +21,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=934703b1">
-<link rel="stylesheet" href="assets/css/style.css?v=934703b1">
+<link rel="stylesheet" href="assets/css/fonts.css?v=0eec40f9">
+<link rel="stylesheet" href="assets/css/style.css?v=0eec40f9">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -74,9 +74,10 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <h2 id="hClose" hidden>Deadlines this month</h2>
     <ul class="langlist" id="cClose" style="list-style:none;padding:0;display:grid;gap:1rem;"></ul>
     <h2 id="hOpen" hidden>Applications open</h2>
+    <p class="small muted" id="cOpenNote">Some of these months come from the last cycle. Check the program's own page for this year.</p>
     <ul class="langlist" id="cOpen" style="list-style:none;padding:0;display:grid;gap:1rem;"></ul>
-    <div class="card" id="cNone" hidden><p>Nothing found for that month. Many programs do not state their months, so also check <a id="cNoneAnytime" href="find.html?when=anytime">programs you can apply to anytime</a>.</p></div>
-    <p class="small muted" id="calNext">Next: <a href="playbook.html">Ask someone who works there</a>, check <a href="permit.html">the work permit finder</a>, or see <a href="younger.html">options for younger teens</a>.</p>
+    <div class="card" id="cNone" hidden><p>Nothing found for that month. Many programs do not state their months, so also check <a id="cNoneAnytime" href="find.html?when=anytime">programs you can apply to anytime</a>.</p><p>Want a regular job instead? <a href="jobs.html">See jobs that hire teens</a></p></div>
+    <p class="small muted" id="calNext">Next: <a href="playbook.html">Ask someone who works there</a>, check <a href="permit.html">the work permit finder</a>, or see <a href="younger.html">options for younger teens</a>. Want a regular job instead? See <a href="jobs.html">jobs that hire teens</a>.</p>
   </div>
 </section>
 
@@ -117,7 +118,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
           <li><a href="languages.html">Work rules in your language</a></li>
           <li><a href="insights.html">The numbers</a></li>
           <li><a href="rules.html">Work permit and pay rules</a></li>
-          <li><a href="states.html">Rules in Georgia, New York, Illinois</a></li>
+          <li><a href="states.html">Rules in other states</a></li>
           <li><a href="share.html">Share this guide (QR codes)</a></li>
           <li><a href="contribute.html">Help build this guide</a></li>
         </ul>
@@ -131,9 +132,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=934703b1"></script>
-<script src="assets/js/common.js?v=934703b1"></script>
-<script src="assets/js/calendar.js?v=934703b1"></script>
+<script src="assets/js/lib.js?v=0eec40f9"></script>
+<script src="assets/js/common.js?v=0eec40f9"></script>
+<script src="assets/js/calendar.js?v=0eec40f9"></script>
 
 </body>
 </html>

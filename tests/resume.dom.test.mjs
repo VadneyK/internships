@@ -285,6 +285,7 @@ test("resume: Clear the example removes the saved draft", async () => {
   const a = await loadPage("resume.html", { rawStorage: { resume: JSON.stringify({ rName: "Sam Kim" }) } });
   assert.equal(a.document.getElementById("rKeep").checked, true);
   assert.equal(a.document.getElementById("rName").value, "Sam Kim");
+  a.window.confirm = () => true;
   a.document.getElementById("rClear").click();
   const left = a.window.localStorage.getItem("resume");
   assert.ok(left === null || left === "" || left === "{}");

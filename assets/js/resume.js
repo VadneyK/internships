@@ -101,10 +101,19 @@
     if (KEEP.checked) saveDraft();
     else { try { localStorage.removeItem("resume"); } catch (e) {} }
   });
+  /* The form starts with an example. Asking first is only needed once the teen has changed it. */
+  var FIELDS_ALL = Array.prototype.slice.call($("rf").querySelectorAll("input[type=text], input:not([type]), input[type=email], input[type=tel], textarea"));
+  function hasOwnWork() {
+    var anyText = false, changed = false;
+    FIELDS_ALL.forEach(function (i) { if (i.value.trim()) anyText = true; if (i.value !== i.defaultValue) changed = true; });
+    return anyText && changed;
+  }
   $("rClear").addEventListener("click", function () {
+    if (hasOwnWork() && !window.confirm("Clear everything you typed and your saved draft from this device?")) return;
     $("rf").querySelectorAll("input, textarea").forEach(function (i) { i.value = ""; });
     try { localStorage.removeItem("resume"); } catch (e) {}
     render(); updateExampleNote(); $("rName").focus();
+    clearTimeout(statusTimer); $("rStatus").textContent = "Cleared.";
   });
   $("rPrint").addEventListener("click", function () { G.printOnly($("rv"), (($("rName").value || "My").replace(/[^a-z0-9]+/gi, "") || "My") + "_Resume"); });
   $("rCopy").addEventListener("click", function () { G.copy(asText()); });

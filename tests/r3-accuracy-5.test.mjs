@@ -25,3 +25,30 @@ for (const file of SOURCES) {
     assert.ok(plan.includes("more than the 12 to 15"), `${file}: the 24 teen paragraph does not flag the cap`);
   });
 }
+
+// Languages page gap wording (ticket r3-accuracy-5, languages.json).
+// The Social Security gap must not say the SSA pages were unreadable, because Get ready quotes that page.
+const LANG_TEXT = read("data/languages.json");
+const LANG = JSON.parse(LANG_TEXT);
+
+test("languages.json: no gap says Social Security pages could not be read", () => {
+  for (const gap of LANG.gaps) {
+    if (/Social Security/.test(gap)) {
+      assert.ok(!/pages could not be read/.test(gap), `gap still says pages could not be read: ${gap}`);
+    }
+  }
+  assert.ok(!LANG_TEXT.includes("pages could not be read"), "languages.json still has 'pages could not be read'");
+});
+
+test("languages.json: the Social Security gap uses the reworded line", () => {
+  const want = "We found no Social Security Administration page in these languages that we could read, so none is listed. The English card page is on the Get ready page.";
+  assert.ok(LANG.gaps.includes(want), "reworded Social Security gap line is missing");
+});
+
+test("languages.json: no Social Security link is added to the languages list", () => {
+  assert.ok(!/ssa\.gov/.test(LANG_TEXT), "languages.json must not link to ssa.gov");
+});
+
+test("ready.html still links ssa.gov/number-card/replace-card", () => {
+  assert.ok(read("src/ready.html").includes("ssa.gov/number-card/replace-card"), "src/ready.html lost the SSA replace-card link");
+});

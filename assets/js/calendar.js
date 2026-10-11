@@ -4,7 +4,7 @@
   var G = window.TIG, L = G.lib;
   var $ = function (id) { return document.getElementById(id); };
   var MN = L.MONTH_NAMES, SH = L.MONTHS;
-  Promise.all([fetch("data/calendar.json").then(function (r) { return r.json(); }), G.loadEntries("card")]).then(function (res) {
+  Promise.all([G.fetchData("data/calendar.json").then(function (r) { return r.json(); }), G.loadEntries("card")]).then(function (res) {
     var cal = res[0], all = res[1], by = {};
     all.forEach(function (e) { by[e.id] = e; });
     $("calNote").textContent = cal.note;
@@ -56,7 +56,7 @@
       });
       var rows = rowsFor(cur, place, age);
       var closing = rows.filter(function (p) { return p[0].closes === cur; }), opening = rows.filter(function (p) { return p[0].closes !== cur; });
-      $("hClose").hidden = !closing.length; $("hOpen").hidden = !opening.length; $("cNone").hidden = rows.length > 0;
+      $("hClose").hidden = !closing.length; $("hOpen").hidden = !opening.length; $("cOpenNote").hidden = !opening.length; $("cNone").hidden = rows.length > 0;
       var old = $("cNoneNext"); if (old) old.remove();
       /* The anytime link keeps the age and area, so Programs opens with the same filters. */
       var anyLink = $("cNoneAnytime");

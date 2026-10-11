@@ -7,14 +7,18 @@
   function save() { G.store.set("interview", saved); }
   function a(t, u) { return '<a href="' + G.esc(u) + '" target="_blank" rel="noopener">' + G.esc(t) + "</a>"; }
 
-  Promise.all([fetch("data/interview.json").then(function (r) { return r.json(); }), fetch("data/permits.json").then(function (r) { return r.json(); })]).then(function (res) {
-    var d = res[0], pm = res[1];
+  /* The tips need only interview.json. The weekly checker alone needs permits.json (state rules), so it loads on its own. */
+  var permP = G.fetchData("data/permits.json").then(function (r) { return r.json(); });
+  permP.catch(function () { /* handled below, or not needed if the tips fail first */ });
+  var lastText = "";
+  G.fetchData("data/interview.json").then(function (r) { return r.json(); }).then(function (d) {
     $("evidence").textContent = d.evidence + " ";
     $("evidence").insertAdjacentHTML("beforeend", a(d.evidenceSource.t, d.evidenceSource.u));
     $("appTips").innerHTML = d.app.map(function (t) { return "<li><div>" + G.esc(t) + "</div></li>"; }).join("");
     $("appSrc").innerHTML = "From " + a("Illinois workNet", "https://apps.illinoisworknet.com/ArticleViewer/Article/Index/183/AppCall=1") + " and a public library teen guide.";
 
     /* availability */
+    function initAvail(pm) {
     for (var age = 14; age <= 17; age++) $("aAge").appendChild(Object.assign(document.createElement("option"), { value: String(age), textContent: String(age) }));
     Object.keys(pm.states).forEach(function (k) { $("aState").appendChild(Object.assign(document.createElement("option"), { value: k, textContent: pm.states[k].name })); });
     var DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
@@ -43,7 +47,7 @@
     } catch (e) { /* the address bar is optional */ }
     function days() { return DAYS.map(function (n, i) { var f = document.querySelector('[data-d="' + i + '"][data-k="from"]').value, t = document.querySelector('[data-d="' + i + '"][data-k="to"]').value; return f !== "" && t !== "" ? { from: +f, to: +t } : null; }); }
     function clock(h) { return h === 12 ? "noon" : h < 12 ? h + " a.m." : h - 12 + " p.m."; }
-    var lastText = "", msg = "", YOUNG_ST = ["ca", "ga", "ny", "il"];
+    var msg = "", YOUNG_ST = ["ca", "ga", "ny", "il"];
     /* Ages 12, 13 and 18 are not in the age list. A card says why the hour check is empty. */
     function pendCard(st) {
       var hour = "The hour check covers ages 14 to 17.";
@@ -89,6 +93,11 @@
     });
     $("aCopy").addEventListener("click", function () { G.copy(lastText); });
     paintAv();
+    }
+    permP.then(initAvail).catch(function () {
+      var m = "The state rules could not load, so the hours check is not available right now. Try again later.";
+      $("aOut").innerHTML = '<p class="muted">' + m + "</p>"; $("aStatus").textContent = m;
+    });
 
     /* practice cards */
     $("qList").innerHTML = d.questions.map(function (q, i) {
@@ -156,5 +165,5 @@
         "<h3>Two questions I will ask</h3><p>1. ______________________ 2. ______________________</p><p class=\"small\">From vadneyk.github.io/internships/interview.html</p>";
       $("iPrint").hidden = false; G.printOnly($("iPrint"), "My prep sheet"); $("iPrint").hidden = true;
     });
-  }).catch(function () { $("aOut").innerHTML = '<p class="muted">The prep tools could not load. Try again.</p>'; });
+  }).catch(function () { $("aOut").innerHTML = '<p class="muted">The prep tools could not load. Try again.</p>'; $("aStatus").textContent = "The prep tools could not load. Try again."; });
 })();

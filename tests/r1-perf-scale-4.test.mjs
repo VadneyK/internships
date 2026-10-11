@@ -48,7 +48,7 @@ function oldSoon(G, L) {
     const d = fut(e), n = G.daysUntil(d), u = G.safeUrl(e.url);
     const mon = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][d.getMonth()];
     return '<li><div class="d">' + mon + " " + d.getDate() + "<small>" + (n <= 0 ? "today" : n + " days") + "</small></div><div><b>" + G.esc(e.name) + '</b> <span class="tag ' + (e.paid_type === "paid" || e.paid_type === "stipend" ? "y" : "ghost") + '">' + G.esc(G.PAID[e.paid_type] || "") + '</span><br><span class="small muted">' + G.esc(e.org || "") + " &middot; " + G.esc(e.city || "") + "</span>" +
-      (u ? ' <br><a href="' + G.esc(u) + '" target="_blank" rel="noopener">Official page</a>' : "") + "</div></li>";
+      (u ? ' <br><a href="' + G.esc(u) + '" target="_blank" rel="noopener" aria-label="' + G.esc("Official page for " + e.name + (e.org ? ", " + e.org : "")) + '">Official page</a>' : "") + "</div></li>";
   });
 }
 
@@ -69,18 +69,18 @@ function oldCards(G, L, { age, hub = "", field = "" }) {
   return { html, status, count: list.length };
 }
 
-test("r1-perf-scale-4: on load only the card file is requested, and it is far smaller than the lite file", async () => {
+test("r1-perf-scale-4: on load only the home file is requested, and it is far smaller than the lite file", async () => {
   const urls = [];
   const p = await loadPage("index.html", { now: NOW, setup: setupFetch(urls) });
   await tick(100);
   assert.deepEqual(p.errors, []);
   const data = urls.filter((u) => /\/data\/entries[^/]*\.json/.test(u) || /entries/.test(u));
   assert.equal(data.length, 1, "data requests: " + data.join(", "));
-  assert.match(data[0], /data\/entries-card\.json/);
+  assert.match(data[0], /data\/entries-home\.json/);
   assert.equal(liteUrls(urls).length, 0);
   assert.ok(!urls.some((u) => /entries\.json/.test(u)));
   const gz = (f) => zlib.gzipSync(fs.readFileSync(new URL("../data/" + f, import.meta.url)), { level: 9 }).length;
-  assert.ok(gz("entries-card.json") < gz("entries-lite.json") * 0.4, "card file is much smaller than lite");
+  assert.ok(gz("entries-home.json") < gz("entries-lite.json") * 0.4, "card file is much smaller than lite");
 });
 
 test("r1-perf-scale-4: the closing-soon list is identical to the one built from the lite file", async () => {

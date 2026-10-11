@@ -8,6 +8,7 @@
   data/entries-core.json  same ids and order, only the keys lib.js needs to match by age (tiny file for the Ages 12 to 14 page)
   data/entries-card.json  same ids and order, only the keys the Calendar and Numbers pages read (no long text)
   data/entries-stats.json  same ids and order, only the keys the Numbers page counts with (smaller than the card file)
+  data/entries-home.json  same ids and order, only the keys the Home picker reads (smaller than the card file)
   data/entries-detail.json  same ids and order, only id plus the long text (who_can_apply, how_to_apply, notes) a program has, read when a card is opened
   data/meta.json     counts and the "last checked" date shown in the footer
 
@@ -31,6 +32,11 @@ CARD_KEYS = (
 STATS_KEYS = (
     "id", "name", "paid_type", "type", "fields", "needs_work_permit", "verified", "min_age", "max_age", "status",
     "deadline_iso", "opens_iso", "regions", "season",
+)
+# Only the keys home.js, L.matches, L.sortList, L.placeCounts and L.futureDeadline read (found with a Proxy run in tests/r2-a11y-perf-6-home-file.test.mjs). url is read for the closing-soon "Official page" link.
+HOME_KEYS = (
+    "id", "name", "org", "city", "url", "paid_type", "fields", "priority", "deadline_confidence", "min_age", "max_age",
+    "status", "deadline_iso", "opens_iso", "regions", "verified",
 )
 BLURB_KEYS = ("what_you_do", "deadline_text")
 DETAIL_KEYS = ("who_can_apply", "how_to_apply", "notes")
@@ -72,6 +78,12 @@ def main():
     stats = [{k: d[k] for k in STATS_KEYS if d.get(k) is not None} for d in programs]
     with open(os.path.join(OUT_DIR, "entries-stats.json"), "w", encoding="utf-8") as f:
         json.dump(stats, f, ensure_ascii=False, separators=(",", ":"))
+        f.write("\n")
+    # A key whose value is null is left out, as in the stats file: lib.js reads a missing key and a null the same way.
+    # deadline_confidence is kept only when it is "confirmed-2026-27", the one value lib.futureDeadline and home.js test for; any other value reads the same as a missing key.
+    home = [{k: d[k] for k in HOME_KEYS if d.get(k) is not None and (k != "deadline_confidence" or d[k] == "confirmed-2026-27")} for d in programs]
+    with open(os.path.join(OUT_DIR, "entries-home.json"), "w", encoding="utf-8") as f:
+        json.dump(home, f, ensure_ascii=False, separators=(",", ":"))
         f.write("\n")
     blurb = [{"id": d["id"], **{k: d[k] for k in BLURB_KEYS if k in d}} for d in programs]
     with open(os.path.join(OUT_DIR, "entries-blurb.json"), "w", encoding="utf-8") as f:

@@ -15,8 +15,8 @@ for (const page of ["ready.html", "paycheck.html"]) {
   });
 }
 
-test("paycheck.html names the parent's unincorporated business exception", () => {
-  assert.ok(read("paycheck.html").includes("parent's own unincorporated business when you are under 18"));
+test("paycheck.html names the parent's sole proprietorship exception", () => {
+  assert.ok(read("paycheck.html").includes("parent's own sole proprietorship, or a partnership where both partners are your parents, when you are under 18. It does not apply to a corporation."));
 });
 
 for (const page of ["rules.html", "ready.html"]) {

@@ -12,7 +12,7 @@ async function loadHome() {
   return page;
 }
 
-test("r2-teen-flow-7: Jump to nav sits in the hero with three links that resolve to ids", async () => {
+test("r2-teen-flow-7: Jump to nav sits in the hero with three links that resolve to ids, then the Jobs link", async () => {
   const { document, errors } = await loadHome();
 
   const navs = document.querySelectorAll('nav.chips[aria-label="Jump to"]');
@@ -20,15 +20,15 @@ test("r2-teen-flow-7: Jump to nav sits in the hero with three links that resolve
   const links = [...navs[0].querySelectorAll("a")];
   assert.deepEqual(
     links.map((a) => a.textContent.trim()),
-    ["What fits me", "Closing soon", "Work permit"],
+    ["What fits me", "Closing soon", "Work permit", "Jobs that hire teens"],
     "labels match the ticket",
   );
   assert.deepEqual(
     links.map((a) => a.getAttribute("href")),
-    ["#start", "#soon", "#offer"],
+    ["#start", "#soon", "#offer", "jobs.html"],
     "hrefs match the ticket",
   );
-  for (const a of links) {
+  for (const a of links.slice(0, 3)) {
     const href = a.getAttribute("href") || "";
     assert.match(href, /^#/, href + " should be a fragment link");
     assert.ok(document.getElementById(href.slice(1)), "no element with id " + href.slice(1));

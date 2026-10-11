@@ -41,6 +41,14 @@
     say(h ? h.textContent : pickPrompt($("pState").value, $("pAge").value, $("pKind").value));
   }
 
+  /* "No permit" answers end with one next step. Volunteer and internship go to their own lists; other kinds go to Jobs for this age, with the resume page. */
+  function nextStep(kind, age) {
+    if (kind === "volunteer") return '<p><b>What to do next:</b> <a href="find.html?kind=volunteer">Find volunteer roles</a>.</p>';
+    if (kind === "intern") return '<p><b>What to do next:</b> <a href="find.html?kind=internship">Find internships</a>.</p>';
+    var jobs = +age <= 13 ? "jobs.html" : "jobs.html?age=" + encodeURIComponent(String(age));
+    return '<p><b>What to do next:</b> <a href="' + jobs + '">Find jobs that hire at your age</a>, or <a href="resume.html">build your first resume</a>.</p>';
+  }
+
   var cur = null;
   function render() {
     var st = $("pState").value, age = $("pAge").value, kind = $("pKind").value;
@@ -72,6 +80,7 @@
       if (["ca", "ga", "ny", "il"].indexOf(st) >= 0) h += '<p><a href="paycheck.html?state=' + G.esc(st) + '">See what comes out of a first paycheck in ' + G.esc(s.name) + "</a></p>";
     }
     if ((r.verdict === "need" || r.verdict === "ask" || r.verdict === "none") && +age >= 14 && +age <= 17) h += '<p><a href="interview.html?state=' + encodeURIComponent(st) + "&amp;age=" + encodeURIComponent(age) + '#availability">Plan the hours you can offer</a></p>';
+    if (r.verdict === "none" || r.verdict === "adult") h += nextStep(r.kind, r.age);
     h += '<p class="small muted">Read on ' + G.esc(s.read) + " from: " + links(s.links) + ". Questions: " + G.esc(s.call) + ".</p></article>";
     out.innerHTML = h;
     cur = r;
@@ -125,7 +134,7 @@
     } catch (e) { /* the address bar is optional */ }
   }
 
-  fetch("data/permits.json").then(function (r) { return r.json(); }).then(function (d) {
+  G.fetchData("data/permits.json").then(function (r) { return r.json(); }).then(function (d) {
     data = d;
     var first = ["ca", "ga", "ny", "il"], rest = Object.keys(d.states).filter(function (k) { return first.indexOf(k) < 0; }).sort(function (a, b) { return d.states[a].name < d.states[b].name ? -1 : 1; });
     first.concat(rest).forEach(function (k) { opt($("pState"), k, d.states[k].name); });
@@ -160,5 +169,5 @@
     render();
     /* A bad ?state= value selects nothing, so the select stays empty: show the same answer as "not listed". */
     if (asked && !$("pState").value) $("pOut").innerHTML = nostateCard(asked);
-  }).catch(function () { $("pOut").innerHTML = '<p class="muted">The permit answers could not load. Try again, or see the <a href="rules.html">California rules</a> or <a href="states.html">other states</a>.</p>'; });
+  }).catch(function () { $("pOut").innerHTML = '<p class="muted">The permit answers could not load. Try again, or see the <a href="rules.html">California rules</a> or <a href="states.html">other states</a>.</p>'; $("pStatus").textContent = "The permit answers could not load. Try again."; });
 })();

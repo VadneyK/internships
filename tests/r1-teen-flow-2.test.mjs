@@ -51,7 +51,7 @@ function emptyCardFile(w) {
   let real;
   Object.defineProperty(w, "fetch", {
     configurable: true,
-    get: () => (u, o) => (/entries-card\.json/.test(String(u))
+    get: () => (u, o) => (/entries-home\.json/.test(String(u))
       ? Promise.resolve({ ok: true, status: 200, json: () => Promise.resolve([]) })
       : real(u, o)),
     set: (v) => { real = v; },

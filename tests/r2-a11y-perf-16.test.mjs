@@ -15,7 +15,7 @@ const size = (f) => fs.statSync(path.join(ROOT, "data", f)).size;
 // Ceilings are the sum of the allowed files rounded up, so a swap to a bigger file fails.
 // Raised on 2026-10-10 for index, find, calendar, insights and younger: the guide grew from 1,370 to 1,771 programs (about 29 percent), so the card, lite, stats and core files grew with it. The ceilings are still the new sums rounded up. No page gained a file; entries-blurb.json and expiring-dates.json are fetched by other pages only.
 const PAGES = {
-  "index.html": { allowed: ["entries-card.json"], ceiling: 1030000 },
+  "index.html": { allowed: ["entries-home.json"], ceiling: 715000 },
   "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2030000 },
   "calendar.html": { allowed: ["calendar.json", "entries-card.json"], ceiling: 1040000 },
   "insights.html": { allowed: ["entries-stats.json"], ceiling: 530000 },
@@ -27,6 +27,7 @@ const PAGES = {
   "safety.html": { allowed: ["safety.json"], ceiling: 45000 },
   "parents.html": { allowed: ["parents.json"], ceiling: 30000 },
   "languages.html": { allowed: ["languages.json"], ceiling: 10000 },
+  "jobs.html": { allowed: ["employers.json"], ceiling: 70000 },
   "states.html": { allowed: ["permits.json"], ceiling: 80000 },
   "playbook.html": { allowed: [], ceiling: 0 },
   "resume.html": { allowed: [], ceiling: 0 },
@@ -67,6 +68,12 @@ for (const [file, { allowed, ceiling }] of Object.entries(PAGES)) {
     if (ceiling === 0) assert.deepEqual(got, [], file + " should request no data/*.json");
   });
 }
+
+test("every root html page is listed in PAGES", () => {
+  const built = fs.readdirSync(ROOT).filter((f) => f.endsWith(".html"));
+  const missing = built.filter((f) => !(f in PAGES));
+  assert.deepEqual(missing, [], "root pages missing from PAGES: " + missing.join(", "));
+});
 
 test("every listed allowed file exists on disk", () => {
   for (const [file, { allowed }] of Object.entries(PAGES)) for (const f of allowed) assert.ok(fs.existsSync(path.join(ROOT, "data", f)), file + " lists missing " + f);

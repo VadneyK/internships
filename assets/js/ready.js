@@ -43,7 +43,7 @@
   /* Build the list once so focus stays on the box you toggled; later changes only update checked states and the count. */
   function build() {
     list.innerHTML = ITEMS.map(function (it) {
-      return '<li><div><label style="display:flex;gap:.6rem;align-items:flex-start;font-weight:700;cursor:pointer;"><input type="checkbox" data-k="' + it[0] + '" style="margin-top:.3rem;width:1.2rem;height:1.2rem;"><span>' + G.esc(it[1]) + '</span></label> <a class="small" href="' + it[2] + '" aria-label="' + G.esc("See how: " + it[1]) + '">See how</a></div></li>';
+      return '<li><div><label style="display:flex;gap:.6rem;align-items:flex-start;font-weight:700;cursor:pointer;"><input type="checkbox" data-k="' + it[0] + '" style="margin-top:.3rem;"><span>' + G.esc(it[1]) + '</span></label> <a class="small" href="' + it[2] + '" aria-label="' + G.esc("See how: " + it[1]) + '">See how</a></div></li>';
     }).join("");
   }
   function sumText() {
@@ -61,7 +61,13 @@
     var k = e.target.getAttribute("data-k"); if (!k) return;
     done[k] = e.target.checked; G.store.set("ready", done); paint(true);
   });
-  $("readyReset").addEventListener("click", function () { done = {}; G.store.set("ready", done); paint(true); $("readyReset").focus(); });
+  $("readyReset").addEventListener("click", function () {
+    var any = ITEMS.some(function (it) { return !!done[it[0]]; });
+    if (any && !window.confirm("Start over and clear every box you ticked?")) return;
+    done = {}; G.store.set("ready", done); paint(false);
+    $("readyStatus").textContent = "Cleared. " + sumText() + ".";
+    $("readyReset").focus();
+  });
   build();
   paint(false);
 
@@ -81,7 +87,7 @@
   });
 
   /* rides: every city comes from data/transit.json, each with the pages we read */
-  fetch("data/transit.json").then(function (r) { return r.json(); }).then(function (d) {
+  G.fetchData("data/transit.json").then(function (r) { return r.json(); }).then(function (d) {
     var sel = $("rideSel"), out = $("rideOut");
     d.places.forEach(function (p) { var o = document.createElement("option"); o.value = p.id; o.textContent = p.name + " (" + p.state + ")"; sel.appendChild(o); });
     sel.appendChild(Object.assign(document.createElement("option"), { value: "bay", textContent: "Bay Area and Sacramento (California)" }));
@@ -102,5 +108,5 @@
     });
     var want = new URLSearchParams(location.search).get("ride");
     if (want) { sel.value = want; sel.dispatchEvent(new Event("change")); }
-  }).catch(function () { $("rideOut").innerHTML = '<p class="muted">The ride answers could not load. Use the table below or ask your school office.</p>'; });
+  }).catch(function () { $("rideOut").innerHTML = '<p class="muted">The ride answers could not load. Use the table below or ask your school office.</p>'; $("readyStatus").textContent = "The ride answers could not load. Use the table below or ask your school office."; });
 })();

@@ -12,7 +12,7 @@ test("paycheck: Another state works with a typed rate and shows only Social Secu
   assert.equal(opt.textContent, "Another state (type your own rate)");
   type(window, document.getElementById("mPreset"), "other");
   assert.equal(document.getElementById("mWage").value, "");
-  assert.match(document.getElementById("mOut").textContent, /Enter a rate and the hours\./);
+  assert.match(document.getElementById("mOut").textContent, /Enter your hourly rate\./);
   const note = document.getElementById("mOther");
   assert.equal(note.hidden, false);
   assert.match(note.textContent, /Social Security and Medicare/);

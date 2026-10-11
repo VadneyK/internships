@@ -31,7 +31,7 @@ test("paycheck: clearing the rate says to enter a rate and the hours", async () 
   const { window, document } = await loadPage("paycheck.html"); await tick(100);
   type(window, document.getElementById("mWage"), "");
   await tick(1000);
-  assert.equal(document.getElementById("mStatus").textContent, "Enter a rate and the hours.");
+  assert.equal(document.getElementById("mStatus").textContent, "Enter your hourly rate.");
 });
 
 test("paycheck: typing four digits quickly changes the status line at most once", async () => {

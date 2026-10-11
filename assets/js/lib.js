@@ -177,8 +177,8 @@
     "social-impact": "Community", "food-hospitality": "Food and hospitality", "sports": "Sports", "any": "Any interest"
   };
   var PAID = {
-    "paid": "Paid", "stipend": "Stipend", "unpaid": "Unpaid", "unpaid-credit": "Unpaid, school credit",
-    "fee-based": "Costs money", "mixed": "Mixed", "not-stated": "Pay not stated"
+    "paid": "Paid", "stipend": "Stipend (a flat payment)", "unpaid": "Unpaid", "unpaid-credit": "Unpaid, school credit",
+    "fee-based": "Costs money", "mixed": "Pay or cost varies", "not-stated": "Pay not stated"
   };
   var PAID_GROUPS = [
     ["pay", "Paid or stipend", ["paid", "stipend", "mixed"]],
@@ -275,7 +275,8 @@
   var DAY_NAMES = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
   function hoursCheck(limits, age, inSchool, days) {
     var a = +age, band = a >= 18 ? "" : a >= 16 ? "16" : a >= 14 ? "14" : "";
-    var total = 0, per = days.map(function (d) { return d && d.from != null && d.to != null && d.to > d.from ? d.to - d.from : 0; });
+    if (!Array.isArray(days)) days = [];
+    var total = 0, per = days.map(function (d) { return d && isFinite(d.from) && isFinite(d.to) && typeof d.from !== "string" && typeof d.to !== "string" && d.from != null && d.to != null && d.to > d.from ? d.to - d.from : 0; });
     per.forEach(function (h) { total += h; });
     var out = { total: total, perDay: per, problems: [], limited: false };
     var lim = band && limits ? limits[band] : null;
@@ -304,7 +305,7 @@
     var p = null; data.presets.forEach(function (x) { if (x.id === presetId) p = x; });
     if (!p || wage === "" || hours === "" || wage == null || hours == null) return null;
     var w = +wage, h = +hours;
-    if (!(w >= 0) || !(h >= 0)) return null;
+    if (!(w >= 0) || !(h >= 0) || !isFinite(w) || !isFinite(h)) return null;
     var r = data.rates, gross = cents(w * h), lines = [], left = gross;
     function add(key, label, amt) { lines.push({ key: key, label: label, amount: amt }); left = cents(left - amt); }
     if (!parentBiz) { add("ss", "Social Security", cents(gross * r.ss)); add("medicare", "Medicare", cents(gross * r.medicare)); }

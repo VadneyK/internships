@@ -20,7 +20,7 @@ const KNOWN_GAPS = {
   "find.html entries-lite.json empty-array": "An empty program list is drawn as '0 of 0 programs', not a load failure. Fix in common.js checkJson or find.js: treat an empty entries file as a failed load.",
   "calendar.html entries-card.json empty-array": "An empty program list is drawn as '0 programs in October'. Same root cause: no check that the entries file has rows.",
   "younger.html entries-core.json empty-array": "An empty program list shows the normal federal note with no failure message; the program count is silently zero.",
-  "index.html entries-card.json empty-array": "An empty program list shows 'No confirmed deadlines in the next few weeks' instead of a load failure.",
+  "index.html entries-home.json empty-array": "An empty program list shows 'No confirmed deadlines in the next few weeks' instead of a load failure.",
 };
 
 // page, the area where results or the failure message go, and the required data files the page requests.
@@ -37,7 +37,7 @@ const PAGES = [
   { page: "younger.html", area: "fedNote", files: ["younger.json", "entries-core.json"] },
   { page: "states.html", area: "moreOut", files: ["permits.json"] },
   { page: "insights.html", area: "todayLead", files: ["entries-stats.json"] },
-  { page: "index.html", area: "soonList", files: ["entries-card.json"] },
+  { page: "index.html", area: "soonList", files: ["entries-home.json"] },
 ];
 
 const MODES = {
@@ -77,7 +77,7 @@ async function runCase(spec, fileName, mode, optional) {
   const file = spec.file || spec.page;
   const hits = [];
   const before = rejections.length;
-  const p = await loadPage(file, { setup: breakFetch(fileName, mode, hits) });
+  const p = await loadPage(file, fileName === "gaps.json" ? { setup: breakFetch(fileName, mode, hits), search: "?where=oak" } : { setup: breakFetch(fileName, mode, hits) });
   const { document: d, window: w } = p;
   if (optional) {
     // the long-text file loads on the first search; the lite list must stay on screen either way

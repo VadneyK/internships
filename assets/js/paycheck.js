@@ -5,7 +5,7 @@
   var $ = function (id) { return document.getElementById(id); };
   function a(t, u) { return '<a href="' + G.esc(u) + '" target="_blank" rel="noopener">' + G.esc(t) + "</a>"; }
   function usd(n) { return "$" + n.toFixed(2); }
-  fetch("data/money.json").then(function (r) { return r.json(); }).then(function (d) {
+  G.fetchData("data/money.json").then(function (r) { return r.json(); }).then(function (d) {
     d.presets.forEach(function (p) { $("mPreset").appendChild(Object.assign(document.createElement("option"), { value: p.id, textContent: p.label })); });
     $("mPreset").appendChild(Object.assign(document.createElement("option"), { value: "other", textContent: "Another state (type your own rate)" }));
     // "other" borrows the Georgia preset, which has only the Social Security and Medicare lines.
@@ -20,9 +20,40 @@
       if (note) { note.hidden = true; note.textContent = ""; }
       var p = d.presets.filter(function (x) { return x.id === $("mPreset").value; })[0]; $("mWage").value = p.wage.toFixed(2);
     }
+    // Each field says what is wrong with it. The first problem also names the field in the estimate card and the status line.
+    var MSG = {
+      wage: { blank: "Enter your hourly rate.", bad: "The hourly rate must be a number.", neg: "The hourly rate can not be below 0." },
+      hours: { blank: "Enter the hours on this paycheck.", bad: "The hours must be a number.", neg: "The hours can not be below 0." }
+    };
+    function problemOf(v, m) {
+      if (v === "" || v == null) return m.blank;
+      var n = +v;
+      if (!isFinite(n)) return m.bad;
+      if (n < 0) return m.neg;
+      return "";
+    }
+    function fieldProblems() {
+      return { wage: problemOf($("mWage").value, MSG.wage), hours: problemOf($("mHours").value, MSG.hours) };
+    }
+    function firstProblem(errs) { return errs.wage || errs.hours || ""; }
+    function showFields(errs) {
+      ["wage", "hours"].forEach(function (k) {
+        var id = k === "wage" ? "mWage" : "mHours", input = $(id), note = $(id + "Note");
+        if (errs[k]) {
+          input.setAttribute("aria-invalid", "true");
+          input.setAttribute("aria-describedby", id + "Note");
+          note.textContent = errs[k]; note.hidden = false;
+        } else {
+          input.removeAttribute("aria-invalid"); input.removeAttribute("aria-describedby");
+          note.textContent = ""; note.hidden = true;
+        }
+      });
+    }
     function paint() {
+      var errs = fieldProblems();
+      showFields(errs);
       var r = L.paycheck(d, presetId(), $("mWage").value, $("mHours").value, $("mParent").checked);
-      if (!r) { $("mOut").innerHTML = '<p class="muted">Enter a rate and the hours.</p>'; return; }
+      if (!r) { $("mOut").innerHTML = '<p class="muted">' + G.esc(firstProblem(errs) || "Enter a rate and the hours.") + "</p>"; return; }
       var h = '<div class="tablewrap" tabindex="0" role="region" aria-label="Your paycheck estimate"><table><tbody><tr><th scope="row">Pay before anything comes out</th><td>' + usd(r.gross) + "</td></tr>" +
         r.lines.map(function (l) { return '<tr><th scope="row">&minus; ' + G.esc(l.label) + "</th><td>" + usd(l.amount) + "</td></tr>"; }).join("") +
         '<tr><th scope="row"><b>Left before income tax</b></th><td><b>' + usd(r.left) + "</b></td></tr></tbody></table></div>";
@@ -37,7 +68,7 @@
       clearTimeout(statusTimer);
       statusTimer = setTimeout(function () {
         var r = L.paycheck(d, presetId(), $("mWage").value, $("mHours").value, $("mParent").checked);
-        var msg = r ? "About " + usd(r.left) + " left before income tax." : "Enter a rate and the hours.";
+        var msg = r ? "About " + usd(r.left) + " left before income tax." : (firstProblem(fieldProblems()) || "Enter a rate and the hours.");
         if ($("mStatus").textContent !== msg) $("mStatus").textContent = msg;
       }, 500);
     }
@@ -86,5 +117,5 @@
     $("mBank").innerHTML = d.bank.items.map(function (x) { return "<li>" + G.esc(x) + "</li>"; }).join("");
     $("mBankSrc").innerHTML = "Sources: " + d.bank.src.map(function (s) { return a(s.t, s.u); }).join(" &middot; ") + ".";
     $("mGaps").innerHTML = d.gaps.map(function (x) { return "<li>" + G.esc(x) + "</li>"; }).join("");
-  }).catch(function () { $("mOut").innerHTML = '<p class="muted">The paycheck tools could not load. Try again.</p>'; });
+  }).catch(function () { $("mOut").innerHTML = '<p class="muted">The paycheck tools could not load. Try again.</p>'; $("mStatus").textContent = "The paycheck tools could not load. Try again."; });
 })();

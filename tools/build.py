@@ -18,7 +18,7 @@ def _asset_version():
     import glob
     import hashlib
     h = hashlib.sha1()
-    paths = sorted(glob.glob(os.path.join(ROOT, "assets", "css", "*.css")) + glob.glob(os.path.join(ROOT, "assets", "js", "*.js")) + [os.path.join(ROOT, "data", "entries.json")])
+    paths = sorted(glob.glob(os.path.join(ROOT, "assets", "css", "*.css")) + glob.glob(os.path.join(ROOT, "assets", "js", "*.js")) + glob.glob(os.path.join(ROOT, "data", "*.json")) + glob.glob(os.path.join(ROOT, "data", "programs", "*.json")))
     for pth in paths:
         if os.path.exists(pth):
             h.update(open(pth, "rb").read())

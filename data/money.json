@@ -1,5 +1,5 @@
 {
- "read": "Oct 9, 2026",
+ "read": "Oct 10, 2026",
  "presets": [
   {
    "id": "ca",
@@ -62,8 +62,8 @@
   "ss": "Social Security tax, 6.2 percent of your pay. Your employer pays a matching amount.",
   "medicare": "Medicare tax, 1.45 percent of your pay. Your employer pays a matching amount.",
   "sdi": "California State Disability Insurance, 1.3 percent in 2026, with no wage cap.",
-  "pfl": "New York Paid Family Leave, 0.432 percent in 2026. Shown if your employer deducts it.",
-  "dis": "New York disability benefits: an employer is allowed, not required, to take 0.5 percent, up to $0.60 a week. Not subtracted here."
+  "pfl": "New York Paid Family Leave, 0.432 percent in 2026. This estimate subtracts it. We could not confirm that an employer takes it from a teen's first checks.",
+  "dis": "New York disability benefits: an employer is allowed, not required, to take 0.5 percent, up to $0.60 a week. Not subtracted here. The $0.60 limit is per week. This estimate does not know how many weeks your check covers."
  },
  "parentNote": "If you work for your parent's own unincorporated business (a sole proprietorship, or a partnership where both partners are your parents) and you are under 18, no Social Security or Medicare tax is taken. Income tax can still be withheld. This does not apply to a corporation. Ask a tax preparer.",
  "parentSource": {
@@ -233,8 +233,7 @@
    "Federal law does not stop a minor from opening a savings account. State law decides how much a minor can do alone.",
    "A parent can open the account for you, and may add both names. On a joint account, either person can usually withdraw all the money and close it.",
    "Banks usually ask for your name, birth date, address and an ID number such as a Social Security number. Some accept a student ID. Ask what they need before you go.",
-   "Ask about fees: a monthly fee, a minimum balance, fees per transaction, and overdraft. A payroll card can have its own fees.",
-   "A custodial account for a child counts as the child's money for deposit insurance, up to $250,000."
+   "Ask about fees: a monthly fee, a minimum balance, fees per transaction, and overdraft. A payroll card can have its own fees."
   ],
   "src": [
    {
@@ -249,8 +248,9 @@
  },
  "gaps": [
   "Whether the New York Paid Family Leave deduction applies to a teen's first checks the same as to any employee.",
-  "Other city minimum wages and city taxes. Chicago is $17.05 from July 1, 2026 at employers with 4 or more employees (see Other states), and this estimate does not use it.",
+  "Other city minimum wages and city taxes. Chicago is $17.05 from July 1, 2026 at employers with 4 or more employees (see Other states), and this estimate does not use it. The city page we read does not say if this covers workers under 18.",
   "Cook County outside Chicago is $15.40 for workers 18 and older, and some suburbs opted out. This estimate uses the state rate of $15.00 and does not use it (see Other states). Source: https://www.cookcountyil.gov/service/minimum-wage-ordinance-and-regulations (read Oct 10, 2026).",
+  "Georgia and federal law let an employer pay workers under 20 $4.25 an hour during their first 90 consecutive days. That is optional for the employer. This estimate uses $7.25 (see Georgia on the Other states page).",
   "Tips and overtime, which are not in the estimate.",
   "How much income tax will be withheld, which depends on the form you file.",
   "Whether a minor can file a wage claim alone in Illinois, and the time limit for Georgia and New York retaliation claims.",

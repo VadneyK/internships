@@ -16,7 +16,7 @@
   function list(id, arr) { $(id).innerHTML = arr.map(li).join(""); }
   function para(id, s) { $(id).innerHTML = G.esc(s.t) + from(s.p); }
 
-  fetch("data/parents.json").then(function (r) { return r.json(); }).then(function (d) {
+  G.fetchData("data/parents.json").then(function (r) { return r.json(); }).then(function (d) {
     pages = d.pages;
 
     para("signLead", d.sign.lead);
@@ -68,5 +68,5 @@
     list("safeWork", d.safe.work);
 
     list("gapsL", d.gaps.items);
-  }).catch(function () { $("signLead").textContent = "This page could not load. Try again."; });
+  }).catch(function () { $("signLead").textContent = "This page could not load. Try again."; $("pStatus").textContent = "This page could not load. Try again."; });
 })();

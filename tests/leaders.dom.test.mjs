@@ -91,6 +91,7 @@ test("leaders: the clear button empties every field and the stored value", async
   assert.equal(a.document.getElementById("gName").value, GROUP.gName, "saved details should load first");
   assert.match(a.document.getElementById("clearLeader").textContent, /Clear everything I typed on this page/);
 
+  a.window.confirm = () => true;
   a.document.getElementById("clearLeader").click();
 
   for (const id of [...FIELD_IDS, ...REF_IDS]) assert.equal(a.document.getElementById(id).value, "", id + " should be empty");

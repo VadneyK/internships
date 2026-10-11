@@ -1,5 +1,5 @@
 // Cross-file consistency: wages, hotlines and repeated rules typed by hand in several places (ticket r1-accuracy-8).
-// Known intentional difference: money.json lists NY 888-469-7365 and younger.json lists NY 888-525-2267;
+// Known intentional difference: money.json lists NY 888-469-7365 and younger.json now lists both NY numbers;
 // permits.json lists both, so each copy is checked against permits.json rather than against each other.
 // Run with: node --test tests/r1-accuracy-8.test.mjs
 import test from "node:test";
@@ -90,7 +90,7 @@ test("New York hotlines: both numbers in permits, states page; money and younger
   assert.deepEqual(permits.sort(), [HOTLINES.ny1, HOTLINES.ny2].sort());
   const money = MONEY.states.find((s) => s.id === "ny").call;
   assert.ok(permits.includes(digits(money)));
-  assert.ok(permits.includes(digits(YOUNGER.calls.ny)));
+  assert.deepEqual(phones(YOUNGER.calls.ny).sort(), permits.slice().sort());
   const st = phones(STATES);
   assert.ok(st.includes(HOTLINES.ny1) && st.includes(HOTLINES.ny2));
   assert.ok(phones(LANG).includes(HOTLINES.ny1));
@@ -111,4 +111,20 @@ test("transit.json does not carry its own copy of the repeated wages", () => {
     // If transit ever mentions these, it must use the exact figures above.
     if (TRANSIT.includes(bad)) assert.ok(/\$16\.90|\$17\.40|\$17\.05/.test(TRANSIT));
   }
+});
+
+test("New York 12 and 13 year old hotline: every Ask string in permits and the parents line give both numbers", () => {
+  const ny = PM.states.ny;
+  const asks = [
+    ny.kinds.odd.text,
+    ny.kinds.odd.under.text,
+    ny.kinds.own.text,
+    ny.kinds.volunteer.under.text,
+  ];
+  for (const t of asks) {
+    assert.ok(t.includes("Ask"), "expected an Ask string: " + t);
+    assert.ok(t.includes("888-469-7365 or 888-525-2267"), "missing both numbers: " + t);
+  }
+  const pText = rd("data/parents.json");
+  assert.ok(pText.includes("To ask a state about a 12 or 13 year old: California 833-526-4636, Georgia 877-709-8185, New York 888-469-7365 or 888-525-2267, Illinois 312-793-5570."));
 });

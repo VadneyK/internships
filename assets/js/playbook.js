@@ -106,10 +106,10 @@
     var el = $("pn" + (rows.length - 1)); if (el) el.focus();
   });
   $("clearMap").addEventListener("click", function () {
-    if (rows.some(function (r) { return r.n || r.w || r.h || r.s; }) && !window.confirm("Clear all your people and your details from this device?")) return;
+    if ((rows.some(function (r) { return r.n || r.w || r.h || r.s; }) || ["fMe", "fGrade", "fSchool"].some(function (id) { return $(id).value.trim(); })) && !window.confirm("Clear all your people and your details from this device?")) return;
     rows = [{}, {}, {}, {}, {}]; save(); G.store.set("me", {}); me = {};
     ["fMe", "fGrade", "fSchool"].forEach(function (id) { $(id).value = ""; });
-    paintAll(); build(); G.toast("Cleared");
+    paintAll(); build(); G.toast("Cleared"); $("clearMap").focus();
   });
 
   /* write a message to one person: fill the builder and jump to it */

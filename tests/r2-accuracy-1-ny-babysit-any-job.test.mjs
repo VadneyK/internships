@@ -30,7 +30,7 @@ test('New York under-14 babysitting text states the DOL rule and the Red Cross c
   assert.equal(under.below, 14);
   assert.equal(
     under.text,
-    'At 12 or 13, New York DOL says a babysitter must be at least 14, though the Red Cross says most states have no minimum age. Yard work for 12 and 13 year olds is not stated. Ask: 888-469-7365.'
+    'At 12 or 13, New York DOL says a babysitter must be at least 14, though the Red Cross says most states have no minimum age. Yard work for 12 and 13 year olds is not stated. Ask: 888-469-7365 or 888-525-2267.'
   );
 });
 

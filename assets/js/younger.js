@@ -5,9 +5,20 @@
   var $ = function (id) { return document.getElementById(id); };
   function a(t, u) { return '<a href="' + G.esc(u) + '" target="_blank" rel="noopener">' + G.esc(t) + "</a>"; }
   function li(arr) { return arr.map(function (x) { return "<li>" + G.esc(x) + "</li>"; }).join(""); }
-  Promise.all([fetch("data/younger.json").then(function (r) { return r.json(); }), G.loadEntries("core")]).then(function (res) {
+  Promise.all([G.fetchData("data/younger.json").then(function (r) { return r.json(); }), G.loadEntries("core")]).then(function (res) {
     var d = res[0], all = res[1];
-    var n13 = all.filter(function (e) { return L.matches(e, { age: "13" }, Date.now()) && e.min_age != null && e.min_age <= 13; }).length;
+    /* The age last saved on Programs (localStorage "findprefs"), read only. Only 12, 13 or 14 count here; anything else keeps 13. */
+    var nextAge = "13";
+    try {
+      var pa = G.store.get("findprefs", {});
+      if (pa && typeof pa.age === "string" && /^(12|13|14)$/.test(pa.age)) nextAge = pa.age;
+    } catch (e) { /* no saved age: keep 13 */ }
+    var nextHref = "find.html?age=" + nextAge;
+    var nsBtn = document.querySelector("#next-step a.btn");
+    if (nsBtn) nsBtn.setAttribute("href", nextHref);
+    var yNextA = document.querySelector("#yNext a");
+    if (yNextA) yNextA.setAttribute("href", nextHref);
+    var n13 =all.filter(function (e) { return L.matches(e, { age: "13" }, Date.now()) && e.min_age != null && e.min_age <= 13; }).length;
     $("n13").textContent = n13;
     var n12 = all.filter(function (e) { return L.matches(e, { age: "12" }, Date.now()) && e.min_age != null && e.min_age <= 12; }).length;
     if (n12 > 0) $("n12").textContent = n12;
@@ -72,5 +83,5 @@
       $("yPack").innerHTML = "<h3>Safety card for a young sitter or helper</h3><h4>Before every job</h4><ul>" + li(d.before) + "</ul><h4>With someone I do not know</h4><ul>" + li(d.strangers) + "</ul><h4>Apps with an age rule</h4><ul>" + d.sites.map(function (s) { return "<li>" + G.esc(s[0]) + ": " + G.esc(s[1]) + "</li>"; }).join("") + "</ul><p>Parent phone: ________________ Where I am working: ________________ Home by: ________</p><p class=\"small\">From vadneyk.github.io/internships/younger.html. Read " + G.esc(d.read) + ".</p>";
       $("yPack").hidden = false; G.printOnly($("yPack"), "Safety card"); $("yPack").hidden = true;
     });
-  }).catch(function () { $("fedNote").textContent = "This page could not load. Try again."; });
+  }).catch(function () { $("fedNote").textContent = "This page could not load. Try again."; $("yStatus").textContent = "This page could not load. Try again."; });
 })();

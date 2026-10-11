@@ -162,7 +162,7 @@ test("parents: no external script, no outside link, nothing sent anywhere", () =
   const js = read("assets/js/parents.js");
   assert.doesNotMatch(js, /https?:\/\//, "parents.js has no outside address");
   assert.doesNotMatch(js, /XMLHttpRequest|sendBeacon|WebSocket|document\.cookie|localStorage|sessionStorage/);
-  const fetches = [...js.matchAll(/fetch\(([^)]*)\)/g)].map((m) => m[1]);
+  const fetches = [...js.matchAll(/(?:fetch|fetchData)\(([^)]*)\)/g)].map((m) => m[1]);
   assert.deepEqual(fetches, ['"data/parents.json"']);
   // The links the page draws: outside links are not part of this page at all.
   assert.doesNotMatch(JSON.stringify(parents), /https?:\/\//);

@@ -86,6 +86,15 @@ function traceVariable(id, text) {
 
 // arg is the text after "fetch(" with leading spaces removed.
 function checkFetchArg(arg, text) {
+  // G.dataUrl(x) only adds ?v=<build hash> to a relative path, so check what is inside. The helper's own
+  // fetch(G.dataUrl(path)) has no literal; every caller of G.fetchData is checked below.
+  if (arg.startsWith("G.dataUrl(")) {
+    const inner = arg.slice("G.dataUrl(".length).trimStart();
+    if (/^path\s*\)/.test(inner)) return { ok: true, path: null };
+    return checkFetchArg(inner, text);
+  }
+  // The helper's own fetch(path, ...) in common.js: the same rule, every caller of G.fetchData is checked.
+  if (/^path\s*[,)]/.test(arg) && /G\.fetchData\s*=\s*function\s*\(path\)/.test(text)) return { ok: true, path: null };
   const q = arg[0];
   if (q === '"' || q === "'") {
     const end = arg.indexOf(q, 1);
@@ -110,11 +119,11 @@ function scanJs(file, text) {
   text.split("\n").forEach((line, i) => {
     const where = { file, line: i + 1, text: line.trim().slice(0, 160) };
     for (const r of TOKEN_RULES) if (r.re.test(line)) hits.push({ ...where, why: r.why });
-    const re = /\bfetch\s*\(/g;
+    const re = /\b(?:fetch|G\s*\.\s*fetchData)\s*\(/g;
     let m;
     while ((m = re.exec(line))) {
       const res = checkFetchArg(line.slice(m.index + m[0].length).trimStart(), text);
-      if (res.ok) loads.push(res.path);
+      if (res.ok) { if (res.path) loads.push(res.path); }
       else hits.push({ ...where, why: "fetch: " + res.why });
     }
   });

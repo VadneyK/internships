@@ -2,50 +2,46 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 
-// Two cards whose how_to_apply names a sign-up site, where apply_url was null before this round.
-const IDS = ["seattle-youth-employment-program", "irvine-library-teen-volunteers"];
+// Ticket r3-data-content-5. Hired park and city jobs whose pay line only said the rate was
+// missing now start with "Paid job." The rest of the pay line is unchanged. Naperville is
+// skipped on purpose: its official pages do not say the district hires teens.
 
-const ENTRIES = JSON.parse(fs.readFileSync(new URL("../data/entries.json", import.meta.url), "utf8"));
+const read = (rel) => JSON.parse(fs.readFileSync(new URL(rel, import.meta.url), "utf8"));
+const ENTRIES = read("../data/entries.json");
+const DETAIL = read("../data/entries-detail.json");
 
-function program(id) {
-  return JSON.parse(fs.readFileSync(new URL(`../data/programs/${id}.json`, import.meta.url), "utf8"));
-}
+const PREFIXED = [
+  "champaign-park-district-summer-jobs",
+  "evanston-mayors-summer-youth-employment",
+  "fox-valley-park-district-seasonal-jobs",
+  "gwinnett-parks-lifeguard-jobs",
+  "nova-parks-waterpark-jobs",
+  "oak-park-park-district-seasonal-jobs",
+  "oakland-parks-rec-youth-jobs",
+];
 
-// Hosts named in how_to_apply, such as "youthconnect.powerappsportals.us" or "www.volgistics.com".
-function hostsNamed(text) {
-  return [...new Set(text.toLowerCase().match(/[a-z0-9-]+(?:\.[a-z0-9-]+)+/g) || [])];
-}
+const byId = (id) => ENTRIES.find((e) => e.id === id);
 
-for (const id of IDS) {
-  test(`${id}: apply_url is null or an https link on a host named in how_to_apply`, () => {
-    const card = program(id);
-    if (card.apply_url === null) return;
-    assert.equal(typeof card.apply_url, "string");
-    const u = new URL(card.apply_url);
-    assert.equal(u.protocol, "https:", "apply_url must be https");
-    const hosts = hostsNamed(card.how_to_apply);
-    assert.ok(
-      hosts.some((h) => u.hostname === h || u.hostname.endsWith("." + h)),
-      `apply_url host ${u.hostname} must match a host named in how_to_apply`
-    );
-  });
-
-  test(`${id}: generated entries.json carries the same apply_url as the program file`, () => {
-    const card = program(id);
-    const entry = ENTRIES.find((e) => e.id === id);
-    assert.ok(entry, "entry exists in entries.json");
-    assert.equal(entry.apply_url, card.apply_url);
+for (const id of PREFIXED) {
+  test(`${id} says Paid job before the existing pay line`, () => {
+    const e = byId(id);
+    assert.ok(e, `missing entry ${id}`);
+    assert.equal(e.paid_type, "paid");
+    assert.match(e.pay_detail, /^Paid job\. \S/);
+    assert.doesNotMatch(e.pay_detail, /[\u2013\u2014]/);
   });
 }
 
-test("seattle-youth-employment-program: apply_url is the youthconnect sign-up site named in how_to_apply", () => {
-  const card = program("seattle-youth-employment-program");
-  assert.equal(card.apply_url, "https://youthconnect.powerappsportals.us/");
-  assert.ok(card.how_to_apply.includes("youthconnect.powerappsportals.us"));
+test("naperville is not prefixed because its pages do not say it hires teens", () => {
+  const e = byId("naperville-park-district-seasonal-jobs");
+  assert.ok(e, "missing naperville entry");
+  assert.doesNotMatch(e.pay_detail, /^Paid job\./);
 });
 
-test("irvine-library-teen-volunteers: apply_url is the Teen Volunteer Application link on the host named in how_to_apply", () => {
-  const card = program("irvine-library-teen-volunteers");
-  assert.equal(card.apply_url, "https://www.volgistics.com/appform/337674493");
-  assert.ok(card.how_to_apply.includes("www.volgistics.com/appform/337674493"));
+test("the prefixed pay lines match the program files after the prefix", () => {
+  for (const id of PREFIXED) {
+    const file = read(`../data/programs/${id}.json`);
+    assert.equal(byId(id).pay_detail, file.pay_detail);
+    assert.equal(file.pay_detail.startsWith("Paid job. "), true);
+  }
 });

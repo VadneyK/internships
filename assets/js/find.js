@@ -147,18 +147,26 @@
   }
 
   /* known gaps for the areas you are looking at, each linked to its issue */
-  var gaps = [];
+  var gaps = [], gapsPromise = null;
+  /* the gaps file is requested only once a place or hub is chosen, and only once per page load */
+  function loadGaps() {
+    if (!gapsPromise) {
+      gapsPromise = G.fetchData("data/gaps.json").then(function (r) { return r.json(); }).then(function (g) { gaps = g; paintGaps(); }).catch(function () {});
+    }
+    return gapsPromise;
+  }
   function paintGaps() {
     var box = $("gaps"); if (!box) return;
     var hubsNow = state.hubs.length ? state.hubs : state.place ? L.hubsOfPlace(state.place) : [];
-    var mine = hubsNow.length ? gaps.filter(function (g) { return g.hubs.some(function (h) { return hubsNow.indexOf(h) > -1; }); }) : [];
+    if (!hubsNow.length) { box.hidden = true; box.innerHTML = ""; return; }
+    loadGaps();
+    var mine = gaps.filter(function (g) { return g.hubs.some(function (h) { return hubsNow.indexOf(h) > -1; }); });
     if (!mine.length) { box.hidden = true; box.innerHTML = ""; return; }
     box.hidden = false;
     box.innerHTML = "<h2 style=\"font-size:1.1rem;\">Known gaps in this area</h2><ul>" + mine.map(function (g) {
       return "<li><b>" + G.esc(g.title) + ".</b> " + G.esc(g.text) + ' <a href="https://github.com/VadneyK/internships/issues/' + g.issue + '">Issue ' + g.issue + "</a></li>";
     }).join("") + "</ul>";
   }
-  fetch("data/gaps.json").then(function (r) { return r.json(); }).then(function (g) { gaps = g; paintGaps(); }).catch(function () {});
 
   function paintPlaceNote(realN) {
     var box = $("placeNote"); if (!box) return;
@@ -337,7 +345,7 @@
         (first || $("savedOnly")).focus();
       };
     } else if (!list.length) {
-      out.innerHTML = '<div class="card empty" style="grid-column:1/-1"><h3>Nothing matches yet</h3>' + relaxHtml(sv) + '<p>Try a different age or area, or clear the filters. Programs near you may also appear under &ldquo;California&rdquo; or &ldquo;Online and national&rdquo;.</p>' + (state.age === "12" || state.age === "13" ? '<p>Under 14? Read the <a href="younger.html">ages 12 to 14 page</a>.</p>' : "") + (state.q && detailState !== "ready" && detailState !== "fail" ? '<p class="small muted" data-detail-wait>Still loading the full text of each program, so this list may change in a moment.</p>' : "") + '<button class="btn" type="button" id="emptyReset">Clear all filters</button></div>';
+      out.innerHTML = '<div class="card empty" style="grid-column:1/-1"><h3>Nothing matches yet</h3>' + relaxHtml(sv) + '<p>Try a different age or area, or clear the filters. Programs near you may also appear under &ldquo;California&rdquo; or &ldquo;Online and national&rdquo;.</p>' + (state.age === "12" || state.age === "13" ? '<p>Under 14? Read the <a href="younger.html">ages 12 to 14 page</a>.</p>' : "") + '<p>Want a regular job instead? <a href="jobs.html">See jobs that hire teens</a></p>' + (state.q && detailState !== "ready" && detailState !== "fail" ? '<p class="small muted" data-detail-wait>Still loading the full text of each program, so this list may change in a moment.</p>' : "") + '<button class="btn" type="button" id="emptyReset">Clear all filters</button></div>';
       var er = $("emptyReset"); if (er) er.onclick = function () { resetAll(); $("q").focus(); G.toast("Filters cleared"); };
     } else {
       var slice = list.slice(0, shown);
@@ -428,12 +436,13 @@
   /* The three related chips carry the chosen age and area (only the parts that are set). */
   function paintRelated() {
     var box = $("relatedLinks"); if (!box) return;
-    var cal = box.querySelector("a[href^='calendar.html']"), per = box.querySelector("a[href^='permit.html']");
+    var cal = box.querySelector("a[href^='calendar.html']"), per = box.querySelector("a[href^='permit.html']"), jobs = box.querySelector("a[href^='jobs.html']");
     var c = new URLSearchParams();
     if (state.place) c.set("at", state.place);
     if (state.age) c.set("age", state.age);
     if (cal) cal.setAttribute("href", "calendar.html" + (c.toString() ? "?" + c.toString() : ""));
     if (per) per.setAttribute("href", "permit.html" + (state.age && state.age !== "12" && state.age !== "13" ? "?age=" + encodeURIComponent(state.age) : ""));
+    if (jobs) jobs.setAttribute("href", "jobs.html" + (PREF_AGES.indexOf(state.age) > -1 ? "?age=" + encodeURIComponent(state.age) : ""));
   }
 
   /* url state */

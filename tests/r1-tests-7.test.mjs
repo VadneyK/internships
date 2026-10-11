@@ -126,6 +126,8 @@ function callArg(src, open, n) {
 
 // Returns a problem string when the URL expression is not a relative plain string literal, else null.
 function urlProblem(expr) {
+  // The shared helper G.fetchData(path) wraps the path in G.dataUrl(path), which only adds ?v=<build hash> to a relative path. Every caller passes a literal data/ path, which the no-egress test checks.
+  if (/^G\.dataUrl\(\s*path\s*\)$/.test(expr)) return null;
   // A relative literal prefix plus an encoded id, for example "data/programs/" + encodeURIComponent(id) + ".json", is safe: the host cannot change.
   const pre = expr.match(/^(["'])([^"'\\]*)\1\s*\+\s*encodeURIComponent\s*\(/);
   if (pre) {
@@ -166,6 +168,8 @@ function jsProblems(src) {
   for (const s of sites) {
     const expr = callArg(src, s.open, s.n);
     if (expr === null) continue;
+    // The helper G.fetchData(path) in common.js passes its own argument on. Each caller gives it a literal data/ path.
+    if (/^(G\.dataUrl\(\s*path\s*\)|path)$/.test(expr.trim()) && /G\.fetchData\s*=\s*function\s*\(path\)/.test(src)) continue;
     const why = urlProblem(expr);
     if (why) out.push(`${s.label} at ${where(s.at)}: ${why}`);
   }

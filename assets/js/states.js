@@ -3,7 +3,7 @@
   "use strict";
   var G = window.TIG;
   var $ = function (id) { return document.getElementById(id); };
-  fetch("data/permits.json").then(function (r) { return r.json(); }).then(function (d) {
+  G.fetchData("data/permits.json").then(function (r) { return r.json(); }).then(function (d) {
     var skip = ["ca", "ga", "ny", "il"];
     var keys = Object.keys(d.states).filter(function (k) { return skip.indexOf(k) < 0; }).sort(function (a, b) { return d.states[a].name < d.states[b].name ? -1 : 1; });
     keys.forEach(function (k) { $("moreSel").appendChild(Object.assign(document.createElement("option"), { value: k, textContent: d.states[k].name })); });
@@ -19,5 +19,5 @@
         '<p class="row"><a class="btn sm" href="permit.html?state=' + G.esc(k) + '&age=15&kind=job">Open the work permit finder</a></p><p class="small muted">Read on ' + G.esc(s.read) + " from: " + s.links.map(function (l) { return /^https?:/.test(l.u) ? '<a href="' + G.esc(l.u) + '" target="_blank" rel="noopener">' + G.esc(l.t) + "</a>" : ""; }).join(" &middot; ") + ". This is a summary, not legal advice.</p>";
     });
     var q = new URLSearchParams(location.search).get("state"); if (q && d.states[q]) { $("moreSel").value = q; quiet = true; $("moreSel").dispatchEvent(new Event("change")); quiet = false; }
-  }).catch(function () { $("moreOut").innerHTML = '<p class="muted">The state rules could not load.</p>'; });
+  }).catch(function () { $("moreOut").innerHTML = '<p class="muted">The state rules could not load.</p>'; $("moreStatus").textContent = "The state rules could not load."; });
 })();

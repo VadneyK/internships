@@ -38,7 +38,7 @@
     }
    ],
    "hours": {
-    "12": "School days: no work. Non-school days: up to 8 hours. Only between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day).",
+    "12": "School days: no work. Non-school days: up to 8 hours. Only between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). This row is for the few jobs allowed at that age. The state chart lists babysitting and yard work as needing no permit. It does not say those jobs skip the hour and time limits above, so ask the Labor Commissioner at 833-526-4636 before you plan a schedule.",
     "14": "School days: up to 3 hours, outside school hours. Non-school days: up to 8 hours. School weeks: up to 18 hours. When school is out: up to 8 hours a day and 40 a week. Only between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). At 14 to 17, you need to have finished 7th grade to work while school is in session.",
     "16": "School days: up to 4 hours. Non-school days: up to 8 hours. Up to 48 hours a week. Between 5 a.m. and 10 p.m. (12:30 a.m. before a non-school day). At 14 to 17, you need to have finished 7th grade to work while school is in session."
    },
@@ -62,7 +62,7 @@
     },
     "own": {
      "permit": false,
-     "text": "Running your own business (tutoring, selling crafts) does not need a permit. Delivering newspapers on your own route (age 12 or older) does not either. A self-employed minor needs no permit on the chart. Pet care is not named on the state chart, so ask the Labor Commissioner at 833-526-4636."
+     "text": "A self-employed minor needs no permit on the chart. The chart names newspaper routes (age 12 or older). Other self-employed jobs, such as tutoring, selling crafts or pet care, are not named, so ask the Labor Commissioner at 833-526-4636."
     },
     "volunteer": {
      "permit": false,
@@ -150,7 +150,7 @@
     "14": "At most employers the federal limits apply, and they are stricter. School days: up to 3 hours. School weeks: up to 18 hours. Non-school days: up to 8 hours. When school is out: up to 40 hours a week. Only between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day).",
     "16": "Georgia and federal law set no hour limits at 16 and 17. Dangerous jobs are still off limits, and anyone 17 or younger may not take orders for or serve alcohol, except where it is sold to take off the premises."
    },
-   "wage": "$7.25 an hour at nearly every employer. Under federal law an employer may pay $4.25 to workers under 20 for their first 90 days.",
+   "wage": "$7.25 an hour at nearly every employer. An employer may pay workers under 20 $4.25 during their first 90 consecutive days. That is optional for the employer, and after 90 days or at age 20 you must get the full minimum.",
    "minAge": {
     "job": 14,
     "note": "Most non-farm jobs covered by federal law start at 14."
@@ -262,17 +262,17 @@
     },
     "odd": {
      "permit": false,
-     "text": "No working papers are needed for babysitting or casual yard work or chores at home, but New York DOL says the babysitter must be at least 14. Yard work for 12 and 13 year olds is not stated. Ask: 888-469-7365.",
-     "under": {"below": 14, "permit": null, "text": "At 12 or 13, New York DOL says a babysitter must be at least 14, though the Red Cross says most states have no minimum age. Yard work for 12 and 13 year olds is not stated. Ask: 888-469-7365."}
+     "text": "No working papers are needed for babysitting, but New York DOL says the babysitter must be at least 14. At 14 and 15, casual yard work or chores at a home need no certificate if no power machinery is used. Yard work for 12 and 13 year olds is not stated. Ask: 888-469-7365 or 888-525-2267.",
+     "under": {"below": 14, "permit": null, "text": "At 12 or 13, New York DOL says a babysitter must be at least 14, though the Red Cross says most states have no minimum age. Yard work for 12 and 13 year olds is not stated. Ask: 888-469-7365 or 888-525-2267."}
     },
     "own": {
      "permit": null,
-     "text": "The New York pages we read do not say whether your own small business needs working papers. Ask the State Department of Labor: 888-469-7365."
+     "text": "The New York pages we read do not say whether your own small business needs working papers. Ask the State Department of Labor: 888-469-7365 or 888-525-2267."
     },
     "volunteer": {
      "permit": null,
      "text": "Unpaid volunteers are allowed at charitable, educational or religious organizations, and they may not replace or add to paid staff. The pages we read do not require working papers for volunteers, so confirm with your school.",
-     "under": {"below": 14, "permit": null, "text": "A Queens Public Library page says under 14 may not volunteer unless a parent or guardian directly supervises, citing state law. That is a library description, not a labor department page. Ask the State Department of Labor: 888-469-7365."}
+     "under": {"below": 14, "permit": null, "text": "A Queens Public Library page says under 14 may not volunteer unless a parent or guardian directly supervises, citing state law. That is a library description, not a labor department page. Ask the State Department of Labor: 888-469-7365 or 888-525-2267."}
     },
     "intern": {
      "permit": null,
@@ -425,7 +425,7 @@
    ],
    "timing": "Not stated on the pages we read.",
    "renew": "The form expires each school year on Sept 30 and must be renewed.",
-   "call": "Washington Labor and Industries (lni.wa.gov/TeenWorkers)",
+   "call": "Washington Labor and Industries (lni.wa.gov/TeenWorkers) No phone number is listed on this card. Use the agency website.",
    "links": [
     {
      "t": "L&I: how to hire minors",
@@ -526,7 +526,7 @@
    ],
    "timing": "Not stated on the pages we read.",
    "renew": "Not stated on the pages we read.",
-   "call": "Texas Workforce Commission child labor line (twc.texas.gov)",
+   "call": "Texas Workforce Commission child labor page (twc.texas.gov) No phone number is listed on this card. Use the agency website.",
    "links": [
     {
      "t": "TWC: Texas child labor law",
@@ -622,7 +622,7 @@
    ],
    "timing": "Not stated on the pages we read.",
    "renew": "Not stated on the pages we read.",
-   "call": "Minnesota Department of Labor and Industry (dli.mn.gov/child-labor)",
+   "call": "Minnesota Department of Labor and Industry (dli.mn.gov/child-labor) No phone number is listed on this card. Use the agency website.",
    "links": [
     {
      "t": "DLI: child labor",
@@ -717,7 +717,7 @@
    ],
    "timing": "Not stated on the pages we read.",
    "renew": "Not stated on the pages we read.",
-   "call": "Wisconsin Department of Workforce Development (dwd.wisconsin.gov)",
+   "call": "Wisconsin Department of Workforce Development (dwd.wisconsin.gov) No phone number is listed on this card. Use the agency website.",
    "links": [
     {
      "t": "DWD: employment of minors guide",
@@ -890,7 +890,7 @@
    ],
    "timing": "Not stated on the pages we read.",
    "renew": "Not stated on the pages we read.",
-   "call": "Michigan Department of Labor and Economic Opportunity (michigan.gov/leo)",
+   "call": "Michigan Department of Labor and Economic Opportunity (michigan.gov/leo) No phone number is listed on this card. Use the agency website.",
    "links": [
     {
      "t": "Michigan: youth employment",
@@ -991,7 +991,7 @@
    ],
    "timing": "Not stated on the pages we read.",
    "renew": "Not stated on the pages we read.",
-   "call": "North Carolina Department of Labor (labor.nc.gov)",
+   "call": "North Carolina Department of Labor (labor.nc.gov) No phone number is listed on this card. Use the agency website.",
    "links": [
     {
      "t": "NCDOL: apply for a certificate",
@@ -1084,7 +1084,7 @@
    ],
    "timing": "Not stated on the pages we read.",
    "renew": "Not stated on the pages we read.",
-   "call": "New Jersey Department of Labor and Workforce Development (nj.gov/labor/youngworkers)",
+   "call": "New Jersey Department of Labor and Workforce Development (nj.gov/labor/youngworkers) No phone number is listed on this card. Use the agency website.",
    "links": [
     {
      "t": "NJ working papers",
@@ -1186,7 +1186,7 @@
    ],
    "timing": "Not stated on the pages we read.",
    "renew": "The Education Department page says the permit lasts until age 18. That came from a page summary, so confirm.",
-   "call": "Pennsylvania Department of Labor and Industry (pa.gov/agencies/dli)",
+   "call": "Pennsylvania Department of Labor and Industry (pa.gov/agencies/dli) No phone number is listed on this card. Use the agency website.",
    "links": [
     {
      "t": "PA Child Labor Act",
@@ -1288,7 +1288,7 @@
    ],
    "timing": "Not stated on the pages we read.",
    "renew": "Not stated on the pages we read.",
-   "call": "Massachusetts Attorney General's Fair Labor Division (mass.gov blocked our reader, so confirm there)",
+   "call": "Massachusetts Attorney General's Fair Labor Division (mass.gov blocked our reader, so confirm there) No phone number is listed on this card. Use the agency website.",
    "links": [
     {
      "t": "City of Boston with the Attorney General: youth worker rights",
@@ -1384,7 +1384,7 @@
    ],
    "timing": "Not stated on the pages we read.",
    "renew": "Not stated on the pages we read.",
-   "call": "BC Employment Standards Branch (gov.bc.ca, young people)",
+   "call": "BC Employment Standards Branch (gov.bc.ca, young people) No phone number is listed on this card. Use the agency website.",
    "links": [
     {
      "t": "BC: hiring young people",
@@ -1464,7 +1464,7 @@
    ],
    "timing": "Not stated on the pages we read.",
    "renew": "Not stated on the pages we read.",
-   "call": "Ohio Department of Commerce, Minor Work Permits (minorworkpermit.com.ohio.gov)",
+   "call": "Ohio Department of Commerce, Minor Work Permits (minorworkpermit.com.ohio.gov) No phone number is listed on this card. Use the agency website.",
    "links": [
     {
      "t": "Ohio minor work permits",
@@ -1560,7 +1560,7 @@
    ],
    "timing": "Not stated on the pages we read.",
    "renew": "Not stated on the pages we read.",
-   "call": "Maryland Division of Labor and Industry (labor.maryland.gov)",
+   "call": "Maryland Division of Labor and Industry (labor.maryland.gov) No phone number is listed on this card. Use the agency website.",
    "links": [
     {
      "t": "Maryland: employment of minors",
@@ -1646,7 +1646,7 @@
    ],
    "timing": "Not stated on the pages we read.",
    "renew": "Not stated on the pages we read.",
-   "call": "Virginia Department of Labor and Industry (doli.virginia.gov)",
+   "call": "Virginia Department of Labor and Industry (doli.virginia.gov) No phone number is listed on this card. Use the agency website.",
    "links": [
     {
      "t": "Virginia: youth employment",

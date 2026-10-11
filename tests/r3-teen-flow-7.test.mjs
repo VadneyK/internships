@@ -60,8 +60,10 @@ test("r3-teen-flow-7: the Next steps section is the last section and has the fou
   const { document, errors } = await loadPage("resume.html");
   await tick(120);
 
-  const sections = [...document.querySelectorAll("section")];
-  assert.equal(sections[sections.length - 1].id, "next", "Next steps is the last section on the page");
+  /* Ticket r2-teen-flow-1 adds the single "Your next step" block after it, so Next steps is the last section but one. */
+  const sections = [...document.querySelectorAll("main > section")];
+  assert.equal(sections[sections.length - 1].id, "next-step", "the single next step block closes the page");
+  assert.equal(sections[sections.length - 2].id, "next", "Next steps is right before it");
 
   const next = document.getElementById("next");
   const links = [...next.querySelectorAll("a")];

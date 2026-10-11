@@ -114,9 +114,12 @@
     if (c) { G.copy($(c.getAttribute("data-copy")).textContent); }
   });
   $("clearLeader").addEventListener("click", function () {
+    var ALL = FIELDS.concat(["rTeen", "rWriter", "rKnown", "rJob", "rStory", "rQuality"]);
+    if (ALL.some(function (id) { return $(id).value.trim(); }) && !window.confirm("Clear everything you typed on this page?")) return;
+    clearTimeout(refTimer);
     G.store.set("leader", {});
     FIELDS.concat(["rTeen", "rWriter", "rKnown", "rJob", "rStory", "rQuality"]).forEach(function (id) { $(id).value = ""; });
-    render(); renderRef(); G.toast("Cleared");
+    render(); renderRef(); $("refStatus").textContent = "Cleared."; G.toast("Cleared"); $("clearLeader").focus();
   });
   render(); renderRef();
 })();

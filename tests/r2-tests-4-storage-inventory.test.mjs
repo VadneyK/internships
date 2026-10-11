@@ -81,7 +81,7 @@ test("(c) opening any page with empty storage writes nothing", async () => {
       if (page === "interview.html") {
         const v = JSON.parse(p.window.localStorage.getItem("interview"));
         const typed = Object.entries(v.av).filter(([k, x]) => /(from|to)$/.test(k) && x !== "");
-        assert.deepEqual([v.q, v.refs, typed], [{}, [], []], "the known load write must hold no typed text");
+        assert.deepEqual([v.q, v.refs.filter((r) => Object.values(r).some((x) => x !== "")), typed], [{}, [], []], "the known load write must hold no typed text");
       }
       if (page === "playbook.html") {
         assert.deepEqual(JSON.parse(p.window.localStorage.getItem("me")), { n: "", g: "", s: "" }, "the known load write must be empty");

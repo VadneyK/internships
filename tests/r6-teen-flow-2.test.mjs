@@ -37,11 +37,11 @@ async function load(search = "") {
 }
 const hrefs = (d) => [...d.querySelectorAll("#relatedLinks a")].map((a) => a.getAttribute("href"));
 const texts = (d) => [...d.querySelectorAll("#relatedLinks a")].map((a) => a.textContent.trim());
-const TEXTS = ["What opens when", "Do I need a work permit?", "Ages 12 to 14"];
+const TEXTS = ["What opens when", "Do I need a work permit?", "Ages 12 to 14", "Jobs that hire teens"];
 
 test("related chips: plain with no filters", async () => {
   const { document } = await load();
-  assert.deepEqual(hrefs(document), ["calendar.html", "permit.html", "younger.html"]);
+  assert.deepEqual(hrefs(document), ["calendar.html", "permit.html", "younger.html", "jobs.html"]);
   assert.deepEqual(texts(document), TEXTS);
 });
 
@@ -49,17 +49,17 @@ test("related chips: age 15 and a place are carried, then cleared", async () => 
   const { window, document } = await load("?at=city:davis&age=15");
   const place = document.getElementById("place").value;
   assert.ok(place, "place should be set from the URL");
-  assert.deepEqual(hrefs(document), ["calendar.html?at=" + encodeURIComponent(place) + "&age=15", "permit.html?age=15", "younger.html"]);
+  assert.deepEqual(hrefs(document), ["calendar.html?at=" + encodeURIComponent(place) + "&age=15", "permit.html?age=15", "younger.html", "jobs.html?age=15"]);
   assert.deepEqual(texts(document), TEXTS);
   document.getElementById("age").value = "";
   document.getElementById("age").dispatchEvent(new window.Event("change", { bubbles: true }));
   await tick(50);
-  assert.deepEqual(hrefs(document), ["calendar.html?at=" + encodeURIComponent(place), "permit.html", "younger.html"]);
+  assert.deepEqual(hrefs(document), ["calendar.html?at=" + encodeURIComponent(place), "permit.html", "younger.html", "jobs.html"]);
 });
 
 test("related chips: ages 12 and 13 do not add age to permit", async () => {
   for (const a of ["12", "13"]) {
     const { document } = await load("?age=" + a);
-    assert.deepEqual(hrefs(document), ["calendar.html?age=" + a, "permit.html", "younger.html"]);
+    assert.deepEqual(hrefs(document), ["calendar.html?age=" + a, "permit.html", "younger.html", "jobs.html?age=" + a]);
   }
 });

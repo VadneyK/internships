@@ -47,7 +47,7 @@
   }
   if (sel) sel.addEventListener("change", function () { applyState(sel.value, true); });
 
-  fetch("data/safety.json").then(function (r) { return r.json(); }).then(function (d) {
+  G.fetchData("data/safety.json").then(function (r) { return r.json(); }).then(function (d) {
     $("sSteps").innerHTML = d.start.steps.map(function (s) {
       return "<li>" + G.esc(s.text) + ' <span class="small muted">(' + a(s.src.t, s.src.u) + (s.src2 ? " &middot; " + a(s.src2.t, s.src2.u) : "") + ")</span></li>";
     }).join("");
@@ -67,5 +67,6 @@
     $("sGaps").innerHTML = d.gaps.map(function (x) { return "<li>" + G.esc(x) + "</li>"; }).join("");
   }).catch(function () {
     $("sbody-rights").innerHTML = '<p class="muted">The safety facts could not load. Try again.</p>';
+    $("sStatus").textContent = "The safety facts could not load. Try again.";
   });
 })();

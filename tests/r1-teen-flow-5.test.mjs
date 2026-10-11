@@ -41,6 +41,7 @@ test("r1-teen-flow-5: the done callout shows only when all eight are checked", a
 
   setAll(document, window, true);
   assert.equal(done.hidden, false);
+  window.confirm = () => true;
   document.getElementById("readyReset").click();
   assert.equal(done.hidden, true, "hidden after Start over");
   assert.deepEqual(errors, []);

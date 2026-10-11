@@ -11,9 +11,9 @@ scripts: ready
     <p class="small" style="margin-top:1rem;">Parts of this page are California only, see the list below</p>
     <details class="small" style="margin-top:.5rem;max-width:52rem;">
       <summary style="cursor:pointer;font-weight:700;padding:.3rem 0;">Which parts are only for California?</summary>
-      <p>The school district list, the California payday rule, the California tax form and the California birth certificate card are for <b>California</b>. For the permit in any other state use the <a href="permit.html">work permit finder</a> or <a href="states.html">the rules for your state</a>, and the ride picker below covers six cities. The Form I-9 papers, the Social Security card, the federal W-4 and Social Security and Medicare taxes apply to most jobs in every state. The exception is working for your parent's own unincorporated business when you are under 18 (see <a href="paycheck.html">Your first paycheck</a>).</p>
+      <p>The school district list, the California payday rule, the California tax form and the California birth certificate card are for <b>California</b>. For the permit in any other state use the <a href="permit.html">work permit finder</a> or <a href="states.html">the rules for your state</a>, and the ride picker below covers six cities. The Form I-9 papers, the Social Security card, the federal W-4 and Social Security and Medicare taxes apply to most jobs in every state. The exception is working for your parent's own sole proprietorship, or a partnership where both partners are your parents, when you are under 18. It does not apply to a corporation (see <a href="paycheck.html">Your first paycheck</a>).</p>
     </details>
-    <nav class="chips" aria-label="On this page" style="margin-top:1rem;">
+    <nav class="chips" id="parts" aria-label="On this page" style="margin-top:1rem;">
       <a class="chip" style="text-decoration:none" href="#permit">1. Work permit</a>
       <a class="chip" style="text-decoration:none" href="#papers">2. Your papers</a>
       <a class="chip" style="text-decoration:none" href="#money">3. Getting paid</a>
@@ -21,6 +21,23 @@ scripts: ready
       <a class="chip" style="text-decoration:none" href="#city">City programs</a>
       <a class="chip" style="text-decoration:none" href="#first">First day</a>
     </nav>
+    <details id="words" class="callout plain small">
+      <summary>Words you will see</summary>
+      <dl>
+        <dt>Form I-9</dt>
+        <dd>The federal form that proves who you are and that you can work in the US. You show original documents within three business days of starting. <a href="#papers">See how</a></dd>
+        <dt>List A, List B and List C</dt>
+        <dd>Groups of documents for Form I-9. You need one document from List A, or one from List B plus one from List C. A passport alone is on List A. A school ID with a photo is on List B. An unrestricted Social Security card or a birth certificate with an official seal is on List C. <a href="#papers">See how</a></dd>
+        <dt>W-4</dt>
+        <dd>The federal form that tells your employer how much income tax to hold back from each check. <a href="#money">See how</a></dd>
+        <dt>DE 4 (California)</dt>
+        <dd>The California form that tells your employer how much income tax to hold back from each check. If you do not give a DE 4, the employer must use "Single" with zero allowances. <a href="#money">See how</a></dd>
+        <dt>SDI (California)</dt>
+        <dd>California SDI is 1.3% in 2026, on all wages. It pays benefits if a worker cannot work because of illness, injury or pregnancy, and it also funds Paid Family Leave. <a href="#money">See how</a></dd>
+        <dt>Custodial account</dt>
+        <dd>A bank account you own while an adult manages it. The FDIC says minors can open a custodial account or a joint account with an adult, and may be able to open an account on their own, depending on the bank and state law. Under 18, an adult may need to open the account with you. Only open a joint account with an adult you trust: both of you can take the money out. <a href="#money">See how</a></dd>
+      </dl>
+    </details>
     <div class="callout plain small" style="margin-top:1rem;max-width:52rem;">
       <p><b>This is a summary, not legal or tax advice.</b> Each section links to the page we read. Schools, transit agencies and employers can change their rules, so check the link before you rely on a date or a price. Your checklist below is saved on this device only.</p>
     </div>
@@ -29,7 +46,7 @@ scripts: ready
     <ol class="steps row" id="readyList" aria-label="Your checklist"></ol>
     <p class="small muted"><button class="chip" type="button" id="readyReset">Start over</button></p>
     <div class="callout" id="readyDone" hidden>
-      <p><b>All eight done.</b> You are ready for day one. One more page is worth a read before you start.</p>
+      <p><b>All done.</b> You are ready for day one. One more page is worth a read before you start.</p>
       <p class="row"><a class="btn" href="safety.html">Read Safe at work</a></p>
     </div>
     <p class="small">Wondering what comes out of your first check? <a href="paycheck.html">See your first paycheck</a>. Want to know your rights if something feels unsafe? <a href="safety.html">Read Safe at work</a>. Under 14? <a href="younger.html">Start here for ages 12 to 14</a>. A parent has to sign the permit. <a href="parents.html">Parents: start here</a>. <a href="languages.html">Official pages in Spanish, Chinese, Korean, Vietnamese, Tagalog and Ukrainian</a>.</p>
@@ -45,6 +62,7 @@ scripts: ready
       <select id="dist"><option value="">Choose one</option></select></div>
     <p class="sr" id="distStatus" role="status"></p>
     <div class="card" id="distOut" style="margin-top:1rem;"><p class="muted">Pick a district to see its steps. If yours is not listed, ask your school&rsquo;s main office or attendance office. They issue permits during the school year, and in most districts the steps are the same: get hired, fill out the form with your employer and a parent, hand it in, wait a few days.</p></div>
+    <p class="backtop noprint"><a href="#parts">Back to the list of parts</a></p>
   </div>
 </section>
 
@@ -66,6 +84,7 @@ scripts: ready
         <p>The state charges <b>$31 a copy</b> (since Jan 1, 2026) and says the average wait is <b>4 to 6 weeks</b>, plus mail time. The county office where you were born is often faster. An &ldquo;informational&rdquo; copy cannot be used to prove your identity, so order an &ldquo;authorized&rdquo; copy, which needs a notarized form. Start early. A parent can help you order it.</p>
         <p class="small muted">Source: <a href="https://www.cdph.ca.gov/Programs/CHSI/Pages/Vital-Records-Fees.aspx" target="_blank" rel="noopener">CDPH fees</a>, <a href="https://www.cdph.ca.gov/Programs/CHSI/Pages/Vital-Records-Processing-Times.aspx" target="_blank" rel="noopener">processing times</a>.</p></article>
     </div>
+    <p class="backtop noprint"><a href="#parts">Back to the list of parts</a></p>
   </div>
 </section>
 
@@ -88,6 +107,7 @@ scripts: ready
         <p>Most paystubs show lines for <b>federal income tax</b>, <b>California income tax</b>, <b>Social Security</b> (6.2% of pay for the employee), <b>Medicare</b> (1.45%) and <b>California SDI</b> (1.3% in 2026, on all wages). SDI pays benefits if a worker cannot work because of illness, injury or pregnancy, and it also funds Paid Family Leave. Federal and state income tax withheld may come back as a refund when a return is filed.</p>
         <p class="small muted">Sources: <a href="https://edd.ca.gov/en/payroll_taxes/rates_and_withholding/" target="_blank" rel="noopener">EDD rates</a>; <a href="https://www.irs.gov/taxtopics/tc751" target="_blank" rel="noopener">IRS Topic 751</a>; <a href="https://www.ftb.ca.gov/file/personal/do-you-need-to-file.html" target="_blank" rel="noopener">FTB</a>.</p></article>
     </div>
+    <p class="backtop noprint"><a href="#parts">Back to the list of parts</a></p>
   </div>
 </section>
 
@@ -118,6 +138,7 @@ scripts: ready
     <div class="callout plain" id="rideDrive" style="margin:0 0 1.2rem;"></div>
     <p class="share-parent row small" data-share="Here is how I can get to work:"><span class="muted">Need a parent to help get the card?</span></p>
     <div class="callout plain" style="margin-top:1.2rem;"><p><b>Cannot get there?</b> Say so when you apply. Ask whether a parent can drive you at first, whether another employee lives near you, and whether shifts can start after your bus arrives.</p></div>
+    <p class="backtop noprint"><a href="#parts">Back to the list of parts</a></p>
   </div>
 </section>
 
@@ -139,6 +160,7 @@ scripts: ready
         <p>Among 18 to 24 year olds who reported scams to the Better Business Bureau, employment scams had the highest median loss, <b>$1,819</b>, and about 43% of the employment-scam reports mentioned fake checks. A real job does not send you a check and ask you to send money back or buy equipment. See the <a href="rules.html#scams">scam checklist</a>.</p>
         <p class="small muted">Source: <a href="https://bbbmarketplacetrust.org/wp-content/uploads/2024/01/YouthScamsReport2023.pdf" target="_blank" rel="noopener">BBB Institute, 2023</a>. Ages 18 to 24 who chose to report, not all teens.</p></article>
     </div>
+    <p class="backtop noprint"><a href="#parts">Back to the list of parts</a></p>
   </div>
 </section>
 
@@ -153,6 +175,7 @@ scripts: ready
       <li class="ok"><span class="box" aria-hidden="true">&#10003;</span><span>Ask who to tell if something feels unsafe, and what to do if you get hurt. Read <a href="safety.html">Safe at work</a> first.</span></li>
       <li class="ok"><span class="box" aria-hidden="true">&#10003;</span><span>Within 1 to 2 days, send a thank-you to the person who hired you. See the <a href="playbook.html#after">Playbook</a>.</span></li>
     </ul>
+    <p class="backtop noprint"><a href="#parts">Back to the list of parts</a></p>
   </div>
 </section>
 

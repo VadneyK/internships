@@ -1,60 +1,75 @@
-// Data integrity: status must agree with the deadline and opens dates.
-// Reads data/programs/*.json and data/meta.json. "Today" is meta.checked, never the real clock. No network.
+// Every internal link and in-page anchor in the built root pages must resolve, and the sitemap must match the pages.
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { JSDOM } from "jsdom";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const DIR = path.join(ROOT, "data", "programs");
-const CHECKED = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "meta.json"), "utf8")).checked;
-const PROGRAMS = fs.readdirSync(DIR).filter((f) => f.endsWith(".json")).sort()
-  .map((f) => JSON.parse(fs.readFileSync(path.join(DIR, f), "utf8")));
+const SITE = "https://vadneyk.github.io/internships/";
+const pages = fs.readdirSync(ROOT).filter((f) => f.endsWith(".html")).sort();
 
-// Known bad records. Each id maps to the rules it breaks today.
-// Empty on 2026-10-10: the unconfirmed cards that used to carry a deadline_iso now keep the date in deadline_text only.
-const ALLOW = {
-};
+// Known breaks, as "page|href" with a reason. Empty today.
+const ALLOW = {};
+// Pages that are meant to stay out of the sitemap (the error page is not a destination).
+const NOT_IN_SITEMAP = { "404.html": "error page, not a destination", "leaders.html": "noindex and unlisted on purpose (tools/build.py keeps it out until approved)" };
 
-const isDate = (v) => typeof v === "string" && /^\d{4}-\d{2}-\d{2}$/.test(v);
+const docs = new Map();
+for (const f of pages) docs.set(f, new JSDOM(fs.readFileSync(path.join(ROOT, f), "utf8")).window.document);
 
-// Returns the list of rule names this program breaks.
-function violations(p) {
-  const out = [];
-  const { status, deadline_iso: dl, opens_iso: op, deadline_text: dt } = p;
-  if ((status === "open-now" || status === "opens-soon") && isDate(dl) && dl < CHECKED) out.push("deadline-before-checked");
-  if (status === "opens-soon" && isDate(op) && isDate(dl) && op > dl) out.push("opens-after-deadline");
-  if (isDate(op) && isDate(dl) && !(op < dl)) out.push("opens-not-before-deadline");
-  if ((status === "rolling" || status === "year-round" || status === "unconfirmed") && dl) out.push("undated-status-has-deadline");
-  if (status === "event" && !dl && !(dt && String(dt).trim())) out.push("event-has-no-date");
-  return out;
+function hasAnchor(doc, id) {
+  if (!id) return true;
+  for (const el of doc.querySelectorAll("[id]")) if (el.id === id) return true;
+  for (const el of doc.querySelectorAll("a[name]")) if (el.getAttribute("name") === id) return true;
+  return false;
 }
 
-test("meta.checked is a real date and programs were loaded", () => {
-  assert.ok(isDate(CHECKED), "data/meta.json checked must be YYYY-MM-DD");
-  assert.ok(PROGRAMS.length > 0, "no programs found in data/programs");
+test("every internal href and #fragment in built pages resolves", () => {
+  assert.ok(pages.length >= 20, "expected 20+ root pages, found " + pages.length);
+  const fails = [];
+  for (const [page, doc] of docs) {
+    for (const a of doc.querySelectorAll("a[href]")) {
+      const href = a.getAttribute("href").trim();
+      if (href === "" || /^(https?:|mailto:|tel:|sms:|javascript:|data:)/i.test(href)) continue;
+      if (ALLOW[page + "|" + href]) continue;
+      const [beforeHash, ...rest] = href.split("#");
+      const frag = rest.length ? decodeURIComponent(rest.join("#")) : "";
+      const filePart = beforeHash.split("?")[0];
+      let targetPage = page;
+      if (filePart !== "") {
+        const rel = filePart.replace(/^\.\//, "");
+        const full = path.join(ROOT, rel === "" || rel.endsWith("/") ? rel + "index.html" : rel);
+        if (!full.startsWith(ROOT) || !fs.existsSync(full) || fs.statSync(full).isDirectory()) {
+          fails.push(page + ", " + href + " (file not found)");
+          continue;
+        }
+        targetPage = path.relative(ROOT, full);
+      }
+      if (frag && targetPage.endsWith(".html")) {
+        const tdoc = docs.get(targetPage);
+        if (!tdoc) fails.push(page + ", " + href + " (target page not loaded)");
+        else if (!hasAnchor(tdoc, frag)) fails.push(page + ", " + href + " (no id or name '" + frag + "' in " + targetPage + ")");
+      }
+    }
+  }
+  assert.deepEqual(fails, [], "Dead links:\n" + fails.join("\n"));
 });
 
-test("status agrees with deadline_iso and opens_iso for every program", () => {
+test("sitemap lists every root page and every sitemap URL maps to a file", () => {
+  const xml = fs.readFileSync(path.join(ROOT, "sitemap.xml"), "utf8");
+  const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1].trim());
   const problems = [];
-  for (const p of PROGRAMS) {
-    const allowed = ALLOW[p.id] || [];
-    for (const rule of violations(p)) {
-      if (!allowed.includes(rule)) problems.push(`${p.id}: ${rule} (status=${p.status}, opens_iso=${p.opens_iso}, deadline_iso=${p.deadline_iso}, checked=${CHECKED})`);
-    }
+  const listed = new Set();
+  for (const loc of locs) {
+    if (!loc.startsWith(SITE)) { problems.push("sitemap URL outside the site: " + loc); continue; }
+    const rel = loc.slice(SITE.length) || "index.html";
+    listed.add(rel);
+    if (!fs.existsSync(path.join(ROOT, rel))) problems.push("sitemap URL has no file: " + loc);
   }
-  assert.deepEqual(problems, [], "Fix the status or dates for:\n" + problems.join("\n"));
-});
-
-test("ALLOW list ids still break the rule (remove an id once its data is fixed)", () => {
-  const byId = new Map(PROGRAMS.map((p) => [p.id, p]));
-  for (const [id, rules] of Object.entries(ALLOW)) {
-    const p = byId.get(id);
-    assert.ok(p, `${id} is in ALLOW but no longer exists in data/programs, delete it from ALLOW`);
-    const found = violations(p);
-    for (const rule of rules) {
-      assert.ok(found.includes(rule), `${id} no longer breaks ${rule}, delete it from ALLOW`);
-    }
+  for (const f of pages) {
+    if (NOT_IN_SITEMAP[f]) continue;
+    if (!listed.has(f)) problems.push("page missing from sitemap.xml: " + f);
   }
+  assert.deepEqual(problems, [], problems.join("\n"));
 });

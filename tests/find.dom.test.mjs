@@ -514,6 +514,7 @@ test("find: links to the calendar, the work permit finder and the ages 12 to 14 
     ["calendar.html", "What opens when"],
     ["permit.html", "Do I need a work permit?"],
     ["younger.html", "Ages 12 to 14"],
+    ["jobs.html", "Jobs that hire teens"],
   ]);
   for (const href of ["calendar.html", "permit.html", "younger.html"]) {
     assert.ok(document.querySelector("main a[href='" + href + "']"), "find.html should link to " + href);

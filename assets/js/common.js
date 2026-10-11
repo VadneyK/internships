@@ -151,29 +151,38 @@
     set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch (e) { return false; } }
   };
 
-  /* data */
-  var cache, liteCache, coreCache, cardCache, statsCache, detailCache, blurbCache;
-  /* G.loadEntries() is the full file (find.js). G.loadEntries(true) is the lite file: same ids and order, without the long text fields, for pages that only show a few fields. G.loadEntries("core") is the core file: same ids and order, only the keys lib.js needs to match by age, status, season and region. G.loadEntries("card") is the card file: same ids and order, only the short fields the Calendar and Numbers pages read. G.loadEntries("stats") is the stats file: same ids and order, only the keys the Numbers page counts with. G.loadEntries("detail") is the detail file: same ids and order, only id plus the long text (who_can_apply, how_to_apply, notes) that the Programs page fills in after it has drawn the cards from the lite file. */
+  /* data: files load by versioned URL (data/x.json?v=<build hash>), the same hash this script's own src carries, so the browser reuses its copy until the next build */
+  var dataVer = "";
+  try { var me = (document.currentScript && document.currentScript.src) || ""; var vm = /[?&]v=([^&#]+)/.exec(me); if (vm) dataVer = vm[1]; } catch (e) {}
+  G.dataUrl = function (path) { return dataVer ? path + "?v=" + dataVer : path; };
+  /* no version in this script's src (dev server, a page not built by tools/build.py): ask for revalidation so a stale copy is not reused */
+  G.fetchData = function (path) { return dataVer ? fetch(G.dataUrl(path)) : fetch(path, { cache: "no-cache" }); };
+  var cache, liteCache, coreCache, cardCache, homeCache, statsCache, detailCache, blurbCache;
+  /* G.loadEntries() is the full file (find.js). G.loadEntries(true) is the lite file: same ids and order, without the long text fields, for pages that only show a few fields. G.loadEntries("core") is the core file: same ids and order, only the keys lib.js needs to match by age, status, season and region. G.loadEntries("card") is the card file: same ids and order, only the short fields the Calendar and Numbers pages read. G.loadEntries("home") is the home file: same ids and order, only the keys the Home picker reads. G.loadEntries("stats") is the stats file: same ids and order, only the keys the Numbers page counts with. G.loadEntries("detail") is the detail file: same ids and order, only id plus the long text (who_can_apply, how_to_apply, notes) that the Programs page fills in after it has drawn the cards from the lite file. */
   function checkJson(r) {
     if (!r.ok) throw new Error("Could not load programs (" + r.status + ")");
     return r.json();
   }
   G.loadEntries = function (lite) {
     if (lite === "core") {
-      if (!coreCache) coreCache = fetch("data/entries-core.json", { cache: "no-cache" }).then(checkJson);
+      if (!coreCache) coreCache = G.fetchData("data/entries-core.json").then(checkJson);
       return coreCache;
     }
     if (lite === "stats") {
-      if (!statsCache) statsCache = fetch("data/entries-stats.json", { cache: "no-cache" }).then(checkJson);
+      if (!statsCache) statsCache = G.fetchData("data/entries-stats.json").then(checkJson);
       return statsCache;
     }
+    if (lite === "home") {
+      if (!homeCache) homeCache = G.fetchData("data/entries-home.json").then(checkJson);
+      return homeCache;
+    }
     if (lite === "card") {
-      if (!cardCache) cardCache = fetch("data/entries-card.json", { cache: "no-cache" }).then(checkJson);
+      if (!cardCache) cardCache = G.fetchData("data/entries-card.json").then(checkJson);
       return cardCache;
     }
     if (lite === "blurb") {
       if (!blurbCache) {
-        blurbCache = fetch("data/entries-blurb.json", { cache: "no-cache" }).then(checkJson);
+        blurbCache = G.fetchData("data/entries-blurb.json").then(checkJson);
         /* a failed load is not kept, so the next try starts a new request */
         blurbCache.catch(function () { blurbCache = null; });
       }
@@ -181,17 +190,17 @@
     }
     if (lite === "detail") {
       if (!detailCache) {
-        detailCache = fetch("data/entries-detail.json", { cache: "no-cache" }).then(checkJson);
+        detailCache = G.fetchData("data/entries-detail.json").then(checkJson);
         /* a failed load is not kept, so the next try starts a new request */
         detailCache.catch(function () { detailCache = null; });
       }
       return detailCache;
     }
     if (lite) {
-      if (!liteCache) liteCache = fetch("data/entries-lite.json", { cache: "no-cache" }).then(checkJson);
+      if (!liteCache) liteCache = G.fetchData("data/entries-lite.json").then(checkJson);
       return liteCache;
     }
-    if (!cache) cache = fetch("data/entries.json", { cache: "no-cache" }).then(checkJson);
+    if (!cache) cache = G.fetchData("data/entries.json").then(checkJson);
     return cache;
   };
 
@@ -199,7 +208,7 @@
   var programCache = {};
   G.loadProgram = function (id) {
     if (!programCache[id]) {
-      programCache[id] = fetch("data/programs/" + encodeURIComponent(id) + ".json", { cache: "no-cache" }).then(checkJson);
+      programCache[id] = G.fetchData("data/programs/" + encodeURIComponent(id) + ".json").then(checkJson);
       programCache[id].catch(function () { delete programCache[id]; });
     }
     return programCache[id];
@@ -354,21 +363,30 @@
       return i === -1;
     }
   };
-  /* Warn which links open a new tab. Every a[target=_blank] gets "(opens in a new tab)" in its name:
-     appended to aria-label when it has one, otherwise as a visually hidden .sr span. Safe to run again. */
-  var NEWTAB = /opens in a new tab/i;
+  /* Warn which links open a new tab or a PDF. Every a[target=_blank] gets "(opens in a new tab)" in its name,
+     and every link whose path ends in .pdf (query and hash ignored) gets "PDF" in its name. The note is appended
+     to aria-label when the link has one, otherwise added as a visually hidden .sr span. Safe to run again. */
+  var NEWTAB = /opens in a new tab/i, PDFNAME = /PDF/;
+  function isPdfLink(a) {
+    try { return /\.pdf$/i.test(new URL(a.href).pathname); } catch (e) { return false; }
+  }
+  function addNote(a, text, has, attr) {
+    var name = a.getAttribute("aria-label");
+    if (name) {
+      if (!has.test(name)) a.setAttribute("aria-label", name + ", " + text);
+    } else if (!a.querySelector("span.sr[" + attr + "]") && !has.test(a.textContent)) {
+      var m = document.createElement("span");
+      m.className = "sr"; m.setAttribute(attr, "");
+      m.textContent = " (" + text + ")";
+      a.appendChild(m);
+    }
+  }
   G.markNewTabLinks = function (root) {
-    var links = (root || document).querySelectorAll('a[target="_blank"]');
+    var links = (root || document).querySelectorAll('a[target="_blank"], a[href]');
     for (var i = 0; i < links.length; i++) {
-      var a = links[i], label = a.getAttribute("aria-label");
-      if (label) {
-        if (!NEWTAB.test(label)) a.setAttribute("aria-label", label + ", opens in a new tab");
-      } else if (!a.querySelector("span.sr[data-newtab]") && !NEWTAB.test(a.textContent)) {
-        var m = document.createElement("span");
-        m.className = "sr"; m.setAttribute("data-newtab", "");
-        m.textContent = " (opens in a new tab)";
-        a.appendChild(m);
-      }
+      var a = links[i];
+      if (isPdfLink(a)) addNote(a, "PDF", PDFNAME, "data-pdfnote");
+      if (a.getAttribute("target") === "_blank") addNote(a, "opens in a new tab", NEWTAB, "data-newtab");
     }
   };
   (function () {

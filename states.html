@@ -21,8 +21,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=934703b1">
-<link rel="stylesheet" href="assets/css/style.css?v=934703b1">
+<link rel="stylesheet" href="assets/css/fonts.css?v=0eec40f9">
+<link rel="stylesheet" href="assets/css/style.css?v=0eec40f9">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -60,7 +60,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <div class="callout plain small" style="margin-top:1rem;max-width:52rem;">
       <p><b>This is a summary, not legal advice.</b> Rules change and the state page is the one that counts. We read state labor departments directly. The US Department of Labor blocked our reader, so the federal numbers below come from its pages through a text tool and from the state pages that repeat them. When the state and federal rule differ, the stricter one applies. Each section links to the page we read.</p>
     </div>
-    <nav class="chips" aria-label="On this page" style="margin-top:1rem;">
+    <nav class="chips" id="parts" aria-label="On this page" style="margin-top:1rem;">
       <a class="chip" style="text-decoration:none" href="#federal">Federal basics</a>
       <a class="chip" style="text-decoration:none" href="#georgia">Georgia</a>
       <a class="chip" style="text-decoration:none" href="#newyork">New York</a>
@@ -80,6 +80,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <article class="card"><h3>Minimum wage</h3><p>The federal minimum wage is <b>$7.25</b>. Many states and cities pay more. If both apply, you get the higher one. Federal law does not require work permits, but many states do.</p></article>
     </div>
     <p class="small muted" style="margin-top:.8rem;">Sources: US Department of Labor <a href="https://www.dol.gov/agencies/whd/fact-sheets/43-child-labor-non-agriculture" target="_blank" rel="noopener">Fact Sheet 43</a> and <a href="https://webapps.dol.gov/elaws/whd/flsa/docs/hours.asp" target="_blank" rel="noopener">eLaws hours</a>. Federal wage and hour help: 1-866-487-9243.</p>
+    <p class="backtop noprint"><a href="#parts">Back to the list of parts</a></p>
   </div>
 </section>
 
@@ -102,6 +103,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
         <p class="small muted"><a href="https://dol.georgia.gov/employers/child-labor-and-minors-entertainment" target="_blank" rel="noopener">GA DOL Child Labor</a></p></article>
     </div>
     <p><a href="paycheck.html?state=ga">See what comes out of a first paycheck in Georgia.</a></p>
+    <p class="backtop noprint"><a href="#parts">Back to the list of parts</a></p>
   </div>
 </section>
 
@@ -125,6 +127,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
         <p class="small muted"><a href="https://dol.ny.gov/child-labor-law-hub" target="_blank" rel="noopener">Child labor complaints</a></p></article>
     </div>
     <p><a href="paycheck.html?state=ny">See what comes out of a first paycheck in New York.</a></p>
+    <p class="backtop noprint"><a href="#parts">Back to the list of parts</a></p>
   </div>
 </section>
 
@@ -148,6 +151,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
         <p class="small muted"><a href="https://labor.illinois.gov/file-a-complaint.html" target="_blank" rel="noopener">IDOL file a complaint</a></p></article>
     </div>
     <p><a href="paycheck.html?state=il">See what comes out of a first paycheck in Illinois.</a></p>
+    <p class="backtop noprint"><a href="#parts">Back to the list of parts</a></p>
   </div>
 </section>
 
@@ -159,6 +163,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <article class="card"><h3>New York is stricter</h3><p>New York says a for-profit business can have an unpaid intern only if <b>all</b> its criteria are met, including a clear written notice before the internship starts that no wages are paid, and that the intern does not replace staff. For nonprofits there is no &ldquo;intern&rdquo; exemption. Unpaid people are allowed as <b>volunteers</b> at charitable, educational or religious organizations, and they may not replace or add to paid staff. If you are unsure, ask the state labor department.</p><p class="small muted"><a href="https://dol.ny.gov/system/files/documents/2023/09/p725-6-22-23.pdf" target="_blank" rel="noopener">Interns at for-profits</a> &middot; <a href="https://dol.ny.gov/wage-requirements-interns-not-profit-businesses" target="_blank" rel="noopener">Interns at nonprofits</a></p></article>
       <article class="card"><h3>Georgia and Illinois</h3><p>We found no Georgia or Illinois page that sets its own internship rule, so the federal fact sheet is the guide there. In Georgia, a work permit is not required if you are not being paid for community service. If an &ldquo;internship&rdquo; asks you to work regular hours and do real jobs for free, ask a parent or a school counselor to check it, and see the <a href="rules.html#scams">scam checklist</a>.</p><p class="small muted"><a href="https://www.dol.gov/agencies/whd/fact-sheets/71-flsa-internships" target="_blank" rel="noopener">US DOL Fact Sheet 71</a></p></article>
     </div>
+    <p class="backtop noprint"><a href="#parts">Back to the list of parts</a></p>
   </div>
 </section>
 
@@ -169,6 +174,15 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <div class="field" style="max-width:26rem;"><label for="moreSel">State</label><select id="moreSel" data-tiles><option value="">Choose one</option></select></div>
     <p class="sr" id="moreStatus" role="status"></p>
     <div class="card" id="moreOut" style="margin-top:1rem;"><p class="muted">Pick a state.</p></div>
+    <p class="backtop noprint"><a href="#parts">Back to the list of parts</a></p>
+  </div>
+</section>
+
+<section class="nextstep" id="next-step">
+  <div class="wrap">
+    <h2>Your next step</h2>
+    <p><a class="btn" href="permit.html">Find your work permit</a></p>
+    <p>Not sure where to start? Read <a href="ready.html">Get ready for day one</a> first.</p>
   </div>
 </section>
 
@@ -199,7 +213,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
           <li><a href="languages.html">Work rules in your language</a></li>
           <li><a href="insights.html">The numbers</a></li>
           <li><a href="rules.html">Work permit and pay rules</a></li>
-          <li><a href="states.html">Rules in Georgia, New York, Illinois</a></li>
+          <li><a href="states.html">Rules in other states</a></li>
           <li><a href="share.html">Share this guide (QR codes)</a></li>
           <li><a href="contribute.html">Help build this guide</a></li>
         </ul>
@@ -213,9 +227,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=934703b1"></script>
-<script src="assets/js/common.js?v=934703b1"></script>
-<script src="assets/js/states.js?v=934703b1"></script>
+<script src="assets/js/lib.js?v=0eec40f9"></script>
+<script src="assets/js/common.js?v=0eec40f9"></script>
+<script src="assets/js/states.js?v=0eec40f9"></script>
 
 </body>
 </html>

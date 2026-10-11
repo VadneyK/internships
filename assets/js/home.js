@@ -3,7 +3,7 @@
   "use strict";
   var G = window.TIG;
   var $ = function (id) { return document.getElementById(id); };
-  var all = []; /* the card file: enough to match, sort and draw the closing-soon list */
+  var all = []; /* the home file: enough to match, sort and draw the closing-soon list */
   var pickRun = 0; /* counts picker changes so a slow download never draws over a newer pick */
 
   var L = G.lib;
@@ -40,7 +40,7 @@
       var d = fut(e), n = G.daysUntil(d), u = G.safeUrl(e.url);
       var mon = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][d.getMonth()];
       return '<li data-id="' + G.esc(e.id) + '"><div class="d">' + mon + " " + d.getDate() + "<small>" + (n <= 0 ? "today" : n + " days") + "</small></div><div><b>" + G.esc(e.name) + '</b> <span class="tag ' + (e.paid_type === "paid" || e.paid_type === "stipend" ? "y" : "ghost") + '">' + G.esc(G.PAID[e.paid_type] || "") + '</span><br><span class="small muted">' + G.esc(e.org || "") + " &middot; " + G.esc(e.city || "") + "</span>" +
-        (u ? ' <br><a href="' + G.esc(u) + '" target="_blank" rel="noopener">Official page</a>' : "") + "</div></li>";
+        (u ? ' <br><a href="' + G.esc(u) + '" target="_blank" rel="noopener" aria-label="' + G.esc("Official page for " + e.name + (e.org ? ", " + e.org : "")) + '">Official page</a>' : "") + "</div></li>";
     }).join("") : '<li><div class="d">Soon</div><div>No confirmed deadlines in the next few weeks. Browse everything by month.</div></li>';
   }
 
@@ -118,7 +118,7 @@
   ["pAge", "pHub", "pField"].forEach(function (id) { $(id).addEventListener("change", function () { announceNext = true; try { pick(); } finally { announceNext = false; } }); });
   linkAge();
 
-  G.loadEntries("card").then(function (data) {
+  G.loadEntries("home").then(function (data) {
     all = data;
     G.fillPlaces($("pHub"), all);
     savedPrefs();

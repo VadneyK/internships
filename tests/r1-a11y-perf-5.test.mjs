@@ -36,7 +36,7 @@ test("home, calendar, insights and younger scripts never read the dropped keys",
     else if (f === "insights") assert.match(src, /G\.loadEntries\("stats"\)/, f + ".js should load the stats file (r3-a11y-perf-6)");
     else {
       /* home: the card file first, then one small file per chosen program when the picker is used (r3-a11y-perf-2) */
-      assert.match(src, /G\.loadEntries\("card"\)/, f + ".js should load the card file first");
+      assert.match(src, /G\.loadEntries\("home"\)/, f + ".js should load the home file first");
       assert.match(src, /G\.loadProgram\(/, f + ".js should load each chosen program's own file second");
     }
   }

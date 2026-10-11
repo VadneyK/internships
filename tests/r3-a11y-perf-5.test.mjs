@@ -54,7 +54,9 @@ test("common.js loads and caches the card file; the other modes are unchanged; h
     assert.doesNotMatch(s, /loadEntries\(true\)|entries-lite|entries\.json/);
   }
   const home = read("assets/js/home.js");
-  assert.match(home, /G\.loadEntries\("card"\)/);
+  /* The Home picker reads the smaller home file (ticket r2-a11y-perf-6), not the card file. */
+  assert.match(home, /G\.loadEntries\("home"\)/);
+  assert.match(common, /data\/entries-home\.json/);
   assert.match(home, /G\.loadProgram\(/);
 });
 
