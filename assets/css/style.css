@@ -158,6 +158,8 @@ li { margin-bottom: .35em; }
 }
 /* Jump-link targets (On this page chips, find.html#id deep links) stop under the sticky header on desktop */
 main [id], .prog { scroll-margin-top: 5rem; }
+/* Keyboard focus (Tab) scrolls the target under the sticky header on desktop too; the header is static at 40rem and under */
+@media (min-width: 40.0625rem) { html { scroll-padding-top: 5rem; } }
 
 /* buttons, tags, chips */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; font-family: var(--display); font-stretch: 108%; font-weight: 900; font-style: italic; text-transform: uppercase; letter-spacing: .03em; font-size: .95rem; text-decoration: none; background: var(--orange); color: var(--on-orange); border: 3px solid var(--edge); border-radius: 8px; padding: .7rem 1.1rem; box-shadow: var(--shadow-sm); cursor: pointer; min-height: 2.75rem; transition: transform .08s, box-shadow .08s; }
@@ -249,6 +251,14 @@ main [id], .prog { scroll-margin-top: 5rem; }
   .tile[aria-pressed="true"] { forced-color-adjust: none; background: Highlight; color: HighlightText; }
   .star[aria-pressed="true"] { forced-color-adjust: none; background: Highlight; color: HighlightText; }
   :focus-visible { outline: 3px solid Highlight; outline-offset: 3px; }
+  /* Chart fills, legend keys and the progress meter keep a visible difference when colors are forced. */
+  .k1 { forced-color-adjust: none; background: Highlight; color: HighlightText; }
+  .k2 { forced-color-adjust: none; background: CanvasText; color: Canvas; }
+  .k3 { forced-color-adjust: none; background: repeating-linear-gradient(45deg, CanvasText 0 2px, Canvas 2px 6px); color: CanvasText; }
+  .bar.h { forced-color-adjust: none; background: Highlight; }
+  .bar.a { forced-color-adjust: none; background: GrayText; }
+  .meter > i { forced-color-adjust: none; background: Highlight; }
+  .meter.over > i { forced-color-adjust: none; background: CanvasText; }
 }
 .checked { font-size: .78rem; color: var(--ink-2); }
 .empty { text-align: center; padding: 2.5rem 1rem; }
@@ -268,6 +278,8 @@ main [id], .prog { scroll-margin-top: 5rem; }
 .field .hint { font-size: .85rem; color: var(--ink-2); }
 .field input, .field textarea, .field select { font: inherit; font-size: 1rem; padding: .6rem .75rem; border: 2px solid var(--edge); border-radius: 8px; background: var(--paper); color: var(--ink); width: 100%; min-width: 0; }
 .field textarea { min-height: 5.5rem; resize: vertical; }
+/* Placeholder example text uses the ink-2 token, so it passes contrast on --paper, --paper-2 and --surface in both themes. */
+::placeholder { color: var(--ink-2); opacity: 1; }
 .formgrid { display: grid; gap: .9rem 1rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); }
 .letter { background: #fff; color: #151515; border: 3px solid var(--edge); border-radius: 4px; padding: 1.2rem; box-shadow: var(--shadow); white-space: pre-wrap; font-size: 1.02rem; line-height: 1.6; min-height: 10rem; }
 .meter { height: .6rem; border: 2px solid var(--edge); border-radius: 99px; overflow: hidden; background: var(--surface); }
@@ -349,7 +361,12 @@ tr:last-child th { border-bottom: 0; }
   body.print-one > *:not(#printRoot) { display: none !important; }
   body.print-one #printRoot { display: block !important; }
   body::before, .top, .foot, .noprint, .skip, .toast, .theme-btn { display: none !important; }
+  /* Paper keeps the teen's own answer only: unselected tap tiles, the picker captions, the Show more pager,
+     the "Text this to a parent" row and the Menu button stay on the screen. The selected tile still prints. */
+  .tp .tile[aria-pressed="false"], .tp-cap, .pager, .share-parent, .menu-btn { display: none !important; }
   body { background: #ffffff; color: #151515; display: block; }
+  /* Browsers drop background colors on paper unless asked to keep them. Keep the tag fills, chart fills and the chosen tile. */
+  .tag, .k1, .k2, .k3, .bar, .meter > i, .tile[aria-pressed="true"] { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .printonly { display: block !important; }
   .resume { border: 0; box-shadow: none; max-width: none; padding: 0; }
   main, section, .wrap { padding: 0 !important; margin: 0 !important; max-width: none !important; }

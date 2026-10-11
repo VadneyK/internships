@@ -1,8 +1,48 @@
-// Ticket r1-teen-flow-3: one clear Your next step button at the end of Find, Calendar, Permit and Share.
+// Ticket r1-teen-flow-3: the home Got a yes card shows plain next-step chips under the permit card.
+// The chips (not class btn) go to ready.html, paycheck.html and safety.html. The Do I need a permit button
+// still goes to permit.html and still gains ?age= after an age is picked (home.js linkAge stays on the first #offer a.btn).
+// Run with: node --test tests/r1-teen-flow-3.test.mjs
 import test from "node:test";
 import assert from "node:assert/strict";
-import { loadPage } from "./dom-helper.mjs";
+import { loadPage, type, tick } from "./dom-helper.mjs";
 
+test("home Got a yes card: three plain chip links to the next steps, inside #offer", async () => {
+  const { document, errors } = await loadPage("index.html");
+  assert.deepEqual(errors, []);
+  const offer = document.getElementById("offer");
+  assert.ok(offer, "#offer exists");
+  const nav = offer.querySelector("nav.chips");
+  assert.ok(nav, "expected a nav.chips row inside #offer");
+  const links = [...nav.querySelectorAll("a")];
+  assert.deepEqual(
+    links.map((a) => a.getAttribute("href")),
+    ["ready.html", "paycheck.html", "safety.html"],
+  );
+  for (const a of links) {
+    assert.ok(a.classList.contains("chip"), "chip link has class chip");
+    assert.ok(!a.classList.contains("btn"), "chip link must not have class btn");
+    assert.ok(a.textContent.trim().length > 0, "chip link has text");
+    assert.doesNotMatch(a.textContent, new RegExp("[" + String.fromCharCode(8211, 8212) + "]"), "no en or em dash in link text");
+  }
+  assert.equal(links[0].textContent.trim(), "Get ready for day one");
+  assert.equal(links[1].textContent.trim(), "See your first paycheck");
+  assert.equal(links[2].textContent.trim(), "Safe at work");
+});
+
+test("home Got a yes card: the permit button still links to permit.html and gains ?age= after an age is picked", async () => {
+  const { window, document, errors } = await loadPage("index.html");
+  const permit = document.querySelector("#offer a.btn");
+  assert.equal(permit.getAttribute("href"), "permit.html");
+  assert.equal(permit.textContent.trim(), "Do I need a permit?");
+  type(window, document.getElementById("pAge"), "16");
+  await tick(50);
+  assert.deepEqual(errors, []);
+  assert.equal(document.querySelector("#offer a.btn").getAttribute("href"), "permit.html?age=16");
+  const chips = [...document.querySelectorAll("#offer nav.chips a")].map((a) => a.getAttribute("href"));
+  assert.deepEqual(chips, ["ready.html", "paycheck.html", "safety.html"], "chips do not gain ?age=");
+});
+
+// Ticket r1-teen-flow-3 (first half): one clear Your next step button at the end of Find, Calendar, Permit and Share.
 const CASES = [
   { file: "find.html", href: "playbook.html", label: "Write your message" },
   { file: "calendar.html", href: "playbook.html", label: "Write your message" },

@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Do I Need a Work Permit? Pick Your Job and Get the Exact Steps</title>
 <meta name="description" content="Pick your state, age and kind of work (17 states and British Columbia) and see whether you need a work permit, which one, who issues it, what to bring, and a printable checklist and message to your school. Work permit rules for 17 states and BC, from official pages.">
-<meta name="theme-color" content="#151515">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#efede8">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#131211">
 <link rel="canonical" href="https://vadneyk.github.io/internships/permit.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Do I Need a Work Permit? Pick Your Job and Get the Exact Steps">
@@ -20,8 +21,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=34fa4a59">
-<link rel="stylesheet" href="assets/css/style.css?v=34fa4a59">
+<link rel="stylesheet" href="assets/css/fonts.css?v=a815eaf4">
+<link rel="stylesheet" href="assets/css/style.css?v=a815eaf4">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -56,7 +57,8 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <nav class="breadcrumb small muted" aria-label="Breadcrumb"><ol><li><a href="ready.html">Get ready</a></li><li aria-current="page">Work permit finder</li></ol></nav>
     <span class="tag y eyebrow">Papers for your job</span>
     <h1 style="font-size:clamp(2.2rem,7vw,4rem);">Do I need a <span class="orange">permit</span>?</h1>
-    <p class="lede">Pick your state, your age and the kind of work. You get a plain answer, the exact permit if you need one, who gives it to you, what to bring, and a checklist you can print or a message you can send to your school. Last read from official pages on Oct 9, 2026.</p>
+    <p class="lede">Pick your state, your age and the kind of work. You get a plain answer, the exact permit if you need one, who gives it to you, what to bring, and a checklist you can print or a message you can send to your school. Most pages last read Oct 9, 2026. The California card was read Oct 7, 2026.</p>
+    <noscript><div class="callout bad"><p>This page needs JavaScript to answer your permit question. With JavaScript off, read the plain rules on the <a href="rules.html">Rules page</a>.</p></div></noscript>
     <div class="callout plain small" style="margin-top:1rem;max-width:52rem;">
       <p><b>This is a summary, not legal advice.</b> When the pages we read do not say, the answer is &ldquo;check before you start&rdquo; with who to call. Schools and employers can change their forms, so use the links to confirm.</p>
     </div>
@@ -97,6 +99,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
         <div class="field"><label for="mTo">Who is it for?</label>
           <select id="mTo"><option value="school">The school office</option><option value="employer">The employer</option></select></div>
         <pre class="card" id="mText" style="white-space:pre-wrap;font:inherit;"></pre>
+        <div class="sr" id="mStatus" role="status"></div>
         <p class="row"><a class="btn sm" id="mMail" href="#">Open in my email app</a> <button class="btn sm alt" type="button" id="mCopy">Copy the message</button></p>
       </article>
       <article class="card"><h3>Print your checklist</h3>
@@ -166,9 +169,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=34fa4a59"></script>
-<script src="assets/js/common.js?v=34fa4a59"></script>
-<script src="assets/js/permit.js?v=34fa4a59"></script>
+<script src="assets/js/lib.js?v=a815eaf4"></script>
+<script src="assets/js/common.js?v=a815eaf4"></script>
+<script src="assets/js/permit.js?v=a815eaf4"></script>
 
 </body>
 </html>

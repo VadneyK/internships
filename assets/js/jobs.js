@@ -3,7 +3,7 @@
   "use strict";
   var G = window.TIG;
   var $ = function (id) { return document.getElementById(id); };
-  function link(u, t) { return '<a href="' + G.esc(u) + '" target="_blank" rel="noopener">' + G.esc(t) + "</a>"; }
+  function link(u, t) { var s = G.safeUrl(u); return s ? '<a href="' + G.esc(s) + '" target="_blank" rel="noopener">' + G.esc(t) + "</a>" : G.esc(t); }
   function row(k, v) { return v ? "<div><dt>" + G.esc(k) + "</dt><dd>" + G.esc(v) + "</dd></div>" : ""; }
   function card(e) {
     return '<article class="card"><p class="small"><span class="tag y">Starts at ' + e.min_age + "</span> " + G.esc(e.kind) + "</p><h3>" + G.esc(e.name) + "</h3>" +

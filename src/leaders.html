@@ -87,27 +87,27 @@ noindex: true
         <div class="field"><label for="gDate">Date and time</label><input id="gDate" type="text" autocomplete="off" placeholder="Friday, Nov 14, 6:30 to 8:00 pm"></div>
         <div class="field"><label for="gPlace">Place</label><input id="gPlace" type="text" autocomplete="off" placeholder="Fellowship hall, 123 Main St."></div>
         <div class="field"><label for="gLead">Leader name</label><input id="gLead" type="text" autocomplete="off" placeholder="Pastor Kim"></div>
-        <div class="field"><label for="gContact">Leader contact (phone or email)</label><input id="gContact" type="text" autocomplete="off" placeholder="office@example.org"></div>
+        <div class="field"><label for="gContact">Leader contact (phone or email)</label><input id="gContact" type="text" inputmode="text" autocomplete="off" spellcheck="false" placeholder="office@example.org"></div>
       </div>
       <p class="small muted">Saved on this device so you do not retype it. Clear it with the button at the bottom of this section.</p>
     </div>
 
     <div class="grid g2" style="align-items:start;">
       <div>
-        <div class="letter" id="outParent" style="min-height:0;" aria-label="Note to parents preview"></div>
+        <div class="letter" id="outParent" style="min-height:0;" role="group" aria-label="Note to parents preview"></div>
         <div class="chips" style="margin-top:.7rem;"><button class="btn sm" type="button" data-print="outParent" data-title="Note to parents">Print note to parents</button><button class="btn sm alt" type="button" data-copy="outParent">Copy text</button></div>
       </div>
       <div>
-        <div class="letter" id="outGuest" style="min-height:0;" aria-label="Guest briefing sheet preview"></div>
+        <div class="letter" id="outGuest" style="min-height:0;" role="group" aria-label="Guest briefing sheet preview"></div>
         <div class="chips" style="margin-top:.7rem;"><button class="btn sm" type="button" data-print="outGuest" data-title="Guest briefing">Print guest briefing</button><button class="btn sm alt" type="button" data-copy="outGuest">Copy text</button></div>
       </div>
       <div>
-        <div class="letter" id="outSignup" style="min-height:0;" aria-label="Adult sign-up sheet preview"></div>
+        <div class="letter" id="outSignup" style="min-height:0;" role="group" aria-label="Adult sign-up sheet preview"></div>
         <div class="chips" style="margin-top:.7rem;"><button class="btn sm" type="button" data-print="outSignup" data-title="Adult sign-up sheet">Print adult sign-up sheet</button></div>
         <p class="small muted">Print blank copies. Keep the filled sheets with a leader. Do not type adults&rsquo; details into this page.</p>
       </div>
       <div>
-        <div class="letter" id="outEval" style="min-height:0;" aria-label="Teen evaluation card preview"></div>
+        <div class="letter" id="outEval" style="min-height:0;" role="group" aria-label="Teen evaluation card preview"></div>
         <div class="chips" style="margin-top:.7rem;"><button class="btn sm" type="button" data-print="outEval" data-title="Evaluation card">Print evaluation cards</button></div>
       </div>
     </div>

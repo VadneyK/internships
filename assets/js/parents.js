@@ -33,7 +33,13 @@
     var sel = $("pState");
     d.sign.states.forEach(function (s) { var o = document.createElement("option"); o.value = s.id; o.textContent = s.name; sel.appendChild(o); });
     drawStates("");
-    sel.addEventListener("change", function () { drawStates(sel.value); });
+    sel.addEventListener("change", function () {
+      drawStates(sel.value);
+      var total = d.sign.states.length, st = $("pStatus"), msg;
+      if (!sel.value) msg = "Showing all " + total + " places.";
+      else msg = "Showing " + sel.options[sel.selectedIndex].textContent + ". 1 of " + total + " places.";
+      if (st && st.textContent !== msg) st.textContent = msg;
+    });
     para("signNote", d.sign.note);
     list("signOthers", d.sign.others);
     para("langLead", d.languages.lead);

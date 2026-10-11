@@ -65,17 +65,17 @@ scripts: resume
     <p class="noprint">The example below is made up. Replace it with your own. When you are done, press Print and choose Save as PDF. Name the file <b>FirstLast_Resume.pdf</b>. Nothing you type is sent anywhere.</p>
     <p class="noprint small muted">Nothing is saved unless you tick Keep my draft on this device. If you do, the draft stays on this device only, except your email and phone, which are never saved. On a shared computer, leave the box unticked, or press Clear the example before you leave.</p>
     <div class="grid g2" style="align-items:start;">
-      <form class="card noprint" id="rf" onsubmit="return false">
+      <form class="card noprint" id="rf" novalidate onsubmit="return false">
         <h3>About you</h3>
         <div class="formgrid">
-          <div class="field"><label for="rName">Full name</label><input id="rName" type="text" autocomplete="off" value="Alex Rivera"></div>
-          <div class="field"><label for="rEmail">Email</label><input id="rEmail" type="text" autocomplete="off" value="alex.rivera@example.com"></div>
-          <div class="field"><label for="rPhone">Phone (optional)</label><input id="rPhone" type="text" autocomplete="off" value="(510) 555-0142"></div>
-          <div class="field"><label for="rCity">City</label><input id="rCity" type="text" autocomplete="off" value="Oakland, CA"></div>
+          <div class="field"><label for="rName">Full name</label><input id="rName" type="text" autocomplete="off" spellcheck="false" value="Alex Rivera"></div>
+          <div class="field"><label for="rEmail">Email</label><input id="rEmail" type="email" autocomplete="off" spellcheck="false" value="alex.rivera@example.com"></div>
+          <div class="field"><label for="rPhone">Phone (optional)</label><input id="rPhone" type="tel" autocomplete="off" value="(510) 555-0142"></div>
+          <div class="field"><label for="rCity">City</label><input id="rCity" type="text" autocomplete="off" spellcheck="false" value="Oakland, CA"></div>
         </div>
         <h3 style="margin-top:1.2rem;">Education</h3>
         <div class="formgrid">
-          <div class="field"><label for="rSchool">School</label><input id="rSchool" type="text" autocomplete="off" value="Oakland Technical High School"></div>
+          <div class="field"><label for="rSchool">School</label><input id="rSchool" type="text" autocomplete="off" spellcheck="false" value="Oakland Technical High School"></div>
           <div class="field"><label for="rGrad">Graduation year</label><input id="rGrad" type="text" autocomplete="off" value="Expected June 2028"></div>
         </div>
         <div class="field" style="margin-top:.7rem;"><label for="rEduNote">GPA, honors, favorite classes (optional)</label><input id="rEduNote" type="text" autocomplete="off" value="GPA 3.6. Classes: Computer Science, Spanish III"></div>
@@ -93,11 +93,13 @@ Youth group, sound crew, 2024 to present</textarea></div>
         </div>
       </form>
       <div>
-        <div class="resume" id="rv" aria-label="Resume preview"></div>
+        <div class="resume" id="rv" role="group" aria-label="Resume preview"></div>
+        <div class="sr" id="rStatus" role="status"></div>
         <div class="chips noprint" style="margin-top:1rem;">
           <button class="btn" type="button" id="rPrint">Print or save as PDF</button>
           <button class="btn alt" type="button" id="rCopy">Copy as text</button>
         </div>
+        <p id="rExample" class="small noprint" role="status" style="margin-top:.8rem;"><b>This resume still shows the example name and email.</b> Put in your own details before you print, copy or send it.</p>
         <p class="small muted noprint" style="margin-top:.8rem;">If the preview runs past one page, shorten a bullet or remove a line. Ask a teacher, counselor or parent to read it before you send it.</p>
       </div>
     </div>

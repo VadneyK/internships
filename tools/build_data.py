@@ -4,8 +4,10 @@
   data/entries.json  all programs, one array
   data/entries.csv   same, as a spreadsheet
   data/entries-lite.json  same ids and order, without the long text fields (small file for pages that show a few fields)
+  data/entries-blurb.json same ids and order, only id, what_you_do and deadline_text (the Home result cards)
   data/entries-core.json  same ids and order, only the keys lib.js needs to match by age (tiny file for the Ages 12 to 14 page)
   data/entries-card.json  same ids and order, only the keys the Calendar and Numbers pages read (no long text)
+  data/entries-stats.json  same ids and order, only the keys the Numbers page counts with (smaller than the card file)
   data/entries-detail.json  same ids and order, only id plus the long text (who_can_apply, how_to_apply, notes) a program has, read when a card is opened
   data/meta.json     counts and the "last checked" date shown in the footer
 
@@ -25,6 +27,12 @@ CARD_KEYS = (
     "id", "name", "org", "city", "url", "paid_type", "type", "fields", "grades", "needs_work_permit", "verified", "priority",
     "deadline_confidence", "min_age", "max_age", "status", "deadline_iso", "opens_iso", "regions", "season",
 )
+# Only the keys lib.insights() reads (the Numbers page): type, fields, paid_type, regions, status, ages, season, verified, needs_work_permit, deadline dates, id, name.
+STATS_KEYS = (
+    "id", "name", "paid_type", "type", "fields", "needs_work_permit", "verified", "min_age", "max_age", "status",
+    "deadline_iso", "opens_iso", "regions", "season",
+)
+BLURB_KEYS = ("what_you_do", "deadline_text")
 DETAIL_KEYS = ("who_can_apply", "how_to_apply", "notes")
 CSV_COLUMNS = [
     "id", "name", "org", "city", "regions", "type", "fields", "min_age", "max_age", "grades", "paid_type", "pay_detail",
@@ -59,6 +67,15 @@ def main():
     card = [{k: d[k] for k in CARD_KEYS if k in d} for d in programs]
     with open(os.path.join(OUT_DIR, "entries-card.json"), "w", encoding="utf-8") as f:
         json.dump(card, f, ensure_ascii=False, separators=(",", ":"))
+        f.write("\n")
+    # A key whose value is null is left out: lib.js reads a missing key and a null the same way (it tests for null, or parses a missing date as none).
+    stats = [{k: d[k] for k in STATS_KEYS if d.get(k) is not None} for d in programs]
+    with open(os.path.join(OUT_DIR, "entries-stats.json"), "w", encoding="utf-8") as f:
+        json.dump(stats, f, ensure_ascii=False, separators=(",", ":"))
+        f.write("\n")
+    blurb = [{"id": d["id"], **{k: d[k] for k in BLURB_KEYS if k in d}} for d in programs]
+    with open(os.path.join(OUT_DIR, "entries-blurb.json"), "w", encoding="utf-8") as f:
+        json.dump(blurb, f, ensure_ascii=False, separators=(",", ":"))
         f.write("\n")
     detail = [{"id": d["id"], **{k: d[k] for k in DETAIL_KEYS if k in d}} for d in programs]
     with open(os.path.join(OUT_DIR, "entries-detail.json"), "w", encoding="utf-8") as f:

@@ -47,9 +47,10 @@ test("paycheck: typing four digits quickly changes the status line at most once"
   assert.match(st.textContent, SUMMARY);
 });
 
-test("paycheck: the wrong-pay card keeps its live region, since it only changes on a state change", async () => {
+test("paycheck: the wrong-pay card is plain content and a small status line names the state", async () => {
   const { window, document } = await loadPage("paycheck.html"); await tick(100);
-  assert.equal(document.getElementById("mWrong").getAttribute("aria-live"), "polite");
+  assert.equal(document.getElementById("mWrong").getAttribute("aria-live"), null);
+  assert.equal(document.getElementById("mWrongStatus").getAttribute("role"), "status");
   type(window, document.getElementById("mState"), "il");
   assert.match(document.getElementById("mWrong").textContent, /13 days/);
 });

@@ -13,21 +13,8 @@ const PROGRAMS = fs.readdirSync(DIR).filter((f) => f.endsWith(".json")).sort()
   .map((f) => JSON.parse(fs.readFileSync(path.join(DIR, f), "utf8")));
 
 // Known bad records. Each id maps to the rules it breaks today.
-// The data lane must fix status, then delete this line.
+// Empty on 2026-10-10: the unconfirmed cards that used to carry a deadline_iso now keep the date in deadline_text only.
 const ALLOW = {
-  // Same fix needed: these three are unconfirmed but carry a deadline_iso. Fix the data, then delete these lines.
-  "pittsburgh-cmu-cs-scholars": ["undated-status-has-deadline"],
-  "pittsburgh-cmu-pre-college-programs": ["undated-status-has-deadline"],
-  "pittsburgh-cmu-summer-academy-math-science": ["undated-status-has-deadline"],
-  // Same pattern, added with the College Park cards. The page gives a confirmed 2026-27 date but does not say the application is open yet,
-  // so the status stays unconfirmed and the date shows in the Find dates view only.
-  "college-park-pg-parks-shakespeare-in-the-parks-apprenticeship": ["undated-status-has-deadline"],
-  "college-park-pg-parks-teen-performance-ensemble": ["undated-status-has-deadline"],
-  "college-park-umd-sparc-robotics-certificate": ["undated-status-has-deadline"],
-  // Same pattern: the page gives a registration deadline of 2027-06-01 but the registration form could not be read, so the card stays unconfirmed.
-  "nyc-manhattan-university-mechanical-engineering-summer-institute": ["undated-status-has-deadline"],
-  // Same pattern: the page gives a tentative application deadline of 2027-04-11 and says dates may change, so the card stays unconfirmed.
-  "champaign-illinois-arabic-high-school-program": ["undated-status-has-deadline"],
 };
 
 const isDate = (v) => typeof v === "string" && /^\d{4}-\d{2}-\d{2}$/.test(v);

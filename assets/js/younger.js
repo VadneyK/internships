@@ -9,6 +9,9 @@
     var d = res[0], all = res[1];
     var n13 = all.filter(function (e) { return L.matches(e, { age: "13" }, Date.now()) && e.min_age != null && e.min_age <= 13; }).length;
     $("n13").textContent = n13;
+    var n12 = all.filter(function (e) { return L.matches(e, { age: "12" }, Date.now()) && e.min_age != null && e.min_age <= 12; }).length;
+    if (n12 > 0) $("n12").textContent = n12;
+    else $("age12Link").textContent = "Browse programs for age 12";
     $("fedNote").innerHTML = G.esc(d.federal) + " " + a(d.federalSource.t, d.federalSource.u) + ".";
     function drawGrid(only) {
       var sts = d.states.filter(function (s) { return !only || s[0] === only; });
@@ -24,8 +27,37 @@
     d.states.forEach(function (s) { var o = document.createElement("option"); o.value = s[0]; o.textContent = s[1]; ys.appendChild(o); });
     var want = ""; try { want = new URLSearchParams(location.search).get("state") || ""; } catch (e) {}
     ys.value = d.states.some(function (s) { return s[0] === want; }) ? want : "";
+    if (!want) {
+      var pr = G.store.get("findprefs", {}), ss = pr && typeof pr.place === "string" ? L.stateFromPlace(pr.place) : "";
+      if (ss && d.states.some(function (s) { return s[0] === ss; })) ys.value = ss;
+    }
+    if (ys._tpSync) ys._tpSync();
     drawGrid(ys.value);
-    ys.addEventListener("change", function () { drawGrid(ys.value); });
+    /* The Work permit finder button passes the picked state on, for every state permit.html reads (L.PERMIT_STATES). */
+    function syncPermit() {
+      var btn = $("permitBtn");
+      if (!btn) return;
+      btn.setAttribute("href", L.PERMIT_STATES.indexOf(ys.value) > -1 ? "permit.html?state=" + encodeURIComponent(ys.value) : "permit.html");
+    }
+    /* Keep the picked state in the address (state=ny), so a copied or texted link opens on the same state. "All four states" removes it. */
+    function syncStateUrl(v) {
+      try {
+        var p = new URLSearchParams(location.search);
+        if (v) p.set("state", v); else p.delete("state");
+        var q = p.toString();
+        history.replaceState(null, "", location.pathname + (q ? "?" + q : "") + location.hash);
+      } catch (e) { /* the address bar is optional */ }
+    }
+    syncPermit();
+    ys.addEventListener("change", function () {
+      drawGrid(ys.value);
+      syncPermit();
+      syncStateUrl(ys.value);
+      var total = d.states.length, st = $("yStatus"), msg;
+      if (!ys.value) msg = "Showing all " + total + " states.";
+      else msg = "Showing " + ys.options[ys.selectedIndex].textContent + ". 1 of " + total + " states.";
+      if (st && st.textContent !== msg) st.textContent = msg;
+    });
     $("conflicts").innerHTML = li(d.conflicts);
     $("train").innerHTML = d.train.map(function (t) { return "<li><b>" + G.esc(t.t) + ".</b> " + G.esc(t.d) + " " + a("Official page", t.u) + "</li>"; }).join("");
     $("before").innerHTML = li(d.before); $("beforeSrc").innerHTML = "From " + a(d.beforeSource.t, d.beforeSource.u) + ".";

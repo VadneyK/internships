@@ -1,4 +1,4 @@
-// Run with: node --test tests/r2-a11y-perf-6.test.mjs
+// Run with: node --test tests/r2-a11y-perf-6-print.test.mjs
 // Locks in the paper rules in assets/css/style.css: wide tables fit the page instead of being cut off,
 // the table header row repeats on each page, rows do not split, headings stay with the text after them,
 // and the page has a margin. The screen .tablewrap rule keeps its horizontal scroll.

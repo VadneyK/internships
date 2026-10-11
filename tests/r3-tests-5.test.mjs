@@ -144,7 +144,10 @@ test("every quoted data/*.json, assets/... or *.csv path in assets/js exists on 
     for (const m of text.matchAll(/["'`]([^"'`\s\\:]*\.csv)(?:[?#][^"'`\s\\]*)?["'`\\]/g)) found.push([f, cleanPath(m[1])]);
   }
   assert.ok(found.length >= 10, `only ${found.length} path literals found, check the pattern`);
-  const missing = found.filter(([, p]) => !existsSync(join(ROOT, p)) || !statSync(join(ROOT, p)).isFile());
+  // A path that ends in a slash is a folder a script adds an id to, for example "data/programs/" + id + ".json"; the folder must exist.
+  const missing = found.filter(([, p]) => p.endsWith("/")
+    ? !existsSync(join(ROOT, p)) || !statSync(join(ROOT, p)).isDirectory()
+    : !existsSync(join(ROOT, p)) || !statSync(join(ROOT, p)).isFile());
   assert.deepEqual(missing.map(([f, p]) => `${f} -> ${p}`), [], "paths in scripts that are not files");
 });
 
@@ -210,7 +213,10 @@ test("every CSS url() resolves to a non-empty file", () => {
 
 // Data files that are allowed to have no reference. Empty on purpose: entries-lite.json and
 // entries-core.json are both requested by assets/js/common.js, so they need no exception.
-const UNREFERENCED_OK = new Set([]);
+const UNREFERENCED_OK = new Set([
+  // Read only by tests/r3-accuracy-7-expiring-dates.test.mjs: the reviewed list of future dates allowed in teen text.
+  "expiring-dates.json",
+]);
 
 function walk(dir) {
   const out = [];

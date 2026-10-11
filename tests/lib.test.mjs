@@ -170,7 +170,7 @@ test("permitFor: a kind can override its answer for younger ages, so the headlin
   [14, 15].forEach((age) => assert.equal(f("mn", age, "job").verdict, "ask"));
   const mn = f("mn", 15, "job");
   assert.equal(mn.headline, "Check before you start");
-  assert.match(mn.text, /Under 16 you need an employment certificate only to work on school days during school hours\./);
+  assert.match(mn.text, /Under 16 you need an employment certificate only to work on school days during school hours/);
   [14, 15].forEach((age) => assert.equal(f("ny", age, "odd").verdict, "none"));
   [16, 17].forEach((age) => assert.equal(f("mn", age, "job").verdict, "none"));
   assert.equal(f("mn", 16, "job").headline, "You do not need a permit for this");

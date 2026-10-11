@@ -225,6 +225,18 @@
     return "";
   }
 
+  /* The one state a saved area sits in (ca, ga, ...), or "" when it is unknown or spans states. */
+  function stateFromPlace(place) {
+    var rs = placeRegions(typeof place === "string" ? place : ""), st = "";
+    if (!rs || !rs.length) return "";
+    for (var i = 0; i < rs.length; i++) {
+      var s = Object.prototype.hasOwnProperty.call(STATE_OF, rs[i]) ? STATE_OF[rs[i]] : "";
+      if (!s || (st && s !== st)) return "";
+      st = s;
+    }
+    return st;
+  }
+
   /*
     Which permit a teen needs: data is data/permits.json, st a state id (ca, ga, ny, il), age 12 to 18, kind one of data.kinds.
     verdict: need, none, ask (the pages we read do not say), young, adult, or nostate.
@@ -593,6 +605,19 @@
     return { named: named.length, sent: sent, next: next };
   }
   function icsEscape(t) { return String(t || "").replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\r?\n/g, "\\n"); }
+  /* RFC 5545 line folding: at most 75 octets a line, continuation starts with one space, never inside a UTF-8 character or an escape pair. */
+  function icsFold(line) {
+    var out = [], cur = "", n = 0, chars = Array.from(line), i, ch, w;
+    for (i = 0; i < chars.length; i++) {
+      ch = chars[i];
+      if (ch === "\\" && i + 1 < chars.length) { ch += chars[i + 1]; i++; }
+      w = unescape(encodeURIComponent(ch)).length;
+      if (n + w > 75) { out.push(cur); cur = " "; n = 1; }
+      cur += ch; n += w;
+    }
+    out.push(cur);
+    return out.join("\r\n");
+  }
   /* One all-day calendar event as .ics text. dateISO is YYYY-MM-DD. */
   function icsEvent(o) {
     if (!o || !parseISO(o.dateISO)) return "";
@@ -600,7 +625,7 @@
     var stamp = (o.stamp || new Date()).toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
     return ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Teen Internship Guide//EN", "CALSCALE:GREGORIAN", "BEGIN:VEVENT",
       "UID:" + o.uid + "@vadneyk.github.io", "DTSTAMP:" + stamp, "DTSTART;VALUE=DATE:" + day, "DTEND;VALUE=DATE:" + end,
-      "SUMMARY:" + icsEscape(o.title), "DESCRIPTION:" + icsEscape(o.desc), "END:VEVENT", "END:VCALENDAR", ""].join("\r\n");
+      "SUMMARY:" + icsEscape(o.title), "DESCRIPTION:" + icsEscape(o.desc), "END:VEVENT", "END:VCALENDAR"].map(icsFold).concat([""]).join("\r\n");
   }
   function mailtoHref(subject, body) { return "mailto:?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body); }
   function smsHref(body) { return "sms:?&body=" + encodeURIComponent(body); }
@@ -680,7 +705,7 @@
     effStatus: effStatus, futureDeadline: futureDeadline, knownDeadline: knownDeadline, isOpenish: isOpenish, isAnytime: isAnytime, ageOk: ageOk,
     matches: matches, facetCounts: facetCounts, relaxOptions: relaxOptions, placeCounts: placeCounts, rank: rank, compare: compare, sortList: sortList, topPicks: topPicks, ageText: ageText,
     STATUSES: STATUSES, toISO: toISO, addDays: addDays, followUpISO: followUpISO, planSummary: planSummary,
-    icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf, STATE_OF: STATE_OF, permitFor: permitFor, hoursCheck: hoursCheck, paycheck: paycheck, PERMIT_STATES: PERMIT_STATES, CITIES: CITIES, AREAS: AREAS, PICK_GROUPS: PICK_GROUPS, placeRegions: placeRegions, placeLabel: placeLabel, hubsOfPlace: hubsOfPlace,
+    icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf, stateFromPlace: stateFromPlace, STATE_OF: STATE_OF, permitFor: permitFor, hoursCheck: hoursCheck, paycheck: paycheck, PERMIT_STATES: PERMIT_STATES, CITIES: CITIES, AREAS: AREAS, PICK_GROUPS: PICK_GROUPS, placeRegions: placeRegions, placeLabel: placeLabel, hubsOfPlace: hubsOfPlace,
     gradePhrase: gradePhrase
   };
   return api;

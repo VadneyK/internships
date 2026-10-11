@@ -1,4 +1,4 @@
-/* Insights page: charts built from data/entries-card.json. Counting logic lives in lib.js (insights) and is tested. */
+/* Insights page: charts built from data/entries-stats.json. Counting logic lives in lib.js (insights) and is tested. */
 (function () {
   "use strict";
   var G = window.TIG, L = G.lib;
@@ -15,7 +15,7 @@
     }).join("");
   }
 
-  G.loadEntries("card").then(function (list) {
+  G.loadEntries("stats").then(function (list) {
     var d = L.insights(list, Date.now()), f = d.facts;
 
     $("topStats").innerHTML =
@@ -37,12 +37,16 @@
       return '<a class="ccol" href="' + G.esc(link({ age: a.age })) + '" aria-label="Age ' + a.age + ": " + a.n + " programs, " + a.paid + ' paid"><span class="cn">' + a.n + '</span><span class="cbar"><i class="k3" style="height:' + h + '%"><b class="k1" style="height:' + hp + '%"></b></i></span><span class="cl">Age ' + a.age + "</span></a>";
     }).join("");
 
-    /* hubs, stacked */
+    /* hubs, stacked. The counts are written out as text under each bar, so screen readers and
+       keyboard users get them without color or hover. The bar segments are decoration only. */
     var hmax = Math.max.apply(null, d.hubs.map(function (h) { return h.n; }));
     $("chartHubs").innerHTML = d.hubs.map(function (h) {
-      var seg = function (n, cls, pay) { return n ? '<i class="' + cls + '" style="width:' + (n / hmax * 100) + '%" title="' + n + '"></i>' : ""; };
-      return '<a class="crow" href="' + G.esc(link({ where: h.id })) + '"><span class="cl">' + G.esc(h.label) + '</span><span class="ctrack multi">' +
-        seg(h.pay, "k1") + seg(h.free, "k2") + seg(h.fee, "k3") + '</span><span class="cn">' + h.n + '<small> (' + h.pay + " paid)</small></span></a>";
+      var seg = function (n, cls) { return n ? '<i class="' + cls + '" aria-hidden="true" style="width:' + (n / hmax * 100) + '%"></i>' : ""; };
+      var parts = [h.pay + " paid", h.free + " free", h.fee + " costs money"];
+      if (h.unknown) parts.push(h.unknown + " pay not stated");
+      return '<a class="crow" href="' + G.esc(link({ where: h.id })) + '"><span class="cl">' + G.esc(h.label) + '</span><span class="ctrack multi" aria-hidden="true">' +
+        seg(h.pay, "k1") + seg(h.free, "k2") + seg(h.fee, "k3") + '</span><span class="cn">' + h.n + '</span>' +
+        '<span class="cbreak small muted" style="grid-column:1 / -1">' + parts.join(", ") + "</span></a>";
     }).join("");
 
     /* kinds and interests */

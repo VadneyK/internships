@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Safe at Work: Your Rights, Off-Limits Jobs, Harassment, Injuries and Who to Call</title>
 <meta name="description" content="What official pages say about safe work for teens: your right to a safe workplace, jobs under 18 may not do, harassment, injuries and workers' compensation, punishment for speaking up, and phone numbers to call. Federal rules plus California, Georgia, New York and Illinois.">
-<meta name="theme-color" content="#151515">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#efede8">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#131211">
 <link rel="canonical" href="https://vadneyk.github.io/internships/safety.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Safe at Work: Your Rights, Off-Limits Jobs, Harassment, Injuries and Who to Call">
@@ -20,8 +21,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=34fa4a59">
-<link rel="stylesheet" href="assets/css/style.css?v=34fa4a59">
+<link rel="stylesheet" href="assets/css/fonts.css?v=a815eaf4">
+<link rel="stylesheet" href="assets/css/style.css?v=a815eaf4">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -57,6 +58,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <span class="tag y eyebrow">Know your rights</span>
     <h1 style="font-size:clamp(2.2rem,7vw,4rem);">Safe at <span class="orange">work</span></h1>
     <p class="lede">Most jobs are fine. This page is for the day something is not: a task that feels unsafe, an injury, or someone who treats you badly. It shows what official pages say, and who to call. Researched in October 2026.</p>
+    <noscript><div class="callout bad"><p>This page needs JavaScript to show its safety facts and phone numbers. With JavaScript off, read the plain rules on the <a href="rules.html">Rules page</a>.</p></div></noscript>
     <div class="callout" style="margin-top:1rem;max-width:52rem;" id="sStart" aria-labelledby="sStartH">
       <h2 id="sStartH" style="font-size:1.35rem;">Tell a trusted adult, then use these numbers</h2>
       <ol id="sSteps"></ol>
@@ -76,7 +78,23 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <a class="chip" style="text-decoration:none" href="#sec-retaliation">5. Punishment</a>
       <a class="chip" style="text-decoration:none" href="#sec-call">6. Who to call</a>
       <a class="chip" style="text-decoration:none" href="#sec-gaps">What we could not find</a>
+      <a class="chip" style="text-decoration:none" href="#words">Words you will see</a>
     </nav>
+    <details id="words" class="callout plain small" style="margin-top:1rem;max-width:52rem;">
+      <summary>Words you will see</summary>
+      <dl>
+        <dt>OSHA</dt>
+        <dd>The Occupational Safety and Health Administration. OSHA is for unsafe work.</dd>
+        <dt>EEOC</dt>
+        <dd>The Equal Employment Opportunity Commission. The EEOC is for harassment and discrimination.</dd>
+        <dt>Harassment</dt>
+        <dd>Unwelcome behavior based on things like race, color, religion or sex. To break the law, it has to be severe (very serious) or happen often.</dd>
+        <dt>Retaliation</dt>
+        <dd>Employers cannot punish you for using your safety or workplace rights.</dd>
+        <dt>Workers' compensation</dt>
+        <dd>The system that pays for care after a job injury.</dd>
+      </dl>
+    </details>
     <p class="sr" id="sStatus" role="status"></p>
   </div>
 </section>
@@ -119,6 +137,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
 <section id="sec-call">
   <div class="wrap">
     <h2>6. Who to call</h2>
+    <div class="field" style="max-width:24rem;"><label for="sState">Show the numbers for one state</label>
+      <select id="sState" data-tiles data-tiles-any="All states"><option value="">All states</option><option value="ca">California</option><option value="ga">Georgia</option><option value="ny">New York</option><option value="il">Illinois</option><option value="other">Another state</option></select></div>
+    <p class="sr" id="sCallStatus" role="status"></p>
     <div id="sbody-call"></div>
   </div>
 </section>
@@ -182,9 +203,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=34fa4a59"></script>
-<script src="assets/js/common.js?v=34fa4a59"></script>
-<script src="assets/js/safety.js?v=34fa4a59"></script>
+<script src="assets/js/lib.js?v=a815eaf4"></script>
+<script src="assets/js/common.js?v=a815eaf4"></script>
+<script src="assets/js/safety.js?v=a815eaf4"></script>
 
 </body>
 </html>

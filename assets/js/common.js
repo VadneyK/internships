@@ -13,6 +13,15 @@
   function showThemeState() {
     btn.setAttribute("aria-pressed", currentTheme() === "dark" ? "true" : "false");
   }
+  /* browser bar color: both theme-color metas get the shown theme's --paper, so a forced theme wins over the system setting */
+  var BAR_COLOR = { light: "#efede8", dark: "#131211" };
+  function syncThemeColor() {
+    var want = BAR_COLOR[currentTheme()];
+    if (!want) return;
+    Array.prototype.forEach.call(document.querySelectorAll('meta[name="theme-color"]'), function (m) { m.setAttribute("content", want); });
+  }
+  /* with no forced theme the media-scoped metas already follow the system, so only a forced theme needs the sync */
+  if (document.documentElement.getAttribute("data-theme")) syncThemeColor();
   if (btn) {
     showThemeState();
     btn.addEventListener("click", function () {
@@ -20,6 +29,7 @@
       document.documentElement.setAttribute("data-theme", next);
       try { localStorage.setItem("theme", next); } catch (e) {}
       showThemeState();
+      syncThemeColor();
     });
   }
 
@@ -40,13 +50,17 @@
 
   /* toast */
   var toastEl = document.getElementById("toast");
-  var toastTimer;
+  var toastTimer, toastSet;
   G.toast = function (msg) {
     if (!toastEl) return;
-    toastEl.textContent = msg;
+    /* a repeated message goes empty first, so a screen reader announces it again */
+    clearTimeout(toastTimer); clearTimeout(toastSet);
+    if (toastEl.textContent === msg) {
+      toastEl.textContent = "";
+      toastSet = setTimeout(function () { toastEl.textContent = msg; }, 30);
+    } else toastEl.textContent = msg;
     toastEl.classList.add("show");
-    clearTimeout(toastTimer);
-    toastTimer = setTimeout(function () { toastEl.classList.remove("show"); }, 2200);
+    toastTimer = setTimeout(function () { toastEl.classList.remove("show"); toastEl.textContent = ""; }, 2200);
   };
 
   /* copy text, with a fallback for browsers that refuse the clipboard API */
@@ -67,6 +81,11 @@
   };
 
   /* save a file to the device (text or a Blob) */
+  /* true unless the person asked for less motion: use it to pick scroll "smooth" or "auto" */
+  G.motionOK = function () {
+    try { return !(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches); } catch (e) { return true; }
+  };
+
   G.download = function (name, data, mime) {
     var blob = data instanceof Blob ? data : new Blob([data], { type: mime || "text/plain" });
     var a = document.createElement("a");
@@ -133,8 +152,8 @@
   };
 
   /* data */
-  var cache, liteCache, coreCache, cardCache, detailCache;
-  /* G.loadEntries() is the full file (find.js). G.loadEntries(true) is the lite file: same ids and order, without the long text fields, for pages that only show a few fields. G.loadEntries("core") is the core file: same ids and order, only the keys lib.js needs to match by age, status, season and region. G.loadEntries("card") is the card file: same ids and order, only the short fields the Calendar and Numbers pages read. G.loadEntries("detail") is the detail file: same ids and order, only id plus the long text (who_can_apply, how_to_apply, notes) that the Programs page fills in after it has drawn the cards from the lite file. */
+  var cache, liteCache, coreCache, cardCache, statsCache, detailCache, blurbCache;
+  /* G.loadEntries() is the full file (find.js). G.loadEntries(true) is the lite file: same ids and order, without the long text fields, for pages that only show a few fields. G.loadEntries("core") is the core file: same ids and order, only the keys lib.js needs to match by age, status, season and region. G.loadEntries("card") is the card file: same ids and order, only the short fields the Calendar and Numbers pages read. G.loadEntries("stats") is the stats file: same ids and order, only the keys the Numbers page counts with. G.loadEntries("detail") is the detail file: same ids and order, only id plus the long text (who_can_apply, how_to_apply, notes) that the Programs page fills in after it has drawn the cards from the lite file. */
   function checkJson(r) {
     if (!r.ok) throw new Error("Could not load programs (" + r.status + ")");
     return r.json();
@@ -144,9 +163,21 @@
       if (!coreCache) coreCache = fetch("data/entries-core.json", { cache: "no-cache" }).then(checkJson);
       return coreCache;
     }
+    if (lite === "stats") {
+      if (!statsCache) statsCache = fetch("data/entries-stats.json", { cache: "no-cache" }).then(checkJson);
+      return statsCache;
+    }
     if (lite === "card") {
       if (!cardCache) cardCache = fetch("data/entries-card.json", { cache: "no-cache" }).then(checkJson);
       return cardCache;
+    }
+    if (lite === "blurb") {
+      if (!blurbCache) {
+        blurbCache = fetch("data/entries-blurb.json", { cache: "no-cache" }).then(checkJson);
+        /* a failed load is not kept, so the next try starts a new request */
+        blurbCache.catch(function () { blurbCache = null; });
+      }
+      return blurbCache;
     }
     if (lite === "detail") {
       if (!detailCache) {
@@ -162,6 +193,16 @@
     }
     if (!cache) cache = fetch("data/entries.json", { cache: "no-cache" }).then(checkJson);
     return cache;
+  };
+
+  /* G.loadProgram(id) is one program's own small file (data/programs/<id>.json, about 2 KB). The Home picker uses it for its four cards. A failed load is not kept, so the next try asks again. */
+  var programCache = {};
+  G.loadProgram = function (id) {
+    if (!programCache[id]) {
+      programCache[id] = fetch("data/programs/" + encodeURIComponent(id) + ".json", { cache: "no-cache" }).then(checkJson);
+      programCache[id].catch(function () { delete programCache[id]; });
+    }
+    return programCache[id];
   };
 
   /* labels and helpers come from lib.js (pure functions, unit tested) */
@@ -203,6 +244,19 @@
     function groupOf(i) { var g = opts.groups || []; for (var k = 0; k < g.length; k++) if (g[k].items.indexOf(i) > -1) return k; return -1; }
     function pick(i) { sel.selectedIndex = i; sel.dispatchEvent(new Event("change", { bubbles: true })); }
     function paint(keepOpen) {
+      /* remember a focused tile so focus can return to the matching new tile after the rebuild */
+      var fa = document.activeElement, fText = null, fIdx = -1;
+      if (fa && fa !== wrap && wrap.contains(fa) && fa.classList && fa.classList.contains("tile")) {
+        fText = fa.textContent; fIdx = Array.prototype.indexOf.call(wrap.querySelectorAll(".tile"), fa);
+      }
+      paintTiles(keepOpen);
+      if (fText !== null) {
+        var nb = wrap.querySelectorAll(".tile"), hit = nb[fIdx] && nb[fIdx].textContent === fText ? nb[fIdx] : null;
+        if (!hit) for (var n = 0; n < nb.length; n++) if (nb[n].textContent === fText) { hit = nb[n]; break; }
+        if (hit) hit.focus();
+      }
+    }
+    function paintTiles(keepOpen) {
       wrap.textContent = "";
       var tooLong = !opts.groups && sel.options.length > (opts.max || 30);
       sel.classList.toggle("tp-hidden", !tooLong); wrap.hidden = tooLong;

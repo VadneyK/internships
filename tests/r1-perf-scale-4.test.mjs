@@ -1,4 +1,4 @@
-// Home page: the card file loads first; the lite file loads only when the picker is used.
+// Home page: the card file loads first; each chosen program's own small file loads only when the picker is used (r3-a11y-perf-2).
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
@@ -16,7 +16,7 @@ function lib() {
   return ctx.TIG ? ctx.TIG.lib : ctx.window.TIG.lib;
 }
 
-// Logs every fetch URL. failLite: make the lite file answer with an error.
+// Logs every fetch URL. failLite: make the four per-program files answer with an error.
 function setupFetch(urls, { failLite = false } = {}) {
   return (w) => {
     let f;
@@ -24,7 +24,7 @@ function setupFetch(urls, { failLite = false } = {}) {
       configurable: true,
       get: () => (u, o) => {
         urls.push(String(u));
-        if (failLite && /entries-lite\.json/.test(String(u))) return Promise.resolve({ ok: false, status: 500, json: () => Promise.reject(new Error("no")) });
+        if (failLite && /data\/programs\/[^/]+\.json/.test(String(u))) return Promise.resolve({ ok: false, status: 500, json: () => Promise.reject(new Error("no")) });
         return f(u, o);
       },
       set: (v) => { f = v; },
@@ -37,7 +37,7 @@ const plain = (h) => h.replace(/<span class="sr" data-newtab="">[^<]*<\/span>/g,
 // Expected strings are run through the same HTML parser, so entities such as &middot; serialize the same way.
 const norm = (doc, h) => { const d = doc.createElement("div"); d.innerHTML = h; return d.innerHTML; };
 const waitFor = async (fn, ms = 3000) => { const t = Date.now(); while (!fn() && Date.now() - t < ms) await tick(10); };
-const liteUrls = (urls) => urls.filter((u) => /entries-lite\.json/.test(u));
+const liteUrls = (urls) => urls.filter((u) => /data\/programs\/[^/]+\.json/.test(u));
 
 // What the old home.js drew, built from the lite file with the same lib calls.
 function oldSoon(G, L) {
@@ -89,12 +89,12 @@ test("r1-perf-scale-4: the closing-soon list is identical to the one built from 
   assert.deepEqual(p.errors, []);
   const expected = oldSoon(p.window.TIG, p.window.TIG.lib);
   assert.ok(expected.length > 0, "there are closing-soon rows at the fixed date");
-  assert.equal(plain(p.document.getElementById("soonList").innerHTML), norm(p.document, expected.join("")));
+  assert.equal(plain(p.document.getElementById("soonList").innerHTML).replace(/ data-id="[^"]*"/g, ""), norm(p.document, expected.join("")));
   // The place list is filled from the card file and has real counts.
   assert.ok(p.document.querySelectorAll("#pHub option").length > 1);
 });
 
-test("r1-perf-scale-4: the lite file loads once, on the first picker change, and the cards match the old output", async () => {
+test("r1-perf-scale-4: the four program files load on the first picker change, and the cards match the old output", async () => {
   const urls = [];
   const p = await loadPage("index.html", { now: NOW, setup: setupFetch(urls) });
   await tick(100);
@@ -105,8 +105,8 @@ test("r1-perf-scale-4: the lite file loads once, on the first picker change, and
   assert.match(status.textContent, /loading/i, "status says matches are loading");
   assert.equal(p.document.getElementById("matchMore").hidden, false, "the See all link shows at once");
   await waitFor(() => box.children.length > 0);
-  assert.equal(liteUrls(urls).length, 1);
-  assert.equal(urls.filter((u) => /entries-lite\.json/.test(u)).length, 1);
+  assert.equal(liteUrls(urls).length, 4);
+  assert.equal(urls.filter((u) => /entries-blurb\.json|entries-lite\.json|entries\.json/.test(u)).length, 0);
   const exp = oldCards(G, G.lib, { age: "15" });
   assert.ok(exp.html.length === 4, "four cards expected");
   assert.equal(status.textContent, exp.status);
@@ -114,26 +114,26 @@ test("r1-perf-scale-4: the lite file loads once, on the first picker change, and
   assert.equal(plain(box.innerHTML), norm(p.document, exp.html.join("")));
   assert.match(p.document.getElementById("matchMore").textContent, new RegExp("See all " + exp.count + " matches"));
 
-  // A second change makes no new request and draws the same way.
+  // A second change asks only for program files, never a bigger list, and draws the same way.
   const n = urls.length;
   type(p.window, p.document.getElementById("pAge"), "16");
-  await tick(60);
-  assert.equal(urls.length, n, "no new request: " + urls.slice(n).join(", "));
+  await tick(300);
+  assert.ok(urls.slice(n).every((u) => /data\/programs\/[^/]+\.json/.test(u)), "only program files: " + urls.slice(n).join(", "));
   const exp2 = oldCards(G, G.lib, { age: "16" });
   assert.equal(status.textContent, exp2.status);
   assert.equal(plain(box.innerHTML), norm(p.document, exp2.html.join("")));
   assert.deepEqual(p.errors, []);
 });
 
-test("r1-perf-scale-4: if the lite file fails, the status line says so and nothing throws", async () => {
+test("r1-perf-scale-4: if the program files fail, each card says so and nothing throws", async () => {
   const urls = [];
   const p = await loadPage("index.html", { now: NOW, setup: setupFetch(urls, { failLite: true }) });
   await tick(100);
   type(p.window, p.document.getElementById("pAge"), "15");
   const status = p.document.getElementById("matchStatus");
-  await waitFor(() => /could not load/i.test(status.textContent));
-  assert.match(status.textContent, /details could not load/i);
-  assert.equal(p.document.getElementById("matches").children.length, 0);
+  await waitFor(() => /could not load/i.test(p.document.getElementById("matches").textContent));
+  assert.match(p.document.getElementById("matches").textContent, /details could not load for this one/i);
+  assert.equal(p.document.getElementById("matches").children.length, 4);
   assert.equal(p.document.getElementById("matchMore").hidden, false);
   assert.deepEqual(p.errors, []);
   assert.ok(p.document.getElementById("soonList").children.length > 0, "closing-soon list is still there");

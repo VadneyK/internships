@@ -126,6 +126,12 @@ function callArg(src, open, n) {
 
 // Returns a problem string when the URL expression is not a relative plain string literal, else null.
 function urlProblem(expr) {
+  // A relative literal prefix plus an encoded id, for example "data/programs/" + encodeURIComponent(id) + ".json", is safe: the host cannot change.
+  const pre = expr.match(/^(["'])([^"'\\]*)\1\s*\+\s*encodeURIComponent\s*\(/);
+  if (pre) {
+    if (/^[a-z][a-z0-9+.-]*:/i.test(pre[2]) || /^[\\/]{2}/.test(pre[2]) || !pre[2]) return `URL "${pre[2]}" is not relative`;
+    return null;
+  }
   const m = expr.match(/^(["'`])([\s\S]*)\1$/);
   if (!m || m[2].includes(m[1])) return `URL ${expr.slice(0, 60)} is not a plain string literal, so it cannot be checked`;
   let text = m[2];

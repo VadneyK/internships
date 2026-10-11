@@ -12,11 +12,16 @@
     for (var a = 12; a <= 18; a++) $("cAge").appendChild(Object.assign(document.createElement("option"), { value: String(a), textContent: String(a) }));
     var cur = new Date().getMonth() + 1, q = new URLSearchParams(location.search);
     if (+q.get("m") >= 1 && +q.get("m") <= 12) cur = +q.get("m");
+    /* Saved age and area from Programs (localStorage "findprefs"), read only. The address below wins over them. */
+    var PREF_KEY = "findprefs", pr = G.store.get(PREF_KEY, {});
+    if (typeof pr.age === "string" && Array.prototype.some.call($("cAge").options, function (o) { return o.value && o.value === pr.age; })) $("cAge").value = pr.age;
+    if (typeof pr.place === "string" && pr.place && L.placeRegions(pr.place) && Array.prototype.some.call($("cPlace").options, function (o) { return o.value === pr.place; })) $("cPlace").value = pr.place;
     if (q.get("at") && L.placeRegions(q.get("at"))) $("cPlace").value = q.get("at");
     if (q.get("age")) {
       var ageOpt = Array.prototype.some.call($("cAge").options, function (o) { return o.value === q.get("age"); });
       if (ageOpt) $("cAge").value = q.get("age");
     }
+    ["cPlace", "cAge"].forEach(function (id) { if ($(id)._tpSync) $(id)._tpSync(); });
     $("months").innerHTML = SH.map(function (m, i) { return '<button class="chip" type="button" data-m="' + (i + 1) + '" aria-pressed="false">' + m + "</button>"; }).join("");
     function inWindow(it, m) {
       if (it.opens && it.closes) return it.opens <= it.closes ? m >= it.opens && m <= it.closes : m >= it.opens || m <= it.closes;
@@ -53,6 +58,9 @@
       var closing = rows.filter(function (p) { return p[0].closes === cur; }), opening = rows.filter(function (p) { return p[0].closes !== cur; });
       $("hClose").hidden = !closing.length; $("hOpen").hidden = !opening.length; $("cNone").hidden = rows.length > 0;
       var old = $("cNoneNext"); if (old) old.remove();
+      /* The anytime link keeps the age and area, so Programs opens with the same filters. */
+      var anyLink = $("cNoneAnytime");
+      if (anyLink) { var ap = new URLSearchParams(); ap.set("when", "anytime"); if (age) ap.set("age", age); if (place) ap.set("at", place); anyLink.setAttribute("href", "find.html?" + ap.toString()); }
       if (!rows.length) {
         var nb = nextBusy(place, age);
         if (nb) {

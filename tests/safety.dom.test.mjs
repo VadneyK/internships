@@ -86,7 +86,7 @@ test("safety page: says tell a trusted adult, not legal advice, and lists what w
 test("safety page: the On this page chips all point at a section on the page", async () => {
   const { document } = await loadPage("safety.html"); await tick(200);
   const chips = [...document.querySelectorAll('nav[aria-label="On this page"] a')];
-  assert.equal(chips.length, 7);
+  assert.equal(chips.length, 8); // the seven sections plus Words you will see (r3-teen-flow-5)
   for (const c of chips) assert.ok(document.querySelector(c.getAttribute("href")), c.getAttribute("href"));
 });
 

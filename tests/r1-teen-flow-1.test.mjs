@@ -49,7 +49,7 @@ test("r1-teen-flow-1: Parents and Safe at work are plain links inside the youth 
   assert.ok(!safety[0].classList.contains("btn"), "safety link is not a button");
 
   assert.equal(document.querySelectorAll('main a[href="parents.html"]').length, 1, "one parents.html link in main");
-  assert.equal(document.querySelectorAll('main a[href="safety.html"]').length, 1, "one safety.html link in main");
+  assert.equal(document.querySelectorAll('main a[href="safety.html"]').length, 2, "safety.html in the youth callout and in the Got a yes next steps");
   assert.deepEqual(errors, [], "no script errors on the page");
 });
 

@@ -7,7 +7,8 @@
   "paycheck.html": "Your first paycheck",
   "younger.html": "Ages 12 to 14",
   "rules.html": "The Rules",
-  "ready.html": "Get ready"
+  "ready.html": "Get ready",
+  "states.html": "Other states"
  },
  "sign": {
   "lead": {
@@ -81,7 +82,7 @@
    {
     "id": "wi",
     "name": "Wisconsin",
-    "permit": "Work permit for 14 and 15 year olds",
+    "permit": "Work permit (ages vary, confirm with DWD)",
     "need": "Under 16",
     "parent": "A parent or guardian applies for the permit through the Wisconsin Department of Workforce Development and pays for it. The employer must reimburse the $10 fee by the teen's first paycheck.",
     "call": "Wisconsin Department of Workforce Development (dwd.wisconsin.gov)",
@@ -90,7 +91,7 @@
    {
     "id": "in",
     "name": "Indiana",
-    "permit": "No work permit",
+    "permit": "No work permit on the state pages we read",
     "need": "No general permit",
     "parent": "Indiana no longer requires work permits for 14 through 17 year olds on the state pages we read. Ask the employer what proof of age they want.",
     "call": "Indiana Department of Labor Youth Employment Division: (317) 232-2655",
@@ -313,6 +314,10 @@
    {
     "t": "The paycheck page uses Georgia $7.25 (the federal minimum). In New York it uses $17.00 in New York City, Long Island and Westchester and $16.00 in the rest of the state. In Illinois outside Chicago it uses $13.00 for under 18 in the first 650 hours, and $15.00 after 650 hours or at 18 and older.",
     "p": "paycheck.html#est"
+   },
+   {
+    "t": "Cook County outside Chicago has its own minimum wage for workers 18 and older, and some suburbs opted out. The Other states page has the details.",
+    "p": "states.html#other"
    },
    {
     "t": "Social Security tax is 6.2 percent of pay and Medicare tax is 1.45 percent. The employer pays a matching amount. Income tax is not in the estimate, because it depends on the tax forms the teen files.",

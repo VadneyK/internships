@@ -21,9 +21,31 @@
       by[h.group].push(h);
     });
     return groups.map(function (g) {
-      return "<h3>" + G.esc(g) + '</h3><ul style="list-style:none;padding:0;display:grid;gap:.9rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,19rem),1fr));align-items:start;">' + by[g].map(hotlineItem).join("") + "</ul>";
-    }).join("");
+      return '<div class="hgroup" data-group="' + G.esc(g) + '"><h3>' + G.esc(g) + '</h3><ul style="list-style:none;padding:0;display:grid;gap:.9rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,19rem),1fr));align-items:start;">' + by[g].map(hotlineItem).join("") + "</ul></div>";
+    }).join("") + '<p class="callout plain small" id="sOtherNote" hidden>Your state is not one of these four. The numbers above are the national ones. For your own state\'s number to call, use <a href="permit.html">the work permit finder</a>.</p>';
   }
+
+  var STATES = { ca: "California", ga: "Georgia", ny: "New York", il: "Illinois" };
+  var sel = $("sState"), said = $("sCallStatus");
+  function applyState(v, announce) {
+    var groups = document.querySelectorAll("#sbody-call .hgroup"), shown = 0;
+    Array.prototype.forEach.call(groups, function (g) {
+      var name = g.getAttribute("data-group");
+      var show = name === "National" || !v || (v !== "other" && STATES[v] === name);
+      g.hidden = !show;
+      if (show) shown += g.querySelectorAll("li").length;
+    });
+    var note = $("sOtherNote"); if (note) note.hidden = v !== "other";
+    if (!announce || !said) return;
+    said.textContent = !v ? "Showing all " + shown + " numbers, for every state."
+      : v === "other" ? "Showing the " + shown + " national numbers. For your state's own number, use the work permit finder."
+      : "Showing " + shown + " numbers: the national ones and " + STATES[v] + ".";
+  }
+  function wantState() {
+    var w = ""; try { w = (new URLSearchParams(location.search).get("state") || "").toLowerCase(); } catch (e) {}
+    return STATES[w] ? w : "";
+  }
+  if (sel) sel.addEventListener("change", function () { applyState(sel.value, true); });
 
   fetch("data/safety.json").then(function (r) { return r.json(); }).then(function (d) {
     $("sSteps").innerHTML = d.start.steps.map(function (s) {
@@ -40,6 +62,7 @@
       $("sec-" + s.id).querySelector("h2").textContent = s.title;
       $("sbody-" + s.id).innerHTML = "<p>" + G.esc(s.plain) + "</p>" + body;
     });
+    if (sel) { sel.value = wantState(); if (sel._tpSync) sel._tpSync(); applyState(sel.value, false); }
 
     $("sGaps").innerHTML = d.gaps.map(function (x) { return "<li>" + G.esc(x) + "</li>"; }).join("");
   }).catch(function () {

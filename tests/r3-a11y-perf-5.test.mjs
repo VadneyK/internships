@@ -41,7 +41,7 @@ test("card file is compact JSON under 55 percent of the lite file", () => {
   assert.ok(ratio < 0.55, "card is " + Math.round(ratio * 100) + " percent of entries-lite.json");
 });
 
-test("common.js loads and caches the card file; the other modes are unchanged; home.js loads the card file first and the lite file second", () => {
+test("common.js loads and caches the card file; the other modes are unchanged; home.js loads the card file first and each chosen program's file second", () => {
   const common = read("assets/js/common.js");
   assert.match(common, /data\/entries-card\.json/);
   assert.match(common, /cardCache/);
@@ -50,12 +50,12 @@ test("common.js loads and caches the card file; the other modes are unchanged; h
   assert.match(common, /data\/entries\.json/);
   for (const f of ["calendar", "insights"]) {
     const s = read("assets/js/" + f + ".js");
-    assert.match(s, /G\.loadEntries\("card"\)/);
+    assert.match(s, f === "insights" ? /G\.loadEntries\("stats"\)/ : /G\.loadEntries\("card"\)/);
     assert.doesNotMatch(s, /loadEntries\(true\)|entries-lite|entries\.json/);
   }
   const home = read("assets/js/home.js");
   assert.match(home, /G\.loadEntries\("card"\)/);
-  assert.match(home, /G\.loadEntries\(true\)/);
+  assert.match(home, /G\.loadProgram\(/);
 });
 
 test("lib.insights over the card file deep-equals lib.insights over the lite file", () => {
@@ -78,12 +78,12 @@ test("calendar page: month 6 lists the same ids as the lite data gives, and requ
   assert.ok(!urls.some((u) => /entries-lite\.json|entries\.json/.test(u)), "no big file requested: " + urls.join(", "));
 });
 
-test("numbers page: requests the card file and never the lite or full file", async () => {
+test("numbers page: requests the stats file and never the card, lite or full file", async () => {
   const urls = [];
   const p = await loadPage("insights.html", { now: NOW, setup: logFetch(urls) });
   await tick(200);
   assert.deepEqual(p.errors, []);
   assert.match(p.document.getElementById("topStats").textContent, new RegExp(full.length + "\\s*programs listed"));
-  assert.ok(urls.some((u) => /entries-card\.json/.test(u)), "card file requested");
-  assert.ok(!urls.some((u) => /entries-lite\.json|entries\.json/.test(u)), "no big file requested: " + urls.join(", "));
+  assert.ok(urls.some((u) => /entries-stats\.json/.test(u)), "stats file requested");
+  assert.ok(!urls.some((u) => /entries-card\.json|entries-lite\.json|entries\.json/.test(u)), "no bigger file requested: " + urls.join(", "));
 });

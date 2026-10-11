@@ -54,6 +54,8 @@
     var s = data.states[st];
     var cls = r.verdict === "need" ? "y" : r.verdict === "none" || r.verdict === "adult" ? "g" : "";
     var h = '<article class="card verdict ' + r.verdict + '"><span class="tag ' + cls + '">' + G.esc(r.verdict === "need" ? "You need one" : r.verdict === "none" || r.verdict === "adult" ? "No permit" : r.verdict === "young" ? "Too young for this" : "Check first") + "</span>";
+    /* Only when a message or checklist exists (need or ask): a short jump to the Get it done section. */
+    if (r.verdict === "need" || r.verdict === "ask") h += '<p class="small"><a href="#packetSec">Jump to: send a message to your school or print your checklist</a></p>';
     h += "<h2>" + G.esc(r.headline) + "</h2><p>" + G.esc(r.text) + "</p>";
     if (r.verdict === "need") {
       h += "<h3>Who gives it to you</h3><p>" + G.esc(s.issuer) + "</p>";
@@ -89,6 +91,16 @@
     $("pPacket").innerHTML = h;
   }
 
+  /* Screen readers hear one short, debounced note instead of the whole preview after each keystroke. */
+  var statusTimer;
+  function noteUpdated(id, text) {
+    clearTimeout(statusTimer);
+    statusTimer = setTimeout(function () {
+      var el = $(id); el.textContent = "";
+      statusTimer = setTimeout(function () { el.textContent = text; }, 30);
+    }, 800);
+  }
+  function onMsgEdit() { paintMsg(); if (cur) noteUpdated("mStatus", "Message updated."); }
   function paintMsg() {
     if (!cur) return;
     var s = data.states[cur.state], name = $("mName").value.trim() || "[your first name]", emp = $("mEmp").value.trim() || "[the employer]";
@@ -122,9 +134,26 @@
     opt($("pAge"), "18", "18 or older");
     d.kinds.forEach(function (k) { opt($("pKind"), k[0], k[1]); });
     var q = new URLSearchParams(location.search);
+    /* Saved age from Programs (localStorage "findprefs"), read only. The address below wins over it. */
+    var pr = G.store.get("findprefs", {});
+    if (pr && typeof pr.age === "string" && /^(1[2-8])$/.test(pr.age)) $("pAge").value = pr.age;
     ["State", "Age", "Kind"].forEach(function (n) { var v = q.get(n.toLowerCase()); if (v) $("p" + n).value = v; });
+    /* No ?state= in the address: start from the area saved on Programs, when it sits in one state we have read. */
+    if (!q.get("state")) {
+      var pr = G.store.get("findprefs", {}), ss = pr && typeof pr.place === "string" ? L.stateFromPlace(pr.place) : "";
+      if (ss && hasState(ss)) { $("pState").value = ss; if ($("pState")._tpSync) $("pState")._tpSync(); }
+    }
     ["pState", "pAge", "pKind"].forEach(function (id) { $(id).addEventListener("change", changed); });
-    ["mName", "mEmp", "mTo"].forEach(function (id) { $(id).addEventListener("input", paintMsg); $(id).addEventListener("change", paintMsg); });
+    ["mName", "mEmp", "mTo"].forEach(function (id) { $(id).addEventListener("input", onMsgEdit); $(id).addEventListener("change", onMsgEdit); });
+    /* The jump link sits in the answer card, which is re-rendered; the listener stays on the card container. */
+    var packetHead = $("packetSec").querySelector("h2");
+    if (packetHead) packetHead.setAttribute("tabindex", "-1");
+    $("pOut").addEventListener("click", function (e) {
+      var a = e.target && e.target.closest ? e.target.closest('a[href="#packetSec"]') : null;
+      if (!a || !packetHead) return;
+      e.preventDefault();
+      packetHead.focus();
+    });
     $("mCopy").addEventListener("click", function () { G.copy($("mText").textContent); });
     $("pPrint").addEventListener("click", function () { G.printOnly($("pPacket"), "Work permit checklist"); });
     var asked = q.get("state");

@@ -1,0 +1,61 @@
+{
+  "note": "Every full date after reviewed_on that appears in teen text must be listed here. review_by is the date itself. After that day the nearby text must say read, took effect or since, or the text must be fixed. See tests/r3-accuracy-7-expiring-dates.test.mjs.",
+  "reviewed_on": "2026-10-10",
+  "dates": [
+    {
+      "file": "src/ready.html",
+      "text": "June 30, 2027",
+      "review_by": "2027-06-30"
+    },
+    {
+      "file": "src/rules.html",
+      "text": "Jan 1, 2027",
+      "review_by": "2027-01-01"
+    },
+    {
+      "file": "src/states.html",
+      "text": "January 1, 2027",
+      "review_by": "2027-01-01"
+    },
+    {
+      "file": "data/permits.json",
+      "text": "Jan 1, 2027",
+      "review_by": "2027-01-01"
+    },
+    {
+      "file": "data/money.json",
+      "text": "February 16, 2027",
+      "review_by": "2027-02-16"
+    },
+    {
+      "file": "data/money.json",
+      "text": "April 30, 2027",
+      "review_by": "2027-04-30"
+    },
+    {
+      "file": "data/transit.json",
+      "text": "Oct 1, 2027",
+      "review_by": "2027-10-01"
+    },
+    {
+      "file": "data/transit.json",
+      "text": "Sept 30, 2027",
+      "review_by": "2027-09-30"
+    },
+    {
+      "file": "data/transit.json",
+      "text": "Dec 31, 2026",
+      "review_by": "2026-12-31"
+    },
+    {
+      "file": "data/transit.json",
+      "text": "June 30, 2027",
+      "review_by": "2027-06-30"
+    },
+    {
+      "file": "data/languages.json",
+      "text": "Jan 1, 2027",
+      "review_by": "2027-01-01"
+    }
+  ]
+}

@@ -65,13 +65,16 @@ test("ready: a city we have not read says so instead of showing nothing", async 
   assert.match(document.getElementById("rideOut").textContent, /have not read your transit agency/);
 });
 
-test("ready: the opening paragraph is short and the California part sits in its own callout", async () => {
+test("ready: the opening paragraph is short and the California part sits in its own folded details", async () => {
   const { document } = await loadPage("ready.html");
   const lede = document.querySelector(".lede");
   const words = lede.textContent.trim().split(/\s+/).length;
   assert.ok(words <= 45, "lede should be at most 45 words, found " + words);
-  const callout = [...document.querySelectorAll(".callout")].find((c) => /Which parts are for California/.test(c.textContent));
-  assert.ok(callout, "the California callout should exist");
+  const fold = [...document.querySelectorAll("details")].find((d) => /Which parts are only for California/.test(d.querySelector("summary")?.textContent || ""));
+  assert.ok(fold, "the California details should exist");
+  for (const a of ["permit.html", "states.html", "paycheck.html"]) {
+    assert.ok(fold.querySelector(`a[href="${a}"]`), "the California note should link to " + a);
+  }
 });
 
 test("ready: the On this page chips link to six sections that exist on the page", async () => {

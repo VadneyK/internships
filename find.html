@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Programs for High Schoolers Across the US and Vancouver</title>
 <meta name="description" content="Search every paid youth program, internship, research program, volunteer spot and shadowing option we could verify for teens in many states and Vancouver, BC.">
-<meta name="theme-color" content="#151515">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#efede8">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#131211">
 <link rel="canonical" href="https://vadneyk.github.io/internships/find.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Programs for High Schoolers Across the US and Vancouver">
@@ -20,8 +21,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=34fa4a59">
-<link rel="stylesheet" href="assets/css/style.css?v=34fa4a59">
+<link rel="stylesheet" href="assets/css/fonts.css?v=a815eaf4">
+<link rel="stylesheet" href="assets/css/style.css?v=a815eaf4">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -156,6 +157,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <button class="btn sm dark" type="button" id="printList">Print my list</button>
       <button class="btn sm alt" type="button" id="copyList">Copy my list</button>
     </div>
+    <p id="listNext" class="noprint" hidden style="margin:-.5rem 0 1rem;">Saved <span id="listNextN">0</span>. Next: write to one person who works at one of them (<a href="playbook.html">Write your message</a>) or see when they open (<a href="calendar.html">What opens when</a>).</p>
 
     <div id="gaps" class="callout" hidden></div>
 
@@ -173,6 +175,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
 
     <h2 class="sr">Results</h2>
     <div id="out" class="results"></div>
+    <p id="printCut" class="printonly small muted" aria-hidden="true"></p>
     <div id="dates" hidden></div>
     <noscript><p class="callout bad">This page needs JavaScript to filter the list. You can also read the plain list in <a href="data/entries.csv">the spreadsheet file</a>.</p></noscript>
   </div>
@@ -239,9 +242,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=34fa4a59"></script>
-<script src="assets/js/common.js?v=34fa4a59"></script>
-<script src="assets/js/find.js?v=34fa4a59"></script>
+<script src="assets/js/lib.js?v=a815eaf4"></script>
+<script src="assets/js/common.js?v=a815eaf4"></script>
+<script src="assets/js/find.js?v=a815eaf4"></script>
 
 </body>
 </html>

@@ -22,14 +22,38 @@
     $("aRows").innerHTML = DAYS.map(function (n, i) { return "<tr><th scope=\"row\">" + n + '</th><td><select data-d="' + i + '" data-k="from" aria-label="' + n + ' from">' + hourOpts("Not available") + '</select></td><td><select data-d="' + i + '" data-k="to" aria-label="' + n + ' to">' + hourOpts("") + "</select></td></tr>"; }).join("");
     saved.av = saved.av || {};
     document.querySelectorAll("#aRows select").forEach(function (s) { var v = saved.av[s.getAttribute("data-d") + s.getAttribute("data-k")]; if (v) s.value = v; });
+    /* Saved age from Programs (localStorage "findprefs"), read only. The saved plan and the address below win over it. */
+    var pr = G.store.get("findprefs", {});
+    if (pr && typeof pr.age === "string" && /^1[4-7]$/.test(pr.age)) $("aAge").value = pr.age;
     if (saved.av.age) $("aAge").value = saved.av.age; if (saved.av.state) $("aState").value = saved.av.state;
+    var pend = "";
     try {
       var qs = new URLSearchParams(location.search), qSt = qs.get("state"), qAge = qs.get("age");
       if (qSt && Object.prototype.hasOwnProperty.call(pm.states, qSt) && /^1[4-7]$/.test(qAge || "")) { $("aState").value = qSt; $("aAge").value = qAge; }
+      else if (qSt && Object.prototype.hasOwnProperty.call(pm.states, qSt) && /^(12|13|18)$/.test(qAge || "")) { $("aState").value = qSt; }
+      /* An age the list does not have (12, 13, 18): the address bar first, then the age saved on Programs. */
+      var pAge = /^(12|13|18)$/.test(qAge || "") ? qAge : "";
+      if (!qAge) { var pr0 = G.store.get("findprefs", {}); pAge = pr0 && /^(12|13|18)$/.test(pr0.age || "") ? pr0.age : ""; }
+      pend = pAge;
+      /* Address bar first, then the saved plan, then the area saved on Programs. */
+      if (!qs.get("state") && !saved.av.state) {
+        var pr = G.store.get("findprefs", {}), ss = pr && typeof pr.place === "string" ? L.stateFromPlace(pr.place) : "";
+        if (ss && Object.prototype.hasOwnProperty.call(pm.states, ss)) { $("aState").value = ss; if ($("aState")._tpSync) $("aState")._tpSync(); }
+      }
     } catch (e) { /* the address bar is optional */ }
     function days() { return DAYS.map(function (n, i) { var f = document.querySelector('[data-d="' + i + '"][data-k="from"]').value, t = document.querySelector('[data-d="' + i + '"][data-k="to"]').value; return f !== "" && t !== "" ? { from: +f, to: +t } : null; }); }
     function clock(h) { return h === 12 ? "noon" : h < 12 ? h + " a.m." : h - 12 + " p.m."; }
-    var lastText = "", msg = "";
+    var lastText = "", msg = "", YOUNG_ST = ["ca", "ga", "ny", "il"];
+    /* Ages 12, 13 and 18 are not in the age list. A card says why the hour check is empty. */
+    function pendCard(st) {
+      var hour = "The hour check covers ages 14 to 17.";
+      if (pend === "18") {
+        var adultHours = Object.keys(pm.states).some(function (k) { var t = pm.states[k].adult || ""; return /hour/i.test(t) && /\b18\b/.test(t); });
+        return "<h3>Pick your age</h3><p>" + (adultHours ? "At 18 youth hour limits stop. Employers set your hours." : G.esc(hour)) + '</p><p><a href="permit.html">Check your permit</a>.</p>';
+      }
+      var link = "younger.html" + (YOUNG_ST.indexOf(st) > -1 ? "?state=" + encodeURIComponent(st) : "");
+      return "<h3>Pick your age</h3><p>" + G.esc(hour) + " At 12 and 13 the rules differ.</p><p><a href=\"" + G.esc(link) + "\">See the rules for ages 12 to 14</a>.</p>";
+    }
     /* One short line for screen readers, set only after a change (never on load). */
     function say() { if (msg && $("aStatus").textContent !== msg) $("aStatus").textContent = msg; }
     function changed() { paintAv(); say(); }
@@ -41,6 +65,7 @@
       var no = ds.map(function (x, i) { return x ? null : DAYS[i]; }).filter(Boolean);
       var r = L.hoursCheck(st && pm.states[st] ? pm.states[st].limits : null, age, $("aSchool").value === "1", ds);
       lastText = "My availability\n" + (lines.length ? lines.join("\n") : "(none yet)") + "\nAbout " + r.total + " hours a week. I cannot work: " + (no.length ? no.join(", ") : "none") + ".";
+      if (!age && pend) { $("aOut").innerHTML = pendCard(st); msg = "The hour check covers ages 14 to 17."; return; }
       var h = "<h3>" + r.total + " hours a week offered</h3><p>" + (lines.length ? G.esc(lines.join(". ")) + "." : "No days chosen yet.") + "</p>";
       if (!age || !st) h += '<p class="muted">Pick your age and state to check the hour limits.</p>';
       else if (!r.limited) h += "<p><b>This tool cannot check a plan against a number for age " + G.esc(age) + " in " + G.esc(pm.states[st].name) + ".</b> Here is what the state's pages say: " + G.esc(pm.states[st].hours[+age >= 16 ? "16" : "14"] || "Not stated.") + "</p>";
@@ -75,6 +100,7 @@
     $("askList").innerHTML = d.ask.map(function (x) { return "<li>" + G.esc(x) + "</li>"; }).join("");
     $("askSrc").innerHTML = "From " + a(d.askSource.t, d.askSource.u) + ".";
     $("dayList").innerHTML = d.day.map(function (x) { return "<li>" + G.esc(x) + "</li>"; }).join("");
+    $("daySrc").innerHTML = "Tips from " + d.daySource.map(function (s) { return a(s.title, s.url); }).join(", ") + ".";
 
     /* references */
     $("refRules").innerHTML = d.refs.rules.map(function (x) { return "<li>" + G.esc(x) + "</li>"; }).join("");
@@ -102,13 +128,22 @@
     /* thank-you */
     $("thanksTiming").innerHTML = G.esc(d.thanks.timing) + " " + a(d.thanks.source.t, d.thanks.source.u) + ".";
     var tf = ["tTo", "tJob", "tHelp", "tName"];
+    /* Screen readers hear one short, debounced note instead of the whole preview after each keystroke. */
+    var statusTimer;
+    function noteUpdated(id, text) {
+      clearTimeout(statusTimer);
+      statusTimer = setTimeout(function () {
+        var el = $(id); el.textContent = "";
+        statusTimer = setTimeout(function () { el.textContent = text; }, 30);
+      }, 800);
+    }
     function paintT() {
       var to = $("tTo").value.trim() || "[name]", job = $("tJob").value.trim() || "[the job]", help = $("tHelp").value.trim() || "[one way I can help]", me = $("tName").value.trim() || "[your first name]";
       var subject = "Thank you for talking with me";
       var body = "Hello " + to + ",\n\nThank you for your time and for talking with me about the " + job + ". I am still very interested. " + help.charAt(0).toUpperCase() + help.slice(1) + (/[.!?]$/.test(help) ? "" : ".") + "\n\nThank you again,\n" + me;
       $("tText").textContent = "Subject: " + subject + "\n\n" + body; $("tMail").href = L.mailtoHref(subject, body);
     }
-    tf.forEach(function (id) { $(id).addEventListener("input", paintT); }); paintT();
+    tf.forEach(function (id) { $(id).addEventListener("input", function () { paintT(); noteUpdated("tStatus", "Note updated."); }); }); paintT();
     $("tCopy").addEventListener("click", function () { G.copy($("tText").textContent); });
 
     $("iGaps").innerHTML = d.gaps.map(function (x) { return "<li>" + G.esc(x) + "</li>"; }).join("");

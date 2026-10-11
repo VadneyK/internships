@@ -59,7 +59,7 @@ navparent: resume
     <h2>3. Ask, bring and wear</h2>
     <div class="grid g2" style="align-items:start;">
       <article class="card"><h3>Two questions to ask them</h3><p class="small muted">Pick two.</p><ul id="askList"></ul><p class="small muted" id="askSrc"></p></article>
-      <article class="card"><h3>The day of</h3><ul id="dayList"></ul></article>
+      <article class="card"><h3>The day of</h3><ul id="dayList"></ul><p class="small muted" id="daySrc"></p></article>
     </div>
   </div>
 </section>
@@ -85,6 +85,7 @@ navparent: resume
         <div class="field"><label for="tName">Your first name</label><input id="tName" type="text" autocomplete="off"></div>
       </article>
       <article class="card"><pre id="tText" style="white-space:pre-wrap;font:inherit;"></pre>
+        <div class="sr" id="tStatus" role="status"></div>
         <p class="row"><a class="btn sm" id="tMail" href="#">Open in my email app</a> <button class="btn sm alt" type="button" id="tCopy">Copy the note</button></p></article>
     </div>
   </div>

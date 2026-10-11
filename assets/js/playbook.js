@@ -118,7 +118,10 @@
     $("fToSel").value = String(i); $("fTo").value = r.n || "";
     if (r.h) { var h = r.h.trim(); $("fHow").value = h.charAt(0).toUpperCase() + h.slice(1) + (/[.!?]$/.test(h) ? "" : "."); }
     build();
-    $("message").scrollIntoView({ behavior: "smooth", block: "start" });
+    var msg = $("message");
+    if (!msg.hasAttribute("tabindex")) msg.setAttribute("tabindex", "-1");
+    msg.scrollIntoView({ behavior: G.motionOK() ? "smooth" : "auto", block: "start" });
+    msg.focus({ preventScroll: true });
     var next = ["fMe", "fGrade", "fSchool", "fHow", "fCurious"].filter(function (id) { return !$(id).value.trim(); })[0] || "fCurious";
     setTimeout(function () { $(next).focus({ preventScroll: true }); }, 350);
   }

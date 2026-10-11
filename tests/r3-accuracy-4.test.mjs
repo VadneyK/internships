@@ -22,7 +22,7 @@ test("the 'You do not need a permit for' list does not contain 'pet care'", () =
 });
 
 test("the no-permit note says a self-employed minor needs no permit and asks the Labor Commissioner about pet care", () => {
-  assert.match(SRC, /A self-employed minor needs no permit\. Pet care is not named on the state chart, so ask the Labor Commissioner at 833-526-4636\./);
+  assert.match(SRC, /A self-employed minor needs no permit on the chart\. Pet care is not named on the state chart, so ask the Labor Commissioner at 833-526-4636\./);
 });
 
 test("ca kinds.own does not list 'pet care' as an example", () => {
@@ -30,5 +30,12 @@ test("ca kinds.own does not list 'pet care' as an example", () => {
   const examples = text.match(/\(([^)]*)\)/g) || [];
   assert.ok(examples.length >= 1, "the own text has an example list");
   for (const ex of examples) assert.doesNotMatch(ex, /pet care/i, "example list: " + ex);
-  assert.match(text, /A self-employed minor needs no permit\. Pet care is not named on the state chart, so ask the Labor Commissioner at 833-526-4636\./);
+  assert.match(text, /A self-employed minor needs no permit on the chart\. Pet care is not named on the state chart, so ask the Labor Commissioner at 833-526-4636\./);
+});
+
+test("a caveat sits directly under the hours table saying the 12 to 13 row is for the few allowed jobs", () => {
+  const tableEnd = SRC.indexOf("</table>", SRC.indexOf('<section id="hours">'));
+  assert.ok(tableEnd > 0, "the hours table is on the page");
+  const after = SRC.slice(tableEnd, SRC.indexOf("<ul", tableEnd));
+  assert.match(after, /<p[^>]*>The 12 to 13 row is for the few jobs allowed at that age, such as the ones listed under How young can I work\. Most paid jobs start at 14\.<\/p>/);
 });

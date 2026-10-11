@@ -53,6 +53,15 @@
       awards: val("rAwards").split(",").map(function (s) { return s.trim(); }).filter(Boolean)
     };
   }
+  /* Screen readers hear one short, debounced note instead of the whole preview after each keystroke. */
+  var statusTimer;
+  function noteUpdated(id, text) {
+    clearTimeout(statusTimer);
+    statusTimer = setTimeout(function () {
+      var el = $(id); el.textContent = "";
+      statusTimer = setTimeout(function () { el.textContent = text; }, 30);
+    }, 800);
+  }
   function render() {
     var r = get(), h = "";
     var contact = [r.city, r.email, r.phone].filter(Boolean).join("  |  ");
@@ -82,7 +91,12 @@
     if (r.awards.length) { t.push("AWARDS"); t.push(r.awards.join(", ")); }
     return t.join("\n");
   }
-  $("rf").addEventListener("input", function () { render(); if (KEEP.checked) saveDraft(); });
+  /* Shows a warning under the buttons while the example name or email is still in the form. Hidden once both are changed or cleared. */
+  function updateExampleNote() {
+    var stillExample = $("rName").value.trim() === "Alex Rivera" || $("rEmail").value.trim() === "alex.rivera@example.com";
+    $("rExample").hidden = !stillExample;
+  }
+  $("rf").addEventListener("input", function () { render(); noteUpdated("rStatus", "Resume updated."); updateExampleNote(); if (KEEP.checked) saveDraft(); });
   KEEP.addEventListener("change", function () {
     if (KEEP.checked) saveDraft();
     else { try { localStorage.removeItem("resume"); } catch (e) {} }
@@ -90,7 +104,7 @@
   $("rClear").addEventListener("click", function () {
     $("rf").querySelectorAll("input, textarea").forEach(function (i) { i.value = ""; });
     try { localStorage.removeItem("resume"); } catch (e) {}
-    render(); $("rName").focus();
+    render(); updateExampleNote(); $("rName").focus();
   });
   $("rPrint").addEventListener("click", function () { G.printOnly($("rv"), (($("rName").value || "My").replace(/[^a-z0-9]+/gi, "") || "My") + "_Resume"); });
   $("rCopy").addEventListener("click", function () { G.copy(asText()); });
@@ -98,4 +112,5 @@
   KEEP.checked = Object.keys(G.store.get("resume", {})).length > 0;
   if (KEEP.checked) restoreDraft();
   render();
+  updateExampleNote();
 })();

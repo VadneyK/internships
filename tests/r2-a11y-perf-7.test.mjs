@@ -2,7 +2,7 @@
 // so a pressed chip or saved star must show its state some other way. The forced-colors block in
 // assets/css/style.css uses system color keywords and gives :focus-visible a thick outline.
 // Run with: node --test tests/r2-a11y-perf-7.test.mjs
-// The checks read the stylesheet as text, in the same way as tests/r2-a11y-perf-6.test.mjs.
+// The checks read the stylesheet as text, in the same way as tests/r2-a11y-perf-6-print.test.mjs.
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";

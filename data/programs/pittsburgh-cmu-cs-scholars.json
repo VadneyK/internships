@@ -20,9 +20,9 @@
   "season": "summer",
   "duration": "4 weeks, June 26 to July 24, 2027, residential",
   "status": "unconfirmed",
-  "deadline_text": "Application deadline February 1, 2027. Decisions released April 1, 2027.",
-  "deadline_iso": "2027-02-01",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_text": "The CMU pages list a February 1, 2027 deadline (decisions April 1, 2027) but do not say when applications open or whether they are open now. Check the CMU Pre-College page before you plan around it.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Apply online through the CMU Pre-College application portal by February 1, 2027. Residential only; full participation required.",
   "needs_work_permit": false,
   "apply_url": "https://apply-precollege.studentaffairs.cmu.edu/apply/",
@@ -34,5 +34,5 @@
   "priority": 2,
   "notes": "Status is unconfirmed only because the application opening date is not posted; the 2027 deadlines are confirmed on the program pages (the apply portal could not be read). Limited spots. The admission page lists two different dates for this application (February 1 and March 1, 2027); the program page and the deadlines table both say February 1, 2027, so apply by then. Completers may be invited back to AI Scholars.",
   "verified": "fetched",
-  "verified_on": "2026-10-09"
+  "verified_on": "2026-10-10"
 }

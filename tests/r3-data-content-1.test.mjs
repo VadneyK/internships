@@ -14,6 +14,40 @@ for (const f of ["entries", "entries-lite", "entries-core"]) {
   });
 }
 
+// Cards whose how_to_apply names a sign-up site. Cards left null had no link on their own page
+// (or only a single job listing on a host the text does not name).
+const SET = {
+  "worksource-dekalb-wioa-youth-services": "https://atlworks.org/",
+  "santa-clarita-public-library-teen-advisory-board": "https://santaclaritavolunteers.com/",
+  "nc-summer-ventures-science-math": "https://www.cfnc.org/",
+  "long-beach-parks-recreation-program-leader": "https://www.governmentjobs.com/careers/longbeach",
+};
+const NULL = [
+  "gwinnett-volunteer-internship-program",
+  "gwinnett-parks-lifeguard-jobs",
+  "georgia-worksource-youth-wioa",
+  "seattle-parks-lifeguard-jobs",
+];
+const ENTRIES = JSON.parse(fs.readFileSync(new URL("../data/entries.json", import.meta.url), "utf8"));
+const program = (id) => JSON.parse(fs.readFileSync(new URL(`../data/programs/${id}.json`, import.meta.url), "utf8"));
+const hostsNamed = (t) => [...new Set(t.toLowerCase().match(/[a-z0-9-]+(?:\.[a-z0-9-]+)+/g) || [])];
+
+for (const [id, url] of Object.entries(SET)) {
+  test(`${id}: apply_url is https on a host named in how_to_apply`, () => {
+    const card = program(id);
+    assert.equal(card.apply_url, url);
+    const u = new URL(card.apply_url);
+    assert.equal(u.protocol, "https:");
+    assert.ok(hostsNamed(card.how_to_apply).some((h) => u.hostname === h || u.hostname.endsWith("." + h)));
+    assert.equal(ENTRIES.find((e) => e.id === id).apply_url, url);
+  });
+}
+for (const id of NULL) {
+  test(`${id}: apply_url stays null`, () => {
+    assert.equal(program(id).apply_url, null);
+  });
+}
+
 test("survivor covers statewide and silicon-valley with the sign-up link", () => {
   const e = read("data/entries.json").find((x) => x.id === KEPT);
   assert.ok(e, "survivor missing");

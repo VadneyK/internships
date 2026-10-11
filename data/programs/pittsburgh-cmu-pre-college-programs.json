@@ -20,9 +20,9 @@
   "season": "summer",
   "duration": "3 to 6 weeks depending on the program (summer 2027 starts June 26)",
   "status": "unconfirmed",
-  "deadline_text": "Scholarship application deadline February 1, 2027 (decisions April 1, 2027). Basic application deadline March 1, 2027 (rolling decisions).",
-  "deadline_iso": "2027-03-01",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_text": "The CMU pages list a scholarship deadline of February 1, 2027 and a basic application deadline of March 1, 2027, but do not say when applications open or whether they are open now. Check the CMU Pre-College page before you plan around it.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Apply online through the CMU Pre-College application portal. The scholarship option is only considered under the February 1, 2027 deadline.",
   "needs_work_permit": false,
   "apply_url": "https://apply-precollege.studentaffairs.cmu.edu/apply/",
@@ -35,5 +35,5 @@
   "priority": 3,
   "notes": "Status is unconfirmed only because the application opening date is not posted; the 2027 deadlines are confirmed on the program pages (the apply portal could not be read). Expensive; shown so families know the cost and the scholarship route. The three fully funded programs (AI Scholars, CS Scholars, SAMS) cost nothing. Check the cost page again in November 2026 for 2027 prices.",
   "verified": "fetched",
-  "verified_on": "2026-10-09"
+  "verified_on": "2026-10-10"
 }

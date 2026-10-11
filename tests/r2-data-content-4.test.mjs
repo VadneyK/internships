@@ -10,24 +10,17 @@ const L = require("../assets/js/lib.js");
 const ENTRIES = JSON.parse(readFileSync(new URL("../data/entries.json", import.meta.url), "utf8"));
 const NOW = new Date(2026, 9, 10).getTime(); // the checked date in data/meta.json
 
+// Cards whose page gives a date but not an open status keep the date in deadline_text only (deadline_iso null), so they are not listed here.
 const KNOWN = {
   "bloomington-iu-jacobs-composition-academy": "2027-01-11",
-  "champaign-illinois-arabic-high-school-program": "2027-04-11",
   "nc-museum-natural-sciences-cafe-coordinators": "2027-04-19",
   "nc-museum-natural-sciences-climate-resilience-institute": "2027-04-09",
   "bloomington-iu-jacobs-dance-summer-intensives": "2027-02-08",
-  "college-park-pg-parks-shakespeare-in-the-parks-apprenticeship": "2027-03-01",
-  "college-park-pg-parks-teen-performance-ensemble": "2027-02-07",
-  "college-park-umd-sparc-robotics-certificate": "2026-12-01",
   "emory-pre-college-program": "2027-05-03",
   "lafayette-purdue-sciencescape": "2027-04-16",
   "seattle-teens-in-public-service-summer-internship": "2027-02-05",
   "nc-museum-natural-sciences-junior-interpreters": "2027-03-22",
   "nyc-columbia-pre-college-nyc-commuter-summer": "2027-04-01",
-  "nyc-manhattan-university-mechanical-engineering-summer-institute": "2027-06-01",
-  "pittsburgh-cmu-cs-scholars": "2027-02-01",
-  "pittsburgh-cmu-pre-college-programs": "2027-03-01",
-  "pittsburgh-cmu-summer-academy-math-science": "2027-02-01",
   "richmond-rcmp-youth-academy": "2027-04-06",
   "richmond-sd38-biomedical-health-science-dual-credit": "2027-03-09"
 };
@@ -50,7 +43,7 @@ test("the cards with a confirmed date get it, and futureDeadline still returns n
 });
 
 test("a closed card with a last-year pattern or a past date returns null", () => {
-  const base = byId("pittsburgh-cmu-cs-scholars");
+  const base = byId("bloomington-iu-jacobs-composition-academy");
   const pattern = Object.assign({}, base, { deadline_confidence: "last-year-pattern" });
   assert.equal(L.knownDeadline(pattern, NOW), null);
   const past = Object.assign({}, base, { deadline_iso: "2026-10-08" });
@@ -60,7 +53,7 @@ test("a closed card with a last-year pattern or a past date returns null", () =>
 });
 
 test("today counts, and unconfirmed cards work the same way", () => {
-  const base = byId("pittsburgh-cmu-cs-scholars");
+  const base = byId("bloomington-iu-jacobs-composition-academy");
   const today = Object.assign({}, base, { deadline_iso: "2026-10-10" });
   assert.ok(L.knownDeadline(today, NOW));
   const unconf = Object.assign({}, base, { status: "unconfirmed" });
@@ -78,7 +71,7 @@ test("it matches futureDeadline when that is set, and never adds other statuses"
 });
 
 test("the 60 day filter does not pick up the new rows", () => {
-  const e = byId("pittsburgh-cmu-cs-scholars");
+  const e = byId("bloomington-iu-jacobs-composition-academy");
   const far = new Date(2026, 11, 20).getTime();
   assert.equal(L.matches(e, { when: "60" }, far), false);
 });

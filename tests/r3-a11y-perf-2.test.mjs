@@ -12,7 +12,7 @@ function structure(document, out, status, id) {
   const o = document.getElementById(out);
   assert.equal(o.hasAttribute("aria-live"), false);
   assert.equal(o.hasAttribute("role"), false);
-  const sts = document.querySelectorAll(".sr[role=status]");
+  const sts = document.querySelectorAll(".sr[role=status]:not(#mStatus):not(#tStatus)");
   assert.equal(sts.length, 1);
   assert.equal(sts[0].id, status);
   assert.equal(sts[0].textContent, "");

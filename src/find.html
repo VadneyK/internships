@@ -107,6 +107,7 @@ scripts: find
       <button class="btn sm dark" type="button" id="printList">Print my list</button>
       <button class="btn sm alt" type="button" id="copyList">Copy my list</button>
     </div>
+    <p id="listNext" class="noprint" hidden style="margin:-.5rem 0 1rem;">Saved <span id="listNextN">0</span>. Next: write to one person who works at one of them (<a href="playbook.html">Write your message</a>) or see when they open (<a href="calendar.html">What opens when</a>).</p>
 
     <div id="gaps" class="callout" hidden></div>
 
@@ -124,6 +125,7 @@ scripts: find
 
     <h2 class="sr">Results</h2>
     <div id="out" class="results"></div>
+    <p id="printCut" class="printonly small muted" aria-hidden="true"></p>
     <div id="dates" hidden></div>
     <noscript><p class="callout bad">This page needs JavaScript to filter the list. You can also read the plain list in <a href="data/entries.csv">the spreadsheet file</a>.</p></noscript>
   </div>

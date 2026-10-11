@@ -104,3 +104,11 @@ test("if a younger.json Babysitting cell says 'at least 14', the federal text na
     assert.match(younger.federal, /New York/, `younger.json federal text must name New York because the ${state} Babysitting cell says "at least 14"`);
   }
 });
+
+test("the Gem referral source says mostly office jobs on the home page and the numbers page", () => {
+  const home = read("src/index.html");
+  const numbers = read("src/insights.html");
+  assert.ok(home.includes("mostly office jobs"), "src/index.html is missing the mostly office jobs caveat");
+  assert.ok(numbers.includes("mostly office jobs"), "src/insights.html is missing the mostly office jobs caveat");
+  assert.ok(home.includes("data through December 2024"), "src/index.html source year range differs from src/insights.html");
+});

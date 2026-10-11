@@ -10,7 +10,7 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
-// Limits in bytes, about 10 percent above the sizes measured on 2026-10-10. Raised the same day for the city data waves: the guide grew from 1,187 to 1,610 programs (about 36 percent), so the four data limits grew with it. To raise one on purpose, change its number here in the same pull request and say why in that PR.
+// Limits in bytes, about 10 percent above the sizes measured on 2026-10-10. Raised the same day for the city data waves: the guide grew from 1,187 to 1,771 programs (the lite file is 2,017,065 bytes, 1,139 per program, so the per-program limit is unchanged) (about 36 percent), so the four data limits grew with it. To raise one on purpose, change its number here in the same pull request and say why in that PR.
 const LIMITS = {
   data: {
     "data/entries.json": { raw: 3530000, gzip: 800000 },
@@ -22,7 +22,8 @@ const LIMITS = {
   rootPage: 32000,
   // Raised from 40000 to 46000 on 2026-10-10: lib.js grew to 41715 bytes for the live chip counts, empty-state options, top picks and the cost-tier sort. Gzipped it is about 11 KB. The other scripts are all under 40000.
   script: 46000,
-  stylesheet: 34000,
+  // Raised from 34000 to 35000 on 2026-10-10: the merged upgrades added a few rules (the plain facts list and the Jobs output heading) and the sheet is 34005 bytes. Not caused by the data growth.
+  stylesheet: 35000,
 };
 
 const LITE = "data/entries-lite.json";

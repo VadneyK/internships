@@ -64,6 +64,54 @@ class CoreFileTests(unittest.TestCase):
                 self.assertEqual(list(row.keys()), [k for k in build_data.CORE_KEYS if k in expected])
 
 
+class StatsFileTests(unittest.TestCase):
+    """data/entries-stats.json: only what lib.insights() reads, same ids and order as entries.json."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.tmp, _ = build_into_temp()
+        with open(os.path.join(DATA_DIR, "entries.json"), encoding="utf-8") as f:
+            cls.entries = json.load(f)
+        with open(os.path.join(DATA_DIR, "entries-stats.json"), encoding="utf-8") as f:
+            cls.stats = json.load(f)
+
+    @classmethod
+    def tearDownClass(cls):
+        cls.tmp.cleanup()
+
+    def test_committed_file_is_byte_identical_to_fresh_build(self):
+        self.assertEqual(read_bytes(DATA_DIR, "entries-stats.json"), read_bytes(self.tmp.name, "entries-stats.json"), "run python3 tools/build_data.py")
+
+    def test_same_ids_and_order_and_equal_values(self):
+        self.assertEqual([r["id"] for r in self.stats], [e["id"] for e in self.entries])
+        for r, e in zip(self.stats, self.entries):
+            for k, v in r.items():
+                self.assertEqual(v, e[k], (r["id"], k))
+            for k in build_data.STATS_KEYS:
+                if k not in r:
+                    self.assertIsNone(e.get(k), (r["id"], k))
+
+    def test_keys_are_only_the_ones_insights_reads(self):
+        with open(os.path.join(HERE, "..", "assets", "js", "lib.js"), encoding="utf-8") as f:
+            lib = f.read()
+        start = lib.index("function insights(list, now)")
+        body = lib[start:lib.index("function gradePhrase", start)]
+        used = set(re.findall(r"\be\.([a-z_]+)", body))
+        # insights() passes e to effStatus, ageOk, hubsOf and futureDeadline, which read these keys
+        for fn in ("effStatus", "ageOk", "hubsOf", "futureDeadline"):
+            m = re.search(r"function " + fn + r"\(.*?\n  }\n", lib, re.S)
+            used |= set(re.findall(r"\be\.([a-z_]+)", m.group(0)))
+        used |= {"deadline_iso", "opens_iso"}  # read through parseISO(e.deadline_iso) in the helpers
+        self.assertEqual(set(build_data.STATS_KEYS), used)
+        for r in self.stats:
+            self.assertLessEqual(set(r), used)
+
+    def test_compact_and_under_60_percent_of_card_file(self):
+        raw = read_bytes(DATA_DIR, "entries-stats.json")
+        self.assertEqual(raw.decode("utf-8"), json.dumps(self.stats, ensure_ascii=False, separators=(",", ":")) + "\n")
+        self.assertLess(len(raw), 0.6 * len(read_bytes(DATA_DIR, "entries-card.json")))
+
+
 def run_freshness(*argv):
     # The default cap of 150 rows is for the GitHub issue; these tests look at every row.
     if "--max-items" not in argv:
@@ -171,12 +219,18 @@ class ProglibTests(unittest.TestCase):
     def test_parse_iso_reads_a_real_date(self):
         self.assertEqual(proglib.parse_iso("2026-10-09"), dt.date(2026, 10, 9))
 
-    @unittest.expectedFailure
     def test_parse_iso_bad_string_is_none(self):
-        # Known gap: proglib.parse_iso("not a date") raises ValueError instead of returning None.
-        # Fixing it means editing tools/proglib.py, which is outside this ticket. Remove this
-        # decorator once parse_iso returns None for bad strings.
         self.assertIsNone(proglib.parse_iso("not a date"))
+        self.assertIsNone(proglib.parse_iso("2026-13-40"))
+        self.assertIsNone(proglib.parse_iso(5))
+
+    def test_validate_program_flags_impossible_deadline_date(self):
+        data = {"deadline_iso": "2026-13-40", "deadline_confidence": "confirmed-2026-27"}
+        problems = proglib.validate_program("x.json", data)
+        self.assertTrue(
+            any("deadline_iso is not a real date: 2026-13-40" in p for p in problems),
+            problems,
+        )
 
     def test_date_label_style_and_no_zero_padding(self):
         self.assertEqual(proglib.date_label("2026-10-09"), "Oct 9, 2026")

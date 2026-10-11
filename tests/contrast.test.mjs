@@ -98,6 +98,57 @@ test("the prefers-color-scheme dark block and the data-theme=dark block define i
   assert.ok(Object.keys(darkAttr).length > 10, "dark token block parsed too few tokens");
 });
 
+// True when the character at index sits outside every @media print block.
+// Walks the braces up to index and checks the open block headers.
+function outsideMediaPrint(css, index) {
+  const stack = [];
+  let last = 0;
+  for (let i = 0; i < index; i++) {
+    const ch = css[i];
+    if (ch === "{") {
+      stack.push(css.slice(last, i).split("}").pop().trim());
+      last = i + 1;
+    } else if (ch === "}") {
+      stack.pop();
+      last = i + 1;
+    } else if (ch === ";") {
+      last = i + 1;
+    }
+  }
+  return !stack.some((h) => h.includes("@media print"));
+}
+
+// Returns a list of problems with the ::placeholder rule. An empty list means the rule passes.
+function placeholderProblems(css) {
+  const problems = [];
+  const m = /::placeholder\s*\{/.exec(css);
+  if (!m) return ["no ::placeholder rule"];
+  if (!outsideMediaPrint(css, m.index)) problems.push("::placeholder rule is inside @media print");
+  const body = ruleBody(css, /::placeholder\s*\{/);
+  if (!/(^|;|\s)color\s*:\s*var\(--ink-2\)\s*(;|$)/.test(body.trim())) problems.push("::placeholder does not set color: var(--ink-2)");
+  if (!/(^|;|\s)opacity\s*:\s*1\s*(;|$)/.test(body.trim())) problems.push("::placeholder does not set opacity: 1");
+  return problems;
+}
+
+test("style.css has a ::placeholder rule outside @media print with color: var(--ink-2) and opacity: 1", () => {
+  assert.deepEqual(placeholderProblems(CSS), []);
+});
+
+test("mutation check: removing the ::placeholder rule from a copy of the CSS fails the rule check", () => {
+  const mutated = CSS.replace(/::placeholder\s*\{[^}]*\}/, "");
+  assert.notEqual(mutated, CSS, "mutation did not change the CSS");
+  assert.notDeepEqual(placeholderProblems(mutated), []);
+});
+
+for (const theme of ["light", "dark"]) {
+  for (const bg of ["paper", "surface", "paper-2"]) {
+    test(`${theme}: placeholder text (--ink-2) on --${bg} is at least 4.5:1`, () => {
+      const r = contrast(color(theme, "ink-2"), color(theme, bg));
+      assert.ok(r >= 4.5, `placeholder text on ${bg} in ${theme} is ${r.toFixed(2)}:1`);
+    });
+  }
+}
+
 test("the orange class is only used inside h1, h2, h3 or .lede in src pages", () => {
   const dir = path.join(ROOT, "src");
   const files = fs.readdirSync(dir).filter((f) => f.endsWith(".html"));

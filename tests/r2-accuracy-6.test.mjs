@@ -15,6 +15,7 @@ const WORDS = {
   interview: "interview notes",
   resume: "resume draft",
   leader: "youth leader group details",
+  findprefs: "age and area you last picked",
 };
 // The light/dark choice is not a G.store key (common.js writes localStorage "theme" directly).
 const THEME_WORDS = "light/dark choice";

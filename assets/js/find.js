@@ -89,9 +89,9 @@
       ? '<span class="tag good">Read on official site</span>'
       : '<span class="tag warn">Confirm first</span>';
     var hubs = (e.regions || []).map(function (r) { var f = G.REGIONS.filter(function (x) { return x[0] === r; })[0]; return f ? f[1] : ""; }).filter(Boolean);
-    var html = '<article class="card prog" tabindex="-1" id="p-' + G.esc(e.id) + '">';
+    var html = '<article class="card prog" tabindex="-1" id="p-' + G.esc(e.id) + '" aria-labelledby="p-' + G.esc(e.id) + '-h">';
     html += '<div class="row">' + statusTag(e) + paidTag(e) + '<span class="tag ghost">' + G.esc(G.TYPES[e.type] || e.type) + "</span></div>";
-    html += "<h3>" + G.esc(e.name) + "</h3>";
+    html += '<h3 id="p-' + G.esc(e.id) + '-h">' + G.esc(e.name) + "</h3>";
     html += '<p class="org">' + G.esc(e.org || "") + (e.city ? " &middot; " + G.esc(e.city) : "") + "</p>";
     html += '<p class="what">' + G.esc(e.what_you_do || "") + "</p>";
     html += '<div class="row"><span class="tag ghost">' + G.esc(ageText(e)) + "</span></div>";
@@ -103,7 +103,7 @@
     if (u) html += '<a class="btn sm" href="' + G.esc(u) + '" target="_blank" rel="noopener" aria-label="' + G.esc("Official page for " + e.name + (e.org ? ", " + e.org : "")) + '">Official page</a>';
     if (a && a !== u) html += '<a class="btn sm alt" href="' + G.esc(a) + '" target="_blank" rel="noopener" aria-label="' + G.esc("Apply to " + e.name + (e.org ? ", " + e.org : "")) + '">Apply</a>';
     if (knownDeadline(e)) html += '<button class="btn sm alt noprint" type="button" data-cal="' + G.esc(e.id) + '" aria-label="' + G.esc("Add deadline to calendar for " + e.name) + '">Add deadline to calendar</button>';
-    html += '<button class="star noprint" type="button" data-id="' + G.esc(e.id) + '" aria-pressed="' + saved + '" aria-label="' + (saved ? "Remove " + G.esc(e.name) + " from my list" : "Save " + G.esc(e.name) + " to my list") + '" title="Save to my list">&#9733;</button>';
+    html += '<button class="star noprint" type="button" data-id="' + G.esc(e.id) + '" aria-pressed="' + saved + '" aria-label="' + G.esc("Save " + e.name + " to my list") + '" title="Save to my list">&#9733;</button>';
     html += "</div>";
     html += '<p class="checked">' + vtag + " Checked " + G.esc(e.verified_on_label || "Oct 7, 2026") + "</p>";
     html += "</article>";
@@ -285,9 +285,18 @@
   function pagerHtml(list) {
     return list.length > shown ? '<div class="pager" style="grid-column:1/-1"><button class="btn alt" type="button" id="more">Show more (' + (list.length - shown) + " left)</button></div>" : "";
   }
+  /* Print-only line under the cards. It says how many matches the sheet holds, so a partial print is not silent.
+     Empty when the list is in dates view or fits on one page. */
+  function paintPrintCut(list) {
+    var box = $("printCut");
+    if (!box) return;
+    if (state.view !== "cards" || list.length <= PAGE) { box.textContent = ""; return; }
+    box.textContent = "Showing " + Math.min(shown, list.length) + " of " + list.length + " programs." + (shown < list.length ? " Open the page and press Show more for the rest." : "");
+  }
   function showMore() {
     var from = shown, out = $("out"), sv = savedIds(), cur = currentList(sv), list = cur.list;
     shown += PAGE;
+    paintPrintCut(list);
     if (state.view !== "cards" || out.querySelectorAll("article.prog").length !== from || list.length <= from) {
       render(false, { cardIndex: from });
     } else {
@@ -305,10 +314,13 @@
     lastKey = listKey(cur);
     paintPlaceNote(realN);
     $("count").textContent = list.length + " of " + all.length + " programs";
+    paintPrintCut(list);
     paintSortNote();
     $("savedN").textContent = sv.length;
     var out = $("out"), dates = $("dates");
     $("listActions").hidden = !state.saved;
+    $("listNextN").textContent = sv.length;
+    $("listNext").hidden = !(state.saved && sv.length > 0);
     paintGaps();
     paintPicks();
     paintChipCounts(cur);
@@ -413,8 +425,20 @@
     if (used) { var n = $("prefNote"); if (n) n.hidden = false; }
   }
 
+  /* The three related chips carry the chosen age and area (only the parts that are set). */
+  function paintRelated() {
+    var box = $("relatedLinks"); if (!box) return;
+    var cal = box.querySelector("a[href^='calendar.html']"), per = box.querySelector("a[href^='permit.html']");
+    var c = new URLSearchParams();
+    if (state.place) c.set("at", state.place);
+    if (state.age) c.set("age", state.age);
+    if (cal) cal.setAttribute("href", "calendar.html" + (c.toString() ? "?" + c.toString() : ""));
+    if (per) per.setAttribute("href", "permit.html" + (state.age && state.age !== "12" && state.age !== "13" ? "?age=" + encodeURIComponent(state.age) : ""));
+  }
+
   /* url state */
   function persist() {
+    paintRelated();
     var p = new URLSearchParams();
     if (state.q) p.set("q", state.q);
     if (state.hubs.length) p.set("where", state.hubs.join(","));
@@ -481,7 +505,7 @@
         if (e) Object.keys(row).forEach(function (k) { if (k !== "id") e[k] = row[k]; });
       });
       detailState = "ready"; paintBodies(); rerunList();
-    }, function () { detailState = "fail"; paintBodies(); });
+    }).catch(function () { detailState = "fail"; paintBodies(); });
   }
   /* an idle prefetch 3 seconds after the first draw, unless the person asked to save data or the connection is slow */
   function prefetchDetail() {
@@ -526,7 +550,7 @@
     prefetchDetail();
     if (wantId) {
       var el = document.getElementById("p-" + wantId);
-      if (el) { var det = el.querySelector("details"); if (det) det.open = true; el.scrollIntoView(); }
+      if (el) { var det = el.querySelector("details"); if (det) det.open = true; el.scrollIntoView(); try { el.focus({ preventScroll: true }); } catch (err) { el.focus(); } }
       wantDetail();
     }
   }).catch(function (err) {
@@ -585,7 +609,7 @@
       }
       if (idx >= shown) shown = idx + 1;
       render(false);
-      var el = document.getElementById("p-" + id); if (el) { el.scrollIntoView({ behavior: "smooth", block: "center" }); el.querySelector("details").open = true; }
+      var el = document.getElementById("p-" + id); if (el) { el.scrollIntoView({ behavior: G.motionOK() ? "smooth" : "auto", block: "center" }); el.querySelector("details").open = true; if (!el.hasAttribute("tabindex")) el.setAttribute("tabindex", "-1"); el.focus({ preventScroll: true }); }
       wantDetail();
     }
   });

@@ -32,11 +32,12 @@ test("home, calendar, insights and younger scripts never read the dropped keys",
     const src = read("assets/js/" + f + ".js");
     DROPPED.forEach((k) => assert.ok(!src.includes(k), f + ".js mentions " + k));
     if (f === "younger") assert.match(src, /G\.loadEntries\("core"\)/, f + ".js should load the core file");
-    else if (f === "calendar" || f === "insights") assert.match(src, /G\.loadEntries\("card"\)/, f + ".js should load the card file");
+    else if (f === "calendar") assert.match(src, /G\.loadEntries\("card"\)/, f + ".js should load the card file");
+    else if (f === "insights") assert.match(src, /G\.loadEntries\("stats"\)/, f + ".js should load the stats file (r3-a11y-perf-6)");
     else {
-      /* home: the card file first, the lite file only when the picker is used */
+      /* home: the card file first, then one small file per chosen program when the picker is used (r3-a11y-perf-2) */
       assert.match(src, /G\.loadEntries\("card"\)/, f + ".js should load the card file first");
-      assert.match(src, /G\.loadEntries\(true\)/, f + ".js should load the lite file second");
+      assert.match(src, /G\.loadProgram\(/, f + ".js should load each chosen program's own file second");
     }
   }
 });

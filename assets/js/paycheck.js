@@ -41,7 +41,15 @@
         if ($("mStatus").textContent !== msg) $("mStatus").textContent = msg;
       }, 500);
     }
-    $("mPreset").addEventListener("change", function () { setWage(); paint(); announce(); });
+    // Picking a preset also picks its state in the Late or wrong pay box. "Another state" leaves the box alone.
+    function syncStateToPreset() {
+      var pid = $("mPreset").value;
+      if (pid === "other") return;
+      var s = d.states.filter(function (x) { return pid === x.id || pid.indexOf(x.id + "-") === 0; })[0];
+      if (!s || $("mState").value === s.id) return;
+      $("mState").value = s.id; wrong(); announceState();
+    }
+    $("mPreset").addEventListener("change", function () { setWage(); paint(); syncStateToPreset(); announce(); });
     ["mWage", "mHours"].forEach(function (id) { $(id).addEventListener("input", function () { paint(); announce(); }); });
     $("mParent").addEventListener("change", function () { paint(); announce(); });
     setWage(); paint();
@@ -55,12 +63,24 @@
       var s = d.states.filter(function (x) { return x.id === $("mState").value; })[0];
       $("mWrong").innerHTML = "<h3>" + G.esc(s.name) + '</h3><dl class="facts">' + row("When you must be paid", s.freq) + row("Your pay stub", s.stub) + row("Your last paycheck", s.last) + row("Direct deposit and cards", s.dd) + row("How to get unpaid wages", s.claim) + row("Phone", s.call) + "</dl><p class=\"small\">" + s.links.map(function (l) { return a(l.t, l.u); }).join(" &middot; ") + "</p>";
     }
-    $("mState").addEventListener("change", wrong); wrong();
+    // The card is plain content (no live region). A short status line names the state after a choice.
+    function announceState() {
+      var s = d.states.filter(function (x) { return x.id === $("mState").value; })[0];
+      if (s) $("mWrongStatus").textContent = "Showing pay rules for " + s.name + ".";
+    }
+    $("mState").addEventListener("change", function () { wrong(); announceState(); }); wrong();
     try {
       var want = (new URLSearchParams(location.search).get("state") || "").toLowerCase();
       var pre = want && d.presets.filter(function (x) { return x.id === want || x.id.indexOf(want + "-") === 0; })[0];
       var st = want && d.states.filter(function (x) { return x.id === want; })[0];
       if (pre && st) { $("mPreset").value = pre.id; $("mState").value = st.id; setWage(); paint(); wrong(); }
+      /* No ?state= in the address: start from the area saved on Programs, only for the states this page covers. */
+      if (!want) {
+        var pr = G.store.get("findprefs", {}), ss = pr && typeof pr.place === "string" ? L.stateFromPlace(pr.place) : "";
+        var pre2 = ss && d.presets.filter(function (x) { return x.id === ss || x.id.indexOf(ss + "-") === 0; })[0];
+        var st2 = ss && d.states.filter(function (x) { return x.id === ss; })[0];
+        if (pre2 && st2) { $("mPreset").value = pre2.id; $("mState").value = st2.id; setWage(); paint(); wrong(); if ($("mPreset")._tpSync) $("mPreset")._tpSync(); if ($("mState")._tpSync) $("mState")._tpSync(); }
+      }
     } catch (e) { /* the link parameter is optional */ }
     $("mWrongNote").textContent = d.wrongNote;
     $("mBank").innerHTML = d.bank.items.map(function (x) { return "<li>" + G.esc(x) + "</li>"; }).join("");

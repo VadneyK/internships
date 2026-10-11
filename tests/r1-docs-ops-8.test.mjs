@@ -109,7 +109,7 @@ test("TESTING.md names the area of every round test file", () => {
   const files = readdirSync(join(root, "tests")).filter((f) => /^r[123]-.+\.test\.mjs$/.test(f));
   assert.ok(files.length > 0);
   for (const f of files) {
-    const area = f.match(/^r[123]-(.+)-\d+\.test\.mjs$/)[1];
+    const area = f.match(/^r[123]-(.+?)-\d+(?:-[a-z0-9-]+)?\.test\.mjs$/)[1];
     assert.ok(testing.includes("`" + area + "`"), "TESTING.md does not name the area `" + area + "` of " + f);
   }
 });

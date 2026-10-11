@@ -39,7 +39,13 @@ def iter_strings(value):
 
 
 def parse_iso(s):
-    return dt.date.fromisoformat(s) if s else None
+    """Return the date for an ISO string, or None for empty, missing, non-string or invalid input."""
+    if not s or not isinstance(s, str):
+        return None
+    try:
+        return dt.date.fromisoformat(s)
+    except ValueError:
+        return None
 
 
 def validate_program(path, data, schema=None):

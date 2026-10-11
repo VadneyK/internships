@@ -62,7 +62,7 @@
     },
     "own": {
      "permit": false,
-     "text": "Running your own business (tutoring, selling crafts) does not need a permit. Delivering newspapers on your own route does not either. A self-employed minor needs no permit. Pet care is not named on the state chart, so ask the Labor Commissioner at 833-526-4636."
+     "text": "Running your own business (tutoring, selling crafts) does not need a permit. Delivering newspapers on your own route (age 12 or older) does not either. A self-employed minor needs no permit on the chart. Pet care is not named on the state chart, so ask the Labor Commissioner at 833-526-4636."
     },
     "volunteer": {
      "permit": false,
@@ -249,12 +249,12 @@
    "wage": "$17.00 an hour in New York City, Long Island and Westchester, and $16.00 in the rest of the state (2026).",
    "minAge": {
     "job": 14,
-    "note": "Ages 14 to 17 need working papers for any job in New York."
+    "note": "Ages 14 to 17 need working papers for almost any job in New York. Farming and caddying are exempt."
    },
    "kinds": {
     "job": {
      "permit": true,
-     "text": "Ages 14 to 17 need an employment certificate, called working papers, for any job in New York."
+     "text": "Ages 14 to 17 need an employment certificate, called working papers, for almost any job in New York. Farming and caddying are exempt."
     },
     "program": {
      "permit": true,
@@ -263,7 +263,7 @@
     "odd": {
      "permit": false,
      "text": "No working papers are needed for babysitting or casual yard work or chores at home, but New York DOL says the babysitter must be at least 14. Yard work for 12 and 13 year olds is not stated. Ask: 888-469-7365.",
-     "under": {"below": 14, "permit": null, "text": "At 12 or 13 you are too young to babysit under state rules: New York DOL says a babysitter must be at least 14. Yard work for 12 and 13 year olds is not stated. Ask: 888-469-7365."}
+     "under": {"below": 14, "permit": null, "text": "At 12 or 13, New York DOL says a babysitter must be at least 14, though the Red Cross says most states have no minimum age. Yard work for 12 and 13 year olds is not stated. Ask: 888-469-7365."}
     },
     "own": {
      "permit": null,
@@ -448,7 +448,7 @@
     "14": "School week: up to 3 hours a day (8 on Saturday and Sunday), 16 a week, 7 a.m. to 7 p.m. School out: up to 8 hours a day, 40 a week, 7 a.m. to 7 p.m. (9 p.m. from June 1 to Labor Day).",
     "16": "School week: up to 4 hours a day (8 Friday to Sunday), 20 a week, 7 a.m. to 10 p.m. School out: up to 8 hours a day, 48 a week, 5 a.m. to midnight. Generally no work during the hours your neighborhood school is in session."
    },
-   "wage": "$17.13 an hour in 2026. Employers may pay 85 percent of that ($14.56) to workers 14 and 15. Seattle's minimum is higher.",
+   "wage": "$17.13 an hour in 2026. Employers may pay 85 percent of that ($14.56) to workers 14 and 15. Seattle's minimum is higher. The page we read does not give a 2027 rate.",
    "limits": {
     "14": {
      "schoolDay": 3,
@@ -573,7 +573,7 @@
    "kinds": {
     "job": {
      "permit": false,
-     "text": "The Texas pages we read do not require a work permit for teens. Some employers may ask for a Certificate of Age from the Texas Workforce Commission."
+     "text": "Texas does not require a work permit for teens on the pages we read. Some employers may ask for a Certificate of Age from the Texas Workforce Commission."
     },
     "program": {
      "permit": false,
@@ -665,8 +665,8 @@
    "kinds": {
     "job": {
      "permit": false,
-     "text": "Minnesota does not require a general work permit. Under 16 you need an employment certificate only to work on school days during school hours.",
-     "under": {"below": 16, "permit": null, "text": "Under 16 you need an employment certificate only to work on school days during school hours. Your answer depends on your schedule. Work after school, on weekends or in summer is outside that rule, but if a shift would fall in school hours on a school day, ask your school district superintendent first."}
+     "text": "Minnesota does not require a general work permit on the pages we read. Under 16 you need an employment certificate only to work on school days during school hours.",
+     "under": {"below": 16, "permit": null, "text": "Under 16 you need an employment certificate only to work on school days during school hours on the pages we read. Your answer depends on your schedule. Work after school, on weekends or in summer is outside that rule, but if a shift would fall in school hours on a school day, ask your school district superintendent first."}
     },
     "program": {
      "permit": false,
@@ -702,11 +702,12 @@
   "wi": {
    "name": "Wisconsin",
    "read": "Oct 9, 2026",
-   "permit": "Work permit for 14 and 15 year olds",
+   "permit": "Work permit (ages vary, confirm with DWD)",
    "needBelow": 16,
    "issuer": "Your parent or guardian applies and pays for the permit. The employer must reimburse the $10 fee by your first paycheck.",
    "steps": [
     "Get the job first.",
+    "Ages vary by DWD page, so confirm with DWD before you apply. DWD's employment of minors guide says permits are for ages 12 to 15 (https://dwd.wisconsin.gov/er/laborstandards/workpermit/minoremployment.htm). DWD's work permit page says the parent of a 14 or 15 year old must apply (https://dwd.wisconsin.gov/er/laborstandards/workpermit/).",
     "Your parent or guardian applies for the work permit through the Wisconsin Department of Workforce Development.",
     "Give the permit to your employer before you start."
    ],
@@ -791,9 +792,9 @@
   "in": {
    "name": "Indiana",
    "read": "Oct 9, 2026",
-   "permit": "No work permit",
+   "permit": "No work permit on the state pages we read",
    "needBelow": 0,
-   "issuer": "Indiana does not issue work permits",
+   "issuer": "Indiana does not issue work permits on the state pages we read",
    "steps": [
     "Indiana no longer requires work permits for 14 through 17 year olds on the state pages we read.",
     "Ask your employer what proof of age they want.",
@@ -839,7 +840,7 @@
    "kinds": {
     "job": {
      "permit": false,
-     "text": "Indiana no longer requires work permits for ages 14 to 17."
+     "text": "Indiana no longer requires work permits for ages 14 to 17 on the state pages we read."
     },
     "program": {
      "permit": false,
@@ -870,7 +871,7 @@
      "text": "The pages we read do not say about acting or modeling. Ask the Indiana Department of Labor, (317) 232-2655."
     }
    },
-   "adult": "No work permit is needed in Indiana."
+   "adult": "No work permit is needed in Indiana on the state pages we read."
   },
   "mi": {
    "name": "Michigan",
@@ -1395,6 +1396,7 @@
     }
    ],
    "hours": {
+    "12": "Children under 15 cannot work during school hours, more than 4 hours on school days, more than 7 hours on a non-school day, more than 20 hours in a week with 5 school days, or more than 35 hours a week when school is not in session.",
     "14": "Children under 15 cannot work during school hours, more than 4 hours on school days, more than 7 hours on a non-school day, more than 20 hours in a week with 5 school days, or more than 35 hours a week when school is not in session.",
     "16": "Employers of children 15 or older follow the standard rules for hours of work."
    },
@@ -1404,7 +1406,7 @@
     "16": null
    },
    "minAge": {
-    "job": 14,
+    "job": 12,
     "note": "Children 12 and 13, and 14 and 15, need a permit unless they do light work only."
    },
    "kinds": {
@@ -1469,7 +1471,7 @@
      "u": "https://minorworkpermit.com.ohio.gov/"
     },
     {
-     "t": "Ohio minor labor law poster (2016)",
+     "t": "Ohio minor labor law poster (2016, older than the new law)",
      "u": "https://dam.assets.ohio.gov/image/upload/com.ohio.gov/documents/laws_MLLPoster.pdf"
     },
     {
@@ -1482,7 +1484,7 @@
     }
    ],
    "hours": {
-    "14": "Under 16: not before 7 a.m. Not after 9 p.m. from June 1 to Sept 1, or after 7 p.m. at other times (7 to 9 p.m. the night before a non-school day with parent approval). Up to 3 hours on a school day, 18 hours in a school week, 8 hours on a non-school day, 40 hours when school is out. A 30 minute rest after 5 hours in a row. This law took effect Oct 9, 2026.",
+    "14": "Under 16: not before 7 a.m. Not after 9 p.m. from June 1 to Sept 1, or after 7 p.m. at other times. The night before a non-school day, 7 to 9 p.m. is allowed with parent approval. Up to 3 hours on a school day, 18 hours in a school week, 8 hours on a non-school day, 40 hours when school is out. A 30 minute rest after 5 hours in a row. This law took effect Oct 9, 2026. The state poster linked on this card is from 2016, before this law, so its hours may be different. Use the law link and confirm with the Ohio Department of Commerce.",
     "16": "Ages 16 and 17 may not work after 11 p.m. on a night before a school day, or before 7 a.m. on a school day (6 a.m. if not employed after 8 p.m. the night before)."
    },
    "wage": "We could not confirm Ohio's 2026 minimum wage because the state's website was down when we checked. Under 16, the employer must pay at least the federal $7.25.",
@@ -1500,7 +1502,7 @@
    },
    "minAge": {
     "job": 14,
-    "note": "Every minor 14 through 17 needs a working permit under Ohio law. We did not find a Commerce page that states the minimum age outright."
+    "note": "Ages 14 and 15 need a working permit. Ages 16 and 17 need one during the school year, but none for nonagricultural, nonhazardous summer-vacation work. We did not find a Commerce page that states the minimum age outright."
    },
    "kinds": {
     "job": {
@@ -1663,7 +1665,7 @@
     "14": "At most employers the federal limits apply and they are stricter: school days up to 3 hours, school weeks up to 18 hours, non-school days up to 8 hours, 40 a week when school is out, between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). This matches Virginia's page.",
     "16": "The Virginia page lists no hour limits for 16 and 17 year olds. They may not work in particularly hazardous jobs."
    },
-   "wage": "$12.77 an hour as of Jan 1, 2026.",
+   "wage": "$12.77 an hour as of Jan 1, 2026. The page we read does not give a 2027 rate.",
    "limits": {
     "14": {
      "schoolDay": 3,

@@ -21,9 +21,9 @@
   "duration": "Six one-week sessions from July 5 to Aug 12, 2027, Monday to Thursday 9 AM to 2:30 PM. You can attend one or more weeks. Not residential.",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "The page lists a registration deadline of June 1, 2027 and the 2027 session dates. The registration form could not be read by this check, so confirm that registration is open.",
-  "deadline_iso": "2027-06-01",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_text": "The page lists a registration deadline of June 1, 2027 and the 2027 session dates, but does not say whether registration is open now. The registration form could not be read, so confirm it is open.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Fill out the Institute Registration Form to pick your weeks, then pay for each week with the Program Payment Form. Both steps are required to hold a spot.",
   "needs_work_permit": null,
   "url": "https://manhattan.edu/academics/engineering/high-school-programs#mechanical-summer",
@@ -32,7 +32,7 @@
     "https://manhattan.edu/academics/engineering/high-school-programs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "priority": 3,
   "notes": "Contact details are on the page. The registration and payment forms are separate, and both are needed. The form link uses the old Manhattan College name. The form page did not load as text, so confirm it is open before you plan around it."
 }

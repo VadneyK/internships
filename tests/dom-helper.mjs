@@ -9,6 +9,9 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const TYPES = { ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".json": "application/json", ".svg": "image/svg+xml", ".csv": "text/csv", ".txt": "text/plain" };
 
+// Requests the local server answered with 404 or 500, as "STATUS /path". Tests may read and clear it.
+export const badResponses = [];
+
 let serverPromise;
 function server() {
   if (!serverPromise) {
@@ -16,9 +19,12 @@ function server() {
       const s = http.createServer((req, res) => {
         const rel = decodeURIComponent(req.url.split("?")[0]).replace(/^\/+/, "") || "index.html";
         const p = path.join(ROOT, rel);
-        if (!p.startsWith(ROOT) || !fs.existsSync(p) || fs.statSync(p).isDirectory()) { res.writeHead(404, { Connection: "close" }); res.end("not found"); return; }
-        res.writeHead(200, { "Content-Type": TYPES[path.extname(p)] || "application/octet-stream", Connection: "close" });
-        res.end(fs.readFileSync(p));
+        if (!p.startsWith(ROOT) || !fs.existsSync(p) || fs.statSync(p).isDirectory()) { badResponses.push("404 " + req.url); res.writeHead(404, { Connection: "close" }); res.end("not found"); return; }
+        try {
+          const body = fs.readFileSync(p);
+          res.writeHead(200, { "Content-Type": TYPES[path.extname(p)] || "application/octet-stream", Connection: "close" });
+          res.end(body);
+        } catch (e) { badResponses.push("500 " + req.url); res.writeHead(500, { Connection: "close" }); res.end("error"); }
       });
       s.listen(0, "127.0.0.1", () => { s.unref(); resolve(s.address().port); });
     });

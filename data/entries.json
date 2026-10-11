@@ -614,7 +614,7 @@
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "Dog and cat care: at least 40 hours over 6 months, with weekly or every-other-week shifts. Animal care roles ask for at least six months.",
@@ -640,13 +640,13 @@
   "deadline_text": "No deadline stated. When read, Wildlife applications were closed and Clinic Support was full. Check back for future opportunities.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "Register on the volunteer page for the role you want. You also complete virtual Safety and Protocols training and pay the $35 membership fee. For school hours, sign up on the School Service page.",
+  "how_to_apply": "Wildlife applications are closed and Clinic Support is full when we checked on 2026-10-10. Register on the volunteer page for the role you want. You also complete virtual Safety and Protocols training and pay the $35 membership fee. For school hours, sign up on the School Service page.",
   "url": "https://ahconnects.org/volunteer/",
   "notes": "Animal care roles ask for at least six months. The page says Shelter Support is not eligible for court-ordered service hours. Sites include South Elgin, Bloomingdale Petco, Algonquin Petco and Geneva Petco. Others are the St. Charles office and Elburn Forest Preserve.",
   "sources_fetched": [
    "https://ahconnects.org/volunteer/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "grades": "7 to 12",
@@ -850,7 +850,7 @@
  },
  {
   "grades": null,
-  "min_age": 14,
+  "min_age": 8,
   "max_age": null,
   "opens_iso": null,
   "deadline_iso": null,
@@ -1311,7 +1311,7 @@
    "social-impact"
   ],
   "what_you_do": "Volunteer at the summer festival's Top of the Park site. Teen roles include the Welcome Team and Zero Waste Champions. Others are Donation Ambassadors and Merch Mavens. Each shift you finish earns perks. One perk is access to special hospitality areas.",
-  "min_age": 14,
+  "min_age": 12,
   "max_age": null,
   "grades": null,
   "who_can_apply": "Ages 14 and up for most roles. Survey Squad is 16 and up. Ushers must be 18. The page says 12 and 13 year olds may volunteer with an adult volunteer. Volunteers work under the supervision of festival staff.",
@@ -2521,7 +2521,7 @@
   "priority": 2,
   "needs_work_permit": null,
   "duration": "Not stated",
-  "pay_detail": "Pay is not stated on the page. Ask the team.",
+  "pay_detail": "Not stated. We read the program page on 2026-10-10 and it says nothing about pay. Ask the program team.",
   "name": "Better Employment Outcomes (BEO) Initiative",
   "org": "City of Aurora Youth Activities and Services",
   "regions": [
@@ -2600,7 +2600,7 @@
   "priority": 2,
   "needs_work_permit": false,
   "duration": "Application window Aug 24 to Oct 16, 2026",
-  "pay_detail": "Each project can receive a microgrant of $1,000 to $5,000. This pays for the project, not a wage.",
+  "pay_detail": "You do not get paid. Each project can receive a microgrant of $1,000 to $5,000 to carry it out. The money pays for the project, not a wage to you.",
   "name": "Youth Climate Action Fund microgrants",
   "org": "City of Aurora (with Bloomberg Philanthropies)",
   "regions": [
@@ -2788,7 +2788,7 @@
   ],
   "city": "Austin, TX",
   "deadline_iso": null,
-  "apply_url": "https://austinhabitat.org/get-involved/volunteer/register/",
+  "apply_url": "https://austinhabitat.volunteerhub.com/",
   "verified": "fetched",
   "verified_on": "2026-10-10",
   "needs_work_permit": false,
@@ -5375,7 +5375,7 @@
   "duration": "2 weeks, residential",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "No dates for the next camp are posted on the pages read. The apply page still refers to the 2025 application.",
+  "deadline_text": "The program page is out of date. It posts no dates for the next camp, and the apply page still refers to the 2025 application. Call (540) 231-7411 or use the Email UPWARDS link on the page to ask before you apply.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "There are two parts. One is a student application. It has activities, short essays of 120 words or less each, and a transcript. The transcript does not need to be official. The other is a parent form. It has consent and a financial statement used for scholarships. The application is shared with the C-Tech2 camp. You can choose either camp or both.",
@@ -5388,10 +5388,10 @@
    "https://eng.vt.edu/ceed/ceed-pre-college-programs.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "priority": 3,
   "notes": "Costs money and is a camp, not a job. The pages read are partly out of date (they mention the 2025 application), so check the newest page and confirm dates with the program. The Virginia Tech C-Tech2 camp has its own card in this guide.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "grades": null,
@@ -6686,7 +6686,7 @@
  },
  {
   "grades": null,
-  "apply_url": null,
+  "apply_url": "https://www.bloomingtonvolunteernetwork.org",
   "min_age": null,
   "max_age": null,
   "pay_detail": "Unpaid volunteer opportunities",
@@ -7815,7 +7815,7 @@
   "grades": "Designed for students entering their senior year of high school",
   "who_can_apply": "Students who live or attend high school in the United States and finish the online course and the separate summer application. You must be in the US for the July program. The page lists no age or citizenship rule.",
   "paid_type": "fee-based",
-  "pay_detail": "Free for families with income and assets under $200,000 (housing is not covered for in person programs). Families above that pay $3,000. No stipend is mentioned.",
+  "pay_detail": "Families with income and assets under $200,000 pay nothing. Families above that pay $3,000 (housing is not covered for in person programs). No stipend is mentioned.",
   "season": "summer",
   "duration": "Four week program in July. The online prerequisite course opens February 1.",
   "status": "open-now",
@@ -9158,7 +9158,8 @@
   "name": "American Legion California Boys State (Boys & Girls State)",
   "org": "American Legion Department of California",
   "regions": [
-   "statewide"
+   "statewide",
+   "sacramento"
   ],
   "city": "Sacramento, CA",
   "type": "leadership",
@@ -9926,7 +9927,7 @@
   "deadline_confidence": "rolling",
   "how_to_apply": "Create a MyJobCorps account on jobcorps.gov. Finish the application. Then an Admissions Representative sets up an interview. They review your documents and a background check. They also help you pick a campus.",
   "needs_work_permit": null,
-  "url": "https://cassadaga.jobcorps.gov/",
+  "url": "https://cassadaga.jobcorps.gov/campus-life",
   "apply_url": "https://www.jobcorps.gov/",
   "sources_fetched": [
    "https://cassadaga.jobcorps.gov/",
@@ -10512,7 +10513,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-10",
   "needs_work_permit": null,
-  "deadline_iso": "2027-04-11",
+  "deadline_iso": null,
   "id": "champaign-illinois-arabic-high-school-program",
   "name": "Arabic High School Program",
   "org": "Department of Linguistics, University of Illinois Urbana-Champaign",
@@ -10534,7 +10535,7 @@
   "duration": "2 weeks, June 13 to 26, 2027 (residential)",
   "status": "unconfirmed",
   "deadline_text": "Tentative application deadline April 11, 2027. Registration deadline April 26, 2027. Final payment May 28, 2027. Dates may change.",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Fill out the online application and pay the $25 fee. Send a high school transcript, a note from a teacher and a scholarship form. Counselors email transcripts to silmw-uiuc@illinois.edu.",
   "url": "https://linguistics.illinois.edu/languages/summer-institutes/arabic-high-school-program",
   "sources_fetched": [
@@ -11708,7 +11709,7 @@
   "what_you_do": "Care for the schoolyard gardens and join talks about food and how it gets to us. It runs eight weeks in the summer, 20 hours a week.",
   "who_can_apply": "High school students. The page says the program is for up to twelve city students. A related summer internship for four Charlottesville High School youth is supported in part by the city youth internship program (CAYIP).",
   "paid_type": "not-stated",
-  "pay_detail": "Not stated on the page.",
+  "pay_detail": "Not stated. We read the City Schoolyard Garden page on 2026-10-10. It calls other roles paid but gives no pay for these interns. Ask first.",
   "duration": "8 weeks, 20 hours per week",
   "status": "unconfirmed",
   "deadline_text": "No dates or deadline are posted.",
@@ -11827,7 +11828,7 @@
   "what_you_do": "High school students are paired with expert stage designers and stage managers. You get hands-on training in the work behind the scenes at a theater.",
   "who_can_apply": "High school students. No other rules are listed.",
   "paid_type": "not-stated",
-  "pay_detail": "Not stated.",
+  "pay_detail": "Not stated. We read the Live Arts education page on 2026-10-10 and it says nothing about pay. Ask the Education Director.",
   "duration": "Not stated",
   "status": "unconfirmed",
   "deadline_text": "No dates posted. The education page looked out of date when read (it said spring 2026 information was coming soon).",
@@ -14642,7 +14643,7 @@
   "max_age": null,
   "who_can_apply": "High school seniors who are about to graduate, from the Cincinnati area.",
   "paid_type": "not-stated",
-  "pay_detail": "Not stated for the new program. The old program was a paid, part-time position.",
+  "pay_detail": "Not stated for the new program. We read the program page on 2026-10-10 and it says nothing about pay. The old program was a paid, part-time position.",
   "season": "summer",
   "duration": "One month, starting summer 2027",
   "status": "opens-soon",
@@ -14721,7 +14722,7 @@
   "max_age": null,
   "who_can_apply": "Cincinnati Public Schools juniors and seniors with good grades. You show you are responsible. A counselor must say yes.",
   "paid_type": "not-stated",
-  "pay_detail": "Not stated on the page read",
+  "pay_detail": "Not stated. We read the district news story on 2026-10-10 and it says nothing about pay. Ask your counselor.",
   "season": "school-year",
   "duration": "6 to 8 weeks",
   "status": "unconfirmed",
@@ -15466,7 +15467,9 @@
   "name": "Civil Air Patrol Cadet Program (California Wing)",
   "org": "Civil Air Patrol, California Wing (U.S. Air Force Auxiliary)",
   "regions": [
-   "statewide"
+   "statewide",
+   "los-angeles",
+   "san-diego"
   ],
   "city": "California (squadrons in eight regional groups, Los Angeles to San Diego)",
   "type": "leadership",
@@ -15478,7 +15481,7 @@
   "what_you_do": "Cadets join a local squadron for weekly meetings. They learn leadership, aerospace and fitness. They can take orientation flights and go to events and an encampment.",
   "who_can_apply": "Youth ages 12 to 18 (the page is titled 'Become a Cadet (Ages 12-18)'). The page says your local squadron can answer eligibility questions.",
   "paid_type": "fee-based",
-  "pay_detail": "Dues plus uniforms. The cost page (2021 and 2022 figures) lists $45 national dues, $25 squadron dues (can be waived for hardship), and about $205 to $300 total to join with uniforms. Encampment was $300 in 2021, with financial help available.",
+  "pay_detail": "Dues plus uniforms. The cost page (2021 and 2022 figures) lists $45 national dues, $25 squadron dues (can be waived for hardship), and about $205 to $300 total to join with uniforms. Encampment was $300 in 2021, with financial help available. No 2026 figures are posted, so check the National site for current dues.",
   "season": "year-round",
   "duration": "Ongoing; weekly squadron meetings",
   "status": "rolling",
@@ -16093,9 +16096,9 @@
   "duration": "May to July 2027",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Deadline to apply: March 1, 2027.",
-  "deadline_iso": "2027-03-01",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_text": "The county page lists a March 1, 2027 deadline but does not say whether applications are open, and it has no application link. Email to ask before you plan around it.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "The page gives no application link. Email megan.merchant@pgparks.com to ask how to apply before the March 1, 2027 deadline.",
   "needs_work_permit": true,
   "url": "https://www.pgparks.com/things-to-do/teen_preteen_programs#shakespeare-in-the-parks-apprenticeship",
@@ -16105,10 +16108,10 @@
    "https://labor.maryland.gov/labor/wages/empm.shtml"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "priority": 2,
   "notes": "Confirm first. The county page has no application link. It does not describe audition steps. Maryland Department of Labor says work permits are required for all minors under 18 to work in Maryland. A permit is issued only after a job offer.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "id": "college-park-pg-parks-teen-arts-council",
@@ -16173,8 +16176,8 @@
   "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "Auditions are on Sunday, February 7, 2027 at 3 p.m. at the Clarice Smith Performing Arts Center (8270 Alumni Dr, College Park).",
-  "deadline_iso": "2027-02-07",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Attend the audition on February 7, 2027 at 3 p.m. Questions go to megan.merchant@pgparks.com. The audition event page was not available when checked, so ask for audition details (what to prepare) by email.",
   "needs_work_permit": true,
   "url": "https://www.pgparks.com/things-to-do/teen_preteen_programs#teen-performance-ensemble",
@@ -16537,9 +16540,9 @@
   "duration": "Three weeks, Monday to Friday, 9:00 a.m. to 3:30 p.m. Summer 2027: Session 1 July 6 to 23, Session 2 July 26 to August 13. You enroll in one session.",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Application deadline: December 1, 2026. The 2027 topics will be announced soon.",
-  "deadline_iso": "2026-12-01",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_text": "The SPARC page shows an Apply Now banner with a December 1, 2026 deadline. The same page also says applications for this summer are closed, so it is not clear whether applications are open. Confirm with the program first.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Use the online application linked from the SPARC page (Apply Now). Include your high school transcript and resume. A parent or other authorized adult must sign you in and out each day. Contact: robotics-sparc@umd.edu.",
   "needs_work_permit": false,
   "url": "https://robotics.umd.edu/education/sparc",
@@ -16549,10 +16552,10 @@
    "https://robotics.umd.edu/education/sparc"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "priority": 3,
   "notes": "Very expensive and commuter only. Participation does not guarantee admission to UMD. The page banner says Apply Now with a December 1, 2026 deadline, but another line says applications for 'this summer' are closed, so confirm the application is open before you plan around it.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "grades": null,
@@ -17254,7 +17257,7 @@
    "arts-media",
    "education"
   ],
-  "what_you_do": "You take one one-week course on campus, taught by Ohio State faculty, staff and graduate students. Classes meet 9 a.m. to 4 p.m. Monday to Friday and are not for grades or credit.",
+  "what_you_do": "You take a one-week course on campus, taught by Ohio State faculty, staff and graduate students. Classes meet 9 a.m. to 4 p.m. Monday to Friday and are not for grades or credit.",
   "min_age": null,
   "max_age": null,
   "who_can_apply": "Students entering grades 10 to 12 in fall 2027 can take high school courses.",
@@ -18174,7 +18177,7 @@
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Register on the Student Registration page, then submit the app online.",
   "needs_work_permit": false,
-  "url": "https://www.congressionalappchallenge.us/",
+  "url": "https://www.congressionalappchallenge.us/rules/",
   "apply_url": null,
   "sources_fetched": [
    "https://www.congressionalappchallenge.us/",
@@ -18454,7 +18457,7 @@
   "grades": null,
   "who_can_apply": "The page does not state a minimum age. Ask the department before you apply, because lifeguard jobs and leader jobs often have different age rules.",
   "paid_type": "paid",
-  "pay_detail": "The page says all positions start at $20 an hour. The page was last updated May 11, 2023, so confirm the rate.",
+  "pay_detail": "The page says all positions start at $20 an hour. That page was last updated May 11, 2023, and no 2026 rate is posted there, so confirm the current rate.",
   "season": "year-round",
   "duration": "Part time, 8 to 30 hours a week",
   "status": "unconfirmed",
@@ -19164,7 +19167,7 @@
   "status": "closed-expect-reopen",
   "opens_iso": null,
   "deadline_text": "The 2026-27 application period was extended to Oct 2, 2026 and is now closed. The next call is not posted.",
-  "deadline_iso": "2026-10-02",
+  "deadline_iso": null,
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Fill out the TLC application on the Teens page. Questions: Micayla Valceschini, mvalceschini@cityofdavis.org.",
   "needs_work_permit": false,
@@ -19478,7 +19481,7 @@
   "grades": null,
   "who_can_apply": "2025 rules: DeKalb County residents ages 16 to 21 who pass a drug screening and background check. Interns were picked by random lottery.",
   "paid_type": "paid",
-  "pay_detail": "$15 per hour in 2025",
+  "pay_detail": "$15 per hour in 2025. A 2026 rate is not posted yet, so confirm it.",
   "season": "summer",
   "duration": "About 4 weeks (June 2 to July 3 in 2025)",
   "status": "unconfirmed",
@@ -19527,7 +19530,7 @@
   "deadline_confidence": "rolling",
   "how_to_apply": "Create a MyJobCorps account on jobcorps.gov. Finish the application. Then an Admissions Representative sets up an interview. They review your documents and a background check. They also help you pick a campus.",
   "needs_work_permit": null,
-  "url": "https://delawarevalley.jobcorps.gov/",
+  "url": "https://delawarevalley.jobcorps.gov/campus-life",
   "apply_url": "https://www.jobcorps.gov/",
   "sources_fetched": [
    "https://delawarevalley.jobcorps.gov/",
@@ -20397,6 +20400,7 @@
   "name": "East Bay Regional Park District Youth and Student Jobs",
   "org": "East Bay Regional Park District",
   "regions": [
+   "alameda",
    "oakland",
    "east-bay",
    "berkeley"
@@ -20673,7 +20677,7 @@
   "deadline_confidence": "rolling",
   "how_to_apply": "Create a MyJobCorps account on jobcorps.gov. Finish the application. Then an Admissions Representative sets up an interview. They review your documents and a background check. They also help you pick a campus.",
   "needs_work_permit": null,
-  "url": "https://edison.jobcorps.gov/",
+  "url": "https://edison.jobcorps.gov/campus-life",
   "apply_url": "https://www.jobcorps.gov/",
   "sources_fetched": [
    "https://edison.jobcorps.gov/",
@@ -21654,7 +21658,7 @@
    "health"
   ],
   "what_you_do": "Job shadow and do a paid summer internship in health care. You can also earn a credential at Oakton Community College. You may qualify for an ASPIRE scholarship.",
-  "min_age": null,
+  "min_age": 17,
   "max_age": null,
   "who_can_apply": "Mainly under-resourced high school students and community members. The city workforce page says ages 17 and older. The ASPIRE page does not list exact rules, so email to ask.",
   "paid_type": "paid",
@@ -22083,7 +22087,8 @@
   "name": "Educating Youth through Employment (EYE) summer program",
   "org": "Fairfax County Department of Family Services Workforce Development and Virginia Career Works Northern Region",
   "regions": [
-   "fairfax"
+   "fairfax",
+   "virginia"
   ],
   "city": "Northern Virginia (Fairfax County)",
   "type": "paid-youth-program",
@@ -23692,7 +23697,7 @@
   "deadline_text": "Applications are always accepted, but most projects are full and most locations have a waitlist.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "Under 18: download and print the PDF application, sign it, get a parent or guardian signature, and return it to Volunteer Services by email, mail, fax or drop-off. Then attend orientation. Email vol.services@fultoncountyga.gov or call 404-613-0125.",
+  "how_to_apply": "Most projects were full when we checked on 2026-10-10. Most places have a waitlist. You can still apply. Under 18: download and print the PDF application, sign it, get a parent or guardian signature, and return it to Volunteer Services by email, mail, fax or drop-off. Then attend orientation. Email vol.services@fultoncountyga.gov or call 404-613-0125.",
   "needs_work_permit": false,
   "url": "https://fulcolibrary.org/volunteer-at-fcls",
   "priority": 2,
@@ -23703,11 +23708,11 @@
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "sources_fetched": [
    "https://fulcolibrary.org/volunteer-at-fcls"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "id": "fulton-county-marshal-junior-deputy-program",
@@ -24388,7 +24393,7 @@
   "what_you_do": "Serve for one legislative day at the State Capitol. Pages carry messages to senators on the Senate floor. They also watch votes and meet lawmakers.",
   "who_can_apply": "Students at least 12 years old. The packet says there are no exceptions. A page is sponsored by the Lieutenant Governor or one Senator.",
   "paid_type": "stipend",
-  "pay_detail": "$20.00 honorarium paid at the end of the day, plus a certificate of service (2025 welcome packet).",
+  "pay_detail": "$20.00 honorarium paid at the end of the day, plus a certificate of service (2025 welcome packet). A 2026 amount is not posted, so confirm it.",
   "season": "winter",
   "duration": "One legislative day. Report about 1.5 hours before the Senate convenes. The Senate usually convenes at 10:00 AM (check the Senate schedule the night before).",
   "status": "unconfirmed",
@@ -24958,7 +24963,7 @@
   "deadline_confidence": "rolling",
   "how_to_apply": "Create a MyJobCorps account on jobcorps.gov. Finish the application. Then an Admissions Representative sets up an interview. They review your documents and a background check. They also help you pick a campus.",
   "needs_work_permit": null,
-  "url": "https://glenmont.jobcorps.gov/",
+  "url": "https://glenmont.jobcorps.gov/campus-life",
   "apply_url": "https://www.jobcorps.gov/",
   "sources_fetched": [
    "https://glenmont.jobcorps.gov/",
@@ -25162,7 +25167,7 @@
   "deadline_confidence": "rolling",
   "how_to_apply": "Create a MyJobCorps account on jobcorps.gov. Finish the application. Then an Admissions Representative sets up an interview. They review your documents and a background check. They also help you pick a campus.",
   "needs_work_permit": null,
-  "url": "https://grafton.jobcorps.gov/",
+  "url": "https://grafton.jobcorps.gov/campus-life",
   "apply_url": "https://www.jobcorps.gov/",
   "sources_fetched": [
    "https://grafton.jobcorps.gov/",
@@ -25626,7 +25631,9 @@
   "regions": [
    "alameda",
    "east-bay",
+   "fremont",
    "oakland",
+   "san-jose",
    "silicon-valley"
   ],
   "city": "Oakland / Fremont / San Jose, CA",
@@ -27062,7 +27069,7 @@
   "duration": "School year, ending with a state conference",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "The scholarship portal closes October 1, 2026 and scholarship decisions come before November 1. Conference dates and a general registration deadline are not posted on the page read.",
+  "deadline_text": "Closed: the scholarship portal closed October 1, 2026 (decisions come before November 1). Not known: whether you can still register, the conference dates and a general registration deadline are not posted on the page read. Ask your Delegation Advisor or the state office.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Get the registration link from your local Delegation Advisor. A student and a parent or guardian both sign the code of conduct. You pick a preferred role and give your State Senator and State Representative. Contact the state office if you have no delegation.",
@@ -27099,7 +27106,7 @@
   "paid_type": "fee-based",
   "season": "fall",
   "status": "unconfirmed",
-  "deadline_text": "This cohort runs September 28 to December 18, 2026, and it started before October 9, 2026. The page does not say if registration is still open.",
+  "deadline_text": "This cohort runs September 28 to December 18, 2026, so it has already started. Not known: the page does not say if registration is still open or what it costs. Email studentenrichment@imsa.edu to ask.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Use the sign-up link on the IMSA High School Online Programs page. To ask about cost and openings, email studentenrichment@imsa.edu.",
@@ -27686,7 +27693,8 @@
   "name": "Inova high school student volunteer sessions",
   "org": "Inova Health System",
   "regions": [
-   "fairfax"
+   "fairfax",
+   "virginia"
   ],
   "city": "Fairfax, Alexandria and Northern Virginia hospitals, VA",
   "type": "volunteer",
@@ -27750,7 +27758,7 @@
   "deadline_confidence": "rolling",
   "how_to_apply": "Create a MyJobCorps account on jobcorps.gov. Finish the application. Then an Admissions Representative sets up an interview. They review your documents and a background check. They also help you pick a campus.",
   "needs_work_permit": null,
-  "url": "https://iroquois.jobcorps.gov/",
+  "url": "https://iroquois.jobcorps.gov/campus-life",
   "apply_url": "https://www.jobcorps.gov/",
   "sources_fetched": [
    "https://iroquois.jobcorps.gov/",
@@ -28622,7 +28630,7 @@
   "deadline_confidence": "rolling",
   "how_to_apply": "Use the Find a Key Club tool on keyclub.org, or follow the Start a Key Club steps if your school has none.",
   "needs_work_permit": false,
-  "url": "https://www.keyclub.org/",
+  "url": "https://www.keyclub.org/how-it-works",
   "apply_url": null,
   "sources_fetched": [
    "https://www.keyclub.org/",
@@ -28663,7 +28671,7 @@
   "deadline_confidence": "rolling",
   "how_to_apply": "Create a MyJobCorps account on jobcorps.gov. Finish the application. Then an Admissions Representative sets up an interview. They review your documents and a background check. They also help you pick a campus.",
   "needs_work_permit": null,
-  "url": "https://keystone.jobcorps.gov/",
+  "url": "https://keystone.jobcorps.gov/campus-life",
   "apply_url": "https://www.jobcorps.gov/",
   "sources_fetched": [
    "https://keystone.jobcorps.gov/",
@@ -28762,6 +28770,7 @@
   "org": "Kode With Klossy",
   "regions": [
    "national",
+   "oakland",
    "virtual",
    "san-francisco"
   ],
@@ -29748,7 +29757,7 @@
   "season": "summer",
   "duration": "1 week, 1 college credit (page lists June 23 to 27, 2025)",
   "status": "unconfirmed",
-  "deadline_text": "The page I read only shows 2025 dates (June 23 to 27, 2025) and says registration is closed for TEAM 2023. 2027 dates and deadline are not posted there.",
+  "deadline_text": "The program page is out of date. It only shows June 23 to 27, 2025 and says registration is closed for TEAM 2023. Email techrecruit@purdue.edu to ask about the next camp before you apply.",
   "deadline_confidence": "unknown",
   "how_to_apply": "The page has an Apply Now button, but its registration status shows 2023. Contact techrecruit@purdue.edu or 765-494-4935.",
   "id": "lafayette-purdue-polytechnic-team-camp",
@@ -29787,7 +29796,7 @@
   "season": "summer",
   "duration": "1 week, 1 college credit (page lists June 23 to 27, 2025)",
   "status": "unconfirmed",
-  "deadline_text": "The page I read only shows 2025 dates (June 23 to 27, 2025) and says registration is closed for TOTAL 2023. 2027 dates and deadline are not posted there.",
+  "deadline_text": "The program page is out of date. It only shows June 23 to 27, 2025 and says registration is closed for TOTAL 2023. Email techrecruit@purdue.edu to ask about the next camp before you apply.",
   "deadline_confidence": "unknown",
   "how_to_apply": "The page has a Register Now button, but its registration status shows 2023. Contact techrecruit@purdue.edu or 765-494-4935.",
   "id": "lafayette-purdue-polytechnic-total-camp",
@@ -30235,7 +30244,7 @@
   "season": "spring",
   "duration": "3 days. The listed session was March 16 to 18, 2025.",
   "status": "unconfirmed",
-  "deadline_text": "Only the March 16 to 18, 2025 session is listed. The next dates are not posted.",
+  "deadline_text": "The program page is out of date. It only lists the March 16 to 18, 2025 session. Email Darren Bagley at bagleyda@msu.edu to ask about the next dates before you apply.",
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Sign up through 4-H Online. Contact Darren Bagley, bagleyda@msu.edu.",
   "url": "https://spartanyouth.msu.edu/resources/0-9/4-h-capitol-experience-summit/",
@@ -30471,7 +30480,7 @@
   "what_you_do": "Work as a lifeguard, slide worker or customer helper at the city pool. You need no experience. The city trains you in May in Red Cross lifeguarding, CPR, first aid and AED.",
   "who_can_apply": "Age 16 or older. You can work at least 25 hours a week, with some weekends and holidays.",
   "paid_type": "paid",
-  "pay_detail": "2025 pay: lifeguards $14.50 an hour, slide operators and customer service $13 an hour.",
+  "pay_detail": "2025 pay: lifeguards $14.50 an hour, slide operators and customer service $13 an hour. A 2026 rate is not posted on that page, so confirm it.",
   "season": "summer",
   "duration": "2025 season: May 31 to Sept 1, 2025",
   "status": "closed-expect-reopen",
@@ -30825,7 +30834,7 @@
   "grades": "Grades 6 to 12",
   "who_can_apply": "Youth ages 12 to 19 (the listing shows grades 6 to 12). The listing says to check with your county MSU Extension office about scholarship funds.",
   "paid_type": "fee-based",
-  "pay_detail": "2025 cost was $250. It covers meals, a shared dorm room, sessions and a t-shirt. Your county MSU Extension office may have scholarship money.",
+  "pay_detail": "2025 cost was $250 and a 2026 cost is not posted on the page. It covers meals, a shared dorm room, sessions and a t-shirt. Your county MSU Extension office may have scholarship money.",
   "season": "summer",
   "duration": "3 days (2026: June 24 to 26)",
   "status": "closed-expect-reopen",
@@ -31342,7 +31351,7 @@
  {
   "grades": "Entering junior year of high school or older (junior and senior students at local high schools)",
   "min_age": 16,
-  "max_age": null,
+  "max_age": 18,
   "opens_iso": null,
   "deadline_iso": null,
   "apply_url": null,
@@ -31987,7 +31996,7 @@
   "pay_detail": null,
   "season": "year-round",
   "duration": "Summer minimum 21 hours; school year two 3-hour shifts a month",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "Paused: no new cohort in 2025, with a relaunch planned for 2026 (page text dates from Dec 2024). Last posted window closed Jan 16, 2024. No current cohort confirmed.",
   "deadline_iso": null,
@@ -32332,7 +32341,7 @@
   "regions": [
    "los-angeles"
   ],
-  "apply_url": null,
+  "apply_url": "https://www.governmentjobs.com/careers/longbeach",
   "verified": "fetched",
   "verified_on": "2026-10-10",
   "grades": null,
@@ -32659,7 +32668,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "priority": 2,
   "fields": [
    "environment"
@@ -32682,13 +32691,13 @@
   "status": "rolling",
   "deadline_text": "2026 summer mini-camps were full for volunteers. The Ecology Centre answers applications within 10 business days.",
   "deadline_confidence": "rolling",
-  "how_to_apply": "Fill in the online volunteer form on the page and choose the position.",
+  "how_to_apply": "The 2026 summer mini-camps are full for volunteers; park clean-up is still open. Fill in the online volunteer form on the page and choose the position.",
   "url": "https://ecologycentre.ca/volunteer/",
   "notes": "Mini-camps run over spring and summer break and some Pro-D days. A police check is needed only for the 18+ field-trip role.",
   "sources_fetched": [
    "https://ecologycentre.ca/volunteer/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "id": "madison-bgc-dane-county-career-exploration-program",
@@ -32925,7 +32934,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "grades": null,
-  "min_age": 14,
+  "min_age": 8,
   "max_age": null,
   "id": "madison-childrens-museum-volunteers",
   "name": "Madison Children's Museum Volunteers",
@@ -33280,7 +33289,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "grades": null,
-  "min_age": 14,
+  "min_age": 10,
   "max_age": 17,
   "id": "madison-henry-vilas-zoo-teen-volunteers",
   "name": "Henry Vilas Zoo Volunteer Program (teens 14 to 17)",
@@ -34114,7 +34123,7 @@
   "duration": "4 days, June 14 to 17, 2027, 9 am to 3 pm",
   "name": "Business Basics (Wisconsin School of Business)",
   "org": "Wisconsin School of Business, UW-Madison",
-  "what_you_do": "A 4-day day camp at Grainger Hall. Students do hands-on activities and an entrepreneurial challenge to build communication, problem-solving and critical thinking skills.",
+  "what_you_do": "A day camp at Grainger Hall that runs 4 days. Students do hands-on activities and an entrepreneurial challenge to build communication, problem-solving and critical thinking skills.",
   "who_can_apply": "Rising 9th and 10th grade students interested in business. Preference goes to first-generation college students and students who get free or reduced lunch, but others can apply and may be waitlisted.",
   "season": "summer",
   "status": "opens-soon",
@@ -34191,7 +34200,7 @@
   "duration": "4 days, 9 am to 4 pm. Session 1: June 21 to 24, 2027. Session 2: June 28 to July 1, 2027",
   "name": "Junior Business Badgers",
   "org": "Wisconsin School of Business, UW-Madison",
-  "what_you_do": "A 4-day day camp at Grainger Hall. Students explore business careers, visit local companies for job shadow trips, and get help with college essays and resumes.",
+  "what_you_do": "A day camp at Grainger Hall that runs 4 days. Students explore business careers, visit local companies for job shadow trips, and get help with college essays and resumes.",
   "who_can_apply": "Rising 11th and 12th grade students interested in business. Preference goes to first-generation college students and students who get free or reduced lunch, but others can apply and may be waitlisted.",
   "season": "summer",
   "status": "opens-soon",
@@ -34540,7 +34549,7 @@
   "grades": null,
   "opens_iso": null,
   "deadline_iso": null,
-  "apply_url": null,
+  "apply_url": "https://www.jobapscloud.com/MD/?Keyword=&Loc=&DeptNumber=30&OccList=&JobType=INT&CollegeDegreeRequired=&TeleworkAvailable=&KeywordFullText=0",
   "needs_work_permit": null,
   "verified": "fetched",
   "verified_on": "2026-10-09",
@@ -35119,6 +35128,7 @@
   "name": "UMass Amherst Pre-College Summer Programs",
   "org": "University of Massachusetts Amherst, University Without Walls",
   "regions": [
+   "boston",
    "massachusetts"
   ],
   "city": "Amherst, MA (also online and the UMass Charles River Campus in Boston)",
@@ -35305,7 +35315,7 @@
   "max_age": 18,
   "who_can_apply": "High school students ages 16 to 18. Must be 16 by Sept 1.",
   "paid_type": "unpaid",
-  "pay_detail": "No fee, but each ambassador must raise $1,250 for the hospital to earn an awards package.",
+  "pay_detail": "You pay nothing, but you must raise $1,250 for the hospital to earn an awards package. There is no pay.",
   "season": "year-round",
   "duration": "Cohort 8 runs 2027 to 2028. Meetings are Wednesdays 3:30 to 4:30 PM, virtual; weekly in summer, monthly in the school year.",
   "status": "closed-expect-reopen",
@@ -35640,7 +35650,7 @@
   "deadline_text": "Open enrollment: you can start at any time. The process usually takes about two months.",
   "deadline_confidence": "rolling",
   "how_to_apply": "Make a MyJobCorps account on jobcorps.gov. Fill out the application. Upload the documents that show you are eligible. Then connect with an admissions representative. Call 800-733-5627 with questions.",
-  "url": "https://woodstock.jobcorps.gov/",
+  "url": "https://woodstock.jobcorps.gov/training-programs",
   "sources_fetched": [
    "https://woodstock.jobcorps.gov/",
    "https://woodstock.jobcorps.gov/training-programs",
@@ -36176,7 +36186,8 @@
   "name": "American Legion Auxiliary Michigan Girls State",
   "org": "American Legion Auxiliary, Department of Michigan",
   "regions": [
-   "michigan"
+   "michigan",
+   "lansing"
   ],
   "city": "East Lansing, MI (Michigan State University)",
   "type": "civic-government",
@@ -37235,6 +37246,7 @@
   "name": "YMCA Michigan Youth in Government",
   "org": "State Alliance of Michigan YMCAs",
   "regions": [
+   "lansing",
    "michigan"
   ],
   "city": "Lansing, MI (conferences), delegations across Michigan",
@@ -38363,7 +38375,8 @@
    "oakland",
    "san-francisco",
    "peninsula",
-   "silicon-valley"
+   "silicon-valley",
+   "virtual"
   ],
   "city": "Bay Area (virtual sessions, final session in San Francisco)",
   "type": "civic-government",
@@ -38692,7 +38705,7 @@
   "priority": 2,
   "needs_work_permit": null,
   "duration": "Until July 31, 2027 for the 2026-27 term",
-  "pay_detail": "Pay is not stated on the page. Ask the city.",
+  "pay_detail": "Not stated. We read the city news post and the boards page on 2026-10-10. Neither says anything about pay. Ask the city.",
   "name": "Mayor's Chief of Staff Internship (KidsMatter)",
   "org": "City of Naperville and KidsMatter",
   "regions": [
@@ -39709,7 +39722,7 @@
   "opens_iso": "2026-10-15",
   "verified": "fetched",
   "verified_on": "2026-10-09",
-  "apply_url": null,
+  "apply_url": "https://www.cfnc.org/",
   "deadline_iso": "2027-01-05",
   "needs_work_permit": false,
   "priority": 1,
@@ -41131,7 +41144,7 @@
  {
   "grades": null,
   "max_age": 17,
-  "min_age": null,
+  "min_age": 16,
   "opens_iso": null,
   "deadline_iso": null,
   "apply_url": "https://nbfpl.org/images/pdfs/TeenVolunteerApplication2018.pdf",
@@ -41722,7 +41735,7 @@
   "what_you_do": "Free college prep all year. You get SAT/ACT prep, tutoring, college tours and STEM workshops. A six-week Summer Institute on campus is required. It has college-level classes.",
   "who_can_apply": "Students who finished 8th grade and are in 9th, 10th or 11th grade. You must live in and go to school in New Brunswick, Perth Amboy or Plainfield. You must be first in your family to go to college, or low income. You must be a US citizen or permanent resident. You need at least a C average and a plan to go to college. You must send an application and a personal statement, and do an interview.",
   "paid_type": "unpaid",
-  "pay_detail": "Free program. A stipend is not stated on the page read.",
+  "pay_detail": "Free program. The page read does not say if students get paid.",
   "season": "year-round",
   "duration": "Year-round, with a six-week Summer Institute",
   "status": "open-now",
@@ -42908,7 +42921,7 @@
   "season": "summer",
   "duration": "Seven weeks, mid-June to early August (2027 dates to be decided)",
   "status": "unconfirmed",
-  "deadline_text": "For 2027, the job announcement is expected to open on USAJOBS in mid-October 2026, and applications are due at the end of January 2027. Another line on the page says applications generally open Nov 1 and close in the last week of January.",
+  "deadline_text": "Not open yet. The page says the 2027 job announcement is expected on USAJOBS in mid-October 2026, with applications due at the end of January 2027. A lower line says applications generally open Nov 1 and close in the last week of January, so the open date is not firm.",
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Watch for the SHIP job announcement on USAJOBS and follow the application page linked from the SHIP page. The page says to read the application process page for the full steps.",
   "url": "https://www.nist.gov/ship",
@@ -43592,11 +43605,11 @@
   "pay_detail": "Tier 1 $600, Tier 2 $700, Tier 3 $800 as a one-time nontaxable reimbursement in November, plus a $75 perfect attendance bonus. Tier 4 (by invitation after Tier 3) is a part-time staff job at $17 per hour. No fee to join.",
   "season": "year-round",
   "duration": "9 months, March to November 2027 (about 4 to 6 hours a week in spring and fall, 20 to 25 hours a week in summer; about 190 to 220 hours total).",
-  "status": "unconfirmed",
+  "status": "open-now",
   "opens_iso": "2026-10-01",
-  "deadline_text": "Submit your materials before Dec 4, 2026 to be invited to an interview. No final deadline is posted. Info session Sat Oct 17, 2026, 11 a.m. to 1 p.m.",
-  "deadline_iso": null,
-  "deadline_confidence": "unknown",
+  "deadline_text": "Applications for 2027 opened Oct 1, 2026. Submit your materials before Dec 4, 2026 to be invited to an interview. No final deadline is posted. Info session Sat Oct 17, 2026, 11 a.m. to 1 p.m.",
+  "deadline_iso": "2026-12-04",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Apply online (account lets you save progress): short answers plus references, then a group interview. Apprentices must reapply every year. Two references use a separate online reference form.",
   "needs_work_permit": null,
   "url": "https://www.bbg.org/learn/gap",
@@ -44742,7 +44755,7 @@
   "duration": "22 weeks, Oct 26, 2026 to Apr 3, 2027, 250 hours total",
   "status": "closed-expect-reopen",
   "deadline_text": "The WLG application page lists a deadline of October 9, 2026, and that date has passed. The FAQ PDF lists the application period as Sept 8 to Oct 2, 2026.",
-  "deadline_iso": "2026-10-09",
+  "deadline_iso": null,
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Use the WLG online application (CareerReady or Special Initiatives link), or ask your SYEP provider for help. If selected, submit documents online or in person to your provider.",
   "needs_work_permit": true,
@@ -44934,7 +44947,7 @@
    "engineering",
    "science"
   ],
-  "what_you_do": "A four-day day program that introduces chemical engineering. You do hands-on labs and team challenges. You meet faculty and alumni and tour labs. You also learn about college applications and aid.",
+  "what_you_do": "A four-day program that introduces chemical engineering. You do hands-on labs and team challenges. You meet faculty and alumni and tour labs. You also learn about college applications and aid.",
   "min_age": null,
   "max_age": null,
   "grades": "Students currently in 10th or 11th grade (rising juniors and seniors)",
@@ -44974,7 +44987,7 @@
    "engineering",
    "tech-cs"
   ],
-  "what_you_do": "A four-day day program. You work with circuits, power and clean energy. You learn about AI, robots and cybersecurity. You also try electronic design and bioengineering. You meet faculty, alumni and industry pros.",
+  "what_you_do": "A four-day program. You work with circuits, power and clean energy. You learn about AI, robots and computer security. You also try electronic design and bioengineering. You meet faculty, alumni and industry pros.",
   "min_age": null,
   "max_age": null,
   "grades": "Students currently in 10th or 11th grade (rising juniors and seniors)",
@@ -45024,9 +45037,9 @@
   "duration": "Six one-week sessions from July 5 to Aug 12, 2027, Monday to Thursday 9 AM to 2:30 PM. You can attend one or more weeks. Not residential.",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "The page lists a registration deadline of June 1, 2027 and the 2027 session dates. The registration form could not be read by this check, so confirm that registration is open.",
-  "deadline_iso": "2027-06-01",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_text": "The page lists a registration deadline of June 1, 2027 and the 2027 session dates, but does not say whether registration is open now. The registration form could not be read, so confirm it is open.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Fill out the Institute Registration Form to pick your weeks, then pay for each week with the Program Payment Form. Both steps are required to hold a spot.",
   "needs_work_permit": null,
   "url": "https://manhattan.edu/academics/engineering/high-school-programs#mechanical-summer",
@@ -45035,10 +45048,10 @@
    "https://manhattan.edu/academics/engineering/high-school-programs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "priority": 3,
   "notes": "Contact details are on the page. The registration and payment forms are separate, and both are needed. The form link uses the old Manhattan College name. The form page did not load as text, so confirm it is open before you plan around it.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "id": "nyc-manhattan-university-omalley-business-pre-college",
@@ -45257,7 +45270,7 @@
   "pay_detail": "Unpaid volunteer. No cost is listed.",
   "season": "summer",
   "duration": "At least 100 hours in July, at least four days a week (Monday to Thursday) from 9 AM to 3 PM. No vacation during that time.",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "The page still shows the 2025 notice: applications closed and the deadline was Jan 31, 2025. No 2026 or 2027 dates are posted.",
   "deadline_iso": null,
@@ -47782,7 +47795,7 @@
   "deadline_confidence": "rolling",
   "how_to_apply": "Create a MyJobCorps account on jobcorps.gov. Finish the application. Then an Admissions Representative sets up an interview. They review your documents and a background check. They also help you pick a campus.",
   "needs_work_permit": null,
-  "url": "https://oneonta.jobcorps.gov/",
+  "url": "https://oneonta.jobcorps.gov/campus-life",
   "apply_url": "https://www.jobcorps.gov/",
   "sources_fetched": [
    "https://oneonta.jobcorps.gov/",
@@ -48259,7 +48272,7 @@
   "pay_detail": "Summer internships are paid; amounts vary by employer (see the district list). The district's 2024 listing said Peralta Summer Institute students got a stipend; the current Peralta page only says classes are free.",
   "season": "summer",
   "duration": "Varies by employer",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "The district updates its summer internship list weekly from January to May. The page still shows Summer 2024 forms; 2027 dates not posted.",
   "deadline_iso": null,
@@ -49895,7 +49908,7 @@
   "deadline_confidence": "rolling",
   "how_to_apply": "Create a MyJobCorps account on jobcorps.gov. Finish the application. Then an Admissions Representative sets up an interview. They review your documents and a background check. They also help you pick a campus.",
   "needs_work_permit": null,
-  "url": "https://philadelphia.jobcorps.gov/",
+  "url": "https://philadelphia.jobcorps.gov/campus-life",
   "apply_url": "https://www.jobcorps.gov/",
   "sources_fetched": [
    "https://philadelphia.jobcorps.gov/",
@@ -50618,7 +50631,7 @@
   "what_you_do": "Free college prep all year. There is tutoring after school on weekdays, Saturday classes, college visits and a six-week summer program on campus. One track focuses on civic work and one on STEM.",
   "who_can_apply": "Students in 9th or 10th grade at Philadelphia public district or charter high schools. They come from low-income families, or their parents do not have a bachelor degree, or both. They also plan to go to college. Five named schools get priority. They are Benjamin Franklin HS, Dobbins CTE, Gratz Mastery, Strawberry Mansion and The U School.",
   "paid_type": "unpaid",
-  "pay_detail": "Free to students. A pay or stipend is not stated on the pages read.",
+  "pay_detail": "Free to students. The pages read do not say if students get paid.",
   "season": "year-round",
   "duration": "Runs year-round, with a six-week summer program on campus.",
   "status": "rolling",
@@ -51298,9 +51311,9 @@
   "season": "summer",
   "duration": "4 weeks, June 26 to July 24, 2027, residential",
   "status": "unconfirmed",
-  "deadline_text": "Application deadline February 1, 2027. Decisions released April 1, 2027.",
-  "deadline_iso": "2027-02-01",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_text": "The CMU pages list a February 1, 2027 deadline (decisions April 1, 2027) but do not say when applications open or whether they are open now. Check the CMU Pre-College page before you plan around it.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Apply online through the CMU Pre-College application portal by February 1, 2027. Residential only; full participation required.",
   "needs_work_permit": false,
   "apply_url": "https://apply-precollege.studentaffairs.cmu.edu/apply/",
@@ -51312,8 +51325,8 @@
   "priority": 2,
   "notes": "Status is unconfirmed only because the application opening date is not posted; the 2027 deadlines are confirmed on the program pages (the apply portal could not be read). Limited spots. The admission page lists two different dates for this application (February 1 and March 1, 2027); the program page and the deadlines table both say February 1, 2027, so apply by then. Completers may be invited back to AI Scholars.",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on": "2026-10-10",
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "id": "pittsburgh-cmu-pre-college-programs",
@@ -51337,9 +51350,9 @@
   "season": "summer",
   "duration": "3 to 6 weeks depending on the program (summer 2027 starts June 26)",
   "status": "unconfirmed",
-  "deadline_text": "Scholarship application deadline February 1, 2027 (decisions April 1, 2027). Basic application deadline March 1, 2027 (rolling decisions).",
-  "deadline_iso": "2027-03-01",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_text": "The CMU pages list a scholarship deadline of February 1, 2027 and a basic application deadline of March 1, 2027, but do not say when applications open or whether they are open now. Check the CMU Pre-College page before you plan around it.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Apply online through the CMU Pre-College application portal. The scholarship option is only considered under the February 1, 2027 deadline.",
   "needs_work_permit": false,
   "apply_url": "https://apply-precollege.studentaffairs.cmu.edu/apply/",
@@ -51352,8 +51365,8 @@
   "priority": 3,
   "notes": "Status is unconfirmed only because the application opening date is not posted; the 2027 deadlines are confirmed on the program pages (the apply portal could not be read). Expensive; shown so families know the cost and the scholarship route. The three fully funded programs (AI Scholars, CS Scholars, SAMS) cost nothing. Check the cost page again in November 2026 for 2027 prices.",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on": "2026-10-10",
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "id": "pittsburgh-cmu-summer-academy-math-science",
@@ -51378,9 +51391,9 @@
   "season": "summer",
   "duration": "6 weeks in person, June 26 to August 7, 2027, plus a short virtual jumpstart June 21 and 22, 2027",
   "status": "unconfirmed",
-  "deadline_text": "Application deadline February 1, 2027. Decisions released April 1, 2027.",
-  "deadline_iso": "2027-02-01",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_text": "The CMU pages list a February 1, 2027 deadline (decisions April 1, 2027) but do not say when applications open or whether they are open now. Check the CMU Pre-College page before you plan around it.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "The application opening date is not posted; apply online through the CMU Pre-College application portal by February 1, 2027. Residential only; scholars must attend the full program.",
   "needs_work_permit": false,
   "apply_url": "https://apply-precollege.studentaffairs.cmu.edu/apply/",
@@ -51393,8 +51406,8 @@
   "priority": 2,
   "notes": "Status is unconfirmed only because the application opening date is not posted; the 2027 deadlines above are confirmed on the program pages (the apply portal itself could not be read, it needs JavaScript). Competitive and limited spots. The page gives no application opening date. Scholars cannot take other summer programs that overlap. Questions: cmu-sams@andrew.cmu.edu.",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on": "2026-10-10",
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "grades": null,
@@ -51547,7 +51560,7 @@
   "deadline_confidence": "rolling",
   "how_to_apply": "Create a MyJobCorps account on jobcorps.gov. Finish the application. Then an Admissions Representative sets up an interview. They review your documents and a background check. They also help you pick a campus.",
   "needs_work_permit": null,
-  "url": "https://pittsburgh.jobcorps.gov/",
+  "url": "https://pittsburgh.jobcorps.gov/campus-life",
   "apply_url": "https://www.jobcorps.gov/",
   "sources_fetched": [
    "https://pittsburgh.jobcorps.gov/",
@@ -51946,7 +51959,7 @@
   "duration": "Summer camps held June to August. Hours are not stated.",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "The volunteer page says applications are due Thursday, October 22, 2026. The page does not say whether that date applies to teen volunteers, so ask Phipps. Camps run June to August.",
+  "deadline_text": "The volunteer page says applications are due Thursday, October 22, 2026, but that line sits in a different volunteer section and the page does not say it covers teen volunteers. No teen deadline is posted, so ask Phipps. Camps run June to August.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "The page says the first step for volunteers is to fill out an application. Accepted applicants then go to an interview, orientation and placement meetings. The page does not give a form just for teens. Email the volunteer coordinator listed on the Phipps volunteer page to ask. That is Deb Knorr, dknorr@phipps.conservatory.org.",
@@ -52125,7 +52138,7 @@
  {
   "grades": "Entering grades 9 to 12 (or a high school graduate of that year)",
   "opens_iso": null,
-  "apply_url": null,
+  "apply_url": "https://app.campdoc.com/register/pointpark",
   "verified": "fetched",
   "verified_on": "2026-10-10",
   "needs_work_permit": null,
@@ -52164,7 +52177,7 @@
  {
   "grades": "Entering grades 9 to 12 (or a high school graduate of that year)",
   "opens_iso": null,
-  "apply_url": null,
+  "apply_url": "https://app.campdoc.com/register/pointpark",
   "verified": "fetched",
   "verified_on": "2026-10-10",
   "needs_work_permit": null,
@@ -52388,7 +52401,7 @@
   "duration": "Weekly Thursdays 3:30 to 6 p.m., Oct 15, 2026 to May 2027",
   "status": "closed-expect-reopen",
   "deadline_text": "The application deadline was Friday, October 9, 2026. Weekly meetings start October 15, 2026.",
-  "deadline_iso": "2026-10-09",
+  "deadline_iso": null,
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Send in the online application by the deadline. Work samples are optional. Email teens@warhol.org with questions. Bus tickets are available for transportation.",
   "needs_work_permit": true,
@@ -53204,7 +53217,7 @@
   "deadline_confidence": "rolling",
   "how_to_apply": "Create a MyJobCorps account on jobcorps.gov. Finish the application. Then an Admissions Representative sets up an interview. They review your documents and a background check. They also help you pick a campus.",
   "needs_work_permit": null,
-  "url": "https://redrock.jobcorps.gov/",
+  "url": "https://redrock.jobcorps.gov/campus-life",
   "apply_url": "https://www.jobcorps.gov/",
   "sources_fetched": [
    "https://redrock.jobcorps.gov/",
@@ -53427,7 +53440,7 @@
   "grades": "High school juniors",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "priority": 1,
   "needs_work_permit": null,
   "duration": "8 weeks, four days a week, June to August",
@@ -53443,7 +53456,7 @@
   "who_can_apply": "Juniors in good standing with a GPA of 2.0 out of 4.0 or higher and an interest in nursing. Applications are for juniors at Cristo Rey St. Martin College Prep, Highland Park, North Chicago, Round Lake and Waukegan High Schools.",
   "paid_type": "paid",
   "season": "summer",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "deadline_text": "The page still shows the last cycle it read: applications opened December 10, 2024 and closed January 23, 2025. Newer dates are not posted.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
@@ -53459,7 +53472,7 @@
    "chicago"
   ],
   "city": "North Chicago, IL (Lake County)",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "id": "rfu-science-saturdays",
@@ -54341,7 +54354,7 @@
   ],
   "city": "Round Rock, TX",
   "deadline_iso": null,
-  "apply_url": "https://www.governmentjobs.com/careers/roundrock/jobs/5169290/seasonal-lifeguard",
+  "apply_url": "https://roundrockrecreation.com/programs/aquatics/american-red-cross-certifications/",
   "verified": "fetched",
   "verified_on": "2026-10-10",
   "needs_work_permit": null,
@@ -54718,7 +54731,7 @@
   "duration": "6 weeks (fall 2025 sessions shown)",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Page still shows fall 2025 sessions (registration opened Sept 8, 2025). New sessions not posted.",
+  "deadline_text": "The program page is out of date. It still shows fall 2025 sessions (registration opened September 8, 2025). Email NNworkforce@cityofsacramento.org to ask about the next session before you apply.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Register through ActiveNet using the Register Here button when a session is open. NNworkforce@cityofsacramento.org",
@@ -54729,10 +54742,10 @@
    "https://www.cityofsacramento.gov/ypce/youth-employment/NorthNatomasWorkforceDevelopmentProgram"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-10-10",
   "priority": 3,
   "notes": "Only for residents of the eight eligible apartment complexes (Atrium Court, Natomas Park, Terracina Gold, Terracina Meadows, The Lofts, Valencia Point, Westview Ranch, Willow Glen). You must meet the age rule by the session start date. Only one absence is allowed or you may lose the stipend. Only one session is open for registration at a time.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "id": "sac-prime-time-teen",
@@ -54967,10 +54980,10 @@
   "deadline_text": "Applications opened online Oct 10, 2026 for Zoo Teens 2027 (Jan to April). Closing date not stated.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Apply online starting Oct 10, send a recommendation letter and proof of GPA, then interview with the volunteer coordinator.",
+  "how_to_apply": "Apply online (the form opened Oct 10), send a recommendation letter and proof of GPA, then interview with the volunteer coordinator.",
   "needs_work_permit": false,
   "url": "https://www.saczoo.org/volunteer",
-  "apply_url": null,
+  "apply_url": "https://app.betterimpact.com/Application?OrganizationGuid=5d603928-6e58-4166-a04d-5ed7ae372ad1&ApplicationFormNumber=2",
   "sources_fetched": [
    "https://www.saczoo.org/volunteer"
   ],
@@ -55326,7 +55339,7 @@
   "pay_detail": "Unpaid volunteer role",
   "season": "school-year",
   "duration": "At least 100 hours in the school year; 1 to 3 shifts of 3 hours per week",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "Page says applications are closed. It lists a deadline of July 30, 2026 and also an application window opening June 1, 2027 (notices by July 29, 2027, interviews Aug 2 to 13, 2027). The dates conflict, so confirm.",
   "deadline_iso": null,
@@ -56731,7 +56744,7 @@
   "deadline_text": "Youth Advisory Council (open now): no deadline posted. Youth Commission (closed): recruitment is closed, no reopening date posted.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "Fill out the District Youth Advisory Application for the YAC. A Youth Commissioner contacts you within about two weeks.",
+  "how_to_apply": "The Youth Commission is closed now. Only the Youth Advisory Council is open. Fill out the District Youth Advisory Application for the YAC. A Youth Commissioner contacts you within about two weeks.",
   "needs_work_permit": false,
   "url": "https://www.sjpl.org/youth-commission",
   "apply_url": "https://www.sjpl.org/youth-commission/join-your-district-youth-advisory-council/",
@@ -56740,10 +56753,10 @@
    "https://www.sjpl.org/youth-commission/join-your-district-youth-advisory-council/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-10-10",
   "priority": 2,
   "notes": "Page is hosted by the library. Some council districts are unavailable or paused. YAC members earn community service hours. Pay not mentioned.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "min_age": null,
@@ -56976,7 +56989,7 @@
   "min_age": null,
   "who_can_apply": "People currently enrolled in high school who can get a work permit. The page does not give a minimum age or a city residency rule.",
   "paid_type": "not-stated",
-  "pay_detail": "Pay is not stated on the page",
+  "pay_detail": "Not stated. We read the city intern program page on 2026-10-10 and it says nothing about pay. Check the job post when one is open.",
   "season": "year-round",
   "duration": "Not stated. Interns keep their spot by sending proof of school enrollment and their GPA after each semester.",
   "status": "unconfirmed",
@@ -57183,7 +57196,7 @@
   "deadline_text": "No deadline. The page says the dog and cat volunteer opportunities are currently full.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "Fill out the online application for the role you want (dog, cat or clinic) and pick an orientation date and time. Outreach applications go by email. Main phone: 805-964-4777, or use the contact form on the page.",
+  "how_to_apply": "Dog and cat roles are full when we checked on 2026-10-10; the clinic and outreach roles are recruiting. Fill out the online application for the role you want (dog, cat or clinic) and pick an orientation date and time. Outreach applications go by email. Main phone: 805-964-4777, or use the contact form on the page.",
   "needs_work_permit": false,
   "url": "https://sbhumane.org/volunteer",
   "apply_url": null,
@@ -57191,10 +57204,10 @@
    "https://sbhumane.org/volunteer"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "priority": 3,
   "notes": "Confirm first: the dog and cat roles were full when checked, and the page gives two different time commitments. Younger volunteers need a parent or guardian to volunteer with them.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "grades": null,
@@ -57426,7 +57439,7 @@
   "what_you_do": "These are seasonal and part-time jobs. They help build workplace skills and experience. Titles include Lifeguard, Camp Counselor, Recreation Leader and Seasonal Program Staff.",
   "who_can_apply": "Eligibility varies by position. Some need experience or certifications (for example lifeguard); others are for first-time workers. Camp Recreation Assistants need no experience. Minimum ages are set in each job posting and were not read.",
   "paid_type": "paid",
-  "pay_detail": "Hourly, set by position. A March 2024 City notice listed $18.78 to $23.92 an hour for lifeguards, camp counselors and swim instructors; check the current posting.",
+  "pay_detail": "Hourly, set by position. A March 2024 City notice listed $18.78 to $23.92 an hour for lifeguards, camp counselors and swim instructors; no 2026 range is posted on the program page, so check the current posting.",
   "season": "summer",
   "duration": "Summer camps and pools; aquatics hires through the year with more hiring before summer",
   "status": "rolling",
@@ -57985,7 +57998,7 @@
   "regions": [
    "los-angeles"
   ],
-  "apply_url": null,
+  "apply_url": "https://santaclaritavolunteers.com/",
   "verified": "fetched",
   "verified_on": "2026-10-10",
   "grades": "7-12",
@@ -60772,7 +60785,7 @@
   "status": "closed-expect-reopen",
   "opens_iso": null,
   "deadline_text": "The fall 2026 Junior Coach application was due Aug 26, 2026 (season started early September; 5K on Nov 14, 2026). Spring dates are not posted.",
-  "deadline_iso": "2026-08-26",
+  "deadline_iso": null,
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Complete the Junior Coach application on the Girls on the Run Bay Area site. Email admin@gotrbayarea.org or call (415) 863-8942 to ask about late spots or the next season.",
   "needs_work_permit": false,
@@ -63206,7 +63219,7 @@
   "pay_detail": "Unpaid. Earns community service hours.",
   "season": "year-round",
   "duration": "Training of 65+ hours (the main Teen Line page says over 100), then at least two evening shifts a month",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "The page says applications are due \"Monday September 8, 2026 by 5pm\" (that date is a Tuesday, so confirm the day), which has now passed. Training runs three times a year (Fall, Spring, Summer). Next dates are not posted; the page has an email interest list for future applications.",
   "deadline_iso": null,
@@ -63227,7 +63240,7 @@
   "apply_url": null,
   "verified": "fetched",
   "verified_on": "2026-10-09",
-  "deadline_iso": "2026-08-21",
+  "deadline_iso": null,
   "needs_work_permit": false,
   "priority": 3,
   "fields": [
@@ -63252,7 +63265,7 @@
   "duration": "2026-27 school year; meeting schedule not listed",
   "status": "closed-expect-reopen",
   "deadline_text": "2026-27 applications were due no later than August 21, 2026. Next year's date is not posted.",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Pick up an application at the library reference desk (30600 Pauba Rd). No online form is listed. Phone 951-693-8900.",
   "url": "https://temeculaca.gov/495/Teen-Programs",
   "notes": "The page does not say how many hours you can earn. Ask the library if late applications are taken.",
@@ -63756,7 +63769,7 @@
   "priority": 2,
   "needs_work_permit": null,
   "duration": "Not stated",
-  "pay_detail": "Pay is not stated on the page.",
+  "pay_detail": "Not stated. We read the student page on 2026-10-10 and it says nothing about pay. Ask the group.",
   "name": "The Trade Collective (skilled trades student sign-up)",
   "org": "The Trade Collective",
   "regions": [
@@ -65764,7 +65777,7 @@
   "pay_detail": "2025 tuition was $6,985 plus a $100 application fee (includes dorm and meals). 2027 price not posted yet.",
   "season": "summer",
   "duration": "about 2 weeks per session (2025: July 7 to 18 and July 21 to Aug 1)",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "2025 cycle deadline was May 16, 2025 (the fee page still shows 2025). 2027 dates not posted yet.",
   "deadline_iso": null,
@@ -66656,7 +66669,7 @@
   "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "id": "unc-explore-unc",
   "name": "Explore@UNC",
   "org": "UNC-Chapel Hill Summer School",
@@ -66678,7 +66691,7 @@
   "season": "summer",
   "duration": "1 week. 2027 weeks: June 14-18, June 21-25, June 28-July 2, July 12-16. Commuter only, no residential option.",
   "status": "unconfirmed",
-  "deadline_text": "Pre-registration runs mid-December 2026 through mid-January 2027; placement notices early February 2027; financial aid paperwork due January 28, 2027.",
+  "deadline_text": "Pre-registration is planned for mid-December 2026 through mid-January 2027 and is not open yet. The page gives no exact opening or closing date. Financial aid paperwork is due January 28, 2027. Placement notices come in early February 2027.",
   "deadline_iso": null,
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Pre-register online (interest form on the Explore@UNC pages). Pre-registering improves placement chances. Payment details come after placement.",
@@ -66690,7 +66703,7 @@
   ],
   "priority": 2,
   "notes": "Families must have a local trusted contact. A temporary drop-off pass is $25 for the week and all-day parking is the family's cost. UNC also lists dual enrollment as a visiting student for rising seniors (see summer.unc.edu/dual-enrollment/); its cost was not read. Questions: explore@unc.edu.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "grades": "Rising 12th (finished junior year)",
@@ -66839,11 +66852,11 @@
   "status": "closed-expect-reopen",
   "opens_iso": null,
   "deadline_text": "California's deadline for the 2027 program is October 7, 2026. That date has passed. The next cycle is expected in fall 2027.",
-  "deadline_iso": "2026-10-07",
+  "deadline_iso": null,
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Ask your principal or counselor for the application, or email the California coordinator at ussyp@cde.ca.gov (California Department of Education, Sacramento).",
   "needs_work_permit": false,
-  "url": "https://ussenateyouth.org",
+  "url": "https://ussenateyouth.org/selection_process_administrators",
   "apply_url": null,
   "sources_fetched": [
    "https://ussenateyouth.org",
@@ -67116,7 +67129,7 @@
    "engineering",
    "science"
   ],
-  "what_you_do": "This is a four-day day camp for rising 8th and 9th graders. You hear talks from UT faculty and students. Then you do hands-on activities. The activities show how engineering connects to art, sports, medicine and sustainability.",
+  "what_you_do": "This is a four-day camp for rising 8th and 9th graders. You hear talks from UT faculty and students. Then you do hands-on activities. The activities show how engineering connects to art, sports, medicine and sustainability.",
   "min_age": null,
   "max_age": null,
   "grades": "Rising 8th and 9th graders",
@@ -69603,7 +69616,7 @@
   "grades": "High school (students stay until they graduate)",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "Through high school graduation",
@@ -69625,7 +69638,7 @@
   "paid_type": "unpaid",
   "season": "year-round",
   "status": "unconfirmed",
-  "deadline_text": "The application page still showed 2024-25, with applications opening August 1, 2024. No current deadline is posted.",
+  "deadline_text": "The program page does not post a deadline or a school year, and older notes on it pointed to 2024-25. Email upwardbound@waubonsee.edu to ask if applications are open before you apply.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Fill out the new student application (from your counselor, Room 201 at East or A104A at West, or the website). Staff then set up a family interview, and new students do a 10 to 60 day trial period. Email upwardbound@waubonsee.edu.",
@@ -69635,7 +69648,7 @@
    "https://www.waubonsee.edu/admissions/get-college-ready/high-school-and-dual-credit-programs/upward-bound/apply-upward-bound"
   ],
   "notes": "The form asks for copies of your transcript and birth certificate. It also asks for your Social Security card and a parent tax return. Give these only to program staff at the school or the Sugar Grove office.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "id": "waukegan-park-district-volunteers",
@@ -70037,7 +70050,7 @@
   "grades": "Teens in grades 9 to 12. Kids ages 11 to 13 may apply as library helpers with a parent's approval.",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "School year positions, plus summer positions that run June to August",
@@ -70063,13 +70076,13 @@
   "deadline_text": "Applications for school year teen volunteers were open when read (October 2026). Summer 2026 applications closed for the season. 2027 summer dates are not posted yet.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Go to the volunteering page. Fill out the volunteer form there. If you have a question, write to teenvolunteers@wilmettelibrary.info.",
+  "how_to_apply": "Summer was closed when we checked on 2026-10-10. School year applications are open. Go to the volunteering page. Fill out the volunteer form there. If you have a question, write to teenvolunteers@wilmettelibrary.info.",
   "url": "https://www.wilmettelibrary.info/about-us/volunteering",
   "notes": "Summer jobs run June to August. Krista Hutley is the teen librarian. Eti Berland is the school engagement librarian. They are the teen volunteer coordinators. The Studio program has its own info sheet.",
   "sources_fetched": [
    "https://www.wilmettelibrary.info/about-us/volunteering"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 10, 2026"
  },
  {
   "id": "wisconsin-badger-boys-state",
@@ -70680,7 +70693,7 @@
   "notes": "The page does not mention work permits. Contact 404-371-2000 (Mon to Fri, 8:00 am to 4:30 pm) or 311CCC@dekalbcountyga.gov.",
   "verified": "fetched",
   "verified_on": "2026-10-10",
-  "apply_url": null,
+  "apply_url": "https://atlworks.org/",
   "verified_on_label": "Oct 10, 2026"
  },
  {
@@ -71736,7 +71749,7 @@
   "deadline_confidence": "rolling",
   "how_to_apply": "Go to zooniverse.org, pick a project, and make an account if the project asks.",
   "needs_work_permit": false,
-  "url": "https://www.zooniverse.org/",
+  "url": "https://www.zooniverse.org/about/faq",
   "apply_url": null,
   "sources_fetched": [
    "https://www.zooniverse.org/",

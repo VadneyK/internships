@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>How to Find Internships: a Teen Guide for the US and Vancouver</title>
 <meta name="description" content="A free guide for high schoolers in the US and Vancouver, BC. It started in California, Atlanta, New York and Chicago. Real programs, with the deadlines we could confirm, the work-permit rules, and a message that gets a yes.">
-<meta name="theme-color" content="#151515">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#efede8">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#131211">
 <link rel="canonical" href="https://vadneyk.github.io/internships/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="How to Find Internships: a Teen Guide for the US and Vancouver">
@@ -20,8 +21,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=34fa4a59">
-<link rel="stylesheet" href="assets/css/style.css?v=34fa4a59">
+<link rel="stylesheet" href="assets/css/fonts.css?v=a815eaf4">
+<link rel="stylesheet" href="assets/css/style.css?v=a815eaf4">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -68,7 +69,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <a class="chip" style="text-decoration:none;" href="#soon">Closing soon</a>
       <a class="chip" style="text-decoration:none;" href="#offer">Work permit</a>
     </nav>
-    <div class="stats" aria-label="At a glance">
+    <div class="stats" role="group" aria-label="At a glance">
       <div class="stat"><b>1771</b><span>programs checked</span></div>
       <div class="stat"><b>12 to 18</b><span>ages the picker covers</span></div>
       <div class="stat"><b>$0</b><span>no sign-up, no tracking</span></div>
@@ -100,6 +101,8 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   <div class="wrap">
     <span class="tag o eyebrow">Next deadlines</span>
     <h2>Closing <span class="orange">soon</span></h2>
+    <p id="soonNote" class="small muted" hidden></p>
+    <p id="soonStatus" class="sr" role="status"></p>
     <ul class="tl" id="soonList"><li><div class="d">...</div><div>Loading</div></li></ul>
     <p style="margin-top:1rem;"><a class="btn alt sm" href="find.html?view=dates">See every deadline by month</a></p>
   </div>
@@ -112,9 +115,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <div class="grid g2" style="align-items:start;">
       <div>
         <p class="lede">A <b>referral</b> is when someone who already works somewhere says, &ldquo;You should talk to this person.&rdquo;</p>
-        <p>In one big study of hiring, referrals were under 2% of the applications. But they were about 17% of the people hired. Job sites brought in almost half of all applications and about a quarter of the hires.</p>
-        <p>That study covers adult jobs. The idea carries over: people say yes to people they know. So your first move is not a website. It is a short message to one adult who already knows you.</p>
-        <p class="small muted">Source: Gem 2025 Recruiting Benchmarks, company hiring data from 2021 to 2024. For college internships, Handshake reports applications per posting more than doubled from January 2023 to January 2025, so posted openings are crowded.</p>
+        <p>In one company's hiring data (one hiring system, mostly office jobs), referrals were under 2% of the applications. But they were about 17% of the people hired. Job sites brought in almost half of all applications and about a quarter of the hires.</p>
+        <p>That data covers adult jobs. The idea carries over: people say yes to people they know. So your first move is not a website. It is a short message to one adult who already knows you.</p>
+        <p class="small muted">Source: Gem 2025 Recruiting Benchmarks, company hiring data through December 2024. For college internships, Handshake reports applications per posting more than doubled from January 2023 to January 2025, so posted openings are crowded.</p>
       </div>
       <figure class="card" style="margin:0;" aria-label="Chart: referrals are a tiny share of applications but a big share of hires">
         <figcaption class="caps" style="margin-bottom:.8rem;">Share of applications vs share of hires</figcaption>
@@ -167,6 +170,11 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
         <p style="margin:0;">Pick your state, age and kind of work. You get the exact permit, the steps, and a checklist to print.</p></div>
       <a class="btn" href="permit.html">Do I need a permit?</a>
     </div>
+    <nav class="chips" aria-label="Next steps after a yes" style="margin-top:1rem;">
+      <a class="chip" style="text-decoration:none;" href="ready.html">Get ready for day one</a>
+      <a class="chip" style="text-decoration:none;" href="paycheck.html">See your first paycheck</a>
+      <a class="chip" style="text-decoration:none;" href="safety.html">Safe at work</a>
+    </nav>
   </div>
 </section>
 
@@ -228,9 +236,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=34fa4a59"></script>
-<script src="assets/js/common.js?v=34fa4a59"></script>
-<script src="assets/js/home.js?v=34fa4a59"></script>
+<script src="assets/js/lib.js?v=a815eaf4"></script>
+<script src="assets/js/common.js?v=a815eaf4"></script>
+<script src="assets/js/home.js?v=a815eaf4"></script>
 
 </body>
 </html>

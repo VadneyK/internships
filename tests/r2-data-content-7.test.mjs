@@ -42,8 +42,9 @@ test("atlanta-parks-rec-teen-leaders: unconfirmed, no deadline_iso, because the 
   assert.equal(card.deadline_iso, null);
 });
 
+// nyc-bbg-garden-apprentice-program is left out: its page now prints the year (opened Oct 1, 2026, before Dec 4, 2026), so its date is real.
 test("cards whose page prints no year are not given a made-up date", () => {
-  for (const id of IDS.filter((i) => i !== "atlanta-parks-rec-teen-leaders")) {
+  for (const id of IDS.filter((i) => i !== "atlanta-parks-rec-teen-leaders" && i !== "nyc-bbg-garden-apprentice-program")) {
     const card = read(`../data/programs/${id}.json`);
     assert.equal(card.deadline_iso, null, id);
   }
