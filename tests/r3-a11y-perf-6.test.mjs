@@ -19,6 +19,7 @@ const CASES = [
   { file: "safety.html", href: "ready.html", parent: "Get ready", current: "Safe at work" },
   { file: "permit.html", href: "ready.html", parent: "Get ready", current: "Work permit finder" },
   { file: "younger.html", href: "ready.html", parent: "Get ready", current: "Ages 12 to 14" },
+  { file: "jobs.html", href: "ready.html", parent: "Get ready", current: "Jobs that hire teens" },
   { file: "parents.html", href: "ready.html", parent: "Get ready", current: "For parents" },
 ];
 

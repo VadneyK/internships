@@ -474,3 +474,8 @@ dl.facts dt { font-size: .78rem; font-weight: 800; letter-spacing: .04em; text-t
 dl.facts dd { margin: .25rem 0 0; overflow-wrap: anywhere; }
 dl.facts dd.ns { color: var(--ink-2); font-style: italic; }
 dl.facts > div.key { border-width: 3px; }
+
+/* Plain facts: the same label over answer, without the boxes (long lists of cards) */
+dl.facts.plain { display: grid; grid-template-columns: 1fr; gap: .55rem; }
+dl.facts.plain > div { border: 0; border-top: 2px solid var(--edge); border-radius: 0; padding: .5rem 0 0; background: none; }
+#jOut h2 { margin-top: 2rem; }

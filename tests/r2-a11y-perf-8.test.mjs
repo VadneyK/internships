@@ -20,6 +20,7 @@ const QUICK_HREFS = [
   "playbook.html",
   "resume.html",
   "ready.html",
+  "jobs.html",
   "calendar.html",
   "paycheck.html",
   "safety.html",

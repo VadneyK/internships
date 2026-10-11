@@ -72,7 +72,7 @@ test("index.html: the summary is empty when nothing is picked, and updates on ea
 test("index.html: every link in the picker has a name with its program, and no two names match", async () => {
   const { window, document } = await loadPage("index.html");
   type(window, document.getElementById("pAge"), "16");
-  await tick();
+  for (let i = 0; i < 100 && document.querySelectorAll("#matches article.prog").length < 2; i++) await tick(50); // the data may still be loading on a slow machine
   const cards = [...document.querySelectorAll("#matches article.prog")];
   assert.ok(cards.length >= 2, `expected at least 2 picker cards, got ${cards.length}`);
   const buttons = [...document.querySelectorAll("#matches a.btn")];

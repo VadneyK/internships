@@ -30,6 +30,7 @@ Each page is a plain HTML file in the repo root. The source for each one is in [
 | `rules.html` | Plain California answers on work permits, hours by age, minimum wage, unpaid internships, scams and safe contact with adults. |
 | `paycheck.html` | Estimate a first paycheck in California, Georgia, New York and Illinois, understand the W-4 and state forms, and learn how to get unpaid wages. |
 | `safety.html` | Your right to a safe workplace, jobs that people under 18 may not do, harassment, injuries, and who to call. |
+| `jobs.html` | Employers that hire teens, with the minimum age each one's own page states, and the federal youth work rules. |
 | `languages.html` | Official pages in Spanish, Chinese, Korean, Vietnamese, Tagalog and Ukrainian on teen work rules, the W-4, wages and job scams. |
 | `interview.html` | A free prep sheet that helps you plan your hours, practice 12 common interview questions, line up references and write a thank-you note. |
 | `resume.html` | What goes on a first resume, how to turn babysitting and clubs into strong bullets, and a free builder that prints to PDF. |

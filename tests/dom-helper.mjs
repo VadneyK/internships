@@ -75,4 +75,4 @@ export function type(window, el, value) {
   el.dispatchEvent(new window.Event("input", { bubbles: true }));
   el.dispatchEvent(new window.Event("change", { bubbles: true }));
 }
-export const tick = (ms = 30) => new Promise((r) => setTimeout(r, ms));
+export const tick = (ms = 60) => new Promise((r) => setTimeout(r, ms));

@@ -69,6 +69,7 @@ python3 -m http.server 8000      # then open http://localhost:8000
 | `data/money.json` | Hand-edited. Pay rates, tax facts and sources for the First paycheck page (`assets/js/paycheck.js`). |
 | `data/parents.json` | Hand-edited. Text for the For parents page (`assets/js/parents.js`). |
 | `data/safety.json` | Hand-edited. Points, hotlines and gaps for the Safe at work page (`assets/js/safety.js`). |
+| `data/employers.json` | Hand-edited. Employers and the minimum age each page states, plus federal youth work rules, for the Jobs page (`assets/js/jobs.js`). Every entry needs a page we read and a short quote. |
 | `data/transit.json` | Hand-edited. Ride options by city for the Ready page (`assets/js/ready.js`). |
 | `data/younger.json` | Hand-edited. Text for the Ages 12 to 14 page (`assets/js/younger.js`). |
 | `data/gaps.json` | Hand-edited. Known gaps by area. The Find page reads it (`assets/js/find.js`), and `tools/build.py` writes it into the Contribute page, so rebuild after a change. |

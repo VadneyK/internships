@@ -52,7 +52,7 @@ test("each generated entries file says it is built by build_data.py and never ed
 });
 
 test("each hand-edited data file has a row that names the page script reading it", () => {
-  const hand = ["permits", "calendar", "interview", "languages", "money", "parents", "safety", "transit", "younger", "gaps"];
+  const hand = ["permits", "calendar", "employers", "interview", "languages", "money", "parents", "safety", "transit", "younger", "gaps"];
   for (const name of hand) {
     const row = rowOf(contrib, "| `data/" + name + ".json`");
     assert.ok(row, "no row for data/" + name + ".json");

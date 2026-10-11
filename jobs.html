@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Page Not Found</title>
-<meta name="description" content="That page does not exist. Try the program list or the playbook.">
+<title>Jobs That Hire Teens: Minimum Ages at Real Employers</title>
+<meta name="description" content="Which employers hire teens at 14, 15, 16 and up, in plain words. Restaurants, stores, parks, pools, camps and farms, each with the minimum age its own page states, plus the federal rules for hours and hazardous jobs.">
 <meta name="theme-color" content="#151515">
-<link rel="canonical" href="https://vadneyk.github.io/internships/404.html">
+<link rel="canonical" href="https://vadneyk.github.io/internships/jobs.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Page Not Found">
-<meta property="og:description" content="That page does not exist. Try the program list or the playbook.">
-<meta property="og:url" content="https://vadneyk.github.io/internships/404.html">
+<meta property="og:title" content="Jobs That Hire Teens: Minimum Ages at Real Employers">
+<meta property="og:description" content="Which employers hire teens at 14, 15, 16 and up, in plain words. Restaurants, stores, parks, pools, camps and farms, each with the minimum age its own page states, plus the federal rules for hours and hazardous jobs.">
+<meta property="og:url" content="https://vadneyk.github.io/internships/jobs.html">
 <meta property="og:image" content="https://vadneyk.github.io/internships/assets/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -26,7 +26,7 @@
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
 </head>
-<body class="page-404">
+<body class="page-jobs">
 <a class="skip" href="#main">Skip to content</a>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
   <symbol id="flame" viewBox="0 0 64 64">
@@ -41,7 +41,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <a href="find.html">Programs</a>
       <a href="playbook.html">Playbook</a>
       <a href="resume.html">Resume</a>
-      <a href="ready.html">Get ready</a>
+      <a href="ready.html" aria-current="page">Get ready</a>
       <a href="insights.html">Numbers</a>
       <a href="rules.html">Rules</a>
       <a href="contribute.html">Help build this</a>
@@ -51,12 +51,38 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </header>
 <main id="main" tabindex="-1">
-<section style="padding-block:3rem;">
+<section style="padding-block:2rem 1rem;">
   <div class="wrap">
-    <span class="tag y eyebrow">Error 404</span>
-    <h1>Not <span class="orange">found</span></h1>
-    <p class="lede">That page is not here. Try one of these instead.</p>
-    <div class="chips"><a class="btn" href="index.html">Home</a><a class="btn alt" href="find.html">Find a program</a><a class="btn alt" href="playbook.html">Playbook</a></div>
+    <nav class="breadcrumb small muted" aria-label="Breadcrumb"><ol><li><a href="ready.html">Get ready</a></li><li aria-current="page">Jobs that hire teens</li></ol></nav>
+    <span class="tag y eyebrow">A first paid job</span>
+    <h1 style="font-size:clamp(2.2rem,7vw,4rem);">Jobs that <span class="orange">hire teens</span></h1>
+    <p class="lede">Tap your age. You see real employers that say they hire at that age, with a link to the page that says so. Programs and internships are on the <a href="find.html">Programs page</a>. This page is for regular jobs.</p>
+    <div class="callout plain small" id="jobsNote" style="margin-top:1rem;max-width:52rem;"></div>
+  </div>
+</section>
+
+<section style="background:var(--paper-2); border-block:3px solid var(--edge);">
+  <div class="wrap">
+    <div class="field"><label for="jAge">How old are you?</label>
+      <select id="jAge" data-tiles><option value="">Choose your age</option></select></div>
+    <p class="sr" id="jStatus" role="status"></p>
+    <div id="jOut"><p class="muted">Tap your age to see who hires.</p></div>
+  </div>
+</section>
+
+<section id="rules">
+  <div class="wrap">
+    <h2>Rules every teen job follows</h2>
+    <p class="small muted" id="jRulesLead"></p>
+    <div class="grid g2" id="jRules" style="align-items:start;"></div>
+    <p class="row"><a class="btn" href="permit.html">Do I need a work permit?</a> <a class="btn alt" href="paycheck.html">See your first paycheck</a></p>
+  </div>
+</section>
+
+<section class="nextstep" id="next-step">
+  <div class="wrap">
+    <h2>Your next step</h2>
+    <p class="row"><a class="btn" href="permit.html">Find your work permit</a></p>
   </div>
 </section>
 
@@ -101,7 +127,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="assets/js/lib.js?v=34fa4a59"></script>
 <script src="assets/js/common.js?v=34fa4a59"></script>
+<script src="assets/js/jobs.js?v=34fa4a59"></script>
 
 </body>
 </html>
