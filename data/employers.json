@@ -37,6 +37,10 @@
   [
    "gig",
    "Gig apps (most need 18, so you know what to skip)"
+  ],
+  [
+   "at18",
+   "Full-time jobs, training and apprenticeships (17 and 18)"
   ]
  ],
  "employers": [
@@ -533,6 +537,22 @@
    "caveat": "Posting is from 2025. Check for a newer posting."
   },
   {
+   "id": "richmond-bc-aquatics-jobs",
+   "name": "City of Richmond Aquatic Services",
+   "kind": "City pools and recreation",
+   "min_age": 15,
+   "age_note": "Aquatic Attendant and Swimming Instructor require age 15 plus enrolment in Grade 10. Instructor/Lifeguard requires age 16. The required courses are paid by the applicant. The City subsidizes up to 90 percent of course fees for residents 13 and older who are experiencing financial hardship and are interested in an Instructor/Lifeguard career.",
+   "roles": "Aquatic Attendant, Swimming Instructor, Instructor/Lifeguard",
+   "how_to_apply": "Take the listed courses. Register online, by phone at 604-276-4300 (Mon-Fri, 8:30am-5:00pm), or in person at any community facility.",
+   "url": "https://richmond.ca/parks-recreation/about/about/instructor-training.htm",
+   "page_title": "Lifeguarding & Aquatic Instructor Training - City of Richmond",
+   "quote": "Enrolled in Grade 10 15+ years of age",
+   "group": "bc",
+   "where": [
+    "BC"
+   ]
+  },
+  {
    "id": "roswell-ga-summer-jobs",
    "name": "City of Roswell summer jobs",
    "kind": "city parks summer jobs",
@@ -631,6 +651,22 @@
    ]
   },
   {
+   "id": "job-bank-youth-programs",
+   "name": "Job Bank youth page",
+   "kind": "Federal youth job finder",
+   "min_age": 15,
+   "age_note": "The page says Youth Employment and Skills Strategy internships and short-term jobs are for youth aged 15 to 30. The other programs listed on the page do not state an age in the text read.",
+   "roles": "Internships and short-term jobs for youth",
+   "how_to_apply": "The page says to start your search early and apply on Canada Summer Jobs as soon as the program begins. It also lists other youth programs with links.",
+   "url": "https://www.jobbank.gc.ca/youth",
+   "page_title": "Job Bank youth page",
+   "quote": "Internships and short-term jobs for youth aged 15 to 30",
+   "group": "bc",
+   "where": [
+    "BC"
+   ]
+  },
+  {
    "id": "king-county-parks-ycc",
    "name": "King County Parks Youth Conservation Corps",
    "kind": "County paid summer internship",
@@ -705,6 +741,22 @@
    "url": "https://pne.ca/jobs/seasonal-employment-information/",
    "page_title": "Seasonal Employment Information - PNE",
    "quote": "You must be at least 15 years of age or older",
+   "group": "bc",
+   "where": [
+    "BC"
+   ]
+  },
+  {
+   "id": "parks-canada-student-youth-jobs",
+   "name": "Parks Canada student and youth jobs",
+   "kind": "Federal parks jobs",
+   "min_age": 15,
+   "age_note": "The page says Parks Canada student and youth jobs are for all youth between the ages of 15 and 30. Check each posting for its own requirements.",
+   "roles": "Student and youth jobs with Parks Canada, listed on the page as current opportunities",
+   "how_to_apply": "Use the Current opportunities and How to apply sections on the page.",
+   "url": "https://www.parks.canada.ca/agence-agency/emplois-jobs/etudiants-students",
+   "page_title": "Student and youth jobs",
+   "quote": "help all youth between the ages of 15 and 30",
    "group": "bc",
    "where": [
     "BC"
@@ -789,6 +841,22 @@
    "group": "grocery",
    "where": [
     "US"
+   ]
+  },
+  {
+   "id": "workbc-youth-employment-services",
+   "name": "WorkBC youth employment programs",
+   "kind": "Free BC job help for youth",
+   "min_age": 15,
+   "age_note": "The youngest age on the page is 15, for Integrated Education and Career Support (Foundry Work and Education Program, youth aged 15 to 24). Most other programs on the page start at 16, and some start at 18 or 19. The page says to check eligibility for each program.",
+   "roles": "Employment readiness training and work experience programs, each with its own eligibility",
+   "how_to_apply": "Pick a program on the page and check its eligibility and contact information there. Each program lists its own phone, email or website.",
+   "url": "https://www.workbc.ca/get-support/employment-readiness-services/youth-employment",
+   "page_title": "Youth Employment WorkBC",
+   "quote": "Youth aged 15",
+   "group": "bc",
+   "where": [
+    "BC"
    ]
   },
   {
@@ -1018,6 +1086,22 @@
    "caveat": "Posting is from 2025. Check for a newer posting."
   },
   {
+   "id": "burnaby-city-jobs",
+   "name": "City of Burnaby jobs",
+   "kind": "City government",
+   "min_age": 16,
+   "age_note": "The page says you must be at least 16 years of age to work for the City, and either a Canadian citizen, permanent resident or valid work permit holder.",
+   "roles": "City jobs, including seasonal work and on-call work. The page does not list specific teen roles.",
+   "how_to_apply": "Search for roles and apply online on the City of Burnaby careers page.",
+   "url": "https://www.burnaby.ca/our-city/get-involved/jobs-and-careers",
+   "page_title": "Jobs & Careers - City of Burnaby",
+   "quote": "you must be at least 16 years of age",
+   "group": "bc",
+   "where": [
+    "BC"
+   ]
+  },
+  {
    "id": "san-diego-pool-guard",
    "name": "City of San Diego Pool Guard",
    "kind": "City pool jobs",
@@ -1179,6 +1263,38 @@
    ]
   },
   {
+   "id": "illinois-nurse-aide-cna",
+   "name": "Illinois nurse aide (CNA)",
+   "kind": "Health care job",
+   "min_age": 16,
+   "age_note": "The Illinois state page says a person must be at least 16 years of age to be a CNA.",
+   "roles": "Certified nurse aide, or nurse aide in training",
+   "how_to_apply": "The page lists the requirements to become an Illinois CNA. A nurse aide in training must be in an approved CNA program within 45 days of being hired, if not a CNA when hired.",
+   "url": "https://dph.illinois.gov/topics-services/health-care-regulation/health-care-worker-registry/cna-facts.html",
+   "page_title": "CNA Facts | Illinois Department of Public Health",
+   "quote": "Must be at least 16 years of age",
+   "group": "at18",
+   "where": [
+    "IL"
+   ]
+  },
+  {
+   "id": "job-corps",
+   "name": "Job Corps",
+   "kind": "Free job training program",
+   "min_age": 16,
+   "age_note": "The About page says Job Corps is a free, residential career training program for low-income young adults ages 16 through 24.",
+   "roles": "Free career training in fields like manufacturing, health care, technology and construction",
+   "how_to_apply": "Click the Apply Now button on the page, or call 800-733-5627.",
+   "url": "https://jobcorps.gov/about",
+   "page_title": "About Job Corps",
+   "quote": "low-income young adults ages 16 through 24",
+   "group": "at18",
+   "where": [
+    "US"
+   ]
+  },
+  {
    "id": "king-county-clean-water-ambassadors",
    "name": "King County Clean Water Ambassadors internship",
    "kind": "County paid summer internships",
@@ -1192,6 +1308,54 @@
    "group": "rec",
    "where": [
     "WA"
+   ]
+  },
+  {
+   "id": "la-county-parks-lifeguards",
+   "name": "LA County Parks and Recreation Lifeguards",
+   "kind": "County pool and lake lifeguard jobs",
+   "min_age": 16,
+   "age_note": "Pool lifeguard applicants must be at least 16 at time of appointment. Lake lifeguard applicants must be at least 16 by the time of the swim exam, and need a valid California Class C driver's license upon completing training. Both need a swim test and a vision check.",
+   "roles": "Pool lifeguard cadet (then pool lifeguard), or lake lifeguard candidate (then lake lifeguard), after the Lifeguard Academy",
+   "how_to_apply": "Apply online or in person to take the LA County Lifeguard Test, which the page calls the first step. Pool and lake tests are separate.",
+   "url": "https://parks.lacounty.gov/lifeguard-recruitment/",
+   "page_title": "Lifeguard Recruitment - LA County Parks and Recreation",
+   "quote": "Be at least 16 at time of appointment",
+   "group": "rec",
+   "where": [
+    "CA"
+   ]
+  },
+  {
+   "id": "nationwide-childrens-youth-employment",
+   "name": "Nationwide Children's Hospital Youth Employment Program",
+   "kind": "Hospital paid summer program",
+   "min_age": 16,
+   "age_note": "The page says participants must be at least 16 at the time of registration, and it lists ages 16 to 21. Registration for 2026 opened Feb. 2, 2026 and closed March 27, 2026, so check the page for the next window.",
+   "roles": "Paid summer work in hospital departments, about 4 hours a day or 20 hours a week, usually Monday to Friday. The page does not list a pay rate.",
+   "how_to_apply": "Register during the sign-up window. For questions, email HNHFWorkforceDev@NationwideChildrens.org.",
+   "url": "https://www.nationwidechildrens.org/about-us/population-health-and-wellness/healthy-neighborhoods-healthy-families/workforce-development/youth-employment-program",
+   "page_title": "Youth & Young Adult Employment Program | Nationwide Children's Hospital",
+   "quote": "Participants must be at least 16 years old at the time of registration.",
+   "group": "at18",
+   "where": [
+    "OH"
+   ]
+  },
+  {
+   "id": "newport-beach-ocean-lifeguard",
+   "name": "Newport Beach Ocean Lifeguard",
+   "kind": "City ocean lifeguard job",
+   "min_age": 16,
+   "age_note": "The current posting says applicants must be 16 years old on or before March 30, 2027. No prior lifeguard experience is required. Check the page for the age rule in future postings.",
+   "roles": "Lifeguard Trainee (paid training), then Lifeguard I after passing the Basic Lifeguard Academy",
+   "how_to_apply": "Apply online by January 20, 2027 at 5:00 p.m. Pacific. Qualifying applicants are invited to a tryout (tentatively January 30, 2027) with a 1000-meter ocean swim and a 1000-meter run-swim-run. Top finishers are invited to an interview.",
+   "url": "https://newportbeachca.gov/government/departments/fire/lifeguard-operations-division/lifeguard-job-opportunities",
+   "page_title": "Lifeguard Job Opportunities - City of Newport Beach",
+   "quote": "Applicants must be 16 years old on or before March 30, 2027.",
+   "group": "rec",
+   "where": [
+    "CA"
    ]
   },
   {
@@ -1211,6 +1375,38 @@
    ]
   },
   {
+   "id": "oc-fair-seasonal-jobs",
+   "name": "OC Fair and Event Center",
+   "kind": "Fair and event center jobs",
+   "min_age": 16,
+   "age_note": "The page says you must be at least 16 to work at the annual OC Fair, and some positions require you to be 18. If you are 17 or younger, you need a valid Work Permit from your school, unless you have already graduated from high school.",
+   "roles": "A variety of indoor and outdoor jobs at the OC Fair and Event Center in Costa Mesa",
+   "how_to_apply": "See the employment page for openings. Contact Human Resources at (714) 708-1563 or humanresources@ocfair.com, Monday to Friday, 9 a.m. to 5 p.m.",
+   "url": "https://ocfair.com/jobs",
+   "page_title": "Employment - OC Fair & Event Center - Costa Mesa, CA",
+   "quote": "You must be at least 16 years old to work at the annual OC Fair.",
+   "group": "fun",
+   "where": [
+    "CA"
+   ]
+  },
+  {
+   "id": "ohiohealth-teen-entry-level",
+   "name": "OhioHealth",
+   "kind": "Hospital system",
+   "min_age": 16,
+   "age_note": "The page says OhioHealth is hiring 16- and 17-year-olds for specific entry-level jobs. Pharmacy technician trainees must be a senior in high school and at least 17. Each job posting has its own rules.",
+   "roles": "Nutrition host, environmental services associate, patient support assistant, unit support coordinator, pharmacy technician trainee (senior in high school, at least 17)",
+   "how_to_apply": "Look at open jobs on the OhioHealth careers site. The page says applicants should be pursuing a healthcare path, such as CNA classes or a healthcare tech school.",
+   "url": "https://careers.ohiohealth.com/student-opportunities/",
+   "page_title": "Student Opportunities | OhioHealth Careers",
+   "quote": "OhioHealth is now hiring 16- and 17-year-olds for specific entry-level jobs",
+   "group": "at18",
+   "where": [
+    "OH"
+   ]
+  },
+  {
    "id": "papa-johns",
    "name": "Papa Johns",
    "kind": "Pizza chain",
@@ -1222,6 +1418,38 @@
    "page_title": "Restaurant Team Member Job: Restaurant Team Member at Papa Johns in 627 E Race St, Kingston, TN",
    "quote": "Must be at least 16 years of age to apply.",
    "group": "food",
+   "where": [
+    "US"
+   ]
+  },
+  {
+   "id": "portland-parks-aquatics-lifeguard",
+   "name": "Portland Parks lifeguard and swim instructor jobs",
+   "kind": "city parks department",
+   "min_age": 16,
+   "age_note": "You must be 16 or older by the first day of the certification class, and the page says no age exceptions will be made. The page does not state the class fee.",
+   "roles": "Lifeguard, swim instructor and water fitness instructor at city pools",
+   "how_to_apply": "Register for lifeguard, swim instructor or water fitness instructor training on the Portland Parks page, then submit the job application. Certification must stay current for the whole job.",
+   "url": "https://www.portland.gov/parks/recreation/aquatics-employment",
+   "page_title": "Aquatics Training Programs and Employment Opportunities",
+   "quote": "You must be 16 years old to apply.",
+   "group": "rec",
+   "where": [
+    "OR"
+   ]
+  },
+  {
+   "id": "registered-apprenticeships-youth",
+   "name": "Registered Apprenticeships (youth)",
+   "kind": "Paid on-the-job training program",
+   "min_age": 16,
+   "age_note": "The page says on-the-job learning can begin at age 16 and can count toward entry into an apprenticeship. It does not give a separate minimum age for the apprenticeship itself.",
+   "roles": "Paid on-the-job experience with technical instruction, which can start in high school, community college or dual enrollment",
+   "how_to_apply": "The page does not list application steps.",
+   "url": "https://www.apprenticeship.gov/educators/youth-apprenticeship",
+   "page_title": "Youth Apprenticeship | Apprenticeship.gov",
+   "quote": "beginning at age 16, which can count toward entry into an apprenticeship",
+   "group": "at18",
    "where": [
     "US"
    ]
@@ -1320,6 +1548,22 @@
    "group": "rec",
    "where": [
     "TX"
+   ]
+  },
+  {
+   "id": "township-of-langley-aquatics-jobs",
+   "name": "Township of Langley Aquatics jobs",
+   "kind": "Municipal pools",
+   "min_age": 16,
+   "age_note": "The Aquatics Instructor job lists a minimum age of 16. The Lifeguard/Instructor job (listed under Recreation Worker IV) lists a minimum age of 17. The Recreation Facility Attendant job lists Grade 10 completion and gives no minimum age on the page. Grade 10 completion is listed for several of these roles.",
+   "roles": "Aquatics Instructor, Lifeguard/Instructor (Recreation Worker IV), Recreation Facility Attendant",
+   "how_to_apply": "Use the View all Township of Langley Career Opportunities link on the page to find open jobs. The page also links to Steps to becoming a Lifeguard/Instructor.",
+   "url": "https://www.tol.ca/en/connect/aquatics-jobs.aspx",
+   "page_title": "Aquatics - Township of Langley Recreation Jobs",
+   "quote": "Minimum age 16 years",
+   "group": "bc",
+   "where": [
+    "BC"
    ]
   },
   {
@@ -1469,6 +1713,38 @@
    ]
   },
   {
+   "id": "long-beach-seasonal-lifeguard",
+   "name": "Long Beach Seasonal Lifeguard",
+   "kind": "City ocean lifeguard job",
+   "min_age": 17,
+   "age_note": "The page's 2026 posting says applicants must be 17 by July 1, 2026. Applicants under 18 must have a valid high school work permit, a high school diploma, or a GED before training. This is the 2026 posting, so check the page for the next season's rule.",
+   "roles": "Seasonal beach lifeguard",
+   "how_to_apply": "Submit the online application before tryouts. Only people who finished the online application can try out. Tryouts include a 1,000-yard ocean swim and a run-swim-run.",
+   "url": "https://www.longbeach.gov/fire/operations/employment/seasonal-lifeguard/",
+   "page_title": "Seasonal Lifeguard - Long Beach Fire Department",
+   "quote": "Must be 17 years of age by July 1, 2026",
+   "group": "rec",
+   "where": [
+    "CA"
+   ]
+  },
+  {
+   "id": "ups-school-to-work-seasonal",
+   "name": "UPS seasonal work and School to Work program",
+   "kind": "Package delivery company",
+   "min_age": 17,
+   "age_note": "The page says students who are at least 17 years of age could be considered for seasonal UPS work. The page sets no minimum age for School to Work. Juniors must attend a presentation, be eligible, and get a recommendation from the high school counselor.",
+   "roles": "Seasonal work at UPS (the page does not list job titles)",
+   "how_to_apply": "The page says a student must wait for a recommendation from the high school counselor before applying to School to Work. Juniors must attend a presentation on the program first.",
+   "url": "https://www.jobs-ups.com/us/en/school-to-work-faq",
+   "page_title": "School to Work FAQ | UPS Jobs",
+   "quote": "students who are at least 17 years of age could be considered",
+   "group": "at18",
+   "where": [
+    "US"
+   ]
+  },
+  {
    "id": "washington-state-parks-park-aide",
    "name": "Washington State Parks Park Aide",
    "kind": "State park seasonal job",
@@ -1485,6 +1761,22 @@
    ]
   },
   {
+   "id": "wisconsin-emt-training-permit",
+   "name": "Wisconsin EMT training permit",
+   "kind": "Emergency medical training",
+   "min_age": 17,
+   "age_note": "The Wisconsin DHS page says the applicant must be 17 or older. It is an EMT-Basic training permit, which the page says is only for part of a licensed EMT-Basic service. The page does not say when full licensure is allowed.",
+   "roles": "EMT student doing field and clinical training while enrolled in an EMT course",
+   "how_to_apply": "Apply in the state E-Licensing System under Applications. You must be enrolled in an initial EMT course at a training center certified by the department. For the EMT-Basic permit, you must have finished the first 46 hours of EMT-Basic training or hold first responder certification.",
+   "url": "https://www.dhs.wisconsin.gov/ems/training/basic.htm",
+   "page_title": "EMS: EMT-Basic Training Permit | Wisconsin DHS",
+   "quote": "The individual is 17 years of age or older.",
+   "group": "at18",
+   "where": [
+    "WI"
+   ]
+  },
+  {
    "id": "aldi",
    "name": "ALDI",
    "kind": "Grocery store",
@@ -1498,6 +1790,22 @@
    "group": "grocery",
    "where": [
     "US"
+   ]
+  },
+  {
+   "id": "cincinnati-childrens-hospital-jobs",
+   "name": "Cincinnati Children's Hospital",
+   "kind": "Hospital system",
+   "min_age": 18,
+   "age_note": "The FAQ says the minimum age to work in direct patient care is 18. It gives no minimum age for other jobs. Workers under 18 must get a valid work permit where applicable.",
+   "roles": "Direct patient care (18 and up). Other hospital jobs are posted on the careers site.",
+   "how_to_apply": "The FAQ encourages applying through the Careers site, where the hiring team reviews applications.",
+   "url": "https://jobs.cincinnatichildrens.org/us/en/faq",
+   "page_title": "FAQ | Careers at Cincinnati Children's",
+   "quote": "The minimum age to work in direct patient care at Cincinnati Children's is 18 years",
+   "group": "at18",
+   "where": [
+    "OH"
    ]
   },
   {
@@ -1549,6 +1857,22 @@
    ]
   },
   {
+   "id": "cleveland-ironworkers-jatc",
+   "name": "Ironworkers JATC (Cleveland)",
+   "kind": "Union trade apprenticeship",
+   "min_age": 18,
+   "age_note": "The page says 18 years of age at time of selection and indenture. Applications are accepted only in February, March, August and September.",
+   "roles": "Ironworker apprentice, 4 year program",
+   "how_to_apply": "Apply in February, March, August or September. Requirements: high school diploma or GED, a test, an interview, a valid driver's license and reliable transportation, a doctor's release, and a drug test.",
+   "url": "https://www.cbctc.org/iron-workers-jatc",
+   "page_title": "Iron Workers JATC | Cleveland Building and Construction Trades Council",
+   "quote": "18 years of age at time of selection and indenture",
+   "group": "at18",
+   "where": [
+    "OH"
+   ]
+  },
+  {
    "id": "lowes",
    "name": "Lowe's",
    "kind": "Home improvement store",
@@ -1565,6 +1889,38 @@
    ]
   },
   {
+   "id": "ne-ohio-carpenters-jatc",
+   "name": "Northeast Ohio Carpenters and Millwright/Pile Driver JATC",
+   "kind": "Union trade apprenticeship",
+   "min_age": 18,
+   "age_note": "The page says 18 years of age. You also need a high school diploma or GED, or 1,500 documented hours in the trade.",
+   "roles": "Carpenter apprentice, 4 year program paying 40 to 95 percent of the journey-level wage",
+   "how_to_apply": "The page lists this office for applications: 4100 Maple Drive, Richfield, Ohio, weekdays 8 a.m. to 12 p.m. and 1 p.m. to 4 p.m. The listed JATC phone is (330) 659-9495. Expect a math test in the first week of class, an interview and a drug test.",
+   "url": "https://www.cbctc.org/carpenters-jatc",
+   "page_title": "Carpenters JATC | Cleveland Building and Construction Trades Council",
+   "quote": "18 years of age",
+   "group": "at18",
+   "where": [
+    "OH"
+   ]
+  },
+  {
+   "id": "cleveland-painters-dc6-jatc",
+   "name": "Painters District Council 6 JATC (Strongsville)",
+   "kind": "Union trade apprenticeship",
+   "min_age": 18,
+   "age_note": "The page says at least 18 years of age. You must also be employed by a DC6 signatory contractor.",
+   "roles": "Painter apprentice; must work for a DC6 signatory contractor",
+   "how_to_apply": "The page says applications are accepted every Tuesday, 9 a.m. to 3:30 p.m. The page also lists the phone (440) 239-4575. The page requires a high school diploma or GED.",
+   "url": "https://www.cbctc.org/painters-jatc",
+   "page_title": "Painters JATC | Cleveland Building and Construction Trades Council",
+   "quote": "At least 18 years of age",
+   "group": "at18",
+   "where": [
+    "OH"
+   ]
+  },
+  {
    "id": "petsmart",
    "name": "PetSmart",
    "kind": "Pet store",
@@ -1576,6 +1932,38 @@
    "page_title": "PetSmart Careers FAQ",
    "quote": "over the age of 18 (except in Montana or where otherwise required by law)",
    "group": "grocery",
+   "where": [
+    "US"
+   ]
+  },
+  {
+   "id": "cleveland-plasterers-jatc",
+   "name": "Plasterers JATC (Cleveland)",
+   "kind": "Union trade apprenticeship",
+   "min_age": 18,
+   "age_note": "The page says minimum 18 years of age. You also need a high school diploma or GED, and the page lists an interview and a drug test.",
+   "roles": "Plasterer or cement mason apprentice",
+   "how_to_apply": "The page says applications are accepted year round. Contact listed: phone (216) 374-0181, email billn@opcmia526.org, office at 2301 Hamilton Ave., Cleveland. The page does not say how to submit an application.",
+   "url": "https://www.cbctc.org/plasterers-jatc",
+   "page_title": "Plasterers JATC | Cleveland Building and Construction Trades Council",
+   "quote": "Minimum 18 years of age",
+   "group": "at18",
+   "where": [
+    "OH"
+   ]
+  },
+  {
+   "id": "walmart-hourly-associate",
+   "name": "Walmart (some hourly jobs)",
+   "kind": "Big retail chain",
+   "min_age": 18,
+   "age_note": "This is one posting: a Produce Associate job at a Sam's Club in Surprise, Arizona, listed on the Walmart Careers site. It says 18 or older. Other postings or states may list a different age, so read the posting.",
+   "roles": "Produce associate (Sam's Club posting in Arizona)",
+   "how_to_apply": "On the posting page, click Apply now.",
+   "url": "https://careers.walmart.com/us/jobs/WD231050-produce-associate",
+   "page_title": "Produce Associate | Walmart Careers",
+   "quote": "Must be 18 years of age or older",
+   "group": "at18",
    "where": [
     "US"
    ]
