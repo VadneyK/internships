@@ -16,7 +16,7 @@ test("employers.json: every entry has a https page, a quote under 15 words, an a
     for (const k of ["name", "kind", "age_note", "roles", "how_to_apply", "page_title"]) assert.ok(e[k] && e[k].trim(), e.id + " " + k);
   }
   for (const r of d.rules) assert.match(r.url, /^https:\/\//, r.id);
-  assert.doesNotMatch(JSON.stringify(d), /[–—]|&amp;|&#/);
+  assert.doesNotMatch(JSON.stringify(d), /[\u2013\u2014]|&amp;|&#/);
 });
 
 test("jobs: tapping an age shows only employers that start at or under it, older ones are folded away, links are safe", async () => {

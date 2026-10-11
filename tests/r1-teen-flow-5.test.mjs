@@ -10,12 +10,12 @@ function setAll(doc, win, on) {
   }
 }
 
-test("r1-teen-flow-5: no-offer note sits under the lede with the two exact links", async () => {
+test("r1-teen-flow-5: no-offer note sits under the lede with the three exact links", async () => {
   const { document, errors } = await loadPage("ready.html");
   const note = document.getElementById("readyNoYes");
   assert.ok(note, "readyNoYes exists");
   assert.equal(note.previousElementSibling.className, "lede");
-  assert.deepEqual([...note.querySelectorAll("a")].map((a) => a.getAttribute("href")), ["find.html", "playbook.html"]);
+  assert.deepEqual([...note.querySelectorAll("a")].map((a) => a.getAttribute("href")), ["find.html", "jobs.html", "playbook.html"]);
   const words = document.querySelector("p.lede").textContent.trim().split(/\s+/).length;
   assert.ok(words <= 45, "lede is " + words + " words");
   assert.deepEqual(errors, []);
