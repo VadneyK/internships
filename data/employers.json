@@ -29,6 +29,14 @@
   [
    "farm",
    "Farms and the outdoors"
+  ],
+  [
+   "bc",
+   "British Columbia and Vancouver"
+  ],
+  [
+   "gig",
+   "Gig apps (most need 18, so you know what to skip)"
   ]
  ],
  "employers": [
@@ -111,6 +119,19 @@
    "group": "food"
   },
   {
+   "id": "evergreen-state-fair-washington",
+   "name": "Evergreen State Fair (Washington)",
+   "kind": "State fair job",
+   "min_age": 14,
+   "age_note": "Status as of the page: the page says all positions for 14 and 15 year olds were filled for 2026, and applications after April 9, 2026 go on a waitlist. The page says applications were accepted through August 26, 2026, which is before today (2026-10-10), so confirm openings with the fair before applying. The minimum of 14 is implied by the 14 and 15 year old listing rather than stated as a rule.",
+   "roles": "Seasonal fair-time positions. The page does not list job titles.",
+   "how_to_apply": "Fill out the linked forms and bring approved ID documents (from the I-9 list) in person to the Fairgrounds Administration Office, 14405 179th Ave SE, Monroe, WA. Hours are Monday to Friday, 8:30 am to 4:00 pm (closed 11:30 am to 12:30 pm). Forms must be submitted in person by the applicant. A background check is required.",
+   "url": "https://evergreenfair.org/139/Employment",
+   "page_title": "Employment, The Evergreen State Fair",
+   "quote": "All positions for 14 & 15 year olds have been filled!",
+   "group": "fun"
+  },
+  {
    "id": "falls-township-parks-summer",
    "name": "Falls Township Parks and Recreation (Pennsylvania)",
    "kind": "Township pool and camp jobs",
@@ -173,6 +194,32 @@
    "url": "https://jobs.holidayworld.com/",
    "page_title": "Holiday World jobs",
    "quote": "Ages 14+",
+   "group": "fun"
+  },
+  {
+   "id": "iowa-state-fair",
+   "name": "Iowa State Fair",
+   "kind": "State fair job",
+   "min_age": 14,
+   "age_note": "The page says limited online positions are open to 14 and 15 year olds. It does not list minimum ages for other jobs, so ask the hiring office about older-age jobs.",
+   "roles": "Attractions, concessions (including Barksdale's State Fair Cookies), livestock control, parking, custodial, maintenance and ticketing. Only limited positions are open to 14 and 15 year olds.",
+   "how_to_apply": "Apply online at www.iowastatefair.org/about/employment, or apply in person at the Hiring Center (southeast corner of the Varied Industries Building, during June and July, Monday to Friday 10 a.m. to 7 p.m., Saturday 9 a.m. to 1 p.m.). Questions: call 515-262-3111 ext. 303 or email hiring@iowastatefair.org.",
+   "url": "https://www.iowastatefair.org/media/news-releases/nothing-compares-to-working-at-the-iowa-state-fair-5",
+   "page_title": "Nothing Compares to Working at the Iowa State Fair",
+   "quote": "Limited positions are available online for 14 and 15-year-olds",
+   "group": "fun"
+  },
+  {
+   "id": "lagoon-utah-seasonal",
+   "name": "Lagoon (Utah amusement park)",
+   "kind": "Amusement park",
+   "min_age": 14,
+   "age_note": "The page says all applicants must be at least 14 years of age or older at the time the application is completed. Some positions have other age requirements and restrictions, so check each job listing.",
+   "roles": "Seasonal park team member jobs, listed in the park's Seasonal Jobs Listing.",
+   "how_to_apply": "Submit one application. For the first choice position, you can list alternative positions you want considered. Employee Services can help: (801) 451-8058.",
+   "url": "https://www.lagoonpark.com/jobs/seasonal-jobs/",
+   "page_title": "Seasonal Jobs, Lagoon",
+   "quote": "must be at least 14 years of age or older at the time the application",
    "group": "fun"
   },
   {
@@ -280,6 +327,19 @@
    "group": "farm"
   },
   {
+   "id": "pne-seasonal-jobs",
+   "name": "PNE (Playland, Fair, Fright Nights)",
+   "kind": "Vancouver seasonal employer",
+   "min_age": 15,
+   "age_note": "The PNE says you must be at least 15, although some positions have higher minimum age restrictions, so check each job posting.",
+   "roles": "Seasonal Playland and Fair jobs and Fright Nights",
+   "how_to_apply": "Apply on the PNE jobs page. You need a valid Social Insurance Number, a resume and an email address. Playland jobs are typically posted in March.",
+   "url": "https://pne.ca/jobs/seasonal-employment-information/",
+   "page_title": "Seasonal Employment Information - PNE",
+   "quote": "You must be at least 15 years of age or older",
+   "group": "bc"
+  },
+  {
    "id": "saint-louis-zoo",
    "name": "Saint Louis Zoo",
    "kind": "Zoo",
@@ -332,6 +392,45 @@
    "group": "grocery"
   },
   {
+   "id": "alameda-county-fair-california",
+   "name": "Alameda County Fair (California)",
+   "kind": "County fair job",
+   "min_age": 16,
+   "age_note": "The page says you must be at least 16 to work at the fair. Racing, cash handling and childcare jobs require 18. Ages 17 and younger need a valid school work permit unless already graduated from high school. Several jobs, such as amphitheater usher, parking seller, tram or entertainment transport, and event operations tech, are listed as 18 and up.",
+   "roles": "Seasonal fair jobs such as guest services, exhibits squad, livestock barn crew, admissions ambassador and building attendant. Some jobs require 18.",
+   "how_to_apply": "Fill out the online application or print one. Submit by email to jobs@alamedacountyfair.com, by fax to (925) 426-5196, or by mail to Alameda County Fair, Attn: Human Resources, 4501 Pleasanton Avenue, Pleasanton, CA 94566.",
+   "url": "https://annual.alamedacountyfair.com/fair-jobs/",
+   "page_title": "Fair Jobs, Alameda County Fair",
+   "quote": "must be at least 16 years old to work",
+   "group": "fun"
+  },
+  {
+   "id": "alaska-state-fair",
+   "name": "Alaska State Fair",
+   "kind": "State fair job",
+   "min_age": 16,
+   "age_note": "The youngest listed job is the Borealis Theatre usher and ticket taker, minimum age 16. Grounds crew, several cash and ticket jobs, and others are minimum age 18. The sponsorship assistant job requires age 21.",
+   "roles": "Borealis Theatre usher and ticket taker at fair time (minimum age 16). Other fair-time jobs are for older workers.",
+   "how_to_apply": "Fill out the online application on the page, or download the PDF application, fax it to (907) 746-2699, or bring it to 2075 Glenn Hwy, Palmer, Alaska 99645.",
+   "url": "https://www.alaskastatefair.org/site/fair-info/employment/",
+   "page_title": "Employment, Alaska State Fair",
+   "quote": "Minimum age 16",
+   "group": "fun"
+  },
+  {
+   "id": "aqua-tots-swim-schools",
+   "name": "Aqua-Tots Swim Schools",
+   "kind": "Swim school",
+   "min_age": 16,
+   "age_note": "The page says team members typically range from 16 to 99. Each location sets its hiring age under state and local guidelines, so ask your local school.",
+   "roles": "Swim Instructor, Customer Service Partner, Location Manager, Local Marketing Coordinator",
+   "how_to_apply": "Click Apply Now on the employment page and fill out the form. Your local school's management team reviews it and contacts you for an interview if they are hiring.",
+   "url": "https://www.aqua-tots.com/employment/",
+   "page_title": "Apply Today to Join the Aqua-Tots Swim Schools Team",
+   "quote": "Typically, team members range from 16-99",
+   "group": "rec"
+  },
+  {
    "id": "arbys",
    "name": "Arby's",
    "kind": "Fast food chain",
@@ -345,6 +444,32 @@
    "group": "food"
   },
   {
+   "id": "bc-ferries-terminals",
+   "name": "BC Ferries (terminal jobs)",
+   "kind": "Large BC employer",
+   "min_age": 16,
+   "age_note": "The BC Ferries FAQ says terminal jobs require a minimum age of 16. Jobs on the vessels require a minimum age of 18.",
+   "roles": "Terminal and shore-based jobs such as ticket agent, terminal attendant and loading traffic",
+   "how_to_apply": "On the BC Ferries careers page, click the job posting, select Apply for this job online, create an account and submit the application.",
+   "url": "https://www.bcferries.com/our-company/bc-ferries-jobs/find-your-career-faq",
+   "page_title": "BC Ferries Careers FAQ",
+   "quote": "candidates must be a minimum of 16 years of age",
+   "group": "bc"
+  },
+  {
+   "id": "barnes-and-noble",
+   "name": "Barnes & Noble",
+   "kind": "Bookstore",
+   "min_age": 16,
+   "age_note": "The page says 16 and 17 year olds are employed following local state rules, which may mean a work permit and/or restricted hours, particularly while school is in session.",
+   "roles": "Store jobs, full or part time",
+   "how_to_apply": "Find a position on the careers site, click it to see details, then submit your application.",
+   "url": "https://help.barnesandnoble.com/hc/en-us/articles/5471918539675-Careers-and-Job-Opportunities",
+   "page_title": "Careers and Job Opportunities (Barnes & Noble Help Center)",
+   "quote": "You must be at least 16 years old to work at Barnes & Noble stores.",
+   "group": "grocery"
+  },
+  {
    "id": "bowlero",
    "name": "Bowlero (Lucky Strike Entertainment)",
    "kind": "Bowling and entertainment center",
@@ -356,6 +481,19 @@
    "page_title": "FAQs: Bowling, Leagues, Pricing & More",
    "quote": "Most hourly positions require applicants to be at least 16",
    "group": "fun"
+  },
+  {
+   "id": "bowlero-lucky-strike",
+   "name": "Bowlero and Lucky Strike Entertainment (bowling, AMF, Boomers)",
+   "kind": "Bowling and family fun center",
+   "min_age": 16,
+   "age_note": "The FAQ says minimum age varies by role, location and state. Most hourly positions require 16. Roles that serve alcohol or operate certain equipment require 18 or 21, depending on the state.",
+   "roles": "Hourly jobs at bowling and family entertainment centers (each job description lists its age)",
+   "how_to_apply": "Submit your application online through the Lucky Strike Entertainment Careers Hub.",
+   "url": "https://www.bowlero.com/faqs",
+   "page_title": "FAQs: Bowling, Leagues, Pricing & More",
+   "quote": "Most hourly positions require applicants to be at least 16",
+   "group": "rec"
   },
   {
    "id": "busch-gardens-tampa",
@@ -382,6 +520,19 @@
    "page_title": "Jobs at Busch Gardens Williamsburg & Water Country USA",
    "quote": "At least 16 years of age",
    "group": "fun"
+  },
+  {
+   "id": "caf-primary-reserve",
+   "name": "Canadian Armed Forces Reserve (part-time)",
+   "kind": "Government part-time job",
+   "min_age": 16,
+   "age_note": "You must be a Canadian citizen or permanent resident, at least 16 years old, and have completed at least Grade 10 (Secondary 4 in Quebec).",
+   "roles": "Part-time Reserve member in a local unit",
+   "how_to_apply": "Click Apply Now on the Reserve Force page, or contact your local Reserve unit.",
+   "url": "https://forces.ca/en/reserve-force/",
+   "page_title": "Reserve Force - Canadian Armed Forces",
+   "quote": "at least 16 or older and have completed at least Grade 10",
+   "group": "bc"
   },
   {
    "id": "chipotle",
@@ -447,6 +598,19 @@
    "page_title": "Careers",
    "quote": "Applicants must be at least 16 years old.",
    "group": "fun"
+  },
+  {
+   "id": "gap-inc-old-navy",
+   "name": "Gap Inc. (Old Navy, Gap, Banana Republic, Athleta)",
+   "kind": "Clothing stores",
+   "min_age": 16,
+   "age_note": "The page gives 16 as the age to apply for an hourly store job at any of its brands. You must also be able to show proof that you can legally work in the US.",
+   "roles": "Hourly store jobs at its brands (the page says hourly positions and store jobs)",
+   "how_to_apply": "Apply for an hourly store job at the brand you want; you must be able to provide proof of legal authorization to work in the United States.",
+   "url": "https://www.gapinc.com/en-us/faq",
+   "page_title": "Gap Inc. FAQ",
+   "quote": "You must be at least 16 years old to apply for a store job.",
+   "group": "grocery"
   },
   {
    "id": "heb",
@@ -527,6 +691,19 @@
    "group": "food"
   },
   {
+   "id": "ulta-beauty-teens",
+   "name": "Ulta Beauty",
+   "kind": "Beauty store",
+   "min_age": 16,
+   "age_note": "The teen hiring program is only in select states. The page says it is not applicable in NJ, TN and TX.",
+   "roles": "Beauty Advisor, Task Associate, Prestige Beauty Advisor",
+   "how_to_apply": "Write a professional email, gather documents that prove you can work, references and a resume, then browse open roles through the site's job search.",
+   "url": "https://careers.ulta.com/teens",
+   "page_title": "Jobs For Teenagers (Ulta Beauty Careers)",
+   "quote": "If you are at least 16 years old, we invite you to apply",
+   "group": "grocery"
+  },
+  {
    "id": "nebraska-athletics-concessions",
    "name": "University of Nebraska Athletics concessions",
    "kind": "Stadium and arena concessions",
@@ -592,6 +769,32 @@
    "group": "rec"
   },
   {
+   "id": "ymca-of-greater-new-york",
+   "name": "YMCA of Greater New York",
+   "kind": "YMCA",
+   "min_age": 16,
+   "age_note": "This is one lifeguard posting at the South Shore YMCA in New York City. Lifeguards 16 and 17 must follow NYS working hours.",
+   "roles": "Lifeguard",
+   "how_to_apply": "Complete the online application and submit a resume and a thoughtful cover letter, using the Apply Now button on the posting.",
+   "url": "https://ymcanyc.org/careers/lifeguard-0/south-shore-ymca",
+   "page_title": "Lifeguard, South Shore YMCA",
+   "quote": "Must be at least 16 years of age or older.",
+   "group": "rec"
+  },
+  {
+   "id": "zumiez",
+   "name": "Zumiez",
+   "kind": "Clothing and skate shop",
+   "min_age": 16,
+   "age_note": "The page says you must be at least 16 to apply. Depending on your age and the state you work in, there may be limited hours you can work.",
+   "roles": "Jobs at Zumiez stores (the page does not list specific roles)",
+   "how_to_apply": "Create a new user account if you have never applied, complete your profile, select your local stores and the jobs you want, submit, then check in with the location you applied to.",
+   "url": "https://www.zumiez.com/jobs/",
+   "page_title": "Job Applications (Zumiez)",
+   "quote": "You need to be at least 16 years old to apply for a position at",
+   "group": "grocery"
+  },
+  {
    "id": "washington-state-parks-park-aide",
    "name": "Washington State Parks Park Aide",
    "kind": "State park seasonal job",
@@ -618,6 +821,45 @@
    "group": "grocery"
   },
   {
+   "id": "doordash-dasher",
+   "name": "DoorDash (Dasher)",
+   "kind": "Delivery gig (18+)",
+   "min_age": 18,
+   "age_note": "The page says 18 or older. It says 19 in Arizona, Colorado, Delaware, Florida, Georgia, Idaho, Kentucky, Montana, New Jersey, New Mexico, Texas, Utah and West Virginia, and 21 in California.",
+   "roles": "Delivering food and orders by car, scooter or bicycle (bicycle in select cities), age 18 and up.",
+   "how_to_apply": "Sign up on the Dasher page. The page lists a driver's license or other ID and a vehicle as requirements.",
+   "url": "https://dasher.doordash.com/en-us",
+   "page_title": "Sign up to deliver with DoorDash in the U.S. | Dasher Central",
+   "quote": "Dashers must be 18* years or older",
+   "group": "gig"
+  },
+  {
+   "id": "harbor-freight-tools",
+   "name": "Harbor Freight Tools",
+   "kind": "Tool store",
+   "min_age": 18,
+   "age_note": "The FAQ says all applicants must be at least 18, so this one is only for teens who are 18 or older.",
+   "roles": "Part-time and full-time retail store jobs",
+   "how_to_apply": "Apply online at HFJobs.com: search by location or job title, open the listing, and click the green button at the bottom to apply.",
+   "url": "https://jobs.harborfreight.com/faqs/",
+   "page_title": "FAQs (Harbor Freight Careers)",
+   "quote": "All applicants for employment must be at least 18 years old.",
+   "group": "grocery"
+  },
+  {
+   "id": "instacart-shopper",
+   "name": "Instacart shopper",
+   "kind": "Grocery shopping gig (18+)",
+   "min_age": 18,
+   "age_note": "The page lists 18 as the age requirement for all shoppers, so teens under 18 should not apply.",
+   "roles": "Shopping for and delivering groceries, age 18 and up.",
+   "how_to_apply": "Sign up on the shopper page. The page lists being eligible to work in the U.S., having a bank account and having a recent smartphone as requirements.",
+   "url": "https://shoppers.instacart.com/",
+   "page_title": "Instacart Shoppers - Get Paid to Shop",
+   "quote": "You must be 18 or older to sign up.",
+   "group": "gig"
+  },
+  {
    "id": "lowes",
    "name": "Lowe's",
    "kind": "Home improvement store",
@@ -629,6 +871,32 @@
    "page_title": "Frequently Asked Questions - Lowe's Careers",
    "quote": "you must be at least 18 years old, but it can vary by location",
    "group": "grocery"
+  },
+  {
+   "id": "petsmart",
+   "name": "PetSmart",
+   "kind": "Pet store",
+   "min_age": 18,
+   "age_note": "The page says applicants in the US and Canada must be over 18, except in Montana or where otherwise required by law. It does not state the Montana age.",
+   "roles": "Store associate jobs and distribution center jobs (the page gives the age rule for both)",
+   "how_to_apply": "Apply for an open position on the careers site. The FAQ says a recruiter will be in touch if you are a good match for the role.",
+   "url": "https://careers.petsmart.com/faq",
+   "page_title": "PetSmart Careers FAQ",
+   "quote": "applicants must be over the age of 18 (except in Montana",
+   "group": "grocery"
+  },
+  {
+   "id": "walmart-spark-driver",
+   "name": "Walmart Spark Driver",
+   "kind": "Delivery gig (18+)",
+   "min_age": 18,
+   "age_note": "The page sets 18 as the age requirement for all Spark drivers, so teens under 18 should not apply.",
+   "roles": "Delivering orders as an independent contractor, age 18 and up.",
+   "how_to_apply": "Sign up on the Spark Driver page and meet the listed requirements.",
+   "url": "https://drive4spark.walmart.com/",
+   "page_title": "Become a delivery driver to earn more | Spark Driver app",
+   "quote": "Be age 18 or older and authorized to perform services",
+   "group": "gig"
   }
  ],
  "rules": [
@@ -799,6 +1067,42 @@
    "url": "https://www.osha.gov/etools/youth-agriculture/rights-laws",
    "page_title": "eTools : Youth in Agriculture - Youth Rights and State/Child Laws | Occupational Safety and Health Administration",
    "quote": "only if a parent has given written permission"
+  },
+  {
+   "id": "bc-light-work-14-15",
+   "name": "BC light work for ages 14 and 15",
+   "kind": "Government youth work rules",
+   "min_age": 14,
+   "age_note": "For ages 14 and 15 the employer needs a child employment permit unless the child does light work only (or is a camp assistant, assistant coach, referee, umpire, family business worker, or entertainment performer, under the same conditions). A parent or guardian must give written permission and the employer must keep a record. The BC hiring page says children must work under direct supervision of someone at least 19 years old.",
+   "roles": "Cashier, lifeguard, server of food or drink, summer or day camp leader or counsellor, bagging and carrying customers orders, price marking and labelling goods, administrative and secretarial work",
+   "how_to_apply": "A parent or guardian gives written permission and the employer keeps a record of it.",
+   "url": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/hiring/young-people",
+   "page_title": "Hiring young people - Province of British Columbia",
+   "quote": "The child will be doing light work only"
+  },
+  {
+   "id": "bc-light-work-list-12-to-15",
+   "name": "BC list of light work for ages 12 to 15",
+   "kind": "Government youth work rules",
+   "min_age": 12,
+   "age_note": "Under the regulation, the hiring rule for children 12 to under 16 does not apply when the child works for a family business (a family member is a controlling shareholder, sole proprietor or partner) or is a camp assistant, assistant coach, referee or umpire, and the employer does not require or allow not light work. Children 12 to under 16 can do the listed light work occupations, such as cashier, lifeguard, server and summer camp leader or counsellor.",
+   "roles": "Family business jobs, camp assistant, assistant coach, referee, umpire, and listed light work such as cashier, lifeguard, server, camp leader or counsellor",
+   "how_to_apply": "The page does not describe applying; it is the legal rule employers follow.",
+   "url": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/forms-resources/igm/esr-part-7-1-division-4",
+   "page_title": "Light Work - Regulation Part 7.1, Division 4 - Province of British Columbia",
+   "quote": "a child 12 to less than 16 years of age"
+  },
+  {
+   "id": "bc-under-15-hours-and-supervision",
+   "name": "BC hour limits for ages 12 to under 15",
+   "kind": "Government youth work rules",
+   "min_age": 12,
+   "age_note": "For children 12 to under 15: no more than 4 hours on a school day, no work during school time, no more than 7 hours on a non school day without written approval, no more than 20 hours in a school week of 5 school days, and never more than 35 hours in a week. The child must work only under direct and immediate supervision of a person at least 19 years old.",
+   "roles": "Any allowed job for children 12 to under 15",
+   "how_to_apply": "The page does not describe applying; it lists the rules employers must follow.",
+   "url": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/forms-resources/igm/esr-part-7-1-division-1",
+   "page_title": "Children (12 to 14 Years Old) - Regulation Part 7.1, Division 1",
+   "quote": "children 12 to less than 15 years of age"
   }
  ]
 }
