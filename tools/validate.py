@@ -4,10 +4,28 @@
 Run it before you open a pull request:  python3 tools/validate.py
 """
 import collections
+import json
+import os
 import re
 import sys
 
 import proglib
+
+LITE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "states-lite.json")
+
+
+def lite_problems():
+    """Each states-lite row needs a source_excerpt, and its quote must appear word for word in that excerpt."""
+    with open(LITE, encoding="utf-8") as f:
+        rows = json.load(f)["states"]
+    out = []
+    for row in rows:
+        ex, quote = row.get("source_excerpt"), row.get("quote")
+        if not isinstance(ex, str) or not ex.strip():
+            out.append("states-lite %s: no source_excerpt" % row.get("id"))
+        elif not isinstance(quote, str) or quote not in ex:
+            out.append("states-lite %s: quote is not in source_excerpt" % row.get("id"))
+    return out
 
 
 def main():
@@ -34,6 +52,7 @@ def main():
     for (org, name), owners in names.items():
         if len(owners) > 1:
             problems.append("same org and name on more than one card (%s): %s %s" % (", ".join(owners), org, name))
+    problems += lite_problems()
     if problems:
         print("\n".join(problems))
         print("\n%d problem(s) in %d programs" % (len(problems), len(programs)))

@@ -88,3 +88,42 @@ test("the matcher catches a stale count", () => {
   assert.equal(check("x.html", "We list 1,700 programs.").length, 1);
   assert.equal(check("x.html", "more than 500 programs").length, 0);
 });
+
+// The permit finder says how many states it has full answers for (permits.json, minus BC) and how many it has
+// shorter answers for (states-lite.json). The "not read" text in lib.js and the meta and og descriptions in permit.html
+// must give both live counts, so a count that drifts from the data fails here, not only a number written as a fixed string.
+const SHORT_STATES = readJson("data/states-lite.json").states.length;
+function permitCountGaps(text) {
+  const gaps = [];
+  if (!new RegExp(`\\b${live.permitStatesNoBC} states and (British Columbia|BC)\\b`).test(text)) gaps.push(`full count ${live.permitStatesNoBC} states and British Columbia (or BC)`);
+  if (!new RegExp(`\\b${SHORT_STATES} more\\b`).test(text)) gaps.push(`shorter count ${SHORT_STATES} more`);
+  return gaps;
+}
+function metaContent(html, key) {
+  const m = html.match(new RegExp(`<meta\\s+(?:name|property)="${key}"\\s+content="([^"]*)"`));
+  return m ? m[1] : "";
+}
+
+test("the permit finder's not-read text and page descriptions give the live full and shorter counts", () => {
+  const v = L.permitFor(permits, "zz", 15, "job");
+  assert.equal(v.verdict, "nostate");
+  const html = fs.readFileSync(path.join(root, "permit.html"), "utf8");
+  const surfaces = {
+    "lib.js nostate text": v.text,
+    "permit.html meta description": metaContent(html, "description"),
+    "permit.html og:description": metaContent(html, "og:description"),
+  };
+  const bad = [];
+  for (const [where, text] of Object.entries(surfaces)) {
+    for (const gap of permitCountGaps(text)) bad.push(`${where}: missing ${gap}`);
+  }
+  assert.deepEqual(bad, [], "Stale permit counts:\n" + bad.join("\n"));
+});
+
+test("the permit count check catches a stale full or shorter count", () => {
+  const good = "We have full answers for 17 states and British Columbia, and shorter answers for 30 more states.";
+  assert.deepEqual(permitCountGaps(good), []);
+  assert.equal(permitCountGaps(good.replace("for 30 more", "for 16 more")).length, 1);
+  assert.equal(permitCountGaps(good.replace("17 states", "16 states")).length, 1);
+  assert.equal(permitCountGaps("We have read 17 states and British Columbia.").length, 1);
+});

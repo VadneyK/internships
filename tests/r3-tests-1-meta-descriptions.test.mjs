@@ -24,7 +24,6 @@ const KNOWN_LONG = {
   "leaders.html": 210,
   "parents.html": 290,
   "paycheck.html": 261,
-  "permit.html": 266,
   "ready.html": 212,
   "safety.html": 274,
   "states.html": 236,

@@ -30,7 +30,7 @@ test("neither doc has an em dash or en dash character", () => {
 test("the file map names the generated, hand-edited, QR and tools files", () => {
   for (const s of [
     "`data/entries-lite.json`", "`data/entries-core.json`", "`data/entries-card.json`",
-    "`data/permits.json`", "`data/calendar.json`", "`data/interview.json`", "`data/languages.json`",
+    "`data/permits.json`", "`data/states-lite.json`", "`data/calendar.json`", "`data/interview.json`", "`data/languages.json`",
     "`data/money.json`", "`data/parents.json`", "`data/safety.json`", "`data/transit.json`",
     "`data/younger.json`", "`data/gaps.json`", "`assets/qr/*.svg`",
     "`tools/build.py`", "`tools/build_data.py`", "`tools/validate.py`", "`tools/proglib.py`",
@@ -52,7 +52,7 @@ test("each generated entries file says it is built by build_data.py and never ed
 });
 
 test("each hand-edited data file has a row that names the page script reading it", () => {
-  const hand = ["permits", "calendar", "employers", "interview", "languages", "money", "parents", "safety", "transit", "younger", "gaps"];
+  const hand = ["permits", "states-lite", "calendar", "employers", "interview", "languages", "money", "parents", "safety", "transit", "younger", "gaps"];
   for (const name of hand) {
     const row = rowOf(contrib, "| `data/" + name + ".json`");
     assert.ok(row, "no row for data/" + name + ".json");

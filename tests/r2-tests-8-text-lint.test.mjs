@@ -42,7 +42,8 @@ export function lintText(text, { field = "" } = {}) {
     re.lastIndex = m.index + m[1].length;
   }
   // in-demand style: "in in-demand" is matched by neither pass because of the hyphen guard, but check the OK list too.
-  if (/ [,.;:](?!\.\.)/.test(text)) problems.push("space before , . ; or :");
+  // page_title copies an official page title, which may be written with spaced colons.
+  if (field !== "page_title" && / [,.;:](?!\.\.)/.test(text)) problems.push("space before , . ; or :");
   if (/,,/.test(text) || /(^|[^.])\.\.($|[^.])/.test(text) || /\.{4,}/.test(text)) problems.push("doubled comma or period");
   if (field !== "sources_fetched" && /http:\/\//i.test(text)) problems.push("plain http:// link");
   // Walk the brackets. A ")" with nothing open that follows 1 or 2 digits at a word start is a numbered step like 1).

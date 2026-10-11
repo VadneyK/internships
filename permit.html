@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Do I Need a Work Permit? Pick Your Job and Get the Exact Steps</title>
-<meta name="description" content="Pick your state, age and kind of work (17 states and British Columbia) and see whether you need a work permit, which one, who issues it, what to bring, and a printable checklist and message to your school. Work permit rules for 17 states and BC, from official pages.">
+<meta name="description" content="Pick your state, age and kind of work to see if you need a work permit, who issues it and what to bring. Full rules (17 states and British Columbia), plus shorter answers for 30 more states.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#efede8">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#131211">
 <link rel="canonical" href="https://vadneyk.github.io/internships/permit.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Do I Need a Work Permit? Pick Your Job and Get the Exact Steps">
-<meta property="og:description" content="Pick your state, age and kind of work (17 states and British Columbia) and see whether you need a work permit, which one, who issues it, what to bring, and a printable checklist and message to your school. Work permit rules for 17 states and BC, from official pages.">
+<meta property="og:description" content="Pick your state, age and kind of work to see if you need a work permit, who issues it and what to bring. Full rules (17 states and British Columbia), plus shorter answers for 30 more states.">
 <meta property="og:url" content="https://vadneyk.github.io/internships/permit.html">
 <meta property="og:image" content="https://vadneyk.github.io/internships/assets/img/og.jpg">
 <meta property="og:image:width" content="1200">
@@ -21,8 +21,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=f7da8e6b">
-<link rel="stylesheet" href="assets/css/style.css?v=f7da8e6b">
+<link rel="stylesheet" href="assets/css/fonts.css?v=27b05da5">
+<link rel="stylesheet" href="assets/css/style.css?v=27b05da5">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -84,12 +84,14 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <div class="grid g3" style="align-items:end;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));">
       <div class="field"><label for="pState">Where will you work?</label>
         <select id="pState" data-tiles><option value="">Choose a state</option></select></div>
+      <div class="field" id="pLiteField" hidden><label for="pLite">Which state?</label>
+        <select id="pLite" data-tiles><option value="">Choose your state</option></select></div>
       <div class="field"><label for="pAge">How old are you?</label>
         <select id="pAge" data-tiles><option value="">Choose your age</option></select></div>
       <div class="field"><label for="pKind">What kind of work?</label>
         <select id="pKind" data-tiles><option value="">Choose one</option></select></div>
     </div>
-    <p class="small muted">Not listed? We have read 17 states and British Columbia so far. Pick &ldquo;My state is not listed&rdquo; at the end of the state list to see who to ask.</p>
+    <p class="small muted">We have full answers for 17 states and British Columbia, and shorter answers for 30 more states. Pick &ldquo;Another state&rdquo; to find yours. If it is not there, pick &ldquo;My state is not listed&rdquo; to see who to ask.</p>
   </div>
 </section>
 
@@ -185,9 +187,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=f7da8e6b"></script>
-<script src="assets/js/common.js?v=f7da8e6b"></script>
-<script src="assets/js/permit.js?v=f7da8e6b"></script>
+<script src="assets/js/lib.js?v=27b05da5"></script>
+<script src="assets/js/common.js?v=27b05da5"></script>
+<script src="assets/js/permit.js?v=27b05da5"></script>
 
 </body>
 </html>

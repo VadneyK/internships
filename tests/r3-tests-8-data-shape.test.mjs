@@ -8,7 +8,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const FILES = ["money", "younger", "parents", "interview", "languages", "safety", "transit", "calendar", "permits", "gaps", "meta"];
+const FILES = ["money", "younger", "parents", "interview", "languages", "safety", "transit", "calendar", "permits", "states-lite", "gaps", "meta"];
 
 // Allowed exceptions. Each entry is { file, rule, path, why }. In a path, [*] matches any array index and .* matches any one key.
 // null on purpose means "no value applies" (no permit needed, no limit, no open date). Data is not edited by this ticket.

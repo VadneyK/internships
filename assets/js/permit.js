@@ -3,7 +3,7 @@
   "use strict";
   var G = window.TIG, L = G.lib;
   var $ = function (id) { return document.getElementById(id); };
-  var data = null;
+  var data = null, lite = null;
 
   function opt(sel, v, t) { var o = document.createElement("option"); o.value = v; o.textContent = t; sel.appendChild(o); }
   function list(items) { return "<ol>" + items.map(function (x) { return "<li>" + G.esc(x) + "</li>"; }).join("") + "</ol>"; }
@@ -19,6 +19,29 @@
     var u = L.permitFor(data, st, 15, "job");
     return '<article class="card verdict ask"><h2>' + G.esc(u.headline) + "</h2><p>" + link(G.esc(u.text)) + "</p></article>";
   }
+  function hasLite(id) { return !!lite && !!id && Object.prototype.hasOwnProperty.call(lite, id); }
+  /* The shorter answer for one of the states in data/states-lite.json: mostly one official page, four facts, the page and a quote. */
+  function liteCard(id, age, kind) {
+    var s = lite[id], a = +age, NS = "Not stated on the page we read.";
+    function row(k, v, tel) { var ns = !v || v === NS; return "<div><dt>" + k + "</dt><dd" + (ns ? ' class="ns"' : "") + ">" + (ns ? G.esc(NS) : tel ? L.linkContacts(v) : G.esc(v)) + "</dd></div>"; }
+    var h = '<article class="card verdict ask" id="pLiteCard">';
+    if (a >= 18) h += '<p id="pAdultLine"><b>You are 18. You do not need a minor work permit. Go to <a href="jobs.html?age=18">Jobs that hire teens</a>.</b></p>';
+    h += "<h2>" + G.esc(s.name) + "</h2>";
+    h += '<dl class="facts">' + row("Youngest age", s.min_age) + row("Permit", s.permit) + row("Hours", s.hours);
+    var hasPhone = s.phone && s.phone !== NS;
+    h += "<div><dt>Who to ask</dt><dd>" + L.linkContacts(s.who_to_ask + (hasPhone ? " " + s.phone : "")) + (hasPhone ? "" : ' <span class="muted">Phone: ' + G.esc(NS) + "</span>") + "</dd></div></dl>";
+    h += "<p>We mostly read one official page for this state, so this answer is shorter than our full state answers. Confirm on the page.</p>";
+    /* Say what the short answer leaves out: the hours row may not cover 16 and 17, and it does not sort kinds of work. */
+    var gaps = [];
+    if (a === 16 || a === 17) gaps.push("The hours row may not cover 16 and 17 year olds. For 16 and 17, confirm the hour limits on the page above or with the office.");
+    if (kind && kind !== "job") gaps.push("This short answer does not cover the kind of work you picked. Confirm with the office or on the page above before you start.");
+    if (gaps.length) h += '<p id="pLiteNote"><b>Not covered here:</b> ' + gaps.join(" ") + "</p>";
+    h += '<p class="small">Source: <a href="' + G.esc(s.url) + '" target="_blank" rel="noopener">' + G.esc(s.page_title) + "</a>." + (liteRead ? " The short answers were last checked " + G.esc(liteRead) + "." : "") + "</p>";
+    h += '<p class="small muted">The page says: &ldquo;' + G.esc(s.quote) + "&rdquo;</p>";
+    if (a >= 12 && a < 14) h += '<p>Federal law says under 14 may not be employed in most non-farm jobs. A state can be stricter, and then the stricter rule applies.</p><p><a class="btn sm" href="younger.html?age=' + encodeURIComponent(String(age)) + '">What you can do at 12 and 13</a></p>';
+    return h + "</article>";
+  }
+  var liteRead = "";
   function missingText(st, age, kind) {
     var m = [];
     if (!st) m.push("your state");
@@ -53,8 +76,9 @@
   function changed() {
     render();
     syncNextLinks();
-    var h = $("pOut").querySelector("h2") || $("pAdultLine");
-    say(h ? h.textContent : pickPrompt($("pState").value, $("pAge").value, $("pKind").value));
+    var h = $("pOut").querySelector("h2") || $("pAdultLine"), st = $("pState").value;
+    /* Another state shows the second list; say so, since that step is new and the answer is not there yet. */
+    say(h ? h.textContent : (st === "lite" && !$("pLite").value) ? "Now pick your state." : pickPrompt(st, $("pAge").value, $("pKind").value));
   }
 
   /* Programs go to Find with the age (only for 12 to 18). */
@@ -86,6 +110,13 @@
     var st = $("pState").value, age = $("pAge").value, kind = $("pKind").value;
     var out = $("pOut"), sec = $("packetSec");
     cur = null; sec.hidden = true;
+    var f = $("pLiteField");
+    if (f) f.hidden = st !== "lite";
+    if (st === "lite") {
+      var lid = $("pLite").value;
+      out.innerHTML = hasLite(lid) ? liteCard(lid, age, kind) : '<p class="muted">Now pick your state.</p>';
+      syncUrl(); return;
+    }
     if (st === "other" || (st && !hasState(st))) { out.innerHTML = nostateCard(st, age); syncUrl(); return; }
     if (!st || !age || !kind) { out.innerHTML = '<p class="muted">' + missingText(st, age, kind) + "</p>"; syncUrl(); return; }
     var r = L.permitFor(data, st, age, kind);
@@ -184,7 +215,9 @@
   function syncUrl() {
     try {
       var p = new URLSearchParams();
-      if ($("pState").value) p.set("state", $("pState").value);
+      var sv = $("pState").value;
+      if (sv === "lite" && hasLite($("pLite").value)) sv = $("pLite").value;
+      if (sv) p.set("state", sv);
       if ($("pAge").value) p.set("age", $("pAge").value);
       if ($("pKind").value) p.set("kind", $("pKind").value);
       var q = p.toString();
@@ -192,10 +225,24 @@
     } catch (e) { /* the address bar is optional */ }
   }
 
+  /* The shorter answers load only when a teen picks Another state, or opens a ?state= link that is not one of the full states. */
+  var liteP = null;
+  var liteErrHTML = '<p class="muted">The shorter answers could not load. Try again, or pick &ldquo;My state is not listed&rdquo;.</p>';
+  function ensureLite() {
+    if (lite) return Promise.resolve(true);
+    if (!liteP) liteP = G.fetchData("data/states-lite.json").then(function (r) { return r.json(); }).then(function (ld) {
+      lite = {}; liteRead = ld.read || "";
+      ld.states.slice().sort(function (x, y) { return x.name < y.name ? -1 : 1; }).forEach(function (x) { lite[x.id] = x; opt($("pLite"), x.id, x.name); });
+      opt($("pLite"), "other", "My state is not listed");
+      return true;
+    }).catch(function () { liteP = null; return false; });
+    return liteP;
+  }
   G.fetchData("data/permits.json").then(function (r) { return r.json(); }).then(function (d) {
     data = d;
     var first = ["ca", "ga", "ny", "il"], rest = Object.keys(d.states).filter(function (k) { return first.indexOf(k) < 0; }).sort(function (a, b) { return d.states[a].name < d.states[b].name ? -1 : 1; });
     first.concat(rest).forEach(function (k) { opt($("pState"), k, d.states[k].name); });
+    opt($("pState"), "lite", "Another state");
     opt($("pState"), "other", "My state is not listed");
     for (var a = 12; a <= 17; a++) opt($("pAge"), String(a), String(a));
     opt($("pAge"), "18", "18 or older");
@@ -210,7 +257,18 @@
       var pr = G.store.get("findprefs", {}), ss = pr && typeof pr.place === "string" ? L.stateFromPlace(pr.place) : "";
       if (ss && hasState(ss)) { $("pState").value = ss; if ($("pState")._tpSync) $("pState")._tpSync(); }
     }
-    ["pState", "pAge", "pKind"].forEach(function (id) { $(id).addEventListener("change", changed); });
+    $("pState").addEventListener("change", function () {
+      if ($("pState").value !== "lite") return changed();
+      /* render the prompt now, then fill the second list once the file is in */
+      changed();
+      ensureLite().then(function (ok) { if (!ok) { $("pLiteField").hidden = true; $("pOut").innerHTML = liteErrHTML; } else changed(); });
+    });
+    ["pAge", "pKind"].forEach(function (id) { $(id).addEventListener("change", changed); });
+    $("pLite").addEventListener("change", function () {
+      /* "My state is not listed" in the second step is the same answer as in the first. */
+      if ($("pLite").value === "other") { $("pState").value = "other"; $("pLite").value = ""; if ($("pState")._tpSync) $("pState")._tpSync(); if ($("pLite")._tpSync) $("pLite")._tpSync(); }
+      changed();
+    });
     ["mName", "mEmp", "mTo"].forEach(function (id) { $(id).addEventListener("input", onMsgEdit); $(id).addEventListener("change", onMsgEdit); });
     /* The jump link sits in the answer card, which is re-rendered; the listener stays on the card container. */
     var packetHead = $("packetSec").querySelector("h2");
@@ -224,9 +282,19 @@
     $("mCopy").addEventListener("click", function () { G.copy($("mText").textContent); });
     $("pPrint").addEventListener("click", function () { G.printOnly($("pPacket"), "Work permit checklist"); });
     var asked = q.get("state");
-    render();
+    /* A ?state= value that is not a full state waits for the shorter list, so no earlier "pick your state" or "not read" card shows first. */
+    var deep = !!asked && !$("pState").value;
+    if (!deep) render();
     syncNextLinks();
-    /* A bad ?state= value selects nothing, so the select stays empty: show the same answer as "not listed". */
-    if (asked && !$("pState").value) $("pOut").innerHTML = nostateCard(asked, $("pAge").value);
+    if ($("pState").value === "lite") ensureLite().then(function (ok) { if (ok) render(); else $("pOut").innerHTML = liteErrHTML; });
+    /* Try the shorter list, else show the same answer as "not listed". A failed load shows the same error as the picker. */
+    if (deep) {
+      var low = asked.toLowerCase();
+      ensureLite().then(function (ok) {
+        if (!ok) { $("pOut").innerHTML = liteErrHTML; return; }
+        if (hasLite(low)) { $("pState").value = "lite"; $("pLite").value = low; if ($("pState")._tpSync) $("pState")._tpSync(); if ($("pLite")._tpSync) $("pLite")._tpSync(); render(); }
+        else $("pOut").innerHTML = nostateCard(asked, $("pAge").value);
+      });
+    }
   }).catch(function () { $("pOut").innerHTML = '<p class="muted">The permit answers could not load. Try again, or see the <a href="rules.html">California rules</a> or <a href="states.html">other states</a>.</p>'; $("pStatus").textContent = "The permit answers could not load. Try again."; });
 })();

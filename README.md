@@ -44,7 +44,7 @@ Each page is a plain HTML file in the repo root. The source for each one is in [
 Three features are worth a closer look:
 
 - **The Where picker.** On the Programs page (`find.html`), the Where menu lets you pick a city or area. It starts on Anywhere.
-- **Work permit rules.** The permit finder covers 17 states and British Columbia. Its rules are kept in [`data/permits.json`](data/permits.json).
+- **Work permit rules.** The permit finder covers 17 states and British Columbia in full, plus a shorter answer for 30 more states. The full rules are kept in [`data/permits.json`](data/permits.json) and the shorter answers in [`data/states-lite.json`](data/states-lite.json).
 - **Share links and QR codes.** The Share page (`share.html`) makes a link you can copy and a QR code you can print for the guide and its main pages.
 
 The guide lists more than a thousand programs. The exact number is in [`data/meta.json`](data/meta.json).

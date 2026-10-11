@@ -45,6 +45,7 @@ const OTHER = {
     "3128146500": "Illinois Workers' Compensation Commission, Chicago",
     "3128146200": "Illinois Department of Human Rights",
   },
+  "data/states-lite.json": { "7756841890": "Nevada Office of the Labor Commissioner, Carson City (the words Labor Commissioner match California above)" },
   "data/transit.json": { "7145606282": "OCTA youth pass phone" },
 };
 const FEDERAL = { "8664879243": "USDOL Wage and Hour 1-866-4-US-WAGE" };
