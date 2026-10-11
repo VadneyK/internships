@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": false,
+  "deadline_iso": null,
+  "min_age": null,
+  "max_age": null,
+  "duration": "A regular portion of your time each week",
+  "pay_detail": null,
+  "fields": [
+    "education"
+  ],
+  "priority": 3,
+  "id": "washington-sno-isle-libraries-volunteer",
+  "name": "Library Volunteering (all ages)",
+  "org": "Sno-Isle Libraries",
+  "regions": [
+    "washington"
+  ],
+  "city": "Snohomish and Island Counties, WA",
+  "type": "volunteer",
+  "what_you_do": "Help at your community library with a short project, a regular task or a special event. You go through an orientation and training and commit a regular part of your week.",
+  "who_can_apply": "Volunteers of all ages. Volunteers 13 and under must be supervised by a parent or guardian.",
+  "paid_type": "unpaid",
+  "season": "year-round",
+  "status": "rolling",
+  "deadline_text": "No deadline. Opportunities vary by branch.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Contact the volunteer coordinator at your local library for a list of openings, or use the Volunteer Portal on the page.",
+  "url": "https://www.sno-isle.org/volunteers/",
+  "notes": "Library jobs at Sno-Isle require you to be 16 or older (from the same page). The page says to check with your local library for current openings.",
+  "sources_fetched": [
+    "https://www.sno-isle.org/volunteers/"
+  ]
+}

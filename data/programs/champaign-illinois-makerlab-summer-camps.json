@@ -1,0 +1,39 @@
+{
+  "id": "champaign-illinois-makerlab-summer-camps",
+  "grades": null,
+  "min_age": 10,
+  "max_age": 17,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": false,
+  "priority": 3,
+  "deadline_iso": null,
+  "pay_detail": "$250 a week in 2026. Optional lunch hour supervision and late pickup were $10 a day each.",
+  "duration": "1 week, 3 hours a day (morning or afternoon sessions)",
+  "name": "Illinois MakerLab Summer Camps",
+  "org": "Illinois MakerLab, Gies College of Business, University of Illinois Urbana-Champaign",
+  "regions": [
+    "champaign"
+  ],
+  "city": "Champaign, IL",
+  "type": "pre-college",
+  "fields": [
+    "tech-cs",
+    "engineering",
+    "arts-media"
+  ],
+  "what_you_do": "One week, 3 hours a day camps on 3D modeling, 3D printing, Minecraft, generative AI and robot arms in the MakerLab at the Business Instructional Facility.",
+  "who_can_apply": "Each camp lists its own ages. In 2026 camps were for ages 10 and up (some 10 to 17, some 12 and up). Check the age before registering.",
+  "paid_type": "fee-based",
+  "season": "summer",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Summer 2026 camps ran June 1 to July 31 and are over. Summer 2027 details will be announced in early 2027.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Registration opens when 2027 details are posted on the MakerLab summer page. A $20 non-refundable deposit applies.",
+  "url": "https://makerlab.illinois.edu/summer.html",
+  "notes": "2026 camps ran June 1 to July 31. Lunch supervision and late pickup were $10 a day each.",
+  "sources_fetched": [
+    "https://makerlab.illinois.edu/summer.html"
+  ]
+}

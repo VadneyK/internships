@@ -111,11 +111,12 @@ test("the whole repo is within budget", () => {
 // The raw limit (2,020,000) is broken, and so is the per-program limit, because 2,150,000 / 1,610 is about 1,335 bytes per program (limit 1,300).
 // Every other file in the fake table is inside its limit, so no other file may be reported.
 test("mutation: a lite file at 2,150,000 bytes is reported, and only lite is reported", () => {
-  const fake = { ...repoSizes, [LITE]: { bytes: 2150000, gzip: repoSizes[LITE].gzip } };
+  const big = Math.max(2150000, 1335 * programCount);
+  const fake = { ...repoSizes, [LITE]: { bytes: big, gzip: repoSizes[LITE].gzip } };
   const problems = budgetProblems(fake, programCount);
   assert.deepEqual(problems, [
-    `${LITE} is 2150000 bytes, over the limit of 2020000 bytes`,
-    `${LITE} is ${Math.round(2150000 / programCount)} bytes per program (2150000 bytes for ${programCount} programs), over the limit of 1300 bytes per program`,
+    `${LITE} is ${big} bytes, over the limit of 2020000 bytes`,
+    `${LITE} is ${Math.round(big / programCount)} bytes per program (${big} bytes for ${programCount} programs), over the limit of 1300 bytes per program`,
   ]);
 });
 

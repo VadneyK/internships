@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "deadline_iso": null,
+  "needs_work_permit": false,
+  "priority": 3,
+  "fields": [
+    "environment",
+    "science"
+  ],
+  "id": "santa-barbara-wildlife-care-network-teen-with-guardian",
+  "name": "Volunteering with a Guardian (ages 13 to 17)",
+  "org": "Santa Barbara Wildlife Care Network",
+  "regions": [
+    "santa-barbara"
+  ],
+  "city": "Santa Barbara, CA",
+  "type": "volunteer",
+  "what_you_do": "Help care for injured and orphaned wildlife at a rescue center, usually one 4-hour shift a week. A parent or guardian volunteers with you.",
+  "min_age": 13,
+  "max_age": 17,
+  "who_can_apply": "Volunteers are 18 or older. Teens ages 13 to 17 may volunteer alongside a guardian (an adult over 25 approved by the guardian is also allowed, per the FAQ). Email for the minor rules.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer",
+  "season": "year-round",
+  "duration": "Weekly 4-hour shift for most roles (not rescue and transport roles)",
+  "status": "rolling",
+  "deadline_text": "No dates posted. A mandatory orientation is required.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use Apply to Volunteer on the page (online form). For minors, email volunteer@sbwcn.org or call (805) 681-1080.",
+  "url": "https://www.sbwcn.org/volunteer/",
+  "notes": "Teens cannot volunteer alone. The page lists no youth-only program. Confirm first with the volunteer team how it works for a teen and guardian.",
+  "sources_fetched": [
+    "https://www.sbwcn.org/volunteer/"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "opens_iso": "2027-01-04",
+  "deadline_iso": "2027-02-27",
+  "apply_url": "https://youthworks.oedworks.com/app/",
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 1,
+  "needs_work_permit": true,
+  "notes": "Pay of $15 and the work permit rule come from the 2026 pages. The 2027 pay is not posted yet. Help desk (410) 545-1820. Credit recovery classes can also be a paid worksite.",
+  "id": "baltimore-youthworks-summer-jobs",
+  "name": "YouthWorks Summer Jobs",
+  "org": "Baltimore Mayor's Office of Employment Development",
+  "regions": [
+    "maryland"
+  ],
+  "city": "Baltimore, MD",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Work a summer job at a city, nonprofit or private worksite, with training on money skills and career exploration.",
+  "min_age": 14,
+  "max_age": 21,
+  "who_can_apply": "Baltimore City residents ages 14 to 21 (age counted as of mid-March of the program year). Needs identity and work authorization papers.",
+  "paid_type": "paid",
+  "pay_detail": "$15 per hour in 2026 (up to 5 hours a day, 5 days a week, 25 hours)",
+  "season": "summer",
+  "duration": "About 5 weeks (June 29 to July 30, 2027)",
+  "status": "opens-soon",
+  "deadline_text": "2027 youth application: January 4 to February 27, 2027. Program runs June 29 to July 30, 2027.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply online in the YouthWorks portal and upload ID, work authorization and tax forms. Under 18 also needs a Maryland work permit signed by a parent. Applying early does not guarantee a job.",
+  "url": "https://youthworks.oedworks.com/",
+  "sources_fetched": [
+    "https://youthworks.oedworks.com/",
+    "https://youthworks.oedworks.com/customPage.cfm?PageId=1",
+    "https://youthworks.oedworks.com/customPage.cfm?PageId=5"
+  ]
+}

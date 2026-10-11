@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 1,
+  "needs_work_permit": null,
+  "notes": "Pay and ages are from the 2026 flyer and may change. Going to the event does not guarantee a job. Course fee discounts may be available for people who want to work for the city. Under-18 workers may need a Maryland work permit; the flyer does not say.",
+  "id": "maryland-rockville-swim-center-summer-lifeguards",
+  "name": "Summer Lifeguards, Swim Instructors and Front Desk (Rockville Swim and Fitness Center)",
+  "org": "City of Rockville Recreation and Parks",
+  "regions": [
+    "maryland"
+  ],
+  "city": "Rockville, MD",
+  "type": "paid-youth-program",
+  "fields": [
+    "sports",
+    "food-hospitality"
+  ],
+  "what_you_do": "Work summer jobs at the city swim center as a lifeguard, swim instructor or front desk aide. The city offers lifeguard training if you are not certified.",
+  "min_age": 15,
+  "max_age": null,
+  "who_can_apply": "Lifeguards must be 15 or older. Swim instructors 15 or older with teaching experience (14 or older to volunteer with no experience). Front desk aides 16 or older.",
+  "paid_type": "paid",
+  "pay_detail": "2026 flyer: lifeguard $18.25 to $19.25, swim instructor $18.75 to $20, front desk aide $17.65 to $19.00. Uncertified lifeguards start at $18.25 after they get certified.",
+  "season": "summer",
+  "duration": "Summer season",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The 2026 walk-in hiring event was March 23, 2026, 4 to 7 pm. 2027 dates are not posted.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online at rockvillemd.gov/careers, then come to a hiring event or interview for a skills test (200 yard swim, 2 minute tread). Call 240-314-8750.",
+  "url": "https://www.rockvillemd.gov/swimcenter",
+  "sources_fetched": [
+    "https://www.rockvillemd.gov/wp-content/uploads/2026/01/RSFC-Hiring-Event-26-Flyer.pdf",
+    "https://www.rockvillemd.gov/swimcenter"
+  ]
+}

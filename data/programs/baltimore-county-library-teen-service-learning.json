@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "needs_work_permit": false,
+  "notes": "Older BCPL announcement pages were not available, so past application windows are not confirmed here.",
+  "id": "baltimore-county-library-teen-service-learning",
+  "name": "Teen Service Learning (Be Involved, Teen Advisory Boards, Buddies)",
+  "org": "Baltimore County Public Library",
+  "regions": [
+    "maryland"
+  ],
+  "city": "Baltimore County, MD",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "what_you_do": "Earn service-learning hours with drop-in community projects, by joining a Teen Advisory Board, or by helping younger kids read and do STEM projects as a Buddy.",
+  "min_age": 14,
+  "max_age": 17,
+  "who_can_apply": "Teens. The page's teen event filter lists ages 14 to 17. Be Involved is open to any teen at any branch. Teen Advisory Boards and Buddies use applications.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Earns service-learning hours.",
+  "season": "year-round",
+  "duration": "Be Involved is drop-in. Teen Advisory Board and Buddies dates are not posted on this page.",
+  "status": "rolling",
+  "deadline_text": "Be Involved is drop-in with no application. Teen Advisory Board and Buddies dates are not posted on this page.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "For Be Involved, check the events calendar and drop in. For Teen Advisory Boards or Buddies, contact your local branch. Questions: yfe@bcpl.net.",
+  "url": "https://www.bcpl.info/youth/teens",
+  "sources_fetched": [
+    "https://www.bcpl.info/youth/teens"
+  ]
+}

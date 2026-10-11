@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": "https://kitsaplibrary.formstack.com/forms/teen_volunteer_application",
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": false,
+  "deadline_iso": null,
+  "min_age": null,
+  "max_age": null,
+  "duration": "Not stated",
+  "pay_detail": null,
+  "fields": [
+    "education"
+  ],
+  "priority": 3,
+  "id": "washington-kitsap-regional-library-teen-volunteer",
+  "name": "Teen Volunteer Program",
+  "org": "Kitsap Regional Library",
+  "regions": [
+    "washington"
+  ],
+  "city": "Bainbridge Island, Bremerton, Port Orchard, Poulsbo and Silverdale, WA",
+  "type": "volunteer",
+  "what_you_do": "Volunteer at a library branch to build work-readiness skills. A library staff member contacts you after you apply.",
+  "who_can_apply": "Teens. The page does not state an age or grade rule. Teen volunteering is available at the Bainbridge Island, Bremerton (Sylvan Way), Port Orchard, Poulsbo and Silverdale branches.",
+  "paid_type": "unpaid",
+  "season": "year-round",
+  "status": "rolling",
+  "deadline_text": "No deadline stated.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the Teen Volunteer Application online. It shows which branches have openings.",
+  "url": "https://www.krl.org/volunteer/",
+  "notes": "The application form did not load in a plain page read, so the questions and age rule were not checked. Call your branch to confirm the minimum age.",
+  "sources_fetched": [
+    "https://www.krl.org/volunteer/"
+  ]
+}

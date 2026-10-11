@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "apply_url": null,
+  "opens_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 3,
+  "min_age": null,
+  "max_age": null,
+  "needs_work_permit": false,
+  "deadline_iso": null,
+  "notes": "The page gives no age or grade rule beyond secondary school, and it lists no election dates.",
+  "id": "massachusetts-state-student-advisory-council",
+  "name": "Massachusetts State Student Advisory Council",
+  "org": "Massachusetts Department of Elementary and Secondary Education",
+  "regions": [
+    "massachusetts"
+  ],
+  "city": "Massachusetts (statewide)",
+  "type": "civic-government",
+  "fields": [
+    "law-government",
+    "education"
+  ],
+  "what_you_do": "Be a student voice on education in Massachusetts. Regional councils elect delegates to a state council that advises the Board of Education. The elected chair is a full voting member of the Board.",
+  "who_can_apply": "Secondary school students at a Massachusetts school. Every secondary school can elect two representatives to its regional council, so you run for election at your school.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated. A leadership role, not a job.",
+  "season": "school-year",
+  "duration": "School year",
+  "status": "unconfirmed",
+  "deadline_text": "The page lists no election dates. Ask your school about its election.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Ask your school about its Student Advisory Council election. The DESE page has an Elections link with the recommended procedure.",
+  "url": "https://www.doe.mass.edu/sac/",
+  "sources_fetched": [
+    "https://www.doe.mass.edu/sac/",
+    "https://www.doe.mass.edu/sac/election/default.html"
+  ]
+}

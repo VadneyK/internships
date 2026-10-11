@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "deadline_iso": null,
+  "needs_work_permit": false,
+  "priority": 3,
+  "fields": [
+    "education",
+    "any"
+  ],
+  "id": "murrieta-public-library-teen-volunteers",
+  "name": "Murrieta Public Library Volunteers and Teen Advisory Council",
+  "org": "Murrieta Public Library (City of Murrieta)",
+  "regions": [
+    "inland-empire"
+  ],
+  "city": "Murrieta, CA",
+  "type": "volunteer",
+  "what_you_do": "Help with library events, storytime, the seed library, shelving and the Summer Reading Challenge, or join the Teen Advisory Council.",
+  "min_age": 14,
+  "max_age": null,
+  "who_can_apply": "Volunteers must be at least 14. Under 18 you fill out an extra section and a parent or guardian must sign. All volunteers must clear Live Scan fingerprinting.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer",
+  "season": "year-round",
+  "duration": "Not stated",
+  "status": "year-round",
+  "deadline_text": "No dates or deadline on the form.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out and sign the Volunteer Application (PDF). The form does not say where to return it, so ask at the Murrieta library (8 Town Square).",
+  "url": "https://www.murrietaca.gov/DocumentCenter/View/821/Volunteer-Application-PDF",
+  "notes": "The form lists the Teen Advisory Council as one option but gives no details about it. Confirm first how to return the form.",
+  "sources_fetched": [
+    "https://www.murrietaca.gov/DocumentCenter/View/821",
+    "https://www.murrietaca.gov/DocumentCenter/View/821/Volunteer-Application-PDF"
+  ]
+}

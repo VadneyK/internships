@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "needs_work_permit": true,
+  "deadline_iso": null,
+  "min_age": 16,
+  "max_age": null,
+  "duration": "Wading pools run mid June to Labor Day. Boat ramp jobs run May to September.",
+  "pay_detail": "Starting pay in the 2026 postings: $26.92 an hour (wading pool attendant, lifeguard), $33.47 (aquatics customer service), $34.08 (boat ramp ranger)",
+  "fields": [
+    "sports",
+    "environment"
+  ],
+  "priority": 1,
+  "id": "seattle-parks-summer-temporary-jobs",
+  "name": "Seattle Parks Summer Temporary Jobs",
+  "org": "Seattle Parks and Recreation",
+  "regions": [
+    "seattle"
+  ],
+  "city": "Seattle, WA",
+  "type": "paid-youth-program",
+  "what_you_do": "Work a city summer job such as wading pool attendant, aquatics customer service, boat ramp ranger or lifeguard. Some jobs are mostly weekends and some include first aid training.",
+  "who_can_apply": "Jobs are open to ages 16 and up. Some jobs need you to be 18 (for example the disability programs). Some need a WA driver license or certifications. Read each job posting.",
+  "paid_type": "paid",
+  "season": "summer",
+  "status": "closed-expect-reopen",
+  "deadline_text": "2026 postings closed between May 12 and June 16, 2026 (page updated April 14, 2026). 2027 postings not posted.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply to each job on the City of Seattle jobs site through the Open Temp Jobs link. Many recreation programs hire through the nonprofit Associated Recreation Council instead.",
+  "url": "https://seattle.gov/parks/about-us/jobs/summer-employment-opportunities",
+  "sources_fetched": [
+    "https://seattle.gov/parks/about-us/jobs/summer-employment-opportunities",
+    "https://www.lni.wa.gov/workers-rights/youth-employment/how-to-hire-minors"
+  ],
+  "notes": "Washington requires a signed parent and school authorization form for every worker under 18 (L&I page). See the separate Seattle Parks lifeguard and aquatics training card for guard training."
+}

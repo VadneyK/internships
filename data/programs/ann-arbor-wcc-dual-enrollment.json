@@ -1,0 +1,38 @@
+{
+  "grades": "Grades 9 to 12",
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "notes": "The page does not list application deadlines or information night dates. It links to an Academic Dates page. WCC dual enrollment is not a job.",
+  "id": "ann-arbor-wcc-dual-enrollment",
+  "name": "Dual Enrollment at Washtenaw Community College",
+  "org": "Washtenaw Community College",
+  "regions": [
+    "ann-arbor"
+  ],
+  "city": "Ann Arbor, MI",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take real college classes at WCC while you are still in high school or homeschooled. Classes can count toward the Michigan Transfer Agreement or a WCC certificate.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "Students in grades 9 to 12 enrolled in at least one high school class (or homeschooled) who show college-level skills. Seniors: GPA 2.5 or higher. Grades 10 and 11: SAT 480 or PSAT 460 or higher. Grades 9 to 12: or take the Accuplacer or a writing sample at WCC.",
+  "paid_type": "not-stated",
+  "pay_detail": "Tuition not stated on the page. Your high school may pay (it sends a billing form), or you pay or use a payment plan.",
+  "season": "year-round",
+  "duration": "By semester",
+  "status": "rolling",
+  "deadline_text": "No single deadline posted. Check the academic dates link on the page.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the WCC application, set up your NetID, upload proof of academic level and the parent consent and principal or counselor approval forms from the dual enrollment packet, then register for classes. Call 734-973-3682 for help.",
+  "url": "https://www.wccnet.edu/start-now/high-school/dual-enroll.php",
+  "sources_fetched": [
+    "https://www.wccnet.edu/start-now/high-school/dual-enroll.php"
+  ]
+}

@@ -20,6 +20,8 @@ const KNOWN = {
   "college-park-pg-parks-teen-performance-ensemble": "2027-02-07",
   "college-park-umd-sparc-robotics-certificate": "2026-12-01",
   "emory-pre-college-program": "2027-05-03",
+  "lafayette-purdue-sciencescape": "2027-04-16",
+  "seattle-teens-in-public-service-summer-internship": "2027-02-05",
   "nc-museum-natural-sciences-junior-interpreters": "2027-03-22",
   "nyc-columbia-pre-college-nyc-commuter-summer": "2027-04-01",
   "nyc-manhattan-university-mechanical-engineering-summer-institute": "2027-06-01",

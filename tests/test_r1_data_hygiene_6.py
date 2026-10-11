@@ -95,6 +95,10 @@ ROOT_URL_ALLOW = (
     "fairfax-gmu-wyse-washington-youth-summit-environment",  # own site for this one summit
     "minnesota-youth-institute-mnyi",  # own site for this one program
     "philadelphia-police-explorer-cadets-post-991",  # own site for this one post
+    "baltimore-youthworks-summer-jobs",  # own site for this one program
+    "michigan-detroit-grow-detroits-young-talent",  # own site for this one program
+    "michigan-hosa-state-association",  # own site for this one state group
+    "ucr-stride-stem-cell-research-summer",  # own site for this one program
 )
 
 

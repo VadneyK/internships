@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 3,
+  "notes": "The Summer Youth Employment page lists it as one of the Michigan Works! Southeast summer programs. Jackson is west of Ann Arbor. Ask about dates and pay.",
+  "id": "michigan-jump-start-jackson-paid-training",
+  "name": "Jump-Start Jackson",
+  "org": "Michigan Works! Southeast",
+  "regions": [
+    "michigan"
+  ],
+  "city": "Jackson County, MI",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Get paid on-the-job training with a local employer, a mentor, and lessons on soft skills like attendance, communication and managing money.",
+  "min_age": 16,
+  "max_age": 24,
+  "who_can_apply": "Ages 16 to 24 who live in or go to school in Jackson County.",
+  "paid_type": "paid",
+  "pay_detail": "Paid on-the-job training; rate not stated",
+  "season": "summer",
+  "duration": "Not stated on the page read",
+  "status": "unconfirmed",
+  "deadline_text": "No dates posted on the page read.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Use the Youth and Young Adult Application link on the Jump-Start Jackson page.",
+  "url": "https://www.mwse.org/jumpstartjackson/",
+  "sources_fetched": [
+    "https://www.mwse.org/jumpstartjackson/",
+    "https://www.mwse.org/sye/"
+  ]
+}

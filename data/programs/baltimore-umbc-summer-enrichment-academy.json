@@ -1,0 +1,42 @@
+{
+  "grades": "Middle school and high school",
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 3,
+  "needs_work_permit": false,
+  "notes": "The page lists extendedlearning@umbc.edu as the contact. The original link now redirects to youthprograms.umbc.edu.",
+  "id": "baltimore-umbc-summer-enrichment-academy",
+  "name": "Summer Enrichment Academy (SEA)",
+  "org": "UMBC Division of Professional Studies",
+  "regions": [
+    "maryland"
+  ],
+  "city": "Catonsville (Baltimore), MD",
+  "type": "pre-college",
+  "fields": [
+    "science",
+    "tech-cs",
+    "arts-media",
+    "any"
+  ],
+  "what_you_do": "One-week hands-on summer workshops on the UMBC campus in science, technology, arts and leadership, led by experts and mentors.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "Middle school and high school students. The page gives no age or residency rule.",
+  "paid_type": "fee-based",
+  "pay_detail": "Standard prices range from $374 to $499 depending on the course.",
+  "season": "summer",
+  "duration": "1 week per course",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Summer 2026 is over. The page says to check back soon for Summer 2027 registration. In 2026 the one-week sessions ran June 22 to July 31.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Register online on the UMBC SEA page when 2027 registration opens.",
+  "url": "https://ixl.umbc.edu/summer-enrichment-academy/",
+  "sources_fetched": [
+    "https://ixl.umbc.edu/summer-enrichment-academy/",
+    "https://summer.umbc.edu/for-students/pre-college/"
+  ]
+}

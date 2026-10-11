@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "needs_work_permit": false,
+  "notes": "Not every branch recruits teens, so call first. Volunteer jobs can involve lifting boxes of books and standing for a while.",
+  "id": "baltimore-anne-arundel-library-volunteens",
+  "name": "Teen Volunteers (Volunteens)",
+  "org": "Anne Arundel County Public Library",
+  "regions": [
+    "maryland"
+  ],
+  "city": "Anne Arundel County, MD",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "any"
+  ],
+  "what_you_do": "Help at a local library branch. Some branches recruit teen Volunteens each spring to help with the Summer @ Your Library program.",
+  "min_age": 14,
+  "max_age": null,
+  "who_can_apply": "Anyone 14 or older. Libraries prefer a commitment of at least six months for regular volunteers.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Regular volunteers: at least 6 months preferred. Volunteens: summer program.",
+  "status": "rolling",
+  "deadline_text": "Varies by branch. Teen Volunteens are recruited in the spring.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Contact the branch you want. Volunteers are recruited, interviewed and trained at the local branch.",
+  "url": "https://www.aacpl.net/volunteer",
+  "sources_fetched": [
+    "https://www.aacpl.net/volunteer"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "apply_url": null,
+  "opens_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 2,
+  "min_age": 16,
+  "max_age": 17,
+  "needs_work_permit": false,
+  "deadline_iso": null,
+  "notes": "Only these two AHN sites list a junior program for 16 and 17 year olds. Most other AHN volunteer roles are for adults. Check with the site for current openings.",
+  "id": "pittsburgh-ahn-junior-volunteer",
+  "name": "AHN Junior Volunteer Program",
+  "org": "Allegheny Health Network (Canonsburg Hospital and Wexford Health + Wellness Pavilion)",
+  "regions": [
+    "pittsburgh"
+  ],
+  "city": "Canonsburg and Wexford, PA",
+  "type": "volunteer",
+  "fields": [
+    "health"
+  ],
+  "what_you_do": "Volunteer at a hospital or health center. Canonsburg roles listed include patient activity cart rounding, helping in the Serenity Room, handwashing observation and fall purposeful rounding.",
+  "who_can_apply": "High school students ages 16 to 17 at two sites: Canonsburg Hospital and the Wexford Health + Wellness Pavilion.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "Wexford: Saturdays and in the summer. Canonsburg: not stated.",
+  "status": "rolling",
+  "deadline_text": "No deadline stated on the page.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the AHN volunteer application (Apply Now on the volunteer opportunities page).",
+  "url": "https://www.ahn.org/about/volunteering/locations",
+  "sources_fetched": [
+    "https://www.ahn.org/about/volunteering/locations",
+    "https://www.ahn.org/about/volunteering/why-volunteer",
+    "https://www.ahn.org/about/volunteering/opportunities"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "apply_url": null,
+  "opens_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 2,
+  "min_age": 14,
+  "max_age": 19,
+  "needs_work_permit": false,
+  "deadline_iso": null,
+  "notes": "The page gives few details for youth roles and does not say whether any roles are paid. Ask what is open.",
+  "id": "boston-museum-of-science-youth-volunteers",
+  "name": "Museum of Science Youth Volunteers",
+  "org": "Museum of Science, Boston",
+  "regions": [
+    "boston"
+  ],
+  "city": "Boston, MA",
+  "type": "volunteer",
+  "fields": [
+    "science",
+    "education"
+  ],
+  "what_you_do": "Youth volunteer role at the Museum of Science. The page defines the youth group but does not list the tasks. High school groups from community partners can also volunteer.",
+  "who_can_apply": "People ages 14 to 19 who are in high school.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "Not stated for youth volunteers (Classic adult volunteers sign up for a 4 month commitment)",
+  "status": "rolling",
+  "deadline_text": "No deadline. Join the contact list to hear about upcoming volunteer opportunities.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the interest form on the volunteer page. It asks for your name, contact details, birthdate, address, what interests you and when you are free.",
+  "url": "https://www.mos.org/careers/volunteer",
+  "sources_fetched": [
+    "https://www.mos.org/careers/volunteer"
+  ]
+}

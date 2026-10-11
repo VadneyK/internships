@@ -1,0 +1,39 @@
+{
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 3,
+  "id": "lafayette-art-museum-greater-lafayette-volunteer",
+  "name": "Volunteer at the Art Museum of Greater Lafayette",
+  "org": "Art Museum of Greater Lafayette",
+  "regions": [
+    "lafayette"
+  ],
+  "city": "Lafayette, IN",
+  "type": "volunteer",
+  "fields": [
+    "arts-media"
+  ],
+  "what_you_do": "Help at the museum's events during the year. The museum gives volunteers a letter that verifies their hours.",
+  "who_can_apply": "The page does not state an age rule. Call the museum to ask if teens can volunteer.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Volunteer hours verification papers provided.",
+  "season": "year-round",
+  "duration": "Event by event",
+  "status": "year-round",
+  "deadline_text": "No deadline. The museum says it frequently needs volunteers.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Click Sign Up to Volunteer on the volunteer page (a Google Form). Phone 765-742-1128.",
+  "url": "https://www.artlafayette.org/volunteer",
+  "sources_fetched": [
+    "https://www.artlafayette.org/volunteer",
+    "https://www.artlafayette.org/"
+  ],
+  "notes": "No teen rules are posted, so confirm your age is allowed before you sign up. Museum is at 102 S. 10th Street, Lafayette. Admission is free."
+}

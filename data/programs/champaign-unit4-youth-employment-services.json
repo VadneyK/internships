@@ -1,0 +1,38 @@
+{
+  "id": "champaign-unit4-youth-employment-services",
+  "grades": null,
+  "min_age": 14,
+  "max_age": 19,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "needs_work_permit": null,
+  "priority": 1,
+  "deadline_iso": null,
+  "pay_detail": "Paid. The city page says the 2024 summer placement was a six-week, 105-hour paid work experience. Pay rate not stated.",
+  "duration": "6 weeks",
+  "name": "Youth Employment Services (YES)",
+  "org": "City of Champaign with Champaign Unit 4 School District",
+  "regions": [
+    "champaign"
+  ],
+  "city": "Champaign, IL",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Unit 4 students are placed with local employers for a six-week summer work experience. The program also supports students during the school year.",
+  "who_can_apply": "Champaign Unit 4 students ages 14 to 19.",
+  "paid_type": "paid",
+  "season": "summer",
+  "status": "unconfirmed",
+  "deadline_text": "The city page does not post 2027 dates. It says YES places students with local employers for six weeks each summer.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Apply through the Youth Employment Services page on the Champaign Unit 4 School District website (linked from the city page). That school page would not load for us, so confirm the steps with the district.",
+  "url": "https://champaignil.gov/equity-and-engagement-department/community-outreach-and-engagement-division/youth-employment-services/",
+  "sources_fetched": [
+    "https://champaignil.gov/equity-and-engagement-department/community-outreach-and-engagement-division/youth-employment-services/",
+    "https://champaignil.gov/2024/07/03/2024-summer-youth-employment-program/"
+  ],
+  "notes": "Only for students who attend Champaign Unit 4 schools. Illinois work permit rules were not checked."
+}
