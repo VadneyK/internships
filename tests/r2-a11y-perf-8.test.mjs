@@ -26,6 +26,7 @@ const QUICK_HREFS = [
   "safety.html",
   "younger.html",
   "parents.html",
+  "handout.html",
   "interview.html",
   "permit.html",
   "languages.html",

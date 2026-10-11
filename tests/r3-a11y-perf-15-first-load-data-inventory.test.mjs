@@ -24,6 +24,7 @@ export const TABLE = {
   "languages.html": { paths: ["data/languages.json"], ceiling: 200000, reason: SMALL },
   "parents.html": { paths: ["data/parents.json"], ceiling: 200000, reason: SMALL },
   "paycheck.html": { paths: ["data/money.json"], ceiling: 200000, reason: SMALL },
+  "handout.html": { paths: [], ceiling: 200000, reason: "No data needed" },
   "ready.html": { paths: ["data/transit.json"], ceiling: 200000, reason: SMALL },
   "safety.html": { paths: ["data/safety.json"], ceiling: 200000, reason: SMALL },
   "404.html": { paths: [], ceiling: 200000, reason: "No data needed" },

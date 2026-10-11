@@ -26,6 +26,7 @@ const PAGES = {
   "paycheck.html": { allowed: ["money.json"], ceiling: 15000 },
   "ready.html": { allowed: ["transit.json"], ceiling: 10000 },
   "safety.html": { allowed: ["safety.json"], ceiling: 45000 },
+  "handout.html": { allowed: [], ceiling: 0 },
   "parents.html": { allowed: ["parents.json"], ceiling: 30000 },
   "languages.html": { allowed: ["languages.json"], ceiling: 10000 },
   // jobs.html: raised from 150000 to 190000 on 2026-10-11 (employer list 66 to 96 entries) and to 215000 the same day (120 entries: BC, California, Ohio and 17 and 18 year old jobs)

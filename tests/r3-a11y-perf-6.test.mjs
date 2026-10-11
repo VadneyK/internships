@@ -21,6 +21,7 @@ const CASES = [
   { file: "younger.html", href: "ready.html", parent: "Get ready", current: "Ages 12 to 14" },
   { file: "jobs.html", href: "ready.html", parent: "Get ready", current: "Jobs that hire teens" },
   { file: "parents.html", href: "ready.html", parent: "Get ready", current: "For parents" },
+  { file: "handout.html", href: "ready.html", parent: "Get ready", current: "Handout for teachers and counselors" },
 ];
 
 // Static jsdom parse of a built page. No scripts run, which is enough for structure checks.

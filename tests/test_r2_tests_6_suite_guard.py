@@ -25,7 +25,7 @@ MJS_HELPERS = {"dom-helper.mjs", "r1-tests-1-tzworker.mjs"}
 # Round files: r<round>-<area>-<number>, with an optional short label. Areas come from docs/TESTING.md.
 ROUND_PREFIX = re.compile(r"^r[1235]-")
 ROUND_NAME = re.compile(
-    r"^r[1235]-(?:a11y-perf|accuracy|data-content|docs-ops|perf-scale|ranking-ux|teen-flow|tests)"
+    r"^r[1235]-(?:a11y-perf|accuracy|data-content|docs-ops|handout|oc|perf-scale|ranking-ux|teen-flow|tests)"
     r"-\d+(?:-[a-z0-9]+)*\.(?:test\.)?mjs$"
 )
 

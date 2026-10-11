@@ -36,6 +36,7 @@ Each page is a plain HTML file in the repo root. The source for each one is in [
 | `resume.html` | What goes on a first resume, how to turn babysitting and clubs into strong bullets, and a free builder that prints to PDF. |
 | `playbook.html` | Build your people map, write a five-line message, follow up, and turn a yes into a real opportunity. |
 | `parents.html` | Work permit forms by state, official pages in other languages, first paycheck facts and scam warnings for parents and guardians of 12 to 17 year olds. |
+| `handout.html` | One printable page for teachers and counselors: the guide address, a QR code, three steps and what the guide is not. |
 | `share.html` | Copy a link or print a QR code for the guide, each Ignition location and the main pages. |
 | `contribute.html` | Check a program, add one, fix a link or improve the site, and put the work on your resume. |
 | `about.html` | Who made the guide, how every program was checked, and how your privacy is protected. |

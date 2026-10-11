@@ -12,7 +12,7 @@
 - A map view
 - "Add to calendar" for deadlines
 - A printable one-page "next 90 days" plan generated from the saved list
-- A counselor guide: how to use the site with a class
+- A counselor guide: how to use the site with a class (started: a one page printable handout, `handout.html`, is built; a longer class guide is not)
 - More hubs: Sacramento County deep dive, Contra Costa, Santa Cruz, North Bay
 - A youth-run advisory group that reviews the site each quarter
 

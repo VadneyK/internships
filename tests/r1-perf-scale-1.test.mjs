@@ -21,7 +21,9 @@ const LIMITS = {
     "data/entries-core.json": { raw: 320000, gzip: 32000 },
   },
   liteBytesPerProgram: 1300,
-  rootPage: 32000,
+  // Raised from 32000 to 32100 on 2026-10-10 for the footer link to the teachers and counselors handout, which every page carries. ready.html is 32009 bytes.
+  // Raised from 32100 to 32300 on 2026-10-11 for the pick-your-state note on ready.html and paycheck.html and the age-based home card text. ready.html is about 32170 bytes.
+  rootPage: 32300,
   // Raised from 40000 to 46000 on 2026-10-10: lib.js grew to 41715 bytes for the live chip counts, empty-state options, top picks and the cost-tier sort. Gzipped it is about 11 KB. The other scripts are all under 40000.
   // Raised again from 46000 to 48000 on 2026-10-10 for the whole-state Where choices (the state list, its group lists and the state place lookup). lib.js is 47189 bytes.
   script: 48000,
@@ -29,7 +31,8 @@ const LIMITS = {
   // Raised again from 35000 to 36000 on 2026-10-10 for the 44 pixel tap targets (details summary, checkbox, breadcrumb) and the print rule for jump chips. The sheet is 35260 bytes.
   // Raised again from 36000 to 37000 on 2026-10-10 for the prefers-contrast block, the h1.display rule, the zero-count chip rule and the print rule for buttons. The sheet is 36345 bytes.
   // Raised from 37000 to 38000 on 2026-10-10 for the print source line, the focus rings on yellow and dark surfaces, and the expanded tile state. The sheet is 37288 bytes.
-  stylesheet: 38000,
+  // Raised again from 38000 to 38500 on 2026-10-10 for the handout page layout and its print rules. The sheet is 38283 bytes.
+  stylesheet: 38500,
 };
 
 const LITE = "data/entries-lite.json";
@@ -128,9 +131,9 @@ test("mutation: a lite file at 2,150,000 bytes is reported, and only lite is rep
 });
 
 // Mutation test for a page: one root page one byte over its limit is the only problem reported.
-test("mutation: a root page at 32,001 bytes is the only problem reported", () => {
-  const fake = { ...repoSizes, "rules.html": { bytes: 32001, gzip: 9000 } };
+test("mutation: a root page at 32,301 bytes is the only problem reported", () => {
+  const fake = { ...repoSizes, "rules.html": { bytes: 32301, gzip: 9000 } };
   assert.deepEqual(budgetProblems(fake, programCount), [
-    "rules.html is 32001 bytes, over the limit of 32000 bytes for a root page",
+    "rules.html is 32301 bytes, over the limit of 32300 bytes for a root page",
   ]);
 });

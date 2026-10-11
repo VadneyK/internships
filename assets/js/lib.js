@@ -83,7 +83,7 @@
     ["silicon-valley", "Silicon Valley and San Jose", ["silicon-valley", "san-jose", "peninsula", "fremont", "statewide"]],
     ["merced", "Merced", ["merced", "statewide"]],
     ["los-angeles", "Los Angeles", ["los-angeles", "statewide"]],
-    ["irvine", "Irvine and Orange County", ["orange-county", "statewide"]],
+    ["irvine", "Irvine, Costa Mesa and Orange County", ["orange-county", "statewide"]],
     ["pomona", "Pomona", ["los-angeles", "inland-empire", "statewide"]],
     ["riverside", "Riverside", ["inland-empire", "statewide"]],
     ["san-diego", "San Diego", ["san-diego", "statewide"]],

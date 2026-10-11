@@ -537,3 +537,18 @@ dl.facts.plain > div { border: 0; border-top: 2px solid var(--edge); border-radi
 /* Back to the list of parts: a link at the end of each long section. At least 44px tall to tap. Hidden on print through .noprint. */
 .backtop { margin: 1rem 0 0; }
 .backtop a { display: inline-flex; align-items: center; min-height: 2.75rem; }
+
+/* Handout for teachers and counselors: one US letter page */
+.handout { max-width: 46rem; }
+.handout-code { display: flex; align-items: center; gap: 1.2rem; margin: 1rem 0; flex-wrap: wrap; }
+.handout-code p { margin: 0; }
+.handout-url { font-size: 1.25rem; font-weight: 800; overflow-wrap: anywhere; }
+.handout-steps li, .handout-not li { margin-bottom: .4rem; font-size: 1.1rem; }
+.handout-foot { margin-top: 1rem; }
+@media print {
+  .handout { max-width: none; break-inside: avoid; }
+  .handout h1 { font-size: 2.6rem; }
+  .handout .lede { font-size: 1.2rem; }
+  .handout-code img { width: 2.2in; height: 2.2in; }
+  .handout-steps li, .handout-not li { font-size: 1.15rem; }
+}
