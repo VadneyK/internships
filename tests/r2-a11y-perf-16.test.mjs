@@ -28,7 +28,8 @@ const PAGES = {
   "safety.html": { allowed: ["safety.json"], ceiling: 45000 },
   "parents.html": { allowed: ["parents.json"], ceiling: 30000 },
   "languages.html": { allowed: ["languages.json"], ceiling: 10000 },
-  "jobs.html": { allowed: ["employers.json", "permits.json"], ceiling: 150000 },
+  // jobs.html: raised from 150000 to 190000 on 2026-10-11 when the employer list grew from 66 to 96 entries (state lifeguard, camp and parks jobs)
+  "jobs.html": { allowed: ["employers.json", "permits.json"], ceiling: 190000 },
   "states.html": { allowed: ["permits.json"], ceiling: 80000 },
   "playbook.html": { allowed: [], ceiling: 0 },
   "resume.html": { allowed: [], ceiling: 0 },
