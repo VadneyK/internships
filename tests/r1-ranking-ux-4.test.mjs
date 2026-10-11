@@ -137,7 +137,7 @@ test("(d) each chip's aria-label names its count and matches the visible number;
       all++;
       const n = nOf(b), label = b.getAttribute("data-label");
       assert.match(n, /^\d+$/);
-      assert.equal(b.getAttribute("aria-label"), label + ", " + n + (n === "1" ? " program" : " programs"));
+      assert.equal(b.getAttribute("aria-label"), label + " " + n + (n === "1" ? " program" : " programs"));
       assert.equal(b.classList.contains("zero"), n === "0");
       if (n === "0") zeros++;
     }

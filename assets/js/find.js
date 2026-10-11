@@ -457,7 +457,7 @@
       if (typeof n !== "number" || isNaN(n)) return;
       var span = b.querySelector(".n"), label = b.getAttribute("data-label") || "";
       if (span) span.textContent = String(n);
-      b.setAttribute("aria-label", label + ", " + n + (n === 1 ? " program" : " programs"));
+      b.setAttribute("aria-label", label + " " + n + (n === 1 ? " program" : " programs"));
       b.classList.toggle("zero", n === 0);
     });
   }
