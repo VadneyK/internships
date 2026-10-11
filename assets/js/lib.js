@@ -266,7 +266,7 @@
   var PERMIT_STATES = ["ca", "ga", "ny", "il", "wa", "tx", "mn", "wi", "in", "oh", "mi", "nc", "md", "va", "nj", "pa", "ma", "bc"];
   function permitFor(data, st, age, kind) {
     var has = Object.prototype.hasOwnProperty, s = data && data.states && has.call(data.states, st) ? data.states[st] : null;
-    if (!s) return { verdict: "nostate", headline: "We have not read your state yet", text: "We have full answers for 17 states and British Columbia, and shorter answers for 30 more states. Ask your school office or your state labor department. The US Department of Labor lists them at dol.gov/agencies/whd/contact/state-labor-offices." };
+    if (!s) return { verdict: "nostate", headline: "We have not read your state yet", text: "We have full answers for 17 states and British Columbia, and shorter answers for 34 more states. Ask your school office or your state labor department. The US Department of Labor lists them at dol.gov/agencies/whd/contact/state-labor-offices." };
     var a = +age, k = s.kinds && has.call(s.kinds, kind) ? s.kinds[kind] : null;
     if (!k || !(a >= 0)) return null;
     /* An optional per-age override: kinds.x.under = {below, permit, text} replaces the answer for ages under "below". */

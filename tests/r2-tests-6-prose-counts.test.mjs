@@ -121,9 +121,9 @@ test("the permit finder's not-read text and page descriptions give the live full
 });
 
 test("the permit count check catches a stale full or shorter count", () => {
-  const good = "We have full answers for 17 states and British Columbia, and shorter answers for 30 more states.";
+  const good = "We have full answers for 17 states and British Columbia, and shorter answers for 34 more states.";
   assert.deepEqual(permitCountGaps(good), []);
-  assert.equal(permitCountGaps(good.replace("for 30 more", "for 16 more")).length, 1);
+  assert.equal(permitCountGaps(good.replace("for 34 more", "for 16 more")).length, 1);
   assert.equal(permitCountGaps(good.replace("17 states", "16 states")).length, 1);
   assert.equal(permitCountGaps("We have read 17 states and British Columbia.").length, 1);
 });

@@ -22,8 +22,8 @@ const STATE_CODE = {
 /* Rows the lite card shows, in order, with the stored field each one must print. */
 const LITE_ROWS = [["Youngest age", "min_age"], ["Permit", "permit"], ["Hours", "hours"]];
 
-test("states-lite: 30 entries, https url, short quote, new two letter id, no dash characters", () => {
-  assert.equal(lite.states.length, 30);
+test("states-lite: 34 entries, https url, short quote, new two letter id, no dash characters", () => {
+  assert.equal(lite.states.length, 34);
   const seen = new Set();
   for (const s of lite.states) {
     assert.match(s.id, /^[a-z]{2}$/, s.id);
