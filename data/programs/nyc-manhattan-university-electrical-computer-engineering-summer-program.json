@@ -22,7 +22,7 @@
   "duration": "4 days, July 19 to 22, 2027",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "The page lists $400 before May 1 and $450 before June 1 and gives no final cutoff. The registration form could not be read by this check.",
+  "deadline_text": "The page lists $500 before May 1 and $550 before June 1 for the 2027 program. It states no registration opening or closing date, so confirm registration is open.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Step 1: fill out the Program Registration Form. Step 2: pay with the Program Payment Form. Both are needed to confirm participation. The contact is listed on the page.",
@@ -35,5 +35,5 @@
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "priority": 3,
-  "notes": "Confirm that registration is open before you plan around it. The page also lists a free Summer Engineering Awareness Program. It lasts six or ten days."
+  "notes": "Confirm that registration is open before you plan around it. Page pricing is $500 before May 1 and $550 before June 1, which does not match pay_detail; pay_detail needs a human check. The page also lists a free Summer Engineering Awareness Program. It lasts six or ten days."
 }

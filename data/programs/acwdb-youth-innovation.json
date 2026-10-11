@@ -22,12 +22,12 @@
   "pay_detail": "Not stated. The youth page mentions paid and unpaid work experience but gives no wage.",
   "season": "year-round",
   "duration": null,
-  "status": "rolling",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Ongoing",
+  "deadline_text": "The page does not state an application window or ongoing intake.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
-  "how_to_apply": "Contact a regional provider: Eden Area ROP in Hayward, (510) 293-2900, or Tri-Valley ROP in Livermore, (925) 487-4153. Main ACWDB line: (510) 259-3842.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Call the Alameda County Workforce Development Board main line at (510) 259-3842. You can also use the Contact Us link on the youth page.",
   "needs_work_permit": true,
   "url": "https://www.acwdb.org/youth/",
   "apply_url": null,
@@ -39,5 +39,5 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "Out-of-school youth ages 16 to 24 use the Future Force program instead: La Familia (Eden Area) (925) 935-2643, Ohlone College (Tri Cities) (510) 742-2323, International Rescue Committee (North Cities) (510) 857-6884. The county page names only two providers, Eden ROP (Hayward) and Tri-Valley ROP (Livermore), and says to contact the one near you."
+  "notes": "Out-of-school youth ages 16 to 24 use the Future Force program instead. The youth page says to find a local Future Force provider through its Future Force page. The youth page lists no individual provider phone numbers."
 }

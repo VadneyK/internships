@@ -45,7 +45,6 @@ ROOT_URL_ALLOW = (
     "nc-tar-heel-boys-state",
     "new-jersey-4h-youth-development",
     "new-jersey-governors-school-engineering-technology",
-    "pathful-explore",
     "pennsylvania-keystone-girls-state",
     "ryse-center-richmond",
     "san-mateo-county-jobs-for-youth",

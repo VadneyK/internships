@@ -24,14 +24,14 @@
   "who_can_apply": "Volunteers must be at least 14. You need a set schedule and must complete an application. Adults also complete a background check.",
   "paid_type": "unpaid",
   "season": "year-round",
-  "status": "rolling",
+  "status": "unconfirmed",
   "deadline_text": "No deadline stated.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Fill out a volunteer application. Sign in with the Volunteer Coordinator for each shift. Training is given.",
   "url": "https://www.orangecountync.gov/DocumentCenter/View/27203/Library-Volunteer-Positions-2024",
   "priority": 3,
-  "notes": "The county document is titled 2024, so confirm shifts and openings with the library before you go. Main branch only: 137 W. Margaret Lane, Hillsborough.",
+  "notes": "The county document is titled 2024, so confirm shifts and openings with the library before you go. Main branch only: 137 W. Margaret Lane, Hillsborough. Re-check 2026-10-10: the county PDF matches the age, schedule, application and background check terms. It says nothing about ongoing intake or a 2026 date, so the status is unconfirmed, not rolling.",
   "sources_fetched": [
     "https://www.orangecountync.gov/DocumentCenter/View/27203/Library-Volunteer-Positions-2024"
   ]

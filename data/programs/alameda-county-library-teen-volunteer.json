@@ -12,21 +12,21 @@
   "fields": [
     "education"
   ],
-  "what_you_do": "Teens can find volunteer roles at Alameda County Library branches through its Better Impact portal.",
+  "what_you_do": "The library's Volunteer with the Library page links to volunteer opportunities on its Better Impact portal. The page does not say which roles take teens.",
   "min_age": null,
   "max_age": null,
   "grades": null,
-  "who_can_apply": "Ages and requirements vary by role and are shown on the portal. Not stated on the page I read.",
+  "who_can_apply": "Not stated on the page. Ages and requirements vary by role and are shown on the portal.",
   "paid_type": "unpaid",
   "pay_detail": null,
   "season": "year-round",
   "duration": null,
-  "status": "rolling",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Ongoing.",
+  "deadline_text": "Not stated on the page.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
-  "how_to_apply": "Browse and apply on the library's Better Impact volunteer portal. Phone 510-745-1500. The application link is on the official page.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Browse and apply on the library's Better Impact volunteer portal. The link is on the page. The library phone is 510-745-1500.",
   "needs_work_permit": false,
   "url": "https://aclibrary.org/teens",
   "apply_url": null,
@@ -36,5 +36,5 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 3,
-  "notes": "The teen page is thin. Ask the Fremont Main Library which roles take teens."
+  "notes": "The teen page is thin and does not name a teen role or branch. Ask the Fremont Main Library which roles take teens."
 }

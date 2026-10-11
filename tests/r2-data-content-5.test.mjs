@@ -20,7 +20,8 @@ test("Phipps, Illinois YMCA, IMSA and NIST stay without a firm date", () => {
   for (const id of ["pittsburgh-phipps-summer-camp-teen-volunteers", "illinois-ymca-youth-and-government", "imsa-ai-credential-online", "nist-ship-gaithersburg"]) {
     const e = get(id);
     assert.equal(e.deadline_iso, null, id);
-    assert.equal(e.status, "unconfirmed", id);
+    // 2026-10-10 fact check: the IMSA cohort page lists only the September 2026 cohort, and the NIST page says applications are not open yet. Both are now closed-expect-reopen. Neither page gives a firm date, so deadline_iso must stay null.
+    assert.ok(["unconfirmed", "closed-expect-reopen"].includes(e.status), id + " status is " + e.status);
   }
   assert.match(get("illinois-ymca-youth-and-government").deadline_text, /Closed/);
   assert.match(get("imsa-ai-credential-online").deadline_text, /already started/);

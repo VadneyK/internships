@@ -33,8 +33,6 @@ IDENTICAL_WHAT_YOU_DO_ALLOW = [
         "endeavor-health-highland-park-hospital-teen-volunteer",
         "endeavor-health-skokie-hospital-teen-volunteer",
     }),
-    # MemorialCare: two hospitals share one volunteer description.
-    frozenset({"fountain-valley-memorialcare-orange-coast-volunteer", "laguna-hills-memorialcare-saddleback-volunteer"}),
     # Civil Air Patrol wings: four states share one cadet description.
     frozenset({
         "massachusetts-civil-air-patrol-cadets",

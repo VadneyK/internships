@@ -19,13 +19,13 @@
   "pay_detail": "Paid internship; the hourly rate is not stated on the page",
   "season": "year-round",
   "duration": "Up to 100 hours",
-  "status": "rolling",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "No deadline stated. The 2026-2027 application is posted.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Submit the online Work Experience Program application (2026-2027 form linked on the city page). The team contacts you for an intake. Phone (510) 412-2044.",
-  "needs_work_permit": true,
+  "needs_work_permit": null,
   "url": "https://richmondca.gov/1139/Work-Experience-Program",
   "apply_url": "https://tinyurl.com/YW-WEX-26-27",
   "sources_fetched": [
@@ -34,5 +34,5 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 1,
-  "notes": "Must live in Richmond. Ask about the hourly wage and your start date at intake."
+  "notes": "The page refers to Richmond youth but does not spell out a residency rule. Ask about the hourly wage and your start date at intake."
 }

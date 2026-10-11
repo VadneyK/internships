@@ -20,11 +20,11 @@
   "pay_detail": "Unpaid volunteer shifts",
   "season": "year-round",
   "duration": "One shift at a time. Shift length is not stated on the page.",
-  "status": "rolling",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "No deadline. Sign up for shifts on the online volunteer calendar. Group visits must be booked at least one month ahead.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Create your own account on the online volunteer calendar. It is required for safety and communication. Then register for a shift. If you do not get a confirmation email, the registration did not go through. Contact the volunteer team at volunteer@brafb.org. Group sizes are 4 to 8 people at most locations. They are up to 10 at the Verona warehouse. Everyone needs their own account.",
   "needs_work_permit": false,
   "url": "https://www.brafb.org/volunteer/",
@@ -35,5 +35,5 @@
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "priority": 3,
-  "notes": "A parent or guardian must be at every shift for ages 12 to 17, so this works best for families. The page lists the front desk as (540) 268-3663. The footer lists 540-248-3663. Confirm which number is right. The page we read names the Winchester and Verona warehouses. It does not name the Charlottesville warehouse. Confirm which age rule applies there."
+  "notes": "A parent or guardian must be at every shift for ages 12 to 17, so this works best for families. The page lists the front desk as (540) 268-3663. The footer lists 540-248-3663. Confirm which number is right. The page names the Charlottesville warehouse and offsite locations under the 12 to 17 rule with a parent or guardian at each shift, and names the Winchester warehouse as 18 and older."
 }

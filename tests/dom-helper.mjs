@@ -71,6 +71,8 @@ export async function loadPage(file, { search = "", storage = {}, rawStorage = {
   });
   await new Promise((r) => (dom.window.document.readyState === "complete" ? r() : dom.window.addEventListener("load", r)));
   await new Promise((r) => setTimeout(r, 80)); // let async init (fetch of data/entries.json) finish
+  // Some dropdowns get their options from a data file: wait (up to 2 s) until none that should have choices is still empty
+  for (let i = 0; i < 40 && [...dom.window.document.querySelectorAll("select[data-tiles]")].some((x) => x.options.length < 2); i++) await new Promise((r) => setTimeout(r, 50));
   // On a slow machine the data may still be loading: wait (up to 5 s) until the Where list of a page that has one is filled
   for (let i = 0; i < 100 && dom.window.document.getElementById("place") && dom.window.document.getElementById("place").options.length < 2; i++) await new Promise((r) => setTimeout(r, 50));
   return { dom, window: dom.window, document: dom.window.document, errors };

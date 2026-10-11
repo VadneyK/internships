@@ -14,7 +14,8 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const LIMITS = {
   data: {
     "data/entries.json": { raw: 3530000, gzip: 800000 },
-    "data/entries-lite.json": { raw: 2020000, gzip: 440000 },
+    // Raised from 2020000 to 2040000 on 2026-10-10 after the fact check: the page re-reads added about 6,000 bytes (0.3 percent) of plainer deadline_text across 266 cards, saying what the page does and does not state. No single card is the cause. Still about 1,145 bytes per program, under the per-program limit.
+    "data/entries-lite.json": { raw: 2040000, gzip: 440000 },
     "data/entries-card.json": { raw: 1025000, gzip: 146000 },
     "data/entries-core.json": { raw: 320000, gzip: 32000 },
   },
@@ -109,14 +110,14 @@ test("the whole repo is within budget", () => {
 });
 
 // Mutation test: a fake size table with entries-lite.json at 2,150,000 raw bytes must be reported.
-// The raw limit (2,020,000) is broken, and so is the per-program limit, because 2,150,000 / 1,610 is about 1,335 bytes per program (limit 1,300).
+// The raw limit (2,040,000) is broken, and so is the per-program limit, because 2,150,000 / 1,610 is about 1,335 bytes per program (limit 1,300).
 // Every other file in the fake table is inside its limit, so no other file may be reported.
 test("mutation: a lite file at 2,150,000 bytes is reported, and only lite is reported", () => {
   const big = Math.max(2150000, 1335 * programCount);
   const fake = { ...repoSizes, [LITE]: { bytes: big, gzip: repoSizes[LITE].gzip } };
   const problems = budgetProblems(fake, programCount);
   assert.deepEqual(problems, [
-    `${LITE} is ${big} bytes, over the limit of 2020000 bytes`,
+    `${LITE} is ${big} bytes, over the limit of 2040000 bytes`,
     `${LITE} is ${Math.round(big / programCount)} bytes per program (${big} bytes for ${programCount} programs), over the limit of 1300 bytes per program`,
   ]);
 });

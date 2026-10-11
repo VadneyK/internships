@@ -26,9 +26,9 @@
   "pay_detail": "Unpaid",
   "season": "year-round",
   "duration": "Ongoing; you commit to the shifts you sign up for",
-  "status": "rolling",
-  "deadline_text": "No deadline stated. Apply any time with the online form, then attend a volunteer orientation.",
-  "deadline_confidence": "rolling",
+  "status": "unconfirmed",
+  "deadline_text": "The page lists no open or close dates. Fill out the online form, then attend a volunteer orientation.",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Fill out the online volunteer application. After review you are contacted with details on signing up for a required volunteer orientation, then you pick shifts.",
   "url": "https://aadl.org/volunteer",
   "sources_fetched": [
@@ -36,5 +36,5 @@
     "https://www.michigan.gov/leo/bureaus-agencies/ber/wage-and-hour/youth-employment-standards-act-yesa"
   ],
   "priority": 1,
-  "notes": "Library does not offer court-ordered community service. Older library posts mention a summer teen volunteer program, but the current page only describes the year-round program. Michigan's youth employment page (Youth Employment Standards Act) says the law covers employers of anyone under 18 including volunteers, so ask the program whether a work permit is needed."
+  "notes": "Older library posts mention a summer teen volunteer program. The current page only describes the year-round program. Michigan's Youth Employment Standards Act covers employers of anyone under 18, including volunteers. Ask the program if you need a work permit."
 }

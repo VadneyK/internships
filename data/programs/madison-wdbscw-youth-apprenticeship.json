@@ -24,10 +24,10 @@
   "pay_detail": "Paid while working; wage not stated.",
   "season": "school-year",
   "duration": "1 or 2 years",
-  "status": "rolling",
+  "status": "unconfirmed",
   "deadline_text": "No application deadline listed. Virtual information nights (7:00 to 7:45 pm): Nov 18, 2026; Dec 16, 2026; Jan 20, 2027; Mar 17, 2027; and Feb 17, 2027 (UW Health sessions).",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Contact your school district's School to Career Coordinator (the page lists a name and phone for each district, for example Madison Metropolitan: Annie Johnston, 608-663-5384). Register for an information night on the program page.",
   "needs_work_permit": null,
   "url": "https://www.wdbscw.org/youth-apprenticeship",
@@ -36,5 +36,5 @@
     "https://www.wdbscw.org/young-adults"
   ],
   "priority": 1,
-  "notes": "One date on the page is shown as Jan 20, 2027 even though its registration link says 2026, so check it. Students interested in UW Health need the Feb 17 session. Main office 608-249-9001. Ask the coordinator whether your age needs a Wisconsin work permit."
+  "notes": "The page lists the Jan 20, 2027 information night, but its registration link address ends in Jan202026, so confirm the date with the program. Students interested in UW Health need the Feb 17 session. Main office 608-249-9001. Ask the coordinator whether your age needs a Wisconsin work permit."
 }
