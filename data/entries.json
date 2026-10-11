@@ -10178,7 +10178,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "Corrected on 2026-10-07 after reading the program's own page. The old chabotspace.org/volunteer/ link now returns 404, so the card points to the Galaxy Explorers page. This is a fee-based program ($1,500 a year tuition) unless the family qualifies for Career Access, which is based on need and census tract data. Floor shifts are 2 per month in the school year and 3 per month in summer. Whether paid Interns need a California work permit is not stated, so needs_work_permit is null.",
+  "notes": "Corrected on 2026-10-07 after reading the program's own page. The old chabotspace.org/volunteer/ link now returns 404, so the card points to the Galaxy Explorers page. This is a fee-based program ($1,500 a year tuition) unless the family qualifies for Career Access, which is based on need and census tract data. Floor shifts are 2 per month in the school year and 3 per month in summer. Whether paid Interns need a California work permit is not stated on the page, so we leave the work permit answer blank.",
   "verified_on_label": "Oct 7, 2026"
  },
  {

@@ -236,6 +236,7 @@
     }
     group("Cities", "city", L.CITIES.slice().sort(function (a, b) { return a[1] < b[1] ? -1 : 1; }));
     group("Bigger areas", "area", L.AREAS);
+    group("Whole states", "state", L.STATES.map(function (x) { return [x[0], "All of " + x[1]]; }));
     if (keep) sel.value = keep;
   };
   /* Tap tiles: turn a short <select> into big buttons. The select stays in the page (hidden) and is the source of truth,
@@ -345,6 +346,7 @@
     var groups = L.PICK_GROUPS.map(function (g) {
       var items = [];
       g[1].forEach(function (a) { if (at["area:" + a] != null) items.push(at["area:" + a]); });
+      (g[3] || []).forEach(function (a) { if (at["state:" + a] != null) items.push(at["state:" + a]); });
       g[2].forEach(function (c) { if (at["city:" + c] != null) items.push(at["city:" + c]); });
       return { label: g[0], items: items };
     });

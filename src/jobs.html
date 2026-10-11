@@ -28,9 +28,14 @@ navparent: ready
   <div class="wrap">
     <div class="field"><label for="jAge">How old are you?</label>
       <select id="jAge" data-tiles><option value="">Choose your age</option></select></div>
+    <div class="field"><label for="jState">Where do you live?</label>
+      <p class="hint" id="jStateHint">Pick your state to filter the jobs below. Anywhere shows every job.</p>
+      <select id="jState" aria-describedby="jStateHint"><option value="">Anywhere</option></select></div>
     <p class="sr" id="jStatus" role="status"></p>
+    <div id="jHours"></div>
     <div id="jChips"></div>
     <div id="jOut"><p class="muted">Tap your age to see who hires.</p></div>
+    <div id="jHelp" class="callout plain small" style="margin-top:1.4rem;"></div>
   </div>
 </section>
 

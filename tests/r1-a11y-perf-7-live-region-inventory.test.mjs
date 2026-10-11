@@ -19,7 +19,7 @@ const CONTROL_OR_LINK = "a[href], button, input, select, textarea, [contentedita
 // playbook.html: the plan summary region is #planLive.
 const EXPECTED = {
   "calendar.html": [{ id: "cCount", role: "aria-live=polite" }],
-  "find.html": [{ id: "count", role: "aria-live=polite" }],
+  "find.html": [{ id: "count", role: "aria-live=polite" }, { id: "townHelp", role: "status" }],
   "index.html": [
     { id: "matchStatus", role: "status" },
     { id: "soonStatus", role: "status" },

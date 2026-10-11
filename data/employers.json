@@ -8,7 +8,7 @@
   ],
   [
    "grocery",
-   "Grocery stores and shops"
+   "Grocery and retail"
   ],
   [
    "fun",
@@ -51,7 +51,10 @@
    "url": "https://docs.legis.wisconsin.gov/statutes/statutes/103/695/1",
    "page_title": "Wisconsin Statutes ch. 103, sections 103.67 and 103.71 (minors' employment)",
    "quote": "Minors 11 to 13 years of age may be employed as ball monitors",
-   "group": "sports"
+   "group": "sports",
+   "where": [
+    "WI"
+   ]
   },
   {
    "id": "wisconsin-golf-caddy",
@@ -64,7 +67,10 @@
    "url": "https://docs.legis.wisconsin.gov/statutes/statutes/103/695/1",
    "page_title": "Wisconsin Statutes ch. 103, sections 103.67 and 103.71 (minors' employment)",
    "quote": "Minors 12 and 13 years of age may provide caddy services.",
-   "group": "sports"
+   "group": "sports",
+   "where": [
+    "WI"
+   ]
   },
   {
    "id": "cedar-point",
@@ -78,7 +84,10 @@
    "page_title": "Cedar Point Age Requirements",
    "quote": "Many seasonal roles begin at age 16.",
    "group": "fun",
-   "caveat": "Some jobs only. Many roles start at 16."
+   "caveat": "Some jobs only. Many roles start at 16.",
+   "where": [
+    "OH"
+   ]
   },
   {
    "id": "pendleton-or-parks-summer-jobs",
@@ -92,7 +101,10 @@
    "page_title": "Summer Seasonal Positions in the Parks and Recreation Department",
    "quote": "Must be at least 14 years of age.",
    "group": "rec",
-   "caveat": "Posting is from 2025. Check for a newer posting."
+   "caveat": "Posting is from 2025. Check for a newer posting.",
+   "where": [
+    "OR"
+   ]
   },
   {
    "id": "portland-youth-conservation-crew",
@@ -105,7 +117,10 @@
    "url": "https://www.portland.gov/parks/environmental-education/youth-conservation-crew-ages-14-19",
    "page_title": "Youth Conservation Crew | Portland.gov",
    "quote": "You are between the ages of 14-18.",
-   "group": "farm"
+   "group": "farm",
+   "where": [
+    "OR"
+   ]
   },
   {
    "id": "culvers",
@@ -119,7 +134,10 @@
    "page_title": "Culver's Restaurant Careers | Local Job Opportunities & Listings",
    "quote": "team members between the ages of 14 years old and 16 years old are eligible",
    "group": "food",
-   "caveat": "Many stores, not all. Age can vary."
+   "caveat": "Many stores, not all. Age can vary.",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "evergreen-state-fair-washington",
@@ -133,7 +151,10 @@
    "page_title": "Employment, The Evergreen State Fair",
    "quote": "All positions for 14 & 15 year olds have been filled!",
    "group": "fun",
-   "caveat": "Filled for 2026 as of the page."
+   "caveat": "Filled for 2026 as of the page.",
+   "where": [
+    "WA"
+   ]
   },
   {
    "id": "falls-township-parks-summer",
@@ -146,7 +167,10 @@
    "url": "https://www.fallstwp.com/resources/news/article/?id=6758",
    "page_title": "Parks and Recreation is now hiring",
    "quote": "Front Desk Attendants for Pinewood Pool. Must be at least 14 years of age",
-   "group": "rec"
+   "group": "rec",
+   "where": [
+    "PA"
+   ]
   },
   {
    "id": "fareway",
@@ -159,7 +183,10 @@
    "url": "https://www.fareway.com/careers/faq",
    "page_title": "Career Frequently Asked Questions - Fareway",
    "quote": "you must be age 14 years and older to work in our Grocery Department",
-   "group": "grocery"
+   "group": "grocery",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "great-bear-ski-valley",
@@ -172,7 +199,10 @@
    "url": "https://greatbearpark.com/jobs",
    "page_title": "Employment, Great Bear Ski Valley",
    "quote": "Must be at least 14 years old",
-   "group": "sports"
+   "group": "sports",
+   "where": [
+    "SD"
+   ]
   },
   {
    "id": "hersheypark",
@@ -186,7 +216,10 @@
    "page_title": "Amusement Park Jobs",
    "quote": "Positions for Age 14 are currently filled.",
    "group": "fun",
-   "caveat": "Age 14 jobs are filled right now."
+   "caveat": "Age 14 jobs are filled right now.",
+   "where": [
+    "PA"
+   ]
   },
   {
    "id": "holiday-world",
@@ -199,7 +232,10 @@
    "url": "https://jobs.holidayworld.com/",
    "page_title": "Holiday World jobs",
    "quote": "Ages 14+",
-   "group": "fun"
+   "group": "fun",
+   "where": [
+    "IN"
+   ]
   },
   {
    "id": "iowa-state-fair",
@@ -213,7 +249,10 @@
    "page_title": "Nothing Compares to Working at the Iowa State Fair",
    "quote": "Limited positions are available online for 14 and 15-year-olds",
    "group": "fun",
-   "caveat": "Limited online jobs for 14 and 15."
+   "caveat": "Limited online jobs for 14 and 15.",
+   "where": [
+    "IA"
+   ]
   },
   {
    "id": "lagoon-utah-seasonal",
@@ -226,7 +265,10 @@
    "url": "https://www.lagoonpark.com/jobs/seasonal-jobs/",
    "page_title": "Seasonal Jobs, Lagoon",
    "quote": "must be at least 14 years of age or older at the time the application",
-   "group": "fun"
+   "group": "fun",
+   "where": [
+    "UT"
+   ]
   },
   {
    "id": "lower-makefield-parks-summer",
@@ -239,7 +281,10 @@
    "url": "https://www.lmt.org/departments/parks-recreation/get-involved/summer-employment",
    "page_title": "Summer Employment and Volunteering",
    "quote": "Are you 14 or 15 and Interested in being a volunteer at Summer Camp",
-   "group": "rec"
+   "group": "rec",
+   "where": [
+    "PA"
+   ]
   },
   {
    "id": "prince-william-county-parks-summer",
@@ -253,7 +298,10 @@
    "page_title": "Come Work for Prince William County Parks and Recreation this Summer!",
    "quote": "Park Attendant: (age 14+)",
    "group": "rec",
-   "caveat": "Posted February 2025. Check for a newer posting."
+   "caveat": "Posted February 2025. Check for a newer posting.",
+   "where": [
+    "VA"
+   ]
   },
   {
    "id": "publix",
@@ -267,7 +315,10 @@
    "page_title": "Career Questions We Hear the Most - Publix Jobs",
    "quote": "We hire for select positions in our stores starting at 14 years old.",
    "group": "grocery",
-   "caveat": "Select jobs only."
+   "caveat": "Select jobs only.",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "six-flags",
@@ -281,7 +332,10 @@
    "page_title": "Six Flags Great Adventure Age Requirements",
    "quote": "Many seasonal roles begin at age 16.",
    "group": "fun",
-   "caveat": "Some jobs only. Many roles start at 16."
+   "caveat": "Some jobs only. Many roles start at 16.",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "southwest-conservation-corps-youth-crews",
@@ -294,7 +348,10 @@
    "url": "https://sccorps.org/youth",
    "page_title": "Youth Conservation Crews | Southwest Conservation Corps",
    "quote": "High School students ages 14-18",
-   "group": "farm"
+   "group": "farm",
+   "where": [
+    "CO"
+   ]
   },
   {
    "id": "wausau-woodchucks",
@@ -307,7 +364,10 @@
    "url": "https://northwoodsleague.com/wausau-woodchucks/gameday-positions/",
    "page_title": "Gameday Positions, Wausau Woodchucks",
    "quote": "Must be at least 14 years old to apply.",
-   "group": "sports"
+   "group": "sports",
+   "where": [
+    "WI"
+   ]
   },
   {
    "id": "caribou-targhee-ycc",
@@ -321,7 +381,11 @@
    "page_title": "Youth Conservation Corps",
    "quote": "Teens 15-18 years old by the program start date",
    "group": "farm",
-   "caveat": "Dates are for the 2025 season. Check this year."
+   "caveat": "Dates are for the 2025 season. Check this year.",
+   "where": [
+    "ID",
+    "WY"
+   ]
   },
   {
    "id": "nps-youth-conservation-corps",
@@ -334,7 +398,10 @@
    "url": "https://www.nps.gov/subjects/youthprograms/jobs-and-internships.htm",
    "page_title": "Jobs and Internships - Youth & Young Adult Programs (U.S. National Park Service)",
    "quote": "Ages 15 through 18",
-   "group": "farm"
+   "group": "farm",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "pne-seasonal-jobs",
@@ -347,7 +414,10 @@
    "url": "https://pne.ca/jobs/seasonal-employment-information/",
    "page_title": "Seasonal Employment Information - PNE",
    "quote": "You must be at least 15 years of age or older",
-   "group": "bc"
+   "group": "bc",
+   "where": [
+    "BC"
+   ]
   },
   {
    "id": "saint-louis-zoo",
@@ -360,7 +430,10 @@
    "url": "https://stlzoo.org/employment",
    "page_title": "Employment",
    "quote": "Applicants must be at least 15 years of age to apply.",
-   "group": "fun"
+   "group": "fun",
+   "where": [
+    "MO"
+   ]
   },
   {
    "id": "fws-rappahannock-ycc",
@@ -374,7 +447,10 @@
    "page_title": "Rappahannock River Valley National Wildlife Refuge | Get Involved | U.S. Fish & Wildlife Service",
    "quote": "designed for young men and women ages 15-18",
    "group": "farm",
-   "caveat": "Page dates are from 2022. Check the current season."
+   "caveat": "Page dates are from 2022. Check the current season.",
+   "where": [
+    "VA"
+   ]
   },
   {
    "id": "usfs-youth-conservation-corps",
@@ -387,7 +463,10 @@
    "url": "https://www.fs.usda.gov/working-with-us/opportunities-for-young-people/youth-conservation-corps-opportunities",
    "page_title": "Youth Conservation Corps | US Forest Service",
    "quote": "At least age 15 at the start of the enrollment",
-   "group": "farm"
+   "group": "farm",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "wegmans",
@@ -400,7 +479,10 @@
    "url": "https://www.wegmans.com/service/faq/careers",
    "page_title": "Careers - FAQs - Wegmans",
    "quote": "The earliest age requirement for positions at Wegmans is 15 years old.",
-   "group": "grocery"
+   "group": "grocery",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "alameda-county-fair-california",
@@ -413,7 +495,10 @@
    "url": "https://annual.alamedacountyfair.com/fair-jobs/",
    "page_title": "Fair Jobs, Alameda County Fair",
    "quote": "must be at least 16 years old to work",
-   "group": "fun"
+   "group": "fun",
+   "where": [
+    "CA"
+   ]
   },
   {
    "id": "alaska-state-fair",
@@ -426,7 +511,10 @@
    "url": "https://www.alaskastatefair.org/site/fair-info/employment/",
    "page_title": "Employment, Alaska State Fair",
    "quote": "Minimum age 16",
-   "group": "fun"
+   "group": "fun",
+   "where": [
+    "AK"
+   ]
   },
   {
    "id": "aqua-tots-swim-schools",
@@ -439,7 +527,10 @@
    "url": "https://www.aqua-tots.com/employment/",
    "page_title": "Apply Today to Join the Aqua-Tots Swim Schools Team",
    "quote": "Typically, team members range from 16-99",
-   "group": "rec"
+   "group": "rec",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "arbys",
@@ -452,7 +543,10 @@
    "url": "https://careers.arbys.com/crew-member/job/B9C20710C6FB9894D8724076CC92FBB0",
    "page_title": "Crew Member | Careers at Arby's",
    "quote": "Must be at least 16 years of age.",
-   "group": "food"
+   "group": "food",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "bc-ferries-terminals",
@@ -465,7 +559,10 @@
    "url": "https://www.bcferries.com/our-company/bc-ferries-jobs/find-your-career-faq",
    "page_title": "BC Ferries Careers FAQ",
    "quote": "candidates must be a minimum of 16 years of age",
-   "group": "bc"
+   "group": "bc",
+   "where": [
+    "BC"
+   ]
   },
   {
    "id": "barnes-and-noble",
@@ -478,7 +575,10 @@
    "url": "https://help.barnesandnoble.com/hc/en-us/articles/5471918539675-Careers-and-Job-Opportunities",
    "page_title": "Careers and Job Opportunities (Barnes & Noble Help Center)",
    "quote": "You must be at least 16 years old to work at Barnes & Noble stores.",
-   "group": "grocery"
+   "group": "grocery",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "bowlero",
@@ -491,7 +591,10 @@
    "url": "https://www.bowlero.com/faqs",
    "page_title": "FAQs: Bowling, Leagues, Pricing & More",
    "quote": "Most hourly positions require applicants to be at least 16",
-   "group": "fun"
+   "group": "fun",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "bowlero-lucky-strike",
@@ -504,7 +607,10 @@
    "url": "https://www.bowlero.com/faqs",
    "page_title": "FAQs: Bowling, Leagues, Pricing & More",
    "quote": "Most hourly positions require applicants to be at least 16",
-   "group": "rec"
+   "group": "rec",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "busch-gardens-tampa",
@@ -517,7 +623,10 @@
    "url": "https://buschgardens.com/tampa/jobs/",
    "page_title": "Jobs at Busch Gardens Tampa Bay & Adventure Island",
    "quote": "At least 16 years of age",
-   "group": "fun"
+   "group": "fun",
+   "where": [
+    "FL"
+   ]
   },
   {
    "id": "busch-gardens-williamsburg",
@@ -530,7 +639,10 @@
    "url": "https://buschgardens.com/williamsburg/jobs/",
    "page_title": "Jobs at Busch Gardens Williamsburg & Water Country USA",
    "quote": "At least 16 years of age",
-   "group": "fun"
+   "group": "fun",
+   "where": [
+    "VA"
+   ]
   },
   {
    "id": "caf-primary-reserve",
@@ -543,7 +655,10 @@
    "url": "https://forces.ca/en/reserve-force/",
    "page_title": "Reserve Force - Canadian Armed Forces",
    "quote": "at least 16 or older and have completed at least Grade 10",
-   "group": "bc"
+   "group": "bc",
+   "where": [
+    "BC"
+   ]
   },
   {
    "id": "chipotle",
@@ -556,7 +671,10 @@
    "url": "https://jobs.chipotle.com/job/houston/crew-member/282/72149597584",
    "page_title": "Crew Member at CHIPOTLE",
    "quote": "Be at least 16 years old",
-   "group": "food"
+   "group": "food",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "van-meter-parks-concessions",
@@ -570,7 +688,10 @@
    "page_title": "Parks and Rec Summer 2026 Jobs, City of Van Meter",
    "quote": "Applicants must be 16 years of age",
    "group": "sports",
-   "caveat": "Season has ended. Check for next year."
+   "caveat": "Season has ended. Check for next year.",
+   "where": [
+    "IA"
+   ]
   },
   {
    "id": "dunkin",
@@ -583,7 +704,10 @@
    "url": "https://careers.dunkindonuts.com/restaurant-crew-member-age-16/job/940B1A0FC04479707BBF8DBB4DE77091",
    "page_title": "Careers at Dunkin' | Restaurant Crew Member (Age 16+)",
    "quote": "Restaurant Crew Member (Age 16+)",
-   "group": "food"
+   "group": "food",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "elitch-gardens",
@@ -596,7 +720,10 @@
    "url": "https://elitchgardens.com/jobs/",
    "page_title": "Elitch Gardens Jobs",
    "quote": "You must be at least 16+ years old to apply.",
-   "group": "fun"
+   "group": "fun",
+   "where": [
+    "CO"
+   ]
   },
   {
    "id": "fort-worth-zoo",
@@ -609,7 +736,10 @@
    "url": "https://www.fortworthzoo.org/careers",
    "page_title": "Careers",
    "quote": "Applicants must be at least 16 years old.",
-   "group": "fun"
+   "group": "fun",
+   "where": [
+    "TX"
+   ]
   },
   {
    "id": "gap-inc-old-navy",
@@ -622,7 +752,10 @@
    "url": "https://www.gapinc.com/en-us/faq",
    "page_title": "Gap Inc. FAQ",
    "quote": "You must be at least 16 years old to apply for a store job.",
-   "group": "grocery"
+   "group": "grocery",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "heb",
@@ -635,7 +768,10 @@
    "url": "https://careers.heb.com/frequently-asked-questions/",
    "page_title": "H-E-B Careers FAQ",
    "quote": "The minimum age requirement to work is 16 for Curbies, Shoppers, Baggers",
-   "group": "grocery"
+   "group": "grocery",
+   "where": [
+    "TX"
+   ]
   },
   {
    "id": "nc-state-parks-seasonal",
@@ -648,7 +784,10 @@
    "url": "https://www.ncparks.gov/state-parks/jordan-lake-state-recreation-area/jobs",
    "page_title": "Jordan Lake: Jobs | NC State Parks",
    "quote": "Age 16 and over, must be 18 with valid license",
-   "group": "farm"
+   "group": "farm",
+   "where": [
+    "NC"
+   ]
   },
   {
    "id": "papa-johns",
@@ -661,7 +800,10 @@
    "url": "https://jobs.papajohns.com/job/9688/restaurant-team-member-restaurant-team-member-us-tn-kingston-627-e-race-st/",
    "page_title": "Restaurant Team Member Job: Restaurant Team Member at Papa Johns in 627 E Race St, Kingston, TN",
    "quote": "Must be at least 16 years of age to apply.",
-   "group": "food"
+   "group": "food",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "ski-sundown",
@@ -674,7 +816,10 @@
    "url": "https://skisundown.com/contact-us/employment/",
    "page_title": "Ski Sundown Employment, Seasonal Jobs, New Hartford, CT",
    "quote": "Attendants (16+ years old)",
-   "group": "sports"
+   "group": "sports",
+   "where": [
+    "CT"
+   ]
   },
   {
    "id": "sky-zone",
@@ -687,7 +832,10 @@
    "url": "https://www.skyzone.com/pinebrook/careers/",
    "page_title": "Pine Brook Careers",
    "quote": "Ages 16 and up are welcome to apply!",
-   "group": "fun"
+   "group": "fun",
+   "where": [
+    "NJ"
+   ]
   },
   {
    "id": "sonic-drive-in",
@@ -700,7 +848,10 @@
    "url": "https://careers.sonicdrivein.com/crew-member/job/0D94BB7C50676962E4BC7C8FB7FCE352",
    "page_title": "Crew Member | Careers at SONIC",
    "quote": "The minimum age for the Crew Member position is 16.",
-   "group": "food"
+   "group": "food",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "ulta-beauty-teens",
@@ -713,7 +864,10 @@
    "url": "https://careers.ulta.com/teens",
    "page_title": "Jobs For Teenagers (Ulta Beauty Careers)",
    "quote": "If you are at least 16 years old, we invite you to apply",
-   "group": "grocery"
+   "group": "grocery",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "nebraska-athletics-concessions",
@@ -727,7 +881,10 @@
    "page_title": "Employment Opportunities, University of Nebraska Official Athletics Website",
    "quote": "Must be 16 years of age",
    "group": "sports",
-   "caveat": "Page dated 2019. Check for a newer posting."
+   "caveat": "Page dated 2019. Check for a newer posting.",
+   "where": [
+    "NE"
+   ]
   },
   {
    "id": "wendys",
@@ -740,7 +897,10 @@
    "url": "https://wendys-careers.com/job-search/posting/CREW-TEAM-MEMBER/68705/",
    "page_title": "CREW TEAM MEMBER - Wendy's Careers",
    "quote": "All employees must be at least 16 years of age",
-   "group": "food"
+   "group": "food",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "whataburger",
@@ -753,7 +913,10 @@
    "url": "https://careers.whataburger.com/us/en/job/JR10004370/Restaurant-Team-Member-Day-Shift-Unit-1370",
    "page_title": "Restaurant Team Member, Day Shift - Unit 1370 in 125 Sycamore School Rd Fort Worth TX 76134-5007 | Restaurant Team Member at Whataburger Restaurants",
    "quote": "At least 16 years old",
-   "group": "food"
+   "group": "food",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "winco-foods",
@@ -766,7 +929,10 @@
    "url": "https://careers.wincofoods.com/faqs/",
    "page_title": "FAQs - WinCo Careers",
    "quote": "We have many exciting opportunities for applicants that are 16 years or older.",
-   "group": "grocery"
+   "group": "grocery",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "ymca-central-kentucky-summer-jobs",
@@ -780,7 +946,10 @@
    "page_title": "YMCA Hosting Summer Job Fair",
    "quote": "Applicants for lifeguard positions must be at least 16-years-old",
    "group": "rec",
-   "caveat": "Page dated March 2021. Ages may be out of date."
+   "caveat": "Page dated March 2021. Ages may be out of date.",
+   "where": [
+    "KY"
+   ]
   },
   {
    "id": "ymca-of-greater-new-york",
@@ -793,7 +962,10 @@
    "url": "https://ymcanyc.org/careers/lifeguard-0/south-shore-ymca",
    "page_title": "Lifeguard, South Shore YMCA",
    "quote": "Must be at least 16 years of age or older.",
-   "group": "rec"
+   "group": "rec",
+   "where": [
+    "NY"
+   ]
   },
   {
    "id": "zumiez",
@@ -806,7 +978,10 @@
    "url": "https://www.zumiez.com/jobs/",
    "page_title": "Job Applications (Zumiez)",
    "quote": "You need to be at least 16 years old to apply for a position at",
-   "group": "grocery"
+   "group": "grocery",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "washington-state-parks-park-aide",
@@ -819,7 +994,10 @@
    "url": "https://parks.wa.gov/about-us/jobs/park-aide-information",
    "page_title": "Park Aide Information | Washington State Parks",
    "quote": "Be a minimum of 17 years of age.",
-   "group": "farm"
+   "group": "farm",
+   "where": [
+    "WA"
+   ]
   },
   {
    "id": "aldi",
@@ -832,7 +1010,10 @@
    "url": "https://careers.aldi.us/faq",
    "page_title": "Find Answers to FAQs About Jobs and Careers at ALDI Grocery Stores",
    "quote": "employees must be 18 years of age to work at ALDI",
-   "group": "grocery"
+   "group": "grocery",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "doordash-dasher",
@@ -845,7 +1026,10 @@
    "url": "https://dasher.doordash.com/en-us",
    "page_title": "Sign up to deliver with DoorDash in the U.S. | Dasher Central",
    "quote": "Dashers must be 18* years or older",
-   "group": "gig"
+   "group": "gig",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "harbor-freight-tools",
@@ -858,7 +1042,10 @@
    "url": "https://jobs.harborfreight.com/faqs/",
    "page_title": "FAQs (Harbor Freight Careers)",
    "quote": "All applicants for employment must be at least 18 years old.",
-   "group": "grocery"
+   "group": "grocery",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "instacart-shopper",
@@ -871,7 +1058,10 @@
    "url": "https://shoppers.instacart.com/",
    "page_title": "Instacart Shoppers - Get Paid to Shop",
    "quote": "You must be 18 or older to sign up.",
-   "group": "gig"
+   "group": "gig",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "lowes",
@@ -884,7 +1074,10 @@
    "url": "https://talent.lowes.com/us/en/faq",
    "page_title": "Frequently Asked Questions - Lowe's Careers",
    "quote": "you must be at least 18 years old, but it can vary by location",
-   "group": "grocery"
+   "group": "grocery",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "petsmart",
@@ -897,7 +1090,10 @@
    "url": "https://careers.petsmart.com/faq",
    "page_title": "PetSmart Careers FAQ",
    "quote": "over the age of 18 (except in Montana or where otherwise required by law)",
-   "group": "grocery"
+   "group": "grocery",
+   "where": [
+    "US"
+   ]
   },
   {
    "id": "walmart-spark-driver",
@@ -910,7 +1106,10 @@
    "url": "https://drive4spark.walmart.com/",
    "page_title": "Become a delivery driver to earn more | Spark Driver app",
    "quote": "Be age 18 or older and authorized to perform services",
-   "group": "gig"
+   "group": "gig",
+   "where": [
+    "US"
+   ]
   }
  ],
  "rules": [

@@ -209,7 +209,7 @@ test("print: on Programs, every details opens for printing and goes back afterwa
 test("print: on the playbook, every details opens for printing and goes back afterwards, keeping the open template open", async () => {
   const { window, document, errors } = await loadPage("playbook.html");
   assert.deepEqual(errors, []);
-  assert.equal(document.querySelectorAll("main details").length, 6, "playbook should have six details in main");
+  assert.equal(document.querySelectorAll("main details").length, 8, "playbook should have eight details in main (six templates plus researcher and recommendation)");
   assertPrintOpensAndRestores(window, document, "playbook");
 });
 

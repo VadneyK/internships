@@ -18,6 +18,11 @@
     var offer = document.querySelector("#offer a.btn"), soon = document.querySelector("#soon a.btn");
     var ageQ = age ? "?age=" + encodeURIComponent(age) : "";
     if (offer) offer.setAttribute("href", "permit.html" + ageQ);
+    var goals = document.querySelectorAll("#goalChips a");
+    for (var gi = 0; gi < goals.length; gi++) {
+      var gh = goals[gi].getAttribute("href").split("?")[0], gk = (goals[gi].getAttribute("href").split("?")[1] || "").replace(/&?age=\d+/, "");
+      goals[gi].setAttribute("href", gh + (gk || age ? "?" : "") + gk + (age ? (gk ? "&" : "") + "age=" + encodeURIComponent(age) : ""));
+    }
     if (soon) soon.setAttribute("href", "find.html?view=dates" + (age ? "&age=" + encodeURIComponent(age) : ""));
   }
 
@@ -41,7 +46,7 @@
       var mon = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][d.getMonth()];
       return '<li data-id="' + G.esc(e.id) + '"><div class="d">' + mon + " " + d.getDate() + "<small>" + (n <= 0 ? "today" : n + " days") + "</small></div><div><b>" + G.esc(e.name) + '</b> <span class="tag ' + (e.paid_type === "paid" || e.paid_type === "stipend" ? "y" : "ghost") + '">' + G.esc(G.PAID[e.paid_type] || "") + '</span><br><span class="small muted">' + G.esc(e.org || "") + " &middot; " + G.esc(e.city || "") + "</span>" +
         (u ? ' <br><a href="' + G.esc(u) + '" target="_blank" rel="noopener" aria-label="' + G.esc("Official page for " + e.name + (e.org ? ", " + e.org : "")) + '">Official page</a>' : "") + "</div></li>";
-    }).join("") : '<li><div class="d">Soon</div><div>No confirmed deadlines in the next few weeks. Browse everything by month.</div></li>';
+    }).join("") : '<li><div class="d">Soon</div><div>No confirmed deadlines in the next few weeks. Browse everything by month on the <a href="find.html?view=dates">Programs page</a>.</div></li>';
   }
 
   var announceNext = false; /* true only while a picker change is being handled, never on load */
@@ -124,6 +129,6 @@
     savedPrefs();
     pick();
   }).catch(function () {
-    $("soonList").innerHTML = '<li><div class="d">!</div><div>Could not load the list. Try the <a href="find.html">Programs page</a>.</div></li>';
+    $("soonList").innerHTML = '<li><div class="d">!</div><div>Could not load the list. See the closing dates on the <a href="find.html?view=dates">Programs page</a>.</div></li>';
   });
 })();

@@ -10,6 +10,7 @@ import { loadPage } from "./dom-helper.mjs";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const size = (f) => fs.statSync(path.join(ROOT, "data", f)).size;
 
+// Raised on 2026-10-10 for jobs (the state filter reads permits.json, 79 KB) and younger (new near-home rows).
 // The Home picker also fetches up to four data/programs/<id>.json files (about 2 KB each) after a pick; those are not in this list and are budgeted in r3-a11y-perf-2-home-four-files.test.mjs.
 // page -> { allowed: data files it may request, ceiling: max total bytes of the files it actually requested }
 // Ceilings are the sum of the allowed files rounded up, so a swap to a bigger file fails.
@@ -19,7 +20,7 @@ const PAGES = {
   "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2030000 },
   "calendar.html": { allowed: ["calendar.json", "entries-card.json"], ceiling: 1040000 },
   "insights.html": { allowed: ["entries-stats.json"], ceiling: 530000 },
-  "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 335000 },
+  "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 336000 },
   "interview.html": { allowed: ["interview.json", "permits.json"], ceiling: 95000 },
   "permit.html": { allowed: ["permits.json"], ceiling: 80000 },
   "paycheck.html": { allowed: ["money.json"], ceiling: 15000 },
@@ -27,7 +28,7 @@ const PAGES = {
   "safety.html": { allowed: ["safety.json"], ceiling: 45000 },
   "parents.html": { allowed: ["parents.json"], ceiling: 30000 },
   "languages.html": { allowed: ["languages.json"], ceiling: 10000 },
-  "jobs.html": { allowed: ["employers.json"], ceiling: 70000 },
+  "jobs.html": { allowed: ["employers.json", "permits.json"], ceiling: 150000 },
   "states.html": { allowed: ["permits.json"], ceiling: 80000 },
   "playbook.html": { allowed: [], ceiling: 0 },
   "resume.html": { allowed: [], ceiling: 0 },

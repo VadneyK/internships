@@ -28,6 +28,15 @@
     if (st === "closed-expect-reopen") return '<span class="tag ghost">Closed, check back</span>';
     return '<span class="tag ghost">Dates unconfirmed</span>';
   }
+  /* A badge for an open program whose deadline is 0 to 14 days away. Same day counting as the dates line (daysUntil). */
+  function closesSoonTag(e) {
+    var d = futureDeadline(e);
+    if (!d || L.effStatus(e, now()) !== "open-now") return "";
+    var n = G.daysUntil(d, now());
+    if (n < 0 || n > 14) return "";
+    var words = n === 0 ? "Closes today" : n === 1 ? "Closes tomorrow" : "Closes in " + n + " days";
+    return '<span class="tag warn">' + words + "</span>";
+  }
   function deadlineLine(e) {
     var d = futureDeadline(e), extra = "";
     if (d) {
@@ -90,7 +99,7 @@
       : '<span class="tag warn">Confirm first</span>';
     var hubs = (e.regions || []).map(function (r) { var f = G.REGIONS.filter(function (x) { return x[0] === r; })[0]; return f ? f[1] : ""; }).filter(Boolean);
     var html = '<article class="card prog" tabindex="-1" id="p-' + G.esc(e.id) + '" aria-labelledby="p-' + G.esc(e.id) + '-h">';
-    html += '<div class="row">' + statusTag(e) + paidTag(e) + '<span class="tag ghost">' + G.esc(G.TYPES[e.type] || e.type) + "</span></div>";
+    html += '<div class="row">' + statusTag(e) + closesSoonTag(e) + paidTag(e) + '<span class="tag ghost">' + G.esc(G.TYPES[e.type] || e.type) + "</span></div>";
     html += '<h3 id="p-' + G.esc(e.id) + '-h">' + G.esc(e.name) + "</h3>";
     html += '<p class="org">' + G.esc(e.org || "") + (e.city ? " &middot; " + G.esc(e.city) : "") + "</p>";
     html += '<p class="what">' + G.esc(e.what_you_do || "") + "</p>";
@@ -168,6 +177,34 @@
     }).join("") + "</ul>";
   }
 
+  /* The state-level place for a city or area: the one place whose region the city covers. "" when there is none or the place is already a state. */
+  function stateOfPlace(place) {
+    if (!place || place.indexOf("state:") === 0) return "";
+    var rs = L.placeRegions(place) || [], hit = L.STATES.filter(function (x) { return rs.indexOf(x[2]) > -1; });
+    return hit.length === 1 ? "state:" + hit[0][0] : "";
+  }
+  /* Help card above the results when a Where choice finds fewer than 5 programs. The button adds the state (from a city) and online and national programs. */
+  var HELP_FEW = 5;
+  function paintTownHelp(realN) {
+    var box = $("townHelp"); if (!box) return;
+    if (!state.place || realN >= HELP_FEW || state.saved) { box.hidden = true; box.innerHTML = ""; return; }
+    var st = stateOfPlace(state.place), done = state.moreOnline && !st;
+    box.hidden = false;
+    box.innerHTML = "<h2 style=\"font-size:1.1rem;\">Not many programs near you?</h2>" +
+      "<p><b>Ask your school counselor:</b> do we have a list of local jobs or job training for students? Some schools call it career tech or work-based learning.</p>" +
+      (done ? "<p>Online and national programs are included in the list below.</p>"
+        : '<p><button class="btn alt sm" type="button" id="townMore">See statewide and online programs</button></p>') +
+      '<p class="small muted">Know a program that should be here? <a href="contribute.html">Help add it.</a></p>';
+    var b = $("townMore");
+    if (b) b.onclick = function () {
+      var next = stateOfPlace(state.place);
+      state.moreOnline = true;
+      if (next) { state.place = next; state.hubs = []; }
+      savePrefs(); hidePrefNote(); syncChips(); render(true);
+      var r = $("results"); if (r) r.focus();
+    };
+  }
+
   function paintPlaceNote(realN) {
     var box = $("placeNote"); if (!box) return;
     if (!state.place) { box.hidden = true; box.innerHTML = ""; return; }
@@ -179,6 +216,8 @@
       : realN < 3
         ? "<b>Only " + realN + " program" + (realN === 1 ? "" : "s") + " found in " + name + " so far,</b> so online and national programs are included too. <a href=\"contribute.html\">Know another? Help add it.</a>"
         : "Showing programs in <b>" + name + "</b>." + caNote;
+    /* The online and national choice from the help card: a removable chip, so the hidden filter can always be undone. */
+    if (state.moreOnline) box.innerHTML += ' <button class="chip noprint" type="button" data-online-off="1">Online and national included (remove)</button>';
   }
 
   /* "Good fit for you": the best three for the chosen age and area only. Other filters and the search do not change it. */
@@ -231,7 +270,7 @@
     else if (key === "age" || key === "when" || key === "season") { state[key] = ""; $(key).value = ""; if (key === "age") { savePrefs(); hidePrefNote(); } }
     else if (key === "paid" || key === "types" || key === "fields" || key === "hubs") state[key] = [];
     else if (key === "verified" || key === "noPermit") state[key] = false;
-    else if (key === "place") { state.place = ""; savePrefs(); hidePrefNote(); }
+    else if (key === "place") { state.place = ""; state.moreOnline = false; savePrefs(); hidePrefNote(); }
     syncChips(); render(true); focusFirst();
   }
   function focusFirst() {
@@ -275,7 +314,7 @@
   var cache = null;
   function listCacheKey(sv, t) {
     return JSON.stringify([state.q, state.hubs, state.place, state.age, state.when, state.season, state.paid, state.types, state.fields,
-      state.verified, state.noPermit, state.sort, state.saved, state.saved ? sv : null, new Date(t).toDateString(), state.q ? detailMode() : ""]);
+      state.verified, state.noPermit, state.moreOnline, state.sort, state.saved, state.saved ? sv : null, new Date(t).toDateString(), state.q ? detailMode() : ""]);
   }
   /* sv is the saved ids, read once by the caller */
   function currentList(sv) {
@@ -284,7 +323,7 @@
     state.savedIds = sv; state.placeOnline = false;
     function keep(e) { return L.matches(e, state, t); }
     var found = all.filter(keep), realN = found.length;
-    if (state.place && realN < 3) { state.placeOnline = true; found = all.filter(keep); }
+    if (state.place && (realN < 3 || state.moreOnline)) { state.placeOnline = true; found = all.filter(keep); }
     cache = { key: key, list: L.sortList(found, state.sort, t, { age: state.age }), realN: realN, placeOnline: state.placeOnline, idKey: null };
     return cache;
   }
@@ -321,6 +360,7 @@
     var sv = savedIds(), cur = currentList(sv), list = cur.list, realN = cur.realN;
     lastKey = listKey(cur);
     paintPlaceNote(realN);
+    paintTownHelp(realN);
     $("count").textContent = list.length + " of " + all.length + " programs";
     paintPrintCut(list);
     paintSortNote();
@@ -541,7 +581,7 @@
     G.fillPlaces($("place"), all);
     G.placeTiles($("place"));
     ["age", "when", "season"].forEach(function (id) { G.tilePicker($(id), { anyLabel: $(id).options[0].textContent }); });
-    $("place").addEventListener("change", function (e) { state.place = e.target.value; if (state.place) state.hubs = []; savePrefs(); hidePrefNote(); syncChips(); render(true); });
+    $("place").addEventListener("change", function (e) { state.place = e.target.value; state.moreOnline = false; if (state.place) state.hubs = []; savePrefs(); hidePrefNote(); syncChips(); render(true); });
     chipGroup("paidChips", PAID_GROUPS.map(function (g) { return [g[0], g[1]]; }), "paid");
     var tc = {}; all.forEach(function (e) { tc[e.type] = (tc[e.type] || 0) + 1; });
     chipGroup("typeChips", Object.keys(G.TYPES).filter(function (k) { return tc[k]; }).map(function (k) { return [k, G.TYPES[k], tc[k]]; }), "types");
@@ -579,6 +619,7 @@
   document.addEventListener("click", function (ev) {
     var rx = ev.target.closest("[data-relax]");
     if (rx) { clearOne(rx.getAttribute("data-relax")); return; }
+    if (ev.target.closest("[data-online-off]")) { state.moreOnline = false; syncChips(); render(true); var rs = $("results"); if (rs) rs.focus(); return; }
     if (ev.target.closest("[data-relax-saved]")) { resetFilters(true); focusFirst(); return; }
     var cal = ev.target.closest("[data-cal]");
     if (cal) {

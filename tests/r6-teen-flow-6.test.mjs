@@ -44,7 +44,7 @@ test("r6-teen-flow-6: the paragraph links to paycheck.html and permit.html, with
 test("r6-teen-flow-6: the built ready.html contains the same paragraph as src/ready.html", () => {
   const src = readFileSync(join(ROOT, "src", "ready.html"), "utf8");
   const built = readFileSync(join(ROOT, "ready.html"), "utf8");
-  const line = src.split("\n").find((l) => l.includes("Not in California? The cards below are for California only."));
+  const line = src.split("\n").find((l) => l.includes("Not in California? The bank card is for every state. The other cards mostly cover California."));
   assert.ok(line, "src should hold the Not in California paragraph");
   assert.ok(built.includes(line.trim()), "built ready.html should contain the same paragraph");
 });

@@ -137,13 +137,33 @@
     ["Northeast", ["northeast"], ["new-york-city", "new-brunswick", "philadelphia", "pittsburgh", "boston"]],
     ["South and DC area", ["southeast", "dc-area"], ["atlanta", "raleigh-chapel-hill", "charlottesville", "blacksburg", "college-park", "fairfax"]]
   ];
+  /* Whole-state choices for the Where picker, for a teen with no city to pick. [id, label, region id]. A state place covers that state-level region
+     (plus online and national programs when few match, the same as a city). Every state is in exactly one PICK_GROUPS group. */
+  var STATES = [
+    ["california", "California", "statewide"],
+    ["washington", "Washington State", "washington"], ["british-columbia", "British Columbia", "british-columbia"],
+    ["texas", "Texas", "texas"],
+    ["minnesota", "Minnesota", "minnesota"], ["illinois", "Illinois", "illinois"], ["wisconsin", "Wisconsin", "wisconsin"],
+    ["indiana", "Indiana", "indiana"], ["ohio", "Ohio", "ohio"], ["michigan", "Michigan", "michigan"],
+    ["new-york-state", "New York State", "new-york-state"], ["new-jersey", "New Jersey", "new-jersey"],
+    ["pennsylvania", "Pennsylvania", "pennsylvania"], ["massachusetts", "Massachusetts", "massachusetts"],
+    ["georgia", "Georgia", "georgia"], ["north-carolina", "North Carolina", "north-carolina"],
+    ["virginia", "Virginia", "virginia"], ["maryland", "Maryland", "maryland"]
+  ];
+  PICK_GROUPS[0].push(["california"]);
+  PICK_GROUPS[1].push(["washington", "british-columbia"]);
+  PICK_GROUPS[2].push(["texas"]);
+  PICK_GROUPS[3].push(["minnesota", "illinois", "wisconsin", "indiana", "ohio", "michigan"]);
+  PICK_GROUPS[4].push(["new-york-state", "new-jersey", "pennsylvania", "massachusetts"]);
+  PICK_GROUPS[5].push(["georgia", "north-carolina", "virginia", "maryland"]);
   var _placeCache = {};
-  /* "city:boston" or "area:midwest" to the region ids it covers, or null if unknown */
+  /* "city:boston", "area:midwest" or "state:ohio" to the region ids it covers, or null if unknown */
   function placeRegions(place) {
     if (_placeCache[place]) return _placeCache[place];
-    var m = /^(city|area):(.+)$/.exec(place || ""), out = null;
+    var m = /^(city|area|state):(.+)$/.exec(place || ""), out = null;
     function city(id) { for (var i = 0; i < CITIES.length; i++) if (CITIES[i][0] === id) return CITIES[i]; return null; }
     if (m && m[1] === "city" && city(m[2])) out = CITIES[CITIES.indexOf(city(m[2]))][2].slice();
+    if (m && m[1] === "state") for (var q = 0; q < STATES.length; q++) if (STATES[q][0] === m[2]) out = [STATES[q][2]];
     if (m && m[1] === "area") {
       for (var a = 0; a < AREAS.length; a++) if (AREAS[a][0] === m[2]) {
         out = []; AREAS[a][2].forEach(function (cid) { var c = city(cid); if (c) c[2].forEach(function (r) { if (out.indexOf(r) < 0) out.push(r); }); });
@@ -153,8 +173,8 @@
     return out;
   }
   function placeLabel(place) {
-    var m = /^(city|area):(.+)$/.exec(place || ""); if (!m) return "";
-    var list = m[1] === "city" ? CITIES : AREAS;
+    var m = /^(city|area|state):(.+)$/.exec(place || ""); if (!m) return "";
+    var list = m[1] === "city" ? CITIES : m[1] === "state" ? STATES : AREAS;
     for (var i = 0; i < list.length; i++) if (list[i][0] === m[2]) return list[i][1];
     return "";
   }
@@ -399,6 +419,7 @@
     var keys = [], regs = [], counts = {}, i, j, k;
     CITIES.forEach(function (c) { keys.push("city:" + c[0]); });
     AREAS.forEach(function (a) { keys.push("area:" + a[0]); });
+    STATES.forEach(function (a) { keys.push("state:" + a[0]); });
     for (i = 0; i < keys.length; i++) { regs.push(placeRegions(keys[i]) || null); counts[keys[i]] = 0; }
     for (j = 0; j < entries.length; j++) {
       var rs = entries[j].regions || [];
@@ -727,7 +748,7 @@
     effStatus: effStatus, futureDeadline: futureDeadline, knownDeadline: knownDeadline, isOpenish: isOpenish, isAnytime: isAnytime, ageOk: ageOk,
     matches: matches, facetCounts: facetCounts, relaxOptions: relaxOptions, placeCounts: placeCounts, rank: rank, compare: compare, sortList: sortList, topPicks: topPicks, ageText: ageText,
     STATUSES: STATUSES, toISO: toISO, addDays: addDays, followUpISO: followUpISO, planSummary: planSummary,
-    icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf, stateFromPlace: stateFromPlace, STATE_OF: STATE_OF, permitFor: permitFor, hoursCheck: hoursCheck, paycheck: paycheck, PERMIT_STATES: PERMIT_STATES, CITIES: CITIES, AREAS: AREAS, PICK_GROUPS: PICK_GROUPS, placeRegions: placeRegions, placeLabel: placeLabel, hubsOfPlace: hubsOfPlace,
+    icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf, stateFromPlace: stateFromPlace, STATE_OF: STATE_OF, permitFor: permitFor, hoursCheck: hoursCheck, paycheck: paycheck, PERMIT_STATES: PERMIT_STATES, CITIES: CITIES, AREAS: AREAS, PICK_GROUPS: PICK_GROUPS, STATES: STATES, placeRegions: placeRegions, placeLabel: placeLabel, hubsOfPlace: hubsOfPlace,
     gradePhrase: gradePhrase, blanksLeft: blanksLeft, linkContacts: linkContacts
   };
   return api;

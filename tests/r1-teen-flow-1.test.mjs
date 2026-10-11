@@ -14,22 +14,22 @@ async function loadHome() {
   return page;
 }
 
-test("r1-teen-flow-1: main sections run hero, start, soon, secret, moves, offer, young", async () => {
+test("r1-teen-flow-1: main sections run hero, job-now, start, soon, secret, moves, offer, young", async () => {
   const { document, errors } = await loadHome();
 
   const main = document.querySelector("main");
   assert.ok(main, "page has a main element");
   const order = [...main.querySelectorAll(":scope > section")].map((s) => s.id || "(hero)");
-  assert.deepEqual(order, ["(hero)", "start", "soon", "secret", "moves", "offer", "young"]);
+  assert.deepEqual(order, ["(hero)", "job-now", "start", "soon", "secret", "moves", "offer", "young"]);
   assert.deepEqual(errors, [], "no script errors on the page");
 });
 
-test("r1-teen-flow-1: the age picker section is the second section, right under the hero", async () => {
+test("r1-teen-flow-1: the age picker section is the third section, right under the paying-job card", async () => {
   const { document, errors } = await loadHome();
 
   const main = document.querySelector("main");
-  const second = main.querySelectorAll(":scope > section")[1];
-  assert.equal(second.id, "start", "#start is the second section");
+  const second = main.querySelectorAll(":scope > section")[2];
+  assert.equal(second.id, "start", "#start is the third section");
   assert.ok(second.querySelector("#pAge"), "the age picker sits inside #start");
   assert.deepEqual(errors, [], "no script errors on the page");
 });

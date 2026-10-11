@@ -17,7 +17,6 @@ const CEILING = 200;
 // Pages whose description is over CEILING, with the length measured today. Shorten the text, then lower
 // or remove the entry here. Do not raise a number.
 const KNOWN_LONG = {
-  "calendar.html": 220,
   "index.html": 223,
   "interview.html": 234,
   "jobs.html": 279,

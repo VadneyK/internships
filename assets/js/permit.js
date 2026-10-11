@@ -93,9 +93,23 @@
     var h = '<article class="card verdict ' + r.verdict + '"><span class="tag ' + cls + '">' + G.esc(r.verdict === "need" ? "You need one" : r.verdict === "none" || r.verdict === "adult" ? "No permit" : r.verdict === "young" ? "Too young for this" : "Check first") + "</span>";
     /* Only when a message or checklist exists (need or ask): a short jump to the Get it done section. */
     if (r.verdict === "need" || r.verdict === "ask") h += '<p class="small"><a href="#packetSec">Jump to: send a message to your school or print your checklist</a></p>';
-    h += "<h2>" + G.esc(r.headline) + "</h2><p>" + G.esc(r.text) + "</p>";
+    var ny = st === "ny", wp = "working papers (permit)";
+    var headline = r.headline;
+    if (ny && r.verdict === "need") headline = "You need " + wp;
+    if (ny && r.verdict === "young") headline = "Working papers (permit) start at 14";
+    /* Plain top line when no permit is needed at this age because the age cut-off has passed (for example Illinois at 16 or 17). */
+    var pastCutoff = r.verdict === "none" && s.kinds[r.kind] && s.kinds[r.kind].permit === true && r.age >= s.needBelow;
+    if (pastCutoff) h += '<p id="pNoPermitLine"><b>You do not need a work permit here at this age. Your employer may still ask for proof of age.</b></p>';
+    h += "<h2>" + G.esc(headline) + "</h2><p>" + G.esc(r.text) + "</p>";
+    if (pastCutoff) {
+      h += '<details id="pUnder"><summary>If you were under ' + G.esc(String(s.needBelow)) + "</summary><h3>Who gives it to you</h3><p>" + G.esc(s.issuer) + "</p><h3>What to do, in order</h3>" + list(s.steps) + "<h3>What to bring</h3><ul>" + s.bring.map(function (b) { return "<li>" + G.esc(b) + "</li>"; }).join("") + "</ul></details>";
+    }
+    if (ny && r.verdict === "young") {
+      h += '<p><b>Working papers (permit) start at 14 for almost any job in New York.</b> At 12 and 13, see what you can do instead with the button below.</p>';
+      h += "<p><b>Who to call:</b> " + L.linkContacts(s.call) + "</p>";
+    }
     if (r.verdict === "need") {
-      h += "<h3>Who gives it to you</h3><p>" + G.esc(s.issuer) + "</p>";
+      h += "<h3>" + (ny ? "Who gives you working papers (permit)" : "Who gives it to you") + "</h3><p>" + G.esc(s.issuer) + "</p>";
       h += "<h3>What to do, in order</h3>" + list(s.steps);
       h += "<h3>What to bring</h3><ul>" + s.bring.map(function (b) { return "<li>" + G.esc(b) + "</li>"; }).join("") + "</ul>";
       h += "<p><b>How long it takes:</b> " + G.esc(s.timing) + "</p><p><b>Keep it current:</b> " + G.esc(s.renew) + "</p>";

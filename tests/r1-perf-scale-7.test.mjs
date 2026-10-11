@@ -69,9 +69,9 @@ test("3: filtering with a text query is at least 3 times faster than the old way
   assert.ok(oldT / newT >= 3, "old " + oldT + "ns, new " + newT + "ns, ratio " + (oldT / newT).toFixed(1));
 });
 
-test("4: placeCounts equals the old per-place matches loop for all 46 keys", () => {
-  const keys = L.CITIES.map((c) => "city:" + c[0]).concat(L.AREAS.map((a) => "area:" + a[0]));
-  assert.equal(keys.length, 46);
+test("4: placeCounts equals the old per-place matches loop for every city, area and state key", () => {
+  const keys = L.CITIES.map((c) => "city:" + c[0]).concat(L.AREAS.map((a) => "area:" + a[0]), L.STATES.map((a) => "state:" + a[0]));
+  assert.equal(keys.length, 46 + L.STATES.length);
   const counts = L.placeCounts(ENTRIES);
   assert.deepEqual(Object.keys(counts).sort(), keys.slice().sort());
   for (const k of keys) {
@@ -107,12 +107,13 @@ test("5: fillPlaces makes no matches calls and writes the same labels", async ()
   const want = [];
   sorted.forEach((x) => want.push("city:" + x[0] + "=" + x[1] + (count("city:" + x[0]) ? " (" + count("city:" + x[0]) + ")" : " (none yet)")));
   L.AREAS.forEach((x) => want.push("area:" + x[0] + "=" + x[1] + (count("area:" + x[0]) ? " (" + count("area:" + x[0]) + ")" : " (none yet)")));
+  L.STATES.forEach((x) => want.push("state:" + x[0] + "=All of " + x[1] + (count("state:" + x[0]) ? " (" + count("state:" + x[0]) + ")" : " (none yet)")));
   assert.deepEqual(got, want);
   // an empty list gives "(none yet)" on every option
   const empty = document.createElement("select");
   window.TIG.fillPlaces(empty, []);
   assert.ok([...empty.querySelectorAll("option")].every((o) => /\(none yet\)$/.test(o.textContent)));
-  assert.equal(empty.querySelectorAll("option").length, 46);
+  assert.equal(empty.querySelectorAll("option").length, 46 + L.STATES.length);
 });
 
 // the old place check, copied from before this change

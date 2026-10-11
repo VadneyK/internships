@@ -5,7 +5,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import { loadPage, tick } from "./dom-helper.mjs";
 
-const NOTE = "Some of these months come from the last cycle. Check the program's own page for this year.";
+const NOTE = "Some of these months come from the last application round. Check the program's own page for this year.";
 const LONG_DASHES = /[\u2013\u2014]/;
 
 test("calendar cycle note: sits right under the Applications open heading and is visible in a busy month", async () => {
@@ -28,8 +28,8 @@ test("calendar cycle note: the note says the same thing as the page description"
   const p = await loadPage("calendar.html", { search: "?m=2" });
   await tick(200);
   const desc = p.document.querySelector('meta[name="description"]').getAttribute("content");
-  assert.match(desc, /mostly describe the last cycle/);
-  assert.match(p.document.getElementById("cOpenNote").textContent, /last cycle/);
+  assert.match(desc, /mostly describe the last application round/);
+  assert.match(p.document.getElementById("cOpenNote").textContent, /last application round/);
 });
 
 test("calendar cycle note: the source template and built page both carry the note, with no long dashes", () => {

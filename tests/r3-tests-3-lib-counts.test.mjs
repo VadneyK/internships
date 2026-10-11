@@ -31,7 +31,7 @@ const some = (arr, max) => {
   return out;
 };
 const WORDS = ["", "", "", "art", "paid", "camp", "science", "library", "intern", "summer", "volunteer", "city", "zzzz", "health"];
-const places = [...L.CITIES.map((c) => "city:" + c[0]), ...L.AREAS.map((a) => "area:" + a[0])];
+const places = [...L.CITIES.map((c) => "city:" + c[0]), ...L.AREAS.map((a) => "area:" + a[0]), ...L.STATES.map((a) => "state:" + a[0])];
 const typeIds = Object.keys(L.TYPES), fieldIds = Object.keys(L.FIELDS).filter((k) => k !== "any");
 const hubIds = L.HUBS.map((h) => h[0]), paidIds = L.PAID_GROUPS.map((g) => g[0]);
 

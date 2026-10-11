@@ -72,6 +72,11 @@
       if (st && st.textContent !== msg) st.textContent = msg;
     });
     $("conflicts").innerHTML = li(d.conflicts);
+    /* Near-home work: each line names a federal rule and links its source from data/younger.json. */
+    $("nearH").textContent = d.near.title;
+    $("nearNote").textContent = d.near.note;
+    $("nearL").innerHTML = d.near.items.map(function (x) { return "<li>" + G.esc(x.t) + " Source: " + a(x.s.t, x.s.u) + ".</li>"; }).join("");
+    $("nearScript").textContent = d.near.script;
     $("train").innerHTML = d.train.map(function (t) { return "<li><b>" + G.esc(t.t) + ".</b> " + G.esc(t.d) + " " + a("Official page", t.u) + "</li>"; }).join("");
     $("before").innerHTML = li(d.before); $("beforeSrc").innerHTML = "From " + a(d.beforeSource.t, d.beforeSource.u) + ".";
     $("strangers").innerHTML = li(d.strangers); $("strangersNote").innerHTML = G.esc(d.strangersNote) + " " + a(d.strangersSource.t, d.strangersSource.u) + ".";

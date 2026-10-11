@@ -29,8 +29,16 @@ function checkCard(card, now) {
   if (!e) return [id + ": id not in data/entries.json"];
   const bad = (m) => fails.push(id + ": " + m);
 
-  const tags = [...card.querySelector(".row").querySelectorAll(".tag")].map((t) => norm(t.textContent));
+  // The Closes in N days badge (p5-badge-1) sits in the same row. Check it on its own, then leave it out of the status and pay checks.
+  const rowTags = [...card.querySelector(".row").querySelectorAll(".tag")].map((t) => norm(t.textContent));
+  const badges = rowTags.filter((t) => /^Closes /.test(t));
+  const tags = rowTags.filter((t) => !/^Closes /.test(t));
   const st = L.effStatus(e, now);
+  const dueFut = L.futureDeadline(e, now);
+  const dueDays = dueFut ? L.daysUntil(dueFut, now) : null;
+  const wantBadge = st === "open-now" && dueDays !== null && dueDays >= 0 && dueDays <= 14
+    ? (dueDays === 0 ? "Closes today" : dueDays === 1 ? "Closes tomorrow" : "Closes in " + dueDays + " days") : null;
+  if (badges.length > 1 || (badges[0] || null) !== wantBadge) bad("closing badge " + JSON.stringify(badges) + " wants " + JSON.stringify(wantBadge));
   const want = STATUS_LABEL[st] || UNCONFIRMED;
   if (tags[0] !== want) bad("status tag " + JSON.stringify(tags[0]) + " but effStatus " + st + " wants " + JSON.stringify(want));
   const payWant = L.PAID[e.paid_type];

@@ -21,8 +21,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=3b450878">
-<link rel="stylesheet" href="assets/css/style.css?v=3b450878">
+<link rel="stylesheet" href="assets/css/fonts.css?v=855e413e">
+<link rel="stylesheet" href="assets/css/style.css?v=855e413e">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -78,6 +78,21 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </section>
 
+<section id="job-now">
+  <div class="wrap">
+    <div class="card">
+      <span class="tag y eyebrow">Want money now?</span>
+      <h2 style="margin-top:.5rem;">I want a paying job now</h2>
+      <p>Three steps. Do them in order.</p>
+      <ol class="small" style="list-style:none;padding:0;margin:0;display:grid;gap:.8rem;">
+        <li><b>Step 1.</b> Find out if you need a work permit.<br><a class="btn" href="permit.html">See if I need a work permit</a></li>
+        <li><b>Step 2.</b> See which jobs hire people your age.<br><a class="btn" href="jobs.html">See who hires at my age</a></li>
+        <li><b>Step 3.</b> Ask a grown-up you know to tell the boss about you.<br><a class="btn" href="playbook.html">Ask someone I know to tell the boss about me</a></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
 <section id="start">
   <div class="wrap">
     <span class="tag eyebrow">Start here</span>
@@ -92,6 +107,14 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
           <select id="pField" data-tiles data-tiles-any="Anything"><option value="">Anything</option></select></div>
       </div>
     </form>
+    <nav class="chips" id="goalChips" aria-label="Pick a goal" style="margin-top:1rem;">
+      <span class="small muted" style="align-self:center;">Or pick a goal:</span>
+      <a class="chip" style="text-decoration:none;" href="jobs.html">A first job</a>
+      <a class="chip" style="text-decoration:none;" href="find.html?kind=research">Research</a>
+      <a class="chip" style="text-decoration:none;" href="find.html?kind=pre-college">College credit (pre-college)</a>
+      <a class="chip" style="text-decoration:none;" href="find.html?kind=volunteer">Volunteer</a>
+    </nav>
+    <p id="hubHelp" class="small muted" style="margin-top:.7rem;">Town not listed? Pick the biggest city near you, or the Programs page for your state.</p>
     <p id="matchStatus" class="sr" role="status"></p>
     <div id="matches" class="results" style="margin-top:1.2rem;"></div>
     <p id="matchMore" style="margin-top:1rem;" hidden></p>
@@ -104,7 +127,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <h2>Closing <span class="orange">soon</span></h2>
     <p id="soonNote" class="small muted" hidden></p>
     <p id="soonStatus" class="sr" role="status"></p>
-    <ul class="tl" id="soonList"><li><div class="d">...</div><div>Loading</div></li></ul>
+    <ul class="tl" id="soonList"><li><div class="d">Soon</div><div>The list of closing dates needs JavaScript. See every deadline on the <a href="find.html?view=dates">Programs page</a>.</div></li></ul>
     <p style="margin-top:1rem;"><a class="btn alt sm" href="find.html?view=dates">See every deadline by month</a></p>
   </div>
 </section>
@@ -177,6 +200,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <a class="chip" style="text-decoration:none;" href="paycheck.html">See your first paycheck</a>
       <a class="chip" style="text-decoration:none;" href="safety.html">Safe at work</a>
     </nav>
+    <p class="small" style="margin-top:1rem;"><a href="languages.html?lang=es">Official pages in Spanish and other languages</a></p>
   </div>
 </section>
 
@@ -239,9 +263,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=3b450878"></script>
-<script src="assets/js/common.js?v=3b450878"></script>
-<script src="assets/js/home.js?v=3b450878"></script>
+<script src="assets/js/lib.js?v=855e413e"></script>
+<script src="assets/js/common.js?v=855e413e"></script>
+<script src="assets/js/home.js?v=855e413e"></script>
 
 </body>
 </html>
