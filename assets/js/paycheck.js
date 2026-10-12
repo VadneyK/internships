@@ -14,11 +14,47 @@
       var note = $("mOther");
       if ($("mPreset").value === "other") {
         $("mWage").value = "";
+        loadOtherStates();
+        paintOtherState();
         if (note) { note.hidden = false; note.innerHTML = "Only Social Security and Medicare are in this estimate. Your state may take out more. For your state's minimum wage and a number to call, see the " + a("work permit and rules page", "permit.html").replace(' target="_blank" rel="noopener"', "") + "."; }
         return;
       }
       if (note) { note.hidden = true; note.textContent = ""; }
+      paintOtherState();
       var p = d.presets.filter(function (x) { return x.id === $("mPreset").value; })[0]; $("mWage").value = p.wage.toFixed(2);
+    }
+    // "Another state" also lets the teen pick any state. Its wage line comes from data/state-wages.json, read only when "Another state" is chosen.
+    var TAXLINE = "Ask your employer if your state also holds back state income tax, and for the state form if it does.";
+    var WAGE_FAIL = "We could not load the state wage. Check your state labor office.";
+    var otherWd = null, otherFailed = false, otherLoading = false;
+    function hasFullEstimate(id) { return d.presets.some(function (x) { return x.id === id || x.id.indexOf(id + "-") === 0; }); }
+    function paintOtherState() {
+      var box = $("mOtherBox"), out = $("mOtherWage");
+      if (!box || !out) return;
+      var isOther = $("mPreset").value === "other";
+      box.hidden = !isOther;
+      if (!isOther) return;
+      var sid = $("mOtherState").value, h = "";
+      if (!sid && !otherFailed) { out.innerHTML = ""; return; }
+      if (otherWd) {
+        h += G.wageLine(otherWd, sid);
+        if (hasFullEstimate(sid)) h += '<p class="small">This page has a full estimate for this state. Pick it under "Where and what rate".</p>';
+      } else if (otherFailed) h += '<p class="small muted">' + G.esc(WAGE_FAIL) + "</p>";
+      else h += '<p class="small muted">Loading the state wage.</p>';
+      h += '<p class="small"><b>Federal taxes that apply to most jobs in every state:</b></p><ul class="small"><li>' + G.esc(d.lineNotes.ss) + "</li><li>" + G.esc(d.lineNotes.medicare) + "</li></ul><p class=\"small\">" + G.esc(TAXLINE) + "</p>";
+      out.innerHTML = h;
+      $("mStatus").textContent = otherWd ? "Showing the minimum wage for " + $("mOtherState").selectedOptions[0].text + "." : WAGE_FAIL;
+    }
+    function loadOtherStates() {
+      if (otherWd || otherLoading) return;
+      otherLoading = true; otherFailed = false;
+      G.stateWages().then(function (j) {
+        otherWd = j;
+        var sel = $("mOtherState");
+        j.states.slice().sort(function (x, y) { return x.name < y.name ? -1 : 1; }).forEach(function (s) {
+          sel.appendChild(Object.assign(document.createElement("option"), { value: s.id, textContent: s.name }));
+        });
+      }).catch(function () { otherFailed = true; }).then(function () { otherLoading = false; paintOtherState(); });
     }
     // Each field says what is wrong with it. The first problem also names the field in the estimate card and the status line.
     var MSG = {
@@ -83,6 +119,7 @@
     $("mPreset").addEventListener("change", function () { setWage(); paint(); syncStateToPreset(); announce(); });
     ["mWage", "mHours"].forEach(function (id) { $(id).addEventListener("input", function () { paint(); announce(); }); });
     $("mParent").addEventListener("change", function () { paint(); announce(); });
+    $("mOtherState").addEventListener("change", paintOtherState);
     setWage(); paint();
     $("mSrc").innerHTML = "Rates from: " + d.rateSources.map(function (s) { return a(s.t, s.u); }).join(" &middot; ") + ". Minimum wages are the 2026 state rates, and some cities pay more. Each tax is rounded to the cent on its own line, like a pay stub.";
     $("mLeft").textContent = d.left;

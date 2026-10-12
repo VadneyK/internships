@@ -12,6 +12,7 @@ import { fileURLToPath } from "node:url";
 // Raised on 2026-10-12 after the r2 round (new-tab observer scope, hover media, referrer policy and the common.js and stylesheet changes every page carries): each page that went over has its ceiling set to the measured size rounded up plus 100.
 // Raised on 2026-10-12 after merging persona round 5 (shorter state card wording, federal floor line, wage notes, new cities): nine pages by 100 to 400 bytes each, ceiling set to the measured size rounded up plus 100.
 // Raised on 2026-10-12 for ticket r3-a11y-perf-2: the #printRoot link address print rule in style.css (about 330 bytes on every page); each page that went over has its ceiling set to the measured size rounded up plus 100.
+// Raised 2026-10-12 for round 8 tickets p8-paycheck-other (paycheck.js), p8-permit-lite-print (permit.js) and p8-younger-state (younger.js): paycheck, permit and younger went over; each ceiling is the measured size rounded up plus 100.
 // Raised 2026-10-12 round 6 merge: the pages listed grew a few hundred bytes (younger.js lite states, lib.js new regions); each ceiling is the measured size rounded up plus 100.
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const LIB_NAMES = /\b(?:G|TIG)\.(?:esc|safeUrl|parseISO|fmtDate|daysUntil|lib|fillPlaces|placeTiles|REGIONS|HUBS|TYPES|FIELDS|PAID)\b/;
@@ -41,13 +42,13 @@ const BUDGET = {
   "languages.html": { ceiling: 129700, reason: "lib.js, common.js and languages.js" },
   "leaders.html": { ceiling: 82400, reason: "common.js, leaders.js and both stylesheets; no lib.js" },
   "parents.html": { ceiling: 129700, reason: "lib.js, common.js and parents.js" },
-  "paycheck.html": { ceiling: 135900, reason: "lib.js, common.js and paycheck.js" },
+  "paycheck.html": { ceiling: 138200, reason: "lib.js, common.js and paycheck.js" },
   // Raised from 139900 to 141000 on 2026-10-11 when the third upgrade round was merged: permit.js grew by 716 bytes and the page is 140932 bytes.
   // Raised from 141000 to 142300 on 2026-10-11 for ticket p6-permit-1: the age line on the shorter state answer (about 1,300 bytes in permit.js) and the shared G.stateShorts() reader in common.js (about 300 bytes, which jobs.js and younger.js now share instead of each fetching the file). The page is 142229 bytes.
   // Raised from 142300 to 142500 on 2026-10-11 after the persona round 4 merge: permit.html loads 142397 bytes of code (a 97 byte overage that came from combining the two lines of work).
   // Raised on 2026-10-11 for ticket p7-regions-1: lib.js grew by 1,296 bytes (11 new states in REGIONS, HUBS, STATES, PICK_GROUPS and STATE_OF). permit.html loads 144940 bytes (the rest of the growth came from other work in common.js and permit.js), ceiling raised from 142500 to 145000.
   // Raised from 145400 to 148600 on 2026-10-11 for tickets p8-lite-1 and p8-cities-1: big cities of the 11 new states in lib.js, plain missing-fact answers and wage notes in common.js and permit.js.
-  "permit.html": { ceiling: 153300, reason: "lib.js, common.js and permit.js" },
+  "permit.html": { ceiling: 157600, reason: "lib.js, common.js and permit.js" },
   // Raised on 2026-10-12 for tickets p9-regions-1 and p9-playbook-1: lib.js grew (Plains states) and style.css gained two small rules. jobs, playbook, resume, states and younger ceilings each raised by 100.
   "playbook.html": { ceiling: 143500, reason: "lib.js, common.js and playbook.js" },
   "ready.html": { ceiling: 137100, reason: "lib.js, common.js and ready.js" },
@@ -61,7 +62,7 @@ const BUDGET = {
   // Raised on 2026-10-11 for ticket p7-regions-1: lib.js grew by 1,296 bytes (11 new states in REGIONS, HUBS, STATES, PICK_GROUPS and STATE_OF). younger.html loads 131827 bytes, ceiling raised from 130800 to 131900.
   // Raised from 131900 to 133200 on 2026-10-11 for tickets p8-lite-1 and p8-cities-1: big cities of the 11 new states in lib.js, plain missing-fact answers and wage notes in common.js and permit.js.
   // Raised for ticket p9-younger-1: younger.js grew by about 4.3 KB (the permit-only state picker names, the permit card and its helpers). younger.html measured 142116 bytes on 2026-10-12, ceiling set to 142200.
-  "younger.html": { ceiling: 142700, reason: "lib.js, common.js and younger.js" },
+  "younger.html": { ceiling: 143700, reason: "lib.js, common.js and younger.js" },
 };
 
 function builtPages() {

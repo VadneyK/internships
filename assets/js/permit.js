@@ -20,31 +20,47 @@
     return '<article class="card verdict ask"><h2>' + G.esc(u.headline) + "</h2><p>" + link(G.esc(u.text)) + "</p></article>";
   }
   function hasLite(id) { return !!lite && !!id && Object.prototype.hasOwnProperty.call(lite, id); }
-  /* The shorter answer for one of the states in data/states-lite.json: mostly one official page, four facts, the page and a quote. */
-  function liteCard(id, age, kind) {
-    var s = lite[id], a = +age, NS = "Not stated on the page we read.";
-    var NOHOURS = "We did not find hour limits on the state page we read. Your state may set some. Ask the state labor office.";
-    var NOAGE = '<span>We did not find a minimum age on the state page we read. ' + (fed && fed.min ? '<a href="' + G.esc(fed.min.url) + '" target="_blank" rel="noopener">Federal law</a>' : "Federal law") + " sets 14 for most non-farm jobs. Your state may set a higher age.</span>";
-    var NOPERMIT = "We did not find a work permit answer on the state page we read. Ask the state labor office before the first shift.";
-    var NOWHO = "Not listed on the page we read. Call the state labor department.";
-    function row(k, v, tel, nsHtml) { var ns = !v || v === NS; return "<div><dt>" + k + "</dt><dd" + (ns ? ' class="ns"' : "") + ">" + (ns ? (nsHtml || G.esc(NS)) : tel ? L.linkContacts(v) : G.esc(v)) + "</dd></div>"; }
-    var h = '<article class="card verdict ask" id="pLiteCard">';
-    var hrs = s.hours, hoursNS = !hrs || hrs === NS;
-    /* The hours row counts only if one sentence names both 16 and 17. "Age 16 or older" alone does not. */
-    var has1617 = !hoursNS && hrs.split(/[.;:!?]/).some(function (p) { return /\b16\b/.test(p) && /\b17\b/.test(p); });
-    var ageLine = "";
-    if (a >= 18) ageLine = '<p id="pAdultLine"><b>At your age (' + a + '): You are 18. You do not need a minor work permit. Go to <a href="jobs.html?age=18">Jobs that hire teens</a>.</b></p>';
-    else if (a >= 16) ageLine = '<p id="pAgeLine"><b>At your age (' + a + '):</b> ' + (has1617 ? "The hours row below states limits for 16 and 17. Read it for your age." : 'Federal law sets no hour limits for 16 and 17 (source: the US Department of Labor page linked on the <a href="jobs.html#rules">Jobs page rules</a>). Your state may. This short answer does not say; confirm with the office.') + "</p>";
+  var NS = "Not stated on the page we read.";
+  var NOHOURS = "We did not find hour limits on the state page we read. Your state may set some. Ask the state labor office.";
+  var NOPERMIT = "We did not find a work permit answer on the state page we read. Ask the state labor office before the first shift.";
+  var NOWHO = "Not listed on the page we read. Call the state labor department.";
+  var ASKSTEP = "Ask your school office or the state labor office. Their page is linked here.";
+  function noAge() { return '<span>We did not find a minimum age on the state page we read. ' + (fed && fed.min ? '<a href="' + G.esc(fed.min.url) + '" target="_blank" rel="noopener">Federal law</a>' : "Federal law") + " sets 14 for most non-farm jobs. Your state may set a higher age.</span>"; }
+  /* The hours row counts only if one sentence names both 16 and 17. "Age 16 or older" alone does not. */
+  function has1617(s) { var hrs = s.hours; return !!hrs && hrs !== NS && hrs.split(/[.;:!?]/).some(function (p) { return /\b16\b/.test(p) && /\b17\b/.test(p); }); }
+  /* A field the page did not state ends with a plain next step and the state page link from the same row. */
+  function askStepHtml(s) { return ' <span data-liteask>' + ASKSTEP + ' <a href="' + G.esc(s.url) + '" target="_blank" rel="noopener">Open the state page</a></span>'; }
+  function liteValue(s, v, nsHtml) {
+    var ns = !v || v === NS;
+    if (ns) return nsHtml + askStepHtml(s);
+    return G.esc(v) + (/^Not stated on the page we read\./.test(v) ? askStepHtml(s) : "");
+  }
+  /* The line for the teen's age: the state hours text, or the federal floor the page already shows. ids is false in the printed sheet so no id repeats; skipHours there because the Hours row follows. */
+  function liteAge(s, age, ids, skipHours) {
+    var a = +age, hrs = s.hours, hoursNS = !hrs || hrs === NS, h = "", idf = function (n) { return ids ? ' id="' + n + '"' : ""; };
+    if (a >= 18) h = "<p" + idf("pAdultLine") + '><b>At your age (' + a + '): You are 18. You do not need a minor work permit. Go to <a href="jobs.html?age=18">Jobs that hire teens</a>.</b></p>';
+    else if (a >= 16) h = "<p" + idf("pAgeLine") + "><b>At your age (" + a + "):</b> " + (has1617(s) ? "The hours row below states limits for 16 and 17. Read it for your age." : 'Federal law sets no hour limits for 16 and 17 (source: the US Department of Labor page linked on the <a href="jobs.html#rules">Jobs page rules</a>). Your state may. This short answer does not say; confirm with the office.') + "</p>";
     else if (a >= 14) {
-      ageLine = '<p id="pAgeLine"><b>At your age (' + a + '):</b> ' + (hoursNS ? '<span class="ns">' + G.esc(NOHOURS) + "</span>" : G.esc(hrs)) + "</p>";
+      if (!skipHours) h = "<p" + idf("pAgeLine") + "><b>At your age (" + a + "):</b> " + (hoursNS ? '<span class="ns">' + G.esc(NOHOURS) + "</span>" : G.esc(hrs)) + "</p>";
       /* The federal school day limit, only when the state hours text does not name it. Text comes from data/employers.json. */
       var hasSchool = !hoursNS && /(\b3|three) hours[^.]*school day|school day[^.]*(\b3|three) hours/i.test(hrs);
-      if (!hasSchool && fed && fed.hours) ageLine += '<p id="pFedLine" class="small">Federal rules also apply: ' + G.esc(fed.hours.roles) + " Where your state is stricter, the state rule wins. Source: " + links([{ u: fed.hours.url, t: fed.hours.page_title }]) + ".</p>";
+      if (!hasSchool && fed && fed.hours) h += "<p" + idf("pFedLine") + ' class="small">Federal rules also apply: ' + G.esc(fed.hours.roles) + " Where your state is stricter, the state rule wins. Source: " + links([{ u: fed.hours.url, t: fed.hours.page_title }]) + ".</p>";
     }
-    else if (a >= 12) ageLine = '<p id="pAgeLine"><b>At your age (' + a + '):</b> Under 14 is covered on the <a href="younger.html?age=' + encodeURIComponent(String(age)) + '">Ages 12 to 14 page</a>.</p>';
-    h += ageLine;
+    else if (a >= 12) h = "<p" + idf("pAgeLine") + "><b>At your age (" + a + "):</b> Under 14 is covered on the <a href=\"younger.html?age=" + encodeURIComponent(String(age)) + '">Ages 12 to 14 page</a>.</p>';
+    return h;
+  }
+  function hasLite(id) { return !!lite && !!id && Object.prototype.hasOwnProperty.call(lite, id); }
+  /* The checklist and message section is offered for 14 to 17, as for the full states. */
+  function liteHasPacket(age) { var a = +age; return a >= 14 && a <= 17; }
+  /* The shorter answer for one of the states in data/states-lite.json: mostly one official page, four facts, the page and a quote. */
+  function liteCard(id, age, kind) {
+    var s = lite[id], a = +age;
+    function row(k, v, nsHtml) { var ns = !v || v === NS; return "<div><dt>" + k + "</dt><dd" + (ns ? ' class="ns"' : "") + ">" + liteValue(s, v, nsHtml) + "</dd></div>"; }
+    var h = '<article class="card verdict ask" id="pLiteCard">';
+    h += liteAge(s, age, true);
+    if (liteHasPacket(age)) h += '<p class="small"><a href="#packetSec">Jump to: send a message to your school or print your checklist</a></p>';
     h += "<h2>" + G.esc(s.name) + "</h2>";
-    h += '<dl class="facts">' + row("Youngest age", s.min_age, false, NOAGE) + row("Permit", s.permit, false, G.esc(NOPERMIT)) + row("Hours", s.hours, false, G.esc(NOHOURS));
+    h += '<dl class="facts">' + row("Youngest age", s.min_age, noAge()) + row("Permit", s.permit, G.esc(NOPERMIT)) + row("Hours", s.hours, G.esc(NOHOURS));
     var hasPhone = s.phone && s.phone !== NS;
     h += "<div><dt>Who to ask</dt>";
     var who = s.who_to_ask && s.who_to_ask !== NS ? s.who_to_ask : "", phone = hasPhone ? s.phone : "";
@@ -54,13 +70,28 @@
     h += "<p>We mostly read one official page for this state, so this answer is shorter than our full state answers. Confirm on the page.</p>";
     /* Say what the short answer leaves out: the hours row may not cover 16 and 17, and it does not sort kinds of work. */
     var gaps = [];
-    if ((a === 16 || a === 17) && !has1617) gaps.push("The hours row may not cover 16 and 17 year olds. For 16 and 17, confirm the hour limits on the page above or with the office.");
+    if ((a === 16 || a === 17) && !has1617(s)) gaps.push("The hours row may not cover 16 and 17 year olds. For 16 and 17, confirm the hour limits on the page above or with the office.");
     if (kind && kind !== "job") gaps.push("This short answer does not cover the kind of work you picked. Confirm with the office or on the page above before you start.");
     if (gaps.length) h += '<p id="pLiteNote"><b>Not covered here:</b> ' + gaps.join(" ") + "</p>";
     h += '<p class="small">Source: <a href="' + G.esc(s.url) + '" target="_blank" rel="noopener">' + G.esc(s.page_title) + "</a>." + (liteRead ? " The short answers were last checked " + G.esc(liteRead) + "." : "") + "</p>";
     h += '<p class="small muted">The page says: &ldquo;' + G.esc(s.quote) + "&rdquo;</p>";
     if (a >= 12 && a < 14) h += '<p>Federal law says under 14 may not be employed in most non-farm jobs. A state can be stricter, and then the stricter rule applies.</p><p><a class="btn sm" href="younger.html?age=' + encodeURIComponent(String(age)) + '">What you can do at 12 and 13</a></p>';
     return h + "</article>";
+  }
+  /* The printable sheet for a shorter-answer state. Only the row in data/states-lite.json and the federal lines the card already shows. */
+  function paintLitePacket(c) {
+    var s = lite[c.id], h = "<h3>Work permit checklist (" + G.esc(s.name) + ")</h3>";
+    h += "<p>Name: ______________________ Employer: ______________________ First day: ____________</p>";
+    h += liteAge(s, c.age, false, true);
+    h += "<p><b>Youngest age:</b> " + liteValue(s, s.min_age, noAge()) + "</p>";
+    h += "<p><b>Permit:</b> " + liteValue(s, s.permit, G.esc(NOPERMIT)) + "</p>";
+    h += "<p><b>Hours:</b> " + liteValue(s, s.hours, G.esc(NOHOURS)) + "</p>";
+    var who = s.who_to_ask && s.who_to_ask !== NS ? s.who_to_ask : "", phone = s.phone && s.phone !== NS ? s.phone : "";
+    h += "<p><b>Who to call:</b> " + L.whoToAskHtml(who, phone, NOWHO) + "</p>";
+    h += '<ul><li>&#9744; Read the state page: <a href="' + G.esc(s.url) + '" target="_blank" rel="noopener">' + G.esc(s.page_title) + "</a> (" + G.esc(s.url) + ")</li><li>&#9744; Ask your school office or the state labor office what you need before your first shift</li></ul>";
+    h += '<p class="small">The page says: &ldquo;' + G.esc(s.quote) + "&rdquo;</p>";
+    h += '<p class="small">From vadneyk.github.io/internships/permit.html. This is a shorter answer from one official page' + (liteRead ? ", last checked " + G.esc(liteRead) : "") + ". Confirm with your school.</p>";
+    $("pPacket").innerHTML = h;
   }
   var liteRead = "", wages = null, fed = null;
   function missingText(st, age, kind) {
@@ -136,16 +167,18 @@
     return '<p><b>What to do next:</b> Contact the office shown above first. Then <a href="' + to.h + '">' + to.t + "</a>.</p>";
   }
 
-  var cur = null;
+  var cur = null, curLite = null;
   function render() {
     var st = $("pState").value, age = $("pAge").value, kind = $("pKind").value;
     var out = $("pOut"), sec = $("packetSec");
-    cur = null; sec.hidden = true;
+    cur = null; curLite = null; sec.hidden = true;
     var f = $("pLiteField");
     if (f) f.hidden = st !== "lite";
     if (st === "lite") {
       var lid = $("pLite").value;
       out.innerHTML = hasLite(lid) ? liteCard(lid, age, kind) : '<p class="muted">Now pick your state.</p>';
+      /* Same Get it done section as the full states, filled only from this state's row. */
+      if (hasLite(lid) && liteHasPacket(age)) { curLite = { id: lid, age: age }; sec.hidden = false; paintLitePacket(curLite); paintMsg(); }
       syncUrl(); return;
     }
     if (st === "other" || (st && !hasState(st))) { out.innerHTML = nostateCard(st, age); syncUrl(); return; }
@@ -226,8 +259,9 @@
       statusTimer = setTimeout(function () { el.textContent = text; }, 30);
     }, 800);
   }
-  function onMsgEdit() { paintMsg(); if (cur) noteUpdated("mStatus", "Message updated."); }
+  function onMsgEdit() { paintMsg(); if (cur || curLite) noteUpdated("mStatus", "Message updated."); }
   function paintMsg() {
+    if (curLite) return paintLiteMsg();
     if (!cur) return;
     var s = data.states[cur.state], name = $("mName").value.trim() || "[your first name]", emp = $("mEmp").value.trim() || "[the employer]";
     var school = $("mTo").value === "school", need = cur.verdict === "need";
@@ -241,6 +275,21 @@
     bn.hidden = !blanks.length;
     bn.textContent = blanks.length ? "Fill in before you send: " + blanks.join(", ") : "";
     $("pPacket").innerHTML && cur && paintPacket(cur, s);
+  }
+
+  /* The message for a shorter-answer state asks the question instead of naming a permit, since the page we read may not name one. */
+  function paintLiteMsg() {
+    var s = lite[curLite.id], name = $("mName").value.trim() || "[your first name]", emp = $("mEmp").value.trim() || "[the employer]";
+    var school = $("mTo").value === "school";
+    var subject = school ? "Question about getting a work permit" : "My work permit and my first day";
+    var body = school
+      ? "Hello,\n\nMy name is " + name + ". I have a job offer from " + emp + " and I want to know if I need a work permit in " + s.name + ". Could you tell me what forms to bring, who has to sign them, and how long it usually takes?\n\nThank you,\n" + name
+      : "Hello,\n\nThank you again for the offer. I want to check what papers you need from me before my first day. Who should I send the form to, and what days and hours do you expect me to work?\n\nThank you,\n" + name;
+    $("mText").textContent = "Subject: " + subject + "\n\n" + body;
+    $("mMail").href = L.mailtoHref(subject, body);
+    var blanks = L.blanksLeft(body), bn = $("mBlankNote");
+    bn.hidden = !blanks.length;
+    bn.textContent = blanks.length ? "Fill in before you send: " + blanks.join(", ") : "";
   }
 
   function syncUrl() {

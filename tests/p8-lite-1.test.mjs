@@ -17,9 +17,13 @@ async function pick(lite, age) {
 test("p8-lite-1: Arizona prints plain lines, never the raw placeholder, in the four rows", async () => {
   const p = await pick("az", "15"); const card = p.document.getElementById("pLiteCard");
   const rows = [...card.querySelectorAll("dl.facts > div")].map((r) => r.querySelector("dd"));
-  assert.equal(rows[0].textContent.replace(" (opens in a new tab)", ""), "We did not find a minimum age on the state page we read. Federal law sets 14 for most non-farm jobs. Your state may set a higher age.");
+  // Ticket p8-permit-lite-print: each unstated row now ends with a plain next step and the state page link.
+  const NEXT = " Ask your school office or the state labor office. Their page is linked here.";
+  const plain = (r) => r.textContent.replace(/ \(opens in a new tab\)/g, "");
+  assert.ok(plain(rows[0]).startsWith("We did not find a minimum age on the state page we read. Federal law sets 14 for most non-farm jobs. Your state may set a higher age." + NEXT));
   assert.equal(rows[0].querySelector("a").getAttribute("href"), "https://www.dol.gov/agencies/whd/fact-sheets/43-child-labor-non-agriculture");
-  assert.equal(rows[1].textContent, "We did not find a work permit answer on the state page we read. Ask the state labor office before the first shift.");
+  assert.ok(plain(rows[1]).startsWith("We did not find a work permit answer on the state page we read. Ask the state labor office before the first shift." + NEXT));
+  assert.match(rows[1].querySelector("[data-liteask] a").getAttribute("href"), /^https:\/\//);
   assert.equal(rows[3].textContent, "Not listed on the page we read. Call the state labor department.");
   for (const i of [0, 1, 3]) assert.ok(rows[i].classList.contains("ns"));
   assert.doesNotMatch(card.textContent, /Not stated on the page we read/);

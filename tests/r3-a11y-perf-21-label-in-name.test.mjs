@@ -100,6 +100,8 @@ test("index.html: label in name holds after the picker has results", async () =>
   const age = document.getElementById("pAge");
   assert.ok(age && [...age.options].some((o) => o.value === "14"), "age 14 option exists");
   type(window, age, "14");
+  // Wait for the results to appear (up to 5 seconds) so a busy machine running the whole suite does not turn a slow data load into a failure.
+  for (let i = 0; i < 100 && !document.querySelectorAll("#matches a, #matches button").length; i++) await tick(50);
   await tick(200);
   assert.ok(document.querySelectorAll("#matches a, #matches button").length > 0, "picker shows results");
   check("index.html (after picker results)", document);

@@ -23,8 +23,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=2bdb6796">
-<link rel="stylesheet" href="assets/css/style.css?v=2bdb6796">
+<link rel="stylesheet" href="assets/css/fonts.css?v=33b84518">
+<link rel="stylesheet" href="assets/css/style.css?v=33b84518">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -63,7 +63,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <p class="small muted">Last read Oct 10, 2026.</p>
     <p class="small" id="payStateNote">Most examples here are from California. <a href="states.html">Georgia, New York, Illinois and other states</a> have their own notes: <a href="permit.html">pick your state first</a>. In British Columbia the rules differ: see <a href="permit.html">the British Columbia work permit answer</a>.</p>
     <noscript><div class="callout bad"><p>This page needs JavaScript to work out the paycheck estimate. With JavaScript off, read the plain rules on the <a href="rules.html">Rules page</a>.</p></div></noscript>
-    <div class="callout plain small" style="margin-top:1rem;max-width:52rem;"><p><b>Facts, not tax advice.</b> We only show amounts we have a source for. Ask a parent or a tax preparer about your own situation.</p><details><summary>Working for your parent's own business?</summary><p>This page covers California, Georgia, New York and Illinois. Social Security and Medicare apply to most jobs in every state. The exception is working for your parent's own sole proprietorship, or a partnership where both partners are your parents, when you are under 18. It does not apply to a corporation. In another state the state tax form and minimum wage are different. See <a href="permit.html">the work permit finder</a> for your state's minimum wage and the number to call.</p></details></div>
+    <div class="callout plain small" style="margin-top:1rem;max-width:52rem;"><p><b>Facts, not tax advice.</b> We only show amounts we have a source for. Ask a parent or a tax preparer about your own situation.</p><details><summary>Working for your parent's own business?</summary><p>This page covers California, Georgia, New York and Illinois. Social Security and Medicare apply to most jobs in every state. The exception is working for your parent's own sole proprietorship, or a partnership where both partners are your parents, when you are under 18. It does not apply to a corporation. In another state the state tax form is different. Pick "Another state" in the estimate below to see your state's minimum wage, or see <a href="permit.html">the work permit finder</a> for the number to call.</p></details></div>
     <nav class="chips" id="parts" aria-label="On this page" style="margin-top:1rem;">
       <a class="chip" style="text-decoration:none" href="#est">1. Estimate</a>
       <a class="chip" style="text-decoration:none" href="#forms">2. Tax forms</a>
@@ -95,6 +95,10 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <div class="field"><label for="mHours">Hours on this paycheck</label><input id="mHours" type="number" min="0" step="0.5" inputmode="decimal" value="12"><p class="small" id="mHoursNote" hidden></p></div>
     </div>
     <p class="small muted" id="mOther" hidden></p>
+    <div id="mOtherBox" hidden>
+      <div class="field" style="max-width:20rem;"><label for="mOtherState">Your state</label><select id="mOtherState"><option value="">Pick your state</option></select></div>
+      <div id="mOtherWage"></div>
+    </div>
     <label style="display:flex;gap:.5rem;align-items:center;margin:.6rem 0;"><input type="checkbox" id="mParent"> I work for my parent's own business (a sole proprietorship, or a partnership where both partners are my parents) and I am under 18</label>
     <div class="card" id="mOut"></div>
     <p class="sr" id="mStatus" role="status"></p>
@@ -194,9 +198,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=2bdb6796"></script>
-<script src="assets/js/common.js?v=2bdb6796"></script>
-<script src="assets/js/paycheck.js?v=2bdb6796"></script>
+<script src="assets/js/lib.js?v=33b84518"></script>
+<script src="assets/js/common.js?v=33b84518"></script>
+<script src="assets/js/paycheck.js?v=33b84518"></script>
 
 </body>
 </html>

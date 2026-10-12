@@ -61,8 +61,11 @@ const TABLE = {
   "assets/js/leaders.js": { ceiling: 8100, reason: "script, 7361 bytes measured 2026-10-10" },
   "assets/js/lib.js": { ceiling: 55300, reason: "script, 50207 bytes measured 2026-10-10" },
   "assets/js/parents.js": { ceiling: 3900, reason: "script, 3529 bytes measured 2026-10-10" },
-  "assets/js/paycheck.js": { ceiling: 10800, reason: "script, 9810 bytes measured 2026-10-10" },
-  "assets/js/permit.js": { ceiling: 29900, reason: "script, 27127 bytes measured 2026-10-10" },
+  // Raised for ticket p8-paycheck-other: the Another state picker and its wage and federal tax lines. 12055 bytes measured 2026-10-12.
+  // Raised again for the live status line on Another state (a state pick, and the failed wage load). 12208 bytes measured 2026-10-12.
+  "assets/js/paycheck.js": { ceiling: 12300, reason: "script, 12208 bytes measured 2026-10-12 (Another state picker and its live status line, p8-paycheck-other)" },
+  // Raised for ticket p8-permit-lite-print: the printable checklist and next step on the shorter state answers. 31519 bytes measured 2026-10-12.
+  "assets/js/permit.js": { ceiling: 31700, reason: "script, 31519 bytes measured 2026-10-12 (printable checklist and next step, p8-permit-lite-print)" },
   "assets/js/playbook.js": { ceiling: 19200, reason: "script, 17385 bytes measured 2026-10-10" },
   "assets/js/ready.js": { ceiling: 12100, reason: "script, 10954 bytes measured 2026-10-10" },
   "assets/js/resume.js": { ceiling: 9600, reason: "script, 8687 bytes measured 2026-10-10" },
@@ -70,7 +73,7 @@ const TABLE = {
   "assets/js/share.js": { ceiling: 1900, reason: "script, 1681 bytes measured 2026-10-10" },
   "assets/js/states.js": { ceiling: 2600, reason: "script, 2290 bytes measured 2026-10-10" },
   // Raised for ticket p9-younger-1: the permit-only states in the picker and their permit card. 16622 bytes measured 2026-10-12.
-  "assets/js/younger.js": { ceiling: 16700, reason: "script, 16622 bytes measured 2026-10-12 (permit-only states and card, p9-younger-1)" },
+  "assets/js/younger.js": { ceiling: 17700, reason: "script, 17599 bytes measured 2026-10-12 (permit-only states and card, p9-younger-1; plain note when the grid does not cover the state, p8-younger-state)" },
   "assets/img/favicon.svg": { ceiling: 500, reason: "image, 409 bytes measured 2026-10-10" },
   "assets/img/og.jpg": { ceiling: 90200, reason: "image, 81997 bytes measured 2026-10-10" },
   "assets/img/splat-orange.svg": { ceiling: 5500, reason: "image, 4991 bytes measured 2026-10-10" },

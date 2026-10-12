@@ -133,6 +133,18 @@
         box.hidden = false;
       });
     }
+    /* The four names for the line above the table, written from data/younger.json, e.g. "California, Georgia, New York and Illinois". */
+    var fourNames = d.states.map(function (s) { return s[1]; });
+    var fourText = fourNames.slice(0, -1).join(", ") + " and " + fourNames[fourNames.length - 1];
+    /* For a state outside the four, one plain line sits right above the table: the table has no column for that state, and the state card is below the table. */
+    function syncGridNote(v) {
+      var note = $("gridNote");
+      if (!note) return;
+      if (!v || isFour(v)) { note.hidden = true; note.textContent = ""; return; }
+      var sel = $("yState"), name = sel.options[sel.selectedIndex] ? sel.options[sel.selectedIndex].textContent : "";
+      note.textContent = "This table covers " + fourText + " only. For " + name + ", see the short answer below and the federal rules.";
+      note.hidden = false;
+    }
     /* "Any other state" shows only for no pick or a state outside the four. It starts with a jump link to the picker in part 1. */
     var osBox = $("otherState");
     if (osBox && !$("otherStatePick")) {
@@ -162,6 +174,7 @@
     if (ys._tpSync) ys._tpSync();
     drawGrid(ys.value);
     showLite(ys.value);
+    syncGridNote(ys.value);
     syncOther(ys.value);
     /* The Work permit finder button passes the picked state on, for every state permit.html reads (L.PERMIT_STATES). */
     function syncPermit() {
@@ -182,14 +195,15 @@
     ys.addEventListener("change", function () {
       drawGrid(ys.value);
       showLite(ys.value);
+      syncGridNote(ys.value);
       syncOther(ys.value);
       syncPermit();
       syncStateUrl(ys.value);
       var total = d.states.length, st = $("yStatus"), msg, name = ys.options[ys.selectedIndex] ? ys.options[ys.selectedIndex].textContent : "";
       if (!ys.value) msg = "Showing all " + total + " full states.";
       else if (isFour(ys.value)) msg = "Showing " + name + ". 1 of " + total + " full states.";
-      else if (isPermitOnly(ys.value)) msg = "Showing " + name + ". Its work permit answer is just below the picker. The table shows all " + total + " full states.";
-      else msg = "Showing " + name + ". Its short answer is just below the picker. The table shows all " + total + " full states.";
+      else if (isPermitOnly(ys.value)) msg = "Showing " + name + ". Its work permit answer is just below the table. The table shows all " + total + " full states.";
+      else msg = "Showing " + name + ". Its short answer is just below the table. The table shows all " + total + " full states.";
       if (st && st.textContent !== msg) st.textContent = msg;
     });
     $("conflicts").innerHTML = li(d.conflicts);

@@ -9,6 +9,8 @@ const repo = join(dirname(fileURLToPath(import.meta.url)), "..");
 const lite = JSON.parse(readFileSync(join(repo, "data/states-lite.json"), "utf8"));
 const permits = JSON.parse(readFileSync(join(repo, "data/permits.json"), "utf8"));
 const $ = (p, id) => p.document.getElementById(id);
+/* Wait until a condition holds (up to 5 seconds), so a busy machine running the whole suite does not turn a slow page load into a failure. */
+async function until(cond) { for (let i = 0; i < 100 && !cond(); i++) await tick(50); }
 /* The two letter code for each state name. A row in states-lite.json must use the code for its own name. */
 const STATE_CODE = {
   Alabama: "al", Alaska: "ak", Arizona: "az", Arkansas: "ar", California: "ca", Colorado: "co", Connecticut: "ct", Delaware: "de",
@@ -39,9 +41,12 @@ test("states-lite: 34 entries, https url, short quote, new two letter id, no das
 
 test("permit: Another state then Oregon shows the Oregon card with its source link", async () => {
   const p = await loadPage("permit.html"); await tick();
+  await until(() => $(p, "pState") && $(p, "pLite") && $(p, "pLite").options.length > 2);
   type(p.window, $(p, "pState"), "lite"); await tick();
   assert.equal($(p, "pLiteField").hidden, false);
-  type(p.window, $(p, "pLite"), "or"); await tick();
+  await until(() => [...$(p, "pLite").options].some((o) => o.value === "or"));
+  type(p.window, $(p, "pLite"), "or");
+  await until(() => $(p, "pOut").querySelector("h2") && /Oregon/.test($(p, "pOut").querySelector("h2").textContent));
   const out = $(p, "pOut");
   assert.match(out.querySelector("h2").textContent, /Oregon/);
   assert.match(out.textContent, /We mostly read one official page for this state/);
@@ -86,7 +91,9 @@ test("permit: age 18 shows the adult line, full states still work from ?state=",
 test("permit: My state is not listed in the second step gives the not-read answer", async () => {
   const p = await loadPage("permit.html"); await tick();
   type(p.window, $(p, "pState"), "lite"); await tick();
-  type(p.window, $(p, "pLite"), "other"); await tick();
+  await until(() => [...$(p, "pLite").options].some((o) => o.value === "other"));
+  type(p.window, $(p, "pLite"), "other");
+  await until(() => /have not read your state/.test($(p, "pOut").textContent));
   assert.match($(p, "pOut").textContent, /have not read your state/);
 });
 
@@ -141,12 +148,19 @@ test("permit: for each state at age 14 and 15, every row prints its own stored f
       assert.equal(rows.length, 4, s.id + " rows");
       LITE_ROWS.forEach(([label, field], i) => {
         assert.equal(rows[i].querySelector("dt").textContent, label, s.id + " label " + i);
-        const dd = rows[i].querySelector("dd");
+        const dd0 = rows[i].querySelector("dd");
+        // Ticket p8-permit-lite-print: an unstated field ends with a plain next step; the rest of the cell is checked as before.
+        const dd = dd0.cloneNode(true);
+        const step = dd.querySelector("[data-liteask]");
+        if (step) step.remove();
+        if (["min_age", "permit", "hours"].includes(field)) assert.equal(!!step, !s[field] || s[field].startsWith("Not stated on the page we read."), s.id + " " + field + " next step");
+        if (step) assert.ok(step.textContent.startsWith("Ask your school office or the state labor office. Their page is linked here. Open the state page"), s.id);
+        dd.textContent = dd.textContent.trimEnd();
         if (s[field] === "Not stated on the page we read." && field !== "hours") {
-          assert.ok(dd.classList.contains("ns"), s.id + " " + field + " is quiet");
+          assert.ok(dd0.classList.contains("ns"), s.id + " " + field + " is quiet");
           assert.doesNotMatch(dd.textContent, /Not stated on the page we read/, s.id);
         } else if (s[field] === "Not stated on the page we read.") {
-          assert.ok(dd.classList.contains("ns"), s.id + " " + field + " is quiet");
+          assert.ok(dd0.classList.contains("ns"), s.id + " " + field + " is quiet");
           assert.equal(dd.textContent, "We did not find hour limits on the state page we read. Your state may set some. Ask the state labor office.", s.id);
         } else {
           assert.equal(dd.textContent, s[field], s.id + " " + field);
