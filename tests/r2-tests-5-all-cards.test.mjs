@@ -15,7 +15,7 @@ const byId = new Map(entries.map((e) => [e.id, e]));
 
 const STATUS_LABEL = {
   "open-now": "Open now", "opens-soon": "Opens soon", "rolling": "Apply anytime", "year-round": "Year-round",
-  "event": "Event", "closed-expect-reopen": "Closed, check back",
+  "event": "Event", "closed-expect-reopen": "Closed, check back", "event-passed": "Event passed",
 };
 const UNCONFIRMED = "Dates unconfirmed";
 const CLOCKS = [["2026-10-10", "2026-10-10T12:00:00"], ["2027-03-01", "2027-03-01T12:00:00"], ["2028-01-15", "2028-01-15T12:00:00"]];
@@ -73,7 +73,7 @@ function checkCard(card, now) {
   const fut = L.futureDeadline(e, now);
   if (fut && e.deadline_text && !whenText.includes(norm(e.deadline_text))) bad("future deadline text missing from dates line");
   if (!fut && /Apply by/i.test(text) && !/\d{4}|\d{1,2}\b/.test(whenText)) bad("Apply by with no date");
-  if (!fut && (st === "closed-expect-reopen" || st === "closed" || want === UNCONFIRMED) && /Apply by/i.test(card.querySelector("h3").parentNode.querySelector(".row, .when").textContent)) bad("closed or unconfirmed card says Apply by");
+  if (!fut && (st === "closed-expect-reopen" || st === "event-passed" || st === "closed" || want === UNCONFIRMED) && /Apply by/i.test(card.querySelector("h3").parentNode.querySelector(".row, .when").textContent)) bad("closed or unconfirmed card says Apply by");
   return fails;
 }
 

@@ -173,7 +173,14 @@ class BuildDataOrderIndependent(unittest.TestCase):
         self.assertEqual(len(set(ids)), len(ids), "ids must be unique")
         self.assertEqual(ids, sorted(ids), "entries are sorted by id, by code point")
         for name in ("entries-lite.json", "entries-core.json", "entries-stats.json", "entries-home.json", "entries-detail.json"):
-            other = [e["id"] for e in json.loads(out[name].decode("utf-8"))]
+            rows = json.loads(out[name].decode("utf-8"))
+            other = [e["id"] for e in rows]
+            if name == "entries-home.json":
+                # Written in name order, then id (home.js ranks by position). Same ids, and the order does not depend on input order.
+                full = json.loads(out["entries.json"].decode("utf-8"))
+                self.assertEqual(other, [e["id"] for e in sorted(full, key=lambda e: (e["name"], e["id"]))], name)
+                self.assertEqual(sorted(other), ids, name)
+                continue
             self.assertEqual(other, ids, name)
         rows = list(csv.reader(io.StringIO(out["entries.csv"].decode("utf-8"), newline="")))
         self.assertEqual([r[0] for r in rows[1:]], ids)

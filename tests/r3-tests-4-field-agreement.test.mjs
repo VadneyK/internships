@@ -56,8 +56,7 @@ const ALLOW_PAY = [
 // Rule B reason: the page says paid but gives no rate, so the text has no
 // conflict. The word volunteer or unpaid in the text is about something else.
 const ALLOW_UNPAID = [
-  // Paid hourly; the text says a teen may choose to volunteer instead (added 2026-10-11 for ticket p7-regions-1).
-  "nhmu-teen-explainers",
+  // nhmu-teen-explainers left this list on 2026-10-12: the card is now paid_type mixed (paid hourly, or choose to volunteer), so Rule B no longer applies.
   "sf-breakthrough-sf",
   // Paid; the unpaid part is only the first 36 Foundation Studio hours, and the text says the rate is not stated.
   "boston-artists-for-humanity-teen-jobs",

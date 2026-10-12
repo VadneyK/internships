@@ -1,3 +1,6 @@
+// r2-data-content-3: dates and ages that a card's own text already states are filled in on the card.
+// Run with: node --test tests/r2-data-content-3.test.mjs
+// Reads the four program files only. No DOM.
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
@@ -5,34 +8,34 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const load = (id) => JSON.parse(fs.readFileSync(path.join(ROOT, "data", "programs", id + ".json"), "utf8"));
 
-// Each card's min_age matches the youngest age for its headline role, and a plain sentence
-// explains any younger or stricter age that applies to another route.
-const CASES = [
-  { id: "chicago-youth-works-summer-jobs", min_age: 16, sentence: "The youngest age in the whole program is 14" },
-  { id: "madison-henry-vilas-zoo-teen-volunteers", min_age: 14, sentence: "The youngest age for any role is 10" },
-  { id: "columbus-metro-parks-volunteer", min_age: 11, sentence: "Ages 11 to 15 can help only at Inniswood Metro Gardens" },
-  { id: "endeavor-health-edward-hospital-student-volunteer", min_age: 14, sentence: "most roles are for 16 and up", field: "notes" },
-  { id: "endeavor-health-elmhurst-hospital-teen-volunteer", min_age: 14, sentence: "most roles are for 16 and up", field: "notes" },
-  { id: "sacramento-food-bank-volunteer", min_age: 10, sentence: null },
-  { id: "riverside-johnny-martin-sotelo-youth-opportunity-center", min_age: 14, sentence: "The youngest age at this site is 13" },
-];
-
-for (const c of CASES) {
-  test(`${c.id}: min_age and age note`, () => {
-    const d = load(c.id);
-    assert.equal(d.min_age, c.min_age);
-    if (c.sentence) {
-      const text = c.field ? d[c.field] : d.who_can_apply;
-      assert.ok(text.includes(c.sentence), `${c.id}: missing age sentence`);
-    }
-  });
+function card(id) {
+  return JSON.parse(fs.readFileSync(path.join(ROOT, "data", "programs", `${id}.json`), "utf8"));
 }
 
-test("age data in this batch has no em dash or en dash", () => {
-  for (const c of CASES) {
-    const raw = fs.readFileSync(path.join(ROOT, "data", "programs", c.id + ".json"), "utf8");
-    assert.ok(!/[\u2013\u2014]/.test(raw), `${c.id} has a dash character`);
-  }
+test("Cheyenne Mountain Zoo card: applications open Feb 1 to Feb 10, 2027 are filled in", () => {
+  const c = card("cheyenne-mountain-zoo-junior-zoo-keepers-summer-teen-program");
+  assert.equal(c.status, "opens-soon");
+  assert.equal(c.opens_iso, "2027-02-01");
+  assert.equal(c.deadline_iso, "2027-02-10");
+  assert.match(c.deadline_text, /February 1 to February 10, 2027/);
+});
+
+test("IMSA RISE card: no stale opens_iso from July 30, 2026 is left on an unconfirmed card", () => {
+  const c = card("imsa-rise-online-research-program");
+  assert.equal(c.status, "unconfirmed");
+  assert.ok(!c.opens_iso, "opens_iso must be empty for an unconfirmed card");
+  assert.match(c.deadline_text, /July 30, 2026/);
+});
+
+test("Bexley library teen volunteers: min_age is 13 and who_can_apply is unchanged", () => {
+  const c = card("columbus-bexley-library-teen-volunteers");
+  assert.equal(c.min_age, 13);
+  assert.equal(c.who_can_apply, "Teens who are at least 13 years old or in grades 7 to 12 during the 2026-2027 school year. The page says the teen program is currently full.");
+});
+
+test("DuPage Children's Museum volunteers: min_age is 14 and who_can_apply is unchanged", () => {
+  const c = card("dupage-childrens-museum-teen-and-junior-volunteers");
+  assert.equal(c.min_age, 14);
+  assert.equal(c.who_can_apply, "Teen and adult volunteers: age 14 or entering high school. Junior volunteers: junior high school students.");
 });

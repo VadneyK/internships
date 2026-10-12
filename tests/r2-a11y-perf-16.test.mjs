@@ -25,7 +25,8 @@ const PAGES = {
   // younger.html: raised from 336000 to 340000 on 2026-10-11 (r5-younger-1: pet care card and address-safe script added 2.7 KB to younger.json)
   "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 430000 },
   "interview.html": { allowed: ["interview.json", "permits.json"], ceiling: 95000 },
-  "permit.html": { allowed: ["permits.json"], ceiling: 82000 },
+  // permit.html and states.html: raised from 82000 to 83000 on 2026-10-12 (r2-accuracy-2 and r2-accuracy-8: the 2027 wage lines and the Washington, DC wording; permits.json is 82,370 bytes)
+  "permit.html": { allowed: ["permits.json"], ceiling: 83000 },
   "paycheck.html": { allowed: ["money.json"], ceiling: 15000 },
   "ready.html": { allowed: ["transit.json"], ceiling: 10000 },
   // safety.html: raised from 45000 to 125000 on 2026-10-11 (r5-safety-1: the other states' agency numbers come from permits.json, 79 KB)
@@ -35,7 +36,7 @@ const PAGES = {
   "languages.html": { allowed: ["languages.json"], ceiling: 10000 },
   // jobs.html: raised from 150000 to 190000 on 2026-10-11 (employer list 66 to 96 entries) and to 215000 the same day (120 entries: BC, California, Ohio and 17 and 18 year old jobs)
   "jobs.html": { allowed: ["employers.json", "permits.json"], ceiling: 215000 },
-  "states.html": { allowed: ["permits.json"], ceiling: 82000 },
+  "states.html": { allowed: ["permits.json"], ceiling: 83000 },
   "playbook.html": { allowed: [], ceiling: 0 },
   "resume.html": { allowed: [], ceiling: 0 },
   "leaders.html": { allowed: [], ceiling: 0 },

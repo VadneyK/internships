@@ -42,10 +42,12 @@ test("share.html QR images say where the code goes and load lazily", async () =>
   assert.equal(cards.length, 10);
   cards.forEach((c, i) => {
     const img = c.querySelector("img");
-    const link = c.querySelector("code").textContent.trim();
+    const words = c.querySelector("h3").textContent.trim().toLowerCase().split(/\s+/);
     const alt = img.getAttribute("alt");
     assert.ok(alt.startsWith("QR code"), alt);
-    assert.ok(alt.includes(link), alt);
+    assert.ok(alt.length <= 60 && !alt.includes("/"), alt);
+    // The alt must name the card title, words in order (the alt may add "the" or "page" around them).
+    assert.ok(new RegExp(words.join("\\b.*\\b")).test(alt.toLowerCase()), alt + " does not name the card title: " + words.join(" "));
     assert.ok(!/for For/i.test(alt), alt);
     assert.ok(!/[\u2013\u2014]/.test(alt), alt);
     assert.equal(img.getAttribute("width"), "160");

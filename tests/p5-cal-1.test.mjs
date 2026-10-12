@@ -33,7 +33,7 @@ test("calendar legend: sits under the count, explains the status words in plain 
   const { document } = p;
   const legend = document.getElementById("calLegend");
   assert.ok(legend, "the legend exists");
-  assert.equal(legend.querySelector("h2").textContent.trim(), "What the words mean");
+  assert.equal(legend.querySelector(":scope > summary").textContent.trim(), "What the words mean");
   assert.equal(legend.previousElementSibling, document.getElementById("cCount"), "the legend sits right after the count");
   const items = [...legend.querySelectorAll("li")].map((li) => li.textContent.replace(/\s+/g, " ").trim());
   assert.equal(items.length, 4);

@@ -46,3 +46,37 @@ jobs:
             echo "::error::Found an em dash or en dash. Use a comma, colon, or the word 'to'."
             exit 1
           fi
+
+  lib-coverage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+      - name: Install JavaScript test tools
+        run: npm ci
+      - name: lib.js coverage floor (takes about 8 minutes)
+        run: >-
+          node --test --experimental-test-coverage
+          --test-coverage-include=assets/js/lib.js
+          --test-coverage-lines=99 --test-coverage-branches=97
+          tests/*.test.mjs
+
+  page-script-coverage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+      - name: Install JavaScript test tools
+        run: npm ci
+      - name: Run the tests and keep the V8 coverage dumps (takes about 8 minutes)
+        run: NODE_V8_COVERAGE=coverage-v8 node --test tests/*.test.mjs
+      - name: Page script line coverage floors
+        run: >-
+          COVERAGE_DIR=coverage-v8 COVERAGE_OUT=coverage-page-scripts.txt
+          node --test tests/r3-tests-5-page-script-coverage-floor.test.mjs

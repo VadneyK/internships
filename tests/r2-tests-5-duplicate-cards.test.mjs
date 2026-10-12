@@ -96,6 +96,14 @@ const SHARED_URL_ALLOW = new Map([
     ids: ["fresno-chaffee-zoo-volunteens", "fresno-chaffee-zoo-zoo-camp-junior-counselor"],
     reason: "Same link on 2 cards (Fresno Chaffee Zoo). Not yet reviewed as a shared hub or a duplicate.",
   }],
+  ["https://sadienashleadershipproject.my.salesforce-sites.com/application", {
+    ids: ["nyc-sadie-nash-leadership-scholars", "nyc-sadie-nash-nash-u-leadership-internship", "nyc-sadie-nash-siblinghood-academy"],
+    reason: "Shared hub: one Sadie Nash application form covers several programs.",
+  }],
+  ["https://app.getacceptd.com/ccmsummer", {
+    ids: ["cincinnati-ccm-prep-musical-theatre-intensive", "cincinnati-ccm-prep-strings-intensive"],
+    reason: "Shared hub: one CCM Prep application portal covers both summer intensives (ticket r2-data-content-4).",
+  }],
   ["https://cosmos-ucop.ucdavis.edu/", {
     ids: ["cosmos-uc-davis", "uci-cosmos"],
     reason: "Same link on 2 cards (University of California (UC Davis campus); University of California, Irvine (COSMOS)). Not yet reviewed as a shared hub or a duplicate.",

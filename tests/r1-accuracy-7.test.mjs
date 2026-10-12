@@ -1,5 +1,5 @@
 // Ticket r1-accuracy-7: the languages note does not overclaim, and the California
-// wage row names both the 2026 rate and the Jan 1, 2027 rate from permits.json.
+// wage row points to the English Rules page for the Jan 1, 2027 rate (ticket r1-accuracy-14).
 // Run with: node --test tests/r1-accuracy-7.test.mjs
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -20,9 +20,9 @@ test("the I-9 row is the one that says it is a translation guide only", () => {
   assert.match(i9.covers, /translation guide only/);
 });
 
-test("California minimum wage row shows the 2026 rate and the Jan 1, 2027 rate", () => {
+test("California minimum wage row shows the 2026 rate and points to the Rules page for 2027", () => {
   const row = languages.rows.find((r) => r.state === "California" && /minimum wage/i.test(r.title));
   assert.ok(row, "no California minimum wage row");
-  assert.equal(row.covers, "$16.90 an hour in 2026, $17.40 from Jan 1, 2027");
+  assert.equal(row.covers, "$16.90 an hour from Jan 1, 2026. The 2027 rate is on the English Rules page.");
   assert.match(permits.states.ca.wage, /\$17\.40 from Jan 1, 2027/);
 });

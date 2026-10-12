@@ -37,6 +37,7 @@ HOME_KEYS = (
     "id", "name", "org", "city", "url", "paid_type", "fields", "priority", "deadline_confidence", "min_age", "max_age",
     "status", "deadline_iso", "opens_iso", "regions", "verified",
 )
+SOON_ONLY_KEYS = ("name", "org", "city", "url")
 DETAIL_KEYS = ("who_can_apply", "how_to_apply", "notes", "duration", "pay_detail")
 CSV_COLUMNS = [
     "id", "name", "org", "city", "regions", "type", "fields", "min_age", "max_age", "grades", "paid_type", "pay_detail",
@@ -84,7 +85,11 @@ def main():
         f.write("\n")
     # A key whose value is null is left out, as in the stats file: lib.js reads a missing key and a null the same way.
     # deadline_confidence is kept only when it is "confirmed-2026-27", the one value lib.futureDeadline and home.js test for; any other value reads the same as a missing key.
-    home = [{k: d[k] for k in HOME_KEYS if d.get(k) is not None and (k != "deadline_confidence" or d[k] == "confirmed-2026-27")} for d in programs]
+    # name, org, city and url are read only for the closing-soon list (home.js drawSoon), which draws only confirmed-2026-27 rows; the picker cards load each program's own file. verified stays on every row: lib.rank reads it.
+    # Rows are written in name order (then id). lib.rank breaks ties by name, and the Home picker ranks by that order instead of the dropped name (see home.js).
+    home_src = sorted(programs, key=lambda d: (d["name"], d["id"]))
+    home = [{k: d[k] for k in HOME_KEYS if d.get(k) is not None and (k != "deadline_confidence" or d[k] == "confirmed-2026-27")
+             and (k not in SOON_ONLY_KEYS or d.get("deadline_confidence") == "confirmed-2026-27")} for d in home_src]
     with open(os.path.join(OUT_DIR, "entries-home.json"), "w", encoding="utf-8") as f:
         json.dump(home, f, ensure_ascii=False, separators=(",", ":"))
         f.write("\n")

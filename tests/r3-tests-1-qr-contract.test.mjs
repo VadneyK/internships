@@ -80,6 +80,7 @@ test("share.html shows the same address text and link for each card", () => {
     assert.equal(card.querySelector("code").textContent, shown, name + " printed address");
     assert.equal(card.querySelector("[data-copy-link]").getAttribute("data-copy-link"), BASE + path, name + " copy link");
     assert.equal(card.querySelector("img").getAttribute("src"), "assets/qr/" + name + ".svg", name + " img src");
-    assert.ok(card.querySelector("img").getAttribute("alt").includes(shown), name + " alt text address");
+    // The address is printed as text in the card, so the alt text stays short (ticket r1-a11y-perf-3).
+    assert.match(card.querySelector("img").getAttribute("alt"), /^QR code/, name + " alt text");
   }
 });

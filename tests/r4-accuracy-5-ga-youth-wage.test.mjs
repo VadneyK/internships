@@ -9,7 +9,7 @@ const read = (rel) => fs.readFileSync(new URL(`../${rel}`, import.meta.url), "ut
 const states = read("src/states.html");
 const money = JSON.parse(read("data/money.json"));
 
-const YOUTH = "Georgia and federal law let an employer pay workers under 20 $4.25 an hour during their first 90 consecutive days. That is optional for the employer. This estimate uses $7.25 (see Georgia on the Other states page).";
+const YOUTH = "Federal law lets an employer pay workers under 20 $4.25 an hour during their first 90 consecutive days. That is optional for the employer. This estimate uses $7.25 (see Georgia on the Other states page).";
 
 test("money.json gaps has the Georgia youth wage line, word for word", () => {
   assert.ok(money.gaps.includes(YOUTH), "gaps has the youth wage line");

@@ -9,7 +9,7 @@ const WORDS = {
   "permit.html": ["mName"],
   "resume.html": ["rName"],
 };
-const FREE = { "playbook.html": ["pw0", "ph0"], "interview.html": ["rw0", "rc0"] };
+const FREE = { "playbook.html": ["pw0", "ph0"], "interview.html": ["rw0"] }; // rc0 (phone or email) is "none" now, checked in r3-teen-flow-6
 
 for (const [file, ids] of Object.entries(WORDS)) {
   test(file + " name inputs capitalize words", async () => {

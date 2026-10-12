@@ -46,7 +46,10 @@ function topLevelRules(css) {
       if (src[j] === "{") depth++;
       else if (src[j] === "}" && --depth === 0) break;
     }
-    if (!prelude.startsWith("@")) {
+    if (prelude.startsWith("@media (hover: hover)")) {
+      // Hover-only rules are wrapped in this block (ticket r2-a11y-perf-2). Read them as top-level rules.
+      for (const r of topLevelRules(src.slice(i + 1, j))) rules.push({ ...r, order: rules.length });
+    } else if (!prelude.startsWith("@")) {
       const decls = {};
       for (const part of src.slice(i + 1, j).split(";")) {
         const k = part.indexOf(":");

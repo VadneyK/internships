@@ -24,7 +24,7 @@ const lineOf = (s, idx) => s.slice(0, idx).split("\n").length;
 // Presence: name, regex that finds one form of the figure, files that must contain it.
 const PRESENT = [
   ["California minimum wage $16.90", /\$16\.90/, ["src/rules.html", "data/permits.json", "data/money.json", "data/languages.json"]],
-  ["California minimum wage $17.40", /\$17\.40/, ["src/rules.html", "data/permits.json", "data/languages.json"]],
+  ["California minimum wage $17.40", /\$17\.40/, ["src/rules.html", "data/permits.json"]],
   ["California fast food $20.00", /\$20\.00/, ["src/rules.html", "data/permits.json", "data/money.json"]],
   ["Chicago $17.05", /\$17\.05/, ["src/states.html", "data/permits.json", "data/money.json"]],
   ["Cook County $15.40", /\$15\.40/, ["src/states.html", "data/money.json"]],
@@ -78,7 +78,8 @@ test("state counts in words match data/permits.json", () => {
   const others = keys.filter((k) => k !== "bc");
   const n17 = others.length; // every state but BC (California is read too)
   const n13 = others.filter((k) => !["ca", "ga", "ny", "il"].includes(k)).length; // not California, Georgia, New York or Illinois
-  const n30 = JSON.parse(text["data/states-lite.json"]).states.length; // the shorter answers: every state not in permits.json
+  const lite = JSON.parse(text["data/states-lite.json"]).states;
+  const n30 = lite.filter((s) => s.id !== "dc").length; // the shorter answers: every state not in permits.json (Washington, DC is named after the count, see below)
   const bad = [];
   const sources = ["src/permit.html", "src/states.html", "data/parents.json", "assets/js/lib.js"];
   const body = Object.fromEntries(sources.map((f) => { const t = text[f] ?? readFileSync(join(root, f), "utf8"); return [f, f.endsWith(".html") ? plain(t) : t]; }));
@@ -88,6 +89,11 @@ test("state counts in words match data/permits.json", () => {
     for (const m of body[f].matchAll(/(\d+) more states/g)) { n13Hits++; { const want = f === "src/states.html" ? n13 : n30; if (+m[1] !== want) bad.push(`${f}:${lineOf(body[f], m.index)}: says ${m[1]} more states, data has ${want}`); } }
   }
   // Four places carry the words (permit.html x2, parents.json, lib.js), as the message says. Set to 4 on 2026-10-11: the old 5 counted a place that no longer has them.
+  // The shorter answers also include Washington, DC (ticket r2-accuracy-8), so the words after the count must name it.
+  if (lite.some((s) => s.id === "dc")) {
+    for (const f of ["src/permit.html", "assets/js/lib.js"])
+      for (const m of body[f].matchAll(/\d+ more states(?! and Washington, DC)/g)) bad.push(`${f}:${lineOf(body[f], m.index)}: says "more states" without naming Washington, DC`);
+  }
   assert.ok(n17Hits >= 4, "expected the '17 states and British Columbia' words in permit.html (x2), parents.json and lib.js");
   assert.ok(n13Hits >= 2, "expected the '13 more states' words in states.html");
   assert.deepEqual(bad, []);

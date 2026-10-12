@@ -14,7 +14,8 @@ test("r1-teen-flow-5: no-offer note sits under the lede with the four exact link
   const { document, errors } = await loadPage("ready.html");
   const note = document.getElementById("readyNoYes");
   assert.ok(note, "readyNoYes exists");
-  assert.equal(note.previousElementSibling.className, "lede");
+  assert.equal(note.previousElementSibling.className, "small muted");
+  assert.equal(note.previousElementSibling.previousElementSibling.className, "lede");
   assert.deepEqual([...note.querySelectorAll("a")].map((a) => a.getAttribute("href")), ["find.html", "jobs.html", "playbook.html", "calendar.html"]);
   const words = document.querySelector("p.lede").textContent.trim().split(/\s+/).length;
   assert.ok(words <= 45, "lede is " + words + " words");

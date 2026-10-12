@@ -268,8 +268,12 @@
     var open = -1;
     var tpBase = "tp" + (G._tpN = (G._tpN || 0) + 1);
     function subId(k) { return (sel.id || tpBase) + "-sub" + k; }
-    function mk(text, onclick) {
-      var b = document.createElement("button"); b.type = "button"; b.className = "tile"; b.textContent = text; b.setAttribute("aria-pressed", "false");
+    function mk(text, onclick, lang) {
+      var b = document.createElement("button"); b.type = "button"; b.className = "tile"; b.setAttribute("aria-pressed", "false");
+      /* An option with a lang keeps it: "Native (English)" puts the lang on a span around the native part only. */
+      var m = lang && /^(.*?)( \([^()]*\))$/.exec(text), sp = lang && document.createElement("span");
+      if (sp) { sp.setAttribute("lang", lang); sp.textContent = m ? m[1] : text; b.appendChild(sp); if (m) b.appendChild(document.createTextNode(m[2])); }
+      else b.textContent = text;
       b.addEventListener("click", onclick); return b;
     }
     function groupOf(i) { var g = opts.groups || []; for (var k = 0; k < g.length; k++) if (g[k].items.indexOf(i) > -1) return k; return -1; }
@@ -309,14 +313,14 @@
           var sub = document.createElement("div"); sub.className = "tp-sub"; sub.id = subId(k); sub.hidden = open !== k;
           var cap = document.createElement("p"); cap.className = "tp-cap"; cap.textContent = "Now pick one in " + grp.label; sub.appendChild(cap);
           var row = document.createElement("div"); row.className = "tp-row"; sub.appendChild(row);
-          grp.items.forEach(function (i) { var b = mk(opts.labelFor ? opts.labelFor(i, sel.options[i].textContent) : sel.options[i].textContent, function () { pick(i); }); b.setAttribute("aria-pressed", cur === i ? "true" : "false"); row.appendChild(b); });
+          grp.items.forEach(function (i) { var b = mk(opts.labelFor ? opts.labelFor(i, sel.options[i].textContent) : sel.options[i].textContent, function () { pick(i); }, sel.options[i].getAttribute("lang")); b.setAttribute("aria-pressed", cur === i ? "true" : "false"); row.appendChild(b); });
           wrap.appendChild(sub);
         });
       } else {
         for (var i = 0; i < sel.options.length; i++) {
           if (sel.options[i].value === "" && !(opts.anyLabel && i === 0) && (opts.skipEmpty !== false)) continue;
           if (opts.anyLabel && i === 0) continue;
-          (function (i) { var b = mk(sel.options[i].textContent, function () { pick(i); }); b.setAttribute("aria-pressed", cur === i ? "true" : "false"); first.appendChild(b); })(i);
+          (function (i) { var b = mk(sel.options[i].textContent, function () { pick(i); }, sel.options[i].getAttribute("lang")); b.setAttribute("aria-pressed", cur === i ? "true" : "false"); first.appendChild(b); })(i);
         }
       }
     }
@@ -405,19 +409,34 @@
       a.appendChild(m);
     }
   }
+  function markLink(a) {
+    if (isPdfLink(a)) addNote(a, "PDF", PDFNAME, "data-pdfnote");
+    if (a.getAttribute("target") === "_blank") addNote(a, "opens in a new tab", NEWTAB, "data-newtab");
+  }
   G.markNewTabLinks = function (root) {
     var links = (root || document).querySelectorAll('a[target="_blank"], a[href]');
-    for (var i = 0; i < links.length; i++) {
-      var a = links[i];
-      if (isPdfLink(a)) addNote(a, "PDF", PDFNAME, "data-pdfnote");
-      if (a.getAttribute("target") === "_blank") addNote(a, "opens in a new tab", NEWTAB, "data-newtab");
-    }
+    for (var i = 0; i < links.length; i++) markLink(links[i]);
   };
+  /* The observer only looks at nodes that were added, never the whole page, so a count change or the note we add ourselves costs nothing. */
+  function markAdded(records) {
+    var seen = [];
+    for (var r = 0; r < records.length; r++) {
+      var added = records[r].addedNodes;
+      for (var n = 0; n < added.length; n++) {
+        var node = added[n];
+        if (node.nodeType !== 1) continue;
+        if (node.tagName === "A") { if (seen.indexOf(node) < 0) seen.push(node); continue; }
+        var inner = node.querySelectorAll ? node.querySelectorAll("a[href], a[target]") : [];
+        for (var k = 0; k < inner.length; k++) if (seen.indexOf(inner[k]) < 0) seen.push(inner[k]);
+      }
+    }
+    for (var i = 0; i < seen.length; i++) markLink(seen[i]);
+  }
   (function () {
     var main = document.querySelector("main");
     G.markNewTabLinks(document);
     if (!main || !window.MutationObserver || G.newTabObserver) return;
-    G.newTabObserver = new MutationObserver(function () { G.markNewTabLinks(main); });
+    G.newTabObserver = new MutationObserver(markAdded);
     G.newTabObserver.observe(main, { childList: true, subtree: true });
   })();
 })();

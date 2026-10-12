@@ -14,8 +14,8 @@ const NOW = new Date(2026, 9, 10, 12).getTime();
 function refQ(e, q) {
   if (!q) return true;
   var hay = [e.name, e.org, e.city, e.what_you_do, e.notes, e.who_can_apply, (e.regions || []).map(L.regionLabel).join(" "), L.TYPES[e.type]].join(" ").toLowerCase();
-  // Words with no letters or digits (such as "---") are ignored, as the search now does (ticket r3-tests-2).
-  var words = q.toLowerCase().split(/\s+/).map(function (w) { return w.replace(/[^a-z0-9]+/g, " "); }).filter(function (w) { return w.trim() !== ""; });
+  // Words with no letters or digits (such as "---") are ignored, as the search now does (ticket r3-tests-2), and a leading symbol is trimmed so "(paid)" finds "paid" (ticket r3-tests-1).
+  var words = q.toLowerCase().split(/\s+/).map(function (w) { return w.replace(/[^a-z0-9]+/g, " ").replace(/^ +/, ""); }).filter(function (w) { return w.trim() !== ""; });
   var padded = " " + hay.replace(/[^a-z0-9]+/g, " ");
   return words.every(function (w) { return padded.indexOf(" " + w) > -1; });
 }

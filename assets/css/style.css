@@ -94,6 +94,7 @@ body {
   font-size: 1.0625rem;
   line-height: 1.55;
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -115,7 +116,7 @@ body::before {
 }
 img, svg { max-width: 100%; }
 a { color: var(--orange-text); text-underline-offset: 3px; text-decoration-thickness: 2px; }
-a:hover { color: var(--ink); }
+@media (hover: hover) { a:hover { color: var(--ink); } }
 :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
 .skip { position: absolute; left: -999px; top: 0; background: var(--tag-bg); color: var(--tag-fg); padding: .6rem 1rem; z-index: 100; }
 .skip:focus { left: 8px; top: 8px; }
@@ -151,7 +152,7 @@ li { margin-bottom: .35em; }
 .brand b { color: var(--orange-text); font-weight: 900; }
 .nav { display: flex; flex-wrap: wrap; gap: .4rem; margin-left: auto; }
 .nav a { display: inline-flex; align-items: center; min-height: 2.75rem; font-family: var(--display); font-stretch: 105%; font-weight: 800; font-style: italic; text-transform: uppercase; font-size: .82rem; letter-spacing: .04em; text-decoration: none; color: var(--ink); padding: .45rem .7rem; border: 2px solid transparent; border-radius: 6px; }
-.nav a:hover { border-color: var(--edge); color: var(--ink); }
+@media (hover: hover) { .nav a:hover { border-color: var(--edge); color: var(--ink); } }
 .nav a[aria-current="page"] { background: var(--tag-bg); color: var(--tag-fg); }
 .theme-btn { border: 2px solid var(--edge); background: var(--surface); color: var(--ink); border-radius: 999px; width: 2.75rem; height: 2.75rem; cursor: pointer; display: grid; place-items: center; font-size: 1.05rem; }
 @media (max-width: 40rem) { .nav { margin-left: 0; width: 100%; order: 3; } .theme-btn { margin-left: auto; } .top { position: static; } }
@@ -177,16 +178,17 @@ main [id], .prog { scroll-margin-top: 5rem; }
 
 /* buttons, tags, chips */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; font-family: var(--display); font-stretch: 108%; font-weight: 900; font-style: italic; text-transform: uppercase; letter-spacing: .03em; font-size: .95rem; text-decoration: none; background: var(--orange); color: var(--on-orange); border: 3px solid var(--edge); border-radius: 8px; padding: .7rem 1.1rem; box-shadow: var(--shadow-sm); cursor: pointer; min-height: 2.75rem; transition: transform .08s, box-shadow .08s; }
-.btn:hover { color: var(--on-orange); transform: translate(-1px, -1px); box-shadow: 5px 5px 0 var(--edge); }
+@media (hover: hover) { .btn:hover { color: var(--on-orange); transform: translate(-1px, -1px); box-shadow: 5px 5px 0 var(--edge); } }
 .btn:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--edge); }
 .btn.alt { background: var(--surface); color: var(--ink); }
-.btn.alt:hover { color: var(--ink); }
+@media (hover: hover) { .btn.alt:hover { color: var(--ink); } }
 .btn.dark { background: var(--tag-bg); color: var(--tag-fg); }
-.btn.dark:hover { color: var(--tag-fg); }
+@media (hover: hover) { .btn.dark:hover { color: var(--tag-fg); } }
 .btn.sm { font-size: .8rem; padding: .45rem .75rem; min-height: 2.25rem; border-width: 2px; box-shadow: 2px 2px 0 var(--edge); }
 /* A disabled button looks off: faded, dashed edge, no lift on hover, and the normal pointer is replaced with not-allowed. */
 .btn:disabled, .btn[disabled] { opacity: .5; border-style: dashed; box-shadow: none; cursor: not-allowed; }
-.btn:disabled:hover, .btn[disabled]:hover, .btn:disabled:active, .btn[disabled]:active { transform: none; box-shadow: none; }
+@media (hover: hover) { .btn:disabled:hover, .btn[disabled]:hover { transform: none; box-shadow: none; } }
+.btn:disabled:active, .btn[disabled]:active { transform: none; box-shadow: none; }
 .tag { display: inline-flex; align-items: center; gap: .3rem; background: var(--tag-bg); color: var(--tag-fg); font-family: var(--display); font-stretch: 100%; font-weight: 800; font-style: italic; text-transform: uppercase; letter-spacing: .05em; font-size: .75rem; line-height: 1; padding: .38rem .55rem .34rem; border-radius: 4px; white-space: nowrap; }
 .tag.y { background: var(--yellow); color: #151515; }
 .tag.o { background: var(--orange); color: #151515; }
@@ -205,7 +207,7 @@ input[type="checkbox"] { width: 1.25rem; height: 1.25rem; flex: none; accent-col
 label:has(> input[type="checkbox"]) { min-height: 2.75rem; }
 .breadcrumb li + li::before { content: ""; display: inline-block; flex: none; width: .4em; height: .4em; margin: 0 .6rem 0 .35rem; border-top: 2px solid currentColor; border-right: 2px solid currentColor; transform: rotate(45deg); }
 .chip { font: inherit; font-size: .92rem; font-weight: 600; color: var(--ink); background: var(--surface); border: 2px solid var(--edge); border-radius: 999px; padding: .38rem .8rem; cursor: pointer; min-height: 2.25rem; }
-.chip:hover { background: var(--paper-2); }
+@media (hover: hover) { .chip:hover { background: var(--paper-2); } }
 .chip[aria-pressed="true"] { background: var(--tag-bg); color: var(--tag-fg); }
 .chip .n { opacity: .65; font-weight: 500; margin-left: .25rem; }
 .chip .n:empty { display: none; }
@@ -268,8 +270,11 @@ label:has(> input[type="checkbox"]) { min-height: 2.75rem; }
    Flex hides the browser's triangle, so a plus or minus mark stands in for it. .acc keeps its own mark. */
 main details > summary { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 2.75rem; cursor: pointer; }
 main details > summary::-webkit-details-marker { display: none; }
-main details > summary::after { content: "+"; flex: none; font-size: 1.4rem; line-height: 1; font-weight: 800; }
-main details[open] > summary::after { content: "\2212"; }
+/* Empty alt text after the slash: screen readers skip the marks. */
+main details > summary::after { content: "+";
+  content: "+" / ""; flex: none; font-size: 1.4rem; line-height: 1; font-weight: 800; }
+main details[open] > summary::after { content: "\2212";
+  content: "\2212" / ""; }
 .prog dl { margin: .4rem 0 0; display: grid; gap: .5rem; }
 .prog dt { font-family: var(--display); font-style: italic; font-weight: 800; text-transform: uppercase; font-size: .75rem; letter-spacing: .05em; color: var(--ink-2); }
 .prog dd { margin: 0; }
@@ -281,6 +286,7 @@ main details[open] > summary::after { content: "\2212"; }
 @media (forced-colors: active) {
   .chip[aria-pressed="true"] { forced-color-adjust: none; background: Highlight; color: HighlightText; }
   .tile[aria-pressed="true"] { forced-color-adjust: none; background: Highlight; color: HighlightText; }
+  .nav a[aria-current="page"] { forced-color-adjust: none; background: Highlight; color: HighlightText; }
   .star[aria-pressed="true"] { forced-color-adjust: none; background: Highlight; color: HighlightText; }
   :focus-visible { outline: 3px solid Highlight; outline-offset: 3px; }
   /* Chart fills, legend keys and the progress meter keep a visible difference when colors are forced. */
@@ -349,12 +355,14 @@ tr:last-child th { border-bottom: 0; }
 /* footer: always dark, in both themes */
 .foot { border-top: 3px solid var(--edge); background: #0d0c0c; color: #f3f0ea; padding-block: 2rem; margin-top: 2rem; }
 .foot a { color: #f6c431; }
-.foot a:hover { color: #ffffff; }
+@media (hover: hover) { .foot a:hover { color: #ffffff; } }
 .foot .cols { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); }
 .foot .fh { color: #f6c431; font-size: 1.05rem; letter-spacing: .01em; margin: 0 0 .6em; }
 .foot p { font-size: .92rem; }
 /* quick links: a real list, each link a 2.75rem (44px) tap target, the same size as every other control */
 .foot .qlinks { list-style: none; padding-left: 0; margin: 0; font-size: .92rem; }
+.foot .fh2 { color: #f3f0ea; font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin: 1rem 0 .1rem; }
+.foot .fh + .fh2 { margin-top: 0; }
 .foot li { margin-bottom: 0; }
 .foot li a { display: inline-flex; align-items: center; min-height: 2.75rem; }
 
@@ -399,6 +407,9 @@ tr:last-child th { border-bottom: 0; }
   /* Every button in the page body does nothing on paper (Print, Copy, Clear, Add a person, Save as picture, filter chips).
      Only the chosen tap tile is kept, and it is a .tile so it is not matched here. */
   main button:not(.tile) { display: none !important; }
+  /* The print-one copy (#printRoot) sits outside main, so the rule above does not reach it. Hide any control a copied sheet carries
+     (resume, permit packet, prep sheet, safety card, QR sheet, leaders letters). Tap tiles and links stay. */
+  #printRoot button:not(.tile), #printRoot input, #printRoot select, #printRoot textarea, #printRoot .noprint { display: none !important; }
   main details > summary::after { content: none; }
   /* Paper keeps the teen's own answer only: unselected tap tiles, the picker captions, the Show more pager,
      the "Text this to a parent" row and the Menu button stay on the screen. The selected tile still prints. */
@@ -428,6 +439,8 @@ tr:last-child th { border-bottom: 0; }
   a { color: #151515; text-decoration: none; }
   /* Print the address after each link in the main content, so a paper copy keeps where it goes. Buttons and .noprint links are skipped. */
   main a[href^="http"]:not(.btn):not(.noprint)::after { content: " (" attr(href) ")"; overflow-wrap: anywhere; }
+  /* The print-one copy (#printRoot) sits outside main, so the rule above misses it. Same rule for it; same skips as main. */
+  #printRoot a[href^="http"]:not(.btn):not(.noprint)::after { content: " (" attr(href) ")"; overflow-wrap: anywhere; }
   /* Program cards: the "Official page" and "Apply" buttons are .btn links, so the rule above skips them. Print their addresses too. */
   .prog a.btn[href^="http"]:not(.noprint)::after { content: " (" attr(href) ")"; overflow-wrap: anywhere; }
   /* Languages and Calendar cards: their "Open the official page" and "Official page" buttons are .btn links in a plain .card, so print their addresses too. */
@@ -463,7 +476,7 @@ tr:last-child th { border-bottom: 0; }
 }
 
 .callout:not(.plain):not(.warn):not(.bad) a { color: #151515; }
-.callout:not(.plain):not(.warn):not(.bad) a:hover { color: #151515; text-decoration-thickness: 3px; }
+@media (hover: hover) { .callout:not(.plain):not(.warn):not(.bad) a:hover { color: #151515; text-decoration-thickness: 3px; } }
 
 .callout.bad a, .callout.warn a { color: var(--ink); }
 
@@ -493,7 +506,7 @@ tr:last-child th { border-bottom: 0; }
 /* insights charts */
 .chart { display: grid; gap: .5rem; }
 .crow { display: grid; grid-template-columns: minmax(7rem, 11rem) minmax(0, 1fr) auto; gap: .6rem; align-items: center; text-decoration: none; color: var(--ink); padding: .15rem 0; }
-.crow:hover .cl { text-decoration: underline; }
+@media (hover: hover) { .crow:hover .cl { text-decoration: underline; } }
 .crow .cl { font-weight: 700; }
 .crow .cn { font-family: var(--display); font-style: italic; font-weight: 900; min-width: 2.2rem; text-align: right; }
 .crow .cn small { font-family: var(--body, inherit); font-style: normal; font-weight: 500; color: var(--ink-2); }
@@ -505,7 +518,7 @@ tr:last-child th { border-bottom: 0; }
 .k3 { background: var(--paper-2); }
 .chart.cols { display: flex; align-items: flex-end; gap: .8rem; height: 17rem; }
 .ccol { flex: 1; display: grid; grid-template-rows: auto 1fr auto; justify-items: center; height: 100%; text-decoration: none; color: var(--ink); gap: .3rem; min-width: 0; }
-.ccol:hover .cl { text-decoration: underline; }
+@media (hover: hover) { .ccol:hover .cl { text-decoration: underline; } }
 .ccol .cbar { width: 100%; display: flex; align-items: flex-end; border-bottom: 3px solid var(--edge); }
 .ccol .cbar i { display: flex; align-items: flex-end; width: 100%; border: 3px solid var(--edge); border-bottom: 0; background: var(--surface); }
 .ccol .cbar i b { display: block; width: 100%; border-top: 3px solid var(--edge); }
@@ -537,7 +550,7 @@ main, main a, code { overflow-wrap: break-word; }
 .tp { display: grid; gap: .6rem; margin-top: .2rem; }
 .tp-row { display: flex; flex-wrap: wrap; gap: .5rem; }
 .tile { font: inherit; font-size: 1.02rem; font-weight: 700; color: var(--ink); background: var(--surface); border: 2px solid var(--edge); border-radius: 12px; padding: .55rem 1rem; cursor: pointer; min-height: 3rem; text-align: left; }
-.tile:hover { background: var(--paper-2); }
+@media (hover: hover) { .tile:hover { background: var(--paper-2); } }
 .tile[aria-pressed="true"] { background: var(--tag-bg); color: var(--tag-fg); }
 .tile .n { font-weight: 500; opacity: .7; margin-left: .3rem; }
 .tp-sub { border-left: 4px solid var(--edge); padding-left: .8rem; display: grid; gap: .4rem; }
@@ -566,6 +579,7 @@ dl.facts.plain > div { border: 0; border-top: 2px solid var(--edge); border-radi
 .handout { max-width: 46rem; }
 .handout-code { display: flex; align-items: center; gap: 1.2rem; margin: 1rem 0; flex-wrap: wrap; }
 .handout-code p { margin: 0; }
+.qrcard img, .handout-code img, #qrPrint img { background: #fff; border: 3px solid var(--edge); padding: .3rem; }
 .handout-url { font-size: 1.25rem; font-weight: 800; overflow-wrap: anywhere; }
 .handout-steps li, .handout-not li { margin-bottom: .4rem; font-size: 1.1rem; }
 .handout-foot { margin-top: 1rem; }

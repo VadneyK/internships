@@ -101,6 +101,11 @@
     if (KEEP.checked) saveDraft();
     else { try { localStorage.removeItem("resume"); } catch (e) {} }
   });
+  /* The form starts with example values. On first focus, an untouched example is selected so the first keystroke replaces it. Typed text is never selected. */
+  ["rName", "rEmail", "rPhone", "rCity", "rSchool"].forEach(function (id) {
+    var el = $(id);
+    el.addEventListener("focus", function () { if (el.value === el.defaultValue) el.select(); });
+  });
   /* The form starts with an example. Asking first is only needed once the teen has changed it. */
   var FIELDS_ALL = Array.prototype.slice.call($("rf").querySelectorAll("input[type=text], input:not([type]), input[type=email], input[type=tel], textarea"));
   function hasOwnWork() {

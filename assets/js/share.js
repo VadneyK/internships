@@ -10,7 +10,7 @@
   document.querySelectorAll("[data-print-qr]").forEach(function (b) {
     b.addEventListener("click", function () {
       var card = b.closest(".qrcard");
-      var img = card.querySelector("img"), title = card.querySelector("h2").textContent, link = card.querySelector("code").textContent;
+      var img = card.querySelector("img"), title = card.querySelector("h3").textContent, link = card.querySelector("code").textContent;
       var area = $("qrPrint"); area.innerHTML = "";
       var h = document.createElement("h2"); h.textContent = title; area.appendChild(h);
       var pic = document.createElement("p"), big = img.cloneNode(true); big.setAttribute("width", "320"); big.setAttribute("height", "320"); pic.appendChild(big); area.appendChild(pic);

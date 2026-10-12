@@ -19,8 +19,8 @@
   "pay_detail": "2026 package fee: $1,791 campus option or $1,420 online option (3 credits, tuition and fees). Also a $75 application fee and a $275 program deposit that is credited to the bill. Partial scholarships, none above 30% of the package fee.",
   "season": "summer",
   "duration": "3 weeks (Jul 13 to Jul 31 in 2026)",
-  "status": "closed-expect-reopen",
-  "deadline_text": "The program dates page says the window opens January 6 and closes June 1 (no year printed). The 2026 program ran July 13 to 31, 2026.",
+  "status": "opens-soon",
+  "deadline_text": "The program dates page says the window opens January 6 and closes June 1 (no year printed; (year inferred from the next cycle)). The 2026 program ran July 13 to 31, 2026.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Pick a course and the campus or online option, then apply online with a transcript, health insurance card and card payment for the application fee and deposit. No essays or recommendations.",
@@ -37,5 +37,6 @@
   "priority": 2,
   "notes": "Costs shown are the 2026 prices; 2027 prices are not posted. Commuter program: no campus housing except the business course BMGT262. The grade posts to a UMD college transcript. Not a job, so no work permit.",
   "verified": "fetched",
-  "verified_on": "2026-10-09"
+  "verified_on": "2026-10-09",
+  "opens_iso": "2027-01-06"
 }

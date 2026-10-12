@@ -25,7 +25,7 @@ test("California wages match in permits, money preset, languages and rules page"
   assert.match(PM.states.ca.wage, /\$17\.40/);
   assert.ok(MONEY.presets.find((p) => p.id === "ca").label.includes("$16.90"));
   assert.equal(MONEY.presets.find((p) => p.id === "ca").wage, 16.9);
-  assert.ok(has(LANG, "$16.90 an hour in 2026"));
+  assert.ok(has(LANG, "$16.90 an hour from Jan 1, 2026"));
   assert.ok(has(RULES, "$16.90"));
   assert.ok(has(RULES, "$17.40"));
   assert.ok(has(RULES, "$16.90</b> an hour in 2026"));

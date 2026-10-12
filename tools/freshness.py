@@ -27,10 +27,13 @@ import proglib
 
 def needs_refresh(d, today, days):
     reasons = []
-    verified = dt.date.fromisoformat(d["verified_on"])
-    age = (today - verified).days
-    if age > days:
-        reasons.append("last verified %d days ago" % age)
+    verified = proglib.parse_iso(d.get("verified_on"))
+    if verified is None:
+        reasons.append("verified_on is missing or not a real date")
+    else:
+        age = (today - verified).days
+        if age > days:
+            reasons.append("last verified %d days ago" % age)
     close = proglib.parse_iso(d.get("deadline_iso"))
     if close and d["status"] in ("open-now", "opens-soon") and close < today:
         reasons.append("status says open but the deadline %s has passed; mark it closed-expect-reopen" % d["deadline_iso"])
@@ -64,7 +67,7 @@ def urgency_tier(d, today):
 
 
 def urgency_key(d, today):
-    return (urgency_tier(d, today), d["verified_on"], d["regions"][0], d["name"])
+    return (urgency_tier(d, today), d.get("verified_on") or "", d["regions"][0], d["name"])
 
 
 def build_text(today, rows, intro):

@@ -92,11 +92,12 @@ test("the matcher catches a stale count", () => {
 // The permit finder says how many states it has full answers for (permits.json, minus BC) and how many it has
 // shorter answers for (states-lite.json). The "not read" text in lib.js and the meta and og descriptions in permit.html
 // must give both live counts, so a count that drifts from the data fails here, not only a number written as a fixed string.
-const SHORT_STATES = readJson("data/states-lite.json").states.length;
+// states-lite.json lists DC as well as states; DC is not a state, so the count of states excludes "dc" and DC is named.
+const SHORT_STATES = readJson("data/states-lite.json").states.filter((s) => s.id !== "dc").length;
 function permitCountGaps(text) {
   const gaps = [];
   if (!new RegExp(`\\b${live.permitStatesNoBC} states and (British Columbia|BC)\\b`).test(text)) gaps.push(`full count ${live.permitStatesNoBC} states and British Columbia (or BC)`);
-  if (!new RegExp(`\\b${SHORT_STATES} more\\b`).test(text)) gaps.push(`shorter count ${SHORT_STATES} more`);
+  if (!new RegExp(`\\b${SHORT_STATES} more states and Washington, DC\\b`).test(text)) gaps.push(`shorter count ${SHORT_STATES} more states and Washington, DC`);
   return gaps;
 }
 function metaContent(html, key) {
@@ -121,9 +122,10 @@ test("the permit finder's not-read text and page descriptions give the live full
 });
 
 test("the permit count check catches a stale full or shorter count", () => {
-  const good = "We have full answers for 17 states and British Columbia, and shorter answers for 34 more states.";
+  const good = "We have full answers for 17 states and British Columbia, and shorter answers for 33 more states and Washington, DC.";
   assert.deepEqual(permitCountGaps(good), []);
-  assert.equal(permitCountGaps(good.replace("for 34 more", "for 16 more")).length, 1);
+  assert.equal(permitCountGaps(good.replace("for 33 more", "for 34 more")).length, 1);
+  assert.equal(permitCountGaps(good.replace(", DC", "")).length, 1);
   assert.equal(permitCountGaps(good.replace("17 states", "16 states")).length, 1);
   assert.equal(permitCountGaps("We have read 17 states and British Columbia.").length, 1);
 });

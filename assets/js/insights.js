@@ -27,7 +27,7 @@
     var open = d.status[0].n + d.status[1].n, any = d.status[2].n;
     $("todayLead").textContent = open + " programs are open or opening soon, and " + any + " more take applications any time (like library volunteering). Start with the any-time ones if nothing is open yet.";
     var smax = Math.max.apply(null, d.status.map(function (s) { return s.n; }));
-    rows($("chartStatus"), d.status, smax, function (it) { return it.id === "unknown" ? null : link({ when: WHEN[it.id] }); }, "k2");
+    rows($("chartStatus"), d.status, smax, function (it) { return it.id === "unknown" || it.id === "passed" ? null : link({ when: WHEN[it.id] }); }, "k2");
 
     /* age */
     var amax = Math.max.apply(null, d.ages.map(function (a) { return a.n; }));

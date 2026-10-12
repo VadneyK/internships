@@ -8,7 +8,7 @@ test("interview.json: daySource has https urls and no day tip leans on unnamed '
   assert.ok(Array.isArray(D.daySource) && D.daySource.length >= 1);
   D.daySource.forEach((s) => { assert.ok(s.title); assert.match(s.url, /^https:\/\//); });
   D.day.forEach((t) => assert.ok(!/the sources/i.test(t), t));
-  assert.ok(D.day.some((t) => /^Dress/.test(t) && /religious or uniform/.test(t)), "dress tip carries the gaps caveat");
+  assert.ok(D.day.some((t) => /^(Cal Poly Pomona says to )?dress/i.test(t) && /religious or uniform/.test(t)), "dress tip carries the gaps caveat");
   assert.ok(D.day.some((t) => /Our suggestion, not from a source\./.test(t)));
   assert.ok(!D.day.some((t) => /polo|paperwork/i.test(t)));
   assert.ok(![...D.day, ...D.daySource.map((s) => s.title)].some((t) => /[\u2013\u2014]/.test(t)));

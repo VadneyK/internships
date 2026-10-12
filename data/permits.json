@@ -35,6 +35,10 @@
     {
      "t": "Full California rules on this site",
      "u": "rules.html#permit"
+    },
+    {
+     "t": "DIR news release on the 2027 rate",
+     "u": "https://dir.ca.gov/DIRNews/2026/2026-66.html"
     }
    ],
    "hours": {
@@ -42,7 +46,7 @@
     "14": "School days: up to 3 hours, outside school hours. Non-school days: up to 8 hours. School weeks: up to 18 hours. When school is out: up to 8 hours a day and 40 a week. Only between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). At 14 to 17, you need to have finished 7th grade to work while school is in session.",
     "16": "School days: up to 4 hours. Non-school days: up to 8 hours. Up to 48 hours a week. Between 5 a.m. and 10 p.m. (12:30 a.m. before a non-school day). At 14 to 17, you need to have finished 7th grade to work while school is in session."
    },
-   "wage": "$16.90 an hour in 2026 and $17.40 from Jan 1, 2027. Some cities pay more, so ask your employer for the rate. Fast food workers have a higher state minimum of $20.00 (as of the DIR minimum wage page we read on Oct 7, 2026).",
+   "wage": "$16.90 an hour in 2026 and $17.40 from Jan 1, 2027. Some cities pay more, so ask your employer for the rate. Teens get the same minimum as adults, with one exception the state lists: learners with no related experience may be paid 85 percent for their first 160 hours. Fast food workers have a higher state minimum of $20.00 (as of the DIR minimum wage page we read on Oct 7, 2026).",
    "minAge": {
     "job": 14,
     "note": "At 12 and 13 the state chart says no permit for irregular odd jobs in private homes, such as babysitting and yard work, and none for a self-employed newspaper route at age 12 or older. The chart does not say these jobs skip the hour limits, so ask the Labor Commissioner at 833-526-4636 before you plan how much you can do. A self-employed minor needs no permit, but no page we read names pet care, so ask the Labor Commissioner at 833-526-4636 first."
@@ -149,10 +153,10 @@
     }
    ],
    "hours": {
-    "14": "At most employers the federal limits apply, and they are stricter. School days: up to 3 hours. School weeks: up to 18 hours. Non-school days: up to 8 hours. When school is out: up to 40 hours a week. Only between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). Georgia also sets these limits: no work between 9 p.m. and 6 a.m. under 16, up to 4 hours on a school day, 8 on other days, 40 a week.",
+    "14": "If your employer is covered by federal law, the federal limits apply, and they are stricter. School days: up to 3 hours. School weeks: up to 18 hours. Non-school days: up to 8 hours. When school is out: up to 40 hours a week. Only between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). Georgia also sets these limits: no work between 9 p.m. and 6 a.m. under 16, up to 4 hours on a school day, 8 on other days, 40 a week.",
     "16": "The pages we read set no hour limit at 16 and 17 (the Georgia work permit rule covers minors under 16). Ask the US Department of Labor or your state agency before you plan long shifts. Dangerous jobs are still off limits, and anyone 17 or younger may not take orders for or serve alcohol, except where it is sold to take off the premises."
    },
-   "wage": "$7.25 an hour at nearly every employer. An employer may pay workers under 20 $4.25 during their first 90 consecutive days. That is optional for the employer, and after 90 days or at age 20 you must get the full minimum.",
+   "wage": "$7.25 an hour at employers covered by federal law. An employer may pay workers under 20 $4.25 during their first 90 consecutive days. That is optional for the employer, and after 90 days or at age 20 you must get the full minimum.",
    "minAge": {
     "job": 14,
     "note": "Federal law sets 14 for most non-farm jobs. The Georgia DOL summary sheet says the minimum age is 14. The state code mentions work certificates for some 12 and 13 year olds. Ask Georgia DOL: 1-877-709-8185."
@@ -248,7 +252,7 @@
     "14": "School in session: not before 7 a.m. or after 7 p.m., up to 3 hours on a school day, 8 on a non-school day, 18 a week, 6 days a week. School closed all week: up to 8 hours a day and 40 a week. When school is closed: not between 9 p.m. and 7 a.m.",
     "16": "School in session: up to 4 hours on a day before a school day (Monday to Thursday), 8 hours Friday to Sunday and holidays, 28 a week, 6 days a week. Not before 6 a.m. and generally not after 10 p.m., or midnight with a parent's written permission. When school is not in session: up to 48 hours a week, and not between midnight and 6 a.m."
    },
-   "wage": "$17.00 an hour in New York City, Long Island and Westchester, and $16.00 in the rest of the state (2026). The state says these rates stay the same on January 1, 2027. There is no lower rate for teens on the pages we read.",
+   "wage": "$17.00 an hour in New York City, Long Island and Westchester, and $16.00 in the rest of the state (2026). The state says these rates stay the same on January 1, 2027. The page we read does not say whether a lower youth wage applies.",
    "minAge": {
     "job": 14,
     "note": "Ages 14 to 17 need working papers for almost any job in New York. Farming and caddying are exempt."
@@ -357,7 +361,7 @@
     "14": "No more than 18 hours in a school week, 40 when school is out, 3 hours on a school day, 8 hours in any 24 hours, and only between 7 a.m. and 7 p.m. (until 9 p.m. from June 1 to Labor Day). A meal break of at least 30 minutes by the 5th hour in a row.",
     "16": "The pages we read set no hour limit at 16 and 17 (the Illinois child labor law covers workers under 16). Ask the US Department of Labor or your state agency before you plan long shifts."
    },
-   "wage": "$15.00 an hour. Under 18 you may be paid $13.00 for your first 650 hours in a year with one employer. Chicago is $17.05 from July 1, 2026 at employers with 4 or more employees. The city page we read does not say if this covers workers under 18.",
+   "wage": "$15.00 an hour. Under 18 you may be paid $13.00 while you work less than 650 hours in a calendar year. Chicago is $17.05 from July 1, 2026 at employers with 4 or more employees. The city page we read does not say if this covers workers under 18. The page we read does not give a 2027 rate.",
    "minAge": {
     "job": 14,
     "note": "Most non-farm jobs covered by federal law start at 14."
@@ -554,7 +558,7 @@
     }
    ],
    "hours": {
-    "14": "At most employers the federal limits apply and they are stricter: school days up to 3 hours, school weeks up to 18 hours, non-school days up to 8 hours, 40 a week when school is out, between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). Texas also says no more than 8 hours a day or 48 a week, nothing before 5 a.m., and nothing past 10 p.m. before a school day.",
+    "14": "If your employer is covered by federal law, the federal limits apply and they are stricter: school days up to 3 hours, school weeks up to 18 hours, non-school days up to 8 hours, 40 a week when school is out, between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). Texas also says no more than 8 hours a day or 48 a week, nothing before 5 a.m., and nothing past 10 p.m. before a school day.",
     "16": "A child who is 16 or 17 has no restrictions on the number of hours or times of day they may work."
    },
    "wage": "$7.25 an hour (Texas follows the federal minimum wage). Under federal law an employer may pay $4.25 to workers under 20 for their first 90 days.",
@@ -646,10 +650,10 @@
     }
    ],
    "hours": {
-    "14": "At most employers the federal limits apply and they are stricter: school days up to 3 hours, school weeks up to 18 hours, non-school days up to 8 hours, 40 a week when school is out, between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). Minnesota's own limit for under 16: not before 7 a.m. or after 9 p.m., no more than 8 hours in 24 or 40 a week.",
+    "14": "If your employer is covered by federal law, the federal limits apply and they are stricter: school days up to 3 hours, school weeks up to 18 hours, non-school days up to 8 hours, 40 a week when school is out, between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). Minnesota's own limit for under 16: not before 7 a.m. or after 9 p.m., no more than 8 hours in 24 or 40 a week.",
     "16": "High school students 16 and 17 may not work after 11 p.m. on evenings before school days or before 5 a.m. on school days. With written parent permission this moves to 11:30 p.m. and 4:30 a.m."
    },
-   "wage": "$11.41 an hour in 2026 and $11.87 from Jan 1, 2027. Minneapolis and Saint Paul have their own higher minimums.",
+   "wage": "$11.41 an hour in 2026 and $11.87 from Jan 1, 2027. A 90-day training wage of $9.31 an hour is allowed for workers under 20. Minneapolis and Saint Paul have their own higher minimums.",
    "limits": {
     "14": {
      "schoolDay": 3,
@@ -740,7 +744,7 @@
     "14": "School days: up to 3 hours a day and 18 a week. Non-school days: up to 8 hours a day and 40 a week. 7 a.m. to 7 p.m., or 9 p.m. from June 1 to Labor Day.",
     "16": "State and federal laws do not limit the hours that minors 16 and older may work, but not during required school attendance."
    },
-   "wage": "$7.25 an hour. Employers may pay $5.90 an hour for the first 90 days.",
+   "wage": "$7.25 an hour. Employers may pay workers under 20 $5.90 an hour for the first 90 days.",
    "limits": {
     "14": {
      "schoolDay": 3,
@@ -914,10 +918,10 @@
     }
    ],
    "hours": {
-    "14": "At most employers the federal limits apply and they are stricter: school days up to 3 hours, school weeks up to 18 hours, non-school days up to 8 hours, 40 a week when school is out, between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). Michigan's own rules also say not before 7 a.m. or after 9 p.m. for 14 and 15, and no more than 48 hours of school and work combined in a week.",
+    "14": "If your employer is covered by federal law, the federal limits apply and they are stricter: school days up to 3 hours, school weeks up to 18 hours, non-school days up to 8 hours, 40 a week when school is out, between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). Michigan's own rules also say not before 7 a.m. or after 9 p.m. for 14 and 15, and no more than 48 hours of school and work combined in a week.",
     "16": "Not more than 24 hours in a workweek when school is in session, or 48 when it is not. Not before 6 a.m. or after 10:30 p.m. Sunday to Thursday, and not after 11:30 p.m. Friday and Saturday. The state gives two late hours, so we check against 10 p.m. to stay safe. These limits come from a state webinar PDF, so confirm with the state."
    },
-   "wage": "$13.73 an hour in 2026 and $15.00 from Jan 1, 2027. Workers 16 and 17 may be paid 85 percent.",
+   "wage": "$13.73 an hour in 2026 and $15.00 from Jan 1, 2027. The page we read does not say whether a lower youth wage applies.",
    "limits": {
     "14": {
      "schoolDay": 3,
@@ -1109,7 +1113,7 @@
     }
    ],
    "hours": {
-    "14": "Workers under 16 may not work more than 40 hours a week and 8 hours a day. At most employers the federal limits apply and they are stricter: school days up to 3 hours, school weeks up to 18 hours, non-school days up to 8 hours, 40 a week when school is out, between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day).",
+    "14": "Workers under 16 may not work more than 40 hours a week and 8 hours a day. If your employer is covered by federal law, the federal limits apply and they are stricter: school days up to 3 hours, school weeks up to 18 hours, non-school days up to 8 hours, 40 a week when school is out, between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day).",
     "16": "Workers 16 and up may work up to 50 hours in a week and 10 hours a day only between the last day of school and Labor Day. A school-week limit of about 40 hours a week and 8 hours a day appears in a state page summary, so confirm it. A 30 minute break after 6 hours in a row."
    },
    "wage": "$15.92 an hour in 2026 for most employees, and $16.48 from Jan 1, 2027.",
@@ -1313,7 +1317,7 @@
     "14": "School year: 7 a.m. to 7 p.m. and not during school hours, up to 3 hours a school day and 18 a week. Summer (July 1 to Labor Day): 7 a.m. to 9 p.m., up to 8 hours a day and 40 a week.",
     "16": "6 a.m. to 10 p.m. on school nights, up to 48 hours a week and 9 hours a day. After 8 p.m. an adult must be at the workplace to supervise 14 to 17 year olds."
    },
-   "wage": "At least $15.00 an hour under state law. We could not read the current 2026 rate because mass.gov blocked our reader.",
+   "wage": "At least $15.00 an hour under state law (General Laws chapter 151, section 1). The page we read does not say whether a lower youth wage applies. The page we read does not give a 2027 rate.",
    "limits": {
     "14": {
      "schoolDay": 3,
@@ -1406,7 +1410,7 @@
     "14": "Children under 15 cannot work during school hours, more than 4 hours on school days, more than 7 hours on a non-school day, more than 20 hours in a week with 5 school days, or more than 35 hours a week when school is not in session. At age 15 the standard hours of work rules apply.",
     "16": "Age 15 and older: the standard hours of work rules apply."
    },
-   "wage": "C$18.25 an hour as of June 1, 2026.",
+   "wage": "C$18.25 an hour as of June 1, 2026. The page we read does not give a 2027 rate.",
    "limits": {
     "14": null,
     "16": null
@@ -1493,7 +1497,7 @@
     "14": "Under 16: not before 7 a.m. Not after 9 p.m. from June 1 to Sept 1, or after 7 p.m. at other times. The night before a non-school day, 7 to 9 p.m. is allowed with parent approval. Up to 3 hours on a school day, 18 hours in a school week, 8 hours on a non-school day, 40 hours when school is out. A 30 minute rest after 5 hours in a row. This law took effect Oct 9, 2026. The state poster linked on this card is from 2016, before this law, so its hours may be different. Use the law link and confirm with the Ohio Department of Commerce.",
     "16": "Ages 16 and 17 may not work after 11 p.m. on a night before a school day, or before 7 a.m. on a school day (6 a.m. if not employed after 8 p.m. the night before)."
    },
-   "wage": "We could not confirm Ohio's 2026 minimum wage because the state's website was down when we checked. Under 16, the employer must pay at least the federal $7.25.",
+   "wage": "$11.00 an hour at employers with $405,000 or more in yearly gross receipts, and $7.25 at smaller employers (US Department of Labor state table, updated July 1, 2026). Under 16, the employer must pay at least the federal $7.25. The page we read does not give a 2027 rate.",
    "limits": {
     "14": {
      "schoolDay": 3,
@@ -1580,10 +1584,10 @@
     }
    ],
    "hours": {
-    "14": "At most employers the federal limits apply and they are stricter: school days up to 3 hours, school weeks up to 18 hours, non-school days up to 8 hours, 40 a week when school is out, between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). This matches Maryland's page.",
+    "14": "If your employer is covered by federal law, the federal limits apply and they are stricter: school days up to 3 hours, school weeks up to 18 hours, non-school days up to 8 hours, 40 a week when school is out, between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). This matches Maryland's page.",
     "16": "Ages 16 and 17 may not spend more than 12 hours in a combination of school and work each day, and must have at least 8 straight hours off from work and school in each 24 hours."
    },
-   "wage": "$15.00 an hour statewide. Employees under 18 must earn at least 85 percent of the state rate. Prince George's County is $15.30 from July 1, 2026, and Montgomery County is $15.95, $16.50 or $18.00 depending on the employer's size.",
+   "wage": "$15.00 an hour statewide. Employees under 18 must earn at least 85 percent of the state rate. Prince George's County is $15.30 from July 1, 2026, and Montgomery County is $15.95, $16.50 or $18.00 depending on the employer's size. The page we read does not give a 2027 rate.",
    "limits": {
     "14": {
      "schoolDay": 3,
@@ -1670,10 +1674,10 @@
     }
    ],
    "hours": {
-    "14": "At most employers the federal limits apply and they are stricter: school days up to 3 hours, school weeks up to 18 hours, non-school days up to 8 hours, 40 a week when school is out, between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). This matches Virginia's page.",
+    "14": "If your employer is covered by federal law, the federal limits apply and they are stricter: school days up to 3 hours, school weeks up to 18 hours, non-school days up to 8 hours, 40 a week when school is out, between 7 a.m. and 7 p.m. (9 p.m. from June 1 to Labor Day). This matches Virginia's page.",
     "16": "The Virginia page lists no hour limits for 16 and 17 year olds. They may not work in particularly hazardous jobs."
    },
-   "wage": "$12.77 an hour as of Jan 1, 2026. The page we read does not give a 2027 rate.",
+   "wage": "$12.77 an hour as of Jan 1, 2026. The page we read does not give a 2027 rate. Employees in an employer training program for up to 90 days may be paid the greater of 75 percent of the state minimum wage or the federal minimum.",
    "limits": {
     "14": {
      "schoolDay": 3,

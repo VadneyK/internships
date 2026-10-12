@@ -26,6 +26,7 @@ const VAR_ALLOW = {
 
 // Classes used in markup or JS that need no rule in style.css.
 const HOOK_ALLOW = {
+  "mf-count": "hook for the count of filters on in the More filters summary on Find (find.js), no styling needed",
   langlist: "JS or test hook on the languages page, no styling needed",
   nextstep: "hook for the next-step block, styled through its parent",
   packet: "hook for the printable packet wrapper, styled through its parent",

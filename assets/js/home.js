@@ -3,6 +3,7 @@
   "use strict";
   var G = window.TIG;
   var $ = function (id) { return document.getElementById(id); };
+  var nameRank = {}; /* id to position in the home file, which is in name order */
   var all = []; /* the home file: enough to match, sort and draw the closing-soon list */
   var pickRun = 0; /* counts picker changes so a slow download never draws over a newer pick */
 
@@ -41,7 +42,7 @@
     var age = $("pAge").value, hub = $("pHub").value;
     var st = { age: age, place: hub };
     var soon = all.filter(function (e) { return fut(e) && e.deadline_confidence === "confirmed-2026-27" && L.matches(e, st, Date.now()); })
-      .sort(function (a, b) { return fut(a) - fut(b) || (a.priority || 3) - (b.priority || 3); }).slice(0, 8);
+      .sort(function (a, b) { return fut(a) - fut(b) || (a.priority || 3) - (b.priority || 3) || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0); }).slice(0, 8);
     var note = $("soonNote"), stat = $("soonStatus");
     if (note) {
       if (age || hub) {
@@ -69,9 +70,10 @@
     var box = $("matches"), more = $("matchMore"), status = $("matchStatus");
     if (!age && !hub && !field) { box.innerHTML = ""; more.hidden = true; status.textContent = ""; return; }
     var fl = field ? [field] : [];
+    /* lib.rank breaks ties by name. The copy drops name instead of replacing it, so the name key is empty and ties keep the home file order (name order, and sortList is stable). The shown name is never changed. */
     var list = L.sortList(all.filter(function (e) {
       return L.matches(e, { place: hub, age: age, fields: fl }, Date.now());
-    }), "best", Date.now(), { age: age });
+    }).map(function (e) { var c = Object.assign({}, e); delete c.name; return c; }), "best", Date.now(), { age: age });
     var q = new URLSearchParams();
     if (age) q.set("age", age); if (hub) q.set("at", hub); if (field) q.set("interest", field);
     var top = list.slice(0, 4);
@@ -88,7 +90,8 @@
       box.innerHTML = top.map(function (c) {
         var e = byId[c.id];
         if (!e) {
-          return '<article class="card prog"><h3>' + G.esc(c.name) + '</h3><p class="org">' + G.esc(c.org || "") + '</p><p class="what">The details could not load for this one.</p><div class="actions"><a class="btn sm alt" href="find.html?' + G.esc(q.toString()) + "#p-" + G.esc(c.id) + '">Details</a></div></article>';
+          c = all[nameRank[c.id]] || c; /* the sorted copy carries a rank, not a name */
+          return '<article class="card prog"><h3>' + G.esc(c.name || "Program details") + '</h3><p class="org">' + G.esc(c.org || "") + '</p><p class="what">The details could not load for this one.</p><div class="actions"><a class="btn sm alt" href="find.html?' + G.esc(q.toString()) + "#p-" + G.esc(c.id) + '">Details</a></div></article>';
         }
         var u = G.safeUrl(e.url);
         var who = e.name + (e.org ? ", " + e.org : "");
@@ -136,6 +139,7 @@
 
   G.loadEntries("home").then(function (data) {
     all = data;
+    all.forEach(function (e, i) { nameRank[e.id] = i; });
     G.fillPlaces($("pHub"), all);
     savedPrefs();
     pick();

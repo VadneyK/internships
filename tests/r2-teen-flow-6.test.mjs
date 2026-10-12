@@ -18,6 +18,7 @@ const PAGES = {
     ["#bank", "4. Where it goes"],
   ],
   "younger.html": [
+    ["#earn", "Work near home"],
     ["#grid", "1. At my age"],
     ["#safety", "2. Stay safe"],
     ["#ladder", "3. Path to a job"],

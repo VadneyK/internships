@@ -23,11 +23,26 @@ EXPECTED_FAILURES = {
 MJS_HELPERS = {"dom-helper.mjs", "r1-tests-1-tzworker.mjs"}
 
 # Round files: r<round>-<area>-<number>, with an optional short label. Areas come from docs/TESTING.md.
-ROUND_PREFIX = re.compile(r"^r[1235]-")
+# Any round digit counts (r4, r9, r10, ...), so rounds 4 and later get the same checks as rounds 1 to 3.
+ROUND_PREFIX = re.compile(r"^r[1-9][0-9]*-")
 ROUND_NAME = re.compile(
-    r"^r[1235]-(?:a11y-perf|accuracy|data-content|docs-ops|handout|oc|perf-scale|ranking-ux|teen-flow|tests)"
+    r"^r[1-9][0-9]*-(?:a11y-perf|accuracy|data-content|docs-ops|handout|oc|perf-scale|ranking-ux|teen-flow|tests)"
     r"-\d+(?:-[a-z0-9]+)*\.(?:test\.)?mjs$"
 )
+
+# Older round files whose names do not follow the rule yet. Each one is kept on purpose until it is renamed.
+# An entry fails the guard when its file is gone, or when the name now matches the rule (then remove the entry).
+LEGACY_NAMES = {
+    "r4-share.test.mjs":
+        "Area 'share' is not in the docs/TESTING.md area list. Rename it to a listed area, or add the area to "
+        "docs/TESTING.md and ROUND_NAME, then remove this entry.",
+    "r4-states-1.test.mjs":
+        "Area 'states' is not in the docs/TESTING.md area list. Rename it to a listed area, or add the area to "
+        "docs/TESTING.md and ROUND_NAME, then remove this entry.",
+    "r4-tiles.test.mjs":
+        "Area 'tiles' is not in the docs/TESTING.md area list. Rename it to a listed area, or add the area to "
+        "docs/TESTING.md and ROUND_NAME, then remove this entry.",
+}
 
 TEST_CALL = re.compile(r"(?<![\w.$])test\s*\(")
 RUN_WITH = "Run with"
@@ -61,13 +76,21 @@ def _test_files(directory):
     return names
 
 
-def check_dir(directory, expected_failures=None):
+def check_dir(directory, expected_failures=None, legacy_names=None):
     """Return a list of (rule, file name, detail) tuples. An empty list means the folder passes."""
     if expected_failures is None:
         expected_failures = EXPECTED_FAILURES
+    if legacy_names is None:
+        legacy_names = LEGACY_NAMES
     names = _test_files(directory)
     texts = {name: _read(os.path.join(directory, name)) for name in names}
     problems = []
+
+    for name, _reason in legacy_names.items():
+        if name not in names:
+            problems.append(("legacy-stale", name, "listed in LEGACY_NAMES but the file does not exist"))
+        elif ROUND_NAME.match(name) or not ROUND_PREFIX.match(name):
+            problems.append(("legacy-stale", name, "listed in LEGACY_NAMES but it now matches the rule (remove the entry)"))
 
     for name in names:
         text = texts[name]
@@ -80,7 +103,7 @@ def check_dir(directory, expected_failures=None):
         elif not name.startswith("test_"):
             problems.append(("py-name", name, "a tests/*.py file must start with test_"))
 
-        if ROUND_PREFIX.match(name) and not ROUND_NAME.match(name):
+        if ROUND_PREFIX.match(name) and not ROUND_NAME.match(name) and name not in legacy_names:
             problems.append(("round-name", name, "does not match r<round>-<area>-<number>[-label].test.mjs"))
 
         for marker in FORBIDDEN_MARKERS:
@@ -111,13 +134,14 @@ def _rules(problems):
     return {rule for rule, _name, _detail in problems}
 
 
-def _check_fixture(files, expected_failures=None):
+def _check_fixture(files, expected_failures=None, legacy_names=None):
     folder = tempfile.mkdtemp(prefix="suite-guard-")
     try:
         for name, text in files.items():
             with open(os.path.join(folder, name), "w", encoding="utf-8") as f:
                 f.write(text)
-        return check_dir(folder, expected_failures)
+        # Fixtures get no legacy list unless the test passes one, so the real LEGACY_NAMES do not leak in.
+        return check_dir(folder, expected_failures, {} if legacy_names is None else legacy_names)
     finally:
         shutil.rmtree(folder, ignore_errors=True)
 
@@ -215,7 +239,10 @@ class SuiteGuardTests(unittest.TestCase):
         self.assertNotIn("run-line", _rules(problems))
 
     def test_round_name_rule_fires_for_bad_names(self):
-        for name in ["r2-bogus-1.test.mjs", "r1-accuracy-missing.test.mjs", "r3-teen-flow.test.mjs", "r5-nope-4.test.mjs"]:
+        for name in [
+            "r2-bogus-1.test.mjs", "r1-accuracy-missing.test.mjs", "r3-teen-flow.test.mjs", "r5-nope-4.test.mjs",
+            "r7-nonsense.test.mjs", "r9-share-1.test.mjs", "r10-nope-2.test.mjs",
+        ]:
             with self.subTest(file=name):
                 problems = _check_fixture(dict(CLEAN, **{name: "test(\"a\", () => {});\n"}))
                 self.assertIn("round-name", _rules(problems))
@@ -223,10 +250,44 @@ class SuiteGuardTests(unittest.TestCase):
     def test_round_name_rule_accepts_label_and_ignores_other_prefixes(self):
         ok = {
             "r1-tests-2-ics-fold.test.mjs": "test(\"a\", () => {});\n",
-            "r4-share.test.mjs": "test(\"a\", () => {});\n",
+            "r4-accuracy-1-checked-claim.test.mjs": "test(\"a\", () => {});\n",
+            "r9-teen-flow-1-404-links.test.mjs": "test(\"a\", () => {});\n",
+            "rev-accuracy-1-hours-checker.test.mjs": "test(\"a\", () => {});\n",
         }
         problems = _check_fixture(dict(CLEAN, **ok))
         self.assertNotIn("round-name", _rules(problems))
+
+    def test_round_rule_fires_for_round_nine_bad_fixture_and_passes_good_one(self):
+        bad = _check_fixture(dict(CLEAN, **{"r7-nonsense.test.mjs": "test(\"a\", () => {});\n"}))
+        self.assertIn("round-name", _rules(bad))
+        good = _check_fixture(dict(CLEAN, **{"r9-teen-flow-9-good-label.test.mjs": "test(\"a\", () => {});\n"}))
+        self.assertEqual([], good)
+
+    def test_legacy_names_are_grandfathered_only_while_listed(self):
+        text = "test(\"a\", () => {});\n"
+        legacy = {"r4-share.test.mjs": "seeded reason"}
+        problems = _check_fixture(dict(CLEAN, **{"r4-share.test.mjs": text}), None, legacy)
+        self.assertEqual([], problems)
+        unlisted = _check_fixture(dict(CLEAN, **{"r4-share.test.mjs": text}))
+        self.assertIn("round-name", _rules(unlisted))
+
+    def test_legacy_entry_fails_when_file_is_missing(self):
+        problems = _check_fixture(CLEAN, None, {"r4-gone.test.mjs": "seeded reason"})
+        self.assertIn("legacy-stale", _rules(problems))
+
+    def test_legacy_entry_fails_when_name_now_matches_rule(self):
+        files = dict(CLEAN, **{"r9-teen-flow-1-404-links.test.mjs": "test(\"a\", () => {});\n"})
+        problems = _check_fixture(files, None, {"r9-teen-flow-1-404-links.test.mjs": "seeded reason"})
+        self.assertIn("legacy-stale", _rules(problems))
+
+    def test_legacy_names_have_reasons_and_exact_members(self):
+        for name, reason in LEGACY_NAMES.items():
+            with self.subTest(file=name):
+                self.assertTrue(reason.strip(), "legacy entry %r needs a reason" % (name,))
+        self.assertEqual(
+            {"r4-share.test.mjs", "r4-states-1.test.mjs", "r4-tiles.test.mjs"},
+            set(LEGACY_NAMES),
+        )
 
 
 if __name__ == "__main__":

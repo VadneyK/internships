@@ -7,6 +7,7 @@ scripts: resume
     <span class="tag y eyebrow">Optional but handy</span>
     <h1 class="display">Your first <span class="orange">resume</span></h1>
     <p class="lede">You do not need a resume to send a message to someone you know. You will need one when a program, a boss or a mentor asks. One page is plenty.</p>
+    <noscript><div class="callout bad"><p>This page needs JavaScript to work the resume builder. With JavaScript off, the advice on this page still shows. For plain rules about teen work, see the <a href="rules.html">Rules page</a>.</p></div></noscript>
     <p><a class="btn sm alt" href="interview.html">Next: apply and interview prep</a></p>
     <nav class="chips noprint" aria-label="On this page" style="margin-top:1rem;">
       <a class="chip" style="text-decoration:none" href="#basics">1. What goes on it</a>
@@ -64,6 +65,7 @@ scripts: resume
     <h2 class="noprint">Build it</h2>
     <p class="noprint">The example below is made up. Replace it with your own. When you are done, press Print and choose Save as PDF. Name the file <b>FirstLast_Resume.pdf</b>. Nothing you type is sent anywhere.</p>
     <p class="noprint small muted">Nothing is saved unless you tick Keep my draft on this device. If you do, the draft stays on this device only, except your email and phone, which are never saved. On a shared computer, leave the box unticked, or press Clear everything before you leave.</p>
+    <div class="chips noprint" style="margin-top:.6rem;"><a class="btn alt sm noprint" href="#rPreview">Jump to the preview and Print</a></div>
     <div class="grid g2" style="align-items:start;">
       <form class="card noprint" id="rf" novalidate onsubmit="return false">
         <h3>About you</h3>
@@ -92,7 +94,7 @@ Youth group, sound crew, 2024 to present</textarea></div>
           <button class="btn alt sm" type="button" id="rClear">Clear everything</button>
         </div>
       </form>
-      <div>
+      <div id="rPreview" tabindex="-1">
         <div class="resume" id="rv" role="group" aria-label="Resume preview"></div>
         <div class="sr" id="rStatus" role="status"></div>
         <div class="chips noprint" style="margin-top:1rem;">
@@ -101,6 +103,7 @@ Youth group, sound crew, 2024 to present</textarea></div>
         </div>
         <p id="rExample" class="small noprint" role="status" style="margin-top:.8rem;"><b>This resume still shows the example name and email.</b> Put in your own details before you print, copy or send it.</p>
         <p class="small muted noprint" style="margin-top:.8rem;">If the preview runs past one page, shorten a bullet or remove a line. Ask a teacher, counselor or parent to read it before you send it.</p>
+        <div class="chips noprint" style="margin-top:.6rem;"><a class="btn alt sm noprint" href="#rf">Back to the form</a></div>
       </div>
     </div>
   </div>

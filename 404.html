@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
 <title>Page Not Found</title>
 <meta name="description" content="That page does not exist. Try the program list or the playbook.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#efede8">
@@ -21,8 +23,8 @@
 <link rel="apple-touch-icon" href="/internships/apple-touch-icon.png">
 <link rel="preload" href="/internships/assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/internships/assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/internships/assets/css/fonts.css?v=a82f8be3">
-<link rel="stylesheet" href="/internships/assets/css/style.css?v=a82f8be3">
+<link rel="stylesheet" href="/internships/assets/css/fonts.css?v=cf2538b3">
+<link rel="stylesheet" href="/internships/assets/css/style.css?v=cf2538b3">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -75,22 +77,29 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
         <p>Free. No sign-up, no ads, no tracking. Everything you type here stays in your browser.</p>
         <p class="small">Last checked <b>Oct 12, 2026</b> &middot; 2214 programs</p>
       </div>
-      <div>
+      <nav aria-label="Quick links">
         <h2 class="fh">Quick links</h2>
-        <ul class="qlinks">
+        <h3 class="fh2" id="ql-find">Find and apply</h3>
+        <ul class="qlinks" aria-labelledby="ql-find">
           <li><a href="/internships/find.html">Find a program</a></li>
           <li><a href="/internships/playbook.html">Write your message</a></li>
           <li><a href="/internships/resume.html">Build a first resume</a></li>
-          <li><a href="/internships/ready.html">Get ready for day one</a></li>
+          <li><a href="/internships/interview.html">Apply and interview prep</a></li>
           <li><a href="/internships/jobs.html">Jobs that hire teens</a></li>
           <li><a href="/internships/calendar.html">What opens when</a></li>
+          <li><a href="/internships/permit.html">Do I need a work permit?</a></li>
+        </ul>
+        <h3 class="fh2" id="ql-ready">Before day one</h3>
+        <ul class="qlinks" aria-labelledby="ql-ready">
+          <li><a href="/internships/ready.html">Get ready for day one</a></li>
           <li><a href="/internships/paycheck.html">Your first paycheck</a></li>
           <li><a href="/internships/safety.html">Safe at work</a></li>
           <li><a href="/internships/younger.html">Ages 12 to 14: start here</a></li>
+        </ul>
+        <h3 class="fh2" id="ql-about">About and help</h3>
+        <ul class="qlinks" aria-labelledby="ql-about">
           <li><a href="/internships/parents.html">For parents</a></li>
           <li><a href="/internships/handout.html">Handout for teachers and counselors</a></li>
-          <li><a href="/internships/interview.html">Apply and interview prep</a></li>
-          <li><a href="/internships/permit.html">Do I need a work permit?</a></li>
           <li><a href="/internships/languages.html">Work rules in your language</a></li>
           <li><a href="/internships/insights.html">The numbers</a></li>
           <li><a href="/internships/rules.html">Work permit and pay rules</a></li>
@@ -98,7 +107,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
           <li><a href="/internships/share.html">Share this guide (QR codes)</a></li>
           <li><a href="/internships/contribute.html">Help build this guide</a></li>
         </ul>
-      </div>
+      </nav>
       <div>
         <h2 class="fh">About this page</h2>
         <p>Made by Kentaro Vadney for the &ldquo;How to Find Internships&rdquo; table at Ignition NorCal 2026. This is an unofficial student resource. It is not an official publication of Ignition, Acts 2 Network or AYM, and the programs listed are not affiliated with them.</p>
@@ -108,7 +117,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="/internships/assets/js/common.js?v=a82f8be3"></script>
+<script src="/internships/assets/js/common.js?v=cf2538b3"></script>
 
 </body>
 </html>

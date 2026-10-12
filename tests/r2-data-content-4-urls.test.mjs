@@ -29,7 +29,8 @@ for (const [id, url] of Object.entries(EXPECTED)) {
 
 test("apply_url is unchanged where the home page was the only apply link", () => {
   // Cards that already had a separate apply_url keep it. Cards with apply_url null stay null.
-  assert.equal(load("congressional-app-challenge").apply_url, null);
+  // congressional-app-challenge got a direct apply_url on 2026-10-12 (ticket r2-data-content-4, set A), from the registration page it read.
+  assert.equal(load("congressional-app-challenge").apply_url, "https://www.congressionalappchallenge.us/students/student-registration/");
   assert.equal(load("zooniverse").apply_url, null);
   assert.equal(load("us-senate-youth-program").apply_url, null);
 });

@@ -1,0 +1,131 @@
+// Size ratchet: every data/*.json, assets/css/*.css, assets/js/*.js, and each file in assets/img and assets/qr
+// has a row below with a byte ceiling about 10 percent over its size on 2026-10-10.
+// A file with no row fails (a new file must be added on purpose). A row for a file that no longer exists fails.
+// A file over its ceiling fails until its row is raised on purpose, with a reason.
+// No network and no jsdom: this only reads file sizes on disk.
+import test from "node:test";
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+
+// Which directories are watched. ext null means every file in the directory (one level, no subfolders).
+const GROUPS = [
+  { dir: "data", ext: ".json" },
+  { dir: "assets/css", ext: ".css" },
+  { dir: "assets/js", ext: ".js" },
+  { dir: "assets/img", ext: null },
+  { dir: "assets/qr", ext: null },
+];
+
+// Path (from the repo root) to { ceiling: bytes on disk, reason }.
+// Ceilings are today's size on 2026-10-10 rounded up to 100 bytes, plus about 10 percent.
+const TABLE = {
+  "data/calendar.json": { ceiling: 15700, reason: "data file, 14265 bytes measured 2026-10-10" },
+  "data/employers.json": { ceiling: 149800, reason: "data file, 136131 bytes measured 2026-10-10" },
+  "data/entries-cal.json": { ceiling: 72600, reason: "data file, 65976 bytes measured 2026-10-10" },
+  "data/entries-core.json": { ceiling: 405100, reason: "data file, 368201 bytes measured 2026-10-10" },
+  "data/entries-detail.json": { ceiling: 1673600, reason: "data file, 1521373 bytes measured 2026-10-10" },
+  "data/entries-home.json": { ceiling: 899400, reason: "data file, 817599 bytes measured 2026-10-10" },
+  "data/entries-lite.json": { ceiling: 2131300, reason: "data file, 1937500 bytes measured 2026-10-10" },
+  "data/entries-stats.json": { ceiling: 667500, reason: "data file, 606782 bytes measured 2026-10-10" },
+  "data/entries.json": { ceiling: 4396300, reason: "data file, 3996617 bytes measured 2026-10-10" },
+  "data/expiring-dates.json": { ceiling: 1700, reason: "data file, 1530 bytes measured 2026-10-10" },
+  "data/gaps.json": { ceiling: 5400, reason: "data file, 4832 bytes measured 2026-10-10" },
+  "data/interview.json": { ceiling: 12400, reason: "data file, 11207 bytes measured 2026-10-10" },
+  "data/languages.json": { ceiling: 9200, reason: "data file, 8310 bytes measured 2026-10-10" },
+  "data/meta.json": { ceiling: 200, reason: "data file, 115 bytes measured 2026-10-10" },
+  "data/money.json": { ceiling: 14000, reason: "data file, 12691 bytes measured 2026-10-10" },
+  "data/parents.json": { ceiling: 29000, reason: "data file, 26357 bytes measured 2026-10-10" },
+  "data/permits.json": { ceiling: 90700, reason: "data file, 82370 bytes measured 2026-10-10" },
+  "data/safety.json": { ceiling: 46800, reason: "data file, 42538 bytes measured 2026-10-10" },
+  "data/state-wages.json": { ceiling: 25700, reason: "data file, 23349 bytes measured 2026-10-10" },
+  "data/states-lite.json": { ceiling: 48000, reason: "data file, 43610 bytes measured 2026-10-10" },
+  "data/transit.json": { ceiling: 9100, reason: "data file, 8193 bytes measured 2026-10-10" },
+  "data/younger.json": { ceiling: 19600, reason: "data file, 17796 bytes measured 2026-10-10" },
+  "assets/css/fonts.css": { ceiling: 6800, reason: "stylesheet, 6158 bytes measured 2026-10-10" },
+  "assets/css/style.css": { ceiling: 46100, reason: "stylesheet, 41831 bytes measured 2026-10-10" },
+  "assets/js/calendar.js": { ceiling: 8800, reason: "script, 7966 bytes measured 2026-10-10" },
+  "assets/js/common.js": { ceiling: 28300, reason: "script, 25681 bytes measured 2026-10-10" },
+  "assets/js/find.js": { ceiling: 58100, reason: "script, 52771 bytes measured 2026-10-10" },
+  "assets/js/handout.js": { ceiling: 400, reason: "script, 274 bytes measured 2026-10-10" },
+  "assets/js/home.js": { ceiling: 10800, reason: "script, 9757 bytes measured 2026-10-10" },
+  "assets/js/insights.js": { ceiling: 6100, reason: "script, 5471 bytes measured 2026-10-10" },
+  "assets/js/interview.js": { ceiling: 20400, reason: "script, 18422 bytes measured 2026-10-10" },
+  "assets/js/jobs.js": { ceiling: 24400, reason: "script, 22099 bytes measured 2026-10-10" },
+  "assets/js/languages.js": { ceiling: 4000, reason: "script, 3579 bytes measured 2026-10-10" },
+  "assets/js/leaders.js": { ceiling: 8100, reason: "script, 7361 bytes measured 2026-10-10" },
+  "assets/js/lib.js": { ceiling: 55300, reason: "script, 50207 bytes measured 2026-10-10" },
+  "assets/js/parents.js": { ceiling: 3900, reason: "script, 3529 bytes measured 2026-10-10" },
+  "assets/js/paycheck.js": { ceiling: 10800, reason: "script, 9810 bytes measured 2026-10-10" },
+  "assets/js/permit.js": { ceiling: 29900, reason: "script, 27127 bytes measured 2026-10-10" },
+  "assets/js/playbook.js": { ceiling: 19200, reason: "script, 17385 bytes measured 2026-10-10" },
+  "assets/js/ready.js": { ceiling: 12100, reason: "script, 10954 bytes measured 2026-10-10" },
+  "assets/js/resume.js": { ceiling: 9600, reason: "script, 8687 bytes measured 2026-10-10" },
+  "assets/js/safety.js": { ceiling: 9700, reason: "script, 8781 bytes measured 2026-10-10" },
+  "assets/js/share.js": { ceiling: 1900, reason: "script, 1681 bytes measured 2026-10-10" },
+  "assets/js/states.js": { ceiling: 2600, reason: "script, 2290 bytes measured 2026-10-10" },
+  "assets/js/younger.js": { ceiling: 13600, reason: "script, 11803 bytes measured 2026-10-10" },
+  "assets/img/favicon.svg": { ceiling: 500, reason: "image, 409 bytes measured 2026-10-10" },
+  "assets/img/og.jpg": { ceiling: 90200, reason: "image, 81997 bytes measured 2026-10-10" },
+  "assets/img/splat-orange.svg": { ceiling: 5500, reason: "image, 4991 bytes measured 2026-10-10" },
+  "assets/img/splat-yellow.svg": { ceiling: 5600, reason: "image, 5086 bytes measured 2026-10-10" },
+  "assets/img/swoosh.svg": { ceiling: 500, reason: "image, 449 bytes measured 2026-10-10" },
+  "assets/qr/atlanta.svg": { ceiling: 2400, reason: "QR image, 2135 bytes measured 2026-10-10" },
+  "assets/qr/chicago.svg": { ceiling: 2400, reason: "QR image, 2116 bytes measured 2026-10-10" },
+  "assets/qr/home.svg": { ceiling: 2000, reason: "QR image, 1728 bytes measured 2026-10-10" },
+  "assets/qr/interview.svg": { ceiling: 2500, reason: "QR image, 2214 bytes measured 2026-10-10" },
+  "assets/qr/new-york.svg": { ceiling: 2300, reason: "QR image, 2068 bytes measured 2026-10-10" },
+  "assets/qr/norcal.svg": { ceiling: 2300, reason: "QR image, 2086 bytes measured 2026-10-10" },
+  "assets/qr/parents.svg": { ceiling: 2400, reason: "QR image, 2121 bytes measured 2026-10-10" },
+  "assets/qr/permit.svg": { ceiling: 2400, reason: "QR image, 2118 bytes measured 2026-10-10" },
+  "assets/qr/socal.svg": { ceiling: 2400, reason: "QR image, 2115 bytes measured 2026-10-10" },
+  "assets/qr/younger.svg": { ceiling: 2400, reason: "QR image, 2126 bytes measured 2026-10-10" },
+};
+
+// Every file the ratchet watches, as repo-relative paths with forward slashes.
+function watchedFiles() {
+  const found = [];
+  for (const group of GROUPS) {
+    const dir = path.join(ROOT, group.dir);
+    for (const name of fs.readdirSync(dir).sort()) {
+      if (group.ext && path.extname(name) !== group.ext) continue;
+      if (!fs.statSync(path.join(dir, name)).isFile()) continue;
+      found.push(`${group.dir}/${name}`);
+    }
+  }
+  return found;
+}
+
+test("every watched file has a ratchet row", () => {
+  const missing = watchedFiles().filter((file) => !Object.hasOwn(TABLE, file));
+  assert.equal(
+    missing.length,
+    0,
+    `no ratchet row for: ${missing.join(", ")}. Add a row on purpose, with a ceiling and a reason.`,
+  );
+});
+
+test("no ratchet row points at a file that no longer exists", () => {
+  const stale = Object.keys(TABLE).filter((file) => !fs.existsSync(path.join(ROOT, file)));
+  assert.equal(
+    stale.length,
+    0,
+    `ratchet rows for files that are gone: ${stale.join(", ")}. Remove the row or restore the file.`,
+  );
+});
+
+test("every watched file is under its byte ceiling", () => {
+  const over = [];
+  for (const file of Object.keys(TABLE)) {
+    const full = path.join(ROOT, file);
+    if (!fs.existsSync(full)) continue;
+    const size = fs.statSync(full).size;
+    if (size > TABLE[file].ceiling) {
+      over.push(`${file}: ${size} bytes, ceiling ${TABLE[file].ceiling} bytes`);
+    }
+  }
+  assert.equal(over.length, 0, `over the size ceiling: ${over.join("; ")}`);
+});

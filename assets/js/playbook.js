@@ -43,7 +43,7 @@
       html += "<p>Sent " + G.esc(L.fmtDate(L.parseISO(r.d))) + ". " + (due ? '<span class="due">Time to follow up.</span> ' : "Follow up on <b>" + G.esc(L.fmtDate(fd)) + "</b>. ") +
         '<button class="chip" type="button" data-ics="' + i + '">Add to my calendar</button></p>';
     } else if (r.s === "replied") html += "<p>Say thank you within 1 to 2 days, then ask for the 15 minutes.</p>";
-    else if (r.s === "meeting") html += "<p>Prepare two questions. See step 4 below.</p>";
+    else if (r.s === "meeting") html += "<p>Pick two questions to ask. See step 4 below.</p>";
     else if (r.s === "thanked") html += "<p>Nice. Check in again in a few months with one line about what you did.</p>";
     return html;
   }

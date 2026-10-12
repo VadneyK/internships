@@ -28,7 +28,7 @@ const moneyNums = new Set([...amountsIn(moneyText), ...money.presets.map((p) => 
 
 // Amounts that are intentionally page-only. Key: "<page>|<state>|<amount>", value: the reason.
 const ALLOW = {
-  "states.html|ga|5.15": "Georgia's own rate, which applies only to the few employers federal law does not cover. The card gives the $7.25 that applies to nearly everyone.",
+  "states.html|ga|5.15": "Georgia's own rate, which applies to employers that federal law does not cover. The card gives the $7.25 that applies at employers covered by federal law.",
   "rules.html|ca|400": "Self-employment tax threshold, not a wage figure.",
   "rules.html|ca|17.34": "City table: Oakland. City rates are listed on the rules page only; permits.json says to ask the employer.",
   "rules.html|ca|17.76": "City table: Alameda.",

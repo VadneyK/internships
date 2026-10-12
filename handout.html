@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
 <title>Handout for teachers and counselors</title>
 <meta name="description" content="One printable page for a teacher or counselor to hand to teens: the guide address, a QR code, a three step path and what the guide is not.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#efede8">
@@ -21,8 +23,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=a82f8be3">
-<link rel="stylesheet" href="assets/css/style.css?v=a82f8be3">
+<link rel="stylesheet" href="assets/css/fonts.css?v=cf2538b3">
+<link rel="stylesheet" href="assets/css/style.css?v=cf2538b3">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -60,7 +62,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <h1 class="display">Handout: find your first <span class="orange">job</span></h1>
       <p class="lede">A free guide for teens ages 12 to 18 who want a first job, internship or volunteer role.</p>
       <div class="handout-code">
-        <img src="assets/qr/home.svg" alt="QR code that opens vadneyk.github.io/internships/" width="160" height="160" style="background:#fff;border:3px solid var(--edge);padding:.3rem;">
+        <img src="assets/qr/home.svg" alt="QR code for the guide home page" width="160" height="160">
         <p><b>Scan the code or type the address:</b><br><code class="handout-url">vadneyk.github.io/internships/</code></p>
       </div>
       <h2>Three steps</h2>
@@ -88,8 +90,8 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
         <caption>Agenda: 45 minutes</caption>
         <thead><tr><th scope="col">Min</th><th scope="col">Activity</th></tr></thead>
         <tbody>
-          <tr><td>0 to 5</td><td>Show the <a href="find.html">Programs page</a>. Ask: &ldquo;Would you trust this? What would make you trust it?&rdquo; Introduce the rule: no official page, no card.</td></tr>
-          <tr><td>5 to 10</td><td>Read &ldquo;How we checked every program&rdquo; on the <a href="about.html#method">About page</a> together. Model one check on the projector with a real card.</td></tr>
+          <tr><td>0 to 5</td><td>Show the <a href="find.html">Programs page</a>. Ask: &ldquo;Would you trust this? What would make you trust it?&rdquo; Introduce the rule: every card links its official page, and cards we could not read there say Confirm first.</td></tr>
+          <tr><td>5 to 10</td><td>Read &ldquo;How we checked the programs&rdquo; on the <a href="about.html#method">About page</a> together. Model one check on the projector with a real card.</td></tr>
           <tr><td>10 to 35</td><td>Pairs pick a card in their own town on the <a href="find.html">Programs page</a>. They open the official page and check the seven facts: who can apply, what students do, pay, when, how to apply, whether a work permit is needed, and a direct apply link. They note anything different on the card. Then they check the <a href="jobs.html">Jobs page</a> to see who hires at their age.</td></tr>
           <tr><td>35 to 42</td><td>Discuss: What surprised you? Which programs would you actually apply to? Who could you tell about this site?</td></tr>
           <tr><td>42 to 45</td><td>Exit question, each student answers before leaving: Which program would you apply to first, and why?</td></tr>
@@ -111,22 +113,29 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
         <p>Free. No sign-up, no ads, no tracking. Everything you type here stays in your browser.</p>
         <p class="small">Last checked <b>Oct 12, 2026</b> &middot; 2214 programs</p>
       </div>
-      <div>
+      <nav aria-label="Quick links">
         <h2 class="fh">Quick links</h2>
-        <ul class="qlinks">
+        <h3 class="fh2" id="ql-find">Find and apply</h3>
+        <ul class="qlinks" aria-labelledby="ql-find">
           <li><a href="find.html">Find a program</a></li>
           <li><a href="playbook.html">Write your message</a></li>
           <li><a href="resume.html">Build a first resume</a></li>
-          <li><a href="ready.html">Get ready for day one</a></li>
+          <li><a href="interview.html">Apply and interview prep</a></li>
           <li><a href="jobs.html">Jobs that hire teens</a></li>
           <li><a href="calendar.html">What opens when</a></li>
+          <li><a href="permit.html">Do I need a work permit?</a></li>
+        </ul>
+        <h3 class="fh2" id="ql-ready">Before day one</h3>
+        <ul class="qlinks" aria-labelledby="ql-ready">
+          <li><a href="ready.html">Get ready for day one</a></li>
           <li><a href="paycheck.html">Your first paycheck</a></li>
           <li><a href="safety.html">Safe at work</a></li>
           <li><a href="younger.html">Ages 12 to 14: start here</a></li>
+        </ul>
+        <h3 class="fh2" id="ql-about">About and help</h3>
+        <ul class="qlinks" aria-labelledby="ql-about">
           <li><a href="parents.html">For parents</a></li>
           <li><a href="handout.html">Handout for teachers and counselors</a></li>
-          <li><a href="interview.html">Apply and interview prep</a></li>
-          <li><a href="permit.html">Do I need a work permit?</a></li>
           <li><a href="languages.html">Work rules in your language</a></li>
           <li><a href="insights.html">The numbers</a></li>
           <li><a href="rules.html">Work permit and pay rules</a></li>
@@ -134,7 +143,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
           <li><a href="share.html">Share this guide (QR codes)</a></li>
           <li><a href="contribute.html">Help build this guide</a></li>
         </ul>
-      </div>
+      </nav>
       <div>
         <h2 class="fh">About this page</h2>
         <p>Made by Kentaro Vadney for the &ldquo;How to Find Internships&rdquo; table at Ignition NorCal 2026. This is an unofficial student resource. It is not an official publication of Ignition, Acts 2 Network or AYM, and the programs listed are not affiliated with them.</p>
@@ -144,8 +153,8 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/common.js?v=a82f8be3"></script>
-<script src="assets/js/handout.js?v=a82f8be3"></script>
+<script src="assets/js/common.js?v=cf2538b3"></script>
+<script src="assets/js/handout.js?v=cf2538b3"></script>
 
 </body>
 </html>

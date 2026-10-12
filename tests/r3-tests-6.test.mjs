@@ -329,7 +329,8 @@ test("isOpenish and isAnytime: truth table over all 7 statuses, with and without
     ["rolling", { deadline_iso: PAST }, false, true],
     ["year-round", {}, false, true],
     ["event", { deadline_iso: FUTURE }, false, true],
-    ["event", { deadline_iso: PAST }, false, true],
+    // r2-tests-1 w2: an event whose date has passed is closed, not "any time" (same rule as open-now).
+    ["event", { deadline_iso: PAST }, false, false],
     ["closed-expect-reopen", {}, false, false],
     ["closed-expect-reopen", { deadline_iso: FUTURE }, false, false],
     ["unconfirmed", {}, false, false],
@@ -375,7 +376,7 @@ const base = {
 test("insights([]): every count is zero, no NaN, and the shape is complete", () => {
   const out = L.insights([], NOW);
   assert.equal(out.total, 0);
-  assert.deepEqual(out.status.map((g) => g.id), ["open", "soon", "anytime", "closed", "unknown"]);
+  assert.deepEqual(out.status.map((g) => g.id), ["open", "soon", "anytime", "closed", "unknown", "passed"]);
   assert.ok(out.status.every((g) => g.n === 0));
   assert.equal(out.ages.length, 6);
   assert.deepEqual(out.ages.map((a) => a.age), [13, 14, 15, 16, 17, 18]);
@@ -393,7 +394,7 @@ test("insights([]): every count is zero, no NaN, and the shape is complete", () 
 test("insights(single card): pinned counts and every group sums to the total", () => {
   const out = L.insights([base], NOW);
   assert.equal(out.total, 1);
-  assert.deepEqual(out.status.map((g) => g.n), [1, 0, 0, 0, 0]);
+  assert.deepEqual(out.status.map((g) => g.n), [1, 0, 0, 0, 0, 0]);
   assert.deepEqual(out.ages.map((a) => a.n), [0, 0, 0, 1, 1, 1]);
   assert.deepEqual(out.ages.map((a) => a.paid), [0, 0, 0, 1, 1, 1]);
   assert.deepEqual(out.hubs, [{ id: "oak", label: "Oakland and East Bay", n: 1, pay: 1, free: 0, fee: 0, unknown: 0 }]);

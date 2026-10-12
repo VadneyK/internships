@@ -78,12 +78,12 @@ test("ready: the opening paragraph is short and the California part sits in its 
   }
 });
 
-test("ready: the On this page chips link to six sections that exist on the page", async () => {
+test("ready: the On this page chips link to seven targets (checklist plus six sections) that exist on the page", async () => {
   const { document } = await loadPage("ready.html");
   const nav = document.querySelector('nav.chips[aria-label="On this page"]');
   assert.ok(nav, "the On this page chip row should exist");
   const links = [...nav.querySelectorAll("a")];
-  assert.equal(links.length, 6);
+  assert.equal(links.length, 7);
   for (const a of links) {
     const href = a.getAttribute("href") || "";
     assert.match(href, /^#/, href + " should be a fragment link");

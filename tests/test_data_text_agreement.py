@@ -39,10 +39,18 @@ ALLOW_PAY = {
     "atlanta-parks-rec-teen-leaders": "mixed, pay_detail says pay is not stated; needs a data fix",
     "champaign-county-rpc-youth-services": "mixed, pay_detail starts with not stated; needs a data fix",
 }
+ALLOW_NOT_STATED_PAY = {
+    "berkeley-rep-teen-council": "not-stated, pay_detail says a transportation stipend is paid; needs a data fix",
+    "minnesota-house-high-school-page-program": "not-stated, pay_detail says a small meal stipend is paid; needs a data fix",
+    "seattle-childrens-research-training-program-high-school": "not-stated, pay_detail says a stipend is paid; needs a data fix",
+}
 
 UNSURE_OPEN = re.compile(r"does not say whether|do not say whether|doesn't say whether", re.I)
 ALL_CLOSED = re.compile(r"\ball (?:the )?(?:roles|positions|spots|openings|slots|sessions)\b[^.]*?\b(?:are|is)\s+(?:now\s+)?(?:closed|full)", re.I)
 PAY_WORDS = re.compile(r"paid|stipend|unpaid|volunteer|\$|dollar", re.I)
+NOT_STATED_CARD = re.compile(r"\bnot stated?\b", re.I)
+PAID_CLAIM = re.compile(r"\bstipends?\b|\bpaid\b|\$\s?\d|\bdollars?\b|\bper hour\b|\bhourly\b|\bwages?\b", re.I)
+NO_CLAIM = re.compile(r"\bunpaid\b|\bno\b|\bnothing\b|\bwhether\b|\bif\b|\bask\b|\bnot (?:say|mention|list|stated|state)|\bdoes not\b|\bdo not\b|n't\b", re.I)
 
 
 def date_problem(card, today):
@@ -123,6 +131,19 @@ def pay_problem(card):
     return None
 
 
+def not_stated_pay_problem(card):
+    """paid_type not-stated, but pay_detail says a stipend is paid, a paid role or a dollar wage, and never says it is not stated."""
+    if card.get("paid_type") != "not-stated":
+        return None
+    detail = card.get("pay_detail") or ""
+    if NOT_STATED_CARD.search(detail):
+        return None
+    for sentence in re.split(r"(?<=[.;])\s+", detail):
+        if PAID_CLAIM.search(sentence) and not NO_CLAIM.search(sentence):
+            return "paid_type is not-stated but pay_detail says pay: %s" % sentence.strip()
+    return None
+
+
 def load_entries():
     with open(os.path.join(ROOT, "data", "entries.json"), encoding="utf-8") as fh:
         return json.load(fh)
@@ -195,6 +216,21 @@ class FixtureTests(unittest.TestCase):
         self.assertIsNone(pay_problem({"paid_type": "mixed", "pay_detail": "Hourly wage varies."}))
         self.assertIsNone(pay_problem({"paid_type": "not-stated", "pay_detail": "Not stated."}))
 
+    def test_not_stated_pay_flags_stipend_or_wage(self):
+        for t in ("A stipend is paid to cover transportation and meals (amount not read).",
+                  "Paid summer aide jobs are listed separately.",
+                  "Pays $15 per hour."):
+            self.assertIsNotNone(not_stated_pay_problem({"paid_type": "not-stated", "pay_detail": t}), t)
+
+    def test_not_stated_pay_ok(self):
+        for t in ("Not stated. A stipend is paid.",
+                  "The page does not say if the interns are paid.",
+                  "Free. No pay or stipend listed.",
+                  "Unpaid. Volunteers get a badge.",
+                  "The page does not state pay. Ask whether your group is paid."):
+            self.assertIsNone(not_stated_pay_problem({"paid_type": "not-stated", "pay_detail": t}), t)
+        self.assertIsNone(not_stated_pay_problem({"paid_type": "stipend", "pay_detail": "$200 training stipend"}))
+
 
 class DataAgreementTests(unittest.TestCase):
     @classmethod
@@ -239,13 +275,16 @@ class DataAgreementTests(unittest.TestCase):
     def test_mixed_pay_says_something(self):
         self._check_entries(pay_problem, ALLOW_PAY)
 
+    def test_not_stated_pay_does_not_hide_a_stipend(self):
+        self._check_entries(not_stated_pay_problem, ALLOW_NOT_STATED_PAY)
+
     def test_allow_list_ids_exist(self):
         ids = {c["id"] for c in self.cards}
         for allow in (ALLOW_DATE, ALLOW_AGES, ALLOW_OPEN):
             for i in allow:
                 self.assertIn(i, ids)
         entry_ids = {c["id"] for c in load_entries()}
-        for allow in (ALLOW_OPEN_LABEL, ALLOW_SOON, ALLOW_PAY):
+        for allow in (ALLOW_OPEN_LABEL, ALLOW_SOON, ALLOW_PAY, ALLOW_NOT_STATED_PAY):
             for i in allow:
                 self.assertIn(i, entry_ids)
 

@@ -72,6 +72,29 @@ class WorkflowTests(unittest.TestCase):
                     % (flag, ", ".join(sorted(files)), script),
                 )
 
+    def test_lib_coverage_job_keeps_its_floor(self):
+        # The lib.js coverage floor is its own job in ci.yml. Deleting the job,
+        # or its thresholds or include path, fails here.
+        lines = read_workflow("ci.yml").splitlines()
+        starts = [i for i, line in enumerate(lines) if line == "  lib-coverage:"]
+        self.assertEqual(len(starts), 1, "ci.yml needs exactly one 'lib-coverage' job")
+        block = []
+        for line in lines[starts[0] + 1:]:
+            if re.match(r"^(\S|  \S)", line):
+                break
+            block.append(line)
+        tokens = set(" ".join(block).split())
+        for token in (
+            "--experimental-test-coverage",
+            "--test-coverage-include=assets/js/lib.js",
+            "--test-coverage-lines=99",
+            "--test-coverage-branches=97",
+            "tests/*.test.mjs",
+        ):
+            with self.subTest(token=token):
+                self.assertIn(token, tokens, "lib-coverage job in ci.yml lacks '%s'" % token)
+        self.assertIn("npm ci", " ".join(block), "lib-coverage job must run npm ci first")
+
 
 if __name__ == "__main__":
     unittest.main()

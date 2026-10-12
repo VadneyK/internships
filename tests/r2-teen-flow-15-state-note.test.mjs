@@ -56,9 +56,11 @@ test("r2-state-note-1: the Get ready lede is unchanged and still at most 45 word
   assert.equal(lede.textContent.includes("Most examples"), false, "the note is not inside the lede");
 });
 
-test("r2-state-note-1: the Get ready no-offer note still follows the lede directly", async () => {
+test("r2-state-note-1: the Get ready no-offer note still follows the lede's last-read line", async () => {
   const { document } = await loadPage("ready.html");
-  assert.equal(document.getElementById("readyNoYes").previousElementSibling.className, "lede");
+  const before = document.getElementById("readyNoYes").previousElementSibling;
+  assert.equal(before.className, "small muted");
+  assert.equal(before.previousElementSibling.className, "lede");
 });
 
 test("r2-state-note-1: the Getting paid opening line is unchanged", async () => {

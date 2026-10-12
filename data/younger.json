@@ -34,7 +34,7 @@
    "job": "Babysitting",
    "cells": {
     "ca": {
-     "t": "No permit for irregular odd jobs in private homes, such as babysitting.",
+     "t": "No permit for irregular odd jobs in private homes, such as babysitting. The chart does not say these jobs skip the hour limits. Ask the Labor Commissioner at 833-526-4636 before you plan how much you can do.",
      "s": {
       "t": "California hours and ages chart",
       "u": "https://www.dir.ca.gov/dlse/MinorsSummaryCharts.pdf"
@@ -52,7 +52,7 @@
      }
     },
     "il": {
-     "t": "No permit for babysitting outside school hours at a private home.",
+     "t": "No permit for babysitting outside school hours at a private home when the work is not part of a business.",
      "s": {
       "t": "Illinois Department of Labor FAQ",
       "u": "https://labor.illinois.gov/faqs/child-labor-faq.html"
@@ -64,7 +64,7 @@
    "job": "Yard work for a neighbor",
    "cells": {
     "ca": {
-     "t": "No permit for irregular odd jobs in private homes, such as yard work.",
+     "t": "No permit for irregular odd jobs in private homes, such as yard work. The chart does not say these jobs skip the hour limits. Ask the Labor Commissioner at 833-526-4636 before you plan how much you can do.",
      "s": {
       "t": "California hours and ages chart",
       "u": "https://www.dir.ca.gov/dlse/MinorsSummaryCharts.pdf"
@@ -352,7 +352,7 @@
  ],
  "near": {
   "title": "Work you can start this week near home",
-  "note": "Each job below is one the federal rules name or allow for a 12 or 13 year old. Your state can be stricter, so check the grid above for your state first. Legal but harder to find: acting or performing, gathering evergreens for wreaths at home, and work for a business your parents own entirely (not mining, manufacturing, or the 17 hazardous jobs). Federal rules allow these under 14, but states can be stricter, and they are harder to start this week near home. Unpaid volunteering: one Queens library page says under 14 may volunteer only if a parent or guardian directly supervises. That is the library's description, not a labor department rule.",
+  "note": "Each job below is one the federal rules name or allow for a 12 or 13 year old. Your state can be stricter, so check the grid below for your state first. Legal but harder to find: acting or performing, gathering evergreens for wreaths at home, and work for a business your parents own entirely (not mining, manufacturing, or the 17 hazardous jobs). Federal rules allow these under 14, but states can be stricter, and they are harder to start this week near home. Unpaid volunteering: one Queens library page says under 14 may volunteer only if a parent or guardian directly supervises. That is the library's description, not a labor department rule.",
   "items": [
    {
     "t": "Casual babysitting for families you know. Federal law lists it as allowed under 14. Your state can be stricter: New York says a babysitter must be at least 14.",
@@ -369,14 +369,14 @@
     }
    },
    {
-    "t": "Minor chores around a neighbor's home. Federal law does not cover chores around private homes. Your state can be stricter, so check the grid above first.",
+    "t": "Minor chores around a neighbor's home. Federal law does not cover chores around private homes. Your state can be stricter, so check the grid below first.",
     "s": {
      "t": "Fact Sheet #43: Child Labor Provisions of the Fair Labor Standards Act (FLSA) for Nonagricultural Occupations",
      "u": "https://www.dol.gov/agencies/whd/fact-sheets/43-child-labor-non-agriculture"
     }
    },
    {
-    "t": "Yard work for a neighbor. Under federal law alone, a 13 year old may help with yard work. Your state can be stricter: New York's page does not say what 12 and 13 year olds may do, so check the grid above first.",
+    "t": "Yard work for a neighbor. Under federal law alone, a 13 year old may help with yard work. Your state can be stricter: New York's page does not say what 12 and 13 year olds may do, so check the grid below first.",
     "s": {
      "t": "US Department of Labor eLaws: under 14",
      "u": "https://webapps.dol.gov/elaws/whd/flsa/cl/t13.asp"

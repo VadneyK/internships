@@ -68,6 +68,14 @@
         box.hidden = false;
       });
     }
+    /* "Any other state" shows only for no pick or a state outside the four. It starts with a jump link to the picker in part 1. */
+    var osBox = $("otherState");
+    if (osBox && !$("otherStatePick")) {
+      var pk = document.createElement("p"); pk.id = "otherStatePick";
+      pk.innerHTML = '<a href="#grid">Pick your state in part 1</a>';
+      osBox.insertBefore(pk, $("otherStateRule"));
+    }
+    function syncOther(v) { if (osBox) osBox.hidden = isFour(v); }
     function drawGrid(only) {
       var sts = d.states.filter(function (s) { return !only || !isFour(only) || s[0] === only; });
       var head = "<thead><tr><th scope=\"col\">What you want to do</th>" + sts.map(function (s) { return "<th scope=\"col\">" + G.esc(s[1]) + "</th>"; }).join("") + "</tr></thead>";
@@ -89,6 +97,7 @@
     if (ys._tpSync) ys._tpSync();
     drawGrid(ys.value);
     showLite(ys.value);
+    syncOther(ys.value);
     /* The Work permit finder button passes the picked state on, for every state permit.html reads (L.PERMIT_STATES). */
     function syncPermit() {
       var btn = $("permitBtn");
@@ -108,6 +117,7 @@
     ys.addEventListener("change", function () {
       drawGrid(ys.value);
       showLite(ys.value);
+      syncOther(ys.value);
       syncPermit();
       syncStateUrl(ys.value);
       var total = d.states.length, st = $("yStatus"), msg, name = ys.options[ys.selectedIndex] ? ys.options[ys.selectedIndex].textContent : "";

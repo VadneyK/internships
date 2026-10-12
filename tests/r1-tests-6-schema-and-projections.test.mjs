@@ -107,6 +107,13 @@ for (const name of ["lite", "stats", "core", "detail", "home"]) {
   test(`entries-${name}.json has the same ids in the same order as entries.json`, () => {
     const rows = readJson(`data/entries-${name}.json`);
     assert.ok(Array.isArray(rows));
+    if (name === "home") {
+      // The home file is written in name order (then id), because it drops the name from most rows and home.js ranks by position. Same ids, different order.
+      const byName = readJson("data/entries.json").slice().sort((a, b) => (a.name < b.name ? -1 : a.name > b.name ? 1 : a.id < b.id ? -1 : a.id > b.id ? 1 : 0)).map((r) => r.id);
+      assert.deepEqual(rows.map((r) => r.id), byName);
+      assert.deepEqual(rows.map((r) => r.id).sort(), entryIds.slice().sort());
+      return;
+    }
     assert.deepEqual(rows.map((r) => r.id), entryIds);
   });
 }

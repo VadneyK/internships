@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
 <title>What Opens When: A Month by Month Calendar of Teen Programs</title>
 <meta name="description" content="See when teen jobs, internships and volunteer programs take applications. Pick a month, a place and your age. Dates come from each program's page and mostly describe the last application round.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#efede8">
@@ -21,8 +23,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=a82f8be3">
-<link rel="stylesheet" href="assets/css/style.css?v=a82f8be3">
+<link rel="stylesheet" href="assets/css/fonts.css?v=cf2538b3">
+<link rel="stylesheet" href="assets/css/style.css?v=cf2538b3">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -57,7 +59,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <nav class="breadcrumb small muted" aria-label="Breadcrumb"><ol><li><a href="find.html">Programs</a></li><li aria-current="page">What opens when</li></ol></nav>
     <span class="tag y eyebrow">Plan ahead</span>
     <h1 class="display">What opens <span class="orange">when</span></h1>
-    <p class="lede">Most summer programs take applications in winter and spring, so the time to get ready is now. Pick a month to see which programs take applications then.</p>
+    <p class="lede">Of the summer programs here with a dated deadline, most close between January and April, so the time to get ready is now. Pick a month to see which programs take applications then.</p>
     <noscript><div class="callout bad"><p>This page needs JavaScript to show which programs open each month. With JavaScript off, read the plain rules on the <a href="rules.html">Rules page</a> or the <a href="find.html">Programs page</a>.</p></div></noscript>
     <div class="callout plain small" style="margin-top:1rem;max-width:52rem;"><p id="calNote"></p></div>
   </div>
@@ -71,15 +73,15 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <div class="field"><label for="cAge">Your age</label><select id="cAge" data-tiles data-tiles-any="Any age"><option value="">Any age</option></select></div>
     </div>
     <p class="small" id="cCount" aria-live="polite"></p>
-    <div class="callout plain small" id="calLegend" style="margin-top:1rem;max-width:52rem;">
-      <h2>What the words mean</h2>
+    <details class="callout plain small" id="calLegend" style="margin-top:1rem;max-width:52rem;">
+      <summary>What the words mean</summary>
       <ul>
         <li><b>Applications open:</b> the program takes applications in the month you picked.</li>
         <li><b>Deadlines this month:</b> the program's last day to apply is in the month you picked.</li>
         <li><b>Number on a month button:</b> how many programs match your place and age in that month.</li>
         <li><b>Official page:</b> opens the program's own website in a new tab.</li>
       </ul>
-    </div>
+    </details>
     <h2 id="hClose" hidden>Deadlines this month</h2>
     <ul class="langlist" id="cClose" style="list-style:none;padding:0;display:grid;gap:1rem;"></ul>
     <h2 id="hOpen" hidden>Applications open</h2>
@@ -110,22 +112,29 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
         <p>Free. No sign-up, no ads, no tracking. Everything you type here stays in your browser.</p>
         <p class="small">Last checked <b>Oct 12, 2026</b> &middot; 2214 programs</p>
       </div>
-      <div>
+      <nav aria-label="Quick links">
         <h2 class="fh">Quick links</h2>
-        <ul class="qlinks">
+        <h3 class="fh2" id="ql-find">Find and apply</h3>
+        <ul class="qlinks" aria-labelledby="ql-find">
           <li><a href="find.html">Find a program</a></li>
           <li><a href="playbook.html">Write your message</a></li>
           <li><a href="resume.html">Build a first resume</a></li>
-          <li><a href="ready.html">Get ready for day one</a></li>
+          <li><a href="interview.html">Apply and interview prep</a></li>
           <li><a href="jobs.html">Jobs that hire teens</a></li>
           <li><a href="calendar.html">What opens when</a></li>
+          <li><a href="permit.html">Do I need a work permit?</a></li>
+        </ul>
+        <h3 class="fh2" id="ql-ready">Before day one</h3>
+        <ul class="qlinks" aria-labelledby="ql-ready">
+          <li><a href="ready.html">Get ready for day one</a></li>
           <li><a href="paycheck.html">Your first paycheck</a></li>
           <li><a href="safety.html">Safe at work</a></li>
           <li><a href="younger.html">Ages 12 to 14: start here</a></li>
+        </ul>
+        <h3 class="fh2" id="ql-about">About and help</h3>
+        <ul class="qlinks" aria-labelledby="ql-about">
           <li><a href="parents.html">For parents</a></li>
           <li><a href="handout.html">Handout for teachers and counselors</a></li>
-          <li><a href="interview.html">Apply and interview prep</a></li>
-          <li><a href="permit.html">Do I need a work permit?</a></li>
           <li><a href="languages.html">Work rules in your language</a></li>
           <li><a href="insights.html">The numbers</a></li>
           <li><a href="rules.html">Work permit and pay rules</a></li>
@@ -133,7 +142,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
           <li><a href="share.html">Share this guide (QR codes)</a></li>
           <li><a href="contribute.html">Help build this guide</a></li>
         </ul>
-      </div>
+      </nav>
       <div>
         <h2 class="fh">About this page</h2>
         <p>Made by Kentaro Vadney for the &ldquo;How to Find Internships&rdquo; table at Ignition NorCal 2026. This is an unofficial student resource. It is not an official publication of Ignition, Acts 2 Network or AYM, and the programs listed are not affiliated with them.</p>
@@ -143,9 +152,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=a82f8be3"></script>
-<script src="assets/js/common.js?v=a82f8be3"></script>
-<script src="assets/js/calendar.js?v=a82f8be3"></script>
+<script src="assets/js/lib.js?v=cf2538b3"></script>
+<script src="assets/js/common.js?v=cf2538b3"></script>
+<script src="assets/js/calendar.js?v=cf2538b3"></script>
 
 </body>
 </html>

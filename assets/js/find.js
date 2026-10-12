@@ -26,6 +26,7 @@
     if (st === "year-round") return '<span class="tag good">Year-round</span>';
     if (st === "event") return '<span class="tag y">Event</span>';
     if (st === "closed-expect-reopen") return '<span class="tag ghost">Closed, check back</span>';
+    if (st === "event-passed") return '<span class="tag ghost">Event passed</span>';
     return '<span class="tag ghost">Dates unconfirmed</span>';
   }
   /* A badge for an open program whose deadline is 0 to 14 days away. Same day counting as the dates line (daysUntil). */
@@ -479,6 +480,20 @@
     $("savedOnly").setAttribute("aria-pressed", String(state.saved));
     $("viewCards").setAttribute("aria-pressed", String(state.view === "cards"));
     $("viewDates").setAttribute("aria-pressed", String(state.view === "dates"));
+    syncMoreFilters();
+  }
+  /* The pay, kind and interest chips live in a closed box. Say how many are on, and open the box when one is. */
+  function syncMoreFilters() {
+    var box = $("moreFilters"); if (!box) return;
+    var sm = box.querySelector("summary"); if (!sm) return;
+    var n = state.paid.length + state.types.length + state.fields.length;
+    /* The count lives in its own span, so the label text and any child elements in the summary are left alone. */
+    var cnt = sm.querySelector(".mf-count");
+    if (!cnt) { cnt = document.createElement("span"); cnt.className = "mf-count"; sm.appendChild(cnt); }
+    cnt.textContent = n ? " (" + n + " on)" : "";
+    /* Open only when the count goes from none to some (or on first load with a filter in the URL), so a teen can close the box while filters stay on. */
+    if (n && !box._hadOn) box.open = true;
+    box._hadOn = n > 0;
   }
   function resetAll() { resetFilters(false); }
   /* keepSaved: turn every filter off but leave My list on */
@@ -679,6 +694,16 @@
 
   var qt;
   $("q").addEventListener("input", function (e) { clearTimeout(qt); var v = e.target.value; if (v.trim()) wantDetail(); qt = setTimeout(function () { state.q = v.trim(); typingRender = true; render(true); }, 160); });
+  /* Enter (the phone Search key) runs the search now: no waiting for the typing timer, the keyboard closes, and focus moves to the count. */
+  $("q").addEventListener("keydown", function (e) {
+    if (e.key !== "Enter") return;
+    e.preventDefault();
+    clearTimeout(qt);
+    var v = e.target.value; if (v.trim()) wantDetail();
+    state.q = v.trim(); typingRender = true; render(true);
+    $("q").blur();
+    var c = $("count"); if (c) c.focus();
+  });
   ["age", "when", "season", "sort"].forEach(function (id) { $(id).addEventListener("change", function (e) { state[id] = e.target.value; if (id === "age") { savePrefs(); hidePrefNote(); } render(true); }); });
   $("goalChips").addEventListener("click", function (ev) {
     var b = ev.target.closest("[data-goal]"); if (!b) return;
@@ -742,10 +767,17 @@
   });
   $("printList").addEventListener("click", function () {
     var ids = savedIds(), keep = all.filter(function (e) { return ids.indexOf(e.id) > -1; });
+    /* the same "Last checked" date the page footer shows, so a paper copy can be dated */
+    var foot = document.querySelector(".foot b"), checked = foot ? foot.textContent.trim() : "";
     var d = document.createElement("div");
     d.innerHTML = "<h1>My internship list</h1><ol>" + keep.map(function (e) {
-      return "<li><b>" + G.esc(e.name) + "</b> (" + G.esc(e.org || "") + ")<br>" + G.esc(e.deadline_text || "") + "<br>" + G.esc(e.url || "") + "</li>";
-    }).join("") + "</ol><p>From vadneyk.github.io/internships. Confirm dates on each program's own site.</p>";
+      /* only the parts a program has: no "()" and no empty line */
+      var line = "<li><b>" + G.esc(e.name) + "</b>";
+      if (e.org) line += " (" + G.esc(e.org) + ")";
+      if (e.deadline_text) line += "<br>" + G.esc(e.deadline_text);
+      if (e.url) line += "<br>" + G.esc(e.url);
+      return line + "</li>";
+    }).join("") + "</ol>" + (checked ? "<p>Last checked " + G.esc(checked) + ".</p>" : "") + "<p>From vadneyk.github.io/internships. Confirm dates on each program's own site.</p>";
     G.printOnly(d, "My internship list");
   });
   /* The text for Copy my list, Text it to myself and Email it to myself. It starts with the site address, then one block per saved program. */

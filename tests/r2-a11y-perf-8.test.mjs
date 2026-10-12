@@ -74,10 +74,10 @@ for (const file of PAGES) {
     const doc = staticDoc(file);
     const col = quickLinksColumn(doc);
     assert.ok(col, "no footer column headed Quick links");
-    const ul = col.querySelector("ul");
-    assert.ok(ul, "Quick links column has no ul");
-    assert.ok(ul.classList.contains("qlinks"), "list is missing the qlinks class");
-    const items = [...ul.children];
+    const uls = [...col.querySelectorAll("ul")];
+    assert.ok(uls.length > 0, "Quick links column has no ul");
+    assert.ok(uls.every((u) => u.classList.contains("qlinks")), "list is missing the qlinks class");
+    const items = uls.flatMap((u) => [...u.children]);
     assert.ok(items.every((el) => el.tagName === "LI"), "ul has a child that is not an li");
     assert.equal(items.length, QUICK_HREFS.length, `expected ${QUICK_HREFS.length} li, found ${items.length}`);
     for (const li of items) {
@@ -86,10 +86,10 @@ for (const file of PAGES) {
     }
   });
 
-  test(`${file}: Quick links hrefs match the list from before this change, in order`, () => {
+  test(`${file}: Quick links hrefs match the list from before this change (same set; the grouped order is checked in r3-teen-flow-5)`, () => {
     const col = quickLinksColumn(staticDoc(file));
     const hrefs = [...col.querySelectorAll("li > a")].map((a) => a.getAttribute("href").replace(/^\/internships\//, "")); // 404.html is root-anchored
-    assert.deepEqual(hrefs, QUICK_HREFS);
+    assert.deepEqual([...hrefs].sort(), [...QUICK_HREFS].sort());
   });
 
   test(`${file}: the footer has no line break (br) inside it`, () => {

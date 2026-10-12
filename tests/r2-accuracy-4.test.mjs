@@ -1,6 +1,6 @@
 // Illinois pay preset labels in money.json (ticket r2-accuracy-4).
 // The adult label must not say "outside Chicago" for the state rate, because the Cook County
-// ordinance sets $15.40 for 18 and older outside Chicago. The youth label must keep "with one employer".
+// ordinance sets $15.40 for 18 and older outside Chicago. The youth label must keep the 650 hour rule.
 // Run with: node --test tests/r2-accuracy-4.test.mjs
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -19,13 +19,13 @@ test("il-adult label states the state rate and the Cook County $15.40 rule", () 
   );
 });
 
-test("il-youth label keeps 'first 650 hours in a year with one employer' from permits.json", () => {
+test("il-youth label keeps 'less than 650 hours in a calendar year' from permits.json", () => {
   assert.ok(
-    PERMITS.states.il.wage.includes("first 650 hours in a year with one employer"),
-    "permits.json il.wage no longer has the one-employer rule",
+    PERMITS.states.il.wage.includes("less than 650 hours in a calendar year"),
+    "permits.json il.wage no longer has the 650 hour rule",
   );
   assert.ok(
-    preset("il-youth").label.includes("first 650 hours in a year with one employer"),
+    preset("il-youth").label.includes("less than 650 hours in a calendar year"),
     preset("il-youth").label,
   );
 });

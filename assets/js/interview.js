@@ -159,7 +159,7 @@
     $("refRows").innerHTML = saved.refs.map(function (r, i) {
       return '<article class="card"><h3>Reference ' + (i + 1) + '</h3><div class="field"><label for="rn' + i + '">Name</label><input id="rn' + i + '" data-i="' + i + '" data-k="n" type="text" autocapitalize="words" autocomplete="off"></div>' +
         '<div class="field"><label for="rw' + i + '">Who they are to you</label><input id="rw' + i + '" data-i="' + i + '" data-k="w" type="text" autocomplete="off" placeholder="teacher, coach, babysitting family"></div>' +
-        '<div class="field"><label for="rc' + i + '">Phone or email</label><input id="rc' + i + '" data-i="' + i + '" data-k="c" type="text" autocomplete="off"></div>' +
+        '<div class="field"><label for="rc' + i + '">Phone or email</label><input id="rc' + i + '" data-i="' + i + '" data-k="c" type="text" autocapitalize="none" spellcheck="false" autocomplete="off"></div>' +
         '<label style="display:flex;gap:.5rem;align-items:center;"><input type="checkbox" data-i="' + i + '" data-k="asked"> I asked them and they said yes</label>' +
         '<p class="row"><button class="btn sm alt" type="button" data-ask="' + i + '">Copy a message asking them</button></p></article>';
     }).join("");

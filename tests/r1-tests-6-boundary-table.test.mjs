@@ -131,7 +131,8 @@ test("effStatus: other statuses around a deadline edge (zone-independent)", () =
   const rows = [
     // [status, extra fields, expected effStatus, expected futureDeadline ISO or null, reason]
     ["rolling", { deadline_iso: yesterday }, "rolling", null, "rolling is not closed by a past deadline, and a past date is not a future deadline"],
-    ["event", { deadline_iso: yesterday }, "event", null, "event is not closed by a past deadline"],
+    // r2-tests-1 w2: a finished event must leave "Apply any time" and get its own "event-passed" status.
+    ["event", { deadline_iso: yesterday }, "event-passed", null, "event with a past date has passed, and does not reopen"],
     ["event", { deadline_iso: today }, "event", today, "event with a deadline today still counts for the day"],
     ["unconfirmed", { deadline_iso: today }, "unconfirmed", null, "unconfirmed never gets a future deadline"],
     ["open-now", { deadline_iso: null }, "open-now", null, "no deadline: nothing to close, no future date"],

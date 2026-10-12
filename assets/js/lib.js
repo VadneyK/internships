@@ -287,7 +287,7 @@
   var PERMIT_STATES = ["ca", "ga", "ny", "il", "wa", "tx", "mn", "wi", "in", "oh", "mi", "nc", "md", "va", "nj", "pa", "ma", "bc"];
   function permitFor(data, st, age, kind) {
     var has = Object.prototype.hasOwnProperty, s = data && data.states && has.call(data.states, st) ? data.states[st] : null;
-    if (!s) return { verdict: "nostate", headline: "We have not read your state yet", text: "We have full answers for 17 states and British Columbia, and shorter answers for 34 more states. Ask your school office or your state labor department. The US Department of Labor lists them at dol.gov/agencies/whd/contact/state-labor-offices." };
+    if (!s) return { verdict: "nostate", headline: "We have not read your state yet", text: "We have full answers for 17 states and British Columbia, and shorter answers for 33 more states and Washington, DC. Ask your school office or your state labor department. The US Department of Labor lists them at dol.gov/agencies/whd/contact/state-labor-offices." };
     var a = +age, k = s.kinds && has.call(s.kinds, kind) ? s.kinds[kind] : null;
     if (!k || !(a >= 0)) return null;
     /* An optional per-age override: kinds.x.under = {below, permit, text} replaces the answer for ages under "below". */
@@ -377,6 +377,7 @@
   function effStatus(e, now) {
     var today = startOfDay(now), s = e.status;
     var close = parseISO(e.deadline_iso), opens = parseISO(e.opens_iso);
+    if (s === "event" && close && close < today) return "event-passed";
     if ((s === "open-now" || s === "opens-soon") && close && close < today) return "closed-expect-reopen";
     if (s === "opens-soon" && opens && opens <= today) return "open-now";
     return s;
@@ -433,7 +434,7 @@
   }
   function queryNeedles(q) {
     if (q !== _qStr) {
-      _qNeedles = q.toLowerCase().split(/\s+/).map(function (w) { return " " + w.replace(/[^a-z0-9]+/g, " "); }).filter(function (n) { return n.trim() !== ""; });
+      _qNeedles = q.toLowerCase().split(/\s+/).map(function (w) { return " " + w.replace(/[^a-z0-9]+/g, " ").replace(/^ +/, ""); }).filter(function (n) { return n.trim() !== ""; });
       _qStr = q;
     }
     return _qNeedles;
@@ -689,7 +690,8 @@
   /* ---- Insights: counts for the charts. Pure, so it is tested. ---- */
   var STATUS_GROUPS = [
     ["open", "Open now", "open-now"], ["soon", "Opens soon", "opens-soon"], ["anytime", "Apply any time", "rolling,year-round,event"],
-    ["closed", "Closed, back next cycle", "closed-expect-reopen"], ["unknown", "Dates not posted", "unconfirmed"]
+    ["closed", "Closed, back next cycle", "closed-expect-reopen"], ["unknown", "Dates not posted", "unconfirmed"],
+    ["passed", "Event passed", "event-passed"]
   ];
   function insights(list, now) {
     var out = { total: list.length, status: [], ages: [], hubs: [], months: [], types: [], fields: [], facts: {} };

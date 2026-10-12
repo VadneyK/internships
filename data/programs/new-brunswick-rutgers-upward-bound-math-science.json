@@ -29,10 +29,10 @@
   "status": "open-now",
   "deadline_text": "The page says online applications open in mid-September and close in mid-December each year. A 2027 application link is posted.",
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Use the Upward Bound Math-Science 2027 Application link on the page. Questions: upwardbound@echo.rutgers.edu or (848) 445-3090. Virtual open houses are held in fall in English and Spanish.",
+  "how_to_apply": "Email upwardbound@echo.rutgers.edu or call (848) 445-3090 to ask how to apply. The page says you fill out an application and a personal statement, and you have an interview. It shows no link to apply. Virtual open houses are held in fall in English and Spanish.",
   "needs_work_permit": false,
   "url": "https://nbaccess.rutgers.edu/student-access/upward-bound",
-  "notes": "Students must be willing to get to campus every day of the summer (parent ride or bus program). A separate Pre-College Outreach program is described on the same page.",
+  "notes": "Students must be willing to get to campus every day of the summer (parent ride or bus program). A separate Pre-College Outreach program is described on the same page. Checked 2026-10-10: the page names the 2027 application but shows no link to it, so apply_url stays empty.",
   "sources_fetched": [
     "https://nbaccess.rutgers.edu/student-access/upward-bound"
   ]

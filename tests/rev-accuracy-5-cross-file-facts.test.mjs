@@ -39,7 +39,8 @@ test("(a) every money.json preset wage appears in that state's permits wage text
 test("(b) California $16.90 and $17.40 agree in permits, languages and rules", () => {
   for (const amt of ["$16.90", "$17.40"]) {
     assert.ok(permits.states.ca.wage.includes(amt), `permits ca wage lacks ${amt}`);
-    assert.ok(languages.includes(amt.slice(1)), `languages.json lacks ${amt}`);
+    // The Spanish DIR page shows only the 2026 rate (ticket r1-accuracy-14), so languages.json carries $16.90 only.
+    if (amt === "$16.90") assert.ok(languages.includes(amt.slice(1)), `languages.json lacks ${amt}`);
     assert.ok(rules.includes(amt), `rules.html lacks ${amt}`);
   }
 });

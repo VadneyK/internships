@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
 <title>Your First Paycheck: What Comes Out and Tax Forms by State</title>
 <meta name="description" content="Estimate what a first paycheck looks like in California, Georgia, New York and Illinois using only sourced numbers, understand the W-4 and state withholding forms, and learn how to get unpaid wages. Facts from the IRS, state labor and tax agencies and the CFPB.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#efede8">
@@ -21,8 +23,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=a82f8be3">
-<link rel="stylesheet" href="assets/css/style.css?v=a82f8be3">
+<link rel="stylesheet" href="assets/css/fonts.css?v=cf2538b3">
+<link rel="stylesheet" href="assets/css/style.css?v=cf2538b3">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -57,10 +59,11 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <nav class="breadcrumb small muted" aria-label="Breadcrumb"><ol><li><a href="ready.html">Get ready</a></li><li aria-current="page">Your first paycheck</li></ol></nav>
     <span class="tag y eyebrow">Money</span>
     <h1 class="display">Your first <span class="orange">paycheck</span></h1>
-    <p class="lede">Your check is smaller than hours times pay rate. This page shows what comes out, which forms to fill out on your first day, and what to do if your pay is wrong. Last read Oct 10, 2026.</p>
+    <p class="lede">Your check is smaller than hours times pay rate. This page shows what comes out, which forms to fill out on your first day, and what to do if your pay is wrong.</p>
+    <p class="small muted">Last read Oct 10, 2026.</p>
     <p class="small" id="payStateNote">Most examples here are from California. <a href="states.html">Georgia, New York, Illinois and other states</a> have their own notes: <a href="permit.html">pick your state first</a>. In British Columbia the rules differ: see <a href="permit.html">the British Columbia work permit answer</a>.</p>
     <noscript><div class="callout bad"><p>This page needs JavaScript to work out the paycheck estimate. With JavaScript off, read the plain rules on the <a href="rules.html">Rules page</a>.</p></div></noscript>
-    <div class="callout plain small" style="margin-top:1rem;max-width:52rem;"><p><b>Facts, not tax advice.</b> We only show amounts we have a source for. Ask a parent or a tax preparer about your own situation.</p><p>This page covers California, Georgia, New York and Illinois. Social Security and Medicare apply to most jobs in every state. The exception is working for your parent's own sole proprietorship, or a partnership where both partners are your parents, when you are under 18. It does not apply to a corporation. In another state the state tax form and minimum wage are different. See <a href="permit.html">the work permit finder</a> for your state's minimum wage and the number to call.</p></div>
+    <div class="callout plain small" style="margin-top:1rem;max-width:52rem;"><p><b>Facts, not tax advice.</b> We only show amounts we have a source for. Ask a parent or a tax preparer about your own situation.</p><details><summary>Working for your parent's own business?</summary><p>This page covers California, Georgia, New York and Illinois. Social Security and Medicare apply to most jobs in every state. The exception is working for your parent's own sole proprietorship, or a partnership where both partners are your parents, when you are under 18. It does not apply to a corporation. In another state the state tax form and minimum wage are different. See <a href="permit.html">the work permit finder</a> for your state's minimum wage and the number to call.</p></details></div>
     <nav class="chips" id="parts" aria-label="On this page" style="margin-top:1rem;">
       <a class="chip" style="text-decoration:none" href="#est">1. Estimate</a>
       <a class="chip" style="text-decoration:none" href="#forms">2. Tax forms</a>
@@ -151,22 +154,29 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
         <p>Free. No sign-up, no ads, no tracking. Everything you type here stays in your browser.</p>
         <p class="small">Last checked <b>Oct 12, 2026</b> &middot; 2214 programs</p>
       </div>
-      <div>
+      <nav aria-label="Quick links">
         <h2 class="fh">Quick links</h2>
-        <ul class="qlinks">
+        <h3 class="fh2" id="ql-find">Find and apply</h3>
+        <ul class="qlinks" aria-labelledby="ql-find">
           <li><a href="find.html">Find a program</a></li>
           <li><a href="playbook.html">Write your message</a></li>
           <li><a href="resume.html">Build a first resume</a></li>
-          <li><a href="ready.html">Get ready for day one</a></li>
+          <li><a href="interview.html">Apply and interview prep</a></li>
           <li><a href="jobs.html">Jobs that hire teens</a></li>
           <li><a href="calendar.html">What opens when</a></li>
+          <li><a href="permit.html">Do I need a work permit?</a></li>
+        </ul>
+        <h3 class="fh2" id="ql-ready">Before day one</h3>
+        <ul class="qlinks" aria-labelledby="ql-ready">
+          <li><a href="ready.html">Get ready for day one</a></li>
           <li><a href="paycheck.html">Your first paycheck</a></li>
           <li><a href="safety.html">Safe at work</a></li>
           <li><a href="younger.html">Ages 12 to 14: start here</a></li>
+        </ul>
+        <h3 class="fh2" id="ql-about">About and help</h3>
+        <ul class="qlinks" aria-labelledby="ql-about">
           <li><a href="parents.html">For parents</a></li>
           <li><a href="handout.html">Handout for teachers and counselors</a></li>
-          <li><a href="interview.html">Apply and interview prep</a></li>
-          <li><a href="permit.html">Do I need a work permit?</a></li>
           <li><a href="languages.html">Work rules in your language</a></li>
           <li><a href="insights.html">The numbers</a></li>
           <li><a href="rules.html">Work permit and pay rules</a></li>
@@ -174,7 +184,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
           <li><a href="share.html">Share this guide (QR codes)</a></li>
           <li><a href="contribute.html">Help build this guide</a></li>
         </ul>
-      </div>
+      </nav>
       <div>
         <h2 class="fh">About this page</h2>
         <p>Made by Kentaro Vadney for the &ldquo;How to Find Internships&rdquo; table at Ignition NorCal 2026. This is an unofficial student resource. It is not an official publication of Ignition, Acts 2 Network or AYM, and the programs listed are not affiliated with them.</p>
@@ -184,9 +194,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=a82f8be3"></script>
-<script src="assets/js/common.js?v=a82f8be3"></script>
-<script src="assets/js/paycheck.js?v=a82f8be3"></script>
+<script src="assets/js/lib.js?v=cf2538b3"></script>
+<script src="assets/js/common.js?v=cf2538b3"></script>
+<script src="assets/js/paycheck.js?v=cf2538b3"></script>
 
 </body>
 </html>

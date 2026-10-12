@@ -14,7 +14,8 @@ for (const file of ["ready.html", "playbook.html", "rules.html", "states.html"])
     const nav = document.querySelector('nav.chips[aria-label="On this page"]');
     assert.ok(nav && nav.id, "chip nav has an id");
     assert.equal(document.querySelectorAll("#" + nav.id).length, 1, "nav id is unique");
-    const targets = [...nav.querySelectorAll("a.chip")].map((a) => a.getAttribute("href").slice(1));
+    // #checklist is the checklist block, not a section, so it has no back link (like the #words box).
+    const targets = [...nav.querySelectorAll("a.chip")].map((a) => a.getAttribute("href").slice(1)).filter((id) => id !== "checklist");
     assert.ok(targets.length >= 4);
     for (const id of targets) {
       const sec = document.getElementById(id);

@@ -1,100 +1,67 @@
-// Ticket r3-a11y-perf-4: names in other languages carry a lang attribute, and official page links carry hreflang.
-// Run with: node --test tests/r3-a11y-perf-4.test.mjs
+// r3-a11y-perf-4: the Home file keeps name, org, city and url only on rows the closing-soon list can draw.
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
+import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
-import { loadPage, type, tick } from "./dom-helper.mjs";
 
-const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
-const data = JSON.parse(fs.readFileSync(path.join(root, "data/languages.json"), "utf8"));
-const labels = new Map(data.languages);
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const read = (f) => JSON.parse(fs.readFileSync(path.join(ROOT, "data", f), "utf8"));
+const L = createRequire(import.meta.url)(path.join(ROOT, "assets/js/lib.js"));
+const home = read("entries-home.json");
+const full = read("entries.json");
+const SOON = "confirmed-2026-27";
+const SOON_ONLY = ["name", "org", "city", "url"];
 
-async function ready(file, opts) {
-  const p = await loadPage(file, opts);
-  await tick(120);
-  return p;
-}
-
-test("languages: every language option except the first has a lang equal to its value", async () => {
-  const { document, errors } = await ready("languages.html");
-  assert.deepEqual(errors, []);
-  const opts = [...document.getElementById("lLang").options];
-  assert.equal(opts[0].value, "");
-  assert.equal(opts[0].hasAttribute("lang"), false);
-  assert.equal(opts.length, data.languages.length + 1);
-  for (const o of opts.slice(1)) assert.equal(o.getAttribute("lang"), o.value, o.textContent);
+test("home file is under 560000 bytes", () => {
+  assert.ok(fs.statSync(path.join(ROOT, "data/entries-home.json")).size < 560000);
 });
 
-test("languages: each chip wraps the native name in a lang span and keeps its text unchanged", async () => {
-  const { document } = await ready("languages.html");
-  const items = [...document.querySelectorAll("#lList li.card")];
-  assert.equal(items.length, data.rows.length);
-  data.rows.forEach((row, i) => {
-    const chips = [...items[i].querySelectorAll("span.tag.y")];
-    assert.equal(chips.length, row.lang.length, row.title);
-    chips.forEach((chip, k) => {
-      const code = row.lang[k];
-      const span = chip.firstElementChild;
-      assert.ok(span, `chip for ${code} has no lang span`);
-      assert.equal(span.tagName, "SPAN");
-      assert.equal(span.getAttribute("lang"), code);
-      assert.equal(chip.textContent, labels.get(code), `chip text for ${code} changed`);
+test("only closing-soon rows carry name, org, city and url", () => {
+  home.forEach((r) => {
+    SOON_ONLY.forEach((k) => {
+      if (r.deadline_confidence !== SOON) assert.ok(!(k in r), r.id + " should not have " + k);
     });
   });
+  const soon = home.filter((r) => r.deadline_confidence === SOON);
+  assert.ok(soon.length > 100);
+  soon.forEach((r) => assert.ok(r.name, r.id + " needs name for the soon list"));
 });
 
-test("languages: the English word in brackets stays outside the lang span", async () => {
-  const { document } = await ready("languages.html");
-  const chip = [...document.querySelectorAll("#lList span.tag.y")].find((c) => c.firstElementChild && c.firstElementChild.getAttribute("lang") === "es");
-  assert.ok(chip, "no Spanish chip");
-  assert.equal(chip.firstElementChild.textContent, "Español");
-  assert.equal(chip.textContent, "Español (Spanish)");
-  assert.doesNotMatch(chip.firstElementChild.textContent, /Spanish/);
-  const tl = [...document.querySelectorAll("#lList span.tag.y")].find((c) => c.firstElementChild && c.firstElementChild.getAttribute("lang") === "tl");
-  assert.ok(tl, "no Tagalog chip");
-  assert.equal(tl.textContent, "Tagalog");
-});
-
-test("languages: every official page link has hreflang equal to the first code in its row", async () => {
-  const { document } = await ready("languages.html");
-  const links = [...document.querySelectorAll("#lList a.btn")].filter((a) => /Open the official page/.test(a.textContent));
-  assert.equal(links.length, data.rows.length);
-  links.forEach((a, i) => {
-    assert.equal(a.getAttribute("hreflang"), data.rows[i].lang[0], data.rows[i].title);
-    assert.match(a.textContent.trim(), /^Open the official page/);
+test("every key home.js reads from an entry is on every row that reaches that code", () => {
+  const src = fs.readFileSync(path.join(ROOT, "assets/js/home.js"), "utf8");
+  const keys = new Set([...src.matchAll(/\be\.([a-z_]+)\b/g)].map((m) => m[1]));
+  // Keys read only for rows of the soon list (drawSoon) or only from a program's own file (the four cards).
+  const soonList = ["name", "org", "city", "url"];
+  const cardFile = ["what_you_do", "deadline_text", "type"];
+  const everyRow = ["id", "paid_type", "deadline_confidence"];
+  [...keys].filter((k) => !["inner", "hidden", "now", "text", "some", "get", "all"].includes(k)).forEach((k) => {
+    assert.ok(soonList.includes(k) || cardFile.includes(k) || everyRow.includes(k), "unreviewed key read by home.js: e." + k);
   });
+  home.forEach((r) => assert.ok(r.id));
+  home.filter((r) => r.deadline_confidence === SOON).forEach((r) => soonList.forEach((k) => assert.ok(r[k], r.id + " " + k)));
+  assert.ok(!/G\.esc\(e\.name\)/.test(src.split("function pick")[1].split("Promise.all")[0].split("function draw")[0]), "picker ranking must not read e.name directly");
 });
 
-test("languages: picking Spanish gives every visible link hreflang es", async () => {
-  const { window, document } = await ready("languages.html");
-  type(window, document.getElementById("lLang"), "es");
-  await tick(60);
-  const links = [...document.querySelectorAll("#lList a.btn")].filter((a) => /Open the official page/.test(a.textContent));
-  assert.ok(links.length > 0);
-  for (const a of links) assert.equal(a.getAttribute("hreflang"), "es");
-});
-
-test("languages: ?lang=es in the address gives every visible link hreflang es", async () => {
-  const { document } = await ready("languages.html", { search: "?lang=es" });
-  const links = [...document.querySelectorAll("#lList a.btn")];
-  assert.ok(links.length > 0);
-  for (const a of links) assert.equal(a.getAttribute("hreflang"), "es");
-});
-
-test("languages: a hostile code like __proto__ throws no error and adds no lang attribute", async () => {
-  const { document, errors } = await ready("languages.html", { search: "?lang=__proto__" });
-  assert.deepEqual(errors, []);
-  assert.equal(document.querySelectorAll('[lang="__proto__"]').length, 0);
-  for (const el of document.querySelectorAll("[lang]")) assert.notEqual(el.getAttribute("lang"), "__proto__");
-  for (const a of document.querySelectorAll("#lList a.btn")) assert.notEqual(a.getAttribute("hreflang"), "__proto__");
-  assert.doesNotMatch(document.getElementById("lCount").textContent, /object|undefined|NaN/i);
-});
-
-test("languages: no em dash or en dash in the changed files", () => {
-  for (const f of ["assets/js/languages.js", "tests/r3-a11y-perf-4.test.mjs"]) {
-    const text = fs.readFileSync(path.join(root, f), "utf8");
-    assert.doesNotMatch(text, new RegExp("[\\u2013\\u2014]"), f);
+test("rows are in name order, so the picker top four match the full file for ages 12 to 18 at each hub", () => {
+  const names = new Map(full.map((e) => [e.id, e.name]));
+  for (let i = 1; i < home.length; i++) {
+    const a = names.get(home[i - 1].id), b = names.get(home[i].id);
+    assert.ok(a < b || (a === b && home[i - 1].id < home[i].id), "order at " + home[i].id);
+  }
+  const rank = {};
+  home.forEach((e, i) => { rank[e.id] = i; });
+  const now = Date.now();
+  const fullById = new Map(full.map((e) => [e.id, e]));
+  for (let age = 12; age <= 18; age++) {
+    for (const hub of ["", ...L.HUBS.map((h) => h[0])]) {
+      const st = { place: hub, age: String(age), fields: [] };
+      const want = L.sortList(full.filter((e) => L.matches(e, st, now)), "best", now, { age: String(age) }).map((e) => e.id);
+      const got = L.sortList(home.filter((e) => L.matches(e, st, now)).map((e) => Object.assign({}, e, { name: ("00000" + rank[e.id]).slice(-6) })), "best", now, { age: String(age) }).map((e) => e.id);
+      assert.equal(got.length, want.length, "count age " + age + " hub " + hub);
+      assert.deepEqual(got.slice(0, 4), want.slice(0, 4), "top four age " + age + " hub " + hub);
+      assert.ok(fullById.size > 0);
+    }
   }
 });

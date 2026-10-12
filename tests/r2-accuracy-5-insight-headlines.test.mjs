@@ -25,9 +25,11 @@ const NEW_HEADINGS = [
   'New York City lottery winners earned more that year',
 ];
 
-// The Pew card is the article whose heading is "If you do not have a job yet, you are with most teens".
+// The Pew card is the article whose heading is "If you do not have a job yet, you are with most 16 to 19 year olds".
+const PEW_HEADING = 'If you do not have a job yet, you are with most 16 to 19 year olds';
+
 function pewCard(html) {
-  const start = html.indexOf('If you do not have a job yet, you are with most teens');
+  const start = html.indexOf(PEW_HEADING);
   assert.ok(start >= 0, 'Pew card heading not found');
   const end = html.indexOf('</article>', start);
   assert.ok(end > start, 'Pew card has no closing article tag');
@@ -47,6 +49,14 @@ for (const file of FILES) {
     for (const heading of NEW_HEADINGS) {
       assert.ok(html.includes(heading), `${file} lacks heading: ${heading}`);
     }
+  });
+
+  test(`${file}: the Pew card headline names the 16 to 19 age group`, () => {
+    const html = read(file);
+    const start = html.indexOf(PEW_HEADING);
+    assert.ok(start >= 0, `${file} lacks Pew headline: ${PEW_HEADING}`);
+    const heading = html.slice(start, html.indexOf('</h3>', start));
+    assert.ok(heading.includes('16 to 19'), `${file} Pew headline lacks "16 to 19"`);
   });
 
   test(`${file}: the Pew card says the 2026 figure covers June and July only`, () => {

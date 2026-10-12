@@ -41,12 +41,12 @@ test("p8-ready-1: the Words you will see box still follows the jump chips", asyn
   assert.equal(chips.nextElementSibling, document.getElementById("words"));
 });
 
-test("p8-ready-1: the block has the four plain steps in order", async () => {
+test("p8-ready-1: the block has the four plain steps", async () => {
   const { document } = await loadPage("ready.html");
   const items = [...document.querySelectorAll("#no-parent li")].map((li) => li.textContent.trim());
   assert.equal(items.length, 4);
   assert.equal(items[0], "Whether a parent must sign a work permit depends on your age and state. The permit finder shows the rule for your age.");
-  assert.match(items[1], /^Papers, in order: start with a birth certificate from the state where you were born\. If you were born outside the US, ask about other List C documents\. Next, a Social Security card\. A replacement is free\. Then a state ID\.$/);
+  assert.match(items[1], /^Papers: You choose which acceptable documents to show\. A passport alone works \(see your papers\)\. A birth certificate, a Social Security card \(a replacement is free\) or a state ID can also be part of your set\.$/);
   assert.match(items[2], /^Bank account: ask the bank what ID and proof of address it needs before you go\. See Open a bank account\.$/);
   assert.match(items[3], /^For help getting documents, ask a school counselor or another adult you trust\./);
 });
