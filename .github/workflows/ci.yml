@@ -50,6 +50,9 @@ jobs:
   lib-coverage:
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    # Under coverage, two jsdom-heavy test files ran out of heap with the default limit (CI runs 38277532726 and 38294892812).
+    env:
+      NODE_OPTIONS: --max-old-space-size=7168
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
@@ -59,7 +62,7 @@ jobs:
         run: npm ci
       - name: lib.js coverage floor (takes about 8 minutes)
         run: >-
-          node --test --experimental-test-coverage
+          node --test --test-concurrency=2 --experimental-test-coverage
           --test-coverage-include=assets/js/lib.js
           --test-coverage-lines=99 --test-coverage-branches=97
           tests/*.test.mjs
@@ -67,6 +70,9 @@ jobs:
   page-script-coverage:
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    # Under coverage, two jsdom-heavy test files ran out of heap with the default limit (CI runs 38277532726 and 38294892812).
+    env:
+      NODE_OPTIONS: --max-old-space-size=7168
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
@@ -75,7 +81,7 @@ jobs:
       - name: Install JavaScript test tools
         run: npm ci
       - name: Run the tests and keep the V8 coverage dumps (takes about 8 minutes)
-        run: NODE_V8_COVERAGE=coverage-v8 node --test tests/*.test.mjs
+        run: NODE_V8_COVERAGE=coverage-v8 node --test --test-concurrency=2 tests/*.test.mjs
       - name: Page script line coverage floors
         run: >-
           COVERAGE_DIR=coverage-v8 COVERAGE_OUT=coverage-page-scripts.txt
