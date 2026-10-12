@@ -145,7 +145,8 @@ test("the numbers that count every program come out the same from the stats rows
 });
 
 // ---- the page ----
-async function poll(cond, ms = 6000) {
+// 2026-10-12: 20 s, not 6 s. The CI coverage run is slow enough that loading the whole lite file after a change took longer than 6 s (run 38315707421).
+async function poll(cond, ms = 20000) {
   const t0 = Date.now();
   while (Date.now() - t0 < ms) { if (cond()) return true; await new Promise((r) => setTimeout(r, 40)); }
   return false;
