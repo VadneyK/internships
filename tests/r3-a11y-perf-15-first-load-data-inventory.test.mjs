@@ -16,7 +16,8 @@ export const TABLE = {
   "find.html": { paths: ["data/entries-lite.json"], ceiling: 1960000, reason: "Find filters every program, so it needs the whole lite file" },
   "calendar.html": { paths: ["data/calendar.json", "data/entries-cal.json"], ceiling: 150000, reason: "Calendar draws deadline cards from the small calendar file (only the programs it lists) plus its own small file" },
   "younger.html": { paths: ["data/entries-core.json", "data/younger.json"], ceiling: 1100000, reason: "Ages 12 to 14 reads the core file and its own small file; headroom up to the card file size" },
-  "jobs.html": { paths: ["data/employers.json"], ceiling: 130000, reason: "Jobs lists employers from one small file; the state hours rules load only after an age of 14 to 17 and a state are picked" },
+  // Raised from 130000 to 145000 on 2026-10-12: the employer list grew to 147 entries (about 136 KB, one entry per line, about 30 KB gzipped).
+  "jobs.html": { paths: ["data/employers.json"], ceiling: 145000, reason: "Jobs lists employers from one small file; the state hours rules load only after an age of 14 to 17 and a state are picked" },
   "interview.html": { paths: ["data/interview.json"], ceiling: 60000, reason: "Tips file only; the state rules load the first time the hours checker is used" },
   "permit.html": { paths: ["data/permits.json"], ceiling: 100000, reason: "Work permit page reads only the state rules file" },
   "states.html": { paths: ["data/permits.json"], ceiling: 100000, reason: "State rules page reads only the state rules file" },
