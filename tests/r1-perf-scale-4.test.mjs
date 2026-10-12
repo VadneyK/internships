@@ -41,7 +41,7 @@ const liteUrls = (urls) => urls.filter((u) => /data\/programs\/[^/]+\.json/.test
 
 // What the old home.js drew, built from the lite file with the same lib calls.
 function oldSoon(G, L) {
-  const fut = (e) => L.futureDeadline(e, Date.now());
+  const fut = (e) => L.futureDeadline(e, NOW);
   const soon = lite.filter((e) => fut(e) && e.deadline_confidence === "confirmed-2026-27")
     .sort((a, b) => fut(a) - fut(b) || (a.priority || 3) - (b.priority || 3)).slice(0, 8);
   return soon.map((e) => {
