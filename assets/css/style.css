@@ -218,6 +218,7 @@ label:has(> input[type="checkbox"]) { min-height: 2.75rem; }
 .card { background: var(--surface); border: 3px solid var(--edge); border-radius: var(--radius); box-shadow: var(--shadow); padding: 1.1rem 1.15rem; min-width: 0; }
 .card.flat { box-shadow: none; }
 .grid { display: grid; gap: 1.1rem; }
+.jOld { grid-column: 1 / -1; margin-top: .8rem; }
 .g2 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); }
 .g3 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); }
 .stack > * + * { margin-top: 1rem; }

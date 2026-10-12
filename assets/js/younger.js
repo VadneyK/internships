@@ -5,6 +5,23 @@
   var $ = function (id) { return document.getElementById(id); };
   function a(t, u) { return '<a href="' + G.esc(u) + '" target="_blank" rel="noopener">' + G.esc(t) + "</a>"; }
   function li(arr) { return arr.map(function (x) { return "<li>" + G.esc(x) + "</li>"; }).join(""); }
+  /* The short answers for the other states come from G.stateShorts(), read only after a teen picks one of those states, so the page's first load does not change. */
+  var shortP = null, shorts = null, shortRead = "";
+  function ensureShort() {
+    if (shorts) return Promise.resolve(shorts);
+    if (!shortP) shortP = G.stateShorts().then(function (ld) {
+      var m = {}; (ld.states || []).forEach(function (s) { m[s.id] = s; }); shorts = m; shortRead = ld.read || ""; return shorts;
+    }).catch(function () { shortP = null; return null; });
+    return shortP;
+  }
+  /* One short card: the permit line, the hours line, the phone (tap to call) and the official page. */
+  function shortCard(s) {
+    var NS = "Not stated on the page we read.";
+    function row(k, v, tel) { var ns = !v || v === NS; return "<div><dt>" + k + "</dt><dd" + (ns ? ' class="ns"' : "") + ">" + (ns ? G.esc(NS) : tel ? L.linkContacts(v) : G.esc(v)) + "</dd></div>"; }
+    return "<h3>" + G.esc(s.name) + "</h3><p>Short answer from one official page.</p>" +
+      '<dl class="facts">' + row("Permit", s.permit) + row("Hours", s.hours) + row("Phone", s.phone, true) + "</dl>" +
+      '<p class="small">Source: <a href="' + G.esc(s.url) + '" target="_blank" rel="noopener">Official page for ' + G.esc(s.name) + "</a>." + (shortRead ? " Last checked " + G.esc(shortRead) + "." : "") + "</p>";
+  }
   /* The page draws from younger.json alone. The big core file only feeds the two program counts, so it never blocks the page. */
   function fillCounts(all) {
     var n13 = all.filter(function (e) { return L.matches(e, { age: "13" }, Date.now()) && e.min_age != null && e.min_age <= 13; }).length;
@@ -38,8 +55,21 @@
     $("otherStateRule").innerHTML = G.esc(os.rule) + " " + a(os.source.t, os.source.u) + ".";
     $("otherStateSteps").innerHTML = li(os.steps);
     $("fedNote").innerHTML = G.esc(d.federal) + " " + a(d.federalSource.t, d.federalSource.u) + ".";
+    /* The four full states. A state with a short answer has no column here: the table keeps all four, and its short card sits under "Any other state". */
+    function isFour(v) { return d.states.some(function (s) { return s[0] === v; }); }
+    function hasOpt(v) { return !!v && !!$("yState").querySelector('option[value="' + v + '"]'); }
+    function showLite(v) {
+      var box = $("otherLite");
+      if (!box) return;
+      if (!v || isFour(v)) { box.hidden = true; box.innerHTML = ""; return; }
+      ensureShort().then(function (m) {
+        if ($("yState").value !== v) return;
+        box.innerHTML = m && m[v] ? shortCard(m[v]) : "<p>The short answer could not load. Try again, or ask your state labor office.</p>";
+        box.hidden = false;
+      });
+    }
     function drawGrid(only) {
-      var sts = d.states.filter(function (s) { return !only || s[0] === only; });
+      var sts = d.states.filter(function (s) { return !only || !isFour(only) || s[0] === only; });
       var head = "<thead><tr><th scope=\"col\">What you want to do</th>" + sts.map(function (s) { return "<th scope=\"col\">" + G.esc(s[1]) + "</th>"; }).join("") + "</tr></thead>";
       var body = "<tbody>" + d.rows.map(function (r) {
         return "<tr><th scope=\"row\">" + G.esc(r.job) + "</th>" + sts.map(function (s) {
@@ -48,16 +78,17 @@
       }).join("") + "<tr><th scope=\"row\">Who to ask</th>" + sts.map(function (s) { return "<td>" + G.esc(d.calls[s[0]]) + "</td>"; }).join("") + "</tr></tbody>";
       $("gridT").innerHTML = '<caption class="sr">What a 12 or 13 year old may do, by state</caption>' + head + body;
     }
+    /* The picker's options are written into the page by tools/build.py: the four full states first, then every other state with a short answer, from the data files. */
     var ys = $("yState");
-    d.states.forEach(function (s) { var o = document.createElement("option"); o.value = s[0]; o.textContent = s[1]; ys.appendChild(o); });
     var want = ""; try { want = new URLSearchParams(location.search).get("state") || ""; } catch (e) {}
-    ys.value = d.states.some(function (s) { return s[0] === want; }) ? want : "";
+    ys.value = hasOpt(want) ? want : "";
     if (!want) {
       var pr = G.store.get("findprefs", {}), ss = pr && typeof pr.place === "string" ? L.stateFromPlace(pr.place) : "";
-      if (ss && d.states.some(function (s) { return s[0] === ss; })) ys.value = ss;
+      if (hasOpt(ss)) ys.value = ss;
     }
     if (ys._tpSync) ys._tpSync();
     drawGrid(ys.value);
+    showLite(ys.value);
     /* The Work permit finder button passes the picked state on, for every state permit.html reads (L.PERMIT_STATES). */
     function syncPermit() {
       var btn = $("permitBtn");
@@ -76,11 +107,13 @@
     syncPermit();
     ys.addEventListener("change", function () {
       drawGrid(ys.value);
+      showLite(ys.value);
       syncPermit();
       syncStateUrl(ys.value);
-      var total = d.states.length, st = $("yStatus"), msg;
-      if (!ys.value) msg = "Showing all " + total + " states.";
-      else msg = "Showing " + ys.options[ys.selectedIndex].textContent + ". 1 of " + total + " states.";
+      var total = d.states.length, st = $("yStatus"), msg, name = ys.options[ys.selectedIndex] ? ys.options[ys.selectedIndex].textContent : "";
+      if (!ys.value) msg = "Showing all " + total + " full states.";
+      else if (isFour(ys.value)) msg = "Showing " + name + ". 1 of " + total + " full states.";
+      else msg = "Showing " + name + ". Its short answer is just below the picker. The table shows all " + total + " full states.";
       if (st && st.textContent !== msg) st.textContent = msg;
     });
     $("conflicts").innerHTML = li(d.conflicts);

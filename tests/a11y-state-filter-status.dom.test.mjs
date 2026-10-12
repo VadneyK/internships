@@ -7,9 +7,9 @@ const cases = [
   { file: "younger.html", sel: "yState", st: "yStatus", table: "gridT", all: /all/i },
 ];
 for (const c of cases) {
-  test(c.file + ": state picker is announced in a hidden status line", async () => {
+  test(c.file + ": state picker is announced in a status line", async () => {
     const { document, window } = await loadPage(c.file); await tick(300);
-    const hits = document.querySelectorAll(".sr[role=status]#" + c.st);
+    const hits = document.querySelectorAll("[role=status]#" + c.st);
     assert.equal(hits.length, 1);
     const st = hits[0];
     assert.equal(st.textContent, "");

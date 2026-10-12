@@ -11,7 +11,7 @@ test("jobs status: empty on load and after the blank choice; names the employer 
   const groups = document.querySelectorAll("#jOut h2").length;
   assert.ok(groups >= 1, "at least one group heading");
   assert.ok(status.includes(" in " + groups + " job group"), "status names " + groups + " job groups: " + status);
-  const summary = document.querySelector("#jOut details summary").textContent;
+  const summary = document.querySelector("#jOut > details:not(.jOld) summary").textContent;
   assert.match(summary, /\d+ employers that start older than 16/);
   assert.match(summary, /older/);
   type(window, document.getElementById("jAge"), "");

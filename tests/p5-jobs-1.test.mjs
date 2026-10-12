@@ -53,11 +53,12 @@ test("jobs: the saved Where place sets the state", async () => {
   assert.equal(document.getElementById("jState").value, "GA");
 });
 
-test("jobs: a state with no hours data points to the permit finder", async () => {
+test("jobs: a state only in the shorter answers shows them and keeps the permit finder link", async () => {
   const { document } = await loadPage("jobs.html?age=16&state=UT"); await tick(200);
   assert.equal(permits.states.ut, undefined);
   const strip = document.getElementById("jHours");
-  assert.match(strip.textContent, /Hours rules for your state: see the work permit finder/);
+  /* Utah is in states-lite.json (the shorter answers), so its hours show; the finder link stays as the last line. */
+  assert.match(strip.textContent, /Hours in Utah/);
   assert.ok(strip.querySelector('a[href="permit.html?state=ut&age=16"]'));
 });
 
@@ -94,7 +95,7 @@ test("jobs: ride line for the six cities and the scam line", async () => {
   assert.match(help.textContent, /Tell an adult before an interview/);
   assert.ok(help.querySelector('a[href="safety.html"]'));
   type(window, document.getElementById("jState"), "OH");
-  assert.doesNotMatch(document.getElementById("jHelp").textContent, /without a car/);
+  assert.equal(document.getElementById("jHelp").querySelectorAll('a[href^="ready.html?ride="]').length, 0);
   assert.match(document.getElementById("jHelp").textContent, /Never pay/);
 });
 

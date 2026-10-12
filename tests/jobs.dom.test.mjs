@@ -23,12 +23,12 @@ test("jobs: tapping an age shows only employers that start at or under it, older
   const { window, document, errors } = await loadPage("jobs.html"); await tick(150);
   assert.equal(document.querySelectorAll("#jAge + .tp .tile").length, 6);
   type(window, document.getElementById("jAge"), "14");
-  const shown = [...document.querySelectorAll("#jOut > .grid .card h3")].map((h) => h.textContent);
+  const shown = [...document.querySelectorAll("#jOut > .grid .card h3, #jOut > details.jOld .card h3")].map((h) => h.textContent);
   const want = d.employers.filter((e) => e.min_age <= 14).map((e) => e.name);
   assert.deepEqual(shown.sort(), want.sort());
-  assert.ok(document.querySelector("#jOut details"), "older employers are in a details");
+  assert.ok(document.querySelector("#jOut > details:not(.jOld)"), "older employers are in a details");
   type(window, document.getElementById("jAge"), "17");
-  assert.equal(document.querySelectorAll("#jOut > .grid .card").length, d.employers.filter((e) => e.min_age <= 17).length);
+  assert.equal(document.querySelectorAll("#jOut > .grid .card, #jOut > details.jOld .card").length, d.employers.filter((e) => e.min_age <= 17).length);
   for (const a of document.querySelectorAll("#jOut a, #jRules a")) { assert.match(a.getAttribute("rel"), /noopener/); assert.match(a.href, /^https:\/\//); }
   assert.equal(document.getElementById("jStatus").textContent.includes("age 17"), true);
   assert.deepEqual(errors, []);

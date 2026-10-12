@@ -29,7 +29,9 @@ const BUDGET = {
   "parents.html": { ceiling: 125200, reason: "lib.js, common.js and parents.js" },
   "paycheck.html": { ceiling: 131800, reason: "lib.js, common.js and paycheck.js" },
   // Raised from 139900 to 141000 on 2026-10-11 when the third upgrade round was merged: permit.js grew by 716 bytes and the page is 140932 bytes.
-  "permit.html": { ceiling: 141000, reason: "lib.js, common.js and permit.js" },
+  // Raised from 141000 to 142300 on 2026-10-11 for ticket p6-permit-1: the age line on the shorter state answer (about 1,300 bytes in permit.js) and the shared G.stateShorts() reader in common.js (about 300 bytes, which jobs.js and younger.js now share instead of each fetching the file). The page is 142229 bytes.
+  // Raised from 142300 to 142500 on 2026-10-11 after the persona round 4 merge: permit.html loads 142397 bytes of code (a 97 byte overage that came from combining the two lines of work).
+  "permit.html": { ceiling: 142500, reason: "lib.js, common.js and permit.js" },
   "playbook.html": { ceiling: 139700, reason: "lib.js, common.js and playbook.js" },
   "ready.html": { ceiling: 133000, reason: "lib.js, common.js and ready.js" },
   "resume.html": { ceiling: 130000, reason: "lib.js, common.js and resume.js" },

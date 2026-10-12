@@ -31,7 +31,7 @@
     } catch (e) {}
   }
   /* State names for the picker. The ride cities are the six in data/transit.json (a test checks they match). */
-  var NAMES = { AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas", CA: "California", CO: "Colorado", CT: "Connecticut", DE: "Delaware", FL: "Florida", GA: "Georgia", HI: "Hawaii", ID: "Idaho", IL: "Illinois", IN: "Indiana", IA: "Iowa", KS: "Kansas", KY: "Kentucky", LA: "Louisiana", ME: "Maine", MD: "Maryland", MA: "Massachusetts", MI: "Michigan", MN: "Minnesota", MS: "Mississippi", MO: "Missouri", MT: "Montana", NE: "Nebraska", NV: "Nevada", NH: "New Hampshire", NJ: "New Jersey", NM: "New Mexico", NY: "New York", NC: "North Carolina", ND: "North Dakota", OH: "Ohio", OK: "Oklahoma", OR: "Oregon", PA: "Pennsylvania", RI: "Rhode Island", SC: "South Carolina", SD: "South Dakota", TN: "Tennessee", TX: "Texas", UT: "Utah", VT: "Vermont", VA: "Virginia", WA: "Washington", WV: "West Virginia", WI: "Wisconsin", WY: "Wyoming", BC: "British Columbia" };
+  var NAMES = { AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas", CA: "California", CO: "Colorado", CT: "Connecticut", DE: "Delaware", DC: "District of Columbia", FL: "Florida", GA: "Georgia", HI: "Hawaii", ID: "Idaho", IL: "Illinois", IN: "Indiana", IA: "Iowa", KS: "Kansas", KY: "Kentucky", LA: "Louisiana", ME: "Maine", MD: "Maryland", MA: "Massachusetts", MI: "Michigan", MN: "Minnesota", MS: "Mississippi", MO: "Missouri", MT: "Montana", NE: "Nebraska", NV: "Nevada", NH: "New Hampshire", NJ: "New Jersey", NM: "New Mexico", NY: "New York", NC: "North Carolina", ND: "North Dakota", OH: "Ohio", OK: "Oklahoma", OR: "Oregon", PA: "Pennsylvania", RI: "Rhode Island", SC: "South Carolina", SD: "South Dakota", TN: "Tennessee", TX: "Texas", UT: "Utah", VT: "Vermont", VA: "Virginia", WA: "Washington", WV: "West Virginia", WI: "Wisconsin", WY: "Wyoming", BC: "British Columbia" };
   var RIDES = { NY: [["nyc", "New York City"]], IL: [["chicago", "Chicago"]], GA: [["atlanta", "Atlanta"]], CA: [["la", "Los Angeles"], ["orange", "Orange County"], ["sandiego", "San Diego"]] };
   /* A two-letter state code from the address or saved place, or "" when it is not one the picker has. */
   function stateChoice(raw, sel) {
@@ -40,7 +40,7 @@
     return "";
   }
   /* A US-wide entry (where "US") never matches British Columbia. */
-  function inState(e, st) { return !st || (e.where || []).some(function (w) { return st === "BC" ? w === "BC" : (w === "US" || w === st); }); }
+  function inState(e, st) { return !st || (e.where && e.where.length ? e.where : ["US"]).some(function (w) { return st === "BC" ? w === "BC" : (w === "US" || w === st); }); }
   /* Rules have no where field: the BC ones start with the id prefix bc-. */
   function isBcRule(e) { return String(e.id || "").indexOf("bc-") === 0; }
   var BC_LINE = "British Columbia has its own rules. See the BC cards below.";
@@ -61,6 +61,17 @@
     if (pdState) return;
     pdState = 1;
     G.fetchData("data/permits.json").then(function (r) { return r.json(); }).catch(function () { return null; }).then(function (j) { pd = j; pdFailed = !j; pdState = 2; done(); });
+  }
+  /* states-lite.json (the shorter answers) is read only when the state is not in permits.json. */
+  var ld = null, ldState = 0, ldFailed = false;
+  function loadLite(done) {
+    if (ldState) return;
+    ldState = 1;
+    G.stateShorts().catch(function () { return null; }).then(function (j) { ld = j; ldFailed = !j; ldState = 2; done(); });
+  }
+  function telLink(ph) {
+    var digits = String(ph || "").replace(/\D/g, "");
+    return digits.length === 10 ? '<a href="tel:' + digits + '">' + G.esc(ph) + "</a>" : "";
   }
   /* younger.json is read only when Under 14 is picked, so other ages never download it. */
   var yd, ydPending = false;
@@ -85,11 +96,9 @@
     [["u14", "Under 14"], ["14", "14"], ["15", "15"], ["16", "16"], ["17", "17"], ["18", "18"]].forEach(function (a) {
       sel.appendChild(Object.assign(document.createElement("option"), { value: a[0], textContent: a[1] }));
     });
-    /* States that appear in the list, plus the states that have a ride city. Alphabetical by name. */
-    var stSel = $("jState"), seen = {};
-    d.employers.forEach(function (e) { (e.where || []).forEach(function (w) { if (w !== "US" && NAMES[w]) seen[w] = 1; }); });
-    Object.keys(RIDES).forEach(function (k) { seen[k] = 1; });
-    Object.keys(seen).sort(function (a, b) { return NAMES[a] < NAMES[b] ? -1 : 1; }).forEach(function (k) {
+    /* All 50 states, DC and British Columbia, alphabetical by name, so a teen in any state can pick theirs. */
+    var stSel = $("jState");
+    Object.keys(NAMES).sort(function (a, b) { return NAMES[a] < NAMES[b] ? -1 : 1; }).forEach(function (k) {
       stSel.appendChild(Object.assign(document.createElement("option"), { value: k, textContent: NAMES[k] }));
     });
     function hoursStrip(v, st) {
@@ -98,20 +107,58 @@
       if (v === "u14") return '<div class="callout plain small" id="jHoursBox"><p>Ages 12 and 13: see the <a href="younger.html">Ages 12 to 14 page</a> for what is allowed at your age.</p></div>';
       var age = Number(v), key = st.toLowerCase(), name = NAMES[st];
       var href = "permit.html?state=" + encodeURIComponent(key) + (age >= 14 && age <= 18 ? "&amp;age=" + age : "");
-      if (age >= 14 && age < 18 && !pdState) loadPermits(function () {
+      function again() {
         var sv = sel.value, ss = stSel.value;
         if (!sv || sv === "u14" || !ss || ss === "BC") return;
         $("jHours").innerHTML = hoursStrip(sv, ss);
-        if (pdFailed) $("jStatus").textContent = "The hours rules could not load. Use the work permit finder link for your state.";
-      });
+        if (pdFailed || ldFailed) $("jStatus").textContent = "The hours rules could not load. Use the work permit finder link for your state.";
+      }
+      if (age >= 14 && age < 18 && !pdState) loadPermits(again);
       var r = pd && age >= 14 && age < 18 ? L.permitFor(pd, key, age, "job") : null;
+      if (!r || r.verdict === "nostate") {
+        /* Not in permits.json: use the shorter state answer from states-lite.json. */
+        if (pd && age >= 14 && age < 18 && r && r.verdict === "nostate") {
+          if (!ldState) loadLite(again);
+          var lt = ld && ld.states ? ld.states.filter(function (x) { return x.id === key; })[0] : null;
+          if (lt) {
+            var phone = telLink(lt.phone), src = G.safeUrl(lt.url), NS = "Not stated on the page we read.";
+            /* Same 16 and 17 check as permit.js: the lite hours row may not say anything about them. */
+            var hrsNS = !lt.hours || lt.hours === NS, has1617 = !hrsNS && /16 (and|or|to) 17|ages? 16|16-17/i.test(lt.hours);
+            var hrsHtml = hrsNS ? '<span class="muted">' + G.esc(NS) + "</span>" : G.esc(lt.hours);
+            var note = (age === 16 || age === 17) && !has1617 ? "<p><b>Not covered here:</b> The hours row may not cover 16 and 17 year olds. For 16 and 17, confirm the hour limits on the state page or with the office.</p>" : "";
+            return '<div class="callout plain small" id="jHoursBox"><p><b>Hours in ' + G.esc(name) + ".</b> " + hrsHtml + "</p>" + note + "<p><b>Work permit.</b> " + G.esc(lt.permit) + "</p>" +
+              (lt.phone ? "<p><b>Phone.</b> " + (phone || G.esc(lt.phone)) + "</p>" : "") +
+              (src ? '<p class="small muted">Source: ' + link(lt.url, "state labor department page") + "</p>" : "") +
+              '<p class="small muted">We mostly read one official page for this state, so this answer is shorter than our full state answers. Confirm on the page.</p>' +
+              '<p><a href="' + href + '">See the work permit finder</a></p></div>';
+          }
+        }
+        r = null;
+      }
       if (r && r.hours) return '<div class="callout plain small" id="jHoursBox"><p><b>Hours in ' + G.esc(name) + " at " + age + ".</b> " + G.esc(r.hours) + '</p><p><a href="' + href + '">See the full ' + G.esc(name) + " rules in the work permit finder</a></p></div>";
       return '<div class="callout plain small" id="jHoursBox"><p>Hours rules for your state: see the <a href="' + href + '">work permit finder</a>.</p></div>';
     }
     function helpLines(st) {
-      var h = "";
-      if (st && RIDES[st]) h += '<p><b>Getting there without a car.</b> See the youth ride answers for ' + RIDES[st].map(function (c) { return '<a href="ready.html?ride=' + G.esc(c[0]) + '">' + G.esc(c[1]) + "</a>"; }).join(", ") + ".</p>";
+      var h = '<p><b>Getting there without a car:</b> put the employer address into your city transit agency trip planner, check the last bus time against your shift end, and ask your school office about a youth pass.' + (st && RIDES[st] ? " See the youth ride answers for " + RIDES[st].map(function (c) { return '<a href="ready.html?ride=' + G.esc(c[0]) + '">' + G.esc(c[1]) + "</a>"; }).join(", ") + "." : "") + "</p>";
       return h + '<p><b>Stay safe.</b> Never pay to get a job. Never send your ID to a stranger. Tell an adult before an interview. More on the <a href="safety.html">safety page</a>.</p>';
+    }
+    /* A posting marked posting_status "old" in data/employers.json goes in the fold. The mark is set by hand after reading each page, so no year or word in the text decides it. */
+    function isOld(e) {
+      return e.posting_status === "old";
+    }
+    function groupsHtml(list, idp, hl, chipsOut) {
+      var out = "", n = 0;
+      d.groups.forEach(function (g) {
+        var items = list.filter(function (e) { return e.group === g[0]; });
+        if (!items.length) return;
+        n++;
+        var cur = items.filter(function (e) { return !isOld(e); }), old = items.filter(isOld), id = idp + G.esc(g[0]);
+        chipsOut.push('<a class="chip" style="text-decoration:none" href="#' + id + '">' + G.esc(g[1]) + '<span class="n">' + items.length + "</span></a>");
+        out += "<" + hl + ' id="' + id + '" tabindex="-1">' + G.esc(g[1]) + "</" + hl + ">" + (g[0] === "grocery" ? '<p class="small muted">Many small town stores are locally owned and not listed. Ask the manager in person.</p>' : "") +
+          '<div class="grid g2" style="align-items:start;">' + cur.map(card).join("") +
+          (old.length ? '<details class="jOld"><summary class="lbl" style="cursor:pointer;">Older postings (check first)</summary><div class="grid g2" style="align-items:start;">' + old.map(card).join("") + "</div></details>" : "") + "</div>";
+      });
+      return { body: out, groups: n };
     }
     function paint() {
       var v = sel.value, out = $("jOut"), st = stSel.value;
@@ -139,16 +186,24 @@
       var here = d.employers.filter(function (e) { return inState(e, st); });
       var can = here.filter(function (e) { return e.min_age <= age; }), later = here.filter(function (e) { return e.min_age > age; });
       $("jStatus").textContent = can.length + " employers for age " + age + (st ? " in " + NAMES[st] : "") + (can.length ? " are listed below." : ".");
-      var html = age === 18 ? '<p id="jAge18">' + G.esc(AGE18_LINE) + " Source: " + link(AGE18_URL, "US Department of Labor, Fact Sheet #43") + "</p>" : "", shownGroups = 0, chips = "";
-      d.groups.forEach(function (g) {
-        var list = can.filter(function (e) { return e.group === g[0]; });
-        if (list.length) {
-          shownGroups++;
-          chips += '<a class="chip" style="text-decoration:none" href="#jg-' + G.esc(g[0]) + '">' + G.esc(g[1]) + '<span class="n">' + list.length + "</span></a>";
-          html += '<h2 id="jg-' + G.esc(g[0]) + '" tabindex="-1">' + G.esc(g[1]) + "</h2>" + (g[0] === "grocery" ? '<p class="small muted">Many small town stores are locally owned and not listed. Ask the manager in person.</p>' : "") + '<div class="grid g2" style="align-items:start;">' + list.map(card).join("") + "</div>";
-        }
-      });
-      $("jChips").innerHTML = shownGroups > 1 ? '<nav class="chips" aria-label="Job groups" style="margin-bottom:1rem;">' + chips + "</nav>" : "";
+      var html = age === 18 ? '<p id="jAge18">' + G.esc(AGE18_LINE) + " Source: " + link(AGE18_URL, "US Department of Labor, Fact Sheet #43") + "</p>" : "", shownGroups = 0, chipList = [];
+      if (st && st !== "BC") {
+        var nat = can.filter(function (e) { return !e.where || !e.where.length || e.where.indexOf("US") > -1; }), loc = can.filter(function (e) { return nat.indexOf(e) < 0; });
+        var sname = NAMES[st];
+        if (loc.length < 3 && nat.length) html += '<div class="card" id="jFewLocal"><p>We list only ' + loc.length + " local " + (loc.length === 1 ? "job" : "jobs") + " for " + G.esc(sname) + " so far. The nationwide chains below hire by store: call or walk in.</p></div>";
+        var scopes = [["jl", "In " + sname + " (" + loc.length + ")", loc, "jg-"], ["jn", "Nationwide, check your own store (" + nat.length + ")", nat, "jgn-"]];
+        scopes.forEach(function (sc) {
+          if (!sc[2].length) return;
+          var gc = [], r = groupsHtml(sc[2], sc[3], "h3", gc);
+          shownGroups += r.groups;
+          html += '<h2 id="jscope-' + sc[0] + '" tabindex="-1">' + G.esc(sc[1]) + "</h2>" + (gc.length > 1 ? '<nav class="chips" aria-label="' + G.esc(sc[1]) + '" style="margin-bottom:1rem;">' + gc.join("") + "</nav>" : "") + r.body;
+        });
+        $("jChips").innerHTML = "";
+      } else {
+        var r1 = groupsHtml(can, "jg-", "h2", chipList);
+        shownGroups = r1.groups; html += r1.body;
+        $("jChips").innerHTML = shownGroups > 1 ? '<nav class="chips" aria-label="Job groups" style="margin-bottom:1rem;">' + chipList.join("") + "</nav>" : "";
+      }
       if (shownGroups) $("jStatus").textContent += " They are in " + shownGroups + (shownGroups === 1 ? " job group." : " job groups.");
       if (!can.length && st) html += '<div class="card" id="jNone"><h2>No verified places yet</h2><p>We have no verified places for age ' + age + " in " + G.esc(NAMES[st]) + ' yet. Here are three safe ideas:</p><ul><li>Ask a family friend if they have work you could do.</li><li>Volunteer with a parent.</li><li>See <a href="younger.html">Ages 12 to 14: start here</a> for ways to start before a first job.</li></ul><p class="row"><a class="btn" href="find.html?age=' + age + '">Programs and volunteering</a> <a class="btn alt" href="' + permitHref(v) + '">Work permit finder</a></p></div>';
       else if (!can.length) html += '<div class="card"><p>No employer on this page starts at your age yet. Try the <a href="find.html">Programs page</a>.</p></div>';

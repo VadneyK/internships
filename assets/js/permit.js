@@ -25,7 +25,15 @@
     var s = lite[id], a = +age, NS = "Not stated on the page we read.";
     function row(k, v, tel) { var ns = !v || v === NS; return "<div><dt>" + k + "</dt><dd" + (ns ? ' class="ns"' : "") + ">" + (ns ? G.esc(NS) : tel ? L.linkContacts(v) : G.esc(v)) + "</dd></div>"; }
     var h = '<article class="card verdict ask" id="pLiteCard">';
-    if (a >= 18) h += '<p id="pAdultLine"><b>You are 18. You do not need a minor work permit. Go to <a href="jobs.html?age=18">Jobs that hire teens</a>.</b></p>';
+    var hrs = s.hours, hoursNS = !hrs || hrs === NS;
+    /* The hours row counts only if one sentence names both 16 and 17. "Age 16 or older" alone does not. */
+    var has1617 = !hoursNS && hrs.split(/[.;:!?]/).some(function (p) { return /\b16\b/.test(p) && /\b17\b/.test(p); });
+    var ageLine = "";
+    if (a >= 18) ageLine = '<p id="pAdultLine"><b>At your age (' + a + '): You are 18. You do not need a minor work permit. Go to <a href="jobs.html?age=18">Jobs that hire teens</a>.</b></p>';
+    else if (a >= 16) ageLine = '<p id="pAgeLine"><b>At your age (' + a + '):</b> ' + (has1617 ? "The hours row below states limits for 16 and 17. Read it for your age." : 'Federal law sets no hour limits for 16 and 17 (source: the US Department of Labor page linked on the <a href="jobs.html#rules">Jobs page rules</a>). Your state may. This short answer does not say; confirm with the office.') + "</p>";
+    else if (a >= 14) ageLine = '<p id="pAgeLine"><b>At your age (' + a + '):</b> ' + (hoursNS ? '<span class="ns">' + G.esc(NS) + "</span>" : G.esc(hrs)) + "</p>";
+    else if (a >= 12) ageLine = '<p id="pAgeLine"><b>At your age (' + a + '):</b> Under 14 is covered on the <a href="younger.html?age=' + encodeURIComponent(String(age)) + '">Ages 12 to 14 page</a>.</p>';
+    h += ageLine;
     h += "<h2>" + G.esc(s.name) + "</h2>";
     h += '<dl class="facts">' + row("Youngest age", s.min_age) + row("Permit", s.permit) + row("Hours", s.hours);
     var hasPhone = s.phone && s.phone !== NS;
@@ -33,7 +41,7 @@
     h += "<p>We mostly read one official page for this state, so this answer is shorter than our full state answers. Confirm on the page.</p>";
     /* Say what the short answer leaves out: the hours row may not cover 16 and 17, and it does not sort kinds of work. */
     var gaps = [];
-    if (a === 16 || a === 17) gaps.push("The hours row may not cover 16 and 17 year olds. For 16 and 17, confirm the hour limits on the page above or with the office.");
+    if ((a === 16 || a === 17) && !has1617) gaps.push("The hours row may not cover 16 and 17 year olds. For 16 and 17, confirm the hour limits on the page above or with the office.");
     if (kind && kind !== "job") gaps.push("This short answer does not cover the kind of work you picked. Confirm with the office or on the page above before you start.");
     if (gaps.length) h += '<p id="pLiteNote"><b>Not covered here:</b> ' + gaps.join(" ") + "</p>";
     h += '<p class="small">Source: <a href="' + G.esc(s.url) + '" target="_blank" rel="noopener">' + G.esc(s.page_title) + "</a>." + (liteRead ? " The short answers were last checked " + G.esc(liteRead) + "." : "") + "</p>";
@@ -240,7 +248,7 @@
   var liteErrHTML = '<p class="muted">The shorter answers could not load. Try again, or pick &ldquo;My state is not listed&rdquo;.</p>';
   function ensureLite() {
     if (lite) return Promise.resolve(true);
-    if (!liteP) liteP = G.fetchData("data/states-lite.json").then(function (r) { return r.json(); }).then(function (ld) {
+    if (!liteP) liteP = G.stateShorts().then(function (ld) {
       lite = {}; liteRead = ld.read || "";
       ld.states.slice().sort(function (x, y) { return x.name < y.name ? -1 : 1; }).forEach(function (x) { lite[x.id] = x; opt($("pLite"), x.id, x.name); });
       opt($("pLite"), "other", "My state is not listed");

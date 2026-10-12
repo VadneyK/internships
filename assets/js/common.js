@@ -168,6 +168,11 @@
     if (!r.ok) throw new Error("Could not load programs (" + r.status + ")");
     return r.json();
   }
+  /* The shorter state answers (a small file, read only when a page needs it). Cached. A failed read is not cached, so a retry works. */
+  var shortsP = null;
+  G.stateShorts = function () {
+    return shortsP || (shortsP = G.fetchData("data/states-lite.json").then(checkJson).catch(function (e) { shortsP = null; throw e; }));
+  };
   G.loadEntries = function (lite) {
     if (lite === "core") {
       if (!coreCache) coreCache = G.fetchData("data/entries-core.json").then(checkJson);

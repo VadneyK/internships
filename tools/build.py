@@ -69,11 +69,27 @@ def safety_static(body):
     return re.sub(r"\{\{safety:(\w+)\}\}", fill, body)
 
 
+def younger_options(body):
+    """Fill {{state_options}} in src/younger.html: All four states, the four full states from data/younger.json,
+    then every other state in data/states-lite.json by name. Built here so the picker cannot drift from the data."""
+    import html as _h
+    yj = json.load(open(os.path.join(ROOT, "data", "younger.json"), encoding="utf-8"))
+    lite = json.load(open(os.path.join(ROOT, "data", "states-lite.json"), encoding="utf-8"))
+    four = [s[0] for s in yj["states"]]
+    opts = ['<option value="">All four states</option>']
+    opts += ['<option value="%s">%s</option>' % (_h.escape(s[0]), _h.escape(s[1])) for s in yj["states"]]
+    opts += ['<option value="%s">%s</option>' % (_h.escape(s["id"]), _h.escape(s["name"]))
+             for s in sorted(lite["states"], key=lambda s: s["name"]) if s["id"] not in four]
+    return body.replace("{{state_options}}", "".join(opts))
+
+
 def build(name):
     raw = open(os.path.join(SRC, name + ".html"), encoding="utf-8").read()
     head, body = raw.split("\n---\n", 1)
     if name == "safety":
         body = safety_static(body)
+    if name == "younger":
+        body = younger_options(body)
     fields = dict(re.findall(r"^(\w+):\s*(.*)$", head, flags=re.M))
     scripts = "".join(
         '<script src="assets/js/%s.js?v=%s"></script>\n' % (s.strip(), ver)

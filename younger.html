@@ -21,8 +21,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=e65393ad">
-<link rel="stylesheet" href="assets/css/style.css?v=e65393ad">
+<link rel="stylesheet" href="assets/css/fonts.css?v=73280721">
+<link rel="stylesheet" href="assets/css/style.css?v=73280721">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -107,10 +107,12 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   <div class="wrap">
     <h2>1. Can I do this at my age?</h2>
     <p id="fedNote"></p>
+    <p id="fourStates" class="small">The full answers for ages 12 to 14 are for four states: California, Georgia, New York and Illinois. For any other state, pick it below for a short answer from one official page.</p>
     <div class="field" style="max-width:20rem;"><label for="yState">Show one state</label>
-      <select id="yState" data-tiles data-tiles-any="All four states"><option value="">All four states</option></select></div>
+      <select id="yState"><option value="">All four states</option><option value="ca">California</option><option value="ga">Georgia</option><option value="ny">New York</option><option value="il">Illinois</option><option value="al">Alabama</option><option value="ak">Alaska</option><option value="az">Arizona</option><option value="ar">Arkansas</option><option value="co">Colorado</option><option value="ct">Connecticut</option><option value="de">Delaware</option><option value="dc">District of Columbia</option><option value="fl">Florida</option><option value="hi">Hawaii</option><option value="id">Idaho</option><option value="ia">Iowa</option><option value="ks">Kansas</option><option value="ky">Kentucky</option><option value="la">Louisiana</option><option value="me">Maine</option><option value="ms">Mississippi</option><option value="mo">Missouri</option><option value="mt">Montana</option><option value="ne">Nebraska</option><option value="nv">Nevada</option><option value="nh">New Hampshire</option><option value="nm">New Mexico</option><option value="nd">North Dakota</option><option value="ok">Oklahoma</option><option value="or">Oregon</option><option value="ri">Rhode Island</option><option value="sc">South Carolina</option><option value="sd">South Dakota</option><option value="tn">Tennessee</option><option value="ut">Utah</option><option value="vt">Vermont</option><option value="wv">West Virginia</option><option value="wy">Wyoming</option></select></div>
     <p class="small muted" id="yOther" style="margin-top:-0.5rem;">Not in these four states? The federal rule above still applies, and your state can be stricter. Use the <a href="permit.html">work permit finder</a> to see your state, or ask your state labor office.</p>
-    <p class="sr" id="yStatus" role="status"></p>
+    <p class="small" id="yStatus" role="status"></p>
+    <div class="callout plain" id="otherLite" style="max-width:52rem;" hidden></div>
     <div class="tablewrap" tabindex="0" role="region" aria-label="What a 12 or 13 year old may do, by state"><table id="gridT"></table></div>
     <h3>Where the pages disagree</h3>
     <ul id="conflicts"></ul>
@@ -213,9 +215,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=e65393ad"></script>
-<script src="assets/js/common.js?v=e65393ad"></script>
-<script src="assets/js/younger.js?v=e65393ad"></script>
+<script src="assets/js/lib.js?v=73280721"></script>
+<script src="assets/js/common.js?v=73280721"></script>
+<script src="assets/js/younger.js?v=73280721"></script>
 
 </body>
 </html>

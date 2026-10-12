@@ -58,10 +58,12 @@ navparent: ready
   <div class="wrap">
     <h2>1. Can I do this at my age?</h2>
     <p id="fedNote"></p>
+    <p id="fourStates" class="small">The full answers for ages 12 to 14 are for four states: California, Georgia, New York and Illinois. For any other state, pick it below for a short answer from one official page.</p>
     <div class="field" style="max-width:20rem;"><label for="yState">Show one state</label>
-      <select id="yState" data-tiles data-tiles-any="All four states"><option value="">All four states</option></select></div>
+      <select id="yState">{{state_options}}</select></div>
     <p class="small muted" id="yOther" style="margin-top:-0.5rem;">Not in these four states? The federal rule above still applies, and your state can be stricter. Use the <a href="permit.html">work permit finder</a> to see your state, or ask your state labor office.</p>
-    <p class="sr" id="yStatus" role="status"></p>
+    <p class="small" id="yStatus" role="status"></p>
+    <div class="callout plain" id="otherLite" style="max-width:52rem;" hidden></div>
     <div class="tablewrap" tabindex="0" role="region" aria-label="What a 12 or 13 year old may do, by state"><table id="gridT"></table></div>
     <h3>Where the pages disagree</h3>
     <ul id="conflicts"></ul>
