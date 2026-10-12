@@ -40,6 +40,7 @@ function server() {
 export async function loadPage(file, { search = "", storage = {}, rawStorage = {}, setup, now, fetchLog, lazy } = {}) {
   const port = await server();
   const errors = [];
+  const inflight = { n: 0 }; // fetches the page started and has not finished
   const vc = new VirtualConsole();
   vc.on("jsdomError", (e) => errors.push(String((e && e.message) || e)));
   vc.on("error", (...a) => errors.push(a.join(" ")));
@@ -62,7 +63,7 @@ export async function loadPage(file, { search = "", storage = {}, rawStorage = {
       }
       for (const [k, v] of Object.entries(storage)) w.localStorage.setItem(k, JSON.stringify(v));
       for (const [k, v] of Object.entries(rawStorage)) w.localStorage.setItem(k, v);
-      w.fetch = (u, o) => { const url = new URL(String(u), w.location.href); if (fetchLog) fetchLog.push({ url: url.href, init: o }); return fetch(url, o); }; // jsdom has no fetch; use Node's, against the local server
+      w.fetch = (u, o) => { const url = new URL(String(u), w.location.href); if (fetchLog) fetchLog.push({ url: url.href, init: o }); inflight.n++; const pr = fetch(url, o); pr.then(() => { inflight.n--; }, () => { inflight.n--; }); return pr; }; // jsdom has no fetch; use Node's, against the local server
       w.matchMedia = w.matchMedia || (() => ({ matches: false, addEventListener() {}, removeEventListener() {} }));
       w.print = () => { w.__printed = (w.__printed || 0) + 1; };
       w.scrollTo = () => {};
@@ -79,6 +80,9 @@ export async function loadPage(file, { search = "", storage = {}, rawStorage = {
     if (sec) sec.dispatchEvent(new dom.window.Event("focusin", { bubbles: true }));
   }
   await new Promise((r) => setTimeout(r, 80)); // let async init (fetch of data/entries.json) finish
+  // Wait (up to 3 s) until the fetches the page started on load have finished, then a short beat for the page to use them
+  for (let i = 0; i < 60 && inflight.n > 0; i++) await new Promise((r) => setTimeout(r, 50));
+  await new Promise((r) => setTimeout(r, 30));
   // Some dropdowns get their options from a data file: wait (up to 2 s) until none that should have choices is still empty
   for (let i = 0; i < 40 && [...dom.window.document.querySelectorAll("select[data-tiles]")].some((x) => x.options.length < 2); i++) await new Promise((r) => setTimeout(r, 50));
   // On a slow machine the data may still be loading: wait (up to 5 s) until the Where list of a page that has one is filled
