@@ -59,7 +59,9 @@ test("permit: ?state=ak opens the card, fields without a fact are quiet, age 13 
   const p = await loadPage("permit.html", { search: "?state=ak&age=13" }); await tick();
   const out = $(p, "pOut");
   assert.match(out.querySelector("h2").textContent, /Alaska/);
-  assert.match(out.textContent, /Phone: Not stated on the page we read/);
+  const who = [...out.querySelectorAll("dl.facts > div")].find((r) => r.querySelector("dt").textContent === "Who to ask").querySelector("dd");
+  assert.equal(who.textContent, "Alaska Department of Labor and Workforce Development, Wage and Hour Administration.");
+  assert.equal(who.classList.contains("ns"), false);
   assert.ok(!out.querySelector('a[href^="tel:"]'));
   assert.ok(out.querySelector('a[href^="younger.html"]'));
   assert.match(p.window.location.search, /state=ak/);
@@ -70,7 +72,8 @@ test("permit: a field the page does not state gets the quiet style", async () =>
   const p = await loadPage("permit.html", { search: "?state=ct" }); await tick();
   const ns = $(p, "pOut").querySelector("dd.ns");
   assert.ok(ns);
-  assert.equal(ns.textContent, "Not stated on the page we read.");
+  assert.doesNotMatch(ns.textContent, /Not stated on the page we read/);
+  assert.match(ns.textContent, /^We did not find a minimum age on the state page we read\./);
 });
 
 test("permit: age 18 shows the adult line, full states still work from ?state=", async () => {
@@ -139,15 +142,18 @@ test("permit: for each state at age 14 and 15, every row prints its own stored f
       LITE_ROWS.forEach(([label, field], i) => {
         assert.equal(rows[i].querySelector("dt").textContent, label, s.id + " label " + i);
         const dd = rows[i].querySelector("dd");
-        if (s[field] === "Not stated on the page we read.") {
+        if (s[field] === "Not stated on the page we read." && field !== "hours") {
           assert.ok(dd.classList.contains("ns"), s.id + " " + field + " is quiet");
-          assert.equal(dd.textContent, "Not stated on the page we read.", s.id);
+          assert.doesNotMatch(dd.textContent, /Not stated on the page we read/, s.id);
+        } else if (s[field] === "Not stated on the page we read.") {
+          assert.ok(dd.classList.contains("ns"), s.id + " " + field + " is quiet");
+          assert.equal(dd.textContent, "We did not find hour limits on the state page we read. Your state may set some. Ask the state labor office.", s.id);
         } else {
           assert.equal(dd.textContent, s[field], s.id + " " + field);
         }
       });
       assert.equal(rows[3].querySelector("dt").textContent, "Who to ask", s.id);
-      assert.ok(rows[3].querySelector("dd").textContent.includes(s.who_to_ask), s.id + " who to ask");
+      assert.ok(rows[3].querySelector("dd").textContent.includes(s.who_to_ask === "Not stated on the page we read." ? "Not listed on the page we read. Call the state labor department." : s.who_to_ask), s.id + " who to ask");
       assert.ok(out.textContent.includes("\u201c" + s.quote + "\u201d"), s.id + " quote shown");
     }
   }

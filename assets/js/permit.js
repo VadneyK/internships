@@ -23,7 +23,11 @@
   /* The shorter answer for one of the states in data/states-lite.json: mostly one official page, four facts, the page and a quote. */
   function liteCard(id, age, kind) {
     var s = lite[id], a = +age, NS = "Not stated on the page we read.";
-    function row(k, v, tel) { var ns = !v || v === NS; return "<div><dt>" + k + "</dt><dd" + (ns ? ' class="ns"' : "") + ">" + (ns ? G.esc(NS) : tel ? L.linkContacts(v) : G.esc(v)) + "</dd></div>"; }
+    var NOHOURS = "We did not find hour limits on the state page we read. Your state may set some. Ask the state labor office.";
+    var NOAGE = '<span>We did not find a minimum age on the state page we read. ' + (fed && fed.min ? '<a href="' + G.esc(fed.min.url) + '" target="_blank" rel="noopener">Federal law</a>' : "Federal law") + " sets 14 for most non-farm jobs. Your state may set a higher age.</span>";
+    var NOPERMIT = "We did not find a work permit answer on the state page we read. Ask the state labor office before the first shift.";
+    var NOWHO = "Not listed on the page we read. Call the state labor department.";
+    function row(k, v, tel, nsHtml) { var ns = !v || v === NS; return "<div><dt>" + k + "</dt><dd" + (ns ? ' class="ns"' : "") + ">" + (ns ? (nsHtml || G.esc(NS)) : tel ? L.linkContacts(v) : G.esc(v)) + "</dd></div>"; }
     var h = '<article class="card verdict ask" id="pLiteCard">';
     var hrs = s.hours, hoursNS = !hrs || hrs === NS;
     /* The hours row counts only if one sentence names both 16 and 17. "Age 16 or older" alone does not. */
@@ -31,13 +35,21 @@
     var ageLine = "";
     if (a >= 18) ageLine = '<p id="pAdultLine"><b>At your age (' + a + '): You are 18. You do not need a minor work permit. Go to <a href="jobs.html?age=18">Jobs that hire teens</a>.</b></p>';
     else if (a >= 16) ageLine = '<p id="pAgeLine"><b>At your age (' + a + '):</b> ' + (has1617 ? "The hours row below states limits for 16 and 17. Read it for your age." : 'Federal law sets no hour limits for 16 and 17 (source: the US Department of Labor page linked on the <a href="jobs.html#rules">Jobs page rules</a>). Your state may. This short answer does not say; confirm with the office.') + "</p>";
-    else if (a >= 14) ageLine = '<p id="pAgeLine"><b>At your age (' + a + '):</b> ' + (hoursNS ? '<span class="ns">' + G.esc(NS) + "</span>" : G.esc(hrs)) + "</p>";
+    else if (a >= 14) {
+      ageLine = '<p id="pAgeLine"><b>At your age (' + a + '):</b> ' + (hoursNS ? '<span class="ns">' + G.esc(NOHOURS) + "</span>" : G.esc(hrs)) + "</p>";
+      /* The federal school day limit, only when the state hours text does not name it. Text comes from data/employers.json. */
+      var hasSchool = !hoursNS && /(\b3|three) hours[^.]*school day|school day[^.]*(\b3|three) hours/i.test(hrs);
+      if (!hasSchool && fed && fed.hours) ageLine += '<p id="pFedLine" class="small">Federal rules also apply: ' + G.esc(fed.hours.roles) + " Where your state is stricter, the state rule wins. Source: " + links([{ u: fed.hours.url, t: fed.hours.page_title }]) + ".</p>";
+    }
     else if (a >= 12) ageLine = '<p id="pAgeLine"><b>At your age (' + a + '):</b> Under 14 is covered on the <a href="younger.html?age=' + encodeURIComponent(String(age)) + '">Ages 12 to 14 page</a>.</p>';
     h += ageLine;
     h += "<h2>" + G.esc(s.name) + "</h2>";
-    h += '<dl class="facts">' + row("Youngest age", s.min_age) + row("Permit", s.permit) + row("Hours", s.hours);
+    h += '<dl class="facts">' + row("Youngest age", s.min_age, false, NOAGE) + row("Permit", s.permit, false, G.esc(NOPERMIT)) + row("Hours", s.hours, false, G.esc(NOHOURS));
     var hasPhone = s.phone && s.phone !== NS;
-    h += "<div><dt>Who to ask</dt><dd>" + L.linkContacts(s.who_to_ask + (hasPhone ? " " + s.phone : "")) + (hasPhone ? "" : ' <span class="muted">Phone: ' + G.esc(NS) + "</span>") + "</dd></div></dl>";
+    h += "<div><dt>Who to ask</dt>";
+    var who = s.who_to_ask && s.who_to_ask !== NS ? s.who_to_ask : "", phone = hasPhone ? s.phone : "";
+    h += "<dd" + (who || phone ? "" : ' class="ns"') + ">" + L.whoToAskHtml(who, phone, NOWHO) + "</dd>";
+    h += "</div></dl>";
     if (wages) h += G.wageLine(wages, id);
     h += "<p>We mostly read one official page for this state, so this answer is shorter than our full state answers. Confirm on the page.</p>";
     /* Say what the short answer leaves out: the hours row may not cover 16 and 17, and it does not sort kinds of work. */
@@ -50,7 +62,7 @@
     if (a >= 12 && a < 14) h += '<p>Federal law says under 14 may not be employed in most non-farm jobs. A state can be stricter, and then the stricter rule applies.</p><p><a class="btn sm" href="younger.html?age=' + encodeURIComponent(String(age)) + '">What you can do at 12 and 13</a></p>';
     return h + "</article>";
   }
-  var liteRead = "", wages = null;
+  var liteRead = "", wages = null, fed = null;
   function missingText(st, age, kind) {
     var m = [];
     if (!st) m.push("your state");
@@ -250,6 +262,13 @@
   function ensureLite() {
     if (lite) return Promise.resolve(true);
     if (!liteP) liteP = G.stateShorts().then(function (ld) {
+      /* The federal rules the short card quotes, from data/employers.json. Optional: the card still works without them. */
+      var fp = G.fetchData("data/employers.json").then(function (r) { return r.json(); }).then(function (e) {
+        var by = function (id) { return (e.rules || []).filter(function (x) { return x.id === id; })[0] || null; };
+        fed = { min: by("dol-fact-sheet-43-min-age"), hours: by("dol-14-15-hours") };
+      }).catch(function () { fed = null; });
+      return fp.then(function () { return ld; });
+    }).then(function (ld) {
       lite = {}; liteRead = ld.read || "";
       ld.states.slice().sort(function (x, y) { return x.name < y.name ? -1 : 1; }).forEach(function (x) { lite[x.id] = x; opt($("pLite"), x.id, x.name); });
       opt($("pLite"), "other", "My state is not listed");

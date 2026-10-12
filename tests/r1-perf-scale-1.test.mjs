@@ -27,7 +27,8 @@ const LIMITS = {
   // Raised from 32000 to 32100 on 2026-10-10 for the footer link to the teachers and counselors handout, which every page carries. ready.html is 32009 bytes.
   // Raised from 32100 to 32300 on 2026-10-11 for the pick-your-state note on ready.html and paycheck.html and the age-based home card text. ready.html is about 32170 bytes.
   // Raised from 32300 to 32600 on 2026-10-11 when the third upgrade round was merged with the persona round: ready.html is 32534 bytes.
-  rootPage: 32600,
+  // Raised from 32600 to 33600 on 2026-10-11 for ticket p8-lite-1/p8-ready-1: the closed no-parent block on ready.html (about 900 bytes) and the two jump anchors. ready.html is 33506 bytes.
+  rootPage: 33600,
   // One page has its own higher limit. Added 2026-10-11: safety.html now carries its summary and every point card with its source link in the page itself (about 40,000 bytes from data/safety.json), so the facts show with JavaScript off. The static text on the page is trimmed. It is 52,653 bytes. Every other root page keeps the limit above.
   // Raised from 52700 to 53400 on 2026-10-11 when the third upgrade round was merged: safety.html is 53342 bytes.
   // Raised from 53400 to 55100 on 2026-10-11 for the farm and ranch box (ticket p6-farm-1): four sourced federal farm rules, about 1,670 bytes, each with the page title as its link text. safety.html is 55010 bytes.
@@ -145,9 +146,9 @@ test("mutation: a lite file at 2,150,000 bytes is reported, and only lite is rep
 });
 
 // Mutation test for a page: one root page one byte over its limit is the only problem reported.
-test("mutation: a root page at 32,601 bytes is the only problem reported", () => {
-  const fake = { ...repoSizes, "rules.html": { bytes: 32601, gzip: 9000 } };
+test("mutation: a root page at 33,601 bytes is the only problem reported", () => {
+  const fake = { ...repoSizes, "rules.html": { bytes: 33601, gzip: 9000 } };
   assert.deepEqual(budgetProblems(fake, programCount), [
-    "rules.html is 32601 bytes, over the limit of 32600 bytes for a root page",
+    "rules.html is 33601 bytes, over the limit of 33600 bytes for a root page",
   ]);
 });

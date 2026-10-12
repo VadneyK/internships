@@ -25,7 +25,8 @@ for (const age of ["14", "15"]) {
 test("p6-permit-1: Kansas at 15 keeps the quiet Not stated style", async () => {
   const out = await pick("ks", "15");
   assert.ok(first(out).querySelector(".ns"));
-  assert.match(first(out).textContent, /Not stated on the page we read/);
+  assert.match(first(out).textContent, /We did not find hour limits on the state page we read/);
+  assert.doesNotMatch(first(out).textContent, /Not stated on the page we read/);
 });
 for (const age of ["16", "17"]) {
   test("p6-permit-1: Alabama at " + age + " says federal law sets no hour limits", async () => {

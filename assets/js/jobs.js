@@ -147,8 +147,8 @@
             var hrsNS = !lt.hours || lt.hours === NS, has1617 = !hrsNS && /16 (and|or|to) 17|ages? 16|16-17/i.test(lt.hours);
             var hrsHtml = hrsNS ? '<span class="muted">' + G.esc(NS) + "</span>" : G.esc(lt.hours);
             var note = (age === 16 || age === 17) && !has1617 ? "<p><b>Not covered here:</b> The hours row may not cover 16 and 17 year olds. For 16 and 17, confirm the hour limits on the state page or with the office.</p>" : "";
-            return '<div class="callout plain small" id="jHoursBox"><p><b>Hours in ' + G.esc(name) + ".</b> " + hrsHtml + "</p>" + note + "<p><b>Work permit.</b> " + G.esc(lt.permit) + "</p>" +
-              (lt.phone ? "<p><b>Phone.</b> " + (phone || G.esc(lt.phone)) + "</p>" : "") +
+            return '<div class="callout plain small" id="jHoursBox"><p><b>Hours in ' + G.esc(name) + ".</b> " + hrsHtml + "</p>" + note + (lt.permit === NS ? '<p class="ns muted"><b>Work permit.</b> We did not find a work permit answer on the state page we read. Ask the state labor office before the first shift.</p>' : "<p><b>Work permit.</b> " + G.esc(lt.permit) + "</p>") +
+              (lt.phone === NS ? '<p class="ns muted"><b>Phone.</b> Not listed on the page we read. Call the state labor department.</p>' : lt.phone ? "<p><b>Phone.</b> " + (phone || G.esc(lt.phone)) + "</p>" : "") +
               (src ? '<p class="small muted">Source: ' + link(lt.url, "state labor department page") + "</p>" : "") +
               '<p class="small muted">We mostly read one official page for this state, so this answer is shorter than our full state answers. Confirm on the page.</p>' +
               '<p><a href="' + href + '">See the work permit finder</a></p></div>';

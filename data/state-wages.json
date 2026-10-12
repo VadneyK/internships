@@ -105,6 +105,7 @@
   {
    "id": "ga",
    "name": "Georgia",
+   "below_federal": true,
    "wage": "$5.15 an hour under Georgia law, for employers with 6 or more employees. Employers covered by federal law pay the federal rate instead.",
    "youth": "The page does not say whether a lower youth wage applies.",
    "effective": "Table updated July 1, 2026",
@@ -505,6 +506,7 @@
   {
    "id": "wy",
    "name": "Wyoming",
+   "below_federal": true,
    "wage": "$5.15 an hour.",
    "youth": "Workers under 20 may be paid a lower rate for the first 90 consecutive days after they are first employed by that employer. Check the statute for the amount.",
    "effective": "The page does not say.",

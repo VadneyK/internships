@@ -14,6 +14,15 @@ scripts: ready
       <summary style="cursor:pointer;font-weight:700;padding:.3rem 0;">Which parts are only for California?</summary>
       <p>The school district list, the California payday rule, the California tax form and the California birth certificate card are for <b>California</b>. For the permit in any other state use the <a href="permit.html">work permit finder</a> or <a href="states.html">the rules for your state</a>, and the ride picker below covers six cities. The Form I-9 papers, the federal W-4 and Social Security and Medicare taxes apply to most jobs in every state, and you need your Social Security number. The card is one of the Form I-9 document choices, and a birth certificate with an official seal can work instead (<a href="#papers">see your papers</a>). The exception is working for your parent's own sole proprietorship, or a partnership where both partners are your parents, when you are under 18. It does not apply to a corporation (see <a href="paycheck.html">Your first paycheck</a>).</p>
     </details>
+    <details id="no-parent" class="small" style="margin-top:.5rem;max-width:52rem;">
+      <summary style="cursor:pointer;font-weight:700;padding:.3rem 0;">18 or older, or no parent to help?</summary>
+      <ul>
+        <li>Whether a parent must sign a work permit depends on your age and state. The <a href="permit.html">permit finder</a> shows the rule for your age.</li>
+        <li><b>Papers, in order:</b> start with a birth certificate from the state where you were born. If you were born outside the US, ask about other List C documents. Next, a Social Security card. A replacement is <a href="#ssn-card">free</a>. Then a state ID.</li>
+        <li><b>Bank account:</b> ask the bank what ID and proof of address it needs before you go. See <a href="#bank-account">Open a bank account</a>.</li>
+        <li>For help getting documents, ask a school counselor or another adult you trust. Look at <a href="find.html">find a program</a> and <a href="jobs.html?age=18">jobs that hire at 18</a>.</li>
+      </ul>
+    </details>
     <nav class="chips" id="parts" aria-label="On this page" style="margin-top:1rem;">
       <a class="chip" style="text-decoration:none" href="#permit">1. Work permit</a>
       <a class="chip" style="text-decoration:none" href="#papers">2. Your papers</a>
@@ -79,7 +88,7 @@ scripts: ready
       <article class="card"><h3>Under 18 with no photo ID?</h3>
         <p>For people under 18 who cannot show another List B document, the list allows a <b>school record or report card</b>, a <b>clinic, doctor or hospital record</b>, or a <b>day-care record</b> in place of ID. You still need a List C document. If your employer uses E-Verify, the rules are stricter, so ask them before your first day.</p>
         <p class="small muted">Source: <a href="https://www.uscis.gov/i-9-central/form-i-9-acceptable-documents" target="_blank" rel="noopener">USCIS acceptable documents</a> and the <a href="https://www.uscis.gov/i-9-central/form-i-9-resources/handbook-for-employers-m-274" target="_blank" rel="noopener">M-274 handbook</a>.</p></article>
-      <article class="card"><h3>Lost your Social Security card?</h3>
+      <article class="card" id="ssn-card"><h3>Lost your Social Security card?</h3>
         <p>A replacement is <b>free</b>. The Social Security Administration says you may not need a card if you know your number, but for Form I-9 you need an acceptable List C document, so a birth certificate can work instead. A replacement card arrives in 5 to 10 business days after your request is complete. Call 1-800-772-1213 to ask what you need. The page does not say whether a teen under 18 can apply online.</p>
         <p class="small muted">Source: <a href="https://www.ssa.gov/number-card/replace-card" target="_blank" rel="noopener">SSA, replace your card</a>.</p></article>
       <article class="card"><h3>Need a California birth certificate? (California only)</h3>
@@ -95,7 +104,7 @@ scripts: ready
     <h2>3. Getting paid</h2>
     <p>Not in California? The bank card is for every state. The other cards mostly cover California. For your state, see <a href="paycheck.html">Your first paycheck</a> and the <a href="permit.html">work permit finder</a>.</p>
     <div class="grid g2" style="align-items:start;">
-      <article class="card"><h3>Open a bank account</h3>
+      <article class="card" id="bank-account"><h3>Open a bank account</h3>
         <p>Bring these to the bank:</p>
         <ul>
           <li>A photo ID. Some banks accept a student ID, so ask first.</li>

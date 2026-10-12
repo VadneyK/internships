@@ -117,7 +117,18 @@
     ["philadelphia", "Philadelphia", ["philadelphia", "pennsylvania"]],
     ["pittsburgh", "Pittsburgh", ["pittsburgh", "pennsylvania"]],
     ["boston", "Boston", ["boston", "massachusetts"]],
-    ["atlanta", "Atlanta", ["atlanta", "georgia"]]
+    ["atlanta", "Atlanta", ["atlanta", "georgia"]],
+    ["portland", "Portland and Oregon programs", ["oregon"]],
+    ["phoenix", "Phoenix and Arizona programs", ["arizona"]],
+    ["las-vegas", "Las Vegas and Nevada programs", ["nevada"]],
+    ["denver", "Denver and Colorado programs", ["colorado"]],
+    ["salt-lake-city", "Salt Lake City and Utah programs", ["utah"]],
+    ["miami", "Miami and Florida programs", ["florida"]],
+    ["honolulu", "Honolulu and Hawaii programs", ["hawaii"]],
+    ["nashville", "Nashville and Tennessee programs", ["tennessee"]],
+    ["louisville", "Louisville and Kentucky programs", ["kentucky"]],
+    ["st-louis", "St. Louis and Missouri programs", ["missouri"]],
+    ["albuquerque", "Albuquerque and New Mexico programs", ["new-mexico"]]
   ];
   /* Areas are groups of cities, in the words teens and leaders use. [id, label, city ids] */
   var AREAS = [
@@ -140,9 +151,9 @@
     ["Texas", ["texas"], ["austin"]],
     ["Midwest", ["midwest"], ["minneapolis", "chicago", "elgin", "urbana-champaign", "madison", "west-lafayette", "bloomington", "columbus", "cincinnati", "ann-arbor", "east-lansing", "detroit"]],
     ["Northeast", ["northeast"], ["new-york-city", "new-brunswick", "philadelphia", "pittsburgh", "boston"]],
-    ["South and DC area", ["southeast", "dc-area"], ["atlanta", "raleigh-chapel-hill", "charlottesville", "blacksburg", "college-park", "fairfax"]],
-    ["Mountain West", [], []],
-    ["Oregon and Hawaii", [], []]
+    ["South and DC area", ["southeast", "dc-area"], ["atlanta", "raleigh-chapel-hill", "charlottesville", "blacksburg", "college-park", "fairfax", "miami", "nashville", "louisville", "st-louis"]],
+    ["Mountain West", [], ["phoenix", "las-vegas", "denver", "salt-lake-city", "albuquerque"]],
+    ["Oregon and Hawaii", [], ["portland", "honolulu"]]
   ];
   /* Whole-state choices for the Where picker, for a teen with no city to pick. [id, label, region id]. A state place covers that state-level region
      (plus online and national programs when few match, the same as a city). Every state is in exactly one PICK_GROUPS group. */
@@ -756,6 +767,14 @@
     });
   }
 
+  /* Inside the "Who to ask" cell of the short permit card. who and phone are "" when the page does not state them. */
+  function whoToAskHtml(who, phone, fallback) {
+    if (!who && !phone) return esc(fallback);
+    if (!phone) return linkContacts(who);
+    if (!who) return "Phone: " + linkContacts(phone);
+    return linkContacts(who + " " + phone);
+  }
+
   var api = {
     REGIONS: REGIONS, HUBS: HUBS, TYPES: TYPES, FIELDS: FIELDS, PAID: PAID, PAID_GROUPS: PAID_GROUPS, MONTHS: MONTHS, MONTH_NAMES: MONTH_NAMES,
     esc: esc, regionLabel: regionLabel, safeUrl: safeUrl, parseISO: parseISO, fmtDate: fmtDate, daysUntil: daysUntil, hubsOf: hubsOf,
@@ -763,7 +782,7 @@
     matches: matches, facetCounts: facetCounts, relaxOptions: relaxOptions, placeCounts: placeCounts, rank: rank, compare: compare, sortList: sortList, topPicks: topPicks, ageText: ageText,
     STATUSES: STATUSES, toISO: toISO, addDays: addDays, followUpISO: followUpISO, planSummary: planSummary,
     icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf, stateFromPlace: stateFromPlace, STATE_OF: STATE_OF, permitFor: permitFor, hoursCheck: hoursCheck, paycheck: paycheck, PERMIT_STATES: PERMIT_STATES, CITIES: CITIES, AREAS: AREAS, PICK_GROUPS: PICK_GROUPS, STATES: STATES, placeRegions: placeRegions, placeLabel: placeLabel, hubsOfPlace: hubsOfPlace,
-    gradePhrase: gradePhrase, blanksLeft: blanksLeft, linkContacts: linkContacts
+    gradePhrase: gradePhrase, blanksLeft: blanksLeft, linkContacts: linkContacts, whoToAskHtml: whoToAskHtml
   };
   return api;
 });
