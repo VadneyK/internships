@@ -41,7 +41,7 @@ What catches a mistake: `python3 tools/validate.py` (run by CI), and `tests/test
 
 A region id has to appear in two places that must match exactly.
 
-1. `data/schema/program.schema.json`: add the id to the `enum` list under `properties.regions.items`. There are 73 ids today.
+1. `data/schema/program.schema.json`: add the id to the `enum` list under `properties.regions.items`. There are 81 ids today.
 2. `assets/js/lib.js`: add `["your-id", "Label teens will see"]` to the `REGIONS` list. The existing list puts `virtual` and `national` last, so add yours before them. The label shows on cards and in search.
 
 Use lowercase words joined by hyphens, like the ids already there.

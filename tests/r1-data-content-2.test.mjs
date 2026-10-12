@@ -7,7 +7,7 @@ const load = (id) => JSON.parse(fs.readFileSync(new URL(`../data/programs/${id}.
 const CASES = [
   ["civil-air-patrol-california-wing-cadets", ["statewide", "los-angeles", "san-diego"]],
   ["ca-boys-girls-state", ["statewide", "sacramento"]],
-  ["mtc-high-school-internship-program", ["east-bay", "oakland", "san-francisco", "peninsula", "silicon-valley", "virtual"]],
+  ["mtc-high-school-internship-program", ["east-bay", "oakland", "san-francisco", "peninsula", "silicon-valley"]], // virtual removed 2026-10-10 (p9-regions-1): Bay Area residents only
   ["michigan-ala-girls-state", ["michigan", "lansing"]],
 ];
 

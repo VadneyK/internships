@@ -80,7 +80,50 @@ class WageProblemsTest(_JsonFixture):
         }])
         self.assertEqual(
             validate.wage_problems(),
-            ["state-wages zz: youth figure $9.50 is not in quote"],
+            ["state-wages zz: youth figure $9.50 is not in quote and needs a youth_url (https) and a youth_quote"],
+        )
+
+    def _youth_row(self, **extra):
+        row = {
+            "id": "zz",
+            "quote": "The minimum wage is $13.00 an hour.",
+            "wage": None,
+            "youth": "Workers under 20 may be paid $4.25 an hour.",
+        }
+        row.update(extra)
+        return row
+
+    def test_youth_figure_with_url_and_quote_containing_it_is_clean(self):
+        self.use_rows([self._youth_row(
+            youth_url="https://www.dol.gov/agencies/whd/fact-sheets/32-minimum-wage-youth",
+            youth_quote="employers may pay a youth minimum wage of not less than $4.25 an hour",
+        )])
+        self.assertEqual(validate.wage_problems(), [])
+
+    def test_youth_figure_with_quote_but_no_url_is_reported(self):
+        self.use_rows([self._youth_row(youth_quote="a youth minimum wage of $4.25 an hour")])
+        self.assertEqual(len(validate.wage_problems()), 1)
+        self.assertIn("needs a youth_url", validate.wage_problems()[0])
+
+    def test_youth_figure_with_url_but_no_quote_is_reported(self):
+        self.use_rows([self._youth_row(youth_url="https://www.dol.gov/x")])
+        self.assertIn("needs a youth_url", validate.wage_problems()[0])
+
+    def test_youth_url_that_is_not_https_is_reported(self):
+        self.use_rows([self._youth_row(
+            youth_url="http://www.dol.gov/x",
+            youth_quote="a youth minimum wage of $4.25 an hour",
+        )])
+        self.assertIn("needs a youth_url", validate.wage_problems()[0])
+
+    def test_youth_quote_missing_the_figure_is_reported(self):
+        self.use_rows([self._youth_row(
+            youth_url="https://www.dol.gov/x",
+            youth_quote="a youth minimum wage of $7.25 an hour",
+        )])
+        self.assertEqual(
+            validate.wage_problems(),
+            ["state-wages zz: youth figure $4.25 is not in youth_quote"],
         )
 
     def test_null_wage_and_youth_are_clean(self):

@@ -19,9 +19,38 @@ ENTRIES = os.path.join(ROOT, "data", "entries.json")
 ONLINE_CITY = re.compile(r"online|virtual|zoom", re.I)
 VIRTUAL = "virtual"
 
-# id -> one-line reason. Only cards that are in person first belong here.
+# id -> one-line reason. Cards that are in person first, or online but only for one state or area, belong here.
 ALLOW = {
     "nyc-transportation-alternatives-youth-activist-committee": "Citywide committee that meets in person first, with an online option.",
+    "chicago-uchicago-hero-oncology": "Online but open only to people from one state or area, so it is not tagged virtual (p9-regions-1, 2026-10-10).",
+    "fulton-county-connected-youth-leadership-program": "Online but open only to people from one state or area, so it is not tagged virtual (p9-regions-1, 2026-10-10).",
+    "georgia-tech-dual-enrollment": "Online but open only to people from one state or area, so it is not tagged virtual (p9-regions-1, 2026-10-10).",
+    "huntsman-cancer-institute-cancer-research-high-school-program": "Online but open only to people from one state or area, so it is not tagged virtual (p9-regions-1, 2026-10-10).",
+    "huntsman-cancer-institute-hci-rise-virtual-program": "Online but open only to people from one state or area, so it is not tagged virtual (p9-regions-1, 2026-10-10).",
+    "legischool-civics-virtual-institute": "Online but open only to people from one state or area, so it is not tagged virtual (p9-regions-1, 2026-10-10).",
+    "madison-uw-carbone-hero-cancer-research": "Online but open only to people from one state or area, so it is not tagged virtual (p9-regions-1, 2026-10-10).",
+    "mtc-high-school-internship-program": "Online but open only to people from one state or area, so it is not tagged virtual (p9-regions-1, 2026-10-10).",
+    "oak-ridge-ornl-next-generation-stem-internship": "Online but open only to people from one state or area, so it is not tagged virtual (p9-regions-1, 2026-10-10).",
+    "vancouver-bcchr-mini-med-school": "Online but open only to people from one state or area, so it is not tagged virtual (p9-regions-1, 2026-10-10).",
+    "vancouver-bcchr-pathways-to-science": "Online but open only to people from one state or area, so it is not tagged virtual (p9-regions-1, 2026-10-10).",
+    "virginia-vsgc-vasts-nasa-langley": "Online but open only to people from one state or area, so it is not tagged virtual (p9-regions-1, 2026-10-10).",
+    "washington-aerospace-scholars": "Online but open only to people from one state or area, so it is not tagged virtual (p9-regions-1, 2026-10-10).",
+    "ywca-nextstep-youth-employment": "Online but open only to people from one state or area, so it is not tagged virtual (p9-regions-1, 2026-10-10).",
+    "atlanta-youth-mean-business-ymb-fuel": "In person first, with an online option. Listed under its host place only, not tagged virtual (p9-regions-1, 2026-10-10).",
+    "nyc-manhattan-university-omalley-business-pre-college": "In person first, with an online option. Listed under its host place only, not tagged virtual (p9-regions-1, 2026-10-10).",
+    "nyc-queens-st-johns-summer-high-school-scholars": "In person first, with an online option. Listed under its host place only, not tagged virtual (p9-regions-1, 2026-10-10).",
+    "massachusetts-umass-amherst-pre-college": "In person first, with an online option. Listed under its host place only, not tagged virtual (p9-regions-1, 2026-10-10).",
+    "sjsu-summer-open-university-high-school": "In person first, with an online option. Listed under its host place only, not tagged virtual (p9-regions-1, 2026-10-10).",
+    "fairfax-gmu-health-services-mentorship-program": "Online course. The page does not say who can join, so it is listed under its host place only, not tagged virtual (p9-regions-1, 2026-10-10).",
+    "imsa-ai-credential-online": "Online course. The page does not say who can join, so it is listed under its host place only, not tagged virtual (p9-regions-1, 2026-10-10).",
+    "imsa-research-fundamentals-online": "Online course. The page does not say who can join, so it is listed under its host place only, not tagged virtual (p9-regions-1, 2026-10-10).",
+    "imsa-rise-online-research-program": "Online course. The page does not say who can join, so it is listed under its host place only, not tagged virtual (p9-regions-1, 2026-10-10).",
+    "lafayette-purdue-saturday-morning-astrophysics": "Online course. The page does not say who can join, so it is listed under its host place only, not tagged virtual (p9-regions-1, 2026-10-10).",
+    "louisville-kentucky-science-center-youth-science-summit": "Online course. The page does not say who can join, so it is listed under its host place only, not tagged virtual (p9-regions-1, 2026-10-10).",
+    "madison-uw-badger-precollege-college-ready": "Online course. The page does not say who can join, so it is listed under its host place only, not tagged virtual (p9-regions-1, 2026-10-10).",
+    "northwestern-nhsi-debate-institute": "Online course. The page does not say who can join, so it is listed under its host place only, not tagged virtual (p9-regions-1, 2026-10-10).",
+    "stanford-medcsi": "Online course. The page does not say who can join, so it is listed under its host place only, not tagged virtual (p9-regions-1, 2026-10-10).",
+    "san-diego-ucsd-marine-science-research-scholars": "Online course. The page does not say who can join, so it is listed under its host place only, not tagged virtual (p9-regions-1, 2026-10-10).",
 }
 
 

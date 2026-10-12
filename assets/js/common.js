@@ -186,7 +186,10 @@
     /* Set by hand in data/state-wages.json (below_federal: true) when the base rate is under $7.25. Not guessed from the text. */
     var low = w.below_federal === true;
     var tbl = /^Table updated\s*/.test(w.effective || "") ? " Source table dated " + G.esc(w.effective.replace(/^Table updated\s*/, "").replace(/\.$/, "")) + "." : "";
-    return '<p class="stateWage"><b>State minimum wage:</b> ' + G.esc(w.wage) + (w.youth && w.youth !== NS ? " " + G.esc(w.youth) : "") +
+    /* A youth rate sourced from the federal fact sheet (youth_url, set by hand) is shown with that link, not the state page. */
+    var fu = G.safeUrl(w.youth_url);
+    var fed = fu && w.youth_quote ? ' Federal fact sheet: <a href="' + G.esc(fu) + '" target="_blank" rel="noopener">U.S. Department of Labor youth minimum wage fact sheet</a>.' : "";
+    return '<p class="stateWage"><b>State minimum wage:</b> ' + G.esc(w.wage) + (w.youth && w.youth !== NS ? " " + G.esc(w.youth) : "") + fed +
       (low ? " Employers covered by federal law pay the federal rate instead." : "") +
       " Source: " + (u ? '<a href="' + G.esc(u) + '" target="_blank" rel="noopener">' + G.esc(w.page_title) + "</a>" : G.esc(w.page_title)) + "." + tbl + " Some cities may set a higher rate. Check your city.</p>";
   };

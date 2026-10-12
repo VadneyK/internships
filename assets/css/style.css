@@ -590,3 +590,6 @@ dl.facts.plain > div { border: 0; border-top: 2px solid var(--edge); border-radi
   .handout-code img { width: 2.2in; height: 2.2in; }
   .handout-steps li, .handout-not li { font-size: 1.15rem; }
 }
+
+.handout-weeks { padding-left: 1.3rem; display: grid; gap: .7rem; }
+.small-h { font-size: 1.15rem; margin: .2rem 0 .5rem; }

@@ -28,8 +28,19 @@ def wage_problems():
             continue
         for field in ("wage", "youth"):
             for fig in DOLLAR.findall(row.get(field) or ""):
-                if fig not in quote:
+                if fig in quote:
+                    continue
+                if field == "wage":
                     out.append("state-wages %s: %s figure %s is not in quote" % (row.get("id"), field, fig))
+                    continue
+                # A youth figure that the state quote does not hold needs its own
+                # federal source: youth_url (https) and youth_quote, both present,
+                # and the youth_quote must contain the figure.
+                url, yq = row.get("youth_url"), row.get("youth_quote")
+                if not isinstance(url, str) or not url.startswith("https://") or not isinstance(yq, str) or not yq.strip():
+                    out.append("state-wages %s: youth figure %s is not in quote and needs a youth_url (https) and a youth_quote" % (row.get("id"), fig))
+                elif fig not in yq:
+                    out.append("state-wages %s: youth figure %s is not in youth_quote" % (row.get("id"), fig))
     return out
 
 

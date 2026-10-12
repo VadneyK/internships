@@ -55,6 +55,7 @@
     ["santa-barbara", "Santa Barbara"],
     ["merced", "Merced"],
     ["arizona", "Arizona"], ["nevada", "Nevada"], ["colorado", "Colorado"], ["utah", "Utah"], ["florida", "Florida"], ["hawaii", "Hawaii"], ["oregon", "Oregon"], ["tennessee", "Tennessee"], ["kentucky", "Kentucky"], ["missouri", "Missouri"], ["new-mexico", "New Mexico"],
+    ["nebraska", "Nebraska"], ["kansas", "Kansas"], ["iowa", "Iowa"], ["south-dakota", "South Dakota"], ["north-dakota", "North Dakota"], ["montana", "Montana"], ["wyoming", "Wyoming"], ["idaho", "Idaho"],
     ["virtual", "Online"], ["national", "National"]
   ];
   /* Hubs group the regions into the areas teens recognize. [id, label, region ids] */
@@ -72,9 +73,9 @@
     ["sea", "Seattle and Washington", ["seattle", "washington"]],
     ["van", "Vancouver, BC", ["vancouver", "british-columbia"]],
     ["aus", "Austin and Texas", ["austin", "texas"]],
-    ["midwest", "Midwest campuses", ["twin-cities", "champaign", "madison", "lafayette", "bloomington", "columbus", "cincinnati", "ann-arbor", "lansing", "minnesota", "wisconsin", "indiana", "ohio", "michigan"]],
+    ["midwest", "Midwest campuses", ["twin-cities", "champaign", "madison", "lafayette", "bloomington", "columbus", "cincinnati", "ann-arbor", "lansing", "minnesota", "wisconsin", "indiana", "ohio", "michigan", "iowa", "nebraska", "kansas", "south-dakota", "north-dakota"]],
     ["east", "East Coast", ["triangle", "college-park", "fairfax", "charlottesville", "blacksburg", "new-brunswick", "pittsburgh", "philadelphia", "boston", "north-carolina", "maryland", "virginia", "new-jersey", "pennsylvania", "massachusetts"]],
-    ["mtn", "Mountain West", ["arizona", "nevada", "colorado", "utah", "new-mexico"]],
+    ["mtn", "Mountain West", ["arizona", "nevada", "colorado", "utah", "new-mexico", "montana", "wyoming", "idaho"]],
     ["south", "South", ["florida", "tennessee", "kentucky", "missouri"]],
     ["pac", "Oregon and Hawaii", ["oregon", "hawaii"]],
     ["online", "Online and national", ["virtual", "national"]]
@@ -153,7 +154,8 @@
     ["Northeast", ["northeast"], ["new-york-city", "new-brunswick", "philadelphia", "pittsburgh", "boston"]],
     ["South and DC area", ["southeast", "dc-area"], ["atlanta", "raleigh-chapel-hill", "charlottesville", "blacksburg", "college-park", "fairfax", "miami", "nashville", "louisville", "st-louis"]],
     ["Mountain West", [], ["phoenix", "las-vegas", "denver", "salt-lake-city", "albuquerque"]],
-    ["Oregon and Hawaii", [], ["portland", "honolulu"]]
+    ["Oregon and Hawaii", [], ["portland", "honolulu"]],
+    ["Plains and Mountain", [], []]
   ];
   /* Whole-state choices for the Where picker, for a teen with no city to pick. [id, label, region id]. A state place covers that state-level region
      (plus online and national programs when few match, the same as a city). Every state is in exactly one PICK_GROUPS group. */
@@ -167,7 +169,8 @@
     ["pennsylvania", "Pennsylvania", "pennsylvania"], ["massachusetts", "Massachusetts", "massachusetts"],
     ["georgia", "Georgia", "georgia"], ["north-carolina", "North Carolina", "north-carolina"],
     ["virginia", "Virginia", "virginia"], ["maryland", "Maryland", "maryland"],
-    ["arizona", "Arizona", "arizona"], ["nevada", "Nevada", "nevada"], ["colorado", "Colorado", "colorado"], ["utah", "Utah", "utah"], ["florida", "Florida", "florida"], ["hawaii", "Hawaii", "hawaii"], ["oregon", "Oregon", "oregon"], ["tennessee", "Tennessee", "tennessee"], ["kentucky", "Kentucky", "kentucky"], ["missouri", "Missouri", "missouri"], ["new-mexico", "New Mexico", "new-mexico"]
+    ["arizona", "Arizona", "arizona"], ["nevada", "Nevada", "nevada"], ["colorado", "Colorado", "colorado"], ["utah", "Utah", "utah"], ["florida", "Florida", "florida"], ["hawaii", "Hawaii", "hawaii"], ["oregon", "Oregon", "oregon"], ["tennessee", "Tennessee", "tennessee"], ["kentucky", "Kentucky", "kentucky"], ["missouri", "Missouri", "missouri"], ["new-mexico", "New Mexico", "new-mexico"],
+    ["nebraska", "Nebraska", "nebraska"], ["kansas", "Kansas", "kansas"], ["iowa", "Iowa", "iowa"], ["south-dakota", "South Dakota", "south-dakota"], ["north-dakota", "North Dakota", "north-dakota"], ["montana", "Montana", "montana"], ["wyoming", "Wyoming", "wyoming"], ["idaho", "Idaho", "idaho"]
   ];
   PICK_GROUPS[0].push(["california"]);
   PICK_GROUPS[1].push(["washington", "british-columbia"]);
@@ -177,6 +180,7 @@
   PICK_GROUPS[5].push(["georgia", "north-carolina", "virginia", "maryland", "florida", "tennessee", "kentucky", "missouri"]);
   PICK_GROUPS[6].push(["arizona", "nevada", "colorado", "utah", "new-mexico"]);
   PICK_GROUPS[7].push(["oregon", "hawaii"]);
+  PICK_GROUPS[8].push(["nebraska", "kansas", "iowa", "south-dakota", "north-dakota", "montana", "wyoming", "idaho"]);
   var _placeCache = {};
   /* "city:boston", "area:midwest" or "state:ohio" to the region ids it covers, or null if unknown */
   function placeRegions(place) {
@@ -257,6 +261,7 @@
     atlanta: "ga", georgia: "ga", "new-york-city": "ny", "new-york-state": "ny", chicago: "il", illinois: "il",
     seattle: "wa", washington: "wa", vancouver: "bc", "british-columbia": "bc", austin: "tx", texas: "tx", "twin-cities": "mn", minnesota: "mn", champaign: "il", madison: "wi", wisconsin: "wi", lafayette: "in", bloomington: "in", indiana: "in", columbus: "oh", cincinnati: "oh", ohio: "oh", "ann-arbor": "mi", lansing: "mi", michigan: "mi", triangle: "nc", "north-carolina": "nc", "college-park": "md", maryland: "md", fairfax: "va", charlottesville: "va", blacksburg: "va", virginia: "va", "new-brunswick": "nj", "new-jersey": "nj", pittsburgh: "pa", philadelphia: "pa", pennsylvania: "pa", boston: "ma", massachusetts: "ma", "santa-barbara": "ca", merced: "ca",
     arizona: "az", nevada: "nv", colorado: "co", utah: "ut", florida: "fl", hawaii: "hi", oregon: "or", tennessee: "tn", kentucky: "ky", missouri: "mo", "new-mexico": "nm",
+    nebraska: "ne", kansas: "ks", iowa: "ia", "south-dakota": "sd", "north-dakota": "nd", montana: "mt", wyoming: "wy", idaho: "id",
     virtual: "", national: ""
   };
   function stateOf(e) {

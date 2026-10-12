@@ -5,6 +5,43 @@
   var $ = function (id) { return document.getElementById(id); };
   function a(t, u) { return '<a href="' + G.esc(u) + '" target="_blank" rel="noopener">' + G.esc(t) + "</a>"; }
   function li(arr) { return arr.map(function (x) { return "<li>" + G.esc(x) + "</li>"; }).join(""); }
+  /* States with a full work permit answer in data/permits.json that are not one of the four full under-14 states, and not British Columbia (not in the picker). The names are copied from permits.json; tests/p9-younger-1.test.mjs checks them. */
+  var PERMIT_NAMES = { wa: "Washington", tx: "Texas", mn: "Minnesota", wi: "Wisconsin", in: "Indiana", mi: "Michigan", nc: "North Carolina", nj: "New Jersey", pa: "Pennsylvania", ma: "Massachusetts", oh: "Ohio", md: "Maryland", va: "Virginia" };
+  function isPermitOnly(v) { return !!v && Object.prototype.hasOwnProperty.call(PERMIT_NAMES, v); }
+  /* Adds the permit-only states to the picker, in name order among the other states. The four full states come first and are skipped. */
+  function addPermitOptions(full) {
+    var ys = $("yState");
+    if (!ys) return;
+    var skip = full.map(function (s) { return s[0]; });
+    Object.keys(PERMIT_NAMES).sort(function (a, b) { return PERMIT_NAMES[a] < PERMIT_NAMES[b] ? -1 : 1; }).forEach(function (id) {
+      if (skip.indexOf(id) > -1 || ys.querySelector('option[value="' + id + '"]')) return;
+      var o = document.createElement("option");
+      o.value = id; o.textContent = PERMIT_NAMES[id];
+      var before = null;
+      for (var i = 0; i < ys.options.length; i++) {
+        var x = ys.options[i];
+        if (x.value && skip.indexOf(x.value) < 0 && x.textContent > o.textContent) { before = x; break; }
+      }
+      ys.insertBefore(o, before);
+    });
+  }
+  /* The age for the permit link: the age from the address, then the saved Programs age (only 12, 13 or 14 count), else 14. */
+  function permitAge() {
+    var q = "";
+    try { q = new URLSearchParams(location.search).get("age") || ""; } catch (e) { /* no address age */ }
+    if (/^(12|13|14)$/.test(q)) return q;
+    try {
+      var pa = G.store.get("findprefs", {});
+      if (pa && typeof pa.age === "string" && /^(12|13|14)$/.test(pa.age)) return pa.age;
+    } catch (e) { /* no saved age */ }
+    return "14";
+  }
+  /* permits.json is read once, after a teen picks a permit-only state, never on first load. */
+  var permitP = null;
+  function readPermits() {
+    if (!permitP) permitP = G.fetchData("data/permits.json").then(function (r) { if (!r.ok) throw new Error("permits"); return r.json(); }).catch(function (e) { permitP = null; throw e; });
+    return permitP;
+  }
   /* The short answers for the other states come from G.stateShorts(), read only after a teen picks one of those states, so the page's first load does not change. */
   var shortP = null, shorts = null, shortRead = "";
   function ensureShort() {
@@ -50,6 +87,7 @@
     if (nsBtn) nsBtn.setAttribute("href", nextHref);
     var yNextA = document.querySelector("#yNext a");
     if (yNextA) yNextA.setAttribute("href", nextHref);
+    addPermitOptions(d.states);
     var os = d.otherState;
     $("otherStateH").textContent = os.title;
     $("otherStateRule").innerHTML = G.esc(os.rule) + " " + a(os.source.t, os.source.u) + ".";
@@ -58,10 +96,37 @@
     /* The four full states. A state with a short answer has no column here: the table keeps all four, and its short card sits under "Any other state". */
     function isFour(v) { return d.states.some(function (s) { return s[0] === v; }); }
     function hasOpt(v) { return !!v && !!$("yState").querySelector('option[value="' + v + '"]'); }
+    /* The card for a permit-only state: name, the full answer link, hours at 14 and the state wage (both from the shared helpers the jobs page uses), and the under-14 line. */
+    function showPermit(v) {
+      var box = $("otherLite"), age = permitAge();
+      box.innerHTML = "";
+      var h = document.createElement("h3"); h.textContent = PERMIT_NAMES[v]; box.appendChild(h);
+      var p1 = document.createElement("p"), lk = document.createElement("a");
+      lk.setAttribute("href", "permit.html?state=" + encodeURIComponent(v) + "&age=" + age);
+      lk.textContent = "Full work permit answer"; p1.appendChild(lk); box.appendChild(p1);
+      var hrs = document.createElement("div"), wage = document.createElement("div");
+      box.appendChild(hrs); box.appendChild(wage);
+      var p2 = document.createElement("p"); p2.className = "small";
+      p2.textContent = "Under 14 rules for this state are not on this page. Ask the state labor office or see the permit finder.";
+      box.appendChild(p2);
+      box.hidden = false;
+      readPermits().then(function (pd) {
+        if ($("yState").value !== v) return;
+        var r = L.permitFor(pd, v, 14, "job");
+        hrs.innerHTML = r && r.hours ? "<p><b>Hours in " + G.esc(PERMIT_NAMES[v]) + " at 14.</b> " + G.esc(r.hours) + "</p>" : "";
+      }).catch(function () {
+        if ($("yState").value === v) hrs.innerHTML = '<p class="small">The hours rule could not load. Use the work permit finder link.</p>';
+      });
+      G.stateWages().then(function (wd) {
+        if ($("yState").value !== v) return;
+        wage.innerHTML = G.wageLine(wd, v);
+      }).catch(function () { /* the wage line is optional; the permit link still works */ });
+    }
     function showLite(v) {
       var box = $("otherLite");
       if (!box) return;
       if (!v || isFour(v)) { box.hidden = true; box.innerHTML = ""; return; }
+      if (isPermitOnly(v)) { showPermit(v); return; }
       ensureShort().then(function (m) {
         if ($("yState").value !== v) return;
         box.innerHTML = m && m[v] ? shortCard(m[v]) : "<p>The short answer could not load. Try again, or ask your state labor office.</p>";
@@ -123,6 +188,7 @@
       var total = d.states.length, st = $("yStatus"), msg, name = ys.options[ys.selectedIndex] ? ys.options[ys.selectedIndex].textContent : "";
       if (!ys.value) msg = "Showing all " + total + " full states.";
       else if (isFour(ys.value)) msg = "Showing " + name + ". 1 of " + total + " full states.";
+      else if (isPermitOnly(ys.value)) msg = "Showing " + name + ". Its work permit answer is just below the picker. The table shows all " + total + " full states.";
       else msg = "Showing " + name + ". Its short answer is just below the picker. The table shows all " + total + " full states.";
       if (st && st.textContent !== msg) st.textContent = msg;
     });

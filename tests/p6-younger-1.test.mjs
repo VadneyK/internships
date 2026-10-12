@@ -12,6 +12,7 @@ import { loadPage, tick } from "./dom-helper.mjs";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const lite = JSON.parse(fs.readFileSync(path.join(ROOT, "data/states-lite.json"), "utf8"));
 const younger = JSON.parse(fs.readFileSync(path.join(ROOT, "data/younger.json"), "utf8"));
+const permits = JSON.parse(fs.readFileSync(path.join(ROOT, "data/permits.json"), "utf8"));
 const NS = "Not stated on the page we read.";
 const FOUR = younger.states.map((s) => s[0]);
 const digits = (p) => p.replace(/\D/g, "");
@@ -40,9 +41,11 @@ test("p6-younger-1: the picker lists the four full states first, then every stat
   assert.equal(opts[0].textContent, "All four states");
   assert.deepEqual(opts.slice(1, 1 + FOUR.length).map((o) => o.value), FOUR);
   const rest = opts.slice(1 + FOUR.length);
-  assert.equal(rest.length, lite.states.length, "one option per state in states-lite.json");
-  assert.deepEqual(new Set(rest.map((o) => o.value)), new Set(lite.states.map((s) => s.id)));
-  for (const o of rest) assert.equal(o.textContent, liteById(o.value).name, `label for ${o.value}`);
+  // p9-younger-1 adds the permit-only states (full answer in permits.json, not in states-lite.json) to the picker.
+  const permitOnly = Object.keys(permits.states).filter((id) => !FOUR.includes(id) && id !== "bc");
+  assert.equal(rest.length, lite.states.length + permitOnly.length, "one option per state in states-lite.json, plus the permit-only states");
+  assert.deepEqual(new Set(rest.map((o) => o.value)), new Set([...lite.states.map((s) => s.id), ...permitOnly]));
+  for (const o of rest) assert.equal(o.textContent, liteById(o.value) ? liteById(o.value).name : permits.states[o.value].name, `label for ${o.value}`);
   const values = opts.map((o) => o.value);
   assert.equal(new Set(values).size, values.length, "no option value is repeated");
   for (const st of younger.states) assert.equal(st[1], opts.find((o) => o.value === st[0]).textContent, `name for ${st[0]}`);
