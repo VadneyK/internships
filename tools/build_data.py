@@ -9,6 +9,9 @@
   data/entries-stats.json  same ids and order, only the keys the Numbers page counts with
   data/entries-home.json  same ids and order, only the keys the Home picker reads
   data/entries-detail.json  same ids and order, only id plus the long text (who_can_apply, how_to_apply, notes) a program has, read when a card is opened
+  data/lite/<group>.json  the lite cards of one Where group (see PICK_GROUPS in assets/js/lib.js), same card shape and id order as entries-lite.json;
+                          data/lite/shared.json holds the online and national cards every place can see
+  data/detail/<group>.json  the detail rows (same shape as entries-detail.json) for the same cards as the matching data/lite file
   data/meta.json     counts and the "last checked" date shown in the footer
 
 Run:  python3 tools/build_data.py        (then python3 tools/build.py for the pages)
@@ -16,6 +19,7 @@ Run:  python3 tools/build_data.py        (then python3 tools/build.py for the pa
 import csv
 import json
 import os
+import re
 import sys
 
 import proglib
@@ -44,6 +48,74 @@ CSV_COLUMNS = [
     "season", "duration", "status", "deadline_text", "deadline_iso", "deadline_confidence", "needs_work_permit",
     "who_can_apply", "how_to_apply", "url", "apply_url", "verified", "verified_on", "notes",
 ]
+
+
+LIB_JS = os.path.join(proglib.ROOT, "assets", "js", "lib.js")
+SHARED_REGIONS = ("virtual", "national")
+
+
+def _js_value(src, name):
+    """The array literal after 'var NAME = ' in lib.js, read as JSON (the arrays there are plain nested lists of double-quoted strings)."""
+    m = re.search(r"\bvar %s = \[" % name, src)
+    if not m:
+        raise SystemExit("build_data: cannot find %s in assets/js/lib.js" % name)
+    start = m.end() - 1
+    depth, i, in_str = 0, start, False
+    while i < len(src):
+        c = src[i]
+        if in_str:
+            if c == "\\":
+                i += 1
+            elif c == '"':
+                in_str = False
+        elif c == '"':
+            in_str = True
+        elif c == "[":
+            depth += 1
+        elif c == "]":
+            depth -= 1
+            if depth == 0:
+                return json.loads(re.sub(r"/\*.*?\*/", "", src[start:i + 1], flags=re.S))
+        i += 1
+    raise SystemExit("build_data: unbalanced brackets in %s" % name)
+
+
+def pick_groups():
+    """[(slug, label, set of region ids)] for each Where group in lib.js PICK_GROUPS, in order. A group's regions are the regions of its cities and states."""
+    with open(LIB_JS, encoding="utf-8") as f:
+        src = f.read()
+    cities = {c[0]: c[2] for c in _js_value(src, "CITIES")}
+    states = {x[0]: [x[2]] for x in _js_value(src, "STATES")}
+    groups = _js_value(src, "PICK_GROUPS")
+    for m in re.finditer(r"PICK_GROUPS\[(\d+)\]\.push\((\[[^\]]*\])\);", src):
+        groups[int(m.group(1))].append(json.loads(m.group(2)))
+    out = []
+    for g in groups:
+        regions = set()
+        for cid in g[2]:
+            regions.update(cities[cid])
+        for sid in g[3]:
+            regions.update(states[sid])
+        out.append((re.sub(r"[^a-z0-9]+", "-", g[0].lower()).strip("-"), g[0], regions))
+    return out
+
+
+def write_chunks(lite, detail):
+    """data/lite/<slug>.json and data/detail/<slug>.json per Where group, plus shared. Every file is written, even when empty, so the file set never changes with the data.
+    A card is in shared when it has an online or national region. Otherwise it is in each group whose regions it touches (a card that spans groups is in each of them).
+    A place loads its group chunks plus shared and gets every card L.matches shows for it, with or without the online and national widening."""
+    groups = pick_groups()
+    sets = [("shared", lambda c: any(r in SHARED_REGIONS for r in c.get("regions") or []))]
+    for slug, _label, regions in groups:
+        sets.append((slug, (lambda rs: lambda c: not any(r in SHARED_REGIONS for r in c.get("regions") or []) and any(r in rs for r in c.get("regions") or []))(regions)))
+    for folder in ("lite", "detail"):
+        os.makedirs(os.path.join(OUT_DIR, folder), exist_ok=True)
+    for slug, test in sets:
+        idx = [i for i, c in enumerate(lite) if test(c)]
+        for folder, rows in (("lite", lite), ("detail", detail)):
+            with open(os.path.join(OUT_DIR, folder, slug + ".json"), "w", encoding="utf-8") as f:
+                json.dump([rows[i] for i in idx], f, ensure_ascii=False, separators=(",", ":"))
+                f.write("\n")
 
 
 def main():
@@ -97,6 +169,7 @@ def main():
     with open(os.path.join(OUT_DIR, "entries-detail.json"), "w", encoding="utf-8") as f:
         json.dump(detail, f, ensure_ascii=False, separators=(",", ":"))
         f.write("\n")
+    write_chunks(lite, detail)
     with open(os.path.join(OUT_DIR, "meta.json"), "w", encoding="utf-8") as f:
         json.dump(meta, f, indent=1)
         f.write("\n")

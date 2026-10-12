@@ -19,6 +19,7 @@ const LIB = require(path.join(JS_DIR, "lib.js"));
 const ALLOW = {
   G: {
     cardHtml: "find.js sets G.cardHtml for its own later use; it is not defined by common.js",
+    placeChunks: "find.js sets G.placeChunks as a test hook (tests/diet-1-region-chunks.test.mjs); it is not defined by common.js",
   },
   L: {},
 };

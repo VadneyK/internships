@@ -1,11 +1,12 @@
 /* Programs page: filters, sorting, deadline view, saved list.
    Cards are drawn from the lite file. The long text (who can apply, how to apply, good to know) comes from the detail file,
-   which starts loading on the first of: a card opened, a search typed, a #p- link, a print, or an idle prefetch 3 seconds after the first draw. */
+   which starts loading on the first of: a card opened, a search typed, a #p- link, a print, or an idle prefetch 3 seconds after the first draw.
+   With a place chosen the cards and the long text come from that place's Where group files plus the shared file (see "Data"). */
 (function () {
   "use strict";
   var G = window.TIG;
   var $ = function (id) { return document.getElementById(id); };
-  var all = [], byId = {};
+  var all = [], byId = {}, world = [], wid = {}, part = false, loaded = {}, gen = 0;
   /* detail file state: idle, wait (loading), ready (merged into the entries) or fail */
   var detailState = "idle", lastKey = "";
   var state = { q: "", hubs: [], place: "", age: "", when: "", season: "", paid: [], types: [], fields: [], verified: false, noPermit: false, view: "cards", sort: "best", saved: false };
@@ -266,7 +267,7 @@
     var active = state.q || state.age || state.when || state.season || state.paid.length || state.types.length || state.fields.length ||
       state.verified || state.noPermit || state.hubs.length || state.place;
     if (!active || (state.saved && !sv.length)) return "";
-    var opts = L.relaxOptions(all, Object.assign({}, state, { savedIds: sv }), now()), n = sv.length, lead, btns = "";
+    var opts = L.relaxOptions(part ? world : all, Object.assign({}, state, { savedIds: sv }), now()), n = sv.length, lead, btns = "";
     if (state.saved) {
       lead = n === 1 ? "Your saved program does not match these filters." : "None of your " + n + " saved programs match these filters.";
       btns += '<button class="btn alt sm" type="button" data-relax-saved="1">Turn the other filters off</button>';
@@ -381,12 +382,14 @@
     speakT = setTimeout(function () { var t = $("count").textContent; if (t !== spoken) live.textContent = spoken = t; }, 700);
   }
   function render(resetPage, keep) {
+    var wait = ensure();
+    if (wait) { wait.then(function () { render(resetPage, keep); }, function () { G.toast("Could not load more programs. Check your connection and try again."); }); return; }
     if (resetPage) shown = PAGE;
     var sv = savedIds(), cur = currentList(sv), list = cur.list, realN = cur.realN;
     lastKey = listKey(cur);
     paintPlaceNote(realN);
     paintTownHelp(realN);
-    $("count").textContent = list.length + " of " + all.length + " programs";
+    $("count").textContent = list.length + " of " + world.length + " programs";
     announceCount($("count").textContent);
     paintPrintCut(list);
     paintSortNote();
@@ -451,7 +454,11 @@
      Computed once per filter state (it rides on the cached list). Zero-count chips get "zero" (muted, still pressable). */
   var FACET_OF = { hubs: "hubs", paid: "paid", types: "types", fields: "fields" };
   function paintChipCounts(cur) {
-    if (!cur.facets) cur.facets = L.facetCounts(all, state, now());
+    if (!cur.facets) {
+      cur.facets = L.facetCounts(all, state, now());
+      /* the area chips count every program, so they come from the stats rows */
+      if (part) cur.facets.hubs = L.facetCounts(world, state, now()).hubs;
+    }
     document.querySelectorAll(".chip[data-key]").forEach(function (b) {
       var group = FACET_OF[b.getAttribute("data-key")], tbl = group && cur.facets[group];
       var n = tbl ? tbl[b.getAttribute("data-val")] : null;
@@ -577,7 +584,79 @@
 
   /* Detail file: the long text. Starts on the first trigger and only once. When it arrives the rows are merged into the entries by id,
      the open cards are filled in place (no re-render, so focus and open cards stay), and the list is re-run so a search over the notes works. */
-  var litePromise = G.loadEntries(true);
+  /* Data. URLs are written out one by one: the Where groups in PICK_GROUPS order, then shared (online and national). A test checks them against the build.
+     A place from the address or the saved choice loads its groups plus shared, and the stats file for what counts every program (chips, place counts, "of N", area chips).
+     What those cannot answer (no place, an area chip, a search, a saved card outside them) or a failed load uses the whole lite file instead. */
+  var LITE = ["data/lite/california.json", "data/lite/pacific-northwest.json", "data/lite/texas.json", "data/lite/midwest.json", "data/lite/northeast.json", "data/lite/south-and-dc-area.json", "data/lite/mountain-west.json", "data/lite/oregon-and-hawaii.json", "data/lite/plains-and-mountain.json", "data/lite/shared.json"];
+  var DET = ["data/detail/california.json", "data/detail/pacific-northwest.json", "data/detail/texas.json", "data/detail/midwest.json", "data/detail/northeast.json", "data/detail/south-and-dc-area.json", "data/detail/mountain-west.json", "data/detail/oregon-and-hawaii.json", "data/detail/plains-and-mountain.json", "data/detail/shared.json"];
+  var pulled = {}, pulledDet = {}, fullP = null;
+  function pull(store, urls, i) {
+    if (!store[i]) {
+      var file = urls[i] || "data/entries-lite.json";
+      store[i] = G.fetchData(file).then(function (r) { if (!r.ok) throw new Error("Could not load programs (" + r.status + ")"); return r.json(); });
+      store[i].catch(function () { delete store[i]; });
+    }
+    return store[i];
+  }
+  /* The chunk numbers a place needs (its Where groups and shared), or null. */
+  function chunksFor(place) {
+    var m = /^(city|state|area):(.+)$/.exec(place || ""), PG = L.PICK_GROUPS, ids, out = [PG.length], a, g, k, i;
+    if (!m) return null;
+    ids = [m[2]];
+    if (m[1] === "area") { a = L.AREAS.filter(function (x) { return x[0] === m[2]; })[0]; if (!a) return null; ids = a[2]; }
+    for (i = 0; i < ids.length; i++) {
+      for (g = 0, k = -1; g < PG.length && k < 0; g++) if (PG[g][m[1] === "state" ? 3 : 2].indexOf(ids[i]) > -1) k = g;
+      if (k < 0) return null;
+      if (out.indexOf(k) < 0) out.push(k);
+    }
+    return out.sort(function (x, y) { return x - y; });
+  }
+  /* The loaded chunks as one list in lite order (by id), each card once. */
+  function rowsOf() {
+    var seen = {}, out = [];
+    Object.keys(loaded).forEach(function (i) { loaded[i].forEach(function (e) { if (!seen[e.id]) { seen[e.id] = 1; out.push(e); } }); });
+    return out.sort(function (a, b) { return a.id < b.id ? -1 : a.id > b.id ? 1 : 0; });
+  }
+  function setRows(rows, whole) {
+    all = rows; byId = {}; gen++; cache = null; picksKey = null;
+    all.forEach(function (e) { byId[e.id] = e; });
+    if (whole) { part = false; world = all; }
+  }
+  /* new rows: the long text has to come again */
+  function redoDetail() { if (detailState === "ready" || detailState === "wait") { detailState = "idle"; wantDetail(); } }
+  function wholeLite() { return G.loadEntries(true).then(function (rows) { setRows(rows, true); }); }
+  function goFull() {
+    if (!part) return Promise.resolve();
+    return fullP || (fullP = wholeLite().then(redoDetail, function (e) { fullP = null; throw e; }));
+  }
+  /* The starting place, read the way readURL and applyPrefs read it. "" with a search or a card link in the address. */
+  function firstPlace() {
+    var p = new URLSearchParams(location.search), at = p.get("at") || "";
+    if (p.get("q") || location.hash.indexOf("#p-") === 0) return "";
+    if (!location.search) { var pr = G.store.get(PREF_KEY, {}); at = typeof pr.place === "string" ? pr.place : ""; }
+    return at && L.placeRegions(at) ? at : "";
+  }
+  var dataP = (function () {
+    var pl = firstPlace(), idx = pl ? chunksFor(pl) : null;
+    if (!idx) return wholeLite();
+    return Promise.all(idx.map(function (i) { return pull(pulled, LITE, i); }).concat(G.loadEntries("stats"))).then(function (res) {
+      idx.forEach(function (i, k) { loaded[i] = res[k]; });
+      world = res[idx.length]; world.forEach(function (e) { wid[e.id] = 1; });
+      part = true; setRows(rowsOf(), false);
+    }).catch(wholeLite);
+  })();
+  /* Called by render(): null when the loaded cards cover the state, else a promise for what is missing (more chunks, or the whole file). */
+  function ensure() {
+    if (!part) return null;
+    var need = !state.place || state.q || state.hubs.length ? null : chunksFor(state.place), miss = [];
+    if (need) need.forEach(function (i) { if (!loaded[i]) miss.push(i); });
+    var out = G.saved.ids().some(function (id) { return !byId[id] && wid[id]; });
+    if (need && !out) {
+      if (!miss.length) return null;
+      return Promise.all(miss.map(function (i) { return pull(pulled, LITE, i).then(function (rows) { loaded[i] = rows; }); })).then(function () { setRows(rowsOf(), false); redoDetail(); }, goFull);
+    }
+    return goFull();
+  }
   function paintBodies() {
     var cards = $("out").querySelectorAll("article.prog"), mode = detailMode();
     for (var i = 0; i < cards.length; i++) {
@@ -604,16 +683,22 @@
       if (again) again.focus();
     }
   }
+  function detailRows() {
+    if (!part) return G.loadEntries("detail");
+    return Promise.all(Object.keys(loaded).map(function (i) { return pull(pulledDet, DET, i); })).then(function (rs) { return [].concat.apply([], rs); });
+  }
   function wantDetail() {
     if (detailState === "ready" || detailState === "wait") return;
     detailState = "wait"; paintBodies();
-    Promise.all([litePromise, G.loadEntries("detail")]).then(function (res) {
-      res[1].forEach(function (row) {
+    var g0;
+    dataP.then(function () { g0 = gen; return detailRows(); }).then(function (rows) {
+      if (g0 !== gen) return;
+      rows.forEach(function (row) {
         var e = byId[row.id];
         if (e) Object.keys(row).forEach(function (k) { if (k !== "id") e[k] = row[k]; });
       });
       detailState = "ready"; paintBodies(); rerunList();
-    }).catch(function () { detailState = "fail"; paintBodies(); });
+    }).catch(function () { if (g0 === undefined || g0 === gen) { detailState = "fail"; paintBodies(); } });
   }
   /* an idle prefetch 3 seconds after the first draw, unless the person asked to save data or the connection is slow */
   function prefetchDetail() {
@@ -630,9 +715,11 @@
 
   /* Test hook: the HTML of one card, so a test can compare it with a card built from the full file. */
   G.cardHtml = function (e) { return card(e); };
+  G.placeChunks = chunksFor; /* test hook: the chunk numbers a place needs (tests/diet-1-region-chunks.test.mjs) */
 
   /* A shared #p-<id> link. If the card is hidden by the filters or by My list only, clear them and say so. If the id is not in the data, show a note. */
   function openLinked(id, first) {
+    if (part && !(byId[id] && currentList(savedIds()).list.some(function (e) { return e.id === id; }))) { goFull().then(function () { openLinked(id, first); }, function () {}); return; }
     var note = $("hashNote"); if (note) note.parentNode.removeChild(note);
     var known = Object.prototype.hasOwnProperty.call(byId, id), cleared = false;
     var at = known ? currentList(savedIds()).list.findIndex(function (e) { return e.id === id; }) : -1;
@@ -661,20 +748,18 @@
     if (cleared) G.toast("Filters cleared to show this program");
   }
 
-  litePromise.then(function (data) {
-    all = data;
-    all.forEach(function (e) { byId[e.id] = e; });
-    var hubCounts = {}; all.forEach(function (e) { hubOf(e).forEach(function (h) { hubCounts[h] = (hubCounts[h] || 0) + 1; }); });
+  dataP.then(function () {
+    var hubCounts = {}; world.forEach(function (e) { hubOf(e).forEach(function (h) { hubCounts[h] = (hubCounts[h] || 0) + 1; }); });
     var QUICK = ["davis", "sv", "oak", "sf", "state", "socal", "atl", "nyc", "chi", "online"];
     chipGroup("hubChips", G.HUBS.filter(function (h) { return hubCounts[h[0]] && QUICK.indexOf(h[0]) > -1; }).map(function (h) { return [h[0], h[1], hubCounts[h[0]]]; }), "hubs");
-    G.fillPlaces($("place"), all);
+    G.fillPlaces($("place"), world);
     G.placeTiles($("place"));
     ["age", "when", "season"].forEach(function (id) { G.tilePicker($(id), { anyLabel: $(id).options[0].textContent }); });
     $("place").addEventListener("change", function (e) { state.place = e.target.value; state.moreOnline = false; if (state.place) state.hubs = []; savePrefs(); hidePrefNote(); syncChips(); render(true); });
     chipGroup("paidChips", PAID_GROUPS.map(function (g) { return [g[0], g[1]]; }), "paid");
-    var tc = {}; all.forEach(function (e) { tc[e.type] = (tc[e.type] || 0) + 1; });
+    var tc = {}; world.forEach(function (e) { tc[e.type] = (tc[e.type] || 0) + 1; });
     chipGroup("typeChips", Object.keys(G.TYPES).filter(function (k) { return tc[k]; }).map(function (k) { return [k, G.TYPES[k], tc[k]]; }), "types");
-    var fc = {}; all.forEach(function (e) { (e.fields || []).forEach(function (f) { fc[f] = (fc[f] || 0) + 1; }); });
+    var fc = {}; world.forEach(function (e) { (e.fields || []).forEach(function (f) { fc[f] = (fc[f] || 0) + 1; }); });
     chipGroup("fieldChips", Object.keys(G.FIELDS).filter(function (k) { return k !== "any" && fc[k]; }).map(function (k) { return [k, G.FIELDS[k], fc[k]]; }), "fields");
     var wantHash = location.hash;
     readURL(); syncChips();

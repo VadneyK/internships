@@ -60,7 +60,7 @@ function noOhio(w) {
     set(v) { inner = v; },
     get() {
       return (u, o) => inner(u, o).then(async (r) => {
-        if (!/entries-lite\.json/.test(String(u))) return r;
+        if (!/entries-lite\.json|data\/lite\//.test(String(u))) return r; /* the whole lite file and the group chunks */
         const rows = (await r.json()).filter((e) => !L.matches(e, { place: "state:ohio" }, Date.now()));
         return { ok: true, status: 200, json: async () => rows };
       });

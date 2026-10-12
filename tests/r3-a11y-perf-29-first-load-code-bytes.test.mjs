@@ -29,7 +29,8 @@ const BUDGET = {
   // Raised on 2026-10-11 for ticket p7-regions-1: lib.js grew by 1,296 bytes (11 new states in REGIONS, HUBS, STATES, PICK_GROUPS and STATE_OF). find.html loads 171395 bytes of code, ceiling raised from 170500 to 171400.
   // Raised 2026-10-11 after the new-states merge (regions and places in lib.js, wages reader in common.js): find 171400 to 171500, jobs 141100 to 141900, permit 145000 to 145400.
   // Raised from 171500 to 172800 on 2026-10-11 for tickets p8-lite-1 and p8-cities-1: big cities of the 11 new states in lib.js, plain missing-fact answers and wage notes in common.js and permit.js.
-  "find.html": { ceiling: 179400, reason: "lib.js, common.js and find.js (largest page script)" },
+  // Raised from 179400 to 185200 on 2026-10-12 for ticket diet-1: find.js grew by about 6 KB (ten literal chunk URLs for the lite files and ten for the detail files, the place to chunk mapping, and the fallback to the whole file). find.html loads 185192 bytes of code.
+  "find.html": { ceiling: 185200, reason: "lib.js, common.js and find.js (largest page script)" },
   "handout.html": { ceiling: 75300, reason: "common.js, handout.js and both stylesheets; no lib.js" },
   "index.html": { ceiling: 136500, reason: "lib.js, common.js and home.js" },
   "insights.html": { ceiling: 131600, reason: "lib.js, common.js and insights.js" },

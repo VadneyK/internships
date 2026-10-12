@@ -35,9 +35,10 @@ function server() {
 /* storage values are JSON-encoded; rawStorage values are stored as given (for example theme: "dark")
    setup(window): optional, runs first in beforeParse, before any page script (for example to make localStorage throw)
    fetchLog: optional array; every fetch the page makes is pushed to it as { url, init }
+   fetchFail: optional RegExp; a fetch whose URL matches it answers 404 at once (the request is still logged)
    lazy: optional; interview.html is otherwise nudged to load permits.json, as a teen using the hours checker would
    now: optional millisecond timestamp; new Date() and Date.now() start there and keep ticking, while new Date(args), Date.UTC and Date.parse are unchanged */
-export async function loadPage(file, { search = "", storage = {}, rawStorage = {}, setup, now, fetchLog, lazy } = {}) {
+export async function loadPage(file, { search = "", storage = {}, rawStorage = {}, setup, now, fetchLog, lazy, fetchFail } = {}) {
   const port = await server();
   const errors = [];
   const inflight = { n: 0 }; // fetches the page started and has not finished
@@ -63,7 +64,7 @@ export async function loadPage(file, { search = "", storage = {}, rawStorage = {
       }
       for (const [k, v] of Object.entries(storage)) w.localStorage.setItem(k, JSON.stringify(v));
       for (const [k, v] of Object.entries(rawStorage)) w.localStorage.setItem(k, v);
-      w.fetch = (u, o) => { const url = new URL(String(u), w.location.href); if (fetchLog) fetchLog.push({ url: url.href, init: o }); inflight.n++; const pr = fetch(url, o); pr.then(() => { inflight.n--; }, () => { inflight.n--; }); return pr; }; // jsdom has no fetch; use Node's, against the local server
+      w.fetch = (u, o) => { const url = new URL(String(u), w.location.href); if (fetchLog) fetchLog.push({ url: url.href, init: o }); inflight.n++; const pr = fetchFail && fetchFail.test(url.href) ? Promise.resolve(new Response("not found", { status: 404 })) : fetch(url, o); pr.then(() => { inflight.n--; }, () => { inflight.n--; }); return pr; }; // jsdom has no fetch; use Node's, against the local server
       w.matchMedia = w.matchMedia || (() => ({ matches: false, addEventListener() {}, removeEventListener() {} }));
       w.print = () => { w.__printed = (w.__printed || 0) + 1; };
       w.scrollTo = () => {};
