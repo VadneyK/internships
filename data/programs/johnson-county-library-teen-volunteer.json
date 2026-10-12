@@ -1,0 +1,39 @@
+{
+  "id": "johnson-county-library-teen-volunteer",
+  "name": "Johnson County Library Teen Volunteers",
+  "org": "Johnson County Library",
+  "regions": [
+    "kansas"
+  ],
+  "city": "Overland Park and Johnson County, KS",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "any"
+  ],
+  "what_you_do": "Teens volunteer at library branches and events. This includes summer teen volunteer jobs and teen book reviewing. You sign up for one-time, short-term or weekly spots in an online volunteer portal.",
+  "min_age": 13,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Most volunteer positions take youth 14 and older. Summer teen volunteer jobs are open to ages 13 and older as of June 1. Each job posting lists its own minimum age.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. The library records and verifies service hours weekly for schools.",
+  "season": "year-round",
+  "duration": "One-time, short-term or weekly shifts",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Sign up any time in the volunteer portal. Summer teen opportunities are posted in late April.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Register in the library's volunteer database. This is a Samaritan volunteer profile. Then sign up for an opening with the Sign Up button. If no shift is listed, the Volunteer Coordinator follows up with you.",
+  "needs_work_permit": false,
+  "url": "https://www.jocolibrary.org/become-a-volunteer/",
+  "apply_url": "https://joco.samaritan.com/custom/501/opp_search?udf565=Library",
+  "sources_fetched": [
+    "https://www.jocolibrary.org/become-a-volunteer/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 1,
+  "notes": "Quote from the page: We welcome and encourage youth volunteers 14 years and older for most volunteer positions. The page says over 900 teens through adults volunteer each year. You can also become a Swift Volunteer for last-minute needs, with no obligation."
+}

@@ -1,0 +1,38 @@
+{
+  "id": "fargo-public-library-teen-volunteers",
+  "name": "Fargo Public Library Teen Volunteer Program",
+  "org": "Fargo Public Library",
+  "regions": [
+    "north-dakota"
+  ],
+  "city": "Fargo, ND",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "what_you_do": "Help behind the scenes at the library. Teens shelve books, decorate the teen area and prepare craft supplies. Tasks change by session.",
+  "min_age": 12,
+  "max_age": 18,
+  "who_can_apply": "Teens ages 12 to 18. A parent or guardian must sign the Teen Volunteer Permission Form.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid.",
+  "season": "school-year",
+  "duration": "One session of 2 hours (1 to 3 pm) on the first Saturday of each month, October to May.",
+  "status": "rolling",
+  "deadline_text": "Register for each session. Upcoming dates on the page: Nov 7, Dec 5, Jan 2, Feb 6, Mar 6, Apr 3 and May 1. Locations switch between the Main Library and the Dr. James Carlson Library.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Register for each session at programregistration.library.fargond.gov or call 701.241.1495. Bring the signed permission form to your first session. The form is on the City of Fargo website.",
+  "url": "https://www.fargond.gov/city-government/departments/library/teens",
+  "sources_fetched": [
+    "https://www.fargond.gov/city-government/departments/library/teens"
+  ],
+  "priority": 2,
+  "notes": "The page lists the month and day for each session but not the year. A good fit for a first volunteer experience; no commitment beyond a single session.",
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "deadline_iso": null
+}

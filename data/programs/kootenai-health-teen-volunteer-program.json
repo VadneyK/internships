@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": 14,
+  "max_age": 17,
+  "needs_work_permit": false,
+  "priority": 1,
+  "fields": [
+    "health"
+  ],
+  "id": "kootenai-health-teen-volunteer-program",
+  "name": "Teen Volunteer Program",
+  "org": "Kootenai Health",
+  "regions": [
+    "idaho"
+  ],
+  "city": "Coeur d'Alene, ID",
+  "type": "volunteer",
+  "what_you_do": "Volunteer in a hospital. You get experience in a real health care workplace.",
+  "who_can_apply": "Teens ages 14 to 17. Volunteers commit to a minimum of six months and 100 service hours, about four hours of service each week.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer work.",
+  "season": "year-round",
+  "duration": "At least 6 months and 100 service hours",
+  "status": "rolling",
+  "deadline_text": "No deadline stated. Applications may be kept on file up to six months if there is no opening yet.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the Teen Volunteer Program application on the Kootenai Health volunteer page. Then wait to hear from them if there is an opening. Phone (208) 625-4645 or email volunteerservices@kh.org.",
+  "url": "https://www.kh.org/volunteer-services/",
+  "notes": "The page says volunteer roles do not include internships or clinical shadowing. Volunteer office hours are Monday to Friday, 8 a.m. to 4 p.m.",
+  "sources_fetched": [
+    "https://www.kh.org/volunteer-services/"
+  ]
+}

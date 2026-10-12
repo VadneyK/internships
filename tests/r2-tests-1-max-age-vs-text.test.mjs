@@ -19,6 +19,7 @@ const TOLERANCE = 1; // used only when the text has "under N" wording (see below
 // id -> one-line reason the card is legitimately different. Reviewed by the lead; empty on
 // first run. The test prints the unreviewed cases so they can be fixed or allow-listed.
 const ALLOW = {
+  "omaha-public-library-youth-volunteer": "No upper age limit: the library takes volunteers age 11 and older. The 11 to 18 range is only the group that needs a parent or guardian to approve.",
   "columbus-metro-parks-volunteer": "No upper age limit: most assignments are 16 and up, and the 11 to 15 range is only the Inniswood Metro Gardens junior option.",
   "wisconsin-wing-civil-air-patrol-cadets": "The two sources disagree (12 to 19 on the wing site, 12 to 18 on the national page). max_age 18 is the national page and the text names both.",
   "youth-uprising-summer-jobs": "max_age 21 is the summer jobs list for ages 14 to 21. The 13 to 24 range is the whole organization, not the summer jobs.",

@@ -23,15 +23,16 @@ const GROUPS = [
 // Path (from the repo root) to { ceiling: bytes on disk, reason }.
 // Ceilings are today's size on 2026-10-10 rounded up to 100 bytes, plus about 10 percent.
 const TABLE = {
+  // 2026-10-12: +77 Plains state cards (2,291 programs). Raised: entries-core 405100 to 414000 (413,887 bytes), entries-detail 1673600 to 1693000 (1,692,808), entries-lite 2131300 to 2173000 (2,172,802), entries-stats 667500 to 682000 (681,806), entries.json 4396300 to 4465000 (4,464,728).
   "data/calendar.json": { ceiling: 15700, reason: "data file, 14265 bytes measured 2026-10-10" },
   "data/employers.json": { ceiling: 149800, reason: "data file, 136131 bytes measured 2026-10-10" },
   "data/entries-cal.json": { ceiling: 72600, reason: "data file, 65976 bytes measured 2026-10-10" },
-  "data/entries-core.json": { ceiling: 405100, reason: "data file, 368201 bytes measured 2026-10-10" },
-  "data/entries-detail.json": { ceiling: 1673600, reason: "data file, 1521373 bytes measured 2026-10-10" },
+  "data/entries-core.json": { ceiling: 414000, reason: "data file, 368201 bytes measured 2026-10-10" },
+  "data/entries-detail.json": { ceiling: 1693000, reason: "data file, 1521373 bytes measured 2026-10-10" },
   "data/entries-home.json": { ceiling: 899400, reason: "data file, 817599 bytes measured 2026-10-10" },
-  "data/entries-lite.json": { ceiling: 2131300, reason: "data file, 1937500 bytes measured 2026-10-10" },
-  "data/entries-stats.json": { ceiling: 667500, reason: "data file, 606782 bytes measured 2026-10-10" },
-  "data/entries.json": { ceiling: 4396300, reason: "data file, 3996617 bytes measured 2026-10-10" },
+  "data/entries-lite.json": { ceiling: 2173000, reason: "data file, 1937500 bytes measured 2026-10-10" },
+  "data/entries-stats.json": { ceiling: 682000, reason: "data file, 606782 bytes measured 2026-10-10" },
+  "data/entries.json": { ceiling: 4465000, reason: "data file, 3996617 bytes measured 2026-10-10" },
   "data/expiring-dates.json": { ceiling: 1700, reason: "data file, 1530 bytes measured 2026-10-10" },
   "data/gaps.json": { ceiling: 5400, reason: "data file, 4832 bytes measured 2026-10-10" },
   "data/interview.json": { ceiling: 12400, reason: "data file, 11207 bytes measured 2026-10-10" },

@@ -1,0 +1,40 @@
+{
+  "id": "omaha-public-library-youth-volunteer",
+  "name": "Omaha Public Library Volunteer (youth ages 11 to 18)",
+  "org": "Omaha Public Library",
+  "regions": [
+    "nebraska"
+  ],
+  "city": "Omaha, NE",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "any"
+  ],
+  "what_you_do": "Volunteers help with library programs and special events. They gain skills like teaching, teamwork and leadership.",
+  "min_age": 11,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Anyone age 11 or older. Youth ages 11 to 18 need a parent or legal guardian to approve. The page does not list a city or school rule.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. The library says it can provide volunteer hours for court-related community service.",
+  "season": "year-round",
+  "duration": "Short-term or ongoing, depending on the task",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Applications are accepted all year.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the online volunteer form. There is one form for Central Library and another for all other branches. Youth and summer reading volunteers need a parent or guardian signature before starting.",
+  "needs_work_permit": false,
+  "url": "https://omahalibrary.org/volunteer/",
+  "apply_url": "https://forms.gle/9M6sWxetru6J8i258",
+  "sources_fetched": [
+    "https://omahalibrary.org/volunteer/",
+    "https://omahalibrary.org/policies/volunteer-policy/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 1,
+  "notes": "The library says it may not be able to place each applicant. It has the right to reject any application without reason. It reserves the right to do a background check or check references. Quote from the volunteer policy: OPL accepts volunteers ages 11 and older. The Central Library has its own volunteer form. It is linked on the volunteer page."
+}

@@ -1,0 +1,41 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": 15,
+  "max_age": null,
+  "needs_work_permit": null,
+  "priority": 1,
+  "fields": [
+    "sports",
+    "food-hospitality"
+  ],
+  "id": "boise-parks-recreation-pool-lifeguards",
+  "name": "Outdoor Pool Lifeguards and Summer Pool Jobs",
+  "org": "City of Boise Parks and Recreation",
+  "regions": [
+    "idaho"
+  ],
+  "city": "Boise, ID",
+  "type": "paid-youth-program",
+  "what_you_do": "Take a city lifeguard course. Then work at one of four outdoor pools. They are Borah, Fairmont, Ivywild and the Natatorium.",
+  "who_can_apply": "You must be at least 15 before the last class session. On day one you must pass two swim tests: a swim-tread-swim sequence without stopping to rest, and a timed event within 1 minute, 40 seconds. The city-run lifeguard classes are for current and future City of Boise employees only.",
+  "paid_type": "paid",
+  "pay_detail": "Not stated on the program page.",
+  "season": "summer",
+  "duration": "Summer pool season; classes in winter and spring",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Class information for the 2027 season will be updated and available for registration in early December (the year is not stated on the program page). The page said job postings for Summer 2026 were open; check the city job postings for current openings.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply for the pool job on the city job postings. The link is on the Pools and Aquatics page. Then register for a city lifeguard course. The page says other lifeguard classes listed on it are open to the public.",
+  "url": "https://www.cityofboise.org/departments/parks-and-recreation/activities-classes-and-sports/teen/lifeguarding/",
+  "sources_fetched": [
+    "https://www.cityofboise.org/departments/parks-and-recreation/activities-classes-and-sports/teen/lifeguarding/",
+    "https://www.cityofboise.org/departments/parks-and-recreation/pools-aquatics/",
+    "https://www.cityofboise.org/departments/parks-and-recreation/teen-activities/"
+  ],
+  "notes": "The Teen Activities page also lists summer jobs at pools and playcamps. They hire ages 15 and up, and rides are provided. It also lists a Youth Employment Program for grades 9 to 12. That one hires ages 14 and up. The pages give no details."
+}

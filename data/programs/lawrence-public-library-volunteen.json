@@ -1,0 +1,39 @@
+{
+  "id": "lawrence-public-library-volunteen",
+  "name": "VolunTeens (grades 7 to 12)",
+  "org": "Lawrence Public Library",
+  "regions": [
+    "kansas"
+  ],
+  "city": "Lawrence, KS",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "any"
+  ],
+  "what_you_do": "VolunTeens shelve books in a one-hour weekly shift for a semester, or help with youth summer reading programs in the summer. You learn job skills at your favorite library.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "7-12",
+  "who_can_apply": "Students in grades 7 to 12. Adults 18 and over use a different application. The library says it does not offer community service hours at this time.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "school-year",
+  "duration": "One-hour shift each week, evenings and weekends, for a semester (option to extend)",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The fall semester VolunTeen application is closed. The page says to check back in December for the spring semester application.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the VolunTeen application when it opens. Then go to a one-hour new volunteer orientation, a 15-minute interview, and a 1.5-hour training shift with a mentor. Questions go to the Teen Librarian at the email on the page.",
+  "needs_work_permit": false,
+  "url": "https://lplks.org/volunteer/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://lplks.org/volunteer/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 2,
+  "notes": "Quote from the page: we do not offer community service opportunities at this time. So this is not for court or school-required hours. There is also a VolunTeen Youth Program Assistant (Summer) position."
+}

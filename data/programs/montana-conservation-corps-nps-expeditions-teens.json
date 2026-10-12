@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": 14,
+  "max_age": 18,
+  "needs_work_permit": false,
+  "priority": 1,
+  "fields": [
+    "environment"
+  ],
+  "id": "montana-conservation-corps-nps-expeditions-teens",
+  "name": "National Park Service Expeditions (Youth Program)",
+  "org": "Montana Conservation Corps",
+  "regions": [
+    "montana"
+  ],
+  "city": "Bozeman and Kalispell, MT (Yellowstone and Glacier)",
+  "type": "volunteer",
+  "what_you_do": "Montana teens join a 9-day camping crew in Glacier or Yellowstone National Park. They do hands-on conservation projects.",
+  "who_can_apply": "Montana teens ages 14 to 18. You must live in Montana. Teens from other states will not be considered.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer crew. $100 service award and up to 64 service hours on successful completion. The program is free to join.",
+  "season": "summer",
+  "duration": "9-day sessions",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications are closed for 2026. 2027 youth program applications typically open in February. The page does not state a 2027 deadline.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Online application filled out by the teen and a parent or guardian. The parent or guardian must sign a Youth Program Release form that is emailed after you submit. Email youthprograms@mtcorps.org with questions.",
+  "url": "https://www.mtcorps.org/joinmcc/youth/national-park-service-expeditions.html",
+  "sources_fetched": [
+    "https://www.mtcorps.org/joinmcc/youth/",
+    "https://www.mtcorps.org/joinmcc/youth/national-park-service-expeditions.html",
+    "https://www.mtcorps.org/joinmcc/youth/frequently-asked-questions.html"
+  ],
+  "notes": "Yellowstone sessions leave from Bozeman and Glacier sessions leave from Kalispell. Next dates not posted yet."
+}

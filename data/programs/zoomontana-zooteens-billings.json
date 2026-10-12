@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": 15,
+  "max_age": 18,
+  "needs_work_permit": null,
+  "priority": 2,
+  "fields": [
+    "environment",
+    "education"
+  ],
+  "id": "zoomontana-zooteens-billings",
+  "name": "ZooTeens",
+  "org": "ZooMontana",
+  "regions": [
+    "montana"
+  ],
+  "city": "Billings, MT",
+  "type": "volunteer",
+  "what_you_do": "Go to a training session with a hands-on animal encounter. Then help zoo education staff run at least one five-day children's summer camp.",
+  "who_can_apply": "Teens ages 15 to 18 at the time of their orientation session. You must be able to attend one weekend orientation.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page (the page describes it as a chance to learn job skills and leadership).",
+  "season": "summer",
+  "duration": "One orientation plus at least one five-day camp",
+  "status": "unconfirmed",
+  "deadline_text": "Not stated on the program page. The page gives no year or deadline.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Teens or parents can ask for information. To do that, send an email to the zoo. The address is education@zoomontana.org.",
+  "url": "https://www.zoomontana.org/zoomontana-teen-camp",
+  "notes": "The page does not say what year it is for. Email the zoo to ask when the next orientation is.",
+  "sources_fetched": [
+    "https://www.zoomontana.org/zoomontana-teen-camp"
+  ]
+}

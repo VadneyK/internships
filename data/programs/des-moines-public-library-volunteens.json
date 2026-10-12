@@ -1,0 +1,39 @@
+{
+  "id": "des-moines-public-library-volunteens",
+  "name": "Des Moines Public Library VolunTeens",
+  "org": "Des Moines Public Library",
+  "regions": [
+    "iowa"
+  ],
+  "city": "Des Moines, IA",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "what_you_do": "Help the Youth Services Librarians at your local branch. Teens help at kids' events and sign kids and teens up for Summer Reading. They also prepare crafts for storytimes and make displays.",
+  "min_age": 12,
+  "max_age": 18,
+  "who_can_apply": "Teens ages 12 to 18.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Teens earn volunteer hours.",
+  "season": "year-round",
+  "duration": "No set hours on the page. Work happens during the school year and for the Summer Reading Program.",
+  "status": "rolling",
+  "deadline_text": "No deadline posted on the program page.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the teen volunteer application and a waiver signed by a parent or guardian, in pen. Turn them in at your local Des Moines library. The volunteer leader will contact you. Summer volunteers must also go to a summer orientation session.",
+  "url": "https://www.dmpl.org/volunteer",
+  "sources_fetched": [
+    "https://www.dmpl.org/volunteer",
+    "https://www.dmpl.org/event/summer-volunteen-orientation-103035"
+  ],
+  "priority": 2,
+  "notes": "The orientation event program page was from May 2025 and has already happened. Check with your branch for the next orientation date. The page does not name which branches take teens.",
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "deadline_iso": null
+}

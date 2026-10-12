@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": 15,
+  "max_age": 18,
+  "needs_work_permit": null,
+  "priority": 1,
+  "fields": [
+    "environment"
+  ],
+  "id": "yellowstone-national-park-youth-conservation-corps",
+  "name": "Yellowstone Youth Conservation Corps (YCC)",
+  "org": "National Park Service, Yellowstone National Park",
+  "regions": [
+    "wyoming",
+    "national"
+  ],
+  "city": "Yellowstone National Park",
+  "type": "paid-youth-program",
+  "what_you_do": "A month-long paid program where teens work 40 hours a week in Yellowstone National Park.",
+  "who_can_apply": "Ages 15 to 18. You must be a US citizen or permanent resident with a valid Social Security number. Teens are picked randomly from across the country, so you do not have to live in Wyoming.",
+  "paid_type": "paid",
+  "pay_detail": "$10.50 an hour for 40 hours a week, with a small food charge (about $3 a day).",
+  "season": "summer",
+  "duration": "1 month (2026 sessions: June 14 to July 15 and July 19 to August 18)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The 2026 application period is closed (applicants were told their status by April 7, 2026). 2027 dates are not posted yet.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply through the YCC page on the Yellowstone park website when the window opens. Selection is random. Questions: phone 307-344-7381.",
+  "url": "https://www.nps.gov/yell/learn/management/yccjobs.htm",
+  "sources_fetched": [
+    "https://www.nps.gov/yell/learn/management/yccjobs.htm",
+    "https://www.nps.gov/yell/learn/news/24002.htm"
+  ],
+  "notes": "Wage and dates above are from the 2026 page. Teen enrollees are randomly selected from across the country."
+}

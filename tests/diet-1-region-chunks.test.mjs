@@ -194,7 +194,7 @@ for (const [label, search] of SAMPLES) {
       assert.deepEqual(dataPaths(seenB).filter((p) => p === "data/entries-lite.json"), ["data/entries-lite.json"], "fallback requests the whole lite file");
       assert.deepEqual(snapA, snapB);
       assert.ok(snapA.places.length > 50 && /\(\d+\)|none yet/.test(snapA.places[5]), "the place list is filled with counts");
-      assert.match(snapA.count, /of 2214 programs$/);
+      assert.match(snapA.count, /of 2291 programs$/); // 2026-10-12: +77 Plains state cards (2,291 programs)
       assert.deepEqual(a.errors, []);
       assert.deepEqual(b.errors, []);
     } finally { a.window.close(); b.window.close(); }
@@ -227,7 +227,7 @@ test("a failing chunk falls back to the whole lite file and the page still works
   const { window, document, errors } = await loadPage("find.html", { search: "?at=city:boston", now: NOW, fetchLog: seen, fetchFail: /\/data\/lite\/shared\.json/ });
   const got = dataPaths(seen);
   assert.ok(got.includes("data/entries-lite.json"), got.join());
-  assert.match(document.getElementById("count").textContent, /of 2214 programs$/);
+  assert.match(document.getElementById("count").textContent, /of 2291 programs$/); // 2026-10-12: +77 Plains state cards (2,291 programs)
   assert.ok(document.querySelectorAll("#out article.prog").length > 0);
   assert.deepEqual(errors, []);
   window.close();
@@ -281,7 +281,7 @@ test("an area chip, clearing the place, or a search loads the whole lite file an
     const { window, document } = await loadPage("find.html", { search: "?at=city:boston", now: NOW, fetchLog: seen });
     document.getElementById("reset").click();
     assert.ok(await poll(() => dataPaths(seen).includes("data/entries-lite.json")), "the whole file is requested");
-    assert.ok(await poll(() => document.querySelector("#count").textContent.startsWith("2214 of")));
+    assert.ok(await poll(() => document.querySelector("#count").textContent.startsWith("2291 of"))); // 2026-10-12: +77 Plains state cards (2,291 programs)
     const want = await reference("");
     assert.deepEqual({ ...snapshot(document), sortNote: 0 }, { ...want, sortNote: 0 });
     window.close();
@@ -368,9 +368,10 @@ const raw = (f) => fs.statSync(path.join(ROOT, f)).size;
 // Measured 2026-10-12 (raw bytes on disk, gzip level 9). Ceilings are the measured size rounded up to 1000.
 const BUDGET = {
   // Before this change every one of these loaded entries-lite.json: 2,101,411 bytes raw, 437,338 gzipped.
-  "?at=city:san-francisco": { raw: 1126000, gzip: 186000, label: "a Bay Area city" },
-  "?at=city:boston": { raw: 1017000, gzip: 163000, label: "Boston" },
-  "?at=state:nebraska": { raw: 713000, gzip: 101000, label: "a Plains state" },
+  // 2026-10-12: +77 Plains state cards (2,291 programs). The stats file and the shared file grew with the new cards. Raised: a Bay Area city raw 1126000 to 1150000, gzip 186000 to 190000; Boston raw 1017000 to 1041000, gzip 163000 to 167000; a Plains state raw 713000 to 807000, gzip 101000 to 120000.
+  "?at=city:san-francisco": { raw: 1150000, gzip: 190000, label: "a Bay Area city" },
+  "?at=city:boston": { raw: 1041000, gzip: 167000, label: "Boston" },
+  "?at=state:nebraska": { raw: 807000, gzip: 120000, label: "a Plains state" },
 };
 for (const [search, b] of Object.entries(BUDGET)) {
   test("first-load data bytes for " + b.label + " stay under the pinned budget and far under the whole lite file", async () => {

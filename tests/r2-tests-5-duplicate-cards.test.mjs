@@ -55,6 +55,11 @@ const NAME_REGION_ALLOW = new Map([
 // Shared url -> the exact ids that share it today. Starts from the 23 urls used by more than one card
 // (url or apply_url), as found in data/programs on 2026-10-10.
 const SHARED_URL_ALLOW = new Map([
+  // Added 2026-10-12 for the 77 Plains state cards.
+  ["https://apply2.ksu.edu/register/summerprogramshhs2027", {
+    ids: ["manhattan-ks-k-state-health-professions-exploration-program", "manhattan-ks-k-state-summer-fashion-institute"],
+    reason: "Shared hub: one official K-State 2027 interest list is where both College of Health and Human Sciences camps send you.",
+  }],
   // Added 2026-10-11 for ticket p7-regions-1.
   ["https://nwyouthcorps.workbrightats.com/pages/opportunitiesbycategory/", {
     ids: ["eugene-nyc-youth-camping-conservation-crews", "eugene-nyc-youth-urban-community-forestry-crews", "portland-nyc-youth-community-crews"],

@@ -1,0 +1,39 @@
+{
+  "id": "topeka-shawnee-county-public-library-teen-volunteer",
+  "name": "Library Volunteer and Teen Volunteer",
+  "org": "Topeka and Shawnee County Public Library",
+  "regions": [
+    "kansas"
+  ],
+  "city": "Topeka, KS",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "any"
+  ],
+  "what_you_do": "Volunteers help at library events. They help with crafts or storytelling for kids. They also do clerical work, help in the Friends Booktique and book sale, and greet visitors. The page also lists a Teen Volunteer path for learning job skills.",
+  "min_age": 13,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Volunteers must be at least 13 years old or accompanied by an adult while on duty.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline stated. The library keeps an application on file for 30 days; apply again if you have not heard back.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the volunteer application on the library website. You may be interviewed. Volunteers are chosen by their qualifications. The library's needs at the time also count. Call or email the volunteer contact listed on the page with questions.",
+  "needs_work_permit": false,
+  "url": "https://tscpl.org/support-us/volunteer-at-the-library",
+  "apply_url": "https://tscpl.org/support-us/volunteer-application",
+  "sources_fetched": [
+    "https://tscpl.org/support-us/volunteer-at-the-library"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 2,
+  "notes": "Quote from the volunteer policy: Volunteers must be at least 13 years old or accompanied by an adult while on duty. The page links to a separate Teen Volunteer path. This card does not cover it in detail."
+}

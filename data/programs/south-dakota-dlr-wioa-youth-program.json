@@ -1,0 +1,39 @@
+{
+  "id": "south-dakota-dlr-wioa-youth-program",
+  "name": "South Dakota WIOA Title I Youth Program",
+  "org": "South Dakota Department of Labor and Regulation",
+  "regions": [
+    "south-dakota"
+  ],
+  "city": "Statewide, SD",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Eligible teens meet a state staff member, take an assessment and make an employment plan. The state then gives youth job services. The program page does not list the services.",
+  "min_age": 14,
+  "max_age": 24,
+  "who_can_apply": "Ages 14 to 24 and allowed to work in the US. Live in South Dakota or a nearby county. In-school youth ages 14 to 21 must be low-income and have a barrier such as basic skills deficient, English learner, homeless, in foster care, pregnant or parenting, or have a disability. Out-of-school youth must be 16 to 24.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program pages. The manual says the program is not an entitlement and depends on funding.",
+  "season": "year-round",
+  "duration": "Not stated on the program page.",
+  "status": "rolling",
+  "deadline_text": "No deadline posted on the program pages.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Call 605-773-3101 (TTY 711) to ask where to start. Under 18, a parent or guardian must sign the application forms.",
+  "url": "https://dlr.sd.gov/workforce_services/wioa/default.aspx",
+  "sources_fetched": [
+    "https://dlr.sd.gov/workforce_services/wioa/wioa_manual/4.3_eligibility_youth.pdf",
+    "https://dlr.sd.gov/workforce_services/wioa/default.aspx",
+    "https://dlr.sd.gov/workforce_services/youth/default.aspx"
+  ],
+  "priority": 3,
+  "notes": "Narrow: not every teen qualifies. The state may limit how many in-school youth it enrolls because at least 75 percent of funds go to out-of-school youth. Rules are from the state WIOA manual, section 4.1, revised October 2026. The state says all Title I youth also sign up for Wagner-Peyser job services. The manual also lists Selective Service registration rules (policy 4.6) that this card does not cover.",
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "deadline_iso": null
+}

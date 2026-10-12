@@ -1211,6 +1211,83 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "altru-health-grand-forks-junior-volunteers",
+  "name": "Altru Health System Junior Volunteer Program",
+  "org": "Altru Health System",
+  "regions": [
+   "north-dakota"
+  ],
+  "city": "Grand Forks, ND",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Volunteer in the health system and see health jobs up close. You get an orientation and on-the-job experience.",
+  "min_age": 14,
+  "who_can_apply": "School year: students who have started 10th grade or are at least 16. Summer: students at least 14.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid.",
+  "season": "year-round",
+  "duration": "At least one shift a week, 2 to 4 hours, for at least one semester.",
+  "status": "rolling",
+  "deadline_text": "No deadline posted on the program page.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the online Junior Application. Contact Chasity Drees. Chasity Drees is the Volunteer Coordinator. Email cdrees@altru.org. Or call 701.780.5125.",
+  "url": "https://altru.org/about-us/support-altru/altrus-volunteer-services",
+  "apply_url": "https://www.volgistics.com/appform/662733613",
+  "sources_fetched": [
+   "https://altru.org/about-us/support-altru/altrus-volunteer-services"
+  ],
+  "priority": 2,
+  "notes": "The page does not mention shots or background checks. Ask the coordinator what is needed before you start.",
+  "grades": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "max_age": null,
+  "deadline_iso": null,
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "ames-iowa-state-rise-with-wise-summer",
+  "name": "Iowa State RISE with WiSE Summer Experience",
+  "org": "Program for Women in Science and Engineering, Iowa State University",
+  "regions": [
+   "iowa"
+  ],
+  "city": "Ames, IA",
+  "type": "pre-college",
+  "fields": [
+   "engineering",
+   "science"
+  ],
+  "what_you_do": "A one week stay on the Iowa State campus. Pick one of two hands-on STEM tracks, Engineering or Life Sciences, taught by faculty, staff and students. You also get a taste of college life.",
+  "grades": "Rising 11 and 12",
+  "who_can_apply": "High school students entering their junior or senior year. The page says 'All students are welcome.'",
+  "paid_type": "fee-based",
+  "pay_detail": "The page lists $450 through June 26 or $500 for late registration (this may be last year's price). It covers housing, meals, a t-shirt and on-campus costs. You can ask for financial help on the registration form.",
+  "season": "summer",
+  "duration": "One week. Tentative 2027 sessions: July 11 to 15 and July 18 to 22.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications open in January, per the page. The page gives no year and no closing date. It does not say if the $450 price applies to 2027.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the Summer 2027 Interest Form on the page. It tells you when applications open. Then register online. You ask for financial help on the registration form.",
+  "url": "https://www.wise.iastate.edu/rise-wise",
+  "sources_fetched": [
+   "https://www.wise.iastate.edu/rise-wise"
+  ],
+  "priority": 2,
+  "notes": "The page only says applications open 'in January'. No exact opening day is known. Dates are marked tentative on the page.",
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "max_age": null,
+  "min_age": null,
+  "deadline_iso": null,
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
   "id": "anderson-humane-teen-volunteers-school-service",
   "grades": null,
   "apply_url": null,
@@ -5520,6 +5597,87 @@
   "verified_on_label": "Oct 7, 2026"
  },
  {
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": null,
+  "max_age": null,
+  "needs_work_permit": false,
+  "priority": 3,
+  "fields": [
+   "education",
+   "social-impact"
+  ],
+  "id": "billings-public-library-teen-advisory-board",
+  "name": "Teen Advisory Board (TAB)",
+  "org": "Billings Public Library",
+  "regions": [
+   "montana"
+  ],
+  "city": "Billings, MT",
+  "type": "leadership",
+  "what_you_do": "Teens meet twice a month to brainstorm ideas, plan programs and help improve the library for teens.",
+  "who_can_apply": "Teens. Age or grade rules are not stated on the program page.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page.",
+  "season": "school-year",
+  "duration": "School year (2026-2027), meeting the first and third Wednesday of each month at 4:30 p.m. in the CO+LAB",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications for 2026-2027 were due September 1, 2026. Next year's date is not posted yet.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply through the library's Teen Advisory Board page. The page says to contact hoys@billingsmt.gov for more information. The main library phone is 406-657-8258.",
+  "url": "https://billingslibrary.org/536/Teen-Advisory-Board",
+  "sources_fetched": [
+   "https://billingslibrary.org/536/Teen-Advisory-Board",
+   "https://billingslibrary.org/315/Volunteering"
+  ],
+  "notes": "The library's volunteering page says no new volunteers are being taken now. Ask if they take late applications.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "bismarck-parks-recreation-district-teen-jobs",
+  "name": "Bismarck Parks and Recreation District Part-Time Jobs for Ages 14 and 15+",
+  "org": "Bismarck Parks and Recreation District",
+  "regions": [
+   "north-dakota"
+  ],
+  "city": "Bismarck, ND",
+  "type": "paid-youth-program",
+  "fields": [
+   "sports",
+   "education",
+   "health"
+  ],
+  "what_you_do": "Part-time jobs. Open to 14 year olds. Youth basketball official, ice arena attendant, open gym supervisor and youth tennis instructor. Open to 15 year olds. Lifeguard, swim lesson instructor, after-school BLAST leader and youth basketball coach.",
+  "min_age": 14,
+  "who_can_apply": "Each job lists its own minimum age, 14 or 15. Lifeguards need Lifeguard, First Aid and CPR certification. The page says 'FREE training if you join our team!'",
+  "paid_type": "paid",
+  "pay_detail": "Paid. Pay rates are not listed on the program page. Employees get a benefits pass for golf, pool and fitness.",
+  "season": "year-round",
+  "duration": "Varies. Youth basketball runs Oct 26 to Jan 16. Open Gym Supervisor is Nov to March on weekend afternoons. BLAST leader is 15 to 20 hours a week after school. Arena attendant is 25 to 30 hours a week.",
+  "status": "rolling",
+  "deadline_text": "No application deadline is listed for part-time or seasonal jobs.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the BPRD Job Application PDF in Adobe Reader (not in your web browser). Lifeguards also fill out the Aquatic Application Supplement Form. Email to jobs@bisparks.org or drop off or mail to 400 E. Front Ave., Bismarck, ND 58504.",
+  "url": "https://www.bisparks.org/jobs/",
+  "sources_fetched": [
+   "https://www.bisparks.org/jobs/"
+  ],
+  "priority": 1,
+  "notes": "The page lists the season dates without a year. Park maintenance and some other jobs are for older workers. North Dakota work rules for minors were not checked.",
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "max_age": null,
+  "deadline_iso": null,
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
   "id": "black-girls-code",
   "name": "Black Girls Code Workshops",
   "org": "Black Girls Code",
@@ -6358,6 +6516,46 @@
   "priority": 3,
   "notes": "Costs money and is a camp, not a job. The pages are partly out of date (they mention the 2025 application), so check the newest page and confirm dates with the program. The Virginia Tech C-Tech2 camp has its own card in this guide.",
   "verified_on_label": "Oct 10, 2026"
+ },
+ {
+  "id": "blank-park-zoo-zoo-crew-teen-volunteers",
+  "name": "Zoo Crew Teen Volunteers at Blank Park Zoo",
+  "org": "Blank Park Zoo",
+  "regions": [
+   "iowa"
+  ],
+  "city": "Des Moines, IA",
+  "type": "volunteer",
+  "fields": [
+   "environment",
+   "science"
+  ],
+  "what_you_do": "Teens volunteer in education and guest services. They help Safari camp counselors, give directions, keep the zoo clean and help at family events. First-year teens do not work directly with animals.",
+  "min_age": 13,
+  "max_age": 17,
+  "who_can_apply": "Ages 13 to 17. You must be 13 by June 1.",
+  "paid_type": "fee-based",
+  "pay_detail": "Unpaid. Teens pay a fee: $35 for zoo members or $40 for non-members. It covers a t-shirt, training and an online manual, and is due before orientation.",
+  "season": "summer",
+  "duration": "Primarily June, July and August. First-year teens must log at least 40 hours before December 31.",
+  "status": "opens-soon",
+  "opens_iso": "2027-01-01",
+  "deadline_text": "Applications for 2027 are accepted January 1, 2027 to March 1, 2027.",
+  "deadline_iso": "2027-03-01",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "The page does not describe the steps. Contact Erica Carnes at elcarnes@blankparkzoo.net or 515-974-2543. Hours count toward the Silver Cord award.",
+  "url": "https://www.blankparkzoo.com/zoocrew",
+  "sources_fetched": [
+   "https://www.blankparkzoo.com/zoocrew"
+  ],
+  "priority": 1,
+  "notes": "You and your parents choose your shifts, and once you sign up you are expected to attend. Volunteering cannot start until the fee is paid.",
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "verified_on_label": "Oct 12, 2026"
  },
  {
   "grades": null,
@@ -7770,6 +7968,87 @@
   "priority": 2,
   "notes": "Unpaid. The Become a Volunteer page says WonderCamp interns must be entering grade 9 in the fall of the next school year, while the internship page says entering grades 9 to 12; use the stricter reading (grade 9 or older) unless WonderLab says otherwise.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": 15,
+  "max_age": null,
+  "needs_work_permit": null,
+  "priority": 1,
+  "fields": [
+   "sports",
+   "food-hospitality"
+  ],
+  "id": "boise-parks-recreation-pool-lifeguards",
+  "name": "Outdoor Pool Lifeguards and Summer Pool Jobs",
+  "org": "City of Boise Parks and Recreation",
+  "regions": [
+   "idaho"
+  ],
+  "city": "Boise, ID",
+  "type": "paid-youth-program",
+  "what_you_do": "Take a city lifeguard course. Then work at one of four outdoor pools. They are Borah, Fairmont, Ivywild and the Natatorium.",
+  "who_can_apply": "You must be at least 15 before the last class session. On day one you must pass two swim tests: a swim-tread-swim sequence without stopping to rest, and a timed event within 1 minute, 40 seconds. The city-run lifeguard classes are for current and future City of Boise employees only.",
+  "paid_type": "paid",
+  "pay_detail": "Not stated on the program page.",
+  "season": "summer",
+  "duration": "Summer pool season; classes in winter and spring",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Class information for the 2027 season will be updated and available for registration in early December (the year is not stated on the program page). The page said job postings for Summer 2026 were open; check the city job postings for current openings.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply for the pool job on the city job postings. The link is on the Pools and Aquatics page. Then register for a city lifeguard course. The page says other lifeguard classes listed on it are open to the public.",
+  "url": "https://www.cityofboise.org/departments/parks-and-recreation/activities-classes-and-sports/teen/lifeguarding/",
+  "sources_fetched": [
+   "https://www.cityofboise.org/departments/parks-and-recreation/activities-classes-and-sports/teen/lifeguarding/",
+   "https://www.cityofboise.org/departments/parks-and-recreation/pools-aquatics/",
+   "https://www.cityofboise.org/departments/parks-and-recreation/teen-activities/"
+  ],
+  "notes": "The Teen Activities page also lists summer jobs at pools and playcamps. They hire ages 15 and up, and rides are provided. It also lists a Youth Employment Program for grades 9 to 12. That one hires ages 14 and up. The pages give no details.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "grades": "Incoming juniors and seniors (2027-28 school year)",
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": null,
+  "max_age": null,
+  "needs_work_permit": false,
+  "priority": 2,
+  "fields": [
+   "health"
+  ],
+  "id": "boise-state-health-sciences-camp",
+  "name": "Health Sciences Camp",
+  "org": "Boise State University College of Health Sciences",
+  "regions": [
+   "idaho"
+  ],
+  "city": "Boise, ID",
+  "type": "pre-college",
+  "what_you_do": "A 3-day camp for students who like health sciences. You stay two nights in a campus dorm.",
+  "who_can_apply": "Incoming high school juniors and seniors of the 2027-28 school year. Limited to 50 students, first come first served.",
+  "paid_type": "fee-based",
+  "pay_detail": "$395 for 2027. The page says meals, breaks and snacks are provided and students stay two nights in a dorm.",
+  "season": "summer",
+  "duration": "3 days, June 15 to 17, 2027",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Registration opens in January 2027 (no day given). Join the waitlist on the camp page for alerts.",
+  "deadline_iso": null,
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Join the waitlist on the camp page to get registration alerts. Registration opens in January.",
+  "url": "https://www.boisestate.edu/healthsciences/summer-camp/",
+  "notes": "Spots are first come, first served, so join the waitlist for alerts early.",
+  "sources_fetched": [
+   "https://www.boisestate.edu/healthsciences/summer-camp/"
+  ],
+  "verified_on_label": "Oct 12, 2026"
  },
  {
   "grades": null,
@@ -11269,6 +11548,47 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "cedar-rapids-parks-recreation-seasonal-jobs",
+  "name": "Cedar Rapids Parks and Recreation Seasonal Jobs (Lifeguard, Day Camp, Parks)",
+  "org": "City of Cedar Rapids Parks and Recreation",
+  "regions": [
+   "iowa"
+  ],
+  "city": "Cedar Rapids, IA",
+  "type": "paid-youth-program",
+  "fields": [
+   "sports",
+   "education",
+   "food-hospitality"
+  ],
+  "what_you_do": "Seasonal city jobs. Roles include lifeguard, swim instructor and pool cashier or concessions. Others are day camp counselor, youth sports staff, Old MacDonald's Farm staff, park grounds crew and golf course help.",
+  "min_age": 14,
+  "who_can_apply": "The page says many roles are open to applicants 14 years and older. Some positions need applicants to be 16 or 18 and up. Each job posting lists its own age.",
+  "paid_type": "paid",
+  "pay_detail": "Lifeguards start at $15.00 an hour. Swim lesson instructors (WSI) start at $16.00 an hour. Other pay is not listed.",
+  "season": "summer",
+  "duration": "Varies by job. The page says positions vary by age, schedule and season length.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The seasonal program page lists job fairs on Jan 30 and Feb 6 (no year shown), and says applications are taken online during the hiring season. The 2027 posting is not up yet.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online only through the city's governmentjobs.com site (CityOfCR.com/SeasonalJobs). You can apply for more than one role. Lifeguard classes run monthly through May. Questions about lifeguard age and class fees: pools@cedar-rapids.org.",
+  "url": "https://www.cedar-rapids.org/residents/parks_and_recreation/seasonal_hiring.php",
+  "sources_fetched": [
+   "https://www.cedar-rapids.org/residents/parks_and_recreation/seasonal_hiring.php",
+   "https://www.cedar-rapids.org/residents/parks_and_recreation/employment_-_aquatics.php"
+  ],
+  "priority": 1,
+  "notes": "The lifeguard age and the class fee refund are not stated on the program pages. Ask pools@cedar-rapids.org. Past job fairs were in winter, so watch the page from January. Iowa work paper rules were not checked.",
+  "grades": null,
+  "apply_url": "https://cityofcr.com/SeasonalJobs",
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "max_age": null,
+  "deadline_iso": null,
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
   "id": "cedars-sinai-teen-volunteer-program",
   "name": "Cedars-Sinai Teen Volunteer Program",
   "org": "Cedars-Sinai Medical Center Volunteer Services",
@@ -13727,6 +14047,44 @@
   "priority": 2,
   "notes": "The zoo calls the program very hard to get into. It also runs a winter session that is open to new applicants. Applications are September 1 to 10, 2026. The program runs November 14, 2026 to February 14, 2027. Contact: 719-424-7822.",
   "verified_on_label": "Oct 10, 2026"
+ },
+ {
+  "id": "chi-st-alexius-bismarck-teen-volunteers",
+  "name": "CHI St. Alexius Health Teen Volunteers (Bismarck)",
+  "org": "CHI St. Alexius Health, CommonSpirit",
+  "regions": [
+   "north-dakota"
+  ],
+  "city": "Bismarck, ND",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Teens volunteer at the hospital. They do not provide hands-on patient care.",
+  "min_age": 14,
+  "who_can_apply": "Teens must be 14 years old. The page says you will be asked to show proof of age.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid.",
+  "season": "year-round",
+  "duration": "Set hours not listed. Teen shifts are available after school, and weekend shifts vary by location.",
+  "status": "rolling",
+  "deadline_text": "No deadline posted on the program page.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Get the application on the volunteer page. It is in the Bismarck section. The Volunteer Coordinator is Tanya Olheiser. The phone number is (701) 530-7159. The email is tanya.olheiser@commonspirit.org.",
+  "url": "https://www.chistalexiushealth.org/about-us/volunteer",
+  "sources_fetched": [
+   "https://www.chistalexiushealth.org/about-us/volunteer"
+  ],
+  "priority": 2,
+  "notes": "The page does not list the service areas, shots or background checks for teens. Ask the coordinator.",
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "max_age": null,
+  "deadline_iso": null,
+  "verified_on_label": "Oct 12, 2026"
  },
  {
   "id": "chicago-adler-planetarium-astro-ambassadors",
@@ -21433,6 +21791,46 @@
   "verified_on_label": "Oct 7, 2026"
  },
  {
+  "id": "dakota-zoo-bismarck-zoo-crew",
+  "name": "Zoo Crew Teen Volunteers at Dakota Zoo",
+  "org": "Dakota Zoo",
+  "regions": [
+   "north-dakota"
+  ],
+  "city": "Bismarck, ND",
+  "type": "volunteer",
+  "fields": [
+   "environment",
+   "science",
+   "education"
+  ],
+  "what_you_do": "Teens volunteer at the zoo. Roles are Camp Mentor, Conservation Educator and Junior Zookeeper Mentor. Off-season they help with Ed-Venture Camps. They also help with Saturdays with Santa, Winter Zookeeper Camp and the Easter Egg Hunt.",
+  "min_age": 13,
+  "max_age": 17,
+  "who_can_apply": "Middle and high schoolers ages 13 to 17 as of June 1. Each member needs an individual or family zoo membership and an up-to-date tetanus shot.",
+  "paid_type": "fee-based",
+  "pay_detail": "Unpaid. Teens buy an $11 Zoo Crew t-shirt and need a zoo membership. The membership price is not listed on the program page.",
+  "season": "summer",
+  "duration": "Summer. At least 12 hours in June and July and 5 hours in August. Monthly meetings on the first Tuesday, 6 to 7 pm.",
+  "status": "unconfirmed",
+  "deadline_text": "No start date or application deadline is listed on the program page.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "To apply, call (701) 223-7543 ext. 3. Or send an email to educate@dakotazoo.org. Ask for the volunteer coordinator.",
+  "url": "https://www.dakotazoo.org/volunteers/dakota-zoo-crew",
+  "sources_fetched": [
+   "https://www.dakotazoo.org/volunteers/dakota-zoo-crew"
+  ],
+  "priority": 2,
+  "notes": "Ask the zoo when the next sign-up opens.",
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
   "id": "davis-aquatics-lifeguard-junior-swim",
   "name": "Lifeguard Training, Junior Lifeguarding and Junior Swim Instructor",
   "org": "City of Davis Aquatics",
@@ -22314,6 +22712,124 @@
   "verified_on": "2026-10-12",
   "priority": 3,
   "notes": "The page says all payments are due Dec 30, 2027, which looks like a typo for 2026. Ask Colorado 4-H. Contests also include horse hippology and horse bowl.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "des-moines-art-center-teen-arts-academy",
+  "name": "Des Moines Art Center Teen Arts Academy and Teen Clay Academy",
+  "org": "Des Moines Art Center",
+  "regions": [
+   "iowa"
+  ],
+  "city": "Des Moines, IA",
+  "type": "pre-college",
+  "fields": [
+   "arts-media"
+  ],
+  "what_you_do": "A nine month art program for high school students. Students meet once a week and build a portfolio. You can apply for the Arts Academy, the Clay Academy, or both.",
+  "grades": "9 to 12",
+  "who_can_apply": "Students currently enrolled in high school. The application asks for your grade, 9th through 12th.",
+  "paid_type": "not-stated",
+  "pay_detail": "Tuition is not listed on the program page. Ask the Studio Arts Department. The Art Center offers help with travel costs for students who need help getting to class.",
+  "season": "school-year",
+  "duration": "Nine months, once a week, following the school calendar.",
+  "status": "open-now",
+  "deadline_text": "Applications close Thursday, October 15, 2026, and Teen Academy classes begin that day.",
+  "deadline_iso": "2026-10-15",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the online application. It has six essay questions (five required). You also send a portfolio. It needs five pieces, and all five are required. Email studioclasses@desmoinesartcenter.org with questions.",
+  "url": "https://desmoinesartcenter.org/classes/arts-academy/",
+  "sources_fetched": [
+   "https://desmoinesartcenter.org/classes/arts-academy/"
+  ],
+  "priority": 2,
+  "notes": "The deadline is very close (3 days from the date this card was checked). Ask the Art Center whether late applications are taken. Not a job: this is a class and portfolio program.",
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "max_age": null,
+  "min_age": null,
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "des-moines-parks-lifeguard-class-and-seasonal-jobs",
+  "name": "Des Moines Parks and Recreation Lifeguard Class and Seasonal Jobs",
+  "org": "City of Des Moines Parks and Recreation",
+  "regions": [
+   "iowa"
+  ],
+  "city": "Des Moines, IA",
+  "type": "paid-youth-program",
+  "fields": [
+   "sports",
+   "health"
+  ],
+  "what_you_do": "Take the American Red Cross lifeguard class. Then apply for lifeguard jobs at city pools. One is the Prairie Meadows Pool at Reichardt Community Recreation Center.",
+  "min_age": 15,
+  "who_can_apply": "The lifeguard class is for ages 15 and up. The page does not state an age rule for the jobs themselves. Call the department to ask about camp staff and other seasonal jobs.",
+  "paid_type": "paid",
+  "pay_detail": "Paid jobs. Pay is not listed on the program pages. The lifeguard class costs $200, and the city refunds the $200 if you accept a job offer with the department.",
+  "season": "year-round",
+  "duration": "Lifeguard jobs at the indoor pool are year-round. The class meets Friday to Sunday.",
+  "status": "rolling",
+  "deadline_text": "Lifeguard job applications are open now with no closing date posted. The next lifeguard class on the page is Dec 4 to 6, with limited spots.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Register for the lifeguard class with the Register Here link on the city Aquatics page. Apply for jobs through the Park Jobs link on the same page. Questions: parks@dmgov.org or (515) 237-1386.",
+  "url": "https://www.dsm.city/departments/parks_recreation/aquatics/index.php",
+  "sources_fetched": [
+   "https://www.dsm.city/departments/parks_recreation/aquatics/index.php",
+   "https://www.dsm.city/departments/parks_recreation/index.php"
+  ],
+  "priority": 1,
+  "notes": "The Dec 4 to 6 class date is shown without a year on the program page. Iowa work paper rules for teens were not checked. Summer camp staff jobs may have a higher age limit, so confirm before you apply.",
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "max_age": null,
+  "deadline_iso": null,
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "des-moines-public-library-volunteens",
+  "name": "Des Moines Public Library VolunTeens",
+  "org": "Des Moines Public Library",
+  "regions": [
+   "iowa"
+  ],
+  "city": "Des Moines, IA",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "social-impact"
+  ],
+  "what_you_do": "Help the Youth Services Librarians at your local branch. Teens help at kids' events and sign kids and teens up for Summer Reading. They also prepare crafts for storytimes and make displays.",
+  "min_age": 12,
+  "max_age": 18,
+  "who_can_apply": "Teens ages 12 to 18.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Teens earn volunteer hours.",
+  "season": "year-round",
+  "duration": "No set hours on the page. Work happens during the school year and for the Summer Reading Program.",
+  "status": "rolling",
+  "deadline_text": "No deadline posted on the program page.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the teen volunteer application and a waiver signed by a parent or guardian, in pen. Turn them in at your local Des Moines library. The volunteer leader will contact you. Summer volunteers must also go to a summer orientation session.",
+  "url": "https://www.dmpl.org/volunteer",
+  "sources_fetched": [
+   "https://www.dmpl.org/volunteer",
+   "https://www.dmpl.org/event/summer-volunteen-orientation-103035"
+  ],
+  "priority": 2,
+  "notes": "The orientation event program page was from May 2025 and has already happened. Check with your branch for the next orientation date. The page does not name which branches take teens.",
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "deadline_iso": null,
   "verified_on_label": "Oct 12, 2026"
  },
  {
@@ -25829,6 +26345,84 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "fargo-park-district-lifeguard-jobs",
+  "name": "Fargo Park District Lifeguard Jobs",
+  "org": "Fargo Park District",
+  "regions": [
+   "north-dakota"
+  ],
+  "city": "Fargo, ND",
+  "type": "paid-youth-program",
+  "fields": [
+   "sports",
+   "health"
+  ],
+  "what_you_do": "Work as a lifeguard at the district's pools. Shifts are on weekdays and some weekends over the summer. You need a current American Red Cross lifeguard certificate.",
+  "min_age": 15,
+  "who_can_apply": "You must be 15 or older. You also need a current American Red Cross lifeguard certificate. The page links to upcoming classes.",
+  "paid_type": "paid",
+  "pay_detail": "$17 to $19 per hour",
+  "season": "summer",
+  "duration": "Summer. Exact start and end dates are not stated on the program page.",
+  "status": "rolling",
+  "deadline_text": "No application deadline is posted on the program page.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use the Apply Now link on the lifeguard page, which goes to the district's job portal. Questions: isinkler@fargoparks.com (Aquatics team).",
+  "url": "https://fargoparks.com/lifeguards",
+  "sources_fetched": [
+   "https://fargoparks.com/lifeguards"
+  ],
+  "priority": 1,
+  "notes": "Take the Red Cross certification class first. The page links to the class list. Fargo Park District also has other seasonal jobs and an internship program on its Employment page. North Dakota work rules for minors were not checked.",
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "max_age": null,
+  "deadline_iso": null,
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "fargo-public-library-teen-volunteers",
+  "name": "Fargo Public Library Teen Volunteer Program",
+  "org": "Fargo Public Library",
+  "regions": [
+   "north-dakota"
+  ],
+  "city": "Fargo, ND",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "social-impact"
+  ],
+  "what_you_do": "Help behind the scenes at the library. Teens shelve books, decorate the teen area and prepare craft supplies. Tasks change by session.",
+  "min_age": 12,
+  "max_age": 18,
+  "who_can_apply": "Teens ages 12 to 18. A parent or guardian must sign the Teen Volunteer Permission Form.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid.",
+  "season": "school-year",
+  "duration": "One session of 2 hours (1 to 3 pm) on the first Saturday of each month, October to May.",
+  "status": "rolling",
+  "deadline_text": "Register for each session. Upcoming dates on the page: Nov 7, Dec 5, Jan 2, Feb 6, Mar 6, Apr 3 and May 1. Locations switch between the Main Library and the Dr. James Carlson Library.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Register for each session at programregistration.library.fargond.gov or call 701.241.1495. Bring the signed permission form to your first session. The form is on the City of Fargo website.",
+  "url": "https://www.fargond.gov/city-government/departments/library/teens",
+  "sources_fetched": [
+   "https://www.fargond.gov/city-government/departments/library/teens"
+  ],
+  "priority": 2,
+  "notes": "The page lists the month and day for each session but not the year. A good fit for a first volunteer experience; no commitment beyond a single session.",
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
   "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
@@ -29054,6 +29648,45 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "grades": "Grades 6 to 12",
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": null,
+  "max_age": null,
+  "needs_work_permit": false,
+  "priority": 2,
+  "fields": [
+   "tech-cs"
+  ],
+  "id": "gallatin-college-cybersecurity-summer-initiative-camp",
+  "name": "Montana Cybersecurity Summer Initiative (CSI) Camp",
+  "org": "Gallatin College, Montana State University",
+  "regions": [
+   "montana"
+  ],
+  "city": "Bozeman, MT",
+  "type": "pre-college",
+  "what_you_do": "A day camp for Montana students. It lasts a week. You learn about cybersecurity.",
+  "who_can_apply": "Montana middle school and high school students (grades 6 to 12 in fall 2026 for the 2026 camp).",
+  "paid_type": "unpaid",
+  "pay_detail": "Free. Not a paid job.",
+  "season": "summer",
+  "duration": "1 week, 9:00 a.m. to 2:00 p.m. (2026: June 15 to 19)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "2026 camp was June 15 to 19. 2027 dates are not posted on the program page.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Use the \"Learn more & register for CSI camp\" link on the MSU Continuing Education youth page.",
+  "url": "https://eu.montana.edu/continuinged/youth/",
+  "notes": "Held at the Gallatin College East Campus IT Cybersecurity Lab in Bozeman. Camp has no cost.",
+  "sources_fetched": [
+   "https://eu.montana.edu/continuinged/youth/"
+  ],
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "id": "gcps-work-based-learning",
@@ -30557,6 +31190,127 @@
   "priority": 3,
   "notes": "Mostly fits teens 16 and up who are out of school or want a different path. Housing: dorms are listed on the campus page. A center being listed on the Job Corps site does not prove it is enrolling right now, so confirm with an Admissions Representative. The training list above comes from the center's training page and may not be complete. Whether a state work permit applies was not checked.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "grand-forks-park-district-winter-part-time-jobs",
+  "name": "Grand Forks Park District Part-Time Winter Jobs (Community Center, Warming House)",
+  "org": "Grand Forks Park District",
+  "regions": [
+   "north-dakota"
+  ],
+  "city": "Grand Forks, ND",
+  "type": "paid-youth-program",
+  "fields": [
+   "sports",
+   "any"
+  ],
+  "what_you_do": "Two part-time jobs posted now. At First Seasons Community Center you run the cash register and concessions, help customers and do light cleaning. As a warming house attendant you watch the outdoor skating rink building and enforce rink rules.",
+  "min_age": 15,
+  "who_can_apply": "The First Seasons Community Center job has a minimum age of 15. The Warming House Attendant job has a minimum age of 16.",
+  "paid_type": "paid",
+  "pay_detail": "First Seasons Community Center: $14.00 an hour to start. Warming house attendant: $12.00 an hour to start.",
+  "season": "winter",
+  "duration": "First Seasons: Saturdays 10 am to 5 pm, October to mid-April, flexible or split shifts, no evenings. Warming house: about 15 to 20 hours a week, weekdays 4 to 8 pm and weekends and holidays noon to 8 pm.",
+  "status": "unconfirmed",
+  "deadline_text": "The employment page shows Oct 1, 2026 next to both postings. It does not say if that is a closing date.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Apply online at gfparks.org/employment/apply-online/. Questions: Grand Forks Park District Human Resources, (701) 746-2750, 1060 47th Ave S.",
+  "url": "https://www.gfparks.org/employment/",
+  "apply_url": "https://www.gfparks.org/employment/apply-online/",
+  "sources_fetched": [
+   "https://www.gfparks.org/employment/",
+   "https://www.gfparks.org/first-seasons-community-center/",
+   "https://www.gfparks.org/part-time-outdoor-warming-house-attendants/"
+  ],
+  "priority": 2,
+  "notes": "Call to check these jobs are still open, because the Oct 1 date has passed. Other postings were not read, so their ages are unknown. These include skating instructor and indoor ice arena worker. Summer lifeguard jobs at Grand Forks outdoor pools are run by Choice Health & Fitness. Their current age rule is not confirmed.",
+  "grades": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "max_age": null,
+  "deadline_iso": null,
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "grand-island-nebraska-state-fair-cleaning-squad",
+  "name": "Nebraska State Fair Seasonal Job: Cleaning Squad",
+  "org": "Nebraska State Fair",
+  "regions": [
+   "nebraska"
+  ],
+  "city": "Grand Island, NE",
+  "type": "paid-youth-program",
+  "fields": [
+   "food-hospitality",
+   "any"
+  ],
+  "what_you_do": "Keep the fairgrounds tidy during the Nebraska State Fair. You are on your feet for hours and work on your own. This is the one 2026 fair job on the flyer open to age 16.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Applicants must be 16 or older for the Cleaning Squad. Most other fair jobs need 18 or more.",
+  "paid_type": "paid",
+  "pay_detail": "Rate of pay starts at $15 per hour (2026 flyer).",
+  "season": "summer",
+  "duration": "2026 fair shifts: August 28 to September 7, 2026, plus training and orientation",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "2026 shifts were August 28 to September 7, 2026. 2027 hiring not posted yet on the program page.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the employment application on the fair careers page. It is online or in PDF. You can also pick one up at the State Fair Administrative Office, 501 E Fonner Park Rd, Suite 200, Grand Island, NE 68801. Or email it to the address on the flyer.",
+  "needs_work_permit": null,
+  "url": "https://www.statefair.org/careers/",
+  "apply_url": "https://www.statefair.org/careers/#application",
+  "sources_fetched": [
+   "https://www.statefair.org/careers/",
+   "https://www.statefair.org/wp-content/uploads/2026/05/2026-Seasonal-Job-Flyer-English-Spanish.pdf"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 2,
+  "notes": "Quote from the flyer: Applicants must be 16 years of age. The online application has a Social Security No. field and asks if you are authorized to work in the United States. Whether a Nebraska work permit is needed was not stated on the program pages.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "great-plains-zoo-junior-zookeeper",
+  "name": "Great Plains Zoo Junior Zookeeper (JZK)",
+  "org": "Great Plains Zoo",
+  "regions": [
+   "south-dakota"
+  ],
+  "city": "Sioux Falls, SD",
+  "type": "volunteer",
+  "fields": [
+   "science",
+   "environment"
+  ],
+  "what_you_do": "Teens volunteer all summer at the zoo. First-year jobs are helping at ZooCamp or greeting guests and running story time. Returning teens can care for farm animals and present animals.",
+  "min_age": 13,
+  "max_age": 18,
+  "who_can_apply": "Ages 13 to 18 on June 1, 2026. Animal Care Assistants must be at least 14 and have done JZK the summer before. Advanced JZK is for returning 17 year olds.",
+  "paid_type": "fee-based",
+  "pay_detail": "Unpaid. Teens pay a fee after they are accepted: $85 for zoo members, $100 for non-members. It covers materials and two uniform t-shirts. Scholarships may be available.",
+  "season": "summer",
+  "duration": "Whole summer; the 2026 session ran through August 9. At least two half-day shifts a week.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "2026 applications closed March 6 (returning teens) and March 27 (new teens). 2027 dates are not posted. Email Education@GPZoo.org to be told when applications open.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the online application. Then go to a 20 minute in-person interview. After you are accepted, pay the fee. Give a negative TB test by orientation. Then go to orientation.",
+  "url": "https://www.greatzoo.org/junior-zookeeper/",
+  "sources_fetched": [
+   "https://www.greatzoo.org/junior-zookeeper/"
+  ],
+  "priority": 1,
+  "notes": "Teens arrange their own lunch and transportation. Contact: Education@GPZoo.org or (605) 367-7003. 2026 new teen interviews were April 11 and 12, so expect the 2027 cycle to start in winter or early spring.",
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "verified_on_label": "Oct 12, 2026"
  },
  {
   "opens_iso": null,
@@ -32965,6 +33719,165 @@
   "verified_on_label": "Oct 10, 2026"
  },
  {
+  "grades": "Grades 8 to 10",
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": null,
+  "max_age": null,
+  "needs_work_permit": false,
+  "priority": 2,
+  "fields": [
+   "law-government"
+  ],
+  "id": "idaho-4h-know-your-government-conference",
+  "name": "Know Your Government (KYG) Conference",
+  "org": "University of Idaho Extension 4-H Youth Development",
+  "regions": [
+   "idaho"
+  ],
+  "city": "Boise, ID",
+  "type": "civic-government",
+  "what_you_do": "A weekend conference in Boise. It is about how state government works. It is for 4-H youth in the Know Your Government project.",
+  "who_can_apply": "Youth in grades 8 to 10 who are enrolled in 4-H and in the Know Your Government project this year. You can attend as a delegate two years.",
+  "paid_type": "fee-based",
+  "pay_detail": "2026 delegate fee was $230. Bus transportation to Boise is provided; steering committee members and chaperones can get up to $75 in help.",
+  "season": "winter",
+  "duration": "Weekend (2027: February 13 to 15)",
+  "status": "event",
+  "deadline_text": "2027 conference is February 13 to 15. Registration opens in December (day not stated).",
+  "deadline_iso": null,
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Join 4-H and the Know Your Government project, then register online when it opens in December. Questions: Mike Knutz, mknutz@uidaho.edu.",
+  "url": "https://www.uidaho.edu/extension/4h/events/kyg",
+  "sources_fetched": [
+   "https://www.uidaho.edu/extension/4h/programs/civic-engagement",
+   "https://www.uidaho.edu/extension/4h/events/kyg"
+  ],
+  "notes": "The event page says grades 8 to 10. Ask your county 4-H office to confirm.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": 14,
+  "max_age": 17,
+  "needs_work_permit": false,
+  "priority": 1,
+  "fields": [
+   "environment",
+   "education"
+  ],
+  "id": "idaho-falls-zoo-junior-zoo-crew",
+  "name": "Junior Zoo Crew",
+  "org": "Idaho Falls Zoo at Tautphaus Park (City of Idaho Falls)",
+  "regions": [
+   "idaho"
+  ],
+  "city": "Idaho Falls, ID",
+  "type": "volunteer",
+  "what_you_do": "Join a 3-week zoo session, three days a week, from 9:00 a.m. to 3:00 p.m. in the zoo's Junior Zoo Crew program.",
+  "who_can_apply": "Teens who are at least 14 by May 31 and no older than 17 during the program. First-time applicants need a letter of recommendation (not from a family member) and an interview.",
+  "paid_type": "fee-based",
+  "pay_detail": "Registration fee of $90 per 3-week session ($72 for Tautphaus Park Zoological Society members), nonrefundable. You get a uniform shirt and zoo admission during your session.",
+  "season": "summer",
+  "duration": "3-week sessions, three days a week, 9:00 a.m. to 3:00 p.m.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications are closed for 2026. The page says applications open February 1st. In 2026 they closed April 18 at 4:00 p.m.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Submit the online application. If this is your first time, you also upload a letter of recommendation. Then you go to the zoo for an interview. If you have questions, email zooeducation@idahofallszoo.org.",
+  "url": "https://www.idahofallsidaho.gov/746/Junior-Zoo-Crew",
+  "notes": "The 2026 sessions started June 9, June 30 and July 21. Fees cannot be refunded.",
+  "sources_fetched": [
+   "https://www.idahofallsidaho.gov/746/Junior-Zoo-Crew"
+  ],
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": null,
+  "max_age": null,
+  "needs_work_permit": null,
+  "priority": 2,
+  "fields": [
+   "arts-media",
+   "education"
+  ],
+  "id": "idaho-state-museum-gem-high-school-internship",
+  "name": "GEM High School Internship",
+  "org": "Idaho State Museum (Idaho State Historical Society)",
+  "regions": [
+   "idaho"
+  ],
+  "city": "Boise, ID",
+  "type": "internship",
+  "what_you_do": "Teens meet with museum staff on Tuesday evenings. They sign up for at least 3 volunteer shifts during the program.",
+  "who_can_apply": "The program is titled a high school internship. Age or grade rules are not stated on the program page.",
+  "paid_type": "stipend",
+  "pay_detail": "$500 stipend paid in two parts (December and June), as listed for the 2025 to 2026 program.",
+  "season": "school-year",
+  "duration": "The 2025 to 2026 run was November 4, 2025 to June 16, 2026, with Tuesday meetings from 4 to 7 p.m. and at least 3 volunteer shifts",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications for 2026 to 2027 were due September 23 and group interviews were October 6 to 8. Dates for the next round are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the online application. Selected students then have a group interview. It is at the Idaho State Museum. Questions? Email shseducation@ishs.idaho.gov. Or call (208) 334-2120.",
+  "url": "https://history.idaho.gov/gem/",
+  "notes": "Pay and dates shown are from the 2025 to 2026 program details on the page; the 2026 to 2027 dates may differ. The page has an interest form for teen programs.",
+  "sources_fetched": [
+   "https://history.idaho.gov/gem/"
+  ],
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "ijag-iowa-jobs-for-americas-graduates",
+  "name": "iJAG (Iowa Jobs for America's Graduates) School Career Class",
+  "org": "Iowa Jobs for America's Graduates (iJAG)",
+  "regions": [
+   "iowa"
+  ],
+  "city": "Statewide (at certain Iowa high schools)",
+  "type": "school-pathway",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "A class at some Iowa schools. Students do projects with employers, go to career fairs and the Career Development Conference, and get mentors and work-based learning.",
+  "who_can_apply": "Your school has to offer the class. The program pages do not say which grades can join or how students are picked.",
+  "paid_type": "not-stated",
+  "pay_detail": "No cost or pay is mentioned on the program pages.",
+  "season": "school-year",
+  "duration": "A semester-based elective class.",
+  "status": "year-round",
+  "deadline_text": "No dates posted. Sign up through your school.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Check the schools list on ijag.org to see if your school offers iJAG. Questions: (515) 216-3140 or info@ijag.org.",
+  "url": "https://ijag.org/students/",
+  "sources_fetched": [
+   "https://ijag.org/students/",
+   "https://ijag.org/"
+  ],
+  "priority": 3,
+  "notes": "iJAG is not a job or internship by itself. It is a class that connects students to employers. Whether your school has it depends on your district.",
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "max_age": null,
+  "min_age": null,
+  "deadline_iso": null,
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
   "id": "illinois-4h-creative-collective-art-ambassadors",
   "grades": null,
   "min_age": 14,
@@ -34676,6 +35589,47 @@
   "verified_on_label": "Oct 11, 2026"
  },
  {
+  "id": "iowa-city-uiowa-belin-blank-sstp-research",
+  "name": "University of Iowa Secondary Student Training Program (SSTP), Summer 2027",
+  "org": "Belin-Blank Center, University of Iowa",
+  "regions": [
+   "iowa"
+  ],
+  "city": "Iowa City, IA",
+  "type": "research",
+  "fields": [
+   "science",
+   "health",
+   "engineering"
+  ],
+  "what_you_do": "Join a University of Iowa faculty member's research group. Work on a research project. If you finish, you earn 3 semester hours of college credit.",
+  "grades": "10 to 11",
+  "who_can_apply": "Students in grades 10 and 11. The page describes it as a program for advanced high school students.",
+  "paid_type": "fee-based",
+  "pay_detail": "The 2026 session fee was $7,500 (room, board, materials, activities and 3 credit hours). The 2027 fee is not confirmed on the page; the page says to check with summer@belinblank.org. Travel and personal costs are extra. Financial aid may cover up to 95 percent. There is a $95 application fee that is not refunded.",
+  "season": "summer",
+  "duration": "5.5 weeks, June 16 to July 23, 2027",
+  "status": "opens-soon",
+  "opens_iso": "2026-12-15",
+  "deadline_text": "Opens Dec 15, 2026 at 5:00 pm CST. Closes Feb 16, 2027 at 11:59 pm CST. Session June 16 to July 23, 2027.",
+  "deadline_iso": "2027-02-16",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply online. Fill in your information and pay the $95 fee. Get two letters from non-relative adults (one academic, one character). Write two essays of up to 750 words. Upload your transcript and SAT or ACT scores. Questions: summer@belinblank.org.",
+  "url": "https://belinblank.education.uiowa.edu/students/sstp/",
+  "sources_fetched": [
+   "https://belinblank.education.uiowa.edu/students/sstp/"
+  ],
+  "priority": 2,
+  "notes": "Confirm the 2027 cost with summer@belinblank.org: the page shows the $7,500 fee for the 2026 session and does not show a 2027 fee.",
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "max_age": null,
+  "min_age": null,
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
   "id": "iowa-ffa-association",
   "name": "Iowa FFA",
   "org": "Iowa FFA Association",
@@ -35416,6 +36370,45 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "job-service-north-dakota-wioa-youth-program",
+  "name": "Job Service North Dakota Youth Employment and Training Program (WIOA Youth)",
+  "org": "Job Service North Dakota",
+  "regions": [
+   "north-dakota"
+  ],
+  "city": "Statewide (offices in Fargo, Bismarck, Grand Forks and more), ND",
+  "type": "paid-youth-program",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "A case manager builds a plan with you. Help can include a tutor, GED or school help, job shadowing and career exploring. You may also get a mentor and a paid short-term work experience at a public, nonprofit or private business.",
+  "min_age": 14,
+  "max_age": 24,
+  "who_can_apply": "Ages 14 through 24 who face barriers to employment. Meeting the rules does not guarantee a spot. Funds are limited and staff pick youth who are 'most in need' and likely to succeed.",
+  "paid_type": "paid",
+  "pay_detail": "Work experience pays at least minimum wage, paid through Job Service. Pay covers up to 25 hours per week.",
+  "season": "year-round",
+  "duration": "Work experience can happen any time of year. Length is not stated.",
+  "status": "rolling",
+  "deadline_text": "No deadline stated in the handbook and brochure.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Contact a youth case manager at the nearest Job Service North Dakota office. Fargo: 1350 32nd St S, 701-239-7300, infojsfg@nd.gov. Bismarck: 1601 E Century Ave, 701-328-5000, infojsbis@nd.gov. Grand Forks: 1501 28th Ave S, 701-795-3700, infojsgf@nd.gov.",
+  "url": "https://jobsnd.com/sites/www/files/documents/jsnd-documents/Youth%20Orientation%20JSND-5058%2010.21.pdf",
+  "sources_fetched": [
+   "https://jobsnd.com/sites/www/files/documents/jsnd-documents/Youth%20Orientation%20JSND-5058%2010.21.pdf",
+   "https://www.jobsnd.com/sites/default/files/documents/jsnd-documents/Connecting%20Young%20Adults%20to%20the%20Community%20JSND-6067.pdf"
+  ],
+  "priority": 2,
+  "notes": "Not for every teen. The handbook says the program is not an entitlement. The exact list of barriers and income rules was not in the program pages, so ask the case manager. The handbook is dated 10.21 in its file name, so confirm details by phone. North Dakota work rules for minors were not checked.",
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
   "id": "john-muir-walnut-creek-high-school-volunteer",
   "name": "John Muir Health High School Student Volunteer Program (Walnut Creek Medical Center)",
   "org": "John Muir Health",
@@ -35454,6 +36447,46 @@
   "priority": 2,
   "notes": "Read on the official John Muir Health page 2026-10-07. Not stated on that page: application window or deadline, TB test or immunization requirements. It is an unpaid volunteer role, so no work permit is listed. Region is east-bay because Walnut Creek is in Contra Costa County, not Oakland. The Auxiliary at Walnut Creek Medical Center offers selective scholarships to high school seniors and college students who volunteered in this program. A separate Concord Medical Center high school program is not onboarding this summer; its page says to check back in March 2027. An older third-party listing said seniors are not accepted, which conflicts with the official page; confirm with the program before applying. Minimum age is listed as 14.5 on the page, stored here as 14.",
   "verified_on_label": "Oct 7, 2026"
+ },
+ {
+  "id": "johnson-county-library-teen-volunteer",
+  "name": "Johnson County Library Teen Volunteers",
+  "org": "Johnson County Library",
+  "regions": [
+   "kansas"
+  ],
+  "city": "Overland Park and Johnson County, KS",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "any"
+  ],
+  "what_you_do": "Teens volunteer at library branches and events. This includes summer teen volunteer jobs and teen book reviewing. You sign up for one-time, short-term or weekly spots in an online volunteer portal.",
+  "min_age": 13,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Most volunteer positions take youth 14 and older. Summer teen volunteer jobs are open to ages 13 and older as of June 1. Each job posting lists its own minimum age.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. The library records and verifies service hours weekly for schools.",
+  "season": "year-round",
+  "duration": "One-time, short-term or weekly shifts",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Sign up any time in the volunteer portal. Summer teen opportunities are posted in late April.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Register in the library's volunteer database. This is a Samaritan volunteer profile. Then sign up for an opening with the Sign Up button. If no shift is listed, the Volunteer Coordinator follows up with you.",
+  "needs_work_permit": false,
+  "url": "https://www.jocolibrary.org/become-a-volunteer/",
+  "apply_url": "https://joco.samaritan.com/custom/501/opp_search?udf565=Library",
+  "sources_fetched": [
+   "https://www.jocolibrary.org/become-a-volunteer/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 1,
+  "notes": "Quote from the page: We welcome and encourage youth volunteers 14 years and older for most volunteer positions. The page says over 900 teens through adults volunteer each year. You can also become a Swift Volunteer for last-minute needs, with no obligation.",
+  "verified_on_label": "Oct 12, 2026"
  },
  {
   "id": "junior-achievement-norcal",
@@ -36025,6 +37058,46 @@
   "priority": 2,
   "notes": "KCLS serves King County outside the city of Seattle (its branches include Maple Valley, Lake Forest Park, Newport Way and Federal Way). The Seattle Public Library volunteer page showed no current volunteer openings when read on 2026-10-09. Washington L&I says its child labor rules 'only apply to minor employees, not volunteers.'",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "kearney-unk-health-science-explorers-academy",
+  "name": "Health Science Explorers Academy",
+  "org": "University of Nebraska at Kearney Health Sciences",
+  "regions": [
+   "nebraska"
+  ],
+  "city": "Kearney, NE",
+  "type": "pre-college",
+  "fields": [
+   "health",
+   "science"
+  ],
+  "what_you_do": "A year-long program with monthly days on the UNK campus (8:30 a.m. to 3 p.m.): hands-on activities, simulations, guest speakers, field trips and health science lessons from UNK and UNMC faculty.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Incoming 11th and 12th grade",
+  "who_can_apply": "Students entering 11th or 12th grade who are interested in a health care career. Limited to 25 students.",
+  "paid_type": "fee-based",
+  "pay_detail": "$100 for the program, with financial help available. Lunch is provided. Students who finish earn a $1,000 UNK scholarship.",
+  "season": "school-year",
+  "duration": "September to May, first Wednesday of each month, 8:30 a.m. to 3 p.m.",
+  "status": "opens-soon",
+  "opens_iso": "2027-01-04",
+  "deadline_text": "Registration for the 2027-2028 school year opens January 4, 2027. Close date not stated.",
+  "deadline_iso": null,
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Register online when registration opens on January 4, 2027. Use the link on the Health Science Explorers page. Contact the coordinator listed on the page with questions.",
+  "needs_work_permit": false,
+  "url": "https://www.unk.edu/academics/health_sciences/health-science-explorers.php",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.unk.edu/academics/health_sciences/health-science-explorers.php"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 1,
+  "notes": "The same page lists a virtual Career Club for grades 9 to 12. It meets on the second Wednesday each month, 7 to 8 pm. It also lists a yearly Health Careers Fair at the Crowne Plaza in Kearney.",
+  "verified_on_label": "Oct 12, 2026"
  },
  {
   "regions": [
@@ -36709,6 +37782,45 @@
   "priority": 1,
   "notes": "Free for all programs. Workforce development programs are for ages 18 to 26, not high schoolers. Camp dates and sites for summer 2027 are not posted yet.",
   "verified_on_label": "Oct 7, 2026"
+ },
+ {
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": 14,
+  "max_age": 17,
+  "needs_work_permit": false,
+  "priority": 1,
+  "fields": [
+   "health"
+  ],
+  "id": "kootenai-health-teen-volunteer-program",
+  "name": "Teen Volunteer Program",
+  "org": "Kootenai Health",
+  "regions": [
+   "idaho"
+  ],
+  "city": "Coeur d'Alene, ID",
+  "type": "volunteer",
+  "what_you_do": "Volunteer in a hospital. You get experience in a real health care workplace.",
+  "who_can_apply": "Teens ages 14 to 17. Volunteers commit to a minimum of six months and 100 service hours, about four hours of service each week.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer work.",
+  "season": "year-round",
+  "duration": "At least 6 months and 100 service hours",
+  "status": "rolling",
+  "deadline_text": "No deadline stated. Applications may be kept on file up to six months if there is no opening yet.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the Teen Volunteer Program application on the Kootenai Health volunteer page. Then wait to hear from them if there is an opening. Phone (208) 625-4645 or email volunteerservices@kh.org.",
+  "url": "https://www.kh.org/volunteer-services/",
+  "notes": "The page says volunteer roles do not include internships or clinical shadowing. Volunteer office hours are Monday to Friday, 8 a.m. to 4 p.m.",
+  "sources_fetched": [
+   "https://www.kh.org/volunteer-services/"
+  ],
+  "verified_on_label": "Oct 12, 2026"
  },
  {
   "id": "ksu-architecture-summer-academy",
@@ -39575,6 +40687,45 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": 12,
+  "max_age": null,
+  "needs_work_permit": false,
+  "priority": 2,
+  "fields": [
+   "education"
+  ],
+  "id": "laramie-county-library-system-volunteer-cheyenne",
+  "name": "Library Volunteer Program (teens welcome from age 12)",
+  "org": "Laramie County Library System",
+  "regions": [
+   "wyoming"
+  ],
+  "city": "Cheyenne, WY",
+  "type": "volunteer",
+  "what_you_do": "Help organize materials. Help at youth, teen and adult events and special events. Other tasks are the Book Sale Room, genealogy projects and office work. Training is provided.",
+  "who_can_apply": "Volunteers must be at least 12 years old. Volunteers under 18 need a parent or guardian to sign the application.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer work.",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "year-round",
+  "deadline_text": "No deadline stated on the program page.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Complete the online volunteer application. After you apply, the Volunteer Coordinator contacts you. This takes a couple of weeks. They set up your orientation. Email volcoor@lclsonline.org. Or call 307.773.7225.",
+  "url": "https://lclsonline.org/volunteering/",
+  "notes": "The library also has a Teen Zone page. A background check is required for volunteers age 18 and older.",
+  "sources_fetched": [
+   "https://lclsonline.org/volunteering/"
+  ],
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
   "id": "larpd-summer-youth-volunteer",
   "name": "Summer Youth Volunteer Program",
   "org": "Livermore Area Recreation and Park District (LARPD)",
@@ -40015,6 +41166,126 @@
    "https://yccr.sites.unlv.edu/programs/rssc/"
   ],
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "lawrence-ku-design-camp",
+  "name": "KU Design Camp",
+  "org": "University of Kansas School of Architecture & Design",
+  "regions": [
+   "kansas"
+  ],
+  "city": "Lawrence, KS",
+  "type": "pre-college",
+  "fields": [
+   "arts-media",
+   "engineering"
+  ],
+  "what_you_do": "A week on the KU campus. You do design workshops in the morning and afternoon, such as VR and AI design, Minecraft city planning and animation. KU faculty teach them. You live in a residence hall.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Entering 10th, 11th or 12th grade",
+  "who_can_apply": "Students entering their sophomore, junior or senior year of high school who are interested in architecture or design. Priority goes to students with financial need. It also goes to students from select Kansas City and St. Louis area school districts.",
+  "paid_type": "fee-based",
+  "pay_detail": "$1,000 (housing, meals, studio fees, materials and evening activities), with a $150 deposit at registration. Fee waivers are available for a select number of students with financial need.",
+  "season": "summer",
+  "duration": "One week. 2026 dates were May 31 to June 6, 2026.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "2026 camp ran May 31 to June 6, 2026. 2027 dates are not posted on the program page.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Register online. Fee waiver applications have two short answer questions. They ask why you want to attend and what your extracurricular activities are. Ask for a fee waiver on the application if you need one.",
+  "needs_work_permit": false,
+  "url": "https://arcd.ku.edu/design-camp",
+  "apply_url": "https://go2.ku.edu/register/?id=e017048d-1faa-4b14-83dd-43390f06fc6a",
+  "sources_fetched": [
+   "https://arcd.ku.edu/design-camp"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 2,
+  "notes": "There are optional bus rides to and from Lawrence. Fee waiver recipients from Kansas City get them.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "lawrence-ku-engineering-summer-camp",
+  "name": "KU Engineering Summer Camp",
+  "org": "University of Kansas School of Engineering",
+  "regions": [
+   "kansas"
+  ],
+  "city": "Lawrence, KS",
+  "type": "pre-college",
+  "fields": [
+   "engineering",
+   "science"
+  ],
+  "what_you_do": "A week-long overnight camp at the KU School of Engineering. Campers use engineering facilities and meet faculty. They live on campus in a residence hall.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Rising 9th and 10th graders, or rising 11th and 12th graders",
+  "who_can_apply": "Rising 9th and 10th graders go to the July 11 to 16, 2027 camp. Rising 11th and 12th graders go to the July 18 to 23, 2027 camp. Everyone stays overnight in the residence hall, even if they live nearby.",
+  "paid_type": "not-stated",
+  "pay_detail": "Cost not stated on the program page",
+  "season": "summer",
+  "duration": "One week each (two camps in July 2027)",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Registration opens in February 2027 (exact day not stated). The 2027 theme will be announced soon.",
+  "deadline_iso": null,
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Register online when registration opens in February. Send questions to the camp email. It is on the page.",
+  "needs_work_permit": false,
+  "url": "https://go2.ku.edu/portal/engrsummercamp",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://go2.ku.edu/portal/engrsummercamp"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 2,
+  "notes": "The page says all students must stay overnight. Check the page for cost and the theme once posted.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "lawrence-public-library-volunteen",
+  "name": "VolunTeens (grades 7 to 12)",
+  "org": "Lawrence Public Library",
+  "regions": [
+   "kansas"
+  ],
+  "city": "Lawrence, KS",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "any"
+  ],
+  "what_you_do": "VolunTeens shelve books in a one-hour weekly shift for a semester, or help with youth summer reading programs in the summer. You learn job skills at your favorite library.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "7-12",
+  "who_can_apply": "Students in grades 7 to 12. Adults 18 and over use a different application. The library says it does not offer community service hours at this time.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "school-year",
+  "duration": "One-hour shift each week, evenings and weekends, for a semester (option to extend)",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The fall semester VolunTeen application is closed. The page says to check back in December for the spring semester application.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the VolunTeen application when it opens. Then go to a one-hour new volunteer orientation, a 15-minute interview, and a 1.5-hour training shift with a mentor. Questions go to the Teen Librarian at the email on the page.",
+  "needs_work_permit": false,
+  "url": "https://lplks.org/volunteer/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://lplks.org/volunteer/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 2,
+  "notes": "Quote from the page: we do not offer community service opportunities at this time. So this is not for court or school-required hours. There is also a VolunTeen Youth Program Assistant (Summer) position.",
+  "verified_on_label": "Oct 12, 2026"
  },
  {
   "id": "lbnl-bldap",
@@ -40667,6 +41938,130 @@
   "verified_on": "2026-10-10",
   "apply_url": null,
   "verified_on_label": "Oct 10, 2026"
+ },
+ {
+  "id": "lincoln-childrens-zoo-zoo-crew",
+  "name": "Zoo Crew (youth volunteers)",
+  "org": "Lincoln Children's Zoo",
+  "regions": [
+   "nebraska"
+  ],
+  "city": "Lincoln, NE",
+  "type": "volunteer",
+  "fields": [
+   "environment",
+   "science",
+   "education"
+  ],
+  "what_you_do": "Youth volunteers learn from zoo staff, do beginner animal care or help with summer campers, and develop life and job skills. Pick the animal care track or the education track.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Entering 7th through 12th grade in fall 2027",
+  "who_can_apply": "Students entering grades 7 to 12 in fall 2027. Past members are not guaranteed a spot back.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer program. Any cost is not stated on the program page.",
+  "season": "summer",
+  "duration": "Session dates for 2027 not stated on the program page",
+  "status": "opens-soon",
+  "opens_iso": "2026-11-02",
+  "deadline_text": "Applications open Monday, Nov 2, 2026 at 10 AM and close Friday, Feb 5, 2027 at 5 PM.",
+  "deadline_iso": "2027-02-05",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply when the window opens, choosing the Animal Care track or the Education track. Questions go to the Education Team at the number on the page.",
+  "needs_work_permit": false,
+  "url": "https://www.lincolnzoo.org/education/zoo-crew.html",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.lincolnzoo.org/education/zoo-crew.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 1,
+  "notes": "The page lists a $250 per session fee. Education track volunteers work with the summer camp program.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "lincoln-city-libraries-teen-volunteer",
+  "name": "Lincoln City Libraries Teen Volunteer (VolunTEEN and Teen Advisory Board)",
+  "org": "Lincoln City Libraries",
+  "regions": [
+   "nebraska"
+  ],
+  "city": "Lincoln, NE",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "any"
+  ],
+  "what_you_do": "Teens sort and shelve materials. They pull materials for displays, help with bulletin boards and prepare supplies for the Summer Reading Challenge. They also help at special library events. Teens can give input on library collections, spaces and events.",
+  "min_age": null,
+  "max_age": 18,
+  "grades": "Completed 5th grade through age 18",
+  "who_can_apply": "Anyone who has finished 5th grade and is under 19 (teen track). You also need approval from the City of Lincoln Human Resources Department.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Teen Advisory Board: one meeting a month, August to May. VolunTEEN: 1 to 2 times a week during Summer Reading Challenge (May, June, July). School groups: 10 hours or more in a semester.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline stated. The page says to ask the branch if it is taking new volunteers.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Download and print the Minor Volunteer Application (under age 19). Fill it out. Then contact the Volunteer Coordinator at the library branch you want. Expect a 1 to 2 week wait before you hear back.",
+  "needs_work_permit": false,
+  "url": "https://www.lincolnlibraries.org/about-us/volunteer-opportunities",
+  "apply_url": "https://www.lincolnlibraries.org/media/1t2b4hxk/minor_volunteer_application09-2025.pdf",
+  "sources_fetched": [
+   "https://www.lincolnlibraries.org/about-us/volunteer-opportunities"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 1,
+  "notes": "Library address: 136 South 14th Street, Lincoln, NE 68508. Phone 402-441-8500. Branches may not be taking new volunteers, so call first. Tasks also listed for National Honor Society and Government and Politics students needing 10 hours.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "lincoln-unl-big-red-summer-academic-camps",
+  "name": "Big Red Summer Academic Camps",
+  "org": "Nebraska Extension 4-H and University of Nebraska-Lincoln",
+  "regions": [
+   "nebraska"
+  ],
+  "city": "Lincoln, NE",
+  "type": "pre-college",
+  "fields": [
+   "engineering",
+   "arts-media",
+   "science",
+   "any"
+  ],
+  "what_you_do": "Week-long camps at UNL where you live on campus. Topics include animation, digital media and engineering. You work with university faculty. You show what you did at a capstone presentation.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Going into grades 9-12 (Engineering Camp: grades 10-12)",
+  "who_can_apply": "Students going into grades 9 to 12. The page text still says the 2026-27 school year, so check the grade rule for 2027 camps. This is not a commuter camp.",
+  "paid_type": "fee-based",
+  "pay_detail": "Tuition for the camps listed: $625 to $850 for the week (early, regular and late rates vary by camp). Housing and food are included. Scholarships are offered.",
+  "season": "summer",
+  "duration": "One week: June 6 to June 11, 2027",
+  "status": "opens-soon",
+  "opens_iso": "2026-12-18",
+  "deadline_text": "Pre-registration and priority scholarship application opens Dec 18 and closes Jan 22. Registration opens Feb 8 at 8:00 a.m. CT. Final registration deadline May 21. The page lists these dates for Big Red Camps 2027.",
+  "deadline_iso": "2027-05-21",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Pre-register by the January deadline. This helps you get priority scholarships. Then register online when registration opens in February. Space is limited. It is first come, first served, with a waitlist.",
+  "needs_work_permit": false,
+  "url": "https://4h.unl.edu/statewide-events-opportunities/big-red-summer-academic-camps/",
+  "apply_url": "https://cvent.me/Va85gM",
+  "sources_fetched": [
+   "https://4h.unl.edu/statewide-events-opportunities/big-red-summer-academic-camps/",
+   "https://4h.unl.edu/statewide-events-opportunities/big-red-summer-academic-camps/camp-sessions/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 2,
+  "notes": "Camper limits are small (15 to 20 per camp for the camps listed). The page lists the years only as 2027 in the heading, so confirm the Dec 18 and Jan 22 dates are for the 2026-27 cycle. Contact: the Big Red Camps email on the page.",
+  "verified_on_label": "Oct 12, 2026"
  },
  {
   "id": "livermore-area-youth-advisory-commission",
@@ -43598,6 +44993,85 @@
   "verified_on_label": "Oct 7, 2026"
  },
  {
+  "id": "manhattan-ks-k-state-health-professions-exploration-program",
+  "name": "Health Professions Exploration Program",
+  "org": "Kansas State University College of Health and Human Sciences",
+  "regions": [
+   "kansas"
+  ],
+  "city": "Manhattan, KS",
+  "type": "pre-college",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "A week on the K-State campus. You meet health care professionals, faculty and students and try hands-on activities. You also learn how to apply to professional school. You live in the residence halls.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Incoming 11th and 12th graders",
+  "who_can_apply": "High school juniors and seniors interested in health care careers. Small groups of 20 students per session.",
+  "paid_type": "fee-based",
+  "pay_detail": "2027 cost: not yet posted. The page does not state the 2026 cost.",
+  "season": "summer",
+  "duration": "One week, June 2027 (two sessions planned). In 2026 the sessions were June 7 to 12 and June 21 to 26.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "2027 dates are listed as June 2027. Application dates are not posted; join the 2027 interest list on the page to get updates.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Join the 2027 Interest List on the program page. The college says details are added as they become available. Questions: College of Health and Human Sciences, phone number on the page.",
+  "needs_work_permit": false,
+  "url": "https://www.hhs.k-state.edu/summerhealthprogram/",
+  "apply_url": "https://apply2.ksu.edu/register/summerprogramshhs2027",
+  "sources_fetched": [
+   "https://www.hhs.k-state.edu/summerhealthprogram/",
+   "https://www.hhs.k-state.edu/students/youth-programs/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 2,
+  "notes": "Quote from the page: Join our 2027 Interest List. The page does not show application dates yet.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "manhattan-ks-k-state-summer-fashion-institute",
+  "name": "Summer Fashion Institute",
+  "org": "Kansas State University College of Health and Human Sciences",
+  "regions": [
+   "kansas"
+  ],
+  "city": "Manhattan, KS",
+  "type": "pre-college",
+  "fields": [
+   "arts-media"
+  ],
+  "what_you_do": "High school students try fashion design, illustration and sewing, and bring their own designs to life in a short K-State camp. No sewing experience needed.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9-12",
+  "who_can_apply": "High school students in grades 9 to 12. The page lists 12 spots.",
+  "paid_type": "fee-based",
+  "pay_detail": "Cost not yet posted",
+  "season": "summer",
+  "duration": "June 7 to 10, 2027",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "Camp is June 7 to 10, 2027. Registration dates are not posted; join the 2027 interest list.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Join the 2027 Interest List linked on the youth programs page. Details are added when available.",
+  "needs_work_permit": false,
+  "url": "https://www.hhs.k-state.edu/students/youth-programs/",
+  "apply_url": "https://apply2.ksu.edu/register/summerprogramshhs2027",
+  "sources_fetched": [
+   "https://www.hhs.k-state.edu/students/youth-programs/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 3,
+  "notes": "The same page also lists Farm to Fashion. It is for grades 7 to 12, June 28 to July 1, 2027, with 15 spots and cost not yet posted. It also lists a free one-day Social Impact Lab for grades 7 to 10 in spring 2028.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
   "grades": null,
   "opens_iso": null,
   "apply_url": "https://www.marchfield.org/wp-content/uploads/2024/06/jr-doc-appl.pdf",
@@ -46001,6 +47475,44 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "mercyone-des-moines-teen-volunteers",
+  "name": "MercyOne Des Moines Teen Volunteers (Ages 16 to 17)",
+  "org": "MercyOne Des Moines Medical Center",
+  "regions": [
+   "iowa"
+  ],
+  "city": "Des Moines, IA",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Volunteer at MercyOne in a role that fits your skills. The program page does not list the teen roles.",
+  "min_age": 16,
+  "max_age": 17,
+  "who_can_apply": "Teens at least 16 years old. You must be in school in good standing or working toward a GED. A parent or guardian must agree.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid.",
+  "season": "year-round",
+  "duration": "At least 4 months. The weekly hours are not stated for teens.",
+  "status": "rolling",
+  "deadline_text": "No deadline posted on the program page.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the Teen Volunteer application online. Then expect a criminal background check. Expect a registered offender check and a health screening too. You also need proof of immunizations, references and an interview. Contact Anne Owens at anne.owens@mercyone.org. Or call 515-358-9265.",
+  "url": "https://www.mercyone.org/desmoines/careers/volunteer",
+  "apply_url": "https://www.volgistics.com/appform/1249718754",
+  "sources_fetched": [
+   "https://www.mercyone.org/desmoines/careers/volunteer"
+  ],
+  "priority": 2,
+  "notes": "Are you 14 or 15? Look at the teen program at UnityPoint Iowa Lutheran Hospital.",
+  "grades": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
   "grades": null,
   "opens_iso": null,
   "deadline_iso": null,
@@ -47945,6 +49457,46 @@
   "verified_on_label": "Oct 7, 2026"
  },
  {
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": 15,
+  "max_age": null,
+  "needs_work_permit": null,
+  "priority": 1,
+  "fields": [
+   "sports",
+   "food-hospitality"
+  ],
+  "id": "missoula-parks-recreation-lifeguard-and-summer-jobs",
+  "name": "Lifeguard and Summer Jobs at Splash Montana and Currents",
+  "org": "City of Missoula Parks and Recreation",
+  "regions": [
+   "montana"
+  ],
+  "city": "Missoula, MT",
+  "type": "paid-youth-program",
+  "what_you_do": "Take the American Red Cross lifeguard course. Then work at Splash Montana or the Currents Aquatics Center. Other summer jobs there do not need you to be certified.",
+  "who_can_apply": "Ages 15 and up to lifeguard. Ages 16 and up to be a Water Safety Instructor. You need average swimming ability. Other pool jobs have no lifeguard rule stated.",
+  "paid_type": "paid",
+  "pay_detail": "The city reimburses the Red Cross training course if you accept a lifeguard or Water Safety Instructor job. Hourly pay is not stated on the program page.",
+  "season": "summer",
+  "duration": "Not stated on the program page",
+  "status": "rolling",
+  "deadline_text": "No deadline stated. The page says summer jobs will be posted soon on the City of Missoula jobs portal.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply for a posted job on the City of Missoula jobs portal. Questions: 406-552-6000 (TTY 406-552-6131).",
+  "url": "https://www.ci.missoula.mt.us/3517/Employment",
+  "notes": "The page said summer jobs were \"posted soon\", so check the portal for current openings.",
+  "sources_fetched": [
+   "https://www.ci.missoula.mt.us/3517/Employment"
+  ],
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
   "id": "missouri-4h-civic-engagement-ambassadors",
   "name": "Missouri 4-H Civic Engagement Ambassadors",
   "org": "University of Missouri Extension, Missouri 4-H",
@@ -48181,6 +49733,169 @@
   "verified_on_label": "Oct 10, 2026"
  },
  {
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": 14,
+  "max_age": null,
+  "needs_work_permit": false,
+  "priority": 2,
+  "fields": [
+   "social-impact",
+   "education"
+  ],
+  "id": "montana-4h-county-state-ambassador",
+  "name": "Montana 4-H County Ambassador and State Ambassador Officer",
+  "org": "Montana 4-H, MSU Extension",
+  "regions": [
+   "montana"
+  ],
+  "city": "Statewide, Montana (county offices; state team based in Bozeman)",
+  "type": "leadership",
+  "what_you_do": "Serve as a 4-H county ambassador. Ambassadors who have shown leadership in their county can apply for a state officer role.",
+  "who_can_apply": "Must be 14 by October 1 of the current year, enrolled in 4-H for at least 2 years and this year, and be or have been a Junior Leader or club officer. A maximum age is not stated on the program page.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid leadership role. Cost not stated on the program page.",
+  "season": "school-year",
+  "duration": "Not stated on the program page",
+  "status": "rolling",
+  "deadline_text": "County ambassador: apply through your county 4-H (dates set by each county). State officer applications are due, postmarked, by June 15.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "County level: fill out an application. Then interview with the County Council. State officer: send the application to the Montana 4-H Center. It must be postmarked by June 15.",
+  "url": "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/country-ambassador/index.html",
+  "sources_fetched": [
+   "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/index.html",
+   "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/country-ambassador/index.html",
+   "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/state-ambassador-officer/index.html"
+  ],
+  "notes": "You must already be in 4-H. The state team page lists five state officer jobs (for example President and Publicity Chair). Contact your county extension office. The state officer page does not state the term length for officers.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": 15,
+  "max_age": 18,
+  "needs_work_permit": false,
+  "priority": 3,
+  "fields": [
+   "social-impact",
+   "business-finance"
+  ],
+  "id": "montana-4h-foundation-youth-representative",
+  "name": "Montana 4-H Foundation Youth Representative",
+  "org": "Montana 4-H Foundation",
+  "regions": [
+   "montana"
+  ],
+  "city": "Statewide, Montana (Bozeman)",
+  "type": "leadership",
+  "what_you_do": "Serve as a youth member of the Montana 4-H Foundation board of trustees. The Foundation raises private funds for the 4-H program.",
+  "who_can_apply": "Ages 15 to 18. You must be a 4-H member in your home county for at least three consecutive years. You need your county agent's approval.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid board seat. Cost not stated on the program page.",
+  "season": "year-round",
+  "duration": "Two-year term (the page says it will change to one year)",
+  "status": "unconfirmed",
+  "deadline_text": "Send the application before November 1. The page does not name the year, so check the date with the 4-H Foundation.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the application and send it. Email is preferred. You can also text 406-624-9835, fax 406-994-5417 or mail it to Montana 4-H Foundation, Inc., PO Box 173580, Bozeman.",
+  "url": "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/foundation-youth-rep.html",
+  "notes": "The page lists two at-large youth seats. Ask your county agent early because their approval is required.",
+  "sources_fetched": [
+   "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/foundation-youth-rep.html"
+  ],
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": 14,
+  "max_age": 18,
+  "needs_work_permit": false,
+  "priority": 1,
+  "fields": [
+   "environment"
+  ],
+  "id": "montana-conservation-corps-nps-expeditions-teens",
+  "name": "National Park Service Expeditions (Youth Program)",
+  "org": "Montana Conservation Corps",
+  "regions": [
+   "montana"
+  ],
+  "city": "Bozeman and Kalispell, MT (Yellowstone and Glacier)",
+  "type": "volunteer",
+  "what_you_do": "Montana teens join a 9-day camping crew in Glacier or Yellowstone National Park. They do hands-on conservation projects.",
+  "who_can_apply": "Montana teens ages 14 to 18. You must live in Montana. Teens from other states will not be considered.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer crew. $100 service award and up to 64 service hours on successful completion. The program is free to join.",
+  "season": "summer",
+  "duration": "9-day sessions",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications are closed for 2026. 2027 youth program applications typically open in February. The page does not state a 2027 deadline.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Online application filled out by the teen and a parent or guardian. The parent or guardian must sign a Youth Program Release form that is emailed after you submit. Email youthprograms@mtcorps.org with questions.",
+  "url": "https://www.mtcorps.org/joinmcc/youth/national-park-service-expeditions.html",
+  "sources_fetched": [
+   "https://www.mtcorps.org/joinmcc/youth/",
+   "https://www.mtcorps.org/joinmcc/youth/national-park-service-expeditions.html",
+   "https://www.mtcorps.org/joinmcc/youth/frequently-asked-questions.html"
+  ],
+  "notes": "Yellowstone sessions leave from Bozeman and Glacier sessions leave from Kalispell. Next dates not posted yet.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": 17,
+  "max_age": 18,
+  "needs_work_permit": null,
+  "priority": 1,
+  "fields": [
+   "environment"
+  ],
+  "id": "montana-conservation-corps-youth-corps-teens",
+  "name": "Youth Corps (Helena, Missoula, Flathead)",
+  "org": "Montana Conservation Corps",
+  "regions": [
+   "montana"
+  ],
+  "city": "Helena, Missoula and Kalispell, MT",
+  "type": "paid-youth-program",
+  "what_you_do": "Montana teens ages 17 to 18 work on conservation projects with a crew. The job lasts a full summer of about 8 weeks.",
+  "who_can_apply": "Montana teens ages 17 to 18. Montana residency is required. You must commit to the full summer.",
+  "paid_type": "stipend",
+  "pay_detail": "Living allowance of $1,200 every two weeks before taxes, plus an AmeriCorps education award ($1,565.08 for the 2026 crews).",
+  "season": "summer",
+  "duration": "About 8 weeks (2026 crews: mid June to early August)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications are closed for 2026. 2027 youth program applications typically open in February. The page says 2026 interviews began early April.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Online application. A parent or guardian must sign the Youth Program Release that is emailed after you submit. Interview, then a decision within 2 weeks. Email youthprograms@mtcorps.org with questions.",
+  "url": "https://www.mtcorps.org/joinmcc/youth/youth-corps.html",
+  "sources_fetched": [
+   "https://www.mtcorps.org/joinmcc/youth/",
+   "https://www.mtcorps.org/joinmcc/youth/youth-corps.html"
+  ],
+  "notes": "2026 crews were in Helena, Kalispell (Flathead Youth Corps) and Missoula. Participants must commit to the full summer. Next dates not posted yet.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
   "id": "montgomery-county-recreation-seasonal-jobs",
   "name": "Montgomery County Recreation seasonal part-time jobs",
   "org": "Montgomery County Recreation",
@@ -48337,6 +50052,44 @@
   ],
   "notes": "If you need many SSL hours in a short time, the page says that is only sometimes possible. Contacts on the page: Montgomery Parks Customer Service (301) 495-2595, and Volunteer Services 301-495-2504 on the main volunteer page. Office: 2425 Reedie Drive, 12th Floor, Wheaton, MD 20902.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "monument-health-volunteen-rapid-city",
+  "name": "Monument Health VolunTEEN Program",
+  "org": "Monument Health (Rapid City Hospital)",
+  "regions": [
+   "south-dakota"
+  ],
+  "city": "Rapid City, SD",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Teens first do a job shadow at the hospital, then volunteer one shift a week for 10 to 12 weeks. Tasks are not listed on the program page.",
+  "min_age": 16,
+  "max_age": 18,
+  "who_can_apply": "Teens must be 16 to 18 years of age before graduating high school. A parent must sign a consent form.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid.",
+  "season": "year-round",
+  "duration": "One 2 to 4 hour shift a week, same day and time, for 10 to 12 weeks (at least 30 hours).",
+  "status": "rolling",
+  "deadline_text": "Sessions start in October, February and June. Applications are due by the last business day of the month before a session starts, so the February 2027 session needs an application by the end of January 2027.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Submit the online VolunTEEN application. Also send in the VolunTEEN Program Guidelines and the Parental Consent Form. Then you do a job shadow. After that, you go to an orientation and an interview. You also do onboarding and health steps.",
+  "url": "https://www.monument.health/volunteer",
+  "sources_fetched": [
+   "https://www.monument.health/volunteer"
+  ],
+  "priority": 2,
+  "notes": "Adults 18 and older use a different program with 30 hours in three months. The page says the wait from application to first shift is about six weeks for adults. Sturgis, Custer, Lead-Deadwood and Spearfish hospitals have their own volunteer contacts; the page does not say they take teens.",
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "verified_on_label": "Oct 12, 2026"
  },
  {
   "id": "morehouse-school-of-medicine-steam-academy",
@@ -51710,6 +53463,46 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "nebraska-young-nebraska-scientists-high-school-researchers",
+  "name": "Young Nebraska Scientists: High School Researchers",
+  "org": "Nebraska EPSCoR, University of Nebraska",
+  "regions": [
+   "nebraska"
+  ],
+  "city": "Lincoln, NE",
+  "type": "research",
+  "fields": [
+   "science",
+   "engineering"
+  ],
+  "what_you_do": "Paid summer jobs in the labs of Nebraska scientists, such as quantum materials, nanoscience and chemistry. You learn skills like coding and share your work on a research poster at the end.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": "10th or 11th grade in the year you apply",
+  "who_can_apply": "You must be 16 years old and a 10th or 11th grader in the year you apply. You must live in Nebraska. You must be a US citizen or have proof of work authorization. Commuter only, no housing.",
+  "paid_type": "paid",
+  "pay_detail": "$15 per hour for 20 to 40 hours a week, up to 8 weeks. Pay and schedule are set by the faculty mentor.",
+  "season": "summer",
+  "duration": "Up to 8 weeks, early June to early August",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The page says applications are taken in early spring and winners are told usually in April. Exact 2027 dates are not posted on the program page.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply during the early spring window on the program page. You need teacher recommendations. Spots are very limited.",
+  "needs_work_permit": null,
+  "url": "https://yns.nebraska.edu/gain-hands-on-experience-in-stem/high-school-research",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://yns.nebraska.edu/gain-hands-on-experience-in-stem/high-school-research"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 1,
+  "notes": "Research areas include biology and physics. They include chemistry too. The featured project has a lab. It is at the University of Nebraska-Lincoln.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
   "id": "nevada-4h-capital-days",
   "name": "Nevada 4-H Capital Days",
   "org": "University of Nevada, Reno Extension, Nevada 4-H",
@@ -54391,6 +56184,89 @@
   "sources_fetched": [
    "https://virginiazoo.org/school-programs/conservation-youth-team/"
   ],
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "north-dakota-4h-ambassador-program",
+  "name": "North Dakota 4-H Ambassador Program",
+  "org": "North Dakota 4-H, NDSU Extension",
+  "regions": [
+   "north-dakota"
+  ],
+  "city": "Statewide (Fargo and Washburn), ND",
+  "type": "leadership",
+  "fields": [
+   "social-impact",
+   "education"
+  ],
+  "what_you_do": "Chosen young leaders for North Dakota 4-H. Ambassadors help plan statewide 4-H events, such as the Extension Youth Conference and retreats. They promote 4-H statewide. They also help at the State Fair and at state or county 4-H events.",
+  "min_age": 16,
+  "max_age": 22,
+  "who_can_apply": "Ages 16 to 22. The program page does not say if you must be a 4-H member.",
+  "paid_type": "not-stated",
+  "pay_detail": "Cost not listed on the program page.",
+  "season": "year-round",
+  "duration": "Not stated on the program page.",
+  "status": "open-now",
+  "deadline_text": "Applications are due October 15 for the fall selection, held the Saturday before Thanksgiving at the ND 4-H Camp in Washburn. Elections also happen at the Extension Youth Conference in June, with applications due May 15. The page shows 2026 dates for June.",
+  "deadline_iso": "2026-10-15",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Use the Ambassador Resources and Application link. It is on the NDSU Extension leadership page. Send the form to the ND 4-H Center for Youth Development. You must attend all selection day events.",
+  "url": "https://www.ndsu.edu/agriculture/extension/extension-topics/4-h-youth-development/4-h-leadership-opportunities",
+  "sources_fetched": [
+   "https://www.ndsu.edu/agriculture/extension/extension-topics/4-h-youth-development/4-h-leadership-opportunities"
+  ],
+  "priority": 2,
+  "notes": "The fall deadline is only 3 days after the date this card was checked, so call the ND 4-H office first. The page does not print a year for Oct 15, but it lists June 2026 and Feb 2027 events, so Oct 15 is read as 2026.",
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "north-dakota-governors-school-ndgs",
+  "name": "North Dakota Governor's School",
+  "org": "NDSU Office of Teaching and Learning and University of North Dakota",
+  "regions": [
+   "north-dakota"
+  ],
+  "city": "Fargo or Grand Forks, ND (host switches between NDSU and UND)",
+  "type": "pre-college",
+  "fields": [
+   "science",
+   "engineering",
+   "tech-cs",
+   "health",
+   "law-government"
+  ],
+  "what_you_do": "A four week summer program. You live and study on the NDSU campus. Students rank their top two pathways from Engineering, Information Technology, Laboratory Science or Mathematics. The NDSU page lists dates of June 8 to July 2, 2026 for NDGS 2026.",
+  "grades": "10 to 11 (when you apply)",
+  "who_can_apply": "Current 10th or 11th graders who live in North Dakota. You can attend a public or non-public school. You need a cumulative GPA of 3.25 or higher. Selection uses a personal essay of 250 words or less. It also uses two recommendations (one teacher, one counselor or administrator) and a transcript.",
+  "paid_type": "not-stated",
+  "pay_detail": "The NDSU pages do not list a cost. A UND article says a North Dakota Department of Public Instruction grant covered tuition and on-campus housing for the 2025 session. Check that this still holds.",
+  "season": "summer",
+  "duration": "Four weeks. 2026 dates were June 8 to July 2.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The NDSU page shows the NDGS 2026 timeline with no year on the later dates: portal opened October 13, 2025 and closed February 15, 2026; acceptance emails March 12 (year not shown); accept by April 10 (year not shown). The 2026 program ran June 8 to July 2. The next session's dates are not posted on the program pages.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online on the NDSU Governor's School site (2026 cycle). You need a personal essay of 250 words or less. You also need one teacher recommendation. You need one counselor or administrator recommendation too. Questions? Email ndsu.otl@ndsu.edu.",
+  "url": "https://www.ndsu.edu/govschool/application",
+  "sources_fetched": [
+   "https://www.ndsu.edu/govschool/application",
+   "https://ndsu.edu/govschool",
+   "https://blogs.und.edu/und-today/?p=42360"
+  ],
+  "priority": 2,
+  "notes": "The NDSU page says the program runs every other summer. The next session's host, dates and portal are not posted on the program pages. Ask NDSU at ndsu.otl@ndsu.edu.",
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "max_age": null,
+  "min_age": null,
+  "deadline_iso": null,
   "verified_on_label": "Oct 12, 2026"
  },
  {
@@ -59752,6 +61628,371 @@
   "verified_on_label": "Oct 12, 2026"
  },
  {
+  "id": "omaha-childrens-nebraska-teen-connection",
+  "name": "Teen Connection Volunteer Program",
+  "org": "Children's Nebraska",
+  "regions": [
+   "nebraska"
+  ],
+  "city": "Omaha, NE",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Teens volunteer in the children's hospital. They help kids and families waiting for procedures. They also staff the gift shop, work the information desk or help at special events.",
+  "min_age": 15,
+  "max_age": 19,
+  "grades": null,
+  "who_can_apply": "Teens ages 15 to 19 pick the Teen Connection type on the application. The page does not list a city or school rule.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. The application says services are donated and there is no payment.",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Application form is on the site now. No deadline stated. The hospital says the most need is Monday through Friday in business hours, with few evening or weekend spots.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the online volunteer application form. Choose Teen Connection. For questions call Children's Nebraska. Use the phone number on the volunteer page.",
+  "needs_work_permit": false,
+  "url": "https://www.childrensnebraska.org/give/volunteer",
+  "apply_url": "https://www.childrensnebraska.org/give/volunteer/volunteer-application-form",
+  "sources_fetched": [
+   "https://www.childrensnebraska.org/give/volunteer",
+   "https://www.childrensnebraska.org/give/volunteer/volunteer-application-form"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 1,
+  "notes": "The application form asks for a Social Security number, a date of birth and an emergency contact. The same page also lists KIDS Nebraska. It is for young people ages 13 to 18 in Nebraska and western Iowa. No prior medical experience is needed.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "omaha-durham-museum-volunteer",
+  "name": "The Durham Volunteers",
+  "org": "The Durham Museum",
+  "regions": [
+   "nebraska"
+  ],
+  "city": "Omaha, NE",
+  "type": "volunteer",
+  "fields": [
+   "arts-media",
+   "education"
+  ],
+  "what_you_do": "Volunteers greet guests. They work the admissions desk or museum shop. Or they lead daily activities in exhibits like the log cabin and one-room schoolhouse.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Age 16 or older, unless an adult comes with you. Some jobs need you to be 18.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Perks include a 25 percent museum shop discount and a 25 percent soda fountain discount on days you volunteer.",
+  "season": "year-round",
+  "duration": "You must meet a minimum number of hours each year (the number is not stated on the program page)",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "The page lists no deadline. Fill out the Volunteer Interest Form to start.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the Volunteer Interest Form. Then you finish an application, an interview and training. This includes a background check.",
+  "needs_work_permit": false,
+  "url": "https://durhammuseum.org/support/volunteer/",
+  "apply_url": "https://durhammuseum.org/support/get-involved/",
+  "sources_fetched": [
+   "https://durhammuseum.org/support/volunteer/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 2,
+  "notes": "Quote from the page: Must be 16 years of age, unless accompanied by an adult. Check which roles are open to teens under 18.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "omaha-henry-doorly-zoo-jr-crew",
+  "name": "Jr Crew (grades 7 and 8 volunteers)",
+  "org": "Omaha's Henry Doorly Zoo & Aquarium",
+  "regions": [
+   "nebraska"
+  ],
+  "city": "Omaha, NE",
+  "type": "volunteer",
+  "fields": [
+   "environment",
+   "science",
+   "education"
+  ],
+  "what_you_do": "Junior high students can volunteer at the zoo. The page does not list the exact tasks, so read it for details.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "7-8",
+  "who_can_apply": "Students in grades 7 and 8.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page",
+  "season": "summer",
+  "duration": "Summer season. Exact length not stated on the program page.",
+  "status": "opens-soon",
+  "opens_iso": "2027-01-05",
+  "deadline_text": "Applications for the 2027 Jr Crew season open on January 5, 2027. Close date not stated.",
+  "deadline_iso": null,
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Come back to the page on January 5, 2027 for application details.",
+  "needs_work_permit": false,
+  "url": "https://www.omahazoo.com/volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.omahazoo.com/volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 2,
+  "notes": "The 2026 Jr Crew program has concluded. Zoo Crew is for grades 9 to 12.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "omaha-joslyn-kent-bellows-mentoring-program",
+  "name": "Kent Bellows Mentoring Program (KBMP)",
+  "org": "Joslyn Art Museum",
+  "regions": [
+   "nebraska"
+  ],
+  "city": "Omaha, NE",
+  "type": "leadership",
+  "fields": [
+   "arts-media"
+  ],
+  "what_you_do": "High school artists work with professional artist mentors all year. They make their own art, build a portfolio and show their work in exhibitions.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Core program: mostly juniors and seniors. Foundations: freshmen and sophomores.",
+  "who_can_apply": "High school students who love art and are committed to their education. Priority goes to students from schools not yet in the program.",
+  "paid_type": "fee-based",
+  "pay_detail": "Pay-as-you-are-able tuition of $1 to $600 per trimester. Supplies are provided.",
+  "season": "year-round",
+  "duration": "Twice a week: 4 to 6 pm in the school year, 3 to 6 pm in summer",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Applications are accepted year-round. Interviews are in March, and most new mentees start in the summer session.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the online application on the program page. Staff interview applicants (mostly in March).",
+  "needs_work_permit": false,
+  "url": "https://joslyn.org/learn/kent-bellows-mentoring-program/",
+  "apply_url": "https://3jpi3w48jfv.typeform.com/to/z9ZLFmJ5",
+  "sources_fetched": [
+   "https://joslyn.org/learn/kent-bellows-mentoring-program/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 2,
+  "notes": "Core program meets at Kent Bellows Studio, 3303 Leavenworth Street. Foundations meets at the Joslyn. The page also lists a Teen Pop-Up Market hosted by teens and an open call for youth ages 13 to 19.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "omaha-nebraska-medicine-volunteer",
+  "name": "Nebraska Medicine Volunteer Program",
+  "org": "Nebraska Medicine",
+  "regions": [
+   "nebraska"
+  ],
+  "city": "Omaha, NE",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Volunteers greet and guide patients and visitors. They help hospital departments. The work is office projects and errands. In some specialty care areas they offer comfort and company to patients.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Anyone 16 or older who can commit to six months and 2 to 4 hours a week and finish orientation.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Initial six-month commitment, 2 to 4 hours a week",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline stated. Apply online any time.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Submit the online volunteer application. Volunteer Services reviews it. They call you for a welcome meeting. You talk about what you like and when you can come. Then finish New Volunteer Orientation and onboarding.",
+  "needs_work_permit": false,
+  "url": "https://www.nebraskamed.com/giving/volunteer",
+  "apply_url": "https://nebraskamed.wd5.myworkdayjobs.com/Volunteers/job/Omaha-NE/Volunteer_REQ-37886",
+  "sources_fetched": [
+   "https://www.nebraskamed.com/giving/volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 2,
+  "notes": "Quote from the page: Be at least 16 years old.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "omaha-public-library-youth-volunteer",
+  "name": "Omaha Public Library Volunteer (youth ages 11 to 18)",
+  "org": "Omaha Public Library",
+  "regions": [
+   "nebraska"
+  ],
+  "city": "Omaha, NE",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "any"
+  ],
+  "what_you_do": "Volunteers help with library programs and special events. They gain skills like teaching, teamwork and leadership.",
+  "min_age": 11,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Anyone age 11 or older. Youth ages 11 to 18 need a parent or legal guardian to approve. The page does not list a city or school rule.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. The library says it can provide volunteer hours for court-related community service.",
+  "season": "year-round",
+  "duration": "Short-term or ongoing, depending on the task",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Applications are accepted all year.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the online volunteer form. There is one form for Central Library and another for all other branches. Youth and summer reading volunteers need a parent or guardian signature before starting.",
+  "needs_work_permit": false,
+  "url": "https://omahalibrary.org/volunteer/",
+  "apply_url": "https://forms.gle/9M6sWxetru6J8i258",
+  "sources_fetched": [
+   "https://omahalibrary.org/volunteer/",
+   "https://omahalibrary.org/policies/volunteer-policy/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 1,
+  "notes": "The library says it may not be able to place each applicant. It has the right to reject any application without reason. It reserves the right to do a background check or check references. Quote from the volunteer policy: OPL accepts volunteers ages 11 and older. The Central Library has its own volunteer form. It is linked on the volunteer page.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "omaha-step-up-omaha-summer-jobs",
+  "name": "Step-Up Omaha",
+  "org": "Empowerment Network",
+  "regions": [
+   "nebraska"
+  ],
+  "city": "Omaha, NE",
+  "type": "paid-youth-program",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Youth get a paid summer internship. You work for a local employer. Fields include health care, technology, education and construction. You also get job training and learn about careers.",
+  "min_age": 14,
+  "max_age": 21,
+  "grades": null,
+  "who_can_apply": "Youth and young adults ages 14 to 21. The program page does not list city or school rules.",
+  "paid_type": "paid",
+  "pay_detail": "Interns can earn $1,800 to $3,000 or more during the summer (2026 news release).",
+  "season": "summer",
+  "duration": "2026 program ran June 2 through July 31",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "2026 applications closed March 16, 2026 (extended from an earlier date). 2027 dates not posted on the program page.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online at StepUpOmaha.com. The news release says to apply there.",
+  "needs_work_permit": null,
+  "url": "https://empoweromaha.com/blog/2026/04/24/step-up-omaha/",
+  "apply_url": "https://stepupomaha.com/",
+  "sources_fetched": [
+   "https://empoweromaha.com/blog/2026/04/24/step-up-omaha/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 1,
+  "notes": "This card uses the March 2026 news release on the organizer's site. Check StepUpOmaha.com for 2027 dates. The release says roughly 100 employers took part in 2025.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "omaha-unmc-high-school-alliance",
+  "name": "UNMC High School Alliance",
+  "org": "University of Nebraska Medical Center",
+  "regions": [
+   "nebraska"
+  ],
+  "city": "Omaha, NE",
+  "type": "pre-college",
+  "fields": [
+   "health",
+   "science"
+  ],
+  "what_you_do": "Juniors and seniors take hands-on health science classes, like infectious diseases and anatomy. UNMC faculty teach them on the Omaha campus. You also do job shadowing. Classes run Monday to Friday, 1 to 3 pm.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": "11-12",
+  "who_can_apply": "Juniors and seniors who are at least 16 at the start of the school year. Your school district must take part (districts around Omaha). You need grades of B or above in Algebra 1, Biology, a physical science and a third year of science. You also need parent permission and an interview.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page. Students get three polo shirts and a jacket free and buy their own black pants, socks and closed-toe shoes.",
+  "season": "school-year",
+  "duration": "Whole school year, August to May",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "The application page is titled for the 2026-2027 year. An open or close date is not stated on the program pages.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Check that you meet the criteria and that your school district takes part. Review the forms. Then apply online. Eligible students are scheduled for an interview. Then they are notified by email.",
+  "needs_work_permit": false,
+  "url": "https://www.unmc.edu/alliance/",
+  "apply_url": "https://student-university-of-nebraska-medical-center.outcomescrm.com/programs/cTWJk7",
+  "sources_fetched": [
+   "https://www.unmc.edu/alliance/",
+   "https://www.unmc.edu/alliance/overview/index.html",
+   "https://www.unmc.edu/alliance/admissions/index.html",
+   "https://www.unmc.edu/alliance/admissions/student-criteria.html",
+   "https://www.unmc.edu/alliance/overview/faq.html",
+   "https://www.unmc.edu/alliance/admissions/application-process.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 1,
+  "notes": "The page says there are only 65 spots a year. Just one-third of applicants are accepted. Participating public school districts include Omaha, Millard, Bellevue, Elkhorn and Westside. They also include Council Bluffs Community Schools, Gretna, Bennington, Ralston and others. If you do not qualify, ask your teacher about uBEATS. It is an online alternative. Questions: 402-559-3027.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "omaha-unmc-munroe-meyer-recreational-therapy-volunteer",
+  "name": "Munroe-Meyer Institute Recreational Therapy Volunteer",
+  "org": "UNMC Munroe-Meyer Institute",
+  "regions": [
+   "nebraska"
+  ],
+  "city": "Omaha, NE",
+  "type": "volunteer",
+  "fields": [
+   "health",
+   "social-impact"
+  ],
+  "what_you_do": "Students help run recreation programs and Camp Munroe. These are for people with developmental disabilities. They keep activities safe and fun. Training is required.",
+  "min_age": 13,
+  "max_age": 26,
+  "grades": null,
+  "who_can_apply": "Students ages 13 to 26 can help with Pediatric Programs. Students 16 and older can also help with Adult Programs.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Opportunities are year-round. Camp Munroe runs in quarterly cycles: spring, summer, fall and winter.",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline stated. Contact the volunteer coordinator for current openings.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Email the volunteer coordinator. Their name is on the page. Then finish the required training.",
+  "needs_work_permit": false,
+  "url": "https://www.unmc.edu/mmi/services/recreation/volunteer.html",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.unmc.edu/mmi/services/recreation/volunteer.html",
+   "https://www.unmc.edu/mmi/education/high-school/index.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 2,
+  "notes": "Training is on behavior and disability. It is on play and safety too. The institute also lists job shadowing for high school students.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
   "id": "oneinmath-teen-tutor-volunteers",
   "grades": null,
   "apply_url": "https://oneinmath.com/register-volunteer/",
@@ -60639,6 +62880,46 @@
   "priority": 1,
   "notes": "The office handles work permits (needed for any paid job under 18). Check the pathways pages on the OUSD site to find work-based learning at your school.",
   "verified_on_label": "Oct 7, 2026"
+ },
+ {
+  "id": "overland-park-outdoor-lifeguard",
+  "name": "Lifeguard I Outdoor (seasonal)",
+  "org": "City of Overland Park Parks and Recreation",
+  "regions": [
+   "kansas"
+  ],
+  "city": "Overland Park, KS",
+  "type": "paid-youth-program",
+  "fields": [
+   "sports",
+   "food-hospitality"
+  ],
+  "what_you_do": "Lifeguards watch swimmers at the city's public pools. They enforce pool safety rules and rescue swimmers in trouble. You must attend required training classes.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": "Basic education equal to 8th grade for Lifeguard I",
+  "who_can_apply": "Lifeguard I: at least 15 years old with an 8th grade education. You also need the city's Starguard lifeguard certification. Lifeguard II is 16 and up with one year of experience in Overland Park. Lifeguard III is 17 and up with two years.",
+  "paid_type": "paid",
+  "pay_detail": "Not stated on the job description",
+  "season": "summer",
+  "duration": "Seasonal. Exact season dates not stated on the job description.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "Current openings are not shown on the job description page. The job is listed as seasonal.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "The job description does not say how to apply. It requires Starguard certification from the City of Overland Park. The course is the Starguard Lifeguard Course.",
+  "needs_work_permit": null,
+  "url": "https://www2.opkansas.org/files/job-descriptions/Lifeguard-I-Outdoor-143.html",
+  "apply_url": "https://recruit.opkansas.org/",
+  "sources_fetched": [
+   "https://www2.opkansas.org/files/job-descriptions/Lifeguard-I-Outdoor-143.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 2,
+  "notes": "Quote from the job description: a minimum of 15 years of age. The job description does not state pay. Current postings and pay were not on the program page.",
+  "verified_on_label": "Oct 12, 2026"
  },
  {
   "regions": [
@@ -66795,6 +69076,46 @@
   "verified_on_label": "Oct 7, 2026"
  },
  {
+  "id": "red-river-zoo-wildlife-league-teens",
+  "name": "Red River Zoo Wildlife League",
+  "org": "Red River Zoo",
+  "regions": [
+   "north-dakota"
+  ],
+  "city": "Fargo, ND",
+  "type": "volunteer",
+  "fields": [
+   "environment",
+   "science"
+  ],
+  "what_you_do": "Teens volunteer on weekends in zoo departments such as Guest Services, Zookeeping, Grounds and Education. They also work two zoo events each trimester. Examples are Chalkfest, Boo at the Zoo and Lunch with Santa Claus.",
+  "min_age": 14,
+  "max_age": 17,
+  "who_can_apply": "Students in grades 9 to 12, described on the page as 14 to 17 years old. Up to 25 teens are picked.",
+  "paid_type": "fee-based",
+  "pay_detail": "Unpaid. Teens pay $125 per trimester for zoo members or $175 per trimester for non-members.",
+  "season": "school-year",
+  "duration": "Trimesters during the school year. Saturdays and Sundays, 9 am to 2 pm. At least two 4.5 hour shifts a month, up to four.",
+  "status": "unconfirmed",
+  "deadline_text": "The page lists no deadline or trimester dates.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Register online. Then do an interview. Bring a letter of recommendation. Or bring references from someone outside your family. Call 701.277.9240 to ask about the next trimester.",
+  "url": "https://redriverzoo.org/wildlifeleague",
+  "sources_fetched": [
+   "https://redriverzoo.org/wildlifeleague",
+   "https://redriverzoo.org/volunteer/"
+  ],
+  "priority": 2,
+  "notes": "Up to six teens work each shift.",
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
   "grades": null,
   "opens_iso": null,
   "apply_url": null,
@@ -69484,6 +71805,85 @@
   "verified_on_label": "Oct 7, 2026"
  },
  {
+  "grades": null,
+  "opens_iso": "2027-03-01",
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": 16,
+  "max_age": 18,
+  "needs_work_permit": false,
+  "priority": 2,
+  "fields": [
+   "health"
+  ],
+  "id": "saint-alphonsus-boise-junior-volunteer-program",
+  "name": "Junior Volunteer Program",
+  "org": "Saint Alphonsus Regional Medical Center",
+  "regions": [
+   "idaho"
+  ],
+  "city": "Boise, ID",
+  "type": "volunteer",
+  "what_you_do": "High school students ages 16 to 18 take part in many volunteer roles. The roles are all around the hospital.",
+  "who_can_apply": "High school students ages 16 to 18 (or finished 10th grade by June 12). Need a 3.0 GPA and a health screening that shows immunizations.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer work.",
+  "season": "summer",
+  "duration": "Summer session (2026 ran through the summer until August 14, after an orientation the week of May 25)",
+  "status": "opens-soon",
+  "deadline_text": "The 2026 window has closed. Applications for the 2027 session will open March 1, 2027. In 2026 all forms were due April 1.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "You need an application signed by you and a parent or guardian. You need a school counselor form. You need one adult reference who is not a relative. You also need a parental consent form. Apply online or mail the paper form. Email BO-VOLUNTEERS@sarmc.org with questions.",
+  "url": "https://www.saintalphonsus.org/careers/volunteer-opportunities/boise/requirements",
+  "sources_fetched": [
+   "https://www.saintalphonsus.org/careers/volunteer-opportunities/boise/requirements",
+   "https://www.saintalphonsus.org/careers/volunteer-opportunities/boise/programs"
+  ],
+  "notes": "Applications for the 2027 session open March 1, 2027. This is from the requirements page.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": 14,
+  "max_age": null,
+  "needs_work_permit": false,
+  "priority": 2,
+  "fields": [
+   "health"
+  ],
+  "id": "saint-alphonsus-nampa-volunteers-ages-14-plus",
+  "name": "Volunteer Program (students 14 and older)",
+  "org": "Saint Alphonsus Medical Center Nampa",
+  "regions": [
+   "idaho"
+  ],
+  "city": "Nampa, ID",
+  "type": "volunteer",
+  "what_you_do": "Volunteer at the Nampa hospital. Listed roles include the Cancer Institute and the Gift Shop. Others are Meals on Wheels, the Nampa Health Plaza desk and the Surgery desk.",
+  "who_can_apply": "Adults and students ages 14 and older.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer work.",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "year-round",
+  "deadline_text": "No deadline stated.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Complete the application. Then take part in an interview. The Volunteer Services Coordinator is Diedre Schmelzer. Call 208-205-0292.",
+  "url": "https://www.saintalphonsus.org/careers/volunteer-opportunities/nampa",
+  "notes": "Ask about teen placements when you call.",
+  "sources_fetched": [
+   "https://www.saintalphonsus.org/careers/volunteer-opportunities/nampa"
+  ],
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
   "id": "saint-paul-public-library-volunteer",
   "name": "Library volunteer (teens 14 and up)",
   "org": "Saint Paul Public Library",
@@ -71610,6 +74010,44 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "sanford-health-sioux-falls-volunteer-age-16",
+  "name": "Sanford Health Sioux Falls Volunteer Program (Ages 16 and Up)",
+  "org": "Sanford Health",
+  "regions": [
+   "south-dakota"
+  ],
+  "city": "Sioux Falls, SD",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Volunteer in the hospital and clinics. Jobs include escort, greeter, gift shop helper and aide. Units include rehab and cardiology. One is the Children's Hospital.",
+  "min_age": 16,
+  "who_can_apply": "Volunteers must be at least 16 years old. Some jobs need you to be 18 or 19. The page lists more than 20 jobs open to 16 year olds.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid.",
+  "season": "year-round",
+  "duration": "A weekly or biweekly shift of three to four hours for medical center, clinic and wellness center volunteers.",
+  "status": "rolling",
+  "deadline_text": "No deadline posted on the program page.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Submit the online application. Then do a phone interview and a criminal background check. You also need an updated vaccination record. Next come a one hour orientation with a health assessment. Then come a department orientation. Call Volunteer Services. The number is (605) 333-6374.",
+  "url": "https://www.sanfordhealth.org/volunteer-opportunities/sioux-falls",
+  "sources_fetched": [
+   "https://www.sanfordhealth.org/volunteer-opportunities/sioux-falls"
+  ],
+  "priority": 2,
+  "notes": "No special program for 14 and 15 year olds was found on this page. Some roles need a vaccination record and a background check, so start early.",
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "max_age": null,
+  "deadline_iso": null,
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
   "grades": "Enrolled in high school",
   "max_age": null,
   "apply_url": "https://www.governmentjobs.com/careers/santaana?keywords=internship",
@@ -73120,6 +75558,46 @@
   ],
   "notes": "Pay figures for lifeguards are from the 2025 post, so check the current rate. In Illinois, workers under 16 need a work permit (employment certificate) before they start. This comes from the Evanston Township High School work permit page.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "science-center-of-iowa-junior-camp-counselor",
+  "name": "Science Center of Iowa Junior Camp Counselor and Volunteers",
+  "org": "Science Center of Iowa",
+  "regions": [
+   "iowa"
+  ],
+  "city": "Des Moines, IA",
+  "type": "volunteer",
+  "fields": [
+   "science",
+   "education"
+  ],
+  "what_you_do": "Junior Camp Counselors volunteer with the Science Center's science camps. They are ages 14 to 18. General volunteers are also welcome.",
+  "min_age": 14,
+  "max_age": 18,
+  "who_can_apply": "Junior Camp Counselors are 14 to 18. General volunteers must be at least 14, pass a background check, sign a waiver and finish onboarding.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. After 40 hours of service the position description says you get a free one-year membership.",
+  "season": "summer",
+  "duration": "Two weeks required, Monday to Friday 8:30 am to 4:30 pm. Onboarding with staff comes before any volunteer role.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Summer 2026 applications are closed. Summer 2027 applications open in February 2027. No closing date is posted.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply through the volunteer portal. Questions go to volunteer@sciowa.org.",
+  "url": "https://sciowa.org/volunteer/",
+  "apply_url": "https://sciowa.galaxydigital.com",
+  "sources_fetched": [
+   "https://sciowa.org/volunteer/",
+   "https://sciowa.org/upl/downloads/library/jr-counselor-description.pdf"
+  ],
+  "priority": 2,
+  "notes": "The exact opening day in February 2027 is not posted. Questions? Email volunteer@sciowa.org.",
+  "grades": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "verified_on_label": "Oct 12, 2026"
  },
  {
   "id": "scoe-cte",
@@ -76763,6 +79241,86 @@
   "verified_on_label": "Oct 12, 2026"
  },
  {
+  "id": "south-dakota-4h-state-ambassador-program",
+  "name": "South Dakota State 4-H Ambassador Program",
+  "org": "South Dakota 4-H, SDSU Extension",
+  "regions": [
+   "south-dakota"
+  ],
+  "city": "Statewide (Brookings, SD)",
+  "type": "leadership",
+  "fields": [
+   "social-impact",
+   "education"
+  ],
+  "what_you_do": "Teen ambassadors promote 4-H to youth across South Dakota. They follow an action plan. They lead one learning event for youth. They also talk about 4-H with one elected official.",
+  "min_age": 14,
+  "max_age": 18,
+  "who_can_apply": "Registered 4-H member in good standing, age 14 to 18 based on the 4-H year. The page lists no grade rule.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page.",
+  "season": "year-round",
+  "duration": "A full year of duties. The page does not give a term length.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications must be submitted by August 1. The page does not give the year, so the next due date is likely August 1, 2027.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Send the application form, a personal narrative and two letters of recommendation. Then interview at the State Fair. You can do it in person or online.",
+  "url": "https://extension.sdstate.edu/south-dakota-state-4-h-ambassador-program",
+  "sources_fetched": [
+   "https://extension.sdstate.edu/south-dakota-4-h",
+   "https://extension.sdstate.edu/south-dakota-state-4-h-ambassador-program"
+  ],
+  "priority": 2,
+  "notes": "Ambassadors must already be registered 4-H members. Costs for the orientation, retreat and events are not stated on the program page. Questions: call 605-688-4792.",
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "south-dakota-dlr-wioa-youth-program",
+  "name": "South Dakota WIOA Title I Youth Program",
+  "org": "South Dakota Department of Labor and Regulation",
+  "regions": [
+   "south-dakota"
+  ],
+  "city": "Statewide, SD",
+  "type": "paid-youth-program",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Eligible teens meet a state staff member, take an assessment and make an employment plan. The state then gives youth job services. The program page does not list the services.",
+  "min_age": 14,
+  "max_age": 24,
+  "who_can_apply": "Ages 14 to 24 and allowed to work in the US. Live in South Dakota or a nearby county. In-school youth ages 14 to 21 must be low-income and have a barrier such as basic skills deficient, English learner, homeless, in foster care, pregnant or parenting, or have a disability. Out-of-school youth must be 16 to 24.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program pages. The manual says the program is not an entitlement and depends on funding.",
+  "season": "year-round",
+  "duration": "Not stated on the program page.",
+  "status": "rolling",
+  "deadline_text": "No deadline posted on the program pages.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Call 605-773-3101 (TTY 711) to ask where to start. Under 18, a parent or guardian must sign the application forms.",
+  "url": "https://dlr.sd.gov/workforce_services/wioa/default.aspx",
+  "sources_fetched": [
+   "https://dlr.sd.gov/workforce_services/wioa/wioa_manual/4.3_eligibility_youth.pdf",
+   "https://dlr.sd.gov/workforce_services/wioa/default.aspx",
+   "https://dlr.sd.gov/workforce_services/youth/default.aspx"
+  ],
+  "priority": 3,
+  "notes": "Narrow: not every teen qualifies. The state may limit how many in-school youth it enrolls because at least 75 percent of funds go to out-of-school youth. Rules are from the state WIOA manual, section 4.1, revised October 2026. The state says all Title I youth also sign up for Wagner-Peyser job services. The manual also lists Selective Service registration rules (policy 4.6) that this card does not cover.",
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
   "id": "southwest-conservation-corps-high-school-conservation-crews",
   "name": "High School Conservation Crews (Southwest Conservation Corps)",
   "org": "Southwest Conservation Corps (Conservation Legacy)",
@@ -77730,6 +80288,45 @@
    "https://stlzoo.org/zoo-teens"
   ],
   "verified_on_label": "Oct 10, 2026"
+ },
+ {
+  "grades": null,
+  "opens_iso": "2026-11-02",
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": 16,
+  "max_age": null,
+  "needs_work_permit": false,
+  "priority": 1,
+  "fields": [
+   "health"
+  ],
+  "id": "st-lukes-boise-junior-volunteers",
+  "name": "Junior Volunteers at St. Luke's",
+  "org": "St. Luke's Health System",
+  "regions": [
+   "idaho"
+  ],
+  "city": "Boise, ID",
+  "type": "volunteer",
+  "what_you_do": "Volunteer at the Boise campus of St. Luke's. The program has orientation, service training, quarterly meetings and monthly service hours.",
+  "who_can_apply": "Must be at least 16 before the program starts in January. The page does not state a maximum age. Minimum 3.0 GPA. Boise campus only. The program cannot take new volunteers past their junior year of high school.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer work.",
+  "season": "year-round",
+  "duration": "8 hours a month during the school year and 12 hours a month in June, July and August",
+  "status": "opens-soon",
+  "deadline_text": "Applications open the first Monday in November of each year (that is November 2 in 2026). Closing date not stated on the program page.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Submit an online application when it opens in November. Call (208) 381-2265 with questions. You must also finish orientation and service training. You must attend quarterly meetings. You also need proof of immunizations (MMR, varicella, Tdap, T-spot and a current flu shot).",
+  "url": "https://stlukesonline.org/en/giving/volunteer/junior-volunteers/",
+  "notes": "The opening date of Nov 2 is worked out from the page rule. The rule says the first Monday in November. The date is not printed on the page.",
+  "sources_fetched": [
+   "https://stlukesonline.org/en/giving/volunteer/junior-volunteers/"
+  ],
+  "verified_on_label": "Oct 12, 2026"
  },
  {
   "id": "stanford-aimi-summer-research-internship",
@@ -80264,6 +82861,46 @@
   ],
   "notes": "The page does not list specific internships or pay. It says the group is forming partnerships with high schools, colleges and universities. Address on the site: 1910 Greenwood Street, Evanston.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "topeka-shawnee-county-public-library-teen-volunteer",
+  "name": "Library Volunteer and Teen Volunteer",
+  "org": "Topeka and Shawnee County Public Library",
+  "regions": [
+   "kansas"
+  ],
+  "city": "Topeka, KS",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "any"
+  ],
+  "what_you_do": "Volunteers help at library events. They help with crafts or storytelling for kids. They also do clerical work, help in the Friends Booktique and book sale, and greet visitors. The page also lists a Teen Volunteer path for learning job skills.",
+  "min_age": 13,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Volunteers must be at least 13 years old or accompanied by an adult while on duty.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline stated. The library keeps an application on file for 30 days; apply again if you have not heard back.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the volunteer application on the library website. You may be interviewed. Volunteers are chosen by their qualifications. The library's needs at the time also count. Call or email the volunteer contact listed on the page with questions.",
+  "needs_work_permit": false,
+  "url": "https://tscpl.org/support-us/volunteer-at-the-library",
+  "apply_url": "https://tscpl.org/support-us/volunteer-application",
+  "sources_fetched": [
+   "https://tscpl.org/support-us/volunteer-at-the-library"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 2,
+  "notes": "Quote from the volunteer policy: Volunteers must be at least 13 years old or accompanied by an adult while on duty. The page links to a separate Teen Volunteer path. This card does not cover it in detail.",
+  "verified_on_label": "Oct 12, 2026"
  },
  {
   "id": "tracy-aviary-individual-volunteer",
@@ -83773,6 +86410,86 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "unitypoint-iowa-lutheran-hospital-volunteen",
+  "name": "UnityPoint Health Iowa Lutheran Hospital Teen Volunteer (Volunteen)",
+  "org": "UnityPoint Health - Des Moines, Iowa Lutheran Hospital",
+  "regions": [
+   "iowa"
+  ],
+  "city": "Des Moines, IA",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Teens volunteer in the hospital. Example jobs on the page are in the Emergency Department and gift shop. Others are the Not New Shop, behavioral health tutor and special projects.",
+  "min_age": 14,
+  "max_age": 18,
+  "who_can_apply": "The page says 'Be 14-18 years of age or older' and 'Currently enrolled in high school'.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Volunteers can earn silver cord hours for graduation.",
+  "season": "year-round",
+  "duration": "Set number of hours not stated for teens.",
+  "status": "rolling",
+  "deadline_text": "No deadline posted on the program page.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the online volunteer application. Then do a placement interview and orientation. Other steps are a handbook review, state and national background checks, a health screening, an annual flu shot and a TB test. Email DM_Volunteers@unitypoint.org or call (515) 263-5227.",
+  "url": "https://www.unitypoint.org/join-our-team/volunteers/iowa-lutheran-hospital---des-moines",
+  "apply_url": "https://www.volgistics.com/appform/1540876501",
+  "sources_fetched": [
+   "https://www.unitypoint.org/join-our-team/volunteers/iowa-lutheran-hospital---des-moines"
+  ],
+  "priority": 2,
+  "notes": "This card is for Iowa Lutheran Hospital only. Other UnityPoint hospitals in Des Moines have their own volunteer pages; teen rules for them were not read. The health screening, flu shot and TB test take time, so start early.",
+  "grades": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "grades": "Students entering their senior year (the 2026 program also allowed 2026 graduates)",
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": null,
+  "max_age": null,
+  "needs_work_permit": false,
+  "priority": 2,
+  "fields": [
+   "environment",
+   "science"
+  ],
+  "id": "university-of-montana-schwanke-honors-institute",
+  "name": "Schwanke Honors Institute",
+  "org": "University of Montana Davidson Honors College",
+  "regions": [
+   "montana"
+  ],
+  "city": "Missoula, MT (also Polson and Greenough)",
+  "type": "pre-college",
+  "what_you_do": "Choose one of two college courses with an environment theme. You earn two college credits.",
+  "who_can_apply": "In 2026: high school students entering their senior year and 2026 high school graduates. The page says the 2027 details will be updated later.",
+  "paid_type": "fee-based",
+  "pay_detail": "2026 cost: $2,800 for tuition, course fees, housing, all meals and program costs. Scholarships are worth about 10 to 50 percent of the cost and need a separate application.",
+  "season": "summer",
+  "duration": "About 10 days (2026 dates: June 10 to 19)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Check back in early 2027 for the 2027 application and dates. 2026 details are shown as an example only.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the online application. You fill out a separate scholarship application too. Got a question? Call 406-243-2537. Or send a note to bethany.applegate@umontana.edu.",
+  "url": "https://www.umt.edu/honors-college/admissions/schwanke-honors-institute/",
+  "sources_fetched": [
+   "https://www.umt.edu/pre-college/",
+   "https://www.umt.edu/pre-college/summer-exploration/",
+   "https://www.umt.edu/honors-college/admissions/schwanke-honors-institute/"
+  ],
+  "notes": "Students earn two college credits. The page says to check back in early 2027 for updated information and the application.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
   "id": "university-of-utah-paths-college-access",
   "name": "PATHS (University of Utah)",
   "org": "University of Utah, Continuing and Community Engagement",
@@ -83812,6 +86529,48 @@
   "priority": 3,
   "notes": "The page text looks old (it lists a May 30, 2022 deadline). Email or call before you plan around it. For 8th graders only, so it is for students about to start 9th grade.",
   "verified_on_label": "Oct 10, 2026"
+ },
+ {
+  "grades": "10th grade (rising juniors)",
+  "opens_iso": "2026-10-01",
+  "apply_url": "https://www.uwyo.edu/hsi/how-to-apply.html",
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": null,
+  "max_age": null,
+  "needs_work_permit": false,
+  "priority": 1,
+  "fields": [
+   "science",
+   "education"
+  ],
+  "id": "university-of-wyoming-summer-high-school-institute",
+  "name": "Summer High School Institute (HSI)",
+  "org": "University of Wyoming",
+  "regions": [
+   "wyoming"
+  ],
+  "city": "Laramie, WY",
+  "type": "pre-college",
+  "what_you_do": "A three-week summer program for Wyoming 10th graders. You live on the University of Wyoming campus.",
+  "who_can_apply": "Current 10th graders at a public or private high school in Wyoming or homeschooled, who live in Wyoming and plan to return to a Wyoming school. Must stay all three weeks.",
+  "paid_type": "fee-based",
+  "pay_detail": "Room, board and supplies are paid by funds from the Wyoming Legislature. There is a $325 activity fee. Travel and personal spending are on the student.",
+  "season": "summer",
+  "duration": "Three weeks in June (the exact 2027 dates are not stated on the program pages)",
+  "status": "open-now",
+  "deadline_text": "Applications for HSI 2027 opened October 1, 2026. All pieces are due by February 7, 2027.",
+  "deadline_iso": "2027-02-07",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the online student application. It needs a personal statement. This is an essay of at least 300 words or a video of no more than 4 minutes. It also needs an awards and achievements list and a recommendation letter. Your counselor uploads your transcript.",
+  "url": "https://www.uwyo.edu/hsi/",
+  "sources_fetched": [
+   "https://www.uwyo.edu/hsi/",
+   "https://www.uwyo.edu/hsi/how-to-apply.html",
+   "https://www.uwyo.edu/hsi/about/faq.html"
+  ],
+  "notes": "The how-to-apply page says HSI 2027 applications open October 1 and all pieces are due February 7, 2027. Wyoming students only.",
+  "verified_on_label": "Oct 12, 2026"
  },
  {
   "id": "us-senate-page-program",
@@ -87558,6 +90317,205 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "wichita-public-library-teen-advisory-board-and-volunteers",
+  "name": "Teen Advisory Board and Summer Reading Teen Volunteers",
+  "org": "Wichita Public Library",
+  "regions": [
+   "kansas"
+  ],
+  "city": "Wichita, KS",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "any"
+  ],
+  "what_you_do": "Teen Advisory Board members meet monthly. They share ideas on teen programs and the teen collection. Summer Reading teen volunteers help families sign up, tidy, shelve, prepare crafts and help at events.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Teen Advisory Board: grades 6-12",
+  "who_can_apply": "The Teen Advisory Board is open to teens in grades 6 to 12. The program page does not give a grade rule for the Summer Reading volunteers.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Members earn volunteer hours. Summer Reading teens can earn more than 30 hours.",
+  "season": "year-round",
+  "duration": "Teen Advisory Board: one meeting a month at the Advanced Learning Library. Summer Reading volunteers: during the summer program.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Teen Advisory Board: email the teen librarian to join. The 2026 Summer Reading volunteer applications have ended. No 2027 dates are posted on the program page.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "For the Teen Advisory Board, email the teen librarian named on the page. Watch the same page for the next Summer Reading Volunteer application.",
+  "needs_work_permit": false,
+  "url": "https://www.wichitalibrary.org/Youth/Teens/Pages/volunteer.aspx",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.wichitalibrary.org/Youth/Teens/Pages/volunteer.aspx"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 2,
+  "notes": "The Summer Reading volunteer program has run since 1990, says the page. The library's main Volunteer page lists other volunteer options.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "wichita-sedgwick-county-zoo-special-event-volunteer",
+  "name": "Special Event Volunteer (age 14 and up)",
+  "org": "Sedgwick County Zoo",
+  "regions": [
+   "kansas"
+  ],
+  "city": "Wichita, KS",
+  "type": "volunteer",
+  "fields": [
+   "environment",
+   "science"
+  ],
+  "what_you_do": "Volunteers help run zoo special events like Easter Eggstravaganza, Boo at the Zoo and Zoobilee. You can sign up for all events or only the ones that fit your schedule.",
+  "min_age": 14,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Age 14 or older for special events. For some events, volunteers under 18 must come with an adult. Husbandry aide volunteers must be 18.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Event by event, spread through the year",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "The zoo says it is currently taking special event volunteer applications. Orientation is held twice a month; the last one this year is October 22, 2026, and the next is April 2027.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use the Get Started link on the volunteer page to contact the zoo, complete a volunteer application, and go to a volunteer orientation (2nd Saturday 8 to 10 a.m. or 4th Thursday 4 to 6 p.m. at the Cargill Learning Center).",
+  "needs_work_permit": false,
+  "url": "https://scz.org/volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://scz.org/volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 2,
+  "notes": "Quote from the page: Must be 14 years of age to volunteer for Special Events. Groups can do service days in the zoo departments from age 16, scheduled two weeks ahead, April through October. Adults 18 and over must pass a background check.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "wichita-wesley-medical-center-volunteer",
+  "name": "Wesley Medical Center Volunteer Program",
+  "org": "Wesley Healthcare",
+  "regions": [
+   "kansas"
+  ],
+  "city": "Wichita, KS",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Volunteers work an information desk. They escort patients and guests. They help in the emergency department and hospital units. They also support families with comfort care. No direct medical care.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Applicants must be 16 or older. Wesley does not take volunteers for court-ordered hours, and it does not offer one-time or group volunteering.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "At least 4 shifts a month and 60 total hours, which the page says takes about six months",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline stated. Download, fill out and mail or email the application any time.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Download the volunteer application and fill it out. Then mail it to Wesley Volunteer Services, 550 N. Hillside St., Wichita, KS 67214, or scan and email it. Next come a personal interview and a criminal background check. Then you submit personal health records and go to orientation.",
+  "needs_work_permit": false,
+  "url": "https://www.wesleymc.com/about-us/volunteers",
+  "apply_url": "https://www.hcadam.com/api/public/content/Wesley_Volunteer_Application?v=49aeed28",
+  "sources_fetched": [
+   "https://www.wesleymc.com/about-us/volunteers"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 2,
+  "notes": "Quote from the page: Applicants must be 16 years of age or older. Volunteers must keep up a regular schedule. A mandatory flu shot policy applies in flu season.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "wichita-ymca-job-prep-teen-summer-jobs",
+  "name": "Job Prep (free course that leads to a summer job)",
+  "org": "Greater Wichita YMCA",
+  "regions": [
+   "kansas"
+  ],
+  "city": "Wichita and Newton, KS",
+  "type": "paid-youth-program",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "A free weekly class teaches job applications, resumes, dressing for work, money skills and mock interviews. You also earn CPR-AED and First Aid certification. Students who pass qualify for a summer job.",
+  "min_age": 15,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "Teens ages 15 to 17. Classes are at several YMCA branches and Wichita high schools. Newton picks 15 students based on birthdate and location.",
+  "paid_type": "paid",
+  "pay_detail": "The course is free. The summer job is the reward; the program page does not state the pay.",
+  "season": "school-year",
+  "duration": "Class once a week for 2 hours, February to May",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Last cycle: Wichita enrollment deadline January 12, 2026. Newton applications were accepted until December 15, 2025. The next dates are not posted on the program page.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the online enrollment form. Or use a printable form from the page and turn it in at your YMCA branch front desk. You can also email the Job Prep contact on the page.",
+  "needs_work_permit": null,
+  "url": "https://ymcawichita.org/programs/more-explore/job-prep",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://ymcawichita.org/programs/more-explore/job-prep"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 1,
+  "notes": "Spots are limited. The page names past summer job sites. They include the Sedgwick County Zoo, the Wichita Art Museum and Exploration Place. They also include Wesley Medical Center and Wichita Habitat for Humanity. The page says over 350 summer jobs were offered. The Workforce Alliance YEP page also points teens to this program.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "wichita-youth-employment-project-yep",
+  "name": "Youth Employment Project (YEP)",
+  "org": "Workforce Alliance of South Central Kansas",
+  "regions": [
+   "kansas"
+  ],
+  "city": "Wichita, KS",
+  "type": "paid-youth-program",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Free job-skills workshops cover workplace etiquette, customer service, resume and interview skills, and money. You earn a Youth Essential Skills Certificate. Age 16 and up can then be matched to a paid summer work placement.",
+  "min_age": 14,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Workshops are open to anyone age 14 and older. Work experience placements need you to be at least 16 by June 1 of that year. The workforce centers are in Wichita, El Dorado, Wellington and Arkansas City. Some employers only place ages 18 and older.",
+  "paid_type": "paid",
+  "pay_detail": "Placements pay at least $7.25 per hour. Workshops do not pay. Most placements are 20 hours a week or less and last 8 weeks or less.",
+  "season": "summer",
+  "duration": "Workshops March to June. Most jobs run June to August.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "The FAQ says to register by June 1 or as soon as possible; workshops and job fairs start in March to May. The FAQ page says registration is open, but it does not give a year.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Make a KANSASWORKS account. Then fill out the YEP registration form. Once it is on file, you are sent information to sign up for workshops and job fairs. Age 14 to 17: bring a non-expired picture ID and birth certificate, plus a signed Social Security card, for a work placement.",
+  "needs_work_permit": null,
+  "url": "https://workforce-ks.com/YEP/",
+  "apply_url": "https://www.surveymonkey.com/r/6L3KF5S",
+  "sources_fetched": [
+   "https://workforce-ks.com/YEP/",
+   "https://workforce-ks.com/YEP/youthemploymentprojectfaq/",
+   "https://workforce-ks.com/programs/wioayouthprogram/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 1,
+  "notes": "Camp HYPE is listed for age 15. The FAQ also points to the City of Wichita Way to Work program and the YMCA Job Prep program. A different Workforce Alliance program, WIOA Youth, is for out-of-school youth ages 16 to 24 with barriers and an income limit.",
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
   "id": "wikipedia-editing",
   "name": "Wikipedia Editing",
   "org": "Wikimedia Foundation volunteers",
@@ -88495,6 +91453,46 @@
   "verified_on_label": "Oct 7, 2026"
  },
  {
+  "grades": null,
+  "opens_iso": "2027-01-01",
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": 12,
+  "max_age": 15,
+  "needs_work_permit": false,
+  "priority": 2,
+  "fields": [
+   "environment",
+   "science"
+  ],
+  "id": "wyoming-game-and-fish-youth-conservation-camps",
+  "name": "Wyoming Game and Fish Youth Camps (Girls Camp and Boys Camp)",
+  "org": "Wyoming Game and Fish Department",
+  "regions": [
+   "wyoming"
+  ],
+  "city": "Wyoming (statewide)",
+  "type": "pre-college",
+  "what_you_do": "A week-long camp. It has hands-on lessons in identifying animals, watersports, science research and archery.",
+  "who_can_apply": "Ages 12 to 15 at the start of camp. Separate Girls Camp and Boys Camp weeks. Residency rules are not stated on the program page.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page. The camps are funded in partnership with the Wyldlife Fund.",
+  "season": "summer",
+  "duration": "About one week (2026: Boys Camp June 14 to 20, Girls Camp July 5 to 11)",
+  "status": "opens-soon",
+  "deadline_text": "Applications are closed for 2026. The page says applications open January 1, 2027. A closing date is not stated.",
+  "deadline_iso": null,
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Use the Apply link on the camps page when it opens. Questions: Parker Everhart, parker.everhart@wyo.gov, 307-823-2368.",
+  "url": "https://wgfd.wyo.gov/education-camps/camps/youth-camps",
+  "notes": "Ages 12 to 15 only, so older teens should look at other cards.",
+  "sources_fetched": [
+   "https://wgfd.wyo.gov/education-camps/camps/youth-camps"
+  ],
+  "verified_on_label": "Oct 12, 2026"
+ },
+ {
   "grades": "Incoming grades 9 to 12",
   "apply_url": null,
   "verified": "fetched",
@@ -88575,6 +91573,47 @@
   "priority": 1,
   "notes": "B-Unbound is the online platform for finding opportunities (interviews, tours, job shadowing, projects, internships). Placement depends on available mentors, so ask early. The stipend is paid after you finish the requirements. Email: CCR@ycoe.org. Paid work for people under 18 in California needs a Permit to Employ and Work. See permit.html?state=ca for the exact permit and steps.",
   "verified_on_label": "Oct 7, 2026"
+ },
+ {
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": 15,
+  "max_age": 18,
+  "needs_work_permit": null,
+  "priority": 1,
+  "fields": [
+   "environment"
+  ],
+  "id": "yellowstone-national-park-youth-conservation-corps",
+  "name": "Yellowstone Youth Conservation Corps (YCC)",
+  "org": "National Park Service, Yellowstone National Park",
+  "regions": [
+   "wyoming",
+   "national"
+  ],
+  "city": "Yellowstone National Park",
+  "type": "paid-youth-program",
+  "what_you_do": "A month-long paid program where teens work 40 hours a week in Yellowstone National Park.",
+  "who_can_apply": "Ages 15 to 18. You must be a US citizen or permanent resident with a valid Social Security number. Teens are picked randomly from across the country, so you do not have to live in Wyoming.",
+  "paid_type": "paid",
+  "pay_detail": "$10.50 an hour for 40 hours a week, with a small food charge (about $3 a day).",
+  "season": "summer",
+  "duration": "1 month (2026 sessions: June 14 to July 15 and July 19 to August 18)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The 2026 application period is closed (applicants were told their status by April 7, 2026). 2027 dates are not posted yet.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply through the YCC page on the Yellowstone park website when the window opens. Selection is random. Questions: phone 307-344-7381.",
+  "url": "https://www.nps.gov/yell/learn/management/yccjobs.htm",
+  "sources_fetched": [
+   "https://www.nps.gov/yell/learn/management/yccjobs.htm",
+   "https://www.nps.gov/yell/learn/news/24002.htm"
+  ],
+  "notes": "Wage and dates above are from the 2026 page. Teen enrollees are randomly selected from across the country.",
+  "verified_on_label": "Oct 12, 2026"
  },
  {
   "id": "yep-youth-employment-partnership",
@@ -89471,6 +92510,46 @@
    "https://zooatlanta.org/program/volunteen-program/"
   ],
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "min_age": 15,
+  "max_age": 18,
+  "needs_work_permit": null,
+  "priority": 2,
+  "fields": [
+   "environment",
+   "education"
+  ],
+  "id": "zoomontana-zooteens-billings",
+  "name": "ZooTeens",
+  "org": "ZooMontana",
+  "regions": [
+   "montana"
+  ],
+  "city": "Billings, MT",
+  "type": "volunteer",
+  "what_you_do": "Go to a training session with a hands-on animal encounter. Then help zoo education staff run at least one five-day children's summer camp.",
+  "who_can_apply": "Teens ages 15 to 18 at the time of their orientation session. You must be able to attend one weekend orientation.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page (the page describes it as a chance to learn job skills and leadership).",
+  "season": "summer",
+  "duration": "One orientation plus at least one five-day camp",
+  "status": "unconfirmed",
+  "deadline_text": "Not stated on the program page. The page gives no year or deadline.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Teens or parents can ask for information. To do that, send an email to the zoo. The address is education@zoomontana.org.",
+  "url": "https://www.zoomontana.org/zoomontana-teen-camp",
+  "notes": "The page does not say what year it is for. Email the zoo to ask when the next orientation is.",
+  "sources_fetched": [
+   "https://www.zoomontana.org/zoomontana-teen-camp"
+  ],
+  "verified_on_label": "Oct 12, 2026"
  },
  {
   "id": "zooniverse",

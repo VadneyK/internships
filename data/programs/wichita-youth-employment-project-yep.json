@@ -1,0 +1,40 @@
+{
+  "id": "wichita-youth-employment-project-yep",
+  "name": "Youth Employment Project (YEP)",
+  "org": "Workforce Alliance of South Central Kansas",
+  "regions": [
+    "kansas"
+  ],
+  "city": "Wichita, KS",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Free job-skills workshops cover workplace etiquette, customer service, resume and interview skills, and money. You earn a Youth Essential Skills Certificate. Age 16 and up can then be matched to a paid summer work placement.",
+  "min_age": 14,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Workshops are open to anyone age 14 and older. Work experience placements need you to be at least 16 by June 1 of that year. The workforce centers are in Wichita, El Dorado, Wellington and Arkansas City. Some employers only place ages 18 and older.",
+  "paid_type": "paid",
+  "pay_detail": "Placements pay at least $7.25 per hour. Workshops do not pay. Most placements are 20 hours a week or less and last 8 weeks or less.",
+  "season": "summer",
+  "duration": "Workshops March to June. Most jobs run June to August.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "The FAQ says to register by June 1 or as soon as possible; workshops and job fairs start in March to May. The FAQ page says registration is open, but it does not give a year.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Make a KANSASWORKS account. Then fill out the YEP registration form. Once it is on file, you are sent information to sign up for workshops and job fairs. Age 14 to 17: bring a non-expired picture ID and birth certificate, plus a signed Social Security card, for a work placement.",
+  "needs_work_permit": null,
+  "url": "https://workforce-ks.com/YEP/",
+  "apply_url": "https://www.surveymonkey.com/r/6L3KF5S",
+  "sources_fetched": [
+    "https://workforce-ks.com/YEP/",
+    "https://workforce-ks.com/YEP/youthemploymentprojectfaq/",
+    "https://workforce-ks.com/programs/wioayouthprogram/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 1,
+  "notes": "Camp HYPE is listed for age 15. The FAQ also points to the City of Wichita Way to Work program and the YMCA Job Prep program. A different Workforce Alliance program, WIOA Youth, is for out-of-school youth ages 16 to 24 with barriers and an income limit."
+}

@@ -1,0 +1,38 @@
+{
+  "id": "wichita-wesley-medical-center-volunteer",
+  "name": "Wesley Medical Center Volunteer Program",
+  "org": "Wesley Healthcare",
+  "regions": [
+    "kansas"
+  ],
+  "city": "Wichita, KS",
+  "type": "volunteer",
+  "fields": [
+    "health"
+  ],
+  "what_you_do": "Volunteers work an information desk. They escort patients and guests. They help in the emergency department and hospital units. They also support families with comfort care. No direct medical care.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Applicants must be 16 or older. Wesley does not take volunteers for court-ordered hours, and it does not offer one-time or group volunteering.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "At least 4 shifts a month and 60 total hours, which the page says takes about six months",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline stated. Download, fill out and mail or email the application any time.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Download the volunteer application and fill it out. Then mail it to Wesley Volunteer Services, 550 N. Hillside St., Wichita, KS 67214, or scan and email it. Next come a personal interview and a criminal background check. Then you submit personal health records and go to orientation.",
+  "needs_work_permit": false,
+  "url": "https://www.wesleymc.com/about-us/volunteers",
+  "apply_url": "https://www.hcadam.com/api/public/content/Wesley_Volunteer_Application?v=49aeed28",
+  "sources_fetched": [
+    "https://www.wesleymc.com/about-us/volunteers"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 2,
+  "notes": "Quote from the page: Applicants must be 16 years of age or older. Volunteers must keep up a regular schedule. A mandatory flu shot policy applies in flu season."
+}

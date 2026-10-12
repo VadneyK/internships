@@ -1,0 +1,38 @@
+{
+  "id": "fargo-park-district-lifeguard-jobs",
+  "name": "Fargo Park District Lifeguard Jobs",
+  "org": "Fargo Park District",
+  "regions": [
+    "north-dakota"
+  ],
+  "city": "Fargo, ND",
+  "type": "paid-youth-program",
+  "fields": [
+    "sports",
+    "health"
+  ],
+  "what_you_do": "Work as a lifeguard at the district's pools. Shifts are on weekdays and some weekends over the summer. You need a current American Red Cross lifeguard certificate.",
+  "min_age": 15,
+  "who_can_apply": "You must be 15 or older. You also need a current American Red Cross lifeguard certificate. The page links to upcoming classes.",
+  "paid_type": "paid",
+  "pay_detail": "$17 to $19 per hour",
+  "season": "summer",
+  "duration": "Summer. Exact start and end dates are not stated on the program page.",
+  "status": "rolling",
+  "deadline_text": "No application deadline is posted on the program page.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use the Apply Now link on the lifeguard page, which goes to the district's job portal. Questions: isinkler@fargoparks.com (Aquatics team).",
+  "url": "https://fargoparks.com/lifeguards",
+  "sources_fetched": [
+    "https://fargoparks.com/lifeguards"
+  ],
+  "priority": 1,
+  "notes": "Take the Red Cross certification class first. The page links to the class list. Fargo Park District also has other seasonal jobs and an internship program on its Employment page. North Dakota work rules for minors were not checked.",
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "needs_work_permit": null,
+  "max_age": null,
+  "deadline_iso": null
+}
