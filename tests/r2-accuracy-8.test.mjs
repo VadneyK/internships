@@ -8,6 +8,9 @@ import fs from "node:fs";
 
 const rd = (p) => fs.readFileSync(new URL("../" + p, import.meta.url), "utf8");
 const META = JSON.parse(rd("data/meta.json"));
+// The day the Bay Area transit pages were last read. It moves only when those pages are read again,
+// not when new program cards raise the site-wide checked date in meta.json.
+const BAY_AREA_READ = "Oct 10, 2026";
 
 test("ready: Yolobus row uses the agency-page sentence and drops 'Fares listed'", () => {
   const src = rd("src/ready.html");
@@ -20,8 +23,7 @@ test("ready: Yolobus row uses the agency-page sentence and drops 'Fares listed'"
 
 test("ready: one read-on line sits under the Bay Area table with the meta date", () => {
   const src = rd("src/ready.html");
-  const label = META.checked_label;
-  assert.ok(label, "data/meta.json must carry checked_label");
+  const label = BAY_AREA_READ;
   const line = `We read these Bay Area pages on ${label}. Ages and discounts can change`;
   assert.equal(src.split(line).length - 1, 1, "exactly one read-on line");
   // The line comes after the table and before the Under 13 note.
@@ -34,7 +36,7 @@ test("ready: one read-on line sits under the Bay Area table with the meta date",
 test("ready: built page carries the same Yolobus and read-on text", () => {
   const built = rd("ready.html");
   assert.match(built, /The agency page says this is effective through June 30, 2027\./);
-  assert.match(built, new RegExp(`We read these Bay Area pages on ${META.checked_label}\\.`));
+  assert.match(built, new RegExp(`We read these Bay Area pages on ${BAY_AREA_READ}\\.`));
   assert.doesNotMatch(built, /Fares listed are effective/);
 });
 

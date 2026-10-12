@@ -69,6 +69,12 @@ const ALLOW = {
   "louisville-summerworks": "max_age 19 is what the program page says. The 16 to 21 range is from an older news post from the same group.",
   "portland-multnomah-county-library-teen-council": "max_age 18 is right for middle and high school students. The 9 to 12 range is a separate Tween Council.",
   "salem-oregon-humane-youth-volunteer": "max_age 17 is what the Apply Now button says. The 12 to 15 range is the group that volunteers with a parent or guardian.",
+  // Added 2026-10-12 for the new state cards.
+  "nyc-central-park-conservancy-teen-volunteer-days": "The page says ages 13 to 18 in one place and 13 to 17 in another, and the text says to ask. max_age 17 is the stricter reading.",
+  "atlanta-community-food-bank-teen-volunteers": "Open to age 8 and up with no upper age. The 8 to 11 and 12 to 17 ranges are the adult-to-youth ratios for groups.",
+  "los-angeles-dcfs-independent-living-program": "The 16 to 18 range is the ages when the youth was in foster care, not an age limit to join.",
+  "missouri-4h-youth-development": "The card is about the whole 4-H program. The 5 to 18 range is only the SPIN clubs.",
+  "tucson-village-farm-summer-camp-teen-counselors": "The 5 to 18 range is the campers. The page gives no age rule for teen counselors, so max_age stays null.",
   // "austin-humane-society-teen-volunteer": "Tiered roles, 14 to 15 and 16 to 17; max_age 17 is the top tier.",
 };
 

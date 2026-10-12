@@ -1,0 +1,38 @@
+{
+  "id": "nyc-dycd-runaway-and-homeless-youth-services",
+  "name": "NYC Runaway and Homeless Youth services (drop-in centers, shelter, housing)",
+  "org": "NYC Department of Youth and Community Development (DYCD)",
+  "regions": [
+    "new-york-city"
+  ],
+  "city": "New York, NY",
+  "type": "volunteer",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "City-funded help for young people with no safe place to stay. Drop-in centers give food, clothing, counseling and referrals. Other programs give emergency shelter, longer-term housing and street outreach.",
+  "min_age": null,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Drop-in centers are for youth up to age 24 and their families. Housing for independent living is for ages 16 to 24 who have no home. The page does not state ages for crisis shelter and outreach.",
+  "paid_type": "not-stated",
+  "pay_detail": "The page does not list a cost.",
+  "season": "year-round",
+  "duration": null,
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline. Hours are not stated on the page.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use the discoverDYCD site to find a drop-in center, shelter or housing site near you. The page does not give a phone number.",
+  "needs_work_permit": null,
+  "url": "https://www.nyc.gov/site/dycd/services/runaway-homeless-youth.page",
+  "apply_url": "https://discoverdycd.dycdconnect.nyc/home",
+  "sources_fetched": [
+    "https://www.nyc.gov/site/dycd/services/runaway-homeless-youth.page"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 2,
+  "notes": "This is a safety and housing service, not a job. If you are in danger right now, call 911. The Door and Covenant House (other cards) also take walk-ins."
+}

@@ -1,0 +1,39 @@
+{
+  "id": "illinois-dcfs-employment-job-training-apprenticeship-incentive",
+  "name": "Illinois DCFS Employment, Job Training and Apprenticeship Incentive Program",
+  "org": "Illinois Department of Children and Family Services",
+  "regions": [
+    "illinois"
+  ],
+  "city": "Illinois (statewide)",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "A money benefit for teens in DCFS care who have a job, are in job training or are in an approved apprenticeship. It helps youth build work skills.",
+  "min_age": 17,
+  "max_age": 20,
+  "grades": null,
+  "who_can_apply": "Youth in DCFS care ages 17 to 20 who work 20 hours a week or 80 hours a month. Youth in job training or an approved apprenticeship can also apply. Older former foster youth have a separate apprenticeship rule.",
+  "paid_type": "stipend",
+  "pay_detail": "The page says it gives financial services but does not list the amount.",
+  "season": "year-round",
+  "duration": null,
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline stated.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out form CFS 449-2. Then email it to the DCFS Office of Education and Transition Services, or fax it to 217-524-2101. Ask your caseworker for help.",
+  "needs_work_permit": null,
+  "url": "https://dcfs.illinois.gov/brighter-futures/independence/moneysmartandjobsavvy.html",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://dcfs.illinois.gov/brighter-futures/independence/moneysmartandjobsavvy.html",
+    "https://dcfs.illinois.gov/brighter-futures/independence/life-skills.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 2,
+  "notes": "Only for youth in DCFS care (or certain former foster youth). Call 312-814-6800 or 217-785-2509 for help. DCFS Advocacy Office: 800-232-3798."
+}

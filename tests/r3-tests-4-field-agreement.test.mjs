@@ -49,6 +49,8 @@ const ALLOW_PAY = [
   // Free; the dollar amount is a later college scholarship, and the text says there is no stipend.
   "twin-cities-umn-rooted-in-stem",
   "waubonsee-upward-bound-aurora",
+  // Free; the dollar amounts are cash prizes for winning entries, not pay (added 2026-10-12).
+  "nfte-world-series-of-innovation",
 ];
 
 // Rule B reason: the page says paid but gives no rate, so the text has no
@@ -86,6 +88,8 @@ const ALLOW_AGE = [
   "pg-parks-summer-youth-volunteers",
   "santa-barbara-zoo-seasonal-jobs",
   "ymca-orange-county-volunteer",
+  // min_age 8 is the youngest age with an adult; the text also names 12 to 17 group ratios (added 2026-10-12).
+  "atlanta-community-food-bank-teen-volunteers",
   // Same pattern: min_age 8 is the youngest age with an adult; the text also names 13 to go alone.
   "madison-dane-county-humane-society-youth-volunteer",
   // min_age 8 is the youngest age with a parent or guardian; the text also names 16 to volunteer alone (r3-data-content-3).

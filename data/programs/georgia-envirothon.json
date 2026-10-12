@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "min_age": null,
+  "max_age": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-11",
+  "needs_work_permit": false,
+  "deadline_iso": "2027-03-20",
+  "priority": 2,
+  "fields": [
+    "environment",
+    "science"
+  ],
+  "id": "georgia-envirothon",
+  "name": "Georgia Envirothon",
+  "org": "Georgia Envirothon (Georgia Soil and Water Conservation Commission and partners)",
+  "regions": [
+    "georgia"
+  ],
+  "city": "Statewide, GA (state contest in Lavonia)",
+  "type": "school-pathway",
+  "what_you_do": "Teams of 4 to 6 students learn about wildlife, forests, water life, soil and land use. They also study a current issue. Then they compete at a state contest with field tests and a talk.",
+  "who_can_apply": "Middle and high school teams of 4 to 6 students. The page does not give grade rules.",
+  "paid_type": "fee-based",
+  "pay_detail": "$250 registration fee per team. Lunch is included.",
+  "season": "spring",
+  "duration": "1 day contest",
+  "status": "open-now",
+  "deadline_text": "Training day Oct 28, 2026 (Eastanollee, GA). Competition registration deadline March 20, 2027. Competition April 27, 2027 at Tugaloo State Park.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Go to the Resources tab of the Georgia Envirothon site. Use the sign-up section.",
+  "url": "https://www.gaenvirothon.com/",
+  "sources_fetched": [
+    "https://www.gaenvirothon.com/",
+    "https://gaswcc.georgia.gov/georgia-envirothon"
+  ],
+  "notes": "Late registration may mean no lunch count or no team shirt. The page also lists October 9, 2026 as a training day registration date."
+}

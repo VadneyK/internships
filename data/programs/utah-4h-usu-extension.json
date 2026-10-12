@@ -1,0 +1,42 @@
+{
+  "id": "utah-4h-usu-extension",
+  "name": "Utah 4-H",
+  "org": "Utah State University Extension",
+  "regions": [
+    "utah"
+  ],
+  "city": "All 29 Utah counties",
+  "type": "leadership",
+  "fields": [
+    "environment",
+    "education",
+    "any"
+  ],
+  "what_you_do": "Join clubs, camps and hands-on projects in farming, science, leadership and healthy living. Sign up through your county 4-H program.",
+  "min_age": null,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Youth ages 5 to 18 in any Utah county. Find your county office to sign up.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the page. Ask your county office about fees.",
+  "season": "year-round",
+  "duration": "Ongoing",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Join through your county 4-H office.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use the Find your County Office link on the Utah 4-H site, then ask that office how to join. Registration for state events is through Zsuite.",
+  "needs_work_permit": false,
+  "url": "https://extension.usu.edu/utah4h/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://extension.usu.edu/utah4h/",
+    "https://extension.usu.edu/utah4h/events/",
+    "https://extension.usu.edu/utah4h/programs/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-11",
+  "priority": 3,
+  "notes": "State events include Teen Summit, Teen Winter Retreat and Mock Legislature. Fees and dates differ by county and event. Ask your county office."
+}

@@ -1,0 +1,41 @@
+{
+  "id": "nevada-4h-youth-development",
+  "name": "Nevada 4-H Youth Development",
+  "org": "University of Nevada, Reno Extension",
+  "regions": [
+    "nevada"
+  ],
+  "city": "County Extension offices, Nevada",
+  "type": "leadership",
+  "fields": [
+    "environment",
+    "education",
+    "any"
+  ],
+  "what_you_do": "Join a county 4-H club and pick projects to explore. Take part in county activities, camps, workshops and the county fair.",
+  "min_age": 9,
+  "max_age": 19,
+  "grades": null,
+  "who_can_apply": "Members are ages 9 to 19 as of January 1 of the current year. Younger Cloverbuds are ages 5 to 8.",
+  "paid_type": "fee-based",
+  "pay_detail": "Costs vary: project books, project supplies, a county activity fee, club dues and event fees.",
+  "season": "year-round",
+  "duration": "Ongoing",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Join any time, but join by your county's 4-H enrollment deadline to take part in Fair.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Contact your county Extension office to enroll and find a club.",
+  "needs_work_permit": false,
+  "url": "https://extension.unr.edu/4h/join-4h.aspx",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://extension.unr.edu/4h",
+    "https://extension.unr.edu/4h/join-4h.aspx"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-11",
+  "priority": 3,
+  "notes": "Also open to younger kids. Fee amounts are set by each county and club. Ask your county Extension office."
+}

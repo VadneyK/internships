@@ -101,8 +101,12 @@ const SHARED_URL_ALLOW = new Map([
     reason: "Same link on 2 cards (University of California (UC Davis campus); University of California, Irvine (COSMOS)). Not yet reviewed as a shared hub or a duplicate.",
   }],
   ["https://enroll.jobcorps.gov", {
-    ids: ["job-corps-georgia-brunswick-turner", "job-corps-minnesota-hubert-h-humphrey", "job-corps-sacramento", "job-corps-texas-gary-san-marcos", "job-corps-washington-centers"],
+    ids: ["job-corps-georgia-brunswick-turner", "job-corps-minnesota-hubert-h-humphrey", "job-corps-sacramento", "job-corps-texas-gary-san-marcos", "job-corps-washington-centers", "national-job-corps-free-training-ages-16-24"],
     reason: "Shared hub: one federal Job Corps enrollment page that many centers link to.",
+  }],
+  ["https://4h.zsuite.org", {
+    ids: ["new-mexico-4h-nmsu", "utah-4h-mock-legislature"],
+    reason: "Shared hub: the 4-H registration site (Zsuite) that several state 4-H programs use.",
   }],
   ["https://fermilab.wd5.myworkdayjobs.com/en-US/FermilabCareers", {
     ids: ["fermilab-prism", "fermilab-valor-jrotc"],

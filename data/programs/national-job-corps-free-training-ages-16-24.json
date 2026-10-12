@@ -1,0 +1,39 @@
+{
+  "id": "national-job-corps-free-training-ages-16-24",
+  "name": "Job Corps (free career training for ages 16 to 24)",
+  "org": "U.S. Department of Labor, Job Corps",
+  "regions": [
+    "national"
+  ],
+  "city": "Nationwide",
+  "type": "apprenticeship-trades",
+  "fields": [
+    "trades"
+  ],
+  "what_you_do": "Job Corps is free career training and a high school diploma or GED path, run on campuses across the country. Students can live on campus and get a living allowance.",
+  "min_age": 16,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Mostly low-income 16 to 24 year olds. You must be a U.S. citizen, a legal resident or allowed to work in the U.S. If you are under 18, a parent, guardian or approved adult must agree and meet an admissions rep. Some rules apply about drug use and criminal history.",
+  "paid_type": "stipend",
+  "pay_detail": "Free for students. A living allowance is paid every two weeks and goes up as training moves along. Amount not stated.",
+  "season": "year-round",
+  "duration": "Between 8 months and 3 years, depending on the training",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Apply any time. The site says the decision usually takes about two months.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Make an account on the sign-up site. Fill out the application. Interview with an admissions rep. Send papers such as your ID and proof that you are a citizen or resident. A campus review can take up to 30 days.",
+  "needs_work_permit": null,
+  "url": "https://www.jobcorps.gov/faqs",
+  "apply_url": "https://enroll.jobcorps.gov",
+  "sources_fetched": [
+    "https://www.jobcorps.gov/",
+    "https://www.jobcorps.gov/faqs"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 2,
+  "notes": "The FAQ says you may get in faster if you are homeless. It does not name foster youth, so ask an admissions rep. Only enter your ID or Social Security number on the official jobcorps.gov site, with a parent or guardian. Check that your nearest campus is open before you plan around it."
+}

@@ -1,0 +1,42 @@
+{
+  "grades": null,
+  "min_age": null,
+  "max_age": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-11",
+  "needs_work_permit": false,
+  "deadline_iso": null,
+  "priority": 1,
+  "fields": [
+    "environment",
+    "science",
+    "business-finance",
+    "any"
+  ],
+  "id": "florida-ffa-association",
+  "name": "Florida FFA",
+  "org": "Florida FFA Association",
+  "regions": [
+    "florida"
+  ],
+  "city": "Statewide, FL",
+  "type": "school-pathway",
+  "what_you_do": "FFA goes with your farm and food class. Members join chapter events, contests, leadership camps and the state convention.",
+  "who_can_apply": "Students enrolled in an agriculture course at their school. Joining a chapter in a nearby school district is a state and local decision.",
+  "paid_type": "fee-based",
+  "pay_detail": "National dues $7 per year plus state dues $10 per year. Local chapters may add dues.",
+  "season": "school-year",
+  "duration": "School year",
+  "status": "year-round",
+  "deadline_text": "No deadline. Join through your school's agriculture class.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Ask your school counselor or agriculture teacher to enroll you in an agriculture course. Use the Chapter Locator on the site.",
+  "url": "https://www.flaffa.org/membership/",
+  "sources_fetched": [
+    "https://www.flaffa.org/",
+    "https://www.flaffa.org/membership/",
+    "https://www.flaffa.org/leadership-conferences/"
+  ],
+  "notes": "For overnight events, an advisor or an adult your school approves must come with students. You also need a permission form and a medical form. Event fees pay for lodging and meals at most events."
+}

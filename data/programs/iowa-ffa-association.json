@@ -1,0 +1,38 @@
+{
+  "id": "iowa-ffa-association",
+  "name": "Iowa FFA",
+  "org": "Iowa FFA Association",
+  "regions": [
+    "national"
+  ],
+  "city": "Iowa (statewide)",
+  "type": "school-pathway",
+  "fields": [
+    "environment",
+    "business-finance"
+  ],
+  "what_you_do": "Iowa only. Students in farm and food classes build leadership and job skills. They do contests, work projects, conferences and the state convention.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Iowa only. Students in schools with a local FFA chapter. The page does not state grades or ages.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page.",
+  "season": "school-year",
+  "duration": "School year",
+  "status": "rolling",
+  "deadline_text": "The page does not state join dates. Dates for the state convention and officer selection are not on the home page.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Find your school's chapter with the Chapter Locator on iowaffa.com, or ask your ag teacher. Dues are not stated on the page.",
+  "needs_work_permit": null,
+  "url": "https://www.iowaffa.com/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.iowaffa.com/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-11",
+  "priority": 2,
+  "notes": "About 20,800 members in 273 chapters (per the page). Only schools with an ag program have a chapter. The site has no Iowa region, so this card is tagged national and teens in other states may still see it under National. The Iowa only line at the start of What you do and Who can apply is the only guard."
+}

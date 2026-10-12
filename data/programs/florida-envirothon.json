@@ -1,0 +1,40 @@
+{
+  "grades": "9 to 12",
+  "min_age": null,
+  "max_age": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-11",
+  "needs_work_permit": false,
+  "deadline_iso": "2027-01-15",
+  "priority": 2,
+  "fields": [
+    "environment",
+    "science"
+  ],
+  "id": "florida-envirothon",
+  "name": "Florida Envirothon",
+  "org": "Florida Envirothon",
+  "regions": [
+    "florida"
+  ],
+  "city": "Statewide, FL (state contest in Live Oak)",
+  "type": "school-pathway",
+  "what_you_do": "Teams of high school students compete on forestry, wildlife, water life, soils and a current issue. They win a regional contest first, then go to the state contest.",
+  "who_can_apply": "High school students on a team from a school, homeschool group, 4-H group or nature center group. A full team has 5 competing members. The team registration fee covers up to 2 advisors. Each county sends one team.",
+  "paid_type": "fee-based",
+  "pay_detail": "$300 per team, flat rate.",
+  "season": "spring",
+  "duration": "1 day state contest",
+  "status": "open-now",
+  "deadline_text": "Intent to compete due Jan 15 to regional coordinators. Team registration March 1. Payment March 7. State contest April 10, 2027 (tentative) at IFAS Live Oak.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Join your regional contest first. Regional leaders sign up the winning teams. Then advisors finish signing up and pay.",
+  "url": "https://www.flenvirothon.com/key-dates",
+  "sources_fetched": [
+    "https://www.flenvirothon.com/",
+    "https://www.flenvirothon.com/key-dates",
+    "https://www.flenvirothon.com/faqs"
+  ],
+  "notes": "The key dates page is titled 2026 but lists an April 2027 contest, so confirm the year with organizers. Teams of 4 or fewer can take part but not compete for places."
+}

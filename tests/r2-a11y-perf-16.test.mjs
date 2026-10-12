@@ -17,12 +17,13 @@ const size = (f) => fs.statSync(path.join(ROOT, "data", f)).size;
 // Raised on 2026-10-10 for index, find, calendar, insights and younger: the guide grew from 1,370 to 1,771 programs (about 29 percent), so the card, lite, stats and core files grew with it. The ceilings are still the new sums rounded up. No page gained a file; entries-blurb.json and expiring-dates.json are fetched by other pages only.
 const PAGES = {
   // index.html, insights.html and younger.html: raised on 2026-10-11 for ticket p7-regions-1 (267 new cards for 11 states): 715000 to 830000 (home file is 817,474 bytes), 530000 to 615000 (stats file is 606,688), 340000 to 390000 (core file plus younger.json is 385,653).
-  "index.html": { allowed: ["entries-home.json"], ceiling: 830000 },
-  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2030000 },
+  // Raised again on 2026-10-12 for the 178 more city cards (2,214 programs), PENDING PERSON APPROVAL: home file 889,144 bytes (ceiling 830000 to 920000), lite file 2,097,871 (2030000 to 2160000), stats file 659,043 (615000 to 680000), core file plus younger.json 417,763 (390000 to 430000).
+  "index.html": { allowed: ["entries-home.json"], ceiling: 920000 },
+  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2160000 },
   "calendar.html": { allowed: ["calendar.json", "entries-cal.json"], ceiling: 150000 },
-  "insights.html": { allowed: ["entries-stats.json"], ceiling: 615000 },
+  "insights.html": { allowed: ["entries-stats.json"], ceiling: 680000 },
   // younger.html: raised from 336000 to 340000 on 2026-10-11 (r5-younger-1: pet care card and address-safe script added 2.7 KB to younger.json)
-  "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 390000 },
+  "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 430000 },
   "interview.html": { allowed: ["interview.json", "permits.json"], ceiling: 95000 },
   "permit.html": { allowed: ["permits.json"], ceiling: 82000 },
   "paycheck.html": { allowed: ["money.json"], ceiling: 15000 },

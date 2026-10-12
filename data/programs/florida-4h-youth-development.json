@@ -1,0 +1,43 @@
+{
+  "grades": null,
+  "min_age": null,
+  "max_age": 18,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-11",
+  "needs_work_permit": false,
+  "deadline_iso": null,
+  "priority": 1,
+  "fields": [
+    "science",
+    "environment",
+    "education",
+    "any"
+  ],
+  "id": "florida-4h-youth-development",
+  "name": "Florida 4-H Youth Development",
+  "org": "UF/IFAS Extension, Florida 4-H",
+  "regions": [
+    "florida"
+  ],
+  "city": "Statewide, FL",
+  "type": "leadership",
+  "what_you_do": "Join a county 4-H club and pick projects such as gardening, animal science, STEM or public speaking. Teens can add events, camps and leadership roles.",
+  "who_can_apply": "Youth ages 5 to 18. Your age is counted on September 1. You can also stay until you finish high school.",
+  "paid_type": "fee-based",
+  "pay_detail": "$20 per year for community club members ages 8 to 18. Some counties charge a different amount.",
+  "season": "year-round",
+  "duration": "4-H year runs Sept 1 to Aug 31",
+  "status": "rolling",
+  "deadline_text": "Enrollment for each 4-H year starts August 1. No closing date stated.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Call your county Extension office. Then join online in 4-H Online. Paper forms are also available.",
+  "url": "https://florida4h.ifas.ufl.edu/get-involved/",
+  "sources_fetched": [
+    "https://florida4h.ifas.ufl.edu/get-involved/",
+    "https://florida4h.ifas.ufl.edu/youth/4-h-clubs/",
+    "https://florida4h.ifas.ufl.edu/events/",
+    "https://florida4h.ifas.ufl.edu/camps/"
+  ],
+  "notes": "State events include iLEAD and 4-H University Legislature Day at the Capitol. Florida has three 4-H camps: Cherry Lake, Cloverleaf and Timpoochee. You do not have to be a member to go to their summer camps."
+}

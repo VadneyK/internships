@@ -1,0 +1,44 @@
+{
+  "grades": "5 to 12",
+  "min_age": null,
+  "max_age": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-11",
+  "needs_work_permit": false,
+  "deadline_iso": null,
+  "priority": 1,
+  "fields": [
+    "environment",
+    "science",
+    "business-finance",
+    "any"
+  ],
+  "id": "tennessee-ffa-association",
+  "name": "Tennessee FFA",
+  "org": "Tennessee FFA Association",
+  "regions": [
+    "tennessee"
+  ],
+  "city": "Statewide, TN",
+  "type": "school-pathway",
+  "what_you_do": "FFA is part of your farm and food class. Members build leadership and job skills. They do chapter events, contests, camps and a state convention.",
+  "who_can_apply": "Students in grades 5 to 12, and college students, who are in a farm and food class at their school.",
+  "paid_type": "not-stated",
+  "pay_detail": "Dues not stated on the state site.",
+  "season": "school-year",
+  "duration": "School year",
+  "status": "year-round",
+  "deadline_text": "No deadline. Join through your school's agricultural education class.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Talk to your school counselor or your ag teacher. Sign up for a farm and food class.",
+  "url": "https://tnffa.org/about-ffa",
+  "sources_fetched": [
+    "https://tnffa.org/",
+    "https://tnffa.org/about-ffa",
+    "https://tnffa.org/membership-0",
+    "https://tnffa.org/camps",
+    "https://tnffa.org/camp-clements"
+  ],
+  "notes": "If your school has no agricultural education program, the state office says to contact them. Camp Clements is the state FFA leadership camp. Association phone: 615-762-4930."
+}

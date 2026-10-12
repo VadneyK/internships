@@ -1,0 +1,37 @@
+{
+  "id": "iowa-4h-youth-development",
+  "name": "Iowa 4-H",
+  "org": "Iowa State University Extension and Outreach, Iowa 4-H",
+  "regions": [
+    "national"
+  ],
+  "city": "Iowa (statewide), county clubs",
+  "type": "leadership",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Iowa only. Teens join county clubs and projects. Then they can join state programs such as State 4-H Council, State 4-H Recognition Day, State Project Area Awards and Youth Conference.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "4 to 12",
+  "who_can_apply": "Iowa only. Iowa youth in grades 4 to 12 (Clover Kids is K to 3).",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page.",
+  "season": "year-round",
+  "duration": "Ongoing",
+  "status": "rolling",
+  "deadline_text": "Join through 4-H Online. The page does not give a join date. State programs have their own application dates.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Start on the Join 4-H page, or call 515-294-1017 or email iowa4hmail@iastate.edu. Your county Extension office can place you in a club.",
+  "needs_work_permit": null,
+  "url": "https://www.extension.iastate.edu/4h/",
+  "apply_url": "https://www.extension.iastate.edu/4h/join4h",
+  "sources_fetched": [
+    "https://www.extension.iastate.edu/4h/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-11",
+  "priority": 1,
+  "notes": "Cost is not stated on the page. The site has no Iowa region, so this card is tagged national and teens in other states may still see it under National. The Iowa only line at the start of What you do and Who can apply is the only guard."
+}

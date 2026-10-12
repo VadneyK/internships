@@ -1,0 +1,43 @@
+{
+  "id": "colorado-ffa-association",
+  "name": "Colorado FFA Association",
+  "org": "Colorado FFA Association",
+  "regions": [
+    "colorado"
+  ],
+  "city": "School chapters across Colorado",
+  "type": "school-pathway",
+  "fields": [
+    "environment",
+    "business-finance",
+    "trades",
+    "any"
+  ],
+  "what_you_do": "Join FFA through your school's agriculture class. Build leadership and career skills, enter contests such as career and leadership events and run for a state officer spot.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Students in school ag education programs. No age or grade limits are stated on the page.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program pages. Ask your ag teacher about dues.",
+  "season": "school-year",
+  "duration": "School year",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Join through your school's ag program.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Ask your school's agriculture teacher about an FFA chapter. Use the Chapters page to find one. The Become a State Officer page explains the state officer role.",
+  "needs_work_permit": false,
+  "url": "https://www.coloradoffa.org/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.coloradoffa.org/",
+    "https://www.coloradoffa.org/participate",
+    "https://www.coloradoffa.org/become-a-state-officer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 2,
+  "notes": "The Colorado FFA Foundation helps the group, CSU Ag Education and ag teachers. Dates and fees were not on the program pages."
+}

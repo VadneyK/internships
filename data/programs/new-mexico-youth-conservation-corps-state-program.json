@@ -1,0 +1,40 @@
+{
+  "id": "new-mexico-youth-conservation-corps-state-program",
+  "name": "New Mexico Youth Conservation Corps (YCC)",
+  "org": "New Mexico Youth Conservation Corps Commission, EMNRD",
+  "regions": [
+    "new-mexico"
+  ],
+  "city": "Projects across New Mexico",
+  "type": "paid-youth-program",
+  "fields": [
+    "environment",
+    "trades"
+  ],
+  "what_you_do": "Get a paid job on a crew doing public conservation work that helps your community, with job training and career development. Local sponsors run the crews.",
+  "min_age": 14,
+  "max_age": 25,
+  "grades": null,
+  "who_can_apply": "New Mexico youth ages 14 to 25. Local governments, tribes and nonprofits apply for state funding and then hire the corps members.",
+  "paid_type": "paid",
+  "pay_detail": "Pay not stated on this page. Returning corps members can earn a $500 cash benefit or a $1,500 education voucher.",
+  "season": "summer",
+  "duration": "Set by each sponsor",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "Set by each sponsor. The state page lists funded projects by year.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Find a funded project near you on the YCC projects map. Then contact that sponsor about jobs. A sponsor can be a city, county, tribe or nonprofit.",
+  "needs_work_permit": null,
+  "url": "https://www.emnrd.nm.gov/about-ycc/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.emnrd.nm.gov/about-ycc/",
+    "https://www.emnrd.nm.gov/ycc/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-11",
+  "priority": 2,
+  "notes": "Teens do not apply to the state. The state funds sponsors, who do the hiring. Pay, dates and application steps vary by sponsor. The projects map on this page shows 2021 to 2023 projects, and older ones are on a separate Projects page."
+}

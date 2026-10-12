@@ -1,0 +1,43 @@
+{
+  "id": "new-mexico-ffa-association",
+  "name": "New Mexico Agricultural Education and FFA Association",
+  "org": "New Mexico FFA Association",
+  "regions": [
+    "new-mexico"
+  ],
+  "city": "School chapters across New Mexico",
+  "type": "school-pathway",
+  "fields": [
+    "environment",
+    "business-finance",
+    "trades",
+    "any"
+  ],
+  "what_you_do": "Join FFA through your school's ag program. The site lists career development events, a leadership camp and FFA Day at the Roundhouse.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Students in New Mexico ag education programs. The association says it serves over 5,300 members in over 85 schools. No age or grade rule is stated.",
+  "paid_type": "fee-based",
+  "pay_detail": "Leadership Camp fee was $225 per camper on a page that looks older (copyright 2022). Camp scholarships were offered.",
+  "season": "school-year",
+  "duration": "School year. Leadership Camp is a separate event.",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Join through your school's ag program.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "The site lists FFA chapter lists, a 2026-2027 plan for events, scholarships and Jr. High contests.",
+  "needs_work_permit": false,
+  "url": "https://www.nmffa.org/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.nmffa.org/",
+    "https://www.nmffa.org/leadership-camp.html",
+    "https://www.nmffa.org/ffa-day-at-the-roundhouse.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 3,
+  "notes": "Some pages on this site carry a 2022 copyright, so camp fees and dates may be out of date. Confirm with your ag teacher or the state office. The homepage does not show the $225 camp fee, so confirm it before relying on it."
+}

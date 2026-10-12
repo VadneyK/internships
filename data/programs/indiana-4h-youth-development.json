@@ -1,0 +1,38 @@
+{
+  "id": "indiana-4h-youth-development",
+  "name": "Indiana 4-H",
+  "org": "Purdue Extension, Indiana 4-H",
+  "regions": [
+    "indiana"
+  ],
+  "city": "Indiana (statewide), county offices",
+  "type": "leadership",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Teens join county clubs. Then they can join state programs such as State 4-H Ambassadors, Invention Convention, Shooting Sports Competition and 4-H Camp.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "3 to 12",
+  "who_can_apply": "Indiana youth in grades 3 to 12 (Mini 4-H is K to 2 in most counties).",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page.",
+  "season": "year-round",
+  "duration": "Ongoing",
+  "status": "rolling",
+  "deadline_text": "Join any time. State programs have their own dates.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Start with the club membership page or contact your county or district 4-H office.",
+  "needs_work_permit": null,
+  "url": "https://extension.purdue.edu/4-h/",
+  "apply_url": "https://extension.purdue.edu/4-H/get-involved/membership-join-a-club.html",
+  "sources_fetched": [
+    "https://extension.purdue.edu/4-h/",
+    "https://extension.purdue.edu/4-H/get-involved/state-programs/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-11",
+  "priority": 1,
+  "notes": "Fees are not listed on the page."
+}

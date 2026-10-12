@@ -1,0 +1,41 @@
+{
+  "id": "new-mexico-4h-nmsu",
+  "name": "New Mexico 4-H",
+  "org": "NMSU Cooperative Extension Service",
+  "regions": [
+    "new-mexico"
+  ],
+  "city": "County Extension offices, New Mexico",
+  "type": "leadership",
+  "fields": [
+    "environment",
+    "education",
+    "any"
+  ],
+  "what_you_do": "Pick projects like livestock, robots, cooking or public speaking. Join a club in your county with adult volunteers.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "New Mexico youth in rural, suburban and urban areas. The age range is not filled in on the page. Ask your county office.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the page.",
+  "season": "year-round",
+  "duration": "Ongoing",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "The 2026-27 enrollment year is open. Deadlines vary by county.",
+  "deadline_iso": null,
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Find your county Extension office. Then make a family account and join at 4h.zsuite.org. Each member sends a sign-up form and a liability form each year.",
+  "needs_work_permit": false,
+  "url": "https://nm4h.nmsu.edu/4h-experience/join.html",
+  "apply_url": "https://4h.zsuite.org",
+  "sources_fetched": [
+    "https://nm4h.nmsu.edu/",
+    "https://nm4h.nmsu.edu/4h-experience/join.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-11",
+  "priority": 3,
+  "notes": "State office phone on the page is 575-646-3026. Ages and fees were left as placeholders on the page."
+}

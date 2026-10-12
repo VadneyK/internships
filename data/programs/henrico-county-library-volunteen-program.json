@@ -1,0 +1,38 @@
+{
+  "id": "henrico-county-library-volunteen-program",
+  "fields": [
+    "education"
+  ],
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 2,
+  "deadline_confidence": "rolling",
+  "max_age": 18,
+  "min_age": 14,
+  "name": "VolunTeen Program",
+  "org": "Henrico County Public Library",
+  "regions": [
+    "virginia"
+  ],
+  "city": "Henrico County, VA",
+  "type": "volunteer",
+  "what_you_do": "Teens called VolunTeens help at library branches. They follow a weekly work plan and work on their own.",
+  "who_can_apply": "Teens ages 14 to 18 who can work on their own and keep a weekly schedule.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer, unpaid",
+  "season": "year-round",
+  "duration": "Weekly schedule; varies by library",
+  "status": "rolling",
+  "deadline_text": "No dates posted. The page does not say if it is summer only or year-round.",
+  "how_to_apply": "Fill out the VolunTeen application (a PDF on the page). Go to the orientation meeting, which is required. Ask your local library for details.",
+  "url": "https://henricolibrary.org/volunteen-program",
+  "notes": "The plan differs by library branch.",
+  "sources_fetched": [
+    "https://henricolibrary.org/volunteen-program"
+  ]
+}

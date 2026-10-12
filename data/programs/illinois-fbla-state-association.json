@@ -1,0 +1,40 @@
+{
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "grades": "High school (also middle level and college chapters exist)",
+  "max_age": null,
+  "min_age": null,
+  "deadline_iso": null,
+  "needs_work_permit": false,
+  "id": "illinois-fbla-state-association",
+  "name": "Illinois FBLA (Future Business Leaders of America)",
+  "org": "Illinois FBLA",
+  "regions": [
+    "illinois"
+  ],
+  "city": "Illinois (school chapters in seven regions)",
+  "type": "leadership",
+  "fields": [
+    "business-finance"
+  ],
+  "what_you_do": "Join a business club at your school. Members build leadership and business skills, compete in events, and network at local, state and national levels.",
+  "who_can_apply": "Students at a school with an FBLA chapter. The page lists high school, middle level and college chapters. How to join is not explained on the program pages.",
+  "paid_type": "not-stated",
+  "pay_detail": "Dues are not stated on the program pages.",
+  "season": "school-year",
+  "duration": "School year",
+  "status": "rolling",
+  "deadline_text": "2026-27 dates: State Leadership Conference Apr 9 to 10, 2027; Summer Leadership Experience Jul 29 to 31, 2027; National Leadership Conference Jun 23 to 26, 2027 in Columbus OH. Regional dates are in the calendar PDF.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Ask a business teacher about a chapter at your school. The chapters page lists active chapters by region. Use the Contact page on ilfbla.org to ask how to join or start a chapter.",
+  "url": "https://ilfbla.org/",
+  "sources_fetched": [
+    "https://ilfbla.org/",
+    "https://ilfbla.org/calendar.html",
+    "https://ilfbla.org/chapters.html"
+  ],
+  "priority": 2,
+  "notes": "Dues and how to start a chapter are not on the program pages. The national FBLA site blocked automated reading, so national rules were not checked."
+}

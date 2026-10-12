@@ -1,0 +1,39 @@
+{
+  "id": "los-angeles-my-friends-place-youth-support",
+  "name": "My Friend's Place (drop-in and support for youth with no home)",
+  "org": "My Friend's Place",
+  "regions": [
+    "los-angeles"
+  ],
+  "city": "Los Angeles, CA",
+  "type": "volunteer",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Free help for young people with no stable home. It offers food, clothing, showers, a phone and internet, help with school and jobs, and links to shelter and housing.",
+  "min_age": 12,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Young people ages 12 through 24.",
+  "paid_type": "not-stated",
+  "pay_detail": "The site describes its resources as free.",
+  "season": "year-round",
+  "duration": null,
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline. Drop-in hours and the street address were not on the program pages.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Call 323-908-0011 or 1-888-YOUTH-50, or email info@myfriendsplace.org to ask about hours and how to start.",
+  "needs_work_permit": null,
+  "url": "https://www.myfriendsplace.org/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.myfriendsplace.org/",
+    "https://www.myfriendsplace.org/get-help"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 2,
+  "notes": "This is a support center, not a job. Details on its education and job help are not on the program pages, so call. If you are in danger right now, call 911."
+}

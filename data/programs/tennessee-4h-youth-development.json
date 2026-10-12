@@ -1,0 +1,42 @@
+{
+  "grades": null,
+  "min_age": null,
+  "max_age": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-11",
+  "needs_work_permit": false,
+  "deadline_iso": null,
+  "priority": 1,
+  "fields": [
+    "science",
+    "environment",
+    "education",
+    "any"
+  ],
+  "id": "tennessee-4h-youth-development",
+  "name": "Tennessee 4-H Youth Development",
+  "org": "UT and TSU Extension, Tennessee 4-H",
+  "regions": [
+    "tennessee"
+  ],
+  "city": "Statewide, TN",
+  "type": "leadership",
+  "what_you_do": "Join a 4-H club or project through your county Extension office. Teens can do projects and camps. They can lead and serve their community. They can also run for state leader jobs.",
+  "who_can_apply": "Any Tennessee youth. The state site does not list ages or grades for joining. Ask your county Extension office. Some camps and events are set by grade.",
+  "paid_type": "not-stated",
+  "pay_detail": "Cost not stated on the state site. Camps and events list their own fees or say to ask the county office.",
+  "season": "year-round",
+  "duration": "Ongoing",
+  "status": "year-round",
+  "deadline_text": "No single deadline. Sign up through your county Extension office.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Call or visit your county Extension office. State office phone: 865-974-2128.",
+  "url": "https://4h.tennessee.edu/",
+  "sources_fetched": [
+    "https://4h.tennessee.edu/",
+    "https://4h.tennessee.edu/leadership-opportunities/",
+    "https://4h.tennessee.edu/camp/"
+  ],
+  "notes": "The state site names these ways to lead: State 4-H Council, Honor Club, All Stars and the Southern Region Teen Leadership Conference. Camps for older teens are set by grade, so ask the county office."
+}

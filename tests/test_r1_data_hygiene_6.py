@@ -78,6 +78,20 @@ ROOT_URL_ALLOW = (
     "michigan-detroit-grow-detroits-young-talent",  # own site for this one program
     "michigan-hosa-state-association",  # own site for this one state group
     "ucr-stride-stem-cell-research-summer",  # own site for this one program
+    "colorado-ffa-association",  # own site for this one state group, added 2026-10-12 for the new state cards
+    "georgia-envirothon",  # own site for this one competition, added 2026-10-12 for the new state cards
+    "georgia-ga-ryse-independent-living-program",  # own site for this one program, added 2026-10-12 for the new state cards
+    "illinois-fbla-state-association",  # own site for this one state group, added 2026-10-12 for the new state cards
+    "iowa-ffa-association",  # own site for this one state group, added 2026-10-12 for the new state cards
+    "kentucky-4h-youth-development",  # state 4-H home page; the sign-up link is the apply_url, added 2026-10-12 for the new state cards
+    "kentucky-ffa-association",  # own site for this one state group, added 2026-10-12 for the new state cards
+    "los-angeles-my-friends-place-youth-support",  # whole-organization card; the home page is the page checked, added 2026-10-12 for the new state cards
+    "missouri-ffa-association",  # own site for this one state group, added 2026-10-12 for the new state cards
+    "national-youthbuild-programs-ages-16-24",  # national network; the home page is the entry and the programs page is the apply_url, added 2026-10-12 for the new state cards
+    "new-mexico-ffa-association",  # own site for this one state group, added 2026-10-12 for the new state cards
+    "stock-market-game-sifma-foundation",  # own site for this one program, added 2026-10-12 for the new state cards
+    "tennessee-4h-youth-development",  # state 4-H home page is the page checked, added 2026-10-12 for the new state cards
+    "texas-youth-range-workshop",  # own site for this one workshop, added 2026-10-12 for the new state cards
 )
 
 

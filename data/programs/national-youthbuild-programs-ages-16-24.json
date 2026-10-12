@@ -1,0 +1,39 @@
+{
+  "id": "national-youthbuild-programs-ages-16-24",
+  "name": "YouthBuild (find a local program)",
+  "org": "YouthBuild USA",
+  "regions": [
+    "national"
+  ],
+  "city": "Nationwide",
+  "type": "apprenticeship-trades",
+  "fields": [
+    "trades"
+  ],
+  "what_you_do": "Young people who left school and are not working train for job skills in construction and other fields, and work on a diploma or equivalent. Each local YouthBuild program runs on its own.",
+  "min_age": 16,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Young adults ages 16 to 24 who are out of school and out of work. YouthBuild mainly serves people without a high school diploma and with little money. Local sites set their own rules.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the national page. Ask the local program.",
+  "season": "year-round",
+  "duration": null,
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No dates on the national page. Each local program sets its own.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Use the program map on the YouthBuild site to find a program near you, then contact it.",
+  "needs_work_permit": null,
+  "url": "https://www.youthbuild.org/",
+  "apply_url": "https://youthbuild.org/our-programs/",
+  "sources_fetched": [
+    "https://www.youthbuild.org/",
+    "https://www.youthbuild.org/our-programs/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-12",
+  "priority": 2,
+  "notes": "The site says more than 300 programs run in seven countries. The program pages do not confirm a site in Elgin, Chicago, Atlanta, New York or Los Angeles. Use the map."
+}

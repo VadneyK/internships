@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "min_age": null,
+  "max_age": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-11",
+  "needs_work_permit": false,
+  "deadline_iso": null,
+  "priority": 2,
+  "fields": [
+    "environment",
+    "science"
+  ],
+  "id": "virginia-envirothon",
+  "name": "Virginia Envirothon",
+  "org": "Virginia Association of Soil and Water Conservation Districts",
+  "regions": [
+    "virginia"
+  ],
+  "city": "Statewide, VA",
+  "type": "school-pathway",
+  "what_you_do": "Teams of five high school students are tested on soil, forests, wildlife, water life and a current issue. The tests are at field stations. Teams also give a talk.",
+  "who_can_apply": "High school students on a team of five with one adult coach or chaperone. The page says high school students but gives no grade range.",
+  "paid_type": "unpaid",
+  "pay_detail": "No fee is mentioned on the program page.",
+  "season": "spring",
+  "duration": "Spring contests",
+  "status": "unconfirmed",
+  "deadline_text": "Page says to contact your local district by winter for spring local or regional contests. The state contest is held in mid to late May. The top three teams from each of six areas advance.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Contact your local Soil and Water Conservation District. If you do not know it, email byron.minson@vaswcd.org.",
+  "url": "https://vaswcd.org/envirothon/",
+  "notes": "Exact 2027 dates were not posted on the program page. Check the Current Competition page on the same site.",
+  "sources_fetched": [
+    "https://vaswcd.org/envirothon/"
+  ]
+}

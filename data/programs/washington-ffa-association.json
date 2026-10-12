@@ -1,0 +1,44 @@
+{
+  "id": "washington-ffa-association",
+  "name": "Washington FFA Association",
+  "org": "Washington FFA Association",
+  "regions": [
+    "washington"
+  ],
+  "city": "School chapters across Washington",
+  "type": "school-pathway",
+  "fields": [
+    "environment",
+    "trades",
+    "business-finance",
+    "any"
+  ],
+  "what_you_do": "FFA is a student group tied to your school's farm and food class. Members build leadership and job skills at workshops, conferences and career events.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Students enrolled in agricultural education at a school with an FFA chapter. The page does not give age or grade limits.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program pages. Ask your ag teacher about dues.",
+  "season": "school-year",
+  "duration": "Ongoing",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Join through your school's agriculture program.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Ask your school's ag teacher if your school has an FFA chapter and how to join.",
+  "needs_work_permit": false,
+  "url": "https://www.washingtonffa.org/what-is-ffa",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.washingtonffa.org/",
+    "https://www.washingtonffa.org/what-is-ffa",
+    "https://www.washingtonffa.org/96th-washington-ffa-convention-expo",
+    "https://www.washingtonffa.org/student-opportunities"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-11",
+  "priority": 2,
+  "notes": "The page says the association has over 14,500 members in 194 chapters. Dues are $7 a year nationally and $10 a year for Washington. Local chapters may charge more."
+}
