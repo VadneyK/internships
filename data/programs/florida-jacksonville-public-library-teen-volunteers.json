@@ -1,0 +1,37 @@
+{
+  "id": "florida-jacksonville-public-library-teen-volunteers",
+  "name": "Teen Volunteers",
+  "org": "Jacksonville Public Library",
+  "regions": [
+    "florida"
+  ],
+  "city": "Jacksonville, FL",
+  "type": "volunteer",
+  "fields": [
+    "education"
+  ],
+  "what_you_do": "Help at a library branch with events, crafts and everyday tasks, and earn service hours.",
+  "min_age": 12,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Teens ages 12 to 18. Everyone must pass the City background screening, which may include fingerprints. The page says there are more applicants than openings.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "Varies by opening",
+  "status": "rolling",
+  "deadline_text": "The page lists no deadline. It says the library gets more applicants than openings.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Look at the openings on the volunteer page. Apply online. Staff will email you the next steps.",
+  "needs_work_permit": false,
+  "url": "https://jaxpubliclibrary.org/volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://jaxpubliclibrary.org/volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 2,
+  "notes": "Not everyone who applies is picked. Group volunteering: JPLVolunteers@coj.net. Teen specific openings are listed on a teen page that was not read."
+}

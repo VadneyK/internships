@@ -14,10 +14,13 @@ const PERMITS = JSON.parse(fs.readFileSync(new URL("../data/permits.json", impor
 // National tags: a card with only these regions is listed on purpose as online or national, not tied to a city or area.
 const NATIONAL_TAGS = new Set(["virtual", "national"]);
 const REGION_IDS = new Set(L.REGIONS.map((r) => r[0]));
-const ALLOWED_STATES = new Set(["", ...L.PERMIT_STATES]);
+const LITE_IDS = JSON.parse(fs.readFileSync(new URL("../data/states-lite.json", import.meta.url), "utf8")).states.map((x) => x.id);
+// A state is known when it has a full permits.json entry or a shorter answer in states-lite.json (added with ticket p7-regions-1 for the 11 whole-state regions).
+const ALLOWED_STATES = new Set(["", ...L.PERMIT_STATES, ...LITE_IDS]);
 const PLACES = [
   ...L.CITIES.map((c) => "city:" + c[0]),
   ...L.AREAS.map((a) => "area:" + a[0]),
+  ...L.STATES.map((x) => "state:" + x[0]),
 ];
 
 test("every region code on a card exists in L.REGIONS and has a human label", () => {
@@ -79,7 +82,7 @@ test("every PERMIT_STATES key has a permitFor answer, and every STATE_OF value i
   const notPermit = [];
   Object.keys(L.STATE_OF).forEach((region) => {
     const st = L.STATE_OF[region];
-    if (st && L.PERMIT_STATES.indexOf(st) < 0) notPermit.push(region + " -> " + st);
+    if (st && L.PERMIT_STATES.indexOf(st) < 0 && LITE_IDS.indexOf(st) < 0) notPermit.push(region + " -> " + st);
   });
   assert.deepEqual(notPermit, [], "STATE_OF values that are not PERMIT_STATES keys: " + notPermit.join(", "));
 });

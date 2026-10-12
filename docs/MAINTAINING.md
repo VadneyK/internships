@@ -30,6 +30,9 @@ Programs are grouped into hubs. A hub is an area teens recognize, and each hub c
 | `aus` | Austin and Texas |
 | `midwest` | Midwest campuses |
 | `east` | East Coast |
+| `mtn` | Mountain West |
+| `south` | South |
+| `pac` | Oregon and Hawaii |
 | `online` | Online and national |
 
 A captain is anyone who agrees to own a hub: do its quarterly pass and answer issues for it. List captains in `CONTRIBUTORS.md`. To add a new region or hub, follow [Adding a region](ADDING_A_REGION.md).

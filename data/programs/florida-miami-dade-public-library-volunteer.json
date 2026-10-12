@@ -1,0 +1,37 @@
+{
+  "id": "florida-miami-dade-public-library-volunteer",
+  "name": "Volunteer at the Library",
+  "org": "Miami-Dade Public Library System",
+  "regions": [
+    "florida"
+  ],
+  "city": "Miami-Dade County, FL",
+  "type": "volunteer",
+  "fields": [
+    "education"
+  ],
+  "what_you_do": "Shelve and sort library items. Sort donated books, help staff and get crafts ready for children's programs.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Volunteers must be 16 or older. Ages 16 and 17 need a parent or guardian signature. Photo ID is required.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "Flexible, set with your branch",
+  "status": "year-round",
+  "deadline_text": "Apply any time through a branch.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Contact the branch you want. Meet the Volunteer Coordinator or Branch Manager. Then send in the Volunteer Application/Agreement. A free fingerprint background check follows.",
+  "needs_work_permit": false,
+  "url": "https://mdpls.org/volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://mdpls.org/volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 2,
+  "notes": "The page says students can earn community service hours for graduation. The branch manager must approve your spot."
+}

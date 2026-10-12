@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "max_age": 24,
+  "min_age": 16,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 2,
+  "notes": "The page calls this the final class, so check that a cohort is still open.",
+  "deadline_confidence": "unknown",
+  "fields": [
+    "trades"
+  ],
+  "id": "albuquerque-ydi-youthbuild",
+  "name": "YouthBuild Albuquerque",
+  "org": "Youth Development, Inc. (YDI NM)",
+  "regions": [
+    "new-mexico"
+  ],
+  "city": "Albuquerque, NM",
+  "type": "apprenticeship-trades",
+  "what_you_do": "Young people learn building and safety trades. They also earn a high school equivalency (GED or HiSET) and NCCER Core Construction and OSHA 10 papers. Help with rides and child care is offered.",
+  "who_can_apply": "Ages 16 to 24. Residents of Albuquerque and Bernalillo County. Other rules not stated on the page.",
+  "paid_type": "not-stated",
+  "pay_detail": "Pay or stipend not stated on the page.",
+  "season": "year-round",
+  "duration": "not stated",
+  "status": "unconfirmed",
+  "deadline_text": "Page says a final YouthBuild cohort is coming soon. No dates posted.",
+  "how_to_apply": "Email youthbuild@ydinm.org. Office: 3411 Candelaria Rd. NE, Suite D, Albuquerque.",
+  "url": "https://www.ydinm.org/program/education-employment-training/youth-build/",
+  "sources_fetched": [
+    "https://www.ydinm.org/program/education-employment-training/youth-build/"
+  ]
+}

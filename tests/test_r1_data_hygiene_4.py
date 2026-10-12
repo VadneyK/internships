@@ -40,12 +40,23 @@ _GROUPS = {
     "MA": "boston massachusetts",
     "GA": "atlanta georgia",
     "NY": "new-york-city new-york-state",
+    "AZ": "arizona",
+    "NV": "nevada",
+    "CO": "colorado",
+    "UT": "utah",
+    "FL": "florida",
+    "HI": "hawaii",
+    "OR": "oregon",
+    "TN": "tennessee",
+    "KY": "kentucky",
+    "MO": "missouri",
+    "NM": "new-mexico",
 }
 REGION_STATE = {r: st for st, rs in _GROUPS.items() for r in rs.split()}
 NO_STATE = {"virtual", "national"}
 
 CODE_RE = re.compile(
-    r"(?<![A-Za-z])(CA|GA|IL|IN|MA|MD|MI|MN|NC|NJ|NY|OH|PA|TX|VA|WA|WI|BC)(?![A-Za-z])")
+    r"(?<![A-Za-z])(CA|GA|IL|IN|MA|MD|MI|MN|NC|NJ|NY|OH|PA|TX|VA|WA|WI|BC|AZ|NV|CO|UT|FL|HI|OR|TN|KY|MO|NM)(?![A-Za-z])")
 
 ALLOWLIST = {}  # must stay empty
 

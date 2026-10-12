@@ -1,0 +1,40 @@
+{
+  "id": "portland-omsi-outdoors-camp-counselor",
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 2,
+  "needs_work_permit": false,
+  "name": "OMSI Camp Counselor (Camp Gray and Camp Hancock)",
+  "org": "OMSI Outdoors",
+  "city": "Portland, OR",
+  "type": "paid-youth-program",
+  "fields": [
+    "education",
+    "environment"
+  ],
+  "what_you_do": "Summer camp counselors look after campers. They ride the bus to camp and stay in cabins. They lead games, cabin activities and campfires at an overnight science camp in Oregon.",
+  "min_age": 16,
+  "max_age": null,
+  "who_can_apply": "Counselors must be 16 or older by June 1. Limited housing is for counselors over 18 who live outside Portland.",
+  "paid_type": "paid",
+  "pay_detail": "Paid. Counselor wage not stated (the page lists $135 to $180 a day only for full-season staff). Housing and meals are provided during programming.",
+  "season": "summer",
+  "duration": "Summer camp season; exact dates not stated",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The page says \"Check back for Summer 2027!\" It does not say whether counselor applications are open.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Use the Apply Now link on the OMSI Outdoors hiring page when the 2027 counselor job posts.",
+  "url": "https://omsi.edu/careers/work-with-omsi-outdoors",
+  "notes": "Summer camp is overnight, and counselors stay with campers. Oregon BOLI does not give work permits to minors ages 14 to 17. Employers need a certificate to hire minors.",
+  "regions": [
+    "oregon"
+  ],
+  "sources_fetched": [
+    "https://omsi.edu/careers/work-with-omsi-outdoors",
+    "https://www.oregon.gov/boli/employers/pages/minor-workers.aspx"
+  ]
+}

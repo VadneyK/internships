@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "fields": [
+    "health"
+  ],
+  "needs_work_permit": false,
+  "status": "rolling",
+  "deadline_confidence": "rolling",
+  "id": "mesa-banner-desert-teen-volunteer",
+  "name": "Teen Volunteer Application at Banner Desert Medical Center",
+  "org": "Banner Desert Medical Center and Banner Children's at Desert",
+  "regions": [
+    "arizona"
+  ],
+  "city": "Mesa, AZ",
+  "type": "volunteer",
+  "what_you_do": "Volunteer in a hospital area. You might work at the info desk, family lobby, gift shop, food service or nursing units.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "Teens can use the Teen Application. The page does not state the age range. Call to ask.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "At least 6 months or 100 hours",
+  "deadline_text": "Summer Student Application is accepted only January to March. No other deadline stated.",
+  "how_to_apply": "Apply and interview. Then a health screen and background check. Then orientation. Use the Teen Application or Summer Student Application on the page, or call (480) 412-3258.",
+  "url": "https://www.bannerhealth.com/services/volunteer/banner-desert-volunteer",
+  "notes": "Teen age range is not stated on the page. Banner Desert Medical Center is in Mesa.",
+  "sources_fetched": [
+    "https://www.bannerhealth.com/services/volunteer/banner-desert-volunteer",
+    "https://www.bannerhealth.com/locations/mesa/banner-desert-medical-center"
+  ]
+}

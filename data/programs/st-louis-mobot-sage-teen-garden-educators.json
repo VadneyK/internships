@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "max_age": 18,
+  "min_age": 14,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 1,
+  "notes": "Shifts run seven days a week, 10 a.m. to noon and 12:30 to 2:30 p.m. Not everyone who applies gets a spot.",
+  "deadline_confidence": "last-year-pattern",
+  "fields": [
+    "environment",
+    "education"
+  ],
+  "id": "st-louis-mobot-sage-teen-garden-educators",
+  "name": "Students as Garden Educators (SAGE)",
+  "org": "Missouri Botanical Garden",
+  "regions": [
+    "missouri"
+  ],
+  "city": "St. Louis, MO",
+  "type": "volunteer",
+  "what_you_do": "Teen volunteers lead fun plant, nature and history activities for children and families in the Garden. You build public speaking and job skills.",
+  "who_can_apply": "You must be ages 14 to 18. You must send a letter of recommendation.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. You earn service hours.",
+  "season": "summer",
+  "duration": "June to October. First year: at least 50 hours including training.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "2026 applications ran Feb 28 to Apr 26, 2026. 2027 dates not posted.",
+  "how_to_apply": "Apply online in the spring window. Upload a letter of recommendation. Spots are few. If you have a question, send an email to SageServiceProgram@mobot.org.",
+  "url": "https://www.missouribotanicalgarden.org/learn-discover/youth-families/youth-teen-programs/sage",
+  "sources_fetched": [
+    "https://www.missouribotanicalgarden.org/learn-discover/students-teachers/teen-programs",
+    "https://www.missouribotanicalgarden.org/learn-discover/youth-families/youth-teen-programs/sage"
+  ]
+}

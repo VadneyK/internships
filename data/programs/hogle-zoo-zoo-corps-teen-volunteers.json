@@ -1,0 +1,39 @@
+{
+  "id": "hogle-zoo-zoo-corps-teen-volunteers",
+  "name": "Zoo Corps Teen Volunteers (Hogle Zoo)",
+  "org": "Utah's Hogle Zoo",
+  "regions": [
+    "utah"
+  ],
+  "city": "Salt Lake City, UT",
+  "type": "volunteer",
+  "fields": [
+    "environment",
+    "science"
+  ],
+  "what_you_do": "Teens volunteer at the zoo in summer. They share what they know about animals, nature and the earth.",
+  "min_age": 14,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "Ages 14 to 17. You need 2 letters of recommendation, a negative TB test and a TB screening each year. You also go to new volunteer orientation and training.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. No fee is listed on the page.",
+  "season": "summer",
+  "duration": "Summer season, June to August. At least one day a week.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The page says Zoo Corps applications are due April 13 with interviews April 17 and 18. It does not name the year, so this is the usual pattern.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the online Zoo Corps application on the zoo volunteer page. A Zoo Corps description PDF is linked there.",
+  "needs_work_permit": false,
+  "url": "https://www.hoglezoo.org/get-involved/volunteer/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.hoglezoo.org/get-involved/volunteer/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 1,
+  "notes": "The zoo site blocked our regular reader, so this was read through a page summary tool. Confirm the dates with the zoo volunteer office."
+}

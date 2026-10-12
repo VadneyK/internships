@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "fields": [
+    "environment",
+    "science"
+  ],
+  "needs_work_permit": false,
+  "status": "rolling",
+  "deadline_confidence": "rolling",
+  "id": "las-vegas-springs-preserve-volunteer",
+  "name": "Springs Preserve Volunteer Program (ages 14 and up)",
+  "org": "Springs Preserve",
+  "regions": [
+    "nevada"
+  ],
+  "city": "Las Vegas, NV",
+  "type": "volunteer",
+  "what_you_do": "Greet guests. Help in the Botanical Garden. Talk with visitors at animal exhibits and the Butterfly Habitat. Or join one day group projects.",
+  "min_age": 14,
+  "max_age": null,
+  "who_can_apply": "Anyone 14 or older. Ages 14 to 17 must turn in a parental permission agreement.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Can count for community service hours.",
+  "season": "year-round",
+  "duration": "Not stated. They want long-term volunteers; group projects can be one day or an afternoon.",
+  "deadline_text": "No deadline stated.",
+  "how_to_apply": "Fill out the online form with the Apply Now link on the page. Ages 14 to 17 also send in the parent permission form.",
+  "url": "https://www.springspreserve.org/support/volunteer.html",
+  "notes": "Page does not mention training or required hours.",
+  "sources_fetched": [
+    "https://www.springspreserve.org/support/volunteer.html"
+  ]
+}

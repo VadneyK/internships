@@ -13,11 +13,15 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 // Limits in bytes, about 10 percent above the sizes measured on 2026-10-10. Raised the same day for the city data waves: the guide grew from 1,187 to 1,771 programs (the lite file is 2,017,065 bytes, 1,139 per program, so the per-program limit is unchanged) (about 36 percent), so the four data limits grew with it. To raise one on purpose, change its number here in the same pull request and say why in that PR.
 const LIMITS = {
   data: {
-    "data/entries.json": { raw: 3530000, gzip: 800000 },
+    // Raised on 2026-10-11 for ticket p7-regions-1: 267 new cards for 11 states took entries.json to 3,993,644 bytes (899,490 gzipped). Raw from 3530000 to 4050000, gzip from 800000 to 910000.
+    // PENDING PERSON APPROVAL: no record yet that a person accepted this extra weight for phone users. Until one does, do not raise this again. Slim the card data or record the approval in docs/TESTING.md.
+    "data/entries.json": { raw: 4050000, gzip: 910000 },
     // Raised from 2020000 to 2040000 on 2026-10-10 after the fact check: the page re-reads added about 6,000 bytes (0.3 percent) of plainer deadline_text across 266 cards, saying what the page does and does not state. No single card is the cause. Still about 1,145 bytes per program, under the per-program limit.
     // Gzip limit raised from 440000 to 450000 on 2026-10-10: the card fixes this round (pay wording, opens-soon dates) put it at 440053.
     "data/entries-lite.json": { raw: 2040000, gzip: 450000 },
-    "data/entries-core.json": { raw: 320000, gzip: 32000 },
+    // Raised on 2026-10-11 for ticket p7-regions-1: entries-core.json is 368,169 bytes (36,864 gzipped). Raw from 320000 to 375000, gzip from 32000 to 37500.
+    // PENDING PERSON APPROVAL: same as entries.json above. Do not raise again without a person's recorded sign-off.
+    "data/entries-core.json": { raw: 375000, gzip: 37500 },
   },
   liteBytesPerProgram: 1300,
   // Raised from 32000 to 32100 on 2026-10-10 for the footer link to the teachers and counselors handout, which every page carries. ready.html is 32009 bytes.

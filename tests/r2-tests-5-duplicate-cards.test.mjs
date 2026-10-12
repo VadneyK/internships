@@ -26,6 +26,26 @@ function urlsOf(card) {
 
 // Keys are "normalized name|region". Each value lists the exact ids that share that key today.
 const NAME_REGION_ALLOW = new Map([
+  ["summer youth employment program|arizona", {
+    ids: ["phoenix-gphxul-summer-youth-employment", "tucson-pima-county-summer-youth-employment"],
+    reason: "Different organizations use the same generic program name. Added 2026-10-11 for ticket p7-regions-1.",
+  }],
+  ["teen volunteer program|arizona", {
+    ids: ["phoenix-desert-botanical-garden-teen-volunteer", "tucson-pima-county-library-teen-volunteer"],
+    reason: "Different organizations use the same generic program name. Added 2026-10-11 for ticket p7-regions-1.",
+  }],
+  ["summer volunteen program|tennessee", {
+    ids: ["memphis-le-bonheur-summer-volunteen", "memphis-methodist-summer-volunteen"],
+    reason: "Two different Memphis hospital systems (Le Bonheur, Methodist) use the same generic program name. Added 2026-10-11 for ticket p7-regions-1.",
+  }],
+  ["summer teen volunteer program|kentucky", {
+    ids: ["lexington-uk-healthcare-summer-teen-volunteer", "louisville-norton-healthcare-summer-teen-volunteer", "louisville-uofl-health-summer-teen-volunteer"],
+    reason: "Three different health systems (UK HealthCare, Norton Healthcare, UofL Health) use the same generic program name. Added 2026-10-11 for ticket p7-regions-1.",
+  }],
+  ["teen volunteer program|nevada", {
+    ids: ["henderson-libraries-teen-volunteer", "las-vegas-discovery-childrens-museum-teen-volunteers"],
+    reason: "Two different organizations (Henderson Libraries, Discovery Children's Museum) use the same generic program name. Added 2026-10-11 for ticket p7-regions-1.",
+  }],
   ["high school volunteer program|inland-empire", {
     ids: ["pomona-valley-hospital-high-school-volunteer", "san-antonio-regional-hospital-high-school-volunteer"],
     reason: "Two different hospitals (Pomona Valley Hospital, San Antonio Regional Hospital) use the same generic program name.",
@@ -35,6 +55,19 @@ const NAME_REGION_ALLOW = new Map([
 // Shared url -> the exact ids that share it today. Starts from the 23 urls used by more than one card
 // (url or apply_url), as found in data/programs on 2026-10-10.
 const SHARED_URL_ALLOW = new Map([
+  // Added 2026-10-11 for ticket p7-regions-1.
+  ["https://nwyouthcorps.workbrightats.com/pages/opportunitiesbycategory/", {
+    ids: ["eugene-nyc-youth-camping-conservation-crews", "eugene-nyc-youth-urban-community-forestry-crews", "portland-nyc-youth-community-crews"],
+    reason: "Shared hub: one Northwest Youth Corps job board lists the crews for several cities.",
+  }],
+  ["https://www.governmentjobs.com/careers/portlandor", {
+    ids: ["portland-parks-lifeguard-swim-instructor-training", "portland-parks-recreation-youth-summer-jobs", "portland-youth-conservation-crew"],
+    reason: "Shared hub: the City of Portland job board on GovernmentJobs.com, where each city program posts its openings.",
+  }],
+  ["https://genesysworks.org/for-students-and-families/application-process/", {
+    ids: ["chicago-genesys-works-internship", "florida-genesys-works-jacksonville-internship"],
+    reason: "Shared hub: one national Genesys Works application page covers several cities.",
+  }],
   ["https://app.campdoc.com/register/pointpark", {
     ids: ["pittsburgh-point-park-entrepreneurship-camp", "pittsburgh-point-park-sports-business-camp"],
     reason: "Same link on 2 cards (Point Park University (Rowland School of Business)). Not yet reviewed as a shared hub or a duplicate.",

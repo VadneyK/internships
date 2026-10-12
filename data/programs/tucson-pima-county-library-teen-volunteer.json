@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "fields": [
+    "education"
+  ],
+  "needs_work_permit": false,
+  "status": "rolling",
+  "deadline_confidence": "rolling",
+  "id": "tucson-pima-county-library-teen-volunteer",
+  "name": "Teen Volunteer Program",
+  "org": "Pima County Public Library",
+  "regions": [
+    "arizona"
+  ],
+  "city": "Tucson, AZ",
+  "type": "volunteer",
+  "what_you_do": "Work with other teens and librarian mentors on projects at a Pima County library branch. Teens log their own hours.",
+  "min_age": 14,
+  "max_age": 17,
+  "who_can_apply": "Teens ages 14 to 17.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Not stated. Teens track hours with a log.",
+  "deadline_text": "No deadlines listed.",
+  "how_to_apply": "Fill out the volunteer application form (PDF on the page) and give it to the library branch where you want to volunteer. The library contacts you if there is an opening.",
+  "url": "https://www.library.pima.gov/youth-volunteer-opportunities/",
+  "notes": "The application PDF on the page is labeled 2024. Openings depend on each branch, so ask staff.",
+  "sources_fetched": [
+    "https://www.library.pima.gov/youth-volunteer-opportunities/"
+  ]
+}

@@ -41,7 +41,7 @@ What catches a mistake: `python3 tools/validate.py` (run by CI), and `tests/test
 
 A region id has to appear in two places that must match exactly.
 
-1. `data/schema/program.schema.json`: add the id to the `enum` list under `properties.regions.items`. There are 62 ids today.
+1. `data/schema/program.schema.json`: add the id to the `enum` list under `properties.regions.items`. There are 73 ids today.
 2. `assets/js/lib.js`: add `["your-id", "Label teens will see"]` to the `REGIONS` list. The existing list puts `virtual` and `national` last, so add yours before them. The label shows on cards and in search.
 
 Use lowercase words joined by hyphens, like the ids already there.
@@ -52,7 +52,7 @@ What catches a mistake: `tests/r3-tests-3.test.mjs`, test "regions: schema and L
 
 Items 1 to 4 are in `assets/js/lib.js`. Items 5 and 6 are other files that must agree.
 
-1. **STATE_OF.** Add `"your-id": "xx"` with the lowercase state code (`ca`, `tx`, and so on; `bc` for British Columbia). Every region except `virtual` and `national` needs a non-empty code. The code picks which permit text a program card shows. A region that is not listed shows no state's permit text on purpose, so never leave it out. The code must be in `PERMIT_STATES` (see step 6 for a new state).
+1. **STATE_OF.** Add `"your-id": "xx"` with the lowercase state code (`ca`, `tx`, and so on; `bc` for British Columbia). Every region except `virtual` and `national` needs a non-empty code. The code picks which permit text a program card shows. A region that is not listed shows no state's permit text on purpose, so never leave it out. The code must be in `PERMIT_STATES` (see step 6 for a new state). The one exception is a state that only has a shorter answer in `data/states-lite.json`: use its lowercase code (for example `az`), skip step 6, and the code must be a state id in that file.
 2. **HUBS.** Every region must sit in at least one hub. A hub is `[id, "Label", [region ids]]`. Add the region to a hub that fits, or add a new hub. The Programs page shows the hub's known gaps and the Insights page counts by hub. Only ten hubs get a quick chip on the Programs page (the `QUICK` list in `assets/js/find.js`). Any hub still works from the address bar as `find.html?where=<hub id>`.
 3. **CITIES.** The Where picker lists cities. A city is `[id, "Label", [region ids]]`. A city covers its own region plus the state-wide region, so list both (for example a Massachusetts city lists `boston` and `massachusetts`). California cities list `statewide`. The city must match at least one real program, or the picker would show "none yet".
 4. **AREAS** (optional). A bigger area is `[id, "Label", [city ids]]`, like "Midwest". List city ids, not region ids.

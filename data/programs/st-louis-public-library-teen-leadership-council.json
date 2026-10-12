@@ -1,0 +1,38 @@
+{
+  "grades": "7-12",
+  "max_age": null,
+  "min_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 2,
+  "notes": "Accepted teens serve at least one year. Meetings are virtual.",
+  "deadline_confidence": "rolling",
+  "fields": [
+    "social-impact"
+  ],
+  "id": "st-louis-public-library-teen-leadership-council",
+  "name": "Teen Leadership Council",
+  "org": "St. Louis Public Library",
+  "regions": [
+    "missouri"
+  ],
+  "city": "St. Louis, MO",
+  "type": "leadership",
+  "what_you_do": "Help plan library events. Share ideas to make the library better for teens. Build leadership skills.",
+  "who_can_apply": "Teens in grades 7 to 12 who live or go to school in St. Louis City.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Members earn volunteer hours.",
+  "season": "school-year",
+  "duration": "At least one year",
+  "status": "year-round",
+  "deadline_text": "No deadline listed. Meets online on the third Thursday of each month, 6 to 7 p.m.",
+  "how_to_apply": "Fill out the online application form linked on the council page.",
+  "url": "https://www.slpl.org/teen-leadership-council/",
+  "sources_fetched": [
+    "https://www.slpl.org/teen-leadership-council/"
+  ]
+}

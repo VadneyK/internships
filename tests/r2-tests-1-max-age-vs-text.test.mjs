@@ -59,6 +59,16 @@ const ALLOW = {
   "twin-cities-open-arms-of-minnesota-youth-volunteers": "Ages 16 and up volunteer on their own. The 12 to 15 range is the group that needs a trained adult with them.",
   "wilmette-library-teen-volunteers": "The program is set by grades 9 to 12, not by age. The 11 to 13 range is a separate helper group.",
   "ymca-san-francisco-workforce-development": "The page says ages 14 to 24 and older, so there is no firm top age and max_age stays null.",
+  // Added 2026-10-11 for ticket p7-regions-1 (cards for 11 new states).
+  "arapahoe-libraries-teen-volunteer": "The page lists no exact ages. The 12 to 18 range is the library teen section, so max_age stays null.",
+  "florida-jacksonville-mayors-youth-at-work-partnership": "max_age 21 is the main group (ages 16 to 21 in school). The 16 to 24 range is only the out of school group.",
+  "groundwork-denver-green-teams": "max_age 17 is the Green Team age. The 18 to 21 range is only the returning youth leaders.",
+  "las-vegas-natural-history-museum-volunteer": "Open to age 16 and up. The 14 to 15 range is the group that volunteers with a parent or guardian.",
+  "las-vegas-springs-preserve-volunteer": "Open to anyone 14 or older. The 14 to 17 range is only the group that turns in a parental permission agreement.",
+  "lexington-public-library-volunteer": "Open to anyone 14 or older. The 14 to 17 range is only the group that needs permission from a parent or guardian.",
+  "louisville-summerworks": "max_age 19 is what the program page says. The 16 to 21 range is from an older news post from the same group.",
+  "portland-multnomah-county-library-teen-council": "max_age 18 is right for middle and high school students. The 9 to 12 range is a separate Tween Council.",
+  "salem-oregon-humane-youth-volunteer": "max_age 17 is what the Apply Now button says. The 12 to 15 range is the group that volunteers with a parent or guardian.",
   // "austin-humane-society-teen-volunteer": "Tiered roles, 14 to 15 and 16 to 17; max_age 17 is the top tier.",
 };
 

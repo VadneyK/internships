@@ -1,0 +1,39 @@
+{
+  "id": "eugene-science-center-volunteer",
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 3,
+  "needs_work_permit": false,
+  "name": "Eugene Science Center Volunteers",
+  "org": "Eugene Science Center",
+  "city": "Eugene, OR",
+  "type": "volunteer",
+  "fields": [
+    "science",
+    "education"
+  ],
+  "what_you_do": "Volunteers run exhibit demos and host shows in the planetarium. They read to young kids and help at STEM workshops and summer camps. They also care for the garden.",
+  "min_age": null,
+  "max_age": 18,
+  "who_can_apply": "The page says volunteers range from high school students to retirees. A minimum age is not stated; ask the Science Center. A criminal background check is part of onboarding.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Perks include a free membership after 40 hours of service and free planetarium shows.",
+  "season": "year-round",
+  "duration": "Scheduled shifts after an orientation; length not stated",
+  "status": "rolling",
+  "deadline_text": "No deadline posted. Openings vary by season.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use Apply Now on the volunteer page. Then go to a volunteer orientation.",
+  "url": "https://www.sciencefactory.org/volunteer",
+  "notes": "The page gives no minimum age. It lists high school students among volunteers. Email the Science Center to ask if your age is OK for the role you want. The volunteer page now sends you to eugenesciencecenter.org/volunteer.",
+  "regions": [
+    "oregon"
+  ],
+  "sources_fetched": [
+    "https://www.sciencefactory.org/volunteer"
+  ]
+}

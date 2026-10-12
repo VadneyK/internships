@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "fields": [
+    "environment",
+    "science"
+  ],
+  "needs_work_permit": false,
+  "status": "rolling",
+  "deadline_confidence": "rolling",
+  "id": "phoenix-desert-botanical-garden-teen-volunteer",
+  "name": "Teen Volunteer Program",
+  "org": "Desert Botanical Garden",
+  "regions": [
+    "arizona"
+  ],
+  "city": "Phoenix, AZ",
+  "type": "volunteer",
+  "what_you_do": "Do hands on volunteer work with staff and adult volunteers in different Garden teams. Roles can be short projects, seasonal or ongoing.",
+  "min_age": 13,
+  "max_age": 17,
+  "who_can_apply": "Teens ages 13 to 17.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Short-term, seasonal or ongoing, depending on the role",
+  "deadline_text": "No deadline stated. Use the Sign Up link on the volunteer page.",
+  "how_to_apply": "Use the Sign Up link on the volunteer page. Fill out the online volunteer form.",
+  "url": "https://dbg.org/support/volunteer/",
+  "notes": "The page does not give a schedule or minimum hours. Ask the volunteer office.",
+  "sources_fetched": [
+    "https://dbg.org/support/volunteer/"
+  ]
+}

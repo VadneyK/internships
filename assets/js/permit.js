@@ -38,6 +38,7 @@
     h += '<dl class="facts">' + row("Youngest age", s.min_age) + row("Permit", s.permit) + row("Hours", s.hours);
     var hasPhone = s.phone && s.phone !== NS;
     h += "<div><dt>Who to ask</dt><dd>" + L.linkContacts(s.who_to_ask + (hasPhone ? " " + s.phone : "")) + (hasPhone ? "" : ' <span class="muted">Phone: ' + G.esc(NS) + "</span>") + "</dd></div></dl>";
+    if (wages) h += G.wageLine(wages, id);
     h += "<p>We mostly read one official page for this state, so this answer is shorter than our full state answers. Confirm on the page.</p>";
     /* Say what the short answer leaves out: the hours row may not cover 16 and 17, and it does not sort kinds of work. */
     var gaps = [];
@@ -49,7 +50,7 @@
     if (a >= 12 && a < 14) h += '<p>Federal law says under 14 may not be employed in most non-farm jobs. A state can be stricter, and then the stricter rule applies.</p><p><a class="btn sm" href="younger.html?age=' + encodeURIComponent(String(age)) + '">What you can do at 12 and 13</a></p>';
     return h + "</article>";
   }
-  var liteRead = "";
+  var liteRead = "", wages = null;
   function missingText(st, age, kind) {
     var m = [];
     if (!st) m.push("your state");
@@ -256,6 +257,13 @@
     }).catch(function () { liteP = null; return false; });
     return liteP;
   }
+  /* The state minimum wage file is read only once a short-answer state is chosen. It is optional: the card shows without the wage line if it does not load. */
+  var wagesP = null;
+  function ensureWages() {
+    if (wages) return Promise.resolve(true);
+    if (!wagesP) wagesP = G.stateWages().then(function (w) { wages = w; return true; }, function () { wagesP = null; return true; });
+    return wagesP;
+  }
   G.fetchData("data/permits.json").then(function (r) { return r.json(); }).then(function (d) {
     data = d;
     var first = ["ca", "ga", "ny", "il"], rest = Object.keys(d.states).filter(function (k) { return first.indexOf(k) < 0; }).sort(function (a, b) { return d.states[a].name < d.states[b].name ? -1 : 1; });
@@ -286,6 +294,7 @@
       /* "My state is not listed" in the second step is the same answer as in the first. */
       if ($("pLite").value === "other") { $("pState").value = "other"; $("pLite").value = ""; if ($("pState")._tpSync) $("pState")._tpSync(); if ($("pLite")._tpSync) $("pLite")._tpSync(); }
       changed();
+      if ($("pLite").value) ensureWages().then(function () { changed(); });
     });
     ["mName", "mEmp", "mTo"].forEach(function (id) { $(id).addEventListener("input", onMsgEdit); $(id).addEventListener("change", onMsgEdit); });
     /* The jump link sits in the answer card, which is re-rendered; the listener stays on the card container. */
@@ -310,7 +319,7 @@
       var low = asked.toLowerCase();
       ensureLite().then(function (ok) {
         if (!ok) { $("pOut").innerHTML = liteErrHTML; return; }
-        if (hasLite(low)) { $("pState").value = "lite"; $("pLite").value = low; if ($("pState")._tpSync) $("pState")._tpSync(); if ($("pLite")._tpSync) $("pLite")._tpSync(); render(); }
+        if (hasLite(low)) { $("pState").value = "lite"; $("pLite").value = low; if ($("pState")._tpSync) $("pState")._tpSync(); if ($("pLite")._tpSync) $("pLite")._tpSync(); ensureWages().then(function () { render(); }); }
         else $("pOut").innerHTML = nostateCard(asked, $("pAge").value);
       });
     }

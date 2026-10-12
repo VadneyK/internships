@@ -1,0 +1,39 @@
+{
+  "id": "louisville-summerworks",
+  "name": "SummerWorks",
+  "org": "KentuckianaWorks with Blueprint502 and Louisville Metro Government",
+  "regions": [
+    "kentucky"
+  ],
+  "city": "Louisville, KY",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Sign up, finish job skills training, then apply for a summer job with a private employer, a nonprofit or the city. Job coaches help with resumes and money skills.",
+  "min_age": 16,
+  "max_age": 19,
+  "grades": null,
+  "who_can_apply": "Young people who live in Jefferson County. The program page says ages 16 to 19. A 2025 news post from the same group said ages 16 to 21, counted on June 1.",
+  "paid_type": "paid",
+  "pay_detail": "You earn a paycheck. No hourly rate is posted. Private employers pay the youth they hire directly.",
+  "season": "summer",
+  "duration": "Summer. Length is not posted.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The page says to check back soon for summer 2027. In 2025 the group announced registration in March, and in 2026 in early February. No dates are posted yet.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Register at summerworks.org, finish the Job Readiness training, then apply for jobs. Create or upload a resume on the site.",
+  "needs_work_permit": null,
+  "url": "https://www.kentuckianaworks.org/summerworks",
+  "apply_url": "https://www.summerworks.org",
+  "sources_fetched": [
+    "https://www.kentuckianaworks.org/summerworks",
+    "https://www.kentuckianaworks.org/news/2025/summerworks-kickoff"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 1,
+  "notes": "The two pages give different top ages (19 and 21), so check the age rule when registration opens. Pay rate, hours and work permit rules are not stated on either page. Ask the program."
+}

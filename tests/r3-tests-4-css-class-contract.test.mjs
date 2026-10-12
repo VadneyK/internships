@@ -37,6 +37,7 @@ const HOOK_ALLOW = {
   caveat: "hook for a caveat note, styled through its parent",
   src: "hook for a source line, styled through its parent",
   hgroup: "hook for a heading group, styled through its parent",
+  stateWage: "hook for the state minimum wage line on Jobs and the permit card, styled through its parent",
   verdict: "permit result card marker; the card look comes from the card class, and tests find it by this name",
   none: "verdict value for no permit needed; no style of its own",
   ask: "verdict value for check with the state; no style of its own",

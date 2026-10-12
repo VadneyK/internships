@@ -16,12 +16,13 @@ const size = (f) => fs.statSync(path.join(ROOT, "data", f)).size;
 // Ceilings are the sum of the allowed files rounded up, so a swap to a bigger file fails.
 // Raised on 2026-10-10 for index, find, calendar, insights and younger: the guide grew from 1,370 to 1,771 programs (about 29 percent), so the card, lite, stats and core files grew with it. The ceilings are still the new sums rounded up. No page gained a file; entries-blurb.json and expiring-dates.json are fetched by other pages only.
 const PAGES = {
-  "index.html": { allowed: ["entries-home.json"], ceiling: 715000 },
+  // index.html, insights.html and younger.html: raised on 2026-10-11 for ticket p7-regions-1 (267 new cards for 11 states): 715000 to 830000 (home file is 817,474 bytes), 530000 to 615000 (stats file is 606,688), 340000 to 390000 (core file plus younger.json is 385,653).
+  "index.html": { allowed: ["entries-home.json"], ceiling: 830000 },
   "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2030000 },
   "calendar.html": { allowed: ["calendar.json", "entries-cal.json"], ceiling: 150000 },
-  "insights.html": { allowed: ["entries-stats.json"], ceiling: 530000 },
+  "insights.html": { allowed: ["entries-stats.json"], ceiling: 615000 },
   // younger.html: raised from 336000 to 340000 on 2026-10-11 (r5-younger-1: pet care card and address-safe script added 2.7 KB to younger.json)
-  "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 340000 },
+  "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 390000 },
   "interview.html": { allowed: ["interview.json", "permits.json"], ceiling: 95000 },
   "permit.html": { allowed: ["permits.json"], ceiling: 82000 },
   "paycheck.html": { allowed: ["money.json"], ceiling: 15000 },

@@ -25,6 +25,7 @@ NOT_OPEN_NOW = re.compile(r"\bno\b|\bnot\b|each year|every ", re.I)
 ALLOW_DATE = {
 }
 ALLOW_AGES = {
+    "portland-multnomah-county-library-teen-council": "max_age 18 covers middle and high school students; the 9 to 12 range is a separate Tween Council named in the text",
     "boston-futurebos-youth-jobs": "max_age 24 covers a young-adult tier; text names the teen tier",
     "lansing-umh-sparrow-teen-volunteer": "min_age 16 but text says ages 17 to 18; needs a data fix",
 }

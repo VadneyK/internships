@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "max_age": null,
+  "min_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 1,
+  "notes": "The page did not list ages. Ask the museum before you apply. The page title reads Museum Assistants.",
+  "deadline_confidence": "unknown",
+  "fields": [
+    "arts-media",
+    "education"
+  ],
+  "id": "st-louis-art-museum-museum-assistants-teens",
+  "name": "Museum Assistants (Teen Assistants)",
+  "org": "Saint Louis Art Museum",
+  "regions": [
+    "missouri"
+  ],
+  "city": "St. Louis, MO",
+  "type": "paid-youth-program",
+  "what_you_do": "Teens from the St. Louis area learn about art and teach others about art from around the world.",
+  "who_can_apply": "Teens from the St. Louis area. Age range not stated on the page.",
+  "paid_type": "paid",
+  "pay_detail": "$15 per hour",
+  "season": "year-round",
+  "duration": "Up to 24 hours a week in summer. At least 5 hours a month in the school year.",
+  "status": "unconfirmed",
+  "deadline_text": "No dates or deadline posted on the page.",
+  "how_to_apply": "Use the Learn more and apply link on the museum's teen assistants page. A contact email is listed there.",
+  "url": "https://www.slam.org/families-teens-youth/teen-assistants/",
+  "sources_fetched": [
+    "https://www.slam.org/families-teens-youth/teen-assistants/"
+  ]
+}

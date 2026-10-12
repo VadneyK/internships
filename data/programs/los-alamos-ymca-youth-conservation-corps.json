@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "max_age": 25,
+  "min_age": 14,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 2,
+  "notes": "The page says the 2026 grant award status was pending. The page does not state a wage.",
+  "deadline_confidence": "last-year-pattern",
+  "fields": [
+    "environment"
+  ],
+  "id": "los-alamos-ymca-youth-conservation-corps",
+  "name": "Youth Conservation Corps Summer Trail Crew",
+  "org": "The Family YMCA (Los Alamos and Espanola)",
+  "regions": [
+    "new-mexico"
+  ],
+  "city": "Los Alamos and Espanola, NM",
+  "type": "paid-youth-program",
+  "what_you_do": "Summer trail crews work on trails. They work with Los Alamos County Open Space and the Espanola Ranger District.",
+  "who_can_apply": "New Mexico youth ages 14 to 25. The page says jobs are open to this age range in general.",
+  "paid_type": "paid",
+  "pay_detail": "Paid jobs. Wage not stated on the page.",
+  "season": "summer",
+  "duration": "2026: crew members June 1 to July 24",
+  "status": "closed-expect-reopen",
+  "deadline_text": "2026 applications were due April 17, 2026, 6 p.m. Interviews April 20 to May 1. The page does not say when 2027 applications open.",
+  "how_to_apply": "Fill out the online form. Get 2 character reference forms from people who are not family. Then interview. Paper forms can be turned in at the YMCA or the Los Alamos or Espanola Teen Centers. Questions: lzollinger@laymca.org.",
+  "url": "https://laymca.org/youth-conservation-corps-ycc",
+  "sources_fetched": [
+    "https://laymca.org/youth-conservation-corps-ycc"
+  ]
+}

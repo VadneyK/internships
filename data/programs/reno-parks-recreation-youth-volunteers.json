@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 3,
+  "fields": [
+    "any",
+    "social-impact"
+  ],
+  "needs_work_permit": false,
+  "status": "rolling",
+  "deadline_confidence": "rolling",
+  "id": "reno-parks-recreation-youth-volunteers",
+  "name": "City of Reno Parks Volunteer Program",
+  "org": "City of Reno Parks and Recreation",
+  "regions": [
+    "nevada"
+  ],
+  "city": "Reno, NV",
+  "type": "volunteer",
+  "what_you_do": "Help with one day tasks or events with Reno Parks and Recreation. Under 16 needs a parent signed release. Ages 16 and older can take regular scheduled tasks.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "Under 16 can do drop-in single-day tasks with a parent-signed release form. 16 and older can do continuous volunteering after a background check. No minimum age is stated.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Drop-in single days, or recurring scheduled tasks",
+  "deadline_text": "No deadline stated.",
+  "how_to_apply": "Drop in: a parent signs the Volunteer Release of Liability Form and you sign a time sheet. Ongoing: send in a Volunteer Application, a Consent and Disclosure form and a Reno PD background form. Get a photo ID card. Call the Volunteer Coordinator at 775-334-2046.",
+  "url": "https://www.reno.gov/parks-and-recreation/resources/volunteers.php",
+  "notes": "The listed roles on the page are mostly for seniors programs and fund raising. Ask the coordinator what fits a teen.",
+  "sources_fetched": [
+    "https://www.reno.gov/parks-and-recreation/resources/volunteers.php"
+  ]
+}

@@ -54,6 +54,8 @@ const ALLOW_PAY = [
 // Rule B reason: the page says paid but gives no rate, so the text has no
 // conflict. The word volunteer or unpaid in the text is about something else.
 const ALLOW_UNPAID = [
+  // Paid hourly; the text says a teen may choose to volunteer instead (added 2026-10-11 for ticket p7-regions-1).
+  "nhmu-teen-explainers",
   "sf-breakthrough-sf",
   // Paid; the unpaid part is only the first 36 Foundation Studio hours, and the text says the rate is not stated.
   "boston-artists-for-humanity-teen-jobs",
@@ -64,6 +66,10 @@ const ALLOW_UNPAID = [
 // Rule C reason: who_can_apply names a different age than min_age (for example an
 // age for one role or one site). Each needs a data fix or a plain explanation.
 const ALLOW_AGE = [
+  // Added 2026-10-11 for ticket p7-regions-1. min_age 8 is the youngest age with an adult; the text also names 13 or 14 for some distribution sites.
+  "honolulu-hawaii-foodbank-volunteer",
+  // min_age 16 is the youngest age with adult supervision; the text also names 18 for forest restoration without it.
+  "louisville-nature-center-forest-restoration-volunteer",
   // min_age is the youngest age the card allows with an adult (r3-data-content-4); the text also names the age to go alone.
   "ann-arbor-food-gatherers-volunteer",
   "ann-arbor-summer-festival-volunteer",

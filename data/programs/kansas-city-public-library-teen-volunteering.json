@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "max_age": 18,
+  "min_age": 12,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 2,
+  "notes": "Openings depend on the branch.",
+  "deadline_confidence": "rolling",
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "id": "kansas-city-public-library-teen-volunteering",
+  "name": "Teen volunteering at Kansas City Public Library",
+  "org": "Kansas City Public Library",
+  "regions": [
+    "missouri"
+  ],
+  "city": "Kansas City, MO",
+  "type": "volunteer",
+  "what_you_do": "Teens ages 12 to 18 can volunteer at Kansas City Public Library branches. Talk to the teen volunteer lead at your branch to learn about openings.",
+  "who_can_apply": "Teens ages 12 to 18.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. You earn volunteer hours.",
+  "season": "year-round",
+  "duration": "Ongoing",
+  "status": "year-round",
+  "deadline_text": "No deadline. Openings depend on the branch.",
+  "how_to_apply": "Talk to the teen volunteer coordinator at your branch to ask if they have openings.",
+  "url": "https://kclibrary.org/teens",
+  "sources_fetched": [
+    "https://kclibrary.org/teens",
+    "https://kclibrary.org/tlot"
+  ]
+}

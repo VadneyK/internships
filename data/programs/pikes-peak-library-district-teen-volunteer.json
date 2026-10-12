@@ -1,0 +1,39 @@
+{
+  "id": "pikes-peak-library-district-teen-volunteer",
+  "name": "Teen Volunteers at Pikes Peak Library District",
+  "org": "Pikes Peak Library District",
+  "regions": [
+    "colorado"
+  ],
+  "city": "Colorado Springs, CO",
+  "type": "volunteer",
+  "fields": [
+    "education"
+  ],
+  "what_you_do": "Teens can see current volunteer chances through a link on the library teen volunteer page. The page does not list specific duties.",
+  "min_age": 13,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "Applications are open to people 13 and older. If you are 13 to 17 you need a parent or guardian permission.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "summer",
+  "duration": "Summer Adventure season (2026). Other teen roles vary.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "The page does not list volunteer dates. It links to current teen volunteer opportunities and gives a contact for questions.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online through the library volunteer system. If you do not want to apply online, email Karen Goates at kgoates@ppld.org.",
+  "needs_work_permit": false,
+  "url": "https://www.ppld.org/teens/volunteer",
+  "apply_url": "https://app.betterimpact.com/PublicOrganization/a800b035-46f8-4094-b92f-86e260479b8c/1",
+  "sources_fetched": [
+    "https://www.ppld.org/teens/volunteer",
+    "https://www.ppld.org/Teen-Summer-Volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 2,
+  "notes": "The age range 13 to 17 comes from the rule that people 13 and older apply and teens under 18 need permission. Call (719) 531-6333, ext. 6146 with questions."
+}

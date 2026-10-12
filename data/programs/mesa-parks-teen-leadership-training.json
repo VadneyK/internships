@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "fields": [
+    "education",
+    "sports"
+  ],
+  "needs_work_permit": false,
+  "status": "closed-expect-reopen",
+  "deadline_confidence": "last-year-pattern",
+  "id": "mesa-parks-teen-leadership-training",
+  "name": "Teen Leadership Training (TLT)",
+  "org": "City of Mesa Parks, Recreation and Community Facilities",
+  "regions": [
+    "arizona"
+  ],
+  "city": "Mesa, AZ",
+  "type": "volunteer",
+  "what_you_do": "Be a junior staff volunteer at Mesa summer camps: help with group games, crafts and swimming trips. Builds job skills.",
+  "min_age": 13,
+  "max_age": 17,
+  "who_can_apply": "Teens ages 13 to 17. You must be 13 by the start of the program. Space is limited.",
+  "paid_type": "fee-based",
+  "pay_detail": "Unpaid. Program fee is $32 for Mesa residents and $38 for non-residents.",
+  "season": "summer",
+  "duration": "Summer camp season. Mandatory training dates differ by camp.",
+  "deadline_text": "Starts when Mesa summer camp registration opens. 2027 dates not posted in the FAQ.",
+  "how_to_apply": "Sign up for a camp in ActiveNet. Then get a form and an interview link. Then do the interview and the training you must take. Adaptive camps (Camp Fiesta, Wiggles & Giggles) need a form and interview before you sign up.",
+  "url": "https://www.mesaaz.gov/files/assets/public/v/1/activities-culture/prcf/volunteers-and-interns/tlt-faq-2026.pdf",
+  "notes": "The City of Mesa website blocked a normal page visit, so the facts come from the 2026 FAQ PDF. Check the Mesa summer registration dates. Contact: PRCFVolunteers@mesaaz.gov or 480-644-4345 (from a search listing, not the PDF).",
+  "sources_fetched": [
+    "https://www.mesaaz.gov/files/assets/public/v/1/activities-culture/prcf/volunteers-and-interns/tlt-faq-2026.pdf"
+  ]
+}

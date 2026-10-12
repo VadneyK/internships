@@ -1,0 +1,39 @@
+{
+  "id": "portland-pdx-youth-at-work-summerworks",
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": "https://www3.i-trac.org/OnlineApplications2/R2PDXYouthAtWorkProgramApplication.aspx",
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 1,
+  "needs_work_permit": false,
+  "name": "PDX Youth@Work and SummerWorks",
+  "org": "Worksystems, Inc. (with the City of Portland, City of Gresham and David Douglas School District)",
+  "regions": [
+    "oregon"
+  ],
+  "city": "Portland, OR",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Paid work with local employers, with hands on skill building. Some tracks focus on fields like building, clean energy, health care and making things.",
+  "min_age": 16,
+  "max_age": 24,
+  "who_can_apply": "Young people ages 16 to 24. The page lists no other rules. Use the interest form to confirm you qualify.",
+  "paid_type": "paid",
+  "pay_detail": "Paid. Hourly rate not stated on the page.",
+  "season": "year-round",
+  "duration": "Short-term SummerWorks jobs and year-round PDX Youth@Work experiences; length not stated",
+  "status": "unconfirmed",
+  "deadline_text": "No application dates posted. The page does not say whether applications are open. The page links to the PDX Youth@Work Interest Form.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Complete the PDX Youth@Work Interest Form on the Worksystems page.",
+  "url": "https://www.worksystems.org/summerworks",
+  "notes": "It starts at age 16, so 14 and 15 year olds can not join. Oregon BOLI does not give work permits to minors ages 14 to 17. Employers need a certificate to hire minors.",
+  "sources_fetched": [
+    "https://www.worksystems.org/summerworks",
+    "https://www.oregon.gov/boli/employers/pages/minor-workers.aspx"
+  ]
+}

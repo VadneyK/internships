@@ -1,0 +1,39 @@
+{
+  "id": "louisville-zoo-volunteen",
+  "name": "Volunteen Program",
+  "org": "Louisville Zoo",
+  "regions": [
+    "kentucky"
+  ],
+  "city": "Louisville, KY",
+  "type": "volunteer",
+  "fields": [
+    "environment",
+    "science"
+  ],
+  "what_you_do": "Volunteer at the zoo through a special youth program for ages 13 to 18. The page does not list the tasks or hours.",
+  "min_age": 13,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Teens ages 13 to 18. All volunteers need a current TB (tuberculin) skin test.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Not stated",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The zoo says it is no longer taking applications for the 2026 Volunteen program and to check back in January 2027.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "The page points to the zoo's volunteer form. To ask about the teen program, send an email to the Coordinator of Volunteers at mary.taylor@louisvilleky.gov. Or call 502-459-2181.",
+  "needs_work_permit": false,
+  "url": "https://louisvillezoo.org/about-the-zoo/volunteer-opportunities/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://louisvillezoo.org/about-the-zoo/volunteer-opportunities/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 3,
+  "notes": "The zoo page lists no season or hours for the youth program, so the season shown is a placeholder. It also describes a separate 50-member Zoo Youth Board for students ages 13 to 18. It does not say how to join, so ask the volunteer coordinator."
+}

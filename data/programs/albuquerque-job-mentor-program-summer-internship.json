@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "max_age": 18,
+  "min_age": 14,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 1,
+  "notes": "The school-year Job Mentor Program is a 9th to 12th grade elective that earns 0.5 elective credit each semester. The page says interns earn minimum wage.",
+  "deadline_confidence": "last-year-pattern",
+  "fields": [
+    "any"
+  ],
+  "id": "albuquerque-job-mentor-program-summer-internship",
+  "name": "Job Mentor Program Summer Internship",
+  "org": "Youth and Family Services, City of Albuquerque",
+  "regions": [
+    "new-mexico"
+  ],
+  "city": "Albuquerque, NM",
+  "type": "internship",
+  "what_you_do": "Seven-week paid summer internship with a City department, government agency or nonprofit. You work up to 25 hours a week.",
+  "who_can_apply": "Albuquerque high school students ages 14 to 18.",
+  "paid_type": "paid",
+  "pay_detail": "Paid. Wage not stated on the program pages.",
+  "season": "summer",
+  "duration": "7 weeks, up to 25 hours a week",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The page gives no spring dates or year for applications. Apply during the spring window on the City's Jobs and Internships page.",
+  "how_to_apply": "Apply in spring. Use the City's Jobs and Internships page. Questions? Call the Educational Initiatives Office at 505-767-5898.",
+  "url": "https://www.cabq.gov/family/our-department/employment-opportunities/job-mentor-program",
+  "sources_fetched": [
+    "https://www.cabq.gov/family/our-department/employment-opportunities/job-mentor-program",
+    "https://www.cabq.gov/family/crei/jobs-internships"
+  ]
+}

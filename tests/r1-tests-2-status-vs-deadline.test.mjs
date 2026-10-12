@@ -28,6 +28,8 @@ const ALLOW = {
   // Change status or the date in data/programs when a human has checked, then delete the line.
   "closed-with-future-date:bloomington-iu-jacobs-composition-academy": "closed card keeps next cycle date: page says Spring 2027 registration begins mid November, no day",
   "closed-with-future-date:bloomington-iu-jacobs-dance-summer-intensives": "closed card keeps next cycle date: page says summer 2027 registration opens mid-December, no day",
+  "closed-with-future-date:cu-boulder-science-discovery-stem-research-experience": "closed card keeps next cycle date: page says the application opens mid-December 2026 and the deadline is March 16, 2027",
+  "closed-with-future-date:portland-pnca-pre-college-summer": "closed card keeps next cycle date: page says applications open fall 2026 and the application deadline is May 2, 2027",
   "closed-with-future-date:emory-pre-college-program": "closed card keeps next cycle date: page says 2027 applications open in December, no day",
   "closed-with-future-date:lafayette-purdue-sciencescape": "closed card keeps next cycle date: source says applications open mid-March 2027, no day",
   "closed-with-future-date:nc-museum-natural-sciences-cafe-coordinators": R,

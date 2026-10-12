@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "fields": [
+    "science",
+    "environment",
+    "education"
+  ],
+  "needs_work_permit": false,
+  "status": "rolling",
+  "deadline_confidence": "rolling",
+  "id": "las-vegas-natural-history-museum-volunteer",
+  "name": "Volunteer Program (students 14 and up)",
+  "org": "Las Vegas Natural History Museum",
+  "regions": [
+    "nevada"
+  ],
+  "city": "Las Vegas, NV",
+  "type": "volunteer",
+  "what_you_do": "Talk with families during weekend activities and workshops. You can also help at events or ongoing programs.",
+  "min_age": 14,
+  "max_age": null,
+  "who_can_apply": "Age 16 or older. Ages 14 to 15 can volunteer with a parent or guardian. Students needing service hours can use the student sign-up.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Students can earn community service hours.",
+  "season": "year-round",
+  "duration": "At least 4 hours per month",
+  "deadline_text": "No deadline stated.",
+  "how_to_apply": "Students use the Student Volunteer Sign Up at lvnhm.org/community-service-hours-request. Others use lvnhm.org/volunteer-application. Finish safety training. Call (702) 384-3466 for the steps for parent permission.",
+  "url": "https://www.lvnhm.org/volunteer",
+  "notes": "The page does not describe the permission form for 14 and 15 year olds, so call first.",
+  "sources_fetched": [
+    "https://www.lvnhm.org/volunteer"
+  ]
+}

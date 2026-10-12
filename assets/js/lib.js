@@ -54,6 +54,7 @@
     ["massachusetts", "Massachusetts"],
     ["santa-barbara", "Santa Barbara"],
     ["merced", "Merced"],
+    ["arizona", "Arizona"], ["nevada", "Nevada"], ["colorado", "Colorado"], ["utah", "Utah"], ["florida", "Florida"], ["hawaii", "Hawaii"], ["oregon", "Oregon"], ["tennessee", "Tennessee"], ["kentucky", "Kentucky"], ["missouri", "Missouri"], ["new-mexico", "New Mexico"],
     ["virtual", "Online"], ["national", "National"]
   ];
   /* Hubs group the regions into the areas teens recognize. [id, label, region ids] */
@@ -73,6 +74,9 @@
     ["aus", "Austin and Texas", ["austin", "texas"]],
     ["midwest", "Midwest campuses", ["twin-cities", "champaign", "madison", "lafayette", "bloomington", "columbus", "cincinnati", "ann-arbor", "lansing", "minnesota", "wisconsin", "indiana", "ohio", "michigan"]],
     ["east", "East Coast", ["triangle", "college-park", "fairfax", "charlottesville", "blacksburg", "new-brunswick", "pittsburgh", "philadelphia", "boston", "north-carolina", "maryland", "virginia", "new-jersey", "pennsylvania", "massachusetts"]],
+    ["mtn", "Mountain West", ["arizona", "nevada", "colorado", "utah", "new-mexico"]],
+    ["south", "South", ["florida", "tennessee", "kentucky", "missouri"]],
+    ["pac", "Oregon and Hawaii", ["oregon", "hawaii"]],
     ["online", "Online and national", ["virtual", "national"]]
   ];
   /* Cities and areas for the "Where" picker. [id, label, region ids]. A teen picks a city; a city covers its metro region plus its state-wide programs. */
@@ -136,7 +140,9 @@
     ["Texas", ["texas"], ["austin"]],
     ["Midwest", ["midwest"], ["minneapolis", "chicago", "elgin", "urbana-champaign", "madison", "west-lafayette", "bloomington", "columbus", "cincinnati", "ann-arbor", "east-lansing", "detroit"]],
     ["Northeast", ["northeast"], ["new-york-city", "new-brunswick", "philadelphia", "pittsburgh", "boston"]],
-    ["South and DC area", ["southeast", "dc-area"], ["atlanta", "raleigh-chapel-hill", "charlottesville", "blacksburg", "college-park", "fairfax"]]
+    ["South and DC area", ["southeast", "dc-area"], ["atlanta", "raleigh-chapel-hill", "charlottesville", "blacksburg", "college-park", "fairfax"]],
+    ["Mountain West", [], []],
+    ["Oregon and Hawaii", [], []]
   ];
   /* Whole-state choices for the Where picker, for a teen with no city to pick. [id, label, region id]. A state place covers that state-level region
      (plus online and national programs when few match, the same as a city). Every state is in exactly one PICK_GROUPS group. */
@@ -149,14 +155,17 @@
     ["new-york-state", "New York State", "new-york-state"], ["new-jersey", "New Jersey", "new-jersey"],
     ["pennsylvania", "Pennsylvania", "pennsylvania"], ["massachusetts", "Massachusetts", "massachusetts"],
     ["georgia", "Georgia", "georgia"], ["north-carolina", "North Carolina", "north-carolina"],
-    ["virginia", "Virginia", "virginia"], ["maryland", "Maryland", "maryland"]
+    ["virginia", "Virginia", "virginia"], ["maryland", "Maryland", "maryland"],
+    ["arizona", "Arizona", "arizona"], ["nevada", "Nevada", "nevada"], ["colorado", "Colorado", "colorado"], ["utah", "Utah", "utah"], ["florida", "Florida", "florida"], ["hawaii", "Hawaii", "hawaii"], ["oregon", "Oregon", "oregon"], ["tennessee", "Tennessee", "tennessee"], ["kentucky", "Kentucky", "kentucky"], ["missouri", "Missouri", "missouri"], ["new-mexico", "New Mexico", "new-mexico"]
   ];
   PICK_GROUPS[0].push(["california"]);
   PICK_GROUPS[1].push(["washington", "british-columbia"]);
   PICK_GROUPS[2].push(["texas"]);
   PICK_GROUPS[3].push(["minnesota", "illinois", "wisconsin", "indiana", "ohio", "michigan"]);
   PICK_GROUPS[4].push(["new-york-state", "new-jersey", "pennsylvania", "massachusetts"]);
-  PICK_GROUPS[5].push(["georgia", "north-carolina", "virginia", "maryland"]);
+  PICK_GROUPS[5].push(["georgia", "north-carolina", "virginia", "maryland", "florida", "tennessee", "kentucky", "missouri"]);
+  PICK_GROUPS[6].push(["arizona", "nevada", "colorado", "utah", "new-mexico"]);
+  PICK_GROUPS[7].push(["oregon", "hawaii"]);
   var _placeCache = {};
   /* "city:boston", "area:midwest" or "state:ohio" to the region ids it covers, or null if unknown */
   function placeRegions(place) {
@@ -236,6 +245,7 @@
     "orange-county": "ca", "los-angeles": "ca", "inland-empire": "ca", "san-diego": "ca",
     atlanta: "ga", georgia: "ga", "new-york-city": "ny", "new-york-state": "ny", chicago: "il", illinois: "il",
     seattle: "wa", washington: "wa", vancouver: "bc", "british-columbia": "bc", austin: "tx", texas: "tx", "twin-cities": "mn", minnesota: "mn", champaign: "il", madison: "wi", wisconsin: "wi", lafayette: "in", bloomington: "in", indiana: "in", columbus: "oh", cincinnati: "oh", ohio: "oh", "ann-arbor": "mi", lansing: "mi", michigan: "mi", triangle: "nc", "north-carolina": "nc", "college-park": "md", maryland: "md", fairfax: "va", charlottesville: "va", blacksburg: "va", virginia: "va", "new-brunswick": "nj", "new-jersey": "nj", pittsburgh: "pa", philadelphia: "pa", pennsylvania: "pa", boston: "ma", massachusetts: "ma", "santa-barbara": "ca", merced: "ca",
+    arizona: "az", nevada: "nv", colorado: "co", utah: "ut", florida: "fl", hawaii: "hi", oregon: "or", tennessee: "tn", kentucky: "ky", missouri: "mo", "new-mexico": "nm",
     virtual: "", national: ""
   };
   function stateOf(e) {

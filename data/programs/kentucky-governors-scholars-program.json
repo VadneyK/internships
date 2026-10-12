@@ -1,0 +1,41 @@
+{
+  "id": "kentucky-governors-scholars-program",
+  "name": "Kentucky Governor's Scholars Program (GSP)",
+  "org": "Kentucky Governor's Scholars Program",
+  "regions": [
+    "kentucky"
+  ],
+  "city": "Kentucky (campuses at Centre College, Morehead State University and Murray State University)",
+  "type": "pre-college",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Spend five weeks on a college campus taking three classes plus evening and weekend activities with other top Kentucky students. There are no grades or credits. You earn a certificate.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "11th grade at the time of selection (summer before senior year)",
+  "who_can_apply": "Current Kentucky residents in 11th grade who plan to return to a Kentucky school. You must have taken the ACT, PSAT or SAT in grades 9 to 11. Public, private, parochial and homeschool students can apply.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free for selected students. The state and donors cover tuition, room, board and most supplies. Families pay for travel to the program and spending money. A refundable residence deposit is required.",
+  "season": "summer",
+  "duration": "5 weeks (June 19 to July 23, June 20 to July 24, or June 27 to July 31, 2027)",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Single-school districts, private schools and homeschool students: Jan 15, 2027. Districts with more than one school: Jan 29, 2027. Notices go out by Apr 12, 2027.",
+  "deadline_iso": "2027-01-15",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply through your school or district with the online student form. Home school students should contact the GSP office. Applications are read without names. Each school or district can send a set number based on its junior class size.",
+  "needs_work_permit": false,
+  "url": "https://gsp.ky.gov",
+  "apply_url": "https://gsp.ky.gov/applicants/Pages/Applications-and-Forms.aspx",
+  "sources_fetched": [
+    "https://www.gsp.ky.gov",
+    "https://gsp.ky.gov/applicants/Pages/FAQs.aspx",
+    "https://gsp.ky.gov/applicants/Pages/Important-Dates.aspx",
+    "https://gsp.ky.gov/applicants/Pages/Application-Selection-Process.aspx"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 1,
+  "notes": "The deadline_iso shown is the earlier of the two deadlines. Ask your school counselor which one applies to you. Scholars agree to stay all five weeks and may leave campus for one Family Day. Leaving early means no certificate."
+}

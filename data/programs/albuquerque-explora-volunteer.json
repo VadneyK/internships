@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "max_age": null,
+  "min_age": 14,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": "https://forms.gle/aWosUhd71QxAaevM8",
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 2,
+  "notes": "The volunteer page lists a minimum age of 14.",
+  "deadline_confidence": "rolling",
+  "fields": [
+    "science",
+    "education"
+  ],
+  "id": "albuquerque-explora-volunteer",
+  "name": "Explora Volunteers",
+  "org": "Explora Science Center and Children's Museum",
+  "regions": [
+    "new-mexico"
+  ],
+  "city": "Albuquerque, NM",
+  "type": "volunteer",
+  "what_you_do": "Volunteers help teachers run programs and talk with guests about the exhibits. They join outreach around New Mexico and help keep the museum clean.",
+  "who_can_apply": "Anyone 14 or older.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid.",
+  "season": "year-round",
+  "duration": "Ongoing",
+  "status": "rolling",
+  "deadline_text": "No deadline. Fill out the interest form any time.",
+  "how_to_apply": "Fill out the Volunteer Interest Form.",
+  "url": "https://www.explora.us/volunteer/",
+  "sources_fetched": [
+    "https://www.explora.us/volunteer/"
+  ]
+}

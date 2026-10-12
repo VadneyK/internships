@@ -1,0 +1,39 @@
+{
+  "id": "utah-pre-employment-transition-services-pre-ets",
+  "name": "Pre-Employment Transition Services (Pre-ETS)",
+  "org": "Utah State Office of Rehabilitation, Vocational Rehabilitation",
+  "regions": [
+    "utah"
+  ],
+  "city": "Statewide, UT",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Free help for students with disabilities. You explore careers, get ready for work, learn to speak up for yourself and try work based learning.",
+  "min_age": 14,
+  "max_age": 21,
+  "grades": null,
+  "who_can_apply": "Students with disabilities ages 14 through 21 (or age 22 while in special education services). You must be in a high school or after high school program. You must be eligible for IDEA services. Or you have a disability under section 504. You do not have to be a client of Vocational Rehabilitation.",
+  "paid_type": "not-stated",
+  "pay_detail": "Instruction by community partners is free.",
+  "season": "year-round",
+  "duration": "Varies by student",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline stated.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Contact your school Vocational Rehabilitation liaison or a local VR office. You can send an email to vrtransition@utah.gov. You can also call 801-887-9500.",
+  "needs_work_permit": null,
+  "url": "https://jobs.utah.gov/usor/vr/services/student/preemploy.html",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://jobs.utah.gov/usor/vr/services/student/preemploy.html",
+    "https://jobs.utah.gov/usor/vr/services/student/index.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 2,
+  "notes": "Every public high school and charter school has a VR counselor. Contractors check that a student fits before services start."
+}

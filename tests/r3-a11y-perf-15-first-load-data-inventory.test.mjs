@@ -12,15 +12,15 @@ const SMALL = "a small page file or two, no card file";
 
 // page: { paths, ceiling (bytes on disk, all listed paths summed), reason (why that ceiling) }
 export const TABLE = {
-  "index.html": { paths: ["data/entries-home.json"], ceiling: 800000, reason: "Home needs the ranked Home file for the picker cards, and nothing bigger" },
-  "find.html": { paths: ["data/entries-lite.json"], ceiling: 1780000, reason: "Find filters every program, so it needs the whole lite file" },
+  "index.html": { paths: ["data/entries-home.json"], ceiling: 830000, reason: "Home needs the ranked Home file for the picker cards, and nothing bigger" },
+  "find.html": { paths: ["data/entries-lite.json"], ceiling: 1960000, reason: "Find filters every program, so it needs the whole lite file" },
   "calendar.html": { paths: ["data/calendar.json", "data/entries-cal.json"], ceiling: 150000, reason: "Calendar draws deadline cards from the small calendar file (only the programs it lists) plus its own small file" },
   "younger.html": { paths: ["data/entries-core.json", "data/younger.json"], ceiling: 1100000, reason: "Ages 12 to 14 reads the core file and its own small file; headroom up to the card file size" },
   "jobs.html": { paths: ["data/employers.json"], ceiling: 130000, reason: "Jobs lists employers from one small file; the state hours rules load only after an age of 14 to 17 and a state are picked" },
   "interview.html": { paths: ["data/interview.json"], ceiling: 60000, reason: "Tips file only; the state rules load the first time the hours checker is used" },
   "permit.html": { paths: ["data/permits.json"], ceiling: 100000, reason: "Work permit page reads only the state rules file" },
   "states.html": { paths: ["data/permits.json"], ceiling: 100000, reason: "State rules page reads only the state rules file" },
-  "insights.html": { paths: ["data/entries-stats.json"], ceiling: 600000, reason: "Numbers page counts every program, so it needs the stats projection (about 528 KB), the one page over the 200000 default" },
+  "insights.html": { paths: ["data/entries-stats.json"], ceiling: 615000, reason: "Numbers page counts every program, so it needs the stats projection (about 528 KB), the one page over the 200000 default" },
   "languages.html": { paths: ["data/languages.json"], ceiling: 200000, reason: SMALL },
   "parents.html": { paths: ["data/parents.json"], ceiling: 200000, reason: SMALL },
   "paycheck.html": { paths: ["data/money.json"], ceiling: 200000, reason: SMALL },

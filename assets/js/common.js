@@ -173,6 +173,19 @@
   G.stateShorts = function () {
     return shortsP || (shortsP = G.fetchData("data/states-lite.json").then(checkJson).catch(function (e) { shortsP = null; throw e; }));
   };
+  /* State minimum wages (read only once a state is picked). Cached. A failed read is not cached, so a retry works. */
+  var wagesP = null;
+  G.stateWages = function () {
+    return wagesP || (wagesP = G.fetchData("data/state-wages.json").then(checkJson).catch(function (e) { wagesP = null; throw e; }));
+  };
+  /* The wage line for one state id, built only from the fields in data/state-wages.json. "" when the state has no row. */
+  G.wageLine = function (wd, id) {
+    var w = wd && wd.states ? wd.states.filter(function (x) { return x.id === id; })[0] : null;
+    if (!w || !w.wage) return "";
+    var u = G.safeUrl(w.url), NS = "Not stated on the page we read.";
+    return '<p class="stateWage"><b>State minimum wage:</b> ' + G.esc(w.wage) + (w.youth && w.youth !== NS ? " " + G.esc(w.youth) : "") +
+      " Source: " + (u ? '<a href="' + G.esc(u) + '" target="_blank" rel="noopener">' + G.esc(w.page_title) + "</a>" : G.esc(w.page_title)) + ". Some cities may set a higher rate. Check your city.</p>";
+  };
   G.loadEntries = function (lite) {
     if (lite === "core") {
       if (!coreCache) coreCache = G.fetchData("data/entries-core.json").then(checkJson);

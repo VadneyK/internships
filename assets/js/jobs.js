@@ -69,6 +69,13 @@
     ldState = 1;
     G.stateShorts().catch(function () { return null; }).then(function (j) { ld = j; ldFailed = !j; ldState = 2; done(); });
   }
+  /* state-wages.json is read only once a state in the US is picked. A failed read sets wdFailed (the fallback line shows), and the next state pick tries again. */
+  var wd = null, wdState = 0, wdFailed = false;
+  function loadWages(done) {
+    if (wdState) return;
+    wdState = 1;
+    G.stateWages().catch(function () { return null; }).then(function (j) { wd = j; wdFailed = !j; wdState = 2; done(); });
+  }
   function telLink(ph) {
     var digits = String(ph || "").replace(/\D/g, "");
     return digits.length === 10 ? '<a href="tel:' + digits + '">' + G.esc(ph) + "</a>" : "";
@@ -101,7 +108,21 @@
     Object.keys(NAMES).sort(function (a, b) { return NAMES[a] < NAMES[b] ? -1 : 1; }).forEach(function (k) {
       stSel.appendChild(Object.assign(document.createElement("option"), { value: k, textContent: NAMES[k] }));
     });
-    function hoursStrip(v, st) {
+    /* Puts the hours strip in #jHours. For a picked US state (not Under 14, not BC) the state wage line, or a short fallback if the wage file failed, is added to the end of the hours box with DOM methods. noFetch stops a repaint from starting another load. */
+    var WAGE_FAIL = "We could not load the state wage. Check your state labor office.";
+    function paintHours(v, st, noFetch) {
+      var out = $("jHours");
+      out.innerHTML = hoursCore(v, st);
+      if (!v || !st || st === "BC" || v === "u14") return;
+      var box = out.querySelector("#jHoursBox");
+      if (!box) return;
+      if (!wdState && !noFetch) loadWages(function () { if (sel.value && sel.value !== "u14") paintHours(sel.value, stSel.value, true); });
+      var tmp = document.createElement("div");
+      if (wd) tmp.innerHTML = G.wageLine(wd, st.toLowerCase());
+      else if (wdFailed) tmp.appendChild(Object.assign(document.createElement("p"), { className: "small muted", textContent: WAGE_FAIL }));
+      while (tmp.firstChild) box.appendChild(tmp.firstChild);
+    }
+    function hoursCore(v, st) {
       if (st === "BC") return '<div class="callout plain small" id="jHoursBox"><p>' + G.esc(BC_LINE) + "</p></div>";
       if (!st) return '<p class="small muted">Pick your state to see its hours rule for your age.</p>';
       if (v === "u14") return '<div class="callout plain small" id="jHoursBox"><p>Ages 12 and 13: see the <a href="younger.html">Ages 12 to 14 page</a> for what is allowed at your age.</p></div>';
@@ -110,7 +131,7 @@
       function again() {
         var sv = sel.value, ss = stSel.value;
         if (!sv || sv === "u14" || !ss || ss === "BC") return;
-        $("jHours").innerHTML = hoursStrip(sv, ss);
+        paintHours(sv, ss);
         if (pdFailed || ldFailed) $("jStatus").textContent = "The hours rules could not load. Use the work permit finder link for your state.";
       }
       if (age >= 14 && age < 18 && !pdState) loadPermits(again);
@@ -167,7 +188,7 @@
       $("jChips").innerHTML = "";
       $("jHelp").innerHTML = helpLines(st);
       paintRules(st);
-      $("jHours").innerHTML = v ? hoursStrip(v, st) : "";
+      if (v) paintHours(v, st); else $("jHours").innerHTML = "";
       if (!v) { $("jStatus").textContent = ""; out.innerHTML = '<p class="muted">Tap your age to see who hires.</p>'; return; }
       if (v === "u14") {
         if (yd === undefined && st !== "BC") loadYounger(function () { if (sel.value === "u14") paint(); });
@@ -211,7 +232,11 @@
       out.innerHTML = html;
     }
     sel.addEventListener("change", function () { syncAddress(sel.value, stSel.value); paint(); });
-    stSel.addEventListener("change", function () { syncAddress(sel.value, stSel.value); paint(); });
+    stSel.addEventListener("change", function () {
+      /* A state pick after a failed wage read starts one new try. */
+      if (wdFailed) { wdFailed = false; wdState = 0; }
+      syncAddress(sel.value, stSel.value); paint();
+    });
     /* Start age: the address wins (an invalid ?age= leaves the picker empty), otherwise the age saved on Programs (read only). */
     var params = new URLSearchParams(location.search), start = "";
     if (params.has("age")) start = ageChoice(params.get("age"));

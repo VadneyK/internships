@@ -16,7 +16,8 @@ const DETAIL_FIELDS = ["who_can_apply", "how_to_apply", "notes", "duration", "pa
 // The detail file grew from about 330,000 gzipped bytes to 411,934 (level 9, 1,352,219 raw bytes)
 // because duration and pay_detail moved out of entries-lite.json into it (see r3-a11y-perf-6).
 // The limit is the current size plus about 3,000 bytes of headroom. Raise it only with a reason.
-const GZIP_LIMIT = 415000;
+// Raised from 415000 to 465000 on 2026-10-11 for ticket p7-regions-1: 267 new cards for 11 states put the detail file at 461,719 gzipped bytes.
+const GZIP_LIMIT = 465000;
 
 function readText(file) {
   return fs.readFileSync(path.join(DATA, file), "utf8");

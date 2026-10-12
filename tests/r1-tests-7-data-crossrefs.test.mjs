@@ -49,6 +49,8 @@ const RULES = [
   [/^safety\.json$/, /^\.sections\[\]\.id$/, "skip: section ids name a page section"],
   [/^states-lite\.json$/, /^\.states\[\]\.id$/, "skip: these are the states that are not in permits.json (30 other states), so they are not state codes of the permit finder"],
   [/^states-lite\.json$/, /^\.states$/, "skip: container, its rows are checked"],
+  [/^state-wages\.json$/, /^\.states\[\]\.id$/, "skip: these are all 50 states and DC, checked by tests/p7-wages-1.test.mjs"],
+  [/^state-wages\.json$/, /^\.states$/, "skip: container, its rows are checked"],
   [/^younger\.json$/, /^\.states$/, "statePairs"],
 ];
 

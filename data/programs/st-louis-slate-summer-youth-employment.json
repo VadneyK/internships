@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "max_age": 24,
+  "min_age": 16,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 2,
+  "notes": "SLATE is seeking more funding. Missouri work permit rules not checked.",
+  "deadline_confidence": "last-year-pattern",
+  "fields": [
+    "any"
+  ],
+  "id": "st-louis-slate-summer-youth-employment",
+  "name": "Summer Youth Employment Program (SYEP-STL)",
+  "org": "St. Louis Agency on Training and Employment (SLATE), City of St. Louis",
+  "regions": [
+    "missouri"
+  ],
+  "city": "St. Louis, MO",
+  "type": "paid-youth-program",
+  "what_you_do": "Paid on-the-job training with an employer for St. Louis City youth. Each youth is partnered with a job coach.",
+  "who_can_apply": "Live in the City of St. Louis, age 16 to 24, and household income under $69,090 and/or live in a Qualified Census Tract. Under 17 needs a parent or guardian signature on the Eligibility Form.",
+  "paid_type": "paid",
+  "pay_detail": "Paid. Wage not stated on the page.",
+  "season": "summer",
+  "duration": "not stated",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Page says applications are closed because the program reached capacity and SLATE is seeking more funding. No dates posted.",
+  "how_to_apply": "The program is closed because it reached capacity. Watch the SLATE program page and its Facebook page for updates. When it opens, you need proof of age, St. Louis residency and household income.",
+  "url": "https://www.stlouis-mo.gov/government/departments/slate/youth/summer-youth-employment-program-1.cfm",
+  "sources_fetched": [
+    "https://www.stlouis-mo.gov/government/departments/slate/youth/summer-youth-employment-program-1.cfm"
+  ]
+}

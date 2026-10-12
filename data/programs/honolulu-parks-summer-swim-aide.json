@@ -1,0 +1,41 @@
+{
+  "id": "honolulu-parks-summer-swim-aide",
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 1,
+  "needs_work_permit": true,
+  "name": "Summer Swim Aide (City of Honolulu pools and ocean sites)",
+  "org": "City and County of Honolulu Department of Parks and Recreation",
+  "city": "Honolulu, HI",
+  "type": "paid-youth-program",
+  "fields": [
+    "sports",
+    "health"
+  ],
+  "what_you_do": "Lifeguards at city pools or ocean sites teach swim classes and keep swimmers safe. They also help run swim, paddle, surf and dive activities.",
+  "min_age": 16,
+  "max_age": null,
+  "who_can_apply": "Open to applicants as young as 16. You need a valid American Red Cross Lifeguard Training, First Aid and CPR/AED for the Professional Rescuer certificate. You also need work with children and teens.",
+  "paid_type": "paid",
+  "pay_detail": "$19.23 an hour",
+  "season": "summer",
+  "duration": "Seasonal full-time or part-time. The page does not give start or end dates.",
+  "status": "unconfirmed",
+  "deadline_text": "The page says applications are accepted online with no closing date listed. Current status not confirmed.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply through the online application link on the Summer Fun Jobs page.",
+  "url": "https://www.honolulu.gov/dpr/summer-fun/summer-fun-jobs/",
+  "sources_fetched": [
+    "https://www.honolulu.gov/dpr/summer-fun/summer-fun-jobs/",
+    "https://www.honolulu.gov/dpr/summer-fun/",
+    "https://labor.hawaii.gov/wsd/child-labor/"
+  ],
+  "notes": "Work sites: 21 pools and 3 ocean recreation sites. Hawaii requires a child labor certificate (work permit) for working minors under 18. It is free. It is a Certificate of Employment for 14 and 15, and a Certificate of Age for 16 and 17.",
+  "regions": [
+    "hawaii"
+  ]
+}

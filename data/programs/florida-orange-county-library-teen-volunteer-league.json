@@ -1,0 +1,37 @@
+{
+  "id": "florida-orange-county-library-teen-volunteer-league",
+  "name": "Teen Volunteer League",
+  "org": "Orange County Library System",
+  "regions": [
+    "florida"
+  ],
+  "city": "Orange County (Orlando area), FL",
+  "type": "volunteer",
+  "fields": [
+    "education"
+  ],
+  "what_you_do": "Join teen volunteer events like craft kits and trying out classes. Make a literary magazine, or join online advisory boards. You earn community service hours.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Middle and high school students in Orange County. Age and grade rules vary by event. Check with your branch.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid; earns community service hours (up to 2 hours per event)",
+  "season": "year-round",
+  "duration": "Events and monthly meetings",
+  "status": "rolling",
+  "deadline_text": "Register for upcoming events at participating branches.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Register for an event at a participating branch. Questions: AskOCLS@ocls.org or 407-835-7323.",
+  "needs_work_permit": false,
+  "url": "https://ocls.org/teenvolunteerleague",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://ocls.org/teenvolunteerleague"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 3,
+  "notes": "Advisory boards give 1 hour of service for each monthly online meeting. For the literary magazine you must send in work to get hours."
+}

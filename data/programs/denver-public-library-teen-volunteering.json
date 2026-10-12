@@ -1,0 +1,39 @@
+{
+  "id": "denver-public-library-teen-volunteering",
+  "name": "Teen Volunteering at Denver Public Library",
+  "org": "Denver Public Library",
+  "regions": [
+    "colorado"
+  ],
+  "city": "Denver, CO",
+  "type": "volunteer",
+  "fields": [
+    "education"
+  ],
+  "what_you_do": "Teens 14 and up can apply to volunteer at the library.",
+  "min_age": 14,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Teens must be 14 or older to apply.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Not stated",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "The page says all current teen volunteer positions are filled. No reopening date is posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Look at the page to see what is open. If you have questions, email volunteers@denverlibrary.org.",
+  "needs_work_permit": false,
+  "url": "https://www.denverlibrary.org/teen/volunteering",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.denverlibrary.org/teen/volunteering",
+    "https://denverlibrary.org/volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 3,
+  "notes": "The main volunteer page says most roles are for adults 18 and older, but teen roles exist. Positions fill up, so email the volunteer office to ask when more open."
+}

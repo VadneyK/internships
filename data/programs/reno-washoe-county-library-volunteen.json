@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 1,
+  "fields": [
+    "education"
+  ],
+  "needs_work_permit": false,
+  "status": "rolling",
+  "deadline_confidence": "rolling",
+  "id": "reno-washoe-county-library-volunteen",
+  "name": "Volunteen",
+  "org": "Washoe County Library System",
+  "regions": [
+    "nevada"
+  ],
+  "city": "Reno, NV",
+  "type": "volunteer",
+  "what_you_do": "Earn up to 20 volunteer hours by finishing activity badges. Do them online with Beanstack or with a paper workbook. A coordinator checks your work.",
+  "min_age": 14,
+  "max_age": 18,
+  "who_can_apply": "Teens ages 14 to 18. Teen and a parent or guardian both sign the application.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. You get a certificate at 20 hours.",
+  "season": "year-round",
+  "duration": "Self-paced, up to 20 hours",
+  "deadline_text": "No start, end or deadline dates listed.",
+  "how_to_apply": "Online: make a Beanstack account and join the Volunteen Challenge. A coordinator emails the forms. Paper: fill out the online form or ask the volunteer coordinator at your branch.",
+  "url": "https://www.washoecountylibrary.us/teens/volunteen.php",
+  "notes": "Paperwork and orientation come first. Both a teen and a parent or guardian must sign.",
+  "sources_fetched": [
+    "https://www.washoecountylibrary.us/teens/volunteen.php"
+  ]
+}

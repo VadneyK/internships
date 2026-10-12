@@ -13,6 +13,7 @@ const MO = read("money.json");
 const TR = read("transit.json");
 const LA = read("languages.json");
 const ENTRIES = read("entries.json");
+const LITE_IDS = read("states-lite.json").states.map((x) => x.id);
 
 const ONLINE_ONLY = ["virtual", "national"];
 const KIND_IDS = PM.kinds.map((k) => k[0]);
@@ -35,7 +36,8 @@ test("CITIES and AREAS ids are unique", () => {
 
 test("every region except online and national has a state, a hub and a city", () => {
   const hubRegions = new Set(L.HUBS.flatMap((h) => h[2]));
-  const cityRegions = new Set(L.CITIES.flatMap((c) => c[2]));
+  // A whole-state Where choice (L.STATES) counts as the place for a state with no city yet (ticket p7-regions-1).
+  const cityRegions = new Set([...L.CITIES.flatMap((c) => c[2]), ...L.STATES.map((x) => x[2])]);
   for (const [id] of L.REGIONS) {
     if (ONLINE_ONLY.includes(id)) continue;
     assert.ok(hasOwn(L.STATE_OF, id), "STATE_OF has no key for " + id);
@@ -70,7 +72,7 @@ test("every city and every area has at least one program in entries.json", () =>
 test("every non-empty STATE_OF value is a permit state, and PERMIT_STATES has no duplicates", () => {
   assert.equal(new Set(L.PERMIT_STATES).size, L.PERMIT_STATES.length, "duplicate in PERMIT_STATES");
   for (const v of new Set(Object.values(L.STATE_OF).filter(Boolean))) {
-    assert.ok(L.PERMIT_STATES.includes(v), "STATE_OF uses " + v + ", which is not in PERMIT_STATES");
+    assert.ok(L.PERMIT_STATES.includes(v) || LITE_IDS.includes(v), "STATE_OF uses " + v + ", which is not in PERMIT_STATES or states-lite.json");
   }
 });
 

@@ -63,5 +63,8 @@ The Home picker budget: after a pick, `tests/r3-a11y-perf-2-home-four-files.test
 
 The Numbers page budget: `tests/r3-a11y-perf-6-insights-stats-file.test.mjs` checks `insights.html` reads `data/entries-stats.json` (same ids and order as the entries file, only the keys `lib.insights()` reads, null values left out) and never the card file, and that every number on the page matches `L.insights` run on the full data. `tests/test_r3_tools.py` checks the file is a projection of `entries.json` and under 60 percent of the card file.
 
+## First-load weight ceilings
+The size limits in `tests/r1-perf-scale-1.test.mjs` are the phone-weight ceilings. Home loads about 817 KB, Numbers about 607 KB and the younger pages about 390 KB of data on first view. A limit may go up only when a person approves the extra weight for phone users, and the approval is written in the pull request and in the comment above that limit. Adding data cards is not a reason to raise a limit by itself: slim the entries first, or get the approval. Limits raised on 2026-10-11 for ticket p7-regions-1 are marked pending approval in that file until one is recorded.
+
 ## Writing a page test
 `tests/dom-helper.mjs` starts a tiny local server and gives you `loadPage("playbook.html")`, `type()` and `tick()`. Start from `tests/playbook.dom.test.mjs`.

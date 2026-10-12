@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "max_age": 20,
+  "min_age": 16,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 1,
+  "notes": "The page says it is mainly an education program and stipend details come at orientation. It serves St. Louis regional youth.",
+  "deadline_confidence": "last-year-pattern",
+  "fields": [
+    "environment"
+  ],
+  "id": "st-louis-mobot-outdoor-youth-corps",
+  "name": "Outdoor Youth Corps",
+  "org": "Missouri Botanical Garden",
+  "regions": [
+    "missouri"
+  ],
+  "city": "St. Louis, MO",
+  "type": "paid-youth-program",
+  "what_you_do": "Crews of 10 to 20 youth do nature care, city farming and invasive plant removal. They also do community projects. They get career panels, mock interviews and college visits.",
+  "who_can_apply": "St. Louis region youth ages 16 to 20.",
+  "paid_type": "stipend",
+  "pay_detail": "Paid $15.00 per hour as a stipend. Bus passes, snacks and lunch provided.",
+  "season": "year-round",
+  "duration": "Three programs a year (spring break, summer, fall)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Fall series closed when checked. A waitlist form is on the page.",
+  "how_to_apply": "Join the waitlist form on the program page for future seasons.",
+  "url": "https://www.missouribotanicalgarden.org/sustainability/sustainability/professional-development/youth-and-emerging-professionals/outdoor-youth-corps",
+  "sources_fetched": [
+    "https://www.missouribotanicalgarden.org/learn-discover/students-teachers/teen-programs",
+    "https://www.missouribotanicalgarden.org/sustainability/sustainability/professional-development/youth-and-emerging-professionals/outdoor-youth-corps"
+  ]
+}

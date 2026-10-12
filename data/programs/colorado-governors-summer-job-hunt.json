@@ -1,0 +1,39 @@
+{
+  "id": "colorado-governors-summer-job-hunt",
+  "name": "Governor's Summer Job Hunt",
+  "org": "Colorado Department of Labor and Employment, with local Workforce Centers",
+  "regions": [
+    "colorado"
+  ],
+  "city": "Statewide, CO",
+  "type": "internship",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "A free statewide service that lists summer job openings for young people and helps with job readiness. You register at a Workforce Center.",
+  "min_age": 14,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Young people ages 14 to 24 per the Denver city page. No income rules. You must show proof of age and U.S. citizenship.",
+  "paid_type": "not-stated",
+  "pay_detail": "The service is free. The jobs it lists set their own pay.",
+  "season": "summer",
+  "duration": "Summer season",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Not stated. Register at any Workforce Center.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Visit any Workforce Center in Colorado to register. Bring proof of age and U.S. citizenship.",
+  "needs_work_permit": null,
+  "url": "https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Economic-Development-Opportunity/Jobseekers-Employers/For-Jobseekers/Youth-Programs/Youth-Workforce-Development",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Economic-Development-Opportunity/Jobseekers-Employers/For-Jobseekers/Youth-Programs/Youth-Workforce-Development",
+    "https://www.jeffco.us/4148/Careers-for-Youth-and-Young-Adults"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 2,
+  "notes": "The Denver page and the Jefferson County workforce page both say ages 14 to 24. The state page (cdle.colorado.gov/jobs-training/youth/gsjh) would not load. If you are 14 or 15, call your local Workforce Center to check the age rule."
+}

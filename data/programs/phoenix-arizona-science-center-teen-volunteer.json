@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "fields": [
+    "science",
+    "education"
+  ],
+  "needs_work_permit": false,
+  "status": "rolling",
+  "deadline_confidence": "rolling",
+  "id": "phoenix-arizona-science-center-teen-volunteer",
+  "name": "Volunteer Program (ages 15 and up)",
+  "org": "Arizona Science Center",
+  "regions": [
+    "arizona"
+  ],
+  "city": "Phoenix, AZ",
+  "type": "volunteer",
+  "what_you_do": "Greet guests, help with demonstrations and hands-on activities, and prep science kits. Teens can also lead activities.",
+  "min_age": 15,
+  "max_age": null,
+  "who_can_apply": "Anyone 15 or older. It is picky, so not all applicants are accepted.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. May earn service-learning credit.",
+  "season": "year-round",
+  "duration": "At least 24 hours of service. Weekly shifts, event help, days, evenings or weekends.",
+  "deadline_text": "No deadline stated.",
+  "how_to_apply": "Fill out the volunteer form linked on the page. Do a phone interview. Then go to a volunteer orientation. Volunteer Manager: 602.716.2037.",
+  "url": "https://www.azscience.org/support/volunteer-opportunities/",
+  "sources_fetched": [
+    "https://www.azscience.org/support/volunteer-opportunities/",
+    "https://www.azscience.org/learn/students/teens/"
+  ],
+  "notes": "The Teens page also lists a Teen Advisory Board, but gives no ages or dates. Email teenadvisory@azscience.org to ask."
+}

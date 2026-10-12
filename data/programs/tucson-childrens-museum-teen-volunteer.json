@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-09",
+  "priority": 2,
+  "fields": [
+    "education"
+  ],
+  "needs_work_permit": false,
+  "status": "rolling",
+  "deadline_confidence": "rolling",
+  "id": "tucson-childrens-museum-teen-volunteer",
+  "name": "Teen Volunteer (ages 15 and up)",
+  "org": "Children's Museum Tucson",
+  "regions": [
+    "arizona"
+  ],
+  "city": "Tucson, AZ",
+  "type": "volunteer",
+  "what_you_do": "Talk with visitors and help staff run activities. Keep the museum clean and ready. Help with camps and special events.",
+  "min_age": 15,
+  "max_age": null,
+  "who_can_apply": "Teens 15 and older. A guardian enters their name to consent for a minor.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Can count for school service hours.",
+  "season": "year-round",
+  "duration": "You choose hours on the application (daily, weekly, monthly or one time).",
+  "deadline_text": "No deadline stated. Tell them your due date if you need service hours.",
+  "how_to_apply": "Use the Apply now link on the volunteer page. You give contact info, free times, hours wanted, consent from a guardian and photo permission. Call (520) 792-9985 with questions.",
+  "url": "https://childrensmuseumtucson.org/volunteer/",
+  "notes": "The museum hours listed on the page disagree, so confirm shift times.",
+  "sources_fetched": [
+    "https://childrensmuseumtucson.org/volunteer/"
+  ]
+}

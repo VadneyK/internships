@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "max_age": null,
+  "min_age": 15,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 1,
+  "notes": "Lifeguards need a current American Red Cross lifeguard card, plus CPR and First Aid. They must pass the water test. They must do this before the pool manager interview.",
+  "deadline_confidence": "last-year-pattern",
+  "fields": [
+    "sports"
+  ],
+  "id": "albuquerque-city-pools-aquatics-aide-lifeguard",
+  "name": "Aquatics Aide and Lifeguard (City pools)",
+  "org": "City of Albuquerque",
+  "regions": [
+    "new-mexico"
+  ],
+  "city": "Albuquerque, NM",
+  "type": "paid-youth-program",
+  "what_you_do": "Seasonal jobs at City swimming pools: aquatics aide or lifeguard. Lifeguards must pass a City water test first.",
+  "who_can_apply": "The City page does not state a minimum age. The City's 2026 job fair listing says age 15 and up.",
+  "paid_type": "paid",
+  "pay_detail": "Paid. Wage not stated on the page.",
+  "season": "summer",
+  "duration": "Seasonal",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The page lists no dates or deadlines.",
+  "how_to_apply": "Fill out the online form on the City job site. Then fill out the other forms: a background check, a liability form and a student work form. Anyone under 18 also fills out a drug test consent form. Call a pool to set up an interview with the pool manager. Lifeguards must first pass the City water test.",
+  "url": "https://www.cabq.gov/parksandrecreation/our-department/jobs-and-internships/copy_of_swimming-jobs",
+  "sources_fetched": [
+    "https://www.cabq.gov/parksandrecreation/our-department/jobs-and-internships/copy_of_swimming-jobs",
+    "https://www.cabq.gov/parksandrecreation/our-department/jobs-and-internships/pars-and-recreation-student-seasonal-job-interviews",
+    "https://cabq.gov/jobfair"
+  ]
+}

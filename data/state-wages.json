@@ -1,0 +1,516 @@
+{
+ "read": "Oct 10, 2026",
+ "note": "State minimum wage for an ordinary job, from the official state page we read or the US Department of Labor table (updated July 1, 2026). Cities can set higher rates. A lower youth or training wage is listed where the page states one. Rates change, so confirm on the page.",
+ "states": [
+  {
+   "id": "al",
+   "name": "Alabama",
+   "wage": "No state minimum wage law. The federal $7.25 an hour applies.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "Table updated July 1, 2026",
+   "url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+   "page_title": "State Minimum Wage Laws | U.S. Department of Labor",
+   "quote": "No state minimum wage law. ... current Federal minimum wage of $7.25 per hour"
+  },
+  {
+   "id": "ak",
+   "name": "Alaska",
+   "wage": "$14.00 an hour.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "July 1, 2026",
+   "url": "https://labor.alaska.gov/lss/whhome.htm",
+   "page_title": "Wage and Hour, Alaska Department of Labor",
+   "quote": "the Alaska minimum wage is increasing from $13.00 to $14.00 per hour"
+  },
+  {
+   "id": "az",
+   "name": "Arizona",
+   "wage": "$15.15 an hour.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "Table updated July 1, 2026",
+   "url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+   "page_title": "State Minimum Wage Laws | U.S. Department of Labor",
+   "quote": "Basic Minimum Rate (per hour): $15.15"
+  },
+  {
+   "id": "ar",
+   "name": "Arkansas",
+   "wage": "$11.00 an hour.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "Table updated July 1, 2026",
+   "url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+   "page_title": "State Minimum Wage Laws | U.S. Department of Labor",
+   "quote": "Basic Minimum Rate (per hour): $11.00"
+  },
+  {
+   "id": "ca",
+   "name": "California",
+   "wage": "$16.90 an hour.",
+   "youth": "No lower rate for minors. Learners with no related experience may be paid 85 percent of minimum for their first 160 hours.",
+   "effective": "January 1, 2026",
+   "url": "https://www.dir.ca.gov/dlse/faq_minimumwage.htm",
+   "page_title": "Minimum Wage Frequently Asked Questions",
+   "quote": "Effective January 1, 2026, the minimum wage is $16.90 per hour for all employers"
+  },
+  {
+   "id": "co",
+   "name": "Colorado",
+   "wage": "$15.16 an hour.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "Table updated July 1, 2026",
+   "url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+   "page_title": "State Minimum Wage Laws | U.S. Department of Labor",
+   "quote": "Basic Minimum Rate (per hour): $15.16"
+  },
+  {
+   "id": "ct",
+   "name": "Connecticut",
+   "wage": "$16.94 an hour.",
+   "youth": "Minors under 18 employed by the state or a local government may be paid 85 percent of the applicable minimum wage. Minors in agriculture may be paid 85 percent, or 70 percent for some employers.",
+   "effective": "1-1-2026 (printed as effective 1-1-2026 through 12-31-2026)",
+   "url": "https://portal.ct.gov/dol/-/media/dol/2022-new-design-system/divisions/wage-and-workplace-standards/dol-75_adminposter_2026.pdf",
+   "page_title": "DOL-75 (Rev. 1/26) poster, Connecticut Department of Labor",
+   "quote": "$16.94 per hour effective 1-1-2026"
+  },
+  {
+   "id": "de",
+   "name": "Delaware",
+   "wage": "$15.00 an hour.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "January 1, 2025",
+   "url": "https://industrialaffairs.delaware.gov/wage-hour",
+   "page_title": "Wage & Hour",
+   "quote": "$15.00 as of January 1, 2025"
+  },
+  {
+   "id": "dc",
+   "name": "District of Columbia",
+   "wage": "$18.40 an hour.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "July 1, 2026",
+   "url": "https://does.dc.gov/service/wage-and-hour-compliance",
+   "page_title": "Office of Wage-Hour Compliance",
+   "quote": "will increase to $18.40 per hour"
+  },
+  {
+   "id": "fl",
+   "name": "Florida",
+   "wage": "$15.00 an hour.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "September 30th, 2026",
+   "url": "https://www.leg.state.fl.us/statutes/index.cfm?Mode=Constitution&Submenu=3&Tab=statutes",
+   "page_title": "Statutes & Constitution : Constitution : Online Sunshine",
+   "quote": "until the Minimum Wage reaches $15.00 per hour on September 30th, 2026"
+  },
+  {
+   "id": "ga",
+   "name": "Georgia",
+   "wage": "$5.15 an hour under Georgia law, for employers with 6 or more employees. Employers covered by federal law pay the federal rate instead.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "Table updated July 1, 2026",
+   "url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+   "page_title": "State Minimum Wage Laws | U.S. Department of Labor",
+   "quote": "Applicable to employers of 6 or more employees ... Basic Minimum Rate (per hour): $5.15"
+  },
+  {
+   "id": "hi",
+   "name": "Hawaii",
+   "wage": "$16.00 an hour.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "January 1, 2026",
+   "url": "https://labor.hawaii.gov/wsd/minimum-wage/",
+   "page_title": "Minimum Wage and Overtime, Wage Standards Division",
+   "quote": "$16.00 per hour beginning January 1, 2026"
+  },
+  {
+   "id": "id",
+   "name": "Idaho",
+   "wage": "$7.25 an hour.",
+   "youth": "Workers under 20 may be paid $4.25 an hour for their first 90 consecutive calendar days.",
+   "effective": "The page does not say.",
+   "url": "https://legislature.idaho.gov/statutesrules/idstat/Title44/T44CH15/SECT44-1502/",
+   "page_title": "Section 44-1502, Idaho State Legislature",
+   "quote": "less than seven dollars and twenty-five cents ($7.25) per hour for employment ... a wage which is not less than four dollars and twenty-five cents ($4.25) an hour"
+  },
+  {
+   "id": "il",
+   "name": "Illinois",
+   "wage": "$15.00 an hour for workers 18 and older.",
+   "youth": "The page gives this rate for workers 18 and older. It has a separate row for tipped youths under 18. Ask the Illinois labor office for the rate for workers under 18.",
+   "effective": "The page does not say.",
+   "url": "https://labor.illinois.gov/laws-rules/fls/minimum-wage-law.html",
+   "page_title": "Minimum Wage Law - Fair Labor Standards Division",
+   "quote": "minimum wage of $15.00 per hour for workers 18 years of age and older"
+  },
+  {
+   "id": "in",
+   "name": "Indiana",
+   "wage": "$7.25 an hour.",
+   "youth": "Employers may pay a lower rate to employees under 20 for the first 90 consecutive calendar days. Check the poster for the amount.",
+   "effective": "July 24, 2009",
+   "url": "https://www.in.gov/dol/files/updated-pdfs-4-7-2026/Indiana2009MinimumWage.pdf",
+   "page_title": "Indiana Minimum Wage Law Poster",
+   "quote": "increased from $6.55 per hour to $7.25 per hour, effective July 24, 2009"
+  },
+  {
+   "id": "ia",
+   "name": "Iowa",
+   "wage": "$7.25 an hour.",
+   "youth": "Workers in their first 90 calendar days may be paid a lower rate. Check the page for the amount.",
+   "effective": "January 1, 2008",
+   "url": "https://www.legis.iowa.gov/docs/code/91D.1.pdf",
+   "page_title": "91D.1 Minimum wage requirements, exceptions (Iowa Code)",
+   "quote": "$7.25 as of January 1, 2008"
+  },
+  {
+   "id": "ks",
+   "name": "Kansas",
+   "wage": "$7.25 an hour.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "January 1, 2010",
+   "url": "https://ksrevisor.gov/statutes/chapters/ch44/044_012_0003.html",
+   "page_title": "44-1203. Same; minimum wage; computation; applicability of section.",
+   "quote": "wages shall be paid at a rate of not less than $7.25 an hour"
+  },
+  {
+   "id": "ky",
+   "name": "Kentucky",
+   "wage": "$7.25 an hour.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "July 1, 2009",
+   "url": "https://elc.ky.gov/workplace-standards/Documents/KY%20Wage%20and%20Hour%20Poster%20English.pdf",
+   "page_title": "KY Wage and Hour Poster English",
+   "quote": "MINIMUM WAGE = $7.25 per hour (Effective July 1, 2009)"
+  },
+  {
+   "id": "la",
+   "name": "Louisiana",
+   "wage": "No state minimum wage law. The federal $7.25 an hour applies.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "Table updated July 1, 2026",
+   "url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+   "page_title": "State Minimum Wage Laws | U.S. Department of Labor",
+   "quote": "No state minimum wage law. ... current Federal minimum wage of $7.25 per hour"
+  },
+  {
+   "id": "me",
+   "name": "Maine",
+   "wage": "$15.10 an hour.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "1/1/2026",
+   "url": "https://www.maine.gov/labor/labor_laws/minimumwagefaq/",
+   "page_title": "MDOL: New Minimum Wage Increases",
+   "quote": "1/1/2026 $15.10"
+  },
+  {
+   "id": "md",
+   "name": "Maryland",
+   "wage": "$15 an hour.",
+   "youth": "Workers under 18 must be paid at least 85% of the state minimum wage.",
+   "effective": "The page does not say.",
+   "url": "https://www.labor.maryland.gov/labor/wages/wagehrfacts.shtml",
+   "page_title": "Maryland Minimum Wage and Overtime Law - Employment Standards Service (ESS) - Division of Labor and Industry",
+   "quote": "Maryland State Minimum Wage Rate of $15 per hour"
+  },
+  {
+   "id": "ma",
+   "name": "Massachusetts",
+   "wage": "$15.00 an hour.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "The page does not say.",
+   "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter151/Section1",
+   "page_title": "General Law - Part I, Title XXI, Chapter 151, Section 1",
+   "quote": "A wage of less than $15.00 per hour"
+  },
+  {
+   "id": "mi",
+   "name": "Michigan",
+   "wage": "$13.73 an hour.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "January 1, 2026",
+   "url": "https://www.michigan.gov/leo/bureaus-agencies/ber/wage-and-hour/min-wage",
+   "page_title": "LEO - Minimum Wage & Overtime",
+   "quote": "Effective January 1, 2026, the minimum wage rate is $13.73 per hour."
+  },
+  {
+   "id": "mn",
+   "name": "Minnesota",
+   "wage": "$11.41 an hour.",
+   "youth": "A 90-day training wage of $9.31 an hour is allowed for workers under 20.",
+   "effective": "Jan. 1, 2026",
+   "url": "https://www.dli.mn.gov/minwage",
+   "page_title": "Minimum wage in Minnesota | Minnesota Department of Labor and Industry",
+   "quote": "$11.41 an hour ... 90-day training wage (under 20 years of age) $9.31 an hour"
+  },
+  {
+   "id": "ms",
+   "name": "Mississippi",
+   "wage": "No state minimum wage law. The federal $7.25 an hour applies.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "Table updated July 1, 2026",
+   "url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+   "page_title": "State Minimum Wage Laws | U.S. Department of Labor",
+   "quote": "No state minimum wage law. ... current Federal minimum wage of $7.25 per hour"
+  },
+  {
+   "id": "mo",
+   "name": "Missouri",
+   "wage": "$15.00 an hour.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "2026",
+   "url": "https://labor.mo.gov/DLS/MinimumWage",
+   "page_title": "Minimum Wage | Missouri Department of Labor and Industrial Relations",
+   "quote": "2026 Minimum Wage $15.00 per hour"
+  },
+  {
+   "id": "mt",
+   "name": "Montana",
+   "wage": "$10.85 an hour. A business not covered by federal law with $110,000 or less in yearly sales may pay $4.00 an hour.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "The page does not say.",
+   "url": "https://erd.dli.mt.gov/labor-standards/wage-and-hour-payment-act/state-minimum-wage",
+   "page_title": "Montana's Minimum Wage",
+   "quote": "Current Minimum Wage: $10.85 ... Exception: A business not covered by the Fair Labor Standards Act whose gross annual sales are $110,000 or less ... may pay $4.00 per hour."
+  },
+  {
+   "id": "ne",
+   "name": "Nebraska",
+   "wage": "$15.00 an hour.",
+   "youth": "Workers 14 or 15 can be paid $13.50 an hour, and new workers 16 to 19 can be paid $13.50 an hour for their first 90 days.",
+   "effective": "July 18, 2026 (unchanged from January 1, 2026)",
+   "url": "https://dol.nebraska.gov/webdocs/getfile/18bc2309-85ed-4957-b072-e899caeaca99",
+   "page_title": "State of Nebraska Minimum Wage",
+   "quote": "July 18, 2026 $15.00* $13.50"
+  },
+  {
+   "id": "nv",
+   "name": "Nevada",
+   "wage": "$12.00 an hour.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "July 1, 2025",
+   "url": "https://labor.nv.gov/uploadedFiles/labornvgov/content/Wages/25.06.23%20-%202025%20Minimum%20Wage%20Bulletin(1).pdf",
+   "page_title": "State of Nevada Minimum Wage 2025 Annual Bulletin",
+   "quote": "Effective Date Minimum Wage July 1, 2025 $12.00"
+  },
+  {
+   "id": "nh",
+   "name": "New Hampshire",
+   "wage": "$7.25 an hour.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "Table updated July 1, 2026",
+   "url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+   "page_title": "State Minimum Wage Laws | U.S. Department of Labor",
+   "quote": "Basic Minimum Rate (per hour): $7.25"
+  },
+  {
+   "id": "nj",
+   "name": "New Jersey",
+   "wage": "$15.92 an hour.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "January 1, 2026",
+   "url": "https://www.nj.gov/labor/wageandhour/",
+   "page_title": "Wage & Hour Compliance",
+   "quote": "New Jersey's minimum wage is $15.92/hour for most workers"
+  },
+  {
+   "id": "nm",
+   "name": "New Mexico",
+   "wage": "$12.00 an hour.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "Table updated July 1, 2026",
+   "url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+   "page_title": "State Minimum Wage Laws | U.S. Department of Labor",
+   "quote": "Basic Minimum Rate (per hour): $12.00"
+  },
+  {
+   "id": "ny",
+   "name": "New York",
+   "wage": "$16.00 an hour outside New York City, Long Island and Westchester, and $17.00 an hour in those areas.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "The page does not say.",
+   "url": "https://dol.ny.gov/minimum-wage",
+   "page_title": "Minimum Wage | Department of Labor",
+   "quote": "$17.00 per hour in New York City, Long Island, and Westchester County ... $16.00 per hour in the rest of New York State"
+  },
+  {
+   "id": "nc",
+   "name": "North Carolina",
+   "wage": "$7.25 an hour.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "The page does not say.",
+   "url": "https://www.labor.nc.gov/workplace-rights/employee-rights-regarding-time-worked-and-wages-earned/minimum-wage-nc",
+   "page_title": "Minimum Wage in N.C.",
+   "quote": "The minimum wage in North Carolina is currently $7.25 an hour."
+  },
+  {
+   "id": "nd",
+   "name": "North Dakota",
+   "wage": "$7.25 an hour.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "Table updated July 1, 2026",
+   "url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+   "page_title": "State Minimum Wage Laws | U.S. Department of Labor",
+   "quote": "Basic Minimum Rate (per hour): $7.25"
+  },
+  {
+   "id": "oh",
+   "name": "Ohio",
+   "wage": "$11.00 an hour for employers with $405,000 or more in yearly gross receipts, and $7.25 an hour for smaller employers.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "Table updated July 1, 2026",
+   "url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+   "page_title": "State Minimum Wage Laws | U.S. Department of Labor",
+   "quote": "Employers with annual gross receipts of $405,000 or more ... Basic Minimum Rate (per hour): $11.00 ... Employers with annual gross receipts under $405,000 ... Basic Minimum Rate (per hour): $7.25"
+  },
+  {
+   "id": "ok",
+   "name": "Oklahoma",
+   "wage": "$7.25 an hour for employers with 10 or more full time employees, or more than $100,000 in yearly sales. The page does not say what other employers pay.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "In effect since July 24, 2000 (as printed on the page)",
+   "url": "https://oklahoma.gov/labor/workplace-rights/wage-hour/faqs---wage-and-hour.html",
+   "page_title": "FAQs - Wage and Hour",
+   "quote": "The federal and state minimum wage of $7.25 per hour ... if the company has at least 10 full-time employees or equivalent and/or grosses more than $100,000.00 annually"
+  },
+  {
+   "id": "or",
+   "name": "Oregon",
+   "wage": "$15.55 an hour in most of the state, $16.80 in the Portland metro area, and $14.55 in non-urban counties.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "July 1, 2026 (rates for July 1, 2026 through June 30, 2027)",
+   "url": "https://www.oregon.gov/boli/workers/pages/minimum-wage.aspx",
+   "page_title": "BOLI : Oregon Minimum Wage : For Workers : State of Oregon",
+   "quote": "Basic Minimum Rate (per hour): $15.55 (standard state rate); $16.80 (Portland Metro Area); $14.55 (Non-Urban counties)"
+  },
+  {
+   "id": "pa",
+   "name": "Pennsylvania",
+   "wage": "$7.25 an hour.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "The page does not say.",
+   "url": "https://www.pa.gov/agencies/dli/resources/compliance-laws-and-regulations/labor-management-relations/pennsylvania-s-minimum-wage-act",
+   "page_title": "Pennsylvania's Minimum Wage Act | Department of Labor and Industry | Commonwealth of Pennsylvania",
+   "quote": "Employees being paid less than $7.25/hour"
+  },
+  {
+   "id": "ri",
+   "name": "Rhode Island",
+   "wage": "$16.00 an hour.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "January 1, 2026",
+   "url": "https://webserver.rilegislature.gov/Statutes/TITLE28/28-12/28-12-3.htm",
+   "page_title": "Title 28 Labor and Labor Relations (R.I. Gen. Laws § 28-12-3, Minimum wages)",
+   "quote": "Commencing January 1, 2026, the minimum wage is sixteen dollars ($16.00) per hour."
+  },
+  {
+   "id": "sc",
+   "name": "South Carolina",
+   "wage": "No state minimum wage law. The federal $7.25 an hour applies.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "Table updated July 1, 2026",
+   "url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+   "page_title": "State Minimum Wage Laws | U.S. Department of Labor",
+   "quote": "No state minimum wage law. ... current federal minimum wage of $7.25 per hour"
+  },
+  {
+   "id": "sd",
+   "name": "South Dakota",
+   "wage": "$11.85 an hour.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "Jan. 1, 2026",
+   "url": "https://dlr.sd.gov/employment_laws/minimum_wage.aspx",
+   "page_title": "Employment Laws - Minimum Wage",
+   "quote": "The minimum wage for non-tipped employees in South Dakota is $11.85/hour"
+  },
+  {
+   "id": "tn",
+   "name": "Tennessee",
+   "wage": "No state minimum wage law. The federal $7.25 an hour applies.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "Table updated July 1, 2026",
+   "url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+   "page_title": "State Minimum Wage Laws | U.S. Department of Labor",
+   "quote": "No state minimum wage law. ... current Federal minimum wage of $7.25 per hour"
+  },
+  {
+   "id": "tx",
+   "name": "Texas",
+   "wage": "$7.25 an hour, the federal rate that Texas adopts.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "Effective July 24, 2009",
+   "url": "https://www.twc.texas.gov/programs/wage-and-hour/texas-minimum-wage-law",
+   "page_title": "Texas Minimum Wage Law - Texas Workforce Commission",
+   "quote": "The federal minimum wage is $7.25 per hour."
+  },
+  {
+   "id": "ut",
+   "name": "Utah",
+   "wage": "$7.25 an hour.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "Table updated July 1, 2026",
+   "url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+   "page_title": "State Minimum Wage Laws | U.S. Department of Labor",
+   "quote": "Basic Minimum Rate (per hour): $7.25"
+  },
+  {
+   "id": "vt",
+   "name": "Vermont",
+   "wage": "$14.42 an hour.",
+   "youth": "The page does not say whether a lower youth wage applies.",
+   "effective": "01/01/2026",
+   "url": "https://labor.vermont.gov/rights-and-wages",
+   "page_title": "Worker Rights & Protections | Department of Labor",
+   "quote": "Effective 01/01/2026: $14.42 per hour worked"
+  },
+  {
+   "id": "va",
+   "name": "Virginia",
+   "wage": "$12.77 an hour.",
+   "youth": "Employees enrolled in an employer training program for up to 90 days may be paid the greater of 75 percent of the state minimum wage or the federal minimum.",
+   "effective": "January 1, 2026",
+   "url": "https://law.lis.virginia.gov/vacode/title40.1/chapter3/section40.1-28.10/",
+   "page_title": "§ 40.1-28.10. Minimum wages",
+   "quote": "the greater of (i) $12.77 per hour"
+  },
+  {
+   "id": "wa",
+   "name": "Washington",
+   "wage": "$17.13 an hour.",
+   "youth": "Workers aged 14 to 15 may be paid no less than 85% of the minimum wage.",
+   "effective": "2026",
+   "url": "https://www.lni.wa.gov/workers-rights/wages/minimum-wage/",
+   "page_title": "Minimum Wage",
+   "quote": "The 2026 minimum wage in the state of Washington is $17.13 per hour."
+  },
+  {
+   "id": "wv",
+   "name": "West Virginia",
+   "wage": "$8.75 an hour.",
+   "youth": "Workers 20 or younger may get a training wage in their first 90 days, but the page gives no amount and defers to federal rules.",
+   "effective": "January 1, 2016",
+   "url": "https://labor.wv.gov/wage-hour/jobs-act/minimum-wage/minimum-wage-faq",
+   "page_title": "Minimum Wage FAQ | WV Division of Labor",
+   "quote": "As of January 1, 2016, the state minimum wage is $8.75 per hour."
+  },
+  {
+   "id": "wi",
+   "name": "Wisconsin",
+   "wage": "$7.25 an hour.",
+   "youth": "Workers under 20 may be paid an opportunity wage of $5.90 an hour for their first 90 days on the job.",
+   "effective": "7/24/09",
+   "url": "https://dwd.wisconsin.gov/er/laborstandards/minimumwage.htm",
+   "page_title": "Minimum Wage",
+   "quote": "Adult $7.25 Minor $7.25 Opportunity Employee $5.90"
+  },
+  {
+   "id": "wy",
+   "name": "Wyoming",
+   "wage": "$5.15 an hour.",
+   "youth": "Workers under 20 may be paid a lower rate for the first 90 consecutive days after they are first employed by that employer. Check the statute for the amount.",
+   "effective": "The page does not say.",
+   "url": "https://wyoleg.gov/statutes/compress/title27.pdf",
+   "page_title": "Title 27 (Wyoming Statutes), 27-4-202 Minimum wage rates",
+   "quote": "not less than five dollars and fifteen cents ($5.15) per hour"
+  }
+ ]
+}

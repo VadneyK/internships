@@ -1,0 +1,38 @@
+{
+  "id": "lexington-public-library-volunteer",
+  "name": "Lexington Public Library Volunteer Program",
+  "org": "Lexington Public Library",
+  "regions": [
+    "kentucky"
+  ],
+  "city": "Lexington, KY",
+  "type": "volunteer",
+  "fields": [
+    "education"
+  ],
+  "what_you_do": "Volunteer at the library in a role you pick with the Volunteer Coordinator. Other roles, mainly for teens, may need less time.",
+  "min_age": 14,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Anyone age 14 or older. Volunteers ages 14 to 17 need permission from a parent or guardian. The parent or guardian also signs the application online.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Agreed when you are accepted. Teen roles may need less time.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No application dates are posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use the online volunteer form. Have a parent or guardian sign it. Then do a screening with the Volunteer Coordinator, an orientation and any training for your role.",
+  "needs_work_permit": false,
+  "url": "https://www.lexpublib.org/volunteer",
+  "apply_url": "https://app.betterimpact.com/PublicOrganization/8892a6a2-509a-4ad0-85ff-e7c90fcb204f/1",
+  "sources_fetched": [
+    "https://www.lexpublib.org/volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 2,
+  "notes": "Background checks apply to volunteers 18 and older. The page has no separate teen program."
+}

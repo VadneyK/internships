@@ -1,0 +1,39 @@
+{
+  "id": "maui-uh-maui-college-early-college",
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 2,
+  "needs_work_permit": false,
+  "name": "Early College at UH Maui College",
+  "org": "University of Hawaii Maui College",
+  "city": "Kahului, HI",
+  "type": "school-pathway",
+  "fields": [
+    "any",
+    "education"
+  ],
+  "what_you_do": "High school students take UH Maui College classes for college credit. Early College Dual Credit classes are taught to high school peers. Early Admit students take classes on the college campus.",
+  "min_age": null,
+  "max_age": 18,
+  "who_can_apply": "High school students. Which option you can use depends on your high school. Talk to your high school counselor for course lists and deadlines.",
+  "paid_type": "mixed",
+  "pay_detail": "Free or discounted tuition is available. Who pays varies: high school, student or family, or scholarship.",
+  "season": "school-year",
+  "duration": "By semester (fall, spring and summer)",
+  "status": "rolling",
+  "deadline_text": "Early Admit application periods: Fall Sept 1 to Aug 1; Spring Aug 1 to Dec 15; Summer Jan 1 to July 1. Dual credit deadlines are set by your high school.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Early College Dual Credit: apply through your high school counselor. Early Admit: fill out the Early Admit forms. Then sign up for classes after you are accepted.",
+  "url": "https://maui.hawaii.edu/earlycollege/",
+  "notes": "The page says Early College has 2 options. Early College Dual Credit is usually classes at the high school. Early Admit is classes on the college campus. Compare the options on the page to pick one.",
+  "regions": [
+    "hawaii"
+  ],
+  "sources_fetched": [
+    "https://maui.hawaii.edu/earlycollege/"
+  ]
+}

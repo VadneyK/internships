@@ -1,0 +1,38 @@
+{
+  "id": "salt-lake-city-public-library-teen-squad",
+  "name": "Teen Squad (The City Library)",
+  "org": "Salt Lake City Public Library (The City Library)",
+  "regions": [
+    "utah"
+  ],
+  "city": "Salt Lake City, UT",
+  "type": "volunteer",
+  "fields": [
+    "education"
+  ],
+  "what_you_do": "Work with a librarian for six weeks to set goals and build a project. You earn volunteer hours and learn job skills.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Students in grades 7 to 12.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer hours. No pay stated.",
+  "season": "year-round",
+  "duration": "Six weeks",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Apply through February 17, 2027.",
+  "deadline_iso": "2027-02-17",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Use the Apply Now button on the library teens page.",
+  "needs_work_permit": false,
+  "url": "https://services.slcpl.org/teens",
+  "apply_url": "https://services.slcpl.org/teensquad",
+  "sources_fetched": [
+    "https://services.slcpl.org/teens"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 2,
+  "notes": "The apply page (services.slcpl.org/teensquad) did not load in our reader, so the dates of each six week session are not confirmed. Ask the library when the next session starts."
+}

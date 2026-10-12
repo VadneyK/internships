@@ -16,6 +16,12 @@ import proglib  # noqa: E402
 
 # Root urls are allowed only when the card is about the whole organization, not one program page.
 ROOT_URL_ALLOW = (
+    # Added 2026-10-11 for ticket p7-regions-1: the program runs from its own site, and that home page is the page the card was checked against.
+    "eugene-uo-sail-student-academy",
+    "florida-miami-dade-schools-summer-youth-internship-program",
+    "kentucky-governors-scholars-program",
+    "tucson-ua-bio5-keys-research-internship",
+    "uccs-pre-collegiate-program-colorado-springs",
     "black-girls-code",
     "camp-ignite-bc-firefighting-camp-for-young-women",  # one-page camp site, no deeper page exists
     "california-ffa",

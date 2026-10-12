@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "max_age": null,
+  "min_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 2,
+  "notes": "Adults must be 19 or older for the regular program, so this is a separate youth track. Ask about the age rule.",
+  "deadline_confidence": "unknown",
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "id": "kansas-city-national-wwi-museum-youth-volunteer",
+  "name": "Youth Volunteer Program",
+  "org": "National WWI Museum and Memorial",
+  "regions": [
+    "missouri"
+  ],
+  "city": "Kansas City, MO",
+  "type": "volunteer",
+  "what_you_do": "High school students volunteer at the museum for a session and gain skills in a history setting. Perks include store discounts.",
+  "who_can_apply": "High school age students. Exact ages not stated on the page.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Museum store discounts.",
+  "season": "year-round",
+  "duration": "Three sessions a year: spring, summer and fall",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Fall 2026 applications are closed. Spring session dates not posted.",
+  "how_to_apply": "See the volunteer page for the form when a session opens. Questions: volunteer@theworldwar.org or 816-888-8115.",
+  "url": "https://theworldwar.org/support/volunteer",
+  "sources_fetched": [
+    "https://theworldwar.org/support/volunteer"
+  ]
+}

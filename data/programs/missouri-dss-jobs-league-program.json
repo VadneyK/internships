@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "max_age": 24,
+  "min_age": 14,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 1,
+  "notes": "Income limits come from the page and may change. The page lists regional boards across the state for other areas.",
+  "deadline_confidence": "rolling",
+  "fields": [
+    "any"
+  ],
+  "id": "missouri-dss-jobs-league-program",
+  "name": "Jobs League Program",
+  "org": "Missouri Department of Social Services",
+  "regions": [
+    "missouri"
+  ],
+  "city": "Missouri (statewide)",
+  "type": "paid-youth-program",
+  "what_you_do": "Paid on-the-job training of up to 320 hours. Jobs listed include cashier, child care center, nursing assistant, retail and food service.",
+  "who_can_apply": "Ages 14 to 24 who live in Missouri. Your household must meet the income limit (for example, gross monthly income of $2,413 or less for a household of 1, $4,109 for 3, $4,957 for 4).",
+  "paid_type": "paid",
+  "pay_detail": "Paid training. Up to 320 hours. Wage not stated.",
+  "season": "year-round",
+  "duration": "Up to 320 hours",
+  "status": "rolling",
+  "deadline_text": "The page does not list a deadline. Call and ask to speak with a Youth Specialist at a Missouri Workforce Development Board near you.",
+  "how_to_apply": "Call and ask for a Youth Specialist at your regional workforce board. Examples listed: Full Employment Council in Kansas City 816-471-2330 ext. 1256, St. Louis City 314-657-3557, Workforce Development Board of St. Louis County 314-615-6010.",
+  "url": "https://dss.mo.gov/jobs-league-program",
+  "sources_fetched": [
+    "https://dss.mo.gov/jobs-league-program"
+  ]
+}

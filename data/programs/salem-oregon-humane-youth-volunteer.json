@@ -1,0 +1,39 @@
+{
+  "id": "salem-oregon-humane-youth-volunteer",
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 2,
+  "needs_work_permit": false,
+  "name": "Oregon Humane Youth Volunteers (Salem campus)",
+  "org": "Oregon Humane Society",
+  "city": "Salem, OR",
+  "type": "volunteer",
+  "fields": [
+    "environment",
+    "social-impact"
+  ],
+  "what_you_do": "Youth volunteers walk dogs and help care for animals. They clean kennels, check food and water, help with play and can foster.",
+  "min_age": 12,
+  "max_age": 17,
+  "who_can_apply": "The page text says Youth Volunteers must be a minimum of 16, but its Apply Now button says Youth 12 to 17. Ages 12 to 15 may volunteer with a parent or guardian over 18 (both apply and train). Confirm with the Salem campus.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role.",
+  "season": "year-round",
+  "duration": "One 2 to 3 hour shift a week after orientation",
+  "status": "open-now",
+  "deadline_text": "Salem youth applications were open when the page was read. No deadline posted.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply online (the button says Youth 12 to 17). Finish all volunteer training and paperwork. Then go to volunteer orientation.",
+  "url": "https://www.oregonhumane.org/get-involved/volunteer/youths-12-17/#salem-campus",
+  "notes": "The same Oregon Humane page covers both sites. The Salem rules differ from Portland. The Salem text conflicts on the minimum age (16 in the text, 12 to 17 on the button).",
+  "regions": [
+    "oregon"
+  ],
+  "sources_fetched": [
+    "https://www.oregonhumane.org/get-involved/volunteer/youths-12-17/"
+  ]
+}

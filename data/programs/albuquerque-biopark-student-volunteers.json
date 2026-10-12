@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "max_age": null,
+  "min_age": 16,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 3,
+  "notes": "You need earlier BioPark experience. This is a second step after Nature Guides.",
+  "deadline_confidence": "rolling",
+  "fields": [
+    "environment",
+    "education"
+  ],
+  "id": "albuquerque-biopark-student-volunteers",
+  "name": "BioPark Education Student Volunteers",
+  "org": "ABQ BioPark, City of Albuquerque",
+  "regions": [
+    "new-mexico"
+  ],
+  "city": "Albuquerque, NM",
+  "type": "volunteer",
+  "what_you_do": "Teens help with classes, make teaching props and set up workshops. They also help at the zoo, aquarium or botanic garden for a semester.",
+  "who_can_apply": "High school students 16 or older who worked as a BioPark Nature Guide or Camp Counselor in a past year. Background check required.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Staff can fill out an evaluation form if your school needs one (give two days notice).",
+  "season": "school-year",
+  "duration": "One semester. At least 6 hours a week between 8 a.m. and 5 p.m.",
+  "status": "rolling",
+  "deadline_text": "Applications taken all year. Placements usually made at the start of each semester.",
+  "how_to_apply": "Call the Volunteer Coordinator at 505-768-3443 about openings. Then apply and pass a background check.",
+  "url": "https://www.cabq.gov/artsculture/biopark/about-the-biopark/biopark-jobs-volunteering/volunteer/student-volunteers",
+  "sources_fetched": [
+    "https://www.cabq.gov/artsculture/biopark/about-the-biopark/biopark-jobs-volunteering/volunteer/student-volunteers"
+  ]
+}

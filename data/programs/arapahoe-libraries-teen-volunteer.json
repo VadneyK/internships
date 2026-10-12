@@ -1,0 +1,39 @@
+{
+  "id": "arapahoe-libraries-teen-volunteer",
+  "name": "Teen Volunteer (Arapahoe Libraries)",
+  "org": "Arapahoe Libraries",
+  "regions": [
+    "colorado"
+  ],
+  "city": "Arapahoe County, CO (Denver metro)",
+  "type": "volunteer",
+  "fields": [
+    "education"
+  ],
+  "what_you_do": "Teens help with shelving, displays, book picks and events. Join a team for a semester or the summer, or join a monthly Teen Advisory Board.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Teens. The page does not list exact ages. The library teen section is for ages 12 to 18.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "school-year",
+  "duration": "Semester and summer volunteer options",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline is posted on the page.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Use the Teen Volunteer Application on the page. The page lists drop in volunteer events at Koelbel and Smoky Hill libraries.",
+  "needs_work_permit": false,
+  "url": "https://arapahoelibraries.org/teen-volunteer-application/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://arapahoelibraries.org/teen-volunteer-application/",
+    "https://arapahoelibraries.org/teens/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 2,
+  "notes": "Each branch Teen Advisory Board meets monthly to talk about trends and plan events."
+}

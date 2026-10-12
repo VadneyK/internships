@@ -1,0 +1,41 @@
+{
+  "grades": "9-10",
+  "max_age": null,
+  "min_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": "https://apply.umsl.edu/register/bridgeprogram",
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 2,
+  "notes": "The landing page says grades 6 to 10 across middle and high school sessions; the high school page says grades 9 to 10.",
+  "deadline_confidence": "last-year-pattern",
+  "fields": [
+    "science",
+    "engineering"
+  ],
+  "id": "st-louis-umsl-bridge-summer-academy",
+  "name": "UMSL Bridge Program Summer Academy",
+  "org": "University of Missouri-St. Louis, Office of Precollegiate Student Services",
+  "regions": [
+    "missouri"
+  ],
+  "city": "St. Louis, MO",
+  "type": "pre-college",
+  "what_you_do": "Weekday mornings from mid June to mid July on the UMSL campus. Freshmen and sophomores get math, science and writing workshops and career planning.",
+  "who_can_apply": "Students in grades 9 to 10 at a St. Louis area school with a 2.5 or higher GPA. You must be in or past Algebra. You need a transcript, a behavior report and a teacher or counselor recommendation.",
+  "paid_type": "unpaid",
+  "pay_detail": "UMSL's landing page calls its Bridge services free. No pay.",
+  "season": "summer",
+  "duration": "Mid-June to mid-July, Monday to Friday 7:45 a.m. to 12 p.m. (2026 high school session began June 22)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The 2026 extended deadline was May 29, 2026. 2027 dates not posted.",
+  "how_to_apply": "Apply online on the UMSL Bridge page when it is taking students. Send a transcript, behavior report and recommendation form.",
+  "url": "https://www.umsl.edu/precollegiate/programs/summer.html",
+  "sources_fetched": [
+    "https://www.umsl.edu/precollegiate/",
+    "https://www.umsl.edu/precollegiate/programs/summer.html",
+    "https://www.umsl.edu/precollegiate/apply/index.html"
+  ]
+}

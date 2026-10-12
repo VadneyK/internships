@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "max_age": null,
+  "min_age": 16,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-10",
+  "priority": 2,
+  "notes": "Minimum age is 16 per the page. Listings change, so check the careers tool for current postings.",
+  "deadline_confidence": "rolling",
+  "fields": [
+    "engineering",
+    "tech-cs",
+    "science"
+  ],
+  "id": "albuquerque-sandia-labs-high-school-internships",
+  "name": "Sandia National Laboratories High School Internships",
+  "org": "Sandia National Laboratories",
+  "regions": [
+    "new-mexico"
+  ],
+  "city": "Albuquerque, NM",
+  "type": "internship",
+  "what_you_do": "High school students work on real tech or business projects. Mentors help them. Sandia has posted Technical High School internships (summer and year round) in areas like mechanical design.",
+  "who_can_apply": "At least 16 years old. Full-time enrolled high school students with a cumulative GPA of at least 3.0 for research, technical or business jobs (2.5 for clerical or laborer jobs). Some jobs need U.S. citizenship.",
+  "paid_type": "paid",
+  "pay_detail": "Competitive pay. Amount not stated.",
+  "season": "year-round",
+  "duration": "Summer or year round. During the school year, high school students work up to 25 hours a week.",
+  "status": "rolling",
+  "deadline_text": "Jobs are posted one by one on Sandia's careers site. Each has its own dates.",
+  "how_to_apply": "Make a username on Sandia's careers site. Filter for Student jobs. Apply to each internship on its own. A student guide PDF is linked on the page.",
+  "url": "https://www.sandia.gov/careers/careers/students-and-postdocs/internships-co-ops/",
+  "sources_fetched": [
+    "https://www.sandia.gov/careers/careers/students-and-postdocs/internships-co-ops/"
+  ]
+}
