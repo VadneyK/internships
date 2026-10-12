@@ -85,7 +85,7 @@ test("p6-younger-1: every other state's short card is built from its own file ro
   const box = document.getElementById("otherLite");
   for (const s of lite.states) {
     pick(window, document, s.id);
-    await tick(40);
+    for (let i = 0; i < 80 && (box.hidden || !box.textContent.includes(s.name)); i++) await tick(25); // the card fills after the data file arrives; a slow machine needs longer
     assert.equal(box.hidden, false, `${s.id} card shown`);
     assert.ok(box.textContent.includes(s.name), `${s.id} names the state`);
     assert.ok(box.textContent.includes(s.permit), `${s.id} permit line`);
