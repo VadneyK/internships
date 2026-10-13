@@ -10,7 +10,15 @@ import json
 import os
 import re
 import unittest
-from datetime import date
+from datetime import date, datetime, timezone
+
+
+
+def utc_today():
+    """Today's date in UTC, the clock CI runs on. Local Pacific time is a day behind
+    every evening, so date.today() let pushes go out green locally and red in CI."""
+    return datetime.now(timezone.utc).date()
+
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MONTHS = {m: i + 1 for i, m in enumerate(
@@ -248,7 +256,7 @@ class DataAgreementTests(unittest.TestCase):
         self.assertEqual(bad, [], "\n" + "\n".join(bad))
 
     def test_dates_agree_with_text(self):
-        self._check(lambda c: date_problem(c, date.today()), ALLOW_DATE)
+        self._check(lambda c: date_problem(c, utc_today()), ALLOW_DATE)
 
     def test_ages_agree_with_text(self):
         self._check(age_problem, ALLOW_AGES)
@@ -270,7 +278,7 @@ class DataAgreementTests(unittest.TestCase):
         self._check_entries(open_label_problem, ALLOW_OPEN_LABEL)
 
     def test_opens_soon_has_a_future_date(self):
-        self._check_entries(lambda c: soon_problem(c, date.today()), ALLOW_SOON)
+        self._check_entries(lambda c: soon_problem(c, utc_today()), ALLOW_SOON)
 
     def test_mixed_pay_says_something(self):
         self._check_entries(pay_problem, ALLOW_PAY)

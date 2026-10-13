@@ -11,7 +11,6 @@ Run: python3 -m unittest discover -s tests -v
 import os
 import sys
 import unittest
-from datetime import date
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
@@ -25,12 +24,12 @@ STALE_NOTE = "remove this allow-list entry, the card is fixed"
 #          source of cards: "programs" for data/programs/*.json, "entries" for data/entries.json)
 ALLOW_LISTS = {
     "ALLOW_DATE": (agreement.ALLOW_DATE,
-                   lambda c: agreement.date_problem(c, date.today()), "programs"),
+                   lambda c: agreement.date_problem(c, agreement.utc_today()), "programs"),
     "ALLOW_AGES": (agreement.ALLOW_AGES, agreement.age_problem, "programs"),
     "ALLOW_OPEN": (agreement.ALLOW_OPEN, agreement.open_problem, "programs"),
     "ALLOW_OPEN_LABEL": (agreement.ALLOW_OPEN_LABEL, agreement.open_label_problem, "entries"),
     "ALLOW_SOON": (agreement.ALLOW_SOON,
-                   lambda c: agreement.soon_problem(c, date.today()), "entries"),
+                   lambda c: agreement.soon_problem(c, agreement.utc_today()), "entries"),
     "ALLOW_PAY": (agreement.ALLOW_PAY, agreement.pay_problem, "entries"),
 }
 
