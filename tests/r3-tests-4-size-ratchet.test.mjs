@@ -55,7 +55,8 @@ const TABLE = {
   // 2026-10-13: ticket ux9-header-footer. style.css 49000 to 49800 (phone header, Menu grid, footer columns; 49757 bytes).
   // 2026-10-13: ticket ux9-quiet-cards. style.css 49800 to 50100 (quiet card h3, a.chip, .g2x2; 50049 bytes).
   // 2026-10-13: ticket ux9-header-footer (320 px overflow fixes). style.css 50100 to 50300 (50259 bytes).
-  "assets/css/style.css": { ceiling: 50300, reason: "stylesheet, 41831 bytes measured 2026-10-10" },
+  // 2026-10-13: ux9 review fixes (.tablewrap position, Jobs hours gap). style.css 50300 to 50400 (50324 bytes).
+  "assets/css/style.css": { ceiling: 50400, reason: "stylesheet, 41831 bytes measured 2026-10-10" },
   "assets/js/calendar.js": { ceiling: 8800, reason: "script, 7966 bytes measured 2026-10-10" },
   "assets/js/common.js": { ceiling: 34700, reason: "script, 25681 bytes measured 2026-10-10" },
   // Raised from 58100 to 59300 on 2026-10-12 for ticket diet-1 (Where group files on the Programs page). 59217 bytes measured.

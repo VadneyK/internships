@@ -72,7 +72,8 @@ const LIMITS = {
   // 2026-10-13, ticket ux9-header-footer: phone header row, Menu grid and footer columns rules. Raised from 49000 to 49800 (49757 bytes).
   // 2026-10-13, ticket ux9-quiet-cards: quiet card h3, a.chip and .g2x2 rules. Raised from 49800 to 50100 (50049 bytes).
   // 2026-10-13, ticket ux9-header-footer: 320 px overflow fixes (.tp-hidden left, .tl grid, wrapping tags). Raised from 50100 to 50300 (50259 bytes).
-  stylesheet: 50300,
+  // 2026-10-13: ux9 review fixes (.tablewrap position, Jobs hours gap). Raised from 50300 to 50400 (50324 bytes).
+  stylesheet: 50400,
 };
 
 const LITE = "data/entries-lite.json";
