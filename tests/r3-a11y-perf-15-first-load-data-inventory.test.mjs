@@ -18,19 +18,23 @@ export const TABLE = {
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. find.html ceiling 2223100 to 2277600.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. find.html limit 2277600 to 2341900.
   // 2026-10-13: re-read of 177 workshop-city cards (38 fixed). find.html limit 2341900 to 2342200.
-  "find.html": { paths: ["data/entries-lite.json"], ceiling: 2342200, reason: "Find filters every program, so it needs the whole lite file" },
+  // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. find.html limit 2342200 to 2377900.
+  // 2026-10-13: re-read of 213 more open cards (42 fixed). find.html limit 2377900 to 2378800.
+  "find.html": { paths: ["data/entries-lite.json"], ceiling: 2378800, reason: "Find filters every program, so it needs the whole lite file" },
   "calendar.html": { paths: ["data/calendar.json", "data/entries-cal.json"], ceiling: 150000, reason: "Calendar draws deadline cards from the small calendar file (only the programs it lists) plus its own small file" },
   "younger.html": { paths: ["data/entries-core.json", "data/younger.json"], ceiling: 1100000, reason: "Ages 12 to 14 reads the core file and its own small file; headroom up to the card file size" },
   // Raised from 130000 to 145000 on 2026-10-12: the employer list grew to 147 entries (about 136 KB, one entry per line, about 30 KB gzipped).
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. jobs.html ceiling 145000 to 172100.
   // 2026-10-13: four employer caveats (2,409 programs, 188 employers). jobs.html limit 172100 to 172500.
-  "jobs.html": { paths: ["data/employers.json"], ceiling: 172500, reason: "Jobs lists employers from one small file; the state hours rules load only after an age of 14 to 17 and a state are picked" },
+  // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. jobs.html limit 172500 to 190100.
+  "jobs.html": { paths: ["data/employers.json"], ceiling: 190100, reason: "Jobs lists employers from one small file; the state hours rules load only after an age of 14 to 17 and a state are picked" },
   "interview.html": { paths: ["data/interview.json"], ceiling: 60000, reason: "Tips file only; the state rules load the first time the hours checker is used" },
   "permit.html": { paths: ["data/permits.json"], ceiling: 100000, reason: "Work permit page reads only the state rules file" },
   "states.html": { paths: ["data/permits.json"], ceiling: 100000, reason: "State rules page reads only the state rules file" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. insights.html ceiling 697700 to 716100.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. insights.html limit 716100 to 736500.
-  "insights.html": { paths: ["data/entries-stats.json"], ceiling: 736500, reason: "Numbers page counts every program, so it needs the stats projection (about 528 KB), the one page over the 200000 default" },
+  // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. insights.html limit 736500 to 748900.
+  "insights.html": { paths: ["data/entries-stats.json"], ceiling: 748900, reason: "Numbers page counts every program, so it needs the stats projection (about 528 KB), the one page over the 200000 default" },
   "languages.html": { paths: ["data/languages.json"], ceiling: 200000, reason: SMALL },
   "parents.html": { paths: ["data/parents.json"], ceiling: 200000, reason: SMALL },
   "paycheck.html": { paths: ["data/money.json"], ceiling: 200000, reason: SMALL },

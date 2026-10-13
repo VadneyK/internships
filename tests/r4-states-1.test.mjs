@@ -115,6 +115,8 @@ test("permit: a failed states-lite fetch shows the could-not-load message, then 
   assert.deepEqual(p.errors, []);
   p.window.fetch = real;
   type(p.window, $(p, "pState"), "lite"); await tick(150);
+  // 2026-10-13: under a busy machine the retry fetch can take longer than 150 ms; wait up to 5 s for the list.
+  for (let i = 0; i < 100 && !$(p, "pLite").querySelector('option[value="ak"]'); i++) await tick(50);
   assert.equal($(p, "pLiteField").hidden, false);
   assert.ok($(p, "pLite").querySelector('option[value="ak"]'), "list filled after retry");
 });

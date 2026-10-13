@@ -27,31 +27,40 @@ const TABLE = {
   "data/calendar.json": { ceiling: 15700, reason: "data file, 14265 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/employers.json ceiling 149800 to 172100.
   // 2026-10-13: four employer caveats (2,409 programs, 188 employers). data/employers.json limit 172100 to 172500.
-  "data/employers.json": { ceiling: 172500, reason: "data file, 136131 bytes measured 2026-10-10" },
+  // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. data/employers.json limit 172500 to 190100.
+  "data/employers.json": { ceiling: 190100, reason: "data file, 136131 bytes measured 2026-10-10" },
   "data/entries-cal.json": { ceiling: 72600, reason: "data file, 65976 bytes measured 2026-10-10" },
   // 2026-10-13: +7 Plains and North Dakota cards (2,298 programs). Raised: entries-core 414000 to 415500, entries-detail 1693000 to 1698000, entries-lite 2173000 to 2180000, entries-stats 682000 to 684000, entries.json 4465000 to 4478000.
   // 2026-10-13: +50 city cards for the six new Where cities (2,348 programs). Raised to measured sizes rounded up: core 424100, detail 1731000, lite 2223100, stats 697700, entries.json 4567200.
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-core.json ceiling 424100 to 435000.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-core.json limit 435000 to 447500.
-  "data/entries-core.json": { ceiling: 447500, reason: "data file, 368201 bytes measured 2026-10-10" },
+  // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. data/entries-core.json limit 447500 to 454800.
+  "data/entries-core.json": { ceiling: 454800, reason: "data file, 368201 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-detail.json ceiling 1731000 to 1772700.
   // 2026-10-13: four repointed links after the link check. data/entries-detail.json limit 1772700 to 1772900.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-detail.json limit 1772900 to 1823500.
   // 2026-10-13: re-read of 177 workshop-city cards (38 fixed). data/entries-detail.json limit 1823500 to 1824500.
-  "data/entries-detail.json": { ceiling: 1824500, reason: "data file, 1521373 bytes measured 2026-10-10" },
+  // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. data/entries-detail.json limit 1824500 to 1851500.
+  // 2026-10-13: re-read of 213 more open cards (42 fixed). data/entries-detail.json limit 1851500 to 1853200.
+  "data/entries-detail.json": { ceiling: 1853200, reason: "data file, 1521373 bytes measured 2026-10-10" },
   "data/entries-home.json": { ceiling: 899400, reason: "data file, 817599 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-lite.json ceiling 2223100 to 2277600.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-lite.json limit 2277600 to 2341900.
   // 2026-10-13: re-read of 177 workshop-city cards (38 fixed). data/entries-lite.json limit 2341900 to 2342200.
-  "data/entries-lite.json": { ceiling: 2342200, reason: "data file, 1937500 bytes measured 2026-10-10" },
+  // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. data/entries-lite.json limit 2342200 to 2377900.
+  // 2026-10-13: re-read of 213 more open cards (42 fixed). data/entries-lite.json limit 2377900 to 2378800.
+  "data/entries-lite.json": { ceiling: 2378800, reason: "data file, 1937500 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json ceiling 697700 to 716100.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json limit 716100 to 736500.
-  "data/entries-stats.json": { ceiling: 736500, reason: "data file, 606782 bytes measured 2026-10-10" },
+  // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json limit 736500 to 748900.
+  "data/entries-stats.json": { ceiling: 748900, reason: "data file, 606782 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries.json ceiling 4567200 to 4677300.
   // 2026-10-13: four repointed links after the link check. data/entries.json limit 4677300 to 4677700.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries.json limit 4677700 to 4809900.
   // 2026-10-13: re-read of 177 workshop-city cards (38 fixed). data/entries.json limit 4809900 to 4811300.
-  "data/entries.json": { ceiling: 4811300, reason: "data file, 3996617 bytes measured 2026-10-10" },
+  // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. data/entries.json limit 4811300 to 4883300.
+  // 2026-10-13: re-read of 213 more open cards (42 fixed). data/entries.json limit 4883300 to 4885900.
+  "data/entries.json": { ceiling: 4885900, reason: "data file, 3996617 bytes measured 2026-10-10" },
   "data/expiring-dates.json": { ceiling: 1700, reason: "data file, 1530 bytes measured 2026-10-10" },
   "data/gaps.json": { ceiling: 5400, reason: "data file, 4832 bytes measured 2026-10-10" },
   "data/interview.json": { ceiling: 12400, reason: "data file, 11207 bytes measured 2026-10-10" },
@@ -74,7 +83,8 @@ const TABLE = {
   // 2026-10-13: ticket ux9-quiet-cards. style.css 49800 to 50100 (quiet card h3, a.chip, .g2x2; 50049 bytes).
   // 2026-10-13: ticket ux9-header-footer (320 px overflow fixes). style.css 50100 to 50300 (50259 bytes).
   // 2026-10-13: ux9 review fixes (.tablewrap position, Jobs hours gap). style.css 50300 to 50400 (50324 bytes).
-  "assets/css/style.css": { ceiling: 50400, reason: "stylesheet, 41831 bytes measured 2026-10-10" },
+  // 2026-10-13: ux9 review fixes. style.css 50400 to 50500 (50427 bytes).
+  "assets/css/style.css": { ceiling: 50500, reason: "stylesheet, 41831 bytes measured 2026-10-10" },
   "assets/js/calendar.js": { ceiling: 8800, reason: "script, 7966 bytes measured 2026-10-10" },
   "assets/js/common.js": { ceiling: 34700, reason: "script, 25681 bytes measured 2026-10-10" },
   // Raised from 58100 to 59300 on 2026-10-12 for ticket diet-1 (Where group files on the Programs page). 59217 bytes measured.

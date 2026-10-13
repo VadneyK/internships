@@ -1788,7 +1788,7 @@
   "season": "summer",
   "duration": "8 weeks, June 14 to Aug 6, 2027. You must be on campus at least 35 of the 40 days.",
   "status": "open-now",
-  "deadline_text": "The BioMed Focus 2027 interest form opens Monday, Oct 12, 2026. No closing date is posted.",
+  "deadline_text": "The BioMed Focus 2027 interest form closes January 8, 2027 at 11:59 pm, per the program About page. That page does not give an opening date. The card earlier said the form opens Monday, Oct 12, 2026; the About page does not confirm that.",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Fill out the online interest form. One letter of recommendation is required. The page does not describe the later steps.",
   "url": "https://biomed-focus.medicine.umich.edu/about",
@@ -2548,7 +2548,7 @@
   "verified_on": "2026-10-10",
   "needs_work_permit": false,
   "priority": 2,
-  "notes": "Admissions office phone: (734) 677-5360. General line: 734-973-3300. This is a school program, not a job.",
+  "notes": "Admissions office phone: (734) 677-5360. General line: 734-973-3300. This is a school program, not a job. The admissions page does not mention tuition, fees or books, so confirm the no-cost claim by calling the admissions office.",
   "fields": [
    "any"
   ],
@@ -2567,7 +2567,7 @@
   "season": "school-year",
   "duration": "Several years of high school",
   "status": "opens-soon",
-  "deadline_text": "Registration for the informational meetings begins October 2026. Admissions begins Dec 1, 2026. Online application closes Feb 26, 2027. Letters go out Mar 19, 2027. Lottery Mar 26 if needed. Confirm by Apr 9, 2027.",
+  "deadline_text": "Admissions for fall 2027 begins Dec 1, 2026. Online application closes Feb 26, 2027. Letters go out Mar 19, 2027. Lottery Mar 26, 2027 if needed. Confirm by Apr 9, 2027.",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Go to an Admissions Informational Meeting first (6:00 to 7:30 PM on Dec 1, 2026; Jan 19, Feb 1, Feb 10 online, Feb 18 online, 2027). Then use the online application. Placement tests follow if you are admitted.",
   "url": "https://www.wccnet.edu/wtmc/admissions.php",
@@ -5174,7 +5174,7 @@
   "verified_on": "2026-10-09",
   "priority": 1,
   "needs_work_permit": true,
-  "notes": "Held at 2100 Liberty Heights Avenue, Baltimore. The page also mentions a summer job part. Ask about the summer and spring sessions. The Branches page did not confirm a work permit, in-person sessions or a family orientation, so ask the program. The foundation phone is (410) 448-5663 and the email is info@parksandpeople.org.",
+  "notes": "Held at 2100 Liberty Heights Avenue, Baltimore. The page also mentions a summer job part. Ask about the summer and spring sessions. The Branches page says applicants must be able to apply for a work permit, must attend all in-person sessions, and that a family orientation is required. The foundation phone is (410) 448-5663 and the email is info@parksandpeople.org.",
   "id": "baltimore-parks-and-people-branches-internship",
   "name": "Branches Paid Internship",
   "org": "Parks & People Foundation",
@@ -5187,7 +5187,7 @@
    "environment",
    "trades"
   ],
-  "what_you_do": "After-school paid internship with outdoor conservation work, weekly college and career sessions, and money and teamwork skills, with a focus on green careers.",
+  "what_you_do": "This is a paid after-school internship. You do outdoor work to protect nature. You also join weekly sessions on college, jobs, money and teamwork. The focus is green jobs.",
   "min_age": null,
   "max_age": null,
   "who_can_apply": "Baltimore City high-schoolers, per the program page.",
@@ -5651,6 +5651,87 @@
    "https://ccedutchess.org/gardening/green-teen-community-gardening"
   ],
   "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "deadline_iso": null,
+  "id": "beaverton-city-library-teen-library-council",
+  "name": "Teen Library Council",
+  "org": "Beaverton City Library",
+  "regions": [
+   "oregon"
+  ],
+  "city": "Beaverton, OR",
+  "type": "leadership",
+  "fields": [
+   "education",
+   "arts-media"
+  ],
+  "what_you_do": "Help plan, promote and help out with teen and children's library programs. Help judge writing contests. Help with community outreach projects.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "Teens. The program page does not state an age or grade rule.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Members earn volunteer credit. The number of hours is not stated on the program page.",
+  "season": "school-year",
+  "duration": "Meets twice a month",
+  "status": "unconfirmed",
+  "deadline_text": "Not stated on the program page.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Not stated on the program page. The library's main phone number is 503-644-2197.",
+  "needs_work_permit": false,
+  "url": "https://www.beavertonlibrary.org/232/Teen-Library-Council",
+  "sources_fetched": [
+   "https://www.beavertonlibrary.org/volunteer",
+   "https://www.beavertonlibrary.org/232/Teen-Library-Council"
+  ],
+  "priority": 3,
+  "notes": "The council meets on the first and third Thursdays, 5 to 6 PM, at Beaverton City Library Main. Members must attend meetings and events.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "grades": null,
+  "apply_url": "https://thprd.volunteerportal.org/?nd=intake&entry_point_id=27&entry_point_type=global_entry_point&unit_id=15&lagent=1",
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "deadline_iso": null,
+  "id": "beaverton-thprd-rise-youth-leaders",
+  "name": "RISE Youth Leadership Program",
+  "org": "Tualatin Hills Park and Recreation District (THPRD)",
+  "regions": [
+   "oregon"
+  ],
+  "city": "Beaverton, OR",
+  "type": "leadership",
+  "fields": [
+   "education",
+   "sports",
+   "any"
+  ],
+  "what_you_do": "Volunteer with park district programs and events. Give at least 80 hours of service within a year.",
+  "min_age": 13,
+  "max_age": null,
+  "who_can_apply": "Youth age 13 and older. You must agree to give at least 80 hours of service within one year of starting. You must attend an initial training held online.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer work. It can count for school community service hours.",
+  "season": "year-round",
+  "duration": "At least 80 hours within a year.",
+  "status": "year-round",
+  "deadline_text": "Not stated on the program page. Online trainings are held monthly, with more before summer.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the RISE Youth Leader application online. Then attend the virtual training. Questions? Call Melissa Marcum-Fredrick at 503-619-3941.",
+  "needs_work_permit": false,
+  "url": "https://www.tualatinhillsparks.org/549/Youth-Opportunities",
+  "sources_fetched": [
+   "https://www.tualatinhillsparks.org/546/Volunteer-at-THPRD",
+   "https://www.tualatinhillsparks.org/549/Youth-Opportunities"
+  ],
+  "priority": 1,
+  "notes": "The same page lists a Junior Lifeguard program for ages 12 and up. It also lists community and cultural events for ages 14 and up.",
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "id": "berkeley-high-cte",
@@ -7150,7 +7231,7 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
-  "opens_iso": "2026-12-01",
+  "opens_iso": null,
   "grades": "Grades 9 to 12",
   "min_age": null,
   "max_age": null,
@@ -7181,8 +7262,8 @@
   "paid_type": "fee-based",
   "pay_detail": "2026 tuition: Blacksburg session $1,250 (materials not included, about $100 estimated); virtual session $250. Needs-based scholarships are offered through the registration form.",
   "duration": "One week (2026 Blacksburg session June 21 to 27)",
-  "status": "opens-soon",
-  "deadline_text": "Summer 2026 registration closed May 15 or when full. The page says registration will open December 1st and close May 15th or when full (no year; (year inferred from the next cycle)). The program is being rebooted. 2027 dates not posted.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Summer 2026 registration closed May 15, 2026 or when full. The page says registration will open December 1st (no year given) and close May 15th or when full. No 2027 dates or prices are posted.",
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Use the registration links on the page for the Blacksburg or virtual session. No refunds after the May 15 close. Questions: Chris Pritchett, cpritche@vt.edu.",
   "url": "https://arch.vt.edu/future-students/explore-architecture.html",
@@ -9554,7 +9635,7 @@
   ],
   "city": "Boston, MA",
   "type": "pre-college",
-  "what_you_do": "A three week program with no college credit. You pick one subject. In 2026 the choices were psychology, medicine, creative writing and business. You also do activities in Boston.",
+  "what_you_do": "A three week program. You pick one subject. In 2026 the choices were psychology, medicine, creative writing and business. You also do activities in Boston.",
   "who_can_apply": "Students who start their junior or senior year in fall 2027. Students from other countries can apply.",
   "paid_type": "fee-based",
   "season": "summer",
@@ -9683,7 +9764,7 @@
   ],
   "city": "Boston, MA",
   "type": "pre-college",
-  "what_you_do": "A two-week pre-college program on the BU campus. Go to morning and afternoon seminars, join campus activities and get a taste of college life.",
+  "what_you_do": "A two-week pre-college program on the BU campus. You choose any two seminars from the list, then join campus activities and an admissions workshop. You get a taste of college life.",
   "who_can_apply": "Students who start sophomore, junior or senior year in fall 2027. BU looks at your grades, courses and a personal essay. Students from other countries can apply.",
   "paid_type": "fee-based",
   "season": "summer",
@@ -13529,7 +13610,7 @@
    "arts-media",
    "engineering"
   ],
-  "what_you_do": "One week on campus in a design studio. You learn drawing, model making and design. You also build bridges, tour campus buildings and take a field trip to a famous architecture town.",
+  "what_you_do": "This is a one-week summer program on campus where you live in a dorm. You learn drawing and modeling in a design studio. You see what life is like as an architecture student. You take a trip to a famous building in the Midwest.",
   "min_age": null,
   "max_age": null,
   "who_can_apply": "High school students who are rising sophomores through seniors. Students come from around the country.",
@@ -14314,6 +14395,46 @@
  },
  {
   "grades": null,
+  "apply_url": "https://www.governmentjobs.com/careers/chandleraz?department[0]=Community%20Services&sort=PositionTitle%7CAscending",
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "deadline_iso": null,
+  "id": "chandler-aquatics-lifeguard-jobs",
+  "name": "Chandler Aquatics Jobs (Lifeguard and Swim Instructor)",
+  "org": "City of Chandler",
+  "regions": [
+   "arizona"
+  ],
+  "city": "Chandler, AZ",
+  "type": "paid-youth-program",
+  "fields": [
+   "sports",
+   "any"
+  ],
+  "what_you_do": "Work as a lifeguard or swim instructor with Chandler Aquatics. The page also lists head lifeguard and head swim coach roles.",
+  "min_age": 15,
+  "max_age": null,
+  "who_can_apply": "Age 15 and older. The page says you need consistent availability and a year-round commitment, including during the school year.",
+  "paid_type": "paid",
+  "pay_detail": "Lifeguard I starts at $17.79 per hour. Lifeguard II (Swim Instructor) starts at $18.67 per hour. These rates are listed as of January 2025 on the program page.",
+  "season": "year-round",
+  "duration": "Peak season May to July: 20 to 40 hours a week. August to April: 5 to 20 hours a week.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Hiring for lifeguards runs each year from January through April.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Use the View open positions link on the city jobs page. The page also links to a separate certification and training page.",
+  "needs_work_permit": null,
+  "url": "https://www.chandleraz.gov/explore/chandler-aquatics/jobs",
+  "sources_fetched": [
+   "https://www.chandleraz.gov/explore/chandler-aquatics/jobs",
+   "https://www.chandleraz.gov/explore/chandler-recreation/jobs"
+  ],
+  "priority": 1,
+  "notes": "Not stated on the program page whether a work permit is needed. Pay may have changed since January 2025.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "grades": null,
   "opens_iso": null,
   "deadline_iso": null,
   "apply_url": null,
@@ -14351,6 +14472,45 @@
   ],
   "notes": "Min age is 16 for all volunteers. The page does not give a teen age cap.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "deadline_iso": null,
+  "id": "chandler-library-teen-volunteer-program",
+  "name": "Library Teen Volunteer Program",
+  "org": "Chandler Public Library",
+  "regions": [
+   "arizona"
+  ],
+  "city": "Chandler, AZ",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "any"
+  ],
+  "what_you_do": "Volunteer one shift each week at a Chandler library branch. Sessions follow the school year, by semester, quarter or summer break.",
+  "min_age": 13,
+  "max_age": 17,
+  "who_can_apply": "Ages 14 to 17 at the Hamilton and Basha branches. Ages 13 to 17 at the Sunset and Downtown branches. You can apply to only one branch.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "school-year",
+  "duration": "One set shift each week for a semester, quarter or summer",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Closed now. Downtown: check back in January. Sunset: check back in December for spring 2027. Basha: check back in May for summer. Hamilton: check back at the start of the school year.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Pick one branch and read its dates. Fill out the linked application form. If there is no link, there are no openings. Watch for confirmation emails, then attend the mandatory overview or training.",
+  "needs_work_permit": false,
+  "url": "https://chandlerlibrary.org/volunteer/",
+  "priority": 2,
+  "notes": "Submitting an application does not guarantee a spot. The program is not a good fit for teens who will miss 2 or more shifts.",
+  "sources_fetched": [
+   "https://chandlerlibrary.org/volunteer/"
+  ],
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "opens_iso": null,
@@ -15360,7 +15520,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-10",
   "priority": 2,
-  "notes": "The zoo calls the program very hard to get into. It also runs a winter session that is open to new applicants. Applications are September 1 to 10, 2026. The program runs November 14, 2026 to February 14, 2027. Contact: 719-424-7822.",
+  "notes": "The page says a $25 application fee is non-refundable. Summer programs are tuition based and the page does not state an amount. The page does not give winter session dates. Contact: 719-424-7822.",
   "verified_on_label": "Oct 10, 2026"
  },
  {
@@ -17449,7 +17609,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "priority": 2,
-  "notes": "The page says student volunteers must be at least 16, and some opportunities need 18 or older. The summer program opens in early March 2027. One summer block says applicants must be 18 at submission, while the FAQ says the summer rules match the others (16). Confirm the summer age rule.",
+  "notes": "The page says student volunteers must be at least 16, and some opportunities need 18 or older. The page says summer applicants must be at least 18 when the application is submitted. Summer applications open early March 2027. Next student cycle starts January 10, 2027.",
   "verified_on_label": "Oct 9, 2026"
  },
  {
@@ -18052,7 +18212,7 @@
   "status": "open-now",
   "deadline_text": "Auditions opened Oct 1, 2026. Priority deadline Feb 15, 2027. Final deadline March 1, 2027.",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Audition through Acceptd. Choose CCM Prep: Musical Theatre Intensive. Get ready a headshot and a resume. Prepare a 60 to 90 second speech and two different songs. Send a 30 to 60 second video of you dancing alone.",
+  "how_to_apply": "Audition through Acceptd. Choose CCM Prep: Musical Theatre Intensive. Get ready a headshot and a resume. Prepare a 60 to 90 second monologue from a published play written after 1950 and two songs (one from a musical written before 1970, one written after 1970). Send a 30 to 60 second video of you dancing alone.",
   "url": "https://ccm.uc.edu/arts4all/summer/teen-programs/musical-theatre-workshop.html",
   "sources_fetched": [
    "https://www.ccm.uc.edu/arts4all/summer/teen-programs.html",
@@ -20485,6 +20645,86 @@
   "verified_on_label": "Oct 10, 2026"
  },
  {
+  "id": "colorado-springs-space-foundation-space-ambassador-volunteer",
+  "name": "Space Ambassador Volunteer (Space Foundation Discovery Center)",
+  "org": "Space Foundation Discovery Center",
+  "regions": [
+   "colorado"
+  ],
+  "city": "Colorado Springs, CO",
+  "type": "volunteer",
+  "fields": [
+   "science",
+   "education"
+  ],
+  "what_you_do": "Help visitors at a space science museum. Jobs include gallery guide work, helping in a Mars robot lab, and talks on a Science On a Sphere display. You can also help in a 3D printing lab or the drone zone.",
+  "min_age": 14,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Anyone at least 14 years old. A background check is needed if you are 18 or older.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "At least two shifts a month, Tuesday through Saturday",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "The page says it is still taking applications. The museum plans to reopen in January 2027.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use the Apply Now link on the page. Call 719-319-3678 or email volunteer@spacefoundation.org with questions.",
+  "needs_work_permit": false,
+  "url": "https://www.discoverspace.org/volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.discoverspace.org/volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "You can apply while the museum is closed. The museum plans to reopen in January 2027.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "colorado-springs-summer-teen-volunteering",
+  "name": "Summer Teen Volunteering (Colorado Springs Parks)",
+  "org": "City of Colorado Springs Parks, Recreation and Cultural Services",
+  "regions": [
+   "colorado"
+  ],
+  "city": "Colorado Springs, CO",
+  "type": "volunteer",
+  "fields": [
+   "environment",
+   "education"
+  ],
+  "what_you_do": "Pick a summer job as a teen volunteer. You can be a junior guide at Rock Ledge Ranch, help at a spray ground, or greet visitors at North Cheyenne Canon Park. You can also help at the Therapeutic Recreation Discovery Camp.",
+  "min_age": 10,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Ages depend on the job: 10 and up for Junior Docent at Rock Ledge Ranch, 13 and up for Spray Ground Assistant, Teen Volunteer and Therapeutic Recreation Discovery Camp roles, and 15 and up for Junior Park Docent at Garden of the Gods and Junior Docent at the Pioneers Museum.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "summer",
+  "duration": "Several weeks. Hours differ by job.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Most jobs show 2026 dates only. Rock Ledge Ranch spots were filled for 2026, and its application window was March 1 to 21. The Pioneers Museum Junior Docent lists June to August 2027, with applications due early May 2027.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Register on the page for the job you want. Junior Park Docent at Garden of the Gods signs up by email to gardenofthegods@coloradosprings.gov. Some jobs need an interview and training.",
+  "needs_work_permit": false,
+  "url": "https://coloradosprings.gov/parks/page/summer-teen-volunteering",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://coloradosprings.gov/parks/page/summer-teen-volunteering"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "Junior Docents at the Pioneers Museum earn a $300 Education Stipend at the end of the summer if they do at least 40 hours. Teens ages 12 to 15 can only volunteer from 7 am to 7 pm in the school year, and until 9 pm in summer. North Cheyenne Canon teens must finish the free online Leave No Trace 101 course.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "id": "colorado-youth-advisory-council-coyac",
   "name": "Colorado Youth Advisory Council (COYAC)",
   "org": "Colorado Youth Advisory Council",
@@ -21044,7 +21284,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-10",
   "priority": 2,
-  "notes": "Two phone numbers appear on OSC pages, so email is the safer contact. The page does not mention financial aid. It was formerly called the Summer Institute.",
+  "notes": "Two phone numbers show on OSC pages, so email is safer. The page says OSC pays much of the cost. It says there are no one-on-one scholarships. The program used to be called the Summer Institute.",
   "id": "columbus-osc-stem-institute",
   "name": "STEM Institute (Ohio Supercomputer Center)",
   "org": "Ohio Supercomputer Center",
@@ -22589,7 +22829,7 @@
   "deadline_text": "Applications open Monday Oct 19, 2026 and close Sunday Nov 8, 2026.",
   "deadline_iso": "2026-11-08",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Apply on the Chicago Public Library application form (not the After School Matters site). Answer the open-ended questions carefully; they decide who is interviewed. Virtual interview in Microsoft Teams for each program. Apply to as many as you like but accept one.",
+  "how_to_apply": "Apply on the Chicago Public Library form, not the After School Matters site. Answer the open questions with care. They decide who gets an interview. Each program has a video interview in Microsoft Teams. You can apply to as many as you like. You can only accept one.",
   "needs_work_permit": null,
   "url": "https://www.chipublib.org/news/chicago-public-library-school-year-assistantship/",
   "apply_url": null,
@@ -22601,7 +22841,7 @@
    "https://www.chipublib.org/news/apply-to-be-part-of-the-teen-media-lab/"
   ],
   "priority": 1,
-  "notes": "You enroll with After School Matters during the first month, which needs a Social Security Number and parent or guardian information. Questions: teenservices@chipublib.org. Gamer's Guild sub-guilds meet at different library branches.",
+  "notes": "In the first month you enroll with After School Matters. That needs a Social Security Number and a parent or guardian's details. Questions: teenservices@chipublib.org. Gamer's Guild groups meet at different library branches. The sub-pages list these stipends. Teen Best Reads pays $3,500 for finishing work and showing up. Teen Media Lab pays $2,200 for Spring and $1,300 for Fall. The Best Reads page is dated 2025 and gives no year. So the 2026-27 cycle rests on the main page.",
   "regions": [
    "chicago"
   ],
@@ -24025,6 +24265,46 @@
   "priority": 1,
   "notes": "The pay and steps were read through a page reader, so confirm the pay on the city job posting. The page says the city needs early morning and daytime guards who can work year-round.",
   "verified_on_label": "Oct 10, 2026"
+ },
+ {
+  "id": "denver-parks-recreation-youth-meals-recreation-volunteer",
+  "name": "Denver Parks and Recreation Volunteers: Free Youth Meals and Recreation",
+  "org": "Denver Parks and Recreation",
+  "regions": [
+   "colorado"
+  ],
+  "city": "Denver, CO",
+  "type": "volunteer",
+  "fields": [
+   "social-impact",
+   "food-hospitality"
+  ],
+  "what_you_do": "Help recreation center staff serve free meals to kids and teens. Meals can be breakfast, lunch, snacks or supper. You can also help with games and other activities.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "For the free youth meals volunteer job, you must be at least 15 years old, finish an application and pass a background check.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline stated on the program page.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Email andrea.garcia@denvergov.org to start. Send the online application and any documents you need through Engage Denver. Send questions to Volunteers.Recreation@denvergov.org.",
+  "needs_work_permit": false,
+  "url": "https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Parks-Recreation/Get-Involved-with-Denver-Parks-Recreation/Volunteer-with-Denver-Parks-Recreation",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Parks-Recreation/Get-Involved-with-Denver-Parks-Recreation/Volunteer-with-Denver-Parks-Recreation"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "The page says all volunteers must be at least 15, finish an application and pass a background check. It also lists other jobs, like park clean-ups and mountain park projects. It gives no age rule for those.",
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "grades": null,
@@ -25575,7 +25855,7 @@
    "any"
   ],
   "what_you_do": "Take college classes for free while in high school and earn both high school and college credit. Pick a college transfer path or a career and technical path (a certificate or diploma).",
-  "who_can_apply": "High school juniors and seniors in North Carolina. Need a 2.8 or higher unweighted GPA, or test scores showing college readiness. The career path also accepts a written recommendation from your principal. To stay in, you must keep at least a 2.0 college GPA after two college courses.",
+  "who_can_apply": "High school juniors and seniors. Need a 2.8 or higher unweighted GPA, or test scores showing college readiness. The career path also accepts a written recommendation from your principal. To stay in, you must keep at least a 2.0 college GPA after two college courses.",
   "paid_type": "unpaid",
   "season": "school-year",
   "status": "open-now",
@@ -25590,7 +25870,7 @@
    "https://www.durhamtech.edu/dual-enrollment/important-dates"
   ],
   "priority": 1,
-  "notes": "Students at Middle College High School, City of Medicine Academy and Durham School of Technology use a different path and deadline.",
+  "notes": "Students at Middle College High School, City of Medicine Academy and Durham School of Technology use a different path and deadline. The pages state no North Carolina residency rule. Check with the college. The eligibility page confirms the 2.8 GPA or test score rule. It also confirms the principal waiver for the career path.",
   "verified_on_label": "Oct 9, 2026"
  },
  {
@@ -27051,7 +27331,7 @@
   "verified_on": "2026-10-09",
   "needs_work_permit": false,
   "priority": 3,
-  "notes": "Phone for the Teen Services Librarian: 760-839-4283 (listed in the card notes; not confirmed on the page text). Page lists no age range or cost.",
+  "notes": "Phone for the Teen Services Librarian: 760-839-4283 (listed on the page with a call-to-ask-questions note). Page lists no age range or cost.",
   "id": "escondido-library-teen-advisory-board",
   "name": "Escondido Library Teen Advisory Board",
   "org": "Escondido Public Library (City of Escondido)",
@@ -27075,7 +27355,7 @@
   "deadline_text": "The library is accepting new members for the 2026-2027 school year. No deadline is listed.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Get the Teen Advisory Board Application (PDF) from the page, or pick one up at the Youth Services Desk on the 2nd floor. The page says to send the completed application to Teen Services by email. The page text did not show the email address, so confirm it before sending.",
+  "how_to_apply": "Get the Teen Advisory Board form from the page as a PDF. You can also pick one up at the Youth Services Desk on the 2nd floor. Email the finished form to teens@escondidolibrary.org (shown on the page).",
   "url": "https://www.escondido.gov/939/Teen-Advisory-Board",
   "sources_fetched": [
    "https://www.escondido.gov/939/Teen-Advisory-Board"
@@ -28601,7 +28881,7 @@
    "law-government"
   ],
   "what_you_do": "A school team studies the economy and plays the part of the Fed's rate-setting committee. The 2026-27 theme is the economics of housing. Teams submit a paper, and top teams are chosen.",
-  "who_can_apply": "Students in grades 9 to 12, entered as a team. A faculty advisor registers the team. Team size and entry limits are in the rule book, which the page links to.",
+  "who_can_apply": "Students in grades 9 to 12, entered as a team. A faculty advisor registers the team. Each school may enter one team and one submission. Team size and other rules are in the rule book, which the page links to.",
   "paid_type": "unpaid",
   "pay_detail": "No pay. No fee is listed.",
   "season": "school-year",
@@ -31187,6 +31467,45 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "franklin-williamson-county-public-library-volunteer",
+  "name": "Library Volunteer Program (Williamson County Public Library)",
+  "org": "Williamson County Public Library",
+  "regions": [
+   "tennessee"
+  ],
+  "city": "Franklin, TN",
+  "type": "volunteer",
+  "fields": [
+   "education"
+  ],
+  "what_you_do": "Help library staff with support tasks. Volunteers do not replace library staff work.",
+  "min_age": 14,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Anyone 14 or older. If you are a minor, a parent or guardian must sign a form that confirms your age and a release.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline. Applications are kept on file for six months if no job fits right now.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Send an application. Have a character reference and an emergency contact ready. Call 615-786-0142. You can also email deborah.reschke@williamsoncounty-tn.gov.",
+  "needs_work_permit": false,
+  "url": "https://wcpltn.org/306/Volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://wcpltn.org/306/Volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "Jobs depend on what the library needs at the time. Not every applicant gets a spot.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "min_age": null,
   "max_age": null,
   "grades": null,
@@ -33263,6 +33582,45 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "golden-jeffco-trail-stewardship-team",
+  "name": "Trail Stewardship Team",
+  "org": "Jeffco Parks & Open Space",
+  "regions": [
+   "colorado"
+  ],
+  "city": "Golden, CO",
+  "type": "paid-youth-program",
+  "fields": [
+   "environment"
+  ],
+  "what_you_do": "Work on a crew doing trail maintenance in Jefferson County parks. You use hand tools to move rocks, branches and dirt, and you hike two to six miles every day.",
+  "min_age": 14,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Teens who are 14 through 18 by June 9, 2026. You must be able to work legally in the United States and be available Tuesday to Thursday for the whole program.",
+  "paid_type": "paid",
+  "pay_detail": "$18 per hour (2026)",
+  "season": "summer",
+  "duration": "About 6 weeks (June 16 to July 30 in 2026)",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 applications are closed. The page lists 2026 interviews in April and a June 16 start. The 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Watch the program page for the next application. In 2026, interviews were in April.",
+  "needs_work_permit": null,
+  "url": "https://www.jeffco.us/3327/Trail-Stewardship-Team",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.jeffco.us/3327/Trail-Stewardship-Team"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "You must carry your own gear and tools to the job site. You can miss no more than three days. You must be on time at Jeffco Parks & Open Space headquarters in Golden each workday. The page does not state a county residency rule.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "id": "goodwill-north-georgia-youth-employment-services",
   "name": "Youth Employment Services (Y.E.S.)",
   "org": "Goodwill of North Georgia",
@@ -34607,7 +34965,7 @@
    "https://www.kupuhawaii.org/hawaii-youth-conservation-corps-summer-program",
    "https://labor.hawaii.gov/wsd/child-labor/"
   ],
-  "notes": "Among teens, only 17 year olds qualify. Jobs are on Hawaii Island, Kauai, Maui, Molokai and Oahu. The older HYCC Summer program (17 and up) is paused. Kupu also runs the Conservation Leadership Development Program. Hawaii requires a child labor certificate (work permit) for working minors under 18. It is free. It is a Certificate of Employment for 14 and 15, and a Certificate of Age for 16 and 17.",
+  "notes": "Most positions take ages 17 to 38 for the whole term. Jobs are on Hawaii Island, Kauai, Maui, Molokai and Oahu. The older HYCC Summer program (17 and up) is paused. Kupu also runs the Conservation Leadership Development Program. Hawaii requires a child labor certificate (work permit) for working minors under 18. It is free. It is a Certificate of Employment for 14 and 15, and a Certificate of Age for 16 and 17.",
   "regions": [
    "hawaii"
   ],
@@ -40263,7 +40621,7 @@
   "season": "summer",
   "duration": "2026: June 8 to July 17, Monday to Friday 8:30 a.m. to 4 p.m., plus August to April",
   "status": "opens-soon",
-  "deadline_text": "2027 application opens Nov 15, 2026. The page lists a Feb 1 deadline (printed as 2026) under its 2027 heading. Confirm the 2027 deadline.",
+  "deadline_text": "2027 application opens Nov 15, 2026. The page prints a Feb 1, 2026 at 11:59 pm CST deadline, which appears to belong to the earlier cycle. No 2027 deadline is posted yet.",
   "how_to_apply": "Fill out the online STAHR form. Send a transcript with unweighted GPA. Send 1 professional recommendation through the online reference form (letters are not accepted). Questions: stahr@umkc.edu, 816-235-6169.",
   "url": "https://info.umkc.edu/stahr/scholars/high-school/",
   "sources_fetched": [
@@ -40706,7 +41064,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-10",
   "priority": 1,
-  "notes": "Dates may change, says the timeline page. Final auditions are held in person at Northern Kentucky University. Some are online. Email gsainfo@kentuckyperformingarts.org with questions. Or call 502-566-5192.",
+  "notes": "Dates may change, says the timeline page. Final auditions are held in person at Northern Kentucky University. Some are online. Email gsainfo@kentuckyperformingarts.org with questions. Or call 502-566-5192. The $35 or $50 application fee and the free or reduced lunch fee waiver are not on the GSA pages checked; confirm the fee with the GSA team before paying.",
   "verified_on_label": "Oct 10, 2026"
  },
  {
@@ -47969,7 +48327,7 @@
    "food-hospitality"
   ],
   "what_you_do": "Day camps from 9 am to 3 pm on trades, health, engineering, culinary and arts topics, with field trips. Students try hands-on career skills at the college.",
-  "who_can_apply": "Students in grades 3 to 12. Each camp lists its own grades, based on grade level in fall 2026.",
+  "who_can_apply": "Students in grades 3 to 12. Each camp lists its own grades, based on grade level in fall 2027.",
   "paid_type": "fee-based",
   "season": "summer",
   "status": "opens-soon",
@@ -47982,7 +48340,7 @@
    "https://madisoncollege.edu/academics/youth-programs/madison-camps",
    "https://madisoncollege.edu/academics/youth-programs"
   ],
-  "notes": "Camps on this page are at the Madison campuses. The college also lists camps at Fort Atkinson, Portage, Reedsburg and Watertown on a separate regional page.",
+  "notes": "The camps on this page are at the Madison campuses. The college lists camps at Fort Atkinson, Portage, Reedsburg and Watertown on a separate page.",
   "verified_on_label": "Oct 9, 2026"
  },
  {
@@ -52205,6 +52563,47 @@
  },
  {
   "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "deadline_iso": null,
+  "id": "mesa-fire-medical-cadets-east-valley",
+  "name": "East Valley Fire Cadet Program",
+  "org": "Mesa Fire and Medical Department",
+  "regions": [
+   "arizona"
+  ],
+  "city": "Mesa, AZ",
+  "type": "leadership",
+  "fields": [
+   "health",
+   "law-government",
+   "any"
+  ],
+  "what_you_do": "Learn basic firefighting skills, CPR and first aid. Practice climbing ladders and working hose lines. Build teamwork and leadership skills.",
+  "min_age": 15,
+  "max_age": 18,
+  "who_can_apply": "Ages 15 to 18, and you must be in school. Keep a C average. You need medical clearance before starting.",
+  "paid_type": "not-stated",
+  "pay_detail": "Cost is not stated on the program page.",
+  "season": "school-year",
+  "duration": "Not stated on the program page. Most meetings are held at the Public Safety Training Facility, 3260 North 40th Street, Mesa.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Sign-up is once a year in August. The 2026-2027 sign-up is closed. The page says to check back on August 1, 2027.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Sign up during the August window on the program page. For questions, contact Program Coordinator Christine Mendoza. The page shows 480-644-5047 and 480-644-3883, so confirm before calling.",
+  "needs_work_permit": null,
+  "url": "https://www.mesaaz.gov/Public-Safety/Mesa-Fire-Medical/Community-Outreach/ProgramsClasses/Youth-Programs/Fire-Medical-Cadets",
+  "sources_fetched": [
+   "https://www.mesaaz.gov/Public-Safety/Mesa-Fire-Medical/Community-Outreach/ProgramsClasses/Youth-Programs",
+   "https://www.mesaaz.gov/Public-Safety/Mesa-Fire-Medical/Community-Outreach/ProgramsClasses/Youth-Programs/Fire-Medical-Cadets"
+  ],
+  "priority": 2,
+  "notes": "The work is hard on the body. Cadets lift, pull or push up to 75 lbs. Community service is strongly encouraged but not required.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "grades": null,
   "opens_iso": null,
   "deadline_iso": null,
   "apply_url": null,
@@ -52242,6 +52641,45 @@
    "https://www.mesaaz.gov/files/assets/public/v/1/activities-culture/prcf/volunteers-and-interns/tlt-faq-2026.pdf"
   ],
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "deadline_iso": null,
+  "id": "mesa-police-cadet-post-2055",
+  "name": "Mesa Police Cadet Post 2055",
+  "org": "Mesa Police Department",
+  "regions": [
+   "arizona"
+  ],
+  "city": "Mesa, AZ",
+  "type": "leadership",
+  "fields": [
+   "law-government",
+   "any"
+  ],
+  "what_you_do": "Go to weekly meetings with hands-on police training. Learn about traffic stops and how police investigate. Do community service.",
+  "min_age": 14,
+  "max_age": 19,
+  "who_can_apply": "Ages 14 to 19, and you must have finished 8th grade. Stay in school until you graduate. Keep a 2.0 GPA or higher. No serious police record.",
+  "paid_type": "not-stated",
+  "pay_detail": "Pay is not stated on the program page. No fee is listed.",
+  "season": "year-round",
+  "duration": "Weekly meetings on Thursday nights",
+  "status": "unconfirmed",
+  "deadline_text": "The post recruits twice a year. The program page says the next recruitment window is October 2025.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the online interest form on the Mesa cadet page. A cadet advisor then contacts you. For help, call 480-644-4869 or email PDCadets@mesaaz.gov.",
+  "needs_work_permit": null,
+  "url": "https://www.mesaaz.gov/Public-Safety/Mesa-Police/Community/Police-Cadets",
+  "priority": 2,
+  "notes": "Members can stay in the Post until they turn 21. Cadets also do community service. Ask the post for the next recruiting date.",
+  "sources_fetched": [
+   "https://www.mesaaz.gov/Public-Safety/Mesa-Police/Community/Police-Cadets"
+  ],
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "id": "mfrl-teen-library-volunteer",
@@ -52445,6 +52883,46 @@
    "https://science.cranbrook.edu/support/volunteer"
   ],
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "michigan-dearborn-public-library-teen-volunteer",
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "grades": null,
+  "min_age": 13,
+  "max_age": null,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "duration": null,
+  "name": "Teen Volunteer at Dearborn Public Library",
+  "org": "Dearborn Public Library",
+  "regions": [
+   "michigan"
+  ],
+  "city": "Dearborn, MI",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "social-impact"
+  ],
+  "what_you_do": "Teens help at the Dearborn Public Library. It takes teen applications now.",
+  "who_can_apply": "Students who are at least 13 years old and enrolled in a Dearborn school. Volunteer spots are limited.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role.",
+  "season": "year-round",
+  "status": "rolling",
+  "deadline_text": "No deadline is listed. The program page says the library is only taking teen volunteer applications at this time.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Watch the orientation video. Then print the form and bring it to any Dearborn library.",
+  "url": "https://dearbornlibrary.org/volunteer/",
+  "priority": 2,
+  "notes": "The library does not take court-ordered service. It cannot take all requests, so spots are few.",
+  "sources_fetched": [
+   "https://dearbornlibrary.org/volunteer/"
+  ],
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "id": "michigan-deca-state-association",
@@ -53014,6 +53492,46 @@
   "verified_on_label": "Oct 10, 2026"
  },
  {
+  "id": "michigan-forgotten-harvest-volunteer",
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "grades": null,
+  "min_age": 10,
+  "max_age": null,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "duration": "Shifts are 9 am to 12 pm or 1 pm to 4 pm, Monday through Saturday",
+  "name": "Forgotten Harvest Volunteer",
+  "org": "Forgotten Harvest",
+  "regions": [
+   "michigan"
+  ],
+  "city": "Metro Detroit, MI",
+  "type": "volunteer",
+  "fields": [
+   "food-hospitality",
+   "social-impact"
+  ],
+  "what_you_do": "Pack emergency food boxes and sort fresh food at the distribution center. The food goes to people in Wayne, Oakland and Macomb counties.",
+  "who_can_apply": "Volunteers in the distribution center must be at least 10. Volunteers under 18 must come with a parent or guardian. Other roles outside the warehouse need volunteers who are at least 14.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role. School service hours can be signed off.",
+  "season": "year-round",
+  "status": "rolling",
+  "deadline_text": "No deadline is listed. Volunteers sign up online ahead of time for a shift.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Register online for a shift before you come. You get an email with the place, parking and dress code. Wear long pants and closed-toe shoes.",
+  "url": "https://www.forgottenharvest.org/volunteer-3/",
+  "priority": 1,
+  "notes": "You must stay for the whole shift. Bring school service paperwork so hours can be signed. The kids program is on hold. Some roles, like Harvest Heroes drivers and site monitors, are 18 and older.",
+  "sources_fetched": [
+   "https://www.forgottenharvest.org/volunteer-3/"
+  ],
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "grades": "Finished at least 9th grade",
   "opens_iso": null,
   "deadline_iso": null,
@@ -53051,6 +53569,126 @@
    "https://henryford.com/Locations/Jackson-Hospital/Volunteers/Summer-Youth-Program"
   ],
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "michigan-henry-ford-providence-novi-summer-teen-volunteer",
+  "opens_iso": "2027-03-01",
+  "deadline_iso": "2027-03-15",
+  "apply_url": null,
+  "grades": null,
+  "min_age": 16,
+  "max_age": 17,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "duration": "9 weeks, one 4-hour shift per week",
+  "name": "Summer Teen Volunteering at Henry Ford Providence Novi",
+  "org": "Henry Ford Providence Novi Hospital",
+  "regions": [
+   "michigan"
+  ],
+  "city": "Novi, MI",
+  "what_you_do": "Teens give 4 hours a week at the hospital. You work the same day, time and department each week.",
+  "who_can_apply": "High school students and 2027 high school graduates who are ages 16 to 17. You must be 16 by June 16, 2027. You must be free for 9 or more weeks in June, July and August 2027.",
+  "status": "opens-soon",
+  "deadline_text": "Apply from March 1 to March 15, 2027 for summer 2027.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Send the information form from March 1 to March 15, 2027. Go to an information session. Pass a background check. Do a health screen. Finish a training packet. Letters of recommendation are optional.",
+  "url": "https://www.henryford.com/locations/providence-novi-hospital/volunteer/summer-teen-volunteering-program",
+  "notes": "Only a limited number of teens are accepted. Others go on a wait list. Selected candidates need a TB test and TDap and MMR shots. The hospital covers the cost.",
+  "type": "volunteer",
+  "fields": [
+   "health",
+   "social-impact"
+  ],
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role.",
+  "season": "summer",
+  "priority": 1,
+  "sources_fetched": [
+   "https://www.henryford.com/locations/providence-novi-hospital/volunteer/summer-teen-volunteering-program"
+  ],
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "michigan-henry-ford-providence-southfield-summer-teen-volunteer",
+  "opens_iso": "2027-03-01",
+  "deadline_iso": "2027-03-15",
+  "apply_url": null,
+  "grades": null,
+  "min_age": 16,
+  "max_age": 17,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "duration": "9 weeks, one 4-hour shift per week",
+  "name": "Summer Teen Volunteering at Henry Ford Providence Southfield",
+  "org": "Henry Ford Providence Southfield Hospital",
+  "regions": [
+   "michigan"
+  ],
+  "city": "Southfield, MI",
+  "what_you_do": "Teens volunteer for one 4-hour shift a week at the hospital. The day, time and department stay the same each week.",
+  "who_can_apply": "High school students and 2027 high school graduates who are ages 16 to 17. You must be 16 by June 16, 2027. You must be free for 9 or more weeks in June, July and August 2027.",
+  "status": "opens-soon",
+  "deadline_text": "Apply from March 1 to March 15, 2027 for summer 2027.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Send the information form from March 1 to March 15, 2027. Go to an information session. Pass a background check. Do a health screen. Finish a training packet. Letters of recommendation are optional.",
+  "url": "https://www.henryford.com/locations/providence-southfield-hospital/volunteer/summer-teen-volunteering-program",
+  "notes": "Only a limited number of teens are accepted. Others go on a wait list. Selected candidates need a TB test and TDap and MMR shots. The hospital covers the cost. In fall, winter and early spring, on-site spots are only for teens who already volunteer.",
+  "type": "volunteer",
+  "fields": [
+   "health",
+   "social-impact"
+  ],
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role.",
+  "season": "summer",
+  "priority": 1,
+  "sources_fetched": [
+   "https://www.henryford.com/locations/providence-southfield-hospital/volunteer/summer-teen-volunteering-program"
+  ],
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "michigan-henry-ford-west-bloomfield-summer-high-school-volunteer",
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "grades": null,
+  "min_age": 16,
+  "max_age": 17,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "duration": "10 weeks in 2026, one 4-hour shift per week",
+  "name": "Summer High School Volunteering at Henry Ford West Bloomfield",
+  "org": "Henry Ford West Bloomfield Hospital",
+  "regions": [
+   "michigan"
+  ],
+  "city": "West Bloomfield, MI",
+  "what_you_do": "Teens help at the hospital in a weekly 4-hour shift. You keep the same day, time and department all summer.",
+  "who_can_apply": "High school students and graduates who are ages 16 to 17. In 2026, you had to be 16 by June 17, 2026 and free for 10 or more weeks in the summer.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The 2026 window was March 1 to March 15, 2026, and it is closed. Dates for summer 2027 are not posted on the program page.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Watch the program page for next year. In 2026 you sent an information form between March 1 and March 15. Candidates went to an information session. They passed a background check and a health screen. They also finished a training packet.",
+  "url": "https://www.henryford.com/locations/west-bloomfield/volunteer/summer-teen-volunteering-program",
+  "notes": "The page says only 30 candidates will be picked for the summer program. Letters of recommendation are optional, and the page says they can help a lot. Chosen candidates need a TB test and TDap and MMR shots. The hospital covers the cost.",
+  "type": "volunteer",
+  "fields": [
+   "health",
+   "social-impact"
+  ],
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role.",
+  "season": "summer",
+  "priority": 2,
+  "sources_fetched": [
+   "https://www.henryford.com/locations/west-bloomfield/volunteer/summer-teen-volunteering-program"
+  ],
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "grades": "Middle school, high school and college students",
@@ -53335,6 +53973,46 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "michigan-oakland-county-parks-teen-volunteer",
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": "https://www.volgistics.com/appform/718922892",
+  "grades": null,
+  "min_age": 14,
+  "max_age": 17,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "duration": null,
+  "name": "Oakland County Parks Teen Volunteer",
+  "org": "Oakland County Parks and Recreation",
+  "regions": [
+   "michigan"
+  ],
+  "city": "Waterford, MI",
+  "type": "volunteer",
+  "fields": [
+   "environment",
+   "social-impact"
+  ],
+  "what_you_do": "Teens volunteer in the Oakland County parks. You pick the park site and the kinds of work you like when you apply.",
+  "who_can_apply": "Teens ages 14 to 17. A parent or guardian fills out the online application for the teen.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role.",
+  "season": "year-round",
+  "status": "rolling",
+  "deadline_text": "No deadline is listed. The county takes applications only for current openings posted on Idealist.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "A parent or guardian completes the teen online application. Choose your site and your areas of interest. Open roles are posted on Idealist.",
+  "url": "https://www.oaklandcountymi.gov/community/oakland-county-parks/get-involved/volunteer",
+  "priority": 2,
+  "notes": "Court-ordered community service is not offered. Groups of 10 or more use a separate group form. Adults 18 and older use a different application.",
+  "sources_fetched": [
+   "https://www.oaklandcountymi.gov/community/oakland-county-parks/get-involved/volunteer"
+  ],
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "id": "michigan-wing-civil-air-patrol-cadets",
   "name": "Civil Air Patrol cadets, Michigan Wing",
   "org": "Civil Air Patrol, Michigan Wing",
@@ -53446,7 +54124,7 @@
   "duration": "Fall district conference, then a Lansing conference of about four days",
   "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "2026-27: February Lansing conference Feb 18 to 21, 2027, regular registration Nov 10 to Dec 27, late Dec 28 to Jan 13. April Lansing conference Apr 22 to 25, 2027, regular registration Nov 10 to Feb 28, late Mar 1 to 17. Fall district conferences are scheduled Oct 2 to Nov 9, 2026 (registration closes two weeks before each), so some may already be closed.",
+  "deadline_text": "Fall district conferences run Oct 2 to Nov 9, 2026. Sign-up closes about two weeks before each one. District 6 (Detroit, Nov 9) closes Oct 26, 2026. Sign-up for the other fall districts has ended. Lansing sign-up opens Nov 10, 2026. February Lansing conference (Feb 18 to 21, 2027): regular sign-up closes Dec 27, 2026, late sign-up Dec 28 to Jan 13 with a $25 fee. April Lansing conference (Apr 22 to 25, 2027): regular sign-up closes Feb 28, 2027, late sign-up Mar 1 to 17 with a $25 fee.",
   "deadline_iso": "2026-12-27",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Check the map on the YMCA page to see if your school or YMCA has a delegation. If not, use the Contact us page to start one. Then register for the conferences your delegation attends.",
@@ -53460,7 +54138,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "priority": 2,
-  "notes": "Not a job. The deadline_iso is the end of regular registration for the February Lansing conference. Fall conference sites include Marquette, Grayling, Allendale, Saginaw, Kalamazoo and Detroit. Lansing conference registration does not open until November 10, 2026, so as of October 10, 2026 the February and April Lansing windows are not yet open.",
+  "notes": "Not a job. The deadline date is the end of regular sign-up for the February Lansing conference. Lansing sign-up opens Nov 10, 2026. Fall conference sites include Marquette, Grayling, Allendale, Saginaw, Kalamazoo and Detroit. As of Oct 13, 2026, only the District 6 fall conference in Detroit is still open. The February and April Lansing windows are not open yet.",
   "verified_on_label": "Oct 9, 2026"
  },
  {
@@ -55433,6 +56111,123 @@
   "verified_on_label": "Oct 7, 2026"
  },
  {
+  "id": "murfreesboro-ascension-saint-thomas-rutherford-junior-volunteer",
+  "name": "Junior Volunteer Summer Program at Ascension Saint Thomas Rutherford",
+  "org": "Ascension Saint Thomas Rutherford",
+  "regions": [
+   "tennessee"
+  ],
+  "city": "Murfreesboro, TN",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Volunteer in the hospital for three weeks in the summer, from 9:00 am to 11:00 am.",
+  "min_age": 15,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Students ages 15 to 18 who are still in high school.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "summer",
+  "duration": "3 weeks, 9:00 am to 11:00 am",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The program page lists July 12 to July 30, 2027. It takes applications from January 1 until the program is full. It now says the application is closed because the program is full.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "The online application is closed because the program is full. The program page has a junior volunteer form you can download. For job shadowing, email aststudentservices@ascension.org. For Rutherford volunteer questions, email bryan.lowe@ascension.org.",
+  "needs_work_permit": false,
+  "url": "https://healthcare.ascension.org/volunteer/tnnas-murfreesboro-tn-ascension-saint-thomas-rutherford-volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://healthcare.ascension.org/volunteer/tnnas-murfreesboro-tn-ascension-saint-thomas-rutherford-volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "Adult volunteers must be 18 or older, but this junior program is for ages 15 to 18. Applications open January 1 and close when the program is full.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "murfreesboro-mtsu-csi-forensic-science-camp",
+  "name": "CSI:MTSU Forensic Science Camp",
+  "org": "Middle Tennessee State University, Forensic Institute for Research and Education",
+  "regions": [
+   "tennessee"
+  ],
+  "city": "Murfreesboro, TN",
+  "type": "pre-college",
+  "fields": [
+   "science"
+  ],
+  "what_you_do": "Learn forensic science for four days. You hear from working professionals, collect evidence, and solve a mock crime scene as a team. A panel of judges critiques your team's conclusions.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Rising 9th to 12th grade",
+  "who_can_apply": "Students going into 9th through 12th grade.",
+  "paid_type": "fee-based",
+  "pay_detail": "$300 per student. This covers activities, labs, lunch and snacks each day, and a t-shirt.",
+  "season": "summer",
+  "duration": "4 days (day camp)",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "Not stated on the program page. Email the program for dates.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "The program page does not describe how to register. Email fire@mtsu.edu to ask about dates and sign-up.",
+  "needs_work_permit": false,
+  "url": "https://fire.mtsu.edu/csi-camp/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://fire.mtsu.edu/csi-camp/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "This is a day camp, so it does not include housing. The page also says a pre-law camp is being explored but is not confirmed.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "murfreesboro-rutherford-county-library-teen-volunteers",
+  "name": "Teen Volunteers (Rutherford County Library System)",
+  "org": "Rutherford County Library System, Linebaugh and Smyrna libraries",
+  "regions": [
+   "tennessee"
+  ],
+  "city": "Murfreesboro, TN",
+  "type": "volunteer",
+  "fields": [
+   "education"
+  ],
+  "what_you_do": "Volunteer at the library for a school semester. Tasks include shelving, shelf reading and tidying items.",
+  "min_age": 13,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Teens ages 13 to 18 can apply to volunteer at the Smyrna Public Library. Linebaugh Library in Murfreesboro also takes teen volunteers by semester. The page lists no age range for Linebaugh.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "school-year",
+  "duration": "One semester. The Smyrna fall season runs Aug 17 to Nov 21. The page does not state a year.",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Linebaugh says Fall 2026 volunteer applications are open. Smyrna says its applications are open. No closing date is stated on the program page.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the online application for the branch you want. At Smyrna, teens should fill out the form themselves, not a parent. Smyrna questions go to smyrnays@rclstn.org. Linebaugh questions go to kturner@rclstn.org or tdavis@rclstn.org.",
+  "needs_work_permit": false,
+  "url": "https://rclstn.org/volunteer/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://rclstn.org/volunteer/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "Other library branches are not taking volunteers right now, per the page. Volunteers age 18 and up use a different form.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "grades": null,
   "opens_iso": null,
   "apply_url": null,
@@ -56354,6 +57149,45 @@
   "verified_on_label": "Oct 10, 2026"
  },
  {
+  "id": "nashville-friends-of-warner-parks-volunteer",
+  "name": "Friends of Warner Parks Volunteering",
+  "org": "Friends of Warner Parks",
+  "regions": [
+   "tennessee"
+  ],
+  "city": "Nashville, TN",
+  "type": "volunteer",
+  "fields": [
+   "environment"
+  ],
+  "what_you_do": "Help care for Warner Parks. Jobs include picking up litter, pulling invasive plants, trail work and stream clean-ups. School groups can also sign up for volunteer days.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Litter pick-up is open to all ages. Trail work, invasive plant removal and stream clean-up are for ages 18 and up, or ages 13 and up with an adult. School groups in grades K to 12 can volunteer with two or more chaperones.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Not stated on the program page.",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline. Upcoming events are listed on the page. Examples are Oct 17, 2026 and Nov 7, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Create a volunteer profile in the Friends of Warner Parks volunteer database. Fill out the information form and sign the waiver.",
+  "needs_work_permit": false,
+  "url": "https://warnerparks.org/support/volunteering/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://warnerparks.org/support/volunteering/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "Under 18 means you need an adult for most work. The Ambassador program is 18 and up. The page does not give an age rule for the seasonal SWEAT trail crew. Email the volunteer coordinator listed on the page.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "id": "nashville-frist-teen-arts-action-group",
   "name": "Teen Arts Action Group (TAAG)",
   "org": "Frist Art Museum",
@@ -56392,6 +57226,86 @@
   "priority": 2,
   "notes": "The Frist also runs free Teen ARTlabs (art sessions with professional artists). Ages and dates for those are not listed on the Teens page; see the museum's teen events calendar.",
   "verified_on_label": "Oct 10, 2026"
+ },
+ {
+  "id": "nashville-genesys-works-paid-internship",
+  "name": "Genesys Works Nashville",
+  "org": "Genesys Works",
+  "regions": [
+   "tennessee"
+  ],
+  "city": "Nashville, TN",
+  "type": "internship",
+  "fields": [
+   "tech-cs",
+   "business-finance"
+  ],
+  "what_you_do": "Take eight weeks of business and technology training. Then you are matched to a paid, year-long internship at a partner company.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Rising high school senior",
+  "who_can_apply": "Rising high school seniors. Genesys Works partners with specific schools. Nashville is working with Metro Nashville Public Schools for its first class.",
+  "paid_type": "paid",
+  "pay_detail": "Paid internship. The pay rate is not stated on the program page.",
+  "season": "year-round",
+  "duration": "8 weeks of training, then a year-long internship",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "Application dates are not stated on the program page. The Nashville page says the first class launches in 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the application, then interview, then confirm you accept. Click Apply Now on the Genesys Works application page and pick the Nashville location. Email nashville@genesysworks.org with questions.",
+  "needs_work_permit": null,
+  "url": "https://genesysworks.org/locations/nashville/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://genesysworks.org/locations/nashville/",
+   "https://genesysworks.org/for-students-and-families/application-process/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "This program is new in Nashville. Ask your school counselor if your school is a partner. The page does not say if a work permit is needed for teens under 18.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "nashville-hands-on-nashville-youth-and-teen-volunteering",
+  "name": "Hands On Nashville Youth and Teen Volunteering",
+  "org": "Hands On Nashville (United Way of Greater Nashville)",
+  "regions": [
+   "tennessee"
+  ],
+  "city": "Nashville, TN",
+  "type": "volunteer",
+  "fields": [
+   "social-impact"
+  ],
+  "what_you_do": "Sign up for volunteer projects around Nashville through a Hands On account. Your hours are tracked, and you can use them for school service credit.",
+  "min_age": 13,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "People 13 and older can have a Hands On account. Each project has its own age rule, so check the listing. Kids under 13 volunteer through the family page.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Varies by project",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline. Pick projects as they are posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Make a Hands On account and sign up for a project. A parent or guardian must sign the Hands On waiver. Bring the waiver to the project and check in with the Volunteer Leader.",
+  "needs_work_permit": false,
+  "url": "https://handson.unitedwaygreaternashville.org/youth_teens",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://handson.unitedwaygreaternashville.org/youth_teens"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "For school credit, bring your school's form. Ask the volunteer coordinator to check your hours.",
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "grades": null,
@@ -56591,6 +57505,46 @@
   "verified_on_label": "Oct 13, 2026"
  },
  {
+  "id": "nashville-shores-teen-seasonal-jobs",
+  "name": "Seasonal Jobs at Nashville Shores",
+  "org": "Nashville Shores Lakeside Resort",
+  "regions": [
+   "tennessee"
+  ],
+  "city": "Nashville, TN",
+  "type": "paid-youth-program",
+  "fields": [
+   "food-hospitality",
+   "sports"
+  ],
+  "what_you_do": "Work at a lakeside water park. Jobs include lifeguard, food and drinks, retail and rentals, admissions, and park services. The resort pays for your lifeguard training.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Hiring starts at age 15 for most jobs. Many jobs need you to be 16 or older. Only a limited number of jobs are open to 15-year-olds.",
+  "paid_type": "paid",
+  "pay_detail": "Pay rate not stated on the program page. The page says you get daily pay.",
+  "season": "summer",
+  "duration": "Not stated on the program page",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline stated on the program page. Season dates and job fair dates are not listed.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use the online careers portal. Send one application only, for the department you want most. A hiring manager will contact you if your application fits, so check your contact info.",
+  "needs_work_permit": null,
+  "url": "https://nashvilleshores.com/jobs/",
+  "apply_url": "https://recruitingbypaycor.com/career/CareerHome.action?clientId=8a7883d084f5018f018517cf2b9812ad",
+  "sources_fetched": [
+   "https://nashvilleshores.com/jobs/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "Do not apply to more than one department. Do not call to ask about status. The page does not say if a work permit is needed for teens under 18, so ask the employer.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "grades": "Rising 9 to 12",
   "apply_url": "https://tnstateu.az1.qualtrics.com/jfe/form/SV_6yhYXnkrsI0fUjA",
   "deadline_iso": null,
@@ -56707,6 +57661,46 @@
   "priority": 3,
   "notes": "It costs money. The page offers aid for families with adjusted gross income of $105,000 or less or severe hardship. It offers a payment plan for everyone. The page mixes 2026 deadlines with 2027 session dates. Confirm both with precollege@vanderbilt.edu.",
   "verified_on_label": "Oct 10, 2026"
+ },
+ {
+  "id": "nashville-vumc-observational-experience-high-school",
+  "name": "Vanderbilt Observational Experience (high school)",
+  "org": "Vanderbilt University Medical Center",
+  "regions": [
+   "tennessee"
+  ],
+  "city": "Nashville, TN",
+  "type": "shadowing",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Watch health care workers do their jobs at Vanderbilt University Medical Center. You see what each job is like. You do not treat patients.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "High school students who are at least 16. Your school must have an affiliation agreement with VUMC. Homeschool students need an agreement with their homeschool group.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. There is no application fee.",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Apply at least 30 days before the day you want to observe. Teens ages 16 and 17 must apply at least two weeks before.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the online application in one sitting. It does not save. Upload your health insurance card, a health form, a safety quiz certificate and signed forms.",
+  "needs_work_permit": false,
+  "url": "https://www.vumc.org/observational-services/high-school-students",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.vumc.org/observational-services/high-school-students",
+   "https://www.vumc.org/observational-services/application-process"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "Minors cannot observe in some places. These are operating rooms, emergency departments, pediatric intensive care units and the Vanderbilt Psychiatric Hospital. If your school has no agreement with VUMC, you are not eligible. Email VOE@VUMC.org with questions.",
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "id": "nashville-zoo-zooteen-volunteers",
@@ -58008,7 +59002,7 @@
   "paid_type": "fee-based",
   "season": "summer",
   "status": "opens-soon",
-  "deadline_text": "Summer 2027 details are not posted yet. The page says the application will open December 6 (year not stated; (year inferred from the next cycle)) and stay open until all spots are filled. Admissions decisions are made monthly.",
+  "deadline_text": "Summer 2027 details are not posted yet. The page says the application will open December 6 and stay open until all spots are filled. The page does not state the year; 2026 is inferred from the next cycle. Admissions decisions are made monthly.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "A parent or guardian with custody fills out part 1 of the application. The student writes the short answers. Admission is rolling. Students can ask for money help after they are accepted.",
@@ -59785,13 +60779,13 @@
    "tech-cs"
   ],
   "what_you_do": "Free college prep all year. You get SAT/ACT prep, tutoring, college tours and STEM workshops. A six-week Summer Institute on campus is required. It has college-level classes.",
-  "who_can_apply": "Students who finished 8th grade and are in 9th, 10th or 11th grade. You must live in and go to school in New Brunswick, Perth Amboy or Plainfield. You must be first in your family to go to college, or low income. You must be a US citizen or permanent resident. You need at least a C average and a plan to go to college. You must send an application and a personal statement, and do an interview.",
+  "who_can_apply": "Students who finished 8th grade and are in 9th, 10th or 11th grade. You must live in and go to school in New Brunswick, Perth Amboy or Plainfield. You must be first in your family to go to college, or low income. You must be a US citizen or permanent resident. You need at least a C average and need academic support. You must send an application and a personal statement, and do an interview.",
   "paid_type": "unpaid",
   "pay_detail": "Free program. The program page does not say if students get paid.",
   "season": "year-round",
   "duration": "Year-round, with a six-week Summer Institute",
   "status": "open-now",
-  "deadline_text": "The page says online applications open in mid-September and close in mid-December each year. A 2027 application link is posted.",
+  "deadline_text": "The page says online applications open in mid-September and close in mid-December each year. It has a heading for the Upward Bound Math-Science 2027 Application but no direct application link.",
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Email upwardbound@echo.rutgers.edu or call (848) 445-3090 to ask how to apply. The page says you fill out an application and a personal statement, and you have an interview. It shows no link to apply. Virtual open houses are held in fall in English and Spanish.",
   "needs_work_permit": false,
@@ -60314,14 +61308,14 @@
   ],
   "city": "Pennington and Trenton, NJ",
   "type": "school-pathway",
-  "what_you_do": "Spend half of each school day in a hands-on shop program in junior and senior year, such as carpentry, electrician, welding, HVAC, auto repair, cosmetology, culinary arts or game programming.",
-  "who_can_apply": "10th graders. Applicants are ranked by an acceptance criteria score. The page lists district information sessions, which are not required for admission. Your home district provides transportation.",
+  "what_you_do": "In junior and senior year, spend half of each school day in a hands-on shop. Choices include carpentry, electrical, welding, HVAC, auto repair, hair and nails, cooking or game design.",
+  "who_can_apply": "10th graders. The page gives no acceptance criteria for shared-time programs and refers to a separate admissions procedures page. The page says no RSVP is required for the information sessions. Your home district provides transportation.",
   "paid_type": "unpaid-credit",
   "season": "school-year",
   "status": "open-now",
   "deadline_text": "The 2027-2028 application is open now. No closing date is posted on the page. Info sessions: Oct 29, Nov 19, Dec 9 and Dec 16, 2026 and Jan 11, 2027.",
   "deadline_confidence": "unknown",
-  "how_to_apply": "Create an account in the online application portal and fill in the application. Your school counselor then uploads transcripts and attendance. Email admissions@mcts.edu with questions.",
+  "how_to_apply": "Make an account in the online application portal and fill in the form. Your school counselor then sends your grades and attendance. Email admissions@mcts.edu with questions.",
   "url": "https://www.mcts.edu/fs/pages/382",
   "sources_fetched": [
    "https://www.mcts.edu/fs/pages/382",
@@ -60356,8 +61350,8 @@
   ],
   "city": "Bridgewater, NJ",
   "type": "school-pathway",
-  "what_you_do": "Study a career and technical program in high school, such as carpentry, plumbing, welding, culinary arts, computer science, biomedical, finance, theater or health medical sciences.",
-  "who_can_apply": "Students applying for the 2027-28 school year. The district serves students from Somerset and neighboring counties. Some programs (biomedical, finance, HVACR, global business) are shared-time only.",
+  "what_you_do": "Study a career and tech program in high school. Choices include carpentry, plumbing, welding, cooking, computers, biomed, money, theater or health care.",
+  "who_can_apply": "Students applying for the 2027-28 school year. Some programs (biomedical, finance, HVACR, global business) are shared-time only.",
   "paid_type": "unpaid-credit",
   "season": "school-year",
   "status": "open-now",
@@ -60370,7 +61364,7 @@
    "https://www.scvths.org/community/cooperative-education",
    "https://www.scvths.org/"
   ],
-  "notes": "Health and medical sciences academy has its own admission page and phone, 908-526-8900 ext. 7148. Enrolled students can join a paid Cooperative Education job placement. That is not open to outside teens.",
+  "notes": "The health sciences academy has its own admission page and phone, 908-526-8900 ext. 7148. Enrolled students can join a paid co-op job. Outside teens cannot.",
   "verified_on_label": "Oct 10, 2026"
  },
  {
@@ -62424,14 +63418,14 @@
   "min_age": null,
   "max_age": null,
   "grades": "Grades 9 to 11 (12th graders cannot apply)",
-  "who_can_apply": "Students in grades 9 to 11 who start in Tier 1 (9th grade), Tier 2 (10th grade or Tier 1 done) or Tier 3 (11th grade or Tier 2 done). No age or borough rule is stated. You do not have to share immigration status for Tiers 1 to 3.",
+  "who_can_apply": "Students in grades 9 to 11 who start in Tier 1 (9th grade), Tier 2 (10th grade or Tier 1 done) or Tier 3 (11th grade or Tier 2 done). No age or borough rule is stated. The page says: Regardless of your immigration status, you are encouraged to apply to GAP.",
   "paid_type": "stipend",
   "pay_detail": "Tier 1 $600, Tier 2 $700, Tier 3 $800 as a one-time nontaxable reimbursement in November, plus a $75 perfect attendance bonus. Tier 4 (by invitation after Tier 3) is a part-time staff job at $17 per hour. No fee to join.",
   "season": "year-round",
   "duration": "9 months, March to November 2027 (about 4 to 6 hours a week in spring and fall, 20 to 25 hours a week in summer; about 190 to 220 hours total).",
   "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "The page gives no opening date for 2027 applications but has an Apply Now button. Submit your materials before Dec 4, 2026 to be invited to an interview. No final deadline is posted. Info session Sat Oct 17, 2026, 11 a.m. to 1 p.m., RSVP required.",
+  "deadline_text": "The page gives no opening date for 2027 applications. It asks visitors to sign up to be notified when applications open, and it shows an Apply Now button. Submit materials before Dec 4, 2026 to be invited to an interview. No final deadline is posted. Info session Sat Oct 17, 2026, 11 a.m. to 1 p.m., RSVP required.",
   "deadline_iso": "2026-12-04",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Apply online (an account lets you save your progress). You write short answers and give references, then join a group interview. Apprentices must reapply every year. Two references use a separate online reference form.",
@@ -62749,7 +63743,7 @@
   "min_age": null,
   "max_age": null,
   "grades": null,
-  "who_can_apply": "All ages can join. Teens under 16 must be with a parent or guardian the whole time, so teens 16 and up can volunteer on their own. Event volunteer roles are usually 18 and up.",
+  "who_can_apply": "Volunteers under 16 must be accompanied and supervised by a parent or guardian at all times. Event volunteer opportunities are typically open to volunteers ages 18 and older.",
   "paid_type": "unpaid",
   "pay_detail": "Unpaid volunteering.",
   "season": "summer",
@@ -62769,7 +63763,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "priority": 3,
-  "notes": "Coastal Cleanup is best suited for ages 10 and up. Tasks happen outdoors on uneven ground. Ask staff about accommodations.",
+  "notes": "The page lists no deadline and no 2027 dates. Most volunteer events run April to October.",
   "verified_on_label": "Oct 9, 2026"
  },
  {
@@ -66971,7 +67965,7 @@
   "paid_type": "unpaid",
   "season": "fall",
   "status": "open-now",
-  "deadline_text": "Fall 2026 one-day camps: Wilmington Oct. 13, Columbus Oct. 21, Findlay Nov. 3, COLT Lineman Training (Mount Gilead) Oct. 23, Meat Processing (Yorkshire) Oct. 27. Registration closes 10 days before each event, so the Columbus day closes about Oct. 11, 2026. So the last fall registration (Findlay, Nov. 3) closes about Oct 24, 2026.",
+  "deadline_text": "Fall 2026 one-day camps, per the flyer and ofbf.org: Wilmington Oct. 13, Columbus Oct. 21, COLT Lineman Training (Mount Gilead) Oct. 23, Meat Processing (Yorkshire) Oct. 27, Findlay Nov. 3. Registration closes 10 days before each event or when full. By that rule Wilmington (about Oct. 3) and Columbus (about Oct. 11) have already closed. Still open by that rule: COLT (about Oct. 13), Meat Processing (about Oct. 17) and Findlay (about Oct. 24, 2026). The page does not post close dates itself.",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Pick the camp on the ExploreAg page and fill out its registration form. For questions, use the Contact Us page at ofbf.org/contact/.",
   "url": "https://ofbf.org/community/youth-in-agriculture/exploreag/",
@@ -71502,10 +72496,10 @@
   ],
   "city": "Phoenix, AZ",
   "type": "paid-youth-program",
-  "what_you_do": "Finish a 30 hour skills academy. Then work a paid internship with a local employer or a group internship, with a mentor. Current listing: Junior Sports Leadership Specialist.",
+  "what_you_do": "First finish the 30 hour AZYF Academy for skills, mentors and career help. Then work a paid internship. Current listings are the AZPlays sports group internship with BGCAZ and Junior Sports Leadership Specialist.",
   "min_age": 14,
   "max_age": 21,
-  "who_can_apply": "Ages 14 to 21. Must be legally able to work in the U.S. You do not need to be a Club member.",
+  "who_can_apply": "Ages 14 to 21. Must be legally able to work in the U.S. A background check may be required. The page does not say whether Club membership is required; its application asks whether you are a BGCAZ member.",
   "paid_type": "paid",
   "pay_detail": "Paid internship. Rate not stated on the program pages.",
   "season": "year-round",
@@ -71721,6 +72715,46 @@
  },
  {
   "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "deadline_iso": null,
+  "id": "phoenix-police-cadet-program",
+  "name": "Police Cadet Program",
+  "org": "Phoenix Police Department",
+  "regions": [
+   "arizona"
+  ],
+  "city": "Phoenix, AZ",
+  "type": "leadership",
+  "fields": [
+   "law-government",
+   "any"
+  ],
+  "what_you_do": "Meet on Tuesdays at 5:00 PM. Cadets serve a three-month probation with community service.",
+  "min_age": 14,
+  "max_age": null,
+  "who_can_apply": "Age 14 and older, and you must have finished 8th grade. Stay in school until you graduate. Keep at least a C average. No serious police record.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Cadets are volunteers, not police employees.",
+  "season": "year-round",
+  "duration": "Weekly meetings every Tuesday at 5:00 PM",
+  "status": "unconfirmed",
+  "deadline_text": "Orientations are held twice a year, before the school year and after winter break. Specific dates are not stated on the program page.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Complete the Cadet Application Packet and bring it to testing night. Use the APPLY NOW link on the page. For recruitment, call 602-534-2677.",
+  "needs_work_permit": false,
+  "url": "https://joinphxpd.com/civilian/cadets/",
+  "sources_fetched": [
+   "https://www.phoenix.gov/administration/departments/police/community-engagement/youth-programs.html",
+   "https://joinphxpd.com/civilian/cadets/"
+  ],
+  "priority": 2,
+  "notes": "New cadets serve a three-month probation. During that time they must do 8 hours of community service each month. At 18, cadets can apply for non-sworn positions, such as Police Assistants.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "grades": null,
   "opens_iso": null,
   "deadline_iso": null,
   "apply_url": "https://phoenixpubliclibrary.org/teens/summer-teen-volunteers",
@@ -71796,6 +72830,86 @@
    "https://www.phoenix.gov/administration/departments/hr/careers/internships/phoenix-youth-reach-and-invest-in-summer-employment--r-i-s-e--.html"
   ],
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "deadline_iso": null,
+  "id": "phoenix-sedav-vaaki-museum-teen-volunteer",
+  "name": "Sedav Vaaki Museum Teen Volunteer",
+  "org": "S'edav Va'aki Museum (City of Phoenix)",
+  "regions": [
+   "arizona"
+  ],
+  "city": "Phoenix, AZ",
+  "type": "volunteer",
+  "fields": [
+   "arts-media",
+   "education",
+   "science"
+  ],
+  "what_you_do": "Greet museum guests at the front desk. Share facts about the Ancestral Sonoran Desert People. Help get supplies ready for events.",
+  "min_age": 14,
+  "max_age": 17,
+  "who_can_apply": "High school students ages 14 to 17.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Free museum entry and a store discount. The page says it counts for volunteer and internship graduation hours.",
+  "season": "school-year",
+  "duration": "Saturday mornings or afternoons, October to April. Minimum 3 to 4 hours a month.",
+  "status": "rolling",
+  "deadline_text": "Recruitment stays open until all positions are filled. Then a waitlist is created. Applications for the spring round closed January 10, 2026.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply with the online form the museum shares. Go to orientation and teen front desk training. Shadow a front desk volunteer for at least 4 shifts before working on your own.",
+  "needs_work_permit": false,
+  "url": "https://www.phoenix.gov/content/dam/phoenix/sedavvaaki/documents/support-us/2026-volunteer-role-descriptions/2026%20Teen%20Volunteer%20Job%20Description.pdf",
+  "sources_fetched": [
+   "https://www.phoenix.gov/content/dam/phoenix/sedavvaaki/documents/support-us/2026-volunteer-role-descriptions/2026%20Teen%20Volunteer%20Job%20Description.pdf",
+   "https://www.phoenix.gov/newsroom/sedav-vaaki-museum-news/don-t-miss-out--spring-applications-for-teen-volunteer-program-a.html"
+  ],
+  "priority": 2,
+  "notes": "Teen Leaders help train new teen volunteers and help develop new program materials. Ask the museum for the current application form.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "grades": null,
+  "apply_url": "https://www.stmarysfb.org/volunteer",
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "deadline_iso": null,
+  "id": "phoenix-st-marys-food-bank-volunteer",
+  "name": "St. Mary's Food Bank Volunteering",
+  "org": "St. Mary's Food Bank",
+  "regions": [
+   "arizona"
+  ],
+  "city": "Phoenix, AZ",
+  "type": "volunteer",
+  "fields": [
+   "social-impact",
+   "food-hospitality"
+  ],
+  "what_you_do": "Volunteer a shift at the food bank. Pick a site and activity in the online portal. Families can sign up together.",
+  "min_age": 12,
+  "max_age": null,
+  "who_can_apply": "Age 12 and older with an adult. Age 16 and older can volunteer without an adult.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "Usually 2 to 3 hours at the Phoenix and Surprise sites. Mobile distribution shifts run 3 to 5 hours.",
+  "status": "year-round",
+  "deadline_text": "Sign up any time.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Go to the volunteer portal on the food bank site. Make a login and pick a shift by site and activity.",
+  "needs_work_permit": false,
+  "url": "https://www.stmarysfoodbank.org/get-involved/volunteer/",
+  "priority": 2,
+  "notes": "Teens 12 to 15 must come with an adult. Court-ordered volunteers should call 602-343-3135.",
+  "sources_fetched": [
+   "https://www.stmarysfoodbank.org/get-involved/volunteer/"
+  ],
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "grades": "Entering grades 9 to 12",
@@ -73805,10 +74919,10 @@
   "duration": "4-week residential summer (2027: June 20 to July 16), then 3 years of involvement",
   "status": "opens-soon",
   "opens_iso": "2026-11-09",
-  "deadline_text": "Applications open Nov 9, 2026 and are due Feb 22, 2027 (recommendations due Mar 1, 2027). Decisions Apr 16, 2027.",
+  "deadline_text": "The apply page lists the 2026-2027 dates. Application opens Nov 9, 2026. Application and transcript due Feb 22, 2027. Recommendation form due Mar 1, 2027. Decisions come Apr 16, 2027.",
   "deadline_iso": "2027-02-22",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Online New Student Application, two essays (up to 500 words each), a current-year transcript and two recommendations (one from a core subject teacher). Some applicants are interviewed. Contact PAYS@pomona.edu or (909) 607-1810.",
+  "how_to_apply": "Fill out the online New Student Application. Add two essays of up to 500 words each, this year's transcript and two recommendations. One must come from a core subject teacher. Some applicants get an interview. Contact PAYS@pomona.edu or (909) 607-1810.",
   "needs_work_permit": false,
   "url": "https://www.pomona.edu/administration/draper-center/pays/apply",
   "apply_url": null,
@@ -73817,10 +74931,10 @@
    "https://www.pomona.edu/administration/draper-center/pays/apply"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-13",
   "priority": 1,
-  "notes": "The apply page mentions both 2025-2026 and 2026-2027 in places; the 2026-2027 deadlines above are the ones listed. Confirm with the program. Pomona College is in Claremont, next to Pomona.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "Checked 2026-10-13 on the apply page: it lists the 2026-2027 dates and the June 20 to July 16, 2027 residential dates. Its list of application materials still says 2025-2026. The program admits about 30 students each year. Contact the program if the form is not up by Nov 9.",
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "id": "pomona-valley-hospital-high-school-volunteer",
@@ -73902,6 +75016,47 @@
   "verified_on_label": "Oct 10, 2026"
  },
  {
+  "grades": "Rising 9th to 12th grade (rising 10th to 12th for writing and art)",
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "deadline_iso": null,
+  "id": "portland-lewis-clark-precollege-programs",
+  "name": "Lewis and Clark Precollege Summer Programs",
+  "org": "Lewis and Clark College",
+  "regions": [
+   "oregon"
+  ],
+  "city": "Portland, OR",
+  "type": "pre-college",
+  "fields": [
+   "health",
+   "arts-media",
+   "tech-cs",
+   "any"
+  ],
+  "what_you_do": "Take a summer program on campus. Subjects include health careers, data, theatre, studio art, writing and debate.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "High school students going into grades 9 to 12. Writing and Studio Art are for rising grades 10 to 12. The page lists grades, not ages.",
+  "paid_type": "fee-based",
+  "pay_detail": "Costs listed for 2026: $1,800 for Circular Innovation, Data in Action and Future Health Leaders. $3,600 for Theatre. $3,800 for the Writing Workshop. $3,650 for Studio Art. A $500 deposit is not refundable. Some partial scholarships are available.",
+  "season": "summer",
+  "duration": "Varies by program. Writing and Studio Art run June 20 to July 3, 2027.",
+  "status": "unconfirmed",
+  "deadline_text": "Summer 2027 dates for five programs are not set yet on the program page. The balance is due by May 1, 2027.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the Precollege Program Interest Form on the program page. For questions, email summercamps@lclark.edu.",
+  "needs_work_permit": false,
+  "url": "https://college.lclark.edu/precollege-programs/",
+  "priority": 3,
+  "notes": "Summer 2027 costs are still being set. These programs do not give college credit. Students who finish a program and are later admitted get a guaranteed minimum of $20,000 a year in renewable scholarship funding.",
+  "sources_fetched": [
+   "https://college.lclark.edu/precollege-programs/"
+  ],
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "id": "portland-multnomah-county-library-teen-council",
   "grades": null,
   "opens_iso": null,
@@ -73942,6 +75097,46 @@
    "oregon"
   ],
   "verified_on_label": "Oct 10, 2026"
+ },
+ {
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "deadline_iso": null,
+  "id": "portland-multnomah-county-library-volunteer",
+  "name": "Multnomah County Library Volunteering",
+  "org": "Multnomah County Library",
+  "regions": [
+   "oregon"
+  ],
+  "city": "Portland, OR",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "any"
+  ],
+  "what_you_do": "Volunteer at a library branch. The roles vary by branch and change often. Check the volunteer page for open roles.",
+  "min_age": 10,
+  "max_age": null,
+  "who_can_apply": "Anyone age 10 and older can volunteer on their own. Younger volunteers must have a parent or caregiver with them.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "year-round",
+  "deadline_text": "Not stated on the program page. Allow 1 to 2 weeks for processing.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply online or on paper at any library. Share your name, contact details and area of interest. You do not need a Social Security number. The library contacts you to schedule an interview. Orientation and training come after you are accepted.",
+  "needs_work_permit": false,
+  "url": "https://multcolib.org/volunteer/frequently-asked-questions-about-volunteering",
+  "sources_fetched": [
+   "https://multcolib.org/volunteer",
+   "https://multcolib.org/volunteer/frequently-asked-questions-about-volunteering"
+  ],
+  "priority": 2,
+  "notes": "This is the general library volunteer page. Current jobs are listed on an outside volunteer site. A link is on the page.",
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "id": "portland-multnomah-youth-commission",
@@ -74267,6 +75462,46 @@
   "verified_on_label": "Oct 10, 2026"
  },
  {
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "deadline_iso": null,
+  "id": "portland-oregon-food-bank-volunteer",
+  "name": "Oregon Food Bank Volunteering",
+  "org": "Oregon Food Bank",
+  "regions": [
+   "oregon"
+  ],
+  "city": "Portland, OR",
+  "type": "volunteer",
+  "fields": [
+   "social-impact",
+   "food-hospitality"
+  ],
+  "what_you_do": "Sort and re-pack food at the Portland and Beaverton sites. Help with seasonal garden projects and offsite food markets.",
+  "min_age": 8,
+  "max_age": null,
+  "who_can_apply": "The volunteer FAQ sets a minimum age of 8. Each shift lists its own minimum age. First-time volunteers under 18 need a youth release form.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "Single shifts, most days of the week",
+  "status": "year-round",
+  "deadline_text": "Sign up any time. Everyone must register ahead of time.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Create a volunteer profile on the volunteer page. Then reserve a shift. Read the minimum age on each shift first.",
+  "needs_work_permit": false,
+  "url": "https://www.oregonfoodbank.org/volunteer/",
+  "sources_fetched": [
+   "https://www.oregonfoodbank.org/volunteer/",
+   "https://api.oregonfoodbank.org/assets/download/FAQs_Volunteer_ENG.pdf"
+  ],
+  "priority": 2,
+  "notes": "Check the minimum age on each shift. For small group or family volunteering, email volunteer@oregonfoodbank.org. Shoes must have closed toes and heels. Shirts must have sleeves.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "id": "portland-oregon-humane-youth-volunteer",
   "grades": null,
   "opens_iso": "2026-11-30",
@@ -74588,6 +75823,46 @@
    "https://www.oregon.gov/boli/employers/pages/minor-workers.aspx"
   ],
   "verified_on_label": "Oct 10, 2026"
+ },
+ {
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "deadline_iso": null,
+  "id": "portland-youthline-peer-crisis-volunteer",
+  "name": "YouthLine Peer Crisis Volunteer",
+  "org": "YouthLine (Lines for Life)",
+  "regions": [
+   "oregon"
+  ],
+  "city": "Portland, OR",
+  "type": "volunteer",
+  "fields": [
+   "social-impact",
+   "health"
+  ],
+  "what_you_do": "Volunteer with a crisis line for young people. Complete 65 or more hours of training and shadowing first.",
+  "min_age": 15,
+  "max_age": 24,
+  "who_can_apply": "Ages 15 to 24. Volunteers age 15 to 17 must bring a parent or guardian to orientation. Sites are in Portland Metro, Warm Springs, Central Oregon and Maui, Hawaii.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. The page mentions Work Study positions for young people who face money or other barriers.",
+  "season": "year-round",
+  "duration": "About 3.5 hours a week for at least one year",
+  "status": "rolling",
+  "deadline_text": "Orientations are held monthly. Dates are not listed on the program page.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Sign up for a monthly orientation on the program page. You can also text YLVol to 85511 or email YLVolunteering@linesforlife.org. Next, you have an interview and training.",
+  "needs_work_permit": false,
+  "url": "https://www.theyouthline.org/volunteer/",
+  "sources_fetched": [
+   "https://www.linesforlife.org/about-us/volunteer/",
+   "https://www.theyouthline.org/volunteer/"
+  ],
+  "priority": 2,
+  "notes": "The program page asks volunteers to commit to at least one year. Shifts are about 3.5 hours a week.",
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "id": "pretend-city-volunteer-and-teen-programs",
@@ -75471,7 +76746,7 @@
   ],
   "city": "Reno, NV",
   "type": "pre-college",
-  "what_you_do": "Pick a camp that lasts a week. The first is Aerospace Mini-Camp. The next is Engineering Adventures Camp. The last is Civil and Environmental Engineering Camp.",
+  "what_you_do": "Pick one high school camp. The page lists the Aerospace Mini-Camp, the Engineering Adventures Camp and a Civil and Environmental Engineering Camp. Camp details are not posted yet.",
   "min_age": 14,
   "max_age": 17,
   "who_can_apply": "Teens ages 14 to 17.",
@@ -75781,7 +77056,7 @@
    "health",
    "science"
   ],
-  "what_you_do": "Get matched with a current Rosalind Franklin University student. They mentor you about health care or science careers. After an orientation, you meet once a month by Zoom or phone from October to May.",
+  "what_you_do": "Get matched with a current Rosalind Franklin University student. They mentor you about health care or science careers. After an orientation, you meet once a month by video call or phone from October to May.",
   "min_age": null,
   "max_age": null,
   "who_can_apply": "Local high school and college students who like health care or science.",
@@ -77051,7 +78326,7 @@
    "science",
    "engineering"
   ],
-  "what_you_do": "You join a free summer program for 100 top students. It has one week of STEM classes, five weeks of individual research with a mentor, and one week of reports and presentations.",
+  "what_you_do": "You join a free summer program for 100 top students. It has one week of STEM classes taught by professors, then five weeks of individual research with a mentor. The program ends with a research paper and a presentation at the RSI Symposium.",
   "min_age": null,
   "max_age": null,
   "grades": "Juniors",
@@ -77059,13 +78334,13 @@
   "paid_type": "unpaid",
   "pay_detail": "Free to students",
   "season": "summer",
-  "duration": "About 7 weeks",
+  "duration": "Six weeks (one week of classes, five weeks of research)",
   "status": "open-now",
   "opens_iso": null,
   "deadline_text": "RSI 2027 applications are open through 11:59 p.m. on December 11, 2026. No late applications.",
   "deadline_iso": "2026-12-11",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Apply on the CEE site: essays, two or three teacher recommendations, official transcript, and PSAT, SAT, ACT or AP scores.",
+  "how_to_apply": "Apply on the CEE site. You need essays, two or three teacher letters, an official transcript, and PSAT, SAT, ACT or AP scores.",
   "needs_work_permit": false,
   "url": "https://www.cee.org/programs/research-science-institute",
   "apply_url": "https://www.cee.org/programs/apply-rsi",
@@ -77077,7 +78352,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "Extremely selective (the FAQ says under 2.5% are accepted). Held in Cambridge, Massachusetts, so plan for travel. The CEE program page says RSI 2027 expands to Stanford for 50 scholars, so the location may differ for some students; check which site applies. The older FAQ page mentions a $75 application fee with waivers and a minimum age of 16 by July 1, but it also lists a six-week program, so it may be out of date. Confirm with CEE.",
+  "notes": "Very hard to get in. The CEE FAQ says it accepts less than 2.5% of applicants. It is held at MIT in Cambridge, Massachusetts, so plan for travel. The program page says RSI 2027 also runs at Stanford for 50 scholars. Check which site applies to you. The FAQ says the program lasts six weeks. It says you must be 16 by July 1 of the program year. It lists a $75 application fee that is not refundable, with waivers for need. The program page says the program is free to students. Ask CEE which is right.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -78064,9 +79339,9 @@
    "social-impact"
   ],
   "what_you_do": "Youth volunteers walk dogs and help care for animals. They clean kennels, check food and water, help with play and can foster.",
-  "min_age": 12,
+  "min_age": 16,
   "max_age": 17,
-  "who_can_apply": "The page text says Youth Volunteers must be a minimum of 16, but its Apply Now button says Youth 12 to 17. Ages 12 to 15 may volunteer with a parent or guardian over 18 (both apply and train). Confirm with the Salem campus.",
+  "who_can_apply": "The Salem campus page says youth volunteers must be 16 and finish all training and paperwork. Ages 12 to 15 may volunteer with a parent or guardian over 18. Both apply and train. The Apply Now button says Youth 12 to 17, which conflicts with the 16 minimum. Confirm with the Salem campus.",
   "paid_type": "unpaid",
   "pay_detail": "Unpaid volunteer role.",
   "season": "year-round",
@@ -78076,7 +79351,7 @@
   "deadline_confidence": "rolling",
   "how_to_apply": "Apply at oregonhumane.volunteerportal.org. Use the Youth 12 to 17 button. Do the training and paperwork. Then go to orientation.",
   "url": "https://www.oregonhumane.org/get-involved/volunteer/youths-12-17/#salem-campus",
-  "notes": "The same Oregon Humane page covers both sites. The Salem rules differ from Portland. The Salem text conflicts on the minimum age (16 in the text, 12 to 17 on the button).",
+  "notes": "The same Oregon Humane page covers both sites. The Salem rules differ from Portland (Portland says 12 to 17, one 2-hour shift every other week for at least 6 months). The Salem text says minimum age 16; the Apply Now button says Youth 12 to 17. min_age is set to 16 to follow the Salem text. Confirm with the Salem campus.",
   "regions": [
    "oregon"
   ],
@@ -82775,7 +84050,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "priority": 1,
-  "notes": "Free to join. Food and supplies are provided. Mentorship location rotates around Seattle (North, Central, Southeast, Southwest). Interns can return for up to 3 years. Work permit rule not stated on the page.",
+  "notes": "Food and supplies are provided. Mentorship location rotates around Seattle (North, Central, Southeast, Southwest). Interns can return for up to 3 years. Work permit rule not stated on the page.",
   "verified_on_label": "Oct 9, 2026"
  },
  {
@@ -86043,6 +87318,46 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "st-louis-area-foodbank-volunteer",
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "grades": null,
+  "min_age": null,
+  "max_age": null,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "duration": null,
+  "name": "St. Louis Area Foodbank Volunteer",
+  "org": "St. Louis Area Foodbank",
+  "regions": [
+   "missouri"
+  ],
+  "city": "St. Louis area, MO",
+  "type": "volunteer",
+  "fields": [
+   "food-hospitality",
+   "social-impact"
+  ],
+  "what_you_do": "Volunteers help in the Volunteer Center and at food distribution events. In the Center, they help get food ready for people in need.",
+  "who_can_apply": "The Volunteer Center takes volunteers ages 6 and up. F.A.R.M. distribution events need volunteers who are 16 or older. Food on the Move events need volunteers who are 18 or older. Volunteers under 16 need one adult for every five of them.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role.",
+  "season": "year-round",
+  "status": "rolling",
+  "deadline_text": "No deadline is listed. Every shift must be scheduled ahead of time.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Pick a shift on the volunteer sign-up page and register. Do not wear open-heel or open-toe shoes. Minors use the minor waiver form.",
+  "url": "https://stlfoodbank.org/give-time/volunteer-opportunities/",
+  "priority": 2,
+  "notes": "The Foodbank requires one adult volunteer for every five volunteers under 16, in groups or not. Plan 3 to 4 months ahead for groups. Court-ordered service is not accepted.",
+  "sources_fetched": [
+   "https://stlfoodbank.org/give-time/volunteer-opportunities/"
+  ],
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "grades": null,
   "max_age": null,
   "min_age": null,
@@ -86083,6 +87398,46 @@
   "verified_on_label": "Oct 10, 2026"
  },
  {
+  "id": "st-louis-barnes-jewish-summer-teens-volunteer",
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "grades": null,
+  "min_age": 16,
+  "max_age": null,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "duration": "At least 7 weeks and 60 hours",
+  "name": "Summer Teens and High School Community Service at Barnes-Jewish Hospital",
+  "org": "Barnes-Jewish Hospital",
+  "regions": [
+   "missouri"
+  ],
+  "city": "St. Louis, MO",
+  "type": "volunteer",
+  "fields": [
+   "health",
+   "social-impact"
+  ],
+  "what_you_do": "Teens volunteer in a hospital and see different health careers. Summer Teens join for at least seven weeks and 60 hours.",
+  "who_can_apply": "High school students who are at least 16. Teens volunteer through their high school and get community service credit hours.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Teens get community service credit hours.",
+  "season": "summer",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The program page says applications start in February and the Summer Teens deadline is April 1. The program page does not give a year, so check again in February.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Call 314-362-5324 and ask for the student application packet. Send in all of the information at one time. If the spots are full, you can go on a waiting list.",
+  "url": "https://www.barnesjewish.org/Giving/Volunteer",
+  "priority": 2,
+  "notes": "Students should not use the adult application. No more than three absences are allowed in Summer Teens. School-year community service hours are possible when there is room. Call the Volunteer Office to ask.",
+  "sources_fetched": [
+   "https://www.barnesjewish.org/Giving/Volunteer"
+  ],
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "grades": null,
   "max_age": null,
   "min_age": null,
@@ -86121,6 +87476,46 @@
    "https://camstl.org/teen-museum-studies/"
   ],
   "verified_on_label": "Oct 10, 2026"
+ },
+ {
+  "id": "st-louis-county-library-sidney-johnson-summer-internship",
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "grades": null,
+  "min_age": 16,
+  "max_age": 18,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "duration": "10 weeks, 12 hours per week",
+  "name": "Sidney Johnson Summer Internship at St. Louis County Library",
+  "org": "St. Louis County Library",
+  "regions": [
+   "missouri"
+  ],
+  "city": "St. Louis County, MO",
+  "type": "internship",
+  "fields": [
+   "education",
+   "any"
+  ],
+  "what_you_do": "The intern gets a behind-the-scenes look at how a library runs. The intern works at different library branches.",
+  "who_can_apply": "Students ages 16 to 18 who live in the St. Louis County Library District.",
+  "paid_type": "paid",
+  "pay_detail": "$15.00 per hour, about 12 hours per week",
+  "season": "summer",
+  "status": "closed-expect-reopen",
+  "deadline_text": "In 2026 applications ran March 1 to March 31 and winners were told by April 30. Dates for summer 2027 are not posted on the program page.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Watch the program page in March. In 2026 the page had an Apply Now button for the teen internship application.",
+  "url": "https://www.slcl.org/children-families/internship",
+  "priority": 1,
+  "notes": "The 2026 internship ran June 1 to August 7. The intern must be flexible with the schedule and with branches. The intern also writes a final reflection about the summer.",
+  "sources_fetched": [
+   "https://www.slcl.org/children-families/internship"
+  ],
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "grades": null,
@@ -86279,6 +87674,49 @@
   ],
   "priority": 2,
   "notes": "Volunteer sites are the Magic House in Kirkwood and MADE for Kids at 5127 Delmar Blvd. in St. Louis. The page does not give an upper age limit.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "st-louis-maryville-pre-college-summer-programs",
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "grades": "Grades 9 to 12; most programs are for rising juniors and seniors",
+  "min_age": null,
+  "max_age": null,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "duration": "1 day to 1 week",
+  "name": "Maryville University Pre-College Summer Programs",
+  "org": "Maryville University",
+  "regions": [
+   "missouri"
+  ],
+  "city": "St. Louis, MO",
+  "type": "pre-college",
+  "fields": [
+   "science",
+   "tech-cs",
+   "health",
+   "business-finance",
+   "arts-media"
+  ],
+  "what_you_do": "High school students try college-style programs. Topics are science, cybersecurity, health careers, sport business, business and design. Each program lasts one day to one week.",
+  "who_can_apply": "High school students. Most programs are for rising juniors and seniors. The Health Professions Summer Institute also takes rising sophomores. The design and art program takes students in grades 9 to 12.",
+  "paid_type": "fee-based",
+  "pay_detail": "2026 fees: $65 portfolio workshop, $75 Cybersecurity, $85 Biz Camp, $100 Saints Science Academy, $150 Health Professions, $700 Rawlings Sport Business (lodging and meals included).",
+  "season": "summer",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The 2026 programs ran in June and July. 2026 registration dates ran from May 25 to July 27. Dates for 2027 are not posted on the program page.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Watch the program page in spring. Each program has its own registration. Fees vary by program.",
+  "url": "https://www.maryville.edu/summerprograms",
+  "priority": 2,
+  "notes": "Pick the program that fits your grade. Fees are from 2026 and may change.",
+  "sources_fetched": [
+   "https://www.maryville.edu/summerprograms"
+  ],
   "verified_on_label": "Oct 13, 2026"
  },
  {
@@ -86601,6 +88039,46 @@
   "verified_on_label": "Oct 10, 2026"
  },
  {
+  "id": "st-louis-saint-lukes-summer-student-volunteer",
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "grades": null,
+  "min_age": 16,
+  "max_age": null,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "duration": "10 weeks, one 4-hour shift per week (34 hours or more)",
+  "name": "Summer Student Volunteer Program at St. Luke's Hospital",
+  "org": "St. Luke's Hospital",
+  "regions": [
+   "missouri"
+  ],
+  "city": "St. Louis, MO",
+  "type": "volunteer",
+  "fields": [
+   "health",
+   "social-impact"
+  ],
+  "what_you_do": "Student volunteers guide patients and visitors. They also help with wheelchairs on the hospital campus. They do not watch procedures or give patient care.",
+  "who_can_apply": "High school and college students who are at least 16 when they submit the application. A student who turns 16 during the summer must wait for the next summer.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role.",
+  "season": "summer",
+  "status": "closed-expect-reopen",
+  "deadline_text": "In 2026 the application link opened March 27 and stayed up for 48 hours. Dates for summer 2027 are not posted on the program page.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Watch the program page early next year. The link was open for only 48 hours in 2026. You must attend the mandatory orientation and finish the screening.",
+  "url": "https://www.stlukes-stl.com/contribute/volunteer/student-program",
+  "priority": 2,
+  "notes": "In 2026 the program ran June 8 to August 14, Monday through Friday. Screening has a urine drug screen, a background check (Social Security number needed), and blood tests for TB, measles, mumps and rubella. You also need proof of a flu shot or agree to get one. Call 314-542-4768 with questions.",
+  "sources_fetched": [
+   "https://www.stlukes-stl.com/contribute/volunteer/student-program"
+  ],
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "grades": "9-10",
   "max_age": null,
   "min_age": null,
@@ -86719,6 +88197,86 @@
    "https://www.slu.edu/visiting-young-scholars/index.php"
   ],
   "verified_on_label": "Oct 10, 2026"
+ },
+ {
+  "id": "st-louis-ssm-cardinal-glennon-high-school-volunteer",
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "grades": null,
+  "min_age": 17,
+  "max_age": null,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "duration": "One year, at least one weekday evening shift per week",
+  "name": "High School Volunteer at SSM Health Cardinal Glennon",
+  "org": "SSM Health Cardinal Glennon Children's Hospital",
+  "regions": [
+   "missouri"
+  ],
+  "city": "St. Louis, MO",
+  "type": "volunteer",
+  "fields": [
+   "health",
+   "social-impact"
+  ],
+  "what_you_do": "Volunteers help the hospital team. They may visit patient rooms, read books, work in play areas or help move patients. They work one weekday evening shift each week for a year.",
+  "who_can_apply": "High school students who are at least 17 when they apply and in the spring of their junior year. Students must go to a one-hour information meeting and a 3-hour orientation.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role.",
+  "season": "school-year",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The 2026-2027 application period has closed. The program page says the new timeline will be posted in fall 2026.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Check the program page this fall for the new timeline. You need an application, an interview, health requirements, a background check and two references.",
+  "url": "https://www.ssmhealth.com/cardinal-glennon/resources/volunteer",
+  "priority": 2,
+  "notes": "Spots are limited. The hospital takes one student per school and at most four students at a time during the school day.",
+  "sources_fetched": [
+   "https://www.ssmhealth.com/cardinal-glennon/resources/volunteer"
+  ],
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "st-louis-st-charles-library-teen-volunteer",
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "grades": null,
+  "min_age": 12,
+  "max_age": null,
+  "needs_work_permit": false,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "duration": null,
+  "name": "Teen Volunteering at St. Charles City-County Library",
+  "org": "St. Charles City-County Library",
+  "regions": [
+   "missouri"
+  ],
+  "city": "St. Charles County, MO",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "social-impact"
+  ],
+  "what_you_do": "Teens can join the Teen Leadership Committee. They help plan programs, share book picks and help promote the library.",
+  "who_can_apply": "Anyone who is at least 12 years old can volunteer with the library district.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Teens who attend committee meetings can get an hour of volunteer credit.",
+  "season": "year-round",
+  "status": "rolling",
+  "deadline_text": "No deadline is listed.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Call 636-441-2300, extension 1579, to ask how to start. The program page links only an adult application. Teen Leadership Committee meetings are on the library events calendar.",
+  "url": "https://www.stchlibrary.org/support-library/volunteer",
+  "priority": 2,
+  "notes": "You can volunteer at your local branch. You can also volunteer with the Library Foundation or the Friends of the Library.",
+  "sources_fetched": [
+   "https://www.stchlibrary.org/support-library/volunteer"
+  ],
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "grades": null,
@@ -87001,7 +88559,7 @@
   "season": "year-round",
   "duration": "Year-round",
   "status": "opens-soon",
-  "deadline_text": "Application opens Jan 1 and is due Feb 15 each year ((year inferred from the next cycle)). Group interview on the first Sunday of March. Notified in mid-April.",
+  "deadline_text": "Application opens Jan 1 and is due Feb 15 each year. Group interview on the first Sunday of March. Notified in mid-April.",
   "how_to_apply": "Fill out the online form. Ask a teacher or youth leader to send a recommendation form. Go to 1 group interview. If accepted, do a background check and online training.",
   "url": "https://www.stlzoo.org/zooalive",
   "sources_fetched": [
@@ -88773,6 +90331,45 @@
   "verified_on_label": "Oct 11, 2026"
  },
  {
+  "id": "tennessee-wioa-youth-program-nashville-area-workforce-essentials",
+  "name": "WIOA Youth Program (Workforce Essentials)",
+  "org": "Tennessee Department of Labor and Workforce Development, Workforce Essentials",
+  "regions": [
+   "tennessee"
+  ],
+  "city": "Nashville, TN",
+  "type": "paid-youth-program",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Get help with career ideas. The program can also help you find work experience. It can help with job training. It can help with a Registered Apprenticeship.",
+  "min_age": 14,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Youth who face barriers to work or school. In-school youth are ages 14 to 21, attending school and low-income. Out-of-school youth are ages 16 to 24, not in school, and must meet at least one barrier such as being homeless, in foster care, or having a disability.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline stated on the program page.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Contact the Workforce Essentials office in your county. Davidson is 615-253-8920. Rutherford is 615-898-8081. Williamson is 615-370-6004.",
+  "needs_work_permit": null,
+  "url": "https://www.tn.gov/workforce/jobs-and-education/services-by-group/services-by-group-redirect/youth-services.html",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.tn.gov/workforce/jobs-and-education/services-by-group/services-by-group-redirect/youth-services.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "Other Tennessee regions have different provider offices, listed on the same page. Teens must qualify under the rules above. Call first to ask if you are eligible.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "id": "tennessee-ymca-model-united-nations",
   "name": "Model United Nations (YMCA of Middle Tennessee)",
   "org": "YMCA of Middle Tennessee, Center for Civic Engagement",
@@ -90174,7 +91771,7 @@
   "pay_detail": "Starts at $16.75 per hour",
   "season": "summer",
   "duration": "Starguard class days listed on the page, then June and July work",
-  "deadline_text": "Fall class days on the page: Oct 4, 10, 11; Nov 14, 15, 21, 22; Dec 12, 13, 19, 20. Swim tests Nov 1 and Nov 29, 11 a.m. to 1 p.m. at Catalina Pool. Years are not printed on the page.",
+  "deadline_text": "Swim tests Nov 1 and Nov 29, 2026, 11 a.m. to 1 p.m. Sign up for a swim test at the link. Starguard class days on the page (no years printed; the page footer reads 2026): Oct 4, 10, 11 (already passed as of 2026-10-13); Nov 14, 15, 21, 22; Dec 12, 13, 19, 20.",
   "how_to_apply": "Sign up for a swim test at tucsonparks.info/lifeguardfallswimtest. The page gives no other form. If you have questions, send an email to cotlifeguard@tucsonaz.gov or call 520-837-8119.",
   "url": "https://www.tucsonaz.gov/Departments/Parks-and-Recreation/Pools-and-Splash-Pads/Lifeguards-and-Water-Safety-Instructors",
   "notes": "The page shows 2026 in its footer, so the dates are likely fall 2026, but confirm. Swim test: 300 yard front crawl, 50 yard approach stroke with rescue tube, treading water, 50 yard side stroke with a dummy, 10 lb brick retrieval.",
@@ -92328,7 +93925,7 @@
   "duration": "Self-paced",
   "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "Fall 2026 enrollment is open (as of Oct 7, 2026).",
+  "deadline_text": "Fall 2026 enrollment is open now, according to the site.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
   "how_to_apply": "Enroll from the courses page, ask your school counselor about school-paid seats, or call (408) 450-4962.",
@@ -93146,10 +94743,10 @@
   "season": "summer",
   "duration": "3 weeks (Jul 13 to Jul 31 in 2026)",
   "status": "opens-soon",
-  "deadline_text": "The program dates page says the window opens January 6 and closes June 1 (no year printed; (year inferred from the next cycle)). The 2026 program ran July 13 to 31, 2026.",
+  "deadline_text": "Applications are closed now. The page says the window opens January 6 and closes June 1 (no year printed). The 2026 program ran July 13 to 31, 2026.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Pick a course and the campus or online option, then apply online with a transcript, health insurance card and card payment for the application fee and deposit. No essays or recommendations.",
+  "how_to_apply": "Pick a course and choose a campus or online. Then apply online. You need a transcript, a health insurance card and a card to pay the application fee and deposit. There are no essays or recommendations.",
   "needs_work_permit": false,
   "url": "https://exst.umd.edu/pre-college-programs/terp-young-scholars",
   "apply_url": "https://exst.umd.edu/pre-college-programs/terp-young-scholars/apply-domestic-applicants",
@@ -95087,10 +96684,10 @@
   "season": "school-year",
   "duration": "Thursdays 4 to 7 PM, October 15, 2026 to February 11, 2027",
   "status": "open-now",
-  "deadline_text": "Registration for fall 2026 is open as of Oct 10, 2026, with no closing date stated. The program starts Oct 15, 2026. The scholarship deadline was September 15, 2026.",
+  "deadline_text": "Registration for fall 2026 is open, per the page, with no closing date stated. The program starts Oct 15, 2026. The scholarship deadline was September 15, 2026.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Apply through the Emily Carr University Continuing Studies website (Apply Now link on the page). Questions: teens@ecuad.ca.",
+  "how_to_apply": "Apply on the Emily Carr University Continuing Studies site (use the Apply Now link on the page). Questions: teens@ecuad.ca.",
   "needs_work_permit": null,
   "url": "https://www.vanartgallery.bc.ca/teens/teen-art-group/",
   "sources_fetched": [
@@ -96426,7 +98023,7 @@
   "how_to_apply": "Apply online on the Wake Tech page for the apprenticeship academy. You can also ask for help from the career coordinator at your school.",
   "url": "https://www.waketech.edu/programs-courses/apprenticeship/students/apprenticeship-academy",
   "priority": 1,
-  "notes": "The deadline is very close. Paths are building and skilled trades (carpentry, electrical, HVAC, plumbing, welding), car and truck tech, and mechanical engineering and advanced making of goods. The page does not give the year with the October 16 date. It follows the Spring 2027 wording.",
+  "notes": "The deadline is very close. Paths are building trades (carpentry, electrical, HVAC, plumbing, welding), car and truck tech, and mechanical engineering and advanced making. The page gives no year with the October 16 date. It follows the Spring 2027 wording. The page says Career and College Promise helps cover tuition. It does not say tuition is fully paid, so pay_detail says too much.",
   "sources_fetched": [
    "https://www.waketech.edu/programs-courses/apprenticeship/students/apprenticeship-academy"
   ],
@@ -99485,7 +101082,7 @@
   "deadline_text": "2026-2027 enrollment fee posted ($80). No closing date stated; join through a local club.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "Find a community club, attend a meeting, complete online enrollment and pay the fee. Office: bbrinkhoushatch@ucanr.edu, 530-666-8703.",
+  "how_to_apply": "Find a local club and go to a meeting. Then finish online enrollment and pay the fee. Office: bbrinkhoushatch@ucanr.edu, 530-666-8703.",
   "needs_work_permit": false,
   "url": "https://ucanr.edu/site/yolo-county-4-h/youth",
   "apply_url": null,
@@ -99495,7 +101092,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "Teens can take leader and ambassador roles. The fee is non-refundable. A fee waiver or reduction form is available. Returning members update their online enrollment and send health forms to their club.",
+  "notes": "The fee is non-refundable. A fee waiver or reduction form is available. Returning members update their online enrollment and send health forms to their club.",
   "verified_on_label": "Oct 7, 2026"
  },
  {

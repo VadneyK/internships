@@ -23,7 +23,9 @@ const DETAIL_FIELDS = ["who_can_apply", "how_to_apply", "notes", "duration", "pa
 // 2026-10-13: four repointed links after the link check.  limit 539600 to 539700.
 // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above.  limit 539700 to 555000.
 // 2026-10-13: re-read of 177 workshop-city cards (38 fixed).  limit 555000 to 555300.
-const GZIP_LIMIT = 555300;
+// 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above.  limit 555300 to 563100.
+// 2026-10-13: re-read of 213 more open cards (42 fixed).  limit 563100 to 563600.
+const GZIP_LIMIT = 563600;
 
 function readText(file) {
   return fs.readFileSync(path.join(DATA, file), "utf8");

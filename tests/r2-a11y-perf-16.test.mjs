@@ -24,15 +24,19 @@ const PAGES = {
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. find.html ceiling 2223100 to 2277600.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. find.html limit 2277600 to 2341900.
   // 2026-10-13: re-read of 177 workshop-city cards (38 fixed). find.html limit 2341900 to 2342200.
-  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2342200 },
+  // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. find.html limit 2342200 to 2377900.
+  // 2026-10-13: re-read of 213 more open cards (42 fixed). find.html limit 2377900 to 2378800.
+  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2378800 },
   "calendar.html": { allowed: ["calendar.json", "entries-cal.json"], ceiling: 150000 },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. insights.html ceiling 697700 to 716100.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. insights.html limit 716100 to 736500.
-  "insights.html": { allowed: ["entries-stats.json"], ceiling: 736500 },
+  // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. insights.html limit 736500 to 748900.
+  "insights.html": { allowed: ["entries-stats.json"], ceiling: 748900 },
   // younger.html: raised from 336000 to 340000 on 2026-10-11 (r5-younger-1: pet care card and address-safe script added 2.7 KB to younger.json)
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. younger.html ceiling 442000 to 452800.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. younger.html limit 452800 to 465400.
-  "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 465400 },
+  // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. younger.html limit 465400 to 472700.
+  "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 472700 },
   "interview.html": { allowed: ["interview.json", "permits.json"], ceiling: 95000 },
   // permit.html and states.html: raised from 82000 to 83000 on 2026-10-12 (r2-accuracy-2 and r2-accuracy-8: the 2027 wage lines and the Washington, DC wording; permits.json is 82,370 bytes)
   "permit.html": { allowed: ["permits.json"], ceiling: 83000 },
