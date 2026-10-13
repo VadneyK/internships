@@ -61,3 +61,7 @@ The first line counts links: ok, blocked, broken, not checked. Then the sections
 | Not checked | The 40 minute budget ran out first. Not counted as broken | Do nothing. They are tried next run |
 
 After fixing, run the build commands and tests above, then comment on the issue with what you fixed. Do not close it for the bot.
+
+## How the site is published
+
+Since 2026-10-13 GitHub Pages publishes from the `deploy` job in `.github/workflows/ci.yml`, not straight from the branch. The job runs only on a push to main and only after the `check` gate passed, so a red build never reaches visitors. If main is red, the live site keeps its last good version; fix main (or rerun a flaky job) and the next green run publishes. To publish by hand, rerun the failed jobs of the latest main run in the Actions tab.

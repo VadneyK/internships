@@ -116,7 +116,7 @@ class WorkflowTests(unittest.TestCase):
 
     def test_ci_has_python_js_check_and_the_two_coverage_jobs(self):
         self.assertEqual(
-            job_names("ci.yml"), ["python", "js", "check", "lib-coverage", "page-script-coverage"]
+            job_names("ci.yml"), ["python", "js", "check", "deploy", "lib-coverage", "page-script-coverage"]
         )
 
     def test_ci_python_job_runs_the_python_side_in_full(self):

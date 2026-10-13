@@ -80,6 +80,39 @@ jobs:
             exit 1
           fi
 
+  # Publishes the site only after the check gate passed on main, so a red build never reaches visitors.
+  # Pages source is "GitHub Actions" (set 2026-10-13); the site keeps its last good version until the next green build.
+  deploy:
+    needs: [check]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - name: Collect the site files (everything visitors load, nothing from tests, tools, src or CI)
+        run: |
+          mkdir _site
+          rsync -a --exclude '.git' --exclude '.github' --exclude 'node_modules' --exclude 'tests' --exclude 'tools' --exclude 'src' \
+            --exclude 'package.json' --exclude 'package-lock.json' --exclude 'requirements-dev.txt' --exclude 'coverage-v8' --exclude '_site' ./ _site/
+          test -f _site/index.html && test -f _site/404.html && test -d _site/data/programs
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5
+
   lib-coverage:
     runs-on: ubuntu-latest
     timeout-minutes: 45
