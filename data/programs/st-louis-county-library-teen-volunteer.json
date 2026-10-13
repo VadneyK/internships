@@ -1,0 +1,39 @@
+{
+  "grades": "6th grade",
+  "apply_url": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "id": "st-louis-county-library-teen-volunteer",
+  "name": "Teen Volunteer at St. Louis County Library",
+  "org": "St. Louis County Library",
+  "regions": [
+    "missouri"
+  ],
+  "city": "St. Louis, MO",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "what_you_do": "Help at a library branch. Duties may include making welcome packets, helping with Summer Reading Club and helping with meal programs.",
+  "min_age": 12,
+  "max_age": null,
+  "who_can_apply": "You must be at least 12 years old and in the 6th grade. Teens fill out the teen volunteer application.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. The library says volunteering can count toward a community service requirement.",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "rolling",
+  "deadline_text": "No deadline stated. The teen application is on the program page.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the teen volunteer application on the program page. You can also call 314-994-3300 or email volunteer@slcl.org.",
+  "needs_work_permit": false,
+  "url": "https://www.slcl.org/library-services/volunteering",
+  "sources_fetched": [
+    "https://www.slcl.org/library-services/volunteering"
+  ],
+  "priority": 2,
+  "notes": "Each community service request is looked at on its own."
+}

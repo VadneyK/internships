@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "apply_url": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "id": "st-louis-county-library-teen-advisory-group",
+  "name": "Teen Advisory Group (TAG)",
+  "org": "St. Louis County Library",
+  "regions": [
+    "missouri"
+  ],
+  "city": "St. Louis, MO",
+  "type": "leadership",
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "what_you_do": "Give the library your ideas on teen programs and services. You earn volunteer hours, meet new friends and build leadership skills.",
+  "min_age": 12,
+  "max_age": 18,
+  "who_can_apply": "Teens ages 12 to 18.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. You earn volunteer hours.",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "rolling",
+  "deadline_text": "No deadline stated. Send the form on the program page.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Send the form on the program page. A participating branch will contact you.",
+  "needs_work_permit": false,
+  "url": "https://www.slcl.org/children-families/teen-advisory-group",
+  "sources_fetched": [
+    "https://www.slcl.org/children-families/teen-advisory-group"
+  ],
+  "priority": 2,
+  "notes": "Only participating branches run TAG. Meeting times are not stated on the program page."
+}

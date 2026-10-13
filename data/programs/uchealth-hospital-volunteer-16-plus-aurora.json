@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": "https://uclive.vsyslive.com/pages/UCHAPPLY",
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "needs_work_permit": false,
+  "id": "uchealth-hospital-volunteer-16-plus-aurora",
+  "name": "UCHealth Hospital Volunteering (age 16 and up)",
+  "org": "UCHealth, University of Colorado Hospital",
+  "regions": [
+    "colorado"
+  ],
+  "city": "Aurora, CO",
+  "type": "volunteer",
+  "fields": [
+    "health"
+  ],
+  "what_you_do": "Volunteer at a UCHealth hospital. Teens 16 and up can apply. One site is the University of Colorado Hospital. It is in Aurora. Some other Denver area hospitals take teens too.",
+  "min_age": 16,
+  "max_age": null,
+  "who_can_apply": "Ages 16 and up at the University of Colorado Hospital. It is in Aurora. The same goes for Highlands Ranch. It also goes for Broomfield and Steadman Hawkins Clinic Denver. Other places have other minimum ages.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Most locations ask for 65 hours or a steady six months.",
+  "status": "year-round",
+  "deadline_text": "No deadline is listed for the Aurora hospital on the volunteer page.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Use the online application for the hospital you want. The Aurora hospital link is on the program page. Requirements differ by hospital, so check with the hospital first.",
+  "url": "https://www.uchealth.org/give-to-uchealth/volunteer/",
+  "priority": 2,
+  "notes": "Job shadowing at UCHealth is for ages 18 and older. The volunteer page does not list a summer teen program. Ask the hospital about other teen options.",
+  "sources_fetched": [
+    "https://www.uchealth.org/give-to-uchealth/volunteer/"
+  ]
+}

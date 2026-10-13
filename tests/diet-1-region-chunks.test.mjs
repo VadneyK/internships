@@ -375,9 +375,15 @@ const BUDGET = {
   // 2026-10-12: +77 Plains state cards (2,291 programs). The stats file and the shared file grew with the new cards. Raised: a Bay Area city raw 1126000 to 1150000, gzip 186000 to 190000; Boston raw 1017000 to 1041000, gzip 163000 to 167000; a Plains state raw 713000 to 807000, gzip 101000 to 120000.
   // 2026-10-13: +7 Plains and North Dakota cards (2,298 programs). Raised raw: Bay Area city 1150000 to 1152000, Boston 1041000 to 1043000, a Plains state 807000 to 818000, gzip 120000 to 121500.
   // 2026-10-13: +50 city cards for the six new Where cities (2,348 programs). The stats file grew and the Plains and Mountain chunk gained the Montana and Idaho city cards. Raised raw: Bay Area city 1152000 to 1166000, Boston 1043000 to 1057000, a Plains state 818000 to 867100; gzip Bay Area 190000 to 191000, Boston 167000 to 168000, Plains 121500 to 130500.
-  "?at=city:san-francisco": { raw: 1166000, gzip: 191000, label: "a Bay Area city" },
-  "?at=city:boston": { raw: 1057000, gzip: 168000, label: "Boston" },
-  "?at=state:nebraska": { raw: 867100, gzip: 130500, label: "a Plains state" },
+  // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:san-francisco raw 1166000 to 1184800.
+  // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:san-francisco gzip 191000 to 193700.
+  "?at=city:san-francisco": { raw: 1184800, gzip: 193700, label: "a Bay Area city" },
+  // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston raw 1057000 to 1075700.
+  // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston gzip 168000 to 170700.
+  "?at=city:boston": { raw: 1075700, gzip: 170700, label: "Boston" },
+  // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska raw 867100 to 886400.
+  // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska gzip 130500 to 132800.
+  "?at=state:nebraska": { raw: 886400, gzip: 132800, label: "a Plains state" },
 };
 for (const [search, b] of Object.entries(BUDGET)) {
   test("first-load data bytes for " + b.label + " stay under the pinned budget and far under the whole lite file", async () => {

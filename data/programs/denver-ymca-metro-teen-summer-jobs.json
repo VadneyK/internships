@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "needs_work_permit": null,
+  "id": "denver-ymca-metro-teen-summer-jobs",
+  "name": "YMCA of Metro Denver Summer Jobs for Teens",
+  "org": "YMCA of Metro Denver",
+  "regions": [
+    "colorado"
+  ],
+  "city": "Denver, CO",
+  "type": "paid-youth-program",
+  "fields": [
+    "sports",
+    "education"
+  ],
+  "what_you_do": "Work at a Y in summer. Jobs are lifeguard, swim instructor, or part-time camp counselor. Lifeguards need lifeguard certification and CPR.",
+  "min_age": 15,
+  "max_age": null,
+  "who_can_apply": "Lifeguard, swim instructor and aquatic jobs: age 15 or older. Part-time camp counselor: age 16 or older and some experience with kids. Full time day camp leader: age 18 or older.",
+  "paid_type": "paid",
+  "pay_detail": "Pay is not stated on the program page.",
+  "season": "summer",
+  "duration": "Summer",
+  "status": "unconfirmed",
+  "deadline_text": "The program page gives no dates. It says the Y recruits every spring.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Go to the summer jobs page. To see all locations, type LIFEGUARD in the search box on that page.",
+  "url": "https://denverymca.org/node/780",
+  "priority": 2,
+  "notes": "Lifeguards need American Red Cross or YMCA lifeguard certification and CPR-AED. The Y offers lifeguard training. It reimburses the training cost after 3 months of employment. The page does not show a year, so check the jobs search for current openings.",
+  "sources_fetched": [
+    "https://denverymca.org/node/780"
+  ]
+}
