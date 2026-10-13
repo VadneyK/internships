@@ -74,11 +74,20 @@ const TABLE = {
   "data/states-lite.json": { ceiling: 48000, reason: "data file, 43610 bytes measured 2026-10-10" },
   "data/transit.json": { ceiling: 9100, reason: "data file, 8193 bytes measured 2026-10-10" },
   "data/younger.json": { ceiling: 19600, reason: "data file, 17796 bytes measured 2026-10-10" },
+  // 2026-10-13: ticket ux9-pills. style.css 48800 to 48900 (.fpill round pill rule; 48834 bytes).
+  // 2026-10-13: ticket ux9-place-search-option. common.js 34500 to 34700 (empty caption and any-label options on the shared place box; 34554 bytes).
   // 2026-10-12: Programs filters redesign. style.css 46100 to 48300 (summary bar, pill rows, phone bar; 48237 bytes), common.js 28300 to 34500 (the shared place search box; 34453 bytes), find.js 59300 to 64500 (summary bar and phone bar code; 64477 bytes). home.js got smaller, so its row stays.
   "assets/css/fonts.css": { ceiling: 6800, reason: "stylesheet, 6158 bytes measured 2026-10-10" },
-  "assets/css/style.css": { ceiling: 48300, reason: "stylesheet, 41831 bytes measured 2026-10-10" },
+  // 2026-10-13: ticket ux9-page-top. style.css 48900 to 49000 (.notes and .topnote rule; 48937 bytes).
+  // 2026-10-13: ticket ux9-header-footer. style.css 49000 to 49800 (phone header, Menu grid, footer columns; 49757 bytes).
+  // 2026-10-13: ticket ux9-quiet-cards. style.css 49800 to 50100 (quiet card h3, a.chip, .g2x2; 50049 bytes).
+  // 2026-10-13: ticket ux9-header-footer (320 px overflow fixes). style.css 50100 to 50300 (50259 bytes).
+  // 2026-10-13: ux9 review fixes (.tablewrap position, Jobs hours gap). style.css 50300 to 50400 (50324 bytes).
+  // 2026-10-13: ux9 review fixes. style.css 50400 to 50500 (50427 bytes).
+  // 2026-10-13: workshop leaders round. style.css 50500 to 50600 (50571 bytes).
+  "assets/css/style.css": { ceiling: 50600, reason: "stylesheet, 41831 bytes measured 2026-10-10" },
   "assets/js/calendar.js": { ceiling: 8800, reason: "script, 7966 bytes measured 2026-10-10" },
-  "assets/js/common.js": { ceiling: 34500, reason: "script, 25681 bytes measured 2026-10-10" },
+  "assets/js/common.js": { ceiling: 34700, reason: "script, 25681 bytes measured 2026-10-10" },
   // Raised from 58100 to 59300 on 2026-10-12 for ticket diet-1 (Where group files on the Programs page). 59217 bytes measured.
   "assets/js/find.js": { ceiling: 64500, reason: "script, 52771 bytes measured 2026-10-10" },
   "assets/js/handout.js": { ceiling: 400, reason: "script, 274 bytes measured 2026-10-10" },
@@ -93,9 +102,9 @@ const TABLE = {
   "assets/js/parents.js": { ceiling: 3900, reason: "script, 3529 bytes measured 2026-10-10" },
   // Raised for ticket p8-paycheck-other: the Another state picker and its wage and federal tax lines. 12055 bytes measured 2026-10-12.
   // Raised again for the live status line on Another state (a state pick, and the failed wage load). 12208 bytes measured 2026-10-12.
-  "assets/js/paycheck.js": { ceiling: 12300, reason: "script, 12208 bytes measured 2026-10-12 (Another state picker and its live status line, p8-paycheck-other)" },
+  "assets/js/paycheck.js": { ceiling: 12500, reason: "raised 2026-10-13 for ticket ux9-other-state-search (place box); script, 12208 bytes measured 2026-10-12 (Another state picker and its live status line, p8-paycheck-other)" },
   // Raised for ticket p8-permit-lite-print: the printable checklist and next step on the shorter state answers. 31519 bytes measured 2026-10-12.
-  "assets/js/permit.js": { ceiling: 31700, reason: "script, 31519 bytes measured 2026-10-12 (printable checklist and next step, p8-permit-lite-print)" },
+  "assets/js/permit.js": { ceiling: 31950, reason: "script, 31830 bytes measured 2026-10-13 (ux9-permit-flow: state search box on the shorter-state list; was 31519 on 2026-10-12, p8-permit-lite-print)" },
   "assets/js/playbook.js": { ceiling: 19200, reason: "script, 17385 bytes measured 2026-10-10" },
   "assets/js/ready.js": { ceiling: 12100, reason: "script, 10954 bytes measured 2026-10-10" },
   "assets/js/resume.js": { ceiling: 9600, reason: "script, 8687 bytes measured 2026-10-10" },
@@ -103,7 +112,7 @@ const TABLE = {
   "assets/js/share.js": { ceiling: 1900, reason: "script, 1681 bytes measured 2026-10-10" },
   "assets/js/states.js": { ceiling: 2600, reason: "script, 2290 bytes measured 2026-10-10" },
   // Raised for ticket p9-younger-1: the permit-only states in the picker and their permit card. 16622 bytes measured 2026-10-12.
-  "assets/js/younger.js": { ceiling: 17700, reason: "script, 17599 bytes measured 2026-10-12 (permit-only states and card, p9-younger-1; plain note when the grid does not cover the state, p8-younger-state)" },
+  "assets/js/younger.js": { ceiling: 17900, reason: "raised 2026-10-13 for ticket ux9-other-state-search (place box); script, 17599 bytes measured 2026-10-12 (permit-only states and card, p9-younger-1; plain note when the grid does not cover the state, p8-younger-state)" },
   "assets/img/favicon.svg": { ceiling: 500, reason: "image, 409 bytes measured 2026-10-10" },
   "assets/img/og.jpg": { ceiling: 90200, reason: "image, 81997 bytes measured 2026-10-10" },
   "assets/img/splat-orange.svg": { ceiling: 5500, reason: "image, 4991 bytes measured 2026-10-10" },

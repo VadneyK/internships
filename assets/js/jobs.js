@@ -108,6 +108,8 @@
     Object.keys(NAMES).sort(function (a, b) { return NAMES[a] < NAMES[b] ? -1 : 1; }).forEach(function (k) {
       stSel.appendChild(Object.assign(document.createElement("option"), { value: k, textContent: NAMES[k] }));
     });
+    /* The shared type-to-search box (2026-10-13): the select stays the source of truth. */
+    var stPlace = G.placeSearch(stSel, { hide: true, chip: true, caption: "", placeholder: "Type a state or province" });
     /* Puts the hours strip in #jHours. For a picked US state (not Under 14, not BC) the state wage line, or a short fallback if the wage file failed, is added to the end of the hours box with DOM methods. noFetch stops a repaint from starting another load. */
     var WAGE_FAIL = "We could not load the state wage. Check your state labor office.";
     function paintHours(v, st, noFetch) {
@@ -245,7 +247,7 @@
     var stStart = "";
     if (params.has("state")) stStart = stateChoice(params.get("state"), stSel);
     else { var pp = G.store.get("findprefs", {}); stStart = pp && typeof pp.place === "string" ? stateChoice(L.stateFromPlace(pp.place), stSel) : ""; }
-    if (stStart) { stSel.value = stStart; if (stSel._tpSync) stSel._tpSync(); }
+    if (stStart) { stSel.value = stStart; if (stSel._tpSync) stSel._tpSync(); if (stPlace) stPlace.sync(); }
     paint();
     if (start) { sel.value = start; if (sel._tpSync) sel._tpSync(); paint(); }
   }).catch(function () { $("jOut").innerHTML = '<p class="muted">The list could not load. Try again later.</p>'; $("jStatus").textContent = "The list could not load. Try again later."; });

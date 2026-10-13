@@ -244,8 +244,9 @@ test("find flow: age, timing and season are compact pill rows, grouped under Whe
   assert.match(html, /<span class="lbl" id="l-when">When<\/span>/);
   for (const t of ["My age", "Timing", "Season"]) assert.match(html, new RegExp(">" + t + "</label>"), t + " label text kept");
   assert.match(css, /\.frow \{[^}]*grid-template-columns/);
-  assert.match(css, /#age \+ \.tp \.tile, #when \+ \.tp \.tile, #season \+ \.tp \.tile \{[^}]*border-radius: 999px/);
-  assert.match(css, /#age \+ \.tp \.tile, #when \+ \.tp \.tile, #season \+ \.tp \.tile \{[^}]*min-height: 2\.75rem/);
+  // 2026-10-13 ux9-pills: the three selectors became the shared .fpill class (find.html's groups carry it).
+  assert.match(css, /\.fpill \.tp \.tile \{[^}]*border-radius: 999px/);
+  assert.match(css, /\.fpill \.tp \.tile \{[^}]*min-height: 2\.75rem/);
   const { window, document, errors } = await findPage();
   assert.equal(document.querySelectorAll("#age + .tp .tile").length, 8);
   assert.equal(document.querySelectorAll("#when + .tp .tile").length, 5);

@@ -38,6 +38,8 @@ test("index.html: the summary is empty when nothing is picked, and updates on ea
   const more = document.getElementById("matchMore").textContent.match(/See all (\d+) matches/);
   assert.ok(more, "expected the See all count");
   const total = Number(more[1]);
+  // 2026-10-13: the summary can still say it is loading on a busy machine; wait up to 15 s for the count.
+  for (let i = 0; i < 300 && !/^\d+ programs? match/.test(status.textContent.trim()); i++) await new Promise((r) => setTimeout(r, 50));
   const first = status.textContent.trim();
   assert.ok(total > 1, "age 16 should have more than one match for this check");
   assert.ok(first.startsWith(total + " programs match."), `summary was "${first}", expected it to start with "${total} programs match."`);

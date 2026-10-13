@@ -362,7 +362,7 @@
   setTimeout(function () { G.shareToParent(); }, 0);
   /* Place search box (2026-10-12), shared by Home and Programs: type a city or state, pick one of up to eight matches.
      A pick sets the real Where select and fires "change". Ids come from the select: <id>Q, <id>List, <id>None, <id>Opt<n>, <id>Lbl.
-     opts: placeholder, caption, chip (a removable chip for the pick), hide (hide the select now). Returns { input, sync, failed }. */
+     opts: placeholder, caption (caption:"" writes none), chip (a removable chip for the pick), hide (hide the select now). Returns { input, sync, failed }. */
   G.placeSearch = function (sel, opts) {
     opts = opts || {};
     if (!sel || !sel.parentNode || sel._ps) return sel && sel._ps;
@@ -378,9 +378,9 @@
     var list = document.createElement("ul"); list.id = base + "List"; list.className = "combo-list"; list.setAttribute("role", "listbox"); list.setAttribute("aria-label", "Matching places"); list.hidden = true;
     var note = document.createElement("p"); note.id = base + "None"; note.className = "small muted"; note.hidden = true;
     wrap.appendChild(q); wrap.appendChild(list); wrap.appendChild(note);
-    cap.className = "small muted"; cap.textContent = opts.caption || "Or pick a part of the country:";
+    cap.className = "small muted"; cap.textContent = opts.caption == null ? "Or pick a part of the country:" : opts.caption;
     if (opts.chip) { chip = document.createElement("div"); chip.className = "chips"; chip.hidden = true; f.insertBefore(chip, sel); }
-    f.insertBefore(wrap, sel); f.insertBefore(cap, sel);
+    f.insertBefore(wrap, sel); if (cap.textContent) f.insertBefore(cap, sel);
     /* A place's name as the tiles show it: no count, and an area reads "All of ..." */
     function nameOf(o) { return (o.value.indexOf("area:") === 0 ? "All of " : "") + o.textContent.replace(/\s*\((?:\d+|none yet)\)$/, ""); }
     function norm(t) { return t.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, " ").trim(); }
@@ -467,7 +467,7 @@
     return ps;
   };
   /* The Where picker: part of the country first, then its cities (and "All of ..." areas). sel must already hold the options from fillPlaces. */
-  G.placeTiles = function (sel) {
+  G.placeTiles = function (sel, opts) {
     if (!L || !L.PICK_GROUPS) return;
     var at = {}; for (var i = 0; i < sel.options.length; i++) at[sel.options[i].value] = i;
     var groups = L.PICK_GROUPS.map(function (g) {
@@ -477,7 +477,7 @@
       g[2].forEach(function (c) { if (at["city:" + c] != null) items.push(at["city:" + c]); });
       return { label: g[0], items: items };
     });
-    G.tilePicker(sel, { anyLabel: "Anywhere", groups: groups, labelFor: function (i, t) { return sel.options[i].value.indexOf("area:") === 0 ? "All of " + t : t; } });
+    G.tilePicker(sel, { anyLabel: (opts && opts.anyLabel) || "Anywhere", groups: groups, labelFor: function (i, t) { return sel.options[i].value.indexOf("area:") === 0 ? "All of " + t : t; } });
     /* code that sets the place (a saved choice, a link) repaints the search box and its chip too */
     if (sel._ps && !sel._ps.hooked) { var tps = sel._tpSync; sel._ps.hooked = true; sel._tpSync = function () { tps(); sel._ps.sync(); }; }
   };
