@@ -1,0 +1,41 @@
+{
+  "grades": null,
+  "min_age": 16,
+  "max_age": 24,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "id": "santa-fe-youthworks-youth-corps-and-job-training",
+  "name": "Santa Fe YouthWorks Youth Corps and Job Training",
+  "org": "YouthWorks (Santa Fe)",
+  "regions": [
+    "new-mexico"
+  ],
+  "city": "Santa Fe, NM",
+  "type": "paid-youth-program",
+  "fields": [
+    "environment",
+    "trades",
+    "food-hospitality"
+  ],
+  "what_you_do": "Get paid job training in Santa Fe. Youth crews do work like fire danger reduction, river and watershed care, farming, construction and cooking. You build job skills and good work habits.",
+  "who_can_apply": "Youth ages 16 to 24. The program serves young people from Northern New Mexico.",
+  "paid_type": "paid",
+  "pay_detail": "Wages and stipends. The amount is not stated on the program pages.",
+  "season": "year-round",
+  "duration": "A 6 month spring and summer season, per the page. The season listed is for 2025.",
+  "status": "unconfirmed",
+  "deadline_text": "No dates on the program pages. The page says to connect with YouthWorks to learn about current offerings.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Open the Youth Jobs Application link on the YouthWorks site. You can also email info@santafeyouthworks.org with your resume and letter of interest, or call 505-989-1855. The office is at 1505 Llano St., Santa Fe.",
+  "url": "https://santafeyouthworks.org/environmental-stewardship-and-restoration-programs/",
+  "sources_fetched": [
+    "https://santafeyouthworks.org/environmental-stewardship-and-restoration-programs/",
+    "https://santafeyouthworks.org/job-training/",
+    "https://santafeyouthworks.org/"
+  ],
+  "priority": 2,
+  "notes": "The page also lists GED prep, First Aid and CPR training, and trades certificates."
+}

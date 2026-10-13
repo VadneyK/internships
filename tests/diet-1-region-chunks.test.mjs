@@ -385,13 +385,19 @@ const BUDGET = {
   // 2026-10-13: +50 city cards for the six new Where cities (2,348 programs). The stats file grew and the Plains and Mountain chunk gained the Montana and Idaho city cards. Raised raw: Bay Area city 1152000 to 1166000, Boston 1043000 to 1057000, a Plains state 818000 to 867100; gzip Bay Area 190000 to 191000, Boston 167000 to 168000, Plains 121500 to 130500.
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:san-francisco raw 1166000 to 1184800.
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:san-francisco gzip 191000 to 193700.
-  "?at=city:san-francisco": { raw: 1184800, gzip: 193700, label: "a Bay Area city" },
+  // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=city:san-francisco raw 1184800 to 1205200.
+  // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=city:san-francisco gzip 193700 to 196500.
+  "?at=city:san-francisco": { raw: 1205200, gzip: 196500, label: "a Bay Area city" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston raw 1057000 to 1075700.
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston gzip 168000 to 170700.
-  "?at=city:boston": { raw: 1075700, gzip: 170700, label: "Boston" },
+  // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston raw 1075700 to 1096100.
+  // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston gzip 170700 to 173500.
+  "?at=city:boston": { raw: 1096100, gzip: 173500, label: "Boston" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska raw 867100 to 886400.
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska gzip 130500 to 132800.
-  "?at=state:nebraska": { raw: 886400, gzip: 132800, label: "a Plains state" },
+  // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska raw 886400 to 937900.
+  // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska gzip 132800 to 142000.
+  "?at=state:nebraska": { raw: 937900, gzip: 142000, label: "a Plains state" },
 };
 for (const [search, b] of Object.entries(BUDGET)) {
   test("first-load data bytes for " + b.label + " stay under the pinned budget and far under the whole lite file", async () => {

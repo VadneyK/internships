@@ -1,0 +1,38 @@
+{
+  "opens_iso": null,
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "notes": "This is a state overview. Kentucky has 10 local workforce areas. In-school youth must be low-income and meet a listed barrier. Out-of-school youth must meet a listed barrier. Ask the youth career planner for your area about your case.",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "id": "kentucky-wioa-youth-program-career-center",
+  "name": "WIOA Youth Program",
+  "org": "Kentucky Career Center, Department of Workforce Investment",
+  "regions": [
+    "kentucky"
+  ],
+  "city": "Statewide, KY",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Get help with school, job skills and career plans. Services can include paid or unpaid work, summer jobs, internships, job shadowing, tutoring and mentoring. Kentucky has 10 local workforce areas.",
+  "min_age": 14,
+  "max_age": 24,
+  "who_can_apply": "In-school youth ages 14 to 21 who are low-income and have at least one listed barrier. A barrier can be being behind in basic skills or having a disability. Out-of-school youth are ages 16 to 24 and need at least one listed barrier, such as having dropped out of school.",
+  "paid_type": "mixed",
+  "pay_detail": "Work experience can be paid or unpaid. Pay is not stated on the program page.",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "year-round",
+  "deadline_text": "Programs run all year. No deadline is listed.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Contact the youth career planner for your area. A map on the program page shows them. You can also contact any Kentucky Career Center office.",
+  "url": "https://kcc.ky.gov/Training/Pages/Youth.aspx",
+  "priority": 2,
+  "sources_fetched": [
+    "https://kcc.ky.gov/Training/Pages/Youth.aspx"
+  ]
+}

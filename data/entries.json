@@ -1522,6 +1522,45 @@
   "verified_on_label": "Oct 12, 2026"
  },
  {
+  "opens_iso": null,
+  "grades": "Grades 8 to 12",
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "notes": "Tracks in 2026 were Choose Your Adventure, Animal Science Roundup, MVP Leadership, Mission Moon and Horticulture. Cancel by June 1 for a full refund. After that there are no refunds.",
+  "needs_work_permit": false,
+  "deadline_iso": null,
+  "id": "ames-iowa-4h-youth-conference-iowa-state",
+  "name": "Iowa 4-H Youth Conference",
+  "org": "Iowa State University Extension and Outreach, Iowa 4-H",
+  "regions": [
+   "iowa"
+  ],
+  "city": "Ames, IA",
+  "type": "leadership",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Spend three days on the Iowa State campus. You go to workshops, tours and evening events, build leadership skills and explore careers. You stay in a residence hall.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "Youth in 8th through 12th grade, both 4-H members and non-members. Check the program page for exactly how grade level is counted.",
+  "paid_type": "fee-based",
+  "pay_detail": "$260 for 4-H members and $275 for non-members in 2026. Financial help is offered.",
+  "season": "summer",
+  "duration": "3 days (June 23 to 25 in 2026)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The 2026 conference was June 23 to 25. Registration ran from April 1 to June 1, 2026. Dates for 2027 are not posted. Expect a spring sign up again.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Register in 4-H Online and pick a session track. Fill out the financial help form by the same date if you need it.",
+  "url": "https://www.extension.iastate.edu/4h/iowa4hyouthconference",
+  "priority": 2,
+  "sources_fetched": [
+   "https://www.extension.iastate.edu/4h/iowa4hyouthconference"
+  ],
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "id": "ames-iowa-state-rise-with-wise-summer",
   "name": "Iowa State RISE with WiSE Summer Experience",
   "org": "Program for Women in Science and Engineering, Iowa State University",
@@ -8925,6 +8964,48 @@
   "verified_on_label": "Oct 13, 2026"
  },
  {
+  "id": "boise-idaho-humane-society-student-service",
+  "name": "Idaho Humane Society Student Service and Teen Volunteering",
+  "org": "Idaho Humane Society",
+  "regions": [
+   "idaho"
+  ],
+  "city": "Boise, ID",
+  "type": "volunteer",
+  "fields": [
+   "social-impact",
+   "any"
+  ],
+  "what_you_do": "Tour the animal shelter, learn how it works, and help with jobs like dishes, laundry, yard work and washing windows. Students 14 and older can later become long-term volunteers.",
+  "min_age": 12,
+  "max_age": 17,
+  "grades": "Grades 7 to 12 for Student Service",
+  "who_can_apply": "Student Service is for grades 7 to 12. Long-term volunteering is open to ages 12 to 17 with a pre-approved adult who volunteers with you. The Student Service Mentor path is for ages 14 and up after 3 sessions in a semester.",
+  "paid_type": "fee-based",
+  "pay_detail": "Short sessions cost $15 each. Scholarships are available. Homeschool groups pay $40 per group.",
+  "season": "year-round",
+  "duration": "Short sessions. Long-term volunteers sign up for at least 6 months.",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline. Register for each session you want to attend. Session dates are not stated on the program page.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use the Register Now button on the program page for grades 7 to 12. You must register for each session. For long-term volunteering, teens under 18 must volunteer with a pre-approved adult, and only the adult can handle animals.",
+  "needs_work_permit": false,
+  "url": "https://idahohumanesociety.org/programs/humane-education/service-hours-for-students/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://idahohumanesociety.org/programs/humane-education/service-hours-for-students/",
+   "https://idahohumanesociety.org/volunteers-12-15/",
+   "https://idahohumanesociety.org/volunteers-aged-16-17"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "Sessions meet at the Education Center, 1300 S Bird Street, Boise. Parents do not have to stay. Phone 208-342-3508.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "id": "boise-idaho-labor-wioa-youth-employment-services",
   "name": "Youth Employment Services (Idaho Department of Labor)",
   "org": "Idaho Department of Labor",
@@ -9082,6 +9163,46 @@
    "https://www.boisestate.edu/healthsciences/summer-camp/"
   ],
   "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "boise-state-stem-gems-summer-camp",
+  "name": "STEM Gems Summer Camp",
+  "org": "Boise State University College of Engineering",
+  "regions": [
+   "idaho"
+  ],
+  "city": "Boise, ID",
+  "type": "pre-college",
+  "fields": [
+   "engineering",
+   "science"
+  ],
+  "what_you_do": "Go to a free overnight STEM camp at Boise State. Try workshops in engineering and science topics and see what college is like.",
+  "min_age": 14,
+  "max_age": 17,
+  "grades": "Currently in 9th, 10th or 11th grade",
+  "who_can_apply": "Students currently in 9th, 10th or 11th grade (ages 14 to 17). Only 50 students are chosen.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free to attend. It is not a paid job.",
+  "season": "summer",
+  "duration": "Overnight camp (length and dates not stated on the program page)",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Applications for summer 2026 are closed. They reopen in early 2027. A closing date is not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply when the application opens in early 2027. Chosen students get an email by mid May saying they have a spot. Questions: visitCOEN@boisestate.edu or 208-426-2688.",
+  "needs_work_permit": false,
+  "url": "https://www.boisestate.edu/coen-mssc/community-outreach-recruitment/events-for-prospective-first-year-or-transfer-students/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.boisestate.edu/coen-mssc/community-outreach-recruitment/events-for-prospective-first-year-or-transfer-students/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 1,
+  "notes": "The camp page does not list camp dates or the steps of the application. Watch the page in early 2027.",
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "id": "boise-watershed-action-team",
@@ -12622,6 +12743,86 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "grades": null,
+  "min_age": 13,
+  "max_age": 18,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "id": "cedar-city-suu-suma-teen-art-camp",
+  "name": "Teen Art Camp: SUMA ARTventures",
+  "org": "Southern Utah Museum of Art, Southern Utah University",
+  "regions": [
+   "utah"
+  ],
+  "city": "Cedar City, UT",
+  "type": "pre-college",
+  "fields": [
+   "arts-media"
+  ],
+  "what_you_do": "Make art inspired by nature for four days. Try photo methods, outdoor painting, printmaking and collage. You also tour the museum galleries.",
+  "who_can_apply": "Teens ages 13 to 18. No experience is needed.",
+  "paid_type": "fee-based",
+  "pay_detail": "$25 per ticket. All supplies are included. Friends of SUMA members get a discount.",
+  "season": "summer",
+  "duration": "4 days, 12:30 to 4 p.m. (June 16 to 19 in 2026)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The 2026 camp ran June 16 to 19, 2026. The 2027 dates are not posted.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Buy a ticket from the link on the program page. Email sumafriends@suu.edu for a Friends of SUMA member discount code.",
+  "url": "https://www.suu.edu/suma/learn-with-suma/teen-programs.html",
+  "priority": 3,
+  "notes": "Supplies are paid for by Cedar City RAP Tax funds. Contact the museum at suma@suu.edu.",
+  "sources_fetched": [
+   "https://www.suu.edu/suma/learn-with-suma/teen-programs.html"
+  ],
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "grades": null,
+  "min_age": 15,
+  "max_age": 18,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "id": "cedar-city-suu-youth-engineering-academy-teen-camps",
+  "name": "SUU/BZI Youth Engineering Academy Teen Camps",
+  "org": "Southern Utah University and Southwest Tech",
+  "regions": [
+   "utah"
+  ],
+  "city": "Cedar City, UT",
+  "type": "pre-college",
+  "fields": [
+   "engineering",
+   "tech-cs",
+   "trades"
+  ],
+  "what_you_do": "Join a summer STEM camp for teens. Past topics include green energy, cybersecurity and AI, welding and culinary. You try real career skills with hands-on projects.",
+  "who_can_apply": "Ages 15 to 18. You must have finished 8th grade and be enrolled in high school.",
+  "paid_type": "not-stated",
+  "pay_detail": "Cost is not stated on the program pages. You pay at online registration.",
+  "season": "summer",
+  "duration": "Camp lengths vary. See the camp calendar.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Registration opens in January. Each camp closes when it is full or about two weeks before it starts.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Register and pay online by picking your age group and camp. Within 5 business days you get an email with papers to fill out before camp. Questions: stemsummercamps@suu.edu.",
+  "url": "https://www.suu.edu/yea/grades10-12.html",
+  "sources_fetched": [
+   "https://www.suu.edu/yea/grades10-12.html",
+   "https://www.suu.edu/yea/",
+   "https://www.suu.edu/yea/how-to-register.html"
+  ],
+  "priority": 2,
+  "notes": "Camps run at both SUU and Southwest Tech. The program page says registration opens in January. Each camp closes when it is full or about two weeks before it starts. All paperwork must be finished before the first day of camp.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "id": "cedar-rapids-parks-recreation-seasonal-jobs",
   "name": "Cedar Rapids Parks and Recreation Seasonal Jobs (Lifeguard, Day Camp, Parks)",
   "org": "City of Cedar Rapids Parks and Recreation",
@@ -12701,6 +12902,46 @@
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "cei-summer-stem-bridge-idaho-falls",
+  "name": "Summer STEM Bridge",
+  "org": "College of Eastern Idaho",
+  "regions": [
+   "idaho"
+  ],
+  "city": "Idaho Falls, ID",
+  "type": "pre-college",
+  "fields": [
+   "tech-cs",
+   "science"
+  ],
+  "what_you_do": "Take two college classes in person over eight weeks. One class is network security. The other is a math class. You also go on two field trips to Idaho National Laboratory and build a portfolio.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school sophomore, junior or senior in the 2026/2027 school year, or a 2026 graduate",
+  "who_can_apply": "High school students who meet one or more rules, such as being an Idaho resident or attending an Idaho high school, or being 16. Sophomores who are not yet 16 on the first day of class need an age waiver. Homeschool students can join if they meet the same age or grade level.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Free. All student costs are covered by grants, scholarships or state funding. Earn 5 to 6 college credits.",
+  "season": "summer",
+  "duration": "8 weeks, Tuesday to Thursday mornings (June 2 to July 23 in 2026)",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 program ran June 2 to July 23, 2026. Registration was completed by May. The program page does not mention a 2027 session.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the interest form to hold a spot on the waiting list. Go to the information meeting. Then finish official registration and send your transcript and test scores.",
+  "needs_work_permit": false,
+  "url": "https://www.cei.edu/summer-stem-bridge",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.cei.edu/summer-stem-bridge"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "Classes meet in person on the Idaho Falls campus. Hours were 8:30 am to 1:00 pm. Check the page next spring to see if the program returns.",
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "id": "central-oregon-camp-lead-heart-of-oregon-corps",
@@ -23987,6 +24228,46 @@
   "verified_on_label": "Oct 13, 2026"
  },
  {
+  "opens_iso": null,
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "notes": "The shelter can verify hours for the Silver Cord award. Ages 10 to 16 cannot come alone. A parent or guardian must stay for the whole shift. Questions: volunteer@arl-iowa.org.",
+  "needs_work_permit": false,
+  "deadline_iso": null,
+  "id": "des-moines-animal-rescue-league-of-iowa-teen-volunteers",
+  "name": "Teen Volunteers at the Animal Rescue League",
+  "org": "Animal Rescue League of Iowa",
+  "regions": [
+   "iowa"
+  ],
+  "city": "Des Moines, IA",
+  "type": "volunteer",
+  "fields": [
+   "science",
+   "social-impact"
+  ],
+  "what_you_do": "Volunteer at the Animal Rescue League of Iowa shelter. The program page does not list the exact jobs.",
+  "min_age": 10,
+  "max_age": 17,
+  "who_can_apply": "Kids can volunteer from age 10. Those under 17 must have a parent or guardian with them during their shift. Teens who are 17 can volunteer with a parent or guardian's signature.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "year-round",
+  "deadline_text": "No deadline is listed. Fill out the volunteer application.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the volunteer application on the shelter website. Some roles, such as the Litter-ary Club, need orientation first. Email the volunteer team with questions.",
+  "url": "https://arl-iowa.org/get-involved/for-kids/",
+  "priority": 3,
+  "sources_fetched": [
+   "https://arl-iowa.org/get-involved/for-kids/"
+  ],
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "id": "des-moines-art-center-teen-arts-academy",
   "name": "Des Moines Art Center Teen Arts Academy and Teen Clay Academy",
   "org": "Des Moines Art Center",
@@ -24181,6 +24462,48 @@
   "verified_on": "2026-10-13",
   "priority": 2,
   "notes": "The program page does not list local office addresses or phone numbers. Iowa Workforce Development is at 1000 East Grand Avenue, Des Moines, IA 50319.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "opens_iso": null,
+  "grades": "Entering grade 9 or above",
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "notes": "Summer camp runs 9 to 4, Monday to Friday, from June to mid-August. Questions: daycamp@lhf.org.",
+  "needs_work_permit": false,
+  "deadline_iso": null,
+  "id": "des-moines-living-history-farms-junior-day-camp-counselor",
+  "name": "Day Camp Junior Counselor",
+  "org": "Living History Farms",
+  "regions": [
+   "iowa"
+  ],
+  "city": "Urbandale, IA",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "environment"
+  ],
+  "what_you_do": "Help staff counselors run summer day camp on a 500 acre living history farm. You lead games and songs, help with crafts, set up and clean up, and are a role model for campers.",
+  "min_age": 14,
+  "max_age": 18,
+  "who_can_apply": "Age 14 by June 1 and no older than 18, entering grade 9 or above in the fall. A parent or guardian must sign the application. Teens who turn 18 during camp need a background check.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role. Hours may count toward a school Silver Cord award, so check with your school.",
+  "season": "summer",
+  "duration": "At least 2 weeks for new junior counselors, scheduled 8:30 to 4:15, Monday to Friday",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The program page still shows 2026 dates: group interviews on March 26, April 7 and April 11, and training on April 18. The volunteer page says applications will reopen in early 2027. Exact dates are not posted yet.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the application. A parent or guardian must also sign it. Go to a 1-hour group interview. If accepted, attend a 3-hour training and then sign up for your weeks.",
+  "url": "https://www.lhf.org/junior-counselors/",
+  "sources_fetched": [
+   "https://www.lhf.org/Junior-Counselors/",
+   "https://www.lhf.org/volunteer/",
+   "https://www.lhf.org/junior-counselors/"
+  ],
+  "priority": 2,
   "verified_on_label": "Oct 13, 2026"
  },
  {
@@ -34206,6 +34529,48 @@
   "verified_on_label": "Oct 13, 2026"
  },
  {
+  "id": "hawaii-doe-student-internships-doe-offices-and-schools",
+  "name": "Hawaii DOE Student Summer Internships (DOE Offices and Schools)",
+  "org": "Hawaii State Department of Education",
+  "regions": [
+   "hawaii"
+  ],
+  "city": "Statewide, HI",
+  "type": "internship",
+  "fields": [
+   "education",
+   "business-finance",
+   "food-hospitality",
+   "health"
+  ],
+  "what_you_do": "Work a summer internship at a Hawaii DOE state office, a complex area office, or a school. Each internship has its own duties and hours.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": "10 to 11 (sophomores and juniors)",
+  "who_can_apply": "Students who are at least 16. Summer 2026 was for high school sophomores (Class of 2028), juniors (Class of 2027), or students in a Community School for Adults. A program of study that fits the internship is preferred.",
+  "paid_type": "not-stated",
+  "pay_detail": "Pay is not stated on the program page.",
+  "season": "summer",
+  "duration": "Dates and hours vary by internship. Summer 2026 ran June to July.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Summer 2026 applications opened Mar 30, 2026 and closed Apr 10, 2026. Summer 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Download the Student Intern Casual Employment Application and fill it out. Email it to the contact for the internship you want, or drop off a paper copy. High school internships are only for students at that school.",
+  "needs_work_permit": null,
+  "url": "https://hawaiipublicschools.org/2026-student-internship-opportunities-open-for-summer-2026/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://hawaiipublicschools.org/2026-student-internship-opportunities-open-for-summer-2026/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "The positions list is a separate sheet linked from the program page.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "id": "hawaii-kupu-aina-corps",
   "grades": null,
   "opens_iso": null,
@@ -34247,6 +34612,168 @@
    "hawaii"
   ],
   "verified_on_label": "Oct 10, 2026"
+ },
+ {
+  "id": "hawaii-rep-matsumoto-high-school-internship",
+  "name": "Rep. Matsumoto High School Legislative Internship",
+  "org": "Office of Hawaii State Representative Lauren Cheape Matsumoto",
+  "regions": [
+   "hawaii"
+  ],
+  "city": "Honolulu, HI",
+  "type": "internship",
+  "fields": [
+   "law-government"
+  ],
+  "what_you_do": "Help a state lawmaker's office during the legislative session. Some interns may continue through the end of the session after May.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "11 to 12",
+  "who_can_apply": "Juniors and seniors in good academic standing. The program page gives no age rule.",
+  "paid_type": "unpaid",
+  "pay_detail": "The program page says these are non-paid positions.",
+  "season": "school-year",
+  "duration": "Not stated on the program page",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "Not stated on the program page.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Send an application, a resume, a news-style writing sample and one recommendation letter. You can apply online through the link on the page, or mail or email the materials. Phone: 808-586-9490.",
+  "needs_work_permit": false,
+  "url": "https://repmatsumoto.com/high-school-internships",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://repmatsumoto.com/high-school-internships"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 3,
+  "notes": "This is one lawmaker's office. The page does not say if you must live in her district. The email link on the page may point to the wrong address, so use the phone number to confirm.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "hawaii-schatz-senate-high-school-internship",
+  "name": "Senator Schatz High School Internship Program (Hawaii)",
+  "org": "Office of U.S. Senator Brian Schatz",
+  "regions": [
+   "hawaii"
+  ],
+  "city": "Statewide, HI",
+  "type": "internship",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Work with a U.S. Senate office from home. The internship is virtual, and the work is done outside school hours.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "Hawaii students at public, private, charter or homeschool. You need a GPA of 2.5 or better and email access. Students in their last year of school get strong preference.",
+  "paid_type": "not-stated",
+  "pay_detail": "Pay is not stated for the high school internship on the program page.",
+  "season": "school-year",
+  "duration": "Late September through April. You must commit to the full term.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 to 2027 application closed on Aug 19, 2026. The page says the 2027 to 2028 application will be posted in spring 2027.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Check the program page in spring 2027 for the new application. Questions: HighSchool_Internship@schatz.senate.gov or the Hawaii office at 808-523-2061.",
+  "needs_work_permit": false,
+  "url": "https://www.schatz.senate.gov/services/internships-and-jobs/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.schatz.senate.gov/services/internships-and-jobs/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "Interns are picked for work in the community and a mix of interests. You do not need student government experience. This program is virtual.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "hawaii-uh-early-college-dual-credit",
+  "name": "UH Early College (College Classes at Your High School)",
+  "org": "University of Hawaii System and Hawaii State Department of Education",
+  "regions": [
+   "hawaii"
+  ],
+  "city": "Statewide, HI",
+  "type": "school-pathway",
+  "fields": [
+   "education",
+   "any"
+  ],
+  "what_you_do": "Take college classes with other high school students, offered at your high school, online, or as a mix of both. A college professor or a qualified high school teacher leads the class. Classes at the 100 level and above earn high school and college credit.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "Students at a participating Hawaii public high school. Each high school decides which classes it offers, so ask your counselor.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free to students at Hawaii public schools in the program, thanks to state funding. You are not paid.",
+  "season": "school-year",
+  "duration": "Classes run during the school year",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Deadlines are set by each UH campus. Ask your counselor.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Meet with your high school counselor first. Then fill out the UH System application and the online Dual Credit Application. Get the signatures, and send both to the UH campus by its deadline.",
+  "needs_work_permit": false,
+  "url": "https://www.hawaii.edu/dualcredit/early-college/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.hawaii.edu/dualcredit/early-college/",
+   "https://www.hawaii.edu/dualcredit/how-to-apply/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "The program page says 53 public high schools offered Early College in the 2023 to 2024 school year. Classes are face to face, online or mixed. Classes at the 100 level and above earn college credit.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "hawaii-uh-running-start-dual-credit",
+  "name": "UH Running Start (College Classes for High School Students)",
+  "org": "University of Hawaii System and Hawaii State Department of Education",
+  "regions": [
+   "hawaii"
+  ],
+  "city": "Statewide, HI",
+  "type": "school-pathway",
+  "fields": [
+   "education",
+   "any"
+  ],
+  "what_you_do": "Take a college class at a University of Hawaii campus while you are in high school. You earn high school credit and college credit.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "Students at a Hawaii public or charter high school who meet the college campus admission rules and are under 21 on September 1 of the school year. UH Manoa does not take part in Running Start.",
+  "paid_type": "fee-based",
+  "pay_detail": "Varies. Student or family, the high school, or a scholarship may pay. A GEAR UP scholarship for students with low family income covers tuition, fees and books for one class, but the page says it will not be offered after the Summer 2026 term.",
+  "season": "year-round",
+  "duration": "One college class per term in fall, spring or summer",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Deadlines are set by each UH campus. Ask your counselor.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Meet with your high school counselor first. Then fill out the UH System application and the online Dual Credit Application. Get the signatures, and send both to the UH campus by its deadline.",
+  "needs_work_permit": false,
+  "url": "https://www.hawaii.edu/dualcredit/running-start/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.hawaii.edu/dualcredit/",
+   "https://www.hawaii.edu/dualcredit/running-start/",
+   "https://www.hawaii.edu/dualcredit/how-to-apply/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "Nine UH campuses take part. You must also pass the placement tests the campus asks for. Private school students may be able to use an Early Admit program instead. Ask the UH campus.",
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "id": "hayward-area-recreation-park-district-volunteers",
@@ -34852,6 +35379,47 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "honolulu-friends-of-library-hawaii-volunteer",
+  "name": "Friends of the Library of Hawaii Volunteer",
+  "org": "Friends of the Library of Hawaii",
+  "regions": [
+   "hawaii"
+  ],
+  "city": "Honolulu, HI",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "social-impact"
+  ],
+  "what_you_do": "Help sort, price and sell donated books and other items. Volunteers also help with the big book sales.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Volunteers must be 16 or older. The online form also asks you to say you are over 18, so ask the group which rule applies to a 16 or 17 year old.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer work.",
+  "season": "year-round",
+  "duration": "Not stated. Commitments can be once a day, once a week, or as often as you can come.",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Not stated on the program page. Book sales are in January and June.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the online volunteer form, or print the PDF form and mail it in. Then go to an orientation. Questions: admin@friendsofthelibraryofhawaii.org.",
+  "needs_work_permit": false,
+  "url": "https://friendsofthelibraryofhawaii.org/volunteers/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://friendsofthelibraryofhawaii.org/volunteers/",
+   "https://www.librarieshawaii.org/volunteer/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 3,
+  "notes": "This is the Friends group, not the state library system. The state library page says to contact your local branch to ask how you might participate.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "id": "honolulu-hawaii-foodbank-volunteer",
   "grades": null,
   "opens_iso": null,
@@ -35093,6 +35661,46 @@
   "verified_on_label": "Oct 10, 2026"
  },
  {
+  "id": "honolulu-lt-governor-high-school-internship",
+  "name": "Lieutenant Governor High School Internship Program",
+  "org": "Office of the Lieutenant Governor of Hawaii",
+  "regions": [
+   "hawaii"
+  ],
+  "city": "Honolulu, HI",
+  "type": "internship",
+  "fields": [
+   "law-government"
+  ],
+  "what_you_do": "Spend five summer weeks at the State Capitol, in person, and learn how state government works.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": "11 to 12",
+  "who_can_apply": "Hawaii residents who are 16 by the start, have finished sophomore year, and are full-time high school students. Students from any island can apply but must pay for their own housing and travel.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Parking is not provided.",
+  "season": "summer",
+  "duration": "5 weeks, Tuesdays and Thursdays, 9am to noon",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 internship ran June 15 to July 16, 2026. Its deadline was Apr 15, 2026. Next year's dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the application. Email it with your unofficial transcript, one letter of recommendation and an essay of 500 to 700 words. Send it to ltgov.internships@hawaii.gov. Some students are then interviewed.",
+  "needs_work_permit": false,
+  "url": "https://ltgov.hawaii.gov/internship/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://ltgov.hawaii.gov/internship/",
+   "https://ltgov.hawaii.gov/wp-content/uploads/2025/11/OLG-HS-Internship-App-FD-10.15-pdf.pdf"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "Very small group: the page says six students are picked. The page and form differ on the start date (June 15 or June 16), and its FAQ still shows some 2025 dates, so confirm with the office.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "grades": null,
   "opens_iso": null,
   "deadline_iso": null,
@@ -35131,6 +35739,46 @@
   ],
   "priority": 2,
   "notes": "The museum matches volunteers to openings, so you may wait to hear back. Teen roles are not described on the main program page. The older application form is what shows the high school box, the parent consent part, the background check and the interview.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "honolulu-oha-aha-opio-youth-leadership",
+  "name": "ʻAha ʻŌpio o OHA",
+  "org": "Office of Hawaiian Affairs",
+  "regions": [
+   "hawaii"
+  ],
+  "city": "Honolulu, HI",
+  "type": "leadership",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Spend six days in Honolulu with other high school students. The program is overnight, and OHA covers airfare, lodging and meals for chosen students.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school (rising seniors preferred)",
+  "who_can_apply": "Students now in high school or the same level. Rising seniors get first pick. Your application is checked through the OHA Hawaiian Registry Program. A parent or guardian fills it out with you.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free for chosen students. OHA pays interisland airfare, lodging, meals and program travel. You are not paid.",
+  "season": "summer",
+  "duration": "Six days, overnight. The 2026 program ran June 21 to 26.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "The next program is listed as Summer 2027, dates to be set. The online application link says coming soon. No deadline is posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Watch the program page for the online application. You write short answers and an essay, and a teacher, counselor, mentor or boss fills out a recommender form. New applicants also finish the Hawaiian Registry Program application. Call (808) 594-1835 for help.",
+  "needs_work_permit": false,
+  "url": "https://www.oha.org/educational-pathways/ahaopio/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.oha.org/educational-pathways/ahaopio/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "The program page does not spell out an ancestry rule, but it uses the Hawaiian Registry Program to verify applicants. Ask OHA if you are not sure you qualify. You get yourself to the airport.",
   "verified_on_label": "Oct 13, 2026"
  },
  {
@@ -35253,6 +35901,47 @@
    "https://www.queens.org/volunteer"
   ],
   "verified_on_label": "Oct 10, 2026"
+ },
+ {
+  "id": "honolulu-uh-manoa-early-college-scholars",
+  "name": "UH Manoa Early College Scholars",
+  "org": "University of Hawaii at Manoa Outreach College",
+  "regions": [
+   "hawaii"
+  ],
+  "city": "Honolulu, HI",
+  "type": "school-pathway",
+  "fields": [
+   "education",
+   "any"
+  ],
+  "what_you_do": "Take a UH Manoa college class, usually at your own high school. You earn high school credit and college credit, and you start a real college transcript.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "10 to 12",
+  "who_can_apply": "Students in grades 10 to 12 with a 2.8 or higher GPA, at a Hawaii high school that offers a UH Manoa course. A 2.8 GPA is a minimum and does not guarantee a spot.",
+  "paid_type": "unpaid",
+  "pay_detail": "The program page says there are no tuition or fee costs to students. You are not paid.",
+  "season": "school-year",
+  "duration": "One college course per term",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Final deadlines: Spring 2027 is Nov 20, 2026. Summer 2027 and Fall 2027 are Apr 15, 2027.",
+  "deadline_iso": "2026-11-20",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Talk to your high school college counselor first. The program page sends you to its How to Apply page for the steps.",
+  "needs_work_permit": false,
+  "url": "https://www.outreach.hawaii.edu/pre-college-at-uhm/early-college-scholars/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.outreach.hawaii.edu/pre-college-at-uhm/early-college-scholars/",
+   "https://www.outreach.hawaii.edu/pre-college-at-uhm/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "Your high school must offer a UH Manoa course. The college work is hard, and past grades in college classes may be looked at. This program was called Manoa Academy before.",
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "id": "honolulu-uh-manoa-marine-science-investigations-himb",
@@ -35916,6 +36605,46 @@
   "verified_on_label": "Oct 12, 2026"
  },
  {
+  "id": "idaho-4h-state-teen-association-convention",
+  "name": "Idaho 4-H State Teen Association Convention (STAC)",
+  "org": "University of Idaho Extension, Idaho 4-H",
+  "regions": [
+   "idaho"
+  ],
+  "city": "Statewide, ID",
+  "type": "leadership",
+  "fields": [
+   "education",
+   "any"
+  ],
+  "what_you_do": "Spend four days on a college campus. Go to workshops, tour the campus and community, do a service project, and meet teens from across Idaho. You also explore careers and college.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Youth who have completed 8th through 12th grade",
+  "who_can_apply": "Youth who have completed 8th through 12th grade. Both 4-H and non-4-H members can come. Adult chaperones must be certified.",
+  "paid_type": "fee-based",
+  "pay_detail": "4-H members pay $335 if they sign up April 10 to May 15, or $395 May 16 to May 31. Non-4-H members pay $390 or $435. Price includes lodging, meals and transportation.",
+  "season": "summer",
+  "duration": "4 days",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 event was June 22 to 25, 2026. The last price window ended May 31. 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "The program page does not say how to sign up. Email fourh@uidaho.edu or call 208-885-6321 to ask.",
+  "needs_work_permit": false,
+  "url": "https://www.uidaho.edu/extension/4h/events/stac",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.uidaho.edu/extension/4h/events/stac"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "Not stated on the program page: the exact location and a closing date. Plan to sign up by mid May, because prices go up on May 16. Teens do not have to be in 4-H.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "grades": null,
   "opens_iso": null,
   "apply_url": null,
@@ -35954,6 +36683,126 @@
    "https://www.idahofallsidaho.gov/746/Junior-Zoo-Crew"
   ],
   "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "idaho-foodbank-youth-volunteers",
+  "name": "The Idaho Foodbank Volunteer Shifts",
+  "org": "The Idaho Foodbank",
+  "regions": [
+   "idaho"
+  ],
+  "city": "Meridian, Pocatello and Lewiston, ID",
+  "type": "volunteer",
+  "fields": [
+   "social-impact",
+   "food-hospitality"
+  ],
+  "what_you_do": "Sort donated food, repack bulk food into family size bags, label cans and build backpack food inserts. Shifts are in a warehouse.",
+  "min_age": 8,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Volunteers ages 8 and up. Volunteers 15 and younger must be with an adult volunteer. Each person makes their own account.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteering.",
+  "season": "year-round",
+  "duration": "Shifts are booked in advance (length not stated on the program page)",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline. Book a shift any time.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Make an account and book a shift in the VolunteerHub system. Wear closed-toe, closed-heel shoes. Download the minor waiver if you are under 18.",
+  "needs_work_permit": false,
+  "url": "https://idahofoodbank.org/get-involved/give-time/",
+  "apply_url": "https://idahofoodbank.volunteerhub.com/",
+  "sources_fetched": [
+   "https://idahofoodbank.org/get-involved/give-time/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "The warehouse is not heated or cooled, so wear layers. Groups of more than 18 use the group request form.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "idaho-natural-resources-camp-ketchum",
+  "name": "Natural Resources Camp (University of Idaho Extension)",
+  "org": "University of Idaho Extension",
+  "regions": [
+   "idaho"
+  ],
+  "city": "Ketchum, ID",
+  "type": "pre-college",
+  "fields": [
+   "environment",
+   "science"
+  ],
+  "what_you_do": "Spend a week at camp learning about wildlife, forestry, soils, rangeland and water. Do hands-on labs and talks with natural resource workers. Also hike, fish, shoot archery and compete in camp contests.",
+  "min_age": 12,
+  "max_age": 16,
+  "grades": null,
+  "who_can_apply": "Ages 12 to 16. Teachers can also attend.",
+  "paid_type": "fee-based",
+  "pay_detail": "$310 for students. It covers food, lodging and medical insurance. Rides to camp are not included. Scholarships are offered through local Idaho Soil Conservation Districts.",
+  "season": "summer",
+  "duration": "6 days (June 15 to 20 in 2026)",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 camp ran June 15 to 20, 2026. The $310 fee was due by May 20. 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Mail three things to the camp director at the University of Idaho in Moscow. Send a signed application, the health and medical release form, and the fee. If cost is a problem, ask about scholarships first.",
+  "needs_work_permit": false,
+  "url": "https://www.uidaho.edu/extension/natural-resources/camp",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.uidaho.edu/extension/natural-resources/camp"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "The camp is at the Central Idaho 4-H Camp north of Ketchum. Parents must drive campers to and from camp. The program page lists no closing date other than the May 20 payment date. Scholarship contact is Randy Brooks at 208-885-6356.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "idaho-science-and-aerospace-scholars",
+  "name": "Idaho Science and Aerospace Scholars (ISAS)",
+  "org": "Idaho State Department of Education",
+  "regions": [
+   "idaho"
+  ],
+  "city": "Statewide, ID",
+  "type": "pre-college",
+  "fields": [
+   "science",
+   "engineering"
+  ],
+  "what_you_do": "Take an online course made by NASA about space travel. It has eight units and a project. Top students may be invited to a week at the University of Idaho. There you plan a pretend mission to Mars with mentors.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school juniors",
+  "who_can_apply": "High school juniors. Other rules are not stated on the program page.",
+  "paid_type": "not-stated",
+  "pay_detail": "Cost is not stated on the program page. Students may earn one science credit.",
+  "season": "school-year",
+  "duration": "Online course during the school year. Summer academy is one week for chosen students.",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "The 2026-2027 application is open. A closing date is not stated on the program page.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the 2026-2027 ISAS application online. If you are not a junior yet, join the email list on the program page. Questions: isas@sde.idaho.gov.",
+  "needs_work_permit": false,
+  "url": "https://www.sde.idaho.gov/about-us/departments/content-and-curriculum/idaho-science-and-aerospace-scholars/",
+  "apply_url": "https://futurevandals.uidaho.edu/register/isas26",
+  "sources_fetched": [
+   "https://www.sde.idaho.gov/about-us/departments/content-and-curriculum/idaho-science-and-aerospace-scholars/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 1,
+  "notes": "The program is competitive. Summer academy dates and cost are not stated on the program page. Program contact is Erin Lanigan at 208-885-1232.",
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "grades": null,
@@ -37431,6 +38280,46 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "inl-future-corps-high-school-internship",
+  "name": "K-12 STEM Future Corps (INL high school internship)",
+  "org": "Idaho National Laboratory",
+  "regions": [
+   "idaho"
+  ],
+  "city": "Idaho Falls, ID",
+  "type": "internship",
+  "fields": [
+   "trades",
+   "engineering"
+  ],
+  "what_you_do": "Work six weeks at Idaho National Laboratory. Start with a week of orientation and job skills. Then rotate through facilities doing hands-on work like machining, welding, drafting and heavy equipment. End with a project and a talk.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "11th or 12th grade",
+  "who_can_apply": "11th or 12th graders who have taken a career and technical education (CTE) course. The fact sheet says students come from schools that have partnered with INL. Ask your school if it is a partner.",
+  "paid_type": "paid",
+  "pay_detail": "Paid. The pay rate is not stated on the fact sheet. Transportation, food and safety gear are provided.",
+  "season": "summer",
+  "duration": "6 weeks, mid June to early August",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "Application dates are not posted. The fact sheet is dated January 2025 and says the program intends to run from mid June to early August.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Send a resume, an unofficial transcript and the application. INL checks that you are eligible, then interviews some applicants, then runs a background check. Ask your school CTE teacher or email russell.campbell@inl.gov.",
+  "needs_work_permit": null,
+  "url": "https://inl.gov/content/uploads/2024/11/25-50014-003_K-12-STEM-Future-Corps-FactSheet_R4.pdf",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://inl.gov/content/uploads/2024/11/25-50014-003_K-12-STEM-Future-Corps-FactSheet_R4.pdf"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "This card is based on the INL fact sheet dated January 2025. Confirm current dates at stem.inl.gov. Only students from partner schools can apply.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "id": "inova-high-school-student-volunteers",
   "name": "Inova high school student volunteer sessions",
   "org": "Inova Health System",
@@ -37746,6 +38635,132 @@
   "verified_on_label": "Oct 11, 2026"
  },
  {
+  "opens_iso": null,
+  "grades": "Finished 11th grade (juniors)",
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "notes": "The program does not provide rides. Delegates who bring cars cannot use them during the program, except in emergencies. A valid state ID card is needed to enter Camp Dodge. The program page says the Graduating Class of 2028 is the group for 2027.",
+  "needs_work_permit": false,
+  "deadline_iso": null,
+  "id": "iowa-american-legion-boys-state",
+  "name": "American Legion Boys State of Iowa",
+  "org": "The American Legion of Iowa",
+  "regions": [
+   "iowa"
+  ],
+  "city": "Statewide, IA (held at Camp Dodge, Johnston)",
+  "type": "civic-government",
+  "fields": [
+   "law-government"
+  ],
+  "what_you_do": "Spend six days at Camp Dodge learning how government works. Delegates take part in hands-on government work and leadership events.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "Iowa residents who have finished 11th grade and have at least one semester left before graduating. Must be a U.S. citizen or lawful permanent resident. Exchange students are not accepted. This program is for boys. A local American Legion Post must pick and sponsor you.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid, but free to attend. The local American Legion Post or other donors pay the fee.",
+  "season": "summer",
+  "duration": "6 days (June 20 to 25, 2027)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Delegate registration opens in January 2027 and closes May 1, 2027. The program runs June 20 to 25, 2027. Post reservations open in October 2026.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Contact your local American Legion Post and ask to be picked as a delegate. In January you get a selection email from your post. It has the information you need to register online. The Boys State site also has an Interest Form.",
+  "url": "https://iowaboysstate.org/for-delegates/",
+  "sources_fetched": [
+   "https://ialegion.org/boysstate",
+   "https://iowaboysstate.org/faq/",
+   "https://iowaboysstate.org/timeline/",
+   "https://iowaboysstate.org/for-delegates/"
+  ],
+  "priority": 2,
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "opens_iso": null,
+  "grades": "Grades 9 to 12",
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "notes": "You need a research project first. The national symposium is April 20 to 24, 2027.",
+  "needs_work_permit": null,
+  "deadline_iso": "2027-01-11",
+  "id": "iowa-city-heartland-jshs-research-symposium",
+  "name": "Heartland Junior Science and Humanities Symposium (Heartland-JSHS)",
+  "org": "University of Iowa, Belin-Blank Center",
+  "regions": [
+   "iowa",
+   "nebraska"
+  ],
+  "city": "Iowa City, IA (Iowa and Nebraska students)",
+  "type": "research",
+  "fields": [
+   "science",
+   "engineering",
+   "tech-cs"
+  ],
+  "what_you_do": "Do your own research project. Write a paper about it. If it is picked, present it to judges and compete for scholarships.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "Any high school student in Iowa or Nebraska who is a U.S. citizen or lawful permanent resident. Your paper must follow the rules in the Iowa Research Handbook. Schools can also bring up to five students to attend without presenting.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free to enter and attend. Top finalists can win scholarship prizes.",
+  "season": "winter",
+  "duration": "Two-day symposium on February 22 and 23, 2027",
+  "status": "open-now",
+  "deadline_text": "The paper site opens in October 2026. Papers are due January 11, 2027 (11:59 PM Central). You hear back January 25, 2027. Registration is due February 8, 2027.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Do a research project and write a paper that follows the Iowa Research Handbook. Submit the paper on the program site by the due date. Accepted papers present at the symposium.",
+  "url": "https://belinblank.education.uiowa.edu/students/jshs/",
+  "priority": 2,
+  "sources_fetched": [
+   "https://belinblank.education.uiowa.edu/students/jshs/"
+  ],
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "opens_iso": "2027-01-25",
+  "grades": "Grades 10 to 12",
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "notes": "Costs money. The program also runs 6-week online courses in winter and summer. See the program site for those. Questions: iyws@uiowa.edu or 319-335-4209.",
+  "needs_work_permit": null,
+  "deadline_iso": "2027-02-07",
+  "id": "iowa-city-iyws-summer-residential-writing",
+  "name": "Iowa Young Writers' Studio Summer Residential Program",
+  "org": "University of Iowa, Iowa Young Writers' Studio",
+  "regions": [
+   "iowa"
+  ],
+  "city": "Iowa City, IA",
+  "type": "pre-college",
+  "fields": [
+   "arts-media",
+   "education"
+  ],
+  "what_you_do": "Spend two weeks on campus studying one kind of writing, such as poetry, fiction, playwriting or TV writing. You learn from students and graduates of the Iowa Writers' Workshop.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "Students who are in 10th, 11th or 12th grade when they apply. Students from outside the United States may apply. Students in 9th grade can no longer apply.",
+  "paid_type": "fee-based",
+  "pay_detail": "$2,500 for one 2-week session in 2027 (room, board and teaching included). There is a $10 reading fee to apply, and it can be waived. Need-based financial aid is offered.",
+  "season": "summer",
+  "duration": "2 weeks",
+  "status": "opens-soon",
+  "deadline_text": "Applications open Jan 25, 2027 and close Feb 7, 2027 (11:59 PM Central). Summer 2027 sessions are June 13 to 26 and July 11 to 24.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply online on Submittable during the two-week window. Send a writing sample of up to ten pages. Also send a statement of purpose of 1 to 2 pages. Ask an English or writing teacher, tutor or mentor to upload one letter of recommendation. Decisions go out by email on April 9, 2027.",
+  "url": "https://iyws.program.uiowa.edu/how-to-apply/summer-residential-program",
+  "sources_fetched": [
+   "https://iyws.program.uiowa.edu/",
+   "https://iyws.program.uiowa.edu/2-week-summer-residential-program/fees-and-financial-aid",
+   "https://iyws.program.uiowa.edu/how-to-apply/summer-residential-program"
+  ],
+  "priority": 3,
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "id": "iowa-city-uiowa-belin-blank-sstp-research",
   "name": "University of Iowa Secondary Student Training Program (SSTP), Summer 2027",
   "org": "Belin-Blank Center, University of Iowa",
@@ -37824,6 +38839,48 @@
   "priority": 2,
   "notes": "About 20,800 members in 273 chapters (per the page). Only schools with an ag program have a chapter. The site has no Iowa region, so this card is tagged national and teens in other states may still see it under National. The Iowa only line at the start of What you do and Who can apply is the only guard.",
   "verified_on_label": "Oct 11, 2026"
+ },
+ {
+  "opens_iso": null,
+  "grades": null,
+  "apply_url": "https://workforce.iowa.gov/vr/apply-services",
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "notes": "The program page links to the Transition Alliance Program (TAP). It does not describe TAP. Work-based learning is one part of Pre-ETS. The program page does not say if the work is paid.",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "id": "iowa-vr-pre-ets-students-with-disabilities",
+  "name": "Pre-Employment Transition Services (Pre-ETS)",
+  "org": "Iowa Vocational Rehabilitation Services, Iowa Workforce Development",
+  "regions": [
+   "iowa"
+  ],
+  "city": "Statewide, IA",
+  "type": "school-pathway",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Students with disabilities explore careers, build work skills and try real work. You also get help planning for college or job training. You learn to speak up for yourself.",
+  "min_age": 14,
+  "max_age": 21,
+  "who_can_apply": "Students with a disability who are 14 to 21 years old. Talk to your school staff or your Vocational Rehabilitation high school contact to sign up.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "year-round",
+  "deadline_text": "No deadline is listed. You can start working with the program once you turn 14.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Talk with your school staff or your Vocational Rehabilitation high school contact. You can also apply online, with a paper form, or at your local office. Call 1-800-532-1486 with questions.",
+  "url": "https://workforce.iowa.gov/vr/students-schools/pre-ets",
+  "sources_fetched": [
+   "https://workforce.iowa.gov/vr/students-schools/pre-ets",
+   "https://workforce.iowa.gov/vr/students-schools",
+   "https://workforce.iowa.gov/vr/apply-services",
+   "https://workforce.iowa.gov/vr/students-schools/hs-students"
+  ],
+  "priority": 2,
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "id": "iroquois-job-corps-center",
@@ -38820,6 +39877,46 @@
  },
  {
   "grades": null,
+  "min_age": 13,
+  "max_age": 18,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "season": "summer",
+  "needs_work_permit": null,
+  "id": "kansas-4h-discovery-days-k-state",
+  "name": "Kansas 4-H Discovery Days",
+  "org": "Kansas 4-H Youth Development, Kansas State University",
+  "regions": [
+   "kansas"
+  ],
+  "city": "Manhattan, KS",
+  "type": "leadership",
+  "fields": [
+   "education",
+   "any"
+  ],
+  "what_you_do": "Spend a few days on the K-State campus like a mini college experience. You pick classes, go on tours and meet teens from across Kansas. You build leadership skills.",
+  "who_can_apply": "Youth ages 13 to 18 as of January 1 of the event year.",
+  "paid_type": "fee-based",
+  "pay_detail": "$245 in 2026",
+  "duration": "About 3 days (June 3 to 5 in 2026)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "2026 event was June 3 to 5. The program page says registration is closed and does not list 2027 dates.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Registration for 2026 is closed. The page tells youth to let their Extension unit know which class session they choose. The page does not say how to register next year. Email kansas4h@ksu.edu with questions.",
+  "url": "https://www.kansas4-h.org/educational-experiences/project-based-events/conferences-events/discovery-days/index.html",
+  "priority": 2,
+  "notes": "Not stated on the program page: whether you must be a 4-H member. Ask your county Extension office.",
+  "sources_fetched": [
+   "https://www.kansas4-h.org/educational-experiences/project-based-events/conferences-events/discovery-days/index.html"
+  ],
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "grades": null,
   "max_age": 18,
   "min_age": 16,
   "opens_iso": null,
@@ -38935,6 +40032,45 @@
    "https://www.kemperteens.org/apply"
   ],
   "verified_on_label": "Oct 10, 2026"
+ },
+ {
+  "grades": "Rising freshman through rising senior",
+  "min_age": null,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "season": "summer",
+  "needs_work_permit": false,
+  "id": "kansas-city-ku-health-system-volunteen",
+  "name": "VolunTeen Student Summer Volunteer Program",
+  "org": "The University of Kansas Health System",
+  "regions": [
+   "kansas"
+  ],
+  "city": "Kansas City, KS",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Volunteer for two weeks in a hospital. You see patient care areas and behind-the-scenes jobs and meet people who work there.",
+  "who_can_apply": "Students going into 9th grade can join the rising freshman program. Students going into 10th, 11th or 12th grade can join the other program. The page does not list an age rule.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer program.",
+  "duration": "Rising sophomore to senior: one 2-week session, Monday to Thursday. Rising freshman: half days on Friday mornings, at least 6 Fridays.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The 2026 application deadline was March 6, 2026. The program page does not list 2027 dates.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Use the application link for your program on the program page. You must go to an in-person orientation. Email VolunteerApplications@KUMC.edu or call 913-588-6560.",
+  "url": "https://www.kansashealthsystem.com/giving/ways-to-give/volunteer/high-school-volunteer-program",
+  "priority": 1,
+  "notes": "2026 sessions ran June 1 to July 30. There is also a program page for the Olathe location.",
+  "sources_fetched": [
+   "https://www.kansashealthsystem.com/giving/ways-to-give/volunteer/high-school-volunteer-program"
+  ],
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "grades": null,
@@ -39174,6 +40310,46 @@
    "https://www.kansascityzoo.org/volunteer/volunteen"
   ],
   "verified_on_label": "Oct 10, 2026"
+ },
+ {
+  "grades": null,
+  "min_age": 14,
+  "max_age": 17,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "season": "summer",
+  "needs_work_permit": null,
+  "id": "kansas-rock-springs-ranch-lit-cit",
+  "name": "Leaders in Training and Counselors in Training",
+  "org": "Rock Springs Ranch (Kansas 4-H camp)",
+  "regions": [
+   "kansas"
+  ],
+  "city": "Junction City, KS",
+  "type": "leadership",
+  "fields": [
+   "education",
+   "social-impact"
+  ],
+  "what_you_do": "Spend five nights at a Kansas 4-H camp ranch in a teen leadership program. Leaders in Training (LIT) is for younger teens. Counselors in Training (CIT) is for older teens.",
+  "who_can_apply": "LIT is for ages 14 to 16. CIT is for ages 16 to 17. The page says CIT is especially for rising 12th graders.",
+  "paid_type": "fee-based",
+  "pay_detail": "2026 cost for five nights: LIT $800, $700 or $600 by tier. CIT $650, $550 or $450 by tier. The page says the program can be attended at no cost through a donation to the Kansas 4-H Foundation.",
+  "duration": "Five nights",
+  "status": "closed-expect-reopen",
+  "deadline_text": "2026 sessions ran June 7 to 12, June 14 to 19, July 5 to 10 and July 12 to 17. The program page does not list 2027 dates or a deadline.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the Letter of Interest for LIT or CIT on the program page. You then get instructions on how to register. Call 785-257-3221 with questions.",
+  "url": "https://rockspringsranch.org/sessions-rates/",
+  "priority": 2,
+  "notes": "A camper scholarship (campership) form is linked on the page. Check the page in early 2027 for new dates and prices.",
+  "sources_fetched": [
+   "https://rockspringsranch.org/sessions-rates/"
+  ],
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "opens_iso": null,
@@ -39572,6 +40748,45 @@
   "priority": 2,
   "notes": "High school oral presenters may be picked to go to the American Junior Academy of Science (AJAS 2027, Feb 17 to 21 in Chicago). The page says the academy will pay for sign up, travel and rooms for at least 6 students in 2027. The sign up page does not print the year. Confirm the October dates with the Academy.",
   "verified_on_label": "Oct 10, 2026"
+ },
+ {
+  "opens_iso": null,
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "notes": "This is a state overview. Kentucky has 10 local workforce areas. In-school youth must be low-income and meet a listed barrier. Out-of-school youth must meet a listed barrier. Ask the youth career planner for your area about your case.",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "id": "kentucky-wioa-youth-program-career-center",
+  "name": "WIOA Youth Program",
+  "org": "Kentucky Career Center, Department of Workforce Investment",
+  "regions": [
+   "kentucky"
+  ],
+  "city": "Statewide, KY",
+  "type": "paid-youth-program",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Get help with school, job skills and career plans. Services can include paid or unpaid work, summer jobs, internships, job shadowing, tutoring and mentoring. Kentucky has 10 local workforce areas.",
+  "min_age": 14,
+  "max_age": 24,
+  "who_can_apply": "In-school youth ages 14 to 21 who are low-income and have at least one listed barrier. A barrier can be being behind in basic skills or having a disability. Out-of-school youth are ages 16 to 24 and need at least one listed barrier, such as having dropped out of school.",
+  "paid_type": "mixed",
+  "pay_detail": "Work experience can be paid or unpaid. Pay is not stated on the program page.",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "year-round",
+  "deadline_text": "Programs run all year. No deadline is listed.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Contact the youth career planner for your area. A map on the program page shows them. You can also contact any Kentucky Career Center office.",
+  "url": "https://kcc.ky.gov/Training/Pages/Youth.aspx",
+  "priority": 2,
+  "sources_fetched": [
+   "https://kcc.ky.gov/Training/Pages/Youth.aspx"
+  ],
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "id": "key-club-high-school",
@@ -42925,6 +44140,85 @@
   "verified_on_label": "Oct 7, 2026"
  },
  {
+  "grades": "9 to 12",
+  "min_age": null,
+  "max_age": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "id": "las-cruces-nmsu-nm-prep-high-school-academy",
+  "name": "NM PREP High School Academy (NMSU)",
+  "org": "New Mexico State University, College of Engineering",
+  "regions": [
+   "new-mexico"
+  ],
+  "city": "Las Cruces, NM",
+  "type": "pre-college",
+  "fields": [
+   "engineering",
+   "science"
+  ],
+  "what_you_do": "Spend a week on the NMSU campus doing hands-on engineering work. Topics include 3D printing, advanced manufacturing, engineering and math. You meet students from across the state and NMSU students.",
+  "who_can_apply": "Students in grades 9 to 12. Ages are not stated on the program page.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page.",
+  "season": "summer",
+  "duration": "One week (June 1 to 5 in 2026)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "In 2026, applications were open until Apr 30 and the High School Academy ran June 1 to 5. The 2027 dates are not posted.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Open the High School Academy application on the program page. It was open until April 30, 2026. Send questions to Mario Garcia, the Program Manager. His email is neomars@nmsu.edu.",
+  "url": "https://engrnm.nmsu.edu/aggie-stem-connection/nm-prep.html",
+  "priority": 2,
+  "notes": "The same page lists a STEM Mavericks camp for high school students. It is a two week camp about public safety and disaster relief. Dates and cost are not stated on the program page.",
+  "sources_fetched": [
+   "https://engrnm.nmsu.edu/aggie-stem-connection/nm-prep.html"
+  ],
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "grades": null,
+  "min_age": 16,
+  "max_age": null,
+  "apply_url": "https://www.governmentjobs.com/careers/lascruces",
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "id": "las-cruces-parks-recreation-young-adult-employment",
+  "name": "Young Adult Employment: Lifeguard and Student Recreation Aide (City of Las Cruces)",
+  "org": "City of Las Cruces Parks and Recreation",
+  "regions": [
+   "new-mexico"
+  ],
+  "city": "Las Cruces, NM",
+  "type": "paid-youth-program",
+  "fields": [
+   "sports",
+   "any"
+  ],
+  "what_you_do": "Work for the city as a lifeguard at a pool or as a student recreation aide. Lifeguards keep swimmers safe. Aides help run fun programs for the public.",
+  "who_can_apply": "Lifeguards must be 16 at hire. They need lifeguard training, first aid and CPR certification before hire. The page also lists 1 year of lifeguard experience. Student recreation aides must be 16, in high school, a junior or senior, with at least a 2.0 GPA.",
+  "paid_type": "paid",
+  "pay_detail": "Pay is not stated on the program page.",
+  "season": "year-round",
+  "duration": "Part time and temporary for student aides. Hours vary. Lifeguard hours are not stated.",
+  "status": "unconfirmed",
+  "deadline_text": "The program page does not list openings or dates. Check the city job page.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Look for lifeguard and student recreation aide jobs on the city job openings page. You must show proof of age, GPA and school enrollment when hired.",
+  "url": "https://lascruces.gov/arts-and-leisure/parks-and-recreation/youth-services/teens/",
+  "sources_fetched": [
+   "https://lascruces.gov/arts-and-leisure/parks-and-recreation/youth-services/teens/",
+   "https://www.governmentjobs.com/careers/lascruces"
+  ],
+  "priority": 2,
+  "notes": "The page says first pick for lifeguard jobs goes to people 18 or older. Lifeguard jobs have drug and alcohol tests under city rules. The same page lists a free after school Teen Connection program for grades 6 to 12.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "id": "las-positas-dual-enrollment",
   "name": "Las Positas College CCAP Dual Enrollment",
   "org": "Las Positas College",
@@ -42964,6 +44258,47 @@
   "priority": 2,
   "notes": "Offered during and after the school day. Ages are not stated on the page.",
   "verified_on_label": "Oct 7, 2026"
+ },
+ {
+  "id": "las-vegas-batteries-included-teen-council",
+  "name": "Batteries Included Teen Council",
+  "org": "City of Las Vegas, with Clark County School District and Nevada Partners",
+  "regions": [
+   "nevada"
+  ],
+  "city": "Las Vegas, NV",
+  "type": "leadership",
+  "fields": [
+   "social-impact",
+   "education"
+  ],
+  "what_you_do": "Join a teen council at a high school or community center. You do after-school activities. They cover leadership, community service, career plans and college prep.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Teens in Las Vegas. The program page does not give an age or grade range. The registration form asks for your grade, school and a parent signature.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free. The city's registration form says activities are free of charge. It does not pay teens.",
+  "season": "year-round",
+  "duration": "Year-round. Meeting days and times depend on the site.",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline stated. The registration form says the councils are always looking for new members.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the online registration form on the program page. Ask your nearest teen council site for meeting dates and times. Questions: call the city at (702) 229-6113, the contact named on the program page.",
+  "needs_work_permit": false,
+  "url": "https://www.lasvegasnevada.gov/Residents/Education/Batteries-Included",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.lasvegasnevada.gov/Residents/Education/Batteries-Included",
+   "https://files.lasvegasnevada.gov/education/Batteries-Included-Registration-Form.pdf"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 3,
+  "notes": "The registration form lists councils at several high schools and community centers. Check with the city for the current site list. A parent signs the form. The form says each council has an adult advisor.",
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "grades": null,
@@ -43041,6 +44376,168 @@
   ],
   "priority": 1,
   "notes": "The county notice has no date, so check that hiring is still open. Phone: (702) 455-1708. County pools are different from City of Las Vegas pools.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "las-vegas-clark-county-leaders-of-the-future",
+  "name": "Clark County Leaders of the Future (Teen Leaders)",
+  "org": "Clark County Department of Parks and Recreation",
+  "regions": [
+   "nevada"
+  ],
+  "city": "Las Vegas, NV",
+  "type": "volunteer",
+  "fields": [
+   "social-impact",
+   "education"
+  ],
+  "what_you_do": "Volunteer as a Teen Leader at a county recreation center. You serve the community, build leadership skills and get job training.",
+  "min_age": 13,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "Boys and girls ages 13 to 17. You cannot have a history of discipline problems in Clark County programs. You cannot have been suspended or expelled from school this school year, or last school year if you apply for a summer spot.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer position.",
+  "season": "year-round",
+  "duration": "New teen leaders can volunteer up to 15 hours a week in the school year and up to 20 hours a week during vacations.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline stated on the program page. Spots depend on openings at each center.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out, sign and turn in two forms. They are the Teen Leader application and a Clark County Volunteer application. Then you have an interview with the Leader of the Future supervisor at your center. Contact your local center for details.",
+  "needs_work_permit": false,
+  "url": "https://www.clarkcountynv.gov/government/departments/parks___recreation/leaders-of-the-future",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.clarkcountynv.gov/government/departments/parks___recreation/leaders-of-the-future"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "Centers include Desert Breeze, Cambridge, Helen Meyer and Hollywood. Others are Moapa Valley, Paradise, Parkdale and Bob Price. Also on the list are Silverado Ranch, Walnut and Whitney. The last two are Pearson and Winchester Dondero. You are picked from the written application, the interview and open spots.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "las-vegas-csn-dual-enrollment",
+  "name": "CSN Dual Enrollment",
+  "org": "College of Southern Nevada",
+  "regions": [
+   "nevada"
+  ],
+  "city": "Las Vegas, NV",
+  "type": "school-pathway",
+  "fields": [
+   "any",
+   "education"
+  ],
+  "what_you_do": "Take real college classes at a CSN campus or online, on top of your high school classes. You earn college credit before you graduate.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": "9 to 12 (partner schools)",
+  "who_can_apply": "Students age 16 or older in a Nevada high school or homeschool program, with a 2.5 GPA on a 4.0 scale. Some partner schools let students in grades 9 to 12 enroll. CSN may make exceptions.",
+  "paid_type": "fee-based",
+  "pay_detail": "For 2026 to 2027: $92.00 per credit plus an $11.50 per credit technology fee, plus any special course fees. No application fee. Check with your high school about payment.",
+  "season": "year-round",
+  "duration": "By semester",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "The program page does not list deadlines. Ask your high school or CSN at DualCredit@csn.edu.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the CSN Admissions Application for High School and Early College Programs. You get an NSHE ID in 3 to 5 days. Then send placement scores for English or math, go to the online orientation, and sign up for classes.",
+  "needs_work_permit": false,
+  "url": "https://www.csn.edu/dualenrollmentprogram",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.csn.edu/dualenrollmentprogram",
+   "https://www.csn.edu/dualcredit"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "Classes are at the Charleston, Henderson and North Las Vegas campuses, at several centers, or online. Discount rates do not apply in summer. CSN also lists a CTE College Credit program. It gives free college credit for some high school career classes.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "las-vegas-csn-jumpstart-concurrent-enrollment",
+  "name": "CSN Jumpstart Concurrent Enrollment",
+  "org": "College of Southern Nevada",
+  "regions": [
+   "nevada"
+  ],
+  "city": "Las Vegas, NV",
+  "type": "school-pathway",
+  "fields": [
+   "any",
+   "education"
+  ],
+  "what_you_do": "Take a college class at your own high school. A high school teacher approved by CSN teaches it. You earn college credit at a lower price.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "Students in grades 9 to 12 at a high school that works with CSN on Jumpstart. You need a 2.5 GPA on a 4.0 scale. CSN may make exceptions with your school district.",
+  "paid_type": "fee-based",
+  "pay_detail": "$110 per course for the 2026 to 2027 school year, paid to your high school. Textbooks are free from your high school.",
+  "season": "school-year",
+  "duration": "One course at a time, during the school year",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Apply no later than two weeks before the start of the semester.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the CSN Admissions Application for High School and Early College Programs. There is no application fee. CSN emails you an NSHE ID. English and math classes also need a placement test or ACT or SAT scores.",
+  "needs_work_permit": false,
+  "url": "https://www.csn.edu/jumpstart",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.csn.edu/jumpstart",
+   "https://www.csn.edu/dualcredit"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "Partners include Clark County School District, charter schools and private schools in the Las Vegas area. Ask your counselor which Jumpstart classes your school offers.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "las-vegas-cyber-clinic-junior-member",
+  "name": "Cyber Clinic Junior Member Program",
+  "org": "Cyber Clinic (listed by UNLV Early Outreach)",
+  "regions": [
+   "nevada"
+  ],
+  "city": "Las Vegas, NV",
+  "type": "pre-college",
+  "fields": [
+   "tech-cs"
+  ],
+  "what_you_do": "Join a cybersecurity group as a junior member. You can go to meetings and work on Cyber Clinic projects. You can also join certificate training and career skills sessions.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 and up",
+  "who_can_apply": "Students in the ninth grade and above can join as Junior Members.",
+  "paid_type": "not-stated",
+  "pay_detail": "Cost and pay are not stated on the program page. UNLV's youth page lists it as no cost.",
+  "season": "year-round",
+  "duration": "Not stated on the program page. UNLV's youth page says weekly online workshops.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline is stated on the program page.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use the Apply Now button on the program page. It links to jmprogram@cyberclinicofficial.org. Questions go to the same email.",
+  "needs_work_permit": false,
+  "url": "https://cyberclinicofficial.org/students",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://cyberclinicofficial.org/students",
+   "https://www.unlv.edu/early-outreach/young-rebels/high-school"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 3,
+  "notes": "UNLV Early Outreach lists this program for high school students with weekly online workshops at no cost. The program page itself does not state the schedule, so ask before you plan around it.",
   "verified_on_label": "Oct 13, 2026"
  },
  {
@@ -43482,6 +44979,48 @@
    "https://yccr.sites.unlv.edu/programs/rssc/"
   ],
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "las-vegas-unlv-sistem-stem-talks",
+  "name": "SISTEM: Student Interactions with STEM",
+  "org": "UNLV College of Engineering",
+  "regions": [
+   "nevada"
+  ],
+  "city": "Las Vegas, NV",
+  "type": "pre-college",
+  "fields": [
+   "engineering",
+   "science",
+   "tech-cs"
+  ],
+  "what_you_do": "Go to a 5 session series at UNLV with talks and activities. You can also join the live virtual option.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "Open to all high school students in Southern Nevada. Students outside the area can join the live online option.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free. The program page says there is no fee. It does not pay students.",
+  "season": "fall",
+  "duration": "5 sessions. You must attend all 5 to get a certificate.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Fall 2026 applications opened Sept 7, 2026 and closed Sept 24, 2026. The UNLV youth page says the series runs each spring or fall.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the online application. Then send the Parent Agreement Form by the due date, by email to sistem@unlv.edu or by mail. If you are accepted you get a registration link, a health form and a liability form.",
+  "needs_work_permit": false,
+  "url": "https://solarnexus.epscorspo.nevada.edu/sistem/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://solarnexus.epscorspo.nevada.edu/sistem/",
+   "https://www.unlv.edu/early-outreach/young-rebels/high-school"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 3,
+  "notes": "The program page does not list the session dates. A parent must sign the Parent Agreement Form. Students outside Southern Nevada can join the live virtual session.",
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "grades": null,
@@ -44377,6 +45916,46 @@
   "verified_on_label": "Oct 12, 2026"
  },
  {
+  "grades": null,
+  "min_age": 16,
+  "max_age": 24,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "season": "summer",
+  "needs_work_permit": null,
+  "id": "lincoln-mayors-youth-employment-program",
+  "name": "Mayor's Youth Employment Program",
+  "org": "City of Lincoln",
+  "regions": [
+   "nebraska"
+  ],
+  "city": "Lincoln, NE",
+  "type": "paid-youth-program",
+  "fields": [
+   "any",
+   "law-government"
+  ],
+  "what_you_do": "Work a paid summer job with a City of Lincoln department. You also join weekly workshops.",
+  "who_can_apply": "Ages 16 to 24. You must meet WIOA income and barrier rules and enroll in the YESS Program before you are placed.",
+  "paid_type": "paid",
+  "pay_detail": "$16 per hour plus a $200 bonus for finishing. Up to 30 hours a week. You also get a free Chromebook.",
+  "duration": "June 4 to July 29 in 2026",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The 2026 application deadline was April 3, 2026 and the enrollment deadline was May 8. The program page does not list 2027 dates.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply to the City of Lincoln job posting for the program. Staff at the American Job Center then contact you to check if you qualify. After you enroll, you are matched with a City department. Call 402-441-7975 with questions.",
+  "url": "https://www.lincoln.ne.gov/City/Mayor/Mayors-Youth-Employment-Program",
+  "priority": 1,
+  "notes": "The page does not mention work permits. Weekly workshops and possible tuition help are listed.",
+  "sources_fetched": [
+   "https://www.lincoln.ne.gov/City/Mayor/Mayors-Youth-Employment-Program"
+  ],
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "id": "lincoln-unl-big-red-summer-academic-camps",
   "name": "Big Red Summer Academic Camps",
   "org": "Nebraska Extension 4-H and University of Nebraska-Lincoln",
@@ -44418,6 +45997,86 @@
   "priority": 2,
   "notes": "Camper limits are small (15 to 20 per camp for the camps listed). The page lists the years only as 2027 in the heading, so confirm the Dec 18 and Jan 22 dates are for the 2026-27 cycle. Contact: the Big Red Camps email on the page.",
   "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "grades": null,
+  "min_age": 16,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "season": "summer",
+  "needs_work_permit": null,
+  "id": "lincoln-unl-ncmn-high-school-stem-internship",
+  "name": "NCMN STEM High School Internship",
+  "org": "Nebraska Center for Materials and Nanoscience, University of Nebraska-Lincoln",
+  "regions": [
+   "nebraska"
+  ],
+  "city": "Lincoln, NE",
+  "type": "internship",
+  "fields": [
+   "science",
+   "engineering"
+  ],
+  "what_you_do": "Work in a UNL research lab for about 8 weeks. You give a final poster presentation in August.",
+  "who_can_apply": "Lincoln-area high school students who are 16 by June 1 and have not graduated. U.S. citizenship is required. May 2025 graduates are eligible if they attend UNL in fall 2026.",
+  "paid_type": "paid",
+  "pay_detail": "$15 per hour, 20 hours a week (2026)",
+  "duration": "About 8 weeks, starting June 2 in 2026",
+  "status": "closed-expect-reopen",
+  "deadline_text": "2026 applications were due March 15, 2026. The program page does not list 2027 dates.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the application on the program page. Ask one teacher to send a reference by the deadline. Students who apply to several summer research programs can only do this one if picked.",
+  "url": "https://ncmn.unl.edu/hs-interns/",
+  "priority": 1,
+  "notes": "Work days are Monday to Friday between 8 a.m. and 5 p.m. The page does not mention work permits.",
+  "sources_fetched": [
+   "https://ncmn.unl.edu/hs-interns/"
+  ],
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "grades": null,
+  "min_age": null,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "season": "summer",
+  "needs_work_permit": null,
+  "id": "lincoln-unl-raikes-innovate-summer-camp",
+  "name": "Innovate: The Raikes School Way Summer Camp",
+  "org": "Raikes School, University of Nebraska-Lincoln",
+  "regions": [
+   "nebraska"
+  ],
+  "city": "Lincoln, NE",
+  "type": "pre-college",
+  "fields": [
+   "tech-cs",
+   "business-finance"
+  ],
+  "what_you_do": "Spend two weeks on campus learning the basics of computer programming. The camp is for high school students interested in computing.",
+  "who_can_apply": "High school students interested in computing. The page does not list grades or ages. The page says the camp is designed for students with little to no computing experience. Students planning to start college in fall 2027 get priority based on total applications.",
+  "paid_type": "fee-based",
+  "pay_detail": "$3,000 in 2026. Nebraska high school students get $1,000 off, so $2,000. The fee covers housing, meals, teaching and activities. Full and partial scholarships are offered.",
+  "duration": "2 weeks (July 19 to August 1 in 2026)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "2026 priority deadline was April 1 and the final deadline was May 1, 2026. The program page does not list 2027 dates.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Send a short essay, your coding level, your school grades and a school transcript. You can add a scholarship request. The page points to an Apply Online page on the Raikes site.",
+  "url": "https://raikes.unl.edu/summer-camp/",
+  "priority": 2,
+  "notes": "Students who expect to start college in fall 2028 are considered if they finished pre-calculus before camp. Contact is 402-472-9097.",
+  "sources_fetched": [
+   "https://raikes.unl.edu/summer-camp/"
+  ],
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "id": "livermore-area-youth-advisory-commission",
@@ -45737,6 +47396,46 @@
   "priority": 1,
   "notes": "The two pages give different top ages (19 and 21), so check the age rule when registration opens. Pay rate, hours and work permit rules are not stated on either page. Ask the program.",
   "verified_on_label": "Oct 10, 2026"
+ },
+ {
+  "opens_iso": null,
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "notes": "A faculty committee picks who is interviewed. The program page does not say where you must live. Ask the coordinator at ashley.kareken@louisville.edu. The program page lists the 2026 pay and dates. They may change.",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "id": "louisville-uofl-brown-cancer-center-hs-summer-research",
+  "name": "Brown Cancer Center High School Summer Research Program",
+  "org": "University of Louisville, Brown Cancer Center",
+  "regions": [
+   "kentucky"
+  ],
+  "city": "Louisville, KY",
+  "type": "research",
+  "fields": [
+   "health",
+   "science"
+  ],
+  "what_you_do": "Work in a cancer research lab for 9 weeks. You start with 2 weeks of hands-on lab work. Then you join a lab for 7 weeks and work with a grad student, postdoc or scientist. You present your results at the end.",
+  "min_age": 16,
+  "max_age": null,
+  "who_can_apply": "High school students who are at least 16 by June 1 of the program year and have taken at least one advanced science course. You need your own bank account for pay and a way to get to the Health Science Campus each day. Students related to Brown Cancer Center faculty cannot apply.",
+  "paid_type": "stipend",
+  "pay_detail": "$3,500 stipend for the 2026 program. The Brown Cancer Center pays other costs.",
+  "season": "summer",
+  "duration": "9 weeks, at least 30 hours a week (2026: June 1 to July 31)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The program page shows the 2026 cycle. Applications were due April 5, 2026, with interviews April 22 and 23. Dates for 2027 are not posted. Expect a spring deadline again.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Email the form to the program coordinator. Add an unofficial transcript. Add two letters of recommendation. One is from a science teacher. Finalists are interviewed online.",
+  "url": "https://centers.louisville.edu/brown-cancer-center/prospective-students/summer-research-program",
+  "priority": 1,
+  "sources_fetched": [
+   "https://centers.louisville.edu/brown-cancer-center/prospective-students/summer-research-program"
+  ],
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "id": "louisville-uofl-health-summer-teen-volunteer",
@@ -47623,6 +49322,87 @@
   "verified_on_label": "Oct 7, 2026"
  },
  {
+  "grades": "9 to 12",
+  "min_age": null,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "season": "summer",
+  "needs_work_permit": null,
+  "id": "manhattan-ks-k-state-animal-sciences-leadership-academy",
+  "name": "Animal Sciences Leadership Academy",
+  "org": "K-State Department of Animal Sciences and Industry",
+  "regions": [
+   "kansas"
+  ],
+  "city": "Manhattan, KS",
+  "type": "pre-college",
+  "fields": [
+   "science",
+   "environment"
+  ],
+  "what_you_do": "Spend four days at K-State learning about livestock and careers. You do workshops and tours, meet professors and industry leaders, and give a team talk.",
+  "who_can_apply": "Students in grades 9 to 12 who like livestock and related careers. Students from across the country can apply.",
+  "paid_type": "fee-based",
+  "pay_detail": "$50 fee to hold your spot, due only if you are accepted. A livestock industry group pays for the other costs. You pay your own travel.",
+  "duration": "4 days (June 10 to 13 in 2026)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "2026 applications were due April 30, 2026. The program page does not list 2027 dates.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the online application form on the program page. Questions go to the academy director at 785-532-1272.",
+  "url": "https://www.asi.k-state.edu/extension/youth-programs/events/k-state-animal-science-leadership-academy/",
+  "priority": 2,
+  "notes": "Only 20 students are accepted. You stay in campus housing with program staff.",
+  "sources_fetched": [
+   "https://www.asi.k-state.edu/extension/youth-programs/events/k-state-animal-science-leadership-academy/"
+  ],
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "grades": "Entering 10th, 11th or 12th grade",
+  "min_age": null,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "season": "summer",
+  "needs_work_permit": null,
+  "id": "manhattan-ks-k-state-feeding-your-future-camp",
+  "name": "Feeding Your Future Summer Camp",
+  "org": "K-State College of Agriculture",
+  "regions": [
+   "kansas"
+  ],
+  "city": "Manhattan, KS",
+  "type": "pre-college",
+  "fields": [
+   "science",
+   "food-hospitality",
+   "environment"
+  ],
+  "what_you_do": "Learn how grain becomes flour and baked goods. You tour K-State feed and flour mills, bake labs and agronomy research farms. Industry partners share job options.",
+  "who_can_apply": "Students going into their sophomore, junior or senior year of high school.",
+  "paid_type": "fee-based",
+  "pay_detail": "$75 per student in 2026. It covers 4 nights in a K-State residence hall, all meals and a Saturday brunch for up to two guests.",
+  "duration": "5 days (June 9 to 13 in 2026)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The 2026 camp ran June 9 to 13. The program page does not list a deadline or 2027 dates.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Use the Register Here link on the program page. Email kstateag@k-state.edu or call 785-532-5736 with questions.",
+  "url": "https://www.ag.k-state.edu/ag-experiences/summer-camps/",
+  "priority": 2,
+  "notes": "Each extra brunch guest costs $15. Check the page in spring 2027 for new dates.",
+  "sources_fetched": [
+   "https://www.ag.k-state.edu/ag-experiences/summer-camps/"
+  ],
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "id": "manhattan-ks-k-state-health-professions-exploration-program",
   "name": "Health Professions Exploration Program",
   "org": "Kansas State University College of Health and Human Sciences",
@@ -47663,6 +49443,46 @@
   "verified_on_label": "Oct 12, 2026"
  },
  {
+  "grades": null,
+  "min_age": null,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "season": "summer",
+  "needs_work_permit": null,
+  "id": "manhattan-ks-k-state-summer-design-experience",
+  "name": "Summer Design Experience",
+  "org": "K-State College of Architecture, Planning and Design",
+  "regions": [
+   "kansas"
+  ],
+  "city": "Manhattan, KS",
+  "type": "pre-college",
+  "fields": [
+   "arts-media",
+   "engineering"
+  ],
+  "what_you_do": "Try architecture, industrial design and interior architecture. You visit studio labs and meet K-State design professors. You finish a final project. You stay in a campus dorm.",
+  "who_can_apply": "High school students. The page does not list a grade or age rule.",
+  "paid_type": "fee-based",
+  "pay_detail": "$800 in 2026. A limited number of scholarships are offered for students with financial need. Kansas and Kansas City area students get priority.",
+  "duration": "June 24 to 27 in 2026",
+  "status": "closed-expect-reopen",
+  "deadline_text": "2026 registration closed on Friday, May 29, 2026. The program page does not list 2027 dates.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Use the Register Now link on the program page. For a scholarship, use the Apply for Scholarship link on the same page.",
+  "url": "https://apdesign.k-state.edu/academics/visit-opportunities/summer-design-experience.html",
+  "priority": 3,
+  "notes": "The page calls it a three-day program but lists June 24 to 27. Check the dates when 2027 registration opens.",
+  "sources_fetched": [
+   "https://apdesign.k-state.edu/academics/visit-opportunities/summer-design-experience.html"
+  ],
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "id": "manhattan-ks-k-state-summer-fashion-institute",
   "name": "Summer Fashion Institute",
   "org": "Kansas State University College of Health and Human Sciences",
@@ -47700,6 +49520,46 @@
   "priority": 3,
   "notes": "The same page also lists Farm to Fashion. It is for grades 7 to 12, June 28 to July 1, 2027, with 15 spots and cost not yet posted. It also lists a free one-day Social Impact Lab for grades 7 to 10 in spring 2028.",
   "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "grades": "Entering 9 to 12 (high school day)",
+  "min_age": null,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "season": "summer",
+  "needs_work_permit": null,
+  "id": "manhattan-ks-k-state-vetmed-rocks-camp",
+  "name": "VetMed Rocks Summer Camps",
+  "org": "K-State College of Veterinary Medicine",
+  "regions": [
+   "kansas"
+  ],
+  "city": "Manhattan, KS",
+  "type": "pre-college",
+  "fields": [
+   "health",
+   "science"
+  ],
+  "what_you_do": "Spend a full day in labs with vet students, teachers and teaching animals. You try hands-on tasks and hear about vet careers.",
+  "who_can_apply": "The high school day is for students entering grades 9 to 12, and college students. Other days are for younger grades.",
+  "paid_type": "fee-based",
+  "pay_detail": "$125 per camper in 2026. Lunch and snacks are provided.",
+  "duration": "1 day for the high school group (Monday, July 27 in 2026). Other grade groups came July 28 and 29.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Registration for the 2026 camp is closed. The program page does not list 2027 dates.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Registration for 2026 is closed. The program page does not say how next year signs up. Check it again in spring 2027.",
+  "url": "https://www.vet.k-state.edu/admissions/rocks/",
+  "priority": 3,
+  "notes": "Check-in starts at 8:30 am and camp starts at 9:00 am. Parents may come in for check-in and the 4:00 pm closing.",
+  "sources_fetched": [
+   "https://www.vet.k-state.edu/admissions/rocks/"
+  ],
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "grades": null,
@@ -52726,6 +54586,45 @@
   "verified_on_label": "Oct 10, 2026"
  },
  {
+  "id": "montana-4h-congress",
+  "name": "Montana 4-H Congress",
+  "org": "Montana 4-H, MSU Extension",
+  "regions": [
+   "montana"
+  ],
+  "city": "Bozeman, MT",
+  "type": "leadership",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Spend four days on the Montana State University campus. Go to hands-on workshops and join contests (optional). Meet new people and build leadership skills. Teens can also apply to be state ambassador officers.",
+  "min_age": 13,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Montana 4-H youth who are at least 13 years old as of October 1 of the 4-H year. Chaperones must be certified 4-H volunteers or MSU Extension staff, age 21 or older.",
+  "paid_type": "fee-based",
+  "pay_detail": "$285. It covers lodging for 3 nights, 7 meals, program costs and a t-shirt. Campus parking costs extra.",
+  "season": "summer",
+  "duration": "4 days (July 14 to 17, 2027)",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The next Congress is July 14 to 17, 2027. Registration opens May 1. The state registration deadline is June 15. Ambassador officer applications are also due June 15.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Register online in the 4-H Zsuite system. Each county has its own deadlines and steps, so call your county Extension office early.",
+  "needs_work_permit": false,
+  "url": "https://www.montana.edu/extension/4h/programs_and_events/events/mt_4h_congress/index.html",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.montana.edu/extension/4h/programs_and_events/events/mt_4h_congress/index.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "You do not have to enter a contest. Youth State Awards are due May 1.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "grades": null,
   "opens_iso": null,
   "apply_url": null,
@@ -52766,6 +54665,45 @@
    "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/country-ambassador/"
   ],
   "notes": "You must already be in 4-H. The state team page lists five state officer jobs (for example President and Publicity Chair). Contact your county extension office. The state officer page does not state the term length for officers.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "montana-4h-fall-leadership-training",
+  "name": "Montana 4-H Fall Leadership Training",
+  "org": "Montana 4-H, MSU Extension",
+  "regions": [
+   "montana"
+  ],
+  "city": "Butte, MT",
+  "type": "leadership",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Spend a weekend with other 4-H teen leaders and ambassadors. Go to workshops on Saturday. Hear an alumni speaker at a banquet. Join the statewide ambassador meeting.",
+  "min_age": 14,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Montana 4-H youth who are at least 14 years old as of October 1 of the 4-H year. Counties send ambassadors and teen leaders. Chaperones must be certified 4-H volunteers or MSU Extension staff, age 21 or older.",
+  "paid_type": "fee-based",
+  "pay_detail": "$195. It covers lodging (2 to 4 people per room), Saturday and Sunday meals and program costs. Friday dinner is on your own.",
+  "season": "fall",
+  "duration": "Weekend (November 6 to 8, 2026)",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Event is November 6 to 8, 2026 at the Copper King Hotel and Convention Center in Butte. State registration closes October 19, 2026.",
+  "deadline_iso": "2026-10-19",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Register online in the 4-H Zsuite system. Call your county MSU Extension office for county rules. Fill in your info and waivers before the event.",
+  "needs_work_permit": false,
+  "url": "https://www.montana.edu/extension/4h/programs_and_events/events/fall_training/index.html",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.montana.edu/extension/4h/programs_and_events/events/fall_training/index.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "Cancel before sign-up closes for a full refund. Dress is business casual on Saturday. Dress for the banquet is business professional to semi-formal.",
   "verified_on_label": "Oct 13, 2026"
  },
  {
@@ -52888,6 +54826,47 @@
   ],
   "notes": "2026 crews were in Helena, Kalispell (Flathead Youth Corps) and Missoula. Participants must commit to the full summer. Next dates not posted yet.",
   "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "montana-tech-materials-engineering-summer-program",
+  "name": "Montana Tech Materials Science and Engineering Summer Program",
+  "org": "Montana Technological University",
+  "regions": [
+   "montana"
+  ],
+  "city": "Butte, MT",
+  "type": "pre-college",
+  "fields": [
+   "engineering",
+   "science"
+  ],
+  "what_you_do": "Spend a week on the Montana Tech campus. Do hands-on tasks, go on field trips and visit local industry sites. Hear experts talk about metals and materials.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Rising high school juniors and seniors",
+  "who_can_apply": "Montana high school students who are rising juniors or seniors and want a career in science or engineering. No GPA or age rule is listed.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free. Lodging, meals and course materials are provided. You must arrange your own ride to campus.",
+  "season": "summer",
+  "duration": "1 week (June 21 to 26 in 2026)",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 program ran June 21 to 26, 2026. The application closed March 31, 2026. 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the online application when it opens. Questions: metcamp@mtech.edu.",
+  "needs_work_permit": false,
+  "url": "https://www.mtech.edu/metallurgical-materials-engineering/camps-workshops/index.html",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.mtech.edu/metallurgical-materials-engineering/camps-workshops/index.html",
+   "https://www.mtech.edu/news/2026/02/applications-open-for-montana-techs-free-metallurgical-and-materials-engineering-summer-program-for-high-school-students.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "The dates and deadline come from the 2026 news release on the Montana Tech site. The program page says Montana high school students are invited to apply. Watch for a new release around February 2027.",
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "id": "montgomery-county-recreation-seasonal-jobs",
@@ -56893,6 +58872,87 @@
   "verified_on_label": "Oct 11, 2026"
  },
  {
+  "id": "nevada-wnc-high-school-dual-credit",
+  "name": "WNC Dual Credit for High School Students",
+  "org": "Western Nevada College",
+  "regions": [
+   "nevada"
+  ],
+  "city": "Carson City, NV",
+  "type": "school-pathway",
+  "fields": [
+   "any",
+   "education"
+  ],
+  "what_you_do": "Take a Western Nevada College class and earn college credit and high school credit at the same time. Your high school decides which WNC classes count.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "High school or homeschool students in good behavior and academic standing with a GPA of 2.5 or higher. Your high school must approve. Talk to your counselor before you sign up.",
+  "paid_type": "not-stated",
+  "pay_detail": "Cost is not stated on the dual credit page. WNC lists fees on a separate page.",
+  "season": "school-year",
+  "duration": "By semester",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "The program page points to WNC's dates and deadlines page. No deadline is stated on it.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the WNC application if you are new to WNC. Check your email for your NSHE ID and your WNC login. Send the high school authorization form with a student and parent signature. Then sign up for classes in myWNC. Questions: 775-445-3277.",
+  "needs_work_permit": false,
+  "url": "https://wnc.edu/advising/high-school-programs/dual-credit.php",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://wnc.edu/advising/high-school-programs/dual-credit.php"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 3,
+  "notes": "The page mentions a Fallon campus and Fernley offerings. After you pass a class, you must ask WNC to send your transcript to your high school. Allow up to five business days for WNC to process your school's approval.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "nevada-youth-legislature",
+  "name": "Nevada Youth Legislature",
+  "org": "Research Division, Nevada Legislative Counsel Bureau",
+  "regions": [
+   "nevada"
+  ],
+  "city": "Statewide, NV",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Serve two years as a Youth Legislator for your Senate district. You go to trainings, hold a town hall, testify, and help write a bill for the Nevada Legislature.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "8 to 10",
+  "who_can_apply": "Nevada students in 8th, 9th or 10th grade, so you can finish the two year term in high school. You apply for the Senate district where you live or go to school.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. The program pays for the one day and two day trainings, including travel, meals and lodging.",
+  "season": "school-year",
+  "duration": "Two year term, June 1 to May 31. Eleven required meetings and trainings.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "The program page does not post a current deadline. The brochure says to check the program website for deadline details.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out and sign the application, which has short essays. Add one letter of recommendation. Send it by email, fax or mail. Questions: info@youthleg.state.nv.us or (775) 684-6740.",
+  "needs_work_permit": false,
+  "url": "https://www.leg.state.nv.us/Division/Research/NYL/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.leg.state.nv.us/Division/Research/NYL/",
+   "https://leg.state.nv.us/division/research/nyl/docs/NYL_Brochure_2024_FINAL_DIGITAL.pdf"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "Each of the 21 state senators appoints one Youth Legislator. Meetings are often on weekday afternoons and may mean missing class. The brochure is the 2024 edition, so confirm the grade rule and dates with the program.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "id": "new-brunswick-east-brunswick-counselor-in-training",
   "grades": null,
   "apply_url": null,
@@ -58601,6 +60661,46 @@
   "priority": 2,
   "notes": "The New Mexico Youth Conservation Corps Commission and the Cibola and Santa Fe National Forests pay for part of it. Past crew members who log 640 hours may get a federal hiring status. Pay and crew sites could not be read on the pages checked.",
   "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "grades": null,
+  "min_age": 17,
+  "max_age": 30,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "id": "new-mexico-rmyc-conservation-crew",
+  "name": "Conservation Crew Corpsmember (Rocky Mountain Youth Corps of New Mexico)",
+  "org": "Rocky Mountain Youth Corps of New Mexico",
+  "regions": [
+   "new-mexico"
+  ],
+  "city": "Albuquerque and Taos, NM",
+  "type": "paid-youth-program",
+  "fields": [
+   "environment"
+  ],
+  "what_you_do": "Join a paid outdoor crew. You build trails, fight invasive plants, restore land and help prevent fire danger. You work with a team in Albuquerque or Taos.",
+  "who_can_apply": "Ages 17 to 30, per the 2027 job list. No earlier experience is needed for crew member jobs.",
+  "paid_type": "paid",
+  "pay_detail": "$700 per week for the 2027 Corpsmember job. Paid by stipend.",
+  "season": "spring",
+  "duration": "Seasonal, full time (40 or more hours a week). The end date is not stated on the program page.",
+  "status": "rolling",
+  "deadline_text": "The 2027 Corpsmember jobs list a start date of March 18, 2027. The apply page does not give a last day to apply.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Open the apply page and find the 2027 Conservation Crew Corpsmember job in Albuquerque or Taos. Then use its Apply Now link.",
+  "url": "https://youthcorps.org/programs-and-crews/",
+  "sources_fetched": [
+   "https://youthcorps.org/programs-and-crews/",
+   "https://youthcorps.org/apply-now/",
+   "https://youthcorps.org/faqs/"
+  ],
+  "priority": 1,
+  "notes": "The work is outdoors. The program page says ages 17 to 25, and the job list says 17 to 30. Ask RMYC if you are close to the top age. Some crews camp for 8 days in a row, then have 6 days off. Corpsmembers who complete a full AmeriCorps season become eligible for a scholarship award. The FAQ lists UNM College Credit as a member benefit.",
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "grades": null,
@@ -64606,6 +66706,121 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "grades": "High school",
+  "min_age": null,
+  "max_age": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "id": "ogden-city-youth-council",
+  "name": "Ogden Youth Council",
+  "org": "Ogden City Council",
+  "regions": [
+   "utah"
+  ],
+  "city": "Ogden, UT",
+  "type": "civic-government",
+  "fields": [
+   "law-government"
+  ],
+  "what_you_do": "Learn how city government works. You hear from elected leaders and tour Ogden City buildings. Members also go to Local Government Day at the State Capitol.",
+  "who_can_apply": "High school students who live in Ogden City.",
+  "paid_type": "unpaid",
+  "pay_detail": "No pay.",
+  "season": "school-year",
+  "duration": "The council meets 1 to 2 times each month.",
+  "status": "open-now",
+  "deadline_text": "Applications for the 2026-2027 school year are open now. They close at the end of the school year. The page gives no exact date.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the form at the bottom of the program page. Questions go to the Council Communications Director at 801-629-8103.",
+  "url": "https://www.ogdencity.gov/1848/Ogden-Youth-Council",
+  "sources_fetched": [
+   "https://waiver.ogdencity.com/1848/Ogden-Youth-Council",
+   "https://www.ogdencity.gov/1848/Ogden-Youth-Council"
+  ],
+  "priority": 2,
+  "notes": "This is a competitive process. Only the top rated applicants take part.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "grades": "11 to 12",
+  "min_age": null,
+  "max_age": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "id": "ogden-weber-state-summer-medical-academy",
+  "name": "WSU Summer Medical Academy (Weber State University)",
+  "org": "Weber State University, Pre-Medical Professional Program",
+  "regions": [
+   "utah"
+  ],
+  "city": "Ogden, UT",
+  "type": "pre-college",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Try out health care careers in a short summer camp. You do lab activities, hear from health workers and patients, and learn how to get ready for health school.",
+  "who_can_apply": "High school juniors and seniors.",
+  "paid_type": "fee-based",
+  "pay_detail": "$350. This covers a t-shirt, lodging, meals and lab supplies.",
+  "season": "summer",
+  "duration": "4 days (July 13 to 16 in 2026)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The 2026 session was July 13 to 16, 2026. The 2027 dates are not posted. The page lets you sign up for notices about future sessions.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "First pay online and write down your confirmation number. Then fill out the application form linked on the program page. Print all documents before check in.",
+  "url": "https://www.weber.edu/medicalacademy/",
+  "priority": 2,
+  "notes": "The 2026 page listed 35 seats. Use the email on the program page for questions.",
+  "sources_fetched": [
+   "https://www.weber.edu/medicalacademy/"
+  ],
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "grades": null,
+  "min_age": 15,
+  "max_age": 18,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "id": "ogden-weber-state-weberbiz-summer-camp",
+  "name": "WeberBiz Summer Camp (Weber State University)",
+  "org": "Weber State University, Goddard School of Business and Economics",
+  "regions": [
+   "utah"
+  ],
+  "city": "Ogden, UT",
+  "type": "pre-college",
+  "fields": [
+   "business-finance"
+  ],
+  "what_you_do": "Stay on campus for 4 days and 3 nights to try out a business major. You take classes with Weber State teachers, meet business leaders and compete in challenges for prizes.",
+  "who_can_apply": "Ages 15 to 18. Graduating seniors can apply.",
+  "paid_type": "unpaid",
+  "pay_detail": "No pay. The camp is free because of community sponsors.",
+  "season": "summer",
+  "duration": "4 days and 3 nights (June 8 to 11 in 2026)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The 2026 deadline was Apr 24, 2026. The page says the deadline is typically the 3rd Friday in April. Applications open in March, and the interest form sends an email when they open.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online. Campers are picked in early May based on interest in business and a desire to learn. You can fill out the interest form to get an email when applications open.",
+  "url": "https://www.weber.edu/business/weberbiz-summer-camp.html",
+  "priority": 2,
+  "notes": "The page mentions dorm life for campers. The camp is hosted with the Utah Association of Certified Public Accountants.",
+  "sources_fetched": [
+   "https://www.weber.edu/business/weberbiz-summer-camp.html"
+  ],
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "id": "ohio-4h-youth-development",
   "name": "Ohio 4-H clubs and projects",
   "org": "Ohio 4-H Youth Development, Ohio State University Extension",
@@ -66379,6 +68594,47 @@
   "priority": 1,
   "notes": "The page says Oregon requires farmers and ranchers who hire minors under 18 to be sure those minors passed tractor safety training. That is the page's own statement. Ask your boss. 2026 sites included Linn, Marion, Clackamas and Jefferson counties.",
   "verified_on_label": "Oct 11, 2026"
+ },
+ {
+  "grades": "9 to 11",
+  "min_age": null,
+  "max_age": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "id": "orem-uvu-empowered-professionals-of-tomorrow",
+  "name": "Empowered Professionals of Tomorrow (UVU)",
+  "org": "Utah Valley University",
+  "regions": [
+   "utah"
+  ],
+  "city": "Orem, UT",
+  "type": "pre-college",
+  "fields": [
+   "science",
+   "engineering",
+   "business-finance",
+   "education"
+  ],
+  "what_you_do": "Take real college classes at UVU for seven weeks in the summer. Pick a track in science, engineering, education or business. You earn college credit and meet mentors.",
+  "who_can_apply": "Utah high school students in grades 9 to 11. The page says it is especially for first-generation college learners.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "No pay. Tuition is free for admitted students. You pay for your own rides, lunches and personal costs.",
+  "season": "summer",
+  "duration": "7 weeks. Tuesdays to Thursdays, 9:00 AM to 3:15 PM (June 24 to Aug 7 in 2026)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The 2026 program was full and had a waitlist. The 2027 dates are not posted.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online. Share your interests, your goals and why you want to join. The application asks for short written responses, which carry strong weight. The team picks students by readiness, interest and fit. Applications can also go on the waitlist.",
+  "url": "https://www.uvu.edu/bridge/",
+  "priority": 2,
+  "notes": "You must go in person. Classes also have homework outside class time. Track choice is not guaranteed. Questions: text 801-928-7615. The page says you may be added to a contact list for future openings.",
+  "sources_fetched": [
+   "https://www.uvu.edu/bridge/"
+  ],
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "regions": [
@@ -72990,6 +75246,88 @@
   "verified_on_label": "Oct 7, 2026"
  },
  {
+  "id": "reno-parks-junior-lifeguards",
+  "name": "City of Reno Junior Lifeguards",
+  "org": "City of Reno Parks and Recreation, Aquatics",
+  "regions": [
+   "nevada"
+  ],
+  "city": "Reno, NV",
+  "type": "leadership",
+  "fields": [
+   "sports",
+   "health"
+  ],
+  "what_you_do": "Take a four day junior lifeguard class for ages 11 to 14. You earn Red Cross CPR/AED and first aid certification, valid for two years.",
+  "min_age": 11,
+  "max_age": 14,
+  "grades": null,
+  "who_can_apply": "Ages 11 to 14 by the first session date. You must pass a swim test: 25 yards of front crawl, a step into deep water with a 10 foot underwater swim, and 1 minute of treading water.",
+  "paid_type": "fee-based",
+  "pay_detail": "The class fee is $100.",
+  "season": "winter",
+  "duration": "4 days, 8:30am to 1:30pm each day",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "The 2026 sessions listed are Oct 5 to 8 and Dec 28 to 31. No registration deadline is stated.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Pick a session on the program page. Each session links to a registration page, and the site has an Online Registration link. For questions, call Parks Administration at 775-334-2262.",
+  "needs_work_permit": false,
+  "url": "https://www.reno.gov/parks-and-recreation/recreation/aquatics/junior-lifeguards.php",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.reno.gov/parks-and-recreation/recreation/aquatics/junior-lifeguards.php",
+   "https://www.reno.gov/parks-and-recreation/recreation/aquatics/aquatic-training-and-certifications.php"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 3,
+  "notes": "This is a good step toward the City of Reno lifeguard class, which starts at age 15. You must attend every day of a session to be certified.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "reno-parks-lifeguard-certification-class",
+  "name": "City of Reno Red Cross Lifeguarding Class",
+  "org": "City of Reno Parks and Recreation, Aquatics",
+  "regions": [
+   "nevada"
+  ],
+  "city": "Reno, NV",
+  "type": "paid-youth-program",
+  "fields": [
+   "sports",
+   "health"
+  ],
+  "what_you_do": "Take the Red Cross lifeguard class at Moana Springs. You earn a lifeguard certificate, plus CPR/AED and first aid certificates.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be 15 by the final scheduled session. You must also pass a swim test. Swim 150 yards, then tread water for 2 minutes using only your legs. Swim 50 yards. Then finish a timed event in 1 minute 40 seconds: a 20 yard swim, a dive to 10 feet for a 10 pound object, a swim back, and an exit without a ladder.",
+  "paid_type": "fee-based",
+  "pay_detail": "The class costs $140. The page says the city will certify you for free if you are hired and onboarded by the class start date.",
+  "season": "year-round",
+  "duration": "In-person class days run 9am to 3:30pm. The class is blended, with online lecture and in-class training.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No application deadline is stated. The 2026 class dates run from Sept 19 to Dec 24, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use the Register Online button for a class, or join the interest list by email. To get the free certificate, apply online for a city job. Be onboarded by the class start date.",
+  "needs_work_permit": null,
+  "url": "https://www.reno.gov/parks-and-recreation/recreation/aquatics/aquatic-training-and-certifications.php",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.reno.gov/parks-and-recreation/recreation/aquatics/aquatic-training-and-certifications.php",
+   "https://www.reno.gov/parks-and-recreation/resources/jobs.php"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "You must attend every day of the class to be certified. A shorter $124 renewal class is for people with a valid lifeguard certificate, or one that ended in the last 30 days. The program page does not say if a work permit is needed.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "grades": null,
   "opens_iso": null,
   "deadline_iso": null,
@@ -73149,6 +75487,88 @@
    "https://www.unr.edu/engineering/about/outreach/k-12/camps"
   ],
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "reno-unr-high-school-dual-enrollment",
+  "name": "UNR High School Dual Enrollment",
+  "org": "University of Nevada, Reno",
+  "regions": [
+   "nevada"
+  ],
+  "city": "Reno, NV",
+  "type": "school-pathway",
+  "fields": [
+   "any",
+   "education"
+  ],
+  "what_you_do": "Take college classes at the University of Nevada, Reno. Classes can count for high school credit and college credit. You can take up to 8 credits each semester.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "Nevada high school students who meet each course's prerequisites. A counselor or vice principal must back you. That lets the classes count toward graduation.",
+  "paid_type": "fee-based",
+  "pay_detail": "$154 per credit for tuition plus an $18 per credit tech fee, plus any class fees.",
+  "season": "school-year",
+  "duration": "By semester",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline is stated on the program page.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the UNR non-degree student application and the dual enrollment interest form. Send your shot records through the online portal (2 MMR doses and 1 Tdap). Upload your high school transcripts with the Transcript Upload form. Your counselor or vice principal fills out the school district contract form. They email it to DualEnrollment@unr.edu.",
+  "needs_work_permit": false,
+  "url": "https://www.unr.edu/admissions/dual-enrollment",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.unr.edu/admissions/dual-enrollment"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "Earlier college work can place you into classes. So can SAT or ACT scores, AP or IB scores, or placement tests.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "reno-unr-women-in-stem-high-school",
+  "name": "Women in STEM High School Outreach Program",
+  "org": "University of Nevada, Reno",
+  "regions": [
+   "nevada"
+  ],
+  "city": "Statewide, NV",
+  "type": "pre-college",
+  "fields": [
+   "science",
+   "engineering",
+   "tech-cs"
+  ],
+  "what_you_do": "Join a year-long program about STEM careers. You go to campus events, tour labs, meet advisors and mentors, and build a plan for college.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "11 to 12",
+  "who_can_apply": "Nevada high school juniors and seniors. The program is aimed most at girls and young women who have faced barriers to STEM learning and research.",
+  "paid_type": "not-stated",
+  "pay_detail": "Cost and pay are not stated on the program page.",
+  "season": "school-year",
+  "duration": "One school year",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "The program page lists the 2024 to 2025 application, which opened June 1, 2024 and stayed open until spots were full. No newer dates are posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Use the Apply now link on the Join Women in STEM page. A paper form can be picked up at the Dean's Office, 4th floor of the Davidson Mathematics and Science Center on campus.",
+  "needs_work_permit": false,
+  "url": "https://www.unr.edu/women-in-stem/join-women-in-stem",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.unr.edu/women-in-stem/join-women-in-stem",
+   "https://www.unr.edu/women-in-stem/about-the-program"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 3,
+  "notes": "The program page still shows the 2024 to 2025 year. Check with the program before you plan on it. It asks for four events in each of three event series, two advisor meetings and three mentor meetings during the year.",
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "grades": null,
@@ -76065,6 +78485,47 @@
   "verified_on_label": "Oct 13, 2026"
  },
  {
+  "grades": null,
+  "min_age": 12,
+  "max_age": 18,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "id": "salt-lake-county-library-teen-volunteers",
+  "name": "Teen Volunteers and Teen Advisory Board (Salt Lake County Library)",
+  "org": "Salt Lake County Library",
+  "regions": [
+   "utah"
+  ],
+  "city": "Salt Lake County, UT",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "any"
+  ],
+  "what_you_do": "Help at a county library branch. The library lists a Teen Advisory Board. Its meetings cover teen volunteer chances and upcoming programs.",
+  "who_can_apply": "Teens ages 12 to 18, based on a 2024 Teen Advisory Board listing. Ask your branch to confirm.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Teens earn volunteer hours.",
+  "season": "year-round",
+  "duration": "Teen Advisory Board meetings were listed for the first Thursday of the month in 2024.",
+  "status": "year-round",
+  "deadline_text": "No dates on the volunteer page. It says to contact your local branch.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Call or visit your neighborhood branch and ask about teen volunteering. The customer service number is 801-943-4636.",
+  "url": "https://www.slcolibrary.org/information/volunteer-opportunities",
+  "sources_fetched": [
+   "https://www.slcolibrary.org/information/volunteer-opportunities",
+   "https://events.slcolibrary.org/event/10143915",
+   "https://events.slcolibrary.org/event/9252235"
+  ],
+  "priority": 3,
+  "notes": "The teen ages come from 2024 branch event listings. A 2024 summer teen event listed ages 14 to 17 and required attendance at one of three trainings. The main volunteer page does not name ages for teens. Volunteers over 18 must pass a background check.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "id": "salt-lake-county-student-internships",
   "name": "Salt Lake County Internships for High School Students",
   "org": "Salt Lake County Human Resources",
@@ -78977,6 +81438,48 @@
    "https://sitesantafe.org/en/young-curators/"
   ],
   "verified_on_label": "Oct 10, 2026"
+ },
+ {
+  "grades": null,
+  "min_age": 16,
+  "max_age": 24,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "id": "santa-fe-youthworks-youth-corps-and-job-training",
+  "name": "Santa Fe YouthWorks Youth Corps and Job Training",
+  "org": "YouthWorks (Santa Fe)",
+  "regions": [
+   "new-mexico"
+  ],
+  "city": "Santa Fe, NM",
+  "type": "paid-youth-program",
+  "fields": [
+   "environment",
+   "trades",
+   "food-hospitality"
+  ],
+  "what_you_do": "Get paid job training in Santa Fe. Youth crews do work like fire danger reduction, river and watershed care, farming, construction and cooking. You build job skills and good work habits.",
+  "who_can_apply": "Youth ages 16 to 24. The program serves young people from Northern New Mexico.",
+  "paid_type": "paid",
+  "pay_detail": "Wages and stipends. The amount is not stated on the program pages.",
+  "season": "year-round",
+  "duration": "A 6 month spring and summer season, per the page. The season listed is for 2025.",
+  "status": "unconfirmed",
+  "deadline_text": "No dates on the program pages. The page says to connect with YouthWorks to learn about current offerings.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Open the Youth Jobs Application link on the YouthWorks site. You can also email info@santafeyouthworks.org with your resume and letter of interest, or call 505-989-1855. The office is at 1505 Llano St., Santa Fe.",
+  "url": "https://santafeyouthworks.org/environmental-stewardship-and-restoration-programs/",
+  "sources_fetched": [
+   "https://santafeyouthworks.org/environmental-stewardship-and-restoration-programs/",
+   "https://santafeyouthworks.org/job-training/",
+   "https://santafeyouthworks.org/"
+  ],
+  "priority": 2,
+  "notes": "The page also lists GED prep, First Aid and CPR training, and trades certificates.",
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "grades": "high school",
@@ -83141,6 +85644,85 @@
   "verified_on_label": "Oct 7, 2026"
  },
  {
+  "grades": "6 to 12",
+  "min_age": null,
+  "max_age": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "id": "socorro-new-mexico-tech-buzzcamp",
+  "name": "BuzzCamp (New Mexico Tech)",
+  "org": "New Mexico Tech",
+  "regions": [
+   "new-mexico"
+  ],
+  "city": "Socorro, NM",
+  "type": "pre-college",
+  "fields": [
+   "tech-cs",
+   "engineering",
+   "science"
+  ],
+  "what_you_do": "Spend a week on the New Mexico Tech campus doing coding, hands-on workshops and real STEM challenges. Rising 11th and 12th graders can earn one college credit hour.",
+  "who_can_apply": "Students entering grades 6 to 12. Grades 11 and 12 attend their own session.",
+  "paid_type": "unpaid",
+  "pay_detail": "No pay. The camp is free. Spots are first come, first served.",
+  "season": "summer",
+  "duration": "One week. Grades 6 to 10: July 12 to 17, 2026. Grades 11 and 12: July 19 to 24, 2026.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "BuzzCamp 2026 was full and had a waitlist. The 2027 dates are not posted.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the registration form on the program page. Returning campers who did not get an early form should contact the team right away. If the camp is full, join the waiting list on the page.",
+  "url": "https://www.nmt.edu/buzzcamp/",
+  "priority": 2,
+  "notes": "Campers stay in dorms with staff watching around the clock. The 2026 camp had 120 spots.",
+  "sources_fetched": [
+   "https://www.nmt.edu/buzzcamp/"
+  ],
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "grades": "Entering 10th, 11th or 12th",
+  "min_age": null,
+  "max_age": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "id": "socorro-new-mexico-tech-summer-stem-experience",
+  "name": "Summer STEM Experience (New Mexico Tech)",
+  "org": "New Mexico Tech",
+  "regions": [
+   "new-mexico"
+  ],
+  "city": "Socorro, NM",
+  "type": "pre-college",
+  "fields": [
+   "science",
+   "engineering"
+  ],
+  "what_you_do": "Live like a college student for a week. You study one science or engineering topic. The page says you can earn college credit.",
+  "who_can_apply": "Students entering sophomore, junior or senior year of high school. You need at least a 2.75 GPA and must have finished Algebra 1.",
+  "paid_type": "fee-based",
+  "pay_detail": "$675 per session. This covers food, housing and classes.",
+  "season": "summer",
+  "duration": "One week per session",
+  "status": "unconfirmed",
+  "deadline_text": "The page is for the 2026 session and does not show dates. Check the page for the next session.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "The program page says application links are at the bottom of the page. The link itself is not stated on the program page.",
+  "url": "https://apply.nmt.edu/portal/summer_stem",
+  "priority": 2,
+  "notes": "The page says you can earn college credit. The number of credits is not stated on the program page.",
+  "sources_fetched": [
+   "https://apply.nmt.edu/portal/summer_stem"
+  ],
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "regions": [
    "los-angeles"
   ],
@@ -85736,6 +88318,46 @@
   "priority": 2,
   "notes": "Open to TPS and partner district students only. Each course has its own dates, spots and lead; the auto course ran June 22 to July 9 in 2026. Work permit rule not stated.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "grades": null,
+  "min_age": 14,
+  "max_age": 18,
+  "apply_url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=a01c3d71-4d0d-46a0-8a8f-3d500fa70bbe&ccId=19000101_000001&lang=en_US&source=CC2&selectedMenuKey=CurrentOpenings&jobId=567696",
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "id": "taos-rmyc-youth-coalition-member",
+  "name": "Youth Coalition Member (Rocky Mountain Youth Corps)",
+  "org": "Rocky Mountain Youth Corps of New Mexico",
+  "regions": [
+   "new-mexico"
+  ],
+  "city": "Taos, NM",
+  "type": "paid-youth-program",
+  "fields": [
+   "health",
+   "social-impact"
+  ],
+  "what_you_do": "Join the Youth Coalition Member job in Taos, NM. It is part of the Prevention Program.",
+  "who_can_apply": "Ages 14 to 18. The job is in Taos, NM.",
+  "paid_type": "paid",
+  "pay_detail": "$17 per hour",
+  "season": "school-year",
+  "duration": "Oct 9, 2026 to Apr 30, 2027",
+  "status": "open-now",
+  "deadline_text": "The job runs from Oct 9, 2026 to Apr 30, 2027. The apply page does not give a last day to apply.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Open the apply page and find the Youth Coalition Member job under Prevention Program. Use the link for that job.",
+  "url": "https://youthcorps.org/apply-now/",
+  "sources_fetched": [
+   "https://youthcorps.org/apply-now/",
+   "https://youthcorps.org/programs-and-crews/"
+  ],
+  "priority": 2,
+  "notes": "The job runs from Oct 9, 2026 to Apr 30, 2027, per the listing. Hours per week and the last day to apply are not stated on the program page. The Prevention Program listing says its positions are for people pursuing a career in public health addressing substance misuse.",
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "verified": "fetched",
@@ -90383,6 +93005,86 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "uidaho-summer-design-days",
+  "name": "Summer Design Days",
+  "org": "University of Idaho College of Art and Architecture",
+  "regions": [
+   "idaho"
+  ],
+  "city": "Moscow, ID",
+  "type": "pre-college",
+  "fields": [
+   "arts-media",
+   "engineering"
+  ],
+  "what_you_do": "Stay on the University of Idaho campus for four days. Take four hands-on workshops. Topics include architecture, art and design, apparel design, interior design and landscape design. Meet design pros and other teens.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "High school students. No grade or age rule is listed on the program page.",
+  "paid_type": "fee-based",
+  "pay_detail": "$450, or $425 for returning campers. It covers workshops, supplies, room and board. Local students who go home at night can email sdd@uidaho.edu for a different price.",
+  "season": "summer",
+  "duration": "4 days (June 24 to 27 in 2026)",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 camp ran June 24 to 27, 2026. Registration closed June 10, 2026. 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "The program page does not explain the steps. Email sdd@uidaho.edu or call 208-885-1186.",
+  "needs_work_permit": false,
+  "url": "https://www.uidaho.edu/art-architecture/news-events/summer-design-days",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.uidaho.edu/art-architecture/news-events/summer-design-days"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "Full refunds were offered only through June 11 in 2026. Check the page next spring for new dates and prices.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "um-mansfield-civics-institute",
+  "name": "Mansfield Civics Institute",
+  "org": "Mansfield Center, University of Montana",
+  "regions": [
+   "montana"
+  ],
+  "city": "Missoula, MT",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "education"
+  ],
+  "what_you_do": "Live on the University of Montana campus for two weeks. Study the Declaration of Independence, the Constitution and free speech. Do service work. Visit old sites. Build leadership skills.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Montana high school students. The page says sophomores and juniors during the 2025-2026 school year. That wording may be old, so ask the program contact about your grade.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free. A US Department of Education grant pays the cost.",
+  "season": "summer",
+  "duration": "2 weeks (July 5 to 16, 2027)",
+  "status": "opens-soon",
+  "opens_iso": "2026-11-01",
+  "deadline_text": "Applications open November 1, 2026 for the July 5 to 16, 2027 program. A closing date is not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Use the Apply here form on the program page when it opens. Questions: Annie Zavitz at Annie.Zavitz@mso.umt.edu.",
+  "needs_work_permit": false,
+  "url": "https://www.umt.edu/mansfield/democracy-programs/mansfield-civics-institute/",
+  "apply_url": "https://umt.co1.qualtrics.com/jfe/form/SV_egKLEoY769JfRY2",
+  "sources_fetched": [
+   "https://www.umt.edu/mansfield/democracy-programs/mansfield-civics-institute/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 1,
+  "notes": "Students live in residence halls and share meals. No closing date is posted, so apply as soon as the form opens.",
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "id": "umd-esteem-ser-quest",
   "name": "ESTEEM/SER-Quest Summer Program",
   "org": "A. James Clark School of Engineering, University of Maryland (Center for Minorities in Science and Engineering)",
@@ -94851,6 +97553,85 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "grades": null,
+  "min_age": 13,
+  "max_age": 18,
+  "opens_iso": null,
+  "deadline_iso": "2026-11-06",
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "season": "fall",
+  "needs_work_permit": false,
+  "id": "wichita-art-museum-teen-studio-workshop",
+  "name": "WAM Nights: Past and Present Teen Studio Workshop",
+  "org": "Wichita Art Museum",
+  "regions": [
+   "kansas"
+  ],
+  "city": "Wichita, KS",
+  "type": "leadership",
+  "fields": [
+   "arts-media"
+  ],
+  "what_you_do": "Join a free evening studio workshop for teens. The art is inspired by sculptors in the Past and Present show, such as Nick Cave, Dan Friday and Beth Lipman.",
+  "who_can_apply": "Teens ages 13 to 18.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free.",
+  "duration": "One evening, 6 to 8 p.m.",
+  "status": "event",
+  "deadline_text": "Friday, November 6, 2026, 6 to 8 p.m.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "The event page does not say if you need to sign up. Call the museum at 316-268-4921 to ask.",
+  "url": "https://wam.org/event/wam-nights-past-present-teen-studio-workshop/",
+  "priority": 3,
+  "notes": "It is at the Wichita Art Museum, 1400 West Museum Boulevard. The event page does not say whether sign-up is required.",
+  "sources_fetched": [
+   "https://wam.org/event/wam-nights-past-present-teen-studio-workshop/"
+  ],
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "grades": null,
+  "min_age": 14,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": "https://welcome.civicchamps.com/apply/exploration-place/15781",
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "season": "year-round",
+  "needs_work_permit": false,
+  "id": "wichita-exploration-place-volunteer",
+  "name": "Exploration Place Volunteer Program",
+  "org": "Exploration Place",
+  "regions": [
+   "kansas"
+  ],
+  "city": "Wichita, KS",
+  "type": "volunteer",
+  "fields": [
+   "science",
+   "education"
+  ],
+  "what_you_do": "Volunteer at a science museum. Jobs include ticket services, floor attendant, store and snack bar help, special events and grounds help.",
+  "who_can_apply": "Must be at least 14 years old unless an event says something different. Volunteers 16 and older must pass a background check.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer role.",
+  "duration": "Pick shifts from the volunteer calendar. The page does not state a minimum time.",
+  "status": "year-round",
+  "deadline_text": "No deadline is stated. Volunteers sign up for shifts on the volunteer calendar.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "All volunteers must go through an application process. Then sign up for a shift on the volunteer calendar. To apply to be a gallery docent, use the application link on the program page. Call the volunteer coordinator at 316-660-0603.",
+  "url": "https://exploration.org/volunteer/",
+  "priority": 2,
+  "notes": "Special events can have their own age rules. The page says volunteers 16 and older must complete a background check.",
+  "sources_fetched": [
+   "https://exploration.org/volunteer/"
+  ],
+  "verified_on_label": "Oct 13, 2026"
+ },
+ {
   "grades": "High school",
   "min_age": null,
   "max_age": null,
@@ -95047,6 +97828,47 @@
   "priority": 2,
   "notes": "Quote from the page: Applicants must be 16 years of age or older. Volunteers must keep up a regular schedule. A mandatory flu shot policy applies in flu season.",
   "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "grades": "4 to 12 (camps vary by grade)",
+  "min_age": null,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "season": "summer",
+  "needs_work_permit": null,
+  "id": "wichita-wsu-engineering-summer-camps",
+  "name": "Engineering Summer Camps",
+  "org": "Wichita State University College of Engineering",
+  "regions": [
+   "kansas"
+  ],
+  "city": "Wichita, KS",
+  "type": "pre-college",
+  "fields": [
+   "engineering",
+   "tech-cs"
+  ],
+  "what_you_do": "Take a camp on the WSU campus. Most camps last one week. High school options in 2026 were Biomedical Engineering, Ethical Hacking and Capture the Flag, Python, and an electrical circuits day.",
+  "who_can_apply": "Students in grades 4 to 12. The page lists the grades for each camp. Two 2026 camps were for grades 9 to 12.",
+  "paid_type": "fee-based",
+  "pay_detail": "Not stated on the program page. Scholarships are available through a form on the page.",
+  "duration": "Most camps last 1 week in June and July",
+  "status": "closed-expect-reopen",
+  "deadline_text": "2026 registration opened March 19, 2026. The program page does not list 2027 dates.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Use the registration link on the program page. Use the scholarship form on the same page to ask for help with cost.",
+  "url": "https://www.wichita.edu/academics/engineering/engineeringsummercamp/",
+  "sources_fetched": [
+   "https://www.wichita.edu/academics/engineering/engineeringsummercamp/",
+   "https://www.wichita.edu/academics/engineering/engineeringsummercamp/schedule.php"
+  ],
+  "priority": 2,
+  "notes": "In 2026 the Biomedical Engineering camp ran June 22 to 26. Ethical Hacking ran July 13 to 17.",
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "grades": "8 (entering high school) to 12",
