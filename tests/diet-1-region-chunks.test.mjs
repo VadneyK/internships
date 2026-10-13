@@ -148,9 +148,9 @@ test("the numbers that count every program come out the same from the stats rows
 
 // ---- the page ----
 // 2026-10-12: 20 s, not 6 s. The CI coverage run is slow enough that loading the whole lite file after a change took longer than 6 s (run 38315707421).
-async function poll(cond, ms = 20000) {
+async function poll(cond, ms = 20000, step = 40) {
   const t0 = Date.now();
-  while (Date.now() - t0 < ms) { if (cond()) return true; await new Promise((r) => setTimeout(r, 40)); }
+  while (Date.now() - t0 < ms) { if (cond()) return true; await new Promise((r) => setTimeout(r, step)); }
   return false;
 }
 const dataPaths = (seen) => [...new Set(seen.map((r) => new URL(r.url).pathname.replace(/^\//, "")).filter((p) => p.startsWith("data/") && !p.endsWith("gaps.json")))].sort();
@@ -243,7 +243,15 @@ function setPlace(window, document, value) {
   sel.dispatchEvent(new window.Event("change", { bubbles: true }));
 }
 async function reference(search, opts = {}) {
-  const r = await loadPage("find.html", { search, now: NOW, fetchFail: FALL, ...opts });
+  const log = opts.fetchLog || [];
+  const r = await loadPage("find.html", { search, now: NOW, fetchFail: FALL, fetchLog: log, ...opts });
+  // 2026-10-13: a search in the address also loads the long text after the list; on a slow CI machine the
+  // snapshot could be taken before it arrived. Wait for the long text request, then for the list to stop changing.
+  if (new URLSearchParams(search).get("q")) {
+    await poll(() => dataPaths(log).includes("data/entries-detail.json"));
+    let prev = "";
+    await poll(() => { const now = JSON.stringify(snapshot(r.document)); const same = now === prev && !r.document.querySelector('[data-detail="wait"], [data-detail-wait]'); prev = now; return same; }, 20000, 500);
+  }
   const snap = snapshot(r.document);
   r.window.close();
   return snap;
@@ -375,9 +383,24 @@ const BUDGET = {
   // 2026-10-12: +77 Plains state cards (2,291 programs). The stats file and the shared file grew with the new cards. Raised: a Bay Area city raw 1126000 to 1150000, gzip 186000 to 190000; Boston raw 1017000 to 1041000, gzip 163000 to 167000; a Plains state raw 713000 to 807000, gzip 101000 to 120000.
   // 2026-10-13: +7 Plains and North Dakota cards (2,298 programs). Raised raw: Bay Area city 1150000 to 1152000, Boston 1041000 to 1043000, a Plains state 807000 to 818000, gzip 120000 to 121500.
   // 2026-10-13: +50 city cards for the six new Where cities (2,348 programs). The stats file grew and the Plains and Mountain chunk gained the Montana and Idaho city cards. Raised raw: Bay Area city 1152000 to 1166000, Boston 1043000 to 1057000, a Plains state 818000 to 867100; gzip Bay Area 190000 to 191000, Boston 167000 to 168000, Plains 121500 to 130500.
-  "?at=city:san-francisco": { raw: 1166000, gzip: 191000, label: "a Bay Area city" },
-  "?at=city:boston": { raw: 1057000, gzip: 168000, label: "Boston" },
-  "?at=state:nebraska": { raw: 867100, gzip: 130500, label: "a Plains state" },
+  // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:san-francisco raw 1166000 to 1184800.
+  // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:san-francisco gzip 191000 to 193700.
+  // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=city:san-francisco raw 1184800 to 1205200.
+  // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=city:san-francisco gzip 193700 to 196500.
+  // 2026-10-13: re-read of 177 workshop-city cards (38 fixed). ?at=city:san-francisco raw 1205200 to 1205500.
+  // 2026-10-13: re-read of 177 workshop-city cards (38 fixed). ?at=city:san-francisco raw 1205500 to 1205600.
+  // 2026-10-13: re-read of 177 workshop-city cards (38 fixed). ?at=city:san-francisco gzip 196500 to 196700.
+  "?at=city:san-francisco": { raw: 1205600, gzip: 196700, label: "a Bay Area city" },
+  // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston raw 1057000 to 1075700.
+  // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston gzip 168000 to 170700.
+  // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston raw 1075700 to 1096100.
+  // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston gzip 170700 to 173500.
+  "?at=city:boston": { raw: 1096100, gzip: 173500, label: "Boston" },
+  // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska raw 867100 to 886400.
+  // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska gzip 130500 to 132800.
+  // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska raw 886400 to 937900.
+  // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska gzip 132800 to 142000.
+  "?at=state:nebraska": { raw: 937900, gzip: 142000, label: "a Plains state" },
 };
 for (const [search, b] of Object.entries(BUDGET)) {
   test("first-load data bytes for " + b.label + " stay under the pinned budget and far under the whole lite file", async () => {

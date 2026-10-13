@@ -20,11 +20,11 @@
   "pay_detail": null,
   "season": "school-year",
   "duration": null,
-  "status": "rolling",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Next high school round is Fall 2026. The waiting list closed May 22, 2026, but new students can still join and are contacted only when an info session is scheduled.",
+  "deadline_text": "The high school waiting list closed May 22, 2026. The page says the next high school round is planned for Fall 2026, with the information session date tentative. Students are contacted only when an info session is scheduled. Call 510-818-7465 to confirm.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Email volunteer_services@washingtonhealth.com with your name, grade, school, phone and email. They contact you only when an info session is scheduled. Phone 510-818-7465.",
   "needs_work_permit": false,
   "url": "https://www.washingtonhealth.com/volunteering/",
@@ -35,5 +35,5 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "No GPA rule or fee appears on the current page (older versions listed a GPA rule and $20 fee). Openings are limited. Office: 2500 Mowry Ave, Fremont."
+  "notes": "No GPA rule or fee appears on the current page (older versions listed a GPA rule and $20 fee). Openings are limited. Office: 2500 Mowry Ave, Fremont. The page says the list is closed as of May 22, 2026, but also says you are welcome to join the list now; call to confirm."
 }

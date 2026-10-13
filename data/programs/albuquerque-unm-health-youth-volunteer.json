@@ -1,0 +1,37 @@
+{
+  "id": "albuquerque-unm-health-youth-volunteer",
+  "name": "Youth Volunteer at UNM Health (Guest Services)",
+  "org": "UNM Health System",
+  "regions": [
+    "new-mexico"
+  ],
+  "city": "Albuquerque, NM",
+  "type": "volunteer",
+  "fields": [
+    "health"
+  ],
+  "what_you_do": "Volunteers help at Guest Services. The place is UNM Sandoval Regional Medical Center. The page lists a youth form for teens.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Volunteers can be as young as 16. The page lists the 16 year minimum for Guest Services at UNM Sandoval Regional Medical Center.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer work.",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "unconfirmed",
+  "deadline_text": "No deadline is listed. Call the volunteer office to learn more.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the youth application. Then have an interview with the Guest Services team. You also get a tuberculosis screening and go to orientation. The page lists phone numbers to call, one for the Sandoval hospital and one for UNM Hospital.",
+  "needs_work_permit": false,
+  "url": "https://unmhealth.org/give/volunteer/",
+  "sources_fetched": [
+    "https://unmhealth.org/give/volunteer/"
+  ],
+  "priority": 2,
+  "notes": "The page does not list a minimum age for volunteering at the main UNM Hospital, so call that office to ask. The listed steps are for Guest Services at the Sandoval hospital.",
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13"
+}

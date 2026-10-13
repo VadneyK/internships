@@ -1,0 +1,39 @@
+{
+  "id": "reno-unr-high-school-dual-enrollment",
+  "name": "UNR High School Dual Enrollment",
+  "org": "University of Nevada, Reno",
+  "regions": [
+    "nevada"
+  ],
+  "city": "Reno, NV",
+  "type": "school-pathway",
+  "fields": [
+    "any",
+    "education"
+  ],
+  "what_you_do": "Take college classes at the University of Nevada, Reno. Classes can count for high school credit and college credit. You can take up to 8 credits each semester.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "Nevada high school students who meet each course's prerequisites. A counselor or vice principal must back you. That lets the classes count toward graduation.",
+  "paid_type": "fee-based",
+  "pay_detail": "$154 per credit for tuition plus an $18 per credit tech fee, plus any class fees.",
+  "season": "school-year",
+  "duration": "By semester",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline is stated on the program page.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the UNR non-degree student application and the dual enrollment interest form. Send your shot records through the online portal (2 MMR doses and 1 Tdap). Upload your high school transcripts with the Transcript Upload form. Your counselor or vice principal fills out the school district contract form. They email it to DualEnrollment@unr.edu.",
+  "needs_work_permit": false,
+  "url": "https://www.unr.edu/admissions/dual-enrollment",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.unr.edu/admissions/dual-enrollment"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "Earlier college work can place you into classes. So can SAT or ACT scores, AP or IB scores, or placement tests."
+}

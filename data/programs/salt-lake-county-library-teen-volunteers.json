@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "min_age": 12,
+  "max_age": 18,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "id": "salt-lake-county-library-teen-volunteers",
+  "name": "Teen Volunteers and Teen Advisory Board (Salt Lake County Library)",
+  "org": "Salt Lake County Library",
+  "regions": [
+    "utah"
+  ],
+  "city": "Salt Lake County, UT",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "any"
+  ],
+  "what_you_do": "Help at a county library branch. The library lists a Teen Advisory Board. Its meetings cover teen volunteer chances and upcoming programs.",
+  "who_can_apply": "Teens ages 12 to 18, based on a 2024 Teen Advisory Board listing. Ask your branch to confirm.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Teens earn volunteer hours.",
+  "season": "year-round",
+  "duration": "Teen Advisory Board meetings were listed for the first Thursday of the month in 2024.",
+  "status": "year-round",
+  "deadline_text": "No dates on the volunteer page. It says to contact your local branch.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Call or visit your neighborhood branch and ask about teen volunteering. The customer service number is 801-943-4636.",
+  "url": "https://www.slcolibrary.org/information/volunteer-opportunities",
+  "sources_fetched": [
+    "https://www.slcolibrary.org/information/volunteer-opportunities",
+    "https://events.slcolibrary.org/event/10143915",
+    "https://events.slcolibrary.org/event/9252235"
+  ],
+  "priority": 3,
+  "notes": "The teen ages come from 2024 branch event listings. A 2024 summer teen event listed ages 14 to 17 and required attendance at one of three trainings. The main volunteer page does not name ages for teens. Volunteers over 18 must pass a background check."
+}

@@ -21,11 +21,18 @@ const PAGES = {
   // 2026-10-12: +77 Plains state cards (2,291 programs): find.html lite file plus gaps.json 2,177,634 bytes (ceiling 2160000 to 2180000), insights.html stats file 681,806 (680000 to 685000), younger.html core file plus younger.json 431,683 (430000 to 435000). PENDING PERSON APPROVAL, as above.
   "index.html": { allowed: ["entries-home.json"], ceiling: 920000 },
   // 2026-10-13: +50 city cards for the six new Where cities (2,348 programs). find 2180000 to 2223100 (2,222,946), insights 685000 to 697700 (697,681), younger 435000 to 442000 (441,899). PENDING PERSON APPROVAL, as above.
-  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2223100 },
+  // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. find.html ceiling 2223100 to 2277600.
+  // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. find.html limit 2277600 to 2341900.
+  // 2026-10-13: re-read of 177 workshop-city cards (38 fixed). find.html limit 2341900 to 2342200.
+  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2342200 },
   "calendar.html": { allowed: ["calendar.json", "entries-cal.json"], ceiling: 150000 },
-  "insights.html": { allowed: ["entries-stats.json"], ceiling: 697700 },
+  // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. insights.html ceiling 697700 to 716100.
+  // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. insights.html limit 716100 to 736500.
+  "insights.html": { allowed: ["entries-stats.json"], ceiling: 736500 },
   // younger.html: raised from 336000 to 340000 on 2026-10-11 (r5-younger-1: pet care card and address-safe script added 2.7 KB to younger.json)
-  "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 442000 },
+  // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. younger.html ceiling 442000 to 452800.
+  // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. younger.html limit 452800 to 465400.
+  "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 465400 },
   "interview.html": { allowed: ["interview.json", "permits.json"], ceiling: 95000 },
   // permit.html and states.html: raised from 82000 to 83000 on 2026-10-12 (r2-accuracy-2 and r2-accuracy-8: the 2027 wage lines and the Washington, DC wording; permits.json is 82,370 bytes)
   "permit.html": { allowed: ["permits.json"], ceiling: 83000 },

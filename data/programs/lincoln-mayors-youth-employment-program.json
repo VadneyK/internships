@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "min_age": 16,
+  "max_age": 24,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "season": "summer",
+  "needs_work_permit": null,
+  "id": "lincoln-mayors-youth-employment-program",
+  "name": "Mayor's Youth Employment Program",
+  "org": "City of Lincoln",
+  "regions": [
+    "nebraska"
+  ],
+  "city": "Lincoln, NE",
+  "type": "paid-youth-program",
+  "fields": [
+    "any",
+    "law-government"
+  ],
+  "what_you_do": "Work a paid summer job with a City of Lincoln department. You also join weekly workshops.",
+  "who_can_apply": "Ages 16 to 24. You must meet WIOA income and barrier rules and enroll in the YESS Program before you are placed.",
+  "paid_type": "paid",
+  "pay_detail": "$16 per hour plus a $200 bonus for finishing. Up to 30 hours a week. You also get a free Chromebook.",
+  "duration": "June 4 to July 29 in 2026",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The 2026 application deadline was April 3, 2026 and the enrollment deadline was May 8. The program page does not list 2027 dates.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply to the City of Lincoln job posting for the program. Staff at the American Job Center then contact you to check if you qualify. After you enroll, you are matched with a City department. Call 402-441-7975 with questions.",
+  "url": "https://www.lincoln.ne.gov/City/Mayor/Mayors-Youth-Employment-Program",
+  "priority": 1,
+  "notes": "The page does not mention work permits. Weekly workshops and possible tuition help are listed.",
+  "sources_fetched": [
+    "https://www.lincoln.ne.gov/City/Mayor/Mayors-Youth-Employment-Program"
+  ]
+}

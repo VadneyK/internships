@@ -1,0 +1,40 @@
+{
+  "grades": "4 to 12 (camps vary by grade)",
+  "min_age": null,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "season": "summer",
+  "needs_work_permit": null,
+  "id": "wichita-wsu-engineering-summer-camps",
+  "name": "Engineering Summer Camps",
+  "org": "Wichita State University College of Engineering",
+  "regions": [
+    "kansas"
+  ],
+  "city": "Wichita, KS",
+  "type": "pre-college",
+  "fields": [
+    "engineering",
+    "tech-cs"
+  ],
+  "what_you_do": "Take a camp on the WSU campus. Most camps last one week. High school options in 2026 were Biomedical Engineering, Ethical Hacking and Capture the Flag, Python, and an electrical circuits day.",
+  "who_can_apply": "Students in grades 4 to 12. The page lists the grades for each camp. Two 2026 camps were for grades 9 to 12.",
+  "paid_type": "fee-based",
+  "pay_detail": "Not stated on the program page. Scholarships are available through a form on the page.",
+  "duration": "Most camps last 1 week in June and July",
+  "status": "closed-expect-reopen",
+  "deadline_text": "2026 registration opened March 19, 2026. The program page does not list 2027 dates.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Use the registration link on the program page. Use the scholarship form on the same page to ask for help with cost.",
+  "url": "https://www.wichita.edu/academics/engineering/engineeringsummercamp/",
+  "sources_fetched": [
+    "https://www.wichita.edu/academics/engineering/engineeringsummercamp/",
+    "https://www.wichita.edu/academics/engineering/engineeringsummercamp/schedule.php"
+  ],
+  "priority": 2,
+  "notes": "In 2026 the Biomedical Engineering camp ran June 22 to 26. Ethical Hacking ran July 13 to 17."
+}

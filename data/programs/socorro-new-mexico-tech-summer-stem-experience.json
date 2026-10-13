@@ -1,0 +1,38 @@
+{
+  "grades": "Entering 10th, 11th or 12th",
+  "min_age": null,
+  "max_age": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "needs_work_permit": null,
+  "deadline_iso": null,
+  "id": "socorro-new-mexico-tech-summer-stem-experience",
+  "name": "Summer STEM Experience (New Mexico Tech)",
+  "org": "New Mexico Tech",
+  "regions": [
+    "new-mexico"
+  ],
+  "city": "Socorro, NM",
+  "type": "pre-college",
+  "fields": [
+    "science",
+    "engineering"
+  ],
+  "what_you_do": "Live like a college student for a week. You study one science or engineering topic. The page says you can earn college credit.",
+  "who_can_apply": "Students entering sophomore, junior or senior year of high school. You need at least a 2.75 GPA and must have finished Algebra 1.",
+  "paid_type": "fee-based",
+  "pay_detail": "$675 per session. This covers food, housing and classes.",
+  "season": "summer",
+  "duration": "One week per session",
+  "status": "unconfirmed",
+  "deadline_text": "The page is for the 2026 session and does not show dates. Check the page for the next session.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "The program page says application links are at the bottom of the page. The link itself is not stated on the program page.",
+  "url": "https://apply.nmt.edu/portal/summer_stem",
+  "priority": 2,
+  "notes": "The page says you can earn college credit. The number of credits is not stated on the program page.",
+  "sources_fetched": [
+    "https://apply.nmt.edu/portal/summer_stem"
+  ]
+}

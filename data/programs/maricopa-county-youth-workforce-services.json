@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": "https://hsdclientportal.maricopa.gov/",
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "needs_work_permit": null,
+  "id": "maricopa-county-youth-workforce-services",
+  "name": "Maricopa County Youth Workforce Services",
+  "org": "Maricopa County Human Services Department (Arizona@Work)",
+  "regions": [
+    "arizona"
+  ],
+  "city": "Phoenix, AZ",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Get free help with school, job skills, and careers. Some youth get paid work experience or an apprenticeship. You also get a mentor for 12 months.",
+  "min_age": 14,
+  "max_age": 24,
+  "who_can_apply": "In school: ages 14 to 21 and low income. You also need one more need. Examples are foster care, homelessness, a disability, or being an English learner. Out of school: ages 16 to 24 with a need listed on the program page.",
+  "paid_type": "mixed",
+  "pay_detail": "Services are free. Some youth get paid work experience. The program page does not give the pay rate.",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "year-round",
+  "deadline_text": "Year-round. No deadlines are listed on the program page.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Check that you qualify. Gather a photo ID that shows your date of birth and your Social Security card. Create an Arizona Job Connection PLUS account. Visit the client portal first. Career centers are in Mesa, Glendale, Surprise and Tempe.",
+  "url": "https://maricopa.gov/5227/Youth-Workforce-Services-Ages-14-24",
+  "priority": 2,
+  "notes": "Not every teen qualifies. You must meet the age and need rules. Services are free. Pay for work experience is not stated on the program page.",
+  "sources_fetched": [
+    "https://maricopa.gov/5227/Youth-Workforce-Services-Ages-14-24"
+  ]
+}

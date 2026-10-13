@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "needs_work_permit": null,
+  "id": "scottsdale-teen-employment-program-step",
+  "name": "Scottsdale Teen Employment Program (STEP)",
+  "org": "City of Scottsdale, Vista Career Center",
+  "regions": [
+    "arizona"
+  ],
+  "city": "Scottsdale, AZ",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Get one-on-one job help from a teen employment specialist. They help with your resume, practice interviews, and job search. They give job referrals when they can.",
+  "min_age": 14,
+  "max_age": 19,
+  "who_can_apply": "Teens ages 14 to 19 who live in the Scottsdale area.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page. This program helps you find a job. It is not a job itself.",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "year-round",
+  "deadline_text": "No deadline. Make an appointment any time. The fall and spring job skills events are postponed.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Call 480-312-0060 or email VistaCareerCenter@ScottsdaleAZ.gov to make an appointment. You can meet online or in person.",
+  "url": "https://www.scottsdaleaz.gov/careers/scottsdale-teen-employment-program",
+  "priority": 2,
+  "notes": "The career center is at 7700 E. Roosevelt St., Scottsdale. It has a self-serve computer lab for job searches. The center is open Monday to Friday, 8 am to 5 pm. Specialists are available 8 am to 4 pm.",
+  "sources_fetched": [
+    "https://www.scottsdaleaz.gov/careers/scottsdale-teen-employment-program"
+  ]
+}

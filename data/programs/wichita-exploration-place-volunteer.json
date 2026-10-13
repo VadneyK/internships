@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "min_age": 14,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": "https://welcome.civicchamps.com/apply/exploration-place/15781",
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "season": "year-round",
+  "needs_work_permit": false,
+  "id": "wichita-exploration-place-volunteer",
+  "name": "Exploration Place Volunteer Program",
+  "org": "Exploration Place",
+  "regions": [
+    "kansas"
+  ],
+  "city": "Wichita, KS",
+  "type": "volunteer",
+  "fields": [
+    "science",
+    "education"
+  ],
+  "what_you_do": "Volunteer at a science museum. Jobs include ticket services, floor attendant, store and snack bar help, special events and grounds help.",
+  "who_can_apply": "Must be at least 14 years old unless an event says something different. Volunteers 16 and older must pass a background check.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer role.",
+  "duration": "Pick shifts from the volunteer calendar. The page does not state a minimum time.",
+  "status": "year-round",
+  "deadline_text": "No deadline is stated. Volunteers sign up for shifts on the volunteer calendar.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "All volunteers must go through an application process. Then sign up for a shift on the volunteer calendar. To apply to be a gallery docent, use the application link on the program page. Call the volunteer coordinator at 316-660-0603.",
+  "url": "https://exploration.org/volunteer/",
+  "priority": 2,
+  "notes": "Special events can have their own age rules. The page says volunteers 16 and older must complete a background check.",
+  "sources_fetched": [
+    "https://exploration.org/volunteer/"
+  ]
+}
