@@ -1,0 +1,40 @@
+{
+  "id": "reno-parks-lifeguard-certification-class",
+  "name": "City of Reno Red Cross Lifeguarding Class",
+  "org": "City of Reno Parks and Recreation, Aquatics",
+  "regions": [
+    "nevada"
+  ],
+  "city": "Reno, NV",
+  "type": "paid-youth-program",
+  "fields": [
+    "sports",
+    "health"
+  ],
+  "what_you_do": "Take the Red Cross lifeguard class at Moana Springs. You earn a lifeguard certificate, plus CPR/AED and first aid certificates.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be 15 by the final scheduled session. You must also pass a swim test. Swim 150 yards, then tread water for 2 minutes using only your legs. Swim 50 yards. Then finish a timed event in 1 minute 40 seconds: a 20 yard swim, a dive to 10 feet for a 10 pound object, a swim back, and an exit without a ladder.",
+  "paid_type": "fee-based",
+  "pay_detail": "The class costs $140. The page says the city will certify you for free if you are hired and onboarded by the class start date.",
+  "season": "year-round",
+  "duration": "In-person class days run 9am to 3:30pm. The class is blended, with online lecture and in-class training.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No application deadline is stated. The 2026 class dates run from Sept 19 to Dec 24, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use the Register Online button for a class, or join the interest list by email. To get the free certificate, apply online for a city job. Be onboarded by the class start date.",
+  "needs_work_permit": null,
+  "url": "https://www.reno.gov/parks-and-recreation/recreation/aquatics/aquatic-training-and-certifications.php",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.reno.gov/parks-and-recreation/recreation/aquatics/aquatic-training-and-certifications.php",
+    "https://www.reno.gov/parks-and-recreation/resources/jobs.php"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "You must attend every day of the class to be certified. A shorter $124 renewal class is for people with a valid lifeguard certificate, or one that ended in the last 30 days. The program page does not say if a work permit is needed."
+}

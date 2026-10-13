@@ -1,0 +1,40 @@
+{
+  "id": "hawaii-uh-early-college-dual-credit",
+  "name": "UH Early College (College Classes at Your High School)",
+  "org": "University of Hawaii System and Hawaii State Department of Education",
+  "regions": [
+    "hawaii"
+  ],
+  "city": "Statewide, HI",
+  "type": "school-pathway",
+  "fields": [
+    "education",
+    "any"
+  ],
+  "what_you_do": "Take college classes with other high school students, offered at your high school, online, or as a mix of both. A college professor or a qualified high school teacher leads the class. Classes at the 100 level and above earn high school and college credit.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "Students at a participating Hawaii public high school. Each high school decides which classes it offers, so ask your counselor.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free to students at Hawaii public schools in the program, thanks to state funding. You are not paid.",
+  "season": "school-year",
+  "duration": "Classes run during the school year",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Deadlines are set by each UH campus. Ask your counselor.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Meet with your high school counselor first. Then fill out the UH System application and the online Dual Credit Application. Get the signatures, and send both to the UH campus by its deadline.",
+  "needs_work_permit": false,
+  "url": "https://www.hawaii.edu/dualcredit/early-college/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.hawaii.edu/dualcredit/early-college/",
+    "https://www.hawaii.edu/dualcredit/how-to-apply/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "The program page says 53 public high schools offered Early College in the 2023 to 2024 school year. Classes are face to face, online or mixed. Classes at the 100 level and above earn college credit."
+}

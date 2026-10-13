@@ -1,0 +1,40 @@
+{
+  "id": "reno-parks-junior-lifeguards",
+  "name": "City of Reno Junior Lifeguards",
+  "org": "City of Reno Parks and Recreation, Aquatics",
+  "regions": [
+    "nevada"
+  ],
+  "city": "Reno, NV",
+  "type": "leadership",
+  "fields": [
+    "sports",
+    "health"
+  ],
+  "what_you_do": "Take a four day junior lifeguard class for ages 11 to 14. You earn Red Cross CPR/AED and first aid certification, valid for two years.",
+  "min_age": 11,
+  "max_age": 14,
+  "grades": null,
+  "who_can_apply": "Ages 11 to 14 by the first session date. You must pass a swim test: 25 yards of front crawl, a step into deep water with a 10 foot underwater swim, and 1 minute of treading water.",
+  "paid_type": "fee-based",
+  "pay_detail": "The class fee is $100.",
+  "season": "winter",
+  "duration": "4 days, 8:30am to 1:30pm each day",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "The 2026 sessions listed are Oct 5 to 8 and Dec 28 to 31. No registration deadline is stated.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Pick a session on the program page. Each session links to a registration page, and the site has an Online Registration link. For questions, call Parks Administration at 775-334-2262.",
+  "needs_work_permit": false,
+  "url": "https://www.reno.gov/parks-and-recreation/recreation/aquatics/junior-lifeguards.php",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.reno.gov/parks-and-recreation/recreation/aquatics/junior-lifeguards.php",
+    "https://www.reno.gov/parks-and-recreation/recreation/aquatics/aquatic-training-and-certifications.php"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 3,
+  "notes": "This is a good step toward the City of Reno lifeguard class, which starts at age 15. You must attend every day of a session to be certified."
+}

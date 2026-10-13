@@ -4,7 +4,7 @@
   "grades": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-13",
   "apply_url": null,
   "deadline_iso": null,
   "needs_work_permit": null,
@@ -21,7 +21,7 @@
     "trades",
     "health"
   ],
-  "what_you_do": "This is a free career training campus. The center page lists pre-apprentice training in bricklaying, building construction and carpentry. It also lists Clinical Medical Assistant. More programs are under See More.",
+  "what_you_do": "This is a free career training campus with 12 training areas. They include pre-apprentice bricklaying, carpentry and electrical, Clinical Medical Assistant, Welding, Landscaping and Office Administration.",
   "who_can_apply": "Generally ages 16 through 24. You must be low income. You must meet citizenship or residency rules. You must meet background rules. The pages do not explain the rules for applicants under 18.",
   "paid_type": "stipend",
   "pay_detail": "Free. The national site says Job Corps covers housing, meals, basic medical care and a living allowance. The living allowance amount is not stated on the program pages.",
@@ -31,11 +31,12 @@
   "deadline_text": "Open enrollment: you can start at any time. The process usually takes about two months.",
   "deadline_confidence": "rolling",
   "how_to_apply": "Make a MyJobCorps account on jobcorps.gov. Fill out the application. Upload the documents that show you are eligible. Then connect with an admissions representative. Call 800-733-5627 with questions.",
-  "url": "https://woodstock.jobcorps.gov/training-programs",
+  "url": "https://woodstock.jobcorps.gov/train",
   "sources_fetched": [
     "https://woodstock.jobcorps.gov/",
     "https://woodstock.jobcorps.gov/training-programs",
-    "https://www.jobcorps.gov/admissions-process"
+    "https://www.jobcorps.gov/admissions-process",
+    "https://woodstock.jobcorps.gov/train"
   ],
-  "notes": "Center address: 10900 Old Court Rd, Woodstock, MD 21163. No closure notice showed on the program pages on 2026-10-10. The /training-programs page on this card gives a 404 error. The center home page lists Bricklayer, Building Construction Technology, Carpentry (pre-apprentice) and Clinical Medical Assistant. The application asks for ID, Social Security number and proof of income. Only enter these on the official jobcorps.gov site. Do it with a parent or guardian. A parent should ask an admissions staff member about the rules for 16 and 17 year olds."
+  "notes": "Center address: 10900 Old Court Rd, Woodstock, MD 21163. No closure notice showed on the program pages on 2026-10-10. The old /training-programs page gave a 404 error. The current list is at /train. The application asks for ID, Social Security number and proof of income. Only enter these on the official jobcorps.gov site. Do it with a parent or guardian. A parent should ask an admissions staff member about the rules for 16 and 17 year olds."
 }

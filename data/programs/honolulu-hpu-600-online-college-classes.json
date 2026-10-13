@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "id": "honolulu-hpu-600-online-college-classes",
+  "name": "HPU 600: College Classes for High School Students",
+  "org": "Hawaii Pacific University",
+  "regions": [
+    "hawaii",
+    "virtual"
+  ],
+  "city": "Honolulu (online classes)",
+  "type": "pre-college",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "High school students take college credit classes online. Classes are in arts and humanities, computer science, criminal justice and leadership, and math and science. Classes are taught on your own schedule, not live.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "Current high school students in grades 9 to 12.",
+  "paid_type": "fee-based",
+  "pay_detail": "$600 per class",
+  "season": "school-year",
+  "duration": "Fall 2026 terms: 8 weeks or 16 weeks",
+  "status": "unconfirmed",
+  "deadline_text": "Fall 2026 terms: Term A Aug 31 to Oct 25, Term B Oct 26 to Dec 20, or a 16 week term Aug 31 to Dec 20. The registration deadline is not stated on the program page.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Register for classes through the link on the program page.",
+  "needs_work_permit": false,
+  "url": "https://www.hpu.edu/undergraduate-admissions/hpu-500.html",
+  "sources_fetched": [
+    "https://www.hpu.edu/undergraduate-admissions/hpu-500.html"
+  ],
+  "priority": 3,
+  "notes": "Classes and grades appear on your college transcript and can transfer to other colleges. The web address says hpu-500 but the page is titled HPU 600 and lists $600."
+}

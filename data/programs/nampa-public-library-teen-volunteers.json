@@ -1,0 +1,40 @@
+{
+  "id": "nampa-public-library-teen-volunteers",
+  "name": "Library Volunteers, ages 13 and up (Nampa Public Library)",
+  "org": "Nampa Public Library",
+  "regions": [
+    "idaho"
+  ],
+  "city": "Nampa, ID",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "what_you_do": "Volunteer at the Nampa Public Library on a schedule you set with a manager. Volunteers help staff but do not replace them. At least two staff members must be present when volunteers under 18 are there.",
+  "min_age": 13,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Volunteers must be 13 or older. If you are under 18, a parent or guardian must sign a consent form. Library staff will talk with you. They may ask for personal references.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "Schedule set one-on-one with the library manager",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The volunteer page says the library is not currently accepting volunteers. A reopening date is not stated.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Email the Volunteer Coordinator at tolmanj@cityofnampa.us. You can find it on the volunteer page. Or call the library at 208-468-5800. Ask when applications open again.",
+  "needs_work_permit": false,
+  "url": "https://nampalibrary.org/volunteer/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://nampalibrary.org/volunteer/",
+    "https://nampalibrary.org/wp-content/uploads/2026/03/2024.02.13-Volunteer-Policy-FINAL.pdf"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "The site also lists a Teen Advisory Council under its Support section. The volunteer page does not explain how to join it."
+}

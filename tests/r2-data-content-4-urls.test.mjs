@@ -6,7 +6,7 @@ import fs from "node:fs";
 
 const EXPECTED = {
   "pittsburgh-job-corps-center": "https://pittsburgh.jobcorps.gov/campus-life",
-  "md-job-corps-woodstock": "https://woodstock.jobcorps.gov/training-programs",
+  "md-job-corps-woodstock": "https://woodstock.jobcorps.gov/train",
   "grafton-job-corps-center": "https://grafton.jobcorps.gov/campus-life",
   "edison-job-corps-center": "https://edison.jobcorps.gov/campus-life",
   "congressional-app-challenge": "https://www.congressionalappchallenge.us/rules/",

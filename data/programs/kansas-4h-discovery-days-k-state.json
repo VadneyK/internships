@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "min_age": 13,
+  "max_age": 18,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "season": "summer",
+  "needs_work_permit": null,
+  "id": "kansas-4h-discovery-days-k-state",
+  "name": "Kansas 4-H Discovery Days",
+  "org": "Kansas 4-H Youth Development, Kansas State University",
+  "regions": [
+    "kansas"
+  ],
+  "city": "Manhattan, KS",
+  "type": "leadership",
+  "fields": [
+    "education",
+    "any"
+  ],
+  "what_you_do": "Spend a few days on the K-State campus like a mini college experience. You pick classes, go on tours and meet teens from across Kansas. You build leadership skills.",
+  "who_can_apply": "Youth ages 13 to 18 as of January 1 of the event year.",
+  "paid_type": "fee-based",
+  "pay_detail": "$245 in 2026",
+  "duration": "About 3 days (June 3 to 5 in 2026)",
+  "status": "closed-expect-reopen",
+  "deadline_text": "2026 event was June 3 to 5. The program page says registration is closed and does not list 2027 dates.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Registration for 2026 is closed. The page tells youth to let their Extension unit know which class session they choose. The page does not say how to register next year. Email kansas4h@ksu.edu with questions.",
+  "url": "https://www.kansas4-h.org/educational-experiences/project-based-events/conferences-events/discovery-days/index.html",
+  "priority": 2,
+  "notes": "Not stated on the program page: whether you must be a 4-H member. Ask your county Extension office.",
+  "sources_fetched": [
+    "https://www.kansas4-h.org/educational-experiences/project-based-events/conferences-events/discovery-days/index.html"
+  ]
+}

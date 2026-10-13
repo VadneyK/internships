@@ -1,0 +1,39 @@
+{
+  "id": "nevada-wnc-high-school-dual-credit",
+  "name": "WNC Dual Credit for High School Students",
+  "org": "Western Nevada College",
+  "regions": [
+    "nevada"
+  ],
+  "city": "Carson City, NV",
+  "type": "school-pathway",
+  "fields": [
+    "any",
+    "education"
+  ],
+  "what_you_do": "Take a Western Nevada College class and earn college credit and high school credit at the same time. Your high school decides which WNC classes count.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "High school or homeschool students in good behavior and academic standing with a GPA of 2.5 or higher. Your high school must approve. Talk to your counselor before you sign up.",
+  "paid_type": "not-stated",
+  "pay_detail": "Cost is not stated on the dual credit page. WNC lists fees on a separate page.",
+  "season": "school-year",
+  "duration": "By semester",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "The program page points to WNC's dates and deadlines page. No deadline is stated on it.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the WNC application if you are new to WNC. Check your email for your NSHE ID and your WNC login. Send the high school authorization form with a student and parent signature. Then sign up for classes in myWNC. Questions: 775-445-3277.",
+  "needs_work_permit": false,
+  "url": "https://wnc.edu/advising/high-school-programs/dual-credit.php",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://wnc.edu/advising/high-school-programs/dual-credit.php"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 3,
+  "notes": "The page mentions a Fallon campus and Fernley offerings. After you pass a class, you must ask WNC to send your transcript to your high school. Allow up to five business days for WNC to process your school's approval."
+}

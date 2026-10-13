@@ -1,0 +1,38 @@
+{
+  "grades": "High school",
+  "min_age": null,
+  "max_age": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "id": "omaha-methodist-hospital-volunteen",
+  "name": "Methodist Volunteen",
+  "org": "Methodist Hospital (Nebraska Methodist Health System)",
+  "regions": [
+    "nebraska"
+  ],
+  "city": "Omaha, NE",
+  "type": "volunteer",
+  "fields": [
+    "health"
+  ],
+  "what_you_do": "Volunteer at the hospital through the Volunteen program. You must commit to at least 1 year of service.",
+  "who_can_apply": "Incoming and current high school students in the Omaha metro area. You must commit to at least 1 year of service.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Volunteers get a free cafeteria meal on the day they volunteer.",
+  "season": "year-round",
+  "duration": "At least 1 year",
+  "status": "year-round",
+  "deadline_text": "Not stated on the program page. There may be a waiting list because many teens apply.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Print the Volunteen form from the page and fill it out. Send it to the Volunteer Office.",
+  "needs_work_permit": false,
+  "url": "https://bestcare.org/locations/methodist-hospital/volunteers",
+  "priority": 2,
+  "notes": "Minimum age is not stated on the program page. The free meal on the page is listed under VIP perks. The page does not say it applies to Volunteens. Methodist Hospital and Methodist Women's Hospital may both have waiting lists.",
+  "sources_fetched": [
+    "https://bestcare.org/locations/methodist-hospital/volunteers"
+  ]
+}

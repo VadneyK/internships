@@ -1,0 +1,41 @@
+{
+  "id": "hawaii-uh-running-start-dual-credit",
+  "name": "UH Running Start (College Classes for High School Students)",
+  "org": "University of Hawaii System and Hawaii State Department of Education",
+  "regions": [
+    "hawaii"
+  ],
+  "city": "Statewide, HI",
+  "type": "school-pathway",
+  "fields": [
+    "education",
+    "any"
+  ],
+  "what_you_do": "Take a college class at a University of Hawaii campus while you are in high school. You earn high school credit and college credit.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "Students at a Hawaii public or charter high school who meet the college campus admission rules and are under 21 on September 1 of the school year. UH Manoa does not take part in Running Start.",
+  "paid_type": "fee-based",
+  "pay_detail": "Varies. Student or family, the high school, or a scholarship may pay. A GEAR UP scholarship for students with low family income covers tuition, fees and books for one class, but the page says it will not be offered after the Summer 2026 term.",
+  "season": "year-round",
+  "duration": "One college class per term in fall, spring or summer",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Deadlines are set by each UH campus. Ask your counselor.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Meet with your high school counselor first. Then fill out the UH System application and the online Dual Credit Application. Get the signatures, and send both to the UH campus by its deadline.",
+  "needs_work_permit": false,
+  "url": "https://www.hawaii.edu/dualcredit/running-start/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.hawaii.edu/dualcredit/",
+    "https://www.hawaii.edu/dualcredit/running-start/",
+    "https://www.hawaii.edu/dualcredit/how-to-apply/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "Nine UH campuses take part. You must also pass the placement tests the campus asks for. Private school students may be able to use an Early Admit program instead. Ask the UH campus."
+}

@@ -1,0 +1,38 @@
+{
+  "id": "des-moines-iowaworks-wioa-youth-services",
+  "name": "Youth and Young Adult Services (IowaWORKS, WIOA Youth)",
+  "org": "Iowa Workforce Development",
+  "regions": [
+    "iowa"
+  ],
+  "city": "Des Moines, IA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Get free help from a career planner. Services can include summer and year-round jobs, internships, job shadowing, tutoring, job training and a mentor. You must qualify first.",
+  "min_age": 14,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Ages 14 to 24, in or out of school. You must be a U.S. citizen, permanent resident, or someone lawfully admitted to the U.S. The program serves youth who face big barriers to jobs or more school.",
+  "paid_type": "mixed",
+  "pay_detail": "Paid and unpaid work experiences are listed. Pay rates are not stated on the program page.",
+  "season": "year-round",
+  "duration": "Not stated on the program page. Follow-up help lasts at least 12 months after you finish, as needed.",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline stated. Services are offered all year through local IowaWORKS offices.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Register on IowaWORKS.gov. Then call or visit your local IowaWORKS office to meet with a career planner who checks if you qualify. You can also fill out the Workforce Services Form on the program page.",
+  "needs_work_permit": null,
+  "url": "https://workforce.iowa.gov/jobs/worker-programs/youth-and-young-adult",
+  "apply_url": "https://www.iowaworks.gov",
+  "sources_fetched": [
+    "https://workforce.iowa.gov/jobs/worker-programs/youth-and-young-adult"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "The program page does not list local office addresses or phone numbers. Iowa Workforce Development is at 1000 East Grand Avenue, Des Moines, IA 50319."
+}

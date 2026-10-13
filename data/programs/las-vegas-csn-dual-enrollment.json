@@ -1,0 +1,40 @@
+{
+  "id": "las-vegas-csn-dual-enrollment",
+  "name": "CSN Dual Enrollment",
+  "org": "College of Southern Nevada",
+  "regions": [
+    "nevada"
+  ],
+  "city": "Las Vegas, NV",
+  "type": "school-pathway",
+  "fields": [
+    "any",
+    "education"
+  ],
+  "what_you_do": "Take real college classes at a CSN campus or online, on top of your high school classes. You earn college credit before you graduate.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": "9 to 12 (partner schools)",
+  "who_can_apply": "Students age 16 or older in a Nevada high school or homeschool program, with a 2.5 GPA on a 4.0 scale. Some partner schools let students in grades 9 to 12 enroll. CSN may make exceptions.",
+  "paid_type": "fee-based",
+  "pay_detail": "For 2026 to 2027: $92.00 per credit plus an $11.50 per credit technology fee, plus any special course fees. No application fee. Check with your high school about payment.",
+  "season": "year-round",
+  "duration": "By semester",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "The program page does not list deadlines. Ask your high school or CSN at DualCredit@csn.edu.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the CSN Admissions Application for High School and Early College Programs. You get an NSHE ID in 3 to 5 days. Then send placement scores for English or math, go to the online orientation, and sign up for classes.",
+  "needs_work_permit": false,
+  "url": "https://www.csn.edu/dualenrollmentprogram",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.csn.edu/dualenrollmentprogram",
+    "https://www.csn.edu/dualcredit"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "Classes are at the Charleston, Henderson and North Las Vegas campuses, at several centers, or online. Discount rates do not apply in summer. CSN also lists a CTE College Credit program. It gives free college credit for some high school career classes."
+}

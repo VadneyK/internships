@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "needs_work_permit": false,
+  "id": "scottsdale-library-teen-volunteers",
+  "name": "Teen Volunteers at Scottsdale Public Library",
+  "org": "Scottsdale Public Library",
+  "regions": [
+    "arizona"
+  ],
+  "city": "Scottsdale, AZ",
+  "type": "volunteer",
+  "fields": [
+    "education"
+  ],
+  "what_you_do": "Help at the library and earn documented volunteer hours. Some teens are Reading Buddies who work closely with school-age children over the summer.",
+  "min_age": 14,
+  "max_age": 17,
+  "who_can_apply": "Teens must be at least 14 and not yet 18. A parent or guardian must give permission.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. You earn documented volunteer hours.",
+  "season": "year-round",
+  "duration": "School year program runs September to May. Summer program runs June to July.",
+  "status": "year-round",
+  "deadline_text": "School year: fill out the interest form on the program page. Summer applications are open April 1 to 30 (Civic Center and Mustang libraries only). Summer 2026 applications have ended.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the interest form on the program page. A teen volunteer coordinator will contact you. New summer volunteers must go to a required orientation.",
+  "url": "https://www.scottsdalelibrary.org/get-involved/teen-volunteers",
+  "priority": 2,
+  "notes": "Space is limited, and applying does not guarantee a spot. The program page says the Mustang and Arabian school year programs are full. New summer volunteers must attend a general orientation.",
+  "sources_fetched": [
+    "https://www.scottsdalelibrary.org/get-involved/teen-volunteers"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "regions": [
+    "texas"
+  ],
+  "city": "El Paso, TX",
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "fields": [
+    "health",
+    "social-impact"
+  ],
+  "id": "el-paso-health-youth-volunteer-program",
+  "name": "El Paso Health Youth Volunteer Program (EPHY)",
+  "org": "El Paso Health",
+  "type": "volunteer",
+  "what_you_do": "Help with community health projects and learn how the local health care system works. The program also lets youth speak up about local health policy.",
+  "min_age": 13,
+  "max_age": 18,
+  "who_can_apply": "Youth ages 13 to 18. Volunteers 13 to 17 need a parent or legal guardian to sign a waiver.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "rolling",
+  "deadline_text": "No deadline stated on the program page.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Download the form from the program page and fill it out. Email it to EPHConnections@elpasohealth.com. The program page lists no phone number for the volunteer program.",
+  "url": "https://www.elpasohealth.com/volunteer-program.html",
+  "priority": 2,
+  "notes": "The program page lists last year's totals: 3,344 backpacks, 331,947 pounds of food and 404 car seats. The totals are not dated.",
+  "sources_fetched": [
+    "https://www.elpasohealth.com/volunteer-program.html"
+  ]
+}
