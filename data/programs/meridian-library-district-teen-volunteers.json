@@ -1,0 +1,41 @@
+{
+  "id": "meridian-library-district-teen-volunteers",
+  "name": "Teen Volunteers (Meridian Library District)",
+  "org": "Meridian Library District",
+  "regions": [
+    "idaho"
+  ],
+  "city": "Meridian, ID",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "what_you_do": "Help the library with holds, events and the summer reading program. Teens fill out a volunteer form on the library's volunteer system.",
+  "min_age": 12,
+  "max_age": 18,
+  "grades": "7 to 12",
+  "who_can_apply": "Volunteers must be 12 or older. Anyone under 18 needs permission from a parent or legal guardian. An older library event page lists the teen program as ages 12 to 18, grades 7 to 12.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline stated. The library lists volunteer opportunities all year on its volunteer system.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "See the volunteer page. Use the Volunteer Opportunities link (Volgistics). Email volunteer@mld.org. Ask about teen jobs and when orientation is.",
+  "needs_work_permit": false,
+  "url": "https://www.mld.org/volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.mld.org/volunteer",
+    "https://www.mld.org/policies/volunteer-policy",
+    "https://mld.org/event/teen-volunteer-orientation-0"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "priority": 2,
+  "notes": "The main volunteer page does not describe a teen program. The 2020 teen event page gives the phone number (208) 472-1755. It also gives the teen steps: a flyer, a Teen Volunteer Form and orientation. Ask volunteer@mld.org to confirm the current steps."
+}

@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "min_age": null,
+  "max_age": 19,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "id": "wichita-sedgwick-county-4h-join",
+  "name": "Sedgwick County 4-H",
+  "org": "K-State Extension, Sedgwick County",
+  "regions": [
+    "kansas"
+  ],
+  "city": "Wichita, KS",
+  "type": "leadership",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Join a 4-H club that meets monthly. Clubs use hands-on learning to build life skills.",
+  "who_can_apply": "Sedgwick County residents between ages 7 and 19. You can enroll if you turn 7 before January 1 of the 4-H year. If you turn 19 before January 1, you cannot enroll.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page.",
+  "season": "year-round",
+  "duration": "The 4-H year runs Oct 1 to Sep 30.",
+  "status": "year-round",
+  "deadline_text": "Youth can enroll online at any time.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Call 316-660-0115 to find clubs near you. Then enroll online in Kansas 4-H.",
+  "needs_work_permit": false,
+  "url": "https://www.sedgwick.k-state.edu/4-h-youth/join4h/index.html",
+  "sources_fetched": [
+    "https://www.sedgwick.k-state.edu/4-h-youth/join4h/index.html",
+    "https://www.sedgwick.k-state.edu/4-h-youth/"
+  ],
+  "priority": 3,
+  "notes": "The same page also says 4-H is for ages 5 to 18, and it names a county fair deadline for a different county. To show in the county fair 4-H division, join by May 1. Call the Sedgwick office to confirm."
+}

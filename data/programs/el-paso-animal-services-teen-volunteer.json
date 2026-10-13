@@ -1,0 +1,39 @@
+{
+  "regions": [
+    "texas"
+  ],
+  "city": "El Paso, TX",
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "fields": [
+    "environment",
+    "social-impact"
+  ],
+  "id": "el-paso-animal-services-teen-volunteer",
+  "name": "Teen volunteer program at El Paso Animal Services",
+  "org": "El Paso Animal Services (City of El Paso)",
+  "type": "volunteer",
+  "what_you_do": "Walk dogs, give enrichment, help with animal care, and greet visitors at the city shelter. The program page does not describe the Cats at the Zoo program.",
+  "min_age": 14,
+  "max_age": 17,
+  "who_can_apply": "Teens 14 to 17 can join the Shelter Volunteer, Cats at the Zoo and Community Service programs. A parent or guardian must go to orientation and basic animal handling training. Teens 14 to 16 must volunteer with a parent or guardian. That adult must also be a registered volunteer.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "year-round",
+  "deadline_text": "No deadline stated on the program page. Apply any time.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Send a volunteer form on the volunteer portal. Then finish orientation in person or in the MyImpact app. Email the volunteer team to book your first day.",
+  "url": "https://elpasoanimalservices.org/how-you-can-help/volunteer/",
+  "priority": 2,
+  "notes": "Teens 16 and 17 need a parent or guardian to take Level 1 Animal Handling Training too. Maybe you only need service hours for school or NHS. The page says you can email the volunteer team and skip onboarding.",
+  "sources_fetched": [
+    "https://elpasoanimalservices.org/how-you-can-help/volunteer/"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "regions": [
+    "texas"
+  ],
+  "city": "El Paso, TX",
+  "grades": "High school",
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "fields": [
+    "education"
+  ],
+  "id": "utep-upward-bound",
+  "name": "UTEP Upward Bound",
+  "org": "University of Texas at El Paso",
+  "type": "school-pathway",
+  "what_you_do": "Get free classes to get ready for college. Get leadership training and ways to help the community all year. Students stay in the program until they finish high school and their first summer at UTEP.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "High school students at schools in the program. Low-income students who could be the first in their family to go to college must qualify. Schools: Bel Air, Del Valle, Parkland, Riverside and Ysleta (YISD). Also Eastlake, El Dorado, Fabens, Pebble Hills, Socorro and Tornillo (SFT ISDs).",
+  "paid_type": "unpaid",
+  "pay_detail": "Free to students.",
+  "season": "year-round",
+  "duration": "Through high school graduation and the first summer semester at UTEP",
+  "status": "unconfirmed",
+  "deadline_text": "Not stated on the program page. Email or call to ask about selection.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Not stated on the program page. Email upwardbound@utep.edu or call (915) 747-5062.",
+  "url": "https://www.utep.edu/enrollment-management/upward-bound/program-services/",
+  "sources_fetched": [
+    "https://www.utep.edu/enrollment-management/upward-bound/program-services/",
+    "https://www.utep.edu/enrollment-management/upward-bound/about/mission-goals.html"
+  ],
+  "priority": 2,
+  "notes": "Federally funded. Students must qualify to be selected. This is a college prep program, not a job."
+}

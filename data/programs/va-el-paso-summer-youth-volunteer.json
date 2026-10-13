@@ -1,0 +1,39 @@
+{
+  "regions": [
+    "texas"
+  ],
+  "city": "El Paso, TX",
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "fields": [
+    "health",
+    "social-impact"
+  ],
+  "id": "va-el-paso-summer-youth-volunteer",
+  "name": "Summer Youth Volunteer Program at VA El Paso",
+  "org": "VA El Paso Healthcare System",
+  "type": "volunteer",
+  "what_you_do": "Serve Veterans and get real health care experience at the VA during the summer.",
+  "min_age": 16,
+  "max_age": 18,
+  "who_can_apply": "Students ages 16 to 18.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "summer",
+  "duration": "June through August",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications open in May and spots fill up quickly. Expect it to reopen in May 2027.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Email the Volunteer Coordinator at elpcdce@va.gov. Ask about the summer youth program.",
+  "url": "https://www.va.gov/el-paso-health-care/work-with-us/volunteer-or-donate/",
+  "priority": 1,
+  "notes": "The program page says applications open in May but gives no 2027 dates.",
+  "sources_fetched": [
+    "https://www.va.gov/el-paso-health-care/work-with-us/volunteer-or-donate/"
+  ]
+}

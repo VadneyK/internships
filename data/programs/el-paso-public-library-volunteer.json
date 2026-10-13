@@ -1,0 +1,39 @@
+{
+  "regions": [
+    "texas"
+  ],
+  "city": "El Paso, TX",
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": "https://www.governmentjobs.com/careers/elpaso/jobs/3761040/volunteer",
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "id": "el-paso-public-library-volunteer",
+  "name": "El Paso Public Library volunteer program",
+  "org": "El Paso Public Library",
+  "type": "volunteer",
+  "what_you_do": "Volunteer at the public library. The program page does not list the tasks. Apply through the link on the program page first.",
+  "min_age": 14,
+  "max_age": null,
+  "who_can_apply": "Age 14 or older. Volunteers 17 and up must have a state-issued ID.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "year-round",
+  "deadline_text": "No deadline stated on the program page.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Click the link on the program page. It goes to the City of El Paso volunteer page on governmentjobs.com. Apply there.",
+  "url": "https://www.elpasolibrary.org/connect/volunteer",
+  "priority": 2,
+  "notes": "The program page does not say which library branches need teen help. Call the Main Library at (915) 212-READ to ask.",
+  "sources_fetched": [
+    "https://www.elpasolibrary.org/connect/volunteer"
+  ]
+}

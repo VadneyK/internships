@@ -1,0 +1,38 @@
+{
+  "regions": [
+    "texas"
+  ],
+  "city": "El Paso, TX",
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "fields": [
+    "health"
+  ],
+  "id": "del-sol-medical-center-junior-volunteer",
+  "name": "Junior volunteer program at Del Sol Medical Center",
+  "org": "Del Sol Medical Center (HCA Healthcare)",
+  "type": "volunteer",
+  "what_you_do": "Volunteer at the hospital in one of several positions. The program page does not list the tasks.",
+  "min_age": 14,
+  "max_age": 18,
+  "who_can_apply": "Ages 14 to 18, in good standing at school.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "summer",
+  "duration": "Not stated on the program page",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Junior volunteer applications are accepted from March 15 through May 1 each year. Expect it to reopen around March 15, 2027.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the printable volunteer application on the program page. If accepted, pass a background check, drug screening and TB skin test, and attend orientation. Call (915) 263-5243.",
+  "url": "https://www.laspalmasdelsolhealthcare.com/locations/del-sol-medical-center/about-us/volunteers",
+  "priority": 1,
+  "notes": "The page gives the March 15 to May 1 window as a yearly pattern, not as dates for 2027. Check the page in March.",
+  "sources_fetched": [
+    "https://www.laspalmasdelsolhealthcare.com/locations/del-sol-medical-center/about-us/volunteers"
+  ]
+}

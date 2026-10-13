@@ -32,7 +32,7 @@ const iso = (d) => d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, 
 
 test("sweep covers the expected span and cards", () => {
   assert.equal(DAYS.length, 448);
-  assert.equal(ALL.length, 2298); // 2026-10-13: +7 Plains and North Dakota cards read in a real browser (2,298 programs); 2026-10-12: +77 Plains state cards (2,291 programs); 2214 on 2026-10-12 after the new state cards; 2036 on 2026-10-11 after the 11 new states (ticket p7-regions-1); 2036 on 2026-10-11 after the 11 new states (ticket p7-regions-1); was 1769: the guide grew from 1,370 to 1,771 programs on 2026-10-10, then two defunct cards were removed in the fact check
+  assert.equal(ALL.length, 2348); // 2026-10-13: +50 city cards for the six new Where cities (2,348 programs). 2026-10-13: +7 Plains and North Dakota cards read in a real browser (2,298 programs); 2026-10-12: +77 Plains state cards (2,291 programs); 2214 on 2026-10-12 after the new state cards; 2036 on 2026-10-11 after the 11 new states (ticket p7-regions-1); 2036 on 2026-10-11 after the 11 new states (ticket p7-regions-1); was 1769: the guide grew from 1,370 to 1,771 programs on 2026-10-10, then two defunct cards were removed in the fact check
   assert.ok(daily.length >= 200);
 });
 

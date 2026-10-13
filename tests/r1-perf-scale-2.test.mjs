@@ -18,7 +18,8 @@ const DETAIL_FIELDS = ["who_can_apply", "how_to_apply", "notes", "duration", "pa
 // The limit is the current size plus about 3,000 bytes of headroom. Raise it only with a reason.
 // Raised from 415000 to 465000 on 2026-10-11 for ticket p7-regions-1: 267 new cards for 11 states put the detail file at 461,719 gzipped bytes.
 // Raised from 465000 to 520000 on 2026-10-12 for the 178 more city cards (2,214 programs): the detail file is 496,315 gzipped bytes. PENDING PERSON APPROVAL, like the limits in r1-perf-scale-1.test.mjs.
-const GZIP_LIMIT = 520000;
+// 2026-10-13: +50 city cards for the six new Where cities (2,348 programs). Raised from 520000 to 527500 (527,434 gzipped bytes). PENDING PERSON APPROVAL, like the limits in r1-perf-scale-1.test.mjs.
+const GZIP_LIMIT = 527500;
 
 function readText(file) {
   return fs.readFileSync(path.join(DATA, file), "utf8");

@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "min_age": null,
+  "max_age": 18,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "id": "omaha-douglas-sarpy-4h-join",
+  "name": "Douglas-Sarpy 4-H Youth Development",
+  "org": "Nebraska Extension, University of Nebraska-Lincoln",
+  "regions": [
+    "nebraska"
+  ],
+  "city": "Omaha, NE",
+  "type": "leadership",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Join a 4-H club and pick projects to learn by doing. A new club needs one trained adult volunteer and five youth from three different families.",
+  "who_can_apply": "Youth ages 5 to 18. Age is counted on January 1 of the 4-H year. You must be 8 by then for competitive events, large animal, shooting sports or food preservation projects.",
+  "paid_type": "fee-based",
+  "pay_detail": "Enrollment fee is $10 per youth per year.",
+  "season": "year-round",
+  "duration": "The 4-H year runs Oct 1 to Sep 30.",
+  "status": "year-round",
+  "deadline_text": "Join any time. To show projects at the Sarpy County Fair or the Nebraska State Fair, enroll by June 15.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Join an existing club or start a new one. Then enroll online in 4HOnline. Call 402-444-7804 if you need help finding a club.",
+  "needs_work_permit": false,
+  "url": "https://douglas-sarpy.unl.edu/4-h-youth-development/join-4-h/",
+  "priority": 3,
+  "notes": "A new club needs one trained 4-H volunteer and five youth from three different families. The page says enrollment in 4HOnline begins October 17. Clubs must meet at least six times per year.",
+  "sources_fetched": [
+    "https://douglas-sarpy.unl.edu/4-h-youth-development/join-4-h/"
+  ]
+}

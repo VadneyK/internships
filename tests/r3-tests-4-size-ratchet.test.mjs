@@ -28,12 +28,13 @@ const TABLE = {
   "data/employers.json": { ceiling: 149800, reason: "data file, 136131 bytes measured 2026-10-10" },
   "data/entries-cal.json": { ceiling: 72600, reason: "data file, 65976 bytes measured 2026-10-10" },
   // 2026-10-13: +7 Plains and North Dakota cards (2,298 programs). Raised: entries-core 414000 to 415500, entries-detail 1693000 to 1698000, entries-lite 2173000 to 2180000, entries-stats 682000 to 684000, entries.json 4465000 to 4478000.
-  "data/entries-core.json": { ceiling: 415500, reason: "data file, 368201 bytes measured 2026-10-10" },
-  "data/entries-detail.json": { ceiling: 1698000, reason: "data file, 1521373 bytes measured 2026-10-10" },
+  // 2026-10-13: +50 city cards for the six new Where cities (2,348 programs). Raised to measured sizes rounded up: core 424100, detail 1731000, lite 2223100, stats 697700, entries.json 4567200.
+  "data/entries-core.json": { ceiling: 424100, reason: "data file, 368201 bytes measured 2026-10-10" },
+  "data/entries-detail.json": { ceiling: 1731000, reason: "data file, 1521373 bytes measured 2026-10-10" },
   "data/entries-home.json": { ceiling: 899400, reason: "data file, 817599 bytes measured 2026-10-10" },
-  "data/entries-lite.json": { ceiling: 2180000, reason: "data file, 1937500 bytes measured 2026-10-10" },
-  "data/entries-stats.json": { ceiling: 684000, reason: "data file, 606782 bytes measured 2026-10-10" },
-  "data/entries.json": { ceiling: 4478000, reason: "data file, 3996617 bytes measured 2026-10-10" },
+  "data/entries-lite.json": { ceiling: 2223100, reason: "data file, 1937500 bytes measured 2026-10-10" },
+  "data/entries-stats.json": { ceiling: 697700, reason: "data file, 606782 bytes measured 2026-10-10" },
+  "data/entries.json": { ceiling: 4567200, reason: "data file, 3996617 bytes measured 2026-10-10" },
   "data/expiring-dates.json": { ceiling: 1700, reason: "data file, 1530 bytes measured 2026-10-10" },
   "data/gaps.json": { ceiling: 5400, reason: "data file, 4832 bytes measured 2026-10-10" },
   "data/interview.json": { ceiling: 12400, reason: "data file, 11207 bytes measured 2026-10-10" },

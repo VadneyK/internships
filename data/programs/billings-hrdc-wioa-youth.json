@@ -1,0 +1,40 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "min_age": 14,
+  "max_age": 24,
+  "needs_work_permit": null,
+  "priority": 2,
+  "regions": [
+    "montana"
+  ],
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "status": "unconfirmed",
+  "id": "billings-hrdc-wioa-youth",
+  "name": "WIOA Youth Program (Billings area)",
+  "org": "District VII HRDC with the Montana Department of Labor and Industry",
+  "city": "Billings, MT",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Get help to finish school and get ready for work. You can get tutoring. You can get paid or unpaid work. You can get job training, a mentor and help with college.",
+  "who_can_apply": "Youth in school, ages 14 to 21, who have low income and at least one barrier from the state list. Youth out of school, ages 16 to 24, can also qualify under other rules. The barriers include a disability, foster care and no home. Being behind in basic skills is also a barrier.",
+  "paid_type": "mixed",
+  "pay_detail": "Paid and unpaid work experience are both listed. Pay rates are not stated.",
+  "season": "year-round",
+  "duration": "Not stated",
+  "deadline_text": "No application dates stated on the state program page.",
+  "how_to_apply": "The state page has no application form. It points to a provider list. For Billings, the May 2026 list names District VII HRDC, contact Kelly Marquardt, 406-247-4788, kmarquardt@hrdc7.org.",
+  "url": "https://wsd.dli.mt.gov/programs/youth-program",
+  "sources_fetched": [
+    "https://wsd.dli.mt.gov/programs/youth-program",
+    "https://wsd.dli.mt.gov/_docs/wioa/wioa-youth-provider-list-may-2026.docx",
+    "https://hrdc7.org/"
+  ],
+  "notes": "Other providers on the May 2026 state list: Missoula District XI HRDC (Lynda Schuldheisz, 406-728-3710) and Opportunities, Inc. in Great Falls (Jeff Beisecker, 406-761-8462). Only some teens qualify. Ask the provider first."
+}
