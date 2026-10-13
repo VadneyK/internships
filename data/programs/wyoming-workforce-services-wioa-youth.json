@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "opens_iso": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "min_age": 14,
+  "max_age": 24,
+  "needs_work_permit": false,
+  "priority": 2,
+  "fields": [
+    "any"
+  ],
+  "id": "wyoming-workforce-services-wioa-youth",
+  "name": "WIOA Youth Program (Workforce Centers)",
+  "org": "Wyoming Department of Workforce Services",
+  "regions": [
+    "wyoming"
+  ],
+  "city": "Statewide (Cheyenne, Casper, Laramie and other Workforce Centers)",
+  "type": "paid-youth-program",
+  "what_you_do": "You get help finding what you are good at and make a job plan. Then you get work experience or training with local employers.",
+  "who_can_apply": "In-school youth ages 14 to 21, or out-of-school youth ages 16 to 24. Must live in Wyoming and meet low-income rules or have another qualifying barrier to work.",
+  "paid_type": "mixed",
+  "pay_detail": "The page lists \"paid or unpaid\" work experience and training. Pay rates are not stated on the program page.",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "year-round",
+  "deadline_text": "No deadline stated. Contact your local Workforce Center.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Contact your local Workforce Center to see if you qualify.",
+  "url": "https://dws.wyo.gov/dws-division/workforce-centers-and-program-operations/job-seekers/workforce-innovation-opportunity-act/",
+  "sources_fetched": [
+    "https://dws.wyo.gov/dws-division/workforce-centers-and-program-operations/job-seekers/workforce-innovation-opportunity-act/",
+    "https://dws.wyo.gov/dws-division/labor-standards/youth-and-parents/your-rights-as-a-worker-ages-14-17/"
+  ],
+  "notes": "Out-of-school youth can join up to age 24. Eligibility rules vary, so ask your local Workforce Center."
+}

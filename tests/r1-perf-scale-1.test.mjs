@@ -18,7 +18,8 @@ const LIMITS = {
     // Raised again on 2026-10-12 for the city data waves that followed (178 more cards, 2,214 programs): entries.json is 4,309,696 bytes (975,602 gzipped). Raw from 4050000 to 4450000, gzip from 910000 to 1000000. The cards are about as long as the older ones; the growth is the card count.
     // STILL PENDING PERSON APPROVAL: no person has recorded accepting this weight for phone users. Pages do not load this file on first view (it is the full download and the contributor file), so first-load weight is unchanged.
     // 2026-10-12: +77 Plains state cards (2,291 programs): entries.json is 4,464,728 bytes (1,014,528 gzipped). Raw from 4450000 to 4470000, gzip from 1000000 to 1015000. STILL PENDING PERSON APPROVAL, as above; this file is the full download and the contributor file, so first-load weight is unchanged.
-    "data/entries.json": { raw: 4470000, gzip: 1015000 },
+    // 2026-10-13: +7 Plains and North Dakota cards read in a browser (2,298 programs): entries.json 4,477,582 bytes. Raw 4470000 to 4480000.
+    "data/entries.json": { raw: 4480000, gzip: 1015000 },
     // Raised from 2020000 to 2040000 on 2026-10-10 after the fact check: the page re-reads added about 6,000 bytes (0.3 percent) of plainer deadline_text across 266 cards, saying what the page does and does not state. No single card is the cause. Still about 1,145 bytes per program, under the per-program limit.
     // Gzip limit raised from 440000 to 450000 on 2026-10-10: the card fixes this round (pay wording, opens-soon dates) put it at 440053.
     // Raised again on 2026-10-12 for the 178 more cards: entries-lite.json is 2,097,871 bytes (437,135 gzipped), 947 bytes per program. Raw from 2040000 to 2160000. The gzip limit stays 450000. PENDING PERSON APPROVAL, as for entries.json.
