@@ -148,9 +148,9 @@ test("the numbers that count every program come out the same from the stats rows
 
 // ---- the page ----
 // 2026-10-12: 20 s, not 6 s. The CI coverage run is slow enough that loading the whole lite file after a change took longer than 6 s (run 38315707421).
-async function poll(cond, ms = 20000) {
+async function poll(cond, ms = 20000, step = 40) {
   const t0 = Date.now();
-  while (Date.now() - t0 < ms) { if (cond()) return true; await new Promise((r) => setTimeout(r, 40)); }
+  while (Date.now() - t0 < ms) { if (cond()) return true; await new Promise((r) => setTimeout(r, step)); }
   return false;
 }
 const dataPaths = (seen) => [...new Set(seen.map((r) => new URL(r.url).pathname.replace(/^\//, "")).filter((p) => p.startsWith("data/") && !p.endsWith("gaps.json")))].sort();
@@ -243,7 +243,15 @@ function setPlace(window, document, value) {
   sel.dispatchEvent(new window.Event("change", { bubbles: true }));
 }
 async function reference(search, opts = {}) {
-  const r = await loadPage("find.html", { search, now: NOW, fetchFail: FALL, ...opts });
+  const log = opts.fetchLog || [];
+  const r = await loadPage("find.html", { search, now: NOW, fetchFail: FALL, fetchLog: log, ...opts });
+  // 2026-10-13: a search in the address also loads the long text after the list; on a slow CI machine the
+  // snapshot could be taken before it arrived. Wait for the long text request, then for the list to stop changing.
+  if (new URLSearchParams(search).get("q")) {
+    await poll(() => dataPaths(log).includes("data/entries-detail.json"));
+    let prev = "";
+    await poll(() => { const now = JSON.stringify(snapshot(r.document)); const same = now === prev && !r.document.querySelector('[data-detail="wait"], [data-detail-wait]'); prev = now; return same; }, 20000, 500);
+  }
   const snap = snapshot(r.document);
   r.window.close();
   return snap;
