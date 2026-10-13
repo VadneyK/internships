@@ -54,6 +54,8 @@
         j.states.slice().sort(function (x, y) { return x.name < y.name ? -1 : 1; }).forEach(function (s) {
           sel.appendChild(Object.assign(document.createElement("option"), { value: s.id, textContent: s.name }));
         });
+        /* The shared type-to-search box (2026-10-13): the select stays the source of truth. */
+        G.placeSearch(sel, { hide: true, chip: true, caption: "", placeholder: "Type your state" });
       }).catch(function () { otherFailed = true; }).then(function () { otherLoading = false; paintOtherState(); });
     }
     // Each field says what is wrong with it. The first problem also names the field in the estimate card and the status line.

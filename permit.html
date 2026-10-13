@@ -23,8 +23,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=7f023ef6">
-<link rel="stylesheet" href="assets/css/style.css?v=7f023ef6">
+<link rel="stylesheet" href="assets/css/fonts.css?v=c86e318f">
+<link rel="stylesheet" href="assets/css/style.css?v=c86e318f">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -61,40 +61,42 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <h1 class="display">Do I need a <span class="orange">permit</span>?</h1>
     <p class="lede">Pick your state, your age and the kind of work. You get a plain answer, the permit if you need one, who gives it, and what to bring. Then get a checklist you can print or a message you can send to your school.</p>
     <noscript><div class="callout bad"><p>This page needs JavaScript to answer your permit question. With JavaScript off, read the plain rules on the <a href="rules.html">Rules page</a>.</p></div></noscript>
-    <div class="callout plain small" style="margin-top:1rem;max-width:52rem;">
-      <p><b>This is a summary, not legal advice.</b> When the pages we read do not say, the answer is &ldquo;check before you start&rdquo; with who to call. Schools and employers can change their forms, so use the links to confirm.</p>
-    </div>
-    <p class="small muted">Most pages last read Oct 9, 2026. The California card was read Oct 7, 2026.</p>
-    <details id="words" class="callout plain small" style="margin-top:1rem;max-width:52rem;">
-      <summary>Words you will see</summary>
-      <dl>
-        <dt>Non-farm job</dt>
-        <dd>Any job that is not farm work; federal law sets 14 as the minimum age for most of them.</dd>
-        <dt>Hazardous job</dt>
-        <dd>A job the Secretary of Labor has declared hazardous; no one under 18 may do the jobs on that list.</dd>
-        <dt>Withhold</dt>
-        <dd>Your employer holds back part of each check to pay tax.</dd>
-        <dt>W-4</dt>
-        <dd>The federal form that tells your employer how much income tax to hold back from each check.</dd>
-      </dl>
-    </details>
   </div>
 </section>
 
 <section style="background:var(--paper-2); border-block:3px solid var(--edge);">
   <div class="wrap">
     <h2>1. Tell us about the work</h2>
-    <div class="grid g3" style="align-items:end;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));">
+    <div class="formgrid formgrid-top flow">
       <div class="field"><label for="pState">Where will you work?</label>
         <select id="pState" data-tiles><option value="">Choose a state</option></select></div>
       <div class="field" id="pLiteField" hidden><label for="pLite">Which state?</label>
-        <select id="pLite" data-tiles><option value="">Choose your state</option></select></div>
-      <div class="field"><label for="pAge">How old are you?</label>
+        <select id="pLite"><option value="">Choose your state</option></select></div>
+      <div class="field fpill"><label for="pAge">How old are you?</label>
         <select id="pAge" data-tiles><option value="">Choose your age</option></select></div>
       <div class="field"><label for="pKind">What kind of work?</label>
         <select id="pKind" data-tiles><option value="">Choose one</option></select></div>
     </div>
     <p class="small muted">We have full answers for 17 states and British Columbia, and shorter answers for 33 more states and Washington, DC. Pick &ldquo;Another state&rdquo; to find yours. If it is not there, pick &ldquo;My state is not listed&rdquo; to see who to ask.</p>
+    <div class="notes">
+      <div class="callout plain small">
+        <p><b>This is a summary, not legal advice.</b> When the pages we read do not say, the answer is &ldquo;check before you start&rdquo; with who to call. Schools and employers can change their forms, so use the links to confirm.</p>
+      </div>
+      <p class="small muted">Most pages last read Oct 9, 2026. The California card was read Oct 7, 2026.</p>
+      <details id="words" class="callout plain small">
+        <summary>Words you will see</summary>
+        <dl>
+          <dt>Non-farm job</dt>
+          <dd>Any job that is not farm work; federal law sets 14 as the minimum age for most of them.</dd>
+          <dt>Hazardous job</dt>
+          <dd>A job the Secretary of Labor has declared hazardous; no one under 18 may do the jobs on that list.</dd>
+          <dt>Withhold</dt>
+          <dd>Your employer holds back part of each check to pay tax.</dd>
+          <dt>W-4</dt>
+          <dd>The federal form that tells your employer how much income tax to hold back from each check.</dd>
+        </dl>
+      </details>
+    </div>
   </div>
 </section>
 
@@ -155,7 +157,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <div>
         <h2 class="fh">Teen internship guide</h2>
         <p>Free. No sign-up, no ads, no tracking. Everything you type here stays in your browser.</p>
-        <p class="small">Last checked <b>Oct 13, 2026</b> &middot; 2479 programs</p>
+        <p class="small">Last checked <b>Oct 13, 2026</b> &middot; 2519 programs</p>
       </div>
       <nav aria-label="Quick links">
         <h2 class="fh">Quick links</h2>
@@ -197,9 +199,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=7f023ef6"></script>
-<script src="assets/js/common.js?v=7f023ef6"></script>
-<script src="assets/js/permit.js?v=7f023ef6"></script>
+<script src="assets/js/lib.js?v=c86e318f"></script>
+<script src="assets/js/common.js?v=c86e318f"></script>
+<script src="assets/js/permit.js?v=c86e318f"></script>
 
 </body>
 </html>

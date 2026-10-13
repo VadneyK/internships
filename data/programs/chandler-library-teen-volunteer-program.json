@@ -1,0 +1,38 @@
+{
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "deadline_iso": null,
+  "id": "chandler-library-teen-volunteer-program",
+  "name": "Library Teen Volunteer Program",
+  "org": "Chandler Public Library",
+  "regions": [
+    "arizona"
+  ],
+  "city": "Chandler, AZ",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "any"
+  ],
+  "what_you_do": "Volunteer one shift each week at a Chandler library branch. Sessions follow the school year, by semester, quarter or summer break.",
+  "min_age": 13,
+  "max_age": 17,
+  "who_can_apply": "Ages 14 to 17 at the Hamilton and Basha branches. Ages 13 to 17 at the Sunset and Downtown branches. You can apply to only one branch.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "school-year",
+  "duration": "One set shift each week for a semester, quarter or summer",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Closed now. Downtown: check back in January. Sunset: check back in December for spring 2027. Basha: check back in May for summer. Hamilton: check back at the start of the school year.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Pick one branch and read its dates. Fill out the linked application form. If there is no link, there are no openings. Watch for confirmation emails, then attend the mandatory overview or training.",
+  "needs_work_permit": false,
+  "url": "https://chandlerlibrary.org/volunteer/",
+  "priority": 2,
+  "notes": "Submitting an application does not guarantee a spot. The program is not a good fit for teens who will miss 2 or more shifts.",
+  "sources_fetched": [
+    "https://chandlerlibrary.org/volunteer/"
+  ]
+}

@@ -128,12 +128,24 @@ async function drive(file, setup) {
     // 5. Later steps can change a field by design (a preset wage replaces a typed one), so the end state of
     //    every field is compared with the normal-storage run below, not with the typed value.
     // Compared by id only: cards and lists rebuild from the saved data, so their order and count can differ.
-    const fields = {};
-    for (const el of doc.querySelectorAll("input, select, textarea, button[aria-pressed]")) {
-      if (!el.id) continue;
-      if (el.type === "checkbox") fields["#" + el.id] = el.checked;
-      else if (el.hasAttribute("aria-pressed")) fields["#" + el.id] = el.getAttribute("aria-pressed");
-      else fields["#" + el.id] = el.value;
+    // 2026-10-13: some fields (the shared place search boxes) are built after a data file loads, so on a busy
+    // machine one run could read them and the other not. Read until the set of ids holds still for 200 ms (max 3 s).
+    const readFields = () => {
+      const out = {};
+      for (const el of doc.querySelectorAll("input, select, textarea, button[aria-pressed]")) {
+        if (!el.id) continue;
+        if (el.type === "checkbox") out["#" + el.id] = el.checked;
+        else if (el.hasAttribute("aria-pressed")) out["#" + el.id] = el.getAttribute("aria-pressed");
+        else out["#" + el.id] = el.value;
+      }
+      return out;
+    };
+    let fields = readFields();
+    for (let i = 0; i < 15; i++) {
+      await tick(200);
+      const again = readFields();
+      if (JSON.stringify(Object.keys(again)) === JSON.stringify(Object.keys(fields))) { fields = again; break; }
+      fields = again;
     }
 
     return {

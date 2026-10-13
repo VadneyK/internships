@@ -23,8 +23,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=7f023ef6">
-<link rel="stylesheet" href="assets/css/style.css?v=7f023ef6">
+<link rel="stylesheet" href="assets/css/fonts.css?v=c86e318f">
+<link rel="stylesheet" href="assets/css/style.css?v=c86e318f">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -63,34 +63,38 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <p class="small muted">A second tag shows when an age is for some jobs only or the posting is old.</p>
     <noscript><div class="callout bad"><p>This page needs JavaScript to show the list of employers for your age. With JavaScript off, read the plain rules on the <a href="rules.html">Rules page</a> or see <a href="ready.html">Get ready</a>.</p></div></noscript>
     <p class="small"><a href="#rules">Jump to the hours and safety rules</a></p>
-    <div class="callout plain small" id="jobsNote" style="margin-top:1rem;max-width:52rem;"></div>
-    <details id="words" class="callout plain small">
-      <summary>Words you will see</summary>
-      <dl>
-        <dt>Non-farm job</dt>
-        <dd>Any job that is not farm work; federal law sets 14 as the minimum age for most of them.</dd>
-        <dt>Minimum age</dt>
-        <dd>The youngest age an employer says it hires for a job, as stated on that employer's own page.</dd>
-        <dt>Hazardous job</dt>
-        <dd>A job the Secretary of Labor has declared hazardous; no one under 18 may do the jobs on that list.</dd>
-      </dl>
-    </details>
   </div>
 </section>
 
 <section style="background:var(--paper-2); border-block:3px solid var(--edge);">
   <div class="wrap">
-    <div class="field"><label for="jAge">How old are you?</label>
+    <div class="formgrid formgrid-top flow">
+    <div class="field fpill"><span class="step" aria-hidden="true">1</span><label for="jAge">How old are you?</label>
       <select id="jAge" data-tiles><option value="">Choose your age</option></select></div>
-    <div class="field"><label for="jState">Where do you live?</label>
+    <div class="field"><span class="step" aria-hidden="true">2</span><label for="jState">Where do you live?</label>
       <p class="hint" id="jStateHint">Pick your state to filter the jobs below. Anywhere shows every job.</p>
       <select id="jState" aria-describedby="jStateHint"><option value="">Anywhere</option></select></div>
+    </div>
     <p class="sr" id="jStatus" role="status"></p>
     <div id="jHours"></div>
     <div id="jChips"></div>
     <div id="jOut"><p class="muted">Tap your age to see who hires.</p></div>
     <p class="small" id="jFarmLink">Farm and ranch work has its own federal rules. <a href="safety.html#farm-box">On a farm or ranch</a> on the Safety page lists them.</p>
     <div id="jHelp" class="callout plain small" style="margin-top:1.4rem;"></div>
+    <div class="notes">
+      <div class="callout plain small" id="jobsNote"></div>
+      <details id="words" class="callout plain small">
+        <summary>Words you will see</summary>
+        <dl>
+          <dt>Non-farm job</dt>
+          <dd>Any job that is not farm work; federal law sets 14 as the minimum age for most of them.</dd>
+          <dt>Minimum age</dt>
+          <dd>The youngest age an employer says it hires for a job, as stated on that employer's own page.</dd>
+          <dt>Hazardous job</dt>
+          <dd>A job the Secretary of Labor has declared hazardous; no one under 18 may do the jobs on that list.</dd>
+        </dl>
+      </details>
+    </div>
   </div>
 </section>
 
@@ -119,7 +123,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
       <div>
         <h2 class="fh">Teen internship guide</h2>
         <p>Free. No sign-up, no ads, no tracking. Everything you type here stays in your browser.</p>
-        <p class="small">Last checked <b>Oct 13, 2026</b> &middot; 2479 programs</p>
+        <p class="small">Last checked <b>Oct 13, 2026</b> &middot; 2519 programs</p>
       </div>
       <nav aria-label="Quick links">
         <h2 class="fh">Quick links</h2>
@@ -161,9 +165,9 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=7f023ef6"></script>
-<script src="assets/js/common.js?v=7f023ef6"></script>
-<script src="assets/js/jobs.js?v=7f023ef6"></script>
+<script src="assets/js/lib.js?v=c86e318f"></script>
+<script src="assets/js/common.js?v=c86e318f"></script>
+<script src="assets/js/jobs.js?v=c86e318f"></script>
 
 </body>
 </html>

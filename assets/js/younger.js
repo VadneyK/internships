@@ -172,6 +172,9 @@
       if (hasOpt(ss)) ys.value = ss;
     }
     if (ys._tpSync) ys._tpSync();
+    /* The shared type-to-search box (2026-10-13): the select stays the source of truth. */
+    var yPlace = G.placeSearch(ys, { hide: true, chip: true, caption: "", placeholder: "Type your state" });
+    if (yPlace) yPlace.sync();
     drawGrid(ys.value);
     showLite(ys.value);
     syncGridNote(ys.value);

@@ -7,6 +7,8 @@
     var skip = ["ca", "ga", "ny", "il"];
     var keys = Object.keys(d.states).filter(function (k) { return skip.indexOf(k) < 0; }).sort(function (a, b) { return d.states[a].name < d.states[b].name ? -1 : 1; });
     keys.forEach(function (k) { $("moreSel").appendChild(Object.assign(document.createElement("option"), { value: k, textContent: d.states[k].name })); });
+    /* The shared type-to-search box (2026-10-13): the select stays the source of truth. */
+    var morePlace = G.placeSearch($("moreSel"), { hide: true, chip: true, caption: "", placeholder: "Type your state" });
     function row(k, v) { return "<div><dt>" + k + "</dt><dd>" + G.esc(v) + "</dd></div>"; }
     var quiet = false;
     /* One short line for screen readers, never on load. */
@@ -18,6 +20,6 @@
       $("moreOut").innerHTML = "<h3>" + G.esc(s.name) + "</h3><dl class=\"facts\">" + row("Minimum age", s.minAge.note) + row("Permit", s.permit + ". " + s.kinds.job.text) + row("Hours at 14 and 15", s.hours["14"]) + row("Hours at 16 and 17", s.hours["16"]) + row("Minimum wage", s.wage) + row("Who to ask", s.call) + "</dl>" +
         '<p class="row"><a class="btn sm" href="permit.html?state=' + G.esc(k) + '&age=15&kind=job">Open the work permit finder</a></p><p class="small muted">Read on ' + G.esc(s.read) + " from: " + s.links.map(function (l) { return /^https?:/.test(l.u) ? '<a href="' + G.esc(l.u) + '" target="_blank" rel="noopener">' + G.esc(l.t) + "</a>" : ""; }).join(" &middot; ") + ". This is a summary, not legal advice.</p>";
     });
-    var q = new URLSearchParams(location.search).get("state"); if (q && d.states[q]) { $("moreSel").value = q; quiet = true; $("moreSel").dispatchEvent(new Event("change")); quiet = false; }
+    var q = new URLSearchParams(location.search).get("state"); if (q && d.states[q]) { $("moreSel").value = q; if (morePlace) morePlace.sync(); quiet = true; $("moreSel").dispatchEvent(new Event("change")); quiet = false; }
   }).catch(function () { $("moreOut").innerHTML = '<p class="muted">The state rules could not load.</p>'; $("moreStatus").textContent = "The state rules could not load."; });
 })();
