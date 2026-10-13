@@ -174,7 +174,9 @@ test("home flow: the picker is top aligned, so no step or tile stretches", () =>
   assert.match(css, /#pAge \+ \.tp \.tile \{ flex: 0 0 3\.4rem;/);
   // each other page keeps the plain grid
   // 2026-10-12: find.html also top aligns its age, timing and season columns (they stretched the same way).
-  for (const f of fs.readdirSync(new URL("..", import.meta.url)).filter((x) => x.endsWith(".html") && x !== "index.html" && x !== "find.html")) assert.doesNotMatch(read(f), /formgrid-top/, f);
+  // 2026-10-13 (ux9-jobs-flow): jobs.html also uses the top aligned numbered steps.
+  // 2026-10-13 (ux9-page-top): permit.html also uses the top aligned steps (already in the working tree; this test pinned the old list).
+  for (const f of fs.readdirSync(new URL("..", import.meta.url)).filter((x) => x.endsWith(".html") && x !== "index.html" && x !== "find.html" && x !== "jobs.html" && x !== "permit.html")) assert.doesNotMatch(read(f), /formgrid-top/, f);
 });
 
 test("home flow: every place of the old list is reachable through search or the part-of-the-country tiles", async () => {

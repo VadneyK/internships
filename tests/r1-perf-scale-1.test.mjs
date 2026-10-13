@@ -66,7 +66,13 @@ const LIMITS = {
   // Raised from 42000 to 42400 on 2026-10-12 for tickets r3-teen-flow-5, r3-a11y-perf-2 and r3-a11y-perf-6: the footer group headings, link addresses on the print-one sheets, and the real screen height rule. The sheet is 42273 bytes.
   // 2026-10-12: home picker flow. Raised from 42400 to 44700 for the numbered steps, the place search box, its list and the chip. The sheet is 44619 bytes.
   // 2026-10-12: Programs filters redesign. Raised from 44700 to 48300 for the summary bar, pill rows and phone bar rules (48237 bytes).
-  stylesheet: 48300,
+  // 2026-10-13: ticket ux9-callout-btn, callout button colour rules. Raised from 48300 to 48800 (48730 bytes).
+  // 2026-10-13, ticket ux9-pills: .fpill round pill rule. Raised from 48800 to 48900 (48834 bytes).
+  // 2026-10-13, ticket ux9-page-top: .notes and .topnote rule. Raised from 48900 to 49000 (48937 bytes).
+  // 2026-10-13, ticket ux9-header-footer: phone header row, Menu grid and footer columns rules. Raised from 49000 to 49800 (49757 bytes).
+  // 2026-10-13, ticket ux9-quiet-cards: quiet card h3, a.chip and .g2x2 rules. Raised from 49800 to 50100 (50049 bytes).
+  // 2026-10-13, ticket ux9-header-footer: 320 px overflow fixes (.tp-hidden left, .tl grid, wrapping tags). Raised from 50100 to 50300 (50259 bytes).
+  stylesheet: 50300,
 };
 
 const LITE = "data/entries-lite.json";

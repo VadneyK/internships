@@ -167,7 +167,8 @@
     return '<p><b>What to do next:</b> Contact the office shown above first. Then <a href="' + to.h + '">' + to.t + "</a>.</p>";
   }
 
-  var cur = null, curLite = null;
+  var cur = null, curLite = null, litePlace = null;
+  function syncLite() { if ($("pLite")._tpSync) $("pLite")._tpSync(); if (litePlace) litePlace.sync(); }
   function render() {
     var st = $("pState").value, age = $("pAge").value, kind = $("pKind").value;
     var out = $("pOut"), sec = $("packetSec");
@@ -321,6 +322,8 @@
       lite = {}; liteRead = ld.read || "";
       ld.states.slice().sort(function (x, y) { return x.name < y.name ? -1 : 1; }).forEach(function (x) { lite[x.id] = x; opt($("pLite"), x.id, x.name); });
       opt($("pLite"), "other", "My state is not listed");
+      /* The 35 option list is the type-to-search state box, like Home and Jobs. The select stays the source of truth. */
+      if (!litePlace) litePlace = G.placeSearch($("pLite"), { hide: true, chip: true, caption: "", placeholder: "Type your state" });
       return true;
     }).catch(function () { liteP = null; return false; });
     return liteP;
@@ -360,7 +363,7 @@
     ["pAge", "pKind"].forEach(function (id) { $(id).addEventListener("change", changed); });
     $("pLite").addEventListener("change", function () {
       /* "My state is not listed" in the second step is the same answer as in the first. */
-      if ($("pLite").value === "other") { $("pState").value = "other"; $("pLite").value = ""; if ($("pState")._tpSync) $("pState")._tpSync(); if ($("pLite")._tpSync) $("pLite")._tpSync(); }
+      if ($("pLite").value === "other") { $("pState").value = "other"; $("pLite").value = ""; if ($("pState")._tpSync) $("pState")._tpSync(); syncLite(); }
       changed();
       if ($("pLite").value) ensureWages().then(function () { changed(); });
     });
@@ -387,7 +390,7 @@
       var low = asked.toLowerCase();
       ensureLite().then(function (ok) {
         if (!ok) { $("pOut").innerHTML = liteErrHTML; return; }
-        if (hasLite(low)) { $("pState").value = "lite"; $("pLite").value = low; if ($("pState")._tpSync) $("pState")._tpSync(); if ($("pLite")._tpSync) $("pLite")._tpSync(); ensureWages().then(function () { render(); }); }
+        if (hasLite(low)) { $("pState").value = "lite"; $("pLite").value = low; if ($("pState")._tpSync) $("pState")._tpSync(); syncLite(); ensureWages().then(function () { render(); }); }
         else $("pOut").innerHTML = nostateCard(asked, $("pAge").value);
       });
     }

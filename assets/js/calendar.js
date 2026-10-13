@@ -10,6 +10,7 @@
     $("calNote").textContent = cal.note;
     /* The place picker offers only places that have at least one calendar program: all holds just the programs in calendar.json, so other places show "(none yet)". */
     G.fillPlaces($("cPlace"), all);
+    G.placeSearch($("cPlace"), { hide: true, chip: true, caption: "" });
     for (var a = 12; a <= 18; a++) $("cAge").appendChild(Object.assign(document.createElement("option"), { value: String(a), textContent: String(a) }));
     var cur = new Date().getMonth() + 1, q = new URLSearchParams(location.search);
     if (+q.get("m") >= 1 && +q.get("m") <= 12) cur = +q.get("m");
@@ -27,6 +28,7 @@
       if (o.value && / \(none yet\)$/.test(o.textContent) && o.value !== $("cPlace").value) o.remove();
     });
     Array.prototype.slice.call($("cPlace").querySelectorAll("optgroup")).forEach(function (g) { if (!g.querySelector("option")) g.remove(); });
+    G.placeTiles($("cPlace"), { anyLabel: "Everywhere" });
     ["cPlace", "cAge"].forEach(function (id) { if ($(id)._tpSync) $(id)._tpSync(); });
     $("months").innerHTML = SH.map(function (m, i) { return '<button class="chip" type="button" data-m="' + (i + 1) + '" aria-pressed="false">' + m + "</button>"; }).join("");
     function inWindow(it, m) {

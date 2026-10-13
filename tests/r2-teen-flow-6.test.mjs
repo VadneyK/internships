@@ -40,7 +40,7 @@ for (const [file, expected] of Object.entries(PAGES)) {
     assert.equal(links.length, expected.length, "link count matches the ticket");
     links.forEach((a, i) => {
       assert.ok(a.classList.contains("chip"), "each link is a.chip");
-      assert.equal(a.style.textDecoration, "none", "links have text-decoration:none");
+      assert.equal(a.getAttribute("style"), null, "ux9-quiet-cards: chip links carry no inline style; a.chip { text-decoration: none } lives in style.css");
       const href = a.getAttribute("href") || "";
       assert.equal(href, expected[i][0], "href matches the section id");
       assert.equal(a.textContent.trim(), expected[i][1], "label matches the ticket");
