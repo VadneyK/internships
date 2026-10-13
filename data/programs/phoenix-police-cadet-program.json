@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "deadline_iso": null,
+  "id": "phoenix-police-cadet-program",
+  "name": "Police Cadet Program",
+  "org": "Phoenix Police Department",
+  "regions": [
+    "arizona"
+  ],
+  "city": "Phoenix, AZ",
+  "type": "leadership",
+  "fields": [
+    "law-government",
+    "any"
+  ],
+  "what_you_do": "Meet on Tuesdays at 5:00 PM. Cadets serve a three-month probation with community service.",
+  "min_age": 14,
+  "max_age": null,
+  "who_can_apply": "Age 14 and older, and you must have finished 8th grade. Stay in school until you graduate. Keep at least a C average. No serious police record.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Cadets are volunteers, not police employees.",
+  "season": "year-round",
+  "duration": "Weekly meetings every Tuesday at 5:00 PM",
+  "status": "unconfirmed",
+  "deadline_text": "Orientations are held twice a year, before the school year and after winter break. Specific dates are not stated on the program page.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Complete the Cadet Application Packet and bring it to testing night. Use the APPLY NOW link on the page. For recruitment, call 602-534-2677.",
+  "needs_work_permit": false,
+  "url": "https://joinphxpd.com/civilian/cadets/",
+  "sources_fetched": [
+    "https://www.phoenix.gov/administration/departments/police/community-engagement/youth-programs.html",
+    "https://joinphxpd.com/civilian/cadets/"
+  ],
+  "priority": 2,
+  "notes": "New cadets serve a three-month probation. During that time they must do 8 hours of community service each month. At 18, cadets can apply for non-sworn positions, such as Police Assistants."
+}

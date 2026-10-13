@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "deadline_iso": null,
+  "id": "portland-multnomah-county-library-volunteer",
+  "name": "Multnomah County Library Volunteering",
+  "org": "Multnomah County Library",
+  "regions": [
+    "oregon"
+  ],
+  "city": "Portland, OR",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "any"
+  ],
+  "what_you_do": "Volunteer at a library branch. The roles vary by branch and change often. Check the volunteer page for open roles.",
+  "min_age": 10,
+  "max_age": null,
+  "who_can_apply": "Anyone age 10 and older can volunteer on their own. Younger volunteers must have a parent or caregiver with them.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "year-round",
+  "deadline_text": "Not stated on the program page. Allow 1 to 2 weeks for processing.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply online or on paper at any library. Share your name, contact details and area of interest. You do not need a Social Security number. The library contacts you to schedule an interview. Orientation and training come after you are accepted.",
+  "needs_work_permit": false,
+  "url": "https://multcolib.org/volunteer/frequently-asked-questions-about-volunteering",
+  "sources_fetched": [
+    "https://multcolib.org/volunteer",
+    "https://multcolib.org/volunteer/frequently-asked-questions-about-volunteering"
+  ],
+  "priority": 2,
+  "notes": "This is the general library volunteer page. Current jobs are listed on an outside volunteer site. A link is on the page."
+}

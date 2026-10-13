@@ -1,0 +1,39 @@
+{
+  "grades": null,
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-13",
+  "deadline_iso": null,
+  "id": "portland-oregon-food-bank-volunteer",
+  "name": "Oregon Food Bank Volunteering",
+  "org": "Oregon Food Bank",
+  "regions": [
+    "oregon"
+  ],
+  "city": "Portland, OR",
+  "type": "volunteer",
+  "fields": [
+    "social-impact",
+    "food-hospitality"
+  ],
+  "what_you_do": "Sort and re-pack food at the Portland and Beaverton sites. Help with seasonal garden projects and offsite food markets.",
+  "min_age": 8,
+  "max_age": null,
+  "who_can_apply": "The volunteer FAQ sets a minimum age of 8. Each shift lists its own minimum age. First-time volunteers under 18 need a youth release form.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "Single shifts, most days of the week",
+  "status": "year-round",
+  "deadline_text": "Sign up any time. Everyone must register ahead of time.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Create a volunteer profile on the volunteer page. Then reserve a shift. Read the minimum age on each shift first.",
+  "needs_work_permit": false,
+  "url": "https://www.oregonfoodbank.org/volunteer/",
+  "sources_fetched": [
+    "https://www.oregonfoodbank.org/volunteer/",
+    "https://api.oregonfoodbank.org/assets/download/FAQs_Volunteer_ENG.pdf"
+  ],
+  "priority": 2,
+  "notes": "Check the minimum age on each shift. For small group or family volunteering, email volunteer@oregonfoodbank.org. Shoes must have closed toes and heels. Shirts must have sleeves."
+}
