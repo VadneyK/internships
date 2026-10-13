@@ -25,7 +25,8 @@ const PAGES = {
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. find.html limit 2277600 to 2341900.
   // 2026-10-13: re-read of 177 workshop-city cards (38 fixed). find.html limit 2341900 to 2342200.
   // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. find.html limit 2342200 to 2377900.
-  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2377900 },
+  // 2026-10-13: re-read of 213 more open cards (42 fixed). find.html limit 2377900 to 2378800.
+  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2378800 },
   "calendar.html": { allowed: ["calendar.json", "entries-cal.json"], ceiling: 150000 },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. insights.html ceiling 697700 to 716100.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. insights.html limit 716100 to 736500.

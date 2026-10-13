@@ -1788,7 +1788,7 @@
   "season": "summer",
   "duration": "8 weeks, June 14 to Aug 6, 2027. You must be on campus at least 35 of the 40 days.",
   "status": "open-now",
-  "deadline_text": "The BioMed Focus 2027 interest form opens Monday, Oct 12, 2026. No closing date is posted.",
+  "deadline_text": "The BioMed Focus 2027 interest form closes January 8, 2027 at 11:59 pm, per the program About page. That page does not give an opening date. The card earlier said the form opens Monday, Oct 12, 2026; the About page does not confirm that.",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Fill out the online interest form. One letter of recommendation is required. The page does not describe the later steps.",
   "url": "https://biomed-focus.medicine.umich.edu/about",
@@ -2548,7 +2548,7 @@
   "verified_on": "2026-10-10",
   "needs_work_permit": false,
   "priority": 2,
-  "notes": "Admissions office phone: (734) 677-5360. General line: 734-973-3300. This is a school program, not a job.",
+  "notes": "Admissions office phone: (734) 677-5360. General line: 734-973-3300. This is a school program, not a job. The admissions page does not mention tuition, fees or books, so confirm the no-cost claim by calling the admissions office.",
   "fields": [
    "any"
   ],
@@ -2567,7 +2567,7 @@
   "season": "school-year",
   "duration": "Several years of high school",
   "status": "opens-soon",
-  "deadline_text": "Registration for the informational meetings begins October 2026. Admissions begins Dec 1, 2026. Online application closes Feb 26, 2027. Letters go out Mar 19, 2027. Lottery Mar 26 if needed. Confirm by Apr 9, 2027.",
+  "deadline_text": "Admissions for fall 2027 begins Dec 1, 2026. Online application closes Feb 26, 2027. Letters go out Mar 19, 2027. Lottery Mar 26, 2027 if needed. Confirm by Apr 9, 2027.",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Go to an Admissions Informational Meeting first (6:00 to 7:30 PM on Dec 1, 2026; Jan 19, Feb 1, Feb 10 online, Feb 18 online, 2027). Then use the online application. Placement tests follow if you are admitted.",
   "url": "https://www.wccnet.edu/wtmc/admissions.php",
@@ -5174,7 +5174,7 @@
   "verified_on": "2026-10-09",
   "priority": 1,
   "needs_work_permit": true,
-  "notes": "Held at 2100 Liberty Heights Avenue, Baltimore. The page also mentions a summer job part. Ask about the summer and spring sessions. The Branches page did not confirm a work permit, in-person sessions or a family orientation, so ask the program. The foundation phone is (410) 448-5663 and the email is info@parksandpeople.org.",
+  "notes": "Held at 2100 Liberty Heights Avenue, Baltimore. The page also mentions a summer job part. Ask about the summer and spring sessions. The Branches page says applicants must be able to apply for a work permit, must attend all in-person sessions, and that a family orientation is required. The foundation phone is (410) 448-5663 and the email is info@parksandpeople.org.",
   "id": "baltimore-parks-and-people-branches-internship",
   "name": "Branches Paid Internship",
   "org": "Parks & People Foundation",
@@ -5187,7 +5187,7 @@
    "environment",
    "trades"
   ],
-  "what_you_do": "After-school paid internship with outdoor conservation work, weekly college and career sessions, and money and teamwork skills, with a focus on green careers.",
+  "what_you_do": "This is a paid after-school internship. You do outdoor work to protect nature. You also join weekly sessions on college, jobs, money and teamwork. The focus is green jobs.",
   "min_age": null,
   "max_age": null,
   "who_can_apply": "Baltimore City high-schoolers, per the program page.",
@@ -7231,7 +7231,7 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
-  "opens_iso": "2026-12-01",
+  "opens_iso": null,
   "grades": "Grades 9 to 12",
   "min_age": null,
   "max_age": null,
@@ -7262,8 +7262,8 @@
   "paid_type": "fee-based",
   "pay_detail": "2026 tuition: Blacksburg session $1,250 (materials not included, about $100 estimated); virtual session $250. Needs-based scholarships are offered through the registration form.",
   "duration": "One week (2026 Blacksburg session June 21 to 27)",
-  "status": "opens-soon",
-  "deadline_text": "Summer 2026 registration closed May 15 or when full. The page says registration will open December 1st and close May 15th or when full (no year; (year inferred from the next cycle)). The program is being rebooted. 2027 dates not posted.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Summer 2026 registration closed May 15, 2026 or when full. The page says registration will open December 1st (no year given) and close May 15th or when full. No 2027 dates or prices are posted.",
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Use the registration links on the page for the Blacksburg or virtual session. No refunds after the May 15 close. Questions: Chris Pritchett, cpritche@vt.edu.",
   "url": "https://arch.vt.edu/future-students/explore-architecture.html",
@@ -9635,7 +9635,7 @@
   ],
   "city": "Boston, MA",
   "type": "pre-college",
-  "what_you_do": "A three week program with no college credit. You pick one subject. In 2026 the choices were psychology, medicine, creative writing and business. You also do activities in Boston.",
+  "what_you_do": "A three week program. You pick one subject. In 2026 the choices were psychology, medicine, creative writing and business. You also do activities in Boston.",
   "who_can_apply": "Students who start their junior or senior year in fall 2027. Students from other countries can apply.",
   "paid_type": "fee-based",
   "season": "summer",
@@ -9764,7 +9764,7 @@
   ],
   "city": "Boston, MA",
   "type": "pre-college",
-  "what_you_do": "A two-week pre-college program on the BU campus. Go to morning and afternoon seminars, join campus activities and get a taste of college life.",
+  "what_you_do": "A two-week pre-college program on the BU campus. You choose any two seminars from the list, then join campus activities and an admissions workshop. You get a taste of college life.",
   "who_can_apply": "Students who start sophomore, junior or senior year in fall 2027. BU looks at your grades, courses and a personal essay. Students from other countries can apply.",
   "paid_type": "fee-based",
   "season": "summer",
@@ -13610,7 +13610,7 @@
    "arts-media",
    "engineering"
   ],
-  "what_you_do": "One week on campus in a design studio. You learn drawing, model making and design. You also build bridges, tour campus buildings and take a field trip to a famous architecture town.",
+  "what_you_do": "This is a one-week summer program on campus where you live in a dorm. You learn drawing and modeling in a design studio. You see what life is like as an architecture student. You take a trip to a famous building in the Midwest.",
   "min_age": null,
   "max_age": null,
   "who_can_apply": "High school students who are rising sophomores through seniors. Students come from around the country.",
@@ -15520,7 +15520,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-10",
   "priority": 2,
-  "notes": "The zoo calls the program very hard to get into. It also runs a winter session that is open to new applicants. Applications are September 1 to 10, 2026. The program runs November 14, 2026 to February 14, 2027. Contact: 719-424-7822.",
+  "notes": "The page says a $25 application fee is non-refundable. Summer programs are tuition based and the page does not state an amount. The page does not give winter session dates. Contact: 719-424-7822.",
   "verified_on_label": "Oct 10, 2026"
  },
  {
@@ -17609,7 +17609,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "priority": 2,
-  "notes": "The page says student volunteers must be at least 16, and some opportunities need 18 or older. The summer program opens in early March 2027. One summer block says applicants must be 18 at submission, while the FAQ says the summer rules match the others (16). Confirm the summer age rule.",
+  "notes": "The page says student volunteers must be at least 16, and some opportunities need 18 or older. The page says summer applicants must be at least 18 when the application is submitted. Summer applications open early March 2027. Next student cycle starts January 10, 2027.",
   "verified_on_label": "Oct 9, 2026"
  },
  {
@@ -18212,7 +18212,7 @@
   "status": "open-now",
   "deadline_text": "Auditions opened Oct 1, 2026. Priority deadline Feb 15, 2027. Final deadline March 1, 2027.",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Audition through Acceptd. Choose CCM Prep: Musical Theatre Intensive. Get ready a headshot and a resume. Prepare a 60 to 90 second speech and two different songs. Send a 30 to 60 second video of you dancing alone.",
+  "how_to_apply": "Audition through Acceptd. Choose CCM Prep: Musical Theatre Intensive. Get ready a headshot and a resume. Prepare a 60 to 90 second monologue from a published play written after 1950 and two songs (one from a musical written before 1970, one written after 1970). Send a 30 to 60 second video of you dancing alone.",
   "url": "https://ccm.uc.edu/arts4all/summer/teen-programs/musical-theatre-workshop.html",
   "sources_fetched": [
    "https://www.ccm.uc.edu/arts4all/summer/teen-programs.html",
@@ -21284,7 +21284,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-10",
   "priority": 2,
-  "notes": "Two phone numbers appear on OSC pages, so email is the safer contact. The page does not mention financial aid. It was formerly called the Summer Institute.",
+  "notes": "Two phone numbers show on OSC pages, so email is safer. The page says OSC pays much of the cost. It says there are no one-on-one scholarships. The program used to be called the Summer Institute.",
   "id": "columbus-osc-stem-institute",
   "name": "STEM Institute (Ohio Supercomputer Center)",
   "org": "Ohio Supercomputer Center",
@@ -22829,7 +22829,7 @@
   "deadline_text": "Applications open Monday Oct 19, 2026 and close Sunday Nov 8, 2026.",
   "deadline_iso": "2026-11-08",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Apply on the Chicago Public Library application form (not the After School Matters site). Answer the open-ended questions carefully; they decide who is interviewed. Virtual interview in Microsoft Teams for each program. Apply to as many as you like but accept one.",
+  "how_to_apply": "Apply on the Chicago Public Library form, not the After School Matters site. Answer the open questions with care. They decide who gets an interview. Each program has a video interview in Microsoft Teams. You can apply to as many as you like. You can only accept one.",
   "needs_work_permit": null,
   "url": "https://www.chipublib.org/news/chicago-public-library-school-year-assistantship/",
   "apply_url": null,
@@ -22841,7 +22841,7 @@
    "https://www.chipublib.org/news/apply-to-be-part-of-the-teen-media-lab/"
   ],
   "priority": 1,
-  "notes": "You enroll with After School Matters during the first month, which needs a Social Security Number and parent or guardian information. Questions: teenservices@chipublib.org. Gamer's Guild sub-guilds meet at different library branches.",
+  "notes": "In the first month you enroll with After School Matters. That needs a Social Security Number and a parent or guardian's details. Questions: teenservices@chipublib.org. Gamer's Guild groups meet at different library branches. The sub-pages list these stipends. Teen Best Reads pays $3,500 for finishing work and showing up. Teen Media Lab pays $2,200 for Spring and $1,300 for Fall. The Best Reads page is dated 2025 and gives no year. So the 2026-27 cycle rests on the main page.",
   "regions": [
    "chicago"
   ],
@@ -25855,7 +25855,7 @@
    "any"
   ],
   "what_you_do": "Take college classes for free while in high school and earn both high school and college credit. Pick a college transfer path or a career and technical path (a certificate or diploma).",
-  "who_can_apply": "High school juniors and seniors in North Carolina. Need a 2.8 or higher unweighted GPA, or test scores showing college readiness. The career path also accepts a written recommendation from your principal. To stay in, you must keep at least a 2.0 college GPA after two college courses.",
+  "who_can_apply": "High school juniors and seniors. Need a 2.8 or higher unweighted GPA, or test scores showing college readiness. The career path also accepts a written recommendation from your principal. To stay in, you must keep at least a 2.0 college GPA after two college courses.",
   "paid_type": "unpaid",
   "season": "school-year",
   "status": "open-now",
@@ -25870,7 +25870,7 @@
    "https://www.durhamtech.edu/dual-enrollment/important-dates"
   ],
   "priority": 1,
-  "notes": "Students at Middle College High School, City of Medicine Academy and Durham School of Technology use a different path and deadline.",
+  "notes": "Students at Middle College High School, City of Medicine Academy and Durham School of Technology use a different path and deadline. The pages state no North Carolina residency rule. Check with the college. The eligibility page confirms the 2.8 GPA or test score rule. It also confirms the principal waiver for the career path.",
   "verified_on_label": "Oct 9, 2026"
  },
  {
@@ -27331,7 +27331,7 @@
   "verified_on": "2026-10-09",
   "needs_work_permit": false,
   "priority": 3,
-  "notes": "Phone for the Teen Services Librarian: 760-839-4283 (listed in the card notes; not confirmed on the page text). Page lists no age range or cost.",
+  "notes": "Phone for the Teen Services Librarian: 760-839-4283 (listed on the page with a call-to-ask-questions note). Page lists no age range or cost.",
   "id": "escondido-library-teen-advisory-board",
   "name": "Escondido Library Teen Advisory Board",
   "org": "Escondido Public Library (City of Escondido)",
@@ -27355,7 +27355,7 @@
   "deadline_text": "The library is accepting new members for the 2026-2027 school year. No deadline is listed.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Get the Teen Advisory Board Application (PDF) from the page, or pick one up at the Youth Services Desk on the 2nd floor. The page says to send the completed application to Teen Services by email. The page text did not show the email address, so confirm it before sending.",
+  "how_to_apply": "Get the Teen Advisory Board form from the page as a PDF. You can also pick one up at the Youth Services Desk on the 2nd floor. Email the finished form to teens@escondidolibrary.org (shown on the page).",
   "url": "https://www.escondido.gov/939/Teen-Advisory-Board",
   "sources_fetched": [
    "https://www.escondido.gov/939/Teen-Advisory-Board"
@@ -28881,7 +28881,7 @@
    "law-government"
   ],
   "what_you_do": "A school team studies the economy and plays the part of the Fed's rate-setting committee. The 2026-27 theme is the economics of housing. Teams submit a paper, and top teams are chosen.",
-  "who_can_apply": "Students in grades 9 to 12, entered as a team. A faculty advisor registers the team. Team size and entry limits are in the rule book, which the page links to.",
+  "who_can_apply": "Students in grades 9 to 12, entered as a team. A faculty advisor registers the team. Each school may enter one team and one submission. Team size and other rules are in the rule book, which the page links to.",
   "paid_type": "unpaid",
   "pay_detail": "No pay. No fee is listed.",
   "season": "school-year",
@@ -34965,7 +34965,7 @@
    "https://www.kupuhawaii.org/hawaii-youth-conservation-corps-summer-program",
    "https://labor.hawaii.gov/wsd/child-labor/"
   ],
-  "notes": "Among teens, only 17 year olds qualify. Jobs are on Hawaii Island, Kauai, Maui, Molokai and Oahu. The older HYCC Summer program (17 and up) is paused. Kupu also runs the Conservation Leadership Development Program. Hawaii requires a child labor certificate (work permit) for working minors under 18. It is free. It is a Certificate of Employment for 14 and 15, and a Certificate of Age for 16 and 17.",
+  "notes": "Most positions take ages 17 to 38 for the whole term. Jobs are on Hawaii Island, Kauai, Maui, Molokai and Oahu. The older HYCC Summer program (17 and up) is paused. Kupu also runs the Conservation Leadership Development Program. Hawaii requires a child labor certificate (work permit) for working minors under 18. It is free. It is a Certificate of Employment for 14 and 15, and a Certificate of Age for 16 and 17.",
   "regions": [
    "hawaii"
   ],
@@ -40621,7 +40621,7 @@
   "season": "summer",
   "duration": "2026: June 8 to July 17, Monday to Friday 8:30 a.m. to 4 p.m., plus August to April",
   "status": "opens-soon",
-  "deadline_text": "2027 application opens Nov 15, 2026. The page lists a Feb 1 deadline (printed as 2026) under its 2027 heading. Confirm the 2027 deadline.",
+  "deadline_text": "2027 application opens Nov 15, 2026. The page prints a Feb 1, 2026 at 11:59 pm CST deadline, which appears to belong to the earlier cycle. No 2027 deadline is posted yet.",
   "how_to_apply": "Fill out the online STAHR form. Send a transcript with unweighted GPA. Send 1 professional recommendation through the online reference form (letters are not accepted). Questions: stahr@umkc.edu, 816-235-6169.",
   "url": "https://info.umkc.edu/stahr/scholars/high-school/",
   "sources_fetched": [
@@ -41064,7 +41064,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-10",
   "priority": 1,
-  "notes": "Dates may change, says the timeline page. Final auditions are held in person at Northern Kentucky University. Some are online. Email gsainfo@kentuckyperformingarts.org with questions. Or call 502-566-5192.",
+  "notes": "Dates may change, says the timeline page. Final auditions are held in person at Northern Kentucky University. Some are online. Email gsainfo@kentuckyperformingarts.org with questions. Or call 502-566-5192. The $35 or $50 application fee and the free or reduced lunch fee waiver are not on the GSA pages checked; confirm the fee with the GSA team before paying.",
   "verified_on_label": "Oct 10, 2026"
  },
  {
@@ -48327,7 +48327,7 @@
    "food-hospitality"
   ],
   "what_you_do": "Day camps from 9 am to 3 pm on trades, health, engineering, culinary and arts topics, with field trips. Students try hands-on career skills at the college.",
-  "who_can_apply": "Students in grades 3 to 12. Each camp lists its own grades, based on grade level in fall 2026.",
+  "who_can_apply": "Students in grades 3 to 12. Each camp lists its own grades, based on grade level in fall 2027.",
   "paid_type": "fee-based",
   "season": "summer",
   "status": "opens-soon",
@@ -48340,7 +48340,7 @@
    "https://madisoncollege.edu/academics/youth-programs/madison-camps",
    "https://madisoncollege.edu/academics/youth-programs"
   ],
-  "notes": "Camps on this page are at the Madison campuses. The college also lists camps at Fort Atkinson, Portage, Reedsburg and Watertown on a separate regional page.",
+  "notes": "The camps on this page are at the Madison campuses. The college lists camps at Fort Atkinson, Portage, Reedsburg and Watertown on a separate page.",
   "verified_on_label": "Oct 9, 2026"
  },
  {
@@ -54124,7 +54124,7 @@
   "duration": "Fall district conference, then a Lansing conference of about four days",
   "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "2026-27: February Lansing conference Feb 18 to 21, 2027, regular registration Nov 10 to Dec 27, late Dec 28 to Jan 13. April Lansing conference Apr 22 to 25, 2027, regular registration Nov 10 to Feb 28, late Mar 1 to 17. Fall district conferences are scheduled Oct 2 to Nov 9, 2026 (registration closes two weeks before each), so some may already be closed.",
+  "deadline_text": "Fall district conferences run Oct 2 to Nov 9, 2026. Sign-up closes about two weeks before each one. District 6 (Detroit, Nov 9) closes Oct 26, 2026. Sign-up for the other fall districts has ended. Lansing sign-up opens Nov 10, 2026. February Lansing conference (Feb 18 to 21, 2027): regular sign-up closes Dec 27, 2026, late sign-up Dec 28 to Jan 13 with a $25 fee. April Lansing conference (Apr 22 to 25, 2027): regular sign-up closes Feb 28, 2027, late sign-up Mar 1 to 17 with a $25 fee.",
   "deadline_iso": "2026-12-27",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Check the map on the YMCA page to see if your school or YMCA has a delegation. If not, use the Contact us page to start one. Then register for the conferences your delegation attends.",
@@ -54138,7 +54138,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "priority": 2,
-  "notes": "Not a job. The deadline_iso is the end of regular registration for the February Lansing conference. Fall conference sites include Marquette, Grayling, Allendale, Saginaw, Kalamazoo and Detroit. Lansing conference registration does not open until November 10, 2026, so as of October 10, 2026 the February and April Lansing windows are not yet open.",
+  "notes": "Not a job. The deadline date is the end of regular sign-up for the February Lansing conference. Lansing sign-up opens Nov 10, 2026. Fall conference sites include Marquette, Grayling, Allendale, Saginaw, Kalamazoo and Detroit. As of Oct 13, 2026, only the District 6 fall conference in Detroit is still open. The February and April Lansing windows are not open yet.",
   "verified_on_label": "Oct 9, 2026"
  },
  {
@@ -59002,7 +59002,7 @@
   "paid_type": "fee-based",
   "season": "summer",
   "status": "opens-soon",
-  "deadline_text": "Summer 2027 details are not posted yet. The page says the application will open December 6 (year not stated; (year inferred from the next cycle)) and stay open until all spots are filled. Admissions decisions are made monthly.",
+  "deadline_text": "Summer 2027 details are not posted yet. The page says the application will open December 6 and stay open until all spots are filled. The page does not state the year; 2026 is inferred from the next cycle. Admissions decisions are made monthly.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "A parent or guardian with custody fills out part 1 of the application. The student writes the short answers. Admission is rolling. Students can ask for money help after they are accepted.",
@@ -60779,13 +60779,13 @@
    "tech-cs"
   ],
   "what_you_do": "Free college prep all year. You get SAT/ACT prep, tutoring, college tours and STEM workshops. A six-week Summer Institute on campus is required. It has college-level classes.",
-  "who_can_apply": "Students who finished 8th grade and are in 9th, 10th or 11th grade. You must live in and go to school in New Brunswick, Perth Amboy or Plainfield. You must be first in your family to go to college, or low income. You must be a US citizen or permanent resident. You need at least a C average and a plan to go to college. You must send an application and a personal statement, and do an interview.",
+  "who_can_apply": "Students who finished 8th grade and are in 9th, 10th or 11th grade. You must live in and go to school in New Brunswick, Perth Amboy or Plainfield. You must be first in your family to go to college, or low income. You must be a US citizen or permanent resident. You need at least a C average and need academic support. You must send an application and a personal statement, and do an interview.",
   "paid_type": "unpaid",
   "pay_detail": "Free program. The program page does not say if students get paid.",
   "season": "year-round",
   "duration": "Year-round, with a six-week Summer Institute",
   "status": "open-now",
-  "deadline_text": "The page says online applications open in mid-September and close in mid-December each year. A 2027 application link is posted.",
+  "deadline_text": "The page says online applications open in mid-September and close in mid-December each year. It has a heading for the Upward Bound Math-Science 2027 Application but no direct application link.",
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Email upwardbound@echo.rutgers.edu or call (848) 445-3090 to ask how to apply. The page says you fill out an application and a personal statement, and you have an interview. It shows no link to apply. Virtual open houses are held in fall in English and Spanish.",
   "needs_work_permit": false,
@@ -61308,14 +61308,14 @@
   ],
   "city": "Pennington and Trenton, NJ",
   "type": "school-pathway",
-  "what_you_do": "Spend half of each school day in a hands-on shop program in junior and senior year, such as carpentry, electrician, welding, HVAC, auto repair, cosmetology, culinary arts or game programming.",
-  "who_can_apply": "10th graders. Applicants are ranked by an acceptance criteria score. The page lists district information sessions, which are not required for admission. Your home district provides transportation.",
+  "what_you_do": "In junior and senior year, spend half of each school day in a hands-on shop. Choices include carpentry, electrical, welding, HVAC, auto repair, hair and nails, cooking or game design.",
+  "who_can_apply": "10th graders. The page gives no acceptance criteria for shared-time programs and refers to a separate admissions procedures page. The page says no RSVP is required for the information sessions. Your home district provides transportation.",
   "paid_type": "unpaid-credit",
   "season": "school-year",
   "status": "open-now",
   "deadline_text": "The 2027-2028 application is open now. No closing date is posted on the page. Info sessions: Oct 29, Nov 19, Dec 9 and Dec 16, 2026 and Jan 11, 2027.",
   "deadline_confidence": "unknown",
-  "how_to_apply": "Create an account in the online application portal and fill in the application. Your school counselor then uploads transcripts and attendance. Email admissions@mcts.edu with questions.",
+  "how_to_apply": "Make an account in the online application portal and fill in the form. Your school counselor then sends your grades and attendance. Email admissions@mcts.edu with questions.",
   "url": "https://www.mcts.edu/fs/pages/382",
   "sources_fetched": [
    "https://www.mcts.edu/fs/pages/382",
@@ -61350,8 +61350,8 @@
   ],
   "city": "Bridgewater, NJ",
   "type": "school-pathway",
-  "what_you_do": "Study a career and technical program in high school, such as carpentry, plumbing, welding, culinary arts, computer science, biomedical, finance, theater or health medical sciences.",
-  "who_can_apply": "Students applying for the 2027-28 school year. The district serves students from Somerset and neighboring counties. Some programs (biomedical, finance, HVACR, global business) are shared-time only.",
+  "what_you_do": "Study a career and tech program in high school. Choices include carpentry, plumbing, welding, cooking, computers, biomed, money, theater or health care.",
+  "who_can_apply": "Students applying for the 2027-28 school year. Some programs (biomedical, finance, HVACR, global business) are shared-time only.",
   "paid_type": "unpaid-credit",
   "season": "school-year",
   "status": "open-now",
@@ -61364,7 +61364,7 @@
    "https://www.scvths.org/community/cooperative-education",
    "https://www.scvths.org/"
   ],
-  "notes": "Health and medical sciences academy has its own admission page and phone, 908-526-8900 ext. 7148. Enrolled students can join a paid Cooperative Education job placement. That is not open to outside teens.",
+  "notes": "The health sciences academy has its own admission page and phone, 908-526-8900 ext. 7148. Enrolled students can join a paid co-op job. Outside teens cannot.",
   "verified_on_label": "Oct 10, 2026"
  },
  {
@@ -63418,14 +63418,14 @@
   "min_age": null,
   "max_age": null,
   "grades": "Grades 9 to 11 (12th graders cannot apply)",
-  "who_can_apply": "Students in grades 9 to 11 who start in Tier 1 (9th grade), Tier 2 (10th grade or Tier 1 done) or Tier 3 (11th grade or Tier 2 done). No age or borough rule is stated. You do not have to share immigration status for Tiers 1 to 3.",
+  "who_can_apply": "Students in grades 9 to 11 who start in Tier 1 (9th grade), Tier 2 (10th grade or Tier 1 done) or Tier 3 (11th grade or Tier 2 done). No age or borough rule is stated. The page says: Regardless of your immigration status, you are encouraged to apply to GAP.",
   "paid_type": "stipend",
   "pay_detail": "Tier 1 $600, Tier 2 $700, Tier 3 $800 as a one-time nontaxable reimbursement in November, plus a $75 perfect attendance bonus. Tier 4 (by invitation after Tier 3) is a part-time staff job at $17 per hour. No fee to join.",
   "season": "year-round",
   "duration": "9 months, March to November 2027 (about 4 to 6 hours a week in spring and fall, 20 to 25 hours a week in summer; about 190 to 220 hours total).",
   "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "The page gives no opening date for 2027 applications but has an Apply Now button. Submit your materials before Dec 4, 2026 to be invited to an interview. No final deadline is posted. Info session Sat Oct 17, 2026, 11 a.m. to 1 p.m., RSVP required.",
+  "deadline_text": "The page gives no opening date for 2027 applications. It asks visitors to sign up to be notified when applications open, and it shows an Apply Now button. Submit materials before Dec 4, 2026 to be invited to an interview. No final deadline is posted. Info session Sat Oct 17, 2026, 11 a.m. to 1 p.m., RSVP required.",
   "deadline_iso": "2026-12-04",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Apply online (an account lets you save your progress). You write short answers and give references, then join a group interview. Apprentices must reapply every year. Two references use a separate online reference form.",
@@ -63743,7 +63743,7 @@
   "min_age": null,
   "max_age": null,
   "grades": null,
-  "who_can_apply": "All ages can join. Teens under 16 must be with a parent or guardian the whole time, so teens 16 and up can volunteer on their own. Event volunteer roles are usually 18 and up.",
+  "who_can_apply": "Volunteers under 16 must be accompanied and supervised by a parent or guardian at all times. Event volunteer opportunities are typically open to volunteers ages 18 and older.",
   "paid_type": "unpaid",
   "pay_detail": "Unpaid volunteering.",
   "season": "summer",
@@ -63763,7 +63763,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "priority": 3,
-  "notes": "Coastal Cleanup is best suited for ages 10 and up. Tasks happen outdoors on uneven ground. Ask staff about accommodations.",
+  "notes": "The page lists no deadline and no 2027 dates. Most volunteer events run April to October.",
   "verified_on_label": "Oct 9, 2026"
  },
  {
@@ -67965,7 +67965,7 @@
   "paid_type": "unpaid",
   "season": "fall",
   "status": "open-now",
-  "deadline_text": "Fall 2026 one-day camps: Wilmington Oct. 13, Columbus Oct. 21, Findlay Nov. 3, COLT Lineman Training (Mount Gilead) Oct. 23, Meat Processing (Yorkshire) Oct. 27. Registration closes 10 days before each event, so the Columbus day closes about Oct. 11, 2026. So the last fall registration (Findlay, Nov. 3) closes about Oct 24, 2026.",
+  "deadline_text": "Fall 2026 one-day camps, per the flyer and ofbf.org: Wilmington Oct. 13, Columbus Oct. 21, COLT Lineman Training (Mount Gilead) Oct. 23, Meat Processing (Yorkshire) Oct. 27, Findlay Nov. 3. Registration closes 10 days before each event or when full. By that rule Wilmington (about Oct. 3) and Columbus (about Oct. 11) have already closed. Still open by that rule: COLT (about Oct. 13), Meat Processing (about Oct. 17) and Findlay (about Oct. 24, 2026). The page does not post close dates itself.",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Pick the camp on the ExploreAg page and fill out its registration form. For questions, use the Contact Us page at ofbf.org/contact/.",
   "url": "https://ofbf.org/community/youth-in-agriculture/exploreag/",
@@ -72496,10 +72496,10 @@
   ],
   "city": "Phoenix, AZ",
   "type": "paid-youth-program",
-  "what_you_do": "Finish a 30 hour skills academy. Then work a paid internship with a local employer or a group internship, with a mentor. Current listing: Junior Sports Leadership Specialist.",
+  "what_you_do": "First finish the 30 hour AZYF Academy for skills, mentors and career help. Then work a paid internship. Current listings are the AZPlays sports group internship with BGCAZ and Junior Sports Leadership Specialist.",
   "min_age": 14,
   "max_age": 21,
-  "who_can_apply": "Ages 14 to 21. Must be legally able to work in the U.S. You do not need to be a Club member.",
+  "who_can_apply": "Ages 14 to 21. Must be legally able to work in the U.S. A background check may be required. The page does not say whether Club membership is required; its application asks whether you are a BGCAZ member.",
   "paid_type": "paid",
   "pay_detail": "Paid internship. Rate not stated on the program pages.",
   "season": "year-round",
@@ -74919,10 +74919,10 @@
   "duration": "4-week residential summer (2027: June 20 to July 16), then 3 years of involvement",
   "status": "opens-soon",
   "opens_iso": "2026-11-09",
-  "deadline_text": "Applications open Nov 9, 2026 and are due Feb 22, 2027 (recommendations due Mar 1, 2027). Decisions Apr 16, 2027.",
+  "deadline_text": "The apply page lists the 2026-2027 dates. Application opens Nov 9, 2026. Application and transcript due Feb 22, 2027. Recommendation form due Mar 1, 2027. Decisions come Apr 16, 2027.",
   "deadline_iso": "2027-02-22",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Online New Student Application, two essays (up to 500 words each), a current-year transcript and two recommendations (one from a core subject teacher). Some applicants are interviewed. Contact PAYS@pomona.edu or (909) 607-1810.",
+  "how_to_apply": "Fill out the online New Student Application. Add two essays of up to 500 words each, this year's transcript and two recommendations. One must come from a core subject teacher. Some applicants get an interview. Contact PAYS@pomona.edu or (909) 607-1810.",
   "needs_work_permit": false,
   "url": "https://www.pomona.edu/administration/draper-center/pays/apply",
   "apply_url": null,
@@ -74931,10 +74931,10 @@
    "https://www.pomona.edu/administration/draper-center/pays/apply"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-13",
   "priority": 1,
-  "notes": "The apply page mentions both 2025-2026 and 2026-2027 in places; the 2026-2027 deadlines above are the ones listed. Confirm with the program. Pomona College is in Claremont, next to Pomona.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "Checked 2026-10-13 on the apply page: it lists the 2026-2027 dates and the June 20 to July 16, 2027 residential dates. Its list of application materials still says 2025-2026. The program admits about 30 students each year. Contact the program if the form is not up by Nov 9.",
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "id": "pomona-valley-hospital-high-school-volunteer",
@@ -76746,7 +76746,7 @@
   ],
   "city": "Reno, NV",
   "type": "pre-college",
-  "what_you_do": "Pick a camp that lasts a week. The first is Aerospace Mini-Camp. The next is Engineering Adventures Camp. The last is Civil and Environmental Engineering Camp.",
+  "what_you_do": "Pick one high school camp. The page lists the Aerospace Mini-Camp, the Engineering Adventures Camp and a Civil and Environmental Engineering Camp. Camp details are not posted yet.",
   "min_age": 14,
   "max_age": 17,
   "who_can_apply": "Teens ages 14 to 17.",
@@ -77056,7 +77056,7 @@
    "health",
    "science"
   ],
-  "what_you_do": "Get matched with a current Rosalind Franklin University student. They mentor you about health care or science careers. After an orientation, you meet once a month by Zoom or phone from October to May.",
+  "what_you_do": "Get matched with a current Rosalind Franklin University student. They mentor you about health care or science careers. After an orientation, you meet once a month by video call or phone from October to May.",
   "min_age": null,
   "max_age": null,
   "who_can_apply": "Local high school and college students who like health care or science.",
@@ -78326,7 +78326,7 @@
    "science",
    "engineering"
   ],
-  "what_you_do": "You join a free summer program for 100 top students. It has one week of STEM classes, five weeks of individual research with a mentor, and one week of reports and presentations.",
+  "what_you_do": "You join a free summer program for 100 top students. It has one week of STEM classes taught by professors, then five weeks of individual research with a mentor. The program ends with a research paper and a presentation at the RSI Symposium.",
   "min_age": null,
   "max_age": null,
   "grades": "Juniors",
@@ -78334,13 +78334,13 @@
   "paid_type": "unpaid",
   "pay_detail": "Free to students",
   "season": "summer",
-  "duration": "About 7 weeks",
+  "duration": "Six weeks (one week of classes, five weeks of research)",
   "status": "open-now",
   "opens_iso": null,
   "deadline_text": "RSI 2027 applications are open through 11:59 p.m. on December 11, 2026. No late applications.",
   "deadline_iso": "2026-12-11",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Apply on the CEE site: essays, two or three teacher recommendations, official transcript, and PSAT, SAT, ACT or AP scores.",
+  "how_to_apply": "Apply on the CEE site. You need essays, two or three teacher letters, an official transcript, and PSAT, SAT, ACT or AP scores.",
   "needs_work_permit": false,
   "url": "https://www.cee.org/programs/research-science-institute",
   "apply_url": "https://www.cee.org/programs/apply-rsi",
@@ -78352,7 +78352,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "Extremely selective (the FAQ says under 2.5% are accepted). Held in Cambridge, Massachusetts, so plan for travel. The CEE program page says RSI 2027 expands to Stanford for 50 scholars, so the location may differ for some students; check which site applies. The older FAQ page mentions a $75 application fee with waivers and a minimum age of 16 by July 1, but it also lists a six-week program, so it may be out of date. Confirm with CEE.",
+  "notes": "Very hard to get in. The CEE FAQ says it accepts less than 2.5% of applicants. It is held at MIT in Cambridge, Massachusetts, so plan for travel. The program page says RSI 2027 also runs at Stanford for 50 scholars. Check which site applies to you. The FAQ says the program lasts six weeks. It says you must be 16 by July 1 of the program year. It lists a $75 application fee that is not refundable, with waivers for need. The program page says the program is free to students. Ask CEE which is right.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
@@ -79339,9 +79339,9 @@
    "social-impact"
   ],
   "what_you_do": "Youth volunteers walk dogs and help care for animals. They clean kennels, check food and water, help with play and can foster.",
-  "min_age": 12,
+  "min_age": 16,
   "max_age": 17,
-  "who_can_apply": "The page text says Youth Volunteers must be a minimum of 16, but its Apply Now button says Youth 12 to 17. Ages 12 to 15 may volunteer with a parent or guardian over 18 (both apply and train). Confirm with the Salem campus.",
+  "who_can_apply": "The Salem campus page says youth volunteers must be 16 and finish all training and paperwork. Ages 12 to 15 may volunteer with a parent or guardian over 18. Both apply and train. The Apply Now button says Youth 12 to 17, which conflicts with the 16 minimum. Confirm with the Salem campus.",
   "paid_type": "unpaid",
   "pay_detail": "Unpaid volunteer role.",
   "season": "year-round",
@@ -79351,7 +79351,7 @@
   "deadline_confidence": "rolling",
   "how_to_apply": "Apply at oregonhumane.volunteerportal.org. Use the Youth 12 to 17 button. Do the training and paperwork. Then go to orientation.",
   "url": "https://www.oregonhumane.org/get-involved/volunteer/youths-12-17/#salem-campus",
-  "notes": "The same Oregon Humane page covers both sites. The Salem rules differ from Portland. The Salem text conflicts on the minimum age (16 in the text, 12 to 17 on the button).",
+  "notes": "The same Oregon Humane page covers both sites. The Salem rules differ from Portland (Portland says 12 to 17, one 2-hour shift every other week for at least 6 months). The Salem text says minimum age 16; the Apply Now button says Youth 12 to 17. min_age is set to 16 to follow the Salem text. Confirm with the Salem campus.",
   "regions": [
    "oregon"
   ],
@@ -84050,7 +84050,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "priority": 1,
-  "notes": "Free to join. Food and supplies are provided. Mentorship location rotates around Seattle (North, Central, Southeast, Southwest). Interns can return for up to 3 years. Work permit rule not stated on the page.",
+  "notes": "Food and supplies are provided. Mentorship location rotates around Seattle (North, Central, Southeast, Southwest). Interns can return for up to 3 years. Work permit rule not stated on the page.",
   "verified_on_label": "Oct 9, 2026"
  },
  {
@@ -88559,7 +88559,7 @@
   "season": "year-round",
   "duration": "Year-round",
   "status": "opens-soon",
-  "deadline_text": "Application opens Jan 1 and is due Feb 15 each year ((year inferred from the next cycle)). Group interview on the first Sunday of March. Notified in mid-April.",
+  "deadline_text": "Application opens Jan 1 and is due Feb 15 each year. Group interview on the first Sunday of March. Notified in mid-April.",
   "how_to_apply": "Fill out the online form. Ask a teacher or youth leader to send a recommendation form. Go to 1 group interview. If accepted, do a background check and online training.",
   "url": "https://www.stlzoo.org/zooalive",
   "sources_fetched": [
@@ -91771,7 +91771,7 @@
   "pay_detail": "Starts at $16.75 per hour",
   "season": "summer",
   "duration": "Starguard class days listed on the page, then June and July work",
-  "deadline_text": "Fall class days on the page: Oct 4, 10, 11; Nov 14, 15, 21, 22; Dec 12, 13, 19, 20. Swim tests Nov 1 and Nov 29, 11 a.m. to 1 p.m. at Catalina Pool. Years are not printed on the page.",
+  "deadline_text": "Swim tests Nov 1 and Nov 29, 2026, 11 a.m. to 1 p.m. Sign up for a swim test at the link. Starguard class days on the page (no years printed; the page footer reads 2026): Oct 4, 10, 11 (already passed as of 2026-10-13); Nov 14, 15, 21, 22; Dec 12, 13, 19, 20.",
   "how_to_apply": "Sign up for a swim test at tucsonparks.info/lifeguardfallswimtest. The page gives no other form. If you have questions, send an email to cotlifeguard@tucsonaz.gov or call 520-837-8119.",
   "url": "https://www.tucsonaz.gov/Departments/Parks-and-Recreation/Pools-and-Splash-Pads/Lifeguards-and-Water-Safety-Instructors",
   "notes": "The page shows 2026 in its footer, so the dates are likely fall 2026, but confirm. Swim test: 300 yard front crawl, 50 yard approach stroke with rescue tube, treading water, 50 yard side stroke with a dummy, 10 lb brick retrieval.",
@@ -93925,7 +93925,7 @@
   "duration": "Self-paced",
   "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "Fall 2026 enrollment is open (as of Oct 7, 2026).",
+  "deadline_text": "Fall 2026 enrollment is open now, according to the site.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
   "how_to_apply": "Enroll from the courses page, ask your school counselor about school-paid seats, or call (408) 450-4962.",
@@ -94743,10 +94743,10 @@
   "season": "summer",
   "duration": "3 weeks (Jul 13 to Jul 31 in 2026)",
   "status": "opens-soon",
-  "deadline_text": "The program dates page says the window opens January 6 and closes June 1 (no year printed; (year inferred from the next cycle)). The 2026 program ran July 13 to 31, 2026.",
+  "deadline_text": "Applications are closed now. The page says the window opens January 6 and closes June 1 (no year printed). The 2026 program ran July 13 to 31, 2026.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Pick a course and the campus or online option, then apply online with a transcript, health insurance card and card payment for the application fee and deposit. No essays or recommendations.",
+  "how_to_apply": "Pick a course and choose a campus or online. Then apply online. You need a transcript, a health insurance card and a card to pay the application fee and deposit. There are no essays or recommendations.",
   "needs_work_permit": false,
   "url": "https://exst.umd.edu/pre-college-programs/terp-young-scholars",
   "apply_url": "https://exst.umd.edu/pre-college-programs/terp-young-scholars/apply-domestic-applicants",
@@ -96684,10 +96684,10 @@
   "season": "school-year",
   "duration": "Thursdays 4 to 7 PM, October 15, 2026 to February 11, 2027",
   "status": "open-now",
-  "deadline_text": "Registration for fall 2026 is open as of Oct 10, 2026, with no closing date stated. The program starts Oct 15, 2026. The scholarship deadline was September 15, 2026.",
+  "deadline_text": "Registration for fall 2026 is open, per the page, with no closing date stated. The program starts Oct 15, 2026. The scholarship deadline was September 15, 2026.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Apply through the Emily Carr University Continuing Studies website (Apply Now link on the page). Questions: teens@ecuad.ca.",
+  "how_to_apply": "Apply on the Emily Carr University Continuing Studies site (use the Apply Now link on the page). Questions: teens@ecuad.ca.",
   "needs_work_permit": null,
   "url": "https://www.vanartgallery.bc.ca/teens/teen-art-group/",
   "sources_fetched": [
@@ -98023,7 +98023,7 @@
   "how_to_apply": "Apply online on the Wake Tech page for the apprenticeship academy. You can also ask for help from the career coordinator at your school.",
   "url": "https://www.waketech.edu/programs-courses/apprenticeship/students/apprenticeship-academy",
   "priority": 1,
-  "notes": "The deadline is very close. Paths are building and skilled trades (carpentry, electrical, HVAC, plumbing, welding), car and truck tech, and mechanical engineering and advanced making of goods. The page does not give the year with the October 16 date. It follows the Spring 2027 wording.",
+  "notes": "The deadline is very close. Paths are building trades (carpentry, electrical, HVAC, plumbing, welding), car and truck tech, and mechanical engineering and advanced making. The page gives no year with the October 16 date. It follows the Spring 2027 wording. The page says Career and College Promise helps cover tuition. It does not say tuition is fully paid, so pay_detail says too much.",
   "sources_fetched": [
    "https://www.waketech.edu/programs-courses/apprenticeship/students/apprenticeship-academy"
   ],
@@ -101082,7 +101082,7 @@
   "deadline_text": "2026-2027 enrollment fee posted ($80). No closing date stated; join through a local club.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "Find a community club, attend a meeting, complete online enrollment and pay the fee. Office: bbrinkhoushatch@ucanr.edu, 530-666-8703.",
+  "how_to_apply": "Find a local club and go to a meeting. Then finish online enrollment and pay the fee. Office: bbrinkhoushatch@ucanr.edu, 530-666-8703.",
   "needs_work_permit": false,
   "url": "https://ucanr.edu/site/yolo-county-4-h/youth",
   "apply_url": null,
@@ -101092,7 +101092,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-07",
   "priority": 2,
-  "notes": "Teens can take leader and ambassador roles. The fee is non-refundable. A fee waiver or reduction form is available. Returning members update their online enrollment and send health forms to their club.",
+  "notes": "The fee is non-refundable. A fee waiver or reduction form is available. Returning members update their online enrollment and send health forms to their club.",
   "verified_on_label": "Oct 7, 2026"
  },
  {
