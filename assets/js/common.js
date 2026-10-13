@@ -360,6 +360,112 @@
     });
   };
   setTimeout(function () { G.shareToParent(); }, 0);
+  /* Place search box (2026-10-12), shared by Home and Programs: type a city or state, pick one of up to eight matches.
+     A pick sets the real Where select and fires "change". Ids come from the select: <id>Q, <id>List, <id>None, <id>Opt<n>, <id>Lbl.
+     opts: placeholder, caption, chip (a removable chip for the pick), hide (hide the select now). Returns { input, sync, failed }. */
+  G.placeSearch = function (sel, opts) {
+    opts = opts || {};
+    if (!sel || !sel.parentNode || sel._ps) return sel && sel._ps;
+    var base = sel.id, f = sel.parentNode, groupOf = null, res = [], act = -1;
+    var ps = { failed: false }, lab = document.querySelector('label[for="' + base + '"]');
+    if (lab && !lab.id) lab.id = base + "Lbl";
+    var wrap = document.createElement("div"), cap = document.createElement("p"), chip = null;
+    if (opts.hide) { sel.classList.add("tp-hidden"); sel.setAttribute("tabindex", "-1"); sel.setAttribute("aria-hidden", "true"); }
+    wrap.className = "combo";
+    var q = ps.input = document.createElement("input"); q.type = "text"; q.id = base + "Q"; q.placeholder = opts.placeholder || "Type your city or state";
+    q.setAttribute("role", "combobox"); q.setAttribute("aria-autocomplete", "list"); q.setAttribute("aria-expanded", "false"); q.setAttribute("aria-controls", base + "List"); q.setAttribute("aria-labelledby", base + "Lbl");
+    q.setAttribute("autocomplete", "off"); q.setAttribute("autocapitalize", "off"); q.setAttribute("spellcheck", "false"); q.setAttribute("enterkeyhint", "search");
+    var list = document.createElement("ul"); list.id = base + "List"; list.className = "combo-list"; list.setAttribute("role", "listbox"); list.setAttribute("aria-label", "Matching places"); list.hidden = true;
+    var note = document.createElement("p"); note.id = base + "None"; note.className = "small muted"; note.hidden = true;
+    wrap.appendChild(q); wrap.appendChild(list); wrap.appendChild(note);
+    cap.className = "small muted"; cap.textContent = opts.caption || "Or pick a part of the country:";
+    if (opts.chip) { chip = document.createElement("div"); chip.className = "chips"; chip.hidden = true; f.insertBefore(chip, sel); }
+    f.insertBefore(wrap, sel); f.insertBefore(cap, sel);
+    /* A place's name as the tiles show it: no count, and an area reads "All of ..." */
+    function nameOf(o) { return (o.value.indexOf("area:") === 0 ? "All of " : "") + o.textContent.replace(/\s*\((?:\d+|none yet)\)$/, ""); }
+    function norm(t) { return t.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, " ").trim(); }
+    /* Which part of the country each place sits in, from the same groups the tiles use, so "midwest" finds the Midwest cities. */
+    function groups() {
+      if (!groupOf) {
+        groupOf = {};
+        ((L && L.PICK_GROUPS) || []).forEach(function (g) {
+          g[1].forEach(function (a) { groupOf["area:" + a] = g[0]; }); (g[3] || []).forEach(function (a) { groupOf["state:" + a] = g[0]; }); g[2].forEach(function (c) { groupOf["city:" + c] = g[0]; });
+        });
+      }
+      return groupOf;
+    }
+    /* Matches for what was typed: the name starts with it, a word starts with it, it is inside the name, then the part of the country. Best eight. */
+    function findPlaces(t) {
+      t = norm(t); if (!t) return [];
+      var out = [], seen = {};
+      for (var i = 1; i < sel.options.length; i++) {
+        var o = sel.options[i], nm = norm(o.textContent.replace(/\s*\((?:\d+|none yet)\)$/, "")), s = nm.indexOf(t) === 0 ? 0 : (" " + nm).indexOf(" " + t) > -1 ? 1 : nm.indexOf(t) > -1 ? 2 : norm(groups()[o.value] || "").indexOf(t) > -1 ? 3 : -1;
+        if (s < 0) continue;
+        var k = nameOf(o); /* the area and the state "All of Texas" read the same: show the state */
+        if (seen[k] != null) { if (o.value.indexOf("state:") === 0) out[seen[k]] = { i: i, s: s }; continue; }
+        seen[k] = out.length; out.push({ i: i, s: s });
+      }
+      return out.sort(function (a, b) { return a.s - b.s || a.i - b.i; }).slice(0, 8);
+    }
+    function setPlace(i) { sel.selectedIndex = i; sel.dispatchEvent(new Event("change", { bubbles: true })); }
+    function openList(on) {
+      list.hidden = !on; q.setAttribute("aria-expanded", on ? "true" : "false");
+      if (!on || act < 0) q.removeAttribute("aria-activedescendant"); else q.setAttribute("aria-activedescendant", base + "Opt" + act);
+    }
+    function showAct(n) {
+      act = n;
+      Array.prototype.forEach.call(list.children, function (li, k) { li.setAttribute("aria-selected", k === n ? "true" : "false"); });
+      openList(true);
+    }
+    function typed() {
+      var t = q.value.trim(); res = findPlaces(t); act = res.length ? 0 : -1;
+      list.textContent = "";
+      res.forEach(function (r, k) {
+        var o = sel.options[r.i], c = /\((\d+|none yet)\)$/.exec(o.textContent), li = document.createElement("li");
+        li.id = base + "Opt" + k; li.className = "combo-opt"; li.setAttribute("role", "option");
+        li.appendChild(document.createTextNode(nameOf(o)));
+        var n = document.createElement("span"); n.className = "n"; n.textContent = c ? (/^\d/.test(c[1]) ? c[1] + (c[1] === "1" ? " program" : " programs") : c[1]) : ""; li.appendChild(n);
+        li.addEventListener("mousedown", function (ev) { ev.preventDefault(); });
+        li.addEventListener("click", function () { setPlace(r.i); });
+        list.appendChild(li);
+      });
+      note.textContent = !t || res.length ? "" : sel.options.length < 2 ? (ps.failed ? "The places could not load. Use the Programs page instead." : "The places are still loading. Try again in a moment.") : "No place called “" + t + "”. Try a state, or pick a part of the country below.";
+      note.hidden = !note.textContent;
+      if (note.hidden) q.removeAttribute("aria-describedby"); else q.setAttribute("aria-describedby", base + "None");
+      if (res.length) showAct(0); else openList(false);
+    }
+    /* The chosen place shows as a chip (when asked for); tapping it clears the place back to Anywhere. A pick empties the box. */
+    ps.sync = function () {
+      var o = sel.value ? sel.options[sel.selectedIndex] : null;
+      if (chip) {
+        chip.hidden = !o; chip.textContent = "";
+        if (o) {
+          var b = document.createElement("button"), x = document.createElement("span"), sr = document.createElement("span");
+          b.type = "button"; b.className = "chip clear"; b.appendChild(document.createTextNode(nameOf(o) + " "));
+          x.setAttribute("aria-hidden", "true"); x.textContent = "×"; sr.className = "sr"; sr.textContent = " clear"; b.appendChild(x); b.appendChild(sr);
+          b.addEventListener("click", function () { setPlace(0); q.focus(); });
+          chip.appendChild(b);
+        }
+      }
+      if (o) { q.value = ""; res = []; openList(false); }
+    };
+    q.addEventListener("input", typed);
+    q.addEventListener("focus", function () { if (q.value.trim()) typed(); });
+    q.addEventListener("blur", function () { openList(false); });
+    q.addEventListener("keydown", function (ev) {
+      var k = ev.key, open = !list.hidden;
+      if (k === "ArrowDown" || k === "ArrowUp") {
+        ev.preventDefault();
+        if (!open) { typed(); return; }
+        showAct((act + (k === "ArrowDown" ? 1 : res.length - 1)) % res.length);
+      } else if (k === "Enter") { ev.preventDefault(); if (open && act > -1) setPlace(res[act].i); }
+      else if (k === "Escape") { if (open) { ev.preventDefault(); openList(false); } else q.value = ""; }
+    });
+    sel.addEventListener("change", ps.sync);
+    if (lab) lab.addEventListener("click", function (ev) { ev.preventDefault(); q.focus(); });
+    sel._ps = ps;
+    return ps;
+  };
   /* The Where picker: part of the country first, then its cities (and "All of ..." areas). sel must already hold the options from fillPlaces. */
   G.placeTiles = function (sel) {
     if (!L || !L.PICK_GROUPS) return;
@@ -372,6 +478,8 @@
       return { label: g[0], items: items };
     });
     G.tilePicker(sel, { anyLabel: "Anywhere", groups: groups, labelFor: function (i, t) { return sel.options[i].value.indexOf("area:") === 0 ? "All of " + t : t; } });
+    /* code that sets the place (a saved choice, a link) repaints the search box and its chip too */
+    if (sel._ps && !sel._ps.hooked) { var tps = sel._tpSync; sel._ps.hooked = true; sel._tpSync = function () { tps(); sel._ps.sync(); }; }
   };
   if (L) {
     G.REGIONS = L.REGIONS; G.HUBS = L.HUBS; G.TYPES = L.TYPES; G.FIELDS = L.FIELDS; G.PAID = L.PAID;

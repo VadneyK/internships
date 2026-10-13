@@ -46,12 +46,13 @@ const TABLE = {
   "data/states-lite.json": { ceiling: 48000, reason: "data file, 43610 bytes measured 2026-10-10" },
   "data/transit.json": { ceiling: 9100, reason: "data file, 8193 bytes measured 2026-10-10" },
   "data/younger.json": { ceiling: 19600, reason: "data file, 17796 bytes measured 2026-10-10" },
+  // 2026-10-12: Programs filters redesign. style.css 46100 to 48300 (summary bar, pill rows, phone bar; 48237 bytes), common.js 28300 to 34500 (the shared place search box; 34453 bytes), find.js 59300 to 64500 (summary bar and phone bar code; 64477 bytes). home.js got smaller, so its row stays.
   "assets/css/fonts.css": { ceiling: 6800, reason: "stylesheet, 6158 bytes measured 2026-10-10" },
-  "assets/css/style.css": { ceiling: 46100, reason: "stylesheet, 41831 bytes measured 2026-10-10" },
+  "assets/css/style.css": { ceiling: 48300, reason: "stylesheet, 41831 bytes measured 2026-10-10" },
   "assets/js/calendar.js": { ceiling: 8800, reason: "script, 7966 bytes measured 2026-10-10" },
-  "assets/js/common.js": { ceiling: 28300, reason: "script, 25681 bytes measured 2026-10-10" },
+  "assets/js/common.js": { ceiling: 34500, reason: "script, 25681 bytes measured 2026-10-10" },
   // Raised from 58100 to 59300 on 2026-10-12 for ticket diet-1 (Where group files on the Programs page). 59217 bytes measured.
-  "assets/js/find.js": { ceiling: 59300, reason: "script, 52771 bytes measured 2026-10-10" },
+  "assets/js/find.js": { ceiling: 64500, reason: "script, 52771 bytes measured 2026-10-10" },
   "assets/js/handout.js": { ceiling: 400, reason: "script, 274 bytes measured 2026-10-10" },
   // 2026-10-12: home picker flow. home.js grew by about 8.8 KB (place search box, chip, step markers); ceiling raised from 10800 to 18600, measured 18585 bytes.
   "assets/js/home.js": { ceiling: 18700, reason: "script, 18605 bytes measured 2026-10-12 (home picker flow, plus the 1 day label)" },

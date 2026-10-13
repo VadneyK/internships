@@ -50,7 +50,8 @@ const LIMITS = {
   // Raised from 52000 to 52700 on 2026-10-12 for ticket r2-a11y-perf-7: the saved-list print sheet drops empty parentheses and adds a last-checked line. find.js is 52686 bytes.
   // Raised from 52700 to 53400 on 2026-10-12 for ticket r3-a11y-perf-5: the phone Search key applies the search and moves to the results. find.js is 53228 bytes.
   // Raised from 53400 to 59300 on 2026-10-12 for ticket diet-1: find.js picks a place's Where group files (data/lite and data/detail, ten literal URLs each way) instead of always loading the whole lite file, and falls back to the whole file when a state needs it. find.js is 59217 bytes. First-load data on the Programs page with a place chosen falls from 437 KB to 100 to 186 KB gzipped.
-  script: 59300,
+  // 2026-10-12: Programs filters redesign. Raised from 59300 to 64500 for the summary bar and the phone bar in find.js (64477 bytes).
+  script: 64500,
   // Raised from 34000 to 35000 on 2026-10-10: the merged upgrades added a few rules (the plain facts list and the Jobs output heading) and the sheet is 34005 bytes. Not caused by the data growth.
   // Raised again from 35000 to 36000 on 2026-10-10 for the 44 pixel tap targets (details summary, checkbox, breadcrumb) and the print rule for jump chips. The sheet is 35260 bytes.
   // Raised again from 36000 to 37000 on 2026-10-10 for the prefers-contrast block, the h1.display rule, the zero-count chip rule and the print rule for buttons. The sheet is 36345 bytes.
@@ -63,7 +64,8 @@ const LIMITS = {
   // Raised from 41000 to 42000 on 2026-10-12 for tickets r2-a11y-perf-2, r2-a11y-perf-6 and r2-teen-flow-4: hover styles only where a device can hover, print rules for buttons and controls, and the closed legend box. The sheet is 41831 bytes.
   // Raised from 42000 to 42400 on 2026-10-12 for tickets r3-teen-flow-5, r3-a11y-perf-2 and r3-a11y-perf-6: the footer group headings, link addresses on the print-one sheets, and the real screen height rule. The sheet is 42273 bytes.
   // 2026-10-12: home picker flow. Raised from 42400 to 44700 for the numbered steps, the place search box, its list and the chip. The sheet is 44619 bytes.
-  stylesheet: 44700,
+  // 2026-10-12: Programs filters redesign. Raised from 44700 to 48300 for the summary bar, pill rows and phone bar rules (48237 bytes).
+  stylesheet: 48300,
 };
 
 const LITE = "data/entries-lite.json";

@@ -287,6 +287,7 @@ main details[open] > summary::after { content: "\2212";
   .chip[aria-pressed="true"] { forced-color-adjust: none; background: Highlight; color: HighlightText; }
   .tile[aria-pressed="true"] { forced-color-adjust: none; background: Highlight; color: HighlightText; }
   .combo-opt[aria-selected="true"] { forced-color-adjust: none; background: Highlight; color: HighlightText; }
+  .fchip.on { forced-color-adjust: none; background: Highlight; color: HighlightText; }
   .nav a[aria-current="page"] { forced-color-adjust: none; background: Highlight; color: HighlightText; }
   .star[aria-pressed="true"] { forced-color-adjust: none; background: Highlight; color: HighlightText; }
   :focus-visible { outline: 3px solid Highlight; outline-offset: 3px; }
@@ -615,3 +616,37 @@ dl.facts.plain > div { border: 0; border-top: 2px solid var(--edge); border-radi
 @media (hover: hover) { .combo-opt:hover { background: var(--paper-2); } }
 .combo-opt[aria-selected="true"] { background: var(--tag-bg); color: var(--tag-fg); }
 .chip.clear { background: var(--tag-bg); color: var(--tag-fg); font-weight: 700; padding-inline: 1rem; }
+
+/* 2026-10-12: Programs filters redesign. A summary bar of the picks, compact pill rows, popular areas inside Where, a phone bar. Tokens only. */
+#filters { gap: 1.1rem; }
+.fsum { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .75rem; padding: .7rem .85rem; background: var(--paper); border: 3px solid var(--edge); border-radius: var(--radius); }
+.fsum-t { font-family: var(--display); font-stretch: 108%; font-style: italic; font-weight: 800; text-transform: uppercase; font-size: .8rem; letter-spacing: .06em; }
+.fchips { display: flex; flex-wrap: wrap; gap: .45rem; flex: 1 1 12rem; min-width: 0; }
+.fchip { font: inherit; font-size: .95rem; font-weight: 700; min-height: 2.75rem; max-width: 100%; padding: .3rem .95rem; border: 2px dashed var(--edge); border-radius: 999px; background: var(--surface); color: var(--ink-2); cursor: pointer; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fchip.on { border-style: solid; background: var(--tag-bg); color: var(--tag-fg); }
+@media (hover: hover) { .fchip:hover { background: var(--paper-2); } .fchip.on:hover { background: var(--tag-bg); text-decoration: underline; } }
+.fsum-clear { font: inherit; font-weight: 700; min-height: 2.75rem; padding: 0 .6rem; background: none; border: 0; color: var(--ink); text-decoration: underline; cursor: pointer; }
+.fsum-clear[hidden] { display: none; }
+#goalChips .chip { font-size: 1rem; min-height: 3rem; padding: .45rem 1.1rem; }
+.hubs { display: grid; gap: .4rem; margin-top: .3rem; padding-top: .7rem; border-top: 2px dashed color-mix(in srgb, var(--edge) 35%, transparent); }
+.hubs[hidden] { display: none; }
+.hubs > span { font-weight: 700; }
+.frow { display: grid; grid-template-columns: 5.2rem 1fr; gap: .3rem .8rem; align-items: start; }
+.frow > label { grid-column: 1; padding-top: .8rem; font-weight: 700; color: var(--ink-2); }
+.frow > :not(label) { grid-column: 2; min-width: 0; }
+.filters .combo input { font: inherit; font-size: 1.1rem; font-weight: 700; min-height: 3.2rem; width: 100%; min-width: 0; padding: .6rem 1.1rem; border: 3px solid var(--edge); border-radius: 999px; background: var(--surface); color: var(--ink); }
+.fpill .tp-row { gap: .4rem; }
+#age + .tp .tile, #when + .tp .tile, #season + .tp .tile { flex: 0 0 auto; min-height: 2.75rem; padding: .3rem .95rem; border-radius: 999px; font-size: .95rem; text-align: center; }
+#age + .tp .tile { min-width: 3.1rem; padding-inline: .5rem; }
+#moreFilters { padding-top: .7rem; border-top: 2px dashed color-mix(in srgb, var(--edge) 35%, transparent); }
+.mf-count { margin: 0 auto 0 -.8rem; }
+.showbar { display: none; }
+@media (max-width: 40rem) { .fsum-t { flex: 1; } .fsum-clear { order: 1; } .fchips { order: 2; flex: 1 1 100%; } }
+@media (max-width: 30rem) { .frow { grid-template-columns: 1fr; } .frow > label, .frow > :not(label) { grid-column: 1; padding-top: 0; } }
+@media (max-width: 47.99rem) {
+  .showbar { display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 45; padding: .6rem max(1rem, env(safe-area-inset-right, 0px)) calc(.6rem + env(safe-area-inset-bottom, 0px)) max(1rem, env(safe-area-inset-left, 0px)); background: var(--paper); border-top: 3px solid var(--edge); }
+  .showbar[hidden], .showbar.off { display: none; }
+  .showbar .btn { width: 100%; justify-content: center; min-height: 3rem; }
+  body.has-showbar { padding-bottom: calc(4.75rem + env(safe-area-inset-bottom, 0px)); }
+  body.has-showbar .toast { bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px)); }
+}

@@ -382,6 +382,7 @@
     speakT = setTimeout(function () { var t = $("count").textContent; if (t !== spoken) live.textContent = spoken = t; }, 700);
   }
   function render(resetPage, keep) {
+    paintSummary();
     var wait = ensure();
     if (wait) { wait.then(function () { render(resetPage, keep); }, function () { G.toast("Could not load more programs. Check your connection and try again."); }); return; }
     if (resetPage) shown = PAGE;
@@ -391,6 +392,7 @@
     paintTownHelp(realN);
     $("count").textContent = list.length + " of " + world.length + " programs";
     announceCount($("count").textContent);
+    paintShow(list.length);
     paintPrintCut(list);
     paintSortNote();
     $("savedN").textContent = sv.length;
@@ -435,6 +437,73 @@
     } else if (keep && keep.el) keep.el.focus();
     persist();
   }
+
+  /* Summary bar (2026-10-12: Programs filters redesign). One chip per main pick, so a teen sees every choice in one row and taps a chip to jump to that filter.
+     A pick that is not set shows as an open chip ("Any age"). Clear all shows only when something is picked. */
+  var SUM_KEY = "", placeBox = null;
+  function selText(id) { var s = $(id), o = s && s.options[s.selectedIndex]; return o && o.value ? o.textContent : state[id]; }
+  function labelsOf(table, vals) { return vals.map(function (v) { var f = Array.isArray(table) ? table.filter(function (x) { return x[0] === v; })[0] : null; return f ? f[1] : Array.isArray(table) ? v : table[v] || v; }).join(", "); }
+  function paintSummary() {
+    var box = $("fsumChips"); if (!box) return;
+    var goal = Object.keys(GOALS).filter(goalOn)[0], list = [];
+    function add(k, text, on, noun) { list.push({ k: k, text: text, on: on, noun: noun }); }
+    add("age", state.age || "Any age", !!state.age, "age");
+    var where = state.place ? L.placeLabel(state.place) : labelsOf(G.HUBS, state.hubs);
+    add("where", where || "Anywhere", !!where, "where");
+    if (goal) add("goal", document.querySelector('[data-goal="' + goal + '"]').textContent, true, "goal");
+    else if (!state.types.length && !state.paid.length) add("goal", "Any goal", false, "goal");
+    else {
+      if (state.types.length) add("kind", labelsOf(G.TYPES, state.types), true, "kind of program");
+      if (state.paid.length) add("pay", labelsOf(PAID_GROUPS, state.paid), true, "pay");
+    }
+    if (state.fields.length) add("interest", labelsOf(G.FIELDS, state.fields), true, "interest");
+    add("when", state.when ? selText("when") : "Any time", !!state.when, "timing");
+    if (state.season) add("season", selText("season"), true, "season");
+    if (state.q) add("q", "Search: " + state.q, true, "search");
+    if (state.verified) add("checked", "Checked on the official site", true, "this filter");
+    if (state.noPermit) add("nopermit", "No work permit needed", true, "this filter");
+    var key = JSON.stringify(list);
+    if (key !== SUM_KEY) {
+      SUM_KEY = key;
+      box.innerHTML = list.map(function (c) {
+        return '<button class="fchip' + (c.on ? " on" : "") + '" type="button" data-fs="' + c.k + '" aria-label="' + G.esc(c.text + ", change " + c.noun) + '">' + G.esc(c.text) + "</button>";
+      }).join("");
+    }
+    $("reset").hidden = !(state.q || state.age || state.when || state.season || state.paid.length || state.types.length || state.fields.length || state.verified || state.noPermit || state.hubs.length || state.place);
+  }
+  /* A summary chip moves focus to its filter (and opens More filters when the filter lives there). */
+  function goToFilter(k) {
+    var one = function (css) { return document.querySelector(css + '[aria-pressed="true"]') || document.querySelector(css); }, el = null;
+    if (k === "age" || k === "when" || k === "season") el = one("#" + k + " + .tp .tile");
+    else if (k === "where") el = placeBox ? placeBox.input : one("#place + .tp .tile");
+    else if (k === "goal") el = one("#goalChips .chip");
+    else if (k === "kind" || k === "pay" || k === "interest") { $("moreFilters").open = true; el = one({ kind: "#typeChips", pay: "#paidChips", interest: "#fieldChips" }[k] + " .chip"); }
+    else if (k === "q") el = $("q");
+    else if (k === "checked") el = $("onlyVerified");
+    else if (k === "nopermit") el = $("noPermit");
+    if (!el) return;
+    try { el.scrollIntoView({ behavior: G.motionOK() ? "smooth" : "auto", block: "center" }); } catch (e) {}
+    try { el.focus({ preventScroll: true }); } catch (e) { el.focus(); }
+  }
+  $("fsumChips").addEventListener("click", function (ev) { var b = ev.target.closest(".fchip"); if (b) goToFilter(b.getAttribute("data-fs")); });
+  /* Phone bar: "Show N programs" follows the count and scrolls to the results. It hides once the count line (where the results start) is on screen or behind. */
+  function paintShow(n) {
+    var bar = $("showBar"), btn = $("showBtn"); if (!bar || !btn) return;
+    btn.textContent = "Show " + n + (n === 1 ? " program" : " programs");
+    if (!bar.hidden) return;
+    bar.hidden = false; document.body.classList.add("has-showbar");
+    if (!window.IntersectionObserver) return;
+    new IntersectionObserver(function (es) {
+      var e = es[es.length - 1], past = e.isIntersecting || e.boundingClientRect.top < 0;
+      bar.classList.toggle("off", past); document.body.classList.toggle("has-showbar", !past);
+    }).observe($("count"));
+  }
+  /* The bar goes to the count line that starts the results (the same spot Search Enter and Clear all use), so the count and the sort box are in view. */
+  $("showBtn").addEventListener("click", function () {
+    var r = $("count");
+    r.scrollIntoView({ behavior: G.motionOK() ? "smooth" : "auto", block: "start" });
+    try { r.focus({ preventScroll: true }); } catch (e) { r.focus(); }
+  });
 
   /* chips */
   function chipGroup(id, items, key, multi) {
@@ -487,6 +556,7 @@
     $("savedOnly").setAttribute("aria-pressed", String(state.saved));
     $("viewCards").setAttribute("aria-pressed", String(state.view === "cards"));
     $("viewDates").setAttribute("aria-pressed", String(state.view === "dates"));
+    $("hubGroup").hidden = !!state.place;
     syncMoreFilters();
   }
   /* The pay, kind and interest chips live in a closed box. Say how many are on, and open the box when one is. */
@@ -753,6 +823,7 @@
     var QUICK = ["davis", "sv", "oak", "sf", "state", "socal", "atl", "nyc", "chi", "online"];
     chipGroup("hubChips", G.HUBS.filter(function (h) { return hubCounts[h[0]] && QUICK.indexOf(h[0]) > -1; }).map(function (h) { return [h[0], h[1], hubCounts[h[0]]]; }), "hubs");
     G.fillPlaces($("place"), world);
+    placeBox = G.placeSearch($("place"));
     G.placeTiles($("place"));
     ["age", "when", "season"].forEach(function (id) { G.tilePicker($(id), { anyLabel: $(id).options[0].textContent }); });
     $("place").addEventListener("change", function (e) { state.place = e.target.value; state.moreOnline = false; if (state.place) state.hubs = []; savePrefs(); hidePrefNote(); syncChips(); render(true); });
@@ -802,7 +873,8 @@
   $("savedOnly").addEventListener("click", function () { state.saved = !state.saved; syncChips(); render(true); });
   $("viewCards").addEventListener("click", function () { state.view = "cards"; syncChips(); render(false); });
   $("viewDates").addEventListener("click", function () { state.view = "dates"; syncChips(); render(false); });
-  $("reset").addEventListener("click", resetAll);
+  /* The button hides itself once nothing is picked, so focus moves to the first summary chip instead of dropping to the page. */
+  $("reset").addEventListener("click", function () { resetAll(); var c = $("fsumChips").querySelector(".fchip"); if (c) c.focus(); });
   document.addEventListener("click", function (ev) {
     var rx = ev.target.closest("[data-relax]");
     if (rx) { clearOne(rx.getAttribute("data-relax")); return; }
