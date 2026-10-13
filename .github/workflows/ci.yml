@@ -8,28 +8,27 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 jobs:
-  check:
+  python:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-python@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
         with:
           python-version: "3.12"
-      - uses: actions/setup-node@v7
-        with:
-          node-version: "22"
       - name: Install Python tools
-        run: pip install jsonschema
+        run: pip install -r requirements-dev.txt
       - name: Validate every program file
         run: python3 tools/validate.py
       - name: Python tests
         run: python3 -m unittest discover -s tests -v
-      - name: Install JavaScript test tools
-        run: npm ci
-      - name: JavaScript tests (logic and page behavior in jsdom)
-        run: node --test tests/*.test.mjs
       - name: Rebuild data and pages
         run: |
           python3 tools/build_data.py
@@ -47,6 +46,40 @@ jobs:
             exit 1
           fi
 
+  js:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2, 3, 4]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version-file: .nvmrc
+      - name: Install JavaScript test tools
+        run: npm ci
+      - name: JavaScript tests, shard ${{ matrix.shard }} of 4 (logic and page behavior in jsdom)
+        run: node --test --test-shard=${{ matrix.shard }}/4 tests/*.test.mjs
+
+  # The one required status check. Branch protection names "check", so this job
+  # keeps that name and fails unless every job it needs succeeded.
+  check:
+    needs: [python, js]
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Fail unless python and every js shard succeeded
+        run: |
+          if [ "${{ needs.python.result }}" != "success" ] || [ "${{ needs.js.result }}" != "success" ]; then
+            echo "::error::python is ${{ needs.python.result }}, js is ${{ needs.js.result }}"
+            exit 1
+          fi
+
   lib-coverage:
     runs-on: ubuntu-latest
     timeout-minutes: 45
@@ -54,10 +87,12 @@ jobs:
     env:
       NODE_OPTIONS: --max-old-space-size=7168
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-node@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
-          node-version: "22"
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version-file: .nvmrc
       - name: Install JavaScript test tools
         run: npm ci
       - name: lib.js coverage floor (takes about 8 minutes)
@@ -74,10 +109,12 @@ jobs:
     env:
       NODE_OPTIONS: --max-old-space-size=7168
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-node@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
-          node-version: "22"
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version-file: .nvmrc
       - name: Install JavaScript test tools
         run: npm ci
       - name: Run the tests and keep the V8 coverage dumps (takes about 8 minutes)

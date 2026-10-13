@@ -1,5 +1,6 @@
 // Data failure sweep: every page that fetches data/*.json says so when the fetch fails.
-// Run with: node --test tests/r2-tests-2-data-failure.test.mjs
+// Run with: node --test tests/r2-tests-2-data-failure-pages-a.test.mjs
+// This file is one third of the former r2-tests-2-data-failure.test.mjs, split so CI shards stay even. Pages here: Calendar, Languages, Interview, Paycheck, Permit and Parents.
 // Each required data file is made to answer 404, 500, invalid JSON, and an empty {} or [] while the page loads.
 // A page must not throw, must keep its h1 and nav, and must write a short message in the area it uses for results.
 // Optional files (gaps.json, entries-detail.json) must not blank the main list.
@@ -17,26 +18,17 @@ const MESSAGE = /could not|try again|unavailable|not load/i;
 
 // Cases that fail today. Key: "page file mode". Value: why. Follow-up tickets come from this list.
 const KNOWN_GAPS = {
-  "find.html entries-lite.json empty-array": "An empty program list is drawn as '0 of 0 programs', not a load failure. Fix in common.js checkJson or find.js: treat an empty entries file as a failed load.",
   "calendar.html entries-cal.json empty-array": "An empty program list is drawn as '0 programs in October'. Same root cause: no check that the entries file has rows.",
-  "index.html entries-home.json empty-array": "An empty program list shows 'No confirmed deadlines in the next few weeks' instead of a load failure.",
 };
 
 // page, the area where results or the failure message go, and the required data files the page requests.
 const PAGES = [
-  { page: "find.html", area: "count", also: "out", files: ["entries-lite.json"], optional: ["gaps.json", "entries-detail.json"] },
   { page: "calendar.html", area: "cCount", files: ["calendar.json", "entries-cal.json"] },
   { page: "languages.html", area: "lCount", files: ["languages.json"] },
   { page: "interview.html", area: "aOut", files: ["interview.json", "permits.json"] },
   { page: "paycheck.html", area: "mOut", files: ["money.json"] },
   { page: "permit.html", area: "pOut", files: ["permits.json"] },
   { page: "parents.html", area: "signLead", files: ["parents.json"] },
-  { page: "ready.html", area: "rideOut", files: ["transit.json"] },
-  { page: "safety.html", area: "sbody-rights", files: ["safety.json"] },
-  { page: "younger.html", area: "fedNote", files: ["younger.json"], soft: ["entries-core.json"] },
-  { page: "states.html", area: "moreOut", files: ["permits.json"] },
-  { page: "insights.html", area: "todayLead", files: ["entries-stats.json"] },
-  { page: "index.html", area: "soonList", files: ["entries-home.json"] },
 ];
 
 const MODES = {

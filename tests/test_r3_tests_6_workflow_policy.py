@@ -4,11 +4,13 @@ Checks: every workflow has a top-level permissions block with no write-all;
 only the workflows that open issues may grant issues: write, and none grants
 contents: write; no workflow uses pull_request_target; each action is pinned
 to one major version across all workflows; ci.yml runs the commands that
-docs/TESTING.md tells people to run; ci.yml's Node major is at least the
-minimum Node that CONTRIBUTING.md states.
+docs/TESTING.md tells people to run; every workflow that sets up Node reads .nvmrc, which is at least the
+minimum Node that CONTRIBUTING.md states; package.json engines match it; every
+pip install uses requirements-dev.txt (exact pins); dependabot watches pip.
 
 Run: python3 -m unittest discover -s tests -v
 """
+import json
 import os
 import re
 import unittest
@@ -18,12 +20,13 @@ WORKFLOW_DIR = os.path.join(ROOT, ".github", "workflows")
 
 # Workflows that open or update issues. Only these may grant issues: write.
 # links.yml needs it to open the link-check issue, so it is listed here too.
-ISSUE_WRITERS = ("freshness.yml", "links.yml")
+# dates.yml opens or updates the dates issue.
+ISSUE_WRITERS = ("dates.yml", "freshness.yml", "links.yml")
 
 CI_COMMANDS = (
     "python3 tools/validate.py",
     "python3 -m unittest discover -s tests",
-    "node --test tests/*.test.mjs",
+    "node --test --test-shard=${{ matrix.shard }}/4 tests/*.test.mjs",
     "python3 tools/build_data.py",
     "python3 tools/build.py",
 )
@@ -126,7 +129,10 @@ class WorkflowPolicyTests(unittest.TestCase):
         seen = {}
         for name in workflow_files():
             for line in read_workflow(name).splitlines():
-                match = re.search(r"uses:\s*['\"]?([^\s@'\"]+)@v?(\d+)", strip_comment(line))
+                # Actions are pinned to a 40 character SHA; the version tag is the trailing comment.
+                match = re.search(
+                    r"uses:\s*['\"]?([^\s@'\"]+)@[0-9a-f]{40}['\"]?\s+#\s*v(\d+)", line
+                )
                 if match:
                     action, major = match.group(1), match.group(2)
                     seen.setdefault(action, {}).setdefault(major, set()).add(name)
@@ -141,24 +147,118 @@ class WorkflowPolicyTests(unittest.TestCase):
                     )),
                 )
 
+    def test_every_action_is_pinned_to_a_full_sha_with_a_version_comment(self):
+        for name in workflow_files():
+            for line in read_workflow(name).splitlines():
+                if re.match(r"\s*(- )?uses:", line):
+                    with self.subTest(workflow=name, line=line.strip()):
+                        self.assertRegex(
+                            line, r"uses:\s*[^\s@]+@[0-9a-f]{40} # v\d+(\.\d+)*\s*$"
+                        )
+
+    def test_every_checkout_does_not_persist_credentials(self):
+        for name in workflow_files():
+            lines = read_workflow(name).splitlines()
+            for i, line in enumerate(lines):
+                if "uses: actions/checkout@" in line:
+                    with self.subTest(workflow=name, line=i + 1):
+                        self.assertEqual(
+                            [l.strip() for l in lines[i + 1:i + 3]],
+                            ["with:", "persist-credentials: false"],
+                        )
+
+    def test_ci_and_codeql_cancel_superseded_runs_only_for_pull_requests(self):
+        for name in ("ci.yml", "codeql.yml"):
+            with self.subTest(workflow=name):
+                text = read_workflow(name)
+                self.assertIn(
+                    "concurrency:\n  group: ${{ github.workflow }}-${{ github.ref }}\n"
+                    "  cancel-in-progress: ${{ github.event_name == 'pull_request' }}\n",
+                    text,
+                )
+
+    def test_dependabot_actions_have_a_cooldown_and_one_group(self):
+        text = read_text(os.path.join(ROOT, ".github", "dependabot.yml"))
+        block = text.split('package-ecosystem: "github-actions"', 1)[1].split("package-ecosystem:", 1)[0]
+        self.assertRegex(block, r"cooldown:\s*\n\s+default-days: 7\b")
+        self.assertRegex(block, r'groups:\s*\n\s+github-actions:\s*\n\s+patterns:\s*\n\s+- "\*"')
+
     def test_ci_runs_the_commands_testing_md_names(self):
         text = read_workflow("ci.yml")
         for command in CI_COMMANDS:
             with self.subTest(command=command):
                 self.assertIn(command, text, "ci.yml does not run '%s'" % command)
 
-    def test_ci_node_major_meets_the_minimum_stated_in_contributing(self):
-        contributing = read_text(os.path.join(ROOT, "CONTRIBUTING.md"))
-        stated = re.search(r"Node\s+(\d+)\+", contributing)
-        self.assertIsNotNone(stated, "CONTRIBUTING.md does not state a Node minimum like 'Node 20+'")
-        minimum = int(stated.group(1))
-        node_version = re.search(r"node-version:\s*['\"]?(\d+)", read_workflow("ci.yml"))
-        self.assertIsNotNone(node_version, "ci.yml has no node-version line")
-        self.assertGreaterEqual(
-            int(node_version.group(1)), minimum,
-            "ci.yml runs Node %s but CONTRIBUTING.md asks for Node %d+"
-            % (node_version.group(1), minimum),
+    def test_ci_jobs_each_have_a_timeout_and_no_job_level_permissions(self):
+        # The sharded CI keeps the read-only default: contents: read at the top,
+        # no job widens it, and no job can hang for the six-hour default.
+        text = read_workflow("ci.yml")
+        self.assertEqual(top_level_permissions(text), ["contents: read"])
+        jobs = text.split("\njobs:\n", 1)[1]
+        names = re.findall(r"(?m)^  ([A-Za-z0-9_-]+):\s*$", jobs)
+        self.assertEqual(names, ["python", "js", "check", "lib-coverage", "page-script-coverage"])
+        self.assertEqual(len(re.findall(r"(?m)^    timeout-minutes: \d+$", jobs)), len(names))
+        self.assertNotRegex(jobs, r"(?m)^\s+permissions:")
+        self.assertNotIn("pull_request_target", text)
+
+    def test_ci_node_suite_runs_only_as_four_shards_in_the_required_job(self):
+        text = read_workflow("ci.yml")
+        self.assertEqual(
+            text.count("node --test --test-shard=${{ matrix.shard }}/4 tests/*.test.mjs"), 1
         )
+        self.assertEqual(len(re.findall(r"shard: \[1, 2, 3, 4\]", text)), 1)
+        self.assertRegex(text, r"(?m)^    needs: \[python, js\]$")
+        self.assertRegex(text, r"(?m)^    if: always\(\)$")
+
+    def test_ci_node_version_comes_from_nvmrc_and_meets_the_minimum_in_contributing(self):
+        contributing = read_text(os.path.join(ROOT, "CONTRIBUTING.md"))
+        stated = re.search(r"Node\s+(\d+)\.(\d+)\s+or newer", contributing)
+        self.assertIsNotNone(
+            stated, "CONTRIBUTING.md does not state a Node minimum like 'Node 22.22 or newer'"
+        )
+        minimum = (int(stated.group(1)), int(stated.group(2)))
+        nvmrc = read_text(os.path.join(ROOT, ".nvmrc")).strip()
+        parsed = re.fullmatch(r"v?(\d+)\.(\d+)\.\d+", nvmrc)  # 2026-10-13: full major.minor.patch so CI and local runs match
+        self.assertIsNotNone(parsed, ".nvmrc must name major.minor.patch, got %r" % nvmrc)
+        pinned = (int(parsed.group(1)), int(parsed.group(2)))
+        self.assertGreaterEqual(
+            pinned, minimum,
+            ".nvmrc is Node %s but CONTRIBUTING.md asks for Node %d.%d or newer"
+            % (nvmrc, minimum[0], minimum[1]),
+        )
+        for name in workflow_files():
+            text = read_workflow(name)
+            if "actions/setup-node" not in text:
+                continue
+            with self.subTest(workflow=name):
+                self.assertNotRegex(
+                    text, r"node-version:\s", "%s hardcodes node-version; use node-version-file" % name
+                )
+                self.assertEqual(
+                    text.count("actions/setup-node"),
+                    len(re.findall(r"node-version-file:\s*\.nvmrc\s*$", text, re.M)),
+                    "%s has a setup-node step without node-version-file: .nvmrc" % name,
+                )
+        engines = json.loads(read_text(os.path.join(ROOT, "package.json"))).get("engines", {})
+        self.assertEqual(engines.get("node"), ">=%d.%d" % minimum, "package.json engines.node")
+
+    def test_every_workflow_installs_python_tools_from_requirements_dev(self):
+        reqs = read_text(os.path.join(ROOT, "requirements-dev.txt"))
+        pins = [l for l in reqs.splitlines() if l.strip() and not l.startswith("#")]
+        self.assertTrue(pins)
+        for line in pins:
+            self.assertRegex(line, r"^[A-Za-z0-9_.-]+==[0-9][0-9A-Za-z.]*$", "unpinned: %r" % line)
+        self.assertTrue(any(l.startswith("jsonschema==") for l in pins))
+        for name in workflow_files():
+            text = read_workflow(name)
+            with self.subTest(workflow=name):
+                for m in re.finditer(r"pip install(.*)", text):
+                    self.assertEqual(m.group(1).strip(), "-r requirements-dev.txt", name)
+        self.assertIn("pip install -r requirements-dev.txt", read_workflow("ci.yml"))
+
+    def test_dependabot_watches_pip(self):
+        text = read_text(os.path.join(ROOT, ".github", "dependabot.yml"))
+        self.assertRegex(text, r'package-ecosystem:\s*"pip"')
 
 
 if __name__ == "__main__":

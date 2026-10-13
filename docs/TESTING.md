@@ -55,8 +55,20 @@ Every change goes through the same loop: build, test, deploy, check the live sit
 | `tests/r3-a11y-perf-31-print-one-link-addresses.test.mjs` | `style.css` `@media print` has a `#printRoot a[href^="http"]:not(.btn):not(.noprint)::after` rule that prints `" (" attr(href) ")"`, so a Print-one sheet (permit packet, prep sheet, safety card) keeps link addresses; the rule is not on screen. In jsdom, `G.printOnly` keeps an https link with its href, and the rule matches it but not a `.noprint` or `.btn` link | `node --test tests/r3-a11y-perf-31-print-one-link-addresses.test.mjs` |
 | Dash scan | An em dash or en dash anywhere in the text | see `ci.yml` |
 
+### How CI is split
+`.github/workflows/ci.yml` has these jobs on every pull request and push to main:
+- `python` (20 minutes): validate, the Python tests, the rebuild with the generated-files diff, and the dash scan.
+- `js` (20 minutes each): four shards, `shard: [1, 2, 3, 4]`. Each shard runs `node --test` with `--test-shard=${{ matrix.shard }}/4` and then the file list `tests/*.test.mjs`, so together they run every JavaScript test file once. To reproduce one shard, run `node --test --test-shard=2/4` followed by the file list (change the 2). The `--test-shard` flag must come before the file list: after the list, node reads it as a file name and runs everything.
+- `check`: waits for `python` and `js` (`needs: [python, js]`, `if: always()`) and fails unless both succeeded. It is the one status check branch protection requires, so keep its name `check`. Do not add a required check for the shards.
+- `lib-coverage` and `page-script-coverage`: the two coverage floors described above, unchanged.
+  - Known follow-up (accepted, not done): each of these two jobs still re-runs the whole JavaScript suite on its own runner (measured 36.5 and 29 minutes on 2026-10-13), so they are the long poles of a push and most of its runner minutes. The fix is to have the `js` shards write `NODE_V8_COVERAGE` dumps, upload them as artifacts, and replace both jobs with one merge-and-check job that has `needs: [js]`. Until then, keep both jobs as they are.
+
+A test file is the smallest unit a shard can take, so a slow single file slows its shard. The two biggest sweeps are split by page: `tests/r2-tests-2-data-failure-find.test.mjs`, `-pages-a.test.mjs` and `-pages-b.test.mjs` (data failure sweep), and `tests/r2-tests-3-url-roundtrip-find.test.mjs`, `-permit.test.mjs` and `-calendar.test.mjs` (share-link round trip). Add a page to the file for its group; do not merge them back.
+
 ## Scheduled checks
-Weekly link check, monthly "needs a re-check" issue, CodeQL.
+Weekly link check, monthly "needs a re-check" issue, CodeQL, and a daily date check (`.github/workflows/dates.yml`).
+
+The real-data date checks in `tests/test_data_text_agreement.py` and `tests/test_r1_tests_8_allowlist_stale.py` compare against the build date in `data/meta.json` (`checked`), so a push is never failed by a date that passed overnight. Set `DATE_CHECK_TODAY=utc` to make them use today in UTC. The daily workflow does that, runs `python3 tools/flip_dates.py`, and opens or comments on one issue labeled `dates` when a card is due to flip, is held for a person, or a check fails.
 
 ## Checks a person does
 jsdom does not draw anything, so layout and printing need eyes. Before a change to a page is called done, open the live page at a phone width (390 pixels) and a desktop width, look for text that overflows, and try the main action once. The pre-promotion checklist is in `ROADMAP.md`.
@@ -69,6 +81,8 @@ All test files are in `tests/`.
 - Interview tests are pre-woken: `loadPage("interview.html")` fires `focusin` on `#availability`, so `permits.json` loads as it would for a teen using the hours checker. Pass `lazy: true` to test the cold first visit, where `permits.json` must not load. `tests/interview.dom.test.mjs` has one such cold-load assertion, and `tests/r2-a11y-perf-4-interview-lazy-permits.test.mjs` covers the lazy path in detail.
 - Files with `r1-`, `r2-` or `r3-` in the name were added in review rounds. The area comes right after the round prefix, and a number ends the name, optionally followed by a short label such as `-ics-fold`. The `.mjs` areas are `a11y-perf`, `accuracy`, `data-content`, `docs-ops`, `handout`, `oc`, `perf-scale`, `ranking-ux`, `teen-flow` and `tests`. The Python files use underscores, for example `test_r1_data_hygiene_2.py`.
 - Rounds 4 and later follow the same rule (`r4-`, `r5-` and so on, any round number). Three older round 4 files do not follow it yet: `r4-share.test.mjs`, `r4-states-1.test.mjs` and `r4-tiles.test.mjs`. They are listed with reasons in `LEGACY_NAMES` in `tests/test_r2_tests_6_suite_guard.py`, and the guard fails if one of them is renamed to the rule or deleted without removing its entry.
+
+The toolchain is pinned. `.nvmrc` holds the Node version (22.22 or newer; `package.json` `engines` says the same) and every workflow that sets up Node reads it with `node-version-file`. `requirements-dev.txt` pins `jsonschema` and its dependencies to exact versions; install them with `pip install -r requirements-dev.txt` (CI does the same). `tests/test_r3_tests_6_workflow_policy.py` checks all of this, and Dependabot watches the pip file monthly. Every GitHub Action is pinned to a full commit SHA with the version tag in a trailing comment (for example `# v7`), every checkout sets `persist-credentials: false`, `ci.yml` and `codeql.yml` cancel superseded runs for pull requests only, and Dependabot groups the Actions updates into one pull request after a 7 day cooldown; the same test file checks each of these.
 
 To run one file:
 

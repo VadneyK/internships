@@ -47,15 +47,20 @@ test("relative links in the README point to files that exist", () => {
 
 test("the run and test commands in the README are the commands CI runs", () => {
   const commands = [
-    "pip install jsonschema",
+    "pip install -r requirements-dev.txt",
     "npm ci",
-    "node --test tests/*.test.mjs",
     "python3 -m unittest discover -s tests -v",
   ];
   for (const cmd of commands) {
     assert.ok(ci.includes(cmd), `ci.yml does not run "${cmd}"`);
     assert.ok(readme.includes(cmd), `README does not show "${cmd}"`);
   }
+  // CI shards the JavaScript run; each shard runs the same file list the README shows.
+  assert.ok(readme.includes("node --test tests/*.test.mjs"), 'README does not show "node --test tests/*.test.mjs"');
+  assert.ok(
+    ci.includes("node --test --test-shard=${{ matrix.shard }}/4 tests/*.test.mjs"),
+    'ci.yml does not run "node --test --test-shard=${{ matrix.shard }}/4 tests/*.test.mjs"',
+  );
   assert.ok(!readme.includes("python3 -m unittest discover -s tests -v` and `node --test tests/`"), "old test line is back");
 });
 

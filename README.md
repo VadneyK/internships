@@ -64,7 +64,7 @@ Details: [docs/VERIFYING.md](docs/VERIFYING.md) and [docs/MAINTAINING.md](docs/M
 
 ```bash
 git clone https://github.com/VadneyK/internships.git && cd internships
-pip install jsonschema
+pip install -r requirements-dev.txt
 python3 tools/validate.py && python3 tools/build_data.py && python3 tools/build.py
 python3 -m http.server 8000     # open http://localhost:8000
 ```
