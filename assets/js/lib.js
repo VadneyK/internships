@@ -129,7 +129,13 @@
     ["nashville", "Nashville and Tennessee programs", ["tennessee"]],
     ["louisville", "Louisville and Kentucky programs", ["kentucky"]],
     ["st-louis", "St. Louis and Missouri programs", ["missouri"]],
-    ["albuquerque", "Albuquerque and New Mexico programs", ["new-mexico"]]
+    ["albuquerque", "Albuquerque and New Mexico programs", ["new-mexico"]],
+    ["el-paso", "El Paso and Texas programs", ["texas"]],
+    ["omaha", "Omaha and Nebraska programs", ["nebraska"]],
+    ["wichita", "Wichita and Kansas programs", ["kansas"]],
+    ["des-moines", "Des Moines and Iowa programs", ["iowa"]],
+    ["billings", "Billings and Montana programs", ["montana"]],
+    ["boise", "Boise and Idaho programs", ["idaho"]]
   ];
   /* Areas are groups of cities, in the words teens and leaders use. [id, label, city ids] */
   var AREAS = [
@@ -149,13 +155,13 @@
   var PICK_GROUPS = [
     ["California", ["bay-area"], ["davis", "berkeley", "san-francisco", "silicon-valley", "merced", "los-angeles", "irvine", "pomona", "riverside", "san-diego", "santa-barbara"]],
     ["Pacific Northwest", ["pacific-northwest"], ["seattle", "vancouver"]],
-    ["Texas", ["texas"], ["austin"]],
+    ["Texas", ["texas"], ["austin", "el-paso"]],
     ["Midwest", ["midwest"], ["minneapolis", "chicago", "elgin", "urbana-champaign", "madison", "west-lafayette", "bloomington", "columbus", "cincinnati", "ann-arbor", "east-lansing", "detroit"]],
     ["Northeast", ["northeast"], ["new-york-city", "new-brunswick", "philadelphia", "pittsburgh", "boston"]],
     ["South and DC area", ["southeast", "dc-area"], ["atlanta", "raleigh-chapel-hill", "charlottesville", "blacksburg", "college-park", "fairfax", "miami", "nashville", "louisville", "st-louis"]],
     ["Mountain West", [], ["phoenix", "las-vegas", "denver", "salt-lake-city", "albuquerque"]],
     ["Oregon and Hawaii", [], ["portland", "honolulu"]],
-    ["Plains and Mountain", [], []]
+    ["Plains and Mountain", [], ["omaha", "wichita", "des-moines", "billings", "boise"]]
   ];
   /* Whole-state choices for the Where picker, for a teen with no city to pick. [id, label, region id]. A state place covers that state-level region
      (plus online and national programs when few match, the same as a city). Every state is in exactly one PICK_GROUPS group. */
