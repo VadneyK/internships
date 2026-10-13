@@ -664,7 +664,8 @@ dl.facts.plain > div { border: 0; border-top: 2px solid var(--edge); border-radi
 .fpill .tp-row { gap: .4rem; }
 /* ux9-pills: .fpill makes a tile picker round pills */
 .fpill .tp .tile { flex: 0 0 auto; min-width: 3.4rem; min-height: 2.75rem; padding: .3rem .95rem; border-radius: 999px; font-size: .95rem; text-align: center; }
-.fpill #pAge + .tp .tile { font-family: inherit; font-weight: 700; }
+.fpill #pAge + .tp .tile { font-family: inherit; font-weight: 700; flex: 0 0 auto; padding-inline: .95rem; white-space: nowrap; }
+details + #hClose { margin-top: 1.5rem; }
 #age + .tp .tile { min-width: 3.1rem; padding-inline: .5rem; }
 #moreFilters { padding-top: .7rem; border-top: 2px dashed color-mix(in srgb, var(--edge) 35%, transparent); }
 .mf-count { margin: 0 auto 0 -.8rem; }
