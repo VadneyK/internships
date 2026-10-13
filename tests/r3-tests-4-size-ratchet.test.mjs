@@ -37,18 +37,21 @@ const TABLE = {
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-detail.json ceiling 1731000 to 1772700.
   // 2026-10-13: four repointed links after the link check. data/entries-detail.json limit 1772700 to 1772900.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-detail.json limit 1772900 to 1823500.
-  "data/entries-detail.json": { ceiling: 1823500, reason: "data file, 1521373 bytes measured 2026-10-10" },
+  // 2026-10-13: re-read of 177 workshop-city cards (38 fixed). data/entries-detail.json limit 1823500 to 1824500.
+  "data/entries-detail.json": { ceiling: 1824500, reason: "data file, 1521373 bytes measured 2026-10-10" },
   "data/entries-home.json": { ceiling: 899400, reason: "data file, 817599 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-lite.json ceiling 2223100 to 2277600.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-lite.json limit 2277600 to 2341900.
-  "data/entries-lite.json": { ceiling: 2341900, reason: "data file, 1937500 bytes measured 2026-10-10" },
+  // 2026-10-13: re-read of 177 workshop-city cards (38 fixed). data/entries-lite.json limit 2341900 to 2342200.
+  "data/entries-lite.json": { ceiling: 2342200, reason: "data file, 1937500 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json ceiling 697700 to 716100.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json limit 716100 to 736500.
   "data/entries-stats.json": { ceiling: 736500, reason: "data file, 606782 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries.json ceiling 4567200 to 4677300.
   // 2026-10-13: four repointed links after the link check. data/entries.json limit 4677300 to 4677700.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries.json limit 4677700 to 4809900.
-  "data/entries.json": { ceiling: 4809900, reason: "data file, 3996617 bytes measured 2026-10-10" },
+  // 2026-10-13: re-read of 177 workshop-city cards (38 fixed). data/entries.json limit 4809900 to 4811300.
+  "data/entries.json": { ceiling: 4811300, reason: "data file, 3996617 bytes measured 2026-10-10" },
   "data/expiring-dates.json": { ceiling: 1700, reason: "data file, 1530 bytes measured 2026-10-10" },
   "data/gaps.json": { ceiling: 5400, reason: "data file, 4832 bytes measured 2026-10-10" },
   "data/interview.json": { ceiling: 12400, reason: "data file, 11207 bytes measured 2026-10-10" },

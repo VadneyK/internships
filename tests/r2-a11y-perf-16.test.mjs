@@ -23,7 +23,8 @@ const PAGES = {
   // 2026-10-13: +50 city cards for the six new Where cities (2,348 programs). find 2180000 to 2223100 (2,222,946), insights 685000 to 697700 (697,681), younger 435000 to 442000 (441,899). PENDING PERSON APPROVAL, as above.
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. find.html ceiling 2223100 to 2277600.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. find.html limit 2277600 to 2341900.
-  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2341900 },
+  // 2026-10-13: re-read of 177 workshop-city cards (38 fixed). find.html limit 2341900 to 2342200.
+  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2342200 },
   "calendar.html": { allowed: ["calendar.json", "entries-cal.json"], ceiling: 150000 },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. insights.html ceiling 697700 to 716100.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. insights.html limit 716100 to 736500.

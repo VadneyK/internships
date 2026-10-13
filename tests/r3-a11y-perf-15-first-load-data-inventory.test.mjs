@@ -17,7 +17,8 @@ export const TABLE = {
   // 2026-10-13: +50 city cards (2,348 programs): lite 2,222,946 bytes, ceiling 2180000 to 2223100; stats 697,681 bytes, ceiling 685000 to 697700.
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. find.html ceiling 2223100 to 2277600.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. find.html limit 2277600 to 2341900.
-  "find.html": { paths: ["data/entries-lite.json"], ceiling: 2341900, reason: "Find filters every program, so it needs the whole lite file" },
+  // 2026-10-13: re-read of 177 workshop-city cards (38 fixed). find.html limit 2341900 to 2342200.
+  "find.html": { paths: ["data/entries-lite.json"], ceiling: 2342200, reason: "Find filters every program, so it needs the whole lite file" },
   "calendar.html": { paths: ["data/calendar.json", "data/entries-cal.json"], ceiling: 150000, reason: "Calendar draws deadline cards from the small calendar file (only the programs it lists) plus its own small file" },
   "younger.html": { paths: ["data/entries-core.json", "data/younger.json"], ceiling: 1100000, reason: "Ages 12 to 14 reads the core file and its own small file; headroom up to the card file size" },
   // Raised from 130000 to 145000 on 2026-10-12: the employer list grew to 147 entries (about 136 KB, one entry per line, about 30 KB gzipped).

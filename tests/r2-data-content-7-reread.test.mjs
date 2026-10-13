@@ -12,14 +12,14 @@ const DASHES = /[\u2013\u2014]/;
 
 const CARDS = {
   "wakemed-junior-volunteer-program": { opens_iso: "2026-10-15", deadline_iso: null, text: ["24 to 48 hours", "October 15, 2026"] },
-  "nyc-rockefeller-summer-science-research-program": { opens_iso: "2026-10-15", deadline_iso: null, text: ["Oct 15, 2026", "No deadline is posted yet"] },
+  "nyc-rockefeller-summer-science-research-program": { opens_iso: null, deadline_iso: "2027-01-04", status: "open-now", text: ["January 4, 2027", "5:00 p.m."] }, // 2026-10-13: the page now posts the 2027 deadline (Jan 4, 2027, 5 pm ET); re-read.
   "boston-mit-womens-technology-program": { opens_iso: "2026-10-16", deadline_iso: "2026-12-21", text: ["summer 2027", "Dec 21, 2026"] },
 };
 
 for (const [id, want] of Object.entries(CARDS)) {
   test(`${id}: status, dates and deadline_text match the re-read`, () => {
     const card = read(`../data/programs/${id}.json`);
-    assert.equal(card.status, "opens-soon");
+    assert.equal(card.status, want.status || "opens-soon");
     assert.equal(card.opens_iso, want.opens_iso);
     assert.equal(card.deadline_iso, want.deadline_iso);
     for (const phrase of want.text) assert.ok(card.deadline_text.includes(phrase), `${id} missing "${phrase}"`);
@@ -37,9 +37,11 @@ for (const [id, want] of Object.entries(CARDS)) {
   });
 }
 
-test("SSRP: no deadline_iso, because the page posts no 2027 deadline", () => {
+test("SSRP: deadline_iso is 2027-01-04, because the page now posts the 2027 deadline", () => {
   const card = read("../data/programs/nyc-rockefeller-summer-science-research-program.json");
-  assert.equal(card.deadline_iso, null);
+  // 2026-10-13: the page now posts the 2027 deadline (Jan 4, 2027, 5 pm ET); re-read.
+  assert.equal(card.deadline_iso, "2027-01-04");
+  assert.equal(card.deadline_confidence, "confirmed-2026-27");
 });
 
 test("MIT: the year appears only as summer 2027 for the program and Dec 21, 2026 for the deadline", () => {
