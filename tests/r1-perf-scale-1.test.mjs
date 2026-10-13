@@ -22,7 +22,9 @@ const LIMITS = {
     // 2026-10-13: +50 city cards for the six new Where cities (2,348 programs). Raised to the measured sizes rounded up: entries.json raw 4480000 to 4568000, gzip 1015000 to 1034000; lite raw 2180000 to 2223100, gzip 460000 to 464000; core raw 420000 to 424100, gzip 43000 to 43400. STILL PENDING PERSON APPROVAL, as above.
     // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries.json raw 4568000 to 4677300.
     // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries.json gzip 1034000 to 1057900.
-    "data/entries.json": { raw: 4677300, gzip: 1057900 },
+    // 2026-10-13: four repointed links after the link check. data/entries.json raw 4677300 to 4677700.
+    // 2026-10-13: four repointed links after the link check. data/entries.json gzip 1057900 to 1058100.
+    "data/entries.json": { raw: 4677700, gzip: 1058100 },
     // Raised from 2020000 to 2040000 on 2026-10-10 after the fact check: the page re-reads added about 6,000 bytes (0.3 percent) of plainer deadline_text across 266 cards, saying what the page does and does not state. No single card is the cause. Still about 1,145 bytes per program, under the per-program limit.
     // Gzip limit raised from 440000 to 450000 on 2026-10-10: the card fixes this round (pay wording, opens-soon dates) put it at 440053.
     // Raised again on 2026-10-12 for the 178 more cards: entries-lite.json is 2,097,871 bytes (437,135 gzipped), 947 bytes per program. Raw from 2040000 to 2160000. The gzip limit stays 450000. PENDING PERSON APPROVAL, as for entries.json.

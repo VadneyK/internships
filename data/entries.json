@@ -49261,7 +49261,7 @@
   "grades": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-13",
   "apply_url": null,
   "deadline_iso": null,
   "needs_work_permit": null,
@@ -49278,7 +49278,7 @@
    "trades",
    "health"
   ],
-  "what_you_do": "This is a free career training campus. The center page lists pre-apprentice training in bricklaying, building construction and carpentry. It also lists Clinical Medical Assistant. More programs are under See More.",
+  "what_you_do": "This is a free career training campus with 12 training areas. They include pre-apprentice bricklaying, carpentry and electrical, Clinical Medical Assistant, Welding, Landscaping and Office Administration.",
   "who_can_apply": "Generally ages 16 through 24. You must be low income. You must meet citizenship or residency rules. You must meet background rules. The pages do not explain the rules for applicants under 18.",
   "paid_type": "stipend",
   "pay_detail": "Free. The national site says Job Corps covers housing, meals, basic medical care and a living allowance. The living allowance amount is not stated on the program pages.",
@@ -49288,14 +49288,15 @@
   "deadline_text": "Open enrollment: you can start at any time. The process usually takes about two months.",
   "deadline_confidence": "rolling",
   "how_to_apply": "Make a MyJobCorps account on jobcorps.gov. Fill out the application. Upload the documents that show you are eligible. Then connect with an admissions representative. Call 800-733-5627 with questions.",
-  "url": "https://woodstock.jobcorps.gov/training-programs",
+  "url": "https://woodstock.jobcorps.gov/train",
   "sources_fetched": [
    "https://woodstock.jobcorps.gov/",
    "https://woodstock.jobcorps.gov/training-programs",
-   "https://www.jobcorps.gov/admissions-process"
+   "https://www.jobcorps.gov/admissions-process",
+   "https://woodstock.jobcorps.gov/train"
   ],
-  "notes": "Center address: 10900 Old Court Rd, Woodstock, MD 21163. No closure notice showed on the program pages on 2026-10-10. The /training-programs page on this card gives a 404 error. The center home page lists Bricklayer, Building Construction Technology, Carpentry (pre-apprentice) and Clinical Medical Assistant. The application asks for ID, Social Security number and proof of income. Only enter these on the official jobcorps.gov site. Do it with a parent or guardian. A parent should ask an admissions staff member about the rules for 16 and 17 year olds.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "Center address: 10900 Old Court Rd, Woodstock, MD 21163. No closure notice showed on the program pages on 2026-10-10. The old /training-programs page gave a 404 error. The current list is at /train. The application asks for ID, Social Security number and proof of income. Only enter these on the official jobcorps.gov site. Do it with a parent or guardian. A parent should ask an admissions staff member about the rules for 16 and 17 year olds.",
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "id": "medshare-youth-volunteers",
@@ -52729,7 +52730,7 @@
   "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-10-13",
   "min_age": 14,
   "max_age": null,
   "needs_work_permit": false,
@@ -52757,14 +52758,15 @@
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "County level: fill out an application. Then interview with the County Council. State officer: send the application to the Montana 4-H Center. It must be postmarked by June 15.",
-  "url": "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/country-ambassador/index.html",
+  "url": "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/country-ambassador/",
   "sources_fetched": [
    "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/index.html",
    "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/country-ambassador/index.html",
-   "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/state-ambassador-officer/index.html"
+   "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/state-ambassador-officer/index.html",
+   "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/country-ambassador/"
   ],
   "notes": "You must already be in 4-H. The state team page lists five state officer jobs (for example President and Publicity Chair). Contact your county extension office. The state officer page does not state the term length for officers.",
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "grades": null,
@@ -58488,31 +58490,32 @@
   ],
   "what_you_do": "Pick projects like livestock, robots, cooking or public speaking. Join a club in your county with adult volunteers.",
   "min_age": null,
-  "max_age": null,
+  "max_age": 18,
   "grades": null,
-  "who_can_apply": "New Mexico youth in rural, suburban and urban areas. The age range is not filled in on the page. Ask your county office.",
-  "paid_type": "not-stated",
-  "pay_detail": "Not stated on the page.",
+  "who_can_apply": "Any New Mexico youth ages 5 to 18 can join. You do not need a farm or any skills. Cloverbuds are ages 5 to 8. Novice is 9 to 11. Junior is 12 to 13. Senior is 14 to 18.",
+  "paid_type": "unpaid",
+  "pay_detail": "New Mexico 4-H generally has no statewide membership fee. Some counties, clubs or projects have costs for supplies, livestock, workshops or camps. Ask your County Extension Office.",
   "season": "year-round",
   "duration": "Ongoing",
-  "status": "open-now",
+  "status": "rolling",
   "opens_iso": null,
-  "deadline_text": "The 2026-27 enrollment year is open. Deadlines vary by county.",
+  "deadline_text": "The 4-H year runs October 1 to September 30. Enrollment usually opens in October. Deadlines vary by county.",
   "deadline_iso": null,
-  "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Find your county Extension office. Then make a family account and join at 4h.zsuite.org. Each member sends a sign-up form and a liability form each year.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Contact your County Extension Office and talk with your 4-H agent. Then create a family account and enroll at 4h.zsuite.org. Returning members re-enroll each year, update projects and submit the required forms.",
   "needs_work_permit": false,
-  "url": "https://nm4h.nmsu.edu/4h-experience/join.html",
+  "url": "https://nm4h.nmsu.edu/4h/join.html",
   "apply_url": "https://4h.zsuite.org",
   "sources_fetched": [
    "https://nm4h.nmsu.edu/",
-   "https://nm4h.nmsu.edu/4h-experience/join.html"
+   "https://nm4h.nmsu.edu/4h-experience/join.html",
+   "https://nm4h.nmsu.edu/4h/join.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-11",
+  "verified_on": "2026-10-13",
   "priority": 3,
-  "notes": "State office phone on the page is 575-646-3026. Ages and fees were left as placeholders on the page.",
-  "verified_on_label": "Oct 11, 2026"
+  "notes": "State office phone on the page is 575-646-3026. Call it if you are not sure which county you are in.",
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "id": "new-mexico-ffa-association",
@@ -67028,10 +67031,10 @@
    "https://extension.psu.edu/programs/4-h/get-involved/youth-and-parents/join"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-13",
   "priority": 2,
   "notes": "A youth group, not a job. Ask your county educator what clubs and teen leader roles are near you.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 13, 2026"
  },
  {
   "id": "pennsylvania-civil-air-patrol-cadets",

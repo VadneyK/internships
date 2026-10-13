@@ -34,14 +34,16 @@ const TABLE = {
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-core.json ceiling 424100 to 435000.
   "data/entries-core.json": { ceiling: 435000, reason: "data file, 368201 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-detail.json ceiling 1731000 to 1772700.
-  "data/entries-detail.json": { ceiling: 1772700, reason: "data file, 1521373 bytes measured 2026-10-10" },
+  // 2026-10-13: four repointed links after the link check. data/entries-detail.json limit 1772700 to 1772900.
+  "data/entries-detail.json": { ceiling: 1772900, reason: "data file, 1521373 bytes measured 2026-10-10" },
   "data/entries-home.json": { ceiling: 899400, reason: "data file, 817599 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-lite.json ceiling 2223100 to 2277600.
   "data/entries-lite.json": { ceiling: 2277600, reason: "data file, 1937500 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json ceiling 697700 to 716100.
   "data/entries-stats.json": { ceiling: 716100, reason: "data file, 606782 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries.json ceiling 4567200 to 4677300.
-  "data/entries.json": { ceiling: 4677300, reason: "data file, 3996617 bytes measured 2026-10-10" },
+  // 2026-10-13: four repointed links after the link check. data/entries.json limit 4677300 to 4677700.
+  "data/entries.json": { ceiling: 4677700, reason: "data file, 3996617 bytes measured 2026-10-10" },
   "data/expiring-dates.json": { ceiling: 1700, reason: "data file, 1530 bytes measured 2026-10-10" },
   "data/gaps.json": { ceiling: 5400, reason: "data file, 4832 bytes measured 2026-10-10" },
   "data/interview.json": { ceiling: 12400, reason: "data file, 11207 bytes measured 2026-10-10" },
