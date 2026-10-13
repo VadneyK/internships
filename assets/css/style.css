@@ -286,6 +286,7 @@ main details[open] > summary::after { content: "\2212";
 @media (forced-colors: active) {
   .chip[aria-pressed="true"] { forced-color-adjust: none; background: Highlight; color: HighlightText; }
   .tile[aria-pressed="true"] { forced-color-adjust: none; background: Highlight; color: HighlightText; }
+  .combo-opt[aria-selected="true"] { forced-color-adjust: none; background: Highlight; color: HighlightText; }
   .nav a[aria-current="page"] { forced-color-adjust: none; background: Highlight; color: HighlightText; }
   .star[aria-pressed="true"] { forced-color-adjust: none; background: Highlight; color: HighlightText; }
   :focus-visible { outline: 3px solid Highlight; outline-offset: 3px; }
@@ -593,3 +594,24 @@ dl.facts.plain > div { border: 0; border-top: 2px solid var(--edge); border-radi
 
 .handout-weeks { padding-left: 1.3rem; display: grid; gap: .7rem; }
 .small-h { font-size: 1.15rem; margin: .2rem 0 .5rem; }
+
+/* 2026-10-12: home picker flow. Three numbered steps, top aligned so none stretches. The ring on the raised badge survives forced colors. Tokens only. */
+.formgrid-top { align-items: start; }
+.flow { grid-template-columns: 1fr; }
+.flow .field { grid-template-columns: auto 1fr; align-content: start; align-items: center; gap: .6rem .7rem; padding: .9rem 1rem 1rem; border: 3px solid var(--edge); border-radius: var(--radius); background: var(--paper); min-width: 0; }
+.flow .field > * { grid-column: 1 / -1; min-width: 0; }
+.flow .field > .step, .flow .field > label { grid-column: auto; }
+.flow .field > label { font-family: var(--display); font-stretch: 112%; font-weight: 900; font-style: italic; text-transform: uppercase; font-size: clamp(1rem,4.5vw,1.2rem); line-height: 1.1; }
+.flow .field.now { background: var(--surface); box-shadow: var(--shadow-sm); }
+.step { display: grid; place-items: center; width: 2.4rem; height: 2.4rem; border-radius: 50%; background: var(--tag-bg); color: var(--tag-fg); font-family: var(--display); font-weight: 900; font-style: italic; font-size: 1.1rem; }
+.flow .field.now .step { background: var(--orange); color: var(--on-orange); outline: 3px solid var(--edge); outline-offset: 2px; }
+.flow .field.done .step { background: var(--yellow); color: #151515; }
+#pAge + .tp .tile { flex: 0 0 3.4rem; padding-inline: 0; text-align: center; font-family: var(--display); font-weight: 900; font-size: 1.3rem; }
+.combo { display: grid; gap: .5rem; }
+.field .combo input { font-size: 1.15rem; font-weight: 700; min-height: 3.4rem; padding: .7rem 1.1rem; border-width: 3px; border-radius: 999px; background: var(--surface); }
+.combo-list { list-style: none; margin: 0; padding: 0; display: grid; gap: .45rem; }
+.combo-opt { display: flex; justify-content: space-between; align-items: center; gap: .6rem; min-height: 3rem; margin: 0; padding: .5rem 1rem; border: 2px solid var(--edge); border-radius: 12px; background: var(--surface); font-weight: 700; cursor: pointer; }
+.combo-opt .n { font-weight: 500; font-size: .9rem; }
+@media (hover: hover) { .combo-opt:hover { background: var(--paper-2); } }
+.combo-opt[aria-selected="true"] { background: var(--tag-bg); color: var(--tag-fg); }
+.chip.clear { background: var(--tag-bg); color: var(--tag-fg); font-weight: 700; padding-inline: 1rem; }

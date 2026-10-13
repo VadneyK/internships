@@ -82,7 +82,7 @@ test('legend keys k1, k2 and k3 map to three distinct treatments', () => {
 test('forced-colors block does not contain rules outside the media query', () => {
   // The block must be self-contained: nothing after its closing brace belongs to it,
   // and every selector inside it is one we expect to override.
-  const allowed = ['.chip[aria-pressed="true"]', '.tile[aria-pressed="true"]', '.nav a[aria-current="page"]', '.star[aria-pressed="true"]', ':focus-visible', '.k1', '.k2', '.k3', '.bar.h', '.bar.a', '.meter > i', '.meter.over > i', '.btn:disabled, .btn[disabled]'];
+  const allowed = ['.chip[aria-pressed="true"]', '.tile[aria-pressed="true"]', '.combo-opt[aria-selected="true"]', '.nav a[aria-current="page"]', '.star[aria-pressed="true"]', ':focus-visible', '.k1', '.k2', '.k3', '.bar.h', '.bar.a', '.meter > i', '.meter.over > i', '.btn:disabled, .btn[disabled]'];
   const selectors = [...block.matchAll(/([^{}]+)\{/g)].map((m) => m[1].trim());
   for (const s of selectors) {
     assert.ok(allowed.includes(s), `unexpected selector inside forced-colors block: ${s}`);

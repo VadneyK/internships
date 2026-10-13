@@ -359,7 +359,7 @@ test("home: closing-soon list renders dated rows with day counts", async () => {
     assert.ok(day, "row has no date cell");
     const when = day.querySelector("small");
     assert.match(day.firstChild.textContent, /^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2}$/);
-    assert.match(when.textContent, /^(today|\d+ days)$/);
+    assert.match(when.textContent, /^(today|1 day|\d+ days)$/); // 2026-10-12: one day reads "1 day"
   }
 });
 

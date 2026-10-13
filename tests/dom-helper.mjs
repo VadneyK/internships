@@ -84,8 +84,8 @@ export async function loadPage(file, { search = "", storage = {}, rawStorage = {
   // Wait (up to 3 s) until the fetches the page started on load have finished, then a short beat for the page to use them
   for (let i = 0; i < 60 && inflight.n > 0; i++) await new Promise((r) => setTimeout(r, 50));
   await new Promise((r) => setTimeout(r, 30));
-  // Some dropdowns get their options from a data file: wait (up to 2 s) until none that should have choices is still empty
-  for (let i = 0; i < 40 && [...dom.window.document.querySelectorAll("select[data-tiles]")].some((x) => x.options.length < 2); i++) await new Promise((r) => setTimeout(r, 50));
+  // Some dropdowns get their options from a data file (2026-10-12: home picker flow adds the home Where select, marked data-places): wait (up to 2 s) until none that should have choices is still empty
+  for (let i = 0; i < 40 && [...dom.window.document.querySelectorAll("select[data-tiles], select[data-places]")].some((x) => x.options.length < 2); i++) await new Promise((r) => setTimeout(r, 50));
   // On a slow machine the data may still be loading: wait (up to 5 s) until the Where list of a page that has one is filled
   for (let i = 0; i < 100 && dom.window.document.getElementById("place") && dom.window.document.getElementById("place").options.length < 2; i++) await new Promise((r) => setTimeout(r, 50));
   return { dom, window: dom.window, document: dom.window.document, errors };

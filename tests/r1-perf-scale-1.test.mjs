@@ -62,7 +62,8 @@ const LIMITS = {
   // Raised from 40600 to 41000 on 2026-10-12 for tickets r1-a11y-perf-1, r1-a11y-perf-2 and r1-a11y-perf-3: the current page rule in forced colors, the silent plus and minus marks, and the QR image look moved out of inline styles. The sheet is 40867 bytes.
   // Raised from 41000 to 42000 on 2026-10-12 for tickets r2-a11y-perf-2, r2-a11y-perf-6 and r2-teen-flow-4: hover styles only where a device can hover, print rules for buttons and controls, and the closed legend box. The sheet is 41831 bytes.
   // Raised from 42000 to 42400 on 2026-10-12 for tickets r3-teen-flow-5, r3-a11y-perf-2 and r3-a11y-perf-6: the footer group headings, link addresses on the print-one sheets, and the real screen height rule. The sheet is 42273 bytes.
-  stylesheet: 42400,
+  // 2026-10-12: home picker flow. Raised from 42400 to 44700 for the numbered steps, the place search box, its list and the chip. The sheet is 44619 bytes.
+  stylesheet: 44700,
 };
 
 const LITE = "data/entries-lite.json";
