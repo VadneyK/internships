@@ -29,7 +29,11 @@ test("r8-ready-foster: closed details with the exact summary", async () => {
 
 test("r8-ready-foster: every link is https, listed, and opens in a new tab", async () => {
   const { document } = await loadPage("ready.html");
-  const links = [...document.getElementById("foster").querySelectorAll("a")];
+  // 2026-10-13: the California ILP email is a mailto link (review fix); every other link is a listed https page.
+  const all = [...document.getElementById("foster").querySelectorAll("a")];
+  const mail = all.filter((a) => a.getAttribute("href").startsWith("mailto:"));
+  assert.deepEqual(mail.map((a) => a.getAttribute("href")), ["mailto:TAYPolicy@dss.ca.gov"]);
+  const links = all.filter((a) => !a.getAttribute("href").startsWith("mailto:"));
   assert.equal(links.length, ALLOWED.length);
   for (const a of links) {
     const h = a.getAttribute("href");
