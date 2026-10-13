@@ -1,5 +1,5 @@
 // Ticket r8-ready-foster: Get ready has a closed block for teens in foster care or on their own.
-// Run with: node --test tests/r8-ready-foster.test.mjs
+// Run with: node --test tests/r8-teen-flow-9-ready-foster.test.mjs
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
