@@ -14,7 +14,9 @@ test("younger: loads clean, shows the four state grid with sources and calls, sa
   assert.match(document.getElementById("sitesT").textContent, /Care\.com/);
   assert.match(document.getElementById("conflicts").textContent, /Georgia/);
   assert.ok(Number(document.getElementById("n13").textContent) > 20, "count of programs that take 13 year olds");
-  for (const a of document.querySelectorAll("#gridT a, #train a, #groups a, #sitesT a")) assert.match(a.href, /^https:\/\//);
+  // Phone numbers in the grid are tap-to-call links (2026-10-14, persona round 9); every other link is https.
+  for (const a of document.querySelectorAll("#gridT a, #train a, #groups a, #sitesT a")) assert.match(a.href, /^(https:\/\/|tel:\+1\d{10}$)/);
+  assert.ok(document.querySelector('#gridT a[href="tel:+18335264636"]'), "the California Labor Commissioner number can be tapped");
   assert.doesNotMatch(document.body.textContent, /undefined|NaN/);
 });
 
