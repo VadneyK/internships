@@ -5,6 +5,12 @@ on:
     - cron: "17 14 * * 1" # Mondays, 14:17 UTC: the program links
     - cron: "17 14 * * 4" # Thursdays, 14:17 UTC: the sources and aux pass (its own job)
   workflow_dispatch:
+    inputs:
+      pass:
+        description: "Which pass to run by hand: links (program links) or sources (sources and aux links)"
+        type: choice
+        options: [links, sources]
+        default: links
 
 permissions:
   contents: read
@@ -16,7 +22,7 @@ jobs:
   links:
     runs-on: ubuntu-latest
     timeout-minutes: 60
-    if: github.event.schedule != '17 14 * * 4'
+    if: github.event.schedule == '17 14 * * 1' || (github.event_name == 'workflow_dispatch' && inputs.pass == 'links')
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
@@ -60,7 +66,7 @@ jobs:
   sources:
     runs-on: ubuntu-latest
     timeout-minutes: 210
-    if: github.event.schedule == '17 14 * * 4'
+    if: github.event.schedule == '17 14 * * 4' || (github.event_name == 'workflow_dispatch' && inputs.pass == 'sources')
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:

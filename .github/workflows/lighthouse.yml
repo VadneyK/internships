@@ -21,6 +21,8 @@ jobs:
           persist-credentials: false
       - name: Run Lighthouse on the live site
         id: lhci
+        # A failed assertion fails this step; the next steps decide whether it was a score regression or an infrastructure failure.
+        continue-on-error: true
         uses: treosh/lighthouse-ci-action@3e7e23fb74242897f95c0ba9cabad3d0227b9b18 # v12
         with:
           configPath: ./lighthouserc.json
@@ -34,11 +36,18 @@ jobs:
             https://vadneyk.github.io/internships/younger.html
             https://vadneyk.github.io/internships/jobs.html
       - name: Open or update the perf issue
-        if: failure()
+        if: steps.lhci.outcome == 'failure' && steps.lhci.outputs.assertionResults != '' && steps.lhci.outputs.assertionResults != '[]'
         env:
           GH_TOKEN: ${{ github.token }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          ASSERTION_RESULTS: ${{ steps.lhci.outputs.assertionResults }}
         run: |
+          # Only error-level assertions are a regression; warnings (performance) never open an issue.
+          errors=$(printf '%s' "$ASSERTION_RESULTS" | jq '[.[] | select(.level == "error")] | length')
+          if [ "$errors" = "0" ]; then
+            echo "Only warnings; no issue."
+            exit 0
+          fi
           printf 'The weekly Lighthouse check failed on the live site (mobile, 3 runs per page). Accessibility must stay at 0.95 or higher, best practices and SEO at 0.9 or higher. Performance is a warning for now (0.8). The assertion results are in the run log and the uploaded reports are on the run: %s\n' "$RUN_URL" > issue-body.md
           gh label create perf --description "Lighthouse score regression" --color fbca04 2>/dev/null || true
           existing=$(gh issue list --label perf --state open --json number --jq '.[0].number // empty')
@@ -47,3 +56,8 @@ jobs:
           else
             gh issue create --title "Lighthouse scores dropped ($(date -u +%Y-%m-%d))" --label perf --body-file issue-body.md
           fi
+      - name: Fail the job if Lighthouse itself failed
+        if: steps.lhci.outcome == 'failure'
+        run: |
+          echo "::error::Lighthouse failed. If assertions failed, a perf issue was opened; otherwise this is an infrastructure failure, see the log above."
+          exit 1

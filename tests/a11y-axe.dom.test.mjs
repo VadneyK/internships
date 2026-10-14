@@ -6,7 +6,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import { createRequire } from "node:module";
-import { loadPage } from "./dom-helper.mjs";
+import { loadPage, waitFor } from "./dom-helper.mjs";
 
 const require = createRequire(import.meta.url);
 const axeSource = fs.readFileSync(require.resolve("axe-core/axe.min.js"), "utf8");
@@ -46,7 +46,7 @@ for (const file of PAGES) {
     const menu = document.querySelector("button.menu-btn");
     if (menu) {
       menu.click();
-      await new Promise((r) => setTimeout(r, 30));
+      await waitFor(() => menu.getAttribute("aria-expanded") === "true");
       for (const v of await scan(window)) if (!found.has(v.id)) found.set(v.id, v);
     }
     const unknown = [];

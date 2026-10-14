@@ -73,12 +73,15 @@ class WorkflowTests(unittest.TestCase):
         links = "\n".join(job_block("links.yml", "links"))
         sources = "\n".join(job_block("links.yml", "sources"))
         self.assertIn("timeout-minutes: 60", links)
-        self.assertIn("if: github.event.schedule != '17 14 * * 4'", links)
+        self.assertIn(
+            "    if: github.event.schedule == '17 14 * * 1' || (github.event_name == 'workflow_dispatch' && inputs.pass == 'links')", links)
+        self.assertNotIn("17 14 * * 4'", links.replace("github.event.schedule == '17 14 * * 4'", ""))
         self.assertIn("--out link-report.md --workers 16 --budget-minutes 40", links)
         self.assertNotIn("--aux", links)
         self.assertNotIn("sources_fetched", links)
         self.assertIn("timeout-minutes: 210", sources)
-        self.assertIn("if: github.event.schedule == '17 14 * * 4'", sources)
+        self.assertIn(
+            "    if: github.event.schedule == '17 14 * * 4' || (github.event_name == 'workflow_dispatch' && inputs.pass == 'sources')", sources)
         self.assertIn(
             "--fields url,apply_url,sources_fetched --aux --out link-report.md --workers 16 --budget-minutes 170",
             sources,
@@ -98,13 +101,46 @@ class WorkflowTests(unittest.TestCase):
                 self.assertIn("--label link-check", text)
                 self.assertIn("gh issue comment", text)
 
+    def test_links_manual_run_picks_a_pass_and_both_issue_steps_are_identical(self):
+        text = read_workflow("links.yml")
+        self.assertRegex(text, r"(?s)workflow_dispatch:\n    inputs:\n      pass:\n.*?type: choice\n        options: \[links, sources\]\n        default: links\n")
+        steps = {}
+        for job in ("links", "sources"):
+            block = "\n".join(job_block("links.yml", job))
+            start = block.index("      - name: Open or update the link-check issue")
+            steps[job] = block[start:].rstrip()
+        self.assertEqual(steps["links"], steps["sources"], "the two issue steps must stay identical")
+        self.assertIn("gh issue create", steps["links"])
+
+    def test_lighthouse_opens_an_issue_only_for_failed_assertions(self):
+        text = read_workflow("lighthouse.yml")
+        self.assertIn("id: lhci", text)
+        self.assertIn("continue-on-error: true", text)
+        self.assertIn(
+            "if: steps.lhci.outcome == 'failure' && steps.lhci.outputs.assertionResults != '' && steps.lhci.outputs.assertionResults != '[]'", text)
+        self.assertIn("ASSERTION_RESULTS: ${{ steps.lhci.outputs.assertionResults }}", text)
+        self.assertIn('select(.level == "error")', text)
+        self.assertNotIn("if: failure()", text)
+        # an infrastructure failure still turns the job red, after the issue step
+        self.assertLess(text.find("gh issue create"), text.find("Fail the job if Lighthouse itself failed"))
+        self.assertIn("if: steps.lhci.outcome == 'failure'\n        run: |\n          echo \"::error::Lighthouse failed", text)
+
+    def test_coverage_job_also_holds_the_lib_branch_floor(self):
+        floor = read_workflow_test_floor()
+        self.assertIn("export const LIB_BRANCH_FLOOR = 97;", floor)
+        self.assertIn("is under the floor ${LIB_BRANCH_FLOOR}", floor)
+        ci = read_workflow("ci.yml")
+        self.assertIn("COVERAGE_DIR=coverage-v8", ci)
+        self.assertIn("node --test tests/r3-tests-5-page-script-coverage-floor.test.mjs", ci)
+
     def test_dates_issue_only_comments_when_the_report_changed(self):
         text = read_workflow("dates.yml")
         for token in (
             "sha256sum",
             "report_sha=",
             "<!-- report-sha256: $report_sha -->",
-            "gh issue view",
+            'repos/$GITHUB_REPOSITORY/issues/$existing/comments" --paginate',
+            "select(.user.login == \"github-actions[bot]\")",
             "report-sha256: [0-9a-f]*",
             'if [ "$last_sha" = "$report_sha" ]',
             "not commenting",
@@ -113,12 +149,19 @@ class WorkflowTests(unittest.TestCase):
             with self.subTest(token=token):
                 self.assertIn(token, text)
         self.assertLess(text.find('"$last_sha" = "$report_sha"'), text.find("gh issue comment"))
-        self.assertNotIn("head -c", text, "dates.yml trims by lines, not bytes")
+        self.assertNotIn("gh issue view", text, "the dedupe reads every bot comment through the API, not the last comment of anyone")
         trim = text.find("head -n 400 issue-body.md > issue-body-trimmed.md")
         self.assertNotEqual(trim, -1)
         self.assertLess(trim, text.find("gh issue create"))
         self.assertIn("% 2 )) -eq 1", text)
         self.assertIn("echo '```' >> issue-body-trimmed.md", text)
+        # byte guard: after the line trim, before the fence balance, under the 60,000 character limit
+        guard = text.find('[ "$(wc -c < issue-body-trimmed.md)" -gt 59000 ]')
+        self.assertNotEqual(guard, -1)
+        self.assertIn("head -c 59000 issue-body-trimmed.md", text)
+        self.assertLess(trim, guard)
+        self.assertLess(guard, text.find("% 2 )) -eq 1"))
+        self.assertLess(text.find("% 2 )) -eq 1"), text.find("report-sha256: $report_sha -->"))
 
     def test_script_flags_in_workflows_exist_in_help(self):
         # (script, flag) -> workflow files whose command lines use it
@@ -205,7 +248,7 @@ class WorkflowTests(unittest.TestCase):
     def test_ci_js_job_is_four_shards_of_the_whole_suite(self):
         block = job_block("ci.yml", "js")
         text = "\n".join(block)
-        self.assertIn("    timeout-minutes: 20", block)
+        self.assertIn("    timeout-minutes: 30", block)
         self.assertIn("        shard: [1, 2, 3, 4]", block)
         self.assertEqual(text.count("matrix:"), 1)
         self.assertEqual(text.count("node --test"), 1, "the js job runs node --test exactly once")

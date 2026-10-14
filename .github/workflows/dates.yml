@@ -65,15 +65,29 @@ jobs:
             report_sha=$({ cat due-lines.txt; echo "flip=$flip_status tests=$tests_status"; tail -n 60 date-tests.txt | grep -v -E '^Ran [0-9]+ test|[0-9]+\.[0-9]+s'; } | sha256sum | cut -c1-16)
             # Trim by whole lines, then close a code fence the cut left open.
             head -n 400 issue-body.md > issue-body-trimmed.md
+            # Byte guard: 400 long lines could still pass the 65,536 character issue limit, so cap at 59,000 bytes.
+            if [ "$(wc -c < issue-body-trimmed.md)" -gt 59000 ]; then
+              head -c 59000 issue-body-trimmed.md > issue-body-capped.md
+              mv issue-body-capped.md issue-body-trimmed.md
+              echo >> issue-body-trimmed.md
+              cut_short=1
+            fi
             if [ $(( $(grep -c '^```' issue-body-trimmed.md) % 2 )) -eq 1 ]; then
               echo '```' >> issue-body-trimmed.md
+            fi
+            if [ -n "$cut_short" ]; then
+              printf '\nThe report was cut short to fit in an issue. The full output is in the run log: %s\n' "$RUN_URL" >> issue-body-trimmed.md
             fi
             echo >> issue-body-trimmed.md
             echo "<!-- report-sha256: $report_sha -->" >> issue-body-trimmed.md
             gh label create dates --description "Program dates that are due or held" --color 0e8a16 || true
             existing=$(gh issue list --label dates --state open --json number --jq '.[0].number // empty')
             if [ -n "$existing" ]; then
-              last_sha=$(gh issue view "$existing" --json body,comments --jq '((.comments | last | .body) // .body)' | grep -o 'report-sha256: [0-9a-f]*' | tail -n 1 | cut -d' ' -f2 || true)
+              # The last marker written by this workflow's bot, from the issue body or any comment; people's comments cannot hide it.
+              last_sha=$({
+                gh api "repos/$GITHUB_REPOSITORY/issues/$existing" --jq 'select(.user.login == "github-actions[bot]") | .body'
+                gh api "repos/$GITHUB_REPOSITORY/issues/$existing/comments" --paginate --jq '.[] | select(.user.login == "github-actions[bot]") | .body'
+              } | grep -o 'report-sha256: [0-9a-f]*' | tail -n 1 | cut -d' ' -f2 || true)
               if [ "$last_sha" = "$report_sha" ]; then
                 echo "The report is the same as the last one on issue #$existing; not commenting."
               else

@@ -18,6 +18,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 // Floor = line percent measured on 2026-10-10, rounded down, minus 2 points.
 // lib.js has its own, stricter floor below (LIB_FLOOR), so it is not in this table.
 export const LIB_FLOOR = 99; // same line floor the old lib-coverage job passed to --test-coverage-lines
+export const LIB_BRANCH_FLOOR = 97; // same branch floor the old lib-coverage job passed to --test-coverage-branches
 
 export const FLOORS = {
   "calendar.js": 98,
@@ -53,6 +54,40 @@ export function coveredChars(source, functions) {
   return ran;
 }
 
+// Branch percent, Node's own method: every block range of a function (all ranges after the first, which is the function itself)
+// is one branch, covered when its count is above 0. V8 leaves out a block whose count equals its parent's, so a branch missing from one
+// dump takes the count of the smallest range around it in that dump. A branch is covered when it ran in any dump.
+// `acc` is a Map of function key to the range lists seen for it, one list per dump; pass the same Map for every dump entry of one script.
+export function addBranches(acc, functions) {
+  for (const fn of functions) {
+    if (!fn.ranges.length) continue;
+    const key = `${fn.functionName || ""}@${fn.ranges[0].startOffset}-${fn.ranges[0].endOffset}`;
+    if (!acc.has(key)) acc.set(key, []);
+    acc.get(key).push(fn.ranges);
+  }
+  return acc;
+}
+
+export function branchPercent(acc) {
+  let total = 0, hit = 0;
+  for (const dumps of acc.values()) {
+    const keys = new Map();
+    for (const ranges of dumps) for (const r of ranges.slice(1)) keys.set(`${r.startOffset}-${r.endOffset}`, r);
+    for (const r of keys.values()) {
+      total++;
+      const covered = dumps.some((ranges) => {
+        const same = ranges.find((x) => x.startOffset === r.startOffset && x.endOffset === r.endOffset);
+        if (same) return same.count > 0;
+        let parent = ranges[0];
+        for (const x of ranges) if (x.startOffset <= r.startOffset && x.endOffset >= r.endOffset && x.endOffset - x.startOffset < parent.endOffset - parent.startOffset) parent = x;
+        return parent.count > 0;
+      });
+      if (covered) hit++;
+    }
+  }
+  return total ? Math.round((hit / total) * 10000) / 100 : 100;
+}
+
 // Line percent: blank lines and comment-only lines do not count; a line ran when its first character of code ran.
 export function linePercent(source, ran) {
   let pos = 0, total = 0, hit = 0, inBlock = false;
@@ -70,8 +105,9 @@ export function linePercent(source, ran) {
 }
 
 // Read every dump in a NODE_V8_COVERAGE folder; a character ran if it ran in any process. Returns { "find.js": 81.25 }.
-export function measureDir(dir, jsDir) {
+export function measureDir(dir, jsDir, branchesOut) {
   const merged = {};
+  const branches = {};
   // Dumps may sit in sub folders: CI downloads each js shard's artifact into its own folder under COVERAGE_DIR.
   const files = fs.readdirSync(dir, { recursive: true }).filter((n) => n.endsWith(".json"));
   for (const f of files) {
@@ -82,6 +118,7 @@ export function measureDir(dir, jsDir) {
       const name = m[1];
       const source = fs.readFileSync(path.join(jsDir, name), "utf8");
       const ran = coveredChars(source, entry.functions);
+      addBranches(branches[name] ||= new Map(), entry.functions);
       const prev = merged[name];
       if (!prev) merged[name] = ran;
       else for (let i = 0; i < ran.length; i++) if (ran[i]) prev[i] = 1;
@@ -91,6 +128,7 @@ export function measureDir(dir, jsDir) {
   for (const [name, ran] of Object.entries(merged)) {
     out[name] = linePercent(fs.readFileSync(path.join(jsDir, name), "utf8"), ran);
   }
+  if (branchesOut) for (const [name, acc] of Object.entries(branches)) branchesOut[name] = branchPercent(acc);
   return out;
 }
 
@@ -162,8 +200,27 @@ test("dumps in sub folders are read and merged", () => {
   }
 });
 
-test("lib.js has a line floor of 99", () => {
+test("lib.js has a line floor of 99 and a branch floor of 97", () => {
   assert.equal(LIB_FLOOR, 99);
+  assert.equal(LIB_BRANCH_FLOOR, 97);
+});
+
+test("branch percent counts block ranges and merges them across dumps", () => {
+  const fns = (c1, c2) => [{ functionName: "f", ranges: [{ startOffset: 0, endOffset: 50, count: 1 }, { startOffset: 5, endOffset: 10, count: c1 }, { startOffset: 20, endOffset: 30, count: c2 }] }];
+  const acc = addBranches(new Map(), fns(1, 0));
+  assert.equal(branchPercent(acc), 50);
+  addBranches(acc, fns(0, 2));
+  assert.equal(branchPercent(acc), 100);
+  assert.equal(branchPercent(new Map()), 100);
+});
+
+test("a branch left out of a dump takes its parent's count there", () => {
+  const dump1 = [{ functionName: "f", ranges: [{ startOffset: 0, endOffset: 50, count: 3 }, { startOffset: 5, endOffset: 10, count: 0 }] }];
+  const dump2 = [{ functionName: "f", ranges: [{ startOffset: 0, endOffset: 50, count: 2 }] }];
+  const acc = addBranches(addBranches(new Map(), dump1), dump2);
+  assert.equal(branchPercent(acc), 100);
+  const never = addBranches(addBranches(new Map(), dump1), [{ functionName: "f", ranges: [{ startOffset: 0, endOffset: 50, count: 0 }] }]);
+  assert.equal(branchPercent(never), 0);
 });
 
 test("ci.yml runs the suite once in the js shards and checks both floors in one coverage job", () => {
@@ -181,7 +238,8 @@ test("measured coverage is at or above each floor (when COVERAGE_DIR is set)", (
     assert.ok(Object.keys(FLOORS).length > 0);
     return;
   }
-  const got = measureDir(path.resolve(ROOT, dir), path.join(ROOT, "assets/js"));
+  const branches = {};
+  const got = measureDir(path.resolve(ROOT, dir), path.join(ROOT, "assets/js"), branches);
   const bad = [];
   const rows = ["file | line % | floor %"];
   for (const f of pageScripts) {
@@ -192,6 +250,9 @@ test("measured coverage is at or above each floor (when COVERAGE_DIR is set)", (
   rows.push(`lib.js | ${"lib.js" in got ? got["lib.js"].toFixed(2) : "none"} | ${LIB_FLOOR}`);
   if (!("lib.js" in got)) bad.push("lib.js: no coverage in the dumps");
   else if (got["lib.js"] < LIB_FLOOR) bad.push(`lib.js: ${got["lib.js"]} is under the floor ${LIB_FLOOR}`);
+  rows.push(`lib.js branches | ${"lib.js" in branches ? branches["lib.js"].toFixed(2) : "none"} | ${LIB_BRANCH_FLOOR}`);
+  if (!("lib.js" in branches)) bad.push("lib.js: no branch data in the dumps");
+  else if (branches["lib.js"] < LIB_BRANCH_FLOOR) bad.push(`lib.js: branch ${branches["lib.js"]} is under the floor ${LIB_BRANCH_FLOOR}`);
   console.log(rows.join("\n"));
   if (process.env.COVERAGE_OUT) fs.writeFileSync(path.resolve(ROOT, process.env.COVERAGE_OUT), rows.join("\n") + "\n");
   assert.deepEqual(bad, []);

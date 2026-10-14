@@ -48,6 +48,7 @@ function breakFetch(fileName, mode, hits) {
       get: () => wrapped,
       set: (real) => {
         wrapped = (u, o) => {
+          hits.calls = (hits.calls || 0) + 1;
           const path = new URL(String(u), w.location.href).pathname;
           if (path === "/data/" + fileName) { hits.push(path); return Promise.resolve(MODES[mode]()); }
           return real(u, o);
@@ -75,9 +76,15 @@ async function runCase(spec, fileName, mode, optional) {
     const q = d.getElementById("q");
     if (q && fileName === "entries-detail.json") type(w, q, "a");
   }
-  // Settled = the page asked for the file and drew its area (a failure message, or the list). A page that never draws one (a KNOWN_GAPS case) waits the old 400 ms at most. A short beat then lets a late rejection land.
+  // Settled = the page asked for the file and drew its area (a failure message, or the list). A page that never draws one (a KNOWN_GAPS case) waits the old 400 ms at most. Then the fetch count must hold still for 200 ms so a late rejection can land.
   await waitFor(() => { const a = d.getElementById(spec.area); return hits.length > 0 && !!a && (optional === true ? d.querySelectorAll("#out article.prog").length > 0 : a.textContent.trim().length > 0); }, { timeout: 400, step: 10 });
-  await tick(60);
+  // Late errors can come from a second fetch: wait until the page's fetch count has held still for 200 ms (and at least 200 ms in all).
+  let seen = -1, since = Date.now();
+  const began = since;
+  while (Date.now() - since < 200 || Date.now() - began < 200) {
+    if ((hits.calls || 0) !== seen) { seen = hits.calls || 0; since = Date.now(); }
+    await tick(20);
+  }
   const label = `${file} ${fileName} ${mode}`;
   const problems = [];
   if (!hits.length) problems.push("the page never requested " + fileName);

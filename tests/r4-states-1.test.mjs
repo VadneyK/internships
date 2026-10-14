@@ -9,7 +9,7 @@ const repo = join(dirname(fileURLToPath(import.meta.url)), "..");
 const lite = JSON.parse(readFileSync(join(repo, "data/states-lite.json"), "utf8"));
 const permits = JSON.parse(readFileSync(join(repo, "data/permits.json"), "utf8"));
 const $ = (p, id) => p.document.getElementById(id);
-/* Wait until a condition holds (up to 5 seconds), so a busy machine running the whole suite does not turn a slow page load into a failure. */
+/* Wait until a condition holds (up to 15 seconds), so a busy machine running the whole suite does not turn a slow page load into a failure. */
 const until = (cond) => waitFor(cond, { timeout: 15000 });
 /* The two letter code for each state name. A row in states-lite.json must use the code for its own name. */
 const STATE_CODE = {

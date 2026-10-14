@@ -48,7 +48,7 @@ jobs:
 
   js:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     # Under coverage, two jsdom-heavy test files ran out of heap with the default limit (CI runs 38277532726 and 38294892812).
     env:
       NODE_OPTIONS: --max-old-space-size=7168
