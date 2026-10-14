@@ -35,6 +35,16 @@
       name: "San Jose Unified",
       steps: ["Work permits are available for students ages 14 to 18. Get hired first, then fill out the request form.", "Get signatures from your employer and a parent or guardian, and sign it yourself.", "Submit the scanned form digitally. Processing can take up to three business days.", "You need regular attendance and a 2.0 GPA. This is from San Jose High's page. Other San Jose Unified schools may differ, so ask your school's office."],
       url: "https://sjhs.sjusd.org/student-resources/work-permits", read: "San Jose High work permit page"
+    },
+    sausd: {
+      name: "Santa Ana Unified",
+      steps: ["Download the work permit application (form B1-1) from the district page. It asks for your Social Security number and signatures from your counselor, a parent and your employer.", "August to May: give the finished form to your school counselor. The permit is ready in 3 to 5 school days.", "June to August: fill out the district's Google Form and upload the finished B1-1 at the end. The permit is emailed to you in 3 to 5 business days. Questions in summer: 714-972-7664.", "Sign the permit and give it to your employer."],
+      url: "https://careereducation.sausd.us/studentresources/work-permits", read: "SAUSD work permits page"
+    },
+    nmusd: {
+      name: "Newport-Mesa Unified",
+      steps: ["Print and fill out the California work permit application (form B1-1). Every field must be filled in and signed.", "Email the form and a copy of your photo ID (student ID, state ID or license, or passport) to your school. The district page lists each school.", "The district sends the permit back by email. Sign the Student line and give it to your employer.", "Questions: Student Services at 714-424-5064 or 714-424-5020. If you live in the district but go to another school, also send proof of enrollment and a progress report or transcript to Student Services."],
+      url: "https://web.nmusd.us/fs/pages/4792", read: "NMUSD work permits page"
     }
   };
 

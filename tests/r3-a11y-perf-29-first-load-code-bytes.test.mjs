@@ -21,7 +21,8 @@ const PICKER_CALLS = /\b(?:G|TIG)\.(?:tilePicker|autoTiles)\b/;
 // Ceilings: bytes on disk for each page's script and stylesheet files, about 5% over today's total (rounded up to 100 bytes).
 // Raised on 2026-10-12 for ticket r3-a11y-perf-35: the body min-height 100dvh line in style.css adds 22 bytes, so every page that loads style.css has its ceiling raised by 22 bytes and nothing else.
 const BUDGET = {
-  // 2026-10-14 persona round 9 UI: find.js gains the Only some can apply tag, handout.js the table plan print button. Pages over set to the measured size rounded up to 100.
+  // 2026-10-14 SoCal round 10: the filter summary min-width and wrapping place pill (style.css, every page) and the Santa Ana and Newport-Mesa district steps (ready.js). Pages over set to the measured size rounded up to 100.
+  // 2026-10-14 persona round 9 UI: find.js gains the Only some can apply tag and the fuller Copy my list text, handout.js the table plan print button. Pages over set to the measured size rounded up to 100.
   // 2026-10-14 event fixes: the paycheck table fits a phone (about 15 bytes in style.css) and the handout gets a one page print button (handout.js). Pages over set to the measured size rounded up to 100.
   // 2026-10-13 workshop leaders round merged with the look and feel round: pages over set to the measured size rounded up to 100.
   // Raised on 2026-10-13 for ticket p9-cities-plains: lib.js grew by about 370 bytes (El Paso, Omaha, Wichita, Des Moines, Billings and Boise Where choices). Each page that loads lib.js and went over has its ceiling set to the measured size rounded up to 100.
@@ -42,23 +43,23 @@ const BUDGET = {
   // Raised from 171500 to 172800 on 2026-10-11 for tickets p8-lite-1 and p8-cities-1: big cities of the 11 new states in lib.js, plain missing-fact answers and wage notes in common.js and permit.js.
   // Raised from 179400 to 185200 on 2026-10-12 for ticket diet-1: find.js grew by about 6 KB (ten literal chunk URLs for the lite files and ten for the detail files, the place to chunk mapping, and the fallback to the whole file). find.html loads 185192 bytes of code.
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you find.html limit 207400 to 209800.
-  "find.html": { ceiling: 210100, reason: "lib.js, common.js and find.js (largest page script)" },
+  "find.html": { ceiling: 210500, reason: "lib.js, common.js and find.js (largest page script)" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you handout.html limit 91700 to 92100.
   "handout.html": { ceiling: 92200, reason: "common.js, handout.js and both stylesheets; no lib.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you index.html limit 155000 to 156100.
   "index.html": { ceiling: 156100, reason: "lib.js, common.js and home.js (2026-10-12: +100 for the 1 day label and phone heading size)" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you insights.html limit 148400 to 149400.
-  "insights.html": { ceiling: 149400, reason: "lib.js, common.js and insights.js" },
+  "insights.html": { ceiling: 149500, reason: "lib.js, common.js and insights.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you interview.html limit 161300 to 162400.
-  "interview.html": { ceiling: 162400, reason: "lib.js, common.js and interview.js" },
+  "interview.html": { ceiling: 162500, reason: "lib.js, common.js and interview.js" },
   // Raised on 2026-10-11 for ticket p7-regions-1: lib.js grew by 1,296 bytes (11 new states in REGIONS, HUBS, STATES, PICK_GROUPS and STATE_OF). jobs.html loads 141025 bytes (the rest of the growth came from other work in common.js and jobs.js), ceiling raised from 138200 to 141100.
   // Raised from 141900 to 143500 on 2026-10-11 for tickets p8-lite-1 and p8-cities-1: big cities of the 11 new states in lib.js, plain missing-fact answers and wage notes in common.js and permit.js.
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you jobs.html limit 165200 to 166300.
-  "jobs.html": { ceiling: 166300, reason: "lib.js, common.js and jobs.js" },
+  "jobs.html": { ceiling: 166400, reason: "lib.js, common.js and jobs.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you languages.html limit 146500 to 147600.
   "languages.html": { ceiling: 147600, reason: "lib.js, common.js and languages.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you leaders.html limit 98700 to 99000.
-  "leaders.html": { ceiling: 99000, reason: "common.js, leaders.js and both stylesheets; no lib.js" },
+  "leaders.html": { ceiling: 99100, reason: "common.js, leaders.js and both stylesheets; no lib.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you parents.html limit 146400 to 147500.
   "parents.html": { ceiling: 147500, reason: "lib.js, common.js and parents.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you paycheck.html limit 155300 to 156400.
@@ -69,12 +70,12 @@ const BUDGET = {
   // Raised on 2026-10-11 for ticket p7-regions-1: lib.js grew by 1,296 bytes (11 new states in REGIONS, HUBS, STATES, PICK_GROUPS and STATE_OF). permit.html loads 144940 bytes (the rest of the growth came from other work in common.js and permit.js), ceiling raised from 142500 to 145000.
   // Raised from 145400 to 148600 on 2026-10-11 for tickets p8-lite-1 and p8-cities-1: big cities of the 11 new states in lib.js, plain missing-fact answers and wage notes in common.js and permit.js.
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you permit.html limit 174700 to 175900.
-  "permit.html": { ceiling: 175900, reason: "lib.js, common.js and permit.js" },
+  "permit.html": { ceiling: 176000, reason: "lib.js, common.js and permit.js" },
   // Raised on 2026-10-12 for tickets p9-regions-1 and p9-playbook-1: lib.js grew (Plains states) and style.css gained two small rules. jobs, playbook, resume, states and younger ceilings each raised by 100.
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you playbook.html limit 160300 to 161400.
   "playbook.html": { ceiling: 161400, reason: "lib.js, common.js and playbook.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you ready.html limit 153800 to 154900.
-  "ready.html": { ceiling: 154900, reason: "lib.js, common.js and ready.js" },
+  "ready.html": { ceiling: 156400, reason: "lib.js, common.js and ready.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you resume.html limit 151600 to 152700.
   "resume.html": { ceiling: 152700, reason: "lib.js, common.js and resume.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you rules.html limit 91300 to 91700.
@@ -84,14 +85,14 @@ const BUDGET = {
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you safety.html limit 151700 to 152800.
   "safety.html": { ceiling: 152800, reason: "lib.js, common.js and safety.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you share.html limit 93000 to 93300.
-  "share.html": { ceiling: 93300, reason: "common.js, share.js and both stylesheets; no lib.js" },
+  "share.html": { ceiling: 93400, reason: "common.js, share.js and both stylesheets; no lib.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you states.html limit 145400 to 146500.
-  "states.html": { ceiling: 146500, reason: "lib.js, common.js and states.js" },
+  "states.html": { ceiling: 146600, reason: "lib.js, common.js and states.js" },
   // Raised on 2026-10-11 for ticket p7-regions-1: lib.js grew by 1,296 bytes (11 new states in REGIONS, HUBS, STATES, PICK_GROUPS and STATE_OF). younger.html loads 131827 bytes, ceiling raised from 130800 to 131900.
   // Raised from 131900 to 133200 on 2026-10-11 for tickets p8-lite-1 and p8-cities-1: big cities of the 11 new states in lib.js, plain missing-fact answers and wage notes in common.js and permit.js.
   // Raised for ticket p9-younger-1: younger.js grew by about 4.3 KB (the permit-only state picker names, the permit card and its helpers). younger.html measured 142116 bytes on 2026-10-12, ceiling set to 142200.
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you younger.html limit 160700 to 161800.
-  "younger.html": { ceiling: 161800, reason: "lib.js, common.js and younger.js" },
+  "younger.html": { ceiling: 161900, reason: "lib.js, common.js and younger.js" },
 };
 
 function builtPages() {

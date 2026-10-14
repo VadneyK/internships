@@ -95,3 +95,17 @@ test("home: the leader card links the table plan and the QR codes", () => {
   const html = fs.readFileSync(path.join(ROOT, "index.html"), "utf8");
   assert.ok(html.includes('href="handout.html#table"') && html.includes('href="share.html">QR codes to print'));
 });
+
+test("Copy my list gives a parent ages, pay, who can apply and dates, in the order saved", async () => {
+  const ids = ["berkeley-youthworks", "kode-with-klossy"];
+  const { window, document } = await loadPage("find.html", { storage: { saved: ids.slice().reverse() } });
+  for (let i = 0; i < 60 && !(document.getElementById("copyList") && document.querySelector(".prog")); i++) await tick(50);
+  const written = [];
+  Object.defineProperty(window.navigator, "clipboard", { configurable: true, value: { writeText: (t) => { written.push(t); return Promise.resolve(); } } });
+  document.getElementById("copyList").click();
+  await tick(50);
+  const t = written[0] || "";
+  assert.ok(t.startsWith("https://vadneyk.github.io/internships/\n"), t.slice(0, 80));
+  assert.match(t, /Berkeley YouthWorks[^\n]*\n  Age not stated\. Paid\. Only some can apply: check who\.\n  Dates: /);
+  assert.ok(t.indexOf("Kode With Klossy") < t.indexOf("Berkeley YouthWorks"), "saved order: the list was saved Kode With Klossy first");
+});
