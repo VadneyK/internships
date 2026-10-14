@@ -1,0 +1,92 @@
+{
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "testRunner": "tap",
+  "plugins": [
+    "@stryker-mutator/tap-runner"
+  ],
+  "mutate": [
+    "assets/js/lib.js"
+  ],
+  "tap": {
+    "testFiles": [
+      "tests/lib.test.mjs",
+      "tests/p7-regions-1.test.mjs",
+      "tests/p8-cities-1.test.mjs",
+      "tests/p9-cities-plains.test.mjs",
+      "tests/p9-regions-1.test.mjs",
+      "tests/permit-who-to-ask.test.mjs",
+      "tests/r1-docs-ops-7.test.mjs",
+      "tests/r1-tests-1-deeplink-values.test.mjs",
+      "tests/r1-tests-1-timezones.test.mjs",
+      "tests/r1-tests-3-aux-data-shape.test.mjs",
+      "tests/r1-tests-2-ics-fold.test.mjs",
+      "tests/r1-tests-2-status-vs-deadline.test.mjs",
+      "tests/r1-tests-3-data-local-links.test.mjs",
+      "tests/r1-tests-3-lib-purity.test.mjs",
+      "tests/r1-tests-3-age-fields.test.mjs",
+      "tests/r1-tests-4-date-ics-edges.test.mjs",
+      "tests/r1-tests-4-lib-small-exports.test.mjs",
+      "tests/r1-tests-3.test.mjs",
+      "tests/r1-tests-4-vocabulary.test.mjs",
+      "tests/r1-tests-5-age-filter-real-cards.test.mjs",
+      "tests/r1-tests-4.test.mjs",
+      "tests/r1-tests-6-boundary-table.test.mjs",
+      "tests/r1-tests-6-date-ordering.test.mjs",
+      "tests/r1-tests-6.test.mjs",
+      "tests/r1-tests-8-script-tag-order.test.mjs",
+      "tests/r1-tests-7-region-lookups.test.mjs",
+      "tests/r1-tests-7-data-crossrefs.test.mjs",
+      "tests/r1-tests-8-text-builders.test.mjs",
+      "tests/r1-tests-8-string-fuzz.test.mjs",
+      "tests/r2-accuracy-3-bc-permit-ages.test.mjs",
+      "tests/r2-accuracy-2.test.mjs",
+      "tests/r2-data-content-4.test.mjs",
+      "tests/r2-tests-1-w2-event-expiry.test.mjs",
+      "tests/r2-tests-2-hourscheck-properties.test.mjs",
+      "tests/r2-tests-3-paycheck-properties.test.mjs",
+      "tests/r2-tests-3-linkcontacts-properties.test.mjs",
+      "tests/r2-tests-3.test.mjs",
+      "tests/r2-tests-4-filter-helpers.test.mjs",
+      "tests/r2-tests-6.test.mjs",
+      "tests/r2-tests-6-prose-counts.test.mjs",
+      "tests/r2-tests-6-js-id-contract.test.mjs",
+      "tests/r2-tests-7-date-edges.test.mjs",
+      "tests/r3-accuracy-7-repeated-figures.test.mjs",
+      "tests/r3-oc-1.test.mjs",
+      "tests/r3-tests-1-search-recall.test.mjs",
+      "tests/r3-tests-2-search-cache.test.mjs",
+      "tests/r3-tests-3-relax-real-data.test.mjs",
+      "tests/r3-tests-6.test.mjs",
+      "tests/r3-tests-7-message-helpers-edges.test.mjs",
+      "tests/r5-teen-flow-10-detroit.test.mjs",
+      "tests/rev-accuracy-1-hours-checker-late-exceptions.test.mjs"
+    ],
+    "nodeArgs": [
+      "--test-reporter=tap",
+      "-r",
+      "{{hookFile}}",
+      "{{testFile}}"
+    ],
+    "forceBail": true
+  },
+  "reporters": [
+    "clear-text",
+    "progress",
+    "html",
+    "json"
+  ],
+  "htmlReporter": {
+    "fileName": "reports/mutation/mutation.html"
+  },
+  "jsonReporter": {
+    "fileName": "reports/mutation/mutation.json"
+  },
+  "tempDirName": ".stryker-tmp",
+  "timeoutMS": 10000,
+  "concurrency": 4,
+  "thresholds": {
+    "high": 90,
+    "low": 80,
+    "break": 76
+  }
+}

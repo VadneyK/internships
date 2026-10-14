@@ -22,6 +22,7 @@ WORKFLOW_DIR = os.path.join(ROOT, ".github", "workflows")
 # links.yml needs it to open the link-check issue, so it is listed here too.
 # dates.yml opens or updates the dates issue.
 # lighthouse.yml opens or updates the perf issue.
+# mutation.yml only reads the repo and uploads a report, so it is not an issue writer.
 ISSUE_WRITERS = ("dates.yml", "freshness.yml", "lighthouse.yml", "links.yml")
 
 CI_COMMANDS = (
@@ -293,6 +294,52 @@ class WorkflowPolicyTests(unittest.TestCase):
             "categories:seo": ["error", {"minScore": 0.9}],
             "categories:performance": ["warn", {"minScore": 0.8}],
         })
+
+    def test_mutation_workflow_shape(self):
+        # Weekly StrykerJS run on lib.js: read-only, manual or weekly, one job with a 120 minute timeout (Stryker writes reports only at the end, so a cancelled job leaves nothing).
+        text = read_workflow("mutation.yml")
+        self.assertEqual(top_level_permissions(text), ["contents: read"])
+        self.assertIn("workflow_dispatch:", text)
+        self.assertRegex(text, r"(?m)^    - cron: ")
+        jobs = text.split("\njobs:\n", 1)[1]
+        self.assertEqual(re.findall(r"(?m)^  ([A-Za-z0-9_-]+):\s*$", jobs), ["mutation"])
+        self.assertEqual(re.findall(r"(?m)^    timeout-minutes: (\d+)$", jobs), ["120"])
+        self.assertEqual(len(re.findall(r"(?m)^\s+permissions:", jobs)), 0)
+        self.assertIn("run: npm ci", text)
+        self.assertIn("run: npx stryker run", text)
+        self.assertRegex(text, r"(?m)^          node-version-file: \.nvmrc$")
+        self.assertRegex(
+            text, r"(?m)uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7\s*$"
+        )
+        self.assertIn("path: reports/mutation", text)
+        self.assertNotIn("contents: write", text)
+        self.assertNotIn("pull_request_target", text)
+
+    def test_stryker_config_mutates_only_lib_js_with_a_break_threshold(self):
+        config = json.loads(read_text(os.path.join(ROOT, "stryker.config.json")))
+        self.assertEqual(config["mutate"], ["assets/js/lib.js"])
+        self.assertEqual(config["testRunner"], "tap")
+        files = config["tap"]["testFiles"]
+        self.assertTrue(files)
+        for f in files:
+            with self.subTest(test_file=f):
+                src = read_text(os.path.join(ROOT, f))
+                self.assertIn("lib.js", src)
+                self.assertNotRegex(src, r"dom-helper|jsdom|loadPage")
+        thresholds = config["thresholds"]
+        self.assertIsInstance(thresholds["break"], int)
+        self.assertEqual(thresholds["break"], 76)
+        self.assertGreaterEqual(thresholds["high"], thresholds["low"])
+        self.assertGreaterEqual(thresholds["low"], thresholds["break"])
+        testing = re.search(r"`thresholds\.break` is (\d+)", read_text(os.path.join(ROOT, "docs", "TESTING.md")))
+        self.assertIsNotNone(testing, "docs/TESTING.md must state thresholds.break")
+        self.assertEqual(int(testing.group(1)), thresholds["break"])
+        maintaining = re.search(r"`thresholds\.break` \((\d+)\)", read_text(os.path.join(ROOT, "docs", "MAINTAINING.md")))
+        self.assertIsNotNone(maintaining, "docs/MAINTAINING.md must state thresholds.break")
+        self.assertEqual(int(maintaining.group(1)), thresholds["break"])
+        gitignore = read_text(os.path.join(ROOT, ".gitignore")).splitlines()
+        self.assertIn("reports/", gitignore)
+        self.assertIn(".stryker-tmp/", gitignore)
 
     def test_dependabot_watches_pip(self):
         text = read_text(os.path.join(ROOT, ".github", "dependabot.yml"))
