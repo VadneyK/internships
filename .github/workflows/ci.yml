@@ -49,6 +49,9 @@ jobs:
   js:
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    # Under coverage, two jsdom-heavy test files ran out of heap with the default limit (CI runs 38277532726 and 38294892812).
+    env:
+      NODE_OPTIONS: --max-old-space-size=7168
     strategy:
       fail-fast: false
       matrix:
@@ -63,7 +66,16 @@ jobs:
       - name: Install JavaScript test tools
         run: npm ci
       - name: JavaScript tests, shard ${{ matrix.shard }} of 4 (logic and page behavior in jsdom)
-        run: node --test --test-shard=${{ matrix.shard }}/4 tests/*.test.mjs
+        run: node --test --test-concurrency=2 --test-shard=${{ matrix.shard }}/4 tests/*.test.mjs
+        env:
+          NODE_V8_COVERAGE: ${{ github.workspace }}/coverage-v8
+      - name: Upload this shard's V8 coverage dumps
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: coverage-v8-shard-${{ matrix.shard }}
+          path: coverage-v8
+          if-no-files-found: error
+          retention-days: 3
 
   # The one required status check. Branch protection names "check", so this job
   # keeps that name and fails unless every job it needs succeeded.
@@ -80,12 +92,11 @@ jobs:
             exit 1
           fi
 
-  lib-coverage:
+  # Both coverage floors come from the V8 dumps the js shards already wrote, so the suite runs once per push.
+  coverage:
+    needs: [js]
     runs-on: ubuntu-latest
-    timeout-minutes: 45
-    # Under coverage, two jsdom-heavy test files ran out of heap with the default limit (CI runs 38277532726 and 38294892812).
-    env:
-      NODE_OPTIONS: --max-old-space-size=7168
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
@@ -93,33 +104,12 @@ jobs:
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
         with:
           node-version-file: .nvmrc
-      - name: Install JavaScript test tools
-        run: npm ci
-      - name: lib.js coverage floor (takes about 8 minutes)
-        run: >-
-          node --test --test-concurrency=2 --experimental-test-coverage
-          --test-coverage-include=assets/js/lib.js
-          --test-coverage-lines=99 --test-coverage-branches=97
-          tests/*.test.mjs
-
-  page-script-coverage:
-    runs-on: ubuntu-latest
-    timeout-minutes: 45
-    # Under coverage, two jsdom-heavy test files ran out of heap with the default limit (CI runs 38277532726 and 38294892812).
-    env:
-      NODE_OPTIONS: --max-old-space-size=7168
-    steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - name: Download every shard's V8 coverage dumps
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8
         with:
-          persist-credentials: false
-      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
-        with:
-          node-version-file: .nvmrc
-      - name: Install JavaScript test tools
-        run: npm ci
-      - name: Run the tests and keep the V8 coverage dumps (takes about 8 minutes)
-        run: NODE_V8_COVERAGE=coverage-v8 node --test --test-concurrency=2 tests/*.test.mjs
-      - name: Page script line coverage floors
+          pattern: coverage-v8-shard-*
+          path: coverage-v8
+      - name: lib.js and page script line coverage floors
         run: >-
           COVERAGE_DIR=coverage-v8 COVERAGE_OUT=coverage-page-scripts.txt
           node --test tests/r3-tests-5-page-script-coverage-floor.test.mjs

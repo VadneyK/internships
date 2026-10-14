@@ -10,7 +10,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { loadPage, type, tick } from "./dom-helper.mjs";
+import { loadPage, type, tick, waitFor } from "./dom-helper.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const read = (rel) => readFileSync(join(ROOT, rel), "utf8");
@@ -70,7 +70,9 @@ async function runCase(spec, fileName, mode, optional) {
     const q = d.getElementById("q");
     if (q && fileName === "entries-detail.json") type(w, q, "a");
   }
-  await tick(400);
+  // Settled = the page asked for the file and drew its area (a failure message, or the list). A page that never draws one (a KNOWN_GAPS case) waits the old 400 ms at most. A short beat then lets a late rejection land.
+  await waitFor(() => { const a = d.getElementById(spec.area); return hits.length > 0 && !!a && (optional === true ? d.querySelectorAll("#out article.prog").length > 0 : a.textContent.trim().length > 0); }, { timeout: 400, step: 10 });
+  await tick(60);
   const label = `${file} ${fileName} ${mode}`;
   const problems = [];
   if (!hits.length) problems.push("the page never requested " + fileName);

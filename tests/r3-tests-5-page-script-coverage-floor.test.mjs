@@ -1,11 +1,12 @@
 // Ticket r3-tests-5: a line coverage floor for every page script in assets/js, not just lib.js.
+// Run: node --test tests/r3-tests-5-page-script-coverage-floor.test.mjs
 // Why not node --experimental-test-coverage: the page scripts run inside jsdom, from http://127.0.0.1 URLs,
 // and Node's own coverage report only lists file: URLs, so it shows lib.js and nothing else (measured 2026-10-10).
 // The raw V8 dumps that NODE_V8_COVERAGE writes do hold every script jsdom ran, so this file reads those.
 // Pure-parse design, nothing is skipped: with no env flag it checks the floor table and the dump reader
 // (on a made-up dump). With COVERAGE_DIR set to a NODE_V8_COVERAGE folder it also compares each page
 // script's measured line percent to its floor, prints the table, and writes it to COVERAGE_OUT if that is set.
-// CI job page-script-coverage does both. See docs/TESTING.md for the run commands.
+// It also holds the lib.js line floor (LIB_FLOOR). CI job coverage does both from the dumps the js shards upload. See docs/TESTING.md for the run commands.
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
@@ -15,7 +16,9 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
 // Floor = line percent measured on 2026-10-10, rounded down, minus 2 points.
-// lib.js has its own stricter job (lib-coverage), so it is not in this table.
+// lib.js has its own, stricter floor below (LIB_FLOOR), so it is not in this table.
+export const LIB_FLOOR = 99; // same line floor the old lib-coverage job passed to --test-coverage-lines
+
 export const FLOORS = {
   "calendar.js": 98,
   "common.js": 97,
@@ -69,7 +72,9 @@ export function linePercent(source, ran) {
 // Read every dump in a NODE_V8_COVERAGE folder; a character ran if it ran in any process. Returns { "find.js": 81.25 }.
 export function measureDir(dir, jsDir) {
   const merged = {};
-  for (const f of fs.readdirSync(dir).filter((n) => n.endsWith(".json"))) {
+  // Dumps may sit in sub folders: CI downloads each js shard's artifact into its own folder under COVERAGE_DIR.
+  const files = fs.readdirSync(dir, { recursive: true }).filter((n) => n.endsWith(".json"));
+  for (const f of files) {
     const dump = JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"));
     for (const entry of dump.result || []) {
       const m = /\/assets\/js\/([\w.-]+\.js)(?:\?|$)/.exec(entry.url);
@@ -139,11 +144,34 @@ test("a script missing from the dumps is named as a failure", () => {
   assert.ok(missing.includes("permit.js"));
 });
 
-test("ci.yml has its own page-script-coverage job", () => {
+test("dumps in sub folders are read and merged", () => {
+  const dir = fs.mkdtempSync(path.join(ROOT, "tests", ".covtmp-"));
+  try {
+    const jsDir = path.join(dir, "js");
+    fs.mkdirSync(jsDir);
+    const src = "a();\nb();\n";
+    fs.writeFileSync(path.join(jsDir, "x.js"), src);
+    const mk = (end) => ({ result: [{ url: "file:///repo/assets/js/x.js", functions: [{ ranges: [{ startOffset: 0, endOffset: src.length, count: 0 }, { startOffset: 0, endOffset: end, count: 1 }] }] }] });
+    for (const [sub, end] of [["shard-1", 4], ["shard-2", src.length]]) {
+      fs.mkdirSync(path.join(dir, "dumps", sub), { recursive: true });
+      fs.writeFileSync(path.join(dir, "dumps", sub, "c.json"), JSON.stringify(mk(end)));
+    }
+    assert.deepEqual(measureDir(path.join(dir, "dumps"), jsDir), { "x.js": 100 });
+  } finally {
+    fs.rmSync(dir, { recursive: true, force: true });
+  }
+});
+
+test("lib.js has a line floor of 99", () => {
+  assert.equal(LIB_FLOOR, 99);
+});
+
+test("ci.yml runs the suite once in the js shards and checks both floors in one coverage job", () => {
   const ci = fs.readFileSync(path.join(ROOT, ".github/workflows/ci.yml"), "utf8");
-  assert.match(ci, /^ {2}page-script-coverage:$/m);
-  assert.ok(ci.includes("NODE_V8_COVERAGE="), "the job must collect V8 dumps");
-  assert.ok(ci.includes("COVERAGE_DIR="), "the job must run this file on the dumps");
+  assert.match(ci, /^ {2}coverage:$/m);
+  assert.ok(!/^ {2}(page-script-coverage|lib-coverage):$/m.test(ci), "the two old coverage jobs are gone");
+  assert.ok(ci.includes("NODE_V8_COVERAGE:"), "the js shards must collect V8 dumps");
+  assert.ok(ci.includes("COVERAGE_DIR="), "the coverage job must run this file on the dumps");
 });
 
 test("measured coverage is at or above each floor (when COVERAGE_DIR is set)", () => {
@@ -161,6 +189,9 @@ test("measured coverage is at or above each floor (when COVERAGE_DIR is set)", (
     if (!(f in got)) bad.push(`${f}: no coverage in the dumps`);
     else if (got[f] < FLOORS[f]) bad.push(`${f}: ${got[f]} is under the floor ${FLOORS[f]}`);
   }
+  rows.push(`lib.js | ${"lib.js" in got ? got["lib.js"].toFixed(2) : "none"} | ${LIB_FLOOR}`);
+  if (!("lib.js" in got)) bad.push("lib.js: no coverage in the dumps");
+  else if (got["lib.js"] < LIB_FLOOR) bad.push(`lib.js: ${got["lib.js"]} is under the floor ${LIB_FLOOR}`);
   console.log(rows.join("\n"));
   if (process.env.COVERAGE_OUT) fs.writeFileSync(path.resolve(ROOT, process.env.COVERAGE_OUT), rows.join("\n") + "\n");
   assert.deepEqual(bad, []);

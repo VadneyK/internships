@@ -3,7 +3,7 @@
 // Run with: node --test tests/r1-a11y-perf-7.test.mjs
 import test from "node:test";
 import assert from "node:assert/strict";
-import { loadPage, type, tick } from "./dom-helper.mjs";
+import { loadPage, type, tick, waitFor } from "./dom-helper.mjs";
 
 // Accessible name for a link or button, as a screen reader would read it (aria-label first, then text).
 function nameOf(el) {
@@ -34,12 +34,11 @@ test("index.html: the summary is empty when nothing is picked, and updates on ea
   assert.equal(status.textContent.trim(), "", "summary should be empty before any choice");
 
   type(window, document.getElementById("pAge"), "16");
-  await tick();
+  // The summary says "Your matches are loading." until the per-program fetches finish; wait (up to 30 s) for the count, then read the See all count.
+  await waitFor(() => /^\d+ programs? match/.test(status.textContent.trim()) && /See all (\d+) matches/.test(document.getElementById("matchMore").textContent), { timeout: 30000 });
   const more = document.getElementById("matchMore").textContent.match(/See all (\d+) matches/);
   assert.ok(more, "expected the See all count");
   const total = Number(more[1]);
-  // 2026-10-13: the summary can still say it is loading on a busy machine; wait up to 15 s for the count.
-  for (let i = 0; i < 300 && !/^\d+ programs? match/.test(status.textContent.trim()); i++) await new Promise((r) => setTimeout(r, 50));
   const first = status.textContent.trim();
   assert.ok(total > 1, "age 16 should have more than one match for this check");
   assert.ok(first.startsWith(total + " programs match."), `summary was "${first}", expected it to start with "${total} programs match."`);
@@ -74,7 +73,7 @@ test("index.html: the summary is empty when nothing is picked, and updates on ea
 test("index.html: every link in the picker has a name with its program, and no two names match", async () => {
   const { window, document } = await loadPage("index.html");
   type(window, document.getElementById("pAge"), "16");
-  for (let i = 0; i < 100 && document.querySelectorAll("#matches article.prog").length < 2; i++) await tick(50); // the data may still be loading on a slow machine
+  await waitFor(() => document.querySelectorAll("#matches article.prog").length >= 2, { timeout: 15000 }); // the data may still be loading on a slow machine
   const cards = [...document.querySelectorAll("#matches article.prog")];
   assert.ok(cards.length >= 2, `expected at least 2 picker cards, got ${cards.length}`);
   const buttons = [...document.querySelectorAll("#matches a.btn")];
@@ -92,7 +91,7 @@ test("index.html: every link in the picker has a name with its program, and no t
 
 test("find.html: the first 10 cards have unique Official page and Details link names that name their program", async () => {
   const { document } = await loadPage("find.html");
-  await tick(200);
+  await waitFor(() => document.querySelectorAll("article.prog").length >= 10, { timeout: 15000 });
   const cards = [...document.querySelectorAll("article.prog")].slice(0, 10);
   assert.ok(cards.length === 10, `expected 10 cards, got ${cards.length}`);
   const links = [];

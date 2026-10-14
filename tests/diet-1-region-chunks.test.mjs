@@ -16,7 +16,7 @@ import path from "node:path";
 import zlib from "node:zlib";
 import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
-import { loadPage } from "./dom-helper.mjs";
+import { loadPage, waitFor } from "./dom-helper.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const require = createRequire(import.meta.url);
@@ -148,11 +148,7 @@ test("the numbers that count every program come out the same from the stats rows
 
 // ---- the page ----
 // 2026-10-12: 20 s, not 6 s. The CI coverage run is slow enough that loading the whole lite file after a change took longer than 6 s (run 38315707421).
-async function poll(cond, ms = 20000, step = 40) {
-  const t0 = Date.now();
-  while (Date.now() - t0 < ms) { if (cond()) return true; await new Promise((r) => setTimeout(r, step)); }
-  return false;
-}
+const poll = (cond, ms = 20000, step = 40) => waitFor(cond, { timeout: ms, step });
 const dataPaths = (seen) => [...new Set(seen.map((r) => new URL(r.url).pathname.replace(/^\//, "")).filter((p) => p.startsWith("data/") && !p.endsWith("gaps.json")))].sort();
 function snapshot(document) {
   const t = (id) => { const el = document.getElementById(id); return el ? el.textContent.replace(/\s+/g, " ").trim() + (el.hidden ? " [hidden]" : "") : null; };

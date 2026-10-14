@@ -61,11 +61,24 @@ jobs:
               tail -n 60 date-tests.txt
               echo '```'
             } > issue-body.md
-            head -c 60000 issue-body.md > issue-body-trimmed.md
+            # Hash only what a person would act on: the due lines and the test tail without timings.
+            report_sha=$({ cat due-lines.txt; echo "flip=$flip_status tests=$tests_status"; tail -n 60 date-tests.txt | grep -v -E '^Ran [0-9]+ test|[0-9]+\.[0-9]+s'; } | sha256sum | cut -c1-16)
+            # Trim by whole lines, then close a code fence the cut left open.
+            head -n 400 issue-body.md > issue-body-trimmed.md
+            if [ $(( $(grep -c '^```' issue-body-trimmed.md) % 2 )) -eq 1 ]; then
+              echo '```' >> issue-body-trimmed.md
+            fi
+            echo >> issue-body-trimmed.md
+            echo "<!-- report-sha256: $report_sha -->" >> issue-body-trimmed.md
             gh label create dates --description "Program dates that are due or held" --color 0e8a16 || true
             existing=$(gh issue list --label dates --state open --json number --jq '.[0].number // empty')
             if [ -n "$existing" ]; then
-              gh issue comment "$existing" --body-file issue-body-trimmed.md
+              last_sha=$(gh issue view "$existing" --json body,comments --jq '((.comments | last | .body) // .body)' | grep -o 'report-sha256: [0-9a-f]*' | tail -n 1 | cut -d' ' -f2 || true)
+              if [ "$last_sha" = "$report_sha" ]; then
+                echo "The report is the same as the last one on issue #$existing; not commenting."
+              else
+                gh issue comment "$existing" --body-file issue-body-trimmed.md
+              fi
             else
               gh issue create --title "Program dates due ($(date -u +%Y-%m-%d))" --label dates --body-file issue-body-trimmed.md
             fi

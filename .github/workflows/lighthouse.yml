@@ -1,0 +1,49 @@
+name: Weekly Lighthouse check
+
+on:
+  schedule:
+    - cron: "43 15 * * 3" # Wednesdays, 15:43 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency: { group: lighthouse, cancel-in-progress: false }
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - name: Run Lighthouse on the live site
+        id: lhci
+        uses: treosh/lighthouse-ci-action@3e7e23fb74242897f95c0ba9cabad3d0227b9b18 # v12
+        with:
+          configPath: ./lighthouserc.json
+          runs: 3
+          uploadArtifacts: true
+          urls: |
+            https://vadneyk.github.io/internships/
+            https://vadneyk.github.io/internships/find.html?at=city:boston
+            https://vadneyk.github.io/internships/calendar.html
+            https://vadneyk.github.io/internships/permit.html
+            https://vadneyk.github.io/internships/younger.html
+            https://vadneyk.github.io/internships/jobs.html
+      - name: Open or update the perf issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          printf 'The weekly Lighthouse check failed on the live site (mobile, 3 runs per page). Accessibility must stay at 0.95 or higher, best practices and SEO at 0.9 or higher. Performance is a warning for now (0.8). The assertion results are in the run log and the uploaded reports are on the run: %s\n' "$RUN_URL" > issue-body.md
+          gh label create perf --description "Lighthouse score regression" --color fbca04 2>/dev/null || true
+          existing=$(gh issue list --label perf --state open --json number --jq '.[0].number // empty')
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body-file issue-body.md
+          else
+            gh issue create --title "Lighthouse scores dropped ($(date -u +%Y-%m-%d))" --label perf --body-file issue-body.md
+          fi

@@ -97,3 +97,14 @@ export function type(window, el, value) {
   el.dispatchEvent(new window.Event("change", { bubbles: true }));
 }
 export const tick = (ms = 60) => new Promise((r) => setTimeout(r, ms));
+// Polls cond() every step ms; true as soon as it is truthy, false after timeout ms. Use it instead of a fixed sleep when the next assertion checks the same condition.
+export async function waitFor(cond, { timeout = 10000, step = 10 } = {}) {
+  const end = Date.now() + timeout;
+  for (;;) {
+    let ok = false;
+    try { ok = !!cond(); } catch (e) { ok = false; }
+    if (ok) return true;
+    if (Date.now() >= end) return false;
+    await new Promise((r) => setTimeout(r, step));
+  }
+}

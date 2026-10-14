@@ -21,12 +21,13 @@ WORKFLOW_DIR = os.path.join(ROOT, ".github", "workflows")
 # Workflows that open or update issues. Only these may grant issues: write.
 # links.yml needs it to open the link-check issue, so it is listed here too.
 # dates.yml opens or updates the dates issue.
-ISSUE_WRITERS = ("dates.yml", "freshness.yml", "links.yml")
+# lighthouse.yml opens or updates the perf issue.
+ISSUE_WRITERS = ("dates.yml", "freshness.yml", "lighthouse.yml", "links.yml")
 
 CI_COMMANDS = (
     "python3 tools/validate.py",
     "python3 -m unittest discover -s tests",
-    "node --test --test-shard=${{ matrix.shard }}/4 tests/*.test.mjs",
+    "node --test --test-concurrency=2 --test-shard=${{ matrix.shard }}/4 tests/*.test.mjs",
     "python3 tools/build_data.py",
     "python3 tools/build.py",
 )
@@ -196,7 +197,7 @@ class WorkflowPolicyTests(unittest.TestCase):
         self.assertEqual(top_level_permissions(text), ["contents: read"])
         jobs = text.split("\njobs:\n", 1)[1]
         names = re.findall(r"(?m)^  ([A-Za-z0-9_-]+):\s*$", jobs)
-        self.assertEqual(names, ["python", "js", "check", "lib-coverage", "page-script-coverage"])
+        self.assertEqual(names, ["python", "js", "check", "coverage"])
         self.assertEqual(len(re.findall(r"(?m)^    timeout-minutes: \d+$", jobs)), len(names))
         self.assertNotRegex(jobs, r"(?m)^\s+permissions:")
         self.assertNotIn("pull_request_target", text)
@@ -204,7 +205,7 @@ class WorkflowPolicyTests(unittest.TestCase):
     def test_ci_node_suite_runs_only_as_four_shards_in_the_required_job(self):
         text = read_workflow("ci.yml")
         self.assertEqual(
-            text.count("node --test --test-shard=${{ matrix.shard }}/4 tests/*.test.mjs"), 1
+            text.count("node --test --test-concurrency=2 --test-shard=${{ matrix.shard }}/4 tests/*.test.mjs"), 1
         )
         self.assertEqual(len(re.findall(r"shard: \[1, 2, 3, 4\]", text)), 1)
         self.assertRegex(text, r"(?m)^    needs: \[python, js\]$")
@@ -255,6 +256,36 @@ class WorkflowPolicyTests(unittest.TestCase):
                 for m in re.finditer(r"pip install(.*)", text):
                     self.assertEqual(m.group(1).strip(), "-r requirements-dev.txt", name)
         self.assertIn("pip install -r requirements-dev.txt", read_workflow("ci.yml"))
+
+    def test_lighthouse_workflow_shape(self):
+        text = read_workflow("lighthouse.yml")
+        self.assertEqual(top_level_permissions(text), ["contents: read", "issues: write"])
+        self.assertIn("workflow_dispatch:", text)
+        self.assertRegex(text, r"(?m)^    - cron: ")
+        self.assertRegex(
+            text,
+            r"(?m)uses: treosh/lighthouse-ci-action@3e7e23fb74242897f95c0ba9cabad3d0227b9b18 # v12\s*$",
+        )
+        self.assertRegex(text, r"(?m)^          runs: 3$")
+        urls = re.findall(r"(?m)^            (https://vadneyk\.github\.io/internships/\S*)$", text)
+        self.assertEqual(urls, [
+            "https://vadneyk.github.io/internships/",
+            "https://vadneyk.github.io/internships/find.html?at=city:boston",
+            "https://vadneyk.github.io/internships/calendar.html",
+            "https://vadneyk.github.io/internships/permit.html",
+            "https://vadneyk.github.io/internships/younger.html",
+            "https://vadneyk.github.io/internships/jobs.html",
+        ])
+        self.assertIn("--label perf", text)
+        config = json.loads(read_text(os.path.join(ROOT, "lighthouserc.json")))["ci"]
+        self.assertEqual(config["collect"]["numberOfRuns"], 3)
+        self.assertEqual(config["collect"]["settings"]["formFactor"], "mobile")
+        self.assertEqual(config["assert"]["assertions"], {
+            "categories:accessibility": ["error", {"minScore": 0.95}],
+            "categories:best-practices": ["error", {"minScore": 0.9}],
+            "categories:seo": ["error", {"minScore": 0.9}],
+            "categories:performance": ["warn", {"minScore": 0.8}],
+        })
 
     def test_dependabot_watches_pip(self):
         text = read_text(os.path.join(ROOT, ".github", "dependabot.yml"))
