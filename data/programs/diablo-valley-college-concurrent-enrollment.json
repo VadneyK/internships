@@ -1,0 +1,38 @@
+{
+  "id": "diablo-valley-college-concurrent-enrollment",
+  "name": "Concurrent Enrollment for High School Students at Diablo Valley College",
+  "org": "Diablo Valley College",
+  "regions": [
+    "east-bay"
+  ],
+  "city": "Pleasant Hill, CA",
+  "type": "pre-college",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take DVC classes on your own while you are still in high school. You earn college credit. The page has a list of high school friendly classes.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "High school students, including home-schooled students. You need a Special Admissions Recommendation Form each term. You, a parent, and your principal or their designee must sign it. Students on an F-1 international visa cannot be in high school and DVC at the same time.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "California high school students pay no tuition. You pay student union fees and the cost of class materials.",
+  "season": "year-round",
+  "duration": "By term",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "You submit the form every term. This page does not list dates.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Apply to DVC. After you are accepted, submit the Special Admissions Recommendation Form in the student portal. List the classes you want. Then check prerequisites and sign up for classes.",
+  "needs_work_permit": false,
+  "url": "https://www.dvc.edu/academics/high-school-programs/concurrent-enrollment",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.dvc.edu/academics/high-school-programs/concurrent-enrollment"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "A signed form with no classes listed is not accepted. You can only sign up for the classes listed on the form. If you use a school district program such as dual enrollment, follow that program instead. Not sure which one to use? Ask your counselor."
+}

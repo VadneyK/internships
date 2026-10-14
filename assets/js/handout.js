@@ -1,7 +1,9 @@
-/* Handout: one button prints just the sheet, the other the whole page. */
+/* Handout: print just the sheet, just the table plan, or the whole page. */
 (function () {
   "use strict";
   function on(id, f) { var b = document.getElementById(id); if (b) b.addEventListener("click", f); }
-  on("handoutPrint", function () { TIG.printOnly(document.getElementById("handoutSheet"), "Handout: find your first job"); });
+  function one(id, t) { return function () { TIG.printOnly(document.getElementById(id), t); }; }
+  on("handoutPrint", one("handoutSheet", "Handout: find your first job"));
+  on("handoutPrintTable", one("table", "Run it as a 30 minute table"));
   on("handoutPrintAll", function () { window.print(); });
 })();

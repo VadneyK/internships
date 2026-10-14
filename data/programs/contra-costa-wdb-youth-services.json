@@ -1,0 +1,40 @@
+{
+  "id": "contra-costa-wdb-youth-services",
+  "name": "Youth Services, Workforce Development Board of Contra Costa County",
+  "org": "Workforce Development Board of Contra Costa County",
+  "regions": [
+    "east-bay"
+  ],
+  "city": "Concord, CA (serves Contra Costa County)",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Get help to finish school, find a job or start a career. Help can include a case manager, job training, work, a mentor and help with school.",
+  "min_age": 16,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Youth and young adults ages 16 to 24 who have barriers to finishing school, finding a job or starting a career. The page asks if you have a disability, are low income, or have been in the justice system. Those answers can get you Priority of Service.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page. The page lists work experience as one kind of help.",
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "The board offers services all year. No deadline is stated.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Register on CalJOBS, the state job site linked on the page. Then contact the board at the email or phone number on its site. Ask about youth services.",
+  "needs_work_permit": null,
+  "url": "https://www.wdbccc.com/youth-services/",
+  "apply_url": "https://www.caljobs.ca.gov/vosnet/loginintro.aspx",
+  "sources_fetched": [
+    "https://www.wdbccc.com/youth-services/",
+    "https://ehsd.org/workforce-development-board/",
+    "https://www.mdusd.org/departments/educational-services/college-career/wioa"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "The board office is at 4071 Port Chicago Highway, Suite 200, Concord. The page lists wdb@ehsd.cccounty.us and (925) 655-3800. The Mt. Diablo school district runs a WIOA youth program for Central County and Bay Point. Its page points East and West County youth to the County Office of Education. See those cards."
+}

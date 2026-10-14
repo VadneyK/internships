@@ -111,7 +111,8 @@
     html += '<h3 id="p-' + G.esc(e.id) + '-h">' + G.esc(e.name) + "</h3>";
     html += '<p class="org">' + G.esc(e.org || "") + (e.city ? " &middot; " + G.esc(e.city) : "") + "</p>";
     html += '<p class="what">' + G.esc(e.what_you_do || "") + "</p>";
-    html += '<div class="row"><span class="tag ghost">' + G.esc(ageText(e)) + "</span></div>";
+    /* "limited": one place's residents, or girls or boys only (build_data.py). The rule itself is under "Who can apply and how". */
+    html += '<div class="row"><span class="tag ghost">' + G.esc(ageText(e)) + "</span>" + (e.limited ? '<span class="tag warn">Only some can apply: see who below</span>' : "") + "</div>";
     html += '<div data-pay>' + payHtml(e) + "</div>";
     html += deadlineLine(e);
     html += "<details><summary>Who can apply and how</summary><dl" + (detailMode() === "ready" ? "" : ' data-detail="' + detailMode() + '"') + ">" + detailBody(e);
