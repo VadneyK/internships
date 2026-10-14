@@ -282,6 +282,8 @@ class DeploySmokeTests(unittest.TestCase):
         self.assertIn("Smoke test the deployed site", block)
         self.assertLess(block.index("uses: actions/deploy-pages@"), block.index("Smoke test the deployed site"))
         self.assertIn("PAGE_URL: ${{ steps.deployment.outputs.page_url }}", block)
-        for f in ("data/entries-lite.json", "data/entries-home.json", "data/meta.json", "robots.txt", "sitemap.xml"):
+        # 2026-10-14: security.txt is in a dot folder, which the upload action drops unless include-hidden-files is on.
+        self.assertIn("include-hidden-files: true", block)
+        for f in ("data/entries-lite.json", "data/entries-home.json", "data/meta.json", "robots.txt", "sitemap.xml", ".well-known/security.txt"):
             self.assertIn(f, block)
         self.assertIn("exit $fail", block)
