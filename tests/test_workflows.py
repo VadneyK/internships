@@ -164,3 +164,15 @@ class WorkflowTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class DeploySmokeTests(unittest.TestCase):
+    # 2026-10-14: after each deploy, every page and the main data files must answer 200 from the live URL.
+    def test_deploy_job_smoke_tests_every_page_after_deploying(self):
+        block = "\n".join(job_block("ci.yml", "deploy"))
+        self.assertIn("Smoke test the deployed site", block)
+        self.assertLess(block.index("uses: actions/deploy-pages@"), block.index("Smoke test the deployed site"))
+        self.assertIn("PAGE_URL: ${{ steps.deployment.outputs.page_url }}", block)
+        for f in ("data/entries-lite.json", "data/entries-home.json", "data/meta.json", "robots.txt", "sitemap.xml"):
+            self.assertIn(f, block)
+        self.assertIn("exit $fail", block)
