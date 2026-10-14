@@ -35,14 +35,36 @@
     }
     var sel = $("pState");
     d.sign.states.forEach(function (s) { var o = document.createElement("option"); o.value = s.id; o.textContent = s.name; sel.appendChild(o); });
-    drawStates("");
-    sel.addEventListener("change", function () {
+    function showPlace(announce) {
       drawStates(sel.value);
+      if (!announce) return;
       var total = d.sign.states.length, st = $("pStatus"), msg;
       if (!sel.value) msg = "Showing all " + total + " places.";
       else msg = "Showing " + sel.options[sel.selectedIndex].textContent + ". 1 of " + total + " places.";
       if (st && st.textContent !== msg) st.textContent = msg;
-    });
+    }
+    /* 2026-10-14 (persona r9): open on the family's state when the guide knows it, the same way younger.html does:
+       ?state=ca in the address first, then the place saved on Programs ("findprefs" through G.store), read only. */
+    function hasOpt(v) { return !!v && !!sel.querySelector('option[value="' + v + '"]'); }
+    var want = "";
+    try { want = new URLSearchParams(location.search).get("state") || ""; } catch (e) { /* no address state */ }
+    if (!hasOpt(want)) {
+      want = "";
+      try { var pr = G.store.get("findprefs", {}); if (pr && typeof pr.place === "string") want = G.lib.stateFromPlace(pr.place); } catch (e) { /* no saved place */ }
+    }
+    sel.value = hasOpt(want) ? want : "";
+    if (sel._tpSync) sel._tpSync();
+    showPlace(false);
+    /* Keep the picked place in the address, so a copied or texted link opens on the same state. */
+    function syncStateUrl(v) {
+      try {
+        var p = new URLSearchParams(location.search);
+        if (v) p.set("state", v); else p.delete("state");
+        var q = p.toString();
+        history.replaceState(null, "", location.pathname + (q ? "?" + q : "") + location.hash);
+      } catch (e) { /* the address bar is optional */ }
+    }
+    sel.addEventListener("change", function () { showPlace(true); syncStateUrl(sel.value); });
     para("signNote", d.sign.note);
     list("signOthers", d.sign.others);
     para("langLead", d.languages.lead);

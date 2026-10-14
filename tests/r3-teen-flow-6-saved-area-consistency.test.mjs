@@ -21,6 +21,9 @@ const PAGES = [
   { file: "interview.html", state: (d) => val(d, "aState"), age: (d) => val(d, "aAge"), ca: "ca", ga: "ga", addr: { q: "?state=ny&age=15", state: "ny", age: "15" } },
   { file: "paycheck.html", state: (d) => val(d, "mState"), age: null, ca: "ca", ga: "ga", addr: { q: "?state=ny", state: "ny" } },
   { file: "younger.html", state: (d) => val(d, "yState"), age: (d) => (d.querySelector("#next-step a.btn").getAttribute("href").match(/age=(\d+)/) || [])[1], ca: "ca", ga: "ga", addr: { q: "?state=ny&age=12", state: "ny", age: "12" }, saved: { age: "14" }, savedAge: "14" },
+  /* 2026-10-14 (persona r9): parents was QUIET ("its picker is for the adult guide"), so a parent reading on the family
+     phone saw all 18 places. A parent's own phone has no saved area, so this only helps. */
+  { file: "parents.html", state: (d) => val(d, "pState"), age: null, ca: "ca", ga: "ga", addr: { q: "?state=ny", state: "ny" } },
   { file: "calendar.html", state: (d) => val(d, "cPlace"), age: (d) => val(d, "cAge"), ca: CA, ga: GA, addr: { q: "?at=" + GA + "&age=15", state: GA, age: "15" } },
   /* ready: no picker, a note shows when the area is outside California. "shown" is the note for each saved place. */
   { file: "ready.html", note: (d) => !d.getElementById("readyOtherState").hidden, ca: false, ga: true, addr: [{ q: "?state=ga", saved: CA, note: true }, { q: "?state=ca", saved: GA, note: false }] },
@@ -33,7 +36,7 @@ const QUIET = {
   "find.html": "Programs is where findprefs is written and read; it has its own tests (find.dom.test, p5-find-1)",
   "index.html": "Home reads it for its own picker, covered by p5-home-1; it has no state or age to carry on",
   "about.html": "no picker", "contribute.html": "no picker", "handout.html": "static page, no picker", "insights.html": "no area picker",
-  "languages.html": "its places are languages, not saved areas", "leaders.html": "no picker", "parents.html": "its place picker is for the adult guide, not the teen's saved area",
+  "languages.html": "its places are languages, not saved areas", "leaders.html": "no picker",
   "playbook.html": "no area picker", "resume.html": "no area picker", "rules.html": "no saved-area picker", "share.html": "no picker", "states.html": "no picker", "404.html": "error page",
 };
 

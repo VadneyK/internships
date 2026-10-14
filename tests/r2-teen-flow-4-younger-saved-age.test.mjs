@@ -14,10 +14,12 @@ async function hrefsFor(storage) {
   return { btn, next };
 }
 
+// 2026-10-14: the saved place (Berkeley) now preselects California, and a picked state carries into Programs as where=
+// with the California hubs (tests/younger-state-links.dom.test.mjs), so the age stays 12 and the hubs follow.
 test("younger: a saved age of 12 sends the next step button and the yNext link to find.html?age=12", async () => {
   const { btn, next } = await hrefsFor({ findprefs: { age: "12", place: "city:berkeley" } });
-  assert.equal(btn, "find.html?age=12");
-  assert.equal(next, "find.html?age=12");
+  assert.equal(btn, "find.html?age=12&where=davis,sv,oak,sf,state,socal,cv");
+  assert.equal(next, "find.html?age=12&where=davis,sv,oak,sf,state,socal,cv");
 });
 
 test("younger: a saved age of 14 sends the next step button and the yNext link to find.html?age=14", async () => {

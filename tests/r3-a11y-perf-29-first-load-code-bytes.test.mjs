@@ -101,7 +101,8 @@ const BUDGET = {
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. parents.html limit 147500 to 148000.
   // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). parents.html limit 148000 to 149600.
   // 2026-10-14: tap-to-call numbers on the parents permit table (PENDING PERSON APPROVAL). parents.html limit 149600 to 149700.
-  "parents.html": { ceiling: 149700, reason: "lib.js, common.js and parents.js" },
+  // 2026-10-14: parents page opens on the family's state (PENDING PERSON APPROVAL). parents.html limit 149700 to 151000.
+  "parents.html": { ceiling: 151000, reason: "lib.js, common.js and parents.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you paycheck.html limit 155300 to 156400.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. paycheck.html limit 156400 to 156900.
   // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). paycheck.html limit 156900 to 157900.
@@ -162,7 +163,8 @@ const BUDGET = {
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. younger.html limit 161900 to 162300.
   // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). younger.html limit 162400 to 163300.
   // 2026-10-14: tap-to-call numbers on the parents permit table (PENDING PERSON APPROVAL). younger.html limit 163300 to 163400.
-  "younger.html": { ceiling: 163400, reason: "lib.js, common.js and younger.js" },
+  // 2026-10-14: younger.html carries the picked state into Programs links (PENDING PERSON APPROVAL). younger.html limit 163400 to 165700.
+  "younger.html": { ceiling: 165700, reason: "lib.js, common.js and younger.js" },
 };
 
 function builtPages() {

@@ -80,3 +80,39 @@ test("phone numbers in Who to call are tap-to-call links that do not wrap", asyn
   const css = fs.readFileSync(new URL("../assets/css/style.css", import.meta.url), "utf8");
   assert.match(css, /a\[href\^="tel:"\] \{ white-space: nowrap; \}/);
 });
+
+// 2026-10-14 (persona r9 item 8): the table opens on the family's state when the guide knows it.
+test("?state=ca opens the permit table on California and keeps it in the address", async () => {
+  const p = await loadPage("parents.html", { search: "?state=ca" });
+  for (let i = 0; i < 80 && !p.document.querySelector("#signT tbody tr"); i++) await tick(25);
+  assert.equal(p.document.getElementById("pState").value, "ca");
+  assert.equal(p.document.querySelectorAll("#signT tbody tr").length, 1);
+  assert.equal(p.document.querySelector("#signT tbody th").textContent, "California");
+});
+
+test("a place saved on Programs picks its state; an unknown or multi-state place keeps all places", async () => {
+  for (const [place, want] of [["city:atlanta", "ga"], ["area:bay-area", "ca"], ["area:midwest", ""], ["nowhere", ""]]) {
+    const p = await loadPage("parents.html", { storage: { findprefs: { place } } });
+    for (let i = 0; i < 80 && !p.document.querySelector("#signT tbody tr"); i++) await tick(25);
+    assert.equal(p.document.getElementById("pState").value, want, place);
+    assert.equal(p.document.querySelectorAll("#signT tbody tr").length > 1, want === "", place);
+  }
+});
+
+test("the address state wins over the saved place, and a bad address state falls back to the saved place", async () => {
+  let p = await loadPage("parents.html", { search: "?state=ny", storage: { findprefs: { place: "city:atlanta" } } });
+  for (let i = 0; i < 80 && !p.document.querySelector("#signT tbody tr"); i++) await tick(25);
+  assert.equal(p.document.getElementById("pState").value, "ny");
+  p = await loadPage("parents.html", { search: "?state=zz", storage: { findprefs: { place: "city:atlanta" } } });
+  for (let i = 0; i < 80 && !p.document.querySelector("#signT tbody tr"); i++) await tick(25);
+  assert.equal(p.document.getElementById("pState").value, "ga");
+});
+
+test("picking a place writes state= into the address; All places removes it", async () => {
+  const { window, document } = await ready();
+  const sel = document.getElementById("pState");
+  sel.value = "il"; sel.dispatchEvent(new window.Event("change", { bubbles: true }));
+  assert.equal(new URLSearchParams(window.location.search).get("state"), "il");
+  sel.value = ""; sel.dispatchEvent(new window.Event("change", { bubbles: true }));
+  assert.equal(new URLSearchParams(window.location.search).get("state"), null);
+});

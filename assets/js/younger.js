@@ -59,16 +59,38 @@
       '<dl class="facts">' + row("Permit", s.permit) + row("Hours", s.hours) + row("Phone", s.phone, true) + "</dl>" +
       '<p class="small">Source: <a href="' + G.esc(s.url) + '" target="_blank" rel="noopener">Official page for ' + G.esc(s.name) + "</a>." + (shortRead ? " Last checked " + G.esc(shortRead) + "." : "") + "</p>";
   }
+  /* The hubs that sit wholly inside one state (ca: the seven California hubs, ga: Atlanta), so a picked state carries into
+     Programs as where= and the counts match what Programs shows. Empty when no hub belongs to that state alone. */
+  function stateHubs(code) {
+    if (!code) return [];
+    return L.HUBS.filter(function (h) { return h[2].every(function (r) { return L.STATE_OF[r] === code; }); }).map(function (h) { return h[0]; });
+  }
+  function pickedState() { var ys = $("yState"); return ys ? ys.value : ""; }
+  function pickedName() { var ys = $("yState"); return ys && ys.value && ys.options[ys.selectedIndex] ? ys.options[ys.selectedIndex].textContent : ""; }
+  function whereParam() { var h = stateHubs(pickedState()); return h.length ? "&where=" + h.join(",") : ""; }
   /* The page draws from younger.json alone. The big core file only feeds the two program counts, so it never blocks the page. */
+  var countEntries = null, l13 = null, l12 = null;
+  function drawCounts() {
+    if (!countEntries || !l13 || !l12) return;
+    var hubs = stateHubs(pickedState()), where = hubs.length ? " in " + G.esc(pickedName()) : "";
+    function n(age) {
+      return countEntries.filter(function (e) { return L.matches(e, { age: age, hubs: hubs }, Date.now()) && e.min_age != null && e.min_age <= Number(age); }).length;
+    }
+    /* One span holds the whole label: .btn is a flex box, and loose text around the number became three columns. */
+    l13.innerHTML = '<span>See <span id="n13">' + n("13") + "</span> programs that take 13 year olds" + where + "</span>";
+    /* Programs also lists the cards that do not state an age, so say how many, and the two numbers add up. */
+    var any13 = countEntries.filter(function (e) { return L.matches(e, { age: "13", hubs: hubs }, Date.now()) && e.min_age == null; }).length, note = $("nNote");
+    if (note) { note.textContent = any13 > 0 ? "The Programs page also lists " + any13 + " more that do not say an age. Ask the program before you apply." : ""; note.hidden = !any13; }
+    var n12 = n("12");
+    l12.innerHTML = n12 > 0 ? '<span>See <span id="n12">' + n12 + "</span> programs that take 12 year olds" + where + "</span>" : "Browse programs for age 12" + where;
+  }
   function fillCounts(all) {
-    var n13 = all.filter(function (e) { return L.matches(e, { age: "13" }, Date.now()) && e.min_age != null && e.min_age <= 13; }).length;
-    $("n13").textContent = n13;
-    var n12 = all.filter(function (e) { return L.matches(e, { age: "12" }, Date.now()) && e.min_age != null && e.min_age <= 12; }).length;
-    if (n12 > 0) $("n12").textContent = n12;
-    else $("age12Link").textContent = "Browse programs for age 12";
+    l13 = $("n13") && $("n13").closest("a"); l12 = $("age12Link");
+    countEntries = all;
+    drawCounts();
   }
   function plainCounts() {
-    var l13 = $("n13") && $("n13").parentNode, l12 = $("age12Link");
+    var l13 = $("n13") && $("n13").closest("a"), l12 = $("age12Link");
     if (l13) l13.textContent = "Browse programs for age 13";
     if (l12) l12.textContent = "Browse programs for age 12";
   }
@@ -82,11 +104,17 @@
       var pa = G.store.get("findprefs", {});
       if (pa && typeof pa.age === "string" && /^(12|13|14)$/.test(pa.age)) nextAge = pa.age;
     } catch (e) { /* no saved age: keep 13 */ }
-    var nextHref = "find.html?age=" + nextAge;
-    var nsBtn = document.querySelector("#next-step a.btn");
-    if (nsBtn) nsBtn.setAttribute("href", nextHref);
-    var yNextA = document.querySelector("#yNext a");
-    if (yNextA) yNextA.setAttribute("href", nextHref);
+    /* Every Programs link carries the age and, for a state with its own hubs, where= (see stateHubs). */
+    function syncFindLinks() {
+      var w = whereParam(), nextHref = "find.html?age=" + nextAge + w;
+      var nsBtn = document.querySelector("#next-step a.btn");
+      if (nsBtn) nsBtn.setAttribute("href", nextHref);
+      var yNextA = document.querySelector("#yNext a");
+      if (yNextA) yNextA.setAttribute("href", nextHref);
+      var b13 = l13 || ($("n13") && $("n13").closest("a")), b12 = l12 || $("age12Link");
+      if (b13) b13.setAttribute("href", "find.html?age=13" + w);
+      if (b12) b12.setAttribute("href", "find.html?age=12" + w);
+    }
     addPermitOptions(d.states);
     var os = d.otherState;
     $("otherStateH").textContent = os.title;
@@ -160,7 +188,7 @@
         return "<tr><th scope=\"row\">" + G.esc(r.job) + "</th>" + sts.map(function (s) {
           var c = r.cells[s[0]]; var NS = "Not stated on the pages we read.", unk = c.t.indexOf(NS) === 0, rest = unk ? c.t.slice(NS.length).trim() : ""; return "<td>" + (unk ? '<span class="tag ghost" style="white-space:normal;line-height:1.25;">' + G.esc(d.unknownChip) + "</span>" + (rest ? " " + L.linkContacts(rest) : "") : L.linkContacts(c.t)) + (c.s ? '<br><span class="small">' + a(c.s.t, c.s.u) + "</span>" : "") + "</td>";
         }).join("") + "</tr>";
-      }).join("") + "<tr><th scope=\"row\">Who to ask</th>" + sts.map(function (s) { return "<td>" + G.esc(d.calls[s[0]]) + "</td>"; }).join("") + "</tr></tbody>";
+      }).join("") + "<tr><th scope=\"row\">Who to ask</th>" + sts.map(function (s) { return "<td>" + L.linkContacts(d.calls[s[0]]) + "</td>"; }).join("") + "</tr></tbody>";
       $("gridT").innerHTML = '<caption class="sr">What a 12 or 13 year old may do, by state</caption>' + head + body;
     }
     /* The picker's options are written into the page by tools/build.py: the four full states first, then every other state with a short answer, from the data files. */
@@ -179,6 +207,8 @@
     showLite(ys.value);
     syncGridNote(ys.value);
     syncOther(ys.value);
+    syncFindLinks();
+    drawCounts();
     /* The Work permit finder button passes the picked state on, for every state permit.html reads (L.PERMIT_STATES). */
     function syncPermit() {
       var btn = $("permitBtn");
@@ -202,6 +232,8 @@
       syncOther(ys.value);
       syncPermit();
       syncStateUrl(ys.value);
+      syncFindLinks();
+      drawCounts();
       var total = d.states.length, st = $("yStatus"), msg, name = ys.options[ys.selectedIndex] ? ys.options[ys.selectedIndex].textContent : "";
       if (!ys.value) msg = "Showing all " + total + " full states.";
       else if (isFour(ys.value)) msg = "Showing " + name + ". 1 of " + total + " full states.";

@@ -37,14 +37,22 @@ test("younger: a bad ?state=xx leaves plain permit.html", async () => {
   assert.equal(permitButton(document).getAttribute("href"), "permit.html");
 });
 
-test("younger: the age 12 and 13 find.html links and their button text are unchanged", async () => {
-  const { document, window } = await loadPage("younger.html"); await tick(200);
+// 2026-10-14 (persona r9 item 4): the find links used to stay national when a state was picked, which sent a
+// California family to 1,553 programs in other states. They now follow a state with its own hubs, and come back
+// unchanged when the picker returns to All four states (tests/younger-state-links.dom.test.mjs has the rest).
+test("younger: the age 12 and 13 find.html links follow a picked state and come back unchanged", async () => {
+  const { document, window } = await loadPage("younger.html");
+  for (let i = 0; i < 160 && !/^\d+$/.test((document.getElementById("n13") || {}).textContent || ""); i++) await tick(25);
   const f13 = document.querySelector('a[href="find.html?age=13"]');
   const f12 = document.querySelector('a[href="find.html?age=12"]');
   assert.ok(f13 && f12, "both find links exist");
   assert.match(f13.textContent, /programs that take 13 year olds$/);
   assert.match(f12.textContent, /programs that take 12 year olds$/);
+  const t13 = f13.textContent, t12 = f12.textContent;
   change(window, document.getElementById("yState"), "ga");
-  assert.equal(document.querySelector('a[href="find.html?age=13"]').textContent, f13.textContent);
-  assert.equal(document.querySelector('a[href="find.html?age=12"]').textContent, f12.textContent);
+  assert.match(document.querySelector('a[href="find.html?age=13&where=atl"]').textContent, /13 year olds in Georgia$/);
+  assert.ok(document.querySelector('a[href="find.html?age=12&where=atl"]'));
+  change(window, document.getElementById("yState"), "");
+  assert.equal(document.querySelector('a[href="find.html?age=13"]').textContent, t13);
+  assert.equal(document.querySelector('a[href="find.html?age=12"]').textContent, t12);
 });
