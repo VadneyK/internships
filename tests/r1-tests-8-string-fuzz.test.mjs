@@ -151,7 +151,7 @@ test("ageText: every min and max from 5 to 25, plus null, gives a real line that
     if (min != null && max != null) return "Ages " + min + " to " + max;
     if (min != null) return "Ages " + min + "+";
     if (max != null) return "Up to age " + max;
-    return "All high school ages";
+    return "Age not stated";
   };
   let n = 0;
   for (const min_age of AGES) for (const max_age of AGES) {
