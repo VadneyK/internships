@@ -216,7 +216,7 @@ class WorkflowTests(unittest.TestCase):
             "name: coverage-v8-shard-${{ matrix.shard }}",
             "path: coverage-v8",
             "--max-old-space-size=7168",
-            "--test-concurrency=2 --test-shard=${{ matrix.shard }}/4",
+            "--test-concurrency=2 --test-shard=${{ matrix.shard }}/6",
         ):
             with self.subTest(token=token):
                 self.assertIn(token, js, "js job in ci.yml lacks '%s'" % token)
@@ -245,15 +245,16 @@ class WorkflowTests(unittest.TestCase):
         self.assertNotIn("node --test", text)
         self.assertNotIn("npm ci", text)
 
-    def test_ci_js_job_is_four_shards_of_the_whole_suite(self):
+    def test_ci_js_job_is_six_shards_of_the_whole_suite(self):
+        # 2026-10-14: four shards to six (the slowest of four set a 6 to 9 minute wall time).
         block = job_block("ci.yml", "js")
         text = "\n".join(block)
         self.assertIn("    timeout-minutes: 30", block)
-        self.assertIn("        shard: [1, 2, 3, 4]", block)
+        self.assertIn("        shard: [1, 2, 3, 4, 5, 6]", block)
         self.assertEqual(text.count("matrix:"), 1)
         self.assertEqual(text.count("node --test"), 1, "the js job runs node --test exactly once")
         self.assertIn(
-            "        run: node --test --test-concurrency=2 --test-shard=${{ matrix.shard }}/4 tests/*.test.mjs", block
+            "        run: node --test --test-concurrency=2 --test-shard=${{ matrix.shard }}/6 tests/*.test.mjs", block
         )
         self.assertIn("npm ci", text)
         self.assertNotIn("continue-on-error", text)

@@ -58,8 +58,8 @@ test("the run and test commands in the README are the commands CI runs", () => {
   // CI shards the JavaScript run; each shard runs the same file list the README shows.
   assert.ok(readme.includes("node --test tests/*.test.mjs"), 'README does not show "node --test tests/*.test.mjs"');
   assert.ok(
-    ci.includes("node --test --test-concurrency=2 --test-shard=${{ matrix.shard }}/4 tests/*.test.mjs"),
-    'ci.yml does not run "node --test --test-concurrency=2 --test-shard=${{ matrix.shard }}/4 tests/*.test.mjs"',
+    ci.includes("node --test --test-concurrency=2 --test-shard=${{ matrix.shard }}/6 tests/*.test.mjs"),
+    'ci.yml does not run "node --test --test-concurrency=2 --test-shard=${{ matrix.shard }}/6 tests/*.test.mjs"',
   );
   assert.ok(!readme.includes("python3 -m unittest discover -s tests -v` and `node --test tests/`"), "old test line is back");
 });
