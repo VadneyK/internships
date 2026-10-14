@@ -99,7 +99,8 @@ const TABLE = {
   // 2026-10-13: ux9 review fixes. style.css 50400 to 50500 (50427 bytes).
   // 2026-10-13: workshop leaders round. style.css 50500 to 50600 (50571 bytes).
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. assets/css/style.css limit 50700 to 51200.
-  "assets/css/style.css": { ceiling: 51200, reason: "stylesheet, 41831 bytes measured 2026-10-10; 50638 bytes on 2026-10-14 after the phone filter summary fix" },
+  // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). assets/css/style.css limit 51200 to 52100.
+  "assets/css/style.css": { ceiling: 52100, reason: "stylesheet, 41831 bytes measured 2026-10-10; 50638 bytes on 2026-10-14 after the phone filter summary fix" },
   "assets/js/calendar.js": { ceiling: 8800, reason: "script, 7966 bytes measured 2026-10-10" },
   "assets/js/common.js": { ceiling: 34900, reason: "script, 25681 bytes measured 2026-10-10" },
   // Raised from 58100 to 59300 on 2026-10-12 for ticket diet-1 (Where group files on the Programs page). 59217 bytes measured.
@@ -113,7 +114,8 @@ const TABLE = {
   "assets/js/languages.js": { ceiling: 4000, reason: "script, 3579 bytes measured 2026-10-10" },
   "assets/js/leaders.js": { ceiling: 8100, reason: "script, 7361 bytes measured 2026-10-10" },
   "assets/js/lib.js": { ceiling: 55300, reason: "script, 50207 bytes measured 2026-10-10" },
-  "assets/js/parents.js": { ceiling: 3900, reason: "script, 3529 bytes measured 2026-10-10" },
+  // 2026-10-14: parents permit table stacks on phones (ARIA roles and column labels) parents.js 3900 to 4200. PENDING PERSON APPROVAL.
+  "assets/js/parents.js": { ceiling: 4200, reason: "script, 3529 bytes measured 2026-10-10" },
   // Raised for ticket p8-paycheck-other: the Another state picker and its wage and federal tax lines. 12055 bytes measured 2026-10-12.
   // Raised again for the live status line on Another state (a state pick, and the failed wage load). 12208 bytes measured 2026-10-12.
   "assets/js/paycheck.js": { ceiling: 12500, reason: "raised 2026-10-13 for ticket ux9-other-state-search (place box); script, 12208 bytes measured 2026-10-12 (Another state picker and its live status line, p8-paycheck-other)" },

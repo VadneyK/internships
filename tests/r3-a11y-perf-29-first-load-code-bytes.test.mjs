@@ -33,52 +33,66 @@ const BUDGET = {
   // Raised on 2026-10-12 for ticket p9-regions-1: lib.js grew by 886 bytes (8 Plains and Mountain states in REGIONS, HUBS, STATES, PICK_GROUPS and STATE_OF). Every page that loads lib.js and went over has its ceiling set to the measured size rounded up plus 100 (other tickets in the same tree added bytes too).
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you 404.html limit 91300 to 91700.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. 404.html limit 91700 to 92200.
-  "404.html": { ceiling: 92200, reason: "common.js and both stylesheets only; no page script" },
+  // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). 404.html limit 92200 to 93200.
+  "404.html": { ceiling: 93200, reason: "common.js and both stylesheets only; no page script" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you about.html limit 91300 to 91700.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. about.html limit 91700 to 92200.
-  "about.html": { ceiling: 92200, reason: "common.js and both stylesheets only; no page script" },
+  // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). about.html limit 92200 to 93200.
+  "about.html": { ceiling: 93200, reason: "common.js and both stylesheets only; no page script" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you calendar.html limit 151000 to 152100.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. calendar.html limit 152100 to 152600.
-  "calendar.html": { ceiling: 152600, reason: "lib.js, common.js and calendar.js" },
+  // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). calendar.html limit 152600 to 153600.
+  "calendar.html": { ceiling: 153600, reason: "lib.js, common.js and calendar.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you contribute.html limit 91300 to 91700.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. contribute.html limit 91700 to 92200.
-  "contribute.html": { ceiling: 92200, reason: "common.js and both stylesheets only; no page script" },
+  // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). contribute.html limit 92200 to 93200.
+  "contribute.html": { ceiling: 93200, reason: "common.js and both stylesheets only; no page script" },
   // Raised on 2026-10-11 for ticket p7-regions-1: lib.js grew by 1,296 bytes (11 new states in REGIONS, HUBS, STATES, PICK_GROUPS and STATE_OF). find.html loads 171395 bytes of code, ceiling raised from 170500 to 171400.
   // Raised 2026-10-11 after the new-states merge (regions and places in lib.js, wages reader in common.js): find 171400 to 171500, jobs 141100 to 141900, permit 145000 to 145400.
   // Raised from 171500 to 172800 on 2026-10-11 for tickets p8-lite-1 and p8-cities-1: big cities of the 11 new states in lib.js, plain missing-fact answers and wage notes in common.js and permit.js.
   // Raised from 179400 to 185200 on 2026-10-12 for ticket diet-1: find.js grew by about 6 KB (ten literal chunk URLs for the lite files and ten for the detail files, the place to chunk mapping, and the fallback to the whole file). find.html loads 185192 bytes of code.
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you find.html limit 207400 to 209800.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. find.html limit 210500 to 211000.
-  "find.html": { ceiling: 211000, reason: "lib.js, common.js and find.js (largest page script)" },
+  // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). find.html limit 211000 to 211900.
+  "find.html": { ceiling: 211900, reason: "lib.js, common.js and find.js (largest page script)" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you handout.html limit 91700 to 92100.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. handout.html limit 92200 to 92700.
-  "handout.html": { ceiling: 92700, reason: "common.js, handout.js and both stylesheets; no lib.js" },
+  // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). handout.html limit 92700 to 93700.
+  "handout.html": { ceiling: 93700, reason: "common.js, handout.js and both stylesheets; no lib.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you index.html limit 155000 to 156100.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. index.html limit 156100 to 156600.
-  "index.html": { ceiling: 156600, reason: "lib.js, common.js and home.js (2026-10-12: +100 for the 1 day label and phone heading size)" },
+  // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). index.html limit 156600 to 157600.
+  "index.html": { ceiling: 157600, reason: "lib.js, common.js and home.js (2026-10-12: +100 for the 1 day label and phone heading size)" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you insights.html limit 148400 to 149400.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. insights.html limit 149500 to 150200.
-  "insights.html": { ceiling: 150200, reason: "lib.js, common.js and insights.js" },
+  // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). insights.html limit 150200 to 151200.
+  "insights.html": { ceiling: 151200, reason: "lib.js, common.js and insights.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you interview.html limit 161300 to 162400.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. interview.html limit 162500 to 163000.
-  "interview.html": { ceiling: 163000, reason: "lib.js, common.js and interview.js" },
+  // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). interview.html limit 163000 to 163900.
+  "interview.html": { ceiling: 163900, reason: "lib.js, common.js and interview.js" },
   // Raised on 2026-10-11 for ticket p7-regions-1: lib.js grew by 1,296 bytes (11 new states in REGIONS, HUBS, STATES, PICK_GROUPS and STATE_OF). jobs.html loads 141025 bytes (the rest of the growth came from other work in common.js and jobs.js), ceiling raised from 138200 to 141100.
   // Raised from 141900 to 143500 on 2026-10-11 for tickets p8-lite-1 and p8-cities-1: big cities of the 11 new states in lib.js, plain missing-fact answers and wage notes in common.js and permit.js.
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you jobs.html limit 165200 to 166300.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. jobs.html limit 166400 to 166900.
-  "jobs.html": { ceiling: 166900, reason: "lib.js, common.js and jobs.js" },
+  // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). jobs.html limit 166900 to 167800.
+  "jobs.html": { ceiling: 167800, reason: "lib.js, common.js and jobs.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you languages.html limit 146500 to 147600.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. languages.html limit 147600 to 148100.
-  "languages.html": { ceiling: 148100, reason: "lib.js, common.js and languages.js" },
+  // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). languages.html limit 148100 to 149000.
+  "languages.html": { ceiling: 149000, reason: "lib.js, common.js and languages.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you leaders.html limit 98700 to 99000.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. leaders.html limit 99100 to 99600.
-  "leaders.html": { ceiling: 99600, reason: "common.js, leaders.js and both stylesheets; no lib.js" },
+  // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). leaders.html limit 99600 to 100500.
+  "leaders.html": { ceiling: 100500, reason: "common.js, leaders.js and both stylesheets; no lib.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you parents.html limit 146400 to 147500.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. parents.html limit 147500 to 148000.
-  "parents.html": { ceiling: 148000, reason: "lib.js, common.js and parents.js" },
+  // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). parents.html limit 148000 to 149600.
+  "parents.html": { ceiling: 149600, reason: "lib.js, common.js and parents.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you paycheck.html limit 155300 to 156400.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. paycheck.html limit 156400 to 156900.
-  "paycheck.html": { ceiling: 156900, reason: "lib.js, common.js and paycheck.js" },
+  // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). paycheck.html limit 156900 to 157900.
+  "paycheck.html": { ceiling: 157900, reason: "lib.js, common.js and paycheck.js" },
   // Raised from 139900 to 141000 on 2026-10-11 when the third upgrade round was merged: permit.js grew by 716 bytes and the page is 140932 bytes.
   // Raised from 141000 to 142300 on 2026-10-11 for ticket p6-permit-1: the age line on the shorter state answer (about 1,300 bytes in permit.js) and the shared G.stateShorts() reader in common.js (about 300 bytes, which jobs.js and younger.js now share instead of each fetching the file). The page is 142229 bytes.
   // Raised from 142300 to 142500 on 2026-10-11 after the persona round 4 merge: permit.html loads 142397 bytes of code (a 97 byte overage that came from combining the two lines of work).
@@ -86,37 +100,46 @@ const BUDGET = {
   // Raised from 145400 to 148600 on 2026-10-11 for tickets p8-lite-1 and p8-cities-1: big cities of the 11 new states in lib.js, plain missing-fact answers and wage notes in common.js and permit.js.
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you permit.html limit 174700 to 175900.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. permit.html limit 176000 to 176500.
-  "permit.html": { ceiling: 176500, reason: "lib.js, common.js and permit.js" },
+  // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). permit.html limit 176500 to 177400.
+  "permit.html": { ceiling: 177400, reason: "lib.js, common.js and permit.js" },
   // Raised on 2026-10-12 for tickets p9-regions-1 and p9-playbook-1: lib.js grew (Plains states) and style.css gained two small rules. jobs, playbook, resume, states and younger ceilings each raised by 100.
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you playbook.html limit 160300 to 161400.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. playbook.html limit 161400 to 161900.
-  "playbook.html": { ceiling: 161900, reason: "lib.js, common.js and playbook.js" },
+  // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). playbook.html limit 161900 to 162900.
+  "playbook.html": { ceiling: 162900, reason: "lib.js, common.js and playbook.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you ready.html limit 153800 to 154900.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. ready.html limit 156400 to 156900.
-  "ready.html": { ceiling: 156900, reason: "lib.js, common.js and ready.js" },
+  // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). ready.html limit 156900 to 157800.
+  "ready.html": { ceiling: 157800, reason: "lib.js, common.js and ready.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you resume.html limit 151600 to 152700.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. resume.html limit 152700 to 153200.
-  "resume.html": { ceiling: 153200, reason: "lib.js, common.js and resume.js" },
+  // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). resume.html limit 153200 to 154200.
+  "resume.html": { ceiling: 154200, reason: "lib.js, common.js and resume.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you rules.html limit 91300 to 91700.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. rules.html limit 91700 to 92200.
-  "rules.html": { ceiling: 92200, reason: "common.js and both stylesheets only; no page script" },
+  // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). rules.html limit 92200 to 93200.
+  "rules.html": { ceiling: 93200, reason: "common.js and both stylesheets only; no page script" },
   // Raised on 2026-10-11 for ticket p7-regions-1: lib.js grew by 1,296 bytes (11 new states in REGIONS, HUBS, STATES, PICK_GROUPS and STATE_OF). safety.html loads 128805 bytes, ceiling raised from 127600 to 128900.
   // Raised from 128900 to 130200 on 2026-10-11 for tickets p8-lite-1 and p8-cities-1: big cities of the 11 new states in lib.js, plain missing-fact answers and wage notes in common.js and permit.js.
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you safety.html limit 151700 to 152800.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. safety.html limit 152800 to 153300.
-  "safety.html": { ceiling: 153300, reason: "lib.js, common.js and safety.js" },
+  // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). safety.html limit 153300 to 154300.
+  "safety.html": { ceiling: 154300, reason: "lib.js, common.js and safety.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you share.html limit 93000 to 93300.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. share.html limit 93400 to 93900.
-  "share.html": { ceiling: 93900, reason: "common.js, share.js and both stylesheets; no lib.js" },
+  // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). share.html limit 93900 to 94800.
+  "share.html": { ceiling: 94800, reason: "common.js, share.js and both stylesheets; no lib.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you states.html limit 145400 to 146500.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. states.html limit 146600 to 147100.
-  "states.html": { ceiling: 147100, reason: "lib.js, common.js and states.js" },
+  // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). states.html limit 147100 to 148000.
+  "states.html": { ceiling: 148000, reason: "lib.js, common.js and states.js" },
   // Raised on 2026-10-11 for ticket p7-regions-1: lib.js grew by 1,296 bytes (11 new states in REGIONS, HUBS, STATES, PICK_GROUPS and STATE_OF). younger.html loads 131827 bytes, ceiling raised from 130800 to 131900.
   // Raised from 131900 to 133200 on 2026-10-11 for tickets p8-lite-1 and p8-cities-1: big cities of the 11 new states in lib.js, plain missing-fact answers and wage notes in common.js and permit.js.
   // Raised for ticket p9-younger-1: younger.js grew by about 4.3 KB (the permit-only state picker names, the permit card and its helpers). younger.html measured 142116 bytes on 2026-10-12, ceiling set to 142200.
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you younger.html limit 160700 to 161800.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. younger.html limit 161900 to 162300.
-  "younger.html": { ceiling: 162400, reason: "lib.js, common.js and younger.js" },
+  // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). younger.html limit 162400 to 163300.
+  "younger.html": { ceiling: 163300, reason: "lib.js, common.js and younger.js" },
 };
 
 function builtPages() {

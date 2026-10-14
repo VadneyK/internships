@@ -358,6 +358,19 @@ th, td { text-align: left; padding: .6rem .75rem; border-bottom: 2px solid color
 th { font-family: var(--display); font-style: italic; text-transform: uppercase; font-size: .78rem; letter-spacing: .05em; background: var(--tag-bg); color: var(--tag-fg); border-bottom: 0; }
 tr:last-child td { border-bottom: 0; }
 tbody th[scope="row"] { background: transparent; color: var(--ink); text-transform: none; letter-spacing: normal; font-family: inherit; font-style: normal; font-size: inherit; border-bottom: 2px solid color-mix(in srgb, var(--edge) 25%, transparent); }
+/* .stackt: on phones each row becomes a block, the column name shows above each cell, and the head row hides. */
+.stackt .tk { display: none; }
+@media (max-width: 40rem) {
+  table.stackt { min-width: 0; }
+  .stackt thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .stackt tr, .stackt tbody th[scope="row"], .stackt td { display: block; }
+  .stackt tbody tr { border-bottom: 3px solid var(--edge); }
+  .stackt tbody tr:last-child { border-bottom: 0; }
+  .stackt tbody th[scope="row"] { font-family: var(--display); font-size: 1.1rem; border-bottom: 0; padding-bottom: .2rem; }
+  .stackt td { border-bottom: 0; padding-top: .35rem; padding-bottom: .35rem; }
+  .stackt td:last-child { padding-bottom: .8rem; }
+  .stackt .tk { display: block; font-family: var(--display); font-style: italic; text-transform: uppercase; font-size: .75rem; letter-spacing: .05em; color: var(--ink-2); }
+}
 tr:last-child th { border-bottom: 0; }
 
 /* steps */

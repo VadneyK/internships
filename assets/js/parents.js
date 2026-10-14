@@ -22,12 +22,15 @@
     para("signLead", d.sign.lead);
     function drawStates(only) {
       var rows = d.sign.states.filter(function (s) { return !only || s.id === only; });
-      $("signT").innerHTML = "<caption class=\"sr\">Work permit by state: what a parent does</caption><thead><tr><th scope=\"col\">Place</th><th scope=\"col\">Permit</th><th scope=\"col\">What a parent does</th><th scope=\"col\">Who to call</th></tr></thead><tbody>" +
+      // On phones the rows stack (CSS .stackt), which drops table meaning in some browsers, so the roles are set here.
+      // Each cell also carries its column name for the stacked view; screen readers get the real headers instead.
+      function k(t) { return "<span class=\"tk\" aria-hidden=\"true\">" + t + "</span>"; }
+      $("signT").innerHTML = "<caption class=\"sr\">Work permit by state: what a parent does</caption><thead role=\"rowgroup\"><tr role=\"row\"><th scope=\"col\" role=\"columnheader\">Place</th><th scope=\"col\" role=\"columnheader\">Permit</th><th scope=\"col\" role=\"columnheader\">What a parent does</th><th scope=\"col\" role=\"columnheader\">Who to call</th></tr></thead><tbody role=\"rowgroup\">" +
         rows.map(function (s) {
-          return "<tr><th scope=\"row\">" + G.esc(s.name) + "</th>" +
-            "<td><b>" + G.esc(s.need) + ".</b> " + G.esc(s.permit) + "</td>" +
-            "<td>" + G.esc(s.parent) + from(s.p) + "</td>" +
-            "<td>" + G.esc(s.call) + "</td></tr>";
+          return "<tr role=\"row\"><th scope=\"row\" role=\"rowheader\">" + G.esc(s.name) + "</th>" +
+            "<td role=\"cell\">" + k("Permit") + "<b>" + G.esc(s.need) + ".</b> " + G.esc(s.permit) + "</td>" +
+            "<td role=\"cell\">" + k("What a parent does") + G.esc(s.parent) + from(s.p) + "</td>" +
+            "<td role=\"cell\">" + k("Who to call") + G.esc(s.call) + "</td></tr>";
         }).join("") + "</tbody>";
     }
     var sel = $("pState");
