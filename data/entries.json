@@ -247,6 +247,87 @@
   "limited": true
  },
  {
+  "id": "alameda-aquatic-internship",
+  "name": "Aquatic Internship Program",
+  "org": "City of Alameda Recreation and Parks, Aquatics",
+  "regions": [
+   "alameda"
+  ],
+  "city": "Alameda, CA (Encinal Swim Center)",
+  "type": "internship",
+  "fields": [
+   "sports",
+   "education"
+  ],
+  "what_you_do": "You help pool staff and learn how to keep swimmers safe. You get safety and rescue training and a mentor from the aquatics team.",
+  "min_age": 12,
+  "max_age": 15,
+  "grades": "7 to 10",
+  "who_can_apply": "Ages 12 to 15, in grades 7 to 10. You need a 2.5 GPA or higher and must pass a Red Cross Level 4 swim test. You also need your own ride.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page.",
+  "season": "summer",
+  "duration": null,
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 program page said applications close May 8, or sooner if the program fills. Interviews began the week of May 15. The next year is not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the online application. Add an unofficial school transcript, two letters of recommendation and a resume. Add a short letter, about one page, under the heading \"Tell Us About You\". Interviews follow.",
+  "needs_work_permit": null,
+  "url": "https://www.alamedaca.gov/Departments/Recreation-Parks/Aquatics/Aquatic-Interns",
+  "apply_url": "https://forms.gle/Q5H5nwAhSbZwTp4MA",
+  "sources_fetched": [
+   "https://www.alamedaca.gov/Departments/Recreation-Parks/Aquatics/Aquatic-Interns",
+   "https://www.alamedaca.gov/Departments/Recreation-Parks/Aquatics"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "The program page does not give start and end dates or pay. Ask the aquatics team. Email arpdaquatics@alamedaca.gov or call the city at 510-747-7400. It is held at Encinal Swim Center, 230 Central Ave. Residency is not stated on the program page.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "id": "alameda-city-summer-internship",
+  "name": "City of Alameda Summer Internship",
+  "org": "City of Alameda Human Resources",
+  "regions": [
+   "alameda"
+  ],
+  "city": "Alameda, CA",
+  "type": "internship",
+  "fields": [
+   "law-government",
+   "any"
+  ],
+  "what_you_do": "You work a summer internship with the City of Alameda. The program page does not list the tasks.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Students aged 16 and older. The program page does not list residency or other rules.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page.",
+  "season": "summer",
+  "duration": null,
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The program page says details are usually posted in March and applications are due in mid-May. It gives no year.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Use the Application link on the program page. It goes to the city job site. Watch for the posting in March.",
+  "needs_work_permit": null,
+  "url": "https://www.alamedaca.gov/Departments/Human-Resources/Join-the-Community",
+  "apply_url": "https://www.governmentjobs.com/careers/alamedaca",
+  "sources_fetched": [
+   "https://www.alamedaca.gov/Departments/Human-Resources/Join-the-Community"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "The program page does not say if the job is paid, how long it lasts, or if a work permit is needed. Ask Human Resources at 510-747-4900.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
   "id": "alameda-county-community-food-bank-volunteer",
   "name": "Alameda County Community Food Bank: Volunteer",
   "org": "Alameda County Community Food Bank",
@@ -287,6 +368,126 @@
   "priority": 1,
   "notes": "7900 Edgewater Dr, Oakland. Wear closed-toe shoes that cover your whole foot. BART to Coliseum, then AC Transit 98.",
   "verified_on_label": "Oct 7, 2026"
+ },
+ {
+  "id": "alameda-county-district-1-intern-program",
+  "name": "District 1 Internship and Volunteer Program",
+  "org": "Alameda County Board of Supervisors, District 1",
+  "regions": [
+   "east-bay",
+   "fremont"
+  ],
+  "city": "Pleasanton, CA (serves Dublin, Fremont, Livermore, Pleasanton and Sunol)",
+  "type": "civic-government",
+  "fields": [
+   "law-government"
+  ],
+  "what_you_do": "You help with a project for the community. You also help the office with office work and research. You go to community events for the office.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "High school students interested in local government. The program page does not list an age or grade rule.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page.",
+  "season": "school-year",
+  "duration": null,
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "The application is open for School Year 26-27. The program page lists no deadline.",
+  "deadline_iso": null,
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the online intern application. The link is on the program page.",
+  "needs_work_permit": null,
+  "url": "https://district1.alamedacountyca.gov/intern-program/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://district1.alamedacountyca.gov/intern-program/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "Projects serve Dublin, Fremont, Livermore, Pleasanton, Sunol and the eastern unincorporated areas of Alameda County. The program page does not give hours, start dates or pay. The office is at 4501 Pleasanton Ave, Pleasanton. The intern director is Katy Felton. The page shows two different email addresses, so call the office to check.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "id": "alameda-county-fair-seasonal-jobs",
+  "name": "Alameda County Fair Seasonal Jobs",
+  "org": "Alameda County Fair",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Pleasanton, CA (Alameda County Fairgrounds)",
+  "type": "paid-youth-program",
+  "fields": [
+   "any",
+   "food-hospitality"
+  ],
+  "what_you_do": "You work at the county fair. Jobs include tickets at the gate, exhibits, the animal barns, parking, the tram and event work.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be 16 or older. If you are 17 or younger, you need a work permit from your school unless you have already graduated. Some jobs, such as racing, cash handling, childcare, amphitheater usher, entertainment transport and parking seller, need you to be 18 or older.",
+  "paid_type": "paid",
+  "pay_detail": "$17.00 to $20.00 per hour, depending on the job, as listed on the program page.",
+  "season": "summer",
+  "duration": null,
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The program page says 2027 information is coming soon. Hiring dates and the fair dates are not posted yet.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the job form online. Or print the paper form and send it in.",
+  "needs_work_permit": true,
+  "url": "https://annual.alamedacountyfair.com/fair-jobs/",
+  "apply_url": "https://annual.alamedacountyfair.com/employment-application/",
+  "sources_fetched": [
+   "https://annual.alamedacountyfair.com/fair-jobs/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 1,
+  "notes": "Pay examples from the program page: Admissions Ambassador $18.00, Exhibits Attendant $17.00, Event Operations Tech $20.00. The job email is jobs@alamedacountyfair.com. The phone is 925-426-7600. The fair office is at 4501 Pleasanton Ave. The program page does not say how many hours a week you will work.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "id": "alameda-county-itd-student-intern-program",
+  "name": "Student Intern Program",
+  "org": "Alameda County Information Technology Department (ITD)",
+  "regions": [
+   "alameda"
+  ],
+  "city": "Alameda County, CA",
+  "type": "internship",
+  "fields": [
+   "tech-cs"
+  ],
+  "what_you_do": "You join a county tech team for the summer. You help build apps and tools for the County. You may work on apps, websites, tech help, networks, security or servers.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school, college or STEM trade school students",
+  "who_can_apply": "High school, college and STEM trade school students. The program page does not list an age or residency rule.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page.",
+  "season": "summer",
+  "duration": null,
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Applications for Cohort 2026 are closed. The program page says it will post more information in February or March 2027.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "The program page does not say how to apply. Check it again in February or March 2027.",
+  "needs_work_permit": null,
+  "url": "https://itd.alamedacountyca.gov/student-intern-program/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://itd.alamedacountyca.gov/student-intern-program/",
+   "https://itd.acgov.org/student-intern-program/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "The program page does not give program dates, pay or an age limit, so ask before you plan. Questions: alcoitd@acgov.org.",
+  "verified_on_label": "Oct 14, 2026"
  },
  {
   "id": "alameda-county-library-teen-volunteer",
@@ -412,6 +613,89 @@
   "verified_on_label": "Oct 7, 2026"
  },
  {
+  "id": "alameda-high-school-cte-pathways",
+  "name": "Alameda High School Career Technical Education (CTE) Pathways",
+  "org": "Alameda High School, Alameda Unified School District",
+  "regions": [
+   "alameda"
+  ],
+  "city": "Alameda, CA (2200 Central Ave)",
+  "type": "school-pathway",
+  "fields": [
+   "arts-media",
+   "tech-cs",
+   "health",
+   "science"
+  ],
+  "what_you_do": "You take career classes at Alameda High. There are five paths to pick from. They are digital filmmaking, multimedia, computer science, sports medicine and biotech.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "Students at Alameda High School. You can choose to enroll as early as 9th grade. The program page lists no other rules.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page. These are school classes.",
+  "season": "school-year",
+  "duration": null,
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "The program page lists no deadlines. Ask your counselor when you pick classes.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Read the CTE brochure and watch the Try Out a Career videos on the program page. Then pick CTE classes when you choose your courses. The program page links to a district enrollment page.",
+  "needs_work_permit": false,
+  "url": "https://ahs.alamedaunified.org/fs/pages/5185",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://ahs.alamedaunified.org/fs/pages/5185"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 3,
+  "notes": "The program page does not describe the courses in each pathway or any work based learning. School office phone: 510-337-7022. Ask the CTE teachers if a class earns college credit.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "id": "alameda-teen-haunted-house-volunteers",
+  "name": "Teen Haunted House Volunteers",
+  "org": "City of Alameda Recreation and Parks",
+  "regions": [
+   "alameda"
+  ],
+  "city": "Alameda, CA (Veterans Building and South Shore Mall)",
+  "type": "volunteer",
+  "fields": [
+   "arts-media",
+   "social-impact"
+  ],
+  "what_you_do": "You design and build haunted rooms, props and special effects for the Teen Haunted House. You also act as a scare actor on haunted house nights.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "6 to 12",
+  "who_can_apply": "Middle and high school teens in grades 6 to 12. No experience is needed.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer. You can earn community service hours.",
+  "season": "fall",
+  "duration": null,
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Registration for the 21st annual haunted house closed September 20, 2026. Dates for next year are not posted on the program page.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Sign up online on the city registration page. Go to the meetings. Finish your scene prep. Work at least two event nights. Help clean up after.",
+  "needs_work_permit": false,
+  "url": "https://www.alamedaca.gov/Departments/Recreation-Parks/Haunted-House-Volunteering",
+  "apply_url": "https://anc.apm.activecommunities.com/alamedarecreation/activity/search?onlineSiteId=0&activity_select_param=2&drop_in=0&activity_keyword=Teen%20Haunted%20House%20-%2021st%20Annual&viewMode=list",
+  "sources_fetched": [
+   "https://www.alamedaca.gov/Departments/Recreation-Parks/Haunted-House-Volunteering",
+   "https://www.alamedaca.gov/Departments/Recreation-Parks/Underground-Teen-Center"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 3,
+  "notes": "Meetings are at the Veterans Building, 2203 Central Ave. The haunted house is at South Shore Mall. Questions: call 510-747-7529 or 510-747-7575, or email arpd@alamedaca.gov. The program page does not give event dates or a fee.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
   "id": "alameda-youth-career-job-fair",
   "name": "Alameda Youth Career and Job Fair",
   "org": "City of Alameda and Alameda Unified School District",
@@ -449,6 +733,46 @@
   "priority": 1,
   "notes": "Held at Encinal Jr/Sr High, 210 Central Ave, Alameda. It is an annual fair, but the 2027 date has not been posted.",
   "verified_on_label": "Oct 7, 2026"
+ },
+ {
+  "id": "alameda-youth-committee-ayc",
+  "name": "Alameda Youth Committee (AYC)",
+  "org": "City of Alameda Recreation and Parks, Underground Teen Center",
+  "regions": [
+   "alameda"
+  ],
+  "city": "Alameda, CA (2203 Central Ave)",
+  "type": "leadership",
+  "fields": [
+   "social-impact",
+   "law-government"
+  ],
+  "what_you_do": "You work with other teens to create programs and events. You build skills in teamwork, communication and civic engagement.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Teens. The program page does not give ages or grades.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer. The program page does not list pay or a fee.",
+  "season": "school-year",
+  "duration": null,
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "The program page says the committee runs in Fall 2026 and links to online registration. It gives no open or close dates.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Open the Underground Teen Center page. Use the Alameda Youth Committee link to sign up online with the city.",
+  "needs_work_permit": false,
+  "url": "https://www.alamedaca.gov/Departments/Recreation-Parks/Underground-Teen-Center",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.alamedaca.gov/Departments/Recreation-Parks/Underground-Teen-Center"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "Ages, grades, meeting times and any fee are not stated on the program page. Call City Hall at 510-747-7400 to ask. The same page describes the Underground Teen Center, where the After Dark program is for middle and high school teens.",
+  "verified_on_label": "Oct 14, 2026"
  },
  {
   "grades": null,
@@ -1603,6 +1927,127 @@
   "min_age": null,
   "deadline_iso": null,
   "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLSeewLbQ7PWzJc8IK7x3GlHYCrOAgECNNMpiBDcXpQGdxJBz4Q/viewform?usp=dialog",
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": null,
+  "needs_work_permit": null,
+  "id": "anaheim-fire-explorers",
+  "name": "Anaheim Fire and Rescue Explorer Program",
+  "org": "Anaheim Fire and Rescue",
+  "city": "Anaheim, CA",
+  "type": "shadowing",
+  "fields": [
+   "health",
+   "social-impact"
+  ],
+  "what_you_do": "Learn basic fire and life-saving skills with Anaheim firefighters. Meetings mix fitness, class time and skills practice. After six months you can ride along on fire engines and ambulances.",
+  "min_age": 15,
+  "max_age": 21,
+  "who_can_apply": "Ages 15 to 21. If you are 15, you must have finished 8th grade. You must keep a GPA of 2.0 or higher and be able to run, lift, climb and crawl.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page.",
+  "season": "year-round",
+  "duration": "Meetings every other Tuesday, 5:30 to 9:00 p.m.",
+  "status": "unconfirmed",
+  "deadline_text": "No dates are posted. Join the interest list to hear when spots open.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the Fire Explorers Interest Form on the program page. You will be told when spots open. Email FireExplorer@anaheim.net with questions.",
+  "url": "https://ca-anaheim.civicplus.com/5427/Explorer-Program",
+  "sources_fetched": [
+   "https://ca-anaheim.civicplus.com/5427/Explorer-Program"
+  ],
+  "priority": 2,
+  "notes": "Spots go first to Public Safety Pathways grads. Then to Anaheim residents. Then to Anaheim students. Explorers do not enter burning buildings. They do not replace firefighters.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": null,
+  "needs_work_permit": false,
+  "id": "anaheim-public-library-teen-volunteers",
+  "name": "Anaheim Public Library Teen Volunteers",
+  "org": "Anaheim Public Library",
+  "city": "Anaheim, CA",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "arts-media",
+   "social-impact"
+  ],
+  "what_you_do": "Volunteer at an Anaheim library branch. Some branches ask for 2 hours a week. You can also work online on a teen blog, a teen podcast or book catalog translation.",
+  "min_age": 14,
+  "max_age": null,
+  "who_can_apply": "Teens who are at least 14 years old and in high school.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. You earn volunteer hours.",
+  "season": "year-round",
+  "duration": "At least 2 hours a week at Central Library and Canyon Hills",
+  "status": "year-round",
+  "deadline_text": "Dates depend on the branch. East Anaheim, Haskett, Heritage Center, Ponderosa and Sunkist take applications year-round. Central Library takes them at the start of summer, fall and spring. Canyon Hills takes them in September, January and May, for summer work. Euclid takes them during the spring semester, for summer work.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Pick a branch on the program page. Contact the coordinator listed for that branch. Each branch has its own contact and its own rules.",
+  "url": "https://ca-anaheim.civicplus.com/3213/Volunteer",
+  "sources_fetched": [
+   "https://ca-anaheim.civicplus.com/3213/Volunteer"
+  ],
+  "priority": 1,
+  "notes": "An accepted application does not promise hours. Hours are given out as needed. The library does not give court-ordered service hours. The Mobile Library (Bookmobile and STEAM Van) takes summer applications in April and needs volunteers 2 to 6 p.m. on at least one Monday to Thursday. The Teen Podcast takes applications at the start of fall.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": null,
+  "needs_work_permit": false,
+  "id": "anaheim-summer-volunteen",
+  "name": "Anaheim Summer VolunTEEN Program",
+  "org": "City of Anaheim Community Services Department",
+  "city": "Anaheim, CA",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "social-impact",
+   "environment"
+  ],
+  "what_you_do": "Volunteer at summer programs in Anaheim. You can help at day camps, nature camps, libraries and a gym. You earn community service hours.",
+  "min_age": 13,
+  "max_age": 17,
+  "who_can_apply": "Teens 13 to 17 years old. Space is small. Anaheim residents and Anaheim students go first.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. You get a letter that confirms your community service hours.",
+  "season": "summer",
+  "duration": "Weeks you choose when you apply",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The 2026 applications are closed. Last cycle, applications opened Feb 2, 2026 and closed Apr 10, 2026 at 5 p.m. No late applications were accepted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online. You need a TB clearance slip from the last two years. Book a free fingerprint appointment at City Hall. Pick a VolunTEEN orientation date. Choose your program, site and weeks. Sign the waivers.",
+  "url": "https://ca-anaheim.civicplus.com/4829/Summer-VolunTEEN-Program",
+  "sources_fetched": [
+   "https://ca-anaheim.civicplus.com/4829/Summer-VolunTEEN-Program",
+   "https://ca-anaheim.civicplus.com/1177/Community-Services-Volunteer-Opportuniti"
+  ],
+  "priority": 1,
+  "notes": "You pay for your own TB test. Fingerprinting is free. Bring a photo ID to the fingerprint appointment. Last cycle, site assignments were emailed by May 30. Questions: Volunteer Coordinator, 714-765-4994. The city also lists other volunteer jobs for ages 13 and up. Examples are trail work at Oak Canyon Nature Center and youth sports coach assistants.",
+  "verified_on_label": "Oct 14, 2026",
+  "limited": true
  },
  {
   "id": "anderson-humane-teen-volunteers-school-service",
@@ -3356,6 +3801,49 @@
   ],
   "notes": "You need at least 100 volunteer hours before you can ask for written proof of hours (for school or court). Uniform and ID badge are required whenever you volunteer.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": "7-12",
+  "needs_work_permit": false,
+  "id": "assistance-league-newport-mesa-assisteens",
+  "name": "Assisteens Auxiliary (Assistance League of Newport-Mesa)",
+  "org": "Assistance League of Newport-Mesa",
+  "city": "Costa Mesa, CA",
+  "type": "volunteer",
+  "fields": [
+   "social-impact",
+   "business-finance",
+   "education"
+  ],
+  "what_you_do": "Volunteer in a thrift shop. Help give school clothes to low-income families. Do service projects with your grade. You can also be a leader.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "Young women and men in grades 7 to 12. You must work at least 30 hours a year. Meetings and events count toward hours.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer program.",
+  "season": "school-year",
+  "duration": "Monthly meetings in the school year. At least 30 hours a year.",
+  "status": "unconfirmed",
+  "deadline_text": "No sign-up dates are posted on the program page. Call for details.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Call 949-645-6929 to ask how to join. The chapter volunteer page has an Adult Member Application. Ask the chapter whether teens can use it.",
+  "url": "https://www.assistanceleague.org/chapter/newportmesa/volunteer-opportunities/assisteens-auxiliary",
+  "sources_fetched": [
+   "https://www.assistanceleague.org/chapter/newportmesa/volunteer-opportunities/assisteens-auxiliary",
+   "https://www.assistanceleague.org/chapter/newportmesa/volunteer-opportunities",
+   "https://www.assistanceleague.org/chapter/newportmesa/"
+  ],
+  "priority": 2,
+  "notes": "Membership costs are not stated on the program page. The thrift shop and office are at 2220 Fairview Road, Costa Mesa. Awards go to those with 50, 75 and 100 or more hours a year. Events include a spring luncheon and a June Senior Medallion Event.",
+  "verified_on_label": "Oct 14, 2026",
+  "limited": true
  },
  {
   "grades": "9-12",
@@ -6214,6 +6702,49 @@
   "priority": 2,
   "notes": "The same Teens page lists Keystone Clubs (ages 14 to 18) and Youth of the Year (ages 16 to 18, a $20,000 scholarship opportunity, not a job). They are not separate cards because the page gives no joining steps. Staff openings are posted on LinkedIn (the careers page does not list them). Season, pay rate, hours and deadlines are not stated, so confirm with the Club before a teen applies. Paid work for people under 18 in California needs a Permit to Employ and Work. See permit.html?state=ca for the exact permit and steps.",
   "verified_on_label": "Oct 7, 2026"
+ },
+ {
+  "id": "bgc-san-leandro-teen-summer-program",
+  "name": "Teen Summer Program",
+  "org": "Boys & Girls Clubs of San Leandro",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "San Leandro, CA (Teen Clubhouse, 2200 San Leandro Blvd)",
+  "type": "pre-college",
+  "fields": [
+   "arts-media",
+   "tech-cs",
+   "food-hospitality"
+  ],
+  "what_you_do": "You pick hands-on classes such as digital media, cooking, sports, art, tech, wellness and college readiness. You make your own summer schedule at the teen clubhouse.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Rising 9 to 12",
+  "who_can_apply": "High school students, rising 9th to 12th grade. The program page does not list a city rule.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free for teens. This is a program, not a paid job.",
+  "season": "summer",
+  "duration": null,
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The program page is for summer 2027 and says details are coming this spring. No dates are posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Use the Summer Starts Here button on the program page. It goes to the parent portal. Check back this spring for the class list.",
+  "needs_work_permit": false,
+  "url": "https://bgcsl.org/program/teensummer/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://bgcsl.org/program/teensummer/",
+   "https://bgcsl.org/",
+   "https://bgcsl.org/careers/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 3,
+  "notes": "Hours are 10:00am to 5:30pm. The clubhouse has a tech center, recording studio, industrial kitchen and gym. The program page does not list jobs or paid internships. Phone: 510-483-5581. The same club runs a drop-in teen center for ages 13 to 18.",
+  "verified_on_label": "Oct 14, 2026"
  },
  {
   "grades": null,
@@ -11062,6 +11593,45 @@
   "limited": true
  },
  {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": "10-12",
+  "needs_work_permit": false,
+  "id": "bowers-museum-junior-ambassadors",
+  "name": "Bowers Museum Junior Ambassadors",
+  "org": "Bowers Museum",
+  "city": "Santa Ana, CA",
+  "type": "leadership",
+  "fields": [
+   "arts-media",
+   "education"
+  ],
+  "what_you_do": "Work with museum staff to build speaking and leadership skills. You lead visitors on gallery tours. You talk about art and objects from around the world.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "Last time, the program took Orange County high school students entering grades 10 to 12. You need a Bowers Family Membership. Show your interest in art, culture and history.",
+  "paid_type": "fee-based",
+  "pay_detail": "A Bowers Family Membership is required. The page does not state its price. You can use a membership your family already has.",
+  "season": "summer",
+  "duration": "Summer program. Exact length is not stated on the page.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The last open house was Saturday, May 2, 2026, 10:00 to 11:00 a.m. Dates for the next program year are not posted on the page.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Go to the open house with your family. Then apply. Students are picked based on the application and an interview.",
+  "url": "https://bowers.org/index.php/programs/special-events/bowers-museum-junior-ambassadors-open-house",
+  "priority": 2,
+  "notes": "You can earn community service hours. The museum is at 2002 North Main Street, Santa Ana. Call 714-567-3600 for questions.",
+  "sources_fetched": [
+   "https://bowers.org/index.php/programs/special-events/bowers-museum-junior-ambassadors-open-house"
+  ],
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
   "opens_iso": null,
   "apply_url": "https://bgcma.org/local-clubs/parent-portal/",
   "min_age": 6,
@@ -12829,6 +13399,45 @@
   "priority": 2,
   "notes": "The out-of-school program is for ages 18 to 24, so only the in-school program fits most teens. Help can include transportation, interview clothes and school supplies.",
   "verified_on_label": "Oct 7, 2026"
+ },
+ {
+  "id": "cccoe-youth-services-workforce-programs",
+  "name": "Youth Services Workforce Programs (We Can Work, WorkAbility I, WIOA, Transition Partnership)",
+  "org": "Contra Costa County Office of Education",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Contra Costa County, CA",
+  "type": "paid-youth-program",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Get career and school guidance plus a paid work experience that runs all year. The programs are We Can Work, WorkAbility I, WIOA and the Transition Partnership Program.",
+  "min_age": 16,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Eligible youth ages 16 to 24. The page does not list the rules for each program. Use the referral form or call a Youth Services specialist to find out which program fits you.",
+  "paid_type": "paid",
+  "pay_detail": "Paid work experience. The pay rate is not stated on the program page.",
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "The page lists no deadline. The work experience runs all year.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the Youth Referral Form linked on the program page. Or call the Youth Services Supervisor, Esperanza Ellis, at 925-942-3313.",
+  "needs_work_permit": null,
+  "url": "https://www.cccoe.k12.ca.us/Departments--Schools/Departments/Student-Programs/Youth-Services-YS/Workforce-Programs/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.cccoe.k12.ca.us/Departments--Schools/Departments/Student-Programs/Youth-Services-YS/Workforce-Programs/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "Youth Services specialists have their own phone lines on the page, for example 925-296-1505 and 925-296-1507. Another card covers the WIOA in-school program from the same office. Businesses can ask to become a worksite with the worksite form on the page.",
+  "verified_on_label": "Oct 14, 2026"
  },
  {
   "opens_iso": null,
@@ -14604,6 +15213,126 @@
   "priority": 2,
   "notes": "The 14 to 17 range comes from the age options on the interest form, not from a written rule. Call 919-968-2777 or email library@chapelhillnc.gov to confirm the minimum age and hours. The library also has a Teen Room for ages 13 to 18; no teen advisory board was listed on the pages.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": "9-12",
+  "needs_work_permit": false,
+  "id": "chapman-pharmacy-summer-research-program",
+  "name": "Chapman Pharmacy Summer Research Program for High School Students",
+  "org": "Chapman University School of Pharmacy",
+  "city": "Orange, CA",
+  "type": "research",
+  "fields": [
+   "health",
+   "science"
+  ],
+  "what_you_do": "Join a small group of 3 to 5 students. Work with a faculty advisor on a pharmacy research project. You use lab tools, write a report and present your results.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "Students entering grades 9 to 12 in the fall after the program. A 3.0 GPA or higher is suggested. You should like research or health science.",
+  "paid_type": "fee-based",
+  "pay_detail": "The page lists the total cost for 2025 as $1,503. It does not list a 2026 price. Cost covers lab access, food on in-person days and materials.",
+  "season": "summer",
+  "duration": "3 weeks. In 2026 it ran July 13 to July 31.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The 2026 program was full. The page offers a waitlist. Dates for 2027 are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "For a waitlist spot, email the program director, Dr. Hamid Montazeri, using the contact on the program page. Watch the page for the next registration.",
+  "url": "https://www.chapman.edu/pharmacy/explore-the-school/summer-program-for-high-school-students.aspx",
+  "priority": 2,
+  "notes": "You get a certificate of completion and can ask for a letter of reference. Sessions are online and in person. The page lists a full refund if you cancel by June 29, 2026.",
+  "sources_fetched": [
+   "https://www.chapman.edu/pharmacy/explore-the-school/summer-program-for-high-school-students.aspx"
+  ],
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": "10-12",
+  "needs_work_permit": false,
+  "id": "chapman-social-science-pre-college-research",
+  "name": "Chapman Social Science Summer Pre-College Research Experience",
+  "org": "Chapman University, Henley Lab",
+  "city": "Orange, CA",
+  "type": "research",
+  "fields": [
+   "science",
+   "law-government",
+   "education"
+  ],
+  "what_you_do": "Do real social science research with professors and Chapman student mentors. You study data from a national survey about fears. You make a poster and share your findings.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "Students entering grades 10 to 12 in the fall after the program. Students who just finished high school can join too. A 3.5 GPA or higher is suggested.",
+  "paid_type": "fee-based",
+  "pay_detail": "The 2027 cost is not posted yet. You also buy an SPSS grad pack for about $34.95 and bring your own laptop.",
+  "season": "summer",
+  "duration": "Weekdays 9 a.m. to 12 p.m. Exact 2027 dates are not posted.",
+  "status": "unconfirmed",
+  "deadline_text": "Registration for Summer 2027 opens in spring 2027. You can join the priority list now.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the Summer 2027 priority list form on the program page. You will be told when registration opens. Questions go to program director Dr. Ann Gordon.",
+  "url": "https://www.chapman.edu/wilkinson/research-centers/henley-lab/social-science-summerpre-college-research-experience.aspx",
+  "priority": 2,
+  "notes": "2026 was the first year of this program. You get a certificate of completion.",
+  "sources_fetched": [
+   "https://www.chapman.edu/wilkinson/research-centers/henley-lab/social-science-summerpre-college-research-experience.aspx"
+  ],
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": "8-12",
+  "needs_work_permit": false,
+  "id": "chapman-summer-engineering-academy",
+  "name": "Chapman University Summer Engineering Academy",
+  "org": "Chapman University, Fowler School of Engineering",
+  "city": "Orange, CA",
+  "type": "pre-college",
+  "fields": [
+   "engineering",
+   "tech-cs",
+   "science"
+  ],
+  "what_you_do": "Take hands-on engineering workshops on campus. Topics include AI, game development, bioprinting, 3D printing and app design. You need no experience.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "Students in grades 8 to 12 for the 2026-27 school year. No prior experience is needed.",
+  "paid_type": "not-stated",
+  "pay_detail": "The cost is not stated on the program page.",
+  "season": "summer",
+  "duration": "Workshops. The 2026 bioprinting workshop was one day.",
+  "status": "unconfirmed",
+  "deadline_text": "Summer 2027 dates are not posted. Join the interest list on the program page.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Join the interest list for 2027 on the program page. Sign up for each workshop on the same page when it opens.",
+  "url": "https://www.chapman.edu/engineering/summerengineeringacademy.aspx",
+  "sources_fetched": [
+   "https://www.chapman.edu/engineering/summerengineeringacademy.aspx",
+   "https://www.chapman.edu/admission/undergraduate/visit/summer-camps.aspx"
+  ],
+  "priority": 2,
+  "notes": "Workshops are at the Keck Center for Science and Engineering, 450 N. Center St., Orange. Questions: engineering@chapman.edu or 714-516-5616.",
+  "verified_on_label": "Oct 14, 2026"
  },
  {
   "opens_iso": null,
@@ -19621,6 +20350,45 @@
   "limited": true
  },
  {
+  "id": "college-of-alameda-concurrent-enrollment",
+  "name": "College of Alameda Concurrent Enrollment for High School Students",
+  "org": "College of Alameda (Peralta Community Colleges)",
+  "regions": [
+   "alameda"
+  ],
+  "city": "Alameda, CA",
+  "type": "pre-college",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "You take real college classes while you are still in high school.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "High school students. You need a principal's recommendation, a parent's consent and approval from the college. The program page does not name a grade or age limit.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Tuition and fees are free for up to 15 units of approved classes each semester. Books and travel costs are not stated on the program page.",
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "The program page lists no deadlines or term dates.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Talk to your high school counselor and pick a class. Apply to a Peralta college online. Fill out the high school special enrollment form, signed by a parent and your counselor. Bring your transcript and a photo ID to Admissions and Records. Meet a college counselor, then sign up for classes.",
+  "needs_work_permit": false,
+  "url": "https://alameda.edu/concurrent-enrollment",
+  "apply_url": "https://www.peralta.edu/admissions/apply-enroll",
+  "sources_fetched": [
+   "https://alameda.edu/concurrent-enrollment"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "Most students may take up to 11 units in fall and spring and 9 units in summer. The page lists higher limits for CCAP dual enrollment, which has its own agreement. Dual enrollment does not replace a course your high school offers. College of Alameda phone: 510-522-7221.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
   "id": "college-of-san-mateo-dual-enrollment",
   "name": "College of San Mateo Dual Enrollment and Concurrent Enrollment",
   "org": "College of San Mateo",
@@ -22310,6 +23078,47 @@
   "verified_on_label": "Oct 7, 2026"
  },
  {
+  "id": "concord-food-bank-contra-costa-solano-youth-volunteer",
+  "name": "Youth Volunteering at the Food Bank of Contra Costa and Solano",
+  "org": "Food Bank of Contra Costa and Solano",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Concord, CA (warehouse and distribution sites across Contra Costa County)",
+  "type": "volunteer",
+  "fields": [
+   "social-impact",
+   "food-hospitality"
+  ],
+  "what_you_do": "Help get food to neighbors in need. Volunteers work at food warehouses in Concord and Fairfield and at community food distribution sites. You sign up for a shift on the volunteer calendar.",
+  "min_age": 11,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Youth 16 and up can make their own volunteer account and sign up for some shifts. Youth 11 to 15 can volunteer with an adult.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer role.",
+  "season": "year-round",
+  "duration": "By shift",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Shifts are posted on the volunteer calendar. You must sign up for a shift ahead of time because walk-ins are not allowed.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Register as a Food Bank volunteer on its volunteer site. Pick a shift on the calendar. If you are 11 to 15, a parent or guardian signs up too and adds you with the Sign up with a Team button.",
+  "needs_work_permit": false,
+  "url": "https://volunteer.foodbankccs.org/faq",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://volunteer.foodbankccs.org/faq",
+   "https://volunteer.foodbankccs.org/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "The rules for youth come from the Food Bank volunteer FAQ. Youth 5 to 10 can only volunteer at the Family Food Sorts. Youth under 5 cannot volunteer at the Food Bank. Team captains must be 16 or older. The FAQ lists the volunteer help desk as volunteerhelpdesk@foodbankccs.org or 855-309-3663, extension 605. The Food Bank hosts groups too, and a group can send a Group Volunteer Request. Youth 16 and up can sign up for select shifts. The shift details show which ones.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
   "id": "concord-gaining-ground-high-school-farm-team",
   "fields": [
    "environment",
@@ -22349,6 +23158,50 @@
    "https://gainingground.org/volunteer/high-school-farm-team/"
   ],
   "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "concord-parks-recreation-open-space-commission-youth-member",
+  "name": "Youth Member, Parks, Recreation and Open Space Commission",
+  "org": "City of Concord",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Concord, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Sit on the city commission that gives advice on parks, open space, recreation and youth. You share a teen view with the City Council and help shape park and recreation plans.",
+  "min_age": 13,
+  "max_age": 21,
+  "grades": null,
+  "who_can_apply": "Ages 13 to 21 when you are appointed. You must live in Concord or go to school in Concord. You must be able to serve for one year, September 1 to June 30. Part-time seasonal city workers can apply.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page.",
+  "season": "school-year",
+  "duration": "One-year term, Sept 1 to June 30",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 deadline was Friday, June 12, 2026 at 5 PM. The city says it holds a formal recruitment in odd-numbered years, or when a seat opens. The next dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the Youth Commission Application from the city website. Email it to the City Clerk. The adult commissioners pick the youth members.",
+  "needs_work_permit": null,
+  "url": "https://www.cityofconcord.org/398/Parks-Recreation-Open-Space-Commission",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.cityofconcord.org/398/Parks-Recreation-Open-Space-Commission",
+   "https://cityofconcord.org/1291/Youth-Application",
+   "https://www.cityofconcord.org/m/newsflash/home/detail/902",
+   "https://www.cityofconcord.org/263/Boards-Commissions"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "The commission has five adult members and two youth members. The youth term is one year. The Clerk email is cityclerk@cityofconcord.org. The commission meets at 6 PM as needed at 1950 Parkside Drive, Concord.",
+  "verified_on_label": "Oct 14, 2026",
+  "limited": true
  },
  {
   "id": "congressional-app-challenge",
@@ -22391,6 +23244,46 @@
   "priority": 1,
   "notes": "Any language or platform is allowed, solo or teams up to four. Check the Participating Districts page on the site to confirm your district takes part.",
   "verified_on_label": "Oct 7, 2026"
+ },
+ {
+  "id": "contra-costa-4-h-youth-development-program",
+  "name": "Contra Costa 4-H Youth Development Program",
+  "org": "UC Cooperative Extension, Contra Costa 4-H",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Contra Costa County, CA",
+  "type": "leadership",
+  "fields": [
+   "any",
+   "education"
+  ],
+  "what_you_do": "Join a local 4-H club and pick projects to work on during the year. Most meetings and activities are from August through May.",
+  "min_age": 9,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Youth who are 9 by December 31 of the program year and have not turned 19 by that date can join as regular members. Younger children can join as Primary Members.",
+  "paid_type": "fee-based",
+  "pay_detail": "$150 per youth. Financial help is available for youth members.",
+  "season": "school-year",
+  "duration": "Program year runs July 1 to June 30; most meetings are August to May",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Youth enrollment opened Aug 3, 2026 for the 2026-2027 program year. The page gives no closing date.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Find a club near you by place and meeting time. Contact the club leader. Then enroll online in the 4-H system linked on the page, or call the County 4-H Office for help. Pick your projects and pay the fee.",
+  "needs_work_permit": false,
+  "url": "https://ucanr.edu/site/contra-costa-4-h-program/join-4-h",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://ucanr.edu/site/contra-costa-4-h-program/join-4-h"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "Adults who want to volunteer enroll too. Their fee is $30. Adult enrollment opened July 15, 2026. Open the page in a browser to see the club list and the enrollment links.",
+  "verified_on_label": "Oct 14, 2026"
  },
  {
   "id": "contra-costa-college-dual-enrollment",
@@ -22470,6 +23363,47 @@
   "priority": 2,
   "notes": "Contact your branch to see if it is taking volunteers now.",
   "verified_on_label": "Oct 7, 2026"
+ },
+ {
+  "id": "contra-costa-wdb-youth-services",
+  "name": "Youth Services, Workforce Development Board of Contra Costa County",
+  "org": "Workforce Development Board of Contra Costa County",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Concord, CA (serves Contra Costa County)",
+  "type": "paid-youth-program",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Get help to finish school, find a job or start a career. Help can include a case manager, job training, work, a mentor and help with school.",
+  "min_age": 16,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Youth and young adults ages 16 to 24 who have barriers to finishing school, finding a job or starting a career. The page asks if you have a disability, are low income, or have been in the justice system. Those answers can get you Priority of Service.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page. The page lists work experience as one kind of help.",
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "The board offers services all year. No deadline is stated.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Register on CalJOBS, the state job site linked on the page. Then contact the board at the email or phone number on its site. Ask about youth services.",
+  "needs_work_permit": null,
+  "url": "https://www.wdbccc.com/youth-services/",
+  "apply_url": "https://www.caljobs.ca.gov/vosnet/loginintro.aspx",
+  "sources_fetched": [
+   "https://www.wdbccc.com/youth-services/",
+   "https://ehsd.org/workforce-development-board/",
+   "https://www.mdusd.org/departments/educational-services/college-career/wioa"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "The board office is at 4071 Port Chicago Highway, Suite 200, Concord. The page lists wdb@ehsd.cccounty.us and (925) 655-3800. The Mt. Diablo school district runs a WIOA youth program for Central County and Bay Point. Its page points East and West County youth to the County Office of Education. See those cards.",
+  "verified_on_label": "Oct 14, 2026"
  },
  {
   "id": "cook-county-forest-preserves-conservation-corps-summer",
@@ -23467,6 +24401,89 @@
   "needs_work_permit": null,
   "deadline_iso": null,
   "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "danville-town-volunteer-program",
+  "name": "Town of Danville Volunteer Program",
+  "org": "Town of Danville Recreation, Arts and Community Services",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Danville, CA",
+  "type": "volunteer",
+  "fields": [
+   "social-impact",
+   "arts-media"
+  ],
+  "what_you_do": "Help at town events and long projects, such as art gallery helper or theatre usher. You can do one event or stay longer.",
+  "min_age": 12,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Volunteers 12 years and up. If a posting has its own age rule, it is listed in that posting. Volunteers under 18 need a parent or guardian to sign the Volunteer Agreement.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer role.",
+  "season": "year-round",
+  "duration": "One-time events or longer projects",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "New chances are posted through the year. Each posting shows its own dates.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Make a volunteer profile on the town website. Look at the open events and service projects. Sign up for one. For a long project, you send an interest form and town staff contact you.",
+  "needs_work_permit": false,
+  "url": "https://www.danville.ca.gov/229/Volunteer-Opportunities",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.danville.ca.gov/229/Volunteer-Opportunities",
+   "https://www.danville.ca.gov/372/Teens"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "The Teens page says the town has volunteer chances for ages 13 and up. The volunteer page says 12 and up. Check each posting. Verification of community service hours is emailed by request after a volunteer event.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "id": "danville-youth-council",
+  "name": "Danville Youth Council (DYC)",
+  "org": "Town of Danville Recreation, Arts and Community Services",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Danville, CA",
+  "type": "leadership",
+  "fields": [
+   "social-impact",
+   "law-government"
+  ],
+  "what_you_do": "Join a teen group in Danville. You help create programs and special events for youth and teens. You also volunteer and donate time and resources to people in need.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Middle school and high school",
+  "who_can_apply": "Any Danville resident can join. So can any student enrolled in a Danville middle school or high school. The page gives no age range.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page.",
+  "season": "school-year",
+  "duration": "Monthly meetings, September to May",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "The page does not give application dates for 2026-27. It lists the 2025-26 meetings: second Monday of the month, September to May, 4:30 to 5:30 PM.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the Danville Youth Council application. It is an online form linked on the program page.",
+  "needs_work_permit": null,
+  "url": "https://www.danville.ca.gov/396/Danville-Youth-Council",
+  "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLSdjBFU2-US5oqIhk2yWz6zSJNDWmw_f3VI7h7AnGESgr53ExA/viewform",
+  "sources_fetched": [
+   "https://www.danville.ca.gov/396/Danville-Youth-Council",
+   "https://www.danville.ca.gov/372/Teens"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "Meetings are at the Town Offices, 500 La Gonda Way, Danville. The Teens page says the Town is recruiting for part-time positions in youth and teen programming. It does not give an age for those jobs.",
+  "verified_on_label": "Oct 14, 2026",
+  "limited": true
  },
  {
   "id": "davis-aquatics-lifeguard-junior-swim",
@@ -25115,6 +26132,131 @@
   "verified_on_label": "Oct 13, 2026"
  },
  {
+  "id": "diablo-valley-college-concurrent-enrollment",
+  "name": "Concurrent Enrollment for High School Students at Diablo Valley College",
+  "org": "Diablo Valley College",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Pleasant Hill, CA",
+  "type": "pre-college",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Take DVC classes on your own while you are still in high school. You earn college credit. The page has a list of high school friendly classes.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "High school students, including home-schooled students. You need a Special Admissions Recommendation Form each term. You, a parent, and your principal or their designee must sign it. Students on an F-1 international visa cannot be in high school and DVC at the same time.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "California high school students pay no tuition. You pay student union fees and the cost of class materials.",
+  "season": "year-round",
+  "duration": "By term",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "You submit the form every term. This page does not list dates.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Apply to DVC. After you are accepted, submit the Special Admissions Recommendation Form in the student portal. List the classes you want. Then check prerequisites and sign up for classes.",
+  "needs_work_permit": false,
+  "url": "https://www.dvc.edu/academics/high-school-programs/concurrent-enrollment",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.dvc.edu/academics/high-school-programs/concurrent-enrollment"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "A signed form with no classes listed is not accepted. You can only sign up for the classes listed on the form. If you use a school district program such as dual enrollment, follow that program instead. Not sure which one to use? Ask your counselor.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "id": "diablo-valley-college-dual-enrollment-ccap",
+  "name": "Dual Enrollment (CCAP) at Diablo Valley College",
+  "org": "Diablo Valley College",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Pleasant Hill, CA (also the San Ramon campus)",
+  "type": "pre-college",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Take real college classes for free while you are still in high school. Some classes are at DVC campuses, and some are online. You earn college credit.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "High school students in a partner school district: Acalanes, Martinez (Alhambra High School), Mt. Diablo, or San Ramon Valley. Clayton Valley Charter High School also takes part. Each program has its own steps, so talk to your counselor.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Free. You pay no tuition, textbook or enrollment fees.",
+  "season": "year-round",
+  "duration": "Classes by school term",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Each program sets its own dates. For CollegeConnect, the page says current 10th graders are encouraged to apply in February. Ask your counselor about the other programs.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Talk to your high school counselor first. Then follow the steps for your school district on the DVC page. Questions go to the Early College Credit office at DVC.",
+  "needs_work_permit": false,
+  "url": "https://www.dvc.edu/academics/high-school-programs/dual-enrollment",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.dvc.edu/academics/high-school-programs/dual-enrollment"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "College Now is a middle-college program for Mt. Diablo 11th and 12th graders. Classes are at the DVC Pleasant Hill campus. CollegeConnect lets students earn up to 30 college units before they graduate. Diamante Scholars is a separate program for Mt. Diablo seniors. The page lists the Early College Credit email as EarlyCollegeCredit@dvc.edu.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "id": "diablo-valley-college-summer-career-academies",
+  "name": "DVC Summer Career Academies",
+  "org": "Diablo Valley College",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Pleasant Hill, CA (some at the San Ramon campus)",
+  "type": "pre-college",
+  "fields": [
+   "engineering",
+   "tech-cs",
+   "health",
+   "business-finance",
+   "trades",
+   "environment",
+   "arts-media"
+  ],
+  "what_you_do": "Try a career field in a short college class made for high school students. You learn by doing and go on field trips. You earn college credit.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "The classes are made for high school students. In summer they are open to all students. You must come every day. Fields include animation, business, computer programming, health, robotics and trades.",
+  "paid_type": "not-stated",
+  "pay_detail": "Cost is not stated on the academies page.",
+  "season": "summer",
+  "duration": "Short courses of about 1 to 2 weeks. In 2026, Health ran July 27 to 31 and Public Safety ran July 6 to 17.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The Health and Public Safety academies ran in July 2026. Dates for 2027 are not posted. The page lists these steps: apply to DVC, send the Special Admissions form starting in March, and sign up in the student portal starting in May.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply to DVC for summer. Then send the Special Admissions Recommendation Form, signed by you, a parent and your counselor. Then sign up for your academy in the student portal. Use the interest form on the page for updates.",
+  "needs_work_permit": false,
+  "url": "https://www.dvc.edu/academics/high-school-programs/career-academies",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.dvc.edu/academics/high-school-programs/career-academies",
+   "https://www.dvc.edu/academics/high-school-programs/career-academies/health-career-academy",
+   "https://www.dvc.edu/academics/high-school-programs/career-academies/public-safety-career-academy"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "Health is at the Pleasant Hill and San Ramon campuses. The Special Admissions form is for students who are not graduating this spring or earlier. Public Safety is mainly for teens and new graduates who want to be police explorers or cadets.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
   "regions": [
    "los-angeles"
   ],
@@ -26047,6 +27189,132 @@
   "verified_on_label": "Oct 7, 2026"
  },
  {
+  "id": "ebrpd-junior-lifeguard-cadets",
+  "name": "Junior Lifeguard Cadets (Ages 14 to 17)",
+  "org": "East Bay Regional Park District",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Hayward, CA (Don Castro Regional Recreation Area)",
+  "type": "leadership",
+  "fields": [
+   "sports",
+   "environment"
+  ],
+  "what_you_do": "You join a two week summer lifeguard training session in Hayward at Don Castro Regional Recreation Area. Cadets 15 and older can earn Red Cross lifeguard, CPR and AED certification. Younger cadets can earn a CPR and AED card.",
+  "min_age": 14,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "Teens ages 14 to 17. The program page does not list a swim test or a home city rule.",
+  "paid_type": "not-stated",
+  "pay_detail": "Cost is not stated on the program page. Financial aid is offered through the Regional Parks Foundation Campership program.",
+  "season": "summer",
+  "duration": "2 weeks per session, about 4 sessions each summer",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The program page said 2026 cadet applications were due May 6 and accepted cadets had to register by June 12. The next dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Download the Junior Cadet application packet from the program page. Turn it in by the deadline. If you are picked, register by the second deadline.",
+  "needs_work_permit": false,
+  "url": "https://www.ebparks.org/public-safety/lifeguard/junior-cadets",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.ebparks.org/public-safety/lifeguard/junior-cadets",
+   "https://www.ebparks.org/public-safety/lifeguard"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "This is a training class, not a paid job. Sessions are full day only. The program page does not list session dates. It also lists Junior Lifeguards for ages 8 to 12 and Junior Lifeguard Aides for ages 13 to 15, with no details. Call 1-888-327-2757. For lifeguard jobs at age 16 and older, see the district lifeguard jobs page.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "id": "ebrpd-leaders-in-training",
+  "name": "Leaders-in-Training (LIT) at Park'n It Day Camp",
+  "org": "East Bay Regional Park District",
+  "regions": [
+   "alameda",
+   "east-bay"
+  ],
+  "city": "Alameda and Contra Costa Counties, CA (regional parks)",
+  "type": "leadership",
+  "fields": [
+   "environment",
+   "education"
+  ],
+  "what_you_do": "For one week you work with other teens to help lead a day camp for kids in a regional park. You learn real job skills.",
+  "min_age": 13,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "Teens ages 13 to 17. The program page does not list a grade or home city rule.",
+  "paid_type": "fee-based",
+  "pay_detail": "$50 for the one week. A limited number of $30 scholarships are available. The page lists 35 community service hours and does not mention pay.",
+  "season": "summer",
+  "duration": "1 week",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The program page says applications open in 2027 and gives no date. Interviews are in late April. Accepted teens hear back by mid-May.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply when applications open in 2027. If you are picked after the interview, you then register for the week. Ask about the $30 scholarship through the park district financial aid line.",
+  "needs_work_permit": false,
+  "url": "https://www.ebparks.org/programs/day-camps/park-n-it",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.ebparks.org/programs/day-camps/park-n-it",
+   "https://www.ebparks.org/programs/youth-teens"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "The program page says teens earn 35 community service hours, build job skills and may get a future camp job. It does not name the parks. Contact: Stewart Reid, Recreation Coordinator, 510-544-2558. Financial aid: 1-888-327-2757, option 2.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "id": "ebrpd-lifeguard-academy-pathway",
+  "name": "East Bay Regional Park District Lifeguard Jobs and Lifeguard Academy",
+  "org": "East Bay Regional Park District",
+  "regions": [
+   "alameda",
+   "east-bay"
+  ],
+  "city": "Alameda and Contra Costa Counties, CA (regional parks and lakes)",
+  "type": "paid-youth-program",
+  "fields": [
+   "sports",
+   "environment"
+  ],
+  "what_you_do": "You guard swimmers at district pools and beaches. You first take a 10 day paid Lifeguard Academy that teaches the skills.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be 16 or older when the Lifeguard Academy starts in late April. You must swim 550 yards in 10 minutes or less. The district also tests a deep dive and carrying a 150 pound person in open water.",
+  "paid_type": "paid",
+  "pay_detail": "Paid. The program page says a competitive wage but gives no hourly rate. The 10 day Lifeguard Academy is paid, so there is no tuition.",
+  "season": "summer",
+  "duration": "10 day paid academy, then a seasonal job",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "The program page gives no application dates. The Lifeguard Academy begins in late April. Check the job portal for open posts.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the online application on the park district job portal. Pick the lifeguard posting. You must be free for all 10 days of the academy.",
+  "needs_work_permit": null,
+  "url": "https://www.ebparks.org/public-safety/lifeguard/jobs",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.ebparks.org/public-safety/lifeguard/jobs",
+   "https://www.ebparks.org/jobs/youth/lifeguard-pathway",
+   "https://www.ebparks.org/public-safety/lifeguard"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 1,
+  "notes": "Lifeguard I is the entry job at age 16. Head lifeguard jobs need age 18 and a finished 12th grade. The program page does not say if a work permit is needed for 16 and 17 year olds, so ask HR. The district also lists younger water programs: Junior Lifeguard Aides (ages 13 to 15) and Jr Lifeguard Cadets (ages 14 to 17), with no details on that page. Call 1-888-327-2757.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
   "id": "ebrpd-student-jobs",
   "name": "East Bay Regional Park District Youth and Student Jobs",
   "org": "East Bay Regional Park District",
@@ -26541,6 +27809,87 @@
   "priority": 2,
   "notes": "Hospital does not offer summer-only or programs shorter than one year. Locations are Mountain View and Los Gatos. Spots are limited (earlier check).",
   "verified_on_label": "Oct 7, 2026"
+ },
+ {
+  "id": "el-cerrito-police-explorers",
+  "name": "El Cerrito Police Explorers",
+  "org": "El Cerrito Police Department",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "El Cerrito, CA",
+  "type": "volunteer",
+  "fields": [
+   "law-government"
+  ],
+  "what_you_do": "Help the police and your town as a volunteer Explorer. Your Post does many jobs for the police and the town.",
+  "min_age": 14,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Youth ages 14 to 18 with at least an average C grade or better in school. You can stay in the Post until your 21st birthday. A criminal record does not always block you, but every applicant gets a background check. The form has a line for a parent or guardian to sign.",
+  "paid_type": "unpaid",
+  "pay_detail": "Explorers donate at least 12 hours a month, counted every quarter. The department buys the uniform. You bring your own shoes or boots.",
+  "season": "year-round",
+  "duration": "At least 12 hours a month",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No application dates are stated on the program page or on the application form.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the Police Explorers application, a PDF on the city website. Give three reasons you want to join. A parent or guardian signs it too. Every applicant gets a background check.",
+  "needs_work_permit": false,
+  "url": "https://www.elcerrito.gov/700/Volunteer-Opportunities",
+  "apply_url": "https://www.elcerrito.gov/DocumentCenter/View/494",
+  "sources_fetched": [
+   "https://www.elcerrito.gov/700/Volunteer-Opportunities",
+   "https://www.elcerrito.gov/DocumentCenter/View/494"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "The paper application has a line for a Social Security number. Ask the department why before you write it down, and never send it by email. The form has no date, so ask the department if it is the current one. The same page lists a paid Cadet Program for college students. It also lists Volunteers in Police Service for adults 18 and older.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "id": "el-cerrito-youth-member-advisory-bodies",
+  "name": "Youth Member on City Advisory Bodies (non-voting)",
+  "org": "City of El Cerrito",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "El Cerrito, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Join a city commission or committee as a youth member. You go to meetings and share a teen view. You do not vote.",
+  "min_age": 14,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Ages 14 to 18 who go to El Cerrito High School or live in El Cerrito. A parent or guardian must give written consent. You can serve until your 19th birthday or until you graduate from El Cerrito High School.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page.",
+  "season": "year-round",
+  "duration": "Until age 19 or graduation",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Applications are accepted on an ongoing basis. Each application on file stays valid for one year from the date received.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Submit the youth application on the city page. A parent or guardian must give written consent. Applicants will be invited to interview with the City Council at a publicly noticed meeting. The City Clerk handles questions.",
+  "needs_work_permit": null,
+  "url": "https://www.elcerrito.gov/93/Boards-Commissions",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.elcerrito.gov/93/Boards-Commissions"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "Ten city groups want a youth member. They include the Park and Recreation Commission, the Planning Commission and the Committee on Aging. The full list is on the page. Youth members must follow attendance rules and do orientation training. They also take a one-hour harassment prevention training. City Clerk phone: 510-215-4305.",
+  "verified_on_label": "Oct 14, 2026",
+  "limited": true
  },
  {
   "regions": [
@@ -27057,6 +28406,45 @@
   "priority": 1,
   "notes": "Competitive. Parents or guardians handle off-campus housing and care for students under 18. Dates shown are from the 2026 page. Georgia Department of Labor says a work permit is required for minors under 16; this program starts at 16.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": null,
+  "needs_work_permit": false,
+  "id": "enc-leaders-in-training",
+  "name": "Environmental Nature Center Leaders in Training",
+  "org": "Environmental Nature Center",
+  "city": "Newport Beach, CA",
+  "type": "volunteer",
+  "fields": [
+   "environment",
+   "education"
+  ],
+  "what_you_do": "Volunteer with staff at nature camps for kids. You get hands-on practice in nature education and working with kids.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "You must be enrolled in high school. New applicants are interviewed. A non-parent adult must fill out your reference form.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer program.",
+  "season": "winter",
+  "duration": "Winter Nature Camps: December 21 to 23 and December 28 to 31, 2026",
+  "status": "open-now",
+  "deadline_text": "Winter Nature Camp applications are open now. No closing date is posted. Camp dates are December 21 to 23 and December 28 to 31, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the LIT application on the program page. Your reference fills out the reference form. Staff set up interviews after both are in. You must come to a training of about 1.5 hours before each camp.",
+  "url": "https://encenter.org/volunteer-enc/students/leaders/",
+  "priority": 1,
+  "notes": "Camps are held in Newport Beach and Modjeska Canyon. Students, not parents, must talk to ENC staff. Returning LITs do not need to interview again. Bring school paperwork on your last day.",
+  "sources_fetched": [
+   "https://encenter.org/volunteer-enc/students/leaders/"
+  ],
+  "verified_on_label": "Oct 14, 2026"
  },
  {
   "id": "endeavor-health-edward-hospital-student-volunteer",
@@ -32264,6 +33652,126 @@
   "verified_on_label": "Oct 12, 2026"
  },
  {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": null,
+  "needs_work_permit": false,
+  "id": "garden-grove-camp-grove-counselor-in-training",
+  "name": "Camp Grove Counselor-in-Training (Garden Grove)",
+  "org": "City of Garden Grove Community Services Department",
+  "city": "Garden Grove, CA",
+  "type": "leadership",
+  "fields": [
+   "education",
+   "social-impact"
+  ],
+  "what_you_do": "Help run Camp Grove, the city summer day camp for kids ages 5 to 12. You get hands-on experience and build leadership skills.",
+  "min_age": 13,
+  "max_age": 17,
+  "who_can_apply": "Youth 13 to 17 years old. You must fill out the application yourself.",
+  "paid_type": "fee-based",
+  "pay_detail": "You pay $60 for each week. Week 8 costs $120 and week 9 costs $85, and those two fees are not refundable. The weekly cost includes the camp trip fee.",
+  "season": "summer",
+  "duration": "Camp Grove runs 9 weeks. In 2026 it ran June 8 to August 7.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The 2026 application was due Monday, May 4, 2026. The 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the Counselor-In-Training application linked on the program page. Fees are due two weeks before your assigned week. Call the recreation counter at 714-741-5200 to ask where to turn it in.",
+  "url": "https://ggcity.org/community-services/day-camp",
+  "priority": 2,
+  "notes": "This is a program you pay to join. It is not a paid job. Camp Grove is at Edgar Park, 12781 Topaz Street.",
+  "sources_fetched": [
+   "https://ggcity.org/community-services/day-camp"
+  ],
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": "https://www.governmentjobs.com/careers/gardengrove",
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": null,
+  "needs_work_permit": true,
+  "id": "garden-grove-recreation-leader-jobs-age-16",
+  "name": "Garden Grove Recreation Leader Jobs (Atlantis Play Center and Sports)",
+  "org": "City of Garden Grove Community Services Department",
+  "city": "Garden Grove, CA",
+  "type": "paid-youth-program",
+  "fields": [
+   "sports",
+   "education",
+   "food-hospitality"
+  ],
+  "what_you_do": "Work part time at the Atlantis Play Center or the Sports and Recreation Center. You may help run the snack bar and splash pad. You may help with events. You may also referee and keep score at youth games.",
+  "min_age": 16,
+  "max_age": null,
+  "who_can_apply": "For the Atlantis Play Center and Sports jobs, you must be at least 16 years old by May 20, 2026. Day camp and resource center jobs on the same page are for ages 18 and up, by May 20, 2026.",
+  "paid_type": "paid",
+  "pay_detail": "Recreation Leader pay is $17.00 to $19.00 an hour. Recreation Specialist pay is $18.50 to $20.50 an hour.",
+  "season": "year-round",
+  "duration": "Part time. Hours vary with the program.",
+  "status": "unconfirmed",
+  "deadline_text": "The page lists 2026 age cutoff dates. It gives no closing date. Use the Apply link to see which jobs are open now.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Use the Apply Now link on the city page to apply on the city job site.",
+  "url": "https://ggcity.org/community-services/recjobs",
+  "priority": 2,
+  "notes": "Lifeguard and Instructor Guard jobs are on the same page. The page does not state a minimum age for them. Atlantis Play Center and Sports jobs are year round. Paid work for people under 18 in California needs a Permit to Employ and Work.",
+  "sources_fetched": [
+   "https://ggcity.org/community-services/recjobs"
+  ],
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": null,
+  "needs_work_permit": false,
+  "id": "garden-grove-teen-action-collaborative",
+  "name": "Garden Grove Teen Action Collaborative (GGTAC)",
+  "org": "City of Garden Grove Community Services Department",
+  "city": "Garden Grove, CA",
+  "type": "leadership",
+  "fields": [
+   "social-impact",
+   "education"
+  ],
+  "what_you_do": "Join a teen leadership group. You do service projects, volunteer at city events and go to career workshops. You can also apply for scholarships.",
+  "min_age": 13,
+  "max_age": 17,
+  "who_can_apply": "Teens who are 13 to 17 years old by November 19, 2026. The page calls it a program by and for Garden Grove teens. A parent or guardian must sign the forms.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. No fee is listed on the program page. Members can apply for scholarships.",
+  "season": "school-year",
+  "duration": "September 2026 to April 2027, one meeting a month",
+  "status": "open-now",
+  "deadline_text": "Applications are accepted September 1 through November 19, 2026. Meetings are the 3rd Thursday of each month, 4:00 to 5:00 p.m.",
+  "deadline_iso": "2026-11-19",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the application and the contract. A parent or guardian signs them. You can email them to ggtac@ggcity.org. You can also drop them off at City Hall, 11222 Acacia Parkway. Or bring them to the next general meeting.",
+  "url": "https://ggcity.org/ggtac",
+  "sources_fetched": [
+   "https://ggcity.org/ggtac",
+   "https://ggcity.org/sites/default/files/2026-2027-ggtac-application-color-fillable_updated.pdf",
+   "https://ggcity.org/sites/default/files/ggtac-2026-2027-volunteer-opportunities.pdf"
+  ],
+  "priority": 1,
+  "notes": "Members must go to the monthly meetings and join at least 2 volunteer events. Meetings are at the Community Meeting Center, 11300 Stanford Avenue, and food is provided. Planned events include Foods of Garden Grove Live, Jack O Lantern Jamboree and Winter in the Grove. To win a scholarship you must go to at least 4 meetings and volunteer at 2 GGTAC events. Questions: 714-741-5360.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "id": "gcps-work-based-learning",
@@ -35245,6 +36753,46 @@
   "verified_on_label": "Oct 13, 2026"
  },
  {
+  "id": "hayward-area-historical-society-volunteers",
+  "name": "Hayward Area Historical Society Volunteers",
+  "org": "Hayward Area Historical Society",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Hayward, CA (22380 Foothill Blvd)",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "arts-media"
+  ],
+  "what_you_do": "You help at the history museum and old houses. You can lead tours, greet guests, help kids with crafts or work the front desk.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Volunteers must be 16 or older. The program page has no separate teen track.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer. The program page does not list pay or service hours.",
+  "season": "year-round",
+  "duration": null,
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "The program page lists no deadline.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Email the education office or call the museum and ask to volunteer. You log your hours online after you start.",
+  "needs_work_permit": false,
+  "url": "https://www.haywardareahistory.org/volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.haywardareahistory.org/volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 3,
+  "notes": "The program page does not describe orientation, training or required hours. Phone: 510-581-0223, extension 161. The internships on the same page are for college and graduate students, not high school.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
   "id": "hayward-area-recreation-park-district-volunteers",
   "name": "H.A.R.D. Volunteer Program (Hayward Area Recreation and Park District)",
   "org": "Hayward Area Recreation and Park District (H.A.R.D.)",
@@ -36863,6 +38411,84 @@
   "priority": 1,
   "notes": "Contact: Teen Services Librarian Katelyn Wong (Katelyn.Wong@surfcity-hb.org) or the library at 714-842-4481. The page also lists other Huntington Beach volunteer groups for teens, with their own age rules. They are Bolsa Chica Conservancy, Bolsa Chica Land Trust, Shipley Nature Center and OC Coastkeeper cleanups. Some entries on the page look copy-pasted, so confirm details with staff.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": null,
+  "needs_work_permit": true,
+  "id": "huntington-beach-ocean-lifeguard",
+  "name": "Huntington Beach Ocean Lifeguard I (Recurrent)",
+  "org": "City of Huntington Beach Fire Department, Marine Safety Division",
+  "city": "Huntington Beach, CA",
+  "type": "paid-youth-program",
+  "fields": [
+   "sports",
+   "health"
+  ],
+  "what_you_do": "Work as a seasonal ocean lifeguard on city beaches. You do ocean rescues and give first aid. You warn people about dangers in the water. You get paid during training.",
+  "min_age": 17,
+  "max_age": null,
+  "who_can_apply": "You must be 17 years old by July 1 of the year you are hired, with proof. You must pass a 1,000-yard pool swim in under 15 minutes and an 1,800-yard ocean run-swim-run.",
+  "paid_type": "paid",
+  "pay_detail": "$22.50 to $27.50 an hour in the 2026 posting. Lifeguards are paid during the academy.",
+  "season": "summer",
+  "duration": "Seasonal, as-needed work with weekends and holidays",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The 2026 summer posting opened Aug 12, 2025 and closed Apr 13, 2026. The exam was April 4, 2026. The 2027 summer dates are not posted on this page.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online on the city job site before the exam. Pass the exam and go to an interview. The best scorers join the paid training academy.",
+  "url": "https://www.governmentjobs.com/careers/huntingtonbeach/jobs/5039904/ocean-lifeguard-i-recurrent",
+  "priority": 1,
+  "notes": "A 16-year-old can apply only if they were a Huntington Beach Junior Guard last summer. Marine Safety must also back them. New hires get a uniform, fins, sunglasses and a beach parking pass. Check the city job board for the 2027 posting. Paid work under 18 in California needs a Permit to Employ and Work.",
+  "sources_fetched": [
+   "https://www.governmentjobs.com/careers/huntingtonbeach/jobs/5039904/ocean-lifeguard-i-recurrent"
+  ],
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": null,
+  "needs_work_permit": false,
+  "id": "huntington-beach-police-explorers",
+  "name": "Huntington Beach Police Explorers",
+  "org": "Huntington Beach Police Department",
+  "city": "Huntington Beach, CA",
+  "type": "volunteer",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Learn about police and public safety jobs. The program builds leadership and teamwork. You also do community service.",
+  "min_age": 14,
+  "max_age": 20,
+  "who_can_apply": "Ages 14 through 20. The page also says the maximum age to apply is 19. Ask the department which age applies to you. You must be in high school or a graduate. Keep a 2.0 GPA. Pass a medical exam and a background check. You cannot have a felony conviction.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page.",
+  "season": "year-round",
+  "duration": "Monthly training on the 2nd and 4th Thursday of each month. Volunteer at least 4 hours a month.",
+  "status": "unconfirmed",
+  "deadline_text": "No dates are posted. Start with the interest form on the program page.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the interest form. An advisor emails you. Go to an information meeting. Turn in the application and a Hold Harmless form. Pass a medical exam. Then take an agility test, an oral interview and a background check.",
+  "url": "https://www.huntingtonbeachca.gov/departments/police/community_programs/police_explorers.php",
+  "priority": 2,
+  "notes": "The agility test has a 1-mile run, sit-ups, push-ups and a flex arm hang. The city also runs a Fire Explorer program.",
+  "sources_fetched": [
+   "https://www.huntingtonbeachca.gov/departments/police/community_programs/police_explorers.php"
+  ],
+  "verified_on_label": "Oct 14, 2026"
  },
  {
   "grades": "High school (can apply the summer before 9th grade)",
@@ -39480,6 +41106,46 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": null,
+  "needs_work_permit": false,
+  "id": "irvine-police-explorer-program",
+  "name": "Irvine Police Department Explorer Program",
+  "org": "Irvine Police Department",
+  "city": "Irvine, CA",
+  "type": "volunteer",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Train with Irvine police. Help with traffic control, community events and DUI checkpoints. After a 5-day academy, you can ride along on patrol.",
+  "min_age": 14,
+  "max_age": 18,
+  "who_can_apply": "Ages 14 to 18, or finished 8th grade and going into 9th. You must live in Irvine or go to school there. Keep a C or better in every class. You cannot have criminal convictions or serious traffic offenses.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. The page calls it a volunteer program.",
+  "season": "year-round",
+  "duration": "Most Explorers stay until high school graduation",
+  "status": "unconfirmed",
+  "deadline_text": "Send in the interest card by January 1 for the winter session or by June 1 for the summer session. The page does not state the year.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the Interest Form on the program page. Interest cards are due January 1 for winter or June 1 for summer. Email ipdexplorers@cityofirvine.org with questions.",
+  "url": "https://irvinepd.gov/irvine-police-explorer-program/",
+  "priority": 2,
+  "notes": "The Orange County Explorer Academy is held twice a year. It is a hard 5-day program. You must finish it within a year of joining. The group also takes trips, such as a weekend in Sacramento for the Peace Officers' Memorial.",
+  "sources_fetched": [
+   "https://irvinepd.gov/irvine-police-explorer-program/"
+  ],
+  "verified_on_label": "Oct 14, 2026",
+  "limited": true
+ },
+ {
   "grades": "Rising 11th and 12th graders",
   "max_age": null,
   "apply_url": null,
@@ -39557,6 +41223,47 @@
    "https://www.ivc.edu/dual-enrollment/general"
   ],
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": null,
+  "needs_work_permit": null,
+  "id": "irvine-youth-service-corps-summer-high-school",
+  "name": "One Irvine Workforce Youth Service Corps Summer High School Program",
+  "org": "City of Irvine",
+  "city": "Irvine, CA",
+  "type": "paid-youth-program",
+  "fields": [
+   "education",
+   "social-impact",
+   "any"
+  ],
+  "what_you_do": "High school students work as Community Services Leaders. You help with summer camps, art programs, events and park setup. You also get job and leadership training.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "High school students of all backgrounds can apply. Irvine residents get priority. Priority also goes to youth who are low-income or out of school. It also goes to youth in foster care and first-generation college students.",
+  "paid_type": "not-stated",
+  "pay_detail": "Pay is not stated on the program page. The page calls the roles jobs (\"hiring\").",
+  "season": "summer",
+  "duration": "About 20 hours a week. Shifts run 7 a.m. to 10 p.m., weekdays and weekends.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The page gives no closing date. It says to check back in February 2027.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "The page gives no application link or contact for this summer program. It says to check back in February 2027.",
+  "url": "https://www.cityofirvine.gov/human-resources-department/one-irvine-workforce",
+  "priority": 1,
+  "notes": "This program is part of a California Volunteers Youth Service Corps grant. The same page lists an adult job program for ages 18 to 30. That one is not for high school students. Training covers job search, interviewing, leadership, customer service and financial literacy.",
+  "sources_fetched": [
+   "https://www.cityofirvine.gov/human-resources-department/one-irvine-workforce"
+  ],
+  "verified_on_label": "Oct 14, 2026",
+  "limited": true
  },
  {
   "id": "ithaca-tompkins-county-public-library-teen-volunteer",
@@ -44587,6 +46294,45 @@
   "verified_on_label": "Oct 12, 2026"
  },
  {
+  "id": "larpd-junior-lifeguard-academy",
+  "name": "Jr. Lifeguard Academy (StarGuard Junior Lifeguard)",
+  "org": "Livermore Area Recreation and Park District",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Livermore, CA (Robert Livermore Aquatic Center)",
+  "type": "leadership",
+  "fields": [
+   "sports"
+  ],
+  "what_you_do": "You learn basic water lifesaving and first aid in a four day summer class. You take part in guided challenges and activities at the pool.",
+  "min_age": 11,
+  "max_age": 14,
+  "grades": null,
+  "who_can_apply": "Ages 11 to 14. You do not need lifesaving or first aid skills. The program page asks you to be comfortable in the water and have basic swim skills.",
+  "paid_type": "fee-based",
+  "pay_detail": "$100 for Livermore residents and $120 for non-residents.",
+  "season": "summer",
+  "duration": "4 days, 3 hours a day",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The program page lists three June sessions: June 1 to 4, June 15 to 18 and June 29 to July 2. It does not give a year, and next summer is not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Pick a session on the program page. Use the register link for that session. The page does not give sign up dates.",
+  "needs_work_permit": false,
+  "url": "https://www.larpd.org/jr-lifeguard-camps-summer",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.larpd.org/jr-lifeguard-camps-summer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 3,
+  "notes": "Sessions run Monday to Thursday, 1 to 4 p.m. This is a class, not a job. The program page footer says 2026, and the course numbers end in 26. It does not state the camp year. Phone 925-373-5700.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
   "id": "larpd-summer-youth-volunteer",
   "name": "Summer Youth Volunteer Program",
   "org": "Livermore Area Recreation and Park District (LARPD)",
@@ -46610,6 +48356,46 @@
   "limited": true
  },
  {
+  "id": "livermore-library-young-adult-volunteers",
+  "name": "Young Adult Volunteers (Summer Learning Program)",
+  "org": "Livermore Public Library",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Livermore, CA",
+  "type": "volunteer",
+  "fields": [
+   "education"
+  ],
+  "what_you_do": "You help the library with its Summer Learning Program. You do many small library tasks.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Entering 6 to 12 in 2026-27",
+  "who_can_apply": "Students entering grades 6 to 12 in the 2026-27 school year. You must live in Livermore. Each applicant needs a separate account and email.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer. The program page does not mention community service hours.",
+  "season": "summer",
+  "duration": null,
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The program page lists an application deadline of April 13, 2025. That date is before the 2026 program, so the real deadline is unclear. The page does not give a next deadline or the next summer's dates.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Click Fill in an application on the volunteer page. If you already have an account on the library volunteer portal, log in. You must go to an orientation and log your hours in your account.",
+  "needs_work_permit": false,
+  "url": "https://app.betterimpact.com/PublicOrganization/fe9b917d-6446-45c2-a8ff-d38d128d8d80/Gvi/8a81535c-fe08-4ffa-92d0-cd04692a0e52/2",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://app.betterimpact.com/PublicOrganization/fe9b917d-6446-45c2-a8ff-d38d128d8d80/Gvi/8a81535c-fe08-4ffa-92d0-cd04692a0e52/2"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "The program page does not give start and end dates, orientation details or the number of hours. Ask the library before you apply. The listing is for summer 2026, so look for the next summer posting.",
+  "verified_on_label": "Oct 14, 2026",
+  "limited": true
+ },
+ {
   "grades": null,
   "opens_iso": null,
   "apply_url": "https://app.betterimpact.com/Application?OrganizationGuid=c01ba467-a57e-445c-aa9e-86685c599966&ApplicationFormNumber=2",
@@ -47292,6 +49078,46 @@
   "priority": 3,
   "notes": "Expensive. Prices and deadlines above are the summer 2026 numbers; the 2027 numbers may change. The pages did not give an age limit.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "los-medanos-college-dual-enrollment",
+  "name": "High School Dual Enrollment at Los Medanos College",
+  "org": "Los Medanos College",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Pittsburg, CA (classes at partner high schools)",
+  "type": "pre-college",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Take college classes taught at your high school, or sometimes on the Los Medanos campus. You earn college credit. The classes can help with college and career plans.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "11th and 12th grade",
+  "who_can_apply": "11th and 12th graders at a high school in the program. The page names the AUSD, LUHSD and PUSD districts. You need a signed Dual Enrollment Authorization form from a parent and your counselor. Your principal must recommend you. You do not need to be in a special program.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Free. The page says there are no course costs and no textbook costs. Your school district pays for textbooks.",
+  "season": "year-round",
+  "duration": "By semester",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "The page lists no dates. Ask your high school counselor when sign-up is each term.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Go to your high school counselor for the form and the steps. Get the signatures from a parent and your counselor. Your principal must recommend you.",
+  "needs_work_permit": false,
+  "url": "https://www.losmedanos.edu/earlycollegecredit/program.aspx",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.losmedanos.edu/earlycollegecredit/program.aspx",
+   "https://www.losmedanos.edu/registration/concurrent/index.aspx"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "The page says it was last updated 3/15/22, so ask your counselor to confirm the steps. Grades from these classes go on your college transcript. You can also take other Los Medanos classes on your own time as a concurrent student, with principal approval. You pay all fees and costs for those concurrent classes.",
+  "verified_on_label": "Oct 14, 2026"
  },
  {
   "id": "los-rios-dual-enrollment",
@@ -50177,6 +52003,88 @@
   "verified_on_label": "Oct 10, 2026"
  },
  {
+  "id": "martinez-central-san-externship",
+  "name": "Externship Program",
+  "org": "Central Contra Costa Sanitary District (Central San)",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Martinez, CA",
+  "type": "shadowing",
+  "fields": [
+   "environment",
+   "engineering",
+   "trades"
+  ],
+  "what_you_do": "Learn about careers in water and wastewater in a short program with an in-person tour. You hear how to apply for summer and internship jobs. You can join online or in person.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school and up",
+  "who_can_apply": "High school students, college students, teachers and recent graduates can join. Students under 18 need a signed permission slip from a parent or guardian to go on the in-person tour. Say in your application if you are under 18.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. You pay for your own travel and meals.",
+  "season": "winter",
+  "duration": "In 2026: four partial days over two weeks in February",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 session was in February. The page says the next session will be announced in 2027. Join the mailing list to hear when.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Join the mailing list with the form on the program page. You will get an email when the next session is announced.",
+  "needs_work_permit": false,
+  "url": "https://www.centralsan.org/externship",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.centralsan.org/externship"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "The program is free to join. In-person events are optional, because you can take part fully online. Central San works with Contra Costa Water District on the program. Central San is at 5019 Imhoff Place, Martinez.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "id": "martinez-central-san-summer-student-program",
+  "name": "Summer Student Program",
+  "org": "Central Contra Costa Sanitary District (Central San)",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Martinez, CA",
+  "type": "paid-youth-program",
+  "fields": [
+   "environment",
+   "engineering",
+   "trades"
+  ],
+  "what_you_do": "Work a summer job at the sewer and wastewater district. You explore careers in the field and get hands-on work experience in an area you pick.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Students who are 16 or older and are in school now or going back in the fall. If you have not graduated from high school, a work permit must be obtained.",
+  "paid_type": "paid",
+  "pay_detail": "$30 per hour",
+  "season": "summer",
+  "duration": "Up to four months",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The page says summer student applications are taken in the first two weeks of March. The exact dates for next year are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply in the first two weeks of March. The page does not say where to apply, so ask Central San. If you have not graduated from high school, a work permit must be obtained.",
+  "needs_work_permit": true,
+  "url": "https://www.centralsan.org/post/summer-student-and-internship-programs",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.centralsan.org/post/summer-student-and-internship-programs"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "Summer students are at-will, short-term workers. They do not get benefits or a promise of a regular job. When school is not in session, a minor can work up to 8 hours a day and 40 hours a week. Central San is at 5019 Imhoff Place, Martinez. The internship programs on the same page are for college students.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
   "grades": "Juniors and seniors",
   "opens_iso": null,
   "deadline_iso": null,
@@ -51658,6 +53566,128 @@
   ],
   "notes": "Center address: 10900 Old Court Rd, Woodstock, MD 21163. No closure notice showed on the program pages on 2026-10-10. The old /training-programs page gave a 404 error. The current list is at /train. The application asks for ID, Social Security number and proof of income. Only enter these on the official jobcorps.gov site. Do it with a parent or guardian. A parent should ask an admissions staff member about the rules for 16 and 17 year olds.",
   "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "mdusd-college-now-at-diablo-valley-college",
+  "name": "College Now (MDUSD and Diablo Valley College)",
+  "org": "Mt. Diablo Unified School District and Diablo Valley College",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Pleasant Hill, CA (at Diablo Valley College)",
+  "type": "pre-college",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Spend your junior and senior years on a college campus. You take three high school classes taught by Mt. Diablo teachers. You take the rest of your classes at DVC and earn high school and college credit.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "11th and 12th grade",
+  "who_can_apply": "Mt. Diablo Unified students who are interested and eligible. In 2026-2027 class capacity will be 60 juniors and 60 seniors. Talk to your high school counselor about the rules.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Cost is not stated on the College Now page. DVC says its dual enrollment classes are free.",
+  "season": "school-year",
+  "duration": "Junior and senior years",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Applications for 2026-2027 were due Thursday, Feb 12, 2026, with no late applications. The page says the application is held in the spring. The next dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Talk to your high school counselor. Then fill out the College Now student application on the program page. A recommendation form is also on the page. Go to the parent night if you can.",
+  "needs_work_permit": false,
+  "url": "https://www.mdusd.org/departments/educational-services/college-career/college-now-program",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.mdusd.org/departments/educational-services/college-career/college-now-program",
+   "https://www.mdusd.org/departments/educational-services/college-career/college-now-program/student-application",
+   "https://www.dvc.edu/academics/high-school-programs/dual-enrollment"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "The program started in fall 2016. The 2026 parent night was Wed, Feb 4, 2026. Staff phone on the page: 925-969-2512. The DVC page also lists a related program called Diamante Scholars for Mt. Diablo seniors.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "id": "mdusd-student-board-member",
+  "name": "Student Board Member, Mt. Diablo Unified School District",
+  "org": "Mt. Diablo Unified School District",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Concord, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "education"
+  ],
+  "what_you_do": "Sit with the school board as the voice of students. You go to board meetings, give input on decisions, and lead the Student Advisory Committee. You are seated with the board and can take part in discussions and cast preferential votes.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Entering 11th or 12th grade",
+  "who_can_apply": "Current Mt. Diablo Unified students who will be in 11th or 12th grade in the year they serve. You need at least a 2.0 grade point average and must be enrolled in 20 credits.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page.",
+  "season": "school-year",
+  "duration": "One school year, July 1 to June 30",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Applications for 2026-2027 were due May 29, 2026. The district picks a new Student Board Member each year. The next dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the Student Board Member Application when the district posts it. For 2026-2027 it was sent by email to Laura Juranek at juranekl@mdusd.org, due May 29, 2026.",
+  "needs_work_permit": null,
+  "url": "https://www.mdusd.org/about/student-board-member",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.mdusd.org/about/student-board-member",
+   "https://www.mdusd.org/about/student-board-member/student-advisory-committee"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "Board meetings are usually on the second and fourth Wednesday of the month, starting at 6:00 PM. The Student Advisory Committee advises the Student Board Member. Its 2025-26 meetings were at Concord High School. The district is at 1936 Carlotta Drive, Concord.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "id": "mdusd-yes-wioa-youth-program",
+  "name": "Youth Empowerment Services (YES), WIOA Youth Program",
+  "org": "Mt. Diablo Unified School District",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Concord, CA (serves Central Contra Costa County and Bay Point)",
+  "type": "paid-youth-program",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "You get a case manager who helps you finish school, plan for college or a career, and find work. Help includes tutoring, job training, mentors, and paid and unpaid work experience.",
+  "min_age": 16,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Youth ages 16 to 24 who live in Central Contra Costa County or Bay Point. You must be able to work in the U.S. and show proof of low income. Priority goes to McKinney-Vento (HOPE) youth, foster youth, and justice-involved youth in Bay Point and on the Monument Corridor. Being pregnant or parenting, an English learner, or having an IEP or 504 plan can also help you qualify.",
+  "paid_type": "not-stated",
+  "pay_detail": "The page lists paid and unpaid work experience. Pay is not stated on the program page.",
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Ongoing. No deadline is stated on the program page.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the Refer a Youth form on the program page. A coordinator then works with you. Questions: Anna Ramos, 925-685-1011, extension 62028.",
+  "needs_work_permit": null,
+  "url": "https://www.mdusd.org/departments/educational-services/college-career/wioa",
+  "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLScfKmwZL57AieaIP3TKTFPb9VeZGonzjbJK0RZmxpEHO4pN_Q/viewform",
+  "sources_fetched": [
+   "https://www.mdusd.org/departments/educational-services/college-career/wioa"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "The Workforce Development Board of Contra Costa County funds and supports this WIOA grant. For East or West Contra Costa County, the page points to the County Office of Education. The page lists 14 required program elements, including leadership development and financial literacy education.",
+  "verified_on_label": "Oct 14, 2026",
+  "limited": true
  },
  {
   "id": "medshare-youth-volunteers",
@@ -54945,6 +56975,45 @@
   "verified_on_label": "Oct 7, 2026"
  },
  {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": "9-11",
+  "needs_work_permit": false,
+  "id": "mission-hospital-high-school-auxiliary",
+  "name": "Mission Hospital High School Auxiliary (Providence)",
+  "org": "Auxiliary of Providence Mission Hospital",
+  "city": "Mission Viejo and Laguna Beach, CA",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Volunteer for 4 hours a week in a hospital department. You help patients, visitors and staff but do not give direct patient care. You stay in the program until you graduate.",
+  "min_age": 15,
+  "max_age": null,
+  "who_can_apply": "You must attend a local high school. You must be a freshman, sophomore or junior when you apply. You must turn 15 by February 1 of the following year.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. You pay a one-time $125 membership fee for an ID badge, polo shirt and jacket. You also buy black khakis and shoes.",
+  "season": "year-round",
+  "duration": "One 4-hour shift a week, year round, until you graduate",
+  "status": "open-now",
+  "deadline_text": "Applications open September 1 and are due by the 3rd Monday of October. Applications received before or after that date are not accepted. The form is for the 2027 group.",
+  "deadline_iso": null,
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the online form for the 2027 group. The link is on the program page. Add two recommendation letters: one from a teacher and one from a coach, mentor or supervisor. Add a resume with no photo. Add a personal statement of at least 300 words. Answer the short essay questions. Some students then get an interview.",
+  "url": "https://www.providence.org/locations/socal/mission-hospital-mission-viejo/about-us/volunteers",
+  "sources_fetched": [
+   "https://www.providence.org/locations/socal/mission-hospital-mission-viejo/about-us/volunteers",
+   "https://www.providence.org/-/media/project/psjh/providence/socal/files/mission-hospital/mission-hospital-high-school-auxiliary-eligibility-page.pdf"
+  ],
+  "priority": 1,
+  "notes": "Chosen students need a TB test and proof of vaccines. They also go to registration, orientation, training and shadowing shifts. The earliest start is usually March. Shifts are Monday to Friday 4 to 8 p.m., or on weekends. There are no summer-only spots. Email MHAuxiliary@providence.org or call 949-364-1400 ext. 7944.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
   "grades": null,
   "opens_iso": null,
   "apply_url": null,
@@ -55902,6 +57971,126 @@
   "needs_work_permit": null,
   "deadline_iso": null,
   "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "moraga-counselor-in-training-future-leaders",
+  "name": "Counselor in Training (CIT) and Future Leaders Programs, Moraga Day Camp",
+  "org": "Town of Moraga Parks and Recreation",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Moraga, CA",
+  "type": "leadership",
+  "fields": [
+   "education",
+   "any"
+  ],
+  "what_you_do": "Learn to be a camp leader at the Moraga Day Camp. You shadow Recreation Leaders and help with games, crafts and activities. You also learn how camp programs are planned. CITs help guide the younger campers.",
+  "min_age": 12,
+  "max_age": 14,
+  "grades": null,
+  "who_can_apply": "In 2026, Future Leaders was for age 12 or 13. Counselors in Training was for age 14. Ages were counted on June 8, 2026. You must go to a required orientation and a week of training. You must also interview, and an interview does not promise a spot.",
+  "paid_type": "fee-based",
+  "pay_detail": "$250 per session for Moraga residents. $270 per session for non-residents.",
+  "season": "summer",
+  "duration": "4-week blocks with weekly AM or PM shifts; most weeks have one full day, 9:00 AM to 3:00 PM",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 interviews were April 13 to 17, 2026. The page lists the sessions as June 15 to July 11 and July 14 to August 8, with no year. Dates for 2027 are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Sign up for an interview time in the Moraga Parks and Recreation online catalog. The link is on the program page. An interview does not promise you a spot. If chosen, you pick the weeks you can come.",
+  "needs_work_permit": false,
+  "url": "https://www.moraga.ca.us/511/Counselor-In-Training-CIT-Program",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.moraga.ca.us/511/Counselor-In-Training-CIT-Program",
+   "https://www.moraga.ca.us/593/Summer-Jobs"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "In 2026 the orientation was May 7 and training was June 8 to 12. The page says CITs gain hands-on experience that prepares them for possible future jobs with Moraga Parks and Recreation. The town website also has a Summer Jobs page.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "id": "moraga-police-cadets",
+  "name": "Moraga Police Cadets",
+  "org": "Moraga Police Department",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Moraga, CA",
+  "type": "volunteer",
+  "fields": [
+   "law-government"
+  ],
+  "what_you_do": "Explore police work as a community service cadet. You see how the police department works. You learn about local government, and you join some department training.",
+  "min_age": 16,
+  "max_age": 22,
+  "grades": null,
+  "who_can_apply": "U.S. citizens ages 16 to 22 who are in high school or college with a 2.5 GPA or better. You need a valid California driver license and a good driving record. You must pass an oral board and a background check. You must volunteer at least 4 hours a week.",
+  "paid_type": "unpaid",
+  "pay_detail": "Community service role. You volunteer at least 4 hours a week.",
+  "season": "year-round",
+  "duration": "At least 4 hours per week",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No application dates are stated on the employment page.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Contact Lt. Steve Borbely at 925-888-7052 to ask about the Police Cadet Program and how to apply.",
+  "needs_work_permit": false,
+  "url": "https://www.moraga.ca.us/285/Employment",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.moraga.ca.us/285/Employment"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "The cadet program is on the town employment page, below the police officer and reserve officer jobs. Good character and good health are also on the list. Ask the department if it is taking cadets now.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "id": "moraga-youth-involvement-committee",
+  "name": "Moraga Youth Involvement Committee (MYIC)",
+  "org": "Town of Moraga",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Moraga, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Hold forums and surveys to hear from Moraga youth. Plan community service projects. Give advice to the Town Council on youth issues.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "The page does not list ages, grades or a residency rule. Ask the Parks and Recreation office before you apply.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page.",
+  "season": "school-year",
+  "duration": "Not stated on the program page.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026-2027 application period is closed. The page says applications for the 2027-2028 term will be available in July 2027.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Applications for the 2027-2028 term will be available in July 2027. Contact Jasmine Bateson at the email link on the program page to ask how to apply.",
+  "needs_work_permit": null,
+  "url": "https://www.moraga.ca.us/313/Moraga-Youth-Involvement-Committee",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.moraga.ca.us/313/Moraga-Youth-Involvement-Committee"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "The committee meets at 7 PM on the 2nd Thursday of every month at the Hacienda de las Flores, 2100 Donald Drive, Moraga. Its service projects change each year.",
+  "verified_on_label": "Oct 14, 2026"
  },
  {
   "id": "morehouse-school-of-medicine-steam-academy",
@@ -62327,6 +64516,46 @@
   "verified_on_label": "Oct 12, 2026"
  },
  {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": null,
+  "needs_work_permit": null,
+  "id": "newport-beach-fire-cadet-program",
+  "name": "Newport Beach Fire Cadet Program",
+  "org": "Newport Beach Fire Department",
+  "city": "Newport Beach, CA",
+  "type": "shadowing",
+  "fields": [
+   "health",
+   "social-impact"
+  ],
+  "what_you_do": "Take part in a weekly program that teaches what it takes to be a Newport Beach firefighter. You do hands-on training and can ride along on real fire and medical calls.",
+  "min_age": 15,
+  "max_age": 21,
+  "who_can_apply": "Ages 15 to 21. You must live in or go to school in Orange County and have finished 9th grade. You should want to learn about fire and emergency careers.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page.",
+  "season": "year-round",
+  "duration": "Weekly program",
+  "status": "unconfirmed",
+  "deadline_text": "No dates are posted on the program page. Email the fire department to ask for an application.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Email the fire department using the contact link on the program page. Ask for the program application. Ride-along forms for minors are posted on the page.",
+  "url": "https://www.newportbeachca.gov/government/departments/fire-department/contact-information/fire-explorers",
+  "priority": 2,
+  "notes": "This program used to be Explorer Post 309. You learn what school you need for fire careers. You also get tips on how to get ready.",
+  "sources_fetched": [
+   "https://www.newportbeachca.gov/government/departments/fire-department/contact-information/fire-explorers"
+  ],
+  "verified_on_label": "Oct 14, 2026",
+  "limited": true
+ },
+ {
   "id": "newport-beach-library-teen-volunteers",
   "name": "Newport Beach Public Library Teen Volunteers",
   "org": "Newport Beach Public Library",
@@ -62365,6 +64594,45 @@
   "notes": "Volunteers age 15 and up must complete fingerprinting and a background check. Applying does not guarantee a spot. Questions go to the library's Teen Services team through the email link on the page.",
   "verified_on_label": "Oct 9, 2026",
   "limited": true
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": "https://www.governmentjobs.com/careers/newportbeach/jobs/5488064/lifeguard-trainee-p-t",
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": null,
+  "needs_work_permit": true,
+  "id": "newport-beach-ocean-lifeguard-trainee",
+  "name": "Newport Beach Ocean Lifeguard Trainee",
+  "org": "City of Newport Beach Fire Department, Lifeguard Operations",
+  "city": "Newport Beach, CA",
+  "type": "paid-youth-program",
+  "fields": [
+   "sports",
+   "health"
+  ],
+  "what_you_do": "Train at the Basic Lifeguard Academy. You learn rescues, CPR and emergency medical response. You also learn to spot rip currents.",
+  "min_age": 16,
+  "max_age": null,
+  "who_can_apply": "You must be 16 years old on or before March 30, 2027. No lifeguard experience is needed. You must pass a 1000-meter ocean swim and a 1000-meter run-swim-run tryout.",
+  "paid_type": "paid",
+  "pay_detail": "Paid training is $16.90 an hour. Lifeguard I pay is $25.50 to $31.02 an hour.",
+  "season": "summer",
+  "duration": "Training academy, then seasonal work",
+  "status": "open-now",
+  "deadline_text": "Applications close January 20, 2027 at 5:00 p.m. The tryout is planned for Saturday, January 30, 2027, with check-in at 8:30 a.m. An info night is Wednesday, January 6, 2027, 6:00 to 7:30 p.m.",
+  "deadline_iso": "2027-01-20",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply online for the Lifeguard Trainee job. If you qualify, you are invited to a tryout. Top finishers get an interview. You must also pass the Basic Lifeguard Academy.",
+  "url": "https://www.newportbeachca.gov/government/departments/fire/lifeguard-operations-division/lifeguard-job-opportunities",
+  "sources_fetched": [
+   "https://www.newportbeachca.gov/government/departments/fire/lifeguard-operations-division/lifeguard-job-opportunities"
+  ],
+  "priority": 1,
+  "notes": "Practice workout schedule is on the program page. Dates can change with weather. The tryout has no wetsuits or fins. The info night is at Lifeguard Headquarters, 70 Newport Pier, in person or on Zoom, and is not required. Paid work for people under 18 in California needs a Permit to Employ and Work.",
+  "verified_on_label": "Oct 14, 2026"
  },
  {
   "id": "newport-beach-teen-leader-program",
@@ -67756,6 +70024,47 @@
   "verified_on_label": "Oct 7, 2026"
  },
  {
+  "id": "oakley-youth-advisory-council",
+  "name": "Oakley Youth Advisory Council (OYAC)",
+  "org": "City of Oakley",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Oakley, CA",
+  "type": "leadership",
+  "fields": [
+   "social-impact",
+   "law-government"
+  ],
+  "what_you_do": "Help plan and attend city events for youth and families. Advise the City of Oakley on policies that matter to young people.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Grades 6 to 12",
+  "who_can_apply": "Students in grades 6 to 12. The page does not list a city residency rule.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page.",
+  "season": "school-year",
+  "duration": "Meets monthly, August to May",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No application dates are stated. The council meets on the first Wednesday of each month from August through May, 5:00 to 6:00 PM.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Email Alicia, the city staff contact named on the program page. Use the email link on that page. Ask how to join.",
+  "needs_work_permit": null,
+  "url": "https://www.oakleyca.gov/300/Oakley-Youth-Advisory-Council",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.oakleyca.gov/300/Oakley-Youth-Advisory-Council",
+   "https://www.oakleyca.gov/363/Teen"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "Meetings are at the Oakley Recreation Center, 1250 O'Hara Avenue. The Teen page also mentions CORE Camp, a six-week summer camp that mixes camp games with community service. The Teen page does not give ages or dates for CORE Camp.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
   "id": "oakridge-oak-futures-youth-employment",
   "name": "Oak Futures Youth Employment Program",
   "org": "Oakridge Neighborhood Services",
@@ -67872,6 +70181,244 @@
   "priority": 1,
   "notes": "The registration form is shared by several county agencies, so some questions may not apply to you. Ask your branch what it needs. Arrive on time and tell the branch as early as you can if you miss a shift. OC Public Libraries points teens who need court-ordered hours to the OneOC Court Referral Program.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": "https://occsailing.augusoft.net/index.cfm?method=ClassListing.ClassListingDisplay&int_category_id=4&int_sub_category_id=171&int_catalog_id=",
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": null,
+  "needs_work_permit": null,
+  "id": "occ-sailing-youth-leadership-program",
+  "name": "OCC Sailing Youth Leadership Program",
+  "org": "Orange Coast College School of Sailing and Seamanship",
+  "city": "Newport Beach, CA",
+  "type": "leadership",
+  "fields": [
+   "education",
+   "sports",
+   "environment"
+  ],
+  "what_you_do": "Teens learn teamwork and job skills in the summer sailing camps. This prepares you to be a camp counselor or assistant sailing instructor. You also study weather, tides and boating laws.",
+  "min_age": 14,
+  "max_age": null,
+  "who_can_apply": "You must be 14 years old or entering 9th grade. You need basic sailing skills and should enjoy working with children.",
+  "paid_type": "fee-based",
+  "pay_detail": "The fee is $525. Scholarships are available.",
+  "season": "summer",
+  "duration": "Not stated on the program page",
+  "status": "unconfirmed",
+  "deadline_text": "No dates are posted on the program page. Check the class schedule on the online registration site.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Check the class list and sign up online. For a scholarship, you must meet the eligibility requirements. Scholarship details are given at your interview. Call 949-645-9412 with questions.",
+  "url": "https://occsailing.com/classes-and-programs/youth-program/youth-program/",
+  "priority": 2,
+  "notes": "You can choose to take the written test for a Small Powerboat Certification. The program is at the OCC Waterfront Campus, 1801 West Coast Hwy, Newport Beach.",
+  "sources_fetched": [
+   "https://occsailing.com/classes-and-programs/youth-program/youth-program/"
+  ],
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": "9-12",
+  "needs_work_permit": false,
+  "id": "ocean-institute-counselor-in-training",
+  "name": "Ocean Institute Counselor-In-Training (CIT) Summer Program",
+  "org": "Ocean Institute",
+  "city": "Dana Point, CA",
+  "type": "leadership",
+  "fields": [
+   "education",
+   "science",
+   "environment"
+  ],
+  "what_you_do": "Work with camp counselors at Ocean Institute summer camp. You help with check-in and check-out, daily activities and camper care. In week 1 you shadow, in week 2 you team teach, and in week 3 you lead.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "High school students, freshman through senior. You must apply before you can register.",
+  "paid_type": "fee-based",
+  "pay_detail": "$400, plus a 3% registration fee at checkout. Members at the Family level or above get 10% off.",
+  "season": "summer",
+  "duration": "3 weeks, 9:00 a.m. to 4:00 p.m.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The page says applications close May 1. It does not state the year, and its sessions start June 15, July 6 and July 27. Dates for next summer are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the CIT application on the program page. Then register for a session after you are accepted.",
+  "url": "https://oceaninstitute.org/summer-camp/",
+  "priority": 2,
+  "notes": "This is a program you pay for. It is not a paid job. The same page lists a week-long Marine Science Careers and Internship Academy for ages 14 to 17.",
+  "sources_fetched": [
+   "https://oceaninstitute.org/summer-camp/"
+  ],
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": null,
+  "needs_work_permit": null,
+  "id": "ocean-institute-stan-cummings-scholars-internship",
+  "name": "Ocean Institute Stan Cummings Scholars Internship",
+  "org": "Ocean Institute",
+  "city": "Dana Point, CA",
+  "type": "internship",
+  "fields": [
+   "science",
+   "environment"
+  ],
+  "what_you_do": "Do a year-long marine science project with a weekly 4-hour shift. Projects include animal care, water sampling on a research boat and exhibit design. You present your work at a poster session and a showcase.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "High school students and college students. You must be able to get to the Ocean Institute each week.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page.",
+  "season": "school-year",
+  "duration": "September to June, one 4-hour shift a week",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications are closed and open again in Summer 2027. For 2026-27, applications opened July 6 and closed August 12.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Watch the program page for the summer 2027 opening. Then apply online. Last year, interviews ran from August 17 to September 4.",
+  "url": "https://oceaninstitute.org/internship-opportunities/",
+  "priority": 1,
+  "notes": "Interns must go to all required workshops, the May poster session and the June showcase. They do not have to work on holiday weeks. Some projects need you to board the research vessel Sea Explorer on weekends.",
+  "sources_fetched": [
+   "https://oceaninstitute.org/internship-opportunities/"
+  ],
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": null,
+  "needs_work_permit": false,
+  "id": "ocean-institute-volunteer-docents",
+  "name": "Ocean Institute Volunteer Docents (age 14 and up roles)",
+  "org": "Ocean Institute",
+  "city": "Dana Point, CA",
+  "type": "volunteer",
+  "fields": [
+   "science",
+   "environment",
+   "education"
+  ],
+  "what_you_do": "Teach visitors about the sea and ships as a docent. On weekends, some docents run hands-on exhibits. Others talk about old ship objects.",
+  "min_age": 14,
+  "max_age": null,
+  "who_can_apply": "Public Programs Docents must be 14 or older. Maritime Education Docents must be 16 or older. Other roles on the page are for ages 18 and up.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer roles.",
+  "season": "year-round",
+  "duration": "At least 6 hours a month for at least one year",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications are closed. The page says they reopen in January 2027.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "When applications reopen, use the online form on the program page. Forms are reviewed three times a year. Then you have an interview and training.",
+  "url": "https://oceaninstitute.org/volunteer-opportunities/",
+  "priority": 2,
+  "notes": "Public Programs Docents work at least two shifts a month on Saturday and Sunday, 9:30 a.m. to 12:30 p.m. or 12:00 to 3:00 p.m. Maritime Education Docents work shifts between 10 a.m. and 2 p.m., any day. If you get no confirmation email, submit the application again.",
+  "sources_fetched": [
+   "https://oceaninstitute.org/volunteer-opportunities/"
+  ],
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": null,
+  "needs_work_permit": false,
+  "id": "ocsd-explorer-program",
+  "name": "Orange County Sheriff Explorer Program",
+  "org": "Orange County Sheriff's Department",
+  "city": "Orange County, CA",
+  "type": "volunteer",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Learn about police work. Help the Sheriff's Department at parades, health fairs and charity events. Explorers are volunteers. They are not police staff.",
+  "min_age": 14,
+  "max_age": 21,
+  "who_can_apply": "Ages 14 to 21. You must keep a 2.0 GPA or higher and be in good standing with school administrators. You cannot have arrests or convictions and cannot be on probation. You cannot have a severe mental or physical limit.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Explorers are volunteers.",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "unconfirmed",
+  "deadline_text": "No dates are posted. Use the Explorer Interest Form on the program page.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the Explorer Interest Form on the program page. Or call 714-566-2711 to learn more.",
+  "url": "https://www.ocsheriff.gov/explorer",
+  "priority": 2,
+  "notes": "The first police Explorer post in the US began in Santa Ana in 1959. The Sheriff also runs a Teen Academy for ages 16 to 18.",
+  "sources_fetched": [
+   "https://www.ocsheriff.gov/explorer"
+  ],
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": null,
+  "needs_work_permit": false,
+  "id": "ocsd-teen-academy",
+  "name": "Orange County Sheriff Teen Academy",
+  "org": "Orange County Sheriff's Department",
+  "city": "Orange County, CA",
+  "type": "shadowing",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Spend 5 days in a summer workshop on the Sheriff's Department. You tour the police academy, crime lab and coroner's office. You see K-9, helicopter and harbor patrol shows.",
+  "min_age": 16,
+  "max_age": 18,
+  "who_can_apply": "Teens ages 16 to 18.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free. You earn community service hours.",
+  "season": "summer",
+  "duration": "5 days, 8 a.m. to 12 p.m.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "In 2026 there were two sessions: June 8 to 12 and July 20 to 24. Sign-up closed June 2 and July 14. The 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "To join the interest list, email TeenAcademy@ocsheriff.gov. In 2026, the flyer said to email your form to the same address.",
+  "url": "https://www.ocsheriff.gov/community/teen-academy",
+  "sources_fetched": [
+   "https://www.ocsheriff.gov/community/teen-academy",
+   "https://www.ocsheriff.gov/sites/ocsd/files/2026-03/Teen%20Academy%20Flyer_2026.pdf"
+  ],
+  "priority": 2,
+  "notes": "Space is limited. The service hours can count toward high school graduation rules. The flyer lists Community Engagement at 714-647-4141 for questions.",
+  "verified_on_label": "Oct 14, 2026"
  },
  {
   "id": "ocwdb-ready-set-oc-young-adult",
@@ -70011,6 +72558,46 @@
   "priority": 2,
   "notes": "Quote from the job description: a minimum of 15 years of age. The job description does not state pay. Current postings and pay were not on the program page.",
   "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": null,
+  "needs_work_permit": false,
+  "id": "pacific-marine-mammal-center-junior-volunteers",
+  "name": "Pacific Marine Mammal Center Junior Docent and Junior Outreach Assistant",
+  "org": "Pacific Marine Mammal Center",
+  "city": "Laguna Beach, CA",
+  "type": "volunteer",
+  "fields": [
+   "environment",
+   "science",
+   "education"
+  ],
+  "what_you_do": "Junior Docents greet visitors. They share how the center rescues sick sea animals. Junior Outreach Assistants set up booths and run kids activities at events.",
+  "min_age": 15,
+  "max_age": 17,
+  "who_can_apply": "Ages 15 to 17 for two roles. They are Junior Docent and Junior Outreach Assistant.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer roles.",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "unconfirmed",
+  "deadline_text": "No dates are posted. The page has Apply Now links.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Use Apply Now for the Junior Docent or Junior Outreach Assistant role. The center reviews forms and then gets back to you.",
+  "url": "https://www.pacificmmc.org/volunteer",
+  "priority": 2,
+  "notes": "The page says most volunteer roles are for ages 18 and up. Use the Contact Us button on the page for questions.",
+  "sources_fetched": [
+   "https://www.pacificmmc.org/volunteer"
+  ],
+  "verified_on_label": "Oct 14, 2026"
  },
  {
   "regions": [
@@ -73304,6 +75891,47 @@
   "limited": true
  },
  {
+  "id": "pittsburg-youth-advisory-commission",
+  "name": "Pittsburg Youth Advisory Commission",
+  "org": "City of Pittsburg",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Pittsburg, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Be the voice of Pittsburg youth to the City Council. You give advice on youth issues and help the recreation department plan and promote activities for young people.",
+  "min_age": 13,
+  "max_age": 20,
+  "grades": null,
+  "who_can_apply": "Ages 13 to 20 when you are appointed. You must live in Pittsburg city limits. The commission needs at least 3 middle school students, 4 high school students and 2 college students, unless nobody applies.",
+  "paid_type": "unpaid",
+  "pay_detail": "Members get no pay. The city may repay approved costs.",
+  "season": "school-year",
+  "duration": "Two-year term, August 1 to May 31",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "The city code gives no application dates. Ask Pittsburg City Hall for the next opening.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the city application. Then the City Council interviews you and picks the members. Ask Pittsburg City Hall for the form and the dates.",
+  "needs_work_permit": false,
+  "url": "https://www.codepublishing.com/CA/Pittsburg/html/Pittsburg02/Pittsburg0280.html",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.codepublishing.com/CA/Pittsburg/html/Pittsburg02/Pittsburg0280.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "The facts come from the city code, Chapter 2.80, adopted in 2020. Check pittsburgca.gov or City Hall for the current application and meeting dates. The commission meets at least 10 times a year. Members can serve no more than two terms in a row.",
+  "verified_on_label": "Oct 14, 2026",
+  "limited": true
+ },
+ {
   "grades": null,
   "apply_url": null,
   "opens_iso": null,
@@ -74890,6 +77518,87 @@
   "verified_on_label": "Oct 7, 2026"
  },
  {
+  "id": "pleasant-hill-rec-park-facilities-custodian",
+  "name": "Facilities Specialist Custodian",
+  "org": "Pleasant Hill Recreation and Park District",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Pleasant Hill, CA",
+  "type": "paid-youth-program",
+  "fields": [
+   "trades",
+   "any"
+  ],
+  "what_you_do": "Clean and set up community buildings for classes and events. You also help people who rent the rooms. The work is part time, at night and on weekends.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Age 16 or older. No other rule is stated for teens on the employment page.",
+  "paid_type": "paid",
+  "pay_detail": "$18.00 to $19.85 per hour, depending on experience",
+  "season": "year-round",
+  "duration": "Part time, nights and weekends",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Open until filled.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Download the job application on the employment page. Fill it out. Email it to Ainsley Pearce, the Human Resources Admin. Her email link is on that page.",
+  "needs_work_permit": null,
+  "url": "https://www.pleasanthillrec.com/161/Employment",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.pleasanthillrec.com/161/Employment"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "The same page lists sports referee jobs for age 18 or older. Listings change, so check the page for the current jobs. A job description link is on the page.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "id": "pleasant-hill-rec-park-teen-council",
+  "name": "Pleasant Hill Teen Council",
+  "org": "Pleasant Hill Recreation and Park District",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Pleasant Hill, CA",
+  "type": "leadership",
+  "fields": [
+   "social-impact",
+   "any"
+  ],
+  "what_you_do": "Help develop, plan and carry out events, classes, dances, sports and trips for teens.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Grades 6 to 12",
+  "who_can_apply": "Teens in grades 6 to 12. The page does not list a residency or school rule.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page.",
+  "season": "school-year",
+  "duration": "Meets September to June",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline is stated. The page says to stop by the Teen Center or email the Youth Services Manager.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Stop by the Pleasant Hill Teen Center. Or email the Youth Services Manager, Katrina Hunn. Her email link is on the program page.",
+  "needs_work_permit": null,
+  "url": "https://pleasanthillrec.com/322/Teen-Council",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://pleasanthillrec.com/322/Teen-Council",
+   "https://pleasanthillrec.com/445/Teen-Center"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "Meetings are on the 1st and 3rd Mondays of the month, 7:00 to 8:00 PM, at the Pleasant Hill Teen Center. The council does not meet on holidays.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
   "id": "pleasant-home-oak-park-student-docents",
   "grades": "Junior high and senior high students are encouraged",
   "apply_url": null,
@@ -74927,6 +77636,48 @@
    "https://pdop.org/volunteer/"
   ],
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "pleasanton-aquatics-junior-volunteers",
+  "name": "Aquatics Junior Volunteers (Junior Lifeguard and Junior Swim Instructor)",
+  "org": "City of Pleasanton Library and Recreation, Dolores Bengtson Aquatic Center",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Pleasanton, CA (4455 Black Ave)",
+  "type": "volunteer",
+  "fields": [
+   "sports",
+   "education"
+  ],
+  "what_you_do": "You pick one of two pool jobs. As a Junior Lifeguard you watch small pool areas with the lifeguards. As a Junior Swim Instructor you help teach kids to swim.",
+  "min_age": 12,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Ages 12 and up. You go to an orientation and get your fingerprints taken. Junior Lifeguards must also take a Red Cross class first.",
+  "paid_type": "fee-based",
+  "pay_detail": "Unpaid. The Junior Lifeguard training class costs $145 for Pleasanton residents and $181 for non-residents. Every volunteer pays $25 on site for fingerprints.",
+  "season": "summer",
+  "duration": "Junior Swim Instructor: 8 day sessions. Junior Lifeguard: shifts June 9 to August 2 in 2026.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 packet said applications were due April 15, 2026. Orientations were April 22 and 23, 2026. The next season is not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the volunteer application online. Sign up for an orientation and a fingerprint visit. Junior Lifeguards also sign up for the training class on the city recreation site. Then pick your shifts online.",
+  "needs_work_permit": false,
+  "url": "https://content.betterimpact.com/files/agency/6727/2026%20New%20Aquatic%20Volunteer%20Packet.pdf",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://content.betterimpact.com/files/agency/6727/2026%20New%20Aquatic%20Volunteer%20Packet.pdf",
+   "https://app.betterimpact.com/PublicEnterprise/EnterpriseGvi?enterpriseGuid=08840789-d457-4ab1-b221-ed45f96469a8&gviGuid=2ad7de32-0477-40c5-b271-147e5cffcfb6",
+   "https://app.betterimpact.com/PublicEnterprise/EnterpriseGvi?enterpriseGuid=08840789-d457-4ab1-b221-ed45f96469a8&gviGuid=94751f52-9d6a-4082-a534-da8f9dc0de6e"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "Junior Lifeguards do not make rescues and do not get a lifeguard card. The 2026 class ran April 6 to 10 and June 15 to 19, 9am to 3pm. Swim Instructor sessions ran Monday to Thursday. Saturday shifts are daily sign-ups with no commitment. Both jobs prepare volunteers to become lifeguards or water safety instructors at age 15. For the fingerprint form, bring an approved photo ID and know your Social Security number. Contact: Katelyn DiGiosaffatte, Recreation Coordinator, kdigiosaffatte@cityofpleasantonca.gov.",
+  "verified_on_label": "Oct 14, 2026"
  },
  {
   "id": "pleasanton-youth-commission",
@@ -77318,6 +80069,48 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "richmond-fund-for-children-and-youth-oversight-board",
+  "name": "Richmond Fund for Children and Youth Oversight Board (youth seats)",
+  "org": "City of Richmond Department of Children and Youth",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Richmond, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Help decide how Richmond spends money for children and youth programs. You read grant applications and give funding advice to the City Council. You also help plan how the fund is used.",
+  "min_age": 15,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "People who live in Richmond or North Richmond and are 15 or older. If you are 15 to 17, a parent or guardian must approve. Some seats are set aside for youth who are 15 to 24 years old. You must be able to go to at least 6 meetings a year and give at least 50 hours.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page. The application says members get training, childcare, meals and translation help at meetings.",
+  "season": "year-round",
+  "duration": "One-year term if you are under 24",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "The page lists 7 open seats as of 9/29/2026. It gives no closing date.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the Oversight Board Application, a PDF on the city page. A parent or guardian signs it if you are under 18. Email it to the City Clerk or mail it to the City Clerk's office at the address on the form.",
+  "needs_work_permit": null,
+  "url": "https://www.ci.richmond.ca.us/3843/Richmond-Fund-Children-Youth-Oversight-B",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.ci.richmond.ca.us/3843/Richmond-Fund-Children-Youth-Oversight-B",
+   "https://www.ci.richmond.ca.us/DocumentCenter/View/50257/Richmond-Fund-for-Children-and-Youth-Oversight-Board-Application-PDF"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "The board meets every first Monday at 6:00 PM in the Richmond City Council Chamber, 440 Civic Center Plaza. City Council members and the Mayor pick the members. The application says you can learn more at richmondyouth.org or by calling 510-620-6523. Having work or school experience is not required.",
+  "verified_on_label": "Oct 14, 2026",
+  "limited": true
+ },
+ {
   "id": "richmond-maymont-junior-naturalist",
   "fields": [
    "environment",
@@ -79449,6 +82242,47 @@
    "https://www.saintalphonsus.org/careers/volunteer-opportunities/nampa"
   ],
   "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "saint-marys-college-summer-session-high-school",
+  "name": "Summer Session Courses Open to High School Students at Saint Mary's College",
+  "org": "Saint Mary's College of California",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Moraga, CA",
+  "type": "pre-college",
+  "fields": [
+   "arts-media",
+   "science",
+   "any"
+  ],
+  "what_you_do": "Take a real college class over the summer on campus. The 2026 high school courses were printmaking, media and cultural studies, and kinesiology. You earn college credit.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "High school students can take the courses marked as open to high school students. The page shows three courses with that mark for 2026.",
+  "paid_type": "not-stated",
+  "pay_detail": "The page does not give a price for non-Saint Mary's students. Ask the Business Office. Some courses have an extra fee.",
+  "season": "summer",
+  "duration": "2026 sessions: June 1 to July 2 and July 6 to Aug 7; some classes are shorter",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Summer 2026 registration opened Feb 20, 2026. It closed June 1 for Session 1 and July 6 for Session 2. Summer 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "If you are not a Saint Mary's student, register with the form linked on the Summer Session page. Ask the Business Office about payment.",
+  "needs_work_permit": false,
+  "url": "https://www.stmarys-ca.edu/academics/summer-session",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.stmarys-ca.edu/academics/summer-session"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "The courses open to high school students are marked on the page. The page says high schools are among the students who can enroll. Check that a course is marked open to high school students before you sign up. Saint Mary's is in Moraga. The page shows a different price for Saint Mary's students. The printing course listed an extra fee of $110.",
+  "verified_on_label": "Oct 14, 2026"
  },
  {
   "id": "saint-paul-public-library-volunteer",
@@ -81777,6 +84611,167 @@
   "priority": 1,
   "notes": "The page did not list a Teen Advisory Board. Roles are set by branch, and there may be a wait for an opening. Apply for your own branch (13 locations).",
   "verified_on_label": "Oct 7, 2026"
+ },
+ {
+  "id": "san-pablo-summer-internship-program",
+  "name": "San Pablo Summer Internship Program",
+  "org": "City of San Pablo Youth, School, and Community Partnerships",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "San Pablo, CA",
+  "type": "internship",
+  "fields": [
+   "law-government",
+   "any"
+  ],
+  "what_you_do": "Work a paid summer internship in a city department. You get hands-on experience in local government and build job skills. In 2025 the city hosted nine interns.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Youth who are 15 and a half or older and are in school or are recent high school graduates.",
+  "paid_type": "paid",
+  "pay_detail": "Paid internship. The pay rate is not stated on the program page.",
+  "season": "summer",
+  "duration": "Summer",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The page says applications open every January and are due in March. The exact dates for next year are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply on the city job site, linked as Employment Opportunities on the program page. Watch for the posting in January.",
+  "needs_work_permit": null,
+  "url": "https://www.sanpabloca.gov/2631/San-Pablo-Internship-Programs",
+  "apply_url": "https://www.governmentjobs.com/careers/sanpabloca",
+  "sources_fetched": [
+   "https://www.sanpabloca.gov/2631/San-Pablo-Internship-Programs"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "The minimum age is 15 and a half on the page. It is stored here as 15. The same page also describes a UC Berkeley Public Service Internship. It hosts UC Berkeley interns for an academic year in a city department or division.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "id": "san-pablo-youth-commission",
+  "name": "San Pablo Youth Commission (SPYC)",
+  "org": "City of San Pablo Youth, School, and Community Partnerships",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "San Pablo, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Speak up for youth in San Pablo and learn how local government works. The commission builds youth leaders and works to improve chances for young people in the city.",
+  "min_age": 13,
+  "max_age": 19,
+  "grades": null,
+  "who_can_apply": "Youth ages 13 to 19. The page does not list a residency rule.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page.",
+  "season": "school-year",
+  "duration": "Meets monthly",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "The page says the city is taking online applications now. It gives no closing date.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the Youth Commission Application, an online form linked on the program page. Contact the city with questions.",
+  "needs_work_permit": null,
+  "url": "https://www.sanpabloca.gov/1467/San-Pablo-Youth-Commission",
+  "apply_url": "https://forms.gle/971hnxt25A4ErWX87",
+  "sources_fetched": [
+   "https://www.sanpabloca.gov/1467/San-Pablo-Youth-Commission"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "Meetings are on the third Thursday of each month, 5:00 to 6:00 PM, in person at the San Pablo Community Center, 2450 Road 20. On April 17, 2023, the City Council approved an amendment to the commission bylaws.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "id": "san-ramon-leaders-in-training",
+  "name": "Leaders in Training (LIT)",
+  "org": "City of San Ramon Parks and Community Services",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "San Ramon, CA",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "social-impact"
+  ],
+  "what_you_do": "Learn leadership and job skills in class. Then volunteer for a week at a time at city summer camps. You work with kids and learn from staff.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "The page says this is a teen program. It does not give an age or grade range. You must go to at least 4 of the 5 classes. You must also be free to volunteer for at least one weeklong shift in the summer.",
+  "paid_type": "not-stated",
+  "pay_detail": "Volunteer role. The page does not say if the classes cost money. Shifts are mornings (7:30 AM to 1:00 PM) or afternoons (12:30 to 4:15 PM).",
+  "season": "summer",
+  "duration": "5 classes, then weeklong volunteer shifts (Monday to Friday)",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 program is full and closed. The page says to check back in March for next year.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "The 2026 program is closed. Check the program page in March for next year. The city also offers a fall class called Teen Service and Leadership.",
+  "needs_work_permit": false,
+  "url": "https://sanramon.ca.gov/our_city/departments_and_divisions/parks_community_services/teens/leaders_in_training",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://sanramon.ca.gov/our_city/departments_and_divisions/parks_community_services/teens/leaders_in_training"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "You can volunteer for as few as one assignment or as many as you like. The page does not say if the program has a fee. Ask the city before you sign up.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "id": "san-ramon-teen-service-and-leadership",
+  "name": "Teen Service and Leadership (TSL)",
+  "org": "City of San Ramon Parks and Community Services",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "San Ramon, CA",
+  "type": "leadership",
+  "fields": [
+   "social-impact",
+   "law-government"
+  ],
+  "what_you_do": "Take 8 classes on teamwork, resumes, interviews and local government. Then do at least 3 volunteer shifts. Your class also helps host an event for people with special needs.",
+  "min_age": 12,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "Teens ages 12 to 17. San Ramon residents and non-residents can both sign up. You must volunteer for at least 3 shifts. Shifts are usually on weekends and weeknights.",
+  "paid_type": "fee-based",
+  "pay_detail": "$279 for San Ramon residents. $348.75 for non-residents.",
+  "season": "fall",
+  "duration": "8 Thursday classes, 4:30 to 5:45 PM, plus 3 or more volunteer shifts",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "The fall 2026 class runs Thursdays, Oct 1 to Nov 19, 2026. The page gives no sign-up deadline. Call to ask if spots are left.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Sign up on the city recreation website, using the Register link on the program page. Spaces fill up fast. Call the San Ramon Community Center at 925-973-3200 with questions.",
+  "needs_work_permit": false,
+  "url": "https://www.sanramon.ca.gov/our_city/departments_and_divisions/parks_community_services/teens/teen_service___leadership",
+  "apply_url": "https://secure.rec1.com/CA/san-ramon-ca/catalog?filter=c2VhcmNoPTQzMTU2NTU=",
+  "sources_fetched": [
+   "https://www.sanramon.ca.gov/our_city/departments_and_divisions/parks_community_services/teens/teen_service___leadership"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "Classes are at the San Ramon Community Center. Volunteer shifts can be at places like Forest Home Farms, Pine Valley Gymnasium and Central Park. The page says the program won an award from the California Parks and Recreation Society. The first class date was Oct 1, 2026, so check that you can still join.",
+  "verified_on_label": "Oct 14, 2026",
+  "limited": true
  },
  {
   "id": "sanford-burnham-prebys-spark-high-school-internship",
@@ -88924,6 +91919,45 @@
   "verified_on_label": "Oct 12, 2026"
  },
  {
+  "id": "st-rose-hospital-shine-student-volunteers",
+  "name": "SHINE Student Volunteer Program",
+  "org": "St. Rose Hospital",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Hayward, CA",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "You help out at the hospital. The hospital calls this work hospitality tasks.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "High school and college students who are 16 or older. You need a cumulative GPA of 3.0 or higher.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer. The program page does not list pay or service hours.",
+  "season": "year-round",
+  "duration": null,
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "The page header says volunteering is on hold for now. No dates or deadline are given.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the online application. Add one letter from a counselor, teacher, principal or coach. Add your latest school transcript. Write an essay of at least 500 words about you and why volunteering matters.",
+  "needs_work_permit": false,
+  "url": "https://strosehospital.org/volunteer-opportunities/",
+  "apply_url": "https://strosehospital.org/apply-for-volunteer-opportunities/",
+  "sources_fetched": [
+   "https://strosehospital.org/volunteer-opportunities/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 3,
+  "notes": "The page header says Temporarily Suspended, but the SHINE section still lists the steps. Call 510-264-4139 to ask when volunteering restarts. Leave your name, phone number and question. The program page does not give hours per week.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
   "id": "stanford-aimi-summer-research-internship",
   "name": "Stanford AIMI Summer Research Internship",
   "org": "Stanford Center for Artificial Intelligence in Medicine and Imaging (AIMI)",
@@ -91830,6 +94864,45 @@
   "verified_on_label": "Oct 7, 2026"
  },
  {
+  "id": "tri-valley-teen-job-and-career-fair",
+  "name": "Tri-Valley Teen Job and Career Fair",
+  "org": "City of Dublin, with San Ramon, Pleasanton, Danville and the Dublin/San Ramon Women's Club",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "San Ramon, CA (Alcosta Senior and Community Center)",
+  "type": "civic-government",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "You go to a free fair to explore job openings around the Tri-Valley.",
+  "min_age": 15,
+  "max_age": 19,
+  "grades": null,
+  "who_can_apply": "Teens ages 15 to 19 in the Tri-Valley area.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free to attend. This is a fair, not a job.",
+  "season": "winter",
+  "duration": "One afternoon, 12:00 p.m. to 3:00 p.m.",
+  "status": "event",
+  "opens_iso": null,
+  "deadline_text": "Saturday, February 27, 2027, 12:00 p.m. to 3:00 p.m. The program page does not describe registration.",
+  "deadline_iso": "2027-02-27",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "The program page does not say whether you must register. It says to bring several copies of your resume and to dress professionally.",
+  "needs_work_permit": false,
+  "url": "https://www.dublin.ca.gov/2546/Teen-Job-Career-Fair",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.dublin.ca.gov/2546/Teen-Job-Career-Fair"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "Location: 9300 Alcosta Blvd, San Ramon. The program page does not list which employers will come. Questions: Dublin City Hall, 100 Civic Plaza, 925-833-6650.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
   "id": "trybe-oakland-summer-jobs",
   "name": "Trybe Summer Jobs and Paid Internships (East Oakland)",
   "org": "Trybe, Inc.",
@@ -92348,6 +95421,125 @@
   "priority": 2,
   "notes": "Applications for camper scholarships and sign-up open the same day. The page does not say if counselor jobs are paid.",
   "verified_on_label": "Oct 11, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": "9-12",
+  "needs_work_permit": false,
+  "id": "tustin-counselor-in-training",
+  "name": "Tustin Counselor in Training (C.I.T.) Program",
+  "org": "City of Tustin Parks and Recreation Department",
+  "city": "Tustin, CA",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "social-impact"
+  ],
+  "what_you_do": "Help staff at the city summer day camps. You supervise kids, lead games and crafts, and enforce camp rules. You work in the sun and walk and run with the kids.",
+  "min_age": 14,
+  "max_age": 17,
+  "who_can_apply": "High school students entering grades 9 to 12, or ages 14 to 17. You should enjoy working with people and follow rules.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. The application calls it a non-paid position.",
+  "season": "summer",
+  "duration": "2 to 3 weeks, Monday to Friday, about 20 hours a week",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The 2026 application was due May 1, 2026. Interviews were the week of May 4. Training was Saturday, May 30. The next dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "You cannot apply online. Turn in your packet to the Parks and Recreation Department. The packet has the form, one reference and a personal statement. Questions: 714-573-3009 or tprd@tustinca.org.",
+  "url": "https://tustinca.org/DocumentCenter/View/19843",
+  "sources_fetched": [
+   "https://tustinca.org/455/Volunteer-Opportunities",
+   "https://tustinca.org/DocumentCenter/View/19843"
+  ],
+  "priority": 2,
+  "notes": "CITs at Camp Tustin volunteer 10:00 a.m. to 3:00 p.m. CITs at Little Folks volunteer 8:30 a.m. to 12:30 p.m. A training day is required.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": null,
+  "needs_work_permit": null,
+  "id": "tustin-police-explorer-post-615",
+  "name": "Tustin Police Explorer Post 615",
+  "org": "Tustin Police Department",
+  "city": "Tustin, CA",
+  "type": "volunteer",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Get an inside look at police work. You can ride along with officers, see K-9 work and get firearms training.",
+  "min_age": 14,
+  "max_age": 21,
+  "who_can_apply": "Ages 14 to 21. If you are 14, you must have finished 8th grade. You must keep a 2.0 GPA, pass an oral interview and a background check, and show good judgment.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page.",
+  "season": "year-round",
+  "duration": "Meetings every Wednesday at 6 p.m.",
+  "status": "year-round",
+  "deadline_text": "No dates are posted. Meetings are held every Wednesday at 6 p.m.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Go to three meetings in a row. Take part in an oral interview at the third meeting. Call 714-573-3197 or email Explorers@tustinca.org with questions.",
+  "url": "https://tustinca.org/548/Explorer-Program",
+  "priority": 2,
+  "notes": "You must finish an explorer academy in your first year. The page lists two phone numbers, 714-573-3197 and 714-573-3297. Confirm the number before you call.",
+  "sources_fetched": [
+   "https://tustinca.org/548/Explorer-Program"
+  ],
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": "9-12",
+  "needs_work_permit": false,
+  "id": "tustin-teens-in-action",
+  "name": "Tustin Teens in Action",
+  "org": "City of Tustin Parks and Recreation Department",
+  "city": "Tustin, CA",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "social-impact"
+  ],
+  "what_you_do": "Volunteer to help supervise kids and run games and crafts. You also help at city events like Tustin Tiller Days, Halloween Howl and the Holiday Tree Lighting. You build leadership skills.",
+  "min_age": 14,
+  "max_age": 17,
+  "who_can_apply": "High school students entering grades 9 to 12, ages 14 to 17. You need a recommendation letter. You also write 5 to 7 sentences about yourself.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer program.",
+  "season": "school-year",
+  "duration": "Monthly evening meetings. You volunteer at least 20 hours during the program year (June to May).",
+  "status": "closed-expect-reopen",
+  "deadline_text": "In the 2026 cycle, applications opened April 1, 2026 and closed May 1, 2026. The interview day was May 23, 2026. The next dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the form. Add a recommendation letter. It can be academic, professional or athletic. Add a personal statement of 5 to 7 sentences. Mail it, email TPRD@tustinca.org, or drop it at City Hall, 300 Centennial Way. Then go to the orientation and interview.",
+  "url": "https://tustinca.org/DocumentCenter/View/19861",
+  "sources_fetched": [
+   "https://tustinca.org/455/Volunteer-Opportunities",
+   "https://tustinca.org/DocumentCenter/View/19861"
+  ],
+  "priority": 1,
+  "notes": "You apply once for each school year. The application form asks if you can attend meetings on Wednesday nights. City Hall Parks and Recreation phone: 714-573-3326.",
+  "verified_on_label": "Oct 14, 2026"
  },
  {
   "id": "twin-cities-augsburg-urban-debate-league-summer-camps",
@@ -94393,6 +97585,239 @@
   "priority": 2,
   "notes": "Requires a physician-signed medical clearance with immunity proof (measles, mumps, rubella, varicella), Tdap, hepatitis B series, COVID-19 vaccine with booster, flu shot in season, and a negative TB blood test within 90 days of your start date. Also a three-hour orientation. The page says the uniform costs $40, paid by card at orientation.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": null,
+  "needs_work_permit": false,
+  "id": "uci-its-prime-transportation-research-internship",
+  "name": "UCI ITS PRIME Summer Internship",
+  "org": "UC Irvine Institute of Transportation Studies",
+  "city": "Irvine, CA",
+  "type": "internship",
+  "fields": [
+   "engineering",
+   "science",
+   "environment"
+  ],
+  "what_you_do": "Work in transportation research for 8 weeks in the summer. You need no research experience.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "High school students. The page lists no age or grade rule. No research experience is needed.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid summer internship. No fee is listed.",
+  "season": "summer",
+  "duration": "8 weeks",
+  "status": "rolling",
+  "deadline_text": "The page says applications are accepted through May each year while space remains. It urges you to apply early.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Email Dr. Victoria Deguzman at Vvdeguzm@uci.edu. Attach a letter of interest, a resume and a transcript. An unofficial transcript is fine.",
+  "url": "https://its.uci.edu/prime-program/",
+  "priority": 2,
+  "notes": "Exact start and end dates are not posted on the program page.",
+  "sources_fetched": [
+   "https://its.uci.edu/prime-program/"
+  ],
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": null,
+  "needs_work_permit": false,
+  "id": "uci-medacademy",
+  "name": "UCI MedAcademy",
+  "org": "UC Irvine School of Medicine",
+  "city": "Irvine, CA",
+  "type": "pre-college",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Spend 5 days learning about medical careers. You work in teams with actors who play patients. You take a medical history, examine them and work out a diagnosis.",
+  "min_age": 15,
+  "max_age": 19,
+  "who_can_apply": "High school students, including this year's graduates, ages 15 to 19. You must be 15 by the first day of your session. You need one reference from a teacher, coach, administrator or counselor.",
+  "paid_type": "fee-based",
+  "pay_detail": "Tuition is $2,000. It is due two weeks before the session and cannot be refunded. Partial and full scholarships are available for financial hardship.",
+  "season": "summer",
+  "duration": "5 days. Listed 2027 sessions: June 21 to 25, June 28 to July 2 and July 12 to 16.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications open February 1 and close March 1 at 11:59 p.m. Pacific. The page does not state the year. The sessions it lists are in summer 2027. Late applications are not accepted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Use the apply link on the program page. Have these ready: an unofficial transcript, your reference's name and email, and answers to three essay questions. Each essay has a 1,500-character limit.",
+  "url": "https://medschool.uci.edu/education/pre-med-pathway-programs/uci-med-academy",
+  "priority": 2,
+  "notes": "Sessions may change. Notices go out in mid-April. Your reference must email the letter by the same March 1 deadline. Scholarships are available to students with financial hardship.",
+  "sources_fetched": [
+   "https://medschool.uci.edu/education/pre-med-pathway-programs/uci-med-academy"
+  ],
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": "9-12",
+  "needs_work_permit": false,
+  "id": "uci-peri-institute-stem-education-research",
+  "name": "UCI PERI Institute STEM Education Research Program",
+  "org": "UC Irvine, PERI Institute",
+  "city": "Irvine, CA",
+  "type": "research",
+  "fields": [
+   "education",
+   "science"
+  ],
+  "what_you_do": "Do a STEM education research project with a mentor. Week 1 is on campus. Weeks 2 to 5 are online. Week 6 is a poster show for family and friends.",
+  "min_age": null,
+  "max_age": null,
+  "who_can_apply": "Rising sophomores, juniors and seniors in high school. The page lists no age or GPA rule.",
+  "paid_type": "fee-based",
+  "pay_detail": "The registration fee is $750. The page does not mention scholarships.",
+  "season": "summer",
+  "duration": "6 weeks. In 2026 it ran June 15 to July 22. Weeks 2 to 5 take up to 15 hours a week.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications were rolling and closed on Tuesday, March 31 at 5 p.m. The page does not state the year. The 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the online application linked on the program page. The page recommends preparing your answers ahead to avoid session timeouts. Questions go to Leanna Fong at leannaf@uci.edu.",
+  "url": "https://educationresearch.uci.edu/the-peri-institute-stem-education-research-program/",
+  "priority": 2,
+  "notes": "The program is hybrid. The page says to prepare your answers ahead to avoid session timeouts.",
+  "sources_fetched": [
+   "https://educationresearch.uci.edu/the-peri-institute-stem-education-research-program/"
+  ],
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": null,
+  "needs_work_permit": false,
+  "id": "uci-scrip-high-school-research-internship",
+  "name": "UCI Scientific Clinical Research Internship Program (SCRIP)",
+  "org": "UC Irvine School of Medicine, Office of Research",
+  "city": "Irvine, CA",
+  "type": "research",
+  "fields": [
+   "health",
+   "science"
+  ],
+  "what_you_do": "Volunteer in a UC Irvine research lab under a faculty sponsor. You must line up the sponsor yourself before you apply.",
+  "min_age": 16,
+  "max_age": null,
+  "who_can_apply": "High school students who are 16 or older. A parent must also sign the permission form. You must find a UC Irvine faculty sponsor on your own. The program will not match you with one.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. It is a volunteer, non-credit program. No fee is listed.",
+  "season": "year-round",
+  "duration": "1 month to 12 months. It runs in fall, winter, spring and summer.",
+  "status": "unconfirmed",
+  "deadline_text": "No closing date is posted. The Office of Research collects completed packets every quarter.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Find a lab and a UC Irvine faculty sponsor. Give your sponsor and their department the packet. It has an application, a medical form, a safety form and a parent form.",
+  "url": "https://medschool.uci.edu/research/office-research/policies-and-guidelines/student-research-internship-program",
+  "priority": 3,
+  "notes": "Without a faculty sponsor, your application is not considered. Email Alondra Garcia at alondg19@hs.uci.edu with questions. The page also lists 949-824-5388 for general Education and Admissions.",
+  "sources_fetched": [
+   "https://medschool.uci.edu/research/office-research/policies-and-guidelines/student-research-internship-program"
+  ],
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": null,
+  "needs_work_permit": false,
+  "id": "uci-som-summer-online-research-program",
+  "name": "UCI School of Medicine Summer Online Research Program",
+  "org": "UC Irvine School of Medicine",
+  "city": "Irvine, CA",
+  "type": "research",
+  "fields": [
+   "health",
+   "science"
+  ],
+  "what_you_do": "Do a healthcare research project with a mentor, online, in a 3-week session. Students in higher grades get priority.",
+  "min_age": 15,
+  "max_age": 18,
+  "who_can_apply": "High school students ages 15 to 18 with a 3.3 unweighted GPA or higher. You should be interested in healthcare research.",
+  "paid_type": "fee-based",
+  "pay_detail": "$2,350 for each 3-week session. Limited scholarships are for low-income families at underserved Southern California high schools.",
+  "season": "summer",
+  "duration": "3 weeks. In 2026 the sessions were June 22 to July 10 and July 13 to July 31.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Summer 2026 applications are closed. The page says the program typically closes to new applications by the end of January or the beginning of February. It reviews applications on a rolling basis.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the online form. Email your transcript to highschoolresearch@hs.uci.edu. An unofficial copy is fine. You then get a signed confirmation by email.",
+  "url": "https://medschool.uci.edu/education/pre-med-programs/summer-online-research-program",
+  "priority": 2,
+  "notes": "For a scholarship you write an essay and give family tax information. Tax forms are due before acceptance. The page still mentions the 2025 program in its scholarship text, so ask the program to confirm the details.",
+  "sources_fetched": [
+   "https://medschool.uci.edu/education/pre-med-programs/summer-online-research-program"
+  ],
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "regions": [
+   "orange-county"
+  ],
+  "apply_url": null,
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "grades": null,
+  "needs_work_permit": false,
+  "id": "uci-summer-healthcare-experience",
+  "name": "UCI Summer Healthcare Experience",
+  "org": "UC Irvine School of Medicine",
+  "city": "Orange, CA",
+  "type": "pre-college",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Spend one week at the UC Irvine Medical Center. You practice suturing in a surgery simulation lab. You hear from doctors and nurses. You get interview and essay help and finish a health awareness project.",
+  "min_age": 16,
+  "max_age": 18,
+  "who_can_apply": "Rising high school juniors and seniors ages 16 to 18. You must be 16 by the first day of the program.",
+  "paid_type": "fee-based",
+  "pay_detail": "Tuition is $1,550. Ten full scholarships are based on financial need and merit.",
+  "season": "summer",
+  "duration": "5 days. In 2026 it ran July 27 to 31, 8 a.m. to 5 p.m. Breakfast and lunch are included.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "In 2026, applications opened January 26 and closed February 27. No late applications were accepted. The 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Use the Apply Here link on the program page. Incomplete applications are not read. For a scholarship, check the scholarship box, send a transcript and answer the scholarship question.",
+  "url": "https://medschool.uci.edu/education/pre-med-programs/summer-healthcare-experience",
+  "priority": 2,
+  "notes": "This is not an overnight program. Past students may reapply, but the page says preference goes to students who will benefit most. You get a certificate. Questions: Rachel Do, rkdo@hs.uci.edu.",
+  "sources_fetched": [
+   "https://medschool.uci.edu/education/pre-med-programs/summer-healthcare-experience"
+  ],
+  "verified_on_label": "Oct 14, 2026"
  },
  {
   "regions": [
@@ -96837,6 +100262,46 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "valley-humane-society-volunteers",
+  "name": "Valley Humane Society Volunteers",
+  "org": "Valley Humane Society",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Pleasanton, CA",
+  "type": "volunteer",
+  "fields": [
+   "social-impact",
+   "environment"
+  ],
+  "what_you_do": "You care for shelter cats and dogs, help in the treatment room, assist staff or help with media. You work one set shift each week.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be 16 or older. Some jobs need you to be 18. These are AniMeals, customer service and events. Parent and child volunteering is not offered.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. New volunteers buy a $30 Volunteer Starter Kit with a shirt, name badge and manuals.",
+  "season": "year-round",
+  "duration": "Most roles ask for one shift a week for six months to one year",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "The program page lists no deadline. You apply for an open shift.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Look at the open shifts and apply for one you can work. A volunteer coordinator then contacts you to set up an orientation. You also take role workshops and shadow shifts.",
+  "needs_work_permit": false,
+  "url": "https://www.valleyhumane.org/volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.valleyhumane.org/volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "Students can earn community service hours with the same six month, weekly shift promise. Court ordered hours are not accepted. Volunteers must be fully vaccinated, according to the FAQ. Sunday dog care is the greatest need.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
   "id": "valley-water-youth-commission",
   "name": "Valley Water Youth Commission",
   "org": "Valley Water (Santa Clara Valley Water District)",
@@ -98368,6 +101833,133 @@
   "priority": 2,
   "notes": "Not first come, first served. Processing takes about 3 to 5 weeks. Required Occupational Health clearance includes flu, MMR, Varicella, Tdap and TB. Not for court-ordered community service. The page describes volunteer service, not an internship or job shadowing.",
   "verified_on_label": "Oct 10, 2026"
+ },
+ {
+  "id": "walnut-creek-lindsay-wildlife-camp-counselor-in-training",
+  "name": "Summer Camp Counselor in Training",
+  "org": "Lindsay Wildlife Experience",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Walnut Creek, CA",
+  "type": "leadership",
+  "fields": [
+   "education",
+   "environment"
+  ],
+  "what_you_do": "Work next to trained instructors at a wildlife summer camp. You guide campers through wildlife games, crafts and other activities.",
+  "min_age": 14,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Teens ages 14 to 18. You must attend at least two weeks of camp. You can join more weeks if you want.",
+  "paid_type": "not-stated",
+  "pay_detail": "Not stated on the program page. The page says Lindsay offers chances for community service hours.",
+  "season": "summer",
+  "duration": "At least two weeks of camp",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Summer 2026 applications are closed. The page said applicants would be contacted in April 2026 for interviews. Dates for summer 2027 are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Summer 2026 applications are closed. Check the Lindsay camp counselor page for the next round. Interviews were in April for 2026.",
+  "needs_work_permit": null,
+  "url": "https://lindsaywildlife.org/campcounselor/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://lindsaywildlife.org/campcounselor/",
+   "https://lindsaywildlife.org/event-category/teen-programs/",
+   "https://lindsaywildlife.org/hours-prices-directions/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "The page does not say if the role is paid, a volunteer role, or has a fee. Ask Lindsay before you apply. Lindsay is at 1931 First Avenue, Walnut Creek.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "id": "walnut-creek-lindsay-wildlife-owl-teen-program",
+  "name": "Outstanding Wildlife Leaders (OWL) Teen Program",
+  "org": "Lindsay Wildlife Experience",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Walnut Creek, CA",
+  "type": "leadership",
+  "fields": [
+   "environment",
+   "education",
+   "science"
+  ],
+  "what_you_do": "Spend a year as a teen wildlife leader. You work a 2.5 hour onsite shift each week and give at least 100 hours in the program year. You take part in conservation education that includes public speaking.",
+  "min_age": 13,
+  "max_age": 18,
+  "grades": "Not yet graduated from high school",
+  "who_can_apply": "Teens ages 13 to 18 who have not graduated from high school. You must give at least 100 hours in the program year and come to a 2.5 hour shift each week. You must be willing to give public talks, lift 15 pounds, and walk safely around animal pens.",
+  "paid_type": "fee-based",
+  "pay_detail": "Annual program fee of $700. Limited scholarships may be available.",
+  "season": "year-round",
+  "duration": "One program year, at least 100 service hours",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026-2027 application is closed. The next application dates are not stated on the program page.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "The 2026-2027 application is closed. Email the youth programs team to ask when the next one opens. The email is on the program page.",
+  "needs_work_permit": false,
+  "url": "https://lindsaywildlife.org/education/youth/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://lindsaywildlife.org/education/youth/",
+   "https://lindsaywildlife.org/event-category/teen-programs/",
+   "https://lindsaywildlife.org/become-volunteer-3/",
+   "https://lindsaywildlife.org/hours-prices-directions/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "Youth programs email: youthprograms@lindsaywildlife.org. Lindsay is at 1931 First Avenue, Walnut Creek. The same page describes Keepers in Training (KIT), a second step for teens who complete at least one year in the OWL program. KIT teens work closely with Lindsay's Animal Encounters department and commit to a 4 hour weekly shift. Lindsay lists its wildlife hospital and exhibit volunteer jobs as ages 18 and up. The OWL program is designed for teens ages 13 to 18.",
+  "verified_on_label": "Oct 14, 2026"
+ },
+ {
+  "id": "walnut-creek-save-mount-diablo-volunteer-workdays",
+  "name": "Save Mount Diablo Volunteer Workdays",
+  "org": "Save Mount Diablo",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Walnut Creek, CA (workdays on Mount Diablo land)",
+  "type": "volunteer",
+  "fields": [
+   "environment"
+  ],
+  "what_you_do": "Help restore wildlife land near Mount Diablo. You weed, water, plant, clean up and build on workdays. Staff lead the work.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Open to volunteers under 18 with rules. You need a waiver signed by a parent or guardian. You must come with your parent, guardian or chaperone. Or you can come with a school or youth group and its leader. Workdays are not drop-off programs.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer role.",
+  "season": "year-round",
+  "duration": "Workdays on a calendar; group workdays are 3 hours",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Workdays are posted on an online calendar through the year. Each one has its own date.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Pick a workday on the sign-up calendar linked on the volunteer page. You can also email the stewardship team. If you are under 18, a parent or guardian signs a waiver.",
+  "needs_work_permit": false,
+  "url": "https://savemountdiablo.org/how-to-help/volunteer/",
+  "apply_url": "https://savemountdiablo.volunteerhub.com/vv2/lp/smddirt",
+  "sources_fetched": [
+   "https://savemountdiablo.org/how-to-help/volunteer/",
+   "https://savemountdiablo.org/how-to-help/volunteer/group-stewardship-events/",
+   "https://savemountdiablo.org/about/contact/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-14",
+  "priority": 2,
+  "notes": "The office is at 201 N. Civic Drive, Walnut Creek. Groups can fill out a group workday interest form. Group workdays are three hours long, from Wednesday through Saturday, at sites in Clayton, Concord and Pittsburg. All tools, equipment and instruction are provided. The volunteer page also lists other jobs, such as hike leader and office help. It does not give an age for them.",
+  "verified_on_label": "Oct 14, 2026"
  },
  {
   "id": "warren-newport-library-student-volunteers-and-tag",
