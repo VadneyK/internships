@@ -14,5 +14,8 @@
     "@stryker-mutator/tap-runner": "10.0.0",
     "axe-core": "4.14.0",
     "jsdom": "^30.1.2"
+  },
+  "overrides": {
+    "qs": "6.16.0"
   }
 }
