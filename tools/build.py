@@ -83,6 +83,28 @@ def younger_options(body):
     return body.replace("{{state_options}}", "".join(opts))
 
 
+def fill_csp_hashes(page):
+    """Fill {{script_hashes}} in the Content-Security-Policy meta tag with a sha256 source for every inline script.
+
+    The hash is taken from the built page itself, so editing the theme script in src/_layout.html (or adding an inline
+    script to a page) changes the policy with it and the page cannot silently stop running its script."""
+    import base64
+    import hashlib
+    if "{{script_hashes}}" not in page:
+        print("ERROR {{script_hashes}} is missing from the page; the CSP meta tag needs it")
+        sys.exit(1)
+    hashes = []
+    for m in re.finditer(r"<script(?![^>]*\ssrc=)[^>]*>(.*?)</script>", page, flags=re.S):
+        digest = base64.b64encode(hashlib.sha256(m.group(1).encode("utf-8")).digest()).decode("ascii")
+        src = " 'sha256-%s'" % digest
+        if src not in hashes:
+            hashes.append(src)
+    if not hashes:
+        print("ERROR no inline script hash found; the theme script must be inline on every page")
+        sys.exit(1)
+    return page.replace("{{script_hashes}}", "".join(hashes))
+
+
 def build(name):
     raw = open(os.path.join(SRC, name + ".html"), encoding="utf-8").read()
     head, body = raw.split("\n---\n", 1)
@@ -127,6 +149,7 @@ def build(name):
         out = out.replace("{{" + k + "}}", v)
     for k, v in rep.items():
         out = out.replace("{{" + k + "}}", v)
+    out = fill_csp_hashes(out)
     left = re.findall(r"\{\{(\w+)\}\}", out)
     if left:
         print("WARNING unreplaced tokens in", name, set(left))

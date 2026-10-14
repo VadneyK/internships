@@ -30,16 +30,9 @@ const ALLOW_URL_PREFIXES = [
   { prefix: "https://vadneyk.github.io/internships/", why: "the site's own public address, used only in links a reader opens" },
 ];
 
-// Inline event handler attributes that already exist in the src templates. Each one stops the page reload on a filter or
-// search form and runs on the page itself. Moving them into assets/js is a change to src/*.html and the build, which this
-// ticket does not touch. Remove an entry once its handler is gone.
-const KNOWN_HANDLER_HITS = [
-  { file: "find.html", attr: "onsubmit", why: "filter form submit handler in src template; runs on the page, sends nothing" },
-  { file: "index.html", attr: "onsubmit", why: "picker form submit handler in src template; runs on the page, sends nothing" },
-  { file: "resume.html", attr: "onsubmit", why: "resume form submit handler in src template; runs on the page, sends nothing" },
-  { file: "leaders.html", attr: "onsubmit", why: "form submit handler in src template; runs on the page, sends nothing" },
-  { file: "playbook.html", attr: "onsubmit", why: "form submit handler in src template; runs on the page, sends nothing" },
-];
+// Inline event handler attributes that are known and accepted: { file, attr, why }. None today.
+// The Content-Security-Policy meta tag blocks them, so the form handlers moved to a submit listener in assets/js/common.js.
+const KNOWN_HANDLER_HITS = [];
 
 // Script hits that are known and accepted: { file, match, why }. None today.
 const KNOWN_JS_HITS = [];

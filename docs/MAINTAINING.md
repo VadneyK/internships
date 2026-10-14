@@ -72,6 +72,15 @@ A bulk pass re-reads the official page of many programs at once. The first one w
 - A checker never invents an age, date or pay. If the page does not say it, write "not stated" or remove the claim.
 - If the page cannot be read, downgrade the program. Do not guess from memory.
 
+## Content-Security-Policy
+Every page has a `Content-Security-Policy` meta tag, written in `src/_layout.html`. `tools/build.py` fills in `{{script_hashes}}` with a sha256 for each inline script in the built page, so editing the theme script in the layout updates the policy on the next build. Rebuild after any change to an inline script. Inline event handler attributes (`onclick`, `onsubmit` and the like) and `javascript:` links are blocked by the policy; use `addEventListener` in `assets/js`. Inline `style` attributes are allowed. A page may load only its own files (scripts, styles, fonts, data), plus `data:` images (no `blob:`); a new outside host needs a policy change on purpose. `frame-ancestors` and `report-uri` are ignored in a meta tag, so they are not set. `tests/r9-tests-1-csp-meta.test.mjs` pins the shape. After a change that adds a new kind of resource or download, open every page in a real browser (headless Chrome through the DevTools port) and check the console for "Refused to" messages.
+
+The shared submit listener in `assets/js/common.js` calls `preventDefault` only on forms without an `action` attribute, so a form with a real `action` submits normally.
+
+## security.txt
+
+`.well-known/security.txt` expires inside one year of when it was written (now 2027-09-30T00:00:00Z). Renew it in September 2027 and keep `Expires` less than 366 days ahead (a test checks this); `tests/r3-tests-9-security-txt.test.mjs` fails once the date has passed. `.nojekyll` must stay so Pages serves the dot folder. Limitation: this is a project Pages site, so the file is served at `https://vadneyk.github.io/internships/.well-known/security.txt`, not at the host root that RFC 9116 section 3 expects (there is no `vadneyk.github.io` user site repo). The `Canonical:` line declares the real location; keep it in sync if the site ever moves.
+
 ## Handling an issue
 1. Read the official page yourself. Do not trust the report alone.
 2. Fix the program file (`data/programs/<id>.json`), set `verified_on` to today, add the page to `sources_fetched`.
