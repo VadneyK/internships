@@ -87,7 +87,7 @@ const TABLE = {
   "data/transit.json": { ceiling: 9100, reason: "data file, 8193 bytes measured 2026-10-10" },
   "data/younger.json": { ceiling: 19600, reason: "data file, 17796 bytes measured 2026-10-10" },
   // 2026-10-13: ticket ux9-pills. style.css 48800 to 48900 (.fpill round pill rule; 48834 bytes).
-  // 2026-10-14: persona round 9. common.js 34700 to 34900 (typed towns such as Fremont find their Where choice; 34859 bytes), find.js 64500 to 66400 (Good fit keeps the QR area, Only some can apply tag, fuller Copy my list text; 66339 bytes).
+  // 2026-10-14: persona round 9. common.js 34700 to 34900 (typed towns such as Fremont find their Where choice; 34859 bytes), find.js 64500 to 66400 (Good fit keeps the QR area, Only some can apply tag, fuller Copy my list text, picks keep the pay choice; 66476 bytes).
   // 2026-10-13: ticket ux9-place-search-option. common.js 34500 to 34700 (empty caption and any-label options on the shared place box; 34554 bytes).
   // 2026-10-12: Programs filters redesign. style.css 46100 to 48300 (summary bar, pill rows, phone bar; 48237 bytes), common.js 28300 to 34500 (the shared place search box; 34453 bytes), find.js 59300 to 64500 (summary bar and phone bar code; 64477 bytes). home.js got smaller, so its row stays.
   "assets/css/fonts.css": { ceiling: 6800, reason: "stylesheet, 6158 bytes measured 2026-10-10" },
@@ -98,11 +98,11 @@ const TABLE = {
   // 2026-10-13: ux9 review fixes (.tablewrap position, Jobs hours gap). style.css 50300 to 50400 (50324 bytes).
   // 2026-10-13: ux9 review fixes. style.css 50400 to 50500 (50427 bytes).
   // 2026-10-13: workshop leaders round. style.css 50500 to 50600 (50571 bytes).
-  "assets/css/style.css": { ceiling: 50600, reason: "stylesheet, 41831 bytes measured 2026-10-10" },
+  "assets/css/style.css": { ceiling: 50700, reason: "stylesheet, 41831 bytes measured 2026-10-10; 50638 bytes on 2026-10-14 after the phone filter summary fix" },
   "assets/js/calendar.js": { ceiling: 8800, reason: "script, 7966 bytes measured 2026-10-10" },
   "assets/js/common.js": { ceiling: 34900, reason: "script, 25681 bytes measured 2026-10-10" },
   // Raised from 58100 to 59300 on 2026-10-12 for ticket diet-1 (Where group files on the Programs page). 59217 bytes measured.
-  "assets/js/find.js": { ceiling: 66400, reason: "script, 52771 bytes measured 2026-10-10" },
+  "assets/js/find.js": { ceiling: 66600, reason: "script, 52771 bytes measured 2026-10-10" },
   "assets/js/handout.js": { ceiling: 600, reason: "script, 274 bytes measured 2026-10-10; 517 bytes on 2026-10-14 with the one page handout and table plan print buttons" },
   // 2026-10-12: home picker flow. home.js grew by about 8.8 KB (place search box, chip, step markers); ceiling raised from 10800 to 18600, measured 18585 bytes.
   "assets/js/home.js": { ceiling: 18700, reason: "script, 18605 bytes measured 2026-10-12 (home picker flow, plus the 1 day label)" },
@@ -119,7 +119,7 @@ const TABLE = {
   // Raised for ticket p8-permit-lite-print: the printable checklist and next step on the shorter state answers. 31519 bytes measured 2026-10-12.
   "assets/js/permit.js": { ceiling: 31950, reason: "script, 31830 bytes measured 2026-10-13 (ux9-permit-flow: state search box on the shorter-state list; was 31519 on 2026-10-12, p8-permit-lite-print)" },
   "assets/js/playbook.js": { ceiling: 19200, reason: "script, 17385 bytes measured 2026-10-10" },
-  "assets/js/ready.js": { ceiling: 12100, reason: "script, 10954 bytes measured 2026-10-10" },
+  "assets/js/ready.js": { ceiling: 12400, reason: "script, 10954 bytes measured 2026-10-10; 12374 bytes on 2026-10-14 with Santa Ana Unified and Newport-Mesa Unified permit steps" },
   "assets/js/resume.js": { ceiling: 9600, reason: "script, 8687 bytes measured 2026-10-10" },
   "assets/js/safety.js": { ceiling: 9700, reason: "script, 8781 bytes measured 2026-10-10" },
   "assets/js/share.js": { ceiling: 1900, reason: "script, 1681 bytes measured 2026-10-10" },

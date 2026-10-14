@@ -235,11 +235,11 @@
     if (state.moreOnline) box.innerHTML += ' <button class="chip noprint" type="button" data-online-off="1">Online and national included (remove)</button>';
   }
 
-  /* "Good fit for you": the best three for the chosen age and area only (a picked place, or an area chip such as a QR code's where=).
+  /* "Good fit for you": the best three for the chosen age, area (a picked place, or an area chip such as a QR code's where=) and pay choice.
      Other filters and the search do not change it. Cards only some teens can join (one city's residents, girls or boys only) come last. */
   var PICKS_N = 3, picksKey = null;
   function picksEntries(t) {
-    var s = { age: state.age, place: state.place, hubs: state.hubs };
+    var s = { age: state.age, place: state.place, hubs: state.hubs, paid: state.paid };
     var found = all.filter(function (e) { return L.matches(e, s, t); });
     if (found.length < 3) { s.placeOnline = true; found = all.filter(function (e) { return L.matches(e, s, t); }); }
     var p = { age: state.age }, open = L.topPicks(found.filter(function (e) { return !e.limited; }), p, t, PICKS_N);
@@ -249,8 +249,9 @@
     var box = $("picks"), nudge = $("picksNudge"), ol = $("picksList"); if (!box || !ol) return;
     var chosen = !!(state.age || state.place || state.hubs.length), why = $("picksWhy");
     if (nudge) nudge.hidden = chosen;
-    if (why) why.textContent = (state.place || state.hubs.length ? "Picked from your age and area." : "Picked from your age, from anywhere. Pick an area to see programs near you.") + " Dates and rules can change, so check the official page.";
-    var t = now(), key = JSON.stringify([state.age, state.place, state.hubs, new Date(t).toDateString()]);
+    var area = state.place || state.hubs.length;
+    if (why) why.textContent = (area && state.age ? "Picked from your age and area." : area ? "Picked from your area. Pick your age for a closer fit." : "Picked from your age, from anywhere. Pick an area to see programs near you.") + " Dates and rules can change, so check the official page.";
+    var t = now(), key = JSON.stringify([state.age, state.place, state.hubs, state.paid, new Date(t).toDateString()]);
     var picks = chosen ? picksEntries(t) : [];
     box.hidden = !picks.length;
     if (!picks.length) { picksKey = null; ol.innerHTML = ""; return; }

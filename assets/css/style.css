@@ -646,7 +646,7 @@ dl.facts.plain > div { border: 0; border-top: 2px solid var(--edge); border-radi
 
 /* 2026-10-12: Programs filters redesign. A summary bar of the picks, compact pill rows, popular areas inside Where, a phone bar. Tokens only. */
 #filters { gap: 1.1rem; }
-.fsum { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .75rem; padding: .7rem .85rem; background: var(--paper); border: 3px solid var(--edge); border-radius: var(--radius); }
+.fsum { display: flex; flex-wrap: wrap; min-width: 0; align-items: center; gap: .4rem .75rem; padding: .7rem .85rem; background: var(--paper); border: 3px solid var(--edge); border-radius: var(--radius); }
 .fsum-t { font-family: var(--display); font-stretch: 108%; font-style: italic; font-weight: 800; text-transform: uppercase; font-size: .8rem; letter-spacing: .06em; }
 .fchips { display: flex; flex-wrap: wrap; gap: .45rem; flex: 1 1 12rem; min-width: 0; }
 .fchip { font: inherit; font-size: .95rem; font-weight: 700; min-height: 2.75rem; max-width: 100%; padding: .3rem .95rem; border: 2px dashed var(--edge); border-radius: 999px; background: var(--surface); color: var(--ink-2); cursor: pointer; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -671,7 +671,7 @@ details + #hClose { margin-top: 1.5rem; }
 #moreFilters { padding-top: .7rem; border-top: 2px dashed color-mix(in srgb, var(--edge) 35%, transparent); }
 .mf-count { margin: 0 auto 0 -.8rem; }
 .showbar { display: none; }
-@media (max-width: 40rem) { .fsum-t { flex: 1; } .fsum-clear { order: 1; } .fchips { order: 2; flex: 1 1 100%; } }
+@media (max-width: 40rem) { .fchip { white-space: normal; } .fsum-t { flex: 1; } .fsum-clear { order: 1; } .fchips { order: 2; flex: 1 1 100%; } }
 @media (max-width: 30rem) { .frow { grid-template-columns: 1fr; } .frow > label, .frow > :not(label) { grid-column: 1; padding-top: 0; } }
 @media (max-width: 47.99rem) {
   .showbar { display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 45; padding: .6rem max(1rem, env(safe-area-inset-right, 0px)) calc(.6rem + env(safe-area-inset-bottom, 0px)) max(1rem, env(safe-area-inset-left, 0px)); background: var(--paper); border-top: 3px solid var(--edge); }
