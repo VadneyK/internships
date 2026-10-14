@@ -61,7 +61,8 @@ const TABLE = {
   // 2026-10-13: re-read of 177 workshop-city cards (38 fixed). data/entries.json limit 4809900 to 4811300.
   // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. data/entries.json limit 4811300 to 4883300.
   // 2026-10-13: re-read of 213 more open cards (42 fixed). data/entries.json limit 4883300 to 4885900.
-  "data/entries.json": { ceiling: 4885900, reason: "data file, 3996617 bytes measured 2026-10-10" },
+  // 2026-10-14 persona round 9: built cards carry a derived limited flag (325 cards) for Good fit and the Only some can apply tag data/entries.json limit 4885900 to 4891200.
+  "data/entries.json": { ceiling: 4891200, reason: "data file, 3996617 bytes measured 2026-10-10" },
   "data/expiring-dates.json": { ceiling: 1700, reason: "data file, 1530 bytes measured 2026-10-10" },
   "data/gaps.json": { ceiling: 5400, reason: "data file, 4832 bytes measured 2026-10-10" },
   "data/interview.json": { ceiling: 12400, reason: "data file, 11207 bytes measured 2026-10-10" },

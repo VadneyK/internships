@@ -32,7 +32,9 @@ const LIMITS = {
     // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. data/entries.json gzip 1088200 to 1103400.
     // 2026-10-13: re-read of 213 more open cards (42 fixed). data/entries.json raw 4883300 to 4885900.
     // 2026-10-13: re-read of 213 more open cards (42 fixed). data/entries.json gzip 1103400 to 1104300.
-    "data/entries.json": { raw: 4885900, gzip: 1104300 },
+    // 2026-10-14 persona round 9: built cards carry a derived limited flag (325 cards) for Good fit and the Only some can apply tag data/entries.json raw 4885900 to 4891200.
+    // 2026-10-14 persona round 9: built cards carry a derived limited flag (325 cards) for Good fit and the Only some can apply tag data/entries.json gzip 1104300 to 1105400.
+    "data/entries.json": { raw: 4891200, gzip: 1105400 },
     // Raised from 2020000 to 2040000 on 2026-10-10 after the fact check: the page re-reads added about 6,000 bytes (0.3 percent) of plainer deadline_text across 266 cards, saying what the page does and does not state. No single card is the cause. Still about 1,145 bytes per program, under the per-program limit.
     // Gzip limit raised from 440000 to 450000 on 2026-10-10: the card fixes this round (pay wording, opens-soon dates) put it at 440053.
     // Raised again on 2026-10-12 for the 178 more cards: entries-lite.json is 2,097,871 bytes (437,135 gzipped), 947 bytes per program. Raw from 2040000 to 2160000. The gzip limit stays 450000. PENDING PERSON APPROVAL, as for entries.json.
