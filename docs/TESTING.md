@@ -68,9 +68,17 @@ Every change goes through the same loop: build, test, deploy, check the live sit
 A test file is the smallest unit a shard can take, so a slow single file slows its shard. The two biggest sweeps are split by page: `tests/r2-tests-2-data-failure-find.test.mjs`, `-pages-a.test.mjs` and `-pages-b.test.mjs` (data failure sweep), and `tests/r2-tests-3-url-roundtrip-find.test.mjs`, `-permit.test.mjs` and `-calendar.test.mjs` (share-link round trip). Add a page to the file for its group; do not merge them back.
 
 ## Scheduled checks
-Weekly link check, weekly Lighthouse check (`.github/workflows/lighthouse.yml`, assertions in `lighthouserc.json`), monthly "needs a re-check" issue, CodeQL, and a daily date check (`.github/workflows/dates.yml`).
+Weekly link check, weekly Lighthouse check (`.github/workflows/lighthouse.yml`, assertions in `lighthouserc.json`), weekly mutation test of `assets/js/lib.js` (`.github/workflows/mutation.yml`, see below), monthly "needs a re-check" issue, CodeQL, and a daily date check (`.github/workflows/dates.yml`).
 
 The real-data date checks in `tests/test_data_text_agreement.py` and `tests/test_r1_tests_8_allowlist_stale.py` compare against the build date in `data/meta.json` (`checked`), so a push is never failed by a date that passed overnight. Set `DATE_CHECK_TODAY=utc` to make them use today in UTC. The daily workflow does that, runs `python3 tools/flip_dates.py`, and opens or comments on one issue labeled `dates` when a card is due to flip, is held for a person, or a check fails.
+
+## Mutation testing of lib.js
+StrykerJS changes `assets/js/lib.js` in small ways (a flipped comparison, an emptied string, a removed branch) and reruns the tests; a change no test notices is a surviving mutant, a hole in the tests. It runs weekly (Sundays, `.github/workflows/mutation.yml`) and on demand (Actions, Run workflow); it is not part of `check`. The report is uploaded as the `mutation-report` artifact (`mutation.html`).
+
+- Config: `stryker.config.json`. It mutates only `assets/js/lib.js` and runs 51 pure lib test files (files that load lib.js with no jsdom) through the tap runner, one `node --test-reporter=tap` process per file. Left out: files that load jsdom, files that measure the byte size or scan the source text of lib.js (`r1-perf-scale-1`, `r3-a11y-perf-29-first-load-code-bytes`, `r3-tests-2`, they fail on Stryker's instrumented copy), and files over about 900 ms (`r1-tests-5` has a wall-clock limit and a time-based seed; `r1-perf-scale-5`, `r1-tests-2`, `r1-tests-4-order-independence`, `r1-tests-5-rank-properties`, `r1-tests-5-text-and-suggestion-properties`, `r3-a11y-perf-4`, `r3-tests-2-clock-sweep` only slow the run). A new pure lib test file must be added to `tap.testFiles` to count; `tests/test_r3_tests_6_workflow_policy.py` checks that every listed file loads lib.js without jsdom.
+- Measured 2026-10-14: mutation score 81.55 percent (3,367 mutants: 2,732 killed, 9 timed out, 604 survived, 16 no coverage, 6 errors). About 28 minutes on a 14 core Mac with 4 workers. Most survivors are string labels and region and city tables, which only the jsdom page tests read.
+- `thresholds.break` is 76, five points under the measured score, so the run fails only on a real drop. Raise it when the score rises; do not lower it to make a run pass.
+- Run it: `npx stryker run` (needs `npm ci`; the HTML report is `reports/mutation/mutation.html`, and `reports/` and `.stryker-tmp/` are git-ignored). For a quick look use `npx stryker run --mutate "assets/js/lib.js:250-310"`.
 
 ## Checks a person does
 jsdom does not draw anything, so layout and printing need eyes. Before a change to a page is called done, open the live page at a phone width (390 pixels) and a desktop width, look for text that overflows, and try the main action once. The pre-promotion checklist is in `ROADMAP.md`.
@@ -93,7 +101,7 @@ node --test tests/lib.test.mjs
 python3 -m unittest tests.test_tools -v
 ```
 
-The Home picker budget: after a pick, `tests/r3-a11y-perf-2-home-four-files.test.mjs` checks the four cards come from `data/programs/<id>.json` (under 20000 bytes in all), never from the big shared files. `data/programs` is published with the site and is not in `.gitignore`.
+The Home picker budget: after a pick, `tests/r3-a11y-perf-2-home-four-files.test.mjs` checks the four cards come from `data/programs/<id>.json` (under 20000 bytes in all), never from the big shared files. `data/programs` is published with the site and is not in `.gitignore`. The deploy job's rsync also excludes `stryker.config.json`, `reports` and `.stryker-tmp`, so mutation-testing files never reach the live site.
 
 The Numbers page budget: `tests/r3-a11y-perf-6-insights-stats-file.test.mjs` checks `insights.html` reads `data/entries-stats.json` (same ids and order as the entries file, only the keys `lib.insights()` reads, null values left out) and never the card file, and that every number on the page matches `L.insights` run on the full data. `tests/test_r3_tools.py` checks the file is a projection of `entries.json` and under 60 percent of the card file.
 
