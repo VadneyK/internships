@@ -87,7 +87,8 @@ const LIMITS = {
   // Raised from 53400 to 55100 on 2026-10-11 for the farm and ranch box (ticket p6-farm-1): four sourced federal farm rules, about 1,670 bytes, each with the page title as its link text. safety.html is 55010 bytes.
   // Raised from 55100 to 55500 on 2026-10-12 for the grouped footer Quick links (about 380 bytes). safety.html is 55390 bytes.
   // Raised for ready.html only on 2026-10-13 for the closed foster care and on your own block (ticket r8-ready-foster), about 2,900 bytes with nine source links. ready.html is 37556 bytes. Every other root page keeps the limit above.
-  pageLimits: { "safety.html": 55500, "ready.html": 37700 },
+  // 2026-10-14: ready.html 37700 to 37800 for the footer line that sends teens to a parent or youth leader instead of GitHub (every page; ready.html 37736 bytes).
+  pageLimits: { "safety.html": 55500, "ready.html": 37800 },
   // Raised from 40000 to 46000 on 2026-10-10: lib.js grew to 41715 bytes for the live chip counts, empty-state options, top picks and the cost-tier sort. Gzipped it is about 11 KB. The other scripts are all under 40000.
   // Raised again from 46000 to 48000 on 2026-10-10 for the whole-state Where choices (the state list, its group lists and the state place lookup). lib.js is 47189 bytes.
   // Raised from 48000 to 49500 on 2026-10-11 for the under-14 note and the search-cache fix in find.js. find.js is 49389 bytes.

@@ -85,4 +85,4 @@ The look borrows the orange, yellow and black of the Ignition NorCal 2026 flyer.
 
 ## License
 
-Code: [MIT](LICENSE). Program data and written guides: [CC BY 4.0](LICENSE-DATA.md). Fonts: SIL Open Font License.
+Code: [MIT](LICENSE). Program data and written guides: [CC BY 4.0](LICENSE-DATA.md). Fonts: Archivo and DM Sans under the [SIL Open Font License 1.1](licenses/fonts-OFL.txt), Permanent Marker under the [Apache License 2.0](licenses/font-PermanentMarker-Apache-2.0.txt).
