@@ -124,6 +124,22 @@ jobs:
           path: _site
       - id: deployment
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5
+      - name: Smoke test the deployed site (every page and the main data files answer 200)
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          fail=0
+          for f in $(cd _site && ls *.html) data/entries-lite.json data/entries-home.json data/meta.json robots.txt sitemap.xml; do
+            code=000
+            for try in 1 2 3 4 5 6; do
+              code=$(curl -s -o /dev/null -w '%{http_code}' "${PAGE_URL}${f}")
+              [ "$code" = "200" ] && break
+              sleep 10
+            done
+            echo "$code ${f}"
+            [ "$code" = "200" ] || fail=1
+          done
+          exit $fail
 
   # Both coverage floors come from the V8 dumps the js shards already wrote, so the suite runs once per push.
   coverage:
