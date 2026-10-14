@@ -15,20 +15,33 @@ function enter(window, el) {
   el.dispatchEvent(new window.KeyboardEvent("keydown", { key: "Enter", bubbles: true, cancelable: true }));
 }
 
+// 2026-10-14: wait for the count to settle instead of a fixed 400 ms. Under a loaded machine the typing
+// timer and the detail file can land later, and the fixed wait read a half-done count now and then.
+async function settled(document) {
+  const count = document.getElementById("count");
+  await tick(400);
+  let last = count.textContent;
+  for (let i = 0; i < 50; i++) {
+    await tick(100);
+    if (count.textContent === last) return last;
+    last = count.textContent;
+  }
+  return last;
+}
+
 // The count a page shows once the typing timer has run for the given search (the normal, debounced path).
 // The first search also loads the detail file (the long text the search reads), so this is the full count.
 async function referenceCount(q) {
   const p = await ready();
   type(p.window, p.document.getElementById("q"), q);
-  await tick(400);
-  return p.document.getElementById("count").textContent;
+  return settled(p.document);
 }
 
 // Load the detail file on this page first, so an Enter press runs against the full data without waiting for it.
 async function warmed() {
   const p = await ready();
   type(p.window, p.document.getElementById("q"), "camp");
-  await tick(400);
+  await settled(p.document);
   return p;
 }
 
@@ -69,6 +82,6 @@ test("Enter does not change the URL hash and a later input still debounces", asy
   // A new input after Enter must wait for the usual quiet time, so no second immediate render happens.
   type(window, q, "hospital");
   assert.equal(count.textContent, afterEnter, "input after Enter must not render at once");
-  await tick(400);
+  for (let i = 0; i < 50 && count.textContent !== hospital; i++) await tick(100);
   assert.equal(count.textContent, hospital);
 });
