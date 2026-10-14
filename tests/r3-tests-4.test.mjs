@@ -16,7 +16,7 @@ const MEASURED = {
   fields: {
     what_you_do: { mean: 6.64, aboveLimit: 177 },
     who_can_apply: { mean: 6.3, aboveLimit: 280 },
-    how_to_apply: { mean: 7.34, aboveLimit: 453 }, // 2026-10-13: tightened from 460 after the re-read of 213 open cards made texts plainer
+    how_to_apply: { mean: 6.84, aboveLimit: 453 }, // 2026-10-13: tightened from 460 after the re-read of 213 open cards made texts plainer; 2026-10-14: mean tightened from 7.34 (measured 6.79 after the gaps wave)
     notes: { mean: 6.39, aboveLimit: 268 },
   },
   pages: { mean: 4.87, aboveLimit: 0 },
