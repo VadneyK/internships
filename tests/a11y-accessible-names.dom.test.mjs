@@ -36,7 +36,7 @@ test("the seven preview and stats elements are role=group", () => {
   }
 });
 
-test("share.html QR images say where the code goes and load lazily", async () => {
+test("share.html QR images say where the code goes and load before print", async () => {
   const { document } = await loadPage("share.html");
   const cards = [...document.querySelectorAll(".qrcard")];
   assert.equal(cards.length, 10);
@@ -52,7 +52,8 @@ test("share.html QR images say where the code goes and load lazily", async () =>
     assert.ok(!/[\u2013\u2014]/.test(alt), alt);
     assert.equal(img.getAttribute("width"), "160");
     assert.equal(img.getAttribute("height"), "160");
-    if (i === 0) assert.ok(!img.hasAttribute("loading")); else assert.equal(img.getAttribute("loading"), "lazy");
+    // 2026-10-14: no lazy loading. Printed straight after opening, lazy codes below the fold came out as blank squares (event check before the Alameda table).
+    assert.ok(!img.hasAttribute("loading"), "QR image " + i + " must load before print");
   });
 });
 
