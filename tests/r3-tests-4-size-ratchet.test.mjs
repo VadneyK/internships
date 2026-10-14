@@ -90,7 +90,7 @@ const TABLE = {
   "assets/js/common.js": { ceiling: 34700, reason: "script, 25681 bytes measured 2026-10-10" },
   // Raised from 58100 to 59300 on 2026-10-12 for ticket diet-1 (Where group files on the Programs page). 59217 bytes measured.
   "assets/js/find.js": { ceiling: 64500, reason: "script, 52771 bytes measured 2026-10-10" },
-  "assets/js/handout.js": { ceiling: 400, reason: "script, 274 bytes measured 2026-10-10" },
+  "assets/js/handout.js": { ceiling: 400, reason: "script, 274 bytes measured 2026-10-10; 398 bytes on 2026-10-14 with the one page print button" },
   // 2026-10-12: home picker flow. home.js grew by about 8.8 KB (place search box, chip, step markers); ceiling raised from 10800 to 18600, measured 18585 bytes.
   "assets/js/home.js": { ceiling: 18700, reason: "script, 18605 bytes measured 2026-10-12 (home picker flow, plus the 1 day label)" },
   "assets/js/insights.js": { ceiling: 6100, reason: "script, 5471 bytes measured 2026-10-10" },

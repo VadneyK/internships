@@ -21,6 +21,7 @@ const PICKER_CALLS = /\b(?:G|TIG)\.(?:tilePicker|autoTiles)\b/;
 // Ceilings: bytes on disk for each page's script and stylesheet files, about 5% over today's total (rounded up to 100 bytes).
 // Raised on 2026-10-12 for ticket r3-a11y-perf-35: the body min-height 100dvh line in style.css adds 22 bytes, so every page that loads style.css has its ceiling raised by 22 bytes and nothing else.
 const BUDGET = {
+  // 2026-10-14 event fixes: the paycheck table fits a phone (about 15 bytes in style.css) and the handout gets a one page print button (handout.js). Pages over set to the measured size rounded up to 100.
   // 2026-10-13 workshop leaders round merged with the look and feel round: pages over set to the measured size rounded up to 100.
   // Raised on 2026-10-13 for ticket p9-cities-plains: lib.js grew by about 370 bytes (El Paso, Omaha, Wichita, Des Moines, Billings and Boise Where choices). Each page that loads lib.js and went over has its ceiling set to the measured size rounded up to 100.
   // 2026-10-12: Programs filters redesign. The shared place search box moved into common.js (about 8 KB, every page loads it; Home's own copy came out of home.js) and style.css gained the summary bar, pill rows and phone bar rules (about 3.6 KB); find.js gained the summary bar and phone bar code (about 5 KB). Every page went over, and each ceiling is the measured size rounded up to the next 100.
@@ -35,15 +36,15 @@ const BUDGET = {
   // Raised 2026-10-11 after the new-states merge (regions and places in lib.js, wages reader in common.js): find 171400 to 171500, jobs 141100 to 141900, permit 145000 to 145400.
   // Raised from 171500 to 172800 on 2026-10-11 for tickets p8-lite-1 and p8-cities-1: big cities of the 11 new states in lib.js, plain missing-fact answers and wage notes in common.js and permit.js.
   // Raised from 179400 to 185200 on 2026-10-12 for ticket diet-1: find.js grew by about 6 KB (ten literal chunk URLs for the lite files and ten for the detail files, the place to chunk mapping, and the fallback to the whole file). find.html loads 185192 bytes of code.
-  "find.html": { ceiling: 207300, reason: "lib.js, common.js and find.js (largest page script)" },
-  "handout.html": { ceiling: 91600, reason: "common.js, handout.js and both stylesheets; no lib.js" },
+  "find.html": { ceiling: 207400, reason: "lib.js, common.js and find.js (largest page script)" },
+  "handout.html": { ceiling: 91700, reason: "common.js, handout.js and both stylesheets; no lib.js" },
   "index.html": { ceiling: 155000, reason: "lib.js, common.js and home.js (2026-10-12: +100 for the 1 day label and phone heading size)" },
-  "insights.html": { ceiling: 148300, reason: "lib.js, common.js and insights.js" },
+  "insights.html": { ceiling: 148400, reason: "lib.js, common.js and insights.js" },
   "interview.html": { ceiling: 161300, reason: "lib.js, common.js and interview.js" },
   // Raised on 2026-10-11 for ticket p7-regions-1: lib.js grew by 1,296 bytes (11 new states in REGIONS, HUBS, STATES, PICK_GROUPS and STATE_OF). jobs.html loads 141025 bytes (the rest of the growth came from other work in common.js and jobs.js), ceiling raised from 138200 to 141100.
   // Raised from 141900 to 143500 on 2026-10-11 for tickets p8-lite-1 and p8-cities-1: big cities of the 11 new states in lib.js, plain missing-fact answers and wage notes in common.js and permit.js.
   "jobs.html": { ceiling: 165200, reason: "lib.js, common.js and jobs.js" },
-  "languages.html": { ceiling: 146400, reason: "lib.js, common.js and languages.js" },
+  "languages.html": { ceiling: 146500, reason: "lib.js, common.js and languages.js" },
   "leaders.html": { ceiling: 98700, reason: "common.js, leaders.js and both stylesheets; no lib.js" },
   "parents.html": { ceiling: 146400, reason: "lib.js, common.js and parents.js" },
   "paycheck.html": { ceiling: 155300, reason: "lib.js, common.js and paycheck.js" },
@@ -60,7 +61,7 @@ const BUDGET = {
   "rules.html": { ceiling: 91300, reason: "common.js and both stylesheets only; no page script" },
   // Raised on 2026-10-11 for ticket p7-regions-1: lib.js grew by 1,296 bytes (11 new states in REGIONS, HUBS, STATES, PICK_GROUPS and STATE_OF). safety.html loads 128805 bytes, ceiling raised from 127600 to 128900.
   // Raised from 128900 to 130200 on 2026-10-11 for tickets p8-lite-1 and p8-cities-1: big cities of the 11 new states in lib.js, plain missing-fact answers and wage notes in common.js and permit.js.
-  "safety.html": { ceiling: 151600, reason: "lib.js, common.js and safety.js" },
+  "safety.html": { ceiling: 151700, reason: "lib.js, common.js and safety.js" },
   "share.html": { ceiling: 93000, reason: "common.js, share.js and both stylesheets; no lib.js" },
   "states.html": { ceiling: 145400, reason: "lib.js, common.js and states.js" },
   // Raised on 2026-10-11 for ticket p7-regions-1: lib.js grew by 1,296 bytes (11 new states in REGIONS, HUBS, STATES, PICK_GROUPS and STATE_OF). younger.html loads 131827 bytes, ceiling raised from 130800 to 131900.
