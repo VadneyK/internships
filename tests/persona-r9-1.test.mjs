@@ -70,3 +70,28 @@ test("the calendar link keeps the QR code's area", async () => {
 test("a card with no stated age says so instead of claiming all high school ages", () => {
   assert.equal(L.ageText({}), "Age not stated");
 });
+
+test("a card only some teens can join says so on its face", async () => {
+  const { document } = await loadPage("find.html", { search: "?where=oak&age=15" });
+  for (let i = 0; i < 40 && !document.getElementById("p-berkeley-youthworks"); i++) await tick(50);
+  const card = document.getElementById("p-berkeley-youthworks");
+  assert.ok(card, "Berkeley YouthWorks is listed");
+  assert.ok([...card.querySelectorAll(".tag.warn")].some((t) => t.textContent === "Only some can apply: see who below"));
+});
+
+test("handout: the table plan has its own QR code and prints alone", async () => {
+  const { document, window } = await loadPage("handout.html");
+  window.print = () => {};
+  const table = document.getElementById("table");
+  assert.ok(table.querySelector('img[src="assets/qr/home.svg"]'), "the plan that says scan the QR code on this page has one");
+  document.getElementById("handoutPrintTable").click();
+  const root = document.getElementById("printRoot");
+  assert.ok(root && root.textContent.includes("Run it as a 30 minute table"));
+  assert.ok(!root.textContent.includes("Teach it in 45 minutes"));
+  window.dispatchEvent(new window.Event("afterprint"));
+});
+
+test("home: the leader card links the table plan and the QR codes", () => {
+  const html = fs.readFileSync(path.join(ROOT, "index.html"), "utf8");
+  assert.ok(html.includes('href="handout.html#table"') && html.includes('href="share.html">QR codes to print'));
+});
