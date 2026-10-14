@@ -25,6 +25,22 @@ import sys
 import proglib
 
 OUT_DIR = os.path.join(proglib.ROOT, "data")
+# Cards only some teens can join: one place's residents, or girls or boys only. The lite cards carry "limited": true so the
+# Programs page can keep them out of "Good fit for you" when open cards fit. Statewide or national residency is not a limit here.
+_STATES = ("alabama|alaska|arizona|arkansas|california|colorado|connecticut|delaware|florida|georgia|hawaii|idaho|illinois|indiana|iowa|kansas|"
+           "kentucky|louisiana|maine|maryland|massachusetts|michigan|minnesota|mississippi|missouri|montana|nebraska|nevada|new hampshire|new jersey|"
+           "new mexico|new york state|north carolina|north dakota|ohio|oklahoma|oregon|pennsylvania|rhode island|south carolina|south dakota|tennessee|"
+           "texas|utah|vermont|virginia|washington state|west virginia|wisconsin|wyoming|british columbia|u\\.?s\\.?|united states|state")
+NOT_A_LIMIT = re.compile(r"boys (?:&|and) girls|not (?:just|only) for (?:girls|boys)|(?:any|all) genders?|live in (?:the )?(?:\w+ )?dorms?|"
+                         r"live in (?:leadership|program)|permanent residents?|(?:%s) residents?|residents? of (?:the )?(?:%s)" % (_STATES, _STATES), re.I)
+LIMIT = re.compile(r"\bresidents?\b|\bmust live\b|\blives? in\b|\bgirls\b|\byoung women\b|\bboys\b|\byoung men\b|\bgender", re.I)
+
+
+def is_limited(d):
+    text = " ".join(str(d.get(k) or "") for k in ("who_can_apply", "what_you_do", "name"))
+    return bool(LIMIT.search(NOT_A_LIMIT.sub("", text)))
+
+
 LITE_DROP = ("notes", "sources_fetched", "how_to_apply", "who_can_apply", "duration", "pay_detail", "verified_on")
 CORE_KEYS = ("id", "min_age", "max_age", "status", "deadline_iso", "opens_iso", "regions", "season")
 CARD_KEYS = (
@@ -133,7 +149,7 @@ def main():
     with open(os.path.join(OUT_DIR, "entries.json"), "w", encoding="utf-8") as f:
         json.dump(programs, f, ensure_ascii=False, indent=1)
         f.write("\n")
-    lite = [{k: v for k, v in d.items() if k not in LITE_DROP} for d in programs]
+    lite = [dict({k: v for k, v in d.items() if k not in LITE_DROP}, **({"limited": True} if is_limited(d) else {})) for d in programs]
     with open(os.path.join(OUT_DIR, "entries-lite.json"), "w", encoding="utf-8") as f:
         json.dump(lite, f, ensure_ascii=False, separators=(",", ":"))
         f.write("\n")

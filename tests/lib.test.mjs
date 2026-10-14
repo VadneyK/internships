@@ -72,7 +72,7 @@ test("esc escapes html and safeUrl blocks non-http", () => {
 test("ageText", () => {
   assert.equal(L.ageText({ min_age: 16, max_age: 19 }), "Ages 16 to 19");
   assert.equal(L.ageText({ min_age: 14, max_age: null }), "Ages 14+");
-  assert.equal(L.ageText({ min_age: null, max_age: null, grades: null }), "All high school ages");
+  assert.equal(L.ageText({ min_age: null, max_age: null, grades: null }), "Age not stated");
 });
 
 test("followUpISO: one week after the send date, only when status is sent", () => {

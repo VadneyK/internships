@@ -137,6 +137,13 @@
     ["billings", "Billings and Montana programs", ["montana"]],
     ["boise", "Boise and Idaho programs", ["idaho"]]
   ];
+  /* Towns a teen may type that are covered by a bigger Where choice (their programs carry that choice's region ids). [place, town names] */
+  var PLACE_ALIASES = [
+    ["city:berkeley", ["Oakland", "Alameda", "Emeryville", "Albany", "El Cerrito", "Richmond", "San Leandro", "Castro Valley", "Hayward", "Pleasanton", "Livermore", "Dublin", "Walnut Creek", "Concord", "Contra Costa"]],
+    ["city:silicon-valley", ["San Jose", "Fremont", "Newark", "Union City", "Milpitas", "Santa Clara", "Sunnyvale", "Mountain View", "Palo Alto", "Cupertino", "Redwood City", "San Mateo"]],
+    ["city:davis", ["Sacramento", "Woodland", "Yolo"]],
+    ["city:irvine", ["Anaheim", "Santa Ana", "Huntington Beach", "Newport Beach", "Fullerton", "Garden Grove", "Tustin"]]
+  ];
   /* Areas are groups of cities, in the words teens and leaders use. [id, label, city ids] */
   var AREAS = [
     ["bay-area", "Bay Area", ["berkeley", "san-francisco", "silicon-valley"]],
@@ -642,7 +649,7 @@
     else if (e.min_age != null) bits.push("Ages " + e.min_age + "+");
     else if (e.max_age != null) bits.push("Up to age " + e.max_age);
     if (e.grades) bits.push("Grades " + e.grades);
-    return bits.join(" · ") || "All high school ages";
+    return bits.join(" · ") || "Age not stated";
   }
 
   /* ---- Outreach plan helpers (playbook page) ---- */
@@ -794,7 +801,7 @@
     effStatus: effStatus, futureDeadline: futureDeadline, knownDeadline: knownDeadline, isOpenish: isOpenish, isAnytime: isAnytime, ageOk: ageOk,
     matches: matches, facetCounts: facetCounts, relaxOptions: relaxOptions, placeCounts: placeCounts, rank: rank, compare: compare, sortList: sortList, topPicks: topPicks, ageText: ageText,
     STATUSES: STATUSES, toISO: toISO, addDays: addDays, followUpISO: followUpISO, planSummary: planSummary,
-    icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf, stateFromPlace: stateFromPlace, STATE_OF: STATE_OF, permitFor: permitFor, hoursCheck: hoursCheck, paycheck: paycheck, PERMIT_STATES: PERMIT_STATES, CITIES: CITIES, AREAS: AREAS, PICK_GROUPS: PICK_GROUPS, STATES: STATES, placeRegions: placeRegions, placeLabel: placeLabel, hubsOfPlace: hubsOfPlace,
+    icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf, stateFromPlace: stateFromPlace, STATE_OF: STATE_OF, permitFor: permitFor, hoursCheck: hoursCheck, paycheck: paycheck, PERMIT_STATES: PERMIT_STATES, CITIES: CITIES, AREAS: AREAS, PLACE_ALIASES: PLACE_ALIASES, PICK_GROUPS: PICK_GROUPS, STATES: STATES, placeRegions: placeRegions, placeLabel: placeLabel, hubsOfPlace: hubsOfPlace,
     gradePhrase: gradePhrase, blanksLeft: blanksLeft, linkContacts: linkContacts, whoToAskHtml: whoToAskHtml
   };
   return api;

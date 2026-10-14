@@ -396,12 +396,16 @@
       }
       return groupOf;
     }
+    /* A town inside a bigger choice ("Fremont" finds Silicon Valley and San Jose): a town name starts with what was typed. */
+    function aliasHit(v, t) {
+      return ((L && L.PLACE_ALIASES) || []).some(function (a) { return a[0] === v && a[1].some(function (n) { return norm(n).indexOf(t) === 0; }); });
+    }
     /* Matches for what was typed: the name starts with it, a word starts with it, it is inside the name, then the country part. Best eight. */
     function findPlaces(t) {
       t = norm(t); if (!t) return [];
       var out = [], seen = {};
       for (var i = 1; i < sel.options.length; i++) {
-        var o = sel.options[i], nm = norm(o.textContent.replace(/\s*\((?:\d+|none yet)\)$/, "")), s = nm.indexOf(t) === 0 ? 0 : (" " + nm).indexOf(" " + t) > -1 ? 1 : nm.indexOf(t) > -1 ? 2 : norm(groups()[o.value] || "").indexOf(t) > -1 ? 3 : -1;
+        var o = sel.options[i], nm = norm(o.textContent.replace(/\s*\((?:\d+|none yet)\)$/, "")), s = nm.indexOf(t) === 0 ? 0 : (" " + nm).indexOf(" " + t) > -1 ? 1 : nm.indexOf(t) > -1 ? 2 : aliasHit(o.value, t) ? 1 : norm(groups()[o.value] || "").indexOf(t) > -1 ? 3 : -1;
         if (s < 0) continue;
         var k = nameOf(o); /* the area and the state "All of Texas" read the same: show the state */
         if (seen[k] != null) { if (o.value.indexOf("state:") === 0) out[seen[k]] = { i: i, s: s }; continue; }

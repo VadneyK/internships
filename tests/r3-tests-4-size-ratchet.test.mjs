@@ -49,7 +49,8 @@ const TABLE = {
   // 2026-10-13: re-read of 177 workshop-city cards (38 fixed). data/entries-lite.json limit 2341900 to 2342200.
   // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. data/entries-lite.json limit 2342200 to 2377900.
   // 2026-10-13: re-read of 213 more open cards (42 fixed). data/entries-lite.json limit 2377900 to 2378800.
-  "data/entries-lite.json": { ceiling: 2378800, reason: "data file, 1937500 bytes measured 2026-10-10" },
+  // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you data/entries-lite.json limit 2378800 to 2383200.
+  "data/entries-lite.json": { ceiling: 2383200, reason: "data file, 1937500 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json ceiling 697700 to 716100.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json limit 716100 to 736500.
   // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json limit 736500 to 748900.
@@ -75,6 +76,7 @@ const TABLE = {
   "data/transit.json": { ceiling: 9100, reason: "data file, 8193 bytes measured 2026-10-10" },
   "data/younger.json": { ceiling: 19600, reason: "data file, 17796 bytes measured 2026-10-10" },
   // 2026-10-13: ticket ux9-pills. style.css 48800 to 48900 (.fpill round pill rule; 48834 bytes).
+  // 2026-10-14: persona round 9. common.js 34700 to 34900 (typed towns such as Fremont find their Where choice; 34859 bytes), find.js 64500 to 65900 (Good fit keeps the QR area; 65833 bytes).
   // 2026-10-13: ticket ux9-place-search-option. common.js 34500 to 34700 (empty caption and any-label options on the shared place box; 34554 bytes).
   // 2026-10-12: Programs filters redesign. style.css 46100 to 48300 (summary bar, pill rows, phone bar; 48237 bytes), common.js 28300 to 34500 (the shared place search box; 34453 bytes), find.js 59300 to 64500 (summary bar and phone bar code; 64477 bytes). home.js got smaller, so its row stays.
   "assets/css/fonts.css": { ceiling: 6800, reason: "stylesheet, 6158 bytes measured 2026-10-10" },
@@ -87,9 +89,9 @@ const TABLE = {
   // 2026-10-13: workshop leaders round. style.css 50500 to 50600 (50571 bytes).
   "assets/css/style.css": { ceiling: 50600, reason: "stylesheet, 41831 bytes measured 2026-10-10" },
   "assets/js/calendar.js": { ceiling: 8800, reason: "script, 7966 bytes measured 2026-10-10" },
-  "assets/js/common.js": { ceiling: 34700, reason: "script, 25681 bytes measured 2026-10-10" },
+  "assets/js/common.js": { ceiling: 34900, reason: "script, 25681 bytes measured 2026-10-10" },
   // Raised from 58100 to 59300 on 2026-10-12 for ticket diet-1 (Where group files on the Programs page). 59217 bytes measured.
-  "assets/js/find.js": { ceiling: 64500, reason: "script, 52771 bytes measured 2026-10-10" },
+  "assets/js/find.js": { ceiling: 65900, reason: "script, 52771 bytes measured 2026-10-10" },
   "assets/js/handout.js": { ceiling: 400, reason: "script, 274 bytes measured 2026-10-10; 398 bytes on 2026-10-14 with the one page print button" },
   // 2026-10-12: home picker flow. home.js grew by about 8.8 KB (place search box, chip, step markers); ceiling raised from 10800 to 18600, measured 18585 bytes.
   "assets/js/home.js": { ceiling: 18700, reason: "script, 18605 bytes measured 2026-10-12 (home picker flow, plus the 1 day label)" },

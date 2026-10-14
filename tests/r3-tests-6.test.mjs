@@ -225,12 +225,12 @@ function expectAge(min, max, grades) {
   else if (min != null) bits.push("Ages " + min + "+");
   else if (max != null) bits.push("Up to age " + max);
   if (grades) bits.push("Grades " + grades);
-  return bits.length ? bits.join(" \u00B7 ") : "All high school ages";
+  return bits.length ? bits.join(" \u00B7 ") : "Age not stated";
 }
 
 test("ageText: explicit pins including 0 and equal limits", () => {
-  assert.equal(L.ageText({ min_age: null, max_age: null, grades: null }), "All high school ages");
-  assert.equal(L.ageText({}), "All high school ages");
+  assert.equal(L.ageText({ min_age: null, max_age: null, grades: null }), "Age not stated");
+  assert.equal(L.ageText({}), "Age not stated");
   assert.equal(L.ageText({ min_age: 13, max_age: 16 }), "Ages 13 to 16");
   assert.equal(L.ageText({ min_age: 16, max_age: 16 }), "Ages 16 to 16");
   assert.equal(L.ageText({ min_age: 0, max_age: 0 }), "Ages 0 to 0");
@@ -240,7 +240,7 @@ test("ageText: explicit pins including 0 and equal limits", () => {
   assert.equal(L.ageText({ min_age: null, max_age: 18 }), "Up to age 18");
   assert.equal(L.ageText({ min_age: 14 }), "Ages 14+");
   assert.equal(L.ageText({ grades: "10" }), "Grades 10");
-  assert.equal(L.ageText({ grades: "" }), "All high school ages", "empty grades adds nothing");
+  assert.equal(L.ageText({ grades: "" }), "Age not stated", "empty grades adds nothing");
   assert.equal(L.ageText({ min_age: 13, max_age: 18, grades: "9 to 12" }), "Ages 13 to 18 \u00B7 Grades 9 to 12");
 });
 

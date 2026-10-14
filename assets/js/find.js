@@ -234,19 +234,22 @@
     if (state.moreOnline) box.innerHTML += ' <button class="chip noprint" type="button" data-online-off="1">Online and national included (remove)</button>';
   }
 
-  /* "Good fit for you": the best three for the chosen age and area only. Other filters and the search do not change it. */
+  /* "Good fit for you": the best three for the chosen age and area only (a picked place, or an area chip such as a QR code's where=).
+     Other filters and the search do not change it. Cards only some teens can join (one city's residents, girls or boys only) come last. */
   var PICKS_N = 3, picksKey = null;
   function picksEntries(t) {
-    var s = { age: state.age, place: state.place };
+    var s = { age: state.age, place: state.place, hubs: state.hubs };
     var found = all.filter(function (e) { return L.matches(e, s, t); });
-    if (state.place && found.length < 3) { s.placeOnline = true; found = all.filter(function (e) { return L.matches(e, s, t); }); }
-    return L.topPicks(found, { age: state.age }, t, PICKS_N);
+    if (found.length < 3) { s.placeOnline = true; found = all.filter(function (e) { return L.matches(e, s, t); }); }
+    var p = { age: state.age }, open = L.topPicks(found.filter(function (e) { return !e.limited; }), p, t, PICKS_N);
+    return open.length < PICKS_N ? open.concat(L.topPicks(found.filter(function (e) { return e.limited; }), p, t, PICKS_N - open.length)) : open;
   }
   function paintPicks() {
     var box = $("picks"), nudge = $("picksNudge"), ol = $("picksList"); if (!box || !ol) return;
-    var chosen = !!(state.age || state.place);
+    var chosen = !!(state.age || state.place || state.hubs.length), why = $("picksWhy");
     if (nudge) nudge.hidden = chosen;
-    var t = now(), key = JSON.stringify([state.age, state.place, new Date(t).toDateString()]);
+    if (why) why.textContent = (state.place || state.hubs.length ? "Picked from your age and area." : "Picked from your age, from anywhere. Pick an area to see programs near you.") + " Dates and rules can change, so check the official page.";
+    var t = now(), key = JSON.stringify([state.age, state.place, state.hubs, new Date(t).toDateString()]);
     var picks = chosen ? picksEntries(t) : [];
     box.hidden = !picks.length;
     if (!picks.length) { picksKey = null; ol.innerHTML = ""; return; }
@@ -599,11 +602,22 @@
   }
 
   /* The three related chips carry the chosen age and area (only the parts that are set). */
+  /* The picked place, or for one area chip (a QR code's where=oak) the smallest city or area choice that covers it, so linked pages keep the area. */
+  function placeOrHub() {
+    if (state.place || state.hubs.length !== 1) return state.place;
+    var h = G.HUBS.filter(function (x) { return x[0] === state.hubs[0]; })[0], best = "", size = 1e9;
+    if (!h) return "";
+    L.CITIES.map(function (c) { return "city:" + c[0]; }).concat(L.AREAS.map(function (a) { return "area:" + a[0]; })).forEach(function (pl) {
+      var rs = L.placeRegions(pl) || [];
+      if (h[2].every(function (r) { return rs.indexOf(r) > -1; }) && rs.length < size) { best = pl; size = rs.length; }
+    });
+    return best;
+  }
   function paintRelated() {
     var box = $("relatedLinks"); if (!box) return;
     var cal = box.querySelector("a[href^='calendar.html']"), per = box.querySelector("a[href^='permit.html']"), jobs = box.querySelector("a[href^='jobs.html']"), young = box.querySelector("a[href^='younger.html']");
-    var c = new URLSearchParams();
-    if (state.place) c.set("at", state.place);
+    var c = new URLSearchParams(), pl = placeOrHub();
+    if (pl) c.set("at", pl);
     if (state.age) c.set("age", state.age);
     if (cal) cal.setAttribute("href", "calendar.html" + (c.toString() ? "?" + c.toString() : ""));
     if (per) per.setAttribute("href", "permit.html" + (state.age && state.age !== "12" && state.age !== "13" ? "?age=" + encodeURIComponent(state.age) : ""));
