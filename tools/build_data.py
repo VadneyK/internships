@@ -25,7 +25,7 @@ import sys
 import proglib
 
 OUT_DIR = os.path.join(proglib.ROOT, "data")
-# Cards only some teens can join: one place's residents, or girls or boys only. The lite cards carry "limited": true so the
+# Cards only some teens can join: one place's residents, or girls or boys only. The built cards carry "limited": true so the
 # Programs page can keep them out of "Good fit for you" when open cards fit. Statewide or national residency is not a limit here.
 _STATES = ("alabama|alaska|arizona|arkansas|california|colorado|connecticut|delaware|florida|georgia|hawaii|idaho|illinois|indiana|iowa|kansas|"
            "kentucky|louisiana|maine|maryland|massachusetts|michigan|minnesota|mississippi|missouri|montana|nebraska|nevada|new hampshire|new jersey|"
@@ -146,10 +146,13 @@ def main():
         "checked": latest,
         "checked_label": proglib.date_label(latest),
     }
+    for d in programs:
+        if is_limited(d):
+            d["limited"] = True
     with open(os.path.join(OUT_DIR, "entries.json"), "w", encoding="utf-8") as f:
         json.dump(programs, f, ensure_ascii=False, indent=1)
         f.write("\n")
-    lite = [dict({k: v for k, v in d.items() if k not in LITE_DROP}, **({"limited": True} if is_limited(d) else {})) for d in programs]
+    lite = [{k: v for k, v in d.items() if k not in LITE_DROP} for d in programs]
     with open(os.path.join(OUT_DIR, "entries-lite.json"), "w", encoding="utf-8") as f:
         json.dump(lite, f, ensure_ascii=False, separators=(",", ":"))
         f.write("\n")

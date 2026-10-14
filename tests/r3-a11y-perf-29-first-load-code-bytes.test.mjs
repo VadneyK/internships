@@ -21,6 +21,7 @@ const PICKER_CALLS = /\b(?:G|TIG)\.(?:tilePicker|autoTiles)\b/;
 // Ceilings: bytes on disk for each page's script and stylesheet files, about 5% over today's total (rounded up to 100 bytes).
 // Raised on 2026-10-12 for ticket r3-a11y-perf-35: the body min-height 100dvh line in style.css adds 22 bytes, so every page that loads style.css has its ceiling raised by 22 bytes and nothing else.
 const BUDGET = {
+  // 2026-10-14 persona round 9 UI: find.js gains the Only some can apply tag, handout.js the table plan print button. Pages over set to the measured size rounded up to 100.
   // 2026-10-14 event fixes: the paycheck table fits a phone (about 15 bytes in style.css) and the handout gets a one page print button (handout.js). Pages over set to the measured size rounded up to 100.
   // 2026-10-13 workshop leaders round merged with the look and feel round: pages over set to the measured size rounded up to 100.
   // Raised on 2026-10-13 for ticket p9-cities-plains: lib.js grew by about 370 bytes (El Paso, Omaha, Wichita, Des Moines, Billings and Boise Where choices). Each page that loads lib.js and went over has its ceiling set to the measured size rounded up to 100.
@@ -41,9 +42,9 @@ const BUDGET = {
   // Raised from 171500 to 172800 on 2026-10-11 for tickets p8-lite-1 and p8-cities-1: big cities of the 11 new states in lib.js, plain missing-fact answers and wage notes in common.js and permit.js.
   // Raised from 179400 to 185200 on 2026-10-12 for ticket diet-1: find.js grew by about 6 KB (ten literal chunk URLs for the lite files and ten for the detail files, the place to chunk mapping, and the fallback to the whole file). find.html loads 185192 bytes of code.
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you find.html limit 207400 to 209800.
-  "find.html": { ceiling: 209800, reason: "lib.js, common.js and find.js (largest page script)" },
+  "find.html": { ceiling: 210100, reason: "lib.js, common.js and find.js (largest page script)" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you handout.html limit 91700 to 92100.
-  "handout.html": { ceiling: 92100, reason: "common.js, handout.js and both stylesheets; no lib.js" },
+  "handout.html": { ceiling: 92200, reason: "common.js, handout.js and both stylesheets; no lib.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you index.html limit 155000 to 156100.
   "index.html": { ceiling: 156100, reason: "lib.js, common.js and home.js (2026-10-12: +100 for the 1 day label and phone heading size)" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you insights.html limit 148400 to 149400.

@@ -52,8 +52,11 @@ function checkCard(card, now) {
   const orgWant = norm((e.org || "") + (e.city ? " · " + e.city : ""));
   if (org !== orgWant) bad("org line " + JSON.stringify(org) + " vs " + JSON.stringify(orgWant));
 
-  const ageTag = norm(card.querySelectorAll(".row")[1].textContent);
+  const ageRow = card.querySelectorAll(".row")[1];
+  const ageTag = norm(ageRow.querySelector(".tag.ghost").textContent);
   if (ageTag !== norm(L.ageText(e))) bad("age " + JSON.stringify(ageTag) + " vs " + JSON.stringify(L.ageText(e)));
+  // 2026-10-14 persona round 9: the age row also says when only some teens can join (build_data.py "limited").
+  if (!!ageRow.querySelector(".tag.warn") !== !!e.limited) bad("Only some can apply tag " + !!ageRow.querySelector(".tag.warn") + " vs limited " + !!e.limited);
   const payLine = card.querySelector(".pay");
   if (e.pay_detail ? !payLine || !norm(payLine.textContent).includes(norm(e.pay_detail)) : !!payLine) bad("pay detail line does not match pay_detail");
 
