@@ -75,7 +75,8 @@ test("entries-detail.json has the same ids in the same order as entries.json", (
 test("lite row plus detail row equals the entries.json row minus sources_fetched, for every program", () => {
   entries.forEach((entry, i) => {
     const { sources_fetched: _unused, verified_on: _v, ...expected } = entry; // verified_on is no longer in lite (r3-a11y-perf-6)
-    const merged = { ...lite[i], ...detail[i] };
+    const { limited: _l, ...liteRow } = lite[i]; // "limited" is derived at build time for the picks (persona round 9), not a card field
+    const merged = { ...liteRow, ...detail[i] };
     assert.deepStrictEqual(merged, expected, `program ${entry.id}`);
   });
 });

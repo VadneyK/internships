@@ -226,7 +226,8 @@
       h += '<p><a class="btn sm" href="younger.html' + (yq.length ? "?" + yq.join("&amp;") : "") + '">What you can do at 12 and 13</a></p>';
     }
     if (r.hours) h += "<h3>Hours you may work at " + G.esc(String(age)) + "</h3><p>" + G.esc(r.hours) + "</p>";
-    if (r.verdict !== "young" && r.verdict !== "adult") {
+    /* Volunteering is unpaid, so the wage block would only confuse (persona round 9). */
+    if (r.verdict !== "young" && r.verdict !== "adult" && r.kind !== "volunteer") {
       h += "<h3>Pay</h3><p>" + G.esc(r.wage) + "</p>";
       if (["ca", "ga", "ny", "il"].indexOf(st) >= 0) h += '<p><a href="paycheck.html?state=' + G.esc(st) + '">See what comes out of a first paycheck in ' + G.esc(s.name) + "</a></p>";
     }

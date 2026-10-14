@@ -48,6 +48,8 @@ test("every key present in the lite file is read by find.js or lib.js during loa
   };
   const { window, document, errors } = await loadPage("find.html", { setup });
   await tick(150);
+  type(window, document.getElementById("age"), "16"); // an age turns on "Good fit for you", which reads "limited"
+  await tick(150);
   type(window, document.getElementById("q"), "summer");
   await tick(400);
   type(window, document.getElementById("q"), "");
