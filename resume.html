@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-Tly8i3jCdgx8WjrrABqTW5g9uD7xSkvZvmMJnimAkmQ='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
@@ -23,8 +24,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=c86e318f">
-<link rel="stylesheet" href="assets/css/style.css?v=c86e318f">
+<link rel="stylesheet" href="assets/css/fonts.css?v=a69adacc">
+<link rel="stylesheet" href="assets/css/style.css?v=a69adacc">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
@@ -119,7 +120,7 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
     <p class="noprint small muted">Nothing is saved unless you tick Keep my draft on this device. If you do, the draft stays on this device only, except your email and phone, which are never saved. On a shared computer, leave the box unticked, or press Clear everything before you leave.</p>
     <div class="chips noprint" style="margin-top:.6rem;"><a class="btn alt sm noprint" href="#rPreview">Jump to the preview and Print</a></div>
     <div class="grid g2" style="align-items:start;">
-      <form class="card noprint" id="rf" novalidate onsubmit="return false">
+      <form class="card noprint" id="rf" novalidate>
         <h3>About you</h3>
         <div class="formgrid">
           <div class="field"><label for="rName">Full name</label><input id="rName" type="text" autocapitalize="words" autocomplete="name" spellcheck="false" value="Alex Rivera"></div>
@@ -274,9 +275,9 @@ Youth group, sound crew, 2024 to present</textarea></div>
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=c86e318f"></script>
-<script src="assets/js/common.js?v=c86e318f"></script>
-<script src="assets/js/resume.js?v=c86e318f"></script>
+<script src="assets/js/lib.js?v=a69adacc"></script>
+<script src="assets/js/common.js?v=a69adacc"></script>
+<script src="assets/js/resume.js?v=a69adacc"></script>
 
 </body>
 </html>
