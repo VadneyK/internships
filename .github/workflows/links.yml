@@ -3,8 +3,14 @@ name: Weekly link check
 on:
   schedule:
     - cron: "17 14 * * 1" # Mondays, 14:17 UTC: the program links
-    - cron: "17 14 * * 4" # Thursdays, 14:17 UTC: also the source pages and the data-file links
+    - cron: "17 14 * * 4" # Thursdays, 14:17 UTC: the sources and aux pass (its own job)
   workflow_dispatch:
+    inputs:
+      pass:
+        description: "Which pass to run by hand: links (program links) or sources (sources and aux links)"
+        type: choice
+        options: [links, sources]
+        default: links
 
 permissions:
   contents: read
@@ -15,7 +21,8 @@ concurrency: { group: link-check, cancel-in-progress: false }
 jobs:
   links:
     runs-on: ubuntu-latest
-    timeout-minutes: 150
+    timeout-minutes: 60
+    if: github.event.schedule == '17 14 * * 1' || (github.event_name == 'workflow_dispatch' && inputs.pass == 'links')
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
@@ -23,12 +30,52 @@ jobs:
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
         with:
           python-version: "3.12"
-      - name: Check links
-        if: github.event.schedule != '17 14 * * 4'
+      - name: Check program links
         run: python3 tools/linkcheck.py --out link-report.md --workers 16 --budget-minutes 40
-      - name: Check links, sources and data files
-        if: github.event.schedule == '17 14 * * 4'
-        run: python3 tools/linkcheck.py --fields url,apply_url,sources_fetched --aux --out link-report.md --workers 16 --budget-minutes 120
+      - name: Upload the full link report
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: link-report
+          path: link-report.md
+      - name: Open or update the link-check issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          if grep -q '^## Broken' link-report.md; then
+            cp link-report.md issue-body.md
+            if [ "$(wc -c < link-report.md)" -gt 60000 ]; then
+              head -c 60000 link-report.md > issue-body.md
+              printf '\nThe report was too long for an issue and was cut short. The full report is the link-report artifact on this run: %s\n' "$RUN_URL" >> issue-body.md
+            fi
+            kinds=""
+            grep -q '^## Broken$' link-report.md && kinds="program links"
+            grep -q '^## Broken sources$' link-report.md && kinds="${kinds:+$kinds, }sources"
+            grep -q '^## Broken aux links$' link-report.md && kinds="${kinds:+$kinds, }aux links"
+            existing=$(gh issue list --label link-check --state open --json number --jq '.[0].number // empty')
+            if [ -n "$existing" ]; then
+              gh issue comment "$existing" --body-file issue-body.md
+            else
+              gh issue create --title "Broken links: $kinds ($(date -u +%Y-%m-%d))" --label link-check --body-file issue-body.md
+            fi
+          else
+            echo "No broken links."
+          fi
+
+  sources:
+    runs-on: ubuntu-latest
+    timeout-minutes: 210
+    if: github.event.schedule == '17 14 * * 4' || (github.event_name == 'workflow_dispatch' && inputs.pass == 'sources')
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: "3.12"
+      - name: Check sources and data files
+        run: python3 tools/linkcheck.py --fields url,apply_url,sources_fetched --aux --out link-report.md --workers 16 --budget-minutes 170
       - name: Upload the full link report
         if: always()
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7

@@ -2,11 +2,11 @@
 // Run with: node --test tests/r3-a11y-perf-27-find-count-announce-idle.test.mjs
 import test from "node:test";
 import assert from "node:assert/strict";
-import { loadPage, tick, type } from "./dom-helper.mjs";
+import { loadPage, tick, type, waitFor } from "./dom-helper.mjs";
 
 async function ready() {
   const p = await loadPage("find.html");
-  for (let i = 0; i < 80 && /Loading/.test(p.document.getElementById("count").textContent); i++) await tick(25);
+  await waitFor(() => !/Loading/.test(p.document.getElementById("count").textContent), { timeout: 10000, step: 25 });
   return p;
 }
 

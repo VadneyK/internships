@@ -18,7 +18,7 @@ Wrong information hurts real kids. Use this checklist every time you add or refr
 3. **If next year's dates are not posted**, write last year's dates in `deadline_text`, set `deadline_confidence` to `last-year-pattern`, and say so in `notes`.
 4. **If the page blocks you or you cannot read it**, set `verified` to `snippet-only` and say why in `notes`. The site shows a "Confirm first" tag.
 5. **Put every page you read in `sources_fetched`** and set `verified_on` to today's date.
-6. **Run** `python3 tools/validate.py`.
+6. **Run** `python3 tools/validate.py`. It also checks the hand-edited data files (`data/permits.json`, `states-lite.json`, `state-wages.json`, `employers.json`) against the schemas in `data/schema/`; if you edit one of those, fix every line it prints before you open a pull request.
 
 ## Red flags: do not list it
 - The student pays money for a "guaranteed" internship or placement. (Expensive pre-college programs with a real university are allowed. Mark them `fee-based` with the cost.)

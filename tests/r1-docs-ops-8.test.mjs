@@ -85,9 +85,9 @@ test("Path 4 links docs/MAINTAINING.md and docs/ADDING_A_REGION.md, and both fil
 
 test("the CI checks are listed in ci.yml order, in both the doc and the workflow", () => {
   const after = contrib.slice(contrib.indexOf("## What happens after you open a pull request"));
-  const docMarks = ["python3 tools/validate.py", "python3 -m unittest discover -s tests -v", "python3 tools/build_data.py", "No em dashes or en dashes in text", "node --test --test-shard=${{ matrix.shard }}/4 tests/*.test.mjs", "needs: [python, js]"];
+  const docMarks = ["python3 tools/validate.py", "python3 -m unittest discover -s tests -v", "python3 tools/build_data.py", "No em dashes or en dashes in text", "node --test --test-concurrency=2 --test-shard=${{ matrix.shard }}/4 tests/*.test.mjs", "needs: [python, js]"];
   // ci.yml: the python job (validate, unittest, rebuild, dash scan) comes first, then the sharded js job, then the check gate.
-  const ciMarks = ["python3 tools/validate.py", "python3 -m unittest discover -s tests -v", "python3 tools/build_data.py", "No em dashes or en dashes in text", "node --test --test-shard=${{ matrix.shard }}/4 tests/*.test.mjs", "needs: [python, js]"];
+  const ciMarks = ["python3 tools/validate.py", "python3 -m unittest discover -s tests -v", "python3 tools/build_data.py", "No em dashes or en dashes in text", "node --test --test-concurrency=2 --test-shard=${{ matrix.shard }}/4 tests/*.test.mjs", "needs: [python, js]"];
   for (const [label, text, marks] of [["CONTRIBUTING.md", after, docMarks], ["ci.yml", ci, ciMarks]]) {
     let last = -1;
     for (const m of marks) {

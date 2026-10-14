@@ -3,14 +3,14 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { loadPage, type, tick } from "./dom-helper.mjs";
+import { loadPage, type, tick, waitFor } from "./dom-helper.mjs";
 
 const repo = join(dirname(fileURLToPath(import.meta.url)), "..");
 const lite = JSON.parse(readFileSync(join(repo, "data/states-lite.json"), "utf8"));
 const permits = JSON.parse(readFileSync(join(repo, "data/permits.json"), "utf8"));
 const $ = (p, id) => p.document.getElementById(id);
-/* Wait until a condition holds (up to 5 seconds), so a busy machine running the whole suite does not turn a slow page load into a failure. */
-async function until(cond) { for (let i = 0; i < 100 && !cond(); i++) await tick(50); }
+/* Wait until a condition holds (up to 15 seconds), so a busy machine running the whole suite does not turn a slow page load into a failure. */
+const until = (cond) => waitFor(cond, { timeout: 15000 });
 /* The two letter code for each state name. A row in states-lite.json must use the code for its own name. */
 const STATE_CODE = {
   Alabama: "al", Alaska: "ak", Arizona: "az", Arkansas: "ar", California: "ca", Colorado: "co", Connecticut: "ct", Delaware: "de",
@@ -109,14 +109,14 @@ test("permit: a failed states-lite fetch shows the could-not-load message, then 
   const p = await loadPage("permit.html"); await tick();
   const real = p.window.fetch;
   p.window.fetch = (u, o) => String(u).includes("states-lite") ? Promise.reject(new Error("offline")) : real(u, o);
-  type(p.window, $(p, "pState"), "lite"); await tick(150);
+  type(p.window, $(p, "pState"), "lite");
+  await waitFor(() => /The shorter answers could not load/.test($(p, "pOut").textContent));
   assert.match($(p, "pOut").textContent, /The shorter answers could not load/);
   assert.equal($(p, "pLiteField").hidden, true);
   assert.deepEqual(p.errors, []);
   p.window.fetch = real;
-  type(p.window, $(p, "pState"), "lite"); await tick(150);
-  // 2026-10-13: under a busy machine the retry fetch can take longer than 150 ms; wait up to 5 s for the list.
-  for (let i = 0; i < 100 && !$(p, "pLite").querySelector('option[value="ak"]'); i++) await tick(50);
+  type(p.window, $(p, "pState"), "lite");
+  await waitFor(() => $(p, "pLite").querySelector('option[value="ak"]')); // a busy machine can take a while to refetch the list
   assert.equal($(p, "pLiteField").hidden, false);
   assert.ok($(p, "pLite").querySelector('option[value="ak"]'), "list filled after retry");
 });
@@ -138,7 +138,8 @@ test("permit: a 16 or 17 year old gets the card with the hours and permit rows a
 
 test("permit: for each state at age 14 and 15, every row prints its own stored field under its own label", async () => {
   const p = await loadPage("permit.html"); await tick();
-  type(p.window, $(p, "pState"), "lite"); await tick(150);
+  type(p.window, $(p, "pState"), "lite");
+  await waitFor(() => $(p, "pLite").querySelector('option[value="ak"]') && !$(p, "pLiteField").hidden);
   type(p.window, $(p, "pKind"), "job"); await tick();
   for (const age of ["14", "15"]) {
     type(p.window, $(p, "pAge"), age); await tick();

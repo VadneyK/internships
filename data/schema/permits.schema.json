@@ -1,0 +1,926 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vadneyk.github.io/internships/data/schema/permits.schema.json",
+  "title": "Permits",
+  "description": "data/permits.json: the work permit finder answers for the full states. Hand edited.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "read",
+    "states",
+    "kinds"
+  ],
+  "properties": {
+    "read": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kinds": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "prefixItems": [
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "string",
+            "minLength": 1
+          }
+        ],
+        "items": false
+      }
+    },
+    "states": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "pattern": "^[a-z]{2}$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "read",
+          "permit",
+          "needBelow",
+          "issuer",
+          "steps",
+          "bring",
+          "timing",
+          "renew",
+          "call",
+          "links",
+          "hours",
+          "wage",
+          "minAge",
+          "kinds",
+          "adult",
+          "limits"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "read": {
+            "type": "string",
+            "minLength": 1
+          },
+          "permit": {
+            "type": "string",
+            "minLength": 1
+          },
+          "needBelow": {
+            "type": "integer"
+          },
+          "issuer": {
+            "type": "string",
+            "minLength": 1
+          },
+          "steps": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "bring": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "timing": {
+            "type": "string",
+            "minLength": 1
+          },
+          "renew": {
+            "type": "string",
+            "minLength": 1
+          },
+          "call": {
+            "type": "string",
+            "minLength": 1
+          },
+          "district": {
+            "type": "boolean"
+          },
+          "links": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "t",
+                "u"
+              ],
+              "properties": {
+                "t": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "u": {
+                  "type": "string",
+                  "pattern": "^(https://[^\\s]+|[a-z0-9-]+\\.html(#[a-z0-9-]+)?)$",
+                  "description": "An https link, or a page on this site such as states.html#georgia."
+                }
+              }
+            }
+          },
+          "hours": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "14",
+              "16"
+            ],
+            "properties": {
+              "12": {
+                "type": "string",
+                "minLength": 1
+              },
+              "14": {
+                "type": "string",
+                "minLength": 1
+              },
+              "16": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "wage": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minAge": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "job",
+              "note"
+            ],
+            "properties": {
+              "job": {
+                "type": "integer"
+              },
+              "note": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "kinds": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "job",
+              "program",
+              "odd",
+              "own",
+              "volunteer",
+              "intern",
+              "family",
+              "acting"
+            ],
+            "properties": {
+              "job": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "permit",
+                  "text"
+                ],
+                "properties": {
+                  "permit": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "under": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "below",
+                      "permit",
+                      "text"
+                    ],
+                    "properties": {
+                      "below": {
+                        "type": "integer"
+                      },
+                      "permit": {
+                        "type": [
+                          "boolean",
+                          "null"
+                        ]
+                      },
+                      "text": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "source": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "t",
+                          "u"
+                        ],
+                        "properties": {
+                          "t": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "u": {
+                            "type": "string",
+                            "pattern": "^https://[^\\s]+$"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "program": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "permit",
+                  "text"
+                ],
+                "properties": {
+                  "permit": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "under": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "below",
+                      "permit",
+                      "text"
+                    ],
+                    "properties": {
+                      "below": {
+                        "type": "integer"
+                      },
+                      "permit": {
+                        "type": [
+                          "boolean",
+                          "null"
+                        ]
+                      },
+                      "text": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "source": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "t",
+                          "u"
+                        ],
+                        "properties": {
+                          "t": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "u": {
+                            "type": "string",
+                            "pattern": "^https://[^\\s]+$"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "odd": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "permit",
+                  "text"
+                ],
+                "properties": {
+                  "permit": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "under": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "below",
+                      "permit",
+                      "text"
+                    ],
+                    "properties": {
+                      "below": {
+                        "type": "integer"
+                      },
+                      "permit": {
+                        "type": [
+                          "boolean",
+                          "null"
+                        ]
+                      },
+                      "text": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "source": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "t",
+                          "u"
+                        ],
+                        "properties": {
+                          "t": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "u": {
+                            "type": "string",
+                            "pattern": "^https://[^\\s]+$"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "own": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "permit",
+                  "text"
+                ],
+                "properties": {
+                  "permit": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "under": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "below",
+                      "permit",
+                      "text"
+                    ],
+                    "properties": {
+                      "below": {
+                        "type": "integer"
+                      },
+                      "permit": {
+                        "type": [
+                          "boolean",
+                          "null"
+                        ]
+                      },
+                      "text": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "source": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "t",
+                          "u"
+                        ],
+                        "properties": {
+                          "t": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "u": {
+                            "type": "string",
+                            "pattern": "^https://[^\\s]+$"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "volunteer": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "permit",
+                  "text"
+                ],
+                "properties": {
+                  "permit": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "under": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "below",
+                      "permit",
+                      "text"
+                    ],
+                    "properties": {
+                      "below": {
+                        "type": "integer"
+                      },
+                      "permit": {
+                        "type": [
+                          "boolean",
+                          "null"
+                        ]
+                      },
+                      "text": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "source": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "t",
+                          "u"
+                        ],
+                        "properties": {
+                          "t": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "u": {
+                            "type": "string",
+                            "pattern": "^https://[^\\s]+$"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "intern": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "permit",
+                  "text"
+                ],
+                "properties": {
+                  "permit": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "under": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "below",
+                      "permit",
+                      "text"
+                    ],
+                    "properties": {
+                      "below": {
+                        "type": "integer"
+                      },
+                      "permit": {
+                        "type": [
+                          "boolean",
+                          "null"
+                        ]
+                      },
+                      "text": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "source": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "t",
+                          "u"
+                        ],
+                        "properties": {
+                          "t": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "u": {
+                            "type": "string",
+                            "pattern": "^https://[^\\s]+$"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "family": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "permit",
+                  "text"
+                ],
+                "properties": {
+                  "permit": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "under": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "below",
+                      "permit",
+                      "text"
+                    ],
+                    "properties": {
+                      "below": {
+                        "type": "integer"
+                      },
+                      "permit": {
+                        "type": [
+                          "boolean",
+                          "null"
+                        ]
+                      },
+                      "text": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "source": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "t",
+                          "u"
+                        ],
+                        "properties": {
+                          "t": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "u": {
+                            "type": "string",
+                            "pattern": "^https://[^\\s]+$"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "acting": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "permit",
+                  "text"
+                ],
+                "properties": {
+                  "permit": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "under": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "below",
+                      "permit",
+                      "text"
+                    ],
+                    "properties": {
+                      "below": {
+                        "type": "integer"
+                      },
+                      "permit": {
+                        "type": [
+                          "boolean",
+                          "null"
+                        ]
+                      },
+                      "text": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "source": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "t",
+                          "u"
+                        ],
+                        "properties": {
+                          "t": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "u": {
+                            "type": "string",
+                            "pattern": "^https://[^\\s]+$"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "adult": {
+            "type": "string",
+            "minLength": 1
+          },
+          "limits": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "14",
+              "16"
+            ],
+            "properties": {
+              "12": {
+                "oneOf": [
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "schoolDay",
+                      "nonSchoolDay",
+                      "schoolWeek",
+                      "offWeek",
+                      "earliest",
+                      "latest",
+                      "latestSummer"
+                    ],
+                    "properties": {
+                      "schoolDay": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ]
+                      },
+                      "nonSchoolDay": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ]
+                      },
+                      "schoolWeek": {
+                        "type": "integer"
+                      },
+                      "offWeek": {
+                        "type": "integer"
+                      },
+                      "earliest": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ]
+                      },
+                      "latest": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ]
+                      },
+                      "latestSummer": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ]
+                      },
+                      "lateNote": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "lateMax": {
+                        "type": "number"
+                      },
+                      "weekdayOnly": {
+                        "type": "boolean"
+                      },
+                      "unconfirmed": {
+                        "type": "boolean"
+                      }
+                    }
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "14": {
+                "oneOf": [
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "schoolDay",
+                      "nonSchoolDay",
+                      "schoolWeek",
+                      "offWeek",
+                      "earliest",
+                      "latest",
+                      "latestSummer"
+                    ],
+                    "properties": {
+                      "schoolDay": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ]
+                      },
+                      "nonSchoolDay": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ]
+                      },
+                      "schoolWeek": {
+                        "type": "integer"
+                      },
+                      "offWeek": {
+                        "type": "integer"
+                      },
+                      "earliest": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ]
+                      },
+                      "latest": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ]
+                      },
+                      "latestSummer": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ]
+                      },
+                      "lateNote": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "lateMax": {
+                        "type": "number"
+                      },
+                      "weekdayOnly": {
+                        "type": "boolean"
+                      },
+                      "unconfirmed": {
+                        "type": "boolean"
+                      }
+                    }
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "16": {
+                "oneOf": [
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "schoolDay",
+                      "nonSchoolDay",
+                      "schoolWeek",
+                      "offWeek",
+                      "earliest",
+                      "latest",
+                      "latestSummer"
+                    ],
+                    "properties": {
+                      "schoolDay": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ]
+                      },
+                      "nonSchoolDay": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ]
+                      },
+                      "schoolWeek": {
+                        "type": "integer"
+                      },
+                      "offWeek": {
+                        "type": "integer"
+                      },
+                      "earliest": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ]
+                      },
+                      "latest": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ]
+                      },
+                      "latestSummer": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ]
+                      },
+                      "lateNote": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "lateMax": {
+                        "type": "number"
+                      },
+                      "weekdayOnly": {
+                        "type": "boolean"
+                      },
+                      "unconfirmed": {
+                        "type": "boolean"
+                      }
+                    }
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
