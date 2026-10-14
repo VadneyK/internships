@@ -21,6 +21,7 @@ const PICKER_CALLS = /\b(?:G|TIG)\.(?:tilePicker|autoTiles)\b/;
 // Ceilings: bytes on disk for each page's script and stylesheet files, about 5% over today's total (rounded up to 100 bytes).
 // Raised on 2026-10-12 for ticket r3-a11y-perf-35: the body min-height 100dvh line in style.css adds 22 bytes, so every page that loads style.css has its ceiling raised by 22 bytes and nothing else.
 const BUDGET = {
+  // 2026-10-14 tap-to-call numbers in the ages 12 to 14 grid (younger.js): younger.html set to the measured size rounded up to 100.
   // 2026-10-14 SoCal round 10: the filter summary min-width and wrapping place pill (style.css, every page) and the Santa Ana and Newport-Mesa district steps (ready.js). Pages over set to the measured size rounded up to 100.
   // 2026-10-14 persona round 9 UI: find.js gains the Only some can apply tag and the fuller Copy my list text, handout.js the table plan print button. Pages over set to the measured size rounded up to 100.
   // 2026-10-14 event fixes: the paycheck table fits a phone (about 15 bytes in style.css) and the handout gets a one page print button (handout.js). Pages over set to the measured size rounded up to 100.
@@ -115,7 +116,7 @@ const BUDGET = {
   // Raised for ticket p9-younger-1: younger.js grew by about 4.3 KB (the permit-only state picker names, the permit card and its helpers). younger.html measured 142116 bytes on 2026-10-12, ceiling set to 142200.
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you younger.html limit 160700 to 161800.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. younger.html limit 161900 to 162300.
-  "younger.html": { ceiling: 162300, reason: "lib.js, common.js and younger.js" },
+  "younger.html": { ceiling: 162400, reason: "lib.js, common.js and younger.js" },
 };
 
 function builtPages() {
