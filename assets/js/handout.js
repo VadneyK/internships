@@ -1,7 +1,7 @@
-/* Handout for teachers and counselors: the Print this page button. Nothing is stored or sent. */
+/* Handout: one button prints just the sheet, the other the whole page. */
 (function () {
   "use strict";
-  var btn = document.getElementById("handoutPrint");
-  if (!btn) return;
-  btn.addEventListener("click", function () { window.print(); });
+  function on(id, f) { var b = document.getElementById(id); if (b) b.addEventListener("click", f); }
+  on("handoutPrint", function () { TIG.printOnly(document.getElementById("handoutSheet"), "Handout: find your first job"); });
+  on("handoutPrintAll", function () { window.print(); });
 })();
