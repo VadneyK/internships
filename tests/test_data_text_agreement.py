@@ -21,6 +21,20 @@ def utc_today():
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+def check_today():
+    """The date the real-data date checks compare against.
+
+    Default: the build date in data/meta.json (field "checked"), so a push is not failed by a date
+    that passed overnight. With DATE_CHECK_TODAY=utc (the daily dates workflow) it is today in UTC.
+    """
+    if os.environ.get("DATE_CHECK_TODAY") == "utc":
+        return utc_today()
+    with open(os.path.join(ROOT, "data", "meta.json"), encoding="utf-8") as f:
+        return date.fromisoformat(json.load(f)["checked"])
+
+
 MONTHS = {m: i + 1 for i, m in enumerate(
     ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"])}
 DUE = re.compile(r"\bdue\s+([A-Z][a-z]+)\.?\s+(\d{1,2}),?\s+(\d{4})")
@@ -256,7 +270,7 @@ class DataAgreementTests(unittest.TestCase):
         self.assertEqual(bad, [], "\n" + "\n".join(bad))
 
     def test_dates_agree_with_text(self):
-        self._check(lambda c: date_problem(c, utc_today()), ALLOW_DATE)
+        self._check(lambda c: date_problem(c, check_today()), ALLOW_DATE)
 
     def test_ages_agree_with_text(self):
         self._check(age_problem, ALLOW_AGES)
@@ -278,7 +292,7 @@ class DataAgreementTests(unittest.TestCase):
         self._check_entries(open_label_problem, ALLOW_OPEN_LABEL)
 
     def test_opens_soon_has_a_future_date(self):
-        self._check_entries(lambda c: soon_problem(c, utc_today()), ALLOW_SOON)
+        self._check_entries(lambda c: soon_problem(c, check_today()), ALLOW_SOON)
 
     def test_mixed_pay_says_something(self):
         self._check_entries(pay_problem, ALLOW_PAY)

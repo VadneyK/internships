@@ -26,6 +26,25 @@ def read_workflow(name):
         return f.read()
 
 
+def job_block(name, job):
+    """Return the lines of one top-level job in a workflow (without the job key line)."""
+    lines = read_workflow(name).splitlines()
+    starts = [i for i, line in enumerate(lines) if line == "  %s:" % job]
+    assert len(starts) == 1, "%s needs exactly one '%s' job" % (name, job)
+    block = []
+    for line in lines[starts[0] + 1:]:
+        if re.match(r"^(\S|  \S)", line):
+            break
+        block.append(line)
+    return block
+
+
+def job_names(name):
+    text = read_workflow(name)
+    jobs = text.split("\njobs:\n", 1)[1]
+    return re.findall(r"(?m)^  ([A-Za-z0-9_-]+):\s*$", jobs)
+
+
 class WorkflowTests(unittest.TestCase):
     def test_every_workflow_has_a_timeout(self):
         for name in workflow_files():
@@ -95,6 +114,65 @@ class WorkflowTests(unittest.TestCase):
                 self.assertIn(token, tokens, "lib-coverage job in ci.yml lacks '%s'" % token)
         self.assertIn("npm ci", " ".join(block), "lib-coverage job must run npm ci first")
 
+    def test_ci_has_python_js_check_and_the_two_coverage_jobs(self):
+        self.assertEqual(
+            job_names("ci.yml"), ["python", "js", "check", "deploy", "lib-coverage", "page-script-coverage"]
+        )
+
+    def test_ci_python_job_runs_the_python_side_in_full(self):
+        text = "\n".join(job_block("ci.yml", "python"))
+        self.assertIn("timeout-minutes: 20", text)
+        for command in (
+            "pip install -r requirements-dev.txt",
+            "python3 tools/validate.py",
+            "python3 -m unittest discover -s tests -v",
+            "python3 tools/build_data.py",
+            "python3 tools/build.py",
+            "git diff --exit-code -- data/entries.json data/entries.csv data/meta.json data/lite data/detail sitemap.xml robots.txt '*.html'",
+            "-P '\\x{2014}|\\x{2013}'",
+        ):
+            with self.subTest(command=command):
+                self.assertIn(command, text)
+        self.assertNotIn("node --test", text)
+        self.assertNotIn("npm ci", text)
+
+    def test_ci_js_job_is_four_shards_of_the_whole_suite(self):
+        block = job_block("ci.yml", "js")
+        text = "\n".join(block)
+        self.assertIn("    timeout-minutes: 20", block)
+        self.assertIn("        shard: [1, 2, 3, 4]", block)
+        self.assertEqual(text.count("matrix:"), 1)
+        self.assertEqual(text.count("node --test"), 1, "the js job runs node --test exactly once")
+        self.assertIn(
+            "        run: node --test --test-shard=${{ matrix.shard }}/4 tests/*.test.mjs", block
+        )
+        self.assertIn("npm ci", text)
+        self.assertNotIn("continue-on-error", text)
+
+    def test_ci_check_job_gates_on_python_and_every_js_shard(self):
+        block = job_block("ci.yml", "check")
+        text = "\n".join(block)
+        self.assertIn("    needs: [python, js]", block)
+        self.assertIn("    if: always()", block)
+        self.assertIn("    timeout-minutes: 5", block)
+        self.assertIn('needs.python.result }}" != "success"', text)
+        self.assertIn('needs.js.result }}" != "success"', text)
+        self.assertIn("exit 1", text)
+        self.assertNotIn("continue-on-error", text)
+        self.assertNotIn("actions/checkout", text, "check only reads needs results")
+
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class DeploySmokeTests(unittest.TestCase):
+    # 2026-10-14: after each deploy, every page and the main data files must answer 200 from the live URL.
+    def test_deploy_job_smoke_tests_every_page_after_deploying(self):
+        block = "\n".join(job_block("ci.yml", "deploy"))
+        self.assertIn("Smoke test the deployed site", block)
+        self.assertLess(block.index("uses: actions/deploy-pages@"), block.index("Smoke test the deployed site"))
+        self.assertIn("PAGE_URL: ${{ steps.deployment.outputs.page_url }}", block)
+        for f in ("data/entries-lite.json", "data/entries-home.json", "data/meta.json", "robots.txt", "sitemap.xml"):
+            self.assertIn(f, block)
+        self.assertIn("exit $fail", block)

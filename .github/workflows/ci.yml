@@ -8,28 +8,27 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 jobs:
-  check:
+  python:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-python@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
         with:
           python-version: "3.12"
-      - uses: actions/setup-node@v7
-        with:
-          node-version: "22"
       - name: Install Python tools
-        run: pip install jsonschema
+        run: pip install -r requirements-dev.txt
       - name: Validate every program file
         run: python3 tools/validate.py
       - name: Python tests
         run: python3 -m unittest discover -s tests -v
-      - name: Install JavaScript test tools
-        run: npm ci
-      - name: JavaScript tests (logic and page behavior in jsdom)
-        run: node --test tests/*.test.mjs
       - name: Rebuild data and pages
         run: |
           python3 tools/build_data.py
@@ -47,6 +46,89 @@ jobs:
             exit 1
           fi
 
+  js:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2, 3, 4]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version-file: .nvmrc
+      - name: Install JavaScript test tools
+        run: npm ci
+      - name: JavaScript tests, shard ${{ matrix.shard }} of 4 (logic and page behavior in jsdom)
+        run: node --test --test-shard=${{ matrix.shard }}/4 tests/*.test.mjs
+
+  # The one required status check. Branch protection names "check", so this job
+  # keeps that name and fails unless every job it needs succeeded.
+  check:
+    needs: [python, js]
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Fail unless python and every js shard succeeded
+        run: |
+          if [ "${{ needs.python.result }}" != "success" ] || [ "${{ needs.js.result }}" != "success" ]; then
+            echo "::error::python is ${{ needs.python.result }}, js is ${{ needs.js.result }}"
+            exit 1
+          fi
+
+  # Publishes the site only after the check gate passed on main, so a red build never reaches visitors.
+  # Pages source is "GitHub Actions" (set 2026-10-13); the site keeps its last good version until the next green build.
+  deploy:
+    needs: [check]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - name: Collect the site files (everything visitors load, nothing from tests, tools, src or CI)
+        run: |
+          mkdir _site
+          rsync -a --exclude '.git' --exclude '.github' --exclude 'node_modules' --exclude 'tests' --exclude 'tools' --exclude 'src' \
+            --exclude 'package.json' --exclude 'package-lock.json' --exclude 'requirements-dev.txt' --exclude 'coverage-v8' --exclude '_site' ./ _site/
+          test -f _site/index.html && test -f _site/404.html && test -d _site/data/programs
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5
+      - name: Smoke test the deployed site (every page and the main data files answer 200)
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          fail=0
+          for f in $(cd _site && ls *.html) data/entries-lite.json data/entries-home.json data/meta.json robots.txt sitemap.xml; do
+            code=000
+            for try in 1 2 3 4 5 6; do
+              code=$(curl -s -o /dev/null -w '%{http_code}' "${PAGE_URL}${f}")
+              [ "$code" = "200" ] && break
+              sleep 10
+            done
+            echo "$code ${f}"
+            [ "$code" = "200" ] || fail=1
+          done
+          exit $fail
+
   lib-coverage:
     runs-on: ubuntu-latest
     timeout-minutes: 45
@@ -54,10 +136,12 @@ jobs:
     env:
       NODE_OPTIONS: --max-old-space-size=7168
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-node@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
-          node-version: "22"
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version-file: .nvmrc
       - name: Install JavaScript test tools
         run: npm ci
       - name: lib.js coverage floor (takes about 8 minutes)
@@ -74,10 +158,12 @@ jobs:
     env:
       NODE_OPTIONS: --max-old-space-size=7168
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-node@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
-          node-version: "22"
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version-file: .nvmrc
       - name: Install JavaScript test tools
         run: npm ci
       - name: Run the tests and keep the V8 coverage dumps (takes about 8 minutes)

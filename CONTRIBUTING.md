@@ -34,12 +34,12 @@ Never use the long dash characters (em dash or en dash). Use a comma, a colon, o
 
 ## Path 5: work on the code
 
-You need Python 3.10+ (for the data tools) and Node 20+ (only for the tests). The site itself needs neither.
+You need Python 3.10+ (for the data tools) and Node 22.22 or newer (only for the tests; `.nvmrc` has the version). The site itself needs neither.
 
 ```bash
 git clone https://github.com/VadneyK/internships.git
 cd internships
-pip install jsonschema
+pip install -r requirements-dev.txt
 
 python3 tools/validate.py        # check every program file
 python3 tools/build_data.py      # data/programs/*.json  ->  data/entries.json, entries.csv, meta.json
@@ -91,7 +91,7 @@ python3 -m http.server 8000      # then open http://localhost:8000
 | `tools/bench-matches.mjs` | Speed numbers for search, sort and loading. Run it before and after a change to compare. |
 | `tests/` | Python and JavaScript tests. See [docs/TESTING.md](docs/TESTING.md). |
 | `.github/workflows/` | CI, weekly link check, monthly refresh list |
-| `docs/` | Method, maintenance guide, roadmap, classroom lesson plan |
+| `docs/` | Method, maintenance guide, roadmap, classroom lesson plan, [decision records](docs/adr/0001-record-decisions.md) and the [main-is-red runbook](docs/RUNBOOK.md) |
 
 ### Share page and QR codes
 
@@ -120,12 +120,15 @@ python3 -m venv v && v/bin/pip install segno && v/bin/python tools/make_qr.py
 
 ## What happens after you open a pull request
 
-1. CI runs these checks, in this order (see `.github/workflows/ci.yml`):
+1. CI runs these jobs (see `.github/workflows/ci.yml`). The `python` job runs these steps, in this order:
    1. Validate every program file (`python3 tools/validate.py`).
    2. Python tests (`python3 -m unittest discover -s tests -v`).
-   3. JavaScript tests (`node --test tests/*.test.mjs`).
-   4. Rebuild the data and pages, then fail if a page or a main data file (`entries.json`, `entries.csv`, `meta.json`) is out of date.
-   5. Dash scan: fail if an em dash or en dash is in the text.
+   3. Rebuild the data and pages (`python3 tools/build_data.py`, then `python3 tools/build.py`), then fail if a page or a main data file (`entries.json`, `entries.csv`, `meta.json`) is out of date.
+   4. Dash scan, named "No em dashes or en dashes in text": fail if an em dash or en dash is in the text.
+
+   The `js` job runs the JavaScript tests as four parallel shards, each one `node --test --test-shard=${{ matrix.shard }}/4 tests/*.test.mjs`.
+
+   The `check` job is the one required status check. It declares `needs: [python, js]` and fails unless the `python` job and all four `js` shards succeeded.
 2. A maintainer reads your change and may leave comments. This is how everyone learns. It is not a grade.
 3. When it is merged, GitHub Pages updates the site within a few minutes and your name appears in the history.
 
@@ -134,6 +137,6 @@ python3 -m venv v && v/bin/pip install segno && v/bin/python tools/make_qr.py
 Every contributor is thanked in [`CONTRIBUTORS.md`](CONTRIBUTORS.md). Ask a maintainer if you would like a line you can use on a resume.
 Only list what you actually did.
 
-More on tests: [docs/TESTING.md](docs/TESTING.md).
+More on tests: [docs/TESTING.md](docs/TESTING.md). Why the project works the way it does: [decision records](docs/adr/0001-record-decisions.md). If main CI is red, or before a big data change: [docs/RUNBOOK.md](docs/RUNBOOK.md).
 
 The open work lives on the public board: https://github.com/users/VadneyK/projects/1 . Columns run Backlog, Ready, In progress, In review, Done. Pick a card labeled `good first issue` or `no code needed`, comment that you are taking it, and move on from there.

@@ -1,0 +1,74 @@
+name: Daily date check
+
+on:
+  schedule:
+    - cron: "41 8 * * *" # every day, 08:41 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency: { group: date-check, cancel-in-progress: false }
+
+jobs:
+  dates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: "3.12"
+      - name: Find cards whose dates have arrived or passed
+        run: |
+          set +e
+          python3 tools/flip_dates.py > flip-output.txt
+          flip_status=$?
+          set -e
+          echo "flip_status=$flip_status" >> "$GITHUB_ENV"
+          grep -E '^(would flip|HOLD) ' flip-output.txt > due-lines.txt || true
+          cat flip-output.txt
+      - name: Run the date agreement checks on the real clock
+        env:
+          DATE_CHECK_TODAY: utc
+        run: |
+          set +e
+          python3 -m unittest tests.test_data_text_agreement.DataAgreementTests.test_dates_agree_with_text tests.test_data_text_agreement.DataAgreementTests.test_opens_soon_has_a_future_date tests.test_r1_tests_8_allowlist_stale > date-tests.txt 2>&1
+          echo "tests_status=$?" >> "$GITHUB_ENV"
+          set -e
+          cat date-tests.txt
+      - name: Open or update the dates issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          if [ -s due-lines.txt ] || [ "$flip_status" != "0" ] || [ "$tests_status" != "0" ]; then
+            {
+              echo "Dates that need a person, found $(date -u +%Y-%m-%d). Run: $RUN_URL"
+              echo
+              echo "Run \`python3 tools/flip_dates.py --write\` for the cards that are due, then fix any held card by hand from its official page."
+              echo
+              echo "## Due or held"
+              echo '```'
+              cat due-lines.txt
+              echo '```'
+              echo
+              echo "## Date agreement checks on today's date (exit $tests_status)"
+              echo '```'
+              tail -n 60 date-tests.txt
+              echo '```'
+            } > issue-body.md
+            head -c 60000 issue-body.md > issue-body-trimmed.md
+            gh label create dates --description "Program dates that are due or held" --color 0e8a16 || true
+            existing=$(gh issue list --label dates --state open --json number --jq '.[0].number // empty')
+            if [ -n "$existing" ]; then
+              gh issue comment "$existing" --body-file issue-body-trimmed.md
+            else
+              gh issue create --title "Program dates due ($(date -u +%Y-%m-%d))" --label dates --body-file issue-body-trimmed.md
+            fi
+          else
+            echo "No dates are due or held."
+          fi

@@ -3,6 +3,10 @@
 
   python3 tools/linkcheck.py                 check everything, print the report
   python3 tools/linkcheck.py --out report.md --strict   exit 1 if any link is broken
+  python3 tools/linkcheck.py --fields url,apply_url,sources_fetched --aux
+      also check the pages the facts came from (sources_fetched) and every https link in the
+      hand-edited data files (permits, states-lite, state-wages, employers, languages, safety, money,
+      transit, younger, parents, interview, calendar). They get their own report sections.
 
 Classification:
   ok       2xx or 3xx
@@ -18,6 +22,9 @@ Politeness and limits:
 import argparse
 import concurrent.futures as cf
 import datetime
+import json
+import os
+import re
 import ssl
 import sys
 import time
@@ -66,6 +73,52 @@ def check(url):
                 last = type(e).__name__
         # loop again once for transient errors
     return ("broken", last)
+
+
+AUX_FILES = ("permits.json", "states-lite.json", "state-wages.json", "employers.json", "languages.json",
+             "safety.json", "money.json", "transit.json", "younger.json", "parents.json", "interview.json",
+             "calendar.json")
+DEFAULT_FIELDS = "url,apply_url"
+SOURCE_FIELD = "sources_fetched"
+URL_RE = re.compile(r"https://[^\s\"'<>\\]+")
+
+
+def field_values(d, key):
+    v = d.get(key)
+    if isinstance(v, str):
+        return [v]
+    if isinstance(v, list):
+        return [x for x in v if isinstance(x, str)]
+    return []
+
+
+def strings_in(node):
+    if isinstance(node, str):
+        yield node
+    elif isinstance(node, list):
+        for x in node:
+            yield from strings_in(x)
+    elif isinstance(node, dict):
+        for x in node.values():
+            yield from strings_in(x)
+
+
+def aux_links(data_dir=None, names=AUX_FILES):
+    """Map each https link found in the hand-edited data files to the file names that hold it."""
+    data_dir = data_dir or os.path.join(proglib.ROOT, "data")
+    found = {}
+    for name in names:
+        path = os.path.join(data_dir, name)
+        if not os.path.isfile(path):
+            continue
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+        for text in strings_in(data):
+            for m in URL_RE.findall(text):
+                url = m.rstrip(".,;:!?)]}")
+                if len(url) > len("https://") and name not in found.setdefault(url, []):
+                    found[url].append(name)
+    return found
 
 
 def iso_week():
@@ -117,16 +170,30 @@ def main():
     ap.add_argument("--timeout", type=float, default=15, help="seconds to wait for one request")
     ap.add_argument("--budget-minutes", type=float, default=40, help="stop starting new requests after this long")
     ap.add_argument("--host-delay", type=float, default=1.0, help="seconds between requests to the same host")
+    ap.add_argument("--fields", default=DEFAULT_FIELDS,
+                    help="comma list of program fields to check (url, apply_url, sources_fetched); "
+                         "default %s" % DEFAULT_FIELDS)
+    ap.add_argument("--aux", action="store_true",
+                    help="also check every https link in the hand-edited data files (permits.json, "
+                         "states-lite.json, employers.json, and the rest)")
     args = ap.parse_args()
+    fields = [f.strip() for f in args.fields.split(",") if f.strip()]
+    if not fields:
+        ap.error("--fields needs at least one field name")
     TIMEOUT = args.timeout
     deadline = time.monotonic() + args.budget_minutes * 60
 
     programs = [d for _, d in proglib.load_programs()]
-    jobs = {}
+    jobs = {}  # url -> [(who, kind)]; kind is "program", "source" or "aux"
     for d in programs:
-        for key in ("url", "apply_url"):
-            if d.get(key):
-                jobs.setdefault(d[key], []).append((d["id"], d["name"]))
+        for key in fields:
+            kind = "source" if key == SOURCE_FIELD else "program"
+            for u in field_values(d, key):
+                jobs.setdefault(u, []).append((d["id"], kind))
+    if args.aux:
+        for u, names in aux_links().items():
+            for n in names:
+                jobs.setdefault(u, []).append((n, "aux"))
     groups = {}
     for u in jobs:
         groups.setdefault(host_of(u), []).append(u)
@@ -143,10 +210,14 @@ def main():
     ok = len(results) - len(broken) - len(blocked)
     lines = ["# Link check", "", "%d links: %d ok, %d blocked, %d broken, %d not checked." % (
         len(jobs), ok, len(blocked), len(broken), len(not_checked)), ""]
-    if broken:
-        lines += ["## Broken", ""]
-        for u, (_, why) in sorted(broken.items()):
-            who = ", ".join("`%s`" % i for i, _ in jobs[u])
+    sections = (("program", "## Broken"), ("source", "## Broken sources"), ("aux", "## Broken aux links"))
+    for kind, title in sections:
+        rows = sorted((u, r) for u, r in broken.items() if any(k == kind for _, k in jobs[u]))
+        if not rows:
+            continue
+        lines += [title, ""]
+        for u, (_, why) in rows:
+            who = ", ".join("`%s`" % i for i, k in jobs[u] if k == kind)
             lines.append("- [ ] %s  (%s) used by %s" % (u, why, who))
         lines.append("")
     if blocked:

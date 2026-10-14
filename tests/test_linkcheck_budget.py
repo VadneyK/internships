@@ -186,5 +186,93 @@ class BudgetTests(unittest.TestCase):
         self.assertEqual(linkcheck.TIMEOUT, 15)
 
 
+class FieldsAndAuxTests(unittest.TestCase):
+    def run_main(self, programs, flags=(), aux=None, results=None):
+        seen = []
+
+        def check(url):
+            seen.append(url)
+            return (results or {}).get(url, ("ok", 200))
+
+        out = io.StringIO()
+        with mock.patch.object(linkcheck, "check", check), \
+                mock.patch.object(proglib, "load_programs", lambda: [("p.json", d) for d in programs]), \
+                mock.patch.object(linkcheck, "aux_links", lambda: aux or {}), \
+                mock.patch.object(sys, "argv", ["linkcheck.py", "--workers", "1", "--host-delay", "0", *flags]), \
+                contextlib.redirect_stdout(out):
+            code = linkcheck.main()
+        return code, out.getvalue(), seen
+
+    PROG = {"id": "prog-1", "name": "P", "url": "https://a.example/u", "apply_url": "https://a.example/apply",
+            "sources_fetched": ["https://s.example/1", "https://s.example/2"]}
+
+    def test_default_checks_only_url_and_apply_url(self):
+        code, report, seen = self.run_main([self.PROG], aux={"https://x.example/": ["money.json"]})
+        self.assertEqual(sorted(seen), ["https://a.example/apply", "https://a.example/u"])
+        self.assertIn("2 links:", report)
+
+    def test_fields_can_add_sources_fetched(self):
+        code, report, seen = self.run_main([self.PROG], ["--fields", "url,apply_url,sources_fetched"])
+        self.assertEqual(len(seen), 4)
+        self.assertIn("https://s.example/2", seen)
+
+    def test_broken_source_has_its_own_section(self):
+        code, report, _ = self.run_main(
+            [self.PROG], ["--fields", "url,sources_fetched", "--strict"],
+            results={"https://s.example/1": ("broken", 404), "https://a.example/u": ("broken", 410)})
+        self.assertEqual(code, 1)
+        self.assertIn("## Broken\n", report)
+        self.assertIn("## Broken sources", report)
+        sources = report.split("## Broken sources", 1)[1]
+        self.assertIn("https://s.example/1  (404) used by `prog-1`", sources)
+        self.assertNotIn("https://a.example/u", sources)
+        self.assertNotIn("https://s.example/1", report.split("## Broken sources", 1)[0])
+
+    def test_aux_links_are_checked_and_reported_apart(self):
+        aux = {"https://x.example/rule": ["permits.json", "money.json"]}
+        code, report, seen = self.run_main(
+            [self.PROG], ["--aux", "--strict"], aux=aux, results={"https://x.example/rule": ("broken", 404)})
+        self.assertIn("https://x.example/rule", seen)
+        self.assertEqual(code, 1)
+        self.assertIn("## Broken aux links", report)
+        self.assertNotIn("## Broken\n", report)
+        self.assertIn("used by `permits.json`, `money.json`", report)
+
+    def test_no_aux_flag_means_no_aux_section(self):
+        _, report, _ = self.run_main([self.PROG], aux={"https://x.example/": ["money.json"]},
+                                     results={"https://x.example/": ("broken", 404)})
+        self.assertNotIn("aux", report)
+
+    def test_empty_fields_is_a_usage_error(self):
+        with self.assertRaises(SystemExit), contextlib.redirect_stderr(io.StringIO()):
+            self.run_main([self.PROG], ["--fields", ","])
+
+    def test_aux_links_reads_https_links_from_nested_json(self):
+        import json
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            with open(os.path.join(d, "money.json"), "w", encoding="utf-8") as f:
+                json.dump({"a": [{"url": "https://m.example/x"}, "See https://m.example/y."],
+                           "b": "http://insecure.example/", "c": 5}, f)
+            with open(os.path.join(d, "safety.json"), "w", encoding="utf-8") as f:
+                json.dump(["https://m.example/x"], f)
+            found = linkcheck.aux_links(d, ("money.json", "safety.json", "missing.json"))
+        self.assertEqual(found, {"https://m.example/x": ["money.json", "safety.json"],
+                                 "https://m.example/y": ["money.json"]})
+
+    def test_real_aux_files_yield_links(self):
+        found = linkcheck.aux_links()
+        self.assertGreater(len(found), 50)
+        self.assertTrue(all(u.startswith("https://") for u in found))
+
+    def test_help_lists_both_flags(self):
+        out = io.StringIO()
+        with mock.patch.object(sys, "argv", ["linkcheck.py", "--help"]), \
+                contextlib.redirect_stdout(out), self.assertRaises(SystemExit):
+            linkcheck.main()
+        self.assertIn("--fields", out.getvalue())
+        self.assertIn("--aux", out.getvalue())
+
+
 if __name__ == "__main__":
     unittest.main()
