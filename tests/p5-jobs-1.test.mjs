@@ -88,7 +88,7 @@ test("jobs: ride line for the six cities and the scam line", async () => {
   const { window, document } = await loadPage("jobs.html?age=16&state=CA"); await tick(200);
   const help = document.getElementById("jHelp");
   const ids = [...help.querySelectorAll('a[href^="ready.html?ride="]')].map((a) => a.getAttribute("href").split("=")[1]);
-  assert.deepEqual(ids.sort(), ["la", "orange", "sandiego"]);
+  assert.deepEqual(ids.sort(), ["bay", "la", "orange", "sandiego"]); // 2026-10-14: plus the Bay Area and Sacramento table
   assert.match(help.textContent, /Getting there without a car/);
   assert.match(help.textContent, /Never pay to get a job/);
   assert.match(help.textContent, /Never send your ID to a stranger/);
@@ -102,7 +102,9 @@ test("jobs: ride line for the six cities and the scam line", async () => {
 test("jobs.js ride ids match data/transit.json", () => {
   const src = fs.readFileSync(new URL("../assets/js/jobs.js", import.meta.url), "utf8");
   for (const p of transit.places) assert.ok(src.includes('["' + p.id + '", "' + p.name + '"]'), p.id);
-  assert.equal((src.match(/\["[a-z]+", "[A-Za-z ]+"\]/g) || []).length, transit.places.length);
+  // 2026-10-14: plus the Bay Area and Sacramento table on ready.html (its ride picker option "bay").
+  assert.ok(src.includes('["bay", "Bay Area and Sacramento"]'));
+  assert.equal((src.match(/\["[a-z]+", "[A-Za-z ]+"\]/g) || []).length, transit.places.length + 1);
 });
 
 test("jobs: the grocery group shows its new name and the small town sentence", async () => {

@@ -30,9 +30,9 @@
       history.replaceState(history.state, "", u.pathname + u.search + u.hash);
     } catch (e) {}
   }
-  /* State names for the picker. The ride cities are the six in data/transit.json (a test checks they match). */
+  /* State names for the picker. The ride cities are the six in data/transit.json plus the Bay Area and Sacramento table on ready.html (ride=bay); a test checks they match. */
   var NAMES = { AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas", CA: "California", CO: "Colorado", CT: "Connecticut", DE: "Delaware", DC: "District of Columbia", FL: "Florida", GA: "Georgia", HI: "Hawaii", ID: "Idaho", IL: "Illinois", IN: "Indiana", IA: "Iowa", KS: "Kansas", KY: "Kentucky", LA: "Louisiana", ME: "Maine", MD: "Maryland", MA: "Massachusetts", MI: "Michigan", MN: "Minnesota", MS: "Mississippi", MO: "Missouri", MT: "Montana", NE: "Nebraska", NV: "Nevada", NH: "New Hampshire", NJ: "New Jersey", NM: "New Mexico", NY: "New York", NC: "North Carolina", ND: "North Dakota", OH: "Ohio", OK: "Oklahoma", OR: "Oregon", PA: "Pennsylvania", RI: "Rhode Island", SC: "South Carolina", SD: "South Dakota", TN: "Tennessee", TX: "Texas", UT: "Utah", VT: "Vermont", VA: "Virginia", WA: "Washington", WV: "West Virginia", WI: "Wisconsin", WY: "Wyoming", BC: "British Columbia" };
-  var RIDES = { NY: [["nyc", "New York City"]], IL: [["chicago", "Chicago"]], GA: [["atlanta", "Atlanta"]], CA: [["la", "Los Angeles"], ["orange", "Orange County"], ["sandiego", "San Diego"]] };
+  var RIDES = { NY: [["nyc", "New York City"]], IL: [["chicago", "Chicago"]], GA: [["atlanta", "Atlanta"]], CA: [["bay", "Bay Area and Sacramento"], ["la", "Los Angeles"], ["orange", "Orange County"], ["sandiego", "San Diego"]] };
   /* A two-letter state code from the address or saved place, or "" when it is not one the picker has. */
   function stateChoice(raw, sel) {
     var c = String(raw == null ? "" : raw).toUpperCase();
@@ -57,6 +57,7 @@
   /* The hours rules are optional: if the file does not load, the strip points to the work permit finder. */
   /* permits.json is read only once an age of 14 to 17 and a state are picked, so most visits never download it. */
   var pd = null, pdState = 0, pdFailed = false;
+  var U14_HOURS = ["ca"];
   function loadPermits(done) {
     if (pdState) return;
     pdState = 1;
@@ -127,7 +128,14 @@
     function hoursCore(v, st) {
       if (st === "BC") return '<div class="callout plain small" id="jHoursBox"><p>' + G.esc(BC_LINE) + "</p></div>";
       if (!st) return '<p class="small muted">Pick your state to see its hours rule for your age.</p>';
-      if (v === "u14") return '<div class="callout plain small" id="jHoursBox"><p>Ages 12 and 13: see the <a href="younger.html">Ages 12 to 14 page</a> for what is allowed at your age.</p></div>';
+      if (v === "u14") {
+        /* A state's own rule for 12 and 13 (permits.json hours["12"], read from its labor office), so a California teen sees California's limits here too. */
+        var k12 = st.toLowerCase(), h12 = pd && pd.states && pd.states[k12] && pd.states[k12].hours && pd.states[k12].hours["12"];
+        /* Only California has an under-14 row in permits.json today (a test pins this list), so other states do not fetch it. */
+        if (U14_HOURS.indexOf(k12) > -1 && !pdState) loadPermits(function () { if (sel.value === "u14" && stSel.value === st) paintHours("u14", st); });
+        return '<div class="callout plain small" id="jHoursBox"><p>Ages 12 and 13: see the <a href="younger.html">Ages 12 to 14 page</a> for what is allowed at your age.</p>' +
+          (h12 ? '<p id="jHours12"><b>Hours at 12 and 13 in ' + G.esc(NAMES[st]) + ':</b> ' + L.linkContacts(h12) + ' <a href="permit.html?state=' + encodeURIComponent(k12) + '&amp;age=13">Work permit finder</a></p>' : "") + "</div>";
+      }
       var age = Number(v), key = st.toLowerCase(), name = NAMES[st];
       var href = "permit.html?state=" + encodeURIComponent(key) + (age >= 14 && age <= 18 ? "&amp;age=" + age : "");
       function again() {
