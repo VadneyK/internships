@@ -235,11 +235,11 @@
     if (state.moreOnline) box.innerHTML += ' <button class="chip noprint" type="button" data-online-off="1">Online and national included (remove)</button>';
   }
 
-  /* "Good fit for you": the best three for the chosen age and area only (a picked place, or an area chip such as a QR code's where=).
+  /* "Good fit for you": the best three for the chosen age, area (a picked place, or an area chip such as a QR code's where=) and pay choice.
      Other filters and the search do not change it. Cards only some teens can join (one city's residents, girls or boys only) come last. */
   var PICKS_N = 3, picksKey = null;
   function picksEntries(t) {
-    var s = { age: state.age, place: state.place, hubs: state.hubs };
+    var s = { age: state.age, place: state.place, hubs: state.hubs, paid: state.paid };
     var found = all.filter(function (e) { return L.matches(e, s, t); });
     if (found.length < 3) { s.placeOnline = true; found = all.filter(function (e) { return L.matches(e, s, t); }); }
     var p = { age: state.age }, open = L.topPicks(found.filter(function (e) { return !e.limited; }), p, t, PICKS_N);
@@ -249,8 +249,9 @@
     var box = $("picks"), nudge = $("picksNudge"), ol = $("picksList"); if (!box || !ol) return;
     var chosen = !!(state.age || state.place || state.hubs.length), why = $("picksWhy");
     if (nudge) nudge.hidden = chosen;
-    if (why) why.textContent = (state.place || state.hubs.length ? "Picked from your age and area." : "Picked from your age, from anywhere. Pick an area to see programs near you.") + " Dates and rules can change, so check the official page.";
-    var t = now(), key = JSON.stringify([state.age, state.place, state.hubs, new Date(t).toDateString()]);
+    var area = state.place || state.hubs.length;
+    if (why) why.textContent = (area && state.age ? "Picked from your age and area." : area ? "Picked from your area. Pick your age for a closer fit." : "Picked from your age, from anywhere. Pick an area to see programs near you.") + " Dates and rules can change, so check the official page.";
+    var t = now(), key = JSON.stringify([state.age, state.place, state.hubs, state.paid, new Date(t).toDateString()]);
     var picks = chosen ? picksEntries(t) : [];
     box.hidden = !picks.length;
     if (!picks.length) { picksKey = null; ol.innerHTML = ""; return; }
@@ -952,11 +953,13 @@
     }).join("") + "</ol>" + (checked ? "<p>Last checked " + G.esc(checked) + ".</p>" : "") + "<p>From vadneyk.github.io/internships. Confirm dates on each program's own site.</p>";
     G.printOnly(d, "My internship list");
   });
-  /* The text for Copy my list, Text it to myself and Email it to myself. It starts with the site address, then one block per saved program. */
+  /* The text for Copy my list, Text it to myself and Email it to myself. It starts with the site address, then one block per saved program,
+     in the order they were saved, with what a parent asks first: ages, pay, who can apply and the next date. */
   var SITE_URL = "https://vadneyk.github.io/internships/", MAIL_SUBJECT = "My first job list";
   function listText() {
-    var ids = savedIds(), items = all.filter(function (e) { return ids.indexOf(e.id) > -1; }).map(function (e) {
-      return "- " + e.name + " (" + (e.org || "") + ")\n  " + (e.deadline_text || "") + "\n  " + (e.url || "");
+    var items = savedIds().map(function (id) { return byId[id]; }).filter(Boolean).map(function (e) {
+      return "- " + e.name + " (" + (e.org || "") + ")\n  " + L.ageText(e) + ". " + (G.PAID[e.paid_type] || "Pay not stated") + "." +
+        (e.limited ? " Only some can apply: check who." : "") + "\n  Dates: " + (e.deadline_text || "No date posted yet. Ask them.") + "\n  " + (e.url || "");
     }).join("\n");
     return items ? SITE_URL + "\n\n" + items : "";
   }
