@@ -64,3 +64,19 @@ test("the stylesheet hides the labels on wide screens and stacks the rows under 
   assert.match(m[0], /\.stackt \.tk \{ display: block;/);
   assert.match(m[0], /\.stackt thead \{ position: absolute;/);
 });
+
+// 2026-10-14: "Who to call" goes through lib.js linkContacts, so a parent on a phone can tap to call,
+// and tel: links never wrap mid number.
+test("phone numbers in Who to call are tap-to-call links that do not wrap", async () => {
+  const { document } = await ready();
+  const calls = [...document.querySelectorAll("#signT tbody tr")].map((r) => r.children[3]);
+  const withNumber = calls.filter((c) => /\d{3}-\d{3}-\d{4}/.test(c.textContent));
+  assert.ok(withNumber.length >= 3);
+  for (const c of withNumber) {
+    const a = c.querySelector('a[href^="tel:+1"]');
+    assert.ok(a, c.textContent + " has a tel link");
+    assert.match(a.getAttribute("href"), /^tel:\+1\d{10}$/);
+  }
+  const css = fs.readFileSync(new URL("../assets/css/style.css", import.meta.url), "utf8");
+  assert.match(css, /a\[href\^="tel:"\] \{ white-space: nowrap; \}/);
+});

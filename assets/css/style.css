@@ -360,6 +360,8 @@ tr:last-child td { border-bottom: 0; }
 tbody th[scope="row"] { background: transparent; color: var(--ink); text-transform: none; letter-spacing: normal; font-family: inherit; font-style: normal; font-size: inherit; border-bottom: 2px solid color-mix(in srgb, var(--edge) 25%, transparent); }
 /* .stackt: on phones each row becomes a block, the column name shows above each cell, and the head row hides. */
 .stackt .tk { display: none; }
+/* A phone number never breaks across lines ("833-526-" then "4636"). */
+a[href^="tel:"] { white-space: nowrap; }
 @media (max-width: 40rem) {
   table.stackt { min-width: 0; }
   .stackt thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }

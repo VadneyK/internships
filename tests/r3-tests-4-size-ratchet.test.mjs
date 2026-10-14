@@ -100,7 +100,8 @@ const TABLE = {
   // 2026-10-13: workshop leaders round. style.css 50500 to 50600 (50571 bytes).
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. assets/css/style.css limit 50700 to 51200.
   // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). assets/css/style.css limit 51200 to 52100.
-  "assets/css/style.css": { ceiling: 52100, reason: "stylesheet, 41831 bytes measured 2026-10-10; 50638 bytes on 2026-10-14 after the phone filter summary fix" },
+  // 2026-10-14: tap-to-call numbers on the parents permit table (PENDING PERSON APPROVAL). assets/css/style.css limit 52100 to 52300.
+  "assets/css/style.css": { ceiling: 52300, reason: "stylesheet, 41831 bytes measured 2026-10-10; 50638 bytes on 2026-10-14 after the phone filter summary fix" },
   "assets/js/calendar.js": { ceiling: 8800, reason: "script, 7966 bytes measured 2026-10-10" },
   "assets/js/common.js": { ceiling: 34900, reason: "script, 25681 bytes measured 2026-10-10" },
   // Raised from 58100 to 59300 on 2026-10-12 for ticket diet-1 (Where group files on the Programs page). 59217 bytes measured.

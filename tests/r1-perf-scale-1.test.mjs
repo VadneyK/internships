@@ -125,7 +125,8 @@ const LIMITS = {
   // 2026-10-14: SoCal round 10. Raised from 50600 to 50700: the filter summary may shrink and the place pill wraps on phones (style.css 50638 bytes).
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts.  limit 50700 to 51200.
   // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL).  limit 51200 to 52100.
-  stylesheet: 52100,
+  // 2026-10-14: tap-to-call numbers on the parents permit table (PENDING PERSON APPROVAL).  limit 52100 to 52300.
+  stylesheet: 52300,
 };
 
 const LITE = "data/entries-lite.json";
