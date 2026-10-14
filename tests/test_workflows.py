@@ -182,8 +182,8 @@ class WorkflowTests(unittest.TestCase):
         self.assertNotIn("--experimental-test-coverage", read_workflow("ci.yml"))
         self.assertNotIn("page-script-coverage:", read_workflow("ci.yml"))
 
-    def test_ci_has_python_js_check_and_one_coverage_job(self):
-        self.assertEqual(job_names("ci.yml"), ["python", "js", "check", "coverage"])
+    def test_ci_has_python_js_check_deploy_and_one_coverage_job(self):
+        self.assertEqual(job_names("ci.yml"), ["python", "js", "check", "deploy", "coverage"])
 
     def test_ci_python_job_runs_the_python_side_in_full(self):
         text = "\n".join(job_block("ci.yml", "python"))

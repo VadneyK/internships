@@ -197,9 +197,16 @@ class WorkflowPolicyTests(unittest.TestCase):
         self.assertEqual(top_level_permissions(text), ["contents: read"])
         jobs = text.split("\njobs:\n", 1)[1]
         names = re.findall(r"(?m)^  ([A-Za-z0-9_-]+):\s*$", jobs)
-        self.assertEqual(names, ["python", "js", "check", "coverage"])
+        self.assertEqual(names, ["python", "js", "check", "deploy", "coverage"])
         self.assertEqual(len(re.findall(r"(?m)^    timeout-minutes: \d+$", jobs)), len(names))
-        self.assertNotRegex(jobs, r"(?m)^\s+permissions:")
+        # 2026-10-13: only the deploy job widens permissions, and only to what GitHub Pages needs.
+        self.assertEqual(len(re.findall(r"(?m)^\s+permissions:", jobs)), 1)
+        deploy = jobs.split("\n  deploy:\n", 1)[1].split("\n  coverage:", 1)[0]
+        perms = re.search(r"(?m)^    permissions:\n((?:      .+\n)+)", deploy).group(1)
+        self.assertEqual(sorted(l.strip() for l in perms.splitlines()), ["contents: read", "id-token: write", "pages: write"])
+        self.assertRegex(deploy, r"(?m)^    needs: \[check\]$")
+        self.assertIn("if: github.event_name == 'push' && github.ref == 'refs/heads/main'", deploy)
+        self.assertNotIn("contents: write", text)
         self.assertNotIn("pull_request_target", text)
 
     def test_ci_node_suite_runs_only_as_four_shards_in_the_required_job(self):
