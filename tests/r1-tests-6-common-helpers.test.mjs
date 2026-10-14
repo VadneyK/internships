@@ -137,3 +137,17 @@ test("G.markNewTabLinks keeps noopener on external _blank links, skips same-site
     assert.match(a.getAttribute("rel") || "", /noopener/, "every new-tab link on the page has noopener: " + a.href);
   }
 });
+
+test("the shared submit listener prevents forms without an action but not forms with one", async () => {
+  const { window, document } = await loadPage("find.html");
+  const form = document.getElementById("filters");
+  assert.ok(form, "find.html has the filters form");
+  assert.ok(!form.hasAttribute("action"));
+  const a = new window.Event("submit", { cancelable: true, bubbles: true });
+  form.dispatchEvent(a);
+  assert.equal(a.defaultPrevented, true, "a form without action is prevented");
+  form.setAttribute("action", "https://example.com/");
+  const b = new window.Event("submit", { cancelable: true, bubbles: true });
+  form.dispatchEvent(b);
+  assert.equal(b.defaultPrevented, false, "a form with an action is not prevented");
+});

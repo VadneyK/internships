@@ -51,6 +51,8 @@
     document.addEventListener("focusin", function (e) { if (top.classList.contains("open") && !top.contains(e.target)) setOpen(false); });
   })();
 
+  Array.prototype.forEach.call(document.forms,function(f){f.addEventListener("submit",function(e){if(!f.hasAttribute("action"))e.preventDefault()})});
+
   /* toast */
   var toastEl = document.getElementById("toast");
   var toastTimer, toastSet;
@@ -163,17 +165,17 @@
   /* no version in this script's src (dev server, a page not built by tools/build.py): ask for revalidation so a stale copy is not reused */
   G.fetchData = function (path) { return dataVer ? fetch(G.dataUrl(path)) : fetch(path, { cache: "no-cache" }); };
   var cache, liteCache, coreCache, calCache, homeCache, statsCache, detailCache;
-  /* G.loadEntries() is the full file (find.js). G.loadEntries(true) is the lite file: same ids and order, without the long text fields, for pages that only show a few fields. G.loadEntries("core") is the core file: same ids and order, only the keys lib.js needs to match by age, status, season and region. G.loadEntries("cal") is the calendar file: the short card keys for only the programs listed in data/calendar.json. G.loadEntries("home") is the home file: same ids and order, only the keys the Home picker reads. G.loadEntries("stats") is the stats file: same ids and order, only the keys the Numbers page counts with. G.loadEntries("detail") is the detail file: same ids and order, only id plus the long text (who_can_apply, how_to_apply, notes) that the Programs page fills in after it has drawn the cards from the lite file. */
+  /* G.loadEntries() is the full file (find.js). G.loadEntries(true) is the lite file: same ids and order, without the long text fields, for pages that only show a few fields. G.loadEntries("core") is the core file: only the keys lib.js needs to match by age, status, season and region. G.loadEntries("cal") is the calendar file: the short card keys for only the programs listed in data/calendar.json. G.loadEntries("home") is the home file: only the keys the Home picker reads. G.loadEntries("stats") is the stats file: only the keys the Numbers page counts with. G.loadEntries("detail") is the detail file: only id plus the long text (who_can_apply, how_to_apply, notes) that the Programs page fills in after it has drawn the cards from the lite file. */
   function checkJson(r) {
     if (!r.ok) throw new Error("Could not load programs (" + r.status + ")");
     return r.json();
   }
-  /* The shorter state answers (a small file, read only when a page needs it). Cached. A failed read is not cached, so a retry works. */
+  /* The shorter state answers (a small file, read only when a page needs it). Cached. A failed read is not cached. */
   var shortsP = null;
   G.stateShorts = function () {
     return shortsP || (shortsP = G.fetchData("data/states-lite.json").then(checkJson).catch(function (e) { shortsP = null; throw e; }));
   };
-  /* State minimum wages (read only once a state is picked). Cached. A failed read is not cached, so a retry works. */
+  /* State minimum wages (read only once a state is picked). Cached. A failed read is not cached. */
   var wagesP = null;
   G.stateWages = function () {
     return wagesP || (wagesP = G.fetchData("data/state-wages.json").then(checkJson).catch(function (e) { wagesP = null; throw e; }));
@@ -226,7 +228,7 @@
     return cache;
   };
 
-  /* G.loadProgram(id) is one program's own small file (data/programs/<id>.json, about 2 KB). The Home picker uses it for its four cards. A failed load is not kept, so the next try asks again. */
+  /* G.loadProgram(id) is one program's own small file (data/programs/<id>.json, about 2 KB). The Home picker uses it for its four cards. A failed load is not kept. */
   var programCache = {};
   G.loadProgram = function (id) {
     if (!programCache[id]) {
@@ -238,7 +240,7 @@
 
   /* labels and helpers come from lib.js (pure functions, unit tested) */
   var L = G.lib || null; /* pages with no script of their own do not load lib.js */
-  /* Fill a select with every city and area, each with how many programs it has. A city with none says so, so nobody thinks the site is broken. */
+  /* Fill a select with every city and area, each with how many programs it has. A city with none says so, so nobody thinks it is broken. */
   G.fillPlaces = function (sel, entries, keep) {
     if (!L) return;
     var counts = L.placeCounts(entries);
@@ -394,7 +396,7 @@
       }
       return groupOf;
     }
-    /* Matches for what was typed: the name starts with it, a word starts with it, it is inside the name, then the part of the country. Best eight. */
+    /* Matches for what was typed: the name starts with it, a word starts with it, it is inside the name, then the country part. Best eight. */
     function findPlaces(t) {
       t = norm(t); if (!t) return [];
       var out = [], seen = {};
@@ -528,7 +530,7 @@
     var links = (root || document).querySelectorAll('a[target="_blank"], a[href]');
     for (var i = 0; i < links.length; i++) markLink(links[i]);
   };
-  /* The observer only looks at nodes that were added, never the whole page, so a count change or the note we add ourselves costs nothing. */
+  /* The observer only looks at nodes that were added, never the whole page, so our own note costs nothing. */
   function markAdded(records) {
     var seen = [];
     for (var r = 0; r < records.length; r++) {
