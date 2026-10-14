@@ -122,7 +122,8 @@ const LIMITS = {
   // 2026-10-13: ux9 review fixes (permit pill, calendar gap). Raised from 50400 to 50500 (50427 bytes).
   // 2026-10-13: workshop leaders round (handout phone tables). Raised from 50500 to 50600 (50571 bytes).
   // 2026-10-14: SoCal round 10. Raised from 50600 to 50700: the filter summary may shrink and the place pill wraps on phones (style.css 50638 bytes).
-  stylesheet: 50700,
+  // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts.  limit 50700 to 51200.
+  stylesheet: 51200,
 };
 
 const LITE = "data/entries-lite.json";

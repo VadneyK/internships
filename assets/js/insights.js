@@ -34,7 +34,7 @@
     $("ageLead").textContent = "At 13, " + d.ages[0].n + " programs are open to you. At 16, it is " + d.ages[3].n + ". Paid options grow " + f.paidJump + " percent between 14 and 16 (" + d.ages[1].paid + " to " + d.ages[3].paid + "). Under 16, look hard at volunteering, school programs and the people you know.";
     $("chartAge").innerHTML = d.ages.map(function (a) {
       var h = Math.round(a.n / amax * 100), hp = a.n ? Math.round(a.paid / a.n * 100) : 0;
-      return '<a class="ccol" href="' + G.esc(link({ age: a.age })) + '" aria-label="Age ' + a.age + ": " + a.n + " programs, " + a.paid + ' paid"><span class="cn">' + a.n + '</span><span class="cbar"><i class="k3" style="height:' + h + '%"><b class="k1" style="height:' + hp + '%"></b></i></span><span class="cl">Age ' + a.age + "</span></a>";
+      return '<a class="ccol" href="' + G.esc(link({ age: a.age })) + '" aria-label="Age ' + a.age + ": " + a.n + " programs, " + a.paid + " paid, " + (a.n - a.paid) + ' not paid or pay not stated"><span class="cn">' + a.n + '</span><span class="cbar"><i class="k3" style="height:' + h + '%"><b class="k1" style="height:' + hp + '%"></b></i></span><span class="cl">Age ' + a.age + '<span class="csplit small"><span><i class="key k1" aria-hidden="true"></i>' + a.paid + '</span><span><i class="key kw" aria-hidden="true"></i>' + (a.n - a.paid) + '</span></span></span></a>';
     }).join("");
 
     /* hubs, stacked. The counts are written out as text under each bar, so screen readers and
