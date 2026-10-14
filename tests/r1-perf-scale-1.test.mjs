@@ -97,8 +97,8 @@ const LIMITS = {
   // Raised from 52700 to 53400 on 2026-10-12 for ticket r3-a11y-perf-5: the phone Search key applies the search and moves to the results. find.js is 53228 bytes.
   // Raised from 53400 to 59300 on 2026-10-12 for ticket diet-1: find.js picks a place's Where group files (data/lite and data/detail, ten literal URLs each way) instead of always loading the whole lite file, and falls back to the whole file when a state needs it. find.js is 59217 bytes. First-load data on the Programs page with a place chosen falls from 437 KB to 100 to 186 KB gzipped.
   // 2026-10-12: Programs filters redesign. Raised from 59300 to 64500 for the summary bar and the phone bar in find.js (64477 bytes).
-  // 2026-10-14: persona round 9. Raised from 64500 to 66100 for Good fit picks that keep the QR area, the calendar link that keeps it and the "Only some can apply" tag (find.js 66059 bytes).
-  script: 66100,
+  // 2026-10-14: persona round 9. Raised from 64500 to 66400 for Good fit picks that keep the QR area, the calendar link that keeps it, the "Only some can apply" tag and the fuller Copy my list text (find.js 66339 bytes).
+  script: 66400,
   // Raised from 34000 to 35000 on 2026-10-10: the merged upgrades added a few rules (the plain facts list and the Jobs output heading) and the sheet is 34005 bytes. Not caused by the data growth.
   // Raised again from 35000 to 36000 on 2026-10-10 for the 44 pixel tap targets (details summary, checkbox, breadcrumb) and the print rule for jump chips. The sheet is 35260 bytes.
   // Raised again from 36000 to 37000 on 2026-10-10 for the prefers-contrast block, the h1.display rule, the zero-count chip rule and the print rule for buttons. The sheet is 36345 bytes.

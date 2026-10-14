@@ -952,11 +952,13 @@
     }).join("") + "</ol>" + (checked ? "<p>Last checked " + G.esc(checked) + ".</p>" : "") + "<p>From vadneyk.github.io/internships. Confirm dates on each program's own site.</p>";
     G.printOnly(d, "My internship list");
   });
-  /* The text for Copy my list, Text it to myself and Email it to myself. It starts with the site address, then one block per saved program. */
+  /* The text for Copy my list, Text it to myself and Email it to myself. It starts with the site address, then one block per saved program,
+     in the order they were saved, with what a parent asks first: ages, pay, who can apply and the next date. */
   var SITE_URL = "https://vadneyk.github.io/internships/", MAIL_SUBJECT = "My first job list";
   function listText() {
-    var ids = savedIds(), items = all.filter(function (e) { return ids.indexOf(e.id) > -1; }).map(function (e) {
-      return "- " + e.name + " (" + (e.org || "") + ")\n  " + (e.deadline_text || "") + "\n  " + (e.url || "");
+    var items = savedIds().map(function (id) { return byId[id]; }).filter(Boolean).map(function (e) {
+      return "- " + e.name + " (" + (e.org || "") + ")\n  " + L.ageText(e) + ". " + (G.PAID[e.paid_type] || "Pay not stated") + "." +
+        (e.limited ? " Only some can apply: check who." : "") + "\n  Dates: " + (e.deadline_text || "No date posted yet. Ask them.") + "\n  " + (e.url || "");
     }).join("\n");
     return items ? SITE_URL + "\n\n" + items : "";
   }
