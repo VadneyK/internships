@@ -35,6 +35,6 @@ test("insights.html requests entries-stats.json and not entries-card.json", asyn
   assert.deepEqual(rowsOf("chartFields"), want(d.fields));
   assert.deepEqual(rowsOf("chartSeason"), want(d.seasons.filter((s) => s.n)));
   assert.deepEqual(rowsOf("chartHubs"), want(d.hubs));
-  assert.deepEqual([...doc.querySelectorAll("#chartAge .ccol")].map((a) => a.getAttribute("aria-label")), d.ages.map((a) => "Age " + a.age + ": " + a.n + " programs, " + a.paid + " paid"));
+  assert.deepEqual([...doc.querySelectorAll("#chartAge .ccol")].map((a) => a.getAttribute("aria-label")), d.ages.map((a) => "Age " + a.age + ": " + a.n + " programs, " + a.paid + " paid, " + (a.n - a.paid) + " not paid or pay not stated")); // 2026-10-14: the label also names the white part of the bar
   window.close();
 });
