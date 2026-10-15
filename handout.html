@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-Tly8i3jCdgx8WjrrABqTW5g9uD7xSkvZvmMJnimAkmQ='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-U1P6B0t1fVriszoawtnnzkkuiUFGglVbJrMxegYdSkQ='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
@@ -24,10 +24,12 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=a9c6b3a0">
-<link rel="stylesheet" href="assets/css/style.css?v=a9c6b3a0">
+<link rel="stylesheet" href="assets/css/fonts.css?v=28d4310f">
+<link rel="stylesheet" href="assets/css/style.css?v=28d4310f">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+document.documentElement.classList.add("js");
+setTimeout(function () { if (!document.querySelector(".top.menu-js")) document.documentElement.classList.remove("js"); }, 3000);
 </script>
 </head>
 <body class="page-handout">
@@ -220,8 +222,8 @@ try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") 
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/common.js?v=a9c6b3a0"></script>
-<script src="assets/js/handout.js?v=a9c6b3a0"></script>
+<script src="assets/js/common.js?v=28d4310f"></script>
+<script src="assets/js/handout.js?v=28d4310f"></script>
 
 </body>
 </html>

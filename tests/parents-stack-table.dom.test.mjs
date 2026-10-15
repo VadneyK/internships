@@ -58,7 +58,7 @@ test("the state picker redraw keeps the stacked labels", async () => {
 test("the stylesheet hides the labels on wide screens and stacks the rows under 40rem", () => {
   const css = fs.readFileSync(new URL("../assets/css/style.css", import.meta.url), "utf8");
   assert.match(css, /\.stackt \.tk \{ display: none; \}/);
-  const m = css.match(/@media \(max-width: 40rem\) \{\n  table\.stackt \{ min-width: 0; \}[\s\S]*?\n\}/);
+  const m = css.match(/@media \(max-width: 40rem\) \{\n  \/\*[^]*?\*\/\n  table, table\.stackt \{ min-width: 0; \}[\s\S]*?\n\}/);
   assert.ok(m, "the phone block for .stackt exists");
   assert.match(m[0], /\.stackt tr, \.stackt tbody th\[scope="row"\], \.stackt td \{ display: block; \}/);
   assert.match(m[0], /\.stackt \.tk \{ display: block;/);

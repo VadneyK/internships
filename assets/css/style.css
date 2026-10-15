@@ -162,6 +162,8 @@ li { margin-bottom: .35em; }
   .menu-btn { display: inline-flex; align-items: center; margin-left: auto; font: inherit; font-family: var(--display); font-stretch: 105%; font-weight: 800; font-style: italic; text-transform: uppercase; font-size: .85rem; letter-spacing: .02em; color: var(--ink); background: var(--surface); border: 2px solid var(--edge); border-radius: 999px; min-height: 2.75rem; padding: 0 1rem; cursor: pointer; }
   .menu-btn + .theme-btn { margin-left: 0; }
   .top.menu-js .nav { display: none; }
+  /* 2026-10-15: fold the nav from the first paint (html.js is set in the head), so the header does not shrink when common.js adds Menu */
+  html.js .top:not(.open) .nav { display: none; }
   .top.menu-js.open .nav { display: flex; }
 }
 /* ux9-header-footer: one header row on a phone, Menu as a 2 column grid, footer links in 2 columns */
@@ -353,7 +355,7 @@ main details[open] > summary::after { content: "\2212";
 .tablewrap { position: relative; overflow-x: auto; border: 3px solid var(--edge); border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); }
 #jHours > :first-child { margin-top: 1rem; }
 table { border-collapse: collapse; width: 100%; min-width: 34rem; font-size: .95rem; }
-@media (max-width: 40rem) { .page-handout .tablewrap table, #mOut table, #gridT { min-width: 0; } .page-handout .tablewrap td:first-child { white-space: nowrap; } }
+@media (max-width: 40rem) { .page-handout .tablewrap td:first-child { white-space: nowrap; } }
 th, td { text-align: left; padding: .6rem .75rem; border-bottom: 2px solid color-mix(in srgb, var(--edge) 25%, transparent); vertical-align: top; }
 th { font-family: var(--display); font-style: italic; text-transform: uppercase; font-size: .78rem; letter-spacing: .05em; background: var(--tag-bg); color: var(--tag-fg); border-bottom: 0; }
 tr:last-child td { border-bottom: 0; }
@@ -363,7 +365,9 @@ tbody th[scope="row"] { background: transparent; color: var(--ink); text-transfo
 /* A phone number never breaks across lines ("833-526-" then "4636"). */
 a[href^="tel:"] { white-space: nowrap; }
 @media (max-width: 40rem) {
-  table.stackt { min-width: 0; }
+  /* 2026-10-14: no table keeps the 34rem desktop floor on a phone. Every 2 and 3 column table fits at 390 px,
+     and a wider one stacks with .stackt instead of scrolling sideways. */
+  table, table.stackt { min-width: 0; }
   .stackt thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
   .stackt tr, .stackt tbody th[scope="row"], .stackt td { display: block; }
   .stackt tbody tr { border-bottom: 3px solid var(--edge); }

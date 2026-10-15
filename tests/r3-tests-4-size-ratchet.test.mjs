@@ -101,7 +101,9 @@ const TABLE = {
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. assets/css/style.css limit 50700 to 51200.
   // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). assets/css/style.css limit 51200 to 52100.
   // 2026-10-14: tap-to-call numbers on the parents permit table (PENDING PERSON APPROVAL). assets/css/style.css limit 52100 to 52300.
-  "assets/css/style.css": { ceiling: 52300, reason: "stylesheet, 41831 bytes measured 2026-10-10; 50638 bytes on 2026-10-14 after the phone filter summary fix" },
+  // 2026-10-14: phone tables drop the 34rem floor; rules hours table stacks (PENDING PERSON APPROVAL). assets/css/style.css limit 52300 to 52400.
+  // 2026-10-15: phone header folds before scripts, tables stack, clockLabel (PENDING PERSON APPROVAL). assets/css/style.css limit 52400 to 52600.
+  "assets/css/style.css": { ceiling: 52600, reason: "stylesheet, 41831 bytes measured 2026-10-10; 50638 bytes on 2026-10-14 after the phone filter summary fix" },
   "assets/js/calendar.js": { ceiling: 8800, reason: "script, 7966 bytes measured 2026-10-10" },
   "assets/js/common.js": { ceiling: 34900, reason: "script, 25681 bytes measured 2026-10-10" },
   // Raised from 58100 to 59300 on 2026-10-12 for ticket diet-1 (Where group files on the Programs page). 59217 bytes measured.
@@ -130,8 +132,8 @@ const TABLE = {
   "assets/js/share.js": { ceiling: 1900, reason: "script, 1681 bytes measured 2026-10-10" },
   "assets/js/states.js": { ceiling: 2600, reason: "script, 2290 bytes measured 2026-10-10" },
   // Raised for ticket p9-younger-1: the permit-only states in the picker and their permit card. 16622 bytes measured 2026-10-12.
-  // 2026-10-14: younger.html carries the picked state into Programs links, counts and the not-stated note (persona r9) younger.js 17900 to 20200. PENDING PERSON APPROVAL.
-  "assets/js/younger.js": { ceiling: 20200, reason: "raised 2026-10-13 for ticket ux9-other-state-search (place box); script, 17599 bytes measured 2026-10-12 (permit-only states and card, p9-younger-1; plain note when the grid does not cover the state, p8-younger-state)" },
+  // 2026-10-14: younger.html carries the picked state into Programs links, counts and the not-stated note (persona r9) younger.js 17900 to 20200, then 20300 (the plain buttons keep the state when the count file fails), then 20900 (the grid stacks on phones: roles and state labels). PENDING PERSON APPROVAL.
+  "assets/js/younger.js": { ceiling: 20900, reason: "raised 2026-10-13 for ticket ux9-other-state-search (place box); script, 17599 bytes measured 2026-10-12 (permit-only states and card, p9-younger-1; plain note when the grid does not cover the state, p8-younger-state)" },
   "assets/img/favicon.svg": { ceiling: 500, reason: "image, 409 bytes measured 2026-10-10" },
   "assets/img/og.jpg": { ceiling: 90200, reason: "image, 81997 bytes measured 2026-10-10" },
   "assets/img/splat-orange.svg": { ceiling: 5500, reason: "image, 4991 bytes measured 2026-10-10" },

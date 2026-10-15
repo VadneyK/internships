@@ -88,7 +88,9 @@ const LIMITS = {
   // Raised from 55100 to 55500 on 2026-10-12 for the grouped footer Quick links (about 380 bytes). safety.html is 55390 bytes.
   // Raised for ready.html only on 2026-10-13 for the closed foster care and on your own block (ticket r8-ready-foster), about 2,900 bytes with nine source links. ready.html is 37556 bytes. Every other root page keeps the limit above.
   // 2026-10-14: ready.html 37700 to 37800 for the footer line that sends teens to a parent or youth leader instead of GitHub (every page; ready.html 37736 bytes).
-  pageLimits: { "safety.html": 55500, "ready.html": 37800 },
+  // 2026-10-15: safety.html 55500 to 55700 and ready.html 37800 to 38000 for the head script that folds the phone menu before
+  // common.js runs (about 170 bytes on every page; Lighthouse CLS 0.17 to 0 on phones). safety.html 55674, ready.html 37911 bytes. PENDING PERSON APPROVAL.
+  pageLimits: { "safety.html": 55700, "ready.html": 38000 },
   // Raised from 40000 to 46000 on 2026-10-10: lib.js grew to 41715 bytes for the live chip counts, empty-state options, top picks and the cost-tier sort. Gzipped it is about 11 KB. The other scripts are all under 40000.
   // Raised again from 46000 to 48000 on 2026-10-10 for the whole-state Where choices (the state list, its group lists and the state place lookup). lib.js is 47189 bytes.
   // Raised from 48000 to 49500 on 2026-10-11 for the under-14 note and the search-cache fix in find.js. find.js is 49389 bytes.
@@ -126,7 +128,9 @@ const LIMITS = {
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts.  limit 50700 to 51200.
   // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL).  limit 51200 to 52100.
   // 2026-10-14: tap-to-call numbers on the parents permit table (PENDING PERSON APPROVAL).  limit 52100 to 52300.
-  stylesheet: 52300,
+  // 2026-10-14: phone tables drop the 34rem floor; rules hours table stacks (PENDING PERSON APPROVAL).  limit 52300 to 52400.
+  // 2026-10-15: phone header folds before scripts, tables stack, clockLabel (PENDING PERSON APPROVAL).  limit 52400 to 52600.
+  stylesheet: 52600,
 };
 
 const LITE = "data/entries-lite.json";

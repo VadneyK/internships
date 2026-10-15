@@ -90,9 +90,10 @@
     drawCounts();
   }
   function plainCounts() {
-    var l13 = $("n13") && $("n13").closest("a"), l12 = $("age12Link");
-    if (l13) l13.textContent = "Browse programs for age 13";
-    if (l12) l12.textContent = "Browse programs for age 12";
+    var b13 = $("n13") && $("n13").closest("a"), b12 = $("age12Link");
+    /* Keep the buttons, so syncFindLinks can still point them at the picked state after the count text is gone. */
+    if (b13) { l13 = b13; b13.textContent = "Browse programs for age 13"; }
+    if (b12) { l12 = b12; b12.textContent = "Browse programs for age 12"; }
   }
   G.fetchData("data/younger.json").then(function (r) { return r.json(); }).then(function (d) {
     try { G.loadEntries("core").then(fillCounts).catch(plainCounts); } catch (e) { plainCounts(); }
@@ -183,12 +184,15 @@
     function syncOther(v) { if (osBox) osBox.hidden = isFour(v); }
     function drawGrid(only) {
       var sts = d.states.filter(function (s) { return !only || !isFour(only) || s[0] === only; });
-      var head = "<thead><tr><th scope=\"col\">What you want to do</th>" + sts.map(function (s) { return "<th scope=\"col\">" + G.esc(s[1]) + "</th>"; }).join("") + "</tr></thead>";
-      var body = "<tbody>" + d.rows.map(function (r) {
-        return "<tr><th scope=\"row\">" + G.esc(r.job) + "</th>" + sts.map(function (s) {
-          var c = r.cells[s[0]]; var NS = "Not stated on the pages we read.", unk = c.t.indexOf(NS) === 0, rest = unk ? c.t.slice(NS.length).trim() : ""; return "<td>" + (unk ? '<span class="tag ghost" style="white-space:normal;line-height:1.25;">' + G.esc(d.unknownChip) + "</span>" + (rest ? " " + L.linkContacts(rest) : "") : L.linkContacts(c.t)) + (c.s ? '<br><span class="small">' + a(c.s.t, c.s.u) + "</span>" : "") + "</td>";
+      /* On phones the grid stacks (CSS .stackt): each job is a block and every cell shows its state name first.
+         The roles keep the table meaning that display:block drops; the names are aria-hidden (screen readers use the headers). */
+      function k(t) { return '<span class="tk" aria-hidden="true">' + G.esc(t) + "</span>"; }
+      var head = "<thead role=\"rowgroup\"><tr role=\"row\"><th scope=\"col\" role=\"columnheader\">What you want to do</th>" + sts.map(function (s) { return "<th scope=\"col\" role=\"columnheader\">" + G.esc(s[1]) + "</th>"; }).join("") + "</tr></thead>";
+      var body = "<tbody role=\"rowgroup\">" + d.rows.map(function (r) {
+        return "<tr role=\"row\"><th scope=\"row\" role=\"rowheader\">" + G.esc(r.job) + "</th>" + sts.map(function (s) {
+          var c = r.cells[s[0]]; var NS = "Not stated on the pages we read.", unk = c.t.indexOf(NS) === 0, rest = unk ? c.t.slice(NS.length).trim() : ""; return "<td role=\"cell\">" + k(s[1]) + (unk ? '<span class="tag ghost" style="white-space:normal;line-height:1.25;">' + G.esc(d.unknownChip) + "</span>" + (rest ? " " + L.linkContacts(rest) : "") : L.linkContacts(c.t)) + (c.s ? '<br><span class="small">' + a(c.s.t, c.s.u) + "</span>" : "") + "</td>";
         }).join("") + "</tr>";
-      }).join("") + "<tr><th scope=\"row\">Who to ask</th>" + sts.map(function (s) { return "<td>" + L.linkContacts(d.calls[s[0]]) + "</td>"; }).join("") + "</tr></tbody>";
+      }).join("") + "<tr role=\"row\"><th scope=\"row\" role=\"rowheader\">Who to ask</th>" + sts.map(function (s) { return "<td role=\"cell\">" + k(s[1]) + L.linkContacts(d.calls[s[0]]) + "</td>"; }).join("") + "</tr></tbody>";
       $("gridT").innerHTML = '<caption class="sr">What a 12 or 13 year old may do, by state</caption>' + head + body;
     }
     /* The picker's options are written into the page by tools/build.py: the four full states first, then every other state with a short answer, from the data files. */

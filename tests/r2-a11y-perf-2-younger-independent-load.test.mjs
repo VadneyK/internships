@@ -43,3 +43,14 @@ test("core file resolves: counts are filled", async () => {
   assert.match(document.getElementById("n13").textContent, /^\d+$/);
   assert.match(document.getElementById("n12").textContent, /^\d+$/);
 });
+
+// 2026-10-14: with the count gone, the plain buttons still follow a picked state into Programs.
+test("core file rejected: the plain buttons still carry the picked state", async () => {
+  const { document, window } = await loadPage("younger.html", { setup: fetchWith("fail"), search: "?state=ga" }); await tick(300);
+  const b13 = [...document.querySelectorAll("a.btn")].find((a) => a.textContent === "Browse programs for age 13");
+  assert.equal(b13.getAttribute("href"), "find.html?age=13&where=atl");
+  assert.equal(document.getElementById("age12Link").getAttribute("href"), "find.html?age=12&where=atl");
+  const ys = document.getElementById("yState");
+  ys.value = ""; ys.dispatchEvent(new window.Event("change", { bubbles: true }));
+  assert.equal(b13.getAttribute("href"), "find.html?age=13");
+});

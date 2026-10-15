@@ -36,5 +36,6 @@ test("share: the scanned-code start box is screen only, and the NorCal caption m
 
 test("paycheck: the two column estimate table may shrink to a phone width", () => {
   const css = read("assets/css/style.css");
-  assert.match(css, /@media \(max-width: 40rem\) \{[^}]*#mOut table[^{]*\{ min-width: 0; \}/);
+  // 2026-10-15: the #mOut override moved into the general phone rule (no table keeps the 34rem floor on a phone).
+  assert.match(css, /@media \(max-width: 40rem\) \{\n  \/\*[^]*?\*\/\n  table, table\.stackt \{ min-width: 0; \}/);
 });
