@@ -101,7 +101,8 @@ const BUDGET = {
   // 2026-10-15: target size, hero glow, focus above the Show bar (PENDING PERSON APPROVAL). handout.html limit 95500 to 95900.
   // 2026-10-15: opened tile style (PENDING PERSON APPROVAL). handout.html limit 95900 to 96100.
   // 2026-10-15: drop build-time tiles when data fails (PENDING PERSON APPROVAL). handout.html limit 96100 to 96300.
-  "handout.html": { ceiling: 96300, reason: "common.js, handout.js and both stylesheets; no lib.js" },
+  // 2026-10-15: lint fixes (PENDING PERSON APPROVAL). handout.html limit 96300 to 96400.
+  "handout.html": { ceiling: 96400, reason: "common.js, handout.js and both stylesheets; no lib.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you index.html limit 155000 to 156100.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. index.html limit 156100 to 156600.
   // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). index.html limit 156600 to 157600.

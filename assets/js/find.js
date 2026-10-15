@@ -105,7 +105,6 @@
     var vtag = e.verified === "fetched"
       ? '<span class="tag good">Read on official site</span>'
       : '<span class="tag warn">Confirm first</span>';
-    var hubs = (e.regions || []).map(function (r) { var f = G.REGIONS.filter(function (x) { return x[0] === r; })[0]; return f ? f[1] : ""; }).filter(Boolean);
     var html = '<article class="card prog" tabindex="-1" id="p-' + G.esc(e.id) + '" aria-labelledby="p-' + G.esc(e.id) + '-h">';
     html += '<div class="row">' + statusTag(e) + closesSoonTag(e) + paidTag(e) + '<span class="tag ghost">' + G.esc(G.TYPES[e.type] || e.type) + "</span></div>";
     html += '<h3 id="p-' + G.esc(e.id) + '-h">' + G.esc(e.name) + "</h3>";

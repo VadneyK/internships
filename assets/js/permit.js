@@ -49,7 +49,6 @@
     else if (a >= 12) h = "<p" + idf("pAgeLine") + "><b>At your age (" + a + "):</b> Under 14 is covered on the <a href=\"younger.html?age=" + encodeURIComponent(String(age)) + '">Ages 12 to 14 page</a>.</p>';
     return h;
   }
-  function hasLite(id) { return !!lite && !!id && Object.prototype.hasOwnProperty.call(lite, id); }
   /* The checklist and message section is offered for 14 to 17, as for the full states. */
   function liteHasPacket(age) { var a = +age; return a >= 14 && a <= 17; }
   /* The shorter answer for one of the states in data/states-lite.json: mostly one official page, four facts, the page and a quote. */
@@ -240,7 +239,6 @@
   }
 
   function paintPacket(r, s) {
-    var emp = $("mEmp").value.trim();
     var h = "<h3>" + G.esc(s.permit) + " checklist (" + G.esc(s.name) + ")</h3>";
     h += "<p>Name: ______________________ Employer: ______________________ First day: ____________</p>";
     if (r.verdict === "need") {
@@ -352,7 +350,7 @@
     ["State", "Age", "Kind"].forEach(function (n) { var v = q.get(n.toLowerCase()); if (v) $("p" + n).value = v; });
     /* No ?state= in the address: start from the area saved on Programs, when it sits in one state we have read. */
     if (!q.get("state")) {
-      var pr = G.store.get("findprefs", {}), ss = pr && typeof pr.place === "string" ? L.stateFromPlace(pr.place) : "";
+      var ss = pr && typeof pr.place === "string" ? L.stateFromPlace(pr.place) : "";
       if (ss && hasState(ss)) { $("pState").value = ss; if ($("pState")._tpSync) $("pState")._tpSync(); }
     }
     $("pState").addEventListener("change", function () {

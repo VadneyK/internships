@@ -80,7 +80,7 @@
       pend = pAge;
       /* Address bar first, then the saved plan, then the area saved on Programs. */
       if (!qs.get("state") && !saved.av.state) {
-        var pr = G.store.get("findprefs", {}), ss = pr && typeof pr.place === "string" ? L.stateFromPlace(pr.place) : "";
+        var ss = pr && typeof pr.place === "string" ? L.stateFromPlace(pr.place) : "";
         if (ss && Object.prototype.hasOwnProperty.call(pm.states, ss)) { $("aState").value = ss; if ($("aState")._tpSync) $("aState")._tpSync(); }
       }
     } catch (e) { /* the address bar is optional */ }
