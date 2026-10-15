@@ -6,7 +6,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
-import { loadPage, tick } from "./dom-helper.mjs";
+import { loadPage, tick, waitFor } from "./dom-helper.mjs";
 
 const read = (f) => fs.readFileSync(new URL("../" + f, import.meta.url), "utf8");
 
@@ -31,7 +31,7 @@ test("the phone block hides the nav under html.js unless the menu is open", () =
 
 test("a page loads with html.js set and the Menu button built", async () => {
   const { document } = await loadPage("index.html");
-  await tick(100);
+  await waitFor(() => document.querySelector(".top.menu-js button.menu-btn"), { timeout: 30000 });
   assert.ok(document.documentElement.classList.contains("js"));
   assert.ok(document.querySelector(".top.menu-js button.menu-btn"));
 });
