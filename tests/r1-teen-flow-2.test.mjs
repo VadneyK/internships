@@ -5,7 +5,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { createRequire } from "node:module";
-import { loadPage, type, tick } from "./dom-helper.mjs";
+import { loadPage, type, tick, waitFor } from "./dom-helper.mjs";
 const require = createRequire(import.meta.url);
 globalThis.self = globalThis;
 const L = require("../assets/js/lib.js");
@@ -70,7 +70,8 @@ test("home picker: a real zero-match combination shows Browse all programs and n
   type(window, document.getElementById("pAge"), combo.age);
   type(window, document.getElementById("pHub"), combo.place);
   type(window, document.getElementById("pField"), combo.field);
-  await tick(100);
+  // 2026-10-15: wait for the zero-match state, not a fixed 100 ms (the picker reads per-program files; slow under load).
+  await waitFor(() => document.querySelector('#matchMore a[href="find.html"]'), { timeout: 30000 });
   assert.deepEqual(errors, []);
   assertNoMatchState(document, combo.age);
 });
@@ -86,7 +87,8 @@ test("home picker: a real zero-match combination for age 12 or 13 also shows the
   type(window, document.getElementById("pAge"), combo.age);
   type(window, document.getElementById("pHub"), combo.place);
   type(window, document.getElementById("pField"), combo.field);
-  await tick(100);
+  // 2026-10-15: wait for the zero-match state, not a fixed 100 ms (the picker reads per-program files; slow under load).
+  await waitFor(() => document.querySelector('#matchMore a[href="find.html"]'), { timeout: 30000 });
   assert.deepEqual(errors, []);
   assertNoMatchState(document, combo.age);
 });
@@ -113,7 +115,8 @@ test("home picker: with no programs at all, age 16 shows only the browse link", 
 test("home picker: with matches, the See all N matches link is unchanged and there is no browse link", async () => {
   const { window, document, errors } = await loadPage("index.html");
   type(window, document.getElementById("pAge"), "16");
-  await tick(100);
+  // 2026-10-15: wait for the count and the cards, not a fixed 100 ms (it flaked under full-suite load).
+  await waitFor(() => /See all \d+ matches/.test(document.getElementById("matchMore").textContent) && /class="card prog"/.test(document.getElementById("matches").innerHTML), { timeout: 30000 });
   assert.deepEqual(errors, []);
   const more = document.getElementById("matchMore");
   const m = more.textContent.match(/See all (\d+) matches/);
