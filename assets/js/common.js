@@ -265,7 +265,8 @@
   G.tilePicker = function (sel, opts) {
     opts = opts || {};
     if (!sel || sel._tp) return sel && sel._tp;
-    var wrap = document.createElement("div"); wrap.className = "tp";
+    /* data-pre: tiles shipped by tools/build.py, adopted so the picker keeps its space until its options arrive */
+    var pre = sel.nextElementSibling, wrap = pre && pre.hasAttribute("data-pre") ? pre : document.createElement("div"); wrap.className = "tp";
     var lab = sel.id && document.querySelector('label[for="' + sel.id + '"]');
     if (lab) { if (!lab.id) lab.id = sel.id + "Lbl"; wrap.setAttribute("role", "group"); wrap.setAttribute("aria-labelledby", lab.id); }
     sel.classList.add("tp-hidden"); sel.setAttribute("tabindex", "-1"); sel.setAttribute("aria-hidden", "true");
@@ -297,6 +298,7 @@
       }
     }
     function paintTiles(keepOpen) {
+      if (wrap.hasAttribute("data-pre")) { if (sel.options.length < 2) return; wrap.removeAttribute("data-pre"); wrap.removeAttribute("aria-hidden"); }
       wrap.textContent = "";
       var tooLong = !opts.groups && sel.options.length > (opts.max || 30);
       sel.classList.toggle("tp-hidden", !tooLong); wrap.hidden = tooLong;
@@ -354,11 +356,12 @@
       if (box._done) return; box._done = true;
       var say = box.getAttribute("data-share");
       function body() { return say + " " + location.href; }
-      var a = document.createElement("a"); a.className = "btn sm alt"; a.textContent = "Text this to a parent"; a.href = "sms:";
+      /* younger.html ships both controls (tools/build.py), so the row keeps its size; they are wired here */
+      var a = box.querySelector("a.btn"), c = box.querySelector("button.btn");
+      if (!a) { a = document.createElement("a"); a.className = "btn sm alt"; a.textContent = "Text this to a parent"; a.href = "sms:"; box.appendChild(a); box.appendChild(document.createTextNode(" ")); }
+      if (!c) { c = document.createElement("button"); c.type = "button"; c.className = "btn sm alt"; c.textContent = "Copy link"; box.appendChild(c); }
       a.addEventListener("click", function () { a.href = L && L.smsHref ? L.smsHref(body()) : "sms:"; });
-      var c = document.createElement("button"); c.type = "button"; c.className = "btn sm alt"; c.textContent = "Copy link";
       c.addEventListener("click", function () { G.copy(location.href); });
-      box.appendChild(a); box.appendChild(document.createTextNode(" ")); box.appendChild(c);
     });
   };
   setTimeout(function () { G.shareToParent(); }, 0);

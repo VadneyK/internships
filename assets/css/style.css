@@ -704,7 +704,8 @@ details + #hClose { margin-top: 1.5rem; }
 #moreFilters { padding-top: .7rem; border-top: 2px dashed color-mix(in srgb, var(--edge) 35%, transparent); }
 .mf-count { margin: 0 auto 0 -.8rem; }
 .showbar { display: none; }
-@media (max-width: 40rem) { .fchip { white-space: normal; } .fsum-t { flex: 1; } .fsum-clear { order: 1; } .fchips { order: 2; flex: 1 1 100%; } }
+/* CLS: fixed row */
+@media (max-width: 40rem) { .fchip { white-space: normal; } .fsum-t { flex: 1; min-height: 2.75rem; display: flex; align-items: center; } .fsum-clear { order: 1; } .fchips { order: 2; flex: 1 1 100%; } }
 @media (max-width: 30rem) { .frow { grid-template-columns: 1fr; } .frow > label, .frow > :not(label) { grid-column: 1; padding-top: 0; } }
 @media (max-width: 47.99rem) {
   .showbar { display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 45; padding: .6rem max(1rem, env(safe-area-inset-right, 0px)) calc(.6rem + env(safe-area-inset-bottom, 0px)) max(1rem, env(safe-area-inset-left, 0px)); background: var(--paper); border-top: 3px solid var(--edge); }

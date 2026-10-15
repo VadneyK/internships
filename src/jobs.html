@@ -20,8 +20,8 @@ navparent: ready
   <div class="wrap">
     <div class="formgrid formgrid-top flow">
     <div class="field fpill"><span class="step" aria-hidden="true">1</span><label for="jAge">How old are you?</label>
-      <select id="jAge" data-tiles><option value="">Choose your age</option></select></div>
-    <div class="field"><span class="step" aria-hidden="true">2</span><label for="jState">Where do you live?</label>
+      <select id="jAge" data-tiles class="tp-hidden" tabindex="-1" aria-hidden="true"><option value="">Choose your age</option></select>{{pre_jAge}}</div>
+    <div class="field"><span class="step" aria-hidden="true">2</span><label for="jState">Where do you live? (state or province)</label>
       <p class="hint" id="jStateHint">Pick your state to filter the jobs below. Anywhere shows every job.</p>
       <select id="jState" aria-describedby="jStateHint"><option value="">Anywhere</option></select></div>
     </div>
@@ -30,9 +30,9 @@ navparent: ready
     <div id="jChips"></div>
     <div id="jOut"><p class="muted">Tap your age to see who hires.</p></div>
     <p class="small" id="jFarmLink">Farm and ranch work has its own federal rules. <a href="safety.html#farm-box">On a farm or ranch</a> on the Safety page lists them.</p>
-    <div id="jHelp" class="callout plain small" style="margin-top:1.4rem;"></div>
+    <div id="jHelp" class="callout plain small" style="margin-top:1.4rem;"><p><b>Getting there without a car:</b> put the employer address into your city transit agency trip planner, check the last bus time against your shift end, and ask your school office about a youth pass.</p><p><b>Stay safe.</b> Never pay to get a job. Never send your ID to a stranger. Tell an adult before an interview. More on the <a href="safety.html">safety page</a>.</p></div>
     <div class="notes">
-      <div class="callout plain small" id="jobsNote"></div>
+      <div class="callout plain small" id="jobsNote">{{jobs_note}}</div>
       <details id="words" class="callout plain small">
         <summary>Words you will see</summary>
         <dl>

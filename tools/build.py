@@ -83,6 +83,41 @@ def younger_options(body):
     return body.replace("{{state_options}}", "".join(opts))
 
 
+def pre_tiles(labels):
+    """The tap tiles assets/js/common.js tilePicker paints for a short list, as static markup. tilePicker adopts this block (data-pre)
+    and repaints it with the same tiles, so a picker whose options arrive after load takes its final space from the first paint."""
+    import html as _h
+    btns = "".join('<button type="button" class="tile" aria-pressed="false" tabindex="-1">%s</button>' % _h.escape(t) for t in labels)
+    return '<div class="tp" data-pre aria-hidden="true"><div class="tp-row">%s</div></div>' % btns
+
+
+def permit_static():
+    """Tiles for the three pickers on the permit page, in the order assets/js/permit.js adds their options."""
+    d = json.load(open(os.path.join(ROOT, "data", "permits.json"), encoding="utf-8"))
+    first = ["ca", "ga", "ny", "il"]
+    rest = sorted((k for k in d["states"] if k not in first), key=lambda k: d["states"][k]["name"])
+    states = [d["states"][k]["name"] for k in first + rest] + ["Another state", "My state is not listed"]
+    ages = [str(a) for a in range(12, 18)] + ["18 or older"]
+    return {"pre_pState": pre_tiles(states), "pre_pAge": pre_tiles(ages), "pre_pKind": pre_tiles([k[1] for k in d["kinds"]])}
+
+
+def calendar_static():
+    """Static copies of what assets/js/calendar.js fills in after its data loads, so the page does not jump when it runs.
+    The note comes from data/calendar.json. The month buttons are the same buttons the script paints (it replaces them once the data is in)."""
+    import html as _h
+    cal = json.load(open(os.path.join(ROOT, "data", "calendar.json"), encoding="utf-8"))
+    months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    chips = "".join('<button class="chip" type="button" data-m="%d" aria-pressed="false">%s<span class="n">0</span></button>' % (i + 1, m) for i, m in enumerate(months))
+    return {"calendar_note": _h.escape(cal["note"]), "calendar_months": chips, "pre_cAge": pre_tiles(["Any age"] + [str(a) for a in range(12, 19)])}
+
+
+def jobs_static():
+    """The note under the jobs list, from data/employers.json, in the same markup assets/js/jobs.js writes after it loads."""
+    import html as _h
+    d = json.load(open(os.path.join(ROOT, "data", "employers.json"), encoding="utf-8"))
+    return {"jobs_note": "<p>%s Last read %s.</p>" % (_h.escape(d["note"]), _h.escape(d["read"])), "pre_jAge": pre_tiles(["Under 14", "14", "15", "16", "17", "18"])}
+
+
 def fill_csp_hashes(page):
     """Fill {{script_hashes}} in the Content-Security-Policy meta tag with a sha256 source for every inline script.
 
@@ -141,6 +176,18 @@ def build(name):
     import html as _html
     rep["gaps_list"] = "\n".join(
         '      <li><b>%s.</b> %s <a href="%s/%d">Issue %d</a></li>' % (_html.escape(g["title"]), _html.escape(g["text"]), ISSUES, g["issue"], g["issue"]) for g in gaps)
+    if name == "calendar":
+        rep.update(calendar_static())
+    if name == "jobs":
+        rep.update(jobs_static())
+    if name == "permit":
+        rep.update(permit_static())
+    # The "Text this to a parent" link and Copy link button that assets/js/common.js adds to a .share-parent row, shipped in the
+    # markup so the row does not grow when the script runs. shareToParent finds them and wires them up.
+    if name == "younger":  # only where the row sits in the first screen; elsewhere it is below the fold and the pages are byte-budgeted
+      rep["content"] = re.sub(r'(<p class="share-parent[^"]*" data-share="[^"]*">(?:(?!</p>).)*?)(</p>)',
+          lambda m: m.group(1) + '<a class="btn sm alt" href="sms:">Text this to a parent</a> <button type="button" class="btn sm alt">Copy link</button>' + m.group(2),
+          rep["content"], flags=re.S)
     nav_page = fields.get("navparent", "").strip() or name
     for p in PAGES:
         rep["cur_" + p] = ' aria-current="page"' if p == nav_page else ""

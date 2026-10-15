@@ -24,8 +24,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=6c79b39e">
-<link rel="stylesheet" href="assets/css/style.css?v=6c79b39e">
+<link rel="stylesheet" href="assets/css/fonts.css?v=ac6c171c">
+<link rel="stylesheet" href="assets/css/style.css?v=ac6c171c">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 document.documentElement.classList.add("js");
@@ -72,13 +72,13 @@ setTimeout(function () { if (!document.querySelector(".top.menu-js")) document.d
     <h2>1. Tell us about the work</h2>
     <div class="formgrid formgrid-top flow">
       <div class="field"><label for="pState">Where will you work?</label>
-        <select id="pState" data-tiles><option value="">Choose a state</option></select></div>
+        <select id="pState" data-tiles class="tp-hidden" tabindex="-1" aria-hidden="true"><option value="">Choose a state</option></select><div class="tp" data-pre aria-hidden="true"><div class="tp-row"><button type="button" class="tile" aria-pressed="false" tabindex="-1">California</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">Georgia</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">New York</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">Illinois</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">British Columbia (Canada)</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">Indiana</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">Maryland</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">Massachusetts</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">Michigan</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">Minnesota</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">New Jersey</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">North Carolina</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">Ohio</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">Pennsylvania</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">Texas</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">Virginia</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">Washington</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">Wisconsin</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">Another state</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">My state is not listed</button></div></div></div>
       <div class="field" id="pLiteField" hidden><label for="pLite">Which state?</label>
         <select id="pLite"><option value="">Choose your state</option></select></div>
       <div class="field fpill"><label for="pAge">How old are you?</label>
-        <select id="pAge" data-tiles><option value="">Choose your age</option></select></div>
+        <select id="pAge" data-tiles class="tp-hidden" tabindex="-1" aria-hidden="true"><option value="">Choose your age</option></select><div class="tp" data-pre aria-hidden="true"><div class="tp-row"><button type="button" class="tile" aria-pressed="false" tabindex="-1">12</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">13</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">14</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">15</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">16</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">17</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">18 or older</button></div></div></div>
       <div class="field"><label for="pKind">What kind of work?</label>
-        <select id="pKind" data-tiles><option value="">Choose one</option></select></div>
+        <select id="pKind" data-tiles class="tp-hidden" tabindex="-1" aria-hidden="true"><option value="">Choose one</option></select><div class="tp" data-pre aria-hidden="true"><div class="tp-row"><button type="button" class="tile" aria-pressed="false" tabindex="-1">A paid job at a business, store, restaurant, camp or pool</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">A paid city or nonprofit youth program</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">Babysitting, yard work or odd jobs for neighbors</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">My own small business (tutoring, crafts, pet care)</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">Unpaid volunteering at a nonprofit, church or library</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">An unpaid internship</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">Working for my parent&#x27;s business</button><button type="button" class="tile" aria-pressed="false" tabindex="-1">Acting or modeling</button></div></div></div>
     </div>
     <p class="small muted">We have full answers for 17 states and British Columbia, and shorter answers for 33 more states and Washington, DC. Pick &ldquo;Another state&rdquo; to find yours. If it is not there, pick &ldquo;My state is not listed&rdquo; to see who to ask.</p>
     <div class="notes">
@@ -202,9 +202,9 @@ setTimeout(function () { if (!document.querySelector(".top.menu-js")) document.d
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=6c79b39e"></script>
-<script src="assets/js/common.js?v=6c79b39e"></script>
-<script src="assets/js/permit.js?v=6c79b39e"></script>
+<script src="assets/js/lib.js?v=ac6c171c"></script>
+<script src="assets/js/common.js?v=ac6c171c"></script>
+<script src="assets/js/permit.js?v=ac6c171c"></script>
 
 </body>
 </html>
