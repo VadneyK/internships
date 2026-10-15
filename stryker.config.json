@@ -59,7 +59,12 @@
       "tests/r3-tests-6.test.mjs",
       "tests/r3-tests-7-message-helpers-edges.test.mjs",
       "tests/r5-teen-flow-10-detroit.test.mjs",
-      "tests/rev-accuracy-1-hours-checker-late-exceptions.test.mjs"
+      "tests/rev-accuracy-1-hours-checker-late-exceptions.test.mjs",
+      "tests/clock-label.test.mjs",
+      "tests/mut-c-lib.test.mjs",
+      "tests/mut-a-lib.test.mjs",
+      "tests/mut-b-lib.test.mjs",
+      "tests/mut-d-lib.test.mjs"
     ],
     "nodeArgs": [
       "--test-reporter=tap",

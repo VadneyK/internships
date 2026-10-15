@@ -333,6 +333,15 @@
     This checks the hours a teen offers, which is more than they would be scheduled, so it is a heads-up, not a ruling.
   */
   var DAY_NAMES = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+  /* An hour of the day as people say it: 7 -> "7 a.m.", 19 -> "7 p.m.", 21.5 -> "9:30 p.m.", 12 -> "noon", 0 or 24 -> "midnight".
+     2026-10-15: the old inline label printed a limit of 24 (Pennsylvania at 16, two summer rows) as "12 p.m.", which is noon. */
+  function clockLabel(h) {
+    var x = ((+h % 24) + 24) % 24, hr = Math.floor(x), min = Math.round((x - hr) * 60);
+    if (min === 60) { hr = (hr + 1) % 24; min = 0; }
+    if (!min && hr === 0) return "midnight";
+    if (!min && hr === 12) return "noon";
+    return (hr % 12 || 12) + (min ? ":" + (min < 10 ? "0" : "") + min : "") + (hr < 12 ? " a.m." : " p.m.");
+  }
   function hoursCheck(limits, age, inSchool, days) {
     var a = +age, band = a >= 18 ? "" : a >= 16 ? "16" : a >= 14 ? "14" : "";
     if (!Array.isArray(days)) days = [];
@@ -348,8 +357,8 @@
       var max = schoolDay ? lim.schoolDay : lim.nonSchoolDay;
       if (max != null && per[i] > max) out.problems.push(DAY_NAMES[i] + ": " + per[i] + " hours is more than the " + max + " hour limit on " + (schoolDay ? "a school day" : "a day off from school") + " at " + a + ".");
       var latest = !inSchool && lim.latestSummer != null ? lim.latestSummer : lim.latest;
-      if (lim.earliest != null && d.from < lim.earliest) out.problems.push(DAY_NAMES[i] + ": starting before " + lim.earliest + " a.m. is not allowed at " + a + ".");
-      if (latest != null && d.to > latest) out.problems.push(DAY_NAMES[i] + ": the end time is past the usual limit of " + (latest > 12 ? latest - 12 + " p.m." : latest + " a.m.") + " at " + a + "." + (lim.lateNote && lim.lateMax != null && d.to <= lim.lateMax ? " There is an exception: " + lim.lateNote + "." : ""));
+      if (lim.earliest != null && d.from < lim.earliest) out.problems.push(DAY_NAMES[i] + ": starting before " + clockLabel(lim.earliest) + " is not allowed at " + a + ".");
+      if (latest != null && d.to > latest) out.problems.push(DAY_NAMES[i] + ": the end time is past the usual limit of " + clockLabel(latest) + " at " + a + "." + (lim.lateNote && lim.lateMax != null && d.to <= lim.lateMax ? " There is an exception: " + lim.lateNote + "." : ""));
     });
     var cap = inSchool ? lim.schoolWeek : lim.offWeek;
     if (cap != null && total > cap) out.problems.push("The week adds up to " + total + " hours, more than the " + cap + " hour limit " + (inSchool ? "while school is in session" : "when school is out") + " at " + a + ".");
@@ -802,7 +811,7 @@
     matches: matches, facetCounts: facetCounts, relaxOptions: relaxOptions, placeCounts: placeCounts, rank: rank, compare: compare, sortList: sortList, topPicks: topPicks, ageText: ageText,
     STATUSES: STATUSES, toISO: toISO, addDays: addDays, followUpISO: followUpISO, planSummary: planSummary,
     icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf, stateFromPlace: stateFromPlace, STATE_OF: STATE_OF, permitFor: permitFor, hoursCheck: hoursCheck, paycheck: paycheck, PERMIT_STATES: PERMIT_STATES, CITIES: CITIES, AREAS: AREAS, PLACE_ALIASES: PLACE_ALIASES, PICK_GROUPS: PICK_GROUPS, STATES: STATES, placeRegions: placeRegions, placeLabel: placeLabel, hubsOfPlace: hubsOfPlace,
-    gradePhrase: gradePhrase, blanksLeft: blanksLeft, linkContacts: linkContacts, whoToAskHtml: whoToAskHtml
+    gradePhrase: gradePhrase, blanksLeft: blanksLeft, linkContacts: linkContacts, whoToAskHtml: whoToAskHtml, clockLabel: clockLabel
   };
   return api;
 });
