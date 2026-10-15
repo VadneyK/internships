@@ -21,3 +21,9 @@ test("while the fixed Show bar is up, scrolled-to focus stays above it (WCAG 2.2
   const block = css.slice(at, css.indexOf("\n}", at));
   assert.match(block, /html:has\(body\.has-showbar\) \{ scroll-padding-bottom: calc\(5\.5rem \+ env\(safe-area-inset-bottom, 0px\)\); \}/);
 });
+
+test("an opened area tile is not drawn like the chosen tile: plain fill, thick border, chevron (WCAG 1.4.1)", () => {
+  assert.match(css, /\.tile\[aria-expanded="true"\] \{ border-width: 4px; padding: calc\(\.55rem - 2px\) calc\(1rem - 2px\); \}/);
+  assert.match(css, /\.tile\[aria-expanded="true"\]::after \{ content: " \\25BE"; \}/);
+  assert.doesNotMatch(css, /\.tile\[aria-expanded="true"\] \{[^}]*--tag-bg/);
+});

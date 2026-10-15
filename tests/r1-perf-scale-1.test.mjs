@@ -133,7 +133,8 @@ const LIMITS = {
   // 2026-10-15: callout contrast and find skip link (PENDING PERSON APPROVAL).  limit 52600 to 53300.
   // 2026-10-15: build-time tiles and notes so pickers keep their space (CLS) (PENDING PERSON APPROVAL).  limit 53300 to 53400.
   // 2026-10-15: target size, hero glow, focus above the Show bar (PENDING PERSON APPROVAL).  limit 53400 to 53800.
-  stylesheet: 53800,
+  // 2026-10-15: opened tile style (PENDING PERSON APPROVAL).  limit 53800 to 54000.
+  stylesheet: 54000,
 };
 
 const LITE = "data/entries-lite.json";

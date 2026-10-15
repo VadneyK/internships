@@ -619,7 +619,10 @@ main, main a, code { overflow-wrap: break-word; }
 .tile .n { font-weight: 500; opacity: .7; margin-left: .3rem; }
 .tp-sub { border-left: 4px solid var(--edge); padding-left: .8rem; display: grid; gap: .4rem; }
 .tp-sub[hidden] { display: none; }
-.tile[aria-expanded="true"] { background: var(--tag-bg); color: var(--tag-fg); border-width: 4px; padding: calc(.55rem - 2px) calc(1rem - 2px); } /* thick border still shows when forced colors drop the fill */
+/* An opened group ("now pick one in Texas") is not a choice: 2026-10-15 it keeps the plain fill, a thick border (which also
+   shows in forced colors) and a chevron, so it no longer looks like the chosen tile (persona round 10, low vision). */
+.tile[aria-expanded="true"] { border-width: 4px; padding: calc(.55rem - 2px) calc(1rem - 2px); }
+.tile[aria-expanded="true"]::after { content: " \25BE"; }
 .tp-sub .tp-cap { font-size: .85rem; font-weight: 700; color: var(--ink-2); margin: 0; }
 
 /* Answer facts: a label over a short answer, in a grid of small panels (rides, state rules, paycheck rules) */
