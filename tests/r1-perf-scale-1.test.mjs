@@ -130,7 +130,8 @@ const LIMITS = {
   // 2026-10-14: tap-to-call numbers on the parents permit table (PENDING PERSON APPROVAL).  limit 52100 to 52300.
   // 2026-10-14: phone tables drop the 34rem floor; rules hours table stacks (PENDING PERSON APPROVAL).  limit 52300 to 52400.
   // 2026-10-15: phone header folds before scripts, tables stack, clockLabel (PENDING PERSON APPROVAL).  limit 52400 to 52600.
-  stylesheet: 52600,
+  // 2026-10-15: callout contrast and find skip link (PENDING PERSON APPROVAL).  limit 52600 to 53300.
+  stylesheet: 53300,
 };
 
 const LITE = "data/entries-lite.json";

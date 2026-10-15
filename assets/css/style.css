@@ -120,6 +120,10 @@ a { color: var(--orange-text); text-underline-offset: 3px; text-decoration-thick
 :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
 .skip { position: absolute; left: -999px; top: 0; background: var(--tag-bg); color: var(--tag-fg); padding: .6rem 1rem; z-index: 100; }
 .skip:focus { left: 8px; top: 8px; }
+/* 2026-10-15 (keyboard users at 200% zoom): a skip link that shows where it sits, only when focused. Find has about 90 filter
+   stops before the results; this one is the first stop after the header. */
+.skip-here { position: absolute; left: -999px; }
+.skip-here:focus { position: static; display: inline-block; margin-bottom: .75rem; background: var(--tag-bg); color: var(--tag-fg); padding: .6rem 1rem; }
 .wrap { width: 100%; max-width: 72rem; margin-inline: auto; padding-left: max(1rem, env(safe-area-inset-left, 0px)); padding-right: max(1rem, env(safe-area-inset-right, 0px)); }
 @media (min-width: 48rem) { .wrap { padding-left: max(1.5rem, env(safe-area-inset-left, 0px)); padding-right: max(1.5rem, env(safe-area-inset-right, 0px)); } }
 main { flex: 1; }
@@ -517,6 +521,10 @@ tr:last-child th { border-bottom: 0; }
 }
 
 .callout:not(.plain):not(.warn):not(.bad) a { color: #151515; }
+/* 2026-10-15: the yellow callout keeps dark text in both themes, so its muted text keeps the light theme's muted ink
+   (dark mode gave light gray on yellow, 1.22:1; #4a4743 on the yellow is about 6.4:1). */
+.callout:not(.plain):not(.warn):not(.bad) { --ink-2: #4a4743; }
+@media (prefers-contrast: more) { .callout:not(.plain):not(.warn):not(.bad) { --ink-2: #151515; } }
 @media (hover: hover) { .callout:not(.plain):not(.warn):not(.bad) a:hover { color: #151515; text-decoration-thickness: 3px; } }
 /* ux9-callout-btn: buttons inside the yellow callout keep their own text colour (the link rule above made them dark on dark in dark mode). */
 .callout:not(.plain):not(.warn):not(.bad) a.btn.alt { color: var(--ink); }
