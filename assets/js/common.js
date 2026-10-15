@@ -440,7 +440,12 @@
         li.addEventListener("click", function () { setPlace(r.i); });
         list.appendChild(li);
       });
-      note.textContent = !t || res.length ? "" : sel.options.length < 2 ? (ps.failed ? "The places could not load. Use the Programs page instead." : "The places are still loading. Try again in a moment.") : "No place called “" + t + "”. Try a state, or pick a part of the country below.";
+      note.textContent = !t || res.length ? "" : sel.options.length < 2 ? (ps.failed ? "The places could not load. Use the Programs page instead." : "The places are still loading. Try again in a moment.") : "No place called “" + t + "” yet. Pick its state below, or ";
+      /* A town we do not list as a place (Fresno, Houston) may still be named on cards: offer a search for it. */
+      if (t && !res.length && sel.options.length > 1) {
+        var sa = document.createElement("a"); sa.href = "find.html?q=" + encodeURIComponent(t); sa.textContent = "search programs for “" + t + "”";
+        note.appendChild(sa); note.appendChild(document.createTextNode("."));
+      }
       note.hidden = !note.textContent;
       if (note.hidden) q.removeAttribute("aria-describedby"); else q.setAttribute("aria-describedby", base + "None");
       if (res.length) showAct(0); else openList(false);
