@@ -18,7 +18,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 // Floor = line percent measured on 2026-10-10, rounded down, minus 2 points.
 // lib.js has its own, stricter floor below (LIB_FLOOR), so it is not in this table.
 export const LIB_FLOOR = 99; // same line floor the old lib-coverage job passed to --test-coverage-lines
-export const LIB_BRANCH_FLOOR = 97; // same branch floor the old lib-coverage job passed to --test-coverage-branches
+export const LIB_BRANCH_FLOOR = 98; // 2026-10-15: raised from 97 after the mutation-round tests (measured 99.36 in CI run of 84f905b)
 
 export const FLOORS = {
   "calendar.js": 98,
@@ -200,9 +200,9 @@ test("dumps in sub folders are read and merged", () => {
   }
 });
 
-test("lib.js has a line floor of 99 and a branch floor of 97", () => {
+test("lib.js has a line floor of 99 and a branch floor of 98", () => {
   assert.equal(LIB_FLOOR, 99);
-  assert.equal(LIB_BRANCH_FLOOR, 97);
+  assert.equal(LIB_BRANCH_FLOOR, 98);
 });
 
 test("branch percent counts block ranges and merges them across dumps", () => {

@@ -127,7 +127,7 @@ class WorkflowTests(unittest.TestCase):
 
     def test_coverage_job_also_holds_the_lib_branch_floor(self):
         floor = read_workflow_test_floor()
-        self.assertIn("export const LIB_BRANCH_FLOOR = 97;", floor)
+        self.assertIn("export const LIB_BRANCH_FLOOR = 98;", floor)  # 2026-10-15: 97 to 98
         self.assertIn("is under the floor ${LIB_BRANCH_FLOOR}", floor)
         ci = read_workflow("ci.yml")
         self.assertIn("COVERAGE_DIR=coverage-v8", ci)
