@@ -36,6 +36,12 @@ NOT_A_LIMIT = re.compile(r"boys (?:&|and) girls|not (?:just|only) for (?:girls|b
 LIMIT = re.compile(r"\bresidents?\b|\bmust live\b|\blives? in\b|\bgirls\b|\byoung women\b|\bboys\b|\byoung men\b|\bgender", re.I)
 
 
+
+def dump_one_per_line(rows, f):
+    """A compact JSON array with one record per line (2026-10-15). A card edit then changes only its own line, so a
+    line-based diff (and the commit secret scanner, which reads added lines) sees just that card, not every record."""
+    f.write("[\n" + ",\n".join(json.dumps(r, ensure_ascii=False, separators=(",", ":")) for r in rows) + "\n]")
+
 def is_limited(d):
     text = " ".join(str(d.get(k) or "") for k in ("who_can_apply", "what_you_do", "name"))
     return bool(LIMIT.search(NOT_A_LIMIT.sub("", text)))
@@ -130,7 +136,10 @@ def write_chunks(lite, detail):
         idx = [i for i, c in enumerate(lite) if test(c)]
         for folder, rows in (("lite", lite), ("detail", detail)):
             with open(os.path.join(OUT_DIR, folder, slug + ".json"), "w", encoding="utf-8") as f:
-                json.dump([rows[i] for i in idx], f, ensure_ascii=False, separators=(",", ":"))
+                if folder == "lite":
+                    dump_one_per_line([rows[i] for i in idx], f)
+                else:
+                    json.dump([rows[i] for i in idx], f, ensure_ascii=False, separators=(",", ":"))
                 f.write("\n")
 
 
@@ -154,7 +163,7 @@ def main():
         f.write("\n")
     lite = [{k: v for k, v in d.items() if k not in LITE_DROP} for d in programs]
     with open(os.path.join(OUT_DIR, "entries-lite.json"), "w", encoding="utf-8") as f:
-        json.dump(lite, f, ensure_ascii=False, separators=(",", ":"))
+        dump_one_per_line(lite, f)
         f.write("\n")
     core = [{k: d[k] for k in CORE_KEYS if k in d} for d in programs]
     with open(os.path.join(OUT_DIR, "entries-core.json"), "w", encoding="utf-8") as f:

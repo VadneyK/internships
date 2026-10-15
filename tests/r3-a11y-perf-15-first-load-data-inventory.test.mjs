@@ -23,7 +23,8 @@ export const TABLE = {
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you find.html limit 2378800 to 2383200.
   // 2026-10-14 gaps wave: 89 cards for Alameda, Tri-Valley, Contra Costa and Orange County (2,608 programs) find.html limit 2383200 to 2467100.
   // 2026-10-14 gaps wave plus two Fremont cards read in a real browser (2,610 programs) find.html limit 2467100 to 2468900.
-  "find.html": { paths: ["data/entries-lite.json"], ceiling: 2468900, reason: "Find filters every program, so it needs the whole lite file" },
+  // 2026-10-15: lite files one record per line (PENDING PERSON APPROVAL). find.html limit 2468900 to 2471500.
+  "find.html": { paths: ["data/entries-lite.json"], ceiling: 2471500, reason: "Find filters every program, so it needs the whole lite file" },
   "calendar.html": { paths: ["data/calendar.json", "data/entries-cal.json"], ceiling: 150000, reason: "Calendar draws deadline cards from the small calendar file (only the programs it lists) plus its own small file" },
   "younger.html": { paths: ["data/entries-core.json", "data/younger.json"], ceiling: 1100000, reason: "Ages 12 to 14 reads the core file and its own small file; headroom up to the card file size" },
   // Raised from 130000 to 145000 on 2026-10-12: the employer list grew to 147 entries (about 136 KB, one entry per line, about 30 KB gzipped).

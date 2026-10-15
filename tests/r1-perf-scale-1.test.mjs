@@ -59,7 +59,9 @@ const LIMITS = {
     // 2026-10-14 gaps wave: 89 cards for Alameda, Tri-Valley, Contra Costa and Orange County (2,608 programs) data/entries-lite.json gzip 496800 to 514200.
     // 2026-10-14 gaps wave plus two Fremont cards read in a real browser (2,610 programs) data/entries-lite.json raw 2467100 to 2468900.
     // 2026-10-14 gaps wave plus two Fremont cards read in a real browser (2,610 programs) data/entries-lite.json gzip 514200 to 514600.
-    "data/entries-lite.json": { raw: 2468900, gzip: 514600 },
+    // 2026-10-15: lite files one record per line (PENDING PERSON APPROVAL). data/entries-lite.json raw 2468900 to 2471500.
+    // 2026-10-15: lite files one record per line (PENDING PERSON APPROVAL). data/entries-lite.json gzip 514600 to 514700.
+    "data/entries-lite.json": { raw: 2471500, gzip: 514700 },
     // Raised on 2026-10-11 for ticket p7-regions-1: entries-core.json is 368,169 bytes (36,864 gzipped). Raw from 320000 to 375000, gzip from 32000 to 37500.
     // PENDING PERSON APPROVAL: same as entries.json above. Do not raise again without a person's recorded sign-off.
     // Raised again on 2026-10-12 for the 178 more cards: entries-core.json is 400,279 bytes (41,089 gzipped). Raw from 375000 to 420000, gzip from 37500 to 43000. PENDING PERSON APPROVAL, as above.
@@ -228,7 +230,7 @@ test("mutation: a lite file at 2,300,000 bytes is reported, and only lite is rep
   const fake = { ...repoSizes, [LITE]: { bytes: big, gzip: repoSizes[LITE].gzip } };
   const problems = budgetProblems(fake, programCount);
   assert.deepEqual(problems, [
-    `${LITE} is ${big} bytes, over the limit of 2468900 bytes`, // 2026-10-13: +61 city cards (2,409 programs); was 2223100
+    `${LITE} is ${big} bytes, over the limit of 2471500 bytes`, // 2026-10-13: +61 city cards (2,409 programs); was 2223100
     `${LITE} is ${Math.round(big / programCount)} bytes per program (${big} bytes for ${programCount} programs), over the limit of 1300 bytes per program`,
   ]);
 });

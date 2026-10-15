@@ -29,7 +29,8 @@ const PAGES = {
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you find.html limit 2378800 to 2383200.
   // 2026-10-14 gaps wave: 89 cards for Alameda, Tri-Valley, Contra Costa and Orange County (2,608 programs) find.html limit 2383200 to 2467100.
   // 2026-10-14 gaps wave plus two Fremont cards read in a real browser (2,610 programs) find.html limit 2467100 to 2468900.
-  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2468900 },
+  // 2026-10-15: lite files one record per line (PENDING PERSON APPROVAL). find.html limit 2468900 to 2471500.
+  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2471500 },
   "calendar.html": { allowed: ["calendar.json", "entries-cal.json"], ceiling: 150000 },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. insights.html ceiling 697700 to 716100.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. insights.html limit 716100 to 736500.
