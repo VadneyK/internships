@@ -34,7 +34,7 @@ export const FLOORS = {
   "parents.js": 98,
   "paycheck.js": 98,
   "permit.js": 98,
-  "playbook.js": 86,
+  "playbook.js": 98, // 2026-10-15: raised from 86 after tests/playbook-coverage.test.mjs (measured 100)
   "ready.js": 98,
   "resume.js": 98,
   "safety.js": 98,
