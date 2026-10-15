@@ -9,3 +9,6 @@ coverage-v8/
 coverage-page-scripts.txt
 reports/
 .stryker-tmp/
+# Census Gazetteer downloads for tools/geo/geocode.py (see tools/geo/README.md); never committed
+tools/geo/raw/
+tools/geo/check-*.json

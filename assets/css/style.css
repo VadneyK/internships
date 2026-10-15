@@ -730,3 +730,30 @@ details + #hClose { margin-top: 1.5rem; }
   html:has(body.has-showbar) { scroll-padding-bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px)); }
   body.has-showbar .toast { bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px)); }
 }
+/* Map page: theme tokens only; motion is off under reduced motion */
+.field > .lbl { font-weight: 700; font-size: .95rem; }
+.mzoom .chip { font-size: .85rem; padding: .3rem .7rem; }
+.mapbox { background: var(--surface); border: 3px solid var(--edge); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+.mapbox:empty, .mapbox svg { aspect-ratio: 975 / 610; }
+.mapbox svg { display: block; width: 100%; height: auto; cursor: pointer; touch-action: manipulation; }
+.mapbox [hidden] { display: none; }
+.mapbox :not(text) { vector-effect: non-scaling-stroke; }
+.mapbox .nation { fill: none; stroke: var(--ink-2); stroke-width: 1.5; opacity: .45; }
+.mapbox .st { fill: color-mix(in srgb, var(--ink-2) 16%, var(--surface)); stroke: var(--surface); }
+.mapbox .bc { fill: var(--paper); stroke: var(--ink-2); stroke-dasharray: 4 3; }
+.mapbox .dot { fill: var(--orange); fill-opacity: .85; stroke: var(--surface); transition: opacity .3s; }
+.mapbox .dot.off { fill: var(--ink-2); opacity: .3; }
+.mapbox .dot.sel { fill-opacity: 1; stroke: var(--ink); stroke-width: 2; }
+.mapbox .ring { fill: none; stroke: var(--orange); stroke-width: 2; transform-box: fill-box; transform-origin: center; }
+.map-anim .ring.pulse { animation: mpulse 1.6s ease-out infinite; }
+@keyframes mpulse { to { opacity: 0; transform: scale(2.2); } }
+.mapbox text { fill: var(--ink-2); stroke: var(--surface); paint-order: stroke; font-weight: 700; pointer-events: none; }
+.mapbox .bcl { stroke: none; }
+.mapbox .mlabel { fill: var(--ink); font-weight: 800; }
+.mpanel-top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem; }
+.mlist { list-style: none; padding: 0; margin: .6rem 0 0; display: grid; gap: .6rem; overflow-wrap: anywhere; }
+.mstate { padding: .2rem 1rem; margin-top: .6rem; box-shadow: none; }
+.mstate summary { font-weight: 700; min-height: 2.75rem; display: flex; align-items: center; gap: .5rem; }
+.mstate .n { font-weight: 500; color: var(--ink-2); }
+.mstate h3 { font-size: 1.05rem; margin: 1rem 0 0; }
+.mstate > div { padding-bottom: .8rem; }

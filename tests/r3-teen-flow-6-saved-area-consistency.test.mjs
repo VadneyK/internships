@@ -35,6 +35,7 @@ const PAGES = [
 const QUIET = {
   "find.html": "Programs is where findprefs is written and read; it has its own tests (find.dom.test, p5-find-1)",
   "index.html": "Home reads it for its own picker, covered by p5-home-1; it has no state or age to carry on",
+  "map.html": "the Map page starts on the whole map with no filters; its place box finds map cities, not saved areas (tests/map.dom.test.mjs)",
   "about.html": "no picker", "contribute.html": "no picker", "handout.html": "static page, no picker", "insights.html": "no area picker",
   "languages.html": "its places are languages, not saved areas", "leaders.html": "no picker",
   "playbook.html": "no area picker", "resume.html": "no area picker", "rules.html": "no saved-area picker", "share.html": "no picker", "states.html": "no picker", "404.html": "error page",

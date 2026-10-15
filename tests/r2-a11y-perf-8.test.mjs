@@ -14,9 +14,10 @@ const PAGES = fs.readdirSync(ROOT).filter((f) => f.endsWith(".html")).sort();
 const CSS = fs.readFileSync(path.join(ROOT, "assets/css/style.css"), "utf8").replace(/\/\*[\s\S]*?\*\//g, "");
 
 // The link targets in the Quick links column, in order, taken from src/_layout.html before this change.
-// The ticket said 13, but the old line held 14 links separated by 13 line breaks. All 14 are kept so no link is lost. The 15th, safety.html (Safe at work), was added with the Safe at work page. The 16th, parents.html (For parents), was added with the For parents page. The 17th, share.html (Share this guide), was added with the Share page.
+// The ticket said 13, but the old line held 14 links separated by 13 line breaks. All 14 are kept so no link is lost. The 15th, safety.html (Safe at work), was added with the Safe at work page. The 16th, parents.html (For parents), was added with the For parents page. The 17th, share.html (Share this guide), was added with the Share page. The 18th, map.html (Programs on a map), was added with the Map page on 2026-10-15.
 const QUICK_HREFS = [
   "find.html",
+  "map.html",
   "playbook.html",
   "resume.html",
   "ready.html",

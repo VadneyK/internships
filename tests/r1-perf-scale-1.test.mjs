@@ -90,7 +90,8 @@ const LIMITS = {
   // 2026-10-14: ready.html 37700 to 37800 for the footer line that sends teens to a parent or youth leader instead of GitHub (every page; ready.html 37736 bytes).
   // 2026-10-15: safety.html 55500 to 55700 and ready.html 37800 to 38000 for the head script that folds the phone menu before
   // common.js runs (about 170 bytes on every page; Lighthouse CLS 0.17 to 0 on phones). safety.html 55674, ready.html 37911 bytes. PENDING PERSON APPROVAL.
-  pageLimits: { "safety.html": 55700, "ready.html": 38000 },
+  // 2026-10-15: safety.html 55700 to 55800 for the Programs on a map footer link (about 50 bytes on every page; safety.html 55734 bytes). PENDING PERSON APPROVAL.
+  pageLimits: { "safety.html": 55800, "ready.html": 38000 },
   // Raised from 40000 to 46000 on 2026-10-10: lib.js grew to 41715 bytes for the live chip counts, empty-state options, top picks and the cost-tier sort. Gzipped it is about 11 KB. The other scripts are all under 40000.
   // Raised again from 46000 to 48000 on 2026-10-10 for the whole-state Where choices (the state list, its group lists and the state place lookup). lib.js is 47189 bytes.
   // Raised from 48000 to 49500 on 2026-10-11 for the under-14 note and the search-cache fix in find.js. find.js is 49389 bytes.
@@ -136,8 +137,13 @@ const LIMITS = {
   // 2026-10-15: opened tile style (PENDING PERSON APPROVAL).  limit 53800 to 54000.
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL).  limit 54000 to 54700.
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL).  limit 54700 to 54800.
+<<<<<<< HEAD
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL).  limit 54800 to 55100.
   stylesheet: 55100,
+=======
+  // 2026-10-15: the Map page rules (about 2,100 bytes on every page) (PENDING PERSON APPROVAL).  limit 54800 to 57000, reset by the ceiling tool if needed.
+  stylesheet: 57000,
+>>>>>>> c5b9299 (Add a Map page: every city with a program, on a map of the US and Vancouver, BC)
 };
 
 const LITE = "data/entries-lite.json";

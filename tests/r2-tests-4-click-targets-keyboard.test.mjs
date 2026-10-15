@@ -15,6 +15,7 @@ const pages = fs.readdirSync(ROOT).filter((f) => f.endsWith(".html") && f !== "4
 // Elements allowed to be click targets without keyboard support. Selector, reason. Keep this short.
 const ALLOW = [
   ["#pOut", "Delegate on the permit answer card. It only handles clicks on the real a[href] jump link inside it; the card itself is not a control."],
+  ["#mapBox svg", "The map picture is hidden from screen readers on purpose. Every city on it is in the list under it and in the typed place box, which work from the keyboard (tests/map.dom.test.mjs)."],
 ];
 
 const ROLES = new Set(["button", "link", "tab", "option", "menuitem"]);

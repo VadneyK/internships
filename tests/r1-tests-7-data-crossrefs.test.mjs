@@ -52,6 +52,8 @@ const RULES = [
   [/^state-wages\.json$/, /^\.states\[\]\.id$/, "skip: these are all 50 states and DC, checked by tests/p7-wages-1.test.mjs"],
   [/^state-wages\.json$/, /^\.states$/, "skip: container, its rows are checked"],
   [/^younger\.json$/, /^\.states$/, "statePairs"],
+  [/^map\.json$/, /^\.(points|bc)\[\]\.ids$/, "program"],
+  [/^geo-overrides\.json$/, /^\.(byId\.[a-z0-9-]+|byCity\..+)\.state$/, "skip: a two-letter postal code (CA, BC) the geocoder uses, not a permit finder state; map.json ids are checked by tests/r3-tests-8-map-data.test.mjs"],
 ];
 
 const found = []; // { file, path, kind, value }

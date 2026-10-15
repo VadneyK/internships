@@ -1,0 +1,23 @@
+Where the Map page points come from
+
+City points in data/map.json (made by tools/geo/geocode.py and tools/build_map.mjs)
+
+1. US cities, towns, counties and ZIP code areas: US Census Bureau Gazetteer Files, 2026 edition.
+   https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/
+   Files used: 2026_Gaz_place_national, 2026_Gaz_cousubs_national, 2026_Gaz_counties_national,
+   2026_Gaz_zcta_national and 2026_Gaz_state_national. Each point is the internal point (INTPTLAT, INTPTLONG)
+   the Census Bureau lists for that place. These files are works of the United States government and are
+   in the public domain in the United States. The raw files are not kept in this repository; see
+   tools/geo/README.md for how to download them.
+
+2. British Columbia cities: the Canadian Geographical Names Database, Natural Resources Canada.
+   Each point and its source link is in data/geo-overrides.json (manualPoints).
+   Contains information licensed under the Open Government Licence - Canada:
+   https://open.canada.ca/en/open-government-licence-canada
+   (licence named on the download page,
+   https://natural-resources.canada.ca/earth-sciences/geography/download-geographical-names-data/9245)
+
+A dot shows the city named on a program's card, not the program's exact address. Every hand fix the
+geocoder uses is in data/geo-overrides.json with its reason.
+
+Map lines in assets/img/us-states.svg: see licenses/us-atlas-ISC.txt.

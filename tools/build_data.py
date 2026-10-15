@@ -8,6 +8,7 @@
   data/entries-cal.json  same card keys and order, only the programs named in data/calendar.json (the Calendar page)
   data/entries-stats.json  same ids and order, only the keys the Numbers page counts with
   data/entries-home.json  same ids and order, only the keys the Home picker reads
+  data/entries-map.json  same ids and order, only the keys the Map page reads (name, org and what the age, pay and open filters test)
   data/entries-detail.json  same ids and order, only id plus the long text (who_can_apply, how_to_apply, notes) a program has, read when a card is opened
   data/lite/<group>.json  the lite cards of one Where group (see PICK_GROUPS in assets/js/lib.js), same card shape and id order as entries-lite.json;
                           data/lite/shared.json holds the online and national cards every place can see
@@ -58,6 +59,10 @@ HOME_KEYS = (
     "status", "deadline_iso", "opens_iso", "regions", "verified",
 )
 SOON_ONLY_KEYS = ("name", "org", "city", "url")
+# Only the keys map.js reads: name and org for the city panel and the list, plus what L.matches and L.effStatus test for the
+# age, Paid or stipend, and Open now or soon filters and the status tag, and regions for the Bay Area and Southern California
+# zoom buttons. The rows are the lite rows with the other keys left out.
+MAP_KEYS = ("id", "name", "org", "paid_type", "min_age", "max_age", "status", "deadline_iso", "opens_iso", "regions")
 DETAIL_KEYS = ("who_can_apply", "how_to_apply", "notes", "duration", "pay_detail")
 CSV_COLUMNS = [
     "id", "name", "org", "city", "regions", "type", "fields", "min_age", "max_age", "grades", "paid_type", "pay_detail",
@@ -183,6 +188,11 @@ def main():
              and (k not in SOON_ONLY_KEYS or d.get("deadline_confidence") == "confirmed-2026-27")} for d in home_src]
     with open(os.path.join(OUT_DIR, "entries-home.json"), "w", encoding="utf-8") as f:
         json.dump(home, f, ensure_ascii=False, separators=(",", ":"))
+        f.write("\n")
+    # A key whose value is null is left out, as in the stats file.
+    map_rows = [{k: d[k] for k in MAP_KEYS if d.get(k) is not None} for d in programs]
+    with open(os.path.join(OUT_DIR, "entries-map.json"), "w", encoding="utf-8") as f:
+        json.dump(map_rows, f, ensure_ascii=False, separators=(",", ":"))
         f.write("\n")
     detail = [{"id": d["id"], **{k: d[k] for k in DETAIL_KEYS if k in d}} for d in programs]
     with open(os.path.join(OUT_DIR, "entries-detail.json"), "w", encoding="utf-8") as f:

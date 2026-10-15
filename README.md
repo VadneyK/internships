@@ -22,6 +22,7 @@ Each page is a plain HTML file in the repo root. The source for each one is in [
 | `index.html` | The home page, a free guide for high schoolers in the US and Vancouver, BC. |
 | `find.html` | Search paid youth programs, internships, research, volunteer spots and shadowing that we could verify for teens. |
 | `calendar.html` | Pick a month, a place and your age to see which teen programs take applications then. |
+| `map.html` | A map with a dot for each city named on a program card. Tap a dot to see its programs, or find the cities near you. A full list by state and city sits under the map. |
 | `insights.html` | Charts about the program list: what is open now, how your age changes your options, and where the paid work is. |
 | `younger.html` | What a 12 to 14 year old can do for money in four states, safety training for sitters, and how to get ready for a first job at 14. |
 | `ready.html` | A checklist for your first job: a work permit at school, which papers to bring, how pay works, and rides to work. |
@@ -85,4 +86,4 @@ The look borrows the orange, yellow and black of the Ignition NorCal 2026 flyer.
 
 ## License
 
-Code: [MIT](LICENSE). Program data and written guides: [CC BY 4.0](LICENSE-DATA.md). Fonts: Archivo and DM Sans under the [SIL Open Font License 1.1](licenses/fonts-OFL.txt), Permanent Marker under the [Apache License 2.0](licenses/font-PermanentMarker-Apache-2.0.txt).
+Code: [MIT](LICENSE). Program data and written guides: [CC BY 4.0](LICENSE-DATA.md). Fonts: Archivo and DM Sans under the [SIL Open Font License 1.1](licenses/fonts-OFL.txt), Permanent Marker under the [Apache License 2.0](licenses/font-PermanentMarker-Apache-2.0.txt). Map: state lines from us-atlas under the [ISC license](licenses/us-atlas-ISC.txt), city points from the US Census Bureau Gazetteer files and the Canadian Geographical Names Database ([notes](licenses/map-data-sources.txt)).

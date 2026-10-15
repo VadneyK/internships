@@ -61,7 +61,10 @@ const isOutside = (v) => v != null && /^\s*(?:[a-z][a-z0-9+.-]*:|\/\/)/i.test(v)
 const allowedUrl = (v) => ALLOW_URL_PREFIXES.some((a) => v.trim().startsWith(a.prefix));
 
 // A data path must be relative, under data/, free of "..", and an existing file.
+// One picture file is allowed too: the Map page fetches its own map drawing (2026-10-15) to put dots on it.
+const FETCHED_PICTURES = ["assets/img/us-states.svg"];
 function checkDataPath(p) {
+  if (FETCHED_PICTURES.includes(p) && fs.existsSync(path.join(ROOT, p))) return { ok: true, path: p };
   if (!p.startsWith("data/")) return { ok: false, why: `"${p}" is not a relative data/ path` };
   if (p.includes("..") || p.includes("://") || p.startsWith("//")) return { ok: false, why: `"${p}" escapes data/` };
   if (!fs.existsSync(path.join(ROOT, p))) return { ok: false, why: `"${p}" does not exist` };

@@ -83,6 +83,7 @@ python3 -m http.server 8000      # then open http://localhost:8000
 | `assets/js/*.js` | One small script per page |
 | `assets/css/style.css` | All styles, built on color and type tokens at the top |
 | `assets/qr/*.svg` | QR codes for the share page. Made by `tools/make_qr.py`. Commit them. See the section below. |
+| `data/map.json`, `data/geo-overrides.json`, `tools/geo/`, `tools/build_map.mjs` | The Map page. `tools/geo/geocode.py` finds a point for the city named on each card (US Census Bureau Gazetteer files, which you download, see `tools/geo/README.md`), using the hand fixes in `data/geo-overrides.json`, and writes `tools/geo/points.json`. `node tools/build_map.mjs` turns that into `data/map.json`. A new card fails `tests/r3-tests-8-map-data.test.mjs` until both are run again. |
 | `tools/build.py`, `tools/build_data.py`, `tools/validate.py`, `tools/proglib.py` | Build tools. `build.py` makes the pages from `src/`. `build_data.py` makes the generated data. `validate.py` checks every program file. `proglib.py` holds the helpers they share. |
 | `tools/linkcheck.py` | Checks every program link and writes a Markdown report. The links workflow runs it every Monday. |
 | `tools/freshness.py` | Lists programs that need a re-read, as a Markdown checklist. The freshness workflow runs it on the first of each month. |

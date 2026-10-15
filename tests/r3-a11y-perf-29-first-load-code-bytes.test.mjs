@@ -21,6 +21,8 @@ const PICKER_CALLS = /\b(?:G|TIG)\.(?:tilePicker|autoTiles)\b/;
 // Ceilings: bytes on disk for each page's script and stylesheet files, about 5% over today's total (rounded up to 100 bytes).
 // Raised on 2026-10-12 for ticket r3-a11y-perf-35: the body min-height 100dvh line in style.css adds 22 bytes, so every page that loads style.css has its ceiling raised by 22 bytes and nothing else.
 const BUDGET = {
+  // 2026-10-15: new Map page (map.html): lib.js, common.js and map.js; set after the rebase by the ceiling tool.
+  "map.html": { ceiling: 188100, reason: "lib.js, common.js and map.js" },
   // 2026-10-15 state places cover every region in the state, Elgin label: pages over set to the measured size rounded up to 100.
   // 2026-10-15 persona round 10 content: pages over set to the measured size rounded up to 100.
   // 2026-10-14 jobs.js shows a state's own hours rule for 12 and 13 (California) and links the Bay Area ride table: jobs.html set to the measured size rounded up to 100.
