@@ -21,8 +21,10 @@ test("placeRegions returns a copy: changing it does not change the CITIES table"
 
 test("placeRegions: city, state and area ids resolve to exact region lists", () => {
   assert.deepEqual(L.placeRegions("city:san-francisco"), ["san-francisco", "statewide"]);
-  assert.deepEqual(L.placeRegions("state:california"), ["statewide"]);
-  assert.deepEqual(L.placeRegions("state:ohio"), ["ohio"]);
+  // 2026-10-15: a whole state covers its state-level region first, then every city region in that state (STATE_OF order).
+  assert.deepEqual(L.placeRegions("state:california"), ["statewide", "davis", "sacramento", "yolo", "silicon-valley", "san-jose", "peninsula", "fremont", "oakland", "berkeley", "alameda", "east-bay", "san-francisco", "orange-county", "los-angeles", "inland-empire", "san-diego", "santa-barbara", "merced"]);
+  assert.deepEqual(L.placeRegions("state:ohio"), ["ohio", "columbus", "cincinnati"]);
+  assert.deepEqual(L.placeRegions("state:utah"), ["utah"]);
   // bay-area = berkeley + san-francisco + silicon-valley, each listing "statewide": it appears once, first-seen order.
   assert.deepEqual(L.placeRegions("area:bay-area"),
     ["berkeley", "oakland", "alameda", "east-bay", "statewide", "san-francisco", "silicon-valley", "san-jose", "peninsula", "fremont"]);

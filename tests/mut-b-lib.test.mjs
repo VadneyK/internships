@@ -333,7 +333,7 @@ test("placeCounts: counts each entry once per place it belongs to", () => {
     E({ regions: ["virtual"] }), E({ regions: [] }), {}
   ]);
   assert.equal(c["city:boston"], 2);       // two entries, the second counted once though it has two matching regions
-  assert.equal(c["state:massachusetts"], 1);
+  assert.equal(c["state:massachusetts"], 2); // 2026-10-15: a whole state covers its city regions too (boston)
   assert.equal(c["area:northeast"], 2);
   assert.equal(c["city:davis"], 1);        // california-wide program
   assert.equal(c["state:california"], 1);

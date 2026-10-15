@@ -13,7 +13,10 @@ test("p5-find-1: every whole-state choice maps to a real state-level region and 
   assert.equal(new Set(seen).size, seen.length);
   for (const [id, label, region] of L.STATES) {
     assert.ok(ids.has(region), region);
-    assert.deepEqual(L.placeRegions("state:" + id), [region]);
+    // 2026-10-15: the state-level region first, then every city region in the same state.
+    const pr = L.placeRegions("state:" + id);
+    assert.equal(pr[0], region);
+    assert.deepEqual(pr.slice().sort(), Object.keys(L.STATE_OF).filter((r) => L.STATE_OF[r] === L.STATE_OF[region]).sort());
     assert.equal(L.placeLabel("state:" + id), label);
   }
   for (const id of ["ohio", "indiana", "michigan", "virginia", "new-jersey", "pennsylvania", "maryland", "minnesota", "wisconsin", "washington", "texas", "massachusetts", "north-carolina", "illinois", "georgia", "new-york-state", "british-columbia"])
@@ -46,8 +49,9 @@ test("p5-find-1: Where has an All of Ohio tile in the Midwest group, and the lin
 
 const HELP = /Ask your school counselor: do we have a list of local jobs or job training for students\? Some schools call it career tech or work-based learning\./;
 
+// 2026-10-15: Utah, because All of Ohio now covers Columbus and Cincinnati and has more than 5 matches.
 test("p5-find-1: with fewer than 5 matches the counselor help sits above the results, and its button adds online programs", async () => {
-  const { document } = await loadPage("find.html?at=state:ohio&age=12&when=open"); await tick(150);
+  const { document } = await loadPage("find.html?at=state:utah&age=12&when=open"); await tick(150);
   const help = document.getElementById("townHelp"), out = document.getElementById("out");
   assert.equal(help.hidden, false);
   assert.ok(help.compareDocumentPosition(out) & 4, "help is before the results");
@@ -55,7 +59,7 @@ test("p5-find-1: with fewer than 5 matches the counselor help sits above the res
   const btn = document.getElementById("townMore");
   assert.equal(btn.textContent, "See statewide and online programs");
   btn.click(); await tick(100);
-  assert.equal(document.getElementById("place").value, "state:ohio");
+  assert.equal(document.getElementById("place").value, "state:utah");
   assert.match(document.getElementById("townHelp").textContent, /Online and national programs are included/);
   assert.equal(document.getElementById("townMore"), null);
   assert.ok(out.querySelectorAll("article.prog").length >= 2);

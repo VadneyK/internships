@@ -98,7 +98,7 @@
     ["austin", "Austin", ["austin", "texas"]],
     ["minneapolis", "Minneapolis and St. Paul", ["twin-cities", "minnesota"]],
     ["chicago", "Chicago", ["chicago", "illinois"]],
-    ["elgin", "Elgin", ["chicago", "illinois"]],
+    ["elgin", "Elgin and Chicago area programs", ["chicago", "illinois"]],
     ["urbana-champaign", "Urbana-Champaign", ["champaign", "illinois"]],
     ["madison", "Madison", ["madison", "wisconsin"]],
     ["west-lafayette", "West Lafayette", ["lafayette", "indiana"]],
@@ -150,7 +150,6 @@
     ["inland-socal", "Inland Southern California", ["pomona", "riverside"]],
     ["west-coast", "West Coast", ["davis", "berkeley", "san-francisco", "silicon-valley", "merced", "los-angeles", "irvine", "pomona", "riverside", "san-diego", "santa-barbara", "seattle", "vancouver"]],
     ["pacific-northwest", "Pacific Northwest", ["seattle", "vancouver"]],
-    ["texas", "Texas", ["austin"]],
     ["midwest", "Midwest", ["minneapolis", "chicago", "elgin", "urbana-champaign", "madison", "west-lafayette", "bloomington", "columbus", "cincinnati", "ann-arbor", "east-lansing"]],
     ["northeast", "Northeast", ["new-york-city", "new-brunswick", "philadelphia", "pittsburgh", "boston"]],
     ["dc-area", "DC area", ["college-park", "fairfax"]],
@@ -162,7 +161,7 @@
   var PICK_GROUPS = [
     ["California", ["bay-area"], ["davis", "berkeley", "san-francisco", "silicon-valley", "merced", "los-angeles", "irvine", "pomona", "riverside", "san-diego", "santa-barbara"]],
     ["Pacific Northwest", ["pacific-northwest"], ["seattle", "vancouver"]],
-    ["Texas", ["texas"], ["austin", "el-paso"]],
+    ["Texas", [], ["austin", "el-paso"]],
     ["Midwest", ["midwest"], ["minneapolis", "chicago", "elgin", "urbana-champaign", "madison", "west-lafayette", "bloomington", "columbus", "cincinnati", "ann-arbor", "east-lansing", "detroit"]],
     ["Northeast", ["northeast"], ["new-york-city", "new-brunswick", "philadelphia", "pittsburgh", "boston"]],
     ["South and DC area", ["southeast", "dc-area"], ["atlanta", "raleigh-chapel-hill", "charlottesville", "blacksburg", "college-park", "fairfax", "miami", "nashville", "louisville", "st-louis"]],
@@ -201,7 +200,12 @@
     var m = /^(city|area|state):(.+)$/.exec(place || ""), out = null;
     function city(id) { for (var i = 0; i < CITIES.length; i++) if (CITIES[i][0] === id) return CITIES[i]; return null; }
     if (m && m[1] === "city" && city(m[2])) out = CITIES[CITIES.indexOf(city(m[2]))][2].slice();
-    if (m && m[1] === "state") for (var q = 0; q < STATES.length; q++) if (STATES[q][0] === m[2]) out = [STATES[q][2]];
+    /* A whole state covers its state-level region and every city region in that state (2026-10-15: "All of California" had shown only its statewide programs). */
+    if (m && m[1] === "state") for (var q = 0; q < STATES.length; q++) if (STATES[q][0] === m[2]) {
+      out = [STATES[q][2]];
+      var code = STATE_OF[STATES[q][2]];
+      if (code) Object.keys(STATE_OF).forEach(function (r) { if (STATE_OF[r] === code && out.indexOf(r) < 0) out.push(r); });
+    }
     if (m && m[1] === "area") {
       for (var a = 0; a < AREAS.length; a++) if (AREAS[a][0] === m[2]) {
         out = []; AREAS[a][2].forEach(function (cid) { var c = city(cid); if (c) c[2].forEach(function (r) { if (out.indexOf(r) < 0) out.push(r); }); });

@@ -55,7 +55,9 @@ test("choosing each new big city returns the same programs as its whole state", 
   const now = Date.now();
   for (const [id, , state] of CITY_STATE) {
     const byCity = ENTRIES.filter((e) => L.matches(e, { place: "city:" + id }, now)).map((e) => e.id).sort();
-    const byState = ENTRIES.filter((e) => L.matches(e, { place: "state:" + state }, now)).map((e) => e.id).sort();
+    // 2026-10-15: a whole state now also covers city regions (Austin in Texas), so compare with the state-level region only.
+    const own = L.STATES.find((x) => x[0] === state)[2];
+    const byState = ENTRIES.filter((e) => (e.regions || []).includes(own)).map((e) => e.id).sort();
     assert.ok(byCity.length > 0, "no programs for " + id);
     assert.deepEqual(byCity, byState, id + " should return the same programs as " + state);
   }
@@ -64,6 +66,7 @@ test("choosing each new big city returns the same programs as its whole state", 
 test("the new big cities are counted in the place counts", () => {
   const counts = L.placeCounts(ENTRIES);
   for (const [id, , state] of CITY_STATE) {
-    assert.equal(counts["city:" + id], counts["state:" + state], id + " count should equal " + state);
+    const own = L.STATES.find((x) => x[0] === state)[2]; // 2026-10-15: the state-level region, not the whole state
+    assert.equal(counts["city:" + id], ENTRIES.filter((e) => (e.regions || []).includes(own)).length, id + " count should equal " + state);
   }
 });

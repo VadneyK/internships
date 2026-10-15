@@ -110,7 +110,7 @@ test("stateFromPlace: every city gives a two-letter state code", () => {
 
 test("stateFromPlace: an area inside one state gives its code, an area across states gives empty", () => {
   assert.equal(L.stateFromPlace("area:bay-area"), "ca");
-  assert.equal(L.stateFromPlace("area:texas"), "tx");
+  assert.equal(L.stateFromPlace("state:texas"), "tx"); // 2026-10-15: the Texas area was removed; All of Texas is the state choice
   assert.equal(L.stateFromPlace("area:midwest"), "", "midwest spans several states");
   assert.equal(L.stateFromPlace("area:west-coast"), "", "west coast spans several states");
   for (const p of AREA_PLACES) {
