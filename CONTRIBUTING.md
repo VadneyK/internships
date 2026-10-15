@@ -130,7 +130,7 @@ python3 -m venv v && v/bin/pip install segno && v/bin/python tools/make_qr.py
    3. Rebuild the data and pages (`python3 tools/build_data.py`, then `python3 tools/build.py`), then fail if a page or a main data file (`entries.json`, `entries.csv`, `meta.json`) is out of date.
    4. Dash scan, named "No em dashes or en dashes in text": fail if an em dash or en dash is in the text.
 
-   The `js` job runs the JavaScript tests as six parallel shards, each one `node --test --test-concurrency=2 --test-shard=${{ matrix.shard }}/6 tests/*.test.mjs`.
+   The `js` job runs the JavaScript tests as six parallel shards, each one `node --test --test-concurrency=2 $(node tools/shard.mjs ${{ matrix.shard }} 6)`, where `tools/shard.mjs` splits the test files by how long each takes. To run one shard locally, use `node --test --test-concurrency=2 $(node tools/shard.mjs 2 6)` (change the 2).
 
    The `check` job is the one required status check. It declares `needs: [python, js]` and fails unless the `python` job and all six `js` shards succeeded.
 

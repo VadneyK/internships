@@ -28,7 +28,7 @@ ISSUE_WRITERS = ("dates.yml", "freshness.yml", "lighthouse.yml", "links.yml")
 CI_COMMANDS = (
     "python3 tools/validate.py",
     "python3 -m unittest discover -s tests",
-    "node --test --test-concurrency=2 --test-shard=${{ matrix.shard }}/6 tests/*.test.mjs",
+    "node --test --test-concurrency=2 $(node tools/shard.mjs ${{ matrix.shard }} 6)",
     "python3 tools/build_data.py",
     "python3 tools/build.py",
 )
@@ -212,9 +212,10 @@ class WorkflowPolicyTests(unittest.TestCase):
 
     def test_ci_node_suite_runs_only_as_six_shards_in_the_required_job(self):
         # 2026-10-14: four shards to six. The slowest of four took 6 to 9 minutes and set the wall time.
+        # 2026-10-15: weight-balanced shards (tools/shard.mjs)
         text = read_workflow("ci.yml")
         self.assertEqual(
-            text.count("node --test --test-concurrency=2 --test-shard=${{ matrix.shard }}/6 tests/*.test.mjs"), 1
+            text.count("node --test --test-concurrency=2 $(node tools/shard.mjs ${{ matrix.shard }} 6)"), 1
         )
         self.assertEqual(len(re.findall(r"shard: \[1, 2, 3, 4, 5, 6\]", text)), 1)
         self.assertRegex(text, r"(?m)^    needs: \[python, js\]$")
