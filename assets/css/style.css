@@ -221,7 +221,8 @@ main [id], .prog { scroll-margin-top: 5rem; }
 .breadcrumb li { display: inline-flex; align-items: center; margin: 0; }
 .breadcrumb a { display: inline-flex; align-items: center; min-height: 2.75rem; }
 /* Checkboxes: the browser default is about 13 px. Make them a 1.25rem tap target, and give the label that wraps one a 2.75rem row. */
-input[type="checkbox"] { width: 1.25rem; height: 1.25rem; flex: none; accent-color: var(--orange); }
+/* 24 px (WCAG 2.2 target size minimum), 2026-10-15 */
+input[type="checkbox"] { width: 1.5rem; height: 1.5rem; flex: none; accent-color: var(--orange); }
 label:has(> input[type="checkbox"]) { min-height: 2.75rem; }
 .breadcrumb li + li::before { content: ""; display: inline-block; flex: none; width: .4em; height: .4em; margin: 0 .6rem 0 .35rem; border-top: 2px solid currentColor; border-right: 2px solid currentColor; transform: rotate(45deg); }
 .chip { font: inherit; font-size: .92rem; font-weight: 600; color: var(--ink); background: var(--surface); border: 2px solid var(--edge); border-radius: 999px; padding: .38rem .8rem; cursor: pointer; min-height: 2.25rem; }
@@ -262,7 +263,8 @@ label:has(> input[type="checkbox"]) { min-height: 2.75rem; }
 .hero h1 { margin-bottom: .2em; }
 .hero h1 .a { display: block; font-size: .55em; letter-spacing: .02em; }
 .hero h1 .b { display: block; color: var(--orange); }
-.hero .lede { text-shadow: 0 0 .6rem var(--paper), 0 0 1.2rem var(--paper); }
+/* #coverage too (2026-10-15): at mid widths in dark mode it sat bare on the yellow splash */
+.hero .lede, .hero #coverage { text-shadow: 0 0 .6rem var(--paper), 0 0 1.2rem var(--paper); }
 .hero .cta { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.5rem; }
 .stats { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; margin-top: 1.6rem; }
 .stat { background: var(--surface); border: 3px solid var(--edge); border-radius: 8px; padding: .5rem .8rem; box-shadow: var(--shadow-sm); }
@@ -712,5 +714,7 @@ details + #hClose { margin-top: 1.5rem; }
   .showbar[hidden], .showbar.off { display: none; }
   .showbar .btn { width: 100%; justify-content: center; min-height: 3rem; }
   body.has-showbar { padding-bottom: calc(4.75rem + env(safe-area-inset-bottom, 0px)); }
+  /* Focus moved by Tab or a jump stays above the fixed Show bar (WCAG 2.2 SC 2.4.11), 2026-10-15 */
+  html:has(body.has-showbar) { scroll-padding-bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px)); }
   body.has-showbar .toast { bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px)); }
 }
