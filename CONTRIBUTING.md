@@ -91,7 +91,9 @@ python3 -m http.server 8000      # then open http://localhost:8000
 | `tools/hygiene.py` | A read-only checklist of soft data problems. It never fails CI. |
 | `tools/bench-matches.mjs` | Speed numbers for search, sort and loading. Run it before and after a change to compare. |
 | `tests/` | Python and JavaScript tests. See [docs/TESTING.md](docs/TESTING.md). |
-| `.github/workflows/` | CI, weekly link check, monthly refresh list |
+| `.github/workflows/` | CI and deploy (`ci.yml`), weekly link check, monthly refresh list, daily date check, weekly Lighthouse check, weekly mutation test, CodeQL |
+| `stryker.config.json`, `lighthouserc.json` | Settings for the weekly mutation test of `lib.js` and the weekly Lighthouse check. See [docs/TESTING.md](docs/TESTING.md) and [docs/MAINTAINING.md](docs/MAINTAINING.md). |
+| `.well-known/security.txt` | How to report a security problem. It has an expiry date. See [docs/MAINTAINING.md](docs/MAINTAINING.md), "security.txt". |
 | `docs/` | Method, maintenance guide, roadmap, classroom lesson plan, [decision records](docs/adr/0001-record-decisions.md) and the [main-is-red runbook](docs/RUNBOOK.md) |
 
 ### Share page and QR codes
@@ -113,6 +115,7 @@ python3 -m venv v && v/bin/pip install segno && v/bin/python tools/make_qr.py
 - **No frameworks and no build step for the browser code.** Plain HTML, CSS and JavaScript so any student can read it.
 - **The 404 page only works under `/internships/`.** `tools/build.py` root-anchors its links and assets to `/internships/`, because GitHub Pages shows that page at any deep address. On a fork or a custom domain, change that prefix in `tools/build.py` (and `BASE`), then rebuild.
 - **Logic goes in `lib.js` with a test.** Page scripts only talk to the page.
+- **Tables must work on a phone.** No table keeps a wide minimum width on a phone. A table with more than three columns gets `class="stackt"` so each row stacks. See "Phone layout" in [docs/MAINTAINING.md](docs/MAINTAINING.md).
 - **Accessibility is not optional.** Real buttons and labels, visible focus, color contrast of 4.5 to 1 for text, works at 400 px wide and at 200% zoom.
 - **No third-party requests.** No analytics, no CDNs, no tracking pixels. Fonts and images are served from this repo.
 - **Escape everything you put into HTML** with `TIG.esc()`. Program text comes from files that anyone can propose.
@@ -129,7 +132,9 @@ python3 -m venv v && v/bin/pip install segno && v/bin/python tools/make_qr.py
 
    The `js` job runs the JavaScript tests as six parallel shards, each one `node --test --test-concurrency=2 --test-shard=${{ matrix.shard }}/6 tests/*.test.mjs`.
 
-   The `check` job is the one required status check. It declares `needs: [python, js]` and fails unless the `python` job and all four `js` shards succeeded.
+   The `check` job is the one required status check. It declares `needs: [python, js]` and fails unless the `python` job and all six `js` shards succeeded.
+
+   Two more jobs run after that. The `coverage` job reads the coverage files the shards wrote and checks the coverage floors. It is not part of `check`. The `deploy` job publishes the site. It `needs: [check]` and runs only on a push to `main`, so a pull request never publishes, and a red build never reaches visitors. After it publishes, it opens every page and the main data files and `security.txt` on the live site, and fails if one does not answer 200. See [docs/RUNBOOK.md](docs/RUNBOOK.md), "How the site is published".
 2. A maintainer reads your change and may leave comments. This is how everyone learns. It is not a grade.
 3. When it is merged, GitHub Pages updates the site within a few minutes and your name appears in the history.
 

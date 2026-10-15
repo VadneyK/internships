@@ -3,7 +3,7 @@
 Status: Accepted (2026-10-13)
 
 ## Context
-Students help run the project, so any of them should be able to read it. `CONTRIBUTING.md` says "No frameworks and no build step for the browser code." The site is served by GitHub Pages from the `main` branch (`docs/MAINTAINING.md`, "Releasing"), which does no build.
+Students help run the project, so any of them should be able to read it. `CONTRIBUTING.md` says "No frameworks and no build step for the browser code." The site is served by GitHub Pages. Since 2026-10-13 the `deploy` job in `.github/workflows/ci.yml` uploads the committed files after CI passes (`docs/MAINTAINING.md`, "Releasing"). It copies files and does not build anything.
 
 ## Decision
 - Plain HTML, CSS and JavaScript. No framework and no bundler in the browser.
@@ -13,7 +13,7 @@ Students help run the project, so any of them should be able to read it. `CONTRI
 - Logic goes in `assets/js/lib.js` with a test. Page scripts only talk to the page.
 
 ## Consequences
-- The site works on GitHub Pages with no build step, and a visitor's browser runs the same files a student can read.
+- The site works on GitHub Pages with no build step (the deploy job only copies files), and a visitor's browser runs the same files a student can read.
 - A contributor must run the build tools and commit the output, or CI fails.
 - Never edit a generated file by hand. Edit the source and rebuild.
 - Without a framework we write small helpers ourselves, such as `TIG.esc()` for escaping text.

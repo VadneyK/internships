@@ -3,11 +3,11 @@
 Use this page when the CI badge on `main` is red, a bot opens an issue, or you are about to add a lot of programs. The usual cause is one of three things below. Find the failing step in the run first, then jump to the matching section.
 
 ## First, find what failed
-1. Open the red run in the Actions tab and read the first failing step. CI runs, in order: validate, Python tests, JavaScript tests, rebuild and compare, dash scan (`CONTRIBUTING.md`, "What happens after you open a pull request").
+1. Open the red run in the Actions tab and read the first failing step. CI has a `python` job (validate, Python tests, rebuild and compare, dash scan), a `js` job in six shards, the `check` gate, a `coverage` job, and on `main` a `deploy` job (`CONTRIBUTING.md`, "What happens after you open a pull request"). A `js` shard name tells you which slice of the test files failed.
 2. Copy the failing test name. Test messages say what to change.
 3. Reproduce it on your computer with the same command CI used (`python3 -m unittest discover -s tests -v` or `node --test tests/*.test.mjs`). Use the Node version in `.nvmrc`.
 4. Do not weaken or delete a test to get green. Fix the cause, or change the pinned number on purpose with a reason (see below).
-5. GitHub Pages publishes `main` whether or not CI passes (`docs/MAINTAINING.md`, "Releasing"). A red `main` can already be live, so fix it the same day.
+5. A red `main` does not publish. The `deploy` job waits for the `check` gate (see "How the site is published" below), so the live site stays on its last good version. Fix `main` the same day so new work can go out.
 
 ## A date has passed
 Signs: a test about dates or `opens_iso` and `deadline_iso` fails, or the daily bot opens an issue labeled `dates` (`.github/workflows/dates.yml`).
@@ -65,3 +65,9 @@ After fixing, run the build commands and tests above, then comment on the issue 
 ## How the site is published
 
 Since 2026-10-13 GitHub Pages publishes from the `deploy` job in `.github/workflows/ci.yml`, not straight from the branch. The job runs only on a push to main and only after the `check` gate passed, so a red build never reaches visitors. If main is red, the live site keeps its last good version; fix main (or rerun a flaky job) and the next green run publishes. To publish by hand, rerun the failed jobs of the latest main run in the Actions tab.
+
+The `deploy` job has three steps that can fail on their own:
+
+- **Collect the site files.** It copies the repo into `_site` and leaves out tests, tools, `src`, CI files and local files. It then checks that `index.html`, `404.html`, `data/programs` and `.well-known/security.txt` are there. If it fails here, a file the site needs was moved or deleted.
+- **Upload.** `upload-pages-artifact` skips dot folders unless it is told not to, so the upload sets `include-hidden-files: true`. Without it, `security.txt` would not ship. Keep that line.
+- **Smoke test.** After the deploy it asks the live site for every `*.html` page, `data/entries-lite.json`, `data/entries-home.json`, `data/meta.json`, `robots.txt`, `sitemap.xml` and `.well-known/security.txt`. It tries each one up to 6 times, 10 seconds apart, and fails if any does not answer 200. A new page is covered on its own. A new file the pages need on first load is not, so add it to the list in `ci.yml` if it matters.

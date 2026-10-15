@@ -80,7 +80,24 @@ The shared submit listener in `assets/js/common.js` calls `preventDefault` only 
 
 ## security.txt
 
-`.well-known/security.txt` expires inside one year of when it was written (now 2027-09-30T00:00:00Z). Renew it in September 2027 and keep `Expires` less than 366 days ahead (a test checks this); `tests/r3-tests-9-security-txt.test.mjs` fails once the date has passed. `.nojekyll` must stay so Pages serves the dot folder. Limitation: this is a project Pages site, so the file is served at `https://vadneyk.github.io/internships/.well-known/security.txt`, not at the host root that RFC 9116 section 3 expects (there is no `vadneyk.github.io` user site repo). The `Canonical:` line declares the real location; keep it in sync if the site ever moves.
+`.well-known/security.txt` expires inside one year of when it was written (now 2027-09-30T00:00:00Z). Renew it in September 2027 and keep `Expires` less than 366 days ahead of today (a test checks this); `tests/r3-tests-9-security-txt.test.mjs` fails once the date has passed. The source file is `.well-known/security.txt` in the repo root. The `deploy` job needs `include-hidden-files: true` to publish it, copies it into the site, fails if it is missing, and the smoke test asks the live site for it. `.nojekyll` must stay so Pages serves the dot folder. Limitation: this is a project Pages site, so the file is served at `https://vadneyk.github.io/internships/.well-known/security.txt`, not at the host root that RFC 9116 section 3 expects (there is no `vadneyk.github.io` user site repo). The `Canonical:` line declares the real location; keep it in sync if the site ever moves.
+
+## Phone layout
+Most teens use a phone, so the phone rules are easy to break. Three things to know.
+
+**The phone nav relies on `html.js`.** The head script in `src/_layout.html` adds the class `js` to `<html>` before the page paints. Under 40rem, `style.css` has the rule `html.js .top:not(.open) .nav { display: none; }`, so the nav starts folded and the header does not jump when `common.js` adds the Menu button. Without it, the full nav shows first and then folds, which Lighthouse counts as a layout shift. If no script builds the menu, a failsafe in the same head script removes the `js` class after 3 seconds (when there is no `.top.menu-js`), and the links show. Do not remove either half. Keep the head script small: it is inline, so it is hashed into the Content-Security-Policy (see "Content-Security-Policy" above).
+
+**Wide tables stack on a phone.** At 40rem and under, no table keeps the 34rem minimum width. A table with more than three columns would still be cut off, so give it `class="stackt"`. On a phone, `.stackt` turns each row into a block, hides the header row, and shows the column name above each cell. To use it:
+- Put `class="stackt"` on the `<table>`.
+- Start each cell (`td`) with `<span class="tk" aria-hidden="true">Column name</span>`. `.tk` is hidden on wide screens. The first cell of a row is a `<th scope="row">` and needs no label.
+- Stacked rows are no longer laid out as a table, so write the table roles out: `role="table"` on the table, `role="rowgroup"` on `thead` and `tbody`, `role="row"` on each `tr`, and `role="columnheader"`, `role="rowheader"` and `role="cell"` on the cells.
+- Keep the `tablewrap` around it (it is the keyboard-reachable scroll box).
+
+Three tables use it now: the permit table on `parents.html` (`assets/js/parents.js`), "Hours by age" on `rules.html` (written in `src/rules.html`), and the state grid on `younger.html` (`assets/js/younger.js`). For a table that a script builds, copy how those scripts write the `.tk` span and the roles.
+
+**Pickers ship with their tiles.** `tools/build.py` writes the tap tiles for the permit, jobs and calendar pickers into the page as `<div class="tp" data-pre aria-hidden="true">` (function `pre_tiles`). `G.tilePicker` in `assets/js/common.js` finds that block next to the `<select>`, keeps it, and fills it with the real tiles when the options arrive, so the picker holds its space and the page does not shift. `build.py` also writes a few other pieces the scripts used to add after load (the calendar note and month buttons, the jobs note, the default Your picks chips on `find.html`, the share buttons on `younger.html`). If you change the options a script adds, change the matching labels and order in `build.py`, then rebuild. The shipped tiles are inert until the options arrive, so if a data file fails to load, they stay inert. This is a known trade-off.
+
+Phone changes add bytes. The ceilings raised for this work carry a "PENDING PERSON APPROVAL" note in the size tests (see `docs/TESTING.md`, "First-load weight ceilings"). Do not raise them again without an approval.
 
 ## Handling an issue
 1. Read the official page yourself. Do not trust the report alone.
@@ -88,7 +105,7 @@ The shared submit listener in `assets/js/common.js` calls `preventDefault` only 
 3. Run the build commands in `CONTRIBUTING.md`, commit, open a pull request that says `Fixes #<issue>`.
 
 ## Releasing
-The site is served by GitHub Pages from the `main` branch. Merging a pull request publishes it within a few minutes. Generated files (`data/entries.*`,
+The site is served by GitHub Pages, and the Pages source is "GitHub Actions" (set 2026-10-13). Merging a pull request to `main` runs CI. When the `check` job passes, the `deploy` job in `.github/workflows/ci.yml` publishes the site within a few minutes. If CI is red, nothing is published and the live site keeps its last good version. The job uploads the site files with `include-hidden-files: true` (so `.well-known/security.txt` ships), leaves out tests, tools, `src`, CI files, `package.json`, `stryker.config.json` and other local files, and then checks the live pages (see `docs/RUNBOOK.md`, "How the site is published"). Generated files (`data/entries.*`,
 `data/meta.json`, `*.html`) are committed, and CI fails if they are stale.
 
 ## Mentoring student contributors
