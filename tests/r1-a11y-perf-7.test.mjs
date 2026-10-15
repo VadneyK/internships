@@ -48,14 +48,15 @@ test("index.html: the summary is empty when nothing is picked, and updates on ea
   const hubOption = [...document.querySelectorAll("#pHub option")].find((o) => o.value);
   assert.ok(hubOption, "no place option to pick");
   type(window, document.getElementById("pHub"), hubOption.value);
-  await tick();
+  // 2026-10-15: wait for the summary to settle instead of one tick; under a busy machine the per-program files land later.
+  await waitFor(() => /^(\d+ programs? match|No programs match yet\.)/.test(status.textContent.trim()), { timeout: 30000 });
   const afterPlace = status.textContent.trim();
   const morePlace = document.getElementById("matchMore").textContent.match(/See all (\d+) matches/);
   assert.ok(morePlace, "expected the See all count after choosing a place");
   assert.ok(afterPlace.startsWith(Number(morePlace[1]) + " program") || afterPlace.startsWith("No programs match yet."), `summary was "${afterPlace}"`);
 
   type(window, document.getElementById("pField"), "health");
-  await tick();
+  await waitFor(() => /^(\d+ programs? match|No programs match yet\.)/.test(status.textContent.trim()), { timeout: 30000 });
   const second = status.textContent.trim();
   const more2 = document.getElementById("matchMore").textContent.match(/See all (\d+) matches/);
   assert.ok(more2, "expected the See all count after a second choice");
