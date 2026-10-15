@@ -54,7 +54,7 @@ The first line counts links: ok, blocked, broken, not checked. Then the sections
 
 | Section | Meaning | What to do |
 |---|---|---|
-| Broken | The program link gave 404, 410, a DNS or certificate error, or a server error twice in a row | Read the program's official page. Fix the link, or if the program ended, remove it by the method in `docs/VERIFYING.md` |
+| Broken | The program link gave 404, 410, a DNS or certificate error, or a server error twice in a row (since 2026-10-15 an incomplete certificate chain, which browsers repair, and Microsoft Forms errors, which only scripts get, count as Blocked; spaces in a link are encoded first, as a browser does) | Read the program's official page. Fix the link, or if the program ended, remove it by the method in `docs/VERIFYING.md` |
 | Broken sources | A page listed in `sources_fetched` is gone (Thursday run) | Re-read the fact that page backed. Do not only swap the link |
 | Broken aux links | A link in a hand-edited data file is broken (Thursday run) | Fix it in that file and check the fact it supports |
 | Blocked or slow | The site refused a script, or timed out. Not a failure | Open the link in a browser. If it works, do nothing |

@@ -1,4 +1,4 @@
-// Lint config for assets/js, used only by tests/lint.test.mjs (it lives in tests/, so the deploy never ships it).
+// Lint config for assets/js, used only by tests/lint.test.mjs (it lives in tools/, so the deploy never ships it).
 // Bug classes only, no style rules: a name that is not defined, a second declaration that silently wins, dead code
 // after a return, a duplicate key, and the like. Added 2026-10-15 after a one-off pass found a function declared twice.
 import globals from "globals";

@@ -12,6 +12,9 @@ Classification:
   ok       2xx or 3xx
   blocked  any other 4xx (403, 405, 429, 999...) or a bot wall: the site refuses scripts, so check by hand (not a failure)
   broken   404, 410, DNS failure, certificate error, or 5xx twice in a row
+  An incomplete certificate chain ("unable to get local issuer certificate") is blocked, not broken: browsers fetch the
+  missing certificate themselves, Python does not. Hosts in BOT_WALL_HOSTS answer every script with an error, so their
+  errors are blocked too. Spaces and other unsafe characters in a link are encoded first, as a browser does.
 
 Politeness and limits:
   Each host is visited by one thread at a time, with --host-delay seconds between requests to it.
@@ -39,17 +42,33 @@ UA = "Mozilla/5.0 (compatible; TeenInternshipGuideLinkCheck/1.0; +https://github
 
 TIMEOUT = 15  # seconds per request; main() sets it from --timeout
 HOST_DOWN = ("blocked", "host not answering")
+CHAIN_INCOMPLETE = ("blocked", "certificate chain incomplete (browsers usually open it; check by hand)")
+# Hosts that answer scripts with an error (Microsoft Forms gives 503) while browsers open the form. 2026-10-15.
+BOT_WALL_HOSTS = ("forms.office.com", "forms.cloud.microsoft")
+SAFE_URL_CHARS = ":/?#[]@!$&'()*+,;=%~"
+
+
+def browser_url(url):
+    """The link as a browser sends it: spaces and other unsafe characters percent-encoded, existing escapes kept."""
+    return urllib.parse.quote(url, safe=SAFE_URL_CHARS)
 TIMEOUT_RESULT = ("blocked", "timeout")
 
 
 def fetch(url, method):
-    req = urllib.request.Request(url, method=method, headers={"User-Agent": UA, "Accept": "text/html,*/*"})
+    req = urllib.request.Request(browser_url(url), method=method, headers={"User-Agent": UA, "Accept": "text/html,*/*"})
     ctx = ssl.create_default_context()
     with urllib.request.urlopen(req, timeout=TIMEOUT, context=ctx) as r:
         return r.status
 
 
 def check(url):
+    if urllib.parse.urlsplit(url).hostname in BOT_WALL_HOSTS:
+        res = _check(url)
+        return res if res[0] == "ok" else ("blocked", "bot wall (%s)" % (res[1],))
+    return _check(url)
+
+
+def _check(url):
     last = None
     for attempt in range(2):
         for method in ("HEAD", "GET"):
@@ -67,6 +86,8 @@ def check(url):
             except (urllib.error.URLError, ssl.SSLError, TimeoutError, ConnectionError) as e:
                 reason = getattr(e, "reason", e)
                 last = str(reason)[:80]
+                if "unable to get local issuer certificate" in str(reason):
+                    return CHAIN_INCOMPLETE
                 if "timed out" in str(reason).lower():
                     return ("blocked", "timeout")
             except Exception as e:  # noqa: BLE001
