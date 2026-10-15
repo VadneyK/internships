@@ -782,7 +782,7 @@
         var e = byId[row.id];
         if (e) Object.keys(row).forEach(function (k) { if (k !== "id") e[k] = row[k]; });
       });
-      detailState = "ready"; paintBodies(); rerunList();
+      detailState = "ready"; paintBodies(); rerunList(); reJump(); holdFor(2e3);
     }).catch(function () { if (g0 === undefined || g0 === gen) { detailState = "fail"; paintBodies(); } });
   }
   /* an idle prefetch 3 seconds after the first draw, unless the person asked to save data or the connection is slow */
@@ -829,9 +829,22 @@
       return;
     }
     var el = document.getElementById("p-" + id);
-    if (el) { var det = el.querySelector("details"); if (det) det.open = true; el.scrollIntoView(); try { el.focus({ preventScroll: true }); } catch (err) { el.focus(); } }
+    if (el) { var det = el.querySelector("details"); if (det) det.open = true; el.scrollIntoView(); try { el.focus({ preventScroll: true }); } catch (err) { el.focus(); } holdJump(id); }
     if (cleared) G.toast("Filters cleared to show this program");
   }
+  /* Cards above can still grow after the jump (long text, fonts), which left the card far off screen: keep it in view as the list
+     resizes, until the person scrolls, taps or types, or 2 s after the long text is in (15 s at most) */
+  var hold = null;
+  function holdJump(id) {
+    if (hold) hold.stop();
+    var evs = ["wheel", "touchstart", "keydown", "pointerdown"], ro = window.ResizeObserver && new ResizeObserver(reJump), h = hold = { id: id };
+    h.stop = function () { evs.forEach(function (n) { removeEventListener(n, h.stop, true); }); if (ro) ro.disconnect(); clearTimeout(h.t); if (hold === h) hold = null; };
+    evs.forEach(function (n) { addEventListener(n, h.stop, true); });
+    if (ro) ro.observe($("out"));
+    holdFor(detailState === "ready" ? 2e3 : 15e3);
+  }
+  function holdFor(ms) { if (hold) { clearTimeout(hold.t); hold.t = setTimeout(hold.stop, ms); } }
+  function reJump() { var el = hold && document.getElementById("p-" + hold.id); if (el) el.scrollIntoView(); }
 
   dataP.then(function () {
     var hubCounts = {}; world.forEach(function (e) { hubOf(e).forEach(function (h) { hubCounts[h] = (hubCounts[h] || 0) + 1; }); });

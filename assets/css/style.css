@@ -741,9 +741,9 @@ details + #hClose { margin-top: 1.5rem; }
 .mapbox .nation { fill: none; stroke: var(--ink-2); stroke-width: 1.5; opacity: .45; }
 .mapbox .st { fill: color-mix(in srgb, var(--ink-2) 16%, var(--surface)); stroke: var(--surface); }
 .mapbox .bc { fill: var(--paper); stroke: var(--ink-2); stroke-dasharray: 4 3; }
-.mapbox .dot { fill: var(--orange); fill-opacity: .85; stroke: var(--surface); transition: opacity .3s; }
+.mapbox .dot { fill: var(--orange-display); stroke: var(--surface); transition: opacity .3s; }
 .mapbox .dot.off { fill: var(--ink-2); opacity: .3; }
-.mapbox .dot.sel { fill-opacity: 1; stroke: var(--ink); stroke-width: 2; }
+.mapbox .dot.sel { stroke: var(--ink); stroke-width: 2; }
 .mapbox .ring { fill: none; stroke: var(--orange); stroke-width: 2; transform-box: fill-box; transform-origin: center; }
 .map-anim .ring.pulse { animation: mpulse 1.6s ease-out infinite; }
 @keyframes mpulse { to { opacity: 0; transform: scale(2.2); } }

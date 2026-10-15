@@ -25,7 +25,7 @@ function server() {
   });
   return sp;
 }
-async function load(search, storage = {}) {
+async function load(search, storage = {}, setup = null) {
   const port = await server();
   const errors = [];
   const vc = new VirtualConsole();
@@ -33,6 +33,7 @@ async function load(search, storage = {}) {
   const dom = await JSDOM.fromURL("http://127.0.0.1:" + port + "/find.html" + search, {
     runScripts: "dangerously", resources: "usable", pretendToBeVisual: true, virtualConsole: vc,
     beforeParse(w) {
+      if (setup) setup(w);
       for (const [k, v] of Object.entries(storage)) w.localStorage.setItem(k, JSON.stringify(v));
       w.matchMedia = w.matchMedia || (() => ({ matches: false, addEventListener() {}, removeEventListener() {} }));
       w.print = () => {}; w.scrollTo = () => {};
@@ -91,5 +92,26 @@ test("unknown id: visible note with a link to the full list, no error", async ()
   assert.match(note.textContent, /no longer on the list/);
   assert.ok(note.querySelector('a[href="find.html"]'));
   assert.ok(document.querySelectorAll("article.prog").length > 0);
+  assert.deepEqual(errors, []);
+});
+
+// 2026-10-15 (map page review): in a real browser the card moved thousands of pixels away after the jump, as the cards above it grew.
+// The page keeps the card in view each time the list changes size, until the person scrolls, taps or types.
+test("a linked card far down the list is kept in view while the list grows, until the person scrolls", async () => {
+  const far = DATA[DATA.length - 1].id;
+  const { window, document, errors } = await load("#p-" + far, {}, (w) => {
+    w.ResizeObserver = class { constructor(cb) { w.__ro = this; this.cb = cb; this.on = false; } observe() { this.on = true; } disconnect() { this.on = false; } };
+  });
+  const el = document.getElementById("p-" + far);
+  assert.ok(el);
+  assert.ok(window.__ro && window.__ro.on, "the list is watched for size changes");
+  const hits = [];
+  window.HTMLElement.prototype.scrollIntoView = function () { hits.push(this.id); };
+  window.__ro.cb([]);
+  assert.deepEqual(hits, ["p-" + far]);
+  window.dispatchEvent(new window.Event("wheel"));
+  assert.equal(window.__ro.on, false, "a scroll by the person stops the hold");
+  window.__ro.cb([]);
+  assert.deepEqual(hits, ["p-" + far], "no jump after the person scrolled");
   assert.deepEqual(errors, []);
 });

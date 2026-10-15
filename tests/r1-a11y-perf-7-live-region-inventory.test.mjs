@@ -20,7 +20,7 @@ const CONTROL_OR_LINK = "a[href], button, input, select, textarea, [contentedita
 const EXPECTED = {
   "calendar.html": [{ id: "cCount", role: "aria-live=polite" }],
   // map.html: the count line under the filters, and the Near me status (asking, refused, nothing near)
-  "map.html": [{ id: "mCount", role: "aria-live=polite" }, { id: "mNearStatus", role: "status" }],
+  "map.html": [{ id: "mNearStatus", role: "status" }, { id: "mCount", role: "aria-live=polite" }],
   "find.html": [{ id: "ageUnder14Region", role: "aria-live=polite" }, { id: "countLive", role: "status" }, { id: "townHelp", role: "status" }],
   "index.html": [
     { id: "matchStatus", role: "status" },

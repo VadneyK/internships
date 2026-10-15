@@ -15,7 +15,11 @@ const SHARED_SCRIPTS = new Set(["lib.js", "common.js"]);
 
 // Ids that a script looks up but that are allowed to be missing from a page. Each entry needs a reason.
 // Empty today: the probe found no misses.
-const ALLOW = [];
+const ALLOW = [
+  // map.js measures a state's outline (#st-CA and so on) inside assets/img/us-states.svg, which it fetches and adds to the page at run time.
+  // tests/map.dom.test.mjs covers it ("a state view takes in the state's whole outline").
+  { script: "map.js", id: "st-", reason: "state outline ids come from assets/img/us-states.svg, added to the page by map.js after it loads" },
+];
 
 const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
