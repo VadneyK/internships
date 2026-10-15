@@ -258,5 +258,5 @@
     if (stStart) { stSel.value = stStart; if (stSel._tpSync) stSel._tpSync(); if (stPlace) stPlace.sync(); }
     paint();
     if (start) { sel.value = start; if (sel._tpSync) sel._tpSync(); paint(); }
-  }).catch(function () { $("jOut").innerHTML = '<p class="muted">The list could not load. Try again later.</p>'; $("jStatus").textContent = "The list could not load. Try again later."; });
+  }).catch(function () { G.dropPreTiles(); $("jOut").innerHTML = '<p class="muted">The list could not load. Try again later.</p>'; $("jStatus").textContent = "The list could not load. Try again later."; });
 })();

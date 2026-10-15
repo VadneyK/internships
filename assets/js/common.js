@@ -262,6 +262,8 @@
      so deep links, saved choices and tests that set its value keep working. A tile is an option, found by its position
      (several options can share a value). opts.groups = [{label, items:[optionIndex...]}] adds a first step of group tiles.
      opts.anyLabel keeps the empty option as a tile with that label. Call select._tpSync() after setting .value in code. */
+  /* Build-time tiles (data-pre) wait for their data. If the data never comes, remove them, so no dead buttons stay on screen. */
+  G.dropPreTiles = function () { Array.prototype.forEach.call(document.querySelectorAll(".tp[data-pre]"), function (t) { t.parentNode.removeChild(t); }); };
   G.tilePicker = function (sel, opts) {
     opts = opts || {};
     if (!sel || sel._tp) return sel && sel._tp;

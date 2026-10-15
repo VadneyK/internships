@@ -97,5 +97,5 @@
     $("months").addEventListener("click", function (ev) { var b = ev.target.closest(".chip"); if (!b) return; cur = +b.getAttribute("data-m"); paint(); });
     ["cPlace", "cAge"].forEach(function (id) { $(id).addEventListener("change", paint); });
     paint();
-  }).catch(function () { $("cCount").textContent = "The calendar could not load. Try again."; });
+  }).catch(function () { G.dropPreTiles(); $("cCount").textContent = "The calendar could not load. Try again."; });
 })();
