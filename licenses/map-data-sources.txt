@@ -21,3 +21,22 @@ A dot shows the city named on a program's card, not the program's exact address.
 geocoder uses is in data/geo-overrides.json with its reason.
 
 Map lines in assets/img/us-states.svg: see licenses/us-atlas-ISC.txt.
+
+Street map (the drag-and-zoom map on the Map page, assets/js/map-gl.js)
+
+3. Map tiles, assets/map/tiles/base.pmtiles.gz and detail.pmtiles.gz: OpenStreetMap data, © OpenStreetMap
+   contributors, through the Protomaps basemap build named in tools/geo/tiles/BUILD
+   (https://maps.protomaps.com/builds/). Cut down by tools/geo/tiles/slim.py to the layers the map draws.
+   OpenStreetMap data is available under the Open Database License 1.0:
+   https://www.openstreetmap.org/copyright and https://opendatacommons.org/licenses/odbl/1-0/
+   These two files are a derived database of OpenStreetMap and are offered under the same license. They are
+   published with the release named map-tiles-<BUILD> in this repository, and tools/geo/tiles/build.sh makes them.
+   The tiles' lowest zooms also carry Natural Earth shapes (public domain), and their layer names follow the
+   Tilezen schema (MIT, Mapzen), as the Protomaps basemap license explains:
+   https://github.com/protomaps/basemaps/blob/main/LICENSE.md
+
+4. Label letters, assets/map/fonts/: Noto Sans glyph ranges from protomaps/basemaps-assets, commit
+   028c18f713baecad011301ff7a69acc39bcc2ae7. SIL Open Font License 1.1: licenses/OFL-noto-sans.txt.
+
+5. Map drawing code: MapLibre GL JS 6.11.2 (assets/vendor/maplibre/), licenses/maplibre-gl-BSD-3.txt.
+   PMTiles 4.5.0 reader (assets/vendor/pmtiles.js), licenses/pmtiles-BSD-3.txt; it includes fflate, licenses/fflate-MIT.txt.
