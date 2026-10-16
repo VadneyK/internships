@@ -288,4 +288,8 @@ class DeploySmokeTests(unittest.TestCase):
         self.assertIn("include-hidden-files: true", block)
         for f in ("data/entries-lite.json", "data/entries-home.json", "data/meta.json", "robots.txt", "sitemap.xml", ".well-known/security.txt"):
             self.assertIn(f, block)
+        # 2026-10-15: the live data bytes must equal the built ones (sha256), not just answer 200.
+        self.assertIn('want=$(sha256sum "_site/$f"', block)
+        for f in ("data/entries-lite.json data/meta.json data/entries-home.json",):
+            self.assertIn(f, block)
         self.assertIn("exit $fail", block)

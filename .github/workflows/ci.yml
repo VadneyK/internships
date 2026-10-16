@@ -128,7 +128,7 @@ jobs:
           include-hidden-files: true
       - id: deployment
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5
-      - name: Smoke test the deployed site (every page and the main data files answer 200)
+      - name: Smoke test the deployed site (every page and the main data files answer 200, and the data matches the build)
         env:
           PAGE_URL: ${{ steps.deployment.outputs.page_url }}
         run: |
@@ -142,6 +142,16 @@ jobs:
             done
             echo "$code ${f}"
             [ "$code" = "200" ] || fail=1
+          done
+          # The live bytes must match what this run built (catches a truncated, corrupt or stale copy behind a 200).
+          for f in data/entries-lite.json data/meta.json data/entries-home.json; do
+            want=$(sha256sum "_site/$f" | cut -d' ' -f1); got=none
+            for try in 1 2 3 4 5 6; do
+              got=$(curl -s "${PAGE_URL}${f}" | sha256sum | cut -d' ' -f1)
+              [ "$got" = "$want" ] && break
+              sleep 10
+            done
+            if [ "$got" = "$want" ]; then echo "same bytes ${f}"; else echo "DIFFERENT bytes ${f}"; fail=1; fi
           done
           exit $fail
 
