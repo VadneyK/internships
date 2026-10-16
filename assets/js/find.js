@@ -49,6 +49,11 @@
     return '<p class="when"><b>Dates</b>' + G.esc(e.deadline_text || "Not posted") + G.esc(extra) + conf + "</p>";
   }
   function ageText(e) { return L.ageText(e); }
+  /* With an age picked, a card whose grades likely leave that age out says so next to the grades (lib.gradeFit). Cards that state ages are left to the age filter. */
+  function gradeTag(e) {
+    var f = L.gradeFit(e, state.age);
+    return f ? '<span class="tag warn" data-gradefit="' + f + '">' + G.esc("May be too " + f + " at " + state.age + ": check the grades") + "</span>" : "";
+  }
   function paidTag(e) {
     var t = G.PAID[e.paid_type] || "";
     var cls = e.paid_type === "paid" || e.paid_type === "stipend" ? "y" : e.paid_type === "fee-based" ? "warn" : "ghost";
@@ -111,7 +116,7 @@
     html += '<p class="org">' + G.esc(e.org || "") + (e.city ? " &middot; " + G.esc(e.city) : "") + "</p>";
     html += '<p class="what">' + G.esc(e.what_you_do || "") + "</p>";
     /* "limited": one place's residents, or girls or boys only (build_data.py). The rule itself is under "Who can apply and how". */
-    html += '<div class="row"><span class="tag ghost">' + G.esc(ageText(e)) + "</span>" + (e.limited ? '<span class="tag warn">Only some can apply: see who below</span>' : "") + "</div>";
+    html += '<div class="row"><span class="tag ghost">' + G.esc(ageText(e)) + "</span>" + gradeTag(e) + (e.limited ? '<span class="tag warn">Only some can apply: see who below</span>' : "") + "</div>";
     html += '<div data-pay>' + payHtml(e) + "</div>";
     html += deadlineLine(e);
     html += "<details><summary>Who can apply and how</summary><dl" + (detailMode() === "ready" ? "" : ' data-detail="' + detailMode() + '"') + ">" + detailBody(e);

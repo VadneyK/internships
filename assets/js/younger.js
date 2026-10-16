@@ -190,7 +190,10 @@
       var head = "<thead role=\"rowgroup\"><tr role=\"row\"><th scope=\"col\" role=\"columnheader\">What you want to do</th>" + sts.map(function (s) { return "<th scope=\"col\" role=\"columnheader\">" + G.esc(s[1]) + "</th>"; }).join("") + "</tr></thead>";
       var body = "<tbody role=\"rowgroup\">" + d.rows.map(function (r) {
         return "<tr role=\"row\"><th scope=\"row\" role=\"rowheader\">" + G.esc(r.job) + "</th>" + sts.map(function (s) {
-          var c = r.cells[s[0]]; var NS = "Not stated on the pages we read.", unk = c.t.indexOf(NS) === 0, rest = unk ? c.t.slice(NS.length).trim() : ""; return "<td role=\"cell\">" + k(s[1]) + (unk ? '<span class="tag ghost" style="white-space:normal;line-height:1.25;">' + G.esc(d.unknownChip) + "</span>" + (rest ? " " + L.linkContacts(rest) : "") : L.linkContacts(c.t)) + (c.s ? '<br><span class="small">' + a(c.s.t, c.s.u) + "</span>" : "") + "</td>";
+          var c = r.cells[s[0]]; var NS = "Not stated on the pages we read.", unk = c.t.indexOf(NS) === 0, rest = unk ? c.t.slice(NS.length).trim() : "";
+          /* An unknown cell says "ask a parent to call", so it carries the number to call (the Who to ask row's), unless its own text already has one. */
+          if (unk && d.calls[s[0]] && !/\d{3}[-. ]\d{4}/.test(rest)) rest = (rest ? rest + " " : "") + "Call " + d.calls[s[0]] + ".";
+          return "<td role=\"cell\">" + k(s[1]) + (unk ? '<span class="tag ghost" style="white-space:normal;line-height:1.25;">' + G.esc(d.unknownChip) + "</span>" + (rest ? " " + L.linkContacts(rest) : "") : L.linkContacts(c.t)) + (c.s ? '<br><span class="small">' + a(c.s.t, c.s.u) + "</span>" : "") + "</td>";
         }).join("") + "</tr>";
       }).join("") + "<tr role=\"row\"><th scope=\"row\" role=\"rowheader\">Who to ask</th>" + sts.map(function (s) { return "<td role=\"cell\">" + k(s[1]) + L.linkContacts(d.calls[s[0]]) + "</td>"; }).join("") + "</tr></tbody>";
       $("gridT").innerHTML = '<caption class="sr">What a 12 or 13 year old may do, by state</caption>' + head + body;

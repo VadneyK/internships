@@ -656,6 +656,43 @@
     return sortList(keep, "best", now, p).slice(0, n == null ? 3 : Math.max(0, n));
   }
 
+  /* The school grades a program takes, as this school year's grades ({ lo, hi }, 1 to 12), read from the free text in e.grades.
+     "Rising" or "entering" grades are next year's, so they count one lower. Asides in parentheses are ignored.
+     Returns null when the text is not plain enough to read: ages, GPAs, college, graduates, "not", or several parts. */
+  var CLASS_WORDS = [[/\bfreshm[ae]n\b/, 9], [/\bsophomores?\b/, 10], [/\bjuniors?\b/, 11], [/\bseniors?\b/, 12]];
+  function gradeSpan(raw) {
+    var t = String(raw == null ? "" : raw).toLowerCase().replace(/\([^)]*\)/g, " ");
+    if (!t.trim() || /[;:]|\bages?\b|gpa|\d\.\d|college|graduat|adult|\bnot\b|\bany\b/.test(t)) return null;
+    t = t.replace(/\bjunior high\b/g, " grades 7 to 8 ");
+    var g = [], m, re = /\b(\d{1,2})(?:st|nd|rd|th)?\b/g;
+    while ((m = re.exec(t))) { var n = +m[1]; if (n < 1 || n > 12) return null; g.push(n); }
+    var nums = g.length, cls = false;
+    CLASS_WORDS.forEach(function (w) { if (w[0].test(t)) { g.push(w[1]); cls = true; } });
+    if (/kindergarten|\bk\b/.test(t)) g.push(1);
+    var mid = /\bmiddle school\b/.test(t), high = /\bhigh school\b/.test(t);
+    if (mid) g.push(6, 8);
+    /* "High school" alone means 9 to 12. Next to grade numbers or class words it only names the school, unless middle school is named too. */
+    if (high && !cls && (!nums || mid)) g.push(9, 12);
+    if (!g.length) return null;
+    var lo = Math.min.apply(null, g), hi = Math.max.apply(null, g);
+    /* "9 and up", "at least 8th grade", "finished 8th grade" and "8th grade through high school" set a floor, not a top. */
+    if (/\band (up|older|above)\b|\bor (higher|older|above|more)\b|\+|at least|equal to|minimum|finished|completed|through[^.]*high school/.test(t)) hi = 12;
+    if (/\b(rising|entering|incoming)\b/.test(t) && !/\bcurrent(ly)?\b|\bwhen (you )?apply|\bat (the )?(time of )?application/.test(t)) { lo -= 1; hi -= 1; }
+    return { lo: lo, hi: hi };
+  }
+  /* Whether a program's grades likely leave out a teen of this age: "young", "old" or "". Most teens are in grade (age - 5)
+     this school year, so "young" means the lowest grade is above that and "old" means the highest is two or more below it.
+     A card that states its own ages is left to the age filter, so the two never disagree on one card. */
+  function gradeFit(e, age) {
+    var a = +age;
+    if (!e || !e.grades || !(a >= 12 && a <= 18) || e.min_age != null || e.max_age != null) return "";
+    var s = gradeSpan(e.grades), g = a - 5;
+    if (!s) return "";
+    if (s.lo > g) return "young";
+    if (s.hi < g - 1) return "old";
+    return "";
+  }
+
   function ageText(e) {
     var bits = [];
     if (e.min_age != null && e.max_age != null) bits.push("Ages " + e.min_age + " to " + e.max_age);
@@ -815,7 +852,7 @@
     matches: matches, facetCounts: facetCounts, relaxOptions: relaxOptions, placeCounts: placeCounts, rank: rank, compare: compare, sortList: sortList, topPicks: topPicks, ageText: ageText,
     STATUSES: STATUSES, toISO: toISO, addDays: addDays, followUpISO: followUpISO, planSummary: planSummary,
     icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf, stateFromPlace: stateFromPlace, STATE_OF: STATE_OF, permitFor: permitFor, hoursCheck: hoursCheck, paycheck: paycheck, PERMIT_STATES: PERMIT_STATES, CITIES: CITIES, AREAS: AREAS, PLACE_ALIASES: PLACE_ALIASES, PICK_GROUPS: PICK_GROUPS, STATES: STATES, placeRegions: placeRegions, placeLabel: placeLabel, hubsOfPlace: hubsOfPlace,
-    gradePhrase: gradePhrase, blanksLeft: blanksLeft, linkContacts: linkContacts, whoToAskHtml: whoToAskHtml, clockLabel: clockLabel
+    gradePhrase: gradePhrase, gradeSpan: gradeSpan, gradeFit: gradeFit, blanksLeft: blanksLeft, linkContacts: linkContacts, whoToAskHtml: whoToAskHtml, clockLabel: clockLabel
   };
   return api;
 });
