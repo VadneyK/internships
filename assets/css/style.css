@@ -131,8 +131,11 @@ main { flex: 1; }
 #main:focus { outline: none; }
 section { padding-block: 2.75rem; }
 h1, h2, h3, h4 { font-family: var(--display); font-stretch: 112%; font-weight: 900; font-style: italic; line-height: 1.02; text-transform: uppercase; letter-spacing: -.01em; margin: 0 0 .6em; text-wrap: balance; }
-h1 { font-size: clamp(2.5rem, 9vw, 5.5rem); }
-h1.display { font-size: clamp(2.2rem, 7vw, 4rem); }
+h1 { font-size: min(clamp(2.5rem, 9vw, 5.5rem), 9.8vw); }
+/* min(..., 9.8vw) on h1 and h1.display, 2026-10-15: under about 410 px the longest word (INTERNSHIPS) was wider than the column and broke inside the word.
+   Wider screens are unchanged. Headings hyphenate at a syllable if a word must still break (large text settings). */
+h1.display { font-size: min(clamp(2.2rem, 7vw, 4rem), 9.8vw); }
+h1, h2, h3 { hyphens: auto; -webkit-hyphens: auto; }
 h2 { font-size: clamp(1.8rem, 5vw, 2.9rem); }
 h3 { font-size: 1.35rem; letter-spacing: 0; }
 h4 { font-size: 1.05rem; letter-spacing: .01em; }
@@ -170,10 +173,13 @@ li { margin-bottom: .35em; }
   html.js .top:not(.open) .nav { display: none; }
   .top.menu-js.open .nav { display: flex; }
 }
+/* 320 px phones (first iPhone SE): a smaller logo mark gap and Menu padding keep the theme button on the header row. 2026-10-15 */
+@media (max-width: 21rem) { .top .brand { gap: .2rem; letter-spacing: -.01em; } .top .menu-btn { padding: 0 .4rem; } }
 /* ux9-header-footer: one header row on a phone, Menu as a 2 column grid, footer links in 2 columns */
 @media (max-width: 40rem) {
   .top .wrap { gap: .5rem clamp(.35rem, 2vw, .75rem); }
-  .brand { gap: .35rem; font-size: clamp(.8rem, 4vw, 1rem); min-width: 0; }
+  /* 3.5vw (was 4vw), 2026-10-15: at 360 px the brand, Menu and theme buttons were 2 px too wide and the theme button fell to a second row */
+  .brand { gap: .35rem; font-size: clamp(.75rem, 3.5vw, 1rem); min-width: 0; }
   .brand svg { width: clamp(1.25rem, 6vw, 1.5rem); height: clamp(1.25rem, 6vw, 1.5rem); }
   .menu-btn { padding: 0 clamp(.6rem, 3vw, 1rem); }
   .top.menu-js.open .nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; }
