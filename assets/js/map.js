@@ -267,8 +267,6 @@
     if (on) more.push(groupLink("online", plural(on, "program", "programs") + " online"));
     $("mPanelMore").innerHTML = more.length ? "Plus " + more.join(" and ") + ", in the list below." : "";
     $("mPanelMore").hidden = !more.length;
-    $("mPanelGo").innerHTML = goLinks(p);
-    $("mPanelGo").hidden = false;
     var near = pts.filter(function (q) { return q !== p && q.n > 0; }).map(function (q) { return { q: q, d: miles(p.lat, p.lon, q.lat, q.lon) }; })
       .filter(function (r) { return r.d <= 30; }).sort(function (a, b) { return a.d - b.d; }).slice(0, 6);
     $("mPanelNearList").innerHTML = near.map(function (r) { return '<button class="chip" type="button" data-i="' + pts.indexOf(r.q) + '">' + G.esc(r.q.k) + '<span class="n">' + r.q.n + "</span></button>"; }).join("");
@@ -276,14 +274,6 @@
     $("mPanelNear").hidden = !near.length;
     $("mPanel").hidden = false;
     if (how) show($("mPanelH"), how === "pick");
-  }
-  /* Bus or train directions to the city, in the reader's own maps app. Only the city name goes in the link, and nothing is
-     sent until the link is tapped; the other site then knows the city, as with any program link. */
-  function goLinks(p) {
-    var to = encodeURIComponent(p.k + (p.s === "BC" ? ", Canada" : ""));
-    return "<b>Get there by bus or train:</b> " +
-      '<a href="https://www.google.com/maps/dir/?api=1&amp;travelmode=transit&amp;destination=' + to + '" target="_blank" rel="noopener">Google Maps</a> or ' +
-      '<a href="https://maps.apple.com/?dirflg=r&amp;daddr=' + to + '" target="_blank" rel="noopener">Apple Maps</a>. They open the other app at the city, not a program&rsquo;s address.';
   }
   function groupLink(code, text) { return '<a href="#g-' + G.esc(code) + '" data-g="' + G.esc(code) + '">' + G.esc(text) + "</a>"; }
   /* Moves focus to heading h without a jump. map: the map comes to the top of the screen (under the sticky header), so a zoom is seen.
@@ -550,24 +540,34 @@
   var glWanted = glOK();
   /* the box takes the street map's height before anything draws, so the page does not jump when the street map arrives */
   var saveData = !!(navigator.connection && navigator.connection.saveData);
-  if (glWanted && !saveData) $("mapBox").classList.add("gl");
+  /* fixed text of this file, set with innerHTML only for its one link */
+  var GL_NOTE = "Drag the map to move it and use + and \u2212 to zoom. On a phone, move it with two fingers, or tap the full screen button. A number in a circle is how many programs are in the cities there; tap it to zoom in. A dot shows the city named on the program\u2019s card, not the exact address. Some programs cover a whole state, are online, or run in several places. They are in the <a href=\"#list\">list below the map</a>, which also works with a keyboard or screen reader.";
+  var svgNote = $("mNote").innerHTML;
+  /* The street map's words and its "In this view" line take their place now, before the page is drawn, so nothing
+     moves when the street map arrives. They go back only if it fails. */
+  function glLayout(on) {
+    $("mNote").innerHTML = on ? GL_NOTE : svgNote;
+    var v = $("mView");
+    v.hidden = !on; v.style.visibility = "hidden"; v.textContent = on ? "\u00a0" : "";
+  }
+  if (glWanted && !saveData) { $("mapBox").classList.add("gl"); glLayout(true); }
   /* "In this view": what the street map shows now, said once the map stops moving */
   var viewT = null;
   function viewSoon() { clearTimeout(viewT); viewT = setTimeout(viewLine, 800); }
   function viewLine() {
     if (!gl) return;
     var inV = gl.inView(), n = inV.reduce(function (a, q) { return a + q.n; }, 0), el = $("mView");
+    el.style.visibility = "";
     el.textContent = inV.length ? "In this view: " + plural(n, "program", "programs") + " in " + plural(inV.length, "place", "places") + "." : "No city with a matching program is in this view. Zoom out, or pick a place above.";
-    el.hidden = false;
   }
-  function glFail() { glWanted = false; var box = $("mapBox"); box.classList.remove("gl", "gl-on"); var el = box.querySelector(".mgl"); if (el) el.remove(); }
+  function glFail() { glWanted = false; glLayout(false); var box = $("mapBox"); box.classList.remove("gl", "gl-on"); var el = box.querySelector(".mgl"); if (el) el.remove(); }
   /* With the browser's data saver on, the street map (about 1 MB the first time) waits for a tap */
   function startGL() {
     if (!glWanted || !svg) { glFail(); return; }
     if (saveData) {
       var b = document.createElement("button");
       b.type = "button"; b.className = "btn sm alt"; b.id = "mGLGo"; b.textContent = "Load the street map (about 1 MB)";
-      b.addEventListener("click", function () { b.remove(); $("mapBox").classList.add("gl"); loadGL(); });
+      b.addEventListener("click", function () { b.remove(); $("mapBox").classList.add("gl"); glLayout(true); loadGL(); });
       $("mZoom").parentNode.insertBefore(b, $("mZoom"));
       return;
     }
@@ -581,7 +581,6 @@
       create({ el: el, root: root, anim: anim, onPick: function (i) { var p = pts[i]; if (p) openCity(p, "tap"); }, onMove: viewSoon }).then(function (api) {
         gl = api;
         box.classList.add("gl-on");
-        $("mNote").textContent = "Drag the map to move it and use + and \u2212 to zoom. On a phone, move it with two fingers, or tap the full screen button. A number in a circle is how many programs are in the cities there; tap it to zoom in. A dot shows the city named on the program\u2019s card, not the exact address. Some programs cover a whole state, are online, or run in several places. They are in the list below the map, which also works with a keyboard or screen reader.";
         $("mStreet").hidden = false;
         /* the street map can be used by keyboard (arrows and plus or minus), so it is no longer hidden from screen readers */
         box.removeAttribute("aria-hidden"); box.setAttribute("role", "region"); box.setAttribute("aria-label", "Street map");

@@ -66,6 +66,11 @@ test("with WebGL 2 the map box keeps the street map's height from the start, the
   assert.ok(d.querySelector('link[rel="stylesheet"][href="assets/vendor/maplibre/maplibre-gl.css"]'));
   assert.equal(box.getAttribute("aria-hidden"), "true", "until the street map is ready the drawn map stays hidden from screen readers");
   assert.ok(box.querySelector("svg circle.dot"), "the drawn map is there while the street map loads");
+  // the street map's note and its status line hold their space from the start, so nothing moves when it arrives (CLS)
+  assert.match(d.getElementById("mNote").textContent, /^Drag the map to move it/);
+  assert.ok(d.querySelector('#mNote a[href="#list"]'), "the note keeps its link to the list");
+  assert.equal(d.getElementById("mView").hidden, false);
+  assert.equal(d.getElementById("mView").style.visibility, "hidden");
   p.window.close();
 });
 
@@ -126,7 +131,7 @@ test("Near me moves the street map to the closest program cities, never to the r
   p.window.close();
 });
 
-test("a tap on a street map dot opens that city, with bus or train links that carry only the city name", async () => {
+test("a tap on a street map dot opens that city and rings it; Close clears the ring", async () => {
   const p = await open(), d = p.document, gl = fakeGL();
   await start(p, gl);
   const i = CITIES.findIndex((c) => c.k === "Oakland, CA");
@@ -134,14 +139,6 @@ test("a tap on a street map dot opens that city, with bus or train links that ca
   assert.equal(d.getElementById("mPanel").hidden, false);
   assert.equal(d.getElementById("mPanelH").textContent, "Oakland, CA");
   assert.deepEqual(gl.calls.filter((c) => c[0] === "select").pop(), ["select", i]);
-  const go = d.getElementById("mPanelGo");
-  assert.equal(go.hidden, false);
-  const links = [...go.querySelectorAll("a")].map((a) => a.getAttribute("href"));
-  assert.deepEqual(links, [
-    "https://www.google.com/maps/dir/?api=1&travelmode=transit&destination=Oakland%2C%20CA",
-    "https://maps.apple.com/?dirflg=r&daddr=Oakland%2C%20CA",
-  ]);
-  assert.ok([...go.querySelectorAll("a")].every((a) => a.target === "_blank" && a.rel === "noopener"));
   d.getElementById("mPanelX").click();
   assert.deepEqual(gl.calls[gl.calls.length - 1], ["select", null]);
   p.window.close();
@@ -152,7 +149,8 @@ test("after the street map stops moving, a status line says how many programs an
   const p = await open(), d = p.document, gl = fakeGL(() => two);
   await start(p, gl);
   gl.opts.onMove();
-  assert.ok(await waitFor(() => !d.getElementById("mView").hidden, { timeout: 3000 }));
+  assert.ok(await waitFor(() => /^In this view/.test(d.getElementById("mView").textContent), { timeout: 3000 }));
+  assert.equal(d.getElementById("mView").style.visibility, "", "shown once there is something to say");
   const n = two.reduce((a, c) => a + c.n, 0);
   assert.equal(d.getElementById("mView").textContent, "In this view: " + n + " programs in 2 places.");
   assert.equal(d.getElementById("mView").getAttribute("role"), "status");
@@ -167,6 +165,9 @@ test("if the street map cannot start, the drawn map stays and the box drops the 
   assert.equal(d.querySelector("#mapBox .mgl"), null);
   assert.ok(d.querySelector("#mapBox svg circle.dot"));
   assert.equal(d.getElementById("mapBox").getAttribute("aria-hidden"), "true");
+  assert.match(d.getElementById("mNote").textContent, /dashed box at the top left is Vancouver/, "the drawn map's words come back");
+  assert.ok(d.querySelector('#mNote a[href="#list"]'));
+  assert.equal(d.getElementById("mView").hidden, true);
   p.window.close();
 });
 
@@ -178,8 +179,10 @@ test("with the browser's data saver on, the street map waits for a tap on a butt
   assert.ok(b, "the button is there");
   assert.match(b.textContent, /about 1 MB/);
   assert.equal(d.querySelector('script[src="assets/vendor/pmtiles.js"]'), null, "nothing loads before the tap");
+  assert.match(d.getElementById("mNote").textContent, /dashed box/, "until the tap the note is the drawn map's");
   b.click();
   assert.ok(box.classList.contains("gl"));
+  assert.match(d.getElementById("mNote").textContent, /^Drag the map/);
   assert.ok(d.querySelector('script[src="assets/vendor/pmtiles.js"]'));
   assert.equal(d.getElementById("mGLGo"), null);
   p.window.close();

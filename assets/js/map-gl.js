@@ -48,6 +48,12 @@ function baseLayers(src, c) {
   return out;
 }
 
+/* A town the map names itself is left out where a program city of the same name has a dot (the dot carries the name),
+   so a city is not named twice a few millimeters apart */
+function townFilter(src, skip) {
+  var kinds = src === "base" ? ["locality"] : ["locality", "neighbourhood", "macrohood"];
+  return ["all", ["in", ["get", "kind"], ["literal", kinds]], ["!", ["in", NAME, ["literal", skip]]]];
+}
 /* place names: states at country zooms, then towns and neighborhoods. A name that would cover another one is left out. */
 function labelLayers(c) {
   var halo = { "text-color": c.text2, "text-halo-color": c.halo, "text-halo-width": 1.6 };
@@ -55,9 +61,9 @@ function labelLayers(c) {
     { id: "lbl-state", type: "symbol", source: "base", "source-layer": "places", minzoom: 3.5, maxzoom: 8, filter: ["==", ["get", "kind"], "region"],
       layout: { "text-field": NAME, "text-font": BOLD, "text-size": ["interpolate", ["linear"], ["zoom"], 4, 10, 7, 13], "text-transform": "uppercase", "text-letter-spacing": 0.08, "text-max-width": 7 },
       paint: { "text-color": c.text2, "text-halo-color": c.halo, "text-halo-width": 1.4, "text-opacity": 0.75 } },
-    { id: "lbl-town-base", type: "symbol", source: "base", "source-layer": "places", minzoom: 6, filter: ["==", ["get", "kind"], "locality"],
+    { id: "lbl-town-base", type: "symbol", source: "base", "source-layer": "places", minzoom: 6, filter: townFilter("base", []),
       layout: { "text-field": NAME, "text-font": FONT, "text-size": ["interpolate", ["linear"], ["zoom"], 6, 10, 12, 14], "text-max-width": 8, "symbol-sort-key": ["get", "min_zoom"] }, paint: halo },
-    { id: "lbl-town", type: "symbol", source: "detail", "source-layer": "places", minzoom: 9, filter: ["in", ["get", "kind"], ["literal", ["locality", "neighbourhood", "macrohood"]]],
+    { id: "lbl-town", type: "symbol", source: "detail", "source-layer": "places", minzoom: 9, filter: townFilter("detail", []),
       layout: { "text-field": NAME, "text-font": FONT, "text-size": ["match", ["get", "kind"], "locality", 13, 11], "text-max-width": 8, "symbol-sort-key": ["get", "min_zoom"] }, paint: halo }
   ];
 }
@@ -189,6 +195,9 @@ export function create(opts) {
     /* list: [{ i, name, lat, lon, n }] for every city; n 0 draws it faint */
     setData: function (list) {
       pts = []; list.forEach(function (p) { pts[p.i] = p; });
+      var names = list.filter(function (p) { return p.n > 0; }).map(function (p) { return p.name; }); /* a faint dot has no name of its own */
+      map.setFilter("lbl-town-base", townFilter("base", names));
+      map.setFilter("lbl-town", townFilter("detail", names));
       map.getSource("cities").setData({ type: "FeatureCollection", features: list.filter(function (p) { return p.n > 0; }).map(feature) });
       map.getSource("off").setData({ type: "FeatureCollection", features: list.filter(function (p) { return !p.n; }).map(feature) });
       paintSel();

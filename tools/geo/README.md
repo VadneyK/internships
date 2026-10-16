@@ -56,6 +56,16 @@ are not gzipped): GitHub Pages leaves a `.gz` file as it is, while it would gzip
 the byte ranges the map reads in Firefox (https://github.com/protomaps/PMTiles/issues/584). The deploy's smoke test
 checks this on the live site.
 
+### Previewing the street map on this computer
+
+`python3 -m http.server` ignores Range requests, so the street map would load whole files or fail. Use the small
+server here, which answers them as GitHub Pages does (the tiles must be in `assets/map/tiles/`, from `build.sh` or the
+release):
+
+```bash
+python3 tools/geo/tiles/rangeserve.py . 8198    # then open http://127.0.0.1:8198/map.html
+```
+
 ### Rebuilding the tiles (only after cities move far, or once a year for fresher streets)
 
 ```bash
