@@ -26,8 +26,8 @@ const PAGES = fs
   .filter((f) => f.endsWith(".html"))
   .sort();
 
-test("the layout template lists the 19 footer quick links", () => {
-  assert.equal(EXPECTED.length, 19, "expected 19 quick links, found " + EXPECTED.length);
+test("the layout template lists the 20 footer quick links", () => {
+  assert.equal(EXPECTED.length, 20, "expected 20 quick links, found " + EXPECTED.length);
 });
 
 test("built root pages exist to check", () => {
@@ -52,7 +52,7 @@ test("every built page has exactly one Quick links nav inside footer.foot", () =
   }
 });
 
-test("the footer Quick links nav holds the same 19 hrefs as before, in order", () => {
+test("the footer Quick links nav holds the same 20 hrefs as the layout, in order", () => {
   for (const f of PAGES) {
     const doc = new JSDOM(fs.readFileSync(path.join(ROOT, f), "utf8")).window.document;
     const nav = doc.querySelector('footer.foot nav[aria-label="Quick links"]');

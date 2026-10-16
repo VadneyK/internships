@@ -29,6 +29,7 @@ export const FLOORS = {
   "insights.js": 98,
   "interview.js": 96,
   "jobs.js": 98,
+  "map.js": 94, // 2026-10-15: 96.39 measured from tests/map.dom.test.mjs alone, rounded down, minus 2
   "languages.js": 98,
   "leaders.js": 98,
   "parents.js": 98,

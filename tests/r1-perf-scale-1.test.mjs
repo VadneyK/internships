@@ -90,7 +90,8 @@ const LIMITS = {
   // 2026-10-14: ready.html 37700 to 37800 for the footer line that sends teens to a parent or youth leader instead of GitHub (every page; ready.html 37736 bytes).
   // 2026-10-15: safety.html 55500 to 55700 and ready.html 37800 to 38000 for the head script that folds the phone menu before
   // common.js runs (about 170 bytes on every page; Lighthouse CLS 0.17 to 0 on phones). safety.html 55674, ready.html 37911 bytes. PENDING PERSON APPROVAL.
-  pageLimits: { "safety.html": 55700, "ready.html": 38000 },
+  // 2026-10-15: safety.html 55700 to 55800 for the Programs on a map footer link (about 50 bytes on every page; safety.html 55734 bytes). PENDING PERSON APPROVAL.
+  pageLimits: { "safety.html": 55800, "ready.html": 38000 },
   // Raised from 40000 to 46000 on 2026-10-10: lib.js grew to 41715 bytes for the live chip counts, empty-state options, top picks and the cost-tier sort. Gzipped it is about 11 KB. The other scripts are all under 40000.
   // Raised again from 46000 to 48000 on 2026-10-10 for the whole-state Where choices (the state list, its group lists and the state place lookup). lib.js is 47189 bytes.
   // Raised from 48000 to 49500 on 2026-10-11 for the under-14 note and the search-cache fix in find.js. find.js is 49389 bytes.
@@ -101,7 +102,9 @@ const LIMITS = {
   // Raised from 53400 to 59300 on 2026-10-12 for ticket diet-1: find.js picks a place's Where group files (data/lite and data/detail, ten literal URLs each way) instead of always loading the whole lite file, and falls back to the whole file when a state needs it. find.js is 59217 bytes. First-load data on the Programs page with a place chosen falls from 437 KB to 100 to 186 KB gzipped.
   // 2026-10-12: Programs filters redesign. Raised from 59300 to 64500 for the summary bar and the phone bar in find.js (64477 bytes).
   // 2026-10-14: persona round 9. Raised from 64500 to 66400 for Good fit picks that keep the QR area, the calendar link that keeps it, the "Only some can apply" tag, the fuller Copy my list text and picks that keep the pay choice (find.js 66476 bytes).
-  script: 66600,
+  // 2026-10-15: map page review. Raised from 66600 to 67600 so a #p- link (every program link on the map page) keeps its card in view while the list
+  // above it grows; reviewers saw the card land 15,000 to 37,000 px away. find.js is 67510 bytes. PENDING PERSON APPROVAL.
+  script: 67600,
   // Raised from 34000 to 35000 on 2026-10-10: the merged upgrades added a few rules (the plain facts list and the Jobs output heading) and the sheet is 34005 bytes. Not caused by the data growth.
   // Raised again from 35000 to 36000 on 2026-10-10 for the 44 pixel tap targets (details summary, checkbox, breadcrumb) and the print rule for jump chips. The sheet is 35260 bytes.
   // Raised again from 36000 to 37000 on 2026-10-10 for the prefers-contrast block, the h1.display rule, the zero-count chip rule and the print rule for buttons. The sheet is 36345 bytes.
@@ -137,7 +140,8 @@ const LIMITS = {
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL).  limit 54000 to 54700.
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL).  limit 54700 to 54800.
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL).  limit 54800 to 55100.
-  stylesheet: 55100,
+  // 2026-10-15: the Map page rules (PENDING PERSON APPROVAL).  limit 55100 to 57300.
+  stylesheet: 57300,
 };
 
 const LITE = "data/entries-lite.json";

@@ -12,7 +12,7 @@ const common = read("assets/js/common.js");
 const others = scripts.filter((f) => f !== "common.js").map((f) => [f, read("assets/js/" + f)]);
 
 // The argument a page script passes to G.loadEntries, for each file common.js can fetch.
-const BRANCH = { "entries-lite": "true", "entries-core": '"core"', "entries-stats": '"stats"', "entries-home": '"home"', "entries-cal": '"cal"', "entries-detail": '"detail"' };
+const BRANCH = { "entries-lite": "true", "entries-core": '"core"', "entries-stats": '"stats"', "entries-home": '"home"', "entries-cal": '"cal"', "entries-detail": '"detail"', "entries-map": '"map"' };
 
 test("every data/entries-*.json file is named in a G.loadEntries branch that a page script reaches", () => {
   const files = fs.readdirSync(path.join(ROOT, "data")).filter((f) => /^entries-.*\.json$/.test(f)).map((f) => f.slice(0, -5));

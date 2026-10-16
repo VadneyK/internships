@@ -16,7 +16,9 @@ const L = require("../assets/js/lib.js");
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 const loadJson = (rel) => JSON.parse(fs.readFileSync(path.join(root, rel), "utf8"));
 
-const SKIP = new Set(["entries.json", "entries.csv", "expiring-dates.json"]);
+// map.json (2026-10-15): its read date is the day tools/geo/geocode.py read the card cities, which can be after the newest card check,
+// and its ids, shape and links are checked in tests/r3-tests-8-map-data.test.mjs.
+const SKIP = new Set(["entries.json", "entries.csv", "expiring-dates.json", "map.json"]);
 const AUX = fs.readdirSync(path.join(root, "data"))
   .filter((f) => f.endsWith(".json") && !f.startsWith("entries") && !SKIP.has(f))
   .sort();

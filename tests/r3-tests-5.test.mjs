@@ -50,7 +50,8 @@ function checkLog(label, p) {
     assert.ok(r.url.startsWith(origin + "/"), `${label}: request leaves the site: ${r.url}`);
     assert.equal(r.status, 200, `${label}: ${r.url} answered ${r.status} ${r.error || ""}`);
     const path = new URL(r.url).pathname.replace(/^\//, "");
-    assert.match(path, /^data\/[^/]+\.(json|csv)$/, `${label}: unexpected request ${r.url}`);
+    // 2026-10-15: the Map page fetches its own map picture (assets/img/us-states.svg) to draw dots on it
+    assert.match(path, /^(?:data\/[^/]+\.(json|csv)|assets\/img\/us-states\.svg)$/, `${label}: unexpected request ${r.url}`);
     assert.ok(existsSync(join(ROOT, path)), `${label}: ${path} is not on disk`);
   }
 }
@@ -235,6 +236,9 @@ test("every data file is referenced by a script, a page or a tool", () => {
     ...pages,
     ...readdirSync(join(ROOT, "src")).filter((f) => f.endsWith(".html")).map((f) => `src/${f}`),
     ...readdirSync(join(ROOT, "tools")).filter((f) => f.endsWith(".py")).map((f) => `tools/${f}`),
+    // 2026-10-15: the map tools (tools/geo/geocode.py reads data/geo-overrides.json, tools/build_map.mjs writes data/map.json)
+    ...readdirSync(join(ROOT, "tools", "geo")).filter((f) => /\.(py|mjs)$/.test(f)).map((f) => `tools/geo/${f}`),
+    "tools/build_map.mjs",
   ];
   const corpus = sources.map(read).join("\n");
   const files = walk("data");

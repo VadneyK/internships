@@ -1,0 +1,6963 @@
+{
+ "read": "2026-10-15",
+ "cities": [
+  {
+   "key": "Chandler, AZ",
+   "state": "AZ",
+   "lat": 33.2828,
+   "lon": -111.8518,
+   "precision": "city",
+   "ids": [
+    "chandler-aquatics-lifeguard-jobs",
+    "chandler-banner-ocotillo-teen-volunteer",
+    "chandler-library-teen-volunteer-program"
+   ]
+  },
+  {
+   "key": "Mesa, AZ",
+   "state": "AZ",
+   "lat": 33.3994,
+   "lon": -111.716,
+   "precision": "city",
+   "ids": [
+    "mesa-aquatics-junior-lifeguard-volunteer",
+    "mesa-banner-desert-teen-volunteer",
+    "mesa-banner-heart-hospital-teen-volunteer",
+    "mesa-fire-medical-cadets-east-valley",
+    "mesa-parks-teen-leadership-training",
+    "mesa-police-cadet-post-2055"
+   ]
+  },
+  {
+   "key": "Phoenix, AZ",
+   "state": "AZ",
+   "lat": 33.5722,
+   "lon": -112.0901,
+   "precision": "city",
+   "ids": [
+    "maricopa-county-youth-workforce-services",
+    "phoenix-arizona-science-center-teen-volunteer",
+    "phoenix-azyouthforce-paid-internships",
+    "phoenix-desert-botanical-garden-teen-volunteer",
+    "phoenix-gphxul-summer-youth-employment",
+    "phoenix-honorhealth-explorers-clubs",
+    "phoenix-mim-student-volunteer-program",
+    "phoenix-parks-summer-lifeguard-pool-jobs",
+    "phoenix-police-cadet-program",
+    "phoenix-public-library-summer-teen-volunteers",
+    "phoenix-rise-summer-city-internship",
+    "phoenix-sedav-vaaki-museum-teen-volunteer",
+    "phoenix-st-marys-food-bank-volunteer",
+    "phoenix-zoo-zooteens-volunteer",
+    "valley-ymca-employee-u-teens"
+   ]
+  },
+  {
+   "key": "Scottsdale, AZ",
+   "state": "AZ",
+   "lat": 33.6843,
+   "lon": -111.8614,
+   "precision": "city",
+   "ids": [
+    "scottsdale-library-teen-volunteers",
+    "scottsdale-teen-employment-program-step"
+   ]
+  },
+  {
+   "key": "Tempe, AZ",
+   "state": "AZ",
+   "lat": 33.3884,
+   "lon": -111.9318,
+   "precision": "city",
+   "ids": [
+    "asu-access-inspire-summer-program",
+    "asu-access-rise-summer-leadership-institute",
+    "asu-jbmshp-math-science-honors-summer",
+    "asu-wp-carey-fleischer-scholars",
+    "tempe-asu-ctf-cybersecurity-hs-internship"
+   ]
+  },
+  {
+   "key": "Tucson, AZ",
+   "state": "AZ",
+   "lat": 32.1528,
+   "lon": -110.8708,
+   "precision": "city",
+   "ids": [
+    "tucson-childrens-museum-teen-volunteer",
+    "tucson-parks-junior-staff-in-training",
+    "tucson-parks-lifeguard-jobs",
+    "tucson-pima-county-library-teen-volunteer",
+    "tucson-pima-county-summer-youth-employment",
+    "tucson-reid-park-zoo-zoo-crew",
+    "tucson-ua-bio5-keys-research-internship",
+    "tucson-ua-medicine-high-school-summer-research-apprenticeship",
+    "tucson-village-farm-4h-healthy-living-ambassadors",
+    "tucson-village-farm-summer-camp-teen-counselors"
+   ]
+  },
+  {
+   "key": "Burnaby, BC",
+   "state": "BC",
+   "lat": 49.2428,
+   "lon": -122.9728,
+   "precision": "manual",
+   "ids": [
+    "burnaby-hospital-volunteer-program",
+    "burnaby-lifeguard-swim-instructor-pathway",
+    "burnaby-village-museum-volunteer",
+    "vancouver-sfu-camps-volunteer"
+   ]
+  },
+  {
+   "key": "North Vancouver, BC",
+   "state": "BC",
+   "lat": 49.3206,
+   "lon": -123.0739,
+   "precision": "manual",
+   "ids": [
+    "lynn-canyon-ecology-centre-volunteer",
+    "north-vancouver-city-library-teen-volunteer",
+    "north-vancouver-recreation-lifeguard-swim-instructor-pathway",
+    "north-vancouver-recreation-nvrc-volunteer",
+    "north-vancouver-sd44-youth-train-in-trades"
+   ]
+  },
+  {
+   "key": "Richmond, BC",
+   "state": "BC",
+   "lat": 49.1633,
+   "lon": -123.1633,
+   "precision": "manual",
+   "ids": [
+    "richmond-public-library-teen-ambassadors",
+    "richmond-rcmp-youth-academy",
+    "richmond-sd38-biomedical-health-science-dual-credit",
+    "richmond-sd38-business-dual-credit-kpu",
+    "richmond-sd38-youth-train-in-trades",
+    "richmond-sd38-youth-work-in-trades",
+    "richmond-youth-civic-engagement-program",
+    "richmond-youth-media-program"
+   ]
+  },
+  {
+   "key": "Surrey, BC",
+   "state": "BC",
+   "lat": 49.1117,
+   "lon": -122.8275,
+   "precision": "manual",
+   "ids": [
+    "surrey-day-camp-youth-service-volunteer",
+    "surrey-leadership-youth-council",
+    "surrey-libraries-reading-buddies-teen",
+    "surrey-libraries-teen-library-council",
+    "surrey-memorial-hospital-volunteer-program",
+    "surrey-yep-youth-engagement-proposal",
+    "surrey-youth-event-squad",
+    "surrey-youth-stewardship-squad"
+   ]
+  },
+  {
+   "key": "Vancouver, BC",
+   "state": "BC",
+   "lat": 49.2611,
+   "lon": -123.1139,
+   "precision": "manual",
+   "ids": [
+    "bard-on-the-beach-volunteer",
+    "vancouver-art-gallery-art-exchange",
+    "vancouver-art-gallery-teen-art-group",
+    "vancouver-bcchr-mini-med-school",
+    "vancouver-bgc-south-coast-youth-employability",
+    "vancouver-discovery-days-health-sciences",
+    "vancouver-science-world-volunteer",
+    "vancouver-seed2stem-indigenous-research-internship",
+    "vancouver-space-centre-teen-volunteer",
+    "vancouver-stanley-park-ecology-youth-volunteer",
+    "vancouver-ubc-future-global-leaders",
+    "vancouver-ubc-summer-science-program",
+    "vancouver-vsb-youth-explore-trades-sampler",
+    "vancouver-vsb-youth-work-in-trades",
+    "vancouver-youth-parliament",
+    "vcc-dual-credit-high-school-trades"
+   ]
+  },
+  {
+   "key": "Alameda County, CA",
+   "state": "CA",
+   "lat": 37.6401,
+   "lon": -121.9068,
+   "precision": "county",
+   "ids": [
+    "acwdb-youth-innovation",
+    "alameda-county-itd-student-intern-program"
+   ]
+  },
+  {
+   "key": "Alameda, CA",
+   "state": "CA",
+   "lat": 37.7747,
+   "lon": -122.2781,
+   "precision": "manual",
+   "ids": [
+    "alameda-aquatic-internship",
+    "alameda-city-summer-internship",
+    "alameda-free-library-teen-advisory-group",
+    "alameda-free-library-teen-volunteers",
+    "alameda-high-school-cte-pathways",
+    "alameda-teen-haunted-house-volunteers",
+    "alameda-youth-career-job-fair",
+    "alameda-youth-committee-ayc",
+    "college-of-alameda-concurrent-enrollment",
+    "uss-hornet-volunteer-16-plus"
+   ]
+  },
+  {
+   "key": "Anaheim, CA",
+   "state": "CA",
+   "lat": 33.8555,
+   "lon": -117.7587,
+   "precision": "city",
+   "ids": [
+    "anaheim-fire-explorers",
+    "anaheim-public-library-teen-volunteers",
+    "anaheim-summer-volunteen"
+   ]
+  },
+  {
+   "key": "Atwater, CA",
+   "state": "CA",
+   "lat": 37.3507,
+   "lon": -120.5943,
+   "precision": "city",
+   "ids": [
+    "merced-civil-air-patrol-squadron-147-cadets"
+   ]
+  },
+  {
+   "key": "Berkeley, CA",
+   "state": "CA",
+   "lat": 37.8657,
+   "lon": -122.2987,
+   "precision": "city",
+   "ids": [
+    "berkeley-high-cte",
+    "berkeley-humane-teen-volunteer",
+    "berkeley-pre-college-scholars",
+    "berkeley-public-library-teen-volunteer",
+    "berkeley-rep-teen-council",
+    "berkeley-youthworks",
+    "ecology-center-youth-environmental-academy",
+    "lbnl-bldap",
+    "lbnl-experiences-in-research",
+    "lbnl-sea-bilingual-stem-camp",
+    "lhs-teen-internship",
+    "lhs-teen-volunteers",
+    "youth-spirit-artworks-berkeley"
+   ]
+  },
+  {
+   "key": "Boulder Creek, CA",
+   "state": "CA",
+   "lat": 37.1341,
+   "lon": -122.1272,
+   "precision": "city",
+   "ids": [
+    "ymca-silicon-valley-camp-campbell-cabin-leader"
+   ]
+  },
+  {
+   "key": "Chula Vista, CA",
+   "state": "CA",
+   "lat": 32.6277,
+   "lon": -117.0152,
+   "precision": "city",
+   "ids": [
+    "chula-vista-living-coast-discovery-center-volunteer",
+    "sharp-chula-vista-junior-volunteer"
+   ]
+  },
+  {
+   "key": "Claremont, CA",
+   "state": "CA",
+   "lat": 34.1249,
+   "lon": -117.7139,
+   "precision": "city",
+   "ids": [
+    "harvey-mudd-college-summer-session-high-school",
+    "pomona-college-academy-for-youth-success"
+   ]
+  },
+  {
+   "key": "Colton, CA",
+   "state": "CA",
+   "lat": 34.0491,
+   "lon": -117.3287,
+   "precision": "city",
+   "ids": [
+    "armc-teen-volunteer-program"
+   ]
+  },
+  {
+   "key": "Concord, CA",
+   "state": "CA",
+   "lat": 37.9722,
+   "lon": -122.0016,
+   "precision": "city",
+   "ids": [
+    "concord-food-bank-contra-costa-solano-youth-volunteer",
+    "concord-parks-recreation-open-space-commission-youth-member",
+    "contra-costa-wdb-youth-services",
+    "mdusd-student-board-member",
+    "mdusd-yes-wioa-youth-program"
+   ]
+  },
+  {
+   "key": "Contra Costa County, CA",
+   "state": "CA",
+   "lat": 37.908,
+   "lon": -121.959,
+   "precision": "county",
+   "ids": [
+    "cccoe-wioa-in-school-youth",
+    "cccoe-youth-services-workforce-programs",
+    "contra-costa-4-h-youth-development-program",
+    "contra-costa-library-teen-volunteer"
+   ]
+  },
+  {
+   "key": "Costa Mesa, CA",
+   "state": "CA",
+   "lat": 33.6659,
+   "lon": -117.9123,
+   "precision": "city",
+   "ids": [
+    "assistance-league-newport-mesa-assisteens",
+    "costa-mesa-orange-coast-college-dual-enrollment",
+    "costa-mesa-parks-community-services-jobs",
+    "oc-fair-seasonal-jobs"
+   ]
+  },
+  {
+   "key": "Cupertino, CA",
+   "state": "CA",
+   "lat": 37.3194,
+   "lon": -122.045,
+   "precision": "city",
+   "ids": [
+    "cupertino-teen-commission",
+    "de-anza-dual-enrollment"
+   ]
+  },
+  {
+   "key": "Dana Point, CA",
+   "state": "CA",
+   "lat": 33.4755,
+   "lon": -117.6931,
+   "precision": "city",
+   "ids": [
+    "ocean-institute-counselor-in-training",
+    "ocean-institute-stan-cummings-scholars-internship",
+    "ocean-institute-volunteer-docents"
+   ]
+  },
+  {
+   "key": "Danville, CA",
+   "state": "CA",
+   "lat": 37.8121,
+   "lon": -121.9698,
+   "precision": "city",
+   "ids": [
+    "danville-town-volunteer-program",
+    "danville-youth-council"
+   ]
+  },
+  {
+   "key": "Davis, CA",
+   "state": "CA",
+   "lat": 38.5561,
+   "lon": -121.7378,
+   "precision": "city",
+   "ids": [
+    "cosmos-uc-davis",
+    "davis-aquatics-lifeguard-junior-swim",
+    "davis-junior-basketball-officials",
+    "davis-senior-high-cte-pathways",
+    "davis-teen-leadership-council",
+    "djusd-internship-career-course",
+    "facciotti-lab-hs-internships",
+    "uc-davis-summer-pre-college",
+    "uc-davis-young-scholars-program"
+   ]
+  },
+  {
+   "key": "Dublin, CA",
+   "state": "CA",
+   "lat": 37.7162,
+   "lon": -121.8962,
+   "precision": "city",
+   "ids": [
+    "dublin-lead-summer-program",
+    "dublin-youth-advisory-committee"
+   ]
+  },
+  {
+   "key": "El Cajon, CA",
+   "state": "CA",
+   "lat": 32.8017,
+   "lon": -116.9605,
+   "precision": "city",
+   "ids": [
+    "san-diego-cuyamaca-college-dual-concurrent-enrollment"
+   ]
+  },
+  {
+   "key": "El Cerrito, CA",
+   "state": "CA",
+   "lat": 37.9196,
+   "lon": -122.3025,
+   "precision": "city",
+   "ids": [
+    "el-cerrito-police-explorers",
+    "el-cerrito-youth-member-advisory-bodies"
+   ]
+  },
+  {
+   "key": "Elk Grove, CA",
+   "state": "CA",
+   "lat": 38.4146,
+   "lon": -121.385,
+   "precision": "city",
+   "ids": [
+    "cosumnes-fire-explorer",
+    "elk-grove-youth-commission"
+   ]
+  },
+  {
+   "key": "Escondido, CA",
+   "state": "CA",
+   "lat": 33.1331,
+   "lon": -117.074,
+   "precision": "city",
+   "ids": [
+    "escondido-library-teen-advisory-board",
+    "escondido-library-volunteer-teen"
+   ]
+  },
+  {
+   "key": "Folsom, CA",
+   "state": "CA",
+   "lat": 38.6669,
+   "lon": -121.1423,
+   "precision": "city",
+   "ids": [
+    "folsom-trailblazers-n-training"
+   ]
+  },
+  {
+   "key": "Fountain Valley, CA",
+   "state": "CA",
+   "lat": 33.7106,
+   "lon": -117.9511,
+   "precision": "city",
+   "ids": [
+    "fountain-valley-memorialcare-orange-coast-volunteer"
+   ]
+  },
+  {
+   "key": "Fremont, CA",
+   "state": "CA",
+   "lat": 37.4947,
+   "lon": -121.9411,
+   "precision": "city",
+   "ids": [
+    "fremont-main-library-teen-advisory-group",
+    "fremont-mission-valley-rop",
+    "fremont-police-explorers",
+    "fremont-recreation-part-time-jobs",
+    "fremont-tri-city-volunteers-food-bank",
+    "fremont-unified-cte",
+    "fremont-youth-advisory-commission",
+    "ja-launchpad-fremont",
+    "washington-health-high-school-volunteer"
+   ]
+  },
+  {
+   "key": "Fresno, CA",
+   "state": "CA",
+   "lat": 36.7827,
+   "lon": -119.7962,
+   "precision": "city",
+   "ids": [
+    "fresno-chaffee-zoo-volunteens",
+    "fresno-chaffee-zoo-zoo-camp-junior-counselor"
+   ]
+  },
+  {
+   "key": "Fullerton, CA",
+   "state": "CA",
+   "lat": 33.8857,
+   "lon": -117.928,
+   "precision": "city",
+   "ids": [
+    "fullerton-public-library-teen-volunteer",
+    "fullerton-st-jude-medical-center-high-school-volunteer"
+   ]
+  },
+  {
+   "key": "Garden Grove, CA",
+   "state": "CA",
+   "lat": 33.7788,
+   "lon": -117.9605,
+   "precision": "city",
+   "ids": [
+    "garden-grove-camp-grove-counselor-in-training",
+    "garden-grove-recreation-leader-jobs-age-16",
+    "garden-grove-teen-action-collaborative"
+   ]
+  },
+  {
+   "key": "Glendale, CA",
+   "state": "CA",
+   "lat": 34.1814,
+   "lon": -118.2458,
+   "precision": "city",
+   "ids": [
+    "glendale-community-college-jump-start-dual-enrollment",
+    "glendale-youth-alliance-step",
+    "glendale-youth-alliance-summer-youth-employment",
+    "glendale-youth-alliance-team-program"
+   ]
+  },
+  {
+   "key": "Goleta, CA",
+   "state": "CA",
+   "lat": 34.4354,
+   "lon": -119.8589,
+   "precision": "city",
+   "ids": [
+    "santa-barbara-civil-air-patrol-squadron-131-cadets"
+   ]
+  },
+  {
+   "key": "Hayward, CA",
+   "state": "CA",
+   "lat": 37.6268,
+   "lon": -122.104,
+   "precision": "city",
+   "ids": [
+    "chabot-dual-enrollment",
+    "ebrpd-junior-lifeguard-cadets",
+    "eden-area-rop",
+    "hayward-area-historical-society-volunteers",
+    "hayward-area-recreation-park-district-volunteers",
+    "hayward-public-library-teen-volunteers",
+    "hayward-youth-commission",
+    "police-explorers-hayward",
+    "st-rose-hospital-shine-student-volunteers"
+   ]
+  },
+  {
+   "key": "Huntington Beach, CA",
+   "state": "CA",
+   "lat": 33.698,
+   "lon": -118.0038,
+   "precision": "city",
+   "ids": [
+    "huntington-beach-bolsa-chica-conservancy-volunteer",
+    "huntington-beach-library-teen-volunteers",
+    "huntington-beach-ocean-lifeguard",
+    "huntington-beach-police-explorers",
+    "huntington-beach-youth-collaborative",
+    "orange-county-golden-west-college-dual-concurrent-enrollment"
+   ]
+  },
+  {
+   "key": "Irvine, CA",
+   "state": "CA",
+   "lat": 33.6784,
+   "lon": -117.7713,
+   "precision": "city",
+   "ids": [
+    "irvine-high-school-youth-action-team",
+    "irvine-library-teen-volunteers",
+    "irvine-police-explorer-program",
+    "irvine-uci-summer-session-high-school-students",
+    "irvine-valley-college-dual-enrollment",
+    "irvine-youth-service-corps-summer-high-school",
+    "orange-county-langson-museum-young-curators",
+    "pretend-city-volunteer-and-teen-programs",
+    "uci-cosmos",
+    "uci-its-prime-transportation-research-internship",
+    "uci-medacademy",
+    "uci-peri-institute-stem-education-research",
+    "uci-scrip-high-school-research-internship",
+    "uci-som-summer-online-research-program"
+   ]
+  },
+  {
+   "key": "La Jolla, CA",
+   "state": "CA",
+   "lat": 32.8546,
+   "lon": -117.2518,
+   "precision": "manual",
+   "ids": [
+    "mcasd-teen-art-collective",
+    "salk-heithoff-brody-high-school-summer-scholars",
+    "san-diego-birch-aquarium-volunteer",
+    "san-diego-la-jolla-playhouse-summer-conservatory",
+    "san-diego-la-jolla-playhouse-teen-council",
+    "san-diego-sdsc-rehs-research-experience",
+    "sanford-burnham-prebys-spark-high-school-internship",
+    "ucsd-cosmos-summer-school",
+    "ucsd-sports-medicine-summer-academy"
+   ]
+  },
+  {
+   "key": "La Mesa, CA",
+   "state": "CA",
+   "lat": 32.7713,
+   "lon": -117.0161,
+   "precision": "city",
+   "ids": [
+    "san-diego-sharp-grossmont-junior-volunteer"
+   ]
+  },
+  {
+   "key": "Laguna Beach, CA",
+   "state": "CA",
+   "lat": 33.5432,
+   "lon": -117.7618,
+   "precision": "city",
+   "ids": [
+    "pacific-marine-mammal-center-junior-volunteers"
+   ]
+  },
+  {
+   "key": "Laguna Hills, CA",
+   "state": "CA",
+   "lat": 33.5908,
+   "lon": -117.6964,
+   "precision": "city",
+   "ids": [
+    "laguna-hills-memorialcare-saddleback-volunteer"
+   ]
+  },
+  {
+   "key": "Livermore, CA",
+   "state": "CA",
+   "lat": 37.687,
+   "lon": -121.7598,
+   "precision": "city",
+   "ids": [
+    "larpd-junior-lifeguard-academy",
+    "larpd-summer-youth-volunteer",
+    "las-positas-dual-enrollment",
+    "livermore-area-youth-advisory-commission",
+    "livermore-library-young-adult-volunteers",
+    "tri-valley-rop"
+   ]
+  },
+  {
+   "key": "Loma Linda, CA",
+   "state": "CA",
+   "lat": 34.0433,
+   "lon": -117.2466,
+   "precision": "city",
+   "ids": [
+    "loma-linda-university-discovery-program",
+    "va-loma-linda-summer-youth-volunteer-program"
+   ]
+  },
+  {
+   "key": "Long Beach, CA",
+   "state": "CA",
+   "lat": 33.7808,
+   "lon": -118.1682,
+   "precision": "city",
+   "ids": [
+    "aquarium-of-the-pacific-voluntens",
+    "lbwin-youth-career-services-center",
+    "long-beach-city-college-individual-dual-enrollment",
+    "long-beach-commission-on-youth-and-children",
+    "long-beach-junior-lifeguards-cadet-program",
+    "long-beach-parks-recreation-marine-volunteer",
+    "long-beach-parks-recreation-program-leader",
+    "long-beach-public-library-teen-volunteers",
+    "long-beach-youth-poet-laureate",
+    "memorialcare-long-beach-medical-center-volunteen-summer"
+   ]
+  },
+  {
+   "key": "Los Alamitos, CA",
+   "state": "CA",
+   "lat": 33.7969,
+   "lon": -118.0612,
+   "precision": "city",
+   "ids": [
+    "sunburst-youth-challenge-academy"
+   ]
+  },
+  {
+   "key": "Los Altos, CA",
+   "state": "CA",
+   "lat": 37.3684,
+   "lon": -122.0966,
+   "precision": "city",
+   "ids": [
+    "los-altos-history-museum-teen-docent"
+   ]
+  },
+  {
+   "key": "Los Angeles County, CA",
+   "state": "CA",
+   "lat": 34.1964,
+   "lon": -118.2619,
+   "precision": "county",
+   "ids": [
+    "la-county-bloomberg-arts-internship-high-school",
+    "la-county-fire-explorer-program",
+    "la-county-junior-lifeguard-program",
+    "la-county-library-teen-volunteer",
+    "la-county-youth-at-work",
+    "la-county-youth-entrepreneurship-academy",
+    "la-metro-youth-council"
+   ]
+  },
+  {
+   "key": "Los Angeles, CA",
+   "state": "CA",
+   "lat": 34.0194,
+   "lon": -118.4108,
+   "precision": "city",
+   "ids": [
+    "cedars-sinai-teen-volunteer-program",
+    "getty-teen-gallery-guides",
+    "hire-las-youth",
+    "keck-medicine-usc-summer-youth-volunteer",
+    "la-zoo-core-volunteer-students",
+    "lacma-teens",
+    "lapl-teen-volunteer-and-teen-council",
+    "los-angeles-craft-contemporary-craft-youth-culture",
+    "los-angeles-dcfs-independent-living-program",
+    "los-angeles-my-friends-place-youth-support",
+    "los-angeles-petersen-teen-auto-workshop",
+    "los-angeles-safe-place-for-youth-work-and-school",
+    "los-angeles-usc-summer-programs-business-courses",
+    "mattel-childrens-hospital-youth-ambassadors",
+    "moca-teen-program",
+    "nhm-marine-teens",
+    "otis-college-summer-of-art",
+    "pacoima-beautiful-agua-university",
+    "pacoima-beautiful-junior-field-rangers",
+    "regeneron-isef",
+    "skirball-teen-advisory-committee",
+    "teen-line-volunteer-listener",
+    "treepeople-volunteer-events",
+    "ucla-health-westwood-high-school-summer-volunteer",
+    "ucla-summer-sessions-precollege",
+    "usc-summer-programs-pre-college",
+    "usc-viterbi-energy-of-stem-summer-camp"
+   ]
+  },
+  {
+   "key": "Martinez, CA",
+   "state": "CA",
+   "lat": 37.9982,
+   "lon": -122.1142,
+   "precision": "city",
+   "ids": [
+    "martinez-central-san-externship",
+    "martinez-central-san-summer-student-program"
+   ]
+  },
+  {
+   "key": "Menlo Park, CA",
+   "state": "CA",
+   "lat": 37.4797,
+   "lon": -122.1481,
+   "precision": "city",
+   "ids": [
+    "menlo-park-library-teen-advisory-group",
+    "menlo-park-youth-advisory-committee",
+    "slac-regional-science-bowl-high-school"
+   ]
+  },
+  {
+   "key": "Merced County, CA",
+   "state": "CA",
+   "lat": 37.1939,
+   "lon": -120.7215,
+   "precision": "county",
+   "ids": [
+    "merced-county-office-of-education-high-school-rop"
+   ]
+  },
+  {
+   "key": "Merced, CA",
+   "state": "CA",
+   "lat": 37.3114,
+   "lon": -120.4704,
+   "precision": "city",
+   "ids": [
+    "merced-college-ccap-dual-enrollment",
+    "merced-college-k12-concurrent-enrollment",
+    "merced-county-office-of-education-empower",
+    "merced-mercy-medical-center-volunteer",
+    "merced-muhsd-dual-enrollment-merced-college",
+    "merced-skillrise-ch-high-school-internship"
+   ]
+  },
+  {
+   "key": "Milpitas, CA",
+   "state": "CA",
+   "lat": 37.4331,
+   "lon": -121.8909,
+   "precision": "city",
+   "ids": [
+    "hssv-student-volunteer",
+    "milpitas-youth-advisory-commission"
+   ]
+  },
+  {
+   "key": "Moraga, CA",
+   "state": "CA",
+   "lat": 37.8457,
+   "lon": -122.1232,
+   "precision": "city",
+   "ids": [
+    "moraga-counselor-in-training-future-leaders",
+    "moraga-police-cadets",
+    "moraga-youth-involvement-committee",
+    "saint-marys-college-summer-session-high-school"
+   ]
+  },
+  {
+   "key": "Morgan Hill, CA",
+   "state": "CA",
+   "lat": 37.1325,
+   "lon": -121.6419,
+   "precision": "city",
+   "ids": [
+    "police-explorers-morgan-hill"
+   ]
+  },
+  {
+   "key": "Mountain View, CA",
+   "state": "CA",
+   "lat": 37.3997,
+   "lon": -122.0793,
+   "precision": "city",
+   "ids": [
+    "computer-history-museum-teen-program",
+    "mountain-view-teen-volunteer-summer-program",
+    "mountain-view-youth-advisory-committee"
+   ]
+  },
+  {
+   "key": "Murrieta, CA",
+   "state": "CA",
+   "lat": 33.5732,
+   "lon": -117.191,
+   "precision": "city",
+   "ids": [
+    "murrieta-public-library-teen-volunteers",
+    "murrieta-youth-advisory-committee"
+   ]
+  },
+  {
+   "key": "Newark, CA",
+   "state": "CA",
+   "lat": 37.5039,
+   "lon": -122.0323,
+   "precision": "city",
+   "ids": [
+    "league-of-volunteers-teen-volunteers"
+   ]
+  },
+  {
+   "key": "Newport Beach, CA",
+   "state": "CA",
+   "lat": 33.6266,
+   "lon": -117.8655,
+   "precision": "city",
+   "ids": [
+    "enc-leaders-in-training",
+    "newport-beach-fire-cadet-program",
+    "newport-beach-library-teen-volunteers",
+    "newport-beach-ocean-lifeguard-trainee",
+    "newport-beach-teen-leader-program",
+    "occ-sailing-youth-leadership-program"
+   ]
+  },
+  {
+   "key": "Oakland, CA",
+   "state": "CA",
+   "lat": 37.7699,
+   "lon": -122.2257,
+   "precision": "city",
+   "ids": [
+    "alameda-county-community-food-bank-volunteer",
+    "bart-summer-internship-high-school",
+    "beyond-emancipation-foster-youth",
+    "bgc-oakland-junior-staff",
+    "chabot-galaxy-explorers",
+    "ebayc-volunteer-and-internships",
+    "ebmud-high-school-summer-internship",
+    "ebrpd-student-jobs",
+    "genesys-works-bay-area",
+    "girls-inc-alameda-county-high-school",
+    "hidden-genius-project-immersion",
+    "lao-family-youth-on-the-move",
+    "oakland-mayors-summer-youth-employment-program",
+    "oakland-owdb-summer-jobs-partners",
+    "oakland-parks-rec-youth-jobs",
+    "oakland-public-library-teen-advisory-board",
+    "oakland-public-library-teen-volunteer",
+    "oakland-zoo-teen-summer-internship",
+    "oakland-zoo-teen-wild-guides",
+    "oakland-zoo-zoocamp-teen-assistants-interns",
+    "ousd-linked-learning-internships",
+    "ousd-linked-learning-work-based-learning",
+    "peralta-dual-enrollment",
+    "planting-justice-youth-internships",
+    "police-explorers-oakland",
+    "rising-sun-climate-careers",
+    "trybe-oakland-summer-jobs",
+    "yep-youth-employment-partnership",
+    "youth-radio-oakland",
+    "youth-uprising-summer-jobs",
+    "youthbeat-media-careers"
+   ]
+  },
+  {
+   "key": "Oakley, CA",
+   "state": "CA",
+   "lat": 37.9961,
+   "lon": -121.6821,
+   "precision": "city",
+   "ids": [
+    "oakley-youth-advisory-council"
+   ]
+  },
+  {
+   "key": "Orange County, CA",
+   "state": "CA",
+   "lat": 33.6757,
+   "lon": -117.7772,
+   "precision": "county",
+   "ids": [
+    "oc-public-libraries-teen-volunteer",
+    "ocsd-explorer-program",
+    "ocsd-teen-academy",
+    "ocwdb-ready-set-oc-young-adult",
+    "orange-county-girls-inc-girls-meet-the-workforce",
+    "orange-county-oc-parks-volunteer",
+    "orange-county-oc-pathways-student-ambassadors",
+    "orange-county-ocfa-fire-cadet-program",
+    "orange-county-ssa-teen-volunteer-work-experience"
+   ]
+  },
+  {
+   "key": "Orange, CA",
+   "state": "CA",
+   "lat": 33.787,
+   "lon": -117.8613,
+   "precision": "city",
+   "ids": [
+    "chapman-pharmacy-summer-research-program",
+    "chapman-social-science-pre-college-research",
+    "chapman-summer-engineering-academy",
+    "orange-county-choc-mi4-summer-internship",
+    "orange-santiago-canyon-college-dual-enrollment",
+    "uci-health-high-school-volunteer",
+    "uci-summer-healthcare-experience"
+   ]
+  },
+  {
+   "key": "Palm Desert, CA",
+   "state": "CA",
+   "lat": 33.7376,
+   "lon": -116.3641,
+   "precision": "city",
+   "ids": [
+    "living-desert-zooteens-volunteer"
+   ]
+  },
+  {
+   "key": "Palo Alto, CA",
+   "state": "CA",
+   "lat": 37.3965,
+   "lon": -122.1431,
+   "precision": "city",
+   "ids": [
+    "palo-alto-art-center-counselor-in-training",
+    "palo-alto-library-tlab",
+    "palo-alto-teen-advisory-board",
+    "palo-alto-youth-council",
+    "stanford-aimi-summer-research-internship",
+    "stanford-care-explorers",
+    "stanford-childrens-teen-volunteer",
+    "youth-community-service-palo-alto"
+   ]
+  },
+  {
+   "key": "Pasadena, CA",
+   "state": "CA",
+   "lat": 34.1606,
+   "lon": -118.138,
+   "precision": "city",
+   "ids": [
+    "armory-center-for-the-arts-studio-teen-volunteers",
+    "caltech-summer-research-connection-pasadena-unified",
+    "pasadena-city-college-concurrent-dual-enrollment",
+    "pasadena-humane-teen-volunteers-15-and-up",
+    "pasadena-public-library-the-rose-teen-magazine"
+   ]
+  },
+  {
+   "key": "Pittsburg, CA",
+   "state": "CA",
+   "lat": 38.0177,
+   "lon": -121.9004,
+   "precision": "city",
+   "ids": [
+    "los-medanos-college-dual-enrollment",
+    "pittsburg-youth-advisory-commission"
+   ]
+  },
+  {
+   "key": "Pleasant Hill, CA",
+   "state": "CA",
+   "lat": 37.9542,
+   "lon": -122.0763,
+   "precision": "city",
+   "ids": [
+    "diablo-valley-college-concurrent-enrollment",
+    "diablo-valley-college-dual-enrollment-ccap",
+    "diablo-valley-college-summer-career-academies",
+    "mdusd-college-now-at-diablo-valley-college",
+    "pleasant-hill-rec-park-facilities-custodian",
+    "pleasant-hill-rec-park-teen-council"
+   ]
+  },
+  {
+   "key": "Pleasanton, CA",
+   "state": "CA",
+   "lat": 37.6672,
+   "lon": -121.8812,
+   "precision": "city",
+   "ids": [
+    "alameda-county-district-1-intern-program",
+    "alameda-county-fair-seasonal-jobs",
+    "pleasanton-aquatics-junior-volunteers",
+    "pleasanton-youth-commission",
+    "valley-humane-society-volunteers"
+   ]
+  },
+  {
+   "key": "Pomona, CA",
+   "state": "CA",
+   "lat": 34.0585,
+   "lon": -117.7611,
+   "precision": "city",
+   "ids": [
+    "cal-poly-pomona-next-gen-manufacturing-academy",
+    "pomona-valley-hospital-high-school-volunteer"
+   ]
+  },
+  {
+   "key": "Rancho Mirage, CA",
+   "state": "CA",
+   "lat": 33.762,
+   "lon": -116.4295,
+   "precision": "city",
+   "ids": [
+    "eisenhower-health-junior-volunteer-program"
+   ]
+  },
+  {
+   "key": "Redlands, CA",
+   "state": "CA",
+   "lat": 34.0535,
+   "lon": -117.1705,
+   "precision": "city",
+   "ids": [
+    "redlands-ak-smiley-library-teen-volunteers",
+    "redlands-community-hospital-junior-volunteers"
+   ]
+  },
+  {
+   "key": "Redwood City, CA",
+   "state": "CA",
+   "lat": 37.5153,
+   "lon": -122.2137,
+   "precision": "city",
+   "ids": [
+    "redwood-city-leaders-in-training",
+    "san-mateo-county-jobs-for-youth"
+   ]
+  },
+  {
+   "key": "Richmond, CA",
+   "state": "CA",
+   "lat": 37.9523,
+   "lon": -122.3606,
+   "precision": "city",
+   "ids": [
+    "richmond-fund-for-children-and-youth-oversight-board",
+    "richmond-youthworks-work-experience",
+    "ryse-center-richmond"
+   ]
+  },
+  {
+   "key": "Riverside County, CA",
+   "state": "CA",
+   "lat": 33.8006,
+   "lon": -115.9484,
+   "precision": "county",
+   "ids": [
+    "riverside-county-library-teen-advisory-boards"
+   ]
+  },
+  {
+   "key": "Riverside, CA",
+   "state": "CA",
+   "lat": 33.9381,
+   "lon": -117.3932,
+   "precision": "city",
+   "ids": [
+    "march-field-air-museum-junior-docents",
+    "riverside-grow-youth-workforce-program",
+    "riverside-johnny-martin-sotelo-youth-opportunity-center",
+    "riverside-parks-rec-volunteen-internship-vip",
+    "riverside-public-library-volunteer-14-plus",
+    "ucr-bourns-ai-robotics-summer-camp",
+    "ucr-stem-summer-camp-wildfire-science",
+    "ucr-stride-stem-cell-research-summer",
+    "ucr-trio-upward-bound-and-talent-search"
+   ]
+  },
+  {
+   "key": "Roseville, CA",
+   "state": "CA",
+   "lat": 38.7703,
+   "lon": -121.3196,
+   "precision": "city",
+   "ids": [
+    "roseville-leadership-development-program",
+    "roseville-library-teen-volunteers"
+   ]
+  },
+  {
+   "key": "Sacramento County, CA",
+   "state": "CA",
+   "lat": 38.4485,
+   "lon": -121.3425,
+   "precision": "county",
+   "ids": [
+    "sac-public-library-teen-volunteers",
+    "sacramento-region-fire-explorer-list"
+   ]
+  },
+  {
+   "key": "Sacramento, CA",
+   "state": "CA",
+   "lat": 38.5677,
+   "lon": -121.4682,
+   "precision": "city",
+   "ids": [
+    "arc-upward-bound",
+    "breakthrough-sacramento-teaching-intern",
+    "ca-boys-girls-state",
+    "chp-explorer-post-east-sacramento",
+    "clbl-urban-ag-internships",
+    "habitat-greater-sacramento-volunteers",
+    "job-corps-sacramento",
+    "los-rios-dual-enrollment",
+    "sac-animal-care-youth-volunteers",
+    "sac-city-wioa-in-school-youth",
+    "sac-junior-rec-aide",
+    "sac-landscape-and-learning",
+    "sac-north-natomas-wdp",
+    "sac-prime-time-teen",
+    "sac-state-summer-youth-academies",
+    "sac-summer-at-city-hall",
+    "sac-youth-commission",
+    "sac-zoo-zoo-teens",
+    "sacramento-food-bank-volunteer",
+    "sacramento-spca-youth",
+    "sacramento-works-youth-wioa",
+    "sacramento-youth-center",
+    "scoe-cte",
+    "smud-hs-internship",
+    "uc-davis-health-volunteen",
+    "uc-davis-mmi-hs-internship",
+    "uc-davis-upward-bound"
+   ]
+  },
+  {
+   "key": "San Bernardino County, CA",
+   "state": "CA",
+   "lat": 34.8567,
+   "lon": -116.1816,
+   "precision": "county",
+   "ids": [
+    "san-bernardino-county-library-teen-leadership-program",
+    "san-bernardino-county-sheriff-explorers",
+    "san-bernardino-county-spark-syep",
+    "san-bernardino-county-wioa-youth"
+   ]
+  },
+  {
+   "key": "San Bruno, CA",
+   "state": "CA",
+   "lat": 37.6256,
+   "lon": -122.4314,
+   "precision": "city",
+   "ids": [
+    "smccd-dual-enrollment"
+   ]
+  },
+  {
+   "key": "San Carlos, CA",
+   "state": "CA",
+   "lat": 37.499,
+   "lon": -122.2676,
+   "precision": "city",
+   "ids": [
+    "hiller-flight-teen-volunteer"
+   ]
+  },
+  {
+   "key": "San Diego County, CA",
+   "state": "CA",
+   "lat": 33.0193,
+   "lon": -116.7698,
+   "precision": "county",
+   "ids": [
+    "san-diego-county-library-teen-service-learner",
+    "san-diego-ja-fellows-summer-youth-employment",
+    "san-diego-workforce-partnership-youth",
+    "scripps-health-volunteer-ages-15-plus"
+   ]
+  },
+  {
+   "key": "San Diego, CA",
+   "state": "CA",
+   "lat": 32.8304,
+   "lon": -117.1209,
+   "precision": "city",
+   "ids": [
+    "mingei-teens-at-mingei",
+    "san-diego-cabrillo-national-monument-volunteers",
+    "san-diego-city-employ-and-empower-internships",
+    "san-diego-city-future-civic-leaders",
+    "san-diego-city-pool-guard-recreation-aide",
+    "san-diego-city-youth-commission",
+    "san-diego-feeding-san-diego-volunteer",
+    "san-diego-fire-rescue-cadet-program",
+    "san-diego-ja-stock-market-challenge",
+    "san-diego-nat-camp-aides-youth-volunteers",
+    "san-diego-parks-and-recreation-volunteer",
+    "san-diego-police-cadet-program",
+    "san-diego-public-library-teen-team-program-assistant",
+    "san-diego-reality-changers-college-town",
+    "san-diego-sharp-memorial-mary-birch-volunteer",
+    "san-diego-ucsd-health-volunteer",
+    "sdma-teen-council"
+   ]
+  },
+  {
+   "key": "San Francisco, CA",
+   "state": "CA",
+   "lat": 37.7796,
+   "lon": -122.4193,
+   "precision": "manual",
+   "ids": [
+    "cpmc-information-desk-van-ness-volunteer",
+    "sf-826-valencia",
+    "sf-breakthrough-sf",
+    "sf-calacademy-careers-in-science",
+    "sf-ccsf-dual-enrollment",
+    "sf-community-youth-center-job-fair",
+    "sf-elections-ambassadors",
+    "sf-exploratorium-explainers",
+    "sf-fire-youth-academy",
+    "sf-girls-on-the-run-junior-coach",
+    "sf-mission-bit",
+    "sf-myeep",
+    "sf-new-door-ventures",
+    "sf-opportunities-for-all",
+    "sf-project-pull",
+    "sf-rec-park-yep",
+    "sf-sfpl-teen-volunteers",
+    "sf-sfpuc-ssip-cityworks",
+    "sf-sfzoo-teen-volunteers",
+    "sf-ucsf-immunoexplore",
+    "sf-ucsf-sep-hs-intern",
+    "sf-youth-art-exchange",
+    "sf-youthworks",
+    "ymca-san-francisco-workforce-development"
+   ]
+  },
+  {
+   "key": "San Jose, CA",
+   "state": "CA",
+   "lat": 37.296,
+   "lon": -121.8146,
+   "precision": "city",
+   "ids": [
+    "accel-middle-college",
+    "evergreen-valley-college-dual-enrollment",
+    "happy-hollow-zooteen",
+    "san-jose-middle-college",
+    "san-jose-public-library-teen-volunteer",
+    "san-jose-works",
+    "san-jose-youth-commission",
+    "scc-student-intern-level-1",
+    "scvmc-volunteer-services",
+    "sjsu-summer-open-university-high-school",
+    "svcte-silicon-valley-career-technical-education",
+    "tech-interactive-teen-holiday-helper",
+    "valley-water-youth-commission",
+    "work2future-youth"
+   ]
+  },
+  {
+   "key": "San Leandro, CA",
+   "state": "CA",
+   "lat": 37.7034,
+   "lon": -122.163,
+   "precision": "city",
+   "ids": [
+    "bgc-san-leandro-teen-summer-program",
+    "san-leandro-library-teen-volunteers",
+    "san-leandro-youth-advisory-commission"
+   ]
+  },
+  {
+   "key": "San Luis Obispo, CA",
+   "state": "CA",
+   "lat": 35.2662,
+   "lon": -120.6684,
+   "precision": "city",
+   "ids": [
+    "grizzly-youth-academy-san-luis-obispo"
+   ]
+  },
+  {
+   "key": "San Mateo County, CA",
+   "state": "CA",
+   "lat": 37.4147,
+   "lon": -122.3715,
+   "precision": "county",
+   "ids": [
+    "san-mateo-county-library-teen-volunteer"
+   ]
+  },
+  {
+   "key": "San Mateo, CA",
+   "state": "CA",
+   "lat": 37.5603,
+   "lon": -122.3106,
+   "precision": "city",
+   "ids": [
+    "college-of-san-mateo-dual-enrollment",
+    "police-cadets-san-mateo"
+   ]
+  },
+  {
+   "key": "San Pablo, CA",
+   "state": "CA",
+   "lat": 37.9629,
+   "lon": -122.3426,
+   "precision": "city",
+   "ids": [
+    "contra-costa-college-dual-enrollment",
+    "san-pablo-summer-internship-program",
+    "san-pablo-youth-commission"
+   ]
+  },
+  {
+   "key": "San Ramon, CA",
+   "state": "CA",
+   "lat": 37.7666,
+   "lon": -121.9292,
+   "precision": "city",
+   "ids": [
+    "san-ramon-leaders-in-training",
+    "san-ramon-teen-service-and-leadership",
+    "tri-valley-teen-job-and-career-fair"
+   ]
+  },
+  {
+   "key": "Santa Ana, CA",
+   "state": "CA",
+   "lat": 33.7368,
+   "lon": -117.8829,
+   "precision": "city",
+   "ids": [
+    "bowers-museum-junior-ambassadors",
+    "discovery-cube-oc-teen-volunteer",
+    "orange-county-orangewood-independent-living-program",
+    "orange-county-santa-ana-college-dual-enrollment",
+    "santa-ana-city-student-intern",
+    "santa-ana-city-volunteer-program",
+    "santa-ana-say-youth-employment-program",
+    "santa-ana-zoo-volunteer"
+   ]
+  },
+  {
+   "key": "Santa Barbara County, CA",
+   "state": "CA",
+   "lat": 34.5367,
+   "lon": -120.0384,
+   "precision": "county",
+   "ids": [
+    "sbceo-county-superintendent-student-advisory-council"
+   ]
+  },
+  {
+   "key": "Santa Barbara, CA",
+   "state": "CA",
+   "lat": 34.4036,
+   "lon": -119.7137,
+   "precision": "city",
+   "ids": [
+    "santa-barbara-humane-society-volunteers",
+    "santa-barbara-museum-of-art-teaching-assistants",
+    "santa-barbara-natural-history-museum-counselors-in-training",
+    "santa-barbara-natural-history-museum-quasars-to-sea-stars",
+    "santa-barbara-natural-history-museum-volunteens",
+    "santa-barbara-parks-rec-junior-counselor",
+    "santa-barbara-parks-rec-seasonal-jobs",
+    "santa-barbara-public-library-teen-job-volunteer-fair",
+    "santa-barbara-public-library-teen-volunteering",
+    "santa-barbara-public-library-teens-teach-tech",
+    "santa-barbara-sbcc-dual-enrollment",
+    "santa-barbara-sea-center-volunteer-interpreter",
+    "santa-barbara-ucsb-research-mentorship-program",
+    "santa-barbara-ucsb-summer-research-academies",
+    "santa-barbara-wildlife-care-network-teen-with-guardian",
+    "santa-barbara-youth-council",
+    "santa-barbara-zoo-seasonal-jobs",
+    "santa-barbara-zoo-teen-volunteers",
+    "sbceo-partners-in-education-job-readiness-internships",
+    "sbiff-10-10-10-student-filmmaking"
+   ]
+  },
+  {
+   "key": "Santa Clara County, CA",
+   "state": "CA",
+   "lat": 37.2216,
+   "lon": -121.6895,
+   "precision": "county",
+   "ids": [
+    "santa-clara-county-teen-cert",
+    "scc-intern-and-earn",
+    "scc-library-teen-volunteer"
+   ]
+  },
+  {
+   "key": "Santa Clara, CA",
+   "state": "CA",
+   "lat": 37.3646,
+   "lon": -121.968,
+   "precision": "city",
+   "ids": [
+    "mission-college-high-school-dual-enrollment",
+    "santa-clara-youth-commission"
+   ]
+  },
+  {
+   "key": "Santa Clarita, CA",
+   "state": "CA",
+   "lat": 34.4165,
+   "lon": -118.5007,
+   "precision": "city",
+   "ids": [
+    "santa-clarita-public-library-teen-advisory-board"
+   ]
+  },
+  {
+   "key": "Saratoga, CA",
+   "state": "CA",
+   "lat": 37.2683,
+   "lon": -122.0262,
+   "precision": "city",
+   "ids": [
+    "west-valley-college-concurrent-enrollment"
+   ]
+  },
+  {
+   "key": "Stanford, CA",
+   "state": "CA",
+   "lat": 37.4269,
+   "lon": -122.1677,
+   "precision": "city",
+   "ids": [
+    "stanford-grips",
+    "stanford-medcsi",
+    "stanford-pips",
+    "stanford-simr",
+    "stanford-smysp"
+   ]
+  },
+  {
+   "key": "Sunnyvale, CA",
+   "state": "CA",
+   "lat": 37.3858,
+   "lon": -122.0263,
+   "precision": "city",
+   "ids": [
+    "novaworks-young-adult-services",
+    "sunnyvale-youth-volunteer"
+   ]
+  },
+  {
+   "key": "Sylmar, CA",
+   "state": "CA",
+   "lat": 34.3269,
+   "lon": -118.3822,
+   "precision": "manual",
+   "ids": [
+    "discovery-cube-la-teen-volunteer"
+   ]
+  },
+  {
+   "key": "Temecula, CA",
+   "state": "CA",
+   "lat": 33.4929,
+   "lon": -117.1346,
+   "precision": "city",
+   "ids": [
+    "temecula-library-teen-library-council"
+   ]
+  },
+  {
+   "key": "Torrance, CA",
+   "state": "CA",
+   "lat": 33.8305,
+   "lon": -118.3566,
+   "precision": "city",
+   "ids": [
+    "el-camino-college-dual-enrollment"
+   ]
+  },
+  {
+   "key": "Tustin, CA",
+   "state": "CA",
+   "lat": 33.7309,
+   "lon": -117.8106,
+   "precision": "city",
+   "ids": [
+    "tustin-counselor-in-training",
+    "tustin-police-explorer-post-615",
+    "tustin-teens-in-action"
+   ]
+  },
+  {
+   "key": "Union City, CA",
+   "state": "CA",
+   "lat": 37.6028,
+   "lon": -122.0188,
+   "precision": "city",
+   "ids": [
+    "union-city-youth-commission"
+   ]
+  },
+  {
+   "key": "Upland, CA",
+   "state": "CA",
+   "lat": 34.1161,
+   "lon": -117.6599,
+   "precision": "city",
+   "ids": [
+    "san-antonio-regional-hospital-high-school-volunteer"
+   ]
+  },
+  {
+   "key": "Walnut Creek, CA",
+   "state": "CA",
+   "lat": 37.9027,
+   "lon": -122.0405,
+   "precision": "city",
+   "ids": [
+    "john-muir-walnut-creek-high-school-volunteer",
+    "walnut-creek-lindsay-wildlife-camp-counselor-in-training",
+    "walnut-creek-lindsay-wildlife-owl-teen-program",
+    "walnut-creek-save-mount-diablo-volunteer-workdays"
+   ]
+  },
+  {
+   "key": "West Sacramento, CA",
+   "state": "CA",
+   "lat": 38.5544,
+   "lon": -121.5487,
+   "precision": "city",
+   "ids": [
+    "west-sac-teen-heroes",
+    "ws-home-run-internships",
+    "yolo-children-alliance-youth-employment"
+   ]
+  },
+  {
+   "key": "Woodland, CA",
+   "state": "CA",
+   "lat": 38.6715,
+   "lon": -121.7505,
+   "precision": "city",
+   "ids": [
+    "clbl-farms-leadership",
+    "woodland-cc-dual-enrollment",
+    "woodland-teens-helping-seniors",
+    "ycoe-work-based-learning-b-unbound",
+    "yolo-food-bank-youth-volunteers"
+   ]
+  },
+  {
+   "key": "Yolo County, CA",
+   "state": "CA",
+   "lat": 38.6794,
+   "lon": -121.9014,
+   "precision": "county",
+   "ids": [
+    "yolo-4h",
+    "yolo-county-library-youth-volunteers"
+   ]
+  },
+  {
+   "key": "Arapahoe County, CO",
+   "state": "CO",
+   "lat": 39.6446,
+   "lon": -104.3317,
+   "precision": "county",
+   "ids": [
+    "arapahoe-libraries-teen-volunteer"
+   ]
+  },
+  {
+   "key": "Aurora, CO",
+   "state": "CO",
+   "lat": 39.6883,
+   "lon": -104.6894,
+   "precision": "city",
+   "ids": [
+    "uchealth-hospital-volunteer-16-plus-aurora"
+   ]
+  },
+  {
+   "key": "Boulder County, CO",
+   "state": "CO",
+   "lat": 40.095,
+   "lon": -105.3977,
+   "precision": "county",
+   "ids": [
+    "boulder-county-youth-corps"
+   ]
+  },
+  {
+   "key": "Boulder, CO",
+   "state": "CO",
+   "lat": 40.0244,
+   "lon": -105.2513,
+   "precision": "city",
+   "ids": [
+    "boulder-youth-opportunities-advisory-board",
+    "cu-boulder-science-discovery-stem-research-experience",
+    "cu-boulder-science-discovery-summer-classes-high-school"
+   ]
+  },
+  {
+   "key": "Centennial, CO",
+   "state": "CO",
+   "lat": 39.5906,
+   "lon": -104.8635,
+   "precision": "city",
+   "ids": [
+    "arapahoe-douglas-works-future-u-young-adult",
+    "douglas-county-young-adult-employment-program-dcyep"
+   ]
+  },
+  {
+   "key": "Colorado Springs, CO",
+   "state": "CO",
+   "lat": 38.8673,
+   "lon": -104.7607,
+   "precision": "city",
+   "ids": [
+    "cheyenne-mountain-zoo-junior-zoo-keepers-summer-teen-program",
+    "colorado-springs-chiefs-youth-advisory-council",
+    "colorado-springs-space-foundation-space-ambassador-volunteer",
+    "colorado-springs-summer-teen-volunteering",
+    "pikes-peak-library-district-teen-volunteer",
+    "uccs-pre-collegiate-program-colorado-springs"
+   ]
+  },
+  {
+   "key": "Denver, CO",
+   "state": "CO",
+   "lat": 39.7619,
+   "lon": -104.8811,
+   "precision": "city",
+   "ids": [
+    "cu-denver-pre-collegiate-development-program-high-school",
+    "denver-art-museum-teen-studio",
+    "denver-botanic-gardens-summer-teen-volunteer",
+    "denver-health-job-shadowing-program",
+    "denver-mayors-youthworks-retention-bonus",
+    "denver-museum-of-nature-and-science-teen-science-scholars",
+    "denver-parks-rec-lifeguard-training-hiring",
+    "denver-parks-recreation-youth-meals-recreation-volunteer",
+    "denver-platteforum-artlab-paid-arts-internship",
+    "denver-public-library-teen-advisory-board",
+    "denver-public-library-teen-volunteering",
+    "denver-western-national-roundup-4h-ffa",
+    "denver-ymca-metro-teen-summer-jobs",
+    "du-lamont-summer-academy",
+    "groundwork-denver-green-teams",
+    "mca-denver-failure-lab",
+    "mca-denver-moxiemag",
+    "mca-denver-teen-artist-in-residence"
+   ]
+  },
+  {
+   "key": "Golden, CO",
+   "state": "CO",
+   "lat": 39.7425,
+   "lon": -105.2106,
+   "precision": "city",
+   "ids": [
+    "colorado-school-of-mines-forge-and-form-summer-studio",
+    "golden-jeffco-trail-stewardship-team",
+    "workforce-colorado-jefferson-clear-creek-gilpin-youth"
+   ]
+  },
+  {
+   "key": "Silt, CO",
+   "state": "CO",
+   "lat": 39.548,
+   "lon": -107.6527,
+   "precision": "city",
+   "ids": [
+    "silt-highwater-farm-fall-youth-intern",
+    "silt-highwater-farm-summer-youth-crew"
+   ]
+  },
+  {
+   "key": "Washington, DC",
+   "state": "DC",
+   "lat": 38.9042,
+   "lon": -77.0165,
+   "precision": "city",
+   "ids": [
+    "dc-childrens-national-summer-high-school-volunteer",
+    "oregon-4h-ignite-conference-dc-2027",
+    "us-senate-page-program",
+    "us-senate-youth-program"
+   ]
+  },
+  {
+   "key": "Apollo Beach, FL",
+   "state": "FL",
+   "lat": 27.763,
+   "lon": -82.4006,
+   "precision": "city",
+   "ids": [
+    "florida-fwc-suncoast-youth-conservation-center-teen-camps"
+   ]
+  },
+  {
+   "key": "Broward County, FL",
+   "state": "FL",
+   "lat": 26.1933,
+   "lon": -80.4765,
+   "precision": "county",
+   "ids": [
+    "florida-broward-summer-youth-employment-program"
+   ]
+  },
+  {
+   "key": "Coral Gables, FL",
+   "state": "FL",
+   "lat": 25.6737,
+   "lon": -80.263,
+   "precision": "city",
+   "ids": [
+    "florida-fairchild-summer-high-school-botany-internship"
+   ]
+  },
+  {
+   "key": "Fort Lauderdale, FL",
+   "state": "FL",
+   "lat": 26.1412,
+   "lon": -80.1467,
+   "precision": "city",
+   "ids": [
+    "florida-museum-of-discovery-and-science-youth-volunteers"
+   ]
+  },
+  {
+   "key": "Gainesville, FL",
+   "state": "FL",
+   "lat": 29.6789,
+   "lon": -82.3462,
+   "precision": "city",
+   "ids": [
+    "florida-museum-natural-history-junior-volunteers",
+    "florida-uf-florida-youth-institute",
+    "florida-uf-gator-ai-camp",
+    "florida-uf-gator-vet-camp",
+    "florida-uf-health-shands-volunteen",
+    "florida-uf-research-immersion-in-science-and-engineering",
+    "florida-uf-student-science-training-program",
+    "florida-uf-summer-pre-medical-professions-program"
+   ]
+  },
+  {
+   "key": "Hillsborough County, FL",
+   "state": "FL",
+   "lat": 27.8932,
+   "lon": -82.38,
+   "precision": "county",
+   "ids": [
+    "florida-hillsborough-county-parks-volunteer"
+   ]
+  },
+  {
+   "key": "Jacksonville, FL",
+   "state": "FL",
+   "lat": 30.3359,
+   "lon": -81.6618,
+   "precision": "city",
+   "ids": [
+    "florida-genesys-works-jacksonville-internship",
+    "florida-jacksonville-mayors-youth-at-work-partnership",
+    "florida-jacksonville-public-library-teen-volunteers",
+    "florida-jacksonville-zoo-zooteens",
+    "florida-moca-jacksonville-teen-council",
+    "florida-uf-health-jacksonville-student-volunteer-program"
+   ]
+  },
+  {
+   "key": "Miami, FL",
+   "state": "FL",
+   "lat": 25.7752,
+   "lon": -80.2086,
+   "precision": "city",
+   "ids": [
+    "florida-frost-science-your-shores",
+    "florida-vizcaya-teen-environmental-council",
+    "florida-zoo-miami-conservation-teen-scientist"
+   ]
+  },
+  {
+   "key": "Miami-Dade County, FL",
+   "state": "FL",
+   "lat": 25.614,
+   "lon": -80.5019,
+   "precision": "county",
+   "ids": [
+    "florida-miami-dade-public-library-volunteer",
+    "florida-miami-dade-schools-summer-youth-internship-program"
+   ]
+  },
+  {
+   "key": "North Miami, FL",
+   "state": "FL",
+   "lat": 25.9008,
+   "lon": -80.1685,
+   "precision": "city",
+   "ids": [
+    "florida-north-miami-youth-council"
+   ]
+  },
+  {
+   "key": "Orange County, FL",
+   "state": "FL",
+   "lat": 28.5152,
+   "lon": -81.3236,
+   "precision": "county",
+   "ids": [
+    "florida-orange-county-library-teen-volunteer-league"
+   ]
+  },
+  {
+   "key": "Orlando, FL",
+   "state": "FL",
+   "lat": 28.4723,
+   "lon": -81.3225,
+   "precision": "city",
+   "ids": [
+    "florida-adventhealth-central-florida-volunteer",
+    "florida-orlando-city-lifeguard-jobs",
+    "florida-orlando-science-center-catalyst-youth-volunteers",
+    "florida-orlando-summer-youth-employment-program",
+    "florida-ucf-summer-institute-ai-robotics-entrepreneurship",
+    "florida-ucf-summer-institute-computer-science"
+   ]
+  },
+  {
+   "key": "Sanford, FL",
+   "state": "FL",
+   "lat": 28.7845,
+   "lon": -81.2761,
+   "precision": "city",
+   "ids": [
+    "florida-central-florida-zoo-teen-team"
+   ]
+  },
+  {
+   "key": "Silver Springs, FL",
+   "state": "FL",
+   "lat": 29.2192,
+   "lon": -82.0555,
+   "precision": "city",
+   "ids": [
+    "florida-fwc-ocala-outdoor-adventure-camp-leadership"
+   ]
+  },
+  {
+   "key": "St. Petersburg, FL",
+   "state": "FL",
+   "lat": 27.7636,
+   "lon": -82.6456,
+   "precision": "city",
+   "ids": [
+    "florida-dali-museum-volunteen-program"
+   ]
+  },
+  {
+   "key": "Tampa, FL",
+   "state": "FL",
+   "lat": 27.9679,
+   "lon": -82.4746,
+   "precision": "city",
+   "ids": [
+    "florida-aquarium-junior-camp-counselor-volunteer",
+    "florida-tampa-general-hospital-volunteer-program",
+    "florida-tampa-hillsborough-library-teen-advisory-board",
+    "florida-tampa-mayors-youth-corps",
+    "florida-tampa-police-explorers",
+    "florida-tampa-teens-leading-change",
+    "florida-tampa-ymca-teen-achievers",
+    "florida-tampa-ymca-teen-leaders-club",
+    "florida-usf-moffitt-explorers-oncology-program"
+   ]
+  },
+  {
+   "key": "West Palm Beach, FL",
+   "state": "FL",
+   "lat": 26.7451,
+   "lon": -80.127,
+   "precision": "city",
+   "ids": [
+    "florida-fwc-everglades-youth-conservation-camp-leadership"
+   ]
+  },
+  {
+   "key": "Albany, GA",
+   "state": "GA",
+   "lat": 31.5781,
+   "lon": -84.1762,
+   "precision": "city",
+   "ids": [
+    "georgia-flint-river-fresh-new-fresh-urban-farmers"
+   ]
+  },
+  {
+   "key": "Athens, GA",
+   "state": "GA",
+   "lat": 33.9496,
+   "lon": -83.3701,
+   "precision": "city",
+   "ids": [
+    "uga-caes-agriquest-youth-summer-camp",
+    "uga-georgia-ready-summer-institute"
+   ]
+  },
+  {
+   "key": "Atlanta, GA",
+   "state": "GA",
+   "lat": 33.7629,
+   "lon": -84.4227,
+   "precision": "city",
+   "ids": [
+    "alliance-theatre-palefsky-collision-project",
+    "atlanta-21cl-syli-goizueta-business-institute",
+    "atlanta-botanical-garden-speak-volunteers",
+    "atlanta-botanical-garden-summer-high-school-internship",
+    "atlanta-business-league-student-business-shadow-project",
+    "atlanta-chris-180-youth-homelessness-and-housing",
+    "atlanta-college-and-career-academy",
+    "atlanta-community-food-bank-teen-volunteers",
+    "atlanta-parks-rec-teen-leaders",
+    "atlanta-public-schools-mentorship-internship",
+    "atlanta-public-schools-work-based-learning",
+    "atlanta-summer-youth-employment-program",
+    "atlanta-youth-mean-business-ymb-fuel",
+    "boys-girls-clubs-metro-atlanta",
+    "cdc-museum-disease-detective-camp",
+    "chattahoochee-riverkeeper-water-warriors",
+    "childrens-healthcare-of-atlanta-volunteen",
+    "emory-healthcare-summer-volunteen",
+    "emory-pre-college-program",
+    "emory-winship-summer-scholars",
+    "fernbank-youth-interpreters",
+    "fulton-county-library-teen-volunteers",
+    "fulton-county-marshal-junior-deputy-program",
+    "georgia-aquarium-teen-volunteer-program",
+    "georgia-senate-page-program",
+    "georgia-state-university-dual-enrollment",
+    "georgia-tech-dual-enrollment",
+    "georgia-tech-gtae-step",
+    "georgia-tech-summer-engineering-institute",
+    "high-museum-teen-leadership-council",
+    "lifeline-animal-project-youth-volunteers",
+    "morehouse-school-of-medicine-steam-academy",
+    "msm-grow-cells-cancer-research-summer",
+    "msm-health-careers-high-school-ambassadors",
+    "piedmont-atlanta-teen-volunteers",
+    "spelman-college-prep-institute",
+    "spelman-early-college-program",
+    "trees-atlanta-youth-tree-team",
+    "worksource-atlanta-youth-rise",
+    "ymca-metro-atlanta-teen-leaders-club",
+    "zoo-atlanta-volunteen-program"
+   ]
+  },
+  {
+   "key": "Austell, GA",
+   "state": "GA",
+   "lat": 33.8198,
+   "lon": -84.6438,
+   "precision": "city",
+   "ids": [
+    "cobb-county-police-cadet-post-5",
+    "wellstar-cobb-medical-center-volunteen"
+   ]
+  },
+  {
+   "key": "Brookhaven, GA",
+   "state": "GA",
+   "lat": 33.8608,
+   "lon": -84.3385,
+   "precision": "city",
+   "ids": [
+    "brookhaven-police-cadet-program",
+    "brookhaven-police-teen-academy"
+   ]
+  },
+  {
+   "key": "Cobb County, GA",
+   "state": "GA",
+   "lat": 33.9357,
+   "lon": -84.5778,
+   "precision": "county",
+   "ids": [
+    "cobb-schools-work-based-learning",
+    "cobbworks-boss-young-professionals"
+   ]
+  },
+  {
+   "key": "DeKalb County, GA",
+   "state": "GA",
+   "lat": 33.7707,
+   "lon": -84.2263,
+   "precision": "county",
+   "ids": [
+    "dekalb-fire-rescue-explorer-post-901",
+    "dekalb-library-teen-advisory-board",
+    "dekalb-parks-youth-sports-volunteer",
+    "dekalb-summer-youth-employment-program",
+    "worksource-dekalb-wioa-youth-services"
+   ]
+  },
+  {
+   "key": "Decatur, GA",
+   "state": "GA",
+   "lat": 33.7711,
+   "lon": -84.2958,
+   "precision": "city",
+   "ids": [
+    "goodwill-north-georgia-youth-employment-services",
+    "medshare-youth-volunteers"
+   ]
+  },
+  {
+   "key": "Dunwoody, GA",
+   "state": "GA",
+   "lat": 33.9414,
+   "lon": -84.3127,
+   "precision": "city",
+   "ids": [
+    "dunwoody-nature-center-junior-counselors"
+   ]
+  },
+  {
+   "key": "Fulton County, GA",
+   "state": "GA",
+   "lat": 33.79,
+   "lon": -84.4682,
+   "precision": "county",
+   "ids": [
+    "fulton-county-schools-work-based-learning",
+    "fulton-county-youth-commission",
+    "worksource-fulton-youth-services"
+   ]
+  },
+  {
+   "key": "Gwinnett County, GA",
+   "state": "GA",
+   "lat": 33.9588,
+   "lon": -84.0257,
+   "precision": "county",
+   "ids": [
+    "gcps-work-based-learning",
+    "gwinnett-library-teen-volunteers-and-advisory-council",
+    "gwinnett-parks-lifeguard-jobs",
+    "gwinnett-parks-summer-camp-aide-volunteer"
+   ]
+  },
+  {
+   "key": "Kennesaw, GA",
+   "state": "GA",
+   "lat": 34.0312,
+   "lon": -84.6213,
+   "precision": "city",
+   "ids": [
+    "kennesaw-police-public-safety-cadets",
+    "ksu-architecture-summer-academy",
+    "ksu-geer-college-arts-summer-intensives"
+   ]
+  },
+  {
+   "key": "Lawrenceville, GA",
+   "state": "GA",
+   "lat": 33.9529,
+   "lon": -83.9922,
+   "precision": "city",
+   "ids": [
+    "gwinnett-county-empower-gwinnett-internship",
+    "gwinnett-county-youth-police-academy",
+    "gwinnett-da-junior-district-attorney-mentorship",
+    "gwinnett-police-explorer-post-1808",
+    "gwinnett-smile-summer-legal-mentoring",
+    "gwinnett-volunteer-internship-program"
+   ]
+  },
+  {
+   "key": "Marietta, GA",
+   "state": "GA",
+   "lat": 33.9536,
+   "lon": -84.5425,
+   "precision": "city",
+   "ids": [
+    "cobb-chamber-cobb-youth-leadership",
+    "cobb-library-volunteers-15-plus",
+    "marietta-police-public-safety-cadets",
+    "wellstar-kennestone-volunteen"
+   ]
+  },
+  {
+   "key": "Roswell, GA",
+   "state": "GA",
+   "lat": 34.0395,
+   "lon": -84.3509,
+   "precision": "city",
+   "ids": [
+    "chattahoochee-nature-center-camp-lit",
+    "wellstar-north-fulton-volunteens"
+   ]
+  },
+  {
+   "key": "Stone Mountain, GA",
+   "state": "GA",
+   "lat": 33.8042,
+   "lon": -84.1714,
+   "precision": "city",
+   "ids": [
+    "dekalb-schools-work-based-learning"
+   ]
+  },
+  {
+   "key": "Stonecrest, GA",
+   "state": "GA",
+   "lat": 33.6807,
+   "lon": -84.1453,
+   "precision": "city",
+   "ids": [
+    "stonecrest-next-gen-youth-leadership"
+   ]
+  },
+  {
+   "key": "Tucker, GA",
+   "state": "GA",
+   "lat": 33.8452,
+   "lon": -84.2021,
+   "precision": "city",
+   "ids": [
+    "tucker-youth-council"
+   ]
+  },
+  {
+   "key": "Valdosta, GA",
+   "state": "GA",
+   "lat": 30.8501,
+   "lon": -83.2788,
+   "precision": "city",
+   "ids": [
+    "georgia-boys-state",
+    "georgia-girls-state"
+   ]
+  },
+  {
+   "key": "Honolulu, HI",
+   "state": "HI",
+   "lat": 21.3243,
+   "lon": -157.8476,
+   "precision": "city",
+   "ids": [
+    "hawaii-doe-state-funded-paid-student-internships",
+    "hawaii-kupu-aina-corps",
+    "hawaii-rep-matsumoto-high-school-internship",
+    "honolulu-friends-of-library-hawaii-volunteer",
+    "honolulu-hawaii-foodbank-volunteer",
+    "honolulu-hawaii-pacific-health-high-school-volunteer",
+    "honolulu-hawaiian-humane-junior-volunteer",
+    "honolulu-hawaiian-humane-teens4animals-council",
+    "honolulu-kupu-community-program",
+    "honolulu-lt-governor-high-school-internship",
+    "honolulu-museum-of-art-volunteer-program",
+    "honolulu-oha-aha-opio-youth-leadership",
+    "honolulu-parks-summer-fun-junior-leader",
+    "honolulu-parks-summer-swim-aide",
+    "honolulu-queens-teen-volunteer",
+    "honolulu-uh-manoa-early-college-scholars",
+    "honolulu-uh-manoa-medical-diagnosis-treatment-jabsom",
+    "honolulu-uh-manoa-summer-scholar-program",
+    "honolulu-waikiki-aquarium-teen-educator",
+    "honolulu-ymca-youth-and-government-model-legislature",
+    "honolulu-youth-commission",
+    "honolulu-zoo-junior-leader-program"
+   ]
+  },
+  {
+   "key": "Kahului, HI",
+   "state": "HI",
+   "lat": 20.8587,
+   "lon": -156.4684,
+   "precision": "city",
+   "ids": [
+    "maui-uh-maui-college-early-college"
+   ]
+  },
+  {
+   "key": "Kaneohe, HI",
+   "state": "HI",
+   "lat": 21.4093,
+   "lon": -157.7896,
+   "precision": "city",
+   "ids": [
+    "honolulu-uh-manoa-marine-science-investigations-himb"
+   ]
+  },
+  {
+   "key": "Waianae, HI",
+   "state": "HI",
+   "lat": 21.4535,
+   "lon": -158.1815,
+   "precision": "city",
+   "ids": [
+    "waianae-mao-organic-farms-high-school-break-internship"
+   ]
+  },
+  {
+   "key": "Ames, IA",
+   "state": "IA",
+   "lat": 42.0257,
+   "lon": -93.6225,
+   "precision": "city",
+   "ids": [
+    "ames-iowa-4h-youth-conference-iowa-state",
+    "ames-iowa-state-rise-with-wise-summer"
+   ]
+  },
+  {
+   "key": "Cedar Rapids, IA",
+   "state": "IA",
+   "lat": 41.9642,
+   "lon": -91.6792,
+   "precision": "city",
+   "ids": [
+    "cedar-rapids-parks-recreation-seasonal-jobs"
+   ]
+  },
+  {
+   "key": "Des Moines, IA",
+   "state": "IA",
+   "lat": 41.5726,
+   "lon": -93.6102,
+   "precision": "city",
+   "ids": [
+    "blank-park-zoo-zoo-crew-teen-volunteers",
+    "des-moines-animal-rescue-league-of-iowa-teen-volunteers",
+    "des-moines-art-center-teen-arts-academy",
+    "des-moines-botanical-garden-volunteers",
+    "des-moines-dmacc-summer-concurrent-enrollment",
+    "des-moines-drake-bulldogs-in-healthcare-camp",
+    "des-moines-iowaworks-wioa-youth-services",
+    "des-moines-parks-lifeguard-class-and-seasonal-jobs",
+    "des-moines-playhouse-pre-intern-program",
+    "des-moines-polk-county-conservation-summer-camp-sidekick",
+    "des-moines-polk-county-conservation-youth-corps",
+    "des-moines-public-library-volunteens",
+    "des-moines-y-excl-summer-lutheran-services",
+    "iowa-4h-state-fair-volunteer-and-youth-staff",
+    "mercyone-des-moines-teen-volunteers",
+    "oakridge-oak-futures-youth-employment",
+    "science-center-of-iowa-junior-camp-counselor",
+    "unitypoint-iowa-lutheran-hospital-volunteen"
+   ]
+  },
+  {
+   "key": "Iowa City, IA",
+   "state": "IA",
+   "lat": 41.6557,
+   "lon": -91.5309,
+   "precision": "city",
+   "ids": [
+    "iowa-city-heartland-jshs-research-symposium",
+    "iowa-city-iyws-summer-residential-writing",
+    "iowa-city-uiowa-belin-blank-sstp-research"
+   ]
+  },
+  {
+   "key": "Johnston, IA",
+   "state": "IA",
+   "lat": 41.6919,
+   "lon": -93.7245,
+   "precision": "city",
+   "ids": [
+    "iowa-american-legion-boys-state"
+   ]
+  },
+  {
+   "key": "Urbandale, IA",
+   "state": "IA",
+   "lat": 41.6367,
+   "lon": -93.7799,
+   "precision": "city",
+   "ids": [
+    "des-moines-living-history-farms-junior-day-camp-counselor"
+   ]
+  },
+  {
+   "key": "Boise, ID",
+   "state": "ID",
+   "lat": 43.5981,
+   "lon": -116.2316,
+   "precision": "city",
+   "ids": [
+    "boise-discovery-center-of-idaho-volunteers",
+    "boise-idaho-humane-society-student-service",
+    "boise-idaho-labor-wioa-youth-employment-services",
+    "boise-idaho-youth-ranch-youthworks",
+    "boise-parks-recreation-pool-lifeguards",
+    "boise-state-health-sciences-camp",
+    "boise-state-stem-gems-summer-camp",
+    "boise-watershed-action-team",
+    "idaho-4h-know-your-government-conference",
+    "idaho-state-museum-gem-high-school-internship",
+    "saint-alphonsus-boise-junior-volunteer-program",
+    "st-lukes-boise-junior-volunteers"
+   ]
+  },
+  {
+   "key": "Coeur d'Alene, ID",
+   "state": "ID",
+   "lat": 47.7029,
+   "lon": -116.7958,
+   "precision": "city",
+   "ids": [
+    "kootenai-health-teen-volunteer-program"
+   ]
+  },
+  {
+   "key": "Idaho Falls, ID",
+   "state": "ID",
+   "lat": 43.4896,
+   "lon": -112.0353,
+   "precision": "city",
+   "ids": [
+    "cei-summer-stem-bridge-idaho-falls",
+    "idaho-falls-zoo-junior-zoo-crew",
+    "inl-future-corps-high-school-internship"
+   ]
+  },
+  {
+   "key": "Ketchum, ID",
+   "state": "ID",
+   "lat": 43.6842,
+   "lon": -114.3745,
+   "precision": "city",
+   "ids": [
+    "idaho-natural-resources-camp-ketchum"
+   ]
+  },
+  {
+   "key": "Meridian, ID",
+   "state": "ID",
+   "lat": 43.6106,
+   "lon": -116.4007,
+   "precision": "city",
+   "ids": [
+    "meridian-library-district-teen-volunteers"
+   ]
+  },
+  {
+   "key": "Moscow, ID",
+   "state": "ID",
+   "lat": 46.7286,
+   "lon": -116.9993,
+   "precision": "city",
+   "ids": [
+    "uidaho-summer-design-days"
+   ]
+  },
+  {
+   "key": "Nampa, ID",
+   "state": "ID",
+   "lat": 43.5843,
+   "lon": -116.564,
+   "precision": "city",
+   "ids": [
+    "nampa-public-library-teen-volunteers",
+    "saint-alphonsus-nampa-volunteers-ages-14-plus"
+   ]
+  },
+  {
+   "key": "Arlington Heights, IL",
+   "state": "IL",
+   "lat": 42.0974,
+   "lon": -87.9817,
+   "precision": "city",
+   "ids": [
+    "arlington-heights-library-teen-volunteers",
+    "endeavor-health-northwest-community-hospital-teen-volunteer"
+   ]
+  },
+  {
+   "key": "Aurora, IL",
+   "state": "IL",
+   "lat": 41.7635,
+   "lon": -88.2901,
+   "precision": "city",
+   "ids": [
+    "aurora-better-employment-outcomes-initiative",
+    "aurora-public-library-teen-advisory-board",
+    "aurora-youth-climate-action-fund",
+    "aurora-youth-court-peer-juror",
+    "fox-valley-park-district-seasonal-jobs",
+    "fox-valley-park-district-teen-volunteers",
+    "illinois-imsa-srelo-summer-research",
+    "rush-copley-teen-volunteer",
+    "waubonsee-upward-bound-aurora"
+   ]
+  },
+  {
+   "key": "Batavia, IL",
+   "state": "IL",
+   "lat": 41.8477,
+   "lon": -88.311,
+   "precision": "city",
+   "ids": [
+    "fermilab-prism",
+    "fermilab-saturday-morning-physics",
+    "fermilab-valor-jrotc"
+   ]
+  },
+  {
+   "key": "Brookfield, IL",
+   "state": "IL",
+   "lat": 41.8251,
+   "lon": -87.8475,
+   "precision": "city",
+   "ids": [
+    "brookfield-zoo-king-conservation-science-explorers",
+    "brookfield-zoo-king-conservation-science-scholars"
+   ]
+  },
+  {
+   "key": "Champaign County, IL",
+   "state": "IL",
+   "lat": 40.139,
+   "lon": -88.197,
+   "precision": "county",
+   "ids": [
+    "champaign-forest-preserve-counselor-in-training"
+   ]
+  },
+  {
+   "key": "Champaign, IL",
+   "state": "IL",
+   "lat": 40.1141,
+   "lon": -88.2746,
+   "precision": "city",
+   "ids": [
+    "champaign-cancer-center-illinois-pre-ce",
+    "champaign-county-rpc-youth-services",
+    "champaign-humane-society-pet-pals-club",
+    "champaign-illini-summer-academies",
+    "champaign-illinois-arabic-high-school-program",
+    "champaign-illinois-discover-architecture",
+    "champaign-illinois-makerlab-summer-camps",
+    "champaign-illinois-spheres-high-school-research",
+    "champaign-illinois-summer-youth-music",
+    "champaign-park-district-summer-jobs",
+    "champaign-park-district-teen-volunteering",
+    "champaign-parkland-college-dual-credit",
+    "champaign-parkland-discoveru-teen-camps",
+    "champaign-parkland-early-college-career-academy",
+    "champaign-parkland-summer-start",
+    "champaign-police-youth-explorer-post-258",
+    "champaign-public-library-volunteers",
+    "champaign-uiuc-grainger-engineering-summer-camps",
+    "champaign-uiuc-summer-youth-employment-program",
+    "champaign-uiuc-young-scholars-research",
+    "champaign-unit4-youth-employment-services"
+   ]
+  },
+  {
+   "key": "Charleston, IL",
+   "state": "IL",
+   "lat": 39.4848,
+   "lon": -88.1776,
+   "precision": "city",
+   "ids": [
+    "illinois-boys-state"
+   ]
+  },
+  {
+   "key": "Chicago, IL",
+   "state": "IL",
+   "lat": 41.837,
+   "lon": -87.6849,
+   "precision": "city",
+   "ids": [
+    "after-school-matters-chicago",
+    "chicago-adler-planetarium-astro-ambassadors",
+    "chicago-adler-planetarium-far-horizons-teens",
+    "chicago-architecture-center-teen-ambassadors",
+    "chicago-architecture-center-teen-fellows",
+    "chicago-art-institute-teen-council",
+    "chicago-art-institute-teen-summer-internship",
+    "chicago-botanic-garden-college-first-grades-11-12",
+    "chicago-botanic-garden-science-first-grades-9-10",
+    "chicago-columbia-college-summer-at-columbia",
+    "chicago-depaul-driehaus-summer-business-institute",
+    "chicago-depaul-invest-for-kids-summer-investment-challenge",
+    "chicago-economic-awareness-council-on-the-money",
+    "chicago-field-museum-digital-learning-internship",
+    "chicago-field-museum-green-ambassadors",
+    "chicago-field-museum-teen-volunteers",
+    "chicago-free-spirit-media-teen-programs",
+    "chicago-gads-hill-center-building-leaders",
+    "chicago-genesys-works-internship",
+    "chicago-goodman-theatre-musical-theater-intensive",
+    "chicago-goodman-theatre-playbuild-youth-intensive",
+    "chicago-goodman-theatre-youth-arts-council",
+    "chicago-griffin-msi-rise-teen-program",
+    "chicago-history-museum-metro-history-day",
+    "chicago-howard-brown-broadway-youth-center",
+    "chicago-ignite-bronzeville-youth-shelter",
+    "chicago-ignite-employment-and-education",
+    "chicago-lincoln-park-zoo-camp-teen-volunteer",
+    "chicago-lincoln-park-zoo-conservation-ambassadors-board",
+    "chicago-lincoln-park-zoo-nature-buds",
+    "chicago-lincoln-park-zoo-research-apprenticeship",
+    "chicago-lincoln-park-zoo-zoo-intern-program",
+    "chicago-lincoln-park-zoo-zoo-teens-events",
+    "chicago-marwen-art-at-work",
+    "chicago-mca-teen-creative-agency",
+    "chicago-mikva-cps-student-advisory-council",
+    "chicago-mikva-safety-and-justice-council",
+    "chicago-mikva-student-election-judges",
+    "chicago-mikva-summer-fellows",
+    "chicago-mikva-teen-health-council",
+    "chicago-park-district-recreation-leader-in-training",
+    "chicago-park-district-summer-jobs",
+    "chicago-rush-university-medical-center-volunteer",
+    "chicago-saic-early-college-program",
+    "chicago-saic-early-college-summer-institute",
+    "chicago-steppenwolf-young-adult-council",
+    "chicago-summer-business-institute-internship",
+    "chicago-uchicago-cps-uchicago-program",
+    "chicago-uchicago-eyes-on-cancer",
+    "chicago-uchicago-medicine-student-volunteer",
+    "chicago-uchicago-summer-session-pre-college",
+    "chicago-uic-business-high-school-summer-days",
+    "chicago-windy-city-harvest-youth-farm",
+    "chicago-youth-works-summer-jobs",
+    "chicagobility-ages-14-15",
+    "cpl-summer-teen-internships",
+    "cpl-teen-school-year-assistantships",
+    "cps-career-and-technical-education",
+    "cps-chicago-builds",
+    "cps-cooperative-education",
+    "cps-early-college-city-colleges",
+    "cps-police-fire-training-academy",
+    "fermilab-saturday-morning-quantum-chicago"
+   ]
+  },
+  {
+   "key": "Cook County, IL",
+   "state": "IL",
+   "lat": 41.8948,
+   "lon": -87.6454,
+   "precision": "county",
+   "ids": [
+    "cook-county-forest-preserves-conservation-corps-summer",
+    "cook-county-opportunity-works-subsidized-internships"
+   ]
+  },
+  {
+   "key": "Downers Grove, IL",
+   "state": "IL",
+   "lat": 41.795,
+   "lon": -88.0211,
+   "precision": "city",
+   "ids": [
+    "downers-grove-park-district-lyman-woods-volunteers"
+   ]
+  },
+  {
+   "key": "DuPage County, IL",
+   "state": "IL",
+   "lat": 41.8521,
+   "lon": -88.086,
+   "precision": "county",
+   "ids": [
+    "dupage-forest-preserve-volunteers-teens"
+   ]
+  },
+  {
+   "key": "Elgin, IL",
+   "state": "IL",
+   "lat": 42.039,
+   "lon": -88.3257,
+   "precision": "city",
+   "ids": [
+    "ecc-dual-credit",
+    "ecc-educational-talent-search",
+    "ecc-upward-bound",
+    "elgin-fire-department-explorer-post-439",
+    "elgin-hawthorne-hill-nature-center-volunteers",
+    "elgin-police-explorer-post-1445",
+    "elgin-teen-life-police-and-library",
+    "gail-borden-teen-volunteers",
+    "ywca-elgin-youth-leadership-scholarship"
+   ]
+  },
+  {
+   "key": "Elk Grove Village, IL",
+   "state": "IL",
+   "lat": 42.005,
+   "lon": -87.992,
+   "precision": "city",
+   "ids": [
+    "ascension-alexian-brothers-teen-volunteer",
+    "elk-grove-village-library-teen-service-hours-and-jr-tag"
+   ]
+  },
+  {
+   "key": "Elmhurst, IL",
+   "state": "IL",
+   "lat": 41.897,
+   "lon": -87.9437,
+   "precision": "city",
+   "ids": [
+    "endeavor-health-elmhurst-hospital-teen-volunteer"
+   ]
+  },
+  {
+   "key": "Evanston, IL",
+   "state": "IL",
+   "lat": 42.0464,
+   "lon": -87.6944,
+   "precision": "city",
+   "ids": [
+    "endeavor-health-evanston-hospital-teen-volunteer",
+    "evanston-art-center-teen-board",
+    "evanston-aspire-careers-in-healthcare",
+    "evanston-eths-work-based-learning",
+    "evanston-mayors-summer-youth-employment",
+    "northwestern-ctd-civic-leadership-institute",
+    "northwestern-medill-cherubs-journalism",
+    "northwestern-nhsi-film-video",
+    "northwestern-nhsi-theatre-arts",
+    "the-trade-collective-evanston",
+    "youth-job-center-evanston"
+   ]
+  },
+  {
+   "key": "Geneva, IL",
+   "state": "IL",
+   "lat": 41.8821,
+   "lon": -88.33,
+   "precision": "city",
+   "ids": [
+    "geneva-library-volunteens"
+   ]
+  },
+  {
+   "key": "Glenview, IL",
+   "state": "IL",
+   "lat": 42.0852,
+   "lon": -87.8274,
+   "precision": "city",
+   "ids": [
+    "endeavor-health-glenbrook-hospital-teen-volunteer",
+    "glenview-library-youth-volunteers-and-tab"
+   ]
+  },
+  {
+   "key": "Gurnee, IL",
+   "state": "IL",
+   "lat": 42.37,
+   "lon": -87.937,
+   "precision": "city",
+   "ids": [
+    "warren-newport-library-student-volunteers-and-tag"
+   ]
+  },
+  {
+   "key": "Highland Park, IL",
+   "state": "IL",
+   "lat": 42.1824,
+   "lon": -87.8108,
+   "precision": "city",
+   "ids": [
+    "endeavor-health-highland-park-hospital-teen-volunteer"
+   ]
+  },
+  {
+   "key": "Hoffman Estates, IL",
+   "state": "IL",
+   "lat": 42.0645,
+   "lon": -88.1446,
+   "precision": "city",
+   "ids": [
+    "ascension-saint-alexius-teen-volunteer"
+   ]
+  },
+  {
+   "key": "Kane County, IL",
+   "state": "IL",
+   "lat": 41.9396,
+   "lon": -88.428,
+   "precision": "county",
+   "ids": [
+    "kane-county-forest-preserve-volunteer-workdays"
+   ]
+  },
+  {
+   "key": "Lisle, IL",
+   "state": "IL",
+   "lat": 41.7921,
+   "lon": -88.0877,
+   "precision": "city",
+   "ids": [
+    "morton-arboretum-youth-volunteer-program",
+    "worknet-dupage-youth"
+   ]
+  },
+  {
+   "key": "Monticello, IL",
+   "state": "IL",
+   "lat": 40.0335,
+   "lon": -88.5741,
+   "precision": "city",
+   "ids": [
+    "champaign-4h-memorial-camp-junior-counselor"
+   ]
+  },
+  {
+   "key": "Naperville, IL",
+   "state": "IL",
+   "lat": 41.7492,
+   "lon": -88.162,
+   "precision": "city",
+   "ids": [
+    "dupage-childrens-museum-teen-and-junior-volunteers",
+    "endeavor-health-edward-hospital-student-volunteer",
+    "kidsmatter-naperville-senior-high-board",
+    "naperville-community-job-fair",
+    "naperville-library-teen-pitch-program",
+    "naperville-library-teen-volunteers-and-tag",
+    "naperville-mayors-chief-of-staff-internship",
+    "naperville-park-district-seasonal-jobs",
+    "naperville-park-district-teen-volunteers",
+    "naperville-police-cadet-program",
+    "naperville-police-youth-academy",
+    "naperville-student-board-and-commission-representatives"
+   ]
+  },
+  {
+   "key": "North Chicago, IL",
+   "state": "IL",
+   "lat": 42.3167,
+   "lon": -87.8592,
+   "precision": "city",
+   "ids": [
+    "rfu-campmed",
+    "rfu-inspire-summer-research",
+    "rfu-nursing-inspire",
+    "rfu-science-saturdays",
+    "rfu-virtual-mentor-program"
+   ]
+  },
+  {
+   "key": "Oak Park, IL",
+   "state": "IL",
+   "lat": 41.8872,
+   "lon": -87.7899,
+   "precision": "city",
+   "ids": [
+    "oak-park-library-leading-edge-teen-advisory-board",
+    "oak-park-park-district-acorns-to-oaks-volunteers",
+    "oak-park-park-district-seasonal-jobs",
+    "pleasant-home-oak-park-student-docents",
+    "rush-oak-park-hospital-summer-student-volunteer"
+   ]
+  },
+  {
+   "key": "Palatine, IL",
+   "state": "IL",
+   "lat": 42.1165,
+   "lon": -88.0444,
+   "precision": "city",
+   "ids": [
+    "palatine-library-teen-volunteers-and-tab"
+   ]
+  },
+  {
+   "key": "River Forest, IL",
+   "state": "IL",
+   "lat": 41.8949,
+   "lon": -87.8191,
+   "precision": "city",
+   "ids": [
+    "river-forest-library-tween-teen-volunteers-book-buddies"
+   ]
+  },
+  {
+   "key": "Schaumburg, IL",
+   "state": "IL",
+   "lat": 42.0284,
+   "lon": -88.0847,
+   "precision": "city",
+   "ids": [
+    "schaumburg-library-student-advisory-trustee",
+    "schaumburg-library-volunteer-squad",
+    "schaumburg-park-district-aquatics-seasonal-jobs"
+   ]
+  },
+  {
+   "key": "Skokie, IL",
+   "state": "IL",
+   "lat": 42.036,
+   "lon": -87.74,
+   "precision": "city",
+   "ids": [
+    "endeavor-health-skokie-hospital-teen-volunteer",
+    "skokie-library-teen-volunteers-and-council"
+   ]
+  },
+  {
+   "key": "Springfield, IL",
+   "state": "IL",
+   "lat": 39.7911,
+   "lon": -89.6446,
+   "precision": "city",
+   "ids": [
+    "illinois-state-fair-volunteer-program",
+    "illinois-ymca-youth-and-government"
+   ]
+  },
+  {
+   "key": "St. Charles, IL",
+   "state": "IL",
+   "lat": 41.9194,
+   "lon": -88.3107,
+   "precision": "city",
+   "ids": [
+    "st-charles-library-high-school-volunteers"
+   ]
+  },
+  {
+   "key": "Sugar Grove, IL",
+   "state": "IL",
+   "lat": 41.7774,
+   "lon": -88.4465,
+   "precision": "city",
+   "ids": [
+    "sugar-grove-library-volunteens"
+   ]
+  },
+  {
+   "key": "Urbana, IL",
+   "state": "IL",
+   "lat": 40.1101,
+   "lon": -88.1973,
+   "precision": "city",
+   "ids": [
+    "champaign-carle-foundation-hospital-student-volunteers",
+    "champaign-fab-lab-summer-camps",
+    "champaign-osf-sacred-heart-urbana-volunteers",
+    "champaign-urbana-free-library-teen-volunteers",
+    "champaign-urbana-park-district-cit",
+    "champaign-urbana-park-district-fresh-crew"
+   ]
+  },
+  {
+   "key": "Waukegan, IL",
+   "state": "IL",
+   "lat": 42.3694,
+   "lon": -87.8709,
+   "precision": "city",
+   "ids": [
+    "waukegan-park-district-volunteers",
+    "waukegan-public-library-teen-volunteers"
+   ]
+  },
+  {
+   "key": "Wheaton, IL",
+   "state": "IL",
+   "lat": 41.8568,
+   "lon": -88.1081,
+   "precision": "city",
+   "ids": [
+    "wheaton-public-library-teen-volunteers-and-council"
+   ]
+  },
+  {
+   "key": "Wilmette, IL",
+   "state": "IL",
+   "lat": 42.0773,
+   "lon": -87.7286,
+   "precision": "city",
+   "ids": [
+    "wilmette-library-teen-volunteers"
+   ]
+  },
+  {
+   "key": "Woodridge, IL",
+   "state": "IL",
+   "lat": 41.7374,
+   "lon": -88.0441,
+   "precision": "city",
+   "ids": [
+    "woodridge-library-teen-volunteers"
+   ]
+  },
+  {
+   "key": "Angola, IN",
+   "state": "IN",
+   "lat": 41.6473,
+   "lon": -85.0082,
+   "precision": "city",
+   "ids": [
+    "indiana-hoosier-boys-state"
+   ]
+  },
+  {
+   "key": "Bloomington, IN",
+   "state": "IN",
+   "lat": 39.1637,
+   "lon": -86.5243,
+   "precision": "city",
+   "ids": [
+    "bloomington-animal-shelter-volunteers",
+    "bloomington-canopybloomington-youth-tree-tenders",
+    "bloomington-eskenazi-museum-teen-art-week",
+    "bloomington-habitat-monroe-county-volunteer",
+    "bloomington-iu-acting-for-the-camera",
+    "bloomington-iu-camp-soul",
+    "bloomington-iu-cinema-academy",
+    "bloomington-iu-factor-future-educators",
+    "bloomington-iu-game-development-camp",
+    "bloomington-iu-high-school-journalism-institute",
+    "bloomington-iu-holland-rise-stem-research",
+    "bloomington-iu-holland-summer-enrichment-program",
+    "bloomington-iu-holland-summer-science-research-program",
+    "bloomington-iu-hoosier-debate-camp",
+    "bloomington-iu-hsji-one-day-journalism-workshop",
+    "bloomington-iu-jacobs-dance-summer-intensives",
+    "bloomington-iu-jacobs-summer-brass-academy",
+    "bloomington-iu-jacobs-summer-jazz-workshop",
+    "bloomington-iu-jacobs-summer-music-clinic",
+    "bloomington-iu-jacobs-summer-piano-academy",
+    "bloomington-iu-jacobs-summer-saxophone-academy",
+    "bloomington-iu-jacobs-summer-string-academy",
+    "bloomington-iu-kelley-sprint-case-competition",
+    "bloomington-iu-kelley-womens-leadership-institute",
+    "bloomington-iu-luddy-cybersecurity-immersion-camp",
+    "bloomington-iu-luddy-precollege-stem-camp",
+    "bloomington-iu-midsummer-theatre-camp",
+    "bloomington-iu-oneill-rising-leaders-program",
+    "bloomington-iu-open-program",
+    "bloomington-iu-youth-environmental-leadership-summit",
+    "bloomington-monroe-county-4-h",
+    "bloomington-volunteer-network",
+    "bloomington-wonderlab-teen-volunteer",
+    "bloomington-wonderlab-wondercamp-high-school-intern"
+   ]
+  },
+  {
+   "key": "Indianapolis, IN",
+   "state": "IN",
+   "lat": 39.7767,
+   "lon": -86.1459,
+   "precision": "city",
+   "ids": [
+    "indiana-4h-day-at-the-statehouse",
+    "indiana-4h-state-fair-exhibit-hall-worker",
+    "indiana-ymca-youth-and-government"
+   ]
+  },
+  {
+   "key": "Lafayette, IN",
+   "state": "IN",
+   "lat": 40.3995,
+   "lon": -86.8628,
+   "precision": "city",
+   "ids": [
+    "lafayette-art-museum-greater-lafayette-volunteer",
+    "lafayette-columbian-park-zoo-teens",
+    "lafayette-food-finders-food-bank-volunteer",
+    "lafayette-franciscan-health-hospital-volunteer",
+    "lafayette-greater-lafayette-career-academy",
+    "lafayette-greater-lafayette-career-plus-hireme",
+    "lafayette-parks-lifeguard-certification-course",
+    "lafayette-parks-workreation",
+    "lafayette-tcha-history-volunteer",
+    "lafayette-tcpl-teen-summer-reading-volunteer",
+    "lafayette-tippecanoe-county-4-h",
+    "lafayette-ymca-kidzone-attendant",
+    "lafayette-ymca-leaders-in-training"
+   ]
+  },
+  {
+   "key": "West Lafayette, IN",
+   "state": "IN",
+   "lat": 40.4437,
+   "lon": -86.9236,
+   "precision": "city",
+   "ids": [
+    "indiana-4h-academy-at-purdue",
+    "indiana-4h-round-up-at-purdue",
+    "indiana-world-food-prize-youth-institute-purdue",
+    "lafayette-purdue-agriculture-science-research-institute",
+    "lafayette-purdue-boiler-vet-camp",
+    "lafayette-purdue-c-pasa-high-school-camp",
+    "lafayette-purdue-ger2i-pulsar-summer-residential",
+    "lafayette-purdue-polytechnic-team-camp",
+    "lafayette-purdue-polytechnic-total-camp",
+    "lafayette-purdue-sciencescape",
+    "lafayette-purdue-step-engineering-camp",
+    "lafayette-purdue-summer-college-high-school"
+   ]
+  },
+  {
+   "key": "Junction City, KS",
+   "state": "KS",
+   "lat": 39.0272,
+   "lon": -96.8523,
+   "precision": "city",
+   "ids": [
+    "kansas-rock-springs-ranch-lit-cit"
+   ]
+  },
+  {
+   "key": "Kansas City, KS",
+   "state": "KS",
+   "lat": 39.1225,
+   "lon": -94.7418,
+   "precision": "city",
+   "ids": [
+    "kansas-city-ku-health-system-volunteen"
+   ]
+  },
+  {
+   "key": "Lawrence, KS",
+   "state": "KS",
+   "lat": 38.9596,
+   "lon": -95.2655,
+   "precision": "city",
+   "ids": [
+    "lawrence-ku-design-camp",
+    "lawrence-ku-engineering-summer-camp",
+    "lawrence-public-library-volunteen"
+   ]
+  },
+  {
+   "key": "Manhattan, KS",
+   "state": "KS",
+   "lat": 39.1883,
+   "lon": -96.6059,
+   "precision": "city",
+   "ids": [
+    "kansas-4h-discovery-days-k-state",
+    "manhattan-ks-k-state-animal-sciences-leadership-academy",
+    "manhattan-ks-k-state-feeding-your-future-camp",
+    "manhattan-ks-k-state-health-professions-exploration-program",
+    "manhattan-ks-k-state-summer-design-experience",
+    "manhattan-ks-k-state-summer-fashion-institute",
+    "manhattan-ks-k-state-vetmed-rocks-camp"
+   ]
+  },
+  {
+   "key": "Overland Park, KS",
+   "state": "KS",
+   "lat": 38.889,
+   "lon": -94.6906,
+   "precision": "city",
+   "ids": [
+    "johnson-county-library-teen-volunteer",
+    "overland-park-outdoor-lifeguard"
+   ]
+  },
+  {
+   "key": "Topeka, KS",
+   "state": "KS",
+   "lat": 39.0347,
+   "lon": -95.6962,
+   "precision": "city",
+   "ids": [
+    "topeka-shawnee-county-public-library-teen-volunteer",
+    "topeka-zoo-ecoclub"
+   ]
+  },
+  {
+   "key": "Wichita, KS",
+   "state": "KS",
+   "lat": 37.6893,
+   "lon": -97.3484,
+   "precision": "city",
+   "ids": [
+    "wichita-art-museum-teen-studio-workshop",
+    "wichita-exploration-place-volunteer",
+    "wichita-historical-museum-teens-through-time",
+    "wichita-public-library-teen-advisory-board-and-volunteers",
+    "wichita-sedgwick-county-4h-join",
+    "wichita-sedgwick-county-zoo-special-event-volunteer",
+    "wichita-wesley-medical-center-volunteer",
+    "wichita-wsu-engineering-summer-camps",
+    "wichita-wsu-upward-bound-math-science",
+    "wichita-youth-employment-project-yep"
+   ]
+  },
+  {
+   "key": "Highland Heights, KY",
+   "state": "KY",
+   "lat": 39.0355,
+   "lon": -84.4566,
+   "precision": "city",
+   "ids": [
+    "kentucky-governors-school-for-the-arts"
+   ]
+  },
+  {
+   "key": "Lexington, KY",
+   "state": "KY",
+   "lat": 38.0406,
+   "lon": -84.4582,
+   "precision": "city",
+   "ids": [
+    "kentucky-4h-teen-conference",
+    "lexington-kentucky-horse-park-minor-volunteer",
+    "lexington-neighborhood-youth-council",
+    "lexington-public-library-volunteer",
+    "lexington-summer-youth-job-training-program",
+    "lexington-uk-healthcare-jumpstart-program",
+    "lexington-uk-healthcare-summer-teen-volunteer"
+   ]
+  },
+  {
+   "key": "Louisville, KY",
+   "state": "KY",
+   "lat": 38.2247,
+   "lon": -85.7411,
+   "precision": "city",
+   "ids": [
+    "louisville-baptist-health-junior-volunteer",
+    "louisville-dare-to-care-youth-volunteer",
+    "louisville-frazier-museum-teen-camp-volunteer",
+    "louisville-free-public-library-teen-volunteer",
+    "louisville-kentucky-performing-arts-chorus-volunteer",
+    "louisville-kentucky-shakespeare-globe-players",
+    "louisville-muhammad-ali-center-council-of-students",
+    "louisville-nature-center-forest-restoration-volunteer",
+    "louisville-norton-healthcare-summer-teen-volunteer",
+    "louisville-summerworks",
+    "louisville-uofl-brown-cancer-center-hs-summer-research",
+    "louisville-ymca-camp-piomingo-leadership-development",
+    "louisville-ymca-lifeguard-training",
+    "louisville-zoo-volunteen"
+   ]
+  },
+  {
+   "key": "Murray, KY",
+   "state": "KY",
+   "lat": 36.6142,
+   "lon": -88.3221,
+   "precision": "city",
+   "ids": [
+    "kentucky-junior-academy-of-science"
+   ]
+  },
+  {
+   "key": "Amherst, MA",
+   "state": "MA",
+   "lat": 42.3635,
+   "lon": -72.5073,
+   "precision": "city",
+   "ids": [
+    "massachusetts-umass-amherst-pre-college"
+   ]
+  },
+  {
+   "key": "Boston, MA",
+   "state": "MA",
+   "lat": 42.3327,
+   "lon": -71.0135,
+   "precision": "city",
+   "ids": [
+    "boston-artists-for-humanity-teen-jobs",
+    "boston-bcyf-superteens",
+    "boston-berklee-aspire-five-week-music-performance",
+    "boston-bidmc-summer-youth-jobs-program",
+    "boston-bmc-junior-summer-volunteer-program",
+    "boston-boys-girls-clubs-ready-to-work",
+    "boston-bpl-teen-volunteer-program",
+    "boston-bu-academic-immersion",
+    "boston-bu-high-school-honors",
+    "boston-bu-rise-internship-practicum",
+    "boston-bu-summer-challenge",
+    "boston-center-for-teen-empowerment-youth-organizers",
+    "boston-civil-air-patrol-boston-cadet-squadron",
+    "boston-franklin-park-zoo-school-year-zooteens",
+    "boston-franklin-park-zoo-summer-zooteen",
+    "boston-futurebos-youth-jobs",
+    "boston-hyde-square-task-force-jovenes-en-accion",
+    "boston-ica-teens-paid-programs",
+    "boston-mass-general-brigham-youth-program",
+    "boston-mayors-youth-council",
+    "boston-mfa-teen-arts-council",
+    "boston-museum-of-science-youth-internships",
+    "boston-museum-of-science-youth-volunteers",
+    "boston-new-england-aquarium-teen-internships",
+    "boston-northeastern-accelerate-pre-college",
+    "boston-northeastern-young-scholars-program",
+    "boston-nps-youth-conservation-corps",
+    "boston-sociedad-latina-youth-leaders",
+    "boston-youth-lead-the-change"
+   ]
+  },
+  {
+   "key": "Cambridge, MA",
+   "state": "MA",
+   "lat": 42.376,
+   "lon": -71.1187,
+   "precision": "city",
+   "ids": [
+    "boston-cambridge-msyep",
+    "boston-harvard-crimson-summer-academy",
+    "boston-harvard-summer-school-secondary-school-program",
+    "boston-mit-beaver-works-summer-institute",
+    "boston-mit-lincoln-lab-llcipher",
+    "boston-mit-mites-saturdays",
+    "boston-mit-mites-summer",
+    "boston-mit-primes",
+    "boston-mit-womens-technology-program",
+    "cambridge-public-library-teen-advisory-board",
+    "rsi-mit-cee"
+   ]
+  },
+  {
+   "key": "Concord, MA",
+   "state": "MA",
+   "lat": 42.4629,
+   "lon": -71.3645,
+   "precision": "city",
+   "ids": [
+    "concord-gaining-ground-high-school-farm-team"
+   ]
+  },
+  {
+   "key": "Easton, MA",
+   "state": "MA",
+   "lat": 42.0392,
+   "lon": -71.109,
+   "precision": "city",
+   "ids": [
+    "massachusetts-ala-girls-state",
+    "massachusetts-american-legion-boys-state"
+   ]
+  },
+  {
+   "key": "Lowell, MA",
+   "state": "MA",
+   "lat": 42.639,
+   "lon": -71.321,
+   "precision": "city",
+   "ids": [
+    "massachusetts-umass-lowell-propel-research-internship"
+   ]
+  },
+  {
+   "key": "North Grafton, MA",
+   "state": "MA",
+   "lat": 42.2313,
+   "lon": -71.6926,
+   "precision": "manual",
+   "ids": [
+    "grafton-job-corps-center"
+   ]
+  },
+  {
+   "key": "Northampton, MA",
+   "state": "MA",
+   "lat": 42.327,
+   "lon": -72.6746,
+   "precision": "city",
+   "ids": [
+    "massachusetts-smith-college-summer-science-engineering"
+   ]
+  },
+  {
+   "key": "Pittsfield, MA",
+   "state": "MA",
+   "lat": 42.4518,
+   "lon": -73.2607,
+   "precision": "city",
+   "ids": [
+    "pittsfield-roots-rising-youth-farm-crews"
+   ]
+  },
+  {
+   "key": "Worcester, MA",
+   "state": "MA",
+   "lat": 42.2695,
+   "lon": -71.8078,
+   "precision": "city",
+   "ids": [
+    "massachusetts-worcester-art-museum-teen-internship",
+    "massachusetts-wpi-frontiers-summer-program",
+    "worcester-rec-youthgrow"
+   ]
+  },
+  {
+   "key": "Accident, MD",
+   "state": "MD",
+   "lat": 39.6257,
+   "lon": -79.32,
+   "precision": "city",
+   "ids": [
+    "maryland-natural-resources-careers-camp"
+   ]
+  },
+  {
+   "key": "Annapolis, MD",
+   "state": "MD",
+   "lat": 38.9722,
+   "lon": -76.5053,
+   "precision": "city",
+   "ids": [
+    "md-general-assembly-student-page-program"
+   ]
+  },
+  {
+   "key": "Anne Arundel County, MD",
+   "state": "MD",
+   "lat": 38.9917,
+   "lon": -76.5609,
+   "precision": "county",
+   "ids": [
+    "baltimore-anne-arundel-library-volunteens"
+   ]
+  },
+  {
+   "key": "Baltimore County, MD",
+   "state": "MD",
+   "lat": 39.4432,
+   "lon": -76.6166,
+   "precision": "county",
+   "ids": [
+    "baltimore-county-library-teen-service-learning"
+   ]
+  },
+  {
+   "key": "Baltimore, MD",
+   "state": "MD",
+   "lat": 39.3001,
+   "lon": -76.6105,
+   "precision": "city",
+   "ids": [
+    "baltimore-city-youth-commission",
+    "baltimore-civic-works-conservation-leadership-corps",
+    "baltimore-maryland-science-center-youth-volunteer",
+    "baltimore-mica-pre-college-summer-intensive",
+    "baltimore-morgan-state-saams-actuarial-academy",
+    "baltimore-national-aquarium-youth-exhibit-guide",
+    "baltimore-parks-and-people-branches-internship",
+    "baltimore-pratt-library-teen-library-board",
+    "baltimore-pratt-library-youth-collective",
+    "baltimore-umb-ramp-research-mentoring-program",
+    "baltimore-wide-angle-high-school-media-classes",
+    "baltimore-wide-angle-mediaworks-summer",
+    "baltimore-youthworks-summer-jobs",
+    "maryland-zoo-teen-volunteer-program"
+   ]
+  },
+  {
+   "key": "Catonsville, MD",
+   "state": "MD",
+   "lat": 39.2642,
+   "lon": -76.7424,
+   "precision": "city",
+   "ids": [
+    "baltimore-umbc-summer-enrichment-academy"
+   ]
+  },
+  {
+   "key": "College Park, MD",
+   "state": "MD",
+   "lat": 38.9967,
+   "lon": -76.9364,
+   "precision": "city",
+   "ids": [
+    "college-park-composite-squadron-cap-cadets",
+    "college-park-pg-parks-teen-performance-ensemble",
+    "college-park-umd-brin-maryland-mathematics-camp",
+    "college-park-umd-discovering-engineering",
+    "college-park-umd-merrill-digital-storytelling-camp",
+    "college-park-umd-pre-college-scholars-program",
+    "college-park-umd-sparc-robotics-certificate",
+    "college-park-umd-volcano-camp-pg-county",
+    "college-park-umd-wie-change-the-world",
+    "college-park-urban-forestry-careers-camp",
+    "umd-esteem-ser-quest",
+    "umd-terp-young-scholars"
+   ]
+  },
+  {
+   "key": "Frederick County, MD",
+   "state": "MD",
+   "lat": 39.4701,
+   "lon": -77.3976,
+   "precision": "county",
+   "ids": [
+    "maryland-frederick-county-library-volunteers"
+   ]
+  },
+  {
+   "key": "Gaithersburg, MD",
+   "state": "MD",
+   "lat": 39.1486,
+   "lon": -77.1951,
+   "precision": "city",
+   "ids": [
+    "nist-ship-gaithersburg"
+   ]
+  },
+  {
+   "key": "Greenbelt, MD",
+   "state": "MD",
+   "lat": 38.9947,
+   "lon": -76.8854,
+   "precision": "city",
+   "ids": [
+    "college-park-greenbelt-youth-advisory-committee",
+    "college-park-nasa-goddard-space-club-scholars"
+   ]
+  },
+  {
+   "key": "La Plata, MD",
+   "state": "MD",
+   "lat": 38.5434,
+   "lon": -76.9698,
+   "precision": "city",
+   "ids": [
+    "la-plata-um-charles-regional-volunteen-program"
+   ]
+  },
+  {
+   "key": "Lanham, MD",
+   "state": "MD",
+   "lat": 38.9622,
+   "lon": -76.8392,
+   "precision": "city",
+   "ids": [
+    "college-park-luminis-doctors-community-student-volunteers"
+   ]
+  },
+  {
+   "key": "Largo, MD",
+   "state": "MD",
+   "lat": 38.8839,
+   "lon": -76.8249,
+   "precision": "city",
+   "ids": [
+    "college-park-pgcc-dual-and-concurrent-enrollment",
+    "college-park-um-capital-region-health-student-volunteers"
+   ]
+  },
+  {
+   "key": "Montgomery County, MD",
+   "state": "MD",
+   "lat": 39.1374,
+   "lon": -77.2031,
+   "precision": "county",
+   "ids": [
+    "mcpl-teen-advisory-board",
+    "montgomery-county-recreation-seasonal-jobs",
+    "montgomery-county-summer-rise",
+    "montgomery-county-teenworks-employment-program",
+    "montgomery-parks-student-service-learning"
+   ]
+  },
+  {
+   "key": "North Bethesda, MD",
+   "state": "MD",
+   "lat": 39.0367,
+   "lon": -77.1202,
+   "precision": "city",
+   "ids": [
+    "college-park-umd-mathbio-summer-camp"
+   ]
+  },
+  {
+   "key": "Prince George's County, MD",
+   "state": "MD",
+   "lat": 38.8293,
+   "lon": -76.8482,
+   "precision": "county",
+   "ids": [
+    "college-park-pg-parks-artrepreneur",
+    "college-park-pg-parks-shakespeare-in-the-parks-apprenticeship",
+    "college-park-pg-parks-teen-arts-council",
+    "college-park-pg-parks-young-stars",
+    "pg-county-summer-youth-enrichment-program",
+    "pg-parks-summer-youth-volunteers",
+    "pg-parks-youth-advisory-council",
+    "pgcmls-library-volunteering-volunteen"
+   ]
+  },
+  {
+   "key": "Rockville, MD",
+   "state": "MD",
+   "lat": 39.0837,
+   "lon": -77.1556,
+   "precision": "city",
+   "ids": [
+    "maryland-rockville-swim-center-summer-lifeguards"
+   ]
+  },
+  {
+   "key": "Salisbury, MD",
+   "state": "MD",
+   "lat": 38.3752,
+   "lon": -75.5866,
+   "precision": "city",
+   "ids": [
+    "md-girls-state"
+   ]
+  },
+  {
+   "key": "Timonium, MD",
+   "state": "MD",
+   "lat": 39.4442,
+   "lon": -76.6017,
+   "precision": "city",
+   "ids": [
+    "maryland-state-fair-4h-youth-fair-employee"
+   ]
+  },
+  {
+   "key": "Towson, MD",
+   "state": "MD",
+   "lat": 39.3942,
+   "lon": -76.6178,
+   "precision": "city",
+   "ids": [
+    "baltimore-towson-teacher-scholars-summer-institute"
+   ]
+  },
+  {
+   "key": "Westminster, MD",
+   "state": "MD",
+   "lat": 39.5792,
+   "lon": -77.0067,
+   "precision": "city",
+   "ids": [
+    "md-boys-state"
+   ]
+  },
+  {
+   "key": "Woodstock, MD",
+   "state": "MD",
+   "lat": 39.3375,
+   "lon": -76.8482,
+   "precision": "manual",
+   "ids": [
+    "md-job-corps-woodstock"
+   ]
+  },
+  {
+   "key": "Ann Arbor, MI",
+   "state": "MI",
+   "lat": 42.2761,
+   "lon": -83.7312,
+   "precision": "city",
+   "ids": [
+    "ann-arbor-a2so-young-artist-competition",
+    "ann-arbor-aaacf-youth-council",
+    "ann-arbor-aadl-teen-volunteer",
+    "ann-arbor-biomed-focus-michigan-medicine",
+    "ann-arbor-food-gatherers-volunteer",
+    "ann-arbor-hands-on-museum-leslie-volunteer",
+    "ann-arbor-hshv-junior-volunteer",
+    "ann-arbor-marquee-arts-young-filmmakers-camp",
+    "ann-arbor-mi-internship-prep-michigan-works-southeast",
+    "ann-arbor-neutral-zone-teen-programs",
+    "ann-arbor-parks-lifeguard-certification",
+    "ann-arbor-parks-volunteer-in-the-parks",
+    "ann-arbor-peace-neighborhood-center-summer-camp-counselors",
+    "ann-arbor-summer-festival-volunteer",
+    "ann-arbor-summerworks-washtenaw",
+    "ann-arbor-trinity-health-teen-volunteer",
+    "ann-arbor-washtenaw-county-youth-commission",
+    "ann-arbor-wcc-dual-enrollment",
+    "ann-arbor-wtmc-washtenaw-technical-middle-college",
+    "ann-arbor-ymca-youth-volunteer-corps"
+   ]
+  },
+  {
+   "key": "Bloomfield Hills, MI",
+   "state": "MI",
+   "lat": 42.5814,
+   "lon": -83.2464,
+   "precision": "city",
+   "ids": [
+    "michigan-cranbrook-institute-of-science-volunteer"
+   ]
+  },
+  {
+   "key": "Chelsea, MI",
+   "state": "MI",
+   "lat": 42.3114,
+   "lon": -84.0194,
+   "precision": "city",
+   "ids": [
+    "ann-arbor-chelsea-district-library-teen-service-group"
+   ]
+  },
+  {
+   "key": "DeWitt, MI",
+   "state": "MI",
+   "lat": 42.8388,
+   "lon": -84.5838,
+   "precision": "city",
+   "ids": [
+    "lansing-dewitt-library-summer-volunteen"
+   ]
+  },
+  {
+   "key": "Dearborn, MI",
+   "state": "MI",
+   "lat": 42.3131,
+   "lon": -83.2115,
+   "precision": "city",
+   "ids": [
+    "michigan-dearborn-public-library-teen-volunteer"
+   ]
+  },
+  {
+   "key": "Detroit, MI",
+   "state": "MI",
+   "lat": 42.383,
+   "lon": -83.1022,
+   "precision": "city",
+   "ids": [
+    "michigan-detroit-at-work-year-round-youth-program",
+    "michigan-detroit-grow-detroits-young-talent",
+    "michigan-detroit-henry-ford-ryse-med",
+    "michigan-detroit-henry-ford-surgery-high-school-mentorship",
+    "michigan-detroit-medical-mentors-pathway-program-m2p2",
+    "michigan-detroit-michigan-science-center-volunteer",
+    "michigan-detroit-udm-beginners-investment-camp",
+    "michigan-detroit-udm-youth-health-exploration-camp",
+    "michigan-detroit-wayne-state-bcap-summer-research",
+    "michigan-detroit-wayne-state-engineering-summer-academy-high-school",
+    "michigan-forgotten-harvest-volunteer"
+   ]
+  },
+  {
+   "key": "East Lansing, MI",
+   "state": "MI",
+   "lat": 42.7489,
+   "lon": -84.4824,
+   "precision": "city",
+   "ids": [
+    "lansing-east-lansing-environmental-stewardship-workdays",
+    "lansing-east-lansing-family-aquatic-center-jobs",
+    "lansing-east-lansing-library-teen-action-group",
+    "lansing-frib-pan-physics-of-atomic-nuclei",
+    "lansing-frib-ping-nuclear-physics",
+    "lansing-michigan-4-h-exploration-days",
+    "lansing-msu-dual-enrollment",
+    "lansing-msu-filmmaker-camp",
+    "lansing-msu-high-school-engineering-institute",
+    "lansing-msu-is4gt-pre-law-pre-med-ed",
+    "lansing-msu-making-a-game-of-it-ai",
+    "lansing-msu-mipa-summer-journalism-workshop",
+    "lansing-msu-model-united-nations",
+    "lansing-msu-mstl-math-science-technology-leadership",
+    "lansing-msu-quantum-motor-city-camp",
+    "lansing-msu-teacher-education-kinesiology-academy",
+    "lansing-wharton-center-take-it-from-the-top",
+    "lansing-wharton-center-young-playwrights-festival",
+    "michigan-ala-girls-state"
+   ]
+  },
+  {
+   "key": "Hillsdale, MI",
+   "state": "MI",
+   "lat": 41.9275,
+   "lon": -84.6375,
+   "precision": "city",
+   "ids": [
+    "michigan-american-legion-boys-state"
+   ]
+  },
+  {
+   "key": "Houghton, MI",
+   "state": "MI",
+   "lat": 47.1118,
+   "lon": -88.5672,
+   "precision": "city",
+   "ids": [
+    "michigan-mtu-summer-youth-programs"
+   ]
+  },
+  {
+   "key": "Jackson County, MI",
+   "state": "MI",
+   "lat": 42.2485,
+   "lon": -84.4209,
+   "precision": "county",
+   "ids": [
+    "michigan-jump-start-jackson-paid-training"
+   ]
+  },
+  {
+   "key": "Jackson, MI",
+   "state": "MI",
+   "lat": 42.2434,
+   "lon": -84.4049,
+   "precision": "city",
+   "ids": [
+    "michigan-henry-ford-jackson-hospital-summer-youth-program"
+   ]
+  },
+  {
+   "key": "Lansing, MI",
+   "state": "MI",
+   "lat": 42.7143,
+   "lon": -84.5609,
+   "precision": "city",
+   "ids": [
+    "lansing-4-h-capitol-experience-summit",
+    "lansing-allen-neighborhood-center-youth-service-corps",
+    "lansing-capital-area-humane-society-volunteer",
+    "lansing-crtec-capital-region-technical-early-college",
+    "lansing-greater-lansing-food-bank-volunteer",
+    "lansing-impression-5-youth-action-council",
+    "lansing-lcc-high-school-dual-enrollment",
+    "lansing-peckham-youth-work-based-learning",
+    "lansing-potter-park-zoo-zoo-teen",
+    "lansing-umh-sparrow-teen-volunteer",
+    "lansing-wilson-talent-center-career-technical-education",
+    "michigan-ymca-youth-in-government"
+   ]
+  },
+  {
+   "key": "Livingston County, MI",
+   "state": "MI",
+   "lat": 42.6025,
+   "lon": -83.9117,
+   "precision": "county",
+   "ids": [
+    "michigan-livingston-youthworks-summer-jobs"
+   ]
+  },
+  {
+   "key": "Novi, MI",
+   "state": "MI",
+   "lat": 42.4785,
+   "lon": -83.4868,
+   "precision": "city",
+   "ids": [
+    "michigan-henry-ford-providence-novi-summer-teen-volunteer"
+   ]
+  },
+  {
+   "key": "Oakland County, MI",
+   "state": "MI",
+   "lat": 42.6605,
+   "lon": -83.3842,
+   "precision": "county",
+   "ids": [
+    "michigan-oakland-county-michigan-works-oakland-next-internships"
+   ]
+  },
+  {
+   "key": "Okemos, MI",
+   "state": "MI",
+   "lat": 42.7091,
+   "lon": -84.4143,
+   "precision": "city",
+   "ids": [
+    "lansing-meridian-conservation-corps",
+    "michigan-hosa-state-association"
+   ]
+  },
+  {
+   "key": "Royal Oak, MI",
+   "state": "MI",
+   "lat": 42.5078,
+   "lon": -83.1539,
+   "precision": "city",
+   "ids": [
+    "michigan-detroit-zoo-zoo-corps"
+   ]
+  },
+  {
+   "key": "Southfield, MI",
+   "state": "MI",
+   "lat": 42.4746,
+   "lon": -83.2595,
+   "precision": "city",
+   "ids": [
+    "michigan-henry-ford-providence-southfield-summer-teen-volunteer"
+   ]
+  },
+  {
+   "key": "Washtenaw County, MI",
+   "state": "MI",
+   "lat": 42.2522,
+   "lon": -83.8434,
+   "precision": "county",
+   "ids": [
+    "ann-arbor-washtenaw-isd-career-technical-education"
+   ]
+  },
+  {
+   "key": "Waterford, MI",
+   "state": "MI",
+   "lat": 42.662,
+   "lon": -83.3879,
+   "precision": "city",
+   "ids": [
+    "michigan-oakland-county-parks-teen-volunteer"
+   ]
+  },
+  {
+   "key": "West Bloomfield, MI",
+   "state": "MI",
+   "lat": 42.5667,
+   "lon": -83.3871,
+   "precision": "city",
+   "ids": [
+    "michigan-henry-ford-west-bloomfield-summer-high-school-volunteer"
+   ]
+  },
+  {
+   "key": "Ypsilanti, MI",
+   "state": "MI",
+   "lat": 42.2444,
+   "lon": -83.6212,
+   "precision": "city",
+   "ids": [
+    "ann-arbor-growing-hope-teen-leadership-program",
+    "ann-arbor-ozone-house-leadership-institute",
+    "ann-arbor-ypsilanti-library-summer-youth-volunteer-corps",
+    "ann-arbor-ypsilanti-library-teen-advisory-group"
+   ]
+  },
+  {
+   "key": "Apple Valley, MN",
+   "state": "MN",
+   "lat": 44.7453,
+   "lon": -93.1994,
+   "precision": "city",
+   "ids": [
+    "minnesota-zoo-zooteen-volunteer"
+   ]
+  },
+  {
+   "key": "Chanhassen, MN",
+   "state": "MN",
+   "lat": 44.8486,
+   "lon": -93.5668,
+   "precision": "city",
+   "ids": [
+    "umn-arboretum-counselor-in-training"
+   ]
+  },
+  {
+   "key": "Collegeville, MN",
+   "state": "MN",
+   "lat": 45.5497,
+   "lon": -94.4456,
+   "precision": "city",
+   "ids": [
+    "minnesota-american-legion-boys-state"
+   ]
+  },
+  {
+   "key": "Dayton, MN",
+   "state": "MN",
+   "lat": 45.1891,
+   "lon": -93.4716,
+   "precision": "city",
+   "ids": [
+    "twin-cities-three-rivers-eastman-naturalist-youth-leader"
+   ]
+  },
+  {
+   "key": "Hennepin County, MN",
+   "state": "MN",
+   "lat": 45.0062,
+   "lon": -93.4752,
+   "precision": "county",
+   "ids": [
+    "hennepin-county-library-teen-volunteer",
+    "twin-cities-three-rivers-pathways-internships"
+   ]
+  },
+  {
+   "key": "Maple Plain, MN",
+   "state": "MN",
+   "lat": 45.0086,
+   "lon": -93.6624,
+   "precision": "city",
+   "ids": [
+    "twin-cities-three-rivers-baker-counselor-in-training"
+   ]
+  },
+  {
+   "key": "Minneapolis, MN",
+   "state": "MN",
+   "lat": 44.9633,
+   "lon": -93.2683,
+   "precision": "city",
+   "ids": [
+    "hennepin-county-library-steam-squad",
+    "minneapolis-step-up",
+    "twin-cities-augsburg-urban-debate-league-summer-camps",
+    "twin-cities-childrens-theatre-production-job-shadowing",
+    "twin-cities-cookie-cart-youth-employment",
+    "twin-cities-dunwoody-design-camp",
+    "twin-cities-dunwoody-pathways-to-careers",
+    "twin-cities-girls-inc-eureka-stem",
+    "twin-cities-juxtaposition-arts-jxtalabs-apprenticeships",
+    "twin-cities-juxtaposition-arts-valt-drawing",
+    "twin-cities-minneapolis-parks-teen-teamworks",
+    "twin-cities-minneapolis-parks-youth-advisory-council",
+    "twin-cities-open-arms-of-minnesota-youth-volunteers",
+    "twin-cities-umn-bme-high-school-internship",
+    "twin-cities-umn-discover-stem",
+    "twin-cities-umn-go4brains-neuroscience",
+    "twin-cities-umn-lillehei-heart-summer-research-scholars",
+    "twin-cities-umn-mathcep-math-modeling-camp",
+    "twin-cities-umn-rooted-in-stem",
+    "twin-cities-walker-art-center-teen-arts-council",
+    "umn-connected-automated-vehicles-camp",
+    "umn-national-summer-transportation-institute"
+   ]
+  },
+  {
+   "key": "Ramsey County, MN",
+   "state": "MN",
+   "lat": 45.0152,
+   "lon": -93.1,
+   "precision": "county",
+   "ids": [
+    "twin-cities-ramsey-county-library-teen-volunteer"
+   ]
+  },
+  {
+   "key": "St. Anthony, MN",
+   "state": "MN",
+   "lat": 45.0303,
+   "lon": -93.2154,
+   "precision": "city",
+   "ids": [
+    "twin-cities-three-rivers-silverwood-teen-arts-council"
+   ]
+  },
+  {
+   "key": "St. Paul, MN",
+   "state": "MN",
+   "lat": 44.9489,
+   "lon": -93.104,
+   "precision": "city",
+   "ids": [
+    "job-corps-minnesota-hubert-h-humphrey",
+    "minnesota-house-high-school-page-program",
+    "minnesota-state-fair-employment",
+    "minnesota-youth-council",
+    "minnesota-youth-institute-mnyi",
+    "saint-paul-public-library-volunteer",
+    "saint-paul-right-track",
+    "twin-cities-como-zoo-nature-walk-teen-program",
+    "twin-cities-gillette-student-summer-volunteers",
+    "twin-cities-hamline-microscope-adventure-camp",
+    "twin-cities-mity-expand-your-mind",
+    "twin-cities-raptor-center-ecosystems-of-stem-internship",
+    "twin-cities-saint-paul-lifeguard-training",
+    "twin-cities-saint-paul-youth-on-boards",
+    "twin-cities-smm-kaysc-high-school",
+    "twin-cities-threesixty-journalism-summer-programs",
+    "twin-cities-umn-vetcamp"
+   ]
+  },
+  {
+   "key": "Jefferson City, MO",
+   "state": "MO",
+   "lat": 38.5675,
+   "lon": -92.1753,
+   "precision": "city",
+   "ids": [
+    "missouri-4h-legislative-academy"
+   ]
+  },
+  {
+   "key": "Kansas City, MO",
+   "state": "MO",
+   "lat": 39.1252,
+   "lon": -94.5503,
+   "precision": "city",
+   "ids": [
+    "kansas-city-childrens-mercy-high-school-summer-volunteer",
+    "kansas-city-childrens-mercy-star-2-research",
+    "kansas-city-kemper-teen-arts-council",
+    "kansas-city-national-wwi-museum-youth-volunteer",
+    "kansas-city-nelson-atkins-teen-council",
+    "kansas-city-prox-summer-internship",
+    "kansas-city-public-library-teen-volunteering",
+    "kansas-city-umkc-stahr-high-school-scholars",
+    "kansas-city-zoo-volunteen"
+   ]
+  },
+  {
+   "key": "Kirkwood, MO",
+   "state": "MO",
+   "lat": 38.5794,
+   "lon": -90.4209,
+   "precision": "city",
+   "ids": [
+    "st-louis-magic-house-youth-volunteer"
+   ]
+  },
+  {
+   "key": "St. Charles County, MO",
+   "state": "MO",
+   "lat": 38.7811,
+   "lon": -90.6749,
+   "precision": "county",
+   "ids": [
+    "st-louis-st-charles-library-teen-volunteer"
+   ]
+  },
+  {
+   "key": "St. Louis County, MO",
+   "state": "MO",
+   "lat": 38.6404,
+   "lon": -90.4455,
+   "precision": "county",
+   "ids": [
+    "st-louis-county-library-sidney-johnson-summer-internship"
+   ]
+  },
+  {
+   "key": "St. Louis, MO",
+   "state": "MO",
+   "lat": 38.6357,
+   "lon": -90.2446,
+   "precision": "city",
+   "ids": [
+    "st-louis-area-foodbank-volunteer",
+    "st-louis-art-museum-museum-assistants-teens",
+    "st-louis-barnes-jewish-summer-teens-volunteer",
+    "st-louis-cam-teen-museum-studies",
+    "st-louis-county-library-teen-advisory-group",
+    "st-louis-county-library-teen-volunteer",
+    "st-louis-fed-student-board-of-directors",
+    "st-louis-maryville-pre-college-summer-programs",
+    "st-louis-mercy-hospital-teens-learning-in-the-community",
+    "st-louis-missouri-baptist-junior-volunteer",
+    "st-louis-mobot-eco-act",
+    "st-louis-mobot-mantis-butterfly-house-teens",
+    "st-louis-mobot-outdoor-youth-corps",
+    "st-louis-mobot-sage-teen-garden-educators",
+    "st-louis-mobot-youth-fellowship",
+    "st-louis-public-library-teen-leadership-council",
+    "st-louis-saint-lukes-summer-student-volunteer",
+    "st-louis-sift-shaw-institute-for-field-training",
+    "st-louis-slate-summer-youth-employment",
+    "st-louis-slu-visiting-young-scholars",
+    "st-louis-ssm-cardinal-glennon-high-school-volunteer",
+    "st-louis-stl-youth-jobs-discover-you",
+    "st-louis-umsl-bridge-saturday-academy",
+    "st-louis-umsl-bridge-summer-academy",
+    "st-louis-washu-pre-college-summer-launch",
+    "st-louis-washu-pre-college-summer-scholars",
+    "st-louis-washu-young-scientist-summer-focus",
+    "st-louis-zoo-alive-teen-volunteers",
+    "st-louis-zoo-zooteens-summer-volunteers"
+   ]
+  },
+  {
+   "key": "Billings, MT",
+   "state": "MT",
+   "lat": 45.7885,
+   "lon": -108.5525,
+   "precision": "city",
+   "ids": [
+    "billings-city-college-drone-camp",
+    "billings-hrdc-wioa-youth",
+    "billings-montana-audubon-links-mentors",
+    "billings-msub-movin-on",
+    "billings-msub-upward-bound",
+    "billings-oasis-waterpark-summer-jobs",
+    "billings-parks-youth-volunteer-corps",
+    "billings-public-library-teen-advisory-board",
+    "billings-wise-wonders-wonder-guides",
+    "billings-yellowstone-art-museum-teen-council",
+    "billings-yellowstone-county-4h",
+    "billings-yellowstone-county-summer-jobs-program",
+    "zoomontana-zooteens-billings"
+   ]
+  },
+  {
+   "key": "Bozeman, MT",
+   "state": "MT",
+   "lat": 45.6839,
+   "lon": -111.0576,
+   "precision": "city",
+   "ids": [
+    "gallatin-college-cybersecurity-summer-initiative-camp",
+    "montana-4h-congress"
+   ]
+  },
+  {
+   "key": "Butte, MT",
+   "state": "MT",
+   "lat": 45.8962,
+   "lon": -112.6601,
+   "precision": "city",
+   "ids": [
+    "montana-4h-fall-leadership-training",
+    "montana-tech-materials-engineering-summer-program"
+   ]
+  },
+  {
+   "key": "Great Falls, MT",
+   "state": "MT",
+   "lat": 47.5025,
+   "lon": -111.3,
+   "precision": "city",
+   "ids": [
+    "great-falls-lifeguard-training-and-city-jobs",
+    "great-falls-paris-gibson-square-teen-art-program",
+    "great-falls-public-library-volunteer"
+   ]
+  },
+  {
+   "key": "Missoula, MT",
+   "state": "MT",
+   "lat": 46.8744,
+   "lon": -114.0261,
+   "precision": "city",
+   "ids": [
+    "missoula-art-museum-teen-art-project",
+    "missoula-natural-history-center-volunteer",
+    "missoula-parks-recreation-lifeguard-and-summer-jobs",
+    "missoula-public-library-teen-library-community",
+    "missoula-um-summer-history-institute",
+    "missoula-um-upward-bound-summer-academy",
+    "um-mansfield-civics-institute",
+    "university-of-montana-schwanke-honors-institute"
+   ]
+  },
+  {
+   "key": "Asheboro, NC",
+   "state": "NC",
+   "lat": 35.7026,
+   "lon": -79.8041,
+   "precision": "city",
+   "ids": [
+    "nc-zoo-teen-volunteer-program"
+   ]
+  },
+  {
+   "key": "Carrboro, NC",
+   "state": "NC",
+   "lat": 35.9262,
+   "lon": -79.087,
+   "precision": "city",
+   "ids": [
+    "carrboro-youth-council"
+   ]
+  },
+  {
+   "key": "Chapel Hill, NC",
+   "state": "NC",
+   "lat": 35.9283,
+   "lon": -79.0401,
+   "precision": "city",
+   "ids": [
+    "chapel-hill-library-youth-event-support",
+    "unc-explore-unc",
+    "unc-summer-school-visitor-rising-seniors",
+    "ymca-triangle-leaders-club"
+   ]
+  },
+  {
+   "key": "Durham, NC",
+   "state": "NC",
+   "lat": 35.9779,
+   "lon": -78.8981,
+   "precision": "city",
+   "ids": [
+    "duke-ceba-cell-biology-academy",
+    "duke-maryann-black-summer-internship",
+    "duke-pre-college-programs-high-school",
+    "durham-county-library-maker-steam-volunteers",
+    "durham-county-library-teen-volunteers",
+    "durham-parks-durham-aquatic-school-lifeguard",
+    "durham-parks-teen-volunteers",
+    "durham-tech-asap-pre-apprenticeship",
+    "durham-tech-career-and-college-promise",
+    "museum-life-science-summer-camp-youth-volunteer",
+    "nasher-museum-teen-council",
+    "ncssm-step-up-to-stem",
+    "ncssm-summer-accelerator",
+    "student-u-durham-enrollment"
+   ]
+  },
+  {
+   "key": "Hillsborough, NC",
+   "state": "NC",
+   "lat": 36.0666,
+   "lon": -79.0981,
+   "precision": "city",
+   "ids": [
+    "orange-county-nc-library-volunteers-hillsborough"
+   ]
+  },
+  {
+   "key": "Morganton, NC",
+   "state": "NC",
+   "lat": 35.7408,
+   "lon": -81.7003,
+   "precision": "city",
+   "ids": [
+    "ncssm-inspire-stem-research"
+   ]
+  },
+  {
+   "key": "Murfreesboro, NC",
+   "state": "NC",
+   "lat": 36.442,
+   "lon": -77.0977,
+   "precision": "city",
+   "ids": [
+    "nc-tar-heel-boys-state"
+   ]
+  },
+  {
+   "key": "Raleigh, NC",
+   "state": "NC",
+   "lat": 35.8315,
+   "lon": -78.6396,
+   "precision": "city",
+   "ids": [
+    "capital-area-nextgen-youth-services",
+    "nc-governors-page-program",
+    "nc-house-page-program",
+    "nc-lady-cardinal-mentorship",
+    "nc-museum-natural-sciences-cafe-coordinators",
+    "nc-museum-natural-sciences-climate-resilience-institute",
+    "nc-museum-natural-sciences-junior-curators",
+    "nc-museum-natural-sciences-junior-interpreters",
+    "nc-museum-natural-sciences-teen-science-cafes",
+    "nc-senate-page-program",
+    "nc-symphony-youth-concerto-competition",
+    "nc-youth-legislative-assembly",
+    "ncma-teen-arts-council",
+    "ncsu-biomass-to-brilliance-paper-science",
+    "ncsu-catalyst-stem-students-with-disabilities",
+    "ncsu-horticultural-science-summer-institute",
+    "ncsu-ifal-future-agricultural-leaders",
+    "ncsu-livestock-science-camp",
+    "ncsu-msen-pre-college-program",
+    "ncsu-north-carolina-youth-institute",
+    "ncsu-poultry-science-summer-immersion",
+    "ncsu-resource-conservation-workshop",
+    "ncsu-rising-11-12-residential-engineering-camps",
+    "ncsu-science-house-biome-robotics",
+    "ncsu-shelton-leadership-red-hat-shelton-challenge",
+    "ncsu-textec-textile-day-camp",
+    "ncsu-textiles-step-summer-exploration",
+    "ncsu-vetcamp-veterinary-careers",
+    "ncsu-young-and-teen-writers-workshop",
+    "wake-tech-career-and-college-promise",
+    "wake-tech-wakeworks-youth-apprenticeship-academy",
+    "wakemed-junior-volunteer-program"
+   ]
+  },
+  {
+   "key": "Wake County, NC",
+   "state": "NC",
+   "lat": 35.7898,
+   "lon": -78.6506,
+   "precision": "county",
+   "ids": [
+    "wake-tech-careers-electric-summer-academy"
+   ]
+  },
+  {
+   "key": "Bismarck, ND",
+   "state": "ND",
+   "lat": 46.8159,
+   "lon": -100.7686,
+   "precision": "city",
+   "ids": [
+    "bismarck-parks-recreation-district-teen-jobs",
+    "chi-st-alexius-bismarck-teen-volunteers",
+    "dakota-zoo-bismarck-zoo-crew",
+    "north-dakota-4h-leadership-awareness-weekend"
+   ]
+  },
+  {
+   "key": "Fargo, ND",
+   "state": "ND",
+   "lat": 46.8647,
+   "lon": -96.8291,
+   "precision": "city",
+   "ids": [
+    "fargo-park-district-lifeguard-jobs",
+    "fargo-public-library-teen-volunteers",
+    "north-dakota-4h-extension-youth-conference",
+    "red-river-zoo-wildlife-league-teens"
+   ]
+  },
+  {
+   "key": "Grand Forks, ND",
+   "state": "ND",
+   "lat": 47.9196,
+   "lon": -97.0873,
+   "precision": "city",
+   "ids": [
+    "altru-health-grand-forks-junior-volunteers",
+    "grand-forks-park-district-winter-part-time-jobs"
+   ]
+  },
+  {
+   "key": "Grand Island, NE",
+   "state": "NE",
+   "lat": 40.9214,
+   "lon": -98.3586,
+   "precision": "city",
+   "ids": [
+    "grand-island-nebraska-state-fair-cleaning-squad"
+   ]
+  },
+  {
+   "key": "Kearney, NE",
+   "state": "NE",
+   "lat": 40.7017,
+   "lon": -99.0823,
+   "precision": "city",
+   "ids": [
+    "kearney-unk-health-science-explorers-academy"
+   ]
+  },
+  {
+   "key": "Lincoln, NE",
+   "state": "NE",
+   "lat": 40.8103,
+   "lon": -96.6749,
+   "precision": "city",
+   "ids": [
+    "lincoln-childrens-zoo-zoo-crew",
+    "lincoln-city-libraries-teen-volunteer",
+    "lincoln-mayors-youth-employment-program",
+    "lincoln-unl-big-red-summer-academic-camps",
+    "lincoln-unl-ncmn-high-school-stem-internship",
+    "lincoln-unl-raikes-innovate-summer-camp",
+    "nebraska-young-nebraska-scientists-high-school-researchers"
+   ]
+  },
+  {
+   "key": "Omaha, NE",
+   "state": "NE",
+   "lat": 41.264,
+   "lon": -96.0565,
+   "precision": "city",
+   "ids": [
+    "omaha-childrens-nebraska-teen-connection",
+    "omaha-creighton-haddix-stem-corridor",
+    "omaha-douglas-sarpy-4h-join",
+    "omaha-durham-museum-volunteer",
+    "omaha-henry-doorly-zoo-jr-crew",
+    "omaha-joslyn-kent-bellows-mentoring-program",
+    "omaha-methodist-hospital-volunteen",
+    "omaha-nebraska-medicine-volunteer",
+    "omaha-public-library-youth-volunteer",
+    "omaha-public-schools-career-center-pathways",
+    "omaha-step-up-omaha-summer-jobs",
+    "omaha-unmc-high-school-alliance",
+    "omaha-unmc-munroe-meyer-recreational-therapy-volunteer",
+    "omaha-uno-summer-scholars"
+   ]
+  },
+  {
+   "key": "Bridgewater, NJ",
+   "state": "NJ",
+   "lat": 40.5924,
+   "lon": -74.604,
+   "precision": "city",
+   "ids": [
+    "new-jersey-somerset-county-vocational-technical-schools-admission"
+   ]
+  },
+  {
+   "key": "East Brunswick, NJ",
+   "state": "NJ",
+   "lat": 40.4262,
+   "lon": -74.4182,
+   "precision": "city",
+   "ids": [
+    "new-brunswick-east-brunswick-counselor-in-training",
+    "new-brunswick-east-brunswick-crystal-springs-summer-jobs",
+    "new-brunswick-east-brunswick-library-teen-volunteering",
+    "new-brunswick-east-brunswick-youth-council"
+   ]
+  },
+  {
+   "key": "Edison, NJ",
+   "state": "NJ",
+   "lat": 40.5044,
+   "lon": -74.3488,
+   "precision": "city",
+   "ids": [
+    "edison-job-corps-center",
+    "edison-middlesex-college-high-school-scholars",
+    "edison-public-library-teen-advisory-board"
+   ]
+  },
+  {
+   "key": "Hackettstown, NJ",
+   "state": "NJ",
+   "lat": 40.8537,
+   "lon": -74.8249,
+   "precision": "city",
+   "ids": [
+    "new-jersey-ala-jersey-girls-state"
+   ]
+  },
+  {
+   "key": "Hamilton, NJ",
+   "state": "NJ",
+   "lat": 40.2063,
+   "lon": -74.6753,
+   "precision": "city",
+   "ids": [
+    "hamilton-rwj-university-hospital-teen-volunteer"
+   ]
+  },
+  {
+   "key": "Jersey City, NJ",
+   "state": "NJ",
+   "lat": 40.7114,
+   "lon": -74.0648,
+   "precision": "city",
+   "ids": [
+    "jersey-city-jc-next-summer-jobs",
+    "jersey-city-liberty-science-center-teen-summer-docent"
+   ]
+  },
+  {
+   "key": "Lawrenceville, NJ",
+   "state": "NJ",
+   "lat": 40.3026,
+   "lon": -74.7385,
+   "precision": "city",
+   "ids": [
+    "new-jersey-american-legion-jersey-boys-state"
+   ]
+  },
+  {
+   "key": "Metuchen, NJ",
+   "state": "NJ",
+   "lat": 40.5424,
+   "lon": -74.3628,
+   "precision": "city",
+   "ids": [
+    "new-brunswick-metuchen-library-teen-advisory-board-and-volunteering"
+   ]
+  },
+  {
+   "key": "Middlesex County, NJ",
+   "state": "NJ",
+   "lat": 40.4396,
+   "lon": -74.4074,
+   "precision": "county",
+   "ids": [
+    "new-brunswick-middlesex-county-magnet-schools-career-programs"
+   ]
+  },
+  {
+   "key": "Morristown, NJ",
+   "state": "NJ",
+   "lat": 40.7966,
+   "lon": -74.4773,
+   "precision": "city",
+   "ids": [
+    "morristown-atlantic-health-summer-junior-volunteer"
+   ]
+  },
+  {
+   "key": "New Brunswick, NJ",
+   "state": "NJ",
+   "lat": 40.4867,
+   "lon": -74.4444,
+   "precision": "city",
+   "ids": [
+    "middlesex-college-opportunity-youth-program",
+    "new-brunswick-elijahs-promise-volunteer",
+    "new-brunswick-free-public-library-teen-volunteer",
+    "new-brunswick-rutgers-4h-stem-ambassadors",
+    "new-brunswick-rutgers-cancer-institute-bold-summer-camp",
+    "new-brunswick-rutgers-pre-college-summer-academies",
+    "new-brunswick-rutgers-summer-scholars",
+    "new-brunswick-rutgers-upward-bound-math-science",
+    "new-brunswick-rwjuh-teen-volunteer",
+    "new-jersey-youth-institute-world-food-prize"
+   ]
+  },
+  {
+   "key": "Newark, NJ",
+   "state": "NJ",
+   "lat": 40.7242,
+   "lon": -74.1726,
+   "precision": "city",
+   "ids": [
+    "newark-museum-of-art-explorers-teen-program",
+    "newark-njpac-backstage-pathways"
+   ]
+  },
+  {
+   "key": "Old Bridge, NJ",
+   "state": "NJ",
+   "lat": 40.4046,
+   "lon": -74.3085,
+   "precision": "city",
+   "ids": [
+    "new-brunswick-old-bridge-library-teen-volunteering"
+   ]
+  },
+  {
+   "key": "Pennington, NJ",
+   "state": "NJ",
+   "lat": 40.3249,
+   "lon": -74.7888,
+   "precision": "city",
+   "ids": [
+    "new-jersey-watershed-institute-high-school-academy",
+    "new-jersey-watershed-institute-teen-volunteer"
+   ]
+  },
+  {
+   "key": "Piscataway, NJ",
+   "state": "NJ",
+   "lat": 40.5455,
+   "lon": -74.4607,
+   "precision": "city",
+   "ids": [
+    "new-brunswick-rutgers-engineering-target-summer-program",
+    "new-brunswick-rutgers-slaam-engineering-summer-academy",
+    "new-brunswick-rutgers-thed-high-school-summer",
+    "new-brunswick-rutgers-young-scholars-discrete-math",
+    "new-brunswick-waksman-wise-summer-research",
+    "new-jersey-governors-school-engineering-technology",
+    "piscataway-public-library-teen-volunteer"
+   ]
+  },
+  {
+   "key": "Plainsboro, NJ",
+   "state": "NJ",
+   "lat": 40.3378,
+   "lon": -74.5807,
+   "precision": "city",
+   "ids": [
+    "new-brunswick-plainsboro-library-teen-volunteering-and-advisory-board",
+    "new-brunswick-plainsboro-township-recreation-volunteers"
+   ]
+  },
+  {
+   "key": "Princeton, NJ",
+   "state": "NJ",
+   "lat": 40.3582,
+   "lon": -74.6667,
+   "precision": "city",
+   "ids": [
+    "princeton-public-library-teen-advisory-board",
+    "princeton-public-library-teen-summer-volunteer"
+   ]
+  },
+  {
+   "key": "Somerset, NJ",
+   "state": "NJ",
+   "lat": 40.5085,
+   "lon": -74.5002,
+   "precision": "city",
+   "ids": [
+    "new-brunswick-franklin-township-library-teen-volunteering"
+   ]
+  },
+  {
+   "key": "Sussex County, NJ",
+   "state": "NJ",
+   "lat": 41.1355,
+   "lon": -74.6949,
+   "precision": "county",
+   "ids": [
+    "sussex-county-nj-library-teen-summer-reading-volunteers"
+   ]
+  },
+  {
+   "key": "West Windsor, NJ",
+   "state": "NJ",
+   "lat": 40.2903,
+   "lon": -74.6277,
+   "precision": "city",
+   "ids": [
+    "new-jersey-mercer-county-technical-schools-career-prep-mccc"
+   ]
+  },
+  {
+   "key": "Woodbridge, NJ",
+   "state": "NJ",
+   "lat": 40.5613,
+   "lon": -74.2924,
+   "precision": "city",
+   "ids": [
+    "new-brunswick-woodbridge-library-student-volunteers",
+    "new-brunswick-woodbridge-youth-recreation-advisory-board"
+   ]
+  },
+  {
+   "key": "Albuquerque, NM",
+   "state": "NM",
+   "lat": 35.1048,
+   "lon": -106.6468,
+   "precision": "city",
+   "ids": [
+    "albuquerque-balloon-fiesta-navigator-volunteers",
+    "albuquerque-biopark-conservation-camp-counselors",
+    "albuquerque-biopark-high-school-internship",
+    "albuquerque-biopark-nature-guides",
+    "albuquerque-biopark-student-volunteers",
+    "albuquerque-city-pools-aquatics-aide-lifeguard",
+    "albuquerque-explora-career-pathways-internship",
+    "albuquerque-explora-volunteer",
+    "albuquerque-job-mentor-program-summer-internship",
+    "albuquerque-mayors-creative-youth-corps",
+    "albuquerque-mayors-youth-advisory-council",
+    "albuquerque-nm-museum-natural-history-junior-docents",
+    "albuquerque-nuclear-museum-volunteer-internships",
+    "albuquerque-roadrunner-food-bank-warehouse-volunteers",
+    "albuquerque-sandia-labs-high-school-internships",
+    "albuquerque-unm-engineering-computing-summer-academy",
+    "albuquerque-unm-health-youth-volunteer",
+    "albuquerque-unm-path-emerging-scholars",
+    "albuquerque-working-classroom-youth-arts-leadership",
+    "albuquerque-ydi-petroglyph-monument-summer-youth-jobs",
+    "albuquerque-ydi-youthbuild",
+    "albuquerque-youth-job-and-volunteer-fair"
+   ]
+  },
+  {
+   "key": "Las Cruces, NM",
+   "state": "NM",
+   "lat": 32.3264,
+   "lon": -106.7897,
+   "precision": "city",
+   "ids": [
+    "las-cruces-nmsu-nm-prep-high-school-academy",
+    "las-cruces-parks-recreation-young-adult-employment"
+   ]
+  },
+  {
+   "key": "Santa Fe, NM",
+   "state": "NM",
+   "lat": 35.662,
+   "lon": -105.9818,
+   "precision": "city",
+   "ids": [
+    "santa-fe-site-santa-fe-young-curators",
+    "santa-fe-youthworks-youth-corps-and-job-training"
+   ]
+  },
+  {
+   "key": "Socorro, NM",
+   "state": "NM",
+   "lat": 34.0545,
+   "lon": -106.9062,
+   "precision": "city",
+   "ids": [
+    "socorro-new-mexico-tech-buzzcamp",
+    "socorro-new-mexico-tech-summer-stem-experience"
+   ]
+  },
+  {
+   "key": "Taos, NM",
+   "state": "NM",
+   "lat": 36.3871,
+   "lon": -105.5808,
+   "precision": "city",
+   "ids": [
+    "taos-rmyc-youth-coalition-member"
+   ]
+  },
+  {
+   "key": "Carson City, NV",
+   "state": "NV",
+   "lat": 39.1531,
+   "lon": -119.7474,
+   "precision": "city",
+   "ids": [
+    "nevada-4h-capital-days",
+    "nevada-wnc-high-school-dual-credit"
+   ]
+  },
+  {
+   "key": "Henderson, NV",
+   "state": "NV",
+   "lat": 36.0056,
+   "lon": -115.0228,
+   "precision": "city",
+   "ids": [
+    "henderson-libraries-teen-volunteer"
+   ]
+  },
+  {
+   "key": "Las Vegas, NV",
+   "state": "NV",
+   "lat": 36.2335,
+   "lon": -115.264,
+   "precision": "city",
+   "ids": [
+    "las-vegas-batteries-included-teen-council",
+    "las-vegas-city-parks-aquatics-lifeguard-jobs",
+    "las-vegas-clark-county-aquatics-lifeguard-jobs",
+    "las-vegas-clark-county-leaders-of-the-future",
+    "las-vegas-csn-dual-enrollment",
+    "las-vegas-csn-jumpstart-concurrent-enrollment",
+    "las-vegas-cyber-clinic-junior-member",
+    "las-vegas-discovery-childrens-museum-teen-volunteers",
+    "las-vegas-discovery-childrens-museum-youthworks-internship",
+    "las-vegas-employnv-youth-hub-west-charleston",
+    "las-vegas-library-district-young-peoples-volunteer",
+    "las-vegas-natural-history-museum-volunteer",
+    "las-vegas-springs-preserve-volunteer",
+    "las-vegas-sunrise-hospital-medical-explorer-program",
+    "las-vegas-three-square-food-bank-volunteer",
+    "las-vegas-unlv-hospitality-exploration-camp",
+    "las-vegas-unlv-liberal-arts-high-school-summer-camps",
+    "las-vegas-unlv-rebel-start-summer-camp",
+    "las-vegas-unlv-sistem-stem-talks",
+    "las-vegas-valley-health-system-teen-volunteer"
+   ]
+  },
+  {
+   "key": "Reno, NV",
+   "state": "NV",
+   "lat": 39.5491,
+   "lon": -119.8499,
+   "precision": "city",
+   "ids": [
+    "reno-parks-junior-lifeguards",
+    "reno-parks-lifeguard-certification-class",
+    "reno-parks-recreation-youth-volunteers",
+    "reno-the-discovery-camp-teen-assistant",
+    "reno-unr-cbess-bilingual-student-researchers",
+    "reno-unr-engineering-summer-camps-high-school",
+    "reno-unr-high-school-dual-enrollment",
+    "reno-washoe-county-library-volunteen"
+   ]
+  },
+  {
+   "key": "Beacon, NY",
+   "state": "NY",
+   "lat": 41.5032,
+   "lon": -73.9647,
+   "precision": "city",
+   "ids": [
+    "beacon-cce-dutchess-green-teen-community-gardening"
+   ]
+  },
+  {
+   "key": "Brockport, NY",
+   "state": "NY",
+   "lat": 43.2133,
+   "lon": -77.9408,
+   "precision": "city",
+   "ids": [
+    "new-york-state-empire-girls-state"
+   ]
+  },
+  {
+   "key": "Bronx, NY",
+   "state": "NY",
+   "lat": 40.8487,
+   "lon": -73.8529,
+   "precision": "county",
+   "ids": [
+    "nyc-bronx-community-college-upward-bound-math-science",
+    "nyc-bronx-museum-teen-council",
+    "nyc-manhattan-university-chemical-engineering-summer-program",
+    "nyc-manhattan-university-electrical-computer-engineering-summer-program",
+    "nyc-manhattan-university-mechanical-engineering-summer-institute",
+    "nyc-manhattan-university-omalley-business-pre-college",
+    "nyc-manhattan-university-residential-summer-engineering",
+    "nyc-manhattan-university-summer-engineering-awareness-program",
+    "nyc-montefiore-bronx-summer-volunteer",
+    "nyc-nybg-explainers",
+    "nyc-wave-hill-aces-internship",
+    "nyc-wave-hill-forest-project",
+    "nyc-wave-hill-werm"
+   ]
+  },
+  {
+   "key": "Brooklyn, NY",
+   "state": "NY",
+   "lat": 40.635,
+   "lon": -73.9506,
+   "precision": "county",
+   "ids": [
+    "bpl-librarians-of-tomorrow",
+    "bpl-storyteen",
+    "bpl-teen-night-out-branch-council",
+    "nyc-bbg-garden-apprentice-program",
+    "nyc-brooklyn-bam-brooklyn-interns-for-arts-and-culture",
+    "nyc-brooklyn-borough-president-youth-advisory-council",
+    "nyc-brooklyn-bric-teen-filmmaking-bootcamp",
+    "nyc-brooklyn-bric-teen-media-curatorial-fellowships",
+    "nyc-brooklyn-bric-teen-photography-bootcamp",
+    "nyc-brooklyn-bridge-park-green-team-coastal-cleanup",
+    "nyc-brooklyn-cbh-summer-scholars-internship",
+    "nyc-brooklyn-groundswell-studio-programs",
+    "nyc-brooklyn-groundswell-summer-leadership-institute",
+    "nyc-brooklyn-maimonides-health-scholars-ed-internship",
+    "nyc-brooklyn-maimonides-high-school-volunteer",
+    "nyc-brooklyn-maimonides-science-scholars",
+    "nyc-brooklyn-pratt-precollege-summer-intensive",
+    "nyc-brooklyn-prospect-park-alliance-teen-service-series",
+    "nyc-nyu-tandon-arise"
+   ]
+  },
+  {
+   "key": "Buffalo, NY",
+   "state": "NY",
+   "lat": 42.8925,
+   "lon": -78.8597,
+   "precision": "city",
+   "ids": [
+    "buffalo-map-growing-green-youth",
+    "buffalo-zoo-summer-teen-naturalist",
+    "erie-county-ny-summer-youth-employment"
+   ]
+  },
+  {
+   "key": "Callicoon, NY",
+   "state": "NY",
+   "lat": 41.8358,
+   "lon": -74.9241,
+   "precision": "city",
+   "ids": [
+    "delawarevalley-job-corps-center"
+   ]
+  },
+  {
+   "key": "Cassadaga, NY",
+   "state": "NY",
+   "lat": 42.3416,
+   "lon": -79.317,
+   "precision": "city",
+   "ids": [
+    "cassadaga-job-corps-center"
+   ]
+  },
+  {
+   "key": "Glenmont, NY",
+   "state": "NY",
+   "lat": 42.5882,
+   "lon": -73.7777,
+   "precision": "manual",
+   "ids": [
+    "glenmont-job-corps-center"
+   ]
+  },
+  {
+   "key": "Ithaca, NY",
+   "state": "NY",
+   "lat": 42.4439,
+   "lon": -76.5031,
+   "precision": "city",
+   "ids": [
+    "ithaca-tompkins-county-public-library-teen-volunteer"
+   ]
+  },
+  {
+   "key": "Manhattan, NY",
+   "state": "NY",
+   "lat": 40.7766,
+   "lon": -73.9703,
+   "precision": "county",
+   "ids": [
+    "nyc-apollo-theater-academy-arts-production-internship",
+    "nyc-apollo-theater-academy-technical-internship",
+    "nyc-columbia-pre-college-nyc-commuter-summer",
+    "nyc-cooper-hewitt-design-hive",
+    "nyc-cooper-union-saturday-program",
+    "nyc-cooper-union-summer-art-intensive",
+    "nyc-cooper-union-summer-stem",
+    "nyc-john-jay-upward-bound",
+    "nyc-mount-sinai-morningside-jump-teen-volunteer",
+    "nyc-northwell-lenox-hill-health-care-immersion",
+    "nyc-northwell-manhattan-campus-junior-volunteer",
+    "nyc-nyu-langone-manhattan-summer-volunteer",
+    "nyc-opportunity-network-fellows",
+    "nyc-rockefeller-summer-science-research-program",
+    "nyc-studio-museum-expanding-the-walls",
+    "nyc-whitney-youth-insights"
+   ]
+  },
+  {
+   "key": "Medina, NY",
+   "state": "NY",
+   "lat": 43.2197,
+   "lon": -78.3879,
+   "precision": "city",
+   "ids": [
+    "iroquois-job-corps-center"
+   ]
+  },
+  {
+   "key": "New York, NY",
+   "state": "NY",
+   "lat": 40.6627,
+   "lon": -73.9387,
+   "precision": "city",
+   "ids": [
+    "cuny-college-now",
+    "nyc-ccny-zahn-bossgirls-summer-entrepreneurship",
+    "nyc-central-park-conservancy-teen-volunteer-days",
+    "nyc-covenant-house-new-york-covworks",
+    "nyc-dycd-advance-and-earn",
+    "nyc-dycd-ladders-for-leaders",
+    "nyc-dycd-learn-and-earn",
+    "nyc-dycd-runaway-and-homeless-youth-services",
+    "nyc-dycd-summer-youth-employment-program",
+    "nyc-dycd-train-and-earn",
+    "nyc-dycd-work-learn-grow",
+    "nyc-fair-futures-coaching-foster-youth",
+    "nyc-futures-and-options-internship-program",
+    "nyc-futures-and-options-urban-leadership-fellows",
+    "nyc-genesys-works-new-york-city",
+    "nyc-jewish-museum-teen-intern-program",
+    "nyc-nyp-summer-volunteering",
+    "nyc-nyu-sps-finance-nyc-insiders-view",
+    "nyc-parks-lifeguard-program",
+    "nyc-public-schools-p-tech-early-college",
+    "nyc-public-schools-student-advisory-councils",
+    "nyc-the-door-free-membership-ages-12-24",
+    "nyc-the-door-the-cut-culinary-training",
+    "nyc-transportation-alternatives-youth-activist-committee",
+    "nyc-votes-youth-ambassadors",
+    "nycps-career-and-technical-education",
+    "nycps-career-readiness-modern-youth-apprenticeship"
+   ]
+  },
+  {
+   "key": "Oneonta, NY",
+   "state": "NY",
+   "lat": 42.4548,
+   "lon": -75.0669,
+   "precision": "city",
+   "ids": [
+    "oneonta-job-corps-center"
+   ]
+  },
+  {
+   "key": "Queens, NY",
+   "state": "NY",
+   "lat": 40.6547,
+   "lon": -73.8412,
+   "precision": "county",
+   "ids": [
+    "nyc-queens-alley-pond-field-biology-internship",
+    "nyc-queens-alley-pond-youth-volunteer",
+    "nyc-queens-county-farm-museum-junior-gardener",
+    "nyc-queens-flushing-hospital-junior-volunteer",
+    "nyc-queens-museum-queens-teens-institute",
+    "nyc-queens-nysci-explainer-science-career-ladder",
+    "nyc-queens-st-johns-summer-high-school-scholars",
+    "qpl-peer-to-peer-service-collective",
+    "qpl-teen-volunteer"
+   ]
+  },
+  {
+   "key": "Rochester, NY",
+   "state": "NY",
+   "lat": 43.1699,
+   "lon": -77.6169,
+   "precision": "city",
+   "ids": [
+    "rochester-general-hospital-student-volunteer-program",
+    "rochester-rochesterworks-summer-youth-employment",
+    "rochester-seneca-park-zoo-zooteens"
+   ]
+  },
+  {
+   "key": "Roosevelt Island, NY",
+   "state": "NY",
+   "lat": 40.7619,
+   "lon": -73.95,
+   "precision": "manual",
+   "ids": [
+    "nyc-cornell-tech-summer-innovation-intensives"
+   ]
+  },
+  {
+   "key": "Staten Island, NY",
+   "state": "NY",
+   "lat": 40.5613,
+   "lon": -74.1399,
+   "precision": "county",
+   "ids": [
+    "nyc-staten-island-historic-richmond-town-high-school-apprenticeship",
+    "nyc-staten-island-rumc-afterschool-medical-science",
+    "nyc-staten-island-wagner-college-high-school-internship",
+    "nyc-staten-island-zoo-junior-docent",
+    "nyc-staten-island-zoo-teen-volunteer"
+   ]
+  },
+  {
+   "key": "Yonkers, NY",
+   "state": "NY",
+   "lat": 40.9459,
+   "lon": -73.8674,
+   "precision": "city",
+   "ids": [
+    "yonkers-hudson-river-museum-junior-docent-program"
+   ]
+  },
+  {
+   "key": "Bexley, OH",
+   "state": "OH",
+   "lat": 39.9654,
+   "lon": -82.9345,
+   "precision": "city",
+   "ids": [
+    "columbus-bexley-library-teen-volunteers"
+   ]
+  },
+  {
+   "key": "Cincinnati, OH",
+   "state": "OH",
+   "lat": 39.1402,
+   "lon": -84.5058,
+   "precision": "city",
+   "ids": [
+    "1001-colors-seasonal-youth-apprenticeship",
+    "art-academy-of-cincinnati-teen-academy",
+    "christ-hospital-junior-ambassador-program",
+    "cincinnati-art-museum-10x10-teen-volunteer-team",
+    "cincinnati-boys-girls-clubs-teen-workforce-development",
+    "cincinnati-cac-cya-teen-council",
+    "cincinnati-ccm-prep-ballet-intensive",
+    "cincinnati-ccm-prep-musical-theatre-intensive",
+    "cincinnati-ccm-prep-strings-intensive",
+    "cincinnati-childrens-high-school-summer-immersion",
+    "cincinnati-childrens-high-school-volunteer",
+    "cincinnati-cps-edge-internship",
+    "cincinnati-crc-pool-jobs",
+    "cincinnati-crc-youth-to-work",
+    "cincinnati-great-parks-teen-volunteers",
+    "cincinnati-hamilton-county-youth-employment-program",
+    "cincinnati-library-chpl-teen-volunteers",
+    "cincinnati-museum-center-youth-programs",
+    "cincinnati-nature-center-youth-volunteers",
+    "cincinnati-parks-groundwork-green-team",
+    "cincinnati-police-summer-cadet-program",
+    "cincinnati-trihealth-job-shadowing",
+    "cincinnati-uc-ceas-summer-engineering-camps",
+    "cincinnati-uc-early-it-summer-camp",
+    "cincinnati-uc-health-career-journeys",
+    "cincinnati-uc-medical-sciences-summer-institute",
+    "cincinnati-urban-league-summer-employment",
+    "cincinnati-zoo-zooteen-volunteer",
+    "xavier-university-steam-xu-research-immersion"
+   ]
+  },
+  {
+   "key": "Columbus, OH",
+   "state": "OH",
+   "lat": 39.9874,
+   "lon": -82.9852,
+   "precision": "city",
+   "ids": [
+    "ccad-college-preview",
+    "columbus-cmaf-youth-advisory-council",
+    "columbus-cscc-college-credit-plus",
+    "columbus-franklin-county-ready-2-earn",
+    "columbus-godman-guild-youth-workforce",
+    "columbus-humane-teen-volunteers",
+    "columbus-library-summer-reading-volunteen",
+    "columbus-metro-parks-volunteer",
+    "columbus-mid-ohio-food-collective-volunteer",
+    "columbus-mount-carmel-health-teen-volunteers",
+    "columbus-museum-of-art-cma-next",
+    "columbus-museum-of-art-teen-studio",
+    "columbus-nationwide-childrens-teen-volunteers",
+    "columbus-osc-stem-institute",
+    "columbus-osu-arts-sciences-summer-exploration",
+    "columbus-osu-hrs-camp",
+    "columbus-osu-humanities-cognitive-sciences-summer-institute",
+    "columbus-osu-md-camp",
+    "columbus-recparks-apps-job-readiness",
+    "columbus-recparks-city-leaders-academy",
+    "columbus-recparks-seasonal-lifeguard",
+    "columbus-tech-corps-work-based-learning",
+    "columbus-thurber-house-summer-camp-interns",
+    "columbus-thurber-house-teen-summer-writing-intensive",
+    "columbus-thurber-house-young-writers-studio",
+    "columbus-urban-league-work-readiness-training-university",
+    "columbus-zoo-oceans-and-you-bahamas-field-study",
+    "columbus-zoo-teen-eco-summit",
+    "columbus-zoo-zooaide-teen-volunteers",
+    "cosi-youth-volunteer-program",
+    "franklin-park-conservatory-teen-corps",
+    "franklin-park-conservatory-volunteer",
+    "nationwide-childrens-high-school-career-academy",
+    "nationwide-childrens-youth-employment-program",
+    "ohio-state-fair-junior-fair-board",
+    "ohio-ymca-youth-and-government"
+   ]
+  },
+  {
+   "key": "Cumberland, OH",
+   "state": "OH",
+   "lat": 39.8533,
+   "lon": -81.6587,
+   "precision": "city",
+   "ids": [
+    "ohio-the-wilds-teen-volunteers"
+   ]
+  },
+  {
+   "key": "Hilliard, OH",
+   "state": "OH",
+   "lat": 40.0347,
+   "lon": -83.1578,
+   "precision": "city",
+   "ids": [
+    "columbus-ymca-teen-leaders-club-hilliard"
+   ]
+  },
+  {
+   "key": "Marion, OH",
+   "state": "OH",
+   "lat": 40.5967,
+   "lon": -83.1232,
+   "precision": "city",
+   "ids": [
+    "ohio-osu-marion-stem-summer-camps"
+   ]
+  },
+  {
+   "key": "Oxford, OH",
+   "state": "OH",
+   "lat": 39.5056,
+   "lon": -84.7443,
+   "precision": "city",
+   "ids": [
+    "ohio-buckeye-boys-state"
+   ]
+  },
+  {
+   "key": "Pickerington, OH",
+   "state": "OH",
+   "lat": 39.8875,
+   "lon": -82.7641,
+   "precision": "city",
+   "ids": [
+    "columbus-pickerington-library-teen-volunteers"
+   ]
+  },
+  {
+   "key": "Upper Arlington, OH",
+   "state": "OH",
+   "lat": 40.0276,
+   "lon": -83.0707,
+   "precision": "city",
+   "ids": [
+    "columbus-upper-arlington-library-teen-volunteers"
+   ]
+  },
+  {
+   "key": "Westerville, OH",
+   "state": "OH",
+   "lat": 40.1235,
+   "lon": -82.9136,
+   "precision": "city",
+   "ids": [
+    "columbus-ross-mathematics-program-otterbein",
+    "columbus-westerville-library-teen-volunteers"
+   ]
+  },
+  {
+   "key": "Worthington, OH",
+   "state": "OH",
+   "lat": 40.0969,
+   "lon": -83.0202,
+   "precision": "city",
+   "ids": [
+    "columbus-worthington-libraries-volunteens"
+   ]
+  },
+  {
+   "key": "Beaverton, OR",
+   "state": "OR",
+   "lat": 45.4781,
+   "lon": -122.8171,
+   "precision": "city",
+   "ids": [
+    "beaverton-city-library-teen-library-council",
+    "beaverton-thprd-rise-youth-leaders"
+   ]
+  },
+  {
+   "key": "Corvallis, OR",
+   "state": "OR",
+   "lat": 44.5699,
+   "lon": -123.2783,
+   "precision": "city",
+   "ids": [
+    "oregon-4h-summer-conference"
+   ]
+  },
+  {
+   "key": "Eugene, OR",
+   "state": "OR",
+   "lat": 44.0568,
+   "lon": -123.119,
+   "precision": "city",
+   "ids": [
+    "eugene-lane-cc-summer-early-college-camps",
+    "eugene-lane-metro-youth-corps",
+    "eugene-looking-glass-youth-job-training",
+    "eugene-nyc-youth-camping-conservation-crews",
+    "eugene-nyc-youth-urban-community-forestry-crews",
+    "eugene-science-center-volunteer",
+    "eugene-uo-sail-student-academy"
+   ]
+  },
+  {
+   "key": "Hillsboro, OR",
+   "state": "OR",
+   "lat": 45.5253,
+   "lon": -122.9364,
+   "precision": "city",
+   "ids": [
+    "hillsboro-working-theory-farm-youth-positions",
+    "portland-pacific-university-synapse-health-camp"
+   ]
+  },
+  {
+   "key": "Newport, OR",
+   "state": "OR",
+   "lat": 44.6214,
+   "lon": -124.0438,
+   "precision": "city",
+   "ids": [
+    "newport-oregon-coast-aquarium-youth-volunteer"
+   ]
+  },
+  {
+   "key": "Portland, OR",
+   "state": "OR",
+   "lat": 45.537,
+   "lon": -122.65,
+   "precision": "city",
+   "ids": [
+    "portland-legacy-good-samaritan-volunteer",
+    "portland-lewis-clark-precollege-programs",
+    "portland-multnomah-county-library-teen-council",
+    "portland-multnomah-county-library-volunteer",
+    "portland-multnomah-youth-commission",
+    "portland-nyc-youth-community-crews",
+    "portland-ohsu-experience-health-day-camp",
+    "portland-ohsu-healthcare-volunteer-summer",
+    "portland-ohsu-knight-scholars",
+    "portland-omsi-outdoors-camp-counselor",
+    "portland-omsi-teen-volunteer",
+    "portland-omsi-the-mezz-teen-space",
+    "portland-oregon-food-bank-volunteer",
+    "portland-oregon-humane-youth-volunteer",
+    "portland-oregon-zoo-wildlife-leaders",
+    "portland-parks-lifeguard-swim-instructor-training",
+    "portland-parks-recreation-youth-summer-jobs",
+    "portland-pdx-youth-at-work-summerworks",
+    "portland-pnca-pre-college-summer",
+    "portland-youth-conservation-crew",
+    "portland-youthline-peer-crisis-volunteer"
+   ]
+  },
+  {
+   "key": "Salem, OR",
+   "state": "OR",
+   "lat": 44.9239,
+   "lon": -123.023,
+   "precision": "city",
+   "ids": [
+    "salem-oregon-house-honorary-page-program",
+    "salem-oregon-humane-youth-volunteer",
+    "salem-salem-health-student-volunteer",
+    "salem-willamette-camp-college"
+   ]
+  },
+  {
+   "key": "Sisters, OR",
+   "state": "OR",
+   "lat": 44.2924,
+   "lon": -121.553,
+   "precision": "city",
+   "ids": [
+    "central-oregon-camp-lead-heart-of-oregon-corps"
+   ]
+  },
+  {
+   "key": "Bethlehem, PA",
+   "state": "PA",
+   "lat": 40.6264,
+   "lon": -75.3679,
+   "precision": "city",
+   "ids": [
+    "bethlehem-lehigh-iacocca-global-entrepreneurship-intensive"
+   ]
+  },
+  {
+   "key": "Drums, PA",
+   "state": "PA",
+   "lat": 41.0352,
+   "lon": -76.0035,
+   "precision": "manual",
+   "ids": [
+    "keystone-job-corps-center"
+   ]
+  },
+  {
+   "key": "Erie, PA",
+   "state": "PA",
+   "lat": 42.1166,
+   "lon": -80.0735,
+   "precision": "city",
+   "ids": [
+    "erie-pa-zoo-edzoocrew-teen-volunteers"
+   ]
+  },
+  {
+   "key": "Fox Chapel, PA",
+   "state": "PA",
+   "lat": 40.526,
+   "lon": -79.8889,
+   "precision": "city",
+   "ids": [
+    "pittsburgh-audubon-ants-teen-helpers"
+   ]
+  },
+  {
+   "key": "Landisburg, PA",
+   "state": "PA",
+   "lat": 40.3437,
+   "lon": -77.3054,
+   "precision": "city",
+   "ids": [
+    "south-central-pa-leaf-project-youth-summer-employment"
+   ]
+  },
+  {
+   "key": "Lewisburg, PA",
+   "state": "PA",
+   "lat": 40.9641,
+   "lon": -76.89,
+   "precision": "city",
+   "ids": [
+    "lewisburg-bucknell-academy-summer-experience-base"
+   ]
+  },
+  {
+   "key": "Lopez, PA",
+   "state": "PA",
+   "lat": 41.4301,
+   "lon": -76.3138,
+   "precision": "manual",
+   "ids": [
+    "redrock-job-corps-center"
+   ]
+  },
+  {
+   "key": "Lower Paxton, PA",
+   "state": "PA",
+   "lat": 40.3172,
+   "lon": -76.8021,
+   "precision": "city",
+   "ids": [
+    "harrisburg-area-lower-paxton-junior-camp-counselor"
+   ]
+  },
+  {
+   "key": "Mechanicsburg, PA",
+   "state": "PA",
+   "lat": 40.2114,
+   "lon": -77.0059,
+   "precision": "city",
+   "ids": [
+    "pennsylvania-keystone-boys-state"
+   ]
+  },
+  {
+   "key": "Philadelphia, PA",
+   "state": "PA",
+   "lat": 40.0093,
+   "lon": -75.1333,
+   "precision": "city",
+   "ids": [
+    "philadelphia-academy-of-natural-sciences-volunteer",
+    "philadelphia-art-museum-teen-sketch-and-podcast",
+    "philadelphia-awbury-arboretum-owls-cit-training",
+    "philadelphia-bartrams-garden-paid-youth-internships",
+    "philadelphia-bloomberg-arts-internship",
+    "philadelphia-c2l-phl-summer-youth-employment",
+    "philadelphia-civil-air-patrol-northeast-philadelphia-squadron-cadets",
+    "philadelphia-drexel-neuroscience-camp-high-school",
+    "philadelphia-fleisher-teen-lounge",
+    "philadelphia-fox-chase-immersion-science-program",
+    "philadelphia-franklin-institute-pacts",
+    "philadelphia-franklin-institute-stem-scholars",
+    "philadelphia-independence-seaport-museum-teen-ambassadors",
+    "philadelphia-jefferson-northeast-summer-student-volunteer",
+    "philadelphia-job-corps-center",
+    "philadelphia-monell-science-apprenticeship-program",
+    "philadelphia-mural-arts-art-education",
+    "philadelphia-museum-american-revolution-living-history-youth-summer-institute",
+    "philadelphia-pafa-youth-council",
+    "philadelphia-parks-rec-lifeguard",
+    "philadelphia-parks-rec-summer-youth-employment",
+    "philadelphia-penn-provost-summer-mentorship-program",
+    "philadelphia-penn-sas-high-school-summer-programs",
+    "philadelphia-police-explorer-cadets-post-991",
+    "philadelphia-pyn-aim-afterschool",
+    "philadelphia-pyn-nextgen-career-clubs",
+    "philadelphia-pyn-pyntern",
+    "philadelphia-pyn-youth-opportunity-fair-2026",
+    "philadelphia-school-district-career-technical-education",
+    "philadelphia-schuylkill-center-counselor-in-training",
+    "philadelphia-schuylkill-center-wildlife-clinic-volunteer",
+    "philadelphia-temple-summer-academy-pre-college",
+    "philadelphia-temple-upward-bound",
+    "philadelphia-wistar-high-school-biomedical-research",
+    "philadelphia-workready-boost",
+    "philadelphia-workready-vip",
+    "philadelphia-works-youth-navigators-pa-careerlink",
+    "philadelphia-youth-commission",
+    "philadelphia-zoo-volun-teens"
+   ]
+  },
+  {
+   "key": "Pittsburgh, PA",
+   "state": "PA",
+   "lat": 40.4399,
+   "lon": -79.9755,
+   "precision": "city",
+   "ids": [
+    "pittsburgh-allegheny-county-parks-lifeguards",
+    "pittsburgh-boys-girls-clubs-workforce-pathways",
+    "pittsburgh-carnegie-museums-camp-teen-volunteers",
+    "pittsburgh-citiparks-lifeguard",
+    "pittsburgh-civil-air-patrol-allegheny-county-squadron-cadets",
+    "pittsburgh-cmu-cs-scholars",
+    "pittsburgh-cmu-pre-college-programs",
+    "pittsburgh-cmu-summer-academy-math-science",
+    "pittsburgh-duquesne-pharmacy-exploration-day",
+    "pittsburgh-glass-center-sio2-high-school",
+    "pittsburgh-grow-pittsburgh-urban-farmers-in-training",
+    "pittsburgh-job-corps-center",
+    "pittsburgh-kamin-science-center-teen-volunteers",
+    "pittsburgh-kamin-tour-your-future",
+    "pittsburgh-kingsley-association-teen-lead",
+    "pittsburgh-learn-and-earn-summer",
+    "pittsburgh-make-a-wish-youth-leadership-council",
+    "pittsburgh-mattress-factory-teen-art-cooperative",
+    "pittsburgh-national-aviary-teen-volunteers",
+    "pittsburgh-parks-conservancy-young-naturalists",
+    "pittsburgh-phipps-ecoleader-academy",
+    "pittsburgh-phipps-summer-camp-teen-volunteers",
+    "pittsburgh-pitt-gene-team",
+    "pittsburgh-pitt-public-health-science-academy",
+    "pittsburgh-point-park-acap-accounting-careers",
+    "pittsburgh-point-park-csi-summer-camp",
+    "pittsburgh-point-park-entrepreneurship-camp",
+    "pittsburgh-point-park-sports-business-camp",
+    "pittsburgh-sca-urban-green-high-school-crews",
+    "pittsburgh-upmc-childrens-teen-volunteer",
+    "pittsburgh-upmc-hillman-cancer-center-academy",
+    "pittsburgh-warhol-tech25-teen-dj-academy",
+    "pittsburgh-warhol-youth-arts-council",
+    "pittsburgh-zoo-aquarium-summer-zoo-teens",
+    "pittsburgh-zoo-green-teens"
+   ]
+  },
+  {
+   "key": "Shippensburg, PA",
+   "state": "PA",
+   "lat": 40.0487,
+   "lon": -77.5232,
+   "precision": "city",
+   "ids": [
+    "pennsylvania-keystone-girls-state"
+   ]
+  },
+  {
+   "key": "University Park, PA",
+   "state": "PA",
+   "lat": 40.7986,
+   "lon": -77.8649,
+   "precision": "manual",
+   "ids": [
+    "pennsylvania-pseas-school-for-excellence-agricultural-sciences"
+   ]
+  },
+  {
+   "key": "Villanova, PA",
+   "state": "PA",
+   "lat": 40.0405,
+   "lon": -75.341,
+   "precision": "city",
+   "ids": [
+    "philadelphia-villanova-pre-college-summer-academy"
+   ]
+  },
+  {
+   "key": "Rapid City, SD",
+   "state": "SD",
+   "lat": 44.0711,
+   "lon": -103.2179,
+   "precision": "city",
+   "ids": [
+    "monument-health-volunteen-rapid-city"
+   ]
+  },
+  {
+   "key": "Sioux Falls, SD",
+   "state": "SD",
+   "lat": 43.5407,
+   "lon": -96.732,
+   "precision": "city",
+   "ids": [
+    "great-plains-zoo-junior-zookeeper",
+    "sanford-health-sioux-falls-volunteer-age-16",
+    "sioux-falls-parks-lifeguard-training-and-jobs",
+    "siouxland-libraries-teen-volunteer-and-advisory-board"
+   ]
+  },
+  {
+   "key": "Clarksville, TN",
+   "state": "TN",
+   "lat": 36.5662,
+   "lon": -87.3459,
+   "precision": "city",
+   "ids": [
+    "clarksville-vanderbilt-hospital-volunteen"
+   ]
+  },
+  {
+   "key": "Franklin, TN",
+   "state": "TN",
+   "lat": 35.914,
+   "lon": -86.8522,
+   "precision": "city",
+   "ids": [
+    "franklin-williamson-county-public-library-volunteer"
+   ]
+  },
+  {
+   "key": "Knoxville, TN",
+   "state": "TN",
+   "lat": 35.9707,
+   "lon": -83.9493,
+   "precision": "city",
+   "ids": [
+    "knoxville-knox-county-public-library-volunteer",
+    "knoxville-muse-ambassadors-program",
+    "knoxville-museum-of-art-teen-volunteer",
+    "knoxville-zoo-youth-volunteer-program",
+    "tennessee-4h-roundup-all-star-conference",
+    "tennessee-leadership-summit-farm-bureau"
+   ]
+  },
+  {
+   "key": "Memphis, TN",
+   "state": "TN",
+   "lat": 35.1092,
+   "lon": -89.9685,
+   "precision": "city",
+   "ids": [
+    "memphis-ambassadors-program-map",
+    "memphis-baptist-memorial-job-shadowing",
+    "memphis-le-bonheur-summer-volunteen",
+    "memphis-methodist-summer-volunteen",
+    "memphis-mploy-youth-summer-experience",
+    "memphis-regional-one-health-teenteer",
+    "memphis-rhodes-college-summer-academy",
+    "memphis-stax-music-academy-after-school",
+    "memphis-youth-city-council"
+   ]
+  },
+  {
+   "key": "Murfreesboro, TN",
+   "state": "TN",
+   "lat": 35.8539,
+   "lon": -86.4212,
+   "precision": "city",
+   "ids": [
+    "murfreesboro-ascension-saint-thomas-rutherford-junior-volunteer",
+    "murfreesboro-mtsu-csi-forensic-science-camp",
+    "murfreesboro-rutherford-county-library-teen-volunteers",
+    "tennessee-ymca-model-united-nations"
+   ]
+  },
+  {
+   "key": "Nashville, TN",
+   "state": "TN",
+   "lat": 36.1722,
+   "lon": -86.7846,
+   "precision": "city",
+   "ids": [
+    "nashville-adventure-science-center-volunteer",
+    "nashville-ascension-saint-thomas-west-junior-volunteer",
+    "nashville-belmont-science-math-summer-camps",
+    "nashville-cheekwood-teen-volunteer",
+    "nashville-country-music-hall-of-fame-songwriting-camp",
+    "nashville-country-music-hall-of-fame-teen-team",
+    "nashville-friends-of-warner-parks-volunteer",
+    "nashville-frist-teen-arts-action-group",
+    "nashville-genesys-works-paid-internship",
+    "nashville-hands-on-nashville-youth-and-teen-volunteering",
+    "nashville-hermitage-future-presidents-youth-leadership-camp",
+    "nashville-monroe-carell-strive-teen-volunteer",
+    "nashville-power-youth-summer-employment",
+    "nashville-public-library-volunteer",
+    "nashville-second-harvest-youth-volunteer",
+    "nashville-shores-teen-seasonal-jobs",
+    "nashville-tsu-engineering-exploration-camp",
+    "nashville-tsu-national-summer-transportation-institute",
+    "nashville-vanderbilt-summer-academy",
+    "nashville-vumc-observational-experience-high-school",
+    "nashville-zoo-zooteen-volunteers",
+    "tennessee-wioa-youth-program-nashville-area-workforce-essentials",
+    "tennessee-ymca-youth-in-government"
+   ]
+  },
+  {
+   "key": "Oak Ridge, TN",
+   "state": "TN",
+   "lat": 35.9665,
+   "lon": -84.2905,
+   "precision": "city",
+   "ids": [
+    "oak-ridge-ornl-sage-camp",
+    "oak-ridge-ornl-trades-camp"
+   ]
+  },
+  {
+   "key": "Pikeville, TN",
+   "state": "TN",
+   "lat": 35.6154,
+   "lon": -85.1934,
+   "precision": "city",
+   "ids": [
+    "tennessee-forestry-camp"
+   ]
+  },
+  {
+   "key": "Austin, TX",
+   "state": "TX",
+   "lat": 30.2986,
+   "lon": -97.7541,
+   "precision": "city",
+   "ids": [
+    "austin-animal-services-teen-volunteer",
+    "austin-city-hs-summer-internships",
+    "austin-dougherty-works-in-progress",
+    "austin-habitat-youth-volunteering",
+    "austin-humane-society-teen-volunteer",
+    "austin-isd-summer-internship-program",
+    "austin-library-teen-fellowship",
+    "austin-library-youth-volunteer",
+    "austin-macc-caminos-teen-leadership",
+    "austin-parks-lifeguard",
+    "austin-st-davids-medical-center-teen-summer-volunteer",
+    "austin-st-davids-north-austin-teen-summer-volunteer",
+    "austin-thinkery-volunteens",
+    "austin-urban-roots-high-school-leadership",
+    "austin-wfs-capital-area-youth-services",
+    "austin-youth-council",
+    "austin-youth-development-ayd",
+    "austin-youth-forest-council",
+    "bullock-museum-volunteer",
+    "texas-childrens-north-austin-summer-junior-volunteer",
+    "travis-county-syep",
+    "ut-austin-csr-sees-internship",
+    "ut-austin-high-school-summer-research-academy",
+    "ut-austin-summer-discovery-high-school",
+    "ut-cockrell-longhorn-engineering-summer-camp",
+    "ut-cockrell-mite-engineering-camp",
+    "ut-mccombs-dynamc-accounting-academy",
+    "ut-mccombs-future-executive-academy",
+    "ut-mccombs-subiendo-academy-rising-leaders"
+   ]
+  },
+  {
+   "key": "College Station, TX",
+   "state": "TX",
+   "lat": 30.5852,
+   "lon": -96.2964,
+   "precision": "city",
+   "ids": [
+    "texas-tamu-react-chemistry-summer-research"
+   ]
+  },
+  {
+   "key": "Eagle Lake, TX",
+   "state": "TX",
+   "lat": 29.5873,
+   "lon": -96.3286,
+   "precision": "city",
+   "ids": [
+    "texas-challenge-academy"
+   ]
+  },
+  {
+   "key": "El Paso, TX",
+   "state": "TX",
+   "lat": 31.8478,
+   "lon": -106.4311,
+   "precision": "city",
+   "ids": [
+    "del-sol-medical-center-junior-volunteer",
+    "el-paso-animal-services-teen-volunteer",
+    "el-paso-health-youth-volunteer-program",
+    "el-paso-public-library-volunteer",
+    "el-paso-workforce-borderplex-nextforce-youth",
+    "ttuhsc-el-paso-summer-medical-camp",
+    "utep-mining-engineering-summer-camp",
+    "utep-upward-bound",
+    "va-el-paso-summer-youth-volunteer"
+   ]
+  },
+  {
+   "key": "Georgetown, TX",
+   "state": "TX",
+   "lat": 30.6682,
+   "lon": -97.6988,
+   "precision": "city",
+   "ids": [
+    "georgetown-st-davids-high-school-volunteer"
+   ]
+  },
+  {
+   "key": "Junction, TX",
+   "state": "TX",
+   "lat": 30.4908,
+   "lon": -99.7732,
+   "precision": "city",
+   "ids": [
+    "texas-youth-range-workshop"
+   ]
+  },
+  {
+   "key": "Round Rock, TX",
+   "state": "TX",
+   "lat": 30.5268,
+   "lon": -97.6601,
+   "precision": "city",
+   "ids": [
+    "round-rock-library-teen-advisory-board",
+    "round-rock-library-teen-summer-reading-volunteer",
+    "round-rock-parks-lifeguard-training-jobs"
+   ]
+  },
+  {
+   "key": "San Marcos, TX",
+   "state": "TX",
+   "lat": 29.8733,
+   "lon": -97.9357,
+   "precision": "city",
+   "ids": [
+    "job-corps-texas-gary-san-marcos"
+   ]
+  },
+  {
+   "key": "Seguin, TX",
+   "state": "TX",
+   "lat": 29.5902,
+   "lon": -97.9686,
+   "precision": "city",
+   "ids": [
+    "texas-bluebonnet-girls-state"
+   ]
+  },
+  {
+   "key": "Aspen Grove, UT",
+   "state": "UT",
+   "lat": 40.2453,
+   "lon": -111.6451,
+   "precision": "city",
+   "ids": [
+    "utah-4h-teen-winter-retreat"
+   ]
+  },
+  {
+   "key": "Cedar City, UT",
+   "state": "UT",
+   "lat": 37.6839,
+   "lon": -113.0958,
+   "precision": "city",
+   "ids": [
+    "cedar-city-suu-suma-teen-art-camp",
+    "cedar-city-suu-youth-engineering-academy-teen-camps"
+   ]
+  },
+  {
+   "key": "Farmington, UT",
+   "state": "UT",
+   "lat": 40.9847,
+   "lon": -111.9063,
+   "precision": "city",
+   "ids": [
+    "utah-lagoon-seasonal-jobs"
+   ]
+  },
+  {
+   "key": "Lehi, UT",
+   "state": "UT",
+   "lat": 40.4171,
+   "lon": -111.8711,
+   "precision": "city",
+   "ids": [
+    "thanksgiving-point-growing-leaders",
+    "thanksgiving-point-shetech-internship"
+   ]
+  },
+  {
+   "key": "Logan, UT",
+   "state": "UT",
+   "lat": 41.7401,
+   "lon": -111.8438,
+   "precision": "city",
+   "ids": [
+    "utah-4h-teen-summit"
+   ]
+  },
+  {
+   "key": "Ogden, UT",
+   "state": "UT",
+   "lat": 41.2284,
+   "lon": -111.9681,
+   "precision": "city",
+   "ids": [
+    "ogden-city-youth-council",
+    "ogden-weber-state-summer-medical-academy",
+    "ogden-weber-state-weberbiz-summer-camp"
+   ]
+  },
+  {
+   "key": "Orem, UT",
+   "state": "UT",
+   "lat": 40.2981,
+   "lon": -111.6995,
+   "precision": "city",
+   "ids": [
+    "orem-uvu-empowered-professionals-of-tomorrow"
+   ]
+  },
+  {
+   "key": "Salt Lake City, UT",
+   "state": "UT",
+   "lat": 40.7754,
+   "lon": -111.9273,
+   "precision": "city",
+   "ids": [
+    "clark-planetarium-youth-volunteer",
+    "hogle-zoo-zoo-corps-teen-volunteers",
+    "huntsman-cancer-institute-pathmaker-scholars",
+    "nhmu-critical-action-lab",
+    "nhmu-teen-explainers",
+    "red-butte-garden-twig-teens-working-in-the-garden",
+    "salt-lake-city-public-library-teen-squad",
+    "salt-lake-city-uofu-price-high-school-summer-research-internship",
+    "salt-lake-city-uofu-summer-mathematics-program-high-school",
+    "salt-lake-city-utah-food-bank-youth-volunteers",
+    "salt-lake-city-youthcity-child-development-internship",
+    "salt-lake-city-youthcity-government",
+    "salt-lake-city-youthcity-paid-city-department-internship",
+    "salt-lake-county-student-internships",
+    "tracy-aviary-individual-volunteer",
+    "university-of-utah-paths-college-access",
+    "utah-4h-mock-legislature",
+    "utah-dws-paid-work-experience-ages-14-24"
+   ]
+  },
+  {
+   "key": "Salt Lake County, UT",
+   "state": "UT",
+   "lat": 40.6672,
+   "lon": -111.9216,
+   "precision": "county",
+   "ids": [
+    "salt-lake-county-library-teen-volunteers"
+   ]
+  },
+  {
+   "key": "Alexandria, VA",
+   "state": "VA",
+   "lat": 38.8188,
+   "lon": -77.0832,
+   "precision": "city",
+   "ids": [
+    "alexandria-library-teen-volunteers-and-teen-advisory-group",
+    "alexandria-summer-youth-employment-program"
+   ]
+  },
+  {
+   "key": "Appomattox, VA",
+   "state": "VA",
+   "lat": 37.3587,
+   "lon": -78.8264,
+   "precision": "city",
+   "ids": [
+    "virginia-camp-woods-and-wildlife"
+   ]
+  },
+  {
+   "key": "Arlington, VA",
+   "state": "VA",
+   "lat": 38.8783,
+   "lon": -77.1007,
+   "precision": "city",
+   "ids": [
+    "arlington-employment-center-teen-job-board",
+    "arlington-parks-arlingteens-leaders-summer-internship",
+    "arlington-parks-summer-camp-teen-volunteers",
+    "arlington-teen-network-board",
+    "fairfax-gmu-access-academy-ai-summer-camp"
+   ]
+  },
+  {
+   "key": "Blacksburg, VA",
+   "state": "VA",
+   "lat": 37.2313,
+   "lon": -80.4267,
+   "precision": "city",
+   "ids": [
+    "blacksburg-historic-smithfield-student-volunteers",
+    "blacksburg-lewisgale-hospital-montgomery-junior-volunteer",
+    "blacksburg-montgomery-county-4-h-clubs",
+    "blacksburg-same-vt-stem-camp",
+    "blacksburg-vcom-see-camp",
+    "blacksburg-virginia-4-h-state-congress",
+    "blacksburg-vsgc-blast-virginia-tech-session",
+    "blacksburg-vt-cyberspark-cyber-camp",
+    "blacksburg-vt-explore-architecture",
+    "blacksburg-vt-geosciences-high-school-camp",
+    "blacksburg-vt-imagination-engineering-camp",
+    "blacksburg-vt-pamplin-pip-academy",
+    "blacksburg-vt-pathways-for-future-engineers",
+    "blacksburg-vt-summer-strings",
+    "blacksburg-vt-talent-search",
+    "blacksburg-vt-upwards-semiconductor-summer-camp",
+    "virginia-governors-school-for-agriculture",
+    "virginia-tech-c-tech2-computers-and-technology",
+    "virginia-tech-college-of-science-summer-camps",
+    "virginia-tech-upward-bound-sw-virginia",
+    "virginia-tech-watford-engineering-experience",
+    "virginia-youth-conservation-camp"
+   ]
+  },
+  {
+   "key": "Chantilly, VA",
+   "state": "VA",
+   "lat": 38.8892,
+   "lon": -77.4421,
+   "precision": "city",
+   "ids": [
+    "air-and-space-udvar-hazy-discovery-station-volunteer"
+   ]
+  },
+  {
+   "key": "Charlottesville, VA",
+   "state": "VA",
+   "lat": 38.0377,
+   "lon": -78.4854,
+   "precision": "city",
+   "ids": [
+    "charlottesville-bgcca-teen-clubs",
+    "charlottesville-blue-ridge-area-food-bank-youth-volunteers",
+    "charlottesville-c3-green-teen-alliance",
+    "charlottesville-caspca-junior-volunteers",
+    "charlottesville-catec-career-technical-programs",
+    "charlottesville-cayip-youth-internship",
+    "charlottesville-civil-air-patrol-monticello-squadron-cadets",
+    "charlottesville-cultivate-youth-food-justice-interns",
+    "charlottesville-habitat-for-humanity-teen-volunteers",
+    "charlottesville-light-house-studio-summer-film-academy",
+    "charlottesville-live-arts-mentor-apprentice",
+    "charlottesville-living-earth-school-cit",
+    "charlottesville-mrc-certified-internship",
+    "charlottesville-parks-lifeguard-training",
+    "charlottesville-piedmont-ymca-teen-cit-camp",
+    "charlottesville-pvcc-dual-enrollment",
+    "charlottesville-sentara-martha-jefferson-junior-volunteers",
+    "charlottesville-starr-hill-pathways",
+    "charlottesville-uva-design-discovery",
+    "charlottesville-uva-summer-session-high-school-courses",
+    "charlottesville-youth-council",
+    "jmrl-teen-advisory-board",
+    "jmrl-teen-volunteers",
+    "naacp-jmrl-library-internship-scholarship",
+    "uva-advance-pre-college-program",
+    "uva-health-junior-volunteer-summer-program",
+    "vdm-museum-teen-internship"
+   ]
+  },
+  {
+   "key": "Dublin, VA",
+   "state": "VA",
+   "lat": 37.1055,
+   "lon": -80.6897,
+   "precision": "city",
+   "ids": [
+    "new-river-community-college-dual-enrollment"
+   ]
+  },
+  {
+   "key": "Fairfax County, VA",
+   "state": "VA",
+   "lat": 38.8295,
+   "lon": -77.2733,
+   "precision": "county",
+   "ids": [
+    "fairfax-county-park-authority-lifeguard-jobs",
+    "fairfax-county-public-library-youth-volunteers",
+    "fairfax-eye-summer-work-experience",
+    "fairfax-ncs-community-volunteers",
+    "fairfax-park-authority-rec-pac-counselor-in-training",
+    "fairfax-police-public-safety-cadets"
+   ]
+  },
+  {
+   "key": "Fairfax, VA",
+   "state": "VA",
+   "lat": 38.8532,
+   "lon": -77.299,
+   "precision": "city",
+   "ids": [
+    "fairfax-county-it-internship-for-high-schoolers",
+    "fairfax-county-youth-leadership-program",
+    "fairfax-gmu-ai-in-health-summer-camp",
+    "fairfax-gmu-conflict-resolution-youth-summit",
+    "fairfax-gmu-valhen-stem-academy",
+    "fairfax-gmu-washington-journalism-and-media-conference",
+    "fairfax-gmu-wyse-washington-youth-summit-environment",
+    "fairfax-police-future-women-leaders-law-enforcement",
+    "fairfax-police-teen-police-academy",
+    "gmu-aspiring-scientists-summer-internship-program",
+    "gmu-high-school-dual-enrollment"
+   ]
+  },
+  {
+   "key": "Farmville, VA",
+   "state": "VA",
+   "lat": 37.2961,
+   "lon": -78.4004,
+   "precision": "city",
+   "ids": [
+    "va-girls-state"
+   ]
+  },
+  {
+   "key": "Hampton, VA",
+   "state": "VA",
+   "lat": 37.048,
+   "lon": -76.2973,
+   "precision": "city",
+   "ids": [
+    "virginia-vsgc-vasts-nasa-langley"
+   ]
+  },
+  {
+   "key": "Henrico County, VA",
+   "state": "VA",
+   "lat": 37.4375,
+   "lon": -77.3003,
+   "precision": "county",
+   "ids": [
+    "henrico-county-library-volunteen-program"
+   ]
+  },
+  {
+   "key": "Leesburg, VA",
+   "state": "VA",
+   "lat": 39.1028,
+   "lon": -77.5545,
+   "precision": "city",
+   "ids": [
+    "loudoun-youth-in-government-day"
+   ]
+  },
+  {
+   "key": "Loudoun County, VA",
+   "state": "VA",
+   "lat": 39.0812,
+   "lon": -77.6389,
+   "precision": "county",
+   "ids": [
+    "loudoun-prcs-teen-volunteer-program",
+    "loudoun-youth-advisory-council"
+   ]
+  },
+  {
+   "key": "Montgomery County, VA",
+   "state": "VA",
+   "lat": 37.1761,
+   "lon": -80.3885,
+   "precision": "county",
+   "ids": [
+    "blacksburg-volunteer-montgomery-youth"
+   ]
+  },
+  {
+   "key": "Newport News, VA",
+   "state": "VA",
+   "lat": 37.0765,
+   "lon": -76.5206,
+   "precision": "city",
+   "ids": [
+    "newport-news-youth-career-program"
+   ]
+  },
+  {
+   "key": "Norfolk, VA",
+   "state": "VA",
+   "lat": 36.923,
+   "lon": -76.2446,
+   "precision": "city",
+   "ids": [
+    "norfolk-virginia-zoo-conservation-youth-team"
+   ]
+  },
+  {
+   "key": "Prince William County, VA",
+   "state": "VA",
+   "lat": 38.7011,
+   "lon": -77.4796,
+   "precision": "county",
+   "ids": [
+    "prince-william-public-libraries-student-volunteers"
+   ]
+  },
+  {
+   "key": "Radford, VA",
+   "state": "VA",
+   "lat": 37.1201,
+   "lon": -80.5591,
+   "precision": "city",
+   "ids": [
+    "blacksburg-nrv-governors-school-arts-humanities",
+    "blacksburg-radford-summer-bridge-women-in-stem",
+    "virginia-governors-school-vpa-humanities-radford"
+   ]
+  },
+  {
+   "key": "Richmond, VA",
+   "state": "VA",
+   "lat": 37.5314,
+   "lon": -77.476,
+   "precision": "city",
+   "ids": [
+    "richmond-maymont-junior-naturalist",
+    "richmond-mayors-youth-academy-summer",
+    "richmond-national-battlefield-park-youth-conservation-corps",
+    "richmond-science-museum-of-virginia-teen-leadership-program",
+    "richmond-vcu-pharmacy-summer-scholars",
+    "va-house-of-delegates-page-program",
+    "va-senate-page-program"
+   ]
+  },
+  {
+   "key": "Roanoke, VA",
+   "state": "VA",
+   "lat": 37.2785,
+   "lon": -79.9582,
+   "precision": "city",
+   "ids": [
+    "blacksburg-camp-carilion-health-careers",
+    "roanoke-science-museum-of-western-virginia-volunteer",
+    "virginia-governors-school-medicine-health-sciences-roanoke"
+   ]
+  },
+  {
+   "key": "Shenandoah National Park, VA",
+   "state": "VA",
+   "lat": 38.6642,
+   "lon": -78.4545,
+   "precision": "city",
+   "ids": [
+    "virginia-shenandoah-national-park-youth-conservation-corps"
+   ]
+  },
+  {
+   "key": "Springfield, VA",
+   "state": "VA",
+   "lat": 38.7816,
+   "lon": -77.1839,
+   "precision": "city",
+   "ids": [
+    "burke-composite-squadron-cap-cadets"
+   ]
+  },
+  {
+   "key": "Bremerton, WA",
+   "state": "WA",
+   "lat": 47.54,
+   "lon": -122.7171,
+   "precision": "city",
+   "ids": [
+    "washington-youth-challenge-academy"
+   ]
+  },
+  {
+   "key": "Burien, WA",
+   "state": "WA",
+   "lat": 47.4756,
+   "lon": -122.3447,
+   "precision": "city",
+   "ids": [
+    "burien-greenway-green-teens",
+    "seattle-puget-sound-skills-center"
+   ]
+  },
+  {
+   "key": "Carnation, WA",
+   "state": "WA",
+   "lat": 47.6442,
+   "lon": -121.9007,
+   "precision": "city",
+   "ids": [
+    "seattle-greenway-yess-riverview-wanic"
+   ]
+  },
+  {
+   "key": "Everett, WA",
+   "state": "WA",
+   "lat": 47.9612,
+   "lon": -122.1889,
+   "precision": "city",
+   "ids": [
+    "seattle-providence-everett-junior-volunteer"
+   ]
+  },
+  {
+   "key": "King County, WA",
+   "state": "WA",
+   "lat": 47.475,
+   "lon": -121.8137,
+   "precision": "county",
+   "ids": [
+    "kcls-teen-advisory-boards"
+   ]
+  },
+  {
+   "key": "Olympia, WA",
+   "state": "WA",
+   "lat": 47.0406,
+   "lon": -122.895,
+   "precision": "city",
+   "ids": [
+    "olympia-grub-summer-youth-program",
+    "washington-legislature-page-program"
+   ]
+  },
+  {
+   "key": "Seattle, WA",
+   "state": "WA",
+   "lat": 47.6193,
+   "lon": -122.3515,
+   "precision": "city",
+   "ids": [
+    "seattle-aquarium-youth-ocean-advocates",
+    "seattle-bgc-king-county-youthforce",
+    "seattle-burke-museum-voices-in-science-burke-ology",
+    "seattle-childrens-hospital-volunteer",
+    "seattle-childrens-research-training-program-high-school",
+    "seattle-childrens-youth-voice-research-liaison",
+    "seattle-clean-water-ambassadors-internship",
+    "seattle-fire-cadet-company-511",
+    "seattle-fred-hutch-summer-high-school-internship",
+    "seattle-henry-teen-art-collective",
+    "seattle-mohai-history-lab",
+    "seattle-museum-of-flight-youth-volunteer",
+    "seattle-parks-career-explorations",
+    "seattle-parks-lifeguard-jobs",
+    "seattle-parks-summer-temporary-jobs",
+    "seattle-parks-teen-late-night-internship",
+    "seattle-parks-teen-summer-musical",
+    "seattle-parks-yesl-pre-employment-training",
+    "seattle-police-explorers",
+    "seattle-powerful-voices-events-fellowship",
+    "seattle-powerful-voices-healing-justice-fellowship",
+    "seattle-safefutures-summer-youth-employment",
+    "seattle-sca-urban-green-high-school-crews",
+    "seattle-sdot-youth-ambassador-program",
+    "seattle-teens-in-public-service-summer-internship",
+    "seattle-teentix-new-guard",
+    "seattle-teentix-newsroom",
+    "seattle-tilth-rainier-beach-youth-stewards",
+    "seattle-uw-changemakers-in-computing",
+    "seattle-uw-engineering-academy",
+    "seattle-uw-foster-business-and-leadership-program",
+    "seattle-uw-nurse-camp",
+    "seattle-uw-summer-sessions-high-school",
+    "seattle-wing-luke-museum-youthcan",
+    "seattle-woodland-park-zoo-teen-ambassadors",
+    "seattle-ymca-earth-service-corps",
+    "seattle-ymca-summer-day-camp-jobs",
+    "seattle-ymca-wages-ten-week-internship",
+    "seattle-ymca-youth-and-government-youth-legislature",
+    "seattle-youth-commission",
+    "seattle-youth-employment-program",
+    "seattle-youth-in-focus-creative-career-cohort",
+    "seattle-youth-in-focus-job-training-program",
+    "washington-aerospace-scholars",
+    "washington-wta-youth-trail-work-parties"
+   ]
+  },
+  {
+   "key": "Stanwood, WA",
+   "state": "WA",
+   "lat": 48.2451,
+   "lon": -122.3422,
+   "precision": "city",
+   "ids": [
+    "washington-evergreen-boys-and-girls-state"
+   ]
+  },
+  {
+   "key": "Tacoma, WA",
+   "state": "WA",
+   "lat": 47.2522,
+   "lon": -122.4598,
+   "precision": "city",
+   "ids": [
+    "tacoma-pierce-county-library-teen-councils",
+    "tacoma-pierce-county-library-teen-volunteer-league",
+    "tacoma-public-schools-jobs-253",
+    "tacoma-public-schools-jobs-253-summer-credential-programs",
+    "washington-nyc-urban-forestry-youth-crew-tacoma"
+   ]
+  },
+  {
+   "key": "Eau Claire, WI",
+   "state": "WI",
+   "lat": 44.8183,
+   "lon": -91.4948,
+   "precision": "city",
+   "ids": [
+    "wisconsin-badger-boys-state"
+   ]
+  },
+  {
+   "key": "Fitchburg, WI",
+   "state": "WI",
+   "lat": 42.9858,
+   "lon": -89.4253,
+   "precision": "city",
+   "ids": [
+    "madison-bgc-dane-county-career-exploration-program",
+    "madison-briarpatch-youth-job-center"
+   ]
+  },
+  {
+   "key": "Madison, WI",
+   "state": "WI",
+   "lat": 43.0878,
+   "lon": -89.4299,
+   "precision": "city",
+   "ids": [
+    "madison-bgc-dane-county-summer-internship-program",
+    "madison-ceos-of-tomorrow-teen-ambassadors",
+    "madison-ceos-of-tomorrow-teen-incubator",
+    "madison-ceos-of-tomorrow-teens-internship",
+    "madison-childrens-museum-volunteers",
+    "madison-city-goodman-pool-lifeguard",
+    "madison-college-career-discovery-youth-camps",
+    "madison-college-gateway-to-college",
+    "madison-dane-county-humane-society-youth-volunteer",
+    "madison-goodman-teenworks",
+    "madison-habitat-for-humanity-dane-county-high-school-volunteers",
+    "madison-henry-vilas-zoo-teen-program",
+    "madison-henry-vilas-zoo-teen-volunteers",
+    "madison-mmoca-teen-forum",
+    "madison-mmsd-science-research-internship",
+    "madison-mmsd-youth-apprenticeship",
+    "madison-operation-fresh-start-legacy",
+    "madison-public-library-teen-volunteering",
+    "madison-second-harvest-foodbank-youth-volunteering",
+    "madison-uw-accelerated-learning-program",
+    "madison-uw-arboretum-earth-focus-assistant-naturalist",
+    "madison-uw-badger-dairy-camp",
+    "madison-uw-badger-summer-scholars",
+    "madison-uw-carbone-arise-summer-research-internship",
+    "madison-uw-engineering-summer-program",
+    "madison-uw-health-teen-volunteer",
+    "madison-uw-people-precollege",
+    "madison-uw-pharmacy-summer-program",
+    "madison-uw-summer-arts-clinic",
+    "madison-uw-summer-music-clinic-senior",
+    "madison-uw-wsb-business-basics",
+    "madison-uw-wsb-entrepreneurship-boot-camp",
+    "madison-uw-wsb-junior-business-badgers",
+    "madison-wanda-fullmore-youth-internship",
+    "madison-wdbscw-wioa-youth",
+    "madison-wdbscw-youth-apprenticeship",
+    "wisconsin-4h-summer-academy-uw-madison",
+    "wisconsin-ymca-youth-in-government"
+   ]
+  },
+  {
+   "key": "Middleton, WI",
+   "state": "WI",
+   "lat": 43.107,
+   "lon": -89.5063,
+   "precision": "city",
+   "ids": [
+    "madison-dane-county-parks-youth-volunteers-for-conservation"
+   ]
+  },
+  {
+   "key": "Oshkosh, WI",
+   "state": "WI",
+   "lat": 44.0232,
+   "lon": -88.5623,
+   "precision": "city",
+   "ids": [
+    "wisconsin-badger-girls-state"
+   ]
+  },
+  {
+   "key": "Cheyenne, WY",
+   "state": "WY",
+   "lat": 41.1283,
+   "lon": -104.7992,
+   "precision": "city",
+   "ids": [
+    "laramie-county-library-system-volunteer-cheyenne"
+   ]
+  },
+  {
+   "key": "Laramie, WY",
+   "state": "WY",
+   "lat": 41.3118,
+   "lon": -105.6065,
+   "precision": "city",
+   "ids": [
+    "university-of-wyoming-summer-high-school-institute"
+   ]
+  },
+  {
+   "key": "Yellowstone National Park, WY",
+   "state": "WY",
+   "lat": 44.9732,
+   "lon": -110.6929,
+   "precision": "city",
+   "ids": [
+    "yellowstone-national-park-youth-conservation-corps"
+   ]
+  }
+ ],
+ "noPoint": {
+  "statewide": {
+   "AZ": [
+    "arizona-4h-cooperative-extension"
+   ],
+   "BC": [
+    "british-columbia-canadian-cadets",
+    "british-columbia-foundry-work-and-education-program",
+    "british-columbia-skilledtradesbc-youth-trades",
+    "british-columbia-skills-canada-bc-competitions",
+    "ywca-nextstep-youth-employment"
+   ],
+   "CA": [
+    "ala-girls-state-california",
+    "ca-chp-explorer",
+    "ca-das-apprenticeship-info",
+    "ca-edd-youth-employment-opportunity-program",
+    "ca-edd-youth-employment-services",
+    "ca-state-parks-volunteers",
+    "ca-volunteers-youth-service-corps",
+    "ca-work-experience-education",
+    "california-4h",
+    "california-cadet-corps",
+    "california-fbla",
+    "california-ffa",
+    "california-partnership-academies",
+    "civil-air-patrol-california-wing-cadets",
+    "csssa-california-state-summer-school-arts",
+    "deca-california",
+    "exploring-learning-for-life",
+    "red-cross-lifeguard-wsi",
+    "sf-pre-register-to-vote",
+    "ymca-youth-and-government-ca"
+   ],
+   "CO": [
+    "colorado-4h-youth-development",
+    "colorado-childrens-hospital-junior-volunteer",
+    "colorado-ffa-association",
+    "colorado-governors-summer-job-hunt",
+    "colorado-youth-advisory-council-coyac"
+   ],
+   "FL": [
+    "florida-4h-youth-development",
+    "florida-envirothon",
+    "florida-ffa-association"
+   ],
+   "GA": [
+    "civil-air-patrol-georgia-wing-cadets",
+    "georgia-4h-uga-extension",
+    "georgia-crew-foster-youth-employment",
+    "georgia-deca-state-association",
+    "georgia-envirothon",
+    "georgia-fbla-state-association",
+    "georgia-ffa-association",
+    "georgia-ga-ryse-independent-living-program",
+    "georgia-governors-honors-program",
+    "georgia-work-based-learning-gadoe",
+    "georgia-worksource-youth-wioa",
+    "tcsg-dual-enrollment-georgia"
+   ],
+   "HI": [
+    "hawaii-doe-student-internships-doe-offices-and-schools",
+    "hawaii-schatz-senate-high-school-internship",
+    "hawaii-uh-early-college-dual-credit",
+    "hawaii-uh-running-start-dual-credit"
+   ],
+   "IA": [
+    "ijag-iowa-jobs-for-americas-graduates",
+    "iowa-4h-agricultural-ambassadors",
+    "iowa-4h-career-pathways-academy",
+    "iowa-4h-reporters-iowa-pbs",
+    "iowa-4h-state-council",
+    "iowa-4h-youth-development",
+    "iowa-ffa-association",
+    "iowa-vr-pre-ets-students-with-disabilities"
+   ],
+   "ID": [
+    "idaho-4h-state-teen-association-convention",
+    "idaho-science-and-aerospace-scholars"
+   ],
+   "IL": [
+    "illinois-4h-creative-collective-art-ambassadors",
+    "illinois-4h-food-advocacy-ambassadors",
+    "illinois-4h-healthy-living-ambassadors",
+    "illinois-4h-influencers-team",
+    "illinois-4h-speaking-for-illinois-4h",
+    "illinois-4h-youth-development",
+    "illinois-dcfs-education-and-training-voucher-etv",
+    "illinois-dcfs-employment-job-training-apprenticeship-incentive",
+    "illinois-deca-state-association",
+    "illinois-fbla-state-association",
+    "illinois-girls-state",
+    "illinois-isbe-student-advisory-council",
+    "illinois-wing-civil-air-patrol-cadets"
+   ],
+   "IN": [
+    "indiana-4h-state-ambassadors",
+    "indiana-4h-youth-development",
+    "indiana-deca-state-association",
+    "indiana-dnr-volunteers-under-18",
+    "indiana-dwd-workone-young-adult-services",
+    "indiana-ffa-state-association",
+    "indiana-wing-civil-air-patrol-cadets",
+    "indiana-work-and-learn-indiana"
+   ],
+   "KY": [
+    "kentucky-4h-youth-development",
+    "kentucky-ffa-association",
+    "kentucky-governors-scholars-program",
+    "kentucky-wioa-youth-program-career-center"
+   ],
+   "MA": [
+    "massachusetts-4h-youth-development",
+    "massachusetts-audubon-volunteer",
+    "massachusetts-audubon-youth-climate-leadership-program",
+    "massachusetts-civil-air-patrol-cadets",
+    "massachusetts-commcorp-youthworks",
+    "massachusetts-ffa-association",
+    "massachusetts-state-student-advisory-council"
+   ],
+   "MD": [
+    "maryland-apprenticeship-maryland-program-amp",
+    "maryland-cbf-student-leadership-program",
+    "maryland-dnr-internships-high-school",
+    "md-4-h-youth-development",
+    "md-ffa-association"
+   ],
+   "MI": [
+    "michigan-bsbp-pre-employment-transition-services",
+    "michigan-deca-state-association",
+    "michigan-ffa-state-association",
+    "michigan-first-robotics-competition",
+    "michigan-mrs-pre-employment-transition-services",
+    "michigan-wing-civil-air-patrol-cadets",
+    "michigan-wioa-youth-michigan-works",
+    "michigan-youth-challenge-academy"
+   ],
+   "MN": [
+    "minnesota-4h",
+    "minnesota-deca",
+    "minnesota-ffa",
+    "minnesota-wing-civil-air-patrol-cadets",
+    "twin-cities-bestprep-minnesota-business-venture"
+   ],
+   "MO": [
+    "missouri-4h-civic-engagement-ambassadors",
+    "missouri-4h-youth-development",
+    "missouri-dss-jobs-league-program",
+    "missouri-ffa-association"
+   ],
+   "MT": [
+    "montana-4h-county-state-ambassador",
+    "montana-4h-foundation-youth-representative"
+   ],
+   "NC": [
+    "nc-4-h-teen-programs",
+    "nc-envirothon",
+    "nc-ffa-association",
+    "nc-skillsusa-association",
+    "nc-wing-civil-air-patrol-cadets",
+    "nc-youth-apprenticeship"
+   ],
+   "ND": [
+    "job-service-north-dakota-wioa-youth-program",
+    "north-dakota-4h-ambassador-program"
+   ],
+   "NJ": [
+    "new-jersey-4h-youth-development",
+    "new-jersey-civil-air-patrol-cadets",
+    "new-jersey-youth-corps"
+   ],
+   "NM": [
+    "new-mexico-4h-nmsu",
+    "new-mexico-ffa-association",
+    "new-mexico-forest-stewards-youth-corps-summer",
+    "new-mexico-youth-conservation-corps-state-program"
+   ],
+   "NV": [
+    "nevada-4h-youth-development",
+    "nevada-youth-legislature",
+    "reno-unr-women-in-stem-high-school"
+   ],
+   "NY": [
+    "new-york-state-4h-youth-development",
+    "new-york-state-civil-air-patrol-cadets",
+    "new-york-state-dec-summer-camps",
+    "new-york-state-parks-lifeguard"
+   ],
+   "OH": [
+    "ohio-4h-youth-development",
+    "ohio-deca-state-association",
+    "ohio-farm-bureau-exploreag",
+    "ohio-ffa-state-association",
+    "ohio-wing-civil-air-patrol-cadets"
+   ],
+   "OR": [
+    "oregon-4h-state-ambassadors",
+    "oregon-4h-youth-development"
+   ],
+   "PA": [
+    "pennsylvania-4h-youth-development",
+    "pennsylvania-civil-air-patrol-cadets",
+    "pennsylvania-fbla-state-association",
+    "pennsylvania-ffa-association",
+    "pennsylvania-junior-academy-of-science",
+    "pennsylvania-outdoor-corps-youth-summer"
+   ],
+   "SD": [
+    "south-dakota-4h-state-ambassador-program",
+    "south-dakota-dlr-wioa-youth-program"
+   ],
+   "TN": [
+    "tennessee-4h-youth-development",
+    "tennessee-ffa-association"
+   ],
+   "TX": [
+    "texas-4h",
+    "texas-4h-ambassador-teams",
+    "texas-4h-council",
+    "texas-american-legion-boys-state",
+    "texas-brigades-youth-conservation-leadership-camps",
+    "texas-deca",
+    "texas-envirothon",
+    "texas-ffa-association",
+    "texas-hosa",
+    "texas-parks-wildlife-state-parks-volunteer",
+    "texas-twc-summer-earn-and-learn",
+    "texas-wing-civil-air-patrol-cadets"
+   ],
+   "UT": [
+    "utah-4h-usu-extension",
+    "utah-pre-employment-transition-services-pre-ets",
+    "utah-summer-agriculture-program-sae"
+   ],
+   "VA": [
+    "va-4-h-youth-development",
+    "va-boys-state",
+    "va-state-parks-youth-conservation-corps",
+    "va-wing-civil-air-patrol-cadets",
+    "virginia-envirothon"
+   ],
+   "WA": [
+    "seattle-anew-construction-trades-training",
+    "washington-4h",
+    "washington-deca",
+    "washington-ffa-association",
+    "washington-running-start",
+    "washington-wing-civil-air-patrol-cadets"
+   ],
+   "WI": [
+    "wisconsin-4h-agriculture-ambassadors",
+    "wisconsin-deca-state-association",
+    "wisconsin-dnr-youth-conservation-congress",
+    "wisconsin-dwd-youth-apprenticeship",
+    "wisconsin-ffa-state-association",
+    "wisconsin-wing-civil-air-patrol-cadets"
+   ],
+   "WY": [
+    "wyoming-game-and-fish-youth-conservation-camps",
+    "wyoming-workforce-services-wioa-youth"
+   ]
+  },
+  "online": [
+   "black-girls-code",
+   "bloomington-iu-jacobs-composition-academy",
+   "bloomington-iu-sese-sustainability-experience",
+   "chicago-uchicago-hero-oncology",
+   "congressional-app-challenge",
+   "fairfax-gmu-health-services-mentorship-program",
+   "fed-challenge-high-school-new-york-fed",
+   "forage-job-simulations",
+   "fulton-county-connected-youth-leadership-program",
+   "girls-who-code",
+   "hack-club",
+   "hacktoberfest-2026",
+   "honolulu-hpu-600-online-college-classes",
+   "huntsman-cancer-institute-cancer-research-high-school-program",
+   "huntsman-cancer-institute-hci-rise-virtual-program",
+   "imsa-ai-credential-online",
+   "imsa-research-fundamentals-online",
+   "imsa-rise-online-research-program",
+   "khan-academy-career-courses",
+   "kode-with-klossy",
+   "lafayette-purdue-saturday-morning-astrophysics",
+   "legischool-civics-virtual-institute",
+   "louisville-kentucky-science-center-youth-science-summit",
+   "madison-uw-badger-precollege-college-ready",
+   "madison-uw-carbone-hero-cancer-research",
+   "madison-uw-social-impact-leadership-online",
+   "major-league-hacking",
+   "morehouse-summer-pre-college-program",
+   "nasa-citizen-science",
+   "nasa-genelab-for-high-schools",
+   "national-economics-challenge-council-for-economic-education",
+   "ncsu-global-challenge-weekend-36-hours",
+   "ncsu-online-research-academy",
+   "nfte-world-series-of-innovation",
+   "northwestern-nhsi-debate-institute",
+   "nyit-high-school-business-bootcamp",
+   "oak-ridge-ornl-next-generation-stem-internship",
+   "red-cross-babysitting-training",
+   "regeneron-sts",
+   "san-diego-ucsd-bioengineering-research-scholars",
+   "san-diego-ucsd-marine-science-research-scholars",
+   "stanford-pre-collegiate-summer-institutes",
+   "stock-market-game-sifma-foundation",
+   "uc-scout",
+   "vancouver-bcchr-pathways-to-science",
+   "virtual-enterprises-international",
+   "wharton-global-high-school-investment-competition",
+   "wikipedia-editing",
+   "zooniverse"
+  ],
+  "national": [
+   "deca-high-school-chapters-national",
+   "hosa-future-health-professionals",
+   "key-club-high-school",
+   "national-job-corps-free-training-ages-16-24",
+   "national-youthbuild-programs-ages-16-24",
+   "nps-youth-conservation-corps",
+   "skillsusa"
+  ],
+  "multi": [
+   "alameda-county-library-teen-volunteer",
+   "alive-center-teen-volunteers-and-advisory-board",
+   "anderson-humane-teen-volunteers-school-service",
+   "arc-nextgen-youth-workforce",
+   "bgc-ncil-industry-clubs",
+   "bgc-ncil-keystone-club-youth-of-the-year",
+   "boston-mit-lincoln-lab-llrise-radar",
+   "camp-ignite-bc-firefighting-camp-for-young-women",
+   "central-oregon-go-lead-winter-program",
+   "central-oregon-youth-conservation-corps",
+   "chicago-uchicago-researchstart",
+   "cincinnati-playhouse-summer-performance-academies",
+   "cincinnati-uc-health-teen-volunteers",
+   "columbus-osu-young-scholars-program",
+   "cook-memorial-library-teen-volunteers",
+   "cosumnes-csd-teen-committees",
+   "denver-health-mc2-medical-career-collaborative",
+   "duke-health-youth-symposium-healthcare-careers",
+   "ebrpd-leaders-in-training",
+   "ebrpd-lifeguard-academy-pathway",
+   "el-camino-health-junior-auxiliary",
+   "exp-future-high-school-internship-program",
+   "fairfax-gmu-mason-game-and-technology-academy",
+   "fairfax-nova-e-summer-energy-stem-program",
+   "florida-4h-junior-camp-counselor-program",
+   "florida-orlando-va-junior-volunteer-summer-program",
+   "florida-uhealth-high-school-student-summer-volunteer",
+   "foodbank-central-eastern-nc-youth-volunteers",
+   "foothill-college-high-school-dual-enrollment",
+   "georgia-dnr-career-academy",
+   "gtri-high-school-summer-internship",
+   "habitat-east-bay-silicon-valley-volunteer",
+   "handson-tomorrow-youth-volunteering",
+   "hawaii-4h-cooperative-extension",
+   "hoag-jr-auxiliary-candystripers",
+   "holy-cross-health-teen-volunteer-silver-spring",
+   "idaho-foodbank-youth-volunteers",
+   "inova-high-school-student-volunteers",
+   "intermountain-health-junior-volunteers",
+   "jasocal-high-school-programs",
+   "job-corps-georgia-brunswick-turner",
+   "job-corps-washington-centers",
+   "junior-achievement-norcal",
+   "kaiser-launch-high-school-program",
+   "kane-county-youth-services",
+   "ksu-discoveru-summer-camps-high-school",
+   "lansing-lso-side-by-side-student-orchestra",
+   "los-alamos-ymca-youth-conservation-corps",
+   "louisville-uofl-health-summer-teen-volunteer",
+   "massachusetts-tufts-pre-college-summer-programs",
+   "mfrl-teen-library-volunteer",
+   "michigan-huron-clinton-metroparks-volunteer-workdays",
+   "mission-hospital-high-school-auxiliary",
+   "montana-conservation-corps-nps-expeditions-teens",
+   "montana-conservation-corps-youth-corps-teens",
+   "mtc-high-school-internship-program",
+   "nc-governors-school",
+   "nc-job-corps-schenck-kittrell-oconaluftee",
+   "nc-summer-ventures-science-math",
+   "new-brunswick-middlesex-magnet-early-career-exploration-institute",
+   "new-jersey-capital-health-junior-volunteer-program",
+   "new-jersey-mercer-county-technical-schools-shared-time",
+   "new-mexico-rmyc-conservation-crew",
+   "new-mexico-ydi-wioa-youth-central",
+   "new-mexico-ydi-wioa-youth-northern",
+   "nisra-volunteers-and-summer-camp-jobs-elgin",
+   "north-dakota-governors-school-ndgs",
+   "northwestern-medicine-summer-student-volunteer",
+   "nova-parks-waterpark-jobs",
+   "nyc-ace-mentor-program-greater-new-york",
+   "nyc-sadie-nash-leadership-scholars",
+   "nyc-sadie-nash-nash-u-leadership-internship",
+   "nyc-sadie-nash-siblinghood-academy",
+   "nyc-sadie-nash-summer-institute",
+   "nyc-wcs-discovery-guide-volunteer",
+   "oneinmath-teen-tutor-volunteers",
+   "oregon-4h-youth-tractor-safety-certification",
+   "paterson-city-green-growing-strong",
+   "pittsburgh-ahn-junior-volunteer",
+   "rocky-mountain-youth-corps-youth-conservation-corps",
+   "san-diego-food-bank-youth-volunteer",
+   "san-diego-palomar-college-concurrent-enrollment",
+   "san-diego-palomar-ucsd-health-junior-volunteer",
+   "sccld-homework-help-tutor",
+   "seattle-wanic-skill-center",
+   "slac-sage-camp",
+   "smash-residential",
+   "south-bay-youth-one-stop-work-experience",
+   "southwest-conservation-corps-high-school-conservation-crews",
+   "stanford-health-care-teen-volunteer",
+   "twin-cities-conservation-corps-youth-interns",
+   "twin-cities-genesys-works-internship",
+   "twin-cities-healthpartners-teen-volunteer",
+   "twin-cities-hired-youth-and-young-adult-services",
+   "twin-cities-mhealth-fairview-teen-volunteer",
+   "twin-cities-minnesota-ace-aviation-camp",
+   "twin-cities-spark-y-pathways-summer-internship",
+   "ucsf-health-volunteer-bch-oakland",
+   "uga-caes-young-scholars-program",
+   "washington-kitsap-regional-library-teen-volunteer",
+   "washington-nyc-sound-to-summit-crews",
+   "washington-sno-isle-libraries-volunteer",
+   "wdsra-teen-volunteers-western-dupage",
+   "wichita-ymca-job-prep-teen-summer-jobs",
+   "ymca-orange-county-volunteer",
+   "ymca-triangle-lightner-y-achievers"
+  ]
+ },
+ "unmatched": [],
+ "source": "US Census Bureau Gazetteer Files, 2026 edition (public domain): places, county subdivisions counties and ZIP code tabulation area (ZCTA) national files, plus the state file for names. https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/ . British Columbia points are a manual table from the Canadian Geographical Names Database (Natural Resources Canada). 11 neighborhood and island city points use ZCTA centroids."
+}

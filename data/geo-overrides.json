@@ -1,0 +1,432 @@
+{
+  "_about": "Every hand fix for geocode.py. byCity is keyed by the exact card city text, byId by card id. aliases map a name the Gazetteer lacks to a county. manualPoints are coordinates read from an official source.",
+  "aliases": {
+    "Brooklyn, NY": {
+      "county": "Kings County, NY",
+      "reason": "Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County"
+    },
+    "Queens, NY": {
+      "county": "Queens County, NY",
+      "reason": "Queens is a borough with no Gazetteer place; same area as Queens County"
+    },
+    "Bronx, NY": {
+      "county": "Bronx County, NY",
+      "reason": "The Bronx is a borough with no Gazetteer place; same area as Bronx County"
+    },
+    "Manhattan, NY": {
+      "county": "New York County, NY",
+      "reason": "Manhattan is a borough with no Gazetteer place; same area as New York County"
+    },
+    "Staten Island, NY": {
+      "county": "Richmond County, NY",
+      "reason": "Staten Island is a borough with no Gazetteer place; same area as Richmond County"
+    }
+  },
+  "manualPoints": {
+    "Vancouver, BC": {
+      "key": "Vancouver, BC",
+      "lat": 49.2611,
+      "lon": -123.1139,
+      "source": "Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK"
+    },
+    "Burnaby, BC": {
+      "key": "Burnaby, BC",
+      "lat": 49.2428,
+      "lon": -122.9728,
+      "source": "Canadian Geographical Names Database, Natural Resources Canada, id JAEBN, https://geogratis.gc.ca/services/geoname/en/geonames/JAEBN"
+    },
+    "North Vancouver, BC": {
+      "key": "North Vancouver, BC",
+      "lat": 49.3206,
+      "lon": -123.0739,
+      "source": "Canadian Geographical Names Database, Natural Resources Canada, id JBFRV, https://geogratis.gc.ca/services/geoname/en/geonames/JBFRV"
+    },
+    "Richmond, BC": {
+      "key": "Richmond, BC",
+      "lat": 49.1633,
+      "lon": -123.1633,
+      "source": "Canadian Geographical Names Database, Natural Resources Canada, id JBJFI, https://geogratis.gc.ca/services/geoname/en/geonames/JBJFI"
+    },
+    "Surrey, BC": {
+      "key": "Surrey, BC",
+      "lat": 49.1117,
+      "lon": -122.8275,
+      "source": "Canadian Geographical Names Database, Natural Resources Canada, id JAZBU, https://geogratis.gc.ca/services/geoname/en/geonames/JAZBU"
+    }
+  },
+  "byCity": {
+    "Boise, ID": {
+      "place": "Boise City, ID",
+      "reason": "The Gazetteer lists Boise as Boise City",
+      "key": "Boise, ID"
+    },
+    "Honolulu, HI": {
+      "place": "Urban Honolulu, HI",
+      "reason": "The Gazetteer lists the city as Urban Honolulu CDP",
+      "key": "Honolulu, HI"
+    },
+    "Champaign-Urbana, IL": {
+      "place": "Champaign, IL",
+      "reason": "Twin cities about 4 km apart; point placed at Champaign"
+    },
+    "Urbana-Champaign, IL": {
+      "place": "Champaign, IL",
+      "reason": "Twin cities about 4 km apart; point placed at Champaign"
+    },
+    "Aspen Grove, Provo Canyon, UT": {
+      "place": "Provo, UT",
+      "reason": "Aspen Grove is a camp in Provo Canyon with no Gazetteer entry; Provo is the nearest place",
+      "key": "Aspen Grove, UT"
+    },
+    "Near Suttle Lake, west of Sisters, OR": {
+      "place": "Sisters, OR",
+      "reason": "Suttle Lake is a lake in the forest about 20 km west of Sisters with no Gazetteer entry; text names Sisters as the reference town"
+    },
+    "Shenandoah National Park, VA": {
+      "place": "Luray, VA",
+      "reason": "Parks are not Gazetteer places; the park headquarters is at 3655 US Highway 211 East, Luray, VA (nps.gov/shen)",
+      "key": "Shenandoah National Park, VA"
+    },
+    "Yellowstone National Park": {
+      "place": "Mammoth, WY",
+      "reason": "Parks are not Gazetteer places; park headquarters is at Mammoth Hot Springs, WY (nps.gov/yell). Mammoth CDP in WY is Mammoth Hot Springs",
+      "key": "Yellowstone National Park, WY"
+    },
+    "Wai'anae, Oahu, HI": {
+      "place": "Waianae, HI",
+      "reason": "Spelling: the Gazetteer drops the okina"
+    },
+    "Los Angeles County beaches, CA": {
+      "place": "Los Angeles County, CA",
+      "reason": "Beaches along the county coast; county point is the best single point"
+    },
+    "Prince George's County parks, MD": {
+      "place": "Prince George's County, MD",
+      "reason": "County park system; county point"
+    },
+    "Suburban Cook County, IL": {
+      "place": "Cook County, IL",
+      "reason": "Suburban Cook County is Cook County outside Chicago; county point"
+    },
+    "Northern Virginia (Fairfax County)": {
+      "place": "Fairfax County, VA",
+      "reason": "Text names one county"
+    },
+    "Southwest Virginia (Virginia Tech, Blacksburg)": {
+      "place": "Blacksburg, VA",
+      "reason": "Text names the host campus town"
+    },
+    "Hillsdale, MI (2026 session at Hillsdale College); office in Lansing": {
+      "place": "Hillsdale, MI",
+      "reason": "The program runs in Hillsdale; the Lansing office is administrative"
+    },
+    "College Park, MD (auditions); Prince George's County, MD": {
+      "place": "College Park, MD",
+      "reason": "Auditions are at College Park; the county is the wider service area"
+    },
+    "Atlanta and Fulton County, GA": {
+      "place": "Atlanta, GA",
+      "reason": "Fulton County contains Atlanta; point placed at Atlanta"
+    },
+    "Overland Park and Johnson County, KS": {
+      "place": "Overland Park, KS",
+      "reason": "Johnson County contains Overland Park; point placed at Overland Park"
+    },
+    "Tacoma and Pierce County, WA": {
+      "place": "Tacoma, WA",
+      "reason": "Pierce County contains Tacoma; point placed at Tacoma"
+    },
+    "Chapel Hill and the Triangle, NC": {
+      "place": "Chapel Hill, NC",
+      "reason": "The Triangle is the region around Chapel Hill; point placed at Chapel Hill"
+    },
+    "Milpitas / Santa Clara County, CA": {
+      "place": "Milpitas, CA",
+      "reason": "Santa Clara County contains Milpitas; point placed at Milpitas"
+    },
+    "Oakland, CA and Bay Area": {
+      "place": "Oakland, CA",
+      "reason": "Oakland is the named city; Bay Area is the wider region"
+    },
+    "Oakland, CA and EBMUD service area": {
+      "place": "Oakland, CA",
+      "reason": "Oakland is the named city; the utility service area surrounds it"
+    },
+    "Drums, PA (campus with dorms)": {
+      "zcta": {
+        "key": "Drums, PA",
+        "state": "PA",
+        "zip": "18222"
+      },
+      "reason": "Drums has no Gazetteer place; ZIP code area centroid from the Census Gazetteer ZCTA file"
+    },
+    "Lopez, PA (campus with dorms)": {
+      "zcta": {
+        "key": "Lopez, PA",
+        "state": "PA",
+        "zip": "18628"
+      },
+      "reason": "Lopez has no Gazetteer place; ZIP code area centroid from the Census Gazetteer ZCTA file"
+    },
+    "Glenmont, NY (campus with dorms)": {
+      "zcta": {
+        "key": "Glenmont, NY",
+        "state": "NY",
+        "zip": "12077"
+      },
+      "reason": "Glenmont, NY has no Gazetteer place (the Gazetteer Glenmont is in Maryland); ZIP code area centroid from the Census Gazetteer ZCTA file"
+    },
+    "North Grafton, MA (campus with dorms)": {
+      "zcta": {
+        "key": "North Grafton, MA",
+        "state": "MA",
+        "zip": "01536"
+      },
+      "reason": "North Grafton is a village in the town of Grafton with no Gazetteer place; ZIP code area centroid from the Census Gazetteer ZCTA file"
+    },
+    "Roosevelt Island, NY": {
+      "zcta": {
+        "key": "Roosevelt Island, NY",
+        "state": "NY",
+        "zip": "10044"
+      },
+      "reason": "Roosevelt Island has no Gazetteer place (Gazetteer Roosevelt is on Long Island); ZIP code area centroid from the Census Gazetteer ZCTA file"
+    },
+    "Sylmar, CA": {
+      "zcta": {
+        "key": "Sylmar, CA",
+        "state": "CA",
+        "zip": "91342"
+      },
+      "reason": "Sylmar is a Los Angeles neighborhood with no Gazetteer place; ZIP code area centroid from the Census Gazetteer ZCTA file"
+    },
+    "La Jolla, CA": {
+      "zcta": {
+        "key": "La Jolla, CA",
+        "state": "CA",
+        "zip": "92037"
+      },
+      "reason": "La Jolla is a San Diego neighborhood with no Gazetteer place; ZIP code area centroid from the Census Gazetteer ZCTA file"
+    },
+    "University Park, PA": {
+      "zcta": {
+        "key": "University Park, PA",
+        "state": "PA",
+        "zip": "16802"
+      },
+      "reason": "University Park (Penn State main campus) has no Gazetteer place; ZIP code area centroid from the Census Gazetteer ZCTA file"
+    },
+    "Woodstock, MD": {
+      "zcta": {
+        "key": "Woodstock, MD",
+        "state": "MD",
+        "zip": "21163"
+      },
+      "reason": "Woodstock, MD (Job Corps center) has no Gazetteer place; ZIP code area centroid from the Census Gazetteer ZCTA file"
+    },
+    "Bay Area, CA": {
+      "class": "multi",
+      "reason": "The Bay Area is a nine county region, not one place"
+    },
+    "Bay Area (virtual sessions, final session in San Francisco)": {
+      "class": "multi",
+      "reason": "The Bay Area is a nine county region, not one place"
+    },
+    "Twin Cities, MN": {
+      "class": "multi",
+      "reason": "Minneapolis and Saint Paul with their suburbs, not one place"
+    },
+    "Twin Cities area, MN": {
+      "class": "multi",
+      "reason": "Minneapolis and Saint Paul with their suburbs, not one place"
+    },
+    "Minneapolis-Saint Paul area, MN": {
+      "class": "multi",
+      "reason": "Minneapolis and Saint Paul with their suburbs, not one place"
+    },
+    "Bronx, Manhattan, Brooklyn, Queens": {
+      "class": "multi",
+      "reason": "Several boroughs listed"
+    },
+    "Teams in Manhattan, Brooklyn, Queens, Long Island, White Plains and Riverdale (and remote)": {
+      "class": "multi",
+      "reason": "Many places listed"
+    },
+    "Elgin / South Elgin area and other Fox Valley clubs, IL": {
+      "class": "multi",
+      "reason": "Many places listed"
+    },
+    "Metro Vancouver, BC": {
+      "class": "multi",
+      "reason": "Regional district of many cities, not one place"
+    },
+    "Regional events around British Columbia, provincials in Abbotsford": {
+      "class": "statewide",
+      "state": "BC",
+      "reason": "Events around the province; treated as province wide"
+    },
+    "Local corps and squadrons across British Columbia": {
+      "class": "statewide",
+      "state": "BC",
+      "reason": "Province wide network"
+    },
+    "Across British Columbia (through your high school)": {
+      "class": "statewide",
+      "state": "BC",
+      "reason": "Province wide"
+    },
+    "British Columbia (virtual and in person)": {
+      "class": "statewide",
+      "state": "BC",
+      "reason": "Province wide"
+    },
+    "Foundry centres across British Columbia": {
+      "class": "statewide",
+      "state": "BC",
+      "reason": "Province wide network"
+    },
+    "Kentucky (summer program at Northern Kentucky University)": {
+      "place": "Highland Heights, KY",
+      "reason": "Program is held at Northern Kentucky University, whose main campus is in Highland Heights"
+    },
+    "Massachusetts (2026 session at Stonehill College, Easton)": {
+      "place": "Easton, MA",
+      "reason": "Program is held at Stonehill College; the text names Easton"
+    },
+    "New Jersey (2026 session at Centenary University)": {
+      "place": "Hackettstown, NJ",
+      "reason": "Program is held at Centenary University, which is in Hackettstown"
+    },
+    "New Jersey (held at Rider University)": {
+      "place": "Lawrenceville, NJ",
+      "reason": "Program is held at Rider University main campus in Lawrenceville Township"
+    },
+    "New York State (check-in at SUNY Brockport)": {
+      "place": "Brockport, NY",
+      "reason": "Check-in is at SUNY Brockport, in the village of Brockport"
+    },
+    "Pennsylvania (held at Messiah University, Mechanicsburg, in 2026)": {
+      "place": "Mechanicsburg, PA",
+      "reason": "Program is held at Messiah University; the text names Mechanicsburg"
+    },
+    "Pennsylvania (held at Shippensburg University)": {
+      "place": "Shippensburg, PA",
+      "reason": "Program is held at Shippensburg University"
+    },
+    "Statewide, IA (held at Camp Dodge, Johnston)": {
+      "place": "Johnston, IA",
+      "reason": "Program is held at Camp Dodge in Johnston"
+    },
+    "Longwood University campus, Virginia": {
+      "place": "Farmville, VA",
+      "reason": "Longwood University is in Farmville; the text gives no city"
+    },
+    "The Triangle, NC": {
+      "class": "multi",
+      "reason": "The Triangle is a three city region, not one place (the name also matches an unrelated township)"
+    },
+    "La Jolla, San Diego, CA": {
+      "zcta": {
+        "key": "La Jolla, CA",
+        "state": "CA",
+        "zip": "92037"
+      },
+      "reason": "La Jolla is a San Diego neighborhood with no Gazetteer place; ZIP code area centroid from the Census Gazetteer ZCTA file, same point as the other La Jolla cards"
+    },
+    "Alameda, CA": {
+      "zcta": {
+        "key": "Alameda, CA",
+        "state": "CA",
+        "zip": "94501"
+      },
+      "reason": "Alameda is an island city and the Gazetteer place point (37.7423, -122.2605) falls in San Francisco Bay water, outside the state outline; ZIP code area 94501 centroid from the Census Gazetteer ZCTA file lies on the island"
+    },
+    "Alameda, CA (2200 Central Ave)": {
+      "zcta": {
+        "key": "Alameda, CA",
+        "state": "CA",
+        "zip": "94501"
+      },
+      "reason": "Alameda is an island city and the Gazetteer place point (37.7423, -122.2605) falls in San Francisco Bay water, outside the state outline; ZIP code area 94501 centroid from the Census Gazetteer ZCTA file lies on the island"
+    },
+    "Alameda, CA (2203 Central Ave)": {
+      "zcta": {
+        "key": "Alameda, CA",
+        "state": "CA",
+        "zip": "94501"
+      },
+      "reason": "Alameda is an island city and the Gazetteer place point (37.7423, -122.2605) falls in San Francisco Bay water, outside the state outline; ZIP code area 94501 centroid from the Census Gazetteer ZCTA file lies on the island"
+    },
+    "Alameda, CA (Encinal Jr/Sr High)": {
+      "zcta": {
+        "key": "Alameda, CA",
+        "state": "CA",
+        "zip": "94501"
+      },
+      "reason": "Alameda is an island city and the Gazetteer place point (37.7423, -122.2605) falls in San Francisco Bay water, outside the state outline; ZIP code area 94501 centroid from the Census Gazetteer ZCTA file lies on the island"
+    },
+    "Alameda, CA (Encinal Swim Center)": {
+      "zcta": {
+        "key": "Alameda, CA",
+        "state": "CA",
+        "zip": "94501"
+      },
+      "reason": "Alameda is an island city and the Gazetteer place point (37.7423, -122.2605) falls in San Francisco Bay water, outside the state outline; ZIP code area 94501 centroid from the Census Gazetteer ZCTA file lies on the island"
+    },
+    "Alameda, CA (Main Library)": {
+      "zcta": {
+        "key": "Alameda, CA",
+        "state": "CA",
+        "zip": "94501"
+      },
+      "reason": "Alameda is an island city and the Gazetteer place point (37.7423, -122.2605) falls in San Francisco Bay water, outside the state outline; ZIP code area 94501 centroid from the Census Gazetteer ZCTA file lies on the island"
+    },
+    "Alameda, CA (Main Library, Stafford Room)": {
+      "zcta": {
+        "key": "Alameda, CA",
+        "state": "CA",
+        "zip": "94501"
+      },
+      "reason": "Alameda is an island city and the Gazetteer place point (37.7423, -122.2605) falls in San Francisco Bay water, outside the state outline; ZIP code area 94501 centroid from the Census Gazetteer ZCTA file lies on the island"
+    },
+    "Alameda, CA (Veterans Building and South Shore Mall)": {
+      "zcta": {
+        "key": "Alameda, CA",
+        "state": "CA",
+        "zip": "94501"
+      },
+      "reason": "Alameda is an island city and the Gazetteer place point (37.7423, -122.2605) falls in San Francisco Bay water, outside the state outline; ZIP code area 94501 centroid from the Census Gazetteer ZCTA file lies on the island"
+    },
+    "San Francisco, CA": {
+      "zcta": {
+        "key": "San Francisco, CA",
+        "state": "CA",
+        "zip": "94102"
+      },
+      "reason": "The Gazetteer place point (37.7272, -123.0322) is about 30 miles out in the Pacific because the city limits include the Farallon Islands, so it falls outside the state outline; ZIP code area 94102 (Civic Center) centroid from the Census Gazetteer ZCTA file is used instead"
+    },
+    "San Francisco, CA (CPMC Van Ness Campus, 1101 Van Ness Avenue)": {
+      "zcta": {
+        "key": "San Francisco, CA",
+        "state": "CA",
+        "zip": "94102"
+      },
+      "reason": "The Gazetteer place point (37.7272, -123.0322) is about 30 miles out in the Pacific because the city limits include the Farallon Islands, so it falls outside the state outline; ZIP code area 94102 (Civic Center) centroid from the Census Gazetteer ZCTA file is used instead"
+    },
+    "San Francisco, CA (Stonestown Galleria)": {
+      "zcta": {
+        "key": "San Francisco, CA",
+        "state": "CA",
+        "zip": "94102"
+      },
+      "reason": "The Gazetteer place point (37.7272, -123.0322) is about 30 miles out in the Pacific because the city limits include the Farallon Islands, so it falls outside the state outline; ZIP code area 94102 (Civic Center) centroid from the Census Gazetteer ZCTA file is used instead"
+    }
+  },
+  "byId": {
+    "ca-state-parks-volunteers": {
+      "class": "statewide",
+      "state": "CA",
+      "reason": "City text is only 'Statewide parks'; the organization is California State Parks"
+    }
+  }
+}

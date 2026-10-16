@@ -28,7 +28,7 @@ def _asset_version():
 ver = _asset_version()
 
 layout = open(os.path.join(SRC, "_layout.html"), encoding="utf-8").read()
-PAGES = ["find", "playbook", "resume", "ready", "jobs", "permit", "languages", "interview", "calendar", "younger", "parents", "handout", "paycheck", "safety", "share", "insights", "rules", "states", "contribute", "leaders", "about"]
+PAGES = ["find", "map", "playbook", "resume", "ready", "jobs", "permit", "languages", "interview", "calendar", "younger", "parents", "handout", "paycheck", "safety", "share", "insights", "rules", "states", "contribute", "leaders", "about"]
 
 def safety_static(body):
     """Fill {{safety:<section id>}} in src/safety.html from data/safety.json.
@@ -118,6 +118,15 @@ def jobs_static():
     return {"jobs_note": "<p>%s Last read %s.</p>" % (_h.escape(d["note"]), _h.escape(d["read"])), "pre_jAge": pre_tiles(["Under 14", "14", "15", "16", "17", "18"])}
 
 
+def map_static():
+    """The age tiles and the zoom buttons assets/js/map.js wires up, shipped in the markup so nothing moves when it runs.
+    The zoom ids must match the views in map.js (makeViews)."""
+    zoom = [("all", "Whole map"), ("ca", "California"), ("bay", "Bay Area"), ("socal", "Southern California"), ("pnw", "Pacific Northwest"),
+            ("tx", "Texas"), ("mw", "Midwest"), ("ne", "Northeast"), ("se", "Southeast")]
+    chips = "".join('<button class="chip" type="button" data-v="%s" aria-pressed="%s">%s</button>' % (v, "true" if v == "all" else "false", t) for v, t in zoom)
+    return {"pre_mAge": pre_tiles(["Any age"] + [str(a) for a in range(12, 19)]), "map_zoom": chips}
+
+
 def fill_csp_hashes(page):
     """Fill {{script_hashes}} in the Content-Security-Policy meta tag with a sha256 source for every inline script.
 
@@ -182,6 +191,8 @@ def build(name):
         rep.update(jobs_static())
     if name == "permit":
         rep.update(permit_static())
+    if name == "map":
+        rep.update(map_static())
     # The "Text this to a parent" link and Copy link button that assets/js/common.js adds to a .share-parent row, shipped in the
     # markup so the row does not grow when the script runs. shareToParent finds them and wires them up.
     if name == "younger":  # only where the row sits in the first screen; elsewhere it is below the fold and the pages are byte-budgeted
