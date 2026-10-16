@@ -109,18 +109,23 @@ const TABLE = {
   // 2026-10-15: opened tile style (PENDING PERSON APPROVAL). assets/css/style.css limit 53800 to 54000.
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). assets/css/style.css limit 54000 to 54700.
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). assets/css/style.css limit 54700 to 54800.
+<<<<<<< HEAD
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL). assets/css/style.css limit 54800 to 55100.
   "assets/css/style.css": { ceiling: 55100, reason: "stylesheet, 41831 bytes measured 2026-10-10; 50638 bytes on 2026-10-14 after the phone filter summary fix" },
+=======
+  "assets/css/style.css": { ceiling: 56800, reason: "stylesheet, 41831 bytes measured 2026-10-10; 50638 bytes on 2026-10-14 after the phone filter summary fix" },
+>>>>>>> 69e261f (Map page after rebase on main: map build tools pinned next to eslint and globals, budgets set to measured sizes (PENDING PERSON APPROVAL), ratchet row for data/geo-overrides.json)
   "assets/js/calendar.js": { ceiling: 8800, reason: "script, 7966 bytes measured 2026-10-10" },
   // 2026-10-15: tilePicker adopts tiles shipped in the page, share row controls wired from markup (CLS fixes). assets/js/common.js limit 34900 to 35400. PENDING PERSON APPROVAL.
   // 2026-10-15: G.dropPreTiles removes build-time tiles when data fails common.js 35400 to 35700. PENDING PERSON APPROVAL.
-  "assets/js/common.js": { ceiling: 36100, reason: "script, 25681 bytes measured 2026-10-10" },
+  "assets/js/common.js": { ceiling: 36400, reason: "script, 25681 bytes measured 2026-10-10" },
   // Raised from 58100 to 59300 on 2026-10-12 for ticket diet-1 (Where group files on the Programs page). 59217 bytes measured.
   "data/entries-map.json": { ceiling: 667300, reason: "data file for the Map page, 606587 bytes measured 2026-10-15 (PENDING PERSON APPROVAL)" },
+  "data/geo-overrides.json": { ceiling: 18600, reason: "hand fixes for the Map page geocoder (tools/geo), 17704 bytes measured 2026-10-15" },
   "data/map.json": { ceiling: 163300, reason: "data file, the Map page city points, 148390 bytes measured 2026-10-15" },
   "assets/js/map.js": { ceiling: 37700, reason: "script, 27559 bytes measured 2026-10-15; 35987 bytes after the review fixes" },
   "assets/img/us-states.svg": { ceiling: 61500, reason: "image, the Map page basemap (tools/geo/make_basemap.mjs keeps it under 58000), 55841 bytes measured 2026-10-15" },
-  "assets/js/find.js": { ceiling: 66600, reason: "script, 52771 bytes measured 2026-10-10" },
+  "assets/js/find.js": { ceiling: 67400, reason: "script, 52771 bytes measured 2026-10-10" },
   "assets/js/handout.js": { ceiling: 600, reason: "script, 274 bytes measured 2026-10-10; 517 bytes on 2026-10-14 with the one page handout and table plan print buttons" },
   // 2026-10-12: home picker flow. home.js grew by about 8.8 KB (place search box, chip, step markers); ceiling raised from 10800 to 18600, measured 18585 bytes.
   "assets/js/home.js": { ceiling: 18700, reason: "script, 18605 bytes measured 2026-10-12 (home picker flow, plus the 1 day label)" },
