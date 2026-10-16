@@ -48,7 +48,7 @@ jobs:
             echo "Only warnings; no issue."
             exit 0
           fi
-          printf 'The weekly Lighthouse check failed on the live site (mobile, 3 runs per page). Accessibility must stay at 0.95 or higher, best practices and SEO at 0.9 or higher. Performance is a warning for now (0.8). The assertion results are in the run log and the uploaded reports are on the run: %s\n' "$RUN_URL" > issue-body.md
+          printf 'The weekly Lighthouse check failed on the live site (mobile, 3 runs per page). Accessibility must stay at 0.95 or higher, best practices and SEO at 0.9 or higher. Layout shift (CLS, median of 3) must stay at 0.1 or lower. Performance under 0.9 (median) is a warning. The assertion results are in the run log and the uploaded reports are on the run: %s\n' "$RUN_URL" > issue-body.md
           gh label create perf --description "Lighthouse score regression" --color fbca04 2>/dev/null || true
           existing=$(gh issue list --label perf --state open --json number --jq '.[0].number // empty')
           if [ -n "$existing" ]; then

@@ -294,7 +294,10 @@ class WorkflowPolicyTests(unittest.TestCase):
             "categories:accessibility": ["error", {"minScore": 0.95}],
             "categories:best-practices": ["error", {"minScore": 0.9}],
             "categories:seo": ["error", {"minScore": 0.9}],
-            "categories:performance": ["warn", {"minScore": 0.8}],
+            # 2026-10-15: performance warns under 0.9 by the median of 3 runs (it was 0.8 by the best run; live medians
+            # are 97 to 100), and layout shift over 0.1 (median) is an error, to keep the CLS fix (0.17 to 0.45 down to 0).
+            "categories:performance": ["warn", {"minScore": 0.9, "aggregationMethod": "median"}],
+            "cumulative-layout-shift": ["error", {"maxNumericValue": 0.1, "aggregationMethod": "median"}],
         })
 
     def test_mutation_workflow_shape(self):

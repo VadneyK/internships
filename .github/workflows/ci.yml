@@ -113,13 +113,14 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           persist-credentials: false
-      - name: Collect the site files (everything visitors load, nothing from tests, tools, src or CI)
+      - name: Collect the site files (everything visitors load, nothing from tests, tools, src, CI or maintainer docs; the licenses stay)
         run: |
           mkdir _site
           rsync -a --exclude '.git' --exclude '.github' --exclude 'node_modules' --exclude 'tests' --exclude 'tools' --exclude 'src' \
             --exclude 'package.json' --exclude 'package-lock.json' --exclude 'requirements-dev.txt' --exclude 'coverage-v8' --exclude '_site' \
-            --exclude 'stryker.config.json' --exclude 'reports' --exclude '.stryker-tmp' --exclude '.gitignore' --exclude '.nvmrc' --exclude '.claude' --exclude '.DS_Store' ./ _site/
-          test -f _site/index.html && test -f _site/404.html && test -d _site/data/programs && test -f _site/.well-known/security.txt
+            --exclude 'stryker.config.json' --exclude 'reports' --exclude '.stryker-tmp' --exclude '.gitignore' --exclude '.nvmrc' --exclude '.claude' --exclude '.DS_Store' \
+            --exclude '/docs' --exclude '/lighthouserc.json' --exclude '/README.md' --exclude '/CONTRIBUTING.md' --exclude '/CODE_OF_CONDUCT.md' --exclude '/CONTRIBUTORS.md' --exclude '/SECURITY.md' ./ _site/
+          test -f _site/index.html && test -f _site/404.html && test -d _site/data/programs && test -f _site/.well-known/security.txt && test -f _site/LICENSE && test ! -e _site/docs
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
         with:
           path: _site

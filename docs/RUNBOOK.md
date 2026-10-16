@@ -68,6 +68,6 @@ Since 2026-10-13 GitHub Pages publishes from the `deploy` job in `.github/workfl
 
 The `deploy` job has three steps that can fail on their own:
 
-- **Collect the site files.** It copies the repo into `_site` and leaves out tests, tools, `src`, CI files and local files. It then checks that `index.html`, `404.html`, `data/programs` and `.well-known/security.txt` are there. If it fails here, a file the site needs was moved or deleted.
+- **Collect the site files.** It copies the repo into `_site` and leaves out tests, tools, `src`, CI files, local files and (since 2026-10-15) the maintainer docs: `docs/`, `lighthouserc.json` and the root README, CONTRIBUTING, CODE_OF_CONDUCT, CONTRIBUTORS and SECURITY files. The licenses still ship. It then checks that `index.html`, `404.html`, `data/programs`, `.well-known/security.txt` and `LICENSE` are there and that `docs/` is not. If it fails here, a file the site needs was moved or deleted.
 - **Upload.** `upload-pages-artifact` skips dot folders unless it is told not to, so the upload sets `include-hidden-files: true`. Without it, `security.txt` would not ship. Keep that line.
 - **Smoke test.** After the deploy it asks the live site for every `*.html` page, `data/entries-lite.json`, `data/entries-home.json`, `data/meta.json`, `robots.txt`, `sitemap.xml` and `.well-known/security.txt`. It tries each one up to 6 times, 10 seconds apart, and fails if any does not answer 200. A new page is covered on its own. A new file the pages need on first load is not, so add it to the list in `ci.yml` if it matters.
