@@ -246,8 +246,10 @@
     var s = { age: state.age, place: state.place, hubs: state.hubs, paid: state.paid };
     var found = all.filter(function (e) { return L.matches(e, s, t); });
     if (found.length < 3) { s.placeOnline = true; found = all.filter(function (e) { return L.matches(e, s, t); }); }
-    var p = { age: state.age }, open = L.topPicks(found.filter(function (e) { return !e.limited; }), p, t, PICKS_N);
-    return open.length < PICKS_N ? open.concat(L.topPicks(found.filter(function (e) { return e.limited; }), p, t, PICKS_N - open.length)) : open;
+    /* Cards only some can apply to, or whose grades likely leave this age out, fill the picks only after the rest. */
+    var p = { age: state.age }, held = function (e) { return !!(e.limited || L.gradeFit(e, state.age)); };
+    var open = L.topPicks(found.filter(function (e) { return !held(e); }), p, t, PICKS_N);
+    return open.length < PICKS_N ? open.concat(L.topPicks(found.filter(held), p, t, PICKS_N - open.length)) : open;
   }
   function paintPicks() {
     var box = $("picks"), nudge = $("picksNudge"), ol = $("picksList"); if (!box || !ol) return;

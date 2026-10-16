@@ -70,6 +70,16 @@ test("r11: find.html shows the grade flag next to the grades for the picked age"
   window.close();
 });
 
+test("r11: Good fit picks skip cards whose grades likely leave the age out, as they skip limited cards", async () => {
+  const { window, document } = await loadPage("find.html", { search: "?at=city%3Aphoenix&age=15" });
+  await waitFor(() => document.querySelectorAll("#picksList li").length > 0 && document.querySelectorAll("[data-gradefit]").length > 0);
+  const flagged = new Set([...document.querySelectorAll("[data-gradefit]")].map((x) => x.closest("article").id.slice(2)));
+  const picks = [...document.querySelectorAll("#picksList [data-jump]")].map((a) => a.getAttribute("data-jump"));
+  assert.ok(picks.length > 0);
+  for (const id of picks) assert.ok(!flagged.has(id), id + " is flagged but was picked");
+  window.close();
+});
+
 test("r11: rules.html says California up front and routes every other state to the permit finder", () => {
   const html = readFileSync(join(root, "rules.html"), "utf8");
   assert.match(html, /<h1 class="display">The <span class="orange">rules<\/span> in California<\/h1>/);
