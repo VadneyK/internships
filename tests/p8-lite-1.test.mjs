@@ -41,7 +41,7 @@ test("p8-lite-1: Arizona answers the permit question with the office and tap-to-
   const p = await pick("az", "15"); const card = p.document.getElementById("pLiteCard");
   const rows = [...card.querySelectorAll("dl.facts > div")].map((r) => r.querySelector("dd"));
   assert.match(rows[1].textContent, /^No\. Arizona does not require a work permit for anyone under 18\./);
-  assert.match(rows[0].textContent, /does not set one youngest age/);
+  assert.match(rows[0].textContent, /^Arizona's youth employment law \(A\.R\.S\. 23-230 to 23-242\) sets no general youngest age\./);
   for (const i of [0, 1, 2, 3]) assert.ok(!rows[i].classList.contains("ns"), "row " + i + " is stated");
   const tels = [...rows[3].querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute("href"));
   assert.deepEqual(tels.sort(), ["tel:+15206285459", "tel:+16025424661"]);

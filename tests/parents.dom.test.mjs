@@ -268,8 +268,8 @@ test("parents.json: each state row matches data/permits.json (permit name, age, 
   const sign = { ca: /signs the Statement of Intent/, ny: /A parent signs the application/, il: /A parent applies in person/, wa: /parent or guardian,? .*sign/, wi: /parent or guardian applies/, nc: /parent or guardian, the teen and the employer sign/, pa: /parent or guardian fills out a written statement/, bc: /parent or guardian gives written permission/ };
   for (const [id, re] of Object.entries(sign)) assert.match(rows.find((r) => r.id === id).parent, re, id);
   // Where it does not say so, the row says so too.
-  // 2026-10-16 (persona r11): the Georgia row now says it plainly, from the GA DOL instructions page and the DOL-4113 minor instructions.
-  assert.match(rows.find((r) => r.id === "ga").parent, /^No parent signature is listed in Georgia DOL's steps\./);
+  // 2026-10-16 (persona r11): the Georgia row now says it plainly, from the GA DOL instructions page, the DOL-4113 minor instructions and the home study form (a parent signs only that declaration).
+  assert.match(rows.find((r) => r.id === "ga").parent, /^No parent signature is listed in Georgia DOL's steps for a teen in school\./);
   for (const id of ["tx", "mn", "in"]) assert.match(rows.find((r) => r.id === id).parent, /does not require|no longer requires/, id);
 });
 

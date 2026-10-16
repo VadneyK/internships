@@ -21,6 +21,7 @@ const PICKER_CALLS = /\b(?:G|TIG)\.(?:tilePicker|autoTiles)\b/;
 // Ceilings: bytes on disk for each page's script and stylesheet files, about 5% over today's total (rounded up to 100 bytes).
 // Raised on 2026-10-12 for ticket r3-a11y-perf-35: the body min-height 100dvh line in style.css adds 22 bytes, so every page that loads style.css has its ceiling raised by 22 bytes and nothing else.
 const BUDGET = {
+  // 2026-10-16 persona r11 review fixes (picks hold back grade-flagged cards): pages over set to the measured size rounded up to 100.
   // 2026-10-16 persona r11 rebased on the map merge (grade flag in find.js and lib.js, younger unknown cells carry the number, trust line on five landing pages): pages over set to the measured size rounded up to 100.
   // 2026-10-15 Map page rebased on main (brand wrap CSS plus map rules): pages over set to the measured size rounded up to 100.
   // 2026-10-15 Map page rebased on main again (narrow phone CSS plus map rules): pages over set to the measured size rounded up to 100.
@@ -109,7 +110,7 @@ const BUDGET = {
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). find.html limit 215800 to 216500.
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). find.html limit 216500 to 216600.
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL). find.html limit 216600 to 216900.
-  "find.html": { ceiling: 223400, reason: "lib.js, common.js and find.js (largest page script)" },
+  "find.html": { ceiling: 223500, reason: "lib.js, common.js and find.js (largest page script)" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you handout.html limit 91700 to 92100.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. handout.html limit 92200 to 92700.
   // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). handout.html limit 92700 to 93700.
