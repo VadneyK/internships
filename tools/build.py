@@ -4,7 +4,7 @@
 Each src/<name>.html starts with header lines (`title:`, `desc:`, `scripts:`) then a line `---`, then the body.
 Tokens {{count}}, {{checked}} come from data/meta.json (written by tools/build_data.py).
 """
-import json, os, re, sys, time
+import json, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "src")
