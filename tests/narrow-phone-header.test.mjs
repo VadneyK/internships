@@ -16,6 +16,7 @@ test("h1 sizes are capped by the viewport width so the longest word fits", () =>
 });
 
 test("the phone header keeps brand, Menu and theme on one row down to 320 px", () => {
-  assert.match(css, /\.brand \{ gap: \.35rem; font-size: clamp\(\.75rem, 3\.5vw, 1rem\); min-width: 0; \}/);
+  // The brand takes the leftover space and wraps its own text at large text sizes; its longest word stays whole.
+  assert.match(css, /\.brand \{ gap: \.35rem; font-size: clamp\(\.75rem, 3\.5vw, 1rem\); min-width: auto; flex: 1 1 0; \}/);
   assert.match(css, /@media \(max-width: 21rem\) \{ \.top \.brand \{ gap: \.2rem; letter-spacing: -\.01em; \} \.top \.menu-btn \{ padding: 0 \.4rem; \} \}/);
 });

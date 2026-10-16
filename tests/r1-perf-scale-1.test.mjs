@@ -136,7 +136,8 @@ const LIMITS = {
   // 2026-10-15: opened tile style (PENDING PERSON APPROVAL).  limit 53800 to 54000.
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL).  limit 54000 to 54700.
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL).  limit 54700 to 54800.
-  stylesheet: 54800,
+  // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL).  limit 54800 to 55100.
+  stylesheet: 55100,
 };
 
 const LITE = "data/entries-lite.json";

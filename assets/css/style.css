@@ -179,7 +179,10 @@ li { margin-bottom: .35em; }
 @media (max-width: 40rem) {
   .top .wrap { gap: .5rem clamp(.35rem, 2vw, .75rem); }
   /* 3.5vw (was 4vw), 2026-10-15: at 360 px the brand, Menu and theme buttons were 2 px too wide and the theme button fell to a second row */
-  .brand { gap: .35rem; font-size: clamp(.75rem, 3.5vw, 1rem); min-width: 0; }
+  /* flex 1 1 0 (2026-10-15): the brand takes the space left and wraps its own text (FIND / INTERNSHIPS) with large text
+     settings, instead of pushing the theme button onto a second row (persona round 11, 125% text). min-width auto keeps the
+     longest word whole: if even that cannot fit (150% text on a 320 px phone), the row wraps rather than overlapping Menu. */
+  .brand { gap: .35rem; font-size: clamp(.75rem, 3.5vw, 1rem); min-width: auto; flex: 1 1 0; }
   .brand svg { width: clamp(1.25rem, 6vw, 1.5rem); height: clamp(1.25rem, 6vw, 1.5rem); }
   .menu-btn { padding: 0 clamp(.6rem, 3vw, 1rem); }
   .top.menu-js.open .nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; }
