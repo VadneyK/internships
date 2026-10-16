@@ -187,9 +187,9 @@ test("(5) with saveData on, no detail request happens until a trigger; without i
     loadFind(),
   ]);
   await until(() => cardsIn(free.document).length === PAGE, 4000, "cards");
-  await tick(2200);
-  assert.equal(free.detailCount(), 0, "no prefetch before 3 seconds");
-  await until(() => free.detailCount() === 1, 3000, "the idle prefetch");
+  /* "not before 3 seconds" is checked on the request's own time from page load, not by sleeping and counting:
+     with three pages loading at once a slow runner can notice the draw late, and a fixed sleep then runs past 3 seconds */
+  await until(() => free.detailCount() === 1, 6000, "the idle prefetch");
   const at = free.log.find((r) => /detail/.test(r.url)).t;
   assert.ok(at >= 3000, "prefetch started at " + at + " ms, not before 3000");
   await until(() => !/Loading details/.test(free.document.querySelector("#out article.prog details").textContent), 4000, "prefetch to fill the cards");
