@@ -139,13 +139,9 @@ const LIMITS = {
   // 2026-10-15: opened tile style (PENDING PERSON APPROVAL).  limit 53800 to 54000.
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL).  limit 54000 to 54700.
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL).  limit 54700 to 54800.
-<<<<<<< HEAD
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL).  limit 54800 to 55100.
-  stylesheet: 55100,
-=======
-  // 2026-10-15: the Map page rules (about 2,100 bytes on every page) (PENDING PERSON APPROVAL).  limit 54800 to 57000, reset by the ceiling tool if needed.
-  stylesheet: 57000,
->>>>>>> c5b9299 (Add a Map page: every city with a program, on a map of the US and Vancouver, BC)
+  // 2026-10-15: the Map page rules (PENDING PERSON APPROVAL).  limit 55100 to 57300.
+  stylesheet: 57300,
 };
 
 const LITE = "data/entries-lite.json";

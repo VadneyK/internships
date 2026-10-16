@@ -109,12 +109,8 @@ const TABLE = {
   // 2026-10-15: opened tile style (PENDING PERSON APPROVAL). assets/css/style.css limit 53800 to 54000.
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). assets/css/style.css limit 54000 to 54700.
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). assets/css/style.css limit 54700 to 54800.
-<<<<<<< HEAD
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL). assets/css/style.css limit 54800 to 55100.
-  "assets/css/style.css": { ceiling: 55100, reason: "stylesheet, 41831 bytes measured 2026-10-10; 50638 bytes on 2026-10-14 after the phone filter summary fix" },
-=======
-  "assets/css/style.css": { ceiling: 56800, reason: "stylesheet, 41831 bytes measured 2026-10-10; 50638 bytes on 2026-10-14 after the phone filter summary fix" },
->>>>>>> 69e261f (Map page after rebase on main: map build tools pinned next to eslint and globals, budgets set to measured sizes (PENDING PERSON APPROVAL), ratchet row for data/geo-overrides.json)
+  "assets/css/style.css": { ceiling: 57200, reason: "stylesheet, 41831 bytes measured 2026-10-10; 50638 bytes on 2026-10-14 after the phone filter summary fix" },
   "assets/js/calendar.js": { ceiling: 8800, reason: "script, 7966 bytes measured 2026-10-10" },
   // 2026-10-15: tilePicker adopts tiles shipped in the page, share row controls wired from markup (CLS fixes). assets/js/common.js limit 34900 to 35400. PENDING PERSON APPROVAL.
   // 2026-10-15: G.dropPreTiles removes build-time tiles when data fails common.js 35400 to 35700. PENDING PERSON APPROVAL.
