@@ -23,6 +23,7 @@ export const LIB_BRANCH_FLOOR = 98; // 2026-10-15: raised from 97 after the muta
 export const FLOORS = {
   "calendar.js": 98,
   "common.js": 97,
+  "es.js": 98, // 2026-10-16: new, the Spanish pages (tests/es-pages.test.mjs runs every line)
   "find.js": 96,
   "handout.js": 98,
   "home.js": 98,

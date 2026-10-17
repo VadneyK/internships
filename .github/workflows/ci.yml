@@ -133,7 +133,7 @@ jobs:
           PAGE_URL: ${{ steps.deployment.outputs.page_url }}
         run: |
           fail=0
-          for f in $(cd _site && ls *.html) data/entries-lite.json data/entries-home.json data/meta.json robots.txt sitemap.xml .well-known/security.txt; do
+          for f in $(cd _site && ls *.html es/*.html) data/entries-lite.json data/entries-home.json data/meta.json robots.txt sitemap.xml .well-known/security.txt; do
             code=000
             for try in 1 2 3 4 5 6; do
               code=$(curl -s -o /dev/null -w '%{http_code}' "${PAGE_URL}${f}")

@@ -10,7 +10,7 @@
 <meta name="description" content="{{desc}}">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#efede8">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#131211">{{robots}}
-<link rel="canonical" href="{{base}}{{file}}">
+<link rel="canonical" href="{{base}}{{file}}">{{alternates}}
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{title}}">
 <meta property="og:description" content="{{desc}}">
@@ -51,7 +51,7 @@ setTimeout(function () { if (!document.querySelector(".top.menu-js")) document.d
       <a href="insights.html"{{cur_insights}}>Numbers</a>
       <a href="rules.html"{{cur_rules}}>Rules</a>
       <a href="contribute.html"{{cur_contribute}}>Help build this</a>
-      <a href="about.html"{{cur_about}}>About</a>
+      <a href="about.html"{{cur_about}}>About</a>{{lang_switch}}
     </nav>
     <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch light and dark mode" title="Light / dark">&#9681;</button>
   </div>

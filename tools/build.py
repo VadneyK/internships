@@ -3,6 +3,10 @@
 
 Each src/<name>.html starts with header lines (`title:`, `desc:`, `scripts:`) then a line `---`, then the body.
 Tokens {{count}}, {{checked}} come from data/meta.json (written by tools/build_data.py).
+
+Spanish pages (docs/adr/0008-spanish-pages.md): src/es/<name>.html is built to es/<name>.html with the same layout, its
+words swapped from src/es/_layout.json. Links to pages with no Spanish twin get "../" and hreflang="en". A page and its
+twin link to each other (hreflang alternates in the head and a language link at the end of the nav).
 """
 import json, os, re, sys
 
@@ -28,6 +32,56 @@ def _asset_version():
 ver = _asset_version()
 
 layout = open(os.path.join(SRC, "_layout.html"), encoding="utf-8").read()
+ES_DIR = os.path.join(SRC, "es")
+# Pages that have a Spanish twin in src/es/ (index, playbook and rules on 2026-10-16).
+ES_PAGES = sorted(f[:-5] for f in os.listdir(ES_DIR) if f.endswith(".html") and not f.startswith("_")) if os.path.isdir(ES_DIR) else []
+ES_MONTHS = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
+
+
+def es_date(iso):
+    """2026-10-14 as a Spanish date: 14 de octubre de 2026."""
+    y, m, d = (int(x) for x in iso.split("-"))
+    return "%d de %s de %d" % (d, ES_MONTHS[m - 1], y)
+
+
+def es_layout(text):
+    """The shared layout with its English words swapped for the Spanish ones in src/es/_layout.json.
+
+    Every English string must be found in the layout, so a layout edit that drops or rewords one stops the build
+    instead of leaving English in a Spanish page. tests/es-pages.test.mjs checks the other way: no layout text is left in English."""
+    pairs = json.load(open(os.path.join(ES_DIR, "_layout.json"), encoding="utf-8"))["pairs"]
+    text = text.replace('<html lang="en">', '<html lang="es">', 1)
+    for en, es in pairs:
+        if en not in text:
+            print("ERROR src/es/_layout.json: %r is not in src/_layout.html any more; update the Spanish layout words" % en)
+            sys.exit(1)
+        text = text.replace(en, es)
+    return text
+
+
+def page_url(name, lang):
+    return ("es/" if lang == "es" else "") + ("" if name == "index" else name + ".html")
+
+
+def es_links(out):
+    """Relative links on a page in es/: a page with a Spanish twin stays in es/, anything else gets "../" (English pages
+    also get hreflang="en", so a reader knows the link leaves Spanish). Absolute, hash-only, scheme and "../" links are left alone."""
+    twins = set(p + ".html" for p in ES_PAGES)
+    def anchor(m):
+        tag, href = m.group(0), m.group(2)
+        path = href.split("#")[0].split("?")[0]
+        if path.endswith(".html") and path not in twins and "hreflang=" not in tag:
+            return tag[:-1] + ' hreflang="en">'
+        return tag
+    out = re.sub(r'<a\s[^>]*?href="((?![a-zA-Z][a-zA-Z0-9+.-]*:|#|/|\.\./)([^"]*))"[^>]*>', anchor, out)
+    def rel(m):
+        path = m.group(2).split("#")[0].split("?")[0]
+        if path in twins:
+            return m.group(0)
+        return m.group(1) + "../" + m.group(2)
+    return re.sub(r'(\s(?:href|src)=")((?![a-zA-Z][a-zA-Z0-9+.-]*:|#|/|\.\./)[^"]*)', rel, out)
+
+
 PAGES = ["find", "map", "playbook", "resume", "ready", "jobs", "permit", "languages", "interview", "calendar", "younger", "parents", "handout", "paycheck", "safety", "share", "insights", "rules", "states", "contribute", "leaders", "about"]
 
 def safety_static(body):
@@ -149,8 +203,8 @@ def fill_csp_hashes(page):
     return page.replace("{{script_hashes}}", "".join(hashes))
 
 
-def build(name):
-    raw = open(os.path.join(SRC, name + ".html"), encoding="utf-8").read()
+def build(name, lang="en"):
+    raw = open(os.path.join(ES_DIR if lang == "es" else SRC, name + ".html"), encoding="utf-8").read()
     head, body = raw.split("\n---\n", 1)
     if name == "safety":
         body = safety_static(body)
@@ -165,22 +219,31 @@ def build(name):
     # A page whose script never reads lib.js says `lib: none` in its header, so teens on slow data skip the download.
     libscript = '<script src="assets/js/lib.js?v=%s"></script>\n' % ver if scripts and fields.get("lib", "").strip() != "none" else ""
     page = name
-    out = layout
+    out = es_layout(layout) if lang == "es" else layout
     rep = {
         "title": fields["title"],
         "desc": fields["desc"],
         "base": BASE,
-        "file": "" if name == "index" else name + ".html",
+        "file": page_url(name, lang),
         "ver": ver,
         "page": page,
         "content": body,
         "scripts": scripts,
         "libscript": libscript,
         "count": str(meta.get("count", 0)),
-        "checked": meta.get("checked_label", ""),
+        "checked": es_date(meta["checked"]) if lang == "es" and meta.get("checked") else meta.get("checked_label", ""),
         "issues": ISSUES,
-        "robots": '\n<meta name="robots" content="noindex">' if fields.get("noindex") == "true" else "",
+        "robots": '\n<meta name="robots" content="noindex">' if fields.get("noindex") == "true" or (lang == "es" and es_draft(fields)) else "",
+        "alternates": "",
+        "lang_switch": "",
     }
+    # A page with a Spanish twin: hreflang alternates both ways, and a language link at the end of the nav (inside Menu on a phone).
+    if name in ES_PAGES:
+        rep["alternates"] = "".join('\n<link rel="alternate" hreflang="%s" href="%s%s">' % (h, BASE, page_url(name, l)) for h, l in (("en", "en"), ("es", "es"), ("x-default", "en")))
+        if lang == "es":
+            rep["lang_switch"] = '\n      <a href="../%s.html" hreflang="en" lang="en">English</a>' % name
+        else:
+            rep["lang_switch"] = '\n      <a href="es/%s.html" hreflang="es" lang="es">Español</a>' % name
     gaps = json.load(open(os.path.join(ROOT, "data", "gaps.json"), encoding="utf-8"))
     import html as _html
     rep["gaps_list"] = "\n".join(
@@ -211,6 +274,8 @@ def build(name):
     left = re.findall(r"\{\{(\w+)\}\}", out)
     if left:
         print("WARNING unreplaced tokens in", name, set(left))
+    if lang == "es":
+        out = es_links(out)
     if name == "404":
         # GitHub Pages serves 404.html for any bad path at any depth, so relative links would resolve against the deep URL.
         # Root-anchor every relative href and src on this one page. Other pages stay relative so local previews work.
@@ -222,21 +287,34 @@ def build(name):
         if ch in out:
             print("ERROR dash character U+%04X in %s" % (ord(ch), name))
             sys.exit(1)
-    dest = os.path.join(ROOT, name + ".html")
+    dest = os.path.join(ROOT, "es", name + ".html") if lang == "es" else os.path.join(ROOT, name + ".html")
+    os.makedirs(os.path.dirname(dest), exist_ok=True)
     open(dest, "w", encoding="utf-8").write(out)
     print("wrote", dest)
+
+def es_draft(fields):
+    """A Spanish page is a draft until a fluent speaker has reviewed it (header line `review: pending`). A draft is noindex and stays out of the sitemap."""
+    return fields.get("review", "pending").strip() == "pending"
+
 
 for fn in sorted(os.listdir(SRC)):
     if fn.startswith("_") or not fn.endswith(".html"):
         continue
     build(fn[:-5])
+for _p in ES_PAGES:
+    if not os.path.exists(os.path.join(SRC, _p + ".html")):
+        print("ERROR src/es/%s.html has no English page src/%s.html" % (_p, _p))
+        sys.exit(1)
+    build(_p, "es")
 
 
 # robots.txt and sitemap.xml
 import datetime as _dt
 _pages = ["index"] + [p for p in PAGES if p != "leaders"]  # leaders is unlisted until the owner approves it
 _today = meta.get("checked", _dt.date.today().isoformat())
-_urls = "".join("  <url><loc>%s%s</loc><lastmod>%s</lastmod></url>\n" % (BASE, "" if p == "index" else p + ".html", _today) for p in _pages)
+_es_live = [p for p in ES_PAGES if not es_draft(dict(re.findall(r"^(\w+):\s*(.*)$", open(os.path.join(ES_DIR, p + ".html"), encoding="utf-8").read().split("\n---\n", 1)[0], flags=re.M)))]
+_urls = "".join("  <url><loc>%s%s</loc><lastmod>%s</lastmod></url>\n" % (BASE, page_url(p, "en"), _today) for p in _pages)
+_urls += "".join("  <url><loc>%s%s</loc><lastmod>%s</lastmod></url>\n" % (BASE, page_url(p, "es"), _today) for p in _es_live)
 open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + _urls + "</urlset>\n")
 open(os.path.join(ROOT, "robots.txt"), "w", encoding="utf-8").write("User-agent: *\nAllow: /\nSitemap: %ssitemap.xml\n" % BASE)
 print("wrote sitemap.xml and robots.txt")
