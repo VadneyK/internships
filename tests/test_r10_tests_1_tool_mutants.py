@@ -124,8 +124,11 @@ class FlipMain(unittest.TestCase):
             out = io.StringIO()
             with mock.patch.object(flip_dates.proglib, "load_programs", lambda: REAL_LOAD(tmp)), contextlib.redirect_stdout(out):
                 rc = flip_dates.main(argv)
-            after = {c["id"]: json.load(open(os.path.join(tmp, c["id"] + ".json"), encoding="utf-8")) for c in cards}
-            raw = {c["id"]: open(os.path.join(tmp, c["id"] + ".json"), encoding="utf-8").read() for c in cards}
+            raw = {}
+            for c in cards:
+                with open(os.path.join(tmp, c["id"] + ".json"), encoding="utf-8") as f:
+                    raw[c["id"]] = f.read()
+            after = {k: json.loads(v) for k, v in raw.items()}
         return rc, out.getvalue(), after, raw
 
     def cards(self):
@@ -263,7 +266,8 @@ class FreshnessMain(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             full = os.path.join(tmp, "full.md")
             rc, out, _ = self.run_main(cards, ["--today", "2026-10-20", "--max-items", "2", "--full-out", full])
-            text = open(full, encoding="utf-8").read()
+            with open(full, encoding="utf-8") as f:
+                text = f.read()
         self.assertEqual(rc, 0)
         self.assertTrue(text.endswith(".\n") or text.endswith("/2\n"), repr(text[-20:]))
         self.assertEqual(text.count("- [ ] "), 3)
@@ -284,10 +288,10 @@ class ValidateProgramRules(unittest.TestCase):
         self.assertOnly(card(), "file name must be <id>.json", name="other.json")
 
     def test_each_dash_is_reported_once_per_string(self):
-        got = problems(card(notes="One — two – three — four"))
+        got = problems(card(notes="One \u2014 two \u2013 three \u2014 four"))
         self.assertEqual(len([p for p in got if "dash character" in p]), 1, got)
         self.assertIn("U+2014", got[0])
-        got = problems(card(fields=["arts-media"], what_you_do="Paint – draw"))
+        got = problems(card(fields=["arts-media"], what_you_do="Paint \u2013 draw"))
         self.assertTrue(any("U+2013" in p for p in got), got)
 
     def test_impossible_dates_are_reported(self):
@@ -371,7 +375,7 @@ class ProglibHelpers(unittest.TestCase):
         self.assertEqual(proglib.date_label("2027-01-31"), "Jan 31, 2027")
 
     def test_dash_characters_are_em_and_en(self):
-        self.assertEqual(proglib.DASHES, ("—", "–"))
+        self.assertEqual(proglib.DASHES, ("\u2014", "\u2013"))
 
 
 # ---------------------------------------------------------------- validate.main: cards that collide

@@ -166,7 +166,8 @@ class BuildDataOutputs(unittest.TestCase):
         for g in [G1[0], G2[0], "shared"]:
             self.assertEqual(self.read(os.path.join("lite", g + ".json")), [lite[i] for i in ids("lite", g)])
             self.assertEqual(self.read(os.path.join("detail", g + ".json")), [detail[i] for i in ids("lite", g)])
-        raw = open(os.path.join(self.tmp.name, "lite", "shared.json"), encoding="utf-8").read()
+        with open(os.path.join(self.tmp.name, "lite", "shared.json"), encoding="utf-8") as f:
+            raw = f.read()
         self.assertNotIn(": ", raw, "chunks are written compact")
 
     def test_csv_matches_the_columns(self):
