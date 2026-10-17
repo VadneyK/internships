@@ -96,10 +96,12 @@
     }
     $("months").addEventListener("click", function (ev) { var b = ev.target.closest(".chip"); if (!b) return; cur = +b.getAttribute("data-m"); paint(); });
     ["cPlace", "cAge"].forEach(function (id) { $(id).addEventListener("change", paint); });
-    /* Add deadline to calendar: save the .ics file (Google Calendar is a plain link). */
-    document.addEventListener("click", function (ev) {
-      var b = ev.target.closest("[data-cal]"), c = b && L.calEvent(by[b.getAttribute("data-cal")], Date.now());
-      if (c) { G.download(c.file, L.icsEvent(c), "text/calendar"); G.toast("Calendar file saved. Open it to add the deadline, or use Google Calendar."); }
+    /* Add deadline to calendar: one delegated click on each card list saves the .ics file (Google Calendar is a plain link). */
+    ["cClose", "cOpen"].forEach(function (id) {
+      $(id).addEventListener("click", function (ev) {
+        var b = ev.target.closest("[data-cal]"), c = b && L.calEvent(by[b.getAttribute("data-cal")], Date.now());
+        if (c) { G.download(c.file, L.icsEvent(c), "text/calendar"); G.toast("Calendar file saved. Open it to add the deadline, or use Google Calendar."); }
+      });
     });
     paint();
   }).catch(function () { G.dropPreTiles(); $("cCount").textContent = "The calendar could not load. Try again."; });

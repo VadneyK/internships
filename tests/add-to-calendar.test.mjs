@@ -39,7 +39,7 @@ test("calEvent: a confirmed date that is still ahead gets an event", () => {
   assert.equal(c.url, "https://example.org/apply");
   assert.equal(c.title, "Last day to apply: Test Program");
   assert.match(c.desc, /Test Org/);
-  assert.ok(c.desc.includes("https://example.org/apply"), "the description carries the official page");
+  assert.match(c.desc, /official page: https:\/\/example\.org\/apply\. /, "the description carries the official page");
   assert.deepEqual(c.alarms, ["-P6DT15H", "-PT15H"]);
   assert.ok(L.calEvent(mk({ status: "opens-soon", opens_iso: "2026-11-01", deadline_iso: "2027-01-08" }), NOW), "opens soon, with a later closing date");
   assert.ok(L.calEvent(mk({ deadline_iso: "2026-10-16" }), NOW), "a deadline today still counts");

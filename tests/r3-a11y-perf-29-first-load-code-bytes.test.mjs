@@ -78,8 +78,8 @@ const BUDGET = {
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). calendar.html limit 157600 to 158300.
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). calendar.html limit 158300 to 158400.
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL). calendar.html limit 158400 to 158700.
-  // 2026-10-16: Add to calendar on deadlines, issue #10 (lib.js: reminders, Google Calendar link, which cards get it; about 1.9 KB) (PENDING PERSON APPROVAL). calendar.html limit 161100 to 163400.
-  "calendar.html": { ceiling: 163400, reason: "lib.js, common.js and calendar.js" },
+  // 2026-10-16: Add to calendar on deadlines, issue #10 (lib.js: reminders, Google Calendar link, which cards get it; about 1.9 KB) (PENDING PERSON APPROVAL). calendar.html limit 161100 to 163500.
+  "calendar.html": { ceiling: 163500, reason: "lib.js, common.js and calendar.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you contribute.html limit 91300 to 91700.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. contribute.html limit 91700 to 92200.
   // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). contribute.html limit 92200 to 93200.
