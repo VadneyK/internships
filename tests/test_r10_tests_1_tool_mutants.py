@@ -25,12 +25,6 @@ import freshness  # noqa: E402
 import proglib  # noqa: E402
 import validate  # noqa: E402
 
-try:
-    import jsonschema  # noqa: F401
-    HAVE_JSONSCHEMA = True
-except ImportError:  # CI installs it from requirements-dev.txt
-    HAVE_JSONSCHEMA = False
-
 REAL_LOAD = proglib.load_programs  # the tests patch proglib.load_programs to read a temporary folder
 
 # A schema-valid card. Each test changes one field and looks for exactly the problem that field causes.
@@ -277,7 +271,6 @@ class FreshnessMain(unittest.TestCase):
 
 
 # ---------------------------------------------------------------- proglib.validate_program: card rules
-@unittest.skipUnless(HAVE_JSONSCHEMA, "needs jsonschema (pip install -r requirements-dev.txt)")
 class ValidateProgramRules(unittest.TestCase):
     def assertOnly(self, d, needle, name=None):
         got = problems(d, name)
@@ -434,7 +427,6 @@ class ValidateMain(unittest.TestCase):
         self.assertEqual(rc, 0, out)
 
 
-@unittest.skipUnless(HAVE_JSONSCHEMA, "needs jsonschema (pip install -r requirements-dev.txt)")
 class ValidateEmployerGroups(unittest.TestCase):
     def test_group_must_be_in_the_files_groups_list(self):
         with open(os.path.join(ROOT, "data", "employers.json"), encoding="utf-8") as f:
