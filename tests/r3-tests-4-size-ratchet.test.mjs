@@ -37,8 +37,9 @@ const TABLE = {
   // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. data/entries-core.json limit 447500 to 454800.
   // 2026-10-14 gaps wave: 89 cards for Alameda, Tri-Valley, Contra Costa and Orange County (2,608 programs) data/entries-core.json limit 454800 to 470500.
   // 2026-10-14 gaps wave plus two Fremont cards read in a real browser (2,610 programs) data/entries-core.json limit 470500 to 470800.
-  // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,630 programs) data/entries-core.json limit 470800 to 474500. PENDING PERSON APPROVAL.
-  "data/entries-core.json": { ceiling: 474500, reason: "data file, 368201 bytes measured 2026-10-10" },
+  // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) data/entries-core.json limit 470800 to 476200. PENDING PERSON APPROVAL.
+  // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,658 programs) data/entries-core.json limit 476200 to 479900. PENDING PERSON APPROVAL.
+  "data/entries-core.json": { ceiling: 479900, reason: "data file, 368201 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-detail.json ceiling 1731000 to 1772700.
   // 2026-10-13: four repointed links after the link check. data/entries-detail.json limit 1772700 to 1772900.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-detail.json limit 1772900 to 1823500.
@@ -47,8 +48,9 @@ const TABLE = {
   // 2026-10-13: re-read of 213 more open cards (42 fixed). data/entries-detail.json limit 1851500 to 1853200.
   // 2026-10-14 gaps wave: 89 cards for Alameda, Tri-Valley, Contra Costa and Orange County (2,608 programs) data/entries-detail.json limit 1853200 to 1921000.
   // 2026-10-14 gaps wave plus two Fremont cards read in a real browser (2,610 programs) data/entries-detail.json limit 1921000 to 1922700.
-  // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,630 programs) data/entries-detail.json limit 1922700 to 1933900. PENDING PERSON APPROVAL.
-  "data/entries-detail.json": { ceiling: 1933900, reason: "data file, 1521373 bytes measured 2026-10-10" },
+  // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) data/entries-detail.json limit 1922700 to 1942900. PENDING PERSON APPROVAL.
+  // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,658 programs) data/entries-detail.json limit 1942900 to 1954100. PENDING PERSON APPROVAL.
+  "data/entries-detail.json": { ceiling: 1954100, reason: "data file, 1521373 bytes measured 2026-10-10" },
   "data/entries-home.json": { ceiling: 899400, reason: "data file, 817599 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-lite.json ceiling 2223100 to 2277600.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-lite.json limit 2277600 to 2341900.
@@ -58,15 +60,17 @@ const TABLE = {
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you data/entries-lite.json limit 2378800 to 2383200.
   // 2026-10-14 gaps wave: 89 cards for Alameda, Tri-Valley, Contra Costa and Orange County (2,608 programs) data/entries-lite.json limit 2383200 to 2467100.
   // 2026-10-14 gaps wave plus two Fremont cards read in a real browser (2,610 programs) data/entries-lite.json limit 2467100 to 2468900.
-  // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,630 programs) data/entries-lite.json limit 2468900 to 2488400. PENDING PERSON APPROVAL.
-  "data/entries-lite.json": { ceiling: 2488400, reason: "data file, 1937500 bytes measured 2026-10-10" },
+  // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) data/entries-lite.json limit 2468900 to 2496100. PENDING PERSON APPROVAL.
+  // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,658 programs) data/entries-lite.json limit 2496100 to 2515500. PENDING PERSON APPROVAL.
+  "data/entries-lite.json": { ceiling: 2515500, reason: "data file, 1937500 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json ceiling 697700 to 716100.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json limit 716100 to 736500.
   // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json limit 736500 to 748900.
   // 2026-10-14 gaps wave: 89 cards for Alameda, Tri-Valley, Contra Costa and Orange County (2,608 programs) data/entries-stats.json limit 748900 to 776000.
   // 2026-10-14 gaps wave plus two Fremont cards read in a real browser (2,610 programs) data/entries-stats.json limit 776000 to 776700.
-  // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,630 programs) data/entries-stats.json limit 776700 to 782400. PENDING PERSON APPROVAL.
-  "data/entries-stats.json": { ceiling: 782400, reason: "data file, 606782 bytes measured 2026-10-10" },
+  // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) data/entries-stats.json limit 776700 to 785100. PENDING PERSON APPROVAL.
+  // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,658 programs) data/entries-stats.json limit 785100 to 790800. PENDING PERSON APPROVAL.
+  "data/entries-stats.json": { ceiling: 790800, reason: "data file, 606782 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries.json ceiling 4567200 to 4677300.
   // 2026-10-13: four repointed links after the link check. data/entries.json limit 4677300 to 4677700.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries.json limit 4677700 to 4809900.
@@ -76,8 +80,9 @@ const TABLE = {
   // 2026-10-14 persona round 9: built cards carry a derived limited flag (325 cards) for Good fit and the Only some can apply tag data/entries.json limit 4885900 to 4891200.
   // 2026-10-14 gaps wave: 89 cards for Alameda, Tri-Valley, Contra Costa and Orange County (2,608 programs) data/entries.json limit 4891200 to 5066300.
   // 2026-10-14 gaps wave plus two Fremont cards read in a real browser (2,610 programs) data/entries.json limit 5066300 to 5070300.
-  // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,630 programs) data/entries.json limit 5070300 to 5107600. PENDING PERSON APPROVAL.
-  "data/entries.json": { ceiling: 5107600, reason: "data file, 3996617 bytes measured 2026-10-10" },
+  // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) data/entries.json limit 5070300 to 5124700. PENDING PERSON APPROVAL.
+  // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,658 programs) data/entries.json limit 5124700 to 5162100. PENDING PERSON APPROVAL.
+  "data/entries.json": { ceiling: 5162100, reason: "data file, 3996617 bytes measured 2026-10-10" },
   "data/expiring-dates.json": { ceiling: 1700, reason: "data file, 1530 bytes measured 2026-10-10" },
   "data/gaps.json": { ceiling: 5400, reason: "data file, 4832 bytes measured 2026-10-10" },
   "data/interview.json": { ceiling: 12400, reason: "data file, 11207 bytes measured 2026-10-10" },

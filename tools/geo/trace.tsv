@@ -105,12 +105,17 @@ asu-access-rise-summer-leadership-institute	Tempe, AZ	point	Tempe, AZ	city	place
 asu-jbmshp-math-science-honors-summer	Tempe, AZ	point	Tempe, AZ	city	place:city	
 asu-wp-carey-fleischer-scholars	Tempe, AZ	point	Tempe, AZ	city	place:city	
 atlanta-21cl-syli-goizueta-business-institute	Emory University, Atlanta, GA	point	Atlanta, GA	city	place:city	used the second name (Atlanta) over the first (Emory University)
+atlanta-airport-summer-youth-employment-program	Atlanta, GA	point	Atlanta, GA	city	place:city	
+atlanta-airport-youth-apprenticeship-program	Atlanta, GA	point	Atlanta, GA	city	place:city	
 atlanta-botanical-garden-speak-volunteers	Atlanta, GA	point	Atlanta, GA	city	place:city	
 atlanta-botanical-garden-summer-high-school-internship	Atlanta, GA	point	Atlanta, GA	city	place:city	
 atlanta-business-league-student-business-shadow-project	Atlanta, GA	point	Atlanta, GA	city	place:city	
 atlanta-chris-180-youth-homelessness-and-housing	Atlanta, GA	point	Atlanta, GA	city	place:city	
 atlanta-college-and-career-academy	Atlanta, GA	point	Atlanta, GA	city	place:city	
 atlanta-community-food-bank-teen-volunteers	Atlanta, GA	point	Atlanta, GA	city	place:city	
+atlanta-grady-teen-experience-leadership-program	Atlanta, GA	point	Atlanta, GA	city	place:city	
+atlanta-gsu-institute-on-neuroscience	Atlanta, GA	point	Atlanta, GA	city	place:city	
+atlanta-gsu-neuroscience-school	Atlanta, GA	point	Atlanta, GA	city	place:city	
 atlanta-parks-rec-teen-leaders	Atlanta, GA	point	Atlanta, GA	city	place:city	
 atlanta-public-schools-mentorship-internship	Atlanta, GA	point	Atlanta, GA	city	place:city	
 atlanta-public-schools-work-based-learning	Atlanta, GA	point	Atlanta, GA	city	place:city	
@@ -169,6 +174,7 @@ berkeley-pre-college-scholars	Berkeley, CA	point	Berkeley, CA	city	place:city
 berkeley-public-library-teen-volunteer	Berkeley, CA	point	Berkeley, CA	city	place:city	
 berkeley-rep-teen-council	Berkeley, CA	point	Berkeley, CA	city	place:city	
 berkeley-youthworks	Berkeley, CA	point	Berkeley, CA	city	place:city	
+bethesda-suburban-hospital-junior-volunteers	Bethesda, MD	point	Bethesda, MD	city	place:CDP	
 bethlehem-lehigh-iacocca-global-entrepreneurship-intensive	Bethlehem, PA	point	Bethlehem, PA	city	place:city	
 beyond-emancipation-foster-youth	Oakland, CA	point	Oakland, CA	city	place:city	
 bgc-ncil-industry-clubs	Elgin / South Elgin area and other Fox Valley clubs, IL	multi				override: Many places listed
@@ -335,6 +341,7 @@ caltech-summer-research-connection-pasadena-unified	Pasadena, CA	point	Pasadena,
 cambridge-public-library-teen-advisory-board	Cambridge, MA	point	Cambridge, MA	city	place:city	
 camp-ignite-bc-firefighting-camp-for-young-women	Metro Vancouver, BC	multi				override: Regional district of many cities, not one place
 capital-area-nextgen-youth-services	Raleigh, NC	point	Raleigh, NC	city	place:city	
+carilion-summer-of-service-youth-volunteers	Roanoke, Christiansburg, Rocky Mount and Lexington, VA	multi				several places before the state
 carrboro-youth-council	Carrboro, NC	point	Carrboro, NC	city	place:town	
 cassadaga-job-corps-center	Cassadaga, NY (campus with dorms)	point	Cassadaga, NY	city	place:village	
 ccad-college-preview	Columbus, OH	point	Columbus, OH	city	place:city	
@@ -680,6 +687,7 @@ durham-parks-durham-aquatic-school-lifeguard	Durham, NC	point	Durham, NC	city	pl
 durham-parks-teen-volunteers	Durham, NC	point	Durham, NC	city	place:city	
 durham-tech-asap-pre-apprenticeship	Durham, NC	point	Durham, NC	city	place:city	
 durham-tech-career-and-college-promise	Durham, NC	point	Durham, NC	city	place:city	
+durham-youthworks	Durham, NC	point	Durham, NC	city	place:city	
 ebayc-volunteer-and-internships	Oakland, CA	point	Oakland, CA	city	place:city	
 ebmud-high-school-summer-internship	Oakland, CA and EBMUD service area	point	Oakland, CA	city	place:city	override: Oakland is the named city; the utility service area surrounds it
 ebrpd-junior-lifeguard-cadets	Hayward, CA (Don Castro Regional Recreation Area)	point	Hayward, CA	city	place:city	
@@ -753,6 +761,7 @@ fairfax-gmu-mason-game-and-technology-academy	Fairfax and Manassas, VA	multi				
 fairfax-gmu-valhen-stem-academy	Fairfax, VA	point	Fairfax, VA	city	place:city	
 fairfax-gmu-washington-journalism-and-media-conference	Fairfax, VA	point	Fairfax, VA	city	place:city	
 fairfax-gmu-wyse-washington-youth-summit-environment	Fairfax, VA	point	Fairfax, VA	city	place:city	
+fairfax-mount-vernon-estate-volunteers	Mount Vernon, VA	point	Mount Vernon, VA	city	place:CDP	
 fairfax-ncs-community-volunteers	Fairfax County, VA	point	Fairfax County, VA	county	county	
 fairfax-nova-e-summer-energy-stem-program	Manassas and Sterling, VA (NOVA Manassas or Loudoun campus)	multi				several places before the state
 fairfax-park-authority-rec-pac-counselor-in-training	Fairfax County, VA	point	Fairfax County, VA	county	county	
@@ -1623,6 +1632,7 @@ nfte-world-series-of-innovation	Online (anywhere)	online
 nhm-marine-teens	Los Angeles, CA	point	Los Angeles, CA	city	place:city	
 nhmu-critical-action-lab	Salt Lake City, UT	point	Salt Lake City, UT	city	place:city	
 nhmu-teen-explainers	Salt Lake City, UT	point	Salt Lake City, UT	city	place:city	
+nih-summer-internship-program	Bethesda, MD	point	Bethesda, MD	city	place:CDP	
 nisra-volunteers-and-summer-camp-jobs-elgin	Elgin and 12 other member communities, northern Illinois	multi				places plus a state name
 nist-ship-gaithersburg	Gaithersburg, MD	point	Gaithersburg, MD	city	place:city	
 norfolk-virginia-zoo-conservation-youth-team	Norfolk, VA	point	Norfolk, VA	city	place:city	
@@ -1644,6 +1654,7 @@ nova-parks-waterpark-jobs	Northern Virginia (Fairfax, Alexandria and Arlington w
 novaworks-young-adult-services	Sunnyvale, CA (serves San Mateo County and northern Santa Clara County)	point	Sunnyvale, CA	city	place:city	
 nps-youth-conservation-corps	Participating national parks (see the NPS park list)	national				
 nyc-ace-mentor-program-greater-new-york	Teams in Manhattan, Brooklyn, Queens, Long Island, White Plains and Riverdale (and remote)	multi				override: Many places listed
+nyc-amnh-science-research-mentoring-program	New York, NY	point	New York, NY	city	place:city	
 nyc-apollo-theater-academy-arts-production-internship	Manhattan, NY (Harlem)	point	Manhattan, NY	county	Manhattan is a borough with no Gazetteer place; same area as New York County	alias: Manhattan is a borough with no Gazetteer place; same area as New York County
 nyc-apollo-theater-academy-technical-internship	Manhattan, NY (Harlem)	point	Manhattan, NY	county	Manhattan is a borough with no Gazetteer place; same area as New York County	alias: Manhattan is a borough with no Gazetteer place; same area as New York County
 nyc-bbg-garden-apprentice-program	Brooklyn, NY	point	Brooklyn, NY	county	Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County	alias: Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County
@@ -1661,6 +1672,10 @@ nyc-brooklyn-groundswell-summer-leadership-institute	Brooklyn, NY (murals across
 nyc-brooklyn-maimonides-health-scholars-ed-internship	Brooklyn, NY (Maimonides Medical Center)	point	Brooklyn, NY	county	Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County	alias: Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County
 nyc-brooklyn-maimonides-high-school-volunteer	Brooklyn, NY (Maimonides, 5014 Fort Hamilton Parkway)	point	Brooklyn, NY	county	Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County	alias: Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County
 nyc-brooklyn-maimonides-science-scholars	Brooklyn, NY (Maimonides Medical Center)	point	Brooklyn, NY	county	Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County	alias: Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County
+nyc-brooklyn-museum-apprentice-program	Brooklyn, NY	point	Brooklyn, NY	county	Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County	alias: Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County
+nyc-brooklyn-museum-creative-practice	Brooklyn, NY	point	Brooklyn, NY	county	Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County	alias: Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County
+nyc-brooklyn-museum-intersextions	Brooklyn, NY	point	Brooklyn, NY	county	Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County	alias: Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County
+nyc-brooklyn-museum-teen-night-planning-committee	Brooklyn, NY	point	Brooklyn, NY	county	Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County	alias: Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County
 nyc-brooklyn-pratt-precollege-summer-intensive	Brooklyn, NY (Pratt campus, 200 Willoughby Ave)	point	Brooklyn, NY	county	Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County	alias: Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County
 nyc-brooklyn-prospect-park-alliance-teen-service-series	Brooklyn, NY (Prospect Park)	point	Brooklyn, NY	county	Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County	alias: Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County
 nyc-ccny-zahn-bossgirls-summer-entrepreneurship	CCNY campus, 160 Convent Ave, New York, NY	point	New York, NY	city	place:city	3 name tokens before state, used the last (New York)
@@ -1691,6 +1706,9 @@ nyc-manhattan-university-mechanical-engineering-summer-institute	Bronx, NY (Rive
 nyc-manhattan-university-omalley-business-pre-college	Bronx, NY (Riverdale) and online	point	Bronx, NY	county	The Bronx is a borough with no Gazetteer place; same area as Bronx County	alias: The Bronx is a borough with no Gazetteer place; same area as Bronx County
 nyc-manhattan-university-residential-summer-engineering	Bronx, NY (Riverdale)	point	Bronx, NY	county	The Bronx is a borough with no Gazetteer place; same area as Bronx County	alias: The Bronx is a borough with no Gazetteer place; same area as Bronx County
 nyc-manhattan-university-summer-engineering-awareness-program	Bronx, NY (Riverdale)	point	Bronx, NY	county	The Bronx is a borough with no Gazetteer place; same area as Bronx County	alias: The Bronx is a borough with no Gazetteer place; same area as Bronx County
+nyc-met-high-school-spring-internship	New York, NY	point	New York, NY	city	place:city	
+nyc-met-high-school-summer-internship	New York, NY	point	New York, NY	city	place:city	
+nyc-moma-teens-in-residence	New York, NY	point	New York, NY	city	place:city	
 nyc-montefiore-bronx-summer-volunteer	Bronx, NY	point	Bronx, NY	county	The Bronx is a borough with no Gazetteer place; same area as Bronx County	alias: The Bronx is a borough with no Gazetteer place; same area as Bronx County
 nyc-mount-sinai-morningside-jump-teen-volunteer	Manhattan, NY (Morningside Heights)	point	Manhattan, NY	county	Manhattan is a borough with no Gazetteer place; same area as New York County	alias: Manhattan is a borough with no Gazetteer place; same area as New York County
 nyc-northwell-lenox-hill-health-care-immersion	Manhattan, NY	point	Manhattan, NY	county	Manhattan is a borough with no Gazetteer place; same area as New York County	alias: Manhattan is a borough with no Gazetteer place; same area as New York County
@@ -1701,6 +1719,7 @@ nyc-nyu-langone-manhattan-summer-volunteer	Manhattan, NY	point	Manhattan, NY	cou
 nyc-nyu-sps-finance-nyc-insiders-view	New York, NY (NYU)	point	New York, NY	city	place:city	
 nyc-nyu-tandon-arise	Brooklyn, NY	point	Brooklyn, NY	county	Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County	alias: Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County
 nyc-opportunity-network-fellows	Manhattan, NY (office in Lower Manhattan)	point	Manhattan, NY	county	Manhattan is a borough with no Gazetteer place; same area as New York County	alias: Manhattan is a borough with no Gazetteer place; same area as New York County
+nyc-pal-college-access-program	Bronx, NY	point	Bronx, NY	county	The Bronx is a borough with no Gazetteer place; same area as Bronx County	alias: The Bronx is a borough with no Gazetteer place; same area as Bronx County
 nyc-parks-lifeguard-program	New York City (pools and beaches in all five boroughs, including Manhattan and the Bronx)	point	New York, NY	city	place:city	
 nyc-public-schools-p-tech-early-college	New York City (schools in Manhattan and the Bronx include Inwood Early College, MECA, EChem and H.E.R.O. High)	point	New York, NY	city	place:city	
 nyc-public-schools-student-advisory-councils	New York City (one council for each borough, including Manhattan and the Bronx)	point	New York, NY	city	place:city	
@@ -1716,6 +1735,7 @@ nyc-sadie-nash-leadership-scholars	New York City (all five boroughs) and Newark,
 nyc-sadie-nash-nash-u-leadership-internship	New York City (all five boroughs) and Newark, NJ	multi				second place with a state code
 nyc-sadie-nash-siblinghood-academy	New York City (all five boroughs) and Newark, NJ	multi				second place with a state code
 nyc-sadie-nash-summer-institute	New York City (all five boroughs) and Newark, NJ	multi				second place with a state code
+nyc-sca-metro-ny-urban-green	New York, NY	point	New York, NY	city	place:city	
 nyc-staten-island-historic-richmond-town-high-school-apprenticeship	Staten Island, NY	point	Staten Island, NY	county	Staten Island is a borough with no Gazetteer place; same area as Richmond County	alias: Staten Island is a borough with no Gazetteer place; same area as Richmond County
 nyc-staten-island-rumc-afterschool-medical-science	Staten Island, NY (355 Bard Ave)	point	Staten Island, NY	county	Staten Island is a borough with no Gazetteer place; same area as Richmond County	alias: Staten Island is a borough with no Gazetteer place; same area as Richmond County
 nyc-staten-island-wagner-college-high-school-internship	Staten Island, NY (631 Howard Ave)	point	Staten Island, NY	county	Staten Island is a borough with no Gazetteer place; same area as Richmond County	alias: Staten Island is a borough with no Gazetteer place; same area as Richmond County
@@ -1731,9 +1751,11 @@ nyc-wave-hill-forest-project	Bronx, NY	point	Bronx, NY	county	The Bronx is a bor
 nyc-wave-hill-werm	Bronx, NY	point	Bronx, NY	county	The Bronx is a borough with no Gazetteer place; same area as Bronx County	alias: The Bronx is a borough with no Gazetteer place; same area as Bronx County
 nyc-wcs-discovery-guide-volunteer	Bronx, Manhattan, Brooklyn, Queens	multi				override: Several boroughs listed
 nyc-whitney-youth-insights	Manhattan, NY	point	Manhattan, NY	county	Manhattan is a borough with no Gazetteer place; same area as New York County	alias: Manhattan is a borough with no Gazetteer place; same area as New York County
+nyc-work-learn-grow	New York, NY	point	New York, NY	city	place:city	
 nycps-career-and-technical-education	New York, NY	point	New York, NY	city	place:city	
 nycps-career-readiness-modern-youth-apprenticeship	New York, NY	point	New York, NY	city	place:city	
 nyit-high-school-business-bootcamp	Online (Zoom)	online				
+nypl-teen-curators	New York, NY	point	New York, NY	city	place:city	
 oak-park-library-leading-edge-teen-advisory-board	Oak Park, IL	point	Oak Park, IL	city	place:village	
 oak-park-park-district-acorns-to-oaks-volunteers	Oak Park, IL	point	Oak Park, IL	city	place:village	
 oak-park-park-district-seasonal-jobs	Oak Park, IL	point	Oak Park, IL	city	place:village	
@@ -1849,7 +1871,9 @@ philadelphia-fleisher-teen-lounge	Philadelphia, PA (South Philadelphia)	point	Ph
 philadelphia-fox-chase-immersion-science-program	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
 philadelphia-franklin-institute-pacts	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
 philadelphia-franklin-institute-stem-scholars	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
+philadelphia-free-library-young-volunteers	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
 philadelphia-independence-seaport-museum-teen-ambassadors	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
+philadelphia-jefferson-abington-teen-volunteers	Abington, PA	point	Abington, PA	city	cousub:cousub-township	
 philadelphia-jefferson-northeast-summer-student-volunteer	Philadelphia, PA (Torresdale)	point	Philadelphia, PA	city	place:city	
 philadelphia-job-corps-center	Philadelphia, PA (campus; page lists transportation and no dorms)	point	Philadelphia, PA	city	place:city	
 philadelphia-monell-science-apprenticeship-program	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
@@ -1860,6 +1884,7 @@ philadelphia-parks-rec-lifeguard	Philadelphia, PA	point	Philadelphia, PA	city	pl
 philadelphia-parks-rec-summer-youth-employment	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
 philadelphia-penn-provost-summer-mentorship-program	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
 philadelphia-penn-sas-high-school-summer-programs	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
+philadelphia-pennsylvania-hospital-junior-volunteers	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
 philadelphia-police-explorer-cadets-post-991	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
 philadelphia-pyn-aim-afterschool	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
 philadelphia-pyn-nextgen-career-clubs	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
@@ -1972,6 +1997,8 @@ princeton-public-library-teen-advisory-board	Princeton, NJ	point	Princeton, NJ	c
 princeton-public-library-teen-summer-volunteer	Princeton, NJ	point	Princeton, NJ	city	place:place	
 qpl-peer-to-peer-service-collective	Queens, NY	point	Queens, NY	county	Queens is a borough with no Gazetteer place; same area as Queens County	alias: Queens is a borough with no Gazetteer place; same area as Queens County
 qpl-teen-volunteer	Queens, NY	point	Queens, NY	county	Queens is a borough with no Gazetteer place; same area as Queens County	alias: Queens is a borough with no Gazetteer place; same area as Queens County
+raleigh-marbles-kids-museum-teen-play-corps	Raleigh, NC	point	Raleigh, NC	city	place:city	
+raleigh-unc-health-rex-volunteen	Raleigh, NC	point	Raleigh, NC	city	place:city	
 red-butte-garden-twig-teens-working-in-the-garden	Salt Lake City, UT	point	Salt Lake City, UT	city	place:city	
 red-cross-babysitting-training	Online and local classes	online				
 red-cross-lifeguard-wsi	Local pools across California	statewide	CA			
@@ -2022,6 +2049,7 @@ roanoke-science-museum-of-western-virginia-volunteer	Roanoke, VA	point	Roanoke, 
 rochester-general-hospital-student-volunteer-program	Rochester, NY	point	Rochester, NY	city	place:city	
 rochester-rochesterworks-summer-youth-employment	Rochester, NY	point	Rochester, NY	city	place:city	
 rochester-seneca-park-zoo-zooteens	Rochester, NY	point	Rochester, NY	city	place:city	
+rockville-shady-grove-medical-center-volunteers	Rockville, MD	point	Rockville, MD	city	place:city	
 rocky-mountain-youth-corps-youth-conservation-corps	Northwest Colorado (10 counties)	multi				sub-state region
 roseville-leadership-development-program	Roseville, CA	point	Roseville, CA	city	place:city	
 roseville-library-teen-volunteers	Roseville, CA	point	Roseville, CA	city	place:city	
