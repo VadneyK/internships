@@ -4,7 +4,7 @@
   "grades": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-10-16",
   "apply_url": null,
   "deadline_iso": null,
   "needs_work_permit": null,
@@ -27,16 +27,17 @@
   "pay_detail": "Free. The national site says Job Corps covers housing, meals, basic medical care and a living allowance. The living allowance amount is not stated on the program pages.",
   "season": "year-round",
   "duration": "Not stated on the program pages",
-  "status": "rolling",
-  "deadline_text": "Open enrollment: you can start at any time. The process usually takes about two months.",
-  "deadline_confidence": "rolling",
-  "how_to_apply": "Make a MyJobCorps account on jobcorps.gov. Fill out the application. Upload the documents that show you are eligible. Then connect with an admissions representative. Call 800-733-5627 with questions.",
+  "status": "unconfirmed",
+  "deadline_text": "Operations are paused. The national Job Corps center list showed this center as \"Operations Paused\" on Oct 16, 2026. Do not apply here until Job Corps says it is open again.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "This center is not taking students while it is paused. To ask about other Job Corps centers, make a MyJobCorps account on jobcorps.gov or call 800-733-5627.",
   "url": "https://woodstock.jobcorps.gov/train",
   "sources_fetched": [
+    "https://www.jobcorps.gov/explore/center-locations",
+    "https://www.dol.gov/newsroom/releases/eta/eta20241219-0",
     "https://woodstock.jobcorps.gov/",
-    "https://woodstock.jobcorps.gov/training-programs",
-    "https://www.jobcorps.gov/admissions-process",
-    "https://woodstock.jobcorps.gov/train"
+    "https://woodstock.jobcorps.gov/train",
+    "https://www.jobcorps.gov/admissions-process"
   ],
-  "notes": "Center address: 10900 Old Court Rd, Woodstock, MD 21163. No closure notice showed on the program pages on 2026-10-10. The old /training-programs page gave a 404 error. The current list is at /train. The application asks for ID, Social Security number and proof of income. Only enter these on the official jobcorps.gov site. Do it with a parent or guardian. A parent should ask an admissions staff member about the rules for 16 and 17 year olds."
+  "notes": "Paused: on Oct 16, 2026 the Job Corps center list (jobcorps.gov/explore/center-locations) showed Woodstock as \"Operations Paused\". The Department of Labor said on Dec 19, 2024 that it would pause operations here. The center's own site still loads with no notice, so trust the national list. Call 800-733-5627 to ask about other centers. Center address: 10900 Old Court Rd, Woodstock, MD 21163. The application asks for ID, Social Security number and proof of income. Only enter these on the official jobcorps.gov site, with a parent or guardian."
 }
