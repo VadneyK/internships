@@ -101,6 +101,19 @@ test("relaxOptions: a place with exactly 3 matches counts only those 3, not onli
   assert.equal(age.count, 3);
   const two = L.relaxOptions(list.slice(1), { place: "city:boston", age: "13" }, now).find((o) => o.key === "age");
   assert.equal(two.count, 4, "with fewer than 3 local matches, online programs are added");
+  const already = L.relaxOptions(list, { place: "city:boston", age: "13", placeOnline: true }, now).find((o) => o.key === "age");
+  assert.equal(already.count, 3, "a state that already widened to online is counted unwidened first");
+});
+
+test("relaxOptions: equal counts keep the filter order (search word, then season, then kind)", () => {
+  const now = new Date(2026, 9, 17).getTime();
+  const e = (id, name, season, type) => ({ id, name, season, type, status: "rolling", paid_type: "paid", regions: ["boston"], min_age: 14, max_age: 18 });
+  // Each filter, removed alone, leaves exactly one program, so only the filter order can decide.
+  const list = [e("a", "Robotics Lab", "fall", "internship"), e("b", "Robotics Team", "summer", "volunteer"), e("c", "Art Studio", "fall", "volunteer")];
+  for (const order of [list, list.slice().reverse()]) {
+    const opts = L.relaxOptions(order, { q: "robotics", season: "fall", types: ["volunteer"] }, now);
+    assert.deepEqual(opts.map((o) => [o.key, o.count]), [["q", 1], ["season", 1], ["types", 1]]);
+  }
 });
 
 /* ---------- placeRegions ---------- */
