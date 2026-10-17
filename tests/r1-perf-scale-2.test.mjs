@@ -27,7 +27,8 @@ const DETAIL_FIELDS = ["who_can_apply", "how_to_apply", "notes", "duration", "pa
 // 2026-10-13: re-read of 213 more open cards (42 fixed).  limit 563100 to 563600.
 // 2026-10-14 gaps wave: 89 cards for Alameda, Tri-Valley, Contra Costa and Orange County (2,608 programs)  limit 563600 to 583900.
 // 2026-10-14 gaps wave plus two Fremont cards read in a real browser (2,610 programs)  limit 583900 to 584400.
-const GZIP_LIMIT = 584400;
+// 2026-10-16 Pacific Northwest and Vancouver cards read in a real browser for issue 23 (2,622 programs). PENDING PERSON APPROVAL, as above. entries-detail.json gzip limit 584400 to 586900.
+const GZIP_LIMIT = 586900;
 
 function readText(file) {
   return fs.readFileSync(path.join(DATA, file), "utf8");
