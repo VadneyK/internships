@@ -20,6 +20,7 @@ const ALLOW = {
   G: {
     cardHtml: "find.js sets G.cardHtml for its own later use; it is not defined by common.js",
     placeChunks: "find.js sets G.placeChunks as a test hook (tests/diet-1-region-chunks.test.mjs); it is not defined by common.js",
+    es: "es-playbook.js sets G.es on es/playbook.html only (ADR 0008); playbook.js reads it with a fallback, so English pages never have it",
   },
   L: {},
 };

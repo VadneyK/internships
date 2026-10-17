@@ -121,7 +121,9 @@ const TABLE = {
   "data/map.json": { ceiling: 163300, reason: "data file, the Map page city points, 148390 bytes measured 2026-10-15" },
   "assets/js/map.js": { ceiling: 37700, reason: "script, 27559 bytes measured 2026-10-15; 35987 bytes after the review fixes" },
   "assets/img/us-states.svg": { ceiling: 61500, reason: "image, the Map page basemap (tools/geo/make_basemap.mjs keeps it under 58000), 55841 bytes measured 2026-10-15" },
-  "assets/js/es.js": { ceiling: 1000, reason: "script, Spanish labels and Copy buttons for the pages in es/ only (ADR 0008), 868 bytes measured 2026-10-16" },
+  // 2026-10-17: the Copy buttons moved to playbook.js, which now runs on es/playbook.html too. es.js ceiling 1000 to 700.
+  "assets/js/es.js": { ceiling: 700, reason: "script, Spanish labels for the pages in es/ only (ADR 0008), 575 bytes measured 2026-10-17" },
+  "assets/js/es-playbook.js": { ceiling: 9300, reason: "script, Spanish words for the Playbook tools on es/playbook.html only (ADR 0008), 8569 bytes measured 2026-10-17" },
   "assets/js/find.js": { ceiling: 67400, reason: "script, 52771 bytes measured 2026-10-10" },
   "assets/js/handout.js": { ceiling: 600, reason: "script, 274 bytes measured 2026-10-10; 517 bytes on 2026-10-14 with the one page handout and table plan print buttons" },
   // 2026-10-12: home picker flow. home.js grew by about 8.8 KB (place search box, chip, step markers); ceiling raised from 10800 to 18600, measured 18585 bytes.

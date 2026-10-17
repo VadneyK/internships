@@ -92,9 +92,11 @@ test("every script src and link href in a root page resolves to a file that exis
 
 test("every assets/js/*.js is loaded by at least one root page", () => {
   const loaded = new Set(PAGE_REFS.filter((r) => !r.bad && r.target.startsWith("assets/js/")).map((r) => r.target));
-  // es.js is loaded only by the Spanish pages in es/ (ADR 0008), which are not root pages.
+  // es.js and es-playbook.js are loaded only by the Spanish pages in es/ (ADR 0008), which are not root pages.
   const esPages = fs.existsSync(path.join(ROOT, "es")) ? fs.readdirSync(path.join(ROOT, "es")).filter((f) => f.endsWith(".html")) : [];
-  if (esPages.some((f) => fs.readFileSync(path.join(ROOT, "es", f), "utf8").includes('src="../assets/js/es.js'))) loaded.add("assets/js/es.js");
+  for (const name of ["es.js", "es-playbook.js"]) {
+    if (esPages.some((f) => fs.readFileSync(path.join(ROOT, "es", f), "utf8").includes(`src="../assets/js/${name}`))) loaded.add("assets/js/" + name);
+  }
   const orphans = JS_FILES.filter((f) => !loaded.has(f));
   assert.deepEqual(orphans, [], "these scripts are not loaded by any root page (delete them or add the script tag)");
   assert.ok(JS_FILES.length > 0, "no files found in assets/js");

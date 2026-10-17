@@ -86,8 +86,9 @@ test("every assets/js script except lib.js is loaded by at least one root page",
   const unloaded = scripts
     .filter((s) => s.name !== "lib.js")
     .filter((s) => loaders(s.name, pages).length === 0)
-    // es.js is loaded only by the Spanish pages in es/ (ADR 0008); tests/es-pages.test.mjs checks each of them loads it.
+    // es.js and es-playbook.js are loaded only by the Spanish pages in es/ (ADR 0008); tests/es-pages.test.mjs checks which page loads which.
     .filter((s) => !(s.name === "es.js" && fs.readFileSync(path.join(ROOT, "es/index.html"), "utf8").includes('src="../assets/js/es.js')))
+    .filter((s) => !(s.name === "es-playbook.js" && fs.readFileSync(path.join(ROOT, "es/playbook.html"), "utf8").includes('src="../assets/js/es-playbook.js')))
     .map((s) => s.name);
   assert.deepEqual(unloaded, [], "scripts loaded by no page: " + unloaded.join(", "));
 });

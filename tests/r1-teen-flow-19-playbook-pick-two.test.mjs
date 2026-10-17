@@ -34,7 +34,8 @@ test("the old 'Prepare two questions' heading is gone from the built page and th
 });
 
 test("the reminder string in playbook.js says 'Pick two questions to ask. See step 4 below.'", () => {
-  assert.ok(JS.includes("<p>Pick two questions to ask. See step 4 below.</p>"));
+  // 2026-10-17: the string goes through t() so the Spanish page can put its own words there (ADR 0008).
+  assert.ok(JS.includes('"<p>" + t("Pick two questions to ask. See step 4 below.") + "</p>"'));
 });
 
 test("the Before card still lists its five questions", () => {
