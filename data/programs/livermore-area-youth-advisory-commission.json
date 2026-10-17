@@ -1,6 +1,6 @@
 {
   "id": "livermore-area-youth-advisory-commission",
-  "name": "Livermore Area Youth Advisory Commission (LAYAC)",
+  "name": "Livermore Youth Council (LYC)",
   "org": "City of Livermore",
   "regions": [
     "east-bay",
@@ -11,29 +11,31 @@
   "fields": [
     "law-government"
   ],
-  "what_you_do": "Youth members advise the City Council and the Livermore recreation district on what young people need. They also organize events that promote respect for diversity among Livermore youth.",
+  "what_you_do": "Speak up for Livermore youth to the City Council, the park district (LARPD) and the school district (LVJUSD). Members take on projects, promote youth programs and community service, and plan events that celebrate diversity.",
   "min_age": 12,
   "max_age": 20,
-  "grades": null,
-  "who_can_apply": "Youths ages 12 through 20, preferably attending Livermore schools. Youth members who attend Livermore schools do not have to live in the city (Livermore Municipal Code 2.51.010).",
-  "paid_type": "not-stated",
-  "pay_detail": "Advisory commission seat. No pay is stated in the code.",
-  "season": "year-round",
-  "duration": null,
+  "grades": "Middle and high school",
+  "who_can_apply": "Middle and high school students. The municipal code says ages 12 through 20, preferably at Livermore schools, and members at Livermore schools do not have to live in the city. You must be able to come to meetings, sub-committee meetings and events.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. No pay is stated on the city page or in the code.",
+  "season": "school-year",
+  "duration": "One school year. A new term starts each school year. Three absences in one school year count as resigning.",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Application dates not found. The city teen page that would list them returned an access block to our reads.",
+  "deadline_text": "The city posts a recruitment application form on the Youth Council page. No deadline is shown on the page. A new term starts each school year.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Not confirmed. Contact the City of Livermore to ask how to apply and when the next seats open.",
+  "how_to_apply": "Fill out the Livermore Youth Council Recruitment Application Form linked on the Youth Council page, and contact the City of Livermore to ask when it is due.",
   "needs_work_permit": false,
-  "url": "https://www.livermoreca.gov/our-community/teens-kids",
-  "apply_url": null,
+  "url": "https://library.livermoreca.gov/digital-library/teens/youth-council",
+  "apply_url": "https://library.livermoreca.gov/home/showpublisheddocument/14044/639172097558270000",
   "sources_fetched": [
+    "https://www.livermoreca.gov/our-community/teens-kids",
+    "https://library.livermoreca.gov/digital-library/teens/youth-council",
     "https://codepublishing.com/CA/Livermore/Municipal/Livermore02/Livermore0251.html"
   ],
-  "verified": "snippet-only",
-  "verified_on": "2026-10-07",
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
   "priority": 3,
-  "notes": "Confirm first. The membership and duties come from Livermore Municipal Code Chapter 2.51, read on the code publisher's page. The city's own teen page (livermoreca.gov) returned HTTP 403 to both our fetch tools, so the application process, term, and dates are not confirmed. The municipal code gives 15 youth seats and 3 adult seats; the code does not say how seats are filled. Re-checked on 2026-10-09: the City teen page returned HTTP 403 again, so it could not be read and the card stays snippet-only."
+  "notes": "Read in a browser on 2026-10-16. The city's Youth page now calls this group the Livermore Youth Council and links to its page on the library site. The municipal code (Chapter 2.51) still uses the older name, Livermore Area Youth Advisory Commission, with 15 youth seats and 3 adult seats. The application form and rules are PDF downloads that our tools could not open, so the due date is not confirmed. Not a paid job."
 }
