@@ -18,20 +18,21 @@
   "paid_type": "paid",
   "pay_detail": "Paid work experience; hourly rate not stated on the program page",
   "season": "summer",
-  "duration": "not stated",
+  "duration": "5 to 7 weeks",
   "status": "closed-expect-reopen",
-  "deadline_text": "Summer 2026 applications are closed and the page is labeled Expired. 2027 dates are not posted; the county has a 2027 interest form to get notified when applications open.",
+  "deadline_text": "Summer 2026 applications are closed. The county says applications for Summer 2027 open in January 2027 (exact date not posted). Fill out the 2027 interest form to be told when they open.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Fill out the online application (Jotform) and upload a Social Security card and a school ID or recent report card. Eligible applicants are invited to a mandatory job readiness training, then matched to a host site if space allows. Applying does not guarantee a placement.",
   "needs_work_permit": null,
   "url": "https://www.traviscountytx.gov/health-human-services/children-and-youth/syep",
   "sources_fetched": [
-    "https://www.traviscountytx.gov/health-human-services/children-and-youth/syep"
+    "https://www.traviscountytx.gov/health-human-services/children-and-youth/syep",
+    "https://www.traviscountytx.gov/health-human-services/children-and-youth/employment-program"
   ],
   "priority": 1,
-  "notes": "Phone 512-854-4590. Pay rate, hours and program length are not stated on the page. The page does not mention a work permit. Texas rules for 14 and 15 year olds limit hours (see Texas Workforce Commission child labor page).",
+  "notes": "Phone 512-854-4590, syep@traviscountytx.gov. Up to 750 paid spots each year. Pay rate and hours are not stated on the page. The page does not mention a work permit. Texas rules for 14 and 15 year olds limit hours (see Texas Workforce Commission child labor page). The SAFE Alliance Summer Youth Leadership Academy also hires through this program.",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "apply_url": null
+  "verified_on": "2026-10-17",
+  "apply_url": "https://traviscountytx.jotform.com/260694487770875"
 }

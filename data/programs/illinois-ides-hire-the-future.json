@@ -1,0 +1,39 @@
+{
+  "id": "illinois-ides-hire-the-future",
+  "name": "Hire the Future",
+  "org": "Illinois Department of Employment Security (IDES)",
+  "regions": [
+    "illinois",
+    "chicago"
+  ],
+  "city": "Statewide, IL",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Free job help for young people. You can get help searching for jobs, getting ready for interviews and planning a career at an IDES office.",
+  "min_age": 16,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Youth ages 16 to 24.",
+  "paid_type": "not-stated",
+  "pay_detail": "This is job search help, not a job. Pay is not stated.",
+  "season": "year-round",
+  "duration": "Not stated",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline. Visit an IDES office any time.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Make a free account on IllinoisJobLink.com to search for jobs. For job readiness help, use the IDES Office Locator to find the nearest office.",
+  "needs_work_permit": null,
+  "url": "https://ides.illinois.gov/jobs-workforce/programs/hire-the-future.html",
+  "apply_url": "https://ides.illinois.gov/about/locations.html",
+  "sources_fetched": [
+    "https://ides.illinois.gov/jobs-workforce/programs/hire-the-future.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 3,
+  "notes": "The page also links to free career exploration tools (Illinois Career Information System) and to federal young worker safety pages."
+}
