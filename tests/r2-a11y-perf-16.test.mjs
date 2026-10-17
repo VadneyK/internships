@@ -48,8 +48,8 @@ const PAGES = {
   // 2026-10-14 gaps wave: 89 cards for Alameda, Tri-Valley, Contra Costa and Orange County (2,608 programs) younger.html limit 472700 to 488300.
   // 2026-10-14 gaps wave plus two Fremont cards read in a real browser (2,610 programs) younger.html limit 488300 to 488700.
   // 2026-10-15 persona round 10: California cells on the 12 to 14 grid give the chart's hours younger.html limit 488700 to 489000.
-  // 2026-10-17 SoCal, Santa Barbara and Merced cards read in a real browser (2,626 programs), PENDING PERSON APPROVAL: younger.html limit 489000 to 492000.
-  "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 492000 },
+  // 2026-10-17 SoCal, Santa Barbara and Merced cards read in a real browser (2,626 programs), PENDING PERSON APPROVAL: younger.html limit 489000 to 492100 (remeasured after the rebase onto #41).
+  "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 492100 },
   "interview.html": { allowed: ["interview.json", "permits.json"], ceiling: 95000 },
   // permit.html and states.html: raised from 82000 to 83000 on 2026-10-12 (r2-accuracy-2 and r2-accuracy-8: the 2027 wage lines and the Washington, DC wording; permits.json is 82,370 bytes)
   "permit.html": { allowed: ["permits.json"], ceiling: 83000 },
