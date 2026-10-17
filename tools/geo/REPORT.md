@@ -9,17 +9,17 @@ Precision 'manual' covers both the British Columbia table and the ZIP-centroid p
 
 | What | Cards |
 |---|---|
-| All cards | 2670 |
-| With a point | 2315 (86.7%) |
+| All cards | 2700 |
+| With a point | 2342 (86.7%) |
 | Statewide (no point) | 190 |
 | Online (no point) | 49 |
 | National (no point) | 7 |
-| Many places (no point) | 109 |
+| Many places (no point) | 112 |
 | Unmatched | 0 (0.00%) |
 
-Distinct city strings: 997. Distinct map points (cities list): 478.
+Distinct city strings: 1020. Distinct map points (cities list): 484.
 
-Points by precision (points / cards): city 407 / 2043, county 55 / 176, manual 16 / 96
+Points by precision (points / cards): city 413 / 2066, county 55 / 176, manual 16 / 100
 
 Statewide by state: AZ 1, BC 5, CA 20, CO 5, FL 3, GA 12, HI 4, IA 8, ID 2, IL 14, IN 8, KY 4, MA 7, MD 5, MI 8, MN 5, MO 4, MT 2, NC 6, ND 2, NJ 3, NM 4, NV 3, NY 4, OH 5, OR 2, PA 6, SD 2, TN 2, TX 12, UT 3, VA 5, WA 6, WI 6, WY 2
 
@@ -29,7 +29,7 @@ None.
 
 ## Overrides
 
-Entries in data/geo-overrides.json: byCity 69, byId 1, aliases 5, manualPoints 5. Every entry carries a reason. Entries that fired this run: 80.
+Entries in data/geo-overrides.json: byCity 73, byId 1, aliases 5, manualPoints 5. Every entry carries a reason. Entries that fired this run: 84.
 
 ## Ambiguous matches (picked by region center or land area)
 

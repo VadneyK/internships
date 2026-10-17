@@ -14,6 +14,7 @@ alameda-county-itd-student-intern-program	Alameda County, CA	point	Alameda Count
 alameda-county-library-teen-volunteer	Fremont, Newark and Union City, CA	multi				several places before the state
 alameda-free-library-teen-advisory-group	Alameda, CA (Main Library, Stafford Room)	point	Alameda, CA	manual	Census Gazetteer ZCTA 94501 (Alameda, CA) internal point	override: Alameda is an island city and the Gazetteer place point (37.7423, -122.2605) falls in San Francisco Bay water, outside the state outline; ZIP code area 94501 centroid from the Census Gazetteer ZCTA file lies on the island
 alameda-free-library-teen-volunteers	Alameda, CA (Main Library)	point	Alameda, CA	manual	Census Gazetteer ZCTA 94501 (Alameda, CA) internal point	override: Alameda is an island city and the Gazetteer place point (37.7423, -122.2605) falls in San Francisco Bay water, outside the state outline; ZIP code area 94501 centroid from the Census Gazetteer ZCTA file lies on the island
+alameda-health-system-heal-internship	Oakland, CA (Wilma Chan Highland Hospital Campus)	point	Oakland, CA	city	place:city	
 alameda-high-school-cte-pathways	Alameda, CA (2200 Central Ave)	point	Alameda, CA	manual	Census Gazetteer ZCTA 94501 (Alameda, CA) internal point	override: Alameda is an island city and the Gazetteer place point (37.7423, -122.2605) falls in San Francisco Bay water, outside the state outline; ZIP code area 94501 centroid from the Census Gazetteer ZCTA file lies on the island
 alameda-teen-haunted-house-volunteers	Alameda, CA (Veterans Building and South Shore Mall)	point	Alameda, CA	manual	Census Gazetteer ZCTA 94501 (Alameda, CA) internal point	override: Alameda is an island city and the Gazetteer place point (37.7423, -122.2605) falls in San Francisco Bay water, outside the state outline; ZIP code area 94501 centroid from the Census Gazetteer ZCTA file lies on the island
 alameda-youth-career-job-fair	Alameda, CA (Encinal Jr/Sr High)	point	Alameda, CA	manual	Census Gazetteer ZCTA 94501 (Alameda, CA) internal point	override: Alameda is an island city and the Gazetteer place point (37.7423, -122.2605) falls in San Francisco Bay water, outside the state outline; ZIP code area 94501 centroid from the Census Gazetteer ZCTA file lies on the island
@@ -180,6 +181,9 @@ beyond-emancipation-foster-youth	Oakland, CA	point	Oakland, CA	city	place:city
 bgc-ncil-industry-clubs	Elgin / South Elgin area and other Fox Valley clubs, IL	multi				override: Many places listed
 bgc-ncil-keystone-club-youth-of-the-year	Elgin, South Elgin, Aurora, Streamwood, Hanover Park and Schaumburg, IL	multi				several places before the state
 bgc-oakland-junior-staff	Oakland, CA	point	Oakland, CA	city	place:city	
+bgc-peninsula-teen-volunteer-summer-internship	Menlo Park, CA (Boys & Girls Clubs of the Peninsula, 401 Pierce Rd., serving San Mateo County)	point	Menlo Park, CA	city	place:city	
+bgc-san-francisco-camp-mendocino-lit-cit	San Francisco, CA (overnight camp at Camp Mendocino; buses leave from San Francisco)	point	San Francisco, CA	manual	Census Gazetteer ZCTA 94102 (San Francisco, CA) internal point	override: The Gazetteer place point (37.7272, -123.0322) is about 30 miles out in the Pacific because the city limits include the Farallon Islands, so it falls outside the state outline; ZIP code area 94102 (Civic Center) centroid from the Census Gazetteer ZCTA file is used instead
+bgc-san-francisco-leaders-in-training	San Francisco, CA (several Clubhouses)	point	San Francisco, CA	manual	Census Gazetteer ZCTA 94102 (San Francisco, CA) internal point	override: The Gazetteer place point (37.7272, -123.0322) is about 30 miles out in the Pacific because the city limits include the Farallon Islands, so it falls outside the state outline; ZIP code area 94102 (Civic Center) centroid from the Census Gazetteer ZCTA file is used instead
 bgc-san-leandro-teen-summer-program	San Leandro, CA (Teen Clubhouse, 2200 San Leandro Blvd)	point	San Leandro, CA	city	place:city	
 billings-city-college-drone-camp	Billings, MT	point	Billings, MT	city	place:city	
 billings-hrdc-wioa-youth	Billings, MT	point	Billings, MT	city	place:city	
@@ -624,7 +628,10 @@ danville-town-volunteer-program	Danville, CA	point	Danville, CA	city	place:town
 danville-youth-council	Danville, CA	point	Danville, CA	city	place:town	
 davis-aquatics-lifeguard-junior-swim	Davis, CA	point	Davis, CA	city	place:city	
 davis-junior-basketball-officials	Davis, CA	point	Davis, CA	city	place:city	
+davis-rec-leader-in-training	Davis, CA	point	Davis, CA	city	place:city	
+davis-seasonal-lifeguard-swim-instructor	Davis, CA	point	Davis, CA	city	place:city	
 davis-senior-high-cte-pathways	Davis, CA	point	Davis, CA	city	place:city	
+davis-summer-camp-recreation-leader	Davis, CA	point	Davis, CA	city	place:city	
 davis-teen-leadership-council	Davis, CA	point	Davis, CA	city	place:city	
 dc-childrens-national-summer-high-school-volunteer	Washington, DC (main hospital, Michigan Avenue NW)	point	Washington, DC	city	place:city	
 de-anza-dual-enrollment	Cupertino, CA	point	Cupertino, CA	city	place:city	
@@ -1061,6 +1068,11 @@ john-muir-walnut-creek-high-school-volunteer	Walnut Creek, CA	point	Walnut Creek
 johnson-county-library-teen-volunteer	Overland Park and Johnson County, KS	point	Overland Park, KS	city	place:city	override: Johnson County contains Overland Park; point placed at Overland Park
 junior-achievement-norcal	Northern California (HQ Walnut Creek)	multi				sub-state region
 kaiser-launch-high-school-program	Northern California Kaiser Permanente service areas	multi				sub-state region
+kaiser-redwood-city-high-school-volunteer	Redwood City, CA (1100 Veterans Blvd)	point	Redwood City, CA	city	place:city	
+kaiser-san-jose-high-school-volunteer	San Jose, CA (250 Hospital Parkway)	point	San Jose, CA	city	place:city	
+kaiser-santa-clara-high-school-volunteer	Santa Clara, CA (Homestead campus, 710 Lawrence Expressway)	point	Santa Clara, CA	city	place:city	
+kaiser-south-san-francisco-high-school-volunteer	South San Francisco, CA (1200 El Camino Real; also Daly City and San Bruno offices)	point	South San Francisco, CA	city	place:city	
+kaiser-walnut-creek-high-school-volunteer	Walnut Creek, CA (1425 South Main St)	point	Walnut Creek, CA	city	place:city	
 kane-county-forest-preserve-volunteer-workdays	Kane County, IL (offices in Geneva)	point	Kane County, IL	county	county	
 kane-county-youth-services	Kane, DeKalb and Kendall Counties (Elgin area), IL	multi				several places before the state
 kansas-4h-discovery-days-k-state	Manhattan, KS	point	Manhattan, KS	city	place:city	
@@ -1779,6 +1791,7 @@ occ-sailing-youth-leadership-program	Newport Beach, CA	point	Newport Beach, CA	c
 ocean-institute-counselor-in-training	Dana Point, CA	point	Dana Point, CA	city	place:city	
 ocean-institute-stan-cummings-scholars-internship	Dana Point, CA	point	Dana Point, CA	city	place:city	
 ocean-institute-volunteer-docents	Dana Point, CA	point	Dana Point, CA	city	place:city	
+oconnor-hospital-volunteer	San Jose, CA (2105 Forest Ave)	point	San Jose, CA	city	place:city	
 ocsd-explorer-program	Orange County, CA	point	Orange County, CA	county	county	
 ocsd-teen-academy	Orange County, CA	point	Orange County, CA	county	county	
 ocwdb-ready-set-oc-young-adult	Orange County, CA	point	Orange County, CA	county	county	
@@ -2012,6 +2025,7 @@ redrock-job-corps-center	Lopez, PA (campus with dorms)	point	Lopez, PA	manual	Ce
 redwood-city-leaders-in-training	Redwood City, CA	point	Redwood City, CA	city	place:city	
 regeneron-isef	Los Angeles, CA (May 2027)	point	Los Angeles, CA	city	place:city	
 regeneron-sts	Virtual submission	online				
+regional-medical-center-san-jose-junior-volunteer	San Jose, CA	point	San Jose, CA	city	place:city	
 reno-parks-junior-lifeguards	Reno, NV	point	Reno, NV	city	place:city	
 reno-parks-lifeguard-certification-class	Reno, NV	point	Reno, NV	city	place:city	
 reno-parks-recreation-youth-volunteers	Reno, NV	point	Reno, NV	city	place:city	
@@ -2323,6 +2337,7 @@ st-louis-washu-pre-college-summer-scholars	St. Louis, MO	point	St. Louis, MO	cit
 st-louis-washu-young-scientist-summer-focus	St. Louis, MO	point	St. Louis, MO	city	place:city	
 st-louis-zoo-alive-teen-volunteers	St. Louis, MO	point	St. Louis, MO	city	place:city	
 st-louis-zoo-zooteens-summer-volunteers	St. Louis, MO	point	St. Louis, MO	city	place:city	
+st-louise-regional-hospital-volunteer	Gilroy, CA	point	Gilroy, CA	city	place:city	
 st-lukes-boise-junior-volunteers	Boise, ID	point	Boise, ID	city	place:city	override: The Gazetteer lists Boise as Boise City
 st-rose-hospital-shine-student-volunteers	Hayward, CA	point	Hayward, CA	city	place:city	
 stanford-aimi-summer-research-internship	Palo Alto, CA	point	Palo Alto, CA	city	place:city	
@@ -2350,6 +2365,10 @@ surrey-yep-youth-engagement-proposal	Surrey, BC	point	Surrey, BC	manual	Canadian
 surrey-youth-event-squad	Surrey, BC	point	Surrey, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JAZBU, https://geogratis.gc.ca/services/geoname/en/geonames/JAZBU	
 surrey-youth-stewardship-squad	Surrey, BC	point	Surrey, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JAZBU, https://geogratis.gc.ca/services/geoname/en/geonames/JAZBU	
 sussex-county-nj-library-teen-summer-reading-volunteers	Sussex County, NJ	point	Sussex County, NJ	county	county	
+sutter-eden-medical-center-volunteer	Castro Valley, CA (20103 Lake Chabot Road)	point	Castro Valley, CA	city	place:CDP	
+sutter-mills-peninsula-youth-volunteer	Burlingame, CA (1501 Trousdale Drive) and San Mateo, CA (100 South San Mateo Drive)	multi				second place with a state code
+sutter-pamf-mountain-view-sunnyvale-student-volunteer	Mountain View, CA (701 East El Camino Real) and Sunnyvale, CA (301 Old San Francisco Road)	multi				second place with a state code
+sutter-pamf-palo-alto-student-volunteer	Palo Alto, CA (795 El Camino Real)	point	Palo Alto, CA	city	place:city	
 svcte-silicon-valley-career-technical-education	San Jose, CA (760 Hillsdale Ave)	point	San Jose, CA	city	place:city	
 tacoma-pierce-county-library-teen-councils	Tacoma and Pierce County, WA	point	Tacoma, WA	city	place:city	override: Pierce County contains Tacoma; point placed at Tacoma
 tacoma-pierce-county-library-teen-volunteer-league	Tacoma and Pierce County, WA	point	Tacoma, WA	city	place:city	override: Pierce County contains Tacoma; point placed at Tacoma
@@ -2602,6 +2621,8 @@ wdsra-teen-volunteers-western-dupage	Wheaton and Naperville area, DuPage County,
 wellstar-cobb-medical-center-volunteen	Austell, GA	point	Austell, GA	city	place:city	
 wellstar-kennestone-volunteen	Marietta, GA	point	Marietta, GA	city	place:city	
 wellstar-north-fulton-volunteens	Roswell, GA	point	Roswell, GA	city	place:city	
+west-sac-lifeguard-swim-instructor	West Sacramento, CA	point	West Sacramento, CA	city	place:city	
+west-sac-recreation-leader	West Sacramento, CA	point	West Sacramento, CA	city	place:city	
 west-sac-teen-heroes	West Sacramento, CA	point	West Sacramento, CA	city	place:city	
 west-valley-college-concurrent-enrollment	Saratoga, CA	point	Saratoga, CA	city	place:city	
 wharton-global-high-school-investment-competition	Online	online				
@@ -2619,6 +2640,7 @@ wichita-ymca-job-prep-teen-summer-jobs	Wichita and Newton, KS	multi				several p
 wichita-youth-employment-project-yep	Wichita, KS	point	Wichita, KS	city	place:city	
 wikipedia-editing	Virtual	online				
 wilmette-library-teen-volunteers	Wilmette, IL	point	Wilmette, IL	city	place:village	
+winters-seasonal-lifeguard	Winters, CA	point	Winters, CA	city	place:city	
 wisconsin-4h-agriculture-ambassadors	Wisconsin (statewide)	statewide	WI			
 wisconsin-4h-summer-academy-uw-madison	Madison, WI (UW-Madison campus)	point	Madison, WI	city	place:city	
 wisconsin-badger-boys-state	Eau Claire, WI (UW-Eau Claire)	point	Eau Claire, WI	city	place:city	
@@ -2646,10 +2668,18 @@ xavier-university-steam-xu-research-immersion	Cincinnati, OH	point	Cincinnati, O
 ycoe-work-based-learning-b-unbound	Woodland, CA (Yolo County)	point	Woodland, CA	city	place:city	
 yellowstone-national-park-youth-conservation-corps	Yellowstone National Park	point	Yellowstone National Park, WY	city	place:CDP	override: Parks are not Gazetteer places; park headquarters is at Mammoth Hot Springs, WY (nps.gov/yell). Mammoth CDP in WY is Mammoth Hot Springs
 yep-youth-employment-partnership	Oakland, CA (2300 International Blvd)	point	Oakland, CA	city	place:city	
+ymca-east-bay-camp-loma-mar-camp-assistant	Loma Mar, CA (YMCA Camp Loma Mar, 9900 Pescadero Creek Road)	point	Loma Mar, CA	city	place:CDP	
+ymca-east-bay-camp-loma-mar-leaders-in-training	Loma Mar, CA (YMCA Camp Loma Mar, 9900 Pescadero Creek Road)	point	Loma Mar, CA	city	place:CDP	
 ymca-metro-atlanta-teen-leaders-club	Metro Atlanta, GA	point	Atlanta, GA	city	place:city	
 ymca-orange-county-volunteer	Fullerton, Huntington Beach, Newport Beach, Laguna Niguel, Mission Viejo (YMCA branches), CA	multi				list of places before the state
 ymca-san-francisco-workforce-development	San Francisco, CA	point	San Francisco, CA	manual	Census Gazetteer ZCTA 94102 (San Francisco, CA) internal point	override: The Gazetteer place point (37.7272, -123.0322) is about 30 miles out in the Pacific because the city limits include the Farallon Islands, so it falls outside the state outline; ZIP code area 94102 (Civic Center) centroid from the Census Gazetteer ZCTA file is used instead
+ymca-sf-camp-jones-gulch-lit-cit	La Honda, CA (YMCA Camp Jones Gulch, 11000 Pescadero Road)	point	La Honda, CA	city	place:CDP	
+ymca-sf-teen-volunteer	San Francisco, CA (and other YMCA of Greater San Francisco branches)	point	San Francisco, CA	manual	Census Gazetteer ZCTA 94102 (San Francisco, CA) internal point	override: The Gazetteer place point (37.7272, -123.0322) is about 30 miles out in the Pacific because the city limits include the Farallon Islands, so it falls outside the state outline; ZIP code area 94102 (Civic Center) centroid from the Census Gazetteer ZCTA file is used instead
+ymca-sf-youth-empowerment-fund	San Francisco, CA (Urban Services YMCA, 1530 Buchanan St.)	point	San Francisco, CA	manual	Census Gazetteer ZCTA 94102 (San Francisco, CA) internal point	override: The Gazetteer place point (37.7272, -123.0322) is about 30 miles out in the Pacific because the city limits include the Farallon Islands, so it falls outside the state outline; ZIP code area 94102 (Civic Center) centroid from the Census Gazetteer ZCTA file is used instead
 ymca-silicon-valley-camp-campbell-cabin-leader	Boulder Creek, CA (Camp Campbell)	point	Boulder Creek, CA	city	place:CDP	
+ymca-silicon-valley-mt-madonna-high-school-volunteer	Morgan Hill, CA (171 W Edmundson Ave)	point	Morgan Hill, CA	city	place:city	
+ymca-silicon-valley-teen-youth-councils	Mountain View, CA (El Camino YMCA) and Morgan Hill, CA (Centennial Recreation Center)	multi				second place with a state code
+ymca-superior-california-bear-valley-cit	Sacramento, CA (overnight camp at Bear Valley YMCA Camp, near Emigrant Gap in the High Sierra)	point	Sacramento, CA	city	place:city	
 ymca-triangle-leaders-club	Chapel Hill and the Triangle, NC	point	Chapel Hill, NC	city	place:town	override: The Triangle is the region around Chapel Hill; point placed at Chapel Hill
 ymca-triangle-lightner-y-achievers	The Triangle, NC	multi				override: The Triangle is a three city region, not one place (the name also matches an unrelated township)
 ymca-youth-and-government-ca	California (ends at Sacramento)	statewide	CA			
