@@ -92,7 +92,9 @@ test("data: all real programs load", () => {
 
 test("lib.js invariants hold on " + DRAWS + " random filter states x 5 dates", () => {
   // CPU time, not wall time: on a loaded machine (other jobs, parallel test files) the wall clock passed 10 s while
-  // this file did no more work (2026-10-16). CPU time still catches an accidentally quadratic matches().
+  // this file did no more work (2026-10-16). The work grows with the number of programs, and the 10 s set on 2026-10-09
+  // was reached on a Mac even run alone (10.5 s of CPU on 2026-10-17), so the budget is 30 s: an accidentally quadratic
+  // matches() over every program would still blow far past it.
   const started = process.cpuUsage();
   let draw = 0, now = NOWS[0];
   try {
@@ -164,7 +166,7 @@ test("lib.js invariants hold on " + DRAWS + " random filter states x 5 dates", (
   }
   const used = process.cpuUsage(started);
   const ms = Math.round((used.user + used.system) / 1000);
-  assert.ok(ms < 10000, "used " + ms + " ms of CPU, limit is 10000 (seed " + SEED + ")");
+  assert.ok(ms < 30000, "used " + ms + " ms of CPU, limit is 30000 (seed " + SEED + ")");
 });
 
 test("effStatus never leaves a program open past a deadline, even if the data says so", () => {

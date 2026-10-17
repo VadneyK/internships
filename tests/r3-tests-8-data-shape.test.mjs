@@ -80,6 +80,14 @@ for (const f of FILES) {
 }
 
 test("every KNOWN exception still matches something (no stale entries)", () => {
+  // Walk every file here instead of reading the counts the tests above left behind, so this test also passes when it
+  // runs alone (--test-name-pattern) or first (2026-10-17: it failed alone with every entry stale).
+  for (const k of KNOWN_RE) k.hits = 0;
+  for (const f of FILES) {
+    const out = [];
+    walk(f, JSON.parse(fs.readFileSync(path.join(ROOT, "data", f + ".json"), "utf8")), "$", out);
+    for (const [rule, at] of out) isKnown(f, rule, at.slice(f.length + 1).split(" ")[0]);
+  }
   const stale = KNOWN_RE.filter((k) => k.hits === 0).map((k) => k.file + " " + k.rule + " " + k.path);
   assert.deepEqual(stale, []);
 });
