@@ -35,7 +35,8 @@ const PAGES = {
   "calendar.html": { allowed: ["calendar.json", "entries-cal.json"], ceiling: 150000 },
   // 2026-10-15: the Map page reads the map projection and the city points (754,977 bytes). PENDING PERSON APPROVAL, as above.
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) map.html limit 760000 to 763100. PENDING PERSON APPROVAL.
-  "map.html": { allowed: ["entries-map.json", "map.json"], ceiling: 763100 },
+  // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. map.html limit 763100 to 766100.
+  "map.html": { allowed: ["entries-map.json", "map.json"], ceiling: 766100 },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. insights.html ceiling 697700 to 716100.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. insights.html limit 716100 to 736500.
   // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. insights.html limit 736500 to 748900.
