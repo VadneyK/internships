@@ -750,6 +750,21 @@ details + #hClose { margin-top: 1.5rem; }
 .mapbox text { fill: var(--ink-2); stroke: var(--surface); paint-order: stroke; font-weight: 700; pointer-events: none; }
 .mapbox .bcl { stroke: none; }
 .mapbox .mlabel { fill: var(--ink); font-weight: 800; }
+/* street map (map-gl.js): the box takes its height first, the drawn map waits inside it, the street map covers it when ready */
+.mapbox.gl { position: relative; height: clamp(20rem, min(60vh, 115vw), 40rem); }
+.mapbox.gl > svg { height: 100%; aspect-ratio: auto; }
+/* transparent, not hidden: MapLibre does not draw (or finish loading) in a box the browser counts as hidden */
+.mapbox .mgl { position: absolute; inset: 0; opacity: 0; pointer-events: none; }
+.mapbox.gl-on .mgl { opacity: 1; pointer-events: auto; }
+.mapbox.gl-on > svg { display: none; }
+.mapbox .maplibregl-ctrl-group { border: 2px solid var(--edge); border-radius: 8px; box-shadow: var(--shadow-sm); background: var(--surface); }
+.mapbox .maplibregl-ctrl-group button { width: 2.75rem; height: 2.75rem; }
+.mapbox .maplibregl-ctrl-group button + button { border-top: 1px solid var(--edge); }
+.mapbox .maplibregl-ctrl-attrib { font: 12px/1.4 var(--body); background: color-mix(in srgb, var(--surface) 85%, transparent); }
+.mapbox .maplibregl-ctrl-attrib a { color: var(--ink); }
+.mapbox .maplibregl-cooperative-gesture-screen { font: 600 1.05rem/1.4 var(--body); }
+:root[data-theme="dark"] .mapbox .maplibregl-ctrl button .maplibregl-ctrl-icon { filter: invert(1); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .mapbox .maplibregl-ctrl button .maplibregl-ctrl-icon { filter: invert(1); } }
 .mpanel-top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem; }
 .mlist { list-style: none; padding: 0; margin: .6rem 0 0; display: grid; gap: .6rem; overflow-wrap: anywhere; }
 .mstate { padding: .2rem 1rem; margin-top: .6rem; box-shadow: none; }
