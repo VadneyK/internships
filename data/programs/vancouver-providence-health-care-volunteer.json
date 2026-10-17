@@ -1,0 +1,38 @@
+{
+  "id": "vancouver-providence-health-care-volunteer",
+  "name": "Providence Health Care Volunteer Program",
+  "org": "Providence Health Care",
+  "regions": [
+    "vancouver"
+  ],
+  "city": "Vancouver, BC",
+  "type": "volunteer",
+  "fields": [
+    "health"
+  ],
+  "what_you_do": "Help at hospitals, care homes and a hospice in Vancouver. You might garden, run games and events, visit with people, help with pet visits, show people the way or work in the gift shop.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Age 16 or older for long-term care sites; 18 or older for acute care (hospitals). You must complete a free criminal record check and get a free yearly flu shot or wear a mask.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer. Volunteers can ask for a reference after 30 hours at long-term care sites.",
+  "season": "year-round",
+  "duration": "1 to 3 hours a week for at least 4 or 6 months in a row, depending on the program",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline. Each site takes online applications; if no one contacts you in 6 to 8 weeks, apply again.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Pick a site on the volunteer page (for example Holy Family Hospital, Mount Saint Joseph long-term care or a St. Vincent's site) and fill out its online form. List references like teachers or coaches. If chosen, you will be called for an interview.",
+  "needs_work_permit": null,
+  "url": "https://www.providencehealthcare.org/en/get-involved/volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.providencehealthcare.org/en/get-involved/volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "At 16 or 17 you can only volunteer at the long-term care sites. There is no shadowing or direct patient care. Most shifts are weekdays during work or school hours. The FAQ also says Public Health requires two COVID-19 shots for volunteers."
+}
