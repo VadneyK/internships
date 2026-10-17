@@ -1,8 +1,8 @@
 {
   "grades": null,
-  "apply_url": "https://www.stmarysfb.org/volunteer",
+  "apply_url": "https://stmarysfb.org/volunteer",
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-10-16",
   "deadline_iso": null,
   "id": "phoenix-st-marys-food-bank-volunteer",
   "name": "St. Mary's Food Bank Volunteering",
@@ -23,7 +23,7 @@
   "paid_type": "unpaid",
   "pay_detail": "Unpaid volunteer role",
   "season": "year-round",
-  "duration": "Usually 2 to 3 hours at the Phoenix and Surprise sites. Mobile distribution shifts run 3 to 5 hours.",
+  "duration": "Usually 2 to 3 hours at the Phoenix and Surprise sites. Food box packing shifts are 2 hours. Mobile distribution shifts run 3 to 5 hours.",
   "status": "year-round",
   "deadline_text": "Sign up any time.",
   "deadline_confidence": "rolling",
@@ -33,6 +33,7 @@
   "priority": 2,
   "notes": "Teens 12 to 15 must come with an adult. Court-ordered volunteers should call 602-343-3135.",
   "sources_fetched": [
-    "https://www.stmarysfoodbank.org/get-involved/volunteer/"
+    "https://www.stmarysfoodbank.org/get-involved/volunteer/",
+    "https://stmarysfb.org/volunteer"
   ]
 }
