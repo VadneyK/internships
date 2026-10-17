@@ -65864,6 +65864,46 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "north-vancouver-vch-north-shore-volunteer",
+  "name": "Vancouver Coastal Health North Shore Volunteer Program",
+  "org": "Vancouver Coastal Health (VCH)",
+  "regions": [
+   "vancouver"
+  ],
+  "city": "North Vancouver, BC",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Help at Lions Gate Hospital, health clinics, care homes and community programs. You might work at the front desk, show people the way, visit with patients, help a clinic or help at events.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "The page says its volunteers are over 16 years old. You need to be grown up, on time and good at talking with people.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer. Volunteers can get reference letters and recognition.",
+  "season": "year-round",
+  "duration": "2 to 3 hours a week for at least 6 months",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline. Apply online any time.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill in the North Shore form online. It takes 4 to 8 weeks. VCH runs a record check. Then you have an interview, reference checks and training.",
+  "needs_work_permit": null,
+  "url": "https://www.vch.ca/en/volunteer",
+  "apply_url": "https://app.betterimpact.com/PublicOrganization/69768012-fac7-4e6d-a9ed-10ec58e2f7f1/1",
+  "sources_fetched": [
+   "https://www.vch.ca/en/volunteer",
+   "https://app.betterimpact.com/PublicOrganization/69768012-fac7-4e6d-a9ed-10ec58e2f7f1/1"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "North Shore Volunteer Resources: (604) 984-5929, nsvolunteer@vch.ca. VCH's Vancouver program (VGH, UBC Hospital, G.F. Strong) does not state a minimum age on its pages, so ask vanvolunteer@vch.ca before applying there.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
   "id": "northwestern-ctd-civic-leadership-institute",
   "grades": "Grades 9 to 12",
   "apply_url": "https://my.ctd.northwestern.edu/",
@@ -79875,6 +79915,84 @@
   "verified_on_label": "Oct 10, 2026"
  },
  {
+  "id": "portland-providence-portland-medical-center-volunteer",
+  "name": "Providence Portland Medical Center Volunteers",
+  "org": "Providence Portland Medical Center",
+  "regions": [
+   "oregon"
+  ],
+  "city": "Portland, OR",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Help at Providence Portland. You might greet and guide visitors or help a hospital team. You help make the stay better for patients.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Applicants must be at least 16 years old.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer.",
+  "season": "year-round",
+  "duration": "At least 6 months in a row, usually 2 to 4 hours a week",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline is posted. Apply any time; staff match applicants to open spots.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use the Apply to Volunteer link. Staff look at your times and interests. Then they contact you. If you get in, the next steps take 3 to 4 weeks. You get a background check, a health check and an in-person class.",
+  "needs_work_permit": false,
+  "url": "https://www.providence.org/locations/or/portland-medical-center/volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.providence.org/locations/or/portland-medical-center/volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Volunteer Services phone: 503-215-5002. The page does not list teen-only roles, so ask which spots take 16 and 17 year olds.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "portland-providence-st-vincent-volunteer",
+  "name": "Providence St. Vincent Medical Center Volunteers",
+  "org": "Providence St. Vincent Medical Center",
+  "regions": [
+   "oregon"
+  ],
+  "city": "Portland, OR",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Help at Providence St. Vincent. You might greet and guide visitors or help a hospital team. You help make the stay better for patients.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Applicants must be at least 16 years old.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer.",
+  "season": "year-round",
+  "duration": "At least 6 months in a row, usually 2 to 4 hours a week",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline is posted. Apply any time; staff match applicants to open spots.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use the Apply to Volunteer link. Staff look at your times and interests. Then they contact you. If you get in, the next steps take 3 to 4 weeks. You get a background check, a health check and an in-person class.",
+  "needs_work_permit": false,
+  "url": "https://www.providence.org/locations/or/st-vincent-medical-center/volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.providence.org/locations/or/st-vincent-medical-center/volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Volunteer Services phone: 503-216-2159. The page does not list teen-only roles, so ask which spots take 16 and 17 year olds.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
   "id": "portland-youth-conservation-crew",
   "grades": null,
   "opens_iso": null,
@@ -87996,6 +88114,46 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "seattle-art-museum-teen-arts-group",
+  "name": "Teen Arts Group (TAG)",
+  "org": "Seattle Art Museum (SAM)",
+  "regions": [
+   "seattle"
+  ],
+  "city": "Seattle, WA",
+  "type": "leadership",
+  "fields": [
+   "arts-media"
+  ],
+  "what_you_do": "Learn how an art museum works, from planning shows to caring for art. Lead tours, post on social media, plan Teen Night Out and other events, and make your own art.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "High school-aged youth who care about leadership, community and art. The page does not list other rules.",
+  "paid_type": "mixed",
+  "pay_detail": "Members receive community-service learning credits or a stipend for taking part. The page does not give the stipend amount.",
+  "season": "school-year",
+  "duration": "Thursday evenings, October to May",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The page says the application deadline is typically in May. No 2027 date is posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply through the TAG page when the application opens in spring. The process includes a virtual interview.",
+  "needs_work_permit": null,
+  "url": "https://www.seattleartmuseum.org/whats-on/programs/teen-arts-group",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.seattleartmuseum.org/whats-on/programs/teen-arts-group",
+   "https://www.seattleartmuseum.org/whats-on/audiences/for-teens"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "The page gives only a typical month (May), so watch the page in spring. Questions: teenprograms@seattleartmuseum.org. SAM's other internships are for college students and early-career adults, not high schoolers. If you take the stipend, ask whether you need Washington parent and school papers for a minor.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
   "id": "seattle-bgc-king-county-youthforce",
   "name": "YouthForce Teen Jobs",
   "org": "Boys & Girls Clubs of King County",
@@ -88371,6 +88529,46 @@
   "verified_on_label": "Oct 11, 2026"
  },
  {
+  "id": "seattle-harborview-volunteer-services",
+  "name": "Harborview Volunteer Services",
+  "org": "Harborview Medical Center (UW Medicine)",
+  "regions": [
+   "seattle"
+  ],
+  "city": "Seattle, WA",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Teens 16 and 17 help at the front desk and in the room where patients wait to go home. Adults 18 and up can also help in patient units and clinics.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be 16 or older to help at the front desk. You must be 18 or older for patient units and clinics. If you are under 18, a parent must sign. You can only work Monday to Friday, 8 am to 5 pm.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer.",
+  "season": "year-round",
+  "duration": "Four hours a week for six months in a row. No summer-only spots in the main program.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 volunteer application is closed. The page gives no reopening date; you can sign up to be told when it reopens.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Apply online when it reopens and pick an in-person orientation date. Send proof of MMR, chickenpox and Tdap shots (and a flu shot October to March). Finish about three hours of online training, then pass a Washington State background check.",
+  "needs_work_permit": false,
+  "url": "https://www.uwmedicine.org/volunteering/harborview",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.uwmedicine.org/volunteering/harborview",
+   "https://www.uwmedicine.org/volunteering/volunteer-faq-harborview"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Applications with missing shot records are denied, with no exemptions. It can take a few months to hear back. The volunteer office does not set up doctor shadowing. Questions: hmcvol@uw.edu.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
   "id": "seattle-henry-teen-art-collective",
   "name": "Henry Teen Art Collective",
   "org": "Henry Art Gallery (University of Washington)",
@@ -88450,6 +88648,85 @@
   "priority": 2,
   "notes": "Very small group (6 teens). Based at MOHAI with some field trips. Work permit rule not stated.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "seattle-mopop-youth-advisory-board",
+  "name": "MOPOP Youth Advisory Board (YAB)",
+  "org": "Museum of Pop Culture (MOPOP)",
+  "regions": [
+   "seattle"
+  ],
+  "city": "Seattle, WA",
+  "type": "leadership",
+  "fields": [
+   "arts-media"
+  ],
+  "what_you_do": "Help shape the museum's teen programs. Work with local musicians, artists and curators, screen Sound Off! music showcase entries, help run events like the Science Fiction + Fantasy Short Film Festival, and make social media posts.",
+  "min_age": 15,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Students ages 15 to 18. You may serve for up to three years.",
+  "paid_type": "not-stated",
+  "pay_detail": "The page does not say if members are paid or if there is a cost.",
+  "season": "school-year",
+  "duration": "Meets every other week during the school year; up to three years",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Applications are closed. The page gives no date for the next call.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Watch the YAB page for the next application. Questions go to YAB@MOPOP.org.",
+  "needs_work_permit": null,
+  "url": "https://www.mopop.org/programs/youth-advisory-board",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.mopop.org/programs/youth-advisory-board"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "The page does not say when the next call opens or whether members are paid. Email YAB@MOPOP.org to ask.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "seattle-mountaineers-counselor-in-training",
+  "name": "Seattle Counselor In Training (CIT) Program",
+  "org": "The Mountaineers",
+  "regions": [
+   "seattle"
+  ],
+  "city": "Seattle, WA",
+  "type": "volunteer",
+  "fields": [
+   "sports",
+   "education"
+  ],
+  "what_you_do": "Volunteer at a summer day camp. All-Time Belayers belay and coach campers on climbing walls. Junior Counselors work with a mentor counselor, help keep a camp group safe and co-lead games and activities.",
+  "min_age": 13,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "Teens and camp grads ages 13 to 17. All-Time Belayer: ages 13 to 17. Junior Counselor: ages 15 to 17. You do not need camp or climbing experience; training is given.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer. Junior Counselors can join a Camp Alumni Adventure trip at a highly discounted rate.",
+  "season": "summer",
+  "duration": "All-Time Belayer: 9 am to noon, at least 6 days. Junior Counselor: 9 am to 4 pm, at least 2 weeks.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Applications for summer 2027 open in March 2027 (no exact day posted). Summer 2026 applications are closed.",
+  "deadline_iso": null,
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply on the CIT page when applications open in March 2027. Questions: summercamp@mountaineers.org.",
+  "needs_work_permit": false,
+  "url": "https://www.mountaineers.org/youth/programs-by-location/seattle/seattle-camps/cit-program",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.mountaineers.org/youth/programs-by-location/seattle/seattle-camps/cit-program"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "A nonprofit summer camp, not Seattle Parks. Pick the weeks that fit your schedule. Unpaid volunteer role; Washington L&I says its minor work rules apply to employees, not volunteers.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "seattle-museum-of-flight-youth-volunteer",
@@ -89421,6 +89698,45 @@
   "priority": 3,
   "notes": "Costs real money and registration is first come, first served. Not a job or internship.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "seattle-uwmc-summer-teen-volunteer-program",
+  "name": "UW Medical Center Summer Teen Program",
+  "org": "UW Medical Center, Montlake (UW Medicine)",
+  "regions": [
+   "seattle"
+  ],
+  "city": "Seattle, WA",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "A summer-only volunteer program for high school students. You serve the hospital community and see health care careers up close. New UWMC volunteers start as patient escorts who greet and guide patients and visitors.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "Community high school students. The page does not give an age range.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer.",
+  "season": "summer",
+  "duration": "Summer only (the page does not give the number of weeks)",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "2026 applications are closed. For the 2027 program, the page says to check back in early spring (March) 2027.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Check the UW Medicine volunteering page in March 2027 for the application. For the waitlist, email uwmcvol@uw.edu.",
+  "needs_work_permit": false,
+  "url": "https://www.uwmedicine.org/volunteering",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.uwmedicine.org/volunteering"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "All UW Medicine volunteers must show required shots and pass a background check. The program does not offer job shadowing or internships. The adult program needs age 18 and a high school diploma, so the summer program is the teen route.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "grades": "Grades 11 and 12 for full-year classes. Summer semester: students entering grades 9 to 12.",
@@ -94331,6 +94647,48 @@
   "priority": 2,
   "notes": "The page says teens attend weekly sessions for up to 20 service hours. The page does not state an age range or year. Work permit rule not stated.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "tacoma-point-defiance-zoo-guides",
+  "name": "Zoo Guides (Youth Volunteers)",
+  "org": "Point Defiance Zoo & Aquarium (Metro Parks Tacoma)",
+  "regions": [
+   "seattle"
+  ],
+  "city": "Tacoma, WA",
+  "type": "volunteer",
+  "fields": [
+   "science",
+   "environment",
+   "education"
+  ],
+  "what_you_do": "Talk with zoo guests about the animals and about conservation and the environment. Lead hands-on activities in exhibit areas. After a summer season you can help at special events. Youth volunteers do not do animal care.",
+  "min_age": 14,
+  "max_age": 18,
+  "grades": "Grades 9 to 12 (seniors graduating in spring can still apply)",
+  "who_can_apply": "Ages 14 to 18 and in grades 9 to 12. You should be excited to talk with visitors about nature and animals.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer.",
+  "season": "summer",
+  "duration": "9 required trainings March to June, then one 6-hour shift a week for 10 weeks in summer",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Applications are closed now. The page says Zoo Guide applications open in December 2026 (no exact day posted). Interviews are in late February 2027.",
+  "deadline_iso": null,
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply on the youth volunteer page in December 2026. Large and small group interviews are held in late February; not everyone is interviewed. Join the waitlist form to get an email when applications open.",
+  "needs_work_permit": false,
+  "url": "https://www.pdza.org/connect/volunteer/youth/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.pdza.org/connect/volunteer/youth/",
+   "https://www.pdza.org/connect/volunteer/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 1,
+  "notes": "Most zoo volunteer roles ask for at least one year. Explore the Shore (ages 16 and up) and Spot the Swallows (14 and up with a parent if under 18) are other teen options on the volunteer page. Questions: volunteer@pdza.org or 253-404-3687.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "tacoma-public-schools-jobs-253",
@@ -101685,6 +102043,46 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "vancouver-bc-childrens-hospital-volunteer",
+  "name": "BC Children's and BC Women's Hospital Volunteer Program",
+  "org": "BC Children's Hospital and BC Women's Hospital + Health Centre (Volunteer Resources)",
+  "regions": [
+   "vancouver"
+  ],
+  "city": "Vancouver, BC",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Help kids and families at the hospital. You might show people the way, help with play, pool or pet visits, help in clinics or at events, or work in the gift shop, thrift shop or family library.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be 16 or older before you apply or go to an information session. Patient contact roles need age 18 or older. Child patient support roles need work or volunteer experience with children.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer.",
+  "season": "year-round",
+  "duration": "One year for every volunteer role",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Apply any time. Recruitment info goes out in late October or November for a January start, in March for a May start, and in July for a September start.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the online form. Staff will call you for an interview. If you get in, you do a record check, a reference check and training.",
+  "needs_work_permit": null,
+  "url": "https://www.bcchildrens.ca/about-us/volunteer",
+  "apply_url": "https://app.betterimpact.com/PublicOrganization/77a715dc-d284-4b7b-8590-6782245d8250/1",
+  "sources_fetched": [
+   "https://www.bcchildrens.ca/about-us/volunteer",
+   "https://app.betterimpact.com/PublicOrganization/77a715dc-d284-4b7b-8590-6782245d8250/1"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "The biggest need is Monday to Friday, 8 am to 4 pm; evening and weekend spots usually go to current volunteers. Intake can take several months. If you are not placed within 6 months, the application is closed and you may apply again. Contact: volunteer@cw.bc.ca.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
   "id": "vancouver-bcchr-mini-med-school",
   "name": "Mini Med School: Inside the Human Body (BC Children's Hospital Research Institute)",
   "org": "BC Children's Hospital Research Institute (BCCHR)",
@@ -101849,6 +102247,45 @@
   "priority": 3,
   "notes": "One day event, not a job. The Medical Hall of Fame page does not name the city, but the research institute page says the event is at 950 West 28th Avenue, Vancouver. This is in Canada, so British Columbia rules apply and this guide has not checked them. Grades come from the institute page only.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "vancouver-providence-health-care-volunteer",
+  "name": "Providence Health Care Volunteer Program",
+  "org": "Providence Health Care",
+  "regions": [
+   "vancouver"
+  ],
+  "city": "Vancouver, BC",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Help at hospitals, care homes and a hospice in Vancouver. You might garden, run games and events, visit with people, help with pet visits, show people the way or work in the gift shop.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Age 16 or older for long-term care sites; 18 or older for acute care (hospitals). You must complete a free criminal record check and get a free yearly flu shot or wear a mask.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer. Volunteers can ask for a reference after 30 hours at long-term care sites.",
+  "season": "year-round",
+  "duration": "1 to 3 hours a week for at least 4 or 6 months in a row, depending on the program",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline. Each site takes online applications; if no one contacts you in 6 to 8 weeks, apply again.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Pick a site on the volunteer page (for example Holy Family Hospital, Mount Saint Joseph long-term care or a St. Vincent's site) and fill out its online form. List references like teachers or coaches. If chosen, you will be called for an interview.",
+  "needs_work_permit": null,
+  "url": "https://www.providencehealthcare.org/en/get-involved/volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.providencehealthcare.org/en/get-involved/volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "At 16 or 17 you can only volunteer at the long-term care sites. There is no shadowing or direct patient care. Most shifts are weekdays during work or school hours. The FAQ also says Public Health requires two COVID-19 shots for volunteers.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "opens_iso": null,
@@ -102135,6 +102572,49 @@
   "priority": 3,
   "notes": "Only for Indigenous students (First Nations, Inuit, Metis). It is a camp, not a job. This is in Canada, so British Columbia rules apply and this guide has not checked them. The page still shows 2025 dates, so check the newest page before you plan. The application page lists the 2026 deadline of June 15, 2026.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "vancouver-vpd-cadet-program",
+  "name": "VPD Cadet Program",
+  "org": "Vancouver Police Department, funded by the Vancouver Police Foundation",
+  "regions": [
+   "vancouver"
+  ],
+  "city": "Vancouver, BC",
+  "type": "leadership",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "A free 28-week program for teen leaders. You learn teamwork, public speaking and fitness. You help the community, march in parades and go camping. You also see how police teams like the dog and boat units work.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Going into Grade 10, 11 or 12",
+  "who_can_apply": "Teens going into Grade 10, 11 or 12 who live or go to school in Vancouver. You must want to finish school and not miss a lot of it. You cannot have serious arrests, a record of trouble with police, or gang ties.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free. The Vancouver Police Foundation pays for all program materials and fees.",
+  "season": "school-year",
+  "duration": "28 weeks, September to May",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Applications are closed for the 2026/2027 school year. The VPD page says to check back in the spring. Last pattern: the call for the class starting September 2025 was posted April 25, 2025.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online with the Apply Now button on the VPD Cadet page when it reopens in spring 2027. Questions: cadets@vpd.ca.",
+  "needs_work_permit": null,
+  "url": "https://vpd.ca/join-us/vpd-cadet-program/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://vpd.ca/join-us/vpd-cadet-program/",
+   "https://www.vancouverpolicefoundation.org/impact/vpd-cadet-program/",
+   "https://www.vancouverpolicefoundation.org/2025/04/cadetclass12/",
+   "https://vancouver.ca/people-programs/youth-getting-involved.aspx"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 1,
+  "notes": "About 90 cadets a year. It is a leadership program, not police recruiting. The VPD Indigenous Cadet Program is a different summer job for ages 19 to 29. Unpaid, so BC child employment rules for paid work do not apply here.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "grades": "12 (apply in grade 11)",
