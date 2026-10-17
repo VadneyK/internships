@@ -1,5 +1,5 @@
 {
- "read": "2026-10-15",
+ "read": "2026-10-17",
  "cities": [
   {
    "key": "Chandler, AZ",
@@ -500,6 +500,7 @@
    "lon": -117.928,
    "precision": "city",
    "ids": [
+    "fullerton-parks-recreation-teen-volunteers",
     "fullerton-public-library-teen-volunteer",
     "fullerton-st-jude-medical-center-high-school-volunteer"
    ]
@@ -536,6 +537,8 @@
    "lon": -119.8589,
    "precision": "city",
    "ids": [
+    "goleta-parks-recreation-commission-youth-member",
+    "goleta-valley-library-teen-volunteers",
     "santa-barbara-civil-air-patrol-squadron-131-cadets"
    ]
   },
@@ -587,6 +590,7 @@
     "irvine-youth-service-corps-summer-high-school",
     "orange-county-langson-museum-young-curators",
     "pretend-city-volunteer-and-teen-programs",
+    "uc-sankofa-experience-rising-seniors",
     "uci-cosmos",
     "uci-its-prime-transportation-research-internship",
     "uci-medacademy",
@@ -731,7 +735,12 @@
    "lon": -118.4108,
    "precision": "city",
    "ids": [
+    "california-science-center-community-teen-interns",
+    "california-science-center-dive-team-interns",
+    "california-science-center-flight-team-interns",
+    "california-science-center-youth-volunteers",
     "cedars-sinai-teen-volunteer-program",
+    "chla-high-school-summer-volunteer",
     "getty-teen-gallery-guides",
     "hire-las-youth",
     "keck-medicine-usc-summer-youth-volunteer",
@@ -800,12 +809,15 @@
    "lon": -120.4704,
    "precision": "city",
    "ids": [
+    "cosmos-uc-merced",
     "merced-college-ccap-dual-enrollment",
     "merced-college-k12-concurrent-enrollment",
     "merced-county-office-of-education-empower",
     "merced-mercy-medical-center-volunteer",
     "merced-muhsd-dual-enrollment-merced-college",
-    "merced-skillrise-ch-high-school-internship"
+    "merced-skillrise-ch-high-school-internship",
+    "merced-youth-council",
+    "uc-merced-summer-session-high-school-discount"
    ]
   },
   {
@@ -1063,7 +1075,8 @@
    "precision": "city",
    "ids": [
     "cal-poly-pomona-next-gen-manufacturing-academy",
-    "pomona-valley-hospital-high-school-volunteer"
+    "pomona-valley-hospital-high-school-volunteer",
+    "pomona-youth-music-program-volunteer"
    ]
   },
   {
@@ -1265,7 +1278,8 @@
     "san-diego-reality-changers-college-town",
     "san-diego-sharp-memorial-mary-birch-volunteer",
     "san-diego-ucsd-health-volunteer",
-    "sdma-teen-council"
+    "sdma-teen-council",
+    "usd-cyber-ai-summer-program"
    ]
   },
   {
@@ -1425,6 +1439,8 @@
    "lon": -119.7137,
    "precision": "city",
    "ids": [
+    "cottage-health-junior-volunteers",
+    "santa-barbara-county-wioa-youth-career-services",
     "santa-barbara-humane-society-volunteers",
     "santa-barbara-museum-of-art-teaching-assistants",
     "santa-barbara-natural-history-museum-counselors-in-training",
