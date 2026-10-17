@@ -24,6 +24,11 @@ test("r11: gradeSpan reads grades as this school year's grades", () => {
     ["Entering grades 11 or 12 in fall 2027", [10, 11]], ["11th grade at time of application (rising seniors)", [11, 11]],
     ["Entering or current high school student", [9, 12]], ["Finished 8th grade", [8, 12]],
     ["Kindergarten through one year past high school (grade 13)", [1, 12]],
+    // 2026-10-16 review of #36, from real card text: "middle and high school" takes middle schoolers, "going into",
+    // "summer before" and "enter" are next year's grades, and a bare "(rising)" aside still counts.
+    ["Middle and high school students", [6, 12]], ["Going into senior year", [11, 11]], ["Summer before senior year", [11, 11]],
+    ["Typically enters the summer before 10th grade and stays through 12th grade", [9, 11]], ["9-12 (rising)", [8, 11]],
+    ["11-12 (rising, per GMU camps list)", [10, 11]], ["10th grade (rising juniors)", [10, 10]],
   ];
   for (const [t, want] of cases) assert.deepEqual(L.gradeSpan(t), { lo: want[0], hi: want[1] }, t);
   for (const t of ["", null, "Teen", "Not seniors", "Ages 13 to 15", "GPA 3.0 and grades 10 to 12", "High school and college students",
