@@ -24,7 +24,8 @@ export const TABLE = {
   // 2026-10-14 gaps wave: 89 cards for Alameda, Tri-Valley, Contra Costa and Orange County (2,608 programs) find.html limit 2383200 to 2467100.
   // 2026-10-14 gaps wave plus two Fremont cards read in a real browser (2,610 programs) find.html limit 2467100 to 2468900.
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) find.html limit 2468900 to 2496100. PENDING PERSON APPROVAL.
-  "find.html": { paths: ["data/entries-lite.json"], ceiling: 2496100, reason: "Find filters every program, so it needs the whole lite file" },
+  // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. find.html limit 2496100 to 2507300.
+  "find.html": { paths: ["data/entries-lite.json"], ceiling: 2507300, reason: "Find filters every program, so it needs the whole lite file" },
   // 2026-10-15: the Map page (754,977 bytes measured; about 151 KB gzipped). It counts every program by city, so it reads the map projection
   // (name, org and the keys the age, pay and open filters test) and the city points. PENDING PERSON APPROVAL for this weight on phones.
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) map.html limit 760000 to 763100. PENDING PERSON APPROVAL.
@@ -45,7 +46,8 @@ export const TABLE = {
   // 2026-10-14 gaps wave: 89 cards for Alameda, Tri-Valley, Contra Costa and Orange County (2,608 programs) insights.html limit 748900 to 776000.
   // 2026-10-14 gaps wave plus two Fremont cards read in a real browser (2,610 programs) insights.html limit 776000 to 776700.
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) insights.html limit 776700 to 785100. PENDING PERSON APPROVAL.
-  "insights.html": { paths: ["data/entries-stats.json"], ceiling: 785100, reason: "Numbers page counts every program, so it needs the stats projection (about 528 KB), the one page over the 200000 default" },
+  // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. insights.html limit 785100 to 788200.
+  "insights.html": { paths: ["data/entries-stats.json"], ceiling: 788200, reason: "Numbers page counts every program, so it needs the stats projection (about 528 KB), the one page over the 200000 default" },
   "languages.html": { paths: ["data/languages.json"], ceiling: 200000, reason: SMALL },
   "parents.html": { paths: ["data/parents.json"], ceiling: 200000, reason: SMALL },
   "paycheck.html": { paths: ["data/money.json"], ceiling: 200000, reason: SMALL },
