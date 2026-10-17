@@ -93,7 +93,7 @@ Status: **Fixed** means fixed in this branch with a test that locks it in. **Ope
 - axe `label-content-name-mismatch` fired at every width.
 - The seen text ran the count into the word ("Silicon Valley86", "Jan28"). The month chip name said "January" while the chip shows "Jan".
 - A voice control user saying "click Jan" did not match.
-- Fix: a space before the count on both chip kinds (in `find.js`, `calendar.js` and the build-time chips in `tools/build.py`). The month chip name now starts with the shown month ("Jan, 28 programs").
+- Fix: a space before the count on both chip kinds (in `find.js`, `calendar.js` and the build-time chips in `tools/build.py`). The month chip name now starts with the shown words and still says the full month, as `r3-teen-flow-6` asks ("Jan, 28 programs in January").
 - Test: `tests/r12-a11y-perf-2-label-in-name.test.mjs`, which also sweeps every built page for a labelled link or button whose seen words are not in its name.
 
 **F4. The parents page gave a stale permit finder count and the wrong choice to pick. Fixed.**

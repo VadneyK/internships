@@ -59,7 +59,7 @@
       document.querySelectorAll("#months .chip").forEach(function (b) {
         var m = +b.getAttribute("data-m"), n = rowsFor(m, place, age).length;
         b.setAttribute("aria-pressed", String(m === cur));
-        b.setAttribute("aria-label", SH[m - 1] + ", " + n + " program" + (n === 1 ? "" : "s"));
+        b.setAttribute("aria-label", SH[m - 1] + ", " + n + " program" + (n === 1 ? "" : "s") + " in " + MN[m - 1]);
         b.innerHTML = SH[m - 1] + ' <span class="n">' + n + "</span>";
       });
       var rows = rowsFor(cur, place, age);

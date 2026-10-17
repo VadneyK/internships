@@ -2,7 +2,7 @@
 // label-content-name-mismatch (WCAG 2.5.3, Label in Name) on the Programs area chips and the Calendar month chips: the visible
 // words were "Silicon Valley86" and "Jan28" (no space before the count), and the month name was "January", so a voice control
 // user who says "click Jan" or "click Silicon Valley 86" did not match. The chips now have a space before the count, and the month
-// chip name starts with the month as shown ("Jan, 28 programs").
+// chip name starts with the month as shown and ends with the full month ("Jan, 28 programs in January").
 // The rule: the words a person sees must appear, in order and together, inside the accessible name (axe's own check).
 // jsdom has no layout, so "seen" here is the text content of the element minus aria-hidden and .sr parts.
 // Run with: node --test tests/r12-a11y-perf-2-label-in-name.test.mjs
@@ -41,7 +41,7 @@ test("helper: the word check passes a name that holds the seen words in order an
   assert.equal(contained("Silicon Valley 86", "Silicon Valley 86 programs"), true);
   assert.equal(contained("Silicon Valley86", "Silicon Valley 86 programs"), false);
   assert.equal(contained("Jan28", "January, 28 programs"), false);
-  assert.equal(contained("Jan 28", "Jan, 28 programs"), true);
+  assert.equal(contained("Jan 28", "Jan, 28 programs in January"), true);
   assert.equal(contained("Details", "Details for Teen Corps, City of Oakland"), true);
 });
 
@@ -65,7 +65,7 @@ test("Calendar: every month chip shows the short month and a count, and its name
     const name = b.getAttribute("aria-label"), seen = seenText(b);
     assert.match(seen, /^[A-Z][a-z]{2} \d+$/, "seen text is like 'Jan 28': " + seen);
     assert.ok(contained(seen, name), seen + " | " + name);
-    assert.match(name, /^[A-Z][a-z]{2}, \d+ programs?$/, name);
+    assert.match(name, /^[A-Z][a-z]{2}, \d+ programs? in [A-Z][a-z]+$/, name);
     assert.equal(words(name)[0], words(seen)[0], "month " + (i + 1));
   });
   const built = fs.readFileSync(new URL("calendar.html", ROOT), "utf8");
