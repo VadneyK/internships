@@ -33,21 +33,21 @@
     });
   }
 
-  /* phone menu: one button opens the eight links. The links stay in the page for everyone else. */
+  /* phone menu: one button, before the eight links so Tab reaches them next (2026-10-16). The links stay in the page. */
   (function () {
     var top = document.querySelector("header.top"), nav = top && top.querySelector(".nav");
     if (!nav || !btn) return;
     if (!nav.id) nav.id = "mainNav";
     var m = document.createElement("button"); m.type = "button"; m.className = "menu-btn"; m.textContent = "Menu";
     m.setAttribute("aria-expanded", "false"); m.setAttribute("aria-controls", nav.id);
-    btn.parentNode.insertBefore(m, btn);
+    nav.parentNode.insertBefore(m, nav);
     top.classList.add("menu-js");
     function setOpen(on) { top.classList.toggle("open", on); m.setAttribute("aria-expanded", String(on)); }
     m.addEventListener("click", function () { setOpen(!top.classList.contains("open")); });
     top.addEventListener("keydown", function (e) { if (e.key === "Escape" && top.classList.contains("open")) { setOpen(false); m.focus(); } });
     /* a chosen link (an in-page hash link or a page link) closes the menu */
     nav.addEventListener("click", function (e) { var a = e.target && e.target.closest ? e.target.closest("a") : null; if (a) setOpen(false); });
-    /* focus that moves outside the header (Tab past the last link, for example) closes the menu. Focus is not moved. */
+    /* focus that leaves the header (Tab past the last link) closes the menu. Focus is not moved. */
     document.addEventListener("focusin", function (e) { if (top.classList.contains("open") && !top.contains(e.target)) setOpen(false); });
   })();
 
