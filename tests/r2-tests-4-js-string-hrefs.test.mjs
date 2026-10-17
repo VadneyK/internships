@@ -23,6 +23,11 @@ const ALLOW_FILE = {
 const ALLOW_PREFIX = {
   "find.html#p-": "program cards get id=\"p-\" + the program id in find.js",
 };
+/* A fragment the page's own script reads as a parameter on load (page.html#name=value), not an anchor to an id.
+   It passes while that script still reads the literal "#name=". Each needs a reason. */
+const ALLOW_PARAM = {
+  "find.html#saved": "find.js reads location.hash #saved=id1,id2 on load and offers those programs (keep my list, docs/adr/0008)",
+};
 /* Fragments added to a link in a later string piece, so the first scan cannot see them. Each must still be in the source. */
 const EXTRA_LINKS = [
   { file: "jobs.js", href: "interview.html#availability", needle: '"#availability"', reason: "jobs.js adds the fragment after the query string" },
@@ -91,6 +96,10 @@ test("every #fragment on such a link is an id in the page html or built by the p
       if (!ALLOW_PREFIX[key]) { bad.push(x.file + " -> " + key + " (dynamic fragment not in allow-list)"); continue; }
       const src = scriptSource(x.page);
       if (!(src.includes('"' + x.frag + '"') || src.includes('id="' + x.frag))) bad.push(key + " allow-list reason no longer true: " + ALLOW_PREFIX[key]);
+      continue;
+    }
+    if (ALLOW_PARAM[x.page + "#" + x.frag]) {
+      if (!scriptSource(x.page).includes('"#' + x.frag + '="')) bad.push(x.page + "#" + x.frag + " allow-list reason no longer true: " + ALLOW_PARAM[x.page + "#" + x.frag]);
       continue;
     }
     if (!ids.has(x.frag)) bad.push(x.file + " -> " + x.page + "#" + x.frag);
