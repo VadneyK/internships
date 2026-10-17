@@ -1,0 +1,40 @@
+{
+  "id": "larpd-event-volunteers",
+  "name": "LARPD year-round event and park volunteers",
+  "org": "Livermore Area Recreation and Park District (LARPD)",
+  "regions": [
+    "east-bay",
+    "alameda"
+  ],
+  "city": "Livermore, CA",
+  "type": "volunteer",
+  "fields": [
+    "environment",
+    "social-impact"
+  ],
+  "what_you_do": "Help at park district events like Sycamore Scares, the Halloween Boo Bash and holiday events, or join Open Space and native garden work days and the Neighborhood Park Ambassador program.",
+  "min_age": 13,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Ages 13 and up, unless the event supervisor approves a younger volunteer ahead of time. Volunteers under 18 need a parent or guardian to sign the online Youth Volunteer Waiver.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": "One-time event shifts and recurring work days. The page does not set a minimum.",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "Sign up for each event or work day on its own. Upcoming listings include the Ho Ho Holiday Carnival (12/6) and Native Garden Work Days.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the General Volunteer Application with a personal email (school emails do not work). Then log in to MyImpactPage, open the Opportunities tab and sign up for shifts.",
+  "needs_work_permit": false,
+  "url": "https://www.larpd.org/volunteer",
+  "apply_url": "https://app.betterimpact.com/Application?OrganizationGuid=b0a92382-ab60-4275-b50b-7a8967eba786&ApplicationFormNumber=1",
+  "sources_fetched": [
+    "https://www.larpd.org/volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "This is the year-round list. The separate Summer Youth Volunteer Program (ages 13 to 17) has its own card. Phone 925-373-5700. Office: 4444 East Ave, Livermore."
+}

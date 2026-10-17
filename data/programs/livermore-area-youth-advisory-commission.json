@@ -1,7 +1,7 @@
 {
   "id": "livermore-area-youth-advisory-commission",
-  "name": "Livermore Area Youth Advisory Commission (LAYAC)",
-  "org": "City of Livermore",
+  "name": "Livermore Youth Council (LYC)",
+  "org": "City of Livermore (Livermore Public Library)",
   "regions": [
     "east-bay",
     "alameda"
@@ -9,31 +9,36 @@
   "city": "Livermore, CA",
   "type": "civic-government",
   "fields": [
-    "law-government"
+    "law-government",
+    "social-impact"
   ],
-  "what_you_do": "Youth members advise the City Council and the Livermore recreation district on what young people need. They also organize events that promote respect for diversity among Livermore youth.",
-  "min_age": 12,
-  "max_age": 20,
-  "grades": null,
-  "who_can_apply": "Youths ages 12 through 20, preferably attending Livermore schools. Youth members who attend Livermore schools do not have to live in the city (Livermore Municipal Code 2.51.010).",
-  "paid_type": "not-stated",
-  "pay_detail": "Advisory commission seat. No pay is stated in the code.",
-  "season": "year-round",
-  "duration": null,
-  "status": "unconfirmed",
+  "what_you_do": "Members speak for Livermore youth to the City Council, the park district (LARPD) and the school district (LVJUSD). They plan events, promote youth programs and community service, and review City Council agendas.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "7 to 12",
+  "who_can_apply": "Students in grades 7 to 12 who live in Livermore or go to a school in Livermore. The council has 20 members.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "school-year",
+  "duration": "A new term starts each school year. Members serve 2-year terms, then say if they want to keep serving. Meetings are the first Monday of each month at 7 p.m., plus subcommittee meetings and events.",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Application dates not found. The city teen page that would list them returned an access block to our reads.",
+  "deadline_text": "The 2026-27 application was due July 31, 2026 at 6 p.m., with interviews in August. 2027-28 dates are not posted yet. Expect a summer deadline again.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
-  "how_to_apply": "Not confirmed. Contact the City of Livermore to ask how to apply and when the next seats open.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the paper application. It asks three short questions: why you want to join, your civic or community activities, and anything else about you. A parent or guardian must sign. Turn it in at the Civic Center Library Information Desk or email it to njbrumley@livermoreca.gov. Selected applicants get an interview.",
   "needs_work_permit": false,
-  "url": "https://www.livermoreca.gov/our-community/teens-kids",
-  "apply_url": null,
+  "url": "https://library.livermoreca.gov/digital-library/teens/youth-council",
+  "apply_url": "https://library.livermoreca.gov/home/showpublisheddocument/14044/639172097558270000",
   "sources_fetched": [
-    "https://codepublishing.com/CA/Livermore/Municipal/Livermore02/Livermore0251.html"
+    "https://www.livermoreca.gov/our-community/teens-kids",
+    "https://library.livermoreca.gov/digital-library/teens/youth-council",
+    "https://library.livermoreca.gov/home/showpublisheddocument/14044/639172097558270000",
+    "https://library.livermoreca.gov/home/showpublisheddocument/11902/638624226361930000",
+    "https://library.livermoreca.gov/digital-library/teens/local-youth-training-and-engagement-programs"
   ],
-  "verified": "snippet-only",
-  "verified_on": "2026-10-07",
-  "priority": 3,
-  "notes": "Confirm first. The membership and duties come from Livermore Municipal Code Chapter 2.51, read on the code publisher's page. The city's own teen page (livermoreca.gov) returned HTTP 403 to both our fetch tools, so the application process, term, and dates are not confirmed. The municipal code gives 15 youth seats and 3 adult seats; the code does not say how seats are filled. Re-checked on 2026-10-09: the City teen page returned HTTP 403 again, so it could not be read and the card stays snippet-only."
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "This replaces the older Livermore Area Youth Advisory Commission (LAYAC) card. The city's youth page now calls the group the Livermore Youth Council and links to the library page. Three absences in one school year count as quitting. Members are picked through an application review and interview by adult liaisons and some LYC members; the City liaison makes the final choice. Program supervisor: Nathan Brumley, Assistant Library Director, 925-373-5572. The page fetches were done with firecrawl because livermoreca.gov blocks plain fetches."
 }

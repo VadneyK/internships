@@ -1,0 +1,46 @@
+{
+  "id": "larpd-part-time-jobs",
+  "name": "LARPD part-time jobs (Lifeguard, Swim Instructor, Recreation Leader at 16+)",
+  "org": "Livermore Area Recreation and Park District (LARPD)",
+  "regions": [
+    "east-bay",
+    "alameda"
+  ],
+  "city": "Livermore, CA",
+  "type": "paid-youth-program",
+  "fields": [
+    "sports",
+    "education"
+  ],
+  "what_you_do": "Work part time for Livermore's park district. Teens 16 and up can be a Lifeguard I, Swim Instructor I or Recreation Leader I, helping with pools, swim lessons, camps, sports and events.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Lifeguard I: age 16 or older at hire, with an American Red Cross Lifeguard card. Swim Instructor I: 16 by the first shift, with Starfish Aquatics Water Safety Educator and CPR/First Aid/AED cards. Recreation Leader I: at least 16 when hired, no experience needed.",
+  "paid_type": "paid",
+  "pay_detail": "Paid hourly. Pay is not stated on the jobs page or the job descriptions; each posting should list it.",
+  "season": "year-round",
+  "duration": "Part-time staff are hired as needed. Shifts can include early mornings, evenings, weekends and holidays.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "On Oct 16, 2026 the district's job board said it was not hiring and listed no openings. The pages do not say when part-time jobs will be posted next.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Apply online only, through the job openings links on the LARPD jobs page. The district does not take general applications for jobs it is not hiring for. You must pass a fingerprint background check and a TB test. Workers under 18 need a work permit before the first day.",
+  "needs_work_permit": true,
+  "url": "https://www.larpd.org/job-opportunities",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.larpd.org/job-opportunities",
+    "https://www.larpd.org/job-descriptions",
+    "https://www.larpd.org/files/cf1c531a3/Lifeguard+I.pdf",
+    "https://www.larpd.org/files/4c61fbfd4/Swim+Instructor+I.pdf",
+    "https://www.larpd.org/files/4e0a6a466/Recreation+Leader+I.pdf",
+    "http://larpd.hrmdirect.com/employment/job-openings.php?nohd",
+    "https://www.larpd.org/salary-and-benefits"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Recreation Leader I must finish First Aid, CPR and AED training within six months of hire. Lifeguard I may also work the front desk and collect money. Check back before summer, when pools usually hire, but no date is posted. The job description PDFs were read with firecrawl. Phone: 925-373-5700."
+}
