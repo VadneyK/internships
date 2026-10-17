@@ -2869,6 +2869,95 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "ann-arbor-umich-electrify-tech-camp",
+  "name": "Electrify Tech Camp",
+  "org": "University of Michigan, Electrical and Computer Engineering",
+  "regions": [
+   "ann-arbor",
+   "michigan"
+  ],
+  "city": "Ann Arbor, MI",
+  "type": "pre-college",
+  "fields": [
+   "engineering",
+   "tech-cs",
+   "science"
+  ],
+  "what_you_do": "A summer day camp run by U-M engineers. You pick a topic like solar cells, chips, lasers, quantum, electric cars or AI. You do not need to know any of it first.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Current 9th, 10th and 11th graders",
+  "who_can_apply": "High school students in 9th, 10th or 11th grade now. That means you will be a 10th, 11th or 12th grader in summer 2027.",
+  "paid_type": "fee-based",
+  "pay_detail": "$900 per camp. You pay only after you are accepted. Some full and partial scholarships are available.",
+  "season": "summer",
+  "duration": "The camp pages do not say how long each camp is. It is a day camp with no housing.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2027 application date is not posted. Fill out the Electrify 2027 interest form to be told when it opens.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Apply online and rank the camps you want. If accepted, pay the fee and send an information packet to keep your spot. The scholarship form comes after you are accepted.",
+  "needs_work_permit": false,
+  "url": "https://electrify.engin.umich.edu/registration/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://electrify.engin.umich.edu/",
+   "https://electrify.engin.umich.edu/registration/",
+   "https://electrify.engin.umich.edu/programs/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-17",
+  "priority": 2,
+  "notes": "Spots are limited and you may not get your first choice. If you cancel, you get $850 back only if your spot is filled. The same group also runs an online coding class, The Joy of Coding.",
+  "verified_on_label": "Oct 17, 2026"
+ },
+ {
+  "id": "ann-arbor-umich-mmss",
+  "name": "Michigan Math and Science Scholars (MMSS)",
+  "org": "University of Michigan, College of Literature, Science, and the Arts",
+  "regions": [
+   "ann-arbor",
+   "michigan"
+  ],
+  "city": "Ann Arbor, MI",
+  "type": "pre-college",
+  "fields": [
+   "science",
+   "tech-cs",
+   "engineering"
+  ],
+  "what_you_do": "Two-week summer courses in math and science taught by U-M Ph.D. faculty. You take one course per session, with hands-on work, and can live in a dorm or commute. You can attend one, two or three sessions.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Rising sophomores, juniors and seniors",
+  "who_can_apply": "Rising sophomores, juniors or seniors in high school. You must have finished at least one year of high school. Students from any country may apply.",
+  "paid_type": "fee-based",
+  "pay_detail": "2026 costs per session: $1,400 tuition, plus $1,100 to live on campus with meals. $100 application fee that is not refunded. Some financial aid is available.",
+  "season": "summer",
+  "duration": "Two-week sessions. 2027: June 20 to July 2, July 4 to July 16, and July 18 to July 30",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2027 application opens in mid-January 2027 (exact date not posted). Admission is rolling until courses fill, so apply early.",
+  "deadline_iso": null,
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply online with a transcript or grade report, one teacher recommendation (math or science preferred), a personal statement and the $100 fee. GPA and test scores are not needed. Join the mailing list on the home page for updates.",
+  "needs_work_permit": false,
+  "url": "https://sites.lsa.umich.edu/mmss/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://sites.lsa.umich.edu/mmss/",
+   "https://sites.lsa.umich.edu/mmss/2020-applications/",
+   "https://sites.lsa.umich.edu/mmss/mmss-program-fees/",
+   "https://sites.lsa.umich.edu/mmss/apply-to-the-mmss-program/guidelines-for-applying/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-17",
+  "priority": 2,
+  "notes": "Classes run Monday to Friday, 9 a.m. to 4:30 p.m. The fee page still shows 2026 prices; 2027 prices may differ. Weekend trips and airport rides cost extra.",
+  "verified_on_label": "Oct 17, 2026"
+ },
+ {
   "grades": null,
   "min_age": 13,
   "max_age": 18,
@@ -3360,6 +3449,170 @@
   "priority": 2,
   "notes": "Only for students at the four listed partner schools. Summer participation is required. The dedicated application page did not show details when read. Ask staff for current dates.",
   "verified_on_label": "Oct 7, 2026"
+ },
+ {
+  "id": "argonne-big-data-camp",
+  "name": "Big Data Camp",
+  "org": "Argonne National Laboratory",
+  "regions": [
+   "chicago"
+  ],
+  "city": "Lemont, IL",
+  "type": "pre-college",
+  "fields": [
+   "tech-cs",
+   "science"
+  ],
+  "what_you_do": "A free five-day summer camp where you use real Argonne research data and tools. Scientists teach you data science, from asking good questions to making charts that show what the data means.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Current juniors and seniors",
+  "who_can_apply": "Current high school juniors and seniors with basic coding experience in a language like Python, Java or C. You must attend all five days and get yourself to Argonne.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free.",
+  "season": "summer",
+  "duration": "5 days",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 application is closed. Last cycle, students heard back in early May.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Submit an application on the camp page when it opens. Only 30 students are picked; others go on a wait list.",
+  "needs_work_permit": false,
+  "url": "https://www.anl.gov/education/big-data-camp",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.anl.gov/education/big-data-camp",
+   "https://www.anl.gov/education/camps"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Questions: jdomyancich@anl.gov. The page does not give the 2027 application date, so check back in early spring.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "argonne-coding-for-science-camp",
+  "name": "Coding for Science Camp",
+  "org": "Argonne National Laboratory",
+  "regions": [
+   "chicago"
+  ],
+  "city": "Lemont, IL",
+  "type": "pre-college",
+  "fields": [
+   "tech-cs",
+   "science"
+  ],
+  "what_you_do": "A free five-day summer camp where you learn Python from Argonne computer scientists. You do hands-on team activities and see how coding helps solve science problems. No coding experience needed.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Rising sophomores and juniors",
+  "who_can_apply": "Rising high school sophomores or juniors who are new to coding. You must attend all five days and get yourself to Argonne.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free.",
+  "season": "summer",
+  "duration": "5 days",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 application is closed. Last cycle, applications were due by mid-April and students heard back in early May.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Submit an application on the camp page when it opens. Only 30 students are picked.",
+  "needs_work_permit": false,
+  "url": "https://www.anl.gov/education/coding-for-science-camp",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.anl.gov/education/coding-for-science-camp",
+   "https://www.anl.gov/education/camps"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Very popular, with only 30 spots. Questions: kmoran@anl.gov. Argonne also runs Big Data Camp for juniors and seniors who already code.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "argonne-exemplary-student-research-program",
+  "name": "Exemplary Student Research Program (ESRP)",
+  "org": "Argonne National Laboratory",
+  "regions": [
+   "chicago"
+  ],
+  "city": "Lemont, IL",
+  "type": "research",
+  "fields": [
+   "science",
+   "engineering"
+  ],
+  "what_you_do": "A school-year research project with an Argonne scientist mentor. A team of 4 to 8 students from one school writes a proposal, collects data at an Argonne lab, and presents a poster in the spring.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school students in honors or AP science classes",
+  "who_can_apply": "High school students picked by a science teacher at their school. The teacher must hold a grades 9 to 12 teaching license. One team per school.",
+  "paid_type": "not-stated",
+  "pay_detail": "The page does not say if there is a cost or pay.",
+  "season": "school-year",
+  "duration": "One school year, with two required trips to Argonne",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Teachers registered for the 2026-27 school year by June 30, 2026. The 2027-28 date is not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Students cannot apply on their own. Ask a science teacher to apply for a team. The teacher goes to an August workshop, gets a scientist mentor and picks the students.",
+  "needs_work_permit": false,
+  "url": "https://www.anl.gov/education/exemplary-student-research-program",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.anl.gov/education/exemplary-student-research-program",
+   "https://www.anl.gov/education/high-school-research-programs"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 3,
+  "notes": "Share this page with a science teacher in the spring. Teams become official Argonne facility users. Argonne's College Bound and Bridge into Internships programs need you to be 18, so they are not listed.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "argonne-science-discovery-camp",
+  "name": "Argonne Science Discovery Camp",
+  "org": "Argonne National Laboratory",
+  "regions": [
+   "chicago"
+  ],
+  "city": "Lemont, IL",
+  "type": "pre-college",
+  "fields": [
+   "science",
+   "engineering"
+  ],
+  "what_you_do": "A free five-day camp for younger teens. You work in groups on hands-on science projects, interview scientists and engineers, and tour Argonne labs.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Rising 8th and 9th graders",
+  "who_can_apply": "Students who will be in 8th or 9th grade in the fall. You must attend all five days and get yourself to Argonne.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free.",
+  "season": "summer",
+  "duration": "5 days",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 application is closed. Last cycle, families applied by mid-April and heard back in early May.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "A family submits an application on the camp page when it opens. Only 24 students are picked.",
+  "needs_work_permit": false,
+  "url": "https://www.anl.gov/education/argonne-science-discovery-camp",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.anl.gov/education/argonne-science-discovery-camp",
+   "https://www.anl.gov/education/camps"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 3,
+  "notes": "Send questions to the email on the camp page: education@anl.gov. It is a good first step before the high school camps.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "arizona-4h-cooperative-extension",
@@ -4728,6 +4981,47 @@
   "limited": true
  },
  {
+  "id": "austin-creative-action-color-squad",
+  "name": "Color Squad teen mural program",
+  "org": "Creative Action",
+  "regions": [
+   "austin"
+  ],
+  "city": "Austin, TX",
+  "type": "leadership",
+  "fields": [
+   "arts-media",
+   "social-impact"
+  ],
+  "what_you_do": "Join a group of teen artists who plan and paint big murals around Austin. Each year the group picks a topic in the town to work on. Past murals were made with Cap Metro and other groups.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Teens",
+  "who_can_apply": "Teen artists. The page does not give ages, grades or other rules.",
+  "paid_type": "not-stated",
+  "pay_detail": "Pay or cost is not stated on the page.",
+  "season": "year-round",
+  "duration": "Not stated",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No dates on the page. Email to ask when the next group starts.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Email lindsay@creativeaction.org to ask how to join.",
+  "needs_work_permit": null,
+  "url": "https://www.creativeaction.org/color-squad",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.creativeaction.org/color-squad",
+   "https://www.creativeaction.org/programs"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 3,
+  "notes": "Ask about ages, schedule, pay and cost before you plan on it. Creative Action also lists the Changing Lives Youth Theatre Ensemble for teens.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
   "regions": [
    "austin"
   ],
@@ -4765,6 +5059,46 @@
   ],
   "verified_on_label": "Oct 10, 2026",
   "limited": true
+ },
+ {
+  "id": "austin-fire-explorers-post-370",
+  "name": "Austin Fire Explorers Post 370",
+  "org": "Austin Fire Department with Capitol Area Council, Scouting America",
+  "regions": [
+   "austin"
+  ],
+  "city": "Austin, TX",
+  "type": "shadowing",
+  "fields": [
+   "law-government",
+   "health"
+  ],
+  "what_you_do": "Learn how to fight fires, do rescues and give first aid, taught by Austin firefighters. You get real gear and train where they train. Teams compete in fire games each year.",
+  "min_age": 14,
+  "max_age": 19,
+  "grades": null,
+  "who_can_apply": "Ages 14 through 19. Co-ed. You do not need to be in top shape.",
+  "paid_type": "not-stated",
+  "pay_detail": "No pay or fee is stated on the page.",
+  "season": "year-round",
+  "duration": "Weekend meetings, one day each weekend for several weeks before each competition",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline posted. Fill out the interest card to get updates.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the online interest card to get on the email list. You can send questions by email to the fire team at firerecruiting@austintexas.gov.",
+  "needs_work_permit": false,
+  "url": "https://www.austintexas.gov/fire/austin-fire-explorers-post-370",
+  "apply_url": "https://fs25.formsite.com/AustinFire/ExplorerInterest/index",
+  "sources_fetched": [
+   "https://www.austintexas.gov/fire/austin-fire-explorers-post-370"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Teams compete in the DFW Fire Games in the spring and the San Antonio fire games in the fall. Being an Explorer does not hurt you if you apply to be a firefighter later. There are also ways to volunteer.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "regions": [
@@ -5042,6 +5376,47 @@
   "verified_on": "2026-10-09",
   "apply_url": null,
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "austin-safe-summer-youth-leadership-academy",
+  "name": "SAFE Expect Respect Summer Youth Leadership Academy",
+  "org": "The SAFE Alliance",
+  "regions": [
+   "austin"
+  ],
+  "city": "Austin, TX",
+  "type": "paid-youth-program",
+  "fields": [
+   "social-impact",
+   "arts-media"
+  ],
+  "what_you_do": "A paid five-week summer job at SAFE. You get job and leader training. You work on real projects that teach teens about healthy dating and how to stop bullying and abuse.",
+  "min_age": 14,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "Youth ages 14 to 17. You register through the Austin and Travis County summer youth jobs program.",
+  "paid_type": "paid",
+  "pay_detail": "Paid part-time. The rate is not stated on the page.",
+  "season": "summer",
+  "duration": "5 weeks, part-time",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Registration goes through Travis County's Summer Youth Employment Program, which opens Summer 2027 applications in January 2027 (exact date not posted).",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Sign up ahead of time through the Travis County summer youth jobs program. SAFE links to it from its page. For questions, email Randy Randolph at Rrandolph@safeaustin.org or call 512-356-1633.",
+  "needs_work_permit": false,
+  "url": "https://www.safeaustin.org/our-services/prevention-and-education/expect-respect/youth-leadership-development/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.safeaustin.org/our-services/prevention-and-education/expect-respect/youth-leadership-development/",
+   "https://www.traviscountytx.gov/health-human-services/children-and-youth/employment-program"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "SAFE also leads free talks in schools and clubs if you ask. The county jobs program may look at your family's income.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "regions": [
@@ -16431,6 +16806,48 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "chicago-advocate-health-teen-volunteers",
+  "name": "Advocate Health Care hospital volunteers (ages 16 and up)",
+  "org": "Advocate Health Care",
+  "regions": [
+   "chicago"
+  ],
+  "city": "Chicago area, IL (including Advocate Sherman Hospital in Elgin)",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Volunteer at an Advocate hospital near you, in departments matched to your interests. Most spots are a set shift of 2 to 4 hours once a week. There are no shadowing roles.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Ages 16 and up. Some Advocate hospitals take 14 and 15 year olds; ask the hospital you want.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. The health screening and any missing shots are free.",
+  "season": "year-round",
+  "duration": "2 to 4 hours once a week",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline posted. Apply to the hospital you want any time.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the online volunteer application for the hospital you want. If there is a match you get an interview. Then do online training and a free health screening with a TB blood test and proof of MMR and flu shots.",
+  "needs_work_permit": false,
+  "url": "https://www.advocatehealth.com/about-us/volunteer-opportunities/assignment-opportunities",
+  "apply_url": "https://www.advocatehealth.com/about-us/volunteer-opportunities/volunteer-application",
+  "sources_fetched": [
+   "https://www.advocatehealth.com/about-us/volunteer-opportunities",
+   "https://www.advocatehealth.com/about-us/volunteer-opportunities/assignment-opportunities",
+   "https://www.advocatehealth.com/about-us/volunteer-opportunities/steps-to-volunteering",
+   "https://www.advocatehealth.com/sherman/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Not everyone is accepted. The background check is only for volunteers 18 and older. The Advocate Sherman page in Elgin links to this system-wide volunteer page.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
   "id": "chicago-architecture-center-teen-ambassadors",
   "name": "Teen Ambassadors",
   "org": "Chicago Architecture Center",
@@ -22327,6 +22744,46 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "columbus-osu-wexner-k12-career-exploration",
+  "name": "Ohio State Wexner Medical Center K-12 health care career exploration",
+  "org": "The Ohio State University Wexner Medical Center",
+  "regions": [
+   "columbus"
+  ],
+  "city": "Columbus, OH",
+  "type": "shadowing",
+  "fields": [
+   "health",
+   "science"
+  ],
+  "what_you_do": "Your school can ask for health care career visits. Staff can come to class, talk by phone, or host a field trip. Some schools can also set up job shadow days and internships in fields like nursing and lab work.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "K-12",
+  "who_can_apply": "K-12 schools ask for these experiences, not students or parents. Central Ohio schools and schools with a Workforce Partnerships agreement come first. Internships need a recommendation from a school district staff member.",
+  "paid_type": "not-stated",
+  "pay_detail": "The page does not say if there is a cost or pay.",
+  "season": "school-year",
+  "duration": "Varies; shadowing is a one-time visit and internships repeat",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Student experiences run during the school year only. Schools should send requests at least 60 days ahead.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Ask your school counselor or career teacher to fill out the request form on the page. The medical center asks that parents and students do not send requests for their school. New Workforce Partnerships agreements are full right now.",
+  "needs_work_permit": false,
+  "url": "https://careers.wexnermedical.osu.edu/career-areas/exploration-for-schools",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://careers.wexnermedical.osu.edu/career-areas/exploration-for-schools"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-17",
+  "priority": 3,
+  "notes": "You must be 18 to volunteer at this hospital. So for teens, this school route is the way in. Internships can be in nursing, imaging, lab work, rehab, sports medicine and research.",
+  "verified_on_label": "Oct 17, 2026"
+ },
+ {
   "grades": "Apply in 8th grade",
   "apply_url": null,
   "needs_work_permit": null,
@@ -23410,9 +23867,51 @@
   "verified_on_label": "Oct 14, 2026"
  },
  {
+  "id": "cook-county-forest-preserve-experience",
+  "name": "Forest Preserve Experience",
+  "org": "Friends of the Forest Preserves, Forest Preserves of Cook County and the Housing Authority of Cook County",
+  "regions": [
+   "chicago"
+  ],
+  "city": "South suburban Cook County, IL",
+  "type": "paid-youth-program",
+  "fields": [
+   "environment"
+  ],
+  "what_you_do": "A paid summer job on a crew of 12 teens. You remove invasive plants, pick up litter and clean rivers and lakes in your local forest preserve. You also learn job skills and go on field trips and canoe outings.",
+  "min_age": 14,
+  "max_age": 19,
+  "grades": null,
+  "who_can_apply": "Housing Authority of Cook County residents or voucher holders who live in the south suburbs. Ages 14 to 19 by the start of the program, in high school or a recent graduate.",
+  "paid_type": "paid",
+  "pay_detail": "The Forest Preserves page says $15.50 an hour. The Friends 2025 FAQ says $15 an hour.",
+  "season": "summer",
+  "duration": "5 weeks starting in late June or early July, about 24 to 25 hours a week",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Last cycle the Housing Authority sent application materials in early March and applications closed April 30. 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "If you qualify, the Housing Authority of Cook County contacts you in early March with the application. It has interview questions about why you want to work outdoors. Questions: joy@fotfp.org.",
+  "needs_work_permit": true,
+  "url": "https://fotfp.org/get-involved/conservation-corps/forest-preserve-experience/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://fotfp.org/get-involved/conservation-corps/forest-preserve-experience/",
+   "https://fotfp.org/get-involved/conservation-corps/",
+   "https://fpdcc.com/nature/conservation-corps-programs/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 3,
+  "notes": "Only for families with the Housing Authority of Cook County. If you miss more than three days, you lose your spot. There are no breaks for trips or summer school. Rides leave from Pace bus stops. The two official pages list a bit different pay and hours, so ask when you are hired. In Illinois, workers under 16 need a work paper from school.",
+  "verified_on_label": "Oct 16, 2026",
+  "limited": true
+ },
+ {
   "id": "cook-county-forest-preserves-conservation-corps-summer",
-  "name": "Conservation Corps summer youth program",
-  "org": "Forest Preserves of Cook County (listed by Cook County government)",
+  "name": "Chicago Conservation Leadership Corps (CCLC)",
+  "org": "Forest Preserves of Cook County with the Student Conservation Association",
   "regions": [
    "chicago"
   ],
@@ -23421,34 +23920,34 @@
   "fields": [
    "environment"
   ],
-  "what_you_do": "A paid summer crew job outdoors. Teens get job training, do hard service work and join nature activities in the forest preserves.",
-  "min_age": 14,
+  "what_you_do": "A paid summer crew job outdoors in the forest preserves. Teens build trails, spread mulch around trees and pull invasive plants, with adult crew leaders. There are also nature lessons and outdoor fun.",
+  "min_age": 15,
   "max_age": 19,
   "grades": null,
-  "who_can_apply": "Cook County residents ages 14 to 19.",
+  "who_can_apply": "Ages 15 to 19. You must be in high school or a recent graduate. You must be able to do hard physical work in summer heat and work on a team.",
   "paid_type": "paid",
-  "pay_detail": "Paid. The amount is not stated on the Cook County page. Transportation and service clothing are provided.",
+  "pay_detail": "$15 an hour for high school members.",
   "season": "summer",
-  "duration": "4 to 6 weeks",
-  "status": "unconfirmed",
+  "duration": "5 weeks starting in late June, 26 hours a week, Monday to Thursday",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "No dates on the Cook County page. The Forest Preserves site was blocked, so check it for the deadline.",
+  "deadline_text": "Youth applications are due in April each year. The page gives no exact 2027 date.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
-  "how_to_apply": "The Cook County page points to fpdcc.com/nature/conservation-corps-programs for how to apply. That page was not available.",
-  "needs_work_permit": null,
-  "url": "https://www.cookcountyil.gov/service/forest-preserves-employment-information",
-  "apply_url": "https://fpdcc.com/nature/conservation-corps-programs/",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply on the Student Conservation Association job site. The Forest Preserves page links to it. Check the SCA Chicago page in early spring for the 2027 opening.",
+  "needs_work_permit": true,
+  "url": "https://fpdcc.com/nature/conservation-corps-programs/",
+  "apply_url": "https://myjobs.adp.com/scacareers/cx",
   "sources_fetched": [
-   "https://www.cookcountyil.gov/service/cook-county-connects",
+   "https://fpdcc.com/nature/conservation-corps-programs/",
+   "https://thesca.org/program/urban-green/chicago",
    "https://www.cookcountyil.gov/service/forest-preserves-employment-information"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-10-16",
   "priority": 1,
-  "notes": "Confirm age rules, pay and deadline on the Forest Preserves site, because it blocked my reader. Ask about working papers if you are under 16.",
-  "verified_on_label": "Oct 12, 2026",
-  "limited": true
+  "notes": "Rides to work sites leave from central pickup spots such as CTA train or bus stops. The SCA Chicago page still said its summer season was closed when read on 2026-10-16. Illinois requires an employment certificate for workers under 16, so 15 year olds should ask their school. SCA Chicago contact: (312) 239-1661 ext. 6009.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "cook-county-opportunity-works-subsidized-internships",
@@ -28211,6 +28710,50 @@
    "https://www.cityofelgin.org/2284/Elgin-Teen-Life"
   ],
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "elgin-u46-career-technical-education",
+  "name": "School District U-46 Career and Technical Education pathways",
+  "org": "School District U-46",
+  "regions": [
+   "chicago"
+  ],
+  "city": "Elgin, IL",
+  "type": "school-pathway",
+  "fields": [
+   "business-finance",
+   "health",
+   "engineering",
+   "tech-cs",
+   "food-hospitality"
+  ],
+  "what_you_do": "Take a set of career classes in high school. Areas include business, health care, building and design, tech, and cooking and family life. Some classes add job training, real work time or college credit.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Grades 9 to 12",
+  "who_can_apply": "Students at U-46 high schools. Educational Pathways start in 9th grade and do not need an application.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Not stated on the page.",
+  "season": "school-year",
+  "duration": "Multi-year pathway",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No application for Educational Pathways. Pick classes with your counselor when you plan your schedule.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Talk to your school counselor. If your school does not have the class set you want, you can take it at another U-46 high school. You can also ask Doreen Roberts, who runs the career classes.",
+  "needs_work_permit": null,
+  "url": "https://www.u-46.org/page/career-and-technical-education",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.u-46.org/page/career-and-technical-education",
+   "https://www.u-46.org/page/educational-pathways"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Programs of Study differ by high school. Magnet Academies are a separate choice that students apply to in the fall of 8th grade. Student groups linked to CTE classes offer competitions and scholarships. District phone: 847-888-5000.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "elk-grove-village-library-teen-service-hours-and-jr-tag",
@@ -39541,6 +40084,46 @@
   "limited": true
  },
  {
+  "id": "illinois-ides-hire-the-future",
+  "name": "Hire the Future",
+  "org": "Illinois Department of Employment Security (IDES)",
+  "regions": [
+   "illinois",
+   "chicago"
+  ],
+  "city": "Statewide, IL",
+  "type": "paid-youth-program",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Free job help for young people. You can get help searching for jobs, getting ready for interviews and planning a career at an IDES office.",
+  "min_age": 16,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Youth ages 16 to 24.",
+  "paid_type": "not-stated",
+  "pay_detail": "This is job search help, not a job. Pay is not stated.",
+  "season": "year-round",
+  "duration": "Not stated",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline. Visit an IDES office any time.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Make a free account on IllinoisJobLink.com to search for jobs. For job readiness help, use the IDES Office Locator to find the nearest office.",
+  "needs_work_permit": null,
+  "url": "https://ides.illinois.gov/jobs-workforce/programs/hire-the-future.html",
+  "apply_url": "https://www.illinoisjoblink.com/",
+  "sources_fetched": [
+   "https://ides.illinois.gov/jobs-workforce/programs/hire-the-future.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 3,
+  "notes": "The page also links to free tools to help you pick a career. It links to pages about staying safe at your first job, too.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
   "id": "illinois-imsa-srelo-summer-research",
   "name": "SRELO summer research at IMSA",
   "org": "Illinois Mathematics and Science Academy (IMSA), Aurora",
@@ -40210,10 +40793,11 @@
   "sources_fetched": [
    "https://www.in.gov/dwd/job-seekers/young-adults",
    "https://www.in.gov/workonewestcentral/about",
-   "https://www.workonewestcentral.org/60.html"
+   "https://www.workonewestcentral.org/60.html",
+   "https://www.in.gov/dwd/workonesouthcentral/youth/"
   ],
   "priority": 3,
-  "notes": "This is the state workforce agency's WIOA-style youth help, not a single job. The WorkOne West Central about page (older) says a youth program for ages 16 to 24 is offered; the newer state page says 14 to 21 in school. The Bloomington (South Central) WorkOne regional page was not read, so confirm locally. Call before going. Re-read on 2026-10-09: the state page says nothing about cost or pay, so the card is not in the paid group.",
+  "notes": "This is the state workforce agency's WIOA-style youth help, not a single job. The WorkOne West Central about page (older) says a youth program for ages 16 to 24 is offered; the newer state page says 14 to 21 in school. The WorkOne South Central page (Bloomington region, read 2026-10-17) says many resources are for young adults 16 to 24, in or out of school, if they meet WIOA rules, and lists JAG for high school students only. Call before going. Re-read on 2026-10-09: the state page says nothing about cost or pay, so the card is not in the paid group.",
   "verified_on_label": "Oct 9, 2026"
  },
  {
@@ -44836,6 +45420,45 @@
   "priority": 2,
   "notes": "The county page gives two enrollment dates (Jan 15 and Jan 1), so ask the office which one applies. The Extension office is at 1950 South 18th Street, Lafayette, IN 47905. This is a youth club, not a paid job.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "lafayette-west-lafayette-parks-lifeguards",
+  "name": "West Lafayette Parks and Recreation lifeguards",
+  "org": "City of West Lafayette Parks and Recreation",
+  "regions": [
+   "lafayette"
+  ],
+  "city": "West Lafayette, IN",
+  "type": "paid-youth-program",
+  "fields": [
+   "sports"
+  ],
+  "what_you_do": "Work as a lifeguard at the city's indoor pool at the John R. Dennis Wellness Center or the outdoor Municipal Pool. The city also runs the lifeguard certification class.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be 15 by the last day of the lifeguard class. You also do 6 to 8 hours of work online first. Then you must pass a swim test on the first night.",
+  "paid_type": "paid",
+  "pay_detail": "Paid city job. The rate is not stated on the page.",
+  "season": "year-round",
+  "duration": "Flexible scheduling; the certification class is a 4-day block",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "The city says it is always hiring lifeguards. Certification classes are scheduled based on interest.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "If you already have your lifeguard card, apply on the city job site. If not, email Julie Martin, who runs the pools, to get into a class: jamartin@westlafayette.in.gov.",
+  "needs_work_permit": null,
+  "url": "https://www.westlafayette.in.gov/our-city/john-r-dennis-wellness-center/aquatics/lifeguard-certification",
+  "apply_url": "https://cityofwestlafayetteinemployees.munisselfservice.com/employmentopportunities/default.aspx",
+  "sources_fetched": [
+   "https://www.westlafayette.in.gov/our-city/john-r-dennis-wellness-center/aquatics/lifeguard-certification"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-17",
+  "priority": 2,
+  "notes": "You must go to all four class days to pass. The swim test is a 150-yard swim, a 2-minute tread, a 50-yard swim and a timed dive for an object. The page does not list the class cost or pay, so ask. Wellness Center: 765-269-4950.",
+  "verified_on_label": "Oct 17, 2026"
  },
  {
   "grades": null,
@@ -50784,6 +51407,48 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "madison-mscr-assistant-swim-instructor",
+  "name": "MSCR Youth Aquatics Assistant Swim Instructor",
+  "org": "Madison School & Community Recreation (MSCR), Madison Metropolitan School District",
+  "regions": [
+   "madison"
+  ],
+  "city": "Madison, WI",
+  "type": "paid-youth-program",
+  "fields": [
+   "sports",
+   "education"
+  ],
+  "what_you_do": "A part-time job helping lead instructors teach Red Cross Learn-to-Swim classes at Madison school pools. You keep lessons fun and can learn to plan and co-teach classes.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "At least 15 years old by the start date. You must swim 25 yards of all six strokes to a Level 4 standard (or be willing to learn) and be comfortable in deep water up to 12 feet.",
+  "paid_type": "paid",
+  "pay_detail": "$15 to $18 an hour.",
+  "season": "school-year",
+  "duration": "Up to 18.5 hours a week, evenings and weekends; the current posting started Sept 13, 2026",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Posted on the MSCR jobs page for the 2026-27 school year with no closing date. Apply while the posting is up.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Click APPLY next to the job on the MSCR jobs page and fill out the online application. MSCR only takes online applications. Questions: Michelle Borkovec, mborkovec@madison.k12.wi.us.",
+  "needs_work_permit": true,
+  "url": "https://www.mscr.org/jobs/youth-aquatics-assistant-swim-instructor/",
+  "apply_url": "https://mmsd.csod.com/ux/ats/careersite/9/home/requisition/9566?c=mmsd",
+  "sources_fetched": [
+   "https://www.mscr.org/jobs/youth-aquatics-assistant-swim-instructor/",
+   "https://www.mscr.org/jobs",
+   "https://www.mscr.org/jobs/lifeguard/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-17",
+  "priority": 1,
+  "notes": "You work at Goodman Pool, La Follette, Lapham or West High. MSCR can help you get your lifeguard card or swim teacher card. The MSCR lifeguard job pays $19 an hour, but you need your lifeguard, CPR and first aid cards first. In Wisconsin, workers under 16 need a work permit. Job site help: (608) 204-3057.",
+  "verified_on_label": "Oct 17, 2026"
+ },
+ {
   "apply_url": null,
   "verified": "fetched",
   "verified_on": "2026-10-09",
@@ -56284,6 +56949,48 @@
    "https://www.oaklandcountymi.gov/community/oakland-county-parks/get-involved/volunteer"
   ],
   "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "michigan-umich-wolverine-pathways",
+  "name": "Wolverine Pathways",
+  "org": "University of Michigan",
+  "regions": [
+   "michigan",
+   "ann-arbor"
+  ],
+  "city": "Detroit, Southfield, Ypsilanti and Grand Rapids, MI",
+  "type": "pre-college",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "A free college prep program. Students meet on Saturdays and for 2 to 4 weeks each summer for classes, camps and internships. Scholars admitted to U-M Ann Arbor or U-M Dearborn get a 4-year tuition scholarship.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Apply in 6th or 9th grade; join in 7th or 10th grade",
+  "who_can_apply": "Students in 6th or 9th grade with at least a 3.0 GPA (3.2 for 9th graders) who live inside the Detroit Public Schools, Southfield Public Schools or Ypsilanti Community Schools district. The school you attend does not matter. The home page also lists Grand Rapids.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free.",
+  "season": "school-year",
+  "duration": "From 7th or 10th grade through 12th grade; up to seven Saturdays a semester plus 2 to 4 summer weeks",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The next application window opens in December 2026. Last cycle, Southeast Michigan applications closed February 28, 2026 and Grand Rapids applications closed March 20, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online when the window opens in December. Join the mailing list for info sessions. Questions: wp-admissions@umich.edu, (734) 647-3848.",
+  "needs_work_permit": false,
+  "url": "https://wolverinepathways.umich.edu/application-3/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://wolverinepathways.umich.edu/",
+   "https://wolverinepathways.umich.edu/faq/",
+   "https://wolverinepathways.umich.edu/application-3/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-17",
+  "priority": 1,
+  "notes": "No exceptions are made for the Southeast Michigan deadline. You must keep strong grades and attendance to stay in. In 10th to 12th grade you can pick summer courses, camps or internships.",
+  "verified_on_label": "Oct 17, 2026"
  },
  {
   "id": "michigan-wing-civil-air-patrol-cadets",
@@ -94808,23 +95515,24 @@
   "paid_type": "paid",
   "pay_detail": "Paid work experience; hourly rate not stated on the program page",
   "season": "summer",
-  "duration": "not stated",
+  "duration": "5 to 7 weeks",
   "status": "closed-expect-reopen",
-  "deadline_text": "Summer 2026 applications are closed and the page is labeled Expired. 2027 dates are not posted; the county has a 2027 interest form to get notified when applications open.",
+  "deadline_text": "Summer 2026 applications are closed. The county says applications for Summer 2027 open in January 2027 (exact date not posted). Fill out the 2027 interest form to be told when they open.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Fill out the online application (Jotform) and upload a Social Security card and a school ID or recent report card. Eligible applicants are invited to a mandatory job readiness training, then matched to a host site if space allows. Applying does not guarantee a placement.",
   "needs_work_permit": null,
   "url": "https://www.traviscountytx.gov/health-human-services/children-and-youth/syep",
   "sources_fetched": [
-   "https://www.traviscountytx.gov/health-human-services/children-and-youth/syep"
+   "https://www.traviscountytx.gov/health-human-services/children-and-youth/syep",
+   "https://www.traviscountytx.gov/health-human-services/children-and-youth/employment-program"
   ],
   "priority": 1,
-  "notes": "Phone 512-854-4590. Pay rate, hours and program length are not stated on the page. The page does not mention a work permit. Texas rules for 14 and 15 year olds limit hours (see Texas Workforce Commission child labor page).",
+  "notes": "Phone 512-854-4590, syep@traviscountytx.gov. Up to 750 paid spots each year. Pay rate and hours are not stated on the page. The page does not mention a work permit. Texas rules for 14 and 15 year olds limit hours (see Texas Workforce Commission child labor page). The SAFE Alliance Summer Youth Leadership Academy also hires through this program.",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "apply_url": null,
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on": "2026-10-17",
+  "apply_url": "https://traviscountytx.jotform.com/260694487770875",
+  "verified_on_label": "Oct 17, 2026",
   "limited": true
  },
  {
@@ -95710,6 +96418,45 @@
   "verified_on_label": "Oct 10, 2026"
  },
  {
+  "id": "twin-cities-childrens-minnesota-teen-summer-volunteers",
+  "name": "Children's Minnesota 16 and 17 year old summer volunteers",
+  "org": "Children's Minnesota",
+  "regions": [
+   "twin-cities"
+  ],
+  "city": "Minneapolis and St. Paul, MN",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Summer volunteering at a children's hospital. Teens help with the activities cart, the Child Life Zone, the sibling play area and Star Studio.",
+  "min_age": 16,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "Ages 16 or 17. You must be free for at least 10 weekly 3-hour weekday daytime shifts in the summer.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid.",
+  "season": "summer",
+  "duration": "At least 30 hours over the summer (10 weekly 3-hour shifts), weekdays 9 a.m. to 5 p.m.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "The teen page gives no application dates. Complete applications go on a summer waiting list.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the online form for 16 and 17 year old summer helpers. Within 2 weeks, email your shot records and a form signed by a parent to volunteer.services@childrensmn.org. Then you have a talk with staff, a class online and a fingerprint check.",
+  "needs_work_permit": false,
+  "url": "https://www.childrensmn.org/support-childrens/volunteer/clinic-hospital-volunteers/teen-summer-volunteers/",
+  "apply_url": "https://www.volgistics.com/appform/226305433",
+  "sources_fetched": [
+   "https://www.childrensmn.org/support-childrens/volunteer/clinic-hospital-volunteers/teen-summer-volunteers/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Spots are limited. No evening or weekend shifts. Applications missing shot records are not kept after 2 weeks. Volunteer Services: Minneapolis 612-813-6200, St. Paul 651-220-6141.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
   "id": "twin-cities-childrens-theatre-production-job-shadowing",
   "name": "Production Job Shadowing",
   "org": "Children's Theatre Company",
@@ -96149,6 +96896,45 @@
   "verified_on_label": "Oct 10, 2026"
  },
  {
+  "id": "twin-cities-hennepin-healthcare-volunteers",
+  "name": "Hennepin Healthcare hospital volunteers (ages 16 and up)",
+  "org": "Hennepin Healthcare",
+  "regions": [
+   "twin-cities"
+  ],
+  "city": "Minneapolis, MN",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Help out at a big trauma hospital in downtown Minneapolis. Most new helpers start at the front, showing patients and guests where to go. Later you can move to other parts of the hospital.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Ages 16 and up. You should be reliable, helpful and respectful of all people.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Free ramp parking while you volunteer.",
+  "season": "year-round",
+  "duration": "Start with a 4-hour shift once a week for 8 weeks. The yearly minimum is 40 to 80 hours, depending on whether you are a high school student, college student or adult.",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline posted. Apply any time and finish the steps within 6 weeks.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the online form. Then you meet with the volunteer office, turn in your shot records and TB test, and get your fingerprints taken. Last, you take a short class online.",
+  "needs_work_permit": false,
+  "url": "https://hennepinhealthcare.org/volunteers",
+  "apply_url": "https://www.volgistics.com/appform/229664981",
+  "sources_fetched": [
+   "https://hennepinhealthcare.org/volunteers"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-17",
+  "priority": 2,
+  "notes": "When you finish, you can ask them to be a job reference. Volunteer office: 612-873-2512 or volunteerservices@hcmed.org. It is at 900 South 8th Street in Minneapolis.",
+  "verified_on_label": "Oct 17, 2026"
+ },
+ {
   "id": "twin-cities-hired-youth-and-young-adult-services",
   "name": "Youth and Young Adult Services",
   "org": "Hired",
@@ -96582,6 +97368,46 @@
   "priority": 1,
   "notes": "Grant funded. Students must commit to the whole program.",
   "verified_on_label": "Oct 10, 2026"
+ },
+ {
+  "id": "twin-cities-regions-hospital-summer-volunteers",
+  "name": "Regions Hospital summer volunteer program",
+  "org": "Regions Hospital and HealthPartners",
+  "regions": [
+   "twin-cities"
+  ],
+  "city": "St. Paul, MN",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "A 10 to 12 week summer volunteer program at Regions Hospital and HealthPartners clinics. Most shifts are 2 to 4 hours once a week, and no health care experience is needed.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Ages 15 and up. Some roles have higher age limits, such as 16 and up in the Breast Health Care Center and 18 and up for some patient roles.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Perks include free parking and meal vouchers.",
+  "season": "summer",
+  "duration": "10 to 12 weeks, usually 2 to 4 hours once a week",
+  "status": "opens-soon",
+  "opens_iso": "2027-01-01",
+  "deadline_text": "The page says to apply for the summer program between January 1 and April 30, with no year shown. Late applications are not considered.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the online form between January 1 and April 30. Then finish the three steps and the training class. Teens need a form signed by a parent.",
+  "needs_work_permit": false,
+  "url": "https://www.healthpartners.com/care/hospitals/regions/about/volunteer/volunteer-opportunities/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.healthpartners.com/care/hospitals/regions/about/volunteer/volunteer-opportunities/",
+   "https://www.healthpartners.com/care/hospitals/regions/about/volunteer/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-17",
+  "priority": 2,
+  "notes": "Many teens apply, so it is hard to get in. A year-round program is also open from age 15; it needs at least six months or 100 hours. See the HealthPartners high school card. Volunteer office: 651-254-5709.",
+  "verified_on_label": "Oct 17, 2026"
  },
  {
   "id": "twin-cities-saint-paul-lifeguard-training",
