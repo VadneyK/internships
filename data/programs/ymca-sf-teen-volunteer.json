@@ -1,0 +1,41 @@
+{
+  "id": "ymca-sf-teen-volunteer",
+  "name": "Volunteer at the YMCA of Greater San Francisco (ages 15 and up)",
+  "org": "YMCA of Greater San Francisco",
+  "regions": [
+    "san-francisco",
+    "peninsula"
+  ],
+  "city": "San Francisco, CA (and other YMCA of Greater San Francisco branches)",
+  "type": "volunteer",
+  "fields": [
+    "social-impact",
+    "education"
+  ],
+  "what_you_do": "You help at a YMCA branch with youth programs, events, older adults or special drives. You can count the time toward school service hours.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Anyone at least 15 years old. No experience is needed. Some roles need a background check, and new volunteers go through a reference check.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role.",
+  "season": "year-round",
+  "duration": "No daily minimum. The schedule is set with you.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Apply any time. No deadline is posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Download the Volunteer Application form from the page and email the completed PDF to volunteer@ymcasf.org. Staff follow up within 2 business days. You can name a preferred branch and program area.",
+  "needs_work_permit": false,
+  "url": "https://www.ymcasf.org/get-involved/volunteer/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.ymcasf.org/get-involved/volunteer/",
+    "https://www.ymcasf.org/teens/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "The FAQ says students can earn school service hours here. Your references are checked online, so it depends on how fast they reply. The Y has branches in San Francisco, on the Peninsula and in Marin. The page also offers group volunteering for 3 or more people."
+}
