@@ -37,7 +37,9 @@ import urllib.request
 
 import proglib
 
-UA = "Mozilla/5.0 (compatible; TeenInternshipGuideLinkCheck/1.0; +https://github.com/VadneyK/internships)"
+# No "LinkCheck" in the name: extension.psu.edu answers 404 to any user agent containing it, and 200 to browsers
+# and plain scripts (checked 2026-10-16).
+UA = "Mozilla/5.0 (compatible; TeenInternshipGuide link checker/1.0; +https://github.com/VadneyK/internships)"
 
 
 TIMEOUT = 15  # seconds per request; main() sets it from --timeout
