@@ -14,10 +14,10 @@ async function badgeFor(name, now) {
 }
 
 test("p5-badge-1: an open program due in 6 days shows Closes in 6 days, in the status row", async () => {
-  // Youth Climate Action Fund: open now, deadline 2026-10-16
-  const { document } = await loadPage("find.html?q=" + encodeURIComponent("Youth Climate Action Fund microgrants"), { now: at(2026, 10, 10) });
+  // MIT WTP: open now, deadline 2026-12-21. (2026-10-17: the first fixtures, Aurora and Cook Memorial, closed and lost their deadline_iso.)
+  const { document } = await loadPage("find.html?q=" + encodeURIComponent("MIT Women's Technology Program"), { now: at(2026, 12, 15) });
   await tick(200);
-  const card = [...document.querySelectorAll("article.prog")].find((a) => a.querySelector("h3") && /^Youth Climate Action Fund/.test(a.querySelector("h3").textContent));
+  const card = [...document.querySelectorAll("article.prog")].find((a) => a.querySelector("h3") && /^MIT Women's Technology Program/.test(a.querySelector("h3").textContent));
   assert.ok(card, "card is shown");
   const badge = [...card.querySelectorAll(".row .tag")].find((t) => /^Closes /.test(t.textContent.trim()));
   assert.ok(badge, "badge is in the status row");
@@ -26,8 +26,8 @@ test("p5-badge-1: an open program due in 6 days shows Closes in 6 days, in the s
 });
 
 test("p5-badge-1: a deadline tomorrow says Closes tomorrow, and a deadline today says Closes today", async () => {
-  assert.deepEqual(await badgeFor("Youth Climate Action Fund microgrants", at(2026, 10, 15)), ["Closes tomorrow"]); // due 2026-10-16
-  assert.deepEqual(await badgeFor("Teen Volunteers: Tech Tutors, Local History and Summer Volunteers", at(2026, 10, 15)), ["Closes today"]); // due 2026-10-15
+  assert.deepEqual(await badgeFor("MIT Women's Technology Program", at(2026, 12, 20)), ["Closes tomorrow"]); // due 2026-12-21
+  assert.deepEqual(await badgeFor("Summer Ventures in Science and Mathematics", at(2027, 1, 5)), ["Closes today"]); // due 2027-01-05
 });
 
 test("p5-badge-1: a deadline 15 days away (past the 14 day window) gets no badge", async () => {
@@ -36,6 +36,6 @@ test("p5-badge-1: a deadline 15 days away (past the 14 day window) gets no badge
 });
 
 test("p5-badge-1: a program whose deadline has passed gets no badge", async () => {
-  // Youth Climate Action Fund on 2026-10-17 is past its 2026-10-16 deadline
-  assert.deepEqual(await badgeFor("Youth Climate Action Fund microgrants", at(2026, 10, 17)), []);
+  // MIT WTP on 2026-12-22 is past its 2026-12-21 deadline
+  assert.deepEqual(await badgeFor("MIT Women's Technology Program", at(2026, 12, 22)), []);
 });

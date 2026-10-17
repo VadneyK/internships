@@ -11,9 +11,9 @@ const entryList = Array.isArray(ENTRIES) ? ENTRIES : ENTRIES.entries || ENTRIES.
 const DASHES = /[\u2013\u2014]/;
 
 const CARDS = {
-  "wakemed-junior-volunteer-program": { opens_iso: "2026-10-15", deadline_iso: null, text: ["24 to 48 hours", "October 15, 2026"] },
+  "wakemed-junior-volunteer-program": { opens_iso: null, deadline_iso: null, status: "closed-expect-reopen", text: ["24 to 48 hours", "Dec 15, 2026"] }, // 2026-10-16: both campuses showed closed after the Oct 15 window; re-read.
   "nyc-rockefeller-summer-science-research-program": { opens_iso: null, deadline_iso: "2027-01-04", status: "open-now", text: ["January 4, 2027", "5:00 p.m."] }, // 2026-10-13: the page now posts the 2027 deadline (Jan 4, 2027, 5 pm ET); re-read.
-  "boston-mit-womens-technology-program": { opens_iso: "2026-10-16", deadline_iso: "2026-12-21", text: ["summer 2027", "Dec 21, 2026"] },
+  "boston-mit-womens-technology-program": { opens_iso: null, deadline_iso: "2026-12-21", status: "open-now", text: ["summer 2027", "Dec 21, 2026"] }, // 2026-10-16: applications opened Oct 16, 2026; re-read.
 };
 
 for (const [id, want] of Object.entries(CARDS)) {
