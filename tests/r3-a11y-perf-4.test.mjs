@@ -19,9 +19,10 @@ const SOON_ONLY = ["name", "org", "city", "url"];
 // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. home file 561400 to 570400.
 // 2026-10-14 gaps wave: 89 cards for Alameda, Tri-Valley, Contra Costa and Orange County (2,608 programs) home file 570400 to 590200.
 // 2026-10-14 gaps wave plus two Fremont cards read in a real browser (2,610 programs) home file 590200 to 590600.
-// 2026-10-16 Bay Area city pass for issues 1 and 2: +44 city cards (2,654 programs). PENDING PERSON APPROVAL. home file 590600 to 599900.
-test("home file is under 599900 bytes", () => {
-  assert.ok(fs.statSync(path.join(ROOT, "data/entries-home.json")).size < 599900);
+// 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) home file 590600 to 597700. PENDING PERSON APPROVAL.
+test("home file is under 604500 bytes", () => {
+  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,682 programs). PENDING PERSON APPROVAL. home file 597700 to 604500.
+  assert.ok(fs.statSync(path.join(ROOT, "data/entries-home.json")).size < 604500);
 });
 
 test("only closing-soon rows carry name, org, city and url", () => {
