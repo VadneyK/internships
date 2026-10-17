@@ -3428,6 +3428,17 @@
    ]
   },
   {
+   "key": "Bethesda, MD",
+   "state": "MD",
+   "lat": 38.9873,
+   "lon": -77.1186,
+   "precision": "city",
+   "ids": [
+    "bethesda-suburban-hospital-junior-volunteers",
+    "nih-summer-internship-program"
+   ]
+  },
+  {
    "key": "Catonsville, MD",
    "state": "MD",
    "lat": 39.2642,
@@ -3568,7 +3579,8 @@
    "lon": -77.1556,
    "precision": "city",
    "ids": [
-    "maryland-rockville-swim-center-summer-lifeguards"
+    "maryland-rockville-swim-center-summer-lifeguards",
+    "rockville-shady-grove-medical-center-volunteers"
    ]
   },
   {
@@ -5388,6 +5400,16 @@
    ]
   },
   {
+   "key": "Abington, PA",
+   "state": "PA",
+   "lat": 40.1136,
+   "lon": -75.1142,
+   "precision": "city",
+   "ids": [
+    "philadelphia-jefferson-abington-teen-volunteers"
+   ]
+  },
+  {
    "key": "Bethlehem, PA",
    "state": "PA",
    "lat": 40.6264,
@@ -5496,6 +5518,7 @@
     "philadelphia-fox-chase-immersion-science-program",
     "philadelphia-franklin-institute-pacts",
     "philadelphia-franklin-institute-stem-scholars",
+    "philadelphia-free-library-young-volunteers",
     "philadelphia-independence-seaport-museum-teen-ambassadors",
     "philadelphia-jefferson-northeast-summer-student-volunteer",
     "philadelphia-job-corps-center",
@@ -5507,6 +5530,7 @@
     "philadelphia-parks-rec-summer-youth-employment",
     "philadelphia-penn-provost-summer-mentorship-program",
     "philadelphia-penn-sas-high-school-summer-programs",
+    "philadelphia-pennsylvania-hospital-junior-volunteers",
     "philadelphia-police-explorer-cadets-post-991",
     "philadelphia-pyn-aim-afterschool",
     "philadelphia-pyn-nextgen-career-clubs",
@@ -6199,6 +6223,16 @@
    ]
   },
   {
+   "key": "Mount Vernon, VA",
+   "state": "VA",
+   "lat": 38.7134,
+   "lon": -77.1052,
+   "precision": "city",
+   "ids": [
+    "fairfax-mount-vernon-estate-volunteers"
+   ]
+  },
+  {
    "key": "Newport News, VA",
    "state": "VA",
    "lat": 37.0765,
@@ -6878,6 +6912,7 @@
    "bgc-ncil-keystone-club-youth-of-the-year",
    "boston-mit-lincoln-lab-llrise-radar",
    "camp-ignite-bc-firefighting-camp-for-young-women",
+   "carilion-summer-of-service-youth-volunteers",
    "central-oregon-go-lead-winter-program",
    "central-oregon-youth-conservation-corps",
    "chicago-uchicago-researchstart",

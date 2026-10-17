@@ -165,6 +165,7 @@ berkeley-pre-college-scholars	Berkeley, CA	point	Berkeley, CA	city	place:city
 berkeley-public-library-teen-volunteer	Berkeley, CA	point	Berkeley, CA	city	place:city	
 berkeley-rep-teen-council	Berkeley, CA	point	Berkeley, CA	city	place:city	
 berkeley-youthworks	Berkeley, CA	point	Berkeley, CA	city	place:city	
+bethesda-suburban-hospital-junior-volunteers	Bethesda, MD	point	Bethesda, MD	city	place:CDP	
 bethlehem-lehigh-iacocca-global-entrepreneurship-intensive	Bethlehem, PA	point	Bethlehem, PA	city	place:city	
 beyond-emancipation-foster-youth	Oakland, CA	point	Oakland, CA	city	place:city	
 bgc-ncil-industry-clubs	Elgin / South Elgin area and other Fox Valley clubs, IL	multi				override: Many places listed
@@ -331,6 +332,7 @@ caltech-summer-research-connection-pasadena-unified	Pasadena, CA	point	Pasadena,
 cambridge-public-library-teen-advisory-board	Cambridge, MA	point	Cambridge, MA	city	place:city	
 camp-ignite-bc-firefighting-camp-for-young-women	Metro Vancouver, BC	multi				override: Regional district of many cities, not one place
 capital-area-nextgen-youth-services	Raleigh, NC	point	Raleigh, NC	city	place:city	
+carilion-summer-of-service-youth-volunteers	Roanoke, Christiansburg, Rocky Mount and Lexington, VA	multi				several places before the state
 carrboro-youth-council	Carrboro, NC	point	Carrboro, NC	city	place:town	
 cassadaga-job-corps-center	Cassadaga, NY (campus with dorms)	point	Cassadaga, NY	city	place:village	
 ccad-college-preview	Columbus, OH	point	Columbus, OH	city	place:city	
@@ -746,6 +748,7 @@ fairfax-gmu-mason-game-and-technology-academy	Fairfax and Manassas, VA	multi				
 fairfax-gmu-valhen-stem-academy	Fairfax, VA	point	Fairfax, VA	city	place:city	
 fairfax-gmu-washington-journalism-and-media-conference	Fairfax, VA	point	Fairfax, VA	city	place:city	
 fairfax-gmu-wyse-washington-youth-summit-environment	Fairfax, VA	point	Fairfax, VA	city	place:city	
+fairfax-mount-vernon-estate-volunteers	Mount Vernon, VA	point	Mount Vernon, VA	city	place:CDP	
 fairfax-ncs-community-volunteers	Fairfax County, VA	point	Fairfax County, VA	county	county	
 fairfax-nova-e-summer-energy-stem-program	Manassas and Sterling, VA (NOVA Manassas or Loudoun campus)	multi				several places before the state
 fairfax-park-authority-rec-pac-counselor-in-training	Fairfax County, VA	point	Fairfax County, VA	county	county	
@@ -1612,6 +1615,7 @@ nfte-world-series-of-innovation	Online (anywhere)	online
 nhm-marine-teens	Los Angeles, CA	point	Los Angeles, CA	city	place:city	
 nhmu-critical-action-lab	Salt Lake City, UT	point	Salt Lake City, UT	city	place:city	
 nhmu-teen-explainers	Salt Lake City, UT	point	Salt Lake City, UT	city	place:city	
+nih-summer-internship-program	Bethesda, MD	point	Bethesda, MD	city	place:CDP	
 nisra-volunteers-and-summer-camp-jobs-elgin	Elgin and 12 other member communities, northern Illinois	multi				places plus a state name
 nist-ship-gaithersburg	Gaithersburg, MD	point	Gaithersburg, MD	city	place:city	
 norfolk-virginia-zoo-conservation-youth-team	Norfolk, VA	point	Norfolk, VA	city	place:city	
@@ -1850,7 +1854,9 @@ philadelphia-fleisher-teen-lounge	Philadelphia, PA (South Philadelphia)	point	Ph
 philadelphia-fox-chase-immersion-science-program	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
 philadelphia-franklin-institute-pacts	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
 philadelphia-franklin-institute-stem-scholars	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
+philadelphia-free-library-young-volunteers	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
 philadelphia-independence-seaport-museum-teen-ambassadors	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
+philadelphia-jefferson-abington-teen-volunteers	Abington, PA	point	Abington, PA	city	cousub:cousub-township	
 philadelphia-jefferson-northeast-summer-student-volunteer	Philadelphia, PA (Torresdale)	point	Philadelphia, PA	city	place:city	
 philadelphia-job-corps-center	Philadelphia, PA (campus; page lists transportation and no dorms)	point	Philadelphia, PA	city	place:city	
 philadelphia-monell-science-apprenticeship-program	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
@@ -1861,6 +1867,7 @@ philadelphia-parks-rec-lifeguard	Philadelphia, PA	point	Philadelphia, PA	city	pl
 philadelphia-parks-rec-summer-youth-employment	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
 philadelphia-penn-provost-summer-mentorship-program	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
 philadelphia-penn-sas-high-school-summer-programs	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
+philadelphia-pennsylvania-hospital-junior-volunteers	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
 philadelphia-police-explorer-cadets-post-991	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
 philadelphia-pyn-aim-afterschool	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
 philadelphia-pyn-nextgen-career-clubs	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
@@ -2025,6 +2032,7 @@ roanoke-science-museum-of-western-virginia-volunteer	Roanoke, VA	point	Roanoke, 
 rochester-general-hospital-student-volunteer-program	Rochester, NY	point	Rochester, NY	city	place:city	
 rochester-rochesterworks-summer-youth-employment	Rochester, NY	point	Rochester, NY	city	place:city	
 rochester-seneca-park-zoo-zooteens	Rochester, NY	point	Rochester, NY	city	place:city	
+rockville-shady-grove-medical-center-volunteers	Rockville, MD	point	Rockville, MD	city	place:city	
 rocky-mountain-youth-corps-youth-conservation-corps	Northwest Colorado (10 counties)	multi				sub-state region
 roseville-leadership-development-program	Roseville, CA	point	Roseville, CA	city	place:city	
 roseville-library-teen-volunteers	Roseville, CA	point	Roseville, CA	city	place:city	
