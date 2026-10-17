@@ -2883,15 +2883,15 @@
    "tech-cs",
    "science"
   ],
-  "what_you_do": "A summer day camp taught by U-M engineering faculty. Topics include solar cells and chips, quantum physics, lasers, electric vehicles and AI. No experience needed.",
+  "what_you_do": "A summer day camp run by U-M engineers. You pick a topic like solar cells, chips, lasers, quantum, electric cars or AI. You do not need to know any of it first.",
   "min_age": null,
   "max_age": null,
   "grades": "Current 9th, 10th and 11th graders",
-  "who_can_apply": "Current high school freshmen, sophomores and juniors (rising sophomores, juniors or seniors in summer 2027).",
+  "who_can_apply": "High school students in 9th, 10th or 11th grade now. That means you will be a 10th, 11th or 12th grader in summer 2027.",
   "paid_type": "fee-based",
   "pay_detail": "$900 per camp. You pay only after you are accepted. Some full and partial scholarships are available.",
   "season": "summer",
-  "duration": "Not stated on the pages read. It is a day camp with no housing.",
+  "duration": "The camp pages do not say how long each camp is. It is a day camp with no housing.",
   "status": "closed-expect-reopen",
   "opens_iso": null,
   "deadline_text": "The 2027 application date is not posted. Fill out the Electrify 2027 interest form to be told when it opens.",
@@ -2909,7 +2909,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-17",
   "priority": 2,
-  "notes": "Spots are limited and you may not get your first choice. If you cancel, you get $850 back only if your spot is filled. The department also offers a virtual coding program, The Joy of Coding.",
+  "notes": "Spots are limited and you may not get your first choice. If you cancel, you get $850 back only if your spot is filled. The same group also runs an online coding class, The Joy of Coding.",
   "verified_on_label": "Oct 17, 2026"
  },
  {
@@ -2940,7 +2940,7 @@
   "opens_iso": null,
   "deadline_text": "The 2027 application opens in mid-January 2027 (exact date not posted). Admission is rolling until courses fill, so apply early.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Apply online with a transcript or grade report, one teacher recommendation (math or science preferred), a personal statement and the $100 fee. GPA and test scores are not needed. Join the mailing list on the home page for updates.",
   "needs_work_permit": false,
   "url": "https://sites.lsa.umich.edu/mmss/",
@@ -3550,8 +3550,8 @@
   "max_age": null,
   "grades": "High school students in honors or AP science classes",
   "who_can_apply": "High school students picked by a science teacher at their school. The teacher must hold a grades 9 to 12 teaching license. One team per school.",
-  "paid_type": "unpaid",
-  "pay_detail": "No cost or pay is stated on the page.",
+  "paid_type": "not-stated",
+  "pay_detail": "The page does not say if there is a cost or pay.",
   "season": "school-year",
   "duration": "One school year, with two required trips to Argonne",
   "status": "closed-expect-reopen",
@@ -3611,7 +3611,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-16",
   "priority": 3,
-  "notes": "Questions: education@anl.gov.",
+  "notes": "Send questions to the email on the camp page: education@anl.gov. It is a good first step before the high school camps.",
   "verified_on_label": "Oct 16, 2026"
  },
  {
@@ -4993,7 +4993,7 @@
    "arts-media",
    "social-impact"
   ],
-  "what_you_do": "Join a group of teen artists who design and paint public murals together. Each year the group picks a community issue to explore, and murals have gone up with partners like Cap Metro and Austin Community College.",
+  "what_you_do": "Join a group of teen artists who plan and paint big murals around Austin. Each year the group picks a topic in the town to work on. Past murals were made with Cap Metro and other groups.",
   "min_age": null,
   "max_age": null,
   "grades": "Teens",
@@ -5073,7 +5073,7 @@
    "law-government",
    "health"
   ],
-  "what_you_do": "Learn basic firefighting, rescue and EMS skills from Austin firefighters. You get gear, train where real firefighters train, and compete in fire games in Rowlett and San Antonio.",
+  "what_you_do": "Learn how to fight fires, do rescues and give first aid, taught by Austin firefighters. You get real gear and train where they train. Teams compete in fire games each year.",
   "min_age": 14,
   "max_age": 19,
   "grades": null,
@@ -5087,7 +5087,7 @@
   "deadline_text": "No deadline posted. Fill out the interest card to get updates.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "Complete the Austin Fire Explorers Interest Card online to join the email list. Questions: firerecruiting@austintexas.gov.",
+  "how_to_apply": "Fill out the online interest card to get on the email list. You can send questions by email to the fire team at firerecruiting@austintexas.gov.",
   "needs_work_permit": false,
   "url": "https://www.austintexas.gov/fire/austin-fire-explorers-post-370",
   "apply_url": "https://fs25.formsite.com/AustinFire/ExplorerInterest/index",
@@ -5097,7 +5097,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "Competitions: DFW Fire Games in Rowlett in the spring and SAFD Explorers Fire Games in San Antonio in the fall. Being an Explorer does not affect a later Austin Fire cadet application. There are also volunteer chances.",
+  "notes": "Teams compete in the DFW Fire Games in the spring and the San Antonio fire games in the fall. Being an Explorer does not hurt you if you apply to be a firefighter later. There are also ways to volunteer.",
   "verified_on_label": "Oct 16, 2026"
  },
  {
@@ -5390,7 +5390,7 @@
    "social-impact",
    "arts-media"
   ],
-  "what_you_do": "A paid five-week summer job at SAFE. You get job and leadership training and work on real projects in media, outreach and education about healthy relationships and stopping bullying and abuse.",
+  "what_you_do": "A paid five-week summer job at SAFE. You get job and leader training. You work on real projects that teach teens about healthy dating and how to stop bullying and abuse.",
   "min_age": 14,
   "max_age": 17,
   "grades": null,
@@ -5404,10 +5404,10 @@
   "deadline_text": "Registration goes through Travis County's Summer Youth Employment Program, which opens Summer 2027 applications in January 2027 (exact date not posted).",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Register ahead of time through the Travis County Summer Youth Employment Program page linked from SAFE. Questions: Randy Randolph, Rrandolph@safeaustin.org, 512-356-1633.",
+  "how_to_apply": "Sign up ahead of time through the Travis County summer youth jobs program. SAFE links to it from its page. For questions, email Randy Randolph at Rrandolph@safeaustin.org or call 512-356-1633.",
   "needs_work_permit": false,
   "url": "https://www.safeaustin.org/our-services/prevention-and-education/expect-respect/youth-leadership-development/",
-  "apply_url": "https://www.traviscountytx.gov/health-human-services/children-and-youth/syep",
+  "apply_url": null,
   "sources_fetched": [
    "https://www.safeaustin.org/our-services/prevention-and-education/expect-respect/youth-leadership-development/",
    "https://www.traviscountytx.gov/health-human-services/children-and-youth/employment-program"
@@ -5415,7 +5415,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "SAFE also runs free Expect Respect leadership sessions in schools and clubs by request. Travis County's program may consider household income.",
+  "notes": "SAFE also leads free talks in schools and clubs if you ask. The county jobs program may look at your family's income.",
   "verified_on_label": "Oct 16, 2026"
  },
  {
@@ -22756,13 +22756,13 @@
    "health",
    "science"
   ],
-  "what_you_do": "Schools can book health care career experiences: classroom talks, phone calls with experts, and field trips. Schools with a partnership agreement can also set up shadowing and internships in fields like nursing, imaging, lab work and research.",
+  "what_you_do": "Your school can ask for health care career visits. Staff can come to class, talk by phone, or host a field trip. Some schools can also set up job shadow days and internships in fields like nursing and lab work.",
   "min_age": null,
   "max_age": null,
   "grades": "K-12",
   "who_can_apply": "K-12 schools ask for these experiences, not students or parents. Central Ohio schools and schools with a Workforce Partnerships agreement come first. Internships need a recommendation from a school district staff member.",
-  "paid_type": "unpaid",
-  "pay_detail": "No cost or pay is stated on the page.",
+  "paid_type": "not-stated",
+  "pay_detail": "The page does not say if there is a cost or pay.",
   "season": "school-year",
   "duration": "Varies; shadowing is a one-time visit and internships repeat",
   "status": "rolling",
@@ -22780,7 +22780,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-17",
   "priority": 3,
-  "notes": "Ohio State's hospital volunteer programs are only for people 18 and older, so this school route is the way in for high schoolers. Internship fields listed: respiratory therapy, clinical laboratory, imaging, nursing, rehab and sports medicine, and research.",
+  "notes": "You must be 18 to volunteer at this hospital. So for teens, this school route is the way in. Internships can be in nursing, imaging, lab work, rehab, sports medicine and research.",
   "verified_on_label": "Oct 17, 2026"
  },
  {
@@ -23904,7 +23904,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-16",
   "priority": 3,
-  "notes": "Only for Housing Authority of Cook County families. Missing more than three days means you are dismissed, with no exceptions for vacations or summer school. Pickup is at Pace bus stops. The two official pages give slightly different pay and hours, so confirm when you are hired. Illinois requires an employment certificate for workers under 16.",
+  "notes": "Only for families with the Housing Authority of Cook County. If you miss more than three days, you lose your spot. There are no breaks for trips or summer school. Rides leave from Pace bus stops. The two official pages list a bit different pay and hours, so ask when you are hired. In Illinois, workers under 16 need a work paper from school.",
   "verified_on_label": "Oct 16, 2026",
   "limited": true
  },
@@ -23934,7 +23934,7 @@
   "deadline_text": "Youth applications are due in April each year. The page gives no exact 2027 date.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Apply through the Student Conservation Association job site linked from the Forest Preserves page. Watch the SCA Chicago page for the 2027 opening.",
+  "how_to_apply": "Apply on the Student Conservation Association job site. The Forest Preserves page links to it. Check the SCA Chicago page in early spring for the 2027 opening.",
   "needs_work_permit": true,
   "url": "https://fpdcc.com/nature/conservation-corps-programs/",
   "apply_url": "https://myjobs.adp.com/scacareers/cx",
@@ -28727,7 +28727,7 @@
    "tech-cs",
    "food-hospitality"
   ],
-  "what_you_do": "Career class sequences in business, health care science, engineering, technology and family and consumer science. Some include internships, work experience, job certifications and college credit.",
+  "what_you_do": "Take a set of career classes in high school. Areas include business, health care, building and design, tech, and cooking and family life. Some classes add job training, real work time or college credit.",
   "min_age": null,
   "max_age": null,
   "grades": "Grades 9 to 12",
@@ -28741,7 +28741,7 @@
   "deadline_text": "No application for Educational Pathways. Pick classes with your counselor when you plan your schedule.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "Talk to your school counselor. You can also travel to another U-46 high school for a Program of Study your school does not offer. Contact: Doreen Roberts, Coordinator of Career and Technical Education.",
+  "how_to_apply": "Talk to your school counselor. If your school does not have the class set you want, you can take it at another U-46 high school. You can also ask Doreen Roberts, who runs the career classes.",
   "needs_work_permit": null,
   "url": "https://www.u-46.org/page/career-and-technical-education",
   "apply_url": null,
@@ -40113,14 +40113,14 @@
   "how_to_apply": "Make a free account on IllinoisJobLink.com to search for jobs. For job readiness help, use the IDES Office Locator to find the nearest office.",
   "needs_work_permit": null,
   "url": "https://ides.illinois.gov/jobs-workforce/programs/hire-the-future.html",
-  "apply_url": "https://ides.illinois.gov/about/locations.html",
+  "apply_url": "https://www.illinoisjoblink.com/",
   "sources_fetched": [
    "https://ides.illinois.gov/jobs-workforce/programs/hire-the-future.html"
   ],
   "verified": "fetched",
   "verified_on": "2026-10-16",
   "priority": 3,
-  "notes": "The page also links to free career exploration tools (Illinois Career Information System) and to federal young worker safety pages.",
+  "notes": "The page also links to free tools to help you pick a career. It links to pages about staying safe at your first job, too.",
   "verified_on_label": "Oct 16, 2026"
  },
  {
@@ -45437,7 +45437,7 @@
   "min_age": 15,
   "max_age": null,
   "grades": null,
-  "who_can_apply": "To get certified you must be at least 15 by the last day of class, finish 6 to 8 hours of online work and pass a swim test (150-yard swim, 2-minute tread, 50-yard swim, timed retrieval).",
+  "who_can_apply": "You must be 15 by the last day of the lifeguard class. You also do 6 to 8 hours of work online first. Then you must pass a swim test on the first night.",
   "paid_type": "paid",
   "pay_detail": "Paid city job. The rate is not stated on the page.",
   "season": "year-round",
@@ -45447,7 +45447,7 @@
   "deadline_text": "The city says it is always hiring lifeguards. Certification classes are scheduled based on interest.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "If you are already certified, apply on the city's job site. To get certified, email Aquatics Coordinator Julie Martin at jamartin@westlafayette.in.gov.",
+  "how_to_apply": "If you already have your lifeguard card, apply on the city job site. If not, email Julie Martin, who runs the pools, to get into a class: jamartin@westlafayette.in.gov.",
   "needs_work_permit": null,
   "url": "https://www.westlafayette.in.gov/our-city/john-r-dennis-wellness-center/aquatics/lifeguard-certification",
   "apply_url": "https://cityofwestlafayetteinemployees.munisselfservice.com/employmentopportunities/default.aspx",
@@ -45457,7 +45457,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-17",
   "priority": 2,
-  "notes": "You must attend all four class days to be certified. The page does not state the class fee or the hourly pay, so ask. Wellness Center: 765-269-4950, wellness@westlafayette.in.gov.",
+  "notes": "You must go to all four class days to pass. The swim test is a 150-yard swim, a 2-minute tread, a 50-yard swim and a timed dive for an object. The page does not list the class cost or pay, so ask. Wellness Center: 765-269-4950.",
   "verified_on_label": "Oct 17, 2026"
  },
  {
@@ -51445,7 +51445,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-17",
   "priority": 1,
-  "notes": "Pools: Goodman Pool, La Follette, Lapham Elementary and West High. You can earn Lifeguarding or Water Safety Instructor certification through MSCR. MSCR's lifeguard job pays $19 an hour but needs current lifeguard, CPR and first aid certification and lists no minimum age. Wisconsin requires a work permit for workers under 16. Help with the job site: (608) 204-3057.",
+  "notes": "You work at Goodman Pool, La Follette, Lapham or West High. MSCR can help you get your lifeguard card or swim teacher card. The MSCR lifeguard job pays $19 an hour, but you need your lifeguard, CPR and first aid cards first. In Wisconsin, workers under 16 need a work permit. Job site help: (608) 204-3057.",
   "verified_on_label": "Oct 17, 2026"
  },
  {
@@ -96443,7 +96443,7 @@
   "deadline_text": "The teen page gives no application dates. Complete applications go on a summer waiting list.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Fill out the online application for 16 and 17 year old summer volunteers. Within 2 weeks, email your shot records and a signed parent or guardian release form to volunteer.services@childrensmn.org. Then do an interview, online orientation and a fingerprint background check.",
+  "how_to_apply": "Fill out the online form for 16 and 17 year old summer helpers. Within 2 weeks, email your shot records and a form signed by a parent to volunteer.services@childrensmn.org. Then you have a talk with staff, a class online and a fingerprint check.",
   "needs_work_permit": false,
   "url": "https://www.childrensmn.org/support-childrens/volunteer/clinic-hospital-volunteers/teen-summer-volunteers/",
   "apply_url": "https://www.volgistics.com/appform/226305433",
@@ -96907,7 +96907,7 @@
   "fields": [
    "health"
   ],
-  "what_you_do": "Volunteer at a Level 1 trauma hospital in downtown Minneapolis. Most new volunteers start in Welcome Services, helping patients and guests find their way, then can move to other departments.",
+  "what_you_do": "Help out at a big trauma hospital in downtown Minneapolis. Most new helpers start at the front, showing patients and guests where to go. Later you can move to other parts of the hospital.",
   "min_age": 16,
   "max_age": null,
   "grades": null,
@@ -96921,7 +96921,7 @@
   "deadline_text": "No deadline posted. Apply any time and finish the steps within 6 weeks.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "Fill out the online volunteer application. Then interview with Volunteer Services, give shot records and TB test results, do a background check with fingerprints, and finish an online orientation.",
+  "how_to_apply": "Fill out the online form. Then you meet with the volunteer office, turn in your shot records and TB test, and get your fingerprints taken. Last, you take a short class online.",
   "needs_work_permit": false,
   "url": "https://hennepinhealthcare.org/volunteers",
   "apply_url": "https://www.volgistics.com/appform/229664981",
@@ -96931,7 +96931,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-17",
   "priority": 2,
-  "notes": "You can ask for a reference after you finish your service. Volunteer Services: 612-873-2512, volunteerservices@hcmed.org, 900 South 8th Street, Minneapolis.",
+  "notes": "When you finish, you can ask them to be a job reference. Volunteer office: 612-873-2512 or volunteerservices@hcmed.org. It is at 900 South 8th Street in Minneapolis.",
   "verified_on_label": "Oct 17, 2026"
  },
  {
@@ -97395,7 +97395,7 @@
   "deadline_text": "The page says to apply for the summer program between January 1 and April 30, with no year shown. Late applications are not considered.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Complete the online volunteer application between January 1 and April 30, then finish the three-step process and orientation. Teens need a signed parent consent form.",
+  "how_to_apply": "Fill out the online form between January 1 and April 30. Then finish the three steps and the training class. Teens need a form signed by a parent.",
   "needs_work_permit": false,
   "url": "https://www.healthpartners.com/care/hospitals/regions/about/volunteer/volunteer-opportunities/",
   "apply_url": null,
@@ -97406,7 +97406,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-17",
   "priority": 2,
-  "notes": "The summer program is very competitive. A year-round program (at least six months or 100 hours) is also open from age 15; see the HealthPartners high school volunteer card. Volunteer Services: 651-254-5709, volunteerservices@healthpartners.com.",
+  "notes": "Many teens apply, so it is hard to get in. A year-round program is also open from age 15; it needs at least six months or 100 hours. See the HealthPartners high school card. Volunteer office: 651-254-5709.",
   "verified_on_label": "Oct 17, 2026"
  },
  {

@@ -23,10 +23,12 @@ export const TABLE = {
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you find.html limit 2378800 to 2383200.
   // 2026-10-14 gaps wave: 89 cards for Alameda, Tri-Valley, Contra Costa and Orange County (2,608 programs) find.html limit 2383200 to 2467100.
   // 2026-10-14 gaps wave plus two Fremont cards read in a real browser (2,610 programs) find.html limit 2467100 to 2468900.
-  "find.html": { paths: ["data/entries-lite.json"], ceiling: 2468900, reason: "Find filters every program, so it needs the whole lite file" },
+  // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,630 programs) find.html limit 2468900 to 2488400. PENDING PERSON APPROVAL.
+  "find.html": { paths: ["data/entries-lite.json"], ceiling: 2488400, reason: "Find filters every program, so it needs the whole lite file" },
   // 2026-10-15: the Map page (754,977 bytes measured; about 151 KB gzipped). It counts every program by city, so it reads the map projection
   // (name, org and the keys the age, pay and open filters test) and the city points. PENDING PERSON APPROVAL for this weight on phones.
-  "map.html": { paths: ["data/entries-map.json", "data/map.json"], ceiling: 760000, reason: "Map counts every program by city: the small map projection of the lite rows plus the city points file" },
+  // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,630 programs) map.html limit 760000 to 760200. PENDING PERSON APPROVAL.
+  "map.html": { paths: ["data/entries-map.json", "data/map.json"], ceiling: 760200, reason: "Map counts every program by city: the small map projection of the lite rows plus the city points file" },
   "calendar.html": { paths: ["data/calendar.json", "data/entries-cal.json"], ceiling: 150000, reason: "Calendar draws deadline cards from the small calendar file (only the programs it lists) plus its own small file" },
   "younger.html": { paths: ["data/entries-core.json", "data/younger.json"], ceiling: 1100000, reason: "Ages 12 to 14 reads the core file and its own small file; headroom up to the card file size" },
   // Raised from 130000 to 145000 on 2026-10-12: the employer list grew to 147 entries (about 136 KB, one entry per line, about 30 KB gzipped).
@@ -42,7 +44,8 @@ export const TABLE = {
   // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. insights.html limit 736500 to 748900.
   // 2026-10-14 gaps wave: 89 cards for Alameda, Tri-Valley, Contra Costa and Orange County (2,608 programs) insights.html limit 748900 to 776000.
   // 2026-10-14 gaps wave plus two Fremont cards read in a real browser (2,610 programs) insights.html limit 776000 to 776700.
-  "insights.html": { paths: ["data/entries-stats.json"], ceiling: 776700, reason: "Numbers page counts every program, so it needs the stats projection (about 528 KB), the one page over the 200000 default" },
+  // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,630 programs) insights.html limit 776700 to 782400. PENDING PERSON APPROVAL.
+  "insights.html": { paths: ["data/entries-stats.json"], ceiling: 782400, reason: "Numbers page counts every program, so it needs the stats projection (about 528 KB), the one page over the 200000 default" },
   "languages.html": { paths: ["data/languages.json"], ceiling: 200000, reason: SMALL },
   "parents.html": { paths: ["data/parents.json"], ceiling: 200000, reason: SMALL },
   "paycheck.html": { paths: ["data/money.json"], ceiling: 200000, reason: SMALL },
