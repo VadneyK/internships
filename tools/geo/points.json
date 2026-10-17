@@ -1,5 +1,5 @@
 {
- "read": "2026-10-15",
+ "read": "2026-10-17",
  "cities": [
   {
    "key": "Chandler, AZ",
@@ -345,7 +345,11 @@
    "lon": -122.045,
    "precision": "city",
    "ids": [
+    "cupertino-leaders-in-training",
+    "cupertino-recreation-event-volunteers",
+    "cupertino-techie-teens",
     "cupertino-teen-commission",
+    "cupertino-youth-activity-board",
     "de-anza-dual-enrollment"
    ]
   },
@@ -397,7 +401,10 @@
    "lon": -121.8962,
    "precision": "city",
    "ids": [
+    "dublin-city-volunteer-program",
     "dublin-lead-summer-program",
+    "dublin-library-teen-program-proposals",
+    "dublin-police-teen-academy",
     "dublin-youth-advisory-committee"
    ]
   },
@@ -550,8 +557,11 @@
     "ebrpd-junior-lifeguard-cadets",
     "eden-area-rop",
     "hayward-area-historical-society-volunteers",
+    "hayward-area-recreation-park-district-part-time-jobs",
     "hayward-area-recreation-park-district-volunteers",
+    "hayward-police-summer-youth-academy",
     "hayward-public-library-teen-volunteers",
+    "hayward-unified-youth-professionals-internship",
     "hayward-youth-commission",
     "police-explorers-hayward",
     "st-rose-hospital-shine-student-volunteers"
@@ -650,11 +660,18 @@
    "lon": -121.7598,
    "precision": "city",
    "ids": [
+    "larpd-event-volunteers",
     "larpd-junior-lifeguard-academy",
+    "larpd-part-time-jobs",
     "larpd-summer-youth-volunteer",
     "las-positas-dual-enrollment",
     "livermore-area-youth-advisory-commission",
     "livermore-library-young-adult-volunteers",
+    "livermore-police-explorers",
+    "llnl-biotech-summer-experience",
+    "llnl-manufacturing-workshop",
+    "llnl-sage-summer-camp",
+    "llnl-stem-with-phones-workshop",
     "tri-valley-rop"
    ]
   },
@@ -699,13 +716,26 @@
    ]
   },
   {
+   "key": "Los Altos Hills, CA",
+   "state": "CA",
+   "lat": 37.3668,
+   "lon": -122.1386,
+   "precision": "city",
+   "ids": [
+    "los-altos-hills-youth-commission"
+   ]
+  },
+  {
    "key": "Los Altos, CA",
    "state": "CA",
    "lat": 37.3684,
    "lon": -122.0966,
    "precision": "city",
    "ids": [
-    "los-altos-history-museum-teen-docent"
+    "los-altos-community-services-volunteers",
+    "los-altos-counselor-in-training",
+    "los-altos-history-museum-teen-docent",
+    "los-altos-youth-commission-council-academy"
    ]
   },
   {
@@ -778,8 +808,12 @@
    "lon": -122.1481,
    "precision": "city",
    "ids": [
+    "menlo-park-fire-explorer-post-109",
     "menlo-park-library-teen-advisory-group",
+    "menlo-park-police-cadets",
+    "menlo-park-swim-centers-team-sheeper-jobs",
     "menlo-park-youth-advisory-committee",
+    "peninsula-volunteers-menlo-park-senior-volunteer",
     "slac-regional-science-bowl-high-school"
    ]
   },
@@ -816,6 +850,11 @@
    "precision": "city",
    "ids": [
     "hssv-student-volunteer",
+    "milpitas-fire-explorers",
+    "milpitas-lifeguard-swim-instructor-jobs",
+    "milpitas-police-explorers",
+    "milpitas-recreation-leader-jobs",
+    "milpitas-volunteer-program",
     "milpitas-youth-advisory-commission"
    ]
   },
@@ -1050,7 +1089,10 @@
    "ids": [
     "alameda-county-district-1-intern-program",
     "alameda-county-fair-seasonal-jobs",
+    "livermore-pleasanton-fire-explorers",
     "pleasanton-aquatics-junior-volunteers",
+    "pleasanton-leader-in-training",
+    "pleasanton-police-teen-academy-and-explorers",
     "pleasanton-youth-commission",
     "valley-humane-society-volunteers"
    ]
@@ -1333,6 +1375,9 @@
    "ids": [
     "bgc-san-leandro-teen-summer-program",
     "san-leandro-library-teen-volunteers",
+    "san-leandro-police-explorers",
+    "san-leandro-recreation-counselor-in-training",
+    "san-leandro-recreation-lifeguard-jobs",
     "san-leandro-youth-advisory-commission"
    ]
   },
@@ -1454,6 +1499,7 @@
    "lon": -121.6895,
    "precision": "county",
    "ids": [
+    "santa-clara-county-sheriff-youth-cadets",
     "santa-clara-county-teen-cert",
     "scc-intern-and-earn",
     "scc-library-teen-volunteer"
@@ -1467,6 +1513,13 @@
    "precision": "city",
    "ids": [
     "mission-college-high-school-dual-enrollment",
+    "santa-clara-city-library-teen-library-leaders",
+    "santa-clara-city-library-teen-volunteers",
+    "santa-clara-city-library-teens-teach",
+    "santa-clara-instructor-lifeguard-jobs",
+    "santa-clara-pal-police-explorers",
+    "santa-clara-recreation-leader-jobs",
+    "santa-clara-students-of-service",
     "santa-clara-youth-commission"
    ]
   },
