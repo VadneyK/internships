@@ -4,6 +4,7 @@ This folder is the paper trail behind the program list. It is here so maintainer
 
 - `<region>-notes.md`: what was searched, what could not be found, and sourced tips for that region (first pass, Oct 7, 2026)
 - `<region>-excluded.json`: programs we looked at and left out, with the reason (18 and older only, college only, discontinued, could not verify, too local)
+- `orgs-hospitals-jobs-notes.md`: hospital teen volunteer programs, Davis and Yolo seasonal city jobs, and Boys and Girls Club and YMCA teen programs (Oct 16, 2026, issues #3, #4 and #6)
 - `guidance-notes.md`: sourced research behind the Rules, Playbook and Resume pages. Tags: [F] read on the official page, [S] snippet or secondary source, [K] recall that could not be re-verified, [SYN] drafted text. Only [F] facts are stated as facts on the site.
 - `quality-sweep-2026-10.md`: the October 16, 2026 accessibility and quality sweep (issue #9): axe-core, keyboard, zoom, live regions, facts between pages and links, in headless Chrome. Findings ranked by severity, with what was fixed and what needs a person.
 - `verification-2026-10-07/`: the second pass. Twelve fact-checkers re-opened every program's official page. Each report lists, per program, whether it was OK, FIXED (what changed), DOWNGRADED to "Confirm first", or REMOVED (why).
