@@ -16,6 +16,7 @@ const list = (d, ext) => readdirSync(join(root, d)).filter((f) => f.endsWith(ext
 // Names that are not data keys. Every entry must still be used somewhere, or the test fails.
 const ALLOWED = {
   gaps_list: "build.py template placeholder filled into src/contribute.html, not a data key",
+  lang_switch: "build.py template placeholder for the language link in the nav (ADR 0008), not a data key",
 };
 
 const known = new Set();

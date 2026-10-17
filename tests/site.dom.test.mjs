@@ -162,7 +162,10 @@ for (const file of PAGES) {
 
   test(`${file}: header nav has 8 links`, async () => {
     const { document } = await load(file);
-    assert.equal(document.querySelectorAll("nav.nav a").length, 8);
+    // A page with a Spanish twin also ends the nav with one language link (hreflang="es", ADR 0008); it is not one of the eight.
+    assert.equal(document.querySelectorAll("nav.nav a:not([hreflang])").length, 8);
+    const twin = fs.existsSync(new URL("../es/" + file, import.meta.url));
+    assert.equal(document.querySelectorAll('nav.nav a[hreflang="es"]').length, twin ? 1 : 0);
   });
 
   if (!["404.html", "index.html", "leaders.html", "states.html"].includes(file)) {
