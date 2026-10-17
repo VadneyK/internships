@@ -701,14 +701,34 @@
     out.push(cur);
     return out.join("\r\n");
   }
-  /* One all-day calendar event as .ics text. dateISO is YYYY-MM-DD. */
+  /* One all-day event as .ics text. dateISO is YYYY-MM-DD; url and alarms (TRIGGER values) are optional. */
   function icsEvent(o) {
     if (!o || !parseISO(o.dateISO)) return "";
-    var day = o.dateISO.replace(/-/g, ""), end = addDays(o.dateISO, 1).replace(/-/g, "");
-    var stamp = (o.stamp || new Date()).toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
-    return ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Teen Internship Guide//EN", "CALSCALE:GREGORIAN", "BEGIN:VEVENT",
-      "UID:" + o.uid + "@vadneyk.github.io", "DTSTAMP:" + stamp, "DTSTART;VALUE=DATE:" + day, "DTEND;VALUE=DATE:" + end,
-      "SUMMARY:" + icsEscape(o.title), "DESCRIPTION:" + icsEscape(o.desc), "END:VEVENT", "END:VCALENDAR"].map(icsFold).concat([""]).join("\r\n");
+    var stamp = (o.stamp || new Date()).toISOString().replace(/[-:]/g, "").replace(/\.\d+/, ""), t = icsEscape(o.title);
+    var lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Teen Internship Guide//EN", "CALSCALE:GREGORIAN", "BEGIN:VEVENT",
+      "UID:" + o.uid + "@vadneyk.github.io", "DTSTAMP:" + stamp, "DTSTART;VALUE=DATE:" + ymd(o.dateISO, 0), "DTEND;VALUE=DATE:" + ymd(o.dateISO, 1),
+      "SUMMARY:" + t, "DESCRIPTION:" + icsEscape(o.desc)];
+    if (o.url) lines.push("URL:" + o.url);
+    (o.alarms || []).forEach(function (a) { lines.push("BEGIN:VALARM", "ACTION:DISPLAY", "TRIGGER:" + a, "DESCRIPTION:" + t, "END:VALARM"); });
+    return lines.concat("END:VEVENT", "END:VCALENDAR", "").map(icsFold).join("\r\n");
+  }
+  function ymd(iso, n) { return addDays(iso, n).replace(/-/g, ""); }
+  /* A card's calendar event: a confirmed 2026-27 date to apply by, still ahead. Not a last-year-pattern date, an event day
+     or an opening day. Reminders at 9 AM a week and a day before (Google links cannot carry them). */
+  function calEvent(e, now) {
+    if (!e || !knownDeadline(e, now) || e.deadline_confidence !== "confirmed-2026-27" || effStatus(e, now) === "event" || e.opens_iso === e.deadline_iso) return null;
+    var u = safeUrl(e.url), n = e.name;
+    return { uid: "deadline-" + e.id, file: e.id + "-deadline.ics", dateISO: e.deadline_iso, url: u, alarms: ["-P6DT15H", "-PT15H"], title: "Last day to apply: " + n,
+      desc: "Last day to apply for " + n + (e.org ? ", " + e.org : "") + ". Check the date on the official page" + (u ? ": " + u : "") + ". From the Teen Internship Guide." };
+  }
+  function gcalHref(o) {
+    return "https://calendar.google.com/calendar/render?action=TEMPLATE&text=" + encodeURIComponent(o.title) + "&dates=" + ymd(o.dateISO, 0) + "/" + ymd(o.dateISO, 1) + "&details=" + encodeURIComponent(o.desc);
+  }
+  /* A card's .ics button and Google Calendar link, or "" when calEvent says no. */
+  function calButtons(e, now) {
+    var c = calEvent(e, now), n = e && esc(e.name), k = '" class="btn sm alt noprint" aria-label="';
+    return c ? '<button type="button" data-cal="' + esc(e.id) + k + "Add deadline to calendar for " + n + '">Add deadline to calendar</button><a href="' + esc(gcalHref(c)) + k +
+      "Google Calendar: add deadline for " + n + '" target="_blank" rel="noopener">Google Calendar</a>' : "";
   }
   function mailtoHref(subject, body) { return "mailto:?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body); }
   function smsHref(body) { return "sms:?&body=" + encodeURIComponent(body); }
@@ -814,7 +834,7 @@
     effStatus: effStatus, futureDeadline: futureDeadline, knownDeadline: knownDeadline, isOpenish: isOpenish, isAnytime: isAnytime, ageOk: ageOk,
     matches: matches, facetCounts: facetCounts, relaxOptions: relaxOptions, placeCounts: placeCounts, rank: rank, compare: compare, sortList: sortList, topPicks: topPicks, ageText: ageText,
     STATUSES: STATUSES, toISO: toISO, addDays: addDays, followUpISO: followUpISO, planSummary: planSummary,
-    icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf, stateFromPlace: stateFromPlace, STATE_OF: STATE_OF, permitFor: permitFor, hoursCheck: hoursCheck, paycheck: paycheck, PERMIT_STATES: PERMIT_STATES, CITIES: CITIES, AREAS: AREAS, PLACE_ALIASES: PLACE_ALIASES, PICK_GROUPS: PICK_GROUPS, STATES: STATES, placeRegions: placeRegions, placeLabel: placeLabel, hubsOfPlace: hubsOfPlace,
+    icsEvent: icsEvent, calEvent: calEvent, gcalHref: gcalHref, calButtons: calButtons, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf, stateFromPlace: stateFromPlace, STATE_OF: STATE_OF, permitFor: permitFor, hoursCheck: hoursCheck, paycheck: paycheck, PERMIT_STATES: PERMIT_STATES, CITIES: CITIES, AREAS: AREAS, PLACE_ALIASES: PLACE_ALIASES, PICK_GROUPS: PICK_GROUPS, STATES: STATES, placeRegions: placeRegions, placeLabel: placeLabel, hubsOfPlace: hubsOfPlace,
     gradePhrase: gradePhrase, blanksLeft: blanksLeft, linkContacts: linkContacts, whoToAskHtml: whoToAskHtml, clockLabel: clockLabel
   };
   return api;
