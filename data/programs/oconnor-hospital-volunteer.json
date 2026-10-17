@@ -1,0 +1,40 @@
+{
+  "id": "oconnor-hospital-volunteer",
+  "name": "O'Connor Hospital Volunteers (students 15 and up)",
+  "org": "Santa Clara Valley Healthcare, O'Connor Hospital",
+  "regions": [
+    "san-jose",
+    "silicon-valley"
+  ],
+  "city": "San Jose, CA (2105 Forest Ave)",
+  "type": "volunteer",
+  "fields": [
+    "health"
+  ],
+  "what_you_do": "You give kind and friendly service to patients, visitors and staff at a county hospital. Training for your service area happens on your first shift.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Students age 15 or older and adults. You must volunteer for 6 months or more. No summer-only volunteering.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": "6 months or more",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline posted. The page invites applications online with no window stated (read 2026-10-16).",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply online, then email the volunteer reference form to OCHVolunteer@hhs.sccgov.org. You will be contacted within two weeks for an interview. Then a 2-hour orientation, background check, health screening clearance and badging. Phone: 408-947-2830.",
+  "needs_work_permit": false,
+  "url": "https://och.scvh.org/giving-volunteering/volunteer-services/how-become-volunteer",
+  "apply_url": "https://www.volgistics.com/appform/1363522158",
+  "sources_fetched": [
+    "https://och.scvh.org/giving-volunteering/volunteer-services/how-become-volunteer",
+    "https://och.scvh.org/giving-volunteering/volunteer-services"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Read on the official O'Connor Hospital page on 2026-10-16. Health screening asks for proof of a COVID-19 vaccine or booster, a yearly flu shot, immunity to measles, mumps, rubella and varicella, a Tdap shot, and a TB test within the past 3 months (then yearly). Start gathering shot records early. The page does not state weekly shift length or any fee. O'Connor is a sister hospital of Santa Clara Valley Medical Center. The email link on the page has a typo, so type OCHVolunteer@hhs.sccgov.org by hand."
+}

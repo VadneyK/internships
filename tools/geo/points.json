@@ -1,5 +1,5 @@
 {
- "read": "2026-10-15",
+ "read": "2026-10-17",
  "cities": [
   {
    "key": "Chandler, AZ",
@@ -267,6 +267,16 @@
    ]
   },
   {
+   "key": "Castro Valley, CA",
+   "state": "CA",
+   "lat": 37.7083,
+   "lon": -122.0628,
+   "precision": "city",
+   "ids": [
+    "sutter-eden-medical-center-volunteer"
+   ]
+  },
+  {
    "key": "Chula Vista, CA",
    "state": "CA",
    "lat": 32.6277,
@@ -382,7 +392,10 @@
     "cosmos-uc-davis",
     "davis-aquatics-lifeguard-junior-swim",
     "davis-junior-basketball-officials",
+    "davis-rec-leader-in-training",
+    "davis-seasonal-lifeguard-swim-instructor",
     "davis-senior-high-cte-pathways",
+    "davis-summer-camp-recreation-leader",
     "davis-teen-leadership-council",
     "djusd-internship-career-course",
     "facciotti-lab-hs-internships",
@@ -517,6 +530,16 @@
    ]
   },
   {
+   "key": "Gilroy, CA",
+   "state": "CA",
+   "lat": 37.0064,
+   "lon": -121.5853,
+   "precision": "city",
+   "ids": [
+    "st-louise-regional-hospital-volunteer"
+   ]
+  },
+  {
    "key": "Glendale, CA",
    "state": "CA",
    "lat": 34.1814,
@@ -596,6 +619,16 @@
    ]
   },
   {
+   "key": "La Honda, CA",
+   "state": "CA",
+   "lat": 37.3177,
+   "lon": -122.2584,
+   "precision": "city",
+   "ids": [
+    "ymca-sf-camp-jones-gulch-lit-cit"
+   ]
+  },
+  {
    "key": "La Jolla, CA",
    "state": "CA",
    "lat": 32.8546,
@@ -667,6 +700,17 @@
    "ids": [
     "loma-linda-university-discovery-program",
     "va-loma-linda-summer-youth-volunteer-program"
+   ]
+  },
+  {
+   "key": "Loma Mar, CA",
+   "state": "CA",
+   "lat": 37.2658,
+   "lon": -122.3007,
+   "precision": "city",
+   "ids": [
+    "ymca-east-bay-camp-loma-mar-camp-assistant",
+    "ymca-east-bay-camp-loma-mar-leaders-in-training"
    ]
   },
   {
@@ -778,6 +822,7 @@
    "lon": -122.1481,
    "precision": "city",
    "ids": [
+    "bgc-peninsula-teen-volunteer-summer-internship",
     "menlo-park-library-teen-advisory-group",
     "menlo-park-youth-advisory-committee",
     "slac-regional-science-bowl-high-school"
@@ -839,7 +884,8 @@
    "lon": -121.6419,
    "precision": "city",
    "ids": [
-    "police-explorers-morgan-hill"
+    "police-explorers-morgan-hill",
+    "ymca-silicon-valley-mt-madonna-high-school-volunteer"
    ]
   },
   {
@@ -898,6 +944,7 @@
    "precision": "city",
    "ids": [
     "alameda-county-community-food-bank-volunteer",
+    "alameda-health-system-heal-internship",
     "bart-summer-internship-high-school",
     "beyond-emancipation-foster-youth",
     "bgc-oakland-junior-staff",
@@ -998,6 +1045,7 @@
     "stanford-aimi-summer-research-internship",
     "stanford-care-explorers",
     "stanford-childrens-teen-volunteer",
+    "sutter-pamf-palo-alto-student-volunteer",
     "youth-community-service-palo-alto"
    ]
   },
@@ -1094,6 +1142,7 @@
    "lon": -122.2137,
    "precision": "city",
    "ids": [
+    "kaiser-redwood-city-high-school-volunteer",
     "redwood-city-leaders-in-training",
     "san-mateo-county-jobs-for-youth"
    ]
@@ -1193,7 +1242,8 @@
     "smud-hs-internship",
     "uc-davis-health-volunteen",
     "uc-davis-mmi-hs-internship",
-    "uc-davis-upward-bound"
+    "uc-davis-upward-bound",
+    "ymca-superior-california-bear-valley-cit"
    ]
   },
   {
@@ -1275,6 +1325,8 @@
    "lon": -122.4193,
    "precision": "manual",
    "ids": [
+    "bgc-san-francisco-camp-mendocino-lit-cit",
+    "bgc-san-francisco-leaders-in-training",
     "cpmc-information-desk-van-ness-volunteer",
     "sf-826-valencia",
     "sf-breakthrough-sf",
@@ -1298,7 +1350,9 @@
     "sf-ucsf-sep-hs-intern",
     "sf-youth-art-exchange",
     "sf-youthworks",
-    "ymca-san-francisco-workforce-development"
+    "ymca-san-francisco-workforce-development",
+    "ymca-sf-teen-volunteer",
+    "ymca-sf-youth-empowerment-fund"
    ]
   },
   {
@@ -1311,6 +1365,9 @@
     "accel-middle-college",
     "evergreen-valley-college-dual-enrollment",
     "happy-hollow-zooteen",
+    "kaiser-san-jose-high-school-volunteer",
+    "oconnor-hospital-volunteer",
+    "regional-medical-center-san-jose-junior-volunteer",
     "san-jose-middle-college",
     "san-jose-public-library-teen-volunteer",
     "san-jose-works",
@@ -1466,6 +1523,7 @@
    "lon": -121.968,
    "precision": "city",
    "ids": [
+    "kaiser-santa-clara-high-school-volunteer",
     "mission-college-high-school-dual-enrollment",
     "santa-clara-youth-commission"
    ]
@@ -1488,6 +1546,16 @@
    "precision": "city",
    "ids": [
     "west-valley-college-concurrent-enrollment"
+   ]
+  },
+  {
+   "key": "South San Francisco, CA",
+   "state": "CA",
+   "lat": 37.6551,
+   "lon": -122.3762,
+   "precision": "city",
+   "ids": [
+    "kaiser-south-san-francisco-high-school-volunteer"
    ]
   },
   {
@@ -1585,6 +1653,7 @@
    "precision": "city",
    "ids": [
     "john-muir-walnut-creek-high-school-volunteer",
+    "kaiser-walnut-creek-high-school-volunteer",
     "walnut-creek-lindsay-wildlife-camp-counselor-in-training",
     "walnut-creek-lindsay-wildlife-owl-teen-program",
     "walnut-creek-save-mount-diablo-volunteer-workdays"
@@ -1597,9 +1666,21 @@
    "lon": -121.5487,
    "precision": "city",
    "ids": [
+    "west-sac-lifeguard-swim-instructor",
+    "west-sac-recreation-leader",
     "west-sac-teen-heroes",
     "ws-home-run-internships",
     "yolo-children-alliance-youth-employment"
+   ]
+  },
+  {
+   "key": "Winters, CA",
+   "state": "CA",
+   "lat": 38.5333,
+   "lon": -121.9755,
+   "precision": "city",
+   "ids": [
+    "winters-seasonal-lifeguard"
    ]
   },
   {
@@ -6940,6 +7021,8 @@
    "south-bay-youth-one-stop-work-experience",
    "southwest-conservation-corps-high-school-conservation-crews",
    "stanford-health-care-teen-volunteer",
+   "sutter-mills-peninsula-youth-volunteer",
+   "sutter-pamf-mountain-view-sunnyvale-student-volunteer",
    "twin-cities-conservation-corps-youth-interns",
    "twin-cities-genesys-works-internship",
    "twin-cities-healthpartners-teen-volunteer",
@@ -6955,6 +7038,7 @@
    "wdsra-teen-volunteers-western-dupage",
    "wichita-ymca-job-prep-teen-summer-jobs",
    "ymca-orange-county-volunteer",
+   "ymca-silicon-valley-teen-youth-councils",
    "ymca-triangle-lightner-y-achievers"
   ]
  },
