@@ -14,6 +14,7 @@ alameda-county-itd-student-intern-program	Alameda County, CA	point	Alameda Count
 alameda-county-library-teen-volunteer	Fremont, Newark and Union City, CA	multi				several places before the state
 alameda-free-library-teen-advisory-group	Alameda, CA (Main Library, Stafford Room)	point	Alameda, CA	manual	Census Gazetteer ZCTA 94501 (Alameda, CA) internal point	override: Alameda is an island city and the Gazetteer place point (37.7423, -122.2605) falls in San Francisco Bay water, outside the state outline; ZIP code area 94501 centroid from the Census Gazetteer ZCTA file lies on the island
 alameda-free-library-teen-volunteers	Alameda, CA (Main Library)	point	Alameda, CA	manual	Census Gazetteer ZCTA 94501 (Alameda, CA) internal point	override: Alameda is an island city and the Gazetteer place point (37.7423, -122.2605) falls in San Francisco Bay water, outside the state outline; ZIP code area 94501 centroid from the Census Gazetteer ZCTA file lies on the island
+alameda-health-system-heal-internship	Oakland, CA (Wilma Chan Highland Hospital Campus)	point	Oakland, CA	city	place:city	
 alameda-high-school-cte-pathways	Alameda, CA (2200 Central Ave)	point	Alameda, CA	manual	Census Gazetteer ZCTA 94501 (Alameda, CA) internal point	override: Alameda is an island city and the Gazetteer place point (37.7423, -122.2605) falls in San Francisco Bay water, outside the state outline; ZIP code area 94501 centroid from the Census Gazetteer ZCTA file lies on the island
 alameda-teen-haunted-house-volunteers	Alameda, CA (Veterans Building and South Shore Mall)	point	Alameda, CA	manual	Census Gazetteer ZCTA 94501 (Alameda, CA) internal point	override: Alameda is an island city and the Gazetteer place point (37.7423, -122.2605) falls in San Francisco Bay water, outside the state outline; ZIP code area 94501 centroid from the Census Gazetteer ZCTA file lies on the island
 alameda-youth-career-job-fair	Alameda, CA (Encinal Jr/Sr High)	point	Alameda, CA	manual	Census Gazetteer ZCTA 94501 (Alameda, CA) internal point	override: Alameda is an island city and the Gazetteer place point (37.7423, -122.2605) falls in San Francisco Bay water, outside the state outline; ZIP code area 94501 centroid from the Census Gazetteer ZCTA file lies on the island
@@ -99,12 +100,17 @@ asu-access-rise-summer-leadership-institute	Tempe, AZ	point	Tempe, AZ	city	place
 asu-jbmshp-math-science-honors-summer	Tempe, AZ	point	Tempe, AZ	city	place:city	
 asu-wp-carey-fleischer-scholars	Tempe, AZ	point	Tempe, AZ	city	place:city	
 atlanta-21cl-syli-goizueta-business-institute	Emory University, Atlanta, GA	point	Atlanta, GA	city	place:city	used the second name (Atlanta) over the first (Emory University)
+atlanta-airport-summer-youth-employment-program	Atlanta, GA	point	Atlanta, GA	city	place:city	
+atlanta-airport-youth-apprenticeship-program	Atlanta, GA	point	Atlanta, GA	city	place:city	
 atlanta-botanical-garden-speak-volunteers	Atlanta, GA	point	Atlanta, GA	city	place:city	
 atlanta-botanical-garden-summer-high-school-internship	Atlanta, GA	point	Atlanta, GA	city	place:city	
 atlanta-business-league-student-business-shadow-project	Atlanta, GA	point	Atlanta, GA	city	place:city	
 atlanta-chris-180-youth-homelessness-and-housing	Atlanta, GA	point	Atlanta, GA	city	place:city	
 atlanta-college-and-career-academy	Atlanta, GA	point	Atlanta, GA	city	place:city	
 atlanta-community-food-bank-teen-volunteers	Atlanta, GA	point	Atlanta, GA	city	place:city	
+atlanta-grady-teen-experience-leadership-program	Atlanta, GA	point	Atlanta, GA	city	place:city	
+atlanta-gsu-institute-on-neuroscience	Atlanta, GA	point	Atlanta, GA	city	place:city	
+atlanta-gsu-neuroscience-school	Atlanta, GA	point	Atlanta, GA	city	place:city	
 atlanta-parks-rec-teen-leaders	Atlanta, GA	point	Atlanta, GA	city	place:city	
 atlanta-public-schools-mentorship-internship	Atlanta, GA	point	Atlanta, GA	city	place:city	
 atlanta-public-schools-work-based-learning	Atlanta, GA	point	Atlanta, GA	city	place:city	
@@ -160,11 +166,15 @@ berkeley-pre-college-scholars	Berkeley, CA	point	Berkeley, CA	city	place:city
 berkeley-public-library-teen-volunteer	Berkeley, CA	point	Berkeley, CA	city	place:city	
 berkeley-rep-teen-council	Berkeley, CA	point	Berkeley, CA	city	place:city	
 berkeley-youthworks	Berkeley, CA	point	Berkeley, CA	city	place:city	
+bethesda-suburban-hospital-junior-volunteers	Bethesda, MD	point	Bethesda, MD	city	place:CDP	
 bethlehem-lehigh-iacocca-global-entrepreneurship-intensive	Bethlehem, PA	point	Bethlehem, PA	city	place:city	
 beyond-emancipation-foster-youth	Oakland, CA	point	Oakland, CA	city	place:city	
 bgc-ncil-industry-clubs	Elgin / South Elgin area and other Fox Valley clubs, IL	multi				override: Many places listed
 bgc-ncil-keystone-club-youth-of-the-year	Elgin, South Elgin, Aurora, Streamwood, Hanover Park and Schaumburg, IL	multi				several places before the state
 bgc-oakland-junior-staff	Oakland, CA	point	Oakland, CA	city	place:city	
+bgc-peninsula-teen-volunteer-summer-internship	Menlo Park, CA (Boys & Girls Clubs of the Peninsula, 401 Pierce Rd., serving San Mateo County)	point	Menlo Park, CA	city	place:city	
+bgc-san-francisco-camp-mendocino-lit-cit	San Francisco, CA (overnight camp at Camp Mendocino; buses leave from San Francisco)	point	San Francisco, CA	manual	Census Gazetteer ZCTA 94102 (San Francisco, CA) internal point	override: The Gazetteer place point (37.7272, -123.0322) is about 30 miles out in the Pacific because the city limits include the Farallon Islands, so it falls outside the state outline; ZIP code area 94102 (Civic Center) centroid from the Census Gazetteer ZCTA file is used instead
+bgc-san-francisco-leaders-in-training	San Francisco, CA (several Clubhouses)	point	San Francisco, CA	manual	Census Gazetteer ZCTA 94102 (San Francisco, CA) internal point	override: The Gazetteer place point (37.7272, -123.0322) is about 30 miles out in the Pacific because the city limits include the Farallon Islands, so it falls outside the state outline; ZIP code area 94102 (Civic Center) centroid from the Census Gazetteer ZCTA file is used instead
 bgc-san-leandro-teen-summer-program	San Leandro, CA (Teen Clubhouse, 2200 San Leandro Blvd)	point	San Leandro, CA	city	place:city	
 billings-city-college-drone-camp	Billings, MT	point	Billings, MT	city	place:city	
 billings-hrdc-wioa-youth	Billings, MT	point	Billings, MT	city	place:city	
@@ -330,6 +340,7 @@ caltech-summer-research-connection-pasadena-unified	Pasadena, CA	point	Pasadena,
 cambridge-public-library-teen-advisory-board	Cambridge, MA	point	Cambridge, MA	city	place:city	
 camp-ignite-bc-firefighting-camp-for-young-women	Metro Vancouver, BC	multi				override: Regional district of many cities, not one place
 capital-area-nextgen-youth-services	Raleigh, NC	point	Raleigh, NC	city	place:city	
+carilion-summer-of-service-youth-volunteers	Roanoke, Christiansburg, Rocky Mount and Lexington, VA	multi				several places before the state
 carrboro-youth-council	Carrboro, NC	point	Carrboro, NC	city	place:town	
 cassadaga-job-corps-center	Cassadaga, NY (campus with dorms)	point	Cassadaga, NY	city	place:village	
 ccad-college-preview	Columbus, OH	point	Columbus, OH	city	place:city	
@@ -612,7 +623,10 @@ danville-town-volunteer-program	Danville, CA	point	Danville, CA	city	place:town
 danville-youth-council	Danville, CA	point	Danville, CA	city	place:town	
 davis-aquatics-lifeguard-junior-swim	Davis, CA	point	Davis, CA	city	place:city	
 davis-junior-basketball-officials	Davis, CA	point	Davis, CA	city	place:city	
+davis-rec-leader-in-training	Davis, CA	point	Davis, CA	city	place:city	
+davis-seasonal-lifeguard-swim-instructor	Davis, CA	point	Davis, CA	city	place:city	
 davis-senior-high-cte-pathways	Davis, CA	point	Davis, CA	city	place:city	
+davis-summer-camp-recreation-leader	Davis, CA	point	Davis, CA	city	place:city	
 davis-teen-leadership-council	Davis, CA	point	Davis, CA	city	place:city	
 dc-childrens-national-summer-high-school-volunteer	Washington, DC (main hospital, Michigan Avenue NW)	point	Washington, DC	city	place:city	
 de-anza-dual-enrollment	Cupertino, CA	point	Cupertino, CA	city	place:city	
@@ -675,6 +689,7 @@ durham-parks-durham-aquatic-school-lifeguard	Durham, NC	point	Durham, NC	city	pl
 durham-parks-teen-volunteers	Durham, NC	point	Durham, NC	city	place:city	
 durham-tech-asap-pre-apprenticeship	Durham, NC	point	Durham, NC	city	place:city	
 durham-tech-career-and-college-promise	Durham, NC	point	Durham, NC	city	place:city	
+durham-youthworks	Durham, NC	point	Durham, NC	city	place:city	
 ebayc-volunteer-and-internships	Oakland, CA	point	Oakland, CA	city	place:city	
 ebmud-high-school-summer-internship	Oakland, CA and EBMUD service area	point	Oakland, CA	city	place:city	override: Oakland is the named city; the utility service area surrounds it
 ebrpd-junior-lifeguard-cadets	Hayward, CA (Don Castro Regional Recreation Area)	point	Hayward, CA	city	place:city	
@@ -747,6 +762,7 @@ fairfax-gmu-mason-game-and-technology-academy	Fairfax and Manassas, VA	multi				
 fairfax-gmu-valhen-stem-academy	Fairfax, VA	point	Fairfax, VA	city	place:city	
 fairfax-gmu-washington-journalism-and-media-conference	Fairfax, VA	point	Fairfax, VA	city	place:city	
 fairfax-gmu-wyse-washington-youth-summit-environment	Fairfax, VA	point	Fairfax, VA	city	place:city	
+fairfax-mount-vernon-estate-volunteers	Mount Vernon, VA	point	Mount Vernon, VA	city	place:CDP	
 fairfax-ncs-community-volunteers	Fairfax County, VA	point	Fairfax County, VA	county	county	
 fairfax-nova-e-summer-energy-stem-program	Manassas and Sterling, VA (NOVA Manassas or Loudoun campus)	multi				several places before the state
 fairfax-park-authority-rec-pac-counselor-in-training	Fairfax County, VA	point	Fairfax County, VA	county	county	
@@ -1048,6 +1064,11 @@ john-muir-walnut-creek-high-school-volunteer	Walnut Creek, CA	point	Walnut Creek
 johnson-county-library-teen-volunteer	Overland Park and Johnson County, KS	point	Overland Park, KS	city	place:city	override: Johnson County contains Overland Park; point placed at Overland Park
 junior-achievement-norcal	Northern California (HQ Walnut Creek)	multi				sub-state region
 kaiser-launch-high-school-program	Northern California Kaiser Permanente service areas	multi				sub-state region
+kaiser-redwood-city-high-school-volunteer	Redwood City, CA (1100 Veterans Blvd)	point	Redwood City, CA	city	place:city	
+kaiser-san-jose-high-school-volunteer	San Jose, CA (250 Hospital Parkway)	point	San Jose, CA	city	place:city	
+kaiser-santa-clara-high-school-volunteer	Santa Clara, CA (Homestead campus, 710 Lawrence Expressway)	point	Santa Clara, CA	city	place:city	
+kaiser-south-san-francisco-high-school-volunteer	South San Francisco, CA (1200 El Camino Real; also Daly City and San Bruno offices)	point	South San Francisco, CA	city	place:city	
+kaiser-walnut-creek-high-school-volunteer	Walnut Creek, CA (1425 South Main St)	point	Walnut Creek, CA	city	place:city	
 kane-county-forest-preserve-volunteer-workdays	Kane County, IL (offices in Geneva)	point	Kane County, IL	county	county	
 kane-county-youth-services	Kane, DeKalb and Kendall Counties (Elgin area), IL	multi				several places before the state
 kansas-4h-discovery-days-k-state	Manhattan, KS	point	Manhattan, KS	city	place:city	
@@ -1617,6 +1638,7 @@ nfte-world-series-of-innovation	Online (anywhere)	online
 nhm-marine-teens	Los Angeles, CA	point	Los Angeles, CA	city	place:city	
 nhmu-critical-action-lab	Salt Lake City, UT	point	Salt Lake City, UT	city	place:city	
 nhmu-teen-explainers	Salt Lake City, UT	point	Salt Lake City, UT	city	place:city	
+nih-summer-internship-program	Bethesda, MD	point	Bethesda, MD	city	place:CDP	
 nisra-volunteers-and-summer-camp-jobs-elgin	Elgin and 12 other member communities, northern Illinois	multi				places plus a state name
 nist-ship-gaithersburg	Gaithersburg, MD	point	Gaithersburg, MD	city	place:city	
 norfolk-virginia-zoo-conservation-youth-team	Norfolk, VA	point	Norfolk, VA	city	place:city	
@@ -1628,6 +1650,7 @@ north-vancouver-city-library-teen-volunteer	North Vancouver, BC	point	North Vanc
 north-vancouver-recreation-lifeguard-swim-instructor-pathway	North Vancouver, BC	point	North Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBFRV, https://geogratis.gc.ca/services/geoname/en/geonames/JBFRV	
 north-vancouver-recreation-nvrc-volunteer	North Vancouver, BC	point	North Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBFRV, https://geogratis.gc.ca/services/geoname/en/geonames/JBFRV	
 north-vancouver-sd44-youth-train-in-trades	North Vancouver, BC	point	North Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBFRV, https://geogratis.gc.ca/services/geoname/en/geonames/JBFRV	
+north-vancouver-vch-north-shore-volunteer	North Vancouver, BC	point	North Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBFRV, https://geogratis.gc.ca/services/geoname/en/geonames/JBFRV	
 northwestern-ctd-civic-leadership-institute	Evanston, IL	point	Evanston, IL	city	place:city	
 northwestern-medicine-summer-student-volunteer	Geneva, Winfield, Lake Forest and other suburbs, IL	multi				list of places before the state
 northwestern-medill-cherubs-journalism	Evanston, IL	point	Evanston, IL	city	place:city	
@@ -1638,6 +1661,7 @@ nova-parks-waterpark-jobs	Northern Virginia (Fairfax, Alexandria and Arlington w
 novaworks-young-adult-services	Sunnyvale, CA (serves San Mateo County and northern Santa Clara County)	point	Sunnyvale, CA	city	place:city	
 nps-youth-conservation-corps	Participating national parks (see the NPS park list)	national				
 nyc-ace-mentor-program-greater-new-york	Teams in Manhattan, Brooklyn, Queens, Long Island, White Plains and Riverdale (and remote)	multi				override: Many places listed
+nyc-amnh-science-research-mentoring-program	New York, NY	point	New York, NY	city	place:city	
 nyc-apollo-theater-academy-arts-production-internship	Manhattan, NY (Harlem)	point	Manhattan, NY	county	Manhattan is a borough with no Gazetteer place; same area as New York County	alias: Manhattan is a borough with no Gazetteer place; same area as New York County
 nyc-apollo-theater-academy-technical-internship	Manhattan, NY (Harlem)	point	Manhattan, NY	county	Manhattan is a borough with no Gazetteer place; same area as New York County	alias: Manhattan is a borough with no Gazetteer place; same area as New York County
 nyc-bbg-garden-apprentice-program	Brooklyn, NY	point	Brooklyn, NY	county	Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County	alias: Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County
@@ -1655,6 +1679,10 @@ nyc-brooklyn-groundswell-summer-leadership-institute	Brooklyn, NY (murals across
 nyc-brooklyn-maimonides-health-scholars-ed-internship	Brooklyn, NY (Maimonides Medical Center)	point	Brooklyn, NY	county	Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County	alias: Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County
 nyc-brooklyn-maimonides-high-school-volunteer	Brooklyn, NY (Maimonides, 5014 Fort Hamilton Parkway)	point	Brooklyn, NY	county	Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County	alias: Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County
 nyc-brooklyn-maimonides-science-scholars	Brooklyn, NY (Maimonides Medical Center)	point	Brooklyn, NY	county	Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County	alias: Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County
+nyc-brooklyn-museum-apprentice-program	Brooklyn, NY	point	Brooklyn, NY	county	Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County	alias: Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County
+nyc-brooklyn-museum-creative-practice	Brooklyn, NY	point	Brooklyn, NY	county	Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County	alias: Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County
+nyc-brooklyn-museum-intersextions	Brooklyn, NY	point	Brooklyn, NY	county	Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County	alias: Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County
+nyc-brooklyn-museum-teen-night-planning-committee	Brooklyn, NY	point	Brooklyn, NY	county	Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County	alias: Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County
 nyc-brooklyn-pratt-precollege-summer-intensive	Brooklyn, NY (Pratt campus, 200 Willoughby Ave)	point	Brooklyn, NY	county	Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County	alias: Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County
 nyc-brooklyn-prospect-park-alliance-teen-service-series	Brooklyn, NY (Prospect Park)	point	Brooklyn, NY	county	Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County	alias: Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County
 nyc-ccny-zahn-bossgirls-summer-entrepreneurship	CCNY campus, 160 Convent Ave, New York, NY	point	New York, NY	city	place:city	3 name tokens before state, used the last (New York)
@@ -1685,6 +1713,9 @@ nyc-manhattan-university-mechanical-engineering-summer-institute	Bronx, NY (Rive
 nyc-manhattan-university-omalley-business-pre-college	Bronx, NY (Riverdale) and online	point	Bronx, NY	county	The Bronx is a borough with no Gazetteer place; same area as Bronx County	alias: The Bronx is a borough with no Gazetteer place; same area as Bronx County
 nyc-manhattan-university-residential-summer-engineering	Bronx, NY (Riverdale)	point	Bronx, NY	county	The Bronx is a borough with no Gazetteer place; same area as Bronx County	alias: The Bronx is a borough with no Gazetteer place; same area as Bronx County
 nyc-manhattan-university-summer-engineering-awareness-program	Bronx, NY (Riverdale)	point	Bronx, NY	county	The Bronx is a borough with no Gazetteer place; same area as Bronx County	alias: The Bronx is a borough with no Gazetteer place; same area as Bronx County
+nyc-met-high-school-spring-internship	New York, NY	point	New York, NY	city	place:city	
+nyc-met-high-school-summer-internship	New York, NY	point	New York, NY	city	place:city	
+nyc-moma-teens-in-residence	New York, NY	point	New York, NY	city	place:city	
 nyc-montefiore-bronx-summer-volunteer	Bronx, NY	point	Bronx, NY	county	The Bronx is a borough with no Gazetteer place; same area as Bronx County	alias: The Bronx is a borough with no Gazetteer place; same area as Bronx County
 nyc-mount-sinai-morningside-jump-teen-volunteer	Manhattan, NY (Morningside Heights)	point	Manhattan, NY	county	Manhattan is a borough with no Gazetteer place; same area as New York County	alias: Manhattan is a borough with no Gazetteer place; same area as New York County
 nyc-northwell-lenox-hill-health-care-immersion	Manhattan, NY	point	Manhattan, NY	county	Manhattan is a borough with no Gazetteer place; same area as New York County	alias: Manhattan is a borough with no Gazetteer place; same area as New York County
@@ -1695,6 +1726,7 @@ nyc-nyu-langone-manhattan-summer-volunteer	Manhattan, NY	point	Manhattan, NY	cou
 nyc-nyu-sps-finance-nyc-insiders-view	New York, NY (NYU)	point	New York, NY	city	place:city	
 nyc-nyu-tandon-arise	Brooklyn, NY	point	Brooklyn, NY	county	Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County	alias: Brooklyn is a borough with no Gazetteer place; the borough is the same area as Kings County
 nyc-opportunity-network-fellows	Manhattan, NY (office in Lower Manhattan)	point	Manhattan, NY	county	Manhattan is a borough with no Gazetteer place; same area as New York County	alias: Manhattan is a borough with no Gazetteer place; same area as New York County
+nyc-pal-college-access-program	Bronx, NY	point	Bronx, NY	county	The Bronx is a borough with no Gazetteer place; same area as Bronx County	alias: The Bronx is a borough with no Gazetteer place; same area as Bronx County
 nyc-parks-lifeguard-program	New York City (pools and beaches in all five boroughs, including Manhattan and the Bronx)	point	New York, NY	city	place:city	
 nyc-public-schools-p-tech-early-college	New York City (schools in Manhattan and the Bronx include Inwood Early College, MECA, EChem and H.E.R.O. High)	point	New York, NY	city	place:city	
 nyc-public-schools-student-advisory-councils	New York City (one council for each borough, including Manhattan and the Bronx)	point	New York, NY	city	place:city	
@@ -1710,6 +1742,7 @@ nyc-sadie-nash-leadership-scholars	New York City (all five boroughs) and Newark,
 nyc-sadie-nash-nash-u-leadership-internship	New York City (all five boroughs) and Newark, NJ	multi				second place with a state code
 nyc-sadie-nash-siblinghood-academy	New York City (all five boroughs) and Newark, NJ	multi				second place with a state code
 nyc-sadie-nash-summer-institute	New York City (all five boroughs) and Newark, NJ	multi				second place with a state code
+nyc-sca-metro-ny-urban-green	New York, NY	point	New York, NY	city	place:city	
 nyc-staten-island-historic-richmond-town-high-school-apprenticeship	Staten Island, NY	point	Staten Island, NY	county	Staten Island is a borough with no Gazetteer place; same area as Richmond County	alias: Staten Island is a borough with no Gazetteer place; same area as Richmond County
 nyc-staten-island-rumc-afterschool-medical-science	Staten Island, NY (355 Bard Ave)	point	Staten Island, NY	county	Staten Island is a borough with no Gazetteer place; same area as Richmond County	alias: Staten Island is a borough with no Gazetteer place; same area as Richmond County
 nyc-staten-island-wagner-college-high-school-internship	Staten Island, NY (631 Howard Ave)	point	Staten Island, NY	county	Staten Island is a borough with no Gazetteer place; same area as Richmond County	alias: Staten Island is a borough with no Gazetteer place; same area as Richmond County
@@ -1725,9 +1758,11 @@ nyc-wave-hill-forest-project	Bronx, NY	point	Bronx, NY	county	The Bronx is a bor
 nyc-wave-hill-werm	Bronx, NY	point	Bronx, NY	county	The Bronx is a borough with no Gazetteer place; same area as Bronx County	alias: The Bronx is a borough with no Gazetteer place; same area as Bronx County
 nyc-wcs-discovery-guide-volunteer	Bronx, Manhattan, Brooklyn, Queens	multi				override: Several boroughs listed
 nyc-whitney-youth-insights	Manhattan, NY	point	Manhattan, NY	county	Manhattan is a borough with no Gazetteer place; same area as New York County	alias: Manhattan is a borough with no Gazetteer place; same area as New York County
+nyc-work-learn-grow	New York, NY	point	New York, NY	city	place:city	
 nycps-career-and-technical-education	New York, NY	point	New York, NY	city	place:city	
 nycps-career-readiness-modern-youth-apprenticeship	New York, NY	point	New York, NY	city	place:city	
 nyit-high-school-business-bootcamp	Online (Zoom)	online				
+nypl-teen-curators	New York, NY	point	New York, NY	city	place:city	
 oak-park-library-leading-edge-teen-advisory-board	Oak Park, IL	point	Oak Park, IL	city	place:village	
 oak-park-park-district-acorns-to-oaks-volunteers	Oak Park, IL	point	Oak Park, IL	city	place:village	
 oak-park-park-district-seasonal-jobs	Oak Park, IL	point	Oak Park, IL	city	place:village	
@@ -1750,6 +1785,7 @@ occ-sailing-youth-leadership-program	Newport Beach, CA	point	Newport Beach, CA	c
 ocean-institute-counselor-in-training	Dana Point, CA	point	Dana Point, CA	city	place:city	
 ocean-institute-stan-cummings-scholars-internship	Dana Point, CA	point	Dana Point, CA	city	place:city	
 ocean-institute-volunteer-docents	Dana Point, CA	point	Dana Point, CA	city	place:city	
+oconnor-hospital-volunteer	San Jose, CA (2105 Forest Ave)	point	San Jose, CA	city	place:city	
 ocsd-explorer-program	Orange County, CA	point	Orange County, CA	county	county	
 ocsd-teen-academy	Orange County, CA	point	Orange County, CA	county	county	
 ocwdb-ready-set-oc-young-adult	Orange County, CA	point	Orange County, CA	county	county	
@@ -1843,7 +1879,9 @@ philadelphia-fleisher-teen-lounge	Philadelphia, PA (South Philadelphia)	point	Ph
 philadelphia-fox-chase-immersion-science-program	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
 philadelphia-franklin-institute-pacts	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
 philadelphia-franklin-institute-stem-scholars	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
+philadelphia-free-library-young-volunteers	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
 philadelphia-independence-seaport-museum-teen-ambassadors	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
+philadelphia-jefferson-abington-teen-volunteers	Abington, PA	point	Abington, PA	city	cousub:cousub-township	
 philadelphia-jefferson-northeast-summer-student-volunteer	Philadelphia, PA (Torresdale)	point	Philadelphia, PA	city	place:city	
 philadelphia-job-corps-center	Philadelphia, PA (campus; page lists transportation and no dorms)	point	Philadelphia, PA	city	place:city	
 philadelphia-monell-science-apprenticeship-program	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
@@ -1854,6 +1892,7 @@ philadelphia-parks-rec-lifeguard	Philadelphia, PA	point	Philadelphia, PA	city	pl
 philadelphia-parks-rec-summer-youth-employment	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
 philadelphia-penn-provost-summer-mentorship-program	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
 philadelphia-penn-sas-high-school-summer-programs	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
+philadelphia-pennsylvania-hospital-junior-volunteers	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
 philadelphia-police-explorer-cadets-post-991	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
 philadelphia-pyn-aim-afterschool	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
 philadelphia-pyn-nextgen-career-clubs	Philadelphia, PA	point	Philadelphia, PA	city	place:city	
@@ -1959,6 +1998,8 @@ portland-parks-lifeguard-swim-instructor-training	Portland, OR	point	Portland, O
 portland-parks-recreation-youth-summer-jobs	Portland, OR	point	Portland, OR	city	place:city	
 portland-pdx-youth-at-work-summerworks	Portland, OR	point	Portland, OR	city	place:city	
 portland-pnca-pre-college-summer	Portland, OR	point	Portland, OR	city	place:city	
+portland-providence-portland-medical-center-volunteer	Portland, OR	point	Portland, OR	city	place:city	
+portland-providence-st-vincent-volunteer	Portland, OR	point	Portland, OR	city	place:city	
 portland-youth-conservation-crew	Portland, OR	point	Portland, OR	city	place:city	
 portland-youthline-peer-crisis-volunteer	Portland, OR	point	Portland, OR	city	place:city	
 pretend-city-volunteer-and-teen-programs	Irvine, CA	point	Irvine, CA	city	place:city	
@@ -1967,6 +2008,8 @@ princeton-public-library-teen-advisory-board	Princeton, NJ	point	Princeton, NJ	c
 princeton-public-library-teen-summer-volunteer	Princeton, NJ	point	Princeton, NJ	city	place:place	
 qpl-peer-to-peer-service-collective	Queens, NY	point	Queens, NY	county	Queens is a borough with no Gazetteer place; same area as Queens County	alias: Queens is a borough with no Gazetteer place; same area as Queens County
 qpl-teen-volunteer	Queens, NY	point	Queens, NY	county	Queens is a borough with no Gazetteer place; same area as Queens County	alias: Queens is a borough with no Gazetteer place; same area as Queens County
+raleigh-marbles-kids-museum-teen-play-corps	Raleigh, NC	point	Raleigh, NC	city	place:city	
+raleigh-unc-health-rex-volunteen	Raleigh, NC	point	Raleigh, NC	city	place:city	
 red-butte-garden-twig-teens-working-in-the-garden	Salt Lake City, UT	point	Salt Lake City, UT	city	place:city	
 red-cross-babysitting-training	Online and local classes	online				
 red-cross-lifeguard-wsi	Local pools across California	statewide	CA			
@@ -1977,6 +2020,7 @@ redrock-job-corps-center	Lopez, PA (campus with dorms)	point	Lopez, PA	manual	Ce
 redwood-city-leaders-in-training	Redwood City, CA	point	Redwood City, CA	city	place:city	
 regeneron-isef	Los Angeles, CA (May 2027)	point	Los Angeles, CA	city	place:city	
 regeneron-sts	Virtual submission	online				
+regional-medical-center-san-jose-junior-volunteer	San Jose, CA	point	San Jose, CA	city	place:city	
 reno-parks-junior-lifeguards	Reno, NV	point	Reno, NV	city	place:city	
 reno-parks-lifeguard-certification-class	Reno, NV	point	Reno, NV	city	place:city	
 reno-parks-recreation-youth-volunteers	Reno, NV	point	Reno, NV	city	place:city	
@@ -2017,6 +2061,7 @@ roanoke-science-museum-of-western-virginia-volunteer	Roanoke, VA	point	Roanoke, 
 rochester-general-hospital-student-volunteer-program	Rochester, NY	point	Rochester, NY	city	place:city	
 rochester-rochesterworks-summer-youth-employment	Rochester, NY	point	Rochester, NY	city	place:city	
 rochester-seneca-park-zoo-zooteens	Rochester, NY	point	Rochester, NY	city	place:city	
+rockville-shady-grove-medical-center-volunteers	Rockville, MD	point	Rockville, MD	city	place:city	
 rocky-mountain-youth-corps-youth-conservation-corps	Northwest Colorado (10 counties)	multi				sub-state region
 roseville-leadership-development-program	Roseville, CA	point	Roseville, CA	city	place:city	
 roseville-library-teen-volunteers	Roseville, CA	point	Roseville, CA	city	place:city	
@@ -2158,6 +2203,7 @@ scvmc-volunteer-services	San Jose, CA	point	San Jose, CA	city	place:city
 sdma-teen-council	San Diego, CA (Balboa Park)	point	San Diego, CA	city	place:city	
 seattle-anew-construction-trades-training	Washington (site not stated on the page)	statewide	WA			
 seattle-aquarium-youth-ocean-advocates	Seattle, WA	point	Seattle, WA	city	place:city	
+seattle-art-museum-teen-arts-group	Seattle, WA	point	Seattle, WA	city	place:city	
 seattle-bgc-king-county-youthforce	Seattle, WA (King County)	point	Seattle, WA	city	place:city	
 seattle-burke-museum-voices-in-science-burke-ology	Seattle, WA	point	Seattle, WA	city	place:city	
 seattle-childrens-hospital-volunteer	Seattle, WA	point	Seattle, WA	city	place:city	
@@ -2167,8 +2213,11 @@ seattle-clean-water-ambassadors-internship	Seattle, WA	point	Seattle, WA	city	pl
 seattle-fire-cadet-company-511	Seattle, WA	point	Seattle, WA	city	place:city	
 seattle-fred-hutch-summer-high-school-internship	Seattle, WA	point	Seattle, WA	city	place:city	
 seattle-greenway-yess-riverview-wanic	Carnation, WA and field sites in King County	point	Carnation, WA	city	place:city	
+seattle-harborview-volunteer-services	Seattle, WA	point	Seattle, WA	city	place:city	
 seattle-henry-teen-art-collective	Seattle, WA	point	Seattle, WA	city	place:city	
 seattle-mohai-history-lab	Seattle, WA	point	Seattle, WA	city	place:city	
+seattle-mopop-youth-advisory-board	Seattle, WA	point	Seattle, WA	city	place:city	
+seattle-mountaineers-counselor-in-training	Seattle, WA	point	Seattle, WA	city	place:city	
 seattle-museum-of-flight-youth-volunteer	Seattle, WA	point	Seattle, WA	city	place:city	
 seattle-parks-career-explorations	Seattle, WA	point	Seattle, WA	city	place:city	
 seattle-parks-lifeguard-jobs	Seattle, WA	point	Seattle, WA	city	place:city	
@@ -2193,6 +2242,7 @@ seattle-uw-engineering-academy	Seattle, WA	point	Seattle, WA	city	place:city
 seattle-uw-foster-business-and-leadership-program	Seattle, WA	point	Seattle, WA	city	place:city	
 seattle-uw-nurse-camp	Seattle, WA	point	Seattle, WA	city	place:city	
 seattle-uw-summer-sessions-high-school	Seattle, WA	point	Seattle, WA	city	place:city	
+seattle-uwmc-summer-teen-volunteer-program	Seattle, WA	point	Seattle, WA	city	place:city	
 seattle-wanic-skill-center	Redmond, Bellevue and Eastside, WA	multi				several places before the state
 seattle-wing-luke-museum-youthcan	Seattle, WA (Chinatown-International District)	point	Seattle, WA	city	place:city	
 seattle-woodland-park-zoo-teen-ambassadors	Seattle, WA	point	Seattle, WA	city	place:city	
@@ -2283,6 +2333,7 @@ st-louis-washu-pre-college-summer-scholars	St. Louis, MO	point	St. Louis, MO	cit
 st-louis-washu-young-scientist-summer-focus	St. Louis, MO	point	St. Louis, MO	city	place:city	
 st-louis-zoo-alive-teen-volunteers	St. Louis, MO	point	St. Louis, MO	city	place:city	
 st-louis-zoo-zooteens-summer-volunteers	St. Louis, MO	point	St. Louis, MO	city	place:city	
+st-louise-regional-hospital-volunteer	Gilroy, CA	point	Gilroy, CA	city	place:city	
 st-lukes-boise-junior-volunteers	Boise, ID	point	Boise, ID	city	place:city	override: The Gazetteer lists Boise as Boise City
 st-rose-hospital-shine-student-volunteers	Hayward, CA	point	Hayward, CA	city	place:city	
 stanford-aimi-summer-research-internship	Palo Alto, CA	point	Palo Alto, CA	city	place:city	
@@ -2310,9 +2361,14 @@ surrey-yep-youth-engagement-proposal	Surrey, BC	point	Surrey, BC	manual	Canadian
 surrey-youth-event-squad	Surrey, BC	point	Surrey, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JAZBU, https://geogratis.gc.ca/services/geoname/en/geonames/JAZBU	
 surrey-youth-stewardship-squad	Surrey, BC	point	Surrey, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JAZBU, https://geogratis.gc.ca/services/geoname/en/geonames/JAZBU	
 sussex-county-nj-library-teen-summer-reading-volunteers	Sussex County, NJ	point	Sussex County, NJ	county	county	
+sutter-eden-medical-center-volunteer	Castro Valley, CA (20103 Lake Chabot Road)	point	Castro Valley, CA	city	place:CDP	
+sutter-mills-peninsula-youth-volunteer	Burlingame, CA (1501 Trousdale Drive) and San Mateo, CA (100 South San Mateo Drive)	multi				second place with a state code
+sutter-pamf-mountain-view-sunnyvale-student-volunteer	Mountain View, CA (701 East El Camino Real) and Sunnyvale, CA (301 Old San Francisco Road)	multi				second place with a state code
+sutter-pamf-palo-alto-student-volunteer	Palo Alto, CA (795 El Camino Real)	point	Palo Alto, CA	city	place:city	
 svcte-silicon-valley-career-technical-education	San Jose, CA (760 Hillsdale Ave)	point	San Jose, CA	city	place:city	
 tacoma-pierce-county-library-teen-councils	Tacoma and Pierce County, WA	point	Tacoma, WA	city	place:city	override: Pierce County contains Tacoma; point placed at Tacoma
 tacoma-pierce-county-library-teen-volunteer-league	Tacoma and Pierce County, WA	point	Tacoma, WA	city	place:city	override: Pierce County contains Tacoma; point placed at Tacoma
+tacoma-point-defiance-zoo-guides	Tacoma, WA	point	Tacoma, WA	city	place:city	
 tacoma-public-schools-jobs-253-summer-credential-programs	Tacoma, WA	point	Tacoma, WA	city	place:city	
 tacoma-public-schools-jobs-253	Tacoma, WA	point	Tacoma, WA	city	place:city	
 taos-rmyc-youth-coalition-member	Taos, NM	point	Taos, NM	city	place:town	
@@ -2498,10 +2554,12 @@ valley-water-youth-commission	San Jose, CA (serves all Santa Clara County)	point
 valley-ymca-employee-u-teens	Phoenix, AZ	point	Phoenix, AZ	city	place:city	
 vancouver-art-gallery-art-exchange	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
 vancouver-art-gallery-teen-art-group	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
+vancouver-bc-childrens-hospital-volunteer	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
 vancouver-bcchr-mini-med-school	Vancouver, BC (in person or online)	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
 vancouver-bcchr-pathways-to-science	Vancouver, BC (online)	online				parenthetical says fully online: online
 vancouver-bgc-south-coast-youth-employability	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
 vancouver-discovery-days-health-sciences	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
+vancouver-providence-health-care-volunteer	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
 vancouver-science-world-volunteer	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
 vancouver-seed2stem-indigenous-research-internship	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
 vancouver-sfu-camps-volunteer	Burnaby, BC	point	Burnaby, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JAEBN, https://geogratis.gc.ca/services/geoname/en/geonames/JAEBN	
@@ -2509,6 +2567,7 @@ vancouver-space-centre-teen-volunteer	Vancouver, BC	point	Vancouver, BC	manual	C
 vancouver-stanley-park-ecology-youth-volunteer	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
 vancouver-ubc-future-global-leaders	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
 vancouver-ubc-summer-science-program	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
+vancouver-vpd-cadet-program	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
 vancouver-vsb-youth-explore-trades-sampler	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
 vancouver-vsb-youth-work-in-trades	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
 vancouver-youth-parliament	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
@@ -2558,6 +2617,8 @@ wdsra-teen-volunteers-western-dupage	Wheaton and Naperville area, DuPage County,
 wellstar-cobb-medical-center-volunteen	Austell, GA	point	Austell, GA	city	place:city	
 wellstar-kennestone-volunteen	Marietta, GA	point	Marietta, GA	city	place:city	
 wellstar-north-fulton-volunteens	Roswell, GA	point	Roswell, GA	city	place:city	
+west-sac-lifeguard-swim-instructor	West Sacramento, CA	point	West Sacramento, CA	city	place:city	
+west-sac-recreation-leader	West Sacramento, CA	point	West Sacramento, CA	city	place:city	
 west-sac-teen-heroes	West Sacramento, CA	point	West Sacramento, CA	city	place:city	
 west-valley-college-concurrent-enrollment	Saratoga, CA	point	Saratoga, CA	city	place:city	
 wharton-global-high-school-investment-competition	Online	online				
@@ -2575,6 +2636,7 @@ wichita-ymca-job-prep-teen-summer-jobs	Wichita and Newton, KS	multi				several p
 wichita-youth-employment-project-yep	Wichita, KS	point	Wichita, KS	city	place:city	
 wikipedia-editing	Virtual	online				
 wilmette-library-teen-volunteers	Wilmette, IL	point	Wilmette, IL	city	place:village	
+winters-seasonal-lifeguard	Winters, CA	point	Winters, CA	city	place:city	
 wisconsin-4h-agriculture-ambassadors	Wisconsin (statewide)	statewide	WI			
 wisconsin-4h-summer-academy-uw-madison	Madison, WI (UW-Madison campus)	point	Madison, WI	city	place:city	
 wisconsin-badger-boys-state	Eau Claire, WI (UW-Eau Claire)	point	Eau Claire, WI	city	place:city	
@@ -2602,10 +2664,18 @@ xavier-university-steam-xu-research-immersion	Cincinnati, OH	point	Cincinnati, O
 ycoe-work-based-learning-b-unbound	Woodland, CA (Yolo County)	point	Woodland, CA	city	place:city	
 yellowstone-national-park-youth-conservation-corps	Yellowstone National Park	point	Yellowstone National Park, WY	city	place:CDP	override: Parks are not Gazetteer places; park headquarters is at Mammoth Hot Springs, WY (nps.gov/yell). Mammoth CDP in WY is Mammoth Hot Springs
 yep-youth-employment-partnership	Oakland, CA (2300 International Blvd)	point	Oakland, CA	city	place:city	
+ymca-east-bay-camp-loma-mar-camp-assistant	Loma Mar, CA (YMCA Camp Loma Mar, 9900 Pescadero Creek Road)	point	Loma Mar, CA	city	place:CDP	
+ymca-east-bay-camp-loma-mar-leaders-in-training	Loma Mar, CA (YMCA Camp Loma Mar, 9900 Pescadero Creek Road)	point	Loma Mar, CA	city	place:CDP	
 ymca-metro-atlanta-teen-leaders-club	Metro Atlanta, GA	point	Atlanta, GA	city	place:city	
 ymca-orange-county-volunteer	Fullerton, Huntington Beach, Newport Beach, Laguna Niguel, Mission Viejo (YMCA branches), CA	multi				list of places before the state
 ymca-san-francisco-workforce-development	San Francisco, CA	point	San Francisco, CA	manual	Census Gazetteer ZCTA 94102 (San Francisco, CA) internal point	override: The Gazetteer place point (37.7272, -123.0322) is about 30 miles out in the Pacific because the city limits include the Farallon Islands, so it falls outside the state outline; ZIP code area 94102 (Civic Center) centroid from the Census Gazetteer ZCTA file is used instead
+ymca-sf-camp-jones-gulch-lit-cit	La Honda, CA (YMCA Camp Jones Gulch, 11000 Pescadero Road)	point	La Honda, CA	city	place:CDP	
+ymca-sf-teen-volunteer	San Francisco, CA (and other YMCA of Greater San Francisco branches)	point	San Francisco, CA	manual	Census Gazetteer ZCTA 94102 (San Francisco, CA) internal point	override: The Gazetteer place point (37.7272, -123.0322) is about 30 miles out in the Pacific because the city limits include the Farallon Islands, so it falls outside the state outline; ZIP code area 94102 (Civic Center) centroid from the Census Gazetteer ZCTA file is used instead
+ymca-sf-youth-empowerment-fund	San Francisco, CA (Urban Services YMCA, 1530 Buchanan St.)	point	San Francisco, CA	manual	Census Gazetteer ZCTA 94102 (San Francisco, CA) internal point	override: The Gazetteer place point (37.7272, -123.0322) is about 30 miles out in the Pacific because the city limits include the Farallon Islands, so it falls outside the state outline; ZIP code area 94102 (Civic Center) centroid from the Census Gazetteer ZCTA file is used instead
 ymca-silicon-valley-camp-campbell-cabin-leader	Boulder Creek, CA (Camp Campbell)	point	Boulder Creek, CA	city	place:CDP	
+ymca-silicon-valley-mt-madonna-high-school-volunteer	Morgan Hill, CA (171 W Edmundson Ave)	point	Morgan Hill, CA	city	place:city	
+ymca-silicon-valley-teen-youth-councils	Mountain View, CA (El Camino YMCA) and Morgan Hill, CA (Centennial Recreation Center)	multi				second place with a state code
+ymca-superior-california-bear-valley-cit	Sacramento, CA (overnight camp at Bear Valley YMCA Camp, near Emigrant Gap in the High Sierra)	point	Sacramento, CA	city	place:city	
 ymca-triangle-leaders-club	Chapel Hill and the Triangle, NC	point	Chapel Hill, NC	city	place:town	override: The Triangle is the region around Chapel Hill; point placed at Chapel Hill
 ymca-triangle-lightner-y-achievers	The Triangle, NC	multi				override: The Triangle is a three city region, not one place (the name also matches an unrelated township)
 ymca-youth-and-government-ca	California (ends at Sacramento)	statewide	CA			
