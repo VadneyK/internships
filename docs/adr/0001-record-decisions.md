@@ -25,3 +25,4 @@ Records so far:
 - 0005: One JSON file per program, with schema, provenance and a fact-check
 - 0006: Tap tiles instead of dropdowns for short lists
 - 0007: Byte budgets and ratchets are tests
+- 0008: No child accounts: keep a list with a file, a link or a parent

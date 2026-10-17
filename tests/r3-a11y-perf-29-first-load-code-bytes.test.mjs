@@ -108,7 +108,8 @@ const BUDGET = {
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). find.html limit 215800 to 216500.
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). find.html limit 216500 to 216600.
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL). find.html limit 216600 to 216900.
-  "find.html": { ceiling: 220300, reason: "lib.js, common.js and find.js (largest page script)" },
+  // 2026-10-16: keep my list without an account (docs/adr/0008) in find.js: find.html set to the measured size rounded up to 100 (227595 bytes). PENDING PERSON APPROVAL.
+  "find.html": { ceiling: 227700, reason: "lib.js, common.js and find.js (largest page script)" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you handout.html limit 91700 to 92100.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. handout.html limit 92200 to 92700.
   // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). handout.html limit 92700 to 93700.
