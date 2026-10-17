@@ -4049,6 +4049,86 @@
   "limited": true
  },
  {
+  "id": "atlanta-airport-summer-youth-employment-program",
+  "name": "ATL Workforce Summer Youth Employment Program",
+  "org": "Hartsfield-Jackson Atlanta International Airport (ATL Workforce)",
+  "regions": [
+   "atlanta"
+  ],
+  "city": "Atlanta, GA",
+  "type": "paid-youth-program",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Work a paid six-week summer job at Atlanta's airport. You learn workplace skills, get a mentor, and see careers in aviation.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Rising 11th and 12th graders",
+  "who_can_apply": "Rising high school juniors and seniors in the Atlanta area.",
+  "paid_type": "paid",
+  "pay_detail": "Paid. The page does not state a rate.",
+  "season": "summer",
+  "duration": "6 weeks",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The page says applications open the first week of February through mid-March each year. 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply on the City of Atlanta jobs website when the posting is open. You may be asked to interview, then you go to orientation. Every participant is matched with a mentor.",
+  "needs_work_permit": null,
+  "url": "https://www.atl.com/atlworkforceprograms-our-programs/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.atl.com/atlworkforceprograms-our-programs/",
+   "https://www.atl.com/atlworkforceprograms-how-to-apply/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "This is the airport's own summer job program, separate from the Mayor's Summer Youth Employment Program. The 2026 City of Atlanta job posting linked from the page was no longer showing. Questions: atlworkforce@atl.com.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "atlanta-airport-youth-apprenticeship-program",
+  "name": "ATL Workforce Youth Apprenticeship Program",
+  "org": "Hartsfield-Jackson Atlanta International Airport (ATL Workforce)",
+  "regions": [
+   "atlanta"
+  ],
+  "city": "Atlanta, GA",
+  "type": "apprenticeship-trades",
+  "fields": [
+   "trades"
+  ],
+  "what_you_do": "Work a paid, part-time trade job at Atlanta's airport while you earn school credit. Placements match the trades your school district offers.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "11th and 12th grade",
+  "who_can_apply": "High school juniors and seniors in Clayton County, Fulton County, or Atlanta city public schools.",
+  "paid_type": "paid",
+  "pay_detail": "Paid, part-time. The page does not state a rate.",
+  "season": "school-year",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Rolling. The page says applications are accepted based on the airport's needs and may vary each year.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Ask the work-based learning teacher or the counselor at your school. You can also apply on your own on the City of Atlanta jobs site.",
+  "needs_work_permit": null,
+  "url": "https://www.atl.com/atlworkforceprograms-how-to-apply/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.atl.com/atlworkforceprograms-our-programs/",
+   "https://www.atl.com/atlworkforceprograms-how-to-apply/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Ask your school's Work-Based Learning Coordinator first, since credit comes through your school. The airport's Registered Apprenticeship is for ages 18 and up, so it is not listed here. Questions: atlworkforce@atl.com.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
   "id": "atlanta-botanical-garden-speak-volunteers",
   "name": "SPEAK Student Volunteers (Atlanta Botanical Garden)",
   "org": "Atlanta Botanical Garden",
@@ -4289,6 +4369,129 @@
   "priority": 3,
   "notes": "Also open to younger kids. Wear closed-toe, closed-heel shoes. Stay for the whole shift. Come on time because late volunteers more than 30 minutes cannot serve. Special events may have other age rules.",
   "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "atlanta-grady-teen-experience-leadership-program",
+  "name": "Teen Experience and Leadership Program (TELP)",
+  "org": "Grady Health System",
+  "regions": [
+   "atlanta"
+  ],
+  "city": "Atlanta, GA",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Spend 7 summer weeks at Grady hospital. You rotate through clinical and non-clinical areas, shadow health workers, do labs and workshops, and get a mentor. You can also join a research project and present it.",
+  "min_age": 14,
+  "max_age": 19,
+  "grades": "Finished 9th grade",
+  "who_can_apply": "Teens ages 14 to 19 who have completed 9th grade and want to learn about health care careers. The page lists no residency rule.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. The FAQ says TELP is an unpaid educational program and you get documentation of your service hours.",
+  "season": "summer",
+  "duration": "7 weeks. In 2026 it ran May 26 to July 14, plus 20 hours of virtual learning labs and 40 hours of community engagement a year.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 application was open Jan 16 to Feb 20, 2026, with the YouScience assessment Feb 23 to Mar 8 and interviews Mar 9 to 27. 2027 dates are not posted; expect a similar January opening.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the form online. Add a photo of your face, your shot records, and two forms. A parent or guardian signs one of them. Then take a career quiz online and do an interview. Not everyone gets in.",
+  "needs_work_permit": false,
+  "url": "https://www.gradyhealth.org/health-outcomes-at-grady/teen-experience-and-leadership-program/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.gradyhealth.org/health-outcomes-at-grady/teen-experience-and-leadership-program/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 1,
+  "notes": "The page says it is closed for now. If you get in, you need a TB blood test before you start. In 2026 they held free online help hours two days a week while the form was open. Late or missing forms may not be read.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "atlanta-gsu-institute-on-neuroscience",
+  "name": "Institute on Neuroscience (ION) Summer Research Program",
+  "org": "Georgia State University, Center for Behavioral Neuroscience",
+  "regions": [
+   "atlanta"
+  ],
+  "city": "Atlanta, GA",
+  "type": "research",
+  "fields": [
+   "science",
+   "health"
+  ],
+  "what_you_do": "Do paid summer research in a Georgia State neuroscience lab with a faculty mentor. You start with a fruit fly lab course, go to weekly workshops, then present your results at a symposium.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "High school students who excel in science and are interested in research. The minimum age is 16. Competitive.",
+  "paid_type": "stipend",
+  "pay_detail": "Stipend. The 2025 rate was $4,500; the page says the 2026 rate was not guaranteed. MARTA passes or parking may be reimbursed.",
+  "season": "summer",
+  "duration": "About 6 weeks, 40 hours a week. In 2026 it ran June 22 to a symposium on August 6.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 application closed June 14, 2026, a late, short cycle because funding was delayed. 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Online application form, then an interview. You may not miss any starred program dates and may miss at most one week of lab time.",
+  "needs_work_permit": false,
+  "url": "https://sites.gsu.edu/ion-teach/about/",
+  "apply_url": "https://sites.gsu.edu/ion-teach/application/",
+  "sources_fetched": [
+   "https://sites.gsu.edu/ion-teach/",
+   "https://sites.gsu.edu/ion-teach/about/",
+   "https://sites.gsu.edu/ion-teach/application/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Funding for 2026 came from the Army Educational Outreach Program, so the dates and stipend can change from year to year. Bring your own meals and get yourself to downtown Atlanta daily. No housing is provided. Join the ION email list on the home page to hear about 2027.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "atlanta-gsu-neuroscience-school",
+  "name": "The Neuroscience School: Short Courses for High School Students",
+  "org": "Georgia State University, Center for Behavioral Neuroscience",
+  "regions": [
+   "atlanta"
+  ],
+  "city": "Atlanta, GA",
+  "type": "pre-college",
+  "fields": [
+   "science",
+   "health"
+  ],
+  "what_you_do": "Take a one-week summer neuroscience course taught by Georgia State professors. Choices include a Boot Camp, fruit fly lab courses on Alzheimer's or stress, and advanced topics. Some run in person, some online.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Finished 9th, 10th, 11th or 12th grade",
+  "who_can_apply": "High school students who have completed 9th, 10th, 11th, or 12th grade before class starts. In-person courses also require you to be at least 16 by the start of class, with no exceptions.",
+  "paid_type": "fee-based",
+  "pay_detail": "Costs $275 to $350 per course in 2026. Fee help is available if you qualify for free or reduced lunch (documentation required). Email NeuroscienceSchool@gsu.edu.",
+  "season": "summer",
+  "duration": "4 or 5 days per course. In person 9:30 AM to 3:45 PM, online 10:00 AM to 4:00 PM. 2026 courses ran June 1 to July 23.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "In 2026, registration stayed open until classes were full, and classes without enough sign-ups by June 1 were canceled. The 2026 schedule was posted in December 2025. 2027 courses are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Register and pay in the GSU Marketplace Mall store linked from the Registration page. No essay or application.",
+  "needs_work_permit": false,
+  "url": "https://sites.gsu.edu/neuroscienceschool/",
+  "apply_url": "https://sites.gsu.edu/neuroscienceschool/registration/",
+  "sources_fetched": [
+   "https://sites.gsu.edu/neuroscienceschool/",
+   "https://sites.gsu.edu/neuroscienceschool/dates/",
+   "https://sites.gsu.edu/neuroscienceschool/registration/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 3,
+  "notes": "Online courses are open to younger high schoolers who are under 16. Sign up for the program's newsletter on the home page to hear when the 2027 schedule is posted.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "verified": "fetched",
@@ -4575,10 +4778,10 @@
   "grades": null,
   "apply_url": "https://form.jotform.com/262283924272056",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-16",
   "priority": 2,
   "needs_work_permit": false,
-  "duration": "Application window Aug 24 to Oct 16, 2026",
+  "duration": "Applications Aug 24 to Oct 16, 2026",
   "pay_detail": "You do not get paid. Each project can receive a microgrant of $1,000 to $5,000 to carry it out. The money pays for the project, not a wage to you.",
   "name": "Youth Climate Action Fund microgrants",
   "org": "City of Aurora (with Bloomberg Philanthropies)",
@@ -4594,20 +4797,21 @@
   "what_you_do": "Young residents design a climate project and apply for a $1,000 to $5,000 microgrant to carry it out. City staff help with ideas before you apply.",
   "min_age": 15,
   "max_age": 24,
-  "who_can_apply": "Aurora residents ages 15 to 24. The page lists separate planning sessions. They are for Aurora high school students, college students and nonprofits.",
+  "who_can_apply": "Aurora residents ages 15 to 24. At least two young people must lead each project.",
   "paid_type": "unpaid",
   "season": "fall",
-  "status": "open-now",
-  "deadline_text": "Applications run August 24 to October 16, 2026.",
-  "deadline_iso": "2026-10-16",
-  "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Fill out the online application form. Staff office hours are Tuesdays 2 to 4 p.m. (630-256-3416) and Wednesdays 10 a.m. to noon (630-256-3402) during the window. Email youthservdiv@aurora.il.us.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications ran Aug 24 to Oct 16, 2026 (the FAQ says Oct 5). A second round may come if projects finish on time. No date is posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the online form. Questions: youthservdiv@aurora.il.us.",
   "url": "https://www.aurora.il.us/Recreation-and-Amenities/Youth-Activities-and-Services/Youth-Climate-Action-Fund",
-  "notes": "The page says about 10 to 40 projects will be funded. Co-design sessions were September 8 and 10, 2026, so they have passed. Ages up to 24 are allowed, so high school students compete with older applicants.",
+  "notes": "10 to 50 projects share $50,000. Funds go out by Nov 13, 2026, and projects end by Apr 15, 2027. Ages up to 24 can apply. Next round not posted.",
   "sources_fetched": [
-   "https://www.aurora.il.us/Recreation-and-Amenities/Youth-Activities-and-Services/Youth-Climate-Action-Fund"
+   "https://www.aurora.il.us/Recreation-and-Amenities/Youth-Activities-and-Services/Youth-Climate-Action-Fund",
+   "https://www.aurora.il.us/Recreation-and-Amenities/Youth-Activities-and-Services/Youth-Climate-Action-Fund/FAQs"
   ],
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Oct 16, 2026",
   "limited": true
  },
  {
@@ -6492,6 +6696,46 @@
   "notes": "An interest form does not guarantee a placement. Berkeley Public Library lists the Youth Worker age as 14 to 25. Berkeley residents only.",
   "verified_on_label": "Oct 7, 2026",
   "limited": true
+ },
+ {
+  "id": "bethesda-suburban-hospital-junior-volunteers",
+  "name": "Junior Volunteer Program (Suburban Hospital)",
+  "org": "Suburban Hospital, Johns Hopkins Medicine",
+  "regions": [
+   "maryland",
+   "college-park"
+  ],
+  "city": "Bethesda, MD",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Help at a hospital in Bethesda for 4 hours a week. Teen helpers often push the Art Cart and Comfort Cart or work at the front desk. You meet patients, families and staff.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "High school students who are at least 16 years old.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": "At least 6 months, one 4-hour shift a week.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "All fall 2026 junior spots are full. The page says to check back beginning in February 2027 for spring and summer openings.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "First go to a free info session in person. Then fill out the teen volunteer form. You also go to a training and show your shots: MMR, chicken pox, Tdap, and a flu shot in flu season.",
+  "needs_work_permit": false,
+  "url": "https://www.hopkinsmedicine.org/volunteer-services/suburban",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.hopkinsmedicine.org/volunteer-services/suburban"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Junior volunteer spots open by season and fill up. Volunteers get free parking and free flu shots. Questions: shvolunteerservices@jh.edu or 301-896-3092.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "bethlehem-lehigh-iacocca-global-entrepreneurship-intensive",
@@ -11135,15 +11379,15 @@
  {
   "grades": "Currently in 11th grade",
   "apply_url": "https://wtpmit.slideroom.com/#/permalink/program/87815",
-  "opens_iso": "2026-10-16",
+  "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-10-16",
   "priority": 2,
   "min_age": null,
   "max_age": null,
   "needs_work_permit": null,
   "deadline_iso": "2026-12-21",
-  "notes": "You cannot apply in earlier grades. Students should not plan another job or internship during the four weeks. Students outside the US are not eligible.",
+  "notes": "For 11th graders only. Do not plan another job during the four weeks. Late teacher forms (to Jan 20, 2027) delay decisions.",
   "id": "boston-mit-womens-technology-program",
   "name": "MIT Women's Technology Program (WTP-ME)",
   "org": "MIT",
@@ -11162,10 +11406,10 @@
   "pay_detail": "Free to apply. Free to attend if family income is $120,000 or less. Otherwise $2,000 ($120,000 to $150,000), $4,000, $8,000 or $20,000 by income. Housing and food included. More aid may be asked for.",
   "season": "summer",
   "duration": "4 weeks, June 26 to July 24, 2027, residential",
-  "status": "opens-soon",
-  "deadline_text": "Applications for summer 2027 open October 16 in SlideRoom. Deadline Dec 21, 2026. Teacher forms due Dec 23, and late forms are accepted until Jan 20 but delay decisions. Decisions by email mid to late March. Admitted students confirm in early April.",
+  "status": "open-now",
+  "deadline_text": "Open now for summer 2027. Apply by Dec 21, 2026. Teacher forms are due Dec 23, 2026. Decisions come in late March 2027.",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Online SlideRoom application: three personal essays, and online forms from one math teacher and one science teacher.",
+  "how_to_apply": "Apply in SlideRoom: short questions and three essays. A math teacher and a science teacher fill out forms. Test scores are optional.",
   "url": "https://wtp.mit.edu/application/",
   "sources_fetched": [
    "https://wtp.mit.edu/",
@@ -11173,7 +11417,7 @@
    "https://wtp.mit.edu/wtp-me-key-dates/",
    "https://wtp.mit.edu/FAQ/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "boston-museum-of-science-youth-internships",
@@ -12881,30 +13125,33 @@
    "education",
    "any"
   ],
-  "what_you_do": "You can join youth clubs and projects in science, agriculture, leadership and community service. Teen leader roles are also available.",
+  "what_you_do": "Join a 4-H club, SPIN club or camp in your county. You start with one project and can join county and state events.",
   "min_age": null,
-  "max_age": null,
+  "max_age": 18,
   "grades": null,
-  "who_can_apply": "Kids and teens join through a county 4-H program. Check your county page for age rules and fees.",
+  "who_can_apply": "Youth ages 5 to 18 by Dec 31 of the 4-H year, anywhere in California.",
   "paid_type": "fee-based",
-  "pay_detail": "Not confirmed. Fees depend on the county program.",
+  "pay_detail": "Unpaid. Your county sets a fee, and some projects cost extra. Fee waivers are available.",
   "season": "year-round",
-  "duration": "Club year",
+  "duration": "The 4-H year runs July to June.",
   "status": "year-round",
   "opens_iso": null,
-  "deadline_text": "Join through a county 4-H program.",
+  "deadline_text": "Join any time. Animal shows at county fairs have their own deadlines.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "Find your county 4-H office from ucanr.edu/sites/ca4H.",
+  "how_to_apply": "Find your county 4-H office on the Join page. A parent signs up in ZSuite and pays the county fee.",
   "needs_work_permit": false,
-  "url": "https://ucanr.edu/sites/ca4H/",
-  "apply_url": null,
-  "sources_fetched": [],
-  "verified": "snippet-only",
-  "verified_on": "2026-10-07",
+  "url": "https://ucanr.edu/program/university-california-4-h-youth-development-program",
+  "apply_url": "https://ucanr.edu/program/university-california-4-h-youth-development-program/join",
+  "sources_fetched": [
+   "https://ucanr.edu/program/university-california-4-h-youth-development-program",
+   "https://ucanr.edu/program/university-california-4-h-youth-development-program/join"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
   "priority": 3,
-  "notes": "The 4-H site blocked automated access on 2026-10-07 (403 and a bot check), so age rules and fees could not be read. Ages, fees and teen roles must be confirmed with your county 4-H office. Re-checked on 2026-10-09: the 4-H page returned HTTP 403 again, so it could not be read and the card stays snippet-only.",
-  "verified_on_label": "Oct 7, 2026"
+  "notes": "The old ucanr.edu/sites/ca4H address now goes to this page. Projects and fees depend on your county.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "opens_iso": null,
@@ -13235,6 +13482,46 @@
   "priority": 3,
   "notes": "This is the federal workforce (WIOA) style youth program for Wake County. Durham is covered by a different workforce board and is not listed. The pages do not say whether 14 to 17 year olds qualify in every case; ask the career center.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "carilion-summer-of-service-youth-volunteers",
+  "name": "Youth Volunteer Program: Summer of Service",
+  "org": "Carilion Clinic",
+  "regions": [
+   "blacksburg",
+   "virginia"
+  ],
+  "city": "Roanoke, Christiansburg, Rocky Mount and Lexington, VA",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Help at a Carilion hospital for 6 to 8 weeks in summer. You work with staff and adult helpers, learn about health jobs, and make friends.",
+  "min_age": 14,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Local students ages 14 to 18.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "summer",
+  "duration": "6 to 8 weeks, June through August",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "For 2026, Carilion held a virtual information session on Tuesday, February 24, 2026 and posted a 2026 application. 2027 dates are not posted; expect a late winter start.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the Summer of Service form on the volunteer page when it is posted. If you missed the info session, email the volunteer boss at your hospital.",
+  "needs_work_permit": false,
+  "url": "https://www.carilionclinic.org/volunteers",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.carilionclinic.org/volunteers"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "It runs at four hospitals: Roanoke, Rocky Mount, Christiansburg and Lexington. Each one has its own volunteer boss. Their emails are on the Volunteer Services page under Summer of Service.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "grades": null,
@@ -16713,8 +17000,8 @@
   "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "grades": "Sophomores, juniors and seniors in fall 2026",
+  "verified_on": "2026-10-16",
+  "grades": "Sophomores, juniors and seniors in fall 2027",
   "max_age": null,
   "min_age": null,
   "deadline_iso": null,
@@ -16731,22 +17018,22 @@
    "business-finance"
   ],
   "what_you_do": "Take a one-week class with team projects in money, sales, business and accounting. You pitch a new idea for a business. You earn a business certificate.",
-  "who_can_apply": "Current high school students who will be sophomores, juniors or seniors in fall 2026.",
+  "who_can_apply": "High school students who will be sophomores, juniors or seniors in fall 2027.",
   "paid_type": "fee-based",
-  "pay_detail": "$1,000. A 10% discount is offered for the high schooler of DePaul alumni.",
+  "pay_detail": "$1,000. DePaul alumni get a 10% discount for their high school student.",
   "season": "summer",
   "duration": "One week, 27.5 hours of classes plus 5 hours of site visits",
   "status": "closed-expect-reopen",
-  "deadline_text": "2027 information will be posted later. No deadline is listed. Late sign-ups go on a waitlist.",
+  "deadline_text": "2027 dates and sign-up are not posted yet. The page says to check back later. Late sign-ups go on a waitlist.",
   "deadline_confidence": "unknown",
-  "how_to_apply": "Use the Apply link on the program page. Questions: admission@depaul.edu or (312) 362-8000, or dsbi@depaul.edu for alumni discounts. Classes are capped at 20 students.",
-  "url": "https://business.depaul.edu/academics/centers-institutes/driehaus-summer-business-institute",
+  "how_to_apply": "2027 sign-up is not open yet. Check the program page for updates. Questions: dsbi@depaul.edu, or admission@depaul.edu and (312) 362-8000. Classes are capped at 20 students.",
+  "url": "https://business.depaul.edu/admission-aid/undergraduate-admission/driehaus-summer-business-institute",
   "priority": 3,
-  "notes": "Costs money. The page does not say if it is a live-in program and no scholarships are mentioned.",
+  "notes": "Costs money. The page does not list 2027 dates, a live-in option or scholarships. The fee includes lunch, a snack, a t-shirt and a business certificate.",
   "sources_fetched": [
-   "https://business.depaul.edu/academics/centers-institutes/driehaus-summer-business-institute"
+   "https://business.depaul.edu/admission-aid/undergraduate-admission/driehaus-summer-business-institute"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "opens_iso": null,
@@ -22728,7 +23015,7 @@
   "duration": "Shifts for the whole 2026-2027 school year",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-16",
   "priority": 2,
   "needs_work_permit": false,
   "notes": "Branches are Lane Road, Miller Park and Tremont Road. The page lists two different branch application links, so use the one for your branch.",
@@ -22756,7 +23043,7 @@
   "sources_fetched": [
    "https://www.ualibrary.org/uapl-volunteer-program/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "grades": null,
@@ -23490,7 +23777,7 @@
   "grades": "Teen Tech Tutors and Local History: grades 9 to 12. Summer volunteers: grades 7 to 12. Service crafts and T(w)een board: grades 6 to 8.",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-16",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "Not stated",
@@ -23512,17 +23799,17 @@
   "who_can_apply": "Students in the grades listed for each role.",
   "paid_type": "unpaid",
   "season": "year-round",
-  "status": "open-now",
-  "deadline_text": "Fall 2026 applications for Teen Tech Tutors at Aspen Drive Library and Cook Park Library are accepted and reviewed until October 15, 2026. The Summer 2026 youth volunteer application period has closed. The Seed Library role is closed for now.",
-  "deadline_iso": "2026-10-15",
-  "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Click Apply for the role you want on the volunteer page. Questions about youth roles: Kevin, kwonch@cooklib.org. Questions about high school roles: Leah, lhotchkiss@cooklib.org.",
+  "status": "year-round",
+  "deadline_text": "Local History Assistant (grades 9 to 12) takes applications with no deadline. Teen Tech Tutor closed Oct 15, 2026. Summer 2026 and Seed Library roles are closed.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Click Apply for a role on the volunteer page. Questions: kwonch@cooklib.org (youth) or lhotchkiss@cooklib.org (high school).",
   "url": "https://www.cooklib.org/about/who-we-are/volunteer-opportunities/",
   "notes": "You need a library card for the adult volunteer jobs.",
   "sources_fetched": [
    "https://www.cooklib.org/about/who-we-are/volunteer-opportunities/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "grades": null,
@@ -25669,24 +25956,24 @@
   "pay_detail": "Tuition is not listed on the program page. Ask the Studio Arts Department. The Art Center offers help with travel costs for students who need help getting to class.",
   "season": "school-year",
   "duration": "Nine months, once a week, following the school calendar.",
-  "status": "open-now",
-  "deadline_text": "Applications close Thursday, October 15, 2026, and Teen Academy classes begin that day.",
-  "deadline_iso": "2026-10-15",
-  "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Fill out the online application. It has six essay questions (five required). You also send a portfolio. It needs five pieces, and all five are required. Email studioclasses@desmoinesartcenter.org with questions.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications for 2026 to 2027 closed Oct 15, 2026. It starts each fall. 2027 to 2028 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online on the program page. Answer the essay questions. Six of them must be filled in. Upload five pieces of your art. Questions: studioclasses@desmoinesartcenter.org.",
   "url": "https://desmoinesartcenter.org/classes/arts-academy/",
   "sources_fetched": [
    "https://desmoinesartcenter.org/classes/arts-academy/"
   ],
   "priority": 2,
-  "notes": "The deadline is very close (3 days from the date this card was checked). Ask the Art Center whether late applications are taken. Not a job: this is a class and portfolio program.",
+  "notes": "A class, not a job. Next dates not posted.",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-10-16",
   "needs_work_permit": null,
   "max_age": null,
   "min_age": null,
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "des-moines-botanical-garden-volunteers",
@@ -27104,6 +27391,46 @@
   "priority": 1,
   "notes": "Students at Middle College High School, City of Medicine Academy and Durham School of Technology use a different path and deadline. The pages state no North Carolina residency rule. Check with the college. The eligibility page confirms the 2.8 GPA or test score rule. It also confirms the principal waiver for the career path.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "durham-youthworks",
+  "name": "Durham YouthWorks",
+  "org": "City of Durham, Office of Economic and Workforce Development",
+  "regions": [
+   "triangle"
+  ],
+  "city": "Durham, NC",
+  "type": "paid-youth-program",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Get paid to learn job skills in the spring. Then work in summer, online or in person, with a city office, a nonprofit, or a local business.",
+  "min_age": 14,
+  "max_age": 21,
+  "grades": null,
+  "who_can_apply": "Teens and young adults ages 14 to 21 who live in Durham or Durham County. You need an email address that you check often.",
+  "paid_type": "paid",
+  "pay_detail": "Earn up to $880 and beyond if you finish both Part 1 (training) and Part 2 (summer work).",
+  "season": "summer",
+  "duration": "Part 1 training in the spring, then Part 2 summer work experience.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The page says applications open at the start of the year. 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online when applications open early in the year. Spots may be chosen by lottery.",
+  "needs_work_permit": true,
+  "url": "https://www.durhamnc.gov/598/Durham-YouthWorks-Program",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.durhamnc.gov/598/Durham-YouthWorks-Program"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 1,
+  "notes": "In 2026, more than 500 youth finished Part 1 and 120 were placed in hybrid or in-person jobs, so not everyone gets an in-person job. Questions: youthworks@durhamnc.gov. The city has a Getting Prepared Guide on the page.",
+  "verified_on_label": "Oct 16, 2026",
+  "limited": true
  },
  {
   "id": "ebayc-volunteer-and-internships",
@@ -30020,6 +30347,48 @@
    "https://camps.gmu.edu/academic-programs/"
   ],
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "fairfax-mount-vernon-estate-volunteers",
+  "name": "Mount Vernon Volunteer Program",
+  "org": "George Washington's Mount Vernon (Mount Vernon Ladies' Association)",
+  "regions": [
+   "fairfax",
+   "virginia"
+  ],
+  "city": "Mount Vernon, VA",
+  "type": "volunteer",
+  "fields": [
+   "arts-media",
+   "environment",
+   "education"
+  ],
+  "what_you_do": "Help at George Washington's home. You might work in the dig lab, greet guests, help at events (some in old-time clothes), work in the gardens, or help the actors who play people from history.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Anyone 16 or older.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Volunteers get discounts at the estate's shops and restaurants and special tours.",
+  "season": "year-round",
+  "duration": "At least 25 hours a year to stay active.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The page says volunteer applications are currently closed. No reopening date is posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Check the volunteer page to see when it opens again. You can also call Joan Flintoft at 703-799-8605.",
+  "needs_work_permit": false,
+  "url": "https://www.mountvernon.org/about/volunteering",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.mountvernon.org/about/volunteering"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 3,
+  "notes": "About 250 active volunteers. Some roles, like driving, need an adult with a license, so not every role is open to teens. There is no archaeology fieldwork for volunteers right now, only lab work.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "grades": null,
@@ -36633,7 +37002,7 @@
   "deadline_iso": null,
   "apply_url": "https://kupuhawaii.tfaforms.net/353",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-10-16",
   "priority": 2,
   "needs_work_permit": true,
   "name": "Kupu Aina Corps",
@@ -36647,7 +37016,7 @@
   "what_you_do": "Paid green jobs in nature care, farming, trail repair and green tech. You work with host groups across Hawaii and get career help and certificates.",
   "min_age": 17,
   "max_age": null,
-  "who_can_apply": "Most positions need participants to be 17 to 38 for the whole term. A small number of positions have no upper age limit.",
+  "who_can_apply": "Most positions need participants to be 17 to 38 for the whole term. A small number of positions have no upper age limit. You must be allowed to work in the U.S.",
   "paid_type": "paid",
   "pay_detail": "$20 an hour, plus health insurance for 20+ hours a week, a retention bonus ($200 to $800) and paid time off.",
   "season": "year-round",
@@ -36658,7 +37027,6 @@
   "how_to_apply": "Apply online with the Apply link on the Kupu Aina Corps page. Look at the host sites you can pick.",
   "url": "https://www.kupuhawaii.org/kupu-aina-corps",
   "sources_fetched": [
-   "https://www.kupuhawaii.org/hycc",
    "https://www.kupuhawaii.org/kupu-aina-corps",
    "https://www.kupuhawaii.org/hawaii-youth-conservation-corps-summer-program",
    "https://labor.hawaii.gov/wsd/child-labor/"
@@ -36667,7 +37035,7 @@
   "regions": [
    "hawaii"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "hawaii-rep-matsumoto-high-school-internship",
@@ -45288,32 +45656,34 @@
   "fields": [
    "science"
   ],
-  "what_you_do": "Spend a week at a world-leading nuclear physics lab. You explore nuclear astrophysics research, run your own experiments, and learn how the science is used in society.",
+  "what_you_do": "Spend a week at a top nuclear physics lab. You do experiments with FRIB scientists and learn how atomic nuclei connect to stars.",
   "min_age": null,
   "max_age": null,
   "grades": "Grades 9 to 12",
-  "who_can_apply": "Current high school students in the United States.",
+  "who_can_apply": "High school students in grades 9 to 12 in the United States.",
   "paid_type": "unpaid",
-  "pay_detail": "Free. The program, room and board are free for all participants.",
+  "pay_detail": "No cost. Room and board on campus are included if you need them.",
   "season": "summer",
-  "duration": "About 1 week, residential",
+  "duration": "About 1 week in late July (2027: July 18 to 23, planned)",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Applications are open early December through March each year, for the late-July program. The next window is expected December 2026 to March 2027. Exact dates are not posted.",
+  "deadline_text": "The application is posted each December, due in early March. The 2027 deadline is not posted yet.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Apply through the page linked from the MSU Spartan Youth listing. Contact: Zach Constan, constan@frib.msu.edu or 517-908-7363.",
+  "how_to_apply": "Fill out the online form on the FRIB PAN page when it opens in December. Two teachers write recommendations. Questions: constan@frib.msu.edu.",
   "needs_work_permit": false,
-  "url": "https://spartanyouth.msu.edu/resources/p/physics-of-atomic-nuclei-pan-program/",
+  "url": "https://frib.msu.edu/public-engagement/learning-resources-and-programs/for-high-schoolers/pan",
   "apply_url": null,
   "sources_fetched": [
+   "https://frib.msu.edu/public-engagement/learning-resources-and-programs/for-high-schoolers/pan",
+   "https://frib.msu.edu/public-engagement/learning-resources-and-programs/for-high-schoolers",
    "https://spartanyouth.msu.edu/resources/p/physics-of-atomic-nuclei-pan-program/"
   ],
-  "verified": "snippet-only",
-  "verified_on": "2026-10-09",
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
   "priority": 1,
-  "notes": "The Spartan Youth program page loaded on 2026-10-10 and confirms the late-July timing, the early December to March application window, the free cost, grades 9 to 12 and the contacts. The FRIB page at frib.msu.edu was not checked. Confirm 2027 dates and any extra requirements with constan@frib.msu.edu or 517-908-7363 before you plan.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "2027 dates are planned, not final.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "lansing-frib-ping-nuclear-physics",
@@ -45327,32 +45697,36 @@
   "fields": [
    "science"
   ],
-  "what_you_do": "Spend two weeks doing nuclear physics at the FRIB lab with undergraduate mentors. It can turn into a year-long research project. Students may present their work at national conferences.",
+  "what_you_do": "Spend two weeks learning nuclear physics at the FRIB lab with college mentors. It can turn into a year-long project you present at conferences.",
   "min_age": null,
   "max_age": null,
-  "grades": "Grades 9 to 12",
-  "who_can_apply": "High school students in grades 9 to 12. The listing does not state other rules.",
+  "grades": "Grades 9 to 11",
+  "who_can_apply": "Grades 9 to 11 at a U.S. high school (including U.S. territories). You need a reference from a teacher or coach.",
   "paid_type": "unpaid",
-  "pay_detail": "Cost not stated on the listing checked for this card.",
+  "pay_detail": "No cost. Housing, meals and a flight for out-of-state students are covered.",
   "season": "summer",
-  "duration": "2 weeks (2026: July 12 to 25)",
+  "duration": "2 weeks in summer (2026: July 12 to 25, online)",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "The 2026 application deadline was March 15, 2026 and the program ran July 12 to 25, 2026. 2027 dates are not posted on the listing.",
+  "deadline_text": "The 2026 deadline was Mar 15, 2026. The 2027 deadline is not posted. Decisions come by May 1, 2027.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Use the page linked from the MSU Spartan Youth listing. Questions: ping@frib.msu.edu.",
+  "how_to_apply": "Apply on nsbping.org when the 2027 form is posted. Name a teacher or coach as your reference. Questions: ping@frib.msu.edu.",
   "needs_work_permit": false,
   "url": "https://spartanyouth.msu.edu/resources/p/physicists-inspiring-the-next-generation-exploring-the-nuclear-matter-ping/",
-  "apply_url": null,
+  "apply_url": "https://www.nsbping.org/",
   "sources_fetched": [
+   "https://www.nsbping.org/",
+   "https://www.nsbping.org/faqs",
+   "https://www.nsbping.org/copy-of-ping-2025",
+   "https://frib.msu.edu/public-engagement/learning-resources-and-programs/for-high-schoolers",
    "https://spartanyouth.msu.edu/resources/p/physicists-inspiring-the-next-generation-exploring-the-nuclear-matter-ping/"
   ],
-  "verified": "snippet-only",
-  "verified_on": "2026-10-09",
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "The FRIB page (frib.msu.edu) did not load for me because the site blocks automated readers. So this card rests on Michigan State University's Spartan Youth Programs listing only. Confirm dates, the application link, cost and any extra requirements on the FRIB page before you plan. Not a paid job.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "2027 takes grades 9 to 11, not 12. PING 2026 ran online, so check how 2027 will run.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "grades": null,
@@ -48395,7 +48769,7 @@
  },
  {
   "id": "livermore-area-youth-advisory-commission",
-  "name": "Livermore Area Youth Advisory Commission (LAYAC)",
+  "name": "Livermore Youth Council (LYC)",
   "org": "City of Livermore",
   "regions": [
    "east-bay",
@@ -48406,33 +48780,34 @@
   "fields": [
    "law-government"
   ],
-  "what_you_do": "Youth members advise the City Council and the Livermore recreation district on what young people need. They also organize events that promote respect for diversity among Livermore youth.",
+  "what_you_do": "Speak up for Livermore youth to the City Council, the park district and the school district. Plan projects and events.",
   "min_age": 12,
   "max_age": 20,
-  "grades": null,
-  "who_can_apply": "Youths ages 12 through 20, preferably attending Livermore schools. Youth members who attend Livermore schools do not have to live in the city (Livermore Municipal Code 2.51.010).",
+  "grades": "Middle and high school",
+  "who_can_apply": "Middle and high school students. The city code says ages 12 to 20, best if at Livermore schools. You must come to meetings and events.",
   "paid_type": "not-stated",
-  "pay_detail": "Advisory commission seat. No pay is stated in the code.",
-  "season": "year-round",
-  "duration": null,
+  "pay_detail": "No pay is stated.",
+  "season": "school-year",
+  "duration": "One school year. Three absences count as quitting.",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Application dates not found. The city teen page that would list them returned an access block to our reads.",
+  "deadline_text": "The application form is on the Youth Council page. No due date is shown.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Not confirmed. Contact the City of Livermore to ask how to apply and when the next seats open.",
+  "how_to_apply": "Fill out the Recruitment Application Form on the Youth Council page. Ask the city when it is due.",
   "needs_work_permit": false,
-  "url": "https://www.livermoreca.gov/our-community/teens-kids",
-  "apply_url": null,
+  "url": "https://library.livermoreca.gov/digital-library/teens/youth-council",
+  "apply_url": "https://library.livermoreca.gov/home/showpublisheddocument/14044/639172097558270000",
   "sources_fetched": [
+   "https://www.livermoreca.gov/our-community/teens-kids",
+   "https://library.livermoreca.gov/digital-library/teens/youth-council",
    "https://codepublishing.com/CA/Livermore/Municipal/Livermore02/Livermore0251.html"
   ],
-  "verified": "snippet-only",
-  "verified_on": "2026-10-07",
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
   "priority": 3,
-  "notes": "Confirm first. The membership and duties come from Livermore Municipal Code Chapter 2.51, read on the code publisher's page. The city's own teen page (livermoreca.gov) returned HTTP 403 to both our fetch tools, so the application process, term, and dates are not confirmed. The municipal code gives 15 youth seats and 3 adult seats; the code does not say how seats are filled. Re-checked on 2026-10-09: the City teen page returned HTTP 403 again, so it could not be read and the card stays snippet-only.",
-  "verified_on_label": "Oct 7, 2026",
-  "limited": true
+  "notes": "The city code still calls it the Livermore Area Youth Advisory Commission.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "livermore-library-young-adult-volunteers",
@@ -53609,7 +53984,7 @@
   "grades": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-10-16",
   "apply_url": null,
   "deadline_iso": null,
   "needs_work_permit": null,
@@ -53632,19 +54007,20 @@
   "pay_detail": "Free. The national site says Job Corps covers housing, meals, basic medical care and a living allowance. The living allowance amount is not stated on the program pages.",
   "season": "year-round",
   "duration": "Not stated on the program pages",
-  "status": "rolling",
-  "deadline_text": "Open enrollment: you can start at any time. The process usually takes about two months.",
-  "deadline_confidence": "rolling",
-  "how_to_apply": "Make a MyJobCorps account on jobcorps.gov. Fill out the application. Upload the documents that show you are eligible. Then connect with an admissions representative. Call 800-733-5627 with questions.",
+  "status": "unconfirmed",
+  "deadline_text": "Paused. On Oct 16, 2026, jobcorps.gov listed this center as Operations Paused. Do not apply here for now.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "This center is not taking students while it is paused. To ask about other Job Corps centers, make a MyJobCorps account on jobcorps.gov or call 800-733-5627.",
   "url": "https://woodstock.jobcorps.gov/train",
   "sources_fetched": [
+   "https://www.jobcorps.gov/explore/center-locations",
+   "https://www.dol.gov/newsroom/releases/eta/eta20241219-0",
    "https://woodstock.jobcorps.gov/",
-   "https://woodstock.jobcorps.gov/training-programs",
-   "https://www.jobcorps.gov/admissions-process",
-   "https://woodstock.jobcorps.gov/train"
+   "https://woodstock.jobcorps.gov/train",
+   "https://www.jobcorps.gov/admissions-process"
   ],
-  "notes": "Center address: 10900 Old Court Rd, Woodstock, MD 21163. No closure notice showed on the program pages on 2026-10-10. The old /training-programs page gave a 404 error. The current list is at /train. The application asks for ID, Social Security number and proof of income. Only enter these on the official jobcorps.gov site. Do it with a parent or guardian. A parent should ask an admissions staff member about the rules for 16 and 17 year olds.",
-  "verified_on_label": "Oct 13, 2026"
+  "notes": "The Labor Department paused this center in Dec 2024. Its own site has no notice, so trust jobcorps.gov. Address: 10900 Old Court Rd, Woodstock, MD.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "mdusd-college-now-at-diablo-valley-college",
@@ -57598,23 +57974,23 @@
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Register online in the 4-H Zsuite system. Each county has its own deadlines and steps, so call your county Extension office early.",
   "needs_work_permit": false,
-  "url": "https://www.montana.edu/extension/4h/programs_and_events/events/mt_4h_congress/index.html",
+  "url": "https://www.montana.edu/extension/4h/programs_and_events/events/mt_4h_congress/",
   "apply_url": null,
   "sources_fetched": [
-   "https://www.montana.edu/extension/4h/programs_and_events/events/mt_4h_congress/index.html"
+   "https://www.montana.edu/extension/4h/programs_and_events/events/mt_4h_congress/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-10-16",
   "priority": 2,
   "notes": "You do not have to enter a contest. Youth State Awards are due May 1.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "grades": null,
   "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-10-16",
   "min_age": 14,
   "max_age": null,
   "needs_work_permit": false,
@@ -57644,13 +58020,12 @@
   "how_to_apply": "County level: fill out an application. Then interview with the County Council. State officer: send the application to the Montana 4-H Center. It must be postmarked by June 15.",
   "url": "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/country-ambassador/",
   "sources_fetched": [
-   "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/index.html",
-   "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/country-ambassador/index.html",
-   "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/state-ambassador-officer/index.html",
-   "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/country-ambassador/"
+   "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/",
+   "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/country-ambassador/",
+   "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/state-ambassador-officer/"
   ],
   "notes": "You must already be in 4-H. The state team page lists five state officer jobs (for example President and Publicity Chair). Contact your county extension office. The state officer page does not state the term length for officers.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "montana-4h-fall-leadership-training",
@@ -57680,16 +58055,16 @@
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Register online in the 4-H Zsuite system. Call your county MSU Extension office for county rules. Fill in your info and waivers before the event.",
   "needs_work_permit": false,
-  "url": "https://www.montana.edu/extension/4h/programs_and_events/events/fall_training/index.html",
+  "url": "https://www.montana.edu/extension/4h/programs_and_events/events/fall_training/",
   "apply_url": null,
   "sources_fetched": [
-   "https://www.montana.edu/extension/4h/programs_and_events/events/fall_training/index.html"
+   "https://www.montana.edu/extension/4h/programs_and_events/events/fall_training/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-10-16",
   "priority": 2,
   "notes": "Cancel before sign-up closes for a full refund. Dress is business casual on Saturday. Dress for the banquet is business professional to semi-formal.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "grades": null,
@@ -61000,9 +61375,9 @@
   "min_age": null,
   "max_age": null,
   "grades": "Second or third year of high school (rising juniors and seniors)",
-  "opens_iso": "2026-10-15",
+  "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-16",
   "apply_url": "https://www.cfnc.org/",
   "deadline_iso": "2027-01-05",
   "needs_work_permit": false,
@@ -61026,16 +61401,17 @@
   "pay_detail": "No cost to accepted students. Meals and housing on campus are included. It does not pay a wage.",
   "season": "summer",
   "duration": "About four weeks between mid-June and end of July 2027, depending on the campus",
-  "status": "opens-soon",
-  "deadline_text": "Application opens Oct 15, 2026 at cfnc.org. Essays are due Jan 5, 2027. Transcripts and teacher and counselor forms are due Feb 28, 2027. Decisions come Apr 2, 2027.",
+  "status": "open-now",
+  "deadline_text": "Open now on cfnc.org. Apply by Jan 5, 2027. Transcripts and teacher and counselor forms are due Feb 28, 2027. Decisions come Apr 2, 2027.",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Apply through NCSSM Admissions. The application is on cfnc.org. Finish the Residency Determination Service step. Write the essays. Have your school send your transcript and teacher and counselor evaluations.",
+  "how_to_apply": "Apply on cfnc.org with a CFNC account. Finish the Residency Determination Service step and write the essays. Your school sends your transcript and forms.",
   "url": "https://www.ncssm.edu/summer/summer-ventures",
   "sources_fetched": [
-   "https://www.ncssm.edu/summer/summer-ventures"
+   "https://www.ncssm.edu/summer/summer-ventures",
+   "https://www.ncssm.edu/admissions/apply"
   ],
-  "notes": "2027 campuses and dates listed: Appalachian State (June 20 to July 31, to be decided), East Carolina (virtual week June 27 to July 3, then on campus July 4 to 24), UNC Charlotte (June 20 to July 31, to be decided), UNC Wilmington (June 20 to July 17). Accepted students do an online Research Prep course in June. Contact: summerventures@ncssm.edu or 919-416-2747.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "2027 campuses: Appalachian State, East Carolina, UNC Charlotte and UNC Wilmington, with dates from June 20 to July 31. Contact: summerventures@ncssm.edu or 919-416-2747.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "grades": null,
@@ -64012,14 +64388,13 @@
   "apply_url": "https://4h.zsuite.org",
   "sources_fetched": [
    "https://nm4h.nmsu.edu/",
-   "https://nm4h.nmsu.edu/4h-experience/join.html",
    "https://nm4h.nmsu.edu/4h/join.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-10-16",
   "priority": 3,
   "notes": "State office phone on the page is 575-646-3026. Call it if you are not sure which county you are in.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "new-mexico-ffa-association",
@@ -65001,6 +65376,48 @@
   "verified_on_label": "Oct 10, 2026"
  },
  {
+  "id": "nih-summer-internship-program",
+  "name": "NIH Summer Internship Program (SIP)",
+  "org": "National Institutes of Health, Office of Intramural Training and Education",
+  "regions": [
+   "college-park",
+   "maryland"
+  ],
+  "city": "Bethesda, MD",
+  "type": "research",
+  "fields": [
+   "science",
+   "health"
+  ],
+  "what_you_do": "Work full time for a summer in an NIH research lab with a scientist mentor. You join career workshops and present your work at Summer Poster Day. Open to graduating high school seniors who meet the age rule.",
+  "min_age": 17,
+  "max_age": null,
+  "grades": "12th grade (graduating senior) or college",
+  "who_can_apply": "U.S. citizens or green card holders who will be 18 by September 30, 2027. You must be a senior now who will finish high school before it starts, or a college student. If you are 17 on June 1, 2027, you must live within 40 miles of an NIH campus.",
+  "paid_type": "stipend",
+  "pay_detail": "Stipend, set each year by education level. The page does not state the amount. Free parking. You need proof of health insurance, and NIH does not provide housing.",
+  "season": "summer",
+  "duration": "Full time, between May 10 and August 31, 2027. Exact dates are set with your mentor. No vacations during the internship.",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "The 2027 application is open now and closes Tuesday, January 26, 2027 at 12 pm ET. Reference letters are due Tuesday, February 2, 2027 at 12 pm ET.",
+  "deadline_iso": "2027-01-26",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply in the NIH Application Center. Send your grades, a resume, a short essay about your goals, and two references. Then email NIH scientists whose work you like and point them to your application. Each scientist picks their own interns by April 1.",
+  "needs_work_permit": null,
+  "url": "https://www.training.nih.gov/research-training/pb/sip/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.training.nih.gov/research-training/pb/sip/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Very competitive, and mostly for college students. Only seniors who meet the age rule can apply; juniors cannot. Free online application webinars on Oct 20 and Nov 17, 2026. Questions: SIP@nih.gov.",
+  "verified_on_label": "Oct 16, 2026",
+  "limited": true
+ },
+ {
   "id": "nisra-volunteers-and-summer-camp-jobs-elgin",
   "grades": null,
   "apply_url": null,
@@ -65146,23 +65563,23 @@
   "pay_detail": "Cost not listed on the program page.",
   "season": "year-round",
   "duration": "Not stated on the program page.",
-  "status": "open-now",
-  "deadline_text": "Applications are due October 15 for the fall selection, held the Saturday before Thanksgiving at the ND 4-H Camp in Washburn. Elections also happen at the Extension Youth Conference in June, with applications due May 15. The page shows 2026 dates for June.",
-  "deadline_iso": "2026-10-15",
-  "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Use the Ambassador Resources and Application link. It is on the NDSU Extension leadership page. Send the form to the ND 4-H Center for Youth Development. You must attend all selection day events.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Fall 2026 applications were due Oct 15, 2026. The next chance is the June election. Its May 15 deadline is from last year, since 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Get the form from Ambassador Resources on the NDSU 4-H leadership page. Send it to the ND 4-H Center for Youth Development.",
   "url": "https://www.ndsu.edu/agriculture/extension/extension-topics/4-h-youth-development/4-h-leadership-opportunities",
   "sources_fetched": [
    "https://www.ndsu.edu/agriculture/extension/extension-topics/4-h-youth-development/4-h-leadership-opportunities"
   ],
   "priority": 2,
-  "notes": "The fall deadline is only 3 days after the date this card was checked, so call the ND 4-H office first. The page does not print a year for Oct 15, but it lists June 2026 and Feb 2027 events, so Oct 15 is read as 2026.",
+  "notes": "Selection is the Saturday before Thanksgiving at 4-H Camp in Washburn. Questions: ndsu.4hambassadors@ndsu.edu.",
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-10-16",
   "needs_work_permit": null,
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "north-dakota-4h-extension-youth-conference",
@@ -65856,6 +66273,47 @@
   "priority": 2,
   "notes": "Teams meet at host firms or universities. The page also links to a Summer Internship Program for alumni, which this card does not cover.",
   "verified_on_label": "Oct 10, 2026"
+ },
+ {
+  "id": "nyc-amnh-science-research-mentoring-program",
+  "name": "Science Research Mentoring Program (SRMP)",
+  "org": "American Museum of Natural History",
+  "regions": [
+   "new-york-city"
+  ],
+  "city": "New York, NY",
+  "type": "research",
+  "fields": [
+   "science"
+  ],
+  "what_you_do": "Do a real science research project with a Museum scientist for a full year. You work in a team of 2 or 3 twice a week after school, learn skills like DNA lab work or coding, and present a poster in June.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "10th or 11th grade when you apply",
+  "who_can_apply": "You must live and go to school in New York City and be in 10th or 11th grade. You must have passed your classes for the last three or more terms. You also must have taken an AMNH course, or go to one of the partner schools or groups on the list. You do not need to be a U.S. citizen.",
+  "paid_type": "stipend",
+  "pay_detail": "$2,500 stipend when you finish the research and program requirements. You can also earn 1 CUNY Lehman College credit at no cost.",
+  "season": "school-year",
+  "duration": "One year, August to June: a 4-week Summer Institute in August, then about 4 hours a week after school (Tuesdays and Thursdays) plus 1 or 2 Fridays a month.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The page says applications for the Class of 2028 are expected to open in Winter 2027. Interviews are in April and decisions come by the end of May.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the online form and answer short questions. They ask why you like science, how you work on a team, and how you will make time. No report card or letters are needed. Some people get an interview.",
+  "needs_work_permit": false,
+  "url": "https://www.amnh.org/learn-teach/teens/science-research-mentoring-program",
+  "apply_url": "https://www.amnh.org/learn-teach/teens/science-research-mentoring-program/join-srmp",
+  "sources_fetched": [
+   "https://www.amnh.org/learn-teach/teens/science-research-mentoring-program",
+   "https://www.amnh.org/learn-teach/teens/science-research-mentoring-program/join-srmp"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 1,
+  "notes": "The FAQ says you do not need working papers. SRMP is meant to be your main after-school activity for the year. Join the program's email list on the Join SRMP page to hear when the application opens. Questions: srmp@amnh.org.",
+  "verified_on_label": "Oct 16, 2026",
+  "limited": true
  },
  {
   "id": "nyc-apollo-theater-academy-arts-production-internship",
@@ -66553,6 +67011,167 @@
   "limited": true
  },
  {
+  "id": "nyc-brooklyn-museum-apprentice-program",
+  "name": "Museum Apprentice Program",
+  "org": "Brooklyn Museum",
+  "regions": [
+   "new-york-city"
+  ],
+  "city": "Brooklyn, NY",
+  "type": "internship",
+  "fields": [
+   "arts-media",
+   "education"
+  ],
+  "what_you_do": "Train as a museum educator. You meet artists and curators, plan lessons, help with family programs, and lead tours for summer camp groups.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "All New York City high school students.",
+  "paid_type": "paid",
+  "pay_detail": "$17 per hour. Second-year apprentices are leaders and earn $18 per hour. Up to 180 hours for the year. OMNY cards for weekend and summer work.",
+  "season": "school-year",
+  "duration": "November 2026 to August 2027: Thursdays 4:30 to 6:30 PM during the school year, then Wednesday to Friday 10 AM to 4 PM in July and August.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 to 2027 deadline has passed. The page says to come back in June 2027 to apply for the fall 2027 program.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Online application through the link on the program page when it is open.",
+  "needs_work_permit": true,
+  "url": "https://www.brooklynmuseum.org/careers/internships-fellowships/museum-apprentice-program",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.brooklynmuseum.org/careers/internships-fellowships/museum-apprentice-program"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 1,
+  "notes": "You must commit to the full schedule, including summer. Questions: teen.programs@brooklynmuseum.org.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "nyc-brooklyn-museum-creative-practice",
+  "name": "Creative Practice",
+  "org": "Brooklyn Museum",
+  "regions": [
+   "new-york-city"
+  ],
+  "city": "Brooklyn, NY",
+  "type": "internship",
+  "fields": [
+   "arts-media",
+   "education"
+  ],
+  "what_you_do": "Help teaching artists run weekend art classes for students of all ages. You prepare studios and materials, learn lesson planning, and make your own art with other teens.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "10th to 12th grade",
+  "who_can_apply": "New York City teens who are in 10th, 11th, or 12th grade when it starts.",
+  "paid_type": "paid",
+  "pay_detail": "$17 per hour, up to 120 hours for the year. MetroCards for weekend work.",
+  "season": "school-year",
+  "duration": "September 2026 to June 2027: some Thursdays 4:30 to 6:30 PM, plus a weekly three-hour weekend art class each semester.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 to 2027 deadline has passed. The page says to come back in June 2027 to apply for the fall 2027 program.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Online application through the link on the program page when it is open.",
+  "needs_work_permit": true,
+  "url": "https://www.brooklynmuseum.org/careers/internships-fellowships/creative-practice",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.brooklynmuseum.org/careers/internships-fellowships/creative-practice"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "The museum says this is best for teens who have no other clubs or jobs. Questions: teen.programs@brooklynmuseum.org.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "nyc-brooklyn-museum-intersextions",
+  "name": "InterseXtions: Gender and Sexuality",
+  "org": "Brooklyn Museum",
+  "regions": [
+   "new-york-city"
+  ],
+  "city": "Brooklyn, NY",
+  "type": "internship",
+  "fields": [
+   "arts-media",
+   "social-impact"
+  ],
+  "what_you_do": "Explore gender and sexuality in art with other teens. You make art, talk about representation, and plan a free, large event for LGBTQ+ teens and allies.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "All New York City teens.",
+  "paid_type": "paid",
+  "pay_detail": "$17 per hour. Second-year members are leaders and earn $18 per hour. Up to 75 hours for the year. OMNY cards for weekend and evening work.",
+  "season": "school-year",
+  "duration": "November 2026 to June 2027: Tuesdays 4:30 to 6:30 PM, plus some Fridays and weekends.",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Apply online by October 18, 2026.",
+  "deadline_iso": "2026-10-18",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Online application through the link on the program page when it is open.",
+  "needs_work_permit": true,
+  "url": "https://www.brooklynmuseum.org/careers/internships-fellowships/intersextions",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.brooklynmuseum.org/careers/internships-fellowships/intersextions"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Open to queer and trans youth and allies. You must commit to the full schedule. Questions: teen.programs@brooklynmuseum.org.",
+  "verified_on_label": "Oct 16, 2026",
+  "limited": true
+ },
+ {
+  "id": "nyc-brooklyn-museum-teen-night-planning-committee",
+  "name": "Teen Night Planning Committee",
+  "org": "Brooklyn Museum",
+  "regions": [
+   "new-york-city"
+  ],
+  "city": "Brooklyn, NY",
+  "type": "internship",
+  "fields": [
+   "arts-media",
+   "social-impact"
+  ],
+  "what_you_do": "Plan and run free, large Teen Night events at the museum. You pick activities, book young artists and performers, and promote the events on social media.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "All New York City high school students.",
+  "paid_type": "paid",
+  "pay_detail": "$17 per hour. Second-year members are leaders and earn $18 per hour. Up to 75 hours for the year. OMNY cards for weekend and evening work.",
+  "season": "school-year",
+  "duration": "November 2026 to May 2027: Wednesdays 4:30 to 6:30 PM, plus some Fridays and weekends.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 to 2027 deadline has passed. The page says to come back in June 2027 to apply for the fall 2027 program.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Online application through the link on the program page when it is open.",
+  "needs_work_permit": true,
+  "url": "https://www.brooklynmuseum.org/careers/internships-fellowships/teen-night-planning-committee",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.brooklynmuseum.org/careers/internships-fellowships/teen-night-planning-committee"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "You must commit to the full schedule. Questions: teen.programs@brooklynmuseum.org.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
   "id": "nyc-brooklyn-pratt-precollege-summer-intensive",
   "name": "Summer PreCollege Intensive",
   "org": "Pratt Institute (School of Continuing and Professional Studies)",
@@ -67206,10 +67825,11 @@
    "https://www.nyc.gov/assets/dycd/downloads/pdf/OY_FAQs_SYEP_2026.pdf",
    "https://www.nyc.gov/assets/dycd/downloads/pdf/YY_FAQs_SYEP_2026.pdf",
    "https://www.nyc.gov/assets/dycd/downloads/pdf/YY_Document_list_2026.pdf",
-   "https://dol.ny.gov/working-papers"
+   "https://dol.ny.gov/working-papers",
+   "https://www.henrystreet.org/programs/employment/youth-employment/"
   ],
   "priority": 1,
-  "notes": "Pay and hours above are the 2026 numbers and may change. Free to apply. NYS Department of Labor says anyone 14-17 needs working papers (employment certificate) to hold a job in New York State; ask your SYEP provider what they need from you. Teens in school-based (CareerReady) options apply through their school. You pay your own transportation and meals.",
+  "notes": "Pay and hours above are the 2026 numbers and may change. Free to apply. NYS Department of Labor says anyone 14-17 needs working papers (employment certificate) to hold a job in New York State; ask your SYEP provider what they need from you. Teens in school-based (CareerReady) options apply through their school. You pay your own transportation and meals. Henry Street Settlement is one SYEP group. Its lottery takes ages 16 to 24. Teens in NYCHA's Baruch or Wald Houses, in shelters, or in foster care can apply first come, first served.",
   "verified_on_label": "Oct 9, 2026",
   "limited": true
  },
@@ -67777,6 +68397,128 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "nyc-met-high-school-spring-internship",
+  "name": "The Met High School Internship Program in Museum Education (Spring)",
+  "org": "The Metropolitan Museum of Art",
+  "regions": [
+   "new-york-city"
+  ],
+  "city": "New York, NY",
+  "type": "internship",
+  "fields": [
+   "arts-media",
+   "education"
+  ],
+  "what_you_do": "Spend 40 hours this spring in a Met education team such as Teen Programs, Family Programs, Access Programs or Social Media. You go to Teen Fridays and monthly check-ins, and help run the Teens Take The Met night.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "10th or 11th grade, or working on a High School Equivalency",
+  "who_can_apply": "Students in grade 10 or 11, or working on a GED, at a New York City high school or home school. You need working papers and a Social Security Number or ITIN. A parent or guardian must say yes. You can't have done a Met internship before.",
+  "paid_type": "stipend",
+  "pay_detail": "$1,100 stipend when you finish, which the page says matches New York State minimum wage law.",
+  "season": "spring",
+  "duration": "40 hours, about 2 to 4 hours a week from Feb 9 to May 28, 2027, plus a Jan 23 bootcamp, monthly Saturday check-ins and three Teen Fridays.",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Apply by Friday, October 16, 2026, 6 pm ET. Interview notices by Friday, December 4, 2026.",
+  "deadline_iso": "2026-10-16",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the online form and write short essays. Ask one adult who is not family for a letter. If they pick you, you go to a group interview in person.",
+  "needs_work_permit": true,
+  "url": "https://www.metmuseum.org/opportunities/internships/spring-semester-internships-for-high-school-students",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.metmuseum.org/opportunities/internships/spring-semester-internships-for-high-school-students"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 1,
+  "notes": "You must come to every date on the list. A parent or guardian must come to the January 16, 2027 party. If you missed the October 16 deadline, try the summer internship. It also takes students from New Jersey and Connecticut.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "nyc-met-high-school-summer-internship",
+  "name": "The Met High School Internship Program (Summer)",
+  "org": "The Metropolitan Museum of Art",
+  "regions": [
+   "new-york-city",
+   "new-york-state",
+   "new-jersey"
+  ],
+  "city": "New York, NY",
+  "type": "internship",
+  "fields": [
+   "arts-media"
+  ],
+  "what_you_do": "Work 40 hours over the summer in a Met department such as curatorial, social media, education, imaging or design. You meet museum staff, join a cohort, and go to Teen Fridays. No art background needed.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "10th or 11th grade, or working on a High School Equivalency",
+  "who_can_apply": "Students in grade 10 or 11, or working on a GED. You must live in and go to school (or home school) in New York, New Jersey, or Connecticut. You need working papers and a Social Security Number or ITIN. A parent or guardian must say yes. You can't have done a Met internship before.",
+  "paid_type": "stipend",
+  "pay_detail": "$1,100 stipend when you finish, which the page says matches New York State minimum wage law.",
+  "season": "summer",
+  "duration": "40 hours, about 10 to 20 hours a week. In 2026: bootcamp July 1, placement July 7 to Aug 7, plus a June 27 family reception.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 deadline was Friday, March 13, 2026, 5 pm ET, with interview notices by mid-April. 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the online form and write short essays. Ask one adult who is not family for a letter. If they pick you, you go to a group interview in person.",
+  "needs_work_permit": true,
+  "url": "https://www.metmuseum.org/opportunities/internships/summer-internships-for-high-school-students",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.metmuseum.org/opportunities/internships/summer-internships-for-high-school-students"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 1,
+  "notes": "You must come to every date on the list. A parent or guardian must come to the party in June. The Met also has a spring internship for New York City students. Connecticut is not a place on this site yet, but students there can apply.",
+  "verified_on_label": "Oct 16, 2026",
+  "limited": true
+ },
+ {
+  "id": "nyc-moma-teens-in-residence",
+  "name": "MoMA Teens-in-Residence",
+  "org": "The Museum of Modern Art (MoMA)",
+  "regions": [
+   "new-york-city"
+  ],
+  "city": "New York, NY",
+  "type": "leadership",
+  "fields": [
+   "arts-media"
+  ],
+  "what_you_do": "Meet weekly at MoMA with artists and museum staff. You do hands-on workshops, help plan public programs, lead gallery experiences, and write gallery text and audio. No art-making experience needed.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "10th to 12th grade",
+  "who_can_apply": "New York City high school students in grade 10, 11, or 12 in the 2026 to 2027 school year who have a deep interest in art or museums.",
+  "paid_type": "stipend",
+  "pay_detail": "$1,000 stipend when you finish. MoMA pays for all materials, snacks and other costs.",
+  "season": "school-year",
+  "duration": "October 2026 to June 2027, every Tuesday 4:30 to 6:30 PM, plus some other days and weekends.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 to 2027 deadline was Monday, September 14, 2026, at 11:59 PM. The next cycle is not posted; expect a late summer deadline.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the online form. The link is on the program page when it is open.",
+  "needs_work_permit": null,
+  "url": "https://www.moma.org/calendar/programs/253",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.moma.org/calendar/programs/253",
+   "https://moma.submittable.com/submit/fb1c2d05-ecfb-4abe-814b-842a416f8b5e/moma-teens-in-residence-2026-27"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 1,
+  "notes": "Attendance is required. Missing meetings again and again gets you removed. The 2026 to 2027 application form now says it has expired. Questions: momateens@moma.org.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
   "id": "nyc-montefiore-bronx-summer-volunteer",
   "name": "Summer Volunteer Program for High School Students",
   "org": "Montefiore Einstein",
@@ -68176,6 +68918,45 @@
   "priority": 1,
   "notes": "Admitted Fellows must come to all days of the Summer Institute. A family member must come to an orientation. The application asks for household income. The program uses it to check the income limit. The pages do not say if a work permit is needed.",
   "verified_on_label": "Oct 10, 2026"
+ },
+ {
+  "id": "nyc-pal-college-access-program",
+  "name": "College Access Program (CAP)",
+  "org": "Police Athletic League (PAL)",
+  "regions": [
+   "new-york-city"
+  ],
+  "city": "Bronx, NY",
+  "type": "leadership",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Get free help getting into college. You go to workshops on college, financial aid and job skills, and do an internship you pick to try out a career.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "11th and 12th grade",
+  "who_can_apply": "High school juniors and seniors who attend PAL Teen Centers.",
+  "paid_type": "not-stated",
+  "pay_detail": "Free to join. The page does not say whether the internships are paid.",
+  "season": "school-year",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline posted. Register on PAL's website.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Register through the link on PAL's Teen Programs page.",
+  "needs_work_permit": null,
+  "url": "https://palnyc.org/teens",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://palnyc.org/teens"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 3,
+  "notes": "CAP meets at PAL's Webster Center in the Bronx. It is built for teens who would be the first in their family to go to college. PAL Teen Centers, for teens 13 to 19, are free and open 3 to 5 evenings a week.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "nyc-parks-lifeguard-program",
@@ -68645,12 +69426,12 @@
   "pay_detail": "Up to $400 at the end of the semester, based on participation.",
   "season": "school-year",
   "duration": "Thursdays 4:30 to 6:30 p.m., November to May, in person at the New York City or Newark office.",
-  "status": "open-now",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Deadline: Oct 16, 2026.",
-  "deadline_iso": "2026-10-16",
-  "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Apply online with the link on the Leadership Scholars page. Questions: Charlie Ambrose, charlie@sadienash.org (listed on the page).",
+  "deadline_text": "Applications for 2026 to 2027 were due Oct 16, 2026. Next dates are not posted. Join the email list on the apply page.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online from the Leadership Scholars page. Questions: charlie@sadienash.org.",
   "needs_work_permit": null,
   "url": "https://www.sadienash.org/leadership-scholars",
   "apply_url": "https://sadienashleadershipproject.my.salesforce-sites.com/application",
@@ -68659,10 +69440,10 @@
    "https://www.sadienash.org/apply-now"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-16",
   "priority": 1,
-  "notes": "The page lists the New York City office at 247 W 37th Street, Suite 705, New York, NY 10018. Stipend is based on participation.",
-  "verified_on_label": "Oct 9, 2026",
+  "notes": "Office: 247 W 37th St, Suite 705, New York, NY. Next round not posted.",
+  "verified_on_label": "Oct 16, 2026",
   "limited": true
  },
  {
@@ -68688,12 +69469,12 @@
   "pay_detail": "Eligible for a $400 stipend at the end of the internship.",
   "season": "school-year",
   "duration": "Saturdays 10 a.m. to 12 noon, November 2026 to May 2027, plus some events.",
-  "status": "open-now",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Deadline: Oct 16, 2026.",
-  "deadline_iso": "2026-10-16",
-  "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Apply online with the link on the Nash U page. Questions: Charlie Ambrose, charlie@sadienash.org (listed on the page).",
+  "deadline_text": "Applications for 2026 to 2027 were due Oct 16, 2026. Next dates are not posted. Join the email list on the apply page.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online from the Nash U page. Questions: charlie@sadienash.org.",
   "needs_work_permit": null,
   "url": "https://www.sadienash.org/nash-u",
   "apply_url": "https://sadienashleadershipproject.my.salesforce-sites.com/application",
@@ -68702,10 +69483,10 @@
    "https://www.sadienash.org/apply-now"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "The apply page says you must identify as a woman or gender-expansive person of color. You must commit for the full internship.",
-  "verified_on_label": "Oct 9, 2026",
+  "notes": "You must commit to the full internship. Next round not posted.",
+  "verified_on_label": "Oct 16, 2026",
   "limited": true
  },
  {
@@ -68731,12 +69512,12 @@
   "pay_detail": "In-person: up to $400 at the end. Virtual: up to $150 (you must attend 9 of 10 sessions). Referral bonus of $25 per friend.",
   "season": "school-year",
   "duration": "In person: once a week, Tuesdays or Wednesdays 4:30 to 6:30 p.m., November to May. Virtual: 10 weeks, offered each fall and spring.",
-  "status": "open-now",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Deadline: Oct 16, 2026.",
-  "deadline_iso": "2026-10-16",
-  "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Apply online with the link on the Siblinghood Academy page. For questions, write to Cielito Pareja at cielito@sadienash.org. The page lists this contact.",
+  "deadline_text": "Applications for 2026 to 2027 were due Oct 16, 2026. Next dates are not posted. Join the email list on the apply page.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online from the program page. Questions: cielito@sadienash.org.",
   "needs_work_permit": null,
   "url": "https://www.sadienash.org/siblinghood-academy",
   "apply_url": "https://sadienashleadershipproject.my.salesforce-sites.com/application",
@@ -68745,10 +69526,10 @@
    "https://www.sadienash.org/apply-now"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "No more than 5 absences for the in-person version.",
-  "verified_on_label": "Oct 9, 2026",
+  "notes": "No more than 5 absences in person. Next round not posted.",
+  "verified_on_label": "Oct 16, 2026",
   "limited": true
  },
  {
@@ -68793,6 +69574,46 @@
   "notes": "For young women and gender-expansive youth. The Brooklyn, Queens and other borough sites are part of the same program.",
   "verified_on_label": "Oct 9, 2026",
   "limited": true
+ },
+ {
+  "id": "nyc-sca-metro-ny-urban-green",
+  "name": "Metro New York Urban Green",
+  "org": "Student Conservation Association (SCA)",
+  "regions": [
+   "new-york-city",
+   "new-jersey"
+  ],
+  "city": "New York, NY",
+  "type": "paid-youth-program",
+  "fields": [
+   "environment"
+  ],
+  "what_you_do": "Join a paid crew that works outdoors in local parks. You build trails, restore habitats, and learn about green careers, job skills and money basics with other teens.",
+  "min_age": 14,
+  "max_age": 19,
+  "grades": null,
+  "who_can_apply": "High school students and recent grads ages 14 to 19 in the New York City, New Jersey and Connecticut area. Not everyone gets in.",
+  "paid_type": "paid",
+  "pay_detail": "Paid. The page does not state the rate for teen crews.",
+  "season": "year-round",
+  "duration": "School year and summer programs. Length varies by crew.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No teen crew openings were posted when checked in October 2026. The only openings listed were 2026 Stamford crews for ages 18 and up.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Watch the Current Opportunities list on the program page and apply through its Learn More and Apply links. You can also contact the Metro NY Region office.",
+  "needs_work_permit": true,
+  "url": "https://thesca.org/program/urban-green/metro-new-york",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://thesca.org/program/urban-green/metro-new-york"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Contact: Pablo Galesi, (347) 200-4709, pgalesi@thesca.org. In New York, teens 14 to 17 need working papers to work.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "nyc-staten-island-historic-richmond-town-high-school-apprenticeship",
@@ -69413,6 +70234,46 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "nyc-work-learn-grow",
+  "name": "Work, Learn and Grow (WLG)",
+  "org": "NYC Council initiative, run by youth groups such as the Police Athletic League and Henry Street Settlement",
+  "regions": [
+   "new-york-city"
+  ],
+  "city": "New York, NY",
+  "type": "paid-youth-program",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Keep working during the school year after your summer SYEP job. You get career training and a paid entry-level job at a place like a hospital, museum, city agency, law firm or store.",
+  "min_age": 14,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Ages 14 to 24. You must have done SYEP last summer and be in school now.",
+  "paid_type": "paid",
+  "pay_detail": "Paid employment. The pages do not state a rate.",
+  "season": "school-year",
+  "duration": "Up to 25 weeks between October and April (PAL). Henry Street says its program runs November to March.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "Henry Street says applications are typically released in late September. No 2026 to 2027 deadline is posted on either page.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Ask a group that runs SYEP if it runs WLG too. Two that do are PAL (email Myshanda Parks at MParks@palnyc.org) and Henry Street (email Iliana Balbuena at ibalbuena@henrystreet.org). If you can apply, you go into a lottery.",
+  "needs_work_permit": true,
+  "url": "https://www.henrystreet.org/programs/employment/youth-employment/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://palnyc.org/teens",
+   "https://www.henrystreet.org/programs/employment/youth-employment/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Only for teens who did SYEP last summer. If you are new, start with the Summer Youth Employment Program. Selection is by lottery, so a spot is not guaranteed. New York State requires working papers for workers ages 14 to 17.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "opens_iso": null,
@@ -69529,6 +70390,46 @@
    "https://www.nyit.edu/academics/management/programs-for-high-school-students/business-bootcamp/"
   ],
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "nypl-teen-curators",
+  "name": "NYPL Teen Curators Program",
+  "org": "The New York Public Library",
+  "regions": [
+   "new-york-city"
+  ],
+  "city": "New York, NY",
+  "type": "internship",
+  "fields": [
+   "arts-media",
+   "education"
+  ],
+  "what_you_do": "Meet twice a week after school at the library. You learn from experts who plan shows, study items in a show, and make your own videos or digital art about it.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "11th and 12th grade",
+  "who_can_apply": "Students in 11th or 12th grade who live or go to school in New York City.",
+  "paid_type": "stipend",
+  "pay_detail": "Stipend. The page does not state the amount.",
+  "season": "fall",
+  "duration": "About 9 weeks. In 2026 it ran Oct 20 to Dec 17, Tuesdays and Thursdays 4:30 to 6 PM, at the Schwarzman Building and the Stavros Niarchos Foundation Library.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 to 2027 application closed Sept 20, 2026. Teens were told Oct 2 and orientation was Oct 17. The next cycle is not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Online application on the program page when it is open. Selected teens are notified by email.",
+  "needs_work_permit": null,
+  "url": "https://www.nypl.org/education/teens/teen-curators-program",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.nypl.org/education/teens/teen-curators-program"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "The theme changes with each exhibition. The fall 2026 group studied the Declaration of Independence. Sign up for NYPL's teen newsletter to hear when the next application opens.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "oak-park-library-leading-edge-teen-advisory-board",
@@ -73165,10 +74066,10 @@
    "https://extension.psu.edu/programs/4-h/get-involved/youth-and-parents/join"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-10-16",
   "priority": 2,
   "notes": "A youth group, not a job. Ask your county educator what clubs and teen leader roles are near you.",
-  "verified_on_label": "Oct 13, 2026",
+  "verified_on_label": "Oct 16, 2026",
   "limited": true
  },
  {
@@ -73570,31 +74471,33 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "You get a paid 6-week summer job. The job is with Prince George's County Government or a county partner. You get job readiness training and career exploration.",
+  "what_you_do": "Get a paid summer job for 6 weeks in Prince George's County. You might work at a nonprofit, a company, or a county office. You also learn job skills and try out careers.",
   "min_age": 14,
   "max_age": 24,
-  "who_can_apply": "Young people ages 14 to 24 in Prince George's County. Placements are by random lottery. The county's main SYEP pages were blocked for my reader, so residency and work-eligibility rules are not confirmed here.",
+  "who_can_apply": "Prince George's County youth and young adults ages 14 to 24 (your age as of the program start date picks which application you fill out). Placements are by random lottery.",
   "paid_type": "paid",
-  "pay_detail": "Hourly and stipend opportunities are available (rate not stated in the county release).",
+  "pay_detail": "Paid. Some placements are hourly and some are stipends; the county page does not state a rate.",
   "season": "summer",
   "duration": "6 weeks (Jul 6 to Aug 14 in 2026)",
   "status": "closed-expect-reopen",
-  "deadline_text": "2026 cycle: applications Mar 1 to Mar 31, 2026; program Jul 6 to Aug 14, 2026. 2027 dates not posted.",
+  "deadline_text": "2026 cycle: applications March 1 to March 31, 2026 (11:59 pm); program July 6 to August 14, 2026. 2027 dates are not posted, but the page says applications are accepted March 1 to March 31.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Apply online at syep.mypgc.us during the spring window. Eligible applicants are entered in a random lottery for a placement. Questions: syep@co.pg.md.us or 301-883-6200 (from the county release).",
+  "how_to_apply": "Apply online during March through the county's NEOGOV job site, choosing the application for your age group (14 and 15, 16 and 17, or 18 to 24). Eligible applicants go into a random lottery. Ages 18 to 24 are encouraged to attach a resume. Questions: syep@co.pg.md.us.",
   "needs_work_permit": true,
-  "url": "https://content.govdelivery.com/accounts/MDPGC/bulletins/409b9db",
+  "url": "https://www.princegeorgescountymd.gov/departments-offices/human-resources-management/youth-employment-and-internships/summer-youth-enrichment-program",
   "apply_url": "https://syep.mypgc.us",
   "sources_fetched": [
+   "https://www.princegeorgescountymd.gov/departments-offices/human-resources-management/youth-employment-and-internships/summer-youth-enrichment-program",
+   "https://www.princegeorgescountymd.gov/departments-offices/human-resources-management/youth-employment-and-internships",
    "https://content.govdelivery.com/accounts/MDPGC/bulletins/409b9db"
   ],
   "priority": 1,
-  "notes": "Facts come from the County Executive's official March 1, 2026 bulletin; the county SYEP web pages returned Access Denied to my reader, so confirm at syep.mypgc.us. Highly in demand, so apply the day the window opens. Maryland rule (Maryland Department of Labor): work permits are required for all minors under 18 to work in Maryland, issued only after a job offer.",
+  "notes": "Not everyone gets a job. To get ready, set up an email and voicemail, open a bank account, and have your Social Security Number and address ready. Teens who did SYEP can later try the county's Youth@Work Internship at 18. In Maryland, all teens under 18 need a work permit after they get a job offer.",
   "grades": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on": "2026-10-16",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "pg-parks-summer-youth-volunteers",
@@ -74202,6 +75105,47 @@
   "verified_on_label": "Oct 10, 2026"
  },
  {
+  "id": "philadelphia-free-library-young-volunteers",
+  "name": "Young Volunteers at the Free Library of Philadelphia",
+  "org": "Free Library of Philadelphia",
+  "regions": [
+   "philadelphia"
+  ],
+  "city": "Philadelphia, PA",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "arts-media"
+  ],
+  "what_you_do": "Volunteer at Parkway Central Library or a neighborhood library. Teens shelve books, help with office tasks, or review books as a Teen Book Critic.",
+  "min_age": 14,
+  "max_age": null,
+  "grades": "7th to 12th grade",
+  "who_can_apply": "Students in grades 7 to 12. The library says all volunteers must be at least 14 years old.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": "At least 1 to 3 hours a week for 2 to 3 months. Some seasonal and short-term roles are listed too.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Rolling. Apply any time.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Print the form and fill it out. Email it to volunteer@freelibrary.org or mail it to 1901 Vine Street. Then staff will set up a talk with you.",
+  "needs_work_permit": false,
+  "url": "https://libwww.freelibrary.org/programs/volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://libwww.freelibrary.org/programs/volunteer",
+   "https://libwww.freelibrary.org/programs/leap/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "The page asks for age 14 and up but also says grades 7 to 12, so younger 7th graders should call first. For a paid role, the library's LEAP after-school program hires Teen Leadership Assistants through Career Connected Learning PHL (C2L PHL). Questions: 215-686-5340.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
   "id": "philadelphia-independence-seaport-museum-teen-ambassadors",
   "grades": "10 to 12",
   "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLScDVx-301ZXoqQLJXBBoFCUWbSvDlCd0T-yvkzpu1NK3BfwdA/viewform",
@@ -74241,6 +75185,47 @@
   ],
   "notes": "Funded by The W.W. Smith Charitable Trust and The Hamilton Family Charitable Trust, both named on the page.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "philadelphia-jefferson-abington-teen-volunteers",
+  "name": "Teen and Adult Volunteer Program, Jefferson Abington Hospital",
+  "org": "Jefferson Health, Jefferson Abington Hospital",
+  "regions": [
+   "philadelphia"
+  ],
+  "city": "Abington, PA",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Help at a hospital just north of Philadelphia. You might help staff on patient floors, show people where to go, or sit with patients. You do not need any medical training.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Anyone 16 or older who has the shots and health checks Jefferson asks for.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": "Most assignments need at least 2 to 4 hours a week. Some late afternoon, evening or weekend shifts.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Rolling. No deadline posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the form on the volunteer page. If they pick you, the hospital checks your record. You fill out some papers and show your shots: chicken pox, MMR, Tdap, a new TB blood test, and a flu shot in flu season.",
+  "needs_work_permit": false,
+  "url": "https://www.jeffersonhealth.org/volunteer/abington",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.jeffersonhealth.org/volunteer/abington",
+   "https://www.jeffersonhealth.org/volunteer",
+   "https://www.jeffersonhealth.org/volunteer/tjuh-and-methodist"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Volunteering here does not lead to a job, but it is health care experience for your resume. Shadowing is possible only if you find a staff member to supervise you yourself. Jefferson's Center City hospitals (TJUH and Methodist) take volunteers 18 and up only. Questions: 215-481-2492.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "philadelphia-jefferson-northeast-summer-student-volunteer",
@@ -74655,6 +75640,45 @@
    "https://hs.sas.upenn.edu/summer-programs/academies/3-week/biomedical"
   ],
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "philadelphia-pennsylvania-hospital-junior-volunteers",
+  "name": "Junior Volunteer Program (Student Ambassador Program), Pennsylvania Hospital",
+  "org": "Penn Medicine, Pennsylvania Hospital",
+  "regions": [
+   "philadelphia"
+  ],
+  "city": "Philadelphia, PA",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Help at a big Philadelphia hospital in the summer and see the jobs people do there. It is meant for teens who like health care, but anyone can apply.",
+  "min_age": 14,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "Students ages 14 to 17. The program targets high school students interested in health care, but all students are invited to apply.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "summer",
+  "duration": null,
+  "status": "opens-soon",
+  "opens_iso": "2027-02-01",
+  "deadline_text": "The 2026 program closed early because of high demand. Applications for Summer 2027 open February 1, 2027. No closing date is posted, so apply early.",
+  "deadline_iso": null,
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Starting February 1, 2027, create an account in the Penn Medicine volunteer portal and apply. More details will be posted closer to that date.",
+  "needs_work_permit": false,
+  "url": "https://www.pennmedicine.org/volunteering/pennsylvania-hospital",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.pennmedicine.org/volunteering/pennsylvania-hospital"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "It is only at the 800 Spruce Street site. Spots fill fast. Email PAHVolunteerServices@pennmedicine.upenn.edu or call 215-829-5187.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "philadelphia-police-explorer-cadets-post-991",
@@ -75771,9 +76795,9 @@
  },
  {
   "grades": null,
-  "apply_url": "https://www.stmarysfb.org/volunteer",
+  "apply_url": "https://stmarysfb.org/volunteer",
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-10-16",
   "deadline_iso": null,
   "id": "phoenix-st-marys-food-bank-volunteer",
   "name": "St. Mary's Food Bank Volunteering",
@@ -75794,7 +76818,7 @@
   "paid_type": "unpaid",
   "pay_detail": "Unpaid volunteer role",
   "season": "year-round",
-  "duration": "Usually 2 to 3 hours at the Phoenix and Surprise sites. Mobile distribution shifts run 3 to 5 hours.",
+  "duration": "Usually 2 to 3 hours at the Phoenix and Surprise sites. Food box packing shifts are 2 hours. Mobile distribution shifts run 3 to 5 hours.",
   "status": "year-round",
   "deadline_text": "Sign up any time.",
   "deadline_confidence": "rolling",
@@ -75804,9 +76828,10 @@
   "priority": 2,
   "notes": "Teens 12 to 15 must come with an adult. Court-ordered volunteers should call 602-343-3135.",
   "sources_fetched": [
-   "https://www.stmarysfoodbank.org/get-involved/volunteer/"
+   "https://www.stmarysfoodbank.org/get-involved/volunteer/",
+   "https://stmarysfb.org/volunteer"
   ],
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "grades": "Entering grades 9 to 12",
@@ -79175,6 +80200,84 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "raleigh-marbles-kids-museum-teen-play-corps",
+  "name": "Marbles Teen Play Corps",
+  "org": "Marbles Kids Museum",
+  "regions": [
+   "triangle"
+  ],
+  "city": "Raleigh, NC",
+  "type": "volunteer",
+  "fields": [
+   "education"
+  ],
+  "what_you_do": "Play with young kids at a children's museum. You help in the exhibits, programs, camps and events, and give at least 30 service hours a year.",
+  "min_age": 12,
+  "max_age": null,
+  "grades": "Rising 7th grade and up",
+  "who_can_apply": "Rising 7th graders and older who are at least 12 years old by the first in-person training. The page lists no residency rule.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "school-year",
+  "duration": "One year. Minimum 30 service hours a year to stay active.",
+  "status": "opens-soon",
+  "opens_iso": "2026-12-01",
+  "deadline_text": "Apply December 1, 2026 to January 31, 2027 (5 PM). You must first attend an information session with a parent or guardian: Nov 14, Dec 10, 2026, or Jan 16, 2027. Decisions by early March 2027.",
+  "deadline_iso": "2027-01-31",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Go to an info session with a parent or guardian. Then send the form, two letters from adults who are not family, and a short video. In the video, tell them your favorite way to play. Keep it under 2 minutes.",
+  "needs_work_permit": false,
+  "url": "https://marbleskidsmuseum.org/volunteer/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://marbleskidsmuseum.org/volunteer/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Not everyone is accepted. If selected, you take a virtual Volunteer 101 and in-person Mission 101 and Play 101 trainings. Teens 16 and up can also volunteer on their own without Teen Play Corps. Questions: teenplaycorps@marbleskidsmuseum.org.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "raleigh-unc-health-rex-volunteen",
+  "name": "UNC Health Rex VolunTEEN Program",
+  "org": "UNC Health Rex",
+  "regions": [
+   "triangle"
+  ],
+  "city": "Raleigh, NC",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Help at a hospital in Raleigh for one shift a week. You may greet people, check on patient rooms, help patients go home, stock supplies, bring flowers, or run errands for nurses.",
+  "min_age": 14,
+  "max_age": 18,
+  "grades": "10th to 12th grade (finished 9th grade before the program starts)",
+  "who_can_apply": "Teens 14 to 18 in 10th, 11th or 12th grade. You must be done with 9th grade before it starts.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "summer",
+  "duration": "8 weeks, June 21 to August 13, 2027. One 4-hour morning or afternoon shift a week, Monday to Friday. Only one absence allowed.",
+  "status": "opens-soon",
+  "opens_iso": "2027-03-11",
+  "deadline_text": "The 2027 Summer application is online only from March 11, 2027 to March 12, 2027. Interviews March 22 to 25, orientation April 26 to 29, and you must volunteer the first week (June 21 to 25).",
+  "deadline_iso": "2027-03-12",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the form online. Two adults who know you, 21 or older and not family, email a reference form. This can be a teacher, a school counselor, or a boss. If they call you, go to an interview.",
+  "needs_work_permit": false,
+  "url": "https://www.rexhealth.com/rh/volunteer/volunteen-program/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.rexhealth.com/rh/volunteer/volunteen-program/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 1,
+  "notes": "There is also an Academic Year Program (one day a week, 3 to 5 PM, September to May), but it is closed for 2026 to 2027. If accepted, you need a health screening (TB, whooping cough, chicken pox, MMR). Questions: volsvcs1@unchealth.unc.edu or 919-784-3165.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
   "id": "red-butte-garden-twig-teens-working-in-the-garden",
   "name": "TWIG: Teens Working in the Garden (Red Butte Garden)",
   "org": "Red Butte Garden, University of Utah",
@@ -81186,6 +82289,46 @@
   ],
   "notes": "The zoo also lists a Wildlife Action Crew for ages 13 to 18. Questions: 585-336-7213. Need-based scholarships are available on request.",
   "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "rockville-shady-grove-medical-center-volunteers",
+  "name": "Volunteer at Shady Grove Medical Center",
+  "org": "Adventist HealthCare Shady Grove Medical Center",
+  "regions": [
+   "maryland",
+   "college-park"
+  ],
+  "city": "Rockville, MD",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Help at a hospital in Rockville. You might greet people at the front desk, help patients and families, help nurses, do office tasks, or work in the gift shop.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Volunteers ages 15 and older. The page lists no residency rule.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline posted. Call the Office of Volunteers to ask about openings.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Call the Office of Volunteers at 240-826-6111 to learn how to join.",
+  "needs_work_permit": false,
+  "url": "https://www.adventisthealthcare.com/volunteer/shady-grove-medical-center/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.adventisthealthcare.com/volunteer/shady-grove-medical-center/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "The page does not list a teen-only program or which roles teens can do. The hospital's Stepping Stones shadowing program needs two years of college, so it is not for high schoolers.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "rocky-mountain-youth-corps-youth-conservation-corps",
@@ -100141,9 +101284,9 @@
   "grades": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-16",
   "apply_url": "https://capclass.virginiageneralassembly.gov/PagePrograms/HODPageProgram.php",
-  "deadline_iso": "2026-10-16",
+  "deadline_iso": null,
   "needs_work_permit": null,
   "priority": 2,
   "id": "va-house-of-delegates-page-program",
@@ -100160,20 +101303,20 @@
   "what_you_do": "Work as a House Page for the whole 2027 legislative session in Richmond. Pages deliver documents and run errands. They help committees and the Clerk's Office. They also take part in leadership and civics training.",
   "who_can_apply": "Virginia youth who will be 13 or 14 years old on January 13, 2027. You must be in good school standing. Your school must agree to the long absence.",
   "paid_type": "paid",
-  "pay_detail": "A paid position of about 40 hours a week. The program FAQ says pages get a weekly session expense payment (no taxes withheld) and a regular wage paid every two weeks (taxes withheld). Dollar amounts are not stated on the program pages.",
+  "pay_detail": "Paid, about 40 hours a week: a weekly expense payment plus a wage every two weeks. Amounts are not stated.",
   "season": "winter",
   "duration": "The 2027 session. The page says 7 weeks in odd-numbered years",
-  "status": "open-now",
-  "deadline_text": "Applications for the 2027 session close Friday, Oct 16, 2026 at 3 p.m. Eastern. Selected pages are usually told by email before Thanksgiving.",
-  "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Use the online application portal linked on the Capitol Classroom Page Programs page. Verify your date of birth. Create an account. Finish every part of the application. Ask your principal, teachers and counselor first, since you will miss school. Questions: HousePageInfo@house.virginia.gov or (804) 698-1502.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The 2027 application closed Oct 16, 2026 at 3 p.m. Look for the 2028 application in late summer 2027.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply on the portal linked from the Page Programs page. Finish every part. Talk to your school first, since you will miss weeks of class. Questions: HousePageInfo@house.virginia.gov or (804) 698-1502.",
   "url": "https://capclass.virginiageneralassembly.gov/PagePrograms/PagePrograms.html",
   "sources_fetched": [
    "https://capclass.virginiageneralassembly.gov/PagePrograms/PagePrograms.html",
    "https://publications.virginiageneralassembly.gov/display_publication/197"
   ],
-  "notes": "The Speaker of the House picks the pages. Pages live in a residential setting with other pages. They have a mandatory evening study hall. Incomplete applications are not considered, so check that your application shows as complete. This is a separate program from the Senate Page Program.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "Pages live together and have a study hall each night. Not the Senate Page Program. 2028 dates not posted.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "va-loma-linda-summer-youth-volunteer-program",
@@ -101839,7 +102982,7 @@
   "apply_url": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=2YrMFv6EHUi5sEjndYxBqh7bclDMmEJEjlL7z93L6fFUNUJTSDNKNzBBMklaMVVMS09TSVdMT01ISC4u&route=shorturl",
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-10-16",
   "needs_work_permit": null,
   "max_age": null,
   "min_age": null,
@@ -101861,24 +103004,24 @@
   "who_can_apply": "Juniors in Wake County Public School System high schools. Talk to your career development coordinator or CTE teacher.",
   "paid_type": "mixed",
   "season": "school-year",
-  "status": "open-now",
-  "deadline_text": "Applications are being accepted for Spring 2027. Application deadline is October 16 (2026).",
-  "deadline_iso": "2026-10-16",
-  "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Apply online on the Wake Tech page for the apprenticeship academy. You can also ask for help from the career coordinator at your school.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Spring 2027 applications were due Oct 16, 2026. No next round is posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online on the Wake Tech page. Your school's career coordinator can help.",
   "url": "https://www.waketech.edu/programs-courses/apprenticeship/students/apprenticeship-academy",
   "priority": 1,
-  "notes": "The deadline is very close. Paths are building trades (carpentry, electrical, HVAC, plumbing, welding), car and truck tech, and mechanical engineering and advanced making. The page gives no year with the October 16 date. It follows the Spring 2027 wording. The page says Career and College Promise helps cover tuition. It does not say tuition is fully paid.",
+  "notes": "Paths: building trades, car and truck tech, and advanced making. Career and College Promise helps with tuition. Next round not posted.",
   "sources_fetched": [
    "https://www.waketech.edu/programs-courses/apprenticeship/students/apprenticeship-academy"
   ],
-  "verified_on_label": "Oct 14, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
-  "opens_iso": "2026-10-15",
+  "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-10-16",
   "id": "wakemed-junior-volunteer-program",
   "name": "WakeMed Junior Volunteer Program (High School)",
   "org": "WakeMed Health & Hospitals",
@@ -101899,19 +103042,19 @@
   "pay_detail": null,
   "season": "year-round",
   "duration": "Minimum 6 months, one day a week on a regular set day and time",
-  "status": "opens-soon",
-  "deadline_text": "Applications open for only about 24 to 48 hours. The page says the next application check date is October 15, 2026, and to check on the 15th of October, December, February, April, June and August. On 2026-10-10 the page showed both campuses as CURRENT STATUS: CLOSED.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications open on the 15th of Oct, Dec, Feb, Apr, Jun and Aug for about 24 to 48 hours. Both campuses showed closed on Oct 16, 2026. Next check date: Dec 15, 2026.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Review the current junior-eligible openings, then submit the online application for one campus during an open window. Selected students interview, give two references, finish medical screenings and attend orientation.",
+  "how_to_apply": "Apply online for one campus while it is open. If picked, you interview, give two references, get health checks and go to orientation.",
   "needs_work_permit": false,
   "url": "https://www.wakemed.org/volunteer/junior-volunteering",
   "sources_fetched": [
    "https://www.wakemed.org/volunteer/junior-volunteering"
   ],
   "priority": 2,
-  "notes": "Not first come, first served. Processing takes about 3 to 5 weeks. Required Occupational Health clearance includes flu, MMR, Varicella, Tdap and TB. Not for court-ordered community service. The page describes volunteer service, not an internship or job shadowing.",
-  "verified_on_label": "Oct 10, 2026"
+  "notes": "Not first come, first served. It takes 3 to 5 weeks. You need flu, MMR, Varicella, Tdap and TB clearance. Not for court-ordered service. Check dates may change.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "walnut-creek-lindsay-wildlife-camp-counselor-in-training",
