@@ -29,19 +29,22 @@ const PAGES = {
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you find.html limit 2378800 to 2383200.
   // 2026-10-14 gaps wave: 89 cards for Alameda, Tri-Valley, Contra Costa and Orange County (2,608 programs) find.html limit 2383200 to 2467100.
   // 2026-10-14 gaps wave plus two Fremont cards read in a real browser (2,610 programs) find.html limit 2467100 to 2468900.
-  // 2026-10-16 hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,640 programs; PENDING PERSON APPROVAL) find.html limit 2468900 to 2502300.
-  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2502300 },
+  // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) find.html limit 2468900 to 2496100. PENDING PERSON APPROVAL.
+  // 2026-10-17 hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,668 programs; PENDING PERSON APPROVAL) find.html limit 2529300.
+  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2529300 },
   "calendar.html": { allowed: ["calendar.json", "entries-cal.json"], ceiling: 150000 },
   // 2026-10-15: the Map page reads the map projection and the city points (754,977 bytes). PENDING PERSON APPROVAL, as above.
-  // 2026-10-16 hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,640 programs; PENDING PERSON APPROVAL) map.html limit 760000 to 764800.
-  "map.html": { allowed: ["entries-map.json", "map.json"], ceiling: 764800 },
+  // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) map.html limit 760000 to 763100. PENDING PERSON APPROVAL.
+  // 2026-10-17 hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,668 programs; PENDING PERSON APPROVAL) map.html limit 772700.
+  "map.html": { allowed: ["entries-map.json", "map.json"], ceiling: 772700 },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. insights.html ceiling 697700 to 716100.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. insights.html limit 716100 to 736500.
   // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. insights.html limit 736500 to 748900.
   // 2026-10-14 gaps wave: 89 cards for Alameda, Tri-Valley, Contra Costa and Orange County (2,608 programs) insights.html limit 748900 to 776000.
   // 2026-10-14 gaps wave plus two Fremont cards read in a real browser (2,610 programs) insights.html limit 776000 to 776700.
-  // 2026-10-16 hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,640 programs; PENDING PERSON APPROVAL) insights.html limit 776700 to 786600.
-  "insights.html": { allowed: ["entries-stats.json"], ceiling: 786600 },
+  // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) insights.html limit 776700 to 785100. PENDING PERSON APPROVAL.
+  // 2026-10-17 hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,668 programs; PENDING PERSON APPROVAL) insights.html limit 794700.
+  "insights.html": { allowed: ["entries-stats.json"], ceiling: 794700 },
   // younger.html: raised from 336000 to 340000 on 2026-10-11 (r5-younger-1: pet care card and address-safe script added 2.7 KB to younger.json)
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. younger.html ceiling 442000 to 452800.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. younger.html limit 452800 to 465400.
@@ -49,8 +52,9 @@ const PAGES = {
   // 2026-10-14 gaps wave: 89 cards for Alameda, Tri-Valley, Contra Costa and Orange County (2,608 programs) younger.html limit 472700 to 488300.
   // 2026-10-14 gaps wave plus two Fremont cards read in a real browser (2,610 programs) younger.html limit 488300 to 488700.
   // 2026-10-15 persona round 10: California cells on the 12 to 14 grid give the chart's hours younger.html limit 488700 to 489000.
-  // 2026-10-16 hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,640 programs; PENDING PERSON APPROVAL) younger.html limit 489000 to 494800.
-  "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 494800 },
+  // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) younger.html limit 489000 to 494400. PENDING PERSON APPROVAL.
+  // 2026-10-17 hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,668 programs; PENDING PERSON APPROVAL) younger.html limit 500100.
+  "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 500100 },
   "interview.html": { allowed: ["interview.json", "permits.json"], ceiling: 95000 },
   // permit.html and states.html: raised from 82000 to 83000 on 2026-10-12 (r2-accuracy-2 and r2-accuracy-8: the 2027 wage lines and the Washington, DC wording; permits.json is 82,370 bytes)
   "permit.html": { allowed: ["permits.json"], ceiling: 83000 },

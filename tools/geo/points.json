@@ -2067,12 +2067,17 @@
    "ids": [
     "alliance-theatre-palefsky-collision-project",
     "atlanta-21cl-syli-goizueta-business-institute",
+    "atlanta-airport-summer-youth-employment-program",
+    "atlanta-airport-youth-apprenticeship-program",
     "atlanta-botanical-garden-speak-volunteers",
     "atlanta-botanical-garden-summer-high-school-internship",
     "atlanta-business-league-student-business-shadow-project",
     "atlanta-chris-180-youth-homelessness-and-housing",
     "atlanta-college-and-career-academy",
     "atlanta-community-food-bank-teen-volunteers",
+    "atlanta-grady-teen-experience-leadership-program",
+    "atlanta-gsu-institute-on-neuroscience",
+    "atlanta-gsu-neuroscience-school",
     "atlanta-parks-rec-teen-leaders",
     "atlanta-public-schools-mentorship-internship",
     "atlanta-public-schools-work-based-learning",
@@ -3504,6 +3509,17 @@
    ]
   },
   {
+   "key": "Bethesda, MD",
+   "state": "MD",
+   "lat": 38.9873,
+   "lon": -77.1186,
+   "precision": "city",
+   "ids": [
+    "bethesda-suburban-hospital-junior-volunteers",
+    "nih-summer-internship-program"
+   ]
+  },
+  {
    "key": "Catonsville, MD",
    "state": "MD",
    "lat": 39.2642,
@@ -3644,7 +3660,8 @@
    "lon": -77.1556,
    "precision": "city",
    "ids": [
-    "maryland-rockville-swim-center-summer-lifeguards"
+    "maryland-rockville-swim-center-summer-lifeguards",
+    "rockville-shady-grove-medical-center-volunteers"
    ]
   },
   {
@@ -4335,6 +4352,7 @@
     "durham-parks-teen-volunteers",
     "durham-tech-asap-pre-apprenticeship",
     "durham-tech-career-and-college-promise",
+    "durham-youthworks",
     "museum-life-science-summer-camp-youth-volunteer",
     "nasher-museum-teen-council",
     "ncssm-step-up-to-stem",
@@ -4408,6 +4426,8 @@
     "ncsu-textiles-step-summer-exploration",
     "ncsu-vetcamp-veterinary-careers",
     "ncsu-young-and-teen-writers-workshop",
+    "raleigh-marbles-kids-museum-teen-play-corps",
+    "raleigh-unc-health-rex-volunteen",
     "wake-tech-career-and-college-promise",
     "wake-tech-wakeworks-youth-apprenticeship-academy",
     "wakemed-junior-volunteer-program"
@@ -4933,6 +4953,7 @@
     "nyc-manhattan-university-summer-engineering-awareness-program",
     "nyc-montefiore-bronx-summer-volunteer",
     "nyc-nybg-explainers",
+    "nyc-pal-college-access-program",
     "nyc-wave-hill-aces-internship",
     "nyc-wave-hill-forest-project",
     "nyc-wave-hill-werm"
@@ -4961,6 +4982,10 @@
     "nyc-brooklyn-maimonides-health-scholars-ed-internship",
     "nyc-brooklyn-maimonides-high-school-volunteer",
     "nyc-brooklyn-maimonides-science-scholars",
+    "nyc-brooklyn-museum-apprentice-program",
+    "nyc-brooklyn-museum-creative-practice",
+    "nyc-brooklyn-museum-intersextions",
+    "nyc-brooklyn-museum-teen-night-planning-committee",
     "nyc-brooklyn-pratt-precollege-summer-intensive",
     "nyc-brooklyn-prospect-park-alliance-teen-service-series",
     "nyc-nyu-tandon-arise"
@@ -5061,6 +5086,7 @@
    "precision": "city",
    "ids": [
     "cuny-college-now",
+    "nyc-amnh-science-research-mentoring-program",
     "nyc-ccny-zahn-bossgirls-summer-entrepreneurship",
     "nyc-central-park-conservancy-teen-volunteer-days",
     "nyc-covenant-house-new-york-covworks",
@@ -5076,17 +5102,23 @@
     "nyc-futures-and-options-urban-leadership-fellows",
     "nyc-genesys-works-new-york-city",
     "nyc-jewish-museum-teen-intern-program",
+    "nyc-met-high-school-spring-internship",
+    "nyc-met-high-school-summer-internship",
+    "nyc-moma-teens-in-residence",
     "nyc-nyp-summer-volunteering",
     "nyc-nyu-sps-finance-nyc-insiders-view",
     "nyc-parks-lifeguard-program",
     "nyc-public-schools-p-tech-early-college",
     "nyc-public-schools-student-advisory-councils",
+    "nyc-sca-metro-ny-urban-green",
     "nyc-the-door-free-membership-ages-12-24",
     "nyc-the-door-the-cut-culinary-training",
     "nyc-transportation-alternatives-youth-activist-committee",
     "nyc-votes-youth-ambassadors",
+    "nyc-work-learn-grow",
     "nycps-career-and-technical-education",
-    "nycps-career-readiness-modern-youth-apprenticeship"
+    "nycps-career-readiness-modern-youth-apprenticeship",
+    "nypl-teen-curators"
    ]
   },
   {
@@ -5449,6 +5481,16 @@
    ]
   },
   {
+   "key": "Abington, PA",
+   "state": "PA",
+   "lat": 40.1136,
+   "lon": -75.1142,
+   "precision": "city",
+   "ids": [
+    "philadelphia-jefferson-abington-teen-volunteers"
+   ]
+  },
+  {
    "key": "Bethlehem, PA",
    "state": "PA",
    "lat": 40.6264,
@@ -5557,6 +5599,7 @@
     "philadelphia-fox-chase-immersion-science-program",
     "philadelphia-franklin-institute-pacts",
     "philadelphia-franklin-institute-stem-scholars",
+    "philadelphia-free-library-young-volunteers",
     "philadelphia-independence-seaport-museum-teen-ambassadors",
     "philadelphia-jefferson-northeast-summer-student-volunteer",
     "philadelphia-job-corps-center",
@@ -5568,6 +5611,7 @@
     "philadelphia-parks-rec-summer-youth-employment",
     "philadelphia-penn-provost-summer-mentorship-program",
     "philadelphia-penn-sas-high-school-summer-programs",
+    "philadelphia-pennsylvania-hospital-junior-volunteers",
     "philadelphia-police-explorer-cadets-post-991",
     "philadelphia-pyn-aim-afterschool",
     "philadelphia-pyn-nextgen-career-clubs",
@@ -6260,6 +6304,16 @@
    ]
   },
   {
+   "key": "Mount Vernon, VA",
+   "state": "VA",
+   "lat": 38.7134,
+   "lon": -77.1052,
+   "precision": "city",
+   "ids": [
+    "fairfax-mount-vernon-estate-volunteers"
+   ]
+  },
+  {
    "key": "Newport News, VA",
    "state": "VA",
    "lat": 37.0765,
@@ -6939,6 +6993,7 @@
    "bgc-ncil-keystone-club-youth-of-the-year",
    "boston-mit-lincoln-lab-llrise-radar",
    "camp-ignite-bc-firefighting-camp-for-young-women",
+   "carilion-summer-of-service-youth-volunteers",
    "central-oregon-go-lead-winter-program",
    "central-oregon-youth-conservation-corps",
    "chicago-uchicago-researchstart",
