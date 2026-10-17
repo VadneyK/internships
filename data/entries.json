@@ -4575,7 +4575,7 @@
   "grades": null,
   "apply_url": "https://form.jotform.com/262283924272056",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-16",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "Application window Aug 24 to Oct 16, 2026",
@@ -4594,20 +4594,21 @@
   "what_you_do": "Young residents design a climate project and apply for a $1,000 to $5,000 microgrant to carry it out. City staff help with ideas before you apply.",
   "min_age": 15,
   "max_age": 24,
-  "who_can_apply": "Aurora residents ages 15 to 24. The page lists separate planning sessions. They are for Aurora high school students, college students and nonprofits.",
+  "who_can_apply": "Aurora residents ages 15 to 24. The FAQ says at least two young people ages 15 to 24 must propose, design and lead each project. The page lists separate planning sessions. They are for Aurora high school students, college students and nonprofits.",
   "paid_type": "unpaid",
   "season": "fall",
-  "status": "open-now",
-  "deadline_text": "Applications run August 24 to October 16, 2026.",
-  "deadline_iso": "2026-10-16",
-  "deadline_confidence": "confirmed-2026-27",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications ran August 24 to October 16, 2026. The FAQ page lists an earlier close date, October 5, 2026. The FAQ says the city may get a second round of funding if all projects finish on time. No date for a second round is posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Fill out the online application form. Staff office hours are Tuesdays 2 to 4 p.m. (630-256-3416) and Wednesdays 10 a.m. to noon (630-256-3402) during the window. Email youthservdiv@aurora.il.us.",
   "url": "https://www.aurora.il.us/Recreation-and-Amenities/Youth-Activities-and-Services/Youth-Climate-Action-Fund",
-  "notes": "The page says about 10 to 40 projects will be funded. Co-design sessions were September 8 and 10, 2026, so they have passed. Ages up to 24 are allowed, so high school students compete with older applicants.",
+  "notes": "The main page says about 10 to 40 projects will be funded. The FAQ says 10 to 50, from a $50,000 total. Funds go out by November 13, 2026, and projects must be done by April 15, 2027. Co-design sessions were September 8 and 10, 2026, so they have passed. Ages up to 24 are allowed, so high school students compete with older applicants. No new round is posted, so the dates shown are from the 2026 round.",
   "sources_fetched": [
-   "https://www.aurora.il.us/Recreation-and-Amenities/Youth-Activities-and-Services/Youth-Climate-Action-Fund"
+   "https://www.aurora.il.us/Recreation-and-Amenities/Youth-Activities-and-Services/Youth-Climate-Action-Fund",
+   "https://www.aurora.il.us/Recreation-and-Amenities/Youth-Activities-and-Services/Youth-Climate-Action-Fund/FAQs"
   ],
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Oct 16, 2026",
   "limited": true
  },
  {
@@ -11135,9 +11136,9 @@
  {
   "grades": "Currently in 11th grade",
   "apply_url": "https://wtpmit.slideroom.com/#/permalink/program/87815",
-  "opens_iso": "2026-10-16",
+  "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-10-16",
   "priority": 2,
   "min_age": null,
   "max_age": null,
@@ -11162,10 +11163,10 @@
   "pay_detail": "Free to apply. Free to attend if family income is $120,000 or less. Otherwise $2,000 ($120,000 to $150,000), $4,000, $8,000 or $20,000 by income. Housing and food included. More aid may be asked for.",
   "season": "summer",
   "duration": "4 weeks, June 26 to July 24, 2027, residential",
-  "status": "opens-soon",
-  "deadline_text": "Applications for summer 2027 open October 16 in SlideRoom. Deadline Dec 21, 2026. Teacher forms due Dec 23, and late forms are accepted until Jan 20 but delay decisions. Decisions by email mid to late March. Admitted students confirm in early April.",
+  "status": "open-now",
+  "deadline_text": "Applications for summer 2027 opened October 16, 2026 in SlideRoom. The deadline is Dec 21, 2026. Teacher forms are due Dec 23, 2026. Late teacher forms are accepted until Jan 20, 2027, but they delay decisions. Decisions come by email in mid to late March 2027. Admitted students confirm in early April 2027.",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Online SlideRoom application: three personal essays, and online forms from one math teacher and one science teacher.",
+  "how_to_apply": "Online SlideRoom application with multiple choice and short answer questions and three personal essays. One math teacher and one science teacher fill out online forms. Test scores are optional.",
   "url": "https://wtp.mit.edu/application/",
   "sources_fetched": [
    "https://wtp.mit.edu/",
@@ -11173,7 +11174,7 @@
    "https://wtp.mit.edu/wtp-me-key-dates/",
    "https://wtp.mit.edu/FAQ/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "boston-museum-of-science-youth-internships",
@@ -12881,30 +12882,33 @@
    "education",
    "any"
   ],
-  "what_you_do": "You can join youth clubs and projects in science, agriculture, leadership and community service. Teen leader roles are also available.",
-  "min_age": null,
-  "max_age": null,
+  "what_you_do": "Join a 4-H club, SPIN club or camp run by your county. You start with one project from the ones your club offers, and you can sign up for county and state events, webinars and conferences.",
+  "min_age": 5,
+  "max_age": 18,
   "grades": null,
-  "who_can_apply": "Kids and teens join through a county 4-H program. Check your county page for age rules and fees.",
+  "who_can_apply": "Youth ages 5 to 18 by December 31 of the 4-H year, anywhere in California. You join through your county UC Cooperative Extension 4-H office.",
   "paid_type": "fee-based",
-  "pay_detail": "Not confirmed. Fees depend on the county program.",
+  "pay_detail": "Unpaid. There is an enrollment fee set by your county, and some projects cost extra for supplies. Fee waivers are available: ask your county 4-H contact.",
   "season": "year-round",
-  "duration": "Club year",
+  "duration": "The 4-H year runs July to June. Membership renews each July.",
   "status": "year-round",
   "opens_iso": null,
-  "deadline_text": "Join through a county 4-H program.",
+  "deadline_text": "Join any time of year. To show an animal at a county fair, you must enroll by that fair's deadline.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "Find your county 4-H office from ucanr.edu/sites/ca4H.",
+  "how_to_apply": "Find your county 4-H office on the Join page, or fill out the 4-H Interest Form. A parent or guardian makes a household account in ZSuite (or turns in paper forms), signs the health form, and pays the county fee. The county office then turns on your membership.",
   "needs_work_permit": false,
-  "url": "https://ucanr.edu/sites/ca4H/",
-  "apply_url": null,
-  "sources_fetched": [],
-  "verified": "snippet-only",
-  "verified_on": "2026-10-07",
+  "url": "https://ucanr.edu/program/university-california-4-h-youth-development-program",
+  "apply_url": "https://ucanr.edu/program/university-california-4-h-youth-development-program/join",
+  "sources_fetched": [
+   "https://ucanr.edu/program/university-california-4-h-youth-development-program",
+   "https://ucanr.edu/program/university-california-4-h-youth-development-program/join"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
   "priority": 3,
-  "notes": "The 4-H site blocked automated access on 2026-10-07 (403 and a bot check), so age rules and fees could not be read. Ages, fees and teen roles must be confirmed with your county 4-H office. Re-checked on 2026-10-09: the 4-H page returned HTTP 403 again, so it could not be read and the card stays snippet-only.",
-  "verified_on_label": "Oct 7, 2026"
+  "notes": "Read in a browser on 2026-10-16 (scripts get a 403 and a bot check). The old address ucanr.edu/sites/ca4H now goes to the new program page. Fees and which projects are offered depend on your county. State 4-H office: 530-750-1334, ca4H@ucanr.edu.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "opens_iso": null,
@@ -16713,8 +16717,8 @@
   "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "grades": "Sophomores, juniors and seniors in fall 2026",
+  "verified_on": "2026-10-16",
+  "grades": "Sophomores, juniors and seniors in fall 2027",
   "max_age": null,
   "min_age": null,
   "deadline_iso": null,
@@ -16731,22 +16735,22 @@
    "business-finance"
   ],
   "what_you_do": "Take a one-week class with team projects in money, sales, business and accounting. You pitch a new idea for a business. You earn a business certificate.",
-  "who_can_apply": "Current high school students who will be sophomores, juniors or seniors in fall 2026.",
+  "who_can_apply": "High school students who will be sophomores, juniors or seniors in fall 2027.",
   "paid_type": "fee-based",
-  "pay_detail": "$1,000. A 10% discount is offered for the high schooler of DePaul alumni.",
+  "pay_detail": "$1,000. DePaul alumni get a 10% discount for their high school student.",
   "season": "summer",
   "duration": "One week, 27.5 hours of classes plus 5 hours of site visits",
   "status": "closed-expect-reopen",
-  "deadline_text": "2027 information will be posted later. No deadline is listed. Late sign-ups go on a waitlist.",
+  "deadline_text": "2027 dates and sign-up are not posted yet. The page says to check back later. Late sign-ups go on a waitlist.",
   "deadline_confidence": "unknown",
-  "how_to_apply": "Use the Apply link on the program page. Questions: admission@depaul.edu or (312) 362-8000, or dsbi@depaul.edu for alumni discounts. Classes are capped at 20 students.",
-  "url": "https://business.depaul.edu/academics/centers-institutes/driehaus-summer-business-institute",
+  "how_to_apply": "2027 sign-up is not open yet. Check the program page for updates. Questions: dsbi@depaul.edu, or admission@depaul.edu and (312) 362-8000. Classes are capped at 20 students.",
+  "url": "https://business.depaul.edu/admission-aid/undergraduate-admission/driehaus-summer-business-institute",
   "priority": 3,
-  "notes": "Costs money. The page does not say if it is a live-in program and no scholarships are mentioned.",
+  "notes": "Costs money. The page does not list 2027 dates, a live-in option or scholarships. The fee includes lunch, a snack, a t-shirt and a business certificate.",
   "sources_fetched": [
-   "https://business.depaul.edu/academics/centers-institutes/driehaus-summer-business-institute"
+   "https://business.depaul.edu/admission-aid/undergraduate-admission/driehaus-summer-business-institute"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "opens_iso": null,
@@ -22728,7 +22732,7 @@
   "duration": "Shifts for the whole 2026-2027 school year",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-16",
   "priority": 2,
   "needs_work_permit": false,
   "notes": "Branches are Lane Road, Miller Park and Tremont Road. The page lists two different branch application links, so use the one for your branch.",
@@ -22756,7 +22760,7 @@
   "sources_fetched": [
    "https://www.ualibrary.org/uapl-volunteer-program/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "grades": null,
@@ -23490,7 +23494,7 @@
   "grades": "Teen Tech Tutors and Local History: grades 9 to 12. Summer volunteers: grades 7 to 12. Service crafts and T(w)een board: grades 6 to 8.",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-16",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "Not stated",
@@ -23512,17 +23516,17 @@
   "who_can_apply": "Students in the grades listed for each role.",
   "paid_type": "unpaid",
   "season": "year-round",
-  "status": "open-now",
-  "deadline_text": "Fall 2026 applications for Teen Tech Tutors at Aspen Drive Library and Cook Park Library are accepted and reviewed until October 15, 2026. The Summer 2026 youth volunteer application period has closed. The Seed Library role is closed for now.",
-  "deadline_iso": "2026-10-15",
-  "deadline_confidence": "confirmed-2026-27",
+  "status": "year-round",
+  "deadline_text": "Teen Tech Tutor applications for fall 2026 were reviewed until October 15, 2026, so that round is over. The Local History Assistant role (grades 9 to 12) has an Apply link and no deadline. Service craft programs and the T(w)een Advisory Board use event sign ups. The Summer 2026 youth volunteer period has closed, and the Seed Library role is closed for now.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
   "how_to_apply": "Click Apply for the role you want on the volunteer page. Questions about youth roles: Kevin, kwonch@cooklib.org. Questions about high school roles: Leah, lhotchkiss@cooklib.org.",
   "url": "https://www.cooklib.org/about/who-we-are/volunteer-opportunities/",
   "notes": "You need a library card for the adult volunteer jobs.",
   "sources_fetched": [
    "https://www.cooklib.org/about/who-we-are/volunteer-opportunities/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "grades": null,
@@ -25669,24 +25673,24 @@
   "pay_detail": "Tuition is not listed on the program page. Ask the Studio Arts Department. The Art Center offers help with travel costs for students who need help getting to class.",
   "season": "school-year",
   "duration": "Nine months, once a week, following the school calendar.",
-  "status": "open-now",
-  "deadline_text": "Applications close Thursday, October 15, 2026, and Teen Academy classes begin that day.",
-  "deadline_iso": "2026-10-15",
-  "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Fill out the online application. It has six essay questions (five required). You also send a portfolio. It needs five pieces, and all five are required. Email studioclasses@desmoinesartcenter.org with questions.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications for the 2026-27 school year closed Thursday, October 15, 2026, the day Teen Academy classes began. The program starts each fall. The 2027-28 dates are not posted yet.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the online application on the program page. It has seven essay questions (six required). You also upload a portfolio of five pieces, and all five are required. Email studioclasses@desmoinesartcenter.org with questions.",
   "url": "https://desmoinesartcenter.org/classes/arts-academy/",
   "sources_fetched": [
    "https://desmoinesartcenter.org/classes/arts-academy/"
   ],
   "priority": 2,
-  "notes": "The deadline is very close (3 days from the date this card was checked). Ask the Art Center whether late applications are taken. Not a job: this is a class and portfolio program.",
+  "notes": "Not a job: this is a class and portfolio program. The 2027-28 dates are not posted yet, so the dates shown are from the 2026-27 cycle. Ask the Studio Arts Department when the next application opens.",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-10-16",
   "needs_work_permit": null,
   "max_age": null,
   "min_age": null,
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "des-moines-botanical-garden-volunteers",
@@ -36633,7 +36637,7 @@
   "deadline_iso": null,
   "apply_url": "https://kupuhawaii.tfaforms.net/353",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-10-16",
   "priority": 2,
   "needs_work_permit": true,
   "name": "Kupu Aina Corps",
@@ -36647,7 +36651,7 @@
   "what_you_do": "Paid green jobs in nature care, farming, trail repair and green tech. You work with host groups across Hawaii and get career help and certificates.",
   "min_age": 17,
   "max_age": null,
-  "who_can_apply": "Most positions need participants to be 17 to 38 for the whole term. A small number of positions have no upper age limit.",
+  "who_can_apply": "Most positions need participants to be 17 to 38 for the whole term. A small number of positions have no upper age limit. You must be allowed to work in the U.S.",
   "paid_type": "paid",
   "pay_detail": "$20 an hour, plus health insurance for 20+ hours a week, a retention bonus ($200 to $800) and paid time off.",
   "season": "year-round",
@@ -36658,7 +36662,6 @@
   "how_to_apply": "Apply online with the Apply link on the Kupu Aina Corps page. Look at the host sites you can pick.",
   "url": "https://www.kupuhawaii.org/kupu-aina-corps",
   "sources_fetched": [
-   "https://www.kupuhawaii.org/hycc",
    "https://www.kupuhawaii.org/kupu-aina-corps",
    "https://www.kupuhawaii.org/hawaii-youth-conservation-corps-summer-program",
    "https://labor.hawaii.gov/wsd/child-labor/"
@@ -36667,7 +36670,7 @@
   "regions": [
    "hawaii"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "hawaii-rep-matsumoto-high-school-internship",
@@ -45288,32 +45291,34 @@
   "fields": [
    "science"
   ],
-  "what_you_do": "Spend a week at a world-leading nuclear physics lab. You explore nuclear astrophysics research, run your own experiments, and learn how the science is used in society.",
+  "what_you_do": "Spend a week at a top nuclear physics lab. You do hands-on activities and experiments with FRIB scientists and students, learn how atomic nuclei connect to stars and space, explore science careers and get a taste of college life.",
   "min_age": null,
   "max_age": null,
   "grades": "Grades 9 to 12",
-  "who_can_apply": "Current high school students in the United States.",
+  "who_can_apply": "High school students in grades 9 to 12 in the United States.",
   "paid_type": "unpaid",
-  "pay_detail": "Free. The program, room and board are free for all participants.",
+  "pay_detail": "Free. Room and board on campus are provided free if you need them. It does not pay a wage.",
   "season": "summer",
-  "duration": "About 1 week, residential",
+  "duration": "About 1 week in late July. PAN 2027 is planned for July 18 to 23, 2027.",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Applications are open early December through March each year, for the late-July program. The next window is expected December 2026 to March 2027. Exact dates are not posted.",
+  "deadline_text": "The application is posted each December on the FRIB PAN page, with a deadline in early March. PAN 2027 is planned for July 18 to 23, 2027. The exact 2027 deadline is not posted yet.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Apply through the page linked from the MSU Spartan Youth listing. Contact: Zach Constan, constan@frib.msu.edu or 517-908-7363.",
+  "how_to_apply": "When the application is posted in December, fill out the online form (a Qualtrics survey) on the FRIB PAN page and ask two teachers for recommendations. Questions: the FRIB Outreach Coordinator, constan@frib.msu.edu or 517-908-7363.",
   "needs_work_permit": false,
-  "url": "https://spartanyouth.msu.edu/resources/p/physics-of-atomic-nuclei-pan-program/",
+  "url": "https://frib.msu.edu/public-engagement/learning-resources-and-programs/for-high-schoolers/pan",
   "apply_url": null,
   "sources_fetched": [
+   "https://frib.msu.edu/public-engagement/learning-resources-and-programs/for-high-schoolers/pan",
+   "https://frib.msu.edu/public-engagement/learning-resources-and-programs/for-high-schoolers",
    "https://spartanyouth.msu.edu/resources/p/physics-of-atomic-nuclei-pan-program/"
   ],
-  "verified": "snippet-only",
-  "verified_on": "2026-10-09",
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
   "priority": 1,
-  "notes": "The Spartan Youth program page loaded on 2026-10-10 and confirms the late-July timing, the early December to March application window, the free cost, grades 9 to 12 and the contacts. The FRIB page at frib.msu.edu was not checked. Confirm 2027 dates and any extra requirements with constan@frib.msu.edu or 517-908-7363 before you plan.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "Read on the FRIB page in a browser on 2026-10-16. The 2027 dates (July 18 to 23) are planned, not final. The application opens in December, so check back then. Contact from the Spartan Youth listing: Zach Constan, constan@frib.msu.edu or 517-908-7363.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "lansing-frib-ping-nuclear-physics",
@@ -45327,32 +45332,36 @@
   "fields": [
    "science"
   ],
-  "what_you_do": "Spend two weeks doing nuclear physics at the FRIB lab with undergraduate mentors. It can turn into a year-long research project. Students may present their work at national conferences.",
+  "what_you_do": "Spend two weeks learning nuclear physics at the FRIB lab with college student mentors. It can turn into a year-long research project, and students present their work at science conferences.",
   "min_age": null,
   "max_age": null,
-  "grades": "Grades 9 to 12",
-  "who_can_apply": "High school students in grades 9 to 12. The listing does not state other rules.",
+  "grades": "Grades 9 to 11",
+  "who_can_apply": "Students in grades 9 to 11 at a U.S. high school, or a high school in the U.S. territories or Freely Associated States. Middle school students can ask through the contact form. You need a reference from a teacher or coach.",
   "paid_type": "unpaid",
-  "pay_detail": "Cost not stated on the listing checked for this card.",
+  "pay_detail": "Free. PING covers housing, meals and a flight for students from out of state. Bring a little spending money for outings. It does not pay a wage.",
   "season": "summer",
-  "duration": "2 weeks (2026: July 12 to 25)",
+  "duration": "2 weeks in the summer (2026: July 12 to 25, run online that year)",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "The 2026 application deadline was March 15, 2026 and the program ran July 12 to 25, 2026. 2027 dates are not posted on the listing.",
+  "deadline_text": "The 2026 deadline was March 15, 2026, and the program ran July 12 to 25, 2026. The 2027 deadline is not posted yet. Decisions for 2027 will be sent by May 1, 2027.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Use the page linked from the MSU Spartan Youth listing. Questions: ping@frib.msu.edu.",
+  "how_to_apply": "Apply on the PING website (nsbping.org) when the 2027 application is posted. Name a teacher or coach as your reference, and they get an email asking for it. About 20 to 24 students are picked. Questions: ping@frib.msu.edu.",
   "needs_work_permit": false,
   "url": "https://spartanyouth.msu.edu/resources/p/physicists-inspiring-the-next-generation-exploring-the-nuclear-matter-ping/",
   "apply_url": null,
   "sources_fetched": [
+   "https://www.nsbping.org/",
+   "https://www.nsbping.org/faqs",
+   "https://www.nsbping.org/copy-of-ping-2025",
+   "https://frib.msu.edu/public-engagement/learning-resources-and-programs/for-high-schoolers",
    "https://spartanyouth.msu.edu/resources/p/physicists-inspiring-the-next-generation-exploring-the-nuclear-matter-ping/"
   ],
-  "verified": "snippet-only",
-  "verified_on": "2026-10-09",
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "The FRIB page (frib.msu.edu) did not load for me because the site blocks automated readers. So this card rests on Michigan State University's Spartan Youth Programs listing only. Confirm dates, the application link, cost and any extra requirements on the FRIB page before you plan. Not a paid job.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "Read on the PING site (linked from the FRIB high school page) in a browser on 2026-10-16. PING 2027 takes grades 9 to 11, not 12. The FAQ calls it a free residential program, but PING 2026 was run online, so check how 2027 will run. The 2026 deadline and dates come from the MSU Spartan Youth listing. Not a paid job.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "grades": null,
@@ -48395,7 +48404,7 @@
  },
  {
   "id": "livermore-area-youth-advisory-commission",
-  "name": "Livermore Area Youth Advisory Commission (LAYAC)",
+  "name": "Livermore Youth Council (LYC)",
   "org": "City of Livermore",
   "regions": [
    "east-bay",
@@ -48406,32 +48415,34 @@
   "fields": [
    "law-government"
   ],
-  "what_you_do": "Youth members advise the City Council and the Livermore recreation district on what young people need. They also organize events that promote respect for diversity among Livermore youth.",
+  "what_you_do": "Speak up for Livermore youth to the City Council, the park district (LARPD) and the school district (LVJUSD). Members take on projects, promote youth programs and community service, and plan events that celebrate diversity.",
   "min_age": 12,
   "max_age": 20,
-  "grades": null,
-  "who_can_apply": "Youths ages 12 through 20, preferably attending Livermore schools. Youth members who attend Livermore schools do not have to live in the city (Livermore Municipal Code 2.51.010).",
-  "paid_type": "not-stated",
-  "pay_detail": "Advisory commission seat. No pay is stated in the code.",
-  "season": "year-round",
-  "duration": null,
+  "grades": "Middle and high school",
+  "who_can_apply": "Middle and high school students. The municipal code says ages 12 through 20, preferably at Livermore schools, and members at Livermore schools do not have to live in the city. You must be able to come to meetings, sub-committee meetings and events.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. No pay is stated on the city page or in the code.",
+  "season": "school-year",
+  "duration": "One school year. A new term starts each school year. Three absences in one school year count as resigning.",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Application dates not found. The city teen page that would list them returned an access block to our reads.",
+  "deadline_text": "The city posts a recruitment application form on the Youth Council page. No deadline is shown on the page. A new term starts each school year.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Not confirmed. Contact the City of Livermore to ask how to apply and when the next seats open.",
+  "how_to_apply": "Fill out the Livermore Youth Council Recruitment Application Form linked on the Youth Council page, and contact the City of Livermore to ask when it is due.",
   "needs_work_permit": false,
-  "url": "https://www.livermoreca.gov/our-community/teens-kids",
-  "apply_url": null,
+  "url": "https://library.livermoreca.gov/digital-library/teens/youth-council",
+  "apply_url": "https://library.livermoreca.gov/home/showpublisheddocument/14044/639172097558270000",
   "sources_fetched": [
+   "https://www.livermoreca.gov/our-community/teens-kids",
+   "https://library.livermoreca.gov/digital-library/teens/youth-council",
    "https://codepublishing.com/CA/Livermore/Municipal/Livermore02/Livermore0251.html"
   ],
-  "verified": "snippet-only",
-  "verified_on": "2026-10-07",
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
   "priority": 3,
-  "notes": "Confirm first. The membership and duties come from Livermore Municipal Code Chapter 2.51, read on the code publisher's page. The city's own teen page (livermoreca.gov) returned HTTP 403 to both our fetch tools, so the application process, term, and dates are not confirmed. The municipal code gives 15 youth seats and 3 adult seats; the code does not say how seats are filled. Re-checked on 2026-10-09: the City teen page returned HTTP 403 again, so it could not be read and the card stays snippet-only.",
-  "verified_on_label": "Oct 7, 2026",
+  "notes": "Read in a browser on 2026-10-16. The city's Youth page now calls this group the Livermore Youth Council and links to its page on the library site. The municipal code (Chapter 2.51) still uses the older name, Livermore Area Youth Advisory Commission, with 15 youth seats and 3 adult seats. The application form and rules are PDF downloads that our tools could not open, so the due date is not confirmed. Not a paid job.",
+  "verified_on_label": "Oct 16, 2026",
   "limited": true
  },
  {
@@ -53609,7 +53620,7 @@
   "grades": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-10-16",
   "apply_url": null,
   "deadline_iso": null,
   "needs_work_permit": null,
@@ -53632,19 +53643,20 @@
   "pay_detail": "Free. The national site says Job Corps covers housing, meals, basic medical care and a living allowance. The living allowance amount is not stated on the program pages.",
   "season": "year-round",
   "duration": "Not stated on the program pages",
-  "status": "rolling",
-  "deadline_text": "Open enrollment: you can start at any time. The process usually takes about two months.",
-  "deadline_confidence": "rolling",
-  "how_to_apply": "Make a MyJobCorps account on jobcorps.gov. Fill out the application. Upload the documents that show you are eligible. Then connect with an admissions representative. Call 800-733-5627 with questions.",
+  "status": "unconfirmed",
+  "deadline_text": "Operations are paused. The national Job Corps center list showed this center as \"Operations Paused\" on Oct 16, 2026. Do not apply here until Job Corps says it is open again.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "This center is not taking students while it is paused. To ask about other Job Corps centers, make a MyJobCorps account on jobcorps.gov or call 800-733-5627.",
   "url": "https://woodstock.jobcorps.gov/train",
   "sources_fetched": [
+   "https://www.jobcorps.gov/explore/center-locations",
+   "https://www.dol.gov/newsroom/releases/eta/eta20241219-0",
    "https://woodstock.jobcorps.gov/",
-   "https://woodstock.jobcorps.gov/training-programs",
-   "https://www.jobcorps.gov/admissions-process",
-   "https://woodstock.jobcorps.gov/train"
+   "https://woodstock.jobcorps.gov/train",
+   "https://www.jobcorps.gov/admissions-process"
   ],
-  "notes": "Center address: 10900 Old Court Rd, Woodstock, MD 21163. No closure notice showed on the program pages on 2026-10-10. The old /training-programs page gave a 404 error. The current list is at /train. The application asks for ID, Social Security number and proof of income. Only enter these on the official jobcorps.gov site. Do it with a parent or guardian. A parent should ask an admissions staff member about the rules for 16 and 17 year olds.",
-  "verified_on_label": "Oct 13, 2026"
+  "notes": "Paused: on Oct 16, 2026 the Job Corps center list (jobcorps.gov/explore/center-locations) showed Woodstock as \"Operations Paused\". The Department of Labor said on Dec 19, 2024 that it would pause operations here. The center's own site still loads with no notice, so trust the national list. Call 800-733-5627 to ask about other centers. Center address: 10900 Old Court Rd, Woodstock, MD 21163. The application asks for ID, Social Security number and proof of income. Only enter these on the official jobcorps.gov site, with a parent or guardian.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "mdusd-college-now-at-diablo-valley-college",
@@ -57598,23 +57610,23 @@
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Register online in the 4-H Zsuite system. Each county has its own deadlines and steps, so call your county Extension office early.",
   "needs_work_permit": false,
-  "url": "https://www.montana.edu/extension/4h/programs_and_events/events/mt_4h_congress/index.html",
+  "url": "https://www.montana.edu/extension/4h/programs_and_events/events/mt_4h_congress/",
   "apply_url": null,
   "sources_fetched": [
-   "https://www.montana.edu/extension/4h/programs_and_events/events/mt_4h_congress/index.html"
+   "https://www.montana.edu/extension/4h/programs_and_events/events/mt_4h_congress/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-10-16",
   "priority": 2,
   "notes": "You do not have to enter a contest. Youth State Awards are due May 1.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "grades": null,
   "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-10-16",
   "min_age": 14,
   "max_age": null,
   "needs_work_permit": false,
@@ -57644,13 +57656,12 @@
   "how_to_apply": "County level: fill out an application. Then interview with the County Council. State officer: send the application to the Montana 4-H Center. It must be postmarked by June 15.",
   "url": "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/country-ambassador/",
   "sources_fetched": [
-   "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/index.html",
-   "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/country-ambassador/index.html",
-   "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/state-ambassador-officer/index.html",
-   "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/country-ambassador/"
+   "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/",
+   "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/country-ambassador/",
+   "https://www.montana.edu/extension/4h/programs_and_events/youth_leadership/state-ambassador-officer/"
   ],
   "notes": "You must already be in 4-H. The state team page lists five state officer jobs (for example President and Publicity Chair). Contact your county extension office. The state officer page does not state the term length for officers.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "montana-4h-fall-leadership-training",
@@ -57680,16 +57691,16 @@
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Register online in the 4-H Zsuite system. Call your county MSU Extension office for county rules. Fill in your info and waivers before the event.",
   "needs_work_permit": false,
-  "url": "https://www.montana.edu/extension/4h/programs_and_events/events/fall_training/index.html",
+  "url": "https://www.montana.edu/extension/4h/programs_and_events/events/fall_training/",
   "apply_url": null,
   "sources_fetched": [
-   "https://www.montana.edu/extension/4h/programs_and_events/events/fall_training/index.html"
+   "https://www.montana.edu/extension/4h/programs_and_events/events/fall_training/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-10-16",
   "priority": 2,
   "notes": "Cancel before sign-up closes for a full refund. Dress is business casual on Saturday. Dress for the banquet is business professional to semi-formal.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "grades": null,
@@ -61000,9 +61011,9 @@
   "min_age": null,
   "max_age": null,
   "grades": "Second or third year of high school (rising juniors and seniors)",
-  "opens_iso": "2026-10-15",
+  "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-16",
   "apply_url": "https://www.cfnc.org/",
   "deadline_iso": "2027-01-05",
   "needs_work_permit": false,
@@ -61026,16 +61037,17 @@
   "pay_detail": "No cost to accepted students. Meals and housing on campus are included. It does not pay a wage.",
   "season": "summer",
   "duration": "About four weeks between mid-June and end of July 2027, depending on the campus",
-  "status": "opens-soon",
-  "deadline_text": "Application opens Oct 15, 2026 at cfnc.org. Essays are due Jan 5, 2027. Transcripts and teacher and counselor forms are due Feb 28, 2027. Decisions come Apr 2, 2027.",
+  "status": "open-now",
+  "deadline_text": "The application opened Oct 15, 2026 at 4 p.m. on cfnc.org. It closes Jan 5, 2027 at 11:59 p.m., and essays are due then. Transcripts and teacher and counselor forms are due Feb 28, 2027. Decisions come Apr 2, 2027.",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Apply through NCSSM Admissions. The application is on cfnc.org. Finish the Residency Determination Service step. Write the essays. Have your school send your transcript and teacher and counselor evaluations.",
+  "how_to_apply": "Apply through NCSSM Admissions. The application is on cfnc.org, so you need a CFNC account. Finish the Residency Determination Service step. Write the Summer Ventures essays. Have your school send your transcript and teacher and counselor evaluations.",
   "url": "https://www.ncssm.edu/summer/summer-ventures",
   "sources_fetched": [
-   "https://www.ncssm.edu/summer/summer-ventures"
+   "https://www.ncssm.edu/summer/summer-ventures",
+   "https://www.ncssm.edu/admissions/apply"
   ],
   "notes": "2027 campuses and dates listed: Appalachian State (June 20 to July 31, to be decided), East Carolina (virtual week June 27 to July 3, then on campus July 4 to 24), UNC Charlotte (June 20 to July 31, to be decided), UNC Wilmington (June 20 to July 17). Accepted students do an online Research Prep course in June. Contact: summerventures@ncssm.edu or 919-416-2747.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "grades": null,
@@ -64012,14 +64024,13 @@
   "apply_url": "https://4h.zsuite.org",
   "sources_fetched": [
    "https://nm4h.nmsu.edu/",
-   "https://nm4h.nmsu.edu/4h-experience/join.html",
    "https://nm4h.nmsu.edu/4h/join.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-10-16",
   "priority": 3,
   "notes": "State office phone on the page is 575-646-3026. Call it if you are not sure which county you are in.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "new-mexico-ffa-association",
@@ -65146,23 +65157,23 @@
   "pay_detail": "Cost not listed on the program page.",
   "season": "year-round",
   "duration": "Not stated on the program page.",
-  "status": "open-now",
-  "deadline_text": "Applications are due October 15 for the fall selection, held the Saturday before Thanksgiving at the ND 4-H Camp in Washburn. Elections also happen at the Extension Youth Conference in June, with applications due May 15. The page shows 2026 dates for June.",
-  "deadline_iso": "2026-10-15",
-  "deadline_confidence": "confirmed-2026-27",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Fall 2026 applications were due October 15, 2026, for selection the Saturday before Thanksgiving at the ND 4-H Camp in Washburn. The next chance is the spring election at the Extension Youth Conference in June. The page says those applications are due May 15, but it still lists the June 22 to 25, 2026 conference, so 2027 dates are not posted yet.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Use the Ambassador Resources and Application link. It is on the NDSU Extension leadership page. Send the form to the ND 4-H Center for Youth Development. You must attend all selection day events.",
   "url": "https://www.ndsu.edu/agriculture/extension/extension-topics/4-h-youth-development/4-h-leadership-opportunities",
   "sources_fetched": [
    "https://www.ndsu.edu/agriculture/extension/extension-topics/4-h-youth-development/4-h-leadership-opportunities"
   ],
   "priority": 2,
-  "notes": "The fall deadline is only 3 days after the date this card was checked, so call the ND 4-H office first. The page does not print a year for Oct 15, but it lists June 2026 and Feb 2027 events, so Oct 15 is read as 2026.",
+  "notes": "The page does not print a year for the Oct 15 and May 15 deadlines. It lists June 2026 and Feb 2027 events, so Oct 15 was read as 2026. The 2027 spring dates are not posted yet, so the May 15 date is last year's pattern. Questions: ndsu.4hambassadors@ndsu.edu.",
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-10-16",
   "needs_work_permit": null,
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "north-dakota-4h-extension-youth-conference",
@@ -68645,11 +68656,11 @@
   "pay_detail": "Up to $400 at the end of the semester, based on participation.",
   "season": "school-year",
   "duration": "Thursdays 4:30 to 6:30 p.m., November to May, in person at the New York City or Newark office.",
-  "status": "open-now",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Deadline: Oct 16, 2026.",
-  "deadline_iso": "2026-10-16",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_text": "Applications for the 2026 to 2027 program were due Oct 16, 2026. The page does not give dates for the next round. You can join the Sadie Nash opportunities email list on the apply page to hear when a new application goes live.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Apply online with the link on the Leadership Scholars page. Questions: Charlie Ambrose, charlie@sadienash.org (listed on the page).",
   "needs_work_permit": null,
   "url": "https://www.sadienash.org/leadership-scholars",
@@ -68659,10 +68670,10 @@
    "https://www.sadienash.org/apply-now"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-16",
   "priority": 1,
-  "notes": "The page lists the New York City office at 247 W 37th Street, Suite 705, New York, NY 10018. Stipend is based on participation.",
-  "verified_on_label": "Oct 9, 2026",
+  "notes": "The page lists the New York City office at 247 W 37th Street, Suite 705, New York, NY 10018. Stipend is based on participation. The next round's dates are not posted, so the date shown is from the 2026 to 2027 cycle.",
+  "verified_on_label": "Oct 16, 2026",
   "limited": true
  },
  {
@@ -68688,11 +68699,11 @@
   "pay_detail": "Eligible for a $400 stipend at the end of the internship.",
   "season": "school-year",
   "duration": "Saturdays 10 a.m. to 12 noon, November 2026 to May 2027, plus some events.",
-  "status": "open-now",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Deadline: Oct 16, 2026.",
-  "deadline_iso": "2026-10-16",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_text": "Applications for the 2026 to 2027 internship were due Oct 16, 2026. The page does not give dates for the next round. You can join the Sadie Nash opportunities email list on the apply page to hear when a new application goes live.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Apply online with the link on the Nash U page. Questions: Charlie Ambrose, charlie@sadienash.org (listed on the page).",
   "needs_work_permit": null,
   "url": "https://www.sadienash.org/nash-u",
@@ -68702,10 +68713,10 @@
    "https://www.sadienash.org/apply-now"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "The apply page says you must identify as a woman or gender-expansive person of color. You must commit for the full internship.",
-  "verified_on_label": "Oct 9, 2026",
+  "notes": "The apply page says you must identify as a woman or gender-expansive person of color. You must commit for the full internship. The next round's dates are not posted, so the date shown is from the 2026 to 2027 cycle.",
+  "verified_on_label": "Oct 16, 2026",
   "limited": true
  },
  {
@@ -68731,11 +68742,11 @@
   "pay_detail": "In-person: up to $400 at the end. Virtual: up to $150 (you must attend 9 of 10 sessions). Referral bonus of $25 per friend.",
   "season": "school-year",
   "duration": "In person: once a week, Tuesdays or Wednesdays 4:30 to 6:30 p.m., November to May. Virtual: 10 weeks, offered each fall and spring.",
-  "status": "open-now",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Deadline: Oct 16, 2026.",
-  "deadline_iso": "2026-10-16",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_text": "Applications for the 2026 to 2027 program were due Oct 16, 2026. The virtual version is offered each fall and spring, but the page gives no date for the next application. You can join the Sadie Nash opportunities email list on the apply page to hear when a new application goes live.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Apply online with the link on the Siblinghood Academy page. For questions, write to Cielito Pareja at cielito@sadienash.org. The page lists this contact.",
   "needs_work_permit": null,
   "url": "https://www.sadienash.org/siblinghood-academy",
@@ -68745,10 +68756,10 @@
    "https://www.sadienash.org/apply-now"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "No more than 5 absences for the in-person version.",
-  "verified_on_label": "Oct 9, 2026",
+  "notes": "No more than 5 absences for the in-person version. The next round's dates are not posted, so the date shown is from the 2026 to 2027 cycle.",
+  "verified_on_label": "Oct 16, 2026",
   "limited": true
  },
  {
@@ -73165,10 +73176,10 @@
    "https://extension.psu.edu/programs/4-h/get-involved/youth-and-parents/join"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-10-16",
   "priority": 2,
   "notes": "A youth group, not a job. Ask your county educator what clubs and teen leader roles are near you.",
-  "verified_on_label": "Oct 13, 2026",
+  "verified_on_label": "Oct 16, 2026",
   "limited": true
  },
  {
@@ -75771,9 +75782,9 @@
  },
  {
   "grades": null,
-  "apply_url": "https://www.stmarysfb.org/volunteer",
+  "apply_url": "https://stmarysfb.org/volunteer",
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-10-16",
   "deadline_iso": null,
   "id": "phoenix-st-marys-food-bank-volunteer",
   "name": "St. Mary's Food Bank Volunteering",
@@ -75794,7 +75805,7 @@
   "paid_type": "unpaid",
   "pay_detail": "Unpaid volunteer role",
   "season": "year-round",
-  "duration": "Usually 2 to 3 hours at the Phoenix and Surprise sites. Mobile distribution shifts run 3 to 5 hours.",
+  "duration": "Usually 2 to 3 hours at the Phoenix and Surprise sites. Food box packing shifts are 2 hours. Mobile distribution shifts run 3 to 5 hours.",
   "status": "year-round",
   "deadline_text": "Sign up any time.",
   "deadline_confidence": "rolling",
@@ -75804,9 +75815,10 @@
   "priority": 2,
   "notes": "Teens 12 to 15 must come with an adult. Court-ordered volunteers should call 602-343-3135.",
   "sources_fetched": [
-   "https://www.stmarysfoodbank.org/get-involved/volunteer/"
+   "https://www.stmarysfoodbank.org/get-involved/volunteer/",
+   "https://stmarysfb.org/volunteer"
   ],
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "grades": "Entering grades 9 to 12",
@@ -100141,9 +100153,9 @@
   "grades": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-16",
   "apply_url": "https://capclass.virginiageneralassembly.gov/PagePrograms/HODPageProgram.php",
-  "deadline_iso": "2026-10-16",
+  "deadline_iso": null,
   "needs_work_permit": null,
   "priority": 2,
   "id": "va-house-of-delegates-page-program",
@@ -100163,17 +100175,17 @@
   "pay_detail": "A paid position of about 40 hours a week. The program FAQ says pages get a weekly session expense payment (no taxes withheld) and a regular wage paid every two weeks (taxes withheld). Dollar amounts are not stated on the program pages.",
   "season": "winter",
   "duration": "The 2027 session. The page says 7 weeks in odd-numbered years",
-  "status": "open-now",
-  "deadline_text": "Applications for the 2027 session close Friday, Oct 16, 2026 at 3 p.m. Eastern. Selected pages are usually told by email before Thanksgiving.",
-  "deadline_confidence": "confirmed-2026-27",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications for the 2027 session closed Friday, Oct 16, 2026 at 3 p.m. Eastern. Selected pages are usually told by email before Thanksgiving. Guidelines for the 2027 program came out in late summer 2026, so look for the 2028 application in late summer 2027.",
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Use the online application portal linked on the Capitol Classroom Page Programs page. Verify your date of birth. Create an account. Finish every part of the application. Ask your principal, teachers and counselor first, since you will miss school. Questions: HousePageInfo@house.virginia.gov or (804) 698-1502.",
   "url": "https://capclass.virginiageneralassembly.gov/PagePrograms/PagePrograms.html",
   "sources_fetched": [
    "https://capclass.virginiageneralassembly.gov/PagePrograms/PagePrograms.html",
    "https://publications.virginiageneralassembly.gov/display_publication/197"
   ],
-  "notes": "The Speaker of the House picks the pages. Pages live in a residential setting with other pages. They have a mandatory evening study hall. Incomplete applications are not considered, so check that your application shows as complete. This is a separate program from the Senate Page Program.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "The Speaker of the House picks the pages. Pages live in a residential setting with other pages. They have a mandatory evening study hall. Incomplete applications are not considered, so check that your application shows as complete. This is a separate program from the Senate Page Program. The 2028 dates are not posted yet, so the dates shown are from the 2027 session.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "va-loma-linda-summer-youth-volunteer-program",
@@ -101839,7 +101851,7 @@
   "apply_url": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=2YrMFv6EHUi5sEjndYxBqh7bclDMmEJEjlL7z93L6fFUNUJTSDNKNzBBMklaMVVMS09TSVdMT01ISC4u&route=shorturl",
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-10-16",
   "needs_work_permit": null,
   "max_age": null,
   "min_age": null,
@@ -101861,24 +101873,24 @@
   "who_can_apply": "Juniors in Wake County Public School System high schools. Talk to your career development coordinator or CTE teacher.",
   "paid_type": "mixed",
   "season": "school-year",
-  "status": "open-now",
-  "deadline_text": "Applications are being accepted for Spring 2027. Application deadline is October 16 (2026).",
-  "deadline_iso": "2026-10-16",
-  "deadline_confidence": "confirmed-2026-27",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications for the Spring 2027 class were due October 16, 2026. The page gives no date for the next round.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Apply online on the Wake Tech page for the apprenticeship academy. You can also ask for help from the career coordinator at your school.",
   "url": "https://www.waketech.edu/programs-courses/apprenticeship/students/apprenticeship-academy",
   "priority": 1,
-  "notes": "The deadline is very close. Paths are building trades (carpentry, electrical, HVAC, plumbing, welding), car and truck tech, and mechanical engineering and advanced making. The page gives no year with the October 16 date. It follows the Spring 2027 wording. The page says Career and College Promise helps cover tuition. It does not say tuition is fully paid.",
+  "notes": "Paths are building trades (carpentry, electrical, HVAC, plumbing, welding), car and truck tech, and mechanical engineering and advanced making. The page gives no year with the October 16 date. It follows the Spring 2027 wording. The page says Career and College Promise helps cover tuition. It does not say tuition is fully paid. The page says the academy will serve 250 students over three years, but no next round is posted, so the date shown is from the Spring 2027 round.",
   "sources_fetched": [
    "https://www.waketech.edu/programs-courses/apprenticeship/students/apprenticeship-academy"
   ],
-  "verified_on_label": "Oct 14, 2026"
+  "verified_on_label": "Oct 16, 2026"
  },
  {
-  "opens_iso": "2026-10-15",
+  "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-10-16",
   "id": "wakemed-junior-volunteer-program",
   "name": "WakeMed Junior Volunteer Program (High School)",
   "org": "WakeMed Health & Hospitals",
@@ -101899,8 +101911,8 @@
   "pay_detail": null,
   "season": "year-round",
   "duration": "Minimum 6 months, one day a week on a regular set day and time",
-  "status": "opens-soon",
-  "deadline_text": "Applications open for only about 24 to 48 hours. The page says the next application check date is October 15, 2026, and to check on the 15th of October, December, February, April, June and August. On 2026-10-10 the page showed both campuses as CURRENT STATUS: CLOSED.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications open only on set dates and stay open about 24 to 48 hours, usually starting after 2:30 p.m. The page says to check on the 15th of October, December, February, April, June and August. On October 16, 2026, the page showed both the Raleigh Campus and Cary Hospital applications as closed. The next check date is December 15, 2026.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Review the current junior-eligible openings, then submit the online application for one campus during an open window. Selected students interview, give two references, finish medical screenings and attend orientation.",
@@ -101910,8 +101922,8 @@
    "https://www.wakemed.org/volunteer/junior-volunteering"
   ],
   "priority": 2,
-  "notes": "Not first come, first served. Processing takes about 3 to 5 weeks. Required Occupational Health clearance includes flu, MMR, Varicella, Tdap and TB. Not for court-ordered community service. The page describes volunteer service, not an internship or job shadowing.",
-  "verified_on_label": "Oct 10, 2026"
+  "notes": "Not first come, first served. Processing takes about 3 to 5 weeks. Required Occupational Health clearance includes flu, MMR, Varicella, Tdap and TB. Not for court-ordered community service. The page describes volunteer service, not an internship or job shadowing. The check dates are a schedule the page gives, not a promise that applications will open on those days.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "walnut-creek-lindsay-wildlife-camp-counselor-in-training",
