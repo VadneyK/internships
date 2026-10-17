@@ -118,7 +118,7 @@ test("parents: loads clean, draws every part, and shows no undefined or NaN", as
   }
   assert.doesNotMatch(document.body.textContent, /undefined|NaN|\{\{/);
   const nav = [...document.querySelectorAll("#main nav.chips a")];
-  assert.deepEqual(nav.map((a) => a.getAttribute("href")), ["#sign", "#help", "#money", "#young", "#safe", "#how", "#gaps"]);
+  assert.deepEqual(nav.map((a) => a.getAttribute("href")), ["#sign", "#help", "#money", "#young", "#safe", "#list", "#how", "#gaps"]);
   for (const a of nav) assert.ok(document.getElementById(a.getAttribute("href").slice(1)), `${a.getAttribute("href")} has no target`);
 });
 
