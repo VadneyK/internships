@@ -7,7 +7,10 @@ Layers and kinds follow the Protomaps basemap tile schema (https://docs.protomap
 Dropped: buildings, points of interest, most land cover, small roads and every name field except name, name:en
 and name:es. The tiles keep their geometry byte for byte; only whole features and tags are removed.
 """
-import sys, gzip, json, collections
+import sys, gzip, json, collections, functools
+# The pmtiles Writer gzips the directories and metadata with the time of the run in the gzip header, so two runs on
+# the same input gave different bytes and SHA256SUMS could never be checked by a rebuild. A fixed time makes it repeatable.
+gzip.compress = functools.partial(gzip.compress, mtime=0)
 from pmtiles.reader import MmapSource, all_tiles, Reader
 from pmtiles.writer import Writer
 from pmtiles.tile import zxy_to_tileid
