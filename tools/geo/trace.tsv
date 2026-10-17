@@ -322,6 +322,10 @@ california-cadet-corps	California (over 100 schools; sites vary)	statewide	CA
 california-fbla	California (through school chapters in six geographic sections)	statewide	CA			
 california-ffa	School ag programs, California	statewide	CA			
 california-partnership-academies	California (sites in many districts)	statewide	CA			
+california-science-center-community-teen-interns	Los Angeles, CA	point	Los Angeles, CA	city	place:city	
+california-science-center-dive-team-interns	Los Angeles, CA	point	Los Angeles, CA	city	place:city	
+california-science-center-flight-team-interns	Los Angeles, CA	point	Los Angeles, CA	city	place:city	
+california-science-center-youth-volunteers	Los Angeles, CA	point	Los Angeles, CA	city	place:city	
 caltech-summer-research-connection-pasadena-unified	Pasadena, CA	point	Pasadena, CA	city	place:city	
 cambridge-public-library-teen-advisory-board	Cambridge, MA	point	Cambridge, MA	city	place:city	
 camp-ignite-bc-firefighting-camp-for-young-women	Metro Vancouver, BC	multi				override: Regional district of many cities, not one place
@@ -460,6 +464,7 @@ chicago-windy-city-harvest-youth-farm	Chicago, IL	point	Chicago, IL	city	place:c
 chicago-youth-works-summer-jobs	Chicago, IL	point	Chicago, IL	city	place:city	
 chicagobility-ages-14-15	Chicago, IL	point	Chicago, IL	city	place:city	
 childrens-healthcare-of-atlanta-volunteen	Atlanta, GA	point	Atlanta, GA	city	place:city	
+chla-high-school-summer-volunteer	Los Angeles, CA	point	Los Angeles, CA	city	place:city	
 chp-explorer-post-east-sacramento	Sacramento, CA	point	Sacramento, CA	city	place:city	
 christ-hospital-junior-ambassador-program	Cincinnati, OH	point	Cincinnati, OH	city	place:city	
 chula-vista-living-coast-discovery-center-volunteer	Chula Vista, CA	point	Chula Vista, CA	city	place:city	
@@ -582,10 +587,12 @@ cook-county-opportunity-works-subsidized-internships	Suburban Cook County, IL	po
 cook-memorial-library-teen-volunteers	Libertyville and Vernon Hills, IL (Lake County)	multi				several places before the state
 cosi-youth-volunteer-program	Columbus, OH	point	Columbus, OH	city	place:city	
 cosmos-uc-davis	Davis, CA	point	Davis, CA	city	place:city	
+cosmos-uc-merced	Merced, CA	point	Merced, CA	city	place:city	
 costa-mesa-orange-coast-college-dual-enrollment	Costa Mesa, CA	point	Costa Mesa, CA	city	place:city	
 costa-mesa-parks-community-services-jobs	Costa Mesa, CA	point	Costa Mesa, CA	city	place:city	
 cosumnes-csd-teen-committees	Elk Grove and Galt, CA	multi				several places before the state
 cosumnes-fire-explorer	Elk Grove, CA	point	Elk Grove, CA	city	place:city	
+cottage-health-junior-volunteers	Santa Barbara, CA	point	Santa Barbara, CA	city	place:city	
 cpl-summer-teen-internships	Chicago, IL	point	Chicago, IL	city	place:city	
 cpl-teen-school-year-assistantships	Chicago, IL	point	Chicago, IL	city	place:city	
 cpmc-information-desk-van-ness-volunteer	San Francisco, CA (CPMC Van Ness Campus, 1101 Van Ness Avenue)	point	San Francisco, CA	manual	Census Gazetteer ZCTA 94102 (San Francisco, CA) internal point	override: The Gazetteer place point (37.7272, -123.0322) is about 30 miles out in the Pacific because the city limits include the Farallon Islands, so it falls outside the state outline; ZIP code area 94102 (Civic Center) centroid from the Census Gazetteer ZCTA file is used instead
@@ -824,6 +831,7 @@ fremont-unified-cte	Fremont, CA	point	Fremont, CA	city	place:city
 fremont-youth-advisory-commission	Fremont, CA	point	Fremont, CA	city	place:city	
 fresno-chaffee-zoo-volunteens	Fresno, CA	point	Fresno, CA	city	place:city	
 fresno-chaffee-zoo-zoo-camp-junior-counselor	Fresno, CA	point	Fresno, CA	city	place:city	
+fullerton-parks-recreation-teen-volunteers	Fullerton, CA	point	Fullerton, CA	city	place:city	
 fullerton-public-library-teen-volunteer	Fullerton, CA	point	Fullerton, CA	city	place:city	
 fullerton-st-jude-medical-center-high-school-volunteer	Fullerton, CA	point	Fullerton, CA	city	place:city	
 fulton-county-connected-youth-leadership-program	Fulton County, GA (online)	online				parenthetical says fully online: online
@@ -872,6 +880,8 @@ glenview-library-youth-volunteers-and-tab	Glenview, IL	point	Glenview, IL	city	p
 gmu-aspiring-scientists-summer-internship-program	Fairfax, VA	point	Fairfax, VA	city	place:city	
 gmu-high-school-dual-enrollment	Fairfax, VA (George Mason University)	point	Fairfax, VA	city	place:city	
 golden-jeffco-trail-stewardship-team	Golden, CO	point	Golden, CO	city	place:city	
+goleta-parks-recreation-commission-youth-member	Goleta, CA	point	Goleta, CA	city	place:city	
+goleta-valley-library-teen-volunteers	Goleta, CA	point	Goleta, CA	city	place:city	
 goodwill-north-georgia-youth-employment-services	Decatur, GA and other north Georgia career centers	point	Decatur, GA	city	place:city	
 grafton-job-corps-center	North Grafton, MA (campus with dorms)	point	North Grafton, MA	manual	Census Gazetteer ZCTA 01536 (North Grafton, MA) internal point	override: North Grafton is a village in the town of Grafton with no Gazetteer place; ZIP code area centroid from the Census Gazetteer ZCTA file
 grand-forks-park-district-winter-part-time-jobs	Grand Forks, ND	point	Grand Forks, ND	city	place:city	
@@ -1350,6 +1360,7 @@ merced-county-office-of-education-high-school-rop	Merced County, CA	point	Merced
 merced-mercy-medical-center-volunteer	Merced, CA	point	Merced, CA	city	place:city	
 merced-muhsd-dual-enrollment-merced-college	Merced, CA	point	Merced, CA	city	place:city	
 merced-skillrise-ch-high-school-internship	Merced, CA	point	Merced, CA	city	place:city	
+merced-youth-council	Merced, CA	point	Merced, CA	city	place:city	
 mercyone-des-moines-teen-volunteers	Des Moines, IA	point	Des Moines, IA	city	place:city	
 meridian-library-district-teen-volunteers	Meridian, ID	point	Meridian, ID	city	place:city	
 mesa-aquatics-junior-lifeguard-volunteer	Mesa, AZ	point	Mesa, AZ	city	place:city	
@@ -1927,6 +1938,7 @@ police-explorers-morgan-hill	Morgan Hill, CA	point	Morgan Hill, CA	city	place:ci
 police-explorers-oakland	Oakland, CA	point	Oakland, CA	city	place:city	
 pomona-college-academy-for-youth-success	Claremont, CA	point	Claremont, CA	city	place:city	
 pomona-valley-hospital-high-school-volunteer	Pomona, CA	point	Pomona, CA	city	place:city	
+pomona-youth-music-program-volunteer	Pomona, CA	point	Pomona, CA	city	place:city	
 portland-legacy-good-samaritan-volunteer	Portland, OR	point	Portland, OR	city	place:city	
 portland-lewis-clark-precollege-programs	Portland, OR	point	Portland, OR	city	place:city	
 portland-multnomah-county-library-teen-council	Portland, OR	point	Portland, OR	city	place:city	
@@ -2103,6 +2115,7 @@ santa-ana-city-volunteer-program	Santa Ana, CA	point	Santa Ana, CA	city	place:ci
 santa-ana-say-youth-employment-program	Santa Ana, CA	point	Santa Ana, CA	city	place:city	
 santa-ana-zoo-volunteer	Santa Ana, CA	point	Santa Ana, CA	city	place:city	
 santa-barbara-civil-air-patrol-squadron-131-cadets	Goleta, CA (Santa Barbara area)	point	Goleta, CA	city	place:city	
+santa-barbara-county-wioa-youth-career-services	Santa Barbara, CA	point	Santa Barbara, CA	city	place:city	
 santa-barbara-humane-society-volunteers	Santa Barbara, CA	point	Santa Barbara, CA	city	place:city	
 santa-barbara-museum-of-art-teaching-assistants	Santa Barbara, CA	point	Santa Barbara, CA	city	place:city	
 santa-barbara-natural-history-museum-counselors-in-training	Santa Barbara, CA	point	Santa Barbara, CA	city	place:city	
@@ -2364,22 +2377,22 @@ twin-cities-augsburg-urban-debate-league-summer-camps	Minneapolis, MN	point	Minn
 twin-cities-bestprep-minnesota-business-venture	Minnesota	statewide	MN			
 twin-cities-childrens-theatre-production-job-shadowing	Minneapolis, MN	point	Minneapolis, MN	city	place:city	
 twin-cities-como-zoo-nature-walk-teen-program	Saint Paul, MN	point	St. Paul, MN	city	place:city	
-twin-cities-conservation-corps-youth-interns	Twin Cities area, MN	multi				override: Two cities and their suburbs, not one place
+twin-cities-conservation-corps-youth-interns	Twin Cities area, MN	multi				override: Minneapolis and Saint Paul with their suburbs, not one place
 twin-cities-cookie-cart-youth-employment	Minneapolis, MN	point	Minneapolis, MN	city	place:city	
 twin-cities-dunwoody-design-camp	Minneapolis, MN	point	Minneapolis, MN	city	place:city	
 twin-cities-dunwoody-pathways-to-careers	Minneapolis, MN	point	Minneapolis, MN	city	place:city	
-twin-cities-genesys-works-internship	Twin Cities, MN	multi				override: Two cities and their suburbs, not one place
+twin-cities-genesys-works-internship	Twin Cities, MN	multi				override: Minneapolis and Saint Paul with their suburbs, not one place
 twin-cities-gillette-student-summer-volunteers	Saint Paul, MN	point	St. Paul, MN	city	place:city	
 twin-cities-girls-inc-eureka-stem	Minneapolis, MN	point	Minneapolis, MN	city	place:city	
 twin-cities-hamline-microscope-adventure-camp	Saint Paul, MN	point	St. Paul, MN	city	place:city	
-twin-cities-healthpartners-teen-volunteer	Twin Cities, MN	multi				override: Two cities and their suburbs, not one place
+twin-cities-healthpartners-teen-volunteer	Twin Cities, MN	multi				override: Minneapolis and Saint Paul with their suburbs, not one place
 twin-cities-hired-youth-and-young-adult-services	Minneapolis, Saint Paul and Bloomington, MN	multi				several places before the state
 twin-cities-juxtaposition-arts-jxtalabs-apprenticeships	Minneapolis, MN	point	Minneapolis, MN	city	place:city	
 twin-cities-juxtaposition-arts-valt-drawing	Minneapolis, MN	point	Minneapolis, MN	city	place:city	
-twin-cities-mhealth-fairview-teen-volunteer	Twin Cities, MN	multi				override: Two cities and their suburbs, not one place
+twin-cities-mhealth-fairview-teen-volunteer	Twin Cities, MN	multi				override: Minneapolis and Saint Paul with their suburbs, not one place
 twin-cities-minneapolis-parks-teen-teamworks	Minneapolis, MN	point	Minneapolis, MN	city	place:city	
 twin-cities-minneapolis-parks-youth-advisory-council	Minneapolis, MN	point	Minneapolis, MN	city	place:city	
-twin-cities-minnesota-ace-aviation-camp	Minneapolis-Saint Paul area, MN	multi				override: Two cities and their suburbs, not one place
+twin-cities-minnesota-ace-aviation-camp	Minneapolis-Saint Paul area, MN	multi				override: Minneapolis and Saint Paul with their suburbs, not one place
 twin-cities-mity-expand-your-mind	Saint Paul, MN	point	St. Paul, MN	city	place:city	
 twin-cities-open-arms-of-minnesota-youth-volunteers	Minneapolis, MN	point	Minneapolis, MN	city	place:city	
 twin-cities-ramsey-county-library-teen-volunteer	Ramsey County, MN	point	Ramsey County, MN	county	county	
@@ -2387,7 +2400,7 @@ twin-cities-raptor-center-ecosystems-of-stem-internship	Saint Paul, MN	point	St.
 twin-cities-saint-paul-lifeguard-training	Saint Paul, MN	point	St. Paul, MN	city	place:city	
 twin-cities-saint-paul-youth-on-boards	Saint Paul, MN	point	St. Paul, MN	city	place:city	
 twin-cities-smm-kaysc-high-school	Saint Paul, MN	point	St. Paul, MN	city	place:city	
-twin-cities-spark-y-pathways-summer-internship	Twin Cities, MN	multi				override: Two cities and their suburbs, not one place
+twin-cities-spark-y-pathways-summer-internship	Twin Cities, MN	multi				override: Minneapolis and Saint Paul with their suburbs, not one place
 twin-cities-three-rivers-baker-counselor-in-training	Maple Plain, MN	point	Maple Plain, MN	city	place:city	
 twin-cities-three-rivers-eastman-naturalist-youth-leader	Dayton, MN	point	Dayton, MN	city	place:city	
 twin-cities-three-rivers-pathways-internships	Hennepin County, MN	point	Hennepin County, MN	county	county	
@@ -2406,6 +2419,8 @@ uc-davis-mmi-hs-internship	Sacramento, CA	point	Sacramento, CA	city	place:city
 uc-davis-summer-pre-college	Davis, CA	point	Davis, CA	city	place:city	
 uc-davis-upward-bound	Sacramento area, CA	point	Sacramento, CA	city	place:city	
 uc-davis-young-scholars-program	Davis, CA	point	Davis, CA	city	place:city	
+uc-merced-summer-session-high-school-discount	Merced, CA	point	Merced, CA	city	place:city	
+uc-sankofa-experience-rising-seniors	Irvine, CA	point	Irvine, CA	city	place:city	
 uc-scout	Virtual	online				
 uccs-pre-collegiate-program-colorado-springs	Colorado Springs, CO	point	Colorado Springs, CO	city	place:city	
 uchealth-hospital-volunteer-16-plus-aurora	Aurora, CO	point	Aurora, CO	city	place:city	
@@ -2447,6 +2462,7 @@ us-senate-page-program	Washington, DC	point	Washington, DC	city	place:city
 us-senate-youth-program	Washington, DC	point	Washington, DC	city	place:city	
 usc-summer-programs-pre-college	Los Angeles, CA	point	Los Angeles, CA	city	place:city	
 usc-viterbi-energy-of-stem-summer-camp	Los Angeles, CA	point	Los Angeles, CA	city	place:city	
+usd-cyber-ai-summer-program	San Diego, CA	point	San Diego, CA	city	place:city	
 uss-hornet-volunteer-16-plus	Alameda, CA	point	Alameda, CA	manual	Census Gazetteer ZCTA 94501 (Alameda, CA) internal point	override: Alameda is an island city and the Gazetteer place point (37.7423, -122.2605) falls in San Francisco Bay water, outside the state outline; ZIP code area 94501 centroid from the Census Gazetteer ZCTA file lies on the island
 ut-austin-csr-sees-internship	Austin, TX	point	Austin, TX	city	place:city	
 ut-austin-high-school-summer-research-academy	Austin, TX	point	Austin, TX	city	place:city	
