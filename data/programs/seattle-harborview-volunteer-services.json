@@ -1,0 +1,39 @@
+{
+  "id": "seattle-harborview-volunteer-services",
+  "name": "Harborview Volunteer Services",
+  "org": "Harborview Medical Center (UW Medicine)",
+  "regions": [
+    "seattle"
+  ],
+  "city": "Seattle, WA",
+  "type": "volunteer",
+  "fields": [
+    "health"
+  ],
+  "what_you_do": "Volunteers 16 and 17 help at the hospital Information Desk and the discharge lounge. Adults 18 and older can also help in inpatient units and clinical areas.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Ages 16 and older for the Information Desk; 18 and older for inpatient units and clinical areas. Volunteers under 18 need a parent or guardian signature and are scheduled Monday to Friday, 8 am to 5 pm.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer.",
+  "season": "year-round",
+  "duration": "Four hours a week for six months in a row. No summer-only spots in the main program.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 volunteer application is closed. The page gives no reopening date; you can sign up to be told when it reopens.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Apply online when it reopens and pick an in-person orientation date. Send proof of MMR, chickenpox and Tdap shots (and a flu shot October to March). Finish about three hours of online training, then pass a Washington State background check.",
+  "needs_work_permit": false,
+  "url": "https://www.uwmedicine.org/volunteering/harborview",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.uwmedicine.org/volunteering/harborview",
+    "https://www.uwmedicine.org/volunteering/volunteer-faq-harborview"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Applications with missing shot records are denied, with no exemptions. It can take a few months to hear back. The volunteer office does not set up doctor shadowing. Questions: hmcvol@uw.edu."
+}
