@@ -2,15 +2,21 @@
   "id": "nyc-met-high-school-summer-internship",
   "name": "The Met High School Internship Program (Summer)",
   "org": "The Metropolitan Museum of Art",
-  "regions": ["new-york-city", "new-york-state", "new-jersey"],
+  "regions": [
+    "new-york-city",
+    "new-york-state",
+    "new-jersey"
+  ],
   "city": "New York, NY",
   "type": "internship",
-  "fields": ["arts-media"],
+  "fields": [
+    "arts-media"
+  ],
   "what_you_do": "Work 40 hours over the summer in a Met department such as curatorial, social media, education, imaging or design. You meet museum staff, join a cohort, and go to Teen Fridays. No art background needed.",
   "min_age": null,
   "max_age": null,
   "grades": "10th or 11th grade, or working on a High School Equivalency",
-  "who_can_apply": "Students in grade 10 or 11 (or getting a High School Equivalency) who live in and attend a high school or home school in New York, New Jersey, or Connecticut. You need working papers, a Social Security Number or ITIN, a parent or guardian's consent, and must not have done another Met internship.",
+  "who_can_apply": "Students in grade 10 or 11, or working on a GED. You must live in and go to school (or home school) in New York, New Jersey, or Connecticut. You need working papers and a Social Security Number or ITIN. A parent or guardian must say yes. You can't have done a Met internship before.",
   "paid_type": "stipend",
   "pay_detail": "$1,100 stipend when you finish, which the page says matches New York State minimum wage law.",
   "season": "summer",
@@ -20,13 +26,15 @@
   "deadline_text": "The 2026 deadline was Friday, March 13, 2026, 5 pm ET, with interview notices by mid-April. 2027 dates are not posted.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Online application form, short essays, and one letter of recommendation from an adult who is not related to you. Finalists do an in-person group interview.",
+  "how_to_apply": "Fill out the online form and write short essays. Ask one adult who is not family for a letter. If they pick you, you go to a group interview in person.",
   "needs_work_permit": true,
   "url": "https://www.metmuseum.org/opportunities/internships/summer-internships-for-high-school-students",
   "apply_url": null,
-  "sources_fetched": ["https://www.metmuseum.org/opportunities/internships/summer-internships-for-high-school-students"],
+  "sources_fetched": [
+    "https://www.metmuseum.org/opportunities/internships/summer-internships-for-high-school-students"
+  ],
   "verified": "fetched",
   "verified_on": "2026-10-16",
   "priority": 1,
-  "notes": "All listed dates are mandatory, and a parent or guardian must come to the reception. The Met also runs a spring semester internship for New York City students only. Connecticut is not a region on this site yet, but Connecticut students can apply."
+  "notes": "You must come to every date on the list. A parent or guardian must come to the party in June. The Met also has a spring internship for New York City students. Connecticut is not a place on this site yet, but students there can apply."
 }

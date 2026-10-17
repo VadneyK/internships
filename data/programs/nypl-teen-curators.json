@@ -2,11 +2,16 @@
   "id": "nypl-teen-curators",
   "name": "NYPL Teen Curators Program",
   "org": "The New York Public Library",
-  "regions": ["new-york-city"],
+  "regions": [
+    "new-york-city"
+  ],
   "city": "New York, NY",
   "type": "internship",
-  "fields": ["arts-media", "education"],
-  "what_you_do": "Meet twice a week after school at the Library. You learn from expert curators, study items in a current exhibition, and make your own digital media in response to it.",
+  "fields": [
+    "arts-media",
+    "education"
+  ],
+  "what_you_do": "Meet twice a week after school at the library. You learn from experts who plan shows, study items in a show, and make your own videos or digital art about it.",
   "min_age": null,
   "max_age": null,
   "grades": "11th and 12th grade",
@@ -24,7 +29,9 @@
   "needs_work_permit": null,
   "url": "https://www.nypl.org/education/teens/teen-curators-program",
   "apply_url": null,
-  "sources_fetched": ["https://www.nypl.org/education/teens/teen-curators-program"],
+  "sources_fetched": [
+    "https://www.nypl.org/education/teens/teen-curators-program"
+  ],
   "verified": "fetched",
   "verified_on": "2026-10-16",
   "priority": 2,

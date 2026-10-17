@@ -2,15 +2,20 @@
   "id": "nyc-sca-metro-ny-urban-green",
   "name": "Metro New York Urban Green",
   "org": "Student Conservation Association (SCA)",
-  "regions": ["new-york-city", "new-jersey"],
+  "regions": [
+    "new-york-city",
+    "new-jersey"
+  ],
   "city": "New York, NY",
   "type": "paid-youth-program",
-  "fields": ["environment"],
+  "fields": [
+    "environment"
+  ],
   "what_you_do": "Join a paid crew that works outdoors in local parks. You build trails, restore habitats, and learn about green careers, job skills and money basics with other teens.",
   "min_age": 14,
   "max_age": 19,
   "grades": null,
-  "who_can_apply": "High school students and recent graduates ages 14 to 19 in the New York City, New Jersey and Connecticut metro area. Competitive.",
+  "who_can_apply": "High school students and recent grads ages 14 to 19 in the New York City, New Jersey and Connecticut area. Not everyone gets in.",
   "paid_type": "paid",
   "pay_detail": "Paid. The page does not state the rate for teen crews.",
   "season": "year-round",
@@ -24,9 +29,11 @@
   "needs_work_permit": true,
   "url": "https://thesca.org/program/urban-green/metro-new-york",
   "apply_url": null,
-  "sources_fetched": ["https://thesca.org/program/urban-green/metro-new-york"],
+  "sources_fetched": [
+    "https://thesca.org/program/urban-green/metro-new-york"
+  ],
   "verified": "fetched",
   "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "Contact: Pablo Galesi, Metro NY Region Program Manager, (347) 200-4709, pgalesi@thesca.org. New York State requires working papers for workers ages 14 to 17."
+  "notes": "Contact: Pablo Galesi, (347) 200-4709, pgalesi@thesca.org. In New York, teens 14 to 17 need working papers to work."
 }

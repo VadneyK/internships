@@ -2,10 +2,14 @@
   "id": "raleigh-marbles-kids-museum-teen-play-corps",
   "name": "Marbles Teen Play Corps",
   "org": "Marbles Kids Museum",
-  "regions": ["triangle"],
+  "regions": [
+    "triangle"
+  ],
   "city": "Raleigh, NC",
   "type": "volunteer",
-  "fields": ["education"],
+  "fields": [
+    "education"
+  ],
   "what_you_do": "Play with young kids at a children's museum. You help in the exhibits, programs, camps and events, and give at least 30 service hours a year.",
   "min_age": 12,
   "max_age": null,
@@ -20,11 +24,13 @@
   "deadline_text": "Apply December 1, 2026 to January 31, 2027 (5 PM). You must first attend an information session with a parent or guardian: Nov 14, Dec 10, 2026, or Jan 16, 2027. Decisions by early March 2027.",
   "deadline_iso": "2027-01-31",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Attend an information session with a parent or guardian, then submit the application, two recommendation forms from non-family adults, and a video under 2 minutes about your favorite way to play.",
+  "how_to_apply": "Go to an info session with a parent or guardian. Then send the form, two letters from adults who are not family, and a short video. In the video, tell them your favorite way to play. Keep it under 2 minutes.",
   "needs_work_permit": false,
   "url": "https://marbleskidsmuseum.org/volunteer/",
   "apply_url": null,
-  "sources_fetched": ["https://marbleskidsmuseum.org/volunteer/"],
+  "sources_fetched": [
+    "https://marbleskidsmuseum.org/volunteer/"
+  ],
   "verified": "fetched",
   "verified_on": "2026-10-16",
   "priority": 2,

@@ -2,15 +2,19 @@
   "id": "durham-youthworks",
   "name": "Durham YouthWorks",
   "org": "City of Durham, Office of Economic and Workforce Development",
-  "regions": ["triangle"],
+  "regions": [
+    "triangle"
+  ],
   "city": "Durham, NC",
   "type": "paid-youth-program",
-  "fields": ["any"],
-  "what_you_do": "Get paid to take work readiness training in the spring, then do a virtual, hybrid or in-person summer work experience with a City department, nonprofit or local employer.",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Get paid to learn job skills in the spring. Then work in summer, online or in person, with a city office, a nonprofit, or a local business.",
   "min_age": 14,
   "max_age": 21,
   "grades": null,
-  "who_can_apply": "Residents of the City of Durham or Durham County, ages 14 to 21. You need a work-appropriate email address that you check regularly.",
+  "who_can_apply": "Teens and young adults ages 14 to 21 who live in Durham or Durham County. You need an email address that you check often.",
   "paid_type": "paid",
   "pay_detail": "Earn up to $880 and beyond if you finish both Part 1 (training) and Part 2 (summer work).",
   "season": "summer",
@@ -24,7 +28,9 @@
   "needs_work_permit": true,
   "url": "https://www.durhamnc.gov/598/Durham-YouthWorks-Program",
   "apply_url": null,
-  "sources_fetched": ["https://www.durhamnc.gov/598/Durham-YouthWorks-Program"],
+  "sources_fetched": [
+    "https://www.durhamnc.gov/598/Durham-YouthWorks-Program"
+  ],
   "verified": "fetched",
   "verified_on": "2026-10-16",
   "priority": 1,

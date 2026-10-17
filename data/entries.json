@@ -4064,7 +4064,7 @@
   "min_age": null,
   "max_age": null,
   "grades": "Rising 11th and 12th graders",
-  "who_can_apply": "Rising high school juniors and seniors across Metro Atlanta.",
+  "who_can_apply": "Rising high school juniors and seniors in the Atlanta area.",
   "paid_type": "paid",
   "pay_detail": "Paid. The page does not state a rate.",
   "season": "summer",
@@ -4104,7 +4104,7 @@
   "min_age": null,
   "max_age": null,
   "grades": "11th and 12th grade",
-  "who_can_apply": "High school juniors and seniors who attend Clayton County, Fulton County, or Atlanta Public Schools.",
+  "who_can_apply": "High school juniors and seniors in Clayton County, Fulton County, or Atlanta city public schools.",
   "paid_type": "paid",
   "pay_detail": "Paid, part-time. The page does not state a rate.",
   "season": "school-year",
@@ -4114,7 +4114,7 @@
   "deadline_text": "Rolling. The page says applications are accepted based on the airport's needs and may vary each year.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "Apply through your school's Work-Based Learning Coordinator or career counselor, or on your own on the City of Atlanta jobs website.",
+  "how_to_apply": "Ask the work-based learning teacher or the counselor at your school. You can also apply on your own on the City of Atlanta jobs site.",
   "needs_work_permit": null,
   "url": "https://www.atl.com/atlworkforceprograms-how-to-apply/",
   "apply_url": null,
@@ -4396,7 +4396,7 @@
   "deadline_text": "The 2026 application was open Jan 16 to Feb 20, 2026, with the YouScience assessment Feb 23 to Mar 8 and interviews Mar 9 to 27. 2027 dates are not posted; expect a similar January opening.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Online application with a headshot, immunization record, media release form signed by a parent or guardian, and a volunteer acknowledgment form. Then take the YouScience career assessment and do an interview. Competitive.",
+  "how_to_apply": "Fill out the form online. Add a photo of your face, your shot records, and two forms. A parent or guardian signs one of them. Then take a career quiz online and do an interview. Not everyone gets in.",
   "needs_work_permit": false,
   "url": "https://www.gradyhealth.org/health-outcomes-at-grady/teen-experience-and-leadership-program/",
   "apply_url": null,
@@ -4406,7 +4406,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-16",
   "priority": 1,
-  "notes": "The page says the application period is closed. Accepted teens must get a TB blood test before orientation. Free virtual open houses ran on Tuesdays and Thursdays during the 2026 application window. Late or incomplete applications may not be reviewed.",
+  "notes": "The page says it is closed for now. If you get in, you need a TB blood test before you start. In 2026 they held free online help hours two days a week while the form was open. Late or missing forms may not be read.",
   "verified_on_label": "Oct 16, 2026"
  },
  {
@@ -4456,8 +4456,7 @@
   "name": "The Neuroscience School: Short Courses for High School Students",
   "org": "Georgia State University, Center for Behavioral Neuroscience",
   "regions": [
-   "atlanta",
-   "virtual"
+   "atlanta"
   ],
   "city": "Atlanta, GA",
   "type": "pre-college",
@@ -6711,7 +6710,7 @@
   "fields": [
    "health"
   ],
-  "what_you_do": "Volunteer at a Bethesda hospital one 4-hour shift a week. Junior volunteers usually run the Art Cart and Comfort Cart or help at the Information Desk, meeting patients, families and staff.",
+  "what_you_do": "Help at a hospital in Bethesda for 4 hours a week. Teen helpers often push the Art Cart and Comfort Cart or work at the front desk. You meet patients, families and staff.",
   "min_age": 16,
   "max_age": null,
   "grades": null,
@@ -6725,7 +6724,7 @@
   "deadline_text": "All fall 2026 junior spots are full. The page says to check back beginning in February 2027 for spring and summer openings.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Attend an in-person information session first, then fill out the junior volunteer application. You also need an orientation and medical clearances (MMR, chicken pox, Tdap, and flu in flu season).",
+  "how_to_apply": "First go to a free info session in person. Then fill out the teen volunteer form. You also go to a training and show your shots: MMR, chicken pox, Tdap, and a flu shot in flu season.",
   "needs_work_permit": false,
   "url": "https://www.hopkinsmedicine.org/volunteer-services/suburban",
   "apply_url": null,
@@ -13497,7 +13496,7 @@
   "fields": [
    "health"
   ],
-  "what_you_do": "Volunteer at a Carilion hospital for 6 to 8 summer weeks. You work alongside staff and adult volunteers, explore health care careers, and build confidence and social skills.",
+  "what_you_do": "Help at a Carilion hospital for 6 to 8 weeks in summer. You work with staff and adult helpers, learn about health jobs, and make friends.",
   "min_age": 14,
   "max_age": 18,
   "grades": null,
@@ -13511,7 +13510,7 @@
   "deadline_text": "For 2026, Carilion held a virtual information session on Tuesday, February 24, 2026 and posted a 2026 application. 2027 dates are not posted; expect a late winter start.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Fill out the Summer of Service application linked on the Volunteer Services page when it is posted. If you missed the information session, email the Volunteer Services Manager at your hospital.",
+  "how_to_apply": "Fill out the Summer of Service form on the volunteer page when it is posted. If you missed the info session, email the volunteer boss at your hospital.",
   "needs_work_permit": false,
   "url": "https://www.carilionclinic.org/volunteers",
   "apply_url": null,
@@ -13521,7 +13520,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "Hospitals: Carilion Roanoke Memorial, Carilion Franklin Memorial (Rocky Mount), Carilion New River Valley Medical Center (Christiansburg) and Carilion Rockbridge Community Hospital (Lexington). Contacts: Roanoke, tnmedley@carilionclinic.org; New River Valley, plmemitt@carilionclinic.org; Lexington, snclemmer@carilionclinic.org; Rocky Mount, rdaltice@carilionclinic.org.",
+  "notes": "It runs at four hospitals: Roanoke, Rocky Mount, Christiansburg and Lexington. Each one has its own volunteer boss. Their emails are on the Volunteer Services page under Summer of Service.",
   "verified_on_label": "Oct 16, 2026"
  },
  {
@@ -27405,11 +27404,11 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Get paid to take work readiness training in the spring, then do a virtual, hybrid or in-person summer work experience with a City department, nonprofit or local employer.",
+  "what_you_do": "Get paid to learn job skills in the spring. Then work in summer, online or in person, with a city office, a nonprofit, or a local business.",
   "min_age": 14,
   "max_age": 21,
   "grades": null,
-  "who_can_apply": "Residents of the City of Durham or Durham County, ages 14 to 21. You need a work-appropriate email address that you check regularly.",
+  "who_can_apply": "Teens and young adults ages 14 to 21 who live in Durham or Durham County. You need an email address that you check often.",
   "paid_type": "paid",
   "pay_detail": "Earn up to $880 and beyond if you finish both Part 1 (training) and Part 2 (summer work).",
   "season": "summer",
@@ -30364,7 +30363,7 @@
    "environment",
    "education"
   ],
-  "what_you_do": "Volunteer at George Washington's home. Roles include the archaeology lab, greeting guests, helping at events (some in period clothes), gardening and greenhouse work, and helping staff who play historic characters.",
+  "what_you_do": "Help at George Washington's home. You might work in the dig lab, greet guests, help at events (some in old-time clothes), work in the gardens, or help the actors who play people from history.",
   "min_age": 16,
   "max_age": null,
   "grades": null,
@@ -30378,7 +30377,7 @@
   "deadline_text": "The page says volunteer applications are currently closed. No reopening date is posted.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Watch the volunteering page for applications to reopen, or contact Joan Flintoft, Vice President for Hospitality, at 703-799-8605.",
+  "how_to_apply": "Check the volunteer page to see when it opens again. You can also call Joan Flintoft at 703-799-8605.",
   "needs_work_permit": false,
   "url": "https://www.mountvernon.org/about/volunteering",
   "apply_url": null,
@@ -65382,8 +65381,7 @@
   "org": "National Institutes of Health, Office of Intramural Training and Education",
   "regions": [
    "college-park",
-   "maryland",
-   "national"
+   "maryland"
   ],
   "city": "Bethesda, MD",
   "type": "research",
@@ -65395,7 +65393,7 @@
   "min_age": 17,
   "max_age": null,
   "grades": "12th grade (graduating senior) or college",
-  "who_can_apply": "U.S. citizens or permanent residents who will be 18 by September 30, 2027 and are a high school senior (enrolled at least half-time) who graduates before the internship starts, or a college student. A senior who is 17 on June 1, 2027 but turns 18 by September 30, 2027 must have a permanent home address within 40 miles of an NIH campus.",
+  "who_can_apply": "U.S. citizens or green card holders who will be 18 by September 30, 2027. You must be a senior now who will finish high school before it starts, or a college student. If you are 17 on June 1, 2027, you must live within 40 miles of an NIH campus.",
   "paid_type": "stipend",
   "pay_detail": "Stipend, set each year by education level. The page does not state the amount. Free parking. You need proof of health insurance, and NIH does not provide housing.",
   "season": "summer",
@@ -65405,7 +65403,7 @@
   "deadline_text": "The 2027 application is open now and closes Tuesday, January 26, 2027 at 12 pm ET. Reference letters are due Tuesday, February 2, 2027 at 12 pm ET.",
   "deadline_iso": "2027-01-26",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Apply in the NIH Application Center with your coursework and grades, a resume, a personal statement, and two references. Then email NIH scientists whose work interests you and point them to your application. Scientists pick their own interns and finish by April 1.",
+  "how_to_apply": "Apply in the NIH Application Center. Send your grades, a resume, a short essay about your goals, and two references. Then email NIH scientists whose work you like and point them to your application. Each scientist picks their own interns by April 1.",
   "needs_work_permit": null,
   "url": "https://www.training.nih.gov/research-training/pb/sip/",
   "apply_url": null,
@@ -65416,7 +65414,8 @@
   "verified_on": "2026-10-16",
   "priority": 2,
   "notes": "Very competitive, and mostly for college students. Only seniors who meet the age rule can apply; juniors cannot. Free online application webinars on Oct 20 and Nov 17, 2026. Questions: SIP@nih.gov.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Oct 16, 2026",
+  "limited": true
  },
  {
   "id": "nisra-volunteers-and-summer-camp-jobs-elgin",
@@ -66291,7 +66290,7 @@
   "min_age": null,
   "max_age": null,
   "grades": "10th or 11th grade when you apply",
-  "who_can_apply": "Students who live and go to school in New York City, are in 10th or 11th grade, and have passed their classes for the last three or more semesters. You must also have taken an AMNH course (such as Adventures in Science, Science and Nature Program, or LANG) or attend one of the listed partner schools or programs. US citizenship is not required.",
+  "who_can_apply": "You must live and go to school in New York City and be in 10th or 11th grade. You must have passed your classes for the last three or more terms. You also must have taken an AMNH course, or go to one of the partner schools or groups on the list. You do not need to be a U.S. citizen.",
   "paid_type": "stipend",
   "pay_detail": "$2,500 stipend when you finish the research and program requirements. You can also earn 1 CUNY Lehman College credit at no cost.",
   "season": "school-year",
@@ -66301,7 +66300,7 @@
   "deadline_text": "The page says applications for the Class of 2028 are expected to open in Winter 2027. Interviews are in April and decisions come by the end of May.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Online application with an information form and short-answer questions about your interest in science, teamwork and your time. No transcripts or recommendation letters. Some applicants are interviewed.",
+  "how_to_apply": "Fill out the online form and answer short questions. They ask why you like science, how you work on a team, and how you will make time. No report card or letters are needed. Some people get an interview.",
   "needs_work_permit": false,
   "url": "https://www.amnh.org/learn-teach/teens/science-research-mentoring-program",
   "apply_url": "https://www.amnh.org/learn-teach/teens/science-research-mentoring-program/join-srmp",
@@ -66313,7 +66312,8 @@
   "verified_on": "2026-10-16",
   "priority": 1,
   "notes": "The FAQ says you do not need working papers. SRMP is meant to be your main after-school activity for the year. Join the program's email list on the Join SRMP page to hear when the application opens. Questions: srmp@amnh.org.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Oct 16, 2026",
+  "limited": true
  },
  {
   "id": "nyc-apollo-theater-academy-arts-production-internship",
@@ -67067,7 +67067,7 @@
   "min_age": null,
   "max_age": null,
   "grades": "10th to 12th grade",
-  "who_can_apply": "New York City teens enrolled in high school as a sophomore, junior, or senior at the start of the internship.",
+  "who_can_apply": "New York City teens who are in 10th, 11th, or 12th grade when it starts.",
   "paid_type": "paid",
   "pay_detail": "$17 per hour, up to 120 hours for the year. MetroCards for weekend work.",
   "season": "school-year",
@@ -67087,7 +67087,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "The museum says this internship is best for teens with no other extracurriculars or obligations. Questions: teen.programs@brooklynmuseum.org.",
+  "notes": "The museum says this is best for teens who have no other clubs or jobs. Questions: teen.programs@brooklynmuseum.org.",
   "verified_on_label": "Oct 16, 2026"
  },
  {
@@ -67829,7 +67829,7 @@
    "https://www.henrystreet.org/programs/employment/youth-employment/"
   ],
   "priority": 1,
-  "notes": "Pay and hours above are the 2026 numbers and may change. Free to apply. NYS Department of Labor says anyone 14-17 needs working papers (employment certificate) to hold a job in New York State; ask your SYEP provider what they need from you. Teens in school-based (CareerReady) options apply through their school. You pay your own transportation and meals. Henry Street Settlement on the Lower East Side is one SYEP provider: its lottery option takes ages 16 to 24, and residents of NYCHA's Baruch or Wald Houses, and youth in shelters or foster care, can apply to its priority options first come, first served.",
+  "notes": "Pay and hours above are the 2026 numbers and may change. Free to apply. NYS Department of Labor says anyone 14-17 needs working papers (employment certificate) to hold a job in New York State; ask your SYEP provider what they need from you. Teens in school-based (CareerReady) options apply through their school. You pay your own transportation and meals. Henry Street Settlement is one SYEP group. Its lottery takes ages 16 to 24. Teens in NYCHA's Baruch or Wald Houses, in shelters, or in foster care can apply first come, first served.",
   "verified_on_label": "Oct 9, 2026",
   "limited": true
  },
@@ -68413,7 +68413,7 @@
   "min_age": null,
   "max_age": null,
   "grades": "10th or 11th grade, or working on a High School Equivalency",
-  "who_can_apply": "Students in grade 10 or 11 (or getting a High School Equivalency) who attend a high school or home school in New York City. You need working papers, a Social Security Number or ITIN, a parent or guardian's consent, and must not have done another Met internship.",
+  "who_can_apply": "Students in grade 10 or 11, or working on a GED, at a New York City high school or home school. You need working papers and a Social Security Number or ITIN. A parent or guardian must say yes. You can't have done a Met internship before.",
   "paid_type": "stipend",
   "pay_detail": "$1,100 stipend when you finish, which the page says matches New York State minimum wage law.",
   "season": "spring",
@@ -68423,7 +68423,7 @@
   "deadline_text": "Apply by Friday, October 16, 2026, 6 pm ET. Interview notices by Friday, December 4, 2026.",
   "deadline_iso": "2026-10-16",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Online application form, short essays, and one letter of recommendation from an adult who is not related to you. Finalists do an in-person group interview.",
+  "how_to_apply": "Fill out the online form and write short essays. Ask one adult who is not family for a letter. If they pick you, you go to a group interview in person.",
   "needs_work_permit": true,
   "url": "https://www.metmuseum.org/opportunities/internships/spring-semester-internships-for-high-school-students",
   "apply_url": null,
@@ -68433,7 +68433,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-16",
   "priority": 1,
-  "notes": "All listed dates are mandatory, and a parent or guardian must come to the Jan 16, 2027 reception. The deadline is the same day this card was checked, so if you missed it, look for the summer internship, which also takes students from New Jersey and Connecticut.",
+  "notes": "You must come to every date on the list. A parent or guardian must come to the January 16, 2027 party. If you missed the October 16 deadline, try the summer internship. It also takes students from New Jersey and Connecticut.",
   "verified_on_label": "Oct 16, 2026"
  },
  {
@@ -68454,7 +68454,7 @@
   "min_age": null,
   "max_age": null,
   "grades": "10th or 11th grade, or working on a High School Equivalency",
-  "who_can_apply": "Students in grade 10 or 11 (or getting a High School Equivalency) who live in and attend a high school or home school in New York, New Jersey, or Connecticut. You need working papers, a Social Security Number or ITIN, a parent or guardian's consent, and must not have done another Met internship.",
+  "who_can_apply": "Students in grade 10 or 11, or working on a GED. You must live in and go to school (or home school) in New York, New Jersey, or Connecticut. You need working papers and a Social Security Number or ITIN. A parent or guardian must say yes. You can't have done a Met internship before.",
   "paid_type": "stipend",
   "pay_detail": "$1,100 stipend when you finish, which the page says matches New York State minimum wage law.",
   "season": "summer",
@@ -68464,7 +68464,7 @@
   "deadline_text": "The 2026 deadline was Friday, March 13, 2026, 5 pm ET, with interview notices by mid-April. 2027 dates are not posted.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Online application form, short essays, and one letter of recommendation from an adult who is not related to you. Finalists do an in-person group interview.",
+  "how_to_apply": "Fill out the online form and write short essays. Ask one adult who is not family for a letter. If they pick you, you go to a group interview in person.",
   "needs_work_permit": true,
   "url": "https://www.metmuseum.org/opportunities/internships/summer-internships-for-high-school-students",
   "apply_url": null,
@@ -68474,7 +68474,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-16",
   "priority": 1,
-  "notes": "All listed dates are mandatory, and a parent or guardian must come to the reception. The Met also runs a spring semester internship for New York City students only. Connecticut is not a region on this site yet, but Connecticut students can apply.",
+  "notes": "You must come to every date on the list. A parent or guardian must come to the party in June. The Met also has a spring internship for New York City students. Connecticut is not a place on this site yet, but students there can apply.",
   "verified_on_label": "Oct 16, 2026",
   "limited": true
  },
@@ -68504,7 +68504,7 @@
   "deadline_text": "The 2026 to 2027 deadline was Monday, September 14, 2026, at 11:59 PM. The next cycle is not posted; expect a late summer deadline.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Online application, linked from the program page when it is open.",
+  "how_to_apply": "Fill out the online form. The link is on the program page when it is open.",
   "needs_work_permit": null,
   "url": "https://www.moma.org/calendar/programs/253",
   "apply_url": null,
@@ -68935,7 +68935,7 @@
   "min_age": null,
   "max_age": null,
   "grades": "11th and 12th grade",
-  "who_can_apply": "High school juniors and seniors who attend PAL Teen Centers. PAL Teen Centers serve teens ages 13 to 19.",
+  "who_can_apply": "High school juniors and seniors who attend PAL Teen Centers.",
   "paid_type": "not-stated",
   "pay_detail": "Free to join. The page does not say whether the internships are paid.",
   "season": "school-year",
@@ -68955,7 +68955,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-16",
   "priority": 3,
-  "notes": "CAP meets at PAL's Webster Center in the Bronx. It is built for teens who would be the first in their family to go to college. PAL Teen Centers are also free and open 3 to 5 evenings a week.",
+  "notes": "CAP meets at PAL's Webster Center in the Bronx. It is built for teens who would be the first in their family to go to college. PAL Teen Centers, for teens 13 to 19, are free and open 3 to 5 evenings a week.",
   "verified_on_label": "Oct 16, 2026"
  },
  {
@@ -69592,7 +69592,7 @@
   "min_age": 14,
   "max_age": 19,
   "grades": null,
-  "who_can_apply": "High school students and recent graduates ages 14 to 19 in the New York City, New Jersey and Connecticut metro area. Competitive.",
+  "who_can_apply": "High school students and recent grads ages 14 to 19 in the New York City, New Jersey and Connecticut area. Not everyone gets in.",
   "paid_type": "paid",
   "pay_detail": "Paid. The page does not state the rate for teen crews.",
   "season": "year-round",
@@ -69612,7 +69612,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "Contact: Pablo Galesi, Metro NY Region Program Manager, (347) 200-4709, pgalesi@thesca.org. New York State requires working papers for workers ages 14 to 17.",
+  "notes": "Contact: Pablo Galesi, (347) 200-4709, pgalesi@thesca.org. In New York, teens 14 to 17 need working papers to work.",
   "verified_on_label": "Oct 16, 2026"
  },
  {
@@ -70249,7 +70249,7 @@
   "min_age": 14,
   "max_age": 24,
   "grades": null,
-  "who_can_apply": "Youth ages 14 to 24 who were in the prior Summer Youth Employment Program (SYEP) cycle and are enrolled in school now.",
+  "who_can_apply": "Ages 14 to 24. You must have done SYEP last summer and be in school now.",
   "paid_type": "paid",
   "pay_detail": "Paid employment. The pages do not state a rate.",
   "season": "school-year",
@@ -70259,7 +70259,7 @@
   "deadline_text": "Henry Street says applications are typically released in late September. No 2026 to 2027 deadline is posted on either page.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Apply through an SYEP provider that runs WLG. Eligible applicants are entered into a lottery. Contact PAL (Myshanda Parks, MParks@palnyc.org) or Henry Street (Iliana Balbuena, ibalbuena@henrystreet.org).",
+  "how_to_apply": "Ask a group that runs SYEP if it runs WLG too. Two that do are PAL (email Myshanda Parks at MParks@palnyc.org) and Henry Street (email Iliana Balbuena at ibalbuena@henrystreet.org). If you can apply, you go into a lottery.",
   "needs_work_permit": true,
   "url": "https://www.henrystreet.org/programs/employment/youth-employment/",
   "apply_url": null,
@@ -70404,7 +70404,7 @@
    "arts-media",
    "education"
   ],
-  "what_you_do": "Meet twice a week after school at the Library. You learn from expert curators, study items in a current exhibition, and make your own digital media in response to it.",
+  "what_you_do": "Meet twice a week after school at the library. You learn from experts who plan shows, study items in a show, and make your own videos or digital art about it.",
   "min_age": null,
   "max_age": null,
   "grades": "11th and 12th grade",
@@ -74471,7 +74471,7 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Get a paid 6-week summer job with a community organization, private company or government agency in Prince George's County. You also get job readiness training and career exploration.",
+  "what_you_do": "Get a paid summer job for 6 weeks in Prince George's County. You might work at a nonprofit, a company, or a county office. You also learn job skills and try out careers.",
   "min_age": 14,
   "max_age": 24,
   "who_can_apply": "Prince George's County youth and young adults ages 14 to 24 (your age as of the program start date picks which application you fill out). Placements are by random lottery.",
@@ -74493,7 +74493,7 @@
    "https://content.govdelivery.com/accounts/MDPGC/bulletins/409b9db"
   ],
   "priority": 1,
-  "notes": "Not everyone who applies is picked. To get ready, the county says to set up a professional email and voicemail, open a bank account, and have your Social Security Number, date of birth, address and an emergency contact ready. Former participants ages 18 to 24 can apply for the county's Youth@Work Internship. Maryland rule (Maryland Department of Labor): work permits are required for all minors under 18 to work in Maryland, issued only after a job offer.",
+  "notes": "Not everyone gets a job. To get ready, set up an email and voicemail, open a bank account, and have your Social Security Number and address ready. Teens who did SYEP can later try the county's Youth@Work Internship at 18. In Maryland, all teens under 18 need a work permit after they get a job offer.",
   "grades": null,
   "verified": "fetched",
   "verified_on": "2026-10-16",
@@ -75131,7 +75131,7 @@
   "deadline_text": "Rolling. Apply any time.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "Print the Volunteer Application, fill it out, and email it to volunteer@freelibrary.org or mail it to Volunteer Services Program, 1901 Vine Street, Philadelphia, PA 19103. Staff then schedule an interview.",
+  "how_to_apply": "Print the form and fill it out. Email it to volunteer@freelibrary.org or mail it to 1901 Vine Street. Then staff will set up a talk with you.",
   "needs_work_permit": false,
   "url": "https://libwww.freelibrary.org/programs/volunteer",
   "apply_url": null,
@@ -75198,11 +75198,11 @@
   "fields": [
    "health"
   ],
-  "what_you_do": "Volunteer at a hospital outside Philadelphia. You might help staff on patient floors, guide visitors, or visit patients to keep them company. No medical training needed.",
+  "what_you_do": "Help at a hospital just north of Philadelphia. You might help staff on patient floors, show people where to go, or sit with patients. You do not need any medical training.",
   "min_age": 16,
   "max_age": null,
   "grades": null,
-  "who_can_apply": "Anyone at least 16 years old who meets Jefferson's vaccination and medical rules.",
+  "who_can_apply": "Anyone 16 or older who has the shots and health checks Jefferson asks for.",
   "paid_type": "unpaid",
   "pay_detail": null,
   "season": "year-round",
@@ -75212,7 +75212,7 @@
   "deadline_text": "Rolling. No deadline posted.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "Submit the volunteer application from the hospital's volunteer page. If accepted, you complete a Pennsylvania background check (the hospital runs it), orientation paperwork, and proof of vaccines (chicken pox, MMR, Tdap, a recent TB blood test, and a flu shot in flu season).",
+  "how_to_apply": "Fill out the form on the volunteer page. If they pick you, the hospital checks your record. You fill out some papers and show your shots: chicken pox, MMR, Tdap, a new TB blood test, and a flu shot in flu season.",
   "needs_work_permit": false,
   "url": "https://www.jeffersonhealth.org/volunteer/abington",
   "apply_url": null,
@@ -75653,7 +75653,7 @@
   "fields": [
    "health"
   ],
-  "what_you_do": "Volunteer at Pennsylvania Hospital for the summer and get a behind-the-scenes look at health care careers. Meant for teens thinking about health careers, but anyone can apply.",
+  "what_you_do": "Help at a big Philadelphia hospital in the summer and see the jobs people do there. It is meant for teens who like health care, but anyone can apply.",
   "min_age": 14,
   "max_age": 17,
   "grades": null,
@@ -75677,7 +75677,7 @@
   "verified": "fetched",
   "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "Only at the 800 Spruce Street campus. Spots fill fast. Questions: PAHVolunteerServices@pennmedicine.upenn.edu or 215-829-5187.",
+  "notes": "It is only at the 800 Spruce Street site. Spots fill fast. Email PAHVolunteerServices@pennmedicine.upenn.edu or call 215-829-5187.",
   "verified_on_label": "Oct 16, 2026"
  },
  {
@@ -80225,7 +80225,7 @@
   "deadline_text": "Apply December 1, 2026 to January 31, 2027 (5 PM). You must first attend an information session with a parent or guardian: Nov 14, Dec 10, 2026, or Jan 16, 2027. Decisions by early March 2027.",
   "deadline_iso": "2027-01-31",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Attend an information session with a parent or guardian, then submit the application, two recommendation forms from non-family adults, and a video under 2 minutes about your favorite way to play.",
+  "how_to_apply": "Go to an info session with a parent or guardian. Then send the form, two letters from adults who are not family, and a short video. In the video, tell them your favorite way to play. Keep it under 2 minutes.",
   "needs_work_permit": false,
   "url": "https://marbleskidsmuseum.org/volunteer/",
   "apply_url": null,
@@ -80250,21 +80250,21 @@
   "fields": [
    "health"
   ],
-  "what_you_do": "Volunteer at a Raleigh hospital one shift a week. You may greet visitors, round on patient rooms, help with discharges, restock supplies, deliver flowers, or help nurses with errands.",
+  "what_you_do": "Help at a hospital in Raleigh for one shift a week. You may greet people, check on patient rooms, help patients go home, stock supplies, bring flowers, or run errands for nurses.",
   "min_age": 14,
   "max_age": 18,
   "grades": "10th to 12th grade (finished 9th grade before the program starts)",
-  "who_can_apply": "High school sophomores, juniors and seniors ages 14 to 18 who have finished their freshman year before the program starts.",
+  "who_can_apply": "Teens 14 to 18 in 10th, 11th or 12th grade. You must be done with 9th grade before it starts.",
   "paid_type": "unpaid",
   "pay_detail": null,
   "season": "summer",
   "duration": "8 weeks, June 21 to August 13, 2027. One 4-hour morning or afternoon shift a week, Monday to Friday. Only one absence allowed.",
   "status": "opens-soon",
   "opens_iso": "2027-03-11",
-  "deadline_text": "The 2027 Summer application is online only on March 11 and 12, 2027. Interviews March 22 to 25, orientation April 26 to 29, and you must volunteer the first week (June 21 to 25).",
+  "deadline_text": "The 2027 Summer application is online only from March 11, 2027 to March 12, 2027. Interviews March 22 to 25, orientation April 26 to 29, and you must volunteer the first week (June 21 to 25).",
   "deadline_iso": "2027-03-12",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Online application, plus two reference forms emailed by adults 21 or older who are not relatives (a school counselor, a teacher, or a supervisor). Interview if contacted.",
+  "how_to_apply": "Fill out the form online. Two adults who know you, 21 or older and not family, email a reference form. This can be a teacher, a school counselor, or a boss. If they call you, go to an interview.",
   "needs_work_permit": false,
   "url": "https://www.rexhealth.com/rh/volunteer/volunteen-program/",
   "apply_url": null,
@@ -82303,7 +82303,7 @@
   "fields": [
    "health"
   ],
-  "what_you_do": "Volunteer at a Rockville hospital. You might greet visitors at the information desk, help patients and families, support nursing units, do office projects, or work in the gift shop.",
+  "what_you_do": "Help at a hospital in Rockville. You might greet people at the front desk, help patients and families, help nurses, do office tasks, or work in the gift shop.",
   "min_age": 15,
   "max_age": null,
   "grades": null,
