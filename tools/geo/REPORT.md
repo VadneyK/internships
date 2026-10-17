@@ -9,19 +9,19 @@ Precision 'manual' covers both the British Columbia table and the ZIP-centroid p
 
 | What | Cards |
 |---|---|
-| All cards | 2610 |
-| With a point | 2259 (86.6%) |
-| Statewide (no point) | 189 |
+| All cards | 2630 |
+| With a point | 2276 (86.5%) |
+| Statewide (no point) | 190 |
 | Online (no point) | 49 |
 | National (no point) | 7 |
-| Many places (no point) | 106 |
+| Many places (no point) | 108 |
 | Unmatched | 0 (0.00%) |
 
-Distinct city strings: 987. Distinct map points (cities list): 474.
+Distinct city strings: 993. Distinct map points (cities list): 475.
 
-Points by precision (points / cards): city 403 / 1997, county 55 / 170, manual 16 / 92
+Points by precision (points / cards): city 404 / 2013, county 55 / 171, manual 16 / 92
 
-Statewide by state: AZ 1, BC 5, CA 20, CO 5, FL 3, GA 12, HI 4, IA 8, ID 2, IL 13, IN 8, KY 4, MA 7, MD 5, MI 8, MN 5, MO 4, MT 2, NC 6, ND 2, NJ 3, NM 4, NV 3, NY 4, OH 5, OR 2, PA 6, SD 2, TN 2, TX 12, UT 3, VA 5, WA 6, WI 6, WY 2
+Statewide by state: AZ 1, BC 5, CA 20, CO 5, FL 3, GA 12, HI 4, IA 8, ID 2, IL 14, IN 8, KY 4, MA 7, MD 5, MI 8, MN 5, MO 4, MT 2, NC 6, ND 2, NJ 3, NM 4, NV 3, NY 4, OH 5, OR 2, PA 6, SD 2, TN 2, TX 12, UT 3, VA 5, WA 6, WI 6, WY 2
 
 ## Unmatched
 
@@ -29,7 +29,7 @@ None.
 
 ## Overrides
 
-Entries in data/geo-overrides.json: byCity 68, byId 1, aliases 5, manualPoints 5. Every entry carries a reason. Entries that fired this run: 79.
+Entries in data/geo-overrides.json: byCity 69, byId 1, aliases 5, manualPoints 5. Every entry carries a reason. Entries that fired this run: 80.
 
 ## Ambiguous matches (picked by region center or land area)
 
