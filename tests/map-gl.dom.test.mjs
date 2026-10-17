@@ -196,3 +196,20 @@ test("without WebGL 2 nothing of the street map loads", async () => {
   assert.equal(p.document.getElementById("mGLGo"), null);
   p.window.close();
 });
+
+test("the count drawn on a dot or group has at least 4.5 to 1 contrast on the dot color, in light and dark mode", () => {
+  const src = fs.readFileSync(path.join(ROOT, "assets/js/map-gl.js"), "utf8");
+  const css = fs.readFileSync(path.join(ROOT, "assets/css/style.css"), "utf8");
+  const lum = (h) => {
+    const c = [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16) / 255).map((x) => (x <= 0.03928 ? x / 12.92 : ((x + 0.055) / 1.055) ** 2.4));
+    return 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2];
+  };
+  const ratio = (a, b) => { const x = lum(a), y = lum(b); return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05); };
+  const pals = [...src.matchAll(/dot: v\("--orange-display"\) \|\| "(#[0-9a-f]{6})".*?num: "(#[0-9a-f]{6})"/g)];
+  assert.equal(pals.length, 2, "a light and a dark palette, each with a dot and a num color");
+  for (const [, dot, num] of pals) {
+    assert.ok(css.includes("--orange-display: " + dot), dot + " is a real --orange-display value in style.css");
+    assert.ok(ratio(dot, num) >= 4.5, num + " on " + dot + " is " + ratio(dot, num).toFixed(2) + " to 1");
+  }
+  assert.doesNotMatch(src, /"text-color": "#/, "count colors come from the palette, so they follow the theme");
+});

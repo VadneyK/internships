@@ -10,7 +10,8 @@ var FONT = ["noto-sans-regular"], BOLD = ["noto-sans-medium"];
 var NAME = ["coalesce", ["get", "name:en"], ["get", "name"]];
 var US = [[-125, 24.4], [-66.9, 49.4]];
 
-/* colors from the page's own theme (style.css), so the map follows light and dark mode */
+/* colors from the page's own theme (style.css), so the map follows light and dark mode. num is the count on a dot:
+   white on the light orange (4.65 to 1; near black was 3.93), near black on the dark one (5.95 to 1) */
 function palette() {
   var cs = getComputedStyle(document.documentElement), v = function (n) { return cs.getPropertyValue(n).trim(); };
   var dark = /dark/.test(v("color-scheme"));
@@ -18,12 +19,12 @@ function palette() {
     land: "#1d1c1a", water: "#16252c", park: "#1f2a20", school: "#2a2420", county: "#3a3733", state: "#7d766c", nation: "#a39a8e",
     road: "#3b3834", major: "#4a4640", highway: "#7a6436", hcase: "#1d1c1a", rail: "#4a4640",
     text: v("--ink") || "#f3f0ea", text2: v("--ink-2") || "#bdb7ae", halo: v("--paper") || "#131211",
-    dot: v("--orange-display") || "#f06a3f", off: "#6d675f", edge: v("--surface") || "#211f1d", ink: v("--ink") || "#f3f0ea"
+    dot: v("--orange-display") || "#f06a3f", off: "#6d675f", edge: v("--surface") || "#211f1d", ink: v("--ink") || "#f3f0ea", num: "#151515"
   } : {
     land: "#f6f4ef", water: "#c7d7df", park: "#dce7d0", school: "#efe5d6", county: "#ddd8cf", state: "#9b958c", nation: "#6d675f",
     road: "#ffffff", major: "#ffffff", highway: "#f6d27a", hcase: "#d9c08a", rail: "#cfc9bf",
     text: v("--ink") || "#151515", text2: v("--ink-2") || "#4a4743", halo: "#f6f4ef",
-    dot: v("--orange-display") || "#cf4519", off: "#8d877e", edge: v("--surface") || "#ffffff", ink: v("--ink") || "#151515"
+    dot: v("--orange-display") || "#cf4519", off: "#8d877e", edge: v("--surface") || "#ffffff", ink: v("--ink") || "#151515", num: "#ffffff"
   };
 }
 
@@ -81,9 +82,9 @@ function dotLayers(c) {
   return [
     { id: "off", type: "circle", source: "off", minzoom: 5, paint: { "circle-color": c.off, "circle-opacity": 0.45, "circle-radius": ["interpolate", ["linear"], ["zoom"], 5, 2.5, 12, 5], "circle-stroke-color": c.edge, "circle-stroke-width": 1 } },
     { id: "clu", type: "circle", source: "cities", filter: ["has", "point_count"], paint: { "circle-color": c.dot, "circle-radius": ["+", 9, ["*", 0.85, ["sqrt", ["get", "n"]]]], "circle-stroke-color": c.edge, "circle-stroke-width": 2 } },
-    { id: "clu-n", type: "symbol", source: "cities", filter: ["has", "point_count"], layout: { "text-field": ["to-string", ["get", "n"]], "text-font": BOLD, "text-size": 12, "text-allow-overlap": true }, paint: { "text-color": "#151515" } },
+    { id: "clu-n", type: "symbol", source: "cities", filter: ["has", "point_count"], layout: { "text-field": ["to-string", ["get", "n"]], "text-font": BOLD, "text-size": 12, "text-allow-overlap": true }, paint: { "text-color": c.num } },
     { id: "dot", type: "circle", source: "cities", filter: ["!", ["has", "point_count"]], paint: { "circle-color": c.dot, "circle-radius": RADIUS, "circle-stroke-color": c.edge, "circle-stroke-width": 1.5 } },
-    { id: "dot-n", type: "symbol", source: "cities", minzoom: 7, filter: ["all", ["!", ["has", "point_count"]], [">", ["get", "n"], 1]], layout: { "text-field": ["to-string", ["get", "n"]], "text-font": BOLD, "text-size": 11, "text-allow-overlap": true }, paint: { "text-color": "#151515" } },
+    { id: "dot-n", type: "symbol", source: "cities", minzoom: 7, filter: ["all", ["!", ["has", "point_count"]], [">", ["get", "n"], 1]], layout: { "text-field": ["to-string", ["get", "n"]], "text-font": BOLD, "text-size": 11, "text-allow-overlap": true }, paint: { "text-color": c.num } },
     { id: "dot-name", type: "symbol", source: "cities", minzoom: 6.5, filter: nameFilter(null),
       layout: { "text-field": ["get", "name"], "text-font": BOLD, "text-size": 13, "text-anchor": "top", "text-offset": [0, 0.9], "text-max-width": 9, "symbol-sort-key": ["-", 0, ["get", "n"]] },
       paint: { "text-color": c.text, "text-halo-color": c.halo, "text-halo-width": 2 } },
