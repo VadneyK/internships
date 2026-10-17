@@ -49,7 +49,7 @@ test("t() gives the Spanish row, and passes anything else through untouched", ()
 });
 
 test("no em or en dash, and no tú in the sentences that speak to the adult", () => {
-  assert.doesNotMatch(read("assets/js/es-playbook.js"), /[–—]/);
+  assert.doesNotMatch(read("assets/js/es-playbook.js"), /[\u2013\u2014]/);
   const toAdult = [...ES.hows.map((h) => h[1]), ...Object.values(ES.ask).flat()];
   for (const s of toAdult) assert.doesNotMatch(s, /\b(tú|tu|te|ti|contigo|puedes|podrías|eres|estás|tienes)\b/i, s + " uses usted");
 });
