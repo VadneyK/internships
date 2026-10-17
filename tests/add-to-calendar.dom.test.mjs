@@ -54,7 +54,9 @@ async function clickAndRead(window, document, btn) {
   await tick();
   assert.equal(files.length, 1, "one file saved");
   assert.equal(files[0].blob.type, "text/calendar");
-  return { name: files[0].name, text: await readBlob(window, files[0].blob), toast: document.getElementById("toast").textContent };
+  // Unfolded (RFC 5545 3.1), so a long UID or date line that was folded at 75 octets still matches.
+  const text = (await readBlob(window, files[0].blob)).replace(/\r\n /g, "");
+  return { name: files[0].name, text, toast: document.getElementById("toast").textContent };
 }
 
 test("find.html: calendar controls follow calEvent on every card, and the button saves the .ics with reminders", async () => {
