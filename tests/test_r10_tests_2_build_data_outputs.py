@@ -173,6 +173,13 @@ class BuildDataOutputs(unittest.TestCase):
     def test_csv_matches_the_columns(self):
         rows = list(csv.reader(io.StringIO(self.read("entries.csv"))))
         self.assertEqual(rows[0], build_data.CSV_COLUMNS)
+        # Spreadsheet users rely on these column names; spell them out so a renamed key in CSV_COLUMNS fails here.
+        self.assertEqual(rows[0], ["id", "name", "org", "city", "regions", "type", "fields", "min_age", "max_age", "grades", "paid_type", "pay_detail", "season", "duration", "status", "deadline_text", "deadline_iso", "deadline_confidence", "needs_work_permit", "who_can_apply", "how_to_apply", "url", "apply_url", "verified", "verified_on", "notes"])
+        b_all = dict(zip(rows[0], rows[[r[0] for r in rows].index("b-full")]))
+        for col in build_data.CSV_COLUMNS:
+            if col not in ("regions", "fields", "verified_on_label"):
+                want = CARDS[0].get(col)
+                self.assertEqual(b_all[col], "" if want is None else str(want), col)
         self.assertEqual(len(rows), 5)
         b = dict(zip(rows[0], rows[[r[0] for r in rows].index("b-full")]))
         self.assertEqual(b["regions"], R1)
