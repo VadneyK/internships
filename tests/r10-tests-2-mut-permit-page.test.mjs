@@ -48,6 +48,7 @@ test("Georgia at 16: no permit line and the under-16 details; at 15 the permit a
   assert.match(out(at16).querySelector("#pUnder summary").textContent, /^If you were under 16$/);
   assert.ok(out(at16).querySelector("article.verdict.none"));
   assert.equal(out(at16).querySelector(".tag").textContent, "No permit");
+  assert.ok(out(at16).querySelector(".tag.g"));
   assert.equal(out(at16).querySelector('a[href="#packetSec"]'), null, "no message or checklist when no permit is needed");
   at16.window.close();
 
@@ -65,6 +66,14 @@ test("Georgia at 16: no permit line and the under-16 details; at 15 the permit a
   assert.equal(out(vol).querySelector("#pNoPermitLine"), null, "volunteering needs no permit at any age, so no cut-off line");
   assert.equal(out(vol).querySelector("#pUnder"), null);
   vol.window.close();
+
+  const at18 = await full("ga", "18", "job");
+  assert.ok(out(at18).querySelector("#pAdultLine"));
+  assert.equal(out(at18).querySelector("#pNoPermitLine"), null, "18 gets the adult line, not the age cut-off line");
+  assert.equal(out(at18).querySelector("#pUnder"), null);
+  assert.ok(out(at18).querySelector(".tag.g"));
+  assert.ok(out(at18).querySelector("article.verdict.adult"));
+  at18.window.close();
 });
 
 test("British Columbia: the plain three-step answer at 14 and 15 for a job, not at 16 or for volunteering", async () => {
@@ -76,11 +85,21 @@ test("British Columbia: the plain three-step answer at 14 and 15 for a job, not 
     assert.ok(plain.querySelectorAll("li").length >= 3);
     p.window.close();
   }
+  for (const kind of ["program", "family"]) {
+    const p = await full("bc", "14", kind);
+    assert.ok(out(p).querySelector("#pBcPlain"), "BC 14 " + kind);
+    p.window.close();
+  }
   for (const [age, kind] of [["16", "job"], ["13", "job"], ["14", "volunteer"]]) {
     const p = await full("bc", age, kind);
     assert.equal(out(p).querySelector("#pBcPlain"), null, "BC " + age + " " + kind);
     p.window.close();
   }
+  const ga = await full("ga", "14", "family");
+  assert.ok(out(ga).querySelector("article.verdict.ask"), "Georgia 14 family is a check-first answer");
+  assert.equal(out(ga).querySelector("#pBcPlain"), null, "only British Columbia gets the plain three steps");
+  assert.equal(out(ga).querySelector(".tag").className, "tag ");
+  ga.window.close();
 });
 
 test("a full-state answer at 12: the younger page link carries the state only for the four states that page covers", async () => {
@@ -90,6 +109,12 @@ test("a full-state answer at 12: the younger page link carries the state only fo
   const wa = await full("wa", "13", "job");
   assert.equal(out(wa).querySelector('a.btn[href^="younger.html"]').getAttribute("href"), "younger.html?age=13");
   wa.window.close();
+});
+
+test("short answer at 12 also says the federal under-14 rule", async () => {
+  const p = await lite(LITE_WITHOUT, "12");
+  assert.match(p.document.getElementById("pLiteCard").textContent, /Federal law says under 14 may not be employed in most non-farm jobs/);
+  p.window.close();
 });
 
 test("short answer: under 14 points to the Ages 12 to 14 page and says the federal rule", async () => {
@@ -138,11 +163,11 @@ test("short answer: a kind of work other than a job is named as not covered; 18 
 });
 
 test("a state we have not read: 18 is the adult line, 12 and 13 the federal rule, 15 the ask-your-office answer", async () => {
-  const cases = [["18", /You are 18\. You do not need a minor work permit\./], ["12", /Federal law says under 14 may not be employed/], ["13", /Federal law says under 14 may not be employed/], ["15", /We have not read your state yet/]];
+  const cases = [["18", /You are 18\. You do not need a minor work permit\./], ["12", /Federal law says under 14 may not be employed/], ["13", /Federal law says under 14 may not be employed/], ["14", /We have not read your state yet/], ["15", /We have not read your state yet/]];
   for (const [age, re] of cases) {
     const p = await full("other", age, "job");
     assert.match(out(p).textContent, re, "age " + age);
-    if (age === "15") assert.doesNotMatch(out(p).textContent, /Federal law says under 14/);
+    if (age === "14" || age === "15") assert.doesNotMatch(out(p).textContent, /Federal law says under 14/);
     p.window.close();
   }
 });
