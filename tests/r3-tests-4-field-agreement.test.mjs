@@ -25,6 +25,7 @@ const AGE_RE = /\b(?:ages?|at least|must be)\s+(\d+)/gi;
 const ALLOW_PAY = [
   "alliance-theatre-palefsky-collision-project",
   "arc-upward-bound",
+  "aurora-youth-climate-action-fund",
   "boston-northeastern-young-scholars-program",
   "champaign-urbana-park-district-cit",
   "chicago-goodman-theatre-youth-arts-council",
