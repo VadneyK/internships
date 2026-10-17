@@ -21,9 +21,10 @@ const SOON_ONLY = ["name", "org", "city", "url"];
 // 2026-10-14 gaps wave plus two Fremont cards read in a real browser (2,610 programs) home file 590200 to 590600.
 // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) home file 590600 to 597700. PENDING PERSON APPROVAL.
 // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. home file 597700 to 597900.
-test("home file is under 607200 bytes", () => {
-  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,694 programs). PENDING PERSON APPROVAL. home file 597900 to 607200.
-  assert.ok(fs.statSync(path.join(ROOT, "data/entries-home.json")).size < 607200);
+// 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) home file 606000.
+test("home file is under 615300 bytes", () => {
+  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. home file 606000 to 615300.
+  assert.ok(fs.statSync(path.join(ROOT, "data/entries-home.json")).size < 615300);
 });
 
 test("only closing-soon rows carry name, org, city and url", () => {

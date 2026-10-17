@@ -15,7 +15,7 @@ import fs from "node:fs";
 const MEASURED = {
   fields: {
     what_you_do: { mean: 6.64, aboveLimit: 177 },
-    who_can_apply: { mean: 6.3, aboveLimit: 280 },
+    who_can_apply: { mean: 5.79, aboveLimit: 280 }, // 2026-10-17: mean tightened from 6.3 (measured 5.79 after the Bay Area city pass merged onto main)
     how_to_apply: { mean: 6.84, aboveLimit: 453 }, // 2026-10-13: tightened from 460 after the re-read of 213 open cards made texts plainer; 2026-10-14: mean tightened from 7.34 (measured 6.79 after the gaps wave)
     notes: { mean: 6.39, aboveLimit: 268 },
   },

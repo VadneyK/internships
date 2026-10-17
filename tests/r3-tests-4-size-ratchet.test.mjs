@@ -39,8 +39,9 @@ const TABLE = {
   // 2026-10-14 gaps wave plus two Fremont cards read in a real browser (2,610 programs) data/entries-core.json limit 470500 to 470800.
   // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. data/entries-core.json limit 476200 to 478400.
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) data/entries-core.json limit 470800 to 476200. PENDING PERSON APPROVAL.
-  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,694 programs). PENDING PERSON APPROVAL. data/entries-core.json limit 478400 to 486600.
-  "data/entries-core.json": { ceiling: 486600, reason: "data file, 368201 bytes measured 2026-10-10" },
+  // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) data/entries-core.json limit 484100.
+  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. data/entries-core.json limit 484100 to 492300.
+  "data/entries-core.json": { ceiling: 492300, reason: "data file, 368201 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-detail.json ceiling 1731000 to 1772700.
   // 2026-10-13: four repointed links after the link check. data/entries-detail.json limit 1772700 to 1772900.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-detail.json limit 1772900 to 1823500.
@@ -51,8 +52,9 @@ const TABLE = {
   // 2026-10-14 gaps wave plus two Fremont cards read in a real browser (2,610 programs) data/entries-detail.json limit 1921000 to 1922700.
   // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. data/entries-detail.json limit 1942900 to 1948300.
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) data/entries-detail.json limit 1922700 to 1942900. PENDING PERSON APPROVAL.
-  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,694 programs). PENDING PERSON APPROVAL. data/entries-detail.json limit 1948300 to 1986100.
-  "data/entries-detail.json": { ceiling: 1986100, reason: "data file, 1521373 bytes measured 2026-10-10" },
+  // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) data/entries-detail.json limit 1980900.
+  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. data/entries-detail.json limit 1980900 to 2018800.
+  "data/entries-detail.json": { ceiling: 2018800, reason: "data file, 1521373 bytes measured 2026-10-10" },
   "data/entries-home.json": { ceiling: 899400, reason: "data file, 817599 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-lite.json ceiling 2223100 to 2277600.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-lite.json limit 2277600 to 2341900.
@@ -64,8 +66,9 @@ const TABLE = {
   // 2026-10-14 gaps wave plus two Fremont cards read in a real browser (2,610 programs) data/entries-lite.json limit 2467100 to 2468900.
   // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. data/entries-lite.json limit 2496100 to 2507300.
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) data/entries-lite.json limit 2468900 to 2496100. PENDING PERSON APPROVAL.
-  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,694 programs). PENDING PERSON APPROVAL. data/entries-lite.json limit 2507300 to 2550800.
-  "data/entries-lite.json": { ceiling: 2550800, reason: "data file, 1937500 bytes measured 2026-10-10" },
+  // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) data/entries-lite.json limit 2540600.
+  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. data/entries-lite.json limit 2540600 to 2584100.
+  "data/entries-lite.json": { ceiling: 2584100, reason: "data file, 1937500 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json ceiling 697700 to 716100.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json limit 716100 to 736500.
   // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json limit 736500 to 748900.
@@ -73,8 +76,9 @@ const TABLE = {
   // 2026-10-14 gaps wave plus two Fremont cards read in a real browser (2,610 programs) data/entries-stats.json limit 776000 to 776700.
   // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json limit 785100 to 788200.
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) data/entries-stats.json limit 776700 to 785100. PENDING PERSON APPROVAL.
-  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,694 programs). PENDING PERSON APPROVAL. data/entries-stats.json limit 788200 to 802000.
-  "data/entries-stats.json": { ceiling: 802000, reason: "data file, 606782 bytes measured 2026-10-10" },
+  // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) data/entries-stats.json limit 798100.
+  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. data/entries-stats.json limit 798100 to 811900.
+  "data/entries-stats.json": { ceiling: 811900, reason: "data file, 606782 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries.json ceiling 4567200 to 4677300.
   // 2026-10-13: four repointed links after the link check. data/entries.json limit 4677300 to 4677700.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries.json limit 4677700 to 4809900.
@@ -86,8 +90,9 @@ const TABLE = {
   // 2026-10-14 gaps wave plus two Fremont cards read in a real browser (2,610 programs) data/entries.json limit 5066300 to 5070300.
   // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. data/entries.json limit 5124700 to 5145100.
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) data/entries.json limit 5070300 to 5124700. PENDING PERSON APPROVAL.
-  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,694 programs). PENDING PERSON APPROVAL. data/entries.json limit 5145100 to 5241900.
-  "data/entries.json": { ceiling: 5241900, reason: "data file, 3996617 bytes measured 2026-10-10" },
+  // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) data/entries.json limit 5223300.
+  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. data/entries.json limit 5223300 to 5320000.
+  "data/entries.json": { ceiling: 5320000, reason: "data file, 3996617 bytes measured 2026-10-10" },
   "data/expiring-dates.json": { ceiling: 1700, reason: "data file, 1530 bytes measured 2026-10-10" },
   "data/gaps.json": { ceiling: 5400, reason: "data file, 4832 bytes measured 2026-10-10" },
   "data/interview.json": { ceiling: 12400, reason: "data file, 11207 bytes measured 2026-10-10" },
@@ -132,7 +137,8 @@ const TABLE = {
   "assets/js/common.js": { ceiling: 36400, reason: "script, 25681 bytes measured 2026-10-10" },
   // Raised from 58100 to 59300 on 2026-10-12 for ticket diet-1 (Where group files on the Programs page). 59217 bytes measured.
   "data/entries-map.json": { ceiling: 667300, reason: "data file for the Map page, 606587 bytes measured 2026-10-15 (PENDING PERSON APPROVAL)" },
-  "data/geo-overrides.json": { ceiling: 18600, reason: "hand fixes for the Map page geocoder (tools/geo), 17704 bytes measured 2026-10-15" },
+  // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) data/geo-overrides.json limit 19700 (four San Francisco city strings).
+  "data/geo-overrides.json": { ceiling: 19700, reason: "hand fixes for the Map page geocoder (tools/geo), 17704 bytes measured 2026-10-15" },
   "data/map.json": { ceiling: 163300, reason: "data file, the Map page city points, 148390 bytes measured 2026-10-15" },
   "assets/js/map.js": { ceiling: 37700, reason: "script, 27559 bytes measured 2026-10-15; 35987 bytes after the review fixes" },
   "assets/img/us-states.svg": { ceiling: 61500, reason: "image, the Map page basemap (tools/geo/make_basemap.mjs keeps it under 58000), 55841 bytes measured 2026-10-15" },

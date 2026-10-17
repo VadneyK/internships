@@ -262,8 +262,8 @@ test("find: every program returned for paid contains the whole word paid", async
   type(window, document.getElementById("q"), "paid");
   await tick(SEARCH_DEBOUNCE);
   const total = shownCount(document);
-  // 2026-10-17: up to 50 clicks; at 2,682 programs "paid" returns 663 results, more than the 660 that 10 clicks show.
-  for (let i = 0; i < 50 && document.getElementById("more"); i++) document.getElementById("more").click();
+  // The cap only stops a runaway loop. It was 10 (660 cards) until the 2026-10-17 merge took "paid" to 661 results.
+  for (let i = 0; i < 100 && document.getElementById("more"); i++) document.getElementById("more").click();
   assert.equal(cardCount(document), total, "every result should be rendered after Show more");
   const shown = [...document.querySelectorAll("article.prog")].map((c) => DATA.find((e) => "p-" + e.id === c.id));
   const bad = shown.filter((e) => !/\bpaid\b/i.test([e.name, e.org, e.city, e.what_you_do, e.notes, e.who_can_apply, e.pay_detail, L.TYPES[e.type]].join(" ")));
