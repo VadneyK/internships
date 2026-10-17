@@ -329,6 +329,7 @@ main details[open] > summary::after { content: "\2212";
   .k1 { forced-color-adjust: none; background: Highlight; color: HighlightText; }
   .k2 { forced-color-adjust: none; background: CanvasText; color: Canvas; }
   .k3 { forced-color-adjust: none; background: repeating-linear-gradient(45deg, CanvasText 0 2px, Canvas 2px 6px); color: CanvasText; }
+  .cv { color: inherit; }
   .bar.h { forced-color-adjust: none; background: Highlight; }
   .bar.a { forced-color-adjust: none; background: GrayText; }
   .meter > i { forced-color-adjust: none; background: Highlight; }
@@ -572,14 +573,22 @@ tr:last-child th { border-bottom: 0; }
 
 /* insights charts */
 .chart { display: grid; gap: .5rem; }
-.crow { display: grid; grid-template-columns: minmax(7rem, 11rem) minmax(0, 1fr) auto; gap: .6rem; align-items: center; text-decoration: none; color: var(--ink); padding: .15rem 0; }
+.crow { display: grid; grid-template-columns: minmax(7rem, 11rem) minmax(0, 1fr); gap: .6rem; align-items: center; text-decoration: none; color: var(--ink); padding: .15rem 0; }
 @media (hover: hover) { .crow:hover .cl { text-decoration: underline; } }
 .crow .cl { font-weight: 700; }
-.crow .cn { font-family: var(--display); font-style: italic; font-weight: 900; min-width: 2.2rem; text-align: right; }
+.crow .cn { font-family: var(--display); font-style: italic; font-weight: 900; font-size: .95rem; margin-left: .4rem; align-self: center; white-space: nowrap; }
 .crow .cn small { font-family: var(--body, inherit); font-style: normal; font-weight: 500; color: var(--ink-2); }
-.ctrack { display: flex; height: 1.7rem; border-left: 3px solid var(--edge); }
-.ctrack i { display: block; height: 100%; border: 3px solid var(--edge); border-left: 0; min-width: 4px; }
+/* The track keeps 3.1rem free on the right for the total, so a 100 percent bar and its number both fit. */
+.ctrack { display: flex; height: 1.7rem; border-left: 3px solid var(--edge); padding-right: 3.1rem; }
+.ctrack > * { flex-shrink: 0; }
+.ctrack i { display: flex; align-items: center; justify-content: center; height: 100%; border: 3px solid var(--edge); border-left: 0; min-width: 4px; overflow: hidden; container-type: inline-size; }
 .ctrack.multi i + i { border-left: 0; margin-left: -3px; }
+/* Small value labels inside bar segments. Dark ink on orange and yellow in both themes; the paper and white parts use the theme ink. */
+.cv { font-family: var(--body); font-size: .75rem; font-weight: 700; line-height: 1; padding: 0 .25rem; white-space: nowrap; color: var(--ink); }
+.k1 .cv, .k2 .cv { color: #151515; }
+@container (width < 2.2rem) { .ctrack .cv { display: none; } }
+@container (height < 1.1rem) { .cbar .cv { display: none; } }
+.nocq .cv { display: none; }
 .k1 { background: var(--orange); }
 .k2 { background: #f6c431; }
 .k3 { background: var(--paper-2); }
@@ -587,8 +596,9 @@ tr:last-child th { border-bottom: 0; }
 .ccol { flex: 1; display: grid; grid-template-rows: auto 1fr auto; justify-items: center; height: 100%; text-decoration: none; color: var(--ink); gap: .3rem; min-width: 0; }
 @media (hover: hover) { .ccol:hover .cl { text-decoration: underline; } }
 .ccol .cbar { width: 100%; display: flex; align-items: flex-end; border-bottom: 3px solid var(--edge); }
-.ccol .cbar i { display: flex; align-items: flex-end; width: 100%; border: 3px solid var(--edge); border-bottom: 0; background: var(--surface); }
-.ccol .cbar i b { display: block; width: 100%; border-top: 3px solid var(--edge); }
+.ccol .cbar i { display: flex; flex-direction: column; justify-content: flex-end; width: 100%; border: 3px solid var(--edge); border-bottom: 0; background: var(--surface); }
+.ccol .cbar i > b { display: flex; align-items: center; justify-content: center; width: 100%; border-top: 3px solid var(--edge); overflow: hidden; container-type: size; }
+.ccol .cbar .cw { display: flex; align-items: center; justify-content: center; flex: 1 1 0; min-height: 0; overflow: hidden; container-type: size; }
 .ccol .cn { font-family: var(--display); font-style: italic; font-weight: 900; }
 .ccol .cl { font-weight: 700; font-size: .9rem; display: block; text-align: center; }
 .legend { margin-top: .8rem; align-items: center; font-size: .9rem; }
@@ -601,7 +611,7 @@ tr:last-child th { border-bottom: 0; }
 .ccol .csplit .key.kw { background: var(--surface); }
 .legend .key:first-child { margin-left: 0; }
 @media (max-width: 40rem) {
-  .crow { grid-template-columns: minmax(5.5rem, 8rem) minmax(0, 1fr) auto; font-size: .92rem; }
+  .crow { grid-template-columns: minmax(5.5rem, 8rem) minmax(0, 1fr); font-size: .92rem; }
   .chart.cols { gap: .35rem; }
 }
 
