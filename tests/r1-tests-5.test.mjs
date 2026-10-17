@@ -91,7 +91,9 @@ test("data: all real programs load", () => {
 });
 
 test("lib.js invariants hold on " + DRAWS + " random filter states x 5 dates", () => {
-  const started = Date.now();
+  // CPU time, not wall time: on a loaded machine (other jobs, parallel test files) the wall clock passed 10 s while
+  // this file did no more work (2026-10-16). CPU time still catches an accidentally quadratic matches().
+  const started = process.cpuUsage();
   let draw = 0, now = NOWS[0];
   try {
     for (draw = 0; draw < DRAWS; draw++) {
@@ -160,8 +162,9 @@ test("lib.js invariants hold on " + DRAWS + " random filter states x 5 dates", (
     console.error("FAILED with seed " + SEED + " at draw " + draw);
     throw err;
   }
-  const ms = Date.now() - started;
-  assert.ok(ms < 10000, "took " + ms + " ms, limit is 10000 (seed " + SEED + ")");
+  const used = process.cpuUsage(started);
+  const ms = Math.round((used.user + used.system) / 1000);
+  assert.ok(ms < 10000, "used " + ms + " ms of CPU, limit is 10000 (seed " + SEED + ")");
 });
 
 test("effStatus never leaves a program open past a deadline, even if the data says so", () => {
