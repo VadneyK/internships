@@ -216,34 +216,35 @@
   "fields": [
    "law-government"
   ],
-  "what_you_do": "You attend a one-week summer leadership session. It is for 11th grade girls. The American Legion Auxiliary runs it. A local Auxiliary Unit chooses and sponsors each delegate. The pages do not describe the daily activities.",
+  "what_you_do": "You spend a week at a summer camp for 11th graders from across the state. You learn how city, county and state government work. You learn how elections run, and you write a bill.",
   "min_age": null,
   "max_age": null,
-  "grades": "11th grade (the site says each delegate is an 11th grader during the 2025-26 school year)",
-  "who_can_apply": "Girls in 11th grade who are selected and sponsored by a local American Legion Auxiliary Unit. Each high school may have only one delegate. If a school has no sponsoring Unit, a student can apply as a Department (statewide) alternate applicant. Age rules are not stated.",
+  "grades": "11th grade (the site says each delegate is an 11th grade student during the 2026-27 school year)",
+  "who_can_apply": "Girls in 11th grade. A local American Legion Auxiliary Unit must pick and sponsor you. Each high school can send only one delegate. If no Unit sponsors your school, you can apply as a statewide alternate. No age rule is stated.",
   "paid_type": "unpaid",
   "pay_detail": "Cost not stated on the program pages. The site says there are opportunities for scholarship consideration, including the Samsung American Legion Scholarship.",
   "season": "summer",
-  "duration": "One week. The 2026 session (83rd) ran June 22-27, 2026.",
+  "duration": "One week. The 2026 session (83rd) ran June 22 to 27, 2026. 2027 dates are not posted.",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "2026 session: June 22-27, 2026. 2027 dates and application deadlines are not posted on the site.",
+  "deadline_text": "2027 (84th) session: dates and location not posted yet. The online form for Unit-selected 2027 delegates and alternates opens February 2027. The form for Department (statewide) alternate applicants opens April 2027. Last session: June 22 to 27, 2026.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Ask your school counselor or contact a local American Legion Auxiliary Unit (the site has a spreadsheet to find one). Each Unit picks a delegate and two alternates. Students at schools with no sponsoring Unit can use the START HERE online application as Department alternate applicants.",
+  "how_to_apply": "Ask your school counselor. Or contact a local American Legion Auxiliary Unit. The site has a list to find one. Each Unit picks a delegate and two alternates. Many use a form, an essay or an interview. Picked students then fill out an online form. It opens in February 2027. Is there no Unit at your school? You can apply as a statewide alternate. That form opens in April 2027.",
   "needs_work_permit": false,
   "url": "https://cagirlsstate.org/faq",
   "apply_url": null,
   "sources_fetched": [
    "https://cagirlsstate.org/",
    "https://cagirlsstate.org/faq",
-   "https://cagirlsstate.org/delegates-alternates"
+   "https://cagirlsstate.org/delegates-alternates",
+   "https://www.cagirlsstate.org/about-california-girls-state"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "Separate from the coed American Legion California Boys State (Boys & Girls State) program, which has its own card on this site. The FAQ says a student may apply to either American Legion CA Boys State or American Legion Auxiliary CA Girls State, but not both. Selection criteria, grade-school rules beyond the 11th grade note, and cost are not stated on the pages.",
-  "verified_on_label": "Oct 7, 2026",
+  "notes": "Separate from the coed American Legion California Boys State (Boys & Girls State) program, which has its own card on this site. The FAQ says a student may apply to either American Legion CA Boys State or American Legion Auxiliary CA Girls State, but not both. Selection criteria, grade-school rules beyond the 11th grade note, and cost are not stated on the pages. The 2027 session will be the 84th. Adult staff must be at least 20 or out of high school for at least three years, so staff roles are not for teens.",
+  "verified_on_label": "Oct 16, 2026",
   "limited": true
  },
  {
@@ -611,6 +612,47 @@
   "priority": 2,
   "notes": "Book reviews are limited to one a month. No coding experience needed for LEGO. See also Alameda Free Library Teen Advisory Group (TAG) for the advisory role, where teens suggest ideas for library events and projects.",
   "verified_on_label": "Oct 7, 2026"
+ },
+ {
+  "id": "alameda-health-system-heal-internship",
+  "name": "HEAL Program High School Internships (HealthPATH, Highland Hospital)",
+  "org": "Alameda Health System, HealthPATH",
+  "regions": [
+   "oakland"
+  ],
+  "city": "Oakland, CA (Wilma Chan Highland Hospital Campus)",
+  "type": "internship",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "You rotate through hospital units like the ER, the ICU and Labor and Delivery. You shadow doctors and nurses. You also learn skills like CPR and how to take vital signs in a practice lab.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Fall and spring: 10th to 12th grade (one fall cohort is 12th grade only). Summer: 11th grade only.",
+  "who_can_apply": "Enrolled in high school AND either live in Oakland or attend an OUSD school or charter, both when you apply and during the cohort. Spring cohorts are for 10th to 12th graders. Summer 2027 is for current 11th graders.",
+  "paid_type": "stipend",
+  "pay_detail": "Fall 2026 cohorts: $400 stipend. Summer 2027: $2,000 stipend. Spring 2027 pay is not stated on the page.",
+  "season": "school-year",
+  "duration": "Spring 2027: about 5 weeks, Mon to Thu 4 to 6 pm (Cohort A Jan 11 to Feb 11, B Feb 22 to Mar 25, C Apr 5 to May 13). Summer 2027: June 14 to July 23, weekdays 9 am to 4:30 pm.",
+  "status": "opens-soon",
+  "opens_iso": "2026-10-26",
+  "deadline_text": "Spring 2027 cohorts: application opens Oct 26, 2026 and closes Nov 17, 2026; interviews week of Nov 30; decisions Dec 15, 2026. Summer 2027: opens Jan 5, 2027, closes Jan 27, 2027. Fall 2026 cohorts closed Aug 27, 2026.",
+  "deadline_iso": "2026-11-17",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Online application that must be done in one sitting (no save). Pick your cohort, upload a resume, and answer short-answer questions (75 words minimum each for spring, 150 for summer). Draft answers first. Then an interview. Questions: healprogram@alamedahealthsystem.org.",
+  "needs_work_permit": null,
+  "url": "https://www.alamedahealthsystem.org/calling-all-oakland-high-schoolers-applications-are-open-for-heal-alameda-health-systems-hands-on-medical-healthpath-internship-program/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.alamedahealthsystem.org/calling-all-oakland-high-schoolers-applications-are-open-for-heal-alameda-health-systems-hands-on-medical-healthpath-internship-program/",
+   "https://www.alamedahealthsystem.org/ahs-volunteers/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 1,
+  "notes": "As of 2026-10-16, the 2026-27 dates, pay and rules are on the HealthPATH page, healthpath-ahs.org/healprogramapply. That page does not load with https. So this card links to the AHS news post that points to it. Type healthpath-ahs.org/healprogramapply into your browser for the live dates and the form. The page says HEAL is for high school students of color. The written rule is that you live in Oakland or go to an OUSD school. The AHS volunteer program is a different program, and it is for ages 18 and up. The page does not say if you need a work permit for the stipend. Ask the program.",
+  "verified_on_label": "Oct 16, 2026",
+  "limited": true
  },
  {
   "id": "alameda-high-school-cte-pathways",
@@ -6948,6 +6990,137 @@
   "verified_on_label": "Oct 7, 2026"
  },
  {
+  "id": "bgc-peninsula-teen-volunteer-summer-internship",
+  "name": "Teen Volunteering and Summer Teen Internship (Boys & Girls Clubs of the Peninsula)",
+  "org": "Boys & Girls Clubs of the Peninsula",
+  "regions": [
+   "peninsula"
+  ],
+  "city": "Menlo Park, CA (Boys & Girls Clubs of the Peninsula, 401 Pierce Rd., serving San Mateo County)",
+  "type": "volunteer",
+  "fields": [
+   "education"
+  ],
+  "what_you_do": "You help younger kids with homework once a week during the school year. In summer, teen interns help with classes and fun learning time at the club's summer program.",
+  "min_age": 14,
+  "max_age": null,
+  "grades": "Summer Teen Internship: rising 9th to 12th grade",
+  "who_can_apply": "Ages 14 and up. Summer Teen Internship: rising high school freshmen through seniors who are 14 or older. To intern or volunteer you must have a Social Security Number and be able to complete a background check.",
+  "paid_type": "not-stated",
+  "pay_detail": "School-year Program Support is unpaid volunteering. Pay for the Summer Teen Internship is not stated; it is listed on the club's Volunteer page.",
+  "season": "year-round",
+  "duration": "Program Support: at least 1 hour a week on the same day for at least 6 weeks, Monday to Thursday, 3:00 to 6:00 PM, September to May. Summer internship: at least 3 weeks in June to July, Monday to Friday, mornings, afternoons or both.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Program Support: rolling applications during the school year (September to May). Summer Teen Internship: application opens March 2027 (exact day not posted).",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use the Sign Up and Apply Here links on the club's Volunteer page. Questions? Email Emily Mungul at emungul@bgcp.org.",
+  "needs_work_permit": null,
+  "url": "https://www.bgcp.org/volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.bgcp.org/volunteer",
+   "https://www.bgcp.org/programs",
+   "https://www.bgcp.org/careers",
+   "https://www.bgcp.org/cpp",
+   "https://www.bgcp.org/news"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "The page links a separate document on the application process and compliance rules. The SSN requirement is for the club's background check; a teen without an SSN cannot do this one. Summer internship hours are 8:00 am to 12:00 pm, 1:00 to 5:00 pm, or both. BGCP's paid Youth Program Leader jobs ($22 to $25 an hour) do not list an age. Mid-Peninsula Boys & Girls Club and Boys & Girls Clubs of North San Mateo County have joined BGCP, per BGCP's news page.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "bgc-san-francisco-camp-mendocino-lit-cit",
+  "name": "Camp Mendocino Leaders-in-Training (LIT) and Careers-in-Training (CIT)",
+  "org": "Boys & Girls Clubs of San Francisco (Camp Mendocino)",
+  "regions": [
+   "san-francisco"
+  ],
+  "city": "San Francisco, CA (overnight camp at Camp Mendocino; buses leave from San Francisco)",
+  "type": "leadership",
+  "fields": [
+   "education",
+   "food-hospitality",
+   "trades"
+  ],
+  "what_you_do": "LITs help younger campers, take job skills classes and shadow staff at an overnight camp. CITs pick a track: youth work, upkeep or the kitchen. They learn job skills and earn a certificate.",
+  "min_age": 15,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "LIT: ages 15 to 17. CIT: ages 16 to 17 who already did LIT (in person or virtually). CITs must commit to two sessions, one of them a 7-day session. No city or residency rule is stated.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free: the camp fee is waived for all sessions for accepted LITs and CITs. Not a paid job.",
+  "season": "summer",
+  "duration": "In 2026, LIT/CIT training was June 17 to 20, then camp sessions ran June 20 to Aug 5. LITs can do one or more sessions; CITs do two.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "2026 cycle: applications opened Jan 15, with rolling deadlines Feb 16, March 16, April 13 and a final deadline of May 4, 2026. The camp says 'See you in 2027,' but 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the LIT/CIT online application on the Teen Leadership page. Then register for camp and pick the 'CIT/LIT programs' price option, which waives the fee once you are accepted. Training is at camp in Session 1A, or a required virtual training.",
+  "needs_work_permit": false,
+  "url": "https://www.campmendocino.org/teen-leadership",
+  "apply_url": "https://form.jotform.com/252946467339168",
+  "sources_fetched": [
+   "https://www.campmendocino.org/teen-leadership",
+   "https://www.campmendocino.org/register-for-camp",
+   "https://www.campmendocino.org/faqs",
+   "https://www.kidsclub.org/join-a-club/teens"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 1,
+  "notes": "Apply early. The FAQ says spots often fill by early April. The camp told teens in rounds. For example, it replied by March 2 for the Feb 16 deadline. Buses leave from San Francisco. For Session 1, there is also a stop near Travis Air Force Base. Teens who are 15 can sign up as regular campers instead. People 18 and up can apply for camp staff jobs. Contact: camperapplication@kidsclub.org.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "bgc-san-francisco-leaders-in-training",
+  "name": "Leaders-In-Training (LIT) Program (Boys & Girls Clubs of San Francisco)",
+  "org": "Boys & Girls Clubs of San Francisco",
+  "regions": [
+   "san-francisco"
+  ],
+  "city": "San Francisco, CA (several Clubhouses)",
+  "type": "paid-youth-program",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "You take 10 hours of work training, then work about 7 hours a week for 10 weeks at a Clubhouse. You get coaching, explore careers, and build a professional portfolio.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "Teens in grades 9 to 12 who are current Club members. Membership costs $20. Teens may take part only once per calendar year.",
+  "paid_type": "stipend",
+  "pay_detail": "Teens who complete the requirements receive an $800 gift card.",
+  "season": "school-year",
+  "duration": "About 10 weeks: 70 hours of on-the-job experience after 10 hours of Work-Based Learning training.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Past cohorts began with a required training in January 2025 (Jan 11 to 18) and September 2025 (Sept 13 to 20). The 2026-27 training dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Join the Club ($20 membership) at kidsclub.org/register, then contact the High School Services Director or Clubhouse staff at your Clubhouse to sign up. You must attend one training session.",
+  "needs_work_permit": null,
+  "url": "https://www.kidsclub.org/programs/job-readiness",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.kidsclub.org/programs/job-readiness",
+   "https://www.kidsclub.org/join-a-club/teens",
+   "https://www.kidsclub.org/programs/character-leadership-development",
+   "https://www.kidsclub.org/get-involved/volunteer",
+   "https://cdn.prod.website-files.com/5b5e1754c3f7cb50734892a4/68b0a611498e5ccc7ef94726_LIT%20flyer%202025-26.pdf",
+   "https://cdn.prod.website-files.com/5b5e1754c3f7cb50734892a4/677d92220020ef84a39fbd92_BGCSF_LIT_Flyer_FINAL_Jan8_2025.pdf"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 1,
+  "notes": "Contact: Earl Declet, edeclet@kidsclub.org. The 2025-26 flyer lists LIT at these clubs: Willie Mays (Bayview), Excelsior, Don Fisher (Fillmore), Columbia Park and Mission (Mission), Tenderloin, and Springer (Sunnydale). Finishing LIT can lead to summer jobs. Teens under 18 cannot join the adult volunteer program. The site says to join a club, where there are youth volunteer roles. Club teens can also join Keystone Club. Its members raise at least $3,000 to go to a national meeting. The flyers do not say if you need a work permit.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
   "id": "bgc-san-leandro-teen-summer-program",
   "name": "Teen Summer Program",
   "org": "Boys & Girls Clubs of San Leandro",
@@ -12753,7 +12926,7 @@
   "min_age": 16,
   "max_age": 17,
   "grades": "Finished 11th grade, with at least one semester of high school left",
-  "who_can_apply": "High school students who completed junior year and have a semester left. There is no application. Your school recommends you. A local American Legion Post interviews and sponsors you. Girls State (below) is a separate program.",
+  "who_can_apply": "High school students who completed junior year and have a semester left. There is no application. Your school recommends you. A local American Legion Post interviews and sponsors you. California Girls State is a separate program with its own card.",
   "paid_type": "fee-based",
   "pay_detail": "Registration fee listed as $550 per delegate on the Key Dates page (the page does not label the year). Ask your sponsoring Post who pays.",
   "season": "summer",
@@ -12763,7 +12936,7 @@
   "deadline_text": "2027 selection dates are not posted. The Key Dates page (year not labeled) shows delegate selection Jan 15 to Apr 1 and all registrations due Apr 1. Posts usually interview late Jan to late March.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Tell your counselor in junior year you are interested, or contact a local American Legion Post (use Find-A-Post on calegion.org). The Post chooses delegates; the delegate then registers online.",
+  "how_to_apply": "In junior year, tell your counselor you want to go. Or contact a local American Legion Post. Use Find a Post on calegion.org. The Post picks its delegates. Then each delegate signs up online.",
   "needs_work_permit": false,
   "url": "https://californiaboysandgirlsstate.org/program-information/key-dates/",
   "apply_url": null,
@@ -24787,12 +24960,12 @@
    "education"
   ],
   "what_you_do": "You can take Red Cross lifeguard training. You can also take a junior lifeguard class. Or try Junior Swim Instructor, where you shadow instructors. This can lead to volunteer chances and city aquatics jobs.",
-  "min_age": 15,
+  "min_age": 11,
   "max_age": null,
   "grades": null,
-  "who_can_apply": "Lifeguard Training: you must turn 15 by the last day of the course. Junior Lifeguarding: pass a swim skills check on day one (25 yards of front crawl and breaststroke, tread water 1 minute, and more). Junior Swim Instructor: no age or swim test listed on the page.",
+  "who_can_apply": "Lifeguard Training: you must turn 15 by the last day of the class. On day one you take a swim test. Swim 150 yards, tread water 2 minutes with only your legs, then swim 50 yards. You also bring up a 10 pound brick in a timed test. Junior Lifeguarding and Junior Swim Instructor are for 11 to 15 year olds. Junior Lifeguarding has a swim check on day one.",
   "paid_type": "fee-based",
-  "pay_detail": "Course fees apply. Amounts are not on the page; check the Rec Guide or online registration.",
+  "pay_detail": "Summer 2026 fees: Lifeguard Training $275, Junior Lifeguard Training $185, Junior Swim Instructor $100. Check the current Rec Guide or online registration for new prices.",
   "season": "year-round",
   "duration": "varies by course",
   "status": "rolling",
@@ -24805,13 +24978,14 @@
   "url": "https://www.cityofdavis.org/city-hall/parks-and-community-services/aquatics-and-city-pools/aquatic-classes",
   "apply_url": null,
   "sources_fetched": [
-   "https://www.cityofdavis.org/city-hall/parks-and-community-services/aquatics-and-city-pools/aquatic-classes"
+   "https://www.cityofdavis.org/city-hall/parks-and-community-services/aquatics-and-city-pools/aquatic-classes",
+   "https://www.cityofdavis.org/home/showpublisheddocument/21309/639229208666270000"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "Training can lead to City of Davis aquatics work. Junior Swim Instructor is for teens who may want to work for Davis Aquatics later, with volunteer chances after the training. The page does not promise a job. Lifeguard certification needs full attendance and passing tests. Job minimum ages are set in each posting at cityofdavis.org/jobs.",
-  "verified_on_label": "Oct 7, 2026"
+  "notes": "These classes can lead to city pool jobs. Junior Swim Instructor is for teens who may want to work for Davis Aquatics later. You may get to volunteer after the class. The page does not promise a job. To get a lifeguard card, you must come to every class and pass the tests. City lifeguard jobs start at 15. Swim teacher jobs start at 15, or 14 if you did Junior Swim Instructor. That is from the 2026 job posts. See the City of Davis Seasonal Lifeguard and Swim Instructor Jobs card.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "min_age": 15,
@@ -24852,6 +25026,97 @@
    "https://www.governmentjobs.com/careers/davis/jobs/5451970/junior-basketball-coach-and-official-score-keeper"
   ],
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "davis-rec-leader-in-training",
+  "name": "Rec Leader in Training (RLIT) and Outdoor Education Camp Volunteers",
+  "org": "City of Davis Parks and Community Services",
+  "regions": [
+   "davis",
+   "yolo"
+  ],
+  "city": "Davis, CA",
+  "type": "leadership",
+  "fields": [
+   "education",
+   "social-impact"
+  ],
+  "what_you_do": "You spend two weeks learning to lead camp games, crafts, bike safety and first aid. Then you interview and help at a city day camp for a week. Teens 14 to 16 can help at Camp Putah and other outdoor camps instead.",
+  "min_age": 13,
+  "max_age": 16,
+  "grades": null,
+  "who_can_apply": "RLIT: ages 13 to 15. Returning RLIT: ages 13 to 16, only if you finished RLIT before and were invited back. Outdoor Education Volunteer: ages 14 to 16 in the Summer 2026 RecGuide (the 2026 Summer Camp Handbook says 13 to 16); you need your own bike and helmet and must ride at least 10 miles a day. RLITs must clear a local records check.",
+  "paid_type": "fee-based",
+  "pay_detail": "Unpaid, and there is a program fee. Summer 2026 fees: RLIT $247 (Session 1) or $264 (Session 2). Returning RLIT $66. Outdoor Education Volunteer $122, paid only after you are accepted.",
+  "season": "summer",
+  "duration": "RLIT 2026: Session 1 June 15 to July 2, Session 2 July 13 to 31, Monday to Friday 8:00 a.m. to 12:00 p.m., with week three spent volunteering at a camp (about 30 hours, 8:00 a.m. to 3:00 p.m.). Outdoor Education Volunteers work at least three weeks between June 15 and August 21.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Summer 2027 dates are not posted. Last cycle: summer 2026 registration for camps and programs other than Camp Putah, Trekkers and Horse Camps opened Wednesday, March 11, 2026 at 7:00 a.m. for Davis residents. Outdoor Education Volunteer applications were due Friday, March 27, 2026 by 4:00 p.m.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "RLIT: sign up on the city's WebTrac site when summer sign ups open. Returning RLITs must be approved first. Outdoor Education Volunteer: fill out the online form. The link is on the city's volunteer page. Then go to a group interview. Questions? Call 530-757-5626 or email csweb@cityofdavis.org.",
+  "needs_work_permit": false,
+  "url": "https://www.cityofdavis.org/city-hall/parks-and-community-services/forms-and-publications/recreation-schedules",
+  "apply_url": "https://webtrac.cityofdavis.org/wbwsc/webtrac.wsc/splash.html",
+  "sources_fetched": [
+   "https://www.cityofdavis.org/city-hall/parks-and-community-services/forms-and-publications/recreation-schedules",
+   "https://www.cityofdavis.org/home/showpublisheddocument/21309/639229208666270000",
+   "https://www.cityofdavis.org/home/showpublisheddocument/21762/639156481228830000",
+   "https://www.cityofdavis.org/city-hall/parks-and-community-services/camps",
+   "https://www.cityofdavis.org/residents/volunteer-opportunities"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "These facts come from the Summer 2026 Rec Guide and the 2026 camp handbook. The summer 2027 guide is not out yet. After RLIT, you go on a list for more volunteer hours. You may be asked back as a returning volunteer. The city's paid camp leader job starts at 15. So RLIT is a good first step. You need a bike and helmet for RLIT and Outdoor Education. Davis residents sign up first. Others sign up the next Monday. As of Oct 16, 2026, the volunteer page did not list camp volunteers.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "davis-seasonal-lifeguard-swim-instructor",
+  "name": "City of Davis Seasonal Lifeguard and Swim Instructor Jobs",
+  "org": "City of Davis Parks and Community Services (Aquatics)",
+  "regions": [
+   "davis",
+   "yolo"
+  ],
+  "city": "Davis, CA",
+  "type": "paid-youth-program",
+  "fields": [
+   "sports",
+   "education"
+  ],
+  "what_you_do": "As a lifeguard, you watch swimmers at city pools and help in emergencies. As a swim teacher, you teach kids in groups or one on one. You also enforce pool rules and help keep the pool clean and safe.",
+  "min_age": 14,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Lifeguard: 15 or older. You must pass a swim skills test before you start. When hired, you need Red Cross Lifeguard Training with First Aid, CPR and AED. You also need First Aid for Public Safety (Title 22). Swim Instructor: 15 or older, or 14 if you did the city's Junior Swim Instructor class. You must be at ease in the water. You need some time spent with kids. Babysitting, tutoring, camp or volunteering counts.",
+  "paid_type": "paid",
+  "pay_detail": "2026 rates: Lifeguard $17.83 to $18.27 per hour. Swim Instructor $16.97 to $17.39 per hour. Temporary part-time, no benefits.",
+  "season": "summer",
+  "duration": "2026 pool season: May 18 to September 7 for lifeguards. Swim lessons ran May 18 to August 16, 2026.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "No aquatics job is posted as of Oct 16, 2026, and 2027 dates are not posted. Last cycle: the Lifeguard (2026) and Swim Instructor (2026) postings both opened Jan 28, 2026. Lifeguard closed Apr 12, 2026 and Swim Instructor closed Apr 21, 2026. Expect new postings around late January 2027. A separate Off-Season Lifeguard posting ran Dec 3, 2024 to Jan 31, 2025.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online on the city's NEOGOV jobs page. Paper forms are not taken. If you get an interview, lifeguards must turn in their cards. The best fits get an interview, alone or in a small group. Everyone who applies hears back by email.",
+  "needs_work_permit": true,
+  "url": "https://www.governmentjobs.com/careers/davis/jobs/newprint/5215786",
+  "apply_url": "https://www.governmentjobs.com/careers/davis",
+  "sources_fetched": [
+   "https://www.governmentjobs.com/careers/davis/jobs/newprint/5215786",
+   "https://www.governmentjobs.com/careers/davis/jobs/newprint/5215801",
+   "https://www.governmentjobs.com/careers/davis/jobs/newprint/4749014",
+   "https://www.governmentjobs.com/careers/davis",
+   "https://www.cityofdavis.org/city-hall/human-resources/job-opportunities",
+   "https://www.cityofdavis.org/home/showpublisheddocument/21309/639229208666270000"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 1,
+  "notes": "2026 mandatory trainings: lifeguards the weekend of May 16 and 17 and the week of June 15 to 18; swim instructors May 2 and 3 and June 15 to 18. You must be free on those dates to be considered. Lifeguard shifts fall between 7:00 a.m. and 10:00 p.m., any day of the week, and planned vacation is capped at 14 days and must be approved before summer. To get certified first, the city's Red Cross Lifeguard Training course needs you to be 15 by the last day of the course (summer 2026 fee $275, per the Summer 2026 RecGuide). The Off-Season Lifeguard job (fall to spring) needs weekday morning and noon availability. Paid work under 18 needs a California work permit.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "davis-senior-high-cte-pathways",
@@ -24895,6 +25160,56 @@
   "priority": 2,
   "notes": "Page does not say which schools offer which pathways, or give grade or age rules. DJUSD office: (530) 757-5300. Related: the Internship and Career Development Course and the Summer Apprenticeship.",
   "verified_on_label": "Oct 7, 2026"
+ },
+ {
+  "id": "davis-summer-camp-recreation-leader",
+  "name": "City of Davis Summer Camp Recreation Leader Jobs",
+  "org": "City of Davis Parks and Community Services",
+  "regions": [
+   "davis",
+   "yolo"
+  ],
+  "city": "Davis, CA",
+  "type": "paid-youth-program",
+  "fields": [
+   "education",
+   "sports"
+  ],
+  "what_you_do": "You lead games, crafts and sports for kids ages 6 to 12 at city day camps. You help watch campers and teen helpers. You give simple first aid and keep camp safe.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Summer Playgrounds camps (Rainbow Summer, Summer Quest, Kids in the Kitchen, Arts and Crafts, Kinder Camp, PM Kids Club, Teen Camp): 15 or older before camp starts. Outdoor camps (Camp Putah, Summer Sampler, Backyard Adventures): 16 or older. You must own a bike and ride up to 10 miles a day. Both jobs need CPR and First Aid cards before camp starts.",
+  "paid_type": "paid",
+  "pay_detail": "2026: $16.97 per hour (Community Services Specialist I). Temporary part-time, no benefits.",
+  "season": "summer",
+  "duration": "June through August. 2026 camps ran ten weeks, June 15 to August 21, Monday to Friday. Summer Playgrounds shifts fall between 7:30 a.m. and 6:00 p.m. (schedules vary).",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "No camp job is posted as of Oct 16, 2026, and 2027 dates are not posted. Last cycle: Summer Playgrounds Recreation Leader (2026) opened Feb 16, 2026; the posting listed a final filing date of Friday, Feb 27 or until filled, and a closing date of Mar 3, 2026. Recreation Leader, Outdoor Education (2026) opened Feb 19, 2026 with an application deadline of Mar 16, 2026 or until filled. In 2025 these jobs opened Feb 4 and Jan 22. Expect new postings around late January to February 2027.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online on the city's NEOGOV jobs page. Paper forms are not taken. Good fits get an email to set up an interview. In 2026, Summer Playgrounds picks had to be free on Friday, March 13 for a group interview day.",
+  "needs_work_permit": true,
+  "url": "https://www.governmentjobs.com/careers/davis/jobs/newprint/5238545",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.governmentjobs.com/careers/davis/jobs/newprint/5238545",
+   "https://www.governmentjobs.com/careers/davis/jobs/newprint/5243401",
+   "https://www.governmentjobs.com/careers/davis/jobs/newprint/4819973",
+   "https://www.governmentjobs.com/careers/davis/jobs/newprint/4802295",
+   "https://www.governmentjobs.com/careers/davis/jobs/newprint/4802116",
+   "https://www.governmentjobs.com/careers/davis/jobs/newprint/5466779",
+   "https://www.governmentjobs.com/careers/davis/jobs/newprint/5047201",
+   "https://www.governmentjobs.com/careers/davis/jobs/newprint/5197822",
+   "https://www.governmentjobs.com/careers/davis/jobs/newprint/5197860",
+   "https://www.governmentjobs.com/careers/davis"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 1,
+  "notes": "In 2026, all staff had to come to training on June 6. More trainings ran June 1 to 13. Staff also met on Monday or Tuesday nights in summer and took online trainings. Other leader jobs open to teens: Inclusion Recreation Leader (2025 post: 15 for level I, 16 for level II, open Jan 22 to Apr 1, 2025). There is also a fall leader job for the Davis Children's Nutcracker. It needs you to be 15 with a work permit and pays $16.97 an hour. The 2026 post ran Aug 31 to Sep 28, 2026, and the work runs Nov 9 to Dec 13. Senior leader and Camp Putah leader jobs need you to be 18 or a high school grad. Paid work under 18 needs a California work permit.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "davis-teen-leadership-council",
@@ -28110,11 +28425,11 @@
   "fields": [
    "health"
   ],
-  "what_you_do": "You can join a year-long hospital volunteer program for teens in Mountain View and Los Gatos.",
+  "what_you_do": "In Mountain View you help as an escort or at the front desk. In Los Gatos you can also help nurses or rehab staff with simple tasks. You might restock linens or play board games with patients.",
   "min_age": 14,
   "max_age": null,
   "grades": "Finished 8th grade",
-  "who_can_apply": "Age 14 or older and done with 8th grade. One-year minimum. Competitive, with limited spots. No summer-only option.",
+  "who_can_apply": "Age 14 or older and done with 8th grade. One-year minimum. No summer internships or programs shorter than one year. Selection starts with an annual application seminar.",
   "paid_type": "unpaid",
   "pay_detail": "Unpaid volunteer program; no cost stated on the page",
   "season": "year-round",
@@ -28124,18 +28439,19 @@
   "deadline_text": "No application deadline posted. The page says to check back in mid-January 2027 for signup for the next Junior Application Seminar.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Attend the annual application seminar, then apply. Info on the El Camino Health junior volunteer page.",
+  "how_to_apply": "Go to the yearly sign up meeting first. Then apply. The steps are on the El Camino Health junior volunteer page.",
   "needs_work_permit": false,
-  "url": "https://elcaminohealth.org/node/121266",
+  "url": "https://www.elcaminohealth.org/community/volunteer/auxiliary/applications",
   "apply_url": null,
   "sources_fetched": [
-   "https://elcaminohealth.org/node/121266"
+   "https://www.elcaminohealth.org/community/volunteer/auxiliary/applications",
+   "https://www.elcaminohealth.org/community/volunteer/auxiliary/volunteer-opportunities"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "Hospital does not offer summer-only or programs shorter than one year. Locations are Mountain View and Los Gatos. Spots are limited (earlier check).",
-  "verified_on_label": "Oct 7, 2026"
+  "notes": "Read again on 2026-10-16. There is no summer only option. Once you are in, you can stay through the summer after you graduate. Call Mountain View at 650-940-7214 or Los Gatos at 408-866-3940. Check the page in mid January 2027 to sign up for the next junior meeting.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "el-cerrito-police-explorers",
@@ -42425,6 +42741,211 @@
   "notes": "Full-time hours, so no summer school or camp overlap. Competitive. A Kaiser story reportedly cited about 3,300 applicants for 318 spots, which is not confirmed here. Placement sites vary, so check that your area is offered. Kaiser may ask for COVID vaccine proof.",
   "verified_on_label": "Oct 7, 2026",
   "limited": true
+ },
+ {
+  "id": "kaiser-redwood-city-high-school-volunteer",
+  "name": "Kaiser Permanente Redwood City Medical Center High School Volunteer Program",
+  "org": "Kaiser Permanente Northern California",
+  "regions": [
+   "peninsula"
+  ],
+  "city": "Redwood City, CA (1100 Veterans Blvd)",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "You help patients, visitors and staff with friendly service at the hospital. Roles include office help, greeting and walking people where they need to go, and the front desk.",
+  "min_age": 16,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "High school students 16 years or older (the kp.org page says ages 16 to 17). Applications open only when shifts are available. One-year commitment.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": "One year",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Closed. On 2026-10-16 the page said: not accepting applications, check back in 2027. No 2027 date is posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "When it opens again, sign up on the Kaiser volunteer site under Redwood City. You need one or two references from a teacher, coach or tutor. Then you do a video interview. Next is a health check where you bring your shot records. A parent must come. Last are online trainings and an in person orientation. Phone: 650-299-3135.",
+  "needs_work_permit": false,
+  "url": "https://kpvolunteer.samaritan.com/custom/511/organization_details/1648",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://kpvolunteer.samaritan.com/custom/511/organization_details/1648",
+   "https://healthy.kaiserpermanente.org/northern-california/facilities/redwood-city-medical-center-100337/departments/volunteer-services-dlp-106471"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 3,
+  "notes": "Read on Kaiser's volunteer site and the kp.org Redwood City page on 2026-10-16. The two pages do not agree. kp.org says 4 hours a week for 6 months. The volunteer site says one year for high school students. Plan on one year. Kaiser does not offer job shadowing. The kp.org page also lists roles like the ER, art, pet visits and surgery. These differ by site.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "kaiser-san-jose-high-school-volunteer",
+  "name": "Kaiser Permanente San Jose Medical Center High School Volunteer Program",
+  "org": "Kaiser Permanente Northern California",
+  "regions": [
+   "san-jose",
+   "silicon-valley"
+  ],
+  "city": "San Jose, CA (250 Hospital Parkway)",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "You help patients and visitors with friendly service at the San Jose hospital. You do not need any medical skills.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Must be 16 years or older to apply. The time commitment is one year. One or two professional references from a teacher, coach, tutor or similar are required.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": "One year",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "Closed now. On 2026-10-16 the page said the high school program is full and applications are closed, and the High School Programs listing said they are not accepting high school applicants at this time. The page says applications for minors are accepted sporadically during the year when shifts open up. No reopening date is posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "When it opens again, apply on the Kaiser volunteer site under San Jose. You need one or two references. Then you do a video interview. Next is a health check where you bring your shot records. Bring a parent. Last are online trainings and an in person orientation. Volunteer office: 408-972-7230.",
+  "needs_work_permit": false,
+  "url": "https://kpvolunteer.samaritan.com/custom/511/organization_details/613",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://kpvolunteer.samaritan.com/custom/511/organization_details/613",
+   "https://healthy.kaiserpermanente.org/northern-california/facilities/san-jose-medical-center-100322"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 3,
+  "notes": "Read on Kaiser Permanente's volunteer site on 2026-10-16. The high school program is full. Check the page every few weeks, since minors are taken only when shifts are free. Kaiser does not offer job or clinical shadowing (physician, nursing, radiology, PT or OT). The kp.org page still links to volunteer-ncal.kaiserpermanente.org, which no longer works; use kpvolunteer.samaritan.com.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "kaiser-santa-clara-high-school-volunteer",
+  "name": "Kaiser Permanente Santa Clara Medical Center High School Volunteer Program",
+  "org": "Kaiser Permanente Northern California",
+  "regions": [
+   "silicon-valley"
+  ],
+  "city": "Santa Clara, CA (Homestead campus, 710 Lawrence Expressway)",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "You give a warm welcome to members and guests, greet people, and walk visitors through the medical center. No medical background is needed.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Volunteers 16 years and older. The page lists separate steps for 16 and 17 year olds. You must give at least one 4-hour shift each week, Monday to Friday between 8 am and 6 pm, for a planned one year commitment.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": "One 4-hour weekday shift a week for a planned one year",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline posted. On 2026-10-16 the Santa Clara High School Programs listing showed an Apply button.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply online on the Kaiser volunteer site. Look under High School Programs at Santa Clara Homestead. Then do a video interview. Next is a health check where you bring your shot records. A parent must come with you. Last are online trainings and an in person orientation. Volunteer office: 408-851-1717.",
+  "needs_work_permit": false,
+  "url": "https://kpvolunteer.samaritan.com/custom/511/affiliation_details/1157014",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://kpvolunteer.samaritan.com/custom/511/affiliation_details/1157014",
+   "https://kpvolunteer.samaritan.com/custom/511/organization_details/616",
+   "https://healthy.kaiserpermanente.org/northern-california/facilities/santa-clara-medical-center-100305"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Read on Kaiser's volunteer site on 2026-10-16. The kp.org Santa Clara page links to it at kpvolunteer.samaritan.com. Shifts are on weekdays only, 8 am to 6 pm. Most students would need a free period, a late afternoon or summer days. A background check with a Social Security number is only for people over 18. The page asks for shot records. It does not say which shots, if you need a TB test, or if there are fees. Kaiser does not offer job shadowing.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "kaiser-south-san-francisco-high-school-volunteer",
+  "name": "Kaiser Permanente South San Francisco High School Volunteer Program",
+  "org": "Kaiser Permanente Northern California",
+  "regions": [
+   "peninsula"
+  ],
+  "city": "South San Francisco, CA (1200 El Camino Real; also Daly City and San Bruno offices)",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "You help patients and visitors at the hospital or at nearby offices in Daly City and San Bruno. You work one 4 hour shift each week.",
+  "min_age": 16,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "High school students 16 years or older (the kp.org page says ages 16 to 17). Commit to one 4-hour shift a week, same day and time. The time commitment spans your high school career.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": "One 4-hour shift a week, for the rest of high school",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "Not open to high school students right now. On 2026-10-16 the page said high school applications are accepted sporadically during the year based on shift availability, and that after a system upgrade it is taking a very limited number of applications, with adults 18+ applying to Hospital Services. No date is posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Call Volunteer Services at 650-742-2678. Ask when high school spots will open. Then apply on the Kaiser volunteer site under South San Francisco.",
+  "needs_work_permit": false,
+  "url": "https://kpvolunteer.samaritan.com/custom/511/organization_details/619",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://kpvolunteer.samaritan.com/custom/511/organization_details/619",
+   "https://kpvolunteer.samaritan.com/custom/511/organization_details/1645",
+   "https://healthy.kaiserpermanente.org/northern-california/facilities/south-san-francisco-medical-center-100319/departments/volunteer-services-dlp-107706"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 3,
+  "notes": "Read on Kaiser Permanente's volunteer site and the kp.org page on 2026-10-16. The kp.org page says a few hours a week for a few months, but the volunteer site says the high school commitment spans your high school career; plan on the longer one. The Daly City Medical Offices page has the same high school rules. Kaiser does not offer job or clinical shadowing. The page does not list vaccine, TB test or fee rules.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "kaiser-walnut-creek-high-school-volunteer",
+  "name": "Kaiser Permanente Walnut Creek Medical Center High School Volunteer Program",
+  "org": "Kaiser Permanente Northern California",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Walnut Creek, CA (1425 South Main St)",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "You greet members and guests and walk visitors to where they need to go in the hospital. It is a nonclinical role, so there is no job or clinical shadowing.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "High school students age 15 or older. You must give one 3 to 4 hour shift a week on the same day and time, and stay in the program for your whole high school career. The high school track is at Walnut Creek Medical Center only.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": "One 3 to 4 hour shift a week, for the rest of high school",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline posted. On 2026-10-16 the Walnut Creek High School Programs listing showed an Apply button, but its Status line was blank.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Go to the Kaiser volunteer site. Open High School Programs at Walnut Creek and click Apply. You will log in or sign up as a new volunteer. Questions? Call 925-295-5487.",
+  "needs_work_permit": false,
+  "url": "https://kpvolunteer.samaritan.com/custom/511/affiliation_details/4527002",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://kpvolunteer.samaritan.com/custom/511/affiliation_details/4527002",
+   "https://kpvolunteer.samaritan.com/custom/511/organization_details/622",
+   "https://kpvolunteer.samaritan.com/custom/511/org_search",
+   "https://healthy.kaiserpermanente.org/northern-california/facilities/walnut-creek-medical-center-100313/departments/volunteer-services-dlp-106238"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Read on Kaiser's volunteer site on 2026-10-16. kp.org links to it at kpvolunteer.samaritan.com. This is a long commitment. The page says it lasts all through high school. The page does not list shots, a TB test or fees. It does not say if a parent must sign. Kaiser does not offer job shadowing. Adult volunteers here also cover nearby offices. The high school track is at Walnut Creek only. Kaiser's old volunteer link no longer works, so use kpvolunteer.samaritan.com. The Pleasanton and San Ramon offices said on 2026-10-16 that they are not taking high school students right now.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "kane-county-forest-preserve-volunteer-workdays",
@@ -71362,6 +71883,47 @@
   "verified_on_label": "Oct 14, 2026"
  },
  {
+  "id": "oconnor-hospital-volunteer",
+  "name": "O'Connor Hospital Volunteers (students 15 and up)",
+  "org": "Santa Clara Valley Healthcare, O'Connor Hospital",
+  "regions": [
+   "san-jose",
+   "silicon-valley"
+  ],
+  "city": "San Jose, CA (2105 Forest Ave)",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "You give kind and friendly service to patients, visitors and staff at a county hospital. Training for your service area happens on your first shift.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Students age 15 or older and adults. You must volunteer for 6 months or more. No summer-only volunteering.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": "6 months or more",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline posted. The page invites applications online with no window stated (read 2026-10-16).",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply online, then email the volunteer reference form to OCHVolunteer@hhs.sccgov.org. You will be contacted within two weeks for an interview. Then a 2-hour orientation, background check, health screening clearance and badging. Phone: 408-947-2830.",
+  "needs_work_permit": false,
+  "url": "https://och.scvh.org/giving-volunteering/volunteer-services/how-become-volunteer",
+  "apply_url": "https://www.volgistics.com/appform/1363522158",
+  "sources_fetched": [
+   "https://och.scvh.org/giving-volunteering/volunteer-services/how-become-volunteer",
+   "https://och.scvh.org/giving-volunteering/volunteer-services"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Read on the official O'Connor Hospital page on 2026-10-16. Health screening asks for proof of a COVID-19 vaccine or booster, a yearly flu shot, immunity to measles, mumps, rubella and varicella, a Tdap shot, and a TB test within the past 3 months (then yearly). Start gathering shot records early. The page does not state weekly shift length or any fee. O'Connor is a sister hospital of Santa Clara Valley Medical Center. The email link on the page has a typo, so type OCHVolunteer@hhs.sccgov.org by hand.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
   "regions": [
    "orange-county"
   ],
@@ -80807,6 +81369,46 @@
   "priority": 2,
   "notes": "Seniors only, so juniors should plan for next fall. Test scores are optional. Homeschooled students may apply.",
   "verified_on_label": "Oct 7, 2026"
+ },
+ {
+  "id": "regional-medical-center-san-jose-junior-volunteer",
+  "name": "Regional Medical Center Junior Volunteer Program",
+  "org": "Santa Clara Valley Healthcare, Regional Medical Center",
+  "regions": [
+   "san-jose",
+   "silicon-valley"
+  ],
+  "city": "San Jose, CA",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "For your first 100 hours, you work at the front desks or the volunteer office. Later tasks include helping patients go home, bringing food, answering phones and handing out clothes.",
+  "min_age": 16,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "High school students ages 16 to 17. You must give at least one 3 to 4 hour shift each week, for at least 144 hours and 12 months in a row. No summer-only or school-break-only volunteering. Spanish and Vietnamese skills are a plus.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": "At least 12 consecutive months and 144 hours",
+  "status": "opens-soon",
+  "opens_iso": "2027-01-01",
+  "deadline_text": "Closed now. The junior application window opens January 1, 2027 and closes January 7, 2027. Applications sent at other times are not considered.",
+  "deadline_iso": "2027-01-07",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply online between Jan 1 and Jan 7, 2027. Send the reference form to RMCVolunteer@hhs.sccgov.org. If you are a good fit, you get a phone interview. Then you do an online orientation, a health check, a background check and training at the hospital.",
+  "needs_work_permit": false,
+  "url": "https://rmc.scvh.org/giving-volunteering/volunteer-services",
+  "apply_url": "https://www.volgistics.com/appform/1820749004",
+  "sources_fetched": [
+   "https://rmc.scvh.org/giving-volunteering/volunteer-services"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Read on the official Regional Medical Center page on 2026-10-16. You must be fully vaccinated and upload immunization records and a TB test for the health clearance. After 6 months and 100 hours you may qualify for shadowing. Have your reference form ready before Jan 1 since the window is only one week. Benefits include free parking and a free flu shot after one year.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "reno-parks-junior-lifeguards",
@@ -93418,6 +94020,45 @@
   "verified_on_label": "Oct 10, 2026"
  },
  {
+  "id": "st-louise-regional-hospital-volunteer",
+  "name": "St. Louise Regional Hospital Volunteers (students 16 and up)",
+  "org": "Santa Clara Valley Healthcare, St. Louise Regional Hospital",
+  "regions": [
+   "silicon-valley"
+  ],
+  "city": "Gilroy, CA",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "You help patients, families and staff. You might work at the front desk, in the gift shop, in some care areas or at community events.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Students age 16 or older and adults. No summer-only volunteering.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline posted. The page links to an online application with no window stated (read 2026-10-16).",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the volunteer form online. Questions? Call the volunteer office at 408-852-2521.",
+  "needs_work_permit": false,
+  "url": "https://slrh.scvh.org/giving-volunteering",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://slrh.scvh.org/giving-volunteering"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Read on the official St. Louise Regional Hospital page on 2026-10-16. It is South County's community hospital in Gilroy. The page does not state hours, commitment length, health screening, TB test or fees; ask the volunteer office. The page shows an email address whose link points to a different address, so call the phone number instead.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
   "grades": null,
   "opens_iso": "2026-11-02",
   "apply_url": null,
@@ -94516,6 +95157,165 @@
    "https://www.sussex.nj.us/CivicAlerts.asp?AID=105"
   ],
   "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "sutter-eden-medical-center-volunteer",
+  "name": "Sutter Eden Medical Center Auxiliary Volunteer (16 and up)",
+  "org": "Sutter Health, Eden Medical Center Auxiliary",
+  "regions": [
+   "east-bay"
+  ],
+  "city": "Castro Valley, CA (20103 Lake Chabot Road)",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "You help patients and visitors at the hospital Information Desk or in the Gift Shop. Many different shifts are open.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Volunteers 16 years and older. No school or residency rule is stated.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline posted. The listing said Actively recruiting on 2026-10-16.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Call the hospital's volunteer office at 510-727-3080. Ask how to apply.",
+  "needs_work_permit": false,
+  "url": "https://www.sutterhealth.org/volunteering/opportunities/volunteer-at-eden-medical-center-1079780181",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.sutterhealth.org/volunteering/opportunities/volunteer-at-eden-medical-center-1079780181",
+   "https://www.sutterhealth.org/volunteering/results"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Read on the Sutter Health page on 2026-10-16. The page also names a family support role in the ER. But Sutter's own listing for that role says 18 and up. So teens should expect the front desk or the gift shop. The page does not list hours, how long you must stay, a health check, a TB test or fees. Ask the volunteer office.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "sutter-mills-peninsula-youth-volunteer",
+  "name": "Youth Volunteer at Sutter Mills-Peninsula Medical Center",
+  "org": "Sutter Health, Mills-Peninsula Medical Center",
+  "regions": [
+   "peninsula"
+  ],
+  "city": "Burlingame, CA (1501 Trousdale Drive) and San Mateo, CA (100 South San Mateo Drive)",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "You help patients of all ages and hospital staff after school, on weekends, or during summer and school breaks. You are interviewed before you start.",
+  "min_age": 16,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "High school students 16 and 17 years old. You need a consent form signed by a parent or guardian and one signed by a teacher.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": "At least one 3 to 4 hour visit a week, with a one-year minimum commitment",
+  "status": "opens-soon",
+  "opens_iso": "2026-11-01",
+  "deadline_text": "Applications open for two weeks twice a year: May 1 to 15 and November 1 to 15. Next window: November 1, 2026 to November 15, 2026.",
+  "deadline_iso": "2026-11-15",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the online form during the two week window. Add the parent form and the teacher form. Both are on the page. Then you do an interview, online training and health tests. Questions? Email MPHSvolunteerservices@sutterhealth.org or call 650-696-2465 and press 2.",
+  "needs_work_permit": false,
+  "url": "https://www.sutterhealth.org/volunteering/opportunities/youth-volunteer-at-sutter-mills-peninsula-medical-center-1096205778",
+  "apply_url": "https://www.volgistics.com/appform/1129489476",
+  "sources_fetched": [
+   "https://www.sutterhealth.org/volunteering/opportunities/youth-volunteer-at-sutter-mills-peninsula-medical-center-1096205778"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 1,
+  "notes": "Read on the official Sutter Health listing on 2026-10-16. The page gives the windows as May 1 to 15 and November 1 to 15 every year, without a year; the next one falls on Nov 1 to 15, 2026. Applications outside the windows are not described. Get the parent and teacher forms signed before Nov 1 so you can apply on day one. Health testing is required but the listing does not list which shots or tests.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "sutter-pamf-mountain-view-sunnyvale-student-volunteer",
+  "name": "Student Volunteer at PAMF Mountain View and Sunnyvale Centers (Volunteer On Demand)",
+  "org": "Sutter Health, Palo Alto Medical Foundation (PAMF)",
+  "regions": [
+   "silicon-valley"
+  ],
+  "city": "Mountain View, CA (701 East El Camino Real) and Sunnyvale, CA (301 Old San Francisco Road)",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "You greet patients and work at the front desk. You help people find their way and push wheelchairs a little. You also stock magazines and help with lost and found.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Age 16 and older. You are asked to make a six-month commitment.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": "Six months, weekday 4-hour shifts (8 am to 12 pm or 12 pm to 4 pm)",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline posted. Both listings said Actively recruiting on 2026-10-16.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use the Apply now link on either page. Questions? Email PAMFSOUTHBAYADMIN@sutterhealth.org.",
+  "needs_work_permit": false,
+  "url": "https://www.sutterhealth.org/volunteering/opportunities/student-volunteer-at-pamf-mountain-view-center-1096205788",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.sutterhealth.org/volunteering/opportunities/student-volunteer-at-pamf-mountain-view-center-1096205788",
+   "https://www.sutterhealth.org/volunteering/opportunities/student-volunteer-at-pamf-sunnyvale-center-1096205777"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Read on the official Sutter Health listings on 2026-10-16. These are outpatient medical centers, not hospitals. Shifts are Monday to Friday only, so this fits summer or students with free weekday time. The Sunnyvale and Mountain View listings use the same text and the same contact. They do not state health screening, TB test or fees.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "sutter-pamf-palo-alto-student-volunteer",
+  "name": "Student Volunteer at PAMF Palo Alto Center (Volunteer On Demand)",
+  "org": "Sutter Health, Palo Alto Medical Foundation (PAMF)",
+  "regions": [
+   "peninsula",
+   "silicon-valley"
+  ],
+  "city": "Palo Alto, CA (795 El Camino Real)",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "You greet patients and work at the front desk. You help people find their way and help with wheelchairs. You help patients feel at ease with small acts of kindness, like a cup of water.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Age 16 and older. No school or residency rule is stated.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": "Weekday 4-hour shifts (8 am to 12 pm or 12 pm to 4 pm)",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline posted. The listing said Actively recruiting on 2026-10-16.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use the Apply now link on the page. Questions? Email pamfpeninsulaadmin@sutterhealth.org.",
+  "needs_work_permit": false,
+  "url": "https://www.sutterhealth.org/volunteering/opportunities/student-volunteer-at-pamf-palo-alto-center-1096205779",
+  "apply_url": "https://feedback.sutterhealth.org/f/142358/3ec2/",
+  "sources_fetched": [
+   "https://www.sutterhealth.org/volunteering/opportunities/student-volunteer-at-pamf-palo-alto-center-1096205779"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Read on the official Sutter Health listing on 2026-10-16. This is an outpatient medical center, not a hospital. Shifts are Monday to Friday only, 8 am to 12 pm or 12 pm to 4 pm, with no weekend hours, so it fits summer or students with free weekday time. The listing does not state a minimum commitment, health screening, TB test or fees.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "svcte-silicon-valley-career-technical-education",
@@ -104586,6 +105386,96 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "west-sac-lifeguard-swim-instructor",
+  "name": "City of West Sacramento Lifeguard/Swim Instructor",
+  "org": "City of West Sacramento Parks and Recreation",
+  "regions": [
+   "yolo",
+   "sacramento"
+  ],
+  "city": "West Sacramento, CA",
+  "type": "paid-youth-program",
+  "fields": [
+   "sports"
+  ],
+  "what_you_do": "You watch swimmers at the city pool during swim lessons, public swim and special events. You enforce pool rules, give first aid, help in emergencies and do some pool cleanup.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "At least 15 when you start. Before you start, you need cards for Lifeguard Training, CPR for the Professional Rescuer, First Aid and Title 22. A Water Safety Instructor card is a big plus. Past lifeguard work helps, but you do not need it.",
+  "paid_type": "paid",
+  "pay_detail": "$17.25 to $18.75 per hour (2026 posting). Temporary, extra help.",
+  "season": "summer",
+  "duration": null,
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Not posted for 2027 yet. Last cycle: the 2026 Lifeguard/Swim Instructor posting opened Feb 5, 2026 and closed May 3, 2026. The 2023 posting ran Mar 2 to May 31, 2023. Expect a new posting around February 2027.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the whole city job form online on NEOGOV. Add a resume. The city reads every form. The best fits go on a hiring list. The top people move to the next step.",
+  "needs_work_permit": true,
+  "url": "https://www.governmentjobs.com/careers/westsacramento/jobs/newprint/5226405",
+  "apply_url": "https://www.governmentjobs.com/careers/westsacramento",
+  "sources_fetched": [
+   "https://www.governmentjobs.com/careers/westsacramento/jobs/newprint/5226405",
+   "https://www.governmentjobs.com/careers/westsacramento/classspecs/newprint/1281841",
+   "https://www.governmentjobs.com/careers/westsacramento/jobs/newprint/3942312",
+   "https://www.governmentjobs.com/careers/westsacramento"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "The posting does not list hours or season dates, so ask Parks and Recreation at (916) 617-4567. Get your lifeguard certificates before you apply, since they are required before you start. Paid work under 18 needs a California work permit. Teens 14 to 16 who are too young for this job can look at the city's unpaid Teen Heroes summer camp program.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "west-sac-recreation-leader",
+  "name": "City of West Sacramento Recreation Leader (extra help)",
+  "org": "City of West Sacramento Parks and Recreation",
+  "regions": [
+   "yolo",
+   "sacramento"
+  ],
+  "city": "West Sacramento, CA",
+  "type": "paid-youth-program",
+  "fields": [
+   "sports",
+   "education"
+  ],
+  "what_you_do": "You plan and lead activities like sports, arts and crafts, science, nature and drama at parks, schools and rec centers. Summer Sports Camp leaders teach kids ages 5 to 12 basic sports skills and teamwork.",
+  "min_age": 17,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "At least 17 at the time of employment, with one year of experience working with youth or the public. Some assignments need CPR and First Aid certificates before you start. You must pass a fingerprint check and drug screen before you start.",
+  "paid_type": "paid",
+  "pay_detail": "$17.00 to $18.50 per hour (2026 postings). Part-time extra help.",
+  "season": "summer",
+  "duration": null,
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "No Recreation Leader job is posted as of Oct 16, 2026. Last cycle: Recreation Leader, Customer Service ran Feb 5 to Feb 26, 2026 and again Apr 23 to May 22, 2026. Recreation Leader, Sports Camp Instructor ran Mar 3 to Jun 23, 2026. Expect new postings around February to April 2027.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the whole city job form online on NEOGOV. Add a resume and answer the extra questions. The city reads every form. The top people are sent to the department.",
+  "needs_work_permit": true,
+  "url": "https://www.governmentjobs.com/careers/westsacramento/jobs/newprint/5256148",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.governmentjobs.com/careers/westsacramento/jobs/newprint/5256148",
+   "https://www.governmentjobs.com/careers/westsacramento/jobs/newprint/5226361",
+   "https://www.governmentjobs.com/careers/westsacramento/jobs/newprint/5319842",
+   "https://www.governmentjobs.com/careers/westsacramento/classspecs/newprint/1245926",
+   "https://www.governmentjobs.com/careers/westsacramento/classspecs/newprint/1440955",
+   "https://www.governmentjobs.com/careers/westsacramento/jobs/newprint/2194992",
+   "https://www.governmentjobs.com/careers/westsacramento"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "The city also has a Recreation Aide job for ages 15 and up. It paid $17.00 an hour in the 2022 job sheet. But the last Recreation Aide post on the city jobs page ran Aug 29 to Sep 19, 2018. Lead, senior and KidZone leader jobs need a high school diploma or age 18. A 17 year old still needs a California work permit for paid work.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
   "id": "west-sac-teen-heroes",
   "name": "Teen Heroes",
   "org": "City of West Sacramento Parks and Recreation",
@@ -105264,6 +106154,47 @@
    "https://www.wilmettelibrary.info/about-us/volunteering"
   ],
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "winters-seasonal-lifeguard",
+  "name": "City of Winters Seasonal Lifeguard",
+  "org": "City of Winters",
+  "regions": [
+   "yolo"
+  ],
+  "city": "Winters, CA",
+  "type": "paid-youth-program",
+  "fields": [
+   "sports"
+  ],
+  "what_you_do": "You watch swimmers and enforce pool rules at the Bobbie Greenwood Community Swim Center. You help open and close the pool, keep it clean and safe, and do water rescues with first aid and CPR when needed.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "15 or older. You need a lifeguard card (with deep water) and CPR and AED for the Professional Rescuer. You can get them within 30 days after you are hired. First Aid for Public Safety (Title 22) is a plus. You must pass a fingerprint check and a TB skin test. You must be able to work early, late, on holidays and on weekends.",
+  "paid_type": "paid",
+  "pay_detail": "$18.00 to $20.00 per hour (2026 posting), starting at $18. Seasonal, no benefits. The city registers you for and pays for the certification class.",
+  "season": "summer",
+  "duration": "Summer pool season. Exact dates are not on the posting.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Not posted for 2027 yet. Last cycle: the 2026 Lifeguard posting opened Jan 28, 2026 and closed Mar 1, 2026 at 1:00 p.m. Expect a new posting around late January 2027.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online on the city's NEOGOV jobs page. Answer the extra questions. One asks if you can pass the swim test. You swim 150 yards, tread water 2 minutes with only your legs and swim 50 yards. Then you bring up a 10 pound object in a timed test. Training is required.",
+  "needs_work_permit": true,
+  "url": "https://www.governmentjobs.com/careers/cityofwinters/jobs/newprint/5215040",
+  "apply_url": "https://www.governmentjobs.com/careers/cityofwinters",
+  "sources_fetched": [
+   "https://www.governmentjobs.com/careers/cityofwinters/jobs/newprint/5215040",
+   "https://www.governmentjobs.com/careers/cityofwinters",
+   "https://www.cityofwinters.org/Jobs.aspx"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "A good choice if you are not certified yet, because the city pays for the certification class. The posting window was short in 2026 (about one month), so check in January. Lifeguards are mandated reporters and must finish that training in the first two weeks. Paid work under 18 needs a California work permit.",
+  "verified_on_label": "Oct 16, 2026"
  },
  {
   "id": "wisconsin-4h-agriculture-ambassadors",
@@ -106379,6 +107310,93 @@
   "verified_on_label": "Oct 7, 2026"
  },
  {
+  "id": "ymca-east-bay-camp-loma-mar-camp-assistant",
+  "name": "Camp Assistant (CA), YMCA Camp Loma Mar",
+  "org": "YMCA of the East Bay",
+  "regions": [
+   "east-bay",
+   "oakland",
+   "peninsula"
+  ],
+  "city": "Loma Mar, CA (YMCA Camp Loma Mar, 9900 Pescadero Creek Road)",
+  "type": "leadership",
+  "fields": [
+   "education"
+  ],
+  "what_you_do": "You spend two weeks at an overnight camp getting ready to work there. You train in child development, child abuse prevention, and planning activities for kids, and you shadow camp staff.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Rising 12th grade (12th grade in fall 2027)",
+  "who_can_apply": "Rising seniors (12th grade in fall 2027). Full acceptance depends on references and an interview. No city or residency rule is stated.",
+  "paid_type": "not-stated",
+  "pay_detail": "The full CA program cost is not stated. The application asks for a $25 refundable deposit. Campership (financial aid) applications are part of camp registration.",
+  "season": "summer",
+  "duration": "Two weeks: June 20 to 25 and June 27 to July 2, 2027.",
+  "status": "opens-soon",
+  "opens_iso": "2027-01-01",
+  "deadline_text": "The 2027 CA application opens January 1, 2027. Interviews are scheduled in spring 2027. The session runs June 20 to July 2, 2027. No closing date is posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Starting January 1, 2027, send in the CA form on the camp's sign up site. Pay a $25 deposit, which you can get back. You need both the form and an interview.",
+  "needs_work_permit": false,
+  "url": "https://www.ultracamp.com/info/sessionDetail.aspx?idCamp=1481&idSession=592745&campCode=M8R",
+  "apply_url": "https://www.ultracamp.com/info/sessionDetail.aspx?idCamp=1481&idSession=592745&campCode=M8R",
+  "sources_fetched": [
+   "https://www.ultracamp.com/info/sessionDetail.aspx?idCamp=1481&idSession=592745&campCode=M8R",
+   "https://www.ultracamp.com/info/upcomingSessions.aspx?idCamp=1481&campCode=M8R",
+   "https://www.ymcaeastbay.org/youth-development/camp-loma-mar/summer-camp"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Run by YMCA of the East Bay. One line of the 2027 CA listing still says '12th grade in Fall of 2026' while its title says fall 2027; confirm with the camp. In 2026 the camp sold round-trip buses from the Oakland YMCA and the EM Downer YMCA ($150), and LITs and CAs went home Friday and Saturday nights between weeks; 2027 bus details are not posted. Teens entering 10th or 11th grade can apply to Leaders in Training (LIT) instead. Contact: clmteam@ymcaeastbay.org.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "ymca-east-bay-camp-loma-mar-leaders-in-training",
+  "name": "Leaders in Training (LIT), YMCA Camp Loma Mar",
+  "org": "YMCA of the East Bay",
+  "regions": [
+   "east-bay",
+   "oakland",
+   "peninsula"
+  ],
+  "city": "Loma Mar, CA (YMCA Camp Loma Mar, 9900 Pescadero Creek Road)",
+  "type": "leadership",
+  "fields": [
+   "education"
+  ],
+  "what_you_do": "You spend two weeks at an overnight camp in the redwoods learning to lead. You plan and run activities for younger campers, shadow camp staff, and learn how an overnight camp works.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Rising 10th or 11th grade (10th or 11th grade in fall 2027)",
+  "who_can_apply": "Teens entering 10th or 11th grade. Full acceptance depends on references and an interview. No city or residency rule is stated.",
+  "paid_type": "not-stated",
+  "pay_detail": "The full LIT program cost is not stated. The application asks for a $25 refundable deposit. Campership (financial aid) applications are part of camp registration, and YMCA of the East Bay members get a camp discount.",
+  "season": "summer",
+  "duration": "Two weeks: July 11 to 16 and July 18 to 23, 2027.",
+  "status": "opens-soon",
+  "opens_iso": "2027-01-01",
+  "deadline_text": "The 2027 LIT application opens January 1, 2027. Interviews are scheduled in spring 2027. The session runs July 11 to 23, 2027. No closing date is posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Starting January 1, 2027, send in the LIT form on the camp's sign up site. Pay a $25 deposit, which you can get back. To get in, you need good references and an interview.",
+  "needs_work_permit": false,
+  "url": "https://www.ymcaeastbay.org/youth-development/camp-loma-mar/summer-camp",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.ymcaeastbay.org/youth-development/camp-loma-mar/summer-camp",
+   "https://www.ymcaeastbay.org/youth-development/camp-loma-mar",
+   "https://www.ultracamp.com/info/upcomingSessions.aspx?idCamp=1481&campCode=M8R",
+   "https://www.ultracamp.com/info/sessionDetail.aspx?idCamp=1481&idSession=592753&campCode=M8R"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Camp Loma Mar is run by the YMCA of the East Bay, not the San Francisco Y. The only LIT price posted is the $25 deposit. So ask the camp about the full fee and aid before you apply. A regular one week camp session in 2027 costs $1,065. Rising 12th graders can apply to be a Camp Assistant instead. The camp also plans a teen weekend for future camp leaders this winter or spring. Dates are not posted yet. Contact: clmteam@ymcaeastbay.org.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
   "id": "ymca-metro-atlanta-teen-leaders-club",
   "name": "Teen Leaders Club and Changemakers",
   "org": "YMCA of Metro Atlanta",
@@ -106498,6 +107516,129 @@
   "verified_on_label": "Oct 7, 2026"
  },
  {
+  "id": "ymca-sf-camp-jones-gulch-lit-cit",
+  "name": "Leaders-In-Training (LIT) and Counselors-In-Training (CIT), YMCA Camp Jones Gulch",
+  "org": "YMCA of Greater San Francisco",
+  "regions": [
+   "san-francisco",
+   "peninsula"
+  ],
+  "city": "La Honda, CA (YMCA Camp Jones Gulch, 11000 Pescadero Road)",
+  "type": "leadership",
+  "fields": [
+   "education"
+  ],
+  "what_you_do": "LITs (ages 14 to 15) do camp activities plus leadership training, ropes courses and a legacy project. CITs (age 16) stay two weeks: first they train, then they help lead a cabin of younger campers.",
+  "min_age": 14,
+  "max_age": 16,
+  "grades": null,
+  "who_can_apply": "LIT: for 14 and 15 year olds. CIT: for 16 year olds. No city or residency rule is stated. The page does not say whether a CIT must have done LIT first.",
+  "paid_type": "fee-based",
+  "pay_detail": "Each session needs a $150 non-refundable deposit at registration. The full price is shown only in the online registration system, not on the page. Financial assistance is available.",
+  "season": "summer",
+  "duration": "LIT: one 6-day, 5-night session (Sunday to Friday). CIT: two weeks.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Summer 2026: LIT sessions ran weekly from June 14 to Aug 7, 2026. CIT Session A ran June 28 to July 10 and Session B ran July 19 to 31, 2026. Summer 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Register online through the YMCA of Greater San Francisco registration site (the Register button on the overnight camps page) and pay the $150 deposit per session. Camp office: (650) 747-1200, Monday to Friday, 10:00 a.m. to 4:00 p.m.",
+  "needs_work_permit": false,
+  "url": "https://www.ymcasf.org/program/overnight-summer-camps/",
+  "apply_url": "https://community.ymcasf.org/s/registration?course=Overnight+Camps+-+Camp+Jones+Gulch",
+  "sources_fetched": [
+   "https://www.ymcasf.org/program/overnight-summer-camps/",
+   "https://www.ymcasf.org/program/summer-camp-outdoor-programs/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "This is a teen camp you pay for, not a job. To ask for aid, email the YMCA form with two kinds of proof of income. The page says replies take about 15 business days. Families can ask for up to 4 cabin mates who are within 2 years of age. Deposits are not paid back.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "ymca-sf-teen-volunteer",
+  "name": "Volunteer at the YMCA of Greater San Francisco (ages 15 and up)",
+  "org": "YMCA of Greater San Francisco",
+  "regions": [
+   "san-francisco",
+   "peninsula"
+  ],
+  "city": "San Francisco, CA (and other YMCA of Greater San Francisco branches)",
+  "type": "volunteer",
+  "fields": [
+   "social-impact",
+   "education"
+  ],
+  "what_you_do": "You help at a YMCA branch with youth programs, events, older adults or special drives. You can count the time toward school service hours.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Anyone at least 15 years old. No experience is needed. Some roles need a background check, and new volunteers go through a reference check.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role.",
+  "season": "year-round",
+  "duration": "No daily minimum. The schedule is set with you.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Apply any time. No deadline is posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Download the Volunteer Application form from the page and email the completed PDF to volunteer@ymcasf.org. Staff follow up within 2 business days. You can name a preferred branch and program area.",
+  "needs_work_permit": false,
+  "url": "https://www.ymcasf.org/get-involved/volunteer/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.ymcasf.org/get-involved/volunteer/",
+   "https://www.ymcasf.org/teens/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "The FAQ says students can earn school service hours here. Your references are checked online, so it depends on how fast they reply. The Y has branches in San Francisco, on the Peninsula and in Marin. The page also offers group volunteering for 3 or more people.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "ymca-sf-youth-empowerment-fund",
+  "name": "Youth Empowerment Fund (YEF) Grants",
+  "org": "Urban Services YMCA, YMCA of Greater San Francisco (funded by SF DCYF)",
+  "regions": [
+   "san-francisco"
+  ],
+  "city": "San Francisco, CA (Urban Services YMCA, 1530 Buchanan St.)",
+  "type": "leadership",
+  "fields": [
+   "social-impact",
+   "business-finance"
+  ],
+  "what_you_do": "You plan a youth-led project to help your San Francisco community or start a business, then apply for a grant. Picked projects can get up to $10,000, and you run the project and report on spending.",
+  "min_age": 13,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Young people in San Francisco: teens 13 to 18 and young adults 18 to 24. Each project needs an Adult Ally, who is a mentor. It also needs a Fiscal Sponsor. That is a group that pays project costs, and YEF pays it back.",
+  "paid_type": "unpaid",
+  "pay_detail": "Not a paid job. Grants pay for your project: up to $10,000 per round, or $500 to $2,000 for a mini grant.",
+  "season": "school-year",
+  "duration": "Spring 2027 grants: spending starts about March 1, 2027; the grant ends June 7, 2027.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Fall 2026 round closed Sept 21, 2026. Spring 2027 round: application releases in November 2026 (exact day not posted) and is due Monday, Jan 4, 2027. Interviews January to February 2027.",
+  "deadline_iso": null,
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the online grant form on the YEF page when the Spring 2027 round opens. You will have an interview. If you are picked, you go to a required meeting and turn in some forms.",
+  "needs_work_permit": false,
+  "url": "https://www.ymcasf.org/program/youth-empowerment-fund/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.ymcasf.org/program/youth-empowerment-fund/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Grants can go to what youth need, projects that fix a problem in your area, or a new business. Teens also serve as YEF Community Funders. They decide which teen projects get grants. The page lists their schools but not how to join. In 2026, small grants of $500 to $2,000 ran July 17 to Aug 31, 2026. They were for supplies and first time projects only. Office hours at Urban Services YMCA are Monday and Wednesday, 1:00 to 4:00 p.m. Other days are by appointment only. Contact Amber Ly at aly@ymcasf.org.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
   "id": "ymca-silicon-valley-camp-campbell-cabin-leader",
   "name": "Outdoor Science School Cabin Leader (Camp Campbell)",
   "org": "YMCA of Silicon Valley",
@@ -106536,6 +107677,134 @@
   "priority": 2,
   "notes": "Camp Campbell is at 16275 Highway 9, Boulder Creek, CA 95006, per the cabin-leaders page. This is an unpaid volunteer role, so no work permit is needed. The same YMCA's Youth and Government program is already in ymca-youth-and-government-ca.json. Leaders in Training is also listed on the leadership page, but its age and details are not stated, so it is not a card.",
   "verified_on_label": "Oct 7, 2026"
+ },
+ {
+  "id": "ymca-silicon-valley-mt-madonna-high-school-volunteer",
+  "name": "High School Volunteer and Teen Center Tutor (Mt. Madonna YMCA, Morgan Hill)",
+  "org": "YMCA of Silicon Valley",
+  "regions": [
+   "silicon-valley"
+  ],
+  "city": "Morgan Hill, CA (171 W Edmundson Ave)",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "social-impact",
+   "sports"
+  ],
+  "what_you_do": "You help at the teen center with games and homework. You can also help at the senior center, help coach youth sports or tutor students.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "High school students. The postings list no other rules.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. The posting says the hours count as community service hours.",
+  "season": "year-round",
+  "duration": "Teen center tutoring is Monday, Wednesday, Thursday and Friday; hours to be set.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "The volunteer posting runs June 1, 2026 to Dec 31, 2027 (9 spots listed). The tutor posting runs Sept 1, 2026 to Sept 1, 2027 (24 spots listed).",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Open the posting on the YMCA volunteer site and click the Volunteer button. Questions about tutoring? Contact Liz Burke at elizabeth.burke@ymcasv.org or 408-310-4257.",
+  "needs_work_permit": false,
+  "url": "https://ymcasv.volunteermatters.org/project-catalog/262",
+  "apply_url": "https://ymcasv.volunteermatters.org/project-catalog/262",
+  "sources_fetched": [
+   "https://ymcasv.volunteermatters.org/project-catalog/262",
+   "https://ymcasv.volunteermatters.org/project-catalog/261",
+   "https://ymcasv.volunteermatters.org/project-catalog",
+   "https://www.ymcasv.org/volunteering"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "The posting lists the City of Morgan Hill as a partner. It does not give a minimum age or say if there is a background check. So ask before you sign up. The same site marks other roles as Great for Teens. One is a youth basketball coach at the El Camino YMCA in Mountain View. That season runs Jan 11 to March 27 (no year given). It is 1 hour of practice a week plus a 1 hour Saturday game.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "ymca-silicon-valley-teen-youth-councils",
+  "name": "YTI Youth Council and Friday Night Live Council (YMCA of Silicon Valley)",
+  "org": "YMCA of Silicon Valley (Friday Night Live with Asian American Community Involvement)",
+  "regions": [
+   "silicon-valley"
+  ],
+  "city": "Mountain View, CA (El Camino YMCA) and Morgan Hill, CA (Centennial Recreation Center)",
+  "type": "leadership",
+  "fields": [
+   "health",
+   "social-impact"
+  ],
+  "what_you_do": "You join a teen group that meets twice a month. Members plan events. They also make short ads and podcasts about teen health, like mental health and drug use.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "YTI Youth Council: 8 to 12. Friday Night Live Council: 6 to 12.",
+  "who_can_apply": "YTI Youth Council: teens in grades 8 to 12; meets in Mountain View. Friday Night Live Council: grades 6 to 12 in the Gilroy and Morgan Hill area. The application asks for a parent's contact information.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. No cost is stated.",
+  "season": "school-year",
+  "duration": "In 2025-26, YTI ran August 2025 to May 2026 and FNL ran September 2025 to June 2026, with 6:30 to 8:00 p.m. meetings twice a month.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "2025-26: YTI meetings began Aug 20, 2025 and FNL meetings began Sept 10, 2025. Both application forms still took answers on Oct 16, 2026, but they describe 2025-26 and no 2026-27 schedule is posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the short form. Use Apply Today or Register Today on the leadership page. Then text the advisor, Elena Chavez, at 559-405-3787. Email: elena.chavez@ymcasv.org.",
+  "needs_work_permit": false,
+  "url": "https://www.ymcasv.org/education-enrichment/leadership-development",
+  "apply_url": "https://forms.gle/gNXiw4ws7bmvdSn77",
+  "sources_fetched": [
+   "https://www.ymcasv.org/education-enrichment/leadership-development",
+   "https://docs.google.com/forms/d/e/1FAIpQLSfBISSCjmCWDSoH__fb32gA17RAmByrDJP_63XPz89UdMCz4Q/viewform",
+   "https://docs.google.com/forms/d/e/1FAIpQLSd9empDYwh6AAoie2KbD5fUmD97S69tQpaY3IRcAldwZvWS2g/viewform"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 3,
+  "notes": "Confirm the 2026-27 meeting dates with the advisor before you apply. The Friday Night Live form is at https://forms.gle/1S4yBfha9JZFys7Y7. The leadership page says the program builds civic engagement, persuasive speaking and project planning skills. The same page lists Leaders in Training, but it gives no age and the registration search showed no open LIT sessions.",
+  "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "ymca-superior-california-bear-valley-cit",
+  "name": "Counselors in Training (CIT), Bear Valley YMCA Resident Camp",
+  "org": "YMCA of Superior California",
+  "regions": [
+   "sacramento",
+   "yolo"
+  ],
+  "city": "Sacramento, CA (overnight camp at Bear Valley YMCA Camp, near Emigrant Gap in the High Sierra)",
+  "type": "leadership",
+  "fields": [
+   "education"
+  ],
+  "what_you_do": "You spend a week at a High Sierra overnight camp learning to be camp staff. You help run evening activities, do team building, and stay in a cabin where you assist staff and campers.",
+  "min_age": 14,
+  "max_age": 16,
+  "grades": null,
+  "who_can_apply": "Teens ages 14 to 16. Every CIT who signs up gets an interview. Teens who are 17 can come as a Volunteer Junior Counselor. No city rule is stated.",
+  "paid_type": "fee-based",
+  "pay_detail": "$700 a week in 2026 (the same price as camper weeks). Y-Assist financial aid is available.",
+  "season": "summer",
+  "duration": "One week per session.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Summer 2026 sessions: June 28 to July 2 (Zero Week), July 5 to 10, July 12 to 17, July 19 to 24, and July 26 to 31, 2026. Summer 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Use the CIT Registration link on the Bear Valley page. Registering places you on a waitlist, and staff contact you to schedule a CIT interview.",
+  "needs_work_permit": false,
+  "url": "https://www.ymcasuperiorcal.org/bearvalley",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.ymcasuperiorcal.org/bearvalley",
+   "https://www.ymcasuperiorcal.org/youth-families"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "This is a camp program you pay for, not a job. Camp volunteers must be 17 or older and pass an interview. Y-Assist aid for camp is a separate application from YMCA membership aid; the page says replies take about 15 business days. Transportation to camp is not described on the page. Contact: BearValley@ymcasuperiorcal.org.",
+  "verified_on_label": "Oct 16, 2026",
+  "limited": true
  },
  {
   "opens_iso": null,

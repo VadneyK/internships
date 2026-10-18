@@ -29,7 +29,8 @@ const DETAIL_FIELDS = ["who_can_apply", "how_to_apply", "notes", "duration", "pa
 // 2026-10-14 gaps wave plus two Fremont cards read in a real browser (2,610 programs)  limit 583900 to 584400.
 // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) entries-detail.json gzip limit 584400 to 590300. PENDING PERSON APPROVAL.
 // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. entries-detail.json gzip limit 590300 to 591900.
-const GZIP_LIMIT = 591900;
+// 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) limit 604000.
+const GZIP_LIMIT = 604000;
 
 function readText(file) {
   return fs.readFileSync(path.join(DATA, file), "utf8");
