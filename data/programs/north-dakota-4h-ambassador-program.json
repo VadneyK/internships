@@ -19,20 +19,20 @@
   "pay_detail": "Cost not listed on the program page.",
   "season": "year-round",
   "duration": "Not stated on the program page.",
-  "status": "open-now",
-  "deadline_text": "Applications are due October 15 for the fall selection, held the Saturday before Thanksgiving at the ND 4-H Camp in Washburn. Elections also happen at the Extension Youth Conference in June, with applications due May 15. The page shows 2026 dates for June.",
-  "deadline_iso": "2026-10-15",
-  "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Use the Ambassador Resources and Application link. It is on the NDSU Extension leadership page. Send the form to the ND 4-H Center for Youth Development. You must attend all selection day events.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Fall 2026 applications were due Oct 15, 2026. The next chance is the June election. Its May 15 deadline is from last year, since 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Get the form from Ambassador Resources on the NDSU 4-H leadership page. Send it to the ND 4-H Center for Youth Development.",
   "url": "https://www.ndsu.edu/agriculture/extension/extension-topics/4-h-youth-development/4-h-leadership-opportunities",
   "sources_fetched": [
     "https://www.ndsu.edu/agriculture/extension/extension-topics/4-h-youth-development/4-h-leadership-opportunities"
   ],
   "priority": 2,
-  "notes": "The fall deadline is only 3 days after the date this card was checked, so call the ND 4-H office first. The page does not print a year for Oct 15, but it lists June 2026 and Feb 2027 events, so Oct 15 is read as 2026.",
+  "notes": "Selection is the Saturday before Thanksgiving at 4-H Camp in Washburn. Questions: ndsu.4hambassadors@ndsu.edu.",
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-10-16",
   "needs_work_permit": null
 }

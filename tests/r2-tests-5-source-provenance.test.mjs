@@ -16,10 +16,7 @@ const VERIFIED_VALUES = ["fetched", "snippet-only"];
 const NO_CONFIRMED_STATUS = ["open-now", "opens-soon"];
 
 // Reviewed exceptions to rule 2: card id -> reason. Keep this list short and review it when a card changes.
-const ALLOW = {
-  "livermore-area-youth-advisory-commission":
-    "The city teen page (livermoreca.gov) could not be read, so the card cites the Livermore Municipal Code on codepublishing.com, the page that was read. The url stays the city page.",
-};
+const ALLOW = {};
 
 function hostOf(value) {
   if (typeof value !== "string") return null;
