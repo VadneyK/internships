@@ -1,0 +1,170 @@
+{
+ "read": "Oct 18, 2026",
+ "note": "Minimum wages for 2027 as the official government pages said them on the read date, for the states and cities this guide covers. A row with wage_2027 null means the page gave no 2027 figure yet; the 2026 rate stays until it does. Each row quotes the page. Rates change, so confirm on the page. The paycheck page swaps a preset to its 2027 rate on the effective date; the rules page table is edited by hand (issue 7).",
+ "presets": {
+  "ca": { "wage": 17.4, "label": "California, 2027 minimum ($17.40)", "from": "2027-01-01" }
+ },
+ "rows": [
+  {
+   "id": "ca", "name": "California (statewide)", "kind": "state",
+   "wage_2026": 16.9, "wage_2027": 17.4, "effective": "2027-01-01",
+   "url": "https://dir.ca.gov/DIRNews/2026/2026-66.html",
+   "page_title": "ICYMI: California's minimum wage set to increase to $17.40 per hour on January 1, 2027 | California Department of Industrial Relations",
+   "quote": "Beginning January 1, 2027, California's statewide minimum wage will increase to $17.40 per hour",
+   "youth": "Same rate for teens. Learners with no related experience may be paid 85 percent for their first 160 hours."
+  },
+  {
+   "id": "wa", "name": "Washington", "kind": "state",
+   "wage_2026": 17.13, "wage_2027": 17.73, "effective": "2027-01-01",
+   "url": "https://lni.wa.gov/workers-rights/wages/minimum-wage/",
+   "page_title": "Minimum Wage | Washington State Department of Labor and Industries",
+   "quote": "The new minimum wage for 2027 will be $17.73 an hour for most workers. The minimum wage for 14-and 15-year-old workers will be $15.07 an hour. These changes take effect Jan. 1, 2027.",
+   "youth": "Ages 14 and 15: $15.07 an hour (85 percent) from Jan 1, 2027."
+  },
+  {
+   "id": "or", "name": "Oregon", "kind": "state",
+   "wage_2026": 15.55, "wage_2027": null, "effective": "2027-07-01",
+   "url": "https://www.oregon.gov/boli/workers/pages/minimum-wage.aspx",
+   "page_title": "BOLI : Oregon Minimum Wage : For Workers : State of Oregon",
+   "quote": "For July 1, 2026, through June 30, 2027, those rates are: $16.80 per hour - Portland metro ... $15.55 per hour - Standard ... $14.55 per hour - Non-urban",
+   "youth": "The minimum wage is the same for adults and for minors.",
+   "status": "The July 1, 2027 rates are set each spring from inflation and were not posted on Oct 18, 2026. The July 2026 rates ($16.80 Portland metro, $15.55 standard, $14.55 non-urban) run through June 30, 2027."
+  },
+  {
+   "id": "co", "name": "Colorado", "kind": "state",
+   "wage_2026": 15.16, "wage_2027": null, "effective": "2027-01-01",
+   "url": "https://cdle.colorado.gov/dlss/labor-laws-rules-resources/labor-rules-proposed-and-adopted",
+   "page_title": "Labor Rules, Proposed and Adopted | Colorado Department of Labor and Employment",
+   "quote": "Proposed PAY CALC Rules (proposed_2027_pay_calc_order_7_ccr_1103-14_9.30.2026)",
+   "status": "On Oct 18, 2026 the 2027 PAY CALC Order was only a proposed rule (dated Sept 30, 2026), not adopted, and the number was not on the page. The adopted 2026 order ($15.16, per the U.S. Department of Labor table) stands until the 2027 order is adopted. Denver sets its own higher rate."
+  },
+  {
+   "id": "ny", "name": "New York", "kind": "state",
+   "wage_2026": 16.0, "wage_2027": 16.0, "effective": "2027-01-01",
+   "url": "https://dol.ny.gov/minimum-wage",
+   "page_title": "Minimum Wage | New York State Department of Labor",
+   "quote": "On January 1, 2027, New York's minimum wage will stay the same. The minimum wage rates will be: $17.00 per hour in New York City, Long Island, and Westchester County; $16.00 per hour in the rest of New York State",
+   "status": "No change: an inflation off-ramp in the law was met for 2027. New York City, Long Island and Westchester stay at $17.00; the rest of the state at $16.00."
+  },
+  {
+   "id": "il", "name": "Illinois", "kind": "state",
+   "wage_2026": 15.0, "wage_2027": 15.0, "effective": "2027-01-01",
+   "url": "https://labor.illinois.gov/laws-rules/fls/minimum-wage-law.html",
+   "page_title": "Minimum Wage Law - Fair Labor Standards Division | Illinois Department of Labor",
+   "quote": "Guarantees a minimum wage of $15.00 per hour for workers 18 years of age and older. ... YOUTHS (UNDER 18) (WORKING LESS THAN 650 HOURS PER CALENDAR YEAR) $13",
+   "youth": "Under 18 and under 650 hours in a calendar year: $13.00 an hour.",
+   "status": "The state page lists no 2027 change ($15.00 is the law's final step). Chicago and Cook County set higher rates each July 1."
+  },
+  {
+   "id": "ga", "name": "Georgia", "kind": "state",
+   "wage_2026": 7.25, "wage_2027": 7.25, "effective": "2027-01-01",
+   "url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+   "page_title": "State Minimum Wage Laws | U.S. Department of Labor",
+   "quote": "Updated July 1, 2026",
+   "status": "Georgia's own rate is $5.15 for employers with 6 or more workers; employers covered by federal law pay the federal $7.25. No 2027 change is announced."
+  },
+  {
+   "id": "tx", "name": "Texas", "kind": "state",
+   "wage_2026": 7.25, "wage_2027": 7.25, "effective": "2027-01-01",
+   "url": "https://www.twc.texas.gov/programs/wage-and-hour/texas-minimum-wage-law",
+   "page_title": "Texas Minimum Wage Law - Texas Workforce Commission",
+   "quote": "The Texas Minimum Wage Act: Sets a minimum wage for non-exempt employees.",
+   "status": "Texas adopts the federal $7.25 an hour. No 2027 change is announced."
+  },
+  {
+   "id": "az", "name": "Arizona", "kind": "state",
+   "wage_2026": 15.15, "wage_2027": null, "effective": "2027-01-01",
+   "url": "https://www.azica.gov/labor-minimum-wage-main-page",
+   "page_title": "Labor - Minimum Wage Main Page | Industrial Commission of Arizona",
+   "quote": "AZ State Minimum Wage Poster 2026 (English)",
+   "status": "The Industrial Commission page listed only the 2026 poster on Oct 18, 2026. Arizona adjusts for inflation each Jan 1 and usually posts the new rate in mid October. Flagstaff and Tucson set their own rates."
+  },
+  {
+   "id": "bc", "name": "British Columbia", "kind": "province",
+   "wage_2026": 18.25, "wage_2027": null, "effective": "2027-06-01",
+   "url": "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/wages/minimum-wage",
+   "page_title": "Minimum wage - Province of British Columbia",
+   "quote": "As of June 1, 2026, minimum wage is $18.25 per hour. ... Every year since June 1, 2024, each minimum wage goes up by the same percentage as the BC All-Items Consumer Price Index (CPI)",
+   "status": "C$18.25 runs to May 31, 2027. The June 1, 2027 rate follows BC CPI and was not posted on Oct 18, 2026."
+  },
+  {
+   "id": "palo-alto", "name": "Palo Alto", "kind": "city", "state": "ca",
+   "wage_2026": 18.7, "wage_2027": 19.25, "effective": "2027-01-01",
+   "url": "https://www.paloalto.gov/Business/Minimum-Wage",
+   "page_title": "Minimum Wage - City of Palo Alto, CA",
+   "quote": "Effective January 1, 2027, the minimum wage rate for the City of Palo Alto is $19.25 per hour."
+  },
+  {
+   "id": "san-francisco", "name": "San Francisco", "kind": "city", "state": "ca",
+   "wage_2026": 19.61, "wage_2027": null, "effective": "2027-07-01",
+   "url": "https://www.sf.gov/information--minimum-wage-ordinance",
+   "page_title": "Minimum Wage Ordinance | SF.gov",
+   "quote": "currently $19.61 as of July 1, 2026 ... Minimum Wage Poster - effective July 1, 2026 - June 30, 2027",
+   "status": "$19.61 runs through June 30, 2027; the July 1, 2027 rate follows the CPI and was not posted."
+  },
+  {
+   "id": "berkeley", "name": "Berkeley", "kind": "city", "state": "ca",
+   "wage_2026": 19.61, "wage_2027": null, "effective": "2027-07-01",
+   "url": "https://berkeleyca.gov/doing-business/operating-berkeley/employer-requirements/workforce-standards-and-enforcement",
+   "page_title": "Workforce Standards and Enforcement | City of Berkeley",
+   "quote": "$19.61/hour: Effective July 1, 2026",
+   "status": "No 2027 figure on the page; Berkeley adjusts each July 1."
+  },
+  {
+   "id": "alameda", "name": "Alameda", "kind": "city", "state": "ca",
+   "wage_2026": 17.76, "wage_2027": null, "effective": "2027-07-01",
+   "url": "https://www.alamedaca.gov/Departments/Base-Reuse-and-Economic-Development/Minimum-Wage",
+   "page_title": "Minimum Wage | City of Alameda",
+   "quote": "$17.76/hour July 1, 2026; Adjusted Annually by the Consumer Price Index (CPI-W) July 1, 2027",
+   "status": "The July 1, 2027 amount is not published."
+  },
+  {
+   "id": "fremont", "name": "Fremont", "kind": "city", "state": "ca",
+   "wage_2026": 18.05, "wage_2027": null, "effective": "2027-07-01",
+   "url": "https://www.fremont.gov/business/minimum-wage",
+   "page_title": "Minimum Wage | City of Fremont, CA Official Website",
+   "quote": "2026 $18.05; 2027 2026 wage plus inflation adjustment",
+   "status": "The city publishes the July 1, 2027 rate by April 1, 2027. Non-profit employers are exempt from the city rate."
+  },
+  {
+   "id": "oakland", "name": "Oakland", "kind": "city", "state": "ca",
+   "wage_2026": 17.34, "wage_2027": null, "effective": "2027-01-01",
+   "url": "https://www.oaklandca.gov/Government/Departments/Workplace-Employment-Standards/Download-Minimum-Wage-and-Hotel-Wage-Posters",
+   "page_title": "Download Minimum Wage and Hotel Wage Posters | City of Oakland, CA",
+   "quote": "Measure FF: Effective January 1, 2026, the Oakland Minimum Wage Rate goes up to $17.34 per hour.",
+   "status": "The 2027 poster was not posted on Oct 18, 2026."
+  },
+  {
+   "id": "san-jose", "name": "San Jose", "kind": "city", "state": "ca",
+   "wage_2026": 18.45, "wage_2027": null, "effective": "2027-01-01",
+   "url": "https://www.sanjoseca.gov/your-government/departments-offices/public-works/labor-compliance/minimum-wage-ordinance",
+   "page_title": "Minimum Wage Ordinance | City of San Jose",
+   "quote": "POSTERS: 2026 OFFICIAL MINIMUM WAGE BULLETIN",
+   "status": "The page's rate table ends at 2025 and links the 2026 bulletin ($18.45 per the UC Berkeley Labor Center inventory); no 2027 bulletin yet."
+  },
+  {
+   "id": "sunnyvale", "name": "Sunnyvale", "kind": "city", "state": "ca",
+   "wage_2026": 19.5, "wage_2027": null, "effective": "2027-01-01",
+   "url": "https://www.sunnyvale.ca.gov/business-and-development/your-business-center/minimum-wage",
+   "page_title": "Minimum Wage in Sunnyvale | Sunnyvale, CA",
+   "quote": "Effective Date: Jan. 1, 2026 Minimum Wage Rate: $19.50 per hour",
+   "status": "No 2027 figure yet; the city adjusts each Jan 1 by the regional CPI."
+  },
+  {
+   "id": "mountain-view", "name": "Mountain View", "kind": "city", "state": "ca",
+   "wage_2026": 19.7, "wage_2027": null, "effective": "2027-01-01",
+   "url": "https://econdev.mountainview.gov/resources/city-minimum-wage?locale=en",
+   "page_title": "Mountain View Minimum Wage Ordinance | Mountain View, CA - EconDev",
+   "quote": "The Minimum Wage rate is annually updated in the Fall for the next calendar year. The calculated rate for 2026 Calendar year will be $19.70.",
+   "status": "Page last updated Oct 23, 2025; the 2027 rate was not posted on Oct 18, 2026."
+  },
+  {
+   "id": "emeryville", "name": "Emeryville", "kind": "city", "state": "ca",
+   "wage_2026": 20.34, "wage_2027": null, "effective": "2027-07-01",
+   "url": "https://www.emeryville.org/Services/Business/Permits-Regulations/Minimum-Wage-Ordinance",
+   "page_title": "Minimum Wage Ordinance - City of Emeryville, CA",
+   "quote": "2026 Minimum Wage and Paid Sick Leave Poster",
+   "status": "The page text gives no number (the rate is in the 2026 poster PDF: $20.34 from July 1, 2026 per the UC Berkeley Labor Center inventory). No 2027 figure yet."
+  }
+ ]
+}
