@@ -23,7 +23,7 @@ test("every 2027 wage row names an official page, quotes it and dates the change
     assert.equal(typeof r.wage_2026, "number", r.id + " has a 2026 number");
     assert.ok(r.wage_2027 === null || typeof r.wage_2027 === "number", r.id + " 2027 wage is a number or null");
     if (r.wage_2027 === null) assert.ok(r.status, r.id + " says why no 2027 figure");
-    for (const k of ["quote", "status", "youth", "name"]) if (r[k]) assert.doesNotMatch(r[k], /[–—]/, r.id + " " + k + " has a dash");
+    for (const k of ["quote", "status", "youth", "name"]) if (r[k]) assert.doesNotMatch(r[k], /[\u2013\u2014]/, r.id + " " + k + " has a dash");
   }
   assert.ok(ids.has("ca") && ids.has("wa") && ids.has("ny") && ids.has("bc") && ids.has("palo-alto"), "the main rows are there");
 });
