@@ -51,6 +51,8 @@ const ALLOW_PAY = [
   "waubonsee-upward-bound-aurora",
   // Free; the dollar amounts are cash prizes for winning entries, not pay (added 2026-10-12).
   "nfte-world-series-of-innovation",
+  // Free; the dollar amounts are grants that pay for a youth-led project, not pay to the student (added 2026-10-16).
+  "ymca-sf-youth-empowerment-fund",
 ];
 
 // Rule B reason: the page says paid but gives no rate, so the text has no

@@ -120,7 +120,8 @@
     "north-vancouver-city-library-teen-volunteer",
     "north-vancouver-recreation-lifeguard-swim-instructor-pathway",
     "north-vancouver-recreation-nvrc-volunteer",
-    "north-vancouver-sd44-youth-train-in-trades"
+    "north-vancouver-sd44-youth-train-in-trades",
+    "north-vancouver-vch-north-shore-volunteer"
    ]
   },
   {
@@ -167,15 +168,18 @@
     "bard-on-the-beach-volunteer",
     "vancouver-art-gallery-art-exchange",
     "vancouver-art-gallery-teen-art-group",
+    "vancouver-bc-childrens-hospital-volunteer",
     "vancouver-bcchr-mini-med-school",
     "vancouver-bgc-south-coast-youth-employability",
     "vancouver-discovery-days-health-sciences",
+    "vancouver-providence-health-care-volunteer",
     "vancouver-science-world-volunteer",
     "vancouver-seed2stem-indigenous-research-internship",
     "vancouver-space-centre-teen-volunteer",
     "vancouver-stanley-park-ecology-youth-volunteer",
     "vancouver-ubc-future-global-leaders",
     "vancouver-ubc-summer-science-program",
+    "vancouver-vpd-cadet-program",
     "vancouver-vsb-youth-explore-trades-sampler",
     "vancouver-vsb-youth-work-in-trades",
     "vancouver-youth-parliament",
@@ -264,6 +268,16 @@
    "precision": "city",
    "ids": [
     "ymca-silicon-valley-camp-campbell-cabin-leader"
+   ]
+  },
+  {
+   "key": "Castro Valley, CA",
+   "state": "CA",
+   "lat": 37.7083,
+   "lon": -122.0628,
+   "precision": "city",
+   "ids": [
+    "sutter-eden-medical-center-volunteer"
    ]
   },
   {
@@ -382,7 +396,10 @@
     "cosmos-uc-davis",
     "davis-aquatics-lifeguard-junior-swim",
     "davis-junior-basketball-officials",
+    "davis-rec-leader-in-training",
+    "davis-seasonal-lifeguard-swim-instructor",
     "davis-senior-high-cte-pathways",
+    "davis-summer-camp-recreation-leader",
     "davis-teen-leadership-council",
     "djusd-internship-career-course",
     "facciotti-lab-hs-internships",
@@ -517,6 +534,16 @@
    ]
   },
   {
+   "key": "Gilroy, CA",
+   "state": "CA",
+   "lat": 37.0064,
+   "lon": -121.5853,
+   "precision": "city",
+   "ids": [
+    "st-louise-regional-hospital-volunteer"
+   ]
+  },
+  {
    "key": "Glendale, CA",
    "state": "CA",
    "lat": 34.1814,
@@ -596,6 +623,16 @@
    ]
   },
   {
+   "key": "La Honda, CA",
+   "state": "CA",
+   "lat": 37.3177,
+   "lon": -122.2584,
+   "precision": "city",
+   "ids": [
+    "ymca-sf-camp-jones-gulch-lit-cit"
+   ]
+  },
+  {
    "key": "La Jolla, CA",
    "state": "CA",
    "lat": 32.8546,
@@ -667,6 +704,17 @@
    "ids": [
     "loma-linda-university-discovery-program",
     "va-loma-linda-summer-youth-volunteer-program"
+   ]
+  },
+  {
+   "key": "Loma Mar, CA",
+   "state": "CA",
+   "lat": 37.2658,
+   "lon": -122.3007,
+   "precision": "city",
+   "ids": [
+    "ymca-east-bay-camp-loma-mar-camp-assistant",
+    "ymca-east-bay-camp-loma-mar-leaders-in-training"
    ]
   },
   {
@@ -778,6 +826,7 @@
    "lon": -122.1481,
    "precision": "city",
    "ids": [
+    "bgc-peninsula-teen-volunteer-summer-internship",
     "menlo-park-library-teen-advisory-group",
     "menlo-park-youth-advisory-committee",
     "slac-regional-science-bowl-high-school"
@@ -839,7 +888,8 @@
    "lon": -121.6419,
    "precision": "city",
    "ids": [
-    "police-explorers-morgan-hill"
+    "police-explorers-morgan-hill",
+    "ymca-silicon-valley-mt-madonna-high-school-volunteer"
    ]
   },
   {
@@ -898,6 +948,7 @@
    "precision": "city",
    "ids": [
     "alameda-county-community-food-bank-volunteer",
+    "alameda-health-system-heal-internship",
     "bart-summer-internship-high-school",
     "beyond-emancipation-foster-youth",
     "bgc-oakland-junior-staff",
@@ -998,6 +1049,7 @@
     "stanford-aimi-summer-research-internship",
     "stanford-care-explorers",
     "stanford-childrens-teen-volunteer",
+    "sutter-pamf-palo-alto-student-volunteer",
     "youth-community-service-palo-alto"
    ]
   },
@@ -1094,6 +1146,7 @@
    "lon": -122.2137,
    "precision": "city",
    "ids": [
+    "kaiser-redwood-city-high-school-volunteer",
     "redwood-city-leaders-in-training",
     "san-mateo-county-jobs-for-youth"
    ]
@@ -1193,7 +1246,8 @@
     "smud-hs-internship",
     "uc-davis-health-volunteen",
     "uc-davis-mmi-hs-internship",
-    "uc-davis-upward-bound"
+    "uc-davis-upward-bound",
+    "ymca-superior-california-bear-valley-cit"
    ]
   },
   {
@@ -1275,6 +1329,8 @@
    "lon": -122.4193,
    "precision": "manual",
    "ids": [
+    "bgc-san-francisco-camp-mendocino-lit-cit",
+    "bgc-san-francisco-leaders-in-training",
     "cpmc-information-desk-van-ness-volunteer",
     "sf-826-valencia",
     "sf-breakthrough-sf",
@@ -1298,7 +1354,9 @@
     "sf-ucsf-sep-hs-intern",
     "sf-youth-art-exchange",
     "sf-youthworks",
-    "ymca-san-francisco-workforce-development"
+    "ymca-san-francisco-workforce-development",
+    "ymca-sf-teen-volunteer",
+    "ymca-sf-youth-empowerment-fund"
    ]
   },
   {
@@ -1311,6 +1369,9 @@
     "accel-middle-college",
     "evergreen-valley-college-dual-enrollment",
     "happy-hollow-zooteen",
+    "kaiser-san-jose-high-school-volunteer",
+    "oconnor-hospital-volunteer",
+    "regional-medical-center-san-jose-junior-volunteer",
     "san-jose-middle-college",
     "san-jose-public-library-teen-volunteer",
     "san-jose-works",
@@ -1466,6 +1527,7 @@
    "lon": -121.968,
    "precision": "city",
    "ids": [
+    "kaiser-santa-clara-high-school-volunteer",
     "mission-college-high-school-dual-enrollment",
     "santa-clara-youth-commission"
    ]
@@ -1488,6 +1550,16 @@
    "precision": "city",
    "ids": [
     "west-valley-college-concurrent-enrollment"
+   ]
+  },
+  {
+   "key": "South San Francisco, CA",
+   "state": "CA",
+   "lat": 37.6551,
+   "lon": -122.3762,
+   "precision": "city",
+   "ids": [
+    "kaiser-south-san-francisco-high-school-volunteer"
    ]
   },
   {
@@ -1585,6 +1657,7 @@
    "precision": "city",
    "ids": [
     "john-muir-walnut-creek-high-school-volunteer",
+    "kaiser-walnut-creek-high-school-volunteer",
     "walnut-creek-lindsay-wildlife-camp-counselor-in-training",
     "walnut-creek-lindsay-wildlife-owl-teen-program",
     "walnut-creek-save-mount-diablo-volunteer-workdays"
@@ -1597,9 +1670,21 @@
    "lon": -121.5487,
    "precision": "city",
    "ids": [
+    "west-sac-lifeguard-swim-instructor",
+    "west-sac-recreation-leader",
     "west-sac-teen-heroes",
     "ws-home-run-internships",
     "yolo-children-alliance-youth-employment"
+   ]
+  },
+  {
+   "key": "Winters, CA",
+   "state": "CA",
+   "lat": 38.5333,
+   "lon": -121.9755,
+   "precision": "city",
+   "ids": [
+    "winters-seasonal-lifeguard"
    ]
   },
   {
@@ -5372,6 +5457,8 @@
     "portland-parks-recreation-youth-summer-jobs",
     "portland-pdx-youth-at-work-summerworks",
     "portland-pnca-pre-college-summer",
+    "portland-providence-portland-medical-center-volunteer",
+    "portland-providence-st-vincent-volunteer",
     "portland-youth-conservation-crew",
     "portland-youthline-peer-crisis-volunteer"
    ]
@@ -6392,6 +6479,7 @@
    "precision": "city",
    "ids": [
     "seattle-aquarium-youth-ocean-advocates",
+    "seattle-art-museum-teen-arts-group",
     "seattle-bgc-king-county-youthforce",
     "seattle-burke-museum-voices-in-science-burke-ology",
     "seattle-childrens-hospital-volunteer",
@@ -6400,8 +6488,11 @@
     "seattle-clean-water-ambassadors-internship",
     "seattle-fire-cadet-company-511",
     "seattle-fred-hutch-summer-high-school-internship",
+    "seattle-harborview-volunteer-services",
     "seattle-henry-teen-art-collective",
     "seattle-mohai-history-lab",
+    "seattle-mopop-youth-advisory-board",
+    "seattle-mountaineers-counselor-in-training",
     "seattle-museum-of-flight-youth-volunteer",
     "seattle-parks-career-explorations",
     "seattle-parks-lifeguard-jobs",
@@ -6424,6 +6515,7 @@
     "seattle-uw-foster-business-and-leadership-program",
     "seattle-uw-nurse-camp",
     "seattle-uw-summer-sessions-high-school",
+    "seattle-uwmc-summer-teen-volunteer-program",
     "seattle-wing-luke-museum-youthcan",
     "seattle-woodland-park-zoo-teen-ambassadors",
     "seattle-ymca-earth-service-corps",
@@ -6457,6 +6549,7 @@
    "ids": [
     "tacoma-pierce-county-library-teen-councils",
     "tacoma-pierce-county-library-teen-volunteer-league",
+    "tacoma-point-defiance-zoo-guides",
     "tacoma-public-schools-jobs-253",
     "tacoma-public-schools-jobs-253-summer-credential-programs",
     "washington-nyc-urban-forestry-youth-crew-tacoma"
@@ -6995,6 +7088,8 @@
    "south-bay-youth-one-stop-work-experience",
    "southwest-conservation-corps-high-school-conservation-crews",
    "stanford-health-care-teen-volunteer",
+   "sutter-mills-peninsula-youth-volunteer",
+   "sutter-pamf-mountain-view-sunnyvale-student-volunteer",
    "twin-cities-conservation-corps-youth-interns",
    "twin-cities-genesys-works-internship",
    "twin-cities-healthpartners-teen-volunteer",
@@ -7010,6 +7105,7 @@
    "wdsra-teen-volunteers-western-dupage",
    "wichita-ymca-job-prep-teen-summer-jobs",
    "ymca-orange-county-volunteer",
+   "ymca-silicon-valley-teen-youth-councils",
    "ymca-triangle-lightner-y-achievers"
   ]
  },
