@@ -48,7 +48,9 @@ alliance-theatre-palefsky-collision-project	Atlanta, GA	point	Atlanta, GA	city	p
 altru-health-grand-forks-junior-volunteers	Grand Forks, ND	point	Grand Forks, ND	city	place:city	
 ames-iowa-4h-youth-conference-iowa-state	Ames, IA	point	Ames, IA	city	place:city	
 ames-iowa-state-rise-with-wise-summer	Ames, IA	point	Ames, IA	city	place:city	
+anaheim-community-services-volunteers	Anaheim, CA	point	Anaheim, CA	city	place:city	
 anaheim-fire-explorers	Anaheim, CA	point	Anaheim, CA	city	place:city	
+anaheim-police-explorers	Anaheim, CA	point	Anaheim, CA	city	place:city	
 anaheim-public-library-teen-volunteers	Anaheim, CA	point	Anaheim, CA	city	place:city	
 anaheim-summer-volunteen	Anaheim, CA	point	Anaheim, CA	city	place:city	
 anderson-humane-teen-volunteers-school-service	South Elgin, Bloomingdale, Geneva, Algonquin, IL	multi				list of places before the state
@@ -334,6 +336,7 @@ california-ffa	School ag programs, California	statewide	CA
 california-partnership-academies	California (sites in many districts)	statewide	CA			
 caltech-summer-research-connection-pasadena-unified	Pasadena, CA	point	Pasadena, CA	city	place:city	
 cambridge-public-library-teen-advisory-board	Cambridge, MA	point	Cambridge, MA	city	place:city	
+camp-chla-health-care-career-exploration	Los Angeles, CA	point	Los Angeles, CA	city	place:city	
 camp-ignite-bc-firefighting-camp-for-young-women	Metro Vancouver, BC	multi				override: Regional district of many cities, not one place
 capital-area-nextgen-youth-services	Raleigh, NC	point	Raleigh, NC	city	place:city	
 carilion-summer-of-service-youth-volunteers	Roanoke, Christiansburg, Rocky Mount and Lexington, VA	multi				several places before the state
@@ -471,6 +474,7 @@ chicago-windy-city-harvest-youth-farm	Chicago, IL	point	Chicago, IL	city	place:c
 chicago-youth-works-summer-jobs	Chicago, IL	point	Chicago, IL	city	place:city	
 chicagobility-ages-14-15	Chicago, IL	point	Chicago, IL	city	place:city	
 childrens-healthcare-of-atlanta-volunteen	Atlanta, GA	point	Atlanta, GA	city	place:city	
+chla-la-hip-high-school-internship	Los Angeles, CA	point	Los Angeles, CA	city	place:city	
 chp-explorer-post-east-sacramento	Sacramento, CA	point	Sacramento, CA	city	place:city	
 christ-hospital-junior-ambassador-program	Cincinnati, OH	point	Cincinnati, OH	city	place:city	
 chula-vista-living-coast-discovery-center-volunteer	Chula Vista, CA	point	Chula Vista, CA	city	place:city	
@@ -2041,6 +2045,8 @@ richmond-youthworks-work-experience	Richmond, CA (330 25th St)	point	Richmond, C
 rising-sun-climate-careers	Oakland, CA and Bay Area	point	Oakland, CA	city	place:city	override: Oakland is the named city; Bay Area is the wider region
 river-forest-library-tween-teen-volunteers-book-buddies	River Forest, IL	point	River Forest, IL	city	place:village	
 riverside-county-library-teen-advisory-boards	Riverside County, CA (branch libraries)	point	Riverside County, CA	county	county	
+riverside-county-wioa-youth-opportunity-centers	Riverside County, CA (six centers)	point	Riverside County, CA	county	county	
+riverside-county-youth-advisory-councils	Riverside County, CA	point	Riverside County, CA	county	county	
 riverside-grow-youth-workforce-program	Riverside, CA	point	Riverside, CA	city	place:city	
 riverside-johnny-martin-sotelo-youth-opportunity-center	Riverside, CA	point	Riverside, CA	city	place:city	
 riverside-parks-rec-volunteen-internship-vip	Riverside, CA	point	Riverside, CA	city	place:city	
