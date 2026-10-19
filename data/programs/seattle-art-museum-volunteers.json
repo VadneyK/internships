@@ -1,0 +1,39 @@
+{
+  "id": "seattle-art-museum-volunteers",
+  "name": "Seattle Art Museum Volunteers",
+  "org": "Seattle Art Museum (SAM)",
+  "regions": [
+    "seattle"
+  ],
+  "city": "Seattle, WA",
+  "type": "volunteer",
+  "fields": [
+    "arts-media"
+  ],
+  "what_you_do": "Help at SAM, the Asian Art Museum or the Olympic Sculpture Park. Greet visitors, work coat check or the info desk, help at events and art workshops, or care for the park gardens.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be 16 or older. Your application must name one or more volunteer roles. SAM cannot place everyone who applies.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer.",
+  "season": "year-round",
+  "duration": "Most roles: at least 6 months, 2 shifts a month of 2 to 3.5 hours. Some roles ask for a year. Park Steward runs June to October.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline posted. Apply online any time.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Read the list of roles, then use 'apply now' on the volunteer page and name the roles you want.",
+  "needs_work_permit": false,
+  "url": "https://www.seattleartmuseum.org/whats-on/programs/volunteers",
+  "apply_url": "https://form.asana.com/?k=58T7L-W-UsRyVZNpJzHc3Q&d=16948530586553",
+  "sources_fetched": [
+    "https://www.seattleartmuseum.org/whats-on/programs/volunteers",
+    "https://www.seattleartmuseum.org/whats-on/audiences/for-teens"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "SAM does not accept court-ordered volunteer hours. Library roles usually need library experience. Teens who want a deeper program can also look at SAM's Teen Arts Group."
+}
