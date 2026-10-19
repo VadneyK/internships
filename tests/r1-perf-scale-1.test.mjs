@@ -48,7 +48,10 @@ const LIMITS = {
     // 2026-10-18 (after #54) issue 22 Chicago and Elgin second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 5223300 to 5236500 (gzip still fits).
     // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 5250719 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json raw 5237600 to 5250800.
     // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 1187487 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json gzip 1184900 to 1187500.
-    "data/entries.json": { raw: 5250800, gzip: 1187500 },
+    // 2026-10-19 issue 5 Confirm first: CHP East Sacramento and Michigan 4-H Exploration Days re-read in a real browser (2 cards changed, 2,680 programs; PENDING PERSON APPROVAL) data/entries.json raw 5223300 to 5224400.
+    // 2026-10-19: confirm-first edits (#64) after the #59 and #60 cards, 5251805 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json raw 5250800 to 5251900.
+    // 2026-10-19: confirm-first edits (#64) after the #59 and #60 cards, 1187926 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json gzip 1187500 to 1188000.
+    "data/entries.json": { raw: 5251900, gzip: 1188000 },
     // Raised from 2020000 to 2040000 on 2026-10-10 after the fact check: the page re-reads added about 6,000 bytes (0.3 percent) of plainer deadline_text across 266 cards, saying what the page does and does not state. No single card is the cause. Still about 1,145 bytes per program, under the per-program limit.
     // Gzip limit raised from 440000 to 450000 on 2026-10-10: the card fixes this round (pay wording, opens-soon dates) put it at 440053.
     // Raised again on 2026-10-12 for the 178 more cards: entries-lite.json is 2,097,871 bytes (437,135 gzipped), 947 bytes per program. Raw from 2040000 to 2160000. The gzip limit stays 450000. PENDING PERSON APPROVAL, as for entries.json.
@@ -77,7 +80,10 @@ const LIMITS = {
     // 2026-10-18 (after #54) issue 22 Chicago and Elgin second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 2540600 to 2547400 (gzip still fits).
     // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 2553402 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json raw 2547400 to 2553500.
     // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 532289 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json gzip 531600 to 532300.
-    "data/entries-lite.json": { raw: 2553500, gzip: 532300 },
+    // 2026-10-19 issue 5 Confirm first: CHP East Sacramento and Michigan 4-H Exploration Days re-read in a real browser (2 cards changed, 2,680 programs; PENDING PERSON APPROVAL) data/entries-lite.json raw 2540600 to 2540800.
+    // 2026-10-19: confirm-first edits (#64) after the #59 and #60 cards, 2553569 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json raw 2553500 to 2553600.
+    // 2026-10-19: confirm-first edits (#64) after the #59 and #60 cards, 532364 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json gzip 532300 to 532400.
+    "data/entries-lite.json": { raw: 2553600, gzip: 532400 },
     // Raised on 2026-10-11 for ticket p7-regions-1: entries-core.json is 368,169 bytes (36,864 gzipped). Raw from 320000 to 375000, gzip from 32000 to 37500.
     // PENDING PERSON APPROVAL: same as entries.json above. Do not raise again without a person's recorded sign-off.
     // Raised again on 2026-10-12 for the 178 more cards: entries-core.json is 400,279 bytes (41,089 gzipped). Raw from 375000 to 420000, gzip from 37500 to 43000. PENDING PERSON APPROVAL, as above.
@@ -267,7 +273,7 @@ test("mutation: a lite file at 2,300,000 bytes is reported, and only lite is rep
   assert.deepEqual(problems, [
     // 2026-10-18 (after #45) issue 19 Southern California pages read in a real browser (+6 cards, 2,686 programs; PENDING PERSON APPROVAL): 2540600 to 2546800.
     // 2026-10-18 (after #54) issue 22 Chicago and Elgin second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 2540600 to 2547400.
-    `${LITE} is ${big} bytes, over the limit of 2553500 bytes`, // 2026-10-17: PNW and Vancouver cards rebased on e7628a4 (2,650 programs); was 2496100
+    `${LITE} is ${big} bytes, over the limit of 2553600 bytes`, // 2026-10-19: issue 5 Confirm first re-reads (2,680 programs); was 2540600
     `${LITE} is ${Math.round(big / programCount)} bytes per program (${big} bytes for ${programCount} programs), over the limit of 1300 bytes per program`,
   ]);
 });
