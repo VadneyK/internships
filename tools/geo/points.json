@@ -1,5 +1,5 @@
 {
- "read": "2026-10-17",
+ "read": "2026-10-18",
  "cities": [
   {
    "key": "Chandler, AZ",
@@ -2709,6 +2709,7 @@
    "precision": "county",
    "ids": [
     "cook-county-forest-preserves-conservation-corps-summer",
+    "cook-county-forest-preserves-youth-outdoor-ambassadors",
     "cook-county-opportunity-works-subsidized-internships"
    ]
   },
@@ -2746,6 +2747,7 @@
     "elgin-hawthorne-hill-nature-center-volunteers",
     "elgin-police-explorer-post-1445",
     "elgin-teen-life-police-and-library",
+    "elgin-u46-magnet-academies",
     "gail-borden-teen-volunteers",
     "ywca-elgin-youth-leadership-scholarship"
    ]
@@ -2839,7 +2841,8 @@
    "lon": -88.1446,
    "precision": "city",
    "ids": [
-    "ascension-saint-alexius-teen-volunteer"
+    "ascension-saint-alexius-teen-volunteer",
+    "hoffman-estates-park-district-swim-instructor"
    ]
   },
   {
@@ -2850,6 +2853,19 @@
    "precision": "county",
    "ids": [
     "kane-county-forest-preserve-volunteer-workdays"
+   ]
+  },
+  {
+   "key": "Lemont, IL",
+   "state": "IL",
+   "lat": 41.6673,
+   "lon": -87.9844,
+   "precision": "city",
+   "ids": [
+    "argonne-high-school-autonomous-vehicle-competition",
+    "argonne-introduce-a-generation-to-engineering-day",
+    "argonne-middle-school-electric-car-competition",
+    "argonne-science-careers-in-search-of-women"
    ]
   },
   {
