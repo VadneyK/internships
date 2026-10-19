@@ -156,6 +156,7 @@ const TABLE = {
   "assets/js/jobs.js": { ceiling: 24400, reason: "script, 22099 bytes measured 2026-10-10" },
   "assets/js/languages.js": { ceiling: 4000, reason: "script, 3579 bytes measured 2026-10-10" },
   "assets/js/leaders.js": { ceiling: 8100, reason: "script, 7361 bytes measured 2026-10-10" },
+  // 2026-10-19: Add to calendar, issue #10 (PENDING PERSON APPROVAL). lib.js 56000 to 57800 (the calendar code on top of PR 36; 57742 bytes).
   "assets/js/lib.js": { ceiling: 57800, reason: "script, 50207 bytes measured 2026-10-10" },
   // 2026-10-14: parents permit table stacks on phones (ARIA roles and column labels) parents.js 3900 to 4200. PENDING PERSON APPROVAL.
   // 2026-10-14: parents opens on ?state= or the saved Programs place and keeps state= in the address parents.js 4200 to 5500. PENDING PERSON APPROVAL.
