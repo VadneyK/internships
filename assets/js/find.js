@@ -124,7 +124,7 @@
     html += '<div class="actions">';
     if (u) html += '<a class="btn sm" href="' + G.esc(u) + '" target="_blank" rel="noopener" aria-label="' + G.esc("Official page for " + e.name + (e.org ? ", " + e.org : "")) + '">Official page</a>';
     if (a && a !== u) html += '<a class="btn sm alt" href="' + G.esc(a) + '" target="_blank" rel="noopener" aria-label="' + G.esc("Apply to " + e.name + (e.org ? ", " + e.org : "")) + '">Apply</a>';
-    if (knownDeadline(e)) html += '<button class="btn sm alt noprint" type="button" data-cal="' + G.esc(e.id) + '" aria-label="' + G.esc("Add deadline to calendar for " + e.name) + '">Add deadline to calendar</button>';
+    html += L.calButtons(e, now());
     html += '<button class="star noprint" type="button" data-id="' + G.esc(e.id) + '" aria-pressed="' + saved + '" aria-label="' + G.esc("Save " + e.name + " to my list") + '" title="Save to my list">' + starInner(saved) + '</button>';
     html += "</div>";
     html += '<p class="checked">' + vtag + " Checked " + G.esc(e.verified_on_label || "Oct 7, 2026") + "</p>";
@@ -917,11 +917,8 @@
     if (ev.target.closest("[data-relax-saved]")) { resetFilters(true); focusFirst(); return; }
     var cal = ev.target.closest("[data-cal]");
     if (cal) {
-      var pe = all.filter(function (x) { return x.id === cal.getAttribute("data-cal"); })[0];
-      if (pe && pe.deadline_iso && knownDeadline(pe)) {
-        G.download(pe.id + "-deadline.ics", L.icsEvent({ uid: "deadline-" + pe.id, title: "Deadline: " + pe.name, desc: (pe.deadline_text || "") + " " + (G.safeUrl(pe.apply_url || pe.url) || ""), dateISO: pe.deadline_iso }), "text/calendar");
-        G.toast("Calendar file saved. Open it to add the deadline.");
-      }
+      var ce = L.calEvent(byId[cal.getAttribute("data-cal")], now());
+      if (ce) { G.download(ce.file, L.icsEvent(ce), "text/calendar"); G.toast("Calendar file saved. Open it to add the deadline, or use Google Calendar."); }
       return;
     }
     var s = ev.target.closest(".star");
