@@ -92,6 +92,11 @@ test("every script src and link href in a root page resolves to a file that exis
 
 test("every assets/js/*.js is loaded by at least one root page", () => {
   const loaded = new Set(PAGE_REFS.filter((r) => !r.bad && r.target.startsWith("assets/js/")).map((r) => r.target));
+  // map-gl.js is a module that map.js adds only where the browser has WebGL 2 (the Map page's street map)
+  const BY_SCRIPT = { "assets/js/map-gl.js": "assets/js/map.js" };
+  for (const [f, by] of Object.entries(BY_SCRIPT)) {
+    if (loaded.has(by) && fs.readFileSync(path.join(ROOT, by), "utf8").includes(f)) loaded.add(f);
+  }
   const orphans = JS_FILES.filter((f) => !loaded.has(f));
   assert.deepEqual(orphans, [], "these scripts are not loaded by any root page (delete them or add the script tag)");
   assert.ok(JS_FILES.length > 0, "no files found in assets/js");

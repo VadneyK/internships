@@ -1,4 +1,4 @@
-/* First paycheck: sourced estimate, withholding form facts, and wage help. Content is data/money.json. */
+/* First paycheck: sourced estimate, withholding form facts, wage help. Content: data/money.json. */
 (function () {
   "use strict";
   var G = window.TIG, L = G.lib;
@@ -6,9 +6,10 @@
   function a(t, u) { return '<a href="' + G.esc(u) + '" target="_blank" rel="noopener">' + G.esc(t) + "</a>"; }
   function usd(n) { return "$" + n.toFixed(2); }
   G.fetchData("data/money.json").then(function (r) { return r.json(); }).then(function (d) {
+    d.presets.forEach(function (p) { var o = d.w2027 && d.w2027[p.id]; if (o && Date.now() >= Date.parse(o.from)) { p.wage = o.wage; p.label = o.label; } });
     d.presets.forEach(function (p) { $("mPreset").appendChild(Object.assign(document.createElement("option"), { value: p.id, textContent: p.label })); });
     $("mPreset").appendChild(Object.assign(document.createElement("option"), { value: "other", textContent: "Another state (type your own rate)" }));
-    // "other" borrows the Georgia preset, which has only the Social Security and Medicare lines.
+    // "other" borrows the Georgia preset: only the Social Security and Medicare lines.
     function presetId() { return $("mPreset").value === "other" ? "ga" : $("mPreset").value; }
     function setWage() {
       var note = $("mOther");
@@ -23,7 +24,7 @@
       paintOtherState();
       var p = d.presets.filter(function (x) { return x.id === $("mPreset").value; })[0]; $("mWage").value = p.wage.toFixed(2);
     }
-    // "Another state" also lets the teen pick any state. Its wage line comes from data/state-wages.json, read only when "Another state" is chosen.
+    // "Another state" means any state; its wage line is from data/state-wages.json, read only then.
     var TAXLINE = "Ask your employer if your state also holds back state income tax, and for the state form if it does.";
     var WAGE_FAIL = "We could not load the state wage. Check your state labor office.";
     var otherWd = null, otherFailed = false, otherLoading = false;
@@ -54,11 +55,11 @@
         j.states.slice().sort(function (x, y) { return x.name < y.name ? -1 : 1; }).forEach(function (s) {
           sel.appendChild(Object.assign(document.createElement("option"), { value: s.id, textContent: s.name }));
         });
-        /* The shared type-to-search box (2026-10-13): the select stays the source of truth. */
+        /* The shared type-to-search box (2026-10-13): the select is the source of truth. */
         G.placeSearch(sel, { hide: true, chip: true, caption: "", placeholder: "Type your state" });
       }).catch(function () { otherFailed = true; }).then(function () { otherLoading = false; paintOtherState(); });
     }
-    // Each field says what is wrong with it. The first problem also names the field in the estimate card and the status line.
+    // Each field says what is wrong. The first problem also names the field in the card and status line.
     var MSG = {
       wage: { blank: "Enter your hourly rate.", bad: "The hourly rate must be a number.", neg: "The hourly rate can not be below 0." },
       hours: { blank: "Enter the hours on this paycheck.", bad: "The hours must be a number.", neg: "The hours can not be below 0." }
@@ -100,7 +101,7 @@
       if (r.parentBiz) notes.push("<li>" + G.esc(d.parentNote) + " " + a(d.parentSource.t, d.parentSource.u) + ".</li>");
       $("mOut").innerHTML = h + '<ul class="small">' + notes.join("") + "</ul><p>" + G.esc(d.left) + "</p>";
     }
-    // The table repaints on every keystroke, but the screen reader gets one short line after a pause.
+    // The table repaints on each keystroke; the screen reader gets one short line after a pause.
     var statusTimer;
     function announce() {
       clearTimeout(statusTimer);
@@ -110,7 +111,7 @@
         if ($("mStatus").textContent !== msg) $("mStatus").textContent = msg;
       }, 500);
     }
-    // Picking a preset also picks its state in the Late or wrong pay box. "Another state" leaves the box alone.
+    // Picking a preset also picks its state in the Late or wrong pay box. "Another state" does not.
     function syncStateToPreset() {
       var pid = $("mPreset").value;
       if (pid === "other") return;
@@ -134,7 +135,7 @@
       $("mWrong").innerHTML = "<h3>" + G.esc(s.name) + '</h3><dl class="facts">' + row("When you must be paid", s.freq) + row("Your pay stub", s.stub) + row("Your last paycheck", s.last) + row("Direct deposit and cards", s.dd) + row("How to get unpaid wages", s.claim) + row("Phone", s.call) + "</dl><p class=\"small\">" + s.links.map(function (l) { return a(l.t, l.u); }).join(" &middot; ") + "</p>";
       linkState();
     }
-    // The Next links carry the picked state, so safety, permit and interview open on that state. Find and jobs stay as they are.
+    // The Next links carry the picked state to safety, permit and interview. Find and jobs do not.
     function linkState() {
       var sid = $("mState").value;
       if (!sid) return;
@@ -144,7 +145,7 @@
         if (m) el.setAttribute("href", m[1] + ".html?state=" + encodeURIComponent(sid));
       });
     }
-    // The card is plain content (no live region). A short status line names the state after a choice.
+    // The card is plain content (no live region). A short status line names the state after a pick.
     function announceState() {
       var s = d.states.filter(function (x) { return x.id === $("mState").value; })[0];
       if (s) $("mWrongStatus").textContent = "Showing pay rules for " + s.name + ".";
@@ -155,7 +156,7 @@
       var pre = want && d.presets.filter(function (x) { return x.id === want || x.id.indexOf(want + "-") === 0; })[0];
       var st = want && d.states.filter(function (x) { return x.id === want; })[0];
       if (pre && st) { $("mPreset").value = pre.id; $("mState").value = st.id; setWage(); paint(); wrong(); }
-      /* No ?state= in the address: start from the area saved on Programs, only for the states this page covers. */
+      /* No ?state= in the address: start from the area saved on Programs, if this page covers it. */
       if (!want) {
         var pr = G.store.get("findprefs", {}), ss = pr && typeof pr.place === "string" ? L.stateFromPlace(pr.place) : "";
         var pre2 = ss && d.presets.filter(function (x) { return x.id === ss || x.id.indexOf(ss + "-") === 0; })[0];

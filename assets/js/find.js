@@ -49,6 +49,11 @@
     return '<p class="when"><b>Dates</b>' + G.esc(e.deadline_text || "Not posted") + G.esc(extra) + conf + "</p>";
   }
   function ageText(e) { return L.ageText(e); }
+  /* With an age picked, a card whose grades likely leave that age out says so next to the grades (lib.gradeFit). Cards that state ages are left to the age filter. */
+  function gradeTag(e) {
+    var f = L.gradeFit(e, state.age);
+    return f ? '<span class="tag warn" data-gradefit="' + f + '">' + G.esc("May be too " + f + " at " + state.age + ": check the grades") + "</span>" : "";
+  }
   function paidTag(e) {
     var t = G.PAID[e.paid_type] || "";
     var cls = e.paid_type === "paid" || e.paid_type === "stipend" ? "y" : e.paid_type === "fee-based" ? "warn" : "ghost";
@@ -111,7 +116,7 @@
     html += '<p class="org">' + G.esc(e.org || "") + (e.city ? " &middot; " + G.esc(e.city) : "") + "</p>";
     html += '<p class="what">' + G.esc(e.what_you_do || "") + "</p>";
     /* "limited": one place's residents, or girls or boys only (build_data.py). The rule itself is under "Who can apply and how". */
-    html += '<div class="row"><span class="tag ghost">' + G.esc(ageText(e)) + "</span>" + (e.limited ? '<span class="tag warn">Only some can apply: see who below</span>' : "") + "</div>";
+    html += '<div class="row"><span class="tag ghost">' + G.esc(ageText(e)) + "</span>" + gradeTag(e) + (e.limited ? '<span class="tag warn">Only some can apply: see who below</span>' : "") + "</div>";
     html += '<div data-pay>' + payHtml(e) + "</div>";
     html += deadlineLine(e);
     html += "<details><summary>Who can apply and how</summary><dl" + (detailMode() === "ready" ? "" : ' data-detail="' + detailMode() + '"') + ">" + detailBody(e);
@@ -119,7 +124,7 @@
     html += '<div class="actions">';
     if (u) html += '<a class="btn sm" href="' + G.esc(u) + '" target="_blank" rel="noopener" aria-label="' + G.esc("Official page for " + e.name + (e.org ? ", " + e.org : "")) + '">Official page</a>';
     if (a && a !== u) html += '<a class="btn sm alt" href="' + G.esc(a) + '" target="_blank" rel="noopener" aria-label="' + G.esc("Apply to " + e.name + (e.org ? ", " + e.org : "")) + '">Apply</a>';
-    if (knownDeadline(e)) html += '<button class="btn sm alt noprint" type="button" data-cal="' + G.esc(e.id) + '" aria-label="' + G.esc("Add deadline to calendar for " + e.name) + '">Add deadline to calendar</button>';
+    html += L.calButtons(e, now());
     html += '<button class="star noprint" type="button" data-id="' + G.esc(e.id) + '" aria-pressed="' + saved + '" aria-label="' + G.esc("Save " + e.name + " to my list") + '" title="Save to my list">' + starInner(saved) + '</button>';
     html += "</div>";
     html += '<p class="checked">' + vtag + " Checked " + G.esc(e.verified_on_label || "Oct 7, 2026") + "</p>";
@@ -241,8 +246,10 @@
     var s = { age: state.age, place: state.place, hubs: state.hubs, paid: state.paid };
     var found = all.filter(function (e) { return L.matches(e, s, t); });
     if (found.length < 3) { s.placeOnline = true; found = all.filter(function (e) { return L.matches(e, s, t); }); }
-    var p = { age: state.age }, open = L.topPicks(found.filter(function (e) { return !e.limited; }), p, t, PICKS_N);
-    return open.length < PICKS_N ? open.concat(L.topPicks(found.filter(function (e) { return e.limited; }), p, t, PICKS_N - open.length)) : open;
+    /* Cards only some can apply to, or whose grades likely leave this age out, fill the picks only after the rest. */
+    var p = { age: state.age }, held = function (e) { return !!(e.limited || L.gradeFit(e, state.age)); };
+    var open = L.topPicks(found.filter(function (e) { return !held(e); }), p, t, PICKS_N);
+    return open.length < PICKS_N ? open.concat(L.topPicks(found.filter(held), p, t, PICKS_N - open.length)) : open;
   }
   function paintPicks() {
     var box = $("picks"), nudge = $("picksNudge"), ol = $("picksList"); if (!box || !ol) return;
@@ -402,7 +409,9 @@
     $("savedN").textContent = sv.length;
     var out = $("out"), dates = $("dates");
     $("listActions").hidden = !state.saved;
-    $("textList").hidden = $("emailList").hidden = !sv.length;
+    $("textList").hidden = $("emailList").hidden = $("downloadList").hidden = $("parentList").hidden = $("keepLink").hidden = $("exportList").hidden = !sv.length;
+    $("listHow").hidden = !state.saved || !sv.length;
+    $("keepCapNote").hidden = sv.length <= KEEP_MAX;
     $("listNextN").textContent = sv.length;
     $("listNext").hidden = !(state.saved && sv.length > 0);
     paintGaps();
@@ -513,7 +522,7 @@
   function chipGroup(id, items, key, multi) {
     var box = $(id);
     box.innerHTML = items.map(function (it) {
-      return '<button class="chip" type="button" data-key="' + key + '" data-val="' + G.esc(it[0]) + '" data-label="' + G.esc(it[1]) + '" aria-pressed="false">' + G.esc(it[1]) + '<span class="n">' + (it[2] != null ? it[2] : "") + "</span></button>";
+      return '<button class="chip" type="button" data-key="' + key + '" data-val="' + G.esc(it[0]) + '" data-label="' + G.esc(it[1]) + '" aria-pressed="false">' + G.esc(it[1]) + ' <span class="n">' + (it[2] != null ? it[2] : "") + "</span></button>";
     }).join("");
     box.addEventListener("click", function (ev) {
       var b = ev.target.closest(".chip"); if (!b) return;
@@ -867,8 +876,10 @@
     else render(true);
     prefetchDetail();
     if (wantId) wantDetail();
+    if (location.hash.indexOf("#saved=") === 0) offerIds(keepIds(location.hash), "link");
     window.addEventListener("hashchange", function () {
       if (location.hash.indexOf("#p-") === 0) { openLinked(location.hash.slice(3), false); wantDetail(); }
+      else if (location.hash.indexOf("#saved=") === 0) offerIds(keepIds(location.hash), "link");
     });
   }).catch(function (err) {
     $("count").textContent = "Could not load the list.";
@@ -910,11 +921,8 @@
     if (ev.target.closest("[data-relax-saved]")) { resetFilters(true); focusFirst(); return; }
     var cal = ev.target.closest("[data-cal]");
     if (cal) {
-      var pe = all.filter(function (x) { return x.id === cal.getAttribute("data-cal"); })[0];
-      if (pe && pe.deadline_iso && knownDeadline(pe)) {
-        G.download(pe.id + "-deadline.ics", L.icsEvent({ uid: "deadline-" + pe.id, title: "Deadline: " + pe.name, desc: (pe.deadline_text || "") + " " + (G.safeUrl(pe.apply_url || pe.url) || ""), dateISO: pe.deadline_iso }), "text/calendar");
-        G.toast("Calendar file saved. Open it to add the deadline.");
-      }
+      var ce = L.calEvent(byId[cal.getAttribute("data-cal")], now());
+      if (ce) { G.download(ce.file, L.icsEvent(ce), "text/calendar"); G.toast("Calendar file saved. Open it to add the deadline, or use Google Calendar."); }
       return;
     }
     var s = ev.target.closest(".star");
@@ -986,5 +994,108 @@
   });
   $("copyList").addEventListener("click", function () {
     G.copy(listText() || "Your list is empty.");
+  });
+
+  /* Keep my list without an account (docs/adr/0008). Everything below runs in the browser. Nothing is sent by us, and no address is stored. */
+  /* keepIds reads a #saved= hash (or an array from a backup file): only slug-shaped ids, each once, in order, at most max of them
+     (KEEP_MAX for a link, so it stays short enough to text). Anything else is dropped, never an error. It lives here, not in lib.js,
+     because only this page uses it and lib.js loads on every page. G.keepIds is a test hook. */
+  var KEEP_MAX = 40, KEEP_ID = /^[a-z0-9][a-z0-9-]{0,79}$/;
+  function keepIds(src, max) {
+    var raw = typeof src === "string" ? src.replace(/^#?saved=/, "").split(",") : Array.isArray(src) ? src : [], out = [], lim = max > 0 ? max : KEEP_MAX;
+    raw.forEach(function (id) {
+      if (typeof id !== "string") return;
+      try { id = decodeURIComponent(id.trim()); } catch (e) { return; }
+      if (KEEP_ID.test(id) && out.indexOf(id) < 0 && out.length < lim) out.push(id);
+    });
+    return out;
+  }
+  G.keepIds = keepIds; G.KEEP_MAX = KEEP_MAX;
+  function savedItems() { return savedIds().map(function (id) { return byId[id]; }).filter(Boolean); }
+  function nProg(n) { return n + (n === 1 ? " program" : " programs"); }
+  /* The link that opens this list anywhere: find.html#saved=id1,id2 (the first KEEP_MAX ids). */
+  function keepHref() { return SITE_URL + "find.html#saved=" + keepIds(savedIds()).join(","); }
+  /* A plain text file of the list: one numbered block per program with its place, ages, pay, dates and official page. */
+  function fileText() {
+    var items = savedItems(), out = ["My internship list", "From the Teen Internship Guide: " + SITE_URL, "Open this list again: " + keepHref(), ""];
+    items.forEach(function (e, i) {
+      out.push((i + 1) + ". " + e.name + (e.org ? " (" + e.org + ")" : ""));
+      out.push("   Where: " + (e.city || "Not stated"));
+      out.push("   " + L.ageText(e) + ". " + (G.PAID[e.paid_type] || "Pay not stated") + "." + (e.limited ? " Only some can apply: check who." : ""));
+      out.push("   Dates: " + (e.deadline_text || "No date posted yet. Ask them."));
+      out.push("   Official page: " + (G.safeUrl(e.url) || "Not stated"));
+      out.push("");
+    });
+    out.push("Confirm ages, pay and dates on each program's own page. The guide is a free student resource with no accounts and no tracking.");
+    return out.join("\n");
+  }
+  $("downloadList").addEventListener("click", function () {
+    G.download("my-internship-list.txt", fileText(), "text/plain");
+    G.toast("Saved my-internship-list.txt to your device");
+  });
+  /* Send to a parent: a mail to nobody yet. The teen types the address in their own mail app. */
+  var PARENT_SUBJECT = "My internship list: can you take a look?";
+  function parentText() {
+    var items = savedItems();
+    return "Hi,\n\nI made a list of " + nProg(items.length) + " I want to apply to. It comes from the Teen Internship Guide (" + SITE_URL + "), a free guide that students help run. It is not an official site, and it has no accounts, no sign-up and no tracking, so nobody there sees this email or my list.\n\nEach program links to its own official page, so we can check the ages, pay and dates together:\n\n" +
+      items.map(function (e) {
+        return "- " + e.name + (e.org ? " (" + e.org + ")" : "") + "\n  " + L.ageText(e) + ". " + (G.PAID[e.paid_type] || "Pay not stated") + ".\n  Dates: " + (e.deadline_text || "No date posted yet.") + "\n  " + (G.safeUrl(e.url) || "");
+      }).join("\n") + "\n\nOpen my list on your phone or computer: " + keepHref() + "\n\nThanks!";
+  }
+  $("parentList").addEventListener("click", function () {
+    this.href = savedIds().length ? L.mailtoHref(PARENT_SUBJECT, parentText()) : "mailto:";
+  });
+  $("keepLink").addEventListener("click", function () { G.copy(keepHref()); });
+  $("exportList").addEventListener("click", function () {
+    G.download("my-internship-list.json", JSON.stringify({ guide: SITE_URL, saved: savedIds() }, null, 1), "application/json");
+    G.toast("Saved my-internship-list.json. Load a backup file brings it back on any device.");
+  });
+  $("importList").addEventListener("click", function () { $("importFile").click(); });
+  $("importFile").addEventListener("change", function () {
+    var f = this.files && this.files[0]; this.value = "";
+    if (!f) return;
+    var r = new FileReader();
+    r.onload = function () {
+      var ids = [];
+      try { var j = JSON.parse(r.result); ids = keepIds(Array.isArray(j) ? j : j && j.saved, 500); } catch (e) {}
+      offerIds(ids, "file");
+    };
+    r.onerror = function () { G.toast("Could not read that file"); };
+    r.readAsText(f);
+  });
+  /* Ask before merging: a #saved= link or a backup file names programs. Say how many are new and add them only on a tap. The list never loses what it has. */
+  var offered = [];
+  function offerIds(ids, from, tried) {
+    /* with only a place's part of the data loaded, an id outside it needs the whole file first (once) */
+    if (part && !tried && ids.some(function (id) { return !byId[id]; })) { var again = function () { offerIds(ids, from, true); }; goFull().then(again, again); return; }
+    var src = from === "file" ? "This file" : "This link", have = G.saved.ids();
+    var known = ids.filter(function (id) { return Object.prototype.hasOwnProperty.call(byId, id); });
+    offered = known.filter(function (id) { return have.indexOf(id) < 0; });
+    if (!offered.length) {
+      $("keepAsk").hidden = true; dropKeepHash();
+      G.toast(known.length ? "Your list already has " + (known.length === 1 ? "this program" : "these " + known.length + " programs") : src + " has no programs that are on the list now");
+      return;
+    }
+    var n = offered.length, old = known.length - n;
+    $("keepAskH").textContent = "Add " + nProg(n) + " to your list?";
+    $("keepAskP").textContent = src + " has " + nProg(n) + " that " + (n === 1 ? "is" : "are") + " not on your list yet" + (old ? ", and " + old + " you already saved" : "") + ". Your list keeps what is on it. Nothing is added until you tap Add.";
+    $("keepAsk").hidden = false;
+    $("keepAskH").focus();
+  }
+  function dropKeepHash() {
+    if (location.hash.indexOf("#saved=") === 0) try { history.replaceState(null, "", location.pathname + location.search); } catch (e) {}
+  }
+  $("keepAdd").addEventListener("click", function () {
+    var n = offered.length;
+    offered.forEach(function (id) { if (!G.saved.has(id)) G.saved.toggle(id); });
+    offered = []; $("keepAsk").hidden = true; dropKeepHash();
+    state.saved = true; syncChips(); render(true);
+    G.toast(!G.saved.kept ? "This browser will not keep your list. Use Copy my list before you leave." : "Added " + nProg(n) + " to your list");
+    $("savedOnly").focus();
+  });
+  $("keepSkip").addEventListener("click", function () {
+    offered = []; $("keepAsk").hidden = true; dropKeepHash();
+    G.toast("Nothing was added");
+    $("savedOnly").focus();
   });
 })();
