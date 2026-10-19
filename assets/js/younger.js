@@ -3,12 +3,12 @@
   "use strict";
   var G = window.TIG, L = G.lib;
   var $ = function (id) { return document.getElementById(id); };
-  function a(t, u) { return '<a href="' + G.esc(u) + '" target="_blank" rel="noopener">' + G.esc(t) + "</a>"; }
+  function a(t, u, l) { return '<a href="' + G.esc(u) + '" target="_blank" rel="noopener"' + (l ? ' aria-label="' + G.esc(l) + '"' : "") + ">" + G.esc(t) + "</a>"; }
   function li(arr) { return arr.map(function (x) { return "<li>" + G.esc(x) + "</li>"; }).join(""); }
-  /* States with a full work permit answer in data/permits.json that are not one of the four full under-14 states, and not British Columbia (not in the picker). The names are copied from permits.json; tests/p9-younger-1.test.mjs checks them. */
+  /* States with a full work permit answer in data/permits.json that are not one of the four full under-14 states, nor British Columbia (not in the picker). Names copied from permits.json; tests/p9-younger-1.test.mjs checks them. */
   var PERMIT_NAMES = { wa: "Washington", tx: "Texas", mn: "Minnesota", wi: "Wisconsin", in: "Indiana", mi: "Michigan", nc: "North Carolina", nj: "New Jersey", pa: "Pennsylvania", ma: "Massachusetts", oh: "Ohio", md: "Maryland", va: "Virginia" };
   function isPermitOnly(v) { return !!v && Object.prototype.hasOwnProperty.call(PERMIT_NAMES, v); }
-  /* Adds the permit-only states to the picker, in name order among the other states. The four full states come first and are skipped. */
+  /* Adds the permit-only states to the picker, in name order among the others. The four full states come first and are skipped. */
   function addPermitOptions(full) {
     var ys = $("yState");
     if (!ys) return;
@@ -97,7 +97,7 @@
   }
   G.fetchData("data/younger.json").then(function (r) { return r.json(); }).then(function (d) {
     try { G.loadEntries("core").then(fillCounts).catch(plainCounts); } catch (e) { plainCounts(); }
-    /* The age from the address (?age=, sent by the permit finder), then the age last saved on Programs (localStorage "findprefs"), read only. Only 12, 13 or 14 count; anything else keeps 13. */
+    /* The age from the address (?age=, sent by the permit finder), then the age last saved on Programs (localStorage "findprefs"), read only. Only 12, 13 or 14 count; else 13. */
     var nextAge = "13", qAge = "";
     try { qAge = new URLSearchParams(location.search).get("age") || ""; } catch (e) { /* no address age */ }
     if (/^(12|13|14)$/.test(qAge)) nextAge = qAge;
@@ -122,10 +122,10 @@
     $("otherStateRule").innerHTML = G.esc(os.rule) + " " + a(os.source.t, os.source.u) + ".";
     $("otherStateSteps").innerHTML = li(os.steps);
     $("fedNote").innerHTML = G.esc(d.federal) + " " + a(d.federalSource.t, d.federalSource.u) + ".";
-    /* The four full states. A state with a short answer has no column here: the table keeps all four, and its short card sits under "Any other state". */
+    /* The four full states. A short-answer state has no column here: the table keeps all four, and its short card sits under "Any other state". */
     function isFour(v) { return d.states.some(function (s) { return s[0] === v; }); }
     function hasOpt(v) { return !!v && !!$("yState").querySelector('option[value="' + v + '"]'); }
-    /* The card for a permit-only state: name, the full answer link, hours at 14 and the state wage (both from the shared helpers the jobs page uses), and the under-14 line. */
+    /* The card for a permit-only state: name, the full answer link, hours at 14 and the state wage (shared helpers the jobs page uses), and the under-14 line. */
     function showPermit(v) {
       var box = $("otherLite"), age = permitAge();
       box.innerHTML = "";
@@ -162,10 +162,10 @@
         box.hidden = false;
       });
     }
-    /* The four names for the line above the table, written from data/younger.json, e.g. "California, Georgia, New York and Illinois". */
+    /* The four names for the line above the table, from data/younger.json, e.g. "California, Georgia, New York and Illinois". */
     var fourNames = d.states.map(function (s) { return s[1]; });
     var fourText = fourNames.slice(0, -1).join(", ") + " and " + fourNames[fourNames.length - 1];
-    /* For a state outside the four, one plain line sits right above the table: the table has no column for that state, and the state card is below the table. */
+    /* For a state outside the four, one plain line sits above the table: the table has no column for that state, and its card is below the table. */
     function syncGridNote(v) {
       var note = $("gridNote");
       if (!note) return;
@@ -190,12 +190,15 @@
       var head = "<thead role=\"rowgroup\"><tr role=\"row\"><th scope=\"col\" role=\"columnheader\">What you want to do</th>" + sts.map(function (s) { return "<th scope=\"col\" role=\"columnheader\">" + G.esc(s[1]) + "</th>"; }).join("") + "</tr></thead>";
       var body = "<tbody role=\"rowgroup\">" + d.rows.map(function (r) {
         return "<tr role=\"row\"><th scope=\"row\" role=\"rowheader\">" + G.esc(r.job) + "</th>" + sts.map(function (s) {
-          var c = r.cells[s[0]]; var NS = "Not stated on the pages we read.", unk = c.t.indexOf(NS) === 0, rest = unk ? c.t.slice(NS.length).trim() : ""; return "<td role=\"cell\">" + k(s[1]) + (unk ? '<span class="tag ghost" style="white-space:normal;line-height:1.25;">' + G.esc(d.unknownChip) + "</span>" + (rest ? " " + L.linkContacts(rest) : "") : L.linkContacts(c.t)) + (c.s ? '<br><span class="small">' + a(c.s.t, c.s.u) + "</span>" : "") + "</td>";
+          var c = r.cells[s[0]]; var NS = "Not stated on the pages we read.", unk = c.t.indexOf(NS) === 0, rest = unk ? c.t.slice(NS.length).trim() : "";
+          /* An unknown cell says "ask a parent to call", so it carries the number to call (the Who to ask row's), unless its own text already has one. */
+          if (unk && d.calls[s[0]] && !/\d{3}[-. ]\d{4}/.test(rest)) rest = (rest ? rest + " " : "") + "Call " + d.calls[s[0]] + ".";
+          return "<td role=\"cell\">" + k(s[1]) + (unk ? '<span class="tag ghost" style="white-space:normal;line-height:1.25;">' + G.esc(d.unknownChip) + "</span>" + (rest ? " " + L.linkContacts(rest) : "") : L.linkContacts(c.t)) + (c.s ? '<br><span class="small">' + a(c.s.t, c.s.u) + "</span>" : "") + "</td>";
         }).join("") + "</tr>";
       }).join("") + "<tr role=\"row\"><th scope=\"row\" role=\"rowheader\">Who to ask</th>" + sts.map(function (s) { return "<td role=\"cell\">" + k(s[1]) + L.linkContacts(d.calls[s[0]]) + "</td>"; }).join("") + "</tr></tbody>";
       $("gridT").innerHTML = '<caption class="sr">What a 12 or 13 year old may do, by state</caption>' + head + body;
     }
-    /* The picker's options are written into the page by tools/build.py: the four full states first, then every other state with a short answer, from the data files. */
+    /* The picker's options are written into the page by tools/build.py: the four full states first, then every other state with a short answer. */
     var ys = $("yState");
     var want = ""; try { want = new URLSearchParams(location.search).get("state") || ""; } catch (e) {}
     ys.value = hasOpt(want) ? want : "";
@@ -219,7 +222,7 @@
       if (!btn) return;
       btn.setAttribute("href", L.PERMIT_STATES.indexOf(ys.value) > -1 ? "permit.html?state=" + encodeURIComponent(ys.value) : "permit.html");
     }
-    /* Keep the picked state in the address (state=ny), so a copied or texted link opens on the same state. "All four states" removes it. */
+    /* Keep the picked state in the address (state=ny), so a copied or texted link opens on it. "All four states" removes it. */
     function syncStateUrl(v) {
       try {
         var p = new URLSearchParams(location.search);
@@ -253,7 +256,7 @@
     $("sitH").textContent = d.sitting.title; $("sitLabel").textContent = d.sitting.label; $("sitL").innerHTML = li(d.sitting.tips);
     $("petH").textContent = d.petCare.title; $("petLabel").textContent = d.petCare.label; $("petNote").textContent = d.petCare.note; $("petL").innerHTML = li(d.petCare.tips);
     $("nearScript").textContent = d.near.script;
-    $("train").innerHTML = d.train.map(function (t) { return "<li><b>" + G.esc(t.t) + ".</b> " + G.esc(t.d) + " " + a("Official page", t.u) + "</li>"; }).join("");
+    $("train").innerHTML = d.train.map(function (t) { return "<li><b>" + G.esc(t.t) + ".</b> " + G.esc(t.d) + " " + a("Official page", t.u, "Official page: " + t.t) + "</li>"; }).join("");
     $("before").innerHTML = li(d.before); $("beforeSrc").innerHTML = "From " + a(d.beforeSource.t, d.beforeSource.u) + ".";
     $("strangers").innerHTML = li(d.strangers); $("strangersNote").innerHTML = G.esc(d.strangersNote) + " " + a(d.strangersSource.t, d.strangersSource.u) + ".";
     /* Sites with a minimum age of 18 or more go in the closed details; the rest stay in the open table. */
@@ -265,7 +268,7 @@
     if (!adult.length) $("sitesAdult").hidden = true;
     $("sitesNote").textContent = d.sitesNote;
     $("ladderL").innerHTML = d.ladder.map(function (x) { return "<li><div><b>Ages " + G.esc(x.age) + ": " + G.esc(x.t) + ".</b> " + G.esc(x.d) + "</div></li>"; }).join("");
-    $("groups").innerHTML = d.groups.map(function (g) { return '<article class="card"><h3>' + G.esc(g.n) + "</h3><p>" + G.esc(g.d) + "</p><p>" + a("Official page", g.u) + "</p></article>"; }).join("");
+    $("groups").innerHTML = d.groups.map(function (g) { return '<article class="card"><h3>' + G.esc(g.n) + "</h3><p>" + G.esc(g.d) + "</p><p>" + a("Official page", g.u, "Official page: " + g.n) + "</p></article>"; }).join("");
     $("moneyL").innerHTML = li(d.money); $("moneySrc").innerHTML = "Sources: " + d.moneySources.map(function (s) { return a(s.t, s.u); }).join(" &middot; ") + ". Ask the IRS or a tax professional about your own situation.";
     $("yGaps").innerHTML = li(d.gaps);
     $("yPrint").addEventListener("click", function () {

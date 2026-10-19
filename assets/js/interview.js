@@ -107,7 +107,7 @@
       syncLinks(st, age);
       var lines = ds.map(function (x, i) { return x ? DAYS[i] + ": " + clock(x.from) + " to " + clock(x.to) : null; }).filter(Boolean);
       var no = ds.map(function (x, i) { return x ? null : DAYS[i]; }).filter(Boolean);
-      var r = L.hoursCheck(st && pm.states[st] ? pm.states[st].limits : null, age, $("aSchool").value === "1", ds);
+      var r = L.hoursCheck(st && pm.states[st] ? pm.states[st].limits : null, age, $("aSchool").value === "1", ds, $("aSchool").value === "2");
       lastText = "My availability\n" + (lines.length ? lines.join("\n") : "(none yet)") + "\nAbout " + r.total + " hours a week. I cannot work: " + (no.length ? no.join(", ") : "none") + ".";
       if (!age && pend) { $("aOut").innerHTML = pendCard(st); msg = "The hour check covers ages 14 to 17."; return; }
       var h = "<h3>" + r.total + " hours a week offered</h3><p>" + (lines.length ? G.esc(lines.join(". ")) + "." : "No days chosen yet.") + "</p>";

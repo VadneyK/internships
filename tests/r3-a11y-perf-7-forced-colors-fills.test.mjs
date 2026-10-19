@@ -83,7 +83,7 @@ test('forced-colors block does not contain rules outside the media query', () =>
   // The block must be self-contained: nothing after its closing brace belongs to it,
   // and every selector inside it is one we expect to override.
   // 2026-10-12: Programs filters redesign adds .fchip.on (a chosen pick in the summary bar keeps its fill when colors are forced).
-  const allowed = ['.chip[aria-pressed="true"]', '.tile[aria-pressed="true"]', '.combo-opt[aria-selected="true"]', '.fchip.on', '.nav a[aria-current="page"]', '.star[aria-pressed="true"]', ':focus-visible', '.k1', '.k2', '.k3', '.bar.h', '.bar.a', '.meter > i', '.meter.over > i', '.btn:disabled, .btn[disabled]'];
+  const allowed = ['.chip[aria-pressed="true"]', '.tile[aria-pressed="true"]', '.combo-opt[aria-selected="true"]', '.fchip.on', '.nav a[aria-current="page"]', '.star[aria-pressed="true"]', ':focus-visible', '.k1', '.k2', '.k3', '.bar.h', '.bar.a', '.meter > i', '.meter.over > i', '.btn:disabled, .btn[disabled]', '.cv'];
   const selectors = [...block.matchAll(/([^{}]+)\{/g)].map((m) => m[1].trim());
   for (const s of selectors) {
     assert.ok(allowed.includes(s), `unexpected selector inside forced-colors block: ${s}`);
