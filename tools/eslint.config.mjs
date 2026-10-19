@@ -30,4 +30,9 @@ export default [
       "no-unused-vars": ["error", { args: "none", caughtErrors: "none" }],
     },
   },
+  {
+    // the street map is the one page script loaded as a module (it imports the vendored MapLibre build)
+    files: ["assets/js/map-gl.js"],
+    languageOptions: { sourceType: "module" },
+  },
 ];
