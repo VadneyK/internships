@@ -193,10 +193,12 @@ test("the Spanish header and footer have no English text left", () => {
 // (100,488 bytes; the same three shared files as 404.html, plus es.js), so a change to a shared file can trip these rows too.
 const CEILINGS = {
   // 2026-10-19: lib.js and common.js grew on main (calendar, grade flag, keep my list, screen reader names); es/index.html first-load code 100500 to 102900 (102884 measured). PENDING PERSON APPROVAL.
+  // 2026-10-19: es/playbook.html and es/rules.html first-load code 100500 to 102900 for the same lib.js and common.js growth. PENDING PERSON APPROVAL.
   // 2026-10-19: the trust line from PR 36 mirrored in Spanish; es/index.html page 21700 to 22100 (22011 measured). PENDING PERSON APPROVAL.
   "es/index.html": { html: 22100, code: 102900 },
-  "es/playbook.html": { html: 25000, code: 100500 },
-  "es/rules.html": { html: 40800, code: 100500 },
+  "es/playbook.html": { html: 25000, code: 102900 },
+  // 2026-10-19: the not-in-California callout from PR 36 mirrored in Spanish; es/rules.html page 40800 to 41400 (41312 measured). PENDING PERSON APPROVAL.
+  "es/rules.html": { html: 41400, code: 102900 },
 };
 test("Spanish pages stay under their byte ceilings (page and first-load code)", () => {
   assert.deepEqual(Object.keys(CEILINGS).sort(), PAGES.map((p) => `es/${p}.html`), "one row per Spanish page");
