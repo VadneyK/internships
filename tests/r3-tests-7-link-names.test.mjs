@@ -19,7 +19,6 @@ const GENERIC = new Set(["here", "click here", "link", "more", "read more", "det
 const ALLOWLIST = [
   { page: "about.html", name: "Rules page", count: 2, kind: "clash" },
   { page: "find.html", name: "What opens when", count: 3, kind: "clash" },
-  { page: "insights.html", name: "See card", count: 8, kind: "clash" },
   { page: "parents.html", name: "Ages 12 to 14", count: 14, kind: "clash" },
   { page: "parents.html", name: "Apply and interview", count: 8, kind: "clash" },
   { page: "parents.html", name: "Get ready", count: 8, kind: "clash" },
@@ -30,7 +29,6 @@ const ALLOWLIST = [
   { page: "ready.html", name: "Playbook", count: 3, kind: "clash" },
   { page: "ready.html", name: "See how", count: 6, kind: "clash" },
   { page: "safety.html", name: "dir.ca.gov (opens in a new tab)", count: 3, kind: "clash" },
-  { page: "younger.html", name: "Official page (opens in a new tab)", count: 8, kind: "clash" },
 ];
 
 function norm(s) { return String(s || "").replace(/\s+/g, " ").trim(); }
