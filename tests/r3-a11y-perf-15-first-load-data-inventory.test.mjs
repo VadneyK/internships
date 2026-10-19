@@ -26,7 +26,8 @@ export const TABLE = {
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) find.html limit 2468900 to 2496100. PENDING PERSON APPROVAL.
   // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. find.html limit 2496100 to 2507300.
   // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) find.html limit 2540600.
-  "find.html": { paths: ["data/entries-lite.json"], ceiling: 2540600, reason: "Find filters every program, so it needs the whole lite file" },
+  // 2026-10-19 issue 5 Confirm first: CHP East Sacramento and Michigan 4-H Exploration Days re-read in a real browser (2 cards changed, 2,680 programs; PENDING PERSON APPROVAL) find.html limit 2540600 to 2540800.
+  "find.html": { paths: ["data/entries-lite.json"], ceiling: 2540800, reason: "Find filters every program, so it needs the whole lite file" },
   // 2026-10-15: the Map page (754,977 bytes measured; about 151 KB gzipped). It counts every program by city, so it reads the map projection
   // (name, org and the keys the age, pay and open filters test) and the city points. PENDING PERSON APPROVAL for this weight on phones.
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) map.html limit 760000 to 763100. PENDING PERSON APPROVAL.
