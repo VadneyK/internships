@@ -6,8 +6,8 @@
 - Many pages show 2026 dates because the 2027 cycle is not posted yet. Those entries are marked last-year-pattern.
 
 ## Gaps not closed
-- Yolo County government: no current high school intern program found. The old Yolo County High School Summer Intern Program (ages 15 to 19) shows up only in 2009 to 2013 documents.
-- City of Davis: seasonal recreation jobs (lifeguard, camp staff) are posted only when open; minimum age is in each posting. Not confirmed.
+- Yolo County government: no current high school intern program found (checked again 2026-10-16). The old Yolo County High School Summer Intern Program (ages 15 to 19) shows up only in 2009 to 2013 documents.
+- City of Davis: closed 2026-10-16. Seasonal lifeguard, swim instructor and camp recreation leader jobs start at 15 (outdoor camps 16) and are posted late January to February. See orgs-hospitals-jobs-notes.md.
 - Thousand Strong (City of Sacramento) is not on the current city youth workforce page.
 - Not found or not confirmed: Sutter Medical Center Sacramento teen volunteers, Crocker Art Museum teen volunteers, Intel Folsom, Sac Metro Chamber youth internships, SacRT, Cal Expo teen jobs, Mondavi Center teen ushers, Davis Chamber internships, Boys and Girls Clubs, YMCA teen jobs, Sacramento Children's Museum, Powerhouse Science Center (site did not load), Rancho Cordova and Citrus Heights city teen jobs.
 - Wage rates are missing for the Home Run, YCCA, Sacramento Works and Urban Ag entries.
