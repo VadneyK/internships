@@ -25,11 +25,11 @@ test("money.json gaps say Cook County outside Chicago is $15.40 and the estimate
   assert.ok(gap.includes("This estimate uses the state rate of $15.00"), gap);
 });
 
-test("parents.json points to states.html#other for Cook County and does not repeat the rate", () => {
+test("parents.json points to states.html#illinois for Cook County and does not repeat the rate", () => {
   const all = allStrings(parents);
   assert.ok(!all.some((s) => s.includes("15.40")), "parents.json must not repeat $15.40");
-  const pointer = (parents.money?.pay || []).find((s) => s.p === "states.html#other");
-  assert.ok(pointer, "parents.json pay has a states.html#other statement");
+  const pointer = (parents.money?.pay || []).find((s) => s.p === "states.html#illinois");
+  assert.ok(pointer, "parents.json pay has a states.html#illinois statement (the Illinois section holds the Cook County rate; #other was the page top, changed 2026-10-16)");
   assert.ok(pointer.t.includes("Cook County outside Chicago"), pointer.t);
 });
 

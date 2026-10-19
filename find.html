@@ -24,8 +24,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=68f684e6">
-<link rel="stylesheet" href="assets/css/style.css?v=68f684e6">
+<link rel="stylesheet" href="assets/css/fonts.css?v=203d8126">
+<link rel="stylesheet" href="assets/css/style.css?v=203d8126">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 document.documentElement.classList.add("js");
@@ -59,9 +59,10 @@ setTimeout(function () { if (!document.querySelector(".top.menu-js")) document.d
 <main id="main" tabindex="-1">
 <section style="padding-block: 2rem 1rem;">
   <div class="wrap">
-    <span class="tag y eyebrow">2724 programs &middot; checked Oct 16, 2026</span>
+    <span class="tag y eyebrow">2761 programs &middot; checked Oct 19, 2026</span>
     <h1 class="display">Find a <span class="orange">program</span></h1>
     <p class="lede">Pick your area and your age. Every card links to the official page. Only some dates are confirmed for 2026 to 2027, so check each program's own page.</p>
+    <p class="small muted" data-trust style="margin:.6rem 0 0;">Free. No sign-up, no ads. Made by a volunteer, Kentaro Vadney, not by Ignition, Acts 2 Network, AYM or a church. Questions: github.com/VadneyK/internships/issues.</p>
     <p class="small muted" style="margin:.75rem 0 0;">To save a program, tap the star on its card. Your saved list is called My list, and it stays on this device.</p>
   </div>
 </section>
@@ -179,12 +180,24 @@ setTimeout(function () { if (!document.querySelector(".top.menu-js")) document.d
     </div>
     <p class="small noprint" style="margin:-.5rem 0 1rem;"><a href="map.html">See these on a map</a></p>
 
+    <div id="keepAsk" class="callout noprint" hidden role="group" aria-labelledby="keepAskH" style="margin-bottom:1rem;max-width:52rem;">
+      <h2 id="keepAskH" tabindex="-1" style="font-size:1.25rem;margin:0 0 .35em;">Add these programs to your list?</h2>
+      <p id="keepAskP" class="small"></p>
+      <div class="chips"><button class="btn sm dark" type="button" id="keepAdd">Add them to my list</button> <button class="btn sm alt" type="button" id="keepSkip">No thanks</button></div>
+    </div>
     <div id="listActions" class="chips noprint" hidden style="margin-bottom:1rem;">
       <button class="btn sm dark" type="button" id="printList">Print my list</button>
       <button class="btn sm alt" type="button" id="copyList">Copy my list</button>
+      <button class="btn sm alt" type="button" id="downloadList" hidden>Download my list</button>
       <a class="btn sm alt" id="textList" href="sms:" hidden>Text it to myself</a>
       <a class="btn sm alt" id="emailList" href="mailto:" hidden>Email it to myself</a>
+      <a class="btn sm alt" id="parentList" href="mailto:" hidden>Send to a parent</a>
+      <button class="btn sm alt" type="button" id="keepLink" hidden>Copy a link to my list</button>
+      <button class="btn sm alt" type="button" id="exportList" hidden>Save a backup file</button>
+      <button class="btn sm alt" type="button" id="importList">Load a backup file</button>
+      <input type="file" id="importFile" accept=".json,application/json" aria-label="Backup file to load" hidden>
     </div>
+    <p id="listHow" class="small muted noprint" hidden style="margin:-.5rem 0 1rem;max-width:52rem;">We do not make accounts or collect emails. Send to a parent opens your own mail app with the list in it, and you type the address. Copy a link to my list gives you a link that opens this list on any phone or computer. A parent or teacher can open the same link.<span id="keepCapNote" hidden> A link holds your first <span id="keepCapN">40</span> programs. Save a backup file keeps all of them.</span></p>
     <p id="listNext" class="noprint" hidden style="margin:-.5rem 0 1rem;">Saved <span id="listNextN">0</span>. Next: write to one person who works at one of them (<a href="playbook.html">Write your message</a>) or see when they open (<a href="calendar.html">What opens when</a>).</p>
 
     <div id="gaps" class="callout" hidden></div>
@@ -192,8 +205,10 @@ setTimeout(function () { if (!document.querySelector(".top.menu-js")) document.d
     <details id="howToRead" class="callout plain small" style="margin-bottom:1rem; max-width: 52rem;">
       <summary class="lbl" style="cursor:pointer;">How to read the tags</summary>
       <p><b>How to read this list.</b> A <span class="tag good">Read on official site</span> tag means we opened the program&rsquo;s own page. It does not mean that page gave every age, pay or date, so check those with the program before you plan around them. <span class="tag warn">Confirm first</span> means we found it but could not read the official page, so check it yourself before you plan around it. Programs that already closed are still here with the month they usually reopen. A <span class="tag warn">Based on last year</span> tag means the date follows last cycle's pattern, and the program has not posted new dates yet. None of these tags means we visited, screened or recommend a program.</p>
+      <p>With an age picked, a <span class="tag warn">May be too young</span> or <span class="tag warn">May be too old</span> tag means the grades on the card start higher, or end lower, than the grade most teens that age are in. Check the grades with the program.</p>
     </details>
 
+    <p id="costNote" class="small" style="margin:0 0 1rem;">Cards tagged <span class="tag warn">Costs money</span> charge a fee. Ask the program about aid before you rule one out, and show a parent before you pay anything. A job should never ask you to pay to apply.</p>
     <p id="picksNudge" class="small muted" style="margin:0 0 1rem;">Pick your age and area to see programs picked for you.</p>
     <section id="picks" class="callout plain picks" aria-labelledby="picksH" hidden>
       <h2 id="picksH" style="font-size:1.25rem;">Good fit for you</h2>
@@ -232,14 +247,14 @@ setTimeout(function () { if (!document.querySelector(".top.menu-js")) document.d
 </section>
 
 </main>
-<p class="printonly print-source small" aria-hidden="true">Teen internship guide: https://vadneyk.github.io/internships/find.html. Last checked Oct 16, 2026.</p>
+<p class="printonly print-source small" aria-hidden="true">Teen internship guide: https://vadneyk.github.io/internships/find.html. Last checked Oct 19, 2026.</p>
 <footer class="foot">
   <div class="wrap">
     <div class="cols">
       <div>
         <h2 class="fh">Teen internship guide</h2>
         <p>Free. No sign-up, no ads, no tracking. Everything you type here stays in your browser.</p>
-        <p class="small">Last checked <b>Oct 16, 2026</b> &middot; 2724 programs</p>
+        <p class="small">Last checked <b>Oct 19, 2026</b> &middot; 2761 programs</p>
       </div>
       <nav aria-label="Quick links">
         <h2 class="fh">Quick links</h2>
@@ -282,9 +297,9 @@ setTimeout(function () { if (!document.querySelector(".top.menu-js")) document.d
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=68f684e6"></script>
-<script src="assets/js/common.js?v=68f684e6"></script>
-<script src="assets/js/find.js?v=68f684e6"></script>
+<script src="assets/js/lib.js?v=203d8126"></script>
+<script src="assets/js/common.js?v=203d8126"></script>
+<script src="assets/js/find.js?v=203d8126"></script>
 
 </body>
 </html>

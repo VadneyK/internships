@@ -8,7 +8,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const FILES = ["money", "younger", "parents", "interview", "languages", "safety", "transit", "calendar", "permits", "states-lite", "gaps", "meta", "state-wages"];
+const FILES = ["money", "younger", "parents", "interview", "languages", "safety", "transit", "calendar", "permits", "states-lite", "gaps", "meta", "state-wages", "wages-2027"];
 
 // Allowed exceptions. Each entry is { file, rule, path, why }. In a path, [*] matches any array index and .* matches any one key.
 // null on purpose means "no value applies" (no permit needed, no limit, no open date). Data is not edited by this ticket.
@@ -23,6 +23,7 @@ const KNOWN = [
   { file: "permits", rule: "null", path: "$.states.*.limits.*", why: "null means no limit for that age" },
   { file: "permits", rule: "null", path: "$.states.*.limits.*.*", why: "null means no limit for that field" },
   { file: "gaps", rule: "empty-array", path: "$[*].hubs", why: "a gap with no hubs listed uses an empty list" },
+  { file: "wages-2027", rule: "null", path: "$.rows[*].wage_2027", why: "null means the official page gave no 2027 figure yet (the row's status says so)" },
 ];
 const toRe = (pat) => new RegExp("^" + pat.replace(/[$.[\]]/g, "\\$&").replace(/\\\[\*\\\]/g, "\\[\\d+\\]").replace(/\\\.\*/g, "\\.[^.\\[]+") + "$");
 const KNOWN_RE = KNOWN.map((k) => ({ ...k, re: toRe(k.path), hits: 0 }));
@@ -80,6 +81,14 @@ for (const f of FILES) {
 }
 
 test("every KNOWN exception still matches something (no stale entries)", () => {
+  // Walk every file here instead of reading the counts the tests above left behind, so this test also passes when it
+  // runs alone (--test-name-pattern) or first (2026-10-17: it failed alone with every entry stale).
+  for (const k of KNOWN_RE) k.hits = 0;
+  for (const f of FILES) {
+    const out = [];
+    walk(f, JSON.parse(fs.readFileSync(path.join(ROOT, "data", f + ".json"), "utf8")), "$", out);
+    for (const [rule, at] of out) isKnown(f, rule, at.slice(f.length + 1).split(" ")[0]);
+  }
   const stale = KNOWN_RE.filter((k) => k.hits === 0).map((k) => k.file + " " + k.rule + " " + k.path);
   assert.deepEqual(stale, []);
 });
