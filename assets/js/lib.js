@@ -334,11 +334,11 @@
   /*
     Check a weekly availability plan against the hour limits we read for an age and state.
     limits is permits.json states[st].limits; days is 7 items (Monday first) of {from, to} in 24 hour numbers or null.
-    This checks the hours a teen offers, which is more than they would be scheduled, so it is a heads-up, not a ruling.
+    It checks hours offered (more than a schedule): a heads-up, not a ruling. notSummer (winter or spring break) keeps the school-time
+    latest hour, since 9 p.m. runs June 1 to Labor Day.
   */
   var DAY_NAMES = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-  /* An hour of the day as people say it: 7 -> "7 a.m.", 19 -> "7 p.m.", 21.5 -> "9:30 p.m.", 12 -> "noon", 0 or 24 -> "midnight".
-     2026-10-15: the old inline label printed a limit of 24 (Pennsylvania at 16, two summer rows) as "12 p.m.", which is noon. */
+  /* An hour of the day as people say it: 7 -> "7 a.m.", 19 -> "7 p.m.", 21.5 -> "9:30 p.m.", 12 -> "noon", 0 or 24 -> "midnight". */
   function clockLabel(h) {
     var x = ((+h % 24) + 24) % 24, hr = Math.floor(x), min = Math.round((x - hr) * 60);
     if (min === 60) { hr = (hr + 1) % 24; min = 0; }
@@ -346,7 +346,7 @@
     if (!min && hr === 12) return "noon";
     return (hr % 12 || 12) + (min ? ":" + (min < 10 ? "0" : "") + min : "") + (hr < 12 ? " a.m." : " p.m.");
   }
-  function hoursCheck(limits, age, inSchool, days) {
+  function hoursCheck(limits, age, inSchool, days, notSummer) {
     var a = +age, band = a >= 18 ? "" : a >= 16 ? "16" : a >= 14 ? "14" : "";
     if (!Array.isArray(days)) days = [];
     var total = 0, per = days.map(function (d) { return d && isFinite(d.from) && isFinite(d.to) && typeof d.from !== "string" && typeof d.to !== "string" && d.from != null && d.to != null && d.to > d.from ? d.to - d.from : 0; });
@@ -360,7 +360,7 @@
       var schoolDay = inSchool && (lim.weekdayOnly ? i <= 3 : i <= 4);
       var max = schoolDay ? lim.schoolDay : lim.nonSchoolDay;
       if (max != null && per[i] > max) out.problems.push(DAY_NAMES[i] + ": " + per[i] + " hours is more than the " + max + " hour limit on " + (schoolDay ? "a school day" : "a day off from school") + " at " + a + ".");
-      var latest = !inSchool && lim.latestSummer != null ? lim.latestSummer : lim.latest;
+      var latest = !inSchool && !notSummer && lim.latestSummer != null ? lim.latestSummer : lim.latest;
       if (lim.earliest != null && d.from < lim.earliest) out.problems.push(DAY_NAMES[i] + ": starting before " + clockLabel(lim.earliest) + " is not allowed at " + a + ".");
       if (latest != null && d.to > latest) out.problems.push(DAY_NAMES[i] + ": the end time is past the usual limit of " + clockLabel(latest) + " at " + a + "." + (lim.lateNote && lim.lateMax != null && d.to <= lim.lateMax ? " There is an exception: " + lim.lateNote + "." : ""));
     });

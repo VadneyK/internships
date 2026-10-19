@@ -513,7 +513,7 @@
   function chipGroup(id, items, key, multi) {
     var box = $(id);
     box.innerHTML = items.map(function (it) {
-      return '<button class="chip" type="button" data-key="' + key + '" data-val="' + G.esc(it[0]) + '" data-label="' + G.esc(it[1]) + '" aria-pressed="false">' + G.esc(it[1]) + '<span class="n">' + (it[2] != null ? it[2] : "") + "</span></button>";
+      return '<button class="chip" type="button" data-key="' + key + '" data-val="' + G.esc(it[0]) + '" data-label="' + G.esc(it[1]) + '" aria-pressed="false">' + G.esc(it[1]) + ' <span class="n">' + (it[2] != null ? it[2] : "") + "</span></button>";
     }).join("");
     box.addEventListener("click", function (ev) {
       var b = ev.target.closest(".chip"); if (!b) return;
