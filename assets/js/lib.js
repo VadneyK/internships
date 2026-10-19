@@ -334,11 +334,11 @@
   /*
     Check a weekly availability plan against the hour limits we read for an age and state.
     limits is permits.json states[st].limits; days is 7 items (Monday first) of {from, to} in 24 hour numbers or null.
-    This checks the hours a teen offers, which is more than they would be scheduled, so it is a heads-up, not a ruling.
+    It checks hours offered (more than a schedule): a heads-up, not a ruling. notSummer (winter or spring break) keeps the school-time
+    latest hour, since 9 p.m. runs June 1 to Labor Day.
   */
   var DAY_NAMES = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-  /* An hour of the day as people say it: 7 -> "7 a.m.", 19 -> "7 p.m.", 21.5 -> "9:30 p.m.", 12 -> "noon", 0 or 24 -> "midnight".
-     2026-10-15: the old inline label printed a limit of 24 (Pennsylvania at 16, two summer rows) as "12 p.m.", which is noon. */
+  /* An hour of the day as people say it: 7 -> "7 a.m.", 19 -> "7 p.m.", 21.5 -> "9:30 p.m.", 12 -> "noon", 0 or 24 -> "midnight". */
   function clockLabel(h) {
     var x = ((+h % 24) + 24) % 24, hr = Math.floor(x), min = Math.round((x - hr) * 60);
     if (min === 60) { hr = (hr + 1) % 24; min = 0; }
@@ -346,7 +346,7 @@
     if (!min && hr === 12) return "noon";
     return (hr % 12 || 12) + (min ? ":" + (min < 10 ? "0" : "") + min : "") + (hr < 12 ? " a.m." : " p.m.");
   }
-  function hoursCheck(limits, age, inSchool, days) {
+  function hoursCheck(limits, age, inSchool, days, notSummer) {
     var a = +age, band = a >= 18 ? "" : a >= 16 ? "16" : a >= 14 ? "14" : "";
     if (!Array.isArray(days)) days = [];
     var total = 0, per = days.map(function (d) { return d && isFinite(d.from) && isFinite(d.to) && typeof d.from !== "string" && typeof d.to !== "string" && d.from != null && d.to != null && d.to > d.from ? d.to - d.from : 0; });
@@ -360,7 +360,7 @@
       var schoolDay = inSchool && (lim.weekdayOnly ? i <= 3 : i <= 4);
       var max = schoolDay ? lim.schoolDay : lim.nonSchoolDay;
       if (max != null && per[i] > max) out.problems.push(DAY_NAMES[i] + ": " + per[i] + " hours is more than the " + max + " hour limit on " + (schoolDay ? "a school day" : "a day off from school") + " at " + a + ".");
-      var latest = !inSchool && lim.latestSummer != null ? lim.latestSummer : lim.latest;
+      var latest = !inSchool && !notSummer && lim.latestSummer != null ? lim.latestSummer : lim.latest;
       if (lim.earliest != null && d.from < lim.earliest) out.problems.push(DAY_NAMES[i] + ": starting before " + clockLabel(lim.earliest) + " is not allowed at " + a + ".");
       if (latest != null && d.to > latest) out.problems.push(DAY_NAMES[i] + ": the end time is past the usual limit of " + clockLabel(latest) + " at " + a + "." + (lim.lateNote && lim.lateMax != null && d.to <= lim.lateMax ? " There is an exception: " + lim.lateNote + "." : ""));
     });
@@ -656,6 +656,44 @@
     return sortList(keep, "best", now, p).slice(0, n == null ? 3 : Math.max(0, n));
   }
 
+  /* The grades a program takes, as this school year's grades ({ lo, hi }), from the text in e.grades. Rising, entering,
+     going into and summer before grades are next year's (one lower). Asides in parentheses are ignored, except a bare "(rising)".
+     null when the text is not plain: ages (even in an aside), GPAs, college, graduates, "not", or several parts. */
+  var CLASS_WORDS = [[/\bfreshm[ae]n\b/, 9], [/\bsophomores?\b/, 10], [/\bjuniors?\b/, 11], [/\bseniors?\b/, 12]];
+  function gradeSpan(raw) {
+    var t = String(raw == null ? "" : raw).toLowerCase();
+    if (/\bages?\b/.test(t)) return null;
+    t = t.replace(/\((rising|entering|incoming)\b(,[^)]*)?\)/g, " $1 ").replace(/\([^)]*\)/g, " ");
+    if (!t.trim() || /[;:]|\.\s|gpa|\d\.\d|college|graduat|adult|\bnot\b|\bany\b/.test(t)) return null;
+    t = t.replace(/\bjunior high\b/g, " grades 7 to 8 ");
+    var g = [], m, re = /\b(\d{1,2})(?:st|nd|rd|th)?\b/g;
+    while ((m = re.exec(t))) { var n = +m[1]; if (n < 1 || n > 12) return null; g.push(n); }
+    var nums = g.length, cls = false;
+    CLASS_WORDS.forEach(function (w) { if (w[0].test(t)) { g.push(w[1]); cls = true; } });
+    if (/kindergarten|\bk\b/.test(t)) g.push(1);
+    var mid = /\bmiddle\b/.test(t), high = /\bhigh school\b/.test(t);
+    if (mid) g.push(6, 8);
+    /* "High school" alone is 9 to 12; next to grades or class words it names the school, unless middle is named */
+    if (high && !cls && (!nums || mid)) g.push(9, 12);
+    if (!g.length) return null;
+    var lo = Math.min.apply(null, g), hi = Math.max.apply(null, g);
+    /* "9 and up", "at least 8th", "finished 8th" and "8th through high school" set a floor, not a top */
+    if (/\band (up|older|above)\b|\bor (higher|older|above|more)\b|\+|at least|equal to|minimum|finished|completed|through[^.]*high school/.test(t)) hi = 12;
+    if (/\b(rising|enter(s|ing)?|incoming|going into|summer before)\b/.test(t) && !/\bcurrent(ly)?\b|\bwhen (you )?apply|\bat (the )?(time of )?application/.test(t)) { lo -= 1; hi -= 1; }
+    return { lo: lo, hi: hi };
+  }
+  /* "young", "old" or "": whether a program's grades likely leave out a teen of this age. Most teens are in grade age - 5, so
+     "young": the lowest grade is above that; "old": the highest is two or more below. Cards with ages are left to the age filter. */
+  function gradeFit(e, age) {
+    var a = +age;
+    if (!e || !e.grades || !(a >= 12 && a <= 18) || e.min_age != null || e.max_age != null) return "";
+    var s = gradeSpan(e.grades), g = a - 5;
+    if (!s) return "";
+    if (s.lo > g) return "young";
+    if (s.hi < g - 1) return "old";
+    return "";
+  }
+
   function ageText(e) {
     var bits = [];
     if (e.min_age != null && e.max_age != null) bits.push("Ages " + e.min_age + " to " + e.max_age);
@@ -815,7 +853,7 @@
     matches: matches, facetCounts: facetCounts, relaxOptions: relaxOptions, placeCounts: placeCounts, rank: rank, compare: compare, sortList: sortList, topPicks: topPicks, ageText: ageText,
     STATUSES: STATUSES, toISO: toISO, addDays: addDays, followUpISO: followUpISO, planSummary: planSummary,
     icsEvent: icsEvent, mailtoHref: mailtoHref, smsHref: smsHref, splitMessage: splitMessage, insights: insights, stateOf: stateOf, stateFromPlace: stateFromPlace, STATE_OF: STATE_OF, permitFor: permitFor, hoursCheck: hoursCheck, paycheck: paycheck, PERMIT_STATES: PERMIT_STATES, CITIES: CITIES, AREAS: AREAS, PLACE_ALIASES: PLACE_ALIASES, PICK_GROUPS: PICK_GROUPS, STATES: STATES, placeRegions: placeRegions, placeLabel: placeLabel, hubsOfPlace: hubsOfPlace,
-    gradePhrase: gradePhrase, blanksLeft: blanksLeft, linkContacts: linkContacts, whoToAskHtml: whoToAskHtml, clockLabel: clockLabel
+    gradePhrase: gradePhrase, gradeSpan: gradeSpan, gradeFit: gradeFit, blanksLeft: blanksLeft, linkContacts: linkContacts, whoToAskHtml: whoToAskHtml, clockLabel: clockLabel
   };
   return api;
 });

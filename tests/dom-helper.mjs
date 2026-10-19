@@ -51,6 +51,13 @@ export async function loadPage(file, { search = "", storage = {}, rawStorage = {
     pretendToBeVisual: true,
     virtualConsole: vc,
     beforeParse(w) {
+      // Under Stryker, share its mutant switch with the page so a mutated page script (find.js, permit.js...) runs its mutant.
+      // Stryker reads the mutant id from process.env, which the window has not got, so copy it over. A no-op otherwise.
+      const ns = globalThis.__stryker__;
+      if (ns) {
+        if (ns.activeMutant === undefined && process.env.__STRYKER_ACTIVE_MUTANT__) ns.activeMutant = process.env.__STRYKER_ACTIVE_MUTANT__;
+        w.__stryker__ = ns;
+      }
       if (typeof setup === "function") setup(w);
       if (typeof now === "number") {
         const RealDate = w.Date;

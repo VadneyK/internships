@@ -167,7 +167,7 @@ li { margin-bottom: .35em; }
 .menu-btn { display: none; }
 @media (max-width: 40rem) {
   .menu-btn { display: inline-flex; align-items: center; margin-left: auto; font: inherit; font-family: var(--display); font-stretch: 105%; font-weight: 800; font-style: italic; text-transform: uppercase; font-size: .85rem; letter-spacing: .02em; color: var(--ink); background: var(--surface); border: 2px solid var(--edge); border-radius: 999px; min-height: 2.75rem; padding: 0 1rem; cursor: pointer; }
-  .menu-btn + .theme-btn { margin-left: 0; }
+  .menu-btn ~ .theme-btn { margin-left: 0; }
   .top.menu-js .nav { display: none; }
   /* 2026-10-15: fold the nav from the first paint (html.js is set in the head), so the header does not shrink when common.js adds Menu */
   html.js .top:not(.open) .nav { display: none; }
@@ -195,9 +195,9 @@ li { margin-bottom: .35em; }
 main [id], .prog { scroll-margin-top: 5rem; }
 /* Keyboard focus (Tab) scrolls the target under the sticky header on desktop too; the header is static at 40rem and under */
 @media (min-width: 40.0625rem) { html { scroll-padding-top: 5rem; } }
-/* The header only sticks when the screen is also tall enough (34rem). On a short wide screen (a phone held sideways) it stays static,
-   so it never covers a third of the screen. When it sticks, the wrapped header is about 8rem tall, so the jump and focus offsets match it. */
-@media (min-width: 40.0625rem) and (min-height: 34rem) {
+/* The header sticks only at 64rem wide (under 7rem tall; at 40 to 64rem it was 13rem, over the 8rem offset, and hid focus)
+   and 34rem tall, so a phone held sideways keeps it static. */
+@media (min-width: 64rem) and (min-height: 34rem) {
   .top { position: sticky; }
   html { scroll-padding-top: 8rem; }
   main [id], .prog { scroll-margin-top: 8rem; }
@@ -378,8 +378,8 @@ tr:last-child td { border-bottom: 0; }
 tbody th[scope="row"] { background: transparent; color: var(--ink); text-transform: none; letter-spacing: normal; font-family: inherit; font-style: normal; font-size: inherit; border-bottom: 2px solid color-mix(in srgb, var(--edge) 25%, transparent); }
 /* .stackt: on phones each row becomes a block, the column name shows above each cell, and the head row hides. */
 .stackt .tk { display: none; }
-/* A phone number never breaks across lines ("833-526-" then "4636"). */
-a[href^="tel:"] { white-space: nowrap; }
+/* A phone number moves down whole, never "833-526-" then "4636"; it wraps only when wider than the line (320 px) */
+a[href^="tel:"] { display: inline-block; }
 @media (max-width: 40rem) {
   /* 2026-10-14: no table keeps the 34rem desktop floor on a phone. Every 2 and 3 column table fits at 390 px,
      and a wider one stacks with .stackt instead of scrolling sideways. */
@@ -760,6 +760,21 @@ details + #hClose { margin-top: 1.5rem; }
 .mapbox text { fill: var(--ink-2); stroke: var(--surface); paint-order: stroke; font-weight: 700; pointer-events: none; }
 .mapbox .bcl { stroke: none; }
 .mapbox .mlabel { fill: var(--ink); font-weight: 800; }
+/* street map (map-gl.js): the box takes its height first, the drawn map waits inside it, the street map covers it when ready */
+.mapbox.gl { position: relative; height: clamp(20rem, min(60vh, 115vw), 40rem); }
+.mapbox.gl > svg { height: 100%; aspect-ratio: auto; }
+/* transparent, not hidden: MapLibre does not draw (or finish loading) in a box the browser counts as hidden */
+.mapbox .mgl { position: absolute; inset: 0; opacity: 0; pointer-events: none; }
+.mapbox.gl-on .mgl { opacity: 1; pointer-events: auto; }
+.mapbox.gl-on > svg { display: none; }
+.mapbox .maplibregl-ctrl-group { border: 2px solid var(--edge); border-radius: 8px; box-shadow: var(--shadow-sm); background: var(--surface); }
+.mapbox .maplibregl-ctrl-group button { width: 2.75rem; height: 2.75rem; }
+.mapbox .maplibregl-ctrl-group button + button { border-top: 1px solid var(--edge); }
+.mapbox .maplibregl-ctrl-attrib { font: 12px/1.4 var(--body); background: color-mix(in srgb, var(--surface) 85%, transparent); }
+.mapbox .maplibregl-ctrl-attrib a { color: var(--ink); }
+.mapbox .maplibregl-cooperative-gesture-screen { font: 600 1.05rem/1.4 var(--body); }
+:root[data-theme="dark"] .mapbox .maplibregl-ctrl button .maplibregl-ctrl-icon { filter: invert(1); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .mapbox .maplibregl-ctrl button .maplibregl-ctrl-icon { filter: invert(1); } }
 .mpanel-top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem; }
 .mlist { list-style: none; padding: 0; margin: .6rem 0 0; display: grid; gap: .6rem; overflow-wrap: anywhere; }
 .mstate { padding: .2rem 1rem; margin-top: .6rem; box-shadow: none; }

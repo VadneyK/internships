@@ -16,6 +16,8 @@ const list = (d, ext) => readdirSync(join(root, d)).filter((f) => f.endsWith(ext
 // Names that are not data keys. Every entry must still be used somewhere, or the test fails.
 const ALLOWED = {
   gaps_list: "build.py template placeholder filled into src/contribute.html, not a data key",
+  point_count: "MapLibre's own property on a grouped dot (map-gl.js), not a data key",
+  cluster_id: "MapLibre's own property on a grouped dot (map-gl.js), not a data key",
 };
 
 const known = new Set();

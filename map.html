@@ -24,8 +24,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=cb03bd65">
-<link rel="stylesheet" href="assets/css/style.css?v=cb03bd65">
+<link rel="stylesheet" href="assets/css/fonts.css?v=5daaf67c">
+<link rel="stylesheet" href="assets/css/style.css?v=5daaf67c">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 document.documentElement.classList.add("js");
@@ -81,7 +81,8 @@ setTimeout(function () { if (!document.querySelector(".top.menu-js")) document.d
     <p class="small" id="mCount" aria-live="polite" style="margin-top:1rem;">Loading the map.</p>
     <div class="mapbox" id="mapBox" aria-hidden="true" style="margin-top:.6rem;"></div>
     <div class="chips mzoom" id="mZoom" role="group" aria-label="Zoom the map to" style="margin-top:.8rem;"><button class="chip" type="button" data-v="all" aria-pressed="true">Whole map</button><button class="chip" type="button" data-v="ca" aria-pressed="false">California</button><button class="chip" type="button" data-v="bay" aria-pressed="false">Bay Area</button><button class="chip" type="button" data-v="socal" aria-pressed="false">Southern California</button><button class="chip" type="button" data-v="pnw" aria-pressed="false">Pacific Northwest</button><button class="chip" type="button" data-v="tx" aria-pressed="false">Texas</button><button class="chip" type="button" data-v="mw" aria-pressed="false">Midwest</button><button class="chip" type="button" data-v="ne" aria-pressed="false">Northeast</button><button class="chip" type="button" data-v="se" aria-pressed="false">Southeast</button></div>
-    <p class="small muted" style="margin:.6rem 0 0;">A dot shows the city named on the program&rsquo;s card, not the exact address. The dashed box at the top left is Vancouver, BC. Some programs cover a whole state, are online, or run in several places. They are in the <a href="#list">list below the map</a>, which also works with a keyboard or screen reader.</p>
+    <p class="small" id="mView" role="status" style="margin:.6rem 0 0;" hidden></p>
+    <p class="small muted" id="mNote" style="margin:.6rem 0 0;">A dot shows the city named on the program&rsquo;s card, not the exact address. The dashed box at the top left is Vancouver, BC. Some programs cover a whole state, are online, or run in several places. They are in the <a href="#list">list below the map</a>, which also works with a keyboard or screen reader.</p>
     <div class="card" id="mPanel" style="margin-top:1rem;" hidden>
       <div class="mpanel-top"><h2 id="mPanelH" tabindex="-1" style="margin:0;"></h2><button class="btn sm alt" type="button" id="mPanelX">Close</button></div>
       <p class="small muted" id="mPanelNote"></p>
@@ -102,7 +103,7 @@ setTimeout(function () { if (!document.querySelector(".top.menu-js")) document.d
     <h2>Every program, by place</h2>
     <p>The same programs as the map, as a list. It follows your choices above. Open a state to see its cities.</p>
     <div id="mListBox"></div>
-    <p class="small muted" id="mSource">Map lines: US Census Bureau cartographic boundary files, through the us-atlas project. City points: US Census Bureau Gazetteer files (2026), and the Canadian Geographical Names Database for British Columbia. <span id="mRead"></span></p>
+    <p class="small muted" id="mSource">Map lines: US Census Bureau cartographic boundary files, through the us-atlas project. City points: US Census Bureau Gazetteer files (2026), and the Canadian Geographical Names Database for British Columbia. <span id="mStreet" hidden>Street map: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>, through <a href="https://protomaps.com" target="_blank" rel="noopener">Protomaps</a>, drawn by <a href="https://maplibre.org" target="_blank" rel="noopener">MapLibre</a>.</span> <span id="mRead"></span></p>
   </div>
 </section>
 
@@ -167,9 +168,9 @@ setTimeout(function () { if (!document.querySelector(".top.menu-js")) document.d
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=cb03bd65"></script>
-<script src="assets/js/common.js?v=cb03bd65"></script>
-<script src="assets/js/map.js?v=cb03bd65"></script>
+<script src="assets/js/lib.js?v=5daaf67c"></script>
+<script src="assets/js/common.js?v=5daaf67c"></script>
+<script src="assets/js/map.js?v=5daaf67c"></script>
 
 </body>
 </html>
