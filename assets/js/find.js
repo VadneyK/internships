@@ -49,6 +49,11 @@
     return '<p class="when"><b>Dates</b>' + G.esc(e.deadline_text || "Not posted") + G.esc(extra) + conf + "</p>";
   }
   function ageText(e) { return L.ageText(e); }
+  /* With an age picked, a card whose grades likely leave that age out says so next to the grades (lib.gradeFit). Cards that state ages are left to the age filter. */
+  function gradeTag(e) {
+    var f = L.gradeFit(e, state.age);
+    return f ? '<span class="tag warn" data-gradefit="' + f + '">' + G.esc("May be too " + f + " at " + state.age + ": check the grades") + "</span>" : "";
+  }
   function paidTag(e) {
     var t = G.PAID[e.paid_type] || "";
     var cls = e.paid_type === "paid" || e.paid_type === "stipend" ? "y" : e.paid_type === "fee-based" ? "warn" : "ghost";
@@ -111,7 +116,7 @@
     html += '<p class="org">' + G.esc(e.org || "") + (e.city ? " &middot; " + G.esc(e.city) : "") + "</p>";
     html += '<p class="what">' + G.esc(e.what_you_do || "") + "</p>";
     /* "limited": one place's residents, or girls or boys only (build_data.py). The rule itself is under "Who can apply and how". */
-    html += '<div class="row"><span class="tag ghost">' + G.esc(ageText(e)) + "</span>" + (e.limited ? '<span class="tag warn">Only some can apply: see who below</span>' : "") + "</div>";
+    html += '<div class="row"><span class="tag ghost">' + G.esc(ageText(e)) + "</span>" + gradeTag(e) + (e.limited ? '<span class="tag warn">Only some can apply: see who below</span>' : "") + "</div>";
     html += '<div data-pay>' + payHtml(e) + "</div>";
     html += deadlineLine(e);
     html += "<details><summary>Who can apply and how</summary><dl" + (detailMode() === "ready" ? "" : ' data-detail="' + detailMode() + '"') + ">" + detailBody(e);
@@ -119,7 +124,7 @@
     html += '<div class="actions">';
     if (u) html += '<a class="btn sm" href="' + G.esc(u) + '" target="_blank" rel="noopener" aria-label="' + G.esc("Official page for " + e.name + (e.org ? ", " + e.org : "")) + '">Official page</a>';
     if (a && a !== u) html += '<a class="btn sm alt" href="' + G.esc(a) + '" target="_blank" rel="noopener" aria-label="' + G.esc("Apply to " + e.name + (e.org ? ", " + e.org : "")) + '">Apply</a>';
-    if (knownDeadline(e)) html += '<button class="btn sm alt noprint" type="button" data-cal="' + G.esc(e.id) + '" aria-label="' + G.esc("Add deadline to calendar for " + e.name) + '">Add deadline to calendar</button>';
+    html += L.calButtons(e, now());
     html += '<button class="star noprint" type="button" data-id="' + G.esc(e.id) + '" aria-pressed="' + saved + '" aria-label="' + G.esc("Save " + e.name + " to my list") + '" title="Save to my list">' + starInner(saved) + '</button>';
     html += "</div>";
     html += '<p class="checked">' + vtag + " Checked " + G.esc(e.verified_on_label || "Oct 7, 2026") + "</p>";
@@ -241,8 +246,10 @@
     var s = { age: state.age, place: state.place, hubs: state.hubs, paid: state.paid };
     var found = all.filter(function (e) { return L.matches(e, s, t); });
     if (found.length < 3) { s.placeOnline = true; found = all.filter(function (e) { return L.matches(e, s, t); }); }
-    var p = { age: state.age }, open = L.topPicks(found.filter(function (e) { return !e.limited; }), p, t, PICKS_N);
-    return open.length < PICKS_N ? open.concat(L.topPicks(found.filter(function (e) { return e.limited; }), p, t, PICKS_N - open.length)) : open;
+    /* Cards only some can apply to, or whose grades likely leave this age out, fill the picks only after the rest. */
+    var p = { age: state.age }, held = function (e) { return !!(e.limited || L.gradeFit(e, state.age)); };
+    var open = L.topPicks(found.filter(function (e) { return !held(e); }), p, t, PICKS_N);
+    return open.length < PICKS_N ? open.concat(L.topPicks(found.filter(held), p, t, PICKS_N - open.length)) : open;
   }
   function paintPicks() {
     var box = $("picks"), nudge = $("picksNudge"), ol = $("picksList"); if (!box || !ol) return;
@@ -515,7 +522,7 @@
   function chipGroup(id, items, key, multi) {
     var box = $(id);
     box.innerHTML = items.map(function (it) {
-      return '<button class="chip" type="button" data-key="' + key + '" data-val="' + G.esc(it[0]) + '" data-label="' + G.esc(it[1]) + '" aria-pressed="false">' + G.esc(it[1]) + '<span class="n">' + (it[2] != null ? it[2] : "") + "</span></button>";
+      return '<button class="chip" type="button" data-key="' + key + '" data-val="' + G.esc(it[0]) + '" data-label="' + G.esc(it[1]) + '" aria-pressed="false">' + G.esc(it[1]) + ' <span class="n">' + (it[2] != null ? it[2] : "") + "</span></button>";
     }).join("");
     box.addEventListener("click", function (ev) {
       var b = ev.target.closest(".chip"); if (!b) return;
@@ -914,11 +921,8 @@
     if (ev.target.closest("[data-relax-saved]")) { resetFilters(true); focusFirst(); return; }
     var cal = ev.target.closest("[data-cal]");
     if (cal) {
-      var pe = all.filter(function (x) { return x.id === cal.getAttribute("data-cal"); })[0];
-      if (pe && pe.deadline_iso && knownDeadline(pe)) {
-        G.download(pe.id + "-deadline.ics", L.icsEvent({ uid: "deadline-" + pe.id, title: "Deadline: " + pe.name, desc: (pe.deadline_text || "") + " " + (G.safeUrl(pe.apply_url || pe.url) || ""), dateISO: pe.deadline_iso }), "text/calendar");
-        G.toast("Calendar file saved. Open it to add the deadline.");
-      }
+      var ce = L.calEvent(byId[cal.getAttribute("data-cal")], now());
+      if (ce) { G.download(ce.file, L.icsEvent(ce), "text/calendar"); G.toast("Calendar file saved. Open it to add the deadline, or use Google Calendar."); }
       return;
     }
     var s = ev.target.closest(".star");

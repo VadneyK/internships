@@ -5,7 +5,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
-import { loadPage } from "./dom-helper.mjs";
+import { loadPage, waitFor } from "./dom-helper.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const L = createRequire(import.meta.url)(path.join(ROOT, "assets/js/lib.js"));
@@ -19,8 +19,9 @@ test("insights.html requests entries-stats.json and not entries-card.json", asyn
       Object.defineProperty(w, "fetch", { configurable: true, get() { return real && ((u, o) => { seen.push(String(u)); return real(u, o); }); }, set(v) { real = v; } });
     },
   });
-  await new Promise((r) => setTimeout(r, 600));
   const doc = window.document;
+  // Wait for the drawn charts, not a fixed 600 ms (a loaded machine can take longer, 2026-10-16).
+  await waitFor(() => doc.querySelectorAll("#topStats .stat b").length === 3 && doc.querySelector("#chartAge .ccol"));
   assert.ok(seen.some((u) => /entries-stats\.json/.test(u)));
   assert.ok(!seen.some((u) => /entries-card\.json/.test(u)));
 

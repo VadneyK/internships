@@ -24,8 +24,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/fonts.css?v=8feecd56">
-<link rel="stylesheet" href="assets/css/style.css?v=8feecd56">
+<link rel="stylesheet" href="assets/css/fonts.css?v=0cdbd8bf">
+<link rel="stylesheet" href="assets/css/style.css?v=0cdbd8bf">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 document.documentElement.classList.add("js");
@@ -62,6 +62,7 @@ setTimeout(function () { if (!document.querySelector(".top.menu-js")) document.d
     <span class="tag y eyebrow">2680 programs &middot; checked Oct 16, 2026</span>
     <h1 class="display">Find a <span class="orange">program</span></h1>
     <p class="lede">Pick your area and your age. Every card links to the official page. Only some dates are confirmed for 2026 to 2027, so check each program's own page.</p>
+    <p class="small muted" data-trust style="margin:.6rem 0 0;">Free. No sign-up, no ads. Made by a volunteer, Kentaro Vadney, not by Ignition, Acts 2 Network, AYM or a church. Questions: github.com/VadneyK/internships/issues.</p>
     <p class="small muted" style="margin:.75rem 0 0;">To save a program, tap the star on its card. Your saved list is called My list, and it stays on this device.</p>
   </div>
 </section>
@@ -204,8 +205,10 @@ setTimeout(function () { if (!document.querySelector(".top.menu-js")) document.d
     <details id="howToRead" class="callout plain small" style="margin-bottom:1rem; max-width: 52rem;">
       <summary class="lbl" style="cursor:pointer;">How to read the tags</summary>
       <p><b>How to read this list.</b> A <span class="tag good">Read on official site</span> tag means we opened the program&rsquo;s own page. It does not mean that page gave every age, pay or date, so check those with the program before you plan around them. <span class="tag warn">Confirm first</span> means we found it but could not read the official page, so check it yourself before you plan around it. Programs that already closed are still here with the month they usually reopen. A <span class="tag warn">Based on last year</span> tag means the date follows last cycle's pattern, and the program has not posted new dates yet. None of these tags means we visited, screened or recommend a program.</p>
+      <p>With an age picked, a <span class="tag warn">May be too young</span> or <span class="tag warn">May be too old</span> tag means the grades on the card start higher, or end lower, than the grade most teens that age are in. Check the grades with the program.</p>
     </details>
 
+    <p id="costNote" class="small" style="margin:0 0 1rem;">Cards tagged <span class="tag warn">Costs money</span> charge a fee. Ask the program about aid before you rule one out, and show a parent before you pay anything. A job should never ask you to pay to apply.</p>
     <p id="picksNudge" class="small muted" style="margin:0 0 1rem;">Pick your age and area to see programs picked for you.</p>
     <section id="picks" class="callout plain picks" aria-labelledby="picksH" hidden>
       <h2 id="picksH" style="font-size:1.25rem;">Good fit for you</h2>
@@ -294,9 +297,9 @@ setTimeout(function () { if (!document.querySelector(".top.menu-js")) document.d
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="assets/js/lib.js?v=8feecd56"></script>
-<script src="assets/js/common.js?v=8feecd56"></script>
-<script src="assets/js/find.js?v=8feecd56"></script>
+<script src="assets/js/lib.js?v=0cdbd8bf"></script>
+<script src="assets/js/common.js?v=0cdbd8bf"></script>
+<script src="assets/js/find.js?v=0cdbd8bf"></script>
 
 </body>
 </html>

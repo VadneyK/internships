@@ -8,7 +8,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { loadPage, tick } from "./dom-helper.mjs";
+import { loadPage, tick, waitFor } from "./dom-helper.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -64,7 +64,8 @@ test("permit: every state x age x kind reloads to the same answer", { timeout: 9
     const p = await loadPage("permit.html", { search: c.search });
     try {
       for (let i = 0; i < 100 && p.document.getElementById("pKind").options.length < 2; i++) await tick(50);
-      await tick(10);
+      // Wait for the restored answer instead of a fixed 10 ms: on a loaded machine the page had not drawn it yet (2026-10-16).
+      await waitFor(() => sel(p.document).join() === [c.st, c.age, c.kind].join() && answer(p.document) === c.head, { timeout: 5000 });
       assert.deepEqual(sel(p.document), [c.st, c.age, c.kind], "permit selects " + show(c) + " URL " + c.search);
       assert.equal(answer(p.document), c.head, "permit headline " + show(c) + " URL " + c.search);
       assert.equal(p.window.location.search, c.search, "permit reload rewrote URL " + c.search);

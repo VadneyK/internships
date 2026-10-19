@@ -51,6 +51,8 @@ const RULES = [
   [/^states-lite\.json$/, /^\.states$/, "skip: container, its rows are checked"],
   [/^state-wages\.json$/, /^\.states\[\]\.id$/, "skip: these are all 50 states and DC, checked by tests/p7-wages-1.test.mjs"],
   [/^state-wages\.json$/, /^\.states$/, "skip: container, its rows are checked"],
+  [/^wages-2027\.json$/, /^\.rows\[\]\.id$/, "skip: a wage row names a state, province or city (ca, bc, palo-alto), checked by tests/wages-2027.test.mjs"],
+  [/^wages-2027\.json$/, /^\.rows\[\]\.state$/, "skip: the state a city row sits in, a lower-case postal code, not a permit finder state"],
   [/^younger\.json$/, /^\.states$/, "statePairs"],
   [/^map\.json$/, /^\.(points|bc)\[\]\.ids$/, "program"],
   [/^geo-overrides\.json$/, /^\.(byId\.[a-z0-9-]+|byCity\..+)\.state$/, "skip: a two-letter postal code (CA, BC) the geocoder uses, not a permit finder state; map.json ids are checked by tests/r3-tests-8-map-data.test.mjs"],
