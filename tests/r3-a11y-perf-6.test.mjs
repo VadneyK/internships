@@ -3,7 +3,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
-import { loadPage, type, tick } from "./dom-helper.mjs";
+import { loadPage, type, tick, waitFor } from "./dom-helper.mjs";
 
 const read = (p) => JSON.parse(fs.readFileSync(new URL("../" + p, import.meta.url), "utf8"));
 const full = read("data/entries.json");
@@ -91,8 +91,10 @@ test("before the detail file loads a card has no How long or Pay or cost label; 
   const paidTag = (document.querySelector("article.prog .tag") || {}).textContent;
   assert.ok(paidTag !== undefined);
   slow.splice(0).forEach((go) => go());
-  await tick(500);
-  const after = document.getElementById("p-" + id);
+  // Wait for the rows the detail file adds, not a fixed 500 ms (2026-10-16: flaky on a loaded machine).
+  const cur = () => document.getElementById("p-" + id);
+  await waitFor(() => (!f.duration || cur().textContent.includes(f.duration)) && (!f.pay_detail || cur().querySelector(".pay")));
+  const after = cur();
   if (f.duration) assert.ok(after.textContent.includes("How long") && after.textContent.includes(f.duration), "How long row");
   if (f.pay_detail) {
     const pay = after.querySelector(".pay");
