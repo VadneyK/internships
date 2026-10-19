@@ -42,8 +42,9 @@ const LIMITS = {
     // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. data/entries.json raw 5124700 to 5145100.
     // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. data/entries.json gzip 1158100 to 1162400.
     // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) data/entries.json raw 5223300, gzip 1184900.
-    // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,686 programs; PENDING PERSON APPROVAL): 5223300 to 5235800 (gzip still fits).
-    "data/entries.json": { raw: 5235800, gzip: 1184900 },
+    // 2026-10-18: issue 28 link fixes (30 field edits on 10 cards), 5223647 bytes. Approved by Kentaro 2026-10-18. data/entries.json raw 5223300 to 5223700; gzip unchanged.
+    // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,686 programs; PENDING PERSON APPROVAL): 5223700 to 5236200 (gzip still fits).
+    "data/entries.json": { raw: 5236200, gzip: 1184900 },
     // Raised from 2020000 to 2040000 on 2026-10-10 after the fact check: the page re-reads added about 6,000 bytes (0.3 percent) of plainer deadline_text across 266 cards, saying what the page does and does not state. No single card is the cause. Still about 1,145 bytes per program, under the per-program limit.
     // Gzip limit raised from 440000 to 450000 on 2026-10-10: the card fixes this round (pay wording, opens-soon dates) put it at 440053.
     // Raised again on 2026-10-12 for the 178 more cards: entries-lite.json is 2,097,871 bytes (437,135 gzipped), 947 bytes per program. Raw from 2040000 to 2160000. The gzip limit stays 450000. PENDING PERSON APPROVAL, as for entries.json.
