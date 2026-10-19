@@ -1386,7 +1386,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-10-18",
   "priority": 2,
   "notes": "Minimum age is 16 per the page. Listings change, so check the careers tool for current postings.",
   "deadline_confidence": "rolling",
@@ -1416,7 +1416,7 @@
   "sources_fetched": [
    "https://www.sandia.gov/careers/careers/students-and-postdocs/internships-co-ops/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Oct 18, 2026"
  },
  {
   "id": "albuquerque-unm-engineering-computing-summer-academy",
@@ -2461,11 +2461,11 @@
   "grades": null,
   "min_age": 12,
   "max_age": 17,
-  "opens_iso": "2026-10-19",
-  "deadline_iso": "2026-10-19",
+  "opens_iso": null,
+  "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-10-18",
   "needs_work_permit": null,
   "id": "ann-arbor-hshv-junior-volunteer",
   "name": "Junior Volunteer Program at Humane Society of Huron Valley",
@@ -2485,7 +2485,7 @@
   "pay_detail": "$205 program fee for the 6 session training (training, T-shirt, supplies). Limited scholarships for families with financial need.",
   "season": "year-round",
   "duration": "6 training sessions, then a 2 to 4 hour per month volunteer commitment",
-  "status": "opens-soon",
+  "status": "open-now",
   "deadline_text": "Registration for the November sessions (Nov 2 to 19) opens Mon Oct 19 at 8am; for the December sessions (Nov 30 to Dec 17) it opens Mon Nov 16 at 8am. Sessions are offered monthly and fill quickly.",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Online registration only, which opens about 30 days before each session. You must attend all six classes; there are no make-ups, refunds or transfers. A waitlist is available.",
@@ -2497,7 +2497,7 @@
   ],
   "priority": 1,
   "notes": "Demand is higher than space, so you may wait months. After training you volunteer without a parent present. Inactive for 6 months or more means retaking the training. Shelter is at 3100 Cherry Hill Rd, Ann Arbor. Michigan's youth employment page (Youth Employment Standards Act) says the law covers employers of anyone under 18 including volunteers, so ask the program whether a work permit is needed.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Oct 18, 2026"
  },
  {
   "grades": null,
@@ -16619,7 +16619,7 @@
   "max_age": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-18",
   "priority": 2,
   "needs_work_permit": false,
   "deadline_iso": null,
@@ -16627,7 +16627,7 @@
    "any"
   ],
   "sources_fetched": [
-   "https://www.pvcc.edu/dual-enrollment"
+   "https://www.pvcc.edu/programs-high-school"
   ],
   "season": "school-year",
   "id": "charlottesville-pvcc-dual-enrollment",
@@ -16647,9 +16647,9 @@
   "deadline_text": "No deadline on this page. Ask your high school counselor.",
   "deadline_confidence": "unknown",
   "how_to_apply": "For dual enrollment, sign up with your high school counselor. For Dual Credit, apply through PVCC admissions at admissions@pvcc.edu.",
-  "url": "https://www.pvcc.edu/dual-enrollment",
+  "url": "https://www.pvcc.edu/programs-high-school",
   "notes": "More than 1,200 high school students join each term. Early College has rules to qualify. It may have district scholarships.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 18, 2026"
  },
  {
   "opens_iso": null,
@@ -23428,14 +23428,14 @@
  },
  {
   "grades": "Grades 6 to 12",
-  "apply_url": "https://www.volgistics.com/appform/895476095",
+  "apply_url": null,
   "min_age": null,
   "max_age": null,
   "pay_detail": "Unpaid. Earns service hours, and teen volunteers enter a quarterly prize raffle.",
   "duration": "Shifts for the whole 2026-2027 school year",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-10-18",
   "priority": 2,
   "needs_work_permit": false,
   "notes": "Branches are Lane Road, Miller Park and Tremont Road. The page lists two different branch application links, so use the one for your branch.",
@@ -23463,7 +23463,7 @@
   "sources_fetched": [
    "https://www.ualibrary.org/uapl-volunteer-program/"
   ],
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Oct 18, 2026"
  },
  {
   "grades": null,
@@ -24545,8 +24545,8 @@
   "pay_detail": "Paid by stipend. Teen Best Reads pays $3,500. Teen Gamer's Guild pays $1,800. Teen Media Lab pays $2,200 for spring and $1,300 for fall. You get paid for finishing work and going to meetings.",
   "season": "school-year",
   "duration": "Starts Jan 9, 2027. Gamer's Guild to June 10; Media Lab Jan to June 22 and Sept 7 to Dec 14; Best Reads to Dec 14.",
-  "status": "opens-soon",
-  "opens_iso": "2026-10-19",
+  "status": "open-now",
+  "opens_iso": null,
   "deadline_text": "Applications open Monday Oct 19, 2026 and close Sunday Nov 8, 2026.",
   "deadline_iso": "2026-11-08",
   "deadline_confidence": "confirmed-2026-27",
@@ -24568,8 +24568,8 @@
   ],
   "city": "Chicago, IL",
   "verified": "fetched",
-  "verified_on": "2026-10-14",
-  "verified_on_label": "Oct 14, 2026",
+  "verified_on": "2026-10-18",
+  "verified_on_label": "Oct 18, 2026",
   "limited": true
  },
  {
@@ -35891,7 +35891,7 @@
   ],
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-10-18",
   "grades": null,
   "needs_work_permit": false,
   "id": "glendale-community-college-jump-start-dual-enrollment",
@@ -35910,10 +35910,10 @@
   "pay_detail": "Costs and fee waivers are not stated on the page. Ask dual@glendale.edu.",
   "season": "school-year",
   "duration": "By term",
-  "status": "opens-soon",
-  "opens_iso": "2026-10-19",
+  "status": "open-now",
+  "opens_iso": null,
   "deadline_text": "Registration opens Oct 19, 2026 for Winter 2027 (Jump Start only) and Nov 30, 2026 for Spring 2027 (Dual Enrollment and Jump Start).",
-  "deadline_iso": "2026-10-19",
+  "deadline_iso": null,
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Apply at OpenCCCApply. Then send the Annual Digital Form signed by a parent and your counselor. Find classes, clear any prerequisites and register in MyGCC. Email dual@glendale.edu or call (818) 240-1000 ext. 4767.",
   "url": "https://www.glendale.edu/students/sos-outreach/high-school/index.html",
@@ -35922,7 +35922,7 @@
   "sources_fetched": [
    "https://www.glendale.edu/students/sos-outreach/high-school/index.html"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Oct 18, 2026"
  },
  {
   "regions": [
@@ -40434,7 +40434,7 @@
   "max_age": null,
   "grades": "Current high school juniors",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-18",
   "needs_work_permit": false,
   "id": "illinois-girls-state",
   "name": "ALA Illini Girls State (American Legion Auxiliary)",
@@ -40442,7 +40442,7 @@
   "regions": [
    "illinois"
   ],
-  "city": "Illinois (location not stated on the site)",
+  "city": "Eastern Illinois University, Charleston, IL",
   "type": "civic-government",
   "fields": [
    "law-government"
@@ -40450,22 +40450,23 @@
   "what_you_do": "A week-long citizenship and leadership program for high school girls, sponsored by an American Legion Auxiliary Unit. Delegates must attend the full session.",
   "who_can_apply": "High school girls who are current juniors. A principal, guidance counselor or home school administrator must certify leadership qualities, good character and U.S. residency. You must secure sponsorship from an American Legion Auxiliary Unit and attend an orientation.",
   "paid_type": "fee-based",
-  "pay_detail": "Cost is not stated on the pages checked for this card. Ask the Illinois Girls State office and your local American Legion Auxiliary unit.",
+  "pay_detail": "$400 per delegate, paid by the sponsoring American Legion Auxiliary Unit or another sponsor, not the family. Bring some spending money for the week. If you drop out without telling the Department before June 1, the sponsor loses the fee and may ask you to pay it back.",
   "season": "summer",
   "duration": "One week, June 20 to 26, 2027",
   "status": "unconfirmed",
-  "deadline_text": "Next session is June 20 to 26, 2027. The application deadline is not stated on the program pages; contact the Department office.",
+  "deadline_text": "Next session is June 20 to 26, 2027. There is no fixed deadline: the FAQ says applications are accepted until the program is full, so apply early.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Complete the online registration form (name, school email, counselor name and email, school, hometown), get approval from your school official, find a sponsoring American Legion Auxiliary Unit and attend an orientation. Call 309-663-9366 or email info@alaigs.org.",
   "url": "https://alaigs.org/register/",
   "sources_fetched": [
    "https://alaigs.org",
-   "https://alaigs.org/register/"
+   "https://alaigs.org/register/",
+   "https://alaigs.org/registration/"
   ],
   "priority": 2,
   "notes": "Girls only. The program is physically active with long walks; the registration page asks you to check with a doctor if you have limits. After the program you share your experience with your sponsoring Unit.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Oct 18, 2026",
   "limited": true
  },
  {
@@ -44804,9 +44805,9 @@
   "regions": [
    "los-angeles"
   ],
-  "apply_url": "https://juniorlifeguards.fire.lacounty.gov",
+  "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-10-18",
   "grades": null,
   "needs_work_permit": false,
   "id": "la-county-junior-lifeguard-program",
@@ -44834,11 +44835,12 @@
   "how_to_apply": "Register online when the season opens, usually in February or March. New participants must pass a swim test. They must bring a birth certificate or passport. Cadet and Life Saving Team applications are separate. They are posted later.",
   "url": "https://fire.lacounty.gov/junior-lifeguard-program/",
   "priority": 3,
-  "notes": "The page calls the $635 an estimated operating cost and says the fee schedule is under review. Costs money and is mainly for younger kids; teens 16 to 17 can reach Cadets. Not every beach offers afternoon sessions or Session 2. Refund rules and absence limits are on the page.",
+  "notes": "The page calls the $635 an estimated operating cost and says the fee schedule is under review. Costs money and is mainly for younger kids; teens 16 to 17 can reach Cadets. Not every beach offers afternoon sessions or Session 2. Refund rules and absence limits are on the page. The registration site (juniorlifeguards.fire.lacounty.gov) was not loading on October 18, 2026; use the link on the program page when 2027 registration opens.",
   "sources_fetched": [
-   "https://fire.lacounty.gov/junior-lifeguard-program/"
+   "https://fire.lacounty.gov/junior-lifeguard-program/",
+   "https://fire.lacounty.gov/summer-junior-lifeguard-program/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Oct 18, 2026"
  },
  {
   "id": "la-county-library-teen-volunteer",
@@ -51451,7 +51453,7 @@
  {
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-18",
   "grades": null,
   "min_age": 8,
   "max_age": null,
@@ -51485,7 +51487,7 @@
   ],
   "priority": 2,
   "notes": "Volunteer Coordinator: Tim Gruber, tgruber@madisonchildrensmuseum.org. Spots may be limited at any given time, so email before you apply.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 18, 2026"
  },
  {
   "id": "madison-city-goodman-pool-lifeguard",
@@ -54794,7 +54796,7 @@
   "grades": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-10-18",
   "apply_url": null,
   "deadline_iso": null,
   "needs_work_permit": null,
@@ -54830,7 +54832,7 @@
    "https://www.jobcorps.gov/admissions-process"
   ],
   "notes": "The Labor Department paused this center in Dec 2024. Its own site has no notice, so trust jobcorps.gov. Address: 10900 Old Court Rd, Woodstock, MD.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Oct 18, 2026"
  },
  {
   "id": "mdusd-college-now-at-diablo-valley-college",
@@ -64022,10 +64024,10 @@
  {
   "id": "new-brunswick-plainsboro-library-teen-volunteering-and-advisory-board",
   "grades": null,
-  "apply_url": null,
+  "apply_url": "https://plainsborolibrary.org/teen-advisory-board-2/",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-10-18",
   "priority": 2,
   "min_age": null,
   "max_age": null,
@@ -64040,14 +64042,14 @@
    "education",
    "social-impact"
   ],
-  "what_you_do": "Shelve books weekly, help at library programs, or join the Teen Advisory Board to plan programs, displays and teen-run events. The board meets about twice a month.",
-  "who_can_apply": "Shelvers must be going into 9th grade or older. Teen Advisory Board needs an application.",
+  "what_you_do": "Shelve books weekly, help at library programs, or join the Teen Advisory Board to plan programs, displays and teen-run events. The board meets every Thursday.",
+  "who_can_apply": "Shelvers must be going into 9th grade or older. Teen Advisory Board members must be in grades 9 to 12, live in Plainsboro and have their own Plainsboro library card.",
   "paid_type": "unpaid",
   "pay_detail": "Unpaid. Volunteer hours can be confirmed.",
   "season": "school-year",
-  "duration": "Shelvers get one 1 hour shift a week. The Teen Advisory Board meets about twice a month.",
-  "status": "closed-expect-reopen",
-  "deadline_text": "Weekly volunteering registration for 2026-2027 is closed. The Teen Advisory Board note on the page is out of date (it names the 2025-2026 year) and gives no opening date; an earlier read of the page said applications open in September. Join the volunteer mailing list for new openings.",
+  "duration": "Shelvers get one 1 hour shift a week. The Teen Advisory Board meets every Thursday, 5 to 6 PM.",
+  "status": "open-now",
+  "deadline_text": "Teen Advisory Board membership for 2026 is open now (the board page was updated September 17, 2026); no deadline is posted. Weekly shelving registration for 2026-2027 is closed. Join the volunteer mailing list for one-time program volunteer spots.",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Apply with the Teen Advisory Board form on the page. For volunteering, email the Teen Volunteer Coordinator and join the volunteer mailing list. Shelvers interview and train first.",
   "needs_work_permit": false,
@@ -64057,7 +64059,8 @@
    "https://plainsborolibrary.org/teen-advisory-board-2/"
   ],
   "notes": "Selection is not first come first served.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Oct 18, 2026",
+  "limited": true
  },
  {
   "id": "new-brunswick-plainsboro-township-recreation-volunteers",
@@ -64065,7 +64068,7 @@
   "apply_url": null,
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-18",
   "priority": 2,
   "min_age": 14,
   "max_age": null,
@@ -64096,7 +64099,7 @@
   "sources_fetched": [
    "https://www.plainsboronj.com/328/Current-Volunteer-Opportunities"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 18, 2026"
  },
  {
   "grades": "Entering 9th or 10th grade (apply in 8th or 9th grade)",
@@ -65201,10 +65204,10 @@
    "https://nm4h.nmsu.edu/4h/join.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-10-18",
   "priority": 3,
   "notes": "State office phone on the page is 575-646-3026. Call it if you are not sure which county you are in.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Oct 18, 2026"
  },
  {
   "id": "new-mexico-ffa-association",
@@ -66718,7 +66721,7 @@
   "grades": "Grades 9 to 12",
   "apply_url": "https://my.ctd.northwestern.edu/",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-18",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "3 weeks (June 28 to July 17 in 2026)",
@@ -66752,7 +66755,7 @@
    "https://www.ctd.northwestern.edu/eligibility"
   ],
   "notes": "Costs a lot and is for advanced learners. CTD also has many other summer and weekend courses for grades 6 to 12 that are not listed here.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 18, 2026"
  },
  {
   "id": "northwestern-medicine-summer-student-volunteer",
@@ -67962,10 +67965,10 @@
   "pay_detail": "$17 per hour. Second-year members are leaders and earn $18 per hour. Up to 75 hours for the year. OMNY cards for weekend and evening work.",
   "season": "school-year",
   "duration": "November 2026 to June 2027: Tuesdays 4:30 to 6:30 PM, plus some Fridays and weekends.",
-  "status": "open-now",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Apply online by October 18, 2026.",
-  "deadline_iso": "2026-10-18",
+  "deadline_text": "Applications closed Oct 18, 2026. Next dates are not posted.",
+  "deadline_iso": null,
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Online application through the link on the program page when it is open.",
   "needs_work_permit": true,
@@ -67975,10 +67978,10 @@
    "https://www.brooklynmuseum.org/careers/internships-fellowships/intersextions"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-10-18",
   "priority": 2,
   "notes": "Open to queer and trans youth and allies. You must commit to the full schedule. Questions: teen.programs@brooklynmuseum.org.",
-  "verified_on_label": "Oct 16, 2026",
+  "verified_on_label": "Oct 18, 2026",
   "limited": true
  },
  {
@@ -69268,10 +69271,10 @@
   "pay_detail": "$1,100 stipend when you finish, which the page says matches New York State minimum wage law.",
   "season": "spring",
   "duration": "40 hours, about 2 to 4 hours a week from Feb 9 to May 28, 2027, plus a Jan 23 bootcamp, monthly Saturday check-ins and three Teen Fridays.",
-  "status": "open-now",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Apply by Friday, October 16, 2026, 6 pm ET. Interview notices by Friday, December 4, 2026.",
-  "deadline_iso": "2026-10-16",
+  "deadline_text": "Applications closed Oct 16, 2026. Interview notices by Dec 4, 2026. Next dates are not posted.",
+  "deadline_iso": null,
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Fill out the online form and write short essays. Ask one adult who is not family for a letter. If they pick you, you go to a group interview in person.",
   "needs_work_permit": true,
@@ -69281,10 +69284,10 @@
    "https://www.metmuseum.org/opportunities/internships/spring-semester-internships-for-high-school-students"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-10-18",
   "priority": 1,
   "notes": "You must come to every date on the list. A parent or guardian must come to the January 16, 2027 party. If you missed the October 16 deadline, try the summer internship. It also takes students from New Jersey and Connecticut.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Oct 18, 2026"
  },
  {
   "id": "nyc-met-high-school-summer-internship",
@@ -72479,10 +72482,10 @@
    "https://ohio4h.org/about/join-4-h"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-18",
   "priority": 2,
-  "notes": "Club membership, not a paid job. The site menu has a Just for Teens section that was not read. The ohio4h.org home page was down (503) when tried, so only the join page was read.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "Club membership, not a paid job. The site menu has a Just for Teens section that was not read. Only the join page was read for this card.",
+  "verified_on_label": "Oct 18, 2026"
  },
  {
   "id": "ohio-buckeye-boys-state",
@@ -74957,10 +74960,10 @@
    "https://extension.psu.edu/programs/4-h/get-involved/youth-and-parents/join"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-10-18",
   "priority": 2,
   "notes": "A youth group, not a job. Ask your county educator what clubs and teen leader roles are near you.",
-  "verified_on_label": "Oct 16, 2026",
+  "verified_on_label": "Oct 18, 2026",
   "limited": true
  },
  {
@@ -102109,16 +102112,16 @@
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Register on Zsuite (4h.zsuite.org). Questions: contact the Utah 4-H State Office at 435-797-4444 or your county 4-H office.",
   "needs_work_permit": false,
-  "url": "https://extension.usu.edu/utah4h/events/mock-legislature.php",
+  "url": "https://extension.usu.edu/utah4h/events/mock-legislature",
   "apply_url": "https://4h.zsuite.org",
   "sources_fetched": [
-   "https://extension.usu.edu/utah4h/events/mock-legislature.php"
+   "https://extension.usu.edu/utah4h/events/mock-legislature"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-11",
+  "verified_on": "2026-10-18",
   "priority": 3,
   "notes": "Held with Rep. Joel Briscoe and the Office of Legislative Research.",
-  "verified_on_label": "Oct 11, 2026"
+  "verified_on_label": "Oct 18, 2026"
  },
  {
   "id": "utah-4h-teen-summit",
@@ -102149,16 +102152,16 @@
   "deadline_confidence": "unknown",
   "how_to_apply": "Sign-up for the 2027 Teen Summit will open in summer 2027. Contact Vernon Parent at vernon.parent@usu.edu or 385-468-4832.",
   "needs_work_permit": false,
-  "url": "https://extension.usu.edu/utah4h/events/teen-summit.php",
+  "url": "https://extension.usu.edu/utah4h/events/teen-summit",
   "apply_url": null,
   "sources_fetched": [
-   "https://extension.usu.edu/utah4h/events/teen-summit.php"
+   "https://extension.usu.edu/utah4h/events/teen-summit"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-11",
+  "verified_on": "2026-10-18",
   "priority": 2,
   "notes": "A youth waiver is needed. Check the page for the cost when registration opens.",
-  "verified_on_label": "Oct 11, 2026"
+  "verified_on_label": "Oct 18, 2026"
  },
  {
   "id": "utah-4h-teen-winter-retreat",
@@ -102189,16 +102192,16 @@
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Sign up through Zsuite and upload the signed waiver. Teens in grades 10 to 12 can also apply to the Teen Winter Retreat Design Team, which has 8 spots. Apply by Oct 24 with a 4-H portfolio, which is a resume and cover letter, and short answers.",
   "needs_work_permit": false,
-  "url": "https://extension.usu.edu/utah4h/events/teen-winter-retreat.php",
+  "url": "https://extension.usu.edu/utah4h/events/teen-winter-retreat",
   "apply_url": null,
   "sources_fetched": [
-   "https://extension.usu.edu/utah4h/events/teen-winter-retreat.php"
+   "https://extension.usu.edu/utah4h/events/teen-winter-retreat"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-11",
+  "verified_on": "2026-10-18",
   "priority": 2,
   "notes": "Design Team applications are open Sept 1 to Oct 24 and let teens plan activities and teach workshops. Questions: Utah 4-H State Office, 435-797-4444.",
-  "verified_on_label": "Oct 11, 2026"
+  "verified_on_label": "Oct 18, 2026"
  },
  {
   "id": "utah-4h-usu-extension",
@@ -102238,10 +102241,10 @@
    "https://extension.usu.edu/utah4h/programs/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-11",
+  "verified_on": "2026-10-18",
   "priority": 3,
   "notes": "State events include Teen Summit, Teen Winter Retreat and Mock Legislature. Fees and dates differ by county and event. Ask your county office.",
-  "verified_on_label": "Oct 11, 2026"
+  "verified_on_label": "Oct 18, 2026"
  },
  {
   "id": "utah-dws-paid-work-experience-ages-14-24",

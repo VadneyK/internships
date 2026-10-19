@@ -46,7 +46,8 @@ TIMEOUT = 15  # seconds per request; main() sets it from --timeout
 HOST_DOWN = ("blocked", "host not answering")
 CHAIN_INCOMPLETE = ("blocked", "certificate chain incomplete (browsers usually open it; check by hand)")
 # Hosts that answer scripts with an error (Microsoft Forms gives 503) while browsers open the form. 2026-10-15.
-BOT_WALL_HOSTS = ("forms.office.com", "forms.cloud.microsoft")
+# extension.usu.edu (Utah 4-H) closes the connection or gives 403 to scripts while browsers get 200. 2026-10-18.
+BOT_WALL_HOSTS = ("forms.office.com", "forms.cloud.microsoft", "extension.usu.edu")
 SAFE_URL_CHARS = ":/?#[]@!$&'()*+,;=%~"
 
 
