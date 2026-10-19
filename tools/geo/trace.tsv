@@ -706,6 +706,7 @@ eden-area-rop	Hayward, CA	point	Hayward, CA	city	place:city
 edison-job-corps-center	Edison, NJ (campus with dorms)	point	Edison, NJ	city	cousub:cousub-township	
 edison-middlesex-college-high-school-scholars	Edison, NJ	point	Edison, NJ	city	cousub:cousub-township	
 edison-public-library-teen-advisory-board	Edison, NJ	point	Edison, NJ	city	cousub:cousub-township	
+edmonds-swedish-junior-volunteer	Edmonds, WA	point	Edmonds, WA	city	place:city	
 eisenhower-health-junior-volunteer-program	Rancho Mirage, CA	point	Rancho Mirage, CA	city	place:city	
 el-camino-college-dual-enrollment	Torrance, CA	point	Torrance, CA	city	place:city	
 el-camino-health-junior-auxiliary	Mountain View and Los Gatos, CA	multi				several places before the state
@@ -2045,6 +2046,7 @@ richmond-sd38-biomedical-health-science-dual-credit	Richmond, BC	point	Richmond,
 richmond-sd38-business-dual-credit-kpu	Richmond, BC	point	Richmond, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBJFI, https://geogratis.gc.ca/services/geoname/en/geonames/JBJFI	
 richmond-sd38-youth-train-in-trades	Richmond, BC	point	Richmond, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBJFI, https://geogratis.gc.ca/services/geoname/en/geonames/JBJFI	
 richmond-sd38-youth-work-in-trades	Richmond, BC	point	Richmond, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBJFI, https://geogratis.gc.ca/services/geoname/en/geonames/JBJFI	
+richmond-vch-richmond-volunteer	Richmond, BC	point	Richmond, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBJFI, https://geogratis.gc.ca/services/geoname/en/geonames/JBJFI	
 richmond-vcu-pharmacy-summer-scholars	Richmond, VA	point	Richmond, VA	city	place:city	
 richmond-youth-civic-engagement-program	Richmond, BC	point	Richmond, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBJFI, https://geogratis.gc.ca/services/geoname/en/geonames/JBJFI	
 richmond-youth-media-program	Richmond, BC	point	Richmond, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBJFI, https://geogratis.gc.ca/services/geoname/en/geonames/JBJFI	
@@ -2203,9 +2205,12 @@ scvmc-volunteer-services	San Jose, CA	point	San Jose, CA	city	place:city
 sdma-teen-council	San Diego, CA (Balboa Park)	point	San Diego, CA	city	place:city	
 seattle-anew-construction-trades-training	Washington (site not stated on the page)	statewide	WA			
 seattle-aquarium-youth-ocean-advocates	Seattle, WA	point	Seattle, WA	city	place:city	
+seattle-art-museum-design-your-neighborhood	Seattle, WA	point	Seattle, WA	city	place:city	
 seattle-art-museum-teen-arts-group	Seattle, WA	point	Seattle, WA	city	place:city	
+seattle-art-museum-volunteers	Seattle, WA	point	Seattle, WA	city	place:city	
 seattle-bgc-king-county-youthforce	Seattle, WA (King County)	point	Seattle, WA	city	place:city	
 seattle-burke-museum-voices-in-science-burke-ology	Seattle, WA	point	Seattle, WA	city	place:city	
+seattle-burke-museum-voices-in-science-stem-careers	Seattle, WA	point	Seattle, WA	city	place:city	
 seattle-childrens-hospital-volunteer	Seattle, WA	point	Seattle, WA	city	place:city	
 seattle-childrens-research-training-program-high-school	Seattle, WA	point	Seattle, WA	city	place:city	
 seattle-childrens-youth-voice-research-liaison	Seattle, WA	point	Seattle, WA	city	place:city	
@@ -2216,6 +2221,7 @@ seattle-greenway-yess-riverview-wanic	Carnation, WA and field sites in King Coun
 seattle-harborview-volunteer-services	Seattle, WA	point	Seattle, WA	city	place:city	
 seattle-henry-teen-art-collective	Seattle, WA	point	Seattle, WA	city	place:city	
 seattle-mohai-history-lab	Seattle, WA	point	Seattle, WA	city	place:city	
+seattle-mopop-volunteer	Seattle, WA	point	Seattle, WA	city	place:city	
 seattle-mopop-youth-advisory-board	Seattle, WA	point	Seattle, WA	city	place:city	
 seattle-mountaineers-counselor-in-training	Seattle, WA	point	Seattle, WA	city	place:city	
 seattle-museum-of-flight-youth-volunteer	Seattle, WA	point	Seattle, WA	city	place:city	
@@ -2366,6 +2372,8 @@ sutter-mills-peninsula-youth-volunteer	Burlingame, CA (1501 Trousdale Drive) and
 sutter-pamf-mountain-view-sunnyvale-student-volunteer	Mountain View, CA (701 East El Camino Real) and Sunnyvale, CA (301 Old San Francisco Road)	multi				second place with a state code
 sutter-pamf-palo-alto-student-volunteer	Palo Alto, CA (795 El Camino Real)	point	Palo Alto, CA	city	place:city	
 svcte-silicon-valley-career-technical-education	San Jose, CA (760 Hillsdale Ave)	point	San Jose, CA	city	place:city	
+tacoma-nature-center-teen-volunteer-leadership	Tacoma, WA	point	Tacoma, WA	city	place:city	
+tacoma-parks-lifeguard-swim-instructor-pathway	Tacoma, WA	point	Tacoma, WA	city	place:city	
 tacoma-pierce-county-library-teen-councils	Tacoma and Pierce County, WA	point	Tacoma, WA	city	place:city	override: Pierce County contains Tacoma; point placed at Tacoma
 tacoma-pierce-county-library-teen-volunteer-league	Tacoma and Pierce County, WA	point	Tacoma, WA	city	place:city	override: Pierce County contains Tacoma; point placed at Tacoma
 tacoma-point-defiance-zoo-guides	Tacoma, WA	point	Tacoma, WA	city	place:city	
@@ -2549,6 +2557,7 @@ va-wing-civil-air-patrol-cadets	Statewide, Virginia (squadrons from Winchester t
 valley-humane-society-volunteers	Pleasanton, CA	point	Pleasanton, CA	city	place:city	
 valley-water-youth-commission	San Jose, CA (serves all Santa Clara County)	point	San Jose, CA	city	place:city	
 valley-ymca-employee-u-teens	Phoenix, AZ	point	Phoenix, AZ	city	place:city	
+vancouver-aquarium-educator-volunteer	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
 vancouver-art-gallery-art-exchange	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
 vancouver-art-gallery-teen-art-group	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
 vancouver-bc-childrens-hospital-volunteer	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
@@ -2557,6 +2566,12 @@ vancouver-bcchr-pathways-to-science	Vancouver, BC (online)	online				parenthetic
 vancouver-bgc-south-coast-youth-employability	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
 vancouver-discovery-days-health-sciences	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
 vancouver-providence-health-care-volunteer	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
+vancouver-public-library-ink-teen-advisory-group	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
+vancouver-public-library-reading-buddies-teens	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
+vancouver-public-library-steam-buddies-teens	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
+vancouver-public-library-teen-advisory-group	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
+vancouver-public-library-teen-dms-for-kids	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
+vancouver-public-library-teens-read-it-first	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
 vancouver-science-world-volunteer	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
 vancouver-seed2stem-indigenous-research-internship	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
 vancouver-sfu-camps-volunteer	Burnaby, BC	point	Burnaby, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JAEBN, https://geogratis.gc.ca/services/geoname/en/geonames/JAEBN	

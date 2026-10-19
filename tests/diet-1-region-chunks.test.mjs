@@ -406,7 +406,10 @@ const BUDGET = {
   // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 230831 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco gzip 230600 to 230900.
   // 2026-10-19 issue 5 Confirm first: CHP East Sacramento and Michigan 4-H Exploration Days re-read in a real browser (2 cards changed, 2,680 programs; PENDING PERSON APPROVAL) ?at=city:san-francisco raw 1387400 to 1387500.
   // 2026-10-19: confirm-first edits (#64) after the #59 and #60 cards, 1397503 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco raw 1397500 to 1397600.
-  "?at=city:san-francisco": { raw: 1397600, gzip: 230900, label: "a Bay Area city" },
+  // 2026-10-19 issue 23 Pacific Northwest and Vancouver second pass read in a real browser (+15 cards, 2,695 programs; PENDING PERSON APPROVAL): 1387400 to 1391600, gzip 229000 to 230400.
+  // 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 1401660 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco raw 1397600 to 1401700.
+  // 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 231298 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco gzip 230900 to 231300.
+  "?at=city:san-francisco": { raw: 1401700, gzip: 231300, label: "a Bay Area city" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston raw 1057000 to 1075700.
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston gzip 168000 to 170700.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston raw 1075700 to 1096100.
@@ -428,7 +431,9 @@ const BUDGET = {
   // 2026-10-18 (after #54) issue 22 Chicago and Elgin second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 1173200 to 1175400, gzip 183800 to 184100.
   // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 1177154 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston raw 1175400 to 1177200.
   // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 184287 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston gzip 184100 to 184300.
-  "?at=city:boston": { raw: 1177200, gzip: 184300, label: "Boston" },
+  // 2026-10-19 issue 23 Pacific Northwest and Vancouver second pass read in a real browser (+15 cards, 2,695 programs; PENDING PERSON APPROVAL): 1173200 to 1177400, gzip 183800 to 185000.
+  // 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 1181301 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston raw 1177400 to 1181400.
+  "?at=city:boston": { raw: 1181400, gzip: 185000, label: "Boston" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska raw 867100 to 886400.
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska gzip 130500 to 132800.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska raw 886400 to 937900.
@@ -450,7 +455,9 @@ const BUDGET = {
   // 2026-10-18 (after #54) issue 22 Chicago and Elgin second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 999800 to 1002000, gzip 149500 to 149800.
   // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 1003690 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=state:nebraska raw 1002000 to 1003700.
   // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 149964 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=state:nebraska gzip 149800 to 150000.
-  "?at=state:nebraska": { raw: 1003700, gzip: 150000, label: "a Plains state" },
+  // 2026-10-19 issue 23 Pacific Northwest and Vancouver second pass read in a real browser (+15 cards, 2,695 programs; PENDING PERSON APPROVAL): 999800 to 1003900, gzip 149500 to 150600.
+  // 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 1007837 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=state:nebraska raw 1003900 to 1007900.
+  "?at=state:nebraska": { raw: 1007900, gzip: 150600, label: "a Plains state" },
 };
 for (const [search, b] of Object.entries(BUDGET)) {
   test("first-load data bytes for " + b.label + " stay under the pinned budget and far under the whole lite file", async () => {

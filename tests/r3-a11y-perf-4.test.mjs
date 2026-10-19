@@ -25,8 +25,10 @@ const SOON_ONLY = ["name", "org", "city", "url"];
 // 2026-10-18 (after #45) issue 19 Southern California pages read in a real browser (+6 cards, 2,686 programs; PENDING PERSON APPROVAL): 606000 to 607500.
 // 2026-10-18 (after #54) issue 22 Chicago and Elgin second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 606000 to 607700.
 // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 608907 bytes. Approved by Kentaro 2026-10-19 (merge train). 607700 to 609000.
-test("home file is under 609000 bytes", () => {
-  assert.ok(fs.statSync(path.join(ROOT, "data/entries-home.json")).size < 609000);
+// 2026-10-19 issue 23 Pacific Northwest and Vancouver second pass read in a real browser (+15 cards, 2,695 programs; PENDING PERSON APPROVAL): 606000 to 608900.
+// 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 611841 bytes. Approved by Kentaro 2026-10-19 (merge train). 608900 to 611900.
+test("home file is under 611900 bytes", () => {
+  assert.ok(fs.statSync(path.join(ROOT, "data/entries-home.json")).size < 611900);
 });
 
 test("only closing-soon rows carry name, org, city and url", () => {
