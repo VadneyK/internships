@@ -117,7 +117,9 @@ const LIMITS = {
   // 2026-10-15: map page review. Raised from 66600 to 67600 so a #p- link (every program link on the map page) keeps its card in view while the list
   // above it grows; reviewers saw the card land 15,000 to 37,000 px away. find.js is 67510 bytes. PENDING PERSON APPROVAL.
   // 2026-10-16 persona r11: 67600 to 68000 for the grade tag on program cards and picks that hold those cards back like limited ones (find.js 67924 bytes). PENDING PERSON APPROVAL.
-  script: 68000,
+  // 2026-10-16: keep my list without an account (docs/adr/0008). Raised from 67600 to 75500 for Download my list, Send to a parent, Copy a link to my list,
+  // the backup file pair and the ask-before-adding panel for a #saved= link, all in find.js (74710 bytes). PENDING PERSON APPROVAL.
+  script: 75500,
   // Raised from 34000 to 35000 on 2026-10-10: the merged upgrades added a few rules (the plain facts list and the Jobs output heading) and the sheet is 34005 bytes. Not caused by the data growth.
   // Raised again from 35000 to 36000 on 2026-10-10 for the 44 pixel tap targets (details summary, checkbox, breadcrumb) and the print rule for jump chips. The sheet is 35260 bytes.
   // Raised again from 36000 to 37000 on 2026-10-10 for the prefers-contrast block, the h1.display rule, the zero-count chip rule and the print rule for buttons. The sheet is 36345 bytes.
