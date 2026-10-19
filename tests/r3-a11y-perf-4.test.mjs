@@ -23,8 +23,10 @@ const SOON_ONLY = ["name", "org", "city", "url"];
 // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. home file 597700 to 597900.
 // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) home file 606000.
 // 2026-10-18 (after #45) issue 19 Southern California pages read in a real browser (+6 cards, 2,686 programs; PENDING PERSON APPROVAL): 606000 to 607500.
-test("home file is under 607500 bytes", () => {
-  assert.ok(fs.statSync(path.join(ROOT, "data/entries-home.json")).size < 607500);
+// 2026-10-18 (after #54) issue 22 Chicago and Elgin second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 606000 to 607700.
+// 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 608907 bytes. Approved by Kentaro 2026-10-19 (merge train). 607700 to 609000.
+test("home file is under 609000 bytes", () => {
+  assert.ok(fs.statSync(path.join(ROOT, "data/entries-home.json")).size < 609000);
 });
 
 test("only closing-soon rows carry name, org, city and url", () => {

@@ -31,7 +31,8 @@ const DETAIL_FIELDS = ["who_can_apply", "how_to_apply", "notes", "duration", "pa
 // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. entries-detail.json gzip limit 590300 to 591900.
 // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) limit 604000.
 // 2026-10-19: issue 28 batch 1 (#56) plus issue 19 second pass (#59) together, 604055 bytes gzipped. Approved by Kentaro 2026-10-19 (merge train). limit 604000 to 604100.
-const GZIP_LIMIT = 604100;
+// 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 605397 bytes gzipped. Approved by Kentaro 2026-10-19 (merge train). limit 604100 to 605400.
+const GZIP_LIMIT = 605400;
 
 function readText(file) {
   return fs.readFileSync(path.join(DATA, file), "utf8");
