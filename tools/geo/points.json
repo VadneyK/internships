@@ -1,5 +1,5 @@
 {
- "read": "2026-10-17",
+ "read": "2026-10-19",
  "cities": [
   {
    "key": "Chandler, AZ",
@@ -137,6 +137,7 @@
     "richmond-sd38-business-dual-credit-kpu",
     "richmond-sd38-youth-train-in-trades",
     "richmond-sd38-youth-work-in-trades",
+    "richmond-vch-richmond-volunteer",
     "richmond-youth-civic-engagement-program",
     "richmond-youth-media-program"
    ]
@@ -166,6 +167,7 @@
    "precision": "manual",
    "ids": [
     "bard-on-the-beach-volunteer",
+    "vancouver-aquarium-educator-volunteer",
     "vancouver-art-gallery-art-exchange",
     "vancouver-art-gallery-teen-art-group",
     "vancouver-bc-childrens-hospital-volunteer",
@@ -173,6 +175,12 @@
     "vancouver-bgc-south-coast-youth-employability",
     "vancouver-discovery-days-health-sciences",
     "vancouver-providence-health-care-volunteer",
+    "vancouver-public-library-ink-teen-advisory-group",
+    "vancouver-public-library-reading-buddies-teens",
+    "vancouver-public-library-steam-buddies-teens",
+    "vancouver-public-library-teen-advisory-group",
+    "vancouver-public-library-teen-dms-for-kids",
+    "vancouver-public-library-teens-read-it-first",
     "vancouver-science-world-volunteer",
     "vancouver-seed2stem-indigenous-research-internship",
     "vancouver-space-centre-teen-volunteer",
@@ -6441,6 +6449,16 @@
    ]
   },
   {
+   "key": "Edmonds, WA",
+   "state": "WA",
+   "lat": 47.8136,
+   "lon": -122.3533,
+   "precision": "city",
+   "ids": [
+    "edmonds-swedish-junior-volunteer"
+   ]
+  },
+  {
    "key": "Everett, WA",
    "state": "WA",
    "lat": 47.9612,
@@ -6479,9 +6497,12 @@
    "precision": "city",
    "ids": [
     "seattle-aquarium-youth-ocean-advocates",
+    "seattle-art-museum-design-your-neighborhood",
     "seattle-art-museum-teen-arts-group",
+    "seattle-art-museum-volunteers",
     "seattle-bgc-king-county-youthforce",
     "seattle-burke-museum-voices-in-science-burke-ology",
+    "seattle-burke-museum-voices-in-science-stem-careers",
     "seattle-childrens-hospital-volunteer",
     "seattle-childrens-research-training-program-high-school",
     "seattle-childrens-youth-voice-research-liaison",
@@ -6491,6 +6512,7 @@
     "seattle-harborview-volunteer-services",
     "seattle-henry-teen-art-collective",
     "seattle-mohai-history-lab",
+    "seattle-mopop-volunteer",
     "seattle-mopop-youth-advisory-board",
     "seattle-mountaineers-counselor-in-training",
     "seattle-museum-of-flight-youth-volunteer",
@@ -6547,6 +6569,8 @@
    "lon": -122.4598,
    "precision": "city",
    "ids": [
+    "tacoma-nature-center-teen-volunteer-leadership",
+    "tacoma-parks-lifeguard-swim-instructor-pathway",
     "tacoma-pierce-county-library-teen-councils",
     "tacoma-pierce-county-library-teen-volunteer-league",
     "tacoma-point-defiance-zoo-guides",

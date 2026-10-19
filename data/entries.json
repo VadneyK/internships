@@ -28335,6 +28335,47 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "edmonds-swedish-junior-volunteer",
+  "name": "Swedish Edmonds Junior Volunteer Program",
+  "org": "Swedish Edmonds Campus",
+  "regions": [
+   "seattle"
+  ],
+  "city": "Edmonds, WA",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Help support and comfort patients at the hospital and learn about health care jobs. Depending on age, you may work in Rehab, at the information desk, in patient care areas, food service or the Companionship Care Program.",
+  "min_age": 14,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be at least 14 years old and able to give at least one 3 or 4 hour shift each week.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer. It can count toward a school community service requirement.",
+  "season": "year-round",
+  "duration": "At least one 3 to 4 hour shift a week",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Closed. The page says the junior application process is closed because of a long wait list, with no new applications until further notice.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Check the page for when applications reopen. After you send the paperwork, you have an interview with volunteer services. Questions: 425-640-4341, Monday to Friday, 8 a.m. to 5 p.m.",
+  "needs_work_permit": false,
+  "url": "https://www.swedish.org/locations/edmonds-campus/volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.swedish.org/locations/edmonds-campus/volunteer",
+   "https://www.swedish.org/locations/issaquah-campus/volunteer",
+   "https://www.swedish.org/locations/mill-creek-campus/volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "Swedish's Issaquah and Mill Creek campuses take volunteers 18 and older only. Providence Everett has its own junior program for ages 16 and up.",
+  "verified_on_label": "Oct 19, 2026"
+ },
+ {
   "grades": "after 9th grade",
   "opens_iso": null,
   "apply_url": null,
@@ -82409,6 +82450,46 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "richmond-vch-richmond-volunteer",
+  "name": "Vancouver Coastal Health Richmond Volunteer Program",
+  "org": "Vancouver Coastal Health (VCH)",
+  "regions": [
+   "vancouver"
+  ],
+  "city": "Richmond, BC",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Help at Richmond Hospital, care homes and community health programs. Roles can include the information desk, showing people the way, friendly visits and special events.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "The Richmond page says its volunteers are over 16 years of age. VCH looks for people who are reliable, patient and mature and who will follow its rules.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer. Volunteers can get reference letters, awards and events.",
+  "season": "year-round",
+  "duration": "2 to 3 hours a week for at least 6 months",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline. Apply online any time.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill in the Richmond form online. It takes 4 to 8 weeks. VCH runs a criminal record check. Then you have an interview, reference checks, orientation and training.",
+  "needs_work_permit": null,
+  "url": "https://app.betterimpact.com/PublicOrganization/bd5eb87a-8d42-41c3-a37a-a010bc1820a2/1",
+  "apply_url": "https://app.betterimpact.com/Application?OrganizationGuid=bd5eb87a-8d42-41c3-a37a-a010bc1820a2&ApplicationFormNumber=1",
+  "sources_fetched": [
+   "https://app.betterimpact.com/PublicOrganization/bd5eb87a-8d42-41c3-a37a-a010bc1820a2/1",
+   "https://www.vch.ca/en/volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "Richmond Volunteer Services: 604-278-9711 ext. 384731, rhs.volunteerservices@vch.ca. Sites include Richmond Hospital, Minoru Residence, Richmond Lions Manor and Bridgeport. VCH also links an information sheet for Richmond applicants (a PDF we could not open).",
+  "verified_on_label": "Oct 19, 2026"
+ },
+ {
   "id": "richmond-vcu-pharmacy-summer-scholars",
   "fields": [
    "health",
@@ -88716,6 +88797,47 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "seattle-art-museum-design-your-neighborhood",
+  "name": "Design Your Neighborhood",
+  "org": "Seattle Art Museum (SAM)",
+  "regions": [
+   "seattle"
+  ],
+  "city": "Seattle, WA",
+  "type": "paid-youth-program",
+  "fields": [
+   "arts-media",
+   "engineering"
+  ],
+  "what_you_do": "Work with design pros to redo a real space in the community. Learn about art, architecture, city planning, landscape, interiors and fashion, visit design firms and make a final project.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "10 to 12",
+  "who_can_apply": "Students in grades 10 to 12. Each summer SAM works with one community group that serves young people, so spots go through that year's partner.",
+  "paid_type": "paid",
+  "pay_detail": "The page says it is a paid opportunity but does not give the amount.",
+  "season": "summer",
+  "duration": "Four weeks in August. Exact dates depend on the project and partner.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No 2027 dates or partner are posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "The page does not explain how a student signs up. Email teenprograms@seattleartmuseum.org to ask about the next summer's partner.",
+  "needs_work_permit": null,
+  "url": "https://www.seattleartmuseum.org/whats-on/programs/design-your-neighborhood",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.seattleartmuseum.org/whats-on/programs/design-your-neighborhood",
+   "https://www.seattleartmuseum.org/whats-on/audiences/for-teens"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 3,
+  "notes": "Past projects redid the South Park Community Center teen room and a school computer lab. If you are paid as an employee, ask whether you need Washington parent and school papers for a minor.",
+  "verified_on_label": "Oct 19, 2026"
+ },
+ {
   "id": "seattle-art-museum-teen-arts-group",
   "name": "Teen Arts Group (TAG)",
   "org": "Seattle Art Museum (SAM)",
@@ -88754,6 +88876,46 @@
   "priority": 2,
   "notes": "The page gives only a typical month (May), so watch the page in spring. Questions: teenprograms@seattleartmuseum.org. SAM's other internships are for college students and early-career adults, not high schoolers. If you take the stipend, ask whether you need Washington parent and school papers for a minor.",
   "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "seattle-art-museum-volunteers",
+  "name": "Seattle Art Museum Volunteers",
+  "org": "Seattle Art Museum (SAM)",
+  "regions": [
+   "seattle"
+  ],
+  "city": "Seattle, WA",
+  "type": "volunteer",
+  "fields": [
+   "arts-media"
+  ],
+  "what_you_do": "Help at SAM, the Asian Art Museum or the Olympic Sculpture Park. Greet visitors, work coat check or the info desk, help at events and art workshops, or care for the park gardens.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be 16 or older. Your application must name one or more volunteer roles. SAM cannot place everyone who applies.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer.",
+  "season": "year-round",
+  "duration": "Most roles: at least 6 months, 2 shifts a month of 2 to 3.5 hours. Some roles ask for a year. Park Steward runs June to October.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline posted. Apply online any time.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Read the list of roles, then use 'apply now' on the volunteer page and name the roles you want.",
+  "needs_work_permit": false,
+  "url": "https://www.seattleartmuseum.org/whats-on/programs/volunteers",
+  "apply_url": "https://form.asana.com/?k=58T7L-W-UsRyVZNpJzHc3Q&d=16948530586553",
+  "sources_fetched": [
+   "https://www.seattleartmuseum.org/whats-on/programs/volunteers",
+   "https://www.seattleartmuseum.org/whats-on/audiences/for-teens"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "SAM does not accept court-ordered volunteer hours. Library roles usually need library experience. Teens who want a deeper program can also look at SAM's Teen Arts Group.",
+  "verified_on_label": "Oct 19, 2026"
  },
  {
   "id": "seattle-bgc-king-county-youthforce",
@@ -88837,6 +88999,46 @@
   "priority": 2,
   "notes": "Not paid. The page lists no meeting dates for the session; the e-newsletter is the way to get them.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "seattle-burke-museum-voices-in-science-stem-careers",
+  "name": "Voices in Science: STEM Careers (middle school)",
+  "org": "Burke Museum (University of Washington)",
+  "regions": [
+   "seattle"
+  ],
+  "city": "Seattle, WA",
+  "type": "research",
+  "fields": [
+   "science"
+  ],
+  "what_you_do": "Meet scientists from the Burke and UW and explore a new STEM topic each week, such as fossil plants, rocks, oceans, birds, archaeology or medical physics.",
+  "min_age": 13,
+  "max_age": null,
+  "grades": "7 to 8",
+  "who_can_apply": "Students in grades 7 to 8 who are 13 or older. Priority goes to teens who want to build confidence in STEM and those with few STEM role models or science resources.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free",
+  "season": "fall",
+  "duration": "Six Sundays, 2 to 5 p.m. (the 2026 session ran Oct 18 to Nov 22 at the Burke Museum)",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Applications for the fall 2026 session closed Sept 25, 2026. Dates for 2027 are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online when the next session opens (the 2026 form was linked from the page). Join the Burke's Youth and Family Programs e-newsletter for dates.",
+  "needs_work_permit": false,
+  "url": "https://www.burkemuseum.org/education/families-and-youth/voices-in-science/middle-school",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.burkemuseum.org/education/families-and-youth/voices-in-science/middle-school",
+   "https://www.burkemuseum.org/education/families-and-youth/teen-programs"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "High schoolers can look at the Burke's Burke-ology program for grades 9 to 12. Burke volunteering is for ages 18 and up.",
+  "verified_on_label": "Oct 19, 2026"
  },
  {
   "opens_iso": null,
@@ -89250,6 +89452,47 @@
   "priority": 2,
   "notes": "Very small group (6 teens). Based at MOHAI with some field trips. Work permit rule not stated.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "seattle-mopop-volunteer",
+  "name": "MOPOP Volunteer",
+  "org": "Museum of Pop Culture (MOPOP)",
+  "regions": [
+   "seattle"
+  ],
+  "city": "Seattle, WA",
+  "type": "volunteer",
+  "fields": [
+   "arts-media"
+  ],
+  "what_you_do": "Help guests at the Museum of Pop Culture. Answer questions, help with the hands-on exhibits and lead activities.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be at least 16 years old and pass a background check and a reference check.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer. Volunteers get free admission with a guest, special events, discounts and parking help.",
+  "season": "year-round",
+  "duration": "At least 6 months, one shift every other week (9:45 a.m. to 1 p.m. or 1 to 4 p.m.)",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "You can apply now. The next round of reviews starts in spring 2027, and MOPOP will contact you then.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill in the general volunteer application (ages 16 and up) on the volunteer page. If your background and times fit, MOPOP sets up an interview. Questions: volunteers@mopop.org.",
+  "needs_work_permit": false,
+  "url": "https://www.mopop.org/volunteer",
+  "apply_url": "https://www.volgistics.com/appform/1197247904",
+  "sources_fetched": [
+   "https://www.mopop.org/volunteer",
+   "https://www.mopop.org/careers/youth-volunteer-summer-session",
+   "https://www.mopop.org/programs/sound-off"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "MOPOP will verify service-learning hours for school. Its summer Youth Volunteer program for high schoolers 16 and 17 is paused; it last ran July 9 to Aug 20, 2025. Sound Off!, its showcase for musicians 21 and under, is paused in 2027.",
+  "verified_on_label": "Oct 19, 2026"
  },
  {
   "id": "seattle-mopop-youth-advisory-board",
@@ -95365,6 +95608,86 @@
   "priority": 1,
   "notes": "Re-read the SVCTE home page and the Shadow Days, Dual Enrollment, Internships and Post-Secondary Options pages on 2026-10-07. The homepage lists 22 career technical courses (the old file said more than 24 pathways). Dual enrollment courses are taught by college professors at the high school campus. Shadow Days: after talking to your home school counselor, submit interest on the site; the counselor must approve it, and you get a confirmation 7 days before the visit. Eligibility, costs, deadlines and enrollment dates are not stated on the pages.",
   "verified_on_label": "Oct 7, 2026"
+ },
+ {
+  "id": "tacoma-nature-center-teen-volunteer-leadership",
+  "name": "Tacoma Nature Center Teen Volunteer Leadership Program",
+  "org": "Parks Tacoma (Tacoma Nature Center)",
+  "regions": [
+   "seattle"
+  ],
+  "city": "Tacoma, WA",
+  "type": "volunteer",
+  "fields": [
+   "environment",
+   "education"
+  ],
+  "what_you_do": "Go to a two-day leadership training, then help nature day camp staff for one week with games, crafts, activities and hikes. Set leadership goals with mentors from camp staff.",
+  "min_age": 13,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Teens ages 13 to 18 with permission from a parent or guardian. Spaces are limited.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer. Some students can get extra credit or use it for a school project.",
+  "season": "summer",
+  "duration": "A two-day training plus one week of summer day camp",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Summer 2026 applications closed April 15, 2026. The 2027 date is not posted yet.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill in the Teen Volunteer Leadership application posted on the Nature Center volunteer page (a new form is usually posted for each summer). Questions: Brianna Charbonnel, (253) 404-3930, brianna.charbonnel@tacomaparks.com.",
+  "needs_work_permit": false,
+  "url": "https://www.parkstacoma.gov/volunteer-at-the-tacoma-nature-center/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.parkstacoma.gov/volunteer-at-the-tacoma-nature-center/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "The Nature Center's Youth Council for ages 13 to 18 is on pause. The page also links a Teen Volunteer social story that explains what the week is like.",
+  "verified_on_label": "Oct 19, 2026"
+ },
+ {
+  "id": "tacoma-parks-lifeguard-swim-instructor-pathway",
+  "name": "Parks Tacoma Lifeguard and Swim Instructor Training",
+  "org": "Parks Tacoma",
+  "regions": [
+   "seattle"
+  ],
+  "city": "Tacoma, WA",
+  "type": "apprenticeship-trades",
+  "fields": [
+   "sports"
+  ],
+  "what_you_do": "Take the American Red Cross Lifeguarding course or Parks Tacoma's swim instructor training. Passing makes you eligible to apply for lifeguard or swim teacher jobs at Parks Tacoma pools.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Lifeguard course: at least 15 by the last day of the course, pass a swim test on day one, finish online modules first and attend every session. Swim instructor training: at least 15, can swim 25 yards and tread water for 1 minute, enjoys kids and wants to work for Parks Tacoma.",
+  "paid_type": "fee-based",
+  "pay_detail": "Lifeguard course: $250 for City of Tacoma residents, $275 for others, not refundable. Tacoma residents can ask for financial aid. The swim instructor page gives no fee. Job pay is not stated.",
+  "season": "year-round",
+  "duration": "Lifeguard course: about 3 days in person plus online modules (for example Nov 20 to 22 or Dec 28 to 30, 2026)",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Lifeguard courses open for sign-up on Oct 19, 2026: Nov 20 to 22 and Dec 28 to 30, 2026, at Eastside Community Center. No swim instructor dates were listed.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Register for a lifeguard course through the Register button on the page. Practice the swim test first at a Parks Tacoma pool (free with a Center Pass for ages 18 and under). Then look for openings on GovernmentJobs.com. Questions: aquatics@parkstacoma.gov, (253) 305-1000.",
+  "needs_work_permit": false,
+  "url": "https://www.parkstacoma.gov/activities-and-sports/swimming/lifeguard-training/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.parkstacoma.gov/activities-and-sports/swimming/lifeguard-training/",
+   "https://www.parkstacoma.gov/activities-and-sports/swimming/swim-instructor-training/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "Passing does not guarantee a job. The Red Cross certificate lasts two years and covers pools only. If you get hired, ask whether Washington's minor work papers apply.",
+  "verified_on_label": "Oct 19, 2026"
  },
  {
   "id": "tacoma-pierce-county-library-teen-councils",
@@ -102763,6 +103086,46 @@
   "verified_on_label": "Oct 13, 2026"
  },
  {
+  "id": "vancouver-aquarium-educator-volunteer",
+  "name": "Aquarium Educator Volunteer Program",
+  "org": "Vancouver Aquarium",
+  "regions": [
+   "vancouver"
+  ],
+  "city": "Vancouver, BC",
+  "type": "volunteer",
+  "fields": [
+   "science",
+   "environment"
+  ],
+  "what_you_do": "Teach visitors about the animals at the aquarium. Show props, tell stories about saving ocean life and lead hands-on learning for guests.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be at least 15 years old in the calendar year you apply and give one shift a week for at least 3 months.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer.",
+  "season": "year-round",
+  "duration": "One shift a week for at least 3 months",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Recruitment happens once a year in the spring. No 2027 date is posted. Sign up on the page to get an email when it opens.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Join the email list on the volunteer page (it asks you to confirm you are 15 this year or older). Apply when spring recruitment opens. Questions: volunteer@vanaqua.org.",
+  "needs_work_permit": null,
+  "url": "https://www.vanaqua.org/volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.vanaqua.org/volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "The aquarium's Marine Mammal Rescue Centre volunteer role and its practicums are for ages 18 and up, so they are not on this card.",
+  "verified_on_label": "Oct 19, 2026"
+ },
+ {
   "opens_iso": null,
   "apply_url": null,
   "grades": null,
@@ -103086,6 +103449,252 @@
   "priority": 2,
   "notes": "At 16 or 17 you can only volunteer at the long-term care sites. There is no shadowing or direct patient care. Most shifts are weekdays during work or school hours. The FAQ also says Public Health requires two COVID-19 shots for volunteers.",
   "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "vancouver-public-library-ink-teen-advisory-group",
+  "name": "ink Teen Advisory Group",
+  "org": "Vancouver Public Library",
+  "regions": [
+   "vancouver"
+  ],
+  "city": "Vancouver, BC",
+  "type": "volunteer",
+  "fields": [
+   "arts-media"
+  ],
+  "what_you_do": "Help make ink, the library's yearly magazine of teen writing and art. Pick which pieces get in, work on design and layout, plan the launch party and join workshops with writers and artists.",
+  "min_age": 13,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Anyone 13 to 18 years old who lives or goes to school in Vancouver.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer.",
+  "season": "year-round",
+  "duration": "February to December. Meetings every other Thursday during the school year (online or at Central Library), plus two-day summer workshops with mentors.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline posted. The ink page links an application form. Separately, writing and art for ink volume 10 can be sent in until April 23, 2027.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use the 'Click here to apply to ink TAG' form on the ink page. Questions: teens@vpl.ca or 604.331.3690.",
+  "needs_work_permit": null,
+  "url": "https://www.vpl.ca/programs/ink-teen-journal-writing-and-visual-art",
+  "apply_url": "https://www.vpl.ca/survey/index.php/864187?newtest=Y&lang=en",
+  "sources_fetched": [
+   "https://www.vpl.ca/programs/ink-teen-journal-writing-and-visual-art",
+   "https://www.vpl.ca/programs/teen-advisory-group"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "You can also send your own writing or art to ink (up to two pieces a year) without joining the group. The page says art or writing made with AI will not be published.",
+  "verified_on_label": "Oct 19, 2026"
+ },
+ {
+  "id": "vancouver-public-library-reading-buddies-teens",
+  "name": "Reading Buddies for Teens",
+  "org": "Vancouver Public Library",
+  "regions": [
+   "vancouver"
+  ],
+  "city": "Vancouver, BC",
+  "type": "volunteer",
+  "fields": [
+   "education"
+  ],
+  "what_you_do": "Be a big buddy to a child in grades 2 to 4 once a week at a library branch. Read together and help the child enjoy reading. It is not tutoring. Library staff train and support you.",
+  "min_age": 13,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Teens 13 to 18 who live in Vancouver. You need a signature from a coach, teacher, counsellor or community leader on your form, and you must come to every session.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer. You earn community service hours, and the library can write a letter confirming them.",
+  "season": "school-year",
+  "duration": "One hour a week for about 8 weeks, plus a teen training session on the first date. Arrive 15 minutes early.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "All five Fall 2026 sessions (Britannia, Fraserview, Kensington, South Hill, West Point Grey) were full on Oct 19, 2026. The Britannia session has a waitlist. Apply at least one week before a session starts. Next dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "When new sessions are posted, fill in the online form at least one week before the start date. Get your reference person to sign it. Questions: teens@vpl.ca.",
+  "needs_work_permit": null,
+  "url": "https://www.vpl.ca/programs/reading-buddies-teens",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.vpl.ca/programs/reading-buddies-teens",
+   "https://www.vpl.ca/teens"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "If you quit without a good reason, your spot goes to a teen on the waitlist. Sessions are loud and snacks are provided.",
+  "verified_on_label": "Oct 19, 2026",
+  "limited": true
+ },
+ {
+  "id": "vancouver-public-library-steam-buddies-teens",
+  "name": "STEAM Buddies for Teens",
+  "org": "Vancouver Public Library",
+  "regions": [
+   "vancouver"
+  ],
+  "city": "Vancouver, BC",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "science"
+  ],
+  "what_you_do": "Be a big buddy to a child in grades 2 to 4 and try science, tech, art and math activities together each week with LEGO, Osmo, Sphero robots and more. Library staff train and support you.",
+  "min_age": 13,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Teens 13 to 18 who live in Vancouver. You must come to every session.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer. You earn community service hours.",
+  "season": "school-year",
+  "duration": "One hour a week for about 4 weeks, plus a teen training session on the first date.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "All four Fall 2026 sessions (Champlain Heights, Kitsilano, Mount Pleasant, Terry Salman) were full on Oct 19, 2026. Apply at least one week before a session starts. Next dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "When new sessions are posted, fill in the online form on the STEAM Buddies page at least one week before the start date. Questions: teens@vpl.ca.",
+  "needs_work_permit": null,
+  "url": "https://www.vpl.ca/programs/steam-buddies-teens",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.vpl.ca/programs/steam-buddies-teens",
+   "https://www.vpl.ca/teens"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "Like Reading Buddies, but with hands-on science and tech. Check the page each season for new branches and dates.",
+  "verified_on_label": "Oct 19, 2026",
+  "limited": true
+ },
+ {
+  "id": "vancouver-public-library-teen-advisory-group",
+  "name": "Teen Advisory Group (TAG)",
+  "org": "Vancouver Public Library",
+  "regions": [
+   "vancouver"
+  ],
+  "city": "Vancouver, BC",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "arts-media"
+  ],
+  "what_you_do": "Meet every two weeks to share ideas about the library's teen programs, books and services. Give feedback to staff, build leadership skills and help make the library a great place for teens.",
+  "min_age": 13,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Anyone 13 to 18 years old who lives in Vancouver.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer. Members earn community service hours.",
+  "season": "school-year",
+  "duration": "September to June. One hour every other week (4 to 5 p.m.), online on Teams or at a branch.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline posted. Fill in the online form any time. On Oct 19, 2026 the Kerrisdale and Kitsilano groups were full.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill in the online application form linked on the TAG page. Pick the online group or a branch group (Central Library, Kensington, Kerrisdale, Kitsilano or Renfrew). Questions: teens@vpl.ca.",
+  "needs_work_permit": null,
+  "url": "https://www.vpl.ca/programs/teen-advisory-group",
+  "apply_url": "https://www.vpl.ca/survey/index.php/245145?lang=en",
+  "sources_fetched": [
+   "https://www.vpl.ca/programs/teen-advisory-group",
+   "https://www.vpl.ca/teens"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 1,
+  "notes": "Some branch groups fill up, so the online Teams group may be the easiest to join. Event listings on the library calendar show exact dates and access details.",
+  "verified_on_label": "Oct 19, 2026",
+  "limited": true
+ },
+ {
+  "id": "vancouver-public-library-teen-dms-for-kids",
+  "name": "Teen DMs for Kids",
+  "org": "Vancouver Public Library",
+  "regions": [
+   "vancouver"
+  ],
+  "city": "Vancouver, BC",
+  "type": "volunteer",
+  "fields": [
+   "education"
+  ],
+  "what_you_do": "Be the Dungeon Master for kids' Dungeons and Dragons games at the library. Guide the story, teach the rules and be a role model. You need some D&D knowledge, but not DM experience.",
+  "min_age": 13,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Teens 13 to 18 who know some D&D. Teens who live or go to school in Vancouver get first pick. You need an adult reference who is not your parent or guardian.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer. You earn community service hours.",
+  "season": "year-round",
+  "duration": "Varies. Times and branches change, and some are one-time events.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline. Apply at least one week before a program starts. Chances come up now and then, and the library contacts teens it picks.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill in the application form on the Teen DMs page and give the contact for an adult reference (a coach, teacher, counsellor or community leader). Questions: teens@vpl.ca.",
+  "needs_work_permit": null,
+  "url": "https://www.vpl.ca/programs/teen-dms-kids",
+  "apply_url": "https://www.vpl.ca/survey/index.php/177575?lang=en",
+  "sources_fetched": [
+   "https://www.vpl.ca/programs/teen-dms-kids",
+   "https://www.vpl.ca/teens"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 3,
+  "notes": "Some times of year are busier than others, so you may wait a while for your first game.",
+  "verified_on_label": "Oct 19, 2026"
+ },
+ {
+  "id": "vancouver-public-library-teens-read-it-first",
+  "name": "Teens Read it First",
+  "org": "Vancouver Public Library",
+  "regions": [
+   "vancouver"
+  ],
+  "city": "Vancouver, BC",
+  "type": "volunteer",
+  "fields": [
+   "arts-media"
+  ],
+  "what_you_do": "Read a new teen book before it comes out. Rate it out of five stars and write a review of under 250 words. Good reviews are posted in the library catalogue.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Teens who live in Vancouver. The page does not give an age range.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. You get one community service hour for every 100 pages of the book, confirmed by letter.",
+  "season": "year-round",
+  "duration": "At your own pace, one book at a time",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline. Books go first come, first served.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Watch the teensatvpl Instagram for featured books. Ask for one by Instagram message or at teens@vpl.ca. Pick it up at your nearest branch, then email your rating and review to teens@vpl.ca.",
+  "needs_work_permit": null,
+  "url": "https://www.vpl.ca/programs/teens-read-it-first",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.vpl.ca/programs/teens-read-it-first",
+   "https://www.vpl.ca/teens"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 3,
+  "notes": "Share your opinion of the book, not a summary of the plot. Reviews of only one or two lines are sent back for more detail.",
+  "verified_on_label": "Oct 19, 2026",
+  "limited": true
  },
  {
   "opens_iso": null,
