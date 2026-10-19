@@ -50,6 +50,12 @@ const HOOK_PREFIX = { "page-": "per-page body class written by the build" };
 
 // Class selectors in style.css that nothing uses on purpose.
 const UNUSED_RULE_ALLOW = {
+  // 2026-10-16: the street map's controls; MapLibre (assets/vendor/maplibre) makes these elements, so no file of ours names them
+  "maplibregl-ctrl": "MapLibre control wrapper (street map buttons)",
+  "maplibregl-ctrl-group": "MapLibre zoom button group, given the site's edge and shadow",
+  "maplibregl-ctrl-icon": "MapLibre button icon, inverted in dark mode",
+  "maplibregl-ctrl-attrib": "MapLibre OpenStreetMap credit, in the site's font",
+  "maplibregl-cooperative-gesture-screen": "MapLibre's two-finger hint, in the site's font",
   marker: "font helper kept for future headings; the --marker font variable is used elsewhere",
   w3: "reserved name from the scan; not a class in style.css (only the w3.org SVG namespace text), listed so the scan note stays true",
 };
