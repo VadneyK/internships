@@ -153,7 +153,8 @@ const LIMITS = {
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL).  limit 54700 to 54800.
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL).  limit 54800 to 55100.
   // 2026-10-15: the Map page rules (PENDING PERSON APPROVAL).  limit 55100 to 57300.
-  stylesheet: 57300,
+  // 2026-10-16: the street map box, its buttons and dark icons (PENDING PERSON APPROVAL).  limit 57300 to 58600.
+  stylesheet: 58600,
 };
 
 const LITE = "data/entries-lite.json";

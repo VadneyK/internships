@@ -286,7 +286,11 @@ class WiringTests(unittest.TestCase):
             if name in ("lib", "common"):
                 continue  # loaded by the layout, not named in a page header
             with self.subTest(script=name):
-                self.assertIn(name, used)
+                if name in used:
+                    continue
+                # or loaded by a page script (map.js adds map-gl.js as a module only where the browser has WebGL 2)
+                loaders = [u for u in used if "assets/js/" + name + ".js" in open(os.path.join(ROOT, "assets", "js", u + ".js"), encoding="utf-8").read()]
+                self.assertTrue(loaders, name + " is named by no page header and loaded by no page script")
 
     def test_layout_loads_lib_and_common(self):
         with open(os.path.join(ROOT, "src", "_layout.html"), encoding="utf-8") as f:
