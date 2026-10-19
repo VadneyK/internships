@@ -1,0 +1,39 @@
+{
+  "id": "riverside-county-wioa-youth-opportunity-centers",
+  "name": "Riverside County Youth Opportunity Centers (WIOA youth services)",
+  "org": "Riverside County Workforce Development",
+  "regions": [
+    "inland-empire"
+  ],
+  "city": "Riverside County, CA (six centers)",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Get help to find work at a youth center. Staff help with resumes, interviews and tutoring. Some youth get paid or unpaid work experience, like internships and job shadowing, plus job training and a mentor.",
+  "min_age": 16,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Ages 16 to 24 in Riverside County. You must be low income and have at least one of six barriers to work. The program mostly serves youth who are not in school.",
+  "paid_type": "mixed",
+  "pay_detail": "Some work experience is paid and some is unpaid. The page does not list a wage.",
+  "season": "year-round",
+  "duration": "Not stated",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline. Contact a center any weekday.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Call or visit the nearest Youth Opportunity Center. They are in Indio, Hemet, Lake Elsinore, Moreno Valley, Perris and Rubidoux. Staff check if you qualify.",
+  "needs_work_permit": true,
+  "url": "https://rivcoworkforce.org/youth-services",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://rivcoworkforce.org/youth-services",
+    "https://rivcoworkforce.org/youth-opportunity-centers"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-18",
+  "priority": 2,
+  "notes": "This is a federal WIOA program, so you have to qualify. Centers are open Monday to Friday, 8 a.m. to 5 p.m. Phone numbers: Indio (760) 802-6059, Hemet (951) 765-0917, Moreno Valley (951) 653-1311, Perris (951) 657-7105, Rubidoux (951) 683-9622. Do not email your Social Security number. Paid work under 18 in California needs a work permit."
+}

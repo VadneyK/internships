@@ -32,15 +32,25 @@ const PAGES = {
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) find.html limit 2468900 to 2496100. PENDING PERSON APPROVAL.
   // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. find.html limit 2496100 to 2507300.
   // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) find.html limit 2540600.
+  // 2026-10-18 (after #45) issue 19 Southern California pages read in a real browser (+6 cards, 2,686 programs; PENDING PERSON APPROVAL): 2540600 to 2546800.
+  // 2026-10-18 (after #54) issue 22 Chicago and Elgin second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 2540600 to 2547400.
+  // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 2553402 bytes. Approved by Kentaro 2026-10-19 (merge train). find.html ceiling 2547400 to 2553500.
+  // 2026-10-19 issue 5 Confirm first: CHP East Sacramento and Michigan 4-H Exploration Days re-read in a real browser (2 cards changed, 2,680 programs; PENDING PERSON APPROVAL) find.html limit 2540600 to 2540800.
+  // 2026-10-19: confirm-first edits (#64) after the #59 and #60 cards, 2553569 bytes. Approved by Kentaro 2026-10-19 (merge train). find.html ceiling 2553500 to 2553600.
   // 2026-10-19 issue 23 Pacific Northwest and Vancouver second pass read in a real browser (+15 cards, 2,695 programs; PENDING PERSON APPROVAL): 2540600 to 2554500.
-  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2554500 },
+  // 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 2567354 bytes. Approved by Kentaro 2026-10-19 (merge train). find.html ceiling 2554500 to 2567400.
+  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2567400 },
   "calendar.html": { allowed: ["calendar.json", "entries-cal.json"], ceiling: 150000 },
   // 2026-10-15: the Map page reads the map projection and the city points (754,977 bytes). PENDING PERSON APPROVAL, as above.
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) map.html limit 760000 to 763100. PENDING PERSON APPROVAL.
   // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. map.html limit 763100 to 766100.
   // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) map.html limit 775900.
+  // 2026-10-18 (after #45) issue 19 Southern California pages read in a real browser (+6 cards, 2,686 programs; PENDING PERSON APPROVAL): 775900 to 777600.
+  // 2026-10-18 (after #54) issue 22 Chicago and Elgin second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 775900 to 778000.
+  // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 779500 bytes. Approved by Kentaro 2026-10-19 (merge train). map.html ceiling 778000 to 779600.
   // 2026-10-19 issue 23 Pacific Northwest and Vancouver second pass read in a real browser (+15 cards, 2,695 programs; PENDING PERSON APPROVAL): 775900 to 779800.
-  "map.html": { allowed: ["entries-map.json", "map.json"], ceiling: 779800 },
+  // 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 783409 bytes. Approved by Kentaro 2026-10-19 (merge train). map.html ceiling 779800 to 783500.
+  "map.html": { allowed: ["entries-map.json", "map.json"], ceiling: 783500 },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. insights.html ceiling 697700 to 716100.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. insights.html limit 716100 to 736500.
   // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. insights.html limit 736500 to 748900.
@@ -49,8 +59,12 @@ const PAGES = {
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) insights.html limit 776700 to 785100. PENDING PERSON APPROVAL.
   // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. insights.html limit 785100 to 788200.
   // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) insights.html limit 798100.
+  // 2026-10-18 (after #45) issue 19 Southern California pages read in a real browser (+6 cards, 2,686 programs; PENDING PERSON APPROVAL): 798100 to 800000.
+  // 2026-10-18 (after #54) issue 22 Chicago and Elgin second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 798100 to 800300.
+  // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 801984 bytes. Approved by Kentaro 2026-10-19 (merge train). insights.html ceiling 800300 to 802000.
   // 2026-10-19 issue 23 Pacific Northwest and Vancouver second pass read in a real browser (+15 cards, 2,695 programs; PENDING PERSON APPROVAL): 798100 to 802200.
-  "insights.html": { allowed: ["entries-stats.json"], ceiling: 802200 },
+  // 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 806131 bytes. Approved by Kentaro 2026-10-19 (merge train). insights.html ceiling 802200 to 806200.
+  "insights.html": { allowed: ["entries-stats.json"], ceiling: 806200 },
   // younger.html: raised from 336000 to 340000 on 2026-10-11 (r5-younger-1: pet care card and address-safe script added 2.7 KB to younger.json)
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. younger.html ceiling 442000 to 452800.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. younger.html limit 452800 to 465400.
@@ -61,8 +75,12 @@ const PAGES = {
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) younger.html limit 489000 to 494400. PENDING PERSON APPROVAL.
   // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. younger.html limit 494400 to 496600.
   // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) younger.html limit 502300.
+  // 2026-10-18 (after #45) issue 19 Southern California pages read in a real browser (+6 cards, 2,686 programs; PENDING PERSON APPROVAL): 502300 to 503500.
+  // 2026-10-18 (after #54) issue 22 Chicago and Elgin second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 502300 to 503700.
+  // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 504691 bytes. Approved by Kentaro 2026-10-19 (merge train). younger.html ceiling 503700 to 504700.
   // 2026-10-19 issue 23 Pacific Northwest and Vancouver second pass read in a real browser (+15 cards, 2,695 programs; PENDING PERSON APPROVAL): 502300 to 505100.
-  "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 505100 },
+  // 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 507446 bytes. Approved by Kentaro 2026-10-19 (merge train). younger.html ceiling 505100 to 507500.
+  "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 507500 },
   "interview.html": { allowed: ["interview.json", "permits.json"], ceiling: 95000 },
   // permit.html and states.html: raised from 82000 to 83000 on 2026-10-12 (r2-accuracy-2 and r2-accuracy-8: the 2027 wage lines and the Washington, DC wording; permits.json is 82,370 bytes)
   "permit.html": { allowed: ["permits.json"], ceiling: 83000 },
