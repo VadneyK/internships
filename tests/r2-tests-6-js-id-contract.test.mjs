@@ -85,7 +85,8 @@ const scripts = readScripts();
 test("every assets/js script except lib.js is loaded by at least one root page", () => {
   const unloaded = scripts
     .filter((s) => s.name !== "lib.js")
-    .filter((s) => loaders(s.name, pages).length === 0)
+    // map-gl.js: added by map.js (as a module, only with WebGL 2), so it counts as loaded where map.js is
+    .filter((s) => loaders(s.name === "map-gl.js" && /assets\/js\/map-gl\.js/.test(fs.readFileSync(path.join(ROOT, "assets/js/map.js"), "utf8")) ? "map.js" : s.name, pages).length === 0)
     .map((s) => s.name);
   assert.deepEqual(unloaded, [], "scripts loaded by no page: " + unloaded.join(", "));
 });
