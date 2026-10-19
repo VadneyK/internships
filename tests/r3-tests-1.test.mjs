@@ -104,6 +104,11 @@ function refProblems(where, href, { liveIds = null, selfFile = null, partial = f
       if (!partial || frag.length > 2) {
         if (!ENTRY_IDS.has(frag.slice(2))) problems.push(`${where} (no program with id "${frag.slice(2)}" in data/entries.json)`);
       }
+    } else if (target === "find.html" && /^saved(=|$)/.test(frag)) {
+      // find.html#saved=id1,id2 is the keep-my-list link (docs/adr/0008): a parameter find.js reads on load, not an anchor. Every id must be a program.
+      for (const id of frag.replace(/^saved=?/, "").split(",").filter(Boolean)) {
+        if (!ENTRY_IDS.has(id)) problems.push(`${where} (no program with id "${id}" in data/entries.json)`);
+      }
     } else if (target && target.endsWith(".html")) {
       const ids = !filePart && liveIds ? liveIds : builtIds(target);
       if (!ids.has(frag)) problems.push(`${where} (no id "${frag}" in ${target})`);

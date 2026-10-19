@@ -6,7 +6,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
-import { loadPage, type, tick } from "./dom-helper.mjs";
+import { loadPage, type, tick, waitFor } from "./dom-helper.mjs";
 
 const require = createRequire(import.meta.url);
 globalThis.self = globalThis;
@@ -93,14 +93,14 @@ test("(d) a search that matches nothing leaves the strip unchanged, and See card
   const { document, window, errors } = await loadPage("find.html", { search: "?age=15&at=city:berkeley" });
   const before = document.getElementById("picks").innerHTML;
   type(window, document.getElementById("q"), "zzzqqqxxnomatch");
-  await tick(400);
+  await waitFor(() => document.querySelector("#out .empty")); // was a fixed 400 ms sleep, which a loaded machine outran (2026-10-16)
   assert.ok(document.querySelector("#out .empty"), "list should be empty");
   assert.equal(document.getElementById("picks").hidden, false);
   assert.equal(document.getElementById("picks").innerHTML, before);
   const link = document.querySelector("#picks a[data-jump]");
   const id = link.getAttribute("data-jump");
   link.dispatchEvent(new window.MouseEvent("click", { bubbles: true, cancelable: true }));
-  await tick();
+  await waitFor(() => document.getElementById("p-" + id));
   assert.ok(document.getElementById("p-" + id), "card is shown after See card");
   assert.deepEqual(errors, []);
 });

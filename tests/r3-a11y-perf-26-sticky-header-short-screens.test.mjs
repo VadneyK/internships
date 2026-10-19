@@ -1,5 +1,5 @@
 // Ticket r3-a11y-perf-26: the sticky header must not cover a short landscape screen.
-// The header only sticks when the screen is at least 40.0625rem wide AND 34rem tall. Short screens (a phone held sideways)
+// The header only sticks when the screen is at least 64rem wide (40.0625rem until 2026-10-16, see r12-a11y-perf-1) AND 34rem tall. Short screens (a phone held sideways)
 // keep the header static, and the scroll offsets match the wrapped header (about 8rem) inside that same min-height block.
 // Reads style.css as text (comments stripped), using the same helpers as tests/a11y-scroll-padding.test.mjs.
 import test from "node:test";
@@ -168,8 +168,8 @@ test("mutation: a sticky .top outside the min-height block fails the check", () 
 
 test("mutation: a sticky .top in a width-only media block fails the check", () => {
   const mutated = CSS.replace(
-    "@media (min-width: 40.0625rem) and (min-height: 34rem) {",
-    "@media (min-width: 40.0625rem) {",
+    "@media (min-width: 64rem) and (min-height: 34rem) {",
+    "@media (min-width: 64rem) {",
   );
   assert.equal(stickyOnlyWhenTall(mutated), false);
 });

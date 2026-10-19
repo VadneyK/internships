@@ -46,8 +46,12 @@ test("Numbers hub chart: every row states paid, free and costs-money counts in t
   assert.equal(doc.querySelectorAll("#chartHubs i[title]").length, 0, "no i[title] in #chartHubs");
   assert.equal(doc.querySelectorAll("#chartHubs [title]").length, 0, "no title attribute in #chartHubs");
 
-  // The bar segments are decoration, so they are hidden from screen readers.
-  assert.equal(doc.querySelectorAll("#chartHubs .ctrack[aria-hidden='true']").length, rows.length);
+  // The bar segments are decoration, so they are hidden from screen readers. The total after the bar
+  // (2026-10-17: it sits inside the track, next to the bar end) and the row's text stay readable.
+  const segs = doc.querySelectorAll("#chartHubs .ctrack i");
+  assert.ok(segs.length >= rows.length, "every row has at least one segment");
+  assert.equal(doc.querySelectorAll("#chartHubs .ctrack i[aria-hidden='true']").length, segs.length);
+  assert.equal(doc.querySelectorAll("#chartHubs .ctrack[aria-hidden], #chartHubs .cn[aria-hidden]").length, 0);
 
   // The legend is still hidden, so its three labels must appear as visible text beside each row.
   const legend = doc.querySelector(".legend");

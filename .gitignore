@@ -12,3 +12,7 @@ reports/
 # Census Gazetteer downloads for tools/geo/geocode.py (see tools/geo/README.md); never committed
 tools/geo/raw/
 tools/geo/check-*.json
+
+# Map page street tiles: built by tools/geo/tiles/build.sh, published as a release file, added to the site at deploy
+assets/map/tiles/
+.venv-tiles/
