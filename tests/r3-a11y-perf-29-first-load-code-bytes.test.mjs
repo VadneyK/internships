@@ -21,6 +21,7 @@ const PICKER_CALLS = /\b(?:G|TIG)\.(?:tilePicker|autoTiles)\b/;
 // Ceilings: bytes on disk for each page's script and stylesheet files, about 5% over today's total (rounded up to 100 bytes).
 // Raised on 2026-10-12 for ticket r3-a11y-perf-35: the body min-height 100dvh line in style.css adds 22 bytes, so every page that loads style.css has its ceiling raised by 22 bytes and nothing else.
 const BUDGET = {
+  // 2026-10-18: main merged in after PR 54 (common.js grew for the screen reader names), paycheck.html 165300 to 165400 (PENDING PERSON APPROVAL, merging approves): pages over set to the measured size rounded up to 100.
   // 2026-10-15 Map page rebased on main (brand wrap CSS plus map rules): pages over set to the measured size rounded up to 100.
   // 2026-10-15 Map page rebased on main again (narrow phone CSS plus map rules): pages over set to the measured size rounded up to 100.
   // 2026-10-15: new Map page (map.html): lib.js, common.js and map.js; set after the rebase by the ceiling tool.

@@ -688,7 +688,7 @@
     return { named: named.length, sent: sent, next: next };
   }
   function icsEscape(t) { return String(t || "").replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\r?\n/g, "\\n"); }
-  /* RFC 5545 line folding: at most 75 octets a line, continuation starts with one space, never inside a UTF-8 character or an escape pair. */
+  /* RFC 5545 folding: 75 octets a line, continuations start with a space, never splitting a UTF-8 character or an escape pair. */
   function icsFold(line) {
     var out = [], cur = "", n = 0, chars = Array.from(line), i, ch, w;
     for (i = 0; i < chars.length; i++) {
@@ -713,8 +713,8 @@
     return lines.concat("END:VEVENT", "END:VCALENDAR", "").map(icsFold).join("\r\n");
   }
   function ymd(iso, n) { return addDays(iso, n).replace(/-/g, ""); }
-  /* A card's calendar event: a confirmed 2026-27 date to apply by, still ahead. Not a last-year-pattern date, an event day
-     or an opening day. Reminders at 9 AM a week and a day before (Google links cannot carry them). */
+  /* A card's event: a confirmed 2026-27 deadline still ahead, not a last-year date, event day or opening day.
+     Reminders at 9 AM a week and a day before (Google links cannot carry them). */
   function calEvent(e, now) {
     if (!e || !knownDeadline(e, now) || e.deadline_confidence !== "confirmed-2026-27" || effStatus(e, now) === "event" || e.opens_iso === e.deadline_iso) return null;
     var u = safeUrl(e.url), n = e.name;
