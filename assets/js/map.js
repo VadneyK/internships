@@ -2,7 +2,9 @@
    The age, pay and open filters run L.matches on data/entries-map.json, the lite rows with only the keys this page reads.
    The map is hidden from screen readers: the list under it holds every program, by state and city.
    "Near me" asks for the location only after a tap. The distance math runs here, in the browser. The location is never
-   put in the address, in storage, in a cookie or in any request. */
+   put in the address, in storage, in a cookie or in any request.
+   Where the browser can draw WebGL, map-gl.js swaps the drawn map for a street map you can drag and zoom, with the same dots;
+   gl is then its controls, and every zoom below goes to it as well. */
 (function () {
   "use strict";
   var G = window.TIG, L = G.lib;
@@ -14,7 +16,7 @@
   var BC_BOX = [2, 2, 56, 76];
   var anim = G.motionOK();
   var f = { age: "", paid: false, open: false };
-  var data, byId = {}, pts = [], svg = null, dotsG, ring, label, vb = [0, 0, W, H], cur = null, views = [];
+  var data, byId = {}, pts = [], svg = null, dotsG, ring, label, vb = [0, 0, W, H], cur = null, views = [], gl = null;
   function now() { return Date.now(); }
   function filt() { return { age: f.age, paid: f.paid ? ["pay"] : [], when: f.open ? "open" : "" }; }
   var okCache = null;
@@ -111,7 +113,9 @@
     /* faded dots at the bottom, then lit ones from big to small, so a small city stays visible on top of a big one */
     pts.slice().sort(function (a, b) { return (a.n ? 1 : 0) - (b.n ? 1 : 0) || b.n - a.n || b.ids.length - a.ids.length; }).forEach(function (p) { dotsG.appendChild(p.el); });
     if (anim && svg) kick(); else draw();
+    if (gl) gl.setData(glList());
   }
+  function glList() { return pts.map(function (p, i) { return { i: i, name: cityName(p), lat: p.lat, lon: p.lon, n: p.n }; }); }
 
   /* ---- zoom views, from the groups lib.js already defines ---- */
   function stateCodes(labelText) {
@@ -147,13 +151,14 @@
       ["se", "Southeast", south]
     ];
     views = defs.map(function (d) {
-      if (!d[2]) return { id: d[0], label: d[1], box: [0, 0, W, H] };
+      if (!d[2]) return { id: d[0], label: d[1], box: [0, 0, W, H], list: null };
       var members = Array.isArray(d[2]) ? pts.filter(function (p) { return d[2].indexOf(p.s) > -1; }) : pts.filter(function (p) { return p.s === "CA" && inRegions(p, d[2]); });
       if (!Array.isArray(d[2])) members = trim(members);
       if (!members.length) return null;
       var b = boxOf(members, Array.isArray(d[2]));
       if (d[0] === "pnw") b = [Math.min(b[0], BC_BOX[0]), Math.min(b[1], BC_BOX[1]), Math.max(b[2], BC_BOX[0] + BC_BOX[2]), Math.max(b[3], BC_BOX[1] + BC_BOX[3])];
-      return { id: d[0], label: d[1], box: fit(b[0], b[1], b[2], b[3], 0.1, 70) };
+      if (d[0] === "pnw") members = members.concat(pts.filter(function (p) { return p.s === "BC"; }));
+      return { id: d[0], label: d[1], box: fit(b[0], b[1], b[2], b[3], 0.1, 70), list: members };
     }).filter(Boolean);
   }
   /* [x0, y0, x1, y1] around the dots, and around the outline of each of their states when whole is true (so a state's edges stay in view).
@@ -189,9 +194,14 @@
     x = Math.min(Math.max(x, 0), W - w); y = Math.min(Math.max(y, 0), H - h);
     return [x, y, w, h];
   }
-  /* the zoom button for view id shows pressed; any other zoom (to a city, a state or the closest cities) presses none */
-  function zoomTo(box, id) {
+  /* the zoom button for view id shows pressed; any other zoom (to a city, a state or the closest cities) presses none.
+     geo is the same place for the street map: { city: p }, or { list: [cities], max: zoom }, or null for the whole map. */
+  function zoomTo(box, id, geo) {
     Array.prototype.forEach.call($("mZoom").children, function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-v") === id)); });
+    if (gl) {
+      if (!geo || !geo.list && !geo.city) gl.whole(); else if (geo.city) gl.city(geo.city); else gl.fit(geo.list, geo.max);
+      return;
+    }
     if (anim && svg) { if (labelsG) labelsG.textContent = ""; tw.zoom = { from: vb.slice(), to: box.slice(), t0: performance.now() }; kick(); }
     else { vb = box.slice(); draw(); placeLabels(); }
   }
@@ -227,7 +237,7 @@
   function setView(id) {
     if (!svg) return;
     var v = views.filter(function (x) { return x.id === id; })[0]; if (!v) return;
-    zoomTo(v.box, id);
+    zoomTo(v.box, id, v.list && { list: v.list, max: 9 });
   }
 
   /* ---- the city panel ---- */
@@ -236,6 +246,7 @@
   function openCity(p, how) {
     if (cur && cur !== p) cur.el.setAttribute("class", "dot" + (cur.n ? "" : " off"));
     cur = p;
+    if (gl) gl.select(pts.indexOf(p));
     if (svg) {
       p.el.setAttribute("class", "dot sel" + (p.n ? "" : " off"));
       ring.removeAttribute("hidden"); label.removeAttribute("hidden");
@@ -275,6 +286,7 @@
   function closeCity() {
     if (cur && svg) { cur.el.setAttribute("class", "dot" + (cur.n ? "" : " off")); ring.setAttribute("hidden", ""); label.setAttribute("hidden", ""); }
     cur = null; $("mPanel").hidden = true;
+    if (gl) gl.select(null);
   }
   /* A tap picks the dot it lands on, or the closest one within reach, so a small dot is easy to hit with a finger.
      The score is the distance over the dot's size: the middle of a small dot drawn over a big one picks the small city, and the rest
@@ -342,7 +354,7 @@
     Array.prototype.forEach.call(box.querySelectorAll("button[data-i]"), function (b) {
       b.addEventListener("click", function () {
         var p = pts[+b.getAttribute("data-i")]; if (!p) return;
-        if (zoom) zoomTo(fit(p.x, p.y, p.x, p.y, 0.1, 150));
+        if (zoom) zoomTo(fit(p.x, p.y, p.x, p.y, 0.1, 150), null, { city: p });
         openCity(p, zoom ? "pick" : "tap");
       });
     });
@@ -356,7 +368,8 @@
       var lat = pos.coords.latitude, lon = pos.coords.longitude, five = closest(lat, lon, null).slice(0, 5).map(function (r) { return r.p; });
       st.textContent = five.length ? "Done. The closest cities are under the map." : "";
       closeCity();
-      if (five.length) { var b = boxOf(five, false); zoomTo(fit(b[0], b[1], b[2], b[3], 0.15, 150)); }
+      /* the street map moves to these program cities, never to the reader's own point (see map-gl.js) */
+      if (five.length) { var b = boxOf(five, false); zoomTo(fit(b[0], b[1], b[2], b[3], 0.15, 150), null, { list: five, max: 10 }); }
       showNear({ lat: lat, lon: lon, why: "The 10 closest cities to you with programs that match your choices. Your location was not saved or sent." }, false);
     }, function () {
       st.textContent = "We could not get your location. Type your city instead.";
@@ -367,14 +380,14 @@
     if (!m) return;
     if (m[1] === "p") {
       var p = pts[+m[2]]; if (!p) return;
-      zoomTo(fit(p.x, p.y, p.x, p.y, 0.1, 150));
+      zoomTo(fit(p.x, p.y, p.x, p.y, 0.1, 150), null, { city: p });
       showNear({ lat: p.lat, lon: p.lon, skip: p, why: "The 10 closest cities to " + p.k + " with programs that match your choices." }, true);
       openCity(p, "pick");
     } else {
       var inS = pts.filter(function (q) { return q.s === m[2]; });
       if (!inS.length) return;
       var b = m[2] === "BC" ? [BC_BOX[0], BC_BOX[1], BC_BOX[0] + BC_BOX[2], BC_BOX[1] + BC_BOX[3]] : boxOf(inS, true);
-      zoomTo(fit(b[0], b[1], b[2], b[3], 0.1, 90));
+      zoomTo(fit(b[0], b[1], b[2], b[3], 0.1, 90), null, { list: inS, max: 8 });
       closeCity();
       showNear({ state: m[2] }, false);
     }
@@ -488,6 +501,7 @@
     count();
     if (cur && !$("mPanel").hidden) openCity(cur);
     if (nearQ && !$("mNearBox").hidden) showNear(nearQ, true);
+    if (gl) viewSoon();
   }
 
   function setup(svgText) {
@@ -515,6 +529,71 @@
       p.el.__pt = p; p.sz = 0; dotsG.appendChild(p.el);
     });
     if (svg) svg.addEventListener("click", onTap);
+  }
+
+  /* ---- the street map ---- */
+  /* MapLibre 6 needs WebGL 2 */
+  function glOK() {
+    if (!window.WebGL2RenderingContext) return false;
+    try { return !!document.createElement("canvas").getContext("webgl2"); } catch (e) { return false; }
+  }
+  var glWanted = glOK();
+  /* the box takes the street map's height before anything draws, so the page does not jump when the street map arrives */
+  var saveData = !!(navigator.connection && navigator.connection.saveData);
+  /* fixed text of this file, set with innerHTML only for its one link */
+  var GL_NOTE = "Drag the map to move it and use + and \u2212 to zoom. On a phone, move it with two fingers, or tap the full screen button. A number in a circle is how many programs are in the cities there; tap it to zoom in. A dot shows the city named on the program\u2019s card, not the exact address. Some programs cover a whole state, are online, or run in several places. They are in the <a href=\"#list\">list below the map</a>, which also works with a keyboard or screen reader.";
+  var svgNote = $("mNote").innerHTML;
+  /* The street map's words and its "In this view" line take their place now, before the page is drawn, so nothing
+     moves when the street map arrives. They go back only if it fails. */
+  function glLayout(on) {
+    $("mNote").innerHTML = on ? GL_NOTE : svgNote;
+    var v = $("mView");
+    v.hidden = !on; v.style.visibility = "hidden"; v.textContent = on ? "\u00a0" : "";
+  }
+  if (glWanted && !saveData) { $("mapBox").classList.add("gl"); glLayout(true); }
+  /* "In this view": what the street map shows now, said once the map stops moving */
+  var viewT = null;
+  function viewSoon() { clearTimeout(viewT); viewT = setTimeout(viewLine, 800); }
+  function viewLine() {
+    if (!gl) return;
+    var inV = gl.inView(), n = inV.reduce(function (a, q) { return a + q.n; }, 0), el = $("mView");
+    el.style.visibility = "";
+    el.textContent = inV.length ? "In this view: " + plural(n, "program", "programs") + " in " + plural(inV.length, "place", "places") + "." : "No city with a matching program is in this view. Zoom out, or pick a place above.";
+  }
+  function glFail() { glWanted = false; glLayout(false); var box = $("mapBox"); box.classList.remove("gl", "gl-on"); var el = box.querySelector(".mgl"); if (el) el.remove(); }
+  /* With the browser's data saver on, the street map (about 1 MB the first time) waits for a tap */
+  function startGL() {
+    if (!glWanted || !svg) { glFail(); return; }
+    if (saveData) {
+      var b = document.createElement("button");
+      b.type = "button"; b.className = "btn sm alt"; b.id = "mGLGo"; b.textContent = "Load the street map (about 1 MB)";
+      b.addEventListener("click", function () { b.remove(); $("mapBox").classList.add("gl"); glLayout(true); loadGL(); });
+      $("mZoom").parentNode.insertBefore(b, $("mZoom"));
+      return;
+    }
+    loadGL();
+  }
+  function loadGL() {
+    var box = $("mapBox"), el = document.createElement("div"), root = new URL(".", document.baseURI);
+    el.className = "mgl"; box.appendChild(el);
+    var css = document.createElement("link"); css.rel = "stylesheet"; css.href = "assets/vendor/maplibre/maplibre-gl.css"; document.head.appendChild(css);
+    G.mapGLStart = function (create) {
+      create({ el: el, root: root, anim: anim, onPick: function (i) { var p = pts[i]; if (p) openCity(p, "tap"); }, onMove: viewSoon }).then(function (api) {
+        gl = api;
+        box.classList.add("gl-on");
+        $("mStreet").hidden = false;
+        /* the street map can be used by keyboard (arrows and plus or minus), so it is no longer hidden from screen readers */
+        box.removeAttribute("aria-hidden"); box.setAttribute("role", "region"); box.setAttribute("aria-label", "Street map");
+        gl.resize();
+        gl.setData(glList());
+        if (cur) gl.select(pts.indexOf(cur));
+        viewSoon();
+      }, glFail);
+    };
+    var pm = document.createElement("script"); pm.src = "assets/vendor/pmtiles.js";
+    pm.onload = function () { var s = document.createElement("script"); s.type = "module"; s.src = "assets/js/map-gl.js"; s.onerror = glFail; document.head.appendChild(s); };
+    pm.onerror = glFail;
+    document.head.appendChild(pm);
   }
 
   Promise.all([
@@ -557,6 +636,7 @@
     paintList(false);
     count();
     $("mRead").textContent = "City points read " + data.read + ".";
+    startGL();
     window.addEventListener("beforeprint", function () { groups.forEach(function (x) { if (x.dirty && x.el) fill(x); }); });
     window.addEventListener("resize", function () { if (svg) { pts.forEach(function (p) { if (p.t0 == null) p.sz = pxSize(p.n); }); draw(); } });
   }).catch(function () {

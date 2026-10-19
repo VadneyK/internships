@@ -1,4 +1,4 @@
-/* Insights page: charts built from data/entries-stats.json. Counting logic lives in lib.js (insights) and is tested. */
+/* Insights page: charts from data/entries-stats.json. Counting logic is in lib.js (insights). */
 (function () {
   "use strict";
   var G = window.TIG, L = G.lib;
@@ -10,10 +10,12 @@
     el.innerHTML = items.map(function (it) {
       var href = hrefOf(it), tag = href ? "a" : "div";
       return "<" + tag + ' class="crow"' + (href ? ' href="' + G.esc(href) + '"' : "") + '><span class="cl">' + G.esc(it.label) + '</span>' +
-        '<span class="ctrack"><i class="' + (cls || "k1") + '" style="width:' + (max ? Math.max(it.n ? 2 : 0, Math.round(it.n / max * 100)) : 0) + '%"></i></span>' +
-        '<span class="cn">' + it.n + "</span></" + tag + ">";
+        '<span class="ctrack"><i class="' + (cls || "k1") + '" style="width:' + (max ? Math.max(it.n ? 2 : 0, Math.round(it.n / max * 100)) : 0) + '%"></i>' +
+        '<span class="cn">' + it.n + "</span></span></" + tag + ">";
     }).join("");
   }
+
+  if (!("container" in document.documentElement.style)) document.body.classList.add("nocq");
 
   G.loadEntries("stats").then(function (list) {
     var d = L.insights(list, Date.now()), f = d.facts;
@@ -34,22 +36,23 @@
     $("ageLead").textContent = "At 13, " + d.ages[0].n + " programs are open to you. At 16, it is " + d.ages[3].n + ". Paid options grow " + f.paidJump + " percent between 14 and 16 (" + d.ages[1].paid + " to " + d.ages[3].paid + "). Under 16, look hard at volunteering, school programs and the people you know.";
     $("chartAge").innerHTML = d.ages.map(function (a) {
       var h = Math.round(a.n / amax * 100), hp = a.n ? Math.round(a.paid / a.n * 100) : 0;
-      return '<a class="ccol" href="' + G.esc(link({ age: a.age })) + '" aria-label="Age ' + a.age + ": " + a.n + " programs, " + a.paid + " paid, " + (a.n - a.paid) + ' not paid or pay not stated"><span class="cn">' + a.n + '</span><span class="cbar"><i class="k3" style="height:' + h + '%"><b class="k1" style="height:' + hp + '%"></b></i></span><span class="cl">Age ' + a.age + '<span class="csplit small"><span><i class="key k1" aria-hidden="true"></i>' + a.paid + '</span><span><i class="key kw" aria-hidden="true"></i>' + (a.n - a.paid) + '</span></span></span></a>';
+      return '<a class="ccol" href="' + G.esc(link({ age: a.age })) + '" aria-label="Age ' + a.age + ": " + a.n + " programs, " + a.paid + " paid, " + (a.n - a.paid) + ' not paid or pay not stated"><span class="cn">' + a.n + '</span><span class="cbar"><i class="k3" style="height:' + h + '%"><span class="cw"><span class="cv">' + (a.n - a.paid) + '</span></span><b class="k1" style="height:' + hp + '%"><span class="cv">' + a.paid + '</span></b></i></span><span class="cl">Age ' + a.age + '<span class="csplit small"><span><i class="key k1" aria-hidden="true"></i>' + a.paid + '</span><span><i class="key kw" aria-hidden="true"></i>' + (a.n - a.paid) + '</span></span></span></a>';
     }).join("");
 
     /* hubs, stacked. The counts are written out as text under each bar, so screen readers and
-       keyboard users get them without color or hover. The bar segments are decoration only. */
+       keyboard users get them without color or hover. The bar segments are decoration only; the
+       small number inside each segment repeats the text and hides when the segment is too narrow. */
     var hmax = Math.max.apply(null, d.hubs.map(function (h) { return h.n; }));
     $("chartHubs").innerHTML = d.hubs.map(function (h) {
-      var seg = function (n, cls) { return n ? '<i class="' + cls + '" aria-hidden="true" style="width:' + (n / hmax * 100) + '%"></i>' : ""; };
+      var seg = function (n, cls) { return n ? '<i class="' + cls + '" aria-hidden="true" style="width:' + (n / hmax * 100) + '%"><span class="cv">' + n + '</span></i>' : ""; };
       var parts = [h.pay + " paid", h.free + " free", h.fee + " costs money"];
       if (h.unknown) parts.push(h.unknown + " pay not stated");
-      return '<a class="crow" href="' + G.esc(link({ where: h.id })) + '"><span class="cl">' + G.esc(h.label) + '</span><span class="ctrack multi" aria-hidden="true">' +
-        seg(h.pay, "k1") + seg(h.free, "k2") + seg(h.fee, "k3") + '</span><span class="cn">' + h.n + '</span>' +
+      return '<a class="crow" href="' + G.esc(link({ where: h.id })) + '"><span class="cl">' + G.esc(h.label) + '</span><span class="ctrack multi">' +
+        seg(h.pay, "k1") + seg(h.free, "k2") + seg(h.fee, "k3") + '<span class="cn">' + h.n + '</span></span>' +
         '<span class="cbreak small muted" style="grid-column:1 / -1">' + parts.join(", ") + "</span></a>";
     }).join("");
 
-    /* kinds and interests */
+    /* kinds, interests */
     var tmax = d.types[0].n, fmax = d.fields[0].n;
     rows($("chartTypes"), d.types, tmax, function (it) { return link({ kind: it.id }); }, "k1");
     rows($("chartFields"), d.fields, fmax, function (it) { return link({ interest: it.id }); }, "k2");
@@ -63,7 +66,7 @@
     d.months.forEach(function (m) { m.items.forEach(function (it) { items.push(it); }); });
     $("soonDates").innerHTML = items.slice(0, 8).map(function (it) {
       var dt = G.parseISO(it.date);
-      return '<li><div class="d">' + L.MONTHS[dt.getMonth()] + " " + dt.getDate() + "<small>closes</small></div><div><b>" + G.esc(it.name) + '</b><br><a href="find.html#p-' + G.esc(it.id) + '">See card</a></div></li>';
+      return '<li><div class="d">' + L.MONTHS[dt.getMonth()] + " " + dt.getDate() + "<small>closes</small></div><div><b>" + G.esc(it.name) + '</b><br><a href="find.html#p-' + G.esc(it.id) + '" aria-label="' + G.esc("See card: " + it.name) + '">See card</a></div></li>';
     }).join("") || "<li><div>No confirmed deadlines right now.</div></li>";
 
     /* trust */

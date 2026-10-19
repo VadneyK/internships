@@ -197,9 +197,14 @@ test("the Spanish header and footer have no English text left", () => {
 // people map and the message builder: lib.js, playbook.js and es-playbook.js join, code 100500 to 179500 (179,440 bytes, about
 // 9 KB over its English twin, which is es-playbook.js) and html 25000 to 28800 (28,749 bytes). PENDING PERSON APPROVAL for that row.
 const CEILINGS = {
-  "es/index.html": { html: 21700, code: 100200 },
-  "es/playbook.html": { html: 28800, code: 179500 },
-  "es/rules.html": { html: 40800, code: 100200 },
+  // 2026-10-19: lib.js and common.js grew on main (calendar, grade flag, keep my list, screen reader names); es/index.html first-load code 100500 to 102900 (102884 measured). PENDING PERSON APPROVAL.
+  // 2026-10-19: es/playbook.html and es/rules.html first-load code 100500 to 102900 for the same lib.js and common.js growth. PENDING PERSON APPROVAL.
+  // 2026-10-19: the trust line from PR 36 mirrored in Spanish; es/index.html page 21700 to 22100 (22011 measured). PENDING PERSON APPROVAL.
+  // 2026-10-19: the not-in-California callout from PR 36 mirrored in Spanish; es/rules.html page 40800 to 41400 (41312 measured). PENDING PERSON APPROVAL.
+  "es/index.html": { html: 22100, code: 102900 },
+  // 2026-10-19: lib.js and common.js grew on main (calendar, grade flag, keep my list, screen reader names); es/playbook.html first-load code 179500 to 186400 (186312 measured). PENDING PERSON APPROVAL.
+  "es/playbook.html": { html: 28800, code: 186400 },
+  "es/rules.html": { html: 41400, code: 102900 },
 };
 test("Spanish pages stay under their byte ceilings (page and first-load code)", () => {
   assert.deepEqual(Object.keys(CEILINGS).sort(), PAGES.map((p) => `es/${p}.html`), "one row per Spanish page");
