@@ -1971,6 +1971,48 @@
   "verified_on_label": "Oct 12, 2026"
  },
  {
+  "id": "anaheim-community-services-volunteers",
+  "name": "Anaheim Community Services Volunteers (ages 13 and up)",
+  "org": "City of Anaheim Community Services Department",
+  "regions": [
+   "orange-county"
+  ],
+  "city": "Anaheim, CA",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "environment",
+   "sports",
+   "social-impact"
+  ],
+  "what_you_do": "Volunteer with the city during the year. Clear trails and pull weeds at Oak Canyon Nature Center. Help coach youth sports camps at East Anaheim Gym. Help kids with homework and games after school, or spend time with seniors.",
+  "min_age": 13,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Anyone at least 13 years old. No school or city rule is stated for these year-round roles.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "Not stated",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No dates are posted. These roles run all year. The separate Summer VolunTEEN program has its own spring deadline.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out an application and book a free fingerprint check with the Volunteer Coordinator. Call 714-765-4994 or email VolunteerOffice@anaheim.net. Some roles also need a TB test from the last 2 years.",
+  "needs_work_permit": false,
+  "url": "https://www.anaheim.gov/1177/Community-Services-Volunteer-Opportuniti",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.anaheim.gov/1177/Community-Services-Volunteer-Opportuniti"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-18",
+  "priority": 2,
+  "notes": "Fingerprinting is free, but you pay for your own TB test. The page does not post open shifts, so ask the coordinator which roles need help now. Court ordered hours go to the Graffiti Removal Program instead (714-765-5158).",
+  "verified_on_label": "Oct 18, 2026"
+ },
+ {
   "regions": [
    "orange-county"
   ],
@@ -2010,12 +2052,53 @@
   "verified_on_label": "Oct 14, 2026"
  },
  {
+  "id": "anaheim-police-explorers",
+  "name": "Anaheim Police Explorer Post",
+  "org": "Anaheim Police Department",
+  "regions": [
+   "orange-county"
+  ],
+  "city": "Anaheim, CA",
+  "type": "shadowing",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Learn about police jobs at weekly meetings with guest speakers. Help officers at parades, races and big events. Give station tours and help with child safety fingerprinting. Go to a 4 day Explorer Academy.",
+  "min_age": 14,
+  "max_age": 21,
+  "grades": "7 to 12 (or college)",
+  "who_can_apply": "Students ages 14 to 21. The page also says you must be a current 7th to 12th grade student. Keep a 2.0 GPA or higher and good attendance. You must never have been arrested and must not use drugs. You must be able to run and do push-ups and sit-ups.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. The department pays for most of the uniform. You buy a few items, like shoes and a flashlight.",
+  "season": "year-round",
+  "duration": "Weekly meetings, Wednesdays 6 to 8:30 p.m., plus at least one 4 day academy",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No dates are posted. You can ask to join at any time by email.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Email Explorers@anaheim.net to say you are interested. Go to 4 meetings in a row as a guest, in business casual clothes. Then fill out an application. You must pass a written test, an interview and a background check.",
+  "needs_work_permit": false,
+  "url": "https://pd.anaheim.net/212/Explorers",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://pd.anaheim.net/212/Explorers",
+   "https://www.anaheim.gov/1215/Police-Department-Volunteer-Opportunitie"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-18",
+  "priority": 2,
+  "notes": "Meetings are at the Anaheim Police Department. Academies are held twice a year, often at a military base, and are strict, with drills and exercise. Every Explorer must go to at least one. Questions: Youth Engagement Coordinator, 714-765-1928. The city volunteer page links to an old Explorer page that is gone, so use the police site.",
+  "verified_on_label": "Oct 18, 2026"
+ },
+ {
   "regions": [
    "orange-county"
   ],
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-10-18",
   "grades": null,
   "needs_work_permit": false,
   "id": "anaheim-public-library-teen-volunteers",
@@ -2041,13 +2124,13 @@
   "deadline_iso": null,
   "deadline_confidence": "rolling",
   "how_to_apply": "Pick a branch on the program page. Contact the coordinator listed for that branch. Each branch has its own contact and its own rules.",
-  "url": "https://ca-anaheim.civicplus.com/3213/Volunteer",
+  "url": "https://www.anaheim.gov/3213/Volunteer",
   "sources_fetched": [
-   "https://ca-anaheim.civicplus.com/3213/Volunteer"
+   "https://www.anaheim.gov/3213/Volunteer"
   ],
   "priority": 1,
   "notes": "An accepted application does not promise hours. Hours are given out as needed. The library does not give court-ordered service hours. The Mobile Library (Bookmobile and STEAM Van) takes summer applications in April and needs volunteers 2 to 6 p.m. on at least one Monday to Thursday. The Teen Podcast takes applications at the start of fall.",
-  "verified_on_label": "Oct 14, 2026"
+  "verified_on_label": "Oct 18, 2026"
  },
  {
   "regions": [
@@ -2055,7 +2138,7 @@
   ],
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-10-18",
   "grades": null,
   "needs_work_permit": false,
   "id": "anaheim-summer-volunteen",
@@ -2081,14 +2164,14 @@
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Apply online. You need a TB clearance slip from the last two years. Book a free fingerprint appointment at City Hall. Pick a VolunTEEN orientation date. Choose your program, site and weeks. Sign the waivers.",
-  "url": "https://ca-anaheim.civicplus.com/4829/Summer-VolunTEEN-Program",
+  "url": "https://www.anaheim.gov/4829/Summer-VolunTEEN-Program",
   "sources_fetched": [
-   "https://ca-anaheim.civicplus.com/4829/Summer-VolunTEEN-Program",
-   "https://ca-anaheim.civicplus.com/1177/Community-Services-Volunteer-Opportuniti"
+   "https://www.anaheim.gov/4829/Summer-VolunTEEN-Program",
+   "https://www.anaheim.gov/1177/Community-Services-Volunteer-Opportuniti"
   ],
   "priority": 1,
   "notes": "You pay for your own TB test. Fingerprinting is free. Bring a photo ID to the fingerprint appointment. Last cycle, site assignments were emailed by May 30. Questions: Volunteer Coordinator, 714-765-4994. The city also lists other volunteer jobs for ages 13 and up. Examples are trail work at Oak Canyon Nature Center and youth sports coach assistants.",
-  "verified_on_label": "Oct 14, 2026",
+  "verified_on_label": "Oct 18, 2026",
   "limited": true
  },
  {
@@ -13575,6 +13658,46 @@
   "verified_on_label": "Oct 12, 2026"
  },
  {
+  "id": "camp-chla-health-care-career-exploration",
+  "name": "Camp CHLA Health Care Career Exploration",
+  "org": "Children's Hospital Los Angeles",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Los Angeles, CA",
+  "type": "shadowing",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Spend 5 days at a children's hospital learning about health jobs. Hear from nurses and other staff about their work. Learn CPR and first aid. A one day Discovery Day option is also offered.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 11",
+  "who_can_apply": "High school freshmen, sophomores and juniors who live in Los Angeles County. Seniors in the class of 2027 cannot apply. You cannot apply if you went to Camp CHLA before. You must be able to come all 5 days.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free. There is no charge to attend.",
+  "season": "summer",
+  "duration": "5 days, about 8 a.m. to 3 p.m. (Discovery Day is one day)",
+  "status": "opens-soon",
+  "opens_iso": "2027-01-11",
+  "deadline_text": "The 2027 application is open Jan 11 to Jan 15, 2027, closing at 11:59 p.m. You hear back by Mar 1, 2027. Summer 2027 sessions look like June 14 to 18 and July 26 to 30, 2027.",
+  "deadline_iso": "2027-01-15",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply online in the short January window. Write one essay of 200 to 250 words and give your and your parent's contact details. If you are picked, you upload shot records and other papers before your session.",
+  "needs_work_permit": false,
+  "url": "https://www.chla.org/camp-chla-health-care-career-exploration",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.chla.org/camp-chla-health-care-career-exploration"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-18",
+  "priority": 1,
+  "notes": "The window is only 5 days, so mark your calendar. An online info session is Dec 9, 2026 at 6:30 p.m. You need your own ride to the hospital. Use a personal email, since school email has blocked camp emails before. The page lists the 2027 session dates under Discovery Day, so confirm them. Email campchla@chla.usc.edu.",
+  "verified_on_label": "Oct 18, 2026",
+  "limited": true
+ },
+ {
   "grades": "12",
   "max_age": null,
   "opens_iso": null,
@@ -19163,6 +19286,46 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "chla-la-hip-high-school-internship",
+  "name": "Samuels Family LA-HIP High School Internship",
+  "org": "Children's Hospital Los Angeles, The Saban Research Institute",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Los Angeles, CA",
+  "type": "research",
+  "fields": [
+   "science",
+   "health"
+  ],
+  "what_you_do": "Do real lab research full time for 7 weeks in a scientist's lab at the hospital. Then share your results at a science day. You also get college counseling, SAT prep and biology classes all through senior year.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "11 (apply in junior year)",
+  "who_can_apply": "Current juniors at a public high school in Los Angeles County. You need papers to work legally in California. You should have strong grades and a real interest in science.",
+  "paid_type": "stipend",
+  "pay_detail": "Stipend, plus a Metro card and meals at the hospital. The page does not give the amount.",
+  "season": "summer",
+  "duration": "Summer lab work, 9 a.m. to 5 p.m., Monday to Friday, for 7 weeks. College counseling runs from April through senior year.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Last cycle the application opened Nov 3, 2025 and closed Feb 1, 2026. Offers went out in late March. The 2027 dates are not posted yet, so expect a similar window from November to February.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online. You need an essay, a transcript and one letter from a science or math teacher or a counselor. Your letter is only asked for after the rest is done, so finish early. Info sessions are held in November and January.",
+  "needs_work_permit": null,
+  "url": "https://www.chla.org/research/training-education-career-planning-and-development-tecpad/samuels-family-la-hip-high-school-internship-program",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.chla.org/research/training-education-career-planning-and-development-tecpad/samuels-family-la-hip-high-school-internship-program"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-18",
+  "priority": 1,
+  "notes": "Very competitive. If you accept, you must turn down all other summer programs and go to every required meeting. The page mixes dates from different years, so check it again in November. Questions: Danielle Nunez, danunez@chla.usc.edu. Ask whether you need a work permit for the stipend.",
+  "verified_on_label": "Oct 18, 2026"
+ },
+ {
   "id": "chp-explorer-post-east-sacramento",
   "name": "CHP Explorer Post (East Sacramento)",
   "org": "California Highway Patrol",
@@ -24128,33 +24291,37 @@
    "sports",
    "social-impact"
   ],
-  "what_you_do": "You can work part time. You can be a Community Services Leader who runs recreation programs. You can also be a lifeguard or swim instructor. Hours vary. Leaders average 20 hours a week.",
-  "min_age": null,
+  "what_you_do": "Work part time for the city. Community Services Leaders help run youth programs, camps, events and city buildings. Instructor Lifeguards watch the pool and may teach swim lessons. Leaders average 20 hours a week.",
+  "min_age": 16,
   "max_age": null,
   "grades": null,
-  "who_can_apply": "The page does not state a minimum age. Ask the department before you apply, because lifeguard jobs and leader jobs often have different age rules.",
+  "who_can_apply": "You must be 16 or older. High school students may need a work permit. Lifeguards must get Red Cross lifeguard training within 6 weeks of being hired. Jobs with children need a TB test from the last 2 years.",
   "paid_type": "paid",
-  "pay_detail": "The page says all positions start at $20 an hour. That page was last updated May 11, 2023, and no 2026 rate is posted there, so confirm the current rate.",
+  "pay_detail": "The city salary page lists $20.00 to $24.31 an hour for Community Services Leaders and Instructor Lifeguards.",
   "season": "year-round",
-  "duration": "Part time, 8 to 30 hours a week",
-  "status": "unconfirmed",
+  "duration": "Part time, up to about 20 hours a week. Some jobs are seasonal and some are year-round.",
+  "status": "rolling",
   "opens_iso": null,
-  "deadline_text": "Jobs are posted on the city's job page. No dates are stated.",
+  "deadline_text": "The Community Services Leader and Instructor Lifeguard postings are open all the time (continuous). The city calls people as spots open.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
-  "how_to_apply": "Use the Apply Here link on the city's Parks and Community Services employment page.",
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply online on the city's job board at governmentjobs.com. Pick Community Services Leader or Instructor Lifeguard, then make an account and apply. If you are picked, the city contacts you in 4 to 6 weeks.",
   "needs_work_permit": true,
   "url": "https://www.costamesaca.gov/government/departments-and-divisions/parks-and-community-services/job-opening-employment-information",
-  "apply_url": null,
+  "apply_url": "https://www.governmentjobs.com/careers/costamesa",
   "sources_fetched": [
    "https://www.costamesaca.gov/government/departments-and-divisions/parks-and-community-services/job-opening-employment-information",
-   "https://www.costamesaca.gov/government/departments-and-divisions/parks-and-community-services/job-opening-employment-information/programs-job-positions"
+   "https://www.costamesaca.gov/government/departments-and-divisions/parks-and-community-services/job-opening-employment-information/programs-job-positions",
+   "https://www.costamesaca.gov/government/departments-and-divisions/parks-and-community-services/job-opening-employment-information/part-time-salary-benefits",
+   "https://www.costamesaca.gov/government/departments-and-divisions/parks-and-community-services/job-opening-employment-information/how-to-apply",
+   "https://www.governmentjobs.com/careers/costamesa/jobs/3994609/community-services-leader",
+   "https://www.governmentjobs.com/careers/costamesa/jobs/4902152/instructor-lifeguard"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-18",
   "priority": 2,
-  "notes": "The city also runs free after-school teen centers for grades 7 to 12 and a Summer Teen Camp for grades 7 to 10, which are programs to attend, not jobs. Paid work for people under 18 in California needs a Permit to Employ and Work. See permit.html?state=ca for the exact permit and steps.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "The Apply Here link on the city's own page is broken, so go to the job board directly. The lifeguard posting itself shows $10.00 to $12.16 an hour, which is below the state minimum wage and does not match the city salary page, so ask HR. The Police Cadet job needs you to be 18. The city also runs free teen centers for grades 7 to 12. Paid work under 18 in California needs a work permit. See permit.html?state=ca for the steps.",
+  "verified_on_label": "Oct 18, 2026"
  },
  {
   "id": "cosumnes-csd-teen-committees",
@@ -44802,7 +44969,7 @@
   ],
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-10-18",
   "grades": null,
   "needs_work_permit": false,
   "id": "la-zoo-core-volunteer-students",
@@ -44836,7 +45003,7 @@
   ],
   "priority": 2,
   "notes": "Applications were closed when this page was read. A negative tuberculosis test may be needed for some advanced roles. Phone: (323) 644-4200.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Oct 18, 2026"
  },
  {
   "id": "lacma-teens",
@@ -82692,6 +82859,88 @@
   "priority": 3,
   "notes": "Not every branch has a board. The page gives no ages, hours or sign-up steps for teens, so call the branch first. Separate from the City of Riverside Public Library.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "riverside-county-wioa-youth-opportunity-centers",
+  "name": "Riverside County Youth Opportunity Centers (WIOA youth services)",
+  "org": "Riverside County Workforce Development",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "Riverside County, CA (six centers)",
+  "type": "paid-youth-program",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Get help to find work at a youth center. Staff help with resumes, interviews and tutoring. Some youth get paid or unpaid work experience, like internships and job shadowing, plus job training and a mentor.",
+  "min_age": 16,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Ages 16 to 24 in Riverside County. You must be low income and have at least one of six barriers to work. The program mostly serves youth who are not in school.",
+  "paid_type": "mixed",
+  "pay_detail": "Some work experience is paid and some is unpaid. The page does not list a wage.",
+  "season": "year-round",
+  "duration": "Not stated",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline. Contact a center any weekday.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Call or visit the nearest Youth Opportunity Center. They are in Indio, Hemet, Lake Elsinore, Moreno Valley, Perris and Rubidoux. Staff check if you qualify.",
+  "needs_work_permit": true,
+  "url": "https://rivcoworkforce.org/youth-services",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://rivcoworkforce.org/youth-services",
+   "https://rivcoworkforce.org/youth-opportunity-centers"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-18",
+  "priority": 2,
+  "notes": "This is a federal WIOA program, so you have to qualify. Centers are open Monday to Friday, 8 a.m. to 5 p.m. Phone numbers: Indio (760) 802-6059, Hemet (951) 765-0917, Moreno Valley (951) 653-1311, Perris (951) 657-7105, Rubidoux (951) 683-9622. Do not email your Social Security number. Paid work under 18 in California needs a work permit.",
+  "verified_on_label": "Oct 18, 2026"
+ },
+ {
+  "id": "riverside-county-youth-advisory-councils",
+  "name": "Riverside County Youth Commission and Youth Advisory Councils",
+  "org": "Riverside County Board of Supervisors",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "Riverside County, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Join the youth council for your county supervisor's district. Plan service projects and events, and tell county leaders what youth need. Council leaders sit on the county Youth Commission.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "High school students enrolled in a Riverside County high school. You must be able to go to meetings every other week and to service events.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. You earn community service hours.",
+  "season": "school-year",
+  "duration": "School year. Council meetings every other week. Youth Commission meetings every two months.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No dates are posted. The interest form is open now.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the interest form on the Join Us page. Or contact the youth council coordinator for your supervisor district. Contacts for all five districts are on the home page.",
+  "needs_work_permit": false,
+  "url": "https://rivcoyac.org/join-us",
+  "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLSfKPgIWa1bslPwxxi2vwNmuOK3JFwWGFpwMLZEu2G5XqOvhhw/viewform?usp=header",
+  "sources_fetched": [
+   "https://rivcoyac.org/join-us",
+   "https://rivcoyac.org/",
+   "https://rivcoworkforce.org/youth-commission-0"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-18",
+  "priority": 2,
+  "notes": "There are five councils, one per supervisor district. Students elect officers, and each council's Commissioner joins the county Youth Commission. Commission meetings are public, in the Board Chambers in Riverside. The paid Legislative Intern jobs that run the councils are for college students only.",
+  "verified_on_label": "Oct 18, 2026"
  },
  {
   "grades": "11-12",
