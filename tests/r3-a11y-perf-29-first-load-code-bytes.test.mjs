@@ -21,13 +21,17 @@ const PICKER_CALLS = /\b(?:G|TIG)\.(?:tilePicker|autoTiles)\b/;
 // Ceilings: bytes on disk for each page's script and stylesheet files, about 5% over today's total (rounded up to 100 bytes).
 // Raised on 2026-10-12 for ticket r3-a11y-perf-35: the body min-height 100dvh line in style.css adds 22 bytes, so every page that loads style.css has its ceiling raised by 22 bytes and nothing else.
 const BUDGET = {
-  // 2026-10-16: the Map page street map (map.js hand-off and style.css rules for the street map box) (PENDING PERSON APPROVAL): pages over set to the measured size rounded up to 100.
-  // 2026-10-18: main merged in after PR 54 (common.js grew for the screen reader names), paycheck.html 165300 to 165400 (PENDING PERSON APPROVAL, merging approves): pages over set to the measured size rounded up to 100.
+  // 2026-10-18: main merged in after PR 36 (persona r11, map, sweep, wages, screen reader) into add to calendar (PENDING PERSON APPROVAL, merging approves): pages over set to the measured size rounded up to 100.
+  // 2026-10-18: main merged in after PR 37 (street map, quality sweep, wages, screen reader names) into persona r11 (PENDING PERSON APPROVAL, merging approves): pages over set to the measured size rounded up to 100.
+  // 2026-10-16 persona r11 review fixes (picks hold back grade-flagged cards): pages over set to the measured size rounded up to 100.
+  // 2026-10-16 persona r11 rebased on the map merge (grade flag in find.js and lib.js, younger unknown cells carry the number, trust line on five landing pages): pages over set to the measured size rounded up to 100.
   // 2026-10-15 Map page rebased on main (brand wrap CSS plus map rules): pages over set to the measured size rounded up to 100.
   // 2026-10-15 Map page rebased on main again (narrow phone CSS plus map rules): pages over set to the measured size rounded up to 100.
   // 2026-10-15: new Map page (map.html): lib.js, common.js and map.js; set after the rebase by the ceiling tool.
   // 2026-10-16: Add to calendar on deadlines, issue #10 (lib.js: reminders, Google Calendar link, which cards get it; about 1.9 KB) (PENDING PERSON APPROVAL). map.html limit 195900 to 197400 (remeasured 2026-10-19 after main merged in with PR 42).
-  "map.html": { ceiling: 197400, reason: "lib.js, common.js and map.js" },
+  "map.html": { ceiling: 200100, reason: "lib.js, common.js and map.js" },
+  // 2026-10-16: the Map page street map (map.js hand-off and style.css rules for the street map box) (PENDING PERSON APPROVAL): pages over set to the measured size rounded up to 100.
+  // 2026-10-18: main merged in after PR 54 (common.js grew for the screen reader names), paycheck.html 165300 to 165400 (PENDING PERSON APPROVAL, merging approves): pages over set to the measured size rounded up to 100.
   // 2026-10-15 state places cover every region in the state, Elgin label: pages over set to the measured size rounded up to 100.
   // 2026-10-15 persona round 10 content: pages over set to the measured size rounded up to 100.
   // 2026-10-14 jobs.js shows a state's own hours rule for 12 and 13 (California) and links the Bay Area ride table: jobs.html set to the measured size rounded up to 100.
@@ -81,7 +85,7 @@ const BUDGET = {
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). calendar.html limit 158300 to 158400.
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL). calendar.html limit 158400 to 158700.
   // 2026-10-16: Add to calendar on deadlines, issue #10 (lib.js: reminders, Google Calendar link, which cards get it; about 1.9 KB) (PENDING PERSON APPROVAL). calendar.html limit 162400 to 164800 (remeasured 2026-10-19 after main merged in with PR 42).
-  "calendar.html": { ceiling: 164800, reason: "lib.js, common.js and calendar.js" },
+  "calendar.html": { ceiling: 167500, reason: "lib.js, common.js and calendar.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you contribute.html limit 91300 to 91700.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. contribute.html limit 91700 to 92200.
   // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). contribute.html limit 92200 to 93200.
@@ -113,7 +117,7 @@ const BUDGET = {
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). find.html limit 216500 to 216600.
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL). find.html limit 216600 to 216900.
   // 2026-10-16: Add to calendar on deadlines, issue #10 (lib.js: reminders, Google Calendar link, which cards get it; about 1.9 KB) (PENDING PERSON APPROVAL). find.html limit 221700 to 223000 (remeasured 2026-10-19 after main merged in with PR 42).
-  "find.html": { ceiling: 223000, reason: "lib.js, common.js and find.js (largest page script)" },
+  "find.html": { ceiling: 226300, reason: "lib.js, common.js and find.js (largest page script)" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you handout.html limit 91700 to 92100.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. handout.html limit 92200 to 92700.
   // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). handout.html limit 92700 to 93700.
@@ -142,7 +146,7 @@ const BUDGET = {
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). index.html limit 162300 to 162400.
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL). index.html limit 162400 to 162700.
   // 2026-10-16: Add to calendar on deadlines, issue #10 (lib.js: reminders, Google Calendar link, which cards get it; about 1.9 KB) (PENDING PERSON APPROVAL). index.html limit 166400 to 168200 (remeasured 2026-10-19 after main merged in with PR 42).
-  "index.html": { ceiling: 168200, reason: "lib.js, common.js and home.js (2026-10-12: +100 for the 1 day label and phone heading size)" },
+  "index.html": { ceiling: 170800, reason: "lib.js, common.js and home.js (2026-10-12: +100 for the 1 day label and phone heading size)" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you insights.html limit 148400 to 149400.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. insights.html limit 149500 to 150200.
   // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). insights.html limit 150200 to 151200.
@@ -157,7 +161,7 @@ const BUDGET = {
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). insights.html limit 155900 to 156000.
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL). insights.html limit 156000 to 156300.
   // 2026-10-16: Add to calendar on deadlines, issue #10 (lib.js: reminders, Google Calendar link, which cards get it; about 1.9 KB) (PENDING PERSON APPROVAL). insights.html limit 160000 to 161800 (remeasured 2026-10-19 after main merged in with PR 42).
-  "insights.html": { ceiling: 161800, reason: "lib.js, common.js and insights.js" },
+  "insights.html": { ceiling: 164500, reason: "lib.js, common.js and insights.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you interview.html limit 161300 to 162400.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. interview.html limit 162500 to 163000.
   // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). interview.html limit 163000 to 163900.
@@ -171,7 +175,7 @@ const BUDGET = {
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). interview.html limit 167900 to 168700.
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL). interview.html limit 168700 to 169000.
   // 2026-10-16: Add to calendar on deadlines, issue #10 (lib.js: reminders, Google Calendar link, which cards get it; about 1.9 KB) (PENDING PERSON APPROVAL). interview.html limit 172700 to 174500 (remeasured 2026-10-19 after main merged in with PR 42).
-  "interview.html": { ceiling: 174500, reason: "lib.js, common.js and interview.js" },
+  "interview.html": { ceiling: 177200, reason: "lib.js, common.js and interview.js" },
   // Raised on 2026-10-11 for ticket p7-regions-1: lib.js grew by 1,296 bytes (11 new states in REGIONS, HUBS, STATES, PICK_GROUPS and STATE_OF). jobs.html loads 141025 bytes (the rest of the growth came from other work in common.js and jobs.js), ceiling raised from 138200 to 141100.
   // Raised from 141900 to 143500 on 2026-10-11 for tickets p8-lite-1 and p8-cities-1: big cities of the 11 new states in lib.js, plain missing-fact answers and wage notes in common.js and permit.js.
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you jobs.html limit 165200 to 166300.
@@ -188,7 +192,7 @@ const BUDGET = {
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). jobs.html limit 173500 to 173600.
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL). jobs.html limit 173600 to 173900.
   // 2026-10-16: Add to calendar on deadlines, issue #10 (lib.js: reminders, Google Calendar link, which cards get it; about 1.9 KB) (PENDING PERSON APPROVAL). jobs.html limit 177600 to 179400 (remeasured 2026-10-19 after main merged in with PR 42).
-  "jobs.html": { ceiling: 179400, reason: "lib.js, common.js and jobs.js" },
+  "jobs.html": { ceiling: 182100, reason: "lib.js, common.js and jobs.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you languages.html limit 146500 to 147600.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. languages.html limit 147600 to 148100.
   // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). languages.html limit 148100 to 149000.
@@ -202,7 +206,7 @@ const BUDGET = {
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). languages.html limit 153100 to 153800.
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL). languages.html limit 153800 to 154200.
   // 2026-10-16: Add to calendar on deadlines, issue #10 (lib.js: reminders, Google Calendar link, which cards get it; about 1.9 KB) (PENDING PERSON APPROVAL). languages.html limit 157900 to 159700 (remeasured 2026-10-19 after main merged in with PR 42).
-  "languages.html": { ceiling: 159700, reason: "lib.js, common.js and languages.js" },
+  "languages.html": { ceiling: 162300, reason: "lib.js, common.js and languages.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you leaders.html limit 98700 to 99000.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. leaders.html limit 99100 to 99600.
   // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). leaders.html limit 99600 to 100500.
@@ -231,7 +235,7 @@ const BUDGET = {
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). parents.html limit 155000 to 155700.
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL). parents.html limit 155700 to 156100.
   // 2026-10-16: Add to calendar on deadlines, issue #10 (lib.js: reminders, Google Calendar link, which cards get it; about 1.9 KB) (PENDING PERSON APPROVAL). parents.html limit 159800 to 161500 (remeasured 2026-10-19 after main merged in with PR 42).
-  "parents.html": { ceiling: 161500, reason: "lib.js, common.js and parents.js" },
+  "parents.html": { ceiling: 164200, reason: "lib.js, common.js and parents.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you paycheck.html limit 155300 to 156400.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. paycheck.html limit 156400 to 156900.
   // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). paycheck.html limit 156900 to 157900.
@@ -246,7 +250,7 @@ const BUDGET = {
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). paycheck.html limit 162600 to 162700.
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL). paycheck.html limit 162700 to 163000.
   // 2026-10-16: Add to calendar on deadlines, issue #10 (lib.js: reminders, Google Calendar link, which cards get it; about 1.9 KB) (PENDING PERSON APPROVAL). paycheck.html limit 166700 to 168500 (remeasured 2026-10-19 after main merged in with PR 42).
-  "paycheck.html": { ceiling: 168500, reason: "lib.js, common.js and paycheck.js" },
+  "paycheck.html": { ceiling: 171200, reason: "lib.js, common.js and paycheck.js" },
   // Raised from 139900 to 141000 on 2026-10-11 when the third upgrade round was merged: permit.js grew by 716 bytes and the page is 140932 bytes.
   // Raised from 141000 to 142300 on 2026-10-11 for ticket p6-permit-1: the age line on the shorter state answer (about 1,300 bytes in permit.js) and the shared G.stateShorts() reader in common.js (about 300 bytes, which jobs.js and younger.js now share instead of each fetching the file). The page is 142229 bytes.
   // Raised from 142300 to 142500 on 2026-10-11 after the persona round 4 merge: permit.html loads 142397 bytes of code (a 97 byte overage that came from combining the two lines of work).
@@ -266,7 +270,7 @@ const BUDGET = {
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). permit.html limit 182000 to 182100.
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL). permit.html limit 182100 to 182400.
   // 2026-10-16: Add to calendar on deadlines, issue #10 (lib.js: reminders, Google Calendar link, which cards get it; about 1.9 KB) (PENDING PERSON APPROVAL). permit.html limit 186100 to 187900 (remeasured 2026-10-19 after main merged in with PR 42).
-  "permit.html": { ceiling: 187900, reason: "lib.js, common.js and permit.js" },
+  "permit.html": { ceiling: 190500, reason: "lib.js, common.js and permit.js" },
   // Raised on 2026-10-12 for tickets p9-regions-1 and p9-playbook-1: lib.js grew (Plains states) and style.css gained two small rules. jobs, playbook, resume, states and younger ceilings each raised by 100.
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you playbook.html limit 160300 to 161400.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. playbook.html limit 161400 to 161900.
@@ -282,7 +286,7 @@ const BUDGET = {
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). playbook.html limit 167600 to 167700.
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL). playbook.html limit 167700 to 168000.
   // 2026-10-16: Add to calendar on deadlines, issue #10 (lib.js: reminders, Google Calendar link, which cards get it; about 1.9 KB) (PENDING PERSON APPROVAL). playbook.html limit 171700 to 173500 (remeasured 2026-10-19 after main merged in with PR 42).
-  "playbook.html": { ceiling: 173500, reason: "lib.js, common.js and playbook.js" },
+  "playbook.html": { ceiling: 176100, reason: "lib.js, common.js and playbook.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you ready.html limit 153800 to 154900.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. ready.html limit 156400 to 156900.
   // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). ready.html limit 156900 to 157800.
@@ -296,7 +300,7 @@ const BUDGET = {
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). ready.html limit 161900 to 162600.
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL). ready.html limit 162600 to 163000.
   // 2026-10-16: Add to calendar on deadlines, issue #10 (lib.js: reminders, Google Calendar link, which cards get it; about 1.9 KB) (PENDING PERSON APPROVAL). ready.html limit 166700 to 168500 (remeasured 2026-10-19 after main merged in with PR 42).
-  "ready.html": { ceiling: 168500, reason: "lib.js, common.js and ready.js" },
+  "ready.html": { ceiling: 171100, reason: "lib.js, common.js and ready.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you resume.html limit 151600 to 152700.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. resume.html limit 152700 to 153200.
   // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). resume.html limit 153200 to 154200.
@@ -311,7 +315,7 @@ const BUDGET = {
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). resume.html limit 158900 to 159000.
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL). resume.html limit 159000 to 159300.
   // 2026-10-16: Add to calendar on deadlines, issue #10 (lib.js: reminders, Google Calendar link, which cards get it; about 1.9 KB) (PENDING PERSON APPROVAL). resume.html limit 163000 to 164800 (remeasured 2026-10-19 after main merged in with PR 42).
-  "resume.html": { ceiling: 164800, reason: "lib.js, common.js and resume.js" },
+  "resume.html": { ceiling: 167400, reason: "lib.js, common.js and resume.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you rules.html limit 91300 to 91700.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. rules.html limit 91700 to 92200.
   // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). rules.html limit 92200 to 93200.
@@ -340,7 +344,7 @@ const BUDGET = {
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). safety.html limit 158300 to 159000.
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL). safety.html limit 159000 to 159400.
   // 2026-10-16: Add to calendar on deadlines, issue #10 (lib.js: reminders, Google Calendar link, which cards get it; about 1.9 KB) (PENDING PERSON APPROVAL). safety.html limit 163100 to 164900 (remeasured 2026-10-19 after main merged in with PR 42).
-  "safety.html": { ceiling: 164900, reason: "lib.js, common.js and safety.js" },
+  "safety.html": { ceiling: 167500, reason: "lib.js, common.js and safety.js" },
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you share.html limit 93000 to 93300.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. share.html limit 93400 to 93900.
   // 2026-10-14: parents permit table stacks on phones (PENDING PERSON APPROVAL). share.html limit 93900 to 94800.
@@ -368,7 +372,7 @@ const BUDGET = {
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). states.html limit 152000 to 152800.
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL). states.html limit 152800 to 153200.
   // 2026-10-16: Add to calendar on deadlines, issue #10 (lib.js: reminders, Google Calendar link, which cards get it; about 1.9 KB) (PENDING PERSON APPROVAL). states.html limit 156900 to 158600 (remeasured 2026-10-19 after main merged in with PR 42).
-  "states.html": { ceiling: 158600, reason: "lib.js, common.js and states.js" },
+  "states.html": { ceiling: 161300, reason: "lib.js, common.js and states.js" },
   // Raised on 2026-10-11 for ticket p7-regions-1: lib.js grew by 1,296 bytes (11 new states in REGIONS, HUBS, STATES, PICK_GROUPS and STATE_OF). younger.html loads 131827 bytes, ceiling raised from 130800 to 131900.
   // Raised from 131900 to 133200 on 2026-10-11 for tickets p8-lite-1 and p8-cities-1: big cities of the 11 new states in lib.js, plain missing-fact answers and wage notes in common.js and permit.js.
   // Raised for ticket p9-younger-1: younger.js grew by about 4.3 KB (the permit-only state picker names, the permit card and its helpers). younger.html measured 142116 bytes on 2026-10-12, ceiling set to 142200.
@@ -387,7 +391,7 @@ const BUDGET = {
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). younger.html limit 171000 to 171100.
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL). younger.html limit 171100 to 171400.
   // 2026-10-16: Add to calendar on deadlines, issue #10 (lib.js: reminders, Google Calendar link, which cards get it; about 1.9 KB) (PENDING PERSON APPROVAL). younger.html limit 175100 to 176900 (remeasured 2026-10-19 after main merged in with PR 42).
-  "younger.html": { ceiling: 176900, reason: "lib.js, common.js and younger.js" },
+  "younger.html": { ceiling: 179900, reason: "lib.js, common.js and younger.js" },
 };
 
 function builtPages() {
