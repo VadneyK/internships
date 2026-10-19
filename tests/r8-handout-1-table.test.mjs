@@ -26,9 +26,9 @@ test("agenda rows sum to 30 minutes and are contiguous", () => {
   assert.equal(at, 30);
 });
 
-test("links to younger.html, mentions grades 7 and 8, no projector, no photos", () => {
+test("links to younger.html, mentions ages 12 and 13, no projector, no photos", () => {
   assert.ok(sec.querySelector('a[href="younger.html"]'));
-  assert.ok(/grades 7 and 8/i.test(sec.textContent));
+  assert.ok(/ages 12 and 13/i.test(sec.textContent)); // 2026-10-17: the guide says ages, not grades
   assert.ok(!/projector/i.test(sec.textContent));
   assert.ok(/do not take photos/i.test(sec.textContent));
   assert.ok(!/[\u2013\u2014]/.test(sec.textContent));
