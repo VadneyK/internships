@@ -1,5 +1,5 @@
 {
- "read": "2026-10-17",
+ "read": "2026-10-19",
  "cities": [
   {
    "key": "Chandler, AZ",
@@ -3555,6 +3555,16 @@
    ]
   },
   {
+   "key": "Fort Washington, MD",
+   "state": "MD",
+   "lat": 38.7319,
+   "lon": -77.0087,
+   "precision": "city",
+   "ids": [
+    "fort-washington-medical-center-summer-volunteers"
+   ]
+  },
+  {
    "key": "Frederick County, MD",
    "state": "MD",
    "lat": 39.4701,
@@ -3676,6 +3686,16 @@
    "precision": "city",
    "ids": [
     "md-girls-state"
+   ]
+  },
+  {
+   "key": "Silver Spring, MD",
+   "state": "MD",
+   "lat": 39.0024,
+   "lon": -77.0208,
+   "precision": "city",
+   "ids": [
+    "silver-spring-white-oak-medical-center-volunteers"
    ]
   },
   {
@@ -4430,8 +4450,13 @@
     "ncsu-textiles-step-summer-exploration",
     "ncsu-vetcamp-veterinary-careers",
     "ncsu-young-and-teen-writers-workshop",
+    "raleigh-digital-connectors",
     "raleigh-marbles-kids-museum-teen-play-corps",
+    "raleigh-parks-lifeguard-save-program",
+    "raleigh-police-public-safety-cadets",
+    "raleigh-summer-youth-employment-program",
     "raleigh-unc-health-rex-volunteen",
+    "raleigh-youth-council",
     "wake-tech-career-and-college-promise",
     "wake-tech-wakeworks-youth-apprenticeship-academy",
     "wakemed-junior-volunteer-program"
@@ -5090,6 +5115,8 @@
    "precision": "city",
    "ids": [
     "cuny-college-now",
+    "nyc-amnh-science-alliance-high-school",
+    "nyc-amnh-science-communication-internship-program",
     "nyc-amnh-science-research-mentoring-program",
     "nyc-ccny-zahn-bossgirls-summer-entrepreneurship",
     "nyc-central-park-conservancy-teen-volunteer-days",

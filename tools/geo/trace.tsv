@@ -825,6 +825,7 @@ folsom-trailblazers-n-training	Folsom, CA	point	Folsom, CA	city	place:city
 foodbank-central-eastern-nc-youth-volunteers	Raleigh and Durham, NC	multi				several places before the state
 foothill-college-high-school-dual-enrollment	Los Altos Hills and Sunnyvale, CA	multi				several places before the state
 forage-job-simulations	Virtual	online				
+fort-washington-medical-center-summer-volunteers	Fort Washington, MD	point	Fort Washington, MD	city	place:CDP	
 fountain-valley-memorialcare-orange-coast-volunteer	Fountain Valley, CA	point	Fountain Valley, CA	city	place:city	
 fox-valley-park-district-seasonal-jobs	Aurora, IL	point	Aurora, IL	city	place:city	
 fox-valley-park-district-teen-volunteers	Aurora, IL	point	Aurora, IL	city	place:city	
@@ -1650,6 +1651,8 @@ nova-parks-waterpark-jobs	Northern Virginia (Fairfax, Alexandria and Arlington w
 novaworks-young-adult-services	Sunnyvale, CA (serves San Mateo County and northern Santa Clara County)	point	Sunnyvale, CA	city	place:city	
 nps-youth-conservation-corps	Participating national parks (see the NPS park list)	national				
 nyc-ace-mentor-program-greater-new-york	Teams in Manhattan, Brooklyn, Queens, Long Island, White Plains and Riverdale (and remote)	multi				override: Many places listed
+nyc-amnh-science-alliance-high-school	New York, NY	point	New York, NY	city	place:city	
+nyc-amnh-science-communication-internship-program	New York, NY	point	New York, NY	city	place:city	
 nyc-amnh-science-research-mentoring-program	New York, NY	point	New York, NY	city	place:city	
 nyc-apollo-theater-academy-arts-production-internship	Manhattan, NY (Harlem)	point	Manhattan, NY	county	Manhattan is a borough with no Gazetteer place; same area as New York County	alias: Manhattan is a borough with no Gazetteer place; same area as New York County
 nyc-apollo-theater-academy-technical-internship	Manhattan, NY (Harlem)	point	Manhattan, NY	county	Manhattan is a borough with no Gazetteer place; same area as New York County	alias: Manhattan is a borough with no Gazetteer place; same area as New York County
@@ -1996,8 +1999,13 @@ princeton-public-library-teen-advisory-board	Princeton, NJ	point	Princeton, NJ	c
 princeton-public-library-teen-summer-volunteer	Princeton, NJ	point	Princeton, NJ	city	place:place	
 qpl-peer-to-peer-service-collective	Queens, NY	point	Queens, NY	county	Queens is a borough with no Gazetteer place; same area as Queens County	alias: Queens is a borough with no Gazetteer place; same area as Queens County
 qpl-teen-volunteer	Queens, NY	point	Queens, NY	county	Queens is a borough with no Gazetteer place; same area as Queens County	alias: Queens is a borough with no Gazetteer place; same area as Queens County
+raleigh-digital-connectors	Raleigh, NC	point	Raleigh, NC	city	place:city	
 raleigh-marbles-kids-museum-teen-play-corps	Raleigh, NC	point	Raleigh, NC	city	place:city	
+raleigh-parks-lifeguard-save-program	Raleigh, NC	point	Raleigh, NC	city	place:city	
+raleigh-police-public-safety-cadets	Raleigh, NC	point	Raleigh, NC	city	place:city	
+raleigh-summer-youth-employment-program	Raleigh, NC	point	Raleigh, NC	city	place:city	
 raleigh-unc-health-rex-volunteen	Raleigh, NC	point	Raleigh, NC	city	place:city	
+raleigh-youth-council	Raleigh, NC	point	Raleigh, NC	city	place:city	
 red-butte-garden-twig-teens-working-in-the-garden	Salt Lake City, UT	point	Salt Lake City, UT	city	place:city	
 red-cross-babysitting-training	Online and local classes	online				
 red-cross-lifeguard-wsi	Local pools across California	statewide	CA			
@@ -2267,6 +2275,7 @@ sf-youthworks	San Francisco, CA	point	San Francisco, CA	manual	Census Gazetteer 
 sharp-chula-vista-junior-volunteer	Chula Vista, CA	point	Chula Vista, CA	city	place:city	
 silt-highwater-farm-fall-youth-intern	Silt, CO	point	Silt, CO	city	place:town	
 silt-highwater-farm-summer-youth-crew	Silt, CO	point	Silt, CO	city	place:town	
+silver-spring-white-oak-medical-center-volunteers	Silver Spring, MD	point	Silver Spring, MD	city	place:CDP	
 sioux-falls-parks-lifeguard-training-and-jobs	Sioux Falls, SD	point	Sioux Falls, SD	city	place:city	
 siouxland-libraries-teen-volunteer-and-advisory-board	Sioux Falls, SD	point	Sioux Falls, SD	city	place:city	
 sjsu-summer-open-university-high-school	San Jose, CA (online, hybrid and in person)	point	San Jose, CA	city	place:city	

@@ -33440,6 +33440,46 @@
   "verified_on_label": "Oct 7, 2026"
  },
  {
+  "id": "fort-washington-medical-center-summer-volunteers",
+  "name": "Summer Volunteer Program at Fort Washington Medical Center",
+  "org": "Adventist HealthCare Fort Washington Medical Center",
+  "regions": [
+   "college-park"
+  ],
+  "city": "Fort Washington, MD",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Volunteer in the summer at a hospital in Prince George's County. Volunteers help in many areas of the hospital.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Volunteers ages 15 and older. The page lists no residency rule.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "summer",
+  "duration": "Summer. In 2026: pre-registration in spring, a meet and greet in May, and orientation in June.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Summer 2026 pre-registration ran March 9 to May 15, 2026. 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Pre-register on the hospital's volunteer page when it opens. Then you may have a meet and greet, a 4 hour orientation, a meeting with your department leader, and a background check. Bring shot records (MMR, chickenpox, Tdap, Hep B, flu, and COVID-19).",
+  "needs_work_permit": false,
+  "url": "https://www.adventisthealthcare.com/volunteer/fort-washington-medical-center/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.adventisthealthcare.com/volunteer/fort-washington-medical-center/",
+   "https://www.adventisthealthcare.com/volunteer/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "The page still says pre-registration is open, but its dates are from spring 2026. Adventist HealthCare main line: 301-315-3030.",
+  "verified_on_label": "Oct 19, 2026"
+ },
+ {
   "grades": null,
   "max_age": null,
   "apply_url": "https://www.memorialcare.org/sites/default/files/_images/content/OCMC/OCMC-Volunteer-Application-Form-0625.pdf",
@@ -66836,6 +66876,87 @@
   "verified_on_label": "Oct 10, 2026"
  },
  {
+  "id": "nyc-amnh-science-alliance-high-school",
+  "name": "Science Alliance High School Program",
+  "org": "American Museum of Natural History",
+  "regions": [
+   "new-york-city"
+  ],
+  "city": "New York, NY",
+  "type": "pre-college",
+  "fields": [
+   "science"
+  ],
+  "what_you_do": "Take a hands-on science class at the Museum after school. Topics include anthropology, astrophysics, conservation science, Earth science, and evolution. Winter 2027 offers a genetics class.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "Students in grades 9 to 12. Sign up for the class that matches your grade band.",
+  "paid_type": "fee-based",
+  "pay_detail": "Each fall, winter, or spring course costs $1,000. Half of the seats in each class are held for families who ask for free or reduced tuition, based on household income. These seats go first come, first served.",
+  "season": "school-year",
+  "duration": "Three sessions a year (fall, winter, spring). Classes meet Tuesdays and/or Thursdays, 4:30 to 6:30 p.m. Winter 2027 genetics: January 7 to March 4, Tuesdays and Thursdays.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "Fall 2026 sales opened October 8, 2026. Winter 2027 genetics runs January 7 to March 4, 2027. The page does not say when winter sign up opens or closes.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Buy a seat with the purchase button on the course listing, or call Central Reservations at 212-769-5200. For free or reduced tuition, do not pay online: fill out the Tuition Assistance application instead.",
+  "needs_work_permit": false,
+  "url": "https://www.amnh.org/learn-teach/teens/science-alliance-high-school",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.amnh.org/learn-teach/teens/science-alliance-high-school",
+   "https://www.amnh.org/learn-teach/teens"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "Free tuition goes to a family of 4 with income of $124,240 or less (see the page for other sizes). Taking Science Alliance also counts toward the Museum's SCIP and SRMP rules. Questions: ScienceAlliance@amnh.org.",
+  "verified_on_label": "Oct 19, 2026"
+ },
+ {
+  "id": "nyc-amnh-science-communication-internship-program",
+  "name": "Science Communication Internship Program (SCIP)",
+  "org": "American Museum of Natural History",
+  "regions": [
+   "new-york-city"
+  ],
+  "city": "New York, NY",
+  "type": "internship",
+  "fields": [
+   "science",
+   "education"
+  ],
+  "what_you_do": "Spend the summer teaching Museum visitors about science. You learn to explain hard ideas in simple ways using the Museum's halls, objects, and hands-on stations.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "10th grade when you apply",
+  "who_can_apply": "New York City high school students in 10th grade who have passed all classes for at least the last 3 terms. You must also have done an AMNH youth program, or a program at a SciNetworkNYC place (such as the Bronx Zoo, New York Botanical Garden, New York Hall of Science, or Wave Hill), or go to a partner school or group on the list. No experience needed.",
+  "paid_type": "stipend",
+  "pay_detail": "$2,000 stipend when you finish the program requirements.",
+  "season": "summer",
+  "duration": "Six weeks, July 6 to August 14 in 2026, Monday to Friday, 25 hours a week (10 a.m. to 3 p.m. or noon to 5 p.m.).",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 deadline was March 1, 2026. 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply with the online form linked from the SCIP page when the next round opens.",
+  "needs_work_permit": null,
+  "url": "https://www.amnh.org/learn-teach/teens/science-communication-internship-program",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.amnh.org/learn-teach/teens/science-communication-internship-program",
+   "https://www.amnh.org/learn-teach/teens"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 1,
+  "notes": "The page lists the partner schools and groups by name; check it to see if yours is there. You also join career readiness events and Museum events.",
+  "verified_on_label": "Oct 19, 2026"
+ },
+ {
   "id": "nyc-amnh-science-research-mentoring-program",
   "name": "Science Research Mentoring Program (SRMP)",
   "org": "American Museum of Natural History",
@@ -80880,6 +81001,48 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "raleigh-digital-connectors",
+  "name": "Raleigh Digital Connectors",
+  "org": "City of Raleigh, Digital Impact Unit",
+  "regions": [
+   "triangle"
+  ],
+  "city": "Raleigh, NC",
+  "type": "leadership",
+  "fields": [
+   "tech-cs",
+   "social-impact"
+  ],
+  "what_you_do": "Meet each week to learn about the digital divide, build leadership skills, explore tech careers, and help Raleigh residents use technology. You do at least 10 hours of service.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "High school students in grades 9 to 12 who live in the City of Raleigh.",
+  "paid_type": "stipend",
+  "pay_detail": "A stipend, plus a free laptop when you finish. The page does not state the stipend amount.",
+  "season": "fall",
+  "duration": "Several months of weekly meetings, with no more than four unexcused absences.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Applications for the Fall 2026 group are closed. The page says an interest form for the Fall 2027 group opens in January 2027.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the interest form on the Digital Impact Programs page when it opens in January 2027. The form does not promise a spot.",
+  "needs_work_permit": null,
+  "url": "https://raleighnc.gov/careers-jobs-and-volunteering/services/digital-impact-programs",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://raleighnc.gov/careers-jobs-and-volunteering/services/digital-impact-programs",
+   "https://raleighnc.gov/youth"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 1,
+  "notes": "After Digital Connectors, alumni can join Raleigh Digital Ambassadors: a 10 month program with 45 service hours and a stipend, where you help residents at events like Advice About Your Device.",
+  "verified_on_label": "Oct 19, 2026",
+  "limited": true
+ },
+ {
   "id": "raleigh-marbles-kids-museum-teen-play-corps",
   "name": "Marbles Teen Play Corps",
   "org": "Marbles Kids Museum",
@@ -80919,6 +81082,128 @@
   "verified_on_label": "Oct 16, 2026"
  },
  {
+  "id": "raleigh-parks-lifeguard-save-program",
+  "name": "Raleigh Lifeguard and SAVE Free Lifeguard Training",
+  "org": "City of Raleigh Parks, Recreation and Cultural Resources, Aquatics",
+  "regions": [
+   "triangle"
+  ],
+  "city": "Raleigh, NC",
+  "type": "paid-youth-program",
+  "fields": [
+   "sports",
+   "health"
+  ],
+  "what_you_do": "Work as a lifeguard at a City of Raleigh pool. If you are not certified yet, the SAVE program trains you for free, and then you work 155 hours for the city.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Ages 15 and older. You must pass the city's drug test and background check. You must swim 150 yards without stopping, tread water for two minutes using only your legs, and pull a 10 pound object from the bottom of the pool in a timed test.",
+  "paid_type": "paid",
+  "pay_detail": "SAVE lifeguards work 155 hours at $14 an hour after the free class. The page does not list pay for certified lifeguards.",
+  "season": "year-round",
+  "duration": "SAVE: a lifeguard class, then 155 required work hours. Pools are open from 5 a.m. to 8 p.m. at most sites.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "The page says the city is accepting lifeguard applications now. No deadline is posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply at governmentjobs.com. Search for \"Lifeguard\" if you are certified, or \"Lifeguard - not certified\" for SAVE, and pick Raleigh. The city then contacts you to set up an interview or a swim tryout.",
+  "needs_work_permit": true,
+  "url": "https://raleighnc.gov/parks-and-recreation/services/lifeguards",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://raleighnc.gov/parks-and-recreation/services/lifeguards",
+   "https://raleighnc.gov/parks-and-recreation/services/raleigh-parks-part-time-employment"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 1,
+  "notes": "SAVE lifeguards also go to monthly and seasonal trainings. Questions: Raleigh Aquatics, Aquatics@raleighnc.gov, 919-996-6852.",
+  "verified_on_label": "Oct 19, 2026"
+ },
+ {
+  "id": "raleigh-police-public-safety-cadets",
+  "name": "Raleigh Police Public Safety Cadets",
+  "org": "Raleigh Police Department, Youth and Family Services",
+  "regions": [
+   "triangle"
+  ],
+  "city": "Raleigh, NC",
+  "type": "civic-government",
+  "fields": [
+   "law-government"
+  ],
+  "what_you_do": "See what police work is like. You train with officers in a smaller version of police academy training, do team building and light fitness, go on field trips, and help at community events and parades.",
+  "min_age": 14,
+  "max_age": 20,
+  "grades": null,
+  "who_can_apply": "Ages 14 to 20. The page lists no other rule.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No dates or deadline are posted. Email the unit to ask how to join.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Email Eric Hinton at Eric.Hinton@raleighnc.gov or call 984-222-4183.",
+  "needs_work_permit": false,
+  "url": "https://raleighnc.gov/youth/services/police-youth-services/public-safety-cadets-unit",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://raleighnc.gov/youth/services/police-youth-services/public-safety-cadets-unit",
+   "https://raleighnc.gov/youth/services/police-youth-services"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "Cadets meet at the Raleigh Police Youth Services Center, 4205 Spring Forest Rd, Raleigh, NC 27616.",
+  "verified_on_label": "Oct 19, 2026"
+ },
+ {
+  "id": "raleigh-summer-youth-employment-program",
+  "name": "Raleigh Summer Youth Employment Program (RSYEP)",
+  "org": "City of Raleigh, Community Engagement",
+  "regions": [
+   "triangle"
+  ],
+  "city": "Raleigh, NC",
+  "type": "paid-youth-program",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Work a paid summer job with the City of Raleigh for eight weeks. You build job skills, try out careers, and learn life skills.",
+  "min_age": 15,
+  "max_age": 18,
+  "grades": "High school student as of May 31, 2027",
+  "who_can_apply": "Ages 15 to 18 and a high school student as of May 31, 2027. You must live inside Raleigh city limits. You cannot be in summer school or school sports during the program, and you cannot miss more than 5 days. Only one person per household is accepted.",
+  "paid_type": "paid",
+  "pay_detail": "Paid work experience. The page does not state a pay rate.",
+  "season": "summer",
+  "duration": "Eight weeks: June 14 to August 6, 2027.",
+  "status": "opens-soon",
+  "opens_iso": "2027-01-25",
+  "deadline_text": "2027 application and interviews run January 25 to March 15, 2027. Onboarding with a parent or guardian is April 3, 2027. The program runs June 14 to August 6, 2027.",
+  "deadline_iso": "2027-03-15",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply online from January 25 to March 15, 2027, then interview. Bring proof of a Raleigh address to your interview (a school ID without an address does not count). If you get an offer, you need a government ID and must pass a background check, a drug test, and fingerprinting.",
+  "needs_work_permit": true,
+  "url": "https://raleighnc.gov/careers-jobs-and-volunteering/services/raleigh-summer-youth-employment",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://raleighnc.gov/careers-jobs-and-volunteering/services/raleigh-summer-youth-employment",
+   "https://raleighnc.gov/youth"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 1,
+  "notes": "You and a parent or guardian must go to onboarding on April 3, 2027 and to the parent orientation (the page lists both May 16 and May 22, 2027, so ask which). A free Skill Up job readiness training is on January 23, 2027. Questions: Rebekah Dixon, rebekah.dixon@raleighnc.gov, 919-996-5722.",
+  "verified_on_label": "Oct 19, 2026",
+  "limited": true
+ },
+ {
   "id": "raleigh-unc-health-rex-volunteen",
   "name": "UNC Health Rex VolunTEEN Program",
   "org": "UNC Health Rex",
@@ -80956,6 +81241,47 @@
   "priority": 1,
   "notes": "There is also an Academic Year Program (one day a week, 3 to 5 PM, September to May), but it is closed for 2026 to 2027. If accepted, you need a health screening (TB, whooping cough, chicken pox, MMR). Questions: volsvcs1@unchealth.unc.edu or 919-784-3165.",
   "verified_on_label": "Oct 16, 2026"
+ },
+ {
+  "id": "raleigh-youth-council",
+  "name": "Raleigh Youth Council",
+  "org": "City of Raleigh Parks, Recreation and Cultural Resources, Teen Programs",
+  "regions": [
+   "triangle"
+  ],
+  "city": "Raleigh, NC",
+  "type": "leadership",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Speak up for teens in Raleigh and Wake County. You do community service, build leadership skills, help with fundraisers and events, and can go to the Youth Legislative Assembly and state youth council meetings.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "High school students. The page names Raleigh and Wake County and lists no other rule.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "school-year",
+  "duration": "Meetings every second and fourth Monday of the month, 7 to 8 p.m.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline. You can join by coming to the next meeting.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Contact Nieya Garland at 984-338-6150, or register on RecLink and go to a meeting.",
+  "needs_work_permit": false,
+  "url": "https://raleighnc.gov/parks-and-recreation/services/teen-programs",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://raleighnc.gov/parks-and-recreation/services/teen-programs",
+   "https://raleighnc.gov/youth"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 1,
+  "notes": "The page says it is a good way to get school volunteer hours. Teen Programs: Teens@raleighnc.gov, 919-996-2139.",
+  "verified_on_label": "Oct 19, 2026"
  },
  {
   "id": "red-butte-garden-twig-teens-working-in-the-garden",
@@ -91865,6 +92191,46 @@
   "priority": 1,
   "notes": "Farm address: 7001 County Road 346, Silt, CO 81652. The 2027 pay rate is not posted. Page does not say which towns qualify.",
   "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "silver-spring-white-oak-medical-center-volunteers",
+  "name": "Volunteer at White Oak Medical Center",
+  "org": "Adventist HealthCare White Oak Medical Center",
+  "regions": [
+   "college-park"
+  ],
+  "city": "Silver Spring, MD",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Help at a hospital in Silver Spring. Volunteers work in the gift shop and at information desks, visit patients, help on nursing units, and do office tasks.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Volunteers ages 15 and older. The page lists no residency rule.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": null,
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The page says the hospital is not taking volunteer applications right now and to check back. No reopening date is posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Check the page for when applications open again. You will need shot records (MMR, chickenpox, Tdap, Hep B, flu, and COVID-19), a 4 hour orientation, a meeting with your supervisor, and a background check.",
+  "needs_work_permit": false,
+  "url": "https://www.adventisthealthcare.com/volunteer/white-oak-medical-center/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.adventisthealthcare.com/volunteer/white-oak-medical-center/",
+   "https://www.adventisthealthcare.com/volunteer/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "The hospital's Stepping Stones shadowing program needs two years of college, so it is not for high schoolers. Adventist HealthCare main line: 301-315-3030.",
+  "verified_on_label": "Oct 19, 2026"
  },
  {
   "id": "sioux-falls-parks-lifeguard-training-and-jobs",

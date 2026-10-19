@@ -1,0 +1,40 @@
+{
+  "id": "raleigh-parks-lifeguard-save-program",
+  "name": "Raleigh Lifeguard and SAVE Free Lifeguard Training",
+  "org": "City of Raleigh Parks, Recreation and Cultural Resources, Aquatics",
+  "regions": [
+    "triangle"
+  ],
+  "city": "Raleigh, NC",
+  "type": "paid-youth-program",
+  "fields": [
+    "sports",
+    "health"
+  ],
+  "what_you_do": "Work as a lifeguard at a City of Raleigh pool. If you are not certified yet, the SAVE program trains you for free, and then you work 155 hours for the city.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Ages 15 and older. You must pass the city's drug test and background check. You must swim 150 yards without stopping, tread water for two minutes using only your legs, and pull a 10 pound object from the bottom of the pool in a timed test.",
+  "paid_type": "paid",
+  "pay_detail": "SAVE lifeguards work 155 hours at $14 an hour after the free class. The page does not list pay for certified lifeguards.",
+  "season": "year-round",
+  "duration": "SAVE: a lifeguard class, then 155 required work hours. Pools are open from 5 a.m. to 8 p.m. at most sites.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "The page says the city is accepting lifeguard applications now. No deadline is posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply at governmentjobs.com. Search for \"Lifeguard\" if you are certified, or \"Lifeguard - not certified\" for SAVE, and pick Raleigh. The city then contacts you to set up an interview or a swim tryout.",
+  "needs_work_permit": true,
+  "url": "https://raleighnc.gov/parks-and-recreation/services/lifeguards",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://raleighnc.gov/parks-and-recreation/services/lifeguards",
+    "https://raleighnc.gov/parks-and-recreation/services/raleigh-parks-part-time-employment"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 1,
+  "notes": "SAVE lifeguards also go to monthly and seasonal trainings. Questions: Raleigh Aquatics, Aquatics@raleighnc.gov, 919-996-6852."
+}
