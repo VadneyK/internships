@@ -400,8 +400,26 @@ const BUDGET = {
   // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. ?at=city:san-francisco raw 1341000 to 1344200.
   // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. ?at=city:san-francisco gzip 220300 to 220600.
   // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) ?at=city:san-francisco raw 1387400, gzip 229000.
+  // 2026-10-18 (after #45) issue 19 Southern California pages read in a real browser (+6 cards, 2,686 programs; PENDING PERSON APPROVAL): 1387400 to 1395500, gzip 229000 to 230600.
+  // 2026-10-18 (after #54) issue 22 Chicago and Elgin second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 1387400 to 1389600, gzip 229000 to 229300.
+  // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 1397423 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco raw 1395500 to 1397500.
+  // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 230831 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco gzip 230600 to 230900.
+  // 2026-10-19 issue 5 Confirm first: CHP East Sacramento and Michigan 4-H Exploration Days re-read in a real browser (2 cards changed, 2,680 programs; PENDING PERSON APPROVAL) ?at=city:san-francisco raw 1387400 to 1387500.
+  // 2026-10-19: confirm-first edits (#64) after the #59 and #60 cards, 1397503 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco raw 1397500 to 1397600.
+  // 2026-10-19 issue 23 Pacific Northwest and Vancouver second pass read in a real browser (+15 cards, 2,695 programs; PENDING PERSON APPROVAL): 1387400 to 1391600, gzip 229000 to 230400.
+  // 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 1401660 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco raw 1397600 to 1401700.
+  // 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 231298 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco gzip 230900 to 231300.
+  // 2026-10-19 issues 20, 21 and 26 East Coast second pass read in a real browser (+9 cards, 2,689 programs; PENDING PERSON APPROVAL): 1387400 to 1390100, gzip 229000 to 229300.
+  // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 1404327 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco raw 1401700 to 1404400.
+  // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 231626 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco gzip 231300 to 231700.
+  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. ?at=city:san-francisco raw 1387400 to 1444800.
+  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. ?at=city:san-francisco gzip 229000 to 239100.
+  // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 1461635 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco raw 1444800 to 1461700.
+  // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 241805 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco gzip 239100 to 241900.
   // 2026-10-17 (after #45) SoCal, Santa Barbara and Merced cards read in a real browser (+16 cards, 2,696 programs; PENDING PERSON APPROVAL): 1387400 to 1407100, gzip 229000 to 232300.
-  "?at=city:san-francisco": { raw: 1407100, gzip: 232300, label: "a Bay Area city" },
+  // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 1481333 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco raw 1461700 to 1481400.
+  // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 245053 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco gzip 241900 to 245100.
+  "?at=city:san-francisco": { raw: 1481400, gzip: 245100, label: "a Bay Area city" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston raw 1057000 to 1075700.
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston gzip 168000 to 170700.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston raw 1075700 to 1096100.
@@ -419,8 +437,24 @@ const BUDGET = {
   // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston raw 1160000 to 1163300.
   // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston gzip 182200 to 182500.
   // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) ?at=city:boston raw 1173200, gzip 183800.
+  // 2026-10-18 (after #45) issue 19 Southern California pages read in a real browser (+6 cards, 2,686 programs; PENDING PERSON APPROVAL): 1173200 to 1175100, gzip 183800 to 184000.
+  // 2026-10-18 (after #54) issue 22 Chicago and Elgin second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 1173200 to 1175400, gzip 183800 to 184100.
+  // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 1177154 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston raw 1175400 to 1177200.
+  // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 184287 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston gzip 184100 to 184300.
+  // 2026-10-19 issue 23 Pacific Northwest and Vancouver second pass read in a real browser (+15 cards, 2,695 programs; PENDING PERSON APPROVAL): 1173200 to 1177400, gzip 183800 to 185000.
+  // 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 1181301 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston raw 1177400 to 1181400.
+  // 2026-10-19 issues 20, 21 and 26 East Coast second pass read in a real browser (+9 cards, 2,689 programs; PENDING PERSON APPROVAL): 1173200 to 1177800, gzip 183800 to 184400.
+  // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 1185888 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston raw 1181400 to 1185900.
+  // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 185375 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston gzip 185000 to 185400.
+  // 2026-10-19: issue 28 batch 3 (#62) after #59, #60, #64, #65 and #66, 185424 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston gzip 185400 to 185500.
+  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. ?at=city:boston raw 1173200 to 1187000.
+  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. ?at=city:boston gzip 183800 to 185400.
+  // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 1199724 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston raw 1187000 to 1199800.
+  // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 186963 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston gzip 185500 to 187000.
   // 2026-10-17 (after #45) SoCal, Santa Barbara and Merced cards read in a real browser (+16 cards, 2,696 programs; PENDING PERSON APPROVAL): 1173200 to 1178000, gzip 183800 to 184300.
-  "?at=city:boston": { raw: 1178000, gzip: 184300, label: "Boston" },
+  // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 1204562 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston raw 1199800 to 1204600.
+  // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 187493 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston gzip 187000 to 187500.
+  "?at=city:boston": { raw: 1204600, gzip: 187500, label: "Boston" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska raw 867100 to 886400.
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska gzip 130500 to 132800.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska raw 886400 to 937900.
@@ -438,8 +472,23 @@ const BUDGET = {
   // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska raw 986900 to 989900.
   // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska gzip 148000 to 148200.
   // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) ?at=state:nebraska raw 999800, gzip 149500.
+  // 2026-10-18 (after #45) issue 19 Southern California pages read in a real browser (+6 cards, 2,686 programs; PENDING PERSON APPROVAL): 999800 to 1001700, gzip 149500 to 149700.
+  // 2026-10-18 (after #54) issue 22 Chicago and Elgin second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 999800 to 1002000, gzip 149500 to 149800.
+  // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 1003690 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=state:nebraska raw 1002000 to 1003700.
+  // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 149964 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=state:nebraska gzip 149800 to 150000.
+  // 2026-10-19 issue 23 Pacific Northwest and Vancouver second pass read in a real browser (+15 cards, 2,695 programs; PENDING PERSON APPROVAL): 999800 to 1003900, gzip 149500 to 150600.
+  // 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 1007837 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=state:nebraska raw 1003900 to 1007900.
+  // 2026-10-19 issues 20, 21 and 26 East Coast second pass read in a real browser (+9 cards, 2,689 programs; PENDING PERSON APPROVAL): 999800 to 1002500, gzip 149500 to 149800.
+  // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 1010504 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=state:nebraska raw 1007900 to 1010600.
+  // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 150727 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=state:nebraska gzip 150600 to 150800.
+  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. ?at=state:nebraska raw 999800 to 1013600.
+  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. ?at=state:nebraska gzip 149500 to 151100.
+  // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 1024321 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=state:nebraska raw 1013600 to 1024400.
+  // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 152280 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=state:nebraska gzip 151100 to 152300.
   // 2026-10-17 (after #45) SoCal, Santa Barbara and Merced cards read in a real browser (+16 cards, 2,696 programs; PENDING PERSON APPROVAL): 999800 to 1004600, gzip 149500 to 150000.
-  "?at=state:nebraska": { raw: 1004600, gzip: 150000, label: "a Plains state" },
+  // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 1029159 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=state:nebraska raw 1024400 to 1029200.
+  // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 152810 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=state:nebraska gzip 152300 to 152900.
+  "?at=state:nebraska": { raw: 1029200, gzip: 152900, label: "a Plains state" },
 };
 for (const [search, b] of Object.entries(BUDGET)) {
   test("first-load data bytes for " + b.label + " stay under the pinned budget and far under the whole lite file", async () => {

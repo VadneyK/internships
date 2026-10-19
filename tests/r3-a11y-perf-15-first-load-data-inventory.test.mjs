@@ -26,15 +26,37 @@ export const TABLE = {
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) find.html limit 2468900 to 2496100. PENDING PERSON APPROVAL.
   // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. find.html limit 2496100 to 2507300.
   // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) find.html limit 2540600.
+  // 2026-10-18 (after #45) issue 19 Southern California pages read in a real browser (+6 cards, 2,686 programs; PENDING PERSON APPROVAL): 2540600 to 2546800.
+  // 2026-10-18 (after #54) issue 22 Chicago and Elgin second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 2540600 to 2547400.
+  // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 2553402 bytes. Approved by Kentaro 2026-10-19 (merge train). find.html ceiling 2547400 to 2553500.
+  // 2026-10-19 issue 5 Confirm first: CHP East Sacramento and Michigan 4-H Exploration Days re-read in a real browser (2 cards changed, 2,680 programs; PENDING PERSON APPROVAL) find.html limit 2540600 to 2540800.
+  // 2026-10-19: confirm-first edits (#64) after the #59 and #60 cards, 2553569 bytes. Approved by Kentaro 2026-10-19 (merge train). find.html ceiling 2553500 to 2553600.
+  // 2026-10-19 issue 23 Pacific Northwest and Vancouver second pass read in a real browser (+15 cards, 2,695 programs; PENDING PERSON APPROVAL): 2540600 to 2554500.
+  // 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 2567354 bytes. Approved by Kentaro 2026-10-19 (merge train). find.html ceiling 2554500 to 2567400.
+  // 2026-10-19 issues 20, 21 and 26 East Coast second pass read in a real browser (+9 cards, 2,689 programs; PENDING PERSON APPROVAL): 2540600 to 2549200.
+  // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 2575944 bytes. Approved by Kentaro 2026-10-19 (merge train). find.html ceiling 2567400 to 2576000.
+  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. find.html 2540600 to 2584100.
+  // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 2619357 bytes. Approved by Kentaro 2026-10-19 (merge train). find.html ceiling 2584100 to 2619400.
   // 2026-10-17 (after #45) SoCal, Santa Barbara and Merced cards read in a real browser (+16 cards, 2,696 programs; PENDING PERSON APPROVAL): 2540600 to 2555400.
-  "find.html": { paths: ["data/entries-lite.json"], ceiling: 2555400, reason: "Find filters every program, so it needs the whole lite file" },
+  // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 2634217 bytes. Approved by Kentaro 2026-10-19 (merge train). find.html ceiling 2619400 to 2634300.
+  "find.html": { paths: ["data/entries-lite.json"], ceiling: 2634300, reason: "Find filters every program, so it needs the whole lite file" },
   // 2026-10-15: the Map page (754,977 bytes measured; about 151 KB gzipped). It counts every program by city, so it reads the map projection
   // (name, org and the keys the age, pay and open filters test) and the city points. PENDING PERSON APPROVAL for this weight on phones.
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) map.html limit 760000 to 763100. PENDING PERSON APPROVAL.
   // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. map.html limit 763100 to 766100.
   // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) map.html limit 775900.
+  // 2026-10-18 (after #45) issue 19 Southern California pages read in a real browser (+6 cards, 2,686 programs; PENDING PERSON APPROVAL): 775900 to 777600.
+  // 2026-10-18 (after #54) issue 22 Chicago and Elgin second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 775900 to 778000.
+  // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 779500 bytes. Approved by Kentaro 2026-10-19 (merge train). map.html ceiling 778000 to 779600.
+  // 2026-10-19 issue 23 Pacific Northwest and Vancouver second pass read in a real browser (+15 cards, 2,695 programs; PENDING PERSON APPROVAL): 775900 to 779800.
+  // 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 783409 bytes. Approved by Kentaro 2026-10-19 (merge train). map.html ceiling 779800 to 783500.
+  // 2026-10-19 issues 20, 21 and 26 East Coast second pass read in a real browser (+9 cards, 2,689 programs; PENDING PERSON APPROVAL): 775900 to 778700.
+  // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 786137 bytes. Approved by Kentaro 2026-10-19 (merge train). map.html ceiling 783500 to 786200.
+  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. map.html 775900 to 788500.
+  // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 798709 bytes. Approved by Kentaro 2026-10-19 (merge train). map.html ceiling 788500 to 798800.
   // 2026-10-17 (after #45) SoCal, Santa Barbara and Merced cards read in a real browser (+16 cards, 2,696 programs; PENDING PERSON APPROVAL): 775900 to 780300.
-  "map.html": { paths: ["data/entries-map.json", "data/map.json"], ceiling: 780300, reason: "Map counts every program by city: the small map projection of the lite rows plus the city points file" },
+  // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 803089 bytes. Approved by Kentaro 2026-10-19 (merge train). map.html ceiling 798800 to 803100.
+  "map.html": { paths: ["data/entries-map.json", "data/map.json"], ceiling: 803100, reason: "Map counts every program by city: the small map projection of the lite rows plus the city points file" },
   "calendar.html": { paths: ["data/calendar.json", "data/entries-cal.json"], ceiling: 150000, reason: "Calendar draws deadline cards from the small calendar file (only the programs it lists) plus its own small file" },
   "younger.html": { paths: ["data/entries-core.json", "data/younger.json"], ceiling: 1100000, reason: "Ages 12 to 14 reads the core file and its own small file; headroom up to the card file size" },
   // Raised from 130000 to 145000 on 2026-10-12: the employer list grew to 147 entries (about 136 KB, one entry per line, about 30 KB gzipped).
@@ -53,8 +75,18 @@ export const TABLE = {
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) insights.html limit 776700 to 785100. PENDING PERSON APPROVAL.
   // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. insights.html limit 785100 to 788200.
   // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) insights.html limit 798100.
+  // 2026-10-18 (after #45) issue 19 Southern California pages read in a real browser (+6 cards, 2,686 programs; PENDING PERSON APPROVAL): 798100 to 800000.
+  // 2026-10-18 (after #54) issue 22 Chicago and Elgin second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 798100 to 800300.
+  // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 801984 bytes. Approved by Kentaro 2026-10-19 (merge train). insights.html ceiling 800300 to 802000.
+  // 2026-10-19 issue 23 Pacific Northwest and Vancouver second pass read in a real browser (+15 cards, 2,695 programs; PENDING PERSON APPROVAL): 798100 to 802200.
+  // 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 806131 bytes. Approved by Kentaro 2026-10-19 (merge train). insights.html ceiling 802200 to 806200.
+  // 2026-10-19 issues 20, 21 and 26 East Coast second pass read in a real browser (+9 cards, 2,689 programs; PENDING PERSON APPROVAL): 798100 to 800700.
+  // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 808798 bytes. Approved by Kentaro 2026-10-19 (merge train). insights.html ceiling 806200 to 808800.
+  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. insights.html 798100 to 811900.
+  // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 822613 bytes. Approved by Kentaro 2026-10-19 (merge train). insights.html ceiling 811900 to 822700.
   // 2026-10-17 (after #45) SoCal, Santa Barbara and Merced cards read in a real browser (+16 cards, 2,696 programs; PENDING PERSON APPROVAL): 798100 to 802900.
-  "insights.html": { paths: ["data/entries-stats.json"], ceiling: 802900, reason: "Numbers page counts every program, so it needs the stats projection (about 528 KB), the one page over the 200000 default" },
+  // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 827451 bytes. Approved by Kentaro 2026-10-19 (merge train). insights.html ceiling 822700 to 827500.
+  "insights.html": { paths: ["data/entries-stats.json"], ceiling: 827500, reason: "Numbers page counts every program, so it needs the stats projection (about 528 KB), the one page over the 200000 default" },
   "languages.html": { paths: ["data/languages.json"], ceiling: 200000, reason: SMALL },
   "parents.html": { paths: ["data/parents.json"], ceiling: 200000, reason: SMALL },
   "paycheck.html": { paths: ["data/money.json"], ceiling: 200000, reason: SMALL },

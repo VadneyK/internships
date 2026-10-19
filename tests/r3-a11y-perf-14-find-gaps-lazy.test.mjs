@@ -1,7 +1,7 @@
 // find.html loads data/gaps.json only after a place or hub is chosen, once per page load, by the versioned URL.
 import test from "node:test";
 import assert from "node:assert/strict";
-import { loadPage, type, tick } from "./dom-helper.mjs";
+import { loadPage, type, tick, waitFor } from "./dom-helper.mjs";
 
 // the page asks for a relative URL, the fetch log holds an absolute one, so match without the leading slash
 const GAPS_URL = /data\/gaps\.json/;
@@ -33,6 +33,8 @@ test("choosing a place requests gaps.json once, by the versioned URL, and shows 
   assert.equal(gapRequests(seen).length, 0);
 
   type(window, document.getElementById("place"), "city:davis");
+  // Wait for the gaps box instead of a fixed 150 ms: a loaded machine was slower than that (2026-10-16). Then a beat for a stray second request.
+  await waitFor(() => !document.getElementById("gaps").hidden);
   await tick(150);
   const reqs = gapRequests(seen);
   assert.equal(reqs.length, 1, "exactly one gaps request");
@@ -47,6 +49,7 @@ test("choosing a place requests gaps.json once, by the versioned URL, and shows 
 test("loading with ?where=oak requests gaps.json once and shows the East Bay gap", async () => {
   const seen = [];
   const { window, document } = await loadPage("find.html", { search: "?where=oak", fetchLog: seen });
+  await waitFor(() => !document.getElementById("gaps").hidden);
   await tick(150);
   assert.equal(gapRequests(seen).length, 1, "exactly one gaps request");
   const box = document.getElementById("gaps");
@@ -60,8 +63,9 @@ test("picking a second place does not request gaps.json again", async () => {
   const seen = [];
   const { window, document } = await loadPage("find.html", { fetchLog: seen });
   type(window, document.getElementById("place"), "city:davis");
-  await tick(150);
+  await waitFor(() => !document.getElementById("gaps").hidden);
   type(window, document.getElementById("place"), "city:berkeley");
+  await waitFor(() => document.querySelector('#gaps a[href$="/issues/2"]'));
   await tick(150);
   assert.equal(gapRequests(seen).length, 1, "still one gaps request after two places");
   const box = document.getElementById("gaps");
@@ -87,6 +91,7 @@ test("a failed gaps.json fetch leaves the cards up and logs no console error", a
     });
   };
   const { window, document, errors } = await loadPage("find.html", { search: "?where=oak", setup });
+  await waitFor(() => attempts.length > 0);
   await tick(150);
   assert.equal(attempts.length, 1, "the gaps file was tried once");
   assert.deepEqual(errors, []);
