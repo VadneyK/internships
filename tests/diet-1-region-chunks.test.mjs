@@ -439,7 +439,8 @@ const BUDGET = {
   // 2026-10-19 issues 20, 21 and 26 East Coast second pass read in a real browser (+9 cards, 2,689 programs; PENDING PERSON APPROVAL): 1173200 to 1177800, gzip 183800 to 184400.
   // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 1185888 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston raw 1181400 to 1185900.
   // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 185375 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston gzip 185000 to 185400.
-  "?at=city:boston": { raw: 1185900, gzip: 185400, label: "Boston" },
+  // 2026-10-19: issue 28 batch 3 (#62) after #59, #60, #64, #65 and #66, 185424 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston gzip 185400 to 185500.
+  "?at=city:boston": { raw: 1185900, gzip: 185500, label: "Boston" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska raw 867100 to 886400.
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska gzip 130500 to 132800.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska raw 886400 to 937900.

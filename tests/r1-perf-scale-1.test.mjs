@@ -58,7 +58,8 @@ const LIMITS = {
     // 2026-10-19 issues 20, 21 and 26 East Coast second pass read in a real browser (+9 cards, 2,689 programs; PENDING PERSON APPROVAL): 5223300 to 5240900 (gzip still fits).
     // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 5297955 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json raw 5280400 to 5298000.
     // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 1197817 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json gzip 1194100 to 1197900.
-    "data/entries.json": { raw: 5298000, gzip: 1197900 },
+    // 2026-10-19: issue 28 batch 3 (#62) after #59, #60, #64, #65 and #66, 1198261 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json gzip 1197900 to 1198300.
+    "data/entries.json": { raw: 5298000, gzip: 1198300 },
     // Raised from 2020000 to 2040000 on 2026-10-10 after the fact check: the page re-reads added about 6,000 bytes (0.3 percent) of plainer deadline_text across 266 cards, saying what the page does and does not state. No single card is the cause. Still about 1,145 bytes per program, under the per-program limit.
     // Gzip limit raised from 440000 to 450000 on 2026-10-10: the card fixes this round (pay wording, opens-soon dates) put it at 440053.
     // Raised again on 2026-10-12 for the 178 more cards: entries-lite.json is 2,097,871 bytes (437,135 gzipped), 947 bytes per program. Raw from 2040000 to 2160000. The gzip limit stays 450000. PENDING PERSON APPROVAL, as for entries.json.
@@ -96,7 +97,8 @@ const LIMITS = {
     // 2026-10-19 issues 20, 21 and 26 East Coast second pass read in a real browser (+9 cards, 2,689 programs; PENDING PERSON APPROVAL): 2540600 to 2549200 (gzip still fits).
     // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 2575944 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json raw 2567400 to 2576000.
     // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 536765 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json gzip 535300 to 536800.
-    "data/entries-lite.json": { raw: 2576000, gzip: 536800 },
+    // 2026-10-19: issue 28 batch 3 (#62) after #59, #60, #64, #65 and #66, 536916 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json gzip 536800 to 537000.
+    "data/entries-lite.json": { raw: 2576000, gzip: 537000 },
     // Raised on 2026-10-11 for ticket p7-regions-1: entries-core.json is 368,169 bytes (36,864 gzipped). Raw from 320000 to 375000, gzip from 32000 to 37500.
     // PENDING PERSON APPROVAL: same as entries.json above. Do not raise again without a person's recorded sign-off.
     // Raised again on 2026-10-12 for the 178 more cards: entries-core.json is 400,279 bytes (41,089 gzipped). Raw from 375000 to 420000, gzip from 37500 to 43000. PENDING PERSON APPROVAL, as above.

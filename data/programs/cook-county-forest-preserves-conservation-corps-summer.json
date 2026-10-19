@@ -16,12 +16,12 @@
   "grades": null,
   "who_can_apply": "Cook County residents ages 14 to 19.",
   "paid_type": "paid",
-  "pay_detail": "Paid. The amount is not stated on the Cook County page. Transportation and service clothing are provided.",
+  "pay_detail": "Paid: $15 an hour (CCLC) or $15.50 (Forest Preserve Experience) per the Forest Preserves page. Transportation and service clothing are provided.",
   "season": "summer",
   "duration": "4 to 6 weeks",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "No dates on the Cook County page. The Forest Preserves site was blocked, so check it for the deadline.",
+  "deadline_text": "Forest Preserves page: youth applications are due in April. 2027 dates not posted.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "The Cook County page points to fpdcc.com/nature/conservation-corps-programs for how to apply. That page was not available.",
@@ -30,10 +30,11 @@
   "apply_url": "https://fpdcc.com/nature/conservation-corps-programs/",
   "sources_fetched": [
     "https://www.cookcountyil.gov/service/cook-county-connects",
-    "https://www.cookcountyil.gov/service/forest-preserves-employment-information"
+    "https://www.cookcountyil.gov/service/forest-preserves-employment-information",
+    "https://fpdcc.com/nature/conservation-corps-programs/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-10-18",
   "priority": 1,
   "notes": "Confirm age rules, pay and deadline on the Forest Preserves site, because it blocked my reader. Ask about working papers if you are under 16."
 }
