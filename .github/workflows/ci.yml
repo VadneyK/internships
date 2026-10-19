@@ -121,6 +121,16 @@ jobs:
             --exclude 'stryker.config.json' --exclude 'reports' --exclude '.stryker-tmp' --exclude '.gitignore' --exclude '.nvmrc' --exclude '.claude' --exclude '.DS_Store' \
             --exclude '/docs' --exclude '/lighthouserc.json' --exclude '/README.md' --exclude '/CONTRIBUTING.md' --exclude '/CODE_OF_CONDUCT.md' --exclude '/CONTRIBUTORS.md' --exclude '/SECURITY.md' ./ _site/
           test -f _site/index.html && test -f _site/404.html && test -d _site/data/programs && test -f _site/.well-known/security.txt && test -f _site/LICENSE && test ! -e _site/docs
+      # The Map page's street map tiles (76 MB) are too big for git. tools/geo/tiles/build.sh makes them, a release named
+      # map-tiles-<BUILD> holds them, and SHA256SUMS pins their bytes, so a changed or missing file stops the deploy.
+      - name: Add the street map tiles from their release
+        run: |
+          mkdir -p _site/assets/map/tiles
+          tag="map-tiles-$(cat tools/geo/tiles/BUILD)"
+          for f in base.pmtiles.gz detail.pmtiles.gz; do
+            curl -fsSL --retry 4 -o "_site/assets/map/tiles/$f" "https://github.com/${GITHUB_REPOSITORY}/releases/download/${tag}/${f}"
+          done
+          (cd _site/assets/map/tiles && sha256sum -c "$GITHUB_WORKSPACE/tools/geo/tiles/SHA256SUMS")
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
         with:
           path: _site
@@ -152,6 +162,18 @@ jobs:
               sleep 10
             done
             if [ "$got" = "$want" ]; then echo "same bytes ${f}"; else echo "DIFFERENT bytes ${f}"; fail=1; fi
+          done
+          # The street map reads its tiles in pieces (Range requests). Firefox asks for gzip; Pages must still answer with the
+          # file's own bytes (206, no content-encoding, starting with the PMTiles mark), or the map fails in Firefox.
+          for f in assets/map/tiles/base.pmtiles.gz assets/map/tiles/detail.pmtiles.gz; do
+            ok=no
+            for try in 1 2 3 4 5 6; do
+              h=$(curl -s -D - -o /tmp/head.bin -H 'Range: bytes=0-6' -H 'Accept-Encoding: gzip' "${PAGE_URL}${f}")
+              if printf '%s' "$h" | grep -q '^HTTP/[0-9.]* 206' && ! printf '%s' "$h" | grep -qi '^content-encoding:' && [ "$(cat /tmp/head.bin)" = "PMTiles" ]; then ok=yes; break; fi
+              sleep 10
+            done
+            echo "range ${ok} ${f}"
+            [ "$ok" = "yes" ] || fail=1
           done
           exit $fail
 

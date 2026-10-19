@@ -7,7 +7,7 @@
 
 **Live site: <https://vadneyk.github.io/internships/>**
 
-A free, searchable guide to internships, paid youth programs, research, volunteering and job shadowing for high school students in
+A free, searchable guide to internships, paid youth programs, research, volunteering and job shadowing for teens ages 12 to 18 in
 many states and Vancouver, BC, plus the work-permit rules, a message builder that helps you ask an adult for a chance, and a one-page resume builder.
 
 It started as a handout for the "How to Find Internships" table at Ignition NorCal 2026 and grew into an open project that students help run.
@@ -19,7 +19,7 @@ Each page is a plain HTML file in the repo root. The source for each one is in [
 
 | File | What it does |
 |---|---|
-| `index.html` | The home page, a free guide for high schoolers in the US and Vancouver, BC. |
+| `index.html` | The home page, a free guide for teens ages 12 to 18 in the US and Vancouver, BC. |
 | `find.html` | Search paid youth programs, internships, research, volunteer spots and shadowing that we could verify for teens. |
 | `calendar.html` | Pick a month, a place and your age to see which teen programs take applications then. |
 | `map.html` | A map with a dot for each city named on a program card. Tap a dot to see its programs, or find the cities near you. A full list by state and city sits under the map. |

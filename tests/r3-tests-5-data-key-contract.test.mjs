@@ -17,6 +17,8 @@ const list = (d, ext) => readdirSync(join(root, d)).filter((f) => f.endsWith(ext
 const ALLOWED = {
   gaps_list: "build.py template placeholder filled into src/contribute.html, not a data key",
   lang_switch: "build.py template placeholder for the language link in the nav (ADR 0008), not a data key",
+  point_count: "MapLibre's own property on a grouped dot (map-gl.js), not a data key",
+  cluster_id: "MapLibre's own property on a grouped dot (map-gl.js), not a data key",
 };
 
 const known = new Set();

@@ -90,7 +90,7 @@ test("mutation: setting the scroll padding to 2rem makes the check fail", () => 
 test("mutation: moving the rule into a print block makes the check fail", () => {
   const rule = /@media \(min-width: 40\.0625rem\) \{ html \{ scroll-padding-top: 5rem; \} \}/;
   assert.ok(rule.test(CSS), "expected the shipped rule text in style.css");
-  const tall = /@media \(min-width: 40\.0625rem\) and \(min-height: 34rem\) \{/;
+  const tall = /@media \(min-width: 64rem\) and \(min-height: 34rem\) \{/;
   assert.ok(tall.test(CSS), "expected the tall-screen block in style.css");
   const mutated = CSS.replace(rule, "@media print { html { scroll-padding-top: 5rem; } }")
     .replace(tall, "@media print {")

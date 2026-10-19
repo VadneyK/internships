@@ -67,7 +67,7 @@ test("the stylesheet hides the labels on wide screens and stacks the rows under 
 
 // 2026-10-14: "Who to call" goes through lib.js linkContacts, so a parent on a phone can tap to call,
 // and tel: links never wrap mid number.
-test("phone numbers in Who to call are tap-to-call links that do not wrap", async () => {
+test("phone numbers in Who to call are tap-to-call links that move to a new line whole", async () => {
   const { document } = await ready();
   const calls = [...document.querySelectorAll("#signT tbody tr")].map((r) => r.children[3]);
   const withNumber = calls.filter((c) => /\d{3}-\d{3}-\d{4}/.test(c.textContent));
@@ -78,7 +78,8 @@ test("phone numbers in Who to call are tap-to-call links that do not wrap", asyn
     assert.match(a.getAttribute("href"), /^tel:\+1\d{10}$/);
   }
   const css = fs.readFileSync(new URL("../assets/css/style.css", import.meta.url), "utf8");
-  assert.match(css, /a\[href\^="tel:"\] \{ white-space: nowrap; \}/);
+  /* 2026-10-16: inline-block, not nowrap, so a number longer than a 320 px line can still wrap (tests/r12-a11y-perf-1) */
+  assert.match(css, /a\[href\^="tel:"\] \{ display: inline-block; \}/);
 });
 
 // 2026-10-14 (persona r9 item 8): the table opens on the family's state when the guide knows it.

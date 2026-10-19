@@ -137,6 +137,15 @@ test("younger.html: picking a state loads nothing broken", async () => {
 const jsFiles = readdirSync(join(ROOT, "assets/js")).filter((f) => f.endsWith(".js")).sort();
 const cleanPath = (s) => s.split(/[?#]/)[0].replace(/^\.\//, "").replace(/^\/internships\//, ""); // 404.html is root-anchored under /internships/
 
+// Folders that are not in git: the deploy job downloads their files and checks them against a SHA256SUMS
+// file that is in git. A script path inside one resolves when the manifest names it, not when it is on disk,
+// so the check passes the same in CI (no folder) and on a machine that built the files (folder present).
+const DEPLOY_ADDED = [
+  { dir: "assets/map/tiles/", manifest: "tools/geo/tiles/SHA256SUMS", why: "street map tiles, 76 MB, from the release map-tiles-<BUILD>" },
+];
+const manifestNames = (rel) => read(rel).split("\n").map((l) => l.trim().split(/\s+\*?/)[1]).filter(Boolean);
+const deployAdded = (p) => DEPLOY_ADDED.find((d) => p.startsWith(d.dir));
+
 test("every quoted data/*.json, assets/... or *.csv path in assets/js exists on disk", () => {
   const found = [];
   for (const f of jsFiles) {
@@ -146,10 +155,38 @@ test("every quoted data/*.json, assets/... or *.csv path in assets/js exists on 
   }
   assert.ok(found.length >= 10, `only ${found.length} path literals found, check the pattern`);
   // A path that ends in a slash is a folder a script adds an id to, for example "data/programs/" + id + ".json"; the folder must exist.
-  const missing = found.filter(([, p]) => p.endsWith("/")
-    ? !existsSync(join(ROOT, p)) || !statSync(join(ROOT, p)).isDirectory()
-    : !existsSync(join(ROOT, p)) || !statSync(join(ROOT, p)).isFile());
+  // A deploy-added folder exists once its manifest names at least one file; a file in it must be named there.
+  const missing = found.filter(([, p]) => {
+    const d = deployAdded(p);
+    if (d) return p === d.dir ? manifestNames(d.manifest).length === 0 : !manifestNames(d.manifest).includes(p.slice(d.dir.length));
+    return p.endsWith("/")
+      ? !existsSync(join(ROOT, p)) || !statSync(join(ROOT, p)).isDirectory()
+      : !existsSync(join(ROOT, p)) || !statSync(join(ROOT, p)).isFile();
+  });
   assert.deepEqual(missing.map(([f, p]) => `${f} -> ${p}`), [], "paths in scripts that are not files");
+});
+
+test("each deploy-added folder is gitignored, its scripts name only manifest files, and the deploy job fetches and checks all of them", () => {
+  const ignored = read(".gitignore").split("\n").map((l) => l.trim());
+  const ci = read(".github/workflows/ci.yml");
+  for (const d of DEPLOY_ADDED) {
+    assert.ok(ignored.includes(d.dir), `${d.dir} (${d.why}) is not a .gitignore line; if it is committed now, remove its DEPLOY_ADDED row`);
+    const names = manifestNames(d.manifest);
+    assert.ok(names.length > 0, `${d.manifest} names no files`);
+    // The scripts that build a URL from the folder pass the file names as quoted strings, e.g. tiles("base.pmtiles.gz").
+    const users = jsFiles.filter((f) => read(`assets/js/${f}`).includes(`"${d.dir}"`));
+    assert.ok(users.length > 0, `no script quotes "${d.dir}"; remove its DEPLOY_ADDED row`);
+    const exts = [...new Set(names.map((n) => n.slice(n.indexOf("."))))];
+    const quoted = users.flatMap((f) => [...read(`assets/js/${f}`).matchAll(/["'`]([^"'`\s\\/]+)["'`]/g)]
+      .map((m) => m[1]).filter((s) => exts.some((e) => s.endsWith(e))).map((s) => [f, s]));
+    assert.deepEqual(quoted.filter(([, s]) => !names.includes(s)).map(([f, s]) => `${f} -> ${d.dir}${s}`), [], `files not named in ${d.manifest}`);
+    assert.deepEqual(names.filter((n) => !quoted.some(([, s]) => s === n)), [], `${d.manifest} names files no script asks for`);
+    // The deploy job downloads every manifest file into _site/<dir> and checks the bytes with sha256sum -c.
+    const loop = ci.match(new RegExp(`for f in ([^;\\n]+); do\\s*\\n\\s*curl [^\\n]*-o "_site/${d.dir}\\$f"`));
+    assert.ok(loop, `ci.yml has no loop that downloads into _site/${d.dir}`);
+    assert.deepEqual(loop[1].trim().split(/\s+/).sort(), [...names].sort(), `ci.yml downloads other files than ${d.manifest} names`);
+    assert.ok(ci.includes(`sha256sum -c "$GITHUB_WORKSPACE/${d.manifest}"`), `ci.yml's deploy job does not check ${d.manifest}`);
+  }
 });
 
 // ---------- static: files named in built pages ----------
@@ -217,6 +254,8 @@ test("every CSS url() resolves to a non-empty file", () => {
 const UNREFERENCED_OK = new Set([
   // Read only by tests/r3-accuracy-7-expiring-dates.test.mjs: the reviewed list of future dates allowed in teen text.
   "expiring-dates.json",
+  // Read only by tests/wages-2027.test.mjs: the official 2027 wage record. The paycheck page reads its copy in money.json (w2027).
+  "wages-2027.json",
 ]);
 
 function walk(dir) {

@@ -192,7 +192,9 @@ test("the Spanish header and footer have no English text left", () => {
 // root page limit its English twin has. PENDING PERSON APPROVAL for that row. code is fonts.css, style.css, common.js and es.js
 // (100,488 bytes; the same three shared files as 404.html, plus es.js), so a change to a shared file can trip these rows too.
 const CEILINGS = {
-  "es/index.html": { html: 21700, code: 100500 },
+  // 2026-10-19: lib.js and common.js grew on main (calendar, grade flag, keep my list, screen reader names); es/index.html first-load code 100500 to 102900 (102884 measured). PENDING PERSON APPROVAL.
+  // 2026-10-19: the trust line from PR 36 mirrored in Spanish; es/index.html page 21700 to 22100 (22011 measured). PENDING PERSON APPROVAL.
+  "es/index.html": { html: 22100, code: 102900 },
   "es/playbook.html": { html: 25000, code: 100500 },
   "es/rules.html": { html: 40800, code: 100500 },
 };

@@ -134,8 +134,11 @@ export function measureDir(dir, jsDir, branchesOut) {
   return out;
 }
 
+// Scripts jsdom cannot run, so they have no line coverage to measure. map-gl.js draws the street map with WebGL 2
+// (MapLibre); tests/map-gl.dom.test.mjs checks everything map.js asks of it, and the drawing is checked in a real browser.
+export const BROWSER_ONLY = { "map-gl.js": "needs WebGL 2, which jsdom lacks" };
 const pageScripts = fs.readdirSync(path.join(ROOT, "assets/js"))
-  .filter((f) => f.endsWith(".js") && f !== "lib.js")
+  .filter((f) => f.endsWith(".js") && f !== "lib.js" && !(f in BROWSER_ONLY))
   .sort();
 
 test("every page script has a floor, and no floor names a missing script", () => {

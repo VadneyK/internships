@@ -161,7 +161,7 @@ def calendar_static():
     import html as _h
     cal = json.load(open(os.path.join(ROOT, "data", "calendar.json"), encoding="utf-8"))
     months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-    chips = "".join('<button class="chip" type="button" data-m="%d" aria-pressed="false">%s<span class="n">0</span></button>' % (i + 1, m) for i, m in enumerate(months))
+    chips = "".join('<button class="chip" type="button" data-m="%d" aria-pressed="false">%s <span class="n">0</span></button>' % (i + 1, m) for i, m in enumerate(months))
     return {"calendar_note": _h.escape(cal["note"]), "calendar_months": chips, "pre_cAge": pre_tiles(["Any age"] + [str(a) for a in range(12, 19)])}
 
 
