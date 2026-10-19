@@ -30,10 +30,23 @@ test("the phone block hides the nav under html.js unless the menu is open", () =
 });
 
 test("a page loads with html.js set and the Menu button built", async () => {
-  const { document } = await loadPage("index.html");
+  // 2026-10-16: on a loaded machine common.js can take over 3 s, the head failsafe then (rightly) drops html.js, and this
+  // test failed. Hold the failsafe back and run it once the menu is built, so the check no longer races the clock.
+  const { document, window } = await loadPage("index.html", {
+    setup(w) {
+      const st = w.setTimeout;
+      w.setTimeout = function (f, ms, ...a) {
+        if (ms === 3000 && /menu-js/.test(String(f))) { w.__failsafe = f; return 0; }
+        return st.call(this, f, ms, ...a);
+      };
+    },
+  });
   await waitFor(() => document.querySelector(".top.menu-js button.menu-btn"), { timeout: 30000 });
   assert.ok(document.documentElement.classList.contains("js"));
   assert.ok(document.querySelector(".top.menu-js button.menu-btn"));
+  assert.equal(typeof window.__failsafe, "function", "the head script set its 3 second failsafe");
+  window.__failsafe();
+  assert.ok(document.documentElement.classList.contains("js"), "the failsafe keeps html.js once the menu is built");
 });
 
 test("the failsafe removes html.js when no menu was built", async () => {

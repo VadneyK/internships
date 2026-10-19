@@ -1,4 +1,4 @@
-/* Insights page: charts built from data/entries-stats.json. Counting logic lives in lib.js (insights) and is tested. */
+/* Insights page: charts from data/entries-stats.json. Counting logic is in lib.js (insights). */
 (function () {
   "use strict";
   var G = window.TIG, L = G.lib;
@@ -37,8 +37,8 @@
       return '<a class="ccol" href="' + G.esc(link({ age: a.age })) + '" aria-label="Age ' + a.age + ": " + a.n + " programs, " + a.paid + " paid, " + (a.n - a.paid) + ' not paid or pay not stated"><span class="cn">' + a.n + '</span><span class="cbar"><i class="k3" style="height:' + h + '%"><b class="k1" style="height:' + hp + '%"></b></i></span><span class="cl">Age ' + a.age + '<span class="csplit small"><span><i class="key k1" aria-hidden="true"></i>' + a.paid + '</span><span><i class="key kw" aria-hidden="true"></i>' + (a.n - a.paid) + '</span></span></span></a>';
     }).join("");
 
-    /* hubs, stacked. The counts are written out as text under each bar, so screen readers and
-       keyboard users get them without color or hover. The bar segments are decoration only. */
+    /* hubs, stacked. Counts are text under each bar, so screen readers and keyboard users
+       get them without color or hover. The bar segments are decoration only. */
     var hmax = Math.max.apply(null, d.hubs.map(function (h) { return h.n; }));
     $("chartHubs").innerHTML = d.hubs.map(function (h) {
       var seg = function (n, cls) { return n ? '<i class="' + cls + '" aria-hidden="true" style="width:' + (n / hmax * 100) + '%"></i>' : ""; };
@@ -49,7 +49,7 @@
         '<span class="cbreak small muted" style="grid-column:1 / -1">' + parts.join(", ") + "</span></a>";
     }).join("");
 
-    /* kinds and interests */
+    /* kinds, interests */
     var tmax = d.types[0].n, fmax = d.fields[0].n;
     rows($("chartTypes"), d.types, tmax, function (it) { return link({ kind: it.id }); }, "k1");
     rows($("chartFields"), d.fields, fmax, function (it) { return link({ interest: it.id }); }, "k2");
@@ -63,7 +63,7 @@
     d.months.forEach(function (m) { m.items.forEach(function (it) { items.push(it); }); });
     $("soonDates").innerHTML = items.slice(0, 8).map(function (it) {
       var dt = G.parseISO(it.date);
-      return '<li><div class="d">' + L.MONTHS[dt.getMonth()] + " " + dt.getDate() + "<small>closes</small></div><div><b>" + G.esc(it.name) + '</b><br><a href="find.html#p-' + G.esc(it.id) + '">See card</a></div></li>';
+      return '<li><div class="d">' + L.MONTHS[dt.getMonth()] + " " + dt.getDate() + "<small>closes</small></div><div><b>" + G.esc(it.name) + '</b><br><a href="find.html#p-' + G.esc(it.id) + '" aria-label="' + G.esc("See card: " + it.name) + '">See card</a></div></li>';
     }).join("") || "<li><div>No confirmed deadlines right now.</div></li>";
 
     /* trust */
