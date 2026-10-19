@@ -35,7 +35,9 @@ const DETAIL_FIELDS = ["who_can_apply", "how_to_apply", "notes", "duration", "pa
 // 2026-10-19: confirm-first edits (#64) after the #59 and #60 cards, 605563 bytes gzipped. Approved by Kentaro 2026-10-19 (merge train). limit 605400 to 605600.
 // 2026-10-19 issue 23 Pacific Northwest and Vancouver second pass read in a real browser (+15 cards, 2,695 programs; PENDING PERSON APPROVAL): limit 604000 to 607100 (607,093 gzipped bytes).
 // 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 608672 bytes gzipped. Approved by Kentaro 2026-10-19 (merge train). limit 607100 to 608700.
-const GZIP_LIMIT = 608700;
+// 2026-10-19 issues 20, 21 and 26 East Coast second pass read in a real browser (+9 cards, 2,689 programs; PENDING PERSON APPROVAL): 604000 to 604200.
+// 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 610732 bytes gzipped. Approved by Kentaro 2026-10-19 (merge train). limit 608700 to 610800.
+const GZIP_LIMIT = 610800;
 
 function readText(file) {
   return fs.readFileSync(path.join(DATA, file), "utf8");

@@ -39,7 +39,9 @@ const PAGES = {
   // 2026-10-19: confirm-first edits (#64) after the #59 and #60 cards, 2553569 bytes. Approved by Kentaro 2026-10-19 (merge train). find.html ceiling 2553500 to 2553600.
   // 2026-10-19 issue 23 Pacific Northwest and Vancouver second pass read in a real browser (+15 cards, 2,695 programs; PENDING PERSON APPROVAL): 2540600 to 2554500.
   // 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 2567354 bytes. Approved by Kentaro 2026-10-19 (merge train). find.html ceiling 2554500 to 2567400.
-  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2567400 },
+  // 2026-10-19 issues 20, 21 and 26 East Coast second pass read in a real browser (+9 cards, 2,689 programs; PENDING PERSON APPROVAL): 2540600 to 2549200.
+  // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 2575944 bytes. Approved by Kentaro 2026-10-19 (merge train). find.html ceiling 2567400 to 2576000.
+  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2576000 },
   "calendar.html": { allowed: ["calendar.json", "entries-cal.json"], ceiling: 150000 },
   // 2026-10-15: the Map page reads the map projection and the city points (754,977 bytes). PENDING PERSON APPROVAL, as above.
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) map.html limit 760000 to 763100. PENDING PERSON APPROVAL.
@@ -50,7 +52,9 @@ const PAGES = {
   // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 779500 bytes. Approved by Kentaro 2026-10-19 (merge train). map.html ceiling 778000 to 779600.
   // 2026-10-19 issue 23 Pacific Northwest and Vancouver second pass read in a real browser (+15 cards, 2,695 programs; PENDING PERSON APPROVAL): 775900 to 779800.
   // 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 783409 bytes. Approved by Kentaro 2026-10-19 (merge train). map.html ceiling 779800 to 783500.
-  "map.html": { allowed: ["entries-map.json", "map.json"], ceiling: 783500 },
+  // 2026-10-19 issues 20, 21 and 26 East Coast second pass read in a real browser (+9 cards, 2,689 programs; PENDING PERSON APPROVAL): 775900 to 778700.
+  // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 786137 bytes. Approved by Kentaro 2026-10-19 (merge train). map.html ceiling 783500 to 786200.
+  "map.html": { allowed: ["entries-map.json", "map.json"], ceiling: 786200 },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. insights.html ceiling 697700 to 716100.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. insights.html limit 716100 to 736500.
   // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. insights.html limit 736500 to 748900.
@@ -64,7 +68,9 @@ const PAGES = {
   // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 801984 bytes. Approved by Kentaro 2026-10-19 (merge train). insights.html ceiling 800300 to 802000.
   // 2026-10-19 issue 23 Pacific Northwest and Vancouver second pass read in a real browser (+15 cards, 2,695 programs; PENDING PERSON APPROVAL): 798100 to 802200.
   // 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 806131 bytes. Approved by Kentaro 2026-10-19 (merge train). insights.html ceiling 802200 to 806200.
-  "insights.html": { allowed: ["entries-stats.json"], ceiling: 806200 },
+  // 2026-10-19 issues 20, 21 and 26 East Coast second pass read in a real browser (+9 cards, 2,689 programs; PENDING PERSON APPROVAL): 798100 to 800700.
+  // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 808798 bytes. Approved by Kentaro 2026-10-19 (merge train). insights.html ceiling 806200 to 808800.
+  "insights.html": { allowed: ["entries-stats.json"], ceiling: 808800 },
   // younger.html: raised from 336000 to 340000 on 2026-10-11 (r5-younger-1: pet care card and address-safe script added 2.7 KB to younger.json)
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. younger.html ceiling 442000 to 452800.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. younger.html limit 452800 to 465400.
@@ -80,7 +86,9 @@ const PAGES = {
   // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 504691 bytes. Approved by Kentaro 2026-10-19 (merge train). younger.html ceiling 503700 to 504700.
   // 2026-10-19 issue 23 Pacific Northwest and Vancouver second pass read in a real browser (+15 cards, 2,695 programs; PENDING PERSON APPROVAL): 502300 to 505100.
   // 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 507446 bytes. Approved by Kentaro 2026-10-19 (merge train). younger.html ceiling 505100 to 507500.
-  "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 507500 },
+  // 2026-10-19 issues 20, 21 and 26 East Coast second pass read in a real browser (+9 cards, 2,689 programs; PENDING PERSON APPROVAL): 502300 to 504000.
+  // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 509118 bytes. Approved by Kentaro 2026-10-19 (merge train). younger.html ceiling 507500 to 509200.
+  "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 509200 },
   "interview.html": { allowed: ["interview.json", "permits.json"], ceiling: 95000 },
   // permit.html and states.html: raised from 82000 to 83000 on 2026-10-12 (r2-accuracy-2 and r2-accuracy-8: the 2027 wage lines and the Washington, DC wording; permits.json is 82,370 bytes)
   "permit.html": { allowed: ["permits.json"], ceiling: 83000 },
