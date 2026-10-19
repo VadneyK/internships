@@ -1,5 +1,5 @@
 {
- "read": "2026-10-17",
+ "read": "2026-10-19",
  "cities": [
   {
    "key": "Chandler, AZ",
@@ -223,7 +223,9 @@
    "lon": -117.7587,
    "precision": "city",
    "ids": [
+    "anaheim-community-services-volunteers",
     "anaheim-fire-explorers",
+    "anaheim-police-explorers",
     "anaheim-public-library-teen-volunteers",
     "anaheim-summer-volunteen"
    ]
@@ -779,7 +781,9 @@
    "lon": -118.4108,
    "precision": "city",
    "ids": [
+    "camp-chla-health-care-career-exploration",
     "cedars-sinai-teen-volunteer-program",
+    "chla-la-hip-high-school-internship",
     "getty-teen-gallery-guides",
     "hire-las-youth",
     "keck-medicine-usc-summer-youth-volunteer",
@@ -1170,7 +1174,9 @@
    "lon": -115.9484,
    "precision": "county",
    "ids": [
-    "riverside-county-library-teen-advisory-boards"
+    "riverside-county-library-teen-advisory-boards",
+    "riverside-county-wioa-youth-opportunity-centers",
+    "riverside-county-youth-advisory-councils"
    ]
   },
   {
@@ -2626,7 +2632,8 @@
    "lon": -88.1776,
    "precision": "city",
    "ids": [
-    "illinois-boys-state"
+    "illinois-boys-state",
+    "illinois-girls-state"
    ]
   },
   {
@@ -2709,6 +2716,7 @@
    "precision": "county",
    "ids": [
     "cook-county-forest-preserves-conservation-corps-summer",
+    "cook-county-forest-preserves-youth-outdoor-ambassadors",
     "cook-county-opportunity-works-subsidized-internships"
    ]
   },
@@ -2746,6 +2754,7 @@
     "elgin-hawthorne-hill-nature-center-volunteers",
     "elgin-police-explorer-post-1445",
     "elgin-teen-life-police-and-library",
+    "elgin-u46-magnet-academies",
     "gail-borden-teen-volunteers",
     "ywca-elgin-youth-leadership-scholarship"
    ]
@@ -2839,7 +2848,8 @@
    "lon": -88.1446,
    "precision": "city",
    "ids": [
-    "ascension-saint-alexius-teen-volunteer"
+    "ascension-saint-alexius-teen-volunteer",
+    "hoffman-estates-park-district-swim-instructor"
    ]
   },
   {
@@ -2850,6 +2860,19 @@
    "precision": "county",
    "ids": [
     "kane-county-forest-preserve-volunteer-workdays"
+   ]
+  },
+  {
+   "key": "Lemont, IL",
+   "state": "IL",
+   "lat": 41.6673,
+   "lon": -87.9844,
+   "precision": "city",
+   "ids": [
+    "argonne-high-school-autonomous-vehicle-competition",
+    "argonne-introduce-a-generation-to-engineering-day",
+    "argonne-middle-school-electric-car-competition",
+    "argonne-science-careers-in-search-of-women"
    ]
   },
   {
@@ -6765,7 +6788,6 @@
     "illinois-dcfs-employment-job-training-apprenticeship-incentive",
     "illinois-deca-state-association",
     "illinois-fbla-state-association",
-    "illinois-girls-state",
     "illinois-isbe-student-advisory-council",
     "illinois-wing-civil-air-patrol-cadets"
    ],
