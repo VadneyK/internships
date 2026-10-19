@@ -1,5 +1,5 @@
 {
- "read": "2026-10-17",
+ "read": "2026-10-19",
  "cities": [
   {
    "key": "Chandler, AZ",
@@ -849,12 +849,15 @@
    "lon": -120.4704,
    "precision": "city",
    "ids": [
+    "merced-4h-teen-camp-staff",
     "merced-college-ccap-dual-enrollment",
     "merced-college-k12-concurrent-enrollment",
+    "merced-county-4h-youth-development",
     "merced-county-office-of-education-empower",
     "merced-mercy-medical-center-volunteer",
     "merced-muhsd-dual-enrollment-merced-college",
-    "merced-skillrise-ch-high-school-internship"
+    "merced-skillrise-ch-high-school-internship",
+    "uc-merced-bobcat-summer-stem-academy-high-school"
    ]
   },
   {
@@ -1115,7 +1118,8 @@
    "precision": "city",
    "ids": [
     "cal-poly-pomona-next-gen-manufacturing-academy",
-    "pomona-valley-hospital-high-school-volunteer"
+    "pomona-valley-hospital-high-school-volunteer",
+    "pomona-youth-accountability-board"
    ]
   },
   {
@@ -1319,7 +1323,10 @@
     "san-diego-reality-changers-college-town",
     "san-diego-sharp-memorial-mary-birch-volunteer",
     "san-diego-ucsd-health-volunteer",
-    "sdma-teen-council"
+    "sdma-teen-council",
+    "sdsu-robotics-camp",
+    "sdsu-upward-bound",
+    "usd-trio-upward-bound"
    ]
   },
   {
