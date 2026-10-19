@@ -1,0 +1,42 @@
+{
+  "id": "columbus-ohiohealth-hospital-volunteers",
+  "name": "OhioHealth hospital volunteers",
+  "org": "OhioHealth Volunteer Services",
+  "regions": [
+    "columbus"
+  ],
+  "city": "Columbus, OH",
+  "type": "volunteer",
+  "fields": [
+    "health"
+  ],
+  "what_you_do": "Help patients, families and staff at an OhioHealth hospital. Jobs include guiding guests, helping with patient discharge, stocking patient rooms and office work.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Ages 16 and up when you apply. Some roles need you to be 18. You need a Social Security number or ITIN, a background check, shot records (MMR and chickenpox), a TB screening and a yearly flu shot.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. The background check, TB screening and flu shot are free for volunteers.",
+  "season": "year-round",
+  "duration": "Ongoing. The page does not set a number of hours.",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline is posted. At Riverside Methodist, the steps from applying to starting take 6 to 8 weeks.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Pick a hospital on the OhioHealth volunteer site and fill out the online application. Then do a reference check, training and a new volunteer orientation. Hospital volunteers wear a uniform.",
+  "needs_work_permit": false,
+  "url": "https://ohiohealth.samaritan.com/custom/501/hospital",
+  "apply_url": "https://ohiohealth.samaritan.com/custom/501/volunteer_home",
+  "sources_fetched": [
+    "https://www.ohiohealth.com/volunteer",
+    "https://ohiohealth.samaritan.com/custom/501/volunteer_home",
+    "https://ohiohealth.samaritan.com/custom/501/hospital",
+    "https://ohiohealth.samaritan.com/custom/501/organization_details/655",
+    "https://ohiohealth.samaritan.com/custom/501/affiliation_details/20117"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "Hospitals on the list include Riverside Methodist, Grant, Doctors, Dublin Methodist, Grove City Methodist, Pickerington Methodist, Westerville, Grady, Berger, Marion General, Mansfield, Shelby, Hardin and O'Bleness. OhioHealth also has SARNCO and HomeReach Hospice volunteers, which are not covered here."
+}
