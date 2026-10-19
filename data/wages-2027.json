@@ -28,7 +28,7 @@
    "page_title": "BOLI : Oregon Minimum Wage : For Workers : State of Oregon",
    "quote": "For July 1, 2026, through June 30, 2027, those rates are: $16.80 per hour - Portland metro ... $15.55 per hour - Standard ... $14.55 per hour - Non-urban",
    "youth": "The minimum wage is the same for adults and for minors.",
-   "status": "The July 1, 2027 rates are set each spring from inflation and were not posted on Oct 18, 2026. The July 2026 rates ($16.80 Portland metro, $15.55 standard, $14.55 non-urban) run through June 30, 2027."
+   "status": "The July 1, 2027 rates are calculated by BOLI by April 30 each year (minimum wage schedule page) and were not posted on Oct 18, 2026. The July 2026 rates ($16.80 Portland metro, $15.55 standard, $14.55 non-urban) run through June 30, 2027."
   },
   {
    "id": "co", "name": "Colorado", "kind": "state",
@@ -36,7 +36,7 @@
    "url": "https://cdle.colorado.gov/dlss/labor-laws-rules-resources/labor-rules-proposed-and-adopted",
    "page_title": "Labor Rules, Proposed and Adopted | Colorado Department of Labor and Employment",
    "quote": "Proposed PAY CALC Rules (proposed_2027_pay_calc_order_7_ccr_1103-14_9.30.2026)",
-   "status": "On Oct 18, 2026 the 2027 PAY CALC Order was only a proposed rule (dated Sept 30, 2026), not adopted, and the number was not on the page. The adopted 2026 order ($15.16, per the U.S. Department of Labor table) stands until the 2027 order is adopted. Denver sets its own higher rate."
+   "status": "On Oct 18, 2026 the 2027 PAY CALC Order was only proposed (Sept 30, 2026): $15.71 an hour, $13.36 for non-emancipated minors, $12.69 tipped, effective Jan 1, 2027 if adopted. Public hearing Nov 2, 2026; last year's order was adopted Dec 8. The adopted 2026 order ($15.16) stands until then. Denver sets its own higher rate."
   },
   {
    "id": "ny", "name": "New York", "kind": "state",
@@ -73,11 +73,12 @@
   },
   {
    "id": "az", "name": "Arizona", "kind": "state",
-   "wage_2026": 15.15, "wage_2027": null, "effective": "2027-01-01",
-   "url": "https://www.azica.gov/labor-minimum-wage-main-page",
-   "page_title": "Labor - Minimum Wage Main Page | Industrial Commission of Arizona",
-   "quote": "AZ State Minimum Wage Poster 2026 (English)",
-   "status": "The Industrial Commission page listed only the 2026 poster on Oct 18, 2026. Arizona adjusts for inflation each Jan 1 and usually posts the new rate in mid October. Flagstaff and Tucson set their own rates."
+   "wage_2026": 15.15, "wage_2027": 15.65, "effective": "2027-01-01",
+   "url": "https://www.azica.gov/posters-employers-must-display",
+   "page_title": "Posters Employers Must Display | Industrial Commission of Arizona",
+   "quote": "Effective January 1, 2027, Arizona's Minimum Wage Is: $15.65 per hour",
+   "youth": "Same rate for minors. Tipped workers may be paid up to $3.00 less ($12.65) if tips bring them to $15.65.",
+   "status": "The 2027 poster (last updated 09/25/2026) is on the Industrial Commission posters page; the Minimum Wage Main Page still lists only the 2026 poster. Flagstaff and Tucson set their own rates."
   },
   {
    "id": "bc", "name": "British Columbia", "kind": "province",
@@ -163,8 +164,8 @@
    "wage_2026": 20.34, "wage_2027": null, "effective": "2027-07-01",
    "url": "https://www.emeryville.org/Services/Business/Permits-Regulations/Minimum-Wage-Ordinance",
    "page_title": "Minimum Wage Ordinance - City of Emeryville, CA",
-   "quote": "2026 Minimum Wage and Paid Sick Leave Poster",
-   "status": "The page text gives no number (the rate is in the 2026 poster PDF: $20.34 from July 1, 2026 per the UC Berkeley Labor Center inventory). No 2027 figure yet."
+   "quote": "$20.34 (CPI) (all businesses)",
+   "status": "$20.34 from July 1, 2026 (page text). No 2027 figure yet; Emeryville adjusts each July 1 by CPI."
   }
  ]
 }
