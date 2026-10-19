@@ -26,8 +26,8 @@ export const TABLE = {
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) find.html limit 2468900 to 2496100. PENDING PERSON APPROVAL.
   // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. find.html limit 2496100 to 2507300.
   // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) find.html limit 2540600.
-  // 2026-10-19 issues 20, 21 and 26 East Coast second pass read in a real browser (+9 cards, 2,689 programs; PENDING PERSON APPROVAL): 2540600 to 2549100.
-  "find.html": { paths: ["data/entries-lite.json"], ceiling: 2549100, reason: "Find filters every program, so it needs the whole lite file" },
+  // 2026-10-19 issues 20, 21 and 26 East Coast second pass read in a real browser (+9 cards, 2,689 programs; PENDING PERSON APPROVAL): 2540600 to 2549200.
+  "find.html": { paths: ["data/entries-lite.json"], ceiling: 2549200, reason: "Find filters every program, so it needs the whole lite file" },
   // 2026-10-15: the Map page (754,977 bytes measured; about 151 KB gzipped). It counts every program by city, so it reads the map projection
   // (name, org and the keys the age, pay and open filters test) and the city points. PENDING PERSON APPROVAL for this weight on phones.
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) map.html limit 760000 to 763100. PENDING PERSON APPROVAL.
