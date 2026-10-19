@@ -21,6 +21,7 @@ const PICKER_CALLS = /\b(?:G|TIG)\.(?:tilePicker|autoTiles)\b/;
 // Ceilings: bytes on disk for each page's script and stylesheet files, about 5% over today's total (rounded up to 100 bytes).
 // Raised on 2026-10-12 for ticket r3-a11y-perf-35: the body min-height 100dvh line in style.css adds 22 bytes, so every page that loads style.css has its ceiling raised by 22 bytes and nothing else.
 const BUDGET = {
+  // 2026-10-19: main merged in after PR 51 (chart labels, calendar, persona r11, map, sweep) into keep my list (PENDING PERSON APPROVAL, merging approves): pages over set to the measured size rounded up to 100.
   // 2026-10-19: main merged in after PR 39 (calendar, persona r11, map, sweep, wages, screen reader) into ages and chart labels (PENDING PERSON APPROVAL, merging approves): pages over set to the measured size rounded up to 100.
   // 2026-10-18: main merged in after PR 36 (persona r11, street map) into the chart value labels branch (PENDING PERSON APPROVAL): pages over set to the measured size rounded up to 100.
   // 2026-10-18: main merged in after PR 36 (persona r11, map, sweep, wages, screen reader) into add to calendar (PENDING PERSON APPROVAL, merging approves): pages over set to the measured size rounded up to 100.
@@ -118,7 +119,8 @@ const BUDGET = {
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). find.html limit 215800 to 216500.
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). find.html limit 216500 to 216600.
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL). find.html limit 216600 to 216900.
-  "find.html": { ceiling: 227300, reason: "lib.js, common.js and find.js (largest page script)" },
+  // 2026-10-16: keep my list without an account (docs/adr/0008) in find.js: find.html set to the measured size rounded up to 100 (227595 bytes). PENDING PERSON APPROVAL.
+  "find.html": { ceiling: 234700, reason: "lib.js, common.js and find.js (largest page script)" },
   // 2026-10-16: Add to calendar on deadlines, issue #10 (lib.js: reminders, Google Calendar link, which cards get it; about 1.9 KB) (PENDING PERSON APPROVAL). find.html limit 224800 to 226300 (remeasured 2026-10-19 after main merged in with PRs 42 and 36).
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you handout.html limit 91700 to 92100.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. handout.html limit 92200 to 92700.
