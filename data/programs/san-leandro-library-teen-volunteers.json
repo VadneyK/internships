@@ -5,8 +5,8 @@
   "pay_detail": null,
   "duration": "At least 4 months",
   "opens_iso": null,
-  "deadline_iso": null,
-  "apply_url": null,
+  "deadline_iso": "2026-12-12",
+  "apply_url": "https://app.betterimpact.com/Application?OrganizationGuid=d930894b-d9bf-4259-9231-b4b07cff91e5&ApplicationFormNumber=1",
   "needs_work_permit": false,
   "priority": 2,
   "verified": "fetched",
@@ -29,11 +29,11 @@
   "paid_type": "unpaid",
   "season": "school-year",
   "status": "open-now",
-  "deadline_text": "Open until Dec 12, 2026 (orientation that day, 11 am). Summer applications open in mid March.",
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Apply online, attend an in-person orientation at the Main Library, sign the waiver, and commit to a regular shift. Returning volunteers must use their old MyImpact login.",
+  "deadline_text": "Winter/spring applications are open now and due Dec 12, 2026. The required in-person orientation is Saturday, Dec 12 at 11:00 am at the Main Library. Summer applications open again in mid March 2027.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply online by Dec 12, 2026. Go to the in-person training at the Main Library. Turn in the forms you get there. Then pick a weekly or monthly shift for at least 4 months. If you helped before, use your old MyImpact login.",
   "url": "https://www.sanleandro.org/558/Teen-Volunteer",
-  "notes": "The page mentions both 2026 and January 2026 timing, so confirm the next cycle with the Teen Librarian. It also says a teen should handle their own emails, because the program is meant to prepare you for a first job.",
+  "notes": "The page heading says January 2026 to May 2027, which looks like a typo for January 2027. Even past volunteers must attend orientation. The page says a teen should handle their own emails, because the program is meant to prepare you for a first job. Senior volunteers can be eligible for a Friends of the Library scholarship. Questions: SBehimehr@sanleandro.org.",
   "sources_fetched": [
     "https://www.sanleandro.org/558/Teen-Volunteer"
   ]

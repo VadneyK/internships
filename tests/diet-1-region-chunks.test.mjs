@@ -412,7 +412,11 @@ const BUDGET = {
   // 2026-10-19 issues 20, 21 and 26 East Coast second pass read in a real browser (+9 cards, 2,689 programs; PENDING PERSON APPROVAL): 1387400 to 1390100, gzip 229000 to 229300.
   // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 1404327 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco raw 1401700 to 1404400.
   // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 231626 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco gzip 231300 to 231700.
-  "?at=city:san-francisco": { raw: 1404400, gzip: 231700, label: "a Bay Area city" },
+  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. ?at=city:san-francisco raw 1387400 to 1444800.
+  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. ?at=city:san-francisco gzip 229000 to 239100.
+  // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 1461635 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco raw 1444800 to 1461700.
+  // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 241805 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco gzip 239100 to 241900.
+  "?at=city:san-francisco": { raw: 1461700, gzip: 241900, label: "a Bay Area city" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston raw 1057000 to 1075700.
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston gzip 168000 to 170700.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston raw 1075700 to 1096100.
@@ -440,7 +444,11 @@ const BUDGET = {
   // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 1185888 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston raw 1181400 to 1185900.
   // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 185375 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston gzip 185000 to 185400.
   // 2026-10-19: issue 28 batch 3 (#62) after #59, #60, #64, #65 and #66, 185424 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston gzip 185400 to 185500.
-  "?at=city:boston": { raw: 1185900, gzip: 185500, label: "Boston" },
+  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. ?at=city:boston raw 1173200 to 1187000.
+  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. ?at=city:boston gzip 183800 to 185400.
+  // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 1199724 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston raw 1187000 to 1199800.
+  // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 186963 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston gzip 185500 to 187000.
+  "?at=city:boston": { raw: 1199800, gzip: 187000, label: "Boston" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska raw 867100 to 886400.
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska gzip 130500 to 132800.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska raw 886400 to 937900.
@@ -467,7 +475,11 @@ const BUDGET = {
   // 2026-10-19 issues 20, 21 and 26 East Coast second pass read in a real browser (+9 cards, 2,689 programs; PENDING PERSON APPROVAL): 999800 to 1002500, gzip 149500 to 149800.
   // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 1010504 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=state:nebraska raw 1007900 to 1010600.
   // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 150727 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=state:nebraska gzip 150600 to 150800.
-  "?at=state:nebraska": { raw: 1010600, gzip: 150800, label: "a Plains state" },
+  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. ?at=state:nebraska raw 999800 to 1013600.
+  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. ?at=state:nebraska gzip 149500 to 151100.
+  // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 1024321 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=state:nebraska raw 1013600 to 1024400.
+  // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 152280 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=state:nebraska gzip 151100 to 152300.
+  "?at=state:nebraska": { raw: 1024400, gzip: 152300, label: "a Plains state" },
 };
 for (const [search, b] of Object.entries(BUDGET)) {
   test("first-load data bytes for " + b.label + " stay under the pinned budget and far under the whole lite file", async () => {

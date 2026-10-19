@@ -7,6 +7,7 @@
 - The WebSearch budget (200 calls) ran out partway, so some programs were checked only by direct page fetch.
 
 ## Gaps not closed
+- Update 2026-10-16: the city gaps for Hayward, San Leandro, Livermore, Pleasanton and Dublin, and Lawrence Livermore Lab, were worked in a later pass. See docs/research/bay-cities-notes.md.
 - Hospitals: Kaiser, Alta Bates Summit (Sutter) and Alameda Health System teen volunteer programs could not be confirmed on official pages. UCSF is listed with a 16+ rule.
 - Livermore, Pleasanton, Dublin, San Leandro, Hayward and Walnut Creek city/library teen jobs: guessed URLs returned errors, so only Eden Area ROP and the Contra Costa library are covered. Lawrence Livermore Lab has no confirmed high school program (a search summary mentioned one for Livermore's three public high schools).
 - Chabot Galaxy Explorers, Oakland Museum of California, Oakland Public Education Fund, Boys and Girls Clubs, YMCA of the East Bay, Alameda Boys and Girls Club, Alameda Unified CTE, Berkeley Unified CTE, Las Positas, Chabot College and College of Alameda dual enrollment pages: not loaded or no detail. Peralta dual enrollment is covered.
