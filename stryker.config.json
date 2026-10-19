@@ -65,7 +65,8 @@
       "tests/mut-c-lib.test.mjs",
       "tests/mut-a-lib.test.mjs",
       "tests/mut-b-lib.test.mjs",
-      "tests/mut-d-lib.test.mjs"
+      "tests/mut-d-lib.test.mjs",
+      "tests/r10-tests-1-mut-lib-hours.test.mjs"
     ],
     "nodeArgs": [
       "--test-reporter=tap",
@@ -92,7 +93,7 @@
   "concurrency": 4,
   "thresholds": {
     "high": 95,
-    "low": 90,
-    "break": 90
+    "low": 93,
+    "break": 93
   }
 }
