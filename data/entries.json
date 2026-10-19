@@ -2461,11 +2461,11 @@
   "grades": null,
   "min_age": 12,
   "max_age": 17,
-  "opens_iso": "2026-10-19",
-  "deadline_iso": "2026-10-19",
+  "opens_iso": null,
+  "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-10-18",
   "needs_work_permit": null,
   "id": "ann-arbor-hshv-junior-volunteer",
   "name": "Junior Volunteer Program at Humane Society of Huron Valley",
@@ -2485,7 +2485,7 @@
   "pay_detail": "$205 program fee for the 6 session training (training, T-shirt, supplies). Limited scholarships for families with financial need.",
   "season": "year-round",
   "duration": "6 training sessions, then a 2 to 4 hour per month volunteer commitment",
-  "status": "opens-soon",
+  "status": "open-now",
   "deadline_text": "Registration for the November sessions (Nov 2 to 19) opens Mon Oct 19 at 8am; for the December sessions (Nov 30 to Dec 17) it opens Mon Nov 16 at 8am. Sessions are offered monthly and fill quickly.",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Online registration only, which opens about 30 days before each session. You must attend all six classes; there are no make-ups, refunds or transfers. A waitlist is available.",
@@ -2497,7 +2497,7 @@
   ],
   "priority": 1,
   "notes": "Demand is higher than space, so you may wait months. After training you volunteer without a parent present. Inactive for 6 months or more means retaking the training. Shelter is at 3100 Cherry Hill Rd, Ann Arbor. Michigan's youth employment page (Youth Employment Standards Act) says the law covers employers of anyone under 18 including volunteers, so ask the program whether a work permit is needed.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Oct 18, 2026"
  },
  {
   "grades": null,
@@ -24298,8 +24298,8 @@
   "pay_detail": "Paid by stipend. Teen Best Reads pays $3,500. Teen Gamer's Guild pays $1,800. Teen Media Lab pays $2,200 for spring and $1,300 for fall. You get paid for finishing work and going to meetings.",
   "season": "school-year",
   "duration": "Starts Jan 9, 2027. Gamer's Guild to June 10; Media Lab Jan to June 22 and Sept 7 to Dec 14; Best Reads to Dec 14.",
-  "status": "opens-soon",
-  "opens_iso": "2026-10-19",
+  "status": "open-now",
+  "opens_iso": null,
   "deadline_text": "Applications open Monday Oct 19, 2026 and close Sunday Nov 8, 2026.",
   "deadline_iso": "2026-11-08",
   "deadline_confidence": "confirmed-2026-27",
@@ -24321,8 +24321,8 @@
   ],
   "city": "Chicago, IL",
   "verified": "fetched",
-  "verified_on": "2026-10-14",
-  "verified_on_label": "Oct 14, 2026",
+  "verified_on": "2026-10-18",
+  "verified_on_label": "Oct 18, 2026",
   "limited": true
  },
  {
@@ -35644,7 +35644,7 @@
   ],
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-10-18",
   "grades": null,
   "needs_work_permit": false,
   "id": "glendale-community-college-jump-start-dual-enrollment",
@@ -35663,10 +35663,10 @@
   "pay_detail": "Costs and fee waivers are not stated on the page. Ask dual@glendale.edu.",
   "season": "school-year",
   "duration": "By term",
-  "status": "opens-soon",
-  "opens_iso": "2026-10-19",
+  "status": "open-now",
+  "opens_iso": null,
   "deadline_text": "Registration opens Oct 19, 2026 for Winter 2027 (Jump Start only) and Nov 30, 2026 for Spring 2027 (Dual Enrollment and Jump Start).",
-  "deadline_iso": "2026-10-19",
+  "deadline_iso": null,
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Apply at OpenCCCApply. Then send the Annual Digital Form signed by a parent and your counselor. Find classes, clear any prerequisites and register in MyGCC. Email dual@glendale.edu or call (818) 240-1000 ext. 4767.",
   "url": "https://www.glendale.edu/students/sos-outreach/high-school/index.html",
@@ -35675,7 +35675,7 @@
   "sources_fetched": [
    "https://www.glendale.edu/students/sos-outreach/high-school/index.html"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Oct 18, 2026"
  },
  {
   "regions": [
@@ -67676,10 +67676,10 @@
   "pay_detail": "$17 per hour. Second-year members are leaders and earn $18 per hour. Up to 75 hours for the year. OMNY cards for weekend and evening work.",
   "season": "school-year",
   "duration": "November 2026 to June 2027: Tuesdays 4:30 to 6:30 PM, plus some Fridays and weekends.",
-  "status": "open-now",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Apply online by October 18, 2026.",
-  "deadline_iso": "2026-10-18",
+  "deadline_text": "Applications closed Oct 18, 2026. Next dates are not posted.",
+  "deadline_iso": null,
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Online application through the link on the program page when it is open.",
   "needs_work_permit": true,
@@ -67689,10 +67689,10 @@
    "https://www.brooklynmuseum.org/careers/internships-fellowships/intersextions"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-10-18",
   "priority": 2,
   "notes": "Open to queer and trans youth and allies. You must commit to the full schedule. Questions: teen.programs@brooklynmuseum.org.",
-  "verified_on_label": "Oct 16, 2026",
+  "verified_on_label": "Oct 18, 2026",
   "limited": true
  },
  {
@@ -68982,10 +68982,10 @@
   "pay_detail": "$1,100 stipend when you finish, which the page says matches New York State minimum wage law.",
   "season": "spring",
   "duration": "40 hours, about 2 to 4 hours a week from Feb 9 to May 28, 2027, plus a Jan 23 bootcamp, monthly Saturday check-ins and three Teen Fridays.",
-  "status": "open-now",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Apply by Friday, October 16, 2026, 6 pm ET. Interview notices by Friday, December 4, 2026.",
-  "deadline_iso": "2026-10-16",
+  "deadline_text": "Applications closed Oct 16, 2026. Interview notices by Dec 4, 2026. Next dates are not posted.",
+  "deadline_iso": null,
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Fill out the online form and write short essays. Ask one adult who is not family for a letter. If they pick you, you go to a group interview in person.",
   "needs_work_permit": true,
@@ -68995,10 +68995,10 @@
    "https://www.metmuseum.org/opportunities/internships/spring-semester-internships-for-high-school-students"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-10-18",
   "priority": 1,
   "notes": "You must come to every date on the list. A parent or guardian must come to the January 16, 2027 party. If you missed the October 16 deadline, try the summer internship. It also takes students from New Jersey and Connecticut.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Oct 18, 2026"
  },
  {
   "id": "nyc-met-high-school-summer-internship",
