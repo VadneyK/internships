@@ -40,10 +40,11 @@ test("r3-teen-flow-6: every month chip has a count span, a readable aria-label, 
     assert.match(c.count, /^\d+$/, `chip ${c.m} shows a whole number`);
     assert.match(c.text, new RegExp("^" + ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][i]), `chip ${c.m} starts with its short month name`);
     const n = Number(c.count);
-    assert.match(c.label, /^[A-Z][a-z]+, \d+ programs?$/, `chip ${c.m} aria-label`);
-    assert.equal(c.label.endsWith(n === 1 ? " 1 program" : ` ${n} programs`), true, `chip ${c.m} aria-label count matches`);
+    /* 2026-10-16: the name starts with the words shown ("Feb 37", WCAG 2.5.3 Label in Name, tests/r12-a11y-perf-2) and still says the full month */
+    assert.match(c.label, /^[A-Z][a-z]{2}, \d+ programs? in [A-Z][a-z]+$/, `chip ${c.m} aria-label`);
+    assert.equal(c.label.startsWith(c.text.slice(0, 3) + (n === 1 ? ", 1 program" : `, ${n} programs`)), true, `chip ${c.m} aria-label count matches`);
   });
-  assert.equal(chips[1].label.startsWith("February, "), true, "February label uses the full month name");
+  assert.equal(chips[1].label, "Feb, " + chips[1].count + " program" + (chips[1].count === "1" ? "" : "s") + " in February", "February label uses the full month name");
 });
 
 test("r3-teen-flow-6: each chip count equals the cards shown after clicking it", async () => {

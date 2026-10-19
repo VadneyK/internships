@@ -254,6 +254,8 @@ test("every CSS url() resolves to a non-empty file", () => {
 const UNREFERENCED_OK = new Set([
   // Read only by tests/r3-accuracy-7-expiring-dates.test.mjs: the reviewed list of future dates allowed in teen text.
   "expiring-dates.json",
+  // Read only by tests/wages-2027.test.mjs: the official 2027 wage record. The paycheck page reads its copy in money.json (w2027).
+  "wages-2027.json",
 ]);
 
 function walk(dir) {

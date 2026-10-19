@@ -33,21 +33,21 @@
     });
   }
 
-  /* phone menu: one button opens the eight links. The links stay in the page for everyone else. */
+  /* phone menu: one button, before the eight links so Tab reaches them next (2026-10-16). The links stay in the page. */
   (function () {
     var top = document.querySelector("header.top"), nav = top && top.querySelector(".nav");
     if (!nav || !btn) return;
     if (!nav.id) nav.id = "mainNav";
     var m = document.createElement("button"); m.type = "button"; m.className = "menu-btn"; m.textContent = "Menu";
     m.setAttribute("aria-expanded", "false"); m.setAttribute("aria-controls", nav.id);
-    btn.parentNode.insertBefore(m, btn);
+    nav.parentNode.insertBefore(m, nav);
     top.classList.add("menu-js");
     function setOpen(on) { top.classList.toggle("open", on); m.setAttribute("aria-expanded", String(on)); }
     m.addEventListener("click", function () { setOpen(!top.classList.contains("open")); });
     top.addEventListener("keydown", function (e) { if (e.key === "Escape" && top.classList.contains("open")) { setOpen(false); m.focus(); } });
     /* a chosen link (an in-page hash link or a page link) closes the menu */
     nav.addEventListener("click", function (e) { var a = e.target && e.target.closest ? e.target.closest("a") : null; if (a) setOpen(false); });
-    /* focus that moves outside the header (Tab past the last link, for example) closes the menu. Focus is not moved. */
+    /* focus that leaves the header (Tab past the last link) closes the menu. Focus is not moved. */
     document.addEventListener("focusin", function (e) { if (top.classList.contains("open") && !top.contains(e.target)) setOpen(false); });
   })();
 
@@ -162,10 +162,10 @@
   var dataVer = "";
   try { var me = (document.currentScript && document.currentScript.src) || ""; var vm = /[?&]v=([^&#]+)/.exec(me); if (vm) dataVer = vm[1]; } catch (e) {}
   G.dataUrl = function (path) { return dataVer ? path + "?v=" + dataVer : path; };
-  /* no version in this script's src (dev server, a page not built by tools/build.py): ask for revalidation so a stale copy is not reused */
+  /* no version in this script's src (dev server, a page not built by tools/build.py): ask for revalidation so a stale copy is not used */
   G.fetchData = function (path) { return dataVer ? fetch(G.dataUrl(path)) : fetch(path, { cache: "no-cache" }); };
   var cache, liteCache, coreCache, calCache, homeCache, statsCache, detailCache, mapCache;
-  /* G.loadEntries() is the full file (find.js). G.loadEntries(true) is the lite file: same ids and order, without the long text fields, for pages that only show a few fields. G.loadEntries("core") is the core file: only the keys lib.js needs to match by age, status, season and region. G.loadEntries("cal") is the calendar file: the short card keys for only the programs listed in data/calendar.json. G.loadEntries("home") is the home file: only the keys the Home picker reads. G.loadEntries("stats") is the stats file: only the keys the Numbers page counts with. G.loadEntries("detail") is the detail file: only id plus the long text (who_can_apply, how_to_apply, notes) that the Programs page fills in after it has drawn the cards from the lite file. G.loadEntries("map") is the map file: name, org and the keys the Map page filters and tags with. */
+  /* G.loadEntries() is the full file (find.js). G.loadEntries(true) is the lite file: same ids and order, minus the long text fields, for pages that show a few fields. G.loadEntries("core") is the core file: only the keys lib.js needs to match by age, status, season and region. G.loadEntries("cal") is the calendar file: the short card keys for only the programs listed in data/calendar.json. G.loadEntries("home") is the home file: only the keys the Home picker reads. G.loadEntries("stats") is the stats file: only the keys the Numbers page counts with. G.loadEntries("detail") is the detail file: only id plus the long text (who_can_apply, how_to_apply, notes) that the Programs page fills in after it has drawn the cards from the lite file. G.loadEntries("map") is the map file: name, org and the keys the Map page filters and tags with. */
   function checkJson(r) {
     if (!r.ok) throw new Error("Could not load programs (" + r.status + ")");
     return r.json();
@@ -185,7 +185,7 @@
     var w = wd && wd.states ? wd.states.filter(function (x) { return x.id === id; })[0] : null;
     if (!w || !w.wage) return "";
     var u = G.safeUrl(w.url), NS = "Not stated on the page we read.";
-    /* Set by hand in data/state-wages.json (below_federal: true) when the base rate is under $7.25. Not guessed from the text. */
+    /* Set by hand in data/state-wages.json (below_federal: true) when the base rate is under $7.25. Never guessed from text. */
     var low = w.below_federal === true;
     var tbl = /^Table updated\s*/.test(w.effective || "") ? " Source table dated " + G.esc(w.effective.replace(/^Table updated\s*/, "").replace(/\.$/, "")) + "." : "";
     /* A youth rate sourced from the federal fact sheet (youth_url, set by hand) is shown with that link, not the state page. */
@@ -244,7 +244,7 @@
 
   /* labels and helpers come from lib.js (pure functions, unit tested) */
   var L = G.lib || null; /* pages with no script of their own do not load lib.js */
-  /* Fill a select with every city and area, each with how many programs it has. A city with none says so, so nobody thinks it is broken. */
+  /* Fill a select with every city and area, each with its program count. A city with none says so, so nobody thinks it is broken. */
   G.fillPlaces = function (sel, entries, keep) {
     if (!L) return;
     var counts = L.placeCounts(entries);
@@ -321,9 +321,9 @@
           var b = mk(grp.label, function () { open = open === k ? -1 : k; paint(true); });
           b.removeAttribute("aria-pressed"); b.setAttribute("aria-expanded", open === k ? "true" : "false"); b.setAttribute("aria-controls", subId(k)); first.appendChild(b);
         });
-        /* Every group has its own sub row so aria-controls always points at a real id; closed ones are hidden. */
+        /* Every group has its own sub row so aria-controls always points at a real id; closed ones hide. */
         g.forEach(function (grp, k) {
-          var sub = document.createElement("div"); sub.className = "tp-sub"; sub.id = subId(k); sub.hidden = open !== k;
+          var sub = document.createElement("div"); sub.className = "tp-sub"; sub.id = subId(k); sub.hidden = open !== k; sub.setAttribute("role", "group"); sub.setAttribute("aria-label", grp.label);
           var cap = document.createElement("p"); cap.className = "tp-cap"; cap.textContent = "Now pick one in " + grp.label; sub.appendChild(cap);
           var row = document.createElement("div"); row.className = "tp-row"; sub.appendChild(row);
           grp.items.forEach(function (i) { var b = mk(opts.labelFor ? opts.labelFor(i, sel.options[i].textContent) : sel.options[i].textContent, function () { pick(i); }, sel.options[i].getAttribute("lang")); b.setAttribute("aria-pressed", cur === i ? "true" : "false"); row.appendChild(b); });
@@ -344,14 +344,14 @@
     paint();
     return sel._tp;
   };
-  /* Any <select data-tiles> becomes tap tiles. data-tiles-any="Any age" keeps the empty first option as a tile with that label. Lists longer than 30 stay a normal dropdown. */
+  /* Any <select data-tiles> becomes tap tiles. data-tiles-any="Any age" keeps the empty first option as a tile with that label. Lists over 30 stay a dropdown. */
   G.autoTiles = function () {
     Array.prototype.forEach.call(document.querySelectorAll("select[data-tiles]"), function (sel) {
       G.tilePicker(sel, sel.hasAttribute("data-tiles-any") ? { anyLabel: sel.getAttribute("data-tiles-any") } : {});
     });
   };
   G.autoTiles();
-  /* code that sets a select's .value does not fire an event, so repaint every picker once the page scripts have run, and on load */
+  /* setting a select's .value fires no event, so repaint every picker once the page scripts have run, and on load */
   G.syncTiles = function () { Array.prototype.forEach.call(document.querySelectorAll("select"), function (s) { if (s._tpSync) s._tpSync(); }); };
   setTimeout(G.syncTiles, 0);
   window.addEventListener("load", G.syncTiles);
@@ -395,7 +395,7 @@
     /* A place's name as the tiles show it: no count, and an area reads "All of ..." */
     function nameOf(o) { return (o.value.indexOf("area:") === 0 ? "All of " : "") + o.textContent.replace(/\s*\((?:\d+|none yet)\)$/, ""); }
     function norm(t) { return t.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, " ").trim(); }
-    /* Which part of the country each place sits in, from the same groups the tiles use, so "midwest" finds the Midwest cities. */
+    /* Which part of the country each place is in, from the same groups the tiles use, so "midwest" finds the Midwest cities. */
     function groups() {
       if (!groupOf) {
         groupOf = {};
@@ -409,7 +409,7 @@
     function aliasHit(v, t) {
       return ((L && L.PLACE_ALIASES) || []).some(function (a) { return a[0] === v && a[1].some(function (n) { return norm(n).indexOf(t) === 0; }); });
     }
-    /* Matches for what was typed: the name starts with it, a word starts with it, it is inside the name, then the country part. Best eight. */
+    /* Matches for what was typed: name starts with it, a word starts with it, it is inside the name, then the country part. Best eight. */
     function findPlaces(t) {
       t = norm(t); if (!t) return [];
       var out = [], seen = {};
@@ -454,7 +454,7 @@
       if (note.hidden) q.removeAttribute("aria-describedby"); else q.setAttribute("aria-describedby", base + "None");
       if (res.length) showAct(0); else openList(false);
     }
-    /* The chosen place shows as a chip (when asked for); tapping it clears the place back to Anywhere. A pick empties the box. */
+    /* The chosen place shows as a chip (when asked for); tapping it clears the place to Anywhere. A pick empties the box. */
     ps.sync = function () {
       var o = sel.value ? sel.options[sel.selectedIndex] : null;
       if (chip) {
@@ -486,7 +486,7 @@
     sel._ps = ps;
     return ps;
   };
-  /* The Where picker: part of the country first, then its cities (and "All of ..." areas). sel must already hold the options from fillPlaces. */
+  /* The Where picker: part of the country first, then its cities (and "All of ..." areas). sel must already hold the fillPlaces options. */
   G.placeTiles = function (sel, opts) {
     if (!L || !L.PICK_GROUPS) return;
     var at = {}; for (var i = 0; i < sel.options.length; i++) at[sel.options[i].value] = i;

@@ -93,7 +93,10 @@ for (const f of ["find.html", "playbook.html"]) {
       url: "http://localhost/" + f,
       pretendToBeVisual: true,
     });
-    await new Promise((r) => setTimeout(r, 1500));
+    // Wait for the load event (the page scripts have run), then a beat for their timers. A fixed 1.5 s could end before
+    // the scripts ran on a loaded machine, and the check then passed with no script-built buttons to look at (2026-10-16).
+    await new Promise((r) => (dom.window.document.readyState === "complete" ? r() : dom.window.addEventListener("load", r)));
+    await new Promise((r) => setTimeout(r, 300));
     const { problems } = check(f, dom.window.document);
     assert.deepEqual(problems, [], "buttons that would print as dead boxes:\n" + problems.join("\n"));
     dom.window.close();
