@@ -39,7 +39,9 @@ const DETAIL_FIELDS = ["who_can_apply", "how_to_apply", "notes", "duration", "pa
 // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 610732 bytes gzipped. Approved by Kentaro 2026-10-19 (merge train). limit 608700 to 610800.
 // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. entries-detail gzip 604000 to 614100.
 // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 622693 bytes gzipped. Approved by Kentaro 2026-10-19 (merge train). limit 614100 to 622700.
-const GZIP_LIMIT = 622700;
+// 2026-10-17 (after #45) SoCal, Santa Barbara and Merced cards read in a real browser (+16 cards, 2,696 programs; PENDING PERSON APPROVAL): 604000 to 605700.
+// 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 626280 bytes gzipped. Approved by Kentaro 2026-10-19 (merge train). limit 622700 to 626300.
+const GZIP_LIMIT = 626300;
 
 function readText(file) {
   return fs.readFileSync(path.join(DATA, file), "utf8");

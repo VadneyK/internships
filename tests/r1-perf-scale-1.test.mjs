@@ -64,7 +64,10 @@ const LIMITS = {
     // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 5394594 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json raw 5320000 to 5394600.
     // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 1220638 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json gzip 1203300 to 1220700.
     // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 5394608 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json raw 5394600 to 5394700.
-    "data/entries.json": { raw: 5394700, gzip: 1220700 },
+    // 2026-10-17 (after #45) SoCal, Santa Barbara and Merced cards read in a real browser (+16 cards, 2,696 programs; PENDING PERSON APPROVAL): 5223300 to 5254900, 1184900 to 1187800.
+    // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 5426198 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json raw 5394700 to 5426200.
+    // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 1227416 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json gzip 1220700 to 1227500.
+    "data/entries.json": { raw: 5426200, gzip: 1227500 },
     // Raised from 2020000 to 2040000 on 2026-10-10 after the fact check: the page re-reads added about 6,000 bytes (0.3 percent) of plainer deadline_text across 266 cards, saying what the page does and does not state. No single card is the cause. Still about 1,145 bytes per program, under the per-program limit.
     // Gzip limit raised from 440000 to 450000 on 2026-10-10: the card fixes this round (pay wording, opens-soon dates) put it at 440053.
     // Raised again on 2026-10-12 for the 178 more cards: entries-lite.json is 2,097,871 bytes (437,135 gzipped), 947 bytes per program. Raw from 2040000 to 2160000. The gzip limit stays 450000. PENDING PERSON APPROVAL, as for entries.json.
@@ -107,7 +110,10 @@ const LIMITS = {
     // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. data/entries-lite.json gzip 531600 to 538200.
     // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 2619357 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json raw 2584100 to 2619400.
     // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 545569 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json gzip 538200 to 545600.
-    "data/entries-lite.json": { raw: 2619400, gzip: 545600 },
+    // 2026-10-17 (after #45) SoCal, Santa Barbara and Merced cards read in a real browser (+16 cards, 2,696 programs; PENDING PERSON APPROVAL): 2540600 to 2555400, 531600 to 532300.
+    // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 2634217 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json raw 2619400 to 2634300.
+    // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 548364 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json gzip 545600 to 548400.
+    "data/entries-lite.json": { raw: 2634300, gzip: 548400 },
     // Raised on 2026-10-11 for ticket p7-regions-1: entries-core.json is 368,169 bytes (36,864 gzipped). Raw from 320000 to 375000, gzip from 32000 to 37500.
     // PENDING PERSON APPROVAL: same as entries.json above. Do not raise again without a person's recorded sign-off.
     // Raised again on 2026-10-12 for the 178 more cards: entries-core.json is 400,279 bytes (41,089 gzipped). Raw from 375000 to 420000, gzip from 37500 to 43000. PENDING PERSON APPROVAL, as above.
@@ -135,7 +141,10 @@ const LIMITS = {
     // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. data/entries-core.json gzip 49800 to 49900.
     // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 499081 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json raw 492300 to 499100.
     // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 50482 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json gzip 50000 to 50500.
-    "data/entries-core.json": { raw: 499100, gzip: 50500 },
+    // 2026-10-17 (after #45) SoCal, Santa Barbara and Merced cards read in a real browser (+16 cards, 2,696 programs; PENDING PERSON APPROVAL): 484100 to 487200.
+    // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 502100 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json raw 499100 to 502200.
+    // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 50759 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json gzip 50500 to 50800.
+    "data/entries-core.json": { raw: 502200, gzip: 50800 },
   },
   liteBytesPerProgram: 1300,
   // Raised from 32000 to 32100 on 2026-10-10 for the footer link to the teachers and counselors handout, which every page carries. ready.html is 32009 bytes.
@@ -307,7 +316,8 @@ test("mutation: a lite file at 2,300,000 bytes is reported, and only lite is rep
     // 2026-10-18 (after #54) issue 22 Chicago and Elgin second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 2540600 to 2547400.
     // 2026-10-19 issue 23 Pacific Northwest and Vancouver second pass read in a real browser (+15 cards, 2,695 programs; PENDING PERSON APPROVAL): 2540600 to 2554500.
     // 2026-10-19 issues 20, 21 and 26 East Coast second pass read in a real browser (+9 cards, 2,689 programs; PENDING PERSON APPROVAL): 2540600 to 2549200.
-    `${LITE} is ${big} bytes, over the limit of 2619400 bytes`, // 2026-10-17: PNW and Vancouver cards rebased on e7628a4 (2,650 programs); was 2496100
+    // 2026-10-17 (after #45) SoCal, Santa Barbara and Merced cards read in a real browser (+16 cards, 2,696 programs; PENDING PERSON APPROVAL): 2540600 to 2555400.
+    `${LITE} is ${big} bytes, over the limit of 2634300 bytes`, // 2026-10-17: PNW and Vancouver cards rebased on e7628a4 (2,650 programs); was 2496100
     `${LITE} is ${Math.round(big / programCount)} bytes per program (${big} bytes for ${programCount} programs), over the limit of 1300 bytes per program`,
   ]);
 });

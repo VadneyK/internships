@@ -31,8 +31,10 @@ const SOON_ONLY = ["name", "org", "city", "url"];
 // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 613882 bytes. Approved by Kentaro 2026-10-19 (merge train). 608000 to 613900.
   // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. home file 606000 to 615300.
 // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 623226 bytes. Approved by Kentaro 2026-10-19 (merge train). 615300 to 623300.
-test("home file is under 623300 bytes", () => {
-  assert.ok(fs.statSync(path.join(ROOT, "data/entries-home.json")).size < 623300);
+// 2026-10-17 (after #45) SoCal, Santa Barbara and Merced cards read in a real browser (+16 cards, 2,696 programs; PENDING PERSON APPROVAL): 606000 to 609700.
+// 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 626908 bytes. Approved by Kentaro 2026-10-19 (merge train). 609700 to 627000.
+test("home file is under 627000 bytes", () => {
+  assert.ok(fs.statSync(path.join(ROOT, "data/entries-home.json")).size < 627000);
 });
 
 test("only closing-soon rows carry name, org, city and url", () => {
