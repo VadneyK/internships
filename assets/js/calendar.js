@@ -39,7 +39,7 @@
       var u = G.safeUrl(e.url);
       return '<li class="card"><span class="tag ghost">' + G.esc(G.PAID[e.paid_type] || "") + "</span> <span class=\"tag ghost\">" + G.esc(G.TYPES[e.type] || "") + "</span><h3 style=\"margin-top:.5rem;\">" + G.esc(e.name) + '</h3><p class="small muted">' + G.esc(e.org || "") + (e.city ? " &middot; " + G.esc(e.city) : "") + "</p>" +
         (it.quote ? "<p><b>What the program says:</b> " + G.esc(it.quote) + ".</p>" : "") +
-        '<p class="row"><a class="btn sm alt" href="find.html#p-' + G.esc(e.id) + '" aria-label="' + G.esc("Details for " + e.name + (e.org ? ", " + e.org : "")) + '">Details</a>' + (u ? ' <a class="btn sm" href="' + G.esc(u) + '" target="_blank" rel="noopener" aria-label="' + G.esc("Official page for " + e.name + (e.org ? ", " + e.org : "")) + '">Official page</a>' : "") + "</p></li>";
+        '<p class="row"><a class="btn sm alt" href="find.html#p-' + G.esc(e.id) + '" aria-label="' + G.esc("Details for " + e.name + (e.org ? ", " + e.org : "")) + '">Details</a>' + (u ? ' <a class="btn sm" href="' + G.esc(u) + '" target="_blank" rel="noopener" aria-label="' + G.esc("Official page for " + e.name + (e.org ? ", " + e.org : "")) + '">Official page</a>' : "") + " " + L.calButtons(e, Date.now()) + "</p></li>";
     }
     function rowsFor(m, place, age) {
       return cal.items.map(function (it) { return [it, by[it.id]]; }).filter(function (p) {
@@ -96,6 +96,13 @@
     }
     $("months").addEventListener("click", function (ev) { var b = ev.target.closest(".chip"); if (!b) return; cur = +b.getAttribute("data-m"); paint(); });
     ["cPlace", "cAge"].forEach(function (id) { $(id).addEventListener("change", paint); });
+    /* Add deadline to calendar: one delegated click on each card list saves the .ics file (Google Calendar is a plain link). */
+    ["cClose", "cOpen"].forEach(function (id) {
+      $(id).addEventListener("click", function (ev) {
+        var b = ev.target.closest("[data-cal]"), c = b && L.calEvent(by[b.getAttribute("data-cal")], Date.now());
+        if (c) { G.download(c.file, L.icsEvent(c), "text/calendar"); G.toast("Calendar file saved. Open it to add the deadline, or use Google Calendar."); }
+      });
+    });
     paint();
   }).catch(function () { G.dropPreTiles(); $("cCount").textContent = "The calendar could not load. Try again."; });
 })();
