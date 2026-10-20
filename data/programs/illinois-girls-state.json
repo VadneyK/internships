@@ -5,7 +5,7 @@
   "max_age": null,
   "grades": "Current high school juniors",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-18",
   "needs_work_permit": false,
   "id": "illinois-girls-state",
   "name": "ALA Illini Girls State (American Legion Auxiliary)",
@@ -13,7 +13,7 @@
   "regions": [
     "illinois"
   ],
-  "city": "Illinois (location not stated on the site)",
+  "city": "Eastern Illinois University, Charleston, IL",
   "type": "civic-government",
   "fields": [
     "law-government"
@@ -21,18 +21,19 @@
   "what_you_do": "A week-long citizenship and leadership program for high school girls, sponsored by an American Legion Auxiliary Unit. Delegates must attend the full session.",
   "who_can_apply": "High school girls who are current juniors. A principal, guidance counselor or home school administrator must certify leadership qualities, good character and U.S. residency. You must secure sponsorship from an American Legion Auxiliary Unit and attend an orientation.",
   "paid_type": "fee-based",
-  "pay_detail": "Cost is not stated on the pages checked for this card. Ask the Illinois Girls State office and your local American Legion Auxiliary unit.",
+  "pay_detail": "$400 per delegate, paid by the sponsoring American Legion Auxiliary Unit or another sponsor, not the family. Bring some spending money for the week. If you drop out without telling the Department before June 1, the sponsor loses the fee and may ask you to pay it back.",
   "season": "summer",
   "duration": "One week, June 20 to 26, 2027",
   "status": "unconfirmed",
-  "deadline_text": "Next session is June 20 to 26, 2027. The application deadline is not stated on the program pages; contact the Department office.",
+  "deadline_text": "Next session is June 20 to 26, 2027. There is no fixed deadline: the FAQ says applications are accepted until the program is full, so apply early.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Complete the online registration form (name, school email, counselor name and email, school, hometown), get approval from your school official, find a sponsoring American Legion Auxiliary Unit and attend an orientation. Call 309-663-9366 or email info@alaigs.org.",
   "url": "https://alaigs.org/register/",
   "sources_fetched": [
     "https://alaigs.org",
-    "https://alaigs.org/register/"
+    "https://alaigs.org/register/",
+    "https://alaigs.org/registration/"
   ],
   "priority": 2,
   "notes": "Girls only. The program is physically active with long walks; the registration page asks you to check with a doctor if you have limits. After the program you share your experience with your sponsoring Unit."
