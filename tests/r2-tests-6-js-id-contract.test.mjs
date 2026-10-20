@@ -87,6 +87,8 @@ test("every assets/js script except lib.js is loaded by at least one root page",
     .filter((s) => s.name !== "lib.js")
     // map-gl.js: added by map.js (as a module, only with WebGL 2), so it counts as loaded where map.js is
     .filter((s) => loaders(s.name === "map-gl.js" && /assets\/js\/map-gl\.js/.test(fs.readFileSync(path.join(ROOT, "assets/js/map.js"), "utf8")) ? "map.js" : s.name, pages).length === 0)
+    // es.js is loaded only by the Spanish pages in es/ (ADR 0008); tests/es-pages.test.mjs checks each of them loads it.
+    .filter((s) => !(s.name === "es.js" && fs.readFileSync(path.join(ROOT, "es/index.html"), "utf8").includes('src="../assets/js/es.js')))
     .map((s) => s.name);
   assert.deepEqual(unloaded, [], "scripts loaded by no page: " + unloaded.join(", "));
 });

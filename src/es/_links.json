@@ -1,0 +1,13 @@
+{
+  "note": "Official pages linked from an English page that the agency also publishes in Spanish. On the Spanish page the Spanish URL replaces the English one; tests/es-pages.test.mjs maps it back when it compares the two pages. Each Spanish page was read on the date given and says the same thing as the English page for the fact the sentence cites. English pages with no Spanish version (checked 2026-10-16): DIR minimum wage FAQ, DIR minimum wage page (its Spanish notice has no fast food rate), permit form B1-4, the DIR employer guide, the minors summary charts, the 2013 pamphlet, the Youth Advocate brochure, DOL Fact Sheets 34 and 71, IRS Publication 501, the FTC data spotlight.",
+  "twins": [
+    { "en": "https://dir.ca.gov/DIRNews/2026/2026-66.html", "es": "https://dir.ca.gov/DIRNews/2026/Spanish/2026-66.html", "title": "El salario mínimo de California aumentará a $17.40 por hora a partir del 1 de enero de 2027", "read": "2026-10-16" },
+    { "en": "https://www.dir.ca.gov/dlse/howtofilewageclaim.htm", "es": "https://www.dir.ca.gov/dlse/spanish/howtofilewageclaim.htm", "title": "Cómo presentar un reclamo de sueldo", "read": "2026-10-16" },
+    { "en": "https://www.irs.gov/newsroom/tax-tips-from-the-irs-for-students-starting-a-summer-job", "es": "https://www.irs.gov/es/newsroom/tax-tips-from-the-irs-for-students-starting-a-summer-job", "title": "Consejos tributarios del IRS para estudiantes empezando un trabajo de verano", "read": "2026-10-16" },
+    { "en": "https://consumer.ftc.gov/articles/job-scams", "es": "https://consumidor.ftc.gov/articulos/estafas-de-empleo", "title": "Estafas de empleo", "read": "2026-10-16" },
+    { "en": "https://consumer.ftc.gov/articles/how-spot-avoid-and-report-fake-check-scams", "es": "https://consumidor.ftc.gov/articulos/como-detectar-evitar-y-reportar-las-estafas-de-cheques-falsos", "title": "Cómo detectar, evitar y reportar las estafas de cheques falsos", "read": "2026-10-16" },
+    { "en": "https://consumer.ftc.gov/consumer-alerts/2025/03/top-scams-2024", "es": "https://consumidor.ftc.gov/alertas-para-consumidores/2025/03/las-principales-estafas-de-2024", "title": "Las principales estafas de 2024", "read": "2026-10-16" },
+    { "en": "https://consumer.ftc.gov/consumer-alerts/2026/10/did-someone-share-explicit-image-your-child-online-take-these-steps", "es": "https://consumidor.ftc.gov/alertas-para-consumidores/2026/10/alguien-compartio-una-imagen-intima-de-tu-hijo-en-internet-sigue-estos-pasos", "title": "¿Alguien compartió una imagen íntima de tu hijo en internet? Sigue estos pasos", "read": "2026-10-16" },
+    { "en": "https://reportfraud.ftc.gov", "es": "https://reportefraude.ftc.gov", "title": "ReporteFraude.ftc.gov", "read": "2026-10-16" }
+  ]
+}

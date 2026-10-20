@@ -226,8 +226,9 @@ const TABLE = {
   "assets/vendor/maplibre/maplibre-gl-worker.mjs": { ceiling: 19500, reason: "MapLibre GL JS 6.11.2 worker module, 19086 bytes measured 2026-10-16; a new version needs a new row" },
   "assets/vendor/maplibre/maplibre-gl.css": { ceiling: 85000, reason: "MapLibre GL JS 6.11.2 stylesheet, 83310 bytes measured 2026-10-16; a new version needs a new row" },
   "assets/img/us-states.svg": { ceiling: 61500, reason: "image, the Map page basemap (tools/geo/make_basemap.mjs keeps it under 58000), 55841 bytes measured 2026-10-15" },
-  // 2026-10-16: keep my list without an account (docs/adr/0008): download, send to a parent, keep link, backup file, ask-before-adding panel. find.js 67400 to 75500 (74710 bytes). PENDING PERSON APPROVAL.
+  "assets/js/es.js": { ceiling: 1000, reason: "script, Spanish labels and Copy buttons for the pages in es/ only (ADR 0008), 868 bytes measured 2026-10-16" },
   "assets/js/find.js": { ceiling: 75500, reason: "script, 52771 bytes measured 2026-10-10" },
+  // 2026-10-16: keep my list without an account (docs/adr/0008): download, send to a parent, keep link, backup file, ask-before-adding panel. find.js 67400 to 75500 (74710 bytes). PENDING PERSON APPROVAL.
   "assets/js/handout.js": { ceiling: 600, reason: "script, 274 bytes measured 2026-10-10; 517 bytes on 2026-10-14 with the one page handout and table plan print buttons" },
   // 2026-10-12: home picker flow. home.js grew by about 8.8 KB (place search box, chip, step markers); ceiling raised from 10800 to 18600, measured 18585 bytes.
   "assets/js/home.js": { ceiling: 18700, reason: "script, 18605 bytes measured 2026-10-12 (home picker flow, plus the 1 day label)" },

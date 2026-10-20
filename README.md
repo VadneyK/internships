@@ -42,6 +42,8 @@ Each page is a plain HTML file in the repo root. The source for each one is in [
 | `contribute.html` | Check a program, add one, fix a link or improve the site, and put the work on your resume. |
 | `about.html` | Who made the guide, how every program was checked, and how your privacy is protected. |
 
+Spanish versions of Home, the Playbook and the Rules page are in `es/` (`es/index.html`, `es/playbook.html`, `es/rules.html`), built from `src/es/`. They are a draft until a fluent speaker reviews them. How they are built and kept in step with the English pages: [docs/adr/0008-spanish-pages.md](docs/adr/0008-spanish-pages.md).
+
 Three features are worth a closer look:
 
 - **The Where picker.** On the Programs page (`find.html`), the Where menu lets you pick a city or area. It starts on Anywhere.

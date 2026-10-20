@@ -92,6 +92,9 @@ test("every script src and link href in a root page resolves to a file that exis
 
 test("every assets/js/*.js is loaded by at least one root page", () => {
   const loaded = new Set(PAGE_REFS.filter((r) => !r.bad && r.target.startsWith("assets/js/")).map((r) => r.target));
+  // es.js is loaded only by the Spanish pages in es/ (ADR 0008), which are not root pages.
+  const esPages = fs.existsSync(path.join(ROOT, "es")) ? fs.readdirSync(path.join(ROOT, "es")).filter((f) => f.endsWith(".html")) : [];
+  if (esPages.some((f) => fs.readFileSync(path.join(ROOT, "es", f), "utf8").includes('src="../assets/js/es.js'))) loaded.add("assets/js/es.js");
   // map-gl.js is a module that map.js adds only where the browser has WebGL 2 (the Map page's street map)
   const BY_SCRIPT = { "assets/js/map-gl.js": "assets/js/map.js" };
   for (const [f, by] of Object.entries(BY_SCRIPT)) {

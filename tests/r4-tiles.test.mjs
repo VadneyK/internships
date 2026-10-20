@@ -48,5 +48,5 @@ test("phone menu: one Menu button controls the nav, toggles aria-expanded, and E
   assert.equal(m.getAttribute("aria-expanded"), "true"); assert.ok(top.classList.contains("open"));
   top.dispatchEvent(new window.KeyboardEvent("keydown", { key: "Escape", bubbles: true }));
   assert.equal(m.getAttribute("aria-expanded"), "false");
-  assert.equal(document.querySelectorAll(".nav a").length, 8, "all eight links are still in the page");
+  assert.equal(document.querySelectorAll(".nav a:not([hreflang])").length, 8, "all eight links are still in the page (plus the Español link on Home, ADR 0008)");
 });
