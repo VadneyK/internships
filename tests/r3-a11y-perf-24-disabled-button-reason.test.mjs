@@ -2,7 +2,7 @@
 // Part 1 checks style.css: a .btn:disabled (or .btn[disabled]) rule changes opacity, border style or color, and the forced-colors block uses GrayText for it.
 // Part 2 checks playbook.html in jsdom: with no names, #planPng is disabled and aria-describedby points to a visible hint that says to add a name first.
 //   After a name is typed, the button is enabled and the hint is hidden.
-// Part 3 greps assets/js and src for "disabled": only the two known cases exist, and each one has a CSS rule for it.
+// Part 3 greps assets/js and src for "disabled": only the known case (the save button) exists, and it has a CSS rule.
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
@@ -52,7 +52,7 @@ test("playbook: no names means the save button is disabled and its hint says to 
   assert.ok(hint.hidden || hint.textContent.trim() === "", "the hint is hidden or empty once a name is typed");
 });
 
-test("disabled: only the two known cases in assets/js and src, and each has a CSS rule", () => {
+test("disabled: only the known case in assets/js and src, and it has a CSS rule", () => {
   const files = [];
   for (const dir of ["assets/js", "src"]) {
     for (const f of fs.readdirSync(path.join(ROOT, dir))) {
@@ -67,6 +67,7 @@ test("disabled: only the two known cases in assets/js and src, and each has a CS
   }
   const known = hits.filter((h) => /^assets\/js\/playbook\.js:/.test(h));
   assert.equal(hits.length, known.length, "unexpected disabled usage: " + hits.filter((h) => !known.includes(h)).join(", "));
-  assert.equal(known.length, 2, "expected exactly two disabled cases in playbook.js (Write to them and the save button)");
+  // 2026-10-17: one case. Write to them is only drawn once a card has a name (the card shows "Add a name" instead), so it never needed disabled.
+  assert.equal(known.length, 1, "expected exactly one disabled case in playbook.js (the save button)");
   assert.ok(/\.btn:disabled|\.btn\[disabled\]/.test(CSS), "the disabled buttons need the CSS rule");
 });

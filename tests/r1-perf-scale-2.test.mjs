@@ -30,7 +30,21 @@ const DETAIL_FIELDS = ["who_can_apply", "how_to_apply", "notes", "duration", "pa
 // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) entries-detail.json gzip limit 584400 to 590300. PENDING PERSON APPROVAL.
 // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. entries-detail.json gzip limit 590300 to 591900.
 // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) limit 604000.
-const GZIP_LIMIT = 604000;
+// 2026-10-19: issue 28 batch 1 (#56) plus issue 19 second pass (#59) together, 604055 bytes gzipped. Approved by Kentaro 2026-10-19 (merge train). limit 604000 to 604100.
+// 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 605397 bytes gzipped. Approved by Kentaro 2026-10-19 (merge train). limit 604100 to 605400.
+// 2026-10-19: confirm-first edits (#64) after the #59 and #60 cards, 605563 bytes gzipped. Approved by Kentaro 2026-10-19 (merge train). limit 605400 to 605600.
+// 2026-10-19 issue 23 Pacific Northwest and Vancouver second pass read in a real browser (+15 cards, 2,695 programs; PENDING PERSON APPROVAL): limit 604000 to 607100 (607,093 gzipped bytes).
+// 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 608672 bytes gzipped. Approved by Kentaro 2026-10-19 (merge train). limit 607100 to 608700.
+// 2026-10-19 issues 20, 21 and 26 East Coast second pass read in a real browser (+9 cards, 2,689 programs; PENDING PERSON APPROVAL): 604000 to 604200.
+// 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 610732 bytes gzipped. Approved by Kentaro 2026-10-19 (merge train). limit 608700 to 610800.
+// 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. entries-detail gzip 604000 to 614100.
+// 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 622693 bytes gzipped. Approved by Kentaro 2026-10-19 (merge train). limit 614100 to 622700.
+// 2026-10-17 (after #45) SoCal, Santa Barbara and Merced cards read in a real browser (+16 cards, 2,696 programs; PENDING PERSON APPROVAL): 604000 to 605700.
+// 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 626280 bytes gzipped. Approved by Kentaro 2026-10-19 (merge train). limit 622700 to 626300.
+// 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,700 programs) entries-detail.json gzip limit 604000 to 606500. PENDING PERSON APPROVAL.
+// 2026-10-19: the 20 Midwest and Texas cards (#50) after #43 and #49, 630784 bytes gzipped. Approved by Kentaro 2026-10-19 (merge train). limit 626300 to 630800.
+// 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 632612 bytes gzipped. Approved by Kentaro 2026-10-19 (merge train). limit 630800 to 632700.
+const GZIP_LIMIT = 632700;
 
 function readText(file) {
   return fs.readFileSync(path.join(DATA, file), "utf8");

@@ -47,6 +47,7 @@ const ALLOW = {
   "A:cook-memorial-library-teen-volunteers": "the closed items are the Summer 2026 period and the Seed Library; Fall 2026 applications are open until Oct 15, 2026",
   "A:lansing-msu-dual-enrollment": "only the 2026 term deadlines passed; the Dec 19, 2026 deadline is ahead",
   "A:new-brunswick-franklin-township-library-teen-volunteering": "only Summer 2026 Reading Buddies is closed; the 2026-27 form is open",
+  "A:new-brunswick-plainsboro-library-teen-volunteering-and-advisory-board": "only weekly shelving for 2026-2027 is closed; Teen Advisory Board membership for 2026 is open",
   "A:san-diego-sharp-grossmont-junior-volunteer": "closed only to the class of 2028; classes of 2029 and 2030 may still apply",
   "A:seattle-ymca-youth-and-government-youth-legislature": "only the open house dates may have passed; delegations start Oct 19, 2026",
   "A:fox-valley-park-district-teen-volunteers": "only the Oct 3, 2026 Fall Day of Service passed; the card has no deadline (ticket r1-data-content-6)",

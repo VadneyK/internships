@@ -14,6 +14,7 @@
 - Two entries are snippet-only: County Intern and Earn (third-party listing; county site blocked) and De Anza concurrent enrollment (site blocked).
 
 ## Gaps I could not close
+- Update 2026-10-16: the city gaps for Cupertino, Santa Clara, Milpitas, Los Altos, Menlo Park, Hayward, San Leandro, Livermore, Pleasanton and Dublin were worked in a later pass. See docs/research/bay-cities-notes.md.
 - No confirmed teen jobs or volunteer page for: Cupertino, Santa Clara (city), Milpitas, Los Altos, Menlo Park, Campbell, Los Gatos, Saratoga, Gilroy, Fremont Youth Employment, Newark, Union City, Foster City, San Mateo (city).
 - Kaiser Santa Clara/San Jose, Santa Clara Valley Medical Center, Regional Medical Center, O'Connor, Sequoia and Mills-Peninsula teen volunteer pages: not found or blocked.
 - Company high school programs: only Cisco (not in Bay Area), Google CSSI (not verified), Tesla (grads only) came up. No verified Apple, Nvidia, Adobe, Meta, Intuit, LinkedIn, HP, Lam, Applied Materials or Genentech program for current high school students.

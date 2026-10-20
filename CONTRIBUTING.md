@@ -121,6 +121,7 @@ python3 -m venv v && v/bin/pip install segno && v/bin/python tools/make_qr.py
 - **No third-party requests.** No analytics, no CDNs, no tracking pixels. Fonts and images are served from this repo.
 - **Escape everything you put into HTML** with `TIG.esc()`. Program text comes from files that anyone can propose.
 - **Plain words.** Write for a 12 year old. Short sentences. No em dashes or en dashes.
+- **Home, Playbook and Rules have Spanish twins** in `src/es/`. If you change a number, a link or a section on one of those English pages, change the Spanish page in the same pull request, or `tests/es-pages.test.mjs` fails. Not sure of the Spanish? Change the fact, keep the words simple, and say so in the pull request. See [docs/adr/0008-spanish-pages.md](docs/adr/0008-spanish-pages.md).
 - Keep pull requests small. One program or one idea at a time.
 
 ## What happens after you open a pull request

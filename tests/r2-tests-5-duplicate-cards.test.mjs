@@ -55,6 +55,11 @@ const NAME_REGION_ALLOW = new Map([
 // Shared url -> the exact ids that share it today. Starts from the 23 urls used by more than one card
 // (url or apply_url), as found in data/programs on 2026-10-10.
 const SHARED_URL_ALLOW = new Map([
+  // Added 2026-10-16 for the Bay Area city pass (issues 1 and 2).
+  ["https://www.larpd.org/volunteer", {
+    ids: ["larpd-event-volunteers", "larpd-summer-youth-volunteer"],
+    reason: "Shared hub: the park district volunteer page is the year-round card's own page and the summer program's sign-up link; the summer card has its own FAQ page as its url.",
+  }],
   // Added 2026-10-12 for the 77 Plains state cards.
   ["https://apply2.ksu.edu/register/summerprogramshhs2027", {
     ids: ["manhattan-ks-k-state-health-professions-exploration-program", "manhattan-ks-k-state-summer-fashion-institute"],

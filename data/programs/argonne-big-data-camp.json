@@ -1,0 +1,40 @@
+{
+  "id": "argonne-big-data-camp",
+  "name": "Big Data Camp",
+  "org": "Argonne National Laboratory",
+  "regions": [
+    "chicago"
+  ],
+  "city": "Lemont, IL",
+  "type": "pre-college",
+  "fields": [
+    "tech-cs",
+    "science"
+  ],
+  "what_you_do": "A free five-day summer camp where you use real Argonne research data and tools. Scientists teach you data science, from asking good questions to making charts that show what the data means.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Current juniors and seniors",
+  "who_can_apply": "Current high school juniors and seniors with basic coding experience in a language like Python, Java or C. You must attend all five days and get yourself to Argonne.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free.",
+  "season": "summer",
+  "duration": "5 days",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 application is closed. Last cycle, students heard back in early May.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Submit an application on the camp page when it opens. Only 30 students are picked; others go on a wait list.",
+  "needs_work_permit": false,
+  "url": "https://www.anl.gov/education/big-data-camp",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.anl.gov/education/big-data-camp",
+    "https://www.anl.gov/education/camps"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-16",
+  "priority": 2,
+  "notes": "Questions: jdomyancich@anl.gov. The page does not give the 2027 application date, so check back in early spring."
+}

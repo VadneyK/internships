@@ -25,7 +25,7 @@ function headerTabOrder(document) {
 }
 
 for (const page of ["index.html", "find.html", "rules.html"]) {
-  test(`A1 ${page}: the Menu button comes right before the nav, so Tab goes Menu, the eight links, then the theme button`, async () => {
+  test(`A1 ${page}: the Menu button comes right before the nav, so Tab goes Menu, the links, then the theme button`, async () => {
     const p = await loadPage(page); await tick(80);
     const { document } = p;
     const m = document.querySelector("header.top .menu-btn"), nav = document.querySelector("header.top .nav");
@@ -33,7 +33,10 @@ for (const page of ["index.html", "find.html", "rules.html"]) {
     assert.equal(nav.previousElementSibling, m, "Menu sits right before the nav");
     assert.equal(m.getAttribute("aria-controls"), nav.id);
     const order = headerTabOrder(document);
-    assert.deepEqual(order, ["brand", "menu", "link", "link", "link", "link", "link", "link", "link", "link", "theme"]);
+    // Eight links on every page, nine where the nav also carries the language link to the Spanish twin (ADR 0008).
+    const links = nav.querySelectorAll("a[href]").length;
+    assert.ok(links === 8 || links === 9, page + ": " + links + " links in the nav");
+    assert.deepEqual(order, ["brand", "menu", ...Array(links).fill("link"), "theme"]);
     assert.equal(document.querySelectorAll("header.top [tabindex]:not([tabindex='-1'])").length, 0, "no tabindex reorders the header");
   });
 }
