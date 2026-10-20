@@ -1,7 +1,7 @@
 {
   "id": "livermore-area-youth-advisory-commission",
   "name": "Livermore Youth Council (LYC)",
-  "org": "City of Livermore",
+  "org": "City of Livermore (Livermore Public Library)",
   "regions": [
     "east-bay",
     "alameda"
@@ -9,33 +9,36 @@
   "city": "Livermore, CA",
   "type": "civic-government",
   "fields": [
-    "law-government"
+    "law-government",
+    "social-impact"
   ],
-  "what_you_do": "Speak up for Livermore youth to the City Council, the park district and the school district. Plan projects and events.",
-  "min_age": 12,
-  "max_age": 20,
-  "grades": "Middle and high school",
-  "who_can_apply": "Middle and high school students. The city code says ages 12 to 20, best if at Livermore schools. You must come to meetings and events.",
-  "paid_type": "not-stated",
-  "pay_detail": "No pay is stated.",
+  "what_you_do": "Members speak for Livermore kids and teens to the City Council, the park district and the school district. They plan events, share youth programs, and look over City Council plans.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "7 to 12",
+  "who_can_apply": "Students in grades 7 to 12 who live in Livermore or go to a school in Livermore. The council has 20 members.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
   "season": "school-year",
-  "duration": "One school year. Three absences count as quitting.",
-  "status": "unconfirmed",
+  "duration": "A new term starts each school year. Members serve 2-year terms, then say if they want to keep serving. Meetings are the first Monday of each month at 7 p.m., plus subcommittee meetings and events.",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "The application form is on the Youth Council page. No due date is shown.",
+  "deadline_text": "The 2026-27 application was due July 31, 2026 at 6 p.m., with interviews in August. 2027-28 dates are not posted yet. Expect a summer deadline again.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
-  "how_to_apply": "Fill out the Recruitment Application Form on the Youth Council page. Ask the city when it is due.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the paper form. It asks three short questions: why you want to join, how you help in your town, and what else you want to share. A parent must sign. Turn it in at the front desk of the Civic Center Library, or email it to njbrumley@livermoreca.gov. If picked, you get a talk with staff.",
   "needs_work_permit": false,
   "url": "https://library.livermoreca.gov/digital-library/teens/youth-council",
   "apply_url": "https://library.livermoreca.gov/home/showpublisheddocument/14044/639172097558270000",
   "sources_fetched": [
     "https://www.livermoreca.gov/our-community/teens-kids",
     "https://library.livermoreca.gov/digital-library/teens/youth-council",
-    "https://codepublishing.com/CA/Livermore/Municipal/Livermore02/Livermore0251.html"
+    "https://library.livermoreca.gov/home/showpublisheddocument/14044/639172097558270000",
+    "https://library.livermoreca.gov/home/showpublisheddocument/11902/638624226361930000",
+    "https://library.livermoreca.gov/digital-library/teens/local-youth-training-and-engagement-programs"
   ],
   "verified": "fetched",
   "verified_on": "2026-10-16",
-  "priority": 3,
-  "notes": "The city code still calls it the Livermore Area Youth Advisory Commission."
+  "priority": 2,
+  "notes": "This used to be the Livermore Area Youth Advisory Commission. The city's youth page now calls it the Livermore Youth Council. If you miss three meetings in one school year, you are out. Adults and some members read the forms and talk with each teen. A city staff member makes the final pick. Contact: Nathan Brumley, 925-373-5572."
 }
