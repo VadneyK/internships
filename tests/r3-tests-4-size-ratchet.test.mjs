@@ -264,7 +264,9 @@ const TABLE = {
   // 2026-10-17: the Copy buttons moved to playbook.js, which now runs on es/playbook.html too. es.js ceiling 1000 to 700.
   "assets/js/es.js": { ceiling: 700, reason: "script, Spanish labels for the pages in es/ only (ADR 0008), 575 bytes measured 2026-10-17" },
   "assets/js/es-playbook.js": { ceiling: 9300, reason: "script, Spanish words for the Playbook tools on es/playbook.html only (ADR 0008), 8569 bytes measured 2026-10-17" },
-  "assets/js/find.js": { ceiling: 75500, reason: "script, 52771 bytes measured 2026-10-10" },
+  // 2026-10-20: the map above the cards on the Programs page, Kentaro's instruction 2026-10-20 (make the map prominent on Find): find.js 75500 to 76100 (76054 bytes), and the new find-map.js (6052 bytes), loaded only when the map comes near the screen.
+  "assets/js/find.js": { ceiling: 76100, reason: "script, 52771 bytes measured 2026-10-10" },
+  "assets/js/find-map.js": { ceiling: 6100, reason: "the Programs page map (dots for the list, the place view, a tap keeps one city), loaded by find.js only when the map comes near the screen; 6052 bytes measured 2026-10-20, Kentaro's instruction 2026-10-20" },
   // 2026-10-16: keep my list without an account (docs/adr/0008): download, send to a parent, keep link, backup file, ask-before-adding panel. find.js 67400 to 75500 (74710 bytes). PENDING PERSON APPROVAL.
   "assets/js/handout.js": { ceiling: 600, reason: "script, 274 bytes measured 2026-10-10; 517 bytes on 2026-10-14 with the one page handout and table plan print buttons" },
   // 2026-10-12: home picker flow. home.js grew by about 8.8 KB (place search box, chip, step markers); ceiling raised from 10800 to 18600, measured 18585 bytes.

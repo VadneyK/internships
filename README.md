@@ -23,6 +23,7 @@ Each page is a plain HTML file in the repo root. The source for each one is in [
 | `find.html` | Search paid youth programs, internships, research, volunteer spots and shadowing that we could verify for teens. |
 | `calendar.html` | Pick a month, a place and your age to see which teen programs take applications then. |
 | `map.html` | A map with a dot for each city named on a program card. Tap a dot to see its programs, or find the cities near you. A full list by state and city sits under the map. |
+| `ignition.html` | For students from the Ignition NorCal career table (Alameda, Oct 23 and 24, 2026): the same map, opened on the Bay Area, and three steps to start. Linked from the home page, not the main menu. |
 | `insights.html` | Charts about the program list: what is open now, how your age changes your options, and where the paid work is. |
 | `younger.html` | What a 12 to 14 year old can do for money in four states, safety training for sitters, and how to get ready for a first job at 14. |
 | `ready.html` | A checklist for your first job: a work permit at school, which papers to bring, how pay works, and rides to work. |

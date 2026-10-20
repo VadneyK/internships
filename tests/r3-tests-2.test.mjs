@@ -42,6 +42,9 @@ const ALLOWLIST = [
   // { file: "example.html", check: "html-url", text: "https://...", reason: "one line why" },
   { file: "assets/js/map.js", check: "createElement script/img/iframe/link", text: 'createElement("link"', reason: "street map, 2026-10-16: adds this site's own assets/vendor/maplibre/maplibre-gl.css, a fixed path, only where the browser has WebGL 2" },
   { file: "assets/js/map.js", check: "createElement script/img/iframe/link", text: 'createElement("script"', reason: "street map, 2026-10-16: adds this site's own assets/vendor/pmtiles.js and assets/js/map-gl.js, fixed paths, only where the browser has WebGL 2" },
+  { file: "assets/js/find-map.js", check: "createElement script/img/iframe/link", text: 'createElement("link"', reason: "Programs page map, 2026-10-20: adds this site's own assets/vendor/maplibre/maplibre-gl.css, a fixed path, only where the browser has WebGL 2" },
+  { file: "assets/js/find-map.js", check: "createElement script/img/iframe/link", text: 'createElement("script"', reason: "Programs page map, 2026-10-20: adds this site's own assets/vendor/pmtiles.js and assets/js/map-gl.js, fixed paths, only where the browser has WebGL 2" },
+  { file: "assets/js/find.js", check: "createElement script/img/iframe/link", text: 'createElement("script"', reason: "Programs page map, 2026-10-20: adds this site's own assets/js/find-map.js, a fixed path, once the map box comes near the screen" },
   { file: "assets/js/map.js", check: "navigator.geolocation", text: "navigator.geolocation", reason: "Near me on the map, 2026-10-15: asked only after a tap, used for distances in the browser, never stored or sent (tests/map.dom.test.mjs checks the address, storage, cookies and requests)" },
 ];
 

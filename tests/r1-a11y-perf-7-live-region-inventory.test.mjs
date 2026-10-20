@@ -24,7 +24,8 @@ const EXPECTED = {
   "map.html": [{ id: "mNearStatus", role: "status" }, { id: "mCount", role: "aria-live=polite" }, { id: "mView", role: "status" }],
   // ignition.html (2026-10-20, unlisted): the same map as map.html, so the same three lines, with the map above the Near me button
   "ignition.html": [{ id: "mCount", role: "aria-live=polite" }, { id: "mView", role: "status" }, { id: "mNearStatus", role: "status" }],
-  "find.html": [{ id: "ageUnder14Region", role: "aria-live=polite" }, { id: "countLive", role: "status" }, { id: "townHelp", role: "status" }],
+  // find.html (2026-10-20): fMapCount, the line over the map above the cards, says how many programs and cities the map shows
+  "find.html": [{ id: "ageUnder14Region", role: "aria-live=polite" }, { id: "countLive", role: "status" }, { id: "fMapCount", role: "aria-live=polite" }, { id: "townHelp", role: "status" }],
   "index.html": [
     { id: "matchStatus", role: "status" },
     { id: "soonStatus", role: "status" },

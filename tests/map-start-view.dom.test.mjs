@@ -1,6 +1,6 @@
 // Map start view (2026-10-20, Kentaro's instruction to put the live map on the Ignition page, preset to the Bay Area).
 // map.js opens on one zoom view when the address has ?view=<id> or the map box has data-view="<id>". With neither, or an id that
-// is not a view, the map opens on the whole map as it always has. ignition.html (unlisted, noindex) uses data-view="bay".
+// is not a view, the map opens on the whole map as it always has. ignition.html uses data-view="bay".
 // The street map (map-gl.js) is stood in for, as in tests/map-gl.dom.test.mjs, to check it is sent to the same view.
 // Run with: node --test tests/map-start-view.dom.test.mjs
 import test from "node:test";
@@ -78,12 +78,16 @@ test("ignition.html opens the same map on the Bay Area, and ?view=all in the add
   q.window.close();
 });
 
-test("ignition.html is unlisted: noindex, not in the sitemap, the nav or any other page, and keeps the volunteer footer", () => {
+// 2026-10-20: Kentaro shared the page publicly, so it is indexed and in the sitemap, linked from the home page only, never from the main menu.
+test("ignition.html is public: no noindex, in the sitemap, linked from the home page but not the nav, and keeps the volunteer footer", () => {
   const html = fs.readFileSync(path.join(ROOT, "ignition.html"), "utf8");
-  assert.match(html, /<meta name="robots" content="noindex">/);
-  assert.doesNotMatch(fs.readFileSync(path.join(ROOT, "sitemap.xml"), "utf8"), /ignition\.html/);
-  for (const f of fs.readdirSync(ROOT).filter((f) => f.endsWith(".html") && f !== "ignition.html")) {
-    assert.doesNotMatch(fs.readFileSync(path.join(ROOT, f), "utf8"), /href="[^"]*ignition\.html/, f + " links to the unlisted Ignition page");
+  assert.doesNotMatch(html, /<meta name="robots" content="noindex">/);
+  assert.match(fs.readFileSync(path.join(ROOT, "sitemap.xml"), "utf8"), /internships\/ignition\.html</);
+  const home = fs.readFileSync(path.join(ROOT, "index.html"), "utf8");
+  assert.match(home, /At Ignition NorCal\? <a href="ignition\.html">Start here<\/a>/);
+  for (const f of fs.readdirSync(ROOT).filter((f) => f.endsWith(".html"))) {
+    const nav = (fs.readFileSync(path.join(ROOT, f), "utf8").match(/<nav[^>]*aria-label="(?:Main|Site)[^"]*"[\s\S]*?<\/nav>/) || [""])[0];
+    assert.doesNotMatch(nav, /ignition\.html/, f + " puts the Ignition page in the main menu");
   }
   assert.match(html, /not an official publication of Ignition, Acts 2 Network or AYM/);
   assert.doesNotMatch(html, /<img[^>]*ignition/i, "no Ignition logo or image");

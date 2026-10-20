@@ -87,6 +87,8 @@ test("every assets/js script except lib.js is loaded by at least one root page",
     .filter((s) => s.name !== "lib.js")
     // map-gl.js: added by map.js (as a module, only with WebGL 2), so it counts as loaded where map.js is
     .filter((s) => loaders(s.name === "map-gl.js" && /assets\/js\/map-gl\.js/.test(fs.readFileSync(path.join(ROOT, "assets/js/map.js"), "utf8")) ? "map.js" : s.name, pages).length === 0)
+    // find-map.js (2026-10-20): added by find.js once the map above the cards comes near the screen, so it counts as loaded where find.js is
+    .filter((s) => !(s.name === "find-map.js" && /assets\/js\/find-map\.js/.test(fs.readFileSync(path.join(ROOT, "assets/js/find.js"), "utf8")) && loaders("find.js", pages).length > 0))
     // es.js and es-playbook.js are loaded only by the Spanish pages in es/ (ADR 0008); tests/es-pages.test.mjs checks which page loads which.
     .filter((s) => !(s.name === "es.js" && fs.readFileSync(path.join(ROOT, "es/index.html"), "utf8").includes('src="../assets/js/es.js')))
     .filter((s) => !(s.name === "es-playbook.js" && fs.readFileSync(path.join(ROOT, "es/playbook.html"), "utf8").includes('src="../assets/js/es-playbook.js')))

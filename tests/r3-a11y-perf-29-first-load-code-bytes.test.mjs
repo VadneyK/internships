@@ -123,7 +123,8 @@ const BUDGET = {
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). find.html limit 216500 to 216600.
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL). find.html limit 216600 to 216900.
   // 2026-10-16: keep my list without an account (docs/adr/0008) in find.js: find.html set to the measured size rounded up to 100 (227595 bytes). PENDING PERSON APPROVAL.
-  "find.html": { ceiling: 234700, reason: "lib.js, common.js and find.js (largest page script)" },
+  // 2026-10-20: the map above the cards on the Programs page, Kentaro's instruction 2026-10-20 (make the map prominent on Find): find.js loads the map code only when the map box comes near the screen. find.html set to the measured size rounded up to 100 (235812 bytes).
+  "find.html": { ceiling: 235900, reason: "lib.js, common.js and find.js (largest page script)" },
   // 2026-10-16: Add to calendar on deadlines, issue #10 (lib.js: reminders, Google Calendar link, which cards get it; about 1.9 KB) (PENDING PERSON APPROVAL). find.html limit 224800 to 226300 (remeasured 2026-10-19 after main merged in with PRs 42 and 36).
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you handout.html limit 91700 to 92100.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. handout.html limit 92200 to 92700.
