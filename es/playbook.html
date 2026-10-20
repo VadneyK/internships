@@ -28,8 +28,8 @@
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="preload" href="../assets/fonts/archivo-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../assets/css/fonts.css?v=683e53bb">
-<link rel="stylesheet" href="../assets/css/style.css?v=683e53bb">
+<link rel="stylesheet" href="../assets/css/fonts.css?v=c853b679">
+<link rel="stylesheet" href="../assets/css/style.css?v=c853b679">
 <script>
 try { var t = localStorage.getItem("theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 document.documentElement.classList.add("js");
@@ -95,10 +95,19 @@ setTimeout(function () { if (!document.querySelector(".top.menu-js")) document.d
 <section id="map" style="padding-block:1.5rem 2rem;">
   <div class="wrap">
     <h2>1. Tu mapa de personas</h2>
-    <p>Escribe cinco adultos que ya conoces y en qué trabaja cada uno. También cuentan los adultos que conoces solo un poco: un compañero de trabajo de tu mamá o tu papá, alguien de la iglesia, tu entrenador, el dueño de la tienda a la que vas cada semana. Después, escríbele a uno de ellos con el mensaje de cinco líneas.</p>
-    <div class="callout plain" data-es-only style="margin-top:1rem;">
-      <p>La herramienta que guarda tu mapa en este aparato está solo en inglés por ahora. Puedes hacer tu lista en papel, o usar el <a href="../playbook.html#map" hreflang="en">mapa de personas en inglés</a>. Lo que escribes ahí se queda en tu navegador.</p>
+    <p>Escribe cinco adultos que ya conoces y en qué trabaja cada uno. También cuentan los adultos que conoces solo un poco: un compañero de trabajo de tu mamá o tu papá, alguien de la iglesia, tu entrenador, el dueño de la tienda a la que vas cada semana. Después, toca <b>Escribirle</b> en cualquier tarjeta.</p>
+    <div class="plansum" id="planLive" aria-live="polite">
+      <span class="big" id="planSummary">0 de 5 enviados</span>
+      <span id="planNext" class="small"></span>
     </div>
+    <div class="people" id="people"></div>
+    <div class="chips" style="margin-top:1rem;">
+      <button class="btn alt sm" type="button" id="addPerson">Agregar otra persona</button>
+      <button class="btn sm" type="button" id="planPng" aria-describedby="planHint">Guardar mi plan como imagen</button>
+      <button class="chip" type="button" id="clearMap">Borrar todo</button>
+    </div>
+    <p class="small muted noprint" id="planHint">Primero escribe un nombre. La imagen necesita al menos una persona en tu mapa.</p>
+    <p class="small muted" style="margin-top:.8rem;">Esto funciona como un cuaderno en tu propio navegador. Nunca vemos lo que escribes, y se borra si cambias de teléfono o borras los datos del navegador. Guarda la imagen si quieres conservarla.</p>
     <div class="card flat" style="margin-top:1.5rem;">
       <h3>¿No se te ocurre nadie? Pregúntate</h3>
       <ul>
@@ -125,14 +134,55 @@ setTimeout(function () { if (!document.querySelector(".top.menu-js")) document.d
       <li><div><h3>Un pedido pequeño y concreto</h3><p class="muted">Con un límite de tiempo. Es fácil decir que sí a quince minutos.</p></div></li>
       <li><div><h3>Da las gracias y haz que sea fácil decir que no</h3><p class="muted">&ldquo;No hay problema si no tiene tiempo.&rdquo;</p></div></li>
     </ol>
-    <div data-es-only style="margin-top:2rem;">
-      <h3>Escribe el tuyo</h3>
-      <p>Copia este mensaje y cambia lo que está entre corchetes. En español, a un adulto se le habla de usted. La herramienta que arma el mensaje por ti está solo en inglés por ahora: <a href="../playbook.html#message" hreflang="en">armar el mensaje en inglés</a>.</p>
-      <div class="card">
-        <p class="letter" style="min-height:0;" id="t0">Hola [su nombre], me llamo [tu nombre] y estoy en [grado] en [escuela]. [Cómo lo conoces, por ejemplo: Estoy en el grupo de jóvenes con su hijo.] Me interesa [lo que te da curiosidad]. ¿Podría [tu pedido pequeño] [cuándo]? No hay problema si no tiene tiempo. ¡Gracias por leer esto!</p>
-        <button class="btn sm alt" type="button" data-copy="t0">Copiar</button>
+    <h3 style="margin-top:2rem;">Escribe el tuyo</h3>
+    <div class="grid g2" style="align-items:start;">
+      <form class="card" id="mb">
+        <div class="field" style="margin-bottom:.9rem;"><label for="fToSel">Elige a alguien de tu mapa de personas (opcional)</label><select id="fToSel"><option value="">Elige de tu mapa o escribe abajo</option></select></div>
+        <div class="formgrid">
+          <div class="field"><label for="fTo">Su nombre</label><input id="fTo" type="text" autocapitalize="words" placeholder="Sra. López" autocomplete="off"></div>
+          <div class="field"><label for="fMe">Tu nombre</label><input id="fMe" type="text" autocapitalize="words" placeholder="Sofía" autocomplete="given-name"></div>
+          <div class="field"><label for="fGrade">Tu grado</label><input id="fGrade" type="text" placeholder="10.º" autocomplete="off"></div>
+          <div class="field"><label for="fSchool">Tu escuela</label><input id="fSchool" type="text" placeholder="Alameda High" autocomplete="off"></div>
+        </div>
+        <div class="field" style="margin-top:.9rem;"><label for="fHow">Cómo lo conoces</label>
+          <textarea id="fHow" rows="2" placeholder="Estoy en el grupo de jóvenes con su hijo Ethan."></textarea>
+          <div class="chips" id="howChips" style="margin-top:.3rem;"></div></div>
+        <div class="field" style="margin-top:.9rem;"><label for="fCurious">Qué te da curiosidad</label>
+          <input id="fCurious" type="text" placeholder="trabajar en el área de la salud" autocomplete="off">
+          <span class="hint">Termina esta frase: &ldquo;Me interesa ...&rdquo;</span></div>
+        <div class="formgrid" style="margin-top:.9rem;">
+          <div class="field"><label for="fAsk">Tu pedido</label>
+            <select id="fAsk">
+              <option value="call">Una llamada o charla de 15 minutos</option>
+              <option value="shadow">Pasar una tarde en su trabajo</option>
+              <option value="email">Contestar 3 preguntas por correo</option>
+              <option value="help">Ayudar como voluntario</option>
+              <option value="advice">Consejos para empezar</option>
+            </select></div>
+          <div class="field"><label for="fWhen">Cuándo</label><input id="fWhen" type="text" placeholder="estas vacaciones de invierno" autocomplete="off"></div>
+        </div>
+        <div class="field" style="margin-top:.9rem;"><label for="fFormat">Formato</label>
+          <select id="fFormat"><option value="email">Correo electrónico</option><option value="text">Mensaje de texto</option></select></div>
+      </form>
+      <div>
+        <div class="letter" id="letter"></div>
+        <div class="sr" id="letterStatus" role="status"></div>
+        <div style="display:flex;align-items:center;gap:.75rem;margin-top:.8rem;">
+          <div class="meter" id="meter" style="flex:1" aria-hidden="true"><i></i></div>
+          <span class="small" id="wc"></span>
+        </div>
+        <ul class="check" id="checks" style="margin-top:.9rem;"></ul>
+        <p class="small" id="blankNote" role="status" aria-live="polite" hidden style="margin-top:.9rem;font-weight:700;"></p>
+        <div class="chips" style="margin-top:1rem;">
+          <button class="btn" type="button" id="copyMsg">Copiar mensaje</button>
+          <a class="btn alt" id="sendMail" href="#">Abrir en mi app de correo</a>
+          <a class="btn alt" id="sendSms" href="#" hidden>Abrir en Mensajes</a>
+          <button class="btn alt" type="button" id="shareMsg" hidden>Compartirlo</button>
+          <button class="btn dark" type="button" id="markSent" hidden>Ya lo envié</button>
+          <button class="btn dark" type="button" id="addMark" hidden>Agregarlo a mi mapa y marcarlo como enviado</button>
+        </div>
+        <p class="small muted" style="margin-top:.8rem;">Revisa cómo se escribe su nombre. Léelo en voz alta una vez. Si tienes menos de 18 años, enséñaselo a tu mamá, a tu papá o a otro adulto de confianza antes de enviarlo.</p>
       </div>
-      <p class="small muted" style="margin-top:.8rem;">Revisa cómo se escribe su nombre. Léelo en voz alta una vez. Si tienes menos de 18 años, enséñaselo a tu mamá, a tu papá o a otro adulto de confianza antes de enviarlo.</p>
     </div>
     <p class="backtop noprint"><a href="#parts">Volver a la lista de partes</a></p>
   </div>
@@ -275,8 +325,11 @@ setTimeout(function () { if (!document.querySelector(".top.menu-js")) document.d
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="../assets/js/common.js?v=683e53bb"></script>
-<script src="../assets/js/es.js?v=683e53bb"></script>
+<script src="../assets/js/lib.js?v=c853b679"></script>
+<script src="../assets/js/common.js?v=c853b679"></script>
+<script src="../assets/js/es.js?v=c853b679"></script>
+<script src="../assets/js/es-playbook.js?v=c853b679"></script>
+<script src="../assets/js/playbook.js?v=c853b679"></script>
 
 </body>
 </html>
