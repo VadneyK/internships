@@ -22,9 +22,25 @@ const SOON_ONLY = ["name", "org", "city", "url"];
 // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) home file 590600 to 597700. PENDING PERSON APPROVAL.
 // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. home file 597700 to 597900.
 // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) home file 606000.
+// 2026-10-18 (after #45) issue 19 Southern California pages read in a real browser (+6 cards, 2,686 programs; PENDING PERSON APPROVAL): 606000 to 607500.
+// 2026-10-18 (after #54) issue 22 Chicago and Elgin second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 606000 to 607700.
+// 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 608907 bytes. Approved by Kentaro 2026-10-19 (merge train). 607700 to 609000.
+// 2026-10-19 issue 23 Pacific Northwest and Vancouver second pass read in a real browser (+15 cards, 2,695 programs; PENDING PERSON APPROVAL): 606000 to 608900.
+// 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 611841 bytes. Approved by Kentaro 2026-10-19 (merge train). 608900 to 611900.
+// 2026-10-19 issues 20, 21 and 26 East Coast second pass read in a real browser (+9 cards, 2,689 programs; PENDING PERSON APPROVAL): 606000 to 608000.
+// 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 613882 bytes. Approved by Kentaro 2026-10-19 (merge train). 608000 to 613900.
+  // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. home file 606000 to 615300.
+// 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 623226 bytes. Approved by Kentaro 2026-10-19 (merge train). 615300 to 623300.
+// 2026-10-17 (after #45) SoCal, Santa Barbara and Merced cards read in a real browser (+16 cards, 2,696 programs; PENDING PERSON APPROVAL): 606000 to 609700.
+// 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 626908 bytes. Approved by Kentaro 2026-10-19 (merge train). 609700 to 627000.
+// 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,700 programs) home file 606000 to 610200. PENDING PERSON APPROVAL.
+// 2026-10-19: the 20 Midwest and Texas cards (#50) after #43 and #49, 631085 bytes. Approved by Kentaro 2026-10-19 (merge train). 610200 to 631100.
+// 2026-10-19 issue 27 San Diego, Inland Empire and Merced second pass, official pages read by hand (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 606000 to 607800.
+// 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 632848 bytes. Approved by Kentaro 2026-10-19 (merge train). 607800 to 632900.
 // 2026-10-19 issue 25 Midwest campuses second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL) home file 606000 to 607600.
-test("home file is under 607600 bytes", () => {
-  assert.ok(fs.statSync(path.join(ROOT, "data/entries-home.json")).size < 607600);
+// 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 634425 bytes. Approved by Kentaro 2026-10-19 (merge train). 607600 to 634500.
+test("home file is under 634500 bytes", () => {
+  assert.ok(fs.statSync(path.join(ROOT, "data/entries-home.json")).size < 634500);
 });
 
 test("only closing-soon rows carry name, org, city and url", () => {

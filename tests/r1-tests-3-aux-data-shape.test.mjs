@@ -32,7 +32,7 @@ const EMPTY_OK = /\.numbers\[\d+\]\.label$/;
 // Real defects found by this file, kept visible instead of weakened away. The test below
 // fails when one is fixed, so the entry must then be deleted.
 const KNOWN_DEFECTS = [
-  { file: "gaps.json", problem: "$[4].hubs: empty or missing", why: "gap \"confirm-first\" has no hubs, so find.js never shows it (fix in data/gaps.json)" },
+  { file: "gaps.json", problem: "$[3].hubs: empty or missing", why: "gap \"confirm-first\" has no hubs, so find.js never shows it (fix in data/gaps.json)" },
 ];
 
 // ---- rules: each returns a list of "path: problem" strings ----
