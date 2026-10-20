@@ -1,7 +1,7 @@
 {
   "id": "cook-county-forest-preserves-conservation-corps-summer",
-  "name": "Conservation Corps summer youth program",
-  "org": "Forest Preserves of Cook County (listed by Cook County government)",
+  "name": "Chicago Conservation Leadership Corps (CCLC)",
+  "org": "Forest Preserves of Cook County with the Student Conservation Association",
   "regions": [
     "chicago"
   ],
@@ -10,30 +10,32 @@
   "fields": [
     "environment"
   ],
-  "what_you_do": "A paid summer crew job outdoors. Teens get job training, do hard service work and join nature activities in the forest preserves.",
-  "min_age": 14,
+  "what_you_do": "A paid summer crew job outdoors in the forest preserves. Teens build trails, spread mulch around trees and pull invasive plants, with adult crew leaders. There are also nature lessons and outdoor fun.",
+  "min_age": 15,
   "max_age": 19,
   "grades": null,
-  "who_can_apply": "Cook County residents ages 14 to 19.",
+  "who_can_apply": "Ages 15 to 19. You must be in high school or a recent graduate. You must be able to do hard physical work in summer heat and work on a team.",
   "paid_type": "paid",
-  "pay_detail": "Paid. The amount is not stated on the Cook County page. Transportation and service clothing are provided.",
+  "pay_detail": "Paid: $15 an hour (CCLC) or $15.50 (Forest Preserve Experience) per the Forest Preserves page. Transportation and service clothing are provided.",
   "season": "summer",
-  "duration": "4 to 6 weeks",
-  "status": "unconfirmed",
+  "duration": "5 weeks starting in late June, 26 hours a week, Monday to Thursday",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "No dates on the Cook County page. The Forest Preserves site was blocked, so check it for the deadline.",
+  "deadline_text": "Forest Preserves page: youth applications are due in April. 2027 dates not posted.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
-  "how_to_apply": "The Cook County page points to fpdcc.com/nature/conservation-corps-programs for how to apply. That page was not available.",
-  "needs_work_permit": null,
-  "url": "https://www.cookcountyil.gov/service/forest-preserves-employment-information",
-  "apply_url": "https://fpdcc.com/nature/conservation-corps-programs/",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply on the Student Conservation Association job site. The Forest Preserves page links to it. Check the SCA Chicago page in early spring for the 2027 opening.",
+  "needs_work_permit": true,
+  "url": "https://fpdcc.com/nature/conservation-corps-programs/",
+  "apply_url": "https://myjobs.adp.com/scacareers/cx",
   "sources_fetched": [
+    "https://fpdcc.com/nature/conservation-corps-programs/",
+    "https://thesca.org/program/urban-green/chicago",
     "https://www.cookcountyil.gov/service/cook-county-connects",
     "https://www.cookcountyil.gov/service/forest-preserves-employment-information"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-10-18",
   "priority": 1,
-  "notes": "Confirm age rules, pay and deadline on the Forest Preserves site, because it blocked my reader. Ask about working papers if you are under 16."
+  "notes": "Rides to work sites leave from central pickup spots such as CTA train or bus stops. The SCA Chicago page still said its summer season was closed when read on 2026-10-16. Illinois requires an employment certificate for workers under 16, so 15 year olds should ask their school. SCA Chicago contact: (312) 239-1661 ext. 6009."
 }
