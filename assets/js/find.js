@@ -330,21 +330,12 @@
   }
 
   var PAGE = 60, shown = PAGE;
-  /* The map under Your picks (find-map.js, which draws with the Map page's street map). It loads once its box comes near the screen,
-     after the first draw, so the first load stays the same. A tap on a dot keeps only that city's cards (cityPick, not kept in the address). */
-  var cityPick = null, mapList = null, mapAsked = false;
+  /* The map under Your picks (find-map.js, which draws with the Map page's street map). It is always shown, so its code starts
+     loading with the page (the script loads in the background), without waiting for the list. A tap on a dot keeps only that city's cards (cityPick, not kept in the address). */
+  var cityPick = null, mapList = null;
   function paintMap() { if (G.findMap && mapList) G.findMap.paint(mapList, state, cityPick); }
   G.findCity = function (c) { cityPick = c; render(true); };
-  function watchMap() {
-    var box = $("fMapBox");
-    if (!box || !window.IntersectionObserver) return;
-    var io = new IntersectionObserver(function (es) {
-      if (mapAsked || !es.some(function (x) { return x.isIntersecting; })) return;
-      mapAsked = true; io.disconnect();
-      var s = document.createElement("script"); s.src = "assets/js/find-map.js"; s.onload = paintMap; document.head.appendChild(s);
-    }, { rootMargin: "300px 0px" });
-    io.observe(box);
-  }
+  if ($("fMapBox")) { var ms = document.createElement("script"); ms.src = "assets/js/find-map.js"; ms.onload = paintMap; document.head.appendChild(ms); }
   /* render() rebuilds #out, which deletes the focused control. "keep" says where focus goes next:
      { cardIndex: n } focuses the card at list position n, { starId: id } focuses that card's star,
      { el: element } focuses that element. */
@@ -891,7 +882,6 @@
     var wantId = wantHash.indexOf("#p-") === 0 ? wantHash.slice(3) : "";
     if (wantId) openLinked(wantId, true);
     else render(true);
-    watchMap();
     prefetchDetail();
     if (wantId) wantDetail();
     if (location.hash.indexOf("#saved=") === 0) offerIds(keepIds(location.hash), "link");
