@@ -1,5 +1,5 @@
 // The map on the Programs page (2026-10-20, Kentaro's instruction to make the map prominent on Find).
-// find.js loads find-map.js only once the map box comes near the screen, and find-map.js draws with the Map page's
+// find.js adds find-map.js as the page starts (the map is always shown), and find-map.js draws with the Map page's
 // street map (map-gl.js), stood in for here as in tests/map-start-view.dom.test.mjs.
 // With no place picked the street map shows the whole map; with a place it moves to that place's cities.
 // A tap on a dot keeps only that city's cards, and Show every city brings the rest back.
@@ -15,32 +15,28 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const MAP = JSON.parse(fs.readFileSync(path.join(ROOT, "data/map.json"), "utf8"));
 const OAK = MAP.points.find((c) => c.k === "Oakland, CA");
 
-function webgl(w, seen) {
+function webgl(w) {
   w.matchMedia = (q) => ({ matches: /prefers-reduced-motion:\s*reduce/.test(q), media: q, addEventListener() {}, removeEventListener() {}, addListener() {}, removeListener() {} });
   w.WebGL2RenderingContext = function () {};
   w.HTMLCanvasElement.prototype.getContext = function (k) { return k === "webgl2" ? {} : null; };
-  // every observed box is on screen at once
-  w.IntersectionObserver = class {
-    constructor(cb) { this.cb = cb; }
-    observe(el) { if (seen) seen.push(el.id); setTimeout(() => this.cb([{ isIntersecting: true, target: el, boundingClientRect: { top: 0 } }]), 0); }
-    disconnect() {}
-  };
 }
 function stub(calls) {
   return { setData: (list) => calls.push(["data", list]), select: (i) => calls.push(["select", i]), fit: (list, max) => calls.push(["fit", list, max]), whole: () => calls.push(["whole"]), city: () => {}, inView: () => [], resize: () => {} };
 }
 async function open(search = "") {
-  const seen = [], p = await loadPage("find.html", { search, setup: (w) => webgl(w, seen) }), calls = [];
+  const p = await loadPage("find.html", { search, setup: webgl }), calls = [];
   let opts = null;
   assert.ok(await waitFor(() => typeof p.window.TIG.mapGLStart === "function"), "find-map.js never asked for the street map: " + p.errors.join(" | "));
-  assert.ok(seen.includes("fMapBox"), "find.js watches the map box");
   p.window.TIG.mapGLStart((o) => { opts = o; return Promise.resolve(stub(calls)); });
-  assert.ok(await waitFor(() => p.document.getElementById("fMapBox").classList.contains("gl-on")), "the street map never showed");
+  assert.ok(p.document.getElementById("fMapBox").classList.contains("gl-on"), "the street map is shown while it draws");
+  assert.ok(await waitFor(() => calls.some((c) => c[0] === "data") && /cities on the map/.test(p.document.getElementById("fMapCount").textContent)), "the dots were never drawn");
   return { p, d: p.document, calls, opts: () => opts };
 }
 
-test("the Programs page does not load the map code until the map box is near the screen", async () => {
-  const p = await loadPage("find.html");
+// 2026-10-20 (PR 73): the map took up to 10 seconds to show on a first visit, because its code waited for the whole list.
+// Now it starts with the page, and without WebGL 2 it asks for no map data at all.
+test("the map is shown with no click and its code starts without waiting for the list", async () => {
+  const asked = [], p = await loadPage("find.html", { setup: (w) => { const f = w.fetch; Object.defineProperty(w, "fetch", { configurable: true, get() { return f && ((u, o) => { asked.push(String(u)); return f(u, o); }); }, set(v) { Object.defineProperty(w, "fetch", { configurable: true, writable: true, value: (u, o) => { asked.push(String(u)); return v(u, o); } }); } }); } });
   await waitFor(() => /of [\d,]+ programs/.test(p.document.getElementById("count").textContent));
   await new Promise((r) => setTimeout(r, 300));
   // 2026-10-20, Kentaro: "Why don't you show the map by default? ... Show it." The map box is always shown, sized from the start, under Your picks
@@ -50,8 +46,9 @@ test("the Programs page does not load the map code until the map box is near the
   assert.ok(p.document.getElementById("fMapBox").getAttribute("style").includes("height:"), "the map box keeps its height before the map loads");
   assert.ok(m.compareDocumentPosition(p.document.getElementById("fsum")) & p.window.Node.DOCUMENT_POSITION_PRECEDING, "the map comes right after Your picks");
   assert.ok(m.compareDocumentPosition(p.document.getElementById("moreFilters")) & p.window.Node.DOCUMENT_POSITION_FOLLOWING, "the map comes before the other filters");
-  assert.equal(p.document.querySelector('script[src*="find-map.js"]'), null, "find-map.js loaded with no IntersectionObserver report");
-  assert.equal(p.window.TIG.findMap, undefined);
+  assert.ok(p.document.querySelector('script[src*="find-map.js"]'), "find-map.js was not added");
+  assert.ok(p.window.TIG.findMap, "find-map.js did not run");
+  assert.ok(!asked.some((u) => /data\/map\.json/.test(u)), "map data was asked for with no WebGL 2");
   p.window.close();
 });
 

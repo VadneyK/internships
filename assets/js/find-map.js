@@ -1,5 +1,5 @@
 /* Programs page map: the street map of the Map page (map-gl.js, MapLibre) under Your picks, always shown, with one dot per city in the list.
-   Its box keeps its size from the start. find.js loads this file once the box is near the screen, after the list is drawn, so the first load stays the same.
+   Its box keeps its size from the start. find.js adds this file as the page starts, so the map draws while the list loads.
    find.js calls G.findMap.paint(list, state, pick) after each draw: list is every matching program (before a city is picked),
    pick is the city a dot tap chose ({ k, ids }) or null. A tap on a dot calls G.findCity, which keeps only that city's cards.
    With a place picked the map moves to the cities of that place, and with none it shows the whole map. */
@@ -68,6 +68,9 @@
   function start() {
     var el = document.createElement("div"), root = new URL(".", document.baseURI);
     el.className = "mgl"; box.appendChild(el);
+    /* the street map shows as it draws (land, then roads and dots), not only once every first tile is in */
+    box.classList.add("gl-on");
+    if (window.ResizeObserver) new ResizeObserver(function () { if (gl) gl.resize(); }).observe(box);
     say("Loading the map.");
     var css = document.createElement("link"); css.rel = "stylesheet"; css.href = "assets/vendor/maplibre/maplibre-gl.css"; document.head.appendChild(css);
     var dataP = G.fetchData("data/map.json").then(function (r) { if (!r.ok) throw new Error("map " + r.status); return r.json(); });
@@ -76,7 +79,6 @@
         pts = res[0].points.concat(res[0].bc).map(function (p) { return { k: p.k, s: p.s, lat: p.lat, lon: p.lon, ids: p.ids, n: 0 }; });
         pts.forEach(function (p) { p.ids.forEach(function (id) { at[id] = p; }); });
         gl = res[1];
-        box.classList.add("gl-on");
         box.setAttribute("role", "region"); box.setAttribute("aria-label", "Street map of the programs");
         gl.resize();
         if (last) paint(last.list, last.state, last.pick);
