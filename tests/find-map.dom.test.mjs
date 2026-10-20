@@ -43,7 +43,13 @@ test("the Programs page does not load the map code until the map box is near the
   const p = await loadPage("find.html");
   await waitFor(() => /of [\d,]+ programs/.test(p.document.getElementById("count").textContent));
   await new Promise((r) => setTimeout(r, 300));
-  assert.ok(p.document.getElementById("fMap").open, "the map section starts open");
+  // 2026-10-20, Kentaro: "Why don't you show the map by default? ... Show it." The map box is always shown, sized from the start, under Your picks
+  const m = p.document.getElementById("fMap");
+  assert.notEqual(m.tagName, "DETAILS", "the map is not in a box that can be folded away");
+  assert.ok(!m.hidden && !m.closest("details,[hidden]"), "the map is shown with no click");
+  assert.ok(p.document.getElementById("fMapBox").getAttribute("style").includes("height:"), "the map box keeps its height before the map loads");
+  assert.ok(m.compareDocumentPosition(p.document.getElementById("fsum")) & p.window.Node.DOCUMENT_POSITION_PRECEDING, "the map comes right after Your picks");
+  assert.ok(m.compareDocumentPosition(p.document.getElementById("moreFilters")) & p.window.Node.DOCUMENT_POSITION_FOLLOWING, "the map comes before the other filters");
   assert.equal(p.document.querySelector('script[src*="find-map.js"]'), null, "find-map.js loaded with no IntersectionObserver report");
   assert.equal(p.window.TIG.findMap, undefined);
   p.window.close();

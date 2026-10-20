@@ -330,7 +330,7 @@
   }
 
   var PAGE = 60, shown = PAGE;
-  /* The map above the cards (find-map.js, which draws with the Map page's street map). It loads once its box comes near the screen,
+  /* The map under Your picks (find-map.js, which draws with the Map page's street map). It loads once its box comes near the screen,
      after the first draw, so the first load stays the same. A tap on a dot keeps only that city's cards (cityPick, not kept in the address). */
   var cityPick = null, mapList = null, mapAsked = false;
   function paintMap() { if (G.findMap && mapList) G.findMap.paint(mapList, state, cityPick); }

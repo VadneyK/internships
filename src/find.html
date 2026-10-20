@@ -15,12 +15,18 @@ scripts: find
 <section style="padding-block: 1rem 2rem;">
   <div class="wrap">
     <a class="skip-here noprint" href="#count">Skip the filters, go to the results</a>
-    <p class="small noprint" style="margin:0 0 .75rem;"><a href="#fMap">See the programs on a map</a></p>
     <form class="filters" id="filters" role="search" aria-label="Filter programs">
       <div class="fsum noprint" id="fsum" role="group" aria-labelledby="fsumT">
         <span class="fsum-t" id="fsumT">Your picks</span>
         <div class="fchips" id="fsumChips"><button class="fchip" type="button" data-fs="age" aria-label="Any age, change age">Any age</button><button class="fchip" type="button" data-fs="where" aria-label="Anywhere, change where">Anywhere</button><button class="fchip" type="button" data-fs="goal" aria-label="Any goal, change goal">Any goal</button><button class="fchip" type="button" data-fs="when" aria-label="Any time, change timing">Any time</button></div>
         <button class="fsum-clear" type="button" id="reset" hidden>Clear all</button>
+      </div>
+      <div class="noprint" id="fMap" role="region" aria-labelledby="fMapH">
+        <h2 class="lbl" id="fMapH" style="font-size:1rem;margin:0;">Programs on a map</h2>
+        <p class="small" id="fMapCount" aria-live="polite" style="margin:.4rem 0;">Each dot is a city with programs from the list below.</p>
+        <div class="mapbox gl" id="fMapBox" style="height:clamp(16rem, min(50vh, 90vw), 28rem);"><p class="small muted" id="fMapWait" style="margin:0;padding:1rem;">Loading the map.</p></div>
+        <p class="small" id="fMapCity" hidden style="margin:.6rem 0 0;">Showing only the city you tapped: <b></b> <button class="btn sm alt" type="button" id="fMapAll">Show every city</button></p>
+        <p class="small muted" style="margin:.5rem 0 0;">A dot is the city named on a card, not the exact address. On a phone, move the map with two fingers. <a href="map.html">Open the full map</a> to find the cities near you.</p>
       </div>
       <div class="fgroup noprint">
         <span class="lbl" id="l-goal">What do you want?</span>
@@ -124,13 +130,6 @@ scripts: find
       <a class="chip" href="younger.html">Ages 12 to 14</a>
       <a class="chip" href="jobs.html">Jobs that hire teens</a>
     </div>
-    <details class="noprint" id="fMap" open style="margin-bottom:1rem;">
-      <summary class="lbl" style="cursor:pointer;">See these programs on a map</summary>
-      <p class="small" id="fMapCount" aria-live="polite" style="margin:.4rem 0;">Each dot is a city with programs from the list below.</p>
-      <div class="mapbox gl" id="fMapBox" style="height:clamp(16rem, min(50vh, 90vw), 28rem);"><p class="small muted" id="fMapWait" style="margin:0;padding:1rem;">The map loads when you scroll to it.</p></div>
-      <p class="small" id="fMapCity" hidden style="margin:.6rem 0 0;">Showing only the city you tapped: <b></b> <button class="btn sm alt" type="button" id="fMapAll">Show every city</button></p>
-      <p class="small muted" style="margin:.5rem 0 0;">A dot is the city named on a card, not the exact address. On a phone, move the map with two fingers. <a href="map.html">Open the full map</a> to find the cities near you.</p>
-    </details>
 
     <div id="keepAsk" class="callout noprint" hidden role="group" aria-labelledby="keepAskH" style="margin-bottom:1rem;max-width:52rem;">
       <h2 id="keepAskH" tabindex="-1" style="font-size:1.25rem;margin:0 0 .35em;">Add these programs to your list?</h2>
