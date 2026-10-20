@@ -46,7 +46,10 @@ const DETAIL_FIELDS = ["who_can_apply", "how_to_apply", "notes", "duration", "pa
 // 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 632612 bytes gzipped. Approved by Kentaro 2026-10-19 (merge train). limit 630800 to 632700.
 // 2026-10-19 issue 25 Midwest campuses second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL) entries-detail.json gzip limit 604000 to 604100.
 // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 634432 bytes gzipped. Approved by Kentaro 2026-10-19 (merge train). limit 632700 to 634500.
-const GZIP_LIMIT = 634500;
+// 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,692 programs; PENDING PERSON APPROVAL): 604100 to 605500.
+// 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 635890 bytes gzipped. Approved by Kentaro 2026-10-19 (merge train). limit 634500 to 635900.
+// 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 635911 bytes gzipped. Approved by Kentaro 2026-10-19 (merge train). limit 635900 to 636000.
+const GZIP_LIMIT = 636000;
 
 function readText(file) {
   return fs.readFileSync(path.join(DATA, file), "utf8");

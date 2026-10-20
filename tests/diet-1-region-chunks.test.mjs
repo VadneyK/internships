@@ -428,7 +428,10 @@ const BUDGET = {
   // 2026-10-19 issue 25 Midwest campuses second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL) ?at=city:san-francisco raw 1387400 to 1389400, gzip 229000 to 229200.
   // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 1497927 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco raw 1496000 to 1498000.
   // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 247656 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco gzip 247500 to 247700.
-  "?at=city:san-francisco": { raw: 1498000, gzip: 247700, label: "a Bay Area city" },
+  // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,692 programs; PENDING PERSON APPROVAL): 1395500 to 1397100, gzip 230600 to 230800.
+  // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 1499779 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco raw 1498000 to 1499800.
+  // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 247931 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco gzip 247700 to 248000.
+  "?at=city:san-francisco": { raw: 1499800, gzip: 248000, label: "a Bay Area city" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston raw 1057000 to 1075700.
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston gzip 168000 to 170700.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston raw 1075700 to 1096100.
@@ -472,7 +475,10 @@ const BUDGET = {
   // 2026-10-19 issue 25 Midwest campuses second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL) ?at=city:boston raw 1173200 to 1175200, gzip 183800 to 184000.
   // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 1214331 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston raw 1212400 to 1214400.
   // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 188660 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston gzip 188500 to 188700.
-  "?at=city:boston": { raw: 1214400, gzip: 188700, label: "Boston" },
+  // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,692 programs; PENDING PERSON APPROVAL): 1175100 to 1176800, gzip 184000 to 184300.
+  // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 1216183 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston raw 1214400 to 1216200.
+  // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 188935 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston gzip 188700 to 189000.
+  "?at=city:boston": { raw: 1216200, gzip: 189000, label: "Boston" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska raw 867100 to 886400.
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska gzip 130500 to 132800.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska raw 886400 to 937900.
@@ -515,7 +521,10 @@ const BUDGET = {
   // 2026-10-19 issue 25 Midwest campuses second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL) ?at=state:nebraska raw 999800 to 1001800, gzip 149500 to 149700.
   // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 1038928 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=state:nebraska raw 1037000 to 1039000.
   // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 153977 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=state:nebraska gzip 153800 to 154000.
-  "?at=state:nebraska": { raw: 1039000, gzip: 154000, label: "a Plains state" },
+  // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,692 programs; PENDING PERSON APPROVAL): 1001700 to 1003400, gzip 149700 to 149900.
+  // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 1040780 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=state:nebraska raw 1039000 to 1040800.
+  // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 154252 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=state:nebraska gzip 154000 to 154300.
+  "?at=state:nebraska": { raw: 1040800, gzip: 154300, label: "a Plains state" },
 };
 for (const [search, b] of Object.entries(BUDGET)) {
   test("first-load data bytes for " + b.label + " stay under the pinned budget and far under the whole lite file", async () => {

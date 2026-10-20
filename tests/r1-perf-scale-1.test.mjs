@@ -77,7 +77,11 @@ const LIMITS = {
     // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 5495797 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json raw 5481100 to 5495800.
     // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 1243307 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json gzip 1239900 to 1243400.
     // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 5495840 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json raw 5495800 to 5495900.
-    "data/entries.json": { raw: 5495900, gzip: 1243400 },
+    // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,692 programs; PENDING PERSON APPROVAL): raw 5237600 to 5250100, gzip 1184900 to 1187500.
+    // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 5508369 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json raw 5495900 to 5508400.
+    // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 1246168 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json gzip 1243400 to 1246200.
+    // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 5508419 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json raw 5508400 to 5508500.
+    "data/entries.json": { raw: 5508500, gzip: 1246200 },
     // Raised from 2020000 to 2040000 on 2026-10-10 after the fact check: the page re-reads added about 6,000 bytes (0.3 percent) of plainer deadline_text across 266 cards, saying what the page does and does not state. No single card is the cause. Still about 1,145 bytes per program, under the per-program limit.
     // Gzip limit raised from 440000 to 450000 on 2026-10-10: the card fixes this round (pay wording, opens-soon dates) put it at 440053.
     // Raised again on 2026-10-12 for the 178 more cards: entries-lite.json is 2,097,871 bytes (437,135 gzipped), 947 bytes per program. Raw from 2040000 to 2160000. The gzip limit stays 450000. PENDING PERSON APPROVAL, as for entries.json.
@@ -132,7 +136,11 @@ const LIMITS = {
     // 2026-10-19 issue 25 Midwest campuses second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL) data/entries-lite.json raw 2540600 to 2547400 (gzip still fits).
     // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 2667460 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json raw 2660700 to 2667500.
     // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 555043 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json gzip 553800 to 555100.
-    "data/entries-lite.json": { raw: 2667500, gzip: 555100 },
+    // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,692 programs; PENDING PERSON APPROVAL): raw 2546800 to 2552700, gzip 531600 to 532200.
+    // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 2673498 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json raw 2667500 to 2673500.
+    // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 556352 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json gzip 555100 to 556400.
+    // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 2673515 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json raw 2673500 to 2673600.
+    "data/entries-lite.json": { raw: 2673600, gzip: 556400 },
     // Raised on 2026-10-11 for ticket p7-regions-1: entries-core.json is 368,169 bytes (36,864 gzipped). Raw from 320000 to 375000, gzip from 32000 to 37500.
     // PENDING PERSON APPROVAL: same as entries.json above. Do not raise again without a person's recorded sign-off.
     // Raised again on 2026-10-12 for the 178 more cards: entries-core.json is 400,279 bytes (41,089 gzipped). Raw from 375000 to 420000, gzip from 37500 to 43000. PENDING PERSON APPROVAL, as above.
@@ -172,7 +180,10 @@ const LIMITS = {
     // 2026-10-19 issue 25 Midwest campuses second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL) data/entries-core.json raw 484100 to 485400 (gzip still fits).
     // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 508275 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json raw 507000 to 508300.
     // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 51266 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json gzip 51200 to 51300.
-    "data/entries-core.json": { raw: 508300, gzip: 51300 },
+    // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,692 programs; PENDING PERSON APPROVAL): 485200 to 486300 (gzip still fits).
+    // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 509393 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json raw 508300 to 509400.
+    // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 51376 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json gzip 51300 to 51400.
+    "data/entries-core.json": { raw: 509400, gzip: 51400 },
   },
   liteBytesPerProgram: 1300,
   // Raised from 32000 to 32100 on 2026-10-10 for the footer link to the teachers and counselors handout, which every page carries. ready.html is 32009 bytes.
@@ -347,7 +358,8 @@ test("mutation: a lite file at 2,300,000 bytes is reported, and only lite is rep
     // 2026-10-17 (after #45) SoCal, Santa Barbara and Merced cards read in a real browser (+16 cards, 2,696 programs; PENDING PERSON APPROVAL): 2540600 to 2555400.
     // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,700 programs) lite mutation message 2540600 to 2560200. PENDING PERSON APPROVAL.
     // 2026-10-19 issue 27 San Diego, Inland Empire and Merced second pass, official pages read by hand (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 2540600 to 2547400.
-    `${LITE} is ${big} bytes, over the limit of 2667500 bytes`, // 2026-10-19 issue 25 Midwest campuses second pass (2,687 programs; PENDING PERSON APPROVAL); was 2540600
+    // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,692 programs; PENDING PERSON APPROVAL): 2546800 to 2552700.
+    `${LITE} is ${big} bytes, over the limit of 2673600 bytes`, // 2026-10-17: PNW and Vancouver cards rebased on e7628a4 (2,650 programs); was 2496100
     `${LITE} is ${Math.round(big / programCount)} bytes per program (${big} bytes for ${programCount} programs), over the limit of 1300 bytes per program`,
   ]);
 });

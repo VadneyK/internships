@@ -51,7 +51,10 @@ const PAGES = {
   // 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 2660641 bytes. Approved by Kentaro 2026-10-19 (merge train). find.html ceiling 2653900 to 2660700.
   // 2026-10-19 issue 25 Midwest campuses second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL) find.html limit 2540600 to 2547400.
   // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 2667460 bytes. Approved by Kentaro 2026-10-19 (merge train). find.html ceiling 2660700 to 2667500.
-  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2667500 },
+  // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,692 programs; PENDING PERSON APPROVAL): 2546800 to 2552700.
+  // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 2673498 bytes. Approved by Kentaro 2026-10-19 (merge train). find.html ceiling 2667500 to 2673500.
+  // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 2673515 bytes. Approved by Kentaro 2026-10-19 (merge train). find.html ceiling 2673500 to 2673600.
+  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2673600 },
   "calendar.html": { allowed: ["calendar.json", "entries-cal.json"], ceiling: 150000 },
   // 2026-10-15: the Map page reads the map projection and the city points (754,977 bytes). PENDING PERSON APPROVAL, as above.
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) map.html limit 760000 to 763100. PENDING PERSON APPROVAL.
@@ -74,7 +77,9 @@ const PAGES = {
   // 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 810035 bytes. Approved by Kentaro 2026-10-19 (merge train). map.html ceiling 808500 to 810100.
   // 2026-10-19 issue 25 Midwest campuses second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL) map.html limit 775900 to 777800.
   // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 811929 bytes. Approved by Kentaro 2026-10-19 (merge train). map.html ceiling 810100 to 812000.
-  "map.html": { allowed: ["entries-map.json", "map.json"], ceiling: 812000 },
+  // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,692 programs; PENDING PERSON APPROVAL): 777600 to 779200.
+  // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 813636 bytes. Approved by Kentaro 2026-10-19 (merge train). map.html ceiling 812000 to 813700.
+  "map.html": { allowed: ["entries-map.json", "map.json"], ceiling: 813700 },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. insights.html ceiling 697700 to 716100.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. insights.html limit 716100 to 736500.
   // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. insights.html limit 736500 to 748900.
@@ -100,7 +105,9 @@ const PAGES = {
   // 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 835195 bytes. Approved by Kentaro 2026-10-19 (merge train). insights.html ceiling 833400 to 835200.
   // 2026-10-19 issue 25 Midwest campuses second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL) insights.html limit 798100 to 800100.
   // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 837220 bytes. Approved by Kentaro 2026-10-19 (merge train). insights.html ceiling 835200 to 837300.
-  "insights.html": { allowed: ["entries-stats.json"], ceiling: 837300 },
+  // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,692 programs; PENDING PERSON APPROVAL): 800000 to 801700.
+  // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 839072 bytes. Approved by Kentaro 2026-10-19 (merge train). insights.html ceiling 837300 to 839100.
+  "insights.html": { allowed: ["entries-stats.json"], ceiling: 839100 },
   // younger.html: raised from 336000 to 340000 on 2026-10-11 (r5-younger-1: pet care card and address-safe script added 2.7 KB to younger.json)
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. younger.html ceiling 442000 to 452800.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. younger.html limit 452800 to 465400.
@@ -128,7 +135,9 @@ const PAGES = {
   // 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 525207 bytes. Approved by Kentaro 2026-10-19 (merge train). younger.html ceiling 524000 to 525300.
   // 2026-10-19 issue 25 Midwest campuses second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL) younger.html limit 502300 to 503600.
   // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 526488 bytes. Approved by Kentaro 2026-10-19 (merge train). younger.html ceiling 525300 to 526500.
-  "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 526500 },
+  // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,692 programs; PENDING PERSON APPROVAL): 503500 to 504500.
+  // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 527606 bytes. Approved by Kentaro 2026-10-19 (merge train). younger.html ceiling 526500 to 527700.
+  "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 527700 },
   "interview.html": { allowed: ["interview.json", "permits.json"], ceiling: 95000 },
   // permit.html and states.html: raised from 82000 to 83000 on 2026-10-12 (r2-accuracy-2 and r2-accuracy-8: the 2027 wage lines and the Washington, DC wording; permits.json is 82,370 bytes)
   "permit.html": { allowed: ["permits.json"], ceiling: 83000 },

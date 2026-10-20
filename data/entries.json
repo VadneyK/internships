@@ -6073,6 +6073,87 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "austin-parks-roving-leaders",
+  "name": "Roving Leaders teen program",
+  "org": "Austin Parks and Recreation",
+  "regions": [
+   "austin"
+  ],
+  "city": "Austin, TX",
+  "type": "leadership",
+  "fields": [
+   "social-impact"
+  ],
+  "what_you_do": "Build life and leadership skills and talk about hard topics teens face every day. Learn problem solving and how your habits connect to where you live. Join fun, learning and culture activities.",
+  "min_age": 13,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Ages 13 to 18 (summer camp listing). The listing does not give other rules.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free. The summer camp listing shows a cost of $0.",
+  "season": "summer",
+  "duration": "Summer 2026 camp: June 8 to August 7, Monday to Friday, 9 a.m. to 2 p.m.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Summer 2026 camp ran June 8 to August 7, 2026, and now shows as unavailable. 2027 dates are not posted. The listing says late additions are always welcome.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Sign up through the city parks registration search for Roving Leaders, or call (512) 974-3927.",
+  "needs_work_permit": false,
+  "url": "https://txaustinweb.myvscloud.com/webtrac/web/search.html?Action=Start&keyword=Roving&keywordoption=Match+One&display=Detail&module=AR&arwebsearch_buttonsearch=yes",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://txaustinweb.myvscloud.com/webtrac/web/search.html?Action=Start&keyword=Roving&keywordoption=Match+One&display=Detail&module=AR&arwebsearch_buttonsearch=yes",
+   "https://www.austintexas.gov/parks/programs/teen-recreation"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "Rides are available if you ask. The old city page for Roving Leaders no longer opens after the city site redesign, so this card uses the city sign-up listing. Not a job.",
+  "verified_on_label": "Oct 19, 2026"
+ },
+ {
+  "id": "austin-parks-totally-cool-totally-art",
+  "name": "Totally Cool Totally Art (TCTA) free teen art classes",
+  "org": "Austin Parks and Recreation",
+  "regions": [
+   "austin"
+  ],
+  "city": "Austin, TX",
+  "type": "leadership",
+  "fields": [
+   "arts-media"
+  ],
+  "what_you_do": "Make art after school with real artists at a city rec center. You can try painting and drawing, or metals and mixed media. Other sessions are digital art and cartoons, or foam sculpture and games.",
+  "min_age": 13,
+  "max_age": 18,
+  "grades": "Grades 7 to 12 (Montopolis listing)",
+  "who_can_apply": "Teens. The Virginia L. Brown center listing says ages 13 to 18, and the Montopolis listing says grades 7 to 12. You must sign up first, and space is limited.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free. The classes cost nothing.",
+  "season": "school-year",
+  "duration": "After school. The Montopolis class meets Monday and Wednesday, 6 to 8 p.m. Other centers set their own times.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "2026 to 2027 classes are listed now. Montopolis sign up opened October 1, 2026. No end date is posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Use the Register online link on the TCTA page, or call the rec center you want to go to. Centers include Dittmar, Dove Springs, Gus Garcia, Mendez, Montopolis, Northwest and Virginia L. Brown.",
+  "needs_work_permit": false,
+  "url": "https://www.austintexas.gov/parks/programs/totally-cool-totally-art",
+  "apply_url": "https://txaustinweb.myvscloud.com/webtrac/web/search.html?Action=Start&keyword=TCTA&keywordoption=Match+One&display=Detail&module=AR&arwebsearch_buttonsearch=yes",
+  "sources_fetched": [
+   "https://www.austintexas.gov/parks/programs/totally-cool-totally-art",
+   "https://txaustinweb.myvscloud.com/webtrac/web/search.html?Action=Start&keyword=TCTA&keywordoption=Match+One&display=Detail&module=AR&arwebsearch_buttonsearch=yes",
+   "https://www.austintexas.gov/parks/programs/teen-recreation"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "Program contact: Clint Hofmeister, TCTA coordinator, 512-978-2476. Each center listing has its own staff contact. Not a job.",
+  "verified_on_label": "Oct 19, 2026"
+ },
+ {
   "id": "austin-safe-summer-youth-leadership-academy",
   "name": "SAFE Expect Respect Summer Youth Leadership Academy",
   "org": "The SAFE Alliance",
@@ -102743,6 +102824,47 @@
   "verified_on_label": "Oct 14, 2026"
  },
  {
+  "id": "twin-cities-allina-health-volunteers",
+  "name": "Allina Health hospital and clinic volunteers (ages 15 and up)",
+  "org": "Allina Health",
+  "regions": [
+   "twin-cities"
+  ],
+  "city": "Minneapolis, MN",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Help at an Allina hospital or clinic. Most new helpers at Abbott Northwestern start by showing patients and guests where to go. Other roles help in patient care units, rehab therapy, the gift shop or the front desk.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Ages 15 and up for hospitals and clinics, and for adaptive sports and recreation. Hospice roles are for ages 18 and up. A background check is only for ages 18 and up.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Abbott Northwestern lists an $8 meal credit each time you volunteer, a free flu shot and free parking.",
+  "season": "year-round",
+  "duration": "Abbott Northwestern shifts are on weekdays, 8 a.m. to noon or noon to 4 p.m.",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline posted. Most people finish the steps in under 30 days.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the online application. Then you have an interview (in person, by phone or by email), take an online class and get a health check for your role. Last, you train in person.",
+  "needs_work_permit": false,
+  "url": "https://volunteer.allinahealth.org/custom/501/volunteer_faq",
+  "apply_url": "https://volunteer.allinahealth.org/custom/501/org_search",
+  "sources_fetched": [
+   "https://volunteer.allinahealth.org/custom/501/volunteer_faq",
+   "https://volunteer.allinahealth.org/custom/501/volunteer_home",
+   "https://volunteer.allinahealth.org/custom/501/organization_details/1073"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "Pick a hospital or clinic when you apply. Each site has its own roles. You need a flu shot each year, or you can ask to skip it. Abbott Northwestern contact: charlie.srock@allina.com. Other questions: volunteer@allina.com.",
+  "verified_on_label": "Oct 19, 2026"
+ },
+ {
   "id": "twin-cities-augsburg-urban-debate-league-summer-camps",
   "name": "Summer Speech and Debate Camps (high school)",
   "org": "Augsburg Minnesota Urban Debate League",
@@ -103494,6 +103616,46 @@
   "verified_on_label": "Oct 10, 2026"
  },
  {
+  "id": "twin-cities-minneapolis-parks-rec-plus-activity-assistant",
+  "name": "Rec Plus Activity Assistant (ages 16 and up)",
+  "org": "Minneapolis Park and Recreation Board",
+  "regions": [
+   "twin-cities"
+  ],
+  "city": "Minneapolis, MN",
+  "type": "paid-youth-program",
+  "fields": [
+   "education"
+  ],
+  "what_you_do": "Watch over kids ages 5 to 12 at a park before and after school, and in summer. Help with crafts, outdoor play, cooking class and open gym. Help the lead staff run the day.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Minimum age 16. The job post prefers a high school diploma, some college classes in child care or a close field, and 3 months of work with kids. You get CPR and First Aid within 3 months of being hired.",
+  "paid_type": "paid",
+  "pay_detail": "$16.45 to $19 per hour, based on school and work history. You also earn sick and safe time.",
+  "season": "year-round",
+  "duration": "10 to 25 hours a week, Monday to Friday. School year shifts are 7 to 9:30 a.m. or 2:30 to 6 p.m. Summer hours vary.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Posted on the Park Board temporary jobs page in October 2026. No deadline is listed.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Email your questions, resume or school transcripts to recplus@minneapolisparks.org. Say which part of Minneapolis you want to work in: North, Northeast, South or Southwest.",
+  "needs_work_permit": null,
+  "url": "https://www.minneapolisparks.org/activity-assistant-rec-plus/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.minneapolisparks.org/activity-assistant-rec-plus/",
+   "https://www.minneapolisparks.org/jobs/temporary_jobs/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 1,
+  "notes": "If you get an offer, there is a background check with fingerprints. The posting does not give a closing date, so check the temporary jobs page to see if it is still listed. Minnesota work permit rules were not checked.",
+  "verified_on_label": "Oct 19, 2026"
+ },
+ {
   "id": "twin-cities-minneapolis-parks-teen-teamworks",
   "name": "Minneapolis Parks Teen Teamworks",
   "org": "Minneapolis Park and Recreation Board",
@@ -103520,7 +103682,7 @@
   "deadline_text": "The page says applications for the 2026 season are closed. 2027 dates are not posted.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Watch the Youth Employment and Training Initiatives page and the Park Board temporary jobs page (minneapolisparks.org/jobs/temporary_jobs/) for the next application.",
+  "how_to_apply": "Watch two pages for the next application. One is the Youth Employment and Training Initiatives page. The other is the Park Board page for short term jobs (minneapolisparks.org/jobs/temporary_jobs/).",
   "needs_work_permit": null,
   "url": "https://www.minneapolisparks.org/activities-events/youth-programs/teen_programs/youth_employment_and_training_-initiatives/",
   "apply_url": "https://www.minneapolisparks.org/jobs/temporary_jobs/",
@@ -103529,10 +103691,10 @@
    "https://www.minneapolisparks.org/activities-events/youth-programs/teen_programs/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-19",
   "priority": 2,
-  "notes": "Pay, season and hours are not stated on the page, so ask the Park Board before you plan. The same page lists Minneapolis Park Corps for ages 18 to 24 as paid training (not for teens). The Park Board teen page also lists Youthline, a mentorship program for ages 12 to 17. Minnesota work permit rules were not checked.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "Pay, season and hours are not stated on the page, so ask the Park Board before you plan. The same page lists Minneapolis Park Corps for ages 18 to 24 as paid training (not for teens). The Park Board teen page also lists Youthline, a mentorship program for ages 12 to 17. On October 19, 2026 the Park Board temporary jobs page listed a Rec Plus Activity Assistant job for ages 16 and up (see its own card). Minnesota work permit rules were not checked.",
+  "verified_on_label": "Oct 19, 2026"
  },
  {
   "id": "twin-cities-minneapolis-parks-youth-advisory-council",
@@ -104369,6 +104531,47 @@
   "verified_on_label": "Oct 10, 2026"
  },
  {
+  "id": "twin-cities-umn-mnri-technology-day-camp",
+  "name": "MnRI Technology Day Camp (grades 6 to 8)",
+  "org": "Minnesota Robotics Institute, University of Minnesota",
+  "regions": [
+   "twin-cities"
+  ],
+  "city": "Minneapolis, MN",
+  "type": "pre-college",
+  "fields": [
+   "engineering",
+   "tech-cs"
+  ],
+  "what_you_do": "Spend 3 days learning about robots. Build a robot, solder, design circuits, draw parts on a computer and program robots. On the last day you give a short talk about what you made.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Entering grades 6 to 8",
+  "who_can_apply": "Students entering grades 6 to 8. Only 30 kids can attend. Students who came before are asked not to sign up again, since the activities stay the same.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free to attend.",
+  "season": "summer",
+  "duration": "3 days, 9 a.m. to 3:45 p.m. (drop off from 8:15 a.m., pick up by 4 p.m.)",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Summer 2026 camp was August 3 to 5, 2026. Sign up is closed. 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Watch the camp page for the next sign up.",
+  "needs_work_permit": false,
+  "url": "https://cse.umn.edu/mnri/mnri-technology-day-camp",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://cse.umn.edu/mnri/mnri-technology-day-camp",
+   "https://cse.umn.edu/college/k-12-outreach/summer-camps"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 3,
+  "notes": "Drop off and pick up are at Keller Hall on the Minneapolis campus. One parent or guardian may come to the talks on Wednesday afternoon. Not a job.",
+  "verified_on_label": "Oct 19, 2026"
+ },
+ {
   "id": "twin-cities-umn-rooted-in-stem",
   "name": "Rooted in STEM",
   "org": "University of Minnesota College of Science and Engineering",
@@ -104407,6 +104610,48 @@
   "priority": 2,
   "notes": "You must get yourself to the program. Money for rides is available if you ask. Only 10th graders are accepted from 2025 on.",
   "verified_on_label": "Oct 10, 2026"
+ },
+ {
+  "id": "twin-cities-umn-under-the-hood-ai-summer-program",
+  "name": "Under the Hood: Data Science and AI summer program (formerly Run the World: AI Explorers)",
+  "org": "University of Minnesota Data Science and AI Hub",
+  "regions": [
+   "twin-cities"
+  ],
+  "city": "Minneapolis, MN",
+  "type": "pre-college",
+  "fields": [
+   "tech-cs",
+   "science"
+  ],
+  "what_you_do": "Learn Python and build models that make guesses from real data, like sports and nature data. Week 2 covers neural networks, computer vision and AI that makes new things. You use UMN labs and hear from researchers.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Rising grades 11 and 12",
+  "who_can_apply": "Rising 11th and 12th graders. You do not need to know how to code. Week 1 is required before Week 2.",
+  "paid_type": "fee-based",
+  "pay_detail": "Summer 2026 cost: $125 for Week 1 and $175 for Week 2. The page does not mention aid.",
+  "season": "summer",
+  "duration": "1 or 2 weeks, 8:30 a.m. to 4 p.m. each day",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Summer 2026: Week 1 was July 13 to 17 and Week 2 was July 20 to 24, 2026. 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Use the Register link on the program page when the next summer is posted.",
+  "needs_work_permit": false,
+  "url": "https://dsai-hub.umn.edu/Under-the-hood-summer-program",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://dsai-hub.umn.edu/Under-the-hood-summer-program",
+   "https://ai.umn.edu/news/dsi-takes-over-world",
+   "https://cse.umn.edu/college/k-12-outreach/summer-camps"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "Day program at Keller and Tate Halls. The UMN science and engineering camps page still calls it Run the World: AI Explorers and says rising 9th and 10th graders may be let in case by case. Not a job.",
+  "verified_on_label": "Oct 19, 2026"
  },
  {
   "id": "twin-cities-umn-vetcamp",
