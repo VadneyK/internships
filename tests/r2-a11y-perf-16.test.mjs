@@ -80,6 +80,8 @@ const PAGES = {
   // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,692 programs; PENDING PERSON APPROVAL): 777600 to 779200.
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 813636 bytes. Approved by Kentaro 2026-10-19 (merge train). map.html ceiling 812000 to 813700.
   "map.html": { allowed: ["entries-map.json", "map.json"], ceiling: 813700 },
+  // 2026-10-20: the unlisted Ignition page shows the same map, so the same files and ceiling as map.html. Kentaro's instruction 2026-10-20.
+  "ignition.html": { allowed: ["entries-map.json", "map.json"], ceiling: 813700 },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. insights.html ceiling 697700 to 716100.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. insights.html limit 716100 to 736500.
   // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. insights.html limit 736500 to 748900.

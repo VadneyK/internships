@@ -234,6 +234,14 @@
         el.textContent = t; labelsG.appendChild(el);
       });
   }
+  /* The zoom view a page opens on: ?view=bay in the address, or data-view="bay" on the map box (the Ignition page).
+     An id that is not a view, or "all", leaves the whole map, so the Map page opens as it always has. */
+  function startView() {
+    var q = "";
+    try { q = new URLSearchParams(location.search).get("view") || ""; } catch (e) { q = ""; }
+    var id = q || $("mapBox").getAttribute("data-view") || "";
+    return id !== "all" && views.some(function (v) { return v.id === id; }) ? id : "";
+  }
   function setView(id) {
     if (!svg) return;
     var v = views.filter(function (x) { return x.id === id; })[0]; if (!v) return;
@@ -587,6 +595,9 @@
         gl.resize();
         gl.setData(glList());
         if (cur) gl.select(pts.indexOf(cur));
+        /* a zoom button pressed before the street map arrived (or the start view) takes the street map there too */
+        var pv = $("mZoom").querySelector('[aria-pressed="true"]');
+        if (!cur && pv && pv.getAttribute("data-v") !== "all") setView(pv.getAttribute("data-v"));
         viewSoon();
       }, glFail);
     };
@@ -636,6 +647,8 @@
     paintList(false);
     count();
     $("mRead").textContent = "City points read " + data.read + ".";
+    var sv = startView();
+    if (sv) setView(sv);
     startGL();
     window.addEventListener("beforeprint", function () { groups.forEach(function (x) { if (x.dirty && x.el) fill(x); }); });
     window.addEventListener("resize", function () { if (svg) { pts.forEach(function (p) { if (p.t0 == null) p.sz = pxSize(p.n); }); draw(); } });

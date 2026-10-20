@@ -14,8 +14,8 @@ const BASE = "https://vadneyk.github.io/internships/";
 const TODAY = new Date(Date.now() + 86400000).toISOString().slice(0, 10);
 
 // Documented exceptions.
-const NOT_IN_SITEMAP = new Set(["404.html", "leaders.html"]); // error page; noindex page
-const NOT_LINKED_FROM_HOME = new Set(["404.html", "index.html", "leaders.html"]); // error page; the home page itself; noindex page
+const NOT_IN_SITEMAP = new Set(["404.html", "leaders.html", "ignition.html"]); // error page; noindex pages
+const NOT_LINKED_FROM_HOME = new Set(["404.html", "index.html", "leaders.html", "ignition.html"]); // error page; the home page itself; noindex pages
 
 const src = new Set(readdirSync(join(root, "src")).filter((f) => f.endsWith(".html") && f !== "_layout.html"));
 const built = new Set(readdirSync(root).filter((f) => f.endsWith(".html")));

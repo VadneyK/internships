@@ -16,9 +16,10 @@ const permits = JSON.parse(read("data/permits.json"));
 
 const pagesLine = build.match(/^PAGES = \[(.*)\]/m);
 const PAGES = [...pagesLine[1].matchAll(/"([^"]+)"/g)].map((m) => m[1]);
-// build.py leaves leaders out of sitemap.xml on purpose. The README must match that.
+// build.py leaves leaders (and since 2026-10-20 ignition) out of sitemap.xml on purpose. The README must match that.
 const sitemapHidesLeaders = build.includes('if p != "leaders"');
-const PUBLIC_FILES = ["index.html", ...PAGES.filter((p) => p !== "leaders").map((p) => p + ".html")];
+const UNLISTED = [...(build.match(/^_pages = .*$/m) || [""])[0].matchAll(/!=\s*"([^"]+)"/g)].map((m) => m[1]);
+const PUBLIC_FILES = ["index.html", ...PAGES.filter((p) => !UNLISTED.includes(p)).map((p) => p + ".html")];
 
 test("the README table names every public page and the home page", () => {
   assert.ok(sitemapHidesLeaders, "build.py sitemap no longer hides leaders; update the README table to match");

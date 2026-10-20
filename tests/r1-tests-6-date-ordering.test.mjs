@@ -41,6 +41,7 @@ const LASTMOD_AFTER_BUILD = {};
 const ROOT_NOT_IN_SITEMAP = {
   "404.html": "error page, not a destination",
   "leaders.html": "noindex and unlisted on purpose (tools/build.py keeps it out until approved)",
+  "ignition.html": "noindex and unlisted on purpose until Ignition's leaders approve promoting it (tools/build.py keeps it out, 2026-10-20)",
 };
 
 // ---------- pure helpers ----------

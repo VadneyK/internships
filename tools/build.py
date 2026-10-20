@@ -82,7 +82,7 @@ def es_links(out):
     return re.sub(r'(\s(?:href|src)=")((?![a-zA-Z][a-zA-Z0-9+.-]*:|#|/|\.\./)[^"]*)', rel, out)
 
 
-PAGES = ["find", "map", "playbook", "resume", "ready", "jobs", "permit", "languages", "interview", "calendar", "younger", "parents", "handout", "paycheck", "safety", "share", "insights", "rules", "states", "contribute", "leaders", "about"]
+PAGES = ["find", "map", "playbook", "resume", "ready", "jobs", "permit", "languages", "interview", "calendar", "younger", "parents", "handout", "paycheck", "safety", "share", "insights", "rules", "states", "contribute", "leaders", "ignition", "about"]
 
 def safety_static(body):
     """Fill {{safety:<section id>}} in src/safety.html from data/safety.json.
@@ -254,7 +254,7 @@ def build(name, lang="en"):
         rep.update(jobs_static())
     if name == "permit":
         rep.update(permit_static())
-    if name == "map":
+    if name in ("map", "ignition"):  # the Ignition page shows the same map, opened on the Bay Area
         rep.update(map_static())
     # The "Text this to a parent" link and Copy link button that assets/js/common.js adds to a .share-parent row, shipped in the
     # markup so the row does not grow when the script runs. shareToParent finds them and wires them up.
@@ -310,7 +310,8 @@ for _p in ES_PAGES:
 
 # robots.txt and sitemap.xml
 import datetime as _dt
-_pages = ["index"] + [p for p in PAGES if p != "leaders"]  # leaders is unlisted until the owner approves it
+# leaders is unlisted until the owner approves it. ignition (2026-10-20) is unlisted until Ignition's leaders approve promoting it.
+_pages = ["index"] + [p for p in PAGES if p != "leaders" and p != "ignition"]
 _today = meta.get("checked", _dt.date.today().isoformat())
 _es_live = [p for p in ES_PAGES if not es_draft(dict(re.findall(r"^(\w+):\s*(.*)$", open(os.path.join(ES_DIR, p + ".html"), encoding="utf-8").read().split("\n---\n", 1)[0], flags=re.M)))]
 _urls = "".join("  <url><loc>%s%s</loc><lastmod>%s</lastmod></url>\n" % (BASE, page_url(p, "en"), _today) for p in _pages)

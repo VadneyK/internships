@@ -22,6 +22,8 @@ const EXPECTED = {
   // map.html: the count line under the filters, the Near me status (asking, refused, nothing near), and the street map's
   // "In this view" line (said 800 ms after the map stops moving)
   "map.html": [{ id: "mNearStatus", role: "status" }, { id: "mCount", role: "aria-live=polite" }, { id: "mView", role: "status" }],
+  // ignition.html (2026-10-20, unlisted): the same map as map.html, so the same three lines, with the map above the Near me button
+  "ignition.html": [{ id: "mCount", role: "aria-live=polite" }, { id: "mView", role: "status" }, { id: "mNearStatus", role: "status" }],
   "find.html": [{ id: "ageUnder14Region", role: "aria-live=polite" }, { id: "countLive", role: "status" }, { id: "townHelp", role: "status" }],
   "index.html": [
     { id: "matchStatus", role: "status" },
