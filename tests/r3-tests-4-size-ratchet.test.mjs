@@ -54,7 +54,9 @@ const TABLE = {
   // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 499081 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json ceiling 492300 to 499100.
   // 2026-10-17 (after #45) SoCal, Santa Barbara and Merced cards read in a real browser (+16 cards, 2,696 programs; PENDING PERSON APPROVAL): 484100 to 487200.
   // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 502100 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json ceiling 499100 to 502200.
-  "data/entries-core.json": { ceiling: 502200, reason: "data file, 368201 bytes measured 2026-10-10" },
+  // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,700 programs) data/entries-core.json limit 484100 to 487800. PENDING PERSON APPROVAL.
+  // 2026-10-19: the 20 Midwest and Texas cards (#50) after #43 and #49, 505782 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json ceiling 502200 to 505800.
+  "data/entries-core.json": { ceiling: 505800, reason: "data file, 368201 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-detail.json ceiling 1731000 to 1772700.
   // 2026-10-13: four repointed links after the link check. data/entries-detail.json limit 1772700 to 1772900.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-detail.json limit 1772900 to 1823500.
@@ -82,7 +84,9 @@ const TABLE = {
   // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 2046970 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-detail.json ceiling 2018800 to 2047000.
   // 2026-10-17 (after #45) SoCal, Santa Barbara and Merced cards read in a real browser (+16 cards, 2,696 programs; PENDING PERSON APPROVAL): 1980900 to 1993500.
   // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 2059542 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-detail.json ceiling 2047000 to 2059600.
-  "data/entries-detail.json": { ceiling: 2059600, reason: "data file, 1521373 bytes measured 2026-10-10" },
+  // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,700 programs) data/entries-detail.json limit 1980900 to 1995400. PENDING PERSON APPROVAL.
+  // 2026-10-19: the 20 Midwest and Texas cards (#50) after #43 and #49, 2074102 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-detail.json ceiling 2059600 to 2074200.
+  "data/entries-detail.json": { ceiling: 2074200, reason: "data file, 1521373 bytes measured 2026-10-10" },
   "data/entries-home.json": { ceiling: 899400, reason: "data file, 817599 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-lite.json ceiling 2223100 to 2277600.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-lite.json limit 2277600 to 2341900.
@@ -108,7 +112,9 @@ const TABLE = {
   // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 2619357 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json ceiling 2584100 to 2619400.
   // 2026-10-17 (after #45) SoCal, Santa Barbara and Merced cards read in a real browser (+16 cards, 2,696 programs; PENDING PERSON APPROVAL): 2540600 to 2555400.
   // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 2634217 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json ceiling 2619400 to 2634300.
-  "data/entries-lite.json": { ceiling: 2634300, reason: "data file, 1937500 bytes measured 2026-10-10" },
+  // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,700 programs) data/entries-lite.json limit 2540600 to 2560200. PENDING PERSON APPROVAL.
+  // 2026-10-19: the 20 Midwest and Texas cards (#50) after #43 and #49, 2653835 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json ceiling 2634300 to 2653900.
+  "data/entries-lite.json": { ceiling: 2653900, reason: "data file, 1937500 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json ceiling 697700 to 716100.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json limit 716100 to 736500.
   // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json limit 736500 to 748900.
@@ -128,7 +134,9 @@ const TABLE = {
   // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 822613 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-stats.json ceiling 811900 to 822700.
   // 2026-10-17 (after #45) SoCal, Santa Barbara and Merced cards read in a real browser (+16 cards, 2,696 programs; PENDING PERSON APPROVAL): 798100 to 802900.
   // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 827451 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-stats.json ceiling 822700 to 827500.
-  "data/entries-stats.json": { ceiling: 827500, reason: "data file, 606782 bytes measured 2026-10-10" },
+  // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,700 programs) data/entries-stats.json limit 798100 to 804000. PENDING PERSON APPROVAL.
+  // 2026-10-19: the 20 Midwest and Texas cards (#50) after #43 and #49, 833395 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-stats.json ceiling 827500 to 833400.
+  "data/entries-stats.json": { ceiling: 833400, reason: "data file, 606782 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries.json ceiling 4567200 to 4677300.
   // 2026-10-13: four repointed links after the link check. data/entries.json limit 4677300 to 4677700.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries.json limit 4677700 to 4809900.
@@ -158,7 +166,9 @@ const TABLE = {
   // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 5394608 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json ceiling 5394600 to 5394700.
   // 2026-10-17 (after #45) SoCal, Santa Barbara and Merced cards read in a real browser (+16 cards, 2,696 programs; PENDING PERSON APPROVAL): 5223300 to 5254900.
   // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 5426198 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json ceiling 5394700 to 5426200.
-  "data/entries.json": { ceiling: 5426200, reason: "data file, 3996617 bytes measured 2026-10-10" },
+  // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,700 programs) data/entries.json limit 5223300 to 5263300. PENDING PERSON APPROVAL.
+  // 2026-10-19: the 20 Midwest and Texas cards (#50) after #43 and #49, 5466315 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json ceiling 5426200 to 5466400.
+  "data/entries.json": { ceiling: 5466400, reason: "data file, 3996617 bytes measured 2026-10-10" },
   "data/expiring-dates.json": { ceiling: 1700, reason: "data file, 1530 bytes measured 2026-10-10" },
   "data/gaps.json": { ceiling: 5400, reason: "data file, 4832 bytes measured 2026-10-10" },
   "data/interview.json": { ceiling: 12400, reason: "data file, 11207 bytes measured 2026-10-10" },
@@ -205,7 +215,8 @@ const TABLE = {
   // Raised from 58100 to 59300 on 2026-10-12 for ticket diet-1 (Where group files on the Programs page). 59217 bytes measured.
   "data/entries-map.json": { ceiling: 667300, reason: "data file for the Map page, 606587 bytes measured 2026-10-15 (PENDING PERSON APPROVAL)" },
   // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) data/geo-overrides.json limit 19700 (four San Francisco city strings).
-  "data/geo-overrides.json": { ceiling: 19700, reason: "hand fixes for the Map page geocoder (tools/geo), 17704 bytes measured 2026-10-15" },
+  // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,700 programs) data/geo-overrides.json limit 19700 to 19800 (one South suburban Cook County string). PENDING PERSON APPROVAL.
+  "data/geo-overrides.json": { ceiling: 19800, reason: "hand fixes for the Map page geocoder (tools/geo), 17704 bytes measured 2026-10-15" },
   "data/map.json": { ceiling: 163300, reason: "data file, the Map page city points, 148390 bytes measured 2026-10-15" },
   "assets/js/map.js": { ceiling: 41600, reason: "script, 27559 bytes measured 2026-10-15; 35987 bytes after the review fixes" },
   "assets/js/map-gl.js": { ceiling: 19300, reason: "street map module (MapLibre style, dots, taps), loaded by map.js only with WebGL 2; 17465 bytes measured 2026-10-16 (PENDING PERSON APPROVAL)" },

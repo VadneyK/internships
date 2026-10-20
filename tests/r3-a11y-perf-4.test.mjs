@@ -33,8 +33,10 @@ const SOON_ONLY = ["name", "org", "city", "url"];
 // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 623226 bytes. Approved by Kentaro 2026-10-19 (merge train). 615300 to 623300.
 // 2026-10-17 (after #45) SoCal, Santa Barbara and Merced cards read in a real browser (+16 cards, 2,696 programs; PENDING PERSON APPROVAL): 606000 to 609700.
 // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 626908 bytes. Approved by Kentaro 2026-10-19 (merge train). 609700 to 627000.
-test("home file is under 627000 bytes", () => {
-  assert.ok(fs.statSync(path.join(ROOT, "data/entries-home.json")).size < 627000);
+// 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,700 programs) home file 606000 to 610200. PENDING PERSON APPROVAL.
+// 2026-10-19: the 20 Midwest and Texas cards (#50) after #43 and #49, 631085 bytes. Approved by Kentaro 2026-10-19 (merge train). 610200 to 631100.
+test("home file is under 631100 bytes", () => {
+  assert.ok(fs.statSync(path.join(ROOT, "data/entries-home.json")).size < 631100);
 });
 
 test("only closing-soon rows carry name, org, city and url", () => {
