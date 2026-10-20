@@ -43,7 +43,9 @@ export const TABLE = {
   // 2026-10-19: the 20 Midwest and Texas cards (#50) after #43 and #49, 2653835 bytes. Approved by Kentaro 2026-10-19 (merge train). find.html ceiling 2634300 to 2653900.
   // 2026-10-19 issue 27 San Diego, Inland Empire and Merced second pass, official pages read by hand (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 2540600 to 2547400.
   // 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 2660641 bytes. Approved by Kentaro 2026-10-19 (merge train). find.html ceiling 2653900 to 2660700.
-  "find.html": { paths: ["data/entries-lite.json"], ceiling: 2660700, reason: "Find filters every program, so it needs the whole lite file" },
+  // 2026-10-19 issue 25 Midwest campuses second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL) find.html limit 2540600 to 2547400.
+  // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 2667460 bytes. Approved by Kentaro 2026-10-19 (merge train). find.html ceiling 2660700 to 2667500.
+  "find.html": { paths: ["data/entries-lite.json"], ceiling: 2667500, reason: "Find filters every program, so it needs the whole lite file" },
   // 2026-10-15: the Map page (754,977 bytes measured; about 151 KB gzipped). It counts every program by city, so it reads the map projection
   // (name, org and the keys the age, pay and open filters test) and the city points. PENDING PERSON APPROVAL for this weight on phones.
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) map.html limit 760000 to 763100. PENDING PERSON APPROVAL.
@@ -64,7 +66,9 @@ export const TABLE = {
   // 2026-10-19: the 20 Midwest and Texas cards (#50) after #43 and #49, 808447 bytes. Approved by Kentaro 2026-10-19 (merge train). map.html ceiling 803100 to 808500.
   // 2026-10-19 issue 27 San Diego, Inland Empire and Merced second pass, official pages read by hand (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 775900 to 777500.
   // 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 810035 bytes. Approved by Kentaro 2026-10-19 (merge train). map.html ceiling 808500 to 810100.
-  "map.html": { paths: ["data/entries-map.json", "data/map.json"], ceiling: 810100, reason: "Map counts every program by city: the small map projection of the lite rows plus the city points file" },
+  // 2026-10-19 issue 25 Midwest campuses second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL) map.html limit 775900 to 777800.
+  // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 811929 bytes. Approved by Kentaro 2026-10-19 (merge train). map.html ceiling 810100 to 812000.
+  "map.html": { paths: ["data/entries-map.json", "data/map.json"], ceiling: 812000, reason: "Map counts every program by city: the small map projection of the lite rows plus the city points file" },
   "calendar.html": { paths: ["data/calendar.json", "data/entries-cal.json"], ceiling: 150000, reason: "Calendar draws deadline cards from the small calendar file (only the programs it lists) plus its own small file" },
   "younger.html": { paths: ["data/entries-core.json", "data/younger.json"], ceiling: 1100000, reason: "Ages 12 to 14 reads the core file and its own small file; headroom up to the card file size" },
   // Raised from 130000 to 145000 on 2026-10-12: the employer list grew to 147 entries (about 136 KB, one entry per line, about 30 KB gzipped).
@@ -98,7 +102,9 @@ export const TABLE = {
   // 2026-10-19: the 20 Midwest and Texas cards (#50) after #43 and #49, 833395 bytes. Approved by Kentaro 2026-10-19 (merge train). insights.html ceiling 827500 to 833400.
   // 2026-10-19 issue 27 San Diego, Inland Empire and Merced second pass, official pages read by hand (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 798100 to 799900.
   // 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 835195 bytes. Approved by Kentaro 2026-10-19 (merge train). insights.html ceiling 833400 to 835200.
-  "insights.html": { paths: ["data/entries-stats.json"], ceiling: 835200, reason: "Numbers page counts every program, so it needs the stats projection (about 528 KB), the one page over the 200000 default" },
+  // 2026-10-19 issue 25 Midwest campuses second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL) insights.html limit 798100 to 800100.
+  // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 837220 bytes. Approved by Kentaro 2026-10-19 (merge train). insights.html ceiling 835200 to 837300.
+  "insights.html": { paths: ["data/entries-stats.json"], ceiling: 837300, reason: "Numbers page counts every program, so it needs the stats projection (about 528 KB), the one page over the 200000 default" },
   "languages.html": { paths: ["data/languages.json"], ceiling: 200000, reason: SMALL },
   "parents.html": { paths: ["data/parents.json"], ceiling: 200000, reason: SMALL },
   "paycheck.html": { paths: ["data/money.json"], ceiling: 200000, reason: SMALL },

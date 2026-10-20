@@ -37,8 +37,10 @@ const SOON_ONLY = ["name", "org", "city", "url"];
 // 2026-10-19: the 20 Midwest and Texas cards (#50) after #43 and #49, 631085 bytes. Approved by Kentaro 2026-10-19 (merge train). 610200 to 631100.
 // 2026-10-19 issue 27 San Diego, Inland Empire and Merced second pass, official pages read by hand (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 606000 to 607800.
 // 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 632848 bytes. Approved by Kentaro 2026-10-19 (merge train). 607800 to 632900.
-test("home file is under 632900 bytes", () => {
-  assert.ok(fs.statSync(path.join(ROOT, "data/entries-home.json")).size < 632900);
+// 2026-10-19 issue 25 Midwest campuses second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL) home file 606000 to 607600.
+// 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 634425 bytes. Approved by Kentaro 2026-10-19 (merge train). 607600 to 634500.
+test("home file is under 634500 bytes", () => {
+  assert.ok(fs.statSync(path.join(ROOT, "data/entries-home.json")).size < 634500);
 });
 
 test("only closing-soon rows carry name, org, city and url", () => {

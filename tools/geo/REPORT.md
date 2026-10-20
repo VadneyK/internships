@@ -9,8 +9,8 @@ Precision 'manual' covers both the British Columbia table and the ZIP-centroid p
 
 | What | Cards |
 |---|---|
-| All cards | 2804 |
-| With a point | 2447 (87.3%) |
+| All cards | 2811 |
+| With a point | 2454 (87.3%) |
 | Statewide (no point) | 189 |
 | Online (no point) | 49 |
 | National (no point) | 7 |
@@ -19,7 +19,7 @@ Precision 'manual' covers both the British Columbia table and the ZIP-centroid p
 
 Distinct city strings: 1027. Distinct map points (cities list): 488.
 
-Points by precision (points / cards): city 417 / 2159, county 55 / 180, manual 16 / 108
+Points by precision (points / cards): city 417 / 2166, county 55 / 180, manual 16 / 108
 
 Statewide by state: AZ 1, BC 5, CA 20, CO 5, FL 3, GA 12, HI 4, IA 8, ID 2, IL 13, IN 8, KY 4, MA 7, MD 5, MI 8, MN 5, MO 4, MT 2, NC 6, ND 2, NJ 3, NM 4, NV 3, NY 4, OH 5, OR 2, PA 6, SD 2, TN 2, TX 12, UT 3, VA 5, WA 6, WI 6, WY 2
 

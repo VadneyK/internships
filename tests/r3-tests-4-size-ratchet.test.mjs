@@ -58,7 +58,9 @@ const TABLE = {
   // 2026-10-19: the 20 Midwest and Texas cards (#50) after #43 and #49, 505782 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json ceiling 502200 to 505800.
   // 2026-10-19 issue 27 San Diego, Inland Empire and Merced second pass, official pages read by hand (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 484100 to 485300.
   // 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 506994 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json ceiling 505800 to 507000.
-  "data/entries-core.json": { ceiling: 507000, reason: "data file, 368201 bytes measured 2026-10-10" },
+  // 2026-10-19 issue 25 Midwest campuses second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL) data/entries-core.json limit 484100 to 485400.
+  // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 508275 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json ceiling 507000 to 508300.
+  "data/entries-core.json": { ceiling: 508300, reason: "data file, 368201 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-detail.json ceiling 1731000 to 1772700.
   // 2026-10-13: four repointed links after the link check. data/entries-detail.json limit 1772700 to 1772900.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-detail.json limit 1772900 to 1823500.
@@ -90,7 +92,10 @@ const TABLE = {
   // 2026-10-19: the 20 Midwest and Texas cards (#50) after #43 and #49, 2074102 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-detail.json ceiling 2059600 to 2074200.
   // 2026-10-19 issue 27 San Diego, Inland Empire and Merced second pass, official pages read by hand (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 1980900 to 1986800.
   // 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 2079927 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-detail.json ceiling 2074200 to 2080000.
-  "data/entries-detail.json": { ceiling: 2080000, reason: "data file, 1521373 bytes measured 2026-10-10" },
+  // 2026-10-19 issue 25 Midwest campuses second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL) data/entries-detail.json limit 1981300 to 1987200.
+  // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 2085877 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-detail.json ceiling 2080000 to 2085900.
+  // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 2085920 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-detail.json ceiling 2085900 to 2086000.
+  "data/entries-detail.json": { ceiling: 2086000, reason: "data file, 1521373 bytes measured 2026-10-10" },
   "data/entries-home.json": { ceiling: 899400, reason: "data file, 817599 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-lite.json ceiling 2223100 to 2277600.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-lite.json limit 2277600 to 2341900.
@@ -120,7 +125,9 @@ const TABLE = {
   // 2026-10-19: the 20 Midwest and Texas cards (#50) after #43 and #49, 2653835 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json ceiling 2634300 to 2653900.
   // 2026-10-19 issue 27 San Diego, Inland Empire and Merced second pass, official pages read by hand (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 2540600 to 2547400.
   // 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 2660641 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json ceiling 2653900 to 2660700.
-  "data/entries-lite.json": { ceiling: 2660700, reason: "data file, 1937500 bytes measured 2026-10-10" },
+  // 2026-10-19 issue 25 Midwest campuses second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL) data/entries-lite.json limit 2540600 to 2547400.
+  // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 2667460 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json ceiling 2660700 to 2667500.
+  "data/entries-lite.json": { ceiling: 2667500, reason: "data file, 1937500 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json ceiling 697700 to 716100.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json limit 716100 to 736500.
   // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json limit 736500 to 748900.
@@ -144,7 +151,9 @@ const TABLE = {
   // 2026-10-19: the 20 Midwest and Texas cards (#50) after #43 and #49, 833395 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-stats.json ceiling 827500 to 833400.
   // 2026-10-19 issue 27 San Diego, Inland Empire and Merced second pass, official pages read by hand (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 798100 to 799900.
   // 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 835195 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-stats.json ceiling 833400 to 835200.
-  "data/entries-stats.json": { ceiling: 835200, reason: "data file, 606782 bytes measured 2026-10-10" },
+  // 2026-10-19 issue 25 Midwest campuses second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL) data/entries-stats.json limit 798100 to 800100.
+  // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 837220 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-stats.json ceiling 835200 to 837300.
+  "data/entries-stats.json": { ceiling: 837300, reason: "data file, 606782 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries.json ceiling 4567200 to 4677300.
   // 2026-10-13: four repointed links after the link check. data/entries.json limit 4677300 to 4677700.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries.json limit 4677700 to 4809900.
@@ -178,7 +187,10 @@ const TABLE = {
   // 2026-10-19: the 20 Midwest and Texas cards (#50) after #43 and #49, 5466315 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json ceiling 5426200 to 5466400.
   // 2026-10-19 issue 27 San Diego, Inland Empire and Merced second pass, official pages read by hand (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 5223300 to 5237900.
   // 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 5481016 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json ceiling 5466400 to 5481100.
-  "data/entries.json": { ceiling: 5481100, reason: "data file, 3996617 bytes measured 2026-10-10" },
+  // 2026-10-19 issue 25 Midwest campuses second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL) data/entries.json limit 5223700 to 5238500.
+  // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 5495797 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json ceiling 5481100 to 5495800.
+  // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 5495840 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json ceiling 5495800 to 5495900.
+  "data/entries.json": { ceiling: 5495900, reason: "data file, 3996617 bytes measured 2026-10-10" },
   "data/expiring-dates.json": { ceiling: 1700, reason: "data file, 1530 bytes measured 2026-10-10" },
   "data/gaps.json": { ceiling: 5400, reason: "data file, 4832 bytes measured 2026-10-10" },
   "data/interview.json": { ceiling: 12400, reason: "data file, 11207 bytes measured 2026-10-10" },

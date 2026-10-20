@@ -425,7 +425,10 @@ const BUDGET = {
   // 2026-10-19 issue 27 San Diego, Inland Empire and Merced second pass, official pages read by hand (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 1387400 to 1396100, gzip 229000 to 230700.
   // 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 1495913 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco raw 1487300 to 1496000.
   // 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 247409 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco gzip 245800 to 247500.
-  "?at=city:san-francisco": { raw: 1496000, gzip: 247500, label: "a Bay Area city" },
+  // 2026-10-19 issue 25 Midwest campuses second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL) ?at=city:san-francisco raw 1387400 to 1389400, gzip 229000 to 229200.
+  // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 1497927 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco raw 1496000 to 1498000.
+  // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 247656 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco gzip 247500 to 247700.
+  "?at=city:san-francisco": { raw: 1498000, gzip: 247700, label: "a Bay Area city" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston raw 1057000 to 1075700.
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston gzip 168000 to 170700.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston raw 1075700 to 1096100.
@@ -466,7 +469,10 @@ const BUDGET = {
   // 2026-10-19 issue 27 San Diego, Inland Empire and Merced second pass, official pages read by hand (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 1173200 to 1175000, gzip 183800 to 184100.
   // 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 1212306 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston raw 1210600 to 1212400.
   // 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 188409 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston gzip 188200 to 188500.
-  "?at=city:boston": { raw: 1212400, gzip: 188500, label: "Boston" },
+  // 2026-10-19 issue 25 Midwest campuses second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL) ?at=city:boston raw 1173200 to 1175200, gzip 183800 to 184000.
+  // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 1214331 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston raw 1212400 to 1214400.
+  // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 188660 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston gzip 188500 to 188700.
+  "?at=city:boston": { raw: 1214400, gzip: 188700, label: "Boston" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska raw 867100 to 886400.
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska gzip 130500 to 132800.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska raw 886400 to 937900.
@@ -506,7 +512,10 @@ const BUDGET = {
   // 2026-10-19 issue 27 San Diego, Inland Empire and Merced second pass, official pages read by hand (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 999800 to 1001600, gzip 149500 to 149800.
   // 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 1036903 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=state:nebraska raw 1035200 to 1037000.
   // 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 153726 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=state:nebraska gzip 153500 to 153800.
-  "?at=state:nebraska": { raw: 1037000, gzip: 153800, label: "a Plains state" },
+  // 2026-10-19 issue 25 Midwest campuses second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL) ?at=state:nebraska raw 999800 to 1001800, gzip 149500 to 149700.
+  // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 1038928 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=state:nebraska raw 1037000 to 1039000.
+  // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 153977 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=state:nebraska gzip 153800 to 154000.
+  "?at=state:nebraska": { raw: 1039000, gzip: 154000, label: "a Plains state" },
 };
 for (const [search, b] of Object.entries(BUDGET)) {
   test("first-load data bytes for " + b.label + " stay under the pinned budget and far under the whole lite file", async () => {
