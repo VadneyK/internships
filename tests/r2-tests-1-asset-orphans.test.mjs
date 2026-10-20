@@ -98,7 +98,8 @@ test("every assets/js/*.js is loaded by at least one root page", () => {
     if (esPages.some((f) => fs.readFileSync(path.join(ROOT, "es", f), "utf8").includes(`src="../assets/js/${name}`))) loaded.add("assets/js/" + name);
   }
   // map-gl.js is a module that map.js adds only where the browser has WebGL 2 (the Map page's street map)
-  const BY_SCRIPT = { "assets/js/map-gl.js": "assets/js/map.js" };
+  // find-map.js (2026-10-20) is added by find.js once the map above the cards comes near the screen
+  const BY_SCRIPT = { "assets/js/map-gl.js": "assets/js/map.js", "assets/js/find-map.js": "assets/js/find.js" };
   for (const [f, by] of Object.entries(BY_SCRIPT)) {
     if (loaded.has(by) && fs.readFileSync(path.join(ROOT, by), "utf8").includes(f)) loaded.add(f);
   }

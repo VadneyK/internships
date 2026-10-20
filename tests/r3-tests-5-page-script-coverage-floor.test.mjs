@@ -26,6 +26,7 @@ export const FLOORS = {
   "es.js": 98, // 2026-10-16: new, the Spanish pages (tests/es-pages.test.mjs runs every line)
   "es-playbook.js": 98, // 2026-10-17: new, Spanish Playbook tools (tests/es-playbook.dom.test.mjs and tests/es-playbook.test.mjs)
   "find.js": 96,
+  "find-map.js": 96, // 2026-10-20: new, the map above the cards on the Programs page; 98.85 measured from tests/find-map.dom.test.mjs alone, rounded down, minus 2
   "handout.js": 98,
   "home.js": 98,
   "insights.js": 98,

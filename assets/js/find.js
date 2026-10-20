@@ -330,6 +330,21 @@
   }
 
   var PAGE = 60, shown = PAGE;
+  /* The map above the cards (find-map.js, which draws with the Map page's street map). It loads once its box comes near the screen,
+     after the first draw, so the first load stays the same. A tap on a dot keeps only that city's cards (cityPick, not kept in the address). */
+  var cityPick = null, mapList = null, mapAsked = false;
+  function paintMap() { if (G.findMap && mapList) G.findMap.paint(mapList, state, cityPick); }
+  G.findCity = function (c) { cityPick = c; render(true); };
+  function watchMap() {
+    var box = $("fMapBox");
+    if (!box || !window.IntersectionObserver) return;
+    var io = new IntersectionObserver(function (es) {
+      if (mapAsked || !es.some(function (x) { return x.isIntersecting; })) return;
+      mapAsked = true; io.disconnect();
+      var s = document.createElement("script"); s.src = "assets/js/find-map.js"; s.onload = paintMap; document.head.appendChild(s);
+    }, { rootMargin: "300px 0px" });
+    io.observe(box);
+  }
   /* render() rebuilds #out, which deletes the focused control. "keep" says where focus goes next:
      { cardIndex: n } focuses the card at list position n, { starId: id } focuses that card's star,
      { el: element } focuses that element. */
@@ -339,7 +354,7 @@
   var cache = null;
   function listCacheKey(sv, t) {
     return JSON.stringify([state.q, state.hubs, state.place, state.age, state.when, state.season, state.paid, state.types, state.fields,
-      state.verified, state.noPermit, state.moreOnline, state.sort, state.saved, state.saved ? sv : null, new Date(t).toDateString(), state.q ? detailMode() : ""]);
+      state.verified, state.noPermit, state.moreOnline, state.sort, state.saved, state.saved ? sv : null, new Date(t).toDateString(), state.q ? detailMode() : "", cityPick && cityPick.k]);
   }
   /* sv is the saved ids, read once by the caller */
   function currentList(sv) {
@@ -349,7 +364,8 @@
     function keep(e) { return L.matches(e, state, t); }
     var found = all.filter(keep), realN = found.length;
     if (state.place && (realN < 3 || state.moreOnline)) { state.placeOnline = true; found = all.filter(keep); }
-    cache = { key: key, list: L.sortList(found, state.sort, t, { age: state.age }), realN: realN, placeOnline: state.placeOnline, idKey: null };
+    var list = L.sortList(found, state.sort, t, { age: state.age });
+    cache = { key: key, list: cityPick ? list.filter(function (e) { return cityPick.ids[e.id]; }) : list, all: list, realN: realN, placeOnline: state.placeOnline, idKey: null };
     return cache;
   }
   function listKey(cur) { return cur.idKey || (cur.idKey = cur.list.map(function (e) { return e.id; }).join(",")); }
@@ -399,6 +415,7 @@
     if (resetPage) shown = PAGE;
     var sv = savedIds(), cur = currentList(sv), list = cur.list, realN = cur.realN;
     lastKey = listKey(cur);
+    mapList = cur.all; paintMap();
     paintPlaceNote(realN);
     paintTownHelp(realN);
     $("count").textContent = list.length + " of " + world.length + " programs";
@@ -528,7 +545,7 @@
       var b = ev.target.closest(".chip"); if (!b) return;
       var v = b.getAttribute("data-val"), arr = state[key], i = arr.indexOf(v);
       if (i > -1) arr.splice(i, 1); else arr.push(v);
-      if (key === "hubs") { state.place = ""; savePrefs(); hidePrefNote(); }
+      if (key === "hubs") { state.place = ""; cityPick = null; savePrefs(); hidePrefNote(); }
       syncChips(); render(true);
     });
   }
@@ -588,7 +605,7 @@
   function resetAll() { resetFilters(false); }
   /* keepSaved: turn every filter off but leave My list on */
   function resetFilters(keepSaved) {
-    clearTimeout(qt);
+    clearTimeout(qt); cityPick = null;
     state = { q: "", hubs: [], place: "", age: "", when: "", season: "", paid: [], types: [], fields: [], verified: false, noPermit: false, view: state.view, sort: "best", saved: keepSaved === true && state.saved };
     $("q").value = ""; $("place").value = ""; $("age").value = ""; $("when").value = ""; $("season").value = ""; $("sort").value = "best";
     clearPrefs(); hidePrefNote();
@@ -863,7 +880,7 @@
     placeBox = G.placeSearch($("place"));
     G.placeTiles($("place"));
     ["age", "when", "season"].forEach(function (id) { G.tilePicker($(id), { anyLabel: $(id).options[0].textContent }); });
-    $("place").addEventListener("change", function (e) { state.place = e.target.value; state.moreOnline = false; if (state.place) state.hubs = []; savePrefs(); hidePrefNote(); syncChips(); render(true); });
+    $("place").addEventListener("change", function (e) { state.place = e.target.value; state.moreOnline = false; cityPick = null; if (state.place) state.hubs = []; savePrefs(); hidePrefNote(); syncChips(); render(true); });
     chipGroup("paidChips", PAID_GROUPS.map(function (g) { return [g[0], g[1]]; }), "paid");
     var tc = {}; world.forEach(function (e) { tc[e.type] = (tc[e.type] || 0) + 1; });
     chipGroup("typeChips", Object.keys(G.TYPES).filter(function (k) { return tc[k]; }).map(function (k) { return [k, G.TYPES[k], tc[k]]; }), "types");
@@ -874,6 +891,7 @@
     var wantId = wantHash.indexOf("#p-") === 0 ? wantHash.slice(3) : "";
     if (wantId) openLinked(wantId, true);
     else render(true);
+    watchMap();
     prefetchDetail();
     if (wantId) wantDetail();
     if (location.hash.indexOf("#saved=") === 0) offerIds(keepIds(location.hash), "link");

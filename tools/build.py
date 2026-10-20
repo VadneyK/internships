@@ -310,8 +310,8 @@ for _p in ES_PAGES:
 
 # robots.txt and sitemap.xml
 import datetime as _dt
-# leaders is unlisted until the owner approves it. ignition (2026-10-20) is unlisted until Ignition's leaders approve promoting it.
-_pages = ["index"] + [p for p in PAGES if p != "leaders" and p != "ignition"]
+# leaders is unlisted until the owner approves it. ignition is listed since 2026-10-20: Kentaro shared it publicly (it stays out of the main nav).
+_pages = ["index"] + [p for p in PAGES if p != "leaders"]
 _today = meta.get("checked", _dt.date.today().isoformat())
 _es_live = [p for p in ES_PAGES if not es_draft(dict(re.findall(r"^(\w+):\s*(.*)$", open(os.path.join(ES_DIR, p + ".html"), encoding="utf-8").read().split("\n---\n", 1)[0], flags=re.M)))]
 _urls = "".join("  <url><loc>%s%s</loc><lastmod>%s</lastmod></url>\n" % (BASE, page_url(p, "en"), _today) for p in _pages)

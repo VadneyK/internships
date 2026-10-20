@@ -23,6 +23,8 @@ const ALLOW = {
     es: "es-playbook.js sets G.es on es/playbook.html only (ADR 0008); playbook.js reads it with a fallback, so English pages never have it",
     keepIds: "find.js sets G.keepIds as a test hook (tests/keep-my-list.dom.test.mjs); it is not defined by common.js",
     KEEP_MAX: "find.js sets G.KEEP_MAX as a test hook (tests/keep-my-list.dom.test.mjs); it is not defined by common.js",
+    findMap: "find-map.js sets G.findMap when find.js adds it (the map above the cards); find.js checks for it before each call",
+    findCity: "find.js sets G.findCity for find-map.js, which calls it when a dot is tapped; it is not defined by common.js",
     mapGLStart: "map.js sets G.mapGLStart just before it adds the map-gl.js module, which calls it with its create(); it is not defined by common.js",
   },
   L: {},
