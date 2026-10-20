@@ -113,11 +113,25 @@ test("with the data saver on, the street map waits for a tap", async () => {
   assert.ok(await waitFor(() => typeof p.window.TIG.mapGLStart === "function"), "the tap did not start the street map");
   p.window.close();
 });
+test("a street map that fails once is tried again and draws", async () => {
+  const p = await bare(() => {}), calls = [];
+  assert.ok(await waitFor(() => typeof p.window.TIG.mapGLStart === "function"));
+  let made = 0;
+  p.window.TIG.mapGLStart(() => (++made === 1 ? Promise.reject(new Error("whole file, not a piece")) : Promise.resolve(stub(calls))));
+  assert.ok(await waitFor(() => calls.some((c) => c[0] === "data")), "the second try never drew the dots");
+  assert.equal(made, 2);
+  assert.equal(p.document.querySelectorAll("#fMapBox .mgl").length, 1, "the failed try's box is gone");
+  assert.doesNotMatch(p.document.getElementById("fMapWait").textContent, /could not load/);
+  p.window.close();
+});
 test("a street map that fails to load leaves a link to the full map", async () => {
   const p = await bare(() => {});
   assert.ok(await waitFor(() => typeof p.window.TIG.mapGLStart === "function"));
-  p.window.TIG.mapGLStart(() => Promise.reject(new Error("no tiles")));
+  // three tries, 2 seconds apart (a server just after publishing can answer the first tile request whole)
+  let made = 0;
+  p.window.TIG.mapGLStart(() => { made++; return Promise.reject(new Error("no tiles")); });
   assert.ok(await waitFor(() => /could not load/.test(p.document.getElementById("fMapWait").textContent)));
+  assert.equal(made, 3, "the street map was tried " + made + " times");
   assert.equal(p.document.querySelector("#fMapBox .mgl"), null);
   assert.equal(p.document.getElementById("fMapBox").classList.contains("gl-on"), false);
   p.window.close();

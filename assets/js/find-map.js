@@ -66,15 +66,18 @@
     try { return !!document.createElement("canvas").getContext("webgl2"); } catch (e) { return false; }
   }
   function start() {
-    var el = document.createElement("div"), root = new URL(".", document.baseURI);
-    el.className = "mgl"; box.appendChild(el);
+    var root = new URL(".", document.baseURI), tries = 0;
     /* the street map shows as it draws (land, then roads and dots), not only once every first tile is in */
     box.classList.add("gl-on");
     if (window.ResizeObserver) new ResizeObserver(function () { if (gl) gl.resize(); }).observe(box);
     say("Loading the map.");
     var css = document.createElement("link"); css.rel = "stylesheet"; css.href = "assets/vendor/maplibre/maplibre-gl.css"; document.head.appendChild(css);
     var dataP = G.fetchData("data/map.json").then(function (r) { if (!r.ok) throw new Error("map " + r.status); return r.json(); });
-    G.mapGLStart = function (create) {
+    /* Just after the site is published, its server can answer the first map tile request with the whole file instead of a piece,
+       which the map cannot use (seen live on 2026-10-20). A new try 2 seconds later works, so the map tries up to three times. */
+    function build(create) {
+      var el = document.createElement("div");
+      el.className = "mgl"; box.appendChild(el);
       Promise.all([dataP, create({ el: el, root: root, anim: G.motionOK(), onPick: pickCity })]).then(function (res) {
         pts = res[0].points.concat(res[0].bc).map(function (p) { return { k: p.k, s: p.s, lat: p.lat, lon: p.lon, ids: p.ids, n: 0 }; });
         pts.forEach(function (p) { p.ids.forEach(function (id) { at[id] = p; }); });
@@ -82,8 +85,12 @@
         box.setAttribute("role", "region"); box.setAttribute("aria-label", "Street map of the programs");
         gl.resize();
         if (last) paint(last.list, last.state, last.pick);
-      }, fail);
-    };
+      }, function () {
+        el.remove();
+        if (++tries < 3) setTimeout(function () { build(create); }, 2000); else fail();
+      });
+    }
+    G.mapGLStart = build;
     var pm = document.createElement("script"); pm.src = "assets/vendor/pmtiles.js";
     pm.onload = function () { var s = document.createElement("script"); s.type = "module"; s.src = "assets/js/map-gl.js"; s.onerror = fail; document.head.appendChild(s); };
     pm.onerror = fail;

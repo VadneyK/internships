@@ -267,7 +267,8 @@ const TABLE = {
   // 2026-10-20: the map above the cards on the Programs page, Kentaro's instruction 2026-10-20 (make the map prominent on Find): find.js 75500 to 76100 (76054 bytes), and the new find-map.js (6052 bytes), loaded only when the map comes near the screen.
   "assets/js/find.js": { ceiling: 76100, reason: "script, 52771 bytes measured 2026-10-10" },
   // 2026-10-20 (PR 73): the map shows as it draws and follows its box's size; find-map.js 6100 to 6300 (6277 bytes), Kentaro's instruction 2026-10-20.
-  "assets/js/find-map.js": { ceiling: 6300, reason: "the Programs page map (dots for the list, the place view, a tap keeps one city), loaded by find.js only when the map comes near the screen; 6052 bytes measured 2026-10-20, Kentaro's instruction 2026-10-20" },
+  // 2026-10-20 (PR 74): up to three tries when the server answers the first tile request whole just after publishing (seen live); find-map.js 6300 to 6700 (6692 bytes), Kentaro's instruction 2026-10-20.
+  "assets/js/find-map.js": { ceiling: 6700, reason: "the Programs page map (dots for the list, the place view, a tap keeps one city), loaded by find.js only when the map comes near the screen; 6052 bytes measured 2026-10-20, Kentaro's instruction 2026-10-20" },
   // 2026-10-16: keep my list without an account (docs/adr/0008): download, send to a parent, keep link, backup file, ask-before-adding panel. find.js 67400 to 75500 (74710 bytes). PENDING PERSON APPROVAL.
   "assets/js/handout.js": { ceiling: 600, reason: "script, 274 bytes measured 2026-10-10; 517 bytes on 2026-10-14 with the one page handout and table plan print buttons" },
   // 2026-10-12: home picker flow. home.js grew by about 8.8 KB (place search box, chip, step markers); ceiling raised from 10800 to 18600, measured 18585 bytes.
