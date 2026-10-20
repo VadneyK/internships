@@ -1,5 +1,5 @@
 {
- "read": "2026-10-17",
+ "read": "2026-10-19",
  "cities": [
   {
    "key": "Chandler, AZ",
@@ -137,6 +137,7 @@
     "richmond-sd38-business-dual-credit-kpu",
     "richmond-sd38-youth-train-in-trades",
     "richmond-sd38-youth-work-in-trades",
+    "richmond-vch-richmond-volunteer",
     "richmond-youth-civic-engagement-program",
     "richmond-youth-media-program"
    ]
@@ -166,6 +167,7 @@
    "precision": "manual",
    "ids": [
     "bard-on-the-beach-volunteer",
+    "vancouver-aquarium-educator-volunteer",
     "vancouver-art-gallery-art-exchange",
     "vancouver-art-gallery-teen-art-group",
     "vancouver-bc-childrens-hospital-volunteer",
@@ -173,6 +175,12 @@
     "vancouver-bgc-south-coast-youth-employability",
     "vancouver-discovery-days-health-sciences",
     "vancouver-providence-health-care-volunteer",
+    "vancouver-public-library-ink-teen-advisory-group",
+    "vancouver-public-library-reading-buddies-teens",
+    "vancouver-public-library-steam-buddies-teens",
+    "vancouver-public-library-teen-advisory-group",
+    "vancouver-public-library-teen-dms-for-kids",
+    "vancouver-public-library-teens-read-it-first",
     "vancouver-science-world-volunteer",
     "vancouver-seed2stem-indigenous-research-internship",
     "vancouver-space-centre-teen-volunteer",
@@ -223,7 +231,9 @@
    "lon": -117.7587,
    "precision": "city",
    "ids": [
+    "anaheim-community-services-volunteers",
     "anaheim-fire-explorers",
+    "anaheim-police-explorers",
     "anaheim-public-library-teen-volunteers",
     "anaheim-summer-volunteen"
    ]
@@ -359,7 +369,11 @@
    "lon": -122.045,
    "precision": "city",
    "ids": [
+    "cupertino-leaders-in-training",
+    "cupertino-recreation-event-volunteers",
+    "cupertino-techie-teens",
     "cupertino-teen-commission",
+    "cupertino-youth-activity-board",
     "de-anza-dual-enrollment"
    ]
   },
@@ -414,7 +428,10 @@
    "lon": -121.8962,
    "precision": "city",
    "ids": [
+    "dublin-city-volunteer-program",
     "dublin-lead-summer-program",
+    "dublin-library-teen-program-proposals",
+    "dublin-police-teen-academy",
     "dublin-youth-advisory-committee"
    ]
   },
@@ -517,6 +534,7 @@
    "lon": -117.928,
    "precision": "city",
    "ids": [
+    "fullerton-parks-recreation-teen-volunteers",
     "fullerton-public-library-teen-volunteer",
     "fullerton-st-jude-medical-center-high-school-volunteer"
    ]
@@ -563,6 +581,8 @@
    "lon": -119.8589,
    "precision": "city",
    "ids": [
+    "goleta-parks-recreation-commission-youth-member",
+    "goleta-valley-library-teen-volunteers",
     "santa-barbara-civil-air-patrol-squadron-131-cadets"
    ]
   },
@@ -577,8 +597,11 @@
     "ebrpd-junior-lifeguard-cadets",
     "eden-area-rop",
     "hayward-area-historical-society-volunteers",
+    "hayward-area-recreation-park-district-part-time-jobs",
     "hayward-area-recreation-park-district-volunteers",
+    "hayward-police-summer-youth-academy",
     "hayward-public-library-teen-volunteers",
+    "hayward-unified-youth-professionals-internship",
     "hayward-youth-commission",
     "police-explorers-hayward",
     "st-rose-hospital-shine-student-volunteers"
@@ -614,6 +637,7 @@
     "irvine-youth-service-corps-summer-high-school",
     "orange-county-langson-museum-young-curators",
     "pretend-city-volunteer-and-teen-programs",
+    "uc-sankofa-experience-rising-seniors",
     "uci-cosmos",
     "uci-its-prime-transportation-research-internship",
     "uci-medacademy",
@@ -687,11 +711,18 @@
    "lon": -121.7598,
    "precision": "city",
    "ids": [
+    "larpd-event-volunteers",
     "larpd-junior-lifeguard-academy",
+    "larpd-part-time-jobs",
     "larpd-summer-youth-volunteer",
     "las-positas-dual-enrollment",
     "livermore-area-youth-advisory-commission",
     "livermore-library-young-adult-volunteers",
+    "livermore-police-explorers",
+    "llnl-biotech-summer-experience",
+    "llnl-manufacturing-workshop",
+    "llnl-sage-summer-camp",
+    "llnl-stem-with-phones-workshop",
     "tri-valley-rop"
    ]
   },
@@ -747,13 +778,26 @@
    ]
   },
   {
+   "key": "Los Altos Hills, CA",
+   "state": "CA",
+   "lat": 37.3668,
+   "lon": -122.1386,
+   "precision": "city",
+   "ids": [
+    "los-altos-hills-youth-commission"
+   ]
+  },
+  {
    "key": "Los Altos, CA",
    "state": "CA",
    "lat": 37.3684,
    "lon": -122.0966,
    "precision": "city",
    "ids": [
-    "los-altos-history-museum-teen-docent"
+    "los-altos-community-services-volunteers",
+    "los-altos-counselor-in-training",
+    "los-altos-history-museum-teen-docent",
+    "los-altos-youth-commission-council-academy"
    ]
   },
   {
@@ -779,7 +823,14 @@
    "lon": -118.4108,
    "precision": "city",
    "ids": [
+    "california-science-center-community-teen-interns",
+    "california-science-center-dive-team-interns",
+    "california-science-center-flight-team-interns",
+    "california-science-center-youth-volunteers",
+    "camp-chla-health-care-career-exploration",
     "cedars-sinai-teen-volunteer-program",
+    "chla-high-school-summer-volunteer",
+    "chla-la-hip-high-school-internship",
     "getty-teen-gallery-guides",
     "hire-las-youth",
     "keck-medicine-usc-summer-youth-volunteer",
@@ -827,8 +878,12 @@
    "precision": "city",
    "ids": [
     "bgc-peninsula-teen-volunteer-summer-internship",
+    "menlo-park-fire-explorer-post-109",
     "menlo-park-library-teen-advisory-group",
+    "menlo-park-police-cadets",
+    "menlo-park-swim-centers-team-sheeper-jobs",
     "menlo-park-youth-advisory-committee",
+    "peninsula-volunteers-menlo-park-senior-volunteer",
     "slac-regional-science-bowl-high-school"
    ]
   },
@@ -849,12 +904,15 @@
    "lon": -120.4704,
    "precision": "city",
    "ids": [
+    "cosmos-uc-merced",
     "merced-college-ccap-dual-enrollment",
     "merced-college-k12-concurrent-enrollment",
     "merced-county-office-of-education-empower",
     "merced-mercy-medical-center-volunteer",
     "merced-muhsd-dual-enrollment-merced-college",
-    "merced-skillrise-ch-high-school-internship"
+    "merced-skillrise-ch-high-school-internship",
+    "merced-youth-council",
+    "uc-merced-summer-session-high-school-discount"
    ]
   },
   {
@@ -865,6 +923,11 @@
    "precision": "city",
    "ids": [
     "hssv-student-volunteer",
+    "milpitas-fire-explorers",
+    "milpitas-lifeguard-swim-instructor-jobs",
+    "milpitas-police-explorers",
+    "milpitas-recreation-leader-jobs",
+    "milpitas-volunteer-program",
     "milpitas-youth-advisory-commission"
    ]
   },
@@ -1102,7 +1165,10 @@
    "ids": [
     "alameda-county-district-1-intern-program",
     "alameda-county-fair-seasonal-jobs",
+    "livermore-pleasanton-fire-explorers",
     "pleasanton-aquatics-junior-volunteers",
+    "pleasanton-leader-in-training",
+    "pleasanton-police-teen-academy-and-explorers",
     "pleasanton-youth-commission",
     "valley-humane-society-volunteers"
    ]
@@ -1115,7 +1181,8 @@
    "precision": "city",
    "ids": [
     "cal-poly-pomona-next-gen-manufacturing-academy",
-    "pomona-valley-hospital-high-school-volunteer"
+    "pomona-valley-hospital-high-school-volunteer",
+    "pomona-youth-music-program-volunteer"
    ]
   },
   {
@@ -1170,7 +1237,9 @@
    "lon": -115.9484,
    "precision": "county",
    "ids": [
-    "riverside-county-library-teen-advisory-boards"
+    "riverside-county-library-teen-advisory-boards",
+    "riverside-county-wioa-youth-opportunity-centers",
+    "riverside-county-youth-advisory-councils"
    ]
   },
   {
@@ -1319,7 +1388,8 @@
     "san-diego-reality-changers-college-town",
     "san-diego-sharp-memorial-mary-birch-volunteer",
     "san-diego-ucsd-health-volunteer",
-    "sdma-teen-council"
+    "sdma-teen-council",
+    "usd-cyber-ai-summer-program"
    ]
   },
   {
@@ -1394,6 +1464,9 @@
    "ids": [
     "bgc-san-leandro-teen-summer-program",
     "san-leandro-library-teen-volunteers",
+    "san-leandro-police-explorers",
+    "san-leandro-recreation-counselor-in-training",
+    "san-leandro-recreation-lifeguard-jobs",
     "san-leandro-youth-advisory-commission"
    ]
   },
@@ -1486,6 +1559,8 @@
    "lon": -119.7137,
    "precision": "city",
    "ids": [
+    "cottage-health-junior-volunteers",
+    "santa-barbara-county-wioa-youth-career-services",
     "santa-barbara-humane-society-volunteers",
     "santa-barbara-museum-of-art-teaching-assistants",
     "santa-barbara-natural-history-museum-counselors-in-training",
@@ -1515,6 +1590,7 @@
    "lon": -121.6895,
    "precision": "county",
    "ids": [
+    "santa-clara-county-sheriff-youth-cadets",
     "santa-clara-county-teen-cert",
     "scc-intern-and-earn",
     "scc-library-teen-volunteer"
@@ -1529,6 +1605,13 @@
    "ids": [
     "kaiser-santa-clara-high-school-volunteer",
     "mission-college-high-school-dual-enrollment",
+    "santa-clara-city-library-teen-library-leaders",
+    "santa-clara-city-library-teen-volunteers",
+    "santa-clara-city-library-teens-teach",
+    "santa-clara-instructor-lifeguard-jobs",
+    "santa-clara-pal-police-explorers",
+    "santa-clara-recreation-leader-jobs",
+    "santa-clara-students-of-service",
     "santa-clara-youth-commission"
    ]
   },
@@ -2626,7 +2709,8 @@
    "lon": -88.1776,
    "precision": "city",
    "ids": [
-    "illinois-boys-state"
+    "illinois-boys-state",
+    "illinois-girls-state"
    ]
   },
   {
@@ -2711,6 +2795,7 @@
    "ids": [
     "cook-county-forest-preserve-experience",
     "cook-county-forest-preserves-conservation-corps-summer",
+    "cook-county-forest-preserves-youth-outdoor-ambassadors",
     "cook-county-opportunity-works-subsidized-internships"
    ]
   },
@@ -2749,6 +2834,7 @@
     "elgin-police-explorer-post-1445",
     "elgin-teen-life-police-and-library",
     "elgin-u46-career-technical-education",
+    "elgin-u46-magnet-academies",
     "gail-borden-teen-volunteers",
     "ywca-elgin-youth-leadership-scholarship"
    ]
@@ -2842,7 +2928,8 @@
    "lon": -88.1446,
    "precision": "city",
    "ids": [
-    "ascension-saint-alexius-teen-volunteer"
+    "ascension-saint-alexius-teen-volunteer",
+    "hoffman-estates-park-district-swim-instructor"
    ]
   },
   {
@@ -2865,6 +2952,10 @@
     "argonne-big-data-camp",
     "argonne-coding-for-science-camp",
     "argonne-exemplary-student-research-program",
+    "argonne-high-school-autonomous-vehicle-competition",
+    "argonne-introduce-a-generation-to-engineering-day",
+    "argonne-middle-school-electric-car-competition",
+    "argonne-science-careers-in-search-of-women",
     "argonne-science-discovery-camp"
    ]
   },
@@ -3572,6 +3663,16 @@
    ]
   },
   {
+   "key": "Fort Washington, MD",
+   "state": "MD",
+   "lat": 38.7319,
+   "lon": -77.0087,
+   "precision": "city",
+   "ids": [
+    "fort-washington-medical-center-summer-volunteers"
+   ]
+  },
+  {
    "key": "Frederick County, MD",
    "state": "MD",
    "lat": 39.4701,
@@ -3693,6 +3794,16 @@
    "precision": "city",
    "ids": [
     "md-girls-state"
+   ]
+  },
+  {
+   "key": "Silver Spring, MD",
+   "state": "MD",
+   "lat": 39.0024,
+   "lon": -77.0208,
+   "precision": "city",
+   "ids": [
+    "silver-spring-white-oak-medical-center-volunteers"
    ]
   },
   {
@@ -4451,8 +4562,13 @@
     "ncsu-textiles-step-summer-exploration",
     "ncsu-vetcamp-veterinary-careers",
     "ncsu-young-and-teen-writers-workshop",
+    "raleigh-digital-connectors",
     "raleigh-marbles-kids-museum-teen-play-corps",
+    "raleigh-parks-lifeguard-save-program",
+    "raleigh-police-public-safety-cadets",
+    "raleigh-summer-youth-employment-program",
     "raleigh-unc-health-rex-volunteen",
+    "raleigh-youth-council",
     "wake-tech-career-and-college-promise",
     "wake-tech-wakeworks-youth-apprenticeship-academy",
     "wakemed-junior-volunteer-program"
@@ -5111,6 +5227,8 @@
    "precision": "city",
    "ids": [
     "cuny-college-now",
+    "nyc-amnh-science-alliance-high-school",
+    "nyc-amnh-science-communication-internship-program",
     "nyc-amnh-science-research-mentoring-program",
     "nyc-ccny-zahn-bossgirls-summer-entrepreneurship",
     "nyc-central-park-conservancy-teen-volunteer-days",
@@ -6466,6 +6584,16 @@
    ]
   },
   {
+   "key": "Edmonds, WA",
+   "state": "WA",
+   "lat": 47.8136,
+   "lon": -122.3533,
+   "precision": "city",
+   "ids": [
+    "edmonds-swedish-junior-volunteer"
+   ]
+  },
+  {
    "key": "Everett, WA",
    "state": "WA",
    "lat": 47.9612,
@@ -6504,9 +6632,12 @@
    "precision": "city",
    "ids": [
     "seattle-aquarium-youth-ocean-advocates",
+    "seattle-art-museum-design-your-neighborhood",
     "seattle-art-museum-teen-arts-group",
+    "seattle-art-museum-volunteers",
     "seattle-bgc-king-county-youthforce",
     "seattle-burke-museum-voices-in-science-burke-ology",
+    "seattle-burke-museum-voices-in-science-stem-careers",
     "seattle-childrens-hospital-volunteer",
     "seattle-childrens-research-training-program-high-school",
     "seattle-childrens-youth-voice-research-liaison",
@@ -6516,6 +6647,7 @@
     "seattle-harborview-volunteer-services",
     "seattle-henry-teen-art-collective",
     "seattle-mohai-history-lab",
+    "seattle-mopop-volunteer",
     "seattle-mopop-youth-advisory-board",
     "seattle-mountaineers-counselor-in-training",
     "seattle-museum-of-flight-youth-volunteer",
@@ -6572,6 +6704,8 @@
    "lon": -122.4598,
    "precision": "city",
    "ids": [
+    "tacoma-nature-center-teen-volunteer-leadership",
+    "tacoma-parks-lifeguard-swim-instructor-pathway",
     "tacoma-pierce-county-library-teen-councils",
     "tacoma-pierce-county-library-teen-volunteer-league",
     "tacoma-point-defiance-zoo-guides",
@@ -6791,7 +6925,6 @@
     "illinois-dcfs-employment-job-training-apprenticeship-incentive",
     "illinois-deca-state-association",
     "illinois-fbla-state-association",
-    "illinois-girls-state",
     "illinois-ides-hire-the-future",
     "illinois-isbe-student-advisory-council",
     "illinois-wing-civil-air-patrol-cadets"

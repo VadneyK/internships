@@ -16,7 +16,7 @@ const MEASURED = {
   fields: {
     what_you_do: { mean: 6.64, aboveLimit: 177 },
     // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,700 programs): who_can_apply mean tightened from 6.3 to 5.8 because the measured mean fell to 5.8 (the stale check needs it).
-    who_can_apply: { mean: 5.8, aboveLimit: 280 },
+    who_can_apply: { mean: 5.8, aboveLimit: 280 }, // 2026-10-19: mean tightened from 6.3 (measured 5.8 after the #59 and #60 cards)
     how_to_apply: { mean: 6.84, aboveLimit: 453 }, // 2026-10-13: tightened from 460 after the re-read of 213 open cards made texts plainer; 2026-10-14: mean tightened from 7.34 (measured 6.79 after the gaps wave)
     notes: { mean: 6.39, aboveLimit: 268 },
   },

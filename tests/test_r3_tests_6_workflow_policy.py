@@ -333,7 +333,7 @@ class WorkflowPolicyTests(unittest.TestCase):
                 self.assertNotRegex(src, r"dom-helper|jsdom|loadPage")
         thresholds = config["thresholds"]
         self.assertIsInstance(thresholds["break"], int)
-        self.assertEqual(thresholds["break"], 90)  # 2026-10-15: 76 to 90 after the score rose from 81.55 to 95.3
+        self.assertEqual(thresholds["break"], 93)  # 2026-10-15: 76 to 90 after the score rose from 81.55 to 95.3; 2026-10-17: 90 to 93 at 98.06
         self.assertGreaterEqual(thresholds["high"], thresholds["low"])
         self.assertGreaterEqual(thresholds["low"], thresholds["break"])
         testing = re.search(r"`thresholds\.break` is (\d+)", read_text(os.path.join(ROOT, "docs", "TESTING.md")))
