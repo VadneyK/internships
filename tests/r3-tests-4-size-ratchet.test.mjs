@@ -253,7 +253,7 @@ const TABLE = {
   // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,700 programs) data/geo-overrides.json limit 19700 to 19800 (one South suburban Cook County string). PENDING PERSON APPROVAL.
   "data/geo-overrides.json": { ceiling: 19800, reason: "hand fixes for the Map page geocoder (tools/geo), 17704 bytes measured 2026-10-15" },
   "data/map.json": { ceiling: 163300, reason: "data file, the Map page city points, 148390 bytes measured 2026-10-15" },
-  "assets/js/map.js": { ceiling: 41600, reason: "script, 27559 bytes measured 2026-10-15; 35987 bytes after the review fixes" },
+  "assets/js/map.js": { ceiling: 42200, reason: "script, 27559 bytes measured 2026-10-15; 35987 bytes after the review fixes; 42185 bytes on 2026-10-20 with the start view for the Ignition page (Kentaro's instruction 2026-10-20), rounded up to 100" },
   "assets/js/map-gl.js": { ceiling: 19300, reason: "street map module (MapLibre style, dots, taps), loaded by map.js only with WebGL 2; 17465 bytes measured 2026-10-16 (PENDING PERSON APPROVAL)" },
   "assets/vendor/pmtiles.js": { ceiling: 20600, reason: "PMTiles 4.5.0 reader (dist/pmtiles.js, source map line removed), 20194 bytes measured 2026-10-16; a new version needs a new row" },
   "assets/vendor/maplibre/maplibre-gl.mjs": { ceiling: 602000, reason: "MapLibre GL JS 6.11.2 main module, 590188 bytes measured 2026-10-16; a new version needs a new row" },

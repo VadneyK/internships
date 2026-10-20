@@ -6,7 +6,7 @@ import { JSDOM } from "jsdom";
 // Ticket r3-a11y-perf-3. The eight script-built pages left over from r3-a11y-perf-4 also say so when JavaScript is off.
 // Pages are parsed without running scripts, so the noscript body is what a script-blocked teen sees.
 
-const PAGES = ["index", "jobs", "ready", "interview", "states", "resume", "playbook", "leaders", "map"];
+const PAGES = ["index", "jobs", "ready", "interview", "states", "resume", "playbook", "leaders", "map", "ignition"];
 const EARLIER = ["safety", "parents", "younger", "languages", "permit", "calendar", "insights", "paycheck"];
 const OTHER_NOTE = ["find"]; // find.html already has its own noscript with a link to the spreadsheet file
 const ROOT = new URL("../", import.meta.url);

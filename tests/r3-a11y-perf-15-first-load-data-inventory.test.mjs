@@ -74,6 +74,8 @@ export const TABLE = {
   // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,692 programs; PENDING PERSON APPROVAL): 777600 to 779200.
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 813636 bytes. Approved by Kentaro 2026-10-19 (merge train). map.html ceiling 812000 to 813700.
   "map.html": { paths: ["data/entries-map.json", "data/map.json"], ceiling: 813700, reason: "Map counts every program by city: the small map projection of the lite rows plus the city points file" },
+  // 2026-10-20: the unlisted Ignition page shows the same map (map.js), so it reads the same two files with the Map page's ceiling. Kentaro's instruction 2026-10-20.
+  "ignition.html": { paths: ["data/entries-map.json", "data/map.json"], ceiling: 813700, reason: "The Map page's map, opened on the Bay Area: the same two files as map.html" },
   "calendar.html": { paths: ["data/calendar.json", "data/entries-cal.json"], ceiling: 150000, reason: "Calendar draws deadline cards from the small calendar file (only the programs it lists) plus its own small file" },
   "younger.html": { paths: ["data/entries-core.json", "data/younger.json"], ceiling: 1100000, reason: "Ages 12 to 14 reads the core file and its own small file; headroom up to the card file size" },
   // Raised from 130000 to 145000 on 2026-10-12: the employer list grew to 147 entries (about 136 KB, one entry per line, about 30 KB gzipped).

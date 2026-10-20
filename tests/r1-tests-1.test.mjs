@@ -13,7 +13,7 @@ const pages = fs.readdirSync(ROOT).filter((f) => f.endsWith(".html")).sort();
 // Known breaks, as "page|href" with a reason. Empty today.
 const ALLOW = {};
 // Pages that are meant to stay out of the sitemap (the error page is not a destination).
-const NOT_IN_SITEMAP = { "404.html": "error page, not a destination", "leaders.html": "noindex and unlisted on purpose (tools/build.py keeps it out until approved)" };
+const NOT_IN_SITEMAP = { "404.html": "error page, not a destination", "leaders.html": "noindex and unlisted on purpose (tools/build.py keeps it out until approved)", "ignition.html": "noindex and unlisted on purpose until Ignition's leaders approve promoting it (tools/build.py keeps it out, 2026-10-20)" };
 
 const docs = new Map();
 for (const f of pages) docs.set(f, new JSDOM(fs.readFileSync(path.join(ROOT, f), "utf8")).window.document);

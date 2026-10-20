@@ -31,7 +31,10 @@ const BUDGET = {
   // 2026-10-15 Map page rebased on main (brand wrap CSS plus map rules): pages over set to the measured size rounded up to 100.
   // 2026-10-15 Map page rebased on main again (narrow phone CSS plus map rules): pages over set to the measured size rounded up to 100.
   // 2026-10-15: new Map page (map.html): lib.js, common.js and map.js; set after the rebase by the ceiling tool.
-  "map.html": { ceiling: 201100, reason: "lib.js, common.js and map.js" },
+  // 2026-10-20: map.js start view (?view= or data-view, for the Ignition page), Kentaro's instruction 2026-10-20: map.html set to the measured size rounded up to 100.
+  "map.html": { ceiling: 202000, reason: "lib.js, common.js and map.js" },
+  // 2026-10-20: new unlisted Ignition page (ignition.html), the same scripts as map.html. Kentaro's instruction 2026-10-20: set to the measured size rounded up to 100.
+  "ignition.html": { ceiling: 202000, reason: "lib.js, common.js and map.js, as map.html" },
   // 2026-10-16: Add to calendar on deadlines, issue #10 (lib.js: reminders, Google Calendar link, which cards get it; about 1.9 KB) (PENDING PERSON APPROVAL). map.html limit 198300 to 200100 (remeasured 2026-10-19 after main merged in with PRs 42 and 36).
   // 2026-10-16: the Map page street map (map.js hand-off and style.css rules for the street map box) (PENDING PERSON APPROVAL): pages over set to the measured size rounded up to 100.
   // 2026-10-18: main merged in after PR 54 (common.js grew for the screen reader names), paycheck.html 165300 to 165400 (PENDING PERSON APPROVAL, merging approves): pages over set to the measured size rounded up to 100.
