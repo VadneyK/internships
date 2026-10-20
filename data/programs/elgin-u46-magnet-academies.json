@@ -1,0 +1,44 @@
+{
+  "id": "elgin-u46-magnet-academies",
+  "name": "School District U-46 High School Magnet Academies",
+  "org": "School District U-46",
+  "regions": [
+    "chicago"
+  ],
+  "city": "Elgin, IL",
+  "type": "school-pathway",
+  "fields": [
+    "engineering",
+    "tech-cs",
+    "arts-media",
+    "business-finance",
+    "any"
+  ],
+  "what_you_do": "A four-year high school program at one U-46 high school: STEM at Bartlett, IB at Elgin, arts at Larkin, media and digital arts at South Elgin, or leadership and design at Streamwood.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "8th graders applying for 9th grade",
+  "who_can_apply": "8th graders who live in School District U-46, with at least a 2.8 GPA in 7th grade. You must keep a 2.8 GPA through the end of 8th grade to keep your seat.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free public school program.",
+  "season": "school-year",
+  "duration": "Four years of high school",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Application open Oct 1 to Oct 31, 2026, for fall 2027. The lottery runs Nov 9, 2026, and results are emailed that evening.",
+  "deadline_iso": "2026-10-31",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "A parent or guardian fills out the online application with a personal email. Students new to U-46 add transcripts. Seats go by lottery, with extra entries for things like good attendance, a 3.75 GPA or living near the school.",
+  "needs_work_permit": null,
+  "url": "https://www.u-46.org/page/magnet-academies",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.u-46.org/page/magnet-academies",
+    "https://www.u-46.org/o/sdu/page/application-requirements-instructions",
+    "https://www.u-46.org/page/career-and-technical-education"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-18",
+  "priority": 1,
+  "notes": "Students who are homeless or in a temporary living situation get in automatically if they meet the GPA rule. Having a brother or sister in the academy no longer helps. Help: magnetacademies@u-46.org or 847-907-6030."
+}

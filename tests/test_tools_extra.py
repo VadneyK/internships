@@ -281,6 +281,8 @@ class WiringTests(unittest.TestCase):
 
     def test_every_script_file_is_used_by_a_page(self):
         used = {n for p in self.src_pages() for n in self.scripts_for(p)}
+        # the Spanish pages in src/es/ (ADR 0008) name their own script, es.js
+        used |= {n for p in glob.glob(os.path.join(ROOT, "src", "es", "[!_]*.html")) for n in self.scripts_for(p)}
         for path in sorted(glob.glob(os.path.join(ROOT, "assets", "js", "*.js"))):
             name = os.path.basename(path)[:-3]
             if name in ("lib", "common"):

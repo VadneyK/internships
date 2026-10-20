@@ -5,7 +5,7 @@
 - [ ] Two adults and two teens have used the site start to finish and nothing confused them
 - [ ] Accessibility check with a screen reader and keyboard only, 200% zoom, and a phone
 - [ ] Each hub has at least one named region captain
-- [ ] A Spanish version of the Home, Playbook and Rules pages, reviewed by a fluent speaker
+- [ ] A Spanish version of the Home, Playbook and Rules pages, reviewed by a fluent speaker (draft built in `es/`, waiting for the review; see `docs/adr/0008-spanish-pages.md`)
 
 ## Ideas (good first issues are labeled in GitHub)
 - Spanish, Chinese, Vietnamese and Tagalog translations

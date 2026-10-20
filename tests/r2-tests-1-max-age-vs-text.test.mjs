@@ -35,7 +35,6 @@ const ALLOW = {
   "blacksburg-montgomery-county-4-h-clubs": "Most clubs are ages 9 to 18. Only the home school Senior club goes to 19.",
   "boston-futurebos-youth-jobs": "max_age 24 includes the leader jobs for ages 19 to 24. Regular youth jobs are 14 to 18.",
   "brookhaven-police-cadet-program": "The page says both 18 and 19 as the top age, so max_age 19 is the more open reading and the text tells the teen to confirm.",
-  "chp-explorer-post-east-sacramento": "The CHP lists 15 to 20 and the post page snippet says 15 to 21. max_age 20 is the official CHP figure and the text names both.",
   "columbus-humane-teen-volunteers": "max_age 17 is right: ages 12 to 15 join as junior volunteers with an adult, and 16 and 17 can volunteer on their own.",
   "elk-grove-youth-commission": "The page lists no ages. The 13 to 18 range came from a search snippet the text says is unconfirmed, so max_age stays null.",
   "foodbank-central-eastern-nc-youth-volunteers": "The card is for ages 12 and up. The 5 to 11 range is a separate Kids Day session.",

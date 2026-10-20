@@ -45,8 +45,43 @@ const LIMITS = {
     // 2026-10-18: issue 28 link fixes (30 field edits on 10 cards), 5223647 bytes. Approved by Kentaro 2026-10-18. data/entries.json raw 5223300 to 5223700; gzip unchanged.
     // 2026-10-18 (after #45) issue 19 Southern California pages read in a real browser (+6 cards, 2,686 programs; PENDING PERSON APPROVAL): 5223300 to 5237200 (gzip still fits).
     // 2026-10-19: issue 28 batch 1 (#56) plus issue 19 second pass (#59) together, 5237550 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json raw 5237200 to 5237600.
+    // 2026-10-18 (after #54) issue 22 Chicago and Elgin second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 5223300 to 5236500 (gzip still fits).
+    // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 5250719 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json raw 5237600 to 5250800.
+    // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 1187487 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json gzip 1184900 to 1187500.
+    // 2026-10-19 issue 5 Confirm first: CHP East Sacramento and Michigan 4-H Exploration Days re-read in a real browser (2 cards changed, 2,680 programs; PENDING PERSON APPROVAL) data/entries.json raw 5223300 to 5224400.
+    // 2026-10-19: confirm-first edits (#64) after the #59 and #60 cards, 5251805 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json raw 5250800 to 5251900.
+    // 2026-10-19: confirm-first edits (#64) after the #59 and #60 cards, 1187926 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json gzip 1187500 to 1188000.
+    // 2026-10-19 issue 23 Pacific Northwest and Vancouver second pass read in a real browser (+15 cards, 2,695 programs; PENDING PERSON APPROVAL): 5223300 to 5251800, gzip 1184900 to 1191000.
+    // 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 5280270 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json raw 5251900 to 5280300.
+    // 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 1194063 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json gzip 1191000 to 1194100.
+    // 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 5280304 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json raw 5280300 to 5280400.
+    // 2026-10-19 issues 20, 21 and 26 East Coast second pass read in a real browser (+9 cards, 2,689 programs; PENDING PERSON APPROVAL): 5223300 to 5240900 (gzip still fits).
+    // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 5297955 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json raw 5280400 to 5298000.
+    // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 1197817 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json gzip 1194100 to 1197900.
+    // 2026-10-19: issue 28 batch 3 (#62) after #59, #60, #64, #65 and #66, 1198261 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json gzip 1197900 to 1198300.
+    // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. data/entries.json raw 5223300 to 5320000.
+    // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. data/entries.json gzip 1184900 to 1203300.
+    // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 5394594 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json raw 5320000 to 5394600.
+    // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 1220638 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json gzip 1203300 to 1220700.
+    // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 5394608 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json raw 5394600 to 5394700.
+    // 2026-10-17 (after #45) SoCal, Santa Barbara and Merced cards read in a real browser (+16 cards, 2,696 programs; PENDING PERSON APPROVAL): 5223300 to 5254900, 1184900 to 1187800.
+    // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 5426198 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json raw 5394700 to 5426200.
+    // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 1227416 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json gzip 1220700 to 1227500.
+    // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,700 programs) data/entries.json raw, gzip 5223300 to 5263300, 1184900 to 1190200. PENDING PERSON APPROVAL.
+    // 2026-10-19: the 20 Midwest and Texas cards (#50) after #43 and #49, 5466315 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json raw 5426200 to 5466400.
+    // 2026-10-19: the 20 Midwest and Texas cards (#50) after #43 and #49, 1236464 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json gzip 1227500 to 1236500.
+    // 2026-10-19 issue 27 San Diego, Inland Empire and Merced second pass, official pages read by hand (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 5223300 to 5237900 (gzip still fits).
+    // 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 5481016 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json raw 5466400 to 5481100.
+    // 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 1239870 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json gzip 1236500 to 1239900.
+    // 2026-10-19 issue 25 Midwest campuses second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL) data/entries.json raw 5223700 to 5238500 (gzip still fits).
+    // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 5495797 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json raw 5481100 to 5495800.
+    // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 1243307 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json gzip 1239900 to 1243400.
+    // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 5495840 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json raw 5495800 to 5495900.
     // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,692 programs; PENDING PERSON APPROVAL): raw 5237600 to 5250100, gzip 1184900 to 1187500.
-    "data/entries.json": { raw: 5250100, gzip: 1187500 },
+    // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 5508369 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json raw 5495900 to 5508400.
+    // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 1246168 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json gzip 1243400 to 1246200.
+    // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 5508419 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json raw 5508400 to 5508500.
+    "data/entries.json": { raw: 5508500, gzip: 1246200 },
     // Raised from 2020000 to 2040000 on 2026-10-10 after the fact check: the page re-reads added about 6,000 bytes (0.3 percent) of plainer deadline_text across 266 cards, saying what the page does and does not state. No single card is the cause. Still about 1,145 bytes per program, under the per-program limit.
     // Gzip limit raised from 440000 to 450000 on 2026-10-10: the card fixes this round (pay wording, opens-soon dates) put it at 440053.
     // Raised again on 2026-10-12 for the 178 more cards: entries-lite.json is 2,097,871 bytes (437,135 gzipped), 947 bytes per program. Raw from 2040000 to 2160000. The gzip limit stays 450000. PENDING PERSON APPROVAL, as for entries.json.
@@ -72,8 +107,40 @@ const LIMITS = {
     // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. data/entries-lite.json gzip 520000 to 522200.
     // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) data/entries-lite.json raw 2540600, gzip 531600.
     // 2026-10-18 (after #45) issue 19 Southern California pages read in a real browser (+6 cards, 2,686 programs; PENDING PERSON APPROVAL): 2540600 to 2546800 (gzip still fits).
+    // 2026-10-18 (after #54) issue 22 Chicago and Elgin second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 2540600 to 2547400 (gzip still fits).
+    // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 2553402 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json raw 2547400 to 2553500.
+    // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 532289 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json gzip 531600 to 532300.
+    // 2026-10-19 issue 5 Confirm first: CHP East Sacramento and Michigan 4-H Exploration Days re-read in a real browser (2 cards changed, 2,680 programs; PENDING PERSON APPROVAL) data/entries-lite.json raw 2540600 to 2540800.
+    // 2026-10-19: confirm-first edits (#64) after the #59 and #60 cards, 2553569 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json raw 2553500 to 2553600.
+    // 2026-10-19: confirm-first edits (#64) after the #59 and #60 cards, 532364 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json gzip 532300 to 532400.
+    // 2026-10-19 issue 23 Pacific Northwest and Vancouver second pass read in a real browser (+15 cards, 2,695 programs; PENDING PERSON APPROVAL): 2540600 to 2554500, gzip 531600 to 534500.
+    // 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 2567354 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json raw 2554500 to 2567400.
+    // 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 535208 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json gzip 534500 to 535300.
+    // 2026-10-19 issues 20, 21 and 26 East Coast second pass read in a real browser (+9 cards, 2,689 programs; PENDING PERSON APPROVAL): 2540600 to 2549200 (gzip still fits).
+    // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 2575944 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json raw 2567400 to 2576000.
+    // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 536765 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json gzip 535300 to 536800.
+    // 2026-10-19: issue 28 batch 3 (#62) after #59, #60, #64, #65 and #66, 536916 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json gzip 536800 to 537000.
+    // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. data/entries-lite.json raw 2540600 to 2584100.
+    // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. data/entries-lite.json gzip 531600 to 538200.
+    // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 2619357 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json raw 2584100 to 2619400.
+    // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 545569 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json gzip 538200 to 545600.
+    // 2026-10-17 (after #45) SoCal, Santa Barbara and Merced cards read in a real browser (+16 cards, 2,696 programs; PENDING PERSON APPROVAL): 2540600 to 2555400, 531600 to 532300.
+    // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 2634217 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json raw 2619400 to 2634300.
+    // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 548364 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json gzip 545600 to 548400.
+    // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,700 programs) data/entries-lite.json raw, gzip 2540600 to 2560200, 531600 to 533600. PENDING PERSON APPROVAL.
+    // 2026-10-19: the 20 Midwest and Texas cards (#50) after #43 and #49, 2653835 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json raw 2634300 to 2653900.
+    // 2026-10-19: the 20 Midwest and Texas cards (#50) after #43 and #49, 552385 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json gzip 548400 to 552400.
+    // 2026-10-19 issue 27 San Diego, Inland Empire and Merced second pass, official pages read by hand (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 2540600 to 2547400 (gzip still fits).
+    // 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 2660641 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json raw 2653900 to 2660700.
+    // 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 553750 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json gzip 552400 to 553800.
+    // 2026-10-19 issue 25 Midwest campuses second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL) data/entries-lite.json raw 2540600 to 2547400 (gzip still fits).
+    // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 2667460 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json raw 2660700 to 2667500.
+    // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 555043 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json gzip 553800 to 555100.
     // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,692 programs; PENDING PERSON APPROVAL): raw 2546800 to 2552700, gzip 531600 to 532200.
-    "data/entries-lite.json": { raw: 2552700, gzip: 532200 },
+    // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 2673498 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json raw 2667500 to 2673500.
+    // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 556352 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json gzip 555100 to 556400.
+    // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 2673515 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json raw 2673500 to 2673600.
+    "data/entries-lite.json": { raw: 2673600, gzip: 556400 },
     // Raised on 2026-10-11 for ticket p7-regions-1: entries-core.json is 368,169 bytes (36,864 gzipped). Raw from 320000 to 375000, gzip from 32000 to 37500.
     // PENDING PERSON APPROVAL: same as entries.json above. Do not raise again without a person's recorded sign-off.
     // Raised again on 2026-10-12 for the 178 more cards: entries-core.json is 400,279 bytes (41,089 gzipped). Raw from 375000 to 420000, gzip from 37500 to 43000. PENDING PERSON APPROVAL, as above.
@@ -91,8 +158,32 @@ const LIMITS = {
     // 2026-10-17 Pacific Northwest and Vancouver cards read in a real browser for issue 23, rebased on e7628a4 (2,650 programs). PENDING PERSON APPROVAL, as above. data/entries-core.json gzip 48600 to 48700.
     // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) data/entries-core.json raw 484100, gzip 49800.
     // 2026-10-18 (after #45) issue 19 Southern California pages read in a real browser (+6 cards, 2,686 programs; PENDING PERSON APPROVAL): 484100 to 485200.
+    // 2026-10-18 (after #54) issue 22 Chicago and Elgin second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 484100 to 485500 (gzip still fits).
+    // 2026-10-19: issue 19 second pass (#59) and issue 22 second pass (#60) together, 486478 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json raw 485500 to 486500.
+    // 2026-10-19 issue 23 Pacific Northwest and Vancouver second pass read in a real browser (+15 cards, 2,695 programs; PENDING PERSON APPROVAL): 484100 to 486900, gzip 49800 to 50000.
+    // 2026-10-19: the 15 PNW cards (#65) after #59, #60 and #64, 489233 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json raw 486900 to 489300.
+    // 2026-10-19 issues 20, 21 and 26 East Coast second pass read in a real browser (+9 cards, 2,689 programs; PENDING PERSON APPROVAL): 484100 to 485800 (gzip still fits).
+    // 2026-10-19: the 9 East Coast cards (#66) after #59, #60, #64 and #65, 490905 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json raw 489300 to 491000.
+    // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. data/entries-core.json raw 484100 to 492300.
+    // 2026-10-17 Bay Area city pass for issues 1 and 2 merged onto main (2,724 programs). PENDING PERSON APPROVAL. data/entries-core.json gzip 49800 to 49900.
+    // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 499081 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json raw 492300 to 499100.
+    // 2026-10-19: the 44 Bay Area city cards (#43) after #59, #60, #62, #64, #65 and #66, 50482 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json gzip 50000 to 50500.
+    // 2026-10-17 (after #45) SoCal, Santa Barbara and Merced cards read in a real browser (+16 cards, 2,696 programs; PENDING PERSON APPROVAL): 484100 to 487200.
+    // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 502100 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json raw 499100 to 502200.
+    // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 50759 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json gzip 50500 to 50800.
+    // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,700 programs) data/entries-core.json raw, gzip 484100 to 487800, 49800 to 49800. PENDING PERSON APPROVAL.
+    // 2026-10-19: the 20 Midwest and Texas cards (#50) after #43 and #49, 505782 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json raw 502200 to 505800.
+    // 2026-10-19: the 20 Midwest and Texas cards (#50) after #43 and #49, 51046 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json gzip 50800 to 51100.
+    // 2026-10-19 issue 27 San Diego, Inland Empire and Merced second pass, official pages read by hand (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 484100 to 485300 (gzip still fits).
+    // 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 506994 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json raw 505800 to 507000.
+    // 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 51166 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json gzip 51100 to 51200.
+    // 2026-10-19 issue 25 Midwest campuses second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL) data/entries-core.json raw 484100 to 485400 (gzip still fits).
+    // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 508275 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json raw 507000 to 508300.
+    // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 51266 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json gzip 51200 to 51300.
     // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,692 programs; PENDING PERSON APPROVAL): 485200 to 486300 (gzip still fits).
-    "data/entries-core.json": { raw: 486300, gzip: 49800 },
+    // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 509393 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json raw 508300 to 509400.
+    // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 51376 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-core.json gzip 51300 to 51400.
+    "data/entries-core.json": { raw: 509400, gzip: 51400 },
   },
   liteBytesPerProgram: 1300,
   // Raised from 32000 to 32100 on 2026-10-10 for the footer link to the teachers and counselors handout, which every page carries. ready.html is 32009 bytes.
@@ -261,8 +352,14 @@ test("mutation: a lite file at 2,300,000 bytes is reported, and only lite is rep
   const problems = budgetProblems(fake, programCount);
   assert.deepEqual(problems, [
     // 2026-10-18 (after #45) issue 19 Southern California pages read in a real browser (+6 cards, 2,686 programs; PENDING PERSON APPROVAL): 2540600 to 2546800.
+    // 2026-10-18 (after #54) issue 22 Chicago and Elgin second pass read in a real browser (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 2540600 to 2547400.
+    // 2026-10-19 issue 23 Pacific Northwest and Vancouver second pass read in a real browser (+15 cards, 2,695 programs; PENDING PERSON APPROVAL): 2540600 to 2554500.
+    // 2026-10-19 issues 20, 21 and 26 East Coast second pass read in a real browser (+9 cards, 2,689 programs; PENDING PERSON APPROVAL): 2540600 to 2549200.
+    // 2026-10-17 (after #45) SoCal, Santa Barbara and Merced cards read in a real browser (+16 cards, 2,696 programs; PENDING PERSON APPROVAL): 2540600 to 2555400.
+    // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,700 programs) lite mutation message 2540600 to 2560200. PENDING PERSON APPROVAL.
+    // 2026-10-19 issue 27 San Diego, Inland Empire and Merced second pass, official pages read by hand (+7 cards, 2,687 programs; PENDING PERSON APPROVAL): 2540600 to 2547400.
     // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,692 programs; PENDING PERSON APPROVAL): 2546800 to 2552700.
-    `${LITE} is ${big} bytes, over the limit of 2552700 bytes`, // 2026-10-17: PNW and Vancouver cards rebased on e7628a4 (2,650 programs); was 2496100
+    `${LITE} is ${big} bytes, over the limit of 2673600 bytes`, // 2026-10-17: PNW and Vancouver cards rebased on e7628a4 (2,650 programs); was 2496100
     `${LITE} is ${Math.round(big / programCount)} bytes per program (${big} bytes for ${programCount} programs), over the limit of 1300 bytes per program`,
   ]);
 });
