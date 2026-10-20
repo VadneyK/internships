@@ -43,7 +43,8 @@ const DETAIL_FIELDS = ["who_can_apply", "how_to_apply", "notes", "duration", "pa
 // 2026-10-19: the 16 Southern California, Santa Barbara and Merced cards (#49) after #43, 626280 bytes gzipped. Approved by Kentaro 2026-10-19 (merge train). limit 622700 to 626300.
 // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,700 programs) entries-detail.json gzip limit 604000 to 606500. PENDING PERSON APPROVAL.
 // 2026-10-19: the 20 Midwest and Texas cards (#50) after #43 and #49, 630784 bytes gzipped. Approved by Kentaro 2026-10-19 (merge train). limit 626300 to 630800.
-const GZIP_LIMIT = 630800;
+// 2026-10-19: the 7 San Diego, Pomona and Merced cards (#67) after #43 to #52, 632612 bytes gzipped. Approved by Kentaro 2026-10-19 (merge train). limit 630800 to 632700.
+const GZIP_LIMIT = 632700;
 
 function readText(file) {
   return fs.readFileSync(path.join(DATA, file), "utf8");

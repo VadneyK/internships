@@ -57880,6 +57880,46 @@
   "limited": true
  },
  {
+  "id": "merced-4h-teen-camp-staff",
+  "name": "4-H Camp Teen Staff",
+  "org": "Merced County 4-H (UC ANR)",
+  "regions": [
+   "merced"
+  ],
+  "city": "Merced, CA",
+  "type": "leadership",
+  "fields": [
+   "education",
+   "environment"
+  ],
+  "what_you_do": "Help run a 5 day summer camp for 4-H kids ages 9 to 14. Camp is at Pinecrest in the Sierra Nevada mountains. It has hikes, a ropes course, canoes, fishing, archery, arts and crafts, and campfires.",
+  "min_age": null,
+  "max_age": 19,
+  "grades": "Grade 9 through age 19",
+  "who_can_apply": "High school youth from 9th grade through 19 years old. Teen staff are picked through an application and an interview.",
+  "paid_type": "not-stated",
+  "pay_detail": "Pay is not stated on the page.",
+  "season": "summer",
+  "duration": "Camp runs June 14 to June 18, 2027",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Camp staff applications are due November 9, 2026 at 4:00 pm. Camp is June 14 to June 18, 2027.",
+  "deadline_iso": "2026-11-09",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the 2027 Camp Staff Application from the Merced 4-H Camps page and turn it in by the deadline. Then you have an interview. Questions: Merced County 4-H Office, (209) 385-7418.",
+  "needs_work_permit": null,
+  "url": "https://ucanr.edu/site/merced-4-h-youth-development/outdoor-science-and-adventure-camp",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://ucanr.edu/site/merced-4-h-youth-development/outdoor-science-and-adventure-camp"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "The page gives the deadline as November 9 with no year, next to the June 2027 camp dates and the 2027 application form. It does not say whether teen staff must be enrolled 4-H members, so ask the 4-H office.",
+  "verified_on_label": "Oct 19, 2026"
+ },
+ {
   "id": "merced-civil-air-patrol-squadron-147-cadets",
   "name": "Civil Air Patrol Cadets, Merced County Composite Squadron 147",
   "org": "Civil Air Patrol, Merced County Composite Squadron 147",
@@ -58002,6 +58042,48 @@
   "priority": 2,
   "notes": "This is the college's own concurrent enrollment page. Merced Union High School District also has its own dual enrollment partnership with Merced College (see that separate card). Kinesiology courses with a physical activity part are capped at 10 percent of K-12 seats.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "merced-county-4h-youth-development",
+  "name": "Merced County 4-H Youth Development Program",
+  "org": "Merced County 4-H (UC ANR)",
+  "regions": [
+   "merced"
+  ],
+  "city": "Merced, CA",
+  "type": "leadership",
+  "fields": [
+   "any",
+   "education"
+  ],
+  "what_you_do": "Join a local 4-H club and pick at least one project in it. Teens 14 to 19 are Senior Members. You can also join county 4-H activities without a club.",
+  "min_age": 9,
+  "max_age": 19,
+  "grades": null,
+  "who_can_apply": "You can join if you are 9 by December 31 of the program year. Groups are Junior (9 to 10), Intermediate (11 to 13) and Senior (14 to 19). You can stay until December 31 of the year you turn 19. Kids 5 and up can join as Primary members.",
+  "paid_type": "fee-based",
+  "pay_detail": "The youth fee is $70 for 2026 to 2027. It includes accident and illness insurance. You may be able to get the fee waived or lowered.",
+  "season": "school-year",
+  "duration": "2026 to 2027 program year",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Youth enrollment for 2026 to 2027 opened August 3, 2026. You can enroll any time in the program year, but you must enroll by December 31, 2026 to show at the fair.",
+  "deadline_iso": null,
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Contact a club leader first, since some clubs have limited space. Then enroll online in the 4-H enrollment system linked on the New Youth Member page, picking at least one club and one project, and pay your club leader or pay online. Questions: (209) 385-7418.",
+  "needs_work_permit": false,
+  "url": "https://ucanr.edu/site/merced-4-h-youth-development/new-youth-member",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://ucanr.edu/site/merced-4-h-youth-development/new-youth-member",
+   "https://ucanr.edu/site/merced-4-h-youth-development/how-join-4-h",
+   "https://ucanr.edu/site/merced-4-h-youth-development/4-h-membership-policy"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "The club list is on the Merced County 4-H Clubs tab of the site. Teens can also apply to be 4-H camp teen staff (see the Merced 4-H Camp Teen Staff card).",
+  "verified_on_label": "Oct 19, 2026"
  },
  {
   "grades": null,
@@ -82854,6 +82936,47 @@
   "verified_on_label": "Oct 10, 2026"
  },
  {
+  "id": "pomona-youth-accountability-board",
+  "name": "Youth Accountability Board Member",
+  "org": "City of Pomona Department of Children and Youth",
+  "regions": [
+   "inland-empire",
+   "los-angeles"
+  ],
+  "city": "Pomona, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Help watch over Pomona's Children and Youth Fund. The board reviews grant requests and suggests grants to the City Council. It checks that funded programs work, and it meets in public at least 6 times a year.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Pomona youth. Each City Council member appoints one youth from their district, and the Mayor appoints two youth at large. The page gives no age range for youth members.",
+  "paid_type": "not-stated",
+  "pay_detail": "Pay or stipend not stated.",
+  "season": "year-round",
+  "duration": "Term length not stated",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No application dates or open seats are posted on the page.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "The page does not explain how to apply. Youth members are appointed by their City Council member or the Mayor, so contact your council member's office or the Department of Children and Youth.",
+  "needs_work_permit": null,
+  "url": "https://www.pomonaca.gov/government/departments/department-of-children-and-youth",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.pomonaca.gov/government/departments/department-of-children-and-youth"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 3,
+  "notes": "Confirm first: the page has no application, age range or term length. The department serves children and youth from birth through age 24.",
+  "verified_on_label": "Oct 19, 2026"
+ },
+ {
   "id": "pomona-youth-music-program-volunteer",
   "name": "Volunteer, Youth Music Program",
   "org": "City of Pomona",
@@ -92676,6 +92799,88 @@
   "priority": 3,
   "notes": "Closed right now. Check the page around late summer 2027 for the next application.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "sdsu-robotics-camp",
+  "name": "Robotics Camp",
+  "org": "San Diego State University (SMILE Lab and Talent Search)",
+  "regions": [
+   "san-diego"
+  ],
+  "city": "San Diego, CA",
+  "type": "pre-college",
+  "fields": [
+   "engineering",
+   "tech-cs"
+  ],
+  "what_you_do": "Spend a week at SDSU. You learn to code in Scratch and Python, build and program MBot Mega robots, and fly and program drones. You also learn about AI, cyber safety and clean energy, tour STEM labs and hear guest speakers.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Grades 8 to 12",
+  "who_can_apply": "Middle and high school students in grades 8 to 12. A STEM teacher must fill out a short recommendation form for you.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free to attend. Snacks and lunch are included.",
+  "season": "summer",
+  "duration": "One week",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "The page says the application period runs February to May and that the 2025 application period has ended. No 2026 or 2027 dates are posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "When the application opens, fill out the student form. Ask a STEM teacher to send the short teacher form. Questions: SDSU Talent Search, 619-594-3474 or talentsearch@sdsu.edu.",
+  "needs_work_permit": null,
+  "url": "https://ite.sdsu.edu/oce/our-programs/robotics-camp",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://ite.sdsu.edu/oce/our-programs/robotics-camp",
+   "https://ite.sdsu.edu/oce/our-programs/talent-search"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "Confirm first: the camp page still talks about 2025. The SDSU Talent Search page says the U.S. Department of Education ended Talent Search funding and the program is closing out, so ask whether the camp will run again.",
+  "verified_on_label": "Oct 19, 2026"
+ },
+ {
+  "id": "sdsu-upward-bound",
+  "name": "Upward Bound",
+  "org": "San Diego State University",
+  "regions": [
+   "san-diego"
+  ],
+  "city": "San Diego, CA",
+  "type": "pre-college",
+  "fields": [
+   "any",
+   "education"
+  ],
+  "what_you_do": "Meet one on one with an advisor at your school, go to Saturday sessions, and get help with college and money forms. In summer, you can join the Summer Academy at SDSU and live in the dorms.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Grades 9 to 12 (Summer Academy 2025 was for rising 10th to 12th graders)",
+  "who_can_apply": "You must be from a low income family, or your parents did not finish college. You must go to one of 9 partner high schools. They are Castle Park, Mar Vista, Southwest, Crawford, Hoover, San Diego High, El Cajon Valley, Morse and Mount Miguel.",
+  "paid_type": "mixed",
+  "pay_detail": "The program is 100% federally funded. The Summer Academy page says students get paid, but no amount is stated.",
+  "season": "year-round",
+  "duration": "School year advising plus a summer academy",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline is posted. The page links an interest form and an online application. The Summer Academy page still says to check back for 2026 registration.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "If you go to a partner school, fill out the interest form (in English or Spanish). You can also use the online form at the bottom of the Upward Bound page, or see the advisor at your school. Questions: 619-594-6184 or upwardboundite@sdsu.edu.",
+  "needs_work_permit": null,
+  "url": "https://ite.sdsu.edu/upwardbound",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://ite.sdsu.edu/upwardbound",
+   "https://ite.sdsu.edu/upwardbound/summer-academy"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "In July 2025, Summer Academy students lived in the dorms. They went to talks and did a research project on a health issue in their own community. The Summer Academy page also lists paid work study jobs for rising 12th graders. It lists starter jobs for rising 11th graders too.",
+  "verified_on_label": "Oct 19, 2026"
  },
  {
   "id": "seattle-anew-construction-trades-training",
@@ -104210,6 +104415,48 @@
   "verified_on_label": "Oct 7, 2026"
  },
  {
+  "id": "uc-merced-bobcat-summer-stem-academy-high-school",
+  "name": "Bobcat Summer STEM Academy (High School Academies)",
+  "org": "UC Merced CalTeach",
+  "regions": [
+   "merced"
+  ],
+  "city": "Merced, CA",
+  "type": "pre-college",
+  "fields": [
+   "science",
+   "tech-cs",
+   "engineering"
+  ],
+  "what_you_do": "Take a hands-on STEM workshop at UC Merced. UC Merced scientists made the workshops, and its students and staff lead them. 2026 high school topics were microbes, physics labs, drones, coding dark matter in Python, and math with coding.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Entering 9th grade through graduating 12th grade",
+  "who_can_apply": "In 2026: students entering 9th grade in fall 2026 through students graduating 12th grade in spring 2026. Students moving from 8th to 9th grade can join the high school academies.",
+  "paid_type": "fee-based",
+  "pay_detail": "2026 fees: $160 for a week, $100 for 3 days, $70 for 2 days, $40 for 1 day. Some 2026 academies were free thanks to grants. There were no regular scholarships in 2026.",
+  "season": "summer",
+  "duration": "1 day to 1 week workshops, Monday to Friday, 8:30 am to 3:30 pm",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "2026 academies ran June 8 to July 24, 2026 (not the first week of July). 2027 dates are not posted yet.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Register and pay online through the link on the Bobcat Summer STEM Academy page. If the workshop you want is full, join the waitlist. Each high school workshop had 24 seats in 2026.",
+  "needs_work_permit": null,
+  "url": "https://calteach.ucmerced.edu/bobcat-summer-stem-academy",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://calteach.ucmerced.edu/bobcat-summer-stem-academy",
+   "https://calteach.ucmerced.edu/node/2341"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "Lunch, snacks, supplies and a T-shirt are included. For questions, contact Mariah Gonsalez, who runs K12 outreach for CalTeach. Her email is on the page.",
+  "verified_on_label": "Oct 19, 2026"
+ },
+ {
   "id": "uc-merced-summer-session-high-school-discount",
   "name": "Summer Session Discount Program for High School Students",
   "org": "UC Merced Summer Session",
@@ -105998,6 +106245,48 @@
   "priority": 3,
   "notes": "Confirm first: the page lists no dates, cost or application. Its wording speaks to parents about investing in the program, so ask whether there is a fee and whether aid is offered.",
   "verified_on_label": "Oct 17, 2026"
+ },
+ {
+  "id": "usd-trio-upward-bound",
+  "name": "TRIO Upward Bound",
+  "org": "University of San Diego",
+  "regions": [
+   "san-diego"
+  ],
+  "city": "San Diego, CA",
+  "type": "pre-college",
+  "fields": [
+   "any",
+   "education"
+  ],
+  "what_you_do": "Get tutoring, advising and help with college and financial aid forms during the school year. In summer, live on the USD campus, take up to 4 classes to get ready for the next school year, and go on a field trip each week.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Grades 9 to 11 (rising 9th graders can apply)",
+  "who_can_apply": "Current 9th, 10th or 11th graders at Kearny High Educational Complex or Hoover High School. 8th graders who will go to Kearny or Hoover next year are encouraged to apply. Your family must meet federal income guidelines, or neither parent or guardian has a U.S. college degree.",
+  "paid_type": "not-stated",
+  "pay_detail": "Cost and pay are not stated on the USD pages.",
+  "season": "year-round",
+  "duration": "School year services plus a summer program where students live on campus",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Applications for Kearny and Hoover are reviewed on a rolling basis for the next school year. No closing date is posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Check the rules on the Prospective Students page, then fill out the online application for your high school (Kearny or Hoover) on the Apply page. Staff follow up after you apply. Questions go to the Assistant Director for your school (emails on the Apply page).",
+  "needs_work_permit": null,
+  "url": "https://www.sandiego.edu/upward-bound/prospective/",
+  "apply_url": "https://www.sandiego.edu/upward-bound/apply/",
+  "sources_fetched": [
+   "https://www.sandiego.edu/upward-bound/prospective/",
+   "https://www.sandiego.edu/upward-bound/apply/",
+   "https://www.sandiego.edu/upward-bound/about/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-19",
+  "priority": 2,
+  "notes": "To stay in the program, go to a monthly meeting after school. Go to at least one workshop or event each fall and spring, and keep at least a 2.5 GPA. USD says it serves 120 students in the school year and 100 in summer.",
+  "verified_on_label": "Oct 19, 2026"
  },
  {
   "id": "uss-hornet-volunteer-16-plus",
