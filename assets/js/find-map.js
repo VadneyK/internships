@@ -1,5 +1,5 @@
-/* Programs page map: the street map of the Map page (map-gl.js, MapLibre) above the cards, with one dot per city in the list.
-   find.js loads this file only when the map box comes near the screen, after the list is drawn, so the first load stays the same.
+/* Programs page map: the street map of the Map page (map-gl.js, MapLibre) under Your picks, always shown, with one dot per city in the list.
+   Its box keeps its size from the start. find.js loads this file once the box is near the screen, after the list is drawn, so the first load stays the same.
    find.js calls G.findMap.paint(list, state, pick) after each draw: list is every matching program (before a city is picked),
    pick is the city a dot tap chose ({ k, ids }) or null. A tap on a dot calls G.findCity, which keeps only that city's cards.
    With a place picked the map moves to the cities of that place, and with none it shows the whole map. */
