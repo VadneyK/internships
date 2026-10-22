@@ -20,10 +20,10 @@
   "pay_detail": null,
   "season": "fall",
   "duration": "One program you lead. Presentation dates are set later.",
-  "status": "open-now",
-  "opens_iso": null,
-  "deadline_text": "Open Sept 21 to Oct 19, 2026 for programs in February to May 2027. The next window is May 17 to June 21, 2027, for programs in October 2027 to January 2028.",
-  "deadline_iso": "2026-10-19",
+  "status": "opens-soon",
+  "opens_iso": "2027-05-17",
+  "deadline_text": "The fall window closed Oct 19, 2026. The next window is May 17 to June 21, 2027, for programs in October 2027 to January 2028.",
+  "deadline_iso": "2027-06-21",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Fill out the library's online Program Proposal form, linked on the event page, before the window closes. A proposal does not guarantee a spot.",
   "needs_work_permit": false,
@@ -33,7 +33,7 @@
     "https://aclibrary.bibliocommons.com/events/6a7c98e13f18f80030baa346"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-10-21",
   "priority": 3,
   "notes": "The page does not say if presenters are paid; treat it as unpaid. Library programs are booked at least 3 months ahead. The proposal windows open on the third Monday of their months. Questions: dublin@aclibrary.org or (925) 803-7252."
 }
