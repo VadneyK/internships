@@ -7696,33 +7696,34 @@
   "apply_url": null,
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-10-21",
   "priority": 3,
-  "deadline_confidence": "last-year-pattern",
+  "deadline_confidence": "unknown",
   "max_age": 17,
   "min_age": 15,
-  "name": "Iacocca Global Entrepreneurship Intensive (IGEI)",
+  "name": "Iacocca Global Leadership Intensive (IGLI)",
   "org": "Lehigh University, Iacocca Institute",
   "regions": [
    "pennsylvania"
   ],
   "city": "Bethlehem, PA",
   "type": "entrepreneurship",
-  "what_you_do": "A three-week program where you live on campus. Teens from around the world learn to build a business idea and pitch it.",
-  "who_can_apply": "Ages 15 to 17 for the whole program. Students must graduate high school in 2027 or 2028 (2026 page). Needs three recommenders: an English teacher, a business or social studies teacher, and a counselor.",
+  "what_you_do": "A three-week program where you live on campus with teens from around the world. Pick Business and Entrepreneurship or Health and Innovation, and work on team projects.",
+  "who_can_apply": "You must be 15 to 17 for the whole program. You must finish high school in 2027 or 2028. You need three people to write for you: an English teacher, a second teacher and a counselor.",
   "paid_type": "fee-based",
-  "pay_detail": "$7,000 program fee (2026) covering tuition, room and board. Limited need-based aid for priority applicants.",
+  "pay_detail": "$7,400 program fee (2027) for tuition, room and board, materials and trips. Small need-based aid, for priority applicants only.",
   "season": "summer",
-  "duration": "3 weeks (2026: July 5 to 25)",
-  "status": "unconfirmed",
-  "deadline_text": "Page says IGEI 2027 applications open in October 2026. 2026 priority deadline was Feb 15, with rolling admission after. 2027 dates not posted.",
-  "how_to_apply": "Fill out the survey to see if you qualify. Name three people to write you a recommendation. Then send the application with a resume, a one-page essay and a 3-minute pitch video. Questions: gesummer@lehigh.edu.",
-  "url": "https://global.lehigh.edu/iacocca-institute/IGEI",
-  "notes": "Costs a lot. Ask about aid early since priority aid deadline was in February. Residential, no early departure.",
+  "duration": "3 weeks, July 11 to 31, 2027",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The page says 2027 applications open in October 2026; the form was not active on Oct 22. Priority deadline Feb 15, 2027, then rolling.",
+  "how_to_apply": "Fill out the survey to see if you qualify and name your recommenders. Then send the application with a resume, a one-page essay and a 3-minute video. Questions: globalprecollege@lehigh.edu.",
+  "url": "https://global.lehigh.edu/iacocca-institute/IGLI",
+  "notes": "This used to be called IGEI. The old link now goes to the IGLI page. You live on campus and stay the whole time.",
   "sources_fetched": [
-   "https://global.lehigh.edu/iacocca-institute/IGEI"
+   "https://global.lehigh.edu/iacocca-institute/IGEI",
+   "https://global.lehigh.edu/iacocca-institute/IGLI"
   ],
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Oct 21, 2026"
  },
  {
   "id": "beyond-emancipation-foster-youth",
