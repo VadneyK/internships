@@ -20,11 +20,11 @@
   "pay_detail": "Described as paid. The amount is not stated on the program pages.",
   "season": "summer",
   "duration": "The program page says eight weeks of paid full-time structured research. The 2026 program ran June 15 to July 31, 2026, which is shorter than eight weeks, so confirm the length. The page does not give the 2027 dates.",
-  "status": "closed-expect-reopen",
-  "opens_iso": null,
-  "deadline_text": "The page says applications for the Summer 2027 program will open in October 2026. The deadline is not posted yet.",
+  "status": "opens-soon",
+  "opens_iso": "2026-10-27",
+  "deadline_text": "Applications for the 2027 program open Tuesday, October 27, 2026. The deadline is not posted yet.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Use the MSAP Applications page on monell.org when it opens. Sign up for Monell's newsletter for updates. Questions: AcademicAffairs@monell.org or 267-519-4700. About 200 applications come in each year. 18 to 24 students are usually enrolled.",
   "needs_work_permit": true,
   "url": "https://monell.org/science-apprenticeship-program/",
@@ -36,7 +36,7 @@
     "https://www.pa.gov/agencies/dli/resources/compliance-laws-and-regulations/labor-management-relations/child-labor-act"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-21",
   "priority": 1,
   "notes": "Minors do not need working papers to apply. They must get them after they are admitted. They come from the School District of Philadelphia, per the Monell FAQ. The Pennsylvania Department of Labor and Industry says minors under 18 need a work permit from their school district's issuing officer. Monell does not provide housing or meals. Students must commit to the full program with no vacations."
 }
