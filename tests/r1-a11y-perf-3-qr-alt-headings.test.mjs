@@ -30,7 +30,7 @@ test("every QR image has short alt text that starts with QR code and shows no ad
 
 test("each QR card title is an h3", () => {
   const cards = [...share.querySelectorAll(".qrcard")];
-  assert.equal(cards.length, 10);
+  assert.equal(cards.length, 11);
   for (const card of cards) {
     const h = card.querySelector("h2, h3, h4");
     assert.ok(h, "card has a heading");

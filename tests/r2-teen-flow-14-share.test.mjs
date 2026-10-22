@@ -75,7 +75,7 @@ test("share: the leader heading is shown above the first QR card", async () => {
   const firstCard = document.querySelector(".qrcard");
   assert.ok(h.compareDocumentPosition(firstCard) & 4, "heading comes before the QR cards");
   const cardsAfter = [...document.querySelectorAll(".qrcard")].filter((c) => h.compareDocumentPosition(c) & 4);
-  assert.equal(cardsAfter.length, 10, "all ten leader QR cards come after the heading");
+  assert.equal(cardsAfter.length, 11, "all eleven leader QR cards come after the heading");
 });
 
 test("share: no em dash or en dash in the source or the built page", () => {

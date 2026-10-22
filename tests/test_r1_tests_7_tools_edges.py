@@ -149,7 +149,7 @@ class MakeQrDeterminism(unittest.TestCase):
         out2, _ = self.run_script_into(second_root)
         names1 = sorted(os.listdir(out1))
         self.assertEqual(names1, sorted(os.listdir(out2)))
-        self.assertEqual(len(names1), 10)
+        self.assertEqual(len(names1), 11)
         for name in names1:
             with open(os.path.join(out1, name), "rb") as f1, open(os.path.join(out2, name), "rb") as f2:
                 self.assertEqual(hashlib.sha256(f1.read()).hexdigest(), hashlib.sha256(f2.read()).hexdigest(), name)
