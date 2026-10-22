@@ -30,7 +30,6 @@ ALLOW = {
     "legischool-civics-virtual-institute": "Online but open only to people from one state or area, so it is not tagged virtual (p9-regions-1, 2026-10-10).",
     "madison-uw-carbone-hero-cancer-research": "Online but open only to people from one state or area, so it is not tagged virtual (p9-regions-1, 2026-10-10).",
     "mtc-high-school-internship-program": "Online but open only to people from one state or area, so it is not tagged virtual (p9-regions-1, 2026-10-10).",
-    "oak-ridge-ornl-next-generation-stem-internship": "Online but open only to people from one state or area, so it is not tagged virtual (p9-regions-1, 2026-10-10).",
     "vancouver-bcchr-mini-med-school": "Online but open only to people from one state or area, so it is not tagged virtual (p9-regions-1, 2026-10-10).",
     "vancouver-bcchr-pathways-to-science": "Online but open only to people from one state or area, so it is not tagged virtual (p9-regions-1, 2026-10-10).",
     "virginia-vsgc-vasts-nasa-langley": "Online but open only to people from one state or area, so it is not tagged virtual (p9-regions-1, 2026-10-10).",
