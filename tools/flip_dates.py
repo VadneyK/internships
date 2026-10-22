@@ -6,7 +6,9 @@ Two flips only, and only from opens_iso and deadline_iso (no text is read or cha
   - open-now or opens-soon and deadline_iso has passed: status closed-expect-reopen,
     deadline_iso null (and opens_iso null).
 A flip to closed is held for a person when deadline_text says the program is open, because
-the closed card would then say open in its own text. Held cards are listed, not written.
+the closed card would then say open in its own text. An event whose day (deadline_iso) has
+passed is also held: only its official page can say whether there is a next date.
+Held cards are listed, not written.
 
 The default date is today in UTC, the clock CI runs on. Dry run unless --write.
 
@@ -26,6 +28,11 @@ SAYS_OPEN = re.compile(r"\b(?:is|are|now)\s+open\b|\bopen now\b|\baccepting\b", 
 def plan_flip(card, today):
     """Return (new_fields, None), (None, reason to hold) or (None, None) when nothing is due."""
     status = card.get("status")
+    if status == "event":
+        day = proglib.parse_iso(card.get("deadline_iso"))
+        if day and day < today:
+            return None, "event day %s has passed; set its next date or close it" % card["deadline_iso"]
+        return None, None
     if status not in ("open-now", "opens-soon"):
         return None, None
     opens = proglib.parse_iso(card.get("opens_iso"))

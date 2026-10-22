@@ -46,6 +46,15 @@ class PlanFlipTests(unittest.TestCase):
         self.assertIsNone(change)
         self.assertIn("2026-10-19", held)
 
+    def test_past_event_is_held_not_written(self):
+        change, held = flip_dates.plan_flip(card(status="event", deadline_iso="2026-10-14"), TODAY)
+        self.assertIsNone(change)
+        self.assertIn("event day 2026-10-14 has passed", held)
+
+    def test_event_today_or_later_is_left_alone(self):
+        for day in ("2026-10-20", "2026-11-07"):
+            self.assertEqual(flip_dates.plan_flip(card(status="event", deadline_iso=day), TODAY), (None, None))
+
     def test_other_statuses_are_never_touched(self):
         for status in ("rolling", "year-round", "closed-expect-reopen"):
             self.assertEqual(flip_dates.plan_flip(card(status=status, deadline_iso="2020-01-01"), TODAY), (None, None))

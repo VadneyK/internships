@@ -97,8 +97,15 @@ class FlipPlanEdges(unittest.TestCase):
         self.assertEqual(self.flip(deadline_iso="2026-10-20"), (None, None))
 
     def test_closed_cards_are_never_flipped(self):
-        for status in ("closed-expect-reopen", "rolling", "year-round", "event"):
+        for status in ("closed-expect-reopen", "rolling", "year-round"):
             self.assertEqual(self.flip(status=status, deadline_iso="2026-01-01", opens_iso="2026-01-01"), (None, None), status)
+
+    def test_events_are_never_flipped_but_a_past_one_is_held(self):
+        change, held = self.flip(status="event", deadline_iso="2026-10-19", opens_iso="2026-01-01")
+        self.assertIsNone(change)
+        self.assertIn("2026-10-19", held)
+        self.assertEqual(self.flip(status="event", deadline_iso="2026-10-20"), (None, None))
+        self.assertEqual(self.flip(status="event", deadline_iso=None), (None, None))
 
     def test_open_now_with_an_arrived_opening_day_is_left_alone(self):
         self.assertEqual(self.flip(status="open-now", opens_iso="2026-10-01"), (None, None))
