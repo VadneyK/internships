@@ -49366,9 +49366,9 @@
   "max_age": 18,
   "opens_iso": null,
   "deadline_iso": null,
-  "apply_url": null,
+  "apply_url": "https://volunteers.sparrow.org/",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-10-21",
   "needs_work_permit": null,
   "id": "lansing-umh-sparrow-teen-volunteer",
   "name": "UM Health-Sparrow Teen Volunteer Program",
@@ -49387,9 +49387,9 @@
   "pay_detail": "Unpaid",
   "season": "school-year",
   "duration": "One semester (10 to 12 weeks): one 2 hour shift a week in the school year, or two shifts a week (max 4 hours) in summer",
-  "status": "closed-expect-reopen",
-  "deadline_text": "Volunteer applications are temporarily closed and are anticipated to reopen in mid-October.",
-  "deadline_confidence": "last-year-pattern",
+  "status": "rolling",
+  "deadline_text": "Applications are open on the Volunteering at Sparrow page. Teens are placed by semester; spring registration links go out in early December to onboarded volunteers.",
+  "deadline_confidence": "rolling",
   "how_to_apply": "Online application on the Volunteering at Sparrow page (or ask for a paper copy at Volunteer Services). Then onboarding (2 to 3 weeks), online orientation, and placement registration links sent to onboarded volunteers.",
   "url": "https://www.uofmhealthsparrow.org/um-health-sparrow-community-health/volunteering-um-health-sparrow",
   "sources_fetched": [
@@ -49399,7 +49399,7 @@
   ],
   "priority": 1,
   "notes": "Expect a criminal background check, proof of MMR, varicella and Tdap immunizations (or titers), and a flu vaccine Nov to March; teens wear a provided smock apron and closed toe shoes. Volunteers must attend at least 75 percent of shifts. Free parking for active volunteers. Volunteer Services phone is on the page. Michigan's youth employment page (Youth Employment Standards Act) says the law covers employers of anyone under 18 including volunteers, so ask the program whether a work permit is needed.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Oct 21, 2026"
  },
  {
   "grades": "Rising 5th to 12th (Five-Day Intensive); rising 8th through college (Advanced Workshop)",
@@ -79226,10 +79226,10 @@
   "min_age": null,
   "max_age": null,
   "opens_iso": null,
-  "deadline_iso": null,
-  "apply_url": null,
+  "deadline_iso": "2026-11-16",
+  "apply_url": "https://www.jotform.com/81145459075157",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-10-21",
   "id": "philadelphia-franklin-institute-stem-scholars",
   "name": "STEM Scholars, The Franklin Institute",
   "org": "The Franklin Institute",
@@ -79249,19 +79249,19 @@
   "pay_detail": "Free to students; rising seniors are paid for lab research (rate not stated). Fees covered by donors.",
   "season": "school-year",
   "duration": "Four years, grades 9 to 12; research window of 10 weeks between late June and early September",
-  "status": "closed-expect-reopen",
-  "deadline_text": "Applications for the next freshman cohort are closed as of Oct 11; the page says check back for the 2027 class. The FAQ says applications usually open late September or early October and are due mid-December. No 2027 dates are posted yet.",
-  "deadline_confidence": "last-year-pattern",
+  "status": "open-now",
+  "deadline_text": "Applications for the next freshman cohort are open and due November 16, 2026.",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Online application, essay, transcript, two recommendation letters, then an interview with Youth Programs staff.",
   "needs_work_permit": null,
   "url": "https://www.fi.edu/en/stem-scholars",
   "priority": 2,
-  "notes": "The FAQ timing and the 'currently closed' message are not fully consistent, so confirm on the page. The sister middle-school program PACTS is for grades 6 to 8.",
+  "notes": "The sister middle-school program PACTS is for grades 6 to 8.",
   "sources_fetched": [
    "https://www.fi.edu/en/stem-scholars",
    "https://www.fi.edu/en/science-and-education/youth-and-community-programs"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Oct 21, 2026"
  },
  {
   "id": "philadelphia-free-library-young-volunteers",
@@ -79491,11 +79491,11 @@
   "pay_detail": "Described as paid. The amount is not stated on the program pages.",
   "season": "summer",
   "duration": "The program page says eight weeks of paid full-time structured research. The 2026 program ran June 15 to July 31, 2026, which is shorter than eight weeks, so confirm the length. The page does not give the 2027 dates.",
-  "status": "closed-expect-reopen",
-  "opens_iso": null,
-  "deadline_text": "The page says applications for the Summer 2027 program will open in October 2026. The deadline is not posted yet.",
+  "status": "opens-soon",
+  "opens_iso": "2026-10-27",
+  "deadline_text": "Applications for the 2027 program open Tuesday, October 27, 2026. The deadline is not posted yet.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Use the MSAP Applications page on monell.org when it opens. Sign up for Monell's newsletter for updates. Questions: AcademicAffairs@monell.org or 267-519-4700. About 200 applications come in each year. 18 to 24 students are usually enrolled.",
   "needs_work_permit": true,
   "url": "https://monell.org/science-apprenticeship-program/",
@@ -79507,10 +79507,10 @@
    "https://www.pa.gov/agencies/dli/resources/compliance-laws-and-regulations/labor-management-relations/child-labor-act"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-21",
   "priority": 1,
   "notes": "Minors do not need working papers to apply. They must get them after they are admitted. They come from the School District of Philadelphia, per the Monell FAQ. The Pennsylvania Department of Labor and Industry says minors under 18 need a work permit from their school district's issuing officer. Monell does not provide housing or meals. Students must commit to the full program with no vacations.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 21, 2026"
  },
  {
   "id": "philadelphia-mural-arts-art-education",
@@ -90073,7 +90073,7 @@
   "max_age": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-10-21",
   "needs_work_permit": false,
   "priority": 3,
   "notes": "Health clearances include MMR, chickenpox, Tdap, TB blood test, and flu and COVID vaccine or a declination. Check the page for when high school applications reopen.",
@@ -90096,7 +90096,7 @@
   "season": "year-round",
   "duration": "At least 1 year and 100 service hours, with 75 percent attendance",
   "status": "closed-expect-reopen",
-  "deadline_text": "The high school application is closed, and the page does not say when it will reopen. The adult and college applications reopen Oct 19.",
+  "deadline_text": "The high school application is closed, and the page does not say when it will reopen.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "When the form opens, submit it. Then go to an in-person info session at Sharp Memorial. After that there is an interview. Onboarding includes a background check and health clearances.",
@@ -90104,7 +90104,7 @@
   "sources_fetched": [
    "https://www.sharp.com/volunteers/metro"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Oct 21, 2026"
  },
  {
   "grades": "Grades 9 to 12",
