@@ -23,19 +23,19 @@
   "duration": "15 months",
   "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "Our 2027 application is now open (apply page, checked 2026-10-10). No closing date is posted. The immersion page's last listed deadline was Feb 21, 2025.",
+  "deadline_text": "The 2027 application is open. No closing date is posted. The last listed deadline was Feb 21, 2025.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Apply online through the Immersion Program page on hiddengeniusproject.org.",
   "needs_work_permit": false,
-  "url": "https://www.hiddengeniusproject.org/immersion",
-  "apply_url": "https://www.hiddengeniusproject.org/apply",
+  "url": "https://www.hiddengeniusproject.org/apply/",
+  "apply_url": null,
   "sources_fetched": [
-    "https://www.hiddengeniusproject.org/immersion",
-    "https://www.hiddengeniusproject.org/apply"
+    "https://www.hiddengeniusproject.org/apply/",
+    "https://www.hiddengeniusproject.org/immersion"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-10-21",
   "priority": 1,
-  "notes": "The apply page says OUR 2027 APPLICATION IS NOW OPEN and lists no closing date. The immersion page still shows the old Feb 21, 2025 deadline. The immersion page lists Oakland and Richmond among its sites."
+  "notes": "The apply page lists sites in Oakland, Richmond, Los Angeles, Long Beach and Philadelphia. The old immersion link now opens a past 2025 event page."
 }
