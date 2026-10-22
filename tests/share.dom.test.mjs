@@ -3,12 +3,12 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import { loadPage, tick } from "./dom-helper.mjs";
 
-test("share: loads clean, ten QR cards each with an image file that exists and a link on this site only", async () => {
+test("share: loads clean, eleven QR cards each with an image file that exists and a link on this site only", async () => {
   const p = await loadPage("share.html"); await tick(100);
   const { document } = p;
   assert.deepEqual(p.errors, []);
   const cards = [...document.querySelectorAll(".qrcard")];
-  assert.equal(cards.length, 10);
+  assert.equal(cards.length, 11);
   for (const c of cards) {
     const src = c.querySelector("img").getAttribute("src");
     assert.ok(fs.existsSync(new URL("../" + src, import.meta.url)), src + " should exist");
@@ -20,7 +20,7 @@ test("share: loads clean, ten QR cards each with an image file that exists and a
 
 test("share: each QR svg encodes the same link its card shows", () => {
   const files = fs.readdirSync(new URL("../assets/qr/", import.meta.url)).filter((f) => f.endsWith(".svg"));
-  assert.equal(files.length, 10);
+  assert.equal(files.length, 11);
   for (const f of files) {
     const svg = fs.readFileSync(new URL("../assets/qr/" + f, import.meta.url), "utf8");
     assert.match(svg, /<title>https:\/\/vadneyk\.github\.io\/internships\//, f);

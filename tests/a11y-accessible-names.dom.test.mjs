@@ -39,7 +39,7 @@ test("the seven preview and stats elements are role=group", () => {
 test("share.html QR images say where the code goes and load before print", async () => {
   const { document } = await loadPage("share.html");
   const cards = [...document.querySelectorAll(".qrcard")];
-  assert.equal(cards.length, 10);
+  assert.equal(cards.length, 11);
   cards.forEach((c, i) => {
     const img = c.querySelector("img");
     const words = c.querySelector("h3").textContent.trim().toLowerCase().split(/\s+/);
