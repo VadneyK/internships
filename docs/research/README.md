@@ -7,6 +7,7 @@ This folder is the paper trail behind the program list. It is here so maintainer
 - `orgs-hospitals-jobs-notes.md`: hospital teen volunteer programs, Davis and Yolo seasonal city jobs, and Boys and Girls Club and YMCA teen programs (Oct 16, 2026, issues #3, #4 and #6)
 - `guidance-notes.md`: sourced research behind the Rules, Playbook and Resume pages. Tags: [F] read on the official page, [S] snippet or secondary source, [K] recall that could not be re-verified, [SYN] drafted text. Only [F] facts are stated as facts on the site.
 - `link-redirects-2026-10-22.md`: card links among the open California cards that now redirect to a different page (Oct 22, 2026), with a note for each.
+- `link-redirects-outside-ca-2026-10-22.md`: the same link check over the open cards outside California (Oct 22, 2026): four dead links and 77 redirects.
 - `quality-sweep-2026-10.md`: the October 16, 2026 accessibility and quality sweep (issue #9): axe-core, keyboard, zoom, live regions, facts between pages and links, in headless Chrome. Findings ranked by severity, with what was fixed and what needs a person.
 - `verification-2026-10-07/`: the second pass. Twelve fact-checkers re-opened every program's official page. Each report lists, per program, whether it was OK, FIXED (what changed), DOWNGRADED to "Confirm first", or REMOVED (why).
 
