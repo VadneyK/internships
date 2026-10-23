@@ -38,3 +38,5 @@ Most are the same program at a new address. A redirect still works, so no card w
 | sf-rec-park-yep | https://sfrecpark.org/workreation | https://www.sfrecpark.org/1182/Youth-Employment-Programs | same program, new address |
 | slac-regional-science-bowl-high-school | https://www6.slac.stanford.edu/science-bowl | https://www6.slac.stanford.edu/news-and-events/events/science-bowl | same program, new address |
 | tech-interactive-teen-holiday-helper | https://www.thetech.org/support-us/volunteer | https://www.thetech.org/support/volunteer-innovator-program/ | fixed in this pass (url and status) |
+
+Update, same day: the 25 cards whose page is the same program at a new address now use that address (each opened in a browser on Oct 22; Chabot points at its IDE page rather than the overview). Not moved: san-diego-workforce-partnership-youth (now a general page), sbceo-county-superintendent-student-advisory-council (a preview host; check by hand) and tech-interactive-teen-holiday-helper (moved with its status change).
