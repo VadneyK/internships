@@ -1,5 +1,6 @@
 // Eight cards linked a home page even though a deeper page on the same host was read.
 // Each url must now be the deeper page that tools/hygiene.py names, and that page must be in sources_fetched.
+// 2026-10-22: the app challenge and Key Club pages moved; the old addresses redirect to these (docs/research/link-redirects-2026-10-22.md).
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
@@ -9,8 +10,8 @@ const EXPECTED = {
   "md-job-corps-woodstock": "https://woodstock.jobcorps.gov/train",
   "grafton-job-corps-center": "https://grafton.jobcorps.gov/campus-life",
   "edison-job-corps-center": "https://edison.jobcorps.gov/campus-life",
-  "congressional-app-challenge": "https://www.congressionalappchallenge.us/rules/",
-  "key-club-high-school": "https://www.keyclub.org/how-it-works",
+  "congressional-app-challenge": "https://www.congressionalappchallenge.us/students/rules/",
+  "key-club-high-school": "https://www.keyclub.org/why-key-club/how-it-works/",
   "zooniverse": "https://www.zooniverse.org/about/faq",
   "us-senate-youth-program": "https://ussenateyouth.org/selection_process_administrators",
 };
