@@ -634,8 +634,8 @@
   "pay_detail": "Fall 2026 cohorts: $400 stipend. Summer 2027: $2,000 stipend. Spring 2027 pay is not stated on the page.",
   "season": "school-year",
   "duration": "Spring 2027: about 5 weeks, Mon to Thu 4 to 6 pm (Cohort A Jan 11 to Feb 11, B Feb 22 to Mar 25, C Apr 5 to May 13). Summer 2027: June 14 to July 23, weekdays 9 am to 4:30 pm.",
-  "status": "opens-soon",
-  "opens_iso": "2026-10-26",
+  "status": "open-now",
+  "opens_iso": null,
   "deadline_text": "Spring 2027 cohorts: application opens Oct 26, 2026 and closes Nov 17, 2026; interviews week of Nov 30; decisions Dec 15, 2026. Summer 2027: opens Jan 5, 2027, closes Jan 27, 2027. Fall 2026 cohorts closed Aug 27, 2026.",
   "deadline_iso": "2026-11-17",
   "deadline_confidence": "confirmed-2026-27",
@@ -71473,10 +71473,10 @@
   "pay_detail": "$1,250 stipend after you finish the program.",
   "season": "spring",
   "duration": "Tuesdays 4:30 to 6:30 PM, Jan 19 to Jun 1, 2027, with NYC school breaks off",
-  "status": "open-now",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Applications for 2027 are open. Apply by Sunday, Oct 25, 2026 at 11:59 PM.",
-  "deadline_iso": "2026-10-25",
+  "deadline_text": "The 2027 round closed Sunday, Oct 25, 2026 at 11:59 PM, though the page still shows its apply banner. The 2027 program runs Tuesdays, Jan 19 to June 1, 2027.",
+  "deadline_iso": null,
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Apply online through the Smithsonian application system (SOLAA). The application has short answer questions, an essay and two references. The references are adults who are not related to you. A teacher or mentor works. You can save and finish later. A virtual info session was offered. See the page.",
   "needs_work_permit": null,
@@ -71487,10 +71487,10 @@
    "https://www.cooperhewitt.org/design-hive/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-26",
   "priority": 1,
   "notes": "Meets at 2 East 91st Street and some offsite places. The page says the demographic and citizenship questions are optional and not tied to your application. The page does not say whether a work permit is needed. Cooper Hewitt also runs free monthly Teen Drop-In workshops and a Design Career Fair.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 26, 2026"
  },
  {
   "id": "nyc-cooper-union-saturday-program",
@@ -73340,8 +73340,8 @@
   "duration": "9 months of weekly hybrid sessions (in person and online). No more than 4 absences. Start and end dates are not stated.",
   "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "Applications for 2026-27 are open. Deadline: Oct 25, 2026 at 11:59 p.m.",
-  "deadline_iso": "2026-10-25",
+  "deadline_text": "Applications for 2026-27 are open. The deadline moved to Nov 1, 2026 at 11:59 p.m.",
+  "deadline_iso": "2026-11-01",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Send in the QTI 2026-27 form through the Submittable link on the Queens Museum announcement. Phone 718-592-9700. Email info@queensmuseum.org.",
   "needs_work_permit": null,
@@ -73351,10 +73351,10 @@
    "https://queensmuseum.org/2026/09/14/queens-teens-institute-2026-2027-applications-now-open-deadline-10-25-26/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-26",
   "priority": 1,
   "notes": "This is the fifth year of the program. Ages, grades and work-permit rules are not stated on the announcement, so ask the museum.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 26, 2026"
  },
  {
   "id": "nyc-queens-nysci-explainer-science-career-ladder",
@@ -74859,8 +74859,8 @@
   "duration": "Varies by posting; mostly seasonal",
   "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "Deadline Oct 25, 2026 for Spring/Summer 2027 starts; Feb 7, 2027 for Summer 2027 starts; Aug 8, 2027 for Fall/Winter 2027 starts.",
-  "deadline_iso": "2026-10-25",
+  "deadline_text": "The Oct 25, 2026 round for Spring or Summer 2027 starts has closed. Apply by Feb 7, 2027 for Summer 2027 starts, or by Aug 8, 2027 for Fall or Winter 2027 starts. Hiring takes several months.",
+  "deadline_iso": "2027-02-07",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Apply at governmentjobs.com/careers/oaklandca. Questions: parksandrec@oaklandca.gov or (510) 238-7275.",
   "needs_work_permit": null,
@@ -74870,10 +74870,10 @@
    "https://www.oaklandca.gov/topics/parks-recreation"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-21",
+  "verified_on": "2026-10-26",
   "priority": 1,
   "notes": "The hiring process takes several months, so apply early. Check each posting for minimum age and pay. The governmentjobs.com/careers/oaklandca portal showed 0 openings on Oct 7, 2026. If you cannot find the posting, call (510) 238-7275.",
-  "verified_on_label": "Oct 21, 2026"
+  "verified_on_label": "Oct 26, 2026"
  },
  {
   "id": "oakland-public-library-teen-advisory-board",
@@ -75798,7 +75798,7 @@
   "max_age": null,
   "pay_detail": "Free to students. A deposit confirms your spot and is returned on the day of the program (amount not stated).",
   "duration": "One-day camps in fall (the weeklong camp is over for 2026)",
-  "deadline_iso": "2026-10-24",
+  "deadline_iso": null,
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "priority": 1,
@@ -75822,8 +75822,8 @@
   "who_can_apply": "Any Ohio student who is entering 9th grade through 12th grade, or freshman year of college, this fall.",
   "paid_type": "unpaid",
   "season": "fall",
-  "status": "open-now",
-  "deadline_text": "Fall 2026 one-day camps, per the flyer and ofbf.org: Wilmington Oct. 13, Columbus Oct. 21, COLT Lineman Training (Mount Gilead) Oct. 23, Meat Processing (Yorkshire) Oct. 27, Findlay Nov. 3. Registration closes 10 days before each event or when full. By that rule Wilmington (about Oct. 3) and Columbus (about Oct. 11) have already closed. Still open by that rule: COLT (about Oct. 13), Meat Processing (about Oct. 17) and Findlay (about Oct. 24, 2026). The page does not post close dates itself.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Fall 2026 one-day camps, per the flyer and ofbf.org: Wilmington Oct. 13, Columbus Oct. 21, COLT Lineman Training (Mount Gilead) Oct. 23, Meat Processing (Yorkshire) Oct. 27, Findlay Nov. 3. Registration closes 10 days before each event or when full. By that rule every fall 2026 camp has closed, the last (Findlay) about Oct. 24, 2026. The page does not post close dates itself.",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Pick the camp on the ExploreAg page and fill out its registration form. For questions, use the Contact Us page at ofbf.org/contact/.",
   "url": "https://ofbf.org/community/youth-in-agriculture/exploreag/",
@@ -79998,9 +79998,9 @@
   "id": "philadelphia-pyn-youth-opportunity-fair-2026",
   "grades": null,
   "apply_url": null,
-  "deadline_iso": "2026-10-23",
+  "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-26",
   "priority": 2,
   "min_age": 16,
   "max_age": 24,
@@ -80020,9 +80020,9 @@
   "pay_detail": "Free to attend. The page says employers there have jobs and internships, but it does not say if they are paid.",
   "season": "fall",
   "duration": "Friday Oct 23, 3 to 7 pm",
-  "status": "event",
-  "deadline_text": "Friday, October 23, 2026, 3:00 to 7:00 pm. Pre-registration deadline is Oct 15. The page says registration is not required to attend.",
-  "deadline_confidence": "confirmed-2026-27",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The 2026 fair was Friday, Oct 23, 2026. The page does not give a next date yet.",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Fill out the free pre-registration form on the event page (deadline Oct 15). Bring several copies of your resume.",
   "needs_work_permit": null,
   "url": "https://www.pyninc.org/opportunityfair",
@@ -80030,7 +80030,7 @@
   "sources_fetched": [
    "https://www.pyninc.org/opportunityfair"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 26, 2026"
  },
  {
   "grades": "Programs begin in 10th grade",
@@ -91591,8 +91591,8 @@
   "opens_iso": null,
   "apply_url": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=1ifjWL21yUSYiqzygxkLYoay24ahW0NMqDpMIfeB88pUNTlJTDdZOEVQUVlNQkFVTEpVODNCSTZVNCQlQCN0PWcu&route=shorturl",
   "verified": "fetched",
-  "verified_on": "2026-10-21",
-  "deadline_iso": "2026-10-24",
+  "verified_on": "2026-10-26",
+  "deadline_iso": null,
   "id": "santa-barbara-public-library-teens-teach-tech",
   "name": "Teens Teach Tech (Santa Barbara Public Library)",
   "org": "Santa Barbara Public Library",
@@ -91611,8 +91611,8 @@
   "pay_detail": "Unpaid. About 52 community service hours in total.",
   "season": "school-year",
   "duration": "November 2026 to June 2027, about 2 hours a week (schedule to be set)",
-  "status": "open-now",
-  "deadline_text": "Apply by Saturday, October 24, 2026.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications closed Saturday, Oct 24, 2026. This group meets November 2026 to June 2027. The page does not say when the next round opens.",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Online application form (linked from the library news post).",
   "needs_work_permit": false,
@@ -91622,7 +91622,7 @@
   ],
   "priority": 1,
   "notes": "Meets at Central Library, 40 E. Anapamu St. Posted October 4, 2026, so the deadline is close. Supported by a federal library grant.",
-  "verified_on_label": "Oct 21, 2026"
+  "verified_on_label": "Oct 26, 2026"
  },
  {
   "grades": null,
@@ -103368,10 +103368,10 @@
   "pay_detail": "$598 before April 30; $698 after. Need-based scholarships can cover full tuition.",
   "season": "summer",
   "duration": "1 week, July 12 to 16, 2027, 9 am to 5 pm",
-  "status": "opens-soon",
-  "opens_iso": "2026-10-26",
-  "deadline_text": "Registration opens Monday, Oct 26, 2026. Scholarship application due March 30, 2027 (supporting documents due April 15, 2027).",
-  "deadline_iso": "2026-10-26",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Registration opened Monday, Oct 26, 2026, and the page gives no close date. The scholarship application deadline is March 30, 2027, with school documents sent by April 15, 2027.",
+  "deadline_iso": null,
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Use the Apply or Request Info links on the camp page. For a scholarship, show proof of SNAP, TANF or FDPIR benefits (or tax forms) and proof of at least a C average in science.",
   "needs_work_permit": null,
@@ -103381,10 +103381,10 @@
    "https://www.hamline.edu/academics/undergraduate/physics/microscope-camp"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-10-26",
   "priority": 3,
   "notes": "Oct 26, 2026 is a Monday, which matches the weekday on the page.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Oct 26, 2026"
  },
  {
   "id": "twin-cities-healthpartners-teen-volunteer",
@@ -109719,10 +109719,10 @@
   "pay_detail": "Free. Scholars picked for the summer academy get transportation, housing and meals.",
   "season": "school-year",
   "duration": "Six online modules from late November, then a 6 day summer academy for selected scholars",
-  "status": "open-now",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "The page says apply by October 24, 2026. It also lists online course applications as open August 15 to October 25 (a different date), so apply by October 24 to be safe.",
-  "deadline_iso": "2026-10-24",
+  "deadline_text": "Applications for this round have closed. The page said apply by October 24, 2026, and listed online course applications as open August 15 to October 25.",
+  "deadline_iso": null,
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Fill out the online application. Then ask a teacher and a school counselor to send their letters through the online system. They get an email from notices@spacegrant.net. Letters sent any other way are not accepted. Contact: Regina Delzer, rdelzer@odu.edu.",
   "needs_work_permit": false,
