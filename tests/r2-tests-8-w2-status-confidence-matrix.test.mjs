@@ -44,7 +44,6 @@ const ALLOW_LIST = {
   "twin-cities-juxtaposition-arts-valt-drawing": { status: "unconfirmed", deadline_confidence: "confirmed-2026-27", reason: "Unconfirmed status, but the text gives dates. Confirm the status or the confidence." },
   "vancouver-ubc-future-global-leaders": { status: "unconfirmed", deadline_confidence: "confirmed-2026-27", reason: "Unconfirmed status, but the text gives dates. Confirm the status or the confidence." },
   "philadelphia-fleisher-teen-lounge": { status: "year-round", deadline_confidence: "confirmed-2026-27", reason: "Year-round status with confirmed 2026-27 dates. Pick one status or the other." },
-  "georgia-flint-river-fresh-new-fresh-urban-farmers": { status: "open-now", deadline_confidence: "rolling", reason: "Open with no closing date. The table does not allow open-now with rolling yet." },
   "stock-market-game-sifma-foundation": { status: "open-now", deadline_confidence: "rolling", reason: "Open with no closing date. The table does not allow open-now with rolling yet." },
   "illinois-fbla-state-association": { status: "rolling", deadline_confidence: "confirmed-2026-27", reason: "Rolling status with a confirmed 2026-27 date. The table does not allow this pair yet." },
   "nyit-high-school-business-bootcamp": { status: "rolling", deadline_confidence: "confirmed-2026-27", reason: "Rolling status with a confirmed 2026-27 date. The table does not allow this pair yet." },
