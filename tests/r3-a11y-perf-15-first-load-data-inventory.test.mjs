@@ -48,7 +48,8 @@ export const TABLE = {
   // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,692 programs; PENDING PERSON APPROVAL): 2546800 to 2552700.
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 2673498 bytes. Approved by Kentaro 2026-10-19 (merge train). find.html ceiling 2667500 to 2673500.
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 2673515 bytes. Approved by Kentaro 2026-10-19 (merge train). find.html ceiling 2673500 to 2673600.
-  "find.html": { paths: ["data/entries-lite.json"], ceiling: 2673600, reason: "Find filters every program, so it needs the whole lite file" },
+  // 2026-10-26: three Inland Empire cards (Corona, Rancho Cucamonga) on top of PRs 98 to 101. PENDING PERSON APPROVAL. 2673600 to 2675500 (2675461 measured).
+  "find.html": { paths: ["data/entries-lite.json"], ceiling: 2675500, reason: "Find filters every program, so it needs the whole lite file" },
   // 2026-10-15: the Map page (754,977 bytes measured; about 151 KB gzipped). It counts every program by city, so it reads the map projection
   // (name, org and the keys the age, pay and open filters test) and the city points. PENDING PERSON APPROVAL for this weight on phones.
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) map.html limit 760000 to 763100. PENDING PERSON APPROVAL.
@@ -73,9 +74,11 @@ export const TABLE = {
   // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 811929 bytes. Approved by Kentaro 2026-10-19 (merge train). map.html ceiling 810100 to 812000.
   // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,692 programs; PENDING PERSON APPROVAL): 777600 to 779200.
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 813636 bytes. Approved by Kentaro 2026-10-19 (merge train). map.html ceiling 812000 to 813700.
-  "map.html": { paths: ["data/entries-map.json", "data/map.json"], ceiling: 813700, reason: "Map counts every program by city: the small map projection of the lite rows plus the city points file" },
+  // 2026-10-26: three Inland Empire cards (Corona, Rancho Cucamonga) on top of PRs 98 to 101. PENDING PERSON APPROVAL. 813700 to 814500 (814444 measured).
+  "map.html": { paths: ["data/entries-map.json", "data/map.json"], ceiling: 814500, reason: "Map counts every program by city: the small map projection of the lite rows plus the city points file" },
   // 2026-10-20: the unlisted Ignition page shows the same map (map.js), so it reads the same two files with the Map page's ceiling. Kentaro's instruction 2026-10-20.
-  "ignition.html": { paths: ["data/entries-map.json", "data/map.json"], ceiling: 813700, reason: "The Map page's map, opened on the Bay Area: the same two files as map.html" },
+  // 2026-10-26: three Inland Empire cards (Corona, Rancho Cucamonga) on top of PRs 98 to 101. PENDING PERSON APPROVAL. 813700 to 814500 (814444 measured).
+  "ignition.html": { paths: ["data/entries-map.json", "data/map.json"], ceiling: 814500, reason: "The Map page's map, opened on the Bay Area: the same two files as map.html" },
   "calendar.html": { paths: ["data/calendar.json", "data/entries-cal.json"], ceiling: 150000, reason: "Calendar draws deadline cards from the small calendar file (only the programs it lists) plus its own small file" },
   "younger.html": { paths: ["data/entries-core.json", "data/younger.json"], ceiling: 1100000, reason: "Ages 12 to 14 reads the core file and its own small file; headroom up to the card file size" },
   // Raised from 130000 to 145000 on 2026-10-12: the employer list grew to 147 entries (about 136 KB, one entry per line, about 30 KB gzipped).
@@ -113,7 +116,8 @@ export const TABLE = {
   // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 837220 bytes. Approved by Kentaro 2026-10-19 (merge train). insights.html ceiling 835200 to 837300.
   // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,692 programs; PENDING PERSON APPROVAL): 800000 to 801700.
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 839072 bytes. Approved by Kentaro 2026-10-19 (merge train). insights.html ceiling 837300 to 839100.
-  "insights.html": { paths: ["data/entries-stats.json"], ceiling: 839100, reason: "Numbers page counts every program, so it needs the stats projection (about 528 KB), the one page over the 200000 default" },
+  // 2026-10-26: three Inland Empire cards (Corona, Rancho Cucamonga) on top of PRs 98 to 101. PENDING PERSON APPROVAL. 839100 to 839900 (839816 measured).
+  "insights.html": { paths: ["data/entries-stats.json"], ceiling: 839900, reason: "Numbers page counts every program, so it needs the stats projection (about 528 KB), the one page over the 200000 default" },
   "languages.html": { paths: ["data/languages.json"], ceiling: 200000, reason: SMALL },
   "parents.html": { paths: ["data/parents.json"], ceiling: 200000, reason: SMALL },
   "paycheck.html": { paths: ["data/money.json"], ceiling: 200000, reason: SMALL },
