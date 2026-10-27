@@ -161,3 +161,15 @@ test("r2-a11y-perf-1: the base ring sits outside its control (outline-offset 2px
   assert.ok(offset, "base :focus-visible rule has no outline-offset");
   assert.ok(parseFloat(offset) >= 2, `base :focus-visible outline-offset is ${offset}, needs at least 2px`);
 });
+
+// MapLibre's own CSS sets outline: none on its control buttons and shows only a 2px #0096ff glow. The map pages
+// (Find, Map, Ignition) put the site ring back on them, drawn inside the button so the rounded group does not clip
+// it. The button is transparent over the group's --surface fill, which the 3:1 check above already covers.
+test("map controls: zoom and full screen buttons get the site focus ring, drawn inside the button", () => {
+  for (const sel of [".mapbox .maplibregl-ctrl-group button:focus-visible"]) {
+    assert.equal(declared(sel, "outline"), "3px solid var(--focus)", `${sel} needs outline: 3px solid var(--focus)`);
+    assert.ok(parseFloat(declared(sel, "outline-offset")) <= -3, `${sel} needs an outline-offset of -3px or less so the ring is inside`);
+    assert.equal(declared(sel, "box-shadow"), "none", `${sel} needs box-shadow: none to drop MapLibre's glow`);
+  }
+  assert.equal(declared(".mapbox .maplibregl-ctrl-group", "background"), "var(--surface)", "the control group fill is --surface");
+});

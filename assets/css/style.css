@@ -770,6 +770,7 @@ details + #hClose { margin-top: 1.5rem; }
 .mapbox .maplibregl-ctrl-group { border: 2px solid var(--edge); border-radius: 8px; box-shadow: var(--shadow-sm); background: var(--surface); }
 .mapbox .maplibregl-ctrl-group button { width: 2.75rem; height: 2.75rem; }
 .mapbox .maplibregl-ctrl-group button + button { border-top: 1px solid var(--edge); }
+.mapbox .maplibregl-ctrl-group button:focus-visible { outline: 3px solid var(--focus); outline-offset: -3px; box-shadow: none; }
 .mapbox .maplibregl-ctrl-attrib { font: 12px/1.4 var(--body); background: color-mix(in srgb, var(--surface) 85%, transparent); }
 .mapbox .maplibregl-ctrl-attrib a { color: var(--ink); }
 .mapbox .maplibregl-cooperative-gesture-screen { font: 600 1.05rem/1.4 var(--body); }

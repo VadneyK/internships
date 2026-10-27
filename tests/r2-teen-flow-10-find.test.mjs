@@ -172,14 +172,15 @@ test("r2-find-1: the href is built at click time, so a program removed from the 
   clickLink(text);
   const before = decodeBody(text.getAttribute("href"), "sms:?&body=");
   const gone = DATA.find((e) => e.id === ids[1]);
-  assert.ok(before.includes(gone.name));
+  assert.ok(before.includes("\n- " + gone.name + " ("));
 
   document.querySelector('.star[data-id="' + ids[1] + '"]').click();
   await tick();
   assert.equal(text.hidden, false, "one saved program is left, so the link still shows");
   clickLink(text);
   const after = decodeBody(text.getAttribute("href"), "sms:?&body=");
-  assert.ok(!after.includes(gone.name), "removed program is not in the new text");
+  // Match the list line, not any mention: another card's dates can name the removed program (2026-10-27, Berkeley YouthWorks).
+  assert.ok(!after.includes("\n- " + gone.name + " ("), "removed program is not in the new text");
   assert.ok(after.includes(DATA.find((e) => e.id === ids[0]).name));
   assert.deepEqual(errors, []);
 });

@@ -634,8 +634,8 @@
   "pay_detail": "Fall 2026 cohorts: $400 stipend. Summer 2027: $2,000 stipend. Spring 2027 pay is not stated on the page.",
   "season": "school-year",
   "duration": "Spring 2027: about 5 weeks, Mon to Thu 4 to 6 pm (Cohort A Jan 11 to Feb 11, B Feb 22 to Mar 25, C Apr 5 to May 13). Summer 2027: June 14 to July 23, weekdays 9 am to 4:30 pm.",
-  "status": "opens-soon",
-  "opens_iso": "2026-10-26",
+  "status": "open-now",
+  "opens_iso": null,
   "deadline_text": "Spring 2027 cohorts: application opens Oct 26, 2026 and closes Nov 17, 2026; interviews week of Nov 30; decisions Dec 15, 2026. Summer 2027: opens Jan 5, 2027, closes Jan 27, 2027. Fall 2026 cohorts closed Aug 27, 2026.",
   "deadline_iso": "2026-11-17",
   "deadline_confidence": "confirmed-2026-27",
@@ -25385,6 +25385,46 @@
   "verified_on_label": "Oct 16, 2026"
  },
  {
+  "id": "corona-library-community-services-teen-volunteers",
+  "name": "Corona Library and Community Services Teen Volunteers",
+  "org": "City of Corona Community Services Department",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "Corona, CA",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "social-impact"
+  ],
+  "what_you_do": "Help at the Corona library. You can tutor kids, keep shelves neat, read to young kids, help with story time, help people use computers or work the summer reading table.",
+  "min_age": 12,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Each role has its own age: Homework Helper 12 and up, Summer at Your Library Assistant 13 and up, Junior Page, Storyteller and Tech Coach 15 and up, Story Time Assistant 16 and up. Teen Club and the Book Cleaning Crew are for teens (Teen Club is grades 7 to 12). Everyone, even under 18, must pass a background check.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": "Ongoing. Homework Helpers work Tuesdays and Thursdays, 3:30 to 5:30 pm, during the school year. Book Cleaning Crew works Saturdays before the library opens.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline. Orientations are usually the third Monday of the month at 6:30 pm. The next one listed is Monday, Nov 16, 2026, at Circle City Center, 365 N. Main Street. The background check takes 4 to 6 weeks.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Go to an orientation first. Then fill out the city volunteer form and pass the background check. Questions: Madelyne.Black@CoronaCA.gov.",
+  "needs_work_permit": false,
+  "url": "https://www.coronaca.gov/i-want-to/volunteer-opportunities/community-services-volunteer-opportunities",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.coronaca.gov/i-want-to/volunteer-opportunities/community-services-volunteer-opportunities"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-26",
+  "priority": 2,
+  "notes": "Only this city department takes volunteers under 18. It does not take court ordered or school discipline hours. One day events like cleanups and the Fourth of July parade are listed too. The library is at 650 South Main Street.",
+  "verified_on_label": "Oct 26, 2026"
+ },
+ {
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
@@ -37062,7 +37102,7 @@
   "max_age": null,
   "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLSfiQFngQmi3hy_Psf9pJwaU8WuNZF4iVy9aqAx7m85AE5rLNg/viewform?usp=sf_link",
   "verified": "fetched",
-  "verified_on": "2026-10-11",
+  "verified_on": "2026-10-26",
   "needs_work_permit": null,
   "deadline_iso": null,
   "priority": 2,
@@ -37082,19 +37122,19 @@
   "what_you_do": "Work on urban farms and school market gardens, help at food banks, learn cooking and business planning, and lead volunteers. Present a business plan at a public event.",
   "who_can_apply": "High school students in Dougherty County, GA.",
   "paid_type": "paid",
-  "pay_detail": "$10 per hour, about 8 to 12 hours per week during the school year.",
+  "pay_detail": "The old NFUF page (read Oct 11, 2026) said $10 per hour, about 8 to 12 hours per week during the school year. The new site gives no rate.",
   "season": "school-year",
   "duration": "September to May: two Saturdays plus after-school hours",
-  "status": "open-now",
-  "deadline_text": "The page said Accepting Applications NOW. No closing date stated.",
-  "deadline_confidence": "rolling",
+  "status": "unconfirmed",
+  "deadline_text": "The NFUF page was removed when the site was redesigned in October 2026. The new site says FreshShare creates paid training for youth but gives no NFUF application or dates. Email info@flintriverfresh.org to ask if it is still hiring.",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Fill out the Apply Here form on the NFUF page.",
-  "url": "https://www.flintriverfresh.org/nfuf",
+  "url": "https://www.flintriverfresh.org/platforms/market-roots",
   "notes": "A USDA city farming grant pays for it. Office: 125 Pine Avenue, Suite 150, Albany, GA. Phone: 229-352-6591. Email: info@flintriverfresh.org.",
   "sources_fetched": [
-   "https://www.flintriverfresh.org/nfuf"
+   "https://www.flintriverfresh.org/platforms/market-roots"
   ],
-  "verified_on_label": "Oct 11, 2026"
+  "verified_on_label": "Oct 26, 2026"
  },
  {
   "id": "georgia-ga-ryse-independent-living-program",
@@ -40211,7 +40251,7 @@
  {
   "id": "hire-las-youth",
   "name": "Hire LA's Youth",
-  "org": "City of Los Angeles Economic and Workforce Development Department (EWDD)",
+  "org": "City of Los Angeles Community Investment Department (CID), formerly EWDD",
   "regions": [
    "los-angeles"
   ],
@@ -40226,11 +40266,11 @@
   "grades": null,
   "who_can_apply": "Ages 14 to 24 living in the City of Los Angeles. The checklist PDF (2024 version) lists the other rules on who can join. Check the current one.",
   "paid_type": "paid",
-  "pay_detail": "Paid. The home page does not state an hourly rate.",
+  "pay_detail": "Paid. The home page says Student to Student Success pays minimum wage for training and work hours. It gives no rate for the other jobs.",
   "season": "summer",
   "duration": "Varies. Student to Student Success is up to 140 hours in one school semester (20 hours of training, up to 120 hours of service).",
   "status": "unconfirmed",
-  "deadline_text": "The site banner says it is accepting applications but gives no dates, and its document library page still shows a 2022 summer banner. Call EWDD at 213-744-7300 to confirm the current cycle.",
+  "deadline_text": "The site banner says it is accepting applications but gives no dates, and its document library page still shows a 2022 summer banner. Call the city at 213-744-7300, the old EWDD number, to confirm the current cycle.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Create an application on the Hire LA site, then bring or upload proof of age, right-to-work (I-9) documents, City of LA residency and the family income form.",
@@ -40241,14 +40281,14 @@
    "https://hirelayouth.com/",
    "https://hirelayouth.com/Pages/DocumentLibrary.aspx?Status=Main",
    "https://hirelayouth.com/Images/Documents/2024_HLAY%20GF_Program%20Eligibility_Checklist.pdf",
-   "https://ewdd.lacity.gov/index.php/youth/youthsource",
+   "https://cid.lacity.gov/youth-services",
    "https://www.dir.ca.gov/dlse/ChildLaborLawPamphlet.pdf"
   ],
   "priority": 1,
-  "notes": "Cycle dates are not confirmed, so check with EWDD before you count on a summer 2027 spot. The home page Youth section says ages 14 to 30. That does not match the 14 to 24 overview used here, so check the current age range. The same city department runs 14 free YouthSource Centers for ages 14 to 24. They offer school help, job readiness and some paid internships. Ask at your nearest center, for example Boyle Heights 323-526-5800 or South LA 323-903-6926. Under 18 you need a California work permit. See permit.html?state=ca for the exact permit and steps. Checked 2026-10-10: the home page still says \"Accepting Applications for\" with no year or dates, so left unconfirmed.",
+  "notes": "Cycle dates are not confirmed, so check with the city before you count on a summer 2027 spot. The home page and the city Youth Services page both say ages 14 to 24. EWDD became part of the Community Investment Department, which runs 14 free YouthSource Centers for ages 14 to 24. They offer school help, job readiness and some paid internships. Ask at your nearest center, for example Boyle Heights 323-526-5800 or South LA 323-903-6926. Under 18 you need a California work permit. See permit.html?state=ca for the exact permit and steps. Checked 2026-10-26: the home page still says \"Accepting applications for\" with no year or dates, so left unconfirmed.",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on": "2026-10-26",
+  "verified_on_label": "Oct 26, 2026"
  },
  {
   "id": "hoag-jr-auxiliary-candystripers",
@@ -53112,9 +53152,9 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-26",
   "priority": 3,
-  "notes": "Held at Douglass Community Center and the Loudoun County Government Center, both in Leesburg. The page does not mention a later date.",
+  "notes": "Held at Douglass Community Center and the Loudoun County Government Center, both in Leesburg. In 2026 there were 8 spots for each voting district, with a waitlist.",
   "id": "loudoun-youth-in-government-day",
   "name": "Loudoun Youth in Government Day",
   "org": "Loudoun County Board of Supervisors and county staff",
@@ -53134,15 +53174,15 @@
   "pay_detail": "Cost not listed",
   "season": "fall",
   "duration": "One day, 11 a.m. to 6 p.m.",
-  "status": "event",
-  "deadline_text": "Page lists Tuesday, October 20, 11 a.m. to 6 p.m. (no year shown; matches 2026). No application deadline listed, so apply now or ask.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The 2026 day was Tuesday, Oct 20, 2026, and applications closed Sept 25, 2026. The county took the program page down, and the 2027 date is not posted.",
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Send the Youth in Government Day application online. The page has a JotForm link.",
-  "url": "https://www.loudoun.gov/YouthinGovernmentDay",
+  "how_to_apply": "In 2026 the form opened Sept 1 and closed Sept 25. Check loudoun.gov/Teens or email the county Teen Services team.",
+  "url": "https://www.loudoun.gov/CivicAlerts.aspx?AID=10834",
   "sources_fetched": [
-   "https://www.loudoun.gov/YouthinGovernmentDay"
+   "https://www.loudoun.gov/CivicAlerts.aspx?AID=10834"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 26, 2026"
  },
  {
   "grades": "High school",
@@ -63315,7 +63355,7 @@
   "grades": "Sophomores and juniors",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-26",
   "priority": 2,
   "needs_work_permit": null,
   "duration": "Until July 31, 2027 for the 2026-27 term",
@@ -63341,13 +63381,13 @@
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Use the Apply button on any board or commission page of the city site. Answer yes to the Mayor's Chief of Staff question. Upload a resume or a note about your interest. Say that you are free all year.",
-  "url": "https://www.naperville.il.us/2026-news-articles/naperville-invites-students-to-get-involved-in-local-government/",
+  "url": "https://www.naperville.il.us/m/NewsFlash/Home/Detail/76",
   "sources_fetched": [
-   "https://www.naperville.il.us/2026-news-articles/naperville-invites-students-to-get-involved-in-local-government/",
-   "https://www.naperville.il.us/boards/"
+   "https://www.naperville.il.us/m/NewsFlash/Home/Detail/76",
+   "https://www.naperville.il.us/259/Boards-Commissions"
   ],
   "notes": "The news post does not say whether it is paid. Ask Rachel Pruneda (prunedar@naperville.il.us, 630-420-6018). A full job description is on the city boards page.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Oct 26, 2026",
   "limited": true
  },
  {
@@ -63439,7 +63479,7 @@
   "grades": "Graduated 8th grade or older",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-22",
+  "verified_on": "2026-10-26",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "Ongoing, two meetings a month",
@@ -63468,17 +63508,17 @@
   "url": "https://www.naperville.il.us/598/Cadet-Program",
   "sources_fetched": [
    "https://www.naperville.il.us/598/Cadet-Program",
-   "https://www.naperville.il.us/services/naperville-police-department/programs-and-services/internship-program/"
+   "https://www.naperville.il.us/447/Internship-Program"
   ],
   "notes": "The police internship on the same site is for college students, so it is not listed. The department points younger people to the cadet program.",
-  "verified_on_label": "Oct 22, 2026"
+  "verified_on_label": "Oct 26, 2026"
  },
  {
   "id": "naperville-police-youth-academy",
   "grades": "In high school or entering high school",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-26",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "6 weeks, Thursday nights 6 to 8 p.m.",
@@ -63503,13 +63543,13 @@
   "deadline_text": "2026 class: June 11 to July 23, 2026, applications due June 4, 2026. 2027 dates are not posted yet.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Print and fill out the application and waiver at naperville.il.us/youthacademy. Send the signed forms to Sergeant Greg Rink at rinkg@naperville.il.us. Or drop them off at 1350 Aurora Ave.",
-  "url": "https://www.naperville.il.us/2026-news-articles/register-your-teen-for-naperville-police-departments-summer-youth-academy/",
+  "how_to_apply": "Print and fill out the form and waiver. They are on the city's Citizen Police Academy page. Send the signed forms to Sergeant Greg Rink at rinkg@naperville.il.us. Or drop them off at 1350 Aurora Ave.",
+  "url": "https://www.naperville.il.us/m/NewsFlash/Home/Detail/49",
   "notes": "First come, first served and space is limited.",
   "sources_fetched": [
-   "https://www.naperville.il.us/2026-news-articles/register-your-teen-for-naperville-police-departments-summer-youth-academy/"
+   "https://www.naperville.il.us/m/NewsFlash/Home/Detail/49"
   ],
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Oct 26, 2026",
   "limited": true
  },
  {
@@ -63517,7 +63557,7 @@
   "grades": "Sophomores, juniors and seniors",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-26",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "Until July 31, 2027 for the 2026-27 term; most boards meet in the evening",
@@ -63543,13 +63583,13 @@
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Click Apply on any board's page on the city Boards and Commissions site. Fill in the profile and the student rep questions. Upload a resume or a short statement. You can apply to up to three boards.",
-  "url": "https://www.naperville.il.us/boards/",
+  "url": "https://www.naperville.il.us/259/Boards-Commissions",
   "sources_fetched": [
-   "https://www.naperville.il.us/2026-news-articles/naperville-invites-students-to-get-involved-in-local-government/",
-   "https://www.naperville.il.us/boards/"
+   "https://www.naperville.il.us/m/NewsFlash/Home/Detail/76",
+   "https://www.naperville.il.us/259/Boards-Commissions"
   ],
   "notes": "24 positions, two per board. Contact: Rachel Pruneda, prunedar@naperville.il.us, 630-420-6018. The dates come from an August 2026 city news post.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 26, 2026"
  },
  {
   "id": "nasa-citizen-science",
@@ -71473,10 +71513,10 @@
   "pay_detail": "$1,250 stipend after you finish the program.",
   "season": "spring",
   "duration": "Tuesdays 4:30 to 6:30 PM, Jan 19 to Jun 1, 2027, with NYC school breaks off",
-  "status": "open-now",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Applications for 2027 are open. Apply by Sunday, Oct 25, 2026 at 11:59 PM.",
-  "deadline_iso": "2026-10-25",
+  "deadline_text": "The 2027 round closed Sunday, Oct 25, 2026 at 11:59 PM, though the page still shows its apply banner. The 2027 program runs Tuesdays, Jan 19 to June 1, 2027.",
+  "deadline_iso": null,
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Apply online through the Smithsonian application system (SOLAA). The application has short answer questions, an essay and two references. The references are adults who are not related to you. A teacher or mentor works. You can save and finish later. A virtual info session was offered. See the page.",
   "needs_work_permit": null,
@@ -71487,10 +71527,10 @@
    "https://www.cooperhewitt.org/design-hive/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-26",
   "priority": 1,
   "notes": "Meets at 2 East 91st Street and some offsite places. The page says the demographic and citizenship questions are optional and not tied to your application. The page does not say whether a work permit is needed. Cooper Hewitt also runs free monthly Teen Drop-In workshops and a Design Career Fair.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 26, 2026"
  },
  {
   "id": "nyc-cooper-union-saturday-program",
@@ -73340,8 +73380,8 @@
   "duration": "9 months of weekly hybrid sessions (in person and online). No more than 4 absences. Start and end dates are not stated.",
   "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "Applications for 2026-27 are open. Deadline: Oct 25, 2026 at 11:59 p.m.",
-  "deadline_iso": "2026-10-25",
+  "deadline_text": "Applications for 2026-27 are open. The deadline moved to Nov 1, 2026 at 11:59 p.m.",
+  "deadline_iso": "2026-11-01",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Send in the QTI 2026-27 form through the Submittable link on the Queens Museum announcement. Phone 718-592-9700. Email info@queensmuseum.org.",
   "needs_work_permit": null,
@@ -73351,10 +73391,10 @@
    "https://queensmuseum.org/2026/09/14/queens-teens-institute-2026-2027-applications-now-open-deadline-10-25-26/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-26",
   "priority": 1,
   "notes": "This is the fifth year of the program. Ages, grades and work-permit rules are not stated on the announcement, so ask the museum.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 26, 2026"
  },
  {
   "id": "nyc-queens-nysci-explainer-science-career-ladder",
@@ -74859,8 +74899,8 @@
   "duration": "Varies by posting; mostly seasonal",
   "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "Deadline Oct 25, 2026 for Spring/Summer 2027 starts; Feb 7, 2027 for Summer 2027 starts; Aug 8, 2027 for Fall/Winter 2027 starts.",
-  "deadline_iso": "2026-10-25",
+  "deadline_text": "The Oct 25, 2026 round for Spring or Summer 2027 starts has closed. Apply by Feb 7, 2027 for Summer 2027 starts, or by Aug 8, 2027 for Fall or Winter 2027 starts. Hiring takes several months.",
+  "deadline_iso": "2027-02-07",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Apply at governmentjobs.com/careers/oaklandca. Questions: parksandrec@oaklandca.gov or (510) 238-7275.",
   "needs_work_permit": null,
@@ -74870,10 +74910,10 @@
    "https://www.oaklandca.gov/topics/parks-recreation"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-21",
+  "verified_on": "2026-10-26",
   "priority": 1,
   "notes": "The hiring process takes several months, so apply early. Check each posting for minimum age and pay. The governmentjobs.com/careers/oaklandca portal showed 0 openings on Oct 7, 2026. If you cannot find the posting, call (510) 238-7275.",
-  "verified_on_label": "Oct 21, 2026"
+  "verified_on_label": "Oct 26, 2026"
  },
  {
   "id": "oakland-public-library-teen-advisory-board",
@@ -75798,7 +75838,7 @@
   "max_age": null,
   "pay_detail": "Free to students. A deposit confirms your spot and is returned on the day of the program (amount not stated).",
   "duration": "One-day camps in fall (the weeklong camp is over for 2026)",
-  "deadline_iso": "2026-10-24",
+  "deadline_iso": null,
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "priority": 1,
@@ -75822,8 +75862,8 @@
   "who_can_apply": "Any Ohio student who is entering 9th grade through 12th grade, or freshman year of college, this fall.",
   "paid_type": "unpaid",
   "season": "fall",
-  "status": "open-now",
-  "deadline_text": "Fall 2026 one-day camps, per the flyer and ofbf.org: Wilmington Oct. 13, Columbus Oct. 21, COLT Lineman Training (Mount Gilead) Oct. 23, Meat Processing (Yorkshire) Oct. 27, Findlay Nov. 3. Registration closes 10 days before each event or when full. By that rule Wilmington (about Oct. 3) and Columbus (about Oct. 11) have already closed. Still open by that rule: COLT (about Oct. 13), Meat Processing (about Oct. 17) and Findlay (about Oct. 24, 2026). The page does not post close dates itself.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Fall 2026 one-day camps, per the flyer and ofbf.org: Wilmington Oct. 13, Columbus Oct. 21, COLT Lineman Training (Mount Gilead) Oct. 23, Meat Processing (Yorkshire) Oct. 27, Findlay Nov. 3. Registration closes 10 days before each event or when full. By that rule every fall 2026 camp has closed, the last (Findlay) about Oct. 24, 2026. The page does not post close dates itself.",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Pick the camp on the ExploreAg page and fill out its registration form. For questions, use the Contact Us page at ofbf.org/contact/.",
   "url": "https://ofbf.org/community/youth-in-agriculture/exploreag/",
@@ -79998,9 +80038,9 @@
   "id": "philadelphia-pyn-youth-opportunity-fair-2026",
   "grades": null,
   "apply_url": null,
-  "deadline_iso": "2026-10-23",
+  "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-26",
   "priority": 2,
   "min_age": 16,
   "max_age": 24,
@@ -80020,9 +80060,9 @@
   "pay_detail": "Free to attend. The page says employers there have jobs and internships, but it does not say if they are paid.",
   "season": "fall",
   "duration": "Friday Oct 23, 3 to 7 pm",
-  "status": "event",
-  "deadline_text": "Friday, October 23, 2026, 3:00 to 7:00 pm. Pre-registration deadline is Oct 15. The page says registration is not required to attend.",
-  "deadline_confidence": "confirmed-2026-27",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The 2026 fair was Friday, Oct 23, 2026. The page does not give a next date yet.",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Fill out the free pre-registration form on the event page (deadline Oct 15). Bring several copies of your resume.",
   "needs_work_permit": null,
   "url": "https://www.pyninc.org/opportunityfair",
@@ -80030,7 +80070,7 @@
   "sources_fetched": [
    "https://www.pyninc.org/opportunityfair"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Oct 26, 2026"
  },
  {
   "grades": "Programs begin in 10th grade",
@@ -84882,6 +84922,88 @@
   "priority": 1,
   "notes": "The page says it is a good way to get school volunteer hours. Teen Programs: Teens@raleighnc.gov, 919-996-2139.",
   "verified_on_label": "Oct 19, 2026"
+ },
+ {
+  "id": "rancho-cucamonga-healthy-rc-youth-leaders",
+  "name": "Healthy RC Youth Leaders",
+  "org": "City of Rancho Cucamonga (Healthy RC)",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "Rancho Cucamonga, CA",
+  "type": "leadership",
+  "fields": [
+   "law-government",
+   "health",
+   "social-impact"
+  ],
+  "what_you_do": "Speak up for teens in your city. You work with city staff on mental health, healthy living and the environment, learn how city government works and go to trainings.",
+  "min_age": 12,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "Teens ages 12 to 17 in middle or high school.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "school-year",
+  "duration": "One school year (2026 to 2027 is the current group).",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Applications for the 2026 to 2027 group closed Sunday, Aug 16, 2026. The next round is not posted yet.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Use the Youth Leaders Application link on the city page when it opens. Questions: HealthyRC@cityofrc.us.",
+  "needs_work_permit": false,
+  "url": "https://www.cityofrc.us/youth-leaders",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.cityofrc.us/youth-leaders"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-26",
+  "priority": 2,
+  "notes": "Youth Leaders can speak for the group at local and national events. The page does not list meeting days or times, so ask Healthy RC.",
+  "verified_on_label": "Oct 26, 2026"
+ },
+ {
+  "id": "rancho-cucamonga-library-animal-center-teen-volunteers",
+  "name": "Rancho Cucamonga Library and Animal Center Teen Volunteers",
+  "org": "City of Rancho Cucamonga",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "Rancho Cucamonga, CA",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "science",
+   "social-impact"
+  ],
+  "what_you_do": "Help at library events and summer reading. Plan teen events with the Teen Advisory Group. Or help care for shelter pets as a Pet Cadet, with a parent.",
+  "min_age": 12,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Library Special Events and Summer Reading helpers are 12 and up. Second Story and Beyond helpers are 16 and up. The Teen Advisory Group is for grades 7 to 12. Pet Cadets are 12 to 17, and a parent must come to every training and shift.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": "Summer Reading helpers give 2 hours a week for 8 weeks. The Teen Advisory Group meets the first Wednesday of each month at 6 pm.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline is posted. You can apply any time.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "For the library, fill out the city volunteer form and pick Library Services. For Pet Cadets, you and a parent each fill out the Animal Center form.",
+  "needs_work_permit": false,
+  "url": "https://www.cityofrc.us/everything-we-do/volunteers",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.cityofrc.us/everything-we-do/volunteers"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-26",
+  "priority": 2,
+  "notes": "Teen Advisory Group meets at the Biane Library or on Zoom. You get volunteer hours there only after the form is in. A Pet Cadet form without a parent form is turned down. Fire Explorers are 16 to 21, and the city does not take court ordered hours.",
+  "verified_on_label": "Oct 26, 2026"
  },
  {
   "id": "red-butte-garden-twig-teens-working-in-the-garden",
@@ -91591,8 +91713,8 @@
   "opens_iso": null,
   "apply_url": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=1ifjWL21yUSYiqzygxkLYoay24ahW0NMqDpMIfeB88pUNTlJTDdZOEVQUVlNQkFVTEpVODNCSTZVNCQlQCN0PWcu&route=shorturl",
   "verified": "fetched",
-  "verified_on": "2026-10-21",
-  "deadline_iso": "2026-10-24",
+  "verified_on": "2026-10-26",
+  "deadline_iso": null,
   "id": "santa-barbara-public-library-teens-teach-tech",
   "name": "Teens Teach Tech (Santa Barbara Public Library)",
   "org": "Santa Barbara Public Library",
@@ -91611,8 +91733,8 @@
   "pay_detail": "Unpaid. About 52 community service hours in total.",
   "season": "school-year",
   "duration": "November 2026 to June 2027, about 2 hours a week (schedule to be set)",
-  "status": "open-now",
-  "deadline_text": "Apply by Saturday, October 24, 2026.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications closed Saturday, Oct 24, 2026. This group meets November 2026 to June 2027. The page does not say when the next round opens.",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Online application form (linked from the library news post).",
   "needs_work_permit": false,
@@ -91622,7 +91744,7 @@
   ],
   "priority": 1,
   "notes": "Meets at Central Library, 40 E. Anapamu St. Posted October 4, 2026, so the deadline is close. Supported by a federal library grant.",
-  "verified_on_label": "Oct 21, 2026"
+  "verified_on_label": "Oct 26, 2026"
  },
  {
   "grades": null,
@@ -103368,10 +103490,10 @@
   "pay_detail": "$598 before April 30; $698 after. Need-based scholarships can cover full tuition.",
   "season": "summer",
   "duration": "1 week, July 12 to 16, 2027, 9 am to 5 pm",
-  "status": "opens-soon",
-  "opens_iso": "2026-10-26",
-  "deadline_text": "Registration opens Monday, Oct 26, 2026. Scholarship application due March 30, 2027 (supporting documents due April 15, 2027).",
-  "deadline_iso": "2026-10-26",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Registration opened Monday, Oct 26, 2026, and the page gives no close date. The scholarship application deadline is March 30, 2027, with school documents sent by April 15, 2027.",
+  "deadline_iso": null,
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Use the Apply or Request Info links on the camp page. For a scholarship, show proof of SNAP, TANF or FDPIR benefits (or tax forms) and proof of at least a C average in science.",
   "needs_work_permit": null,
@@ -103381,10 +103503,10 @@
    "https://www.hamline.edu/academics/undergraduate/physics/microscope-camp"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-10-26",
   "priority": 3,
   "notes": "Oct 26, 2026 is a Monday, which matches the weekday on the page.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Oct 26, 2026"
  },
  {
   "id": "twin-cities-healthpartners-teen-volunteer",
@@ -109719,10 +109841,10 @@
   "pay_detail": "Free. Scholars picked for the summer academy get transportation, housing and meals.",
   "season": "school-year",
   "duration": "Six online modules from late November, then a 6 day summer academy for selected scholars",
-  "status": "open-now",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "The page says apply by October 24, 2026. It also lists online course applications as open August 15 to October 25 (a different date), so apply by October 24 to be safe.",
-  "deadline_iso": "2026-10-24",
+  "deadline_text": "Applications for this round have closed. The page said apply by October 24, 2026, and listed online course applications as open August 15 to October 25.",
+  "deadline_iso": null,
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Fill out the online application. Then ask a teacher and a school counselor to send their letters through the online system. They get an email from notices@spacegrant.net. Letters sent any other way are not accepted. Contact: Regina Delzer, rdelzer@odu.edu.",
   "needs_work_permit": false,

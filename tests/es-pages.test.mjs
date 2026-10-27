@@ -204,7 +204,8 @@ const CEILINGS = {
   // 2026-10-20: the See the map button and the Ignition NorCal line mirrored from the English home page, Kentaro's instruction 2026-10-20; es/index.html page 22100 to 22300 (22233 measured).
   "es/index.html": { html: 22300, code: 102900 },
   // 2026-10-19: lib.js and common.js grew on main (calendar, grade flag, keep my list, screen reader names); es/playbook.html first-load code 179500 to 186400 (186312 measured). PENDING PERSON APPROVAL.
-  "es/playbook.html": { html: 28800, code: 186400 },
+  // 2026-10-26 issue 9: the map control focus ring rule in style.css; es/playbook.html first-load code 186400 to 186500 (186441 measured).
+  "es/playbook.html": { html: 28800, code: 186500 },
   "es/rules.html": { html: 41400, code: 102900 },
 };
 test("Spanish pages stay under their byte ceilings (page and first-load code)", () => {
