@@ -86,7 +86,10 @@ test("before the detail file loads a card has no How long or Pay or cost label; 
   card.querySelector("details").open = true;
   card.querySelector("details").dispatchEvent(new window.Event("toggle", { bubbles: true }));
   await tick(100);
-  assert.ok(!/How long|Pay or cost/.test(card.textContent), "no empty labels before the detail file");
+  // Tags come from lite and may say "Pay or cost varies" (2026-10-27: Berkeley library card sorted first), so look past them.
+  const rows = card.cloneNode(true);
+  rows.querySelectorAll(".tag").forEach((t) => t.remove());
+  assert.ok(!/How long|Pay or cost/.test(rows.textContent), "no empty labels before the detail file");
   assert.equal(card.querySelector(".pay"), null);
   const paidTag = (document.querySelector("article.prog .tag") || {}).textContent;
   assert.ok(paidTag !== undefined);
