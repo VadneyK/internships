@@ -1,5 +1,5 @@
 {
- "read": "2026-10-19",
+ "read": "2026-10-26",
  "cities": [
   {
    "key": "Chandler, AZ",
@@ -347,6 +347,16 @@
     "cccoe-youth-services-workforce-programs",
     "contra-costa-4-h-youth-development-program",
     "contra-costa-library-teen-volunteer"
+   ]
+  },
+  {
+   "key": "Corona, CA",
+   "state": "CA",
+   "lat": 33.862,
+   "lon": -117.5655,
+   "precision": "city",
+   "ids": [
+    "corona-library-community-services-teen-volunteers"
    ]
   },
   {
@@ -1187,6 +1197,17 @@
     "pomona-valley-hospital-high-school-volunteer",
     "pomona-youth-accountability-board",
     "pomona-youth-music-program-volunteer"
+   ]
+  },
+  {
+   "key": "Rancho Cucamonga, CA",
+   "state": "CA",
+   "lat": 34.1303,
+   "lon": -117.5661,
+   "precision": "city",
+   "ids": [
+    "rancho-cucamonga-healthy-rc-youth-leaders",
+    "rancho-cucamonga-library-animal-center-teen-volunteers"
    ]
   },
   {
@@ -5996,6 +6017,7 @@
    "lon": -84.2905,
    "precision": "city",
    "ids": [
+    "oak-ridge-ornl-next-generation-stem-internship",
     "oak-ridge-ornl-sage-camp",
     "oak-ridge-ornl-trades-camp"
    ]
@@ -7153,7 +7175,6 @@
    "nfte-world-series-of-innovation",
    "northwestern-nhsi-debate-institute",
    "nyit-high-school-business-bootcamp",
-   "oak-ridge-ornl-next-generation-stem-internship",
    "red-cross-babysitting-training",
    "regeneron-sts",
    "san-diego-ucsd-bioengineering-research-scholars",

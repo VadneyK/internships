@@ -625,6 +625,7 @@ cook-county-forest-preserves-conservation-corps-summer	Cook County, IL	point	Coo
 cook-county-forest-preserves-youth-outdoor-ambassadors	Cook County, IL	point	Cook County, IL	county	county	
 cook-county-opportunity-works-subsidized-internships	Suburban Cook County, IL	point	Cook County, IL	county	county	override: Suburban Cook County is Cook County outside Chicago; county point
 cook-memorial-library-teen-volunteers	Libertyville and Vernon Hills, IL (Lake County)	multi				several places before the state
+corona-library-community-services-teen-volunteers	Corona, CA	point	Corona, CA	city	place:city	
 cosi-youth-volunteer-program	Columbus, OH	point	Columbus, OH	city	place:city	
 cosmos-uc-davis	Davis, CA	point	Davis, CA	city	place:city	
 cosmos-uc-merced	Merced, CA	point	Merced, CA	city	place:city	
@@ -1839,7 +1840,7 @@ nypl-teen-curators	New York, NY	point	New York, NY	city	place:city
 oak-park-library-leading-edge-teen-advisory-board	Oak Park, IL	point	Oak Park, IL	city	place:village	
 oak-park-park-district-acorns-to-oaks-volunteers	Oak Park, IL	point	Oak Park, IL	city	place:village	
 oak-park-park-district-seasonal-jobs	Oak Park, IL	point	Oak Park, IL	city	place:village	
-oak-ridge-ornl-next-generation-stem-internship	Oak Ridge, TN (virtual, for East Tennessee students)	online				parenthetical says fully online: virtual, for East Tennessee students
+oak-ridge-ornl-next-generation-stem-internship	Oak Ridge, TN (on site, for East Tennessee students)	point	Oak Ridge, TN	city	place:city	
 oak-ridge-ornl-sage-camp	Oak Ridge, TN	point	Oak Ridge, TN	city	place:city	
 oak-ridge-ornl-trades-camp	Oak Ridge, TN	point	Oak Ridge, TN	city	place:city	
 oakland-mayors-summer-youth-employment-program	Oakland, CA	point	Oakland, CA	city	place:city	
@@ -2092,6 +2093,8 @@ raleigh-police-public-safety-cadets	Raleigh, NC	point	Raleigh, NC	city	place:cit
 raleigh-summer-youth-employment-program	Raleigh, NC	point	Raleigh, NC	city	place:city	
 raleigh-unc-health-rex-volunteen	Raleigh, NC	point	Raleigh, NC	city	place:city	
 raleigh-youth-council	Raleigh, NC	point	Raleigh, NC	city	place:city	
+rancho-cucamonga-healthy-rc-youth-leaders	Rancho Cucamonga, CA	point	Rancho Cucamonga, CA	city	place:city	
+rancho-cucamonga-library-animal-center-teen-volunteers	Rancho Cucamonga, CA	point	Rancho Cucamonga, CA	city	place:city	
 red-butte-garden-twig-teens-working-in-the-garden	Salt Lake City, UT	point	Salt Lake City, UT	city	place:city	
 red-cross-babysitting-training	Online and local classes	online				
 red-cross-lifeguard-wsi	Local pools across California	statewide	CA			
