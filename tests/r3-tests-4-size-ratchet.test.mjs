@@ -102,7 +102,8 @@ const TABLE = {
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 2090385 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-detail.json ceiling 2086000 to 2090400.
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 2090418 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-detail.json ceiling 2090400 to 2090500.
   // 2026-10-26: three Inland Empire cards (Corona, Rancho Cucamonga) on top of PRs 98 to 101. PENDING PERSON APPROVAL. 2090500 to 2091800 (2091776 measured).
-  "data/entries-detail.json": { ceiling: 2091800, reason: "data file, 1521373 bytes measured 2026-10-10" },
+  // 2026-10-27: Elk Grove Youth Commission read on the City page, notes rewritten. PENDING PERSON APPROVAL. 2091800 to 2091900 (2091839 measured)
+  "data/entries-detail.json": { ceiling: 2091900, reason: "data file, 1521373 bytes measured 2026-10-10" },
   "data/entries-home.json": { ceiling: 899400, reason: "data file, 817599 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-lite.json ceiling 2223100 to 2277600.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-lite.json limit 2277600 to 2341900.
