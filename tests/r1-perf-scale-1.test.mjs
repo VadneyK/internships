@@ -258,7 +258,8 @@ const LIMITS = {
   // 2026-10-15: the Map page rules (PENDING PERSON APPROVAL).  limit 55100 to 57300.
   // 2026-10-16: the street map box, its buttons and dark icons (PENDING PERSON APPROVAL).  limit 57300 to 58600.
   // 2026-10-18: value labels inside the Numbers page bars and totals next to the bar end, merged with the street map rules (PENDING PERSON APPROVAL). limit 58600 to 59600.
-  stylesheet: 59600,
+  // 2026-10-26: issue 9, the map control focus ring rule (style.css 59652 bytes).  limit 59600 to 59700.
+  stylesheet: 59700,
 };
 
 const LITE = "data/entries-lite.json";

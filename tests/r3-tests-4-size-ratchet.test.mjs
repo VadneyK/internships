@@ -218,6 +218,7 @@ const TABLE = {
   "data/transit.json": { ceiling: 9100, reason: "data file, 8193 bytes measured 2026-10-10" },
   "data/younger.json": { ceiling: 19600, reason: "data file, 17796 bytes measured 2026-10-10" },
   "data/wages-2027.json": { ceiling: 16000, reason: "2027 minimum wage reads for issue 7, 11679 bytes measured 2026-10-18; read only by tests and hand edits, never by a page" },
+  // 2026-10-26: issue 9. style.css 59600 to 59700 (map control focus ring rule; 59652 bytes).
   // 2026-10-13: ticket ux9-pills. style.css 48800 to 48900 (.fpill round pill rule; 48834 bytes).
   // 2026-10-14: persona round 9. common.js 34700 to 34900 (typed towns such as Fremont find their Where choice; 34859 bytes), find.js 64500 to 66400 (Good fit keeps the QR area, Only some can apply tag, fuller Copy my list text, picks keep the pay choice; 66476 bytes).
   // 2026-10-13: ticket ux9-place-search-option. common.js 34500 to 34700 (empty caption and any-label options on the shared place box; 34554 bytes).
@@ -242,7 +243,7 @@ const TABLE = {
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). assets/css/style.css limit 54000 to 54700.
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). assets/css/style.css limit 54700 to 54800.
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL). assets/css/style.css limit 54800 to 55100.
-  "assets/css/style.css": { ceiling: 59600, reason: "stylesheet, 41831 bytes measured 2026-10-10; 50638 bytes on 2026-10-14 after the phone filter summary fix" },
+  "assets/css/style.css": { ceiling: 59700, reason: "stylesheet, 41831 bytes measured 2026-10-10; 50638 bytes on 2026-10-14 after the phone filter summary fix" },
   "assets/js/calendar.js": { ceiling: 8800, reason: "script, 7966 bytes measured 2026-10-10" },
   // 2026-10-15: tilePicker adopts tiles shipped in the page, share row controls wired from markup (CLS fixes). assets/js/common.js limit 34900 to 35400. PENDING PERSON APPROVAL.
   // 2026-10-15: G.dropPreTiles removes build-time tiles when data fails common.js 35400 to 35700. PENDING PERSON APPROVAL.
