@@ -1,5 +1,5 @@
 {
- "read": "2026-10-26",
+ "read": "2026-10-28",
  "cities": [
   {
    "key": "Chandler, AZ",
@@ -499,6 +499,17 @@
    ]
   },
   {
+   "key": "Fontana, CA",
+   "state": "CA",
+   "lat": 34.1097,
+   "lon": -117.4629,
+   "precision": "city",
+   "ids": [
+    "fontana-mayors-youth-advisory-council",
+    "fontana-police-explorers"
+   ]
+  },
+  {
    "key": "Fountain Valley, CA",
    "state": "CA",
    "lat": 33.7106,
@@ -958,6 +969,17 @@
    ]
   },
   {
+   "key": "Moreno Valley, CA",
+   "state": "CA",
+   "lat": 33.9233,
+   "lon": -117.2057,
+   "precision": "city",
+   "ids": [
+    "moreno-valley-emerging-leaders-council",
+    "moreno-valley-youth-volunteers"
+   ]
+  },
+  {
    "key": "Morgan Hill, CA",
    "state": "CA",
    "lat": 37.1325,
@@ -1065,6 +1087,17 @@
    "precision": "city",
    "ids": [
     "oakley-youth-advisory-council"
+   ]
+  },
+  {
+   "key": "Ontario, CA",
+   "state": "CA",
+   "lat": 34.037,
+   "lon": -117.606,
+   "precision": "city",
+   "ids": [
+    "ontario-library-teen-volunteers",
+    "ontario-police-youth-academy"
    ]
   },
   {
@@ -1206,6 +1239,7 @@
    "lon": -117.5661,
    "precision": "city",
    "ids": [
+    "rancho-cucamonga-fire-explorers",
     "rancho-cucamonga-healthy-rc-youth-leaders",
     "rancho-cucamonga-library-animal-center-teen-volunteers"
    ]
@@ -1355,6 +1389,16 @@
     "san-bernardino-county-sheriff-explorers",
     "san-bernardino-county-spark-syep",
     "san-bernardino-county-wioa-youth"
+   ]
+  },
+  {
+   "key": "San Bernardino, CA",
+   "state": "CA",
+   "lat": 34.1411,
+   "lon": -117.2946,
+   "precision": "city",
+   "ids": [
+    "san-bernardino-public-library-volunteers"
    ]
   },
   {
