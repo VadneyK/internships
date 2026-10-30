@@ -268,7 +268,7 @@ const TABLE = {
   "assets/vendor/maplibre/maplibre-gl.css": { ceiling: 85000, reason: "MapLibre GL JS 6.11.2 stylesheet, 83310 bytes measured 2026-10-16; a new version needs a new row" },
   "assets/img/us-states.svg": { ceiling: 61500, reason: "image, the Map page basemap (tools/geo/make_basemap.mjs keeps it under 58000), 55841 bytes measured 2026-10-15" },
   // 2026-10-17: the Copy buttons moved to playbook.js, which now runs on es/playbook.html too. es.js ceiling 1000 to 700.
-  "assets/js/es.js": { ceiling: 700, reason: "script, Spanish labels for the pages in es/ only (ADR 0008), 575 bytes measured 2026-10-17" },
+  "assets/js/es.js": { ceiling: 2213, reason: "script, Spanish labels for the pages in es/ only (ADR 0008), 575 bytes measured 2026-10-17; 2026-10-30: + the Ignition season line (Kentaro's ask), 2113 bytes measured" },
   "assets/js/es-playbook.js": { ceiling: 9300, reason: "script, Spanish words for the Playbook tools on es/playbook.html only (ADR 0008), 8569 bytes measured 2026-10-17" },
   // 2026-10-20: the map above the cards on the Programs page, Kentaro's instruction 2026-10-20 (make the map prominent on Find): find.js 75500 to 76100 (76054 bytes), and the new find-map.js (6052 bytes), loaded only when the map comes near the screen.
   "assets/js/find.js": { ceiling: 76100, reason: "script, 52771 bytes measured 2026-10-10" },
@@ -306,8 +306,8 @@ const TABLE = {
   "assets/js/younger.js": { ceiling: 21200, reason: "raised 2026-10-13 for ticket ux9-other-state-search (place box); script, 17599 bytes measured 2026-10-12 (permit-only states and card, p9-younger-1; plain note when the grid does not cover the state, p8-younger-state)" },
   "assets/img/favicon.svg": { ceiling: 500, reason: "image, 409 bytes measured 2026-10-10" },
   "assets/img/og.jpg": { ceiling: 90200, reason: "image, 81997 bytes measured 2026-10-10" },
-  "assets/img/splat-orange.svg": { ceiling: 5500, reason: "image, 4991 bytes measured 2026-10-10" },
-  "assets/img/splat-yellow.svg": { ceiling: 5600, reason: "image, 5086 bytes measured 2026-10-10" },
+  "assets/img/splat-orange.webp": { ceiling: 26000, reason: "image, 23622 bytes measured 2026-10-30 (real Ignition splatter art)" },
+  "assets/img/splat-yellow.webp": { ceiling: 26000, reason: "image, 23628 bytes measured 2026-10-30 (real Ignition splatter art)" },
   "assets/img/swoosh.svg": { ceiling: 500, reason: "image, 449 bytes measured 2026-10-10" },
   "assets/qr/atlanta.svg": { ceiling: 2400, reason: "QR image, 2135 bytes measured 2026-10-10" },
   "assets/qr/chicago.svg": { ceiling: 2400, reason: "QR image, 2116 bytes measured 2026-10-10" },
