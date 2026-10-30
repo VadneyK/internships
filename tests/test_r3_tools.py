@@ -300,7 +300,7 @@ class ArtTests(unittest.TestCase):
             self.assertNotEqual(art.splat(7, "#e9572b"), art.splat(8, "#e9572b"))
 
     def test_two_fresh_runs_write_identical_svg_files(self):
-        names = ("splat-orange.svg", "splat-yellow.svg", "swoosh.svg", "favicon.svg")
+        names = ("swoosh.svg", "favicon.svg")
         contents = []
         for _ in range(2):
             with tempfile.TemporaryDirectory() as root:

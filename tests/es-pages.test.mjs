@@ -202,11 +202,14 @@ const CEILINGS = {
   // 2026-10-19: the trust line from PR 36 mirrored in Spanish; es/index.html page 21700 to 22100 (22011 measured). PENDING PERSON APPROVAL.
   // 2026-10-19: the not-in-California callout from PR 36 mirrored in Spanish; es/rules.html page 40800 to 41400 (41312 measured). PENDING PERSON APPROVAL.
   // 2026-10-20: the See the map button and the Ignition NorCal line mirrored from the English home page, Kentaro's instruction 2026-10-20; es/index.html page 22100 to 22300 (22233 measured).
-  "es/index.html": { html: 22300, code: 102900 },
+  // 2026-10-30: the Ignition season line in es.js (Kentaro's ask); es/index.html first-load code 102900 to 104400 (104258 measured).
+  "es/index.html": { html: 22300, code: 104400 },
   // 2026-10-19: lib.js and common.js grew on main (calendar, grade flag, keep my list, screen reader names); es/playbook.html first-load code 179500 to 186400 (186312 measured). PENDING PERSON APPROVAL.
   // 2026-10-26 issue 9: the map control focus ring rule in style.css; es/playbook.html first-load code 186400 to 186500 (186441 measured).
-  "es/playbook.html": { html: 28800, code: 186500 },
-  "es/rules.html": { html: 41400, code: 102900 },
+  // 2026-10-30: es.js carries the Ignition season line; es/playbook.html first-load code 186500 to 188000 (187979 measured).
+  "es/playbook.html": { html: 28800, code: 188100 },
+  // 2026-10-30: es.js carries the Ignition season line; es/rules.html first-load code 102900 to 104400 (104258 measured).
+  "es/rules.html": { html: 41400, code: 104400 },
 };
 test("Spanish pages stay under their byte ceilings (page and first-load code)", () => {
   assert.deepEqual(Object.keys(CEILINGS).sort(), PAGES.map((p) => `es/${p}.html`), "one row per Spanish page");
