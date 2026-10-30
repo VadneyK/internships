@@ -26,7 +26,7 @@ import sys
 import proglib
 
 OUT_DIR = os.path.join(proglib.ROOT, "data")
-# Cards only some teens can join: one place's residents, or girls or boys only. The built cards carry "limited": true so the
+# Cards only some teens can join: one place's residents, girls or boys only, low income only, or a senator must sponsor. The built cards carry "limited": true so the
 # Programs page can keep them out of "Good fit for you" when open cards fit. Statewide or national residency is not a limit here.
 _STATES = ("alabama|alaska|arizona|arkansas|california|colorado|connecticut|delaware|florida|georgia|hawaii|idaho|illinois|indiana|iowa|kansas|"
            "kentucky|louisiana|maine|maryland|massachusetts|michigan|minnesota|mississippi|missouri|montana|nebraska|nevada|new hampshire|new jersey|"
@@ -34,7 +34,7 @@ _STATES = ("alabama|alaska|arizona|arkansas|california|colorado|connecticut|dela
            "texas|utah|vermont|virginia|washington state|west virginia|wisconsin|wyoming|british columbia|u\\.?s\\.?|united states|state")
 NOT_A_LIMIT = re.compile(r"boys (?:&|and) girls|not (?:just|only) for (?:girls|boys)|(?:any|all) genders?|live in (?:the )?(?:\w+ )?dorms?|"
                          r"live in (?:leadership|program)|permanent residents?|(?:%s) residents?|residents? of (?:the )?(?:%s)" % (_STATES, _STATES), re.I)
-LIMIT = re.compile(r"\bresidents?\b|\bmust live\b|\blives? in\b|\bgirls\b|\byoung women\b|\bboys\b|\byoung men\b|\bgender", re.I)
+LIMIT = re.compile(r"\bresidents?\b|\bmust live\b|\blives? in\b|\bgirls\b|\byoung women\b|\bboys\b|\byoung men\b|\bgender|\blow[- ]income\b|\bsenator must sponsor|\bsponsored by (?:the lieutenant governor or )?(?:a|one) senator", re.I)
 
 
 def is_limited(d):
