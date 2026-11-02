@@ -19,20 +19,21 @@
   "pay_detail": "Paid internship; the hourly rate is not stated on the page",
   "season": "year-round",
   "duration": "Up to 100 hours",
-  "status": "unconfirmed",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "No deadline stated. The 2026-2027 application is posted.",
+  "deadline_text": "Applications are closed as of Nov 2, 2026. The form says to check back in January 2027.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Submit the online Work Experience Program application (2026-2027 form linked on the city page). The team contacts you for an intake. Phone (510) 412-2044.",
+  "how_to_apply": "The online form linked on the city page is closed for now. Check back in January 2027. After you apply, the team contacts you for an intake. Phone (510) 412-2044.",
   "needs_work_permit": null,
   "url": "https://richmondca.gov/1139/Work-Experience-Program",
   "apply_url": "https://tinyurl.com/YW-WEX-26-27",
   "sources_fetched": [
-    "https://richmondca.gov/1139/Work-Experience-Program"
+    "https://richmondca.gov/1139/Work-Experience-Program",
+    "https://youthworks.formstack.com/forms/work_experience_program"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "The page refers to Richmond youth but does not spell out a residency rule. Ask about the hourly wage and your start date at intake."
 }

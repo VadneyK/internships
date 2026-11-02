@@ -23,7 +23,7 @@
   "duration": "Summer minimum 21 hours; school year two 3-hour shifts a month",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Paused. The page says there will be no Summer 2025 cohort and a re-imagined youth volunteer program is planned for 2026, with no dates posted. The last posted window closed Jan 16, 2024.",
+  "deadline_text": "Paused. The page says there will be no Summer 2025 cohort and a re-imagined youth volunteer program is planned for 2026, with no dates posted. The last posted window closed Jan 16, 2024. The teen opportunities page says applications are closed and to check back next year.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Check the Lawrence Hall of Science teen volunteer page; call 510-642-5132 or mail/deliver forms to the Volunteer Program, attention Veronica Urdaneta, 1 Centennial Drive, Berkeley, CA 94720. The page lists no youth volunteer email.",
@@ -32,10 +32,12 @@
   "apply_url": null,
   "sources_fetched": [
     "https://lawrencehallofscience.org/?p=12540",
-    "https://lawrencehallofscience.org/get-involved/volunteer/"
+    "https://lawrencehallofscience.org/get-involved/volunteer/",
+    "https://lawrencehallofscience.org/support/volunteer-teen/",
+    "https://lawrencehallofscience.org/visitors/opportunities-for-teens/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "The page says recruiting is paused and a re-imagined program is planned for 2026, with no dates. Its Apply Today teen link conflicts with the pause notice, so do not treat it as active. Call to ask whether the program has launched. The age rules come from 2024 wording, so the age fields are blank. The email veronicau@berkeley.edu was removed because neither page lists it."
+  "notes": "The page says recruiting is paused and a re-imagined program is planned for 2026, with no dates. Its Apply Today teen link conflicts with the pause notice, so do not treat it as active. Call to ask whether the program has launched. The age rules come from 2024 wording, so the age fields are blank."
 }
