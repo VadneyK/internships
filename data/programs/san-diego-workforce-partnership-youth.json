@@ -20,7 +20,7 @@
   "season": "year-round",
   "duration": "Varies by program",
   "status": "unconfirmed",
-  "deadline_text": "Not accepting applications (online form, Oct 18, 2026).",
+  "deadline_text": "Not accepting applications (online form, Nov 2, 2026).",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Complete the online program application (10 to 15 minutes). The team follows up about next steps.",
@@ -29,10 +29,12 @@
   "apply_url": "https://portal.workforce.org/s/program-application?recordId=a3Z1N000002Op14UAC",
   "sources_fetched": [
     "https://workforce.org/c2csd",
-    "https://workforce.org/our-programs/"
+    "https://workforce.org/our-programs/",
+    "https://workforce.org/getajob",
+    "https://portal.workforce.org/s/program-application?recordId=a3Z1N000002Op14UAC"
   ],
   "priority": 2,
   "notes": "The programs page also lists GenAI, workforce support for in-school youth across San Diego County school systems, and EXCEL for in-school and out-of-school young adults in the South Bay; their ages and dates were not checked. Pay and permit rules for under-18 placements are not stated.",
   "verified": "fetched",
-  "verified_on": "2026-10-18"
+  "verified_on": "2026-11-02"
 }
