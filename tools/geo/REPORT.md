@@ -9,17 +9,17 @@ Precision 'manual' covers both the British Columbia table and the ZIP-centroid p
 
 | What | Cards |
 |---|---|
-| All cards | 2838 |
-| With a point | 2482 (87.5%) |
+| All cards | 2848 |
+| With a point | 2490 (87.4%) |
 | Statewide (no point) | 189 |
 | Online (no point) | 48 |
 | National (no point) | 7 |
-| Many places (no point) | 112 |
+| Many places (no point) | 114 |
 | Unmatched | 0 (0.00%) |
 
-Distinct city strings: 1038. Distinct map points (cities list): 498.
+Distinct city strings: 1043. Distinct map points (cities list): 501.
 
-Points by precision (points / cards): city 427 / 2193, county 55 / 181, manual 16 / 108
+Points by precision (points / cards): city 430 / 2201, county 55 / 181, manual 16 / 108
 
 Statewide by state: AZ 1, BC 5, CA 20, CO 5, FL 3, GA 12, HI 4, IA 8, ID 2, IL 13, IN 8, KY 4, MA 7, MD 5, MI 8, MN 5, MO 4, MT 2, NC 6, ND 2, NJ 3, NM 4, NV 3, NY 4, OH 5, OR 2, PA 6, SD 2, TN 2, TX 12, UT 3, VA 5, WA 6, WI 6, WY 2
 
@@ -40,10 +40,7 @@ Entries in data/geo-overrides.json: byCity 73, byId 1, aliases 5, manualPoints 5
 
 Listed for eyeballing; a long distance is normal for multi-state or travel programs.
 
-- 151 km | san-bernardino-county-wioa-youth | San Bernardino County, CA -> San Bernardino County, CA | regions inland-empire
-- 151 km | san-bernardino-county-spark-syep | San Bernardino County, CA -> San Bernardino County, CA | regions inland-empire
-- 151 km | san-bernardino-county-sheriff-explorers | San Bernardino County, CA -> San Bernardino County, CA | regions inland-empire
-- 151 km | san-bernardino-county-library-teen-leadership-program | San Bernardino County, CA (32 branch libraries) -> San Bernardino County, CA | regions inland-empire
+None.
 
 ## Region to state map used when the city text has no state
 

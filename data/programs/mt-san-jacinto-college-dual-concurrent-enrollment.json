@@ -1,0 +1,38 @@
+{
+  "id": "mt-san-jacinto-college-dual-concurrent-enrollment",
+  "name": "Mt. San Jacinto College Dual and Concurrent Enrollment",
+  "org": "Mt. San Jacinto College",
+  "regions": [
+    "inland-empire"
+  ],
+  "city": "San Jacinto, Menifee Valley, San Gorgonio Pass and Temecula Valley campuses, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take college classes while you are in high school. Dual classes meet at your school during the day. Concurrent classes are online, at night or on weekends, with limited seats.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "You must be in grades 9 to 12 and in high school now. Your school or district must say yes. 9th and 10th graders cannot take English.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Part-time high school students generally do not pay the $46 per unit fee. Other fees still apply, such as the RTA Go Pass. Dual classes give you the materials. Concurrent students get their own.",
+  "season": "year-round",
+  "duration": "By semester. Up to 3 classes and 11 units in fall or spring. Up to 2 classes and 8 units in summer.",
+  "status": "open-now",
+  "deadline_text": "Spring 2027 class requests opened Oct 13, 2026 and close Nov 13, 2026. Spring classes start Jan 19, 2027.",
+  "deadline_iso": "2026-11-13",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Meet with your counselor. Apply on CCCApply and press Submit at the end. Turn on your MyMSJC account and do the online orientation. Then send a class request in DualEnroll. Register and pay fees in Self-Service.",
+  "needs_work_permit": false,
+  "url": "https://msjc.edu/apply/high-school-students.html",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://msjc.edu/apply/high-school-students.html",
+    "https://msjc.edu/locations/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "You must send a new request each semester. An Accepted request does not enroll you, so you still must register. Concurrent credit may not count toward high school graduation. Questions: K12studentinfo@msjc.edu."
+}

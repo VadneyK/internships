@@ -20403,6 +20403,47 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "chino-hills-teen-advisory-board",
+  "name": "Chino Hills Teen Advisory Board",
+  "org": "City of Chino Hills",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "Chino Hills, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Advise the Parks and Recreation Commission on youth programs. You share what teens need, help with youth events and volunteer with the city. The board has 20 students.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "7 to 12",
+  "who_can_apply": "You must be in grades 7 to 12. You must live in Chino Hills or go to a school in Chino Hills.",
+  "paid_type": "not-stated",
+  "pay_detail": "The program page does not list pay.",
+  "season": "school-year",
+  "duration": "One year. Meets the second Thursday of each month, September to May, at 6:00 p.m.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications for 2026-27 opened in March 2026 and are now closed. The page says to check back next year. In 2025 the deadline was March 14. Dates for 2027-28 are not posted yet.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "The form is not open now, so check the city page next year. In 2025 the city asked for a typed form, brought in person to the Community Center at 14250 Peyton Drive.",
+  "needs_work_permit": null,
+  "url": "https://www.chinohills.org/1850/Teen-Advisory-Board",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.chinohills.org/1850/Teen-Advisory-Board",
+   "https://www.chinohills.org/Archive.aspx?ADID=4645"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "In 2025 the city took forms until the deadline or the first 60, so apply early. You can ask to serve one more term if you stay in good standing. Questions: Community Center, 909-364-2826.",
+  "verified_on_label": "Nov 2, 2026",
+  "limited": true
+ },
+ {
   "id": "chla-high-school-summer-volunteer",
   "name": "High School Summer Volunteer Program",
   "org": "Children's Hospital Los Angeles",
@@ -22252,6 +22293,45 @@
   "priority": 2,
   "notes": "Dual enrollment is only through CSM's partner high schools. Concurrent enrollment is open to any high schooler but may need your counselor's approval at some schools. Skyline and Canada colleges run similar programs (not checked here).",
   "verified_on_label": "Oct 7, 2026"
+ },
+ {
+  "id": "college-of-the-desert-free-early-college",
+  "name": "College of the Desert Free Early College",
+  "org": "College of the Desert",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "Palm Desert, CA",
+  "type": "school-pathway",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Earn free college credit while you are in high school. Dual classes are set up through your school counselor. Concurrent lets you sign up for other COD classes during open enrollment.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be in high school. Your principal or someone they pick must approve. You also need a parent to say yes.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Dual: free, and your school district buys the books. Concurrent: tuition and fees are covered up to 11 credits a term, and you buy your own books.",
+  "season": "year-round",
+  "duration": "By term. Dual: up to 15 credits. Concurrent: up to 11 credits in fall or spring, 7 in winter or summer.",
+  "status": "open-now",
+  "deadline_text": "Dual Enrollment application dates: Winter 2027 by Nov 6, 2026. Spring 2027 by Jan 29, 2027. Summer 2027 by Mar 5, 2027.",
+  "deadline_iso": "2027-01-29",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out CCC Apply to get your COD ID. It can take 1 to 2 business days. Then set up a DualEnroll.com account with your parent's phone and email. Then register for classes there.",
+  "needs_work_permit": false,
+  "url": "https://www.collegeofthedesert.edu/students/free-early-college/default.php",
+  "apply_url": "https://www.collegeofthedesert.edu/students/free-early-college/dual-enrollment/registration.php",
+  "sources_fetched": [
+   "https://www.collegeofthedesert.edu/students/free-early-college/default.php",
+   "https://www.collegeofthedesert.edu/students/free-early-college/dual-enrollment/registration.php"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "Concurrent students cannot get aid and do not sign up early. If you go over 11 credits, your family pays for all of them. Call 760-862-1396 or email dualenrollment@collegeofthedesert.edu to ask.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "min_age": 12,
@@ -25556,6 +25636,46 @@
   "priority": 2,
   "notes": "Only this city department takes volunteers under 18. It does not take court ordered or school discipline hours. One day events like cleanups and the Fourth of July parade are listed too. The library is at 650 South Main Street.",
   "verified_on_label": "Nov 2, 2026"
+ },
+ {
+  "id": "corona-mayors-youth-council",
+  "name": "Corona Mayor's Youth Council",
+  "org": "City of Corona City Manager's Office",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "Corona, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Give the city a teen point of view. You learn how local government works, meet elected officials and share ideas on community decisions.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must live in Corona and go to high school in Corona. That means Centennial, Corona, Santiago, Lee Pollard, Orange Grove, or another public or private school in the city. You need a GPA of 2.0 or higher.",
+  "paid_type": "not-stated",
+  "pay_detail": "The program page does not list pay.",
+  "season": "school-year",
+  "duration": "2026-27 school year. Meeting times are not listed.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications for 2026-27 were due Aug 31, 2026. Dates for 2027-28 are not posted yet.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the youth council form. A teacher or counselor and your principal must sign it. Then give it to the Assistant to the City Manager.",
+  "needs_work_permit": null,
+  "url": "https://www.coronaca.gov/news/mayors-youth-council-2026",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.coronaca.gov/news/mayors-youth-council-2026"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "As of Nov 2, 2026, the new council has been picked. Next year's dates are not up yet. You can call or email to ask. Phone: 951-736-2371. Email: Melanie.Franceschini@coronaca.gov.",
+  "verified_on_label": "Nov 2, 2026",
+  "limited": true
  },
  {
   "grades": null,
@@ -52616,6 +52736,82 @@
   "verified_on_label": "Nov 2, 2026"
  },
  {
+  "id": "loma-linda-university-health-murrieta-volunteers",
+  "name": "Loma Linda University Health Murrieta Volunteers",
+  "org": "Loma Linda University Health, Murrieta",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "Murrieta, CA",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Help at the Loma Linda University Health site in Murrieta. You give 100 hours in a year. You also go to a first meeting and required training.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be at least 16. Teens must send a sealed transcript that shows a GPA of 3.2 or better.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "100 hours within 12 months",
+  "status": "year-round",
+  "deadline_text": "No deadline is listed.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply online through the link on the Murrieta page. Make sure you pick the Murrieta form.",
+  "needs_work_permit": false,
+  "url": "https://murrieta.lluh.org/patients-visitors/volunteers",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://murrieta.lluh.org/patients-visitors/volunteers"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "You can call or email with any questions. Phone: 951-704-1355. Email: volunteersmurrieta@llu.edu.",
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
+  "id": "loma-linda-university-health-volunteer-services",
+  "name": "Loma Linda University Health Volunteer Services",
+  "org": "Loma Linda University Health",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "Loma Linda, CA",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Help at Loma Linda University Health. You do an interview, a first meeting and training for your program. Then you give about 2 hours a week.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be at least 16. If you are 16 or 17, you need a GPA of 3.2 or higher. You cannot do this for school credit or for court-ordered service.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "At least 100 hours a year, about 2 hours a week",
+  "status": "year-round",
+  "deadline_text": "No deadline is listed. The steps take about 2 weeks to a month.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply online. If you are accepted, you get an email within 5 business days. Then you set up an interview and go to a 3-hour orientation.",
+  "needs_work_permit": false,
+  "url": "https://lluh.org/patients-visitors/volunteer-services",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://lluh.org/patients-visitors/volunteer-services"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "You need a TB check each year and a flu shot. Teens skip the background check. Questions: 909-558-8022 or volunteerservices@llu.edu. The office is at 11234 Anderson Street, Room 1802.",
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
   "regions": [
    "los-angeles"
   ],
@@ -63392,6 +63588,45 @@
   "priority": 2,
   "notes": "Costs money. The same page lists a separate college track, which is not for high schoolers. Contact on the pipeline page: Dr. J. Wesley Lockhart, 404-752-1197.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "mt-san-jacinto-college-dual-concurrent-enrollment",
+  "name": "Mt. San Jacinto College Dual and Concurrent Enrollment",
+  "org": "Mt. San Jacinto College",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "San Jacinto, Menifee Valley, San Gorgonio Pass and Temecula Valley campuses, CA",
+  "type": "school-pathway",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Take college classes while you are in high school. Dual classes meet at your school during the day. Concurrent classes are online, at night or on weekends, with limited seats.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "You must be in grades 9 to 12 and in high school now. Your school or district must say yes. 9th and 10th graders cannot take English.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Part-time high school students generally do not pay the $46 per unit fee. Other fees still apply, such as the RTA Go Pass. Dual classes give you the materials. Concurrent students get their own.",
+  "season": "year-round",
+  "duration": "By semester. Up to 3 classes and 11 units in fall or spring. Up to 2 classes and 8 units in summer.",
+  "status": "open-now",
+  "deadline_text": "Spring 2027 class requests opened Oct 13, 2026 and close Nov 13, 2026. Spring classes start Jan 19, 2027.",
+  "deadline_iso": "2026-11-13",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Meet with your counselor. Apply on CCCApply and press Submit at the end. Turn on your MyMSJC account and do the online orientation. Then send a class request in DualEnroll. Register and pay fees in Self-Service.",
+  "needs_work_permit": false,
+  "url": "https://msjc.edu/apply/high-school-students.html",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://msjc.edu/apply/high-school-students.html",
+   "https://msjc.edu/locations/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "You must send a new request each semester. An Accepted request does not enroll you, so you still must register. Concurrent credit may not count toward high school graduation. Questions: K12studentinfo@msjc.edu.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "mtc-high-school-internship-program",
@@ -78444,6 +78679,45 @@
   "verified_on_label": "Oct 19, 2026"
  },
  {
+  "id": "palm-springs-library-teen-volunteers",
+  "name": "Palm Springs Public Library Teen Volunteers",
+  "org": "Palm Springs Public Library",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "Palm Springs, CA",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "social-impact"
+  ],
+  "what_you_do": "Help the teen librarian in the Teen Zone. You may prepare crafts, help with programs and events, check the shelves and write book reviews.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "6 to 12",
+  "who_can_apply": "You must be in grades 6 to 12.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "You choose once a week, once a month or school breaks only.",
+  "status": "year-round",
+  "deadline_text": "No deadline is listed. The form is on the library page as of Nov 2, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the form on the library page. You write a short paragraph on why you want to help and name an emergency contact.",
+  "needs_work_permit": false,
+  "url": "https://www.palmspringsca.gov/government/departments/library/teen-zone/teen-volunteer-application",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.palmspringsca.gov/government/departments/library/teen-zone/teen-volunteer-application"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "Openings come by email. If you do not reply, you get taken off the list. Questions: call 760-323-7323 and ask for the teen librarian.",
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
   "id": "palo-alto-art-center-counselor-in-training",
   "name": "Palo Alto Art Center Summer Camp Counselor in Training",
   "org": "City of Palo Alto Art Center",
@@ -87608,6 +87882,46 @@
    "https://riversideca.gov/park_rec/information-contact/volunteers/volunteen-internship-program-vip"
   ],
   "verified_on_label": "Nov 2, 2026"
+ },
+ {
+  "id": "riverside-police-youth-court-volunteers",
+  "name": "Riverside Youth Court Volunteers",
+  "org": "Riverside Police Department",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "Riverside, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Help run a court where teens decide the outcome for first-time youth offenders. You can be a juror, attorney, advocate or court clerk. An adult judge is in charge.",
+  "min_age": 12,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "You must be 12 to 17 with no criminal record. You must live, work or go to school in the City of Riverside.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "Twice a month on Wednesdays, 5:00 to 9:00 p.m., at the Riverside Hall of Justice",
+  "status": "year-round",
+  "deadline_text": "No deadline. You must go to a juror training first. No training dates are listed as of Nov 2, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Go to a required juror training first. Watch the police department social media for dates. Or call Officer E. Murphy at 951-826-5573 or CSO A. Guerra at 951-826-5147.",
+  "needs_work_permit": false,
+  "url": "https://riversideca.gov/rpd/about-contact/administration/support-services/community-services-bureau/youth-court",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://riversideca.gov/rpd/about-contact/administration/support-services/community-services-bureau/youth-court"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "If you live far away or cannot come twice a month, the page points you to the California Courts map of youth courts.",
+  "verified_on_label": "Nov 2, 2026",
+  "limited": true
  },
  {
   "id": "riverside-public-library-volunteer-14-plus",
@@ -102870,6 +103184,45 @@
   "verified_on_label": "Oct 13, 2026"
  },
  {
+  "id": "torres-congressional-youth-advisory-committee",
+  "name": "Congresswoman Norma Torres Youth Advisory Committee",
+  "org": "Office of Congresswoman Norma Torres",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "Chino, Chino Hills, Eastvale, Ontario, Montclair, Pomona, Fontana, Rancho Cucamonga and Upland, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government"
+  ],
+  "what_you_do": "Go to six monthly sessions run by a congressional office. You learn about local fields like transportation, trade, education, health care and government. You also build leadership skills.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be in high school and live in the 35th Congressional District. The list has nine cities: Chino, Chino Hills, Eastvale, Ontario, Montclair, Pomona, Fontana, Rancho Cucamonga and Upland. Use the House website to check your address.",
+  "paid_type": "not-stated",
+  "pay_detail": "The program page does not list pay.",
+  "season": "spring",
+  "duration": "End of January 2027 to June 2027, six monthly sessions",
+  "status": "open-now",
+  "deadline_text": "Apply by Dec 31, 2026. Spots fill as people apply, so do not wait.",
+  "deadline_iso": "2026-12-31",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the 2027 online form linked on the program page.",
+  "needs_work_permit": null,
+  "url": "https://torres.house.gov/services/resources/youth-advisory-committee",
+  "apply_url": "https://forms.gle/aQjJyxQvuXaDrMoHA",
+  "sources_fetched": [
+   "https://torres.house.gov/services/resources/youth-advisory-committee"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "Questions: Matthew Trabert at the district office, 909-481-6474 or Matthew.Trabert@mail.house.gov.",
+  "verified_on_label": "Nov 2, 2026",
+  "limited": true
+ },
+ {
   "id": "tracy-aviary-individual-volunteer",
   "name": "Individual Volunteer (Tracy Aviary)",
   "org": "Tracy Aviary",
@@ -112176,6 +112529,45 @@
   "priority": 2,
   "notes": "Ask the college about unit limits and your counselor about credit.",
   "verified_on_label": "Oct 7, 2026"
+ },
+ {
+  "id": "western-science-center-junior-volunteers",
+  "name": "Western Science Center Junior Volunteer Program",
+  "org": "Western Science Center",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "Hemet, CA",
+  "type": "volunteer",
+  "fields": [
+   "science"
+  ],
+  "what_you_do": "Get paired with a museum staff mentor and grow your interest in science and museums. Volunteers help in many parts of the museum, from fossil lab work to the museum floor.",
+  "min_age": 12,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "You must be 12 to 17. The museum picks teens based on interests, answers on the form and open time slots.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "By semester. Hours are not listed.",
+  "status": "rolling",
+  "deadline_text": "Forms are reviewed each semester and as slots open. The program starts two weeks after each HUSD school semester begins.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the Junior Volunteer form on the museum page. It asks for a parent contact and two emergency contacts. If you are not picked, you can apply again next semester.",
+  "needs_work_permit": false,
+  "url": "https://www.westernsciencecenter.org/volunteer-wsc",
+  "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLSe0XBgtVczHxOv1LWr-5NER6GuTFKpZioxeZEpMRWPllD0xNg/viewform",
+  "sources_fetched": [
+   "https://www.westernsciencecenter.org/volunteer-wsc",
+   "https://docs.google.com/forms/d/e/1FAIpQLSe0XBgtVczHxOv1LWr-5NER6GuTFKpZioxeZEpMRWPllD0xNg/viewform"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "The volunteer page lists a reference check, a background check and training for all volunteers. Forms are checked on Wednesdays. If you hear nothing after 7 business days, call 951-791-0033.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "opens_iso": null,
