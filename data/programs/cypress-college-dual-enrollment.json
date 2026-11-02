@@ -1,0 +1,40 @@
+{
+  "id": "cypress-college-dual-enrollment",
+  "name": "Cypress College Dual Enrollment and Special Admit",
+  "org": "Cypress College",
+  "regions": [
+    "orange-county"
+  ],
+  "city": "Cypress, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take college classes while you are in high school, on the college campus or at your high school. You earn college credit. Some classes may transfer to CSU or UC.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Dual enrollment is for some schools in four local districts. See the list on the program page. Any high school student can use the Special Admit path.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Dual enrollment is at no cost. Special Admit waives enrollment fees, but you pay the health fee and any material fees.",
+  "season": "year-round",
+  "duration": "By semester",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No deadline stated on the program pages.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "For dual enrollment, ask the office: dualenrollment@cypresscollege.edu or (714) 484-7213. For Special Admit, fill out the main college form and the Special Admit form. Call (714) 484-7346.",
+  "needs_work_permit": false,
+  "url": "https://www.cypresscollege.edu/dual-enrollment/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.cypresscollege.edu/dual-enrollment/",
+    "https://www.cypresscollege.edu/high-school-students/",
+    "https://www.nocccd.edu/about-district/partnerships-programs/dual-enrollment"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "Partner schools are in the Anaheim Union, Fullerton Joint Union, Garden Grove and Los Alamitos districts. Check the list or ask your counselor. Special Admit students can take up to 11 units. The district page says dual enrollment students can take up to 6 units in fall or spring. The pages give no term dates."
+}

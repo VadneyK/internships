@@ -1,0 +1,40 @@
+{
+  "id": "saddleback-college-dual-enrollment",
+  "name": "Saddleback College Dual Enrollment",
+  "org": "Saddleback College",
+  "regions": [
+    "orange-county"
+  ],
+  "city": "Mission Viejo, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take college classes while you are in high school. Classes can be at your school, on campus, online or at Saddleback@ATEP. You may earn both high school and college credit.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "Students in grades 9 to 12. A parent and your principal must say yes. Free CCAP classes are only for schools that partner with the college, so ask your counselor.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "General dual enrollment waives enrollment fees, but you pay the health fee, books and materials. CCAP waives enrollment and health fees, and your school gives you the books.",
+  "season": "year-round",
+  "duration": "By semester. Up to 11 units, or up to 15 in CCAP.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No deadline stated on the program page. Term dates are on the college calendar.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Apply at OpenCCCApply. Watch for your student ID and email. Finish the High School Dual Enrollment Form once, with parent and school signatures. Then register in MySite. Questions: (949) 582-4500.",
+  "needs_work_permit": false,
+  "url": "https://www.saddleback.edu/apply-pay/how-apply/dual-enrollment",
+  "apply_url": "https://www.opencccapply.net/gateway/apply?cccMisCode=891",
+  "sources_fetched": [
+    "https://www.saddleback.edu/apply-pay/how-apply/dual-enrollment",
+    "https://www.saddleback.edu/apply-pay/how-apply/k-12-student",
+    "https://www.saddleback.edu/learning-saddleback/earn-college-credit-high-school"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "CCAP partners include Capistrano, Irvine, Laguna Beach, Orange and Saddleback Valley districts. PE classes are not allowed. High school students register after other students, so classes can fill up. Forms take 3 to 5 business days after the last signature. Ask your counselor if a class counts for graduation."
+}

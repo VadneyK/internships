@@ -1,0 +1,38 @@
+{
+  "id": "coastline-college-dual-enrollment",
+  "name": "Coastline College Dual and Concurrent Enrollment",
+  "org": "Coastline College (Coast Community College District)",
+  "regions": [
+    "orange-county"
+  ],
+  "city": "Fountain Valley, Garden Grove, Newport Beach and Westminster, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take college classes while you are in high school. Classes can be online, hybrid or in person. Some are just for high school students and meet at your school.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "High school students who finished 8th grade. You must meet each class rule. Classes just for high school students are for Garden Grove, Huntington Beach Union, Lake Elsinore and Newport-Mesa districts.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "California residents do not pay the $46 per unit fee. You pay a $14 total charge plus books or lab fees. Partner district classes just for high school students are free.",
+  "season": "year-round",
+  "duration": "By term. Up to 11 units in fall or spring, 10 in summer, 6 in winter.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No deadline stated on the program page. Term dates are on the college calendar.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Apply at OpenCCCApply. A parent fills out the Parent Form once. Then send the High School Release Form each term, or the CCAP form for partner classes. Add classes in MyCoast. Questions: dualenrollment@coastline.edu.",
+  "needs_work_permit": false,
+  "url": "https://www.coastline.edu/admissions-and-records/dual-enrollment.php",
+  "apply_url": "https://www.opencccapply.net/gateway/apply?cccMisCode=831",
+  "sources_fetched": [
+    "https://www.coastline.edu/admissions-and-records/dual-enrollment.php"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "Students on some visas pay other tuition, so check with Admissions. Your high school decides if a class counts for graduation. Take classes for a letter grade if you want them to count for UC or CSU A-G. Staying past the 20% mark puts the class on your record."
+}
