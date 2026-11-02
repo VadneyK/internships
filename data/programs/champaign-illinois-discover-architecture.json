@@ -1,11 +1,11 @@
 {
   "grades": "Rising sophomores through seniors",
-  "opens_iso": "2026-11-01",
-  "apply_url": null,
+  "opens_iso": null,
+  "apply_url": "https://appserv7.admin.uillinois.edu/FormBuilderSurvey/Survey/uiuc_faa/School_of_Architecture/discover_architecture_program/",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-02",
   "needs_work_permit": null,
-  "deadline_iso": "2026-11-01",
+  "deadline_iso": null,
   "id": "champaign-illinois-discover-architecture",
   "name": "Discover Architecture",
   "org": "School of Architecture, University of Illinois Urbana-Champaign",
@@ -25,15 +25,16 @@
   "paid_type": "fee-based",
   "pay_detail": "Program fee $1,300 (includes lodging and meals). The page also mentions a $100 non-refundable fee. A partial-tuition scholarship for two students is offered (apply with a one-page essay).",
   "season": "summer",
-  "duration": "One week, July 11 to 17, 2027 (residential, on campus)",
-  "status": "opens-soon",
-  "deadline_text": "Registration opens Nov 1, 2026. No due date; it closes when the program is full.",
+  "duration": "One week, June 6 to 12, 2027 or July 11 to 17, 2027 (residential, on campus). Both weeks offer the same courses; sign up for only one.",
+  "status": "open-now",
+  "deadline_text": "Registration for the 2027 program opened Nov 1, 2026. No due date; it closes when the program is full.",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Register on the page starting Nov 1, 2026. For the scholarship, also submit a one-page essay on why you want to be an architect by the deadline.",
+  "how_to_apply": "Register with the form linked on the page. For the scholarship, also submit a one-page essay on why you want to be an architect by the deadline.",
   "url": "https://arch.illinois.edu/programs-applying/discover-architecture/",
   "priority": 2,
-  "notes": "Contact: Elizabeth Abosch, eabosch2@illinois.edu. There are no refunds if you cancel, miss days or come for part of it. Sign up early, because spots fill.",
+  "notes": "Contact: Elizabeth Abosch, eabosch2@illinois.edu. There are no refunds if you cancel, miss days or come for part of it. Sign up early, because spots fill. The program page still reads 'will be live on November 1st, 2026', but its Register link opens a form headed Discover Architecture 2027 (checked 2026-11-02).",
   "sources_fetched": [
-    "https://arch.illinois.edu/programs-applying/discover-architecture/"
+    "https://arch.illinois.edu/programs-applying/discover-architecture/",
+    "https://appserv7.admin.uillinois.edu/FormBuilderSurvey/Survey/uiuc_faa/School_of_Architecture/discover_architecture_program/"
   ]
 }

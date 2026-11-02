@@ -14543,23 +14543,24 @@
   "pay_detail": "Unpaid. You earn community service hours.",
   "season": "spring",
   "duration": "One 4-hour shift a week, usually on the weekend, for 14 weeks (50 or more hours)",
-  "status": "opens-soon",
-  "opens_iso": "2026-11-01",
-  "deadline_text": "Spring 2027 applications open Nov 1, 2026. All Fall 2026 youth spots are full. No closing date is posted.",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Spring 2027 applications are open: the volunteer page now links the Spring 2027 youth form, available since Nov 1, 2026. No closing date is posted, and positions are limited.",
   "deadline_iso": null,
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Fill out the youth form on the volunteer page. Then email it to the volunteer office. Or mail it to the Science Center at 700 Exposition Park Drive, Los Angeles, CA 90037. The email is VolunteerDept@californiasciencecenter.org.",
+  "how_to_apply": "Fill out the Spring 2027 youth form online from the volunteer page. You name a teacher or counselor, and the Science Center emails them for a recommendation. Questions: VolunteerDept@californiasciencecenter.org.",
   "needs_work_permit": false,
   "url": "https://californiasciencecenter.org/volunteer/volunteer-opportunities",
-  "apply_url": null,
+  "apply_url": "https://www.volgistics.com/appform/1427982875",
   "sources_fetched": [
-   "https://californiasciencecenter.org/volunteer/volunteer-opportunities"
+   "https://californiasciencecenter.org/volunteer/volunteer-opportunities",
+   "https://www.volgistics.com/appform/1427982875"
   ],
   "priority": 2,
-  "notes": "Spots are limited. The same page lists other volunteer roles open at 16 (greeter, floor programs, gift store, office help) that ask for 4 hours a week for 6 months on the adult application. Volunteer Office: 213-744-2124.",
+  "notes": "Spots are limited. The volunteer page says 14 weeks and the form says 13 weeks, so ask if it matters to you. You need at least 50 hours before the Science Center will certify service hours. The same page lists other volunteer roles open at 16 (greeter, floor programs, gift store, office help) that ask for 4 hours a week for 6 months on the adult application. Volunteer Office: 213-744-2124.",
   "verified": "fetched",
-  "verified_on": "2026-10-22",
-  "verified_on_label": "Oct 22, 2026"
+  "verified_on": "2026-11-02",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "regions": [
@@ -15818,12 +15819,12 @@
  },
  {
   "grades": "Rising sophomores through seniors",
-  "opens_iso": "2026-11-01",
-  "apply_url": null,
+  "opens_iso": null,
+  "apply_url": "https://appserv7.admin.uillinois.edu/FormBuilderSurvey/Survey/uiuc_faa/School_of_Architecture/discover_architecture_program/",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-02",
   "needs_work_permit": null,
-  "deadline_iso": "2026-11-01",
+  "deadline_iso": null,
   "id": "champaign-illinois-discover-architecture",
   "name": "Discover Architecture",
   "org": "School of Architecture, University of Illinois Urbana-Champaign",
@@ -15843,18 +15844,19 @@
   "paid_type": "fee-based",
   "pay_detail": "Program fee $1,300 (includes lodging and meals). The page also mentions a $100 non-refundable fee. A partial-tuition scholarship for two students is offered (apply with a one-page essay).",
   "season": "summer",
-  "duration": "One week, July 11 to 17, 2027 (residential, on campus)",
-  "status": "opens-soon",
-  "deadline_text": "Registration opens Nov 1, 2026. No due date; it closes when the program is full.",
+  "duration": "One week, June 6 to 12, 2027 or July 11 to 17, 2027 (residential, on campus). Both weeks offer the same courses; sign up for only one.",
+  "status": "open-now",
+  "deadline_text": "Registration for the 2027 program opened Nov 1, 2026. No due date; it closes when the program is full.",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Register on the page starting Nov 1, 2026. For the scholarship, also submit a one-page essay on why you want to be an architect by the deadline.",
+  "how_to_apply": "Register with the form linked on the page. For the scholarship, also submit a one-page essay on why you want to be an architect by the deadline.",
   "url": "https://arch.illinois.edu/programs-applying/discover-architecture/",
   "priority": 2,
-  "notes": "Contact: Elizabeth Abosch, eabosch2@illinois.edu. There are no refunds if you cancel, miss days or come for part of it. Sign up early, because spots fill.",
+  "notes": "Contact: Elizabeth Abosch, eabosch2@illinois.edu. There are no refunds if you cancel, miss days or come for part of it. Sign up early, because spots fill. The program page still reads 'will be live on November 1st, 2026', but its Register link opens a form headed Discover Architecture 2027 (checked 2026-11-02).",
   "sources_fetched": [
-   "https://arch.illinois.edu/programs-applying/discover-architecture/"
+   "https://arch.illinois.edu/programs-applying/discover-architecture/",
+   "https://appserv7.admin.uillinois.edu/FormBuilderSurvey/Survey/uiuc_faa/School_of_Architecture/discover_architecture_program/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "champaign-illinois-makerlab-summer-camps",
@@ -19747,29 +19749,31 @@
   "grades": "High school",
   "who_can_apply": "High school students ages 15 to 18 who have completed their sophomore year by the time of the program. Merit scholarships are open to all students; need-based aid is for US residents.",
   "paid_type": "fee-based",
-  "pay_detail": "Tuition is $1,908 for 1 week, $3,816 for 2 weeks and $7,632 for 4 weeks. The page also lists housing and meal plan costs, supplies and personal spending. A $100 non-refundable tuition deposit applies to students who apply for aid or scholarships. Merit scholarships and limited need-based aid (US residents) are offered.",
+  "pay_detail": "Tuition is $1,982 for 1 week, $3,964 for 2 weeks and $7,928 for 4 weeks. Housing and meal plan rates for 2027 are still being finalized, estimated at $675 a week, and are required for students living on campus. The page also lists supplies and personal spending. A $100 non-refundable tuition deposit applies to students who apply for aid or scholarships. Merit scholarships and limited need-based aid (US residents) are offered.",
   "season": "summer",
-  "duration": "1, 2 or 4 weeks. 2026 sessions ran June 15 to July 31.",
-  "status": "opens-soon",
-  "opens_iso": "2026-11-01",
-  "deadline_text": "Page says registration opens November 1 (year not stated; (year inferred from the next cycle)). The 2026 sessions ran June 15 to July 31. A priority deadline is mentioned but not dated on the program page.",
+  "duration": "1, 2 or 4 weeks. 2027 sessions run June 14 to July 30.",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Registration for the 2027 sessions began November 1, and course pages show Add to cart. The Session 1 course page lists a registration deadline of Monday, June 7 at 11:59 PM; check each course page for its own date. Merit scholarship and need-based aid applications are due March 1, and full payment is due May 1 (no year printed).",
   "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Register online when sign-up opens November 1. When you sign up, you can also apply for a merit scholarship or need-based aid.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Pick a course and session at the registration link and sign up online. When you sign up, you can also apply for a merit scholarship or need-based aid by choosing the $100 option.",
   "needs_work_permit": false,
   "url": "https://www.saic.edu/high-school-programs/early-college-program-summer-institute",
-  "apply_url": null,
+  "apply_url": "https://continuingstudies.saic.edu/ecpsi",
   "sources_fetched": [
    "https://www.saic.edu/high-school-programs",
    "https://www.saic.edu/high-school-programs/early-college-program-summer-institute",
    "https://www.saic.edu/high-school-programs/early-college-program-summer-institute/important-dates-deadlines",
-   "https://www.saic.edu/high-school-programs/early-college-program-summer-institute/tuition-financial-assistance"
+   "https://www.saic.edu/high-school-programs/early-college-program-summer-institute/tuition-financial-assistance",
+   "https://continuingstudies.saic.edu/ecpsi",
+   "https://continuingstudies.saic.edu/ecpsi/1460-session-1-2d-animation"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-02",
   "priority": 3,
-  "notes": "The page says registration opens November 1 but gives no year. It probably means this coming November for summer 2027, so confirm. The site menu also lists an online version (ECPOSI). Its details were not on the page.",
-  "verified_on_label": "Oct 10, 2026"
+  "notes": "The program page still reads 'Registration Opens November 1!' with no year, but the 2027 course pages show working Add to cart buttons (checked 2026-11-02). No single closing date covers all sessions. An online version (ECPOSI) has its own course list.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "chicago-steppenwolf-young-adult-council",
@@ -20752,16 +20756,16 @@
  },
  {
   "grades": "Graduating seniors",
-  "apply_url": null,
+  "apply_url": "https://oaacdsummerprograms.smapply.io/",
   "needs_work_permit": null,
   "deadline_iso": "2027-02-01",
-  "opens_iso": "2026-11-01",
+  "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-02",
   "priority": 1,
-  "notes": "The page does not give the year for Nov 1 and Feb 1; the year is inferred from the line that the new program starts in summer 2027. More details are to be posted. Pay and exact dates are not posted yet.",
+  "notes": "The page does not give the year for Nov 1 and Feb 1; the year is inferred from the line that the new program starts in summer 2027. The application site names this program and offers sign up (checked 2026-11-02); the screens past sign up were not read. Pay is not posted.",
   "id": "cincinnati-childrens-high-school-summer-immersion",
-  "name": "High School Summer Immersion Program",
+  "name": "Summer High School Career Exploration Program",
   "org": "Cincinnati Children's",
   "regions": [
    "cincinnati"
@@ -20773,23 +20777,24 @@
    "science"
   ],
   "what_you_do": "A one month summer program. You learn by doing and grow work skills with experts across the hospital. It replaces the earlier paid summer internship.",
-  "min_age": null,
+  "min_age": 17,
   "max_age": null,
-  "who_can_apply": "High school seniors who are about to graduate, from the Cincinnati area.",
+  "who_can_apply": "At least 17 years old, a US citizen or green card holder, graduating from a Cincinnati area high school in spring 2027, living within one hour's drive of Cincinnati, planning to attend an undergraduate school in fall 2027, and interested in a career in biomedical sciences.",
   "paid_type": "not-stated",
-  "pay_detail": "Not stated for the new program. The program page, checked on 2026-10-10, says nothing about pay. The old program was a paid, part-time position.",
+  "pay_detail": "Not stated for the new program. The program page, checked on 2026-11-02, says nothing about pay. The old program was a paid, part-time position.",
   "season": "summer",
-  "duration": "One month, starting summer 2027",
-  "status": "opens-soon",
-  "deadline_text": "Online application opens Nov 1 and closes Feb 1, for summer 2027.",
+  "duration": "June 14 to July 8, 2027, Monday to Thursday, 24 hours a week (no program July 5)",
+  "status": "open-now",
+  "deadline_text": "Online application opened Nov 1 and closes Feb 1, 2027 at 5 PM EST, for summer 2027.",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Apply online between Nov 1 and Feb 1. Questions: hssummerinternship@cchmc.org.",
+  "how_to_apply": "Register on the application site, complete the eligibility quiz, then finish the application and press the final submit button before Feb 1 at 5 PM EST. There is no automatic submission. Questions: hssummerinternship@cchmc.org.",
   "url": "https://www.cincinnatichildrens.org/education/research/high-school/summer-internship",
   "sources_fetched": [
    "https://www.cincinnatichildrens.org/education/research/high-school/summer-internship",
-   "https://www.cincinnatichildrens.org/education/research/high-school"
+   "https://www.cincinnatichildrens.org/education/research/high-school",
+   "https://oaacdsummerprograms.smapply.io/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "grades": "Completed 9th grade",
@@ -26106,13 +26111,13 @@
   "limited": true
  },
  {
-  "opens_iso": "2026-11-01",
+  "opens_iso": null,
   "apply_url": null,
   "min_age": null,
   "max_age": null,
   "grades": "8 to 12",
   "verified": "fetched",
-  "verified_on": "2026-10-21",
+  "verified_on": "2026-11-02",
   "needs_work_permit": false,
   "priority": 2,
   "id": "csssa-california-state-summer-school-arts",
@@ -26129,22 +26134,24 @@
   "what_you_do": "This is a month long, pre-professional summer arts program. Students train in one department. Choices are animation, dance, film and music. Others are theater, visual art, writing, or architecture and environment.",
   "who_can_apply": "California residents in grades 8 to 12. Up to 20 students from out of state and other countries may also be enrolled. Each department has its own assignments.",
   "paid_type": "fee-based",
-  "pay_detail": "Tuition and fees for California residents were $5,174 for 2026; 2027 rates 'will be posted soon'. Need based aid is available to California residents (nearly half of past students had much of tuition covered). $20 application fee, with fee waivers for students with financial need.",
+  "pay_detail": "The Tuition and Fees page lists $5,433 for California residents and $10,999 for out of state and international students, with no year printed and May 2027 payment dates. The FAQ still shows $5,174 for 2026 and says 2027 rates 'will be posted soon'. Need based aid is available to California residents (nearly half of past students had much of tuition covered). $20 application fee, with fee waivers for students with financial need.",
   "season": "summer",
   "duration": "About one month: first day of classes July 5 and graduation July 31, 2027",
-  "status": "opens-soon",
-  "deadline_text": "2027 application opens in November (timeline lists Nov 1, 2026). Application and scholarship priority deadline is Feb 28, 2027, 6 pm, with no extensions. Session: registration July 3, classes July 5, graduation July 31, 2027.",
-  "deadline_iso": "2027-02-28",
-  "deadline_confidence": "confirmed-2026-27",
+  "status": "unconfirmed",
+  "deadline_text": "The site says 2027 applications open Nov 1, 2026, and its How to Apply page still says the application will open in November. Application and scholarship priority deadline is Feb 28, 2027, 6 pm, with no extensions. Session: registration July 3, classes July 5, graduation July 31, 2027.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
   "how_to_apply": "Apply online by department. A full application has the form and two teacher references, not peers. It has an unofficial transcript and department assignments. It has the $20 fee. It has the financial aid request if you want aid. Students can apply to more than one department. Each needs a full application.",
   "url": "https://www.csssa.ca.gov/admissions/how-to-apply/",
   "sources_fetched": [
    "https://www.csssa.ca.gov/",
    "https://www.csssa.ca.gov/student-life/faqs/",
-   "https://www.csssa.ca.gov/admissions/how-to-apply/"
+   "https://www.csssa.ca.gov/admissions/how-to-apply/",
+   "https://www.csssa.ca.gov/admissions/tuition-fees/",
+   "https://go.csssa.ca.gov/apply/"
   ],
-  "notes": "Students who finish can get 3 units of college extension credit from the California State University system (per the FAQ). Not a job. The pages did not name the 2027 campus, so check before planning travel.",
-  "verified_on_label": "Oct 21, 2026"
+  "notes": "Students who finish can get 3 units of college extension credit from the California State University system (per the FAQ). Not a job. The pages did not name the 2027 campus, so check before planning travel. Status is unconfirmed because on 2026-11-02 the pages had not changed to say the application is live, and Apply Now leads only to a general log in and create account page that names no year. Check the Apply Now link on the site.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "cu-boulder-science-discovery-stem-research-experience",
@@ -33961,23 +33968,23 @@
   "pay_detail": "Unpaid; $100 annual fee for badge, shirt and materials (financial help available, nobody turned away)",
   "season": "year-round",
   "duration": "Year round: 30 hours fall, 30 spring, 80 summer",
-  "status": "opens-soon",
-  "deadline_text": "Applications open every year on November 1 and close November 25. They are closed until then.",
-  "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Fill out the form in the November window. Interview. Go to the required training.",
+  "status": "open-now",
+  "deadline_text": "2027 ZooTeens applications are open and close December 18, 2026. The page prints December 18 without a year.",
+  "deadline_iso": "2026-12-18",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the form at the Apply Here link. Interview. Go to the required training.",
   "needs_work_permit": false,
   "url": "https://www.jacksonvillezoo.org/teens",
-  "apply_url": null,
+  "apply_url": "https://www.volgistics.com/appform/223643878",
   "sources_fetched": [
    "https://www.jacksonvillezoo.org/teens"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "The page gives the Nov 1 to Nov 25 window as the pattern each year. It does not say the exact 2026 dates are for that year.",
-  "opens_iso": "2026-11-01",
-  "verified_on_label": "Oct 10, 2026"
+  "notes": "The page says the 2027 applications are open and close December 18, with no year; 2026 is the only December 18 ahead of this open window. In October 2026 the page gave a Nov 1 to Nov 25 window, so the dates can change.",
+  "opens_iso": null,
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "florida-miami-dade-public-library-volunteer",
@@ -46784,11 +46791,11 @@
   "pay_detail": "Cost is not stated on the main page. Check each program page.",
   "season": "summer",
   "duration": "One week for the intensives. Music camps run 3 to 6 days.",
-  "status": "opens-soon",
-  "opens_iso": "2026-11-01",
-  "deadline_text": "Summer 2027 page: registration opens November 1. Music camps: Jazz Band June 13-18, Concert Band June 20-25, Piano June 28-30, Choir July 5-10, Orchestra July 11-16 (year not printed, page is headed Summer 2027). No deadline is listed; spaces fill fast.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "Summer 2027 page, last read 2026-10-10: registration opens November 1. Music camps: Jazz Band June 13-18, Concert Band June 20-25, Piano June 28-30, Choir July 5-10, Orchestra July 11-16 (year not printed, page is headed Summer 2027). No deadline is listed; spaces fill fast.",
   "deadline_iso": null,
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Register on the pages for each program. They are linked from the main page. Sign-up starts November 1. Questions: arts@kennesaw.edu or 470-578-6742.",
   "needs_work_permit": false,
   "url": "https://campus.kennesaw.edu/colleges-departments/arts/concerts-events/community-programs/summer-art-intensives.php",
@@ -46797,8 +46804,8 @@
    "https://campus.kennesaw.edu/colleges-departments/arts/concerts-events/community-programs/summer-art-intensives.php"
   ],
   "priority": 3,
-  "notes": "Not a job. The page states no cost or fee, so check each program page. The Dance, Theatre and Arts and Design intensives list no exact dates on the main page. Scholarships are not mentioned.",
-  "verified": "fetched",
+  "notes": "Could not read the official page on 2026-11-02: kennesaw.edu refused the connection from both tools tried, so whether registration is live is not confirmed. Details here are from 2026-10-10. Not a job. The page states no cost or fee, so check each program page. The Dance, Theatre and Arts and Design intensives list no exact dates on the main page. Scholarships are not mentioned.",
+  "verified": "snippet-only",
   "verified_on": "2026-10-10",
   "apply_url": null,
   "verified_on_label": "Oct 10, 2026"
@@ -51570,26 +51577,28 @@
   "grades": "Entering 7th through 12th grade in fall 2027",
   "who_can_apply": "Students entering grades 7 to 12 in fall 2027. Past members are not guaranteed a spot back.",
   "paid_type": "unpaid",
-  "pay_detail": "Volunteer program. Any cost is not stated on the program page.",
+  "pay_detail": "Volunteer program. Fee of $250 per session, which covers orientation, a t-shirt, a name tag, daily supervision and program supplies.",
   "season": "summer",
-  "duration": "Session dates for 2027 not stated on the program page",
-  "status": "opens-soon",
-  "opens_iso": "2026-11-02",
-  "deadline_text": "Applications open Monday, Nov 2, 2026 at 10 AM and close Friday, Feb 5, 2027 at 5 PM.",
+  "duration": "Session 1 is May 24 to June 25 and Session 2 is June 28 to July 30. Education track volunteers work both sessions.",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Applications opened Monday, Nov 2, 2026 at 10 AM and close Friday, Feb 5, 2027 at 5 PM.",
   "deadline_iso": "2027-02-05",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Apply when the window opens, choosing the Animal Care track or the Education track. Questions go to the Education Team at the number on the page.",
+  "how_to_apply": "Choose the Animal Care track or the Education track and fill out that form on the page, with short essays and a letter of recommendation from an adult who is not family. If you pass the first round, you do an in-person interview. Questions go to the Education Team at the number on the page.",
   "needs_work_permit": false,
   "url": "https://www.lincolnzoo.org/education/zoo-crew.html",
   "apply_url": null,
   "sources_fetched": [
-   "https://www.lincolnzoo.org/education/zoo-crew.html"
+   "https://www.lincolnzoo.org/education/zoo-crew.html",
+   "https://www.lincolnzoo.org/education/zoo-crew-animal-care-track-application.html",
+   "https://www.lincolnzoo.org/education/zoo-crew-education-track-application.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-02",
   "priority": 1,
-  "notes": "The page lists a $250 per session fee. Education track volunteers work with the summer camp program.",
-  "verified_on_label": "Oct 12, 2026"
+  "notes": "The page lists a $250 per session fee. Education track volunteers work with the summer camp program. Both 2027 application forms were up on 2026-11-02, after the 10 AM opening.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "lincoln-city-libraries-teen-volunteer",
@@ -65469,12 +65478,12 @@
   "pay_detail": "$500 per delegate for lodging, meals and two uniform shirts. A local American Legion post, business or community group often pays it. Families with money worries are told to contact the program.",
   "season": "summer",
   "duration": "One week (the 87th session is June 20 to 26, 2027)",
-  "status": "opens-soon",
-  "opens_iso": "2026-11-01",
-  "deadline_text": "Application opens Nov 1, 2026. No closing date is posted yet.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "The About page lists the application opening Nov 1, 2026. No closing date and no application link are posted.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Applications open Nov 1, 2026. Local American Legion posts pick delegates. Find a post near you. The FAQ page links a post finder. Or email info@tarheelboysstate.org.",
+  "how_to_apply": "The About page lists the application opening Nov 1, 2026. Local American Legion posts pick delegates. Find a post near you. The FAQ page links a post finder. Or email info@tarheelboysstate.org.",
   "needs_work_permit": false,
   "url": "https://tarheelboysstate.org/about",
   "apply_url": null,
@@ -65484,10 +65493,10 @@
    "https://tarheelboysstate.org/faqs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "Delegates must attend the full week. The FAQ page says graduates get an automatic $20,000 scholarship to Chowan University, spread over 4 years. The girls' program is a separate American Legion Auxiliary program (Tar Heel Girls State) and is not covered here.",
-  "verified_on_label": "Oct 9, 2026",
+  "notes": "Status is unconfirmed because on 2026-11-02 the site still read 'Application opens November 1, 2026' and showed no application link. Delegates must attend the full week. The FAQ page says graduates get an automatic $20,000 scholarship to Chowan University, spread over 4 years. The girls' program is a separate American Legion Auxiliary program (Tar Heel Girls State) and is not covered here.",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -79530,11 +79539,11 @@
   "paid_type": "paid",
   "pay_detail": "Described as paid. The amount is not stated on the program pages.",
   "season": "summer",
-  "duration": "The program page says eight weeks of paid full-time structured research. The 2026 program ran June 15 to July 31, 2026, which is shorter than eight weeks, so confirm the length. The page does not give the 2027 dates.",
-  "status": "opens-soon",
-  "opens_iso": "2026-10-27",
-  "deadline_text": "Applications for the 2027 program open Tuesday, October 27, 2026. The deadline is not posted yet.",
-  "deadline_iso": null,
+  "duration": "The program page says eight weeks of paid full-time structured research. MSAP 2027 runs June 21 to August 13, 2027.",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Applications for the 2027 program are open. Apply by January 6, 2027. Applicants hear back by April 1, 2027.",
+  "deadline_iso": "2027-01-06",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Use the MSAP Applications page on monell.org when it opens. Sign up for Monell's newsletter for updates. Questions: AcademicAffairs@monell.org or 267-519-4700. About 200 applications come in each year. 18 to 24 students are usually enrolled.",
   "needs_work_permit": true,
@@ -79547,10 +79556,10 @@
    "https://www.pa.gov/agencies/dli/resources/compliance-laws-and-regulations/labor-management-relations/child-labor-act"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-21",
+  "verified_on": "2026-10-28",
   "priority": 1,
   "notes": "Minors do not need working papers to apply. They must get them after they are admitted. They come from the School District of Philadelphia, per the Monell FAQ. The Pennsylvania Department of Labor and Industry says minors under 18 need a work permit from their school district's issuing officer. Monell does not provide housing or meals. Students must commit to the full program with no vacations.",
-  "verified_on_label": "Oct 21, 2026"
+  "verified_on_label": "Oct 28, 2026"
  },
  {
   "id": "philadelphia-mural-arts-art-education",
@@ -98849,14 +98858,14 @@
   "grades": "11",
   "max_age": null,
   "min_age": null,
-  "opens_iso": "2026-11-02",
+  "opens_iso": null,
   "deadline_iso": "2027-01-25",
-  "apply_url": null,
+  "apply_url": "https://wustl.az1.qualtrics.com/jfe/form/SV_2nxjBIpAxF3Lq5M",
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-02",
   "priority": 1,
-  "notes": "Takes only 10 to 12 students a year. Students from St. Louis Public Schools and under-resourced schools are strongly encouraged to apply. Work is in person in the lab.",
+  "notes": "Takes only 10 to 12 students a year. Students from St. Louis Public Schools and under-resourced schools are strongly encouraged to apply. Work is in person in the lab. The page banner says 2027 applications are open, though a lower section still reads as if they open Nov 2, 2026.",
   "deadline_confidence": "confirmed-2026-27",
   "fields": [
    "science",
@@ -98875,15 +98884,16 @@
   "paid_type": "stipend",
   "pay_detail": "$4,800 stipend (before taxes) for the summer",
   "season": "summer",
-  "duration": "8 weeks (May 31 to July 23, 2027)",
-  "status": "opens-soon",
-  "deadline_text": "Applications open Nov 2, 2026. Due Jan 25, 2027. Recommendation letters due Feb 1, 2027.",
+  "duration": "8 weeks (June 7 to July 30, 2027), with orientation June 2 to 4, 2027",
+  "status": "open-now",
+  "deadline_text": "2027 applications are open. Due Jan 25, 2027. Recommendation letters due Feb 1, 2027.",
   "how_to_apply": "Online application with five short answers and two essays. Two recommendation letters, one from a math or science teacher.",
   "url": "https://sites.wustl.edu/wustlysp/programs/summer-focus",
   "sources_fetched": [
-   "https://sites.wustl.edu/wustlysp/programs/summer-focus"
+   "https://sites.wustl.edu/wustlysp/programs/summer-focus",
+   "https://wustl.az1.qualtrics.com/jfe/form/SV_2nxjBIpAxF3Lq5M"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "grades": null,
@@ -99006,12 +99016,12 @@
  },
  {
   "grades": null,
-  "opens_iso": "2026-11-02",
-  "apply_url": null,
+  "opens_iso": null,
+  "apply_url": "https://www.volgistics.com/appform/1325282559",
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-02",
   "min_age": 16,
-  "max_age": null,
+  "max_age": 18,
   "needs_work_permit": false,
   "priority": 1,
   "fields": [
@@ -99026,22 +99036,23 @@
   "city": "Boise, ID",
   "type": "volunteer",
   "what_you_do": "Volunteer at the Boise campus of St. Luke's. The program has orientation, service training, quarterly meetings and monthly service hours.",
-  "who_can_apply": "Must be at least 16 before the program starts in January. The page does not state a maximum age. Minimum 3.0 GPA. Boise campus only. The program cannot take new volunteers past their junior year of high school.",
+  "who_can_apply": "Ages 16 to 18. Must be at least 16 before the program starts in January. Minimum 3.0 GPA. Boise campus only. The program cannot take new volunteers past their junior year of high school.",
   "paid_type": "unpaid",
   "pay_detail": "Unpaid volunteer work.",
   "season": "year-round",
   "duration": "8 hours a month during the school year and 12 hours a month in June, July and August",
-  "status": "opens-soon",
-  "deadline_text": "Applications open the first Monday in November of each year (that is November 2 in 2026). Closing date not stated on the program page.",
+  "status": "open-now",
+  "deadline_text": "Applications opened Nov 2, 2026, the first Monday in November. Closing date not stated on the program page. A limited number are available and they fill quickly.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Submit an online application when it opens in November. Call (208) 381-2265 with questions. You must also finish orientation and service training. You must attend quarterly meetings. You also need proof of immunizations (MMR, varicella, Tdap, T-spot and a current flu shot).",
+  "how_to_apply": "Submit the online application. Call (208) 381-2265 with questions. You must also finish orientation and service training. You must attend quarterly meetings. You also need proof of immunizations (MMR, varicella, Tdap, T-spot and a current flu shot).",
   "url": "https://stlukesonline.org/en/giving/volunteer/junior-volunteers/",
-  "notes": "The opening date of Nov 2 is worked out from the page rule. The rule says the first Monday in November. The date is not printed on the page.",
+  "notes": "The opening date of Nov 2 is worked out from the page rule, which says the first Monday in November. The date is not printed on the page. The online application form loaded with its questions on 2026-11-02, but the page itself does not say in words that it is open.",
   "sources_fetched": [
-   "https://stlukesonline.org/en/giving/volunteer/junior-volunteers/"
+   "https://stlukesonline.org/en/giving/volunteer/junior-volunteers/",
+   "https://www.volgistics.com/appform/1325282559"
   ],
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "st-rose-hospital-shine-student-volunteers",
@@ -100165,23 +100176,24 @@
   "pay_detail": null,
   "season": "year-round",
   "duration": "At least one 3 to 4 hour visit a week, with a one-year minimum commitment",
-  "status": "opens-soon",
-  "opens_iso": "2026-11-01",
-  "deadline_text": "Applications open for two weeks twice a year: May 1 to 15 and November 1 to 15. Next window: November 1, 2026 to November 15, 2026.",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Open for this window: applications and both consent forms are due by 5 PM on Sunday, Nov 15, 2026, for a February 2027 start. Windows run twice a year, May 1 to 15 and November 1 to 15.",
   "deadline_iso": "2026-11-15",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Fill out the online form during the two week window. Add the parent form and the teacher form. Both are on the page. Then you do an interview, online training and health tests. Questions? Email MPHSvolunteerservices@sutterhealth.org or call 650-696-2465 and press 2.",
+  "how_to_apply": "Fill out the online form by the deadline, including a 500 to 1,000 word personal statement. Email the signed parent form and teacher form to the office. Both forms are on the page. No Google Drive links, HEIC photos or digital signatures. Then you do an interview, online training and health tests. Questions? Email MPHSvolunteerservices@sutterhealth.org or call 650-696-2465 and press 2.",
   "needs_work_permit": false,
   "url": "https://www.sutterhealth.org/volunteering/opportunities/youth-volunteer-at-sutter-mills-peninsula-medical-center-1096205778",
   "apply_url": "https://www.volgistics.com/appform/1129489476",
   "sources_fetched": [
-   "https://www.sutterhealth.org/volunteering/opportunities/youth-volunteer-at-sutter-mills-peninsula-medical-center-1096205778"
+   "https://www.sutterhealth.org/volunteering/opportunities/youth-volunteer-at-sutter-mills-peninsula-medical-center-1096205778",
+   "https://www.volgistics.com/appform/1129489476"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-22",
+  "verified_on": "2026-11-02",
   "priority": 1,
-  "notes": "Read on the official Sutter Health listing on 2026-10-16. The page gives the windows as May 1 to 15 and November 1 to 15 every year, without a year; the next one falls on Nov 1 to 15, 2026. Applications outside the windows are not described. Get the parent and teacher forms signed before Nov 1 so you can apply on day one. Health testing is required but the listing does not list which shots or tests.",
-  "verified_on_label": "Oct 22, 2026"
+  "notes": "Read on the official Sutter Health listing and the application form on 2026-11-02. The form says this cohort starts in February 2027 and has three required on-site events: an information meeting for youth and a parent or guardian on Dec 1, 2026, 6 PM to 7 PM; Passport for youth on Feb 1, 2027, 3:30 PM to 5 PM; and orientation for youth on Feb 9, 2027, 4:30 PM to 7:30 PM. If you cannot make all three, you are asked to apply for a later cohort. Health testing is required but the listing does not list which shots or tests.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "sutter-pamf-mountain-view-sunnyvale-student-volunteer",
@@ -101380,11 +101392,11 @@
   "grades": "Incoming 8th grade to incoming senior",
   "min_age": 13,
   "max_age": 17,
-  "apply_url": null,
+  "apply_url": "https://forms.gle/EaXZkvajwE3Xv8im6",
   "verified": "fetched",
-  "verified_on": "2026-10-11",
+  "verified_on": "2026-11-02",
   "needs_work_permit": false,
-  "opens_iso": "2026-11-01",
+  "opens_iso": null,
   "deadline_iso": "2027-03-15",
   "priority": 2,
   "fields": [
@@ -101397,26 +101409,26 @@
   "regions": [
    "texas"
   ],
-  "city": "Camps across Texas (Rising Star, La Pryor, McCoy, Freer, Santa Anna, Garwood, Anahuac)",
+  "city": "Camps across Texas (Rising Star, La Pryor, McCoy, Freer, Bonham, Garwood, Santa Anna, Anahuac)",
   "type": "leadership",
   "what_you_do": "Spend five days at a wildlife and land stewardship leadership camp. Past camps covered bobwhite quail, deer, bass, ranching, waterfowl and coastal wildlife.",
   "who_can_apply": "Ages 13 to 17, from incoming 8th graders to incoming seniors. Apply as a Cadet. Past camp graduates can later apply as Assistant Leaders.",
-  "paid_type": "not-stated",
-  "pay_detail": "Camp price not stated on the program pages. The site says tuition help is available. Email camps@texasbrigades.org.",
+  "paid_type": "fee-based",
+  "pay_detail": "Total camp price not stated on the program pages. A $100 non-refundable deposit, applied to the camp fee, is due May 15. The site says tuition help is available. Email camps@texasbrigades.org.",
   "season": "summer",
   "duration": "5 days",
-  "status": "opens-soon",
-  "deadline_text": "2027 applications open Nov 1, 2026 and close March 15, 2027. The 2026 camps ran June 7 to Aug 1, 2026.",
+  "status": "open-now",
+  "deadline_text": "2027 applications are available now and are due March 15, 2027 at 11:59 PM. The 2027 camps run June 9 to July 31.",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Complete the online application with two essay questions and a list of achievements. Rank your top three camp choices.",
+  "how_to_apply": "Complete the online application in one sitting, with two essay questions and a list of achievements. Rank your top three camp choices.",
   "url": "https://www.texasbrigades.org/applications/",
   "sources_fetched": [
    "https://www.texasbrigades.org/",
    "https://www.texasbrigades.org/camps-programs/",
    "https://www.texasbrigades.org/applications/"
   ],
-  "notes": "Camp phone 210-556-1391. Assistant Leaders can earn college scholarships. Camps listed for 2026 include Bobwhite, Buckskin, Ranch, Bass, Waterfowl and Coastal Brigades.",
-  "verified_on_label": "Oct 11, 2026"
+  "notes": "Camp phone 210-556-1391. Assistant Leaders can earn college scholarships. Camps listed for 2027 include Bobwhite, Buckskin, Ranch, Bass, Waterfowl and Coastal Brigades, plus a North Dakota Waterfowl Brigade at Fort Ransom, ND.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "texas-challenge-academy",
@@ -102670,18 +102682,18 @@
  },
  {
   "grades": null,
-  "opens_iso": "2026-11-02",
-  "deadline_iso": null,
-  "apply_url": null,
+  "opens_iso": null,
+  "deadline_iso": "2026-12-17",
+  "apply_url": "https://slate.admissions.arizona.edu/portal/apply-keys",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "fields": [
    "science",
    "health"
   ],
   "needs_work_permit": false,
-  "status": "opens-soon",
+  "status": "open-now",
   "deadline_confidence": "confirmed-2026-27",
   "id": "tucson-ua-bio5-keys-research-internship",
   "name": "KEYS Research Internship 2027",
@@ -102699,14 +102711,16 @@
   "pay_detail": "No cost to participate. A stipend is not mentioned. Earns 3 units of MCB credit.",
   "season": "summer",
   "duration": "7 weeks, June 7 to July 23, 2027",
-  "deadline_text": "Applications open Nov 2, 2026. No closing date posted; recommendations are due Jan 7.",
-  "how_to_apply": "Fill out the online form. It has 4 essay questions. Add a signed student and parent agreement. Add 2 recommenders. One must be a science teacher. Their letters are due Jan 7. Add an unofficial transcript.",
-  "url": "https://keys.arizona.edu/",
+  "deadline_text": "Applications are open Nov 2 to Dec 17, 2026. Recommendations are due Jan 7.",
+  "how_to_apply": "Fill out the online form. It has 3 essay questions. Add 2 recommenders. One must be a science teacher. They fill out an online form by Jan 7; letters are not accepted. Add an unofficial transcript and a resume.",
+  "url": "https://keys.arizona.edu/apply",
   "notes": "Both recommendations must be in by Jan 7. If not, your form will not be looked at.",
   "sources_fetched": [
-   "https://keys.arizona.edu/"
+   "https://keys.arizona.edu/",
+   "https://keys.arizona.edu/apply",
+   "https://slate.admissions.arizona.edu/portal/apply-keys"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "grades": "High school juniors and seniors (juniors favored)",
@@ -106013,10 +106027,10 @@
   "max_age": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-11",
+  "verified_on": "2026-11-02",
   "needs_work_permit": false,
-  "opens_iso": "2026-11-02",
-  "deadline_iso": "2027-03-05",
+  "opens_iso": null,
+  "deadline_iso": null,
   "priority": 2,
   "fields": [
    "environment",
@@ -106037,16 +106051,16 @@
   "pay_detail": "$300 covers housing, meals, instruction, field trip transport and activities. Full scholarships for accepted students with financial need.",
   "season": "summer",
   "duration": "7 days",
-  "status": "opens-soon",
-  "deadline_text": "Applications open Nov 2, 2026 and close March 5, 2027. Decisions by March 19, 2027. Camp is June 6 to 12, 2027.",
-  "deadline_confidence": "confirmed-2026-27",
+  "status": "unconfirmed",
+  "deadline_text": "The page says the application runs Nov 2, 2026 to March 5, 2027. Decisions by March 19, 2027. Camp is June 6 to 12, 2027.",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Fill out the online form. Add your unofficial transcript and two short essays. Add a recommendation form from one or two teachers or counselors.",
   "url": "https://www.caes.uga.edu/students/prospective-students/youth-high-school-programs/agriquest-camp.html",
-  "notes": "Questions: agriquest@uga.edu. Cancel 6 or more weeks ahead for a refund minus $50.",
+  "notes": "Status is unconfirmed because on the opening day, 2026-11-02, the page named the application form but gave no link to it. Questions: agriquest@uga.edu. Cancel 6 or more weeks ahead for a refund minus $50.",
   "sources_fetched": [
    "https://www.caes.uga.edu/students/prospective-students/youth-high-school-programs/agriquest-camp.html"
   ],
-  "verified_on_label": "Oct 11, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "opens_iso": null,
@@ -106195,23 +106209,24 @@
   "pay_detail": "Free. A US Department of Education grant pays the cost.",
   "season": "summer",
   "duration": "2 weeks (July 5 to 16, 2027)",
-  "status": "opens-soon",
-  "opens_iso": "2026-11-01",
-  "deadline_text": "Applications open November 1, 2026 for the July 5 to 16, 2027 program. A closing date is not posted.",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Applications opened November 1, 2026 for the July 5 to 16, 2027 program. A closing date is not posted.",
   "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Use the Apply here form on the program page when it opens. Questions: Annie Zavitz at Annie.Zavitz@mso.umt.edu.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Use the Apply here form on the program page. Questions: Annie Zavitz at Annie.Zavitz@mso.umt.edu.",
   "needs_work_permit": false,
   "url": "https://www.umt.edu/mansfield/democracy-programs/mansfield-civics-institute/",
   "apply_url": "https://umt.co1.qualtrics.com/jfe/form/SV_egKLEoY769JfRY2",
   "sources_fetched": [
-   "https://www.umt.edu/mansfield/democracy-programs/mansfield-civics-institute/"
+   "https://www.umt.edu/mansfield/democracy-programs/mansfield-civics-institute/",
+   "https://umt.co1.qualtrics.com/jfe/form/SV_egKLEoY769JfRY2"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-02",
   "priority": 1,
-  "notes": "Students live in residence halls and share meals. No closing date is posted, so apply as soon as the form opens.",
-  "verified_on_label": "Oct 13, 2026"
+  "notes": "Students live in residence halls and share meals. No closing date is posted, so apply soon. The Apply here link opened a working form on 2026-11-02.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "umd-esteem-ser-quest",
@@ -107411,12 +107426,12 @@
   "pay_detail": "$135 per person. Includes lodging, meals and activities.",
   "season": "winter",
   "duration": "Friday 4 PM to Saturday 3 PM (Jan 22 to 23, 2027)",
-  "status": "opens-soon",
-  "opens_iso": "2026-11-01",
-  "deadline_text": "Registration Nov 1 to Jan 8, or until filled.",
-  "deadline_iso": "2027-01-08",
-  "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Sign up through Zsuite and upload the signed waiver. Teens in grades 10 to 12 can also apply to the Teen Winter Retreat Design Team, which has 8 spots. Apply by Oct 24 with a 4-H portfolio, which is a resume and cover letter, and short answers.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "The page lists registration as Nov 1 to Jan 8, or until filled, with no year, for the Jan 22 to 23, 2027 retreat.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Sign up through Zsuite and upload the signed waiver.",
   "needs_work_permit": false,
   "url": "https://extension.usu.edu/utah4h/events/teen-winter-retreat",
   "apply_url": null,
@@ -107424,10 +107439,10 @@
    "https://extension.usu.edu/utah4h/events/teen-winter-retreat"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "Design Team applications are open Sept 1 to Oct 24 and let teens plan activities and teach workshops. Questions: Utah 4-H State Office, 435-797-4444.",
-  "verified_on_label": "Oct 18, 2026"
+  "notes": "Status is unconfirmed because the page does not say registration is live and Zsuite needs a log in, so it could not be checked on 2026-11-02. Design Team applications for grades 10 to 12 ran Sept 1 to Oct 24. Questions: Utah 4-H State Office, 435-797-4444.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "utah-4h-usu-extension",
@@ -110613,24 +110628,24 @@
   "pay_detail": "Stipend of $67 per day. You need a Social Security card to get it. Pages without one can still take part but get no daily stipend.",
   "season": "winter",
   "duration": "One week during the session. The 2027 session runs January through April.",
-  "status": "opens-soon",
-  "opens_iso": "2026-11-01",
-  "deadline_text": "Applications for the 2027 session open Nov 1, 2026. No closing date is posted.",
-  "deadline_iso": "2026-11-01",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Applications for the 2027 Page Program are open and close March 15, 2027.",
+  "deadline_iso": "2027-03-15",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Apply online when applications open on the Page Program page. Pick the weeks you can do with care. Senate contact: SenatePageProgram@leg.wa.gov, 360-786-7498. House contact: 360-786-7889.",
+  "how_to_apply": "Apply online at the Page Program application link. Pick the weeks you can do with care. You cannot apply if you have paged for either chamber before. Senate contact: SenatePageProgram@leg.wa.gov, 360-786-7498. House contact: 360-786-7889.",
   "needs_work_permit": true,
   "url": "https://leg.wa.gov/learn-and-participate/civic-education-programs/page-program/",
-  "apply_url": null,
+  "apply_url": "https://app.leg.wa.gov/pageapplication/",
   "sources_fetched": [
    "https://leg.wa.gov/learn-and-participate/civic-education-programs/page-program/",
    "https://leg.wa.gov/learn-and-participate/civic-education-programs/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-02",
   "priority": 1,
-  "notes": "The page lists no closing date, so apply soon after Nov 1. Check the Page Program page for the current application link. Paid work for people under 18 in Washington needs a parent and school authorization form (the employer holds the Minor Work Permit). See permit.html?state=wa for the exact permit and steps.",
-  "verified_on_label": "Oct 10, 2026"
+  "notes": "Paid work for people under 18 in Washington needs a parent and school authorization form (the employer holds the Minor Work Permit). See permit.html?state=wa for the exact permit and steps.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "grades": null,

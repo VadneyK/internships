@@ -20,7 +20,6 @@ ROOT_URL_ALLOW = (
     "eugene-uo-sail-student-academy",
     "florida-miami-dade-schools-summer-youth-internship-program",
     "kentucky-governors-scholars-program",
-    "tucson-ua-bio5-keys-research-internship",
     "uccs-pre-collegiate-program-colorado-springs",
     "black-girls-code",
     "camp-ignite-bc-firefighting-camp-for-young-women",  # one-page camp site, no deeper page exists
