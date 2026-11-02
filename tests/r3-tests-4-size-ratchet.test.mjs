@@ -65,7 +65,8 @@ const TABLE = {
   // 2026-10-26: three Inland Empire cards (Corona, Rancho Cucamonga) on top of PRs 98 to 101. PENDING PERSON APPROVAL. 509400 to 510000 (509961 measured).
   // 2026-11-02: 45 new SoCal cards (2,865 programs), stacked on PR 118. PENDING PERSON APPROVAL. 510000 to 518500.
   // 2026-11-02: 12 second-pass SoCal cards (2,877 programs), stacked on PR 125. PENDING PERSON APPROVAL. 518500 to 520500.
-  "data/entries-core.json": { ceiling: 520500, reason: "data file, 368201 bytes measured 2026-10-10" },
+  // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 520500 to 521000.
+  "data/entries-core.json": { ceiling: 521000, reason: "data file, 368201 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-detail.json ceiling 1731000 to 1772700.
   // 2026-10-13: four repointed links after the link check. data/entries-detail.json limit 1772700 to 1772900.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-detail.json limit 1772900 to 1823500.
@@ -107,7 +108,8 @@ const TABLE = {
   // 2026-11-02: SoCal sweep (PRs 114 to 118) re-read 240 cards on their official pages. PENDING PERSON APPROVAL. Limit covers the whole stack: 2091800 to 2099500.
   // 2026-11-02: 45 new SoCal cards (2,865 programs), stacked on PR 118. PENDING PERSON APPROVAL. 2099500 to 2131500.
   // 2026-11-02: 12 second-pass SoCal cards (2,877 programs), stacked on PR 125. PENDING PERSON APPROVAL. 2131500 to 2141500.
-  "data/entries-detail.json": { ceiling: 2141500, reason: "data file, 1521373 bytes measured 2026-10-10" },
+  // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 2141500 to 2144000.
+  "data/entries-detail.json": { ceiling: 2144000, reason: "data file, 1521373 bytes measured 2026-10-10" },
   "data/entries-home.json": { ceiling: 899400, reason: "data file, 817599 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-lite.json ceiling 2223100 to 2277600.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-lite.json limit 2277600 to 2341900.
@@ -146,7 +148,8 @@ const TABLE = {
   // 2026-11-02: SoCal sweep (PRs 114 to 118) re-read 240 cards on their official pages. PENDING PERSON APPROVAL. Limit covers the whole stack: 2675500 to 2680000.
   // 2026-11-02: 45 new SoCal cards (2,865 programs), stacked on PR 118. PENDING PERSON APPROVAL. 2680000 to 2722500.
   // 2026-11-02: 12 second-pass SoCal cards (2,877 programs), stacked on PR 125. PENDING PERSON APPROVAL. 2722500 to 2733500.
-  "data/entries-lite.json": { ceiling: 2733500, reason: "data file, 1937500 bytes measured 2026-10-10" },
+  // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 2733500 to 2735000.
+  "data/entries-lite.json": { ceiling: 2735000, reason: "data file, 1937500 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json ceiling 697700 to 716100.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json limit 716100 to 736500.
   // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json limit 736500 to 748900.
@@ -177,7 +180,8 @@ const TABLE = {
   // 2026-10-26: three Inland Empire cards (Corona, Rancho Cucamonga) on top of PRs 98 to 101. PENDING PERSON APPROVAL. 839100 to 839900 (839816 measured).
   // 2026-11-02: 45 new SoCal cards (2,865 programs), stacked on PR 118. PENDING PERSON APPROVAL. 839900 to 853500.
   // 2026-11-02: 12 second-pass SoCal cards (2,877 programs), stacked on PR 125. PENDING PERSON APPROVAL. 853500 to 856500.
-  "data/entries-stats.json": { ceiling: 856500, reason: "data file, 606782 bytes measured 2026-10-10" },
+  // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 856500 to 857000.
+  "data/entries-stats.json": { ceiling: 857000, reason: "data file, 606782 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries.json ceiling 4567200 to 4677300.
   // 2026-10-13: four repointed links after the link check. data/entries.json limit 4677300 to 4677700.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries.json limit 4677700 to 4809900.
@@ -221,7 +225,8 @@ const TABLE = {
   // 2026-11-02: SoCal sweep (PRs 114 to 118) re-read 240 cards on their official pages. PENDING PERSON APPROVAL. Limit covers the whole stack: 5512500 to 5529500.
   // 2026-11-02: 45 new SoCal cards (2,865 programs), stacked on PR 118. PENDING PERSON APPROVAL. 5529500 to 5616500.
   // 2026-11-02: 12 second-pass SoCal cards (2,877 programs), stacked on PR 125. PENDING PERSON APPROVAL. 5616500 to 5642500.
-  "data/entries.json": { ceiling: 5642500, reason: "data file, 3996617 bytes measured 2026-10-10" },
+  // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 5642500 to 5646000.
+  "data/entries.json": { ceiling: 5646000, reason: "data file, 3996617 bytes measured 2026-10-10" },
   "data/expiring-dates.json": { ceiling: 1700, reason: "data file, 1530 bytes measured 2026-10-10" },
   "data/gaps.json": { ceiling: 5400, reason: "data file, 4832 bytes measured 2026-10-10" },
   "data/interview.json": { ceiling: 12400, reason: "data file, 11207 bytes measured 2026-10-10" },
@@ -268,7 +273,8 @@ const TABLE = {
   "assets/js/common.js": { ceiling: 36400, reason: "script, 25681 bytes measured 2026-10-10" },
   // Raised from 58100 to 59300 on 2026-10-12 for ticket diet-1 (Where group files on the Programs page). 59217 bytes measured.
   // 2026-11-02: second-pass SoCal cards, stacked on PR 125. PENDING PERSON APPROVAL. 667300 to 668500.
-  "data/entries-map.json": { ceiling: 668500, reason: "data file for the Map page, 606587 bytes measured 2026-10-15 (PENDING PERSON APPROVAL)" },
+  // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 668500 to 669000.
+  "data/entries-map.json": { ceiling: 669000, reason: "data file for the Map page, 606587 bytes measured 2026-10-15 (PENDING PERSON APPROVAL)" },
   // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) data/geo-overrides.json limit 19700 (four San Francisco city strings).
   // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,700 programs) data/geo-overrides.json limit 19700 to 19800 (one South suburban Cook County string). PENDING PERSON APPROVAL.
   "data/geo-overrides.json": { ceiling: 19800, reason: "hand fixes for the Map page geocoder (tools/geo), 17704 bytes measured 2026-10-15" },

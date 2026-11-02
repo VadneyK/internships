@@ -220,7 +220,7 @@
   "min_age": null,
   "max_age": null,
   "grades": "11th grade (the site says each delegate is an 11th grade student during the 2026-27 school year)",
-  "who_can_apply": "Girls in 11th grade. A local American Legion Auxiliary Unit must pick and sponsor you. Each high school can send only one delegate. If no Unit sponsors your school, you can apply as a statewide alternate. No age rule is stated.",
+  "who_can_apply": "Girls and gender non-conforming students in 11th grade. A local American Legion Auxiliary Unit must pick and sponsor you. Each high school can send only one delegate. If no Unit sponsors your school, you can apply as a statewide alternate. No age rule is stated.",
   "paid_type": "unpaid",
   "pay_detail": "Cost not stated on the program pages. The site says there are opportunities for scholarship consideration, including the Samsung American Legion Scholarship.",
   "season": "summer",
@@ -241,10 +241,10 @@
    "https://www.cagirlsstate.org/about-california-girls-state"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Separate from the coed American Legion California Boys State (Boys & Girls State) program, which has its own card on this site. The FAQ says a student may apply to either American Legion CA Boys State or American Legion Auxiliary CA Girls State, but not both. Selection criteria, grade-school rules beyond the 11th grade note, and cost are not stated on the pages. The 2027 session will be the 84th. Adult staff must be at least 20 or out of high school for at least three years, so staff roles are not for teens.",
-  "verified_on_label": "Oct 16, 2026",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -13961,7 +13961,7 @@
   "grades": "Finished 11th grade, with at least one semester of high school left",
   "who_can_apply": "High school students who completed junior year and have a semester left. There is no application. Your school recommends you. A local American Legion Post interviews and sponsors you. California Girls State is a separate program with its own card.",
   "paid_type": "fee-based",
-  "pay_detail": "Registration fee listed as $550 per delegate on the Key Dates page (the page does not label the year). Ask your sponsoring Post who pays.",
+  "pay_detail": "Your sponsoring Post pays the fee to attend ($550 per delegate on the Key Dates page, year not labeled). That page also lists a $50 Pre-Session Package, due May 10 unless your Post pays it.",
   "season": "summer",
   "duration": "One week in June at Sacramento State. The site counts down to June 19, 2027.",
   "status": "closed-expect-reopen",
@@ -13982,10 +13982,10 @@
    "https://www.cagirlsstate.org/delegates-alternates"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Two separate programs. This one has been coed since 2023. California Girls State (American Legion Auxiliary, cagirlsstate.org) is its own program. It ran June 22 to 27, 2026 for 11th graders sponsored by a local Auxiliary Unit, one delegate per school. You can apply to only one. An old note about a 2020 article and a Sanger phone was out of date.",
-  "verified_on_label": "Oct 18, 2026",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -14023,10 +14023,10 @@
    "https://www.chp.ca.gov/siteassets/forms/programs--services/2026-explorer-information-packet.pdf"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Both official pages were read on 2026-10-07. The page covers the statewide competition and does not say how to join a post. The 2026 packet is the source for the 15 to 21 age rule, which it states for the competition. Whether a post near you has room, and any background check or GPA rule, must be asked of CHP. The CHP East Sacramento post page returns 403 to automated reads, so use the email or phone above. See also CHP Explorer Post (East Sacramento) for a local post. Ages differ by source: the 2026 competition packet says 15 to 21, while the CHP lists 15 to 20 for Explorers.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "ca-das-apprenticeship-info",
@@ -14065,10 +14065,10 @@
    "https://www.dir.ca.gov/dlse/ChildLaborLawPamphlet.pdf"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "The DAS homepage states no age rule. The 16 minimum comes from the 2013 DLSE child labor guide, which also says apprentices need a school-issued work permit. DAS's How to Become an Apprentice page says search results list each program's minimum age. DAS runs a youth apprenticeship grant and reports 5,776 registered pre-apprentices on its homepage.",
-  "verified_on_label": "Oct 7, 2026"
+  "notes": "The DAS homepage states no age rule. The 16 minimum comes from the 2013 DLSE child labor guide, which also says apprentices need a school-issued work permit. DAS's How to Become an Apprentice page says search results list each program's minimum age. DAS runs a youth apprenticeship grant and reports 6,884 registered pre-apprentices on its homepage.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "opens_iso": null,
@@ -14077,7 +14077,7 @@
   "max_age": 25,
   "grades": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-02",
   "needs_work_permit": false,
   "priority": 2,
   "id": "ca-edd-youth-employment-opportunity-program",
@@ -14107,7 +14107,7 @@
    "https://edd.ca.gov/en/jobs_and_training/Youth_Employment_Opportunity_Program/"
   ],
   "notes": "The page says clearly: this is not a job placement program. It is help and coaching toward school and work.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "opens_iso": null,
@@ -14116,7 +14116,7 @@
   "max_age": 24,
   "grades": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-02",
   "needs_work_permit": true,
   "priority": 2,
   "id": "ca-edd-youth-employment-services",
@@ -14133,7 +14133,7 @@
   "what_you_do": "Get youth job services. Go to your local America's Job Center of California. EDD lists mentoring, school help and skills training. It lists leadership development. Work experience can be paid or unpaid. It has internships, apprenticeships and job shadowing.",
   "who_can_apply": "Young people ages 14 to 24 who meet certain requirements. The EDD page does not list the requirements. It points to the Youth Employment Opportunity Program page and fact sheet for criteria.",
   "paid_type": "mixed",
-  "pay_detail": "The services are free (the page says Job Centers connect employers with job seekers at no cost). Work experience can be paid or unpaid; no pay rate is given.",
+  "pay_detail": "The page gives no cost for youth services. It says Job Centers connect employers with job seekers at no cost. Work experience can be paid or unpaid; no pay rate is given.",
   "season": "year-round",
   "duration": "Ongoing, set by each local center",
   "status": "rolling",
@@ -14147,7 +14147,7 @@
    "https://www.cde.ca.gov/ci/ct/we/workpermitsforstudents.asp"
   ],
   "notes": "The EDD page does not say the youth services are free. It says Job Centers connect employers with job seekers at no cost. Eligibility criteria are not on the EDD page; it links to the YEOP services and eligibility criteria. Teens under 18 who take a paid job in California need a work permit from their school (CDE page).",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "ca-state-parks-volunteers",
@@ -14183,10 +14183,10 @@
    "https://www.parks.ca.gov/volunteer"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "A criminal background check may be required. Park-level age minimums were not on the page, so ask the park. Student volunteer or intern roles are mentioned only as a general possibility at local parks. No Junior Ranger details were on this page.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "opens_iso": null,
@@ -14271,10 +14271,10 @@
    "https://www.dir.ca.gov/dlse/ChildLaborLawPamphlet.pdf"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "The 2013 state child labor guide says students must be 16 to enroll in WEE, with exceptions in the Education Code (14 and 15 year olds can get permits in some cases). The CDE page says Exploratory can start at 12. Programs exist only where the district chose to run one. Use the three current names above.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "cal-poly-pomona-next-gen-manufacturing-academy",
@@ -14354,10 +14354,10 @@
    "https://ucanr.edu/program/university-california-4-h-youth-development-program/join"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 3,
   "notes": "The old ucanr.edu/sites/ca4H address now goes to this page. Projects and fees depend on your county.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "opens_iso": null,
@@ -14366,7 +14366,7 @@
   "max_age": null,
   "grades": "4 to 12 per the program site; the state military page says grades 6 to 12",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-02",
   "needs_work_permit": false,
   "priority": 3,
   "id": "california-cadet-corps",
@@ -14400,7 +14400,7 @@
    "https://calguard.ca.gov/youth/"
   ],
   "notes": "Program pages did not include a school finder, so the best first step is to ask your school office or email the program. The program site says more than 7,000 students are in over 100 schools.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "opens_iso": null,
@@ -14409,7 +14409,7 @@
   "max_age": null,
   "grades": "Not stated on the program pages",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-02",
   "needs_work_permit": false,
   "priority": 3,
   "id": "california-fbla",
@@ -14441,7 +14441,7 @@
    "https://californiafbla.org/join/"
   ],
   "notes": "You join through a school chapter, so you need a business pathway or class at your school. If your school has no business program, the FAQ says starting one has to be started with school administration.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "california-ffa",
@@ -14480,10 +14480,10 @@
    "https://www.ffa.org/about/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 3,
   "notes": "Not every school has an FFA chapter. Ask your counselor or ag teacher. Age and grade limits and dues were not on the California or National FFA pages checked.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "california-partnership-academies",
@@ -14522,10 +14522,10 @@
    "https://www.cde.ca.gov/ci/gs/hs/cpagen.asp"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Read the CDE page on 2026-10-09. It confirms a three-year program for grades 10 to 12, structured as a school-within-a-school, with academics plus career technical education, business partnerships, mentoring and internships. It posts only school and district grant dates, not student application dates, and does not say whether students from other districts may transfer in. Academies are run by individual schools, so ask your counselor. Fremont Unified says some CTE courses sit inside Partnership Academies.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "california-science-center-community-teen-interns",
@@ -20721,10 +20721,10 @@
    "https://chpmadeformore.com/resources/explorer/eligibility/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-02",
   "priority": 3,
   "notes": "Read in a browser on 2026-10-19. The old Explorer post page on chp.ca.gov now loads blank. So the card links to the East Sacramento Area office page. It has an Explorer section and the advisor's email. The office is at 11336 Trade Center Drive, Rancho Cordova. The eligibility rules come from CHP's careers site (linked from chp.ca.gov). Ages differ: the eligibility page says 15 to 20 and the office page says 15 to 21, so ask the advisor. Meeting times are not posted. See also California Highway Patrol Explorer Program for the statewide competition.",
-  "verified_on_label": "Oct 19, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "grades": null,
@@ -25534,24 +25534,25 @@
   "pay_detail": "Free",
   "season": "fall",
   "duration": "Build time before the deadline",
-  "status": "open-now",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "The 2026 deadline for registering and submitting is October 26, 2026.",
-  "deadline_iso": "2026-10-26",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_text": "The 2026 deadline was October 26, 2026, and registration is closed. 2027 dates are not posted. In 2026, pre-registration opened Jan 1 and the challenge launched in May.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Register on the Student Registration page, then submit the app online.",
   "needs_work_permit": false,
   "url": "https://www.congressionalappchallenge.us/students/rules/",
   "apply_url": "https://www.congressionalappchallenge.us/students/student-registration/",
   "sources_fetched": [
    "https://www.congressionalappchallenge.us/",
-   "https://www.congressionalappchallenge.us/students/rules/"
+   "https://www.congressionalappchallenge.us/students/rules/",
+   "https://www.congressionalappchallenge.us/students/student-registration/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-21",
+  "verified_on": "2026-11-02",
   "priority": 1,
-  "notes": "Any language or platform is allowed, solo or teams up to four. Check the Participating Districts page on the site to confirm your district takes part.",
-  "verified_on_label": "Oct 21, 2026"
+  "notes": "Any language or platform is allowed, solo or teams up to four. Check the Participating Districts page on the site to confirm your district takes part. 2027 dates are not posted as of Nov 2, 2026, so the dates shown are from 2026.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "contra-costa-4-h-youth-development-program",
@@ -26085,10 +26086,10 @@
    "https://jacobs.ucsd.edu/cosmos/tuition"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-21",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "Competitive. Residential, so you live on campus for four weeks. Financial aid is reviewed separately from admission and needs a parent income document; it has a hard deadline. Program session dates are listed as TBA. Pick UC Davis as your campus on the application. COSMOS runs on several UC campuses (UC Davis, UC Irvine, UC San Diego and UC Santa Cruz); this card is the Davis campus. See the UC COSMOS site for the others: https://jacobs.ucsd.edu/cosmos. The dates page lists the application fee as both $48 and $46, so confirm the amount before paying.",
-  "verified_on_label": "Oct 21, 2026"
+  "notes": "Competitive. Residential, so you live on campus for four weeks. Financial aid is reviewed separately from admission and needs a parent income document; it has a hard deadline. Program session dates are listed as TBA. Pick UC Davis as your campus on the application. COSMOS runs on six UC campuses (UC Davis, UC Irvine, UCLA, UC Merced, UC San Diego and UC Santa Cruz); this card is the Davis campus. See the UC COSMOS site for the others: https://jacobs.ucsd.edu/cosmos. The dates page lists the application fee as both $48 and $46, so confirm the amount before paying.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "cosmos-uc-merced",
@@ -26111,28 +26112,30 @@
   "grades": "8 to 12",
   "who_can_apply": "California high school students completing grades 8 to 12. Only California high school students can apply. The page says a typical student has a GPA of 3.5 or higher. You apply to one COSMOS campus.",
   "paid_type": "fee-based",
-  "pay_detail": "$5,518 for the four-week program (2026), which covers housing, meals, field trips and activities. $46 application fee. Card payments add a 2.5% fee. Optional financial aid application.",
+  "pay_detail": "$5,793 for the four-week program (2027), which covers housing, meals, field trips and activities. The application fee is listed as both $48 and $46. Card payments add a 2.5% fee. Optional financial aid application.",
   "season": "summer",
-  "duration": "4 weeks, living on campus (July 5 to Aug 1 in 2026)",
-  "status": "closed-expect-reopen",
-  "opens_iso": null,
-  "deadline_text": "The UC Merced pages still show 2026 dates. Last cycle, the application opened Jan 7, 2026 at 8 a.m. and closed Feb 6, 2026. Financial aid forms had to be postmarked by Feb 7, 2026. Decisions came Mar 26, 2026.",
-  "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
+  "duration": "4 weeks, living on campus (July 5 to Aug 1 in 2026; 2027 dates not posted)",
+  "status": "opens-soon",
+  "opens_iso": "2027-01-06",
+  "deadline_text": "Application opens Jan 6, 2027 at 8 a.m. and closes Feb 5, 2027. Financial aid forms must be postmarked by Feb 6, 2027. Decisions come Mar 25, 2027.",
+  "deadline_iso": "2027-02-05",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Apply online by the deadline. You need teacher letters, a parent signature and the fee. If you get in, pay one third first. Pay the rest about a week later.",
   "needs_work_permit": false,
   "url": "https://cosmos.ucmerced.edu/apply-cosmos/dates-deadlines",
-  "apply_url": null,
+  "apply_url": "https://cosmos-ucop.ucdavis.edu/",
   "sources_fetched": [
    "https://cosmos.ucmerced.edu/",
    "https://cosmos.ucmerced.edu/apply-cosmos/fees-and-tuition",
-   "https://cosmos.ucmerced.edu/apply-cosmos/dates-deadlines"
+   "https://cosmos.ucmerced.edu/apply-cosmos/dates-deadlines",
+   "https://cosmos-ucop.ucdavis.edu/app/main",
+   "https://cosmos-ucop.ucdavis.edu/app/main/page/dates-deadlines"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-17",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "UC Merced first hosted COSMOS in summer 2026. Each campus takes about 160 to 200 students, so it is competitive. The financial aid deadline has no extensions. All money matters must go through a parent or guardian. COSMOS also runs at UC Davis, UC Irvine, UCLA, UC San Diego and UC Santa Cruz.",
-  "verified_on_label": "Oct 17, 2026"
+  "notes": "The 2027 dates and cost come from the statewide COSMOS site, which lists UC Merced. The UC Merced pages still show 2026. UC Merced first hosted COSMOS in summer 2026. Each campus takes about 160 to 200 students, so it is competitive. The financial aid deadline has no extensions. All money matters must go through a parent or guardian. COSMOS also runs at UC Davis, UC Irvine, UCLA, UC San Diego and UC Santa Cruz.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "grades": null,
@@ -27846,10 +27849,10 @@
    "https://www.deca.org/hs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 3,
   "notes": "DECA says it has about 317,600 high school members in 4,510 chapters. Not every school has a chapter. California-specific details were not on the page.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "opens_iso": null,
@@ -32857,8 +32860,8 @@
   "max_age": 20,
   "grades": null,
   "who_can_apply": "The site lists Posts for ages 14 to 20 (and Clubs for ages 10 to 14). Whether you must be a Scout was not stated. Find a unit through the Council Locator.",
-  "paid_type": "unpaid",
-  "pay_detail": "Unpaid. Fees are not stated on the site; ask the post.",
+  "paid_type": "fee-based",
+  "pay_detail": "No pay. It costs $50 a year to register. Some councils and posts charge a little more. Scholarships are available.",
   "season": "year-round",
   "duration": "Meets regularly",
   "status": "unconfirmed",
@@ -32876,10 +32879,10 @@
    "https://www.scouting.org/about/local-council-locator/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "Exploring.org was only readable in part; fees, Scouting membership rules and California posts were not listed. The page names Learning for Life Corporation in its copyright line. apply_url is the joinexploring.org home page, which has an Enter ZIP Code box for Exploring posts and clubs near you. On exploring.org, the Council Locator heading links to the contact page, and the scouting.org Local Council Locator finds a council, not a unit.",
-  "verified_on_label": "Oct 7, 2026"
+  "notes": "Exploring.org was only readable in part; Scouting membership rules and California posts were not listed. The page names Learning for Life Corporation in its copyright line. apply_url is the joinexploring.org home page, which has an Enter ZIP Code box for Exploring posts and clubs near you. On exploring.org, the Council Locator heading links to the contact page, and the scouting.org Local Council Locator finds a council, not a unit.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "facciotti-lab-hs-internships",
@@ -42251,10 +42254,10 @@
    "https://www.hosa.org/about/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 3,
   "notes": "HOSA reports over 200,000 members in 51 chartered associations. California chapter rules, dues and middle school eligibility were not on the page.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "hssv-student-volunteer",
@@ -45686,10 +45689,10 @@
    "https://www.deseret.com/education/2026/08/12/99-job-corps-centers-including-clearfields-to-stay-open-as-settlement-is-reached/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 3,
   "notes": "Residential, so you live on campus at 3100 Meadowview Rd, Sacramento. The Sacramento page lists the trades (building construction, carpentry, cement masonry, Certified Nurse Assistant) but not the age or income rules, which come from jobcorps.gov. A federal settlement reported Aug 12, 2026 kept all 99 centers open, but that article does not name Sacramento, so confirm the center is enrolling.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "job-corps-texas-gary-san-marcos",
@@ -45936,10 +45939,10 @@
    "https://janorcal.org/ja-launchpad/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "JA reached 27,947 students in 128 schools in 2025-26, mostly through schools. JA Launchpad (Silicon Valley) is listed as opening early 2027. Job shadow and internship details were not on the pages, so ask JA.",
-  "verified_on_label": "Oct 19, 2026"
+  "notes": "JA reached 27,947 students in 128 schools in 2025-26, mostly through schools. JA Launchpad (Silicon Valley) is listed as opening early 2027. Internship details were not on the pages, so ask JA.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "kaiser-launch-high-school-program",
@@ -47229,10 +47232,10 @@
    "https://www.keyclub.org/why-key-club/how-it-works/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Dues and local rules vary by club; dues amount not stated on the pages. Key Club International phone: 800-549-2647.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "keystone-job-corps-center",
@@ -52074,10 +52077,10 @@
    "https://k12education.lbl.gov/programs/high-school/experiences-in-research/faq"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "The page still says 'at least 16 by June 16, 2025', so check the age date when it reopens. Some 2026 projects were hybrid or virtual. Under-18 interns need a work permit.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "lbnl-sea-bilingual-stem-camp",
@@ -52238,10 +52241,10 @@
    "https://www.csus.edu/experience/alumni-association/programs/summer-programs.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "The application link and 2027 dates are not on the page. The stipend amount is not stated. LegiSchool also runs Town Hall meetings in downtown Sacramento. It also runs video and essay contests for California high school students.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "lewisburg-bucknell-academy-summer-experience-base",
@@ -71690,10 +71693,10 @@
    "https://www.nps.gov/subjects/youthprograms/ycc.htm"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "Applications are closed right now. Each park runs its own program, so check whether a park near you takes part. Contact the national office through the link on the NPS page with general questions.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "nyc-ace-mentor-program-greater-new-york",
@@ -86721,10 +86724,10 @@
    "https://www.redcross.org/take-a-class/classes/babysitting-basics-online/a6RVx000005gJEf.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The old take-a-class/babysitting-training link no longer works, so the page address was updated. Red Cross says these courses do not qualify you for state-licensed child care. Casual babysitting in a private home does not need a work permit per the California child labor guide (2013 edition).",
-  "verified_on_label": "Oct 19, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "red-cross-lifeguard-wsi",
@@ -86763,10 +86766,10 @@
    "https://www.redcross.org/take-a-class/swimming/water-safety/water-safety-instructor-certification"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Final test is a 50-question exam with an 80% pass mark. Certificate lasts 2 years. Before the update this file said Water Safety Instructor needs age 16; the Red Cross page says 15. For lifeguard jobs, check each employer's page for pay and work permit rules.",
-  "verified_on_label": "Oct 19, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "red-river-zoo-wildlife-league-teens",
@@ -87009,10 +87012,10 @@
    "https://www.societyforscience.org/isef/faq/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Projects can include no more than 12 months of continuous research. The 2027 ISEF is in California, which can lower travel costs for California finalists. The ISEF site says students from nearly every state in the U.S. and more than 60 countries, regions, and territories compete at affiliated fairs.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "regeneron-sts",
@@ -98364,10 +98367,10 @@
    "https://www.sf.gov/opportunities-for-youth-ages-14-24"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 3,
   "notes": "Not a job or internship, but a real civic step. Your registration becomes active when you turn 18. Citizenship is required.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "sf-project-pull",
@@ -99064,13 +99067,14 @@
   "apply_url": null,
   "sources_fetched": [
    "https://www.skillsusa.org/about/",
-   "https://www.skillsusa.org/students/"
+   "https://www.skillsusa.org/students/",
+   "https://www.skillsusa.org/join/how-to-join/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 3,
   "notes": "Most useful if your school has a trades or tech CTE pathway.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "regions": [
@@ -107445,7 +107449,7 @@
   "deadline_text": "Fall 2026 enrollment is open now, according to the site.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "Enroll from the courses page, ask your school counselor about school-paid seats, or call (408) 450-4962.",
+  "how_to_apply": "Enroll from the courses page, ask your school counselor about school-paid seats, or use the live chat on the site. The site says its phones are down as of Nov 2, 2026.",
   "needs_work_permit": false,
   "url": "https://www.ucscout.org/",
   "apply_url": null,
@@ -107453,10 +107457,10 @@
    "https://www.ucscout.org/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 3,
   "notes": "This is coursework, not a job. Included because many teens use it to free up schedule time for jobs and internships.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "uccs-pre-collegiate-program-colorado-springs",
@@ -108948,12 +108952,12 @@
   "pay_detail": "$35,360 per year, prorated",
   "season": "school-year",
   "duration": "Spring 2027 session: Jan 24 to June 4, 2027. Summer 2027 dates to be announced.",
-  "status": "open-now",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Padilla's office: opens Oct 13, 2026, closes Oct 26, 2026 for the Spring 2027 session.",
-  "deadline_iso": "2026-10-26",
-  "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Send a cover letter, resume, recent high school transcript and two recommendation letters to Senator Padilla's office. The page lists Page_Program@padilla.senate.gov as the contact for questions and does not say where to submit, so confirm the submission address with the office. Other Senate offices have their own rules; the central Page Program does not take applications.",
+  "deadline_text": "Padilla's office took Spring 2027 applications from Oct 13, 2026 to Oct 26, 2026. That window has closed. Summer 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply through the link on Senator Padilla's page when the next window opens. You need a cover letter, resume, recent high school transcript and two recommendation letters. Questions go to Page_Program@padilla.senate.gov. Other Senate offices have their own rules. The central Page Program does not take applications.",
   "needs_work_permit": null,
   "url": "https://www.padilla.senate.gov/senate-page-program/",
   "apply_url": null,
@@ -108962,10 +108966,10 @@
    "https://pageprogram.senate.gov/apply/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-21",
+  "verified_on": "2026-11-02",
   "priority": 1,
-  "notes": "Pages pay their own travel to and from Washington, DC. The job is in DC, so a California work permit likely does not apply; ask the office. Moving to DC for a semester is a big step for a family.",
-  "verified_on_label": "Oct 21, 2026"
+  "notes": "Pages pay their own travel to and from Washington, DC. The job is in DC, so a California work permit likely does not apply; ask the office. Moving to DC for a semester is a big step for a family. The next dates are not posted as of Nov 2, 2026, so the dates shown are from the last window.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "us-senate-youth-program",
@@ -108992,7 +108996,7 @@
   "opens_iso": null,
   "deadline_text": "California's deadline for the 2027 program is October 7, 2026. That date has passed. The page does not give a date for the next cycle.",
   "deadline_iso": null,
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Ask your principal or counselor for the application, or email the California coordinator at ussyp@cde.ca.gov (California Department of Education, Sacramento).",
   "needs_work_permit": false,
   "url": "https://ussenateyouth.org/selection_process_administrators",
@@ -109003,10 +109007,10 @@
    "https://ussenateyouth.org/selection_process_qualify/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "Very competitive. Clubs, debate, Model UN, jobs and self-made groups do not count as qualifying offices. The CDE page was blocked by a bot check, so the coordinator name and contact are from the USSYP site only. If you are a junior now, plan for next fall.",
-  "verified_on_label": "Oct 7, 2026",
+  "notes": "Very competitive. Clubs, debate, Model UN, jobs and self-made groups do not count as qualifying offices. The CDE page was blocked by a bot check, so the coordinator name and contact are from the USSYP site only. If you are a junior now, plan for next fall. The next dates are not posted as of Nov 2, 2026, so the date shown is from the last cycle.",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -116013,29 +116017,30 @@
   "min_age": null,
   "max_age": null,
   "grades": "9 to 12",
-  "who_can_apply": "High school students in grades 9 to 12 from anywhere in California. Join a local delegation. Cost and sign-up steps are not posted on either page.",
+  "who_can_apply": "Teens in grades 9 to 12 from anywhere in California. Join a local group. Silicon Valley groups list ages 14 to 18.",
   "paid_type": "fee-based",
-  "pay_detail": "The fee is not posted on either program page; ask your local YMCA about cost and scholarships",
+  "pay_detail": "$1,500 for the 2026-27 YMCA of Silicon Valley delegations. Other areas do not post a fee; ask your local YMCA about cost and scholarships.",
   "season": "school-year",
   "duration": "Weekly meetings plus conferences in November and February",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Sign-up dates are not stated on the page. A conference is planned for November, so ask now.",
+  "deadline_text": "Sign-up dates are not stated on the page. Silicon Valley delegations run from about Sept 2026 to March 2027. A conference is planned for November, so ask now.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Two ways to reach the program. Southern California: contact the program director at (626) 604-4210 or use the inquiry form on the YMCA of Orange County site. Silicon Valley area: click 'Sign up for more information' on the YMCA of Silicon Valley Leadership Development page, which opens the YMCA sign-up form. Neither page describes the application steps.",
+  "how_to_apply": "There are two ways to reach the program. Southern California: call the director at (626) 604-4210 or use the form on the YMCA of Orange County site. Silicon Valley area: click 'Register Today' on the YMCA of Silicon Valley Leadership Development page. Or use the interest form linked here. Neither page lists the steps to apply.",
   "needs_work_permit": false,
   "url": "https://ymcaoc.org/mlc/",
   "apply_url": "https://forms.ymcasv.org/view.php?id=76792",
   "sources_fetched": [
    "https://ymcaoc.org/mlc/",
-   "https://www.ymcasv.org/education-enrichment/leadership-development"
+   "https://www.ymcasv.org/education-enrichment/leadership-development",
+   "https://ymap.ymcasv.org/PersonifyEbusiness/Program-Search/WL/Y/AUTO/Y/KW/government"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Over 1,300 teens in more than 60 California delegations. The YMCA of Orange County page (Southern California) lists no Northern California contact. The YMCA of Silicon Valley lists the same statewide program and links a sign-up form for the Silicon Valley area. Ask the director which delegation serves your area, and ask about cost and scholarships. The YMCA of Silicon Valley Leadership Development page also lists other teen groups and a Model UN program for middle school students; they are not part of this entry.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "yolo-4h",

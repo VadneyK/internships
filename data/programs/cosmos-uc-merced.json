@@ -19,25 +19,27 @@
   "grades": "8 to 12",
   "who_can_apply": "California high school students completing grades 8 to 12. Only California high school students can apply. The page says a typical student has a GPA of 3.5 or higher. You apply to one COSMOS campus.",
   "paid_type": "fee-based",
-  "pay_detail": "$5,518 for the four-week program (2026), which covers housing, meals, field trips and activities. $46 application fee. Card payments add a 2.5% fee. Optional financial aid application.",
+  "pay_detail": "$5,793 for the four-week program (2027), which covers housing, meals, field trips and activities. The application fee is listed as both $48 and $46. Card payments add a 2.5% fee. Optional financial aid application.",
   "season": "summer",
-  "duration": "4 weeks, living on campus (July 5 to Aug 1 in 2026)",
-  "status": "closed-expect-reopen",
-  "opens_iso": null,
-  "deadline_text": "The UC Merced pages still show 2026 dates. Last cycle, the application opened Jan 7, 2026 at 8 a.m. and closed Feb 6, 2026. Financial aid forms had to be postmarked by Feb 7, 2026. Decisions came Mar 26, 2026.",
-  "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
+  "duration": "4 weeks, living on campus (July 5 to Aug 1 in 2026; 2027 dates not posted)",
+  "status": "opens-soon",
+  "opens_iso": "2027-01-06",
+  "deadline_text": "Application opens Jan 6, 2027 at 8 a.m. and closes Feb 5, 2027. Financial aid forms must be postmarked by Feb 6, 2027. Decisions come Mar 25, 2027.",
+  "deadline_iso": "2027-02-05",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Apply online by the deadline. You need teacher letters, a parent signature and the fee. If you get in, pay one third first. Pay the rest about a week later.",
   "needs_work_permit": false,
   "url": "https://cosmos.ucmerced.edu/apply-cosmos/dates-deadlines",
-  "apply_url": null,
+  "apply_url": "https://cosmos-ucop.ucdavis.edu/",
   "sources_fetched": [
     "https://cosmos.ucmerced.edu/",
     "https://cosmos.ucmerced.edu/apply-cosmos/fees-and-tuition",
-    "https://cosmos.ucmerced.edu/apply-cosmos/dates-deadlines"
+    "https://cosmos.ucmerced.edu/apply-cosmos/dates-deadlines",
+    "https://cosmos-ucop.ucdavis.edu/app/main",
+    "https://cosmos-ucop.ucdavis.edu/app/main/page/dates-deadlines"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-17",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "UC Merced first hosted COSMOS in summer 2026. Each campus takes about 160 to 200 students, so it is competitive. The financial aid deadline has no extensions. All money matters must go through a parent or guardian. COSMOS also runs at UC Davis, UC Irvine, UCLA, UC San Diego and UC Santa Cruz."
+  "notes": "The 2027 dates and cost come from the statewide COSMOS site, which lists UC Merced. The UC Merced pages still show 2026. UC Merced first hosted COSMOS in summer 2026. Each campus takes about 160 to 200 students, so it is competitive. The financial aid deadline has no extensions. All money matters must go through a parent or guardian. COSMOS also runs at UC Davis, UC Irvine, UCLA, UC San Diego and UC Santa Cruz."
 }
