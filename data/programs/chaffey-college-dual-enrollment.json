@@ -1,0 +1,41 @@
+{
+  "id": "chaffey-college-dual-enrollment",
+  "name": "Chaffey College Dual Enrollment",
+  "org": "Chaffey College",
+  "regions": [
+    "inland-empire"
+  ],
+  "city": "Rancho Cucamonga, Chino and Fontana, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take tuition-free college classes taught by Chaffey teachers while you are in high school.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Incoming 9 to 12",
+  "who_can_apply": "Any incoming 9th to 12th grader can take part. If you are under 18, a parent permission form must be on file. Part-time students can take up to 11 units. To take more, you must appeal.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Tuition-free. Books and materials are covered only for in-district students in a High School Partnership section. Other students pay for them.",
+  "season": "year-round",
+  "duration": "By term",
+  "status": "unconfirmed",
+  "deadline_text": "No term dates are posted on the dual enrollment pages as of Nov 2, 2026. Ask your counselor or the college about the next term.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Turn in an approved High School Partnership or HSPFLEX form for the term. Apply to Chaffey online with your own email. Send the parent form if you are under 18. Then do the student orientation.",
+  "needs_work_permit": false,
+  "url": "https://www.chaffey.edu/dual-enrollment",
+  "apply_url": "https://www.opencccapply.net/gateway/apply?cccMisCode=921",
+  "sources_fetched": [
+    "https://www.chaffey.edu/dual-enrollment",
+    "https://www.chaffey.edu/dual-enrollment/de-faq.php",
+    "https://www.chaffey.edu/dual-enrollment/de-apply.php",
+    "https://www.chaffey.edu/dual-enrollment/how2apply.php",
+    "https://www.chaffey.edu/dual-enrollment/whats-new.php"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "An approved form does not promise you a spot. You do not need a Social Security number to apply. Questions: 909-652-6000. A part-time bus pass through Go Smart costs $8 a semester."
+}
