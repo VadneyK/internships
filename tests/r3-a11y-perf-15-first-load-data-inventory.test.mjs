@@ -53,7 +53,8 @@ export const TABLE = {
   // 2026-11-02: 45 new SoCal cards (2,865 programs), stacked on PR 118. PENDING PERSON APPROVAL. 2680000 to 2722500.
   // 2026-11-02: 12 second-pass SoCal cards (2,877 programs), stacked on PR 125. PENDING PERSON APPROVAL. 2722500 to 2733500.
   // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 2733500 to 2735000.
-  "find.html": { paths: ["data/entries-lite.json"], ceiling: 2735000, reason: "Find filters every program, so it needs the whole lite file" },
+  // 2026-11-02: San Francisco re-reads, stacked on PR 135. PENDING PERSON APPROVAL. 2735000 to 2736500.
+  "find.html": { paths: ["data/entries-lite.json"], ceiling: 2736500, reason: "Find filters every program, so it needs the whole lite file" },
   // 2026-10-15: the Map page (754,977 bytes measured; about 151 KB gzipped). It counts every program by city, so it reads the map projection
   // (name, org and the keys the age, pay and open filters test) and the city points. PENDING PERSON APPROVAL for this weight on phones.
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) map.html limit 760000 to 763100. PENDING PERSON APPROVAL.

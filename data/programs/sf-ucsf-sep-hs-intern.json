@@ -19,12 +19,12 @@
   "paid_type": "stipend",
   "pay_detail": "$4,500 paid after completing the program (35 hours a week for 8 weeks)",
   "season": "summer",
-  "duration": "8 weeks",
-  "status": "closed-expect-reopen",
-  "opens_iso": null,
-  "deadline_text": "The 2026 application is closed. Last cycle's deadline was Sunday, Feb 8 (the 2026 application). 2027 dates are not posted; fill in the page's interest form to be notified.",
-  "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
+  "duration": "8 weeks: June 7 to July 30, 2027",
+  "status": "opens-soon",
+  "opens_iso": "2027-01-15",
+  "deadline_text": "2027 applications open Jan 15, 2027 and are due Feb 15, 2027 per the page's timeline. The page's FAQ still says Feb 8, so apply by Feb 8 to be safe.",
+  "deadline_iso": "2027-02-15",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Fill in the interest form to hear when the application opens, then submit the online application. About 50 students are interviewed for 25 spots; results come by email in April.",
   "needs_work_permit": true,
   "url": "https://sep.ucsf.edu/programs/high-school-students/intern-program/",
@@ -34,7 +34,7 @@
     "https://sep.ucsf.edu/programs/high-school-students/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
-  "notes": "The SEP high school programs page says 2025-26 is the final year of a program and that there will be no summer internship for 2026; it is not clear which program that means, while the intern page invites 2027 interest. Confirm with SEP at 415-364-8077."
+  "notes": "The last-year notice on the SEP page is for Teen Wellness Connection, not this job. Questions: SandraPatricia.Arriaga@ucsf.edu or (415) 502-6324."
 }

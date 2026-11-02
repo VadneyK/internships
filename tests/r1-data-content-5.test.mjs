@@ -50,7 +50,7 @@ test(`${ID}: how_to_apply tells teens to email before using the Google Form`, ()
 
 test(`${ID}: verified_on is the day the official page was read`, () => {
   assert.equal(card.verified, "fetched");
-  assert.equal(card.verified_on, "2026-10-09");
+  assert.ok(card.verified_on >= "2026-10-09", "re-read on or after the ticket date");
 });
 
 test(`${ID}: generated entries.json matches the program file status and dates`, () => {
