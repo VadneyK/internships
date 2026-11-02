@@ -15620,6 +15620,48 @@
   "verified_on_label": "Oct 18, 2026"
  },
  {
+  "id": "chaffey-college-dual-enrollment",
+  "name": "Chaffey College Dual Enrollment",
+  "org": "Chaffey College",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "Rancho Cucamonga, Chino and Fontana, CA",
+  "type": "school-pathway",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Take tuition-free college classes taught by Chaffey teachers while you are in high school.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Incoming 9 to 12",
+  "who_can_apply": "Any incoming 9th to 12th grader can take part. If you are under 18, a parent permission form must be on file. Part-time students can take up to 11 units. To take more, you must appeal.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Tuition-free. Books and materials are covered only for in-district students in a High School Partnership section. Other students pay for them.",
+  "season": "year-round",
+  "duration": "By term",
+  "status": "unconfirmed",
+  "deadline_text": "No term dates are posted on the dual enrollment pages as of Nov 2, 2026. Ask your counselor or the college about the next term.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Turn in an approved High School Partnership or HSPFLEX form for the term. Apply to Chaffey online with your own email. Send the parent form if you are under 18. Then do the student orientation.",
+  "needs_work_permit": false,
+  "url": "https://www.chaffey.edu/dual-enrollment",
+  "apply_url": "https://www.opencccapply.net/gateway/apply?cccMisCode=921",
+  "sources_fetched": [
+   "https://www.chaffey.edu/dual-enrollment",
+   "https://www.chaffey.edu/dual-enrollment/de-faq.php",
+   "https://www.chaffey.edu/dual-enrollment/de-apply.php",
+   "https://www.chaffey.edu/dual-enrollment/how2apply.php",
+   "https://www.chaffey.edu/dual-enrollment/whats-new.php"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "An approved form does not promise you a spot. You do not need a Social Security number to apply. Questions: 909-652-6000. A part-time bus pass through Go Smart costs $8 a semester.",
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
   "id": "champaign-4h-memorial-camp-junior-counselor",
   "grades": null,
   "min_age": 16,
@@ -22177,6 +22219,46 @@
   "priority": 2,
   "notes": "Only at the three host schools. Grant Union students can earn college credit through a Sacramento State partnership (ACE program). Pay rate and hours per week are not posted. Paid job for a minor, so a work permit is likely needed.",
   "verified_on_label": "Oct 7, 2026"
+ },
+ {
+  "id": "coachella-youth-advisory-commission",
+  "name": "Coachella Youth Advisory Commission",
+  "org": "City of Coachella",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "Coachella, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Advise the City Council on issues that matter to young people. You look at what youth need in school, fun and culture, and help link them to city resources.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must live in Coachella and be in high school. You can only serve on one city commission at a time.",
+  "paid_type": "not-stated",
+  "pay_detail": "The program page does not list pay.",
+  "season": "school-year",
+  "duration": "One year, August to June. Ten seats.",
+  "status": "unconfirmed",
+  "deadline_text": "No dates for the 2026-27 term are posted as of Nov 2, 2026. The newest notice on the page is for one open seat, dated Nov 4, 2025.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the commission form on the city page, in English or Spanish. The City Council picks the members. Call the City Clerk at 760-398-3502 to ask if a seat is open.",
+  "needs_work_permit": null,
+  "url": "https://www.coachella.org/city-government/commissions-and-committees/youth-commission",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.coachella.org/city-government/commissions-and-committees/youth-commission"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "As of Nov 2, 2026, the member list on the page still shows terms ending in June 2026, so call first. Three unexcused absences in a row can cost you your seat.",
+  "verified_on_label": "Nov 2, 2026",
+  "limited": true
  },
  {
   "id": "coastline-college-dual-enrollment",
@@ -88329,6 +88411,47 @@
   "verified_on_label": "Nov 2, 2026"
  },
  {
+  "id": "riverside-youth-council",
+  "name": "Riverside Youth Council",
+  "org": "City of Riverside Parks, Recreation and Community Services",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "Riverside, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Join a teen leadership group the city started in 2004. You speak up on policies that affect youth and help pick the city's 25 Most Remarkable Teens.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "The city page does not list all the rules. A 2019 city news release says members come from Riverside Unified and Alvord Unified schools. Ask the city before you apply.",
+  "paid_type": "not-stated",
+  "pay_detail": "The program page does not list pay.",
+  "season": "school-year",
+  "duration": "School year, starting in August. Meeting times are not listed.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The city takes forms only from February 1 through May 1. Membership starts in August of the next school year. The 2027 form is not posted as of Nov 2, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "This group has its own form, not the regular city board form. Call the City Clerk at 951-826-5557 or Parks and Recreation at 951-826-2272 and ask for it.",
+  "needs_work_permit": null,
+  "url": "https://riversideca.gov/cityclerk/boards-commissions",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://riversideca.gov/cityclerk/boards-commissions",
+   "https://riversideca.gov/press/city-riverside-accepting-nomination-2026-%E2%80%9Cmost-remarkable-teens%E2%80%9D",
+   "https://www.riversideca.gov/press/riverside-youth-council-conduct-mock-city-council-meeting-dec-11"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "The council gets help from the Johnny Martin Sotelo Youth Opportunity Center and Parks and Recreation. The city has no page just for this group, so call with your questions.",
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
   "id": "roanoke-science-museum-of-western-virginia-volunteer",
   "fields": [
    "science",
@@ -90423,6 +90546,47 @@
   "priority": 2,
   "notes": "Closed now. The page lists a July 30, 2026 deadline and a June 1, 2027 opening for the next cycle. Non-graduating volunteers who finish 100 hours can return the next school year.",
   "verified_on_label": "Nov 2, 2026"
+ },
+ {
+  "id": "san-bernardino-county-friday-night-live-youth-council",
+  "name": "San Bernardino County Youth Council (Friday Night Live)",
+  "org": "San Bernardino County Department of Public Health",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "San Bernardino County, CA",
+  "type": "leadership",
+  "fields": [
+   "health",
+   "social-impact"
+  ],
+  "what_you_do": "Speak up for teens across the county. You plan events, talk with local leaders and help other teens make healthy choices and grow as leaders.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Incoming 8 to 12",
+  "who_can_apply": "You must be an incoming 8th to 12th grader. You must live in San Bernardino County or go to a school in one of its districts. You also need a parent to say yes.",
+  "paid_type": "not-stated",
+  "pay_detail": "The application packet does not list pay. You pay for your own travel when needed.",
+  "season": "school-year",
+  "duration": "Full year. Two meetings a month, at least one hour each, in person and online.",
+  "status": "unconfirmed",
+  "deadline_text": "The 2026-27 packet says the form is due by a specific date, but it gives no date. No date is posted as of Nov 2, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Turn in the form, a letter of recommendation, references, parent consent and the signed agreement. Email them to allfnl@dph.sbcounty.gov or bring them in. Ask first if seats are open.",
+  "needs_work_permit": null,
+  "url": "https://dph.sbcounty.gov/wp-content/uploads/sites/7/FNL/FridayNightLive/SBCYC-Application-packet.pdf",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://dph.sbcounty.gov/wp-content/uploads/sites/7/FNL/FridayNightLive/SBCYC-Application-packet.pdf",
+   "https://dph.sbcounty.gov/programs/health-edu/friday-night-live/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "You can miss no more than 3 required meetings. You must go to at least 5 meetings in person and join at least 2 community events. You also agree to live free of alcohol and drugs and to be in photos and video. Friday Night Live office: 909-387-9146.",
+  "verified_on_label": "Nov 2, 2026",
+  "limited": true
  },
  {
   "id": "san-bernardino-county-library-teen-leadership-program",
@@ -115876,6 +116040,47 @@
   "priority": 2,
   "notes": "YouthBeat's own page does not state exact ages; 16 to 21 comes from the City of Oakland's list. Address is a PO box in Oakland.",
   "verified_on_label": "Oct 7, 2026"
+ },
+ {
+  "id": "yucca-valley-youth-commission",
+  "name": "Yucca Valley Youth Commission",
+  "org": "Town of Yucca Valley",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "Yucca Valley, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Plan teen events, help at Town programs and share ideas for youth services. You report to a Town commission. You also give a year-end report to the Town Council.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "7 to 12",
+  "who_can_apply": "You must be in grades 7 to 12. The Town picks a small group each year and tries to include a mix of schools and grades.",
+  "paid_type": "not-stated",
+  "pay_detail": "The program page does not list pay.",
+  "season": "school-year",
+  "duration": "School year. One meeting a month, plus some workshops. Not active in summer.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications for 2026-27 were due Sept. 2, per a Town news release dated Aug 12, 2026. Dates for 2027-28 are not posted yet.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online through the Town page when the next round opens. As of Nov 2, 2026, the page has no open form. You can call or email now to ask.",
+  "needs_work_permit": null,
+  "url": "https://www.yucca-valley.org/our-town/commissions-and-committees/youth-commission",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.yucca-valley.org/our-town/commissions-and-committees/youth-commission",
+   "https://www.yucca-valley.org/our-town/town-news/town-news-releases",
+   "https://myemail.constantcontact.com/Youth-Commission-Recruiting-the-Next-Generation-of--Community-Leaders.html?soid=1102009602563&aid=_1Pk_xvZgXU"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "Past members can be picked again. To ask a question, call 760-369-7212 or email childerbrand@yucca-valley.org.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "ywca-elgin-youth-leadership-scholarship",

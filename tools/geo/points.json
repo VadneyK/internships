@@ -358,6 +358,16 @@
    ]
   },
   {
+   "key": "Coachella, CA",
+   "state": "CA",
+   "lat": 33.6901,
+   "lon": -116.1444,
+   "precision": "city",
+   "ids": [
+    "coachella-youth-advisory-commission"
+   ]
+  },
+  {
    "key": "Colton, CA",
    "state": "CA",
    "lat": 34.0491,
@@ -1428,6 +1438,7 @@
     "riverside-parks-rec-volunteen-internship-vip",
     "riverside-police-youth-court-volunteers",
     "riverside-public-library-volunteer-14-plus",
+    "riverside-youth-council",
     "ucr-bourns-ai-robotics-summer-camp",
     "ucr-stem-summer-camp-wildfire-science",
     "ucr-stride-stem-cell-research-summer",
@@ -1500,6 +1511,7 @@
    "lon": -116.1816,
    "precision": "county",
    "ids": [
+    "san-bernardino-county-friday-night-live-youth-council",
     "san-bernardino-county-library-teen-leadership-program",
     "san-bernardino-county-sheriff-explorers",
     "san-bernardino-county-spark-syep",
@@ -1984,6 +1996,16 @@
    "precision": "city",
    "ids": [
     "yorba-linda-library-teen-advisory-board"
+   ]
+  },
+  {
+   "key": "Yucca Valley, CA",
+   "state": "CA",
+   "lat": 34.1233,
+   "lon": -116.4216,
+   "precision": "city",
+   "ids": [
+    "yucca-valley-youth-commission"
    ]
   },
   {
@@ -7372,6 +7394,7 @@
    "carilion-summer-of-service-youth-volunteers",
    "central-oregon-go-lead-winter-program",
    "central-oregon-youth-conservation-corps",
+   "chaffey-college-dual-enrollment",
    "chicago-uchicago-researchstart",
    "cincinnati-playhouse-summer-performance-academies",
    "cincinnati-uc-health-teen-volunteers",
