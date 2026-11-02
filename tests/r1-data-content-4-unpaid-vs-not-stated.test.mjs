@@ -67,12 +67,12 @@ test("no card with paid_type unpaid says pay is not stated, mentioned or listed"
   );
 });
 
-test("the seven cards from this ticket now say not-stated", () => {
+// 2026-11-02: la-county-fire-explorer-program left this list. The 2026 recruitment slides show a fee and a uniform cost, so it is fee-based.
+test("the six cards from this ticket still say not-stated", () => {
   const ids = [
     "chicago-history-museum-metro-history-day",
     "cincinnati-uc-health-career-journeys",
     "elgin-teen-life-police-and-library",
-    "la-county-fire-explorer-program",
     "long-beach-junior-lifeguards-cadet-program",
     "rfu-virtual-mentor-program",
     "gwinnett-da-junior-district-attorney-mentorship",
