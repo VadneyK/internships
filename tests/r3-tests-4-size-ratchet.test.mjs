@@ -226,7 +226,8 @@ const TABLE = {
   // 2026-11-02: 45 new SoCal cards (2,865 programs), stacked on PR 118. PENDING PERSON APPROVAL. 5529500 to 5616500.
   // 2026-11-02: 12 second-pass SoCal cards (2,877 programs), stacked on PR 125. PENDING PERSON APPROVAL. 5616500 to 5642500.
   // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 5642500 to 5646000.
-  "data/entries.json": { ceiling: 5646000, reason: "data file, 3996617 bytes measured 2026-10-10" },
+  // 2026-11-02: East Bay re-reads, stacked on PR 132. PENDING PERSON APPROVAL. 5646000 to 5652000.
+  "data/entries.json": { ceiling: 5652000, reason: "data file, 3996617 bytes measured 2026-10-10" },
   "data/expiring-dates.json": { ceiling: 1700, reason: "data file, 1530 bytes measured 2026-10-10" },
   "data/gaps.json": { ceiling: 5400, reason: "data file, 4832 bytes measured 2026-10-10" },
   "data/interview.json": { ceiling: 12400, reason: "data file, 11207 bytes measured 2026-10-10" },
