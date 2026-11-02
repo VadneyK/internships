@@ -436,7 +436,8 @@ const BUDGET = {
   // 2026-11-02: 45 new SoCal cards (2,865 programs), stacked on PR 118. PENDING PERSON APPROVAL. 1507000, 251000 to 1562500, 259500.
   // 2026-11-02: 12 second-pass SoCal cards (2,877 programs), stacked on PR 125. PENDING PERSON APPROVAL. 1562500, 259500 to 1577000, 261000.
   // 2026-11-02: same second-pass raise, gzip 261000 to 262500. PENDING PERSON APPROVAL.
-  "?at=city:san-francisco": { raw: 1577000, gzip: 262500, label: "a Bay Area city" },
+  // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 1577000, 262500 to 1578500, 263000.
+  "?at=city:san-francisco": { raw: 1578500, gzip: 263000, label: "a Bay Area city" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston raw 1057000 to 1075700.
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston gzip 168000 to 170700.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston raw 1075700 to 1096100.
@@ -487,7 +488,8 @@ const BUDGET = {
   // 2026-11-02: SoCal sweep (PRs 114 to 118) re-read 240 cards on their official pages. PENDING PERSON APPROVAL. gzip 189000 to 189300.
   // 2026-11-02: 45 new SoCal cards (2,865 programs), stacked on PR 118. PENDING PERSON APPROVAL. 1216700, 189300 to 1230000, 191000.
   // 2026-11-02: 12 second-pass SoCal cards (2,877 programs), stacked on PR 125. PENDING PERSON APPROVAL. 1230000, 191000 to 1233500, 191300.
-  "?at=city:boston": { raw: 1233500, gzip: 191300, label: "Boston" },
+  // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 1233500 to 1234000.
+  "?at=city:boston": { raw: 1234000, gzip: 191300, label: "Boston" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska raw 867100 to 886400.
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska gzip 130500 to 132800.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska raw 886400 to 937900.
@@ -537,7 +539,8 @@ const BUDGET = {
   // 2026-11-02: SoCal sweep (PRs 114 to 118) re-read 240 cards on their official pages. PENDING PERSON APPROVAL. gzip 154300 to 154500.
   // 2026-11-02: 45 new SoCal cards (2,865 programs), stacked on PR 118. PENDING PERSON APPROVAL. 1041500, 154500 to 1055000, 156000.
   // 2026-11-02: 12 second-pass SoCal cards (2,877 programs), stacked on PR 125. PENDING PERSON APPROVAL. 1055000, 156000 to 1058000, 156300.
-  "?at=state:nebraska": { raw: 1058000, gzip: 156300, label: "a Plains state" },
+  // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 1058000 to 1058800.
+  "?at=state:nebraska": { raw: 1058800, gzip: 156300, label: "a Plains state" },
 };
 for (const [search, b] of Object.entries(BUDGET)) {
   test("first-load data bytes for " + b.label + " stay under the pinned budget and far under the whole lite file", async () => {

@@ -47,7 +47,7 @@ const PAGE_ALLOW = [
   ["champaign-urbana-park-district-cit", "champaign-urbana-park-district-fresh-crew"], // urbanaparks.org/teen-programs: one page lists several programs
   ["chicago-youth-works-summer-jobs", "chicagobility-ages-14-15", "cpl-summer-teen-internships"], // chicagoyouthworks.org: one page lists several programs
   ["bloomington-iu-luddy-cybersecurity-immersion-camp", "bloomington-iu-luddy-precollege-stem-camp"], // luddy.iu.edu/academics/highschool.html: one page lists several programs
-  ["cosmos-uc-davis", "uci-cosmos"], // cosmos-ucop.ucdavis.edu: one page lists several programs
+  ["cosmos-uc-davis", "cosmos-uc-merced", "uci-cosmos"], // cosmos-ucop.ucdavis.edu: one page lists several programs
   ["college-park-pg-parks-shakespeare-in-the-parks-apprenticeship", "college-park-pg-parks-teen-performance-ensemble", "pg-parks-youth-advisory-council"], // pgparks.com/things-to-do/teen_preteen_programs: one page lists several programs
   ["cassadaga-job-corps-center", "delawarevalley-job-corps-center", "edison-job-corps-center", "glenmont-job-corps-center", "grafton-job-corps-center", "iroquois-job-corps-center", "keystone-job-corps-center", "oneonta-job-corps-center", "philadelphia-job-corps-center", "pittsburgh-job-corps-center", "redrock-job-corps-center"], // jobcorps.gov: separate centers with their own pages share the national enrollment page as apply_url
   ["job-corps-georgia-brunswick-turner", "job-corps-minnesota-hubert-h-humphrey", "job-corps-sacramento", "job-corps-texas-gary-san-marcos", "job-corps-washington-centers", "national-job-corps-free-training-ages-16-24"], // enroll.jobcorps.gov: separate centers with their own pages share the national enrollment page as apply_url
