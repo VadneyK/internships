@@ -50911,7 +50911,7 @@
   "duration": "Part-time staff are hired as needed. Shifts can include early mornings, evenings, weekends and holidays.",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "On Oct 16, 2026 the district's job board said it was not hiring and listed no openings. The pages do not say when part-time jobs will be posted next.",
+  "deadline_text": "As of Nov 2, 2026 the district's job board said it was not hiring and listed no openings. The pages do not say when part-time jobs will be posted next.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Apply online only, through the job openings links on the LARPD jobs page. The district does not take general applications for jobs it is not hiring for. You must pass a fingerprint background check and a TB test. Workers under 18 need a work permit before the first day.",
@@ -50925,13 +50925,14 @@
    "https://www.larpd.org/files/4c61fbfd4/Swim+Instructor+I.pdf",
    "https://www.larpd.org/files/4e0a6a466/Recreation+Leader+I.pdf",
    "https://larpd.hrmdirect.com/employment/job-openings.php?nohd",
-   "https://www.larpd.org/salary-and-benefits"
+   "https://www.larpd.org/salary-and-benefits",
+   "https://apply.clearcompany.com/larpd?noheader=True"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "Recreation Leader I must finish First Aid, CPR and AED training within six months of hire. Lifeguard I may also work the front desk and collect money. Check back before summer, when pools usually hire, but no date is posted. The job description PDFs were read with firecrawl. Phone: 925-373-5700.",
-  "verified_on_label": "Oct 16, 2026"
+  "notes": "Recreation Leader I must finish First Aid, CPR and AED training within six months of hire. Lifeguard I may also work the front desk and collect money. Check back before summer, when pools usually hire, but no date is posted. Phone: 925-373-5700.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "larpd-summer-youth-volunteer",
@@ -50970,10 +50971,10 @@
    "https://www.larpd.org/volunteer"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "The 2026 cycle is closed. Watch larpd.org/volunteer and the orientation pages for the 2027 dates; the district's pages were not all updated to the same year. The FAQ says the opportunity list may change each year. The orientation and FAQ pages list volunteer@larpd.org as the contact. Not a paid job, so no California work permit is needed.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "grades": "9 to 12",
@@ -51090,10 +51091,10 @@
    "https://laspositascollege.edu/educationalpartnerships/dualenrollmenthome.php"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Offered during and after the school day. Ages are not stated on the page.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "las-vegas-batteries-included-teen-council",
@@ -52058,10 +52059,10 @@
    "https://k12education.lbl.gov/programs/high-school"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Whether students are paid is not stated. Finishing students can join later workshops and possible lab internships in following summers.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "lbnl-experiences-in-research",
@@ -52126,29 +52127,30 @@
   "what_you_do": "This is a free spring break camp at Berkeley Lab. It is for bilingual students. They are native Spanish speakers and English learners. It shows students careers in science, technology, engineering and math.",
   "min_age": null,
   "max_age": null,
-  "grades": null,
-  "who_can_apply": "English-learning, native Spanish-speaking bilingual students.",
+  "grades": "9 to 12",
+  "who_can_apply": "Spanish-English bilingual students in grades 9 to 12, including English learners. Grades 10 and 11 are especially encouraged.",
   "paid_type": "unpaid",
   "pay_detail": "Free",
   "season": "spring",
   "duration": "April 8 to 11, 2026 (spring break)",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "2026 applications are closed; no 2027 dates posted.",
+  "deadline_text": "2026 cycle: applications opened Nov 18 and closed Jan 26, 2026. No 2027 dates posted.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Watch the Berkeley Lab K-12 high school programs page.",
   "needs_work_permit": false,
   "url": "https://k12education.lbl.gov/programs/high-school",
   "apply_url": null,
   "sources_fetched": [
-   "https://k12education.lbl.gov/programs/high-school"
+   "https://k12education.lbl.gov/programs/high-school",
+   "https://k12education.lbl.gov/programs/high-school/sea-bilingual-stem-camp"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 3,
-  "notes": "Grades and ages are not listed on the page. The 2026 camp is over and no 2027 camp is posted, so it is not confirmed to repeat. Page says it can lead to summer internship chances.",
-  "verified_on_label": "Oct 7, 2026"
+  "notes": "The 2026 camp is over and no 2027 camp is posted, so it is not confirmed to repeat. The dates shown are from the 2026 cycle. Page says it can lead to summer internship chances.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "lbwin-youth-career-services-center",
@@ -52215,22 +52217,23 @@
   "duration": "The 2026 summer recreation program ran July 6 to July 30, 2026, Monday to Thursday, 10 a.m. to 2 p.m., at Mayhews Landing Park in Newark.",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "The homepage showed a 2026 summer teen volunteer call. No 2027 dates are posted.",
+  "deadline_text": "The Summer Recreation page lists teen volunteers under its 2026 program. No 2027 dates are posted.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Use the Register to Volunteer link for the teen volunteer call on the League site, or email lov@lov.org. Phone (510) 793-5683.",
+  "how_to_apply": "Use the Register to Volunteer form on the League's Summer Recreation page, or email lov@lov.org. Phone (510) 793-5683.",
   "needs_work_permit": false,
-  "url": "https://www.lov.org/volunteer",
+  "url": "https://www.lov.org/summerrec",
   "apply_url": null,
   "sources_fetched": [
    "https://www.lov.org/",
-   "https://www.lov.org/volunteer"
+   "https://www.lov.org/volunteer",
+   "https://www.lov.org/summerrec"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "The teen call on the homepage is for summer 2026. Confirm with the League whether it recruits again for 2027. Serves the Tri-Cities (Fremont, Newark and Union City).",
-  "verified_on_label": "Oct 7, 2026"
+  "notes": "The teen call on the Summer Recreation page is for summer 2026. Confirm with the League whether it recruits again for 2027. Serves the Tri-Cities (Fremont, Newark and Union City).",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "legischool-civics-virtual-institute",
@@ -52566,7 +52569,7 @@
   "min_age": null,
   "max_age": null,
   "grades": "Entering 11 or 12",
-  "who_can_apply": "Students entering 11th or 12th grade. You must be able to work full time all summer. You must go to May Saturday trainings.",
+  "who_can_apply": "Students entering 11th or 12th grade. You must be able to work full time in summer. Part of the summer may be considered. You must go to May Saturday trainings.",
   "paid_type": "stipend",
   "pay_detail": "$3,500 for the full summer ($72 deducted per missed day)",
   "season": "summer",
@@ -52582,13 +52585,15 @@
   "apply_url": null,
   "sources_fetched": [
    "https://lawrencehallofscience.org/job-postings/teen-internship-2024/",
-   "https://lawrencehallofscience.org/teen-internship-programs/"
+   "https://lawrencehallofscience.org/teen-internship-programs/",
+   "https://lawrencehallofscience.org/teen-internship-programs/teen-internship-2026/",
+   "https://lawrencehallofscience.org/visitors/opportunities-for-teens/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "The page URL says 2024 but the content is the 2026 posting. The page says to apply next summer; 2027 dates are not posted. Mid-January is the 2026 pattern only.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "lhs-teen-volunteers",
@@ -52615,7 +52620,7 @@
   "duration": "Summer minimum 21 hours; school year two 3-hour shifts a month",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Paused. The page says there will be no Summer 2025 cohort and a re-imagined youth volunteer program is planned for 2026, with no dates posted. The last posted window closed Jan 16, 2024.",
+  "deadline_text": "Paused. The page says there will be no Summer 2025 cohort and a re-imagined youth volunteer program is planned for 2026, with no dates posted. The last posted window closed Jan 16, 2024. The teen opportunities page says applications are closed and to check back next year.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Check the Lawrence Hall of Science teen volunteer page; call 510-642-5132 or mail/deliver forms to the Volunteer Program, attention Veronica Urdaneta, 1 Centennial Drive, Berkeley, CA 94720. The page lists no youth volunteer email.",
@@ -52624,13 +52629,15 @@
   "apply_url": null,
   "sources_fetched": [
    "https://lawrencehallofscience.org/?p=12540",
-   "https://lawrencehallofscience.org/get-involved/volunteer/"
+   "https://lawrencehallofscience.org/get-involved/volunteer/",
+   "https://lawrencehallofscience.org/support/volunteer-teen/",
+   "https://lawrencehallofscience.org/visitors/opportunities-for-teens/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "The page says recruiting is paused and a re-imagined program is planned for 2026, with no dates. Its Apply Today teen link conflicts with the pause notice, so do not treat it as active. Call to ask whether the program has launched. The age rules come from 2024 wording, so the age fields are blank. The email veronicau@berkeley.edu was removed because neither page lists it.",
-  "verified_on_label": "Oct 7, 2026"
+  "notes": "The page says recruiting is paused and a re-imagined program is planned for 2026, with no dates. Its Apply Today teen link conflicts with the pause notice, so do not treat it as active. Call to ask whether the program has launched. The age rules come from 2024 wording, so the age fields are blank.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "lifeline-animal-project-youth-volunteers",
@@ -52957,10 +52964,10 @@
    "https://library.livermoreca.gov/digital-library/teens/local-youth-training-and-engagement-programs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "This used to be the Livermore Area Youth Advisory Commission. The city's youth page now calls it the Livermore Youth Council. If you miss three meetings in one school year, you are out. Adults and some members read the forms and talk with each teen. A city staff member makes the final pick. Contact: Nathan Brumley, 925-373-5572.",
-  "verified_on_label": "Oct 16, 2026",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -52997,10 +53004,10 @@
    "https://app.betterimpact.com/PublicOrganization/fe9b917d-6446-45c2-a8ff-d38d128d8d80/Gvi/8a81535c-fe08-4ffa-92d0-cd04692a0e52/2"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The program page does not give start and end dates, orientation details or the number of hours. Ask the library before you apply. The listing is for summer 2026, so look for the next summer posting.",
-  "verified_on_label": "Oct 14, 2026",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -53041,10 +53048,10 @@
    "https://www.livermoreca.gov/our-community/teens-kids"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Scouting America has run this with the fire department since 1999. Explorers must come often, act like pros and help the town. Each training builds on the last one, so try not to miss any. The fire department serves both Livermore and Pleasanton. Its office is at 3560 Nevada Street, Pleasanton.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "livermore-police-explorers",
@@ -53084,10 +53091,10 @@
    "https://library.livermoreca.gov/digital-library/teens/local-youth-training-and-engagement-programs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The police page also says you must not have a health problem that could put you or others in danger on a task. The library's youth list says to live or go to school in Livermore. The police page does not say that, so ask. This card does not cover what the form itself asks.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "grades": null,
@@ -53166,10 +53173,10 @@
    "https://st.llnl.gov/sci-ed/summer-workshops/biotech-summer-experience"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Competitive, and space is limited. You must be allowed to enter the Lab under federal law (2025 NDAA Section 3112), which blocks some foreign nationals. Bring your own laptop and get your own ride. Contact: stem-education@llnl.gov.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "llnl-manufacturing-workshop",
@@ -53207,10 +53214,10 @@
    "https://st.llnl.gov/sci-ed/summer-workshops/manufacturing-workshop"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The page does not list a grade level or a region rule. Competitive and space is limited. Bring your own laptop and transportation. The 2025 NDAA rule generally blocks citizens of China, Russia, Iran and North Korea who do not also hold U.S. citizenship. Contact: stem-education@llnl.gov.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "llnl-sage-summer-camp",
@@ -53251,10 +53258,10 @@
    "https://library.livermoreca.gov/digital-library/teens/local-youth-training-and-engagement-programs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Competitive. Public school students only. The page said 'Not accepting applications' on Oct 16, 2026. Contact: stem-education@llnl.gov. The Livermore library list mentions proof of COVID vaccination, but the LLNL page does not, so that may be out of date.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "llnl-stem-with-phones-workshop",
@@ -53292,10 +53299,10 @@
    "https://st.llnl.gov/sci-ed/stem-with-phones"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Bring your own laptop and smartphone, and arrange your own ride. The page does not list a region rule. Contact: stem-education@llnl.gov; allow 2 to 3 business days for a reply.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "loma-linda-university-discovery-program",
@@ -54223,10 +54230,10 @@
    "https://www.losmedanos.edu/registration/concurrent/index.aspx"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The page says it was last updated 3/15/22, so ask your counselor to confirm the steps. Grades from these classes go on your college transcript. You can also take other Los Medanos classes on your own time as a concurrent student, with principal approval. You pay all fees and costs for those concurrent classes.",
-  "verified_on_label": "Oct 14, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "los-rios-dual-enrollment",
@@ -57189,10 +57196,10 @@
    "https://www.centralsan.org/externship"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The program is free to join. In-person events are optional, because you can take part fully online. Central San works with Contra Costa Water District on the program. Central San is at 5019 Imhoff Place, Martinez.",
-  "verified_on_label": "Oct 14, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "martinez-central-san-summer-student-program",
@@ -57230,10 +57237,10 @@
    "https://www.centralsan.org/post/summer-student-and-internship-programs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Summer students are at-will, short-term workers. They do not get benefits or a promise of a regular job. When school is not in session, a minor can work up to 8 hours a day and 40 hours a week. Central San is at 5019 Imhoff Place, Martinez. The internship programs on the same page are for college students.",
-  "verified_on_label": "Oct 14, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "grades": "Juniors and seniors",
@@ -58731,34 +58738,34 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Spend your junior and senior years on a college campus. You take three high school classes taught by Mt. Diablo teachers. You take the rest of your classes at DVC and earn high school and college credit.",
+  "what_you_do": "Spend your junior and senior years on a college campus. You take three or four high school classes taught by Mt. Diablo teachers. You take the rest of your classes at DVC and earn high school and college credit.",
   "min_age": null,
   "max_age": null,
   "grades": "11th and 12th grade",
-  "who_can_apply": "Mt. Diablo Unified students who are interested and eligible. In 2026-2027 class capacity will be 60 juniors and 60 seniors. Talk to your high school counselor about the rules.",
+  "who_can_apply": "Mt. Diablo Unified students who are interested and eligible. In 2027-2028 class capacity will be 60 juniors and 60 seniors. Talk to your high school counselor about the rules.",
   "paid_type": "unpaid-credit",
   "pay_detail": "Cost is not stated on the College Now page. DVC says its dual enrollment classes are free.",
   "season": "school-year",
   "duration": "Junior and senior years",
-  "status": "closed-expect-reopen",
+  "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "Applications for 2026-2027 were due Thursday, Feb 12, 2026, with no late applications. The page says the application is held in the spring. The next dates are not posted.",
-  "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
+  "deadline_text": "Applications for 2027-2028 are open and due Feb 15, 2027. No late applications. Interviews are in spring 2027.",
+  "deadline_iso": "2027-02-15",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Talk to your high school counselor. Then fill out the College Now student application on the program page. A recommendation form is also on the page. Go to the parent night if you can.",
   "needs_work_permit": false,
   "url": "https://www.mdusd.org/departments/educational-services/college-career/college-now-program",
-  "apply_url": null,
+  "apply_url": "https://www.mdusd.org/departments/educational-services/college-career/college-now-program/student-application",
   "sources_fetched": [
    "https://www.mdusd.org/departments/educational-services/college-career/college-now-program",
    "https://www.mdusd.org/departments/educational-services/college-career/college-now-program/student-application",
    "https://www.dvc.edu/academics/high-school-programs/dual-enrollment"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "The program started in fall 2016. The 2026 parent night was Wed, Feb 4, 2026. Staff phone on the page: 925-969-2512. The DVC page also lists a related program called Diamante Scholars for Mt. Diablo seniors.",
-  "verified_on_label": "Oct 14, 2026"
+  "notes": "The program started in fall 2016. Parent nights are Feb 3, 2027 at Willow Creek Center and Feb 4, 2027 at the MDHS Library, 6 to 7:30 p.m. Staff phone on the page: 925-969-2512. The DVC page also lists a related program called Diamante Scholars for Mt. Diablo seniors.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "mdusd-student-board-member",
@@ -58796,10 +58803,10 @@
    "https://www.mdusd.org/about/student-board-member/student-advisory-committee"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Board meetings are usually on the second and fourth Wednesday of the month, starting at 6:00 PM. The Student Advisory Committee advises the Student Board Member. Its 2025-26 meetings were at Concord High School. The district is at 1936 Carlotta Drive, Concord.",
-  "verified_on_label": "Oct 14, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "mdusd-yes-wioa-youth-program",
@@ -58832,13 +58839,14 @@
   "url": "https://www.mdusd.org/departments/educational-services/college-career/wioa",
   "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLScfKmwZL57AieaIP3TKTFPb9VeZGonzjbJK0RZmxpEHO4pN_Q/viewform",
   "sources_fetched": [
-   "https://www.mdusd.org/departments/educational-services/college-career/wioa"
+   "https://www.mdusd.org/departments/educational-services/college-career/wioa",
+   "https://docs.google.com/forms/d/e/1FAIpQLScfKmwZL57AieaIP3TKTFPb9VeZGonzjbJK0RZmxpEHO4pN_Q/viewform"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The Workforce Development Board of Contra Costa County funds and supports this WIOA grant. For East or West Contra Costa County, the page points to the County Office of Education. The page lists 14 required program elements, including leadership development and financial literacy education.",
-  "verified_on_label": "Oct 14, 2026",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -63787,10 +63795,10 @@
    "https://www.moraga.ca.us/593/Summer-Jobs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "In 2026 the orientation was May 7 and training was June 8 to 12. The page says CITs gain hands-on experience that prepares them for possible future jobs with Moraga Parks and Recreation. The town website also has a Summer Jobs page.",
-  "verified_on_label": "Oct 14, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "moraga-police-cadets",
@@ -63826,10 +63834,10 @@
    "https://www.moraga.ca.us/285/Employment"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The cadet program is on the town employment page, below the police officer and reserve officer jobs. Good character and good health are also on the list. Ask the department if it is taking cadets now.",
-  "verified_on_label": "Oct 14, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "moraga-youth-involvement-committee",
@@ -63866,10 +63874,10 @@
    "https://www.moraga.ca.us/313/Moraga-Youth-Involvement-Committee"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The committee meets at 7 PM on the 2nd Thursday of every month at the Hacienda de las Flores, 2100 Donald Drive, Moraga. Its service projects change each year.",
-  "verified_on_label": "Oct 14, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "morehouse-school-of-medicine-steam-academy",
@@ -64296,13 +64304,13 @@
   "paid_type": "stipend",
   "pay_detail": "Stipend paid after completion; amount not stated",
   "season": "summer",
-  "duration": "2026: virtual Thursday evening sessions in July plus a final in-person session at Bay Area Metro Center, San Francisco (July 31, 2026)",
+  "duration": "2026: two hours each Thursday in July, mostly online, plus a final in-person session at Bay Area Metro Center, San Francisco (July 31, 2026)",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "The 2026 program is over. The 2026 call was announced March 24, 2026; exact open and close dates are not on the page. 2027 not posted.",
+  "deadline_text": "The 2026 program is over. 2026 applications were due April 27, 2026 at 10 p.m. 2027 not posted.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Contact Academy@BayAreaMetro.Gov or 415-778-5207. The page does not detail the application steps.",
+  "how_to_apply": "In 2026 you applied with an online form. That form is closed. Contact Academy@BayAreaMetro.Gov or 415-778-5207 about next summer.",
   "needs_work_permit": null,
   "url": "https://mtc.ca.gov/jobs-contracts/job-opportunities/internships-summer-academy/norman-mineta-high-school-summer-academy",
   "apply_url": null,
@@ -64310,13 +64318,14 @@
    "https://mtc.ca.gov/tags/high-school",
    "https://mtc.ca.gov/jobs-contracts",
    "https://mtc.ca.gov/about-mtc/public-participation/youth-initiatives",
-   "https://mtc.ca.gov/jobs-contracts/job-opportunities/internships-summer-academy/norman-mineta-high-school-summer-academy"
+   "https://mtc.ca.gov/jobs-contracts/job-opportunities/internships-summer-academy/norman-mineta-high-school-summer-academy",
+   "https://mtc.ca.gov/news/high-school-students-apply-today-bay-area-summer-academy-2026"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "MTC's older 'High School Internship Program' pages date to 2018. The high school program MTC lists now is this Academy. It is mostly virtual evening sessions. It is not a job placement.",
-  "verified_on_label": "Oct 7, 2026",
+  "notes": "MTC's older 'High School Internship Program' pages date to 2018. The high school program MTC lists now is this Academy. It is mostly online sessions. It is not a job placement.",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -76286,10 +76295,10 @@
    "https://www.oaklandca.gov/News-Releases/City-Council-Advances-Major-Investment-in-Summer-Opportunities-for-Oakland-Youth"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "City Council approved more than $3.1 million for 2026 and 2027 summer youth jobs, so a 2027 round is expected. Another City page lists ages 16 to 21, so check each partner's own age rule. Under-18 workers need a work permit (OUSD Linked Learning can help OUSD students).",
-  "verified_on_label": "Oct 7, 2026",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -76327,10 +76336,10 @@
    "https://oaklandca.gov/topics/connecting-youth-employers-for-summer-jobs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "This City page is older than the MSYEP page (which lists partners with other ages, such as YEP 14 to 18 and Lao Family 16 to 21). Treat 16 to 21 as the safe range and confirm with the partner.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "oakland-parks-rec-youth-jobs",
@@ -76347,12 +76356,12 @@
    "food-hospitality"
   ],
   "what_you_do": "You can apply for part-time and seasonal City recreation jobs. Jobs include recreation aide, recreation leader, sports official, lifeguard, water safety instructor and pool staff. There is also a recreation specialist job.",
-  "min_age": null,
+  "min_age": 15,
   "max_age": null,
   "grades": null,
-  "who_can_apply": "The City is hiring for its recreation jobs. The page does not state a minimum age. It strongly encourages people who speak Spanish, Cantonese and Mandarin to apply.",
+  "who_can_apply": "Age 15 for Lifeguard, with current Red Cross cards. Age 16 for Recreation Aide and Sports Official. Age 17 for Water Safety Instructor. Most other jobs need 18. You need a Social Security number to work for the City. People who speak Spanish, Cantonese and Mandarin are strongly encouraged to apply.",
   "paid_type": "paid",
-  "pay_detail": "Paid job. Not posted on the page; see each job posting",
+  "pay_detail": "Paid job. Per hour: Recreation Aide from $17.65, Lifeguard from $21.70, Water Safety Instructor from $25.23, Sports Official $26.79.",
   "season": "summer",
   "duration": "Varies by posting; mostly seasonal",
   "status": "open-now",
@@ -76365,13 +76374,15 @@
   "url": "https://www.oaklandca.gov/topics/parks-recreation",
   "apply_url": "https://www.governmentjobs.com/careers/oaklandca",
   "sources_fetched": [
-   "https://www.oaklandca.gov/topics/parks-recreation"
+   "https://www.oaklandca.gov/topics/parks-recreation",
+   "https://www.oaklandca.gov/Government/Departments/Parks-Recreation-Youth-Development/Part-Time-Hiring-Information",
+   "https://www.governmentjobs.com/careers/oaklandca"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-26",
+  "verified_on": "2026-11-02",
   "priority": 1,
-  "notes": "The hiring process takes several months, so apply early. Check each posting for minimum age and pay. The governmentjobs.com/careers/oaklandca portal showed 0 openings on Oct 7, 2026. If you cannot find the posting, call (510) 238-7275.",
-  "verified_on_label": "Oct 26, 2026"
+  "notes": "The hiring process takes several months, so apply early. You must bring your Social Security card to finish hiring. Hiring also includes fingerprints and a TB test. If you cannot find the posting, call (510) 238-7275.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "oakland-public-library-teen-advisory-board",
@@ -76408,10 +76419,10 @@
    "https://oaklandlibrary.org/teens/teen-leadership/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-22",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Meets monthly at Main (TeenZone), 81st Ave, Asian, Cesar Chavez, Dimond and Rockridge. The same page also covers the Oakland Youth Poet Laureate program.",
-  "verified_on_label": "Oct 22, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "oakland-public-library-teen-volunteer",
@@ -76449,10 +76460,10 @@
    "https://oaklandlibrary.org/teenvolunteers"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-22",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "The library cannot promise a spot at a specific branch. About two thirds of library volunteers are teens, per the page.",
-  "verified_on_label": "Oct 22, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "oakland-zoo-teen-summer-internship",
@@ -76490,10 +76501,10 @@
    "https://www.oaklandzoo.org/support/volunteer/teen-summer-internship"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Up to 6 interns, so it is likely competitive. No stipend is listed; ask. Financial aid is available for the $50 fee.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "oakland-zoo-teen-wild-guides",
@@ -76531,10 +76542,10 @@
    "https://www.oaklandzoo.org/teen-wild-guides/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-22",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "Unpaid, and teens pay a small fee (aid available). Must be 13 or turn 13 in the application season.",
-  "verified_on_label": "Oct 22, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "oakland-zoo-zoocamp-teen-assistants-interns",
@@ -76572,10 +76583,10 @@
    "https://www.oaklandzoo.org/support/volunteer/zoocamp-teen-assistants-interns"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "Great first step: be a Teen Assistant, then apply to be a paid intern. The 2026 info meetings were in March and the 2026 training was Sunday May 17; expect similar timing for 2027.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "oakley-youth-advisory-council",
@@ -76613,10 +76624,10 @@
    "https://www.oakleyca.gov/363/Teen"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Meetings are at the Oakley Recreation Center, 1250 O'Hara Avenue. The Teen page also mentions CORE Camp, a six-week summer camp that mixes camp games with community service. The Teen page does not give ages or dates for CORE Camp.",
-  "verified_on_label": "Oct 14, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "oakridge-oak-futures-youth-employment",
@@ -79198,10 +79209,10 @@
    "https://www.ousd.org/high-school-linked-learning-office/for-students-families/internships"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "The OUSD page still shows Summer 2024 forms, so look for a new form in January 2027. Not every internship is open to every student.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "ousd-linked-learning-work-based-learning",
@@ -79234,13 +79245,14 @@
   "url": "https://www.ousd.org/high-school-linked-learning-office",
   "apply_url": null,
   "sources_fetched": [
-   "https://www.ousd.org/high-school-linked-learning-office"
+   "https://www.ousd.org/high-school-linked-learning-office",
+   "https://www.ousd.org/high-school-linked-learning-office/for-students-families/work-permits"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "The office handles work permits (needed for any paid job under 18). Check the pathways pages on the OUSD site to find work-based learning at your school.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "overland-park-outdoor-lifeguard",
@@ -80279,10 +80291,10 @@
    "https://www.peralta.edu/dual-enrollment/summer-institute"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-22",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "Peralta also runs a free Summer Institute for Bay Area high schoolers, including incoming 9th graders. The 2026 dates were June 22 to July 31. No application deadline is posted. The old OUSD page mentions a stipend. The Peralta page does not.",
-  "verified_on_label": "Oct 22, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "pg-county-summer-youth-enrichment-program",
@@ -82854,10 +82866,10 @@
    "https://www.codepublishing.com/CA/Pittsburg/html/Pittsburg02/Pittsburg0280.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The facts come from the city code, Chapter 2.80, adopted in 2020. Check pittsburgca.gov or City Hall for the current application and meeting dates. The commission meets at least 10 times a year. Members can serve no more than two terms in a row.",
-  "verified_on_label": "Oct 14, 2026",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -84461,33 +84473,34 @@
    "food-hospitality"
   ],
   "what_you_do": "You do a paid youth internship at an urban farm and nursery. You learn sustainable farming, food distribution and school gardens. You get job training. You get food safety certifications. Community mentors help you.",
-  "min_age": null,
-  "max_age": null,
+  "min_age": 15,
+  "max_age": 18,
   "grades": null,
-  "who_can_apply": "No age or grade rule is stated. The program focuses on youth facing challenges such as hunger or homelessness and aims to keep them in school.",
+  "who_can_apply": "Fall 2026: Sobrante Park and East Oakland youth ages 15 to 18, and past Planting Justice interns. It is for youth facing hard times such as hunger or no home, and it aims to keep them in school.",
   "paid_type": "paid",
-  "pay_detail": "$17.50 per hour (page says 40+ paid internships)",
+  "pay_detail": "Fall 2026: $25 per hour for 14 hours, based on finishing all the work. The usual rate on the page is $17.50 per hour (page says 40+ paid internships)",
   "season": "year-round",
-  "duration": null,
-  "status": "unconfirmed",
+  "duration": "Fall 2026: 3 days, Nov 23 to 25, 2026",
+  "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "Not posted",
-  "deadline_iso": null,
-  "deadline_confidence": "unknown",
-  "how_to_apply": "Email your resume to jobs@plantingjustice.org. Or call the East Oakland Nursery at 510-756-6965.",
+  "deadline_text": "Fall 2026: apply by Wednesday, Nov 4, 2026 at 4 pm. You hear back Nov 13. Later rounds are not posted.",
+  "deadline_iso": "2026-11-04",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the online form and the liability waiver linked on it. You need both. For other rounds, email your resume to jobs@plantingjustice.org. Or call the East Oakland Nursery at 510-756-6965.",
   "needs_work_permit": true,
   "url": "https://plantingjustice.org/pages/what-we-do/youth-internships",
-  "apply_url": null,
+  "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLScC4xrfCQUlpkXlt-KJFXTEWkrZH3_NwDhTR36Uy-1c8Xu-9w/viewform?usp=dialog",
   "sources_fetched": [
    "https://plantingjustice.org",
    "https://plantingjustice.org/pages/what-we-do/youth-internships",
-   "https://plantingjustice.org/pages/jobs"
+   "https://plantingjustice.org/pages/jobs",
+   "https://docs.google.com/forms/d/e/1FAIpQLScC4xrfCQUlpkXlt-KJFXTEWkrZH3_NwDhTR36Uy-1c8Xu-9w/viewform?usp=dialog"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-02",
   "priority": 3,
-  "notes": "Ages, season and hours are not stated, so call and ask. Pay is from the page and may change.",
-  "verified_on_label": "Oct 18, 2026"
+  "notes": "The Fall 2026 round is a paid art and poetry project about the Sobrante Park fruit trees. You must come all 3 days and get your own ride. Lunch is provided. The form's Spanish text adds a required orientation on Nov 20 and lists different end times, so ask. Ages and hours for other rounds are not stated. Pay may change.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "pleasant-hill-rec-park-facilities-custodian",
@@ -84524,10 +84537,10 @@
    "https://www.pleasanthillrec.com/161/Employment"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The same page lists sports referee jobs for age 18 or older. Listings change, so check the page for the current jobs. A job description link is on the page.",
-  "verified_on_label": "Oct 14, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "pleasant-hill-rec-park-teen-council",
@@ -84551,12 +84564,12 @@
   "pay_detail": "Not stated on the program page.",
   "season": "school-year",
   "duration": "Meets September to June",
-  "status": "rolling",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "No deadline is stated. The page says to stop by the Teen Center or email the Youth Services Manager.",
+  "deadline_text": "Not taking new members now. The 2027-2028 application will be posted in March 2027. You hear back in mid-August.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
-  "how_to_apply": "Stop by the Pleasant Hill Teen Center. Or email the Youth Services Manager, Katrina Hunn. Her email link is on the program page.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "The 2027-2028 application will be posted in March 2027. Questions: email the Youth Services Manager, Katrina Hunn. Her email link is on the program page.",
   "needs_work_permit": null,
   "url": "https://pleasanthillrec.com/322/Teen-Council",
   "apply_url": null,
@@ -84565,10 +84578,10 @@
    "https://pleasanthillrec.com/445/Teen-Center"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "Meetings are on the 1st and 3rd Mondays of the month, 7:00 to 8:00 PM, at the Pleasant Hill Teen Center. The council does not meet on holidays.",
-  "verified_on_label": "Oct 14, 2026"
+  "notes": "Meetings are on the 1st and 3rd Mondays of the month, 6:15 to 7:00 PM, at the Pleasant Hill Teen Center. The council does not meet on holidays.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "pleasant-home-oak-park-student-docents",
@@ -84633,7 +84646,7 @@
   "duration": "Junior Swim Instructor: 8 day sessions. Junior Lifeguard: shifts June 9 to August 2 in 2026.",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "The 2026 packet said applications were due April 15, 2026. Orientations were April 22 and 23, 2026. The next season is not posted.",
+  "deadline_text": "The 2026 packet said applications were due April 15, 2026. Orientations were April 22 and 23, 2026. Applications are typically available January to April. 2027 dates are not posted.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Fill out the volunteer application online. Sign up for an orientation and a fingerprint visit. Junior Lifeguards also sign up for the training class on the city recreation site. Then pick your shifts online.",
@@ -84643,13 +84656,14 @@
   "sources_fetched": [
    "https://content.betterimpact.com/files/agency/6727/2026%20New%20Aquatic%20Volunteer%20Packet.pdf",
    "https://app.betterimpact.com/PublicEnterprise/EnterpriseGvi?enterpriseGuid=08840789-d457-4ab1-b221-ed45f96469a8&gviGuid=2ad7de32-0477-40c5-b271-147e5cffcfb6",
-   "https://app.betterimpact.com/PublicEnterprise/EnterpriseGvi?enterpriseGuid=08840789-d457-4ab1-b221-ed45f96469a8&gviGuid=94751f52-9d6a-4082-a534-da8f9dc0de6e"
+   "https://app.betterimpact.com/PublicEnterprise/EnterpriseGvi?enterpriseGuid=08840789-d457-4ab1-b221-ed45f96469a8&gviGuid=94751f52-9d6a-4082-a534-da8f9dc0de6e",
+   "https://app.betterimpact.com/Application?OrganizationGuid=b1ef9f12-f1e7-480b-a89f-c98b5fae68e9&ApplicationFormNumber=1"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Junior Lifeguards do not make rescues and do not get a lifeguard card. The 2026 class ran April 6 to 10 and June 15 to 19, 9am to 3pm. Swim Instructor sessions ran Monday to Thursday. Saturday shifts are daily sign-ups with no commitment. Both jobs prepare volunteers to become lifeguards or water safety instructors at age 15. For the fingerprint form, bring an approved photo ID and know your Social Security number. Contact: Katelyn DiGiosaffatte, Recreation Coordinator, kdigiosaffatte@cityofpleasantonca.gov.",
-  "verified_on_label": "Oct 14, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "pleasanton-leader-in-training",
@@ -84686,10 +84700,10 @@
    "https://www.cityofpleasantonca.gov/your-community/recreation/recreation-youth-and-teen-programs/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "The page does not mention a fee or pay. It does not say if you must live in Pleasanton. Last year's application window was not posted, so the January 2027 note is the only timing clue.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "pleasanton-police-teen-academy-and-explorers",
@@ -84724,13 +84738,14 @@
   "apply_url": null,
   "sources_fetched": [
    "https://www.cityofpleasantonca.gov/our-government/police/programs-outreach/",
-   "https://www.cityofpleasantonca.gov/your-community/youth-teens/"
+   "https://www.cityofpleasantonca.gov/your-community/youth-teens/",
+   "https://www.cityofpleasantonca.gov/wp-content/uploads/2025/02/explorer-brochure_feb-2025.pdf"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Explorers need good moral character and no history of negative police contacts or poor conduct (the page lists running away and poor school attendance). The page also links an Explorer brochure PDF. Its details are not on this card, so check it before you apply. The city's Behind the Badge and V.I.P.S. programs are 18+ only. The Police Cadet job on the city job board is for college students 18+.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "pleasanton-youth-commission",
@@ -84764,13 +84779,15 @@
   "url": "https://www.cityofpleasantonca.gov/assets/our-government/board-commissions/Recruitment-Ad-FALL-2026.pdf",
   "apply_url": null,
   "sources_fetched": [
-   "https://www.cityofpleasantonca.gov/assets/our-government/board-commissions/Recruitment-Ad-FALL-2026.pdf"
+   "https://www.cityofpleasantonca.gov/assets/our-government/board-commissions/Recruitment-Ad-FALL-2026.pdf",
+   "https://www.cityofpleasantonca.gov/our-government/boards-commissions/",
+   "https://www.cityofpleasantonca.gov/your-community/youth-teens/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "The next recruitment date is not posted in the ad; deadline_confidence is last-year-pattern because the most recent cycle was fall 2026. The recruitment ad describes city commissions in general; the Youth Commission's own duties and term length were not on any official page for it, so what_you_do is based on the ad's general description.",
-  "verified_on_label": "Oct 7, 2026"
+  "notes": "The commission links Pleasanton youth with the City Council. It meets the 2nd Wednesday of each month during the school year at 7 p.m. at 3333 Busch Road. The term length and the next recruitment date are not posted.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "police-cadets-san-mateo",
@@ -84844,13 +84861,14 @@
   "url": "https://hayward-ca.gov/police-department/programs/police-explorer-program",
   "apply_url": "https://www.research.net/r/HPD-Explorer",
   "sources_fetched": [
-   "https://hayward-ca.gov/police-department/programs/police-explorer-program"
+   "https://hayward-ca.gov/police-department/programs/police-explorer-program",
+   "https://www.research.net/r/HPD-Explorer"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The page gives no closing dates, so check at the start of each window. Meetings are Wednesday nights 5 to 7pm plus training and some weekend events.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "police-explorers-morgan-hill",
@@ -84927,10 +84945,10 @@
    "https://www.oaklandca.gov/resources/oakland-police-youth-services"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The page gives a minimum age of 14.5 and no upper limit. The page does not give meeting times or dates, so ask the coordinator. Oakland PD also runs the Police Activities League.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "pomona-college-academy-for-youth-success",
@@ -87711,7 +87729,7 @@
   "duration": "One-year term if you are under 24",
   "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "The page lists 7 open seats as of 9/29/2026. It gives no closing date.",
+  "deadline_text": "The page lists 6 open seats as of 10/20/2026. It gives no closing date.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Fill out the Oversight Board Application, a PDF on the city page. A parent or guardian signs it if you are under 18. Email it to the City Clerk or mail it to the City Clerk's office at the address on the form.",
@@ -87723,10 +87741,10 @@
    "https://www.ci.richmond.ca.us/DocumentCenter/View/50257/Richmond-Fund-for-Children-and-Youth-Oversight-Board-Application-PDF"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-22",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The board meets every first Monday at 6:00 PM in the Richmond City Council Chamber, 440 Civic Center Plaza. City Council members and the Mayor pick the members. The application says you can learn more at richmondyouth.org or by calling 510-620-6523. Having work or school experience is not required.",
-  "verified_on_label": "Oct 22, 2026",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -88304,23 +88322,24 @@
   "pay_detail": "Paid internship; the hourly rate is not stated on the page",
   "season": "year-round",
   "duration": "Up to 100 hours",
-  "status": "unconfirmed",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "No deadline stated. The 2026-2027 application is posted.",
+  "deadline_text": "Applications are closed as of Nov 2, 2026. The form says to check back in January 2027.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Submit the online Work Experience Program application (2026-2027 form linked on the city page). The team contacts you for an intake. Phone (510) 412-2044.",
+  "how_to_apply": "The online form linked on the city page is closed for now. Check back in January 2027. After you apply, the team contacts you for an intake. Phone (510) 412-2044.",
   "needs_work_permit": null,
   "url": "https://richmondca.gov/1139/Work-Experience-Program",
   "apply_url": "https://tinyurl.com/YW-WEX-26-27",
   "sources_fetched": [
-   "https://richmondca.gov/1139/Work-Experience-Program"
+   "https://richmondca.gov/1139/Work-Experience-Program",
+   "https://youthworks.formstack.com/forms/work_experience_program"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "The page refers to Richmond youth but does not spell out a residency rule. Ask about the hourly wage and your start date at intake.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "rising-sun-climate-careers",
@@ -88363,10 +88382,10 @@
    "https://www.oaklandca.gov/Government/Working-for-Oakland/Summer-Jobs-and-Internships-for-Youth/Youth-Employment-and-Training"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
-  "notes": "As of Oct 10, 2026 the jobs page lists three staff postings: two Central Valley coordinator roles and a Bay Area Senior Program Manager. No Bay Area summer Energy Specialist posting is listed. Pay shown is the 2026 rate. The City of Oakland summer jobs list also includes Rising Sun.",
-  "verified_on_label": "Oct 7, 2026"
+  "notes": "As of Nov 2, 2026 the jobs page lists one posting: a temporary Central Valley Outreach Coordinator. No Bay Area summer Energy Specialist posting is listed. Pay shown is the 2026 rate. The City of Oakland summer jobs list also includes Rising Sun.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "river-forest-library-tween-teen-volunteers-book-buddies",
@@ -89406,10 +89425,10 @@
    "https://rysecenter.org/rysing-leaders"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Per the cohort page: Food Justice, Public Health, Health and Wellness Career Exploration and STAY FLY TAY Law applications are listed as releasing December 2026; Mock Trial January 2027; Roots to RYSE (summer) Spring 2027; YOUTHBRIDGE internship May 2027. Pay and ages for each cohort are not stated. The cohort page does not say any internship is paid; pay_detail was not changed in this check.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "sac-animal-care-youth-volunteers",
@@ -90221,10 +90240,10 @@
    "https://www.stmarys-ca.edu/academics/summer-session"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The courses open to high school students are marked on the page. The page says high schools are among the students who can enroll. Check that a course is marked open to high school students before you sign up. Saint Mary's is in Moraga. The page shows a different price for Saint Mary's students. The printing course listed an extra fee of $110.",
-  "verified_on_label": "Oct 14, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "saint-paul-public-library-volunteer",
@@ -92690,7 +92709,7 @@
   "needs_work_permit": false,
   "priority": 2,
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-02",
   "id": "san-leandro-library-teen-volunteers",
   "name": "San Leandro Library Teen Volunteers",
   "org": "San Leandro Public Library",
@@ -92717,7 +92736,7 @@
   "sources_fetched": [
    "https://www.sanleandro.org/558/Teen-Volunteer"
   ],
-  "verified_on_label": "Oct 19, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "san-leandro-police-explorers",
@@ -92755,10 +92774,10 @@
    "https://www.sanleandro.org/DocumentCenter/View/10918"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The web page says ages 14 to 19 and high school students. The older application form says ages 14 to 20.5 and high school or college students. A parent must sign for applicants under 18. Questions: Sergeant Watson, cwatson@sanleandro.org.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "san-leandro-recreation-counselor-in-training",
@@ -92797,10 +92816,10 @@
    "https://www.sanleandro.org/activityguides"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 3,
   "notes": "Fee-based. The 2025 guide listed CIT spots at Chabot Day Camp (Chabot Park) and Camp Hooty Hoo (Bonaire, Halcyon and Washington Manor parks). A Summer 2026 guide was not posted on the Activity Guides page when checked, so 2025 details are used. No CIT listing was found in the online registration system in October 2026.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "san-leandro-recreation-lifeguard-jobs",
@@ -92839,10 +92858,10 @@
    "https://www.sanleandro.org/1396/Employment"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "By your first day you need a lifeguard card, a CPR card for lifeguards and a first aid card. You also need a clear TB test and a fingerprint check. The job opened Nov 10, 2025 and has no end date. It may close at any time, so apply soon.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "min_age": null,
@@ -92856,7 +92875,7 @@
   "needs_work_permit": false,
   "priority": 3,
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-02",
   "id": "san-leandro-youth-advisory-commission",
   "name": "San Leandro Youth Advisory Commission",
   "org": "City of San Leandro Recreation and Parks",
@@ -92883,7 +92902,7 @@
   "sources_fetched": [
    "https://www.sanleandro.org/869/Youth-Advisory-Commission-YAC"
   ],
-  "verified_on_label": "Oct 19, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "san-mateo-county-jobs-for-youth",
@@ -93004,10 +93023,10 @@
    "https://www.sanpabloca.gov/2631/San-Pablo-Internship-Programs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The minimum age is 15 and a half on the page. It is stored here as 15. The same page also describes a UC Berkeley Public Service Internship. It hosts UC Berkeley interns for an academic year in a city department or division.",
-  "verified_on_label": "Oct 14, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "san-pablo-youth-commission",
@@ -93026,14 +93045,14 @@
   "min_age": 13,
   "max_age": 19,
   "grades": null,
-  "who_can_apply": "Youth ages 13 to 19. The page does not list a residency rule.",
+  "who_can_apply": "Youth ages 13 to 19. The application says you must live or go to school in San Pablo, or want to serve the San Pablo community.",
   "paid_type": "not-stated",
   "pay_detail": "Not stated on the program page.",
   "season": "school-year",
-  "duration": "Meets monthly",
+  "duration": "Six-month terms. Meets monthly",
   "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "The page says the city is taking online applications now. It gives no closing date.",
+  "deadline_text": "The page says the city is taking online applications now. The application says it takes them year-round.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Fill out the Youth Commission Application, an online form linked on the program page. Contact the city with questions.",
@@ -93041,13 +93060,15 @@
   "url": "https://www.sanpabloca.gov/1467/San-Pablo-Youth-Commission",
   "apply_url": "https://forms.gle/971hnxt25A4ErWX87",
   "sources_fetched": [
-   "https://www.sanpabloca.gov/1467/San-Pablo-Youth-Commission"
+   "https://www.sanpabloca.gov/1467/San-Pablo-Youth-Commission",
+   "https://forms.gle/971hnxt25A4ErWX87"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-22",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "Meetings are on the third Thursday of each month, 5:00 to 6:00 PM, in person at the San Pablo Community Center, 2450 Road 20. On April 17, 2023, the City Council approved an amendment to the commission bylaws.",
-  "verified_on_label": "Oct 22, 2026"
+  "notes": "Meetings are on the third Thursday of each month, 5:00 to 6:00 PM, in person at the San Pablo Community Center, 2450 Road 20. The application says City Hall, so check first. On April 17, 2023, the City Council approved an amendment to the commission bylaws.",
+  "verified_on_label": "Nov 2, 2026",
+  "limited": true
  },
  {
   "id": "san-ramon-leaders-in-training",
@@ -93084,10 +93105,10 @@
    "https://sanramon.ca.gov/our_city/departments_and_divisions/parks_community_services/teens/leaders_in_training"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "You can volunteer for as few as one assignment or as many as you like. The page does not say if the program has a fee. Ask the city before you sign up.",
-  "verified_on_label": "Oct 14, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "san-ramon-teen-service-and-leadership",
@@ -93124,10 +93145,10 @@
    "https://www.sanramon.ca.gov/our_city/departments_and_divisions/parks_community_services/teens/teen_service___leadership"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Classes are at the San Ramon Community Center. Volunteer shifts can be at places like Forest Home Farms, Pine Valley Gymnasium and Central Park. The page says the program won an award from the California Parks and Recreation Society. The first class date was Oct 1, 2026, so check that you can still join.",
-  "verified_on_label": "Oct 14, 2026",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -99307,10 +99328,10 @@
    "https://www.smash.org/programs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "Based in Oakland (2148 Broadway). SMASH Virtual is a separate online option for a national audience; its cost is not stated. SMASH Morehouse is for males and SMASH Spelman for females.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "smccd-dual-enrollment",
@@ -101246,10 +101267,10 @@
    "https://strosehospital.org/volunteer-opportunities/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "priority": 3,
   "notes": "The page header says Temporarily Suspended, but the SHINE section still lists the steps. Call 510-264-4139 to ask when volunteering restarts. Leave your name, phone number and question. The program page does not give hours per week.",
-  "verified_on_label": "Oct 14, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "stanford-aimi-summer-research-internship",
@@ -102308,10 +102329,10 @@
    "https://www.sutterhealth.org/volunteering/results"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Read on the Sutter Health page on 2026-10-16. The page also names a family support role in the ER. But Sutter's own listing for that role says 18 and up. So teens should expect the front desk or the gift shop. The page does not list hours, how long you must stay, a health check, a TB test or fees. Ask the volunteer office.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "sutter-mills-peninsula-youth-volunteer",
@@ -104515,10 +104536,10 @@
    "https://www.tvrop.org/students-parents/faqs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "You must arrange your own transportation to off-site classes. Classes run at six high schools and Las Positas College, during the school day and after school.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "tri-valley-teen-job-and-career-fair",
@@ -104554,10 +104575,10 @@
    "https://www.dublin.ca.gov/2546/Teen-Job-Career-Fair"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Location: 9300 Alcosta Blvd, San Ramon. The program page does not list which employers will come. Questions: Dublin City Hall, 100 Civic Plaza, 925-833-6650.",
-  "verified_on_label": "Oct 14, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "trybe-oakland-summer-jobs",
@@ -104572,19 +104593,19 @@
    "any"
   ],
   "what_you_do": "You can get skills building, leadership training and paid internships with Trybe, an East Bay youth program. The City's summer jobs list shows that Trybe offers a 100 hour summer job for East Oakland youth.",
-  "min_age": null,
-  "max_age": null,
+  "min_age": 15,
+  "max_age": 24,
   "grades": null,
-  "who_can_apply": "Current rules are not posted. The 2022 posting said youth 16 and over with valid photo ID and a valid SSN or ITIN were paid; younger youth got a stipend. Confirm with the program.",
+  "who_can_apply": "Ages 15 to 24 on the 2026 flyer. 2027 rules are not posted. The 2022 posting said youth 16 and over with valid photo ID and a valid SSN or ITIN were paid; younger youth got a stipend. Confirm with the program.",
   "paid_type": "paid",
   "pay_detail": "City of Oakland's 2026 list says paid, 100 hours, at least Oakland minimum wage. Trybe's own 2022 posting said $15.06 per hour (old).",
   "season": "summer",
   "duration": "About 100 hours",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "The Trybe page shows only a 2022 Youth Summer Internship, marked closed (applications were due May 31, 2022). No 2026 or 2027 dates are posted.",
+  "deadline_text": "2026 flyer: applications opened Apr 20, interviews May 18, internship June 10 to July 9, 2026. 2027 dates are not posted.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Call (510) 985-9915 or email info@oaklandtrybe.org. Trybe also has a Jobs/Internships page on its site.",
   "needs_work_permit": null,
   "url": "https://www.oaklandtrybe.org/jobs-internships",
@@ -104593,13 +104614,14 @@
    "https://oaklandtrybe.org",
    "https://www.oaklandtrybe.org/jobs-internships",
    "https://www.oaklandtrybe.org/summer",
+   "https://static.wixstatic.com/media/1e7c13_f93c5e09831240f29c388f4d677a6483~mv2.png",
    "https://www.oaklandca.gov/Government/Working-for-Oakland/Summer-Jobs-and-Internships-for-Youth/Youth-Employment-and-Training"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "Trybe's free summer camp is for kids 0 to 14; the paid youth internship is separate and the summer page shows only a flyer with no details. Call to ask about 2027. Do not confuse oaklandtrybe.org with trybe.org.",
-  "verified_on_label": "Oct 7, 2026"
+  "notes": "Trybe's free summer camp is for kids 0 to 14; the paid youth internship is separate. The dates shown are from the 2026 flyer on the summer page, so they are last year's. The flyer lists food systems, community care, skilled trades and outdoor youth work. Call to ask about 2027. Do not confuse oaklandtrybe.org with trybe.org.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "regions": [
@@ -108261,10 +108283,10 @@
    "https://www.ucsfbenioffchildrens.org/about/become-a-volunteer"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-21",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Volunteers serve at Parnassus, Mission Bay, Mt. Zion and BCH Oakland, on weekdays 8 a.m. to 5 p.m. Under 18 needs a parent at the health clearance visit. No high school summer program was found.",
-  "verified_on_label": "Oct 21, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "grades": "Current 9th, 10th and 11th graders (rising sophomores, juniors, seniors)",
@@ -108766,7 +108788,7 @@
   "needs_work_permit": false,
   "priority": 2,
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-02",
   "id": "union-city-youth-commission",
   "name": "Union City Youth Commission",
   "org": "City of Union City",
@@ -108794,7 +108816,7 @@
   "sources_fetched": [
    "https://www.unioncityca.gov/650/Youth-Commission"
   ],
-  "verified_on_label": "Oct 19, 2026",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -109223,13 +109245,13 @@
    "trades",
    "education"
   ],
-  "what_you_do": "Restore aircraft or the ship, work in the radio room, do outreach, or help visitors. Teens 16 and 17 work with an adult.",
+  "what_you_do": "Restore aircraft or the ship, work in the radio room, do outreach, or help visitors. Teens 16 and 17 must have a parent or guardian with them.",
   "min_age": 16,
   "max_age": null,
   "grades": null,
-  "who_can_apply": "Ages 16 and up for aircraft restoration, ship restoration, radio, community outreach and visitor services (16 and 17 year olds work with an adult). Collections: 18 and up. Docents, events, security: 21 and up.",
+  "who_can_apply": "Ages 16 and up for aircraft restoration, ship restoration, radio, community outreach and visitor services. If you are 16 or 17, a parent or guardian must stay with you at all times. Collections: 18 and up. Docents, events, security: 21 and up.",
   "paid_type": "unpaid",
-  "pay_detail": null,
+  "pay_detail": "Unpaid. A background check is required: $30 through the museum, or bring your own from the last year.",
   "season": "year-round",
   "duration": "Set weekly shifts, for example Wed and Sat 8:30 to noon (aircraft), Tue and Sat (ship), first Saturday monthly (radio)",
   "status": "unconfirmed",
@@ -109242,13 +109264,14 @@
   "url": "https://uss-hornet.org/volunteer",
   "apply_url": "https://www.volgistics.com/appform/1737643431",
   "sources_fetched": [
-   "https://uss-hornet.org/volunteer"
+   "https://uss-hornet.org/volunteer",
+   "https://www.volgistics.com/appform/1737643431"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "Ship work involves climbing ladders and tight spaces. Another museum page lists overnight programs for groups, but no teen intern program.",
-  "verified_on_label": "Oct 18, 2026"
+  "notes": "The parent or guardian must also apply and pass a background check. The form asks for 8 to 16 hours a month and a new volunteer orientation, held the first Saturday of each month at 10 AM. Ship work involves climbing ladders and tight spaces. Another museum page lists overnight programs for groups, but no teen intern program.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "ut-austin-csr-sees-internship",
@@ -110489,15 +110512,16 @@
   "how_to_apply": "Look at the open shifts and apply for one you can work. A volunteer coordinator then contacts you to set up an orientation. You also take role workshops and shadow shifts.",
   "needs_work_permit": false,
   "url": "https://www.valleyhumane.org/volunteer",
-  "apply_url": null,
+  "apply_url": "https://www.volgistics.com/appform/1071333469",
   "sources_fetched": [
-   "https://www.valleyhumane.org/volunteer"
+   "https://www.valleyhumane.org/volunteer",
+   "https://www.volgistics.com/appform/1071333469"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "Students can earn community service hours with the same six month, weekly shift promise. Court ordered hours are not accepted. Volunteers must be fully vaccinated, according to the FAQ. Sunday dog care is the greatest need.",
-  "verified_on_label": "Oct 14, 2026"
+  "notes": "Students can earn community service hours with the same six month, weekly shift promise. Court ordered hours are not accepted. Volunteers must be fully vaccinated, according to the FAQ.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "valley-water-youth-commission",
@@ -112477,10 +112501,10 @@
    "https://lindsaywildlife.org/hours-prices-directions/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The page does not say if the role is paid, a volunteer role, or has a fee. Ask Lindsay before you apply. Lindsay is at 1931 First Avenue, Walnut Creek.",
-  "verified_on_label": "Oct 14, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "walnut-creek-lindsay-wildlife-owl-teen-program",
@@ -112521,10 +112545,10 @@
    "https://lindsaywildlife.org/hours-prices-directions/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Youth programs email: youthprograms@lindsaywildlife.org. Lindsay is at 1931 First Avenue, Walnut Creek. The same page describes Keepers in Training (KIT), a second step for teens who complete at least one year in the OWL program. KIT teens work closely with Lindsay's Animal Encounters department and commit to a 4 hour weekly shift. Lindsay lists its wildlife hospital and exhibit volunteer jobs as ages 18 and up. The OWL program is designed for teens ages 13 to 18.",
-  "verified_on_label": "Oct 14, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "walnut-creek-save-mount-diablo-volunteer-workdays",
@@ -112562,10 +112586,10 @@
    "https://savemountdiablo.org/about/contact/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The office is at 201 N. Civic Drive, Walnut Creek. Groups can fill out a group workday interest form. Group workdays are three hours long, from Wednesday through Saturday, at sites in Clayton, Concord and Pittsburg. All tools, equipment and instruction are provided. The volunteer page also lists other jobs, such as hike leader and office help. It does not give an age for them.",
-  "verified_on_label": "Oct 14, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "warren-newport-library-student-volunteers-and-tag",
@@ -112848,10 +112872,10 @@
    "https://www.washingtonhealth.com/volunteering/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "No GPA rule or fee appears on the current page (older versions listed a GPA rule and $20 fee). Openings are limited. Office: 2500 Mowry Ave, Fremont. The page says the list is closed as of May 22, 2026, but also says you are welcome to join the list now; call to confirm.",
-  "verified_on_label": "Oct 19, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "grades": null,
@@ -115437,7 +115461,7 @@
   "deadline_text": "No closing dates posted. YEP lists an Afterschool Job Application and a Young Adult Program Application 2026.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Use the application links on yep.org/how-you-join, or call 510-533-3447 or visit 2300 International Blvd, Oakland.",
+  "how_to_apply": "Under 18: come to YEP after school, not during school hours, and fill out the application with a counselor. Ages 18 to 24: use the form on yep.org/how-you-join. Call 510-533-3447 or visit 2300 International Blvd, Oakland.",
   "needs_work_permit": true,
   "url": "https://www.yep.org",
   "apply_url": "https://www.yep.org/how-you-join/",
@@ -115447,10 +115471,10 @@
    "https://www.yep.org/how-you-join/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "The YEP page does not give pay rates. Age 14 to 18 for summer comes from the City of Oakland table; the 19 to 24 programs are for older youth.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "ymca-east-bay-camp-loma-mar-camp-assistant",
@@ -115490,10 +115514,10 @@
    "https://www.ymcaeastbay.org/youth-development/camp-loma-mar/summer-camp"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Run by YMCA of the East Bay. One line of the 2027 CA listing still says '12th grade in Fall of 2026' while its title says fall 2027; confirm with the camp. In 2026 the camp sold round-trip buses from the Oakland YMCA and the EM Downer YMCA ($150), and LITs and CAs went home Friday and Saturday nights between weeks; 2027 bus details are not posted. Teens entering 10th or 11th grade can apply to Leaders in Training (LIT) instead. Contact: clmteam@ymcaeastbay.org.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "ymca-east-bay-camp-loma-mar-leaders-in-training",
@@ -115526,7 +115550,7 @@
   "how_to_apply": "Starting January 1, 2027, send in the LIT form on the camp's sign up site. Pay a $25 deposit, which you can get back. To get in, you need good references and an interview.",
   "needs_work_permit": false,
   "url": "https://www.ymcaeastbay.org/youth-development/camp-loma-mar/summer-camp",
-  "apply_url": null,
+  "apply_url": "https://www.ultracamp.com/info/sessionDetail.aspx?idCamp=1481&idSession=592753&campCode=M8R",
   "sources_fetched": [
    "https://www.ymcaeastbay.org/youth-development/camp-loma-mar/summer-camp",
    "https://www.ymcaeastbay.org/youth-development/camp-loma-mar",
@@ -115534,10 +115558,10 @@
    "https://www.ultracamp.com/info/sessionDetail.aspx?idCamp=1481&idSession=592753&campCode=M8R"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Camp Loma Mar is run by the YMCA of the East Bay, not the San Francisco Y. The only LIT price posted is the $25 deposit. So ask the camp about the full fee and aid before you apply. A regular one week camp session in 2027 costs $1,065. Rising 12th graders can apply to be a Camp Assistant instead. The camp also plans a teen weekend for future camp leaders this winter or spring. Dates are not posted yet. Contact: clmteam@ymcaeastbay.org.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "ymca-metro-atlanta-teen-leaders-club",
@@ -116438,10 +116462,10 @@
    "https://www.youthradio.org"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The page describes training and mentoring, not a formal paid internship. Ask whether it is paid. It is not on the City of Oakland's 2026 summer jobs list.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "youth-spirit-artworks-berkeley",
@@ -116461,12 +116485,12 @@
   "grades": null,
   "who_can_apply": "Ages 15 to 25, low-income or homeless youth (per the Berkeley Public Library jobs page).",
   "paid_type": "paid",
-  "pay_detail": "Job training rate not posted (checked 2026-10-09). The home page lists a $300 stipend for full participation in some workshop series.",
+  "pay_detail": "Job training rate not posted. The home page lists a $300 stipend for full participation in some workshop series.",
   "season": "year-round",
   "duration": null,
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Closed as of 2026-10-10. The home page FAQ says YSA is not actively accepting applications. No reopen date is posted.",
+  "deadline_text": "Closed as of Nov 2, 2026. The home page FAQ says YSA is not actively accepting applications. No reopen date is posted.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Call (510) 858-7229 or email community@youthspiritartworks.org (both on the home page) and ask about job training. The Berkeley Public Library jobs page lists jobtraining@youthspiritartworks.org.",
@@ -116479,10 +116503,10 @@
    "https://www.youthspiritartworks.org"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-02",
   "priority": 3,
-  "notes": "Read the home page on 2026-10-09. It says YSA serves transitional age youth 14 to 25 at 1740 Alcatraz Ave, Berkeley, with free drop-in hours, workshops and events; some workshop series pay a $300 stipend for full participation. The home page does not describe a job training program or its pay, so the 15 to 25 age range, the paid jobs and the jobtraining email come from the library page and are unconfirmed. The FAQ says YSA is not actively accepting applications. Ask before you plan around a job. Not on the City of Oakland's 2026 summer jobs list.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "As of Nov 2, 2026, the home page says YSA serves youth 14 to 25 at 1740 Alcatraz Ave, Berkeley, with free drop-in hours, workshops and events. Some workshop series pay a $300 stipend if you finish. The home page does not list a job program or its pay, so the 15 to 25 age range, the paid jobs and the job email come from the library page and are not confirmed. The FAQ says YSA is not taking applications right now. Ask before you plan on a job. It is not on the City of Oakland 2026 summer jobs list.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "youth-uprising-summer-jobs",
@@ -116519,10 +116543,10 @@
    "https://www.oaklandca.gov/Government/Working-for-Oakland/Summer-Jobs-and-Internships-for-Youth/Youth-Employment-and-Training"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "YU's own site has no summer job details, so the ages and hours come from the City of Oakland's 2026 list. Also a referral partner for EBMUD's high school internship.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "youthbeat-media-careers",
@@ -116540,16 +116564,16 @@
   "min_age": 16,
   "max_age": 21,
   "grades": "middle and high school",
-  "who_can_apply": "Oakland middle and high school students. The City summer jobs list shows Media Careers for ages 16 to 21 (June to September).",
+  "who_can_apply": "OUSD high school students can apply to after school classes. Partner middle and high schools host classes on site. The pre-apprentice program is for rising 11th or 12th graders with a 2.0 GPA. The City summer jobs list shows Media Careers for ages 16 to 21 (June to September).",
   "paid_type": "mixed",
-  "pay_detail": "Training is free; apprentice and PRO work is paid (rate not posted)",
+  "pay_detail": "After school classes are free and pay a stipend of $300 to $600 per semester, based on attendance. The 2026-27 pre-apprentice program pays a $6,000 stipend. YouthBeat PRO pay rate not posted.",
   "season": "year-round",
   "duration": null,
-  "status": "unconfirmed",
+  "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "No deadline or cohort dates posted, and the site does not say applications are ongoing. Use the Apply link on the site.",
+  "deadline_text": "After school classes for 2026-27 are accepting applications as of Nov 2, 2026. No closing date is posted. The pre-apprentice form is closed. That program runs Sept 28, 2026 to March 24, 2027. Summer 2026 is closed.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Use the Apply page at youthbeat.org/apply, or call 510-922-0060 or email youthbeatmedia@gmail.com.",
   "needs_work_permit": true,
   "url": "https://www.youthbeat.org",
@@ -116559,10 +116583,10 @@
    "https://www.oaklandca.gov/Government/Working-for-Oakland/Summer-Jobs-and-Internships-for-Youth/Youth-Employment-and-Training"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "YouthBeat's own page does not state exact ages; 16 to 21 comes from the City of Oakland's list. Address is a PO box in Oakland.",
-  "verified_on_label": "Oct 7, 2026"
+  "notes": "The summer ages 16 to 21 come from the City of Oakland's list. The pre-apprentice page lists ages 16 to 24. Address is a PO box in Oakland.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "yucca-valley-youth-commission",

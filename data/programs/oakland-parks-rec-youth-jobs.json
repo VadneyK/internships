@@ -13,12 +13,12 @@
     "food-hospitality"
   ],
   "what_you_do": "You can apply for part-time and seasonal City recreation jobs. Jobs include recreation aide, recreation leader, sports official, lifeguard, water safety instructor and pool staff. There is also a recreation specialist job.",
-  "min_age": null,
+  "min_age": 15,
   "max_age": null,
   "grades": null,
-  "who_can_apply": "The City is hiring for its recreation jobs. The page does not state a minimum age. It strongly encourages people who speak Spanish, Cantonese and Mandarin to apply.",
+  "who_can_apply": "Age 15 for Lifeguard, with current Red Cross cards. Age 16 for Recreation Aide and Sports Official. Age 17 for Water Safety Instructor. Most other jobs need 18. You need a Social Security number to work for the City. People who speak Spanish, Cantonese and Mandarin are strongly encouraged to apply.",
   "paid_type": "paid",
-  "pay_detail": "Paid job. Not posted on the page; see each job posting",
+  "pay_detail": "Paid job. Per hour: Recreation Aide from $17.65, Lifeguard from $21.70, Water Safety Instructor from $25.23, Sports Official $26.79.",
   "season": "summer",
   "duration": "Varies by posting; mostly seasonal",
   "status": "open-now",
@@ -31,10 +31,12 @@
   "url": "https://www.oaklandca.gov/topics/parks-recreation",
   "apply_url": "https://www.governmentjobs.com/careers/oaklandca",
   "sources_fetched": [
-    "https://www.oaklandca.gov/topics/parks-recreation"
+    "https://www.oaklandca.gov/topics/parks-recreation",
+    "https://www.oaklandca.gov/Government/Departments/Parks-Recreation-Youth-Development/Part-Time-Hiring-Information",
+    "https://www.governmentjobs.com/careers/oaklandca"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-26",
+  "verified_on": "2026-11-02",
   "priority": 1,
-  "notes": "The hiring process takes several months, so apply early. Check each posting for minimum age and pay. The governmentjobs.com/careers/oaklandca portal showed 0 openings on Oct 7, 2026. If you cannot find the posting, call (510) 238-7275."
+  "notes": "The hiring process takes several months, so apply early. You must bring your Social Security card to finish hiring. Hiring also includes fingerprints and a TB test. If you cannot find the posting, call (510) 238-7275."
 }

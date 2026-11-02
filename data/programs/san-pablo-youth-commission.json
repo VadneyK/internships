@@ -15,14 +15,14 @@
   "min_age": 13,
   "max_age": 19,
   "grades": null,
-  "who_can_apply": "Youth ages 13 to 19. The page does not list a residency rule.",
+  "who_can_apply": "Youth ages 13 to 19. The application says you must live or go to school in San Pablo, or want to serve the San Pablo community.",
   "paid_type": "not-stated",
   "pay_detail": "Not stated on the program page.",
   "season": "school-year",
-  "duration": "Meets monthly",
+  "duration": "Six-month terms. Meets monthly",
   "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "The page says the city is taking online applications now. It gives no closing date.",
+  "deadline_text": "The page says the city is taking online applications now. The application says it takes them year-round.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Fill out the Youth Commission Application, an online form linked on the program page. Contact the city with questions.",
@@ -30,10 +30,11 @@
   "url": "https://www.sanpabloca.gov/1467/San-Pablo-Youth-Commission",
   "apply_url": "https://forms.gle/971hnxt25A4ErWX87",
   "sources_fetched": [
-    "https://www.sanpabloca.gov/1467/San-Pablo-Youth-Commission"
+    "https://www.sanpabloca.gov/1467/San-Pablo-Youth-Commission",
+    "https://forms.gle/971hnxt25A4ErWX87"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-22",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "Meetings are on the third Thursday of each month, 5:00 to 6:00 PM, in person at the San Pablo Community Center, 2450 Road 20. On April 17, 2023, the City Council approved an amendment to the commission bylaws."
+  "notes": "Meetings are on the third Thursday of each month, 5:00 to 6:00 PM, in person at the San Pablo Community Center, 2450 Road 20. The application says City Hall, so check first. On April 17, 2023, the City Council approved an amendment to the commission bylaws."
 }
