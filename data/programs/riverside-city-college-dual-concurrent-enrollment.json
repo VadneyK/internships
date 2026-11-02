@@ -1,0 +1,38 @@
+{
+  "id": "riverside-city-college-dual-concurrent-enrollment",
+  "name": "Riverside City College Dual and Concurrent Enrollment",
+  "org": "Riverside City College",
+  "regions": [
+    "inland-empire"
+  ],
+  "city": "Riverside, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take RCC college classes while in high school. Dual enrollment (CCAP) classes are free and meet at partner high schools or online. Concurrent students take classes at RCC or online with other RCC students.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "CCAP: you must go to a partner high school. You need parent and counselor approval. Concurrent: you must be 16 or have finished 10th grade. You also need a 3.0 GPA and must attend at least a minimum school day.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "CCAP: fees and textbooks are free. Concurrent: tuition is free, but you pay for books and for health, student services and transportation fees.",
+  "season": "year-round",
+  "duration": "By term. Up to 8 units in fall or spring. Up to 5 units in summer.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No term dates are posted on the program page as of Nov 2, 2026. Ask your counselor or the college about the next term.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "CCAP: ask your counselor if your school takes part. Apply to RCC, then ask for classes on DualEnroll.com. Concurrent: apply to RCC. Get the approval form signed. Email it with your transcripts to admissions. Then ask the teacher for an add code on the first day.",
+  "needs_work_permit": false,
+  "url": "https://www.rcc.edu/become-a-student/dual-enrollment-student.html",
+  "apply_url": "https://www.opencccapply.net/gateway/apply?cccMisCode=961",
+  "sources_fetched": [
+    "https://www.rcc.edu/become-a-student/dual-enrollment-student.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "An add code is not promised, so you may need to ask more than one teacher. Moreno Valley Unified has only the Nursing Assistant class in CCAP. Concurrent students cannot take Kinesiology. Questions: DualEnrollment@rcc.edu."
+}

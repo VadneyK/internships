@@ -1,0 +1,42 @@
+{
+  "id": "crafton-hills-college-dual-enrollment",
+  "name": "Crafton Hills College Dual Enrollment",
+  "org": "Crafton Hills College",
+  "regions": [
+    "inland-empire"
+  ],
+  "city": "Yucaipa, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take college classes while you are in school and earn college credit. Classes can be at Crafton Hills, or at your high school during or after the school day.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "K to 12",
+  "who_can_apply": "High school students need a yes from a principal, counselor or other school staff. If you are a minor, a parent must agree. You must show you are ready for the subject. Younger students and adult school students can also ask.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "The $46 per unit fee is waived. At Crafton, you pay other campus fees and buy books. For classes held at your school, books and fees are waived too.",
+  "season": "year-round",
+  "duration": "By semester. Up to 11 units a semester.",
+  "status": "opens-soon",
+  "opens_iso": "2026-11-20",
+  "deadline_text": "Spring 2027 open registration runs Nov 20, 2026 to Jan 18, 2027. Your parent and your school each get 7 days to sign. Review can then take up to 5 business days, so start early.",
+  "deadline_iso": "2027-01-18",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply to the college as a Special Admit student. Sign in to Self Service. Send a Dual Enrollment Request each semester. Your parent and school sign it. Once it is approved, register for classes.",
+  "needs_work_permit": false,
+  "url": "https://www.craftonhills.edu/admissions-and-records/dual-enrollment-program/index.php",
+  "apply_url": "https://www.opencccapply.net/cccapply-welcome?cccMisCode=981",
+  "sources_fetched": [
+    "https://www.craftonhills.edu/admissions-and-records/dual-enrollment-program/index.php",
+    "https://www.craftonhills.edu/admissions-and-records/dual-enrollment-program/standard-dual-enrollment.php",
+    "https://www.craftonhills.edu/admissions-and-records/dual-enrollment-program/a-few-things-to-know-before-you-apply.php",
+    "https://www.craftonhills.edu/admissions-and-records/dual-enrollment-program/faq.php",
+    "https://www.craftonhills.edu/admissions-and-records/dates-and-deadlines/priority-registration-dates-spring.php"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "No PE classes, and no classes below the 100 level. Your grades stay on your college record. Your school decides which classes it counts. If your class is at your high school, ask your counselor about dates. Questions: 909-794-2161."
+}

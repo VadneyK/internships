@@ -1,0 +1,41 @@
+{
+  "id": "norco-college-dual-concurrent-enrollment",
+  "name": "Norco College Dual and Concurrent Enrollment",
+  "org": "Norco College",
+  "regions": [
+    "inland-empire"
+  ],
+  "city": "Norco, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take college classes while in high school. Dual enrollment classes meet at your high school or online. Concurrent classes are regular college classes on the Norco campus.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Dual: you must go to a partner school, such as Altus, Corona Norco, La Sierra, Jurupa Valley, Excelsior, CAVA or iQLA. JFK is not one. Concurrent: you must be 16 or have finished 8th grade. You also need a 2.0 GPA and school approval.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Tuition is free. Concurrent students may pay low fees, such as health or student services, and buy books. Dual students should ask their school about books.",
+  "season": "year-round",
+  "duration": "By term. Up to 8 units in fall or spring. Up to 5 units in winter or summer.",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Spring 2027 runs Feb 16 to June 11, 2027. Finish all steps by Feb 6, 2027. Concurrent classes show in DualEnroll on Jan 5, 2027. Winter 2027 steps are due Dec 11, 2026, and at partner schools winter is for returning students only.",
+  "deadline_iso": "2027-02-06",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply to Norco College. Make a DualEnroll.com account. Ask for your classes there, and your parent gives consent one time. If your school does not use DualEnroll, send the concurrent form with parent and school approval to hsconcurrent@norcocollege.edu.",
+  "needs_work_permit": false,
+  "url": "https://www.norcocollege.edu/academicaffairs/ep/hse/index.html",
+  "apply_url": "https://www.opencccapply.net/gateway/apply?cccMisCode=963",
+  "sources_fetched": [
+    "https://www.norcocollege.edu/academicaffairs/ep/hse/index.html",
+    "https://www.norcocollege.edu/academicaffairs/ep/hse/dual.html",
+    "https://www.norcocollege.edu/academicaffairs/ep/hse/concurrent.html",
+    "https://www.norcocollege.edu/academicaffairs/ep/hse/documents/nc-dual-and-concurrent-enrollment-deadlines-2026-2027.pdf"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "If you do not see a class in DualEnroll, it is full. You can email to join the waitlist. Under 16 and not done with 8th grade? You can ask for an exception. No PE or sports classes. Questions: DualEnrollment@norcocollege.edu."
+}
