@@ -102,7 +102,8 @@ const TABLE = {
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 2090385 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-detail.json ceiling 2086000 to 2090400.
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 2090418 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-detail.json ceiling 2090400 to 2090500.
   // 2026-10-26: three Inland Empire cards (Corona, Rancho Cucamonga) on top of PRs 98 to 101. PENDING PERSON APPROVAL. 2090500 to 2091800 (2091776 measured).
-  "data/entries-detail.json": { ceiling: 2091800, reason: "data file, 1521373 bytes measured 2026-10-10" },
+  // 2026-11-02: SoCal sweep (PRs 114 to 118) re-read 240 cards on their official pages. PENDING PERSON APPROVAL. Limit covers the whole stack: 2091800 to 2099500.
+  "data/entries-detail.json": { ceiling: 2099500, reason: "data file, 1521373 bytes measured 2026-10-10" },
   "data/entries-home.json": { ceiling: 899400, reason: "data file, 817599 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-lite.json ceiling 2223100 to 2277600.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-lite.json limit 2277600 to 2341900.
@@ -138,7 +139,8 @@ const TABLE = {
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 2673498 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json ceiling 2667500 to 2673500.
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 2673515 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries-lite.json ceiling 2673500 to 2673600.
   // 2026-10-26: three Inland Empire cards (Corona, Rancho Cucamonga) on top of PRs 98 to 101. PENDING PERSON APPROVAL. 2673600 to 2675500 (2675461 measured).
-  "data/entries-lite.json": { ceiling: 2675500, reason: "data file, 1937500 bytes measured 2026-10-10" },
+  // 2026-11-02: SoCal sweep (PRs 114 to 118) re-read 240 cards on their official pages. PENDING PERSON APPROVAL. Limit covers the whole stack: 2675500 to 2680000.
+  "data/entries-lite.json": { ceiling: 2680000, reason: "data file, 1937500 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json ceiling 697700 to 716100.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json limit 716100 to 736500.
   // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json limit 736500 to 748900.
@@ -208,7 +210,8 @@ const TABLE = {
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 5508369 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json ceiling 5495900 to 5508400.
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 5508419 bytes. Approved by Kentaro 2026-10-19 (merge train). data/entries.json ceiling 5508400 to 5508500.
   // 2026-10-26: three Inland Empire cards (Corona, Rancho Cucamonga) on top of PRs 98 to 101. PENDING PERSON APPROVAL. 5508500 to 5512500 (5512401 measured).
-  "data/entries.json": { ceiling: 5512500, reason: "data file, 3996617 bytes measured 2026-10-10" },
+  // 2026-11-02: SoCal sweep (PRs 114 to 118) re-read 240 cards on their official pages. PENDING PERSON APPROVAL. Limit covers the whole stack: 5512500 to 5529500.
+  "data/entries.json": { ceiling: 5529500, reason: "data file, 3996617 bytes measured 2026-10-10" },
   "data/expiring-dates.json": { ceiling: 1700, reason: "data file, 1530 bytes measured 2026-10-10" },
   "data/gaps.json": { ceiling: 5400, reason: "data file, 4832 bytes measured 2026-10-10" },
   "data/interview.json": { ceiling: 12400, reason: "data file, 11207 bytes measured 2026-10-10" },
