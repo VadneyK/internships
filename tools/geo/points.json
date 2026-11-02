@@ -301,6 +301,17 @@
    ]
   },
   {
+   "key": "Carlsbad, CA",
+   "state": "CA",
+   "lat": 33.128,
+   "lon": -117.2855,
+   "precision": "city",
+   "ids": [
+    "carlsbad-library-summer-reading-teen-volunteers",
+    "carlsbad-library-teen-insights-virtual-volunteer"
+   ]
+  },
+  {
    "key": "Castro Valley, CA",
    "state": "CA",
    "lat": 37.7083,
@@ -328,7 +339,9 @@
    "precision": "city",
    "ids": [
     "chula-vista-city-youth-volunteers-interns",
+    "chula-vista-library-youth-volunteers",
     "chula-vista-living-coast-discovery-center-volunteer",
+    "chula-vista-police-teen-engagement-academy",
     "sharp-chula-vista-junior-volunteer",
     "southwestern-college-dual-concurrent-enrollment"
    ]
@@ -522,6 +535,16 @@
    "ids": [
     "cosumnes-fire-explorer",
     "elk-grove-youth-commission"
+   ]
+  },
+  {
+   "key": "Encinitas, CA",
+   "state": "CA",
+   "lat": 33.0506,
+   "lon": -117.2636,
+   "precision": "city",
+   "ids": [
+    "encinitas-youth-commission"
    ]
   },
   {
@@ -1546,7 +1569,8 @@
     "sdsu-robotics-camp",
     "sdsu-upward-bound",
     "usd-cyber-ai-summer-program",
-    "usd-trio-upward-bound"
+    "usd-trio-upward-bound",
+    "va-san-diego-summer-youth-volunteer-program"
    ]
   },
   {

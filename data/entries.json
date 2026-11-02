@@ -14892,6 +14892,86 @@
   "verified_on_label": "Oct 16, 2026"
  },
  {
+  "id": "carlsbad-library-summer-reading-teen-volunteers",
+  "name": "Summer Reading Volunteer Program",
+  "org": "Carlsbad City Library",
+  "regions": [
+   "san-diego"
+  ],
+  "city": "Carlsbad, CA",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "social-impact"
+  ],
+  "what_you_do": "Help at the Carlsbad City Library during its Summer Reading Adventure. You go to an in-person training first.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Entering grades 7 to 12",
+  "who_can_apply": "Teens entering grades 7 to 12. The library takes up to 105 volunteers.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer",
+  "season": "summer",
+  "duration": "The 2026 program ran June 1 to Aug 1, 2026.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 window ran May 1 to May 18, 2026, or until 105 teens signed up. It is closed now. 2027 dates are not posted as of Nov 2, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Check the library page for the form when the next window opens. You must go to an in-person orientation. Questions: libraryteens@carlsbadca.gov.",
+  "needs_work_permit": false,
+  "url": "https://library.carlsbadca.gov/youth/teens/summer-reading-volunteer-program",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://library.carlsbadca.gov/youth/teens/summer-reading-volunteer-program"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "Closed now. These are the 2026 dates, so check the page in spring 2027. Spots can fill before the window ends, so apply early.",
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
+  "id": "carlsbad-library-teen-insights-virtual-volunteer",
+  "name": "Teen Insights",
+  "org": "Carlsbad City Library",
+  "regions": [
+   "san-diego"
+  ],
+  "city": "Carlsbad, CA",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "arts-media"
+  ],
+  "what_you_do": "Earn 4 service hours from home. Write two reviews of any library program, service or item. Each review is 6 to 8 sentences long.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "7 to 12",
+  "who_can_apply": "Teens in grades 7 to 12. You can do this up to 5 times each school year.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer. You earn 4 service hours each time.",
+  "season": "year-round",
+  "duration": "Up to 5 times each school year",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline. You can send reviews during the school year, up to 5 times.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Email your two reviews to libraryteens@carlsbadca.gov. Add your name, school and grade. Say if the library may share your review, and how to show your name.",
+  "needs_work_permit": false,
+  "url": "https://library.carlsbadca.gov/programs/library-volunteer-program",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://library.carlsbadca.gov/programs/library-volunteer-program"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "You can email the same address if you need ideas for what to review. Staff fill out your service hour form. Other library jobs are limited, and not all who apply get picked.",
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
   "grades": null,
   "apply_url": null,
   "opens_iso": null,
@@ -20643,6 +20723,47 @@
   "verified_on_label": "Nov 2, 2026"
  },
  {
+  "id": "chula-vista-library-youth-volunteers",
+  "name": "Library Youth Volunteers",
+  "org": "Chula Vista Public Library",
+  "regions": [
+   "san-diego"
+  ],
+  "city": "Chula Vista, CA",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "social-impact"
+  ],
+  "what_you_do": "Help at one of three Chula Vista library branches. You can tutor, help with homework, shelve materials and do other tasks.",
+  "min_age": 15,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "Ages 15 and a half to 17. You must give at least one hour a week for six months.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer",
+  "season": "year-round",
+  "duration": "At least one hour a week for six months",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline is listed. The library shows its youth forms all year.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Pick the youth form for your branch on the library page. One form is for Civic Center. The other is for South and Otay Ranch.",
+  "needs_work_permit": false,
+  "url": "https://www.chulavistaca.gov/departments/library/support-the-library",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.chulavistaca.gov/departments/library/support-the-library",
+   "https://www.chulavistaca.gov/departments/human-resources/youth-volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "Sending a form does not promise you a spot. The city keeps it for six months. After that you must apply again.",
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
   "grades": null,
   "max_age": 17,
   "apply_url": "https://www.volgistics.com/appform/1511109179",
@@ -20681,6 +20802,46 @@
    "https://www.thelivingcoast.org/support-us/join-the-team/volunteer/volunteer/"
   ],
   "verified_on_label": "Nov 2, 2026"
+ },
+ {
+  "id": "chula-vista-police-teen-engagement-academy",
+  "name": "Teen Engagement Academy",
+  "org": "Chula Vista Police Department",
+  "regions": [
+   "san-diego"
+  ],
+  "city": "Chula Vista, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government"
+  ],
+  "what_you_do": "Learn how police work is done from units like SWAT, K-9 and Forensics. You meet once a week for three hours. The academy ends with a graduation at City Council Chambers.",
+  "min_age": 13,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Local teens ages 13 to 18. Chula Vista residents come first. You must go to the full program. Only 20 teens get in.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free to join",
+  "season": "summer",
+  "duration": "About seven weeks, one 3 hour session a week",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 academy met July 29 to Sept 16, 2026, and is closed. The police expect the next one in 2027. Dates are not posted as of Nov 2, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Watch the police social media pages. They post when the next one opens. Or email community_relations@chulavistaca.gov to ask.",
+  "needs_work_permit": false,
+  "url": "https://www.chulavistaca.gov/departments/police-department/programs/citizen-and-teen-academy",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.chulavistaca.gov/departments/police-department/programs/citizen-and-teen-academy"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "Closed now. These are the 2026 dates. The 2026 sessions were on Wednesdays from 5 PM to 8 PM at 315 Fourth Ave. The 2026 academy filled up, so apply soon when it opens.",
+  "verified_on_label": "Nov 2, 2026",
+  "limited": true
  },
  {
   "id": "cincinnati-art-museum-10x10-teen-volunteer-team",
@@ -31502,6 +31663,49 @@
    "https://encenter.org/lit-application/"
   ],
   "verified_on_label": "Nov 2, 2026"
+ },
+ {
+  "id": "encinitas-youth-commission",
+  "name": "Youth Commission",
+  "org": "City of Encinitas",
+  "regions": [
+   "san-diego"
+  ],
+  "city": "Encinitas, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Advise the City Council on youth and teen programs. You write a yearly work plan and help update the youth and teen master plan.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "7 to 12",
+  "who_can_apply": "Students in grades 7 to 12 who live in Encinitas. Up to 9 members serve.",
+  "paid_type": "not-stated",
+  "pay_detail": "Pay is not stated",
+  "season": "school-year",
+  "duration": "1 year term. Meetings run September through June.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "As of Nov 2, 2026 the city lists 0 open seats and no recruitment dates. Open seats usually wait for the next yearly recruitment.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Ask when the next sign up starts. Contact Elle Camarena at ecamarena@encinitasca.gov. You can also call 760-943-2261. The City Council picks the members.",
+  "needs_work_permit": null,
+  "url": "https://www.encinitasca.gov/government/boards-commissions/youth-commission",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.encinitasca.gov/government/boards-commissions/youth-commission",
+   "https://encinitas.granicus.com/boards/w/63e7e664d2bd169d",
+   "https://ecode360.com/44475945"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "No seats are open right now. Meetings are the first Wednesday of the month at 4:30 PM at City Council Chambers. If you miss three meetings in a row, you lose your seat.",
+  "verified_on_label": "Nov 2, 2026",
+  "limited": true
  },
  {
   "id": "endeavor-health-edward-hospital-student-volunteer",
@@ -109403,6 +109607,45 @@
   "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Closed now. The age, hours and application steps come from the 2024 flyer because the current page only says 2026 applications are closed. The 2024 flyer also required COVID vaccination or an exemption; check the current policy.",
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
+  "id": "va-san-diego-summer-youth-volunteer-program",
+  "name": "Summer Youth Volunteer Program",
+  "org": "VA San Diego Healthcare System",
+  "regions": [
+   "san-diego"
+  ],
+  "city": "San Diego, CA",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Help in departments of the VA medical center. Past tasks include serving coffee, showing patients the way, helping in clinics and helping with fun programs. You learn about health care jobs.",
+  "min_age": 14,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "Youth ages 14 to 17. The program fills 50 slots. Your placement depends on what jobs are open.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. A past year offered a certificate for 80 or more hours, a polo shirt, free parking and lunch on days of 4 or more hours.",
+  "season": "summer",
+  "duration": "Summer. The length is not listed.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 deadline was May 15, 2026, with orientation on May 30, 2026. 2027 dates are not posted as of Nov 2, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "To apply, email Mauricio Sanchez at mauricio.sanchez@va.gov. You can also call 858-642-3267. Ask for details when you do.",
+  "needs_work_permit": false,
+  "url": "https://www.va.gov/san-diego-health-care/work-with-us/volunteer-or-donate/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.va.gov/san-diego-health-care/work-with-us/volunteer-or-donate/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "Closed now. The dates here are from 2026, so check back in spring 2027. The tasks and perks come from the 2024 part of the VA page and may change. The office is at 3350 La Jolla Village Drive, room 1603.",
   "verified_on_label": "Nov 2, 2026"
  },
  {

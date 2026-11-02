@@ -1,0 +1,40 @@
+{
+  "id": "chula-vista-library-youth-volunteers",
+  "name": "Library Youth Volunteers",
+  "org": "Chula Vista Public Library",
+  "regions": [
+    "san-diego"
+  ],
+  "city": "Chula Vista, CA",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "social-impact"
+  ],
+  "what_you_do": "Help at one of three Chula Vista library branches. You can tutor, help with homework, shelve materials and do other tasks.",
+  "min_age": 15,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "Ages 15 and a half to 17. You must give at least one hour a week for six months.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer",
+  "season": "year-round",
+  "duration": "At least one hour a week for six months",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline is listed. The library shows its youth forms all year.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Pick the youth form for your branch on the library page. One form is for Civic Center. The other is for South and Otay Ranch.",
+  "needs_work_permit": false,
+  "url": "https://www.chulavistaca.gov/departments/library/support-the-library",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.chulavistaca.gov/departments/library/support-the-library",
+    "https://www.chulavistaca.gov/departments/human-resources/youth-volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "Sending a form does not promise you a spot. The city keeps it for six months. After that you must apply again."
+}
