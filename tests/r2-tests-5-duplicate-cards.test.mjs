@@ -115,7 +115,7 @@ const SHARED_URL_ALLOW = new Map([
     reason: "Shared hub: one CCM Prep application portal covers both summer intensives (ticket r2-data-content-4).",
   }],
   ["https://cosmos-ucop.ucdavis.edu/", {
-    ids: ["cosmos-uc-davis", "uci-cosmos"],
+    ids: ["cosmos-uc-davis", "cosmos-uc-merced", "uci-cosmos"],
     reason: "Same link on 2 cards (University of California (UC Davis campus); University of California, Irvine (COSMOS)). Not yet reviewed as a shared hub or a duplicate.",
   }],
   ["https://enroll.jobcorps.gov", {
