@@ -1,0 +1,41 @@
+{
+  "id": "fullerton-college-dual-enrollment",
+  "name": "Fullerton College Dual Enrollment",
+  "org": "Fullerton College",
+  "regions": [
+    "orange-county"
+  ],
+  "city": "Fullerton, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take free college classes while in school. Classes are online, after school, or part of your high school day. They are taught by Fullerton College teachers.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "K to 12",
+  "who_can_apply": "You must go to a partner school. The districts are Anaheim, Brea Olinda, Fullerton and Placentia-Yorba Linda. You need permission from a parent and your school.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Classes, books and materials are free for high school students.",
+  "season": "year-round",
+  "duration": "By semester. Up to 15 units in fall or spring.",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "The Spring 2027 form is posted as of Nov 2, 2026. The page lists no due date. The college says to apply early.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Talk to your counselor first so you get on your school's list. Apply to the college with a personal email. Fill out the Spring 2027 course form. Your parent sends the authorization form one time. The college then signs you up.",
+  "needs_work_permit": false,
+  "url": "https://dualenrollment.fullcoll.edu/apply/",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://dualenrollment.fullcoll.edu/apply/",
+    "https://dualenrollment.fullcoll.edu/",
+    "https://dualenrollment.fullcoll.edu/frequently-asked-questions/",
+    "https://dualenrollment.fullcoll.edu/fjuhsd/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "Not at a partner school? Ask about Special Admit, a separate program where you pay some fees and buy books. Log in to Canvas on the first day or you may be dropped. Grades stay on your college record. Questions: dualenrollment@fullcoll.edu or (714) 992-7727."
+}
