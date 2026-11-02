@@ -5,7 +5,7 @@
   "opens_iso": null,
   "apply_url": "https://cityofsantabarbara.perfectmind.com/23701/Clients/BookMe4BookingPages/BookingCoursesPage?calendarId=78ba1a4e-fe62-4fbb-b98e-742d0b6a11a3&widgetId=73e0f759-582c-4577-baac-c8b6a2b9fad6&embed=False&singleCalendarWidget=true",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-02",
   "deadline_iso": null,
   "id": "santa-barbara-parks-rec-junior-counselor",
   "name": "Junior Counselor Program (Parks and Recreation)",
@@ -26,13 +26,14 @@
   "season": "summer",
   "duration": "Summer camp season; length not stated",
   "status": "unconfirmed",
-  "deadline_text": "No dates are posted on the page. Use the Register link or call Parks and Recreation at 805-564-5418.",
+  "deadline_text": "No dates are posted on the page. As of Nov 2, 2026, the Register page shows no open classes. Check back or call Parks and Recreation at 805-564-5418.",
   "deadline_confidence": "unknown",
   "how_to_apply": "Use the Register button on the Teens and Early Adults page.",
   "needs_work_permit": false,
   "url": "https://sbparksandrec.santabarbaraca.gov/activities/teen-and-early-adult-recreation#junior-counselor",
   "sources_fetched": [
-    "https://sbparksandrec.santabarbaraca.gov/activities/teen-and-early-adult-recreation"
+    "https://sbparksandrec.santabarbaraca.gov/activities/teen-and-early-adult-recreation",
+    "https://cityofsantabarbara.perfectmind.com/23701/Clients/BookMe4BookingPages/BookingCoursesPage?calendarId=78ba1a4e-fe62-4fbb-b98e-742d0b6a11a3&widgetId=73e0f759-582c-4577-baac-c8b6a2b9fad6&embed=False&singleCalendarWidget=true"
   ],
   "priority": 2,
   "notes": "The same page also lists a Job Apprentice Program and a free Arts Alliance mentoring program; those pages gave no ages or pay, so they are not listed."
