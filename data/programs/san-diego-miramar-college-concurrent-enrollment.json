@@ -1,0 +1,39 @@
+{
+  "id": "san-diego-miramar-college-concurrent-enrollment",
+  "name": "San Diego Miramar College Concurrent Enrollment",
+  "org": "San Diego Miramar College",
+  "regions": [
+    "san-diego"
+  ],
+  "city": "San Diego, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take college classes at Miramar College while in high school and earn credit toward a degree or transfer. Some high schools also offer CCAP college classes on their own campus during the school day.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Eligible high school students. You must clear class prerequisites and show proof. The class must count toward a college degree. Exercise Science classes are not allowed.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Enrollment fees are waived under 12 units. CCAP tuition and textbooks are free. Ask Admissions about other fees and books.",
+  "season": "year-round",
+  "duration": "By term",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Send a new form each term. The district page lists no date as of Nov 2, 2026. Ask Miramar Admissions about the term you want.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply online to get a student ID. Send the supplemental form each term with the class numbers you want. Staff then enroll you. If a class is full, they contact you. For CCAP, ask your high school counselor first.",
+  "needs_work_permit": false,
+  "url": "https://www.sdccd.edu/students/new-students/high-school-students.aspx",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.sdccd.edu/students/new-students/high-school-students.aspx",
+    "https://sdmiramar.edu/services/admissions"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "These steps come from the district page, since Miramar sends high school students there. Keep a 2.0 GPA each semester. Grades stay on your college record. Miramar Admissions: 619-388-7844 or miraadm@sdccd.edu."
+}
