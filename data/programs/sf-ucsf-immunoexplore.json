@@ -15,25 +15,26 @@
   "min_age": null,
   "max_age": null,
   "grades": null,
-  "who_can_apply": "Bay Area high school students who may have limited opportunities to engage with biomedical research, per the page. Grade range and other rules are not stated.",
+  "who_can_apply": "Bay Area high school students who may have limited opportunities to engage with biomedical research, per the page. The 2026 form was for current 10th and 11th graders.",
   "paid_type": "unpaid",
   "pay_detail": "Free",
   "season": "summer",
-  "duration": "Not stated (summer camp; dates not posted)",
+  "duration": "2026 camp: July 27 to 31, 8am to 4pm",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "The page is out of date (titled Summer Camp 2025, it says 2026 applications are open but posts no dates), so email the program through the Contact Us link before applying.",
+  "deadline_text": "The page is out of date (titled Summer Camp 2025, it says 2026 applications are open). The 2026 form's deadline was May 1, 2026, and camp was set for July 27 to 31. No 2027 dates are posted, so email the program through the Contact Us link before applying.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Email the program first, through the Contact Us link on the ImmunoX site, because the page is out of date. The page links a Google Form for 2026 camper applications.",
+  "how_to_apply": "Email the program first, through the Contact Us link on the ImmunoX site, because the page is out of date. The 2026 Google Form on the page is past its May 1, 2026 deadline.",
   "needs_work_permit": false,
   "url": "https://immunox.ucsf.edu/community/immunoexplore",
-  "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLSeh3fu02ldq5PJF2XT-jWX53DRfOqtvdSpUgOUHQ5cmiCZkCQ/viewform",
+  "apply_url": null,
   "sources_fetched": [
-    "https://immunox.ucsf.edu/community/immunoexplore"
+    "https://immunox.ucsf.edu/community/immunoexplore",
+    "https://docs.google.com/forms/d/e/1FAIpQLSeh3fu02ldq5PJF2XT-jWX53DRfOqtvdSpUgOUHQ5cmiCZkCQ/viewform"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "Re-read the ImmunoX page on 2026-10-09. It is still titled ImmunoExplore - Summer Camp 2025. It says 2026 Camper Applications are now open and links the Google Form. It posts no grade range, camp dates or deadlines, so none are listed here. Confirm dates and grades with ImmunoX before applying."
+  "notes": "These are last year's dates because 2027 dates are not posted. The camp is at UCSF's Parnassus campus. Confirm dates and grades with ImmunoX before applying."
 }

@@ -19,20 +19,21 @@
   "pay_detail": "Volunteer role; no pay stated on the listing",
   "season": "year-round",
   "duration": "Minimum 100 hours in one year, at least three to four hours per week",
-  "status": "rolling",
-  "opens_iso": null,
-  "deadline_text": "The listing shows Actively Recruiting. No application deadline is stated.",
+  "status": "opens-soon",
+  "opens_iso": "2027-03-01",
+  "deadline_text": "Junior and high school applications closed March 6, 2026 because spots filled. They open March 1, 2027. Until then the form takes only people 18 and older.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
-  "how_to_apply": "Complete the online application, then an in-person interview and a health screening. The background check applies to adults only. Questions go to cpmcvolunteer@sutterhealth.org.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Starting March 1, 2027, complete the online application, then an in-person interview and a health screening. The background check applies to adults only. Questions go to cpmcvolunteer@sutterhealth.org.",
   "needs_work_permit": false,
   "url": "https://www.sutterhealth.org/volunteering/opportunities/information-desk-cpmc-van-ness-campus-1079779887",
-  "apply_url": null,
+  "apply_url": "https://www.volgistics.com/appform/752547407",
   "sources_fetched": [
-    "https://www.sutterhealth.org/volunteering/opportunities/information-desk-cpmc-van-ness-campus-1079779887"
+    "https://www.sutterhealth.org/volunteering/opportunities/information-desk-cpmc-van-ness-campus-1079779887",
+    "https://www.volgistics.com/appform/752547407"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-22",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "Read on the official Sutter Health listing 2026-10-07. Not stated on the listing: TB test or immunization requirements, application window, and pay (unpaid volunteer role). The health screening is required but its contents are not described on this listing. Sutter's separate CPMC student volunteer page could not be read from this environment, so no details from it are used here. The listing is a lobby role, so it fits teens 16 and older who want to try hospital volunteering; it is not a high school program."
+  "notes": "The listing still says Actively Recruiting, but the application form says junior spots are full until March 1, 2027. The listing asks for 100 hours and the form says at least 60, so ask which applies. Applications are reviewed the first week of the next month. It is a lobby role, not a high school program."
 }

@@ -59,7 +59,8 @@ const PAGES = {
   // 2026-11-02: 45 new SoCal cards (2,865 programs), stacked on PR 118. PENDING PERSON APPROVAL. 2680000 to 2722500.
   // 2026-11-02: 12 second-pass SoCal cards (2,877 programs), stacked on PR 125. PENDING PERSON APPROVAL. 2722500 to 2733500.
   // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 2733500 to 2735000.
-  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2735000 },
+  // 2026-11-02: San Francisco re-reads, stacked on PR 135. PENDING PERSON APPROVAL. 2735000 to 2736500.
+  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2736500 },
   "calendar.html": { allowed: ["calendar.json", "entries-cal.json"], ceiling: 150000 },
   // 2026-10-15: the Map page reads the map projection and the city points (754,977 bytes). PENDING PERSON APPROVAL, as above.
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) map.html limit 760000 to 763100. PENDING PERSON APPROVAL.
