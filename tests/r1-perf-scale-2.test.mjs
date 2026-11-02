@@ -52,7 +52,8 @@ const DETAIL_FIELDS = ["who_can_apply", "how_to_apply", "notes", "duration", "pa
 // 2026-10-26: three Inland Empire cards (Corona, Rancho Cucamonga) on top of PRs 98 to 101. PENDING PERSON APPROVAL. 636000 to 636300 (636274 measured).
 // 2026-11-02: SoCal sweep (PRs 114 to 118) re-read 240 cards on their official pages. PENDING PERSON APPROVAL. Limit covers the whole stack: 636300 to 641300.
 // 2026-11-02: 45 new SoCal cards (2,865 programs), stacked on PR 118. PENDING PERSON APPROVAL. 641300 to 649500.
-const GZIP_LIMIT = 649500;
+// 2026-11-02: 12 second-pass SoCal cards (2,877 programs), stacked on PR 125. PENDING PERSON APPROVAL. 649500 to 652500.
+const GZIP_LIMIT = 652500;
 
 function readText(file) {
   return fs.readFileSync(path.join(DATA, file), "utf8");

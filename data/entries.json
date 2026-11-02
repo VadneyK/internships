@@ -7238,6 +7238,45 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "barstow-community-college-dual-enrollment",
+  "name": "Barstow Community College Dual Enrollment",
+  "org": "Barstow Community College",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "Barstow, CA",
+  "type": "school-pathway",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Take college classes for free while you are in high school. You could earn high school and college credit at the same time.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "You must be in grades 9 to 12. Home school students have their own steps. Middle or elementary school students can appeal to attend, and the program director decides.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Free up to the unit limit. If you go over the limit, you pay for all your units that semester. The page does not list other fees.",
+  "season": "year-round",
+  "duration": "By semester. Up to 11.5 units in fall or spring. Up to 6 units in summer.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No term dates are posted on the program page as of Nov 2, 2026. Ask the program about the next term.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Apply on OpenCCC with a personal email and pick the K-12 concurrent enrollment major. Meet with a college counselor. Fill out the Dual Enrollment Agreement Form with all signatures. Do the online orientation. Then register for classes.",
+  "needs_work_permit": false,
+  "url": "https://www.barstow.edu/admissions-aid/admissions-records/special-student-populations/dual-enrollment",
+  "apply_url": "https://www.opencccapply.net/gateway/apply?cccMisCode=911",
+  "sources_fetched": [
+   "https://www.barstow.edu/admissions-aid/admissions-records/special-student-populations/dual-enrollment"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "You need a new form each semester. No PE or remedial classes. You must drop your own classes. If you have a 504 or IEP plan, apply to the ACCESS program for help. Questions: dual@barstow.edu.",
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
   "id": "bart-summer-internship-high-school",
   "name": "BART Summer Internship (high school)",
   "org": "Bay Area Rapid Transit (BART)",
@@ -26639,6 +26678,49 @@
   "verified_on": "2026-10-09",
   "verified_on_label": "Oct 9, 2026",
   "limited": true
+ },
+ {
+  "id": "crafton-hills-college-dual-enrollment",
+  "name": "Crafton Hills College Dual Enrollment",
+  "org": "Crafton Hills College",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "Yucaipa, CA",
+  "type": "school-pathway",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Take college classes while you are in school and earn college credit. Classes can be at Crafton Hills, or at your high school during or after the school day.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "K to 12",
+  "who_can_apply": "High school students need a yes from a principal, counselor or other school staff. If you are a minor, a parent must agree. You must show you are ready for the subject. Younger students and adult school students can also ask.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "The $46 per unit fee is waived. At Crafton, you pay other campus fees and buy books. For classes held at your school, books and fees are waived too.",
+  "season": "year-round",
+  "duration": "By semester. Up to 11 units a semester.",
+  "status": "opens-soon",
+  "opens_iso": "2026-11-20",
+  "deadline_text": "Spring 2027 open registration runs Nov 20, 2026 to Jan 18, 2027. Your parent and your school each get 7 days to sign. Review can then take up to 5 business days, so start early.",
+  "deadline_iso": "2027-01-18",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply to the college as a Special Admit student. Sign in to Self Service. Send a Dual Enrollment Request each semester. Your parent and school sign it. Once it is approved, register for classes.",
+  "needs_work_permit": false,
+  "url": "https://www.craftonhills.edu/admissions-and-records/dual-enrollment-program/index.php",
+  "apply_url": "https://www.opencccapply.net/cccapply-welcome?cccMisCode=981",
+  "sources_fetched": [
+   "https://www.craftonhills.edu/admissions-and-records/dual-enrollment-program/index.php",
+   "https://www.craftonhills.edu/admissions-and-records/dual-enrollment-program/standard-dual-enrollment.php",
+   "https://www.craftonhills.edu/admissions-and-records/dual-enrollment-program/a-few-things-to-know-before-you-apply.php",
+   "https://www.craftonhills.edu/admissions-and-records/dual-enrollment-program/faq.php",
+   "https://www.craftonhills.edu/admissions-and-records/dates-and-deadlines/priority-registration-dates-spring.php"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "No PE classes, and no classes below the 100 level. Your grades stay on your college record. Your school decides which classes it counts. If your class is at your high school, ask your counselor about dates. Questions: 909-794-2161.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "crystal-cove-fire-ecology-high-school-internship",
@@ -63758,6 +63840,46 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "moreno-valley-college-dual-enrollment",
+  "name": "Moreno Valley College Dual Enrollment",
+  "org": "Moreno Valley College",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "Moreno Valley, CA",
+  "type": "school-pathway",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Take college classes for high school and college credit. Some classes meet at your high school and others are online. You can also use tutoring, the library and study space at the college.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be enrolled at a high school that takes part. You need approval from your principal or the staff they pick. If you are a minor, a parent must approve too. Students over 18 who are still in high school can join.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Tuition is free and textbooks are covered. The apply page says high school students pay a health fee and a student services fee each term. Parking at the college is not free.",
+  "season": "year-round",
+  "duration": "By term",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No term dates are posted on the program page as of Nov 2, 2026. Ask your high school counselor about the next term.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Pick classes with your high school counselor. Get the School and Parent Authorization Form signed. Apply to the college online for free. Then register with help from your counselor.",
+  "needs_work_permit": false,
+  "url": "https://www.mvc.edu/academics/more-ways/dual-enrollment.php",
+  "apply_url": "https://www.mvc.edu/admissions-aid/apply/high-school-student.php",
+  "sources_fetched": [
+   "https://www.mvc.edu/academics/more-ways/dual-enrollment.php",
+   "https://www.mvc.edu/admissions-aid/apply/high-school-student.php"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "The page does not name the school districts, so ask your counselor if yours takes part. Your grades go on your college record and count in your college GPA. Home school students use concurrent enrollment instead. Questions: (951) 571-6409.",
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
   "id": "morristown-atlantic-health-summer-junior-volunteer",
   "fields": [
    "health"
@@ -70677,6 +70799,48 @@
   ],
   "notes": "The page lists two NIST campuses (Boulder, CO and Gaithersburg, MD); this card is for Gaithersburg. The 2026 poster session was held in Gaithersburg on Aug 6, 2026. The exact application dates for 2027 were not final on the page, so check it again in late October.",
   "verified_on_label": "Oct 22, 2026"
+ },
+ {
+  "id": "norco-college-dual-concurrent-enrollment",
+  "name": "Norco College Dual and Concurrent Enrollment",
+  "org": "Norco College",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "Norco, CA",
+  "type": "school-pathway",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Take college classes while in high school. Dual enrollment classes meet at your high school or online. Concurrent classes are regular college classes on the Norco campus.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Dual: you must go to a partner school, such as Altus, Corona Norco, La Sierra, Jurupa Valley, Excelsior, CAVA or iQLA. JFK is not one. Concurrent: you must be 16 or have finished 8th grade. You also need a 2.0 GPA and school approval.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Tuition is free. Concurrent students may pay low fees, such as health or student services, and buy books. Dual students should ask their school about books.",
+  "season": "year-round",
+  "duration": "By term. Up to 8 units in fall or spring. Up to 5 units in winter or summer.",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Spring 2027 runs Feb 16 to June 11, 2027. Finish all steps by Feb 6, 2027. Concurrent classes show in DualEnroll on Jan 5, 2027. Winter 2027 steps are due Dec 11, 2026, and at partner schools winter is for returning students only.",
+  "deadline_iso": "2027-02-06",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply to Norco College. Make an account on the dual enrollment site the college links. Ask for your classes there, and your parent gives consent one time. If your school does not use DualEnroll, send the concurrent form with parent and school approval to hsconcurrent@norcocollege.edu.",
+  "needs_work_permit": false,
+  "url": "https://www.norcocollege.edu/academicaffairs/ep/hse/index.html",
+  "apply_url": "https://www.opencccapply.net/gateway/apply?cccMisCode=963",
+  "sources_fetched": [
+   "https://www.norcocollege.edu/academicaffairs/ep/hse/index.html",
+   "https://www.norcocollege.edu/academicaffairs/ep/hse/dual.html",
+   "https://www.norcocollege.edu/academicaffairs/ep/hse/concurrent.html",
+   "https://www.norcocollege.edu/academicaffairs/ep/hse/documents/nc-dual-and-concurrent-enrollment-deadlines-2026-2027.pdf"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "If you do not see a class in DualEnroll, it is full. You can email to join the waitlist. Under 16 and not done with 8th grade? You can ask for an exception. No PE or sports classes. Questions: DualEnrollment@norcocollege.edu.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "norfolk-virginia-zoo-conservation-youth-team",
@@ -88089,6 +88253,45 @@
   "limited": true
  },
  {
+  "id": "riverside-city-college-dual-concurrent-enrollment",
+  "name": "Riverside City College Dual and Concurrent Enrollment",
+  "org": "Riverside City College",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "Riverside, CA",
+  "type": "school-pathway",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Take RCC college classes while in high school. Dual enrollment (CCAP) classes are free and meet at partner high schools or online. Concurrent students take classes at RCC or online with other RCC students.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "CCAP: you must go to a partner high school. You need parent and counselor approval. Concurrent: you must be 16 or have finished 10th grade. You also need a 3.0 GPA and must attend at least a minimum school day.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "CCAP: fees and textbooks are free. Concurrent: tuition is free, but you pay for books and for health, student services and transportation fees.",
+  "season": "year-round",
+  "duration": "By term. Up to 8 units in fall or spring. Up to 5 units in summer.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No term dates are posted on the program page as of Nov 2, 2026. Ask your counselor or the college about the next term.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "CCAP: ask your counselor if your school takes part. Apply to RCC, then ask for classes on the dual enrollment site the college links. Concurrent: apply to RCC. Get the approval form signed. Email it with your transcripts to admissions. Then ask the teacher for an add code on the first day.",
+  "needs_work_permit": false,
+  "url": "https://www.rcc.edu/become-a-student/dual-enrollment-student.html",
+  "apply_url": "https://www.opencccapply.net/gateway/apply?cccMisCode=961",
+  "sources_fetched": [
+   "https://www.rcc.edu/become-a-student/dual-enrollment-student.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "An add code is not promised, so you may need to ask more than one teacher. Moreno Valley Unified has only the Nursing Assistant class in CCAP. Concurrent students cannot take Kinesiology. Questions: DualEnrollment@rcc.edu.",
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
   "id": "riverside-county-library-teen-advisory-boards",
   "name": "Teen Advisory Boards (branch libraries)",
   "org": "Riverside County Library System",
@@ -90746,6 +90949,46 @@
   "notes": "This is the year-round option when the summer SPARK program is closed. Phone numbers for each provider are on the county page. The page does not say whether 16 and 17 year olds are paid, so ask the provider about work permits.",
   "verified": "fetched",
   "verified_on": "2026-11-02",
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
+  "id": "san-bernardino-valley-college-dual-enrollment",
+  "name": "San Bernardino Valley College Dual Enrollment",
+  "org": "San Bernardino Valley College",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "San Bernardino, CA",
+  "type": "school-pathway",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Take college classes at Valley College while you are in high school. You earn both high school and college credit.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "You must be in high school, in grades 9 to 12. You need a yes from your school, your parent or guardian, and the college.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Per-unit fees are waived. You may still pay small fees, like health or student service fees. Some school districts pay for books and some do not.",
+  "season": "year-round",
+  "duration": "By semester. Up to 11 units in fall or spring, or 15 with approval. Up to 7 units in summer.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Spring 2027 forms were due Oct 23, 2026. Spring classes start Jan 19, 2027. Later term dates are not posted as of Nov 2, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply on OpenCCC and pick San Bernardino Valley College. Watch your email for your student ID. Send the Dual Enrollment Request Form with your parent's email. Your parent must sign within 7 days. Once it is approved, register in Self-Service.",
+  "needs_work_permit": false,
+  "url": "https://www.valleycollege.edu/academics/specialized-programs/dual-enrollment/enrollment-process.php",
+  "apply_url": "https://www.opencccapply.net/gateway/apply?cccMisCode=982",
+  "sources_fetched": [
+   "https://www.valleycollege.edu/academics/specialized-programs/dual-enrollment/enrollment-process.php",
+   "https://www.valleycollege.edu/academics/specialized-programs/dual-enrollment/index.php"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "The college says late forms do not promise a seat. If you missed the date, you can still ask at (909) 384-4467 or sbvcdualenrollment@valleycollege.edu. Spring registration may open Nov 20, 2026, and the college says that date could change.",
   "verified_on_label": "Nov 2, 2026"
  },
  {
@@ -102494,6 +102737,46 @@
   "sources_fetched": [
    "https://temeculaca.gov/495/Teen-Programs"
   ],
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
+  "id": "temecula-teen-community-service-program",
+  "name": "Teen Community Service Program",
+  "org": "City of Temecula Community Services",
+  "regions": [
+   "inland-empire"
+  ],
+  "city": "Temecula, CA",
+  "type": "volunteer",
+  "fields": [
+   "social-impact"
+  ],
+  "what_you_do": "Join City staff to pack and hand out boxes of food at the Mission Hope food pantry. High school students get community service hours.",
+  "min_age": 14,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "The November session is for ages 14 to 18. The City says the program is for ages 11 to 18, so younger teens should ask about later sessions. The page lists no rule on where you live.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free to join. No pay.",
+  "season": "fall",
+  "duration": "One morning, 9am to 1pm",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Next session is Monday, Nov 23, 2026. Sign-up closes that day at 9am. Only 20 spots.",
+  "deadline_iso": "2026-11-23",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Sign up in the City class catalog. You need an account. Look for Volunteer @ Mission Hope. You must sign up before you go.",
+  "needs_work_permit": false,
+  "url": "https://temeculaca.gov/Volunteer",
+  "apply_url": "https://secure.rec1.com/CA/temecula-ca/catalog/index/4f4416eecc098d8ba38a6f5175a4d44c?filter=c2VhcmNoPXZvbHVudGVlcg==",
+  "sources_fetched": [
+   "https://temeculaca.gov/Volunteer",
+   "https://secure.rec1.com/CA/temecula-ca/catalog/index/4f4416eecc098d8ba38a6f5175a4d44c?filter=c2VhcmNoPXZvbHVudGVlcg=="
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "Meet at Mission Hope, 41760 Rider Way. Wear clothes that can get dirty and closed-toe shoes. The City also lists service at Rose Haven Heritage Garden, but no date is posted. Questions: Volunteer@TemeculaCA.gov.",
   "verified_on_label": "Nov 2, 2026"
  },
  {

@@ -42,9 +42,10 @@ const SOON_ONLY = ["name", "org", "city", "url"];
 // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,692 programs; PENDING PERSON APPROVAL): 607500 to 608500.
 // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 635601 bytes. Approved by Kentaro 2026-10-19 (merge train). 608500 to 635700.
 // 2026-11-02: SoCal sweep (PRs 114 to 118) re-read 240 cards on their official pages. PENDING PERSON APPROVAL. 635700 to 637500.
-test("home file is under 647500 bytes", () => {
+test("home file is under 650500 bytes", () => {
   // 2026-11-02: 45 new SoCal cards (2,865 programs), stacked on PR 118. PENDING PERSON APPROVAL. 637500 to 647500.
-  assert.ok(fs.statSync(path.join(ROOT, "data/entries-home.json")).size < 647500);
+  // 2026-11-02: 12 second-pass SoCal cards (2,877 programs), stacked on PR 125. PENDING PERSON APPROVAL. 647500 to 650500.
+  assert.ok(fs.statSync(path.join(ROOT, "data/entries-home.json")).size < 650500);
 });
 
 test("only closing-soon rows carry name, org, city and url", () => {
