@@ -55,7 +55,8 @@ const PAGES = {
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 2673498 bytes. Approved by Kentaro 2026-10-19 (merge train). find.html ceiling 2667500 to 2673500.
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 2673515 bytes. Approved by Kentaro 2026-10-19 (merge train). find.html ceiling 2673500 to 2673600.
   // 2026-10-26: three Inland Empire cards (Corona, Rancho Cucamonga) on top of PRs 98 to 101. PENDING PERSON APPROVAL. 2673600 to 2675500 (2675461 measured).
-  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2675500 },
+  // 2026-11-02: SoCal sweep (PRs 114 to 118) re-read 240 cards on their official pages. PENDING PERSON APPROVAL. Limit covers the whole stack: 2675500 to 2680000.
+  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2680000 },
   "calendar.html": { allowed: ["calendar.json", "entries-cal.json"], ceiling: 150000 },
   // 2026-10-15: the Map page reads the map projection and the city points (754,977 bytes). PENDING PERSON APPROVAL, as above.
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) map.html limit 760000 to 763100. PENDING PERSON APPROVAL.
