@@ -249,6 +249,16 @@
    ]
   },
   {
+   "key": "Barstow, CA",
+   "state": "CA",
+   "lat": 34.8693,
+   "lon": -117.039,
+   "precision": "city",
+   "ids": [
+    "barstow-community-college-dual-enrollment"
+   ]
+  },
+  {
    "key": "Berkeley, CA",
    "state": "CA",
    "lat": 37.8657,
@@ -1080,6 +1090,16 @@
    ]
   },
   {
+   "key": "Moreno Valley, CA",
+   "state": "CA",
+   "lat": 33.9233,
+   "lon": -117.2057,
+   "precision": "city",
+   "ids": [
+    "moreno-valley-college-dual-enrollment"
+   ]
+  },
+  {
    "key": "Morgan Hill, CA",
    "state": "CA",
    "lat": 37.1325,
@@ -1137,6 +1157,16 @@
     "newport-beach-ocean-lifeguard-trainee",
     "newport-beach-teen-leader-program",
     "occ-sailing-youth-leadership-program"
+   ]
+  },
+  {
+   "key": "Norco, CA",
+   "state": "CA",
+   "lat": 33.9255,
+   "lon": -117.552,
+   "precision": "city",
+   "ids": [
+    "norco-college-dual-concurrent-enrollment"
    ]
   },
   {
@@ -1433,6 +1463,7 @@
    "precision": "city",
    "ids": [
     "march-field-air-museum-junior-docents",
+    "riverside-city-college-dual-concurrent-enrollment",
     "riverside-grow-youth-workforce-program",
     "riverside-johnny-martin-sotelo-youth-opportunity-center",
     "riverside-parks-rec-volunteen-internship-vip",
@@ -1516,6 +1547,16 @@
     "san-bernardino-county-sheriff-explorers",
     "san-bernardino-county-spark-syep",
     "san-bernardino-county-wioa-youth"
+   ]
+  },
+  {
+   "key": "San Bernardino, CA",
+   "state": "CA",
+   "lat": 34.1411,
+   "lon": -117.2946,
+   "precision": "city",
+   "ids": [
+    "san-bernardino-valley-college-dual-enrollment"
    ]
   },
   {
@@ -1880,7 +1921,8 @@
    "lon": -117.1346,
    "precision": "city",
    "ids": [
-    "temecula-library-teen-library-council"
+    "temecula-library-teen-library-council",
+    "temecula-teen-community-service-program"
    ]
   },
   {
@@ -1996,6 +2038,16 @@
    "precision": "city",
    "ids": [
     "yorba-linda-library-teen-advisory-board"
+   ]
+  },
+  {
+   "key": "Yucaipa, CA",
+   "state": "CA",
+   "lat": 34.0336,
+   "lon": -117.0429,
+   "precision": "city",
+   "ids": [
+    "crafton-hills-college-dual-enrollment"
    ]
   },
   {

@@ -178,6 +178,7 @@ baltimore-wide-angle-high-school-media-classes	Baltimore, MD	point	Baltimore, MD
 baltimore-wide-angle-mediaworks-summer	Baltimore, MD	point	Baltimore, MD	city	place:city	
 baltimore-youthworks-summer-jobs	Baltimore, MD	point	Baltimore, MD	city	place:city	
 bard-on-the-beach-volunteer	Vancouver, BC	point	Vancouver, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBRIK, https://geogratis.gc.ca/services/geoname/en/geonames/JBRIK	
+barstow-community-college-dual-enrollment	Barstow, CA	point	Barstow, CA	city	place:city	
 bart-summer-internship-high-school	Oakland, CA (BART offices)	point	Oakland, CA	city	place:city	
 beacon-cce-dutchess-green-teen-community-gardening	Beacon, NY	point	Beacon, NY	city	place:city	
 beaverton-city-library-teen-library-council	Beaverton, OR	point	Beaverton, OR	city	place:city	
@@ -655,6 +656,7 @@ cps-chicago-builds	Chicago, IL	point	Chicago, IL	city	place:city
 cps-cooperative-education	Chicago, IL	point	Chicago, IL	city	place:city	
 cps-early-college-city-colleges	Chicago, IL	point	Chicago, IL	city	place:city	
 cps-police-fire-training-academy	Chicago, IL	point	Chicago, IL	city	place:city	
+crafton-hills-college-dual-enrollment	Yucaipa, CA	point	Yucaipa, CA	city	place:city	
 crystal-cove-fire-ecology-high-school-internship	Orange County, CA	point	Orange County, CA	county	county	
 csssa-california-state-summer-school-arts	California (the 2027 campus is not named yet)	statewide	CA			
 cu-boulder-science-discovery-stem-research-experience	Boulder, CO	point	Boulder, CO	city	place:city	
@@ -1571,6 +1573,7 @@ moraga-police-cadets	Moraga, CA	point	Moraga, CA	city	place:town
 moraga-youth-involvement-committee	Moraga, CA	point	Moraga, CA	city	place:town	
 morehouse-school-of-medicine-steam-academy	Atlanta, GA	point	Atlanta, GA	city	place:city	
 morehouse-summer-pre-college-program	Atlanta, GA (online classes)	online				parenthetical says fully online: online classes
+moreno-valley-college-dual-enrollment	Moreno Valley, CA	point	Moreno Valley, CA	city	place:city	
 morristown-atlantic-health-summer-junior-volunteer	Morristown, NJ	point	Morristown, NJ	city	place:town	
 morton-arboretum-youth-volunteer-program	Lisle, IL (DuPage County)	point	Lisle, IL	city	place:village	
 mountain-view-teen-volunteer-summer-program	Mountain View, CA	point	Mountain View, CA	city	place:city	
@@ -1741,6 +1744,7 @@ nhmu-teen-explainers	Salt Lake City, UT	point	Salt Lake City, UT	city	place:city
 nih-summer-internship-program	Bethesda, MD	point	Bethesda, MD	city	place:CDP	
 nisra-volunteers-and-summer-camp-jobs-elgin	Elgin and 12 other member communities, northern Illinois	multi				places plus a state name
 nist-ship-gaithersburg	Gaithersburg, MD	point	Gaithersburg, MD	city	place:city	
+norco-college-dual-concurrent-enrollment	Norco, CA	point	Norco, CA	city	place:city	
 norfolk-virginia-zoo-conservation-youth-team	Norfolk, VA	point	Norfolk, VA	city	place:city	
 north-dakota-4h-ambassador-program	Statewide (Fargo and Washburn), ND	statewide	ND			
 north-dakota-4h-extension-youth-conference	Fargo, ND	point	Fargo, ND	city	place:city	
@@ -2170,6 +2174,7 @@ richmond-youth-media-program	Richmond, BC	point	Richmond, BC	manual	Canadian Geo
 richmond-youthworks-work-experience	Richmond, CA (330 25th St)	point	Richmond, CA	city	place:city	
 rising-sun-climate-careers	Oakland, CA and Bay Area	point	Oakland, CA	city	place:city	override: Oakland is the named city; Bay Area is the wider region
 river-forest-library-tween-teen-volunteers-book-buddies	River Forest, IL	point	River Forest, IL	city	place:village	
+riverside-city-college-dual-concurrent-enrollment	Riverside, CA	point	Riverside, CA	city	place:city	
 riverside-county-library-teen-advisory-boards	Riverside County, CA (branch libraries)	point	Riverside County, CA	county	county	
 riverside-county-wioa-youth-opportunity-centers	Riverside County, CA (six centers)	point	Riverside County, CA	county	county	
 riverside-county-youth-advisory-councils	Riverside County, CA	point	Riverside County, CA	county	county	
@@ -2236,6 +2241,7 @@ san-bernardino-county-library-teen-leadership-program	San Bernardino County, CA 
 san-bernardino-county-sheriff-explorers	San Bernardino County, CA	point	San Bernardino County, CA	county	county	
 san-bernardino-county-spark-syep	San Bernardino County, CA	point	San Bernardino County, CA	county	county	
 san-bernardino-county-wioa-youth	San Bernardino County, CA	point	San Bernardino County, CA	county	county	
+san-bernardino-valley-college-dual-enrollment	San Bernardino, CA	point	San Bernardino, CA	city	place:city	
 san-diego-air-space-museum-teen-volunteers	San Diego, CA	point	San Diego, CA	city	place:city	
 san-diego-birch-aquarium-volunteer	La Jolla, San Diego, CA	point	La Jolla, CA	manual	Census Gazetteer ZCTA 92037 (La Jolla, CA) internal point	override: La Jolla is a San Diego neighborhood with no Gazetteer place; ZIP code area centroid from the Census Gazetteer ZCTA file, same point as the other La Jolla cards
 san-diego-cabrillo-national-monument-volunteers	San Diego (Point Loma), CA	point	San Diego, CA	city	place:city	
@@ -2524,6 +2530,7 @@ tcsg-dual-enrollment-georgia	Georgia, including Atlanta Technical College	statew
 tech-interactive-teen-holiday-helper	San Jose, CA	point	San Jose, CA	city	place:city	
 teen-line-volunteer-listener	Los Angeles, CA	point	Los Angeles, CA	city	place:city	
 temecula-library-teen-library-council	Temecula, CA	point	Temecula, CA	city	place:city	
+temecula-teen-community-service-program	Temecula, CA	point	Temecula, CA	city	place:city	
 tempe-asu-ctf-cybersecurity-hs-internship	Tempe, AZ	point	Tempe, AZ	city	place:city	
 tennessee-4h-roundup-all-star-conference	Knoxville, TN	point	Knoxville, TN	city	place:city	
 tennessee-4h-youth-development	Statewide, TN	statewide	TN			

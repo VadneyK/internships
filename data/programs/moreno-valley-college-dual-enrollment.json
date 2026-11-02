@@ -1,0 +1,39 @@
+{
+  "id": "moreno-valley-college-dual-enrollment",
+  "name": "Moreno Valley College Dual Enrollment",
+  "org": "Moreno Valley College",
+  "regions": [
+    "inland-empire"
+  ],
+  "city": "Moreno Valley, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take college classes for high school and college credit. Some classes meet at your high school and others are online. You can also use tutoring, the library and study space at the college.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be enrolled at a high school that takes part. You need approval from your principal or the staff they pick. If you are a minor, a parent must approve too. Students over 18 who are still in high school can join.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Tuition is free and textbooks are covered. The apply page says high school students pay a health fee and a student services fee each term. Parking at the college is not free.",
+  "season": "year-round",
+  "duration": "By term",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No term dates are posted on the program page as of Nov 2, 2026. Ask your high school counselor about the next term.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Pick classes with your high school counselor. Get the School and Parent Authorization Form signed. Apply to the college online for free. Then register with help from your counselor.",
+  "needs_work_permit": false,
+  "url": "https://www.mvc.edu/academics/more-ways/dual-enrollment.php",
+  "apply_url": "https://www.mvc.edu/admissions-aid/apply/high-school-student.php",
+  "sources_fetched": [
+    "https://www.mvc.edu/academics/more-ways/dual-enrollment.php",
+    "https://www.mvc.edu/admissions-aid/apply/high-school-student.php"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "The page does not name the school districts, so ask your counselor if yours takes part. Your grades go on your college record and count in your college GPA. Home school students use concurrent enrollment instead. Questions: (951) 571-6409."
+}
