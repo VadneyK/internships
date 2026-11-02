@@ -18,7 +18,7 @@
   "paid_type": "unpaid-credit",
   "pay_detail": "Unpaid volunteer role. The page says it can earn Service-Learning credit for graduation.",
   "season": "school-year",
-  "duration": "Five days per session (typically Monday to Friday). Session dates are not stated.",
+  "duration": "Five days per session (typically Monday to Friday). The application lists weeks from Nov 3, 2026 to June 4, 2027.",
   "status": "open-now",
   "opens_iso": null,
   "deadline_text": "Applications open in August and close in the middle of May, in six-week windows. Apply at least two weeks before the dates you want.",
@@ -30,10 +30,11 @@
   "apply_url": "https://www.ymcasv.org/ymca-camp-campbell/outdoor-education/cabin-leaders/ymca-camp-campbell-cabin-leader-application",
   "sources_fetched": [
     "https://www.ymcasv.org/ymca-camp-campbell/outdoor-education/cabin-leaders",
-    "https://ymcasv.org/education-enrichment/leadership-development"
+    "https://ymcasv.org/education-enrichment/leadership-development",
+    "https://forms.ymcasv.org/embed.php?id=3"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-21",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Camp Campbell is at 16275 Highway 9, Boulder Creek, CA 95006, per the cabin-leaders page. This is an unpaid volunteer role, so no work permit is needed. The same YMCA's Youth and Government program is already in ymca-youth-and-government-ca.json. Leaders in Training is also listed on the leadership page, but its age and details are not stated, so it is not a card."
 }

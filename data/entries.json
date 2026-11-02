@@ -52,32 +52,36 @@
   "fields": [
    "any"
   ],
-  "what_you_do": "Sophomores and juniors attend college classes in the morning. The college is Evergreen Valley College. High school classes are in the afternoon.",
+  "what_you_do": "Juniors and seniors attend college classes in the morning. The college is Evergreen Valley College. High school classes are in the afternoon.",
   "min_age": null,
   "max_age": null,
   "grades": "10 to 11",
-  "who_can_apply": "Sophomores (80 to 90 credits) and juniors (140 to 150 credits by January) with a 2.0 GPA or higher, good attendance, Algebra I or Integrated Math I done, and currently in Geometry or higher.",
+  "who_can_apply": "East Side Union 10th graders on track to graduate may apply. The school says it fits sophomores (80 to 90 credits) and juniors (140 to 150 credits by January) with a 2.0 GPA or higher, good attendance, and Math II or higher.",
   "paid_type": "unpaid-credit",
   "pay_detail": "No cost listed on the page (public school program)",
   "season": "school-year",
   "duration": "2 years",
-  "status": "year-round",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Recruitment meetings are held in the evening; dates not posted on the program page.",
+  "deadline_text": "Last cycle (2026-27): info night on January 27, 2026 and application due February 6, 2026. The 2027-28 dates are not posted as of Nov 2, 2026.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
-  "how_to_apply": "Register for the Evergreen Valley College placement test at (408) 274-7900 x6636, attend a recruitment and info meeting to get the application, then mail it or hand-deliver it to the Roble Building mailroom at Evergreen Valley College.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Go to the yearly info night. Then fill out the online form on the ACCEL How Do I Apply page by the deadline. Questions: ACCEL@esuhsd.org or 408-347-5105.",
   "needs_work_permit": false,
-  "url": "https://www.esuhsd.org/Schools/Accel-Middle-College",
+  "url": "https://accel.esuhsd.org/Our-School/How-Do-I-Apply/index.html",
   "apply_url": null,
   "sources_fetched": [
+   "https://accel.esuhsd.org/Our-School/How-Do-I-Apply/index.html",
+   "https://accel.esuhsd.org/Our-School/Who-Is-It-For/index.html",
+   "https://accel.esuhsd.org/Our-School/Overview/index.html",
+   "https://www.evc.edu/academics/dual-enrollment/accel-middle-college.html",
    "https://www.esuhsd.org/Schools/Accel-Middle-College"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "Page lists no age rule and no 2026-27 meeting dates; call the coordinator (Kathleen Leal, (408) 274-7900 x6881) for the schedule. Must also be taking biology, chemistry and physics and English 2 (sophomores) or English 3 (juniors).",
-  "verified_on_label": "Oct 7, 2026"
+  "notes": "The dates are from last cycle. You must have passed biology and be taking chemistry and physics. Sophomores also take English 2 or AP Seminar. Juniors take English 3 or AP English.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "acwdb-youth-innovation",
@@ -22606,16 +22610,16 @@
   "how_to_apply": "Create an OpenCCC account and apply to CSM online. For dual enrollment, meet with your high school counselor first, then register with the Dual Enrollment team. Questions: csmoutreach@smccd.edu.",
   "needs_work_permit": false,
   "url": "https://collegeofsanmateo.edu/highschool/",
-  "apply_url": "https://www.opencccapply.net/cccapply-welcome?cccMisCode=372",
+  "apply_url": "https://www.opencccapply.net/gateway/apply?cccMisCode=372#apply",
   "sources_fetched": [
    "https://collegeofsanmateo.edu/highschool/",
    "https://collegeofsanmateo.edu/dualenrollment/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Dual enrollment is only through CSM's partner high schools. Concurrent enrollment is open to any high schooler but may need your counselor's approval at some schools. Skyline and Canada colleges run similar programs (not checked here).",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "college-of-the-desert-free-early-college",
@@ -25382,10 +25386,10 @@
    "https://computerhistory.org/internships/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "CHM says it is not accepting Teen Program applications right now; the page gives no reopening date. Join the interest list to be told when it opens. Pay and length are not stated.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "concord-food-bank-contra-costa-solano-youth-volunteer",
@@ -27011,10 +27015,10 @@
    "https://www.cupertino.gov/Parks-Recreation/Activities/Teens/Teen-Volunteer-Opportunities"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 3,
   "notes": "You must attend the in-service training week and get yourself to and from program sites. Program assignments come out in late May. The 2027 dates are based on last year's pattern. The page does not list the fee, so ask before you apply.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "cupertino-recreation-event-volunteers",
@@ -27052,10 +27056,10 @@
    "https://www.cupertino.gov/Parks-Recreation/Activities/Teens/Teen-Volunteer-Opportunities"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "Some events fall on holidays, weekends, and evenings. Members who do more events are recognized at Bronze, Silver, and Gold levels.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "cupertino-techie-teens",
@@ -27093,10 +27097,10 @@
    "https://www.cupertino.gov/Parks-Recreation/Activities/Teens/Teen-Volunteer-Opportunities"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "You must attend all training, be fingerprinted and cleared, and bring your own ride (VTA and Silicon Valley Hopper are options). Staff can sign off on service hours. 2027 dates will likely follow the 2026 pattern.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "cupertino-teen-commission",
@@ -27133,10 +27137,10 @@
    "https://www.cupertino.gov/Parks-Recreation/Activities/Teens/Teen-Commission"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Meets monthly, September through May, at 6 p.m. on the second Wednesday. It meets in the Quinlan Community Center Conference Room (10185 North Stelling Road), with a teleconference option. Commission email teencommission@cupertino.gov. Staff liaison Sonya Lee, Recreation Manager, (408) 777-3121. Pay is not mentioned on the page, so it is listed as unpaid. The page says members may be in 12th grade during their term. The 8th-to-11th rule applies to applicants.",
-  "verified_on_label": "Oct 7, 2026",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -27175,10 +27179,10 @@
    "https://www.cupertino.gov/Parks-Recreation/Activities/Teens/Teen-Volunteer-Opportunities"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Past events: Hack Cupertino, Pizza and Politics, a teen speaker series and the Cupertino Spelling Bee. Members plan an event about every other month. The 2027 last day is not posted. Last year it closed in early May.",
-  "verified_on_label": "Oct 16, 2026",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -27812,10 +27816,10 @@
    "https://www.deanza.edu/dual/faqs.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Math and English classes need an assessment (usually based on your school transcript). Students can buy a VTA SmartPass for unlimited bus and light rail rides. Undocumented students can take part. Parents cannot see your college records without your written consent.",
-  "verified_on_label": "Oct 19, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "deca-california",
@@ -31110,10 +31114,10 @@
    "https://www.elcaminohealth.org/community/volunteer/auxiliary/volunteer-opportunities"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Read again on 2026-10-16. There is no summer only option. Once you are in, you can stay through the summer after you graduate. Call Mountain View at 650-940-7214 or Los Gatos at 408-866-3940. Check the page in mid January 2027 to sign up for the next junior meeting.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "el-cerrito-police-explorers",
@@ -32802,10 +32806,10 @@
    "https://www.evc.edu/academics/dual-enrollment/index.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "CCAP classes are closed cohort classes held at partner high schools, so ask your school if it has an agreement. The page does not state a grade or age rule. Textbook costs for non-CCAP students are not stated.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "regions": [
@@ -36179,7 +36183,7 @@
   "deadline_text": "No single deadline stated. Submit the form before you register each quarter.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "Apply for admission to Foothill, submit the Special Admit form (parent and principal signatures, plus an unofficial transcript if asked), register, and pay any fees. Admissions: (650) 949-7325.",
+  "how_to_apply": "Apply for admission to Foothill, submit the Special Admit form (parent and principal signatures, plus your unofficial transcript), register, and pay any fees. Admissions: (650) 949-7325.",
   "needs_work_permit": false,
   "url": "https://foothill.edu/high-school/",
   "apply_url": null,
@@ -36188,10 +36192,10 @@
    "https://foothill.edu/high-school/faq.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "Foothill can give a free Clipper SmartPass for VTA buses and light rail. Undocumented students are welcome. Grades go on your permanent college record, and your parents cannot see college records. Partner-district options also exist: Middle College, College Now! (MVLA), Firebird Academy (Fremont Union).",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "forage-job-simulations",
@@ -40147,10 +40151,10 @@
    "https://happyhollow.org/support/volunteer/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-22",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "Minimum 48 hours a year (about 4 hours a month). Not everyone is picked, but you can reapply the next season.",
-  "verified_on_label": "Oct 22, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "harrisburg-area-lower-paxton-junior-camp-counselor",
@@ -41136,16 +41140,17 @@
   "deadline_confidence": "rolling",
   "how_to_apply": "Fill out the Flight Teen application online, then expect a call to schedule an interview, attend volunteer orientation, and train with an active volunteer.",
   "needs_work_permit": false,
-  "url": "https://hiller.org/volunteer/",
+  "url": "https://www.hiller.org/join-and-support/volunteer/",
   "apply_url": "https://hiller.formstack.com/forms/flight_teen_volunteer_application",
   "sources_fetched": [
+   "https://www.hiller.org/join-and-support/volunteer/",
    "https://hiller.org/volunteer/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-22",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "Year-round, ongoing applications. Weekend shifts only. Interview timing and training length are not stated.",
-  "verified_on_label": "Oct 22, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "hillsboro-working-theory-farm-youth-positions",
@@ -42320,10 +42325,10 @@
    "https://www.hssv.org/volunteer/student-opportunities/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-22",
+  "verified_on": "2026-11-02",
   "priority": 3,
   "notes": "No hands-on shelter work until 18. Service hours: 2 fleece blankets = 1 hour (0.5 hour each); fostering is counted by care time. Email for a service hour verification letter.",
-  "verified_on_label": "Oct 22, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "grades": null,
@@ -46096,10 +46101,10 @@
    "https://healthy.kaiserpermanente.org/northern-california/facilities/san-jose-medical-center-100322"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 3,
   "notes": "Read on Kaiser Permanente's volunteer site on 2026-10-16. The high school program is full. Check the page every few weeks, since minors are taken only when shifts are free. Kaiser does not offer job or clinical shadowing (physician, nursing, radiology, PT or OT). The kp.org page still links to volunteer-ncal.kaiserpermanente.org, which no longer works; use kpvolunteer.samaritan.com.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "kaiser-santa-clara-high-school-volunteer",
@@ -46137,10 +46142,10 @@
    "https://healthy.kaiserpermanente.org/northern-california/facilities/santa-clara-medical-center-100305"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Read on Kaiser's volunteer site on 2026-10-16. The kp.org Santa Clara page links to it at kpvolunteer.samaritan.com. Shifts are on weekdays only, 8 am to 6 pm. Most students would need a free period, a late afternoon or summer days. A background check with a Social Security number is only for people over 18. The page asks for shot records. It does not say which shots, if you need a TB test, or if there are fees. Kaiser does not offer job shadowing.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "kaiser-south-san-francisco-high-school-volunteer",
@@ -53782,10 +53787,10 @@
    "https://www.losaltosca.gov/379/Teen-Programs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The city's teen page sends teens ages 14 to 18 here. The Teen Center (grades 6 to 12, weekdays 3 to 6 p.m.) is a free place to hang out. It is not a volunteer job.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "los-altos-counselor-in-training",
@@ -53821,10 +53826,10 @@
    "https://www.losaltosca.gov/770/Counselor-in-Training-CIT-Program"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 3,
   "notes": "This costs money; it is not a paid job. The page shows dates without a year; the weekdays match 2026. Only 14 and 15 year olds in high school fit the age range, so this suits younger high schoolers.",
-  "verified_on_label": "Oct 16, 2026",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -53864,10 +53869,10 @@
    "https://www.losaltoshills.ca.gov/Archive/ViewFile/Item/2601"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 3,
   "notes": "Meets at 7 p.m. on the 1st and 3rd Tuesday of each month. Members lose their seat after missing 3 meetings in a row or going below 75% attendance in a year. The June 2026 council recap says candidates must first attend at least one meeting and volunteer at town events. After that meeting there were 17 members, so a few seats may be open.",
-  "verified_on_label": "Oct 16, 2026",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -53906,10 +53911,10 @@
    "https://lahstalon.org/los-altos-history-museum-opens-applications-for-summer-opportunities/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Phone 650.948.9427; the page gives no email address. Pay is not stated on the current official page, so we list it as unpaid based on a 2024 article; confirm with the museum. The lahstalon.org article is a 2024 news piece, used only for the interview and volunteer details. The museum's adult docent roles are separate and not for teens.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "los-altos-youth-commission-council-academy",
@@ -53947,10 +53952,10 @@
    "https://www.losaltosca.gov/DocumentCenter/View/3073"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "In 2025 the old Los Altos Youth Commission became this academy. Meetings are at 5:30 p.m. at the Los Altos Community Chambers, 1 N. San Antonio Rd. The 2027 mock council meeting is set for Monday, May 3, 2027, and will be on the city's YouTube channel. Meetings are open to the public, so you can visit one first.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "los-angeles-craft-contemporary-craft-youth-culture",
@@ -59329,10 +59334,10 @@
    "https://www.menlofire.gov/explorer-program"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "You need reliable transportation, and you will be tested to show you learned the skills. The page says bi-monthly meetings but does not give days or times. Exploring is part of Learning for Life. The district's separate Fire Cadet program is not for high schoolers (it needs EMT and Firefighter I training).",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "menlo-park-library-teen-advisory-group",
@@ -59368,10 +59373,10 @@
    "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Library/About-the-library/Teen-services"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "Meets the 1st and 3rd Thursdays, 4:30-5:30 pm, at Menlo Park Library (800 Alma St.), and the 1st and 3rd Wednesdays, 4-5 pm, at Belle Haven Library (100 Terminal Ave.). Members may attend one or both. The page is undated and is the only source; older M-A Chronicle articles describe pandemic-era activities and a different meeting pattern, so confirm the schedule with the librarian before the first meeting.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "menlo-park-police-cadets",
@@ -59403,22 +59408,23 @@
   "how_to_apply": "Fill out the cadet form and the agreement from the page. Mail them to Attn: Police Cadet Program, 701 Laurel St., Menlo Park, CA 94025. Ask Corporal Galen Fliege: gpfliege@menlopark.gov or 650-330-6300.",
   "needs_work_permit": false,
   "url": "https://www.menlopark.gov/Government/Departments/Police/Community-engagement/Police-Cadets",
-  "apply_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/police/documents/divisionsunits/explorer-application.pdf",
+  "apply_url": "https://www.menlopark.gov/files/sharedassets/public/v/1/police/documents/divisionsunits/cadet-application.pdf",
   "sources_fetched": [
    "https://www.menlopark.gov/Government/Departments/Police/Community-engagement/Police-Cadets",
    "https://menlopark.gov/Government/Departments/Police/Community-engagement/Police-Explorers",
+   "https://www.menlopark.gov/files/sharedassets/public/v/1/police/documents/divisionsunits/cadet-application.pdf",
    "https://www.menlopark.gov/files/sharedassets/public/v/1/police/documents/divisionsunits/explorer-application.pdf",
    "https://www.menlopark.gov/files/sharedassets/public/v/1/police/documents/divisionsunits/participation-agreement-and-waiver.pdf"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "You must finish a cadet training course. The 2019 form says it is eight Sundays at College of San Mateo and one Saturday at Huddart Park. You must pass tests at 70 percent and get your own ride. It also lists one evening meeting a month. The page now says Police Cadets, but the forms still say Explorer Post 844. The form asks for your Social Security number and driver license number for a background check. A parent must sign if you are under 18. The page lists no meeting times or dates.",
-  "verified_on_label": "Oct 16, 2026"
+  "notes": "You must finish a cadet training course. The 2019 form says it is eight Sundays at College of San Mateo and one Saturday at Huddart Park. You must pass tests at 70 percent and get your own ride. It also lists one evening meeting a month. The page now says Police Cadets, but the agreement form still says Explorer Post 844. The form asks for your Social Security number and driver license number for a background check. A parent must sign if you are under 18. The page lists no meeting times or dates.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "menlo-park-swim-centers-team-sheeper-jobs",
-  "name": "Lifeguard, Swim Instructor and Front Desk jobs at Menlo Park swim centers (Menlo Swim and Sport)",
+  "name": "Lifeguard and Swim Instructor jobs at Menlo Park swim centers (Menlo Swim and Sport)",
   "org": "Team Sheeper, Inc. (Menlo Swim and Sport), city pool operator",
   "regions": [
    "silicon-valley",
@@ -59434,17 +59440,17 @@
   "min_age": 15,
   "max_age": null,
   "grades": null,
-  "who_can_apply": "Lifeguard, Swim Instructor and Front Desk jobs say you must be at least 15. Lifeguards must pass a swim test (150 yards, 2 minutes treading with no hands, then 50 more). Swim instructors need a clean background check. Front Desk asks for 1 year of customer service work.",
+  "who_can_apply": "Lifeguard and Swim Instructor jobs say you must be at least 15. Lifeguards must pass a swim test (150 yards, 2 minutes treading with no hands, then 50 more). Swim instructors need a clean background check.",
   "paid_type": "paid",
-  "pay_detail": "Lifeguard: $20 to $26 per hour. Swim Instructor: $23 to $28 per hour. Front Desk Associate: $20 to $26.25 per hour. Training is paid.",
+  "pay_detail": "Lifeguard: $20 to $26 per hour. Swim Instructor: $23 to $28 per hour. Training is paid.",
   "season": "year-round",
   "duration": "Year-round and summer jobs. The swim instructor posting says shifts fit around school, sports and other jobs.",
   "status": "rolling",
   "opens_iso": null,
-  "deadline_text": "Postings are open with no closing date listed. The Swim Instructor job was posted Sep 30, 2026, Front Desk on Oct 14, 2026 and Lifeguard on Apr 24, 2026.",
+  "deadline_text": "Postings are open with no closing date listed as of Nov 2, 2026.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "Go to the Menlo Swim and Sport careers page and click through to the Team Sheeper job board. Pick a job and apply online. Questions: customerservice@menloswim.com or 650-781-5525.",
+  "how_to_apply": "Use the apply link to reach the Team Sheeper job board. Pick a job and apply online. Questions: customerservice@menloswim.com or 650-781-5525.",
   "needs_work_permit": true,
   "url": "https://menloswim.com/about/careers/",
   "apply_url": "https://recruiting.paylocity.com/recruiting/jobs/All/40d1d045-e967-4db1-abb4-3419df97daad/Team-Sheeper-Inc",
@@ -59452,15 +59458,14 @@
    "https://www.menlopark.gov/Government/Departments/Library-and-Community-Services/Recreation-and-sports/Aquatics",
    "https://menloswim.com/about/careers/",
    "https://recruiting.paylocity.com/recruiting/jobs/All/40d1d045-e967-4db1-abb4-3419df97daad/Team-Sheeper-Inc",
-   "https://recruiting.paylocity.com/Recruiting/Jobs/Details/3138732",
    "https://recruiting.paylocity.com/Recruiting/Jobs/Details/3175905",
-   "https://recruiting.paylocity.com/Recruiting/Jobs/Details/3176383"
+   "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4619096"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 1,
-  "notes": "The city does not hire its own pool staff. The city's aquatics page says Menlo Swim and Sport runs both swim centers under contract, and its careers page links to the Team Sheeper, Inc. job board. You do not need to be a certified lifeguard to apply, they train you. The swim instructor posting says active employees get free lifeguard certification and calls the job good for high school students. Front Desk asks for experience, so it is harder for a first job.",
-  "verified_on_label": "Oct 16, 2026"
+  "notes": "The city does not hire its own pool staff. The city's aquatics page says Menlo Swim and Sport runs both swim centers under contract, and its council reports name Team Sheeper, Inc. as the operator. You do not need to be a certified lifeguard to apply, they train you. The swim instructor posting says active employees get free lifeguard certification and calls the job good for high school students.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "menlo-park-youth-advisory-committee",
@@ -59497,10 +59502,10 @@
    "https://menlopark.gov/yac"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Competitive, and closed now. Members must attend at least 75 percent of meetings. Contact Da'Shawn Williams, Recreation Coordinator, 650-330-2248. The page lists two email addresses (dlwilliams@menlopark.org and dlwilliams@menlopark.gov); confirm which is current. An older city notice said about 8 hours per month; the current page says about 6. The page does not mention pay, so we list it as unpaid; confirm with the city.",
-  "verified_on_label": "Oct 7, 2026",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -61895,10 +61900,10 @@
    "https://www.milpitas.gov/404/Community"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 3,
   "notes": "The page is short and gives no meeting times, requirements or application form. Call first to ask if the program is active and taking new Explorers.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "milpitas-lifeguard-swim-instructor-jobs",
@@ -61935,10 +61940,10 @@
    "https://www.governmentjobs.com/careers/milpitas"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "This posting first opened Sep 3, 2024 and is still listed as continuous. Its application questions still mention 2024-25 shifts, so call 408-586-3090 to check current hiring. A TB test is required. Fingerprints are only required if you are 18 or older.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "milpitas-police-explorers",
@@ -61977,10 +61982,10 @@
    "https://www.milpitas.gov/404/Community"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The info sheet on the page is from 2010. It still names the Boy Scouts as a sponsor. Call 408-586-2400 to check that the program takes new members.",
-  "verified_on_label": "Oct 16, 2026",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -62020,10 +62025,10 @@
    "https://www.governmentjobs.com/careers/milpitas"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "You need a TB test and Red Cross First Aid and CPR within 60 days of hire. Fingerprints are only required if you are 18 or older. Perks include a free Milpitas Sports Center membership and paid sick leave after 90 days.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "milpitas-volunteer-program",
@@ -62062,10 +62067,10 @@
    "https://milpitas.gov/466/Get-Involved"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "The Alviso Adobe likes high school helpers, but most tours are on school day mornings. Teen Center tutoring is on weekdays from 4 to 7 pm. The page's list of events and cleanups looks old (the last cleanup shown is from January 2024). Watch the monthly emails for new ones.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "milpitas-youth-advisory-commission",
@@ -62104,10 +62109,10 @@
    "https://www.milpitas.gov/985/How-to-Volunteer"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Regular meetings at 6 p.m. on the second Thursday of every month, Milpitas Teen Center, Rooms 140/141, 40 N Milpitas Boulevard. Founded April 1996. The page lists current members with terms ending September 2028. Pay is not mentioned on the page, so it is listed as unpaid. The supplemental questionnaire PDF could not be read, so its questions are not summarized here.",
-  "verified_on_label": "Oct 7, 2026",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -62712,10 +62717,10 @@
    "https://missioncollege.edu/office-of-instruction/educational-partnerships/dual-enrollment.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Unit limits: up to 8 in fall or spring (non-MECHS students), 6 in winter, 9 in summer; more needs a petition. Undocumented students are welcome. Getting to campus is on you.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "regions": [
@@ -64116,10 +64121,10 @@
    "https://www.mountainview.gov/our-city/departments/community-services/recreation/youth-teens/teen-programs/teen-summer-volunteer-opportunities"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "Age limits are not listed on the page, so email The View Teen Center to check yours. Shifts are weekdays (Junior Lifeguards also Saturdays). Transport to Deer Hollow Farm is provided from the Community Center.",
-  "verified_on_label": "Oct 19, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "mountain-view-youth-advisory-committee",
@@ -64156,10 +64161,10 @@
    "https://www.mountainview.gov/our-city/city-council/boards-commissions-and-committees/youth-advisory-committee"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "Meets twice a month, August to June, at 4:30 p.m. in person at The View Teen Center, 263 Escuela Ave. Email to ask whether 2026-27 seats are still open. Re-check on 2026-10-10 returned HTTP 403 (page could not be read), so status and verified_on were left as they were.",
-  "verified_on_label": "Oct 19, 2026"
+  "notes": "Meets twice a month, August to June, at 4:30 p.m. in person at The View Teen Center, 263 Escuela Ave. Email to ask whether 2026-27 seats are still open.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "msm-grow-cells-cancer-research-summer",
@@ -65093,10 +65098,10 @@
    "https://www.nasa.gov/ames/genelab-for-high-schools/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "The real NASA Ames option for high schoolers. NASA's main OSTEM internships are college-only. Acceptance was rolling through April 30, 2026, and the cap was 1,000 applications, so apply early. Needs a PDF high school transcript. No 2027 dates posted.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "grades": "9-12",
@@ -71668,7 +71673,7 @@
   "min_age": 17,
   "max_age": 24,
   "grades": null,
-  "who_can_apply": "Ages 17 to 24 who live in San Mateo County or in Cupertino, Los Altos, Milpitas, Mountain View, Palo Alto, Santa Clara or Sunnyvale. High school students who live outside the area qualify if their school is inside it. In-school youth 17 to 21 need low household income. They also need one of these: justice involvement, being unhoused or a runaway, or foster care (in it now or aged out).",
+  "who_can_apply": "Ages 17 to 24 who live in San Mateo County or in Cupertino, Los Altos, Milpitas, Mountain View, Palo Alto, Santa Clara or Sunnyvale. You must not be taking classes now, except adult education, YouthBuild or Job Corps. You also need one of these: no high school diploma, justice involvement, being unhoused or a runaway, foster care, being pregnant or a parent, a condition that limits school or work, or needing English help with low income.",
   "paid_type": "mixed",
   "pay_detail": "Coaching is free. Paid internships start at $19.50 per hour (Sunnyvale minimum wage), at least $7,800 for 400 hours. Internships are for ages 18 and up.",
   "season": "year-round",
@@ -71687,10 +71692,10 @@
    "https://youth.smcgov.org/directory-youth_servic/listing/nova"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-22",
+  "verified_on": "2026-11-02",
   "priority": 3,
-  "notes": "Narrow eligibility. The FAQ says internships are 18 and up, so a 17 year old gets coaching and training first. Teens under 17 do not qualify. In-school applicants need income under the program limits plus a barrier; the page's out-of-school barrier list is broader.",
-  "verified_on_label": "Oct 22, 2026",
+  "notes": "Narrow eligibility. The FAQ says internships are 18 and up, so a 17 year old gets coaching and training first. Teens under 17 do not qualify. As of Nov 2, 2026, the page says you must not be taking classes, so most high school students do not qualify.",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -76988,10 +76993,10 @@
    "https://och.scvh.org/giving-volunteering/volunteer-services"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Read on the official O'Connor Hospital page on 2026-10-16. Health screening asks for proof of a COVID-19 vaccine or booster, a yearly flu shot, immunity to measles, mumps, rubella and varicella, a Tdap shot, and a TB test within the past 3 months (then yearly). Start gathering shot records early. The page does not state weekly shift length or any fee. O'Connor is a sister hospital of Santa Clara Valley Medical Center. The email link on the page has a typo, so type OCHVolunteer@hhs.sccgov.org by hand.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "regions": [
@@ -79531,10 +79536,10 @@
    "https://www.paloalto.gov/Departments/Community-Services/Teen-Services/ACT"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Same page lists the Ceramics Apprentice Program (16 and older, 2 years of Art Center ceramics or instructor approval, 2 hours a week, one training session). Spots may fill fast once registration opens.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "palo-alto-library-tlab",
@@ -79572,10 +79577,10 @@
    "https://library.cityofpaloalto.org/blogs/post/teen-volunteering-in-palo-alto"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 3,
   "notes": "Fingerprinting is required. Log your hours in Better Impact or the library cannot confirm them.",
-  "verified_on_label": "Oct 7, 2026",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -79615,10 +79620,10 @@
    "https://www.paloalto.gov/News-Articles/City-Manager/Professional-Development-Opportunities-for-Teens"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 3,
   "notes": "Check the current deadline with Mitchell Park Teen Services (3700 Middlefield Rd, or @mpteenservices on Instagram and Facebook). Pay is not mentioned on the page; treat as unpaid until confirmed.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "palo-alto-youth-council",
@@ -79656,10 +79661,10 @@
    "https://www.mitchellparkteenservices.org/payc"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Pay is not mentioned on the page; treat as unpaid until confirmed. Term length is not stated. Contact Mitchell Park Teen Services (3700 Middlefield Rd).",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "regions": [
@@ -79863,10 +79868,10 @@
    "https://1pvi.org/volunteer-application"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 3,
   "notes": "Weekday daytime hours make this hard during the school year, so summer or school breaks fit best. The under-16 rule appears in the group volunteering section of the page. Idealist listings for PVI say volunteers must be at least 16, but the PVI page itself does not say that, so ask PVI about the age rule before you apply.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "pennsylvania-4h-youth-development",
@@ -84824,10 +84829,10 @@
    "https://www.cityofsanmateo.org/2813"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Training classes are on the 1st and 3rd Thursday, 5 to 7 p.m. Hours count toward school service requirements. You need a flexible schedule for weekdays and weekends. FAQ is at cityofsanmateo.org/4720.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "police-explorers-hayward",
@@ -84904,10 +84909,10 @@
    "https://morganhill.ca.gov/1320/Police-Explorer-Program"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 3,
   "notes": "Free to join, but you may need to buy a uniform and gear. Financial help is available. Expected to attend all meetings, trainings and events. Meeting times are not on the page.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "police-explorers-oakland",
@@ -87015,10 +87020,10 @@
    "https://www.redwoodcity.org/departments/parks-recreation-and-community-services/teens/leadership-in-training-l-i-t"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Teens pay a fee to take part (2026: $88, $98, $98 or $49 depending on session). The fee is due after a successful interview. Placement depends on camp needs. A mandatory Saturday training is required. 2027 dates are not posted, so expect a similar April to May window and watch the page.",
-  "verified_on_label": "Oct 19, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "regeneron-isef",
@@ -87140,10 +87145,10 @@
    "https://rmc.scvh.org/giving-volunteering/volunteer-services"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-22",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Read on the official Regional Medical Center page on 2026-10-16. You must be fully vaccinated and upload immunization records and a TB test for the health clearance. After 6 months and 100 hours you may qualify for shadowing. Have your reference form ready before Jan 1 since the window is only one week. Benefits include free parking and a free flu shot after one year.",
-  "verified_on_label": "Oct 22, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "reno-parks-junior-lifeguards",
@@ -92606,10 +92611,10 @@
    "https://www.sjpl.org/teenhq"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-22",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "The volunteer page lists both Teens Reach and Teen Book Reviewer as teen roles, and links Teens Reach to its own page at sjpl.org/teensreach, so this one card covers both. Teens Reach meeting times differ by branch; check your branch's page. TeenHQ is at the King Library, 150 E San Fernando.",
-  "verified_on_label": "Oct 22, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "san-jose-works",
@@ -92648,10 +92653,10 @@
    "https://www.sanjoseca.gov/your-government/departments-offices/office-of-the-city-manager/economic-development/san-jos-works/youth-application"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "Pay rate and placement dates are not posted on the pages. The paid work experience is for youth 14 to 18 with barriers to employment; placement is not guaranteed. The FAQ says job help is free for San Jose residents 16 to 29. Under 18 needs a work permit.",
-  "verified_on_label": "Oct 19, 2026",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -92691,10 +92696,10 @@
    "https://www.sjpl.org/youth-commission/join-your-district-youth-advisory-council/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Page is hosted by the library. Some council districts are unavailable or paused. YAC members earn community service hours. Pay not mentioned.",
-  "verified_on_label": "Oct 10, 2026",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -92943,10 +92948,10 @@
    "https://jobsforyouth.org/internships/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Teens under 18 can use the workshops and job board but not the county internship. Phone 650-599-7215, email jobsforyouth@smcgov.org. Must be a San Mateo County resident for the internship.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "san-mateo-county-library-teen-volunteer",
@@ -92983,10 +92988,10 @@
    "https://smcl.org/volunteer/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "The page did not list a Teen Advisory Board. Roles are set by branch, and there may be a wait for an opening. Apply for your own branch (13 locations).",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "san-pablo-summer-internship-program",
@@ -94258,10 +94263,10 @@
    "https://www.sclibrary.org/kids-teens/teens/teen-library-leaders"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Leaders earn service hours. The page still shows the spring meeting dates (Thursdays at 5 pm on Feb 12, Mar 19, Apr 9 and May 7), which look like 2026 dates. Ask the teen librarian (kguzman@santaclaraca.gov) for this year's dates and when leaders are picked.",
-  "verified_on_label": "Oct 16, 2026",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -94299,10 +94304,10 @@
    "https://www.sclibrary.org/kids-teens/teens"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "This is the city's own library (Central Park, Northside and Mission), not the county library. Each book review counts as one hour. The library's adult reading tutor program is for ages 18 and up.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "santa-clara-city-library-teens-teach",
@@ -94339,10 +94344,10 @@
    "https://www.sclibrary.org/kids-teens/teens/teens-teach"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Plan to show up 30 minutes early to set up, and dress work casual. The interview questions are listed on the page so you can prepare.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "santa-clara-county-sheriff-youth-cadets",
@@ -94379,10 +94384,10 @@
    "https://sheriff.santaclaracounty.gov/community/youth-cadet-program-teen-academy"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Meetings are required. Cadets can choose to act as decoys in alcohol and tobacco sting operations. You must commit to the full 3-week summer academy.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "santa-clara-county-teen-cert",
@@ -94410,7 +94415,7 @@
   "duration": "3 day academy (Friday evening to Sunday)",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "The newest date on the site is old or unclear. It shows an academy on January 8 to 10 with no year printed, and says the most recent academy was in March 2026. Join the waitlist to hear about the next one.",
+  "deadline_text": "No date is posted as of Nov 2, 2026. The site says the next academy will most likely be in November, with no year printed. The most recent academy was in March 2026. Join the waitlist to hear about the next one.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Join the waitlist form on the Teen CERT website or email scctcert@gmail.com to be told when the next academy opens. Paperwork drop-off happened before the last academy.",
@@ -94422,10 +94427,10 @@
    "https://www.sccfd.org/wp-content/uploads/2025/12/Teen-CERT-Academy-March-2026-Flyer.pdf"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "The March 2026 flyer said ages 13 to 17 and the website says 13 to 18, so check your age with them. Cost is not stated; the last academy was at Los Altos Hills Town Hall. Santa Clara County residents only.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -94463,10 +94468,10 @@
    "https://www.governmentjobs.com/careers/cityofsantaclaraca"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Fingerprints and a TB test are required. A work permit is needed at hire if you are under 18 and have not finished high school. The posting does not say which city pools are hiring, so ask when you apply.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "santa-clara-pal-police-explorers",
@@ -94503,10 +94508,10 @@
    "https://www.santaclaraca.gov/our-city/departments-g-z/police-department/community/pal-police-activities-league"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The program page is on Santa Clara PAL's own sign-up site. The City of Santa Clara police page confirms PAL runs Police Explorers. You must go to the monthly meetings and help at community events.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "santa-clara-recreation-leader-jobs",
@@ -94529,7 +94534,7 @@
   "paid_type": "paid",
   "pay_detail": "Recreation Leader I: $18.70 to $21.56 per hour. (Leader II: $19.28 to $25.10. Leader III: $20.65 to $27.57.)",
   "season": "year-round",
-  "duration": "As-needed, part-time, up to 999 hours a year.",
+  "duration": "As-needed.",
   "status": "rolling",
   "opens_iso": null,
   "deadline_text": "Opened Mar 15, 2026. Closing date: Continuous.",
@@ -94544,10 +94549,10 @@
    "https://www.governmentjobs.com/careers/cityofsantaclaraca"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "The posting says a California work permit is needed at hire if you are under 18 and have not finished high school. You will be fingerprinted. This is an as-needed job, so hours are not promised.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "santa-clara-students-of-service",
@@ -94585,10 +94590,10 @@
    "https://anc.apm.activecommunities.com/santaclara/activity/search/detail/23679?onlineSiteId=0&from_original_cui=true"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "Registration is free. The training for Kindness Ambassador shifts counts toward your hours. The same page lists a Summer Junior Leader program (ages 14-18) for camps and swim programs, but it charges a fee and summer 2026 is closed.",
-  "verified_on_label": "Oct 16, 2026",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -94603,7 +94608,7 @@
   "needs_work_permit": false,
   "priority": 2,
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-02",
   "id": "santa-clara-youth-commission",
   "name": "Santa Clara Youth Commission",
   "org": "City of Santa Clara",
@@ -94629,7 +94634,7 @@
   "sources_fetched": [
    "https://www.santaclaraca.gov/our-city/government/boards-commissions/youth-commission"
   ],
-  "verified_on_label": "Oct 19, 2026",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -94895,7 +94900,7 @@
   "who_can_apply": "Youth ages 16 to 18 who get CalWORKs benefits, or current and former foster youth ages 16 to 24. Open to year-round employment services.",
   "paid_type": "paid",
   "pay_detail": "$19.75 per hour, up to 30 hours per week",
-  "season": "summer",
+  "season": "year-round",
   "duration": "8 weeks per cohort",
   "status": "rolling",
   "opens_iso": null,
@@ -94910,10 +94915,10 @@
    "https://ecstaffing.santaclaracounty.gov/services/county-santa-clara-intern-earn"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Only for teens who get CalWORKs benefits or who are/were in foster care, so most teens do not qualify. Under 18 needs a work permit. Positions are across the county.",
-  "verified_on_label": "Oct 18, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "scc-library-teen-volunteer",
@@ -94949,10 +94954,10 @@
    "https://sccld.org/teens"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "Serves the library district branches, not every city in the county (San Jose has its own library). Hours, training and schedule are on the volunteer page. See the separate homework-help tutor card (Santa Clara County Library District Teen Volunteer Tutor) for a similar after-school tutoring role.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "scc-student-intern-level-1",
@@ -94990,10 +94995,10 @@
    "https://esa.santaclaracounty.gov/career-seekers/student-internship-program-information-students"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Interns can be hired any time of year depending on department needs, so keep the alert on. Some departments (District Attorney, Behavioral Health, Public Health, Parks) run their own internships; contact them directly.",
-  "verified_on_label": "Oct 18, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "sccld-homework-help-tutor",
@@ -95030,10 +95035,10 @@
    "https://sccld.org/volunteer/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "The page lists these libraries: Campbell, Cupertino, Gilroy, Los Altos, Milpitas, Morgan Hill and Saratoga. Check that your branch is on the list. Training is online (about 7 hours). The broader card (Santa Clara County Library District Teen Volunteers) also includes after-school tutoring of a kindergarten to grade 6 student.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "opens_iso": null,
@@ -95395,10 +95400,10 @@
    "https://scvmc.scvh.org/giving-volunteering/volunteer-services"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The health screening asks for proof of vaccines, a flu shot, immunity to measles, mumps, rubella and varicella, a Tdap shot, and a TB test within the last 3 months. Ask your parent to start gathering records early. Questions: vmcvolunteer@hhs.sccgov.org.",
-  "verified_on_label": "Oct 18, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "sdma-teen-council",
@@ -99244,10 +99249,10 @@
    "https://www6.slac.stanford.edu/news-and-events/events/science-bowl"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-21",
+  "verified_on": "2026-11-02",
   "priority": 3,
   "notes": "Needs a school team and coach. Volunteer sign-up info is due to be shared by December 2026 (no experience needed). Event is at SLAC, 2575 Sand Hill Road, Menlo Park.",
-  "verified_on_label": "Oct 21, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "slac-sage-camp",
@@ -99285,10 +99290,10 @@
    "https://sage.slac.stanford.edu/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The SAGE page says the camp is free and residential (overnight). The only dates posted are June 21 to 27, 2026. 2026 applications ran Feb 24 to Mar 17, so check the SAGE site in February.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "smash-residential",
@@ -101177,7 +101182,7 @@
   "duration": null,
   "status": "rolling",
   "opens_iso": null,
-  "deadline_text": "No deadline posted. The page links to an online application with no window stated (read 2026-10-16).",
+  "deadline_text": "No deadline posted. The page links to an online application with no window stated (as of Nov 2, 2026).",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
   "how_to_apply": "Fill out the volunteer form online. Questions? Call the volunteer office at 408-852-2521.",
@@ -101188,10 +101193,10 @@
    "https://slrh.scvh.org/giving-volunteering"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "Read on the official St. Louise Regional Hospital page on 2026-10-16. It is South County's community hospital in Gilroy. The page does not state hours, commitment length, health screening, TB test or fees; ask the volunteer office. The page shows an email address whose link points to a different address, so call the phone number instead.",
-  "verified_on_label": "Oct 16, 2026"
+  "notes": "It is South County's community hospital in Gilroy. The page does not state hours, commitment length, health screening, TB test or fees; ask the volunteer office. The page shows an email address whose link points to a different address, so call the phone number instead.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "grades": null,
@@ -101309,10 +101314,10 @@
    "https://aimi.stanford.edu/education/summer-research-internship"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-21",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "Re-read the AIMI page on 2026-10-07. The dates are for the Summer 2027 program. The page does not state pay or cost, length, detailed eligibility or whether the program is in person, so the pay and work-permit answers are not confirmed. Confirm those with aimi-hs-programs@stanford.edu before applying. The Summer Health AI Bootcamp is a separate program on the same site and is not covered here.",
-  "verified_on_label": "Oct 21, 2026"
+  "notes": "The dates are for the Summer 2027 program. The page does not give pay, cost, length, full rules or if it is in person, so pay and work permit are not confirmed. Confirm those with aimi-hs-programs@stanford.edu before applying. The Summer Health AI Bootcamp is a separate program on the same site and is not covered here.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "stanford-care-explorers",
@@ -101329,32 +101334,33 @@
    "tech-cs",
    "science"
   ],
-  "what_you_do": "This is a two-week in-person summer program. It covers health topics that affect Asian communities. You learn AI basics and leadership skills. You also learn about precision health data.",
+  "what_you_do": "This is a two-week summer program, in person or online. It covers health topics that affect Asian communities. You learn AI basics and leadership skills. You also learn about precision health data.",
   "min_age": 14,
   "max_age": null,
   "grades": "Rising 10th, 11th and 12th graders",
-  "who_can_apply": "Rising sophomores, juniors and seniors who are at least 14 and can commute daily to the Palo Alto campus. You need a laptop.",
+  "who_can_apply": "Rising sophomores, juniors and seniors who are at least 14. In-person students must live within commuting distance of the Palo Alto campus with a parent or guardian. You need a computer.",
   "paid_type": "fee-based",
-  "pay_detail": "2026 fee was $5,500; 2027 fee not announced. Limited need-based aid in 2026.",
+  "pay_detail": "In-person fee $5,725. Online fee $3,500. Application fee $59. Limited need-based aid.",
   "season": "summer",
-  "duration": "2 weeks (2026 sessions: June 15 to 26 and July 6 to 17)",
-  "status": "closed-expect-reopen",
-  "opens_iso": null,
-  "deadline_text": "2027 dates will be announced in fall 2026. Sign up for announcements.",
+  "duration": "2 weeks (2027 sessions: June 14 to 25 and July 19 to 30 in person; July 6 to 16 online)",
+  "status": "opens-soon",
+  "opens_iso": "2026-11-03",
+  "deadline_text": "Summer 2027 applications open Nov 3, 2026. No closing date is posted as of Nov 2, 2026.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
-  "how_to_apply": "Sign up for application announcements on the CARE page; email carehighschoolprogram@stanford.edu.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply on the CARE page when applications open Nov 3, 2026. You can sign up there for announcements. Questions: carehighschoolprogram@stanford.edu.",
   "needs_work_permit": false,
-  "url": "https://asianhealth.stanford.edu/education/stanford-care-ai-summer-program-high-school-students",
+  "url": "https://asianhealth.stanford.edu/education/stanford-care-explorers-ai-x-precision-health-high-school-program",
   "apply_url": null,
   "sources_fetched": [
-   "https://asianhealth.stanford.edu/education/stanford-care-ai-summer-program-high-school-students"
+   "https://asianhealth.stanford.edu/education/stanford-care-explorers-ai-x-precision-health-high-school-program"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-21",
+  "verified_on": "2026-11-02",
   "priority": 3,
-  "notes": "Pay-to-play. Day program, about 9am to 3pm on weekdays. No housing or transportation provided; lunch and snacks included. No application fee waivers in 2026.",
-  "verified_on_label": "Oct 21, 2026"
+  "notes": "Pay-to-play. In-person days run 9am to 3pm on weekdays, with lunch and snacks. No housing or rides. Online classes run 8:30am to 1pm Pacific on weekdays. Aid is for U.S. citizens and permanent residents who live and go to high school in the U.S.",
+  "verified_on_label": "Nov 2, 2026",
+  "limited": true
  },
  {
   "id": "stanford-childrens-teen-volunteer",
@@ -101369,32 +101375,34 @@
   "fields": [
    "health"
   ],
-  "what_you_do": "You can volunteer as a teen in one of five areas: mother and baby care, play and recreation, support services, education, and community-based activities.",
-  "min_age": null,
-  "max_age": null,
+  "what_you_do": "Right now teens can only volunteer in the hospital Gift Shop. The program also lists five areas: mother and baby care, play and recreation, support services, education, and community-based activities.",
+  "min_age": 16,
+  "max_age": 17,
   "grades": "Teen",
-  "who_can_apply": "Teens. Start with an online orientation, then a scheduled interview; eligible teens get the application link after the interview. Age and schedule rules are given in the orientation.",
+  "who_can_apply": "Teens age 16 or 17. You need the same weekly shift for at least 6 months. Only Gift Shop roles are open to teens now.",
   "paid_type": "unpaid",
   "pay_detail": "Unpaid volunteer",
   "season": "year-round",
-  "duration": null,
+  "duration": "At least 6 months, same day and time each week",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Openings and requirements are shown during the online orientation. No dates on the page.",
+  "deadline_text": "Orientation sign-up is closed as of Nov 2, 2026, and no sessions are scheduled. There is no waitlist. Check the portal for new dates.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Start with the online orientation on volunteer.stanfordchildrens.org, then interview. Questions: volunteerservices@stanfordchildrens.org.",
+  "how_to_apply": "Sign up for the online orientation for minors when it reopens, then do a group interview. Eligible teens get the application link after that. Questions: volunteerservices@stanfordchildrens.org.",
   "needs_work_permit": false,
   "url": "https://www.stanfordchildrens.org/en/volunteer/programs.html",
-  "apply_url": "https://volunteer.stanfordchildrens.org",
+  "apply_url": "https://volunteer.stanfordchildrens.org/custom/502/opp_details/652",
   "sources_fetched": [
-   "https://www.stanfordchildrens.org/en/volunteer/programs.html"
+   "https://www.stanfordchildrens.org/en/volunteer/programs.html",
+   "https://www.stanfordchildrens.org/en/volunteer/prospective.html",
+   "https://volunteer.stanfordchildrens.org/custom/502/opp_details/652"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "Minimum age is not stated on the page. Ask the volunteer office.",
-  "verified_on_label": "Oct 7, 2026"
+  "notes": "Do not sign up unless you want the Gift Shop. Adults 18 and older use a separate link.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "stanford-grips",
@@ -101476,10 +101484,10 @@
    "https://stanfordhealthcare.org/for-patients-visitors/volunteering.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Stanford says this does not count for school clinical-hour needs and has no shadowing.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "stanford-medcsi",
@@ -101607,10 +101615,10 @@
    "https://summerinstitutes.spcs.stanford.edu/tuition-and-financial-aid"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 3,
   "notes": "Pay-to-play. Prices and dates are from 2026. The page says to join the mailing list for future dates. Admissions page (checked 2026-10-10) says 'older than 13 and younger than 19 during the program dates'. The tuition page gives the $60 fee for financial aid applications; the admissions page gives $65.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "stanford-simr",
@@ -101934,10 +101942,10 @@
    "https://www.sunnyvale.ca.gov/your-government/get-involved/volunteer"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The official page was checked. Fill out only one application.",
-  "verified_on_label": "Oct 19, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "grades": null,
@@ -102403,16 +102411,16 @@
   "how_to_apply": "Use the Apply now link on either page. Questions? Email PAMFSOUTHBAYADMIN@sutterhealth.org.",
   "needs_work_permit": false,
   "url": "https://www.sutterhealth.org/volunteering/opportunities/student-volunteer-at-pamf-mountain-view-center-1096205788",
-  "apply_url": null,
+  "apply_url": "https://feedback.sutterhealth.org/f/142358/3ec2/",
   "sources_fetched": [
    "https://www.sutterhealth.org/volunteering/opportunities/student-volunteer-at-pamf-mountain-view-center-1096205788",
    "https://www.sutterhealth.org/volunteering/opportunities/student-volunteer-at-pamf-sunnyvale-center-1096205777"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Read on the official Sutter Health listings on 2026-10-16. These are outpatient medical centers, not hospitals. Shifts are Monday to Friday only, so this fits summer or students with free weekday time. The Sunnyvale and Mountain View listings use the same text and the same contact. They do not state health screening, TB test or fees.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "sutter-pamf-palo-alto-student-volunteer",
@@ -102449,10 +102457,10 @@
    "https://www.sutterhealth.org/volunteering/opportunities/student-volunteer-at-pamf-palo-alto-center-1096205779"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Read on the official Sutter Health listing on 2026-10-16. This is an outpatient medical center, not a hospital. Shifts are Monday to Friday only, 8 am to 12 pm or 12 pm to 4 pm, with no weekend hours, so it fits summer or students with free weekday time. The listing does not state a minimum commitment, health screening, TB test or fees.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "svcte-silicon-valley-career-technical-education",
@@ -102498,10 +102506,10 @@
    "https://svcte.metroed.net/Course-Information/Post-Secondary-Options/index.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "Re-read the SVCTE home page and the Shadow Days, Dual Enrollment, Internships and Post-Secondary Options pages on 2026-10-07. The homepage lists 22 career technical courses (the old file said more than 24 pathways). Dual enrollment courses are taught by college professors at the high school campus. Shadow Days: after talking to your home school counselor, submit interest on the site; the counselor must approve it, and you get a confirmation 7 days before the visit. Eligibility, costs, deadlines and enrollment dates are not stated on the pages.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "tacoma-nature-center-teen-volunteer-leadership",
@@ -102897,12 +102905,12 @@
   "pay_detail": null,
   "season": "winter",
   "duration": "Six shifts in the peak windows: Nov 21 to 29 and Dec 19 to Jan 3",
-  "status": "open-now",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "The apply portal takes new applications (Oct 22, 2026). The page gives no deadline; an earlier version said Oct 9 to Oct 23, 2026, so apply soon.",
+  "deadline_text": "Holiday Helper applications are closed as of Nov 2, 2026. The 2026 window was listed as Oct 9 to Oct 23. Check back after the New Year for summer teen programs.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
-  "how_to_apply": "Use the Apply Here link on the official page (vhub.at/TeenVolunteer). Questions: volunteer@thetech.org or 408-294-8324.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Applications are closed. Check the official page after the New Year for summer teen programs. Teen portal: vhub.at/TeenVolunteer. Questions: volunteer@thetech.org or 408-294-8324.",
   "needs_work_permit": false,
   "url": "https://www.thetech.org/support/volunteer-innovator-program/",
   "apply_url": "https://thetech.volunteerhub.com/vv2/lp/TeenVolunteer/",
@@ -102912,10 +102920,10 @@
    "https://www.thetech.org/support/volunteer-innovator-program/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-22",
+  "verified_on": "2026-11-02",
   "priority": 1,
-  "notes": "You must go to one orientation. Pick Saturday Nov 14, Nov 21 or Dec 5, 2026, 9:00 AM to 12:30 PM. They read applications after the deadline.",
-  "verified_on_label": "Oct 22, 2026"
+  "notes": "You must go to one orientation. Pick Saturday Nov 14, Nov 21 or Dec 5, 2026, 9:00 AM to 12:30 PM. They read applications after the deadline. Dates shown are from the 2026 cycle.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "regions": [
@@ -110560,10 +110568,10 @@
    "https://www.valleywater.org/learning-center/valley-water-youth-commission"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "Meetings are at Valley Water headquarters, 5700 Almaden Expressway, San Jose.",
-  "verified_on_label": "Oct 7, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "grades": null,
@@ -113662,28 +113670,29 @@
   "min_age": null,
   "max_age": null,
   "grades": "9 to 12",
-  "who_can_apply": "Concurrent enrollment: grades 9 to 12. Middle College: juniors and seniors from LGSUHSD and CUHSD. Dual enrollment on high school campuses: CUHSD (Campbell Union High School District) students only.",
+  "who_can_apply": "Concurrent enrollment: grades 9 to 12, with approval from your high school. Middle College: juniors and seniors from LGSUHSD and CUHSD. Dual enrollment on high school campuses: CUHSD (Campbell Union High School District) students only.",
   "paid_type": "unpaid-credit",
-  "pay_detail": "Free (per the college page)",
+  "pay_detail": "No registration fees or tuition at a participating California high school. You pay class fees, books and supplies.",
   "season": "school-year",
   "duration": null,
-  "status": "unconfirmed",
+  "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "No deadline on the page. Follow the college's term dates.",
+  "deadline_text": "For winter and spring 2027, the college application is open and the Concurrent Enrollment Form opens Nov 2, 2026. Registration starts Nov 16, 2026 for the classes of 2027 to 2030. No closing date is posted.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
-  "how_to_apply": "Start at the college's high school students page and apply through the admissions portal; the page also covers assessment, orientation and registration.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Talk to your counselor first. Apply to the college. Then send the Concurrent Enrollment Form with your counselor form. Register on or after your date. The college's Concurrent Enrollment page lists all the steps.",
   "needs_work_permit": false,
   "url": "https://www.westvalley.edu/high-school-students/",
-  "apply_url": null,
+  "apply_url": "https://www.westvalley.edu/concurrent-enrollment/index.html",
   "sources_fetched": [
-   "https://www.westvalley.edu/high-school-students/"
+   "https://www.westvalley.edu/high-school-students/",
+   "https://www.westvalley.edu/concurrent-enrollment/index.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "Ask the college about unit limits and your counselor about credit.",
-  "verified_on_label": "Oct 7, 2026"
+  "notes": "You can take up to 8 units per semester. Ask your counselor about credit.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "western-science-center-junior-volunteers",
@@ -114976,10 +114985,10 @@
    "https://www.work2future.org/young-adults/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-22",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "San Jose Works, a partner program, is also on the page. The page gives ages 14 to 18 for its Paid Work Experience Program and ages 16 to 29 for other city services. Income and barrier rules apply. The page does not say whether job centers are by appointment only. It does not say whether the other services are free.",
-  "verified_on_label": "Oct 22, 2026",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -115825,7 +115834,7 @@
   "paid_type": "unpaid-credit",
   "pay_detail": "Unpaid volunteer role. The page says it can earn Service-Learning credit for graduation.",
   "season": "school-year",
-  "duration": "Five days per session (typically Monday to Friday). Session dates are not stated.",
+  "duration": "Five days per session (typically Monday to Friday). The application lists weeks from Nov 3, 2026 to June 4, 2027.",
   "status": "open-now",
   "opens_iso": null,
   "deadline_text": "Applications open in August and close in the middle of May, in six-week windows. Apply at least two weeks before the dates you want.",
@@ -115837,13 +115846,14 @@
   "apply_url": "https://www.ymcasv.org/ymca-camp-campbell/outdoor-education/cabin-leaders/ymca-camp-campbell-cabin-leader-application",
   "sources_fetched": [
    "https://www.ymcasv.org/ymca-camp-campbell/outdoor-education/cabin-leaders",
-   "https://ymcasv.org/education-enrichment/leadership-development"
+   "https://ymcasv.org/education-enrichment/leadership-development",
+   "https://forms.ymcasv.org/embed.php?id=3"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-21",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "Camp Campbell is at 16275 Highway 9, Boulder Creek, CA 95006, per the cabin-leaders page. This is an unpaid volunteer role, so no work permit is needed. The same YMCA's Youth and Government program is already in ymca-youth-and-government-ca.json. Leaders in Training is also listed on the leadership page, but its age and details are not stated, so it is not a card.",
-  "verified_on_label": "Oct 21, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "ymca-silicon-valley-mt-madonna-high-school-volunteer",
@@ -115870,7 +115880,7 @@
   "duration": "Teen center tutoring is Monday, Wednesday, Thursday and Friday; hours to be set.",
   "status": "rolling",
   "opens_iso": null,
-  "deadline_text": "The volunteer posting runs June 1, 2026 to Dec 31, 2027 (9 spots listed). The tutor posting runs Sept 1, 2026 to Sept 1, 2027 (24 spots listed).",
+  "deadline_text": "The volunteer posting runs June 1, 2026 to Dec 31, 2027 (8 spots listed). The tutor posting runs Sept 1, 2026 to Sept 1, 2027 (24 spots listed).",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
   "how_to_apply": "Open the posting on the YMCA volunteer site and click the Volunteer button. Questions about tutoring? Contact Liz Burke at elizabeth.burke@ymcasv.org or 408-310-4257.",
@@ -115884,10 +115894,10 @@
    "https://www.ymcasv.org/volunteering"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "The posting lists the City of Morgan Hill as a partner. It does not give a minimum age or say if there is a background check. So ask before you sign up. The same site marks other roles as Great for Teens. One is a youth basketball coach at the El Camino YMCA in Mountain View. That season runs Jan 11 to March 27 (no year given). It is 1 hour of practice a week plus a 1 hour Saturday game.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "ymca-silicon-valley-teen-youth-councils",
@@ -115902,34 +115912,36 @@
    "health",
    "social-impact"
   ],
-  "what_you_do": "You join a teen group that meets twice a month. Members plan events. They also make short ads and podcasts about teen health, like mental health and drug use.",
+  "what_you_do": "You join a teen group. Members plan events. They also make short ads and podcasts about teen health, like mental health and drug use.",
   "min_age": null,
   "max_age": null,
-  "grades": "YTI Youth Council: 8 to 12. Friday Night Live Council: 6 to 12.",
-  "who_can_apply": "YTI Youth Council: teens in grades 8 to 12; meets in Mountain View. Friday Night Live Council: grades 6 to 12 in the Gilroy and Morgan Hill area. The application asks for a parent's contact information.",
+  "grades": "YTI Youth Council: 7 to 12. Friday Night Live Council: 6 to 12.",
+  "who_can_apply": "YTI Youth Council: teens in grades 7 to 12. Friday Night Live Council: grades 6 to 12 in the Gilroy and Morgan Hill area. The application asks for a parent's contact information.",
   "paid_type": "unpaid",
   "pay_detail": "Unpaid. No cost is stated.",
   "season": "school-year",
-  "duration": "In 2025-26, YTI ran August 2025 to May 2026 and FNL ran September 2025 to June 2026, with 6:30 to 8:00 p.m. meetings twice a month.",
-  "status": "unconfirmed",
+  "duration": "YTI runs October to May, twice a month on Wednesdays, starting Oct 7, 2026. FNL runs November to June; times and place are not set yet.",
+  "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "2025-26: YTI meetings began Aug 20, 2025 and FNL meetings began Sept 10, 2025. Both application forms still took answers on Oct 16, 2026, but they describe 2025-26 and no 2026-27 schedule is posted.",
+  "deadline_text": "No deadline posted as of Nov 2, 2026. YTI meetings began Oct 7, 2026. FNL starts in November (year not stated).",
   "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Fill out the short form. Use Apply Today or Register Today on the leadership page. Then text the advisor, Elena Chavez, at 559-405-3787. Email: elena.chavez@ymcasv.org.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the application. Use Apply Today or Register Today on the leadership page. Questions? Contact the advisor, Aarty Sharma, at 669-322-9559 or aarty.sharma@ymcasv.org.",
   "needs_work_permit": false,
   "url": "https://www.ymcasv.org/education-enrichment/leadership-development",
-  "apply_url": "https://forms.gle/gNXiw4ws7bmvdSn77",
+  "apply_url": "https://forms.ymcasv.org/view.php?id=275159",
   "sources_fetched": [
    "https://www.ymcasv.org/education-enrichment/leadership-development",
    "https://docs.google.com/forms/d/e/1FAIpQLSfBISSCjmCWDSoH__fb32gA17RAmByrDJP_63XPz89UdMCz4Q/viewform",
-   "https://docs.google.com/forms/d/e/1FAIpQLSd9empDYwh6AAoie2KbD5fUmD97S69tQpaY3IRcAldwZvWS2g/viewform"
+   "https://docs.google.com/forms/d/e/1FAIpQLSd9empDYwh6AAoie2KbD5fUmD97S69tQpaY3IRcAldwZvWS2g/viewform",
+   "https://forms.ymcasv.org/view.php?id=275159",
+   "https://forms.ymcasv.org/view.php?id=274933"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-02",
   "priority": 3,
-  "notes": "Confirm the 2026-27 meeting dates with the advisor before you apply. The Friday Night Live form is at https://forms.gle/1S4yBfha9JZFys7Y7. The leadership page says the program builds civic engagement, persuasive speaking and project planning skills. The same page lists Leaders in Training, but it gives no age and the registration search showed no open LIT sessions.",
-  "verified_on_label": "Oct 16, 2026"
+  "notes": "The new forms do not name meeting places; the city shown is from 2025-26. The Friday Night Live form is at https://forms.ymcasv.org/view.php?id=274933. The leadership page says the program builds civic engagement, persuasive speaking and project planning skills. The same page lists Leaders in Training, but it gives no age and is marked coming soon.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "ymca-superior-california-bear-valley-cit",
@@ -116380,10 +116392,10 @@
    "https://www.youthcommunityservice.org/ycs-programs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
-  "notes": "They also offer a scholarship and one-day service pop-ups. It is based at 780 Arastradero Rd, Palo Alto.",
-  "verified_on_label": "Oct 7, 2026"
+  "notes": "They also offer a scholarship and one-day service pop-ups. It is based at 85 Churchill Avenue, Palo Alto.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "youth-job-center-evanston",

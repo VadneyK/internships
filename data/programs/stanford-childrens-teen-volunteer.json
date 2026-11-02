@@ -11,29 +11,31 @@
   "fields": [
     "health"
   ],
-  "what_you_do": "You can volunteer as a teen in one of five areas: mother and baby care, play and recreation, support services, education, and community-based activities.",
-  "min_age": null,
-  "max_age": null,
+  "what_you_do": "Right now teens can only volunteer in the hospital Gift Shop. The program also lists five areas: mother and baby care, play and recreation, support services, education, and community-based activities.",
+  "min_age": 16,
+  "max_age": 17,
   "grades": "Teen",
-  "who_can_apply": "Teens. Start with an online orientation, then a scheduled interview; eligible teens get the application link after the interview. Age and schedule rules are given in the orientation.",
+  "who_can_apply": "Teens age 16 or 17. You need the same weekly shift for at least 6 months. Only Gift Shop roles are open to teens now.",
   "paid_type": "unpaid",
   "pay_detail": "Unpaid volunteer",
   "season": "year-round",
-  "duration": null,
+  "duration": "At least 6 months, same day and time each week",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Openings and requirements are shown during the online orientation. No dates on the page.",
+  "deadline_text": "Orientation sign-up is closed as of Nov 2, 2026, and no sessions are scheduled. There is no waitlist. Check the portal for new dates.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Start with the online orientation on volunteer.stanfordchildrens.org, then interview. Questions: volunteerservices@stanfordchildrens.org.",
+  "how_to_apply": "Sign up for the online orientation for minors when it reopens, then do a group interview. Eligible teens get the application link after that. Questions: volunteerservices@stanfordchildrens.org.",
   "needs_work_permit": false,
   "url": "https://www.stanfordchildrens.org/en/volunteer/programs.html",
-  "apply_url": "https://volunteer.stanfordchildrens.org",
+  "apply_url": "https://volunteer.stanfordchildrens.org/custom/502/opp_details/652",
   "sources_fetched": [
-    "https://www.stanfordchildrens.org/en/volunteer/programs.html"
+    "https://www.stanfordchildrens.org/en/volunteer/programs.html",
+    "https://www.stanfordchildrens.org/en/volunteer/prospective.html",
+    "https://volunteer.stanfordchildrens.org/custom/502/opp_details/652"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "Minimum age is not stated on the page. Ask the volunteer office."
+  "notes": "Do not sign up unless you want the Gift Shop. Adults 18 and older use a separate link."
 }
