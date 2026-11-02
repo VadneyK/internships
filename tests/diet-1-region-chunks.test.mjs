@@ -437,7 +437,8 @@ const BUDGET = {
   // 2026-11-02: 12 second-pass SoCal cards (2,877 programs), stacked on PR 125. PENDING PERSON APPROVAL. 1562500, 259500 to 1577000, 261000.
   // 2026-11-02: same second-pass raise, gzip 261000 to 262500. PENDING PERSON APPROVAL.
   // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 1577000, 262500 to 1578500, 263000.
-  "?at=city:san-francisco": { raw: 1578500, gzip: 263000, label: "a Bay Area city" },
+  // 2026-11-02: Silicon Valley and San Francisco re-reads, stacked on the East Bay PRs. PENDING PERSON APPROVAL. 1578500 to 1582000.
+  "?at=city:san-francisco": { raw: 1582000, gzip: 263000, label: "a Bay Area city" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston raw 1057000 to 1075700.
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston gzip 168000 to 170700.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston raw 1075700 to 1096100.

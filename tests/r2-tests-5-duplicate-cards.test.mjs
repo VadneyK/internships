@@ -114,6 +114,10 @@ const SHARED_URL_ALLOW = new Map([
     ids: ["cincinnati-ccm-prep-musical-theatre-intensive", "cincinnati-ccm-prep-strings-intensive"],
     reason: "Shared hub: one CCM Prep application portal covers both summer intensives (ticket r2-data-content-4).",
   }],
+  ["https://feedback.sutterhealth.org/f/142358/3ec2/", {
+    ids: ["sutter-pamf-mountain-view-sunnyvale-student-volunteer", "sutter-pamf-palo-alto-student-volunteer"],
+    reason: "Shared hub: one Sutter PAMF student volunteer form covers both sites; the listings for each site link it.",
+  }],
   ["https://cosmos-ucop.ucdavis.edu/", {
     ids: ["cosmos-uc-davis", "cosmos-uc-merced", "uci-cosmos"],
     reason: "Same link on 2 cards (University of California (UC Davis campus); University of California, Irvine (COSMOS)). Not yet reviewed as a shared hub or a duplicate.",

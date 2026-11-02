@@ -11,29 +11,33 @@
   "fields": [
     "any"
   ],
-  "what_you_do": "Sophomores and juniors attend college classes in the morning. The college is Evergreen Valley College. High school classes are in the afternoon.",
+  "what_you_do": "Juniors and seniors attend college classes in the morning. The college is Evergreen Valley College. High school classes are in the afternoon.",
   "min_age": null,
   "max_age": null,
   "grades": "10 to 11",
-  "who_can_apply": "Sophomores (80 to 90 credits) and juniors (140 to 150 credits by January) with a 2.0 GPA or higher, good attendance, Algebra I or Integrated Math I done, and currently in Geometry or higher.",
+  "who_can_apply": "East Side Union 10th graders on track to graduate may apply. The school says it fits sophomores (80 to 90 credits) and juniors (140 to 150 credits by January) with a 2.0 GPA or higher, good attendance, and Math II or higher.",
   "paid_type": "unpaid-credit",
   "pay_detail": "No cost listed on the page (public school program)",
   "season": "school-year",
   "duration": "2 years",
-  "status": "year-round",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Recruitment meetings are held in the evening; dates not posted on the program page.",
+  "deadline_text": "Last cycle (2026-27): info night on January 27, 2026 and application due February 6, 2026. The 2027-28 dates are not posted as of Nov 2, 2026.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
-  "how_to_apply": "Register for the Evergreen Valley College placement test at (408) 274-7900 x6636, attend a recruitment and info meeting to get the application, then mail it or hand-deliver it to the Roble Building mailroom at Evergreen Valley College.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Go to the yearly info night. Then fill out the online form on the ACCEL How Do I Apply page by the deadline. Questions: ACCEL@esuhsd.org or 408-347-5105.",
   "needs_work_permit": false,
-  "url": "https://www.esuhsd.org/Schools/Accel-Middle-College",
+  "url": "https://accel.esuhsd.org/Our-School/How-Do-I-Apply/index.html",
   "apply_url": null,
   "sources_fetched": [
+    "https://accel.esuhsd.org/Our-School/How-Do-I-Apply/index.html",
+    "https://accel.esuhsd.org/Our-School/Who-Is-It-For/index.html",
+    "https://accel.esuhsd.org/Our-School/Overview/index.html",
+    "https://www.evc.edu/academics/dual-enrollment/accel-middle-college.html",
     "https://www.esuhsd.org/Schools/Accel-Middle-College"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "Page lists no age rule and no 2026-27 meeting dates; call the coordinator (Kathleen Leal, (408) 274-7900 x6881) for the schedule. Must also be taking biology, chemistry and physics and English 2 (sophomores) or English 3 (juniors)."
+  "notes": "The dates are from last cycle. You must have passed biology and be taking chemistry and physics. Sophomores also take English 2 or AP Seminar. Juniors take English 3 or AP English."
 }

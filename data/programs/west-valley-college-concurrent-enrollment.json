@@ -14,25 +14,26 @@
   "min_age": null,
   "max_age": null,
   "grades": "9 to 12",
-  "who_can_apply": "Concurrent enrollment: grades 9 to 12. Middle College: juniors and seniors from LGSUHSD and CUHSD. Dual enrollment on high school campuses: CUHSD (Campbell Union High School District) students only.",
+  "who_can_apply": "Concurrent enrollment: grades 9 to 12, with approval from your high school. Middle College: juniors and seniors from LGSUHSD and CUHSD. Dual enrollment on high school campuses: CUHSD (Campbell Union High School District) students only.",
   "paid_type": "unpaid-credit",
-  "pay_detail": "Free (per the college page)",
+  "pay_detail": "No registration fees or tuition at a participating California high school. You pay class fees, books and supplies.",
   "season": "school-year",
   "duration": null,
-  "status": "unconfirmed",
+  "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "No deadline on the page. Follow the college's term dates.",
+  "deadline_text": "For winter and spring 2027, the college application is open and the Concurrent Enrollment Form opens Nov 2, 2026. Registration starts Nov 16, 2026 for the classes of 2027 to 2030. No closing date is posted.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
-  "how_to_apply": "Start at the college's high school students page and apply through the admissions portal; the page also covers assessment, orientation and registration.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Talk to your counselor first. Apply to the college. Then send the Concurrent Enrollment Form with your counselor form. Register on or after your date. The college's Concurrent Enrollment page lists all the steps.",
   "needs_work_permit": false,
   "url": "https://www.westvalley.edu/high-school-students/",
-  "apply_url": null,
+  "apply_url": "https://www.westvalley.edu/concurrent-enrollment/index.html",
   "sources_fetched": [
-    "https://www.westvalley.edu/high-school-students/"
+    "https://www.westvalley.edu/high-school-students/",
+    "https://www.westvalley.edu/concurrent-enrollment/index.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "Ask the college about unit limits and your counselor about credit."
+  "notes": "You can take up to 8 units per semester. Ask your counselor about credit."
 }
