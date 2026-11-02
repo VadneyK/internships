@@ -2,9 +2,9 @@
   "regions": [
     "orange-county"
   ],
-  "apply_url": null,
+  "apply_url": "https://app.betterimpact.com/Application?OrganizationGuid=c98e8932-14b4-45cf-ba39-2c5557303b39&ApplicationFormNumber=2",
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "grades": null,
   "needs_work_permit": false,
   "id": "pacific-marine-mammal-center-junior-volunteers",
@@ -34,6 +34,7 @@
   "priority": 2,
   "notes": "The page says most volunteer roles are for ages 18 and up. Use the Contact Us button on the page for questions.",
   "sources_fetched": [
-    "https://www.pacificmmc.org/volunteer"
+    "https://www.pacificmmc.org/volunteer",
+    "https://app.betterimpact.com/Application?OrganizationGuid=c98e8932-14b4-45cf-ba39-2c5557303b39&ApplicationFormNumber=2"
   ]
 }

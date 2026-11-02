@@ -2,9 +2,9 @@
   "regions": [
     "orange-county"
   ],
-  "apply_url": null,
+  "apply_url": "https://forms.gle/qky7Fz1yp8pzGu2W9",
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "grades": null,
   "needs_work_permit": false,
   "id": "uci-medacademy",
@@ -23,15 +23,17 @@
   "pay_detail": "Tuition is $2,000. It is due two weeks before the session and cannot be refunded. Partial and full scholarships are available for financial hardship.",
   "season": "summer",
   "duration": "5 days. Listed 2027 sessions: June 21 to 25, June 28 to July 2 and July 12 to 16.",
-  "status": "closed-expect-reopen",
-  "deadline_text": "Applications open February 1 and close March 1 at 11:59 p.m. Pacific. The page does not state the year. The sessions it lists are in summer 2027. Late applications are not accepted.",
-  "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
+  "status": "opens-soon",
+  "opens_iso": "2027-02-01",
+  "deadline_text": "The application form says the 2027 application opens February 1, 2027. The program page says applications close March 1 at 11:59 p.m. Pacific, without a year, and lists sessions in summer 2027. Late applications are not accepted.",
+  "deadline_iso": "2027-03-01",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Use the apply link on the program page. Have these ready: an unofficial transcript, your reference's name and email, and answers to three essay questions. Each essay has a 1,500-character limit.",
   "url": "https://medschool.uci.edu/education/pre-med-pathway-programs/uci-med-academy",
   "priority": 2,
   "notes": "Sessions may change. Notices go out in mid-April. Your reference must email the letter by the same March 1 deadline. Scholarships are available to students with financial hardship.",
   "sources_fetched": [
-    "https://medschool.uci.edu/education/pre-med-pathway-programs/uci-med-academy"
+    "https://medschool.uci.edu/education/pre-med-pathway-programs/uci-med-academy",
+    "https://forms.gle/qky7Fz1yp8pzGu2W9"
   ]
 }
