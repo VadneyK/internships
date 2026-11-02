@@ -1,0 +1,39 @@
+{
+  "id": "carlsbad-library-teen-insights-virtual-volunteer",
+  "name": "Teen Insights",
+  "org": "Carlsbad City Library",
+  "regions": [
+    "san-diego"
+  ],
+  "city": "Carlsbad, CA",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "arts-media"
+  ],
+  "what_you_do": "Earn 4 service hours from home. Write two reviews of any library program, service or item. Each review is 6 to 8 sentences long.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "7 to 12",
+  "who_can_apply": "Teens in grades 7 to 12. You can do this up to 5 times each school year.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer. You earn 4 service hours each time.",
+  "season": "year-round",
+  "duration": "Up to 5 times each school year",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline. You can send reviews during the school year, up to 5 times.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Email your two reviews to libraryteens@carlsbadca.gov. Add your name, school and grade. Say if the library may share your review, and how to show your name.",
+  "needs_work_permit": false,
+  "url": "https://library.carlsbadca.gov/programs/library-volunteer-program",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://library.carlsbadca.gov/programs/library-volunteer-program"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "You can email the same address if you need ideas for what to review. Staff fill out your service hour form. Other library jobs are limited, and not all who apply get picked."
+}
