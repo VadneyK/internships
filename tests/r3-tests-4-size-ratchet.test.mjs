@@ -267,7 +267,8 @@ const TABLE = {
   // 2026-10-15: G.dropPreTiles removes build-time tiles when data fails common.js 35400 to 35700. PENDING PERSON APPROVAL.
   "assets/js/common.js": { ceiling: 36400, reason: "script, 25681 bytes measured 2026-10-10" },
   // Raised from 58100 to 59300 on 2026-10-12 for ticket diet-1 (Where group files on the Programs page). 59217 bytes measured.
-  "data/entries-map.json": { ceiling: 667300, reason: "data file for the Map page, 606587 bytes measured 2026-10-15 (PENDING PERSON APPROVAL)" },
+  // 2026-11-02: second-pass SoCal cards, stacked on PR 125. PENDING PERSON APPROVAL. 667300 to 668500.
+  "data/entries-map.json": { ceiling: 668500, reason: "data file for the Map page, 606587 bytes measured 2026-10-15 (PENDING PERSON APPROVAL)" },
   // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) data/geo-overrides.json limit 19700 (four San Francisco city strings).
   // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,700 programs) data/geo-overrides.json limit 19700 to 19800 (one South suburban Cook County string). PENDING PERSON APPROVAL.
   "data/geo-overrides.json": { ceiling: 19800, reason: "hand fixes for the Map page geocoder (tools/geo), 17704 bytes measured 2026-10-15" },
