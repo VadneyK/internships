@@ -505,6 +505,7 @@ chla-high-school-summer-volunteer	Los Angeles, CA	point	Los Angeles, CA	city	pla
 chla-la-hip-high-school-internship	Los Angeles, CA	point	Los Angeles, CA	city	place:city	
 chp-explorer-post-east-sacramento	Sacramento, CA	point	Sacramento, CA	city	place:city	
 christ-hospital-junior-ambassador-program	Cincinnati, OH	point	Cincinnati, OH	city	place:city	
+chula-vista-city-youth-volunteers-interns	Chula Vista, CA	point	Chula Vista, CA	city	place:city	
 chula-vista-living-coast-discovery-center-volunteer	Chula Vista, CA	point	Chula Vista, CA	city	place:city	
 cincinnati-art-museum-10x10-teen-volunteer-team	Cincinnati, OH	point	Cincinnati, OH	city	place:city	
 cincinnati-boys-girls-clubs-teen-workforce-development	Cincinnati, OH	point	Cincinnati, OH	city	place:city	
@@ -952,6 +953,7 @@ great-falls-paris-gibson-square-teen-art-program	Great Falls, MT	point	Great Fal
 great-falls-public-library-volunteer	Great Falls, MT	point	Great Falls, MT	city	place:city	
 great-plains-zoo-junior-zookeeper	Sioux Falls, SD	point	Sioux Falls, SD	city	place:city	
 grizzly-youth-academy-san-luis-obispo	San Luis Obispo, CA (residential; serves listed central and southern counties)	point	San Luis Obispo, CA	city	place:city	
+grossmont-college-dual-concurrent-enrollment	El Cajon, CA	point	El Cajon, CA	city	place:city	
 groundwork-denver-green-teams	Denver, CO	point	Denver, CO	city	place:city	
 gtri-high-school-summer-internship	Atlanta, GA; Cobb County; Warner Robins, GA (in person)	multi				semicolon list
 gwinnett-county-empower-gwinnett-internship	Lawrenceville, GA	point	Lawrenceville, GA	city	place:city	
@@ -1164,6 +1166,7 @@ la-county-library-teen-volunteer	Los Angeles County, CA	point	Los Angeles County
 la-county-youth-at-work	Los Angeles County, CA	point	Los Angeles County, CA	county	county	
 la-county-youth-entrepreneurship-academy	Los Angeles County, CA	point	Los Angeles County, CA	county	county	
 la-habra-youth-committee	La Habra, CA	point	La Habra, CA	city	place:city	
+la-mesa-youth-advisory-commission	La Mesa, CA	point	La Mesa, CA	city	place:city	
 la-metro-youth-council	Los Angeles County, CA	point	Los Angeles County, CA	county	county	
 la-plata-um-charles-regional-volunteen-program	La Plata, MD	point	La Plata, MD	city	place:town	
 la-zoo-core-volunteer-students	Los Angeles, CA	point	Los Angeles, CA	city	place:city	
@@ -1519,6 +1522,8 @@ minnesota-wing-civil-air-patrol-cadets	Statewide, MN (squadrons in Duluth, St. P
 minnesota-youth-council	Saint Paul, MN	point	St. Paul, MN	city	place:city	
 minnesota-youth-institute-mnyi	Saint Paul, MN	point	St. Paul, MN	city	place:city	
 minnesota-zoo-zooteen-volunteer	Apple Valley, MN	point	Apple Valley, MN	city	place:city	
+miracosta-college-concurrent-enrollment	Oceanside, CA	point	Oceanside, CA	city	place:city	
+miracosta-college-dual-enrollment	Oceanside, CA	point	Oceanside, CA	city	place:city	
 mission-college-high-school-dual-enrollment	Santa Clara, CA	point	Santa Clara, CA	city	place:city	
 mission-hospital-high-school-auxiliary	Mission Viejo and Laguna Beach, CA	multi				several places before the state
 mission-viejo-library-teen-volunteers	Mission Viejo, CA	point	Mission Viejo, CA	city	place:city	
@@ -2209,8 +2214,10 @@ san-bernardino-county-library-teen-leadership-program	San Bernardino County, CA 
 san-bernardino-county-sheriff-explorers	San Bernardino County, CA	point	San Bernardino County, CA	county	county	
 san-bernardino-county-spark-syep	San Bernardino County, CA	point	San Bernardino County, CA	county	county	
 san-bernardino-county-wioa-youth	San Bernardino County, CA	point	San Bernardino County, CA	county	county	
+san-diego-air-space-museum-teen-volunteers	San Diego, CA	point	San Diego, CA	city	place:city	
 san-diego-birch-aquarium-volunteer	La Jolla, San Diego, CA	point	La Jolla, CA	manual	Census Gazetteer ZCTA 92037 (La Jolla, CA) internal point	override: La Jolla is a San Diego neighborhood with no Gazetteer place; ZIP code area centroid from the Census Gazetteer ZCTA file, same point as the other La Jolla cards
 san-diego-cabrillo-national-monument-volunteers	San Diego (Point Loma), CA	point	San Diego, CA	city	place:city	
+san-diego-city-college-concurrent-enrollment	San Diego, CA	point	San Diego, CA	city	place:city	
 san-diego-city-employ-and-empower-internships	San Diego, CA	point	San Diego, CA	city	place:city	
 san-diego-city-future-civic-leaders	San Diego, CA	point	San Diego, CA	city	place:city	
 san-diego-city-pool-guard-recreation-aide	San Diego, CA	point	San Diego, CA	city	place:city	
@@ -2224,6 +2231,7 @@ san-diego-ja-fellows-summer-youth-employment	San Diego County, CA	point	San Dieg
 san-diego-ja-stock-market-challenge	San Diego region, CA	point	San Diego, CA	city	place:city	
 san-diego-la-jolla-playhouse-summer-conservatory	La Jolla, San Diego, CA	point	La Jolla, CA	manual	Census Gazetteer ZCTA 92037 (La Jolla, CA) internal point	override: La Jolla is a San Diego neighborhood with no Gazetteer place; ZIP code area centroid from the Census Gazetteer ZCTA file, same point as the other La Jolla cards
 san-diego-la-jolla-playhouse-teen-council	La Jolla, San Diego, CA	point	La Jolla, CA	manual	Census Gazetteer ZCTA 92037 (La Jolla, CA) internal point	override: La Jolla is a San Diego neighborhood with no Gazetteer place; ZIP code area centroid from the Census Gazetteer ZCTA file, same point as the other La Jolla cards
+san-diego-mesa-college-concurrent-enrollment	San Diego, CA	point	San Diego, CA	city	place:city	
 san-diego-nat-camp-aides-youth-volunteers	San Diego, CA (Balboa Park)	point	San Diego, CA	city	place:city	
 san-diego-palomar-college-concurrent-enrollment	San Marcos, Escondido, Fallbrook and Rancho Bernardo, CA	multi				several places before the state
 san-diego-palomar-ucsd-health-junior-volunteer	Poway and Escondido, CA	multi				several places before the state
@@ -2413,6 +2421,7 @@ south-central-pa-leaf-project-youth-summer-employment	Landisburg, PA	point	Landi
 south-dakota-4h-state-ambassador-program	Statewide (Brookings, SD)	statewide	SD			
 south-dakota-dlr-wioa-youth-program	Statewide, SD	statewide	SD			
 southwest-conservation-corps-high-school-conservation-crews	Four Corners and Los Valles regions, CO	multi				several places before the state
+southwestern-college-dual-concurrent-enrollment	Chula Vista, CA	point	Chula Vista, CA	city	place:city	
 spelman-college-prep-institute	Atlanta, GA	point	Atlanta, GA	city	place:city	
 spelman-early-college-program	Atlanta, GA	point	Atlanta, GA	city	place:city	
 st-charles-library-high-school-volunteers	St. Charles, IL (Kane County)	point	St. Charles, IL	city	place:city	
