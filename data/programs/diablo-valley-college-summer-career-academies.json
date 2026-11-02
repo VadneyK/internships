@@ -24,12 +24,12 @@
   "paid_type": "not-stated",
   "pay_detail": "Cost is not stated on the academies page.",
   "season": "summer",
-  "duration": "Short courses of about 1 to 2 weeks. In 2026, Health ran July 27 to 31 and Public Safety ran July 6 to 17.",
+  "duration": "Short courses of about 1 to 2 weeks. 2027 dates posted so far: Public Safety July 6 to 16, Robotics July 6 to 17, Business July 12 to 23, Health and Animation July 26 to 30.",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "The Health and Public Safety academies ran in July 2026. Dates for 2027 are not posted. The page lists these steps: apply to DVC, send the Special Admissions form starting in March, and sign up in the student portal starting in May.",
+  "deadline_text": "Some 2027 academy dates are posted. Others are not. The page lists these steps: apply to DVC for summer now, send the Special Admissions form starting in March, and sign up in the student portal starting in May.",
   "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Apply to DVC for summer. Then send the Special Admissions Recommendation Form, signed by you, a parent and your counselor. Then sign up for your academy in the student portal. Use the interest form on the page for updates.",
   "needs_work_permit": false,
   "url": "https://www.dvc.edu/academics/high-school-programs/career-academies",
@@ -37,10 +37,13 @@
   "sources_fetched": [
     "https://www.dvc.edu/academics/high-school-programs/career-academies",
     "https://www.dvc.edu/academics/high-school-programs/career-academies/health-career-academy",
-    "https://www.dvc.edu/academics/high-school-programs/career-academies/public-safety-career-academy"
+    "https://www.dvc.edu/academics/high-school-programs/career-academies/public-safety-career-academy",
+    "https://www.dvc.edu/academics/high-school-programs/career-academies/robotics-career-academy",
+    "https://www.dvc.edu/academics/high-school-programs/career-academies/business-career-academy",
+    "https://www.dvc.edu/academics/high-school-programs/career-academies/animation-career-academy"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "Health is at the Pleasant Hill and San Ramon campuses. The Special Admissions form is for students who are not graduating this spring or earlier. Public Safety is mainly for teens and new graduates who want to be police explorers or cadets."
+  "notes": "The Special Admissions form is for students who are not graduating this spring or earlier."
 }

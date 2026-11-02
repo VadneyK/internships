@@ -30,15 +30,17 @@
   "deadline_text": "Ongoing. No sign-up deadline stated.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "The page gives no online sign-up link; there is usually a volunteer kiosk on site. Call 866-450-4432 or email Volunteer@HabitatEBSV.org. Groups of 5 or more use the group pages.",
+  "how_to_apply": "Sign up for a shift on the online portal linked on the Individual Volunteers page. Call 866-450-4432 or email Volunteer@HabitatEBSV.org. Groups of 5 or more use the group pages.",
   "needs_work_permit": false,
   "url": "https://www.habitatebsv.org/get-involved",
-  "apply_url": null,
+  "apply_url": "https://eastbay.volunteerhub.com/",
   "sources_fetched": [
-    "https://www.habitatebsv.org/get-involved"
+    "https://www.habitatebsv.org/get-involved",
+    "https://www.habitatebsv.org/get-involved/individual-volunteer-opportunities",
+    "https://eastbay.volunteerhub.com/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 1,
-  "notes": "Hands-on building experience for age 16 and up. Specific build sites were not listed on the page; ask which are near you."
+  "notes": "Hands-on building experience for age 16 and up. The portal lists open shifts and sites."
 }

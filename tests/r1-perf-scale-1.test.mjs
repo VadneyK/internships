@@ -86,7 +86,8 @@ const LIMITS = {
     // 2026-11-02: 45 new SoCal cards (2,865 programs), stacked on PR 118. PENDING PERSON APPROVAL. 5529500, 1258000 to 5616500, 1273500.
     // 2026-11-02: 12 second-pass SoCal cards (2,877 programs), stacked on PR 125. PENDING PERSON APPROVAL. 5616500, 1273500 to 5642500, 1279500.
     // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 5642500, 1279500 to 5646000, 1280500.
-    "data/entries.json": { raw: 5646000, gzip: 1280500 },
+    // 2026-11-02: East Bay re-reads, stacked on PR 132. PENDING PERSON APPROVAL. 5646000 to 5652000.
+    "data/entries.json": { raw: 5652000, gzip: 1280500 },
     // Raised from 2020000 to 2040000 on 2026-10-10 after the fact check: the page re-reads added about 6,000 bytes (0.3 percent) of plainer deadline_text across 266 cards, saying what the page does and does not state. No single card is the cause. Still about 1,145 bytes per program, under the per-program limit.
     // Gzip limit raised from 440000 to 450000 on 2026-10-10: the card fixes this round (pay wording, opens-soon dates) put it at 440053.
     // Raised again on 2026-10-12 for the 178 more cards: entries-lite.json is 2,097,871 bytes (437,135 gzipped), 947 bytes per program. Raw from 2040000 to 2160000. The gzip limit stays 450000. PENDING PERSON APPROVAL, as for entries.json.

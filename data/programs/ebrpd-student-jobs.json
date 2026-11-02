@@ -19,16 +19,16 @@
   "min_age": null,
   "max_age": null,
   "grades": null,
-  "who_can_apply": "Gate Attendant (high school pathway): at least 16 and completed 10th grade. Other jobs have their own rules; check each posting.",
+  "who_can_apply": "Gate Attendant (high school pathway): at least 16 and completed 10th grade. Visitor Center Aide: 15 1/2 or older, no experience needed. Other jobs have their own rules; check each posting.",
   "paid_type": "paid",
-  "pay_detail": "Pay is not posted on the youth pages. See each job posting.",
+  "pay_detail": "Each job posting lists pay. Visitor Center Aide: $22.38 to $23.55 an hour. Gate Attendant (returning staff, 2027): $20.34 to $21.40 an hour.",
   "season": "summer",
   "duration": "Seasonal",
-  "status": "closed-expect-reopen",
+  "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "No jobs were posted on governmentjobs.com on Oct 7, 2026. Watch ebparks.org/jobs/youth and governmentjobs.com/careers/ebparks.",
-  "deadline_iso": null,
-  "deadline_confidence": "unknown",
+  "deadline_text": "Visitor Center Aide closes Dec 30, 2026 at 5 PM. As of Nov 2, 2026 the other seasonal posts are for returning 2027 staff only. Watch ebparks.org/jobs/youth and governmentjobs.com/careers/ebparks for new ones.",
+  "deadline_iso": "2026-12-30",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Apply on governmentjobs.com/careers/ebparks. HR: (510) 544-2154.",
   "needs_work_permit": true,
   "url": "https://www.ebparks.org/jobs/youth",
@@ -36,10 +36,12 @@
   "sources_fetched": [
     "https://www.ebparks.org/jobs/youth",
     "https://www.ebparks.org/jobs/youth/park-ops-pathway-1",
-    "https://www.governmentjobs.com/careers/ebparks"
+    "https://www.governmentjobs.com/careers/ebparks",
+    "https://www.governmentjobs.com/careers/ebparks/jobs/5467543/visitor-center-aide",
+    "https://www.governmentjobs.com/careers/ebparks/jobs/5519726/gate-attendant-returning-staff-for-the-2027-season"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-21",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "The 16 minimum is from the Gate Attendant page; other roles (for example lifeguard) may differ. The park district says it hires hundreds of seasonal students each year."
 }

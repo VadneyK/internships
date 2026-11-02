@@ -23,7 +23,7 @@
   "min_age": 16,
   "max_age": 19,
   "grades": "Current high school student (priority to juniors and seniors) or Class of 2027 graduate",
-  "who_can_apply": "Be 16 to 19 by June 1, 2027, live in a Northern California Kaiser Permanente service area, have proof of legal US work eligibility, and be free Monday to Friday about 8am to 5pm. Priority goes to juniors and seniors. Children of Kaiser employees or physicians cannot apply. The program aims at students who lack resources to explore health careers.",
+  "who_can_apply": "Be 16 to 19 by June 1, 2027, live in a Northern California Kaiser Permanente service area, have proof of legal US work eligibility, and be free Monday to Friday about 8am to 5pm. Priority goes to juniors and seniors. Class of 2026 graduates with no college experience may also apply. Children of Kaiser employees or physicians cannot apply. The program aims at students who lack resources to explore health careers.",
   "paid_type": "paid",
   "pay_detail": "$25 per hour minimum, paid every two weeks, up to 40 hours a week",
   "season": "summer",
@@ -39,10 +39,11 @@
   "apply_url": "https://kplaunch.kaiserpermanente.org/apply-now/",
   "sources_fetched": [
     "https://kplaunch.kaiserpermanente.org/high-school-program/",
-    "https://kplaunch.kaiserpermanente.org/internship-program-updates/"
+    "https://kplaunch.kaiserpermanente.org/internship-program-updates/",
+    "https://kplaunch.kaiserpermanente.org/apply-now/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-21",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "notes": "Full-time hours, so no summer school or camp overlap. Competitive. A Kaiser story reportedly cited about 3,300 applicants for 318 spots, which is not confirmed here. Placement sites vary, so check that your area is offered. Kaiser may ask for COVID vaccine proof."
 }

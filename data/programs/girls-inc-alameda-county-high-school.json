@@ -18,24 +18,28 @@
   "grades": "9 to 12",
   "who_can_apply": "Girls and young women in grades 9 to 12. Programs run at the Simpson Center in Oakland (year-round) and Cal State East Bay in Hayward (summer).",
   "paid_type": "mixed",
-  "pay_detail": "Programs are free to families; internships are paid (rate not posted)",
+  "pay_detail": "Programs are free to families. Some pay a stipend ($150 for summer HEAL). Internships are paid (rate not posted)",
   "season": "year-round",
   "duration": null,
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Not posted. Contact Girls Inc.",
+  "deadline_text": "School-year programs run September to May. No 2026-27 application dates are posted. Contact Girls Inc.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Use the Contact Us page at girlsinc-alameda.org. Office: 510 16th St, Oakland. The site does not list application steps.",
+  "how_to_apply": "Use the apply links on the School-Year and Summer Programs pages. The school-year form is labeled 2025-26, so ask if it is current. Use the Contact Us page for questions. Office: 510 16th St, Oakland.",
   "needs_work_permit": null,
   "url": "https://www.girlsinc-alameda.org/what-we-do",
   "apply_url": null,
   "sources_fetched": [
     "https://www.girlsinc-alameda.org",
-    "https://www.girlsinc-alameda.org/what-we-do"
+    "https://www.girlsinc-alameda.org/what-we-do",
+    "https://www.girlsinc-alameda.org/school-year-programs",
+    "https://www.girlsinc-alameda.org/summer-programs",
+    "https://www.girlsinc-alameda.org/apprenticeship-programs",
+    "https://www.girlsinc-alameda.org/post/coding-meets-the-court-high-schoolers-explore-tech-through-code-the-game"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "The page checked on 2026-10-10 does not mention Code the Game, a fall offering, or grades 10 to 12 for coding. Internship pay, hours and ages are not posted."
+  "notes": "A home page post describes Code the Game, a six-week coding program for grades 10 to 12. It does not say how to sign up. Internship pay, hours and ages are not posted."
 }
