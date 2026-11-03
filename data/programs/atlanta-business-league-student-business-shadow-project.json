@@ -2,7 +2,7 @@
   "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "grades": "10 and 11",
   "max_age": 17,
   "min_age": 15,
@@ -24,15 +24,16 @@
   "paid_type": "not-stated",
   "pay_detail": "Pay is not stated on the page.",
   "season": "summer",
-  "duration": "Not stated",
+  "duration": "June 2 to July 16 in 2026",
   "status": "unconfirmed",
-  "deadline_text": "No dates or deadline are posted on the page.",
-  "deadline_confidence": "unknown",
+  "deadline_text": "The 2026 form lists the program as June 2 to July 16, 2026. It gives no deadline. 2027 dates are not posted.",
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "The student fills out the application linked on the program page. A parent or guardian approves it. Call 404-584-8126 to ask about dates and nominations.",
   "url": "https://atlantabusinessleague.org/student-business-shadow-project-sbsp/",
   "priority": 2,
-  "notes": "Pay, dates, cost and site locations are not listed, so call to confirm first. Atlanta Business League is at 931 Martin Luther King Jr. Dr. NW. The summer season is from the program name on search results, not the page; confirm.",
+  "notes": "Pay, cost and site locations are not listed, so call to confirm first. Atlanta Business League is at 931 Martin Luther King Jr. Dr. NW. As of Nov 3, 2026, the form on the page is still the 2026 one.",
   "sources_fetched": [
-    "https://atlantabusinessleague.org/student-business-shadow-project-sbsp/"
+    "https://atlantabusinessleague.org/student-business-shadow-project-sbsp/",
+    "https://docs.google.com/forms/d/e/1FAIpQLScLz_56g-s9YSiyAUAzFsrjX_y8_ZPeuOgvU5LtamblU4JDAg/viewform"
   ]
 }

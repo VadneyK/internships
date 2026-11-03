@@ -1,11 +1,11 @@
 {
   "opens_iso": null,
-  "apply_url": null,
+  "apply_url": "https://ltgov.georgia.gov/document/document/lgo-page-interest-form/download",
   "min_age": 12,
-  "max_age": null,
+  "max_age": 18,
   "grades": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "needs_work_permit": null,
   "priority": 2,
   "id": "georgia-senate-page-program",
@@ -21,19 +21,21 @@
     "law-government"
   ],
   "what_you_do": "Serve for one legislative day at the State Capitol. Pages carry messages to senators on the Senate floor. They also watch votes and meet lawmakers.",
-  "who_can_apply": "Students at least 12 years old. The packet says there are no exceptions. A page is sponsored by the Lieutenant Governor or one Senator.",
+  "who_can_apply": "Students ages 12 to 18. The packet says there are no exceptions to the minimum age. A page is sponsored by the Lieutenant Governor or one Senator.",
   "paid_type": "stipend",
   "pay_detail": "$20.00 honorarium paid at the end of the day, plus a certificate of service (2025 welcome packet). A 2026 amount is not posted, so confirm it.",
   "season": "winter",
   "duration": "One legislative day. Report about 1.5 hours before the Senate convenes. The Senate usually convenes at 10:00 AM (check the Senate schedule the night before).",
   "status": "unconfirmed",
-  "deadline_text": "No application deadline found. Pages choose a legislative day while the General Assembly is in session. The packet says the first 20 days of session fall in January and February. 2027 dates not read.",
+  "deadline_text": "Last cycle: applications for the 2026 session opened Dec 15, 2025. The session began Jan 12, 2026. No deadline is listed. 2027 dates are not posted.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
-  "how_to_apply": "The 2025 welcome packet says to contact your sponsoring Senator's office when you register. Staff contact: kim.campbell@senate.ga.gov or illana.burkhart@senate.ga.gov, 404-657-7004. The program web page needs a browser to load, so check it for the current form.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply one way only. Lieutenant Governor: fill out the interest form, list three dates, and email it to denese.sampson@ltgov.ga.gov at least one week ahead. Senator: contact that Senator's office. Staff contact: kim.campbell@senate.ga.gov or illana.burkhart@senate.ga.gov, 404-657-7004.",
   "url": "https://www.legis.ga.gov/api/document/docs/default-source/secretary-of-the-senate-document-library/2025-page-welcome-packet.pdf?Status=Temp&sfvrsn=6b6660c9_2",
   "sources_fetched": [
-    "https://www.legis.ga.gov/api/document/docs/default-source/secretary-of-the-senate-document-library/2025-page-welcome-packet.pdf?Status=Temp&sfvrsn=6b6660c9_2"
+    "https://www.legis.ga.gov/api/document/docs/default-source/secretary-of-the-senate-document-library/2025-page-welcome-packet.pdf?Status=Temp&sfvrsn=6b6660c9_2",
+    "https://ltgov.georgia.gov/node/11041",
+    "https://ltgov.georgia.gov/document/document/lgo-page-interest-form/download"
   ],
-  "notes": "Source is the official 2025 Senate Page welcome packet (the program web pages on legis.ga.gov only showed a loading screen to the reader). Under Georgia law cited in the packet (O.C.G.A. 20-2-692) page service counts as present at school. Dress code is business or business casual. Cell phones are not allowed while paging. The Georgia House has its own page program at legis.ga.gov/house/page-program, which could not be read."
+  "notes": "Sources are the 2025 Senate Page welcome packet and the Lieutenant Governor's page, as of Nov 3, 2026. The pages on legis.ga.gov only showed a loading screen. Under Georgia law cited in the packet (O.C.G.A. 20-2-692) page service counts as present at school. Dress code is business or business casual. Cell phones are not allowed while paging. The Georgia House has its own page program at legis.ga.gov/house/page-program, which could not be read."
 }

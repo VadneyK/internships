@@ -25,7 +25,7 @@ const DASH = /[\u2013\u2014]/;
 const KEPT = {
   "dublin-youth-advisory-committee": ["925-556-4500", "2026-27", "2027-28"],
   "edison-public-library-teen-advisory-board": ["October 14"],
-  "fulton-county-library-teen-volunteers": ["2026-10-10", "404-613-0125", "vol.services@fultoncountyga.gov"],
+  "fulton-county-library-teen-volunteers": ["404-613-0125", "vol.services@fultoncountyga.gov"],
   "hire-las-youth": ["2024", "I-9"],
 };
 
