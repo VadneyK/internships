@@ -31739,7 +31739,7 @@
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "Meetings twice a month, 1st and 3rd Wednesday at 6:00 p.m.",
@@ -31767,18 +31767,18 @@
   "deadline_confidence": "rolling",
   "how_to_apply": "Go to any meeting on the schedule. Or ask the coordinator for an application. You can write to efdexplorers439@cityofelgin.org. You can also call 847-931-6175.",
   "url": "https://www.cityofelgin.org/2321/Elgin-Fire-Department-Explorer-Post-439",
-  "notes": "The page lists no age range and no fees. Equipment provided: uniform, bunker gear, SCBA, mask, gloves, boots and hood. Meetings are on the 1st and 3rd Wednesday at 6:00 p.m. The page now lives at elginil.gov (the old cityofelgin.org address redirects). The page does not say members become CPR certified; it lists CPR and first aid as topics. Call before you go to confirm age rules.",
+  "notes": "The page lists no age range and no fees. Equipment provided: uniform, bunker gear, SCBA, mask, gloves, boots and hood. Meetings are on the 1st and 3rd Wednesday at 6:00 p.m. The page now lives at elginil.gov (the old cityofelgin.org address redirects). Call before you go to confirm age rules.",
   "sources_fetched": [
    "https://www.cityofelgin.org/2321/Elgin-Fire-Department-Explorer-Post-439"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "elgin-hawthorne-hill-nature-center-volunteers",
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "Ongoing, flexible",
@@ -31810,14 +31810,14 @@
   "sources_fetched": [
    "https://www.cityofelgin.org/254/Volunteer-Opportunities"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "elgin-police-explorer-post-1445",
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "Weekly meetings on Wednesdays at 6:00 p.m.",
@@ -31848,7 +31848,7 @@
   "sources_fetched": [
    "https://www.cityofelgin.org/1440/Explorer-Post-1445"
   ],
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -31856,7 +31856,7 @@
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "One event each month",
@@ -31888,7 +31888,7 @@
   "sources_fetched": [
    "https://www.cityofelgin.org/2284/Elgin-Teen-Life"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "elgin-u46-career-technical-education",
@@ -31915,11 +31915,11 @@
   "pay_detail": "Not stated on the page.",
   "season": "school-year",
   "duration": "Multi-year pathway",
-  "status": "year-round",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "No application for Educational Pathways. Pick classes with your counselor when you plan your schedule.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Talk to your school counselor. If your school does not have the class set you want, you can take it at another U-46 high school. You can also ask Doreen Roberts, who runs the career classes.",
   "needs_work_permit": null,
   "url": "https://www.u-46.org/page/career-and-technical-education",
@@ -31928,10 +31928,10 @@
    "https://www.u-46.org/page/career-and-technical-education",
    "https://www.u-46.org/page/educational-pathways"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "Programs of Study differ by high school. Magnet Academies are a separate choice that students apply to in the fall of 8th grade. Student groups linked to CTE classes offer competitions and scholarships. District phone: 847-888-5000.",
+  "notes": "Programs of Study differ by high school. Magnet Academies are a separate choice that students apply to in the fall of 8th grade. Student groups linked to CTE classes offer competitions and scholarships. District phone: 847-888-5000. As of Nov 3, 2026, the U-46 site would not load for automated reading, so confirm these details first.",
   "verified_on_label": "Oct 16, 2026"
  },
  {
@@ -31959,11 +31959,11 @@
   "pay_detail": "Free public school program.",
   "season": "school-year",
   "duration": "Four years of high school",
-  "status": "open-now",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Application open Oct 1 to Oct 31, 2026, for fall 2027. The lottery runs Nov 9, 2026, and results are emailed that evening.",
-  "deadline_iso": "2026-10-31",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_text": "The last application ran Oct 1 to Oct 31, 2026, for fall 2027. The lottery runs Nov 9, 2026, and results are emailed that evening. Next dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "A parent or guardian fills out the online application with a personal email. Students new to U-46 add transcripts. Seats go by lottery, with extra entries for things like good attendance, a 3.75 GPA or living near the school.",
   "needs_work_permit": null,
   "url": "https://www.u-46.org/page/magnet-academies",
@@ -31973,10 +31973,10 @@
    "https://www.u-46.org/o/sdu/page/application-requirements-instructions",
    "https://www.u-46.org/page/career-and-technical-education"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-18",
   "priority": 1,
-  "notes": "Students who are homeless or in a temporary living situation get in automatically if they meet the GPA rule. Having a brother or sister in the academy no longer helps. Help: magnetacademies@u-46.org or 847-907-6030.",
+  "notes": "Students who are homeless or in a temporary living situation get in automatically if they meet the GPA rule. Having a brother or sister in the academy no longer helps. Help: magnetacademies@u-46.org or 847-907-6030. Dates shown are from the fall 2026 cycle. As of Nov 3, 2026, the U-46 site would not load for automated reading, so confirm these details first.",
   "verified_on_label": "Oct 18, 2026",
   "limited": true
  },
@@ -31985,7 +31985,7 @@
   "grades": "Volunteering and the Reading Program: grade 6 and up. Junior Teen Advisory Group: grades 6 to 8.",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "Jr. TAG meets monthly, year round, with snacks",
@@ -32016,7 +32016,7 @@
   "sources_fetched": [
    "https://www.egvpl.org/volunteer"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "elk-grove-youth-commission",
@@ -32267,7 +32267,7 @@
   "grades": "High school",
   "apply_url": "https://app.betterimpact.com/Application?OrganizationGuid=1e4558b1-46c4-471f-843f-b19587ac91d3&ApplicationFormNumber=2",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "Not stated on the program pages",
@@ -32299,14 +32299,14 @@
    "https://app.betterimpact.com/Application?OrganizationGuid=1e4558b1-46c4-471f-843f-b19587ac91d3&ApplicationFormNumber=2"
   ],
   "notes": "Hours per week and the length of service are not on the pages. Ask Volunteer Services. Background checks are only for ages 18 and up. Age 14 applies at Edward and Elmhurst hospitals; most roles are for 16 and up.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "endeavor-health-elmhurst-hospital-teen-volunteer",
   "grades": "High school",
   "apply_url": "https://app.betterimpact.com/Application?OrganizationGuid=c3f0292f-1ecc-4095-8856-66df6fc0a694&ApplicationFormNumber=2",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "Not stated on the program pages",
@@ -32338,14 +32338,14 @@
    "https://app.betterimpact.com/Application?OrganizationGuid=c3f0292f-1ecc-4095-8856-66df6fc0a694&ApplicationFormNumber=2"
   ],
   "notes": "The Elmhurst application page had no hours or length details, so ask the volunteer office. Background checks are only for ages 18 and up. Age 14 applies at Edward and Elmhurst hospitals; most roles are for 16 and up.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "endeavor-health-evanston-hospital-teen-volunteer",
   "grades": "High school",
   "apply_url": "https://app.betterimpact.com/Application?OrganizationGuid=2d3a287d-c697-4ec8-9043-a8396d08d9ba&ApplicationFormNumber=2",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "Minimum 4 hours a week and 100 hours for the year",
@@ -32366,10 +32366,10 @@
   "who_can_apply": "High school students ages 16 to 17. A parent or guardian must know about the commitment. You must pass the health screening and complete online orientation.",
   "paid_type": "unpaid",
   "season": "year-round",
-  "status": "unconfirmed",
-  "deadline_text": "The main volunteer page lists a teen application for this hospital. It does not give dates or say whether applications are open. It also lists a summer application.",
+  "status": "rolling",
+  "deadline_text": "The form says teen applications are looked at on a rolling basis as of Nov 3, 2026. Summer spots are handled apart from this.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
+  "deadline_confidence": "rolling",
   "how_to_apply": "Fill out the online Teen application. You then need online orientation and the health requirements from Endeavor Health Employee Health. Getting an assignment is not guaranteed.",
   "url": "https://www.endeavorhealth.org/give/volunteer#:~:text=Evanston%20Hospital",
   "sources_fetched": [
@@ -32378,14 +32378,14 @@
    "https://app.betterimpact.com/Application?OrganizationGuid=2d3a287d-c697-4ec8-9043-a8396d08d9ba&ApplicationFormNumber=3"
   ],
   "notes": "Endeavor Health's main page says most roles need age 16 or older and a background check is only for ages 18 and up. Apply early and check back for summer openings.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "endeavor-health-glenbrook-hospital-teen-volunteer",
   "grades": "High school",
   "apply_url": "https://app.betterimpact.com/Application?OrganizationGuid=9dd25bfc-dc69-41af-8c76-5cd73fe64140&ApplicationFormNumber=2",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "Minimum 4 hours a week and 100 hours for the year",
@@ -32406,10 +32406,10 @@
   "who_can_apply": "High school students ages 16 to 17. A parent or guardian must know about the commitment. You must pass the health screening and complete online orientation.",
   "paid_type": "unpaid",
   "season": "year-round",
-  "status": "unconfirmed",
-  "deadline_text": "The main volunteer page lists a teen application for this hospital. It does not give dates or say whether applications are open. It also lists a summer application.",
+  "status": "rolling",
+  "deadline_text": "The form says teen applications are looked at on a rolling basis as of Nov 3, 2026. Summer spots are handled apart from this.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
+  "deadline_confidence": "rolling",
   "how_to_apply": "Fill out the online Teen application. You then need online orientation and the health requirements from Endeavor Health Employee Health. Getting an assignment is not guaranteed.",
   "url": "https://www.endeavorhealth.org/give/volunteer#:~:text=Glenbrook%20Hospital",
   "sources_fetched": [
@@ -32418,14 +32418,14 @@
    "https://app.betterimpact.com/Application?OrganizationGuid=9dd25bfc-dc69-41af-8c76-5cd73fe64140&ApplicationFormNumber=3"
   ],
   "notes": "Endeavor Health's main page says most roles need age 16 or older and a background check is only for ages 18 and up. Apply early and check back for summer openings.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "endeavor-health-highland-park-hospital-teen-volunteer",
   "grades": "High school",
   "apply_url": "https://app.betterimpact.com/Application?OrganizationGuid=debaa6c6-30b4-4f9b-83de-e25c51f7d09b&ApplicationFormNumber=2",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "Minimum 4 hours a week and 100 hours for the year",
@@ -32446,10 +32446,10 @@
   "who_can_apply": "High school students ages 16 to 17. A parent or guardian must know about the commitment. You must pass the health screening and complete online orientation.",
   "paid_type": "unpaid",
   "season": "year-round",
-  "status": "unconfirmed",
-  "deadline_text": "The main volunteer page lists a teen application for this hospital. It does not give dates or say whether applications are open. It also lists a summer application.",
+  "status": "rolling",
+  "deadline_text": "The form says teen applications are looked at on a rolling basis as of Nov 3, 2026. Summer spots are handled apart from this.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
+  "deadline_confidence": "rolling",
   "how_to_apply": "Fill out the online Teen application. You then need online orientation and the health requirements from Endeavor Health Employee Health. Getting an assignment is not guaranteed.",
   "url": "https://www.endeavorhealth.org/give/volunteer#:~:text=Highland%20Park%20Hospital",
   "sources_fetched": [
@@ -32458,14 +32458,14 @@
    "https://app.betterimpact.com/Application?OrganizationGuid=debaa6c6-30b4-4f9b-83de-e25c51f7d09b&ApplicationFormNumber=3"
   ],
   "notes": "Endeavor Health's main page says most roles need age 16 or older and a background check is only for ages 18 and up. Apply early and check back for summer openings.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "endeavor-health-northwest-community-hospital-teen-volunteer",
   "grades": "High school",
   "apply_url": "https://app.betterimpact.com/Application?OrganizationGuid=817ae5af-5c26-4988-8044-5a62c3f465aa&ApplicationFormNumber=2",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "At least 6 months, 3 to 4 hours a week",
@@ -32486,10 +32486,10 @@
   "who_can_apply": "High school students ages 16 to 18. A parent or guardian must know about the commitment.",
   "paid_type": "unpaid",
   "season": "year-round",
-  "status": "unconfirmed",
-  "deadline_text": "The main volunteer page lists a teen application for this hospital. It does not give dates or say whether applications are open.",
+  "status": "rolling",
+  "deadline_text": "The form says teen applications are looked at on a rolling basis as of Nov 3, 2026. Summer spots are handled apart from this.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
+  "deadline_confidence": "rolling",
   "how_to_apply": "Fill out the online High School Volunteer application. Plan on one 30 minute sitting. Then you do an interest interview and a volunteer orientation. You may need a background check. You must also meet the health rules.",
   "url": "https://www.endeavorhealth.org/give/volunteer#:~:text=Northwest%20Community%20Hospital",
   "sources_fetched": [
@@ -32497,14 +32497,14 @@
    "https://app.betterimpact.com/Application?OrganizationGuid=817ae5af-5c26-4988-8044-5a62c3f465aa&ApplicationFormNumber=2"
   ],
   "notes": "The form cannot be saved and finished later.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "endeavor-health-skokie-hospital-teen-volunteer",
   "grades": "High school",
   "apply_url": "https://app.betterimpact.com/Application?OrganizationGuid=f1f310bc-d9a0-48ea-9ee5-91ca62f97ed7&ApplicationFormNumber=2",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "Minimum 4 hours a week and 100 hours for the year",
@@ -32525,10 +32525,10 @@
   "who_can_apply": "High school students ages 16 to 17. A parent or guardian must know about the commitment. You must pass the health screening and complete online orientation.",
   "paid_type": "unpaid",
   "season": "year-round",
-  "status": "unconfirmed",
-  "deadline_text": "The main volunteer page lists a teen application for this hospital. It does not give dates or say whether applications are open. It also lists a summer application.",
+  "status": "rolling",
+  "deadline_text": "The form says teen applications are looked at on a rolling basis as of Nov 3, 2026. Summer spots are handled apart from this.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
+  "deadline_confidence": "rolling",
   "how_to_apply": "Fill out the online Teen application. You then need online orientation and the health requirements from Endeavor Health Employee Health. Getting an assignment is not guaranteed.",
   "url": "https://www.endeavorhealth.org/give/volunteer#:~:text=Skokie%20Hospital",
   "sources_fetched": [
@@ -32537,7 +32537,7 @@
    "https://app.betterimpact.com/Application?OrganizationGuid=f1f310bc-d9a0-48ea-9ee5-91ca62f97ed7&ApplicationFormNumber=3"
   ],
   "notes": "Endeavor Health's main page says most roles need age 16 or older and a background check is only for ages 18 and up. Apply early and check back for summer openings.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "erie-county-ny-summer-youth-employment",
@@ -32992,7 +32992,7 @@
   "grades": "High school",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "School year. About 8 to 12 meetings per semester.",
@@ -33023,14 +33023,14 @@
   "sources_fetched": [
    "https://www.evanstonartcenter.org/node/33273"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "evanston-aspire-careers-in-healthcare",
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": null,
   "duration": "Summer internship. Length not stated.",
@@ -33062,14 +33062,14 @@
    "https://www.cityofevanston.org/departments/health_human_services/workforce_development/aspire.php"
   ],
   "notes": "The city workforce page says ASPIRE works with NorthShore HealthSystem. It serves ages 17 and older. Email aspire@cityofevanston.org to ask about high school students. Also ask your school counselor.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "evanston-eths-work-based-learning",
   "grades": "ETHS students",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": null,
   "duration": "A few weeks to a semester or a year",
@@ -33101,14 +33101,14 @@
    "https://www.eths202.org/beyond-eths/work-permit"
   ],
   "notes": "ETHS also has a Work Permits page. It says Illinois law requires minors under 16 to get a work permit before working. Permits are by appointment only, and students aged 14 to 15 in school-approved work-based learning programs do not need one.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "evanston-mayors-summer-youth-employment",
   "grades": null,
   "apply_url": "https://arts.formstack.com/forms/2026msyepstudentregistration",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "needs_work_permit": true,
   "duration": "Up to 9 weeks",
@@ -33141,7 +33141,7 @@
    "https://www.eths202.org/beyond-eths/work-permit"
   ],
   "notes": "Illinois law says workers under 16 need a work permit (employment certificate), per the Evanston Township High School work permit page. The page says the program began in 1992 and last year over 40 employers offered over 300 jobs. Pay and exact summer dates are not on the page. The registration link is the 2026 form; look for a 2027 form around winter.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "evergreen-valley-college-dual-enrollment",
@@ -34240,12 +34240,12 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
-  "opens_iso": "2027-01-12",
+  "opens_iso": null,
   "apply_url": "https://fermilab.wd5.myworkdayjobs.com/en-US/FermilabCareers",
   "min_age": null,
   "max_age": null,
   "grades": "Rising high school senior (senior in 2027-28) or 2027 high school graduate",
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-09",
   "needs_work_permit": null,
   "id": "fermilab-prism",
@@ -34268,10 +34268,10 @@
   "pay_detail": "$500 per week stipend. Housing is not provided; transportation assistance is available.",
   "season": "summer",
   "duration": "4 weeks, July 12 to Aug 6, 2027",
-  "status": "opens-soon",
+  "status": "unconfirmed",
   "deadline_text": "Applications open Jan 12, 2027 and close Mar 1, 2027 (recommendation letter also due Mar 1). Offers Apr 12, 2027; accept by Apr 21, 2027.",
-  "deadline_iso": "2027-03-01",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
   "how_to_apply": "Online application in Fermilab's Workday portal, a supplemental questionnaire, a PDF list of your STEM courses uploaded in the Resume section, and one letter from a STEM teacher or STEM club advisor. You cannot upload missing items after you submit.",
   "url": "https://internships.fnal.gov/fermilab-program-for-research-innovation-and-stem-mentorship-prism/",
   "sources_fetched": [
@@ -34280,7 +34280,7 @@
    "https://internships.fnal.gov/fermilab-program-for-research-innovation-and-stem-mentorship-prism/"
   ],
   "priority": 2,
-  "notes": "The apply link only works during the application window. Recommenders get an email upload link. It is sent only on weekdays during business hours, so line up your letter writer early. A walkthrough video is on the page.",
+  "notes": "The apply link only works during the application window. Recommenders get an email upload link. It is sent only on weekdays during business hours, so line up your letter writer early. A walkthrough video is on the page. As of Nov 3, 2026, the Fermilab site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 9, 2026"
  },
  {
@@ -34288,10 +34288,10 @@
   "grades": "9 to 12",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
-  "duration": "11 Saturdays, 9 a.m. to noon. Fall 2026 ran Sept 12 to Nov 21.",
+  "duration": "11 Saturdays, 9 a.m. to noon. Spring 2027 is listed as Jan 23 to Apr 10, with no session Mar 27.",
   "pay_detail": "Free",
   "name": "Saturday Morning Physics",
   "org": "Fermilab",
@@ -34310,24 +34310,25 @@
   "who_can_apply": "High school students in public, private or parochial schools, and home-schooled students with high school standing. Students attend in person. A physics course and two years of algebra help but are not required. A unique email address is required.",
   "paid_type": "unpaid",
   "season": "school-year",
-  "status": "closed-expect-reopen",
-  "deadline_text": "Fall 2026 applications are closed and the session is full. The Spring 2027 session will be announced in November. The program announces fall in May and spring in November.",
-  "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Watch for the news in November. Then fill out the online application. If you have questions, write to saturdaymorningphysics@fnal.gov.",
+  "status": "opens-soon",
+  "deadline_text": "Spring 2027 applications open Nov 9, 2026 and close Dec 4, 2026. You hear back by Dec 18, 2026.",
+  "deadline_iso": "2026-12-04",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the online form on the program page. You need a statement and a letter from a teacher. Questions: saturdaymorningphysics@fnal.gov.",
   "url": "https://education.fnal.gov/program/saturdaymorningphysics/",
-  "notes": "Lectures are at Wilson Hall in Batavia. Some lectures may be off-site. Spring 2027 dates are not posted yet.",
+  "notes": "Lectures are at Wilson Hall in Batavia. Some lectures may be off-site. You cannot defer if you are accepted, so apply only if you can come in Spring 2027.",
   "sources_fetched": [
    "https://education.fnal.gov/program/saturdaymorningphysics/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "opens_iso": "2026-11-09",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "fermilab-saturday-morning-quantum-chicago",
   "grades": "9 to 12",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "Saturdays 1 to 4 p.m., February 6 to April 24, 2027 (no sessions March 20 and 27)",
@@ -34360,7 +34361,7 @@
   "sources_fetched": [
    "https://education.fnal.gov/program/saturday-morning-quantum-in-chicago/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "opens_iso": null,
@@ -34368,7 +34369,7 @@
   "min_age": null,
   "max_age": null,
   "grades": "Illinois JROTC high school junior, senior or recent graduate",
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-22",
   "needs_work_permit": null,
   "id": "fermilab-valor-jrotc",
@@ -34390,10 +34391,10 @@
   "pay_detail": "$18 per hour. No onsite housing or transportation reimbursement.",
   "season": "summer",
   "duration": "6 weeks, June 28 to Aug 6, 2027",
-  "status": "open-now",
+  "status": "unconfirmed",
   "deadline_text": "Applications opened Oct 5, 2026 and close Feb 5, 2027. Offers Mar 15, 2027; accept by Mar 22, 2027.",
-  "deadline_iso": "2027-02-05",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
   "how_to_apply": "Online application in Fermilab's Workday portal with an unofficial transcript, a resume and three short essay answers (under 200 words each). Then give contact info for one recommendation writer; the letter is due by the close date. Questions: Internships@fnal.gov.",
   "url": "https://internships.fnal.gov/valor-jrotc/",
   "sources_fetched": [
@@ -34401,7 +34402,7 @@
    "https://internships.fnal.gov/valor-jrotc/"
   ],
   "priority": 3,
-  "notes": "Only for cadets in an Illinois JROTC program. You cannot upload missing items after you submit, so gather everything first. Reference emails go out only on weekdays during business hours.",
+  "notes": "Only for cadets in an Illinois JROTC program. You cannot upload missing items after you submit, so gather everything first. Reference emails go out only on weekdays during business hours. Dates are from Oct 22, 2026. As of Nov 3, 2026, the Fermilab site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 22, 2026"
  },
  {
@@ -36737,7 +36738,7 @@
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "needs_work_permit": null,
   "duration": "Seasonal and part-time",
@@ -36774,14 +36775,14 @@
    "https://www.eths202.org/beyond-eths/work-permit"
   ],
   "notes": "The district says it has about 1,200 part-time and seasonal workers at times of the year. Job fair dates are from old press releases, so confirm the next one. In Illinois, workers under 16 need a work permit (employment certificate) before they start. This comes from the Evanston Township High School work permit page.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "fox-valley-park-district-teen-volunteers",
   "grades": "Middle school, high school and college students",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "One-day projects or monthly clean-ups (Adopt-A-Park runs April to September, or May to October)",
@@ -36804,7 +36805,7 @@
   "paid_type": "unpaid",
   "season": "year-round",
   "status": "year-round",
-  "deadline_text": "No deadline. The Fall Day of Service on October 3, 2026 has passed. Adopt-A-Park runs April to September (or May to October).",
+  "deadline_text": "No deadline. The Fall Day of Service was October 3, 2026. Adopt-A-Park runs April to September (or May to October).",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
   "how_to_apply": "Use the link on the volunteer page to reserve a spot for an event. To adopt a park or trail, email Ivan Chambers at ichambers@fvpd.net.",
@@ -36813,7 +36814,7 @@
   "sources_fetched": [
    "https://www.foxvalleyparkdistrict.org/about-us/volunteer/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "grades": null,
@@ -37681,7 +37682,7 @@
   "max_age": null,
   "grades": "6 to 12",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "needs_work_permit": false,
   "id": "gail-borden-teen-volunteers",
   "name": "Teen Volunteers at Gail Borden Public Library",
@@ -37703,7 +37704,7 @@
   "season": "year-round",
   "duration": "Short sessions, about 1 hour each; you pick the ones you want",
   "status": "year-round",
-  "deadline_text": "No deadline posted. A teen volunteer orientation is listed for Sunday, Oct 18, 1:00 to 1:30 PM at the Main Library Conference Room (the page does not print the year; Oct 18 is a Sunday in 2026).",
+  "deadline_text": "No deadline posted. A teen volunteer orientation is listed for Sunday, Nov 15, 1:30 to 2:00 PM at the Main Library Conference Room (the page does not print the year; Nov 15 is a Sunday in 2026).",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
   "how_to_apply": "1) Fill out the online teen volunteer application. 2) Register for a one-time Teen Volunteer Orientation. 3) Sign up for open sessions on the teen volunteer calendar. Cancel at least 24 hours ahead.",
@@ -37714,7 +37715,7 @@
   ],
   "priority": 1,
   "notes": "Grade 6 is under 13, so younger readers should ask about their grade. The library's Elgin Teens page also describes Studio 270, a high school teen space at 270 N. Grove Ave. (homework help, college readiness, job hunting help; phone 847-695-7577), but parts of that page look out of date, so call first. The volunteer page lists a contact email that is hidden in the page text; use the library's Contact Us page.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "grades": "6 to 12",
@@ -37967,7 +37968,7 @@
   "max_age": null,
   "grades": "6 to 12",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "needs_work_permit": false,
   "id": "geneva-library-volunteens",
   "name": "Volunteens at Geneva Public Library",
@@ -37998,7 +37999,7 @@
   ],
   "priority": 2,
   "notes": "Service hours are flexible and are not listed as a set number. The page does not describe the registration steps beyond the sign-up form.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "regions": [
@@ -39191,7 +39192,7 @@
   "grades": "Youth volunteers: grades 6 to 12. Innovation Center: grades 9 to 12. Teen Advisory Board: grades 7 to 11.",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "Teen Advisory Board: monthly meetings and 3 to 5 programs in a one year term",
@@ -39217,13 +39218,13 @@
   "deadline_text": "School year youth volunteer applications opened August 15 and no close date is stated. Returning volunteers do not need to reapply. Teen Advisory Board applications are open November 1 to 30, and new members are told December 14 (no year printed on the page).",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "Fill out the youth volunteer application when it opens. The Teen Advisory Board form comes out in November. For the Innovation Center, write to innovationdesk@glenviewpl.org. For other questions, write to youthdesk@glenviewpl.org or call 847-729-7500.",
+  "how_to_apply": "Fill out the youth volunteer application on the page. The Teen Advisory Board form is open in November. For the Innovation Center, write to innovationdesk@glenviewpl.org. For other questions, write to youthdesk@glenviewpl.org or call 847-729-7500.",
   "url": "https://glenviewpl.org/volunteer/",
   "notes": "Returning volunteers do not need to apply again. Court ordered community service for teens must be 16 and older. It uses a separate form.",
   "sources_fetched": [
    "https://glenviewpl.org/volunteer/"
   ],
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -41755,11 +41756,11 @@
   "pay_detail": "$14.50 per 30-minute group class and $17 per 30-minute private class.",
   "season": "year-round",
   "duration": "About 5 to 10 hours a week, weekday afternoons, evenings and weekends",
-  "status": "rolling",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "Posted on the park district job board with no closing date. Apply while the posting is up.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Open the Swim Instructor posting on the park district job board and apply online. You may need to work at least one weekend day.",
   "needs_work_permit": false,
   "url": "https://www.paycomonline.net/v4/ats/web.php/portal/7E000DE8BA68EE33EB416631EB43F8E8/jobs/430090",
@@ -41769,10 +41770,10 @@
    "https://www.heparks.org/about/job-oppurtunities/",
    "https://www.heparks.org/about/get-involved/volunteer/"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-18",
   "priority": 2,
-  "notes": "You need CPR and AED training within 60 days, and the park district gives its own pool training. A lifeguard card is a plus. The club is at 5050 Sedge Blvd. The park district's volunteer page has no teen roles.",
+  "notes": "You need CPR and AED training within 60 days, and the park district gives its own pool training. A lifeguard card is a plus. The club is at 5050 Sedge Blvd. The park district's volunteer page has no teen roles. As of Nov 3, 2026, the job post showed only its title and the park district site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 18, 2026"
  },
  {
@@ -43952,10 +43953,10 @@
    "https://ides.illinois.gov/jobs-workforce/programs/hire-the-future.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "notes": "The page also links to free tools to help you pick a career. It links to pages about staying safe at your first job, too.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "illinois-imsa-srelo-summer-research",
@@ -44165,7 +44166,7 @@
   "grades": "9 to 12",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "September 28 to December 18, 2026",
@@ -44197,14 +44198,14 @@
    "https://www.imsa.edu/youth-outreach/high-school-online-programs/",
    "https://www.imsa.edu/youth-outreach/programs-in-aurora/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "imsa-research-fundamentals-online",
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "2026 session: March 9 to May 29, 2026",
@@ -44236,14 +44237,14 @@
    "https://www.imsa.edu/youth-outreach/high-school-online-programs/",
    "https://www.imsa.edu/youth-outreach/programs-in-aurora/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "imsa-rise-online-research-program",
   "grades": "9 to 12",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "September 7, 2026 to May 31, 2027",
@@ -44260,7 +44261,7 @@
   "status": "unconfirmed",
   "deadline_text": "The page says registration opened Thursday, July 30, 2026 at noon and has a Register button. It posts no closing date and does not say if new students can still join. Spots are limited. Full refund (less the $100 fee) through mid-September 2026; no refunds after September 30, 2026. Ask IMSA before you pay.",
   "deadline_iso": null,
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Sign up online on the IMSA High School Online Programs page. Or apply for a scholarship instead. Do not pay if you apply for a scholarship. Email studentenrichment@imsa.edu.",
   "notes": "It is a hard program. Daily work is expected and you must meet firm deadlines. Failing three deadlines means removal without a refund. IJAS fair entries must be made as an IMSA RISE student for Region 5. Program is non-credit.",
   "regions": [
@@ -44276,7 +44277,7 @@
    "https://www.imsa.edu/youth-outreach/programs-in-aurora/"
   ],
   "opens_iso": null,
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "grades": "9 to 12",
@@ -46734,7 +46735,7 @@
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "Workdays are monthly. Cancelled when it is below zero.",
@@ -46768,7 +46769,7 @@
    "https://kaneforest.com/volunteer-orientation-schedule"
   ],
   "notes": "Bring boots or sturdy shoes, a water bottle and gloves. Info on Eagle Scout and Gold Award projects is in the Resources section of the volunteer page. Questions about workdays: Stewardship Specialist, 630-200-1290.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "opens_iso": null,
@@ -46777,7 +46778,7 @@
   "max_age": 24,
   "grades": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "needs_work_permit": null,
   "id": "kane-county-youth-services",
   "name": "Kane County Workforce Development Youth Services (WIOA Youth)",
@@ -46807,7 +46808,7 @@
   ],
   "priority": 2,
   "notes": "Starts at age 16, so it fits older high schoolers. The page names one contact person but lists an email that does not match that name, so phone first. Funded by a U.S. Department of Labor grant per the page. Elgin Community College's own Future Workforce Leaders program is one of the providers.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -47855,7 +47856,7 @@
   "grades": "9 to 11 (current students)",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "One school year, with monthly meetings",
@@ -47887,7 +47888,7 @@
   "sources_fetched": [
    "https://kidsmatter2us.org/programs/seniorhighboard/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "knoxville-knox-county-public-library-volunteer",
@@ -64709,7 +64710,7 @@
   "grades": "New applicants enter 7th, 8th or 9th grade this fall (Tree Monitor spots for new people are for high school age)",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "June through August, with some optional fall weekends",
@@ -64744,7 +64745,7 @@
    "https://mortonarb.org/science/opportunities-in-science/integrated-mentorship-program/"
   ],
   "notes": "Weekday daytime shifts at most branches. Shift hours, fees and training are not listed on the page. The Arboretum's paid science fellowships are for college students, so they are not in the guide. Eagle Scout and Gold Award projects are taken by emailing volunteer@mortonarb.org.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "mountain-view-teen-volunteer-summer-program",
@@ -65367,7 +65368,7 @@
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "needs_work_permit": null,
   "duration": "One day, 10:00 a.m. to 1:00 p.m.",
@@ -65401,14 +65402,14 @@
    "https://www.eths202.org/beyond-eths/work-permit"
   ],
   "notes": "The Park District says students can use the January fair to plan summer jobs. KidsMatter's 2027 page lists mock interviews, resume help and money skills. Last year's fair also had panels on the 7 Illinois career paths. Confirm what is offered in 2027. A news post from March 2025 also described a spring job fair for summer jobs. Illinois: the Evanston Township High School work permit page says workers under 16 need a work permit (employment certificate) before starting.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "naperville-library-teen-pitch-program",
   "grades": "7 to 12",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "Application in fall. Event runs 30 to 90 minutes in June, July or August 2027",
@@ -65440,18 +65441,18 @@
   "sources_fetched": [
    "https://www.naperville-lib.org/374/Teen-Pitch-Program"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "naperville-library-teen-volunteers-and-tag",
-  "grades": "Volunteers: 9th grade and up. TAG: grades 6 to 12",
-  "apply_url": "https://app.betterimpact.com/Application?OrganizationGuid=66e004a7-4f9c-4c85-9e20-9c70c6451f0c&ApplicationFormNumber=3",
+  "grades": "6 to 12",
+  "apply_url": "https://app.betterimpact.com/Application?OrganizationGuid=66e004a7-4f9c-4c85-9e20-9c70c6451f0c&ApplicationFormNumber=1",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "TAG meets once a month for two hours at rotating library locations",
-  "pay_detail": "Unpaid. TAG members earn community service hours for each meeting.",
+  "pay_detail": "Unpaid. TAG members take part in service projects.",
   "name": "Teen Volunteers and Teen Advisory Group (TAG)",
   "org": "Naperville Public Library",
   "regions": [
@@ -65466,27 +65467,28 @@
   "what_you_do": "Volunteer at the library. Or join TAG, a monthly group. Teens work with teen librarians on events, books, games and teen spaces.",
   "min_age": null,
   "max_age": null,
-  "who_can_apply": "Volunteers must be in 9th grade or above. You do not need a Naperville library card. TAG is open to teens in grades 6 through 12.",
+  "who_can_apply": "Volunteers must be in grade 6 or above. You do not need a Naperville library card. TAG is open to teens in grades 6 through 12.",
   "paid_type": "unpaid",
   "season": "year-round",
   "status": "year-round",
   "deadline_text": "No deadline stated on the page.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "Volunteers fill out the online volunteer application. For TAG, write to the teen librarians and ask how to attend. The email is teenlibrarians@naperville-lib.org.",
+  "how_to_apply": "Fill out the online Teen Volunteer Application. For TAG, say you are interested on the application and send the TAG form at the end. Staff review your application.",
   "url": "https://www.naperville-lib.org/161/Volunteer",
   "notes": "The volunteer coordinator's phone on the page is 630-637-2226.",
   "sources_fetched": [
-   "https://www.naperville-lib.org/161/Volunteer"
+   "https://www.naperville-lib.org/161/Volunteer",
+   "https://www.naperville-lib.org/165"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "naperville-mayors-chief-of-staff-internship",
   "grades": "Sophomores and juniors",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-26",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": null,
   "duration": "Until July 31, 2027 for the 2026-27 term",
@@ -65517,8 +65519,8 @@
    "https://www.naperville.il.us/m/NewsFlash/Home/Detail/76",
    "https://www.naperville.il.us/259/Boards-Commissions"
   ],
-  "notes": "The news post does not say whether it is paid. Ask Rachel Pruneda (prunedar@naperville.il.us, 630-420-6018). A full job description is on the city boards page.",
-  "verified_on_label": "Oct 26, 2026",
+  "notes": "The news post does not say whether it is paid. Ask Rachel Pruneda (prunedar@naperville.il.us, 630-420-6018).",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -65526,7 +65528,7 @@
   "grades": null,
   "apply_url": "https://napervilleparks.isolvedhire.com/jobs/",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "needs_work_permit": null,
   "duration": "Seasonal. Summer jobs include Centennial Beach and the Paddleboat Quarry.",
@@ -65551,7 +65553,7 @@
   "paid_type": "paid",
   "season": "summer",
   "status": "rolling",
-  "deadline_text": "The page's table says Centennial Beach jobs (lifeguard, concession, swim instructor), paddleboat jobs, camp counselors and Knoch Knolls nature camp jobs are usually posted in mid December. Other jobs post in May, June or August. The Community Job Fair is held the first Saturday in January.",
+  "deadline_text": "The page's table says Centennial Beach jobs (lifeguard, concession, swim instructor), paddleboat jobs, camp counselors and Knoch Knolls nature camp jobs are usually posted in mid December. Other jobs post in May, June, August or throughout the year. The Community Job Fair is held the first Saturday in January.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
   "how_to_apply": "Find a posting on the district job board and fill out the online application for that job. Mail, email or fax is not accepted. Apply for each job separately.",
@@ -65562,17 +65564,17 @@
    "https://www.eths202.org/beyond-eths/work-permit"
   ],
   "notes": "Only applicants chosen for an interview are contacted. The page has a table of when each job is usually posted. Ages and pay are on each posting, so check them before you apply. In Illinois, workers under 16 need a work permit (employment certificate) before they start. This comes from the Evanston Township High School work permit page.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "naperville-park-district-teen-volunteers",
   "grades": null,
   "apply_url": "https://www.volgistics.com/appform/1162406173",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
-  "duration": "Dates listed this fall (no year printed; the weekdays match 2026): Kids' Night Out on Fridays, Nov 20 to Dec 18, 5:30 to 9:00 p.m. Santa's Workshop on Dec 1, 3, 6, 8, 10, 13, 15, 17 and 20.",
+  "duration": "Dates listed this fall (no year printed; the weekdays match 2026): Kids' Night Out on Friday, Dec 18, 5:30 to 9:00 p.m. Santa's Workshop on Dec 1, 3, 6, 8, 10, 13, 15, 17 and 20.",
   "pay_detail": "Unpaid. The district can sign off on volunteer hours for school.",
   "name": "Volunteer Programs and Events (ages 14 and up)",
   "org": "Naperville Park District",
@@ -65592,7 +65594,7 @@
   "paid_type": "unpaid",
   "season": "fall",
   "status": "open-now",
-  "deadline_text": "Apply at least two weeks before the date you want to volunteer. Santa's Workshop runs December 1 to 20, 2026 and Kids' Night Out runs Fridays, November 20 to December 18, 2026. The weekdays on the page match 2026.",
+  "deadline_text": "Apply at least two weeks before the date you want to volunteer. Santa's Workshop runs December 1 to 20, 2026 and Kids' Night Out is Friday, December 18, 2026. The weekdays on the page match 2026.",
   "deadline_iso": null,
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Fill out the Student Application (17 and under) and approve a DCFS background check, at least two weeks ahead. Then email Becca (address on the Programs volunteer page) to sign up for a program. You cannot just show up, except at Nature Champion days.",
@@ -65602,15 +65604,15 @@
    "https://napervilleparks.org/volunteerfaqs",
    "https://napervilleparks.org/volunteerapply"
   ],
-  "notes": "Volunteer hours can be confirmed by email, a signed letter or a school form.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "Volunteer hours can be confirmed by email, a signed letter or a school form. The FAQ page says 15 to volunteer on your own, but these program listings say 14, so ask.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "naperville-police-cadet-program",
   "grades": "Graduated 8th grade or older",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-26",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "Ongoing, two meetings a month",
@@ -65642,14 +65644,14 @@
    "https://www.naperville.il.us/447/Internship-Program"
   ],
   "notes": "The police internship on the same site is for college students, so it is not listed. The department points younger people to the cadet program.",
-  "verified_on_label": "Oct 26, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "naperville-police-youth-academy",
   "grades": "In high school or entering high school",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-26",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "6 weeks, Thursday nights 6 to 8 p.m.",
@@ -65680,7 +65682,7 @@
   "sources_fetched": [
    "https://www.naperville.il.us/m/NewsFlash/Home/Detail/49"
   ],
-  "verified_on_label": "Oct 26, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -65688,7 +65690,7 @@
   "grades": "Sophomores, juniors and seniors",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-26",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "Until July 31, 2027 for the 2026-27 term; most boards meet in the evening",
@@ -65720,7 +65722,7 @@
    "https://www.naperville.il.us/259/Boards-Commissions"
   ],
   "notes": "24 positions, two per board. Contact: Rachel Pruneda, prunedar@naperville.il.us, 630-420-6018. The dates come from an August 2026 city news post.",
-  "verified_on_label": "Oct 26, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nasa-citizen-science",
@@ -71550,7 +71552,7 @@
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": null,
   "duration": "Program seasons are 6 to 8 weeks. Volunteers are asked to commit for the full season.",
@@ -71567,7 +71569,7 @@
    "education",
    "sports"
   ],
-  "what_you_do": "Volunteer to give one-on-one help in recreation programs for people with disabilities. Or apply for part-time jobs like program helper and summer day camp counselor. Programs meet once a week for 1 to 3 hours.",
+  "what_you_do": "Help one person at a time in fun programs for people with disabilities. Or apply for part-time jobs like program helper and summer day camp counselor. Programs meet once a week for 1 to 3 hours.",
   "min_age": 15,
   "max_age": null,
   "who_can_apply": "Volunteers must be at least 15 years old. The page does not list a minimum age for the part-time and camp jobs, so check the posting.",
@@ -71581,11 +71583,11 @@
   "url": "https://www.nisra.org/employment-volunteering/",
   "sources_fetched": [
    "https://www.nisra.org/employment-volunteering/",
-   "https://www.cityofelgin.org/2040/Special-Recreation---NISRA",
+   "https://elginil.gov/2040/Special-Recreation---NISRA",
    "https://www.eths202.org/beyond-eths/work-permit"
   ],
   "notes": "The City of Elgin is a member of NISRA. The city says NISRA offers programs at Elgin sites. The 15 week internship is for therapeutic recreation college students. Jobs need a reliable ride. Illinois: the Evanston Township High School work permit page says workers under 16 need a work permit.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "min_age": null,
@@ -72078,7 +72080,7 @@
   "grades": "9 to 12",
   "apply_url": "https://my.ctd.northwestern.edu/",
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "3 weeks (June 28 to July 17 in 2026)",
@@ -72112,15 +72114,15 @@
    "https://www.ctd.northwestern.edu/eligibility"
   ],
   "notes": "Costs a lot and is for advanced learners. CTD also has many other summer and weekend courses for grades 6 to 12 that are not listed here.",
-  "verified_on_label": "Oct 18, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "northwestern-medicine-summer-student-volunteer",
-  "opens_iso": null,
+  "opens_iso": "2026-12-01",
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "needs_work_permit": false,
   "duration": "One day a week for 8 weeks between May and August",
@@ -72141,10 +72143,10 @@
   "who_can_apply": "Volunteers must be at least 16 years old. For Northwestern Memorial Hospital the age is 18, and it has no summer program. You must pass a health screening and an interview. You must also go to a virtual orientation.",
   "paid_type": "unpaid",
   "season": "summer",
-  "status": "closed-expect-reopen",
-  "deadline_text": "The 2026 summer application period is closed. The page says to check back for the 2027 Summer Service Period in early autumn. It gives no 2027 dates on this page.",
-  "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
+  "status": "opens-soon",
+  "deadline_text": "Summer 2027 applications are taken only from Dec 1, 2026 to Jan 15, 2027. Orientation must be done before the end of May 2027.",
+  "deadline_iso": "2027-01-15",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Fill out the volunteer application during the window. Then do an interview. Onboarding includes a health screening and an orientation. Ages 18 and up also get a background check.",
   "url": "https://www.nm.org/patients-and-visitors/volunteer/summer-volunteer-service-for-students",
   "sources_fetched": [
@@ -72154,7 +72156,7 @@
    "https://www.nm.org/patients-and-visitors/volunteer/where-to-volunteer"
   ],
   "notes": "Volunteer offices: Delnor, 630-938-2180. Central DuPage, 630-933-6207. Lake Forest, 847-535-6851. Call the one near you.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "northwestern-medill-cherubs-journalism",
@@ -72162,7 +72164,7 @@
   "grades": "Current high school juniors (rising seniors), no exceptions",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "4 weeks (June 27 to July 23, 2027)",
@@ -72187,25 +72189,25 @@
   "deadline_text": "No applications before December 1, 2026. All materials are due by noon Central on March 1, 2027. Decisions by March 24, 2027.",
   "deadline_iso": "2027-03-01",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Fill out the application form, write a 200 to 225 word essay, list your journalism activities and send up to three work samples. Pay the $55 fee. Your counselor emails your transcript, GPA and school profile to Prof. Roger Boye. Add the financial aid form and a parent tax return if you want aid.",
+  "how_to_apply": "Fill out the application form, write a 200 to 250 word essay, list your journalism activities and send up to three work samples. Pay the $55 fee. Your counselor emails your transcript, GPA and school profile to Prof. Roger Boye. Add the financial aid form and a parent tax return if you want aid.",
   "url": "https://cherubs.medill.northwestern.edu/2026/apply-for-2027/",
   "sources_fetched": [
    "https://cherubs.medill.northwestern.edu/2026/",
    "https://cherubs.medill.northwestern.edu/2026/apply-for-2027/"
   ],
   "notes": "Questions: r-boye@northwestern.edu (email is best) or (847) 491-2069.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "northwestern-nhsi-debate-institute",
   "grades": "Rising 9th, 10th, 11th or 12th graders",
   "apply_url": "https://nhsi.northwestern.edu/apply-now/",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "4 or 6 weeks",
-  "pay_detail": "2026 tuition: $3,500 for the 4 week institute, $5,000 for the 6 week institute. $60 application fee.",
+  "pay_detail": "2026 tuition: $3,500 for the 4 week institute, $5,000 for the 6 week institute. 2027 tuition is not posted. $60 application fee.",
   "name": "National High School Institute (Cherubs): Policy Debate Institute",
   "org": "Northwestern University School of Communication",
   "regions": [
@@ -72223,7 +72225,7 @@
   "paid_type": "fee-based",
   "season": "summer",
   "status": "closed-expect-reopen",
-  "deadline_text": "Summer 2027 application opens this winter. Rolling admission through April or until the labs are full. 2026 dates were June 28 to July 25 (4 weeks) and June 28 to August 8 (6 weeks).",
+  "deadline_text": "Summer 2027 application opens this winter. Rolling admission through April or until the labs are full. 2027 dates are June 27 to July 24 (4 weeks) and June 27 to August 7 (6 weeks).",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Submit the online application with the $60 fee. Then send extra materials such as a debate record, a letter of recommendation and your transcript. You need a laptop with a webcam, a mic and Microsoft Word.",
@@ -72233,18 +72235,18 @@
    "https://nhsi.northwestern.edu/debate-division/debate-tuition-and-fees/"
   ],
   "notes": "The 2026 program was online only. Check whether 2027 is online or on campus. Financial aid and scholarship page exists on the NHSI site but was not read.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "northwestern-nhsi-film-video",
   "grades": "Sophomores and juniors (10th or 11th grade)",
   "apply_url": "https://nhsi.northwestern.edu/apply-now/",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "5 weeks",
-  "pay_detail": "2026 tuition was $8,000 (includes room and board for 5 weeks). Need-based financial aid is available. $60 application fee, which can be waived for families with financial need.",
+  "pay_detail": "2027 tuition is $8,500 (includes room and board for 5 weeks). Need-based financial aid is available. $60 application fee, which can be waived for families with financial need.",
   "name": "National High School Institute (Cherubs): Film and Video Division",
   "org": "Northwestern University School of Communication",
   "regions": [
@@ -72258,13 +72260,13 @@
   "what_you_do": "Spend 5 weeks on the Northwestern campus making films. Take courses such as acting for the screen, sound and on-set work, and finish with a festival of student films.",
   "min_age": null,
   "max_age": null,
-  "who_can_apply": "Students in their sophomore or junior year who will be rising juniors or seniors. The page asks for a class rank in or near the top 30 percent. It also asks for proof of special skill or strong interest in media arts.",
+  "who_can_apply": "Students in their sophomore or junior year who will be rising juniors or seniors. The page asks for a class rank in or near the top 30 percent, or at least a B average. It also asks for proof of special skill or strong interest in media arts.",
   "paid_type": "fee-based",
   "season": "summer",
   "status": "closed-expect-reopen",
-  "deadline_text": "2026 cycle: early deadline January 9, 2026 and regular deadline March 13, 2026, with rolling late applications for some concentrations. 2027 dates are not posted yet. The home page says applications open in November.",
+  "deadline_text": "2027 cycle: early deadline January 11, 2027 and regular deadline March 22, 2027. Other materials are due a week after each. The home page says applications open in November.",
   "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Submit the online application with the $60 fee. Then send extra materials. These may include two essays, a resume, a letter of recommendation, test scores and your transcript.",
   "url": "https://nhsi.northwestern.edu/film-video-application-information/",
   "sources_fetched": [
@@ -72275,18 +72277,18 @@
    "https://nhsi.northwestern.edu/film-video-concentrations-schedules/"
   ],
   "notes": "Competitive and costly. Travel is not included. Aid is need-based only. Not a paid program.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "northwestern-nhsi-theatre-arts",
   "grades": "Sophomores and juniors (10th or 11th grade)",
   "apply_url": "https://nhsi.northwestern.edu/apply-now/",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "5 weeks",
-  "pay_detail": "2026 tuition was $8,000 (includes room and board for 5 weeks). Need-based financial aid is available. $60 application fee, which can be waived for families with financial need.",
+  "pay_detail": "2027 tuition is $8,500 (includes room and board for 5 weeks). Need-based financial aid is available. $60 application fee, which can be waived for families with financial need.",
   "name": "National High School Institute (Cherubs): Theatre Arts Division",
   "org": "Northwestern University School of Communication",
   "regions": [
@@ -72300,13 +72302,13 @@
   "what_you_do": "Live on the Northwestern campus for 5 weeks. Take acting, voice and movement classes, work on a crew, and rehearse a full play with professional directors. Tracks: Performance, Stage Management and Design/Tech, Musical Theatre.",
   "min_age": null,
   "max_age": null,
-  "who_can_apply": "Students in 10th or 11th grade who will be rising juniors or seniors. Juniors get priority. The page asks for a class rank near the top 30 percent and some theatre experience or strong interest.",
+  "who_can_apply": "Students in 10th or 11th grade who will be rising juniors or seniors. Juniors get priority. The page asks for a class rank near the top 30 percent, or at least a B average, and some theatre experience or strong interest.",
   "paid_type": "fee-based",
   "season": "summer",
   "status": "closed-expect-reopen",
-  "deadline_text": "2026 cycle: early deadline January 2, 2026 and regular deadline February 27, 2026 (online form). 2027 dates are not posted yet. The home page says applications open in November.",
+  "deadline_text": "2027 cycle: early deadline January 4, 2027 and regular deadline March 1, 2027 (online form). Other materials are due a week after each. The home page says applications open in November.",
   "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Submit the online application with the $60 fee. Then send a resume, two essays, a letter of recommendation and your transcript. Test scores are optional. The Musical Theatre track needs a third essay.",
   "url": "https://nhsi.northwestern.edu/theatre-arts-application-information/",
   "sources_fetched": [
@@ -72317,7 +72319,7 @@
    "https://nhsi.northwestern.edu/theatre-arts-tracks-schedules/"
   ],
   "notes": "Competitive and costs a lot, but the program says need-based aid is given and does not offer merit aid. Travel is not included. Not a paid program.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nova-parks-waterpark-jobs",
@@ -76729,7 +76731,7 @@
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "Not stated",
@@ -76762,14 +76764,14 @@
    "https://www.oppl.org/about/civic-engagement/volunteer/"
   ],
   "notes": "The page has an Apply now button and says questions go to mhs@oppl.org. It does not give dates.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "oak-park-park-district-acorns-to-oaks-volunteers",
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "Event and program based",
@@ -76801,14 +76803,14 @@
   "sources_fetched": [
    "https://pdop.org/volunteer/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "oak-park-park-district-seasonal-jobs",
   "grades": null,
   "apply_url": "https://www.paycomonline.net/v4/ats/web.php/jobs?clientkey=41D8300184906117978771C10E755DC6",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "needs_work_permit": null,
   "duration": "Seasonal, with set start and end dates",
@@ -76843,7 +76845,7 @@
    "https://pdop.org/jobs/",
    "https://www.eths202.org/beyond-eths/work-permit"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "oak-ridge-ornl-next-generation-stem-internship",
@@ -80132,7 +80134,7 @@
   "grades": "Service projects: grades 6 to 12. Member Services: grades 9 to 12 (20 hour minimum). Book reviewers: grades 6 to 8. Teen Advisory Board: grades 9 to 12.",
   "apply_url": "https://www.volgistics.com/appform/765255518",
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "Member Services needs at least 20 hours. Teen Advisory Board meets monthly in the school year.",
@@ -80151,11 +80153,11 @@
   "what_you_do": "Do 2 hour summer service projects, help in Member Services or review books for credit. Or join the Teen Advisory Board. It meets monthly in the school year.",
   "min_age": null,
   "max_age": null,
-  "who_can_apply": "Students in the grades listed for each role. You must finish the volunteer application and have it accepted before you can sign up for events.",
+  "who_can_apply": "Students in the grades listed for each role. You must finish the volunteer application and have it accepted before you can sign up for events. You need a valid Palatine library card.",
   "paid_type": "unpaid",
   "season": "year-round",
   "status": "rolling",
-  "deadline_text": "Book review hours count for reviews submitted September 1, 2026 to May 15, 2027. Teen Advisory Board applications run August 1 to 31, and that window has passed.",
+  "deadline_text": "Book review hours count for reviews submitted September 1, 2026 to May 15, 2027. Teen Advisory Board applications are taken August 1 to 31.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Click Apply Now on the volunteer page and finish the form. Then sign up for service projects on the events calendar.",
@@ -80164,7 +80166,7 @@
    "https://www.palatinelibrary.org/about/volunteer"
   ],
   "notes": "Service projects sign-up opens two weeks before each event.",
-  "verified_on_label": "Oct 19, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "palm-springs-library-teen-volunteers",
@@ -85339,7 +85341,7 @@
   "grades": "Junior high and senior high students are encouraged",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "Not stated",
@@ -85371,7 +85373,7 @@
   "sources_fetched": [
    "https://pdop.org/volunteer/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "pleasanton-aquatics-junior-volunteers",
@@ -88384,7 +88386,7 @@
   "grades": "Lake County high school students",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "5 days, the last week of July",
@@ -88416,14 +88418,14 @@
   "sources_fetched": [
    "https://www.rosalindfranklin.edu/about/community-and-campus-outreach/pathway-programs/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "rfu-inspire-summer-research",
   "grades": "High school and college students from Lake County",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "needs_work_permit": null,
   "duration": "8 weeks in summer",
@@ -88444,7 +88446,7 @@
   "deadline_text": "The INSPIRE 2026 application is closed. The page says the INSPIRE 2027 application will open in December 2026.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Use the Apply for INSPIRE link on the pathway programs page. It is a Google form. It opens in December 2026.",
+  "how_to_apply": "As of Nov 3, 2026 the pathway programs page has no apply link. Check it in December 2026, when the form is due to open.",
   "notes": "Check whether it pays. Students can come back every summer until they finish a bachelor's degree. To reach the program, write to Rachael Lange at rachael.lange@rosalindfranklin.edu or call 224-570-7325.",
   "org": "Rosalind Franklin University of Medicine and Science",
   "regions": [
@@ -88455,14 +88457,14 @@
   "sources_fetched": [
    "https://www.rosalindfranklin.edu/about/community-and-campus-outreach/pathway-programs/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "rfu-nursing-inspire",
   "grades": "High school juniors",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "needs_work_permit": null,
   "duration": "8 weeks, four days a week, June to August",
@@ -88482,7 +88484,7 @@
   "deadline_text": "The page still shows the last cycle it read: applications opened December 10, 2024 and closed January 23, 2025. Newer dates are not posted.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Use the Learn More link on the Nursing INSPIRE page to find the form. To reach someone, write to Dr. Mosilda Asanji at mosilda.asanji@rosalindfranklin.edu.",
+  "how_to_apply": "As of Nov 3, 2026 the Nursing INSPIRE page has no form or apply link. To ask how to apply, write to Dr. Mosilda Asanji at mosilda.asanji@rosalindfranklin.edu.",
   "url": "https://www.rosalindfranklin.edu/academics/college-of-nursing/nursing-education-to-workforce-pathway/nursing-inspire/",
   "sources_fetched": [
    "https://www.rosalindfranklin.edu/about/community-and-campus-outreach/pathway-programs/",
@@ -88494,14 +88496,14 @@
    "chicago"
   ],
   "city": "North Chicago, IL (Lake County)",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "rfu-science-saturdays",
   "grades": "Local high school students",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "9 Saturdays, 10 a.m. to 2:30 p.m., June to August",
@@ -88522,7 +88524,7 @@
   "deadline_text": "The Science Saturdays 2026 application is closed. For 2027 the application will open in December 2026.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Use the Apply for Science Saturdays link on the pathway programs page. It is a Google form. It opens in December 2026. Contact: Rachael Lange, rachael.lange@rosalindfranklin.edu, 224-570-7325.",
+  "how_to_apply": "As of Nov 3, 2026 the pathway programs page has no apply link. Check it in December 2026, when the form is due to open. Contact: Rachael Lange, rachael.lange@rosalindfranklin.edu, 224-570-7325.",
   "notes": "Only about 25 students are chosen each year.",
   "org": "Rosalind Franklin University of Medicine and Science",
   "regions": [
@@ -88533,14 +88535,14 @@
   "sources_fetched": [
    "https://www.rosalindfranklin.edu/about/community-and-campus-outreach/pathway-programs/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "rfu-virtual-mentor-program",
   "grades": "Local high school and undergraduate students",
   "apply_url": "https://forms.gle/ZGEMBoqxxPaPHjJL9",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "Monthly meetings, October to May",
@@ -88572,7 +88574,7 @@
   "sources_fetched": [
    "https://www.rosalindfranklin.edu/about/community-and-campus-outreach/pathway-programs/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "richmond-fund-for-children-and-youth-oversight-board",
@@ -89300,7 +89302,7 @@
   "grades": "5 to 12",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "Teen volunteers: one 1 hour shift a week in summer. Book Buddies: one weekly time slot for all of July (Tuesdays 3 to 5 p.m. or Wednesdays 5 to 7 p.m.).",
@@ -89331,7 +89333,7 @@
   "sources_fetched": [
    "https://www.riverforestlibrary.org/tweens-teens/volunteers"
   ],
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -90223,7 +90225,7 @@
   "grades": null,
   "apply_url": "https://www.rush.edu/volunteering-rush-copley/teen-volunteer-application",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "Summer volunteers commit to 11 weeks in a row. Year-round volunteers commit to 6 months or 100 hours, whichever comes first.",
@@ -90238,7 +90240,7 @@
   "fields": [
    "health"
   ],
-  "what_you_do": "Help in areas like the gift shop, greeting and escort services, office support and patient care areas. Teens support staff and patients with comfort and friendly help. They do not do medical tasks.",
+  "what_you_do": "Help in areas like the gift shop, greeting and escort services and office support. Patient care areas are for age 18 and up. Volunteers do not do medical tasks.",
   "min_age": 16,
   "max_age": 18,
   "who_can_apply": "Teens ages 16 to 18. A Minor Volunteer Consent Form is also needed. Volunteers must meet health and vaccine rules. They must do an interview and an orientation.",
@@ -90255,14 +90257,14 @@
    "https://www.rush.edu/volunteering-rush-copley/teen-volunteer-application"
   ],
   "notes": "No shadowing or observation. The page still has older COVID-19 wording (proof of vaccination and a COVID-19 waiver), so ask the office what applies today. A background check is for ages 18 and up.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "rush-oak-park-hospital-summer-student-volunteer",
   "grades": "High school students (summer only)",
   "apply_url": "https://forms.office.com/r/psZpV7x523",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "Summer months",
@@ -90293,7 +90295,7 @@
   "sources_fetched": [
    "https://www.rush.edu/volunteering-rush-oak-park-hospital"
   ],
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -95953,7 +95955,7 @@
   "max_age": 18,
   "grades": null,
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-03",
   "needs_work_permit": false,
   "id": "schaumburg-library-student-advisory-trustee",
   "name": "Student Advisory Trustee, Schaumburg Township District Library",
@@ -95985,14 +95987,14 @@
   ],
   "priority": 3,
   "notes": "Board meetings are the third Monday of each month at 6:00 p.m., plus monthly meetings with the Teen Department. The next-cycle timing is a guess from this year's August 9 deadline.",
-  "verified_on_label": "Oct 19, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "schaumburg-library-volunteer-squad",
   "grades": "Students entering grades 8 to 12 (the 2026 wording)",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "Summer",
@@ -96024,14 +96026,14 @@
   "sources_fetched": [
    "https://www.schaumburglibrary.org/volunteer"
   ],
-  "verified_on_label": "Oct 19, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "schaumburg-park-district-aquatics-seasonal-jobs",
   "grades": null,
   "apply_url": "https://schaumburgparkdistrict.bamboohr.com/jobs/",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "needs_work_permit": null,
   "duration": "Seasonal, May through September, per the district's aquatics job fair post.",
@@ -96066,7 +96068,7 @@
    "https://www.eths202.org/beyond-eths/work-permit"
   ],
   "notes": "Pay figures for lifeguards are from the 2025 post, so check the current rate. In Illinois, workers under 16 need a work permit (employment certificate) before they start. This comes from the Evanston Township High School work permit page.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "science-center-of-iowa-junior-camp-counselor",
@@ -100131,7 +100133,7 @@
   "grades": "Middle and high school students",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "Teen Library Council meets Thursday afternoons",
@@ -100150,7 +100152,7 @@
   "what_you_do": "Join teen service events during the school year and school breaks. The Teen Library Council meets regularly on Thursday afternoons.",
   "min_age": null,
   "max_age": null,
-  "who_can_apply": "Middle and high school students who are 18 or younger and either live in Skokie or attend a Skokie school.",
+  "who_can_apply": "Middle and high school students.",
   "paid_type": "unpaid",
   "season": "school-year",
   "status": "year-round",
@@ -100159,12 +100161,11 @@
   "deadline_confidence": "rolling",
   "how_to_apply": "Fill out the Teen Volunteer Service contact form to join the email list. Or email teenteam@skokielibrary.info. You can also come to an upcoming teen volunteer event.",
   "url": "https://www.skokielibrary.info/volunteering",
-  "notes": "Some opportunities are only on school breaks or days off. If you need hours for a ticket or a court order, the page says to email the teen team with your name and school.",
+  "notes": "Some opportunities are only on school breaks or days off. If you need hours for a ticket or a court order, you must be 18 or younger and live in Skokie or attend a Skokie school. Email the teen team with your name and school.",
   "sources_fetched": [
    "https://www.skokielibrary.info/volunteering"
   ],
-  "verified_on_label": "Oct 9, 2026",
-  "limited": true
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "slac-regional-science-bowl-high-school",
@@ -100864,7 +100865,7 @@
   "grades": "9 to 12",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "Not stated. There is a summer session.",
@@ -100896,7 +100897,7 @@
   "sources_fetched": [
    "https://www.scpld.org/high-school-volunteer-application/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "st-louis-area-foodbank-volunteer",
@@ -102865,7 +102866,7 @@
   "grades": null,
   "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLScBzMafV7kPokvN08N7YvB0e7tNorWctAZRvGgI0wycxqGObg/viewform",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "Summer reading volunteers help 2 to 6 hours a week for the 8 week program. Shelving volunteers commit to a weekly 2 hour shift for at least 6 months.",
@@ -102897,7 +102898,7 @@
   "sources_fetched": [
    "https://www.sugargrove.lib.il.us/volunteer"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "opens_iso": null,
@@ -105223,7 +105224,7 @@
   "grades": "High school students and recent graduates",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": null,
   "duration": "Not stated",
@@ -105256,7 +105257,7 @@
    "https://www.thetradecollective.org/what-we-do-2"
   ],
   "notes": "The page does not list specific internships or pay. It says the group is forming partnerships with high schools, colleges and universities. Address on the site: 1910 Greenwood Street, Evanston.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "topeka-shawnee-county-public-library-teen-volunteer",
@@ -113721,7 +113722,7 @@
   "grades": "Volunteers: middle and high school students. TAG: grades 7 to 12.",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "Weekly assignments or one-time tasks. TAG meets monthly.",
@@ -113754,7 +113755,7 @@
    "https://www.wnpl.info/teen-advisory-group/"
   ],
   "notes": "Adults who apply must agree to a background check for crimes. The page says TAG is a good way to earn volunteer hours for National Honor Society and other service rules.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "washington-4h",
@@ -114369,7 +114370,7 @@
   "grades": "High school (students stay until they graduate)",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "Through high school graduation",
@@ -114401,14 +114402,14 @@
    "https://www.waubonsee.edu/admissions/get-college-ready/high-school-and-dual-credit-programs/upward-bound/apply-upward-bound"
   ],
   "notes": "The form asks for copies of your transcript and birth certificate. It also asks for your Social Security card and a parent tax return. Give these only to program staff at the school or the Sugar Grove office.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "waukegan-park-district-volunteers",
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "Year-round, event and project based",
@@ -114440,14 +114441,14 @@
   "sources_fetched": [
    "https://www.waukeganparks.org/volunteer/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "waukegan-public-library-teen-volunteers",
   "grades": "6 to 12",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "Not stated",
@@ -114466,7 +114467,7 @@
   "what_you_do": "Help put on events for younger kids, prepare supplies for programs and help shape library services. Teen volunteers earn service hours.",
   "min_age": null,
   "max_age": null,
-  "who_can_apply": "Students in grades 6 to 12. Right now the library does not take volunteers who must do court ordered community service.",
+  "who_can_apply": "Grades 6 to 12 at Waukegan schools, or home school if you live in Waukegan. Right now the library does not take court ordered service hours.",
   "paid_type": "unpaid",
   "season": "year-round",
   "status": "year-round",
@@ -114480,14 +114481,15 @@
    "https://www.waukeganpl.org/services/by-audience/get-involved/teen-volunteers"
   ],
   "notes": "The library's Maker Space (3D printer, laser engraver, sewing machines) is open to teens ages 16 and up, which is a good way to build skills. Hours and training are not on the pages.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026",
+  "limited": true
  },
  {
   "id": "wdsra-teen-volunteers-western-dupage",
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "Flexible. You choose how often. New volunteer orientation takes about 1 hour.",
@@ -114522,7 +114524,7 @@
    "https://napervilleparks.org/employment"
   ],
   "notes": "WDSRA also hires part-time program staff (the volunteer page does not give a minimum age for them). The jobs page lists openings and how to apply.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "wellstar-cobb-medical-center-volunteen",
@@ -114896,7 +114898,7 @@
   "grades": "6 to 12",
   "apply_url": "https://www.wheatonlibrary.org/form/teen-volunteer-interest-form",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "School year volunteering begins the week of Monday, September 14 (no year printed; the weekday matches 2026)",
@@ -114928,7 +114930,7 @@
   "sources_fetched": [
    "https://www.wheatonlibrary.org/services/teens/volunteering"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "grades": null,
@@ -115415,7 +115417,7 @@
   "grades": "Teens in grades 9 to 12. Kids ages 11 to 13 may apply as library helpers with a parent's approval.",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "School year positions, plus summer positions that run June to August",
@@ -115447,7 +115449,7 @@
   "sources_fetched": [
    "https://www.wilmettelibrary.info/about-us/volunteering"
   ],
-  "verified_on_label": "Oct 19, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "winters-seasonal-lifeguard",
@@ -115990,7 +115992,7 @@
   "grades": "7 to 12",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "Event based. Hours depend on the event length.",
@@ -116021,7 +116023,7 @@
   "sources_fetched": [
    "https://www.woodridgelibrary.org/teen-volunteers"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "worcester-rec-youthgrow",
@@ -116154,7 +116156,7 @@
   "min_age": 17,
   "max_age": 24,
   "grades": null,
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-09",
   "needs_work_permit": null,
   "id": "worknet-dupage-youth",
@@ -116184,7 +116186,7 @@
    "https://www.worknetdupage.org/youth"
   ],
   "priority": 3,
-  "notes": "Starts at 17, so it fits only older high schoolers. Spanish-speaking services are available. The Get Started page was not read, so check eligibility there.",
+  "notes": "Starts at 17, so it fits only older high schoolers. Spanish-speaking services are available. The Get Started page was not read, so check eligibility there. As of Nov 3, 2026, the workNet DuPage site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 9, 2026"
  },
  {
@@ -117521,7 +117523,7 @@
   "grades": null,
   "apply_url": "https://youthjobcenter.org/sign-up-for-yjc",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "needs_work_permit": true,
   "duration": "Paid Work Experience: 10 weeks",
@@ -117557,7 +117559,7 @@
    "https://www.eths202.org/beyond-eths/work-permit"
   ],
   "notes": "A Chicago-area nonprofit that has worked with young people for over 40 years. Text YJCNEWS to (224) 253-6233 for updates. Ask the staff about work permits if you are under 16. In Illinois, workers under 16 need a work permit (employment certificate) before they start. This comes from the Evanston Township High School work permit page.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "youth-radio-oakland",
@@ -117765,7 +117767,7 @@
   "grades": "High school seniors",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "Yearly award",
@@ -117797,7 +117799,7 @@
   "sources_fetched": [
    "https://www.ywcaelgin.org/youthscholarship"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "grades": null,
