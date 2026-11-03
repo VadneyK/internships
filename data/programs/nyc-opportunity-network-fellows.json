@@ -18,22 +18,23 @@
   "paid_type": "paid",
   "pay_detail": "Fellows do paid summer internships or enrichment programs (five summers over the six years). The page does not state the pay.",
   "season": "year-round",
-  "duration": "Six years. Starts with the OppNet Summer Institute (length not stated on the page), then weekly after-school workshops in 11th and 12th grade.",
-  "status": "closed-expect-reopen",
+  "duration": "Six years. Starts with a two-week Summer Institute in July 2027, then weekly after-school workshops in 11th and 12th grade.",
+  "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "The page says the last application is closed and the next one re-opens in Fall 2026. The page lists the usual due date as early February for current NYC 10th graders. The 2027 date is not posted.",
-  "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Sign the interest form on the Apply page to get an email when the application opens. The online application takes a couple of hours. It needs your transcript, family facts and two recommendation forms. One is from a teacher. One is from a counselor or advisor. Chosen applicants are invited to group interviews. The page puts these in late March.",
+  "deadline_text": "Applications are due Feb 7, 2027 at 11:59 PM. Interviews are in March 2027. Admission news comes in April 2027.",
+  "deadline_iso": "2027-02-07",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the online application. It takes 1 to 2 hours. It needs your transcript, family facts and two recommendation forms. One is from a teacher. One is from a school counselor. Info sessions are Nov 12, Dec 3 and Jan 14. Chosen applicants are invited to interviews in March 2027.",
   "needs_work_permit": null,
   "url": "https://opportunitynetwork.org/apply/",
-  "apply_url": null,
+  "apply_url": "https://oppnet.tfaforms.net/5117937",
   "sources_fetched": [
     "https://opportunitynetwork.org/fellows/",
-    "https://opportunitynetwork.org/apply/"
+    "https://opportunitynetwork.org/apply/",
+    "https://oppnet.tfaforms.net/5117937"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "notes": "Admitted Fellows must come to all days of the Summer Institute. A family member must come to an orientation. The application asks for household income. The program uses it to check the income limit. The pages do not say if a work permit is needed."
 }
