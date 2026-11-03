@@ -1,0 +1,40 @@
+{
+  "id": "foothill-wdb-youth-services",
+  "name": "Youth Services",
+  "org": "Foothill Workforce Development Board",
+  "regions": [
+    "los-angeles"
+  ],
+  "city": "Pasadena, CA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Get help finding a job and planning your next steps. If you are still in high school, you may qualify for a work experience placement with an employer partner.",
+  "min_age": 14,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Youth ages 14 to 24. The board's youth site names Arcadia, Duarte, Sierra Madre, South Pasadena and Pasadena as its service area.",
+  "paid_type": "not-stated",
+  "pay_detail": "The page does not say if work experience is paid.",
+  "season": "year-round",
+  "duration": null,
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No dates are listed as of Nov 3, 2026. Orientation dates are on the board's website calendar.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Call the office at (626) 304-8905, or go to the next orientation. Main office: (626) 796-5627.",
+  "needs_work_permit": null,
+  "url": "https://www.fwibworks.org/youth/find-a-job",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.fwibworks.org/youth/find-a-job",
+    "https://www.fwibworks.org/youth",
+    "https://www.cityofpasadena.net/housing/foothill-workforce-development-board/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 2,
+  "notes": "Ask if the work placement is paid. If it is, you need a work permit while under 18. The office is at 1207 E. Green Street, Pasadena."
+}

@@ -22865,6 +22865,45 @@
   "verified_on_label": "Nov 2, 2026"
  },
  {
+  "id": "college-of-the-canyons-dual-enrollment",
+  "name": "College of the Canyons Dual Enrollment",
+  "org": "College of the Canyons",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Santa Clarita, CA",
+  "type": "pre-college",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Take college classes on your own school campus during the school day. High school students can earn credit toward a certificate, an associate degree or transfer.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "7 to 12",
+  "who_can_apply": "You must be in grades 7 to 12 at a partner school. Schools include Bowman, Canyon, Castaic, Hart, Saugus and Valencia High. The page lists more.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "No cost. You save on tuition and textbooks.",
+  "season": "school-year",
+  "duration": null,
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No dates or enrollment steps are listed as of Nov 3, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Email earlycollege@canyons.edu. Allow up to 72 hours for a reply.",
+  "needs_work_permit": false,
+  "url": "https://www.canyons.edu/studentservices/outreach/earlycollegeprograms/dualenrollment",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.canyons.edu/studentservices/outreach/earlycollegeprograms/dualenrollment"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 2,
+  "notes": "Grades 7 and 8 take noncredit classes only. Letter grades in credit classes count toward your GPA at both your high school and the college.",
+  "verified_on_label": "Nov 3, 2026"
+ },
+ {
   "id": "college-of-the-desert-free-early-college",
   "name": "College of the Desert Free Early College",
   "org": "College of the Desert",
@@ -24081,6 +24120,46 @@
   "priority": 2,
   "notes": "The COYAC site blocked our page reader, so this was read through a page summary tool. The retreat for the current group is August 29 to 30, 2026 in Denver; the Day at the Capitol is March 1, 2027.",
   "verified_on_label": "Oct 10, 2026"
+ },
+ {
+  "id": "columbia-memorial-space-center-volunteer",
+  "name": "Volunteer Program",
+  "org": "Columbia Memorial Space Center",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Downey, CA",
+  "type": "volunteer",
+  "fields": [
+   "science",
+   "education"
+  ],
+  "what_you_do": "Help at events at the Space Center and around Los Angeles. You also go to meetings and trainings of one to two hours.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be at least 16. You must pass a background check and know Microsoft Office and Google Workspace.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer position with no pay.",
+  "season": "year-round",
+  "duration": "At least 6 months",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Applications are closed for the year as of Nov 3, 2026. The next cycle opens in January 2027. No exact date is posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply on the volunteer page when the next round opens. In 3 to 5 business days you hear if you can come to a talk and an interview. Questions: 562-231-1200.",
+  "needs_work_permit": false,
+  "url": "https://columbiaspacescience.org/volunteer",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://columbiaspacescience.org/volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 3,
+  "notes": "It can take up to two months to start after you apply, so plan ahead if you need hours by a certain date. This is a general volunteer program, not a teen program.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "grades": "7 to 12 (2026-2027 school year)",
@@ -36481,6 +36560,47 @@
   "priority": 1,
   "notes": "Foothill can give a free Clipper SmartPass for VTA buses and light rail. Undocumented students are welcome. Grades go on your permanent college record, and your parents cannot see college records. Partner-district options also exist: Middle College, College Now! (MVLA), Firebird Academy (Fremont Union).",
   "verified_on_label": "Nov 2, 2026"
+ },
+ {
+  "id": "foothill-wdb-youth-services",
+  "name": "Youth Services",
+  "org": "Foothill Workforce Development Board",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Pasadena, CA",
+  "type": "paid-youth-program",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Get help finding a job and planning your next steps. If you are still in high school, you may qualify for a work experience placement with an employer partner.",
+  "min_age": 14,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Youth ages 14 to 24. The board's youth site names Arcadia, Duarte, Sierra Madre, South Pasadena and Pasadena as its service area.",
+  "paid_type": "not-stated",
+  "pay_detail": "The page does not say if work experience is paid.",
+  "season": "year-round",
+  "duration": null,
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No dates are listed as of Nov 3, 2026. Orientation dates are on the board's website calendar.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Call the office at (626) 304-8905, or go to the next orientation. Main office: (626) 796-5627.",
+  "needs_work_permit": null,
+  "url": "https://www.fwibworks.org/youth/find-a-job",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.fwibworks.org/youth/find-a-job",
+   "https://www.fwibworks.org/youth",
+   "https://www.cityofpasadena.net/housing/foothill-workforce-development-board/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 2,
+  "notes": "Ask if the work placement is paid. If it is, you need a work permit while under 18. The office is at 1207 E. Green Street, Pasadena.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "forage-job-simulations",
@@ -54080,6 +54200,47 @@
   "verified_on_label": "Nov 2, 2026"
  },
  {
+  "id": "long-beach-space-beach-youth-camp",
+  "name": "Space Beach Youth Camp",
+  "org": "Long Beach Workforce Innovation Network (LBWIN)",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Long Beach, CA",
+  "type": "shadowing",
+  "fields": [
+   "engineering",
+   "tech-cs"
+  ],
+  "what_you_do": "Explore aerospace jobs in a free six-day camp. You tour companies and training sites, meet engineers and tech workers, and do hands-on activities.",
+  "min_age": 17,
+  "max_age": 21,
+  "grades": null,
+  "who_can_apply": "Ages 17 to 21. The city's program list also says you must meet WIOA in-school youth rules. Ask the center what that means for you.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free. The page does not list any pay.",
+  "season": "summer",
+  "duration": "Six days during Jul 21 to 30, 2026",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "Last cycle: applications were due Jul 8, 2026, and the camp ran Jul 21 to 30, 2026. Dates for 2027 are not posted as of Nov 3, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Last cycle used an online form on the camp page. Check there for the next one, or call 562.570.4700.",
+  "needs_work_permit": false,
+  "url": "https://longbeach.gov/edo/talent-workforce/youth-services/space-beach-camp/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://longbeach.gov/edo/talent-workforce/youth-services/space-beach-camp/",
+   "https://longbeach.gov/edo/talent-workforce/youth-services/specialized--seasonal-programs/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 3,
+  "notes": "These are 2026 dates, because 2027 dates are not posted. The page does not promise another camp. It was held at 508 W. Willow St., Long Beach.",
+  "verified_on_label": "Nov 3, 2026"
+ },
+ {
   "regions": [
    "los-angeles"
   ],
@@ -57211,6 +57372,46 @@
   "priority": 3,
   "notes": "The pages did not state a minimum age. Many MLH events are aimed at college students, so check before you plan travel.",
   "verified_on_label": "Oct 7, 2026"
+ },
+ {
+  "id": "malibu-harry-barovsky-youth-commission",
+  "name": "Harry Barovsky Memorial Youth Commission",
+  "org": "City of Malibu Community Services Department",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Malibu, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Give the City Council ideas on programs for young people. Plan and run events and activities for youth in Malibu, with help from city staff.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "7 to 12",
+  "who_can_apply": "Students in grades 7 to 12 who live or go to school in Malibu.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. The city pays no one for serving on its commissions.",
+  "season": "school-year",
+  "duration": "2026-2027 appointments end in June 2027",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Members for 2026-2027 were appointed on June 22, 2026. Next application dates are not posted as of Nov 3, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Sign up on the page for email news about the commission. To ask about open seats, call 310-456-2489, ext. 250.",
+  "needs_work_permit": false,
+  "url": "https://www.malibucity.org/YouthCommission",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.malibucity.org/YouthCommission"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 3,
+  "notes": "Meetings are the first Thursday of each month, September to June, at 7 p.m. at Malibu City Hall. The page does not explain how to apply.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "grades": "9 to 12",
@@ -98537,6 +98738,47 @@
   "verified_on_label": "Oct 10, 2026"
  },
  {
+  "id": "selaco-wdb-young-adult-services",
+  "name": "Young Adult Services",
+  "org": "SELACO Workforce Development Board",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Cerritos, CA",
+  "type": "paid-youth-program",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Get help finding a job, plus resume and interview workshops. Some young adults can get paid work experience, help paying for job training, or help with first-semester college costs.",
+  "min_age": 14,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Youth@Work is for ages 14 to 24 who live in LA County and have the right to work in the U.S. Other help is for ages 16 to 24 with a barrier, like low income, foster care, no home, being a parent or a disability.",
+  "paid_type": "mixed",
+  "pay_detail": "Work experience is paid, up to 200 hours. Youth@Work has 140 hours of work experience. The rate is not stated.",
+  "season": "year-round",
+  "duration": "Up to 200 hours of work experience. Youth@Work: 20 hours of training and 140 hours of work.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No program dates are listed as of Nov 3, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Use the Get Started Today form on the page, or call (562) 402-9336 or (800) 481-6555.",
+  "needs_work_permit": true,
+  "url": "https://youngadults.selacowdb.com/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://youngadults.selacowdb.com/",
+   "https://www.selacowdb.com/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 2,
+  "notes": "Call first to check what is running. The page's latest copyright year is 2022, and it does not say if you can join while still in school. Youth@Work gives priority to groups such as foster youth, homeless youth and LGBTQ youth.",
+  "verified_on_label": "Nov 3, 2026",
+  "limited": true
+ },
+ {
   "id": "sf-826-valencia",
   "name": "826 Valencia Youth Programs",
   "org": "826 Valencia",
@@ -100401,6 +100643,46 @@
   "deadline_iso": null,
   "verified_on_label": "Oct 12, 2026",
   "limited": true
+ },
+ {
+  "id": "south-pasadena-library-teen-volunteer-corps",
+  "name": "Teen Volunteer Corps",
+  "org": "South Pasadena Public Library",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "South Pasadena, CA",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "any"
+  ],
+  "what_you_do": "Help the library during the school year and earn service hours. Set up events, prep crafts and organize shelves. Local history, story time and book display projects come up too.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "8 to 12",
+  "who_can_apply": "Teens in grades 8 to 12.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. You earn community service hours.",
+  "season": "school-year",
+  "duration": "At least 20 hours. Times depend on what the library needs.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Applications for the 2026-2027 school year are closed. No reopening date is posted as of Nov 3, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the Teen Volunteer Corps waitlist form. The library emails you the link and dates when it opens.",
+  "needs_work_permit": false,
+  "url": "https://www.southpasadenaca.gov/Your-Government/Department-Service-Areas/Library/Teens",
+  "apply_url": "https://forms.cloud.microsoft/g/1q0KuAkWQa",
+  "sources_fetched": [
+   "https://www.southpasadenaca.gov/Your-Government/Department-Service-Areas/Library/Teens"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 2,
+  "notes": "Questions: call 626-403-7358.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "southwest-conservation-corps-high-school-conservation-crews",
@@ -105041,6 +105323,46 @@
   "priority": 3,
   "notes": "This is a club, not a job. Meets at the Gary K. Clarke Education Center at the zoo, entering through the front admission gate.",
   "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "torrance-youth-council",
+  "name": "Torrance Youth Council",
+  "org": "City of Torrance Community Services Department",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Torrance, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Advise the City Council on youth issues. Members run Holiday Boutiques to raise money, a Beat the Odds scholarship and Youth Forum Day. They also help at city events.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Two members come from each Torrance high school, El Camino College and the California Academy of Math and Science. There are also two at-large members.",
+  "paid_type": "not-stated",
+  "pay_detail": "The page does not mention pay",
+  "season": "school-year",
+  "duration": "New members start in August. The page does not state a term length.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Applications are taken each May. New members start in August. May 2027 dates are not posted as of Nov 3, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Ask staff about the May application. Call (310) 618-2935.",
+  "needs_work_permit": null,
+  "url": "https://www.torranceca.gov/Government/Advisory-Boards-Commissions/Commissions-Boards/Youth-Council",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.torranceca.gov/Government/Advisory-Boards-Commissions/Commissions-Boards/Youth-Council"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 2,
+  "notes": "Meetings are the first and third Wednesday at 7 p.m. at 3031 Torrance Blvd. They are open to the public, so you can visit before you apply.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "torres-congressional-youth-advisory-committee",
@@ -113336,6 +113658,48 @@
   "priority": 2,
   "notes": "The office is at 201 N. Civic Drive, Walnut Creek. Groups can fill out a group workday interest form. Group workdays are three hours long, from Wednesday through Saturday, at sites in Clayton, Concord and Pittsburg. All tools, equipment and instruction are provided. The volunteer page also lists other jobs, such as hike leader and office help. It does not give an age for them.",
   "verified_on_label": "Nov 2, 2026"
+ },
+ {
+  "id": "walnut-youth-advisory-commission",
+  "name": "Youth Advisory Commission",
+  "org": "City of Walnut",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Walnut, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Plan events and give the City Council ideas on policy for the city's teens. The commission meets once a month.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "Walnut residents in grades 9 to 12 with at least a 3.0 GPA. You must be active in at least one activity, like a sports team or service club.",
+  "paid_type": "not-stated",
+  "pay_detail": "The city does not mention pay",
+  "season": "school-year",
+  "duration": "One-year term",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The last notice set a deadline of June 11, 2026. Dates for next year are not posted as of Nov 3, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Get the application from the City Clerk, 21201 La Puente Road, or call 909-348-0710. You turn in the full supplemental packet at one time, in person or by email to tdedios@walnutca.gov.",
+  "needs_work_permit": null,
+  "url": "https://www.walnutca.gov/My-Government/Commissions-and-Committees/Youth-Advisory-Commission",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.walnutca.gov/My-Government/Commissions-and-Committees/Youth-Advisory-Commission",
+   "https://www.walnutca.gov/files/assets/walnut/v/1/city-clerk/commissions/2026-27-yac-notice-for-1-vacancy-posting.pdf"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 3,
+  "notes": "Meetings are the second Monday of each month at 5 p.m. at the Walnut Gymnasium/Teen Center. They are open to the public.",
+  "verified_on_label": "Nov 3, 2026",
+  "limited": true
  },
  {
   "id": "warren-newport-library-student-volunteers-and-tag",
