@@ -562,6 +562,7 @@ cobb-schools-work-based-learning	Cobb County, GA	point	Cobb County, GA	county	co
 cobbworks-boss-young-professionals	Cobb County, GA	point	Cobb County, GA	county	county	
 college-of-alameda-concurrent-enrollment	Alameda, CA	point	Alameda, CA	manual	Census Gazetteer ZCTA 94501 (Alameda, CA) internal point	override: Alameda is an island city and the Gazetteer place point (37.7423, -122.2605) falls in San Francisco Bay water, outside the state outline; ZIP code area 94501 centroid from the Census Gazetteer ZCTA file lies on the island
 college-of-san-mateo-dual-enrollment	San Mateo, CA	point	San Mateo, CA	city	place:city	
+college-of-the-canyons-dual-enrollment	Santa Clarita, CA	point	Santa Clarita, CA	city	place:city	
 college-of-the-desert-free-early-college	Palm Desert, CA	point	Palm Desert, CA	city	place:city	
 college-park-composite-squadron-cap-cadets	College Park, MD (College Park Airport)	point	College Park, MD	city	place:city	
 college-park-greenbelt-youth-advisory-committee	Greenbelt, MD	point	Greenbelt, MD	city	place:city	
@@ -592,6 +593,7 @@ colorado-springs-chiefs-youth-advisory-council	Colorado Springs, CO	point	Colora
 colorado-springs-space-foundation-space-ambassador-volunteer	Colorado Springs, CO	point	Colorado Springs, CO	city	place:city	
 colorado-springs-summer-teen-volunteering	Colorado Springs, CO	point	Colorado Springs, CO	city	place:city	
 colorado-youth-advisory-council-coyac	Statewide, CO	statewide	CO			
+columbia-memorial-space-center-volunteer	Downey, CA	point	Downey, CA	city	place:city	
 columbus-bexley-library-teen-volunteers	Bexley, OH	point	Bexley, OH	city	place:city	
 columbus-cmaf-youth-advisory-council	Columbus, OH	point	Columbus, OH	city	place:city	
 columbus-cscc-college-credit-plus	Columbus, OH	point	Columbus, OH	city	place:city	
@@ -898,6 +900,7 @@ florida-zoo-miami-conservation-teen-scientist	Miami, FL	point	Miami, FL	city	pla
 folsom-trailblazers-n-training	Folsom, CA	point	Folsom, CA	city	place:city	
 foodbank-central-eastern-nc-youth-volunteers	Raleigh and Durham, NC	multi				several places before the state
 foothill-college-high-school-dual-enrollment	Los Altos Hills and Sunnyvale, CA	multi				several places before the state
+foothill-wdb-youth-services	Pasadena, CA	point	Pasadena, CA	city	place:city	
 forage-job-simulations	Virtual	online				
 fort-washington-medical-center-summer-volunteers	Fort Washington, MD	point	Fort Washington, MD	city	place:CDP	
 fountain-valley-memorialcare-orange-coast-volunteer	Fountain Valley, CA	point	Fountain Valley, CA	city	place:city	
@@ -1330,6 +1333,7 @@ long-beach-junior-lifeguards-cadet-program	Long Beach, CA	point	Long Beach, CA	c
 long-beach-parks-recreation-marine-volunteer	Long Beach, CA	point	Long Beach, CA	city	place:city	
 long-beach-parks-recreation-program-leader	Long Beach, CA	point	Long Beach, CA	city	place:city	
 long-beach-public-library-teen-volunteers	Long Beach, CA	point	Long Beach, CA	city	place:city	
+long-beach-space-beach-youth-camp	Long Beach, CA	point	Long Beach, CA	city	place:city	
 long-beach-youth-poet-laureate	Long Beach, CA	point	Long Beach, CA	city	place:city	
 los-alamos-ymca-youth-conservation-corps	Los Alamos and Espanola, NM	multi				several places before the state
 los-altos-community-services-volunteers	Los Altos, CA	point	Los Altos, CA	city	place:city	
@@ -1409,6 +1413,7 @@ madison-wanda-fullmore-youth-internship	Madison, WI	point	Madison, WI	city	place
 madison-wdbscw-wioa-youth	Madison, WI	point	Madison, WI	city	place:city	
 madison-wdbscw-youth-apprenticeship	Madison, WI	point	Madison, WI	city	place:city	
 major-league-hacking	Mostly in-person events; some online	online				
+malibu-harry-barovsky-youth-commission	Malibu, CA	point	Malibu, CA	city	place:city	
 manhattan-ks-k-state-animal-sciences-leadership-academy	Manhattan, KS	point	Manhattan, KS	city	place:city	
 manhattan-ks-k-state-feeding-your-future-camp	Manhattan, KS	point	Manhattan, KS	city	place:city	
 manhattan-ks-k-state-health-professions-exploration-program	Manhattan, KS	point	Manhattan, KS	city	place:city	
@@ -2426,6 +2431,7 @@ seattle-youth-commission	Seattle, WA	point	Seattle, WA	city	place:city
 seattle-youth-employment-program	Seattle, WA	point	Seattle, WA	city	place:city	
 seattle-youth-in-focus-creative-career-cohort	Seattle, WA	point	Seattle, WA	city	place:city	
 seattle-youth-in-focus-job-training-program	Seattle, WA	point	Seattle, WA	city	place:city	
+selaco-wdb-young-adult-services	Cerritos, CA	point	Cerritos, CA	city	place:city	
 sf-826-valencia	San Francisco, CA	point	San Francisco, CA	manual	Census Gazetteer ZCTA 94102 (San Francisco, CA) internal point	override: The Gazetteer place point (37.7272, -123.0322) is about 30 miles out in the Pacific because the city limits include the Farallon Islands, so it falls outside the state outline; ZIP code area 94102 (Civic Center) centroid from the Census Gazetteer ZCTA file is used instead
 sf-breakthrough-sf	San Francisco, CA	point	San Francisco, CA	manual	Census Gazetteer ZCTA 94102 (San Francisco, CA) internal point	override: The Gazetteer place point (37.7272, -123.0322) is about 30 miles out in the Pacific because the city limits include the Farallon Islands, so it falls outside the state outline; ZIP code area 94102 (Civic Center) centroid from the Census Gazetteer ZCTA file is used instead
 sf-calacademy-careers-in-science	San Francisco, CA	point	San Francisco, CA	manual	Census Gazetteer ZCTA 94102 (San Francisco, CA) internal point	override: The Gazetteer place point (37.7272, -123.0322) is about 30 miles out in the Pacific because the city limits include the Farallon Islands, so it falls outside the state outline; ZIP code area 94102 (Civic Center) centroid from the Census Gazetteer ZCTA file is used instead
@@ -2471,6 +2477,7 @@ south-bay-youth-services	Inglewood, CA	point	Inglewood, CA	city	place:city
 south-central-pa-leaf-project-youth-summer-employment	Landisburg, PA	point	Landisburg, PA	city	place:borough	
 south-dakota-4h-state-ambassador-program	Statewide (Brookings, SD)	statewide	SD			
 south-dakota-dlr-wioa-youth-program	Statewide, SD	statewide	SD			
+south-pasadena-library-teen-volunteer-corps	South Pasadena, CA	point	South Pasadena, CA	city	place:city	
 southwest-conservation-corps-high-school-conservation-crews	Four Corners and Los Valles regions, CO	multi				several places before the state
 southwestern-college-dual-concurrent-enrollment	Chula Vista, CA	point	Chula Vista, CA	city	place:city	
 spelman-college-prep-institute	Atlanta, GA	point	Atlanta, GA	city	place:city	
@@ -2585,6 +2592,7 @@ thanksgiving-point-shetech-internship	Lehi, UT	point	Lehi, UT	city	place:city
 the-trade-collective-evanston	Evanston, IL	point	Evanston, IL	city	place:city	
 topeka-shawnee-county-public-library-teen-volunteer	Topeka, KS	point	Topeka, KS	city	place:city	
 topeka-zoo-ecoclub	Topeka, KS	point	Topeka, KS	city	place:city	
+torrance-youth-council	Torrance, CA	point	Torrance, CA	city	place:city	
 torres-congressional-youth-advisory-committee	Chino, Chino Hills, Eastvale, Ontario, Montclair, Pomona, Fontana, Rancho Cucamonga and Upland, CA	multi				several places before the state
 tracy-aviary-individual-volunteer	Salt Lake City, UT	point	Salt Lake City, UT	city	place:city	
 travis-county-syep	Austin, TX	point	Austin, TX	city	place:city	
@@ -2790,6 +2798,7 @@ wakemed-junior-volunteer-program	Raleigh, NC	point	Raleigh, NC	city	place:city
 walnut-creek-lindsay-wildlife-camp-counselor-in-training	Walnut Creek, CA	point	Walnut Creek, CA	city	place:city	
 walnut-creek-lindsay-wildlife-owl-teen-program	Walnut Creek, CA	point	Walnut Creek, CA	city	place:city	
 walnut-creek-save-mount-diablo-volunteer-workdays	Walnut Creek, CA (workdays on Mount Diablo land)	point	Walnut Creek, CA	city	place:city	
+walnut-youth-advisory-commission	Walnut, CA	point	Walnut, CA	city	place:city	
 warren-newport-library-student-volunteers-and-tag	Gurnee, IL (Lake County)	point	Gurnee, IL	city	place:village	
 washington-4h	Statewide, WA	statewide	WA			
 washington-aerospace-scholars	Seattle, WA (online course, then a summer residency at the Museum of Flight)	point	Seattle, WA	city	place:city	

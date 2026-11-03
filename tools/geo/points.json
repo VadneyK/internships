@@ -359,7 +359,8 @@
    "lon": -118.0695,
    "precision": "city",
    "ids": [
-    "cerritos-library-volunteens"
+    "cerritos-library-volunteens",
+    "selaco-wdb-young-adult-services"
    ]
   },
   {
@@ -539,6 +540,16 @@
     "facciotti-lab-hs-internships",
     "uc-davis-summer-pre-college",
     "uc-davis-young-scholars-program"
+   ]
+  },
+  {
+   "key": "Downey, CA",
+   "state": "CA",
+   "lat": 33.9382,
+   "lon": -118.1309,
+   "precision": "city",
+   "ids": [
+    "columbia-memorial-space-center-volunteer"
    ]
   },
   {
@@ -978,6 +989,7 @@
     "long-beach-parks-recreation-marine-volunteer",
     "long-beach-parks-recreation-program-leader",
     "long-beach-public-library-teen-volunteers",
+    "long-beach-space-beach-youth-camp",
     "long-beach-youth-poet-laureate",
     "memorialcare-long-beach-medical-center-volunteen-summer"
    ]
@@ -1074,6 +1086,16 @@
     "ucla-summer-sessions-precollege",
     "usc-summer-programs-pre-college",
     "usc-viterbi-energy-of-stem-summer-camp"
+   ]
+  },
+  {
+   "key": "Malibu, CA",
+   "state": "CA",
+   "lat": 34.0093,
+   "lon": -118.7966,
+   "precision": "city",
+   "ids": [
+    "malibu-harry-barovsky-youth-commission"
    ]
   },
   {
@@ -1423,6 +1445,7 @@
    "ids": [
     "armory-center-for-the-arts-studio-teen-volunteers",
     "caltech-summer-research-connection-pasadena-unified",
+    "foothill-wdb-youth-services",
     "pasadena-city-college-concurrent-dual-enrollment",
     "pasadena-humane-teen-volunteers-15-and-up",
     "pasadena-public-library-the-rose-teen-magazine"
@@ -1975,6 +1998,7 @@
    "lon": -118.5007,
    "precision": "city",
    "ids": [
+    "college-of-the-canyons-dual-enrollment",
     "santa-clarita-public-library-teen-advisory-board"
    ]
   },
@@ -1986,6 +2010,16 @@
    "precision": "city",
    "ids": [
     "west-valley-college-concurrent-enrollment"
+   ]
+  },
+  {
+   "key": "South Pasadena, CA",
+   "state": "CA",
+   "lat": 34.109,
+   "lon": -118.1566,
+   "precision": "city",
+   "ids": [
+    "south-pasadena-library-teen-volunteer-corps"
    ]
   },
   {
@@ -2051,7 +2085,8 @@
    "lon": -118.3566,
    "precision": "city",
    "ids": [
-    "el-camino-college-dual-enrollment"
+    "el-camino-college-dual-enrollment",
+    "torrance-youth-council"
    ]
   },
   {
@@ -2107,7 +2142,8 @@
    "lon": -117.8558,
    "precision": "city",
    "ids": [
-    "mt-san-antonio-college-special-admit"
+    "mt-san-antonio-college-special-admit",
+    "walnut-youth-advisory-commission"
    ]
   },
   {

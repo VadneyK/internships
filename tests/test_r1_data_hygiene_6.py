@@ -76,6 +76,7 @@ ROOT_URL_ALLOW = (
     "baltimore-youthworks-summer-jobs",  # own site for this one program
     "michigan-detroit-grow-detroits-young-talent",  # own site for this one program
     "michigan-hosa-state-association",  # own site for this one state group
+    "selaco-wdb-young-adult-services",  # own site for this one program
     "ucr-stride-stem-cell-research-summer",  # own site for this one program
     "colorado-ffa-association",  # own site for this one state group, added 2026-10-12 for the new state cards
     "georgia-envirothon",  # own site for this one competition, added 2026-10-12 for the new state cards
