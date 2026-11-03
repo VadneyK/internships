@@ -61,7 +61,8 @@ const PAGES = {
   // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 2733500 to 2735000.
   // 2026-11-02: San Francisco re-reads, stacked on PR 135. PENDING PERSON APPROVAL. 2735000 to 2736500.
   // 2026-11-03: 27 new Los Angeles cards (2,904 programs), stacked on PR 139. PENDING PERSON APPROVAL. 2736500 to 2761500.
-  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2761500 },
+  // 2026-11-03: New York City re-reads, with room for the Chicago re-read that follows. PENDING PERSON APPROVAL. 2761500 to 2772000.
+  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2772000 },
   "calendar.html": { allowed: ["calendar.json", "entries-cal.json"], ceiling: 150000 },
   // 2026-10-15: the Map page reads the map projection and the city points (754,977 bytes). PENDING PERSON APPROVAL, as above.
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) map.html limit 760000 to 763100. PENDING PERSON APPROVAL.
@@ -92,7 +93,8 @@ const PAGES = {
   // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 831000 to 831800.
   // 2026-11-03: 27 new Los Angeles cards (2,904 programs), stacked on PR 139. PENDING PERSON APPROVAL. 831800 to 837500.
   // 2026-11-03: Los Angeles cards and Atlanta re-reads, stacked on PR 141. PENDING PERSON APPROVAL. 837500 to 841000.
-  "map.html": { allowed: ["entries-map.json", "map.json"], ceiling: 841000 },
+  // 2026-11-03: New York City re-reads, with room for the Chicago re-read that follows. PENDING PERSON APPROVAL. 841000 to 846000.
+  "map.html": { allowed: ["entries-map.json", "map.json"], ceiling: 846000 },
   // 2026-10-20: the unlisted Ignition page shows the same map, so the same files and ceiling as map.html. Kentaro's instruction 2026-10-20.
   // 2026-10-26: three Inland Empire cards (Corona, Rancho Cucamonga) on top of PRs 98 to 101. PENDING PERSON APPROVAL. 813700 to 814500 (814444 measured).
   // 2026-11-02: 45 new SoCal cards (2,865 programs), stacked on PR 118. PENDING PERSON APPROVAL. 814500 to 827500.
@@ -100,7 +102,8 @@ const PAGES = {
   // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 831000 to 831800.
   // 2026-11-03: 27 new Los Angeles cards (2,904 programs), stacked on PR 139. PENDING PERSON APPROVAL. 831800 to 837500.
   // 2026-11-03: Los Angeles cards and Atlanta re-reads, stacked on PR 141. PENDING PERSON APPROVAL. 837500 to 841000.
-  "ignition.html": { allowed: ["entries-map.json", "map.json"], ceiling: 841000 },
+  // 2026-11-03: New York City re-reads, with room for the Chicago re-read that follows. PENDING PERSON APPROVAL. 841000 to 846000.
+  "ignition.html": { allowed: ["entries-map.json", "map.json"], ceiling: 846000 },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. insights.html ceiling 697700 to 716100.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. insights.html limit 716100 to 736500.
   // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. insights.html limit 736500 to 748900.
@@ -133,7 +136,8 @@ const PAGES = {
   // 2026-11-02: 12 second-pass SoCal cards (2,877 programs), stacked on PR 125. PENDING PERSON APPROVAL. 853500 to 856500.
   // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 856500 to 857000.
   // 2026-11-03: 27 new Los Angeles cards (2,904 programs), stacked on PR 139. PENDING PERSON APPROVAL. 857000 to 865200.
-  "insights.html": { allowed: ["entries-stats.json"], ceiling: 865200 },
+  // 2026-11-03: New York City re-reads, with room for the Chicago re-read that follows. PENDING PERSON APPROVAL. 865200 to 869000.
+  "insights.html": { allowed: ["entries-stats.json"], ceiling: 869000 },
   // younger.html: raised from 336000 to 340000 on 2026-10-11 (r5-younger-1: pet care card and address-safe script added 2.7 KB to younger.json)
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. younger.html ceiling 442000 to 452800.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. younger.html limit 452800 to 465400.
@@ -169,7 +173,8 @@ const PAGES = {
   // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 538500 to 539000.
   // 2026-11-03: 27 new Los Angeles cards (2,904 programs), stacked on PR 139. PENDING PERSON APPROVAL. 539000 to 542000.
   // 2026-11-03: Los Angeles cards and Atlanta re-reads, stacked on PR 141. PENDING PERSON APPROVAL. 542000 to 545000.
-  "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 545000 },
+  // 2026-11-03: New York City re-reads, with room for the Chicago re-read that follows. PENDING PERSON APPROVAL. 545000 to 548000.
+  "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 548000 },
   "interview.html": { allowed: ["interview.json", "permits.json"], ceiling: 95000 },
   // permit.html and states.html: raised from 82000 to 83000 on 2026-10-12 (r2-accuracy-2 and r2-accuracy-8: the 2027 wage lines and the Washington, DC wording; permits.json is 82,370 bytes)
   "permit.html": { allowed: ["permits.json"], ceiling: 83000 },
