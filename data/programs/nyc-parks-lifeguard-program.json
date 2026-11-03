@@ -19,9 +19,9 @@
   "pay_detail": "$22 per hour for lifeguards who finish training and get a post. Lifeguards also get a $908 training payment after the summer season.",
   "season": "summer",
   "duration": "Training course of 16 sessions, then the summer season. Beaches open Memorial Day weekend and outdoor pools open in late June. Both close the Sunday after Labor Day. You work five or six days a week.",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "No test dates are open for registration right now. The page says qualifying tests run from late October through late February in all five boroughs. Sign up on the Parks site to get a notice when dates open.",
+  "deadline_text": "As of Oct 19, 2026, no test dates were open. The page says qualifying tests run from late October through late February in all five boroughs. Sign up on the Parks site to get a notice when dates open.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Register for a qualifying test on the Parks page when dates open (or join the notice list). Pass the swim and vision test, then do the training. A letter from an eye doctor can replace the on-site vision exam.",
@@ -33,8 +33,8 @@
     "https://www.nycgovparks.org/reg/life-guard-test",
     "https://www.nycgovparks.org/opportunities/jobs"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 1,
-  "notes": "The two Parks pages disagree on the swim time. The main page says 50 yards in 50 seconds or less. The test page says 50 yards in 40 seconds or less with proper form. Plan for the faster one. The pages do not say whether a work permit is needed for 16 and 17 year olds."
+  "notes": "The two Parks pages disagree on the swim time. The main page says 50 yards in 50 seconds or less. The test page says 50 yards in 40 seconds or less with proper form. Plan for the faster one. The pages do not say whether a work permit is needed for 16 and 17 year olds. As of Nov 3, 2026, the Parks site blocked automated reading, so confirm these details first."
 }

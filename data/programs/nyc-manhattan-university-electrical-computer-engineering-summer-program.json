@@ -17,7 +17,7 @@
   "grades": "Students currently in 10th or 11th grade (rising juniors and seniors)",
   "who_can_apply": "Students currently enrolled in 10th or 11th grade. Not residential.",
   "paid_type": "fee-based",
-  "pay_detail": "$400 before May 1 and $450 before June 1.",
+  "pay_detail": "$500 before May 1 and $550 before June 1.",
   "season": "summer",
   "duration": "4 days, July 19 to 22, 2027",
   "status": "unconfirmed",
@@ -28,12 +28,12 @@
   "how_to_apply": "Step 1: fill out the Program Registration Form. Step 2: pay with the Program Payment Form. Both are needed to confirm participation. The contact is listed on the page.",
   "needs_work_permit": null,
   "url": "https://manhattan.edu/academics/engineering/high-school-programs#electrical-computer",
-  "apply_url": null,
+  "apply_url": "https://manhattancollege.formstack.com/forms/ece_engineering_summer_program",
   "sources_fetched": [
     "https://manhattan.edu/academics/engineering/high-school-programs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
-  "notes": "Confirm that registration is open before you plan around it. Page pricing is $500 before May 1 and $550 before June 1, which does not match pay_detail; pay_detail needs a human check. The page also lists a free Summer Engineering Awareness Program. It lasts six or ten days."
+  "notes": "Confirm that registration is open before you plan around it. The page also lists a free Summer Engineering Awareness Program. It lasts six or ten days."
 }

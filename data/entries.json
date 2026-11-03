@@ -13169,7 +13169,7 @@
  },
  {
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-03",
   "opens_iso": null,
   "id": "bpl-librarians-of-tomorrow",
   "name": "Librarians of Tomorrow",
@@ -13207,11 +13207,11 @@
   ],
   "priority": 1,
   "notes": "Library teen page lists ages 15-18; the page requires grades 10-12 in NYC. Paid work for people under 18 in New York needs working papers (employment certificate). See permit.html?state=ny for the exact permit and steps.",
-  "verified_on_label": "Oct 18, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-03",
   "opens_iso": null,
   "id": "bpl-storyteen",
   "name": "StoryTeen",
@@ -13235,7 +13235,7 @@
   "season": "school-year",
   "duration": "Nov 2026 to May 2027, 3-5 hours a week, 100 hours total",
   "status": "closed-expect-reopen",
-  "deadline_text": "Applications for 2026-27 were open through October 3, 2026. The page gives no date for the next round.",
+  "deadline_text": "Applications for 2026-27 were open through October 3, 2026. The page says they reopen for 2027-28 in late August.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Fill out the online application. Selected applicants are contacted for an interview. Questions: storyteen@bklynlibrary.org.",
@@ -13248,11 +13248,11 @@
   ],
   "priority": 2,
   "notes": "Funded through the NYC Council's City's First Readers initiative. Paid work for people under 18 in New York needs working papers (employment certificate). See permit.html?state=ny for the exact permit and steps.",
-  "verified_on_label": "Oct 18, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-03",
   "opens_iso": null,
   "id": "bpl-teen-night-out-branch-council",
   "name": "Teen Night Out Branch Council",
@@ -13290,7 +13290,7 @@
   ],
   "priority": 2,
   "notes": "The page does not say which library branches host councils. Paid work for people under 18 in New York needs working papers (employment certificate). See permit.html?state=ny for the exact permit and steps.",
-  "verified_on_label": "Oct 18, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "brea-volunteens",
@@ -27269,7 +27269,7 @@
  },
  {
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "opens_iso": null,
   "id": "cuny-college-now",
   "name": "College Now",
@@ -27304,7 +27304,7 @@
   ],
   "priority": 1,
   "notes": "Graduating seniors cannot join summer sessions. Students in Early College high schools can only join in summer. Costs beyond tuition (like textbooks) are not described on the CUNY page, so ask the campus.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "cupertino-leaders-in-training",
@@ -72475,10 +72475,10 @@
    "https://www.acementorny.org/students/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Teams meet at host firms or universities. The page also links to a Summer Internship Program for alumni, which this card does not cover.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-amnh-science-alliance-high-school",
@@ -72514,10 +72514,10 @@
    "https://www.amnh.org/learn-teach/teens/science-alliance-high-school",
    "https://www.amnh.org/learn-teach/teens"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 2,
-  "notes": "Free tuition goes to a family of 4 with income of $124,240 or less (see the page for other sizes). Taking Science Alliance also counts toward the Museum's SCIP and SRMP rules. Questions: ScienceAlliance@amnh.org.",
+  "notes": "Free tuition goes to a family of 4 with income of $124,240 or less (see the page for other sizes). Taking Science Alliance also counts toward the Museum's SCIP and SRMP rules. Questions: ScienceAlliance@amnh.org. As of Nov 3, 2026, the Museum site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 19, 2026"
  },
  {
@@ -72542,7 +72542,7 @@
   "pay_detail": "$2,000 stipend when you finish the program requirements.",
   "season": "summer",
   "duration": "Six weeks, July 6 to August 14 in 2026, Monday to Friday, 25 hours a week (10 a.m. to 3 p.m. or noon to 5 p.m.).",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "The 2026 deadline was March 1, 2026. 2027 dates are not posted.",
   "deadline_iso": null,
@@ -72555,10 +72555,10 @@
    "https://www.amnh.org/learn-teach/teens/science-communication-internship-program",
    "https://www.amnh.org/learn-teach/teens"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 1,
-  "notes": "The page lists the partner schools and groups by name; check it to see if yours is there. You also join career readiness events and Museum events.",
+  "notes": "The page lists the partner schools and groups by name; check it to see if yours is there. You also join career readiness events and Museum events. As of Nov 3, 2026, the Museum site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 19, 2026"
  },
  {
@@ -72582,7 +72582,7 @@
   "pay_detail": "$2,500 stipend when you finish the research and program requirements. You can also earn 1 CUNY Lehman College credit at no cost.",
   "season": "school-year",
   "duration": "One year, August to June: a 4-week Summer Institute in August, then about 4 hours a week after school (Tuesdays and Thursdays) plus 1 or 2 Fridays a month.",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "The page says applications for the Class of 2028 are expected to open in Winter 2027. Interviews are in April and decisions come by the end of May.",
   "deadline_iso": null,
@@ -72595,10 +72595,10 @@
    "https://www.amnh.org/learn-teach/teens/science-research-mentoring-program",
    "https://www.amnh.org/learn-teach/teens/science-research-mentoring-program/join-srmp"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-16",
   "priority": 1,
-  "notes": "The FAQ says you do not need working papers. SRMP is meant to be your main after-school activity for the year. Join the program's email list on the Join SRMP page to hear when the application opens. Questions: srmp@amnh.org.",
+  "notes": "The FAQ says you do not need working papers. SRMP is meant to be your main after-school activity for the year. Join the program's email list on the Join SRMP page to hear when the application opens. Questions: srmp@amnh.org. As of Nov 3, 2026, the Museum site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 16, 2026",
   "limited": true
  },
@@ -72636,10 +72636,10 @@
    "https://www.apollotheater.org/education/arts-administration-internship"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "notes": "The FAQ says accepted interns under 18 must give the Apollo a copy of their New York State working papers before orientation. Ask your school guidance counselor how to get working papers. The Apollo also runs a paid technical theater internship in the summer. The page text about length is not the same in two places. Confirm with the Apollo.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -72678,10 +72678,10 @@
    "https://www.apollotheater.org/education/arts-administration-internship"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "notes": "The Apollo Arts Administration internship page says interns under 18 must show New York State working papers. This technical internship page does not say so. Expect to need them for a paid job.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -72709,7 +72709,7 @@
   "duration": "9 months, March to November 2027 (about 4 to 6 hours a week in spring and fall, 20 to 25 hours a week in summer; about 190 to 220 hours total).",
   "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "The page gives no opening date for 2027 applications. It asks visitors to sign up to be notified when applications open, and it shows an Apply Now button. Submit materials before Dec 4, 2026 to be invited to an interview. No final deadline is posted. Info session Sat Oct 17, 2026, 11 a.m. to 1 p.m., RSVP required.",
+  "deadline_text": "Applications are due by midnight on Dec 4, 2026. Submit before then to be invited to an interview. The page gives no opening date. It asks visitors to sign up to be notified when applications open, and it shows an Apply Now button.",
   "deadline_iso": "2026-12-04",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Apply online (an account lets you save your progress). You write short answers and give references, then join a group interview. Apprentices must reapply every year. Two references use a separate online reference form.",
@@ -72722,8 +72722,8 @@
   "priority": 1,
   "notes": "Tiers 1 to 3 are not employees. Tier 4 apprentices must be legally authorized to work and eligible under NYC Department of Labor rules, per the page. Partial participation is not allowed. Questions: gap@bbg.org (shown on the page) or 718-623-7252.",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on": "2026-11-03",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-bronx-community-college-upward-bound-math-science",
@@ -72763,10 +72763,10 @@
    "https://www.bcc.cuny.edu/academics/student-success-programs/upward-bound-math-science-department/program-overview/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "The page says low-income means family taxable income at or below 150 percent of the poverty level. Two thirds of participants must be both low-income and first generation. One third must be one or the other. After-school tutoring runs 4:30 to 7 PM on weekdays when the host school does not offer it.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-bronx-museum-teen-council",
@@ -72803,10 +72803,10 @@
    "https://bronxmuseum.org/event/teen-council-fall26/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "notes": "The fall 2026 application form is closed, so no apply link is listed here. Check the Teen Programs page for the next one. The museum is under renovation but stays open Wednesday to Sunday, 11 AM to 6 PM, at 1040 Grand Concourse. The pages do not say whether a work permit is needed.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-brooklyn-bam-brooklyn-interns-for-arts-and-culture",
@@ -72844,10 +72844,10 @@
    "https://www.bam.org/education"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "notes": "Only 13 spots. After the program, BAM Education alumni ages 18 to 24 can join a separate paid Creative Career Collective (virtual, Oct to Dec). Pay amount and work-permit rules are not on the page.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-brooklyn-borough-president-youth-advisory-council",
@@ -72884,10 +72884,10 @@
    "https://www.brooklynbp.nyc.gov/youth-advisory-council/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "The council is run with the Brooklyn North and Brooklyn South high school superintendents and Sadie Nash Leadership Project. The page does not say whether members are paid or where teens must live, so ask the office.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-brooklyn-bric-teen-filmmaking-bootcamp",
@@ -72912,7 +72912,7 @@
   "duration": "8 sessions, 16 hours. Fall 2026: Tuesdays Oct 13 to Dec 8, 4 to 6 p.m.",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Fall 2026 (Cycle 9) applications closed Sept 27, 2026. New cycles open through the year.",
+  "deadline_text": "Fall 2026 (Cycle 9) applications closed Sept 27, 2026. The next cycle is not posted.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Fill out the online application linked on the class page. Attending every class is required to get the stipend.",
@@ -72924,10 +72924,10 @@
    "https://bricartsmedia.org/art-artists/opportunity/youth-opportunities/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "notes": "The class page says students under 18 need working papers from their school. Finishing the program makes you eligible for other paid BRIC work, per the page. The page says eight sessions but lists nine Tuesdays, and gives Dec 9 in one place and Dec 8 in another, so confirm the last date.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -72966,10 +72966,10 @@
    "https://bricartsmedia.org/art-artists/opportunity/bric-youth-media-fellowship/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "notes": "Pay is called a stipend on the page. Working papers are not mentioned for the fellowships, but BRIC requires them for its bootcamps for under 18, so ask. BRIC also accepts youth under 21 for its film festival.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-brooklyn-bric-teen-photography-bootcamp",
@@ -72987,14 +72987,14 @@
   "min_age": 14,
   "max_age": 18,
   "grades": "High school",
-  "who_can_apply": "Teens ages 14 to 18. Beginners are welcome. You must attend every session; if you miss the first day your spot goes to the waitlist.",
+  "who_can_apply": "Teens ages 14 to 18 who live in Brooklyn. Beginners are welcome. You must attend every session; if you miss the first day your spot goes to the waitlist.",
   "paid_type": "stipend",
   "pay_detail": "Free class with a $200 stipend if you attend every session.",
   "season": "fall",
   "duration": "8 sessions, 16 hours. Fall 2026: Mondays Oct 5 to Nov 30, 4 to 6 p.m. (no class Oct 12). Exhibition Thu, Dec 10, 5 to 7 p.m.",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Cycle 4 applications closed Sept 27, 2026. New cycles open through the year.",
+  "deadline_text": "Cycle 4 applications closed Sept 27, 2026. The next cycle is not posted.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Fill out the online application linked on the class page.",
@@ -73006,10 +73006,11 @@
    "https://bricartsmedia.org/art-artists/opportunity/youth-opportunities/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "The class page says students under 18 need working papers from their school. Class is at Clarendon Library in Brooklyn, not at BRIC House. The page text says Mondays but its class-times list shows Thursdays (Oct 8 to Nov 26), so confirm the weekday.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026",
+  "limited": true
  },
  {
   "id": "nyc-brooklyn-bridge-park-green-team-coastal-cleanup",
@@ -73046,10 +73047,10 @@
    "https://brooklynbridgepark.org/support/volunteer/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "notes": "The page lists no deadline and no 2027 dates. Most volunteer events run April to October.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-brooklyn-cbh-summer-scholars-internship",
@@ -73072,13 +73073,13 @@
   "paid_type": "not-stated",
   "pay_detail": "Pay is not stated on the page. Ask CBH Education whether there is a stipend.",
   "season": "summer",
-  "duration": "Summer. The 2026 program had a final reception; exact weeks and hours are not stated.",
-  "status": "closed-expect-reopen",
-  "opens_iso": null,
-  "deadline_text": "The page says applications for the 2026 program are closed. The 2027 dates are not posted.",
-  "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "The page does not give steps. It says the 2026 application is closed. Questions: CBHEducation@bklynlibrary.org.",
+  "duration": "July 13 to Aug 5, 2027, Tuesdays to Thursdays, 11 a.m. to 4 p.m.",
+  "status": "opens-soon",
+  "opens_iso": "2027-02-08",
+  "deadline_text": "Applications for summer 2027 open Feb 8, 2027 and close Apr 2, 2027. Virtual interviews are Apr 12 to 21, 2027. Selected applicants hear back the week of May 3, 2027.",
+  "deadline_iso": "2027-04-02",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "The page does not give steps or a form yet. Check it when applications open on Feb 8, 2027. Questions: CBHEducation@bklynlibrary.org.",
   "needs_work_permit": null,
   "url": "https://www.bklynlibrary.org/cbh/education/cbh-teen-internships",
   "apply_url": null,
@@ -73086,10 +73087,10 @@
    "https://www.bklynlibrary.org/cbh/education/cbh-teen-internships"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-03",
   "priority": 2,
-  "notes": "Confirm first: pay, exact dates and application steps are not on the page. The page showed the 2026 application as closed. Ask CBH Education whether it is paid.",
-  "verified_on_label": "Oct 18, 2026",
+  "notes": "Confirm first: pay and application steps are not on the page. Ask CBH Education whether it is paid.",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -73128,10 +73129,10 @@
    "https://www.groundswell.nyc/youth"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "The page described the 2025-26 school year, so check the page for the 2026-27 session. Classes are at the Gowanus studio, in person.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-brooklyn-groundswell-summer-leadership-institute",
@@ -73169,10 +73170,10 @@
    "https://www.groundswell.nyc/programs/studioprograms"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "notes": "Confirm first. The page does not list ages, pay amount or how to apply. It says murals are made throughout New York City, and one project title mentions Queensbridge House.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-brooklyn-maimonides-health-scholars-ed-internship",
@@ -73209,10 +73210,10 @@
    "https://maimo.org/careers-and-volunteers/volunteer/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "notes": "Unpaid, so no work permit. Students under 18 may only volunteer 9 a.m. to 5 p.m. Monday to Friday, per the page. Check the page for the year of each deadline.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-brooklyn-maimonides-high-school-volunteer",
@@ -73250,10 +73251,10 @@
    "https://maimo.org/careers-and-volunteers/volunteer/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Students under 18 may not volunteer outside 9 a.m. to 5 p.m., Monday to Friday. The page says volunteering does not lead to a paid job at Maimonides. Some programs (Feeders, Summer Youth) go through partner schools.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-brooklyn-maimonides-science-scholars",
@@ -73291,10 +73292,10 @@
    "https://maimo.org/careers-and-volunteers/volunteer/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Formerly named Women in Science. Led by the Chief of Colon and Rectal Surgery. Incomplete applications are not looked at. Accepted students also go through the hospital volunteer process. Ask whether it is paid.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -73470,34 +73471,34 @@
   "fields": [
    "arts-media"
   ],
-  "what_you_do": "Take two college classes in art, design, architecture or writing for four weeks, build a portfolio and earn 4 college credits. Live on campus and show your work in an exhibition.",
+  "what_you_do": "Take two college classes in art, design, buildings or writing for four weeks. Build a portfolio and earn 4 college credits. Live on campus or commute, and show your work.",
   "min_age": 15,
   "max_age": 18,
   "grades": null,
   "who_can_apply": "High school students who will be between 15.5 and 18 years old. U.S. citizens, permanent residents, or international students with a valid F-1 visa. All experience levels are welcome.",
   "paid_type": "fee-based",
-  "pay_detail": "Costs money. The tuition amount was not on the program pages. Budget $300 to $500 more for art supplies, plus metro fare. Need-based scholarships cover tuition, program fees, housing and meal plan.",
+  "pay_detail": "Costs money. 2027 cost: $8,391 to live on campus (with housing and meal plan) or $5,651 to commute, plus a $65 application fee. These may change. Budget $300 to $500 more for art supplies, plus metro fare. Need-based scholarships cover tuition, program fees, housing and meal plan.",
   "season": "summer",
   "duration": "4 weeks, 4 college credits. 2027 dates: check-in Tue, July 6; classes July 8 to July 30; exhibition and move out Sat, July 31.",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Not open yet: applications for Summer 2027 open in November 2026 (the page gives no day). Scholarship application deadline Feb 1, 2027. International student deadline Apr 1, 2027. Payment due May 31, 2027. The main application deadline is not stated.",
+  "deadline_text": "Applications for Summer 2027 open in November 2026 (the page gives no day). Scholarship application deadline Feb 1, 2027. International student deadline Apr 1, 2027. Payment due May 31, 2027. The main application deadline is not stated.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Apply online through the Pratt PreCollege form. It opens in November. Students are billed in mid-April and payment is due right away. Scholarship forms are separate. Email: precollege@pratt.edu (listed on the page).",
   "needs_work_permit": false,
   "url": "https://www.pratt.edu/continuing-and-professional-studies/precollege/summer-precollege/",
-  "apply_url": null,
+  "apply_url": "https://eforms.pratt.edu/lincdoc/doc/run/pratt/SCPS_SummerPreCollegeReg2",
   "sources_fetched": [
    "https://www.pratt.edu/continuing-and-professional-studies/precollege/summer-precollege/",
    "https://www.pratt.edu/continuing-and-professional-studies/precollege/",
    "https://www.pratt.edu/continuing-and-professional-studies/precollege/faq/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Scholarships go to students with strong art work and big money need. The FAQ says winners usually come from homes with income of $60,000 or less. Pratt also has shorter options. They include an Explore program, an online summer program, Saturday classes and one-day workshops.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-brooklyn-prospect-park-alliance-teen-service-series",
@@ -73535,16 +73536,16 @@
    "https://www.prospectpark.org/get-involved/volunteer/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Unpaid volunteering, so no work permit. Some events have age limits, so check the age on each event. The Junior Volunteer Corps is for youth groups with children ages 4 to 13.",
-  "verified_on_label": "Oct 19, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-03",
   "grades": "Current grades 9 to 12",
   "max_age": null,
   "min_age": null,
@@ -73563,7 +73564,7 @@
    "tech-cs"
   ],
   "what_you_do": "In teams, find a problem in daily life, build a business idea around it and pitch it at the end. You learn customer research, marketing, money basics and product building.",
-  "who_can_apply": "Girls and nonbinary students in grades 9 to 12 (rising seniors OK) who live in the New York tri-state area and can commute to campus. Current 8th graders should apply the next year.",
+  "who_can_apply": "Girls and nonbinary students in grades 9 to 12 who live in the New York tri-state area and can commute to campus. 12th graders finishing school that summer are OK. Current 8th graders should apply the next year.",
   "paid_type": "unpaid",
   "pay_detail": "Free (sponsored by Standard Chartered Bank). No pay; it is an enrichment program, not an internship.",
   "season": "summer",
@@ -73578,7 +73579,7 @@
   "sources_fetched": [
    "https://www.ccny.cuny.edu/zahn/bossgirls"
   ],
-  "verified_on_label": "Oct 19, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -73615,10 +73616,10 @@
    "https://centralparknyc.org/volunteer/teen-volunteer-days"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "notes": "No one can join without the waiver. Check the page often, because sessions fill up.",
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-columbia-pre-college-nyc-commuter-summer",
@@ -73645,7 +73646,7 @@
   "deadline_text": "Summer 2027 applications open mid-November 2026. Early registration deadline Feb 1, 2027. General application deadline Apr 1, 2027 for the NYC Commuter sessions.",
   "deadline_iso": "2027-04-01",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Online application. Columbia says applications are reviewed on the dates-and-deadlines schedule; early registration is cheaper to plan around.",
+  "how_to_apply": "Online application. Columbia says to act early for the best choice of classes.",
   "needs_work_permit": false,
   "url": "https://precollege.sps.columbia.edu/programs/summer-programs/nyc-commuter-summer",
   "apply_url": null,
@@ -73656,11 +73657,11 @@
    "https://precollege.sps.columbia.edu/admissions/program-costs/pre-college-programs-cost-and-fees"
   ],
   "priority": 3,
-  "notes": "Expensive; the page says financial aid details are elsewhere and they were not read. The commuter page still shows a $95 application fee under a Summer 2026 cost heading while the cost page for Summer 2027 says $80. Free Columbia programs for NYC teens (Double Discovery Center, Freedom and Citizenship) exist but their pages blocked access, so they are not listed.",
+  "notes": "Expensive; the page says financial aid details are elsewhere and they were not read. The commuter page still shows a $95 application fee under a Summer 2026 cost heading while the cost page for Summer 2027 says $95 in one place and $80 in another. Free Columbia programs for NYC teens (Double Discovery Center, Freedom and Citizenship) exist but their pages blocked access, so they are not listed.",
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
-  "verified_on_label": "Oct 10, 2026",
+  "verified_on": "2026-11-03",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -73698,10 +73699,10 @@
    "https://www.cooperhewitt.org/design-hive/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-26",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "notes": "Meets at 2 East 91st Street and some offsite places. The page says the demographic and citizenship questions are optional and not tied to your application. The page does not say whether a work permit is needed. Cooper Hewitt also runs free monthly Teen Drop-In workshops and a Design Career Fair.",
-  "verified_on_label": "Oct 26, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-cooper-union-saturday-program",
@@ -73719,7 +73720,7 @@
   "min_age": null,
   "max_age": null,
   "grades": "9 to 12",
-  "who_can_apply": "New York City public or charter high school students in grades 9 to 12. The page says students meet a mix of these: attend a school without a full visual arts program, qualify for free school meals, or come from a low or moderate income household. No art experience needed.",
+  "who_can_apply": "New York City public or charter high school students in grades 9 to 12. The page says students meet a mix of these: attend a school without a full visual arts program, get free school meals or public aid, or come from a low or moderate income home. No art experience needed.",
   "paid_type": "unpaid",
   "pay_detail": "Free to students. The FAQ says round-trip MetroCards are handed out each Saturday on request. This is a class, not a job.",
   "season": "school-year",
@@ -73739,10 +73740,10 @@
    "https://cooper.edu/academics/outreach-and-pre-college/saturday-program/FAQs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "notes": "Classes are at the Foundation Building, 7 E 7th Street, and 41 Cooper Square. The FAQ page still shows the 2024-2025 year in places, so trust the main page for current dates. There is a year-end show for families.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-cooper-union-summer-art-intensive",
@@ -73762,27 +73763,27 @@
   "grades": "Rising sophomores to rising seniors",
   "who_can_apply": "Ages 15 to 18. You are a rising sophomore to rising senior or the same level.",
   "paid_type": "fee-based",
-  "pay_detail": "2026 tuition was $4,350 to $4,500 depending on the course, including a $270 non-refundable registration fee, art materials and field trips. The Gural Merit Scholarship for NYC Public School Students covers full tuition.",
+  "pay_detail": "2027 tuition is $4,350 to $4,500 depending on the course, including a $270 non-refundable registration fee, art materials and field trips. The Gural Merit Scholarship for NYC Public School Students covers full tuition.",
   "season": "summer",
-  "duration": "Four weeks, Monday to Thursday 9:30 AM to 4:30 PM. The 2026 program ran July 13 to Aug 6, 2026. No housing, meals or college credit.",
+  "duration": "Four weeks, Monday to Thursday 9:30 AM to 4:30 PM. The 2027 program runs July 12 to Aug 5, 2027. No housing, meals or college credit.",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "2026 dates were: scholarship applications due Apr 12, 2026 and open enrollment due Jul 5, 2026. The 2027 dates are not posted; join the mailing list on the page.",
+  "deadline_text": "Registration and scholarship applications will open soon; no opening date is posted. Scholarship applications are due Apr 11, 2027. Open enrollment is due Jul 5, 2027. Join the mailing list on the page.",
   "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Fill out the registration form and pay tuition to enroll. The page also links a scholarship section for the Jeffery and Paul Gural Merit Scholarship for NYC Public School Students. Questions: the program email is on the page.",
   "needs_work_permit": null,
   "url": "https://cooper.edu/academics/outreach-and-pre-college/summer-art-intensive",
-  "apply_url": null,
+  "apply_url": "https://connect.cooper.edu/portal/cusai_apply",
   "sources_fetched": [
    "https://cooper.edu/academics/outreach-and-pre-college/summer-art-intensive",
    "https://cooper.edu/academics/outreach-and-pre-college/summer-art-intensive/courses"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
-  "notes": "This is a commuter program on campus. The page does not give housing or college credit. The page lists the 2026 year; check the mailing list for the 2027 price.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "This is a commuter program on campus. The page does not give housing or college credit.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-cooper-union-summer-stem",
@@ -73803,7 +73804,7 @@
   "grades": "Completed grade 9, 10 or 11",
   "who_can_apply": "Current high school students who have finished 9th, 10th or 11th grade. Rising 9th graders are not eligible. Open to students from anywhere, but New York City students get priority for financial aid. Some courses need strong math or chemistry grades.",
   "paid_type": "fee-based",
-  "pay_detail": "2026 cost was $3,150 per course. Financial aid is available to those who qualify. No housing is provided.",
+  "pay_detail": "2026 cost was $3,150 for a 3-week course and $5,150 for a 6-week course. Financial aid is available to those who qualify. No housing is provided.",
   "season": "summer",
   "duration": "3 or 6 weeks, Monday to Thursday 9 AM to 3 PM. The 2026 program ran July 6 to Aug 13, 2026.",
   "status": "opens-soon",
@@ -73819,10 +73820,10 @@
    "https://cooper.edu/engineering/summer-stem"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Classes are in person at 41 Cooper Square. The page lists 2026 prices: $3,150 for a 3-week course and $5,150 for a 6-week course. Check the 2027 numbers when applications open.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-cornell-tech-summer-innovation-intensives",
@@ -73842,16 +73843,16 @@
   "min_age": 15,
   "max_age": 19,
   "grades": "Finished sophomore year of high school or later",
-  "who_can_apply": "Ages 15 to 19 who completed 10th grade by the program start, live in the NYC area (or arrange a supervising adult and housing), and are U.S. citizens or permanent residents at U.S. curriculum schools. No interview or minimum GPA.",
+  "who_can_apply": "Ages 15 to 19 who finished 10th grade by the start date and live in the NYC area. If you live far away, you need a supervising adult and housing. If you live abroad, you must be a U.S. citizen at a school with an American, Canadian or British curriculum. No interview or minimum GPA.",
   "paid_type": "fee-based",
-  "pay_detail": "Cost not stated on the program page (students earn 2 Cornell credits). Ask summer@tech.cornell.edu before applying.",
+  "pay_detail": "Tuition $5,750 (students earn 2 Cornell credits). Program fee $1,000, waived if you pay the $500 deposit by Mar 12, 2027. The deposit is non-refundable and counts toward tuition.",
   "season": "summer",
-  "duration": "3 weeks, commuter only (no housing). Exact 2027 dates are not stated on the program page.",
+  "duration": "3 weeks, commuter only (no housing). July 19 to Aug 5, 2027, Monday to Thursday 9 AM to 4:30 PM. Orientation is July 15, 2027.",
   "status": "closed-expect-reopen",
   "deadline_text": "The summer 2027 application will open in winter 2026. The summer 2026 application is closed. No deadline posted. Rolling review.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Online application with transcript, two recommendation letters and short essays (250 to 300 words each). Contact: summer@tech.cornell.edu.",
+  "how_to_apply": "Online application with transcript, two recommendation letters, a resume and two short essays (250 to 300 words each). Contact: summer@tech.cornell.edu.",
   "needs_work_permit": false,
   "url": "https://tech.cornell.edu/programs/summer-innovation-intensives/",
   "apply_url": null,
@@ -73860,11 +73861,11 @@
    "https://tech.cornell.edu/events/summer-innovation-intensives-open-house/"
   ],
   "priority": 3,
-  "notes": "Cost is not stated on the page, so confirm the price and any financial aid with the program before applying. Selective. International students are not admitted at this time.",
+  "notes": "The page does not mention financial aid, so ask the program before applying. Selective.",
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on": "2026-11-03",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -73902,10 +73903,10 @@
    "https://ny.covenanthouse.org/programs/support-services/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "This is a support program for teens who are on their own, not a typical job. The details of CovWorks (length, pay, who qualifies) are not on the program pages, so ask staff. If you are in danger right now, call 911.",
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-dycd-advance-and-earn",
@@ -73942,15 +73943,15 @@
    "https://www.nyc.gov/site/dycd/services/jobs-internships.page"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "notes": "The page lists these training areas: Healthcare, Construction, Transportation and Culinary Arts. It also lists Digital Marketing. Direct Service Professionals is listed too. The page does not mention a work permit. It does say you must be allowed to work in the United States.",
-  "verified_on_label": "Oct 19, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-03",
   "opens_iso": null,
   "id": "nyc-dycd-ladders-for-leaders",
   "name": "Ladders for Leaders",
@@ -73989,11 +73990,11 @@
   ],
   "priority": 2,
   "notes": "Competitive. Eligibility, pay and process come from the 2025 FAQ because no newer FAQ was found, so check the DYCD page when applications reopen. Interns under 18 need NYS working papers (NYS Department of Labor). Free to apply.",
-  "verified_on_label": "Oct 19, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-03",
   "opens_iso": null,
   "id": "nyc-dycd-learn-and-earn",
   "name": "Learn & Earn",
@@ -74030,7 +74031,7 @@
   ],
   "priority": 2,
   "notes": "Income-based, with extra eligibility rules listed on the page. Teens under 18 need NYS working papers (NYS Department of Labor). See permit.html?state=ny for the exact permit and steps.",
-  "verified_on_label": "Oct 19, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -74067,14 +74068,14 @@
    "https://www.nyc.gov/site/dycd/services/runaway-homeless-youth.page"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "This is a safety and housing service, not a job. If you are in danger right now, call 911. The Door and Covenant House (other cards) also take walk-ins.",
-  "verified_on_label": "Oct 19, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-03",
   "opens_iso": null,
   "id": "nyc-dycd-summer-youth-employment-program",
   "name": "Summer Youth Employment Program (SYEP)",
@@ -74117,7 +74118,7 @@
   ],
   "priority": 1,
   "notes": "Pay and hours above are the 2026 numbers and may change. Free to apply. NYS Department of Labor says anyone 14-17 needs working papers (employment certificate) to hold a job in New York State; ask your SYEP provider what they need from you. Teens in school-based (CareerReady) options apply through their school. You pay your own transportation and meals. Henry Street Settlement is one SYEP group. Its lottery takes ages 16 to 24. Teens in NYCHA's Baruch or Wald Houses, in shelters, or in foster care can apply first come, first served.",
-  "verified_on_label": "Oct 19, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -74155,15 +74156,15 @@
    "https://www.nyc.gov/site/dycd/services/jobs-internships.page"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "notes": "The page says the program is for ages 16 to 24 who are not in school and not working. Target industries are Infrastructure, Healthcare, Technology, Media and Government. The page does not state the pay rate, the program length or whether a work permit is needed.",
-  "verified_on_label": "Oct 19, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-03",
   "opens_iso": null,
   "id": "nyc-dycd-work-learn-grow",
   "name": "Work, Learn & Grow (WLG)",
@@ -74184,7 +74185,7 @@
   "paid_type": "paid",
   "pay_detail": "New York State minimum wage, paid every two weeks (DYCD FAQ).",
   "season": "school-year",
-  "duration": "22-week program. The page does not state start or end dates.",
+  "duration": "22-week program, Oct 26, 2026 to Apr 3, 2027 (DYCD FAQ).",
   "status": "closed-expect-reopen",
   "deadline_text": "The WLG application page says the deadline was October 9, 2026, and that date has passed. The program page posts no opening date for a future window as of Oct 10, 2026.",
   "deadline_iso": null,
@@ -74201,7 +74202,7 @@
   ],
   "priority": 3,
   "notes": "Only for teens who were in 2026 SYEP through a partner school or Special Initiatives provider, so most teens cannot start here. Internet access is required. The application deadline has passed. Teens under 18 need NYS working papers (NYS Department of Labor).",
-  "verified_on_label": "Oct 19, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -74239,10 +74240,10 @@
    "https://www.nyc.gov/site/acs/youth/jobs.page"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Also open to younger kids. Support, not a paid job. Ask your coach about paid internships.",
-  "verified_on_label": "Oct 19, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-futures-and-options-internship-program",
@@ -74280,10 +74281,10 @@
    "https://futuresandoptions.org/our-programs/career-essentials/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "notes": "Pay rate, season and length are not on the page, so confirm first. Futures and Options is based in Manhattan but serves NYC students from every borough. It also runs Career Essentials workshops (the fall application closed Oct 7, 2026).",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-futures-and-options-urban-leadership-fellows",
@@ -74320,10 +74321,10 @@
    "https://futuresandoptions.org/our-programs/urban-leadership-fellows-program/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "The page says 930 students have been ULF interns since 1996 and alumni have received $1.7 million in scholarships. Rate and dates are not stated.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-genesys-works-new-york-city",
@@ -74352,7 +74353,7 @@
   "deadline_text": "Students apply in the fall or winter of junior year and finish the process in the spring. No 2026-27 dates are posted on the program pages.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Use the Apply Now button on the Genesys Works site and pick New York. If accepted you get an email to interview for a spot in summer training. You provide your own transportation to training and to the internship.",
+  "how_to_apply": "As of Nov 3, 2026, the apply page lists only Nashville. Email info.nyc@genesysworks.org to ask how to apply for New York. If accepted you get an email to interview for a spot in summer training. You provide your own transportation to training and to the internship.",
   "needs_work_permit": null,
   "url": "https://genesysworks.org/for-students-and-families/",
   "apply_url": null,
@@ -74362,10 +74363,10 @@
    "https://genesysworks.org/for-students-and-families/application-process/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
-  "notes": "The page says Genesys Works works with set schools, so ask your counselor if your school is a partner. The direct New York link on the location page gave a not-found error. Use the main Apply Now button or email info.nyc@genesysworks.org. Many schools give credit for the training and internship.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "The page says Genesys Works works with set schools, so ask your counselor if your school is a partner. The direct New York link on the location page gave a not-found error. Many schools give credit for the training and internship.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-jewish-museum-teen-intern-program",
@@ -74401,10 +74402,10 @@
    "https://thejewishmuseum.org/program/teen-intern-program-010526/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Because there is a stipend, ask the museum about working papers for under 18. The page does not say. Check the museum site for the next call.",
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-john-jay-upward-bound",
@@ -74441,10 +74442,10 @@
    "https://www.jjay.cuny.edu/academics/undergraduate-programs/academic-success-programs/high-school-students/upward-bound/eligibility-and-selection"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "This is a federal TRIO program that gets funding from the U.S. Department of Education. The pages do not say how many students are accepted or which schools it serves. Ask the program before you plan around the summer dates.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-manhattan-university-chemical-engineering-summer-program",
@@ -74465,7 +74466,7 @@
   "grades": "Students currently in 10th or 11th grade (rising juniors and seniors)",
   "who_can_apply": "Students currently enrolled in 10th or 11th grade. Not residential.",
   "paid_type": "fee-based",
-  "pay_detail": "$500 if you register before June 1 and $550 before July 1 (the page shows 2026 prices). The fee includes a light breakfast each day and a T-shirt. Finishers get a certificate and a $75 application fee waiver for the chemical engineering degree.",
+  "pay_detail": "$500 if you register before June 1 and $550 before July 1. The fee includes a light breakfast each day and a T-shirt. Finishers get a certificate and a $75 application fee waiver for the chemical engineering degree.",
   "season": "summer",
   "duration": "4 days, July 19 to 22, 2027, 9 AM to 3 PM each day",
   "status": "unconfirmed",
@@ -74476,15 +74477,15 @@
   "how_to_apply": "Step 1: fill out the Program Registration Form. Step 2: pay with the Program Payment Form. Both steps are needed to confirm a spot. The contact is listed on the page.",
   "needs_work_permit": null,
   "url": "https://manhattan.edu/academics/engineering/high-school-programs#chemical",
-  "apply_url": null,
+  "apply_url": "https://manhattancollege.formstack.com/forms/chemical_engineering_summer_program",
   "sources_fetched": [
    "https://manhattan.edu/academics/engineering/high-school-programs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
-  "notes": "The page says to register early because the program has hit its limit in past years. Confirm that registration is open before you plan around it. The prices on the page are the 2026 prices.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "The page says to register early because the program has hit its limit in past years. Confirm that registration is open before you plan around it.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-manhattan-university-electrical-computer-engineering-summer-program",
@@ -74505,7 +74506,7 @@
   "grades": "Students currently in 10th or 11th grade (rising juniors and seniors)",
   "who_can_apply": "Students currently enrolled in 10th or 11th grade. Not residential.",
   "paid_type": "fee-based",
-  "pay_detail": "$400 before May 1 and $450 before June 1.",
+  "pay_detail": "$500 before May 1 and $550 before June 1.",
   "season": "summer",
   "duration": "4 days, July 19 to 22, 2027",
   "status": "unconfirmed",
@@ -74516,15 +74517,15 @@
   "how_to_apply": "Step 1: fill out the Program Registration Form. Step 2: pay with the Program Payment Form. Both are needed to confirm participation. The contact is listed on the page.",
   "needs_work_permit": null,
   "url": "https://manhattan.edu/academics/engineering/high-school-programs#electrical-computer",
-  "apply_url": null,
+  "apply_url": "https://manhattancollege.formstack.com/forms/ece_engineering_summer_program",
   "sources_fetched": [
    "https://manhattan.edu/academics/engineering/high-school-programs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
-  "notes": "Confirm that registration is open before you plan around it. Page pricing is $500 before May 1 and $550 before June 1, which does not match pay_detail; pay_detail needs a human check. The page also lists a free Summer Engineering Awareness Program. It lasts six or ten days.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "Confirm that registration is open before you plan around it. The page also lists a free Summer Engineering Awareness Program. It lasts six or ten days.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-manhattan-university-mechanical-engineering-summer-institute",
@@ -74560,10 +74561,10 @@
    "https://manhattan.edu/academics/engineering/high-school-programs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "notes": "Contact details are on the page. The registration and payment forms are separate, and both are needed. The form link uses the old Manhattan College name. The form page did not load as text, so confirm it is open before you plan around it.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-manhattan-university-omalley-business-pre-college",
@@ -74599,10 +74600,10 @@
    "https://manhattan.edu/academics/business/programs/pre-college"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "notes": "Manhattan University is in Riverdale in the Bronx. Check the page for 2027 prices and dates.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-manhattan-university-residential-summer-engineering",
@@ -74638,10 +74639,10 @@
    "https://manhattan.edu/academics/engineering/high-school-programs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "notes": "Parents can come to the closing ceremony and final project contest. Other short summer engineering programs on the same page cost less or are free.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-manhattan-university-summer-engineering-awareness-program",
@@ -74670,18 +74671,18 @@
   "deadline_text": "No application deadline is posted on the page. The listed session dates are for 2027.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "The page gives no application form. It says to complete the registration form, and the page lists the program director, Dr. Walter P. Saukin, at 718-862-7171 (Monday to Friday, 9:30 AM to 4 PM). Call to ask how to apply.",
+  "how_to_apply": "Fill out the registration form linked on the page. For questions, call the program director, Dr. Walter P. Saukin, at 718-862-7171 (Monday to Friday, 9:30 AM to 4 PM).",
   "needs_work_permit": null,
   "url": "https://manhattan.edu/academics/engineering/high-school-programs#summer-engineering-awareness",
-  "apply_url": null,
+  "apply_url": "https://manhattancollege.formstack.com/forms/summer_engineering_program_registration",
   "sources_fetched": [
    "https://manhattan.edu/academics/engineering/high-school-programs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "notes": "The school is now called Manhattan University, formerly Manhattan College. The page says the program has run for over 40 years. The page lists a free program. It comes with a certificate and no fee to apply at Manhattan University. The page lists an email for the director that does not match the director's name, so call instead. Confirm the steps with the director.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-met-high-school-spring-internship",
@@ -74786,7 +74787,7 @@
   "pay_detail": "$1,000 stipend when you finish. MoMA pays for all materials, snacks and other costs.",
   "season": "school-year",
   "duration": "October 2026 to June 2027, every Tuesday 4:30 to 6:30 PM, plus some other days and weekends.",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "The 2026 to 2027 deadline was Monday, September 14, 2026, at 11:59 PM. The next cycle is not posted; expect a late summer deadline.",
   "deadline_iso": null,
@@ -74799,10 +74800,10 @@
    "https://www.moma.org/calendar/programs/253",
    "https://moma.submittable.com/submit/fb1c2d05-ecfb-4abe-814b-842a416f8b5e/moma-teens-in-residence-2026-27"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-16",
   "priority": 1,
-  "notes": "Attendance is required. Missing meetings again and again gets you removed. The 2026 to 2027 application form now says it has expired. Questions: momateens@moma.org.",
+  "notes": "Attendance is required. Missing meetings again and again gets you removed. The 2026 to 2027 application form now says it has expired. Questions: momateens@moma.org. As of Nov 3, 2026, the MoMA site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 16, 2026"
  },
  {
@@ -74841,8 +74842,8 @@
   "notes": "Confirm first: the dates are from the 2025 posting. Contact: volunteerservices@montefiore.org (shown on the page).",
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on": "2026-11-03",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-mount-sinai-morningside-jump-teen-volunteer",
@@ -74880,8 +74881,8 @@
   "notes": "Read through the fetch tool because direct downloads were blocked. The page says volunteers need a valid Social Security number (a hospital clearance rule on the official site) and pay for their own medical clearance. Other Mount Sinai campuses have their own pages and age rules that were not read.",
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on": "2026-11-03",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-northwell-lenox-hill-health-care-immersion",
@@ -74917,10 +74918,10 @@
    "https://northwell.vsyslive.com/pages/LENOX"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "The page is out of date, so check with the volunteer team to see if there is a 2027 program. The regular junior volunteer program has different rules and needs working papers.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-northwell-manhattan-campus-junior-volunteer",
@@ -74956,10 +74957,10 @@
    "https://northwell.vsyslive.com/pages/LENOX"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "notes": "The page says junior volunteers (ages 16 to 17) must submit working papers and a parental consent form. Orientation and medical clearance are required. Volunteers 18 and older must pass a background screening. The page asks for 100 hours a year. The page gives a minimum age of 16 and no maximum age.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-nybg-explainers",
@@ -74983,7 +74984,7 @@
   "paid_type": "mixed",
   "pay_detail": "Intern tier is unpaid volunteering (OMNY card help for transit can be provided). Later tiers (Advanced Explainer, Mentor, Senior) are paid part-time jobs; the page gives no hourly rate.",
   "season": "spring",
-  "duration": "Spring 2027 internship: one 4.5 hour Saturday or Sunday shift each week, Mar 20 to Jun 19, 2027 (the page lists both 105 and 125 service hours; confirm with NYBG), plus 4 required training days (Mar 6, 7, 13, 14, 2027).",
+  "duration": "Spring 2027 internship: one 4.5 hour Saturday or Sunday shift each week, Feb 27 to Jun 20, 2027 (the page lists both 105 and 125 service hours; confirm with NYBG), plus 4 required training days (Feb 13, 14, 20, 21, 2027).",
   "status": "open-now",
   "deadline_text": "Spring 2027 application closes Saturday Nov 14, 2026 at 11:59 p.m. Open House Sat Nov 7, 2026, 1 to 2 p.m. (RSVP by Oct 30). A fall session also runs; its applications open late spring.",
   "deadline_iso": "2026-11-14",
@@ -74997,11 +74998,11 @@
    "https://www.nybg.org/education/childrens-education/kids-teens/"
   ],
   "priority": 1,
-  "notes": "Questions: explainers@nybg.org. Intern tier is unpaid, so a work permit is not clearly needed there; the paid tiers are jobs and the page does not say what papers are required. The orientation date printed on the page shows the wrong year, so confirm it with NYBG. Late applications roll to the next session.",
+  "notes": "Questions: explainers@nybg.org. Intern tier is unpaid, so a work permit is not clearly needed there; the paid tiers are jobs and the page does not say what papers are required. The page says orientation is Feb 3, 2027. The application form shows different dates (Mar 20 to Jun 19, 2027), so confirm with NYBG. Late applications roll to the next session.",
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on": "2026-11-03",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-nyp-summer-volunteering",
@@ -75040,8 +75041,8 @@
   "notes": "Many NYP roles (emergency department, palliative care and others) are 18+. Brooklyn Methodist also runs a Junior Volunteer Program that was marked full when searched; its own page was not read for details. This entry covers the system-wide Summer Only option only.",
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on": "2026-11-03",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-nyu-langone-manhattan-summer-volunteer",
@@ -75081,14 +75082,14 @@
   "notes": "The Brooklyn campus requires age 18+. Long Island has its own teen program (not read in detail). The FAQ page still shows old 2022 dates, so only the Manhattan page was used for dates. Med-career internships and research are handled separately through HRNTV@NYULangone.org. The Manhattan page and the volunteer page do not mention working papers, so the work permit answer is unknown.",
   "opens_iso": "2027-01-15",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on": "2026-11-03",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "grades": "Students who have finished grades 9, 10 or 11",
   "max_age": null,
   "min_age": null,
@@ -75121,7 +75122,7 @@
   "sources_fetched": [
    "https://www.sps.nyu.edu/high-school-academy/courses/HIGH1-CE9044.html"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-nyu-tandon-arise",
@@ -75152,18 +75153,18 @@
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Online application (optional recommendation due after), a group interview and lab tours to pick your placement.",
   "needs_work_permit": null,
-  "url": "https://engineering.nyu.edu/academics/programs/k12-stem-education/nyc-based-programs/arise",
+  "url": "https://k12stem.engineering.nyu.edu/programs/arise",
   "apply_url": null,
   "sources_fetched": [
-   "https://engineering.nyu.edu/academics/programs/k12-stem-education/nyc-based-programs/arise",
+   "https://k12stem.engineering.nyu.edu/programs/arise",
    "https://www.nyu.edu/admissions/high-school-and-middle-school-programs/high-school-programs/applied-research-in-science-and-engineering.html"
   ],
   "priority": 1,
   "notes": "Selective with limited spaces. Funded by the Pinkerton Foundation. Students present at an AMNH poster symposium at the end. The two NYU pages differ slightly on grade wording (10th or 11th grade now versus rising juniors and seniors), which is the same group. The program name on a second page reads Applied Research In Science and Engineering. Paid work for people under 18 in New York needs working papers (employment certificate). See permit.html?state=ny for the exact permit and steps.",
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on": "2026-11-03",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -75186,25 +75187,26 @@
   "paid_type": "paid",
   "pay_detail": "Fellows do paid summer internships or enrichment programs (five summers over the six years). The page does not state the pay.",
   "season": "year-round",
-  "duration": "Six years. Starts with the OppNet Summer Institute (length not stated on the page), then weekly after-school workshops in 11th and 12th grade.",
-  "status": "closed-expect-reopen",
+  "duration": "Six years. Starts with a two-week Summer Institute in July 2027, then weekly after-school workshops in 11th and 12th grade.",
+  "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "The page says the last application is closed and the next one re-opens in Fall 2026. The page lists the usual due date as early February for current NYC 10th graders. The 2027 date is not posted.",
-  "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Sign the interest form on the Apply page to get an email when the application opens. The online application takes a couple of hours. It needs your transcript, family facts and two recommendation forms. One is from a teacher. One is from a counselor or advisor. Chosen applicants are invited to group interviews. The page puts these in late March.",
+  "deadline_text": "Applications are due Feb 7, 2027 at 11:59 PM. Interviews are in March 2027. Admission news comes in April 2027.",
+  "deadline_iso": "2027-02-07",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the online application. It takes 1 to 2 hours. It needs your transcript, family facts and two recommendation forms. One is from a teacher. One is from a school counselor. Info sessions are Nov 12, Dec 3 and Jan 14. Chosen applicants are invited to interviews in March 2027.",
   "needs_work_permit": null,
   "url": "https://opportunitynetwork.org/apply/",
-  "apply_url": null,
+  "apply_url": "https://oppnet.tfaforms.net/5117937",
   "sources_fetched": [
    "https://opportunitynetwork.org/fellows/",
-   "https://opportunitynetwork.org/apply/"
+   "https://opportunitynetwork.org/apply/",
+   "https://oppnet.tfaforms.net/5117937"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "notes": "Admitted Fellows must come to all days of the Summer Institute. A family member must come to an orientation. The application asks for household income. The program uses it to check the income limit. The pages do not say if a work permit is needed.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-pal-college-access-program",
@@ -75240,10 +75242,10 @@
    "https://palnyc.org/teens"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "notes": "CAP meets at PAL's Webster Center in the Bronx. It is built for teens who would be the first in their family to go to college. PAL Teen Centers, for teens 13 to 19, are free and open 3 to 5 evenings a week.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-parks-lifeguard-program",
@@ -75266,9 +75268,9 @@
   "pay_detail": "$22 per hour for lifeguards who finish training and get a post. Lifeguards also get a $908 training payment after the summer season.",
   "season": "summer",
   "duration": "Training course of 16 sessions, then the summer season. Beaches open Memorial Day weekend and outdoor pools open in late June. Both close the Sunday after Labor Day. You work five or six days a week.",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "No test dates are open for registration right now. The page says qualifying tests run from late October through late February in all five boroughs. Sign up on the Parks site to get a notice when dates open.",
+  "deadline_text": "As of Oct 19, 2026, no test dates were open. The page says qualifying tests run from late October through late February in all five boroughs. Sign up on the Parks site to get a notice when dates open.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Register for a qualifying test on the Parks page when dates open (or join the notice list). Pass the swim and vision test, then do the training. A letter from an eye doctor can replace the on-site vision exam.",
@@ -75280,10 +75282,10 @@
    "https://www.nycgovparks.org/reg/life-guard-test",
    "https://www.nycgovparks.org/opportunities/jobs"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 1,
-  "notes": "The two Parks pages disagree on the swim time. The main page says 50 yards in 50 seconds or less. The test page says 50 yards in 40 seconds or less with proper form. Plan for the faster one. The pages do not say whether a work permit is needed for 16 and 17 year olds.",
+  "notes": "The two Parks pages disagree on the swim time. The main page says 50 yards in 50 seconds or less. The test page says 50 yards in 40 seconds or less with proper form. Plan for the faster one. The pages do not say whether a work permit is needed for 16 and 17 year olds. As of Nov 3, 2026, the Parks site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 19, 2026"
  },
  {
@@ -75322,10 +75324,10 @@
    "https://www.schools.nyc.gov/learning/student-journey/career-connected-learning/ptech-high-schools"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "notes": "This is a school choice made before 9th grade, so it fits 8th graders and their families. The page names five schools in Manhattan and the Bronx. Examples are Inwood Early College for Health and Information Technologies and Urban Assembly New York Harbor School. Check each listing to see how students get in.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-public-schools-student-advisory-councils",
@@ -75362,10 +75364,10 @@
    "https://www.schools.nyc.gov/get-involved/students/student-advisory-councils"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "notes": "There are six borough councils: one in each borough, with two in Brooklyn. The page does not list contacts or meeting dates. It is a leadership role, not a job.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-queens-alley-pond-field-biology-internship",
@@ -75386,7 +75388,7 @@
   "grades": "High school",
   "who_can_apply": "Students at least 14 and now in high school. You can be outdoors for 2 hours. You have your own ride to the site. You pass an interview. You come to 5 of 6 classes.",
   "paid_type": "fee-based",
-  "pay_detail": "$200 fee after you are accepted. Financial aid is available on request and needs no paperwork.",
+  "pay_detail": "$250 fee after you are accepted. Financial aid is available on request and needs no paperwork.",
   "season": "year-round",
   "duration": "6 sessions of 3 hours per season (9:30 a.m. to 12:30 p.m.). Spring 2027: Saturdays Mar 27 to May 8. Summer 2027: Tuesdays or Wednesdays, July 6 to Aug 11. Fall 2027: Saturdays Sept 18 to Oct 23.",
   "status": "open-now",
@@ -75402,10 +75404,10 @@
    "https://www.alleypond.org/field-biology-internship.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
-  "notes": "This is a learning internship, not a job, and it costs $200 unless you get aid. You must find your own transportation. Supported by Con Edison and other funders per the page. The page says 5 of 6 classes in its eligibility section but 6 out of 7 dates for spring and fall, so ask which applies.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "This is a learning internship, not a job, and it costs $250 unless you get aid. You must find your own transportation. Supported by Con Edison and other funders per the page. The page says 5 of 6 classes in its eligibility section but 6 out of 7 dates for spring and fall, so ask which applies.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-queens-alley-pond-youth-volunteer",
@@ -75442,10 +75444,10 @@
    "https://www.alleypond.org/volunteer.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "The page lists deadline months, not the year. Popular program, so apply early.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-queens-county-farm-museum-junior-gardener",
@@ -75482,10 +75484,10 @@
    "https://www.queensfarm.org/junior-gardener-program/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Popular program with an acceptance step and a waitlist. Mostly outdoors, weather permitting. The museum is the Queens County Farm Museum.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-queens-flushing-hospital-junior-volunteer",
@@ -75522,10 +75524,10 @@
    "https://flushinghospital.org/volunteer-information/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "The hospital lists a \"Working Permit\" as a requirement for junior volunteers. This may mean New York working papers. Ask the Volunteer Services office which work permit paper they accept. The page says volunteering does not guarantee a job. Hospital address: 4500 Parsons Blvd, Flushing.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-queens-museum-queens-teens-institute",
@@ -75549,12 +75551,12 @@
   "pay_detail": "$1,000 stipend for the 9-month commitment, plus extra money for travel. QTI teens can also be considered for other paid Queens Museum jobs like workshop assistant and camp counselor.",
   "season": "school-year",
   "duration": "9 months of weekly hybrid sessions (in person and online). No more than 4 absences. Start and end dates are not stated.",
-  "status": "open-now",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Applications for 2026-27 are open. The deadline moved to Nov 1, 2026 at 11:59 p.m.",
-  "deadline_iso": "2026-11-01",
-  "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Send in the QTI 2026-27 form through the Submittable link on the Queens Museum announcement. Phone 718-592-9700. Email info@queensmuseum.org.",
+  "deadline_text": "The 2026-27 application closed Nov 1, 2026. The next dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply through the Queens Museum form on Submittable when the next call opens. Phone 718-592-9700. Email info@queensmuseum.org.",
   "needs_work_permit": null,
   "url": "https://queensmuseum.org/2026/09/14/queens-teens-institute-2026-2027-applications-now-open-deadline-10-25-26/",
   "apply_url": "https://queensmuseum.submittable.com/submit/364714/queens-teens-institute-for-art-social-justice-qti-2026-2027-application",
@@ -75562,10 +75564,10 @@
    "https://queensmuseum.org/2026/09/14/queens-teens-institute-2026-2027-applications-now-open-deadline-10-25-26/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-26",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "notes": "This is the fifth year of the program. Ages, grades and work-permit rules are not stated on the announcement, so ask the museum.",
-  "verified_on_label": "Oct 26, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-queens-nysci-explainer-science-career-ladder",
@@ -75604,10 +75606,10 @@
    "https://nysci.org/youth-development"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "notes": "NYSCI is at 47-01 111th St., Corona, Queens. The youth page lists \"Young Adults, Age 14-24\" in the site menu; the Explainer page itself does not state a minimum age, so confirm. The apply form link on the page showed as closed when read. Pay rate not stated. Work permit not stated on the page.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -75644,10 +75646,10 @@
    "https://www.stjohns.edu/admission/other-programs/high-school-scholars-program"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "notes": "Costs money and is for strong students. Check the page in spring for 2027 dates and price.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-rockefeller-summer-science-research-program",
@@ -75685,10 +75687,10 @@
    "https://www.rockefeller.edu/outreach/ssrp/faqs/"
   ],
   "priority": 2,
-  "notes": "Very competitive (about 32 students a year). You must attend the entire program with no gaps. Minors cannot work with human patients. You may not use SSRP work in science competitions. Contact: program administrator listed on the page, 1230 York Ave.",
+  "notes": "Very competitive (32 to 40 students a year). You must attend the entire program with no gaps. Minors cannot work with human patients. You may not use SSRP work in science competitions. Contact: program administrator listed on the page, 1230 York Ave.",
   "verified": "fetched",
-  "verified_on": "2026-10-13",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on": "2026-11-03",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-sadie-nash-leadership-scholars",
@@ -75715,7 +75717,7 @@
   "duration": "Thursdays 4:30 to 6:30 p.m., November to May, in person at the New York City or Newark office.",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Applications for 2026 to 2027 were due Oct 16, 2026. Next dates are not posted. Join the email list on the apply page.",
+  "deadline_text": "Applications for 2026 to 2027 were due Oct 16, 2026. The next cycle reopens in summer 2027. Join the email list on the apply page.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Apply online from the Leadership Scholars page. Questions: charlie@sadienash.org.",
@@ -75727,10 +75729,10 @@
    "https://www.sadienash.org/apply-now"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-03",
   "priority": 1,
-  "notes": "Office: 247 W 37th St, Suite 705, New York, NY. Next round not posted.",
-  "verified_on_label": "Oct 16, 2026",
+  "notes": "Office: 247 W 37th St, Suite 705, New York, NY. Next round reopens in summer 2027.",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -75751,14 +75753,14 @@
   "min_age": null,
   "max_age": null,
   "grades": "12",
-  "who_can_apply": "High school seniors who are women or gender-expansive youth of color and live in New York City or Newark. No academic rules.",
+  "who_can_apply": "High school seniors who are women or gender-expansive youth and live in New York City or Newark. No academic rules.",
   "paid_type": "stipend",
   "pay_detail": "Eligible for a $400 stipend at the end of the internship.",
   "season": "school-year",
   "duration": "Saturdays 10 a.m. to 12 noon, November 2026 to May 2027, plus some events.",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Applications for 2026 to 2027 were due Oct 16, 2026. Next dates are not posted. Join the email list on the apply page.",
+  "deadline_text": "Applications for 2026 to 2027 were due Oct 16, 2026. The next cycle reopens in summer 2027. Join the email list on the apply page.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Apply online from the Nash U page. Questions: charlie@sadienash.org.",
@@ -75770,10 +75772,10 @@
    "https://www.sadienash.org/apply-now"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-03",
   "priority": 2,
-  "notes": "You must commit to the full internship. Next round not posted.",
-  "verified_on_label": "Oct 16, 2026",
+  "notes": "You must commit to the full internship. Next round reopens in summer 2027.",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -75801,7 +75803,7 @@
   "duration": "In person: once a week, Tuesdays or Wednesdays 4:30 to 6:30 p.m., November to May. Virtual: 10 weeks, offered each fall and spring.",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Applications for 2026 to 2027 were due Oct 16, 2026. Next dates are not posted. Join the email list on the apply page.",
+  "deadline_text": "NYC and virtual applications took entries until an Oct 30 deadline. Only the Newark site takes applications now, until Nov 9, 2026.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Apply online from the program page. Questions: cielito@sadienash.org.",
@@ -75813,10 +75815,10 @@
    "https://www.sadienash.org/apply-now"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-03",
   "priority": 2,
-  "notes": "No more than 5 absences in person. Next round not posted.",
-  "verified_on_label": "Oct 16, 2026",
+  "notes": "No more than 5 absences in person. As of Nov 3, 2026, only the Newark site is open. Next NYC round not posted.",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -75841,10 +75843,10 @@
   "paid_type": "stipend",
   "pay_detail": "Eligible for a $450 stipend at the end of the summer, based on participation.",
   "season": "summer",
-  "duration": "6 weeks. In 2026: July 6 to Aug 13, Monday to Thursday 10 a.m. to 4 p.m., at sites in Manhattan, Brooklyn, Queens, the Bronx and Newark.",
+  "duration": "6 weeks. In 2027: July 6 to Aug 13, Monday to Thursday 10 a.m. to 4 p.m., at sites in Manhattan, Brooklyn, Queens, the Bronx and Newark.",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "The 2026 application closed. Its deadline was March 13, 2026, with group interviews April 7 to 11 in NYC. The 2027 dates are not posted.",
+  "deadline_text": "The 2027 application opens at the end of November. The page lists a March 13 deadline and NYC group interviews April 23, 26 and 27, with no year.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Apply online through the Apply Now page when the cycle opens, then join a group interview. Sign up for the opportunities email list to hear when it opens. Questions: nashers@sadienash.org.",
@@ -75856,10 +75858,10 @@
    "https://www.sadienash.org/apply-now"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "notes": "For young women and gender-expansive youth. The Brooklyn, Queens and other borough sites are part of the same program.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -75886,7 +75888,7 @@
   "duration": "School year and summer programs. Length varies by crew.",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "No teen crew openings were posted when checked in October 2026. The only openings listed were 2026 Stamford crews for ages 18 and up.",
+  "deadline_text": "No teen crew openings were posted as of Nov 3, 2026. The only openings listed were 2026 Stamford crews for ages 18 and up.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Watch the Current Opportunities list on the program page and apply through its Learn More and Apply links. You can also contact the Metro NY Region office.",
@@ -75897,10 +75899,10 @@
    "https://thesca.org/program/urban-green/metro-new-york"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Contact: Pablo Galesi, (347) 200-4709, pgalesi@thesca.org. In New York, teens 14 to 17 need working papers to work.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-staten-island-historic-richmond-town-high-school-apprenticeship",
@@ -75938,10 +75940,10 @@
    "https://www.historicrichmondtown.org/apprenticeship"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Pay is not stated, so ask whether it is paid and whether working papers are needed. The site says the program has run for decades.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-staten-island-rumc-afterschool-medical-science",
@@ -75978,10 +75980,10 @@
    "https://rumcsi.org/patients-visitors/get-involved/volunteer-opportunities/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Session dates, start month and cost are not stated, so call or email to confirm before you plan. The general volunteer page says its openings are filled right now. It states no age rule. The application email could not be read in this check, so confirm it.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-staten-island-wagner-college-high-school-internship",
@@ -76019,10 +76021,10 @@
    "https://wagner.edu/lifelong-learning/youth-programs/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Ask the office whether spring 2027 spots are open and whether the internship is paid.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-staten-island-zoo-junior-docent",
@@ -76060,10 +76062,10 @@
    "https://www.statenislandzoo.org/volunteer-job-opportunities"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "The 2026 class deadline had passed as of 2026-10-09. Check the page around late summer for the next class. Teens learn public speaking and animal presentation skills.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-staten-island-zoo-teen-volunteer",
@@ -76101,10 +76103,10 @@
    "https://www.statenislandzoo.org/volunteer-job-opportunities"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Limited spaces. Volunteers in animal care jobs must show a negative TB test and proof of COVID-19 vaccination, per the page.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-studio-museum-expanding-the-walls",
@@ -76119,10 +76121,10 @@
    "arts-media"
   ],
   "what_you_do": "A free eight-month photography program. You learn photography, meet artists, take field trips, make your own photo project and help show your work in a museum exhibition.",
-  "min_age": null,
-  "max_age": null,
+  "min_age": 14,
+  "max_age": 18,
   "grades": "High school",
-  "who_can_apply": "High school-aged youth. No photography experience needed. To get the stipend you must be a U.S. citizen, permanent resident or otherwise eligible to work in the U.S., and show valid working papers when accepted.",
+  "who_can_apply": "High school-aged youth, ages 14 to 18. No photography experience needed. To get the stipend you must be a U.S. citizen, permanent resident or otherwise eligible to work in the U.S., and show valid working papers when accepted.",
   "paid_type": "stipend",
   "pay_detail": "$1,000 stipend paid at the end of the program, a Canon DSLR camera, and transportation fare to and from the museum. The page says this is not a job or an internship.",
   "season": "year-round",
@@ -76141,10 +76143,10 @@
    "https://www.studiomuseum.org/expanding-the-walls"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
-  "notes": "Meets at 144 W 125th Street. The FAQ on the page still shows the 2026 dates in one spot; the headline dates for 2027 are Jan 9 to Aug 5, 2027. Public school holidays are observed. The page does not state an age range or whether you must live in NYC.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "Meets at 144 W 125th Street. The FAQ on the page still shows the 2026 dates in one spot; the headline dates for 2027 are Jan 9 to Aug 5, 2027. Public school holidays are observed. The page does not state whether you must live in NYC.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-the-door-free-membership-ages-12-24",
@@ -76182,10 +76184,10 @@
    "https://www.door.org/membership/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "notes": "The Door also has a Bronx drop-in center for runaway and homeless youth. Ask staff for details, because ages for it are not stated. Some job training programs have their own age rules, so ask staff.",
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-the-door-the-cut-culinary-training",
@@ -76223,10 +76225,10 @@
    "https://www.door.org/membership/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Other Door job programs have other age rules, such as 18 to 24 for several of them. Call first to ask about the next start date.",
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-transportation-alternatives-youth-activist-committee",
@@ -76265,10 +76267,10 @@
    "https://www.schools.nyc.gov/get-involved/students/student-opportunities"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "notes": "The page describes youth activism and does not mention a work permit. The page lists meetings on the last Friday of each month from 4:30 to 6 PM, and says meetings are hybrid. Confirm before you go.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-votes-youth-ambassadors",
@@ -76306,10 +76308,10 @@
    "https://www.nycvotes.org/get-involved/youth/nyc-votes-youth-ambassadors/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Run by the City of New York Campaign Finance Board. Past ambassadors registered voters at public events and with other city agencies. The pages do not say whether the work is paid or needs a work permit.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-wave-hill-aces-internship",
@@ -76348,10 +76350,10 @@
    "https://www.wavehill.org/education/youth-internships/aces"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "notes": "Wave Hill House, where this program meets, is wheelchair accessible. Interns travel off site for some field trips.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-wave-hill-forest-project",
@@ -76389,10 +76391,10 @@
    "https://www.wavehill.org/education/youth-internships/forest-project"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "notes": "Fieldwork is hard physical work outdoors with heavy tools on unpaved ground. The Ecology Building has 28 stairs and is not wheelchair accessible. You must be ready to join all of the program.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -76431,10 +76433,10 @@
    "https://www.wavehill.org/education/youth-internships/werm"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "notes": "Courses are taught at Wave Hill and the University of Mount Saint Vincent. Fieldwork is outdoors on rough ground with heavy tools. The Ecology Building is not open to wheelchairs. The page names partners such as the American Museum of Natural History.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -76478,8 +76480,8 @@
   "notes": "The apply link is the interest form, not the application. WCS also lists 30+ internships and paid jobs for ages 14 to 24 (WCS Career Lattice) and the Youth JIVE job and volunteer expo in early February. Those pages did not state ages or dates for individual internships, so only this program is listed.",
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on": "2026-11-03",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-whitney-youth-insights",
@@ -76517,8 +76519,8 @@
   "notes": "The page's closing note also lists YI Introductions graduates as eligible for Leaders. That conflicts with its Open to line. The page lists no program contact. Use whitney.org/contact. The Whitney also runs a separate Open Studio for Teens (free).",
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on": "2026-11-03",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nyc-work-learn-grow",
@@ -76554,10 +76556,10 @@
    "https://palnyc.org/teens",
    "https://www.henrystreet.org/programs/employment/youth-employment/"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "Only for teens who did SYEP last summer. If you are new, start with the Summer Youth Employment Program. Selection is by lottery, so a spot is not guaranteed. New York State requires working papers for workers ages 14 to 17.",
+  "notes": "Only for teens who did SYEP last summer. If you are new, start with the Summer Youth Employment Program. Selection is by lottery, so a spot is not guaranteed. New York State requires working papers for workers ages 14 to 17. As of Nov 3, 2026, the Henry Street site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 16, 2026"
  },
  {
@@ -76642,7 +76644,7 @@
   "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "grades": "High school",
   "max_age": null,
   "min_age": null,
@@ -76676,7 +76678,7 @@
   "sources_fetched": [
    "https://www.nyit.edu/academics/management/programs-for-high-school-students/business-bootcamp/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "nypl-teen-curators",
@@ -76700,7 +76702,7 @@
   "pay_detail": "Stipend. The page does not state the amount.",
   "season": "fall",
   "duration": "About 9 weeks. In 2026 it ran Oct 20 to Dec 17, Tuesdays and Thursdays 4:30 to 6 PM, at the Schwarzman Building and the Stavros Niarchos Foundation Library.",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "The 2026 to 2027 application closed Sept 20, 2026. Teens were told Oct 2 and orientation was Oct 17. The next cycle is not posted.",
   "deadline_iso": null,
@@ -76712,10 +76714,10 @@
   "sources_fetched": [
    "https://www.nypl.org/education/teens/teen-curators-program"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "The theme changes with each exhibition. The fall 2026 group studied the Declaration of Independence. Sign up for NYPL's teen newsletter to hear when the next application opens.",
+  "notes": "The theme changes with each exhibition. The fall 2026 group studied the Declaration of Independence. Sign up for NYPL's teen newsletter to hear when the next application opens. As of Nov 3, 2026, the library page came up empty for our check, so confirm these details first.",
   "verified_on_label": "Oct 16, 2026"
  },
  {
@@ -87067,7 +87069,7 @@
  },
  {
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "opens_iso": null,
   "id": "qpl-peer-to-peer-service-collective",
   "name": "Peer-to-Peer Service Collective for Teens",
@@ -87091,9 +87093,9 @@
   "pay_detail": "Unpaid. You earn community service credit for time presenting.",
   "season": "school-year",
   "duration": "Varies by project",
-  "status": "open-now",
-  "deadline_text": "Fall 2026 submissions are open Sept 21 to Oct 31, 2026. The spring window is Feb 1 to Feb 28, 2027. Online info session Oct 13, 2026, 5-6 pm.",
-  "deadline_iso": "2026-10-31",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Fall 2026 submissions closed Oct 31, 2026. The spring window is Feb 1 to Feb 28, 2027.",
+  "deadline_iso": null,
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Complete the Idea Submission questionnaire on the library volunteer site during a submission window. The Civic Engagement Team will contact you to get your idea library ready. Questions: volunteer@queenslibrary.org.",
   "needs_work_permit": true,
@@ -87105,7 +87107,7 @@
   ],
   "priority": 2,
   "notes": "A limited number of projects are accepted and a branch must agree to host. Other QPL pages list ages as 14-18 for this program, so check the age limit if you are 18.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
