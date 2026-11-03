@@ -3584,6 +3584,46 @@
   "verified_on_label": "Oct 10, 2026"
  },
  {
+  "id": "antelope-valley-medical-center-teen-volunteer",
+  "name": "Teen Volunteer Program",
+  "org": "Antelope Valley Medical Center",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Lancaster, CA",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Volunteer at the hospital and see up close how health care helps a community. Shifts are usually four hours a week. Your hours can count toward school service rules.",
+  "min_age": 15,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be at least 15 and in high school before you start. You must turn in a current report card. Grades and attendance help decide if you can join.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. The uniform shirt costs $25. You also buy tan pants and white tennis shoes.",
+  "season": "year-round",
+  "duration": "At least 200 hours",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline or window is listed as of Nov 3, 2026. Call to ask about openings.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Get an application at the Volunteer office or from the page. Turn it in with your report card. Then you have an interview. Questions: (661) 949-5105 or volunteers@avmc.org.",
+  "needs_work_permit": false,
+  "url": "https://www.avmc.org/about-us/volunteer-program/volunteer-application-process/",
+  "apply_url": "https://www.avmc.org/documents/2025-AVMC-Volunteer-application_v2.pdf",
+  "sources_fetched": [
+   "https://www.avmc.org/about-us/volunteer-program/volunteer-application-process/",
+   "https://www.avmc.org/about-us/volunteer-program/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 2,
+  "notes": "You need two TB tests, which are free, and you must go to an orientation. The linked form is dated 2025.",
+  "verified_on_label": "Nov 3, 2026"
+ },
+ {
   "id": "aquarium-of-the-pacific-voluntens",
   "name": "VolunTEENS at the Aquarium of the Pacific",
   "org": "Aquarium of the Pacific",
@@ -15585,6 +15625,88 @@
   "verified_on_label": "Oct 11, 2026"
  },
  {
+  "id": "cerritos-college-individual-dual-enrollment",
+  "name": "Individual Dual Enrollment",
+  "org": "Cerritos College",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Norwalk, CA",
+  "type": "pre-college",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Pick classes from the Cerritos College schedule and take them with college students. You stay enrolled at your regular school and earn college credit.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "K to 12 students who still attend their regular school. You need permission from a parent or guardian and your high school.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "The $46 per unit enrollment fee is waived once your form is processed. You must pay a health fee each semester. Other student fees may apply, and you can ask to waive those.",
+  "season": "school-year",
+  "duration": "By semester",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No single deadline is listed. Send a new Dual Enrollment Form for each semester you want to attend.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply to the college. Fill out the Dual Enrollment Form with your class numbers and signatures from you, your parent and your school. Upload it, wait for the clearance email, then enroll. Call (562) 860-2451, ext. 2212.",
+  "needs_work_permit": false,
+  "url": "https://www.cerritos.edu/academics/divisions/epp/dualenrollment/individual-dual-enrollment.htm",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.cerritos.edu/academics/divisions/epp/dualenrollment/individual-dual-enrollment.htm",
+   "https://www.cerritos.edu/epp/Dual_Enrollment.htm",
+   "https://www.cerritos.edu/academics/divisions/epp/dualenrollment/CCAP-partnership-programs.htm"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 2,
+  "notes": "You do not get priority registration, so have backup classes ready. Partner schools in ABC, Bellflower, Downey and Norwalk-La Mirada Unified also offer classes on campus. Ask your counselor. Zoom drop-in help runs Tuesdays and Wednesdays, 1 to 4 p.m.",
+  "verified_on_label": "Nov 3, 2026"
+ },
+ {
+  "id": "cerritos-library-volunteens",
+  "name": "Volunteens",
+  "org": "Cerritos Library",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Cerritos, CA",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "any"
+  ],
+  "what_you_do": "Shelve books, help with library programs, watch the kids' computers and run the Friends book shop.",
+  "min_age": 13,
+  "max_age": null,
+  "grades": "7 to 12",
+  "who_can_apply": "You must be at least 13 and in grades 7 to 12. You need a Cerritos Library card in good standing.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "The page does not state a time commitment",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Applications are at the Circulation Desk in March, June and November. No end date is listed. Call to confirm for November 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Pick up an application at the Circulation Desk in an application month. Then you have an interview. Questions: (562) 916-1338 or volunteen@cerritos.gov.",
+  "needs_work_permit": false,
+  "url": "https://library.cerritos.gov/programs-events/teen-studio/volunteens/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://library.cerritos.gov/programs-events/teen-studio/volunteens/",
+   "https://library.cerritos.gov/about-the-library/volunteering/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 2,
+  "notes": "You must clear a background check, which includes a Live Scan. The page does not name a year for the application months.",
+  "verified_on_label": "Nov 3, 2026"
+ },
+ {
   "id": "chabot-dual-enrollment",
   "name": "Chabot College Early College (Dual Enrollment)",
   "org": "Chabot College",
@@ -22011,6 +22133,46 @@
   "priority": 1,
   "notes": "Orientation 1 is an online course with a guardian plus a session on April 24 or 25, 2027; Orientation 2 is all day at the Zoo on May 22 or 23, 2027. The Zoo says to contact them if the fee is a hardship. Third-year and older ZooTeens have a lower 70 hour requirement.",
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "citrus-college-dual-enrollment",
+  "name": "Dual and Concurrent Enrollment",
+  "org": "Citrus College",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Glendora, CA",
+  "type": "pre-college",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Take Citrus College classes for credit. Partner schools hold classes during the regular school schedule. If you have not finished high school, you can also apply for classes on the Citrus campus or online.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "High school students. Campus or online classes need approval from your principal or a designee, plus a parent or guardian. Classes held at school are for partner schools such as Azusa, Claremont, Duarte, Glendora and Monrovia High.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Classes at partner schools: tuition, fees and materials are free. Campus or online classes: fees are waived for up to 11.5 units, but you pay other college fees, textbooks and materials.",
+  "season": "school-year",
+  "duration": "By term",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No single deadline is listed. Apply for the term you want: fall, winter, spring or summer. Check the registration deadlines each term.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply to Citrus College for your term. Send the Concurrent Enrollment Form in the student portal. Work with the dual enrollment office and your school. Call (626) 852-8044 or email dualenrollment@citruscollege.edu.",
+  "needs_work_permit": false,
+  "url": "https://citruscollege.edu/academics/dualenrollment",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://citruscollege.edu/academics/dualenrollment",
+   "https://citruscollege.edu/academics/dualenrollment/dualenrollmentstudent.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 2,
+  "notes": "Grade rules are not listed on these pages, so ask the office. Partner school students can take up to 15 units and no more than four classes. Holds and unpaid fees can block your registration.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "opens_iso": null,
@@ -64249,6 +64411,48 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "mt-san-antonio-college-special-admit",
+  "name": "Special Admit Program",
+  "org": "Mt. San Antonio College (Mt. SAC)",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Walnut, CA",
+  "type": "pre-college",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Take Mt. SAC college classes on campus or online, on top of your regular high school schedule. You earn college credit while you are still in high school.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "California K to 12 students who are enrolled in school now. You need written permission from your high school. Students below grade 9 may need extra steps.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Courses are tuition free.",
+  "season": "school-year",
+  "duration": "By term: summer, fall, winter or spring",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "As of Nov 3, 2026, Winter and Spring 2027 packets are being accepted. Winter 2027: packets due by Dec 9, classes start Jan 4, 2027. Spring 2027: packets due by Feb 8, classes start Feb 22, 2027. The packet dates show no year.",
+  "deadline_iso": null,
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply to Mt. SAC for each term. Do the Assessment Questionnaire once. Finish a Special Admit Packet each term with three signatures, including your parent and your school. Then register on your date. Call (909) 274-6030.",
+  "needs_work_permit": false,
+  "url": "https://www.mtsac.edu/counseling/special_admit",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.mtsac.edu/counseling/special_admit",
+   "https://www.mtsac.edu/counseling/special_admit/resources.html",
+   "https://www.mtsac.edu/admissions/steps-to-apply/enroll-hs-students-taking-college-courses.html",
+   "https://www.mtsac.edu/dualenrollment/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 2,
+  "notes": "Seats are first come, first served, and some classes are not open to you. Mt. SAC also runs Dual Enrollment at partner high schools; ask your school. The resources section lists Spring registration as Nov 12, 2027, which looks like a typo, so check your date in the student portal.",
+  "verified_on_label": "Nov 3, 2026"
+ },
+ {
   "id": "mt-san-jacinto-college-dual-concurrent-enrollment",
   "name": "Mt. San Jacinto College Dual and Concurrent Enrollment",
   "org": "Mt. San Jacinto College",
@@ -79671,6 +79875,47 @@
   "verified_on_label": "Nov 2, 2026"
  },
  {
+  "id": "palos-verdes-library-teen-advisory-council",
+  "name": "Peninsula Teen Advisory Council (PTAC)",
+  "org": "Palos Verdes Library District",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Rolling Hills Estates, CA",
+  "type": "leadership",
+  "fields": [
+   "education",
+   "any"
+  ],
+  "what_you_do": "Help plan library events for teens and share your ideas. Promote the library at school. Speak at library board meetings four times a year. Do at least 5 volunteer hours a school year.",
+  "min_age": 14,
+  "max_age": 18,
+  "grades": "9 to 12",
+  "who_can_apply": "Teens ages 14 to 18 at a PVPUSD school or local private school, or who are home schooled. Up to 20 members.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. You earn volunteer hours.",
+  "season": "school-year",
+  "duration": "Meetings once a month, one Monday from 4:00 to 4:45 p.m. on Zoom",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "The library says openings are available as of Nov 3, 2026. No deadline is listed.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Send the PTAC application and the library volunteer application. A parent or guardian signs both. Then you have an interview. Questions: ocatalan@pvld.org.",
+  "needs_work_permit": false,
+  "url": "https://pvld.org/teens/ptac",
+  "apply_url": "https://www.pvld.org/teens/ptac/application",
+  "sources_fetched": [
+   "https://pvld.org/teens/ptac",
+   "https://pvld.org/teens/ptac/membershiprequirements"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 2,
+  "notes": "If the group is full, you go on a waiting list. You can miss no more than 3 meetings without an excuse. You must also attend one PTAC event each semester.",
+  "verified_on_label": "Nov 3, 2026"
+ },
+ {
   "regions": [
    "los-angeles"
   ],
@@ -86252,6 +86497,45 @@
   "verified_on_label": "Oct 12, 2026"
  },
  {
+  "id": "providence-saint-joseph-burbank-volunteer",
+  "name": "Providence Saint Joseph Medical Center Volunteer (16 and up)",
+  "org": "Providence Saint Joseph Medical Center",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Burbank, CA",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Help one shift a week in a spot like the gift shop, front desk or a hospital unit. The hospital says the hours can count for high school.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be at least 16. This is the hospital's general program, not a separate teen program.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "At least 100 hours or six months, with one 4-hour shift a week",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline is listed as of Nov 3, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Read the requirements and apply online. Then you have an interview to match your interests and schedule, and you go to orientation. Questions: 818-847-3501.",
+  "needs_work_permit": false,
+  "url": "https://providence.org/locations/saint-joseph-medical-center/about-us/volunteer-program",
+  "apply_url": "https://provsaintjoseph.vsysweb.com/pages/tool/live.webapp:BURBANKAPP",
+  "sources_fetched": [
+   "https://providence.org/locations/saint-joseph-medical-center/about-us/volunteer-program"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 2,
+  "notes": "You need a TB test each year and a flu shot or a mask during flu season. You must wear the hospital uniform and ID badge.",
+  "verified_on_label": "Nov 3, 2026"
+ },
+ {
   "verified": "fetched",
   "verified_on": "2026-10-09",
   "opens_iso": null,
@@ -88349,6 +88633,45 @@
   "priority": 1,
   "notes": "The page refers to Richmond youth but does not spell out a residency rule. Ask about the hourly wage and your start date at intake.",
   "verified_on_label": "Nov 2, 2026"
+ },
+ {
+  "id": "rio-hondo-college-dual-enrollment",
+  "name": "Rio Hondo College Dual Enrollment",
+  "org": "Rio Hondo College",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Whittier, CA",
+  "type": "pre-college",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Take Rio Hondo College classes while you are still in high school and earn college credit.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "High school students and adult high school students. A principal or school designee must sign your petition. K to 8 students can also apply with a principal's letter.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Enrollment and student fees are waived.",
+  "season": "school-year",
+  "duration": "By semester",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Winter 2027 and Spring 2027 petition forms are posted as of Nov 3, 2026. No due date is listed. Check the college Academic Calendar for term dates.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Apply online each semester. Do the Parent Authorization Form. Send a Petition for Dual Enrollment each semester. Do placement if your class needs it. Then register with the class numbers. Call (562) 463-4693.",
+  "needs_work_permit": false,
+  "url": "https://www.riohondo.edu/admissions/get-started/dual-enrollment-students/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.riohondo.edu/admissions/get-started/dual-enrollment-students/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 2,
+  "notes": "Math, English, reading and classes with prerequisites need placement. You can send your transcripts to dual enrollment staff or use the online tool.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "rising-sun-climate-careers",
@@ -99553,6 +99876,47 @@
    "https://southbayyouth.org/"
   ],
   "verified_on_label": "Nov 2, 2026"
+ },
+ {
+  "id": "south-bay-youth-services",
+  "name": "JOBS for Youth",
+  "org": "South Bay Workforce Investment Board",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Inglewood, CA",
+  "type": "paid-youth-program",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Get job training, work experience and internships, and help finding a job. You can also get help with career plans and school.",
+  "min_age": 14,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Youth ages 14 to 24 in the South Bay, in school or out of school. The pages do not list a city or income rule.",
+  "paid_type": "mixed",
+  "pay_detail": "Services are at no cost. Paid work experience is offered. The rate is not stated.",
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline is listed. Use the sign-up form or call a job coordinator.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the sign-up form, or call 310-680-3700 to reach a job coordinator in your area.",
+  "needs_work_permit": true,
+  "url": "https://www.southbay1stop.org/youth-services",
+  "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLSf7oj9PiQDSiH7sNoBooghWKjiSChZl050QxvDSNJOP6_kwGA/viewform",
+  "sources_fetched": [
+   "https://www.southbay1stop.org/youth-services",
+   "https://southbayyouth.org/",
+   "https://www.sbwib.org/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 2,
+  "notes": "The office is at 110 S. La Brea Ave., 3rd Floor, Inglewood. Ask about the STEP work program too. Age rules for each part may differ, so ask which ones fit you.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "south-central-pa-leaf-project-youth-summer-employment",

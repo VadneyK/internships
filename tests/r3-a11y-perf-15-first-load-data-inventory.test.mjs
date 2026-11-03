@@ -54,7 +54,8 @@ export const TABLE = {
   // 2026-11-02: 12 second-pass SoCal cards (2,877 programs), stacked on PR 125. PENDING PERSON APPROVAL. 2722500 to 2733500.
   // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 2733500 to 2735000.
   // 2026-11-02: San Francisco re-reads, stacked on PR 135. PENDING PERSON APPROVAL. 2735000 to 2736500.
-  "find.html": { paths: ["data/entries-lite.json"], ceiling: 2736500, reason: "Find filters every program, so it needs the whole lite file" },
+  // 2026-11-03: 27 new Los Angeles cards (2,904 programs), stacked on PR 139. PENDING PERSON APPROVAL. 2736500 to 2761500.
+  "find.html": { paths: ["data/entries-lite.json"], ceiling: 2761500, reason: "Find filters every program, so it needs the whole lite file" },
   // 2026-10-15: the Map page (754,977 bytes measured; about 151 KB gzipped). It counts every program by city, so it reads the map projection
   // (name, org and the keys the age, pay and open filters test) and the city points. PENDING PERSON APPROVAL for this weight on phones.
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) map.html limit 760000 to 763100. PENDING PERSON APPROVAL.
@@ -83,13 +84,15 @@ export const TABLE = {
   // 2026-11-02: 45 new SoCal cards (2,865 programs), stacked on PR 118. PENDING PERSON APPROVAL. 814500 to 827500.
   // 2026-11-02: 12 second-pass SoCal cards (2,877 programs), stacked on PR 125. PENDING PERSON APPROVAL. 827500 to 831000.
   // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 831000 to 831800.
-  "map.html": { paths: ["data/entries-map.json", "data/map.json"], ceiling: 831800, reason: "Map counts every program by city: the small map projection of the lite rows plus the city points file" },
+  // 2026-11-03: 27 new Los Angeles cards (2,904 programs), stacked on PR 139. PENDING PERSON APPROVAL. 831800 to 837500.
+  "map.html": { paths: ["data/entries-map.json", "data/map.json"], ceiling: 837500, reason: "Map counts every program by city: the small map projection of the lite rows plus the city points file" },
   // 2026-10-20: the unlisted Ignition page shows the same map (map.js), so it reads the same two files with the Map page's ceiling. Kentaro's instruction 2026-10-20.
   // 2026-10-26: three Inland Empire cards (Corona, Rancho Cucamonga) on top of PRs 98 to 101. PENDING PERSON APPROVAL. 813700 to 814500 (814444 measured).
   // 2026-11-02: 45 new SoCal cards (2,865 programs), stacked on PR 118. PENDING PERSON APPROVAL. 814500 to 827500.
   // 2026-11-02: 12 second-pass SoCal cards (2,877 programs), stacked on PR 125. PENDING PERSON APPROVAL. 827500 to 831000.
   // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 831000 to 831800.
-  "ignition.html": { paths: ["data/entries-map.json", "data/map.json"], ceiling: 831800, reason: "The Map page's map, opened on the Bay Area: the same two files as map.html" },
+  // 2026-11-03: 27 new Los Angeles cards (2,904 programs), stacked on PR 139. PENDING PERSON APPROVAL. 831800 to 837500.
+  "ignition.html": { paths: ["data/entries-map.json", "data/map.json"], ceiling: 837500, reason: "The Map page's map, opened on the Bay Area: the same two files as map.html" },
   "calendar.html": { paths: ["data/calendar.json", "data/entries-cal.json"], ceiling: 150000, reason: "Calendar draws deadline cards from the small calendar file (only the programs it lists) plus its own small file" },
   "younger.html": { paths: ["data/entries-core.json", "data/younger.json"], ceiling: 1100000, reason: "Ages 12 to 14 reads the core file and its own small file; headroom up to the card file size" },
   // Raised from 130000 to 145000 on 2026-10-12: the employer list grew to 147 entries (about 136 KB, one entry per line, about 30 KB gzipped).
@@ -131,7 +134,8 @@ export const TABLE = {
   // 2026-11-02: 45 new SoCal cards (2,865 programs), stacked on PR 118. PENDING PERSON APPROVAL. 839900 to 853500.
   // 2026-11-02: 12 second-pass SoCal cards (2,877 programs), stacked on PR 125. PENDING PERSON APPROVAL. 853500 to 856500.
   // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 856500 to 857000.
-  "insights.html": { paths: ["data/entries-stats.json"], ceiling: 857000, reason: "Numbers page counts every program, so it needs the stats projection (about 528 KB), the one page over the 200000 default" },
+  // 2026-11-03: 27 new Los Angeles cards (2,904 programs), stacked on PR 139. PENDING PERSON APPROVAL. 857000 to 865200.
+  "insights.html": { paths: ["data/entries-stats.json"], ceiling: 865200, reason: "Numbers page counts every program, so it needs the stats projection (about 528 KB), the one page over the 200000 default" },
   "languages.html": { paths: ["data/languages.json"], ceiling: 200000, reason: SMALL },
   "parents.html": { paths: ["data/parents.json"], ceiling: 200000, reason: SMALL },
   "paycheck.html": { paths: ["data/money.json"], ceiling: 200000, reason: SMALL },

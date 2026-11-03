@@ -54,7 +54,8 @@ const DETAIL_FIELDS = ["who_can_apply", "how_to_apply", "notes", "duration", "pa
 // 2026-11-02: 45 new SoCal cards (2,865 programs), stacked on PR 118. PENDING PERSON APPROVAL. 641300 to 649500.
 // 2026-11-02: 12 second-pass SoCal cards (2,877 programs), stacked on PR 125. PENDING PERSON APPROVAL. 649500 to 652500.
 // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 652500 to 653500.
-const GZIP_LIMIT = 653500;
+// 2026-11-03: 27 new Los Angeles cards (2,904 programs), stacked on PR 139. PENDING PERSON APPROVAL. 653500 to 658800.
+const GZIP_LIMIT = 658800;
 
 function readText(file) {
   return fs.readFileSync(path.join(DATA, file), "utf8");

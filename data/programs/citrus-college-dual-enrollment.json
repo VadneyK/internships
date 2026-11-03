@@ -1,0 +1,39 @@
+{
+  "id": "citrus-college-dual-enrollment",
+  "name": "Dual and Concurrent Enrollment",
+  "org": "Citrus College",
+  "regions": [
+    "los-angeles"
+  ],
+  "city": "Glendora, CA",
+  "type": "pre-college",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take Citrus College classes for credit. Partner schools hold classes during the regular school schedule. If you have not finished high school, you can also apply for classes on the Citrus campus or online.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "High school students. Campus or online classes need approval from your principal or a designee, plus a parent or guardian. Classes held at school are for partner schools such as Azusa, Claremont, Duarte, Glendora and Monrovia High.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Classes at partner schools: tuition, fees and materials are free. Campus or online classes: fees are waived for up to 11.5 units, but you pay other college fees, textbooks and materials.",
+  "season": "school-year",
+  "duration": "By term",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No single deadline is listed. Apply for the term you want: fall, winter, spring or summer. Check the registration deadlines each term.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply to Citrus College for your term. Send the Concurrent Enrollment Form in the student portal. Work with the dual enrollment office and your school. Call (626) 852-8044 or email dualenrollment@citruscollege.edu.",
+  "needs_work_permit": false,
+  "url": "https://citruscollege.edu/academics/dualenrollment",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://citruscollege.edu/academics/dualenrollment",
+    "https://citruscollege.edu/academics/dualenrollment/dualenrollmentstudent.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 2,
+  "notes": "Grade rules are not listed on these pages, so ask the office. Partner school students can take up to 15 units and no more than four classes. Holds and unpaid fees can block your registration."
+}
