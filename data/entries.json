@@ -3827,6 +3827,46 @@
   "verified_on_label": "Nov 2, 2026"
  },
  {
+  "id": "arcadia-public-library-teen-volunteering",
+  "name": "Arcadia Public Library Teen Volunteering",
+  "org": "Arcadia Public Library",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Arcadia, CA",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "any"
+  ],
+  "what_you_do": "Pick a job. You can help with computers, fix book shelves, work the front desk, teach adults tech, help at events or join the Teen Advisory Group.",
+  "min_age": 13,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be 13 or older. Some jobs, like Smart Squad Tutor and Teen Advisory Group, are only for grades 9 to 12.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "Most jobs: 2 hours a week for at least 6 months. Some differ.",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline is listed as of Nov 3, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Get a Volunteer Application at the library or on its page. You must turn it in yourself at the Account Services Desk.",
+  "needs_work_permit": false,
+  "url": "https://www.arcadiaca.gov/government/library/kids_and_teens/teen_volunteering.php",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.arcadiaca.gov/government/library/kids_and_teens/teen_volunteering.php"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 1,
+  "notes": "If chosen, you must do fingerprinting and a background check. The library sets it up at no cost. Summer Reading helpers (ages 13 to 18) work in June and July. Questions: (626) 821-5567.",
+  "verified_on_label": "Nov 3, 2026"
+ },
+ {
   "id": "argonne-big-data-camp",
   "name": "Big Data Camp",
   "org": "Argonne National Laboratory",
@@ -7364,6 +7404,46 @@
   "priority": 2,
   "notes": "Sponsor organizations fund the placements. Build a relationship with a community group and ask them to contact workforcedevelopment@bart.gov.",
   "verified_on_label": "Nov 2, 2026"
+ },
+ {
+  "id": "beach-cities-health-district-youth-advisory-council",
+  "name": "Youth Advisory Council",
+  "org": "Beach Cities Health District",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Hermosa Beach, Manhattan Beach and Redondo Beach, CA",
+  "type": "leadership",
+  "fields": [
+   "health",
+   "social-impact"
+  ],
+  "what_you_do": "Help peers find health resources. Speak up about stress, vaping, mental health and other teen issues. Help plan programs and make videos and flyers.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "8 to 12",
+  "who_can_apply": "You must be in grades 8 to 12 at a school in Hermosa Beach, Manhattan Beach or Redondo Beach.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. You earn community service hours.",
+  "season": "school-year",
+  "duration": "One school year: eight council meetings and three community events",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Last cycle: applications for the 2026-27 school year ran July 1, 2026 to Aug 2, 2026. Dates for next year are not posted as of Nov 3, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "When the next window comes, send the application with the Media Release, Volunteer Form and Ground Rules forms. Questions: cindy.carcamo@bchd.org.",
+  "needs_work_permit": false,
+  "url": "https://bchd.org/youth-programs/youth-advisory-council/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://bchd.org/youth-programs/youth-advisory-council/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 2,
+  "notes": "More than 50 students serve. You must finish a volunteer orientation. Tell staff early if you have a schedule conflict.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "beacon-cce-dutchess-green-teen-community-gardening",
@@ -29388,6 +29468,46 @@
   "verified_on_label": "Oct 13, 2026"
  },
  {
+  "id": "descanso-gardens-student-community-service-days",
+  "name": "Student Community Service Days",
+  "org": "Descanso Gardens",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "La Cañada Flintridge, CA",
+  "type": "volunteer",
+  "fields": [
+   "environment"
+  ],
+  "what_you_do": "Help care for the gardens for two hours in the morning and earn service hours for school. Staff teach you what to do.",
+  "min_age": 12,
+  "max_age": 15,
+  "grades": null,
+  "who_can_apply": "Students ages 12 to 15. If you are 16 or older, join the regular Community Service Days instead.",
+  "paid_type": "unpaid",
+  "pay_detail": "Free. Volunteer service hours, no pay.",
+  "season": "year-round",
+  "duration": "Two hours, 9 to 11 a.m.",
+  "status": "event",
+  "opens_iso": null,
+  "deadline_text": "Next Student Community Service Day: Nov 14, 2026, 9 to 11 a.m. Next Community Service Day for ages 16 and older: Nov 7, 2026, 9 to 11 a.m. Later dates are on the events calendar.",
+  "deadline_iso": "2026-11-14",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Email volunteer@descansogardens.org to save your spot. You must sign a waiver. For other roles, fill out an interest form and go to a short talk.",
+  "needs_work_permit": false,
+  "url": "https://www.descansogardens.org/support/volunteer/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.descansogardens.org/support/volunteer/",
+   "https://www.descansogardens.org/events/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 2,
+  "notes": "Check the events calendar for the next date after this one. The 16 and older days ask that you can lift, bend and stand for long periods.",
+  "verified_on_label": "Nov 3, 2026"
+ },
+ {
   "id": "diablo-valley-college-concurrent-enrollment",
   "name": "Concurrent Enrollment for High School Students at Diablo Valley College",
   "org": "Diablo Valley College",
@@ -40736,6 +40856,47 @@
   "verified_on_label": "Oct 13, 2026"
  },
  {
+  "id": "hawthorne-teen-center",
+  "name": "Hawthorne Teen Center",
+  "org": "South Bay Workforce Investment Board",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Hawthorne, CA",
+  "type": "paid-youth-program",
+  "fields": [
+   "education",
+   "any"
+  ],
+  "what_you_do": "Get homework help, SAT workshops, job training and field trips after school. In Fit For Gold, you can tutor or mentor young kids for paid work experience and high school credit.",
+  "min_age": 13,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "Ages 13 to 17. The center serves Hawthorne, Lawndale and El Segundo.",
+  "paid_type": "mixed",
+  "pay_detail": "Center services are at no cost. Fit For Gold offers paid work experience. The rate is not stated.",
+  "season": "year-round",
+  "duration": "Monday to Friday, 3 to 6 p.m.",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline is listed. The center has set weekly hours.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Call (310) 970-7001 or visit 3901 W. El Segundo Blvd., Hawthorne. The pages do not list sign-up steps.",
+  "needs_work_permit": true,
+  "url": "https://www.southbay1stop.org/hawthorne-teen-center",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.southbay1stop.org/hawthorne-teen-center",
+   "https://southbayyouth.org/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 2,
+  "notes": "Ask how to get a Fit For Gold spot, since the pages do not say how many there are.",
+  "verified_on_label": "Nov 3, 2026"
+ },
+ {
   "id": "hayward-area-historical-society-volunteers",
   "name": "Hayward Area Historical Society Volunteers",
   "org": "Hayward Area Historical Society",
@@ -44587,6 +44748,47 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "inglewood-teen-center",
+  "name": "Inglewood Teen Center",
+  "org": "South Bay Workforce Investment Board",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Inglewood, CA",
+  "type": "paid-youth-program",
+  "fields": [
+   "education",
+   "any"
+  ],
+  "what_you_do": "Get tutoring, college prep, leadership workshops and job help after school. In Fit For Gold, you can tutor or mentor young kids for paid work experience and high school credit.",
+  "min_age": 13,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "You must be 13 to 17. The center is for teens in Inglewood, Hawthorne, Lawndale and El Segundo.",
+  "paid_type": "mixed",
+  "pay_detail": "Center services are at no cost. Fit For Gold offers paid work experience. The rate is not stated.",
+  "season": "year-round",
+  "duration": "Monday to Thursday, 3 to 6 p.m.",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline is listed. The center has set weekly hours.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Call (310) 680-3702 or visit 101 W. Manchester Blvd. (lower level), Inglewood. The pages do not list sign-up steps.",
+  "needs_work_permit": true,
+  "url": "https://www.southbay1stop.org/inglewood-teen-center",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.southbay1stop.org/inglewood-teen-center",
+   "https://southbayyouth.org/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 2,
+  "notes": "Ask how to get a Fit For Gold spot, since the pages do not say how many there are. One page lists the phone as (310) 680-3701, so try that if the first number does not work.",
+  "verified_on_label": "Nov 3, 2026"
+ },
+ {
   "id": "inl-future-corps-high-school-internship",
   "name": "K-12 STEM Future Corps (INL high school internship)",
   "org": "Idaho National Laboratory",
@@ -47920,6 +48122,46 @@
   "verified_on": "2026-10-10",
   "apply_url": null,
   "verified_on_label": "Oct 10, 2026"
+ },
+ {
+  "id": "la-county-arboretum-student-volunteer",
+  "name": "Student Volunteer Program",
+  "org": "The Arboretum (Los Angeles County Arboretum and Botanic Garden)",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Arcadia, CA",
+  "type": "volunteer",
+  "fields": [
+   "environment",
+   "science"
+  ],
+  "what_you_do": "Help in the gardens, at the visitor desk, in the office or at one-day events. You can earn service hours for school.",
+  "min_age": 14,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "High school students. You must be at least 14.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer position with no pay. The Live Scan fingerprint cost is not listed.",
+  "season": "year-round",
+  "duration": "No set hours are listed.",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "The page says it is accepting applications as of Nov 3, 2026. The program runs all year, and no deadline is listed.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the Student Volunteer application with its three forms. Do the Live Scan. Email it all to the Volunteer Coordinator. The coordinator sets up an interview to place you. Questions: 626.821.3222.",
+  "needs_work_permit": false,
+  "url": "https://arboretum.org/support-3/volunteer/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://arboretum.org/support-3/volunteer/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 2,
+  "notes": "LA County requires all volunteers to be at least 14, with no exceptions. The Arboretum is at 301 North Baldwin Ave, Arcadia.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "regions": [
@@ -63732,6 +63974,46 @@
   "priority": 2,
   "notes": "The dates and deadline come from the 2026 news release on the Montana Tech site. The program page says Montana high school students are invited to apply. Watch for a new release around February 2027.",
   "verified_on_label": "Oct 13, 2026"
+ },
+ {
+  "id": "monterey-park-library-community-volunteer",
+  "name": "Library Community Volunteer (14 and up)",
+  "org": "Monterey Park Bruggemeyer Library",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Monterey Park, CA",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "any"
+  ],
+  "what_you_do": "Do a variety of tasks around the library. Jobs are given out as they are needed, and training is provided.",
+  "min_age": 14,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be 14 or older. If you are under 18, a parent or guardian must say yes.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "The page does not state a time commitment",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline is listed as of Nov 3, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the volunteer application on the page, or pick one up at any library information desk. Questions: 626-307-1269.",
+  "needs_work_permit": false,
+  "url": "https://www.montereypark.ca.gov/299/Volunteering",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.montereypark.ca.gov/299/Volunteering"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 2,
+  "notes": "This page is for all volunteers, not only teens. The library is at 318 S. Ramona Avenue.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "montgomery-county-recreation-seasonal-jobs",
@@ -86497,6 +86779,45 @@
   "verified_on_label": "Oct 12, 2026"
  },
  {
+  "id": "providence-cedars-sinai-tarzana-volunteer",
+  "name": "Providence Cedars-Sinai Tarzana Volunteer Program (16 and up)",
+  "org": "Providence Cedars-Sinai Tarzana Medical Center",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Tarzana, Los Angeles, CA",
+  "type": "volunteer",
+  "fields": [
+   "health"
+  ],
+  "what_you_do": "Volunteer at the hospital in four-hour shifts, at least once a week. The Emergency Department is only for volunteers 19 or older.",
+  "min_age": 16,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be at least 16. People of all backgrounds and abilities are welcome.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. The uniform fee is $25.",
+  "season": "year-round",
+  "duration": "At least six months or 100 hours, and at least four hours a week",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The hospital stopped taking new applications on Aug 24, 2026. No reopening date is posted as of Nov 3, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "When it reopens, fill out the short online application. You then get the full application by email, have a talk with staff, get health clearance and go to orientation. Questions: 818-708-5176.",
+  "needs_work_permit": false,
+  "url": "https://providence.org/locations/tarzana-medical-center/volunteers",
+  "apply_url": "https://www.volgistics.com/appform/711134463",
+  "sources_fetched": [
+   "https://providence.org/locations/tarzana-medical-center/volunteers"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 2,
+  "notes": "You need a TB test each year, a COVID-19 vaccine and a booster. The steps take about 5 to 6 weeks.",
+  "verified_on_label": "Nov 3, 2026"
+ },
+ {
   "id": "providence-saint-joseph-burbank-volunteer",
   "name": "Providence Saint Joseph Medical Center Volunteer (16 and up)",
   "org": "Providence Saint Joseph Medical Center",
@@ -87802,6 +88123,46 @@
    "https://www.washoecountylibrary.us/teens/volunteen.php"
   ],
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "rep-ted-lieu-youth-advisory-council",
+  "name": "Rep. Ted Lieu Youth Advisory Council",
+  "org": "Office of U.S. Representative Ted Lieu",
+  "regions": [
+   "los-angeles"
+  ],
+  "city": "Los Angeles County, CA (Rep. Lieu's district)",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Talk about issues with other students. Suggest bills for the Congressman to support. Work with his staff on issues that matter to young people in the district.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "Students in grades 9 to 12 who live or go to school in Rep. Lieu's district. Incoming 9th graders can apply with 8th grade transcripts.",
+  "paid_type": "not-stated",
+  "pay_detail": "The page does not mention pay",
+  "season": "school-year",
+  "duration": "One-year term, up to two years. Eight meetings a year.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Applications for 2026-2027 are closed. Dates for the next cycle are not posted as of Nov 3, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Send it all at one time: transcript, two letters from people not in your family, a one-page essay, a resume and a signed consent form. If it is complete, you get a 15-minute interview.",
+  "needs_work_permit": null,
+  "url": "https://lieu.house.gov/helping-you/youth-advisory-council",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://lieu.house.gov/helping-you/youth-advisory-council"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 2,
+  "notes": "You must attend 6 of 8 meetings. The page names two different district numbers and does not list cities. Ask if you are in the district: yac.lieu@mail.house.gov or (323) 651-1040.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "rfu-campmed",
