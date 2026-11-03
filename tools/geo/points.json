@@ -239,6 +239,17 @@
    ]
   },
   {
+   "key": "Arcadia, CA",
+   "state": "CA",
+   "lat": 34.1327,
+   "lon": -118.0363,
+   "precision": "city",
+   "ids": [
+    "arcadia-public-library-teen-volunteering",
+    "la-county-arboretum-student-volunteer"
+   ]
+  },
+  {
    "key": "Atwater, CA",
    "state": "CA",
    "lat": 37.3507,
@@ -718,6 +729,16 @@
    ]
   },
   {
+   "key": "Hawthorne, CA",
+   "state": "CA",
+   "lat": 33.9148,
+   "lon": -118.3481,
+   "precision": "city",
+   "ids": [
+    "hawthorne-teen-center"
+   ]
+  },
+  {
    "key": "Hayward, CA",
    "state": "CA",
    "lat": 37.6268,
@@ -770,6 +791,7 @@
    "lon": -118.3443,
    "precision": "city",
    "ids": [
+    "inglewood-teen-center",
     "south-bay-youth-services"
    ]
   },
@@ -794,6 +816,16 @@
     "uci-peri-institute-stem-education-research",
     "uci-scrip-high-school-research-internship",
     "uci-som-summer-online-research-program"
+   ]
+  },
+  {
+   "key": "La Cañada Flintridge, CA",
+   "state": "CA",
+   "lat": 34.2112,
+   "lon": -118.2001,
+   "precision": "city",
+   "ids": [
+    "descanso-gardens-student-community-service-days"
    ]
   },
   {
@@ -996,7 +1028,8 @@
     "la-county-library-teen-volunteer",
     "la-county-youth-at-work",
     "la-county-youth-entrepreneurship-academy",
-    "la-metro-youth-council"
+    "la-metro-youth-council",
+    "rep-ted-lieu-youth-advisory-council"
    ]
   },
   {
@@ -1032,6 +1065,7 @@
     "otis-college-summer-of-art",
     "pacoima-beautiful-agua-university",
     "pacoima-beautiful-junior-field-rangers",
+    "providence-cedars-sinai-tarzana-volunteer",
     "regeneron-isef",
     "skirball-teen-advisory-committee",
     "teen-line-volunteer-listener",
@@ -1126,6 +1160,16 @@
    "ids": [
     "mission-viejo-library-teen-volunteers",
     "saddleback-college-dual-enrollment"
+   ]
+  },
+  {
+   "key": "Monterey Park, CA",
+   "state": "CA",
+   "lat": 34.0484,
+   "lon": -118.1332,
+   "precision": "city",
+   "ids": [
+    "monterey-park-library-community-volunteer"
    ]
   },
   {
@@ -7534,6 +7578,7 @@
    "alive-center-teen-volunteers-and-advisory-board",
    "anderson-humane-teen-volunteers-school-service",
    "arc-nextgen-youth-workforce",
+   "beach-cities-health-district-youth-advisory-council",
    "bgc-ncil-industry-clubs",
    "bgc-ncil-keystone-club-youth-of-the-year",
    "boston-mit-lincoln-lab-llrise-radar",
