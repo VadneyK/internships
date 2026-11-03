@@ -32119,13 +32119,13 @@
   "status": "closed-expect-reopen",
   "opens_iso": null,
   "deadline_text": "Applications for 2027 open in December 2026. Deadlines: noncredit sessions May 3, 2027; Pre-Med Institute Feb 1, 2027; credit Summer College April 20 and June 7, 2027.",
-  "deadline_iso": null,
+  "deadline_iso": "2027-05-03",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Choose a program and course, review costs, then start the online application (transcript, recommendations, $75 fee). After acceptance, complete the pre-arrival checklist and pay the $350 enrollment deposit.",
   "needs_work_permit": null,
   "url": "https://precollege.emory.edu/index.html",
   "priority": 3,
-  "notes": "Expensive. The nearest deadline is the Pre-Med Institute on Feb 1, 2027. Financial aid deadline was May 1 in 2026. Information sessions are in November and December 2026.",
+  "notes": "Expensive. The nearest deadline is the Pre-Med Institute on Feb 1, 2027 (deadline_iso shows the main May 3 date). Financial aid deadline was May 1 in 2026. Information sessions are in November and December 2026.",
   "sources_fetched": [
    "https://precollege.emory.edu/index.html",
    "https://precollege.emory.edu/cost-and-scholarships/index.html"
