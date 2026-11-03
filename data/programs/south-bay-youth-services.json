@@ -1,0 +1,40 @@
+{
+  "id": "south-bay-youth-services",
+  "name": "JOBS for Youth",
+  "org": "South Bay Workforce Investment Board",
+  "regions": [
+    "los-angeles"
+  ],
+  "city": "Inglewood, CA",
+  "type": "paid-youth-program",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Get job training, work experience and internships, and help finding a job. You can also get help with career plans and school.",
+  "min_age": 14,
+  "max_age": 24,
+  "grades": null,
+  "who_can_apply": "Youth ages 14 to 24 in the South Bay, in school or out of school. The pages do not list a city or income rule.",
+  "paid_type": "mixed",
+  "pay_detail": "Services are at no cost. Paid work experience is offered. The rate is not stated.",
+  "season": "year-round",
+  "duration": null,
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline is listed. Use the sign-up form or call a job coordinator.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the sign-up form, or call 310-680-3700 to reach a job coordinator in your area.",
+  "needs_work_permit": true,
+  "url": "https://www.southbay1stop.org/youth-services",
+  "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLSf7oj9PiQDSiH7sNoBooghWKjiSChZl050QxvDSNJOP6_kwGA/viewform",
+  "sources_fetched": [
+    "https://www.southbay1stop.org/youth-services",
+    "https://southbayyouth.org/",
+    "https://www.sbwib.org/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-03",
+  "priority": 2,
+  "notes": "The office is at 110 S. La Brea Ave., 3rd Floor, Inglewood. Ask about the STEP work program too. Age rules for each part may differ, so ask which ones fit you."
+}

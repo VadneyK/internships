@@ -87,6 +87,7 @@ ann-arbor-wtmc-washtenaw-technical-middle-college	Ann Arbor, MI (Washtenaw Count
 ann-arbor-ymca-youth-volunteer-corps	Ann Arbor, MI	point	Ann Arbor, MI	city	place:city	
 ann-arbor-ypsilanti-library-summer-youth-volunteer-corps	Ypsilanti, MI	point	Ypsilanti, MI	city	place:city	
 ann-arbor-ypsilanti-library-teen-advisory-group	Ypsilanti, MI	point	Ypsilanti, MI	city	place:city	
+antelope-valley-medical-center-teen-volunteer	Lancaster, CA	point	Lancaster, CA	city	place:city	
 aquarium-of-the-pacific-voluntens	Long Beach, CA	point	Long Beach, CA	city	place:city	
 arapahoe-douglas-works-future-u-young-adult	Centennial, CO	point	Centennial, CO	city	place:city	
 arapahoe-libraries-teen-volunteer	Arapahoe County, CO (Denver metro)	point	Arapahoe County, CO	county	county	
@@ -383,6 +384,8 @@ cei-summer-stem-bridge-idaho-falls	Idaho Falls, ID	point	Idaho Falls, ID	city	pl
 central-oregon-camp-lead-heart-of-oregon-corps	Near Suttle Lake, west of Sisters, OR	point	Sisters, OR	city	place:city	override: Suttle Lake is a lake in the forest about 20 km west of Sisters with no Gazetteer entry; text names Sisters as the reference town
 central-oregon-go-lead-winter-program	Central Oregon	multi				sub-state region
 central-oregon-youth-conservation-corps	Bend, Redmond, Prineville, Sisters, Madras, La Pine and Warm Springs, OR	multi				several places before the state
+cerritos-college-individual-dual-enrollment	Norwalk, CA	point	Norwalk, CA	city	place:city	
+cerritos-library-volunteens	Cerritos, CA	point	Cerritos, CA	city	place:city	
 chabot-dual-enrollment	Hayward, CA	point	Hayward, CA	city	place:city	
 chabot-galaxy-explorers	Oakland, CA (10000 Skyline Blvd)	point	Oakland, CA	city	place:city	
 chaffey-college-dual-enrollment	Rancho Cucamonga, Chino and Fontana, CA	multi				several places before the state
@@ -541,6 +544,7 @@ cincinnati-uc-health-teen-volunteers	Cincinnati and West Chester, OH	multi				se
 cincinnati-uc-medical-sciences-summer-institute	Cincinnati, OH	point	Cincinnati, OH	city	place:city	
 cincinnati-urban-league-summer-employment	Cincinnati, OH	point	Cincinnati, OH	city	place:city	
 cincinnati-zoo-zooteen-volunteer	Cincinnati, OH	point	Cincinnati, OH	city	place:city	
+citrus-college-dual-enrollment	Glendora, CA	point	Glendora, CA	city	place:city	
 civil-air-patrol-california-wing-cadets	California (squadrons in eight regional groups, Los Angeles to San Diego)	statewide	CA			
 civil-air-patrol-georgia-wing-cadets	Georgia (squadrons across the state; wing office at Dobbins Air Reserve Base, Marietta, GA)	statewide	GA			
 clark-planetarium-youth-volunteer	Salt Lake City, UT	point	Salt Lake City, UT	city	place:city	
@@ -1582,6 +1586,7 @@ mountain-view-teen-volunteer-summer-program	Mountain View, CA	point	Mountain Vie
 mountain-view-youth-advisory-committee	Mountain View, CA	point	Mountain View, CA	city	place:city	
 msm-grow-cells-cancer-research-summer	Atlanta, GA	point	Atlanta, GA	city	place:city	
 msm-health-careers-high-school-ambassadors	Atlanta, GA	point	Atlanta, GA	city	place:city	
+mt-san-antonio-college-special-admit	Walnut, CA	point	Walnut, CA	city	place:city	
 mt-san-jacinto-college-dual-concurrent-enrollment	San Jacinto, Menifee Valley, San Gorgonio Pass and Temecula Valley campuses, CA	multi				several places before the state
 mtc-high-school-internship-program	Bay Area (virtual sessions, final session in San Francisco)	multi				override: The Bay Area is a nine county region, not one place
 murfreesboro-ascension-saint-thomas-rutherford-junior-volunteer	Murfreesboro, TN	point	Murfreesboro, TN	city	place:city	
@@ -1961,6 +1966,7 @@ palo-alto-art-center-counselor-in-training	Palo Alto, CA	point	Palo Alto, CA	cit
 palo-alto-library-tlab	Palo Alto, CA	point	Palo Alto, CA	city	place:city	
 palo-alto-teen-advisory-board	Palo Alto, CA	point	Palo Alto, CA	city	place:city	
 palo-alto-youth-council	Palo Alto, CA	point	Palo Alto, CA	city	place:city	
+palos-verdes-library-teen-advisory-council	Rolling Hills Estates, CA	point	Rolling Hills Estates, CA	city	place:city	
 pasadena-city-college-concurrent-dual-enrollment	Pasadena, CA	point	Pasadena, CA	city	place:city	
 pasadena-humane-teen-volunteers-15-and-up	Pasadena, CA	point	Pasadena, CA	city	place:city	
 pasadena-public-library-the-rose-teen-magazine	Pasadena, CA	point	Pasadena, CA	city	place:city	
@@ -2123,6 +2129,7 @@ pretend-city-volunteer-and-teen-programs	Irvine, CA	point	Irvine, CA	city	place:
 prince-william-public-libraries-student-volunteers	Prince William County, VA	point	Prince William County, VA	county	county	
 princeton-public-library-teen-advisory-board	Princeton, NJ	point	Princeton, NJ	city	place:place	
 princeton-public-library-teen-summer-volunteer	Princeton, NJ	point	Princeton, NJ	city	place:place	
+providence-saint-joseph-burbank-volunteer	Burbank, CA	point	Burbank, CA	city	place:city	
 qpl-peer-to-peer-service-collective	Queens, NY	point	Queens, NY	county	Queens is a borough with no Gazetteer place; same area as Queens County	alias: Queens is a borough with no Gazetteer place; same area as Queens County
 qpl-teen-volunteer	Queens, NY	point	Queens, NY	county	Queens is a borough with no Gazetteer place; same area as Queens County	alias: Queens is a borough with no Gazetteer place; same area as Queens County
 raleigh-digital-connectors	Raleigh, NC	point	Raleigh, NC	city	place:city	
@@ -2175,6 +2182,7 @@ richmond-vcu-pharmacy-summer-scholars	Richmond, VA	point	Richmond, VA	city	place
 richmond-youth-civic-engagement-program	Richmond, BC	point	Richmond, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBJFI, https://geogratis.gc.ca/services/geoname/en/geonames/JBJFI	
 richmond-youth-media-program	Richmond, BC	point	Richmond, BC	manual	Canadian Geographical Names Database, Natural Resources Canada, id JBJFI, https://geogratis.gc.ca/services/geoname/en/geonames/JBJFI	
 richmond-youthworks-work-experience	Richmond, CA (330 25th St)	point	Richmond, CA	city	place:city	
+rio-hondo-college-dual-enrollment	Whittier, CA	point	Whittier, CA	city	place:city	
 rising-sun-climate-careers	Oakland, CA and Bay Area	point	Oakland, CA	city	place:city	override: Oakland is the named city; Bay Area is the wider region
 river-forest-library-tween-teen-volunteers-book-buddies	River Forest, IL	point	River Forest, IL	city	place:village	
 riverside-city-college-dual-concurrent-enrollment	Riverside, CA	point	Riverside, CA	city	place:city	
@@ -2450,6 +2458,7 @@ smud-hs-internship	Sacramento, CA	point	Sacramento, CA	city	place:city
 socorro-new-mexico-tech-buzzcamp	Socorro, NM	point	Socorro, NM	city	place:city	
 socorro-new-mexico-tech-summer-stem-experience	Socorro, NM	point	Socorro, NM	city	place:city	
 south-bay-youth-one-stop-work-experience	Inglewood and Hawthorne, CA	multi				several places before the state
+south-bay-youth-services	Inglewood, CA	point	Inglewood, CA	city	place:city	
 south-central-pa-leaf-project-youth-summer-employment	Landisburg, PA	point	Landisburg, PA	city	place:borough	
 south-dakota-4h-state-ambassador-program	Statewide (Brookings, SD)	statewide	SD			
 south-dakota-dlr-wioa-youth-program	Statewide, SD	statewide	SD			
