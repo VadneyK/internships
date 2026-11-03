@@ -1,13 +1,13 @@
 {
   "id": "naperville-library-teen-volunteers-and-tag",
-  "grades": "Volunteers: 9th grade and up. TAG: grades 6 to 12",
-  "apply_url": "https://app.betterimpact.com/Application?OrganizationGuid=66e004a7-4f9c-4c85-9e20-9c70c6451f0c&ApplicationFormNumber=3",
+  "grades": "6 to 12",
+  "apply_url": "https://app.betterimpact.com/Application?OrganizationGuid=66e004a7-4f9c-4c85-9e20-9c70c6451f0c&ApplicationFormNumber=1",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
   "duration": "TAG meets once a month for two hours at rotating library locations",
-  "pay_detail": "Unpaid. TAG members earn community service hours for each meeting.",
+  "pay_detail": "Unpaid. TAG members take part in service projects.",
   "name": "Teen Volunteers and Teen Advisory Group (TAG)",
   "org": "Naperville Public Library",
   "regions": [
@@ -22,17 +22,18 @@
   "what_you_do": "Volunteer at the library. Or join TAG, a monthly group. Teens work with teen librarians on events, books, games and teen spaces.",
   "min_age": null,
   "max_age": null,
-  "who_can_apply": "Volunteers must be in 9th grade or above. You do not need a Naperville library card. TAG is open to teens in grades 6 through 12.",
+  "who_can_apply": "Volunteers must be in grade 6 or above. You do not need a Naperville library card. TAG is open to teens in grades 6 through 12.",
   "paid_type": "unpaid",
   "season": "year-round",
   "status": "year-round",
   "deadline_text": "No deadline stated on the page.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "Volunteers fill out the online volunteer application. For TAG, write to the teen librarians and ask how to attend. The email is teenlibrarians@naperville-lib.org.",
+  "how_to_apply": "Fill out the online Teen Volunteer Application. For TAG, say you are interested on the application and send the TAG form at the end. Staff review your application.",
   "url": "https://www.naperville-lib.org/161/Volunteer",
   "notes": "The volunteer coordinator's phone on the page is 630-637-2226.",
   "sources_fetched": [
-    "https://www.naperville-lib.org/161/Volunteer"
+    "https://www.naperville-lib.org/161/Volunteer",
+    "https://www.naperville-lib.org/165"
   ]
 }

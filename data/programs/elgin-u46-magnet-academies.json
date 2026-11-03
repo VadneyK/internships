@@ -23,11 +23,11 @@
   "pay_detail": "Free public school program.",
   "season": "school-year",
   "duration": "Four years of high school",
-  "status": "open-now",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Application open Oct 1 to Oct 31, 2026, for fall 2027. The lottery runs Nov 9, 2026, and results are emailed that evening.",
-  "deadline_iso": "2026-10-31",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_text": "The last application ran Oct 1 to Oct 31, 2026, for fall 2027. The lottery runs Nov 9, 2026, and results are emailed that evening. Next dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "A parent or guardian fills out the online application with a personal email. Students new to U-46 add transcripts. Seats go by lottery, with extra entries for things like good attendance, a 3.75 GPA or living near the school.",
   "needs_work_permit": null,
   "url": "https://www.u-46.org/page/magnet-academies",
@@ -37,8 +37,8 @@
     "https://www.u-46.org/o/sdu/page/application-requirements-instructions",
     "https://www.u-46.org/page/career-and-technical-education"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-18",
   "priority": 1,
-  "notes": "Students who are homeless or in a temporary living situation get in automatically if they meet the GPA rule. Having a brother or sister in the academy no longer helps. Help: magnetacademies@u-46.org or 847-907-6030."
+  "notes": "Students who are homeless or in a temporary living situation get in automatically if they meet the GPA rule. Having a brother or sister in the academy no longer helps. Help: magnetacademies@u-46.org or 847-907-6030. Dates shown are from the fall 2026 cycle. As of Nov 3, 2026, the U-46 site would not load for automated reading, so confirm these details first."
 }

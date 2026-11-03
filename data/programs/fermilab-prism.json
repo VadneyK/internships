@@ -1,10 +1,10 @@
 {
-  "opens_iso": "2027-01-12",
+  "opens_iso": null,
   "apply_url": "https://fermilab.wd5.myworkdayjobs.com/en-US/FermilabCareers",
   "min_age": null,
   "max_age": null,
   "grades": "Rising high school senior (senior in 2027-28) or 2027 high school graduate",
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-09",
   "needs_work_permit": null,
   "id": "fermilab-prism",
@@ -27,10 +27,10 @@
   "pay_detail": "$500 per week stipend. Housing is not provided; transportation assistance is available.",
   "season": "summer",
   "duration": "4 weeks, July 12 to Aug 6, 2027",
-  "status": "opens-soon",
+  "status": "unconfirmed",
   "deadline_text": "Applications open Jan 12, 2027 and close Mar 1, 2027 (recommendation letter also due Mar 1). Offers Apr 12, 2027; accept by Apr 21, 2027.",
-  "deadline_iso": "2027-03-01",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
   "how_to_apply": "Online application in Fermilab's Workday portal, a supplemental questionnaire, a PDF list of your STEM courses uploaded in the Resume section, and one letter from a STEM teacher or STEM club advisor. You cannot upload missing items after you submit.",
   "url": "https://internships.fnal.gov/fermilab-program-for-research-innovation-and-stem-mentorship-prism/",
   "sources_fetched": [
@@ -39,5 +39,5 @@
     "https://internships.fnal.gov/fermilab-program-for-research-innovation-and-stem-mentorship-prism/"
   ],
   "priority": 2,
-  "notes": "The apply link only works during the application window. Recommenders get an email upload link. It is sent only on weekdays during business hours, so line up your letter writer early. A walkthrough video is on the page."
+  "notes": "The apply link only works during the application window. Recommenders get an email upload link. It is sent only on weekdays during business hours, so line up your letter writer early. A walkthrough video is on the page. As of Nov 3, 2026, the Fermilab site blocked automated reading, so confirm these details first."
 }
