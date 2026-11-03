@@ -22,7 +22,7 @@ const PAGE_ALLOW = [
   // Added 2026-10-12 for the 77 Plains state cards: apply2.ksu.edu/register/summerprogramshhs2027 is the one 2027 interest list that both K-State College of Health and Human Sciences camps send you to.
   ["manhattan-ks-k-state-health-professions-exploration-program", "manhattan-ks-k-state-summer-fashion-institute"], // apply2.ksu.edu/register/summerprogramshhs2027: one official interest list covers both K-State camps
   // Added 2026-10-12 for tickets r3-data-content-6 and r3-data-content-7: Microsoft Forms uses one response page address and tells forms apart only by the id in the query, which this check ignores.
-  ["santa-barbara-public-library-teens-teach-tech", "wake-tech-wakeworks-youth-apprenticeship-academy"], // forms.cloud.microsoft/pages/responsepage.aspx: each card has its own form id in the query
+  ["cpl-teen-school-year-assistantships", "santa-barbara-public-library-teens-teach-tech", "wake-tech-wakeworks-youth-apprenticeship-academy"], // forms.cloud.microsoft/pages/responsepage.aspx: each card has its own form id in the query
   ["ocwdb-ready-set-oc-young-adult", "seattle-parks-career-explorations"], // forms.office.com/pages/responsepage.aspx: each card has its own form id in the query
   // Added 2026-10-11 for ticket p7-regions-1.
   ["portland-oregon-humane-youth-volunteer", "salem-oregon-humane-youth-volunteer"], // oregonhumane.org/get-involved/volunteer/youths-12-17: one youth volunteer page covers the Portland and Salem sites
