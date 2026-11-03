@@ -169,8 +169,7 @@ const BUDGET = {
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). insights.html limit 155200 to 155900.
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). insights.html limit 155900 to 156000.
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL). insights.html limit 156000 to 156300.
-  // 2026-11-03: New York City re-reads, with room for the Chicago re-read that follows. PENDING PERSON APPROVAL. 166000 to 168000.
-  "insights.html": { ceiling: 168000, reason: "lib.js, common.js and insights.js" },
+  "insights.html": { ceiling: 166000, reason: "lib.js, common.js and insights.js" },
   // 2026-10-16: Add to calendar on deadlines, issue #10 (lib.js: reminders, Google Calendar link, which cards get it; about 1.9 KB) (PENDING PERSON APPROVAL). insights.html limit 162600 to 164500 (remeasured 2026-10-19 after main merged in with PRs 42 and 36).
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you interview.html limit 161300 to 162400.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. interview.html limit 162500 to 163000.
