@@ -67,7 +67,8 @@ const TABLE = {
   // 2026-11-02: 12 second-pass SoCal cards (2,877 programs), stacked on PR 125. PENDING PERSON APPROVAL. 518500 to 520500.
   // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 520500 to 521000.
   // 2026-11-03: 27 new Los Angeles cards (2,904 programs), stacked on PR 139. PENDING PERSON APPROVAL. 521000 to 526000.
-  "data/entries-core.json": { ceiling: 526000, reason: "data file, 368201 bytes measured 2026-10-10" },
+  // 2026-11-03: New York City re-reads, with room for the Chicago re-read that follows. PENDING PERSON APPROVAL. 526000 to 528000.
+  "data/entries-core.json": { ceiling: 528000, reason: "data file, 368201 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-detail.json ceiling 1731000 to 1772700.
   // 2026-10-13: four repointed links after the link check. data/entries-detail.json limit 1772700 to 1772900.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-detail.json limit 1772900 to 1823500.
@@ -111,7 +112,8 @@ const TABLE = {
   // 2026-11-02: 12 second-pass SoCal cards (2,877 programs), stacked on PR 125. PENDING PERSON APPROVAL. 2131500 to 2141500.
   // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 2141500 to 2144000.
   // 2026-11-03: 27 new Los Angeles cards (2,904 programs), stacked on PR 139. PENDING PERSON APPROVAL. 2144000 to 2161000.
-  "data/entries-detail.json": { ceiling: 2161000, reason: "data file, 1521373 bytes measured 2026-10-10" },
+  // 2026-11-03: New York City re-reads, with room for the Chicago re-read that follows. PENDING PERSON APPROVAL. 2161000 to 2175000.
+  "data/entries-detail.json": { ceiling: 2175000, reason: "data file, 1521373 bytes measured 2026-10-10" },
   "data/entries-home.json": { ceiling: 899400, reason: "data file, 817599 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-lite.json ceiling 2223100 to 2277600.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-lite.json limit 2277600 to 2341900.
@@ -153,7 +155,8 @@ const TABLE = {
   // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 2733500 to 2735000.
   // 2026-11-02: San Francisco re-reads, stacked on PR 135. PENDING PERSON APPROVAL. 2735000 to 2736500.
   // 2026-11-03: 27 new Los Angeles cards (2,904 programs), stacked on PR 139. PENDING PERSON APPROVAL. 2736500 to 2761500.
-  "data/entries-lite.json": { ceiling: 2761500, reason: "data file, 1937500 bytes measured 2026-10-10" },
+  // 2026-11-03: New York City re-reads, with room for the Chicago re-read that follows. PENDING PERSON APPROVAL. 2761500 to 2772000.
+  "data/entries-lite.json": { ceiling: 2772000, reason: "data file, 1937500 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json ceiling 697700 to 716100.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json limit 716100 to 736500.
   // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. data/entries-stats.json limit 736500 to 748900.
@@ -186,7 +189,8 @@ const TABLE = {
   // 2026-11-02: 12 second-pass SoCal cards (2,877 programs), stacked on PR 125. PENDING PERSON APPROVAL. 853500 to 856500.
   // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 856500 to 857000.
   // 2026-11-03: 27 new Los Angeles cards (2,904 programs), stacked on PR 139. PENDING PERSON APPROVAL. 857000 to 865200.
-  "data/entries-stats.json": { ceiling: 865200, reason: "data file, 606782 bytes measured 2026-10-10" },
+  // 2026-11-03: New York City re-reads, with room for the Chicago re-read that follows. PENDING PERSON APPROVAL. 865200 to 869000.
+  "data/entries-stats.json": { ceiling: 869000, reason: "data file, 606782 bytes measured 2026-10-10" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. data/entries.json ceiling 4567200 to 4677300.
   // 2026-10-13: four repointed links after the link check. data/entries.json limit 4677300 to 4677700.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. data/entries.json limit 4677700 to 4809900.
@@ -233,7 +237,8 @@ const TABLE = {
   // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 5642500 to 5646000.
   // 2026-11-02: East Bay re-reads, stacked on PR 132. PENDING PERSON APPROVAL. 5646000 to 5652000.
   // 2026-11-03: 27 new Los Angeles cards (2,904 programs), stacked on PR 139. PENDING PERSON APPROVAL. 5652000 to 5704000.
-  "data/entries.json": { ceiling: 5704000, reason: "data file, 3996617 bytes measured 2026-10-10" },
+  // 2026-11-03: New York City re-reads, with room for the Chicago re-read that follows. PENDING PERSON APPROVAL. 5704000 to 5730000.
+  "data/entries.json": { ceiling: 5730000, reason: "data file, 3996617 bytes measured 2026-10-10" },
   "data/expiring-dates.json": { ceiling: 1700, reason: "data file, 1530 bytes measured 2026-10-10" },
   "data/gaps.json": { ceiling: 5400, reason: "data file, 4832 bytes measured 2026-10-10" },
   "data/interview.json": { ceiling: 12400, reason: "data file, 11207 bytes measured 2026-10-10" },
@@ -282,12 +287,14 @@ const TABLE = {
   // 2026-11-02: second-pass SoCal cards, stacked on PR 125. PENDING PERSON APPROVAL. 667300 to 668500.
   // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 668500 to 669000.
   // 2026-11-03: 27 new Los Angeles cards (2,904 programs), stacked on PR 139. PENDING PERSON APPROVAL. 669000 to 675000.
-  "data/entries-map.json": { ceiling: 675000, reason: "data file for the Map page, 606587 bytes measured 2026-10-15 (PENDING PERSON APPROVAL)" },
+  // 2026-11-03: New York City re-reads, with room for the Chicago re-read that follows. PENDING PERSON APPROVAL. 675000 to 680000.
+  "data/entries-map.json": { ceiling: 680000, reason: "data file for the Map page, 606587 bytes measured 2026-10-15 (PENDING PERSON APPROVAL)" },
   // 2026-10-17 (after #44) hospitals, Davis and Yolo jobs, Boys and Girls Clubs and YMCA (+30 cards, 2,680 programs; PENDING PERSON APPROVAL) data/geo-overrides.json limit 19700 (four San Francisco city strings).
   // 2026-10-17 Midwest and Texas pages read in a real browser (+20 cards, 2,700 programs) data/geo-overrides.json limit 19700 to 19800 (one South suburban Cook County string). PENDING PERSON APPROVAL.
   "data/geo-overrides.json": { ceiling: 19800, reason: "hand fixes for the Map page geocoder (tools/geo), 17704 bytes measured 2026-10-15" },
   // 2026-11-03: 27 new Los Angeles cards add map points. PENDING PERSON APPROVAL. 163300 to 166000.
-  "data/map.json": { ceiling: 166000, reason: "data file, the Map page city points, 148390 bytes measured 2026-10-15" },
+  // 2026-11-03: New York City re-reads, with room for the Chicago re-read that follows. PENDING PERSON APPROVAL. 166000 to 168000.
+  "data/map.json": { ceiling: 168000, reason: "data file, the Map page city points, 148390 bytes measured 2026-10-15" },
   "assets/js/map.js": { ceiling: 42200, reason: "script, 27559 bytes measured 2026-10-15; 35987 bytes after the review fixes; 42185 bytes on 2026-10-20 with the start view for the Ignition page (Kentaro's instruction 2026-10-20), rounded up to 100" },
   "assets/js/map-gl.js": { ceiling: 19300, reason: "street map module (MapLibre style, dots, taps), loaded by map.js only with WebGL 2; 17465 bytes measured 2026-10-16 (PENDING PERSON APPROVAL)" },
   "assets/vendor/pmtiles.js": { ceiling: 20600, reason: "PMTiles 4.5.0 reader (dist/pmtiles.js, source map line removed), 20194 bytes measured 2026-10-16; a new version needs a new row" },
