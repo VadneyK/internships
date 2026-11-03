@@ -19,7 +19,7 @@
   "pay_detail": "Paid. The page does not state a rate.",
   "season": "summer",
   "duration": "6 weeks",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "The page says applications open the first week of February through mid-March each year. 2027 dates are not posted.",
   "deadline_iso": null,
@@ -32,8 +32,8 @@
     "https://www.atl.com/atlworkforceprograms-our-programs/",
     "https://www.atl.com/atlworkforceprograms-how-to-apply/"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "This is the airport's own summer job program, separate from the Mayor's Summer Youth Employment Program. The 2026 City of Atlanta job posting linked from the page was no longer showing. Questions: atlworkforce@atl.com."
+  "notes": "This is the airport's own summer job program, separate from the Mayor's Summer Youth Employment Program. The 2026 City of Atlanta job posting linked from the page was no longer showing. Questions: atlworkforce@atl.com. As of Nov 3, 2026, the airport site blocked automated reading, so confirm these details first."
 }

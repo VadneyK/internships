@@ -1857,8 +1857,8 @@
   ],
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on": "2026-11-03",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "altru-health-grand-forks-junior-volunteers",
@@ -3747,7 +3747,7 @@
  },
  {
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "id": "arc-nextgen-youth-workforce",
   "name": "NextGen Youth Workforce Program (WorkSource Atlanta Regional)",
   "org": "Atlanta Regional Commission, Atlanta Regional Workforce Development Board",
@@ -3782,7 +3782,7 @@
   ],
   "priority": 2,
   "notes": "This is the only Gwinnett and Clayton county youth workforce program found. The City of Atlanta, Fulton, DeKalb and Cobb are not on this page's county list; see their own entries. Providers named on the page: Cherokee Youth Works and Hearts to Nourish Hope. Georgia requires a work permit only under 16, and this program starts at 16. Re-read on 2026-10-09: the page says nothing about cost or pay, so the card is not in the paid group.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "arc-upward-bound",
@@ -4842,7 +4842,7 @@
   "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "grades": "Rising grades 10, 11 and 12",
   "max_age": null,
   "min_age": null,
@@ -4878,7 +4878,7 @@
   ],
   "priority": 2,
   "notes": "Expect applications to open around January again, as they did last year. The same group runs Leadership Connect all year. It is online and self-paced. Seniors who finish 3 levels can get a paid summer internship and a scholarship.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -4902,7 +4902,7 @@
   "pay_detail": "Paid. The page does not state a rate.",
   "season": "summer",
   "duration": "6 weeks",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "The page says applications open the first week of February through mid-March each year. 2027 dates are not posted.",
   "deadline_iso": null,
@@ -4915,10 +4915,10 @@
    "https://www.atl.com/atlworkforceprograms-our-programs/",
    "https://www.atl.com/atlworkforceprograms-how-to-apply/"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "This is the airport's own summer job program, separate from the Mayor's Summer Youth Employment Program. The 2026 City of Atlanta job posting linked from the page was no longer showing. Questions: atlworkforce@atl.com.",
+  "notes": "This is the airport's own summer job program, separate from the Mayor's Summer Youth Employment Program. The 2026 City of Atlanta job posting linked from the page was no longer showing. Questions: atlworkforce@atl.com. As of Nov 3, 2026, the airport site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 16, 2026"
  },
  {
@@ -4939,14 +4939,14 @@
   "grades": "11th and 12th grade",
   "who_can_apply": "High school juniors and seniors in Clayton County, Fulton County, or Atlanta city public schools.",
   "paid_type": "paid",
-  "pay_detail": "Paid, part-time. The page does not state a rate.",
+  "pay_detail": "Paid, part-time. A search preview of the airport page says $17 an hour, 20 hours a week. Confirm first.",
   "season": "school-year",
   "duration": null,
-  "status": "rolling",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Rolling. The page says applications are accepted based on the airport's needs and may vary each year.",
+  "deadline_text": "No dates are posted. In October 2026 the page said applications are accepted based on the airport's needs and may vary each year.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Ask the work-based learning teacher or the counselor at your school. You can also apply on your own on the City of Atlanta jobs site.",
   "needs_work_permit": null,
   "url": "https://www.atl.com/atlworkforceprograms-how-to-apply/",
@@ -4955,10 +4955,10 @@
    "https://www.atl.com/atlworkforceprograms-our-programs/",
    "https://www.atl.com/atlworkforceprograms-how-to-apply/"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "Ask your school's Work-Based Learning Coordinator first, since credit comes through your school. The airport's Registered Apprenticeship is for ages 18 and up, so it is not listed here. Questions: atlworkforce@atl.com.",
+  "notes": "Ask your school's Work-Based Learning Coordinator first, since credit comes through your school. The airport's Registered Apprenticeship is for ages 18 and up, so it is not listed here. Questions: atlworkforce@atl.com. As of Nov 3, 2026, the airport site blocked automated reading, so confirm these details first. The same preview says you must pass a background check and a drug test.",
   "verified_on_label": "Oct 16, 2026"
  },
  {
@@ -4996,11 +4996,11 @@
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "sources_fetched": [
    "https://atlantabg.org/volunteer/speak-volunteers/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "atlanta-botanical-garden-summer-high-school-internship",
@@ -5023,7 +5023,7 @@
   "duration": "7 weeks (June 2 to July 16 in 2026), 18 hours a week, Tuesday through Thursday",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "The Garden says to check back in December 2026 for Summer 2027 details.",
+  "deadline_text": "The 2026 application closed March 1, 2026. The Garden says to check back in December 2026 for Summer 2027 details. 2027 dates are not posted.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Submit the internship application and have a non-relative adult (teacher, mentor or boss) submit the recommendation form. Group interview at the Garden, then virtual orientation with a guardian. Questions: lboren@atlantabg.org.",
@@ -5036,17 +5036,17 @@
   ],
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "sources_fetched": [
    "https://atlantabg.org/school-tours/summer-high-school-internship/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "grades": "10 and 11",
   "max_age": 17,
   "min_age": 15,
@@ -5068,18 +5068,19 @@
   "paid_type": "not-stated",
   "pay_detail": "Pay is not stated on the page.",
   "season": "summer",
-  "duration": "Not stated",
+  "duration": "June 2 to July 16 in 2026",
   "status": "unconfirmed",
-  "deadline_text": "No dates or deadline are posted on the page.",
-  "deadline_confidence": "unknown",
+  "deadline_text": "The 2026 form lists the program as June 2 to July 16, 2026. It gives no deadline. 2027 dates are not posted.",
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "The student fills out the application linked on the program page. A parent or guardian approves it. Call 404-584-8126 to ask about dates and nominations.",
   "url": "https://atlantabusinessleague.org/student-business-shadow-project-sbsp/",
   "priority": 2,
-  "notes": "Pay, dates, cost and site locations are not listed, so call to confirm first. Atlanta Business League is at 931 Martin Luther King Jr. Dr. NW. The summer season is from the program name on search results, not the page; confirm.",
+  "notes": "Pay, cost and site locations are not listed, so call to confirm first. Atlanta Business League is at 931 Martin Luther King Jr. Dr. NW. As of Nov 3, 2026, the form on the page is still the 2026 one.",
   "sources_fetched": [
-   "https://atlantabusinessleague.org/student-business-shadow-project-sbsp/"
+   "https://atlantabusinessleague.org/student-business-shadow-project-sbsp/",
+   "https://docs.google.com/forms/d/e/1FAIpQLScLz_56g-s9YSiyAUAzFsrjX_y8_ZPeuOgvU5LtamblU4JDAg/viewform"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "atlanta-chris-180-youth-homelessness-and-housing",
@@ -5116,10 +5117,10 @@
    "https://chris180.org/services/youth-homelessness-housing/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Support and housing, not a job. Call to ask about ages for the drop-in center, hours and where it is. If you are in danger right now, call 911.",
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "atlanta-college-and-career-academy",
@@ -5146,7 +5147,7 @@
   "season": "school-year",
   "duration": "Part of the school day: morning group 9:15 to 11:30 am, afternoon group 12:30 to 2:45 pm",
   "status": "unconfirmed",
-  "deadline_text": "The FAQ says students can apply online from November to March. Exact dates and year not posted on the page.",
+  "deadline_text": "The home page says to apply now for the 2027 to 2028 school year, with no closing date. The FAQ says students can apply online from November to March. Exact dates are not posted.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Take the YouScience career quiz (recommended). Talk to your school counselor. Then submit the online application. Students with an IEP or 504 plan also need a team review.",
@@ -5155,13 +5156,14 @@
   "apply_url": null,
   "sources_fetched": [
    "https://acca.atlantapublicschools.us",
-   "https://acca.atlantapublicschools.us/our-school/acca-application-inquiry/faq"
+   "https://acca.atlantapublicschools.us/our-school/acca-application-inquiry/faq",
+   "https://acca.atlantapublicschools.us/our-school/acca-application-inquiry"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
-  "notes": "Career paths include HVAC, Culinary Arts, Dental Science and Patient Care. Atlanta Technical College runs the dual enrollment paths. They include Carpentry and Cybersecurity. The page lists more. You can be denied if there is no room or you miss the minimums.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "Career paths include HVAC, Culinary Arts, Dental Science and Patient Care. Atlanta Technical College runs the dual enrollment paths. They include Carpentry and Cybersecurity. The page lists more. You can be denied if there is no room or you miss the minimums. As of Nov 3, 2026, the Apply Now buttons on the home page did not open a form, so ask your counselor.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "atlanta-community-food-bank-teen-volunteers",
@@ -5198,10 +5200,10 @@
    "https://www.acfb.org/volunteer/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "notes": "Also open to younger kids. Wear closed-toe, closed-heel shoes. Stay for the whole shift. Come on time because late volunteers more than 30 minutes cannot serve. Special events may have other age rules.",
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "atlanta-grady-teen-experience-leadership-program",
@@ -5237,10 +5239,10 @@
    "https://www.gradyhealth.org/health-outcomes-at-grady/teen-experience-and-leadership-program/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "notes": "The page says it is closed for now. If you get in, you need a TB blood test before you start. In 2026 they held free online help hours two days a week while the form was open. Late or missing forms may not be read.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "atlanta-gsu-institute-on-neuroscience",
@@ -5279,10 +5281,10 @@
    "https://sites.gsu.edu/ion-teach/application/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Funding for 2026 came from the Army Educational Outreach Program, so the dates and stipend can change from year to year. Bring your own meals and get yourself to downtown Atlanta daily. No housing is provided. Join the ION email list on the home page to hear about 2027.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "atlanta-gsu-neuroscience-school",
@@ -5321,14 +5323,14 @@
    "https://sites.gsu.edu/neuroscienceschool/registration/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "notes": "Online courses are open to younger high schoolers who are under 16. Sign up for the program's newsletter on the home page to hear when the 2027 schedule is posted.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "id": "atlanta-parks-rec-teen-leaders",
   "name": "Atlanta Teen Leader Program and Parks and Recreation Teen Summer Employment",
   "org": "City of Atlanta, Department of Parks and Recreation",
@@ -5363,7 +5365,7 @@
   ],
   "priority": 2,
   "notes": "Source is the City's 2026 summer catalog, so it does not say which summer the Dec 31, 2026 registration cutoff is for. Ages and pay for the actual summer jobs are not stated. Georgia requires a work permit for any job under 16. The City's iParcs page blocked automated reading.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "atlanta-public-schools-mentorship-internship",
@@ -5385,7 +5387,7 @@
   "paid_type": "not-stated",
   "pay_detail": "The page does not say whether you get pay or school credit. It calls Mentorship and Internship classes.",
   "season": "school-year",
-  "duration": "Fall mentorship class, then a 60-hour one-on-one spring internship that begins in January and concludes with the Capstone Celebration in April. Hours per week and days are not stated.",
+  "duration": "Fall mentorship class, then a 60-hour one-on-one spring internship that begins in January and concludes with the Capstone Celebration in April. Interns average about 5 hours a week, and most leave school twice a week.",
   "status": "unconfirmed",
   "deadline_text": "No application deadline listed. Mentor meetings usually start in November. Capstone Celebration in April.",
   "deadline_iso": null,
@@ -5399,10 +5401,10 @@
    "https://www.atlantapublicschools.us/about/departments/teaching-learning/academic-enrichment/gifted-talented/internships/students"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
-  "notes": "The coordinator matches students to internships after a career survey in early fall. Students and families arrange their own rides. You must finish the fall Mentorship course first.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "The coordinator matches students to internships after a career survey in early fall. Students and families arrange their own rides. You must finish the fall Mentorship course first. The FAQ says interns log 40 to 60 hours.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "atlanta-public-schools-work-based-learning",
@@ -5437,14 +5439,14 @@
    "https://www.atlantapublicschools.us/about/departments/teaching-learning/ctae"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "notes": "The phone on the page is (404) 802-5878. The page also lists CTAE career paths. They include Engineering Drafting, Allied Health, Cybersecurity and Culinary Arts. Students in other districts use their own district.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "id": "atlanta-summer-youth-employment-program",
   "name": "Summer Youth Employment Program (SYEP)",
   "org": "City of Atlanta, Department of Labor and Employment Services",
@@ -5482,13 +5484,13 @@
   ],
   "priority": 1,
   "notes": "A work permit is needed only for ages 14 and 15 (Georgia requires one under 16). You start it after you have a job offer, through your school district. Not guaranteed: the city says selection is competitive. Questions: syep@atlantaga.gov or (404) 546-3000. The registration list asks for an original Social Security card; this is the official city program, so upload documents only inside the SYEP portal and never send them by email or text. The city's atlantaga.gov pages blocked automated reading, so confirm the 2027 timeline with the SYEP team.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "opens_iso": null,
   "apply_url": "https://youthmeanbusiness.com/ymb-fuel-application/",
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-03",
   "grades": null,
   "max_age": 17,
   "min_age": 11,
@@ -5524,7 +5526,7 @@
   ],
   "priority": 2,
   "notes": "Also open to younger kids. Your business needs paying customers already. For newer ideas the site lists YMB Spark (early-stage help) but its page was not read. YMB also holds an annual Summit (two days, ages 11 to 17 can register); dates and cost were not on the page. The page says the program takes place live in Atlanta, Georgia, and may have virtual parts.",
-  "verified_on_label": "Oct 19, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "aurora-better-employment-outcomes-initiative",
@@ -13130,7 +13132,7 @@
   "max_age": 18,
   "grades": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "needs_work_permit": false,
   "priority": 3,
   "id": "boys-girls-clubs-metro-atlanta",
@@ -13163,7 +13165,7 @@
    "https://bgcma.org/local-clubs/join-a-club/"
   ],
   "notes": "This is a general club membership, not a job or internship. The pages do not describe teen specific programs or teen jobs, so call your nearest Club and ask what is offered for teens. Checked 2026-10-10: the join page says summer enrollment is now open but names no year, so we cannot tell which summer. Left unconfirmed.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "verified": "fetched",
@@ -13657,9 +13659,9 @@
   "priority": 3,
   "notes": "Meets at Brookhaven Police Department, 1793 Briarwood Road. The page lists ages 14 to 18 in one place and 14 to 19 in another. There is a community service requirement. Contact Officer Hawkins through the page or call 404-637-0600. Not a paid job.",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 10, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -13696,9 +13698,9 @@
   "priority": 2,
   "notes": "Held at Brookhaven Police Department, 1793 Briarwood Rd, Brookhaven, GA 30329. Call Officer Angela Hawkins at 678-296-1904. You can also call the Community Engagement Unit. The number is 404-637-0600, Option 8. This is unpaid, so no work permit.",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 10, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -15347,7 +15349,7 @@
   "max_age": null,
   "grades": "Students entering junior or senior year (high school sophomores and juniors during the application year)",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "needs_work_permit": false,
   "priority": 1,
   "id": "cdc-museum-disease-detective-camp",
@@ -15379,7 +15381,7 @@
    "https://www.cdc.gov/museum/camp/detective/faq.htm"
   ],
   "notes": "Very competitive in past years, but numbers were not on the pages. Sessions are fixed, campers cannot arrive late, leave early or miss days.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -18248,10 +18250,10 @@
    "https://chattnaturecenter.org/education/camp/high-school-leadership-training/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "notes": "This costs money and is not a paid job. You must attend at least 85% of your session. Dates shown are from summer 2026.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "chattahoochee-riverkeeper-water-warriors",
@@ -18287,10 +18289,10 @@
    "https://chattahoochee.org/waterwarriors/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "In summer, high school students can test water samples, check CASSI units and clean trash traps with staff. Contact: Jillian Griffin, jgriffin@chattahoochee.org, or 404-352-9828.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "cheyenne-mountain-zoo-junior-zoo-keepers-summer-teen-program",
@@ -20745,32 +20747,32 @@
   "what_you_do": "Volunteer in a children's hospital over the summer, at least one 3-hour shift a week for eight weeks. Placements are at Arthur M. Blank, Hughes Spalding or Scottish Rite hospitals.",
   "min_age": 15,
   "max_age": 18,
-  "who_can_apply": "High school students ages 15 to 18. You must be at least 15 by the program start date (June 8 in 2026).",
+  "who_can_apply": "High school students ages 15 to 18. You must be at least 15 by the program start date (June 7 in 2027).",
   "paid_type": "unpaid",
   "pay_detail": "Unpaid. No cost stated on the page.",
   "season": "summer",
-  "duration": "8 weeks in June and July (June 8 to July 31 in 2026), one 3-hour day per week, no more than two missed days",
-  "status": "closed-expect-reopen",
-  "opens_iso": null,
-  "deadline_text": "The page says the next chance to apply is February 2027; exact open and close dates are not posted yet.",
-  "deadline_iso": null,
+  "duration": "8 weeks in June and July (June 7 to July 31, 2027), one 3-hour day per week, no more than two missed days",
+  "status": "opens-soon",
+  "opens_iso": "2027-02-01",
+  "deadline_text": "Applications open Feb 1, 2027 at 10 a.m. and close Feb 5, 2027 at 4 p.m.",
+  "deadline_iso": "2027-02-05",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Read the Volunteer Manual, pass the online volunteer assessment with at least 80 percent to unlock the application, then upload immunization records, photo ID copy, forms and the name of a non-family recommender. Steps may change for 2027.",
+  "how_to_apply": "Read the Volunteer Manual, pass the online volunteer assessment with at least 80 percent to unlock the application, then upload immunization records, photo ID copy, forms, 2 to 3 essays and the name of a non-family recommender. If selected, you do a virtual interview.",
   "needs_work_permit": false,
   "url": "https://www.choa.org/donors-and-volunteers/volunteer/teen-volunteers",
   "priority": 1,
-  "notes": "Mandatory training in early June with no make-up. Needs MMR, chickenpox, Tdap and current flu shot proof and willingness to get a TB blood test. The page also lists an Explorer career program (high school, no patient contact) that is being updated with no details yet, and a Youth Advisory Council for current and former patients ages 13 to 17.",
+  "notes": "Mandatory training June 2 or 3, 2027 with no make-up. Needs MMR, chickenpox, Tdap and flu shot (Aug 2026 or later) proof and willingness to get a TB blood test. The page also lists an Explorer career program (high school, no patient contact) that is being updated with no details yet, and a Youth Advisory Council for current and former patients ages 13 to 17.",
   "regions": [
    "atlanta"
   ],
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "sources_fetched": [
    "https://www.choa.org/donors-and-volunteers/volunteer/teen-volunteers"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "chino-hills-teen-advisory-board",
@@ -22622,9 +22624,9 @@
   "priority": 3,
   "notes": "Costs money and is not a job. Ask about financial help. No application deadline is stated, so call early. The page says six evening programs but lists seven evening dates; the duration follows the dates.",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "cobb-county-police-cadet-post-5",
@@ -22660,9 +22662,9 @@
   "priority": 2,
   "notes": "Meets at the Cobb County Police Training Academy, 2435 East-West Connector, Austell, GA 30106. Contact Officer Andy Higgins, (770) 528-8388. New members have a 6-month trial and get a uniform after 6 meetings in a row. Not a paid job.",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "cobb-library-volunteers-15-plus",
@@ -22681,7 +22683,7 @@
   "min_age": 15,
   "max_age": null,
   "grades": null,
-  "who_can_apply": "Anyone 15 or older. People 18 and older must pass a background check first. The page does not say which roles teens can take.",
+  "who_can_apply": "Anyone 15 or older. Greeter and video game roles need age 16. A background check starts at 17 on the application post and 18 on the library page, so ask.",
   "paid_type": "unpaid",
   "pay_detail": "Unpaid volunteer role",
   "season": "year-round",
@@ -22696,17 +22698,18 @@
   "apply_url": "https://www.governmentjobs.com/careers/cobbcounty/jobs/4364771/library-volunteers",
   "sources_fetched": [
    "https://www.cobbcounty.gov/library",
-   "https://www.cobbcounty.gov/library/about-library/volunteer-opportunities-libraries"
+   "https://www.cobbcounty.gov/library/about-library/volunteer-opportunities-libraries",
+   "https://www.governmentjobs.com/careers/cobbcounty/jobs/4364771/library-volunteers"
   ],
   "priority": 2,
-  "notes": "Library phone (770) 528-2326, contactus@cobbcat.org. Branches: East Cobb, Gritters, Kemp Memorial, Lewis A. Ray, Mountain View, North Cobb, Powder Springs, Sewell Mill, Sibley, South Cobb, Stratton, Sweetwater Valley, Switzer, Vinings, West Cobb.",
+  "notes": "Branches may be at capacity. Library phone (770) 528-2326, contactus@cobbcat.org. Branches: East Cobb, Gritters, Kemp Memorial, Lewis A. Ray, Mountain View, North Cobb, Powder Springs, Sewell Mill, Sibley, South Cobb, Stratton, Sweetwater Valley, Switzer, Vinings, West Cobb.",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on": "2026-11-03",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "id": "cobb-schools-work-based-learning",
   "name": "CTAE Work-Based Learning, Cobb County School District",
   "org": "Cobb County School District",
@@ -22721,7 +22724,7 @@
   "what_you_do": "Juniors and seniors leave school for one or more class periods. They work in a career-related job, internship or youth apprenticeship. They earn school credit. They keep a career portfolio. Employers send evaluations.",
   "min_age": 16,
   "max_age": null,
-  "grades": "11-12",
+  "grades": "11 to 12",
   "who_can_apply": "Cobb County School District juniors and seniors who are 16 or older. Your high school's Work-Based Learning coordinator can tell you the rules at your school.",
   "paid_type": "mixed",
   "pay_detail": "Placements may be paid or non-paid, according to the district page.",
@@ -22741,11 +22744,11 @@
   ],
   "priority": 2,
   "notes": "District CTAE and WBL coordinator on the page: Sapph Espinoza. The job should relate to your career goals and CTAE coursework. Georgia requires a work permit only under 16, and this program starts at 16.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "id": "cobbworks-boss-young-professionals",
   "name": "B.O.S.S. Young Professionals Program (CobbWorks)",
   "org": "CobbWorks (Cobb County workforce board, WorkSource Cobb)",
@@ -22781,7 +22784,7 @@
   ],
   "priority": 2,
   "notes": "Funded through WIOA, so participants must meet eligibility rules. The same site lists a PowerUp! plumbing pre-apprenticeship and a Cobb County Fire P.R.E.P. Academy for young adults; ages are not stated, so ask CobbWorks. The main cobbworks.org site returned an error, so this entry uses worksourcecobb.org. Georgia requires a work permit only under 16, and this program starts at 16.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -28251,18 +28254,19 @@
   "deadline_text": "No deadline is listed. Meeting times are not listed.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Get the DCFR Explorer application packet from the page. Send it in with 3 job references and your latest report card.",
+  "how_to_apply": "Get the DCFR Explorer application packet from the page. Send it in with your latest report card. Have 3 references who are not family, such as teachers or coaches, email letters.",
   "needs_work_permit": false,
   "url": "https://dekalbcountyga.gov/departments/public-safety/fire-rescue/youth-development-explorer-post-901",
   "sources_fetched": [
-   "https://dekalbcountyga.gov/departments/public-safety/fire-rescue/youth-development-explorer-post-901"
+   "https://dekalbcountyga.gov/departments/public-safety/fire-rescue/youth-development-explorer-post-901",
+   "https://dekalbcountyga.gov/sites/default/files/2026-06/Explorer%20Application%20Packet%20no%20references%205.pdf"
   ],
   "priority": 2,
   "notes": "Contact frexplorers@dekalbcountyga.gov. Not a paid job, so no work permit.",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "dekalb-library-teen-advisory-board",
@@ -28298,11 +28302,11 @@
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "sources_fetched": [
    "https://dekalblibrary.org/support-us/teens-get-involved"
   ],
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -28340,9 +28344,9 @@
   "priority": 2,
   "notes": "Call 404-294-2838 or write to Monique Larkin at mllarkin@dekalbcountyga.gov. The page gives no direct link to the application. Other park volunteering lists no minimum age. Examples are clean-up days and nature programs.",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "dekalb-schools-work-based-learning",
@@ -28379,13 +28383,13 @@
   "priority": 2,
   "notes": "Only for DeKalb schools students. You must leave campus at the start of your first WBL class, even on days you are not scheduled to work. The district CTAE office is at 1701 Mountain Industrial Blvd, Stone Mountain, GA 30083.",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "id": "dekalb-summer-youth-employment-program",
   "name": "DeKalb Summer Youth Employment Program (DSYEP)",
   "org": "DeKalb County Government and WorkSource DeKalb",
@@ -28410,7 +28414,7 @@
   "deadline_text": "In 2025 registration ran Apr 10 to Apr 20 (11:59 p.m.). No 2026 or 2027 cycle was found on the county site.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "In 2025, online registration at dekalbcountyga.gov/dsyep. That address now leads to a registration form marked no longer active. For help the 2025 county release listed the Workforce Development Manager at (470) 572-8229.",
+  "how_to_apply": "In 2025, online registration through the county DSYEP link. That link now leads to a registration form marked no longer active. For help the 2025 county release listed the Workforce Development Manager at (470) 572-8229.",
   "needs_work_permit": false,
   "url": "https://dekalbcountyga.gov/news/2025-04-12/dekalb-county-announces-2025-summer-youth-employment-program",
   "apply_url": null,
@@ -28422,7 +28426,7 @@
   ],
   "priority": 2,
   "notes": "Confirm that a new cycle exists before planning around it. All dates, pay and rules here are from the 2025 county release. WorkSource DeKalb also lists youth ages 16 to 24 with barriers as a service group. It sends people to ATLworks.org to check eligibility. Georgia requires a work permit only under 16, and this program starts at 16.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -30365,9 +30369,9 @@
   "priority": 2,
   "notes": "Phone 770-394-3322, info@dunwoodynature.org. The first email link on the page goes to a different address, so use the one in the FAQ (juniorcounselors@dunwoodynature.org). Camp dates are not listed on the page. Unpaid, so no work permit.",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "dupage-childrens-museum-teen-and-junior-volunteers",
@@ -32084,11 +32088,11 @@
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "sources_fetched": [
    "https://www.emoryhealthcare.org/about/volunteering/volunteen-program"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "emory-pre-college-program",
@@ -32104,32 +32108,32 @@
    "science"
   ],
   "what_you_do": "You take a college course taught by Emory faculty. It runs two to four weeks in summer. You can choose residential or commuter. A 3-week Pre-Med Institute is offered. So are 6-week credit courses.",
-  "min_age": null,
+  "min_age": 15,
   "max_age": null,
-  "grades": "Current sophomores and juniors",
-  "who_can_apply": "High school students; the page says it serves current sophomores and juniors. Application needs transcript and recommendations.",
+  "grades": "10 to 11",
+  "who_can_apply": "High school students; the page says it serves current sophomores and juniors. At least 15 by the session start, with a 3.0 GPA or higher. Application needs transcript and recommendations.",
   "paid_type": "fee-based",
-  "pay_detail": "2026 prices: 2-week noncredit course $5,510 residential or $3,925 commuter; 3-week institute $8,264 residential; 4 weeks $11,020. $70 application fee. 2027 prices not posted.",
+  "pay_detail": "2026 prices: 2-week noncredit course $5,510 residential or $3,925 commuter; 3-week institute $8,264 residential; 4 weeks $11,020. $75 application fee (one cost page section says $70). 2027 prices not posted.",
   "season": "summer",
   "duration": "2 to 6 weeks (2027 noncredit sessions June 13 to 26, June 27 to July 10, July 11 to 24)",
   "status": "closed-expect-reopen",
   "opens_iso": null,
   "deadline_text": "Applications for 2027 open in December 2026. Deadlines: noncredit sessions May 3, 2027; Pre-Med Institute Feb 1, 2027; credit Summer College April 20 and June 7, 2027.",
-  "deadline_iso": "2027-05-03",
+  "deadline_iso": null,
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Choose a program and course, review costs, then start the online application (transcript, recommendations, $70 fee). After acceptance, complete the pre-arrival checklist and pay the $350 enrollment deposit.",
+  "how_to_apply": "Choose a program and course, review costs, then start the online application (transcript, recommendations, $75 fee). After acceptance, complete the pre-arrival checklist and pay the $350 enrollment deposit.",
   "needs_work_permit": null,
   "url": "https://precollege.emory.edu/index.html",
   "priority": 3,
-  "notes": "Expensive. The nearest deadline is the Pre-Med Institute on Feb 1, 2027 (deadline_iso shows the main May 3 date). Financial aid deadline was May 1 in 2026. Information sessions are in November and December 2026.",
+  "notes": "Expensive. The nearest deadline is the Pre-Med Institute on Feb 1, 2027. Financial aid deadline was May 1 in 2026. Information sessions are in November and December 2026.",
   "sources_fetched": [
    "https://precollege.emory.edu/index.html",
    "https://precollege.emory.edu/cost-and-scholarships/index.html"
   ],
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on": "2026-11-03",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "emory-winship-summer-scholars",
@@ -32147,7 +32151,7 @@
   "what_you_do": "Work one-on-one with a cancer researcher in an active lab for six weeks. You also go to talks, field trips and survivor roundtables. At the end you present your project at a symposium.",
   "min_age": 16,
   "max_age": null,
-  "grades": "Rising or graduating high school seniors",
+  "grades": "11 to 12",
   "who_can_apply": "At least 16 by the start date (June 8 in 2026) and a rising or graduating senior. In-person spots need U.S. citizenship or permanent residency; others may apply to a virtual-only option. You can live anywhere in the U.S., but there is no housing.",
   "paid_type": "stipend",
   "pay_detail": "$2,400 stipend if you finish the program. No program fee.",
@@ -32166,10 +32170,10 @@
    "https://dol.georgia.gov/child-labor-employment-certificate-instructions"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "notes": "Competitive. Parents or guardians handle off-campus housing and care for students under 18. Dates shown are from the 2026 page. Georgia Department of Labor says a work permit is required for minors under 16; this program starts at 16.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "regions": [
@@ -34431,11 +34435,11 @@
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "sources_fetched": [
    "https://fernbankmuseum.org/support/volunteer/fyi-volunteers/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "grades": null,
@@ -37480,7 +37484,7 @@
   "what_you_do": "Do a year of online and live leadership training. You explore careers, plan your education path and meet other teens and professionals. Juniors and seniors can get paid summer internships.",
   "min_age": null,
   "max_age": null,
-  "grades": "High school (grades 9 to 12)",
+  "grades": "9 to 12",
   "who_can_apply": "Any high school student who lives in Fulton County, GA. You need a computer, phone or tablet and Wi-Fi.",
   "paid_type": "mixed",
   "pay_detail": "Free to join. Members can win gift cards from $25 to $100 and other prizes. The page lists paid summer internships for juniors and seniors but gives no pay rate.",
@@ -37499,10 +37503,10 @@
    "https://www.21stcenturyleaders.org/fulton-cylp-enrollment/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Enrollment for 2026-27 closed Sept 28, 2026, per the enrollment page. Call the county at 404-612-4000 to ask about late spots. The enrollment page does not mention internships. Only the county page does. Contact: customerservice@fultoncountyga.gov.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -37528,7 +37532,7 @@
   "deadline_text": "Applications are always accepted, but most projects are full and most locations have a waitlist.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "The page (last updated 2026/10/07) says most volunteer projects are filled. Most places have a waitlist. You can still apply. Under 18: download and print the PDF application, sign it, get a parent or guardian signature, and return it to Volunteer Services by email, mail, fax or drop-off. Then attend orientation. Email vol.services@fultoncountyga.gov or call 404-613-0125.",
+  "how_to_apply": "As of Nov 3, 2026, most volunteer projects are filled. Most places have a waitlist. You can still apply. Under 18: download and print the PDF application, sign it, get a parent or guardian signature, and return it to Volunteer Services by email, mail, fax or drop-off. Then attend orientation. Email vol.services@fultoncountyga.gov or call 404-613-0125.",
   "needs_work_permit": false,
   "url": "https://fulcolibrary.org/volunteer-at-fcls",
   "priority": 2,
@@ -37539,11 +37543,11 @@
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "sources_fetched": [
    "https://fulcolibrary.org/volunteer-at-fcls"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "fulton-county-marshal-junior-deputy-program",
@@ -37579,15 +37583,15 @@
    "https://www.fultoncountyga.gov/Inside-Fulton-County/Fulton-County-Departments/Marshal/Marshals-Jr-Deputy-Program"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "notes": "The page still shows 2025 dates, so call to confirm the current year. Contacts on the page: FCMD.JuniorDeputy@fultoncountyga.gov, 404-612-4462 or 404-612-4147.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "id": "fulton-county-schools-work-based-learning",
   "name": "Work-Based Learning, Fulton County Schools",
   "org": "Fulton County Schools",
@@ -37602,7 +37606,7 @@
   "what_you_do": "Juniors and seniors earn high school credit. They work under supervision at an approved job site. This can be an internship, an apprenticeship or a clinical experience. The job must match the student's career pathway.",
   "min_age": 16,
   "max_age": null,
-  "grades": "11-12",
+  "grades": "11 to 12",
   "who_can_apply": "Fulton County Schools students who are at least 16, in 11th or 12th grade, and following a defined career pathway. Individual schools may add rules. Students in Atlanta Public Schools use their own district.",
   "paid_type": "mixed",
   "pay_detail": "School credit. The district page does not state pay. The state says internships may be paid or unpaid and co-ops and apprenticeships are paid.",
@@ -37623,7 +37627,7 @@
   ],
   "priority": 2,
   "notes": "District contact listed on the page: Leslie McHann, 470-254-0466. Georgia requires a work permit only under 16, and this program starts at 16.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "fulton-county-youth-commission",
@@ -37660,10 +37664,10 @@
    "https://www.fultoncountyga.gov/Calendar/2024/05/24/Fulton-County-Seeking-Students-to-Serve-as-Youth-Commissioners"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Contact on the page: 404-612-7386 or the county line 404-612-4000. The length of a term is not stated.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -37869,7 +37873,7 @@
  },
  {
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "id": "gcps-work-based-learning",
   "name": "Work-Based Learning (Internships), Gwinnett County Public Schools",
   "org": "Gwinnett County Public Schools",
@@ -37884,7 +37888,7 @@
   "what_you_do": "Juniors and seniors work in a job linked to their career goal and earn school credit. The program also covers apprenticeships. Students must job search and interview themselves, with help from the school coordinator.",
   "min_age": 16,
   "max_age": null,
-  "grades": "11-12",
+  "grades": "11 to 12",
   "who_can_apply": "Gwinnett County Public Schools juniors and seniors who are 16 by September 1 and have coursework that matches their career choice. The school reviews grades, attendance and discipline.",
   "paid_type": "mixed",
   "pay_detail": "School credit. The GCPS page does not state pay. The state says internships may be paid or unpaid and co-ops and apprenticeships are paid.",
@@ -37905,7 +37909,7 @@
   ],
   "priority": 2,
   "notes": "No home-office or private-residence placements. The program cannot guarantee a job. Georgia requires a work permit only under 16, and this program starts at 16.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "genesys-works-bay-area",
@@ -38091,7 +38095,7 @@
   "duration": "4 months per session: Spring (Jan to Apr) 60 hours, Summer (May to Aug) 80 hours, Fall (Sep to Dec) 60 hours",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Spring 2027 session starts onboarding with information sessions in October 2026; dates not posted yet. The 2026 summer/fall cycle on the page: info sessions in July, application deadline Aug 1, interviews Aug 16, orientation Sept 12.",
+  "deadline_text": "Spring 2027 onboarding was set to start with information sessions in October 2026; no dates posted as of Nov 3, 2026, so email to ask. The 2026 summer/fall cycle on the page: info sessions in July, application deadline Aug 1, interviews Aug 16, orientation Sept 12.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Register for one mandatory virtual information session (email volunteer@georgiaaquarium.org or use the page's Contact Us interest form). A parent or guardian must attend with the teen. If chosen, attend a group interview. Bring birth certificate and photo ID.",
@@ -38105,11 +38109,11 @@
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "sources_fetched": [
    "https://www.georgiaaquarium.org/booking/teen-volunteer-program/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "opens_iso": null,
@@ -38562,12 +38566,12 @@
  },
  {
   "opens_iso": null,
-  "apply_url": null,
+  "apply_url": "https://ltgov.georgia.gov/document/document/lgo-page-interest-form/download",
   "min_age": 12,
-  "max_age": null,
+  "max_age": 18,
   "grades": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "needs_work_permit": null,
   "priority": 2,
   "id": "georgia-senate-page-program",
@@ -38583,22 +38587,24 @@
    "law-government"
   ],
   "what_you_do": "Serve for one legislative day at the State Capitol. Pages carry messages to senators on the Senate floor. They also watch votes and meet lawmakers.",
-  "who_can_apply": "Students at least 12 years old. The packet says there are no exceptions. A page is sponsored by the Lieutenant Governor or one Senator.",
+  "who_can_apply": "Students ages 12 to 18. The packet says there are no exceptions to the minimum age. A page is sponsored by the Lieutenant Governor or one Senator.",
   "paid_type": "stipend",
   "pay_detail": "$20.00 honorarium paid at the end of the day, plus a certificate of service (2025 welcome packet). A 2026 amount is not posted, so confirm it.",
   "season": "winter",
   "duration": "One legislative day. Report about 1.5 hours before the Senate convenes. The Senate usually convenes at 10:00 AM (check the Senate schedule the night before).",
   "status": "unconfirmed",
-  "deadline_text": "No application deadline found. Pages choose a legislative day while the General Assembly is in session. The packet says the first 20 days of session fall in January and February. 2027 dates not read.",
+  "deadline_text": "Last cycle: applications for the 2026 session opened Dec 15, 2025. The session began Jan 12, 2026. No deadline is listed. 2027 dates are not posted.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
-  "how_to_apply": "The 2025 welcome packet says to contact your sponsoring Senator's office when you register. Staff contact: kim.campbell@senate.ga.gov or illana.burkhart@senate.ga.gov, 404-657-7004. The program web page needs a browser to load, so check it for the current form.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply one way only. Lieutenant Governor: fill out the interest form, list three dates, and email it to denese.sampson@ltgov.ga.gov at least one week ahead. Senator: contact that Senator's office. Staff contact: kim.campbell@senate.ga.gov or illana.burkhart@senate.ga.gov, 404-657-7004.",
   "url": "https://www.legis.ga.gov/api/document/docs/default-source/secretary-of-the-senate-document-library/2025-page-welcome-packet.pdf?Status=Temp&sfvrsn=6b6660c9_2",
   "sources_fetched": [
-   "https://www.legis.ga.gov/api/document/docs/default-source/secretary-of-the-senate-document-library/2025-page-welcome-packet.pdf?Status=Temp&sfvrsn=6b6660c9_2"
+   "https://www.legis.ga.gov/api/document/docs/default-source/secretary-of-the-senate-document-library/2025-page-welcome-packet.pdf?Status=Temp&sfvrsn=6b6660c9_2",
+   "https://ltgov.georgia.gov/node/11041",
+   "https://ltgov.georgia.gov/document/document/lgo-page-interest-form/download"
   ],
-  "notes": "Source is the official 2025 Senate Page welcome packet (the program web pages on legis.ga.gov only showed a loading screen to the reader). Under Georgia law cited in the packet (O.C.G.A. 20-2-692) page service counts as present at school. Dress code is business or business casual. Cell phones are not allowed while paging. The Georgia House has its own page program at legis.ga.gov/house/page-program, which could not be read.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "Sources are the 2025 Senate Page welcome packet and the Lieutenant Governor's page, as of Nov 3, 2026. The pages on legis.ga.gov only showed a loading screen. Under Georgia law cited in the packet (O.C.G.A. 20-2-692) page service counts as present at school. Dress code is business or business casual. Cell phones are not allowed while paging. The Georgia House has its own page program at legis.ga.gov/house/page-program, which could not be read.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "georgia-state-university-dual-enrollment",
@@ -38616,7 +38622,7 @@
   "what_you_do": "Take college classes at Georgia State while you finish high school. The classes count for college credit and for high school.",
   "min_age": null,
   "max_age": null,
-  "grades": "Rising juniors and seniors",
+  "grades": "11 to 12",
   "who_can_apply": "Rising high school juniors or seniors on track to graduate. You need a recalculated GPA of 3.0 or higher. You need test scores unless your GPA is 3.4 or higher. You need approval from your counselor and a parent. You also need proof of lawful presence.",
   "paid_type": "mixed",
   "pay_detail": "State funding (Georgia Student Finance Commission) pays tuition and mandatory fees for up to 15 credit hours a semester from the approved course list. You pay lab fees, supplies, meals and travel. Joint enrollment (not dual) is paid by the family.",
@@ -38634,10 +38640,10 @@
    "https://admissions.gsu.edu/bachelors-degree/apply/dual-enrollment/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "You must earn a C or better in every class to keep funding. The page gives two test score minimums. The lower ones are in the requirements list. The higher ones are in the step on test scores. Ask admissions which apply. Perimeter College lets dual students take 1000 and 2000 level classes at its campuses or online.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "georgia-tech-dual-enrollment",
@@ -38677,10 +38683,10 @@
    "https://admission.gatech.edu/dual-enrollment/enrollment-and-financial-information"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
-  "notes": "Competitive. Funding can be denied if you used your 30 hours, your high school does not take part, the course is not eligible (on-campus), or you are not a U.S. citizen, eligible non-citizen or Georgia resident. Out-of-state tuition is $1,153.46 per credit hour. Decisions come about 3 weeks after the window closes.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "Competitive. Funding can be denied if you used your 30 hours, your high school does not take part, the course is not eligible (on-campus), or you are not a U.S. citizen, eligible non-citizen or Georgia resident. Out-of-state tuition is $1,153.46 per credit hour. Decisions come out July 17 for fall, Nov 3 for spring and April 10 for summer.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "georgia-tech-gtae-step",
@@ -38706,7 +38712,7 @@
   "duration": "2-week day program (not residential); Atlanta session July 6 to 17 in 2026",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "2027 dates not posted.",
+  "deadline_text": "Last cycle: Atlanta applications opened Jan 15, 2026 and closed Mar 1, 2026. 2027 dates not posted.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Complete the online application on the STEP page before the deadline. Questions: outreach@ae.gatech.edu.",
@@ -38717,20 +38723,20 @@
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "sources_fetched": [
    "https://gasgc.org/wp/gtae-step/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "opens_iso": null,
   "apply_url": null,
   "min_age": null,
   "max_age": null,
-  "grades": "Rising 11th and 12th graders",
+  "grades": "11 to 12",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "needs_work_permit": false,
   "priority": 2,
   "id": "georgia-tech-summer-engineering-institute",
@@ -38763,7 +38769,7 @@
    "https://coe.gatech.edu/future-engineers/k-20-initiatives/summer-engineering-institute"
   ],
   "notes": "The same page also describes a separate TryEngineering Summer Institute, a nine day residential program for thirty Georgia high school students at no cost, with no dates given. Georgia residents only.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "verified": "fetched",
@@ -39452,10 +39458,10 @@
    "https://dol.georgia.gov/child-labor-employment-certificate-instructions"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Address on the page: 2201 Lawrenceville Hwy, Suite 300, Decatur, GA 30033. Career centers listed: Athens, Cornelia, Decatur, Duluth, Oakwood, Smyrna and Woodstock. The page does not say which counties are served, so ask when you email. Georgia Department of Labor says a work permit is required for minors under 16. This program starts at 16.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "grafton-job-corps-center",
@@ -39875,9 +39881,9 @@
   "apply_url": null,
   "min_age": 16,
   "max_age": null,
-  "grades": "High school classes of 2027, 2028 or 2029",
+  "grades": "10 to 12",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "needs_work_permit": false,
   "priority": 1,
   "id": "gtri-high-school-summer-internship",
@@ -39911,7 +39917,7 @@
    "https://dol.georgia.gov/child-labor-employment-certificate-instructions"
   ],
   "notes": "No weekend, after hours or remote work. Housing is not provided. Do not send unsolicited emails or calls to GTRI employees about internships. The page asks this. Finishing the pre-application does not guarantee a job. Georgia Department of Labor says a work permit is required only for minors who have not reached their 16th birthday. This internship requires age 16 by April 4, 2027.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "gwinnett-county-empower-gwinnett-internship",
@@ -39929,17 +39935,18 @@
   "min_age": 15,
   "max_age": 21,
   "grades": null,
-  "who_can_apply": "Gwinnett County residents or students who go to school in Gwinnett County, ages 15 to 21. You must be 15 by the first workshop. You must be free for the whole paid internship program. You need a reliable ride. You cannot be a past Empower Gwinnett County Government intern. No grades or work experience are required.",
+  "who_can_apply": "Gwinnett County residents or students who go to school in Gwinnett County, ages 15 to 21. You must be 15 by the first workshop. You must be free for the whole paid internship program. You need a reliable ride. You cannot be a past Empower Gwinnett County Government intern. If you are 15, you need a work permit. No grades or work experience are required.",
   "paid_type": "paid",
   "pay_detail": "$15 per hour for the two workshops and the four-week internship",
   "season": "summer",
   "duration": "2 Saturday workshops plus 4 weeks (June)",
-  "status": "closed-expect-reopen",
-  "deadline_text": "Last cycle (2026 page): apply Feb 9 to Mar 16, workshops May 9 and May 16, internship June 1 to June 26. The 2027 dates are not posted yet.",
-  "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Fill out the online application during the posted window. A form link is on the program page. Human Resources picks applicants based on interests, career goals and department needs. No interview is required. Selected applicants get a conditional job offer. Some jobs may need a background check.",
-  "needs_work_permit": null,
+  "status": "opens-soon",
+  "opens_iso": "2027-02-08",
+  "deadline_text": "2027 applications open Feb 8, 2027 and close Mar 15, 2027. The schedule page shows two sets of later dates: workshops May 8 and May 15 or May 9 and May 16, internship May 31 to June 25 or June 1 to June 26. Confirm them.",
+  "deadline_iso": "2027-03-15",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the online application during the posted window. The page has no form link yet. Human Resources picks applicants based on interests, career goals and department needs. No interview is required. Selected applicants get a conditional job offer. Some jobs may need a background check.",
+  "needs_work_permit": true,
   "url": "https://www.gwinnettcounty.com/employment/internship-apprenticeship/empower-gwinnett",
   "sources_fetched": [
    "https://www.gwinnettcounty.com/employment/internship-apprenticeship",
@@ -39947,11 +39954,11 @@
    "https://www.gwinnettcounty.com/employment/internship-apprenticeship/empower-gwinnett/application-schedule"
   ],
   "priority": 1,
-  "notes": "The main page says the 2026 application is closed. It says the 2027 dates will be posted there. Questions: HREmployeeEngagement@GwinnettCounty.com.",
+  "notes": "The job list on the page is still for 2026. Some jobs have a higher minimum age. Questions: HREmployeeEngagement@GwinnettCounty.com.",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 10, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -39969,7 +39976,7 @@
   "what_you_do": "A free one-week academy with classroom lessons and hands-on activities. Topics include CPR and AED, emergency driving, and crime scene and crash work. You also learn self defense. You see K9, aviation and SWAT demos.",
   "min_age": null,
   "max_age": null,
-  "grades": "7 to 12 (as of August)",
+  "grades": "7 to 12",
   "who_can_apply": "Middle and high school students who live in Gwinnett County and will be in 7th through 12th grade as of August. Everyone must pass an application process.",
   "paid_type": "unpaid",
   "pay_detail": "Free. The page says the academy is free.",
@@ -39988,9 +39995,9 @@
   "priority": 2,
   "notes": "The page names no season or week for the sessions and gives no age range. The only date given is the May 29, 2026 application deadline, so confirm the week before planning. Season is set to summer only because the deadline is in May. Unpaid program, so no work permit. Only the general county number 770.822.8000 is listed.",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 10, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -40027,9 +40034,9 @@
   "priority": 2,
   "notes": "The page does not say whether it pays, how long it lasts or what the exact opening date is. No essay is mentioned. County phone: 770.822.8000.",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "opens_iso": null,
@@ -40038,7 +40045,7 @@
   "max_age": null,
   "grades": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "needs_work_permit": false,
   "priority": 2,
   "id": "gwinnett-library-teen-volunteers-and-advisory-council",
@@ -40066,10 +40073,11 @@
   "how_to_apply": "Fill out the online volunteer form from the Apply Online button on the volunteer page. List the branches you want. If you are a GCPS student, use a personal or parent email, not a school email.",
   "url": "https://gwinnettlibrary.com/volunteer/",
   "sources_fetched": [
-   "https://gwinnettlibrary.com/volunteer/"
+   "https://gwinnettlibrary.com/volunteer/",
+   "https://gwinnettlibrary.com/volunteer/teen-advisory-council-information/"
   ],
-  "notes": "The background check on the page applies only to volunteers 18 and older. Open spots vary by branch.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "The Teen Advisory Council is for grades 8 to 12 and asks for one meeting a month for a year. The background check on the page applies only to volunteers 18 and older. Open spots vary by branch.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "gwinnett-parks-lifeguard-jobs",
@@ -40108,8 +40116,8 @@
   "priority": 1,
   "notes": "Course costs are not listed, so ask. Email Lifeguard@GwinnettCounty.com or call 770.822.8000. The page does not mention work permits. The season is listed as part-time seasonal, with no months given.",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on": "2026-11-03",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "gwinnett-parks-summer-camp-aide-volunteer",
@@ -40148,8 +40156,8 @@
   "priority": 2,
   "notes": "Day camps are for children ages 5 to 13. The minimum age for aides is not stated, so call 770.822.8000 to check. Unpaid, so no work permit.",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on": "2026-11-03",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "gwinnett-police-explorer-post-1808",
@@ -40166,7 +40174,7 @@
   "what_you_do": "Classroom and hands-on training in traffic stops, investigations, crime scene work and self defense. Compete for Gwinnett in state and national contests. Help at community events.",
   "min_age": 14,
   "max_age": 20,
-  "grades": "8th grade finished",
+  "grades": "9 to 12",
   "who_can_apply": "Ages 14 to 20 who have finished 8th grade and have a clean record. Open to youth interested in law enforcement.",
   "paid_type": "fee-based",
   "pay_detail": "One-time registration fee of $61. Not a paid job.",
@@ -40185,9 +40193,9 @@
   "priority": 2,
   "notes": "Sponsored by Learning for Life. Contact Cpl. Juan Reyes at 678.442.6520 or PDCommunityAffairs@GwinnettCounty.com. Community Affairs Section: 3125 Satellite Boulevard, Duluth, GA 30096. The page has no Explorer page of its own. Details come from the outreach programs page.",
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 19, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "gwinnett-smile-summer-legal-mentoring",
@@ -40204,7 +40212,7 @@
   "what_you_do": "Spend Friday afternoons in summer learning about the legal system. You do debates and mock trials and watch live court cases. You tour places like the Gwinnett County Detention Center and the medical examiner's office. It ends with a graduation.",
   "min_age": null,
   "max_age": null,
-  "grades": "High school",
+  "grades": "9 to 12",
   "who_can_apply": "Students who will attend a Gwinnett high school the next school year. No ages or grades are listed. You must get yourself to the Gwinnett Justice and Administration Center in Lawrenceville and other program sites.",
   "paid_type": "unpaid",
   "pay_detail": "Free to students",
@@ -40223,9 +40231,9 @@
   "priority": 2,
   "notes": "The page does not list exact dates, ages or the application steps. Unpaid, so no work permit.",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "gwinnett-volunteer-internship-program",
@@ -40243,7 +40251,7 @@
   "what_you_do": "A volunteer internship in a Gwinnett County department. The flyer lists communications, IT, law and public safety. It also lists recreation and water resources. Health and human services are listed too. There are more.",
   "min_age": null,
   "max_age": null,
-  "grades": "High school and up",
+  "grades": "9 to 12",
   "who_can_apply": "The county page and flyer say the program is open to high school, undergraduate and graduate students. No ages or grade rules are listed in what was read.",
   "paid_type": "unpaid",
   "pay_detail": "Listed as a volunteer internship. Pay is not stated.",
@@ -40265,8 +40273,8 @@
   "priority": 3,
   "notes": "The VolunteerGwinnett.net listings page would not open because of a certificate error. So the open jobs, ages and hours were not read. Ask about the minimum age before you apply. The county page names Muriam Nafees as the contact for volunteer internships.",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on": "2026-11-03",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "habitat-east-bay-silicon-valley-volunteer",
@@ -41528,7 +41536,7 @@
   "what_you_do": "Join 15 high school students. You learn about art and how a museum works. You talk with artists and tour the collection. You help with public programs. You plan events for other teens.",
   "min_age": null,
   "max_age": null,
-  "grades": "Rising 11th and 12th grade",
+  "grades": "11 to 12",
   "who_can_apply": "Rising high school juniors and seniors enrolled full time in high school for the program year. The group has 15 members.",
   "paid_type": "paid",
   "pay_detail": "Described as a paid position; the amount is not stated on the page.",
@@ -41549,11 +41557,11 @@
   ],
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "sources_fetched": [
    "https://high.org/tlc/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "hiller-flight-teen-volunteer",
@@ -47429,9 +47437,9 @@
   "priority": 2,
   "notes": "Contact Officer David Buchanan, dbuchanan@kennesaw-ga.gov, 770-424-8274. Kennesaw Police, 2529 J O Stephenson Ave, Kennesaw, GA 30144. The page does not give a meeting day or time, so call first. Not a paid job.",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "kentucky-4h-teen-conference",
@@ -48137,13 +48145,13 @@
   "what_you_do": "Two weeks of design practice in architecture. It includes a field trip to Atlanta. It ends with a talk about your work and an awards dinner.",
   "min_age": null,
   "max_age": null,
-  "grades": "High school",
+  "grades": "9 to 12",
   "who_can_apply": "High school students of all levels. No ages or grades are listed.",
   "paid_type": "fee-based",
   "pay_detail": "$1,050 for 2026. Materials for modeling and drawing are included. Scholarships are not mentioned.",
   "season": "summer",
   "duration": "10 weekdays (July 6 to July 17 in 2026)",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "deadline_text": "2026 session July 6 to July 17, 2026. Registration closed April 1, 2026. The 2027 dates are not posted.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
@@ -48155,8 +48163,8 @@
    "https://campus.kennesaw.edu/colleges-departments/cacm/academics/architecture/architecture-summer-academy.php"
   ],
   "priority": 3,
-  "notes": "Costs money, not a job. Contact doarch@kennesaw.edu. Kennesaw campus: 1000 Chastain Road, Kennesaw, GA 30144.",
-  "verified": "fetched",
+  "notes": "Could not read the official page as of Nov 3, 2026: kennesaw.edu failed with a certificate error, so nothing here is confirmed. Details are from Oct 10, 2026. Costs money, not a job. Contact doarch@kennesaw.edu. Kennesaw campus: 1000 Chastain Road, Kennesaw, GA 30144.",
+  "verified": "snippet-only",
   "verified_on": "2026-10-10",
   "apply_url": null,
   "verified_on_label": "Oct 10, 2026"
@@ -48179,13 +48187,13 @@
   "what_you_do": "One-week hands-on career camps on campus. The 2026 camps are Baking and Pastry, Chef's Master Class and Medical Skills. The others are AutoCAD, Aerospace Engineering and Adulting 101.",
   "min_age": null,
   "max_age": null,
-  "grades": "Rising 9th to 12th (Aerospace Engineering: rising 6th to 12th)",
+  "grades": "9 to 12",
   "who_can_apply": "Rising 9th to 12th graders for camps at the KSU Center. The Aerospace Engineering camp at the Marietta campus takes rising 6th to 12th graders.",
   "paid_type": "fee-based",
   "pay_detail": "2026 prices: $499 for baking, AutoCAD, Chef's Master Class and Medical Skills; $399 for Adulting 101; $350 for Aerospace Engineering. Scholarships are not mentioned.",
   "season": "summer",
   "duration": "One week per camp",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "deadline_text": "2026 camps ran June 1 to July 24, 2026. Summer 2027 dates and prices are not posted yet; the page has a contact form for updates.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
@@ -48197,8 +48205,8 @@
    "https://cpe.kennesaw.edu/discoveru/"
   ],
   "priority": 2,
-  "notes": "Places: KSU Center, 3333 Busbee Dr NW, Kennesaw. The Marietta campus hosts Aerospace. Contact discoveru@kennesaw.edu or 470-578-6765. It costs money and is not a job. Confirm sign-up status with the team before you pay.",
-  "verified": "fetched",
+  "notes": "Could not read the official page as of Nov 3, 2026: kennesaw.edu failed with a certificate error, so nothing here is confirmed. Details are from Oct 10, 2026. Places: KSU Center, 3333 Busbee Dr NW, Kennesaw. The Marietta campus hosts Aerospace. Contact discoveru@kennesaw.edu or 470-578-6765. It costs money and is not a job. Confirm sign-up status with the team before you pay.",
+  "verified": "snippet-only",
   "verified_on": "2026-10-10",
   "apply_url": null,
   "verified_on_label": "Oct 10, 2026"
@@ -48218,7 +48226,7 @@
   "what_you_do": "One-week summer intensives in dance, theater, and arts and design. There are also music camps for jazz band, concert band, piano, choir and orchestra.",
   "min_age": null,
   "max_age": null,
-  "grades": "Rising 9th grade through rising college freshman",
+  "grades": "9 to 12",
   "who_can_apply": "Students going into 9th grade through college freshmen. The Dance Intensive is for intermediate to advanced dancers.",
   "paid_type": "fee-based",
   "pay_detail": "Cost is not stated on the main page. Check each program page.",
@@ -48237,7 +48245,7 @@
    "https://campus.kennesaw.edu/colleges-departments/arts/concerts-events/community-programs/summer-art-intensives.php"
   ],
   "priority": 3,
-  "notes": "Could not read the official page on 2026-11-02: kennesaw.edu refused the connection from both tools tried, so whether registration is live is not confirmed. Details here are from 2026-10-10. Not a job. The page states no cost or fee, so check each program page. The Dance, Theatre and Arts and Design intensives list no exact dates on the main page. Scholarships are not mentioned.",
+  "notes": "Could not read the official page as of Nov 3, 2026: kennesaw.edu failed with a certificate error, so whether registration is live is not confirmed. Details here are from Oct 10, 2026. Not a job. The page states no cost or fee, so check each program page. The Dance, Theatre and Arts and Design intensives list no exact dates on the main page. Scholarships are not mentioned.",
   "verified": "snippet-only",
   "verified_on": "2026-10-10",
   "apply_url": null,
@@ -53188,7 +53196,7 @@
   "min_age": 10,
   "max_age": null,
   "grades": null,
-  "who_can_apply": "Youth ages 10 and up. Anyone under 18 must have a parent or a named adult with them at all times during orientation training. Youth cannot handle animals.",
+  "who_can_apply": "Youth ages 10 and up. Anyone under 18 must have a parent or a named adult with them at all times during orientation and all volunteer work. Youth cannot handle animals.",
   "paid_type": "unpaid",
   "pay_detail": "Unpaid volunteer role",
   "season": "year-round",
@@ -53204,11 +53212,11 @@
    "https://lifelineanimal.org/volunteer/"
   ],
   "priority": 3,
-  "notes": "A parent or designated adult must be with you at all times through orientation. The page does not list the shelter addresses in the text read. A COVID-era section mentions remote projects for younger kids, but it may be outdated, so it is not listed here.",
+  "notes": "A parent or designated adult must be with you at all times through orientation and all volunteer work. The page does not list the shelter addresses in the text read. A COVID-era section mentions remote projects for younger kids, but it may be outdated, so it is not listed here.",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "lincoln-childrens-zoo-zoo-crew",
@@ -57767,11 +57775,11 @@
    "https://www.mariettaga.gov/DocumentCenter/View/21326"
   ],
   "priority": 2,
-  "notes": "The web page says ages 14 to 21; the requirements sheet says applicants must be under 21. The web page says meetings run Thursdays 6 to 8 pm, while the requirements sheet says 6 to 9 pm, so confirm the hours.Meets at 240 Lemon Street, Marietta, GA 30060. Phone 770-794-5355 or 770-794-5300 (ask for the Community Response Unit). The sheet says the fee goes to Learning for Life, Scouts BSA. Not a paid job.",
+  "notes": "The web page says ages 14 to 21; the requirements sheet says applicants must be under 21. The web page says meetings run Thursdays 6 to 8 pm, while the requirements sheet says 6 to 9 pm, so confirm the hours. Meets at 240 Lemon Street, Marietta, GA 30060. Phone 770-794-5355 or 770-794-5300 (ask for the Community Response Unit). The sheet says the fee goes to Learning for Life, Scouts BSA. Not a paid job.",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "martinez-central-san-externship",
@@ -59475,7 +59483,7 @@
    "health",
    "social-impact"
   ],
-  "what_you_do": "Sort, label and pack medical supplies in a 3-hour morning or afternoon shift. The supplies go to hospitals and clinics.",
+  "what_you_do": "Sort, identify and pack medical supplies in a 3-hour morning or afternoon shift. The supplies go to communities in need in the US and around the world.",
   "min_age": 10,
   "max_age": 17,
   "grades": null,
@@ -59497,10 +59505,10 @@
    "https://www.medshare.org/contact"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "The volunteer page does not name its work site. The only address on the contact page is the Decatur headquarters at 3240 Clifton Springs Road. Confirm the site when you register. MedShare does not host court-ordered or required community service.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "regions": [
@@ -64568,10 +64576,10 @@
    "https://www.msm.edu/Education/PipelinePrograms/STEAMacademy9-12.php"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Costs money. A session can be cancelled if too few students sign up. Contact on the pipeline page: Dr. Ryan Clark, 404-752-1843. Dates shown are from summer 2026.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "morehouse-summer-pre-college-program",
@@ -64608,10 +64616,10 @@
    "https://morehouse.edu/academics/programs/summer-academy/summer-pre-college-program"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "notes": "Costs money. The page also calls the group rising juniors and seniors in places. Confirm your grade with the Summer Academy (academicsuccess@morehouse.edu). Dates shown are from the 2026 summer. The page says the program serves students from across the metro Atlanta area and beyond, and that courses are offered online.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "moreno-valley-college-dual-enrollment",
@@ -64849,10 +64857,10 @@
    "https://www.msm.edu/cancerhealthequityinstitute/summerprograms.php"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "notes": "The same page lists three other programs (FIRE UP, CADET, SCREP) that are for college or graduate students, not high schoolers. The symposium is in person for all summer students. The application form link is the 2026 one.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "msm-health-careers-high-school-ambassadors",
@@ -64888,10 +64896,10 @@
    "https://www.msm.edu/Education/PipelinePrograms/hcop-academy/index.php"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Costs money. The same page lists a separate college track, which is not for high schoolers. Contact on the pipeline page: Dr. J. Wesley Lockhart, 404-752-1197.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "mt-san-antonio-college-special-admit",
@@ -83482,10 +83490,10 @@
    "https://www.piedmont.org/get-involved/volunteer/volunteer-at-piedmont-atlanta/teen-volunteers"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "You must go to the required orientation, or you can apply next summer.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "pikes-peak-library-district-teen-volunteer",
@@ -100800,10 +100808,10 @@
    "https://www.spelman.edu/academics/summer-programs/college-prep-institute.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "notes": "Costs money. Applying is not an application to Spelman and does not promise admission. The Mar 29 closing date is on the main summer programs page; the CPI page itself says only that late submissions are not accepted.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "spelman-early-college-program",
@@ -100840,10 +100848,10 @@
    "https://www.spelman.edu/academics/summer-programs/early-college-program.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "notes": "Costs money. The Mar 29 closing date is on the main summer programs page; the ECP page itself does not give a due date.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "st-charles-library-high-school-volunteers",
@@ -102802,9 +102810,9 @@
   "priority": 1,
   "notes": "Only 30 spots. City Hall: 3120 Stonecrest Boulevard, Suite 190, Stonecrest, GA 30038, 770-224-0200. Write to Nicholas Ivey at nivey@stonecrestga.gov. Unpaid, so no work permit.",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "grades": "Rising 6th to 11th",
@@ -103859,7 +103867,7 @@
  },
  {
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "id": "tcsg-dual-enrollment-georgia",
   "name": "Dual Enrollment at Technical College System of Georgia colleges",
   "org": "Technical College System of Georgia (including Atlanta Technical College)",
@@ -103899,7 +103907,7 @@
   ],
   "priority": 1,
   "notes": "Atlanta Tech funding rules on its page: 15 funded hours per semester, a 30 hour total, and funding ends after two course withdrawals. Atlanta Tech high school contact: hsadmissions@atlantatech.edu or 404-225-4511. This is a course program, not a job, so no work permit applies. The TCSG page sends students to GAfutures.org. The GAfutures Dual Enrollment Application Procedure page says students must apply to the college first, then complete the online Dual Enrollment Funding application; its Apply Now button opens secure.gafutures.org, which shows a GAfutures sign-in page first.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "tech-interactive-teen-holiday-helper",
@@ -105543,11 +105551,12 @@
   "paid_type": "paid",
   "pay_detail": "Starting at $12 per hour",
   "season": "summer",
-  "duration": "7 weeks, Monday to Friday, 7:30 am to 12:30 pm",
-  "status": "closed-expect-reopen",
-  "deadline_text": "2026 cycle: opened Nov 15, 2025, closed Feb 2, 2026, job ran June 1 to July 17, 2026. The page says 2027 details are coming later.",
-  "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
+  "duration": "7 weeks, June to mid-July 2027, Monday to Friday, 7:30 am to 12:30 pm",
+  "status": "opens-soon",
+  "opens_iso": "2026-11-15",
+  "deadline_text": "Applications open Nov 15, 2026 and close Feb 5, 2027. Challenge Day Feb 27, 2027. Tree planting Mar 6, 2027. Interviews Mar 8 to Apr 9, 2027.",
+  "deadline_iso": "2027-02-05",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Apply online when the link is posted. You must finish every step. These are a required Challenge Day, a required volunteer tree planting and an interview.",
   "needs_work_permit": true,
   "url": "https://www.treesatlanta.org/programs/youth-tree-team/",
@@ -105557,10 +105566,10 @@
    "https://dol.georgia.gov/child-labor-employment-certificate-instructions"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
-  "notes": "Competitive. Not everyone who applies gets a job. Returning members can apply for outside study spots with partner groups. 2026 dates are shown. Watch the page for the 2027 schedule. Georgia Department of Labor says a work permit (employment certificate) is required for minors under 16, so 14 and 15 year olds need one. A school issuing officer or the county school superintendent gives it.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "Competitive. Not everyone who applies gets a job. Returning members can apply for outside study spots with partner groups. The page says the Challenge Day and tree planting dates may change. Georgia Department of Labor says a work permit (employment certificate) is required for minors under 16, so 14 and 15 year olds need one. A school issuing officer or the county school superintendent gives it.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "tri-valley-rop",
@@ -105764,9 +105773,9 @@
   "priority": 2,
   "notes": "The page lists no direct phone or email; it links to the city's Contacting the City page. The page does not post the next application date. Unpaid, so no work permit.",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 10, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -114543,14 +114552,14 @@
   "priority": 1,
   "notes": "Volunteer Services: 3950 Austell Rd, Austell, GA 30106, (470) 732-3767. Picks use a finished application and the required documents. They also look at time commitment, past volunteering, GPA and leadership. They look at speaking skills and interest in health care too. Unpaid, so no work permit.",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "wellstar-kennestone-volunteen",
-  "name": "Wellstar Kennestone Hospital VolunTeen Program",
-  "org": "Wellstar Health System, Kennestone Hospital",
+  "name": "Wellstar Kennestone VolunTeen Program",
+  "org": "Wellstar Health System, Kennestone Regional Medical Center",
   "regions": [
    "atlanta"
   ],
@@ -114581,14 +114590,14 @@
   "priority": 1,
   "notes": "Accepted students may keep volunteering in the school year if Volunteer Services says yes. It is competitive. This is an unpaid volunteer role, so no work permit.",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "wellstar-north-fulton-volunteens",
-  "name": "VolunTeens at Wellstar North Fulton Hospital",
-  "org": "Wellstar Health System, North Fulton Hospital (Roswell)",
+  "name": "VolunTeens at Wellstar North Fulton Medical Center",
+  "org": "Wellstar Health System, North Fulton Medical Center (Roswell)",
   "regions": [
    "atlanta"
   ],
@@ -114618,10 +114627,10 @@
    "https://www.wellstar.org/community/volunteer/north-fulton-hospital-volunteens"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Spots are limited. Not everyone is accepted. Picks look at past service, GPA, leadership and interest in health careers. Students accepted for summer may keep volunteering in the school year with approval.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "west-sac-lifeguard-swim-instructor",
@@ -116174,7 +116183,7 @@
  },
  {
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "id": "worksource-atlanta-youth-rise",
   "name": "Youth R.I.S.E. (Reaching Independence through Skills and Employment)",
   "org": "WorkSource Atlanta (City of Atlanta workforce board)",
@@ -116210,7 +116219,7 @@
   ],
   "priority": 1,
   "notes": "Eligibility is income and barrier based, so not every teen qualifies. The document list includes a Social Security card and proof of address; this is the official city workforce board, but upload documents only through the portal named on the page. Under 18 using parent documents: proof of relationship and shared address is needed. Georgia requires a work permit only under 16, and this program starts at 16.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -116247,14 +116256,14 @@
   "priority": 1,
   "notes": "The page does not mention work permits. Contact 404-371-2000 (Mon to Fri, 8:00 am to 4:30 pm) or 311CCC@dekalbcountyga.gov.",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "apply_url": "https://atlworks.org/",
-  "verified_on_label": "Oct 10, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "id": "worksource-fulton-youth-services",
   "name": "WorkSource Fulton Youth Services",
   "org": "Fulton County Government, WorkSource Fulton",
@@ -116291,7 +116300,7 @@
   ],
   "priority": 2,
   "notes": "A March 2026 county news release says WorkSource Fulton also offers the Career Compass Academy, a five-week paid virtual work readiness program for ages 14 to 24 that is income based. Teens signed up at the county's Summer Teen Hiring Fair on April 11, 2026; next year's dates are not posted. If you live inside the City of Atlanta, also look at Youth R.I.S.E. and ask which office serves your address. The county's older Summer Youth Job Training and Summer Youth Internship pages return errors now.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -116703,16 +116712,17 @@
   "how_to_apply": "Use the Register Now link on the teen community page. Changemakers uses the Teen Clubs sign-up. Or ask at a local YMCA branch.",
   "needs_work_permit": false,
   "url": "https://www.ymcaatlanta.org/teen-community",
-  "apply_url": "https://ymcaatlanta.my.site.com/s/registration?category=Teen%20Programs",
+  "apply_url": "https://ymcaatlanta.my.site.com/s/registration?searchKeyword=leaders%20club",
   "sources_fetched": [
    "https://www.ymcaatlanta.org/learning/teens",
-   "https://www.ymcaatlanta.org/teen-community"
+   "https://www.ymcaatlanta.org/teen-community",
+   "https://www.ymcaatlanta.org/teens/legacy-leaders-scholarship"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
-  "notes": "Leaders Club can include travel to conferences and leadership events. The page does not say how many community service hours a club gives. Which branch runs a club and when is not stated, so ask your local Y. The Y's teens page lists a Legacy Leaders college scholarship for active teen members, with a last day to apply of Sunday, September 13 (year not stated).",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "Leaders Club can include travel to conferences and leadership events. The page does not say how many community service hours a club gives. Which branch runs a club and when is not stated, so ask your local Y. The Y's teens page lists a Legacy Leaders college scholarship for active teen members. The last window closed Sept 13, 2026.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "ymca-orange-county-volunteer",
@@ -117835,7 +117845,7 @@
    "environment",
    "education"
   ],
-  "what_you_do": "Serve at the Zoo for a full program year in areas like habitat interpretation, public events, conservation projects, Safari Camp and animal nutrition. Training week is required.",
+  "what_you_do": "Serve at the Zoo for a full program year in areas like habitat interpretation, the contact yard, events and animal enrichment. Second-year teens may get other roles. Training week is required.",
   "min_age": 14,
   "max_age": 17,
   "who_can_apply": "Teens 14 to 17 years old by June 1, 2027 who are enrolled in high school (or equivalent) for the coming school year.",
@@ -117859,11 +117869,11 @@
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "sources_fetched": [
    "https://zooatlanta.org/program/volunteen-program/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "grades": null,
