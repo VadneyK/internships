@@ -19,21 +19,21 @@
   "pay_detail": "Noncredit 10-week course $661; 1.0 college credit course $1,982; supplies about $50 to $200 extra. The Smith Scholarship covers 100% of noncredit course tuition for Illinois students. Limited need-based aid.",
   "season": "school-year",
   "duration": "10-week courses in fall and spring; the page does not state a summer course length",
-  "status": "unconfirmed",
+  "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "Register online for each term. No fixed deadline stated on the program pages.",
-  "deadline_iso": null,
-  "deadline_confidence": "unknown",
+  "deadline_text": "Spring registration is open Oct 15, 2026 to Feb 1, 2027. The page shows no year, but the weekdays match. Smith Scholarship form due Nov 19 (no year shown).",
+  "deadline_iso": "2027-02-01",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Sign up for courses on the Early College Program page. For the Smith Scholarship, fill out the scholarship form. Upload your household 1040 and send in three pieces of art to SlideRoom. For need-based aid, say yes at sign-up and upload the 1040 in DocuSign.",
   "needs_work_permit": false,
   "url": "https://www.saic.edu/high-school-programs",
-  "apply_url": null,
+  "apply_url": "https://continuingstudies.saic.edu/early-college-program",
   "sources_fetched": [
     "https://www.saic.edu/high-school-programs",
     "https://www.saic.edu/high-school-programs/early-college-program-classes/tuition-financial-assistance"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "notes": "Costs money unless you win the Smith Scholarship or aid. Aid is first come, first served."
 }
