@@ -5,7 +5,7 @@
   "regions": [
     "pennsylvania"
   ],
-  "city": "Pennsylvania (held at Shippensburg University)",
+  "city": "Pennsylvania (Messiah University in 2027)",
   "type": "civic-government",
   "fields": [
     "law-government"
@@ -13,30 +13,31 @@
   "what_you_do": "Spend a week in a pretend government. You live in a mock city and county, hold mock offices, hold meetings and learn how Pennsylvania government works.",
   "min_age": null,
   "max_age": null,
-  "grades": null,
-  "who_can_apply": "Girls in Pennsylvania. The pages do not state grade, citizenship or cost rules, so check the application.",
-  "paid_type": "unpaid",
-  "pay_detail": "No pay. The page says it is free in most cases; you may pay only for your own travel to Shippensburg University. Bring some cash for snacks and shirts sold during the week.",
+  "grades": "11 to 12",
+  "who_can_apply": "High school girls in Pennsylvania who have finished junior year. You must be a U.S. citizen or legal resident with papers to show it.",
+  "paid_type": "fee-based",
+  "pay_detail": "No pay. The 2027 form says you send a $100 check to your sponsor and a local Auxiliary unit pays $200. With no sponsor you pay $300. The fee is not refunded.",
   "season": "summer",
-  "duration": "One week in June",
-  "status": "unconfirmed",
+  "duration": "One week, June 20 to 25, 2027",
+  "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "The home page lists a 2027 application and the dates 20-25 June 2026. The only deadline posted is old (May 20, 2023). No 2027 deadline is stated.",
-  "deadline_iso": null,
-  "deadline_confidence": "unknown",
-  "how_to_apply": "Use the Apply tab on the Keystone Girls State site (the home page links an application for 2027). The old FAQ says to print and mail the form, then fill out a parent packet before camp. Check with a local Auxiliary unit for sponsorship.",
+  "deadline_text": "The 2027 application is posted. It must be postmarked by Apr 30, 2027. Session: June 20 to 25, 2027.",
+  "deadline_iso": "2027-04-30",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the 2027 application form. Add a short bio and a photo. Send it with a $100 check to your local Auxiliary unit, which mails it on. To find a unit or pay the $300 yourself, email kgsalapa@gmail.com.",
   "needs_work_permit": false,
   "url": "https://www.pagirlsstate.com/apply",
-  "apply_url": "https://www.pagirlsstate.com/apply",
+  "apply_url": "https://www.pagirlsstate.com/_files/ugd/22cacb_199d93f06b2748cda8ae59996dce2557.pdf",
   "sources_fetched": [
     "https://www.pagirlsstate.com/",
     "https://www.pagirlsstate.com/apply",
     "https://www.pagirlsstate.com/about",
     "https://www.pagirlsstate.com/faq",
-    "https://www.legion-aux.org/ala-girls-state-locations"
+    "https://www.legion-aux.org/ala-girls-state-locations",
+    "https://www.pagirlsstate.com/_files/ugd/22cacb_199d93f06b2748cda8ae59996dce2557.pdf"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
-  "notes": "Girls only. The FAQ on the site is still from 2023, so confirm this year's dates, deadline and cost with the program before you plan. The national Auxiliary list shows June 21 to June 26, 2026 while the state site shows 20-25 June 2026."
+  "notes": "Girls only. Older site pages conflict: the FAQ is from 2023, the About page says Shippensburg and calls it free in most cases, and the home page shows 20-25 June 2026. The dates and costs here come from the 2027 application."
 }
