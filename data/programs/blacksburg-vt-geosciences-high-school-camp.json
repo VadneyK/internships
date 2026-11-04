@@ -5,7 +5,7 @@
   "max_age": 18,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "needs_work_permit": false,
   "deadline_iso": null,
@@ -14,7 +14,8 @@
     "environment"
   ],
   "sources_fetched": [
-    "https://fralinlifesci.vt.edu/education-and-outreach/stem-camp.html"
+    "https://fralinlifesci.vt.edu/education-and-outreach/stem-camp.html",
+    "https://register.ext.vt.edu/search/publicCourseSearchDetails.do?method=load&courseId=4318898&selectedProgramAreaId=25602&selectedProgramStreamId="
   ],
   "season": "summer",
   "id": "blacksburg-vt-geosciences-high-school-camp",
@@ -31,7 +32,7 @@
   "pay_detail": "$120 for the week (2026). Two scholarships are available each week for families with financial need.",
   "duration": "One week, 9am to 4pm (2026: June 1 to 5), day camp, no overnight",
   "status": "closed-expect-reopen",
-  "deadline_text": "2026 camp ran June 1 to 5. No registration deadline and no 2027 dates posted.",
+  "deadline_text": "2026 camp ran June 1 to 5. Registration closed 7 days before camp. No 2027 dates posted.",
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Sign up with the link on the STEM Summer Camp page. For a scholarship, email the contact on the page. That is kdivitto@vt.edu or the Fralin education director.",
   "url": "https://fralinlifesci.vt.edu/education-and-outreach/stem-camp.html",
