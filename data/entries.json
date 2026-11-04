@@ -104441,7 +104441,7 @@
   "deadline_text": "High school conferences in Murfreesboro: Nov 6 to 8, Nov 13 to 15 and Nov 20 to 22, 2026. Middle school one-day events: Chattanooga Oct 22, Murfreesboro Nov 16, Memphis Dec 2, 2026. No registration deadline is posted.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "The page says to contact Senior Program Director Stella London at slondon@ymcamidtn.org to start a team at your school. It does not say how single students sign up.",
+  "how_to_apply": "Use the Contact the CCE button on the page to ask about starting a team at your school. It does not say how single students sign up.",
   "needs_work_permit": false,
   "url": "https://www.ymcamidtn.org/cce-model-united-nations",
   "apply_url": null,
@@ -104449,10 +104449,10 @@
    "https://www.ymcamidtn.org/cce-model-united-nations"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "Over 80 students serve as elected officers. Ask the YMCA about cost and if a student without a school team can join.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "tennessee-ymca-youth-in-government",
@@ -104480,7 +104480,7 @@
   "deadline_text": "2027 high school conferences: Capitol Conference Feb 25 to 28, Tristar Conference Apr 8 to 11, Volunteer Conference Apr 15 to 18. Middle school: Chattanooga Mar 11 and 12 (other dates not posted yet). No registration deadline is posted.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "The page says to contact Senior Program Director Stella London to start or join a team at your school. Her email is slondon@ymcamidtn.org.",
+  "how_to_apply": "Use the Contact the CCE button on the page to ask how to start a team at your school or for help to sign up.",
   "needs_work_permit": false,
   "url": "https://www.ymcamidtn.org/cce-youth-government",
   "apply_url": null,
@@ -104489,10 +104489,10 @@
    "https://www.ymcamidtn.org/center-civic-engagement"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "The YMCA also runs Model United Nations through the same center. Ask about cost and sign-up before you plan.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "texas-4h",
@@ -112648,34 +112648,35 @@
    "social-impact"
   ],
   "what_you_do": "A free 28-week program for teen leaders. You learn teamwork, public speaking and fitness. You help the community, march in parades and go camping. You also see how police teams like the dog and boat units work.",
-  "min_age": null,
-  "max_age": null,
+  "min_age": 14,
+  "max_age": 17,
   "grades": "Going into Grade 10, 11 or 12",
-  "who_can_apply": "Teens going into Grade 10, 11 or 12 who live or go to school in Vancouver. You must want to finish school and not miss a lot of it. You cannot have serious arrests, a record of trouble with police, or gang ties.",
+  "who_can_apply": "Teens going into Grade 10, 11 or 12 who live or go to school in Vancouver. Ages 14 to 17 when you apply. You must want to finish school and not miss a lot of it. You cannot have serious arrests, a record of trouble with police, or gang ties.",
   "paid_type": "unpaid",
   "pay_detail": "Free. The Vancouver Police Foundation pays for all program materials and fees.",
   "season": "school-year",
   "duration": "28 weeks, September to May",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Applications are closed for the 2026/2027 school year. The VPD page says to check back in the spring. Last pattern: the call for the class starting September 2025 was posted April 25, 2025.",
+  "deadline_text": "Applications are closed for the 2026/2027 school year. The VPD page says to check back in the spring. Last pattern: the call for the class starting September 2025 was posted April 25, 2025. The last deadline was May 13, 2026.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Apply online with the Apply Now button on the VPD Cadet page when it reopens in spring 2027. Questions: cadets@vpd.ca.",
+  "how_to_apply": "When it reopens in spring 2027, get the application package from the VPD Cadet page. Last time you emailed it to ApplyVPDCadets@vpd.ca or dropped it at a VPD station, with a report card and photo. Questions: cadets@vpd.ca.",
   "needs_work_permit": null,
   "url": "https://vpd.ca/join-us/vpd-cadet-program/",
   "apply_url": null,
   "sources_fetched": [
    "https://vpd.ca/join-us/vpd-cadet-program/",
+   "https://vpd.ca/wp-content/uploads/2026/06/cadet-application-package-2026-final.pdf",
    "https://www.vancouverpolicefoundation.org/impact/vpd-cadet-program/",
    "https://www.vancouverpolicefoundation.org/2025/04/cadetclass12/",
    "https://vancouver.ca/people-programs/youth-getting-involved.aspx"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-04",
   "priority": 1,
-  "notes": "About 90 cadets a year. It is a leadership program, not police recruiting. The VPD Indigenous Cadet Program is a different summer job for ages 19 to 29. Unpaid, so BC child employment rules for paid work do not apply here.",
-  "verified_on_label": "Oct 16, 2026"
+  "notes": "About 90 cadets a year. It is a leadership program, not police recruiting. The VPD Indigenous Cadet Program is a different summer job for ages 19 to 29. Unpaid, so BC child employment rules for paid work do not apply here. You need a Facebook account, and VPD checks your social media. Applicants get a criminal record check.",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "12 (apply in grade 11)",
@@ -112685,7 +112686,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "fields": [
    "trades"
@@ -112700,21 +112701,23 @@
   "type": "school-pathway",
   "what_you_do": "Try several skilled trades in one semester. Try carpentry, electrical work, plumbing, iron work and sheet metal. Find the one that fits you.",
   "min_age": null,
-  "who_can_apply": "Vancouver School Board students. Apply in grade 11 for grade 12, semester 2, at John Oliver Secondary. Grade 12 students can apply if a space is left.",
-  "paid_type": "unpaid",
-  "pay_detail": "Not stated",
+  "who_can_apply": "Vancouver School Board students who are Canadian citizens or permanent residents. Apply in grade 11 for grade 12, semester 2, at John Oliver Secondary. Grade 12 students can apply if a spot is left.",
+  "paid_type": "fee-based",
+  "pay_detail": "VSB pays tuition. You pay about $500 for supplies, tools and safety gear.",
   "season": "school-year",
   "duration": "Semester 2 of grade 12",
   "status": "unconfirmed",
-  "deadline_text": "Dates not stated on the program page. Ask your counsellor.",
-  "deadline_confidence": "unknown",
-  "how_to_apply": "Use the application on the page or ask your counsellor. Email careerprograms@vsb.bc.ca.",
+  "deadline_text": "The form and flyer say to apply by March 1, with no year. The flyer is from Nov 2025. Ask your counsellor.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the application on the page. Give it to your counsellor, who sends it in. You also need references, grad reports and a resume. Email careerprograms@vsb.bc.ca.",
   "url": "https://www.vsb.bc.ca/career-programs/youth-explore-trades-sampler",
-  "notes": "Page says students should apply in grade 11, and that grade 12 students can apply if a space remains. Confirm with the school. Contact Mark Reid, Career Programs Teacher, mreid@vsb.bc.ca.",
+  "notes": "Pages differ. The program page says you must be in grade 11, and also that grade 12 can apply if a space remains. The flyer says grade 10 or 11. The form says going into grade 11 or 12. The page says John Oliver Secondary; the form lists BCIT campuses. Confirm with the school. The form asks for a Social Insurance Number, so ask the school about it first. Contact Mark Reid, Career Programs Teacher, mreid@vsb.bc.ca.",
   "sources_fetched": [
-   "https://www.vsb.bc.ca/career-programs/youth-explore-trades-sampler"
+   "https://www.vsb.bc.ca/career-programs/youth-explore-trades-sampler",
+   "https://media.vsb.bc.ca/media/Default/medialib/trades-sampler-application.257ac475076.pdf",
+   "https://media.vsb.bc.ca/media/Default/medialib/tsj-3nov2025.b7ce5d85016.pdf"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "10 to 12",
@@ -112724,7 +112727,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "fields": [
    "trades"
@@ -112753,7 +112756,7 @@
   "sources_fetched": [
    "https://www.vsb.bc.ca/career-programs/youth-work-in-trades"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -112763,7 +112766,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "fields": [
    "law-government"
@@ -112780,7 +112783,7 @@
   "min_age": 14,
   "who_can_apply": "Ages 14 to 18 as of Dec 31, in the Vancouver region. This includes Vancouver, North Vancouver, West Vancouver, Burnaby and Richmond. A youth group, like a school or community group, must name you. Five members of that group must sign.",
   "paid_type": "fee-based",
-  "pay_detail": "$60 registration fee; financial help may be asked for by email",
+  "pay_detail": "$60 registration fee. The page lists no financial help.",
   "season": "winter",
   "duration": "One weekend session plus events during the year",
   "status": "closed-expect-reopen",
@@ -112792,7 +112795,7 @@
   "sources_fetched": [
    "https://bcyp.org/vyp"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "11 to 12",
@@ -112802,7 +112805,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "fields": [
    "trades",
@@ -112820,7 +112823,7 @@
   "min_age": null,
   "who_can_apply": "High school students in partner school districts, including Vancouver, Surrey, Richmond and Langley. Process starts in grade 11 for courses in grade 12.",
   "paid_type": "mixed",
-  "pay_detail": "VCC lists program tuition (for example $2,513 for Baking Foundation High School). Application and student fees are waived if accepted. School district may pay tuition for select courses.",
+  "pay_detail": "VCC lists program tuition (for example $2,563 for Baking Foundation High School). Application and student fees are waived if accepted. School district may pay tuition for select courses.",
   "season": "school-year",
   "duration": "Varies by program (about 6 months to 40 weeks)",
   "status": "rolling",
@@ -112832,7 +112835,7 @@
   "sources_fetched": [
    "https://www.vcc.ca/programscourses/dual-credit/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "opens_iso": null,
