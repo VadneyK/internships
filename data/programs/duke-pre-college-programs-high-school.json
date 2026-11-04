@@ -2,7 +2,7 @@
   "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "id": "duke-pre-college-programs-high-school",
   "name": "Duke Pre-College Programs (High School)",
   "org": "Duke University, Office of the Provost",
@@ -18,21 +18,21 @@
   "min_age": 14,
   "max_age": null,
   "grades": "Current grades 9-12",
-  "who_can_apply": "High school students in current grades 9 to 12 who are at least 14 to attend. (The page also lists middle school programs for grades 6-8.)",
+  "who_can_apply": "High school students in current grades 9 to 12 who are at least 14 by the first day and have finished one year of high school. You should have a GPA of 3.0 or higher. (The page also lists middle school programs for grades 6 to 8.)",
   "paid_type": "fee-based",
-  "pay_detail": "2027 residential fee not yet posted (Duke lists it as to be determined). Enrollment deposit: $500 before April 2, 2027, or $1,500 after April 1. Airport shuttle $45 each way; extra nights $120 each.",
+  "pay_detail": "2027 residential fee: $6,030. Enrollment deposit: $500 before April 2, 2027, or $1,500 after April 1. Airport shuttle $45 each way; extra nights $120 each.",
   "season": "summer",
-  "duration": "Three sessions; dates to be announced in October 2026",
-  "status": "unconfirmed",
-  "deadline_text": "No application deadline listed. Session dates, courses and fees for 2027 will be announced in October 2026.",
+  "duration": "Three sessions; 2027 dates are not posted as of Nov 3, 2026",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Registration opens in December 2026 (no exact day posted). 2027 session dates are not posted as of Nov 3, 2026. Final payment is due 30 days before your session starts.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
-  "how_to_apply": "Join the information request list on the Duke Pre-College page to be told when 2027 dates and courses open.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Join the information request list on the Duke Pre-College page to get an email when registration opens. You register in the Duke Pre-College Student Portal.",
   "needs_work_permit": false,
   "url": "https://provost.duke.edu/pre-college-programs/",
   "sources_fetched": [
     "https://provost.duke.edu/pre-college-programs/"
   ],
   "priority": 3,
-  "notes": "Courses, session dates and fees for Summer 2027 were not posted on 2026-10-09. Check back after the October 2026 announcement."
+  "notes": "2027 session dates and courses were not posted as of Nov 3, 2026. Check back in December."
 }

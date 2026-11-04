@@ -19,11 +19,11 @@
   "pay_detail": null,
   "season": "school-year",
   "duration": "One year. Minimum 30 service hours a year to stay active.",
-  "status": "opens-soon",
-  "opens_iso": "2026-12-01",
+  "status": "unconfirmed",
+  "opens_iso": null,
   "deadline_text": "Apply December 1, 2026 to January 31, 2027 (5 PM). You must first attend an information session with a parent or guardian: Nov 14, Dec 10, 2026, or Jan 16, 2027. Decisions by early March 2027.",
-  "deadline_iso": "2027-01-31",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Go to an info session with a parent or guardian. Then send the form, two letters from adults who are not family, and a short video. In the video, tell them your favorite way to play. Keep it under 2 minutes.",
   "needs_work_permit": false,
   "url": "https://marbleskidsmuseum.org/volunteer/",
@@ -31,8 +31,8 @@
   "sources_fetched": [
     "https://marbleskidsmuseum.org/volunteer/"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "Not everyone is accepted. If selected, you take a virtual Volunteer 101 and in-person Mission 101 and Play 101 trainings. Teens 16 and up can also volunteer on their own without Teen Play Corps. Questions: teenplaycorps@marbleskidsmuseum.org."
+  "notes": "Could not read the official page as of Nov 3, 2026: marbleskidsmuseum.org returned a 403 error, so nothing here is confirmed. Details are from Oct 16, 2026. Not everyone is accepted. If selected, you take a virtual Volunteer 101 and in-person Mission 101 and Play 101 trainings. Teens 16 and up can also volunteer on their own without Teen Play Corps. Questions: teenplaycorps@marbleskidsmuseum.org."
 }
