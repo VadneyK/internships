@@ -55,6 +55,10 @@ const NAME_REGION_ALLOW = new Map([
 // Shared url -> the exact ids that share it today. Starts from the 23 urls used by more than one card
 // (url or apply_url), as found in data/programs on 2026-10-10.
 const SHARED_URL_ALLOW = new Map([
+  ["https://careerprograms.sd38.bc.ca/files/careerprograms/2026/09/Application%20DUAL%20CREDIT%20Programs%20for%202027-2028%20-%20coloured.pdf", {
+    ids: ["richmond-sd38-biomedical-health-science-dual-credit", "richmond-sd38-business-dual-credit-kpu"],
+    reason: "Shared hub: Richmond School District 38 uses one 2027-28 dual credit form for both programs.",
+  }],
   // Added 2026-10-16 for the Bay Area city pass (issues 1 and 2).
   ["https://www.larpd.org/volunteer", {
     ids: ["larpd-event-volunteers", "larpd-summer-youth-volunteer"],
