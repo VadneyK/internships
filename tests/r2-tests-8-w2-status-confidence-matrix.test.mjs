@@ -23,12 +23,10 @@ const ALLOWED = {
 // Cards that break the table today. Each entry pins the exact pair it was reviewed with.
 const ALLOW_LIST = {
   "baltimore-wide-angle-high-school-media-classes": { status: "closed-expect-reopen", deadline_confidence: "rolling", reason: "Closed card with rolling confidence, which never expires. Fix the card." },
-  "pasadena-city-college-concurrent-dual-enrollment": { status: "closed-expect-reopen", deadline_confidence: "rolling", reason: "Closed card with rolling confidence, which never expires. Fix the card." },
   "santa-barbara-humane-society-volunteers": { status: "closed-expect-reopen", deadline_confidence: "rolling", reason: "Closed card with rolling confidence, which never expires. Fix the card." },
   "boston-futurebos-youth-jobs": { status: "open-now", deadline_confidence: "rolling", reason: "Open with no closing date. The table does not allow open-now with rolling yet." },
   "bullock-museum-volunteer": { status: "open-now", deadline_confidence: "rolling", reason: "Open with no closing date. The table does not allow open-now with rolling yet." },
   "college-park-urban-forestry-careers-camp": { status: "open-now", deadline_confidence: "rolling", reason: "Open with no closing date. The table does not allow open-now with rolling yet." },
-  "el-camino-college-dual-enrollment": { status: "open-now", deadline_confidence: "rolling", reason: "Open with no closing date. The table does not allow open-now with rolling yet." },
   "nyc-brooklyn-bridge-park-green-team-coastal-cleanup": { status: "open-now", deadline_confidence: "rolling", reason: "Open with no closing date. The table does not allow open-now with rolling yet." },
   "phoenix-azyouthforce-paid-internships": { status: "open-now", deadline_confidence: "rolling", reason: "Open with no closing date. The table does not allow open-now with rolling yet." },
   "salem-oregon-humane-youth-volunteer": { status: "open-now", deadline_confidence: "rolling", reason: "Open with no closing date. The table does not allow open-now with rolling yet." },

@@ -2,9 +2,9 @@
   "regions": [
     "los-angeles"
   ],
-  "apply_url": null,
+  "apply_url": "https://juniorlifeguards.fire.lacounty.gov",
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-02",
   "grades": null,
   "needs_work_permit": false,
   "id": "la-county-junior-lifeguard-program",
@@ -32,9 +32,10 @@
   "how_to_apply": "Register online when the season opens, usually in February or March. New participants must pass a swim test. They must bring a birth certificate or passport. Cadet and Life Saving Team applications are separate. They are posted later.",
   "url": "https://fire.lacounty.gov/junior-lifeguard-program/",
   "priority": 3,
-  "notes": "The page calls the $635 an estimated operating cost and says the fee schedule is under review. Costs money and is mainly for younger kids; teens 16 to 17 can reach Cadets. Not every beach offers afternoon sessions or Session 2. Refund rules and absence limits are on the page. The registration site (juniorlifeguards.fire.lacounty.gov) was not loading on October 18, 2026; use the link on the program page when 2027 registration opens.",
+  "notes": "The page calls the $635 an estimated operating cost and says the fee schedule is under review. Costs money and is mainly for younger kids; teens 16 to 17 can reach Cadets. Not every beach offers afternoon sessions or Session 2. Refund rules and absence limits are on the page. The registration site loaded on November 2, 2026 but shows no 2027 dates. It says new and returning parents must create a new profile before registering.",
   "sources_fetched": [
     "https://fire.lacounty.gov/junior-lifeguard-program/",
-    "https://fire.lacounty.gov/summer-junior-lifeguard-program/"
+    "https://fire.lacounty.gov/summer-junior-lifeguard-program/",
+    "https://juniorlifeguards.fire.lacounty.gov"
   ]
 }

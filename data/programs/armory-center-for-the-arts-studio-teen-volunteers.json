@@ -4,7 +4,7 @@
   ],
   "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLSc8MQ943uktvCVjlksbfUaNu264LNieJtnOdPWrqJNa5xq2yg/viewform?usp=header",
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-02",
   "grades": null,
   "needs_work_permit": false,
   "id": "armory-center-for-the-arts-studio-teen-volunteers",
@@ -26,14 +26,15 @@
   "duration": "Each Studio session (hours not listed)",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "No dates or deadline listed.",
+  "deadline_text": "No dates or deadline listed on the volunteer page. The linked sign-up form is titled Fall 2026 and says it is not accepting responses. No date is given for the next session.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Use the Learn More and Sign Up link on the volunteer page, which opens a Google Form. You can also call the Armory at (626) 792-5101.",
+  "how_to_apply": "Use the Learn More and Sign Up link on the volunteer page, which opens a Google Form. The form was not taking responses on 2026-11-02, so call the Armory at (626) 792-5101 to ask about the next session.",
   "url": "https://www.armoryarts.org/support/volunteer",
   "priority": 2,
   "notes": "Hours and session dates are not on the page. The Armory's Fall Studio 2026 classes are on a separate page.",
   "sources_fetched": [
-    "https://www.armoryarts.org/support/volunteer"
+    "https://www.armoryarts.org/support/volunteer",
+    "https://docs.google.com/forms/d/e/1FAIpQLSc8MQ943uktvCVjlksbfUaNu264LNieJtnOdPWrqJNa5xq2yg/viewform?usp=header"
   ]
 }
