@@ -4,14 +4,14 @@
   "deadline_iso": null,
   "apply_url": "https://www.volgistics.com/appform/1266155945",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "fields": [
     "health"
   ],
   "needs_work_permit": false,
   "status": "closed-expect-reopen",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_confidence": "last-year-pattern",
   "id": "las-vegas-sunrise-hospital-medical-explorer-program",
   "name": "Medical Explorer Program",
   "org": "Sunrise Hospital & Medical Center",
@@ -28,11 +28,11 @@
   "pay_detail": "Unpaid volunteer program",
   "season": "school-year",
   "duration": "12 volunteer hours a month in the school year, 8 hours a week in summer. Must attend 75 percent of post activities.",
-  "deadline_text": "Fall 2026 applications close Oct 12, 2026 at noon. Applications open twice a year: summer (2026 window was Mar 2 to Apr 3) and fall (Sept 7 to Oct 12).",
-  "how_to_apply": "Use the Medical Explorer Application link on the volunteer page. It works only in the open window. Then you have an interview in person. To get in you need a background check, a drug test, a shot check and a TB blood test.",
-  "url": "https://sunrisehospital.com/volunteer",
-  "notes": "Process can take 4 to 6 weeks. The summer 2026 window was March 2 to April 3, so check the page for the next summer window. Adults 18 and over use a different application.",
+  "deadline_text": "Fall 2026 applications closed Oct 12, 2026 at noon. Applications open twice a year: summer (2026 window was Mar 2 to Apr 3) and fall (Sept 7 to Oct 12). 2027 dates are not posted.",
+  "how_to_apply": "Use the Medical Explorer Application link on the volunteer page. It works only in the open window. The page lists an interview, background check, drug test, shot check and TB blood test for adults. Ask if Explorers need them too.",
+  "url": "https://www.sunrisehealthinfo.com/locations/sunrise-hospital/about-us/volunteers",
+  "notes": "The adult process can take 4 to 6 weeks. The summer 2026 window was March 2 to April 3, so check the page for the next summer window. Adults 18 and over use a different application.",
   "sources_fetched": [
-    "https://sunrisehospital.com/volunteer"
+    "https://www.sunrisehealthinfo.com/locations/sunrise-hospital/about-us/volunteers"
   ]
 }
