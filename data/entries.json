@@ -103233,7 +103233,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "fields": [
    "any"
@@ -103262,7 +103262,7 @@
   "sources_fetched": [
    "https://www.surrey.ca/about-surrey/youth-engagement/yep-projects"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -103272,7 +103272,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "fields": [
    "any"
@@ -103302,7 +103302,7 @@
    "https://www.surrey.ca/about-surrey/youth-engagement/youth-leadership-groups"
   ],
   "notes": "Exact spring 2027 opening day not posted.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -111756,7 +111756,7 @@
   "pay_detail": "Unpaid volunteer.",
   "season": "year-round",
   "duration": "One shift a week for at least 3 months",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "Recruitment happens once a year in the spring. No 2027 date is posted. Sign up on the page to get an email when it opens.",
   "deadline_iso": null,
@@ -111768,10 +111768,10 @@
   "sources_fetched": [
    "https://www.vanaqua.org/volunteer"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 2,
-  "notes": "The aquarium also has a Marine Mammal Rescue Centre volunteer role and practicums. Those are for ages 18 and up, so they are not on this card.",
+  "notes": "The aquarium also has a Marine Mammal Rescue Centre volunteer role and practicums. Those are for ages 18 and up, so they are not on this card. As of Nov 4, 2026, the aquarium site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 19, 2026"
  },
  {
@@ -111781,7 +111781,7 @@
   "min_age": 13,
   "max_age": 15,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "vancouver-art-gallery-art-exchange",
   "name": "Art Exchange (Vancouver Art Gallery and Arts Umbrella)",
   "org": "Vancouver Art Gallery with Arts Umbrella",
@@ -111812,16 +111812,16 @@
   ],
   "priority": 3,
   "notes": "Scholarship-funded learning program, not a paid job. Canada, so British Columbia Employment Standards rules have not been added to this guide yet.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "opens_iso": null,
-  "apply_url": "https://ecuad.ca/youth-programs/community-programs/",
+  "apply_url": "https://www.ecuad.ca/academics/teen-programs/teen-art-group",
   "grades": "Aged 15 to 18 or entering Grades 10, 11 or 12 in fall 2026",
   "min_age": 15,
   "max_age": 18,
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-04",
   "id": "vancouver-art-gallery-teen-art-group",
   "name": "Teen Art Group (Vancouver Art Gallery and Emily Carr University)",
   "org": "Vancouver Art Gallery with Emily Carr University of Art + Design",
@@ -111839,8 +111839,8 @@
   "pay_detail": "Registration fee $555.90 CAD. Four full-tuition scholarships are available for Indigenous students or students facing financial barriers.",
   "season": "school-year",
   "duration": "Thursdays 4 to 7 PM, October 15, 2026 to February 11, 2027",
-  "status": "open-now",
-  "deadline_text": "Registration for fall 2026 is open, per the page, with no closing date stated. The program starts Oct 15, 2026. The scholarship deadline was September 15, 2026.",
+  "status": "unconfirmed",
+  "deadline_text": "The fall term began Oct 15, 2026 and runs to Feb 11, 2027. As of Nov 4, 2026 the Gallery page still lists fall 2026 sign up as open, with no closing date and no word on late entry. The scholarship deadline was September 15, 2026.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Apply on the Emily Carr University Continuing Studies site (use the Apply Now link on the page). Questions: teens@ecuad.ca.",
@@ -111851,8 +111851,8 @@
    "https://www.vanartgallery.bc.ca/teens/"
   ],
   "priority": 3,
-  "notes": "Paid-for arts program, not a job. Canada, so British Columbia Employment Standards rules have not been added to this guide yet.",
-  "verified_on_label": "Oct 19, 2026"
+  "notes": "Paid-for arts program, not a job. Canada, so British Columbia Employment Standards rules have not been added to this guide yet. The Emily Carr site blocked automated reading, so confirm a spot with teens@ecuad.ca first.",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "vancouver-bc-childrens-hospital-volunteer",
@@ -111889,10 +111889,10 @@
    "https://app.betterimpact.com/PublicOrganization/77a715dc-d284-4b7b-8590-6782245d8250/1"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "The biggest need is Monday to Friday, 8 am to 4 pm; evening and weekend spots usually go to current volunteers. Intake can take several months. If you are not placed within 6 months, the application is closed and you may apply again. Contact: volunteer@cw.bc.ca.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "vancouver-bcchr-mini-med-school",
@@ -111931,10 +111931,10 @@
    "https://bcchr.ca/about-us/training-opportunities/high-school-students"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "Registration for the 2026 round is closed. Watch the page for the next round. In person sessions are at 950 West 28th Avenue, Vancouver. This is in Canada, so British Columbia rules apply and this guide has not checked them.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "vancouver-bcchr-pathways-to-science",
@@ -111973,10 +111973,10 @@
    "https://bcchr.ca/about-us/training-opportunities/high-school-students"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Online talks only, not a job or hands-on lab work. This is in Canada, so British Columbia rules apply and this guide has not checked them. The institute says it does not offer any formal placements for students who want to volunteer, job shadow or gain work experience. The application form link is on the page.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "opens_iso": null,
@@ -111985,7 +111985,7 @@
   "min_age": 15,
   "max_age": 30,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "vancouver-bgc-south-coast-youth-employability",
   "name": "Youth Employability Program (BGC South Coast BC)",
   "org": "BGC South Coast BC",
@@ -112016,7 +112016,7 @@
   ],
   "priority": 1,
   "notes": "Canada, so British Columbia Employment Standards rules have not been added to this guide yet. The page did not say where the workshops are held.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "vancouver-discovery-days-health-sciences",
@@ -112055,10 +112055,10 @@
    "https://www.bcchr.ca/news-events/discovery-days-in-health-sciences/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "One day event, not a job. The Medical Hall of Fame page does not name the city, but the research institute page says the event is at 950 West 28th Avenue, Vancouver. This is in Canada, so British Columbia rules apply and this guide has not checked them. Grades come from the institute page only.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "vancouver-providence-health-care-volunteer",
@@ -112081,11 +112081,11 @@
   "pay_detail": "Unpaid volunteer. Volunteers can ask for a reference after 30 hours at long-term care sites.",
   "season": "year-round",
   "duration": "1 to 3 hours a week for at least 4 or 6 months in a row, depending on the program",
-  "status": "rolling",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "No deadline. Each site takes online applications; if no one contacts you in 6 to 8 weeks, apply again.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Pick a site on the volunteer page (for example Holy Family Hospital, Mount Saint Joseph long-term care or a St. Vincent's site) and fill out its online form. List references like teachers or coaches. If chosen, you will be called for an interview.",
   "needs_work_permit": null,
   "url": "https://www.providencehealthcare.org/en/get-involved/volunteer",
@@ -112093,10 +112093,10 @@
   "sources_fetched": [
    "https://www.providencehealthcare.org/en/get-involved/volunteer"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "At 16 or 17 you can only volunteer at the long-term care sites. There is no shadowing or direct patient care. Most shifts are weekdays during work or school hours. The FAQ also says Public Health requires two COVID-19 shots for volunteers.",
+  "notes": "At 16 or 17 you can only volunteer at the long-term care sites. There is no shadowing or direct patient care. Most shifts are weekdays during work or school hours. The FAQ also says Public Health requires two COVID-19 shots for volunteers. As of Nov 4, 2026, the Providence site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 16, 2026"
  },
  {
@@ -112120,11 +112120,11 @@
   "pay_detail": "Unpaid volunteer.",
   "season": "year-round",
   "duration": "February to December. Meetings every other Thursday during the school year (online or at Central Library), plus two-day summer workshops with mentors.",
-  "status": "rolling",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "No deadline posted. The ink page links an application form. Separately, writing and art for ink volume 10 can be sent in until April 23, 2027.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Use the 'Click here to apply to ink TAG' form on the ink page. Questions: teens@vpl.ca or 604.331.3690.",
   "needs_work_permit": null,
   "url": "https://www.vpl.ca/programs/ink-teen-journal-writing-and-visual-art",
@@ -112133,10 +112133,10 @@
    "https://www.vpl.ca/programs/ink-teen-journal-writing-and-visual-art",
    "https://www.vpl.ca/programs/teen-advisory-group"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 2,
-  "notes": "You can also send your own writing or art to ink (up to two pieces a year) without joining the group. The page says art or writing made with AI will not be published.",
+  "notes": "You can also send your own writing or art to ink (up to two pieces a year) without joining the group. The page says art or writing made with AI will not be published. As of Nov 4, 2026, the library site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 19, 2026"
  },
  {
@@ -112160,7 +112160,7 @@
   "pay_detail": "Unpaid volunteer. You earn community service hours, and the library can write a letter confirming them.",
   "season": "school-year",
   "duration": "One hour a week for about 8 weeks, plus a teen training session on the first date. Arrive 15 minutes early.",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "All five Fall 2026 sessions (Britannia, Fraserview, Kensington, South Hill, West Point Grey) were full on Oct 19, 2026. The Britannia session has a waitlist. Apply at least one week before a session starts. Next dates are not posted.",
   "deadline_iso": null,
@@ -112173,10 +112173,10 @@
    "https://www.vpl.ca/programs/reading-buddies-teens",
    "https://www.vpl.ca/teens"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 2,
-  "notes": "If you quit without a good reason, your spot goes to a teen on the waitlist. Sessions are loud and snacks are provided.",
+  "notes": "If you quit without a good reason, your spot goes to a teen on the waitlist. Sessions are loud and snacks are provided. As of Nov 4, 2026, the library site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 19, 2026",
   "limited": true
  },
@@ -112202,7 +112202,7 @@
   "pay_detail": "Unpaid volunteer. You earn community service hours.",
   "season": "school-year",
   "duration": "One hour a week for about 4 weeks, plus a teen training session on the first date.",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "All four Fall 2026 sessions (Champlain Heights, Kitsilano, Mount Pleasant, Terry Salman) were full on Oct 19, 2026. Apply at least one week before a session starts. Next dates are not posted.",
   "deadline_iso": null,
@@ -112215,10 +112215,10 @@
    "https://www.vpl.ca/programs/steam-buddies-teens",
    "https://www.vpl.ca/teens"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 2,
-  "notes": "Like Reading Buddies, but with hands-on science and tech. Check the page each season for new branches and dates.",
+  "notes": "Like Reading Buddies, but with hands-on science and tech. Check the page each season for new branches and dates. As of Nov 4, 2026, the library site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 19, 2026",
   "limited": true
  },
@@ -112244,11 +112244,11 @@
   "pay_detail": "Unpaid volunteer. Members earn community service hours.",
   "season": "school-year",
   "duration": "September to June. One hour every other week (4 to 5 p.m.), online on Teams or at a branch.",
-  "status": "rolling",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "No deadline posted. Fill in the online form any time. On Oct 19, 2026 the Kerrisdale and Kitsilano groups were full.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Fill in the online application form linked on the TAG page. Pick the online group or a branch group (Central Library, Kensington, Kerrisdale, Kitsilano or Renfrew). Questions: teens@vpl.ca.",
   "needs_work_permit": null,
   "url": "https://www.vpl.ca/programs/teen-advisory-group",
@@ -112257,10 +112257,10 @@
    "https://www.vpl.ca/programs/teen-advisory-group",
    "https://www.vpl.ca/teens"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 1,
-  "notes": "Some branch groups fill up, so the online Teams group may be the easiest to join. Event listings on the library calendar show exact dates and access details.",
+  "notes": "Some branch groups fill up, so the online Teams group may be the easiest to join. Event listings on the library calendar show exact dates and access details. As of Nov 4, 2026, the library site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 19, 2026",
   "limited": true
  },
@@ -112285,11 +112285,11 @@
   "pay_detail": "Unpaid volunteer. You earn community service hours.",
   "season": "year-round",
   "duration": "Varies. Times and branches change, and some are one-time events.",
-  "status": "rolling",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "No deadline. Apply at least one week before a program starts. Chances come up now and then, and the library contacts teens it picks.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Fill in the application form on the Teen DMs page and give the contact for an adult reference (a coach, teacher, counsellor or community leader). Questions: teens@vpl.ca.",
   "needs_work_permit": null,
   "url": "https://www.vpl.ca/programs/teen-dms-kids",
@@ -112298,10 +112298,10 @@
    "https://www.vpl.ca/programs/teen-dms-kids",
    "https://www.vpl.ca/teens"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 3,
-  "notes": "Some times of year are busier than others, so you may wait a while for your first game.",
+  "notes": "Some times of year are busier than others, so you may wait a while for your first game. As of Nov 4, 2026, the library site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 19, 2026"
  },
  {
@@ -112325,11 +112325,11 @@
   "pay_detail": "Unpaid. You get one community service hour for every 100 pages of the book, confirmed by letter.",
   "season": "year-round",
   "duration": "At your own pace, one book at a time",
-  "status": "rolling",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "No deadline. Books go first come, first served.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Watch the teensatvpl Instagram for featured books. Ask for one by Instagram message or at teens@vpl.ca. Pick it up at your nearest branch, then email your rating and review to teens@vpl.ca.",
   "needs_work_permit": null,
   "url": "https://www.vpl.ca/programs/teens-read-it-first",
@@ -112338,10 +112338,10 @@
    "https://www.vpl.ca/programs/teens-read-it-first",
    "https://www.vpl.ca/teens"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 3,
-  "notes": "Share your opinion of the book, not a summary of the plot. Reviews of only one or two lines are sent back for more detail.",
+  "notes": "Share your opinion of the book, not a summary of the plot. Reviews of only one or two lines are sent back for more detail. As of Nov 4, 2026, the library site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 19, 2026",
   "limited": true
  },
@@ -112352,7 +112352,7 @@
   "min_age": 16,
   "max_age": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "vancouver-science-world-volunteer",
   "name": "Science World Volunteer Program",
   "org": "Science World",
@@ -112384,7 +112384,7 @@
   ],
   "priority": 2,
   "notes": "The Science World Teen Advisory Group (ages 16 to 18) is on hiatus and not taking applications (page checked 2026-10-09). Volunteer role in Canada; British Columbia Employment Standards rules have not been added to this guide yet.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "9 to 12",
@@ -112435,7 +112435,7 @@
   "min_age": 14,
   "max_age": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "vancouver-sfu-camps-volunteer",
   "name": "SFU Camps Volunteer",
   "org": "Simon Fraser University Camps",
@@ -112468,7 +112468,7 @@
   ],
   "priority": 2,
   "notes": "SFU Camps says it is not a registered non-profit; check with your teacher that your school accepts these hours for service or work experience credit. Top volunteers are encouraged to apply as paid instructors later (2026 instructor wage $27.05 to $28.50 per hour, CAD); the minimum age for instructors is not stated on the page. Volunteer role in Canada; British Columbia Employment Standards rules have not been added to this guide yet.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "vancouver-space-centre-teen-volunteer",
@@ -112506,10 +112506,10 @@
    "https://spacecentre.ca/careers"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "Age 16 and up, so 13 to 15 year olds cannot apply. The pages do not give shift length, hours or a start date, so ask before you plan. This is in Canada, so British Columbia rules apply and this guide has not checked them. Rechecked 2026-10-10: the volunteer page loads and confirms age 16 and up, the summer Augmented Reality role and the \"Volunteer with us\" form. It gives no year, dates or deadline.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "opens_iso": null,
@@ -112518,7 +112518,7 @@
   "min_age": 12,
   "max_age": 17,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "vancouver-stanley-park-ecology-youth-volunteer",
   "name": "Stanley Park Ecology Youth Volunteering",
   "org": "Stanley Park Ecology Society",
@@ -112548,7 +112548,7 @@
   ],
   "priority": 1,
   "notes": "Volunteer role in Canada. British Columbia Employment Standards rules have not been added to this guide yet, so work permit is marked unknown. Most other roles on the site are for volunteers 16 and older.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "vancouver-ubc-future-global-leaders",
@@ -112568,12 +112568,12 @@
   "grades": "Completed grade 10 or equivalent",
   "who_can_apply": "High school students ages 15 to 18 who have completed grade 10 or equivalent. UBC recommends about a 78% average, 3.5 GPA, B average or IB 5. Students still learning English should have IELTS 6.0 or TOEFL 80 or higher. Open to students from other countries.",
   "paid_type": "fee-based",
-  "pay_detail": "2026 fees listed in CAD: course $1,940 for Canadian students (including permanent residents) or $2,620 international; mini school $2,110 Canadian or $2,855 international. Optional residence add-on $2,650. A $500 deposit is due when you register. Fees can change. The President Bursary is for B.C. grade 11 students with financial need.",
+  "pay_detail": "2027 fees listed in CAD: course $1,995 for Canadian students (including permanent residents) or $2,700 international; mini school $2,175 Canadian or $2,940 international. Optional residence add-on $2,730. A $500 deposit is due when you register, and full payment is due by May 1, 2027. Fees can change. The President Bursary is for B.C. grade 11 students with financial need.",
   "season": "summer",
   "duration": "2 weeks per session",
-  "status": "unconfirmed",
-  "opens_iso": null,
-  "deadline_text": "Summer 2027 sessions: July 5 to 16, July 19 to 30 and Aug 2 to 13, 2027. Residence registration deadlines (noon): May 21, June 4 and June 18, 2027. Commuter deadlines (noon): June 18, July 2 and July 16, 2027. Residence can close sooner if full. The page does not say when 2027 registration opens.",
+  "status": "opens-soon",
+  "opens_iso": "2027-02-02",
+  "deadline_text": "Registration opens Feb 2, 2027 at 9:00 am Pacific. Summer 2027 sessions: July 5 to 16, July 19 to 30 and Aug 2 to 13, 2027. Residence registration deadlines (noon): May 21, June 4 and June 18, 2027. Commuter deadlines (noon): June 18, July 2 and July 16, 2027. Residence can close sooner if full.",
   "deadline_iso": null,
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "No application, transcripts or proof of English are needed. Check that you are eligible. Add a course or mini school to your cart. Have a parent or guardian create a Family Account. Pay the deposit at checkout. Then finish the information package within 48 hours.",
@@ -112585,10 +112585,10 @@
    "https://extendedlearning.ubc.ca/programs-high-school-students/ubc-future-global-leaders/on-campus"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
-  "notes": "Costs money, and it is a camp-style university course, not a job. This is in Canada, so British Columbia rules apply and this guide has not checked them. The fee table is labeled 2026 and still shows a 'due May 1, 2026' date next to the 2027 sessions, so check the 2027 fees before you plan. An online version also exists (3 week courses); this card covers the on-campus version. Rechecked 2026-10-10: the on-campus page confirms the 2027 session dates and the residence and commuter deadlines on this card. It does not say when 2027 registration opens. It still labels the fee table 2026.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "Costs money, and it is a camp-style university course, not a job. This is in Canada, so British Columbia rules apply and this guide has not checked them. An online version also exists (3 week courses); this card covers the on-campus version.",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "vancouver-ubc-summer-science-program",
@@ -112626,10 +112626,10 @@
    "https://health.indigenous.ubc.ca/ssp-applications/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "Only for Indigenous students (First Nations, Inuit, Metis). It is a camp, not a job. This is in Canada, so British Columbia rules apply and this guide has not checked them. The page still shows 2025 dates, so check the newest page before you plan. The application page lists the 2026 deadline of June 15, 2026.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "vancouver-vpd-cadet-program",

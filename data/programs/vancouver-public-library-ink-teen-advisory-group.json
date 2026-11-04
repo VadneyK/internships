@@ -19,11 +19,11 @@
   "pay_detail": "Unpaid volunteer.",
   "season": "year-round",
   "duration": "February to December. Meetings every other Thursday during the school year (online or at Central Library), plus two-day summer workshops with mentors.",
-  "status": "rolling",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "No deadline posted. The ink page links an application form. Separately, writing and art for ink volume 10 can be sent in until April 23, 2027.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Use the 'Click here to apply to ink TAG' form on the ink page. Questions: teens@vpl.ca or 604.331.3690.",
   "needs_work_permit": null,
   "url": "https://www.vpl.ca/programs/ink-teen-journal-writing-and-visual-art",
@@ -32,8 +32,8 @@
     "https://www.vpl.ca/programs/ink-teen-journal-writing-and-visual-art",
     "https://www.vpl.ca/programs/teen-advisory-group"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 2,
-  "notes": "You can also send your own writing or art to ink (up to two pieces a year) without joining the group. The page says art or writing made with AI will not be published."
+  "notes": "You can also send your own writing or art to ink (up to two pieces a year) without joining the group. The page says art or writing made with AI will not be published. As of Nov 4, 2026, the library site blocked automated reading, so confirm these details first."
 }

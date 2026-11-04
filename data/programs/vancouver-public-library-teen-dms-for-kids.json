@@ -19,11 +19,11 @@
   "pay_detail": "Unpaid volunteer. You earn community service hours.",
   "season": "year-round",
   "duration": "Varies. Times and branches change, and some are one-time events.",
-  "status": "rolling",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "No deadline. Apply at least one week before a program starts. Chances come up now and then, and the library contacts teens it picks.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Fill in the application form on the Teen DMs page and give the contact for an adult reference (a coach, teacher, counsellor or community leader). Questions: teens@vpl.ca.",
   "needs_work_permit": null,
   "url": "https://www.vpl.ca/programs/teen-dms-kids",
@@ -32,8 +32,8 @@
     "https://www.vpl.ca/programs/teen-dms-kids",
     "https://www.vpl.ca/teens"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 3,
-  "notes": "Some times of year are busier than others, so you may wait a while for your first game."
+  "notes": "Some times of year are busier than others, so you may wait a while for your first game. As of Nov 4, 2026, the library site blocked automated reading, so confirm these details first."
 }
