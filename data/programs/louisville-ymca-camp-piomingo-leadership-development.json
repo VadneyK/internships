@@ -3,7 +3,7 @@
   "apply_url": null,
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "max_age": 17,
   "id": "louisville-ymca-camp-piomingo-leadership-development",
   "name": "Leadership Development (Leaders-In-Training and Counselors-In-Training)",
@@ -11,7 +11,7 @@
   "regions": [
     "kentucky"
   ],
-  "city": "Louisville, KY",
+  "city": "Brandenburg, KY",
   "type": "leadership",
   "fields": [
     "education",
@@ -27,13 +27,14 @@
   "status": "unconfirmed",
   "deadline_text": "The program page lists session dates with no year. Leaders-In-Training: June 13 to 25 and July 4 to 16. Counselors-In-Training: June 6 to 25 and July 4 to 23. No deadline is posted.",
   "deadline_confidence": "unknown",
-  "how_to_apply": "Leaders-In-Training: the program page lists the sessions and price tiers. Counselors-In-Training: enrollment is by application and then an interview. A monthly payment plan and financial help are offered.",
+  "how_to_apply": "Both programs sign up with the online form on the program page. Counselors-In-Training also has an application and an interview. A monthly payment plan and financial help are offered.",
   "needs_work_permit": false,
   "url": "https://www.ymcalouisville.org/programs/camps/camp-piomingo/teen-programs",
   "sources_fetched": [
     "https://www.ymcalouisville.org/programs/camps/camp-piomingo/teen-programs",
-    "https://www.ymcalouisville.org/locations/camp-piomingo/jobs"
+    "https://www.ymcalouisville.org/locations/camp-piomingo/jobs",
+    "https://www.ymcalouisville.org/locations/camp-piomingo"
   ],
   "priority": 3,
-  "notes": "This is a paid program for the teen, not a job. The program page does not name the camp town. Check the session dates before you plan, because the year is not shown."
+  "notes": "This is a paid program for the teen, not a job. The camp is at 1950 Otter Creek Park Rd in Brandenburg, KY. Check the session dates before you plan, because the year is not shown."
 }
