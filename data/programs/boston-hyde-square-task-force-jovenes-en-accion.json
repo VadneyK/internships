@@ -1,15 +1,15 @@
 {
   "grades": "8 to 12",
-  "apply_url": null,
+  "apply_url": "https://www.hydesquare.org/join-jovenes-en-accion/",
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "priority": 3,
-  "min_age": null,
-  "max_age": null,
+  "min_age": 13,
+  "max_age": 19,
   "needs_work_permit": null,
   "deadline_iso": null,
-  "notes": "The page gives no pay, residency rule or dates. Ask the Hyde Square Task Force before you apply.",
+  "notes": "The summer session is for high school students ages 14 to 19 who can work legally in the US. You cannot turn 20 before June of the school year. Questions: recruitment@hydesquare.org.",
   "id": "boston-hyde-square-task-force-jovenes-en-accion",
   "name": "Jovenes en Accion (Youth in Action)",
   "org": "Hyde Square Task Force",
@@ -23,18 +23,20 @@
     "social-impact"
   ],
   "what_you_do": "Year-round program for grades 8 to 12. Join a dance, music or theatre team rooted in Afro-Latin arts, get mentoring and homework help, and train in civic engagement and youth organizing.",
-  "who_can_apply": "Youth in grades 8 to 12. The page lists no residency rule.",
-  "paid_type": "not-stated",
-  "pay_detail": "Pay not stated on the program page.",
+  "who_can_apply": "Youth ages 13 to 19 in 8th grade or high school who live or go to school in Boston.",
+  "paid_type": "mixed",
+  "pay_detail": "The summer session is paid; amount not posted. School-year pay is not stated.",
   "season": "year-round",
   "duration": "Year-round",
-  "status": "unconfirmed",
-  "deadline_text": "No dates or deadline posted on the program page. The site has a Join Jovenes en Accion page.",
+  "status": "open-now",
+  "deadline_text": "Fall application open as of Nov 3, 2026, with no close date posted. Fall session Sept 21 to Dec 5, 2026. Winter session Jan 5 to Mar 13, 2027. Spring session Mar 29 to June 5, 2027.",
   "deadline_confidence": "unknown",
-  "how_to_apply": "Use the APPLY NOW link on the Jovenes en Accion page of the Hyde Square Task Force site.",
+  "how_to_apply": "Fill out the JEA application on the Join Jovenes en Accion page, in English or Spanish. A parent or guardian signs too. The Enrollment Team then contacts you by text or email.",
   "url": "https://www.hydesquare.org/jovenes-en-accion/",
   "sources_fetched": [
     "https://www.hydesquare.org/jovenes-en-accion/",
-    "https://www.hydesquare.org/lsjs-yo/"
+    "https://www.hydesquare.org/lsjs-yo/",
+    "https://www.hydesquare.org/join-jovenes-en-accion/",
+    "https://hydesquaretaskforce.tfaforms.net/3"
   ]
 }

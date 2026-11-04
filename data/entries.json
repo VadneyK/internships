@@ -11386,7 +11386,7 @@
   "apply_url": "https://www.afhboston.org/sign-up",
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "min_age": null,
   "max_age": null,
@@ -11412,14 +11412,15 @@
   "season": "year-round",
   "duration": "School year: Tue to Thu, 3:00 to 6:00 p.m. Summer: Mon to Thu, 11:00 a.m. to 5:15 p.m.",
   "status": "rolling",
-  "deadline_text": "School-year applications are rolling, monthly. Interview invitations went out Oct 9, 2026 for the November group. Hiring pauses through December 2026 and resumes January 2027.",
+  "deadline_text": "School-year applications are rolling, with interviews each month. Hiring pauses through December 2026. You can still apply, and interviews resume January 2027.",
   "deadline_confidence": "rolling",
   "how_to_apply": "Apply online, then interview with the Teen Interview Team. First come, first served. Accepted teens do onboarding and work paperwork, then Foundation Studio, then start paid work. After two interview invitations you must reapply to be contacted again.",
   "url": "https://www.afhboston.org/teen-jobs",
   "sources_fetched": [
-   "https://www.afhboston.org/teen-jobs"
+   "https://www.afhboston.org/teen-jobs",
+   "https://www.afhboston.org/sign-up"
   ],
-  "verified_on_label": "Oct 10, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -11427,7 +11428,7 @@
   "apply_url": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "min_age": 13,
   "max_age": 13,
@@ -11461,7 +11462,7 @@
    "https://www.boston.gov/departments/boston-centers-youth-and-families/bcyf-superteens",
    "https://www.boston.gov/departments/boston-centers-youth-and-families/teen-programs-bcyf"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "grades": null,
@@ -11469,15 +11470,15 @@
   "min_age": 15,
   "opens_iso": null,
   "deadline_iso": null,
-  "apply_url": null,
+  "apply_url": "https://berklee.my.site.com/onlineapplication/TX_CommunitiesSelfReg",
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "fields": [
    "arts-media"
   ],
-  "pay_detail": "Listed tuition $5,430, or $5,230 if you save before Jan 31. Housing $4,200. Scholarships exist (see the Scholarships link on the summer page).",
+  "pay_detail": "Listed tuition $5,430, or $5,230 if you pay by Jan 31. Housing $4,200. $50 registration fee. Scholarships exist (see the Scholarships page).",
   "duration": "5 weeks (listed dates July 9 to August 13; year not shown on the page)",
   "id": "boston-berklee-aspire-five-week-music-performance",
   "name": "Aspire: Five-Week Music Performance Intensive",
@@ -11489,19 +11490,20 @@
   "city": "Boston, MA",
   "type": "pre-college",
   "what_you_do": "Five weeks of jam sessions, bands and one on one lessons with Berklee teachers on the Boston campus. Students come from many countries.",
-  "who_can_apply": "Students age 15 and up, based on the age filter on the Berklee summer page. Check the page for any playing experience needed.",
+  "who_can_apply": "Students age 15 and older with at least six months of playing or singing experience.",
   "paid_type": "fee-based",
   "season": "summer",
   "status": "unconfirmed",
-  "deadline_text": "The page lists a Jan 31 early-pay discount date. The application deadline is not stated on the program page.",
+  "deadline_text": "The page says to register by June 1 and pay by Jan 31 for a discount, but shows no year. An audition date on the page is July 6, 2026. Summer 2027 dates are not confirmed.",
   "deadline_confidence": "unknown",
-  "how_to_apply": "Use the Admissions and How to Enroll links on the Berklee summer programs page.",
-  "url": "https://www.berklee.edu/summer",
+  "how_to_apply": "Register online, then pay tuition in full to hold your spot. Request housing in your account if you need it, and finish the checklist there.",
+  "url": "https://summer.berklee.edu/programs/aspire-five-week-music-performance-intensive/",
   "sources_fetched": [
-   "https://www.berklee.edu/summer"
+   "https://summer.berklee.edu/programs/aspire-five-week-music-performance-intensive/",
+   "https://summer.berklee.edu/how-to-enroll/"
   ],
   "notes": "Costs money. The year of the listed dates is not shown, so confirm dates, prices and any audition steps on the page.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "grades": "High school",
@@ -11512,7 +11514,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "fields": [
    "health"
@@ -11540,7 +11542,7 @@
    "https://bidmc.org/careers/summer-youth-jobs"
   ],
   "notes": "You cannot apply directly. Talk to your school's PIC career specialist or one of the partner organizations.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "grades": "Entering grade 11 or 12",
@@ -11551,7 +11553,7 @@
   "apply_url": null,
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "fields": [
    "health"
@@ -11580,7 +11582,7 @@
    "https://www.bmc.org/volunteer-services/junior-summer-volunteer-program"
   ],
   "notes": "In 2026 the form closed March 9 after 100 applications. That was three days after it opened to all students. The page says the program takes 70 students.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -11599,7 +11601,7 @@
   "min_age": null,
   "max_age": 18,
   "grades": null,
-  "who_can_apply": "Teen members of Boys & Girls Clubs of Boston, which serves ages 6 to 18 at clubs in Boston and Chelsea. The page gives no age rule for the workforce program itself.",
+  "who_can_apply": "Teen members of Boys & Girls Clubs of Boston, at clubs in Boston and Chelsea. The Clubs serve youth up to age 18. The page gives no age rule for the workforce program itself.",
   "paid_type": "paid",
   "pay_detail": "Rate not posted. The page says the internships are paid. The Clubs report about 500 teen jobs and internships a year.",
   "season": "year-round",
@@ -11619,10 +11621,10 @@
    "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter149/Section86"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Confirm first: ages, hours and how to apply are not on the page. Under Massachusetts law (M.G.L. c.149 s.86) a child employed needs a work permit from the superintendent of schools, so ask the Club how permits are handled. The Clubs' home page said membership fees were waived for the 2025 to 2026 school year; ask about this year's fee. Teen centers: Mildred C. Hailey Teen Center (Jamaica Plain) and Josh Kraft Mattapan Teen Center. See permit.html?state=ma for the exact permit and steps.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "boston-bpl-teen-volunteer-program",
@@ -11650,19 +11652,20 @@
   "deadline_text": "The page says the program runs year-round, in a fall cycle (September to December) and a spring cycle (January to June). No application deadline is posted.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "Email volunteer@bpl.org or call 617-859-2304 to ask about openings and apply.",
+  "how_to_apply": "Fill out the online Teen Volunteer Program Application. Questions: volunteer@bpl.org or 617-859-2304.",
   "needs_work_permit": false,
   "url": "https://www.bpl.org/teen-volunteer-program/",
   "sources_fetched": [
    "https://www.bpl.org/teen-volunteer-program/",
-   "https://www.bpl.org/volunteer-at-bpl/"
+   "https://www.bpl.org/volunteer-at-bpl/",
+   "https://www.bpl.org/teen-volunteer-program/teen-volunteer-program-application/"
   ],
   "priority": 1,
   "notes": "Sites: Brighton, Central Library, Teen Central, Codman Square, East Boston, Grove Hall, Hyde Park, Mattapan, Roslindale, Shaw-Roxbury and West Roxbury. Workshops include resume building, privacy training and know your rights in the workplace.",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "apply_url": null,
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on": "2026-11-03",
+  "apply_url": "https://www.bpl.org/teen-volunteer-program/teen-volunteer-program-application/",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "grades": "Entering grades 11 or 12 in fall 2027",
@@ -11673,7 +11676,7 @@
   "apply_url": null,
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "fields": [
    "health",
@@ -11707,8 +11710,8 @@
    "https://www.bu.edu/summer/high-school-programs/academic-immersion/tuition-aid-payment/",
    "https://www.bu.edu/summer/high-school-programs/academic-immersion/calendar-of-events/"
   ],
-  "notes": "Costs money. The 2027 price is not posted yet. The course page does not say whether it gives college credit.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "Costs money. The 2027 price is not posted yet. AIM gives no college credit.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "boston-bu-high-school-honors",
@@ -11747,20 +11750,20 @@
   "priority": 3,
   "notes": "Expensive. 2027 dates are pending approval and may change. Standardized test scores are optional for summer 2027. Contact: summerhs@bu.edu.",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "grades": "Entering grade 12",
   "max_age": null,
   "min_age": null,
   "opens_iso": "2026-12-17",
-  "deadline_iso": null,
+  "deadline_iso": "2027-02-03",
   "apply_url": null,
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "fields": [
    "science",
@@ -11779,11 +11782,11 @@
   "city": "Boston, MA",
   "type": "research",
   "what_you_do": "Six weeks of science research. Interns work about 40 hours a week on a professor's lab project; Practicum students do group research. Ends with a poster symposium.",
-  "who_can_apply": "Students currently in their junior year of high school. The page says RISE is for a \"domestic student\" and does not define that term. Strong grades (the page says most competitive applicants are A- to A) and a STEM recommendation.",
+  "who_can_apply": "Students currently in their junior year of high school. You must be a US citizen or legal permanent resident. Strong grades (the page says most competitive applicants are A- to A) and a STEM recommendation.",
   "paid_type": "fee-based",
   "season": "summer",
   "status": "opens-soon",
-  "deadline_text": "Applications for Summer 2027 open Dec 17, 2026. Close date not posted.",
+  "deadline_text": "Applications for Summer 2027 open Dec 17, 2026. Deadline Feb 3, 2027 at 11:59 p.m. Eastern.",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "You apply online yourself. Send your transcript and three short essays. Send one letter from a STEM teacher, counselor or research boss. For internships, also name three BU teachers you want to work with.",
   "url": "https://www.bu.edu/summer/high-school-programs/rise-internship-practicum/",
@@ -11794,7 +11797,7 @@
    "https://www.bu.edu/summer/high-school-programs/rise-internship-practicum/calendar-of-events/"
   ],
   "notes": "Costs money. Test scores are optional for 2027. Placement in a requested lab is not guaranteed.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "grades": "Entering grades 10, 11 or 12 in fall 2027",
@@ -11805,7 +11808,7 @@
   "apply_url": null,
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "fields": [
    "any"
@@ -11837,7 +11840,7 @@
    "https://www.bu.edu/summer/high-school-programs/summer-challenge/calendar-of-events/"
   ],
   "notes": "Costs money. The calendar says dates are pending approval.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "boston-cambridge-msyep",
@@ -11875,9 +11878,9 @@
   "priority": 1,
   "notes": "Questions: youthemployment@cambridgema.gov. The page does not mention a work permit; Massachusetts requires one for workers under 18 (M.G.L. c.149 s.86; Boston youth worker rights page written with the state Attorney General's Office). Participants may not miss more than 5 program days. There is no fixed maximum age on the page; eligibility ends after the summer following high school graduation.",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -11885,7 +11888,7 @@
   "apply_url": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "min_age": 14,
   "max_age": 19,
@@ -11911,16 +11914,17 @@
   "season": "year-round",
   "duration": "Not stated",
   "status": "unconfirmed",
-  "deadline_text": "No dates posted. The page has a Boston Youth Job Interest Form.",
+  "deadline_text": "No dates posted. As of Nov 3, 2026, the application form says this year's hiring is closed and takes interest forms for next time. The page has a Boston Youth Job Interest Form.",
   "deadline_confidence": "unknown",
   "how_to_apply": "Fill out the Boston Youth Job Interest Form on the Youth Employment page, or use the Apply to work as a Youth Organizer link on the Boston page.",
   "url": "https://teenempowerment.org/youth-employment",
   "sources_fetched": [
    "https://teenempowerment.org/youth-employment",
    "https://teenempowerment.org/boston",
-   "https://teenempowerment.org/"
+   "https://teenempowerment.org/",
+   "https://te.impowr.net/forms/ApplicantPortalHome?HM=1&PK=2"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "boston-civil-air-patrol-boston-cadet-squadron",
@@ -11994,16 +11998,16 @@
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Submit the online application by December 9. Some applicants are invited to an in-person group interview. Email Ana Shapiro, Youth Programs Manager, at ashapiro@zoonewengland.org (no phone calls).",
   "needs_work_permit": null,
-  "url": "https://www.zoonewengland.org/discover/teen-programs/school-year-zooteens/",
+  "url": "https://www.zoonewengland.org/discover/community-programs/teen-programs/school-year-zooteens/",
   "sources_fetched": [
-   "https://www.zoonewengland.org/discover/teen-programs/school-year-zooteens/"
+   "https://www.zoonewengland.org/discover/community-programs/teen-programs/school-year-zooteens/"
   ],
   "priority": 2,
   "notes": "Unpaid, so the work permit question is left open. Spring and summer teen internships are also planned; the page links a calendar of internship periods. The fall internship application is closed.",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "apply_url": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=5t0a4VDi30S7r7hYl2HJsahNs1kfdP1Em0ViEfnQvsBUNFI4VThQOUZNOTJZNjhOTDhUOExLT0tFWC4u",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "boston-franklin-park-zoo-summer-zooteen",
@@ -12029,24 +12033,24 @@
   "season": "summer",
   "duration": "Not stated on the program page",
   "status": "closed-expect-reopen",
-  "deadline_text": "No application dates are posted on the program page. Check the zoo's Jobs and Volunteering pages or email the Youth Programs Manager.",
+  "deadline_text": "Applications for Summer 2026 are closed. Summer 2027 dates are not posted.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "The page does not give application steps. The school-year ZooTeen page lists the Youth Programs Manager, Ana Shapiro, at ashapiro@zoonewengland.org for questions, and an interest form for application updates.",
+  "how_to_apply": "The page does not give application steps. Fill out its interest form for updates. Questions: Ana Shapiro, Youth Programs Manager, ashapiro@zoonewengland.org.",
   "needs_work_permit": true,
-  "url": "https://www.zoonewengland.org/discover/teen-programs/summer-zooteen/",
+  "url": "https://www.zoonewengland.org/discover/community-programs/teen-programs/summer-zooteen/",
   "sources_fetched": [
-   "https://www.zoonewengland.org/discover/teen-programs/summer-zooteen/",
-   "https://www.zoonewengland.org/discover/teen-programs/school-year-zooteens/",
+   "https://www.zoonewengland.org/discover/community-programs/teen-programs/summer-zooteen/",
+   "https://www.zoonewengland.org/discover/community-programs/teen-programs/school-year-zooteens/",
    "https://www.boston.gov/departments/youth-employment-and-opportunity/know-your-rights-and-responsibilities-youth-worker",
    "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter149/Section86"
   ],
   "priority": 2,
   "notes": "Work permit flag applies to the paid roles only (state rule: M.G.L. c.149 s.86 and the Boston youth worker rights page, written with the Attorney General's Office); volunteers do not need one. Dates and pay were not on the page, so confirm with the zoo.",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -12089,8 +12093,8 @@
   "priority": 1,
   "notes": "Questions: futurebos@boston.gov or 617-635-4202. Under-18 workers need a Massachusetts work permit for the specific job (a doctor must sign for ages 14 and 15); the city page explains the steps. The $15 rate is quoted from the city FAQ. The state minimum wage statute (M.G.L. c.151 s.1) says a wage of less than $15.00 per hour is presumed oppressive and unreasonable; the current 2026 minimum wage page from the state Department of Labor Standards could not be read (403), so confirm the rate in your job offer. The work permit rule is M.G.L. c.149 s.86.",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on": "2026-11-03",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -12098,7 +12102,7 @@
   "apply_url": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "min_age": null,
   "max_age": null,
@@ -12130,7 +12134,7 @@
   "sources_fetched": [
    "https://dce.harvard.edu/our-programs/crimson-summer-academy-harvard/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "boston-harvard-summer-school-secondary-school-program",
@@ -12165,24 +12169,24 @@
    "https://summer.harvard.edu/high-school-programs/secondary-school-program/"
   ],
   "priority": 3,
-  "notes": "Expensive and selective. Residential financial aid is limited to U.S. citizens and permanent residents.",
+  "notes": "Expensive and selective. Financial aid is limited to U.S. citizens and permanent residents.",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "grades": "8 to 12",
-  "apply_url": null,
+  "apply_url": "https://www.hydesquare.org/join-jovenes-en-accion/",
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "priority": 3,
-  "min_age": null,
-  "max_age": null,
+  "min_age": 13,
+  "max_age": 19,
   "needs_work_permit": null,
   "deadline_iso": null,
-  "notes": "The page gives no pay, residency rule or dates. Ask the Hyde Square Task Force before you apply.",
+  "notes": "The summer session is for high school students ages 14 to 19 who can work legally in the US. You cannot turn 20 before June of the school year. Questions: recruitment@hydesquare.org.",
   "id": "boston-hyde-square-task-force-jovenes-en-accion",
   "name": "Jovenes en Accion (Youth in Action)",
   "org": "Hyde Square Task Force",
@@ -12196,21 +12200,23 @@
    "social-impact"
   ],
   "what_you_do": "Year-round program for grades 8 to 12. Join a dance, music or theatre team rooted in Afro-Latin arts, get mentoring and homework help, and train in civic engagement and youth organizing.",
-  "who_can_apply": "Youth in grades 8 to 12. The page lists no residency rule.",
-  "paid_type": "not-stated",
-  "pay_detail": "Pay not stated on the program page.",
+  "who_can_apply": "Youth ages 13 to 19 in 8th grade or high school who live or go to school in Boston.",
+  "paid_type": "mixed",
+  "pay_detail": "The summer session is paid; amount not posted. School-year pay is not stated.",
   "season": "year-round",
   "duration": "Year-round",
-  "status": "unconfirmed",
-  "deadline_text": "No dates or deadline posted on the program page. The site has a Join Jovenes en Accion page.",
+  "status": "open-now",
+  "deadline_text": "Fall application open as of Nov 3, 2026, with no close date posted. Fall session Sept 21 to Dec 5, 2026. Winter session Jan 5 to Mar 13, 2027. Spring session Mar 29 to June 5, 2027.",
   "deadline_confidence": "unknown",
-  "how_to_apply": "Use the APPLY NOW link on the Jovenes en Accion page of the Hyde Square Task Force site.",
+  "how_to_apply": "Fill out the JEA application on the Join Jovenes en Accion page, in English or Spanish. A parent or guardian signs too. The Enrollment Team then contacts you by text or email.",
   "url": "https://www.hydesquare.org/jovenes-en-accion/",
   "sources_fetched": [
    "https://www.hydesquare.org/jovenes-en-accion/",
-   "https://www.hydesquare.org/lsjs-yo/"
+   "https://www.hydesquare.org/lsjs-yo/",
+   "https://www.hydesquare.org/join-jovenes-en-accion/",
+   "https://hydesquaretaskforce.tfaforms.net/3"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "boston-ica-teens-paid-programs",
@@ -12233,25 +12239,29 @@
   "pay_detail": "Participants receive compensation. The amount is not stated on the page.",
   "season": "school-year",
   "duration": "2026 to 27 school year groups meet after school (4 to 7 p.m.; Teen Arts Council and Teen Exhibitions start at 4:30). Examples: Teen Arts Council Thursdays, Sept 10 to May 20; Fast Forward Wednesdays and Fridays, Oct 21 to May 5.",
-  "status": "unconfirmed",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "The page shows the 2026 to 27 schedules but no application dates or deadlines. Ask the ICA whether spots are still open.",
+  "deadline_text": "Applications for the 2026 to 27 school year are closed. Teen Arts Council and Teen Exhibitions say to check back in February for summer 2027. Fast Forward and Photography Collective say to check back in August 2027.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Email teens@icaboston.org to get involved. The Teen Arts Council and Teen Exhibitions pages mention an application, but the programs page does not explain how to submit it. Phone: 617-478-3100.",
+  "how_to_apply": "Applications are closed for 2026 to 27. Check each program page at the times above, or email teens@icaboston.org. Phone: 617-478-3100.",
   "needs_work_permit": null,
   "url": "https://www.icaboston.org/ica-teens/ica-teens-programs/",
   "apply_url": null,
   "sources_fetched": [
    "https://www.icaboston.org/teens",
    "https://www.icaboston.org/ica-teens/ica-teens-programs/",
-   "https://www.icaboston.org/ica-teens/ica-teens-about/"
+   "https://www.icaboston.org/ica-teens/ica-teens-about/",
+   "https://www.icaboston.org/program/teen-arts-council/",
+   "https://www.icaboston.org/program/fast-forward/",
+   "https://www.icaboston.org/program/photography-collective/",
+   "https://www.icaboston.org/program/teen-exhibitions-program/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Confirm first. Ages, pay amount and deadlines are not on the program pages. Boston Public School students from participating high schools can earn school credit for taking part. Other ICA teen programs had no dates set. They are the Teen Digital Cooperative, and the music and photo break intensives. The page does not say whether a work permit applies.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "boston-mass-general-brigham-youth-program",
@@ -12270,7 +12280,7 @@
   "min_age": null,
   "max_age": null,
   "grades": "Join in 10th grade",
-  "who_can_apply": "Sophomores at the Edward M. Kennedy Academy for Health Careers, Revere High School, Chelsea High School or any Boston public school. A 3.0 GPA is required to apply.",
+  "who_can_apply": "Sophomores at the Edward M. Kennedy Academy for Health Careers, Revere High School, Chelsea High School or any Boston public school. You need a 3.0 GPA to apply. The page also urges motivated students to apply with any GPA.",
   "paid_type": "paid",
   "pay_detail": "Paid internships in 11th and 12th grade and paid summer jobs (hourly rate not stated)",
   "season": "year-round",
@@ -12290,16 +12300,16 @@
   "priority": 1,
   "notes": "Combines the old Mass General Youth Scholars and Brigham Student Success Jobs programs. Sites include Mass General Hospital, Brigham and Women's, Faulkner Hospital and Mass Eye and Ear. Paid jobs under 18 need a Massachusetts work permit (state rule: M.G.L. c.149 s.86 and the Boston youth worker rights page; not on the MGB page).",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "grades": null,
   "apply_url": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "min_age": null,
   "max_age": null,
@@ -12333,7 +12343,7 @@
    "https://www.boston.gov/departments/youth-engagement-and-advancement/mayors-youth-council",
    "https://www.boston.gov/departments/youth-engagement-and-advancement"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "boston-mfa-teen-arts-council",
@@ -12371,9 +12381,9 @@
   "priority": 2,
   "notes": "Paid job, so teens under 18 need a Massachusetts work permit (not mentioned on the MFA page; see M.G.L. c.149 s.86 and the Boston youth worker rights page). The MFA also offers Teen Studio Art Classes for ages 12 to 17.",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -12402,7 +12412,7 @@
   "duration": "Four week program in July. The online prerequisite course opens February 1.",
   "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "The page says \"BWSI 2027 Online Prerequisites are Now Open!\" Self registration for the online course is open now. Approvals come in late January, the online course opens February 1, the summer application is sent in March, nominations are accepted through March 31, and the teacher or mentor recommendation is due April 2. The page does not give a final date for the summer application.",
+  "deadline_text": "Self registration for the online course is open now. Approvals come in late January, the online course opens February 1, the summer application is sent in March, nominations are accepted through March 31, and the teacher or mentor recommendation is due April 2. The page does not give a final date for the summer application.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Sign yourself up through the self-register link on the Summer Program Application page (mit-bwsi.formstack.com). No nomination is needed. Or have a teacher or mentor nominate you. Later you need three essays of 500 words or less each. You need a teacher or mentor recommendation. You need parent or guardian information with an electronic signature. You also need to finish the online prerequisite course. Contact: bwsi-admin@mit.edu.",
@@ -12415,17 +12425,17 @@
    "https://bwsi.mit.edu/apply-now/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Competitive. The cost wording on the page leaves the $200,000 to $200,001 range unclear, so ask BWSI if you are near that line. The online course is free and stays open to independent learners.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "grades": null,
   "apply_url": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "min_age": null,
   "max_age": null,
@@ -12458,14 +12468,14 @@
   "sources_fetched": [
    "https://www.ll.mit.edu/outreach/llcipher"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "grades": "Currently in 11th grade (rising senior)",
   "apply_url": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "min_age": null,
   "max_age": null,
@@ -12498,7 +12508,7 @@
   "sources_fetched": [
    "https://www.ll.mit.edu/outreach/llrise"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "boston-mit-mites-saturdays",
@@ -12523,10 +12533,10 @@
   "pay_detail": "Free of charge. Students pay only their own transportation to MIT (Lawrence students get free transport).",
   "season": "school-year",
   "duration": "8 Saturdays in spring and 8 in fall, 10:00 a.m. to 3:30 p.m., for up to about five and a half years",
-  "status": "unconfirmed",
-  "deadline_text": "The application deadline is not stated on the program pages. Check the Apply page.",
-  "deadline_iso": null,
-  "deadline_confidence": "unknown",
+  "status": "open-now",
+  "deadline_text": "Apply by Dec 3, 2026, and name your 2 recommenders by then. Online info session Dec 5, 2026. Recommendations and your confirmation are due Dec 10, 2026. Decisions come in early February. The page lists both October and November as the opening month, so check the portal if the form is not up yet.",
+  "deadline_iso": "2026-12-03",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Create a profile in the MITES application portal and submit the MITES Saturdays application (separate from the Summer and Semester application).",
   "needs_work_permit": false,
   "url": "https://mites.mit.edu/discover-mites/mites-saturdays/",
@@ -12534,13 +12544,14 @@
   "sources_fetched": [
    "https://mites.mit.edu/",
    "https://mites.mit.edu/discover-mites/mites-saturdays/",
-   "https://mites.mit.edu/discover-mites/apply-to-mites/"
+   "https://mites.mit.edu/discover-mites/apply-to-mites/",
+   "https://mites.mit.edu/discover-mites/apply-to-mites/prepare-your-application-mites-saturdays/"
   ],
   "priority": 2,
   "notes": "Students are expected to keep A and B grades; no minimum GPA to apply. The program encourages applicants who are underrepresented in STEM or from lower-income families or the first in their family to attend college.",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on": "2026-11-03",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "boston-mit-mites-summer",
@@ -12566,23 +12577,25 @@
   "season": "summer",
   "duration": "Six weeks, late June through early August, weekdays 9 a.m. to 5 p.m.",
   "status": "unconfirmed",
-  "deadline_text": "No specific deadline on the page. Students apply online during the fall semester of their junior year. No 2027 dates are posted.",
+  "deadline_text": "The application typically opens in November and closes February 1 at 11:59 p.m. Pacific. Recommenders have until February 15. The pages print no year, and 2027 program dates are not posted. The 2026 program ran June 20 to July 31, 2026.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
-  "how_to_apply": "Create a profile in the MITES application portal. MITES Summer and MITES Semester (a six-month STEM experience for rising seniors) share one application. Short-answer responses and recommendations from recent teachers are needed.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Create a profile in the MITES application portal. MITES Summer and MITES Semester (a six-month STEM experience for rising seniors) share one application. Short-answer responses and three recommendations are needed: a math or science teacher, a humanities teacher and a school counselor or administrator.",
   "needs_work_permit": false,
   "url": "https://mites.mit.edu/discover-mites/mites-summer/",
   "apply_url": "https://mites.mit.edu/discover-mites/apply-to-mites/",
   "sources_fetched": [
    "https://mites.mit.edu/",
    "https://mites.mit.edu/discover-mites/mites-summer/",
-   "https://mites.mit.edu/discover-mites/apply-to-mites/"
+   "https://mites.mit.edu/discover-mites/apply-to-mites/",
+   "https://mites.mit.edu/discover-mites/apply-to-mites/prepare-your-application-mites-summer-and-mites-semester/",
+   "https://mites.mit.edu/discover-mites/faq-for-prospective-students/faqs-mites-semester-and-mites-summer/"
   ],
   "priority": 2,
   "notes": "Competitive and focused on students from underserved or under-resourced backgrounds. Residential on campus.",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on": "2026-11-03",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "boston-mit-primes",
@@ -12606,11 +12619,11 @@
   "pay_detail": "Free to join. Pay is not mentioned on the page.",
   "season": "school-year",
   "duration": "A year long after school program. The start date is not stated.",
-  "status": "open-now",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Applications are due 11:59 p.m. Eastern on November 2, 2026. Letters of recommendation are due November 6, 2026. Decisions come by early January 2027.",
-  "deadline_iso": "2026-11-02",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_text": "Applications closed 11:59 p.m. Eastern on November 2, 2026. Letters of recommendation are due November 6, 2026. Decisions come by early January 2027. Next year's dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Use the online application portal linked on the MIT PRIMES how to apply page. It has an online questionnaire. It asks for two or three recommenders. Math teachers or camp counselors are ideal. It asks for a personal statement of up to 2 pages. It asks for lists of math books, courses, camps and computing skills. It also asks for solutions to the PRIMES 2027 Math Problem Set. Apply if you solve at least 70 percent. Upload solutions as one PDF with your name only in the file name.",
   "needs_work_permit": false,
   "url": "https://math.mit.edu/research/highschool/primes/program/apply.html",
@@ -12620,10 +12633,10 @@
    "https://math.mit.edu/research/highschool/primes/program/apply.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Competitive and heavy on math. There is also PRIMES Circle, a spring math enrichment program. It is for students within commuting distance of Boston. It has its own apply page at https://math.mit.edu/research/highschool/primes/circle/apply-circle.html, which was not read. Phone: (617) 253-4381.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -12631,7 +12644,7 @@
   "apply_url": "https://wtpmit.slideroom.com/#/permalink/program/87815",
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "min_age": null,
   "max_age": null,
@@ -12667,7 +12680,7 @@
    "https://wtp.mit.edu/wtp-me-key-dates/",
    "https://wtp.mit.edu/FAQ/"
   ],
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "boston-museum-of-science-youth-internships",
@@ -12693,7 +12706,7 @@
   "duration": "The summer program is 7 weeks. The academic year program runs during the school year. Hours are not stated.",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "No openings were posted when checked on Oct 9, 2026. The museum says summer internships are usually recruited in February or March and fall ones in June or July, but timing can change. Deadlines are listed in each posting.",
+  "deadline_text": "No openings were posted as of Nov 3, 2026. The museum says summer internships are usually recruited in February or March and fall ones in June or July, but timing can change. Deadlines are listed in each posting.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Watch the museum's internship job board. Use View Internships on the Museum of Science internships page. Apply to the youth internship posting when it opens.",
@@ -12708,17 +12721,17 @@
    "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter149/Section86"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "The museum pages do not say if the internships are paid, so ask before you apply. Massachusetts law (M.G.L. c.149 s.86) says a child needs a work permit from the superintendent of schools to be employed. The museum also has Youth Volunteers, ages 14 to 19 and in high school. The volunteer page gives no application steps beyond a general interest form. See permit.html?state=ma for the exact permit and steps.",
-  "verified_on_label": "Oct 19, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "grades": null,
   "apply_url": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "min_age": 14,
   "max_age": 19,
@@ -12751,7 +12764,7 @@
   "sources_fetched": [
    "https://www.mos.org/careers/volunteer"
   ],
-  "verified_on_label": "Oct 19, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "boston-new-england-aquarium-teen-internships",
@@ -12792,9 +12805,9 @@
   "priority": 1,
   "notes": "Paid job, so teens under 18 need a Massachusetts work permit (the aquarium page does not mention it; M.G.L. c.149 s.86 and the Boston youth worker rights page, written with the state Attorney General's Office, cover the permit rule). The aquarium also runs ClimaTeens (ages 13 and up, 2026-27 applications due October 18, 2026).",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "apply_url": null,
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -12813,11 +12826,11 @@
   "min_age": null,
   "max_age": null,
   "grades": "Rising juniors and rising seniors",
-  "who_can_apply": "Rising juniors and seniors in high school. The page does not say whether US and international students are both eligible. London program students must be 17 or older by the start of the program. No minimum age is listed for Boston or Oakland.",
+  "who_can_apply": "Rising juniors and seniors in high school. US and international students can both apply, but the program does not sponsor student visas. No minimum age is listed for Boston or Oakland.",
   "paid_type": "fee-based",
   "pay_detail": "Summer 2027 tuition is $6,995 and includes tuition, course materials, housing, meals and social activities. Need based financial aid is available, and a non-refundable deposit of 20 percent of tuition (after aid and discounts) holds your spot. Priority round applicants get a $500 discount.",
   "season": "summer",
-  "duration": "Twelve days, move in on Sunday and move out the following Friday. Summer 2027 session dates were not posted on the program pages.",
+  "duration": "Twelve days, move in on Sunday and move out the following Friday. Boston 2027 sessions: July 11 to 23 or July 25 to August 6, 2027, depending on the program.",
   "status": "closed-expect-reopen",
   "opens_iso": null,
   "deadline_text": "The page says Summer 2027 applications open in December. Priority deadline January 15, regular February 28 and late March 15, each at 11:59 p.m. Eastern. The page does not print the year with these three dates. Deposit deadlines are February 18 (priority), April 1 (regular) and April 15 (late), and full tuition is due May 1.",
@@ -12831,13 +12844,14 @@
    "https://precollegeprograms.northeastern.edu/",
    "https://precollegeprograms.northeastern.edu/apply/",
    "https://precollegeprograms.northeastern.edu/faq-residential/",
-   "https://precollegeprograms.northeastern.edu/faq-new-york-city/"
+   "https://precollegeprograms.northeastern.edu/faq-new-york-city/",
+   "https://precollegeprograms.northeastern.edu/boston/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
-  "notes": "Expensive. The page names Summer 2027 programs in Boston, London and Oakland. Session dates were not posted. For a free Northeastern option for Massachusetts juniors see the Young Scholars Program card.",
-  "verified_on_label": "Oct 9, 2026",
+  "notes": "Expensive. The page names Summer 2027 programs in Boston, London and Oakland. London students must be 17 or older by the start. For a free Northeastern option for Massachusetts juniors see the Young Scholars Program card.",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -12876,10 +12890,10 @@
    "https://stem.northeastern.edu/summer/ysp/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "notes": "Free, but only for Massachusetts residents who are US citizens or permanent residents. Late applications are not accepted. Read the program FAQ before emailing the coordinator. The same page also has a line saying applications are due March 2nd, 2026, which conflicts with the March 1, 2027 close date. Confirm the 2027 date with the program before you plan around it.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -12917,10 +12931,10 @@
    "https://www.nps.gov/bost/learn/kidsyouth/youth-conservation-corps.htm"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "notes": "Paid. Mon to Fri. No housing. Work includes safety duties with young campers and training on public land management. This is a federal job, so ask the park how the Massachusetts permit rule applies. Watch the park page in early 2027. Paid work for people under 18 in Massachusetts needs a work permit (employment permit). See permit.html?state=ma for the exact permit and steps.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -12928,7 +12942,7 @@
   "apply_url": "https://sociedadlatina.socialsolutionsportal.com/apricot-intake/78e24d91-60d6-4cf2-9a23-0c5bc9cb727a",
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "min_age": 14,
   "max_age": 18,
@@ -12963,14 +12977,14 @@
    "https://www.sociedadlatina.org/youth-employment",
    "https://www.sociedadlatina.org/civic-engagement-programs"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "grades": null,
   "apply_url": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "min_age": 14,
   "max_age": 25,
@@ -13003,7 +13017,7 @@
   "sources_fetched": [
    "https://www.boston.gov/departments/youth-engagement-and-advancement/youth-lead-change"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "boulder-county-youth-corps",
@@ -14870,7 +14884,7 @@
   "apply_url": null,
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "deadline_confidence": "rolling",
   "max_age": null,
@@ -14896,7 +14910,7 @@
   "sources_fetched": [
    "https://www.cambridgema.gov/departments/cambridgepubliclibrary/locations/mainlibrary/teenroom/teenadvisoryboard"
   ],
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "camp-chla-health-care-career-exploration",
@@ -57154,10 +57168,10 @@
   "max_age": null,
   "apply_url": "https://form.jotform.com/262035636336153",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "priority": 2,
-  "deadline_iso": "2026-10-30",
+  "deadline_iso": null,
   "pay_detail": "Enrollment fee amount is not posted (lunch is provided). Email wsbprecollege@wsb.wisc.edu.",
   "duration": "1 day, Nov 14, 2026, 9:30 am to 3:30 pm",
   "name": "Entrepreneurship Boot Camp (Wisconsin School of Business)",
@@ -57165,10 +57179,10 @@
   "what_you_do": "A one-day workshop at Grainger Hall. Students learn what entrepreneurs do and take part in an entrepreneurship challenge led by the UW StartUp Learning Community staff.",
   "who_can_apply": "High school students interested in business. Preference goes to first-generation college and low-income students.",
   "season": "fall",
-  "status": "open-now",
-  "deadline_text": "Applications are open September 1 to October 30, 2026. The workshop is November 14, 2026.",
-  "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Use the Apply now link on the precollege page.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Applications ran September 1 to October 30, 2026. The workshop is November 14, 2026. 2027 dates are not posted.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Use the Apply now link on the precollege page when the next window opens.",
   "url": "https://business.wisc.edu/precollege/#:~:text=Entrepreneurship%20Boot%20Camp",
   "notes": "There is also a one-day workshop on April 10, 2027 called Her View, Her Voice (applications Dec 1, 2026 to Mar 26, 2027).",
   "regions": [
@@ -57183,7 +57197,7 @@
   "sources_fetched": [
    "https://business.wisc.edu/precollege/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "madison-uw-wsb-junior-business-badgers",
@@ -58225,10 +58239,10 @@
    "https://www.umass.edu/agriculture-food-environment/mass4h/youth/get-involved"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "A youth group, not a job. The Get Involved page still shows a 2022-2023 fee note, but the Membership page lists the $40 fee with a $120 family cap, so confirm the current fee with your local office.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "massachusetts-ala-girls-state",
@@ -58267,10 +58281,10 @@
    "https://www.massgirlsstate.org/registration-forms/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Girls only. You can also send in an optional bill to be considered by the mock state Congress. The program says it is run by volunteers. Email Director.massgirlsstate@gmail.com with questions.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -58309,10 +58323,10 @@
    "https://www.maboysstate.org/faq/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Boys only (Massachusetts Girls State is a separate program). You are expected to attend the whole week. It falls during many schools' finals, so ask your school about make-up plans early. The interest form link is the one on the home page.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 3, 2026",
   "limited": true
  },
  {
@@ -58324,7 +58338,7 @@
   "apply_url": null,
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "fields": [
    "environment",
@@ -58353,7 +58367,7 @@
    "https://www.massaudubon.org/get-involved/volunteer"
   ],
   "notes": "Busiest months are May to September. Younger teens can ask about parent-accompanied options.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "massachusetts-audubon-youth-climate-leadership-program",
@@ -58367,7 +58381,7 @@
   "apply_url": null,
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "deadline_confidence": "rolling",
   "max_age": 18,
@@ -58386,15 +58400,15 @@
   "season": "year-round",
   "duration": "Projects take a couple of hours a month. Leadership teams meet every other week before summits and monthly otherwise.",
   "status": "rolling",
-  "deadline_text": "No deadline. Upcoming summits: Western Mass Monday Nov 9, 2026 and SouthCoast Friday Nov 20, 2026.",
+  "deadline_text": "No deadline. Upcoming summits: Central Mass Saturday Nov 14, 2026 and SouthCoast Friday Nov 20, 2026.",
   "how_to_apply": "Fill out the YCLP contact form on the Mass Audubon site. Staff connect you with your local chapter. A local adult mentor helps you start.",
   "url": "https://www.massaudubon.org/our-work/climate-change/youth-climate-leadership-program",
   "sources_fetched": [
    "https://www.massaudubon.org/our-work/climate-change/youth-climate-leadership-program",
    "https://www.massaudubon.org/programs-events/family-youth-programs/teen-programs"
   ],
-  "notes": "Upcoming summits are free: Western Mass on Monday Nov 9, 2026 in Springfield, and SouthCoast on Friday Nov 20, 2026 in Dartmouth. Ages 13 to 17.",
-  "verified_on_label": "Oct 12, 2026"
+  "notes": "The next summits are free. Central Mass is Saturday Nov 14, 2026 at Broad Meadow Brook. SouthCoast is Friday Nov 20, 2026 at Bristol Community College in Fall River. Ages 13 to 17.",
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "massachusetts-civil-air-patrol-cadets",
@@ -58447,7 +58461,7 @@
   "apply_url": "https://commcorp.org/hubfs/FIND-A-YOUTHWORKS-PROGRAM-NEAR-YOU%20(1).pdf",
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 1,
   "fields": [
    "any"
@@ -58477,7 +58491,7 @@
    "https://commcorp.org/hubfs/FIND-A-YOUTHWORKS-PROGRAM-NEAR-YOU%20(1).pdf"
   ],
   "notes": "Each local program picks its own jobs and dates. Seats are limited. Whether a Massachusetts work permit is needed was not stated on these pages; ask the local program. The program page does not state the income limit, the eligibility factors or the age 14 minimum; those come from the FAQ PDF, which could not be read in this check, so confirm them with the local program.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "id": "massachusetts-ffa-association",
@@ -58515,10 +58529,10 @@
    "https://www.massffa.org/about-us/chapters"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "notes": "The chapters page lists schools such as Bay Path Regional Vocational Technical H.S. in Charlton, Bristol County Agricultural High School in Dighton and Minuteman High School. Check the full list for your area. The site describes FFA as an intracurricular student group.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 3, 2026"
  },
  {
   "grades": "Entering grades 9 to 12",
@@ -98645,13 +98659,13 @@
   "limited": true
  },
  {
-  "opens_iso": "2026-11-04",
+  "opens_iso": null,
   "apply_url": "https://youthconnect.powerappsportals.us/",
   "grades": null,
   "min_age": 16,
   "max_age": 24,
   "verified": "fetched",
-  "verified_on": "2026-11-03",
+  "verified_on": "2026-11-04",
   "id": "seattle-youth-employment-program",
   "name": "Seattle Youth Employment Program (SYEP)",
   "org": "City of Seattle Human Services Department",
@@ -98669,8 +98683,8 @@
   "pay_detail": "Internship: at least Seattle's minimum wage, listed as $21.30 per hour. Learn & Earn Foundations: $325 stipend at the end of each module. Pathways: monthly stipend, amount not stated.",
   "season": "summer",
   "duration": "Internship about 6 weeks (July 6 to Aug 18, 2026). Foundations: October 2026 to March 2027 (tentative), 2-hour weekly sessions.",
-  "status": "opens-soon",
-  "deadline_text": "Learn & Earn Pathways 2027 applications: Nov 4, 2026 to Dec 16, 2026 at 5 PM. Summer 2027 internship dates are not posted. 2026 internship applications ran March 18 to May 5, 2026. Learn & Earn Foundations 2026-27 applications ran Aug 11 to Sept 25, 2026.",
+  "status": "open-now",
+  "deadline_text": "Learn & Earn Pathways 2027 applications are open through Dec 16, 2026 at 5 PM. Summer 2027 internship dates are not posted. 2026 internship applications ran March 18 to May 5, 2026. Learn & Earn Foundations 2026-27 applications ran Aug 11 to Sept 25, 2026.",
   "deadline_iso": "2026-12-16",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Create an account and complete the online application at youthconnect.powerappsportals.us (the page links a help guide). The 250 internship spots are chosen by lottery. Pathways requires finishing SYEP Foundations or passing the Assessment of Skill. Its form link goes on the SYEP page on Nov 4, 2026.",
@@ -98682,15 +98696,15 @@
   ],
   "priority": 1,
   "notes": "Proof of authorization to work in the U.S. and an SSN are required for the internship. Learn & Earn does not require an SSN or ITIN to take part, but you need one to receive a stipend. The SYEP page does not mention work permits. Placements include City departments, which Washington L&I says are exempt from state child labor rules ('Public entities, including state and municipal governments, are not subject to Washington's child labor rules'; federal rules still apply), and private businesses and nonprofits, which are not exempt, so ask your placement about the parent/school authorization form. Questions: SYEP@seattle.gov or 206-386-1375.",
-  "verified_on_label": "Nov 3, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
   "grades": "Sophomore to senior year",
-  "opens_iso": "2026-11-04",
+  "opens_iso": null,
   "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLSe0zvqgAtavloR8PcmRQM9RsmC9Hz0x1KZ543PTnOSO6eLnQg/viewform",
   "verified": "fetched",
-  "verified_on": "2026-11-03",
+  "verified_on": "2026-11-04",
   "needs_work_permit": null,
   "deadline_iso": "2026-11-29",
   "min_age": 15,
@@ -98713,8 +98727,8 @@
   "who_can_apply": "Teens ages 15 to 19 who identify as Black, Indigenous or a person of color, are in grades 10 to 12, and can attend every Tuesday and Thursday 4:30 to 7 PM for 17 weeks. Priority goes to teens without arts classes at school.",
   "paid_type": "stipend",
   "season": "school-year",
-  "status": "opens-soon",
-  "deadline_text": "2027 cohort applications: Nov 4, 2026 to Sunday, Nov 29, 2026 at 11:59 PM. Interviews are Dec 3 to 18, 2026. The program starts Jan 19, 2027.",
+  "status": "open-now",
+  "deadline_text": "2027 cohort applications are open through Sunday, Nov 29, 2026 at 11:59 PM. Interviews are Dec 3 to 18, 2026. The program starts Jan 19, 2027.",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Fill out the online form linked on the page. 20 applicants are chosen to interview for 10 spots.",
   "url": "https://www.youthinfocus.org/apply-to-creative-career-cohort",
@@ -98724,7 +98738,7 @@
    "https://docs.google.com/forms/d/e/1FAIpQLSe0zvqgAtavloR8PcmRQM9RsmC9Hz0x1KZ543PTnOSO6eLnQg/viewform"
   ],
   "notes": "Only 10 spots. Graduates can later be hired for Youth in Focus photo jobs. The page prints no year on the application dates; they fit the Jan 19, 2027 start.",
-  "verified_on_label": "Nov 3, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -102391,23 +102405,23 @@
   "pay_detail": "In-person fee $5,725. Online fee $3,500. Application fee $59. Limited need-based aid.",
   "season": "summer",
   "duration": "2 weeks (2027 sessions: June 14 to 25 and July 19 to 30 in person; July 6 to 16 online)",
-  "status": "opens-soon",
-  "opens_iso": "2026-11-03",
-  "deadline_text": "Summer 2027 applications open Nov 3, 2026. No closing date is posted as of Nov 2, 2026.",
-  "deadline_iso": null,
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Summer 2027 applications are open through Jan 14, 2027.",
+  "deadline_iso": "2027-01-14",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Apply on the CARE page when applications open Nov 3, 2026. You can sign up there for announcements. Questions: carehighschoolprogram@stanford.edu.",
+  "how_to_apply": "Apply online through the link on the CARE page. Questions: carehighschoolprogram@stanford.edu.",
   "needs_work_permit": false,
   "url": "https://asianhealth.stanford.edu/education/stanford-care-explorers-ai-x-precision-health-high-school-program",
-  "apply_url": null,
+  "apply_url": "https://care.slideroom.com/#/permalink/program/91852",
   "sources_fetched": [
    "https://asianhealth.stanford.edu/education/stanford-care-explorers-ai-x-precision-health-high-school-program"
   ],
   "verified": "fetched",
-  "verified_on": "2026-11-02",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "Pay-to-play. In-person days run 9am to 3pm on weekdays, with lunch and snacks. No housing or rides. Online classes run 8:30am to 1pm Pacific on weekdays. Aid is for U.S. citizens and permanent residents who live and go to high school in the U.S.",
-  "verified_on_label": "Nov 2, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -117415,11 +117429,11 @@
   ],
   "grades": "9 to 10 to start",
   "opens_iso": null,
-  "deadline_iso": "2026-10-30",
+  "deadline_iso": "2026-11-06",
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "deadline_confidence": "confirmed-2026-27",
   "max_age": null,
@@ -117438,14 +117452,14 @@
   "season": "school-year",
   "duration": "Four years. Foundation Junior Docents meet Wednesdays 3 to 5 pm; Core Junior Docents meet Fridays 3 to 5 pm.",
   "status": "open-now",
-  "deadline_text": "2026-27 portal is open. Deadline October 30, 2026 at 8 pm. New recruit meetings begin in December 2026.",
+  "deadline_text": "2026-27 portal is open. Deadline Nov 6, 2026 at 8 pm. New recruit meetings begin in December 2026.",
   "how_to_apply": "Fill out the online application. Add a recommendation form with two letters from a teacher, counselor, coach or mentor. Then do an interview with the Program Manager. Contact Pedro Betanzos at pbetanzos@hrm.org or 914-963-4550 ext. 219.",
   "url": "https://www.hrm.org/junior-docent-program/",
   "notes": "Only for Yonkers public school students. The page gives the deadline as Wednesday in one spot and Friday in another. Oct 30, 2026 is a Friday, so confirm with the museum.",
   "sources_fetched": [
    "https://www.hrm.org/junior-docent-program/"
   ],
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "yorba-linda-library-teen-advisory-board",

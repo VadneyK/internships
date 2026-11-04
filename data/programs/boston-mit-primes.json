@@ -20,11 +20,11 @@
   "pay_detail": "Free to join. Pay is not mentioned on the page.",
   "season": "school-year",
   "duration": "A year long after school program. The start date is not stated.",
-  "status": "open-now",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Applications are due 11:59 p.m. Eastern on November 2, 2026. Letters of recommendation are due November 6, 2026. Decisions come by early January 2027.",
-  "deadline_iso": "2026-11-02",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_text": "Applications closed 11:59 p.m. Eastern on November 2, 2026. Letters of recommendation are due November 6, 2026. Decisions come by early January 2027. Next year's dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Use the online application portal linked on the MIT PRIMES how to apply page. It has an online questionnaire. It asks for two or three recommenders. Math teachers or camp counselors are ideal. It asks for a personal statement of up to 2 pages. It asks for lists of math books, courses, camps and computing skills. It also asks for solutions to the PRIMES 2027 Math Problem Set. Apply if you solve at least 70 percent. Upload solutions as one PDF with your name only in the file name.",
   "needs_work_permit": false,
   "url": "https://math.mit.edu/research/highschool/primes/program/apply.html",
@@ -34,7 +34,7 @@
     "https://math.mit.edu/research/highschool/primes/program/apply.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "notes": "Competitive and heavy on math. There is also PRIMES Circle, a spring math enrichment program. It is for students within commuting distance of Boston. It has its own apply page at https://math.mit.edu/research/highschool/primes/circle/apply-circle.html, which was not read. Phone: (617) 253-4381."
 }

@@ -4,15 +4,15 @@
   "min_age": 15,
   "opens_iso": null,
   "deadline_iso": null,
-  "apply_url": null,
+  "apply_url": "https://berklee.my.site.com/onlineapplication/TX_CommunitiesSelfReg",
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 3,
   "fields": [
     "arts-media"
   ],
-  "pay_detail": "Listed tuition $5,430, or $5,230 if you save before Jan 31. Housing $4,200. Scholarships exist (see the Scholarships link on the summer page).",
+  "pay_detail": "Listed tuition $5,430, or $5,230 if you pay by Jan 31. Housing $4,200. $50 registration fee. Scholarships exist (see the Scholarships page).",
   "duration": "5 weeks (listed dates July 9 to August 13; year not shown on the page)",
   "id": "boston-berklee-aspire-five-week-music-performance",
   "name": "Aspire: Five-Week Music Performance Intensive",
@@ -24,16 +24,17 @@
   "city": "Boston, MA",
   "type": "pre-college",
   "what_you_do": "Five weeks of jam sessions, bands and one on one lessons with Berklee teachers on the Boston campus. Students come from many countries.",
-  "who_can_apply": "Students age 15 and up, based on the age filter on the Berklee summer page. Check the page for any playing experience needed.",
+  "who_can_apply": "Students age 15 and older with at least six months of playing or singing experience.",
   "paid_type": "fee-based",
   "season": "summer",
   "status": "unconfirmed",
-  "deadline_text": "The page lists a Jan 31 early-pay discount date. The application deadline is not stated on the program page.",
+  "deadline_text": "The page says to register by June 1 and pay by Jan 31 for a discount, but shows no year. An audition date on the page is July 6, 2026. Summer 2027 dates are not confirmed.",
   "deadline_confidence": "unknown",
-  "how_to_apply": "Use the Admissions and How to Enroll links on the Berklee summer programs page.",
-  "url": "https://www.berklee.edu/summer",
+  "how_to_apply": "Register online, then pay tuition in full to hold your spot. Request housing in your account if you need it, and finish the checklist there.",
+  "url": "https://summer.berklee.edu/programs/aspire-five-week-music-performance-intensive/",
   "sources_fetched": [
-    "https://www.berklee.edu/summer"
+    "https://summer.berklee.edu/programs/aspire-five-week-music-performance-intensive/",
+    "https://summer.berklee.edu/how-to-enroll/"
   ],
   "notes": "Costs money. The year of the listed dates is not shown, so confirm dates, prices and any audition steps on the page."
 }
