@@ -14,15 +14,16 @@
   "min_age": null,
   "max_age": null,
   "grades": "Students completing grades 9 to 12",
-  "who_can_apply": "Students who are finishing grades 9 to 12. At sign-up, everyone picks a placement audition or a talk with staff.",
+  "who_can_apply": "Students who are finishing grades 9 to 12. Some courses need a placement audition or a talk with staff.",
   "paid_type": "fee-based",
-  "pay_detail": "Residential $1,275; daily commuter $875; Violin Institute $1,500; plus a $75 nonrefundable registration fee. Financial aid is available.",
+  "pay_detail": "Residential $1,275; daily commuter $875; Violin or Saxophone Institute $1,500; plus a $75 nonrefundable registration fee. Financial aid is available.",
   "season": "summer",
-  "duration": "1 week (June 28 to July 4 in 2026)",
-  "status": "closed-expect-reopen",
-  "deadline_text": "2026 registration ran Jan 12 to May 15, 2026. 2027 dates are not posted.",
-  "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
+  "duration": "1 week (June 27 to July 3 in 2027)",
+  "status": "opens-soon",
+  "deadline_text": "2027 registration opens Jan 12, 2027 and closes May 15, 2027.",
+  "opens_iso": "2027-01-12",
+  "deadline_iso": "2027-05-15",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Register online. Questions: smc@wisc.edu or 608-263-2242.",
   "needs_work_permit": null,
   "url": "https://precollege.wisc.edu/summer-music-clinic/senior-session/",
@@ -31,7 +32,7 @@
     "https://precollege.wisc.edu/summer-music-clinic/senior-session/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 3,
-  "notes": "The Violin Institute has room for only 12 students. It needs a recorded audition. The date was April 1 in 2026."
+  "notes": "The Violin and Saxophone Institutes need a recorded tryout. It is due April 1."
 }
