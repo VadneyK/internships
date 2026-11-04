@@ -2,15 +2,15 @@
   "grades": "Rising 12",
   "max_age": null,
   "min_age": null,
-  "opens_iso": null,
-  "deadline_iso": null,
+  "opens_iso": "2026-12-01",
+  "deadline_iso": "2027-04-01",
   "apply_url": null,
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 3,
-  "notes": "Costs and dates were not on the program page. Check the Fees and Scholarships and Dates and Deadlines pages.",
-  "deadline_confidence": "unknown",
+  "notes": "You need short essays, your school record and a letter from a teacher.",
+  "deadline_confidence": "confirmed-2026-27",
   "fields": [
     "any"
   ],
@@ -25,17 +25,17 @@
   "what_you_do": "A 5 week summer program for rising seniors. You take WashU college classes for college credit. You also get college readiness lessons. You can live on campus, travel in each day or take it online.",
   "who_can_apply": "Rising high school seniors.",
   "paid_type": "fee-based",
-  "pay_detail": "2026 cost: $4,075 for 3 credits online or commuter, $7,825 for 6 credits commuter, $8,385 to $12,135 residential, plus a $50 application fee. Need-based scholarships offered.",
+  "pay_detail": "Listed cost: $4,075 for 3 credits online or commuter, $7,825 for 6 credits commuter, $8,560 to $12,310 residential, plus a $50 application fee. Need-based scholarships offered.",
   "season": "summer",
-  "duration": "5 weeks",
-  "status": "unconfirmed",
-  "deadline_text": "2027 dates and deadline not posted on the program pages.",
+  "duration": "5 weeks, June 13 to July 17, 2027",
+  "status": "opens-soon",
+  "deadline_text": "Applications open Dec 1, 2026. Early deadline Mar 1, 2027. Final deadline Apr 1, 2027, 4 p.m. CT.",
   "how_to_apply": "Apply online through the program page. Questions: precollege@wustl.edu.",
-  "url": "https://precollege.wustl.edu/browse/high-school-summer-scholars-program",
+  "url": "https://precollege.washu.edu/high-school-summer-scholars-program",
   "sources_fetched": [
-    "https://precollege.wustl.edu/browse/high-school-summer-scholars-program",
-    "https://precollege.wustl.edu/browse",
-    "https://precollege.wustl.edu/fees-scholarships",
-    "https://precollege.wustl.edu/summer-application-preview"
+    "https://precollege.washu.edu/high-school-summer-scholars-program",
+    "https://precollege.washu.edu/fees-scholarships",
+    "https://precollege.washu.edu/summer-application-preview",
+    "https://precollege.washu.edu/dates-and-deadlines"
   ]
 }
