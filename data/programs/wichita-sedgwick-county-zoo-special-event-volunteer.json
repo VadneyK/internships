@@ -20,12 +20,12 @@
   "pay_detail": "Unpaid",
   "season": "year-round",
   "duration": "Event by event, spread through the year",
-  "status": "rolling",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "The zoo says it is currently taking special event volunteer applications. Orientation is held twice a month; the last one this year is October 22, 2026, and the next is April 2027.",
+  "deadline_text": "The zoo says it will begin taking new volunteer applications in April 2027. Orientations also start again in April 2027.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
-  "how_to_apply": "Use the Get Started link on the volunteer page to contact the zoo, complete a volunteer application, and go to a volunteer orientation (2nd Saturday 8 to 10 a.m. or 4th Thursday 4 to 6 p.m. at the Cargill Learning Center).",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Applications start again in April 2027. Then use the Get Started link on the volunteer page to contact the zoo, complete a volunteer application, and go to a volunteer orientation (2nd Saturday 8 to 10 a.m. or 4th Thursday 4 to 6 p.m. at the Cargill Learning Center).",
   "needs_work_permit": false,
   "url": "https://scz.org/volunteer",
   "apply_url": null,
@@ -33,7 +33,7 @@
     "https://scz.org/volunteer"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Quote from the page: Must be 14 years of age to volunteer for Special Events. Groups can do service days in the zoo departments from age 16, scheduled two weeks ahead, April through October. Adults 18 and over must pass a background check."
 }
