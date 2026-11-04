@@ -317,8 +317,10 @@
    "lon": -117.0152,
    "precision": "city",
    "ids": [
+    "chula-vista-city-youth-volunteers-interns",
     "chula-vista-living-coast-discovery-center-volunteer",
-    "sharp-chula-vista-junior-volunteer"
+    "sharp-chula-vista-junior-volunteer",
+    "southwestern-college-dual-concurrent-enrollment"
    ]
   },
   {
@@ -483,6 +485,7 @@
    "lon": -116.9605,
    "precision": "city",
    "ids": [
+    "grossmont-college-dual-concurrent-enrollment",
     "san-diego-cuyamaca-college-dual-concurrent-enrollment"
    ]
   },
@@ -731,6 +734,7 @@
    "lon": -117.0161,
    "precision": "city",
    "ids": [
+    "la-mesa-youth-advisory-commission",
     "san-diego-sharp-grossmont-junior-volunteer"
    ]
   },
@@ -1128,6 +1132,17 @@
    ]
   },
   {
+   "key": "Oceanside, CA",
+   "state": "CA",
+   "lat": 33.2247,
+   "lon": -117.3067,
+   "precision": "city",
+   "ids": [
+    "miracosta-college-concurrent-enrollment",
+    "miracosta-college-dual-enrollment"
+   ]
+  },
+  {
    "key": "Orange County, CA",
    "state": "CA",
    "lat": 33.6757,
@@ -1470,7 +1485,9 @@
    "precision": "city",
    "ids": [
     "mingei-teens-at-mingei",
+    "san-diego-air-space-museum-teen-volunteers",
     "san-diego-cabrillo-national-monument-volunteers",
+    "san-diego-city-college-concurrent-enrollment",
     "san-diego-city-employ-and-empower-internships",
     "san-diego-city-future-civic-leaders",
     "san-diego-city-pool-guard-recreation-aide",
@@ -1478,6 +1495,7 @@
     "san-diego-feeding-san-diego-volunteer",
     "san-diego-fire-rescue-cadet-program",
     "san-diego-ja-stock-market-challenge",
+    "san-diego-mesa-college-concurrent-enrollment",
     "san-diego-nat-camp-aides-youth-volunteers",
     "san-diego-parks-and-recreation-volunteer",
     "san-diego-police-cadet-program",

@@ -1,0 +1,39 @@
+{
+  "id": "miracosta-college-dual-enrollment",
+  "name": "MiraCosta College Dual Enrollment",
+  "org": "MiraCosta College",
+  "regions": [
+    "san-diego"
+  ],
+  "city": "Oceanside, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take free college classes at your high school or online, before, during or after school. You earn both high school and college credit.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Finished 8th grade, or age 15",
+  "who_can_apply": "Students at partner schools in the Oceanside, San Dieguito and Carlsbad districts, plus Cathedral Catholic. You must have finished 8th grade or be 15. You need school and parent permission.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Free. Your high school covers books and materials.",
+  "season": "year-round",
+  "duration": "By term. Up to 11 units in fall or spring and 8 in summer. Oceanside Unified: up to 15 and 9.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Interest forms are for the upcoming term. No single deadline is listed.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Talk to your counselor. Fill out the interest form for your school. Then apply to MiraCosta and set up your SURF account. Questions: dualenroll@miracosta.edu.",
+  "needs_work_permit": false,
+  "url": "https://www.miracosta.edu/admissions-and-aid/high-school-students/dual-enrollment/index.html",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.miracosta.edu/admissions-and-aid/high-school-students/dual-enrollment/index.html",
+    "https://www.miracosta.edu/admissions-and-aid/high-school-students/index.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "If your school is not a partner, look at MiraCosta concurrent enrollment instead. You can ask for 10 high school credits for a 3 unit class. Parents cannot see your college records."
+}

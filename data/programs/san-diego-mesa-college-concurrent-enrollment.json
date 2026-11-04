@@ -1,0 +1,39 @@
+{
+  "id": "san-diego-mesa-college-concurrent-enrollment",
+  "name": "San Diego Mesa College High School Concurrent Enrollment",
+  "org": "San Diego Mesa College",
+  "regions": [
+    "san-diego"
+  ],
+  "city": "San Diego, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take college classes at Mesa College while in high school and earn credit toward a degree or transfer. Partner high schools also offer CCAP classes on their own campus.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Eligible high school students. Your high school must approve your form. You must clear class prerequisites. Exercise Science classes are not allowed.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Enrollment fees are waived under 12 units. You pay $25 in health and student fees each semester, and buy books and any parking permit.",
+  "season": "year-round",
+  "duration": "By semester",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Send a new form each term. The page lists no date. Check the Mesa academic deadlines page for the term you want.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply online to get a student ID. Send the supplemental form each term with the classes you want. Your school approves it, then staff enroll you if there is space.",
+  "needs_work_permit": false,
+  "url": "https://www.sdmesa.edu/student-support/admissions/high-school-student.shtml",
+  "apply_url": "https://www.sdmesa.edu/student-support/admissions/get-started-at-mesa.shtml",
+  "sources_fetched": [
+    "https://www.sdmesa.edu/student-support/admissions/high-school-student.shtml",
+    "https://www.sdccd.edu/students/new-students/high-school-students.aspx"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "Keep a 2.0 GPA each semester. If you get a W, I, NP or failing grade, see your counselor before you sign up again. For CCAP, start with your high school counselor. Mesa Admissions: 619-388-2682."
+}

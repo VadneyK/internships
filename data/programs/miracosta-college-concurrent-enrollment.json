@@ -1,0 +1,39 @@
+{
+  "id": "miracosta-college-concurrent-enrollment",
+  "name": "MiraCosta College Concurrent Enrollment",
+  "org": "MiraCosta College",
+  "regions": [
+    "san-diego"
+  ],
+  "city": "Oceanside, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take free college classes while in high school. Classes are at the Oceanside, San Elijo or CLC campus, online or hybrid. You can take up to 11 units in fall or spring and 8 in summer.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Finished 8th grade, or age 15",
+  "who_can_apply": "High school students who finished 8th grade or are 15. You need permission from your high school and a parent. You must meet the class prerequisites.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Tuition is free. You buy your books and materials. There is a $2 fee you can opt out of.",
+  "season": "year-round",
+  "duration": "By term",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No single deadline is listed. A new Early College Credit form starts Nov 6, 2026. Class dates are on the college dates page.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Talk to your counselor first. Apply online. Set up your SURF account. Send the Early College Credit form. Do the survey in SURF each term, then register on your assigned date.",
+  "needs_work_permit": false,
+  "url": "https://www.miracosta.edu/admissions-and-aid/high-school-students/concurrent-enrollment/index.html",
+  "apply_url": "https://miracosta.tfaforms.net/217778",
+  "sources_fetched": [
+    "https://www.miracosta.edu/admissions-and-aid/high-school-students/concurrent-enrollment/index.html",
+    "https://www.miracosta.edu/admissions-and-aid/high-school-students/index.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "Wait until Nov 6, 2026 for the new form. Ask if your high school has its own permission form too. Private and home school students may need to send an affidavit to dualenroll@miracosta.edu."
+}
