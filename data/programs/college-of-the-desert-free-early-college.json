@@ -1,0 +1,38 @@
+{
+  "id": "college-of-the-desert-free-early-college",
+  "name": "College of the Desert Free Early College",
+  "org": "College of the Desert",
+  "regions": [
+    "inland-empire"
+  ],
+  "city": "Palm Desert, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Earn free college credit while you are in high school. Dual classes are set up through your school counselor. Concurrent lets you sign up for other COD classes during open enrollment.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be in high school. Your principal or someone they pick must approve. You also need a parent to say yes.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Dual: free, and your school district buys the books. Concurrent: tuition and fees are covered up to 11 credits a term, and you buy your own books.",
+  "season": "year-round",
+  "duration": "By term. Dual: up to 15 credits. Concurrent: up to 11 credits in fall or spring, 7 in winter or summer.",
+  "status": "open-now",
+  "deadline_text": "Dual Enrollment application dates: Winter 2027 by Nov 6, 2026. Spring 2027 by Jan 29, 2027. Summer 2027 by Mar 5, 2027.",
+  "deadline_iso": "2027-01-29",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out CCC Apply to get your COD ID. It can take 1 to 2 business days. Then set up an account on the dual enrollment portal linked on the college page with your parent's phone and email. Then register for classes there.",
+  "needs_work_permit": false,
+  "url": "https://www.collegeofthedesert.edu/students/free-early-college/default.php",
+  "apply_url": "https://www.collegeofthedesert.edu/students/free-early-college/dual-enrollment/registration.php",
+  "sources_fetched": [
+    "https://www.collegeofthedesert.edu/students/free-early-college/default.php",
+    "https://www.collegeofthedesert.edu/students/free-early-college/dual-enrollment/registration.php"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "Concurrent students cannot get aid and do not sign up early. If you go over 11 credits, your family pays for all of them. Call 760-862-1396 or email dualenrollment@collegeofthedesert.edu to ask."
+}
