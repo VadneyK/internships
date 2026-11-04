@@ -2260,7 +2260,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "One member also serves as a voting member of the foundation board. Pay and time commitment are not stated on the page.",
   "id": "ann-arbor-aaacf-youth-council",
@@ -2290,7 +2290,7 @@
   "sources_fetched": [
    "https://www.aaacf.org/youth-council"
   ],
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -3018,7 +3018,7 @@
   "pay_detail": "$900 per camp. You pay only after you are accepted. Some full and partial scholarships are available.",
   "season": "summer",
   "duration": "The camp pages do not say how long each camp is. It is a day camp with no housing.",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "The 2027 application date is not posted. Fill out the Electrify 2027 interest form to be told when it opens.",
   "deadline_iso": null,
@@ -3032,10 +3032,10 @@
    "https://electrify.engin.umich.edu/registration/",
    "https://electrify.engin.umich.edu/programs/"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-17",
   "priority": 2,
-  "notes": "Spots are limited and you may not get your first choice. If you cancel, you get $850 back only if your spot is filled. The same group also runs an online coding class, The Joy of Coding.",
+  "notes": "Spots are limited and you may not get your first choice. If you cancel, you get $850 back only if your spot is filled. The same group also runs an online coding class, The Joy of Coding. As of Nov 4, 2026, the Electrify site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 17, 2026"
  },
  {
@@ -3103,11 +3103,11 @@
   "pay_detail": "2026 costs per session: $1,400 tuition, plus $1,100 to live on campus with meals. $100 application fee that is not refunded. Some financial aid is available.",
   "season": "summer",
   "duration": "Two-week sessions. 2027: June 20 to July 2, July 4 to July 16, and July 18 to July 30",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "The 2027 application opens in mid-January 2027 (exact date not posted). Admission is rolling until courses fill, so apply early.",
   "deadline_iso": null,
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Apply online with a transcript or grade report, one teacher recommendation (math or science preferred), a personal statement and the $100 fee. GPA and test scores are not needed. Join the mailing list on the home page for updates.",
   "needs_work_permit": false,
   "url": "https://sites.lsa.umich.edu/mmss/",
@@ -3118,10 +3118,10 @@
    "https://sites.lsa.umich.edu/mmss/mmss-program-fees/",
    "https://sites.lsa.umich.edu/mmss/apply-to-the-mmss-program/guidelines-for-applying/"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-17",
   "priority": 2,
-  "notes": "Classes run Monday to Friday, 9 a.m. to 4:30 p.m. The fee page still shows 2026 prices; 2027 prices may differ. Weekend trips and airport rides cost extra.",
+  "notes": "Classes run Monday to Friday, 9 a.m. to 4:30 p.m. The fee page still shows 2026 prices; 2027 prices may differ. Weekend trips and airport rides cost extra. As of Nov 4, 2026, the MMSS site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 17, 2026"
  },
  {
@@ -16509,7 +16509,7 @@
  {
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "grades": "Rising 10th to 12th graders",
   "min_age": null,
   "max_age": null,
@@ -16550,7 +16550,7 @@
   ],
   "priority": 1,
   "notes": "Competitive: applications are ranked together, not first come first served. Housing is for selected students who do not live locally. Students get no course credit.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -48618,7 +48618,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "priority": 2,
   "notes": "Dates are from 2025, so confirm the next session before you plan. The 4-H site (canr.msu.edu) blocked the research tool.",
@@ -48648,7 +48648,7 @@
   "sources_fetched": [
    "https://spartanyouth.msu.edu/resources/0-9/4-h-capitol-experience-summit/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -49240,7 +49240,7 @@
   "pay_detail": "The 2027 cost is $250. It covers meals from Wednesday lunch to Friday lunch, two nights in a shared dorm room, sessions and a t-shirt. A $50 pre-payment is due when you register. Your county MSU Extension office may have scholarship money.",
   "season": "summer",
   "duration": "3 days (2027: June 23 to 25)",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "The 2027 event is June 23 to 25, 2027. Registration opens in March. In 2026 it opened March 12 and ran through April, and the full fee was due June 1.",
   "deadline_iso": null,
@@ -49256,10 +49256,10 @@
    "https://www.canr.msu.edu/4_h_exploration_days/Participant-Information/faq",
    "https://spartanyouth.msu.edu/resources/0-9/4-h-exploration-days/"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 2,
-  "notes": "Read in a browser on 2026-10-19 on the program's own 4-H Exploration Days pages at MSU Extension. The page posts the 2027 dates and the 2027 price. The 2027 registration dates are not posted yet, so the March to April window is the 2026 pattern. It is a statewide event held in East Lansing, so it may also be listed as a Michigan-wide card. Not a job.",
+  "notes": "Read in a browser on 2026-10-19 on the program's own 4-H Exploration Days pages at MSU Extension. The page posts the 2027 dates and the 2027 price. The 2027 registration dates are not posted yet, so the March to April window is the 2026 pattern. It is a statewide event held in East Lansing, so it may also be listed as a Michigan-wide card. Not a job. As of Nov 4, 2026, the MSU Extension site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 19, 2026"
  },
  {
@@ -49886,7 +49886,7 @@
   "deadline_iso": "2027-02-05",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "priority": 3,
   "notes": "The page lists the finalist announcement as Feb 26, 2026, which looks like a typo for 2027. No entry fee is listed.",
@@ -49916,7 +49916,7 @@
   "sources_fetched": [
    "https://www.whartoncenter.com/education/young-playwrights-festival"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "11 to 12",
@@ -59520,28 +59520,29 @@
   "max_age": null,
   "grades": "Finishing junior year",
   "who_can_apply": "Female high school students who will finish their junior year in spring 2027. You must have at least one more semester before graduation.",
-  "paid_type": "unpaid",
-  "pay_detail": "Cost to the student is not stated on the program pages. The page asks people to donate to send a young woman to Girls State.",
+  "paid_type": "fee-based",
+  "pay_detail": "$25 registration fee, paid after you are assigned a sponsor. The sponsor pays the $450 fee to attend.",
   "season": "summer",
   "duration": "One week, June 13 to 19, 2027",
-  "status": "unconfirmed",
+  "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "The 86th session is June 13 to 19, 2027 at Michigan State University. The 2027 application is posted online. No closing date is stated on the flyer or page.",
-  "deadline_iso": null,
-  "deadline_confidence": "unknown",
-  "how_to_apply": "Fill out the online delegate application. The link is on the Michigan Girls State page and the 2027 flyer. Questions go to the Girls State chairman, Beryl Robbins, at berylrobbins1980@gmail.com or (313) 318-6845.",
+  "deadline_text": "Apply by Apr 30, 2027. The 86th session is June 13 to 19, 2027 at Michigan State University.",
+  "deadline_iso": "2027-04-30",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the online delegate application. It goes to a sponsor in your area. The link is on the Michigan Girls State page and the 2027 flyer. Questions go to the Girls State chairman, Beryl Robbins, at berylrobbins1980@gmail.com or (313) 318-6845.",
   "needs_work_permit": false,
   "url": "https://michalaux.org/girls-state/",
-  "apply_url": null,
+  "apply_url": "https://alamigs.wufoo.com/forms/zmg9ueg1rq5oy2/",
   "sources_fetched": [
    "https://www.michalaux.org/girls-state/",
-   "https://michalaux.org/wp-content/uploads/2026/10/ALAGS-Application-Flyer_2027.pdf"
+   "https://michalaux.org/wp-content/uploads/2026/10/ALAGS-Application-Flyer_2027.pdf",
+   "https://alamigs.wufoo.com/forms/zmg9ueg1rq5oy2/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
-  "notes": "Not a job. A closing date was not on the page or flyer, so apply early. The page also lists a Samsung scholarship and a government manual to read before attending.",
-  "verified_on_label": "Oct 9, 2026",
+  "notes": "Not a job. The page also lists a Samsung scholarship and a government manual to read before attending.",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -59551,7 +59552,7 @@
   "regions": [
    "michigan"
   ],
-  "city": "Hillsdale, MI (2026 session at Hillsdale College); office in Lansing",
+  "city": "Hillsdale, MI (Hillsdale College); office in Lansing",
   "type": "civic-government",
   "fields": [
    "law-government"
@@ -59564,17 +59565,18 @@
   "paid_type": "fee-based",
   "pay_detail": "$25 application fee paid by the student. The $400 program fee is paid by a sponsor such as a local American Legion Post or other community group (2026 brochure).",
   "season": "summer",
-  "duration": "One week (2026: June 21 to 27)",
+  "duration": "One week (2027: June 20 to 26)",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "2026 session: June 21 to 27, 2026 at Hillsdale College; application deadline was June 1, 2026. 2027 dates are not posted on the program pages.",
+  "deadline_text": "2027 session: June 20 to 26, 2027 at Hillsdale College. The home page says 2027 applications are coming soon, with no dates. The 2026 deadline was June 1, 2026.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Use the Apply link on michiganboysstate.org (the 2026 brochure says to visit the website to apply). Pay the $25 application fee and find a sponsor for the $400 program fee. Office: (517) 371-4720 ext. 123 (site) or 517-220-2754 (brochure), legion@michiganlegion.org.",
+  "how_to_apply": "The program home page says 2027 applications are coming soon. Use its form to ask for more information. In 2026 you paid a $25 application fee and found a sponsor for the $400 program fee. Office: (517) 371-4720 ext. 123 (site) or 517-220-2754 (brochure), legion@michiganlegion.org.",
   "needs_work_permit": false,
   "url": "https://michiganboysstate.org/about/",
   "apply_url": null,
   "sources_fetched": [
+   "https://michiganboysstate.org/",
    "https://michiganboysstate.org/about/",
    "https://michiganboysstate.org/faq/",
    "https://michiganboysstate.org/about/parents-school-counselors/",
@@ -59583,10 +59585,10 @@
    "https://michiganlegion.org/wp-content/programs/2026/2026%20Boys%20State%20Flyer%20V.1.pdf"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
-  "notes": "Not a job. Dates, fees and the deadline above are from the 2026 brochure and flyer, so confirm the 2027 details with the office. The resources page still showed a May 1, 2024 deadline, so it is out of date. Office address: 212 N. Verlinden Ave., Lansing, MI 48915.",
-  "verified_on_label": "Oct 9, 2026",
+  "notes": "Not a job. Fees and the June 1 deadline are from the 2026 brochure and flyer, so confirm the 2027 details with the office. The resources page still showed a May 1, 2024 deadline, so it is out of date. Office address: 212 N. Verlinden Ave., Lansing, MI 48915.",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -59596,11 +59598,11 @@
   "opens_iso": null,
   "deadline_iso": null,
   "apply_url": null,
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "needs_work_permit": null,
   "priority": 3,
-  "notes": "Programs may target a certain age group, interest or skill.",
+  "notes": "Programs may target a certain age group, interest or skill. As of Nov 4, 2026, the state of Michigan site blocked automated reading, so confirm these details first.",
   "fields": [
    "any"
   ],
@@ -59618,9 +59620,9 @@
   "pay_detail": "Not stated",
   "season": "year-round",
   "duration": "Programs run throughout the year",
-  "status": "rolling",
+  "status": "unconfirmed",
   "deadline_text": "No deadline. Check the program calendar on the page for current programs.",
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Contact your local BSBP office or your school special education office. You can also fill out the form at the IEP meeting.",
   "url": "https://www.michigan.gov/leo/bureaus-agencies/bureau-of-services-for-blind-persons/pre-employment-transition-services",
   "sources_fetched": [
@@ -59635,7 +59637,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Special Events Volunteer is a good short option for community service hours. Nature Zone shifts are weekends and select holidays.",
   "id": "michigan-cranbrook-institute-of-science-volunteer",
@@ -59666,7 +59668,7 @@
   "sources_fetched": [
    "https://science.cranbrook.edu/support/volunteer"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "michigan-dearborn-public-library-teen-volunteer",
@@ -59678,7 +59680,7 @@
   "max_age": null,
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "duration": null,
   "name": "Teen Volunteer at Dearborn Public Library",
   "org": "Dearborn Public Library",
@@ -59706,7 +59708,7 @@
   "sources_fetched": [
    "https://dearbornlibrary.org/volunteer/"
   ],
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "michigan-deca-state-association",
@@ -59743,10 +59745,10 @@
    "https://www.deca.org/associations/michigan"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Not a paid job. The state website listed on the page is mideca.org. This card is based on the DECA Inc. page for Michigan.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -59755,7 +59757,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Summer jobs are a separate track (Grow Detroit's Young Talent). Pay rates and the work permit rule for this program are not stated on the page.",
   "id": "michigan-detroit-at-work-year-round-youth-program",
@@ -59785,7 +59787,7 @@
   "sources_fetched": [
    "https://detroitatwork.com/youth"
   ],
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -59795,7 +59797,7 @@
   "apply_url": null,
   "needs_work_permit": true,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "notes": "The FAQ lists a work permit for ages 14 to 17 as a required document. Up to 8,000 spots in 2026, so a lottery decides. Next year's window is likely spring 2027.",
   "id": "michigan-detroit-grow-detroits-young-talent",
@@ -59827,7 +59829,7 @@
    "https://gdyt.org/frequently-asked-questions/youth-and-parents",
    "https://detroitmi.gov/news/detroit-youth-can-now-register-summer-jobs-mayor-sheffield-announces-opening-2026-gdyt-application"
   ],
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -59837,7 +59839,7 @@
   "apply_url": null,
   "needs_work_permit": true,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "notes": "The page says students under 18 must get a work permit. Teens must also join at least one year-round track.",
   "id": "michigan-detroit-henry-ford-ryse-med",
@@ -59868,7 +59870,7 @@
   "sources_fetched": [
    "https://www.henryford.com/hcp/med-ed/ryse-med"
   ],
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -59878,7 +59880,7 @@
   "apply_url": "https://forms.office.com/Pages/ResponsePage.aspx?id=tz1S00r4JEqoFc1LpGkcnKeN-RFDKutDiu7XiRmrjc9UMU9IVzFPTzNaWVAwV0JVMUVPRU4yVllWMy4u",
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "notes": "Very competitive: the page says 331 applied and 25 were chosen in 2025. The application link may be the 2026 form, so check the page for the next one.",
   "id": "michigan-detroit-henry-ford-surgery-high-school-mentorship",
@@ -59910,7 +59912,7 @@
    "https://www.henryford.com/hcp/med-ed/surgery-mentorship/summer-internship",
    "https://www.henryford.com/hcp/med-ed/surgery-mentorship/about-the-program"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Rising seniors and college students",
@@ -59919,7 +59921,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Rising seniors and college students apply to the same program. Contact: medicalmentorspipeline@gmail.com. Cost was not stated, so ask before applying.",
   "id": "michigan-detroit-medical-mentors-pathway-program-m2p2",
@@ -59950,7 +59952,7 @@
    "https://www.medicalmentorspipelineprogram.com/home",
    "https://miahec.wayne.edu/southeast/m2p2"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -59959,7 +59961,7 @@
   "apply_url": "https://app.betterimpact.com/PublicOrganization/0e969c02-e59c-4e69-9092-e77a816f9963/1",
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "The page does not list specific roles or hours. Ask the volunteer team (volunteers@mi-sci.org) about teen roles.",
   "id": "michigan-detroit-michigan-science-center-volunteer",
@@ -59990,7 +59992,7 @@
   "sources_fetched": [
    "https://www.mi-sci.org/volunteer/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "High school sophomores, juniors and seniors",
@@ -59998,7 +60000,7 @@
   "opens_iso": null,
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "id": "michigan-detroit-udm-beginners-investment-camp",
   "name": "Beginners' Investment Camp 101",
   "org": "University of Detroit Mercy, College of Business Administration (Charlton Center)",
@@ -60030,7 +60032,7 @@
   ],
   "priority": 2,
   "notes": "Held on the McNichols Campus, 4001 West McNichols Rd. The camp page still says applications are open, but the 2026 camp dates have passed. Ask the camp director before you apply.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Middle school and high school",
@@ -60038,7 +60040,7 @@
   "opens_iso": null,
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "id": "michigan-detroit-udm-youth-health-exploration-camp",
   "name": "Youth Health Exploration Camp",
   "org": "University of Detroit Mercy, College of Health Professions",
@@ -60070,7 +60072,7 @@
   ],
   "priority": 2,
   "notes": "Held at the STAR Center on the McNichols Campus. The middle school week was July 20 to 24, 2026. The high school week was July 27 to 31, 2026.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "10 to 12",
@@ -60079,7 +60081,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "notes": "Program dates may change. Contact: BCAPstudentgroup@gmail.com or (313) 577-1584.",
   "id": "michigan-detroit-wayne-state-bcap-summer-research",
@@ -60111,7 +60113,7 @@
    "https://miahec.wayne.edu/southeast/bcap",
    "https://miahec.wayne.edu/southeast/highschool"
   ],
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -60121,7 +60123,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Cost was not stated on the pages. Ask about the scholarship page before you decide.",
   "id": "michigan-detroit-wayne-state-engineering-summer-academy-high-school",
@@ -60153,7 +60155,7 @@
    "https://engineering.wayne.edu/academics/community/outreach/engineering-highschool-summer-camps",
    "https://engineering.wayne.edu/academics/community/outreach/summer-academy"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -60162,7 +60164,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Work is outdoors in all weather. Training hours count toward the 60. A separate Counselor in Training program is listed but the page gave no details. Questions go to the zoo education department.",
   "id": "michigan-detroit-zoo-zoo-corps",
@@ -60193,7 +60195,7 @@
   "sources_fetched": [
    "https://detroitzoo.org/volunteer-opportunity/zoo-corps/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "michigan-ffa-state-association",
@@ -60233,10 +60235,10 @@
    "https://www.michiganffa.org/learn-engage/join-ffa"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Not a job. The homepage says there are over 10,000 members in 137 chapters. State office: association@michiganffa.org or (517) 353-9221.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "High school",
@@ -60246,7 +60248,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "priority": 3,
   "notes": "Ask your school if it has a team. FIRST in Michigan also runs FTC and FIRST LEGO League for younger students.",
@@ -60277,7 +60279,7 @@
    "https://firstinmichigan.us/",
    "https://firstinmichigan.us/FRC"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "michigan-forgotten-harvest-volunteer",
@@ -60289,7 +60291,7 @@
   "max_age": null,
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "duration": "Shifts are 9 am to 12 pm or 1 pm to 4 pm, Monday through Saturday",
   "name": "Forgotten Harvest Volunteer",
   "org": "Forgotten Harvest",
@@ -60317,7 +60319,7 @@
   "sources_fetched": [
    "https://www.forgottenharvest.org/volunteer-3/"
   ],
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Finished at least 9th grade",
@@ -60326,7 +60328,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Jackson is west of Ann Arbor and south of Lansing, so it may be a drive. Teens must commit to all assigned shifts.",
   "id": "michigan-henry-ford-jackson-hospital-summer-youth-program",
@@ -60356,7 +60358,7 @@
   "sources_fetched": [
    "https://henryford.com/Locations/Jackson-Hospital/Volunteers/Summer-Youth-Program"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "michigan-henry-ford-providence-novi-summer-teen-volunteer",
@@ -60368,7 +60370,7 @@
   "max_age": 17,
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "duration": "9 weeks, one 4-hour shift per week",
   "name": "Summer Teen Volunteering at Henry Ford Providence Novi",
   "org": "Henry Ford Providence Novi Hospital",
@@ -60396,7 +60398,7 @@
   "sources_fetched": [
    "https://www.henryford.com/locations/providence-novi-hospital/volunteer/summer-teen-volunteering-program"
   ],
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "michigan-henry-ford-providence-southfield-summer-teen-volunteer",
@@ -60408,7 +60410,7 @@
   "max_age": 17,
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "duration": "9 weeks, one 4-hour shift per week",
   "name": "Summer Teen Volunteering at Henry Ford Providence Southfield",
   "org": "Henry Ford Providence Southfield Hospital",
@@ -60436,7 +60438,7 @@
   "sources_fetched": [
    "https://www.henryford.com/locations/providence-southfield-hospital/volunteer/summer-teen-volunteering-program"
   ],
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "michigan-henry-ford-west-bloomfield-summer-high-school-volunteer",
@@ -60448,7 +60450,7 @@
   "max_age": 17,
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "duration": "10 weeks in 2026, one 4-hour shift per week",
   "name": "Summer High School Volunteering at Henry Ford West Bloomfield",
   "org": "Henry Ford West Bloomfield Hospital",
@@ -60476,7 +60478,7 @@
   "sources_fetched": [
    "https://www.henryford.com/locations/west-bloomfield/volunteer/summer-teen-volunteering-program"
   ],
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Middle school, high school and college students",
@@ -60485,7 +60487,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "The site lists more than 10,000 Michigan members.",
   "id": "michigan-hosa-state-association",
@@ -60515,7 +60517,7 @@
   "sources_fetched": [
    "https://www.michiganhosa.org/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -60524,7 +60526,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Dress for dirt: long pants, closed-toe shoes, layers. Poison ivy can be present. Children must come with a registered adult. Volunteers under 14 must have an adult with them for the whole shift, and a parent or guardian must sign the waiver for volunteers under 18. The volunteering page does not mention seasonal paid jobs.",
   "id": "michigan-huron-clinton-metroparks-volunteer-workdays",
@@ -60545,16 +60547,16 @@
   "paid_type": "unpaid",
   "pay_detail": "Free, unpaid",
   "season": "year-round",
-  "duration": "About 2 hours (10 a.m. to noon)",
+  "duration": "About 2 hours (most are 10 a.m. to noon)",
   "status": "rolling",
-  "deadline_text": "Workdays run through the year. Sign up by noon the day before each one. The workdays listed on the page were July 11, Aug 22 and Sept 26 (the page does not show the year).",
+  "deadline_text": "Workdays run through the year. Sign up by noon the day before each one. The next workdays on the page are Nov 7 and Dec 5 (the page does not show the year).",
   "deadline_confidence": "rolling",
   "how_to_apply": "Pick a workday on the volunteering page and register online by noon the day before. For regular volunteering, send the application and waiver to volunteer@metroparks.com.",
   "url": "https://www.metroparks.com/volunteering/",
   "sources_fetched": [
    "https://www.metroparks.com/volunteering/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -60563,7 +60565,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "The Summer Youth Employment page lists it as one of the Michigan Works! Southeast summer programs. Jackson is west of Ann Arbor. Ask about dates and pay.",
   "id": "michigan-jump-start-jackson-paid-training",
@@ -60594,7 +60596,7 @@
    "https://www.mwse.org/jumpstartjackson/",
    "https://www.mwse.org/sye/"
   ],
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -60604,7 +60606,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Livingston County is northwest of Ann Arbor (Howell and Brighton area). The page does not state the work permit rule for 16 and 17 year olds.",
   "id": "michigan-livingston-youthworks-summer-jobs",
@@ -60635,7 +60637,7 @@
    "https://www.mwse.org/youth-works/",
    "https://www.mwse.org/sye/"
   ],
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -60645,11 +60647,11 @@
   "opens_iso": null,
   "deadline_iso": null,
   "apply_url": null,
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "needs_work_permit": null,
   "priority": 2,
-  "notes": "Work-based learning is one of five services. Ask your school transition coordinator or counselor too.",
+  "notes": "Work-based learning is one of five services. Ask your school transition coordinator or counselor too. As of Nov 4, 2026, the state site blocked automated reading, so confirm these details first.",
   "fields": [
    "any"
   ],
@@ -60667,9 +60669,9 @@
   "pay_detail": "MRS pays for services in your employment plan. Not a wage.",
   "season": "year-round",
   "duration": "Ongoing",
-  "status": "rolling",
+  "status": "unconfirmed",
   "deadline_text": "No deadline. Apply any time.",
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Use the MRS Online Application. Forms MRS-4.0a (parent consent) and MRS-4.0b (school verification) are on the page. Phone 517-241-5324 or toll-free 800-605-6722.",
   "url": "https://www.michigan.gov/leo/bureaus-agencies/mrs/mrs-for-students",
   "sources_fetched": [
@@ -60717,10 +60719,10 @@
    "https://www.mtu.edu/syp/application-process/cost/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "Extra costs can include lab fees, a $20 weekly parking pass and charter bus service. Check the Course Catalog and Scholarships pages on the SYP site for current offerings.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -60729,9 +60731,9 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
-  "notes": "The county reported 164 paid work experiences with 60 employers in 2024. The page also lists an IAmPontiac summer internship; details were not read. Ask about the work permit rule for ages 16 and 17.",
+  "notes": "The county reported 138 paid work experiences with 57 employers in 2025. The page also lists an IAmPontiac summer internship; details were not read. Ask about the work permit rule for ages 16 and 17.",
   "id": "michigan-oakland-county-michigan-works-oakland-next-internships",
   "name": "Oakland NEXT paid internships and career exploration",
   "org": "Oakland County Michigan Works!",
@@ -60760,7 +60762,7 @@
    "https://www.oaklandcountymi.gov/business/workforce-development/youth",
    "https://www.oaklandcountymi.gov/business/workforce-development/youth/paid-internships"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "michigan-oakland-county-parks-teen-volunteer",
@@ -60772,7 +60774,7 @@
   "max_age": 17,
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "duration": null,
   "name": "Oakland County Parks Teen Volunteer",
   "org": "Oakland County Parks and Recreation",
@@ -60800,7 +60802,7 @@
   "sources_fetched": [
    "https://www.oaklandcountymi.gov/community/oakland-county-parks/get-involved/volunteer"
   ],
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "michigan-umich-wolverine-pathways",
@@ -60824,7 +60826,7 @@
   "pay_detail": "Free.",
   "season": "school-year",
   "duration": "From 7th or 10th grade through 12th grade; up to seven Saturdays a semester plus 2 to 4 summer weeks",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "The next application window opens in December 2026. Last cycle, Southeast Michigan applications closed February 28, 2026 and Grand Rapids applications closed March 20, 2026.",
   "deadline_iso": null,
@@ -60838,10 +60840,10 @@
    "https://wolverinepathways.umich.edu/faq/",
    "https://wolverinepathways.umich.edu/application-3/"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-17",
   "priority": 1,
-  "notes": "No exceptions are made for the Southeast Michigan deadline. You must keep strong grades and attendance to stay in. In 10th to 12th grade you can pick summer courses, camps or internships.",
+  "notes": "No exceptions are made for the Southeast Michigan deadline. You must keep strong grades and attendance to stay in. In 10th to 12th grade you can pick summer courses, camps or internships. As of Nov 4, 2026, the program site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 17, 2026"
  },
  {
@@ -60894,7 +60896,7 @@
   "opens_iso": null,
   "deadline_iso": null,
   "apply_url": "https://www.michiganworks.org/",
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "needs_work_permit": null,
   "id": "michigan-wioa-youth-michigan-works",
@@ -60916,9 +60918,9 @@
   "pay_detail": "Not stated. The state page lists both paid and unpaid work experiences, including summer employment, as possible services.",
   "season": "year-round",
   "duration": "Varies by local agency",
-  "status": "year-round",
+  "status": "unconfirmed",
   "deadline_text": "Operated year round by local Michigan Works! agencies. No state deadline is posted.",
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Call Michigan Works! at 1-800-285-WORKS (9675). Or find your local agency by ZIP code at michiganworks.org. Then ask about WIOA Youth eligibility.",
   "url": "https://www.michigan.gov/leo/bureaus-agencies/wd/programs-services/workforce-innovation-and-opportunity-act-wioa-youth-program",
   "sources_fetched": [
@@ -60929,7 +60931,7 @@
    "https://www.michigan.gov/leo/bureaus-agencies/ber/wage-and-hour/youth-employment-standards-act-yesa"
   ],
   "priority": 2,
-  "notes": "Not open to every teen: eligibility depends on income and barriers, so a short call to the local agency is the real first step. The state page does not list a local application form or local youth contacts. Capital Area Michigan Works!' own site (camw.org) mentions WIOA and says 259 youth were served but does not describe its youth program in detail. Work experience for anyone under 18 in Michigan needs a work permit under the state's youth employment law.",
+  "notes": "Not open to every teen: eligibility depends on income and barriers, so a short call to the local agency is the real first step. The state page does not list a local application form or local youth contacts. Capital Area Michigan Works!' own site (camw.org) mentions WIOA and says 259 youth were served but does not describe its youth program in detail. Work experience for anyone under 18 in Michigan needs a work permit under the state's youth employment law. As of Nov 4, 2026, the state site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 19, 2026"
  },
  {
@@ -60980,11 +60982,11 @@
   "opens_iso": null,
   "deadline_iso": null,
   "apply_url": null,
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "needs_work_permit": false,
   "priority": 2,
-  "notes": "It has a military style setup, but the page says you do not have to join the military. The page calls it a program for at risk youth who want to finish high school.",
+  "notes": "It has a military style setup, but the page says you do not have to join the military. The page calls it a program for at risk youth who want to finish high school. As of Nov 4, 2026, the state site blocked automated reading, so confirm these details first.",
   "fields": [
    "any"
   ],
