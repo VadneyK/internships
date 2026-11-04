@@ -3,14 +3,14 @@
   "max_age": null,
   "min_age": null,
   "opens_iso": null,
-  "deadline_iso": null,
-  "apply_url": null,
+  "deadline_iso": "2026-11-15",
+  "apply_url": "https://www.volgistics.com/appform/1800663892",
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Adults must be 19 or older for the regular program, so this is a separate youth track. Ask about the age rule.",
-  "deadline_confidence": "unknown",
+  "deadline_confidence": "confirmed-2026-27",
   "fields": [
     "education",
     "social-impact"
@@ -29,9 +29,9 @@
   "pay_detail": "Unpaid. Museum store discounts.",
   "season": "year-round",
   "duration": "Three sessions a year: spring, summer and fall",
-  "status": "closed-expect-reopen",
-  "deadline_text": "Fall 2026 applications are closed. Spring session dates not posted.",
-  "how_to_apply": "See the volunteer page for the form when a session opens. Questions: volunteer@theworldwar.org or 816-888-8115.",
+  "status": "open-now",
+  "deadline_text": "Online applications are due by 11:59 p.m. on Nov 15, 2026. You hear back by Dec 13, 2026. The page does not say which session this is for.",
+  "how_to_apply": "Fill out the form on the volunteer page. A phone interview is set up by email. Under 18 needs a parent's consent. Questions: volunteer@theworldwar.org or 816-888-8115.",
   "url": "https://theworldwar.org/support/volunteer",
   "sources_fetched": [
     "https://theworldwar.org/support/volunteer"

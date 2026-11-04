@@ -7,10 +7,10 @@
   "apply_url": "https://stlyouthjobs.org/apply",
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "notes": "Not a job placement.",
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "fields": [
     "any"
   ],
@@ -28,13 +28,14 @@
   "pay_detail": "Stipend paid after you finish the program. Amount not stated.",
   "season": "year-round",
   "duration": "not stated",
-  "status": "rolling",
-  "deadline_text": "Page says the pathway is accepting applications. No dates posted.",
-  "how_to_apply": "Apply online at stlyouthjobs.org/apply. A Job Coach then contacts you.",
+  "status": "unconfirmed",
+  "deadline_text": "The pathways page still lists this pathway as open. The apply page says the summer 2026 application has closed. Summer 2027 dates not posted.",
+  "how_to_apply": "Fill out the interest form on the apply page. The program says it will contact you when the Summer 2027 application opens.",
   "url": "https://stlyouthjobs.org/pathways",
   "sources_fetched": [
     "https://stlyouthjobs.org",
     "https://stlyouthjobs.org/how-it-works-youth",
-    "https://stlyouthjobs.org/pathways"
+    "https://stlyouthjobs.org/pathways",
+    "https://stlyouthjobs.org/apply"
   ]
 }

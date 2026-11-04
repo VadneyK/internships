@@ -1,16 +1,16 @@
 {
   "grades": null,
   "max_age": null,
-  "min_age": null,
+  "min_age": 16,
   "opens_iso": null,
   "deadline_iso": null,
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 1,
-  "notes": "The page did not list ages. Ask the museum before you apply. The page title reads Museum Assistants.",
-  "deadline_confidence": "unknown",
+  "notes": "The 2027 dates are not posted. If hired, you show a Social Security card and photo ID and pass a drug test. You need your own ride to work. The page title reads Museum Assistants.",
+  "deadline_confidence": "last-year-pattern",
   "fields": [
     "arts-media",
     "education"
@@ -24,16 +24,17 @@
   "city": "St. Louis, MO",
   "type": "paid-youth-program",
   "what_you_do": "Teens from the St. Louis area learn about art and teach others about art from around the world.",
-  "who_can_apply": "Teens from the St. Louis area. Age range not stated on the page.",
+  "who_can_apply": "High school students from the St. Louis area. For 2026 you had to be 16 by June 1.",
   "paid_type": "paid",
   "pay_detail": "$15 per hour",
   "season": "year-round",
   "duration": "Up to 24 hours a week in summer. At least 5 hours a month in the school year.",
-  "status": "unconfirmed",
-  "deadline_text": "No dates or deadline posted on the page.",
-  "how_to_apply": "Use the Learn more and apply link on the museum's teen assistants page. A contact email is listed there.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "2026 applications ran March 19 to April 15, 2026. 2027 dates not posted.",
+  "how_to_apply": "Use the Learn more and apply link on the museum's teen assistants page when the next window opens. A contact email is listed there.",
   "url": "https://www.slam.org/families-teens-youth/teen-assistants/",
   "sources_fetched": [
-    "https://www.slam.org/families-teens-youth/teen-assistants/"
+    "https://www.slam.org/families-teens-youth/teen-assistants/",
+    "https://www.slam.org/families-teens-youth/teen-assistants/application-for-teen-assistant-program/"
   ]
 }

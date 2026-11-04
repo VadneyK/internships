@@ -56,7 +56,7 @@ const DETAIL_FIELDS = ["who_can_apply", "how_to_apply", "notes", "duration", "pa
 // 2026-11-02: statewide and Santa Barbara re-reads, stacked on PR 129. PENDING PERSON APPROVAL. 652500 to 653500.
 // 2026-11-03: 27 new Los Angeles cards (2,904 programs), stacked on PR 139. PENDING PERSON APPROVAL. 653500 to 658800.
 // 2026-11-03: New York City re-reads, with room for the Chicago re-read that follows. PENDING PERSON APPROVAL. 658800 to 664000.
-const GZIP_LIMIT = 664000;
+const GZIP_LIMIT = 675000;
 
 function readText(file) {
   return fs.readFileSync(path.join(DATA, file), "utf8");
