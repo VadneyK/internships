@@ -6,8 +6,8 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "needs_work_permit": null,
+  "verified_on": "2026-11-04",
+  "needs_work_permit": true,
   "id": "ann-arbor-aadl-teen-volunteer",
   "name": "Ann Arbor District Library Volunteer Program (teens and adults)",
   "org": "Ann Arbor District Library",
@@ -20,8 +20,8 @@
     "education",
     "any"
   ],
-  "what_you_do": "Prepare materials for library programs, give occasional program support and do shelf reading. Shelving books is done by paid staff.",
-  "who_can_apply": "Anyone 14 or older. Ages 14 to 17 need a signed permission slip from a parent or guardian.",
+  "what_you_do": "Prepare materials for library programs and give occasional program support. Shelving books is done by paid staff.",
+  "who_can_apply": "Anyone 14 or older. Ages 14 to 17 must get a work permit through the state Youth Employment Permit Portal. On school days they can only volunteer after 3:30 p.m.",
   "paid_type": "unpaid",
   "pay_detail": "Unpaid",
   "season": "year-round",
@@ -29,12 +29,12 @@
   "status": "unconfirmed",
   "deadline_text": "The page lists no open or close dates. Fill out the online form, then attend a volunteer orientation.",
   "deadline_confidence": "unknown",
-  "how_to_apply": "Fill out the online volunteer application. After review you are contacted with details on signing up for a required volunteer orientation, then you pick shifts.",
+  "how_to_apply": "Fill out the online volunteer application. Teens send it in along with the work permit application. After review you are contacted with details on signing up for a required volunteer orientation, then you pick shifts.",
   "url": "https://aadl.org/volunteer",
   "sources_fetched": [
     "https://aadl.org/volunteer",
     "https://www.michigan.gov/leo/bureaus-agencies/ber/wage-and-hour/youth-employment-standards-act-yesa"
   ],
   "priority": 1,
-  "notes": "Older library posts mention a summer teen volunteer program. The current page only describes the year-round program. Michigan's Youth Employment Standards Act covers employers of anyone under 18, including volunteers. Ask the program if you need a work permit."
+  "notes": "Older library posts mention a summer teen volunteer program. The current page only describes the year-round program."
 }
