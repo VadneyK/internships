@@ -37,7 +37,6 @@ const ALLOW = {
   "closed-with-future-date:nc-museum-natural-sciences-junior-interpreters": "closed card keeps next cycle date: page says applications open mid-January 2027, no day",
   "closed-with-future-date:nyc-columbia-pre-college-nyc-commuter-summer": "closed card keeps next cycle date: source says applications open mid-November 2026, no day",
   "closed-with-future-date:richmond-rcmp-youth-academy": "closed card keeps next cycle date: page says applications posted late 2026 to early 2027, no day",
-  "closed-with-future-date:richmond-sd38-biomedical-health-science-dual-credit": R,
   "closed-with-future-date:seattle-teens-in-public-service-summer-internship": "closed card keeps next cycle date: source says applications open mid to late November 2026, exact day not posted",
 };
 

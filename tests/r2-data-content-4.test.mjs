@@ -22,7 +22,6 @@ const KNOWN = {
   "nc-museum-natural-sciences-junior-interpreters": "2027-03-22",
   "nyc-columbia-pre-college-nyc-commuter-summer": "2027-04-01",
   "richmond-rcmp-youth-academy": "2027-04-06",
-  "richmond-sd38-biomedical-health-science-dual-credit": "2027-03-09",
   // Added 2026-10-11 for ticket p7-regions-1.
   "cu-boulder-science-discovery-stem-research-experience": "2027-03-16",
   "portland-pnca-pre-college-summer": "2027-05-02"
