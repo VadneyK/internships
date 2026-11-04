@@ -5,11 +5,11 @@
   "opens_iso": null,
   "deadline_iso": null,
   "apply_url": null,
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "needs_work_permit": null,
   "priority": 3,
-  "notes": "Programs may target a certain age group, interest or skill.",
+  "notes": "Programs may target a certain age group, interest or skill. As of Nov 4, 2026, the state of Michigan site blocked automated reading, so confirm these details first.",
   "fields": [
     "any"
   ],
@@ -27,9 +27,9 @@
   "pay_detail": "Not stated",
   "season": "year-round",
   "duration": "Programs run throughout the year",
-  "status": "rolling",
+  "status": "unconfirmed",
   "deadline_text": "No deadline. Check the program calendar on the page for current programs.",
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Contact your local BSBP office or your school special education office. You can also fill out the form at the IEP meeting.",
   "url": "https://www.michigan.gov/leo/bureaus-agencies/bureau-of-services-for-blind-persons/pre-employment-transition-services",
   "sources_fetched": [
