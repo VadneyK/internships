@@ -19,9 +19,9 @@
   "pay_detail": "Placements pay at least $7.25 per hour. Workshops do not pay. Most placements are 20 hours a week or less and last 8 weeks or less.",
   "season": "summer",
   "duration": "Workshops March to June. Most jobs run June to August.",
-  "status": "rolling",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "The FAQ says to register by June 1 or as soon as possible; workshops and job fairs start in March to May. The FAQ page says registration is open, but it does not give a year.",
+  "deadline_text": "2026 cycle: register by June 1, 2026 or as soon as possible; workshops and job fairs start in March to May. As of Nov 4, 2026, the site still says 2026 registration is live, but the form is for 2025/2026. The 2027 dates are not posted.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Make a KANSASWORKS account. Then fill out the YEP registration form. Once it is on file, you are sent information to sign up for workshops and job fairs. Age 14 to 17: bring a non-expired picture ID and birth certificate, plus a signed Social Security card, for a work placement.",
@@ -31,10 +31,11 @@
   "sources_fetched": [
     "https://workforce-ks.com/YEP/",
     "https://workforce-ks.com/YEP/youthemploymentprojectfaq/",
-    "https://workforce-ks.com/programs/wioayouthprogram/"
+    "https://workforce-ks.com/programs/wioayouthprogram/",
+    "https://www.workforce-ks.com/YEP/yepyouth/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "notes": "Camp HYPE is listed for age 15. The FAQ also points to the City of Wichita Way to Work program and the YMCA Job Prep program. A different Workforce Alliance program, WIOA Youth, is for out-of-school youth ages 16 to 24 with barriers and an income limit."
 }
