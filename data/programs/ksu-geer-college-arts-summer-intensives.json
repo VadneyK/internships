@@ -19,11 +19,11 @@
   "pay_detail": "Cost is not stated on the main page. Check each program page.",
   "season": "summer",
   "duration": "One week for the intensives. Music camps run 3 to 6 days.",
-  "status": "opens-soon",
-  "opens_iso": "2026-11-01",
-  "deadline_text": "Summer 2027 page: registration opens November 1. Music camps: Jazz Band June 13-18, Concert Band June 20-25, Piano June 28-30, Choir July 5-10, Orchestra July 11-16 (year not printed, page is headed Summer 2027). No deadline is listed; spaces fill fast.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "Summer 2027 page, last read 2026-10-10: registration opens November 1. Music camps: Jazz Band June 13-18, Concert Band June 20-25, Piano June 28-30, Choir July 5-10, Orchestra July 11-16 (year not printed, page is headed Summer 2027). No deadline is listed; spaces fill fast.",
   "deadline_iso": null,
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Register on the pages for each program. They are linked from the main page. Sign-up starts November 1. Questions: arts@kennesaw.edu or 470-578-6742.",
   "needs_work_permit": false,
   "url": "https://campus.kennesaw.edu/colleges-departments/arts/concerts-events/community-programs/summer-art-intensives.php",
@@ -32,8 +32,8 @@
     "https://campus.kennesaw.edu/colleges-departments/arts/concerts-events/community-programs/summer-art-intensives.php"
   ],
   "priority": 3,
-  "notes": "Not a job. The page states no cost or fee, so check each program page. The Dance, Theatre and Arts and Design intensives list no exact dates on the main page. Scholarships are not mentioned.",
-  "verified": "fetched",
+  "notes": "Could not read the official page on 2026-11-02: kennesaw.edu refused the connection from both tools tried, so whether registration is live is not confirmed. Details here are from 2026-10-10. Not a job. The page states no cost or fee, so check each program page. The Dance, Theatre and Arts and Design intensives list no exact dates on the main page. Scholarships are not mentioned.",
+  "verified": "snippet-only",
   "verified_on": "2026-10-10",
   "apply_url": null
 }

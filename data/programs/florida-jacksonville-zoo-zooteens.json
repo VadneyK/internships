@@ -20,20 +20,20 @@
   "pay_detail": "Unpaid; $100 annual fee for badge, shirt and materials (financial help available, nobody turned away)",
   "season": "year-round",
   "duration": "Year round: 30 hours fall, 30 spring, 80 summer",
-  "status": "opens-soon",
-  "deadline_text": "Applications open every year on November 1 and close November 25. They are closed until then.",
-  "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Fill out the form in the November window. Interview. Go to the required training.",
+  "status": "open-now",
+  "deadline_text": "2027 ZooTeens applications are open and close December 18, 2026. The page prints December 18 without a year.",
+  "deadline_iso": "2026-12-18",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the form at the Apply Here link. Interview. Go to the required training.",
   "needs_work_permit": false,
   "url": "https://www.jacksonvillezoo.org/teens",
-  "apply_url": null,
+  "apply_url": "https://www.volgistics.com/appform/223643878",
   "sources_fetched": [
     "https://www.jacksonvillezoo.org/teens"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-02",
   "priority": 2,
-  "notes": "The page gives the Nov 1 to Nov 25 window as the pattern each year. It does not say the exact 2026 dates are for that year.",
-  "opens_iso": "2026-11-01"
+  "notes": "The page says 2027 applications are open and close December 18. It prints no year, but 2026 is the only December 18 ahead. In October 2026 the page gave a Nov 1 to Nov 25 window, so dates can change.",
+  "opens_iso": null
 }

@@ -2,14 +2,14 @@
   "grades": "11",
   "max_age": null,
   "min_age": null,
-  "opens_iso": "2026-11-02",
+  "opens_iso": null,
   "deadline_iso": "2027-01-25",
-  "apply_url": null,
+  "apply_url": "https://wustl.az1.qualtrics.com/jfe/form/SV_2nxjBIpAxF3Lq5M",
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-02",
   "priority": 1,
-  "notes": "Takes only 10 to 12 students a year. Students from St. Louis Public Schools and under-resourced schools are strongly encouraged to apply. Work is in person in the lab.",
+  "notes": "Takes only 10 to 12 students a year. Students from St. Louis Public Schools and under-resourced schools are strongly encouraged to apply. Work is in person in the lab. The page banner says 2027 applications are open, though a lower section still reads as if they open Nov 2, 2026.",
   "deadline_confidence": "confirmed-2026-27",
   "fields": [
     "science",
@@ -28,12 +28,13 @@
   "paid_type": "stipend",
   "pay_detail": "$4,800 stipend (before taxes) for the summer",
   "season": "summer",
-  "duration": "8 weeks (May 31 to July 23, 2027)",
-  "status": "opens-soon",
-  "deadline_text": "Applications open Nov 2, 2026. Due Jan 25, 2027. Recommendation letters due Feb 1, 2027.",
+  "duration": "8 weeks (June 7 to July 30, 2027), with orientation June 2 to 4, 2027",
+  "status": "open-now",
+  "deadline_text": "2027 applications are open. Due Jan 25, 2027. Recommendation letters due Feb 1, 2027.",
   "how_to_apply": "Online application with five short answers and two essays. Two recommendation letters, one from a math or science teacher.",
   "url": "https://sites.wustl.edu/wustlysp/programs/summer-focus",
   "sources_fetched": [
-    "https://sites.wustl.edu/wustlysp/programs/summer-focus"
+    "https://sites.wustl.edu/wustlysp/programs/summer-focus",
+    "https://wustl.az1.qualtrics.com/jfe/form/SV_2nxjBIpAxF3Lq5M"
   ]
 }
