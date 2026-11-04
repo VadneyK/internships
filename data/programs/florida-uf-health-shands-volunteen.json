@@ -18,11 +18,11 @@
   "paid_type": "unpaid",
   "pay_detail": "Unpaid volunteer role",
   "season": "summer",
-  "duration": "About 6 weeks in summer (June 21 to Aug 5)",
-  "status": "closed-expect-reopen",
-  "deadline_text": "The page title says Summer 2026, but the dates read like 2027 (application Jan 4 to Jan 22, interviews April 6 to 8, orientation Friday June 18, program June 21 to Aug 5, 2027). Treat dates as unconfirmed.",
-  "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
+  "duration": "About 6 weeks in summer (June 21 to Aug 5, 2027)",
+  "status": "opens-soon",
+  "deadline_text": "The Summer 2027 application opens Jan 4, 2027 at noon and closes Jan 22, 2027 at noon. Group interviews are April 6 to 8. Orientation is June 18.",
+  "deadline_iso": "2027-01-22",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Apply online in January. Then go to an info session, fill out an interest form and join a group interview.",
   "needs_work_permit": false,
   "url": "https://ufhealth.org/volunteering-gnv/volunteen",
@@ -31,7 +31,8 @@
     "https://ufhealth.org/volunteering-gnv/volunteen"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 3,
-  "notes": "The page mixes 2026 and 2027, so check it in December. Jacksonville students: UF Health Jacksonville has its own program."
+  "notes": "If you live near Jacksonville, UF Health there has its own program.",
+  "opens_iso": "2027-01-04"
 }
