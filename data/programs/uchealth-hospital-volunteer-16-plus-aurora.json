@@ -4,7 +4,7 @@
   "deadline_iso": null,
   "apply_url": "https://uclive.vsyslive.com/pages/UCHAPPLY",
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "id": "uchealth-hospital-volunteer-16-plus-aurora",
   "name": "UCHealth Hospital Volunteering (age 16 and up)",
@@ -31,8 +31,9 @@
   "how_to_apply": "Use the online application for the hospital you want. The Aurora hospital link is on the program page. Requirements differ by hospital, so check with the hospital first.",
   "url": "https://www.uchealth.org/give-to-uchealth/volunteer/",
   "priority": 2,
-  "notes": "Job shadowing at UCHealth is for ages 18 and older. The volunteer page does not list a summer teen program. Ask the hospital about other teen options.",
+  "notes": "Job shadowing at UCHealth is for ages 18 and older. The volunteer page does not list a summer teen program. Ask the hospital about other teen options. The Aurora hospital page asks for at least 100 hours. Volunteers under 18 join a junior program on weekdays only.",
   "sources_fetched": [
-    "https://www.uchealth.org/give-to-uchealth/volunteer/"
+    "https://www.uchealth.org/give-to-uchealth/volunteer/",
+    "https://uclive.vsyslive.com/pages/UCHVOLUNTEERING"
   ]
 }

@@ -3672,7 +3672,7 @@
   "deadline_iso": null,
   "apply_url": "https://www.connectingcolorado.gov",
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "needs_work_permit": null,
   "id": "arapahoe-douglas-works-future-u-young-adult",
   "name": "Future U Youth and Young Adult Program",
@@ -3703,7 +3703,7 @@
   "sources_fetched": [
    "https://www.adworks.org/job-seekers/programs/future-u-young-adult/"
   ],
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "arapahoe-libraries-teen-volunteer",
@@ -3721,29 +3721,31 @@
   "min_age": null,
   "max_age": null,
   "grades": null,
-  "who_can_apply": "Teens. The page does not list exact ages. The library teen section is for ages 12 to 18.",
+  "who_can_apply": "Teens in grades 7 to 12, or the same level if homeschooled. The page does not list exact ages. The library teen section is for ages 12 to 18.",
   "paid_type": "unpaid",
   "pay_detail": "Unpaid",
   "season": "school-year",
   "duration": "Semester and summer volunteer options",
-  "status": "rolling",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "No deadline is posted on the page.",
+  "deadline_text": "Semester and summer applications are closed as of Nov 4, 2026. Semester spots usually open at the start of the fall and spring semesters. Summer applications open in early April.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Use the Teen Volunteer Application on the page. The page lists drop in volunteer events at Koelbel and Smoky Hill libraries.",
+  "how_to_apply": "The form goes up on the Semester or Summer Teen Volunteer page when applications open. Spots are limited. The page lists drop in volunteer events at Koelbel and Smoky Hill libraries.",
   "needs_work_permit": false,
   "url": "https://arapahoelibraries.org/teen-volunteer-application/",
   "apply_url": null,
   "sources_fetched": [
    "https://arapahoelibraries.org/teen-volunteer-application/",
-   "https://arapahoelibraries.org/teens/"
+   "https://arapahoelibraries.org/teens/",
+   "https://arapahoelibraries.org/semester-teen-volunteer/",
+   "https://arapahoelibraries.org/summer-teen-volunteer/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Each branch Teen Advisory Board meets monthly to talk about trends and plan events.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "verified": "fetched",
@@ -13048,16 +13050,16 @@
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Apply online when positions are announced in January. Attach a reference letter if it is your first year. Sign up for the email or text updates on the page.",
   "needs_work_permit": null,
-  "url": "https://www.bouldercounty.org/jobs/youth-corps/",
+  "url": "https://bouldercounty.gov/jobs/youth-corps/",
   "apply_url": null,
   "sources_fetched": [
-   "https://www.bouldercounty.org/jobs/youth-corps/"
+   "https://bouldercounty.gov/jobs/youth-corps/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "notes": "The pay numbers on the page are labeled 2025, so 2027 wages may be different. Contact: youthcorps@bouldercounty.gov, 303-678-6104. Office: 5201 St Vrain Road, Longmont, CO 80503.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "boulder-youth-opportunities-advisory-board",
@@ -13076,28 +13078,29 @@
   "min_age": null,
   "max_age": null,
   "grades": null,
-  "who_can_apply": "Teens who live in the City of Boulder. The page does not list ages, grades or the application steps.",
+  "who_can_apply": "Current and rising high school students who live in the City of Boulder. One line on the page also allows teens who go to high school in the city. No ages are listed.",
   "paid_type": "not-stated",
   "pay_detail": "Pay is not stated.",
   "season": "school-year",
-  "duration": "Not stated",
+  "duration": "One year terms that can be renewed",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "No application dates are posted on the page.",
+  "deadline_text": "The board page says applications are open year round, but it also names the 2025 to 2026 board. Ask staff if a spot is open.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "The page does not say how to apply. Use the Youth Opportunities Program page to contact staff.",
+  "how_to_apply": "Use the online form on the board page, in English or Spanish. Questions: Mario Martinez-Varelas, 720-498-2482.",
   "needs_work_permit": null,
-  "url": "https://bouldercolorado.gov/services/youth-opportunities-program",
-  "apply_url": null,
+  "url": "https://bouldercolorado.gov/youth-opportunities-advisory-board",
+  "apply_url": "https://bouldercolorado.formstack.com/forms/yoab_advisory_board_application_english",
   "sources_fetched": [
+   "https://bouldercolorado.gov/youth-opportunities-advisory-board",
    "https://bouldercolorado.gov/services/youth-opportunities-program"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 3,
-  "notes": "The same page says the city will not host paid youth internships for 2026 to 2027 and possibly beyond. The page also links a list of local youth leadership programs and a youth volunteer booklet.",
-  "verified_on_label": "Oct 10, 2026",
+  "notes": "The Youth Opportunities page says the city will not host paid youth internships for 2026 to 2027, and maybe longer. It also links a list of local youth programs and a volunteer booklet.",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -18346,10 +18349,10 @@
    "https://www.cmzoo.org/teenprograms"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
-  "notes": "The page says a $25 application fee is non-refundable. Summer programs are tuition based and the page does not state an amount. The page does not give winter session dates. Contact: 719-424-7822.",
-  "verified_on_label": "Oct 10, 2026"
+  "notes": "The page says a $25 application fee is non-refundable. Summer programs are tuition based and the page does not state an amount. Contact: 719-424-7877.",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "chi-st-alexius-bismarck-teen-volunteers",
@@ -23816,10 +23819,10 @@
    "https://co4h.colostate.edu/join-4-h"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-11",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Also open to younger kids; teen parts are the leader roles. Call or email your county Extension office before you start to join online.",
-  "verified_on_label": "Oct 11, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "colorado-childrens-hospital-junior-volunteer",
@@ -23855,10 +23858,10 @@
    "https://www.childrenscolorado.org/community/support-childrens-colorado/volunteer/teen-volunteer-opportunities/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "notes": "You can get volunteer credit for scholarship applications. The page does not say which hospital sites take teens. Ask when you apply.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "colorado-ffa-association",
@@ -23899,10 +23902,10 @@
    "https://www.coloradoffa.org/become-a-state-officer"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "The Colorado FFA Foundation helps the group, CSU Ag Education and ag teachers. Dates and fees were not on the program pages.",
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "colorado-governors-summer-job-hunt",
@@ -23939,10 +23942,10 @@
    "https://www.jeffco.us/4148/Careers-for-Youth-and-Young-Adults"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "The Denver page and the Jefferson County workforce page both say ages 14 to 24. The state page (cdle.colorado.gov/jobs-training/youth/gsjh) would not load. If you are 14 or 15, call your local Workforce Center to check the age rule.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "colorado-school-of-mines-forge-and-form-summer-studio",
@@ -23978,10 +23981,10 @@
    "https://labriola.mines.edu/labriola-summer-studio/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
-  "notes": "The page blocked our reader, so it was read through a page summary tool. Confirm the cost and dates on the Mines page.",
-  "verified_on_label": "Oct 10, 2026"
+  "notes": "Confirm the 2027 cost and dates on the Mines page.",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "colorado-springs-chiefs-youth-advisory-council",
@@ -24017,10 +24020,10 @@
    "https://coloradosprings.gov/chiefs-youth-advisory-council"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "A news story said under 18 students need a parent signature. That detail is not on the city page, so ask the contact.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "colorado-springs-space-foundation-space-ambassador-volunteer",
@@ -24057,10 +24060,10 @@
    "https://www.discoverspace.org/volunteer"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "You can apply while the museum is closed. The museum plans to reopen in January 2027.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "colorado-springs-summer-teen-volunteering",
@@ -24097,10 +24100,10 @@
    "https://coloradosprings.gov/parks/page/summer-teen-volunteering"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Junior Docents at the Pioneers Museum earn a $300 Education Stipend at the end of the summer if they do at least 40 hours. Teens ages 12 to 15 can only volunteer from 7 am to 7 pm in the school year, and until 9 pm in summer. North Cheyenne Canon teens must finish the free online Leave No Trace 101 course.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "colorado-youth-advisory-council-coyac",
@@ -24136,10 +24139,10 @@
    "https://coyac.org/apply"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
-  "notes": "The COYAC site blocked our page reader, so this was read through a page summary tool. The retreat for the current group is August 29 to 30, 2026 in Denver; the Day at the Capitol is March 1, 2027.",
-  "verified_on_label": "Oct 10, 2026"
+  "notes": "The retreat for the current group is August 29 to 30, 2026 in Denver; the Day at the Capitol is March 1, 2027.",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "columbia-memorial-space-center-volunteer",
@@ -27200,10 +27203,10 @@
    "https://www.colorado.edu/summer/apply-enroll/high-school-students/non-credit-opportunities-high-school-students"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "notes": "No refunds after you enroll. Students match with CU Boulder mentors in May and at orientation on June 2, 2027. Poster session July 30, 2027.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "cu-boulder-science-discovery-summer-classes-high-school",
@@ -27243,10 +27246,10 @@
    "https://www.colorado.edu/summer/apply-enroll/high-school-students/non-credit-opportunities-high-school-students"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
-  "notes": "The same page lists STEM Pathfinders (two weeks, bioscience June 1 to 12, 2026, engineering July 13 to 24, 2026) for the 2026 season. Check the price and 2027 dates on the program page.",
-  "verified_on_label": "Oct 10, 2026"
+  "notes": "The CU summer page lists STEM Pathfinders (two weeks, bioscience June 1 to 12, 2026, engineering July 13 to 24, 2026) for the 2026 season. Check the price and 2027 dates on the program page.",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "cu-denver-pre-collegiate-development-program-high-school",
@@ -27276,16 +27279,16 @@
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Call or email the program manager first. Norma Marquez, 303-315-7070, PCDP@ucdenver.edu.",
   "needs_work_permit": false,
-  "url": "https://ucdenver.edu/pre-college/programs/high-school",
+  "url": "https://www.cudenver.edu/pre-college/programs/high-school",
   "apply_url": null,
   "sources_fetched": [
-   "https://ucdenver.edu/pre-college/programs/high-school"
+   "https://www.cudenver.edu/pre-college/programs/high-school"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "The 5 week summer program has college credit classes (ENGL 1020 or ENGL 1010) and fast track math.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "verified": "fetched",
@@ -28537,7 +28540,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "id": "denver-art-museum-teen-studio",
   "name": "Teen Studio at the Denver Art Museum",
@@ -28568,7 +28571,7 @@
   "sources_fetched": [
    "https://www.denverartmuseum.org/en/teen-studio"
   ],
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "denver-botanic-gardens-summer-teen-volunteer",
@@ -28592,12 +28595,12 @@
   "pay_detail": "Unpaid",
   "season": "summer",
   "duration": "Once a week, June to July",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "The page says summer 2026 applications are closed. No 2027 dates are posted.",
+  "deadline_text": "No summer application dates or link are on the page as of Nov 4, 2026. The program runs June to July.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Apply online when the summer window opens. Questions: volunteer office email on the program page.",
+  "how_to_apply": "The page has no form for this program. Email the address on the page to ask how to apply.",
   "needs_work_permit": false,
   "url": "https://www.botanicgardens.org/teen-volunteer-programs",
   "apply_url": null,
@@ -28605,14 +28608,14 @@
    "https://www.botanicgardens.org/teen-volunteer-programs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "notes": "Also on the page: Junior Counselor Program for ages 13 to 15 (1 full week of camp, Monday to Friday 8:30 to 4:30). Also Gardens Teen Leaders, a school year group for teens who finished the summer program. The page gives no exact ages for the summer program. It only says high school.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "denver-health-job-shadowing-program",
-  "name": "Job Shadowing Program",
+  "name": "Education Observer Program (formerly Job Shadow Program)",
   "org": "Denver Health",
   "regions": [
    "colorado"
@@ -28623,35 +28626,35 @@
    "health"
   ],
   "what_you_do": "Follow a health care worker at Denver Health to see a normal workday. You learn the skills and school needed for that job.",
-  "min_age": 14,
+  "min_age": 16,
   "max_age": null,
   "grades": null,
-  "who_can_apply": "Students ages 14 or older. You must be in high school or in a college undergraduate program.",
+  "who_can_apply": "Ages 16 or older in high school or an undergraduate college program. Under 18 needs permission from a parent or guardian. You must plan a health care career.",
   "paid_type": "unpaid",
   "pay_detail": "Unpaid",
   "season": "year-round",
-  "duration": "Short shadowing experiences",
-  "status": "closed-expect-reopen",
+  "duration": "Up to 40 hours within 2 months of approval",
+  "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "The application was closed after July 31, 2026. The page says it is expected to reopen in early November 2026 for winter break shadowing.",
-  "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Apply online when the application reopens. All required documents must be in by the deadline.",
+  "deadline_text": "Winter and spring window: Nov 2, 2026 to Feb 1, 2027. Apply at least 4 weeks before you want to start. Summer window: Apr 2 to Jun 18, 2027.",
+  "deadline_iso": "2027-02-01",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Find a Denver Health provider who will host you. Make an online profile. Upload the signed Observer and Confidentiality Agreement and your shot records all at once. Apply at least 4 weeks before you start.",
   "needs_work_permit": false,
   "url": "https://denverhealth.org/for-professionals/careers/job-shadowing-program",
-  "apply_url": null,
+  "apply_url": "https://app.betterimpact.com/Application?OrganizationGuid=1c290b3a-a62f-43c6-8306-a8d6edba261d&ApplicationFormNumber=3",
   "sources_fetched": [
    "https://denverhealth.org/for-professionals/careers/job-shadowing-program"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
-  "notes": "Denver Health is at 777 Bannock Street, Denver. Students who cannot shadow can look at the MC2 internship (rising juniors).",
-  "verified_on_label": "Oct 10, 2026"
+  "notes": "Denver Health does not assign providers, and a spot is not promised. One experience per year. Operating room and emergency department visits need age 18. Denver Health is at 777 Bannock Street, Denver. Sophomores can also look at the VISTA internship (formerly MC2).",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "denver-health-mc2-medical-career-collaborative",
-  "name": "Medical Career Collaborative (MC2) High School Internship",
+  "name": "VISTA Pathways to Health Careers, formerly Medical Career Collaborative (MC2)",
   "org": "Denver Health with Children's Hospital Colorado",
   "regions": [
    "colorado"
@@ -28665,29 +28668,30 @@
   "min_age": null,
   "max_age": null,
   "grades": null,
-  "who_can_apply": "Current high school sophomores who go to school in the Denver metro or Colorado Springs area and are legally allowed to work in the U.S. You start at the beginning of junior year. No exceptions to the rules.",
+  "who_can_apply": "Current high school sophomores who can legally work in the U.S. You must commit to two years and not plan to graduate early. Denver Health's page says Denver metro schools. Children's Colorado's page says Denver metro or Colorado Springs schools.",
   "paid_type": "paid",
-  "pay_detail": "Paid internship. The hourly rate is not stated on the page.",
+  "pay_detail": "Paid internship at Colorado minimum wage or more. No exact rate is listed.",
   "season": "school-year",
   "duration": "Junior and senior years; 100 to 120 hour paid internship in junior year",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "The 2026 to 2027 application is closed. The 2027 to 2028 application opens in mid January 2027.",
+  "deadline_text": "Denver Health's page says the 2027 to 2028 VISTA application opens in mid January 2027 and closes in early March 2027. Children's Colorado's page says its MC2 application is closed and opens at the start of each year.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "One form is used for all sites. A team reads your essays and your GPA. They also look at what you do, what you do for your town, how much you need money help, and 1 recommendation.",
+  "how_to_apply": "Check both pages in January 2027. Children's Colorado says one form covers its sites. A team reads your essays, GPA and 1 recommendation. They also look at student need. Some students get an interview.",
   "needs_work_permit": null,
   "url": "https://denverhealth.org/for-professionals/office-of-education/health-professions-and-pre-health-programs/high-school-internships",
   "apply_url": null,
   "sources_fetched": [
    "https://denverhealth.org/for-professionals/office-of-education/health-professions-and-pre-health-programs/high-school-internships",
-   "https://denverhealth.org/for-professionals/careers/job-shadowing-program"
+   "https://denverhealth.org/for-professionals/careers/job-shadowing-program",
+   "https://www.childrenscolorado.org/careers/professional-development/medical-career-collaborative/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 1,
-  "notes": "Sites are Denver Health and Children's Colorado at Anschutz in Aurora. Others are in Broomfield, Highlands Ranch and Colorado Springs. Contact marisa.valeras@dhha.org. Or call 303-602-2685.",
-  "verified_on_label": "Oct 10, 2026"
+  "notes": "The two pages disagree. Denver Health says MC2 is now VISTA and is only at Denver Health. Children's Colorado still lists MC2 at Denver Health and sites in Aurora, Broomfield, Highlands Ranch and Colorado Springs. Ask before you apply: marisa.valeras@dhha.org, 303-602-2685 or mc2applications@childrenscolorado.org.",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "denver-mayors-youthworks-retention-bonus",
@@ -28723,10 +28727,10 @@
    "https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Economic-Development-Opportunity/Jobseekers-Employers/For-Jobseekers/Youth-Programs/Mayors-YouthWorks-Initiative"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "notes": "The city does not give you a job. You must already have one. This is a bonus program, not a job. The 2026 page lists job fairs (March, April, May 2026) and says youthworks@denvergov.org and (720) 337-9675 for job help. Look for 2027 fairs in spring.",
-  "verified_on_label": "Oct 10, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -28764,10 +28768,10 @@
    "https://www.dmns.org/about/teen-science-scholars/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 1,
-  "notes": "The museum site blocked our regular reader, so this was read through a page summary tool. Out of state students can apply if they are at the museum for the whole program. Housing is not provided. RTD buses are free for riders 19 and younger. Phone 303-370-6478.",
-  "verified_on_label": "Oct 10, 2026"
+  "notes": "Out of state students can apply if they are at the museum for the whole program. Housing is not provided. RTD buses are free for riders 19 and younger. Phone 303-370-6478.",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "denver-parks-rec-lifeguard-training-hiring",
@@ -28803,10 +28807,10 @@
    "https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Parks-Recreation/Recreation-Centers-Pools/Swimming-Pools/Lifeguard-Training-Hiring"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 1,
-  "notes": "The pay and steps were read through a page reader, so confirm the pay on the city job posting. The page says the city needs early morning and daytime guards who can work year-round.",
-  "verified_on_label": "Oct 10, 2026"
+  "notes": "Confirm the pay on the city job posting. The page says the city needs early morning and daytime guards who can work year-round.",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "denver-parks-recreation-youth-meals-recreation-volunteer",
@@ -28843,10 +28847,10 @@
    "https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Parks-Recreation/Get-Involved-with-Denver-Parks-Recreation/Volunteer-with-Denver-Parks-Recreation"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "The page says all volunteers must be at least 15, finish an application and pass a background check. It also lists other jobs, like park clean-ups and mountain park projects. It gives no age rule for those.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -28854,7 +28858,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "needs_work_permit": null,
   "id": "denver-platteforum-artlab-paid-arts-internship",
   "name": "ArtLab Paid Arts Internship",
@@ -28886,7 +28890,7 @@
   "sources_fetched": [
    "https://platteforum.org/programs/artlab-1"
   ],
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Middle and high school",
@@ -28894,7 +28898,7 @@
   "deadline_iso": null,
   "apply_url": "https://survey.alchemer.com/s3/7986192/Teen-Advisory-Board-TAB-Interest-Form",
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "id": "denver-public-library-teen-advisory-board",
   "name": "Teen Advisory Boards (TAB)",
@@ -28926,7 +28930,7 @@
   "sources_fetched": [
    "https://www.denverlibrary.org/teen/tab"
   ],
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "denver-public-library-teen-volunteering",
@@ -28963,10 +28967,10 @@
    "https://denverlibrary.org/volunteer"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "The main volunteer page says most roles are for adults 18 and older, but teen roles exist. Positions fill up, so email the volunteer office to ask when more open.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "denver-western-national-roundup-4h-ffa",
@@ -29015,7 +29019,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "needs_work_permit": null,
   "id": "denver-ymca-metro-teen-summer-jobs",
   "name": "YMCA of Metro Denver Summer Jobs for Teens",
@@ -29047,7 +29051,7 @@
   "sources_fetched": [
    "https://denverymca.org/node/780"
   ],
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "opens_iso": null,
@@ -29869,7 +29873,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "needs_work_permit": null,
   "id": "douglas-county-young-adult-employment-program-dcyep",
   "name": "Douglas County Young Adult Employment Program (DCYEP)",
@@ -29891,7 +29895,7 @@
   "season": "year-round",
   "duration": "Not stated on the program page",
   "status": "year-round",
-  "deadline_text": "No deadline is listed. Virtual information sessions are held three times a month. October 2026 sessions are Oct 1, Oct 23 and Oct 28.",
+  "deadline_text": "No deadline is listed. Virtual information sessions are held three times a month. Posted sessions include Nov 5 and Dec 3, 2026.",
   "deadline_confidence": "unknown",
   "how_to_apply": "Use the interest form linked on the program page to see if you are eligible. Virtual information sessions are held about three times a month. You can also call 720-874-5130 or text 720-853-1837.",
   "url": "https://www.adworks.org/job-seekers/programs/douglas-county-youth-employment-program/",
@@ -29900,7 +29904,7 @@
   "sources_fetched": [
    "https://www.adworks.org/job-seekers/programs/douglas-county-youth-employment-program/"
   ],
-  "verified_on_label": "Oct 13, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -29949,7 +29953,7 @@
   "deadline_iso": null,
   "apply_url": "https://admission.du.edu/register/lamontsummeracademy",
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "id": "du-lamont-summer-academy",
   "name": "Lamont Summer Academy",
@@ -29976,11 +29980,12 @@
   "how_to_apply": "Fill out the online application. Upload audition videos and pay the $75 fee. Ask one teacher to email a recommendation. For need-based aid, email a tax form.",
   "url": "https://liberalarts.du.edu/lamont/summer-academy",
   "priority": 3,
-  "notes": "This costs money, but scholarships exist. You must meet the Feb 15 date to be considered for them.",
+  "notes": "This costs money, but scholarships exist. You must meet the Feb 15 date to be considered for them. The application form still shows 2026 program dates as of Nov 4, 2026.",
   "sources_fetched": [
-   "https://liberalarts.du.edu/lamont/summer-academy"
+   "https://liberalarts.du.edu/lamont/summer-academy",
+   "https://admission.du.edu/register/lamontsummeracademy"
   ],
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "dublin-city-volunteer-program",
@@ -39367,10 +39372,10 @@
    "https://www.jeffco.us/3327/Trail-Stewardship-Team"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "You must carry your own gear and tools to the job site. You can miss no more than three days. You must be on time at Jeffco Parks & Open Space headquarters in Golden each workday. The page does not state a county residency rule.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "goleta-parks-recreation-commission-youth-member",
@@ -39889,7 +39894,7 @@
   "duration": "Seasonal. Some teams are summer only, some run in the school year.",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Openings change. The page links to a current youth jobs list, last updated 2026.",
+  "deadline_text": "As of Nov 4, 2026, the job openings page lists no youth jobs. It says to check back soon.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Use the \"Current Youth Job Openings\" link on the Youth Pathways page.",
@@ -39898,13 +39903,14 @@
   "apply_url": null,
   "sources_fetched": [
    "https://groundworkcolorado.org/programs/youth/",
-   "https://groundworkcolorado.org/"
+   "https://groundworkcolorado.org/",
+   "https://groundworkcolorado.org/about/job-openings/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "notes": "The website moved from groundworkdenver.org to groundworkcolorado.org. The page also lists a GRIT program for ages 18 to 29, which is not for teens.",
-  "verified_on_label": "Oct 18, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "opens_iso": "2026-12-11",
@@ -58964,10 +58970,10 @@
    "https://mcadenver.org/teens"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Meets Wednesdays 4:30 to 6:30 PM all school year. Admission to MCA Denver is free for teens. Exact 2026 to 2027 dates are not posted, so this uses the usual pattern.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "mca-denver-moxiemag",
@@ -58990,25 +58996,25 @@
   "pay_detail": "Up to $300 for the semester.",
   "season": "school-year",
   "duration": "Meets Tuesdays 4:30 to 6:30 PM, one semester",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Applications open mid-November to mid-December for spring, and May to June for fall.",
+  "deadline_text": "As of Nov 4, 2026, a banner says Spring 2027 applications are open. The same page lists the spring window as mid-November to mid-December, and May to June for fall. No exact dates are posted.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Apply through the MCA Denver teens page when the window opens. Email teens@mcadenver.org with questions.",
+  "how_to_apply": "Use the application form linked on the program page. Email teens@mcadenver.org with questions.",
   "needs_work_permit": null,
   "url": "https://mcadenver.org/teens/leadership-programs/moxie-mag",
-  "apply_url": null,
+  "apply_url": "https://mca-denver.typeform.com/to/E5A7taCQ",
   "sources_fetched": [
    "https://mcadenver.org/teens/leadership-programs/moxie-mag",
    "https://mcadenver.org/teens/leadership-programs",
    "https://mcadenver.org/teens"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Meets Tuesdays 4:30 to 6:30 PM, one semester. Admission to MCA Denver is free for teens. Exact 2026 to 2027 dates are not posted, so this uses the usual pattern.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "mca-denver-teen-artist-in-residence",
@@ -59045,10 +59051,10 @@
    "https://mcadenver.org/teens"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "The stipend covers materials, not wages. The studio is open to the public.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "mcasd-teen-art-collective",
@@ -83593,13 +83599,14 @@
   "apply_url": "https://app.betterimpact.com/PublicOrganization/a800b035-46f8-4094-b92f-86e260479b8c/1",
   "sources_fetched": [
    "https://www.ppld.org/teens/volunteer",
-   "https://www.ppld.org/Teen-Summer-Volunteer"
+   "https://www.ppld.org/Teen-Summer-Volunteer",
+   "https://app.betterimpact.com/PublicOrganization/a800b035-46f8-4094-b92f-86e260479b8c/1"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
-  "notes": "The age range 13 to 17 comes from the rule that people 13 and older apply and teens under 18 need permission. Call (719) 531-6333, ext. 6146 with questions.",
-  "verified_on_label": "Oct 10, 2026"
+  "notes": "The age range 13 to 17 comes from the rule that people 13 and older apply and teens under 18 need permission. Call (719) 531-6333, ext. 6146 with questions. The teen application page says ages 13 to 18. It also says branches it does not list are full.",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "6 to 12 (high school volunteers: grades 9 to 12 and at least 14)",
@@ -90014,28 +90021,32 @@
   "max_age": null,
   "grades": null,
   "who_can_apply": "Students in grades 6 to 12 in Northwest Colorado. Groups: Adventurers (6th and 7th), Trailblazers (8th and 9th), Outdoor Leaders (10th to 12th).",
-  "paid_type": "not-stated",
-  "pay_detail": "The page does not state pay. The Colorado Youth Corps Association lists the youth program as ages 14 to 18, so ask whether your group is paid.",
+  "paid_type": "mixed",
+  "pay_detail": "Outdoor Leaders get a $1,455.36 stipend for 4 weeks. Trailblazers is called a volunteer program. The Adventurers pages give no pay or cost.",
   "season": "summer",
-  "duration": "Two or four weeks",
-  "status": "unconfirmed",
+  "duration": "Two or four weeks, between June 6 and Aug 5, 2027",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Dates are not posted on the page.",
+  "deadline_text": "2027 dates are posted. Outdoor Leaders applications open Feb 1, 2027. Adventurers and Trailblazers registration opens Mar 1, 2027.",
   "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Contact the Youth Programs team: Kimberly Tholis (Director) or Shawn O'Kane (Manager). The page has a Reach Out link.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Outdoor Leaders fill out the form on the application page. Adventurers and Trailblazers sign up on their group pages. Questions: Kimberly Tholis (Director) or Shawn O'Kane (Manager). The page has a Reach Out link.",
   "needs_work_permit": null,
   "url": "https://www.rockymountainyouthcorps.org/programs/ycc",
-  "apply_url": null,
+  "apply_url": "https://www.rockymountainyouthcorps.org/programs/ycc/outdoorleaders/application",
   "sources_fetched": [
    "https://www.rockymountainyouthcorps.org/programs/ycc",
-   "https://www.cyca.org/youth-corps/rocky-mountain-youth-corps/"
+   "https://www.cyca.org/youth-corps/rocky-mountain-youth-corps/",
+   "https://www.rockymountainyouthcorps.org/programs/ycc/outdoorleaders",
+   "https://www.rockymountainyouthcorps.org/programs/ycc/outdoorleaders/application",
+   "https://www.rockymountainyouthcorps.org/programs/ycc/adventurers/sign-up",
+   "https://www.rockymountainyouthcorps.org/programs/ycc/trailblazers/signup"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 3,
-  "notes": "More than 200 teens join each year. Based in Steamboat Springs. Parents have a policy page.",
-  "verified_on_label": "Oct 10, 2026"
+  "notes": "More than 200 teens join each year. Based in Steamboat Springs. Parents have a policy page. The Colorado Youth Corps Association lists the youth program as ages 14 to 18. Trailblazers from outside Routt or Moffat counties must contact the team first.",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "roseville-leadership-development-program",
@@ -99895,10 +99906,10 @@
    "https://highwaterfarm.org/fall-youth-program"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Only for teens who completed the summer program.",
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "silt-highwater-farm-summer-youth-crew",
@@ -99936,10 +99947,10 @@
    "https://highwaterfarm.org/summeryouthprogram"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "notes": "Farm address: 7001 County Road 346, Silt, CO 81652. The 2027 pay rate is not posted. Page does not say which towns qualify.",
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "silver-spring-white-oak-medical-center-volunteers",
@@ -100796,10 +100807,10 @@
    "https://www.cyca.org/join-a-corps/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "The Colorado Youth Corps Association page lists other youth corps by county. They are Boulder County, Larimer County, Mile High Youth Corps and Rocky Mountain Youth Corps. The last has a youth program for ages 14 to 18 in Steamboat Springs. They also list Weld County and Western Colorado. Ask each one for the ages and dates.",
-  "verified_on_label": "Oct 10, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -108695,10 +108706,10 @@
    "https://pcssc.uccs.edu/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "notes": "Students entering grades 11 and 12 can take a dual enrollment course for 3.0 college credits at no cost, Monday to Friday afternoons 1 to 3:30 PM during June. The program has run since 1987.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -108706,7 +108717,7 @@
   "deadline_iso": null,
   "apply_url": "https://uclive.vsyslive.com/pages/UCHAPPLY",
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "id": "uchealth-hospital-volunteer-16-plus-aurora",
   "name": "UCHealth Hospital Volunteering (age 16 and up)",
@@ -108733,11 +108744,12 @@
   "how_to_apply": "Use the online application for the hospital you want. The Aurora hospital link is on the program page. Requirements differ by hospital, so check with the hospital first.",
   "url": "https://www.uchealth.org/give-to-uchealth/volunteer/",
   "priority": 2,
-  "notes": "Job shadowing at UCHealth is for ages 18 and older. The volunteer page does not list a summer teen program. Ask the hospital about other teen options.",
+  "notes": "Job shadowing at UCHealth is for ages 18 and older. The volunteer page does not list a summer teen program. Ask the hospital about other teen options. The Aurora hospital page asks for at least 100 hours. Volunteers under 18 join a junior program on weekdays only.",
   "sources_fetched": [
-   "https://www.uchealth.org/give-to-uchealth/volunteer/"
+   "https://www.uchealth.org/give-to-uchealth/volunteer/",
+   "https://uclive.vsyslive.com/pages/UCHVOLUNTEERING"
   ],
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "uci-cosmos",
@@ -116211,10 +116223,10 @@
    "https://www.jeffco.us/4148/Careers-for-Youth-and-Young-Adults"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "The page says the Governor's Summer Job Hunt is a free program for ages 14 to 24. Job Corps (ages 16 to 24) is also listed: 303-623-0420. Office: 3500 Illinois St, Suite 1600, Golden, CO.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "opens_iso": null,
