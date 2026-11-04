@@ -20,20 +20,21 @@
   "pay_detail": "Pay rate not stated on the program page. The page says you get daily pay.",
   "season": "summer",
   "duration": "Not stated on the program page",
-  "status": "rolling",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "No deadline stated on the program page. Season dates and job fair dates are not listed.",
+  "deadline_text": "No deadline stated on the program page. Season dates and job fair dates are not listed. As of Nov 4, 2026 the Lifeguard and Food and Beverage apply links say the job is no longer available, and the job portal shows only a Work Camper job.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Use the online careers portal. Send one application only, for the department you want most. A hiring manager will contact you if your application fits, so check your contact info.",
   "needs_work_permit": null,
   "url": "https://nashvilleshores.com/jobs/",
   "apply_url": "https://recruitingbypaycor.com/career/CareerHome.action?clientId=8a7883d084f5018f018517cf2b9812ad",
   "sources_fetched": [
-    "https://nashvilleshores.com/jobs/"
+    "https://nashvilleshores.com/jobs/",
+    "https://recruitingbypaycor.com/career/CareerHome.action?clientId=8a7883d084f5018f018517cf2b9812ad"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Do not apply to more than one department. Do not call to ask about status. The page does not say if a work permit is needed for teens under 18, so ask the employer."
 }
