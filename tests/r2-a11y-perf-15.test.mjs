@@ -116,8 +116,10 @@ test("find.html: a search with fewer than 60 matches leaves the note empty, and 
   const { window, document } = await loadFind();
   type(window, document.getElementById("q"), "hospital");
   await tick(SEARCH_DEBOUNCE);
-  const n = countShown(document);
   const expected = DATA.filter((e) => L.matches(e, { q: "hospital" }, Date.now())).length;
+  // A word search also reads the detail files, which can arrive after the first draw on a busy runner.
+  for (let i = 0; i < 200 && countShown(document) !== expected; i++) await tick(25);
+  const n = countShown(document);
   assert.equal(n, expected, "count should match the data");
   if (n <= PAGE_SIZE) assert.equal(cutText(document), "", "fewer than 60 matches: note should be empty");
   else assert.match(cutText(document), CUT_RE);
