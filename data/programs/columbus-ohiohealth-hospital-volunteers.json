@@ -19,11 +19,11 @@
   "pay_detail": "Unpaid. The background check, TB screening and flu shot are free for volunteers.",
   "season": "year-round",
   "duration": "Ongoing. The page does not set a number of hours.",
-  "status": "year-round",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "No deadline is posted. At Riverside Methodist, the steps from applying to starting take 6 to 8 weeks.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Pick a hospital on the OhioHealth volunteer site. Fill out the online form. Then you have a reference check, training and an orientation for new volunteers. Hospital volunteers wear a uniform.",
   "needs_work_permit": false,
   "url": "https://ohiohealth.samaritan.com/custom/501/hospital",
@@ -35,8 +35,8 @@
     "https://ohiohealth.samaritan.com/custom/501/organization_details/655",
     "https://ohiohealth.samaritan.com/custom/501/affiliation_details/20117"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 2,
-  "notes": "Hospitals on the list include Riverside Methodist, Grant, Doctors and Dublin Methodist. Others are Grove City Methodist, Pickerington Methodist, Westerville and Grady. The rest are Berger, Marion General, Mansfield, Shelby, Hardin and O'Bleness. OhioHealth also has SARNCO and HomeReach Hospice volunteers. This card does not cover them."
+  "notes": "Hospitals on the list include Riverside Methodist, Grant, Doctors and Dublin Methodist. Others are Grove City Methodist, Pickerington Methodist, Westerville and Grady. The rest are Berger, Marion General, Mansfield, Shelby, Hardin and O'Bleness. OhioHealth also has SARNCO and HomeReach Hospice volunteers. This card does not cover them. As of Nov 4, 2026, the volunteer site blocked automated reading, so confirm these details first."
 }
