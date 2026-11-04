@@ -22,20 +22,22 @@
   "season": "summer",
   "duration": "Six weeks, late June through early August, weekdays 9 a.m. to 5 p.m.",
   "status": "unconfirmed",
-  "deadline_text": "No specific deadline on the page. Students apply online during the fall semester of their junior year. No 2027 dates are posted.",
+  "deadline_text": "The application typically opens in November and closes February 1 at 11:59 p.m. Pacific. Recommenders have until February 15. The pages print no year, and 2027 program dates are not posted. The 2026 program ran June 20 to July 31, 2026.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
-  "how_to_apply": "Create a profile in the MITES application portal. MITES Summer and MITES Semester (a six-month STEM experience for rising seniors) share one application. Short-answer responses and recommendations from recent teachers are needed.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Create a profile in the MITES application portal. MITES Summer and MITES Semester (a six-month STEM experience for rising seniors) share one application. Short-answer responses and three recommendations are needed: a math or science teacher, a humanities teacher and a school counselor or administrator.",
   "needs_work_permit": false,
   "url": "https://mites.mit.edu/discover-mites/mites-summer/",
   "apply_url": "https://mites.mit.edu/discover-mites/apply-to-mites/",
   "sources_fetched": [
     "https://mites.mit.edu/",
     "https://mites.mit.edu/discover-mites/mites-summer/",
-    "https://mites.mit.edu/discover-mites/apply-to-mites/"
+    "https://mites.mit.edu/discover-mites/apply-to-mites/",
+    "https://mites.mit.edu/discover-mites/apply-to-mites/prepare-your-application-mites-summer-and-mites-semester/",
+    "https://mites.mit.edu/discover-mites/faq-for-prospective-students/faqs-mites-semester-and-mites-summer/"
   ],
   "priority": 2,
   "notes": "Competitive and focused on students from underserved or under-resourced backgrounds. Residential on campus.",
   "verified": "fetched",
-  "verified_on": "2026-10-09"
+  "verified_on": "2026-11-03"
 }
