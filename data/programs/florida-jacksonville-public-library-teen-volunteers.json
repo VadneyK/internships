@@ -14,7 +14,7 @@
   "min_age": 12,
   "max_age": 18,
   "grades": null,
-  "who_can_apply": "Teens ages 12 to 18. Everyone must pass the City background screening, which may include fingerprints. The page says there are more applicants than openings.",
+  "who_can_apply": "Teens ages 12 to 18. Teens under 16 can only join the Teen Advisory Board or volunteer in summer. Everyone must pass the City background screening, which may include fingerprints. The page says there are more applicants than openings.",
   "paid_type": "unpaid",
   "pay_detail": "Unpaid volunteer role",
   "season": "year-round",
@@ -23,15 +23,17 @@
   "deadline_text": "The page lists no deadline. It says the library gets more applicants than openings.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "Look at the openings on the volunteer page. Apply online. Staff will email you the next steps.",
+  "how_to_apply": "Look at the openings on the volunteer page. Apply online. Staff will email you the next steps. Teens must interview and turn in 2 letters of recommendation, a parent form and a notarized records form.",
   "needs_work_permit": false,
   "url": "https://jaxpubliclibrary.org/volunteer",
   "apply_url": null,
   "sources_fetched": [
-    "https://jaxpubliclibrary.org/volunteer"
+    "https://jaxpubliclibrary.org/volunteer",
+    "https://jaxpubliclibrary.org/volunteer/volunteer-teen",
+    "https://jaxpubliclibrary.org/volunteer/general-teen-volunteer"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-04",
   "priority": 2,
-  "notes": "Not everyone who applies is picked. Group volunteering: JPLVolunteers@coj.net. Teen specific openings are listed on a teen page that was not read."
+  "notes": "Not everyone who applies is picked. Group volunteering: JPLVolunteers@coj.net. Teen roles are General Teen Volunteer (16 and up), Game Master and the Teen Advisory Board at some branches."
 }
