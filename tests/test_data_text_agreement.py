@@ -54,7 +54,6 @@ ALLOW_AGES = {
 ALLOW_OPEN = {
 }
 ALLOW_OPEN_LABEL = {
-    "college-park-umd-sparc-robotics-certificate": "open-now, text says the page does not say whether applications are closed; needs a data fix",
 }
 ALLOW_SOON = {}
 ALLOW_PAY = {

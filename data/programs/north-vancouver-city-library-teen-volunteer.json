@@ -1,12 +1,12 @@
 {
   "grades": "8 to 12",
   "max_age": null,
-  "opens_iso": "2026-12-17",
+  "opens_iso": null,
   "deadline_iso": null,
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "fields": [
     "any"
@@ -26,9 +26,9 @@
   "pay_detail": "Unpaid",
   "season": "school-year",
   "duration": "Not stated",
-  "status": "opens-soon",
-  "deadline_text": "Registration for January 2027 opportunities opens Dec. 17 at 5 p.m., per the library's teen hub page (year inferred). Fall 2026 registration is closed.",
-  "deadline_confidence": "confirmed-2026-27",
+  "status": "unconfirmed",
+  "deadline_text": "The library's pages disagree. The teen hub page says registration for January 2027 opportunities opens Dec. 17 at 5 p.m. (year inferred). The teen volunteer page says to check back in January 2027 and gives no day. Fall 2026 registration is closed. Spots are first come, first served, so check both pages by Dec. 17.",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Fill in the teen volunteer form on the library page when it opens.",
   "url": "https://www.nvcl.ca/teenvolunteer2025",
   "sources_fetched": [
