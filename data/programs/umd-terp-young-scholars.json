@@ -11,18 +11,18 @@
     "any"
   ],
   "what_you_do": "You take one 3-credit University of Maryland course. It lasts three weeks in the summer. You can take it on campus or online. You learn alongside regular UMD undergraduates.",
-  "min_age": null,
+  "min_age": 13,
   "max_age": null,
   "grades": "Rising 10th grade through graduating 12th grade",
-  "who_can_apply": "Rising 10th grade through graduating 12th grade. The page does not state a minimum age or a GPA rule.",
+  "who_can_apply": "Rising 10th grade through graduating 12th grade. You must be at least 13 and have an unweighted GPA of 3.0 or better.",
   "paid_type": "fee-based",
-  "pay_detail": "2026 package fee: $1,791 campus option or $1,420 online option (3 credits, tuition and fees). Also a $75 application fee and a $275 program deposit that is credited to the bill. Partial scholarships, none above 30% of the package fee.",
+  "pay_detail": "2027 package fee: $1,860 campus option or $1,537 online option (3 credits, tuition and fees). Also an $80 application fee and a $280 program deposit that is credited to the bill. Partial scholarships, none above 30% of the package fee.",
   "season": "summer",
-  "duration": "3 weeks (Jul 13 to Jul 31 in 2026)",
+  "duration": "3 weeks (Jul 12 to Jul 30 in 2027)",
   "status": "opens-soon",
-  "deadline_text": "Applications are closed now. The page says the window opens January 6 and closes June 1 (no year printed). The 2026 program ran July 13 to 31, 2026.",
-  "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
+  "deadline_text": "Applications are closed now. The window opens Jan 12, 2027 and closes Jun 1, 2027 (the page prints no year on these two dates). The program runs Jul 12 to Jul 30, 2027.",
+  "deadline_iso": "2027-06-01",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Pick a course and choose a campus or online. Then apply online. You need a transcript, a health insurance card and a card to pay the application fee and deposit. There are no essays or recommendations.",
   "needs_work_permit": false,
   "url": "https://exst.umd.edu/pre-college-programs/terp-young-scholars",
@@ -35,8 +35,8 @@
     "https://exst.umd.edu/pre-college-programs/terp-young-scholars/apply-domestic-applicants"
   ],
   "priority": 2,
-  "notes": "Costs shown are the 2026 prices; 2027 prices are not posted. Commuter program: no campus housing except the business course BMGT262. The grade posts to a UMD college transcript. Not a job, so no work permit.",
+  "notes": "Costs shown are the 2027 prices. Commuter program: no campus housing except the business course BMGT262. The grade posts to a UMD college transcript. Not a job, so no work permit.",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "opens_iso": "2027-01-06"
+  "verified_on": "2026-11-04",
+  "opens_iso": "2027-01-12"
 }
