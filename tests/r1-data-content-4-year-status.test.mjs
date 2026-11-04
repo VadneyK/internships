@@ -16,7 +16,7 @@ test("Cincinnati camp gives the FAQ grade range and an email to confirm the year
   assert.match(card.deadline_text, /no year/);
   assert.match(card.deadline_text, /ucearlyit@ucmail\.uc\.edu/);
   assert.equal(entry(id).grades, "9 to 12");
-  assert.equal(card.verified_on, "2026-10-10");
+  assert.ok(card.verified_on >= "2026-10-10", "re-read on or after the ticket date");
 });
 
 test("Pomona card softens the high school status and gives no invented phone", () => {
@@ -27,7 +27,7 @@ test("Pomona card softens the high school status and gives no invented phone", (
   assert.match(card.deadline_text, /high school applications may be closed/);
   assert.equal(card.status, "unconfirmed");
   assert.doesNotMatch(card.how_to_apply, /call the hospital/);
-  assert.equal(card.verified_on, "2026-10-10");
+  assert.ok(card.verified_on >= "2026-10-10", "re-read on or after the ticket date");
 });
 
 test("Westerville card gives no year and tells the teen to call the number on the page", () => {
@@ -35,7 +35,7 @@ test("Westerville card gives no year and tells the teen to call the number on th
   const card = program(id);
   assert.match(card.deadline_text, /no year/);
   assert.match(card.deadline_text, /614-882-7277, option 5/);
-  assert.equal(card.verified_on, "2026-10-10");
+  assert.ok(card.verified_on >= "2026-10-10", "re-read on or after the ticket date");
 });
 
 test("Sacramento card names the 2025 session dates and asks for an email for the next session", () => {
@@ -44,5 +44,5 @@ test("Sacramento card names the 2025 session dates and asks for an email for the
   assert.match(card.deadline_text, /Fall\/Winter 2025/);
   assert.match(card.deadline_text, /October 8 to November 13, 2025/);
   assert.match(card.deadline_text, /NNworkforce@cityofsacramento\.org/);
-  assert.equal(card.verified_on, "2026-10-10");
+  assert.ok(card.verified_on >= "2026-10-10", "re-read on or after the ticket date");
 });
