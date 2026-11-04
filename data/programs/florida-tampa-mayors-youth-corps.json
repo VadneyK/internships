@@ -20,8 +20,8 @@
   "pay_detail": "Unpaid",
   "season": "school-year",
   "duration": "One year",
-  "status": "unconfirmed",
-  "deadline_text": "The page links to a Class of 2027 application but gives no open or close dates.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "Class of 2027 applications closed Oct 22, 2026 at 5 p.m. The city says forms go up on its MYC page each September. Next dates are not posted.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Fill out the online MYC form. Then take part in a review and an interview. Contact Molly Biebel, Youth Development Coordinator, (813) 459-4002.",
@@ -30,10 +30,11 @@
   "apply_url": null,
   "sources_fetched": [
     "https://www.tampa.gov/youth-corps",
+    "https://www.tampa.gov/news/2026-09/now-recruiting-mayors-youth-corps-class-2027-194756",
     "https://www.tampa.gov/sites/default/files/document/2024/website_selection_criteria_process_updated_sept_2024.pdf"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
-  "notes": "The application form page would not open for the researcher, so the deadline is not confirmed. Age is not stated; grade 9 to 11 is the rule."
+  "notes": "Age is not stated; grade 9 to 11 is the rule."
 }
