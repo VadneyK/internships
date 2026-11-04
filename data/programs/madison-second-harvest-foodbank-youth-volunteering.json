@@ -4,7 +4,7 @@
   "min_age": 12,
   "max_age": 17,
   "apply_url": null,
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-09",
   "needs_work_permit": false,
   "priority": 2,
@@ -23,16 +23,17 @@
   "deadline_text": "No deadline. Sign up for a shift.",
   "how_to_apply": "Register in the Second Harvest volunteer portal and sign up for a Food Sort/Repack shift. Bring a youth waiver signed by a parent or guardian to each shift. Questions: volunteers@secondharvestsw.org or 608-216-7214.",
   "url": "https://volunteer.secondharvestsw.org/youth-volunteering/",
-  "notes": "Groups with youth should add (YOUTH) to the group name when signing up.",
+  "notes": "The site blocked automated reading of the youth page on Nov 4, 2026, so confirm first. The main volunteer page still shows the age 12 start and the adult rule for ages 12 to 15. Groups with youth should add (YOUTH) to the group name when signing up.",
   "regions": [
     "madison"
   ],
   "city": "Madison, WI",
   "type": "volunteer",
   "paid_type": "unpaid",
-  "status": "rolling",
-  "deadline_confidence": "rolling",
+  "status": "unconfirmed",
+  "deadline_confidence": "unknown",
   "sources_fetched": [
-    "https://volunteer.secondharvestsw.org/youth-volunteering/"
+    "https://volunteer.secondharvestsw.org/youth-volunteering/",
+    "https://www.secondharvestsw.org/volunteer/"
   ]
 }
