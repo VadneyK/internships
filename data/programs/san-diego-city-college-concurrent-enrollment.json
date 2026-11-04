@@ -1,0 +1,39 @@
+{
+  "id": "san-diego-city-college-concurrent-enrollment",
+  "name": "San Diego City College Concurrent Enrollment",
+  "org": "San Diego City College",
+  "regions": [
+    "san-diego"
+  ],
+  "city": "San Diego, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take free college classes on the City College campus or online while in high school. You earn college credit. Partner high schools also offer CCAP classes at your school.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Eligible high school students with guardian and counselor approval. You must meet class prerequisites. The class cannot be one your school offers. PE classes are not allowed.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Tuition is waived if you take less than 12 units a semester.",
+  "season": "year-round",
+  "duration": "By semester",
+  "status": "opens-soon",
+  "opens_iso": "2026-12-01",
+  "deadline_text": "Registration for high school students starts Dec 1, 2026 for spring 2027. Fall 2026 started May 26, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply to City College to get a student ID. Then send the supplemental form online. It goes to your guardian and counselor to sign. Check your status in the MySDCCD portal.",
+  "needs_work_permit": false,
+  "url": "https://www.sdcity.edu/students/concurrent.aspx",
+  "apply_url": "https://www.sdccd.edu/apply/",
+  "sources_fetched": [
+    "https://www.sdcity.edu/students/concurrent.aspx",
+    "https://www.sdccd.edu/students/new-students/high-school-students.aspx"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "Keep a 2.0 GPA each semester in your college work. Grades go on your college record for good. Summer 2027 dates are not posted as of Nov 2, 2026. Questions: 619-388-3525."
+}

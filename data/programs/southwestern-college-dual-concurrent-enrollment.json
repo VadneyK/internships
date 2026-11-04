@@ -1,0 +1,38 @@
+{
+  "id": "southwestern-college-dual-concurrent-enrollment",
+  "name": "Southwestern College Dual and Concurrent Enrollment",
+  "org": "Southwestern College",
+  "regions": [
+    "san-diego"
+  ],
+  "city": "Chula Vista, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Earn college credit while in high school. CCAP classes meet at your high school. High School Special classes are at Southwestern College or online, and you pick them from the catalog.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "High school students in grades 9 to 12. CCAP is only at partner high schools, and the school picks the students. Homeschool students must show proof of their program.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Tuition is free. CCAP books and supplies are provided. High School Special students pay for their own books and supplies.",
+  "season": "year-round",
+  "duration": "By semester",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Apply for the term you want. Registration dates are on the college dates page. No single deadline is listed here.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the college application. You get an ID by email in 1 to 2 days. Then send the Dual Enrollment Form online. A parent signs it. For High School Special, your principal signs too.",
+  "needs_work_permit": false,
+  "url": "https://www.swccd.edu/admissions-and-financial-aid/information-for/high-school-students/high-school-special-program.aspx",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.swccd.edu/admissions-and-financial-aid/information-for/high-school-students/high-school-special-program.aspx"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "The limit is 15 units a term for CCAP and 11 for High School Special. If you only take High School Special, send the form each term. Classes fill first come, first served. Questions: 619-482-6482."
+}

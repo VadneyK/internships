@@ -1,0 +1,38 @@
+{
+  "id": "grossmont-college-dual-concurrent-enrollment",
+  "name": "Grossmont College Dual and Concurrent Enrollment",
+  "org": "Grossmont College",
+  "regions": [
+    "san-diego"
+  ],
+  "city": "El Cajon, CA",
+  "type": "school-pathway",
+  "fields": [
+    "any"
+  ],
+  "what_you_do": "Take college classes while in high school. Concurrent classes are on campus or online, up to 11 units (4 classes). CCAP classes meet at some high schools during the school day.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Ninth grade and up",
+  "who_can_apply": "Students now in high school, in at least 9th grade. You need high school approval and written parent approval before you apply. You can appeal if you miss a rule.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Concurrent: tuition is waived. You pay small fees and buy books. CCAP: all fees are waived and materials are provided.",
+  "season": "year-round",
+  "duration": "By semester or session",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Start at least one month before the term. No set deadline is listed.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply to Grossmont. Meet your high school counselor to pick classes. Then send the concurrent form. You need school and parent approval each term. For CCAP, ask your counselor first.",
+  "needs_work_permit": false,
+  "url": "https://www.grossmont.edu/admissions/how-to-apply/high-school-students.php",
+  "apply_url": "https://www.grossmont.edu/admissions/how-to-apply/index.php",
+  "sources_fetched": [
+    "https://www.grossmont.edu/admissions/how-to-apply/high-school-students.php"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "The college page says you must be enrolled in ninth grade. Ask if you are unsure your grade fits: Grossmont.Dual@gcccd.edu. Your grades go on a college record for life. Your high school decides if a class counts for graduation."
+}

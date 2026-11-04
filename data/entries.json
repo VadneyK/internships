@@ -20563,6 +20563,45 @@
   "verified_on_label": "Oct 9, 2026"
  },
  {
+  "id": "chula-vista-city-youth-volunteers-interns",
+  "name": "Youth Volunteer and Intern Applications",
+  "org": "City of Chula Vista",
+  "regions": [
+   "san-diego"
+  ],
+  "city": "Chula Vista, CA",
+  "type": "volunteer",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Volunteer or intern with a City of Chula Vista department. Jobs change with the time of year, the project and what each department needs. The Animal Care Facility has its own form.",
+  "min_age": 15,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "You must be at least 15 and a half and under 18. If you are 18 or older, use the adult form.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer. The page does not list pay for internships.",
+  "season": "year-round",
+  "duration": "Depends on the department",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline. Departments read forms when they need help. The city keeps your form for six months.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the general youth form and name the department you want. The Animal Care Facility and library use their own forms. Send only one form in six months.",
+  "needs_work_permit": null,
+  "url": "https://www.chulavistaca.gov/departments/human-resources/youth-volunteer",
+  "apply_url": "https://www.volgistics.com/appform/1634224221",
+  "sources_fetched": [
+   "https://www.chulavistaca.gov/departments/human-resources/youth-volunteer"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "Sending a form does not promise you a spot. If you get no spot in six months, you must apply again. Some park and recreation roles also need a background check and a short form about past crimes.",
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
   "grades": null,
   "max_age": 17,
   "apply_url": "https://www.volgistics.com/appform/1511109179",
@@ -38669,6 +38708,45 @@
   "limited": true
  },
  {
+  "id": "grossmont-college-dual-concurrent-enrollment",
+  "name": "Grossmont College Dual and Concurrent Enrollment",
+  "org": "Grossmont College",
+  "regions": [
+   "san-diego"
+  ],
+  "city": "El Cajon, CA",
+  "type": "school-pathway",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Take college classes while in high school. Concurrent classes are on campus or online, up to 11 units (4 classes). CCAP classes meet at some high schools during the school day.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Ninth grade and up",
+  "who_can_apply": "Students now in high school, in at least 9th grade. You need high school approval and written parent approval before you apply. You can appeal if you miss a rule.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Concurrent: tuition is waived. You pay small fees and buy books. CCAP: all fees are waived and materials are provided.",
+  "season": "year-round",
+  "duration": "By semester or session",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Start at least one month before the term. No set deadline is listed.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply to Grossmont. Meet your high school counselor to pick classes. Then send the concurrent form. You need school and parent approval each term. For CCAP, ask your counselor first.",
+  "needs_work_permit": false,
+  "url": "https://www.grossmont.edu/admissions/how-to-apply/high-school-students.php",
+  "apply_url": "https://www.grossmont.edu/admissions/how-to-apply/index.php",
+  "sources_fetched": [
+   "https://www.grossmont.edu/admissions/how-to-apply/high-school-students.php"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "The college page says you must be enrolled in ninth grade. Ask if you are unsure your grade fits: Grossmont.Dual@gcccd.edu. Your grades go on a college record for life. Your high school decides if a class counts for graduation.",
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
   "id": "groundwork-denver-green-teams",
   "name": "Groundwork Denver Green Teams",
   "org": "Groundwork Denver",
@@ -47275,6 +47353,50 @@
   "verified_on": "2026-11-02",
   "priority": 2,
   "notes": "This date is from last year. Next year's date is not posted yet. You must go to meetings and can miss no more than two. You must also go to one City Council or Commission meeting. Members are honored at a City Council meeting in June.",
+  "verified_on_label": "Nov 2, 2026",
+  "limited": true
+ },
+ {
+  "id": "la-mesa-youth-advisory-commission",
+  "name": "Youth Advisory Commission",
+  "org": "City of La Mesa",
+  "regions": [
+   "san-diego"
+  ],
+  "city": "La Mesa, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Advise the City Council on issues that matter to youth. You also plan activities that build good youth relations in La Mesa.",
+  "min_age": 13,
+  "max_age": 20,
+  "grades": null,
+  "who_can_apply": "Ages 13 to 20 when you are appointed. You must live in La Mesa or go to school there. A class like karate or ballet does not count as school.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid",
+  "season": "year-round",
+  "duration": "2 year term. This open seat ends Sept 30, 2027.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "A notice posted Oct 14, 2026 lists one alternate seat, open until filled. The yearly recruitment is in September and October.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the city application. Email it to cityclrk@cityoflamesa.gov or bring it to City Hall, 8130 Allison Avenue. You then interview with the City Council.",
+  "needs_work_permit": false,
+  "url": "https://www.cityoflamesa.gov/271/Youth-Advisory-Commission",
+  "apply_url": "https://www.cityoflamesa.gov/DocumentCenter/View/23273/2026-Board-and-Commission-Application_Fillable",
+  "sources_fetched": [
+   "https://www.cityoflamesa.gov/271/Youth-Advisory-Commission",
+   "https://www.cityoflamesa.gov/250/Boards-Commissions",
+   "https://www.cityoflamesa.gov/DocumentCenter/View/27337/Notice-of-Vacancy_Youth-Advisory-Commission_October",
+   "https://www.cityoflamesa.gov/DocumentCenter/Index/50"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "An alternate goes to meetings and votes only when a member is away. Meetings are the second Monday of the month at 4:30 PM at the Community Center. Questions: Isabel Armenta, 619-667-1307.",
   "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
@@ -61669,6 +61791,86 @@
   "verified_on": "2026-10-09",
   "apply_url": null,
   "verified_on_label": "Oct 9, 2026"
+ },
+ {
+  "id": "miracosta-college-concurrent-enrollment",
+  "name": "MiraCosta College Concurrent Enrollment",
+  "org": "MiraCosta College",
+  "regions": [
+   "san-diego"
+  ],
+  "city": "Oceanside, CA",
+  "type": "school-pathway",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Take free college classes while in high school. Classes are at the Oceanside, San Elijo or CLC campus, online or hybrid. You can take up to 11 units in fall or spring and 8 in summer.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Finished 8th grade, or age 15",
+  "who_can_apply": "High school students who finished 8th grade or are 15. You need permission from your high school and a parent. You must meet the class prerequisites.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Tuition is free. You buy your books and materials. There is a $2 fee you can opt out of.",
+  "season": "year-round",
+  "duration": "By term",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No single deadline is listed. A new Early College Credit form starts Nov 6, 2026. Class dates are on the college dates page.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Talk to your counselor first. Apply online. Set up your SURF account. Send the Early College Credit form. Do the survey in SURF each term, then register on your assigned date.",
+  "needs_work_permit": false,
+  "url": "https://www.miracosta.edu/admissions-and-aid/high-school-students/concurrent-enrollment/index.html",
+  "apply_url": "https://miracosta.tfaforms.net/217778",
+  "sources_fetched": [
+   "https://www.miracosta.edu/admissions-and-aid/high-school-students/concurrent-enrollment/index.html",
+   "https://www.miracosta.edu/admissions-and-aid/high-school-students/index.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "Wait until Nov 6, 2026 for the new form. Ask if your high school has its own permission form too. Private and home school students may need to send an affidavit to dualenroll@miracosta.edu.",
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
+  "id": "miracosta-college-dual-enrollment",
+  "name": "MiraCosta College Dual Enrollment",
+  "org": "MiraCosta College",
+  "regions": [
+   "san-diego"
+  ],
+  "city": "Oceanside, CA",
+  "type": "school-pathway",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Take free college classes at your high school or online, before, during or after school. You earn both high school and college credit.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Finished 8th grade, or age 15",
+  "who_can_apply": "Students at partner schools in the Oceanside, San Dieguito and Carlsbad districts, plus Cathedral Catholic. You must have finished 8th grade or be 15. You need school and parent permission.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Free. Your high school covers books and materials.",
+  "season": "year-round",
+  "duration": "By term. Up to 11 units in fall or spring and 8 in summer. Oceanside Unified: up to 15 and 9.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Interest forms are for the upcoming term. No single deadline is listed.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Talk to your counselor. Fill out the interest form for your school. Then apply to MiraCosta and set up your SURF account. Questions: dualenroll@miracosta.edu.",
+  "needs_work_permit": false,
+  "url": "https://www.miracosta.edu/admissions-and-aid/high-school-students/dual-enrollment/index.html",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.miracosta.edu/admissions-and-aid/high-school-students/dual-enrollment/index.html",
+   "https://www.miracosta.edu/admissions-and-aid/high-school-students/index.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "If your school is not a partner, look at MiraCosta concurrent enrollment instead. You can ask for 10 high school credits for a 3 unit class. Parents cannot see your college records.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "mission-college-high-school-dual-enrollment",
@@ -89663,6 +89865,47 @@
   "verified_on_label": "Nov 2, 2026"
  },
  {
+  "id": "san-diego-air-space-museum-teen-volunteers",
+  "name": "Museum Volunteers and Student Internships",
+  "org": "San Diego Air & Space Museum",
+  "regions": [
+   "san-diego"
+  ],
+  "city": "San Diego, CA",
+  "type": "volunteer",
+  "fields": [
+   "engineering",
+   "science",
+   "education"
+  ],
+  "what_you_do": "Help with museum classes and outreach. Or work in restoration, the library, graphics or exhibits. If you need school credit, you can intern in the library, graphics or restoration.",
+  "min_age": 14,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "You must be 16 for most roles. The Education team takes ages 14 and up. Docent and Collections Care roles need age 18. Internships are only for students who need school credit.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid. Internships may earn school credit, based on your school's rules.",
+  "season": "year-round",
+  "duration": "Not listed",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline is listed. The museum takes volunteer forms on its page.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the Minor Volunteer form online. Want an internship? Do the form, then ask your school to contact the museum for you.",
+  "needs_work_permit": false,
+  "url": "https://sandiegoairandspace.org/support/volunteer-at-the-museum",
+  "apply_url": "https://sandiegoairandspace.org/support/minor-volunteer-application",
+  "sources_fetched": [
+   "https://sandiegoairandspace.org/support/volunteer-at-the-museum"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "Most roles are on weekdays, so check your school schedule. The Education team strongly prefers people with teaching or aviation training and a background check. Many other roles want shop or design skills. Museum phone: 619-234-8291.",
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
   "grades": null,
   "max_age": null,
   "apply_url": "https://www.volgistics.com/appform/1966271545",
@@ -89739,6 +89982,46 @@
   "sources_fetched": [
    "https://www.nps.gov/cabr/getinvolved/volunteer.htm"
   ],
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
+  "id": "san-diego-city-college-concurrent-enrollment",
+  "name": "San Diego City College Concurrent Enrollment",
+  "org": "San Diego City College",
+  "regions": [
+   "san-diego"
+  ],
+  "city": "San Diego, CA",
+  "type": "school-pathway",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Take free college classes on the City College campus or online while in high school. You earn college credit. Partner high schools also offer CCAP classes at your school.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Eligible high school students with guardian and counselor approval. You must meet class prerequisites. The class cannot be one your school offers. PE classes are not allowed.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Tuition is waived if you take less than 12 units a semester.",
+  "season": "year-round",
+  "duration": "By semester",
+  "status": "opens-soon",
+  "opens_iso": "2026-12-01",
+  "deadline_text": "Registration for high school students starts Dec 1, 2026 for spring 2027. Fall 2026 started May 26, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply to City College to get a student ID. Then send the supplemental form online. It goes to your guardian and counselor to sign. Check your status in the MySDCCD portal.",
+  "needs_work_permit": false,
+  "url": "https://www.sdcity.edu/students/concurrent.aspx",
+  "apply_url": "https://www.sdccd.edu/apply/",
+  "sources_fetched": [
+   "https://www.sdcity.edu/students/concurrent.aspx",
+   "https://www.sdccd.edu/students/new-students/high-school-students.aspx"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "Keep a 2.0 GPA each semester in your college work. Grades go on your college record for good. Summer 2027 dates are not posted as of Nov 2, 2026. Questions: 619-388-3525.",
   "verified_on_label": "Nov 2, 2026"
  },
  {
@@ -90256,6 +90539,46 @@
   "sources_fetched": [
    "https://lajollaplayhouse.org/learningandengagement/teen-council/"
   ],
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
+  "id": "san-diego-mesa-college-concurrent-enrollment",
+  "name": "San Diego Mesa College High School Concurrent Enrollment",
+  "org": "San Diego Mesa College",
+  "regions": [
+   "san-diego"
+  ],
+  "city": "San Diego, CA",
+  "type": "school-pathway",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Take college classes at Mesa College while in high school and earn credit toward a degree or transfer. Partner high schools also offer CCAP classes on their own campus.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Eligible high school students. Your high school must approve your form. You must clear class prerequisites. Exercise Science classes are not allowed.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Enrollment fees are waived under 12 units. You pay $25 in health and student fees each semester, and buy books and any parking permit.",
+  "season": "year-round",
+  "duration": "By semester",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Send a new form each term. The page lists no date. Check the Mesa academic deadlines page for the term you want.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply online to get a student ID. Send the supplemental form each term with the classes you want. Your school approves it, then staff enroll you if there is space.",
+  "needs_work_permit": false,
+  "url": "https://www.sdmesa.edu/student-support/admissions/high-school-student.shtml",
+  "apply_url": "https://www.sdmesa.edu/student-support/admissions/get-started-at-mesa.shtml",
+  "sources_fetched": [
+   "https://www.sdmesa.edu/student-support/admissions/high-school-student.shtml",
+   "https://www.sdccd.edu/students/new-students/high-school-students.aspx"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "Keep a 2.0 GPA each semester. If you get a W, I, NP or failing grade, see your counselor before you sign up again. For CCAP, start with your high school counselor. Mesa Admissions: 619-388-2682.",
   "verified_on_label": "Nov 2, 2026"
  },
  {
@@ -97990,6 +98313,45 @@
   "notes": "The Colorado Youth Corps Association page lists other youth corps by county. They are Boulder County, Larimer County, Mile High Youth Corps and Rocky Mountain Youth Corps. The last has a youth program for ages 14 to 18 in Steamboat Springs. They also list Weld County and Western Colorado. Ask each one for the ages and dates.",
   "verified_on_label": "Oct 10, 2026",
   "limited": true
+ },
+ {
+  "id": "southwestern-college-dual-concurrent-enrollment",
+  "name": "Southwestern College Dual and Concurrent Enrollment",
+  "org": "Southwestern College",
+  "regions": [
+   "san-diego"
+  ],
+  "city": "Chula Vista, CA",
+  "type": "school-pathway",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Earn college credit while in high school. CCAP classes meet at your high school. High School Special classes are at Southwestern College or online, and you pick them from the catalog.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "High school students in grades 9 to 12. CCAP is only at partner high schools, and the school picks the students. Homeschool students must show proof of their program.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Tuition is free. CCAP books and supplies are provided. High School Special students pay for their own books and supplies.",
+  "season": "year-round",
+  "duration": "By semester",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Apply for the term you want. Registration dates are on the college dates page. No single deadline is listed here.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the college application. You get an ID by email in 1 to 2 days. Then send the Dual Enrollment Form online. A parent signs it. For High School Special, your principal signs too.",
+  "needs_work_permit": false,
+  "url": "https://www.swccd.edu/admissions-and-financial-aid/information-for/high-school-students/high-school-special-program.aspx",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.swccd.edu/admissions-and-financial-aid/information-for/high-school-students/high-school-special-program.aspx"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "The limit is 15 units a term for CCAP and 11 for High School Special. If you only take High School Special, send the form each term. Classes fill first come, first served. Questions: 619-482-6482.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "spelman-college-prep-institute",
