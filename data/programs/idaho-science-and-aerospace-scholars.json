@@ -20,20 +20,21 @@
   "pay_detail": "Cost is not stated on the program page. Students may earn one science credit.",
   "season": "school-year",
   "duration": "Online course during the school year. Summer academy is one week for chosen students.",
-  "status": "open-now",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "The 2026-2027 application is open. A closing date is not stated on the program page.",
+  "deadline_text": "The program page still shows the 2026-2027 application as open. The application link says the registration deadline has passed. A closing date is not stated.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Fill out the 2026-2027 ISAS application online. If you are not a junior yet, join the email list on the program page. Questions: isas@sde.idaho.gov.",
+  "how_to_apply": "The 2026-2027 application link says the deadline has passed. Email isas@sde.idaho.gov to ask if you can still apply. If you are not a junior yet, join the email list on the program page.",
   "needs_work_permit": false,
   "url": "https://www.sde.idaho.gov/about-us/departments/content-and-curriculum/idaho-science-and-aerospace-scholars/",
   "apply_url": "https://futurevandals.uidaho.edu/register/isas26",
   "sources_fetched": [
-    "https://www.sde.idaho.gov/about-us/departments/content-and-curriculum/idaho-science-and-aerospace-scholars/"
+    "https://www.sde.idaho.gov/about-us/departments/content-and-curriculum/idaho-science-and-aerospace-scholars/",
+    "https://futurevandals.uidaho.edu/register/isas26"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "notes": "The program is competitive. Summer academy dates and cost are not stated on the program page. Program contact is Erin Lanigan at 208-885-1232."
 }
