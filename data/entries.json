@@ -15243,9 +15243,9 @@
  },
  {
   "grades": "Rising grades 10 to 12",
-  "apply_url": null,
+  "apply_url": "https://app.enrollsy.com/browse/columbus-college-of-art-and-design?lId=ckrksy55d1pow08808wv9shhq&pyId=cmv18n9y423842690ud9jct6v&poiIds=cmv18n9y423862690uo7awqmr",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "ccad-college-preview",
   "name": "College Preview (pre-college art and design program)",
   "org": "Columbus College of Art & Design (CCAD)",
@@ -15262,22 +15262,22 @@
   "max_age": null,
   "who_can_apply": "Rising high school sophomores, juniors and seniors (grades 10 to 12) interested in art and design.",
   "paid_type": "fee-based",
-  "pay_detail": "Commuter $3,000 total ($2,750 tuition and fees plus a $250 registration fee). Residential $3,600 total (adds $600 room and board). Scholarships available.",
+  "pay_detail": "Commuter $3,000 total. Residential $3,600 total (adds $600 room and board). A $250 deposit is due when you register. Scholarships available.",
   "season": "summer",
-  "duration": "2 weeks (2026: July 12 to 25)",
-  "status": "closed-expect-reopen",
-  "deadline_text": "2026 session: registration opened Nov 3, 2025, scholarship applications closed April 27, 2026, registration closed May 11, 2026. 2027 dates are not posted.",
-  "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Register online and pay the $250 registration fee. Scholarship applicants submit a form, a 300 to 500 word personal statement, three artwork samples and a NACAC fee waiver.",
+  "duration": "2 weeks in summer 2027. The page text does not list the session dates.",
+  "status": "open-now",
+  "deadline_text": "Registration is open for summer 2027 and closes May 10, 2027. Registering by Feb 15, 2027 waives the $250 deposit. Scholarship applications run Nov 3, 2026 to April 27, 2027.",
+  "deadline_iso": "2027-05-10",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Register online and pay the $250 deposit. Scholarship applicants submit a form, a 300 to 500 word personal statement, three artwork samples and a NACAC fee waiver.",
   "needs_work_permit": false,
   "url": "https://www.ccad.edu/academics/college-preview",
   "sources_fetched": [
    "https://www.ccad.edu/academics/college-preview"
   ],
   "priority": 2,
-  "notes": "Fees shown are the 2026 prices. Meals are included on weekdays. Refunds: tuition balance less the registration fee is refunded in full if withdrawn by June 15, 2026 and half by June 29, 2026.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "Fees shown are the 2027 prices. Meals are included on weekdays. Refunds: tuition balance less the registration fee is refunded in full if withdrawn by June 14, 2027 and half by June 28, 2027.",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "cccoe-wioa-in-school-youth",
@@ -24190,7 +24190,7 @@
   "duration": null,
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "needs_work_permit": false,
   "notes": "The page says the library is postponing adult volunteering for now. Call the youth department with questions.",
@@ -24218,7 +24218,7 @@
   "sources_fetched": [
    "https://www.bexleylibrary.org/volunteer"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "8 to 12",
@@ -24227,7 +24227,7 @@
   "deadline_iso": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Time can count toward the community service hours you need to graduate. Ask the foundation if seats are open for 2026-2027. Email youthcouncil@cmafohio.org or call 614-240-7410.",
   "id": "columbus-cmaf-youth-advisory-council",
@@ -24259,7 +24259,7 @@
    "https://cmafohio.org/joinyac",
    "https://cmafohio.org/yac"
   ],
-  "verified_on_label": "Oct 10, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -24271,7 +24271,7 @@
   "duration": "Semester courses",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "needs_work_permit": false,
   "notes": "The college application asks you to have your Social Security number ready. Use a personal email, not a school email. Send your unofficial high school transcripts or ACT/SAT scores to your CCP advisor.",
@@ -24301,7 +24301,7 @@
    "https://www.cscc.edu/academics/college-credit-plus/ccp-Admissions.shtml",
    "https://www.cscc.edu/academics/college-credit-plus/parents.shtml"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -24310,7 +24310,7 @@
   "deadline_iso": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "notes": "Check the partner pages in winter. The county page says nothing about work permits. Nationwide Children's and Columbus Urban League already have their own cards in this guide. Godman Guild and Lead the Way phone numbers are on the county page: 614-294-5476 and 614-915-0434.",
   "id": "columbus-franklin-county-ready-2-earn",
@@ -24340,7 +24340,7 @@
   "sources_fetched": [
    "https://franklincountyohio.gov/Resident-Services/Youths/Summer-Programs"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "9 to 12",
@@ -24349,9 +24349,9 @@
   "deadline_iso": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
-  "notes": "Events listed: Entrepreneur Night Nov 18, Community Service Dec 3, Resume Building Jan 27, Public Speaking Feb 24, Money Skills Apr 7, Showcase May 6. Phone 614-294-5476. The Godman Guild site has an older Ready 2 Earn link that gives a 404. Use the teen page.",
+  "notes": "Events listed: Entrepreneur Night Nov 17, Community Service Dec 3, Resume Building Jan 27, Public Speaking Feb 24, Money Skills Apr 7, Showcase May 6. Phone 614-294-5476. The Godman Guild site has an older Ready 2 Earn link that gives a 404. Use the teen page.",
   "id": "columbus-godman-guild-youth-workforce",
   "name": "Godman Guild Youth and Young Adult Workforce Program",
   "org": "Godman Guild Association",
@@ -24372,7 +24372,7 @@
   "season": "year-round",
   "duration": "Monthly sessions Nov 2026 to May 2027. Summer 2026 Ready 2 Earn ran 5 weeks and 60 hours.",
   "status": "unconfirmed",
-  "deadline_text": "The page has a Youth and Young Adult Workforce Program interest form but does not say whether it is open now or has a deadline. Monthly events run from Nov 18, 2026 to May 6, 2027. Summer 2027 dates are not posted.",
+  "deadline_text": "The page has a Youth and Young Adult Workforce Program interest form but does not say whether it is open now or has a deadline. Monthly events run from Nov 17, 2026 to May 6, 2027. Summer 2027 dates are not posted.",
   "deadline_confidence": "unknown",
   "how_to_apply": "Fill out the Youth and Young Adult Workforce Program interest form on the Godman Guild page.",
   "url": "https://www.godmanguild.org/teen/",
@@ -24381,7 +24381,7 @@
    "https://www.godmanguild.org/workforce-development/",
    "https://franklincountyohio.gov/Resident-Services/Youths/Summer-Programs"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -24392,10 +24392,10 @@
   "duration": "4 hours a month minimum",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "needs_work_permit": false,
-  "notes": "The FAQ lists a junior option for ages 12 to 15. It needs an adult volunteer partner over 21. Email volunteer@columbushumane.org with questions.",
+  "notes": "The FAQ hopes to take juniors again soon, but the volunteer page still lists them. Email volunteer@columbushumane.org first.",
   "id": "columbus-humane-teen-volunteers",
   "name": "Volunteer Program (teen volunteers ages 16 and 17)",
   "org": "Columbus Humane",
@@ -24409,7 +24409,7 @@
    "social-impact"
   ],
   "what_you_do": "Help care for shelter animals or help with non-animal tasks after training. Volunteers commit to at least 4 hours a month.",
-  "who_can_apply": "Teens 16 and 17 can volunteer on their own. A guardian must sign a Junior and Teen Volunteer Waiver and Release. Ages 12 to 15 can join only as junior volunteers, with an adult volunteer partner over the age of 21.",
+  "who_can_apply": "Teens 16 and 17 can volunteer on their own. A guardian must sign a Junior and Teen Volunteer Waiver and Release. Ages 12 to 15 can join only as junior volunteers, with an adult volunteer partner over the age of 21. The FAQ says only ages 16 and up for now.",
   "paid_type": "unpaid",
   "season": "year-round",
   "status": "unconfirmed",
@@ -24421,12 +24421,12 @@
    "https://columbushumane.org/volunteer",
    "https://www.columbushumane.org/volunteer-faqs"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "In or entering grades 6 to 12",
   "apply_url": null,
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-09",
   "id": "columbus-library-summer-reading-volunteen",
   "name": "Summer Reading Challenge VolunTeen",
@@ -24447,7 +24447,7 @@
   "pay_detail": "Unpaid volunteer",
   "season": "summer",
   "duration": "June 1 to July 31 (2026 dates)",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "deadline_text": "2026: application opened April 13 at 3 p.m. and the program ran June 1 to July 31. 2027 dates are not posted. The library's regular volunteer application for Fall 2026 opened August 10.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
@@ -24458,14 +24458,14 @@
    "https://www.columbuslibrary.org/volunteer"
   ],
   "priority": 1,
-  "notes": "Openings vary by branch. Current or recent youth volunteers should talk to the Summer Reading coordinator at their branch. The library also has School Help, Reading Buddies and Creation Station volunteer roles; the page lists the age rule only for the summer VolunTeen role. Ohio's work permit rules for unpaid public library volunteering are not stated on the page.",
+  "notes": "Openings vary by branch. Current or recent youth volunteers should talk to the Summer Reading coordinator at their branch. The library also has School Help, Reading Buddies and Creation Station volunteer roles; the page lists the age rule only for the summer VolunTeen role. Ohio's work permit rules for unpaid public library volunteering are not stated on the page. As of Nov 4, 2026, the library site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 9, 2026"
  },
  {
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "columbus-metro-parks-volunteer",
   "name": "Metro Parks Volunteer Program (Junior Volunteers at Inniswood)",
   "org": "Metro Parks (Central Ohio Park System)",
@@ -24497,7 +24497,7 @@
   ],
   "priority": 2,
   "notes": "Slate Run Living Historical Farm lets children volunteer with a parent or supervising adult. Scouts can set up group service days by email. For Inniswood contact the volunteer coordinator at 614-895-6226.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -24508,7 +24508,7 @@
   "duration": null,
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "needs_work_permit": false,
   "notes": "Sort and pack is in Grove City (3960 Brookham Drive). Other sites have no address on the page. Call 614-277-3663 with questions.",
@@ -24536,7 +24536,7 @@
   "sources_fetched": [
    "https://www.mofc.org/volunteer"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -24545,7 +24545,7 @@
   "deadline_iso": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Sites listed: Mount Carmel Dublin, East, Grove City, St. Ann's and New Albany. Phones: East 614-234-6658, Grove City 614-663-6700, St. Ann's 380-898-4097, New Albany 614-663-6334. Completing the application does not guarantee a spot.",
   "id": "columbus-mount-carmel-health-teen-volunteers",
@@ -24575,7 +24575,7 @@
   "sources_fetched": [
    "https://www.mountcarmelhealth.com/for-patients/after-your-visit/volunteer"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -24584,7 +24584,7 @@
   "deadline_iso": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Meetings are at CMA Short North, CMA at The Pizzuti and the Broad Street location (480 East Broad Street). Ages are not stated, so confirm with the museum before you plan on it.",
   "id": "columbus-museum-of-art-cma-next",
@@ -24615,7 +24615,7 @@
    "https://www.columbusmuseum.org/cma-next",
    "https://www.columbusmuseum.org/teens-at-cma"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -24624,7 +24624,7 @@
   "deadline_iso": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "Teens 13 and older can also visit the museum on their own at any time, per the page.",
   "id": "columbus-museum-of-art-teen-studio",
@@ -24654,7 +24654,7 @@
   "sources_fetched": [
    "https://www.columbusmuseum.org/teens-at-cma"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "High school",
@@ -24662,13 +24662,14 @@
   "min_age": 15,
   "max_age": null,
   "pay_detail": "Unpaid volunteer",
-  "duration": "10 weeks, June to mid-August, one 2 to 3 hour shift a week",
-  "deadline_iso": null,
+  "duration": "May 30 to Aug 14, 2027 (the page says both 10 and 11 weeks), one 3 to 4 hour shift a week",
+  "deadline_iso": "2027-02-02",
+  "opens_iso": "2027-02-01",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "needs_work_permit": false,
-  "notes": "You can miss no more than 2 shifts. You need to be there 80 percent of the time. Contact Family and Volunteer Services at 614-722-3635 or Volunteering@NationwideChildrens.org. The page has no direct application link.",
+  "notes": "You can miss up to 2 shifts. Call 614-722-3635 or email Volunteering@NationwideChildrens.org. The page has no direct apply link.",
   "id": "columbus-nationwide-childrens-teen-volunteers",
   "name": "Teen Volunteering at Nationwide Children's Hospital (summer)",
   "org": "Nationwide Children's Hospital",
@@ -24680,19 +24681,19 @@
   "fields": [
    "health"
   ],
-  "what_you_do": "Help families, patients and staff under supervision at the hospital. You keep one weekly 2 to 3 hour shift from June to mid-August and can move into new assignments if you do well.",
+  "what_you_do": "Help families, patients and staff under supervision at the hospital. You keep one weekly 3 to 4 hour shift from May 30 to Aug 14, 2027 and can move into new assignments if you do well.",
   "who_can_apply": "Teens who are 15 by June 1 and currently in high school. Competitive, with limited spots.",
   "paid_type": "unpaid",
   "season": "summer",
-  "status": "closed-expect-reopen",
-  "deadline_text": "The 2026 application opened February 2, 2026 and has reached capacity. 2027 dates are not posted.",
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Fill out the online application. Get references who are not family to fill out an electronic form. Go to a group interview. Sign a commitment form. Send your shot record, including flu. No waivers are allowed. Then finish an online orientation and training for your job.",
+  "status": "opens-soon",
+  "deadline_text": "Summer 2027 applications open Feb 1, 2027 at 5 p.m. and close Feb 2, 2027 at 5 p.m. The window lasts only 24 hours.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the online application. Get references who are not family to fill out an electronic form. Go to a group interview. Sign a commitment form. Get a TB test and send your shot records (flu, MMR, Tdap, chickenpox). Then finish an online orientation, a welcome visit and training for your job.",
   "url": "https://www.nationwidechildrens.org/giving/get-involved/volunteering/teen-volunteers",
   "sources_fetched": [
    "https://www.nationwidechildrens.org/giving/get-involved/volunteering/teen-volunteers"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "columbus-ohiohealth-hospital-volunteers",
@@ -24715,11 +24716,11 @@
   "pay_detail": "Unpaid. The background check, TB screening and flu shot are free for volunteers.",
   "season": "year-round",
   "duration": "Ongoing. The page does not set a number of hours.",
-  "status": "year-round",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "No deadline is posted. At Riverside Methodist, the steps from applying to starting take 6 to 8 weeks.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Pick a hospital on the OhioHealth volunteer site. Fill out the online form. Then you have a reference check, training and an orientation for new volunteers. Hospital volunteers wear a uniform.",
   "needs_work_permit": false,
   "url": "https://ohiohealth.samaritan.com/custom/501/hospital",
@@ -24731,10 +24732,10 @@
    "https://ohiohealth.samaritan.com/custom/501/organization_details/655",
    "https://ohiohealth.samaritan.com/custom/501/affiliation_details/20117"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 2,
-  "notes": "Hospitals on the list include Riverside Methodist, Grant, Doctors and Dublin Methodist. Others are Grove City Methodist, Pickerington Methodist, Westerville and Grady. The rest are Berger, Marion General, Mansfield, Shelby, Hardin and O'Bleness. OhioHealth also has SARNCO and HomeReach Hospice volunteers. This card does not cover them.",
+  "notes": "Hospitals on the list include Riverside Methodist, Grant, Doctors and Dublin Methodist. Others are Grove City Methodist, Pickerington Methodist, Westerville and Grady. The rest are Berger, Marion General, Mansfield, Shelby, Hardin and O'Bleness. OhioHealth also has SARNCO and HomeReach Hospice volunteers. This card does not cover them. As of Nov 4, 2026, the volunteer site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 19, 2026"
  },
  {
@@ -24744,7 +24745,7 @@
   "deadline_iso": "2027-04-01",
   "opens_iso": "2027-01-15",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Two phone numbers show on OSC pages, so email is safer. The page says OSC pays much of the cost. It says there are no one-on-one scholarships. The program used to be called the Summer Institute.",
   "id": "columbus-osc-stem-institute",
@@ -24778,7 +24779,7 @@
    "https://www.osc.edu/education/si",
    "https://www.osc.edu/education/si/faqs"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Entering 10 to 12 for high school courses (7 to 9 for middle school courses)",
@@ -24787,7 +24788,7 @@
   "deadline_iso": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "Questions: ExploreASC@osu.edu or 614-292-6390. The page says some need-based aid may be available. Ask for it on the program application. Other department camps are on the department summer page. They cover philosophy, language science, humanities and mind science.",
   "id": "columbus-osu-arts-sciences-summer-exploration",
@@ -24820,7 +24821,7 @@
    "https://artsandsciences.osu.edu/future-students/arts-and-sciences-summer-exploration-program",
    "https://artsandsciences.osu.edu/future-students/arts-and-sciences-summer-exploration-program/department-summer-programming"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -24831,7 +24832,7 @@
   "duration": "3 days, 8 a.m. to 5 p.m.",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "needs_work_permit": false,
   "notes": "Free and short, so a good first health-career step. Watch the page for 2027 dates.",
@@ -24858,7 +24859,7 @@
   "sources_fetched": [
    "https://hrs.osu.edu/about-us/diversity-equity-and-inclusion/hrs-camp"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Entering grades 10, 11 or 12",
@@ -24869,7 +24870,7 @@
   "duration": "1 week, 9 a.m. to 3 p.m.",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "needs_work_permit": false,
   "notes": "The page has a few date mix-ups (one spot says 2025), so confirm the 2027 dates and cost with ccbs@osu.edu.",
@@ -24897,7 +24898,7 @@
   "sources_fetched": [
    "https://cog.osu.edu/programs/humcog"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Rising 10th, 11th and 12th graders",
@@ -24908,7 +24909,7 @@
   "duration": "3 weeks, weekdays 8 a.m. to 4:30 p.m.",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "needs_work_permit": false,
   "notes": "You must find your own housing and rides. The page only covers 2026, so watch for the 2027 posting.",
@@ -24936,7 +24937,7 @@
   "sources_fetched": [
    "https://medicine.osu.edu/diversity/initiatives/md-camp"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "columbus-osu-wexner-k12-career-exploration",
@@ -24951,7 +24952,7 @@
    "health",
    "science"
   ],
-  "what_you_do": "Your school can ask for health care career visits. Staff can come to class, talk by phone, or host a field trip. Some schools can also set up job shadow days and internships in fields like nursing and lab work.",
+  "what_you_do": "Your school can ask for health care career visits. Staff can come to class or talk by phone. Schools with a Workforce Partnerships agreement can also set up field trips, job shadow days and internships in fields like nursing and lab work.",
   "min_age": null,
   "max_age": null,
   "grades": "K-12",
@@ -24973,10 +24974,10 @@
    "https://careers.wexnermedical.osu.edu/career-areas/exploration-for-schools"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-17",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "You must be 18 to volunteer at this hospital. So for teens, this school route is the way in. Internships can be in nursing, imaging, lab work, rehab, sports medicine and research.",
-  "verified_on_label": "Oct 17, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Apply in 8th grade",
@@ -24985,7 +24986,7 @@
   "deadline_iso": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Only 8th graders can start. The page says there are no costs for the pre-college portion.Other districts on the list: Akron, Canton, Cleveland, Dayton, Lorain, Toledo and Youngstown. Check the page for the income table and the current deadline.",
   "id": "columbus-osu-young-scholars-program",
@@ -25003,7 +25004,7 @@
   "what_you_do": "You get college advice, coaching, mentors and campus visits from 8th grade through high school. Students who finish in good standing get an Ohio State money package for college.",
   "min_age": null,
   "max_age": null,
-  "who_can_apply": "Ohio residents in 8th grade at Columbus City Schools, Cincinnati Public Schools or seven other listed city districts. You must be the first in your family to go to college. Family income must be under the limit. You must earn mostly A grades.",
+  "who_can_apply": "Ohio residents in 8th grade at Columbus City Schools, Cincinnati Public Schools or seven other listed city districts. Your parents cannot have a bachelor's degree. Family income must be under the limit. You must earn mostly A grades.",
   "paid_type": "not-stated",
   "pay_detail": "No cost stated for the program. Ohio State financial aid is offered after graduation if requirements are met.",
   "season": "school-year",
@@ -25016,7 +25017,7 @@
   "sources_fetched": [
    "https://ugeducation.osu.edu/student-enrichment/scholars-programs/young-scholars-program"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "7 to 12",
@@ -25027,7 +25028,7 @@
   "duration": "On-going, 3 months or longer, 2 to 6 hours a week.",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "needs_work_permit": false,
   "notes": "Two locations: Pickerington Main Library and Sycamore Plaza Library. Homework Help is open Monday to Thursday, 3 to 6 pm, in the school year. The VolunTeen Scholarship form is open December 1 to January 30.",
@@ -25055,13 +25056,13 @@
   "sources_fetched": [
    "https://pickeringtonlibrary.org/volunteer/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "columbus-recparks-apps-job-readiness",
   "name": "APPS Job Readiness Program",
   "org": "Columbus Recreation and Parks Department",
@@ -25095,13 +25096,13 @@
   ],
   "priority": 1,
   "notes": "Work experiences vary and are matched to career interests where possible. The page does not say whether a work permit is needed. The page does not say how to submit the application beyond the schedule, so confirm the method with the program.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Entering grades 6 to 10 in Fall 2026",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "columbus-recparks-city-leaders-academy",
   "name": "City Leaders Academy",
   "org": "Columbus Recreation and Parks Department",
@@ -25135,13 +25136,13 @@
   ],
   "priority": 2,
   "notes": "Includes middle schoolers (grades 6 to 10). There is a mandatory guardian and youth orientation on Sept 19, 2026. You can miss no more than three meet-ups without an excuse. The page says applications began May 1, 2025. That looks like a typo for 2026.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "apply_url": "https://app.smartsheet.com/b/form/50b38d222f364405a71242c3727a9ba7",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "columbus-recparks-seasonal-lifeguard",
   "name": "Seasonal Lifeguard",
   "org": "Columbus Recreation and Parks Department",
@@ -25176,7 +25177,7 @@
   ],
   "priority": 1,
   "notes": "The City also offers Red Cross lifeguard training for ages 15 and older. Ohio law (ORC 4109.02) says school-age minors need an age and schooling certificate (work permit). In the summer, 16 and 17 year olds can show the employer proof of age and a signed parent or guardian consent statement instead.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -25185,7 +25186,7 @@
   "deadline_iso": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "The page lists two sites. One is Otterbein University in Columbus, OH. The other is Rose-Hulman Institute of Technology in Terre Haute, Indiana. The 2026 dates were June 14 to July 24. Ask about 2027 dates when they are posted.",
   "id": "columbus-ross-mathematics-program-otterbein",
@@ -25216,7 +25217,7 @@
    "https://rossprogram.org/",
    "https://rossprogram.org/participants/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "9 to 10",
@@ -25225,7 +25226,7 @@
   "deadline_iso": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "The county page lists a 6-week length and $15 per hour for IT On Ramp+; the TECH CORPS page lists 4 weeks. Ask TECH CORPS which is right for the next session. Ages are not stated, only grades 9 and 10. The TECH CORPS page gives no pay.",
   "id": "columbus-tech-corps-work-based-learning",
@@ -25256,7 +25257,7 @@
    "https://www.techcorps.org/work-based-learning/",
    "https://franklincountyohio.gov/Resident-Services/Youths/Summer-Programs"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -25267,7 +25268,7 @@
   "duration": "Monday to Friday, at least 1 week (camp runs 8 weeks)",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "needs_work_permit": false,
   "notes": "The page says counselors must be 21 or older and gives no minimum age for interns. Confirm the age limit by email.",
@@ -25283,12 +25284,12 @@
    "education",
    "arts-media"
   ],
-  "what_you_do": "Work in the summer writing camp for campers in grades 2 to 9. The camp has eight camp weeks. You work at least one week. The page names clean-up after camp as an intern task.",
+  "what_you_do": "Help counselors and campers in grades 2 to 9 at a summer writing camp. Join field trips and prepare snacks. The camp has eight weeks. You work at least one week.",
   "who_can_apply": "High school and college students. The page does not state a minimum age or grade.",
   "paid_type": "unpaid",
   "season": "summer",
   "status": "closed-expect-reopen",
-  "deadline_text": "The page does not post an application deadline or interview dates. Contact Meg Brown by email.",
+  "deadline_text": "The camp page says interviews for new interns start in November, with no year given. No deadline is posted. Contact Meg Brown by email.",
   "deadline_confidence": "unknown",
   "how_to_apply": "Email Meg Brown. She is the Director of Children's Education. Her address is megbrown@thurberhouse.org.",
   "url": "https://thurberhouse.org/opportunities",
@@ -25296,7 +25297,7 @@
    "https://thurberhouse.org/opportunities",
    "https://thurberhouse.org/summer-camps"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "10 through rising college freshmen",
@@ -25307,7 +25308,7 @@
   "duration": "2 weeks, Monday to Friday (July 20 to 31 in 2026)",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "needs_work_permit": false,
   "notes": "Bring a sack lunch.",
@@ -25323,7 +25324,7 @@
    "arts-media",
    "education"
   ],
-  "what_you_do": "A two-week day camp where teens write stories, poems and dialogue with working writers and teachers, 10 a.m. to 4 p.m. at the Thurber Center and Thurber House downtown.",
+  "what_you_do": "A two-week day camp where teens write stories, poems and dialogue with working writers and teachers, 10 a.m. to 4 p.m. at the Carriage House and Thurber House downtown.",
   "who_can_apply": "Students in 10th grade through rising college freshmen.",
   "paid_type": "fee-based",
   "season": "summer",
@@ -25335,7 +25336,7 @@
   "sources_fetched": [
    "https://thurberhouse.org/teen-summer-writing-intensive"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "9 to 12",
@@ -25346,7 +25347,7 @@
   "duration": "6 evening sessions, 6:30 to 8:30 p.m.",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "needs_work_permit": false,
   "notes": "Fall 2026 dates are listed. The page does not list later sessions.",
@@ -25366,14 +25367,14 @@
   "paid_type": "fee-based",
   "season": "fall",
   "status": "unconfirmed",
-  "deadline_text": "Fall 2026 sessions are on Tuesdays: Sep 1, Sep 15 and Sep 29 have passed. Oct 13, Oct 27 and Nov 10, 2026 are still ahead. The page has a Register button but no deadline and no closed notice. It does not say whether you can still join mid-season, so check with Thurber House before you plan on it.",
+  "deadline_text": "Fall 2026 sessions are on Tuesdays: Sep 1 to Oct 27 have passed. Nov 10, 2026 is the last one listed. The page has a Register button but no deadline and no closed notice. It does not say whether you can still join mid-season, so check with Thurber House before you plan on it.",
   "deadline_confidence": "unknown",
   "how_to_apply": "Register online through the Young Writers' Studio page. For help paying, email Meg Brown (megbrown@thurberhouse.org).",
   "url": "https://thurberhouse.org/young-writers-studio",
   "sources_fetched": [
    "https://thurberhouse.org/young-writers-studio"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "6 to 12",
@@ -25384,7 +25385,7 @@
   "duration": "Shifts for the whole 2026-2027 school year",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "needs_work_permit": false,
   "notes": "Branches are Lane Road, Miller Park and Tremont Road. The page lists two different branch application links, so use the one for your branch.",
@@ -25400,7 +25401,7 @@
    "education",
    "any"
   ],
-  "what_you_do": "Teens help with craft kits, library programs and cleaning toys during the school year, and help at the Summer Reading prize table in summer. Teen Service Club sessions earn one hour of service credit.",
+  "what_you_do": "Teens help with craft kits, library programs and cleaning toys during the school year, and help with the Summer Reading Program in summer. Teen Service Club sessions earn one hour of service credit.",
   "who_can_apply": "Volunteers must be in grades 6 to 12.",
   "paid_type": "unpaid",
   "season": "school-year",
@@ -25412,13 +25413,13 @@
   "sources_fetched": [
    "https://www.ualibrary.org/uapl-volunteer-program/"
   ],
-  "verified_on_label": "Oct 18, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-04",
   "id": "columbus-urban-league-work-readiness-training-university",
   "name": "Work Readiness Training University (WRTU)",
   "org": "Columbus Urban League",
@@ -25452,7 +25453,7 @@
   ],
   "priority": 2,
   "notes": "Supported by the Franklin County Board of Commissioners and employer partners. A 2024 WRTU Fellows program began with 27 youth. The Urban League's other youth programs (for example I Am My Brother's Keeper, ages 14 to 18, and VLOG, ages 14 to 19) are listed on its Career Connect page. Ohio law (ORC 4109.02) requires an age and schooling certificate (work permit) for working minors of school age; 16 and 17 year olds working in the summer months can instead give the employer proof of age and a signed parent or guardian consent statement.",
-  "verified_on_label": "Oct 18, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -25463,7 +25464,7 @@
   "duration": null,
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "needs_work_permit": false,
   "notes": "Phone 614-882-7277, option 5. No direct application link was on the page. Lead volunteers need at least 4 to 6 hours a month and summer volunteers at least 2 hours a month.",
@@ -25492,7 +25493,7 @@
    "https://westervillelibrary.org/teen-volunteers/",
    "https://westervillelibrary.org/volunteer/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Entering grades 7 to 12",
@@ -25502,11 +25503,11 @@
   "pay_detail": "Unpaid volunteer work",
   "duration": "School year (September to June) and summer (June to August)",
   "deadline_iso": null,
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 2,
   "needs_work_permit": false,
-  "notes": "The page lists no orientation or hours requirement. Email the library with questions.",
+  "notes": "The page lists no training or hours rule. Email the library with questions. As of Nov 4, 2026, the library site blocked automated reading, so confirm first.",
   "id": "columbus-worthington-libraries-volunteens",
   "name": "Volunteens (teen volunteers)",
   "org": "Worthington Libraries",
@@ -25523,9 +25524,9 @@
   "who_can_apply": "Teens who are at least 12 or entering grades 7 to 12 in the fall.",
   "paid_type": "unpaid",
   "season": "year-round",
-  "status": "rolling",
-  "deadline_text": "No deadline posted. The page was last revised August 18, 2026.",
-  "deadline_confidence": "rolling",
+  "status": "unconfirmed",
+  "deadline_text": "No deadline was posted as of Oct 19, 2026. Check the page to see if the library is taking new volunteers.",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Fill out the online Volunteens application. The library will contact you if you are approved.",
   "url": "https://www.worthingtonlibraries.org/visit/services/volunteens",
   "sources_fetched": [
@@ -25540,7 +25541,7 @@
   "deadline_iso": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "This card is for the Hilliard branch. Other YMCA of Central Ohio branches may have their own clubs; ask the Y.",
   "id": "columbus-ymca-teen-leaders-club-hilliard",
@@ -25565,12 +25566,12 @@
   "status": "rolling",
   "deadline_text": "New members are always welcome. No deadline is posted.",
   "deadline_confidence": "rolling",
-  "how_to_apply": "Click Start Your Application on the Hilliard Teen Leaders Club page. You can also email Taylor Stillion. His email is taylor.stillion@ymcacolumbus.org.",
+  "how_to_apply": "Click Start Your Application on the Hilliard page. You can also email taylor.stillion@ymcacolumbus.org.",
   "url": "https://ymcacolumbus.org/node/372",
   "sources_fetched": [
    "https://ymcacolumbus.org/node/372"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Sophomores, juniors and seniors in high school",
@@ -25621,7 +25622,7 @@
   "duration": "Kickoff Oct. 28 or 29, 2026 (9:30 a.m. to 4 p.m.), projects through the year, celebration at the end of April",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "needs_work_permit": false,
   "notes": "You need a school faculty advisor on the team, so ask one first. Only 2 teams per school are accepted. Each team needs its own project and application.",
@@ -25650,13 +25651,13 @@
   "sources_fetched": [
    "https://www.columbuszoo.org/teen-eco-summit"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Entering grades 8 to 12",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "columbus-zoo-zooaide-teen-volunteers",
   "name": "ZooAide Teen Volunteer Program",
   "org": "Columbus Zoo and Aquarium",
@@ -25690,7 +25691,7 @@
   ],
   "priority": 2,
   "notes": "The page does not state the months, hours or any fee, so confirm with the Zoo. Season is listed as summer as a best fit but is not stated on the page.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "computer-history-museum-teen-program",
@@ -26348,10 +26349,10 @@
   "limited": true
  },
  {
-  "grades": null,
+  "grades": "7 to 11",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "cosi-youth-volunteer-program",
   "name": "Youth Volunteer Program (ages 13+)",
   "org": "COSI (Center of Science and Industry)",
@@ -26367,16 +26368,17 @@
   "what_you_do": "You greet guests. You also help COSI educators as an operational volunteer. First you apply and do an interview. Then you finish three weekend training sessions.",
   "min_age": 13,
   "max_age": null,
-  "who_can_apply": "Youth ages 13 and up. Accepted volunteers must attend three weekend training sessions.",
+  "who_can_apply": "New applicants must be in grades 7 to 11 and at least 13. Accepted volunteers must attend three weekend training sessions.",
   "paid_type": "unpaid",
   "pay_detail": "Unpaid volunteer",
   "season": "year-round",
-  "duration": "Three weekend trainings (Oct to Dec in 2026), then ongoing volunteering; hours not stated",
-  "status": "closed-expect-reopen",
-  "deadline_text": "2026 window: applications Aug 1 to Aug 15, interviews Sept 15, 16 or 17, decisions Sept 30, trainings Oct 24/25, Nov 21/22 and Dec 12/13. The 2026 youth window is closed; no 2027 youth dates. Adult applications open January 2027.",
-  "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Online youth volunteer application during the August window, then an in-person interview (5:30 to 7:30 p.m.) at COSI.",
+  "duration": "Three weekend trainings (Feb to Apr 2027), then ongoing volunteering; hours not stated",
+  "status": "opens-soon",
+  "opens_iso": "2026-12-01",
+  "deadline_text": "Applications open Dec 1, 2026 and close Dec 15, 2026. Interviews Jan 6, 7 or 9, decisions Jan 15, trainings Feb 6/7, Mar 6/7 and Apr 17/18.",
+  "deadline_iso": "2026-12-15",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Online youth volunteer application during the December window, then an in-person interview at COSI.",
   "needs_work_permit": false,
   "url": "https://cosi.org/volunteer",
   "sources_fetched": [
@@ -26384,7 +26386,7 @@
   ],
   "priority": 2,
   "notes": "Candidates who cannot attend all three trainings are told to reapply later. COSI also lists one-day Quick Impact volunteer shifts; check each listing for its age rule.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "cosmos-uc-davis",
@@ -36842,7 +36844,7 @@
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "franklin-park-conservatory-teen-corps",
   "name": "Teen Corps",
   "org": "Franklin Park Conservatory and Botanical Gardens",
@@ -36876,13 +36878,13 @@
   ],
   "priority": 1,
   "notes": "Run on a community garden and the Conservatory's Farmers Market. Ages, stipend amount and dates are not on the page, so ask the coordinator. Ohio needs a working permit for paid work at ages 14 to 17, but 16 and 17 year olds do not need one for nonagricultural, nonhazardous work during summer vacation. See permit.html?state=oh for the steps.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "franklin-park-conservatory-volunteer",
   "name": "Conservatory Volunteer Program (age 15+)",
   "org": "Franklin Park Conservatory and Botanical Gardens",
@@ -36915,7 +36917,7 @@
   ],
   "priority": 2,
   "notes": "Some outdoor roles run March to November and the Children's Garden runs April to October.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "franklin-williamson-county-public-library-volunteer",
@@ -66837,7 +66839,7 @@
   "grades": "11 and 12",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "nationwide-childrens-high-school-career-academy",
   "name": "High School Career Academy",
   "org": "Nationwide Children's Hospital",
@@ -66871,13 +66873,13 @@
   ],
   "priority": 1,
   "notes": "The hospital's student opportunities page also lists Project SEARCH (a 9-month internship for students with disabilities) and Upward Bound Math and Science. Ohio law (ORC 4109.02) requires an age and schooling certificate (work permit) for working minors of school age; 16 and 17 year olds working in the summer months can instead give the employer proof of age and a signed parent or guardian consent statement.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "nationwide-childrens-youth-employment-program",
   "name": "Youth and Young Adult Employment Program (paid summer work experience)",
   "org": "Nationwide Children's Hospital",
@@ -66910,7 +66912,7 @@
   ],
   "priority": 1,
   "notes": "Popular: the page says there is overwhelming interest, and about 108 young adults took part in 2025. Schedules are Monday to Friday starting at 9 or 10 a.m. All participants are 16 or older, and Ohio law (ORC 4109.02) lets 16 and 17 year olds working in the summer give proof of age and a signed parent or guardian consent statement instead of a work permit; the hospital may still ask for paperwork, so confirm.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "min_age": 13,
@@ -78237,7 +78239,7 @@
   "duration": "1 week, 9 a.m. to 3 p.m.",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "needs_work_permit": false,
   "notes": "This is at the Ohio State Marion campus, not in Columbus. The page mentions no housing or rides, so plan your own.",
@@ -78265,7 +78267,7 @@
   "sources_fetched": [
    "https://osumarion.osu.edu/academics/majors/biology/stem-summer-camp"
   ],
-  "verified_on_label": "Oct 18, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -78276,7 +78278,7 @@
   "duration": "About 2 weeks (arrive the Monday before the Wednesday opening)",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "needs_work_permit": null,
   "notes": "The page does not say whether a work permit is needed for minors. Ask the coordinators.",
@@ -78306,7 +78308,7 @@
    "https://www.ohiostatefair.com/p/get-involved/jfb"
   ],
   "opens_iso": "2027-01-01",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
