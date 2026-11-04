@@ -1,12 +1,12 @@
 {
-  "grades": "Ages 9-19",
+  "grades": "5 to 12",
   "apply_url": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "needs_work_permit": null,
   "max_age": 19,
-  "min_age": 9,
+  "min_age": 10,
   "duration": "2 weeks, afternoons (day program)",
   "pay_detail": "$376",
   "id": "ncsu-young-and-teen-writers-workshop",
@@ -22,18 +22,20 @@
     "education"
   ],
   "what_you_do": "Two-week summer workshops in the afternoon. You pick two creative writing classes: fiction, genre fiction, poetry, plays, or intro to creative writing. Your work can appear in a printed book.",
-  "who_can_apply": "Students ages 9 to 19. The eligibility section of the page says 9 to 19, but its header says ages 9 to 14. Check the page to be sure.",
+  "who_can_apply": "Writers ages 10 to 19, in two workshops. Young Writers: entering grades 5 to 8 in fall 2027. Teen Writers: rising grades 9 to 12 and recent graduates, with a writing sample.",
   "paid_type": "fee-based",
   "season": "summer",
   "status": "closed-expect-reopen",
-  "deadline_text": "2026 workshops ran July 6-31, 2026. Deadline was June 2026. 2027 dates not posted yet.",
+  "deadline_text": "2027 dates: Young Writers July 12-23, 2027. Teen Writers July 20-31, 2027. Applications are closed; the pages say to check back in spring 2027. No 2027 deadline is posted.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Apply on the workshop website. The address is english.chass.ncsu.edu/youngwriters.",
+  "how_to_apply": "Fill out the online application for your workshop. If you are accepted, pay tuition by July 1. Your place is not saved until you pay.",
   "url": "https://precollege.ncsu.edu/young-and-teen-writers-workshop/",
   "priority": 3,
-  "notes": "Dates are last year's. Several sessions, check which one fits your age. Page is inconsistent on age range (header says 9 to 14, body says 9 to 19).",
+  "notes": "Young Writers is ages 10 to 14. Teen Writers is ages 14 to 19. $376 is from the 2026 listing. Teen Writers says Monday to Friday, but July 20, 2027 is a Tuesday, so check that date.",
   "sources_fetched": [
-    "https://precollege.ncsu.edu/young-and-teen-writers-workshop/"
+    "https://precollege.ncsu.edu/young-and-teen-writers-workshop/",
+    "https://english.chass.ncsu.edu/research-and-engagement/young-writers/young-writers-workshop",
+    "https://english.chass.ncsu.edu/research-and-engagement/young-writers/teen-writers-workshop/"
   ]
 }

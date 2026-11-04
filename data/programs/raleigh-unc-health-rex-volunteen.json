@@ -19,11 +19,11 @@
   "pay_detail": null,
   "season": "summer",
   "duration": "8 weeks, June 21 to August 13, 2027. One 4-hour morning or afternoon shift a week, Monday to Friday. Only one absence allowed.",
-  "status": "opens-soon",
-  "opens_iso": "2027-03-11",
+  "status": "unconfirmed",
+  "opens_iso": null,
   "deadline_text": "The 2027 Summer application is online only from March 11, 2027 to March 12, 2027. Interviews March 22 to 25, orientation April 26 to 29, and you must volunteer the first week (June 21 to 25).",
-  "deadline_iso": "2027-03-12",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Fill out the form online. Two adults who know you, 21 or older and not family, email a reference form. This can be a teacher, a school counselor, or a boss. If they call you, go to an interview.",
   "needs_work_permit": false,
   "url": "https://www.rexhealth.com/rh/volunteer/volunteen-program/",
@@ -31,8 +31,8 @@
   "sources_fetched": [
     "https://www.rexhealth.com/rh/volunteer/volunteen-program/"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-16",
   "priority": 1,
-  "notes": "There is also an Academic Year Program (one day a week, 3 to 5 PM, September to May), but it is closed for 2026 to 2027. If accepted, you need a health screening (TB, whooping cough, chicken pox, MMR). Questions: volsvcs1@unchealth.unc.edu or 919-784-3165."
+  "notes": "Could not read the official page as of Nov 3, 2026: rexhealth.com returned a 403 error, so nothing here is confirmed. Details are from Oct 16, 2026. There is also an Academic Year Program (one day a week, 3 to 5 PM, September to May), but it is closed for 2026 to 2027. If accepted, you need a health screening (TB, whooping cough, chicken pox, MMR). Questions: volsvcs1@unchealth.unc.edu or 919-784-3165."
 }

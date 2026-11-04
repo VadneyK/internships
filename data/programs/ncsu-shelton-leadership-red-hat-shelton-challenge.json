@@ -3,12 +3,12 @@
   "apply_url": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "needs_work_permit": null,
   "max_age": null,
   "min_age": null,
   "duration": "6 days, residential",
-  "pay_detail": "$925",
+  "pay_detail": "$1,350. Scholarships based on need are offered.",
   "id": "ncsu-shelton-leadership-red-hat-shelton-challenge",
   "name": "Red Hat Shelton Challenge",
   "org": "NC State Shelton Leadership Center",
@@ -21,19 +21,20 @@
     "any"
   ],
   "what_you_do": "A six-day program where you stay on campus. It has ropes courses, service projects and group activities. They teach you about fair choices, talking with others and setting goals.",
-  "who_can_apply": "Rising 10th to 12th graders (program precollege page). Scholarships based on need are offered. The Shelton page says 1 in 3 participants gets one.",
+  "who_can_apply": "Current high school students, rising 10th grade and up, including graduating seniors, who have not attended before. Scholarships based on need are offered. The Shelton page says 1 in 3 participants gets one.",
   "paid_type": "fee-based",
   "season": "summer",
   "status": "closed-expect-reopen",
-  "deadline_text": "Summer 2027 dates are coming soon on the program site. The page does not list a 2027 deadline. Alumni can attend a one-day re-Challenge on Saturday, Nov 21, 2026.",
+  "deadline_text": "Summer 2027 weeks: June 13-18, June 27 to July 2, July 11-16 and July 25-30, 2027. The page lists Dec 1 for applications opening and Feb 15 for the priority deadline, but gives no year. Alumni can attend a one-day re-Challenge on Saturday, Nov 21, 2026.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Use the Learn More and Apply link on the Shelton Challenge site for the Red Hat Shelton Challenge at NC State. Other partner sites run the same program in other places.",
+  "how_to_apply": "Use the Learn More and Apply link on the Shelton Challenge site for the Red Hat Shelton Challenge at NC State. You need essays and two recommendation letters. Other partner sites run the same program in other places.",
   "url": "https://sheltonleadership.ncsu.edu/shelton-challenge-programs/",
   "priority": 2,
-  "notes": "Dates are last year's. Check sheltonleadership.ncsu.edu/shelton-challenge-programs for 2027 dates.",
+  "notes": "The application dates have no year, as of Nov 3, 2026, and one FAQ still says Feb 15, 2026. Check sheltonleadership.ncsu.edu/shelton-challenge-programs before you apply.",
   "sources_fetched": [
     "https://precollege.ncsu.edu/red-hat-shelton-challenge/",
-    "https://sheltonleadership.ncsu.edu/shelton-challenge-programs/"
+    "https://sheltonleadership.ncsu.edu/shelton-challenge-programs/",
+    "https://sheltonleadership.ncsu.edu/attend-red-hat-shelton-challenge-important-information/"
   ]
 }
