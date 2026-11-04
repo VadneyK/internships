@@ -19,11 +19,11 @@
   "pay_detail": "Unpaid. Abbott Northwestern lists an $8 meal credit each time you volunteer, a free flu shot and free parking.",
   "season": "year-round",
   "duration": "Abbott Northwestern shifts are on weekdays, 8 a.m. to noon or noon to 4 p.m.",
-  "status": "year-round",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "No deadline posted. Most people finish the steps in under 30 days.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Fill out the online application. Then you have an interview (in person, by phone or by email), take an online class and get a health check for your role. Last, you train in person.",
   "needs_work_permit": false,
   "url": "https://volunteer.allinahealth.org/custom/501/volunteer_faq",
@@ -33,8 +33,8 @@
     "https://volunteer.allinahealth.org/custom/501/volunteer_home",
     "https://volunteer.allinahealth.org/custom/501/organization_details/1073"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 2,
-  "notes": "Pick a hospital or clinic when you apply. Each site has its own roles. You need a flu shot each year, or you can ask to skip it. Abbott Northwestern contact: charlie.srock@allina.com. Other questions: volunteer@allina.com."
+  "notes": "Pick a hospital or clinic when you apply. Each site has its own roles. You need a flu shot each year, or you can ask to skip it. Abbott Northwestern contact: charlie.srock@allina.com. Other questions: volunteer@allina.com. As of Nov 3, 2026 a security error on the volunteer site stopped our check, so confirm first."
 }

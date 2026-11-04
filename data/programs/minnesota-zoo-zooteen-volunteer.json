@@ -20,7 +20,7 @@
   "pay_detail": "Unpaid. Benefits include free admission for you and your immediate family and shop discounts.",
   "season": "summer",
   "duration": "Summer camp season (details not stated)",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "deadline_text": "Applications for the Summer 2026 ZooTeen camp season are closed. The page says to check the website in 2027 for next summer.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
@@ -31,8 +31,8 @@
     "https://mnzoo.org/volunteernew/"
   ],
   "priority": 2,
-  "notes": "ZooTeens do not handle or care for animals; they work with campers.",
-  "verified": "fetched",
+  "notes": "ZooTeens do not handle or care for animals; they work with campers. As of Nov 3, 2026 we could not read the page text, so confirm first.",
+  "verified": "snippet-only",
   "verified_on": "2026-10-09",
   "apply_url": null
 }
