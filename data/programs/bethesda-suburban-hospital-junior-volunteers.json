@@ -20,7 +20,7 @@
   "pay_detail": null,
   "season": "year-round",
   "duration": "At least 6 months, one 4-hour shift a week.",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "All fall 2026 junior spots are full. The page says to check back beginning in February 2027 for spring and summer openings.",
   "deadline_iso": null,
@@ -32,8 +32,8 @@
   "sources_fetched": [
     "https://www.hopkinsmedicine.org/volunteer-services/suburban"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "Junior volunteer spots open by season and fill up. Volunteers get free parking and free flu shots. Questions: shvolunteerservices@jh.edu or 301-896-3092."
+  "notes": "Junior volunteer spots open by season and fill up. Volunteers get free parking and free flu shots. Questions: shvolunteerservices@jh.edu or 301-896-3092. As of Nov 4, 2026, the site blocked automated reading, so confirm these details first."
 }

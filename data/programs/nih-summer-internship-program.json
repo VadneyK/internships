@@ -21,11 +21,11 @@
   "pay_detail": "Stipend, set each year by education level. The page does not state the amount. Free parking. You need proof of health insurance, and NIH does not provide housing.",
   "season": "summer",
   "duration": "Full time, between May 10 and August 31, 2027. Exact dates are set with your mentor. No vacations during the internship.",
-  "status": "open-now",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "The 2027 application is open now and closes Tuesday, January 26, 2027 at 12 pm ET. Reference letters are due Tuesday, February 2, 2027 at 12 pm ET.",
-  "deadline_iso": "2027-01-26",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_text": "On Oct 16, 2026, the page said the 2027 application closes Jan 26, 2027 at 12 pm ET, and letters are due Feb 2, 2027. Confirm on the NIH page.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
   "how_to_apply": "Apply in the NIH Application Center. Send your grades, a resume, a short essay about your goals, and two references. Then email NIH scientists whose work you like and point them to your application. Each scientist picks their own interns by April 1.",
   "needs_work_permit": null,
   "url": "https://www.training.nih.gov/research-training/pb/sip/",
@@ -33,8 +33,8 @@
   "sources_fetched": [
     "https://www.training.nih.gov/research-training/pb/sip/"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "Very competitive, and mostly for college students. Only seniors who meet the age rule can apply; juniors cannot. Free online application webinars on Oct 20 and Nov 17, 2026. Questions: SIP@nih.gov."
+  "notes": "Very competitive, and mostly for college students. Only seniors who meet the age rule can apply; juniors cannot. Free online application webinars on Oct 20 and Nov 17, 2026. Questions: SIP@nih.gov. As of Nov 4, 2026, the site blocked automated reading, so confirm on the page."
 }
