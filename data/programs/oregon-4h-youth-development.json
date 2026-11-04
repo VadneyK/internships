@@ -23,9 +23,9 @@
   "duration": "4-H year starts October 1",
   "status": "year-round",
   "opens_iso": null,
-  "deadline_text": "The 4-H year begins October 1. Online enrollment opens the last week of September. The page was written for the 2025-26 year, so check the 2026-27 dates with your county.",
+  "deadline_text": "The 4-H year began October 1, 2026. Online enrollment is open as of Nov 4, 2026.",
   "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
+  "deadline_confidence": "rolling",
   "how_to_apply": "Contact your local 4-H program coordinator. They will help you find a club. Then sign up online in 4-HOnline. Or return the paper forms to your county 4-H office.",
   "needs_work_permit": false,
   "url": "https://extension.oregonstate.edu/4h/join-today",
@@ -36,7 +36,7 @@
     "https://extension.oregonstate.edu/4h/about-4-h"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-11",
+  "verified_on": "2026-11-04",
   "priority": 2,
-  "notes": "The page was written for the 2025-2026 4-H year. Not every project is offered in every county, since it depends on volunteers. To join in another county, you need an Out of County Participation Form."
+  "notes": "Not every county has every project. It depends on volunteers. To join in another county, you need a form for that."
 }
