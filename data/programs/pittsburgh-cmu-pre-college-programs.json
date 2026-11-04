@@ -16,14 +16,15 @@
   "grades": "10th or 11th grade at time of application",
   "who_can_apply": "High school students at least 16 years old by June 26, 2027 who are in 10th or 11th grade when they apply.",
   "paid_type": "fee-based",
-  "pay_detail": "2026 prices ran from about $5,999 (3-week music, commuter) to $14,688 (summer session, residential, 2 courses), plus a $75 application fee and an $800 enrollment deposit. 2027 prices are posted in November 2026. Full scholarships for students with financial need.",
+  "pay_detail": "The cost page, headed 2026, runs from about $6,209 (3-week music, commuter) to $15,202 (summer session, residential, 2 courses), plus a $75 application fee and an $800 enrollment deposit. Full scholarships for students with financial need.",
   "season": "summer",
   "duration": "3 to 6 weeks depending on the program (summer 2027 starts June 26)",
-  "status": "open-now",
-  "deadline_text": "Basic application (rolling admission) deadline March 1, 2027. Scholarship deadline February 1, 2027 (decisions April 1, 2027). The page does not post the date applications open.",
+  "status": "opens-soon",
+  "opens_iso": "2026-12-01",
+  "deadline_text": "Application opens December 1, 2026. Basic application (rolling admission) deadline March 1, 2027. Scholarship deadline February 1, 2027 (decisions April 1, 2027).",
   "deadline_iso": "2027-03-01",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Apply online through the CMU Pre-College application portal. The scholarship option is only considered under the February 1, 2027 deadline.",
+  "how_to_apply": "Apply online through the CMU Pre-College application portal starting December 1, 2026. The scholarship option is only considered under the February 1, 2027 deadline.",
   "needs_work_permit": false,
   "apply_url": "https://apply-precollege.studentaffairs.cmu.edu/apply/",
   "url": "https://www.cmu.edu/pre-college/",
@@ -33,7 +34,7 @@
     "https://www.cmu.edu/pre-college/cost-financial-aid/index.html"
   ],
   "priority": 3,
-  "notes": "Status is unconfirmed only because the application opening date is not posted; the 2027 deadlines are confirmed on the pages (the apply portal could not be read). Expensive; shown so families know the cost and the scholarship route. The three fully funded programs (AI Scholars, CS Scholars, SAMS) cost nothing. Check the cost page again in November 2026 for 2027 prices.",
+  "notes": "The apply portal could not be read. Expensive; shown so families know the cost and the scholarship route. The three fully funded programs (AI Scholars, CS Scholars, SAMS) cost nothing.",
   "verified": "fetched",
-  "verified_on": "2026-10-10"
+  "verified_on": "2026-11-04"
 }
