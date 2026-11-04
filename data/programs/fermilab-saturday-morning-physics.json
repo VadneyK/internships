@@ -3,10 +3,10 @@
   "grades": "9 to 12",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-03",
   "priority": 2,
   "needs_work_permit": false,
-  "duration": "11 Saturdays, 9 a.m. to noon. Fall 2026 ran Sept 12 to Nov 21.",
+  "duration": "11 Saturdays, 9 a.m. to noon. Spring 2027 is listed as Jan 23 to Apr 10, with no session Mar 27.",
   "pay_detail": "Free",
   "name": "Saturday Morning Physics",
   "org": "Fermilab",
@@ -25,14 +25,15 @@
   "who_can_apply": "High school students in public, private or parochial schools, and home-schooled students with high school standing. Students attend in person. A physics course and two years of algebra help but are not required. A unique email address is required.",
   "paid_type": "unpaid",
   "season": "school-year",
-  "status": "closed-expect-reopen",
-  "deadline_text": "Fall 2026 applications are closed and the session is full. The Spring 2027 session will be announced in November. The program announces fall in May and spring in November.",
-  "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Watch for the news in November. Then fill out the online application. If you have questions, write to saturdaymorningphysics@fnal.gov.",
+  "status": "opens-soon",
+  "deadline_text": "Spring 2027 applications open Nov 9, 2026 and close Dec 4, 2026. You hear back by Dec 18, 2026.",
+  "deadline_iso": "2026-12-04",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the online form on the program page. You need a statement and a letter from a teacher. Questions: saturdaymorningphysics@fnal.gov.",
   "url": "https://education.fnal.gov/program/saturdaymorningphysics/",
-  "notes": "Lectures are at Wilson Hall in Batavia. Some lectures may be off-site. Spring 2027 dates are not posted yet.",
+  "notes": "Lectures are at Wilson Hall in Batavia. Some lectures may be off-site. You cannot defer if you are accepted, so apply only if you can come in Spring 2027.",
   "sources_fetched": [
     "https://education.fnal.gov/program/saturdaymorningphysics/"
-  ]
+  ],
+  "opens_iso": "2026-11-09"
 }

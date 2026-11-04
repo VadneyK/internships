@@ -4,7 +4,7 @@
   "min_age": 17,
   "max_age": 24,
   "grades": null,
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-09",
   "needs_work_permit": null,
   "id": "worknet-dupage-youth",
@@ -34,5 +34,5 @@
     "https://www.worknetdupage.org/youth"
   ],
   "priority": 3,
-  "notes": "Starts at 17, so it fits only older high schoolers. Spanish-speaking services are available. The Get Started page was not read, so check eligibility there."
+  "notes": "Starts at 17, so it fits only older high schoolers. Spanish-speaking services are available. The Get Started page was not read, so check eligibility there. As of Nov 3, 2026, the workNet DuPage site blocked automated reading, so confirm these details first."
 }
