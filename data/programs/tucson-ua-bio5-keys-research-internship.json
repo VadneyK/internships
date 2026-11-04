@@ -1,17 +1,17 @@
 {
   "grades": null,
-  "opens_iso": "2026-11-02",
-  "deadline_iso": null,
-  "apply_url": null,
+  "opens_iso": null,
+  "deadline_iso": "2026-12-17",
+  "apply_url": "https://slate.admissions.arizona.edu/portal/apply-keys",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-02",
   "priority": 1,
   "fields": [
     "science",
     "health"
   ],
   "needs_work_permit": false,
-  "status": "opens-soon",
+  "status": "open-now",
   "deadline_confidence": "confirmed-2026-27",
   "id": "tucson-ua-bio5-keys-research-internship",
   "name": "KEYS Research Internship 2027",
@@ -29,11 +29,13 @@
   "pay_detail": "No cost to participate. A stipend is not mentioned. Earns 3 units of MCB credit.",
   "season": "summer",
   "duration": "7 weeks, June 7 to July 23, 2027",
-  "deadline_text": "Applications open Nov 2, 2026. No closing date posted; recommendations are due Jan 7.",
-  "how_to_apply": "Fill out the online form. It has 4 essay questions. Add a signed student and parent agreement. Add 2 recommenders. One must be a science teacher. Their letters are due Jan 7. Add an unofficial transcript.",
-  "url": "https://keys.arizona.edu/",
+  "deadline_text": "Applications are open Nov 2 to Dec 17, 2026. Recommendations are due Jan 7.",
+  "how_to_apply": "Fill out the online form. It has 3 essay questions. Add 2 recommenders. One must be a science teacher. They fill out an online form by Jan 7; letters are not accepted. Add an unofficial transcript and a resume.",
+  "url": "https://keys.arizona.edu/apply",
   "notes": "Both recommendations must be in by Jan 7. If not, your form will not be looked at.",
   "sources_fetched": [
-    "https://keys.arizona.edu/"
+    "https://keys.arizona.edu/",
+    "https://keys.arizona.edu/apply",
+    "https://slate.admissions.arizona.edu/portal/apply-keys"
   ]
 }

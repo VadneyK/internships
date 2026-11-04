@@ -20,20 +20,21 @@
   "pay_detail": "Free. A US Department of Education grant pays the cost.",
   "season": "summer",
   "duration": "2 weeks (July 5 to 16, 2027)",
-  "status": "opens-soon",
-  "opens_iso": "2026-11-01",
-  "deadline_text": "Applications open November 1, 2026 for the July 5 to 16, 2027 program. A closing date is not posted.",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Applications opened November 1, 2026 for the July 5 to 16, 2027 program. A closing date is not posted.",
   "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Use the Apply here form on the program page when it opens. Questions: Annie Zavitz at Annie.Zavitz@mso.umt.edu.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Use the Apply here form on the program page. Questions: Annie Zavitz at Annie.Zavitz@mso.umt.edu.",
   "needs_work_permit": false,
   "url": "https://www.umt.edu/mansfield/democracy-programs/mansfield-civics-institute/",
   "apply_url": "https://umt.co1.qualtrics.com/jfe/form/SV_egKLEoY769JfRY2",
   "sources_fetched": [
-    "https://www.umt.edu/mansfield/democracy-programs/mansfield-civics-institute/"
+    "https://www.umt.edu/mansfield/democracy-programs/mansfield-civics-institute/",
+    "https://umt.co1.qualtrics.com/jfe/form/SV_egKLEoY769JfRY2"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-02",
   "priority": 1,
-  "notes": "Students live in residence halls and share meals. No closing date is posted, so apply as soon as the form opens."
+  "notes": "Students live in residence halls and share meals. No closing date is posted, so apply soon. The Apply here link opened a working form on 2026-11-02."
 }
