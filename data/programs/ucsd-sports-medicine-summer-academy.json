@@ -1,6 +1,6 @@
 {
   "id": "ucsd-sports-medicine-summer-academy",
-  "name": "Sports Medicine Summer Academy (Research Scholars)",
+  "name": "Sports Medicine Academy (Research Scholars)",
   "org": "UC San Diego Division of Extended Studies",
   "regions": [
     "san-diego"
@@ -11,30 +11,31 @@
     "health",
     "sports"
   ],
-  "what_you_do": "This is a three-week daytime course. It covers sports injuries, anatomy and care. You do hands-on skills like taping and wound care. You do a small research project with wearable tech.",
+  "what_you_do": "Learn about sports injuries, anatomy and care. Practice skills like taping and wound care, and do a small research project with wearable tech. Winter 2027 is online, with Saturday Zoom classes plus self-paced work.",
   "min_age": null,
   "max_age": null,
-  "grades": "Rising 11th and 12th grade",
-  "who_can_apply": "Incoming 11th and 12th graders with a cumulative GPA of 3.3 or better who are interested in sports medicine. No application is needed; you enroll directly.",
+  "grades": "11 to 12 (the course description says incoming 11th and 12th graders)",
+  "who_can_apply": "11th and 12th graders with a cumulative GPA of 3.3 or better who are interested in sports medicine. No application is needed; you enroll directly.",
   "paid_type": "fee-based",
-  "pay_detail": "$3,500 for the July 2026 session (commuter only; no housing or transportation). A hybrid fall session cost $2,000.",
-  "season": "summer",
-  "duration": "3 weeks, weekdays 9:30 a.m. to 2:30 p.m. (2026: July 6 to July 24)",
-  "status": "closed-expect-reopen",
+  "pay_detail": "$2,000 for Winter 2027 (live online). The in-person summer course is listed at $3,500 (commuter only; no housing or transportation). Some lab supplies cost extra. No financial aid; you can ask for a payment plan.",
+  "season": "winter",
+  "duration": "Winter 2027: Jan 11 to Mar 20, 2027, Saturdays 9:30 to 11:00 a.m. on Zoom plus self-paced work. Summer in person: weekdays 9:30 a.m. to 2:30 p.m. (2026 ran July 6 to July 24); 2027 dates not posted.",
+  "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "2026 summer enrollment closed June 26, 2026; fall 2026 enrollment closed Sept 21, 2026. Summer 2027 dates not posted; you can sign up for notifications on the program page.",
-  "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
+  "deadline_text": "Winter 2027 enrollment is open and closes Jan 4, 2027. Summer 2027 is listed as coming soon, and the summer course says enrollment is coming December 2026.",
+  "deadline_iso": "2027-01-04",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Enroll directly on the Extended Studies registration page. Add the course to your cart. No application or essay is needed. Questions: precollege@ucsd.edu.",
   "needs_work_permit": false,
   "url": "https://researchscholars.ucsd.edu/currentprograms/som/index.html",
-  "apply_url": null,
+  "apply_url": "https://extendedstudies.ucsd.edu/courses/sports-medicine-biom-900-06",
   "sources_fetched": [
     "https://researchscholars.ucsd.edu/",
-    "https://researchscholars.ucsd.edu/currentprograms/som/index.html"
+    "https://researchscholars.ucsd.edu/currentprograms/som/index.html",
+    "https://extendedstudies.ucsd.edu/courses/sports-medicine-biom-900-06"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-02",
   "priority": 3,
   "notes": "Earns 3 to 6 UC pre-college units. UCSD's Research Scholars also offers life sciences and marine science courses; its older Academic Connections summer program was canceled for 2026. Marine science fall 2026 application closed Sept 17, 2026."
 }
