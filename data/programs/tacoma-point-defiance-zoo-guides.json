@@ -21,11 +21,11 @@
   "pay_detail": "Unpaid volunteer.",
   "season": "summer",
   "duration": "9 required trainings March to June, then one 6-hour shift a week for 10 weeks in summer",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "Applications are closed now. The page says Zoo Guide applications open in December 2026 (no exact day posted). Interviews are in late February 2027.",
   "deadline_iso": null,
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Apply on the youth volunteer page in December 2026. Large and small group interviews are held in late February; not everyone is interviewed. Join the waitlist form to get an email when applications open.",
   "needs_work_permit": false,
   "url": "https://www.pdza.org/connect/volunteer/youth/",
@@ -34,8 +34,8 @@
     "https://www.pdza.org/connect/volunteer/youth/",
     "https://www.pdza.org/connect/volunteer/"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-16",
   "priority": 1,
-  "notes": "Most zoo volunteer roles ask for at least one year. Explore the Shore (ages 16 and up) and Spot the Swallows (14 and up with a parent if under 18) are other teen options on the volunteer page. Questions: volunteer@pdza.org or 253-404-3687."
+  "notes": "Most zoo volunteer roles ask for at least one year. Explore the Shore (ages 16 and up) and Spot the Swallows (14 and up with a parent if under 18) are other teen options on the volunteer page. Questions: volunteer@pdza.org or 253-404-3687. As of Nov 3, 2026, the Point Defiance Zoo site blocked automated reading, so confirm these details first."
 }
