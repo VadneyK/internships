@@ -22,9 +22,9 @@
   "pay_detail": "Unpaid. Volunteers get discounts at the estate's shops and restaurants and special tours.",
   "season": "year-round",
   "duration": "At least 25 hours a year to stay active.",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "The page says volunteer applications are currently closed. No reopening date is posted.",
+  "deadline_text": "The page said volunteer applications were closed as of Oct 16, 2026, with no reopening date.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Check the volunteer page to see when it opens again. You can also call Joan Flintoft at 703-799-8605.",
@@ -34,8 +34,8 @@
   "sources_fetched": [
     "https://www.mountvernon.org/about/volunteering"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-16",
   "priority": 3,
-  "notes": "About 250 active volunteers. Some roles, like driving, need an adult with a license, so not every role is open to teens. There is no archaeology fieldwork for volunteers right now, only lab work."
+  "notes": "About 250 active volunteers. Some roles, like driving, need an adult with a license, so not every role is open to teens. There is no archaeology fieldwork for volunteers right now, only lab work. The site blocked automated reading on Nov 4, 2026, so call to confirm."
 }
