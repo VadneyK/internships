@@ -6,7 +6,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "fields": [
     "trades"
@@ -21,18 +21,20 @@
   "type": "school-pathway",
   "what_you_do": "Try several skilled trades in one semester. Try carpentry, electrical work, plumbing, iron work and sheet metal. Find the one that fits you.",
   "min_age": null,
-  "who_can_apply": "Vancouver School Board students. Apply in grade 11 for grade 12, semester 2, at John Oliver Secondary. Grade 12 students can apply if a space is left.",
-  "paid_type": "unpaid",
-  "pay_detail": "Not stated",
+  "who_can_apply": "Vancouver School Board students who are Canadian citizens or permanent residents. Apply in grade 11 for grade 12, semester 2, at John Oliver Secondary. Grade 12 students can apply if a spot is left.",
+  "paid_type": "fee-based",
+  "pay_detail": "VSB pays tuition. You pay about $500 for supplies, tools and safety gear.",
   "season": "school-year",
   "duration": "Semester 2 of grade 12",
   "status": "unconfirmed",
-  "deadline_text": "Dates not stated on the program page. Ask your counsellor.",
-  "deadline_confidence": "unknown",
-  "how_to_apply": "Use the application on the page or ask your counsellor. Email careerprograms@vsb.bc.ca.",
+  "deadline_text": "The form and flyer say to apply by March 1, with no year. The flyer is from Nov 2025. Ask your counsellor.",
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the application on the page. Give it to your counsellor, who sends it in. You also need references, grad reports and a resume. Email careerprograms@vsb.bc.ca.",
   "url": "https://www.vsb.bc.ca/career-programs/youth-explore-trades-sampler",
-  "notes": "Page says students should apply in grade 11, and that grade 12 students can apply if a space remains. Confirm with the school. Contact Mark Reid, Career Programs Teacher, mreid@vsb.bc.ca.",
+  "notes": "Pages differ. The program page says you must be in grade 11, and also that grade 12 can apply if a space remains. The flyer says grade 10 or 11. The form says going into grade 11 or 12. The page says John Oliver Secondary; the form lists BCIT campuses. Confirm with the school. The form asks for a Social Insurance Number, so ask the school about it first. Contact Mark Reid, Career Programs Teacher, mreid@vsb.bc.ca.",
   "sources_fetched": [
-    "https://www.vsb.bc.ca/career-programs/youth-explore-trades-sampler"
+    "https://www.vsb.bc.ca/career-programs/youth-explore-trades-sampler",
+    "https://media.vsb.bc.ca/media/Default/medialib/trades-sampler-application.257ac475076.pdf",
+    "https://media.vsb.bc.ca/media/Default/medialib/tsj-3nov2025.b7ce5d85016.pdf"
   ]
 }
