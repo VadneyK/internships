@@ -79022,7 +79022,7 @@
   "grades": null,
   "apply_url": "https://oneinmath.com/register-volunteer/",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "2 to 3 hours a week. Commit to at least one session, preferably a year.",
@@ -79044,8 +79044,8 @@
   "who_can_apply": "Tutors are ages 13 to 18, love working with young kids, have a B or higher in high school math, and bring a laptop.",
   "paid_type": "unpaid",
   "season": "school-year",
-  "status": "unconfirmed",
-  "deadline_text": "No deadline stated. Register to volunteer on the site.",
+  "status": "open-now",
+  "deadline_text": "Fall 2026 sign-up is open as of Nov 4, 2026, with no closing date posted. The session ends Nov 23, 2026. Spring 2027 sign-up starts Dec 13, 2026.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Sign up to volunteer on the OneInMath site. Use the register-volunteer page.",
@@ -79053,10 +79053,12 @@
   "sources_fetched": [
    "https://oneinmath.com/volunteer/",
    "https://oneinmath.com/tutor/",
-   "https://oneinmath.com/register/"
+   "https://oneinmath.com/register/",
+   "https://oneinmath.com/register-volunteer/",
+   "https://oneinmath.com/classes/"
   ],
-  "notes": "The program pages do not list chapter locations. The tutor page's library news mentions North Texas libraries, so ask the group which library near you has a chapter. Re-check 2026-10-10: the tutor page does not say sign-up is ongoing, so status is unconfirmed, not rolling.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "The Classes page lists each session's libraries. Fall 2026 Pennsylvania sites are Horsham, North Wales, Glen Mills and Feasterville-Trevose. Spring 2027 lists none yet. New volunteers must attend a training, and you register again each session.",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "oneonta-job-corps-center",
@@ -80682,10 +80684,10 @@
    "https://extension.psu.edu/programs/4-h/get-involved/youth-and-parents/join"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "A youth group, not a job. Ask your county educator what clubs and teen leader roles are near you.",
-  "verified_on_label": "Oct 18, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -80735,7 +80737,7 @@
   "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": null,
   "deadline_iso": null,
   "id": "pennsylvania-fbla-state-association",
@@ -80770,7 +80772,7 @@
   ],
   "priority": 2,
   "notes": "Virtual Chapter members pay their own travel costs. State office: (570) 398-4652, stateoffice@pafbla.us.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "pennsylvania-ffa-association",
@@ -80808,10 +80810,10 @@
    "https://www.paffa.org/about-ffa"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "The state page says nearly 16,000 students are members, in four regions. Members compete at chapter, regional, state and national events. The National FFA Organization has its own listing in other cards. This one is the Pennsylvania state page.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "pennsylvania-junior-academy-of-science",
@@ -80850,10 +80852,10 @@
    "https://pjas.org/students/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "A science fair, not a job. Your project may need extra approval forms depending on your research field, so ask your sponsor or Regional Director early. Regional pages list the exact deadlines.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "pennsylvania-keystone-boys-state",
@@ -80862,7 +80864,7 @@
   "regions": [
    "pennsylvania"
   ],
-  "city": "Pennsylvania (held at Messiah University, Mechanicsburg, in 2026)",
+  "city": "Pennsylvania (held at Messiah University, Mechanicsburg, in 2027)",
   "type": "civic-government",
   "fields": [
    "law-government"
@@ -80875,28 +80877,29 @@
   "paid_type": "unpaid",
   "pay_detail": "No pay. American Legion posts and the Department pay the fees, so little or no cost to the family.",
   "season": "summer",
-  "duration": "One week (2026 session ran Sunday June 14 to Saturday June 20)",
-  "status": "closed-expect-reopen",
+  "duration": "One week (June 20 to June 26, 2027)",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "The application page lists a 2025 registration date and the 2026 session dates (June 14 to June 20, 2026). No 2027 dates are posted on the program page.",
+  "deadline_text": "The home page and the Legion page still say to apply for 2027, but one page on the site says 2027 registration has closed, as of Nov 4, 2026. No closing date is posted. Session: June 20 to June 26, 2027.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Register online on the Keystone Boys State site when registration opens. Posts also sponsor students; use the Legion post locator on the Pennsylvania Legion page.",
+  "how_to_apply": "Fill out the online form from the Apply link on the Keystone Boys State site before you arrive. Posts also sponsor students; use the Legion post locator on the Pennsylvania Legion page.",
   "needs_work_permit": false,
   "url": "https://www.paboysstate.org/application-process",
-  "apply_url": "https://www.paboysstate.org/",
+  "apply_url": "https://pa-legion.com/programs/student-and-youth/keystone-boys-state-program/keystone-boys-state-registration/",
   "sources_fetched": [
    "https://www.paboysstate.org/",
    "https://www.paboysstate.org/application-process",
    "https://www.paboysstate.org/about",
    "https://www.paboysstate.org/registration-closed",
-   "https://pa-legion.com/programs/student-and-youth/keystone-boys-state-program/"
+   "https://pa-legion.com/programs/student-and-youth/keystone-boys-state-program/",
+   "https://pa-legion.com/programs/student-and-youth/keystone-boys-state-program/keystone-boys-state-registration/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
-  "notes": "Boys only. A matching Girls State program is run by the American Legion Auxiliary, not this one. Check the Boys State site for the 2027 location and dates, because 2026 was at Messiah University.",
-  "verified_on_label": "Oct 9, 2026",
+  "notes": "Boys only. A matching Girls State program is run by the American Legion Auxiliary, not this one. The site disagrees on whether 2027 registration is open. To confirm, email kbsapplication@gmail.com or call 717-730-9100 x 123.",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -80906,7 +80909,7 @@
   "regions": [
    "pennsylvania"
   ],
-  "city": "Pennsylvania (held at Shippensburg University)",
+  "city": "Pennsylvania (Messiah University in 2027)",
   "type": "civic-government",
   "fields": [
    "law-government"
@@ -80914,33 +80917,34 @@
   "what_you_do": "Spend a week in a pretend government. You live in a mock city and county, hold mock offices, hold meetings and learn how Pennsylvania government works.",
   "min_age": null,
   "max_age": null,
-  "grades": null,
-  "who_can_apply": "Girls in Pennsylvania. The pages do not state grade, citizenship or cost rules, so check the application.",
-  "paid_type": "unpaid",
-  "pay_detail": "No pay. The page says it is free in most cases; you may pay only for your own travel to Shippensburg University. Bring some cash for snacks and shirts sold during the week.",
+  "grades": "11 to 12",
+  "who_can_apply": "High school girls in Pennsylvania who have finished junior year. You must be a U.S. citizen or legal resident with papers to show it.",
+  "paid_type": "fee-based",
+  "pay_detail": "No pay. The 2027 form says you send a $100 check to your sponsor and a local Auxiliary unit pays $200. With no sponsor you pay $300. The fee is not refunded.",
   "season": "summer",
-  "duration": "One week in June",
-  "status": "unconfirmed",
+  "duration": "One week, June 20 to 25, 2027",
+  "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "The home page lists a 2027 application and the dates 20-25 June 2026. The only deadline posted is old (May 20, 2023). No 2027 deadline is stated.",
-  "deadline_iso": null,
-  "deadline_confidence": "unknown",
-  "how_to_apply": "Use the Apply tab on the Keystone Girls State site (the home page links an application for 2027). The old FAQ says to print and mail the form, then fill out a parent packet before camp. Check with a local Auxiliary unit for sponsorship.",
+  "deadline_text": "The 2027 application is posted. It must be postmarked by Apr 30, 2027. Session: June 20 to 25, 2027.",
+  "deadline_iso": "2027-04-30",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the 2027 application form. Add a short bio and a photo. Send it with a $100 check to your local Auxiliary unit, which mails it on. To find a unit or pay the $300 yourself, email kgsalapa@gmail.com.",
   "needs_work_permit": false,
   "url": "https://www.pagirlsstate.com/apply",
-  "apply_url": "https://www.pagirlsstate.com/apply",
+  "apply_url": "https://www.pagirlsstate.com/_files/ugd/22cacb_199d93f06b2748cda8ae59996dce2557.pdf",
   "sources_fetched": [
    "https://www.pagirlsstate.com/",
    "https://www.pagirlsstate.com/apply",
    "https://www.pagirlsstate.com/about",
    "https://www.pagirlsstate.com/faq",
-   "https://www.legion-aux.org/ala-girls-state-locations"
+   "https://www.legion-aux.org/ala-girls-state-locations",
+   "https://www.pagirlsstate.com/_files/ugd/22cacb_199d93f06b2748cda8ae59996dce2557.pdf"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
-  "notes": "Girls only. The FAQ on the site is still from 2023, so confirm this year's dates, deadline and cost with the program before you plan. The national Auxiliary list shows June 21 to June 26, 2026 while the state site shows 20-25 June 2026.",
-  "verified_on_label": "Oct 9, 2026",
+  "notes": "Girls only. Older site pages conflict: the FAQ is from 2023, the About page says Shippensburg and calls it free in most cases, and the home page shows 20-25 June 2026. The dates and costs here come from the 2027 application.",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -80968,7 +80972,7 @@
   "duration": "6 weeks, Monday to Friday 7 a.m. to 3:30 p.m. (2026: June 29 to August 7)",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "2026 dates were June 29 to August 7, 2026. No 2027 dates or deadline are posted on the program page.",
+  "deadline_text": "2026 dates were June 29 to August 7, 2026. The Student Conservation Association says the 2027 application period reopens in November 2026. No exact day or deadline is posted as of Nov 4, 2026.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Apply through the Student Conservation Association (SCA) website. The state page links to the current openings. It links to the application too. You can email paoutdoorcorps@thesca.org.",
@@ -80979,13 +80983,14 @@
    "https://www.pa.gov/services/dcnr/apply-for-pennsylvania-outdoor-corp-jobs",
    "https://www.pa.gov/agencies/dcnr/programs-and-services/pennsylvania-outdoor-corps/youth-summer-program",
    "https://www.pa.gov/agencies/dli/resources/compliance-laws-and-regulations/labor-management-relations/child-labor-act",
-   "https://www.pa.gov/agencies/dli/newsroom/shapiro-administration-reminds-pennsylvanians-about-young-workers-rights"
+   "https://www.pa.gov/agencies/dli/newsroom/shapiro-administration-reminds-pennsylvanians-about-young-workers-rights",
+   "https://thesca.org/program/pennsylvania-outdoor-corps"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "notes": "Crew locations change by year; check the SCA page for this year's list. Paid work for people under 18 in Pennsylvania needs a work permit. See permit.html?state=pa for the exact permit and steps.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "pennsylvania-pseas-school-for-excellence-agricultural-sciences",
@@ -81000,7 +81005,7 @@
   "apply_url": null,
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "deadline_confidence": "confirmed-2026-27",
   "max_age": null,
@@ -81019,14 +81024,14 @@
   "season": "summer",
   "duration": "2 weeks. Session 1: June 20 to July 2, 2027. Session 2: July 11 to 24, 2027.",
   "status": "unconfirmed",
-  "deadline_text": "Application opens November 1 (the page does not give the year). Deadline February 26, 2027. Decisions March 26, 2027.",
+  "deadline_text": "The page says the form is open from November 1 (no year given) and is due Feb 26, 2027. Decisions March 26, 2027.",
   "how_to_apply": "Online application, then a 15-minute Zoom interview. Contact PSEAS@psu.edu or 814-867-0383. The page also lists PGSAS@psu.edu, so confirm the address.",
   "url": "https://agsci.psu.edu/school-for-excellence/how-to-apply",
-  "notes": "No wage is paid. Page lists a contact email in two spellings, so confirm it.",
+  "notes": "No wage is paid. Page lists a contact email in two spellings, so confirm it. As of Nov 4, 2026, the page shows no direct form link, so email or call if you cannot find it.",
   "sources_fetched": [
    "https://agsci.psu.edu/school-for-excellence/how-to-apply"
   ],
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "peralta-dual-enrollment",
@@ -81240,7 +81245,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "philadelphia-academy-of-natural-sciences-volunteer",
   "name": "Volunteer Program, Academy of Natural Sciences",
   "org": "Academy of Natural Sciences of Drexel University",
@@ -81270,7 +81275,7 @@
   "sources_fetched": [
    "https://ansp.org/support/volunteer"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "philadelphia-art-museum-teen-sketch-and-podcast",
@@ -81278,7 +81283,7 @@
   "apply_url": null,
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "min_age": null,
   "max_age": null,
@@ -81299,27 +81304,27 @@
   "season": "school-year",
   "duration": "Fall 2026 programs. Teen Sketch length is not stated.",
   "status": "unconfirmed",
-  "deadline_text": "Fall 2026 programs are listed with Apply links. No closing date is posted on the page.",
+  "deadline_text": "Teen Sketch and Teen Podcast are listed for Fall 2026. No apply link or closing date shows on the page as of Nov 4, 2026.",
   "deadline_confidence": "unknown",
-  "how_to_apply": "Each program has its own Apply now link (a Google form) on the teens page. Questions: teens@philamuseum.org.",
+  "how_to_apply": "The teens page shows no apply link as of Nov 4, 2026. Email teens@philamuseum.org to ask how to join.",
   "needs_work_permit": null,
   "url": "https://www.philamuseum.org/teens",
-  "notes": "The page does not say whether the programs are paid or free, or when the forms close. Email the teen team before you plan around it. The museum also ran A Future of Artists, a June to August 2026 exhibition of work by Philadelphia-area high school students.",
+  "notes": "The page does not say whether the programs are paid or free. Email the teen team before you plan around it. The museum also ran A Future of Artists, a June to August 2026 exhibition of work by Philadelphia-area high school students.",
   "sources_fetched": [
    "https://www.philamuseum.org/teens"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "philadelphia-awbury-arboretum-owls-cit-training",
   "grades": null,
-  "apply_url": null,
-  "deadline_iso": null,
+  "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLSe5JIoWd7L0b38mxkQ4wjhqIYTxZchM7l62RYzNP5nk1y46vA/viewform",
+  "deadline_iso": "2027-02-01",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "min_age": 13,
-  "max_age": 17,
+  "max_age": 18,
   "name": "Outdoor and Wilderness Leadership Skills (OWLS), Awbury Arboretum",
   "org": "Awbury Arboretum",
   "regions": [
@@ -81332,23 +81337,24 @@
    "education"
   ],
   "what_you_do": "Train to be a camp counselor in training. You learn to lead groups, handle conflict and camp outdoors. You also practice writing a resume and job interviews. You get American Red Cross First Aid and CPR.",
-  "who_can_apply": "Teens ages 13 to 17 only.",
+  "who_can_apply": "Teens ages 13 to 18.",
   "paid_type": "fee-based",
   "pay_detail": "Summer 2026 price was $675 ($641 for members) for the 2 week session. The camp page says scholarships (75% off) and sliding scale fees (30% to 60% off) are available to families in local zip codes.",
   "season": "summer",
   "duration": "2 weeks (June 15 to 26 in 2026)",
-  "status": "opens-soon",
-  "deadline_text": "Summer 2026 session ran June 15 to 26, 2026 and was sold out. The camp FAQ says Summer 2027 registration opens Monday, Feb. 1, 2027 at 9 am; OWLS 2027 dates are not posted.",
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Sign up through the Awbury Adventures Summer Camp page. Ask for financial aid BEFORE you sign up, because aid spots are few.",
+  "status": "open-now",
+  "deadline_text": "Applications for OWLS 2027 are being taken as of Nov 4, 2026. Apply before Feb 1, 2027, when camp registration starts. OWLS 2027 dates are not posted. The 2026 session ran June 15 to 26, 2026 and sold out.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the OWLS application form linked on the Awbury Adventures Summer Camp page before Feb 1, 2027. Ask for financial aid BEFORE you sign up, because aid spots are few.",
   "needs_work_permit": null,
   "url": "https://awbury.org/summer-camp/",
-  "notes": "This is training, not a paid job. The page does not say whether graduates get counselor jobs. A 2021 posting on the same site said 2 to 6 trainees were chosen as stipend-paid counselors in training; that is old, so ask.",
+  "notes": "This is training, not a paid job. The 2026 camp listing said 13 to 17 only, so ask if you are 18. The page does not say whether graduates get counselor jobs. A 2021 posting on the same site said 2 to 6 trainees were chosen as stipend-paid counselors in training; that is old, so ask.",
   "sources_fetched": [
-   "https://awbury.org/summer-camp/"
+   "https://awbury.org/summer-camp/",
+   "https://docs.google.com/forms/d/e/1FAIpQLSe5JIoWd7L0b38mxkQ4wjhqIYTxZchM7l62RYzNP5nk1y46vA/viewform"
   ],
-  "opens_iso": "2027-02-01",
-  "verified_on_label": "Oct 9, 2026"
+  "opens_iso": null,
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "philadelphia-bartrams-garden-paid-youth-internships",
@@ -81356,7 +81362,7 @@
   "apply_url": null,
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "min_age": 14,
   "max_age": 18,
@@ -81388,7 +81394,7 @@
   "sources_fetched": [
    "https://www.bartramsgarden.org/youth-internships/"
   ],
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -81399,7 +81405,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "philadelphia-bloomberg-arts-internship",
   "name": "Bloomberg Arts Internship (BAI)",
   "org": "Greater Philadelphia Cultural Alliance",
@@ -81431,7 +81437,7 @@
    "https://www.penn.museum/learn/teens",
    "https://www.pa.gov/agencies/dli/resources/compliance-laws-and-regulations/labor-management-relations/child-labor-act.html"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -81441,7 +81447,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "philadelphia-c2l-phl-summer-youth-employment",
   "name": "Career Connected Learning PHL (C2L-PHL) Summer Program",
   "org": "City of Philadelphia Office of Children and Families, with JEVS Human Services",
@@ -81471,7 +81477,7 @@
    "https://www.phila.gov/programs/career-connected-learning-phl-c2l-phl/",
    "https://www.phila.gov/programs/career-connected-learning-phl-c2l-phl/frequently-asked-questions/"
   ],
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -81525,7 +81531,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "philadelphia-drexel-neuroscience-camp-high-school",
   "name": "Neuroscience Camp for High School Students, Drexel",
   "org": "Drexel University Graduate School of Biomedical Sciences and Professional Studies",
@@ -81545,19 +81551,20 @@
   "season": "summer",
   "duration": "10 days, in-person commuter (2026: July 20 to 31)",
   "status": "closed-expect-reopen",
-  "deadline_text": "The page says information about 2027 Summer Institutes will become available this winter. No 2026 or 2027 application dates are posted on this page.",
+  "deadline_text": "The 2026 deadline was April 3, 2026. Drexel says information about 2027 Summer Institutes will become available this winter. No 2027 application dates are posted.",
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Submit transcripts and two letters of recommendation. Contact camp assistant Ipatia Daigle (ied26@drexel.edu) or director Dr. Jed Shumsky (js52@drexel.edu).",
   "needs_work_permit": false,
-  "url": "https://drexel.edu/academics/pre-college-programs/summer-institutes/medicine",
+  "url": "https://drexel.edu/medicine/academics/graduate-programs/neuroscience/neuroscience-camp-high-school-students/",
   "priority": 3,
   "notes": "Drexel runs other Summer Institutes (arts and sciences, business, engineering, design, nursing, public health); their pages did not list grades, costs or dates when read.",
   "sources_fetched": [
    "https://drexel.edu/academics/pre-college-programs/summer-institutes/medicine",
    "https://drexel.edu/academics/pre-college-programs",
-   "https://drexel.edu/academics/pre-college-programs/summer-institutes"
+   "https://drexel.edu/academics/pre-college-programs/summer-institutes",
+   "https://drexel.edu/medicine/academics/graduate-programs/neuroscience/neuroscience-camp-high-school-students/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "philadelphia-fleisher-teen-lounge",
@@ -81565,7 +81572,7 @@
   "apply_url": null,
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "min_age": null,
   "max_age": null,
@@ -81595,7 +81602,7 @@
   "sources_fetched": [
    "https://fleisher.org/children-and-youth-programs-2/children-and-youth-programs-2/fall-2026-2/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "philadelphia-fox-chase-immersion-science-program",
@@ -81633,10 +81640,10 @@
    "https://www.foxchase.org/research-training/education/research/high-school/immersion-science-program/faq"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 1,
-  "notes": "The FAQ says the application launches in mid to late October, so it may open any day now. Check the page for the real dates. General Fox Chase number: 888-369-2427. A summer fellows track is funded by National Cancer Institute grants. Its pay and rules are not stated on the pages.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "The FAQ says the link is live about 3.5 weeks, into early November, and the final date is posted on the program's social media. As of Nov 4, 2026, the pages show no date or link, so check soon. General Fox Chase number: 888-369-2427. A summer fellows track is funded by National Cancer Institute grants. Its pay and rules are not stated on the pages.",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "philadelphia-franklin-institute-pacts",
@@ -81644,7 +81651,7 @@
   "apply_url": "https://form.jotform.com/dmarino/pacts-application",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "min_age": null,
   "max_age": null,
@@ -81675,7 +81682,7 @@
   "sources_fetched": [
    "https://fi.edu/en/science-education/youth-and-community-programs/pacts"
   ],
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -81686,7 +81693,7 @@
   "deadline_iso": "2026-11-16",
   "apply_url": "https://www.jotform.com/81145459075157",
   "verified": "fetched",
-  "verified_on": "2026-10-21",
+  "verified_on": "2026-11-04",
   "id": "philadelphia-franklin-institute-stem-scholars",
   "name": "STEM Scholars, The Franklin Institute",
   "org": "The Franklin Institute",
@@ -81701,7 +81708,7 @@
    "tech-cs"
   ],
   "what_you_do": "This is a free four-year STEM program. It starts in 9th grade. Each year has STEM programming. Rising seniors are paid for a 10-week lab research experience.",
-  "who_can_apply": "Students living in Philadelphia and surrounding areas who are entering 9th grade, interested in STEM, able to commit to four years, with a 3.0 GPA (per FAQ). Non-freshmen are rarely accepted.",
+  "who_can_apply": "Students living in Philadelphia and surrounding areas who are in 9th grade (freshmen), interested in STEM, able to commit to four years, with a 3.0 GPA (per FAQ). Non-freshmen are rarely accepted.",
   "paid_type": "mixed",
   "pay_detail": "Free to students; rising seniors are paid for lab research (rate not stated). Fees covered by donors.",
   "season": "school-year",
@@ -81718,7 +81725,7 @@
    "https://www.fi.edu/en/stem-scholars",
    "https://www.fi.edu/en/science-and-education/youth-and-community-programs"
   ],
-  "verified_on_label": "Oct 21, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "philadelphia-free-library-young-volunteers",
@@ -81742,11 +81749,11 @@
   "pay_detail": null,
   "season": "year-round",
   "duration": "At least 1 to 3 hours a week for 2 to 3 months. Some seasonal and short-term roles are listed too.",
-  "status": "rolling",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Rolling. Apply any time.",
+  "deadline_text": "Rolling when last read on Oct 16, 2026. The site blocked automated reading as of Nov 4, 2026, so confirm with the library.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Print the form and fill it out. Email it to volunteer@freelibrary.org or mail it to 1901 Vine Street. Then staff will set up a talk with you.",
   "needs_work_permit": false,
   "url": "https://libwww.freelibrary.org/programs/volunteer",
@@ -81755,10 +81762,10 @@
    "https://libwww.freelibrary.org/programs/volunteer",
    "https://libwww.freelibrary.org/programs/leap/"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "The page asks for age 14 and up but also says grades 7 to 12, so younger 7th graders should call first. For a paid role, the library's LEAP after-school program hires Teen Leadership Assistants through Career Connected Learning PHL (C2L PHL). Questions: 215-686-5340.",
+  "notes": "The site blocked automated reading as of Nov 4, 2026, so details are from Oct 16, 2026. The page asks for age 14 and up but also says grades 7 to 12, so younger 7th graders should call first. For a paid role, the library's LEAP after-school program hires Teen Leadership Assistants through Career Connected Learning PHL (C2L PHL). Questions: 215-686-5340.",
   "verified_on_label": "Oct 16, 2026"
  },
  {
@@ -81767,7 +81774,7 @@
   "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLScDVx-301ZXoqQLJXBBoFCUWbSvDlCd0T-yvkzpu1NK3BfwdA/viewform",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "min_age": null,
   "max_age": null,
@@ -81800,7 +81807,7 @@
    "https://www.phillyseaport.org/teen-ambassadors/"
   ],
   "notes": "Funded by The W.W. Smith Charitable Trust and The Hamilton Family Charitable Trust, both named on the page.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "philadelphia-jefferson-abington-teen-volunteers",

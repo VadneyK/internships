@@ -3,7 +3,7 @@
   "grades": null,
   "apply_url": "https://oneinmath.com/register-volunteer/",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "needs_work_permit": false,
   "duration": "2 to 3 hours a week. Commit to at least one session, preferably a year.",
@@ -25,8 +25,8 @@
   "who_can_apply": "Tutors are ages 13 to 18, love working with young kids, have a B or higher in high school math, and bring a laptop.",
   "paid_type": "unpaid",
   "season": "school-year",
-  "status": "unconfirmed",
-  "deadline_text": "No deadline stated. Register to volunteer on the site.",
+  "status": "open-now",
+  "deadline_text": "Fall 2026 sign-up is open as of Nov 4, 2026, with no closing date posted. The session ends Nov 23, 2026. Spring 2027 sign-up starts Dec 13, 2026.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Sign up to volunteer on the OneInMath site. Use the register-volunteer page.",
@@ -34,7 +34,9 @@
   "sources_fetched": [
     "https://oneinmath.com/volunteer/",
     "https://oneinmath.com/tutor/",
-    "https://oneinmath.com/register/"
+    "https://oneinmath.com/register/",
+    "https://oneinmath.com/register-volunteer/",
+    "https://oneinmath.com/classes/"
   ],
-  "notes": "The program pages do not list chapter locations. The tutor page's library news mentions North Texas libraries, so ask the group which library near you has a chapter. Re-check 2026-10-10: the tutor page does not say sign-up is ongoing, so status is unconfirmed, not rolling."
+  "notes": "The Classes page lists each session's libraries. Fall 2026 Pennsylvania sites are Horsham, North Wales, Glen Mills and Feasterville-Trevose. Spring 2027 lists none yet. New volunteers must attend a training, and you register again each session."
 }

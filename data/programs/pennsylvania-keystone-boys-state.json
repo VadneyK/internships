@@ -5,7 +5,7 @@
   "regions": [
     "pennsylvania"
   ],
-  "city": "Pennsylvania (held at Messiah University, Mechanicsburg, in 2026)",
+  "city": "Pennsylvania (held at Messiah University, Mechanicsburg, in 2027)",
   "type": "civic-government",
   "fields": [
     "law-government"
@@ -18,25 +18,26 @@
   "paid_type": "unpaid",
   "pay_detail": "No pay. American Legion posts and the Department pay the fees, so little or no cost to the family.",
   "season": "summer",
-  "duration": "One week (2026 session ran Sunday June 14 to Saturday June 20)",
-  "status": "closed-expect-reopen",
+  "duration": "One week (June 20 to June 26, 2027)",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "The application page lists a 2025 registration date and the 2026 session dates (June 14 to June 20, 2026). No 2027 dates are posted on the program page.",
+  "deadline_text": "The home page and the Legion page still say to apply for 2027, but one page on the site says 2027 registration has closed, as of Nov 4, 2026. No closing date is posted. Session: June 20 to June 26, 2027.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Register online on the Keystone Boys State site when registration opens. Posts also sponsor students; use the Legion post locator on the Pennsylvania Legion page.",
+  "how_to_apply": "Fill out the online form from the Apply link on the Keystone Boys State site before you arrive. Posts also sponsor students; use the Legion post locator on the Pennsylvania Legion page.",
   "needs_work_permit": false,
   "url": "https://www.paboysstate.org/application-process",
-  "apply_url": "https://www.paboysstate.org/",
+  "apply_url": "https://pa-legion.com/programs/student-and-youth/keystone-boys-state-program/keystone-boys-state-registration/",
   "sources_fetched": [
     "https://www.paboysstate.org/",
     "https://www.paboysstate.org/application-process",
     "https://www.paboysstate.org/about",
     "https://www.paboysstate.org/registration-closed",
-    "https://pa-legion.com/programs/student-and-youth/keystone-boys-state-program/"
+    "https://pa-legion.com/programs/student-and-youth/keystone-boys-state-program/",
+    "https://pa-legion.com/programs/student-and-youth/keystone-boys-state-program/keystone-boys-state-registration/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
-  "notes": "Boys only. A matching Girls State program is run by the American Legion Auxiliary, not this one. Check the Boys State site for the 2027 location and dates, because 2026 was at Messiah University."
+  "notes": "Boys only. A matching Girls State program is run by the American Legion Auxiliary, not this one. The site disagrees on whether 2027 registration is open. To confirm, email kbsapplication@gmail.com or call 717-730-9100 x 123."
 }

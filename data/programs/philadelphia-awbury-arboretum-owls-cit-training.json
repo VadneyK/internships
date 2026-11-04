@@ -1,13 +1,13 @@
 {
   "id": "philadelphia-awbury-arboretum-owls-cit-training",
   "grades": null,
-  "apply_url": null,
-  "deadline_iso": null,
+  "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLSe5JIoWd7L0b38mxkQ4wjhqIYTxZchM7l62RYzNP5nk1y46vA/viewform",
+  "deadline_iso": "2027-02-01",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "min_age": 13,
-  "max_age": 17,
+  "max_age": 18,
   "name": "Outdoor and Wilderness Leadership Skills (OWLS), Awbury Arboretum",
   "org": "Awbury Arboretum",
   "regions": [
@@ -20,20 +20,21 @@
     "education"
   ],
   "what_you_do": "Train to be a camp counselor in training. You learn to lead groups, handle conflict and camp outdoors. You also practice writing a resume and job interviews. You get American Red Cross First Aid and CPR.",
-  "who_can_apply": "Teens ages 13 to 17 only.",
+  "who_can_apply": "Teens ages 13 to 18.",
   "paid_type": "fee-based",
   "pay_detail": "Summer 2026 price was $675 ($641 for members) for the 2 week session. The camp page says scholarships (75% off) and sliding scale fees (30% to 60% off) are available to families in local zip codes.",
   "season": "summer",
   "duration": "2 weeks (June 15 to 26 in 2026)",
-  "status": "opens-soon",
-  "deadline_text": "Summer 2026 session ran June 15 to 26, 2026 and was sold out. The camp FAQ says Summer 2027 registration opens Monday, Feb. 1, 2027 at 9 am; OWLS 2027 dates are not posted.",
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Sign up through the Awbury Adventures Summer Camp page. Ask for financial aid BEFORE you sign up, because aid spots are few.",
+  "status": "open-now",
+  "deadline_text": "Applications for OWLS 2027 are being taken as of Nov 4, 2026. Apply before Feb 1, 2027, when camp registration starts. OWLS 2027 dates are not posted. The 2026 session ran June 15 to 26, 2026 and sold out.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Fill out the OWLS application form linked on the Awbury Adventures Summer Camp page before Feb 1, 2027. Ask for financial aid BEFORE you sign up, because aid spots are few.",
   "needs_work_permit": null,
   "url": "https://awbury.org/summer-camp/",
-  "notes": "This is training, not a paid job. The page does not say whether graduates get counselor jobs. A 2021 posting on the same site said 2 to 6 trainees were chosen as stipend-paid counselors in training; that is old, so ask.",
+  "notes": "This is training, not a paid job. The 2026 camp listing said 13 to 17 only, so ask if you are 18. The page does not say whether graduates get counselor jobs. A 2021 posting on the same site said 2 to 6 trainees were chosen as stipend-paid counselors in training; that is old, so ask.",
   "sources_fetched": [
-    "https://awbury.org/summer-camp/"
+    "https://awbury.org/summer-camp/",
+    "https://docs.google.com/forms/d/e/1FAIpQLSe5JIoWd7L0b38mxkQ4wjhqIYTxZchM7l62RYzNP5nk1y46vA/viewform"
   ],
-  "opens_iso": "2027-02-01"
+  "opens_iso": null
 }
