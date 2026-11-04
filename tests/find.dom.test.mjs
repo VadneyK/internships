@@ -171,7 +171,8 @@ test("find: kind, interest, verified-only and no-work-permit filters narrow the 
 
   document.getElementById("onlyVerified").click();
   const verified = shownCount(document);
-  assert.ok(verified < total, "verified-only should narrow the list");
+  // Since 2026-10-27 every card is read on its official page, so the filter only narrows while a snippet-only card exists.
+  if (DATA.some((e) => e.verified !== "fetched")) assert.ok(verified < total, "verified-only should narrow the list");
   assert.equal(verified, DATA.filter((e) => e.verified === "fetched").length);
   assertRendered(document, "verified");
   assert.equal(params(window).get("checked"), "1");
