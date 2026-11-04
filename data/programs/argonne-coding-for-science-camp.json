@@ -20,7 +20,7 @@
   "pay_detail": "Free.",
   "season": "summer",
   "duration": "5 days",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "The 2026 application is closed. Last cycle, applications were due by mid-April and students heard back in early May.",
   "deadline_iso": null,
@@ -33,8 +33,8 @@
     "https://www.anl.gov/education/coding-for-science-camp",
     "https://www.anl.gov/education/camps"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "Very popular, with only 30 spots. Questions: kmoran@anl.gov. Argonne also runs Big Data Camp for juniors and seniors who already code."
+  "notes": "Very popular, with only 30 spots. Questions: kmoran@anl.gov. Argonne also runs Big Data Camp for juniors and seniors who already code. As of Nov 3, 2026, the Argonne site blocked automated reading, so confirm these details first."
 }

@@ -12,22 +12,23 @@
   "min_age": 16,
   "max_age": null,
   "grades": null,
-  "who_can_apply": "Ages 16 and older for lifeguards, recreation leaders, special recreation leaders and junior laborers. The page does not state a residency rule, so check with the Park District.",
+  "who_can_apply": "Ages 16 and older for lifeguards, recreation leaders, special recreation leaders and junior laborers. Lifeguards must be 16 by July 1, 2027. Lifeguards and recreation leaders must live in Chicago when hired.",
   "paid_type": "paid",
-  "pay_detail": "2026 rates: lifeguard $20.50 per hour; recreation leader, special recreation leader and junior laborer $17.77 per hour.",
+  "pay_detail": "2027 lifeguard rate: $21.25 per hour. 2027 rates for the other jobs are not posted. In 2026 they paid $17.77 per hour.",
   "season": "summer",
   "duration": "Recreation leaders about 6 weeks, mid-June to early Aug. Junior laborers start April, May or June.",
-  "status": "closed-expect-reopen",
+  "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "All four 2026 summer positions are marked closed. 2027 dates not posted. The Park District holds free Teen Opportunity Fairs in Feb and March (Feb 21 to Mar 14 in 2026) where teens can apply.",
+  "deadline_text": "Lifeguard: the 2027 summer application is open now, no deadline listed. Skills tests are Nov 13, 2026 and Dec 19, 2026. The other three jobs open for applications in early 2027. Teen Opportunity Fairs ran Feb 21 to Mar 14 in 2026; 2027 dates not posted.",
   "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Apply online through the Park District job site. Use the Learn More and Apply Now links on the Summer Jobs page. Or go to a Teen Opportunity Fair. Applications must be in by the closed date on each job posting.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Lifeguards: apply online with the link on the Be a Lifeguard page. Sign up for a skills test and pass it. Take the Red Cross class, then finish paperwork and fingerprinting. Other jobs: check the Summer Jobs page in early 2027.",
   "needs_work_permit": false,
   "url": "https://www.chicagoparkdistrict.com/summer-jobs",
-  "apply_url": null,
+  "apply_url": "https://www.chicagoparkdistrict.com/be-lifeguard",
   "sources_fetched": [
     "https://www.chicagoparkdistrict.com/summer-jobs",
+    "https://www.chicagoparkdistrict.com/be-lifeguard",
     "https://www.chicagoparkdistrict.com/teen-opportunity-fairs",
     "https://www.chicagoparkdistrict.com/jobs",
     "https://labor.illinois.gov/faqs/child-labor-faq.html"
@@ -39,5 +40,5 @@
   ],
   "city": "Chicago, IL",
   "verified": "fetched",
-  "verified_on": "2026-10-09"
+  "verified_on": "2026-11-03"
 }

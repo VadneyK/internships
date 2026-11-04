@@ -20,7 +20,7 @@
   "pay_detail": "Paid. The page does not state the rate.",
   "season": "school-year",
   "duration": "Sept 12, 2026 to June 12, 2027; most Saturdays at the museum, plus some Wednesday after-school virtual meetings; about 3 to 4 hours a week",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "The 2026-27 Teen Council application was open through June 30, 2026. 2027-28 dates not posted.",
   "deadline_iso": null,
@@ -34,8 +34,8 @@
     "https://www.artic.edu/visit/whos-visiting/teens-2",
     "https://labor.illinois.gov/faqs/child-labor-faq.html"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-09",
   "priority": 2,
-  "notes": "Chicago teens under 18 get free museum admission. The page does not say whether a work permit is needed. The Illinois FAQ requires work permits only for workers under 16 and refers 16 and 17 year olds to federal rules."
+  "notes": "Could not read the official page as of Nov 3, 2026: artic.edu returned a 403 error, so nothing here is confirmed. Details are from Oct 9, 2026. Chicago teens under 18 get free museum admission. The page does not say whether a work permit is needed. The Illinois FAQ requires work permits only for workers under 16 and refers 16 and 17 year olds to federal rules."
 }
