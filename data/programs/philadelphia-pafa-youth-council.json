@@ -1,10 +1,10 @@
 {
   "id": "philadelphia-pafa-youth-council",
   "grades": "9 to 12",
-  "apply_url": "https://pafa-museum.coursestorm.com/course/pre-college-youth-council-leadership",
+  "apply_url": "https://pafa-museum.coursestorm.com/course/pre-college-youth-council-leadership1",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "min_age": null,
   "max_age": null,
@@ -24,15 +24,17 @@
   "pay_detail": "Free to join. No pay or stipend is stated.",
   "season": "school-year",
   "duration": "Fall 2026: Wednesdays Oct 21 to Dec 9, 4 to 6 pm. Spring 2027: Wednesdays Jan 27 to Apr 14, 4 to 6 pm.",
-  "status": "open-now",
-  "deadline_text": "Fall 2026 starts Oct 21, 2026; Spring 2027 starts Jan 27, 2027. No closing date is posted.",
-  "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Use the Register link on the Youth Council page, which goes to pafa-museum.coursestorm.com. Each session has its own Register link.",
+  "status": "unconfirmed",
+  "deadline_text": "Fall 2026 started Oct 21, 2026; Spring 2027 starts Jan 27, 2027. The pages disagree: the PAFA page shows Register links, but as of Nov 4, 2026 the sign-up pages say both sessions are full. Spring has a wait list.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Use the Register link on the Youth Council page, which goes to pafa-museum.coursestorm.com. Each session has its own Register link. As of Nov 4, 2026, both show as full. You can add your name to the Spring wait list.",
   "needs_work_permit": false,
   "url": "https://www.pafa.org/education/center-for-art-education/pre-college/youth-council",
   "sources_fetched": [
     "https://www.pafa.org/YouthCouncil",
-    "https://www.pafa.org/education/center-for-art-education/pre-college/youth-council"
+    "https://www.pafa.org/education/center-for-art-education/pre-college/youth-council",
+    "https://pafa-museum.coursestorm.com/course/pre-college-youth-council-leadership",
+    "https://pafa-museum.coursestorm.com/course/pre-college-youth-council-leadership1"
   ],
-  "notes": "PAFA is on North Broad Street. The status is shown as open because the page lists a Register link for both sessions; the page gives no closing date."
+  "notes": "PAFA is on North Broad Street. The sign-up pages list ages 14 to 18 and grades 9 to 12. Ask PAFA if a spot opens."
 }

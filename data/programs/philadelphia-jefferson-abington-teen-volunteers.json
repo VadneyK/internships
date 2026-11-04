@@ -19,11 +19,11 @@
   "pay_detail": null,
   "season": "year-round",
   "duration": "Most assignments need at least 2 to 4 hours a week. Some late afternoon, evening or weekend shifts.",
-  "status": "rolling",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Rolling. No deadline posted.",
+  "deadline_text": "No deadline was posted as of Oct 16, 2026.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Fill out the form on the volunteer page. If they pick you, the hospital checks your record. You fill out some papers and show your shots: chicken pox, MMR, Tdap, a new TB blood test, and a flu shot in flu season.",
   "needs_work_permit": false,
   "url": "https://www.jeffersonhealth.org/volunteer/abington",
@@ -31,10 +31,11 @@
   "sources_fetched": [
     "https://www.jeffersonhealth.org/volunteer/abington",
     "https://www.jeffersonhealth.org/volunteer",
-    "https://www.jeffersonhealth.org/volunteer/tjuh-and-methodist"
+    "https://www.jeffersonhealth.org/volunteer/tjuh-and-methodist",
+    "https://www.jeffersonhealth.org/content/dam/health2021/documents/volunteer/abington-volunteer-application-3-27-2024.pdf"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "Volunteering here does not lead to a job, but it is health care experience for your resume. Shadowing is possible only if you find a staff member to supervise you yourself. Jefferson's Center City hospitals (TJUH and Methodist) take volunteers 18 and up only. Questions: 215-481-2492."
+  "notes": "Volunteering here does not lead to a job, but it is health care experience for your resume. Shadowing is possible only if you find a staff member to supervise you yourself. Jefferson's Center City hospitals (TJUH and Methodist) take volunteers 18 and up only. Questions: 215-481-2492. As of Nov 4, 2026, the Jefferson site blocked automated reading, so confirm these details first. The volunteer page said age 16 on Oct 16, 2026, but the 2024 application form lists teen jobs for ages 17 and up. That form also asks for a Social Security number, so ask the volunteer office before you give it."
 }

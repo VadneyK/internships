@@ -19,11 +19,11 @@
   "pay_detail": null,
   "season": "summer",
   "duration": null,
-  "status": "opens-soon",
-  "opens_iso": "2027-02-01",
+  "status": "unconfirmed",
+  "opens_iso": null,
   "deadline_text": "The 2026 program closed early because of high demand. Applications for Summer 2027 open February 1, 2027. No closing date is posted, so apply early.",
   "deadline_iso": null,
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Starting February 1, 2027, create an account in the Penn Medicine volunteer portal and apply. More details will be posted closer to that date.",
   "needs_work_permit": false,
   "url": "https://www.pennmedicine.org/volunteering/pennsylvania-hospital",
@@ -31,8 +31,8 @@
   "sources_fetched": [
     "https://www.pennmedicine.org/volunteering/pennsylvania-hospital"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "It is only at the 800 Spruce Street site. Spots fill fast. Email PAHVolunteerServices@pennmedicine.upenn.edu or call 215-829-5187."
+  "notes": "It is only at the 800 Spruce Street site. Spots fill fast. Email PAHVolunteerServices@pennmedicine.upenn.edu or call 215-829-5187. As of Nov 4, 2026, the Penn Medicine site blocked automated reading, so confirm these details first."
 }
