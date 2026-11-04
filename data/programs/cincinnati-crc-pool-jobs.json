@@ -2,7 +2,7 @@
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "cincinnati-crc-pool-jobs",
   "name": "Aquatics Jobs: Lifeguard and Pool Staff",
   "org": "Cincinnati Recreation Commission",
@@ -19,11 +19,11 @@
   "max_age": null,
   "who_can_apply": "Lifeguards must be 15 or older, hold current American Red Cross Lifeguard Training/First Aid and CPR for the Professional Rescuer/AED certifications, and pass a water skills test. The page does not give an age for gate or pool monitors.",
   "paid_type": "paid",
-  "pay_detail": "Paid; rate not stated on the page",
+  "pay_detail": "Lifeguards start at $16 an hour. Other rates are not stated.",
   "season": "summer",
   "duration": "Seasonal and part-time; dates not stated",
   "status": "unconfirmed",
-  "deadline_text": "No dates are posted on the page. A 2026 lifeguard screening registration form is linked.",
+  "deadline_text": "The 2027 lifeguard screening form lists pre-screening dates from January 19 on, with no year shown. Course enrollment is limited.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "Register for the required lifeguard course screening on the page, then apply to the open positions. Questions: CRC Aquatics, 513-357-7665.",
@@ -31,8 +31,9 @@
   "url": "https://cincinnati-oh.gov/crc/aquatics/aquatics-employment/",
   "sources_fetched": [
     "https://cincinnati-oh.gov/crc/aquatics/aquatics-employment/",
+    "https://cincyrec.regfox.com/2027-lifeguard-screening-registration",
     "https://codes.ohio.gov/ohio-revised-code/section-4109.02"
   ],
   "priority": 1,
-  "notes": "Lifeguards also attend pre-season and on-site pool training and pass an annual water skills review. Check the page for current screening dates. Ohio law (ORC 4109.02) requires an age and schooling certificate (work permit) for working minors of school age; 16 and 17 year olds working in the summer months can instead give the employer proof of age and a signed parent or guardian consent statement."
+  "notes": "Lifeguards also attend pre-season and on-site pool training and pass an annual water skills review. The course is free if you work the full 2027 season. Others pay $400. Materials cost $40. As of Nov 4, 2026, the jobs page shows only menus to the automated reader, so gate and pool monitor details are from Oct 9, 2026. Ohio law (ORC 4109.02) requires an age and schooling certificate (work permit) for working minors of school age; 16 and 17 year olds working in the summer months can instead give the employer proof of age and a signed parent or guardian consent statement."
 }
