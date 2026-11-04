@@ -20,11 +20,11 @@
   "pay_detail": "Unpaid volunteer. Junior Counselors can join a Camp Alumni Adventure trip at a highly discounted rate.",
   "season": "summer",
   "duration": "All-Time Belayer: 9 am to noon, at least 6 days. Junior Counselor: 9 am to 4 pm, at least 2 weeks.",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "Applications for summer 2027 open in March 2027 (no exact day posted). Summer 2026 applications are closed.",
   "deadline_iso": null,
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Apply on the CIT page when applications open in March 2027. Questions: summercamp@mountaineers.org.",
   "needs_work_permit": false,
   "url": "https://www.mountaineers.org/youth/programs-by-location/seattle/seattle-camps/cit-program",
@@ -32,8 +32,8 @@
   "sources_fetched": [
     "https://www.mountaineers.org/youth/programs-by-location/seattle/seattle-camps/cit-program"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "A nonprofit summer camp, not Seattle Parks. Pick the weeks that fit your schedule. Unpaid volunteer role; Washington L&I says its minor work rules apply to employees, not volunteers."
+  "notes": "A nonprofit summer camp, not Seattle Parks. Pick the weeks that fit your schedule. Unpaid volunteer role; Washington L&I says its minor work rules apply to employees, not volunteers. As of Nov 3, 2026, the Mountaineers site blocked automated reading, so confirm these details first."
 }

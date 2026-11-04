@@ -20,7 +20,7 @@
   "pay_detail": "Unpaid volunteer. Some students can get extra credit or use it for a school project.",
   "season": "summer",
   "duration": "A two-day training plus one week of summer day camp",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "Summer 2026 applications closed April 15, 2026. The 2027 date is not posted yet.",
   "deadline_iso": null,
@@ -32,8 +32,8 @@
   "sources_fetched": [
     "https://www.parkstacoma.gov/volunteer-at-the-tacoma-nature-center/"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 2,
-  "notes": "The Nature Center's Youth Council for ages 13 to 18 is on pause. The page also links a Teen Volunteer social story that explains what the week is like."
+  "notes": "The Nature Center's Youth Council for ages 13 to 18 is on pause. The page also links a Teen Volunteer social story that explains what the week is like. As of Nov 3, 2026, the Parks Tacoma site blocked automated reading, so confirm these details first."
 }
