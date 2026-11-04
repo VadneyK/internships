@@ -3,10 +3,10 @@
   "max_age": null,
   "apply_url": "https://www.governmentjobs.com/careers/santaana?keywords=internship",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-02",
   "needs_work_permit": true,
   "priority": 2,
-  "notes": "Pay and hours are not stated. The job list loads by script, so open internships could not be checked on Oct 9, 2026. Other levels on the page are for college students.",
+  "notes": "Pay and hours are not stated for the Student Intern level. On Nov 2, 2026 the city job list showed one internship, for college students, and no Student Intern post. The first lines of the program page talk about college and graduate students. The page also lists a Student Intern level for high school students, so ask city Human Resources if you are in high school. Other levels on the page are for college students.",
   "id": "santa-ana-city-student-intern",
   "name": "City of Santa Ana Student Intern",
   "org": "City of Santa Ana Human Resources",
@@ -23,7 +23,7 @@
   "min_age": null,
   "who_can_apply": "People currently enrolled in high school who can get a work permit. The page does not give a minimum age or a city residency rule.",
   "paid_type": "not-stated",
-  "pay_detail": "Not stated. The city intern program page, checked on 2026-10-10, says nothing about pay. Check the job post when one is open.",
+  "pay_detail": "Not stated. The city intern program page, checked on 2026-11-02, says nothing about pay. Check the job post when one is open.",
   "season": "year-round",
   "duration": "Not stated. Interns keep their spot by sending proof of school enrollment and their GPA after each semester.",
   "status": "unconfirmed",
@@ -33,6 +33,7 @@
   "how_to_apply": "Check the city job site for internship openings and apply there. If none are open, check back later.",
   "url": "https://santa-ana.gov/human-resources-home/intern-program/",
   "sources_fetched": [
-    "https://santa-ana.gov/human-resources-home/intern-program/"
+    "https://santa-ana.gov/human-resources-home/intern-program/",
+    "https://www.governmentjobs.com/careers/santaana?keywords=internship"
   ]
 }

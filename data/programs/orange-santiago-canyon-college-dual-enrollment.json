@@ -3,10 +3,10 @@
   "max_age": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-02",
   "needs_work_permit": false,
   "priority": 2,
-  "notes": "SCC is phasing out the paper Special Admit Form for high school dual enrollment. It now goes through the portal.",
+  "notes": "SCC is phasing out the paper Special Admit Form for high school dual enrollment. It now goes through the portal. Re-check 2026-11-02: the page gives no deadline and does not say applications are taken on an ongoing basis, so the status is unconfirmed, not rolling.",
   "id": "orange-santiago-canyon-college-dual-enrollment",
   "name": "Santiago Canyon College Early College (Dual Enrollment)",
   "org": "Santiago Canyon College",
@@ -25,13 +25,15 @@
   "pay_detail": "The page says free transferable college units. Fees for books or other costs are not listed on the page.",
   "season": "year-round",
   "duration": "By semester",
-  "status": "rolling",
+  "status": "unconfirmed",
   "deadline_text": "No deadline stated. See the Important Dates link on the page.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Apply to SCC. Make your dual enrollment profile in the portal with your SCC student email. Send a course request. Then confirm your enrollment. Phone (714) 628-4764 or earlycollege@sccollege.edu.",
   "url": "https://www.sccollege.edu/students/studentservices/earlycollege/",
   "sources_fetched": [
-    "https://www.sccollege.edu/students/studentservices/earlycollege/"
+    "https://www.sccollege.edu/students/studentservices/earlycollege/",
+    "https://sccollege.edu/students/studentservices/earlycollege/getting-started",
+    "https://sccollege.edu/academics/classschedule/dates-deadlines.php"
   ]
 }

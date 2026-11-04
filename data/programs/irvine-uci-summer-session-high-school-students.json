@@ -3,10 +3,10 @@
   "max_age": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-02",
   "needs_work_permit": false,
   "priority": 3,
-  "notes": "This is real college credit and costs real money. The grade stays on a college record. The page names two grade groups (graduating 2027 or 2028; and 11th or 12th grade in Fall 2026), so check which one fits you. The fee page says 2026 Summer Session fees were pending the state budget and may change.",
+  "notes": "This is real college credit and costs real money. The grade stays on a college record. The page names two grade groups (graduating 2027 or 2028; and 11th or 12th grade in Fall 2026), so check which one fits you. The fee page says 2026 Summer Session fees were pending the state budget and may change. The dates in the deadline text are from the 2026 cycle because 2027 dates are not posted.",
   "id": "irvine-uci-summer-session-high-school-students",
   "name": "UCI Summer Session for High School Students",
   "org": "UC Irvine Summer Session",
@@ -26,7 +26,7 @@
   "season": "summer",
   "duration": "One summer course (Summer Session sessions)",
   "status": "closed-expect-reopen",
-  "deadline_text": "Dates for Summer 2027 are not posted yet. Check the Summer Session calendar in spring.",
+  "deadline_text": "Dates for Summer 2027 are not posted yet. For 2026 the page's Important Dates table listed application deadlines of May 1, 2026 (Session 1 and 10-Week) and June 3, 2026 (Session 2), and late applications were case by case. It does not say if these apply to high school students. Check the Summer Session calendar in spring.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Fill out the Enrollment Form. Send it to the Summer Session office. Add a copy of your latest high school transcript.",
@@ -34,6 +34,7 @@
   "sources_fetched": [
     "https://summer.uci.edu/students/",
     "https://summer.uci.edu/faq/",
-    "https://summer.uci.edu/fees/"
+    "https://summer.uci.edu/fees/",
+    "https://summer.uci.edu/services/registration/forms/"
   ]
 }
