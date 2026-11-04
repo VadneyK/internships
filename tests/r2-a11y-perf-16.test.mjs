@@ -56,7 +56,8 @@ const PAGES = {
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 2673515 bytes. Approved by Kentaro 2026-10-19 (merge train). find.html ceiling 2673500 to 2673600.
   // 2026-10-26: three Inland Empire cards (Corona, Rancho Cucamonga) on top of PRs 98 to 101. PENDING PERSON APPROVAL. 2673600 to 2675500 (2675461 measured).
   // 2026-11-02: SoCal sweep (PRs 114 to 118) re-read 240 cards on their official pages. PENDING PERSON APPROVAL. Limit covers the whole stack: 2675500 to 2680000.
-  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2680000 },
+  // 2026-11-02: 45 new SoCal cards (2,865 programs), stacked on PR 118. PENDING PERSON APPROVAL. 2680000 to 2722500.
+  "find.html": { allowed: ["entries-lite.json", "gaps.json"], ceiling: 2722500 },
   "calendar.html": { allowed: ["calendar.json", "entries-cal.json"], ceiling: 150000 },
   // 2026-10-15: the Map page reads the map projection and the city points (754,977 bytes). PENDING PERSON APPROVAL, as above.
   // 2026-10-16 East Coast pages read in a real browser (+28 cards, 2,638 programs) map.html limit 760000 to 763100. PENDING PERSON APPROVAL.
@@ -82,10 +83,12 @@ const PAGES = {
   // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,692 programs; PENDING PERSON APPROVAL): 777600 to 779200.
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 813636 bytes. Approved by Kentaro 2026-10-19 (merge train). map.html ceiling 812000 to 813700.
   // 2026-10-26: three Inland Empire cards (Corona, Rancho Cucamonga) on top of PRs 98 to 101. PENDING PERSON APPROVAL. 813700 to 814500 (814444 measured).
-  "map.html": { allowed: ["entries-map.json", "map.json"], ceiling: 814500 },
+  // 2026-11-02: 45 new SoCal cards (2,865 programs), stacked on PR 118. PENDING PERSON APPROVAL. 814500 to 827500.
+  "map.html": { allowed: ["entries-map.json", "map.json"], ceiling: 827500 },
   // 2026-10-20: the unlisted Ignition page shows the same map, so the same files and ceiling as map.html. Kentaro's instruction 2026-10-20.
   // 2026-10-26: three Inland Empire cards (Corona, Rancho Cucamonga) on top of PRs 98 to 101. PENDING PERSON APPROVAL. 813700 to 814500 (814444 measured).
-  "ignition.html": { allowed: ["entries-map.json", "map.json"], ceiling: 814500 },
+  // 2026-11-02: 45 new SoCal cards (2,865 programs), stacked on PR 118. PENDING PERSON APPROVAL. 814500 to 827500.
+  "ignition.html": { allowed: ["entries-map.json", "map.json"], ceiling: 827500 },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. insights.html ceiling 697700 to 716100.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. insights.html limit 716100 to 736500.
   // 2026-10-13: +40 city cards (Portland, Phoenix, Detroit, St. Louis, Nashville, Denver) and 20 employers (2,519 programs). PENDING PERSON APPROVAL, as above. insights.html limit 736500 to 748900.
@@ -114,7 +117,8 @@ const PAGES = {
   // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,692 programs; PENDING PERSON APPROVAL): 800000 to 801700.
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 839072 bytes. Approved by Kentaro 2026-10-19 (merge train). insights.html ceiling 837300 to 839100.
   // 2026-10-26: three Inland Empire cards (Corona, Rancho Cucamonga) on top of PRs 98 to 101. PENDING PERSON APPROVAL. 839100 to 839900 (839816 measured).
-  "insights.html": { allowed: ["entries-stats.json"], ceiling: 839900 },
+  // 2026-11-02: 45 new SoCal cards (2,865 programs), stacked on PR 118. PENDING PERSON APPROVAL. 839900 to 853500.
+  "insights.html": { allowed: ["entries-stats.json"], ceiling: 853500 },
   // younger.html: raised from 336000 to 340000 on 2026-10-11 (r5-younger-1: pet care card and address-safe script added 2.7 KB to younger.json)
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. younger.html ceiling 442000 to 452800.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. younger.html limit 452800 to 465400.
@@ -145,7 +149,8 @@ const PAGES = {
   // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,692 programs; PENDING PERSON APPROVAL): 503500 to 504500.
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 527606 bytes. Approved by Kentaro 2026-10-19 (merge train). younger.html ceiling 526500 to 527700.
   // 2026-10-26: three Inland Empire cards (Corona, Rancho Cucamonga) on top of PRs 98 to 101. PENDING PERSON APPROVAL. 527700 to 528200 (528174 measured).
-  "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 528200 },
+  // 2026-11-02: 45 new SoCal cards (2,865 programs), stacked on PR 118. PENDING PERSON APPROVAL. 528200 to 537000.
+  "younger.html": { allowed: ["younger.json", "entries-core.json"], ceiling: 537000 },
   "interview.html": { allowed: ["interview.json", "permits.json"], ceiling: 95000 },
   // permit.html and states.html: raised from 82000 to 83000 on 2026-10-12 (r2-accuracy-2 and r2-accuracy-8: the 2027 wage lines and the Washington, DC wording; permits.json is 82,370 bytes)
   "permit.html": { allowed: ["permits.json"], ceiling: 83000 },

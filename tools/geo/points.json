@@ -1,5 +1,5 @@
 {
- "read": "2026-10-26",
+ "read": "2026-11-02",
  "cities": [
   {
    "key": "Chandler, AZ",
@@ -281,6 +281,26 @@
    ]
   },
   {
+   "key": "Brea, CA",
+   "state": "CA",
+   "lat": 33.9252,
+   "lon": -117.8651,
+   "precision": "city",
+   "ids": [
+    "brea-volunteens"
+   ]
+  },
+  {
+   "key": "Buena Park, CA",
+   "state": "CA",
+   "lat": 33.8574,
+   "lon": -118.0074,
+   "precision": "city",
+   "ids": [
+    "buena-park-volt-teen-volunteers"
+   ]
+  },
+  {
    "key": "Castro Valley, CA",
    "state": "CA",
    "lat": 37.7083,
@@ -369,7 +389,8 @@
     "assistance-league-newport-mesa-assisteens",
     "costa-mesa-orange-coast-college-dual-enrollment",
     "costa-mesa-parks-community-services-jobs",
-    "oc-fair-seasonal-jobs"
+    "oc-fair-seasonal-jobs",
+    "orange-county-langson-museum-young-curators"
    ]
   },
   {
@@ -385,6 +406,16 @@
     "cupertino-teen-commission",
     "cupertino-youth-activity-board",
     "de-anza-dual-enrollment"
+   ]
+  },
+  {
+   "key": "Cypress, CA",
+   "state": "CA",
+   "lat": 33.8185,
+   "lon": -118.0383,
+   "precision": "city",
+   "ids": [
+    "cypress-youth-action-committee"
    ]
   },
   {
@@ -645,7 +676,6 @@
     "irvine-uci-summer-session-high-school-students",
     "irvine-valley-college-dual-enrollment",
     "irvine-youth-service-corps-summer-high-school",
-    "orange-county-langson-museum-young-curators",
     "pretend-city-volunteer-and-teen-programs",
     "uc-sankofa-experience-rising-seniors",
     "uci-cosmos",
@@ -654,6 +684,16 @@
     "uci-peri-institute-stem-education-research",
     "uci-scrip-high-school-research-internship",
     "uci-som-summer-online-research-program"
+   ]
+  },
+  {
+   "key": "La Habra, CA",
+   "state": "CA",
+   "lat": 33.9279,
+   "lon": -117.9526,
+   "precision": "city",
+   "ids": [
+    "la-habra-youth-committee"
    ]
   },
   {
@@ -712,6 +752,16 @@
    "precision": "city",
    "ids": [
     "laguna-hills-memorialcare-saddleback-volunteer"
+   ]
+  },
+  {
+   "key": "Laguna Niguel, CA",
+   "state": "CA",
+   "lat": 33.5301,
+   "lon": -117.7029,
+   "precision": "city",
+   "ids": [
+    "laguna-niguel-youth-committee"
    ]
   },
   {
@@ -945,6 +995,16 @@
    ]
   },
   {
+   "key": "Mission Viejo, CA",
+   "state": "CA",
+   "lat": 33.6093,
+   "lon": -117.6565,
+   "precision": "city",
+   "ids": [
+    "mission-viejo-library-teen-volunteers"
+   ]
+  },
+  {
    "key": "Moraga, CA",
    "state": "CA",
    "lat": 37.8457,
@@ -1074,6 +1134,7 @@
    "lon": -117.7772,
    "precision": "county",
    "ids": [
+    "crystal-cove-fire-ecology-high-school-internship",
     "oc-public-libraries-teen-volunteer",
     "ocsd-explorer-program",
     "ocsd-teen-academy",
@@ -1095,6 +1156,7 @@
     "chapman-pharmacy-summer-research-program",
     "chapman-social-science-pre-college-research",
     "chapman-summer-engineering-academy",
+    "octa-teen-council",
     "orange-county-choc-mi4-summer-internship",
     "orange-santiago-canyon-college-dual-enrollment",
     "uci-health-high-school-volunteer",
@@ -1152,6 +1214,16 @@
    "ids": [
     "los-medanos-college-dual-enrollment",
     "pittsburg-youth-advisory-commission"
+   ]
+  },
+  {
+   "key": "Placentia, CA",
+   "state": "CA",
+   "lat": 33.8812,
+   "lon": -117.8548,
+   "precision": "city",
+   "ids": [
+    "placentia-library-teen-volunteers"
    ]
   },
   {

@@ -13125,6 +13125,48 @@
   "verified_on_label": "Oct 18, 2026"
  },
  {
+  "id": "brea-volunteens",
+  "name": "Brea Summer Volunteens",
+  "org": "City of Brea Community Services",
+  "regions": [
+   "orange-county"
+  ],
+  "city": "Brea, CA",
+  "type": "volunteer",
+  "fields": [
+   "any",
+   "social-impact",
+   "sports"
+  ],
+  "what_you_do": "Volunteer all summer in a city program, such as the pool, day camp, youth sports, preschool or the theater. You build leadership skills and work experience.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "Entering 9 to 11 (as of fall 2026)",
+  "who_can_apply": "Teens entering grades 9 to 11 who live or go to school in Brea. You must be free all summer. You can take only 5 vacation days.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer. Jobs offer about 50 to 160 hours.",
+  "season": "summer",
+  "duration": "9 weeks. The 2026 program was set for June 8 to Aug 7, 2026.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 deadline was April 20, 2026 at 5:00 p.m., or sooner if enough came in. 2026 applications are closed. Dates for 2027 are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Read the guidelines on the program page and apply online when the next round opens. Late forms are not taken. You and a parent must also go to an orientation, held May 20 in 2026.",
+  "needs_work_permit": false,
+  "url": "https://cityofbrea.gov/volunteens",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://cityofbrea.gov/volunteens",
+   "https://www.cityofbrea.gov/DocumentCenter/View/18880/Volunteen-Guidelines-2026"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "These are last year's dates. The 2027 dates are not posted yet. Applying does not promise you a spot. The city picks your job based on its needs, but it looks at what you want. Call 714-990-7600.",
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
   "id": "breakthrough-sacramento-teaching-intern",
   "name": "Teaching Intern and Summer Volunteer",
   "org": "Breakthrough Sacramento",
@@ -13491,6 +13533,49 @@
   "verified_on": "2026-10-10",
   "apply_url": null,
   "verified_on_label": "Oct 10, 2026",
+  "limited": true
+ },
+ {
+  "id": "buena-park-volt-teen-volunteers",
+  "name": "V.O.L.T. (Volunteer Opportunities and Leadership for Teens)",
+  "org": "City of Buena Park Community Services",
+  "regions": [
+   "orange-county"
+  ],
+  "city": "Buena Park, CA",
+  "type": "volunteer",
+  "fields": [
+   "social-impact",
+   "sports",
+   "any"
+  ],
+  "what_you_do": "Help at city programs, such as gym and park programs, youth sports and special events. You earn community service hours and build skills.",
+  "min_age": 13,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "Teens 13 to 17. You do not need to live in Buena Park.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer. You earn community service hours.",
+  "season": "year-round",
+  "duration": "Ongoing. General meeting once a month.",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "No deadline is posted. General meetings are the first Tuesday of every month at 5:00 p.m.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Get the application from the program page. Bring it to a meeting, or email it first to volt@buenapark.com. Parents can come to meetings too.",
+  "needs_work_permit": false,
+  "url": "https://www.buenapark.com/city_departments/community_services/v_o_l_t_program.php",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.buenapark.com/city_departments/community_services/v_o_l_t_program.php",
+   "https://www.buenapark.com/city_departments/community_services/our_committee.php"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "Meetings are at the Buena Park Community Center, 6688 Beach Blvd. Call (714) 562-3860. There is also a V.O.L.T. Committee of 7 teens with a one year term. Its page says applications open in November and interviews are in December. It gives no year or closing date, so call to check.",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -26115,6 +26200,47 @@
   "limited": true
  },
  {
+  "id": "crystal-cove-fire-ecology-high-school-internship",
+  "name": "Crystal Cove Fire Ecology High School Internship",
+  "org": "Crystal Cove Conservancy",
+  "regions": [
+   "orange-county"
+  ],
+  "city": "Orange County, CA",
+  "type": "internship",
+  "fields": [
+   "environment",
+   "science"
+  ],
+  "what_you_do": "Work with scientists and land managers to study how fire changes Orange County land. You look at plants, wildlife and soil. You also learn about jobs in science and land care.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "Students in grades 9 to 12 who go to high school in Orange County.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid.",
+  "season": "school-year",
+  "duration": "October 2026 to May 2027. Saturday field days and a one hour Zoom on Wednesday afternoons.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026-27 deadline was Sept 13, 2026. Applications are closed. Dates for next year are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Check the program page for the next round. Questions: Brent Castanon, brent@crystalcove.org, or 949.376.6200.",
+  "needs_work_permit": false,
+  "url": "https://crystalcove.org/fire-ecology-high-school-internship/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://crystalcove.org/internship-programs/",
+   "https://crystalcove.org/fire-ecology-high-school-internship/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "These are last year's dates. Next year's dates are not posted yet. Partners are California State Parks, Irvine Ranch Conservancy and UC Irvine. The program page says this year's dates could still change.",
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
   "opens_iso": null,
   "apply_url": null,
   "min_age": null,
@@ -26524,6 +26650,48 @@
   "priority": 2,
   "notes": "Past events: Hack Cupertino, Pizza and Politics, a teen speaker series and the Cupertino Spelling Bee. Members plan an event about every other month. The 2027 last day is not posted. Last year it closed in early May.",
   "verified_on_label": "Oct 16, 2026",
+  "limited": true
+ },
+ {
+  "id": "cypress-youth-action-committee",
+  "name": "Cypress Youth Action Committee (YAC)",
+  "org": "City of Cypress Recreation and Community Services",
+  "regions": [
+   "orange-county"
+  ],
+  "city": "Cypress, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "social-impact",
+   "education"
+  ],
+  "what_you_do": "Help at city events and go to monthly meetings and City Council meetings. You do research for the city plan. You also help tutor elementary students.",
+  "min_age": null,
+  "max_age": 18,
+  "grades": "9 to 12",
+  "who_can_apply": "High school students in grades 9 to 12, no older than 18. You must live in Cypress or go to high school in Cypress. You need a 2.5 GPA, not counting PE.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer. You must do at least 40 volunteer hours.",
+  "season": "school-year",
+  "duration": "September 2026 to May 2027, first Wednesday of each month",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Applications for 2026-27 ran May 11 to July 16, 2026, or until 40 came in. They are closed now. Dates for next year are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Get the form on the program page or at the Cypress Community Center. Turn it in at the center in person. Email and mail were not accepted last time. You also have an interview.",
+  "needs_work_permit": false,
+  "url": "https://www.cypressca.org/activities/teen-activities/yac",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.cypressca.org/activities/teen-activities/yac"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "These are last year's dates. Next year's dates are not posted yet. Space is limited. The center is at 5700 Orange Ave. Call (714) 229-6780.",
+  "verified_on_label": "Nov 2, 2026",
   "limited": true
  },
  {
@@ -47070,6 +47238,47 @@
   "limited": true
  },
  {
+  "id": "la-habra-youth-committee",
+  "name": "La Habra Youth Committee",
+  "org": "City of La Habra Community Services",
+  "regions": [
+   "orange-county"
+  ],
+  "city": "La Habra, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Be a youth leader at city events like La Habra Races and National Night Out. You plan service projects and fun events for local kids. You also learn how city government works.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Students at local public or private intermediate and high schools. La Habra residents who go to school outside the city or who are home schooled can also apply.",
+  "paid_type": "not-stated",
+  "pay_detail": "The program page does not mention pay.",
+  "season": "school-year",
+  "duration": "August 2026 to May 2027, on a set Tuesday, 5:15 to 6:30 p.m.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026-27 deadline was July 9, 2026 at 5:00 p.m. Next year's dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Fill out the Google Form linked on the program page when the next round opens. Questions: Melissa Rivera, 562-383-4200.",
+  "needs_work_permit": null,
+  "url": "https://www.lahabraca.gov/854/Youth-Committee",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.lahabraca.gov/854/Youth-Committee"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "This date is from last year. Next year's date is not posted yet. You must go to meetings and can miss no more than two. You must also go to one City Council or Commission meeting. Members are honored at a City Council meeting in June.",
+  "verified_on_label": "Nov 2, 2026",
+  "limited": true
+ },
+ {
   "regions": [
    "los-angeles"
   ],
@@ -48235,6 +48444,49 @@
    "https://www.memorialcare.org/sites/default/files/_images/content/Volunteer/Adult-Application-Form-SMC.pdf"
   ],
   "verified_on_label": "Nov 2, 2026"
+ },
+ {
+  "id": "laguna-niguel-youth-committee",
+  "name": "Laguna Niguel Youth Committee",
+  "org": "City of Laguna Niguel",
+  "regions": [
+   "orange-county"
+  ],
+  "city": "Laguna Niguel, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Plan teen events and a youth job fair. You keep lists of youth jobs and volunteer spots. You also help at city events and give the city a teen point of view.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "High school students who live in Laguna Niguel and have a GPA of 2.25 or higher.",
+  "paid_type": "not-stated",
+  "pay_detail": "The program page does not mention pay.",
+  "season": "school-year",
+  "duration": "Two years or until you finish high school. First Thursday of each month, September to May, at 7:00 p.m.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 round ran April 6 to May 1, 2026, closing at 5:00 p.m. Dates for 2027 are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Apply online when the next round opens. The link is on the city recruitment flyer. Questions: YouthCommittee@cityoflagunaniguel.org or (949) 425-5100.",
+  "needs_work_permit": null,
+  "url": "https://www.cityoflagunaniguel.org/46/Youth-Committee",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.cityoflagunaniguel.org/46/Youth-Committee",
+   "https://www.cityoflagunaniguel.org/1404/General-Information-and-Vacancies",
+   "https://www.cityoflagunaniguel.org/DocumentCenter/View/30325/2026-Recruitment-Flyer-1"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "These are last year's dates. The city is taking applications for some other committees through Nov 13, 2026. As of Nov 2, 2026, that list shows no open Youth Committee seat. You can ask the Deputy City Clerk at (949) 362-4302 if a seat opens.",
+  "verified_on_label": "Nov 2, 2026",
+  "limited": true
  },
  {
   "grades": "9 and up",
@@ -61494,6 +61746,50 @@
   ],
   "priority": 1,
   "notes": "Chosen students need a TB test and proof of vaccines. They also go to registration, orientation, training and shadowing shifts. The earliest start is usually March. Shifts are Monday to Friday 4 to 8 p.m., or on weekends. There are no summer-only spots. Email MHAuxiliary@providence.org or call 949-364-1400 ext. 7944.",
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
+  "id": "mission-viejo-library-teen-volunteers",
+  "name": "Mission Viejo Library Teen Volunteers",
+  "org": "Mission Viejo Library",
+  "regions": [
+   "orange-county"
+  ],
+  "city": "Mission Viejo, CA",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "arts-media",
+   "social-impact"
+  ],
+  "what_you_do": "Write posts for the Teen Voice Blog from home, or drop in to the Teen Volunteer Club at the library. Each blog post earns 1 service hour, or 2 if you write about an event you went to.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "6 to 12 (Teen Volunteer Club)",
+  "who_can_apply": "Teen Volunteer Club is for grades 6 to 12. The page lists no age or home rules for the Teen Voice Blog.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer. You earn community service hours.",
+  "season": "year-round",
+  "duration": "Blog is ongoing. Club meets the fourth Thursday, January to October, 6 to 8 p.m.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "Teen Voice Blog sign-ups are ongoing. The club has no November or December meetings on its posted schedule. Teen Advisory Board info event: Dec 9, 2026, 4:30 to 5:30 p.m.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "For the blog, fill out the application linked on the program page. For the club, just come. No sign-up or training is needed. Questions: libvolunteers@cityofmissionviejo.org.",
+  "needs_work_permit": false,
+  "url": "https://www.missionviejo.gov/library/services/teen-services",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.missionviejo.gov/library/services/teen-services",
+   "https://www.missionviejo.gov/events/teen-advisory-board",
+   "https://www.missionviejo.gov/events/teen-advisory-board-tab-open-house",
+   "https://www.missionviejo.gov/teen-services"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "The Teen Advisory Board is for grades 9 to 12. It meets once a month to plan teen programs. City pages do not agree on its dates, and one still lists June 15 to July 31 with no year. Go to the Dec 9 event or call 949-452-8342. The library is at 100 Civic Center.",
   "verified_on_label": "Nov 2, 2026"
  },
  {
@@ -75602,6 +75898,46 @@
   "verified_on_label": "Nov 2, 2026"
  },
  {
+  "id": "octa-teen-council",
+  "name": "OCTA Teen Council",
+  "org": "Orange County Transportation Authority",
+  "regions": [
+   "orange-county"
+  ],
+  "city": "Orange, CA",
+  "type": "leadership",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Learn about OCTA projects on topics like land use, planning and funding. You share ideas that shape OCTA programs. You also go to workshops and volunteer at community events.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "High school students. The program page does not list other rules, so ask OCTA.",
+  "paid_type": "not-stated",
+  "pay_detail": "The program page does not mention pay.",
+  "season": "school-year",
+  "duration": "School year. Six Tuesday meetings, Aug 25, 2026 to April 27, 2027, 5:30 to 7:00 p.m.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The program page says applications open every spring. Exact 2027 dates are not posted as of Nov 2, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Check the program page in the spring for the application. Questions: teencouncil@octa.net.",
+  "needs_work_permit": null,
+  "url": "https://octa.net/getting-around/bus/oc-bus/how-to-ride/youth-programs/octa-teen-council",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://octa.net/getting-around/bus/oc-bus/how-to-ride/youth-programs/octa-teen-council"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "Meetings are at OCTA Headquarters, 550 S. Main Street, Orange. Dates can change. Last spring's exact dates are not shown on the program page.",
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
   "id": "ocwdb-ready-set-oc-young-adult",
   "name": "OC Workforce Development Board READY S.E.T. OC (WIOA Young Adult Program)",
   "org": "Orange County Workforce Development Board (OCWDB)",
@@ -82824,6 +83160,49 @@
   ],
   "notes": "Market Crew is for Farm Crew graduates. Farm: 923 Barker Rd, Pittsfield.",
   "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "placentia-library-teen-volunteers",
+  "name": "Placentia Library Teen Volunteers and Teen Action Crew",
+  "org": "Placentia Library District",
+  "regions": [
+   "orange-county"
+  ],
+  "city": "Placentia, CA",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "social-impact",
+   "any"
+  ],
+  "what_you_do": "Shelve books, clean materials or help at the makerspace and big events. You can join the Teen Action Crew to plan teen events, or write book reviews for hours.",
+  "min_age": 12,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "Teens 12 to 17. You need an active Placentia Library card and a personal email. School email will not work. The Teen Review Crew is for high school students only.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer. You earn community service hours.",
+  "season": "year-round",
+  "duration": "Three month commitment for assigned jobs. Shelving is 2 hours once a week.",
+  "status": "year-round",
+  "opens_iso": null,
+  "deadline_text": "The library says it is now accepting new volunteers. No deadline is posted. The Teen Action Crew meets the 1st and 3rd Thursday, 5:00 to 7:00 p.m.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Fill out the online form for ages 12 to 17 on the volunteer page. Then finish the online orientation within 7 days of getting the link. The Teen Action Crew needs no form, but you need the orientation to earn hours.",
+  "needs_work_permit": false,
+  "url": "https://placentialibrarydistrict.ca.gov/teen-services",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://placentialibrarydistrict.ca.gov/teen-services",
+   "https://placentialibrarydistrict.ca.gov/placentia-teen-action-crew-ptac",
+   "https://placentialibrarydistrict.ca.gov/volunteer-at-the-placentia-library"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 1,
+  "notes": "A form does not promise you a spot. Shelving can have a waitlist. Book reviews earn 4 hours per book, up to 20 hours a calendar year. Hours are signed after you reach 10, and it takes 2 weeks. Email volunteers@placentialibrarydistrict.ca.gov or call (714) 528-1906.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "id": "planting-justice-youth-internships",
