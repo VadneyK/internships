@@ -43,7 +43,6 @@ export function scan(programs) {
 */
 const ALLOW = {
   "A:champaign-illinois-arabic-high-school-program": "only the early admission date passed; the April 2027 deadlines are ahead",
-  "A:college-park-umd-sparc-robotics-certificate": "text says the page does not say whether applications are closed; it shows a Dec 1, 2026 deadline",
   "A:cook-memorial-library-teen-volunteers": "the closed items are the Summer 2026 period and the Seed Library; Fall 2026 applications are open until Oct 15, 2026",
   "A:lansing-msu-dual-enrollment": "only the 2026 term deadlines passed; the Dec 19, 2026 deadline is ahead",
   "A:new-brunswick-franklin-township-library-teen-volunteering": "only Summer 2026 Reading Buddies is closed; the 2026-27 form is open",

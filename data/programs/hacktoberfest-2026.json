@@ -19,12 +19,12 @@
   "pay_detail": "Free",
   "season": "fall",
   "duration": "All of October 2026",
-  "status": "event",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Runs through October 2026; sign in with MyMLH.",
-  "deadline_iso": "2026-10-31",
-  "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Sign in on hacktoberfest.com with MyMLH, or register for a local fest.",
+  "deadline_text": "Hacktoberfest 2026 ended Oct 31, 2026. It ran all of October. 2027 dates are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "The 2026 event is over. Check the official site next fall for how to sign up.",
   "needs_work_permit": false,
   "url": "https://hacktoberfest.com/",
   "apply_url": null,
@@ -32,7 +32,7 @@
     "https://hacktoberfest.com/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-04",
   "priority": 2,
-  "notes": "The page states no age limit; check each local fest for age rules. Pull requests no longer count toward rewards in 2026. Earn three stickers to get a sticker pack by mail, and you must sign in with MyMLH and give an address."
+  "notes": "2027 dates are not posted as of Nov 4, 2026. The page says only that organizers want to do it again. The page states no age limit; check each local fest for age rules."
 }
