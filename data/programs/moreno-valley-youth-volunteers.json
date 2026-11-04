@@ -1,0 +1,40 @@
+{
+  "id": "moreno-valley-youth-volunteers",
+  "name": "Moreno Valley Youth Volunteers (Library, Community Garden, Senior Center)",
+  "org": "City of Moreno Valley",
+  "regions": [
+    "inland-empire"
+  ],
+  "city": "Moreno Valley, CA",
+  "type": "volunteer",
+  "fields": [
+    "education",
+    "environment",
+    "social-impact"
+  ],
+  "what_you_do": "Earn your school service hours with the city. Help at one of three library branches, the Community Garden or the Senior Center. Or join a one-day Beautify MoVal park cleanup.",
+  "min_age": 14,
+  "max_age": 17,
+  "grades": null,
+  "who_can_apply": "Ages 14 to 17 with a parent or guardian's OK. One-day Beautify MoVal cleanups are open to all residents, kids and teens too.",
+  "paid_type": "unpaid",
+  "pay_detail": null,
+  "season": "year-round",
+  "duration": "Ongoing at the library, garden or senior center. Beautify MoVal is one day, four times a year, and hours are signed off that day.",
+  "status": "rolling",
+  "opens_iso": null,
+  "deadline_text": "No deadline. Apply any time. The page says spots fill up fast near the end of the school year, so finish your hours early.",
+  "deadline_iso": null,
+  "deadline_confidence": "rolling",
+  "how_to_apply": "Apply online through the city's volunteer system (VIMS). The department calls you to set up an orientation.",
+  "needs_work_permit": false,
+  "url": "https://www.moval.org/resident_services/volunteer/index.html",
+  "apply_url": null,
+  "sources_fetched": [
+    "https://www.moval.org/resident_services/volunteer/index.html"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-10-28",
+  "priority": 2,
+  "notes": "One line on the page says the youth program is for high school freshmen aged 14 to 17, and others say youth 14 to 17, so ask if you are older than a freshman. The city does not take court ordered hours; call Riverside County 2-1-1 for those. Adults 18 and up have nine departments to pick from."
+}

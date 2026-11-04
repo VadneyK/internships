@@ -432,7 +432,8 @@ const BUDGET = {
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 1499779 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco raw 1498000 to 1499800.
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 247931 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco gzip 247700 to 248000.
   // 2026-10-26: three Inland Empire cards (Corona, Rancho Cucamonga) on top of PRs 98 to 101. PENDING PERSON APPROVAL. 1499800 to 1503400 (1503367 measured); gzip 248000 to 248700 (248610 measured).
-  "?at=city:san-francisco": { raw: 1503400, gzip: 248700, label: "a Bay Area city" },
+  // 2026-10-28: eight Inland Empire cards (Fontana, Ontario, San Bernardino, Moreno Valley, Rancho Cucamonga). PENDING PERSON APPROVAL. 1503400 to 1513400 (1513365 measured); gzip 248700 to 250400 (250328 measured).
+  "?at=city:san-francisco": { raw: 1513400, gzip: 250400, label: "a Bay Area city" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston raw 1057000 to 1075700.
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston gzip 168000 to 170700.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston raw 1075700 to 1096100.
@@ -480,7 +481,8 @@ const BUDGET = {
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 1216183 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston raw 1214400 to 1216200.
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 188935 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:boston gzip 188700 to 189000.
   // 2026-10-26: three Inland Empire cards (Corona, Rancho Cucamonga) on top of PRs 98 to 101. PENDING PERSON APPROVAL. 1216200 to 1216700 (1216649 measured).
-  "?at=city:boston": { raw: 1216700, gzip: 189000, label: "Boston" },
+  // 2026-10-28: eight Inland Empire cards (Fontana, Ontario, San Bernardino, Moreno Valley, Rancho Cucamonga). PENDING PERSON APPROVAL. 1216700 to 1219300 (1219205 measured); gzip 189000 to 189400 (189314 measured).
+  "?at=city:boston": { raw: 1219300, gzip: 189400, label: "Boston" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska raw 867100 to 886400.
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska gzip 130500 to 132800.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=state:nebraska raw 886400 to 937900.
@@ -527,7 +529,8 @@ const BUDGET = {
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 1040780 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=state:nebraska raw 1039000 to 1040800.
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 154252 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=state:nebraska gzip 154000 to 154300.
   // 2026-10-26: three Inland Empire cards (Corona, Rancho Cucamonga) on top of PRs 98 to 101. PENDING PERSON APPROVAL. 1040800 to 1041500 (1041414 measured).
-  "?at=state:nebraska": { raw: 1041500, gzip: 154300, label: "a Plains state" },
+  // 2026-10-28: eight Inland Empire cards (Fontana, Ontario, San Bernardino, Moreno Valley, Rancho Cucamonga). PENDING PERSON APPROVAL. 1041500 to 1044000 (1043970 measured); gzip 154300 to 154600 (154582 measured).
+  "?at=state:nebraska": { raw: 1044000, gzip: 154600, label: "a Plains state" },
 };
 for (const [search, b] of Object.entries(BUDGET)) {
   test("first-load data bytes for " + b.label + " stay under the pinned budget and far under the whole lite file", async () => {

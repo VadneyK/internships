@@ -41,8 +41,9 @@ const SOON_ONLY = ["name", "org", "city", "url"];
 // 2026-10-19: the 7 Michigan and Ohio campus cards (#68) after #67, 634425 bytes. Approved by Kentaro 2026-10-19 (merge train). 607600 to 634500.
 // 2026-10-19 issue 24 Texas and Twin Cities second pass read in a real browser (+6 cards, 2,692 programs; PENDING PERSON APPROVAL): 607500 to 608500.
 // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 635601 bytes. Approved by Kentaro 2026-10-19 (merge train). 608500 to 635700.
-test("home file is under 635700 bytes", () => {
-  assert.ok(fs.statSync(path.join(ROOT, "data/entries-home.json")).size < 635700);
+// 2026-10-28: eight Inland Empire cards (Fontana, Ontario, San Bernardino, Moreno Valley, Rancho Cucamonga). PENDING PERSON APPROVAL. 635700 to 637100 (637075 measured).
+test("home file is under 637100 bytes", () => {
+  assert.ok(fs.statSync(path.join(ROOT, "data/entries-home.json")).size < 637100);
 });
 
 test("only closing-soon rows carry name, org, city and url", () => {
