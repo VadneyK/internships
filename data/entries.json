@@ -27534,7 +27534,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "fields": [
    "health"
   ],
@@ -27560,7 +27560,7 @@
   "sources_fetched": [
    "https://www.laspalmasdelsolhealthcare.com/locations/del-sol-medical-center/about-us/volunteers"
   ],
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "delawarevalley-job-corps-center",
@@ -30626,7 +30626,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "fields": [
    "environment",
    "social-impact"
@@ -30653,7 +30653,7 @@
   "sources_fetched": [
    "https://elpasoanimalservices.org/how-you-can-help/volunteer/"
   ],
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "regions": [
@@ -30666,7 +30666,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "fields": [
    "health",
    "social-impact"
@@ -30693,47 +30693,7 @@
   "sources_fetched": [
    "https://www.elpasohealth.com/volunteer-program.html"
   ],
-  "verified_on_label": "Oct 13, 2026"
- },
- {
-  "regions": [
-   "texas"
-  ],
-  "city": "El Paso, TX",
-  "grades": null,
-  "opens_iso": null,
-  "deadline_iso": null,
-  "apply_url": "https://www.governmentjobs.com/careers/elpaso/jobs/3761040/volunteer",
-  "needs_work_permit": null,
-  "verified": "fetched",
-  "verified_on": "2026-10-13",
-  "fields": [
-   "education",
-   "social-impact"
-  ],
-  "id": "el-paso-public-library-volunteer",
-  "name": "El Paso Public Library volunteer program",
-  "org": "El Paso Public Library",
-  "type": "volunteer",
-  "what_you_do": "Volunteer at the public library. The program page does not list the tasks. Apply through the link on the program page first.",
-  "min_age": 14,
-  "max_age": null,
-  "who_can_apply": "Age 14 or older. Volunteers 17 and up must have a state-issued ID.",
-  "paid_type": "unpaid",
-  "pay_detail": "Unpaid volunteer role",
-  "season": "year-round",
-  "duration": "Not stated on the program page",
-  "status": "year-round",
-  "deadline_text": "No deadline stated on the program page.",
-  "deadline_confidence": "rolling",
-  "how_to_apply": "Click the link on the program page. It goes to the City of El Paso volunteer page on governmentjobs.com. Apply there.",
-  "url": "https://www.elpasolibrary.org/connect/volunteer",
-  "priority": 2,
-  "notes": "The program page does not say which library branches need teen help. Call the Main Library at (915) 212-READ to ask.",
-  "sources_fetched": [
-   "https://www.elpasolibrary.org/connect/volunteer"
-  ],
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "regions": [
@@ -30746,7 +30706,48 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
+  "fields": [
+   "education",
+   "social-impact"
+  ],
+  "id": "el-paso-public-library-volunteer",
+  "name": "El Paso Public Library volunteer program",
+  "org": "El Paso Public Library",
+  "type": "volunteer",
+  "what_you_do": "Volunteer at the public library. The program page does not list the tasks.",
+  "min_age": 14,
+  "max_age": null,
+  "who_can_apply": "Age 14 or older. Volunteers 17 and up must have a state-issued ID.",
+  "paid_type": "unpaid",
+  "pay_detail": "Unpaid volunteer role",
+  "season": "year-round",
+  "duration": "Not stated on the program page",
+  "status": "unconfirmed",
+  "deadline_text": "No deadline stated on the program page. As of Nov 4, 2026, the city posting it links to shows a closing date of Feb 19, 2025. Call to ask if the library still takes volunteers.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "The program page links to a City of El Paso volunteer posting. That posting shows a closing date of Feb 19, 2025. Call the Main Library at (915) 212-READ to ask how to apply.",
+  "url": "https://www.elpasolibrary.org/connect/volunteer",
+  "priority": 2,
+  "notes": "The program page does not say which library branches need teen help. Call the Main Library at (915) 212-READ to ask.",
+  "sources_fetched": [
+   "https://www.elpasolibrary.org/connect/volunteer",
+   "https://www.governmentjobs.com/careers/elpaso/jobs/3761040/volunteer"
+  ],
+  "verified_on_label": "Nov 4, 2026"
+ },
+ {
+  "regions": [
+   "texas"
+  ],
+  "city": "El Paso, TX",
+  "grades": null,
+  "opens_iso": null,
+  "deadline_iso": null,
+  "apply_url": null,
+  "needs_work_permit": null,
+  "verified": "fetched",
+  "verified_on": "2026-11-04",
   "fields": [
    "any"
   ],
@@ -30773,7 +30774,7 @@
   ],
   "priority": 1,
   "notes": "The program page says its help is most useful for veterans and military spouses. It is also useful for youth in foster care and young adults who left high school. The page lists a hiring event on Nov 10, 2026 from 10 AM to 2 PM at Bassett Place. The event is called Hiring Red, White & You.",
-  "verified_on_label": "Oct 13, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -45075,10 +45076,10 @@
    "https://www.jobcorps.gov/admissions-process"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "The center page footer lists 2800 Airport Hwy 21 E, San Marcos, TX 78667. Job Corps is a training program, not a job. Texas has other Job Corps centers that are not covered by this card.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "job-corps-washington-centers",
@@ -102009,10 +102010,10 @@
    "https://texas4-h.tamu.edu/about/join/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "The October 31 date is the price cutoff, not a closing date. Counties customize their programs, so call your county Extension office first. This is a club and leadership program, not a paid job.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "High school aged",
@@ -102020,7 +102021,7 @@
   "max_age": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-11",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "deadline_iso": null,
   "priority": 2,
@@ -102054,7 +102055,7 @@
   "sources_fetched": [
    "https://texas4-h.tamu.edu/ambassadors/"
   ],
-  "verified_on_label": "Oct 11, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Senior level",
@@ -102062,7 +102063,7 @@
   "max_age": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-11",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "deadline_iso": null,
   "priority": 2,
@@ -102083,17 +102084,17 @@
   "pay_detail": "Cost not stated on the program page.",
   "season": "year-round",
   "duration": "Not stated on the program page.",
-  "status": "unconfirmed",
-  "deadline_text": "2026 Council training was July 27 to 30, 2026 in College Station. Ask your District 4-H Specialist for the district application deadline. The page does not list an At-Large deadline.",
+  "status": "closed-expect-reopen",
+  "deadline_text": "The At-Large deadline for the 2026 to 2027 council was March 26, 2026. Dates for the next council are not posted. 2026 Council training was July 27 to 30, 2026 in College Station. Ask your District 4-H Specialist for the district application deadline.",
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Send in the 2026-2027 At-Large Delegate application and the 2026-2027 Council Membership Contract. Or run in your district. Ask your District 4-H Specialist for the district due date.",
+  "how_to_apply": "For an At-Large seat, apply in 4HOnline with a letter, a 2-minute video and a photo. Sign the Council Membership Contract. Or run in your district. Ask your District 4-H Specialist for the district due date.",
   "url": "https://texas4-h.tamu.edu/wp-content/uploads/council_at_large_council_member_application_2026_2027.pdf",
   "notes": "All delegates must sign the council contract for 2026-2027. Both kinds of delegate sign it.",
   "sources_fetched": [
    "https://texas4-h.tamu.edu/ambassadors/",
    "https://texas4-h.tamu.edu/wp-content/uploads/council_at_large_council_member_application_2026_2027.pdf"
   ],
-  "verified_on_label": "Oct 11, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "texas-american-legion-boys-state",
@@ -102118,7 +102119,7 @@
   "duration": "One week. The 2026 session ran Sunday June 7 to Friday June 12, 2026.",
   "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "2027 dates and the application deadline are not posted on the program pages. The 2026 session ran June 7 to 12, 2026. The site shows an Applications Now Open banner, but it posts no deadline or 2027 dates, so ask your school and local Post.",
+  "deadline_text": "2027 dates and the application deadline are not posted on the program pages. The 2026 session ran June 7 to 12, 2026. The site shows a banner that says applications are open, but it posts no deadline or 2027 dates, so ask your school and local Post.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
   "how_to_apply": "A school official nominates you. That can be a principal, teacher, coach or counselor. A local American Legion Post certifies and sponsors you. Ask your counselor or contact your local Post. The program's site is texasboysstate.com.",
@@ -102133,10 +102134,10 @@
    "https://www.texasboysstate.com/scholarships"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Boys State is for boys. Girls State is a separate program. The site says the program asks for one or more boys nominated from each accredited public or private high school. Top delegates may be picked for Boys Nation. Confirm the 2027 dates and fee with your local Post.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -102174,10 +102175,10 @@
    "https://alatexas.org/files/Girls%20State/GirlsStateInformationRegistrationInstructions%2025-26.pdf"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Girls State is for girls. Texas Boys State is a separate program run by the American Legion. Students chosen must attend the whole session to earn the certificate and pin.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -102256,10 +102257,10 @@
    "https://tmd.texas.gov/texas-challenge-academy"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "This is for teens who are off track in school, not a job program. Campus: 600 HWY 3013 West, Eagle Lake, TX 77434.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "texas-childrens-north-austin-summer-junior-volunteer",
@@ -102334,10 +102335,10 @@
    "https://www.texasdeca.org/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "DECA's page lists 352 Texas high school chapters. The state website does not explain joining step by step, so start with your school's advisor.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "9 to 12",
@@ -102345,7 +102346,7 @@
   "max_age": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-11",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "deadline_iso": null,
   "priority": 2,
@@ -102377,7 +102378,7 @@
    "https://www.uhcl.edu/environmental-institute/texas-envirothon/current-competition/rules"
   ],
   "notes": "Teams need an adult advisor plus chaperones of each gender. The school or group pays for travel, meals and lodging. Teams with fewer than five can play but may lose points on the oral part.",
-  "verified_on_label": "Oct 11, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "texas-ffa-association",
@@ -102397,7 +102398,7 @@
   "min_age": null,
   "max_age": null,
   "grades": "Agricultural science classes start no earlier than 7th grade. Junior FFA starts at 3rd grade.",
-  "who_can_apply": "Students who sign up for an agricultural science class at a school with an FFA chapter. The FAQ says the grade depends on the district and that home-schooled students are not covered by the program. Junior FFA needs age 8 and 3rd grade.",
+  "who_can_apply": "Students who sign up for an agricultural science class at a school with an FFA chapter. The FAQ says the grade depends on the district. Home-schooled students are not covered unless the local district allows it. Junior FFA needs age 8 and 3rd grade.",
   "paid_type": "fee-based",
   "pay_detail": "National dues $7 plus Texas dues $9 is $16 a year, not counting area, district or local dues. Junior FFA is $9 a year (state only).",
   "season": "school-year",
@@ -102418,10 +102419,10 @@
    "https://www.texasffa.org/faq"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Junior FFA is a state-only membership at $9 a year, says the membership page.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "texas-hosa",
@@ -102458,10 +102459,10 @@
    "https://www.texashosa.org/membership/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "State office: 201 W. Hillside Road Suite 26, Laredo, TX 78041. Ask your advisor for the fee amount and conference dates.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "texas-parks-wildlife-state-parks-volunteer",
@@ -102498,10 +102499,10 @@
    "https://tpwd.texas.gov/volunteer/faqs.phtml"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Park host jobs are long RV-based stays and are not a fit for most teens. The page lists Buffalo Soldiers, State Park Ambassadors and Texas Outdoor Family as special programs, but this card does not cover their age rules. Volunteers 18 and older in ongoing roles must pass a yearly background check.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "texas-tamu-react-chemistry-summer-research",
@@ -102539,10 +102540,10 @@
    "https://artsci.tamu.edu/news/2025/08/texas-am-chemistry-launches-new-summer-program-for-high-school-students.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "The program ran for the first time in 2025 (July 14 to 25). The fee and rules above come from the 2026 pages, so check them again when the 2027 application opens. The program site is a Google Sites page run by the department.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "texas-twc-summer-earn-and-learn",
@@ -102579,10 +102580,10 @@
    "https://www.twc.texas.gov/programs/vocational-rehabilitation/board-requirements/summer-earn-learn"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Only for students with disabilities. Texas child labor hour limits for 14 and 15 year olds still apply. The pages do not give a posted 2027 timeline.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "texas-wing-civil-air-patrol-cadets",
@@ -102632,7 +102633,7 @@
   "max_age": 18,
   "apply_url": "https://forms.gle/UuVTDvT82772RQPa8",
   "verified": "fetched",
-  "verified_on": "2026-10-11",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "deadline_iso": null,
   "priority": 2,
@@ -102663,7 +102664,7 @@
   "sources_fetched": [
    "https://tssrm-youthrangeworkshop.com/"
   ],
-  "verified_on_label": "Oct 11, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "thanksgiving-point-growing-leaders",
@@ -103167,7 +103168,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "fields": [
    "health"
   ],
@@ -103193,7 +103194,7 @@
   "sources_fetched": [
    "https://ttuhscep.edu/som/outreach/summer-camp.aspx"
   ],
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "tucker-youth-council",
@@ -108458,7 +108459,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "fields": [
    "engineering",
    "science"
@@ -108485,7 +108486,7 @@
   "sources_fetched": [
    "https://www.utep.edu/engineering/mining-engineering/mining-summer-camp/"
   ],
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "regions": [
@@ -108498,7 +108499,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "fields": [
    "education"
   ],
@@ -108509,23 +108510,24 @@
   "what_you_do": "Get free classes to get ready for college. Get leadership training and ways to help the community all year. Students stay in the program until they finish high school and their first summer at UTEP.",
   "min_age": null,
   "max_age": null,
-  "who_can_apply": "High school students at schools in the program. Low-income students who could be the first in their family to go to college must qualify. Schools: Bel Air, Del Valle, Parkland, Riverside and Ysleta (YISD). Also Eastlake, El Dorado, Fabens, Pebble Hills, Socorro and Tornillo (SFT ISDs).",
+  "who_can_apply": "High school students who attend or live near a school in the program. You must plan to go to college. You must be low income, or neither parent has a bachelor's degree. Schools: Bel Air, Del Valle, Parkland, Riverside and Ysleta (YISD). Also Eastlake, El Dorado, Fabens, Pebble Hills, Socorro and Tornillo (SFT ISDs).",
   "paid_type": "unpaid",
   "pay_detail": "Free to students.",
   "season": "year-round",
   "duration": "Through high school graduation and the first summer semester at UTEP",
   "status": "unconfirmed",
-  "deadline_text": "Not stated on the program page. Email or call to ask about selection.",
+  "deadline_text": "No deadline is stated. The application page says first come, first considered. As of Nov 4, 2026, its online form shows as unavailable. Email or call to ask.",
   "deadline_confidence": "unknown",
-  "how_to_apply": "Not stated on the program page. Email upwardbound@utep.edu or call (915) 747-5062.",
+  "how_to_apply": "A student and a parent must both finish the application. The online form shows as unavailable as of Nov 4, 2026. Email upwardbound@utep.edu or call (915) 747-5062 to ask how to apply.",
   "url": "https://www.utep.edu/enrollment-management/upward-bound/program-services/",
   "sources_fetched": [
    "https://www.utep.edu/enrollment-management/upward-bound/program-services/",
-   "https://www.utep.edu/enrollment-management/upward-bound/about/mission-goals.html"
+   "https://www.utep.edu/enrollment-management/upward-bound/about/mission-goals.html",
+   "https://www.utep.edu/enrollment-management/upward-bound/application/index.html"
   ],
   "priority": 2,
   "notes": "Federally funded. Students must qualify to be selected. This is a college prep program, not a job.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "opens_iso": null,
@@ -108701,7 +108703,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "fields": [
    "health",
    "social-impact"
@@ -108728,7 +108730,7 @@
   "sources_fetched": [
    "https://www.va.gov/el-paso-health-care/work-with-us/volunteer-or-donate/"
   ],
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "min_age": null,
