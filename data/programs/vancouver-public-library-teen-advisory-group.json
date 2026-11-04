@@ -20,11 +20,11 @@
   "pay_detail": "Unpaid volunteer. Members earn community service hours.",
   "season": "school-year",
   "duration": "September to June. One hour every other week (4 to 5 p.m.), online on Teams or at a branch.",
-  "status": "rolling",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "No deadline posted. Fill in the online form any time. On Oct 19, 2026 the Kerrisdale and Kitsilano groups were full.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Fill in the online application form linked on the TAG page. Pick the online group or a branch group (Central Library, Kensington, Kerrisdale, Kitsilano or Renfrew). Questions: teens@vpl.ca.",
   "needs_work_permit": null,
   "url": "https://www.vpl.ca/programs/teen-advisory-group",
@@ -33,8 +33,8 @@
     "https://www.vpl.ca/programs/teen-advisory-group",
     "https://www.vpl.ca/teens"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 1,
-  "notes": "Some branch groups fill up, so the online Teams group may be the easiest to join. Event listings on the library calendar show exact dates and access details."
+  "notes": "Some branch groups fill up, so the online Teams group may be the easiest to join. Event listings on the library calendar show exact dates and access details. As of Nov 4, 2026, the library site blocked automated reading, so confirm these details first."
 }

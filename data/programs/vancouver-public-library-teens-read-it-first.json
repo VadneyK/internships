@@ -19,11 +19,11 @@
   "pay_detail": "Unpaid. You get one community service hour for every 100 pages of the book, confirmed by letter.",
   "season": "year-round",
   "duration": "At your own pace, one book at a time",
-  "status": "rolling",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "No deadline. Books go first come, first served.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Watch the teensatvpl Instagram for featured books. Ask for one by Instagram message or at teens@vpl.ca. Pick it up at your nearest branch, then email your rating and review to teens@vpl.ca.",
   "needs_work_permit": null,
   "url": "https://www.vpl.ca/programs/teens-read-it-first",
@@ -32,8 +32,8 @@
     "https://www.vpl.ca/programs/teens-read-it-first",
     "https://www.vpl.ca/teens"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 3,
-  "notes": "Share your opinion of the book, not a summary of the plot. Reviews of only one or two lines are sent back for more detail."
+  "notes": "Share your opinion of the book, not a summary of the plot. Reviews of only one or two lines are sent back for more detail. As of Nov 4, 2026, the library site blocked automated reading, so confirm these details first."
 }

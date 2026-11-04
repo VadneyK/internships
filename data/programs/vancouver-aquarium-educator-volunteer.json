@@ -20,7 +20,7 @@
   "pay_detail": "Unpaid volunteer.",
   "season": "year-round",
   "duration": "One shift a week for at least 3 months",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "Recruitment happens once a year in the spring. No 2027 date is posted. Sign up on the page to get an email when it opens.",
   "deadline_iso": null,
@@ -32,8 +32,8 @@
   "sources_fetched": [
     "https://www.vanaqua.org/volunteer"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 2,
-  "notes": "The aquarium also has a Marine Mammal Rescue Centre volunteer role and practicums. Those are for ages 18 and up, so they are not on this card."
+  "notes": "The aquarium also has a Marine Mammal Rescue Centre volunteer role and practicums. Those are for ages 18 and up, so they are not on this card. As of Nov 4, 2026, the aquarium site blocked automated reading, so confirm these details first."
 }
