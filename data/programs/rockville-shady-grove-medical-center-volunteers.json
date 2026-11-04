@@ -20,11 +20,11 @@
   "pay_detail": null,
   "season": "year-round",
   "duration": null,
-  "status": "rolling",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "No deadline posted. Call the Office of Volunteers to ask about openings.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Call the Office of Volunteers at 240-826-6111 to learn how to join.",
   "needs_work_permit": false,
   "url": "https://www.adventisthealthcare.com/volunteer/shady-grove-medical-center/",
@@ -32,8 +32,8 @@
   "sources_fetched": [
     "https://www.adventisthealthcare.com/volunteer/shady-grove-medical-center/"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "The page does not list a teen-only program or which roles teens can do. The hospital's Stepping Stones shadowing program needs two years of college, so it is not for high schoolers."
+  "notes": "The page does not list a teen-only program or which roles teens can do. The hospital's Stepping Stones shadowing program needs two years of college, so it is not for high schoolers. As of Nov 4, 2026, the site blocked automated reading, so confirm on the page."
 }
