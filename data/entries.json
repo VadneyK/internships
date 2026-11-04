@@ -22018,6 +22018,45 @@
   "verified_on_label": "Oct 7, 2026"
  },
  {
+  "id": "coastline-college-dual-enrollment",
+  "name": "Coastline College Dual and Concurrent Enrollment",
+  "org": "Coastline College (Coast Community College District)",
+  "regions": [
+   "orange-county"
+  ],
+  "city": "Fountain Valley, Garden Grove, Newport Beach and Westminster, CA",
+  "type": "school-pathway",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Take college classes while you are in high school. Classes can be online, hybrid or in person. Some are just for high school students and meet at your school.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "High school students who finished 8th grade. You must meet each class rule. Classes just for high school students are for Garden Grove, Huntington Beach Union, Lake Elsinore and Newport-Mesa districts.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "California residents do not pay the $46 per unit fee. You pay a $14 total charge plus books or lab fees. Partner district classes just for high school students are free.",
+  "season": "year-round",
+  "duration": "By term. Up to 11 units in fall or spring, 10 in summer, 6 in winter.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No deadline stated on the program page. Term dates are on the college calendar.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Apply at OpenCCCApply. A parent fills out the Parent Form once. Then send the High School Release Form each term, or the CCAP form for partner classes. Add classes in MyCoast. Questions: dualenrollment@coastline.edu.",
+  "needs_work_permit": false,
+  "url": "https://www.coastline.edu/admissions-and-records/dual-enrollment.php",
+  "apply_url": "https://www.opencccapply.net/gateway/apply?cccMisCode=831",
+  "sources_fetched": [
+   "https://www.coastline.edu/admissions-and-records/dual-enrollment.php"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "Students on some visas pay other tuition, so check with Admissions. Your high school decides if a class counts for graduation. Take classes for a letter grade if you want them to count for UC or CSU A-G. Staying past the 20% mark puts the class on your record.",
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
   "id": "cobb-chamber-cobb-youth-leadership",
   "name": "Cobb Youth Leadership (CYL)",
   "org": "Cobb Chamber of Commerce",
@@ -26812,6 +26851,47 @@
   "limited": true
  },
  {
+  "id": "cypress-college-dual-enrollment",
+  "name": "Cypress College Dual Enrollment and Special Admit",
+  "org": "Cypress College",
+  "regions": [
+   "orange-county"
+  ],
+  "city": "Cypress, CA",
+  "type": "school-pathway",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Take college classes while you are in high school, on the college campus or at your high school. You earn college credit. Some classes may transfer to CSU or UC.",
+  "min_age": null,
+  "max_age": null,
+  "grades": null,
+  "who_can_apply": "Dual enrollment is for some schools in four local districts. See the list on the program page. Any high school student can use the Special Admit path.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "Dual enrollment is at no cost. Special Admit waives enrollment fees, but you pay the health fee and any material fees.",
+  "season": "year-round",
+  "duration": "By semester",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No deadline stated on the program pages.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "For dual enrollment, ask the office: dualenrollment@cypresscollege.edu or (714) 484-7213. For Special Admit, fill out the main college form and the Special Admit form. Call (714) 484-7346.",
+  "needs_work_permit": false,
+  "url": "https://www.cypresscollege.edu/dual-enrollment/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.cypresscollege.edu/dual-enrollment/",
+   "https://www.cypresscollege.edu/high-school-students/",
+   "https://www.nocccd.edu/about-district/partnerships-programs/dual-enrollment"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "Partner schools are in the Anaheim Union, Fullerton Joint Union, Garden Grove and Los Alamitos districts. Check the list or ask your counselor. Special Admit students can take up to 11 units. The district page says dual enrollment students can take up to 6 units in fall or spring. The pages give no term dates.",
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
   "id": "cypress-youth-action-committee",
   "name": "Cypress Youth Action Committee (YAC)",
   "org": "City of Cypress Recreation and Community Services",
@@ -26892,6 +26972,48 @@
   "needs_work_permit": null,
   "deadline_iso": null,
   "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "dana-point-youth-board",
+  "name": "Dana Point Youth Board",
+  "org": "City of Dana Point",
+  "regions": [
+   "orange-county"
+  ],
+  "city": "Dana Point, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government",
+   "social-impact"
+  ],
+  "what_you_do": "Help at city events like Trunk or Treat and Egg Hunts. You meet to talk about issues that matter to local teens. You help get more young people into community life.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "High school",
+  "who_can_apply": "High school age teens who live in Dana Point.",
+  "paid_type": "not-stated",
+  "pay_detail": "The program page does not mention pay.",
+  "season": "school-year",
+  "duration": "Six meetings, Oct 21, 2026 to April 21, 2027. Third Wednesday, 4:30 to 6:00 p.m.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "The 2026-27 form is posted, but no deadline is listed. The first meeting was Oct 21, 2026.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Fill out the 2026-27 form on the program page. List two references who are not family. A parent signs if you are under 18. Send it to the City Clerk at ssharke@danapoint.org or 33282 Golden Lantern, Suite 203.",
+  "needs_work_permit": null,
+  "url": "https://www.danapoint.org/Community/Recreation/Youth-Board",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.danapoint.org/Community/Recreation/Youth-Board",
+   "https://www.danapoint.org/files/assets/city/v/1/recreation/documents/youth-board-application-2026-27.pdf"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "The page does not say if seats are still open this year, so call (949) 248-3500 first. Meetings are in the City Council Chambers. There is no meeting on Dec 16, 2026.",
+  "verified_on_label": "Nov 2, 2026",
+  "limited": true
  },
  {
   "id": "danville-town-volunteer-program",
@@ -78065,6 +78187,45 @@
   "verified_on_label": "Nov 2, 2026"
  },
  {
+  "id": "orange-police-teen-academy",
+  "name": "Orange Police Department Teen Academy",
+  "org": "City of Orange Police Department",
+  "regions": [
+   "orange-county"
+  ],
+  "city": "Orange, CA",
+  "type": "civic-government",
+  "fields": [
+   "law-government"
+  ],
+  "what_you_do": "Spend four mornings behind the scenes at the Orange Police Department. Officers mentor you and show you how the department works.",
+  "min_age": 14,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Teens 14 to 18 who live or go to school in the city of Orange. You must come to all 4 sessions.",
+  "paid_type": "not-stated",
+  "pay_detail": "The program page does not list a cost or pay.",
+  "season": "summer",
+  "duration": "4 days, 8:00 a.m. to 12:00 p.m.",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The 2026 class ran June 22 to 25, 2026. Applications are closed. Dates for 2027 are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Check the program page for a new form. The 2026 form is closed.",
+  "needs_work_permit": null,
+  "url": "https://www.cityoforange.org/residents/teen-academy",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://www.cityoforange.org/residents/teen-academy"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "These are last year's dates. The 2027 dates are not posted yet. The page does not say when applications open. Classes were at the Orange Police Department.",
+  "verified_on_label": "Nov 2, 2026"
+ },
+ {
   "grades": null,
   "max_age": null,
   "apply_url": null,
@@ -89218,6 +89379,47 @@
   "priority": 3,
   "notes": "Open Mon to Sat, 12 to 6 pm, at 1901 Del Paso Blvd. The Cafe Paso job training cafe is marked temporarily closed, so ask whether job training spots are open. Pay is not stated.",
   "verified_on_label": "Oct 7, 2026"
+ },
+ {
+  "id": "saddleback-college-dual-enrollment",
+  "name": "Saddleback College Dual Enrollment",
+  "org": "Saddleback College",
+  "regions": [
+   "orange-county"
+  ],
+  "city": "Mission Viejo, CA",
+  "type": "school-pathway",
+  "fields": [
+   "any"
+  ],
+  "what_you_do": "Take college classes while you are in high school. Classes can be at your school, on campus, online or at Saddleback@ATEP. You may earn both high school and college credit.",
+  "min_age": null,
+  "max_age": null,
+  "grades": "9 to 12",
+  "who_can_apply": "Students in grades 9 to 12. A parent and your principal must say yes. Free CCAP classes are only for schools that partner with the college, so ask your counselor.",
+  "paid_type": "unpaid-credit",
+  "pay_detail": "General dual enrollment waives enrollment fees, but you pay the health fee, books and materials. CCAP waives enrollment and health fees, and your school gives you the books.",
+  "season": "year-round",
+  "duration": "By semester. Up to 11 units, or up to 15 in CCAP.",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "No deadline stated on the program page. Term dates are on the college calendar.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Apply at OpenCCCApply. Watch for your student ID and email. Finish the High School Dual Enrollment Form once, with parent and school signatures. Then register in MySite. Questions: (949) 582-4500.",
+  "needs_work_permit": false,
+  "url": "https://www.saddleback.edu/apply-pay/how-apply/dual-enrollment",
+  "apply_url": "https://www.opencccapply.net/gateway/apply?cccMisCode=891",
+  "sources_fetched": [
+   "https://www.saddleback.edu/apply-pay/how-apply/dual-enrollment",
+   "https://www.saddleback.edu/apply-pay/how-apply/k-12-student",
+   "https://www.saddleback.edu/learning-saddleback/earn-college-credit-high-school"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "CCAP partners include Capistrano, Irvine, Laguna Beach, Orange and Saddleback Valley districts. PE classes are not allowed. High school students register after other students, so classes can fill up. Forms take 3 to 5 business days after the last signature. Ask your counselor if a class counts for graduation.",
+  "verified_on_label": "Nov 2, 2026"
  },
  {
   "grades": null,
@@ -115144,6 +115346,47 @@
    "https://www.hrm.org/junior-docent-program/"
   ],
   "verified_on_label": "Oct 12, 2026"
+ },
+ {
+  "id": "yorba-linda-library-teen-advisory-board",
+  "name": "Yorba Linda Library Teen Advisory Board (TAB)",
+  "org": "Yorba Linda Public Library",
+  "regions": [
+   "orange-county"
+  ],
+  "city": "Yorba Linda, CA",
+  "type": "volunteer",
+  "fields": [
+   "education",
+   "social-impact"
+  ],
+  "what_you_do": "Give the library ideas on teen books, activities and programs. You work on a creative team and build leadership skills. Your hours can count for school service rules.",
+  "min_age": 13,
+  "max_age": 18,
+  "grades": null,
+  "who_can_apply": "Teens 13 to 18 who live in Yorba Linda now. You need past leadership experience and an email you check at least twice a week.",
+  "paid_type": "unpaid",
+  "pay_detail": "Volunteer. Hours may count toward school service rules.",
+  "season": "school-year",
+  "duration": null,
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "The last round opened March 28, 2026 and closed May 16, 2026 at 4:59 p.m. Interviews were in June. Dates for 2027 are not posted.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
+  "how_to_apply": "Get the form on the program page when the next round opens. Turn it in at the Adult Information desk. Late forms are not taken. Questions: libraryteens@yorbalindaca.gov.",
+  "needs_work_permit": false,
+  "url": "https://ylpl.org/tab/",
+  "apply_url": null,
+  "sources_fetched": [
+   "https://ylpl.org/tab/"
+  ],
+  "verified": "fetched",
+  "verified_on": "2026-11-02",
+  "priority": 2,
+  "notes": "These are last year's dates. The 2027 dates are not posted yet. Members who are 18 or older must be fingerprinted. The program page does not list meeting dates.",
+  "verified_on_label": "Nov 2, 2026",
+  "limited": true
  },
  {
   "id": "youth-community-service-palo-alto",
