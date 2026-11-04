@@ -81830,11 +81830,11 @@
   "pay_detail": null,
   "season": "year-round",
   "duration": "Most assignments need at least 2 to 4 hours a week. Some late afternoon, evening or weekend shifts.",
-  "status": "rolling",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "Rolling. No deadline posted.",
+  "deadline_text": "No deadline was posted as of Oct 16, 2026.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Fill out the form on the volunteer page. If they pick you, the hospital checks your record. You fill out some papers and show your shots: chicken pox, MMR, Tdap, a new TB blood test, and a flu shot in flu season.",
   "needs_work_permit": false,
   "url": "https://www.jeffersonhealth.org/volunteer/abington",
@@ -81842,12 +81842,13 @@
   "sources_fetched": [
    "https://www.jeffersonhealth.org/volunteer/abington",
    "https://www.jeffersonhealth.org/volunteer",
-   "https://www.jeffersonhealth.org/volunteer/tjuh-and-methodist"
+   "https://www.jeffersonhealth.org/volunteer/tjuh-and-methodist",
+   "https://www.jeffersonhealth.org/content/dam/health2021/documents/volunteer/abington-volunteer-application-3-27-2024.pdf"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "Volunteering here does not lead to a job, but it is health care experience for your resume. Shadowing is possible only if you find a staff member to supervise you yourself. Jefferson's Center City hospitals (TJUH and Methodist) take volunteers 18 and up only. Questions: 215-481-2492.",
+  "notes": "Volunteering here does not lead to a job, but it is health care experience for your resume. Shadowing is possible only if you find a staff member to supervise you yourself. Jefferson's Center City hospitals (TJUH and Methodist) take volunteers 18 and up only. Questions: 215-481-2492. As of Nov 4, 2026, the Jefferson site blocked automated reading, so confirm these details first. The volunteer page said age 16 on Oct 16, 2026, but the 2024 application form lists teen jobs for ages 17 and up. That form also asks for a Social Security number, so ask the volunteer office before you give it.",
   "verified_on_label": "Oct 16, 2026"
  },
  {
@@ -81855,7 +81856,7 @@
   "grades": null,
   "apply_url": null,
   "deadline_iso": null,
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-09",
   "priority": 2,
   "min_age": 16,
@@ -81876,7 +81877,7 @@
   "pay_detail": "Unpaid. Volunteers get their own transportation.",
   "season": "summer",
   "duration": "8 weeks, 4 hours a day, one day a week",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "deadline_text": "The program page gives no application dates and no year. The 2024 packet said applications are accepted from February until April.",
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Send the application, two letters of support from teachers and shot forms to the Volunteer Services Department. You can send by mail, scan, fax or email. Phone: 215-612-4170.",
@@ -81886,7 +81887,7 @@
    "https://www.jeffersonhealth.org/volunteer/frankford-torresdale-and-bucks-county/summer-student-volunteer-program",
    "https://www.jeffersonhealth.org/content/dam/health2021/documents/volunteer/2024-student-volunteer-application-frankford-torresdale-bucks.pdf"
   ],
-  "notes": "Facts come from the 2024 application packet on the Jefferson site. The program web page shows only its title (checked 2026-10-09 with a normal fetch and with curl), so the age, time, pay and how-to-apply details are not confirmed on the page. Confirm the current dates, ages and form first. Spots are limited.",
+  "notes": "Facts come from the 2024 application packet on the Jefferson site. As of Nov 4, 2026, the Jefferson site blocked automated reading and the program web page shows only its title, so the age, time, pay and how-to-apply details are not confirmed on the page. Confirm the current dates, ages and form first. Spots are limited. The 2024 form asks for a Social Security number, so ask the volunteer office before you give it.",
   "verified_on_label": "Oct 9, 2026"
  },
  {
@@ -81928,10 +81929,10 @@
    "https://www.jobcorps.gov/faqs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "Mostly fits teens 16 and up who are out of school or want a different path. Housing: the Philadelphia campus page lists transportation and no dorms. A center being listed on the Job Corps site does not prove it is enrolling right now, so confirm with an Admissions Representative. The training list above comes from the center's training page and may not be complete. Whether a state work permit applies was not checked.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "philadelphia-monell-science-apprenticeship-program",
@@ -82011,17 +82012,17 @@
    "https://muralarts.org/enroll/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "The pages say 3 high school sites and 6 middle school sites on the enroll page but 16 sites in total on the page, so ask which site is near you. Mural Arts also has paid summer work experience through Career Connected Learning (see the C2L PHL card). Ask whether classes are free. Paid work for people under 18 in Pennsylvania needs a work permit. See permit.html?state=pa for the exact permit and steps.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "philadelphia-museum-american-revolution-living-history-youth-summer-institute",
   "grades": null,
   "apply_url": null,
   "deadline_iso": null,
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-09",
   "priority": 2,
   "min_age": null,
@@ -82043,7 +82044,7 @@
   "pay_detail": "The page says it is a paid six-week program. The pay amount is not stated. Public transportation help is offered.",
   "season": "summer",
   "duration": "6 weeks, weekdays (the 2023 session ran July 5 to August 11)",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "deadline_text": "The page names a 2026 session but gives no application dates. The 2026 program is finished and no 2027 dates are posted.",
   "deadline_confidence": "unknown",
   "how_to_apply": "The page does not explain how to apply. Contact the museum education team through the museum website.",
@@ -82053,17 +82054,17 @@
    "https://www.amrevmuseum.org/living-history-youth-summer-institute",
    "https://www.amrevmuseum.org/press-releases/museum-s-living-history-youth-summer-institute-returns-in-july-and-august"
   ],
-  "notes": "This is a small program. The 2023 press release said eight took part. It is part of the museum's African American Interpretive Program. Check the museum site for the next call for applications.",
+  "notes": "This is a small program. The 2023 press release said eight took part. It is part of the museum's African American Interpretive Program. Check the museum site for the next call for applications. As of Nov 4, 2026, the museum site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 9, 2026",
   "limited": true
  },
  {
   "id": "philadelphia-pafa-youth-council",
   "grades": "9 to 12",
-  "apply_url": "https://pafa-museum.coursestorm.com/course/pre-college-youth-council-leadership",
+  "apply_url": "https://pafa-museum.coursestorm.com/course/pre-college-youth-council-leadership1",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "min_age": null,
   "max_age": null,
@@ -82083,18 +82084,20 @@
   "pay_detail": "Free to join. No pay or stipend is stated.",
   "season": "school-year",
   "duration": "Fall 2026: Wednesdays Oct 21 to Dec 9, 4 to 6 pm. Spring 2027: Wednesdays Jan 27 to Apr 14, 4 to 6 pm.",
-  "status": "open-now",
-  "deadline_text": "Fall 2026 starts Oct 21, 2026; Spring 2027 starts Jan 27, 2027. No closing date is posted.",
-  "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Use the Register link on the Youth Council page, which goes to pafa-museum.coursestorm.com. Each session has its own Register link.",
+  "status": "unconfirmed",
+  "deadline_text": "Fall 2026 started Oct 21, 2026; Spring 2027 starts Jan 27, 2027. The pages disagree: the PAFA page shows Register links, but as of Nov 4, 2026 the sign-up pages say both sessions are full. Spring has a wait list.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Use the Register link on the Youth Council page, which goes to pafa-museum.coursestorm.com. Each session has its own Register link. As of Nov 4, 2026, both show as full. You can add your name to the Spring wait list.",
   "needs_work_permit": false,
   "url": "https://www.pafa.org/education/center-for-art-education/pre-college/youth-council",
   "sources_fetched": [
    "https://www.pafa.org/YouthCouncil",
-   "https://www.pafa.org/education/center-for-art-education/pre-college/youth-council"
+   "https://www.pafa.org/education/center-for-art-education/pre-college/youth-council",
+   "https://pafa-museum.coursestorm.com/course/pre-college-youth-council-leadership",
+   "https://pafa-museum.coursestorm.com/course/pre-college-youth-council-leadership1"
   ],
-  "notes": "PAFA is on North Broad Street. The status is shown as open because the page lists a Register link for both sessions; the page gives no closing date.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "PAFA is on North Broad Street. The sign-up pages list ages 14 to 18 and grades 9 to 12. Ask PAFA if a spot opens.",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -82104,7 +82107,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "philadelphia-parks-rec-lifeguard",
   "name": "Become a Lifeguard, Philadelphia Parks and Recreation",
   "org": "Philadelphia Parks and Recreation Aquatics",
@@ -82134,7 +82137,7 @@
    "https://www.phila.gov/services/working-jobs/city-jobs-and-internships/become-a-lifeguard/",
    "https://www.pa.gov/agencies/dli/resources/compliance-laws-and-regulations/labor-management-relations/child-labor-act.html"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -82144,7 +82147,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "philadelphia-parks-rec-summer-youth-employment",
   "name": "Parks and Rec Summer Youth Employment Program",
   "org": "Philadelphia Parks and Recreation",
@@ -82176,7 +82179,7 @@
    "https://www.phila.gov/programs/parks-rec-summer-youth-employment-program/",
    "https://www.pa.gov/agencies/dli/resources/compliance-laws-and-regulations/labor-management-relations/child-labor-act.html"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "philadelphia-penn-provost-summer-mentorship-program",
@@ -82215,10 +82218,10 @@
    "https://vpse.upenn.edu/smp/apply/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "notes": "The two pages word the grade rule differently (currently 9th or 10th on the apply page, entering 10th or 11th in fall 2027 on the main page); they describe the same group. Office: St. Leonard's Court, Suite 110, 3819 Chestnut Street, Philadelphia, PA 19104; contact form at https://vpse.upenn.edu/smp/contact-us/.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -82229,7 +82232,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "philadelphia-penn-sas-high-school-summer-programs",
   "name": "Penn Arts and Sciences High School Summer Programs",
   "org": "University of Pennsylvania, Penn LPS High School Programs",
@@ -82250,7 +82253,7 @@
   "status": "closed-expect-reopen",
   "deadline_text": "2026: May 1 for Academies and Pre-College Residential/Online Session I; June 1 for Online Seminars and Pre-College Online Session II. Rolling admissions. 2027 dates not posted.",
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Online application from the student: essays (400 words each), transcript, recommendations. For the scholarship, say you attend a School District of Philadelphia school and fill in the scholarship section.",
+  "how_to_apply": "Online application from the student: essays (400 words each), transcript, one recommendation letter. For the scholarship, say you attend a School District of Philadelphia school and fill in the scholarship section.",
   "needs_work_permit": false,
   "url": "https://hs.sas.upenn.edu/summer-programs",
   "priority": 2,
@@ -82262,7 +82265,7 @@
    "https://hs.sas.upenn.edu/summer-programs/application-information",
    "https://hs.sas.upenn.edu/summer-programs/academies/3-week/biomedical"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "philadelphia-pennsylvania-hospital-junior-volunteers",
@@ -82285,11 +82288,11 @@
   "pay_detail": null,
   "season": "summer",
   "duration": null,
-  "status": "opens-soon",
-  "opens_iso": "2027-02-01",
+  "status": "unconfirmed",
+  "opens_iso": null,
   "deadline_text": "The 2026 program closed early because of high demand. Applications for Summer 2027 open February 1, 2027. No closing date is posted, so apply early.",
   "deadline_iso": null,
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Starting February 1, 2027, create an account in the Penn Medicine volunteer portal and apply. More details will be posted closer to that date.",
   "needs_work_permit": false,
   "url": "https://www.pennmedicine.org/volunteering/pennsylvania-hospital",
@@ -82297,10 +82300,10 @@
   "sources_fetched": [
    "https://www.pennmedicine.org/volunteering/pennsylvania-hospital"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-16",
   "priority": 2,
-  "notes": "It is only at the 800 Spruce Street site. Spots fill fast. Email PAHVolunteerServices@pennmedicine.upenn.edu or call 215-829-5187.",
+  "notes": "It is only at the 800 Spruce Street site. Spots fill fast. Email PAHVolunteerServices@pennmedicine.upenn.edu or call 215-829-5187. As of Nov 4, 2026, the Penn Medicine site blocked automated reading, so confirm these details first.",
   "verified_on_label": "Oct 16, 2026"
  },
  {
@@ -82309,7 +82312,7 @@
   "apply_url": null,
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "min_age": 14,
   "max_age": 20,
@@ -82340,7 +82343,7 @@
    "https://www.ppdexplorers.org/"
   ],
   "notes": "Most cadets are not paid, but the pages do not say. Cadets who want to be police officers are urged to join the police recruit testing later. Other Explorer camps include a Pennsylvania State Police week and a camp at Fort Indiantown Gap. The program site lists a $50 a year fee for insurance and registration, collected if you are accepted. It also lists about $350 for probation uniforms.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "philadelphia-pyn-aim-afterschool",
@@ -82348,7 +82351,7 @@
   "apply_url": null,
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "min_age": null,
   "max_age": null,
@@ -82378,7 +82381,7 @@
   "sources_fetched": [
    "https://www.pyninc.org/aimafterschool"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "philadelphia-pyn-nextgen-career-clubs",
@@ -82386,7 +82389,7 @@
   "apply_url": null,
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "min_age": null,
   "max_age": null,
@@ -82416,7 +82419,7 @@
   "sources_fetched": [
    "https://www.pyninc.org/nextgencareers"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Rising 9th to 12th grade (Junior PYNtern rising 9th to 10th; Senior PYNtern rising 11th to 12th)",
@@ -82426,7 +82429,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "philadelphia-pyn-pyntern",
   "name": "PYNtern Program",
   "org": "Philadelphia Youth Network (PYN)",
@@ -82445,7 +82448,7 @@
   "season": "year-round",
   "duration": "6 to 8 weeks per cohort (page also says experiences last 6 to 12 weeks)",
   "status": "rolling",
-  "deadline_text": "Now recruiting for Summer and Fall 2026 (page). Summer applications open early March, fall/winter cohort early August, winter/spring cohort November.",
+  "deadline_text": "Now recruiting for Winter/Spring 2027 (page). Summer applications open early March, fall/winter cohort early August, winter/spring cohort November.",
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Use Apply Now or the interest form on the page (name, contact, current grade, cohort, three career fields). Phone 267-502-3800 or info@pyninc.org.",
   "needs_work_permit": true,
@@ -82456,7 +82459,7 @@
    "https://www.pyninc.org/pyntern",
    "https://www.pyninc.org/workready"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "philadelphia-pyn-youth-opportunity-fair-2026",
@@ -82464,7 +82467,7 @@
   "apply_url": null,
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-26",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "min_age": 16,
   "max_age": 24,
@@ -82487,14 +82490,14 @@
   "status": "closed-expect-reopen",
   "deadline_text": "The 2026 fair was Friday, Oct 23, 2026. The page does not give a next date yet.",
   "deadline_confidence": "unknown",
-  "how_to_apply": "Fill out the free pre-registration form on the event page (deadline Oct 15). Bring several copies of your resume.",
+  "how_to_apply": "Fill out the free pre-registration form on the event page (deadline Oct 21). Bring several copies of your resume.",
   "needs_work_permit": null,
   "url": "https://www.pyninc.org/opportunityfair",
   "notes": "The page gives the day and month only; the year is taken from Oct 23 falling on a Friday in 2026. Under 16 is not listed as eligible.",
   "sources_fetched": [
    "https://www.pyninc.org/opportunityfair"
   ],
-  "verified_on_label": "Oct 26, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Programs begin in 10th grade",
@@ -82504,7 +82507,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "philadelphia-school-district-career-technical-education",
   "name": "Career and Technical Education (CTE), School District of Philadelphia",
   "org": "School District of Philadelphia",
@@ -82537,7 +82540,7 @@
   "sources_fetched": [
    "https://www.philasd.org/cte/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -82547,7 +82550,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "philadelphia-schuylkill-center-counselor-in-training",
   "name": "Counselor-in-Training Program, Camp Schuylkill",
   "org": "Schuylkill Center for Environmental Education",
@@ -82577,7 +82580,7 @@
   "sources_fetched": [
    "https://schuylkillcenter.org/education/camp-schuylkill/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -82587,7 +82590,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "philadelphia-schuylkill-center-wildlife-clinic-volunteer",
   "name": "Wildlife Clinic Support Volunteer, Schuylkill Center",
   "org": "Schuylkill Center for Environmental Education",
@@ -82618,7 +82621,7 @@
    "https://schuylkillcenter.org/wildlife-clinic/volunteer/",
    "https://www.schuylkillcenter.org/volunteer/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "philadelphia-temple-summer-academy-pre-college",
@@ -82626,7 +82629,7 @@
   "apply_url": null,
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "min_age": null,
   "max_age": null,
@@ -82656,7 +82659,7 @@
   "sources_fetched": [
    "https://admissions.temple.edu/summer/pre-college/find-your-program/interdisciplinary-programs/summer-academy"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "philadelphia-temple-upward-bound",
@@ -82664,7 +82667,7 @@
   "apply_url": "https://education.temple.edu/upwardbound/apply",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "min_age": null,
   "max_age": null,
@@ -82680,23 +82683,25 @@
    "science"
   ],
   "what_you_do": "College prep all year. There is tutoring after school on weekdays, Saturday classes, college visits and a six-week summer program on campus. One track focuses on civic work and one on STEM.",
-  "who_can_apply": "Students in 9th or 10th grade at Philadelphia public district or charter high schools. They come from low-income families, or their parents do not have a bachelor degree, or both. They also plan to go to college. Five named schools get priority. They are Benjamin Franklin HS, Dobbins CTE, Gratz Mastery, Strawberry Mansion and The U School.",
+  "who_can_apply": "Students in 9th or 10th grade at Philadelphia public district or charter high schools. They come from low-income families, or their parents do not have a bachelor degree, or both. They also plan to go to college. Five named schools get priority. They are Benjamin Franklin HS, Dobbins CTE, Gratz Mastery, Strawberry Mansion and The U School. The FAQ says you must also live in Philadelphia.",
   "paid_type": "unpaid",
   "pay_detail": "Free to students. The program pages do not say if students get paid.",
   "season": "year-round",
   "duration": "Runs year-round, with a six-week summer program on campus.",
-  "status": "rolling",
-  "deadline_text": "Rolling applications. The page says the Summer Academy deadline is May 31.",
-  "deadline_confidence": "rolling",
+  "status": "unconfirmed",
+  "deadline_text": "The pages disagree. The main page says applications are rolling with a May 31 deadline and gives no year. The FAQ says applications usually run mid-February through April, and the director may add other periods. Call to confirm.",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Fill out the online application. Send papers that show you are eligible, like a report card, test scores and proof of income. Then you have a virtual interview. Questions: 215-204-3636.",
   "needs_work_permit": false,
   "url": "https://education.temple.edu/upwardbound",
   "sources_fetched": [
    "https://education.temple.edu/upwardbound",
-   "https://education.temple.edu/upwardbound/faq"
+   "https://education.temple.edu/upwardbound/faq",
+   "https://education.temple.edu/upwardbound/apply"
   ],
-  "notes": "Federally funded. You must have a goal of going to college. Income is not the only factor in who is accepted.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "Federally funded. You must have a goal of going to college. Income is not the only factor in who is accepted. The FAQ also says 8th graders can apply in spring before high school. As of Nov 4, 2026, the Upward Bound Application page shows no form, only a general Temple Apply link, so call before you apply.",
+  "verified_on_label": "Nov 4, 2026",
+  "limited": true
  },
  {
   "id": "philadelphia-villanova-pre-college-summer-academy",
@@ -82704,7 +82709,7 @@
   "apply_url": "https://explore.villanova.edu/apply/?sr=73ad7782-6964-4c70-b9b8-4e9991329463",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "min_age": null,
   "max_age": null,
@@ -82721,20 +82726,20 @@
   "what_you_do": "Take one 3 credit college course with Villanova faculty and a 1 credit College Pathways course. It is a four-week summer program on campus. You can earn four college credits.",
   "who_can_apply": "Rising high school juniors and seniors, and incoming college freshmen. Needs a personal statement of 250 to 500 words.",
   "paid_type": "fee-based",
-  "pay_detail": "Residential $8,000 (room and meals). Non-residential $6,000. $2,000 deposit due at acceptance. $50 application fee.",
+  "pay_detail": "2026 prices: Residential $8,000 (room and meals). Non-residential $6,000. $2,000 deposit due at acceptance. $50 application fee.",
   "season": "summer",
   "duration": "4 weeks in July",
   "status": "open-now",
   "deadline_text": "The page says applications for 2027 will close in the spring; no exact closing date is posted. The page says 2027 dates are being finalized, with classes expected in July.",
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Fill out the Pre-College Summer Academy application online. Pick the Pre-College Summer Academy choice from the list. Add your personal statement to the form too.",
+  "how_to_apply": "Apply online, pick the Pre-College Summer Academy choice and pay the fee. Send a personal statement, a two minute video and a writing sample. You also need a letter from a teacher, your school record and a letter from a parent.",
   "needs_work_permit": false,
   "url": "https://www.villanova.edu/university/summer-sessions/pre-college-summer-academy.html",
-  "notes": "The page says that being accepted does not promise acceptance later at Villanova. It also does not give you an edge. A virtual info session is offered.",
+  "notes": "The page says that being accepted does not promise acceptance later at Villanova. It also does not give you an edge. The page still shows an old April 6, 2025 date for materials, so ask for the 2027 deadline.",
   "sources_fetched": [
    "https://www.villanova.edu/university/summer-sessions/pre-college-summer-academy.html"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "philadelphia-wistar-high-school-biomedical-research",
@@ -82771,10 +82776,10 @@
    "https://wistar.org/education-training/high-school-program"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "notes": "Contacts: Jason Diaz, 215-898-3803, jdiaz@wistar.org, or Cailey Bice, 215-898-3749, cbice@wistar.org. Absences of more than two days in a row cannot be accommodated. The stipend is not called a wage on the page. Paid work for people under 18 in Pennsylvania needs a work permit. See permit.html?state=pa for the exact permit and steps.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "philadelphia-workready-boost",
@@ -82782,7 +82787,7 @@
   "apply_url": "https://forms.gle/djHMVpqyxQ1o3yYy8",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "min_age": 12,
   "max_age": 24,
@@ -82812,7 +82817,7 @@
   "sources_fetched": [
    "https://www.pyninc.org/workreadyboost"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "philadelphia-workready-vip",
@@ -82820,7 +82825,7 @@
   "apply_url": null,
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "min_age": 14,
   "max_age": 24,
@@ -82850,7 +82855,7 @@
   "sources_fetched": [
    "https://www.pyninc.org/workreadyvip"
   ],
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -82859,7 +82864,7 @@
   "apply_url": null,
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "min_age": 12,
   "max_age": 24,
@@ -82874,7 +82879,7 @@
    "any"
   ],
   "what_you_do": "Talk with a Youth Navigator at a PA CareerLink center. You can find job and training programs, first-job help and career resources for Philadelphia youth. The page also links to work permit help for ages 14 to 17.",
-  "who_can_apply": "Philadelphia residents who are ages 12 to 24. You do not need to be in school.",
+  "who_can_apply": "Philadelphia residents who are ages 12 to 24.",
   "paid_type": "not-stated",
   "pay_detail": "Free help finding programs. Pay depends on the program you are matched with.",
   "season": "year-round",
@@ -82882,14 +82887,14 @@
   "status": "year-round",
   "deadline_text": "Year-round help. Programs have their own dates.",
   "deadline_confidence": "rolling",
-  "how_to_apply": "Visit a PA CareerLink center and ask for a Youth Navigator, or call 1-833-750-JOBS (5627). Philadelphia Works main office: 215-963-2100.",
+  "how_to_apply": "Call 1-833-750-JOBS (5627), or fill out the Learn More form on the page. Philadelphia Works main office: 215-963-2100.",
   "needs_work_permit": null,
   "url": "https://philaworks.org/youth-and-young-adults/",
   "notes": "This is a guide to programs, not one job. Also links the PHL Career Portal, apprenticeship search and the School District Opportunity Network.",
   "sources_fetched": [
    "https://philaworks.org/youth-and-young-adults/"
   ],
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -82898,7 +82903,7 @@
   "apply_url": "https://phila.formstack.com/forms/moye_standing_committee_interest_form",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "min_age": 12,
   "max_age": 24,
@@ -82930,7 +82935,7 @@
    "https://www.phila.gov/2021-07-06-philadelphia-youth-commission-opens-application-for-new-members/"
   ],
   "notes": "City-wide teen council. The committee form on the current page is an interest form, not confirmed to be the membership application. Ask the office how members are chosen now.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -82941,7 +82946,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "philadelphia-zoo-volun-teens",
   "name": "Volun-TEENS, Philadelphia Zoo",
   "org": "Philadelphia Zoo",
@@ -82972,7 +82977,7 @@
   "sources_fetched": [
    "https://www.philadelphiazoo.org/volunteer/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
