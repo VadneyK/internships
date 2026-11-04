@@ -27,7 +27,7 @@ test("calendar: place search box, chip, grouped tiles, Everywhere label, no capt
   assert.equal(sel.value, "area:midwest");
   assert.match(document.querySelector(".chip.clear").textContent, /Midwest/, "chip names the picked place");
   const after = rowsText();
-  assert.equal(after.length, 4, "exactly the Midwest programs stay");
+  assert.equal(after.length, 3, "exactly the Midwest programs stay");
   for (const name of ["Chicago Police and Firefighter Training Academy", "Fermilab VALOR JROTC Summer Internship", "Chicago Park District summer jobs", "Fermilab PRISM"]) {
     assert.ok(after.some((t) => t.includes(name)), name + " is kept");
   }

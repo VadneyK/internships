@@ -18,7 +18,7 @@ const KNOWN = {
   "bloomington-iu-jacobs-dance-summer-intensives": "2027-02-08",
   "emory-pre-college-program": "2027-05-03",
   "lafayette-purdue-sciencescape": "2027-04-16",
-  "seattle-teens-in-public-service-summer-internship": "2027-02-05",
+  "seattle-teens-in-public-service-summer-internship": "2027-02-14",
   "nc-museum-natural-sciences-junior-interpreters": "2027-03-22",
   "nyc-columbia-pre-college-nyc-commuter-summer": "2027-04-01",
   "richmond-rcmp-youth-academy": "2027-04-06",
