@@ -84,7 +84,9 @@ test("ignition.html is public: no noindex, in the sitemap, linked from the home 
   assert.doesNotMatch(html, /<meta name="robots" content="noindex">/);
   assert.match(fs.readFileSync(path.join(ROOT, "sitemap.xml"), "utf8"), /internships\/ignition\.html</);
   const home = fs.readFileSync(path.join(ROOT, "index.html"), "utf8");
-  assert.match(home, /At Ignition NorCal\? <a href="ignition\.html">Start here<\/a>/);
+  // 2026-10-30: the home line follows the Ignition season (home.js EVENTS); NorCal links here, later events link their find hub.
+  assert.match(home, /data-event-line/);
+  assert.match(fs.readFileSync(path.join(ROOT, "assets/js/home.js"), "utf8"), /name: "NorCal", end: "2026-10-24", href: "ignition\.html"/);
   for (const f of fs.readdirSync(ROOT).filter((f) => f.endsWith(".html"))) {
     const nav = (fs.readFileSync(path.join(ROOT, f), "utf8").match(/<nav[^>]*aria-label="(?:Main|Site)[^"]*"[\s\S]*?<\/nav>/) || [""])[0];
     assert.doesNotMatch(nav, /ignition\.html/, f + " puts the Ignition page in the main menu");

@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Generate the paint-splatter, brush-swoosh and flame SVGs used by the site. Deterministic (seeded)."""
+"""Generate the brush-swoosh and flame SVGs used by the site. Deterministic (seeded).
+
+The home hero splats are real Ignition splatter art (assets/img/splat-*.webp, 2026-10-30);
+splat() stays for tests and one-off use but no longer writes a file."""
 import math, os, random
 
 OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "assets", "img")
@@ -64,8 +67,6 @@ def flame(fill="#151515", inner="#f6c431"):
 
 
 files = {
-    "splat-orange.svg": splat(7, "#e9572b"),
-    "splat-yellow.svg": splat(21, "#f6c431", drops=40),
     "swoosh.svg": swoosh(),
     "favicon.svg": ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#f6c431"/>'
                     '<g transform="translate(6 4) scale(.82)"><path d="%s" fill="#151515"/><path d="%s" fill="#e9572b"/></g></svg>') % (FLAME_OUTER, FLAME_INNER),

@@ -88,7 +88,7 @@ python3 -m http.server 8000      # then open http://localhost:8000
 | `tools/linkcheck.py` | Checks every program link and writes a Markdown report. The links workflow runs it every Monday. |
 | `tools/freshness.py` | Lists programs that need a re-read, as a Markdown checklist. The freshness workflow runs it on the first of each month. |
 | `tools/make_qr.py` | Makes the QR code files in `assets/qr/`. CI does not run it. |
-| `tools/art.py` | Makes the decorative splat and swoosh SVGs in `assets/img/`. The output is the same every run. |
+| `tools/art.py` | Makes the decorative swoosh and flame SVGs in `assets/img/`. The hero splats are real Ignition splatter art (`assets/img/splat-*.webp`). The output is the same every run. |
 | `tools/hygiene.py` | A read-only checklist of soft data problems. It never fails CI. |
 | `tools/bench-matches.mjs` | Speed numbers for search, sort and loading. Run it before and after a change to compare. |
 | `tests/` | Python and JavaScript tests. See [docs/TESTING.md](docs/TESTING.md). |

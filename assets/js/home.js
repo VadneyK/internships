@@ -167,3 +167,35 @@
     $("soonList").innerHTML = '<li><div class="d">!</div><div>Could not load the list. See the closing dates on the <a href="find.html?view=dates">Programs page</a>.</div></li>';
   });
 })();
+
+/* Home "At Ignition ...? Start here" line follows the Ignition season (ignitionstudents.org, read 2026-10-30).
+   Each event shows from the day after the previous one ends through its own last day.
+   After the last event of the season the line hides; add next season's dates here. */
+(function () {
+  "use strict";
+  var line = document.querySelector("[data-event-line]");
+  if (!line) return;
+  var EVENTS = [
+    { name: "NorCal", end: "2026-10-24", href: "ignition.html" },
+    { name: "SoCal", end: "2026-11-07", href: "find.html?where=socal" },
+    { name: "Atlanta", end: "2027-02-13", href: "find.html?where=atl" },
+    { name: "New York", end: "2027-02-20", href: "find.html?where=nyc" },
+    { name: "Chicago", end: "2027-03-20", href: "find.html?where=chi" }
+  ];
+  var GRACE = 0;
+  var now = Date.now(), ev = null;
+  for (var i = 0; i < EVENTS.length; i++) {
+    if (now <= Date.parse(EVENTS[i].end + "T23:59:59-08:00") + GRACE) { ev = EVENTS[i]; break; }
+  }
+  if (!ev) { line.hidden = true; return; }
+  var es = line.getAttribute("data-lang") === "es";
+  var prefix = es ? "../" : "";
+  line.textContent = "";
+  line.appendChild(document.createTextNode((es ? "\u00bfEst\u00e1s en Ignition " : "At Ignition ") + ev.name + "? "));
+  var a = document.createElement("a");
+  a.href = prefix + ev.href;
+  a.textContent = es ? "Empieza aqu\u00ed" : "Start here";
+  if (es) a.setAttribute("hreflang", "en");
+  line.appendChild(a);
+  if (es) line.appendChild(document.createTextNode(" (en ingl\u00e9s)"));
+})();

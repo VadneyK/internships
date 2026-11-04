@@ -154,7 +154,7 @@ const BUDGET = {
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). index.html limit 161600 to 162300.
   // 2026-10-15: narrow phone header and headings (PENDING PERSON APPROVAL). index.html limit 162300 to 162400.
   // 2026-10-15: brand wraps instead of the header row (PENDING PERSON APPROVAL). index.html limit 162400 to 162700.
-  "index.html": { ceiling: 172000, reason: "lib.js, common.js and home.js (2026-10-12: +100 for the 1 day label and phone heading size)" },
+  "index.html": { ceiling: 173700, reason: "lib.js, common.js and home.js (2026-10-30: +1700 for the Ignition season line, 173513 measured; 2026-10-12: +100 for the 1 day label and phone heading size)" },
   // 2026-10-16: Add to calendar on deadlines, issue #10 (lib.js: reminders, Google Calendar link, which cards get it; about 1.9 KB) (PENDING PERSON APPROVAL). index.html limit 169000 to 170800 (remeasured 2026-10-19 after main merged in with PRs 42 and 36).
   // 2026-10-14 persona round 9: lite cards gain a derived limited flag (325 cards) for Good fit for you insights.html limit 148400 to 149400.
   // 2026-10-14: Numbers page chart legends and per-bar paid and not-paid counts. insights.html limit 149500 to 150200.
