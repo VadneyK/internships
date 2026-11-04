@@ -22,6 +22,7 @@ const KNOWN_YOUNG_MIN = {
   "boys-girls-clubs-metro-atlanta.json": 6,
   "charlottesville-bgcca-teen-clubs.json": 5,
   "lafayette-parks-workreation.json": 7,
+  "florida-4h-youth-development.json": 5,
   "massachusetts-4h-youth-development.json": 5,
   "new-york-state-4h-youth-development.json": 5,
   "pennsylvania-4h-youth-development.json": 5,

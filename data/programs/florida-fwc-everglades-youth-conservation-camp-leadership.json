@@ -4,7 +4,7 @@
   "max_age": 17,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-11",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "deadline_iso": null,
   "priority": 2,
@@ -26,14 +26,16 @@
   "pay_detail": "The camp lists programs from $400 to $515 per week. The Leadership Camp price is not listed separately on the program page.",
   "season": "summer",
   "duration": "1 week",
-  "status": "unconfirmed",
-  "deadline_text": "Camp runs through June and July, with weekly check-in on Sundays. Application dates for the Leadership Camp were not stated.",
-  "deadline_confidence": "last-year-pattern",
+  "status": "opens-soon",
+  "opens_iso": "2027-02-01",
+  "deadline_text": "Registration for the 2027 camp season opens Feb 1, 2027. Weekly check-in is on Sundays. Camp weeks are not posted as of Nov 4, 2026.",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Use the Camp Registration Portal linked from the camp page, or call the camp at 561-624-6929.",
   "url": "https://fyccn.myfwc.com/summer-camps/eyccsc/summer-camp/",
   "sources_fetched": [
     "https://fyccn.myfwc.com/summer-camps/eyccsc/summer-camp/",
-    "https://fyccn.myfwc.com/summer-camps/eyccsc/staff-and-facility/jobs-and-volunteering/"
+    "https://fyccn.myfwc.com/summer-camps/eyccsc/staff-and-facility/jobs-and-volunteering/",
+    "https://fyccn.myfwc.com/summer-camps/eyccsc/faqs/"
   ],
   "notes": "Paid camp staff jobs at this center need you to be at least 19, so this camp is the teen route. Address: 12100 Seminole Pratt Whitney Road, West Palm Beach, FL."
 }
