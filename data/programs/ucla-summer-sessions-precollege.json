@@ -18,11 +18,12 @@
   "paid_type": "fee-based",
   "pay_detail": "Fee-based. Ask UCLA Summer Sessions for current fees. Scholarship programs described on the page include BASE and Summer Scholars Support.",
   "season": "summer",
-  "duration": "Focus Series: 3 weeks; other formats vary (2026 sessions ran June 22 to July 31)",
-  "status": "closed-expect-reopen",
-  "deadline_text": "Summer 2026 enrollment is closed. Summer 2027 programs and dates are not posted yet; the site offers a sign-up for 2027 updates.",
+  "duration": "Focus Series: 3 weeks; other formats vary. Summer 2027 course sessions run June 21 to Sept 10, 2027.",
+  "status": "opens-soon",
+  "opens_iso": "2027-02-17",
+  "deadline_text": "Summer 2027 registration opens Feb 17, 2027. Offerings go on the site in January. Application deadlines: Summer College Immersion Program April 30, 2027 (April 1, 2027 for international applicants who need a visa); Focus Series A June 11, 2027; Focus Series B July 2, 2027.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Apply or enroll through each page on summer.ucla.edu. California students in grades 9 to 11 can apply for Summer Scholars Support (need and merit scholarships), and 10th and 11th graders from under-resourced California communities can apply for BASE, a free 6-week online course with a UCLA mentor.",
   "needs_work_permit": false,
   "url": "https://summer.ucla.edu/student-types/high-school-students/",
@@ -32,10 +33,12 @@
     "https://summer.ucla.edu/summer-programs/summer-precollege-focus-series/",
     "https://summer.ucla.edu/scholarship-opportunities/",
     "https://summer.ucla.edu/fee-calculator/",
-    "https://summer.ucla.edu/fees-payment-and-financial-aid/"
+    "https://summer.ucla.edu/fees-payment-and-financial-aid/",
+    "https://summer.ucla.edu/calendar/key-academic-dates/",
+    "https://summer.ucla.edu/registration/"
   ],
   "priority": 3,
-  "notes": "Out-of-state and international students cannot receive UCLA Summer Sessions financial aid. Exact program prices were not found; use UCLA's fee calculator before applying.",
+  "notes": "Out-of-state and international students cannot receive UCLA Summer Sessions financial aid. Exact program prices were not found; use UCLA's fee calculator before applying. The Feb 17 date is from a banner on the registration page that does not name student types, so check your program's page. No single closing date is entered because each format has its own.",
   "verified": "fetched",
-  "verified_on": "2026-10-09"
+  "verified_on": "2026-11-02"
 }

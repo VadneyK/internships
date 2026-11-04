@@ -432,8 +432,8 @@ const BUDGET = {
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 1499779 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco raw 1498000 to 1499800.
   // 2026-10-19: the Texas and Twin Cities cards (#69) after #68, 247931 bytes. Approved by Kentaro 2026-10-19 (merge train). ?at=city:san-francisco gzip 247700 to 248000.
   // 2026-10-26: three Inland Empire cards (Corona, Rancho Cucamonga) on top of PRs 98 to 101. PENDING PERSON APPROVAL. 1499800 to 1503400 (1503367 measured); gzip 248000 to 248700 (248610 measured).
-  // 2026-11-02: SoCal sweep (PRs 114 to 118) re-read 240 cards on their official pages. PENDING PERSON APPROVAL. 1503400 to 1507000.
-  "?at=city:san-francisco": { raw: 1507000, gzip: 248700, label: "a Bay Area city" },
+  // 2026-11-02: SoCal sweep (PRs 114 to 118) re-read 240 cards on their official pages. PENDING PERSON APPROVAL. 1503400 to 1507000; gzip 248700 to 251000.
+  "?at=city:san-francisco": { raw: 1507000, gzip: 251000, label: "a Bay Area city" },
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston raw 1057000 to 1075700.
   // 2026-10-13: +61 city cards and 41 employers (2,409 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston gzip 168000 to 170700.
   // 2026-10-13: +70 statewide cards for ten thin states (2,479 programs). PENDING PERSON APPROVAL, as above. ?at=city:boston raw 1075700 to 1096100.

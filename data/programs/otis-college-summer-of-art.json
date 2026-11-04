@@ -4,7 +4,7 @@
   ],
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-02",
   "grades": null,
   "needs_work_permit": false,
   "id": "otis-college-summer-of-art",
@@ -25,8 +25,8 @@
   "duration": "4 weeks in July 2027. The main page says July 7 to 30; the dates page says orientation July 6, classes July 8 to July 30.",
   "status": "opens-soon",
   "opens_iso": "2026-11-16",
-  "deadline_text": "Registration begins Nov 16, 2026. The scholarship application deadline is April 16, 2027 (no exceptions). The registration deadline is not posted yet.",
-  "deadline_iso": null,
+  "deadline_text": "Registration opens Nov 16, 2026 and closes June 16, 2027. The scholarship application opens Nov 16, 2026 and closes April 16, 2027 (no exceptions). The early enrollment discount ends April 23, 2027.",
+  "deadline_iso": "2027-06-16",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Use Register Now on the Summer of Art page. Questions: soa@otis.edu or 310-665-6850. Scholarships have their own application.",
   "url": "https://www.otis.edu/extension/youth-programs/summer-art/index.html",
@@ -36,5 +36,5 @@
     "https://www.otis.edu/extension/youth-programs/summer-art/tuition-fees/index.html"
   ],
   "priority": 2,
-  "notes": "The page says ages 14.5 to 19; min_age is entered as 14 because the field takes whole years. Costs money. Prices shown are the 2026 numbers. In 2026 the early discount deadline was April 25. The April 16, 2027 date is the scholarship deadline, not the registration deadline."
+  "notes": "The page says ages 14.5 to 19; min_age is entered as 14 because the field takes whole years. Costs money. Prices shown are the 2026 numbers. A course preview is online from Nov 2, 2026."
 }
