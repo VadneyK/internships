@@ -58543,7 +58543,7 @@
   "apply_url": null,
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "fields": [
    "science",
@@ -58574,7 +58574,7 @@
    "https://www.smith.edu/academics/precollege-programs"
   ],
   "notes": "Costs money. Apply early for the priority date and for aid.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -58582,13 +58582,13 @@
   "apply_url": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "min_age": null,
   "max_age": null,
   "needs_work_permit": false,
   "deadline_iso": null,
-  "notes": "The page gives no age or grade rule beyond secondary school, and it lists no election dates.",
+  "notes": "The page names no age or grade rule other than secondary school. It gives no exact election dates.",
   "id": "massachusetts-state-student-advisory-council",
   "name": "Massachusetts State Student Advisory Council",
   "org": "Massachusetts Department of Elementary and Secondary Education",
@@ -58602,21 +58602,22 @@
    "education"
   ],
   "what_you_do": "Be a student voice on education in Massachusetts. Regional councils elect delegates to a state council that advises the Board of Education. The elected chair is a full voting member of the Board.",
-  "who_can_apply": "Secondary school students at a Massachusetts school. Every secondary school can elect two representatives to its regional council, so you run for election at your school.",
+  "who_can_apply": "Secondary school students at a Massachusetts school. Every secondary school can elect two representatives to its regional council, so you run for election at your school. You must have lived in Massachusetts for at least six months.",
   "paid_type": "not-stated",
   "pay_detail": "Not stated. A leadership role, not a job.",
   "season": "school-year",
   "duration": "School year",
   "status": "unconfirmed",
-  "deadline_text": "The page lists no election dates. Ask your school about its election.",
+  "deadline_text": "No exact election dates posted. Schools usually start around March, and names are due to the state by early May. Ask your school about its election.",
   "deadline_confidence": "unknown",
   "how_to_apply": "Ask your school about its Student Advisory Council election. The DESE page has an Elections link with the recommended procedure.",
   "url": "https://www.doe.mass.edu/sac/",
   "sources_fetched": [
    "https://www.doe.mass.edu/sac/",
-   "https://www.doe.mass.edu/sac/election/default.html"
+   "https://www.doe.mass.edu/sac/election/default.html",
+   "https://www.doe.mass.edu/sac/election/procedures-timelines.html"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Entering grades 10 to 12 (some programs grades 11 to 12)",
@@ -58627,7 +58628,7 @@
   "apply_url": null,
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "fields": [
    "engineering",
@@ -58637,7 +58638,7 @@
    "social-impact",
    "science"
   ],
-  "pay_detail": "Tuition varies by program (amount not read on the pages fetched). Limited aid: scholarships usually cover 75 to 100% of the fee, based on need.",
+  "pay_detail": "Tuition varies by program. Mini Med School 2027 is $3,625 to $6,950. Limited aid: scholarships usually cover 75 to 100% of the fee, based on need.",
   "duration": "1 to 6 weeks; commuter or residential",
   "id": "massachusetts-tufts-pre-college-summer-programs",
   "name": "Tufts Pre-College Summer Programs",
@@ -58659,10 +58660,11 @@
   "url": "https://universitycollege.tufts.edu/high-school/intensives",
   "sources_fetched": [
    "https://universitycollege.tufts.edu/high-school/intensives",
-   "https://universitycollege.tufts.edu/pre-college/registration/frequently-asked-questions"
+   "https://universitycollege.tufts.edu/pre-college/registration/frequently-asked-questions",
+   "https://universitycollege.tufts.edu/pre-college/browse/mini-med-school"
   ],
   "notes": "Costs money; check each page for the price. Many 2027 dates say coming soon.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "massachusetts-umass-amherst-pre-college",
@@ -58703,10 +58705,10 @@
    "https://www.umass.edu/uww/pre-college/fees"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "Expensive. This is a college course experience, not a job. The page also lists year-round college prep workshops (fall 2026 workshops are open).",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -58717,7 +58719,7 @@
   "apply_url": "https://www.uml.edu/propel/apply.aspx",
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "fields": [
    "engineering",
@@ -58750,7 +58752,7 @@
    "https://www.uml.edu/academics/summer/"
   ],
   "notes": "Eligibility depends on your school type or city. Check the Gateway City list on the apply page. Ask about a Massachusetts work permit.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -58761,7 +58763,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "fields": [
    "arts-media",
@@ -58790,7 +58792,7 @@
    "https://worcesterart.org/learning/classes/teen-programs"
   ],
   "notes": "The page says a grant from the National Endowment for the Arts supports the NEA Teen Intern jobs. Ask the museum about a Massachusetts work permit.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Rising grades 10, 11 and 12",
@@ -58801,7 +58803,7 @@
   "apply_url": null,
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "fields": [
    "engineering",
@@ -58831,7 +58833,7 @@
    "https://www.wpi.edu/academics/pre-collegiate/summer-programs/frontiers"
   ],
   "notes": "Costs money. The exact opening day in December is not stated. Ask about financial assistance on the program policies page.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "regions": [
@@ -90239,10 +90241,10 @@
    "https://www.cee.org/programs/research-science-institute-rsi/rsi-application-faqs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Very hard to get in. The CEE FAQ says it accepts less than 2.5% of applicants. It is held at MIT in Cambridge, Massachusetts, and in 2027 also at Stanford for 50 scholars. The FAQ says the program lasts six weeks. You must be 16 by July 1 of the program year. The FAQ says the program is free once you are in, but the application fee is $75. Fee waivers may be available for need.",
-  "verified_on_label": "Oct 14, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "rush-copley-teen-volunteer",
