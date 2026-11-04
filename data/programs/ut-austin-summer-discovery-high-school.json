@@ -6,7 +6,7 @@
   "deadline_iso": null,
   "apply_url": "https://www.summerdiscovery.com/university-of-texas-austin",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": null,
   "grades": "9 to 12",
   "min_age": null,
@@ -18,15 +18,15 @@
   "fields": [
     "any"
   ],
-  "what_you_do": "Take college style, non credit courses or a one subject academy on the UT campus. Classes meet Monday to Thursday. You can live in a campus dorm or commute.",
+  "what_you_do": "Take college style, non credit courses or a one subject academy on the UT campus. Classes meet Monday to Friday in the 2 week session and Monday to Thursday in the 3 week session. You can live in a campus dorm or commute.",
   "who_can_apply": "High school students in grades 9 to 12. Participation does not guarantee admission to UT Austin.",
   "paid_type": "fee-based",
   "pay_detail": "Costs $3,799 to $7,999 depending on the options chosen (the Summer Discovery page gives one range). Some courses add fees. Financial aid is not mentioned.",
   "season": "summer",
-  "duration": "2 week or 3 week sessions (2026: June 14 to 26 and June 28 to July 17)",
-  "status": "closed-expect-reopen",
-  "deadline_text": "2026 sessions were June 14 to 26 and June 28 to July 17. 2027 dates and deadlines are not posted on the program pages.",
-  "deadline_confidence": "last-year-pattern",
+  "duration": "2 week or 3 week sessions. Listed as June 13 to 25 and June 27 to July 16; the pages differ on the year.",
+  "status": "unconfirmed",
+  "deadline_text": "The Summer Discovery site says to enroll early for Summer 2027 and lists Jun 13 to 25 and Jun 27 to Jul 16. The UT page lists the same dates but labels them 2026. No deadline is listed. Confirm with the program.",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Click the Apply Now button on the UT page. Summer Discovery, not UT, handles applications and sign-up. You can email summerdiscovery@utexas.edu. Or call 516-447-4907.",
   "url": "https://admissions.utexas.edu/summer-discovery/",
   "sources_fetched": [
@@ -34,5 +34,5 @@
     "https://www.summerdiscovery.com/university-of-texas-austin"
   ],
   "priority": 3,
-  "notes": "Expensive. Students get a certificate of completion and a campus grade letter. The Summer Discovery page shows an early enrollment discount ending Oct 31 but does not say the year."
+  "notes": "It costs a lot. You get a certificate and a grade letter."
 }

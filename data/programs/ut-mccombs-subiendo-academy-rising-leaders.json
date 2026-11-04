@@ -7,7 +7,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "grades": "Texas high school juniors only",
   "min_age": null,
@@ -25,14 +25,15 @@
   "pay_detail": "Free. The page says educational, food and boarding costs are covered. Travel is covered by the program.",
   "season": "summer",
   "duration": "June 13 to 17, 2027 on the UT Austin campus, with on campus living",
-  "status": "closed-expect-reopen",
-  "deadline_text": "The page says applications are closed now. It lists a 2027 application deadline of Feb 1, 2027 (supplemental materials Feb 8, 2027) and does not state an opening date. Confirm with McCombs.",
+  "status": "unconfirmed",
+  "deadline_text": "The page says applications are closed now. It also says the 2027 application opens Nov 1, 2026. It lists a deadline of Feb 1, 2027 (supplemental materials Feb 8, 2027). Confirm with McCombs.",
   "deadline_confidence": "unknown",
-  "how_to_apply": "Fill out the online application. It asks for a transcript, your activities and leadership, essays, a letter of support and a resume. The Apply link on the page was a placeholder. Email SummerPrograms@mccombs.utexas.edu or call 512-475-7340.",
+  "how_to_apply": "Fill out the online application. You need your school record, your activities, essays, a letter and a resume. Email SummerPrograms@mccombs.utexas.edu or call 512-475-7340.",
   "url": "https://www.mccombs.utexas.edu/undergraduate-programs/bba/academics/summer-high-school-programs/#:~:text=Subiendo",
   "priority": 2,
   "notes": "Texas high school students only. Shared McCombs page for three programs. Decisions are released by mid April. More info: https://www.mccombs.utexas.edu/undergraduate/subiendo/",
   "sources_fetched": [
-    "https://www.mccombs.utexas.edu/undergraduate-programs/bba/academics/summer-high-school-programs/"
+    "https://www.mccombs.utexas.edu/undergraduate-programs/bba/academics/summer-high-school-programs/",
+    "https://www.mccombs.utexas.edu/undergraduate/subiendo/apply/"
   ]
 }

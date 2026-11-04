@@ -6,7 +6,7 @@
   "deadline_iso": null,
   "apply_url": "https://www.roundrockrecreation.com/",
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-04",
   "needs_work_permit": null,
   "grades": null,
   "min_age": 15,
@@ -22,17 +22,18 @@
   "what_you_do": "Take a lifeguard class, then work as a lifeguard at city pools. The city also hires pool attendants, swim teachers and cashiers. There is a path from pool attendant to lifeguard.",
   "who_can_apply": "Must be 15 or older before the last class. Must pass a swim test: swim 150 yards, tread water 2 minutes, then swim 50 yards, and retrieve a 10 pound object from 7 to 10 feet.",
   "paid_type": "paid",
-  "pay_detail": "Lifeguard pay shown as $15 to $19.50 per hour (from a graphic on the page; a separate rate sheet is the official source). Training costs $215 to $305, or $75 if you sign a full season work commitment. Scholarships are available.",
+  "pay_detail": "Lifeguard pay is $16 to $17.25 per hour on the Summer 2027 rate sheet. Training costs $215, or $75 if you sign a full season work commitment. Scholarships are available.",
   "season": "summer",
   "duration": "Seasonal summer job. Training classes run November to May.",
   "status": "unconfirmed",
-  "deadline_text": "No application deadline is listed. The 2026 classes ran Mar 16 to May 30, 2026. The program page links a 2027 class flyer.",
-  "deadline_confidence": "last-year-pattern",
+  "deadline_text": "No application deadline is listed. The rate sheet says Summer 2027 jobs will be posted soon. The classes listed are Nov 21 to 25 and Dec 18 to 23, 2026.",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Sign up for training at roundrockrecreation.com. Then apply for jobs on the city job portal. To get the $75 rate, email the signed Commitment Letter to pardcustomerservice@roundrocktexas.gov. Call 512-218-5540 with questions.",
   "url": "https://www.roundrocktexas.gov/lifeguards",
   "priority": 1,
   "notes": "It is smart to apply early. If you pass the class, you get Lifeguard, CPR/AED and First Aid cards. They are good for 2 years. You must come to every class.",
   "sources_fetched": [
-    "https://www.roundrocktexas.gov/lifeguards"
+    "https://www.roundrocktexas.gov/lifeguards",
+    "https://www.roundrocktexas.gov/wp-content/uploads/2026/10/2027-Aqua-Jobs-Info-RATES-Pre-Live-JOB-posts-sm.pdf"
   ]
 }
