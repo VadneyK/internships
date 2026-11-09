@@ -36,6 +36,8 @@ const HOST_ALLOW = {
   "job-corps-sacramento": ["deseret.com"],
   // The program is the Wikipedia contribution guide, so its own page is on Wikipedia.
   "wikipedia-editing": ["en.wikipedia.org"],
+  // Virginia Tech's registration site keeps single course detail pages under /search/. This is the course's own page, not a search.
+  "blacksburg-vt-geosciences-high-school-camp": ["register.ext.vt.edu"],
 };
 
 // Sources that are not https, per card id, by exact URL. Remove the entry once the source is switched to https and read there.
