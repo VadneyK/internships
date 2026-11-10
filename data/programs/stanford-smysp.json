@@ -22,12 +22,12 @@
   "pay_detail": "Tuition free. Housing and stipend not stated.",
   "season": "summer",
   "duration": "About 5 weeks (2026: June 22 to July 26)",
-  "status": "closed-expect-reopen",
-  "opens_iso": null,
-  "deadline_text": "Closed for 2026 (no 2026 deadline listed). The page says the 2027 application is expected in December 2026. The 2027 session runs June 21 to July 23, 2027.",
+  "status": "opens-soon",
+  "opens_iso": "2026-11-15",
+  "deadline_text": "The 2027 application opens Nov 15, 2026. No closing date is posted. The 2027 session runs June 21 to July 23, 2027.",
   "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Apply online through the SlideRoom link on the SMYSP page when it opens. Contact: smysp-team@stanford.edu.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply online through the SlideRoom link on the SMYSP page when it opens on Nov 15, 2026. Contact: smysp-team@stanford.edu.",
   "needs_work_permit": false,
   "url": "https://med.stanford.edu/che/smysp.html",
   "apply_url": null,
@@ -35,7 +35,7 @@
     "https://med.stanford.edu/che/smysp.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-07",
+  "verified_on": "2026-11-09",
   "priority": 2,
-  "notes": "The page (checked 2026-10-10) gives 2027 session dates of June 21 to July 23, 2027. It says the 2027 application is expected in December 2026. It does not say if housing or a stipend is given."
+  "notes": "The page gives 2027 session dates of June 21 to July 23, 2027. It says the 2027 application opens Nov 15, 2026. It does not say if housing or a stipend is given."
 }
