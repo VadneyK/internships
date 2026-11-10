@@ -43799,11 +43799,11 @@
   "pay_detail": "Unpaid.",
   "season": "school-year",
   "duration": "Spring 2027 session: Jan 4 to Jun 20, 2027; 1 shift per week, 3 to 4 hours",
-  "status": "opens-soon",
-  "opens_iso": "2026-11-05",
-  "deadline_text": "Spring 2027 registration opens Nov 5, 2026 at 4 p.m. and closes Nov 8, 2026 at 11:45 p.m. Inova also runs summer and fall sessions.",
-  "deadline_iso": "2026-11-08",
-  "deadline_confidence": "confirmed-2026-27",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Spring 2027 registration ran Nov 5, 2026 at 4 p.m. to Nov 8, 2026 at 11:45 p.m. and is closed. Next dates not posted. Inova also runs summer and fall sessions.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Register during the window through the 'High school students register here' link on Inova's student page. Spots are assigned by lottery, one entry per applicant, and the student handles all email.",
   "needs_work_permit": false,
   "url": "https://www.inova.org/our-services/inova-volunteer-services-system/students",
@@ -43815,8 +43815,8 @@
   "notes": "Mandatory student-and-parent info meetings are in mid-November 2026 and orientations in late December 2026 (dates differ by hospital; one of each is required). Unpaid volunteering, so no work permit.",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on": "2026-11-09",
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "intermountain-health-junior-volunteers",
@@ -45121,10 +45121,10 @@
    "https://www.jobcorps.gov/admissions-process"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "priority": 3,
   "notes": "Addresses: Cascades, 2060 Powerhouse Drive, Sedro-Woolley, WA 98284. Curlew, 3 Campus St, Curlew, WA 99118. Columbia Basin, 6739 24th Ave NE Bldg 2402, Moses Lake, WA 98837. Job Corps is a training program, not a job. Each center page shows only a few of its trades; use See More on the center page for the full list.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "job-service-north-dakota-wioa-youth-program",
@@ -76739,10 +76739,10 @@
    "https://www.goodgrub.org/youth-programs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-09",
   "priority": 2,
   "notes": "The farm is at 2016 Elliott Ave NW, Olympia. GRuB also runs other programs for teens and young adults, including GroundED for youth working on a GED.",
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "omaha-childrens-nebraska-teen-connection",
@@ -86893,12 +86893,12 @@
    "education"
   ],
   "grades": null,
-  "opens_iso": "2026-11-08",
-  "deadline_iso": null,
+  "opens_iso": null,
+  "deadline_iso": "2026-11-29",
   "apply_url": null,
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-09",
   "priority": 2,
   "deadline_confidence": "confirmed-2026-27",
   "max_age": 18,
@@ -86916,15 +86916,15 @@
   "pay_detail": "Volunteer, unpaid",
   "season": "spring",
   "duration": "8 shifts over 16 weeks, every other weekend (Saturday or Sunday)",
-  "status": "opens-soon",
-  "deadline_text": "Spring semester applications open Sunday, November 8. Close date not posted. The Fall 2026 round is closed.",
+  "status": "open-now",
+  "deadline_text": "Spring semester applications opened Nov 8, 2026 and close Nov 29, 2026.",
   "how_to_apply": "Apply online on the museum's volunteer page. It is hard to get in. They look at writing, drive, growth and teamwork.",
   "url": "https://smv.org/get-involved/join-our-team/teen-volunteer",
   "notes": "The page labels these as 2027 spring applications, but its weekday and date pairs (Sunday, Nov 8 and Saturday, Jan 10) match 2026. Confirm the dates with the museum.",
   "sources_fetched": [
    "https://smv.org/get-involved/join-our-team/teen-volunteer"
   ],
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "grades": "11 to 12",
@@ -111157,10 +111157,10 @@
    "https://extension.wsu.edu/4h/join/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "priority": 2,
   "notes": "Fees, clubs and projects differ by county. This is a youth club and leadership program, not a paid job.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "opens_iso": null,
@@ -111238,10 +111238,10 @@
    "https://deca.org/associations/washington"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "priority": 2,
   "notes": "DECA's page lists 187 chapters in Washington. The state site is wadeca.org.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "washington-evergreen-boys-and-girls-state",
@@ -111279,10 +111279,10 @@
    "https://ebgs-wa.org/delegates/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-09",
   "priority": 1,
   "notes": "The site describes a 7-day, 6-night leadership experience. Confirm the 2027 dates on the main page of ebgs-wa.org.",
-  "verified_on_label": "Oct 18, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "washington-ffa-association",
@@ -111324,10 +111324,10 @@
    "https://www.washingtonffa.org/student-opportunities"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-11",
+  "verified_on": "2026-11-09",
   "priority": 2,
   "notes": "The page says the association has over 14,500 members in 194 chapters. Dues are $7 a year nationally and $10 a year for Washington. Local chapters may charge more.",
-  "verified_on_label": "Oct 11, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "washington-health-high-school-volunteer",
@@ -111374,7 +111374,7 @@
   "opens_iso": null,
   "apply_url": "https://kitsaplibrary.formstack.com/forms/teen_volunteer_application",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-09",
   "needs_work_permit": false,
   "deadline_iso": null,
   "min_age": null,
@@ -111406,7 +111406,7 @@
   "sources_fetched": [
    "https://www.krl.org/volunteer/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "washington-legislature-page-program",
@@ -111453,7 +111453,7 @@
   "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-09",
   "needs_work_permit": null,
   "deadline_iso": null,
   "min_age": 15,
@@ -111486,7 +111486,7 @@
   "season": "summer",
   "status": "closed-expect-reopen",
   "deadline_confidence": "last-year-pattern",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "grades": null,
@@ -111536,7 +111536,7 @@
   "min_age": null,
   "max_age": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "id": "washington-running-start",
   "name": "Running Start",
   "org": "Washington State Board for Community and Technical Colleges",
@@ -111567,14 +111567,14 @@
   ],
   "priority": 2,
   "notes": "Work hours tie-in from Washington L&I: 16 and 17 year olds enrolled in a bona fide college program, such as Running Start, may work non-school week hours during the regular school year (employers should ask for proof such as a college transcript).",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "grades": null,
   "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-09",
   "needs_work_permit": false,
   "deadline_iso": null,
   "min_age": null,
@@ -111606,7 +111606,7 @@
   "sources_fetched": [
    "https://www.sno-isle.org/volunteers/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "washington-wing-civil-air-patrol-cadets",
@@ -111645,10 +111645,10 @@
    "https://www.gocivilairpatrol.com/programs/cadets"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "priority": 2,
   "notes": "The Washington Wing join page links to separate Youth, Adults and Educators pages, so the age and cost figures come from the national page. This is a youth program, not a paid job.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "washington-wta-youth-trail-work-parties",
@@ -111725,10 +111725,10 @@
    "https://mil.wa.gov/how-to-apply"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "priority": 3,
   "notes": "This is for teens who are off track in school, not a job program. Campus: 1207 Carver Street, Bremerton, WA 98312.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 9, 2026",
   "limited": true
  },
  {
