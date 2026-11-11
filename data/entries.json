@@ -7694,13 +7694,13 @@
   ],
   "grades": null,
   "opens_iso": null,
-  "deadline_iso": null,
-  "apply_url": null,
+  "deadline_iso": "2027-02-15",
+  "apply_url": "https://lehigh.co1.qualtrics.com/jfe/form/SV_0JMW1ZcjGHcU6Ng",
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-21",
+  "verified_on": "2026-11-09",
   "priority": 3,
-  "deadline_confidence": "unknown",
+  "deadline_confidence": "confirmed-2026-27",
   "max_age": 17,
   "min_age": 15,
   "name": "Iacocca Global Leadership Intensive (IGLI)",
@@ -7711,13 +7711,13 @@
   "city": "Bethlehem, PA",
   "type": "entrepreneurship",
   "what_you_do": "A three-week program where you live on campus with teens from around the world. Pick Business and Entrepreneurship or Health and Innovation, and work on team projects.",
-  "who_can_apply": "You must be 15 to 17 for the whole program. You must finish high school in 2027 or 2028. You need three people to write for you: an English teacher, a second teacher and a counselor.",
+  "who_can_apply": "You must be 15 to 17 for the whole program. You must finish high school in 2028 or 2029. You need three people to write for you: an English teacher, a second teacher and a counselor.",
   "paid_type": "fee-based",
   "pay_detail": "$7,400 program fee (2027) for tuition, room and board, materials and trips. Small need-based aid, for priority applicants only.",
   "season": "summer",
   "duration": "3 weeks, July 11 to 31, 2027",
-  "status": "closed-expect-reopen",
-  "deadline_text": "The page says 2027 applications open in October 2026; the form was not active on Oct 22. Priority deadline Feb 15, 2027, then rolling.",
+  "status": "open-now",
+  "deadline_text": "Applications for 2027 are open as of Nov 9, 2026. Priority deadline Feb 15, 2027, then rolling until spots fill. The program runs July 11 to 31, 2027.",
   "how_to_apply": "Fill out the survey to see if you qualify and name your recommenders. Then send the application with a resume, a one-page essay and a 3-minute video. Questions: globalprecollege@lehigh.edu.",
   "url": "https://global.lehigh.edu/iacocca-institute/IGLI",
   "notes": "This used to be called IGEI. The old link now goes to the IGLI page. You live on campus and stay the whole time.",
@@ -7725,7 +7725,7 @@
    "https://global.lehigh.edu/iacocca-institute/IGEI",
    "https://global.lehigh.edu/iacocca-institute/IGLI"
   ],
-  "verified_on_label": "Oct 21, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "beyond-emancipation-foster-youth",
@@ -31591,7 +31591,7 @@
   "apply_url": null,
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-09",
   "priority": 1,
   "deadline_confidence": "rolling",
   "max_age": 17,
@@ -31617,7 +31617,7 @@
   "sources_fetched": [
    "https://www.eriezoo.org/volunteer"
   ],
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "grades": null,
@@ -39488,7 +39488,7 @@
   "apply_url": null,
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-09",
   "priority": 2,
   "deadline_confidence": "last-year-pattern",
   "max_age": 15,
@@ -39514,7 +39514,7 @@
   "sources_fetched": [
    "https://lowerpaxton-pa.gov/598/Jr-Camp-Counselor-in-Training"
   ],
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "regions": [
@@ -43799,11 +43799,11 @@
   "pay_detail": "Unpaid.",
   "season": "school-year",
   "duration": "Spring 2027 session: Jan 4 to Jun 20, 2027; 1 shift per week, 3 to 4 hours",
-  "status": "opens-soon",
-  "opens_iso": "2026-11-05",
-  "deadline_text": "Spring 2027 registration opens Nov 5, 2026 at 4 p.m. and closes Nov 8, 2026 at 11:45 p.m. Inova also runs summer and fall sessions.",
-  "deadline_iso": "2026-11-08",
-  "deadline_confidence": "confirmed-2026-27",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Spring 2027 registration ran Nov 5, 2026 at 4 p.m. to Nov 8, 2026 at 11:45 p.m. and is closed. Next dates not posted. Inova also runs summer and fall sessions.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Register during the window through the 'High school students register here' link on Inova's student page. Spots are assigned by lottery, one entry per applicant, and the student handles all email.",
   "needs_work_permit": false,
   "url": "https://www.inova.org/our-services/inova-volunteer-services-system/students",
@@ -43815,8 +43815,8 @@
   "notes": "Mandatory student-and-parent info meetings are in mid-November 2026 and orientations in late December 2026 (dates differ by hospital; one of each is required). Unpaid volunteering, so no work permit.",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on": "2026-11-09",
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "intermountain-health-junior-volunteers",
@@ -46621,10 +46621,10 @@
    "https://www.jobcorps.gov/faqs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "priority": 3,
   "notes": "Mostly fits teens 16 and up who are out of school or want a different path. Housing: dorms are listed on the campus page. A center being listed on the Job Corps site does not prove it is enrolling right now, so confirm with an Admissions Representative. The training list above comes from the center's training page and may not be complete. Whether a state work permit applies was not checked.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "khan-academy-career-courses",
@@ -51562,7 +51562,7 @@
   "apply_url": null,
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-09",
   "priority": 3,
   "deadline_confidence": "last-year-pattern",
   "max_age": null,
@@ -51577,18 +51577,18 @@
   "what_you_do": "A one-week program where you live on campus. It is for teens who like to lead and work in teams. You study the liberal arts and learn to solve problems in new ways.",
   "who_can_apply": "Students going into 10th, 11th or 12th grade.",
   "paid_type": "fee-based",
-  "pay_detail": "$1,750 (2026), covers housing, meals, instruction and activities. Need-based aid is available.",
+  "pay_detail": "$1,750 (2027), covers housing, meals, instruction and activities. Need-based aid is available.",
   "season": "summer",
   "duration": "About 6 days (2026: June 21 to 26)",
   "status": "closed-expect-reopen",
-  "deadline_text": "2026 application closed. The page says to check back in the fall for 2027 details. Review began in March in 2026.",
+  "deadline_text": "The 2027 session is June 27 to July 2, 2027. The page says the application is coming soon. No dates for it are posted yet.",
   "how_to_apply": "Fill out the online application. Add a short essay and a high school transcript. For aid, a school or community counselor emails a letter about your need to BASE@bucknell.edu before the deadline.",
   "url": "https://www.bucknell.edu/admissions-aid/plan-visit/camps-conferences-visit-programs/bucknell-academy-summer-experience-base",
   "notes": "Questions: BASE@bucknell.edu or 570-577-3000. Check back in the fall for 2027 details.",
   "sources_fetched": [
    "https://www.bucknell.edu/admissions-aid/plan-visit/camps-conferences-visit-programs/bucknell-academy-summer-experience-base"
   ],
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "lexington-kentucky-horse-park-minor-volunteer",
@@ -54974,12 +54974,12 @@
   "max_age": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-10",
   "needs_work_permit": null,
   "priority": 1,
-  "deadline_iso": null,
+  "deadline_iso": "2027-01-22",
   "pay_detail": "At least the state minimum wage. The page says students typically earn about $15 an hour on average.",
-  "duration": "Program length not stated on the page. Explore runs October to December; interviews run March to July.",
+  "duration": "Program length not stated on the page. Explore runs October to December; interviews run March to September.",
   "name": "Youth Apprenticeship at Madison public schools",
   "org": "Madison Metropolitan School District",
   "regions": [
@@ -54995,15 +54995,15 @@
   "paid_type": "paid",
   "season": "school-year",
   "status": "open-now",
-  "deadline_text": "Current cycle: explore October to December, priority application deadline February 13. The page prints no year for February 13, so no date is set. Interviews run March to July.",
-  "deadline_confidence": "unknown",
+  "deadline_text": "Explore runs October to December. The priority application deadline is Jan 22, 2027. The page also prints February 13 with no year. Intake screening is in March. Interviews run March to September.",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Talk to your Youth Apprenticeship coordinator or school counselor, join the Google Classroom, go to Workplace Success Workshops, do an intake screening, then interview with employers. Coordinator: Annie Johnston, ajohnston2@madison.k12.wi.us.",
-  "url": "https://www.madison.k12.wi.us/career-technical-education/youth-apprenticeship",
-  "notes": "The page does not name a year for February 13, so confirm the date. Related cards cover the Dane County and state youth apprenticeship programs.",
+  "url": "https://www.madison.k12.wi.us/academics/career-technical-education/youth-apprenticeship",
+  "notes": "As of Nov 10, 2026 the page gives Jan 22, 2027 as the priority deadline. It does not name a year for February 13, so confirm that date. Related cards cover the Dane County and state youth apprenticeship programs.",
   "sources_fetched": [
-   "https://www.madison.k12.wi.us/career-technical-education/youth-apprenticeship"
+   "https://www.madison.k12.wi.us/academics/career-technical-education/youth-apprenticeship"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 10, 2026"
  },
  {
   "id": "madison-mscr-assistant-swim-instructor",
@@ -58719,11 +58719,11 @@
   "pay_detail": "Pay is not stated on the page.",
   "season": "summer",
   "duration": "Camp runs June 14 to June 18, 2027",
-  "status": "open-now",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Camp staff applications are due November 9, 2026 at 4:00 pm. Camp is June 14 to June 18, 2027.",
-  "deadline_iso": "2026-11-09",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_text": "Camp staff applications closed Nov 9, 2026 at 4:00 pm. No new date is posted yet. Camp is June 14 to June 18, 2027.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Fill out the 2027 Camp Staff Application from the Merced 4-H Camps page and turn it in by the deadline. Then you have an interview. Questions: Merced County 4-H Office, (209) 385-7418.",
   "needs_work_permit": null,
   "url": "https://ucanr.edu/site/merced-4-h-youth-development/outdoor-science-and-adventure-camp",
@@ -58732,10 +58732,10 @@
    "https://ucanr.edu/site/merced-4-h-youth-development/outdoor-science-and-adventure-camp"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-10",
   "priority": 2,
   "notes": "The page gives the deadline as November 9 with no year, next to the June 2027 camp dates and the 2027 application form. It does not say whether teen staff must be enrolled 4-H members, so ask the 4-H office.",
-  "verified_on_label": "Oct 19, 2026"
+  "verified_on_label": "Nov 10, 2026"
  },
  {
   "id": "merced-civil-air-patrol-squadron-147-cadets",
@@ -74930,7 +74930,7 @@
  },
  {
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "opens_iso": null,
   "id": "nycps-career-and-technical-education",
   "name": "Career and Technical Education (CTE) high schools",
@@ -74965,11 +74965,11 @@
   ],
   "priority": 2,
   "notes": "This is a school choice, not a job. Ask your guidance counselor or a Family Welcome Center how enrollment works for your grade. The CTE endorsement needs 44 credits, 5 Regents exams, a technical assessment and work-based learning.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "opens_iso": null,
   "id": "nycps-career-readiness-modern-youth-apprenticeship",
   "name": "Career Readiness and Modern Youth Apprenticeship (CRMYA)",
@@ -75004,7 +75004,7 @@
   ],
   "priority": 2,
   "notes": "Only at participating schools; the page does not list which ones. Apprentices attend school mornings Monday to Thursday and all day Friday, and work Monday to Thursday afternoons. Apprenticeships are registered with the NYS Department of Labor. Paid work for people under 18 in New York needs working papers (employment certificate). See permit.html?state=ny for the exact permit and steps.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "opens_iso": null,
@@ -76327,10 +76327,10 @@
    "https://ohio4h.org/about/join-4-h"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-09",
   "priority": 2,
   "notes": "Club membership, not a paid job. The site menu has a Just for Teens section that was not read. Only the join page was read for this card.",
-  "verified_on_label": "Oct 18, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "ohio-buckeye-boys-state",
@@ -76368,10 +76368,10 @@
    "https://www.ohiobuckeyeboysstate.com/?p=335"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "priority": 2,
   "notes": "Not a job. Office phone is 513-529-3860. The site describes the program as drawing over 1,200 young men a year.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 9, 2026",
   "limited": true
  },
  {
@@ -76408,10 +76408,10 @@
    "https://www.deca.org/associations/ohio"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "priority": 2,
   "notes": "Not a paid job. Your school must have an approved career-technical program with a DECA chapter. The state website listed on the page is ohiodeca.org.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "grades": "Entering freshman year of high school through freshman year of college",
@@ -76422,7 +76422,7 @@
   "duration": "One-day camps in fall (the weeklong camp is over for 2026)",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "priority": 1,
   "needs_work_permit": false,
   "notes": "The Oct. 11 close date is figured from the \"10 days prior\" rule on the flyer, so check the Columbus registration page. Sign up on the page for email notices about future ExploreAg camps.",
@@ -76455,7 +76455,7 @@
    "https://ofbf.org/app/uploads/2026/09/2026_ExploreAgFlyer_Fall-Camps.pdf",
    "https://ofbf.org/community/youth-in-agriculture/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "ohio-ffa-state-association",
@@ -76495,10 +76495,10 @@
    "https://ohioffa.org/resources/ffa-membership/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "priority": 2,
   "notes": "Not a job. The homepage reports 30,880 members in 345 chapters. State office phone is (614) 387-7575. The September 30 and November 30 dates are chapter deadlines, so a student should ask the advisor early.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "grades": "Rising 9th to 12th graders (for the two high school camps)",
@@ -76589,7 +76589,7 @@
   "duration": "At least 40 hours through the summer",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "priority": 3,
   "needs_work_permit": false,
   "notes": "The page says nothing about housing or rides.",
@@ -76617,7 +76617,7 @@
   "sources_fetched": [
    "https://thewilds.org/volunteer"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "ohio-wing-civil-air-patrol-cadets",
@@ -76656,10 +76656,10 @@
    "https://www.ohwg.cap.gov/join/become-a-cadet-ages-12-18/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "priority": 2,
   "notes": "Volunteer youth program, not a job. Ohio Wing office: 6031 E Main Street, PO Box 301, Columbus, OH 43213, phone 614-338-8198.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "ohio-ymca-youth-and-government",
@@ -76673,7 +76673,7 @@
   "fields": [
    "law-government"
   ],
-  "what_you_do": "Join a school or YMCA delegation. Prepare in the fall. Then take part in a student-run model government at the spring State Assembly in Columbus. High school roles include legislator, court, lobbyist and media.",
+  "what_you_do": "Join a school or YMCA delegation. Prepare in the fall. Then take part in a student-run model government at the State Assembly in Columbus. High school roles include legislator, court, lobbyist and media.",
   "min_age": null,
   "max_age": null,
   "grades": "6th to 12th grade (high school is 9th to 12th)",
@@ -76682,11 +76682,11 @@
   "pay_detail": "Registration fee amount is not stated on the program pages. A $25 late fee applied last year. Financial aid pages exist for middle and high school.",
   "season": "school-year",
   "duration": "Fall prep, then a 3-day State Assembly in spring",
-  "status": "closed-expect-reopen",
+  "status": "open-now",
   "opens_iso": null,
-  "deadline_text": "Last cycle: State Assembly February 12 to 14, 2026 at the Hyatt Regency Columbus. Registration closed November 28, 2025, with late registration December 1 to 10, 2025. 2027 dates are not posted on the program page.",
-  "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
+  "deadline_text": "Registration closes Dec 4, 2026. The State Assembly is Jan 31 to Feb 1, 2027 at the Renaissance Columbus Downtown.",
+  "deadline_iso": "2026-12-04",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Join or start a delegation at your school or YMCA in the fall. New delegations can email yg@ohioymcas.org or call (614) 407-4819. Students and advisors register on the State Assembly registration page.",
   "needs_work_permit": false,
   "url": "https://ohioymcayg.org/about-us/",
@@ -76697,10 +76697,10 @@
    "https://www.ohioymcayg.org/state-assembly/registration/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "priority": 2,
-  "notes": "Not a job. The registration page still showed the 2026 assembly dates, so check it for the 2027 dates.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "Not a job. Dates are as of Nov 9, 2026.",
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "olympia-grub-summer-youth-program",
@@ -78894,10 +78894,10 @@
    "https://www.gocivilairpatrol.com/programs/cadets/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "priority": 2,
   "notes": "No military duty. Cadets can stay in until age 21 and can switch to adult membership at 18. Squadron meetings and costs vary, so ask the squadron near you.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "grades": "High school grades 9 to 12 (middle school grades 5 to 8 has a separate group)",
@@ -83915,11 +83915,11 @@
   "pay_detail": "Free. Pomona College covers housing, food, activities and field-trip transportation. No stipend mentioned.",
   "season": "summer",
   "duration": "4-week residential summer (2027: June 20 to July 16), then 3 years of involvement",
-  "status": "opens-soon",
-  "opens_iso": "2026-11-09",
-  "deadline_text": "The apply page lists the 2026-2027 dates. Application opens Nov 9, 2026. Application and transcript due Feb 22, 2027. Recommendation form due Mar 1, 2027. Decisions come Apr 16, 2027.",
-  "deadline_iso": "2027-02-22",
-  "deadline_confidence": "confirmed-2026-27",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "The apply page lists the 2026-2027 dates. It says the application opens Nov 9, 2026. As of Nov 10, 2026, the page did not yet show the application. Application and transcript due Feb 22, 2027. Recommendation form due Mar 1, 2027. Decisions come Apr 16, 2027.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
   "how_to_apply": "Fill out the online New Student Application. Add two essays of up to 500 words each, this year's transcript and two recommendations. One must come from a core subject teacher. Some applicants get an interview. Contact PAYS@pomona.edu or (909) 607-1810.",
   "needs_work_permit": false,
   "url": "https://www.pomona.edu/administration/draper-center/pays/apply",
@@ -83929,10 +83929,10 @@
    "https://www.pomona.edu/administration/draper-center/pays/apply"
   ],
   "verified": "fetched",
-  "verified_on": "2026-11-02",
+  "verified_on": "2026-11-10",
   "priority": 1,
-  "notes": "Checked 2026-11-02 on the apply page: it lists the 2026-2027 dates and the June 20 to July 16, 2027 residential dates. Its list of application materials still says 2025-2026. The program admits about 30 students each year. Contact the program if the form is not up by Nov 9.",
-  "verified_on_label": "Nov 2, 2026"
+  "notes": "Checked 2026-11-02 on the apply page: it lists the 2026-2027 dates and the June 20 to July 16, 2027 residential dates. Its list of application materials still says 2025-2026. The program admits about 30 students each year. Check the page again, or contact the program to ask if the form is up.",
+  "verified_on_label": "Nov 10, 2026"
  },
  {
   "id": "pomona-valley-hospital-high-school-volunteer",
@@ -85229,7 +85229,7 @@
  },
  {
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "opens_iso": null,
   "id": "qpl-teen-volunteer",
   "name": "Queens Public Library Teen Volunteering (ages 14-17)",
@@ -85267,7 +85267,7 @@
   ],
   "priority": 1,
   "notes": "Library says some projects do not need working papers, so check each listing. Working papers take 1-3 weeks from your school, so start early. They are issued regardless of immigration status. Under-14s can only volunteer with a parent or guardian.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "raleigh-digital-connectors",
@@ -85916,10 +85916,10 @@
    "https://www.jobcorps.gov/faqs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "priority": 3,
   "notes": "Mostly fits teens 16 and up who are out of school or want a different path. Housing: dorms are listed on the campus page. A center being listed on the Job Corps site does not prove it is enrolling right now, so confirm with an Admissions Representative. The training list above comes from the center's training page and may not be complete. Whether a state work permit applies was not checked.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "redwood-city-leaders-in-training",
@@ -86893,12 +86893,12 @@
    "education"
   ],
   "grades": null,
-  "opens_iso": "2026-11-08",
-  "deadline_iso": null,
+  "opens_iso": null,
+  "deadline_iso": "2026-11-29",
   "apply_url": null,
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-09",
   "priority": 2,
   "deadline_confidence": "confirmed-2026-27",
   "max_age": 18,
@@ -86916,15 +86916,15 @@
   "pay_detail": "Volunteer, unpaid",
   "season": "spring",
   "duration": "8 shifts over 16 weeks, every other weekend (Saturday or Sunday)",
-  "status": "opens-soon",
-  "deadline_text": "Spring semester applications open Sunday, November 8. Close date not posted. The Fall 2026 round is closed.",
+  "status": "open-now",
+  "deadline_text": "Spring semester applications opened Nov 8, 2026 and close Nov 29, 2026.",
   "how_to_apply": "Apply online on the museum's volunteer page. It is hard to get in. They look at writing, drive, growth and teamwork.",
   "url": "https://smv.org/get-involved/join-our-team/teen-volunteer",
   "notes": "The page labels these as 2027 spring applications, but its weekday and date pairs (Sunday, Nov 8 and Saturday, Jan 10) match 2026. Confirm the dates with the museum.",
   "sources_fetched": [
    "https://smv.org/get-involved/join-our-team/teen-volunteer"
   ],
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "grades": "11 to 12",
@@ -98162,7 +98162,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-09",
   "priority": 2,
   "deadline_confidence": "last-year-pattern",
   "max_age": 18,
@@ -98188,7 +98188,7 @@
   "sources_fetched": [
    "https://www.leafprojectpa.org/youthsummeremployment"
   ],
-  "verified_on_label": "Oct 12, 2026",
+  "verified_on_label": "Nov 9, 2026",
   "limited": true
  },
  {
@@ -112851,10 +112851,10 @@
    "https://4h.extension.wisc.edu/statewide-events-and-opportunities/wi-4-h-agriculture-ambassadors/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-11",
+  "verified_on": "2026-11-09",
   "priority": 2,
   "notes": "Key 2027 dates: State Leader Teams Weekend Apr 9 to 11, Fall Forum Nov 5 to 7.",
-  "verified_on_label": "Oct 11, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "wisconsin-4h-summer-academy-uw-madison",
@@ -112891,10 +112891,10 @@
    "https://4h.extension.wisc.edu/statewide-events-and-opportunities/summer-academy/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-11",
+  "verified_on": "2026-11-09",
   "priority": 1,
   "notes": "The page says track details are labeled 2026 and may change for 2027.",
-  "verified_on_label": "Oct 11, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "wisconsin-badger-boys-state",
@@ -112931,10 +112931,10 @@
    "https://badgerboysstate.org/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "priority": 2,
   "notes": "Not a job. The 2027 session is the 83rd. Office: 2930 American Legion Drive, Portage, WI 53901, phone 608-745-1090.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 9, 2026",
   "limited": true
  },
  {
@@ -112971,10 +112971,10 @@
    "https://www.alabgs.org/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "priority": 2,
   "notes": "Not a job. A tuition sponsor is needed, usually found through the school or the local American Legion Auxiliary. Dates for the next session come from the program site.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 9, 2026",
   "limited": true
  },
  {
@@ -113011,10 +113011,10 @@
    "https://www.deca.org/associations/wisconsin"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "priority": 2,
   "notes": "Not a paid job. The state website listed on the page is wideca.org. This card is based on the DECA Inc. page for Wisconsin.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "wisconsin-dnr-youth-conservation-congress",
@@ -113054,10 +113054,10 @@
    "https://dnr.wisconsin.gov/sites/default/files/topic/About/WCC/YCC/YCC_FrequentlyAskedQuestions.pdf"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "priority": 2,
   "notes": "Volunteer program, not a job. A parent or guardian must sign the consent form. It can count toward school service-learning or independent study credit if your school agrees. The packet's example activities are from 2025, so check this year's schedule.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "wisconsin-dwd-youth-apprenticeship",
@@ -113092,19 +113092,19 @@
   "how_to_apply": "Pick a career area. Talk with your counselor and parents. Contact your local YA Regional Coordinator and apply. Then interview with employers. After you are hired you go to orientation and safety training.",
   "needs_work_permit": null,
   "url": "https://dwd.wisconsin.gov/apprenticeship/ya/",
-  "apply_url": "https://dwd.wisconsin.gov/apprenticeship/ya/applicants.htm",
+  "apply_url": "https://dwd.wisconsin.gov/apprenticeship/ya/applicants",
   "sources_fetched": [
    "https://dwd.wisconsin.gov/apprenticeship/ya/",
-   "https://dwd.wisconsin.gov/apprenticeship/ya/applicants.htm",
-   "https://dwd.wisconsin.gov/apprenticeship/ya/childlabor.htm",
-   "https://dwd.wisconsin.gov/apprenticeship/ya/calendar.htm",
+   "https://dwd.wisconsin.gov/apprenticeship/ya/applicants",
+   "https://dwd.wisconsin.gov/apprenticeship/ya/childlabor",
+   "https://dwd.wisconsin.gov/apprenticeship/ya/calendar",
    "https://dwd.wisconsin.gov/er/laborstandards/workpermit/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-10",
   "priority": 1,
   "notes": "Wisconsin's youth apprenticeship page says work permits are no longer required for 16 and 17 year olds. The Wisconsin work permit page says 14 and 15 year olds still need a permit ($10 fee, repaid by the employer by the first paycheck). A 15 year old junior is possible, so ask your coordinator. Student learner status does not override minor employment laws. DWD phone (608) 266-3131.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 10, 2026"
  },
  {
   "id": "wisconsin-ffa-state-association",
@@ -113144,10 +113144,10 @@
    "https://wisconsinaged.org/wi-ffa-membership"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "priority": 2,
   "notes": "Not a job. The site has a Local Chapter Locator that links to Find a Program. Your school must have an ag program and an FFA chapter. The Affiliation fee is based on enrollment. The page does not say who pays it, so the claim in pay_detail that the school pays is not confirmed by this page.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "wisconsin-wing-civil-air-patrol-cadets",
@@ -113187,10 +113187,10 @@
    "https://www.gocivilairpatrol.com/join/youth-in-cadet-program/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "priority": 2,
   "notes": "Volunteer youth program, not a job. Ages differ between the Wisconsin page (12 to 19) and the national page (12 to 18), so confirm with the squadron. Wing address: 2400 Wright Street, Madison, WI 53704.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "wisconsin-ymca-youth-in-government",
