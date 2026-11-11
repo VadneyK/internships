@@ -5,12 +5,12 @@
   "max_age": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-10",
   "needs_work_permit": null,
   "priority": 1,
-  "deadline_iso": null,
+  "deadline_iso": "2027-01-22",
   "pay_detail": "At least the state minimum wage. The page says students typically earn about $15 an hour on average.",
-  "duration": "Program length not stated on the page. Explore runs October to December; interviews run March to July.",
+  "duration": "Program length not stated on the page. Explore runs October to December; interviews run March to September.",
   "name": "Youth Apprenticeship at Madison public schools",
   "org": "Madison Metropolitan School District",
   "regions": [
@@ -26,12 +26,12 @@
   "paid_type": "paid",
   "season": "school-year",
   "status": "open-now",
-  "deadline_text": "Current cycle: explore October to December, priority application deadline February 13. The page prints no year for February 13, so no date is set. Interviews run March to July.",
-  "deadline_confidence": "unknown",
+  "deadline_text": "Explore runs October to December. The priority application deadline is Jan 22, 2027. The page also prints February 13 with no year. Intake screening is in March. Interviews run March to September.",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Talk to your Youth Apprenticeship coordinator or school counselor, join the Google Classroom, go to Workplace Success Workshops, do an intake screening, then interview with employers. Coordinator: Annie Johnston, ajohnston2@madison.k12.wi.us.",
-  "url": "https://www.madison.k12.wi.us/career-technical-education/youth-apprenticeship",
-  "notes": "The page does not name a year for February 13, so confirm the date. Related cards cover the Dane County and state youth apprenticeship programs.",
+  "url": "https://www.madison.k12.wi.us/academics/career-technical-education/youth-apprenticeship",
+  "notes": "As of Nov 10, 2026 the page gives Jan 22, 2027 as the priority deadline. It does not name a year for February 13, so confirm that date. Related cards cover the Dane County and state youth apprenticeship programs.",
   "sources_fetched": [
-    "https://www.madison.k12.wi.us/career-technical-education/youth-apprenticeship"
+    "https://www.madison.k12.wi.us/academics/career-technical-education/youth-apprenticeship"
   ]
 }
