@@ -61568,11 +61568,11 @@
   "pay_detail": "Small meal stipend. The program pays for the hotel. You pay your other personal costs.",
   "season": "school-year",
   "duration": "One week (Monday to Friday) in Saint Paul. 2027 weeks run from Jan 25 to May 14, 2027.",
-  "status": "open-now",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "Complete applications are due by end of business on Nov 10, 2026 for the 2027 session. Selected students are told by email by mid-December.",
-  "deadline_iso": "2026-11-10",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_text": "Applications for the 2027 session closed Nov 10, 2026. Selected students are told by email by mid-December.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Download the 2027 Page Application PDF from the House Sergeant at Arms site. Email it to EducationalPrograms@house.mn.gov. You also need a 500-word essay. You need one letter of recommendation. It can come from a teacher, counselor or academic advisor.",
   "needs_work_permit": null,
   "url": "https://www.house.mn.gov/sergeant/introduction",
@@ -61583,10 +61583,10 @@
    "https://www.house.mn.gov/sergeant/overview"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-11",
   "priority": 1,
   "notes": "Participants stay together as a group each evening at the program-designated hotel. Questions: Sergeant at Arms office, 651-296-4860.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 11, 2026"
  },
  {
   "id": "minnesota-state-fair-employment",
@@ -99909,23 +99909,23 @@
   "pay_detail": "Tuition is $3,000 and is not refundable. No application fee. Need-based aid is for students who live in the U.S.",
   "season": "summer",
   "duration": "2 weeks online, Mon to Fri, 9 am to 1 pm Pacific. Session A is June 14 to 25, 2027. Session B is July 12 to 23, 2027.",
-  "status": "opens-soon",
-  "opens_iso": "2026-11-10",
-  "deadline_text": "Summer 2027 program. Application opens Nov 10, 2026 and closes Feb 1, 2027. Aid applications close Jan 15, 2027. Free online info session Tue Nov 10, 2026, 5 to 6 pm Pacific, open to students and parents.",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Summer 2027 program. Application opens Nov 10, 2026 and closes Feb 1, 2027. The application is open now and due Feb 1, 2027. Aid applications close Jan 15, 2027.",
   "deadline_iso": "2027-02-01",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Apply when the application opens on Nov 10, 2026 (the page does not describe the form). Attend the free info session on Nov 10, 2026, or RSVP through the page. Questions: aimi-hs-programs@stanford.edu.",
+  "how_to_apply": "The application is open now and due Feb 1, 2027. Use the apply link on the program page. Questions: aimi-hs-programs@stanford.edu.",
   "needs_work_permit": null,
   "url": "https://aimi.stanford.edu/education/summer-research-internship",
-  "apply_url": null,
+  "apply_url": "https://cvent.me/zDZwV9",
   "sources_fetched": [
    "https://aimi.stanford.edu/education/summer-research-internship"
   ],
   "verified": "fetched",
-  "verified_on": "2026-11-09",
+  "verified_on": "2026-11-11",
   "priority": 2,
-  "notes": "As of Nov 9, 2026 the page lists tuition, two session dates and eligibility for the Summer 2027 program. Recommendations are due Feb 8, 2027. Decisions come by the end of March 2027. The page does not say whether a work permit is needed. Ask aimi-hs-programs@stanford.edu. The Summer Health AI Bootcamp is a separate program on the same site and is not covered here.",
-  "verified_on_label": "Nov 9, 2026"
+  "notes": "As of Nov 11, 2026 the page lists tuition, two session dates and eligibility for the Summer 2027 program. Recommendations are due Feb 8, 2027. Decisions come by the end of March 2027. The page does not say whether a work permit is needed. Ask aimi-hs-programs@stanford.edu. The Summer Health AI Bootcamp is a separate program on the same site and is not covered here.",
+  "verified_on_label": "Nov 11, 2026"
  },
  {
   "id": "stanford-care-explorers",
