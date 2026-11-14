@@ -104,7 +104,6 @@ const NOT_STATED_IDS = [
   "pittsburgh-boys-girls-clubs-workforce-pathways",
   "rfu-inspire-summer-research",
   "sacramento-youth-center",
-  "stanford-aimi-summer-research-internship",
   "twin-cities-minneapolis-parks-teen-teamworks",
   "san-bernardino-county-wioa-youth",
   "black-girls-code",
