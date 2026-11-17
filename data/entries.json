@@ -45319,9 +45319,9 @@
   "pay_detail": "$25 per hour minimum, paid every two weeks, up to 40 hours a week",
   "season": "summer",
   "duration": "7 weeks, June 14 to July 30, 2027",
-  "status": "opens-soon",
-  "opens_iso": "2026-11-16",
-  "deadline_text": "Opens Nov 16, 2026 at 9am Pacific; closes Jan 8, 2027 at 5pm Pacific.",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Opens Nov 16, 2026 at 9am Pacific; closes Jan 8, 2027 at 5pm Pacific. The portal is open as of Nov 17, 2026.",
   "deadline_iso": "2027-01-08",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Apply only on the KP LAUNCH online portal during the window (email submissions are not reviewed). You need a resume and a personal statement of up to 750 words. Questions: KP.LAUNCH@kp.org.",
@@ -45333,10 +45333,10 @@
    "https://kplaunch.kaiserpermanente.org/internship-program-updates/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-21",
+  "verified_on": "2026-11-17",
   "priority": 1,
   "notes": "Full-time hours, so no summer school or camp overlap. Competitive. A Kaiser story reportedly cited about 3,300 applicants for 318 spots, which is not confirmed here. Placement sites vary, so check that your area is offered. Kaiser may ask for COVID vaccine proof.",
-  "verified_on_label": "Oct 21, 2026",
+  "verified_on_label": "Nov 17, 2026",
   "limited": true
  },
  {
@@ -45987,15 +45987,15 @@
   "grades": "10-11",
   "max_age": null,
   "min_age": null,
-  "opens_iso": "2026-11-15",
-  "deadline_iso": null,
-  "apply_url": null,
+  "opens_iso": null,
+  "deadline_iso": "2027-02-01",
+  "apply_url": "https://redcap.umkc.edu/surveys/?s=CH93WDHRYJ3NEN9F",
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-17",
   "priority": 1,
   "notes": "Questions: stahr@umkc.edu or 816-235-6169.",
-  "deadline_confidence": "last-year-pattern",
+  "deadline_confidence": "confirmed-2026-27",
   "fields": [
    "health"
   ],
@@ -46012,15 +46012,15 @@
   "paid_type": "stipend",
   "pay_detail": "Free. Students who meet expectations get a stipend, a scholarship, or both. Amounts not stated.",
   "season": "summer",
-  "duration": "2026: June 8 to July 17, Monday to Friday 8:30 a.m. to 4 p.m., plus August to April",
-  "status": "opens-soon",
-  "deadline_text": "2027 application opens Nov 15, 2026. The page prints a Feb 1, 2026 at 11:59 pm CST deadline, which appears to belong to the earlier cycle. No 2027 deadline is posted yet.",
+  "duration": "2027: June 7 to July 16, Monday to Friday 8:30 a.m. to 4 p.m., plus August to April",
+  "status": "open-now",
+  "deadline_text": "The 2027 application opened Nov 15, 2026. It closes Feb 1, 2027 at 11:59 pm CST.",
   "how_to_apply": "Fill out the online STAHR form. Send a transcript with unweighted GPA. Send 1 professional recommendation through the online reference form (letters are not accepted). Questions: stahr@umkc.edu, 816-235-6169.",
   "url": "https://info.umkc.edu/stahr/scholars/high-school/",
   "sources_fetched": [
    "https://info.umkc.edu/stahr/scholars/high-school/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 17, 2026"
  },
  {
   "grades": "8-12",
@@ -52866,9 +52866,9 @@
   "regions": [
    "los-angeles"
   ],
-  "apply_url": null,
+  "apply_url": "https://forms.longbeach.gov/Forms/LS-YPL",
   "verified": "fetched",
-  "verified_on": "2026-11-09",
+  "verified_on": "2026-11-17",
   "grades": null,
   "needs_work_permit": null,
   "id": "long-beach-youth-poet-laureate",
@@ -52888,9 +52888,9 @@
   "pay_detail": "$1,500 scholarship for the Youth Poet Laureate; $500 scholarship for each of 4 Youth Poet Ambassadors",
   "season": "year-round",
   "duration": "May 2027 to April 2028",
-  "status": "opens-soon",
-  "opens_iso": "2026-11-14",
-  "deadline_text": "Applications open Nov 14, 2026 and close Feb 27, 2027 (no late applications). Finalists told by April 2027. Finals May 22, 2027.",
+  "status": "open-now",
+  "opens_iso": null,
+  "deadline_text": "Applications opened Nov 14, 2026 and close Feb 27, 2027 (no late applications). Finalists told by April 2027. Finals May 22, 2027.",
   "deadline_iso": "2027-02-27",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Apply online. You answer five short questions. You also send a CV of up to 4 pages, a bio of up to 100 words and 5 poems (up to 10 pages). Paper applications go to LS-YPL@longbeach.gov or Teen Services at the Billie Jean King Main Library. Info sessions are Saturdays, Dec 12, 2026 and Jan 23, 2027, 12:30 to 2:00 PM at the Main Library. To reserve, email LS-YPL@longbeach.gov. Walk-ins are welcome.",
@@ -52900,7 +52900,7 @@
   "sources_fetched": [
    "https://www.longbeach.gov/library/learn/youth-poet-laureate/"
   ],
-  "verified_on_label": "Nov 9, 2026"
+  "verified_on_label": "Nov 17, 2026"
  },
  {
   "grades": null,
@@ -78121,7 +78121,7 @@
   ],
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-11-09",
+  "verified_on": "2026-11-17",
   "grades": null,
   "needs_work_permit": false,
   "id": "otis-college-summer-of-art",
@@ -78137,14 +78137,14 @@
   "max_age": 19,
   "who_can_apply": "High school students and young creatives ages 14.5 to 19. No grade level is listed.",
   "paid_type": "fee-based",
-  "pay_detail": "2026 prices as posted: $4,390 full program (3 college credits) or $2,690 per individual class; $7,315 or $5,615 with housing. A $150 health center fee applies. 2027 prices are not posted.",
+  "pay_detail": "2026 prices as posted: $4,390 full program (3 college credits) or $2,690 per individual class; $7,315 or $5,615 with housing. A $150 health center fee applies. 2027 prices are not posted. A $200 registration fee per class is part of tuition and is not refunded.",
   "season": "summer",
   "duration": "4 weeks in July 2027. The main page says July 7 to 30; the dates page says orientation July 6, classes July 8 to July 30.",
-  "status": "opens-soon",
-  "opens_iso": "2026-11-16",
-  "deadline_text": "Registration opens Nov 16, 2026 and closes June 16, 2027. The scholarship application opens Nov 16, 2026 and closes April 16, 2027 (no exceptions). The early enrollment discount ends April 23, 2027.",
-  "deadline_iso": "2027-06-16",
-  "deadline_confidence": "confirmed-2026-27",
+  "status": "unconfirmed",
+  "opens_iso": null,
+  "deadline_text": "The dates page says registration begins Nov 16, 2026 and the deadline is June 16, 2027. The page showed no 2027 registration on Nov 17, 2026. The scholarship application deadline is April 16, 2027 (no exceptions). The early enrollment discount ends April 23, 2027.",
+  "deadline_iso": null,
+  "deadline_confidence": "unknown",
   "how_to_apply": "Use Register Now on the Summer of Art page. Questions: soa@otis.edu or 310-665-6850. Scholarships have their own application.",
   "url": "https://www.otis.edu/extension/youth-programs/summer-art/index.html",
   "sources_fetched": [
@@ -78154,7 +78154,7 @@
   ],
   "priority": 2,
   "notes": "The page says ages 14.5 to 19; min_age is entered as 14 because the field takes whole years. Costs money. Prices shown are the 2026 numbers. A course preview is online from Nov 2, 2026.",
-  "verified_on_label": "Nov 9, 2026"
+  "verified_on_label": "Nov 17, 2026"
  },
  {
   "id": "ousd-linked-learning-internships",
