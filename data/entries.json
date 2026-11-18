@@ -9487,7 +9487,7 @@
   "duration": "2-hour weekly shift for a minimum of 6 months",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "needs_work_permit": false,
   "notes": "Book Buddies (K to 6th grade, all ages welcome with an adult) needs no application. Shelter hours for Book Buddies are listed on the page.",
@@ -9515,14 +9515,14 @@
   "sources_fetched": [
    "https://bloomington.in.gov/animal-shelter/volunteer"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": null,
   "priority": 1,
   "max_age": null,
@@ -9554,7 +9554,7 @@
    "https://www.canopybloomington.org/youth-tree-tenders"
   ],
   "notes": "The page does not say which year the March and May dates belong to, but the weekday dates match 2026. Check the page again in early 2027. Work permit rules for Indiana minors were not checked.",
-  "verified_on_label": "Oct 10, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -9562,7 +9562,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "priority": 3,
   "max_age": 18,
@@ -9593,14 +9593,14 @@
   "sources_fetched": [
    "https://artmuseum.indiana.edu/teach-learn/youth-family/summer-programs.html"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "priority": 2,
   "max_age": null,
@@ -9632,21 +9632,21 @@
   "sources_fetched": [
    "https://www.monroecountyhabitat.org/volunteer"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
-  "apply_url": null,
+  "apply_url": "https://iubmsch-fireform.eas.iu.edu/online/form/index/cacademy22306",
   "min_age": null,
   "max_age": null,
-  "pay_detail": "$950, which includes lodging, meals, instruction, equipment use and supplies (2026 price).",
+  "pay_detail": "$950, which includes lodging, meals, instruction, equipment use and supplies.",
   "duration": "1 week",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "needs_work_permit": false,
-  "notes": "You must live on campus. The application page is at cinemaacademy.indiana.edu/summer-sessions/afc.html. Check the exact age rules there.",
+  "notes": "You must live on campus. Check the exact age rules on the page.",
   "id": "bloomington-iu-acting-for-the-camera",
   "name": "Acting for the Camera (IU summer program)",
   "org": "Department of Theatre and Drama and The Media School, Indiana University Bloomington",
@@ -9662,22 +9662,24 @@
   "who_can_apply": "High school students. The page does not state exact grades or ages. Highly selective, about 15 to 20 students.",
   "paid_type": "fee-based",
   "season": "summer",
-  "status": "closed-expect-reopen",
-  "deadline_text": "2026 session ran July 20 to 24, 2026. Students were told by April 26, 2026. 2027 dates are not posted.",
-  "deadline_confidence": "last-year-pattern",
+  "status": "open-now",
+  "deadline_text": "2027 session is July 19 to 23, 2027. Applications are open as of Nov 4, 2026, and decisions are rolling. No closing date is posted.",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Record a monologue of up to 90 seconds. Upload it to YouTube or Vimeo as unlisted. Then fill out the online application with the video link. The program can give you a monologue if you need one.",
-  "url": "https://theatre.indiana.edu/about/high-school-summer-programs/acting_for_the_camera.html",
+  "url": "https://cinemaacademy.indiana.edu/summer-sessions/afc.html",
   "sources_fetched": [
-   "https://theatre.indiana.edu/about/high-school-summer-programs/acting_for_the_camera.html"
+   "https://theatre.indiana.edu/about/high-school-summer-programs/acting_for_the_camera.html",
+   "https://cinemaacademy.indiana.edu/summer-sessions/afc.html",
+   "https://cinemaacademy.indiana.edu/registration/index.html"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "deadline_iso": null,
-  "apply_url": "https://iu.co1.qualtrics.com/jfe/form/SV_1XHYxxuYVWH1Xca",
+  "apply_url": "https://iu.co1.qualtrics.com/jfe/form/SV_1NsPRoLKSPzfWAK",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "priority": 2,
   "max_age": null,
@@ -9696,7 +9698,7 @@
   "season": "summer",
   "status": "unconfirmed",
   "deadline_confidence": "unknown",
-  "deadline_text": "Camp is June 13 to 18, 2027 on the IU Bloomington campus. The page has an Apply now link but does not state an application deadline.",
+  "deadline_text": "Camp is June 13 to 18, 2027 on the IU Bloomington campus. The page has an Apply now link but does not state an application deadline. The linked form is still titled 2026.",
   "how_to_apply": "Use the Apply now link on the camp page (an online form). Students are selected.",
   "id": "bloomington-iu-camp-soul",
   "name": "Camp S.O.U.L. (Students Obtaining Unique musical Levels)",
@@ -9709,14 +9711,14 @@
   "sources_fetched": [
    "https://aaai.indiana.edu/outreach/camp-soul/index.html"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "deadline_iso": null,
-  "apply_url": null,
+  "apply_url": "https://iubmsch-fireform.eas.iu.edu/online/form/index/cacademy18674",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "priority": 2,
   "max_age": 18,
@@ -9728,8 +9730,8 @@
   "city": "Bloomington, IN",
   "type": "pre-college",
   "season": "summer",
-  "status": "closed-expect-reopen",
-  "deadline_confidence": "last-year-pattern",
+  "status": "open-now",
+  "deadline_confidence": "unknown",
   "id": "bloomington-iu-cinema-academy",
   "name": "IU Cinema Academy",
   "fields": [
@@ -9737,19 +9739,21 @@
   ],
   "what_you_do": "A week on the IU campus making films. You try filmmaking, script writing, animation, video editing and acting for the camera. Teachers and film guests lead the sessions.",
   "who_can_apply": "Students ages 14 to 18. The page has a star by this, so check the session page for exceptions.",
-  "paid_type": "not-stated",
-  "pay_detail": "Cost not stated on the program pages. Three kinds of scholarships are offered.",
+  "paid_type": "fee-based",
+  "pay_detail": "Overnight $800, day camp $600, online $500 (FAQ prices, no year named). Three kinds of scholarships are offered.",
   "duration": "1 week for most sessions; the Advanced Filmmakers Academy is 2 weeks",
-  "deadline_text": "2026 sessions ran July 6 to 24. The Media School lists 2027 sessions for June and July (various weeks). No deadline stated.",
-  "how_to_apply": "Fill in the form. It is on the Cinema Academy summer sessions page.",
+  "deadline_text": "2027 sessions run June 28 to July 23, 2027. Sign-ups are open as of Nov 4, 2026. No closing date is posted. Sessions can sell out.",
+  "how_to_apply": "Fill in the form. Some sessions are first come, first served. Others need an application and review, with a second form on the registration page.",
   "url": "https://cinemaacademy.indiana.edu/summer-sessions/index.html",
   "sources_fetched": [
    "https://cinemaacademy.indiana.edu/summer-sessions/index.html",
    "https://cinemaacademy.indiana.edu/",
-   "https://mediaschool.indiana.edu/academics/precollege/index.html"
+   "https://mediaschool.indiana.edu/academics/precollege/index.html",
+   "https://cinemaacademy.indiana.edu/registration/index.html",
+   "https://cinemaacademy.indiana.edu/about/faq.html"
   ],
   "notes": "There is also a one-week Online Filmmaking Bootcamp. The Media School also holds a free one-day teen workshop on Saturday Nov 14, 2026 (Cinema, Game Dev and Journalism tracks).",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Current high school juniors",
@@ -9760,7 +9764,7 @@
   "duration": "1 week (July 11 to 17, 2027)",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "needs_work_permit": false,
   "notes": "The page does not state the exact day it opens or closes. Only people who live in Indiana can join.",
@@ -9788,14 +9792,14 @@
   "sources_fetched": [
    "https://education.indiana.edu/admissions/factor/index.html"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "deadline_iso": null,
-  "apply_url": null,
+  "apply_url": "https://iubmsch-fireform.eas.iu.edu/online/form/index/gcweb10740",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "priority": 2,
   "max_age": 18,
@@ -9807,36 +9811,37 @@
   "city": "Bloomington, IN",
   "type": "pre-college",
   "season": "summer",
-  "status": "closed-expect-reopen",
-  "deadline_confidence": "last-year-pattern",
+  "status": "open-now",
+  "deadline_confidence": "unknown",
   "id": "bloomington-iu-game-development-camp",
   "name": "IU Game Development Camp (in person)",
   "fields": [
    "tech-cs",
    "arts-media"
   ],
-  "what_you_do": "A five-day camp where you build your own video game from start to finish in IU's game design labs. Pick Game Art and Storytelling, 2D, or 3D (Unreal Engine 5). Beginners are welcome.",
-  "who_can_apply": "Students ages 12 to 18. The minimum age varies by camp, so check the page for each session. No experience needed.",
+  "what_you_do": "A five-day camp where you build your own video game from start to finish in IU's game design labs. Pick general game making, coding, or art and story. An advanced camp needs past experience. Beginners are welcome.",
+  "who_can_apply": "Students ages 12 to 18. The minimum age varies by camp, so check the page for each session. Most camps need no experience.",
   "paid_type": "fee-based",
   "pay_detail": "Overnight $850, day camp $500. Scholarships are available.",
   "duration": "5 days",
-  "deadline_text": "2027 session dates are listed as coming soon on the camp page. No deadline stated.",
+  "deadline_text": "2027 camps run June 21 to July 23, 2027. Sign-ups are open as of Nov 4, 2026. No closing date is posted. Full payment is required four weeks before camp.",
   "how_to_apply": "Sign up online on the camp website. The scholarship form is separate.",
   "url": "https://gamecamp.indiana.edu/in-person/index.html",
   "sources_fetched": [
    "https://gamecamp.indiana.edu/in-person/index.html",
    "https://gamecamp.indiana.edu/",
-   "https://mediaschool.indiana.edu/academics/precollege/index.html"
+   "https://mediaschool.indiana.edu/academics/precollege/index.html",
+   "https://gamecamp.indiana.edu/register/index.html"
   ],
   "notes": "Overnight tuition includes dorm lodging. Day camp is an option for local students. Tuition includes meals, a t-shirt, a thumb drive and a water bottle. Media School also lists June and July 2027 weeks.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "priority": 2,
   "max_age": null,
@@ -9857,26 +9862,28 @@
   ],
   "what_you_do": "A five day news workshop on the IU campus. Pick one topic for each session, such as social media, sports news, sports broadcasting, photos or yearbook. You learn from pros.",
   "who_can_apply": "High school students. Beginners and experienced students are both welcome. Age limits are not stated.",
-  "paid_type": "not-stated",
-  "pay_detail": "Cost not stated on the program pages. Scholarships are available.",
+  "paid_type": "fee-based",
+  "pay_detail": "$585 per session with dorm and 6 meals. Both sessions $1,240. Commuter $395. The cost page names no year. Scholarships are available.",
   "duration": "5 days per session (Session 1: July 12 to 16, 2027. Session 2: July 18 to 22, 2027)",
-  "deadline_text": "2027 sessions are July 12 to 16 and July 18 to 22. No deadline stated; registration link is on the page.",
+  "deadline_text": "2027 sessions are July 12 to 16 and July 18 to 22, 2027. The site says registration runs Jan. 15 to June 15 but names no year, and another page says to register now.",
   "how_to_apply": "Register online and choose one workshop per session. You can sign up for one or both sessions. Full workshops may have a waitlist.",
   "url": "https://hsji.indiana.edu/high-school/workshops.html",
   "sources_fetched": [
    "https://hsji.indiana.edu/high-school/workshops.html",
    "https://hsji.indiana.edu/",
-   "https://mediaschool.indiana.edu/academics/precollege/index.html"
+   "https://mediaschool.indiana.edu/academics/precollege/index.html",
+   "https://hsji.indiana.edu/high-school/costs.html",
+   "https://hsji.indiana.edu/register/student-registration.html"
   ],
-  "notes": "Run since 1946. Check the site for cost and dorm details before you plan.",
-  "verified_on_label": "Oct 10, 2026"
+  "notes": "Run since 1946. Check the site for dorm details before you plan.",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "11 (entering grade 12)",
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "priority": 2,
   "max_age": null,
@@ -9894,28 +9901,30 @@
   "paid_type": "stipend",
   "season": "summer",
   "status": "closed-expect-reopen",
-  "deadline_confidence": "last-year-pattern",
-  "deadline_text": "2026 applications are closed. 2027 dates are not posted yet. In 2026, accepted students were told in late April.",
+  "deadline_confidence": "unknown",
+  "deadline_text": "2027 applications open in January 2027. No exact day or closing date is posted. Program is June 20 to July 2, 2027. In 2026, accepted students were told in late April.",
   "how_to_apply": "Apply online. A parent or guardian must say they know. A counselor checks your classes and grades. You also need letters from a science teacher and a math teacher.",
   "id": "bloomington-iu-holland-rise-stem-research",
   "name": "Jim Holland Research Initiative in STEM Education (RISE)",
   "what_you_do": "A two week camp where you stay on campus. It is for rising seniors. You hear research talks and do hands-on work with IU teachers. You also learn about college plans, money help and scholarships.",
   "who_can_apply": "High school juniors with a GPA of at least 3.2, not counting extra credit. You are taking or have taken science and math. You want a science career. Students from the other Holland programs go first.",
   "pay_detail": "$600 stipend after you finish the program. Accepted students also pay a $125 non-refundable registration fee.",
-  "duration": "2 weeks (June 21 to July 3 in 2026)",
+  "duration": "2 weeks (June 20 to July 2, 2027)",
   "url": "https://biology.indiana.edu/about/outreach/k-12-students/holland-summer-science-programs/holland-rise.html",
   "notes": "Housed in a campus dorm. In 2026, accepted students were told the week of April 20. Contact holland@iu.edu, 812-855-5179.",
   "sources_fetched": [
-   "https://biology.indiana.edu/about/outreach/k-12-students/holland-summer-science-programs/holland-rise.html"
+   "https://biology.indiana.edu/about/outreach/k-12-students/holland-summer-science-programs/holland-rise.html",
+   "https://biology.indiana.edu/about/outreach/k-12-students/holland-summer-science-programs/index.html",
+   "https://biology.indiana.edu/about/outreach/k-12-students/holland-summer-science-programs/parent-form.html"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "8 to 10 (entering grades 9 to 11)",
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "priority": 2,
   "max_age": null,
@@ -9933,28 +9942,30 @@
   "paid_type": "fee-based",
   "season": "summer",
   "status": "closed-expect-reopen",
-  "deadline_confidence": "last-year-pattern",
-  "deadline_text": "2026 applications are closed. 2027 dates are not posted yet. In 2026, accepted students were told in late April.",
+  "deadline_confidence": "unknown",
+  "deadline_text": "2027 applications open in January 2027. No exact day or closing date is posted. Program is July 18 to 23, 2027. In 2026, accepted students were told in late April.",
   "how_to_apply": "Apply online. A parent or guardian must say they know. A counselor checks your classes and grades. You also need letters from a science teacher and a math teacher.",
   "id": "bloomington-iu-holland-summer-enrichment-program",
   "name": "Jim Holland Summer Enrichment Program in Biology (SEP)",
   "what_you_do": "A week on the IU campus in a dorm. You hear lectures, join discussions and do hands-on lab work in genetics, evolution, plant science and more, and learn how to prepare for college.",
   "who_can_apply": "High school students in grades 8, 9 or 10. You need a GPA of at least 3.0, not counting extra credit. You are taking or have taken science and math.",
   "pay_detail": "$125 non-refundable registration fee, charged only to accepted students",
-  "duration": "About 1 week (July 19 to 24 in 2026)",
+  "duration": "About 1 week (July 18 to 23, 2027)",
   "url": "https://biology.indiana.edu/about/outreach/k-12-students/holland-summer-science-programs/holland-sep.html",
   "notes": "Housed in a campus dorm. Contact Kody Beaver, holland@iu.edu, 812-855-5179.",
   "sources_fetched": [
-   "https://biology.indiana.edu/about/outreach/k-12-students/holland-summer-science-programs/holland-sep.html"
+   "https://biology.indiana.edu/about/outreach/k-12-students/holland-summer-science-programs/holland-sep.html",
+   "https://biology.indiana.edu/about/outreach/k-12-students/holland-summer-science-programs/index.html",
+   "https://biology.indiana.edu/about/outreach/k-12-students/holland-summer-science-programs/parent-form.html"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "9 to 11 (entering grades 10 to 12)",
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "priority": 2,
   "max_age": null,
@@ -9972,28 +9983,30 @@
   "paid_type": "fee-based",
   "season": "summer",
   "status": "closed-expect-reopen",
-  "deadline_confidence": "last-year-pattern",
-  "deadline_text": "2026 applications are closed. 2027 dates are not posted yet. In 2026, accepted students were told in late April.",
+  "deadline_confidence": "unknown",
+  "deadline_text": "2027 applications open in January 2027. No exact day or closing date is posted. Program is July 11 to 18, 2027. In 2026, accepted students were told in late April.",
   "how_to_apply": "Apply online. A parent or guardian must say they know. A counselor checks your classes and grades. You also need letters from a science teacher and a math teacher.",
   "id": "bloomington-iu-holland-summer-science-research-program",
   "name": "Jim Holland Summer Science Research Program (SSRP)",
   "what_you_do": "One week in an IU research lab with a faculty mentor. You do a small research project and present it at a poster session at the end.",
   "who_can_apply": "High school students in grades 9, 10 or 11. You need a GPA of at least 3.2, not counting extra credit. You are taking or have taken science and math. You want a science career.",
   "pay_detail": "$125 non-refundable registration fee for accepted students",
-  "duration": "About 1 week (July 12 to 19 in 2026)",
+  "duration": "About 1 week (July 11 to 18, 2027)",
   "url": "https://biology.indiana.edu/about/outreach/k-12-students/holland-summer-science-programs/holland-ssrp.html",
   "notes": "Housed in a campus dorm. You contact your assigned mentor before the program. Expect to work some evenings. Contact Kody Beaver, holland@iu.edu, 812-855-5179.",
   "sources_fetched": [
-   "https://biology.indiana.edu/about/outreach/k-12-students/holland-summer-science-programs/holland-ssrp.html"
+   "https://biology.indiana.edu/about/outreach/k-12-students/holland-summer-science-programs/holland-ssrp.html",
+   "https://biology.indiana.edu/about/outreach/k-12-students/holland-summer-science-programs/index.html",
+   "https://biology.indiana.edu/about/outreach/k-12-students/holland-summer-science-programs/parent-form.html"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "priority": 3,
   "max_age": null,
@@ -10015,9 +10028,9 @@
   "paid_type": "fee-based",
   "pay_detail": "2026 prices: housing and meals $950 ($150 deposit plus $800 tuition); commuter with meals $750; commuter without meals $500. Scholarships awarded on a rolling basis after May 15.",
   "season": "summer",
-  "duration": "About 1 week (check-in July 5, check-out July 12 in 2026)",
+  "duration": "About 1 week (June 26 to July 3, 2027)",
   "status": "closed-expect-reopen",
-  "deadline_text": "2026 camp ran July 5 to 12; deposits were due by May 23 and financial aid forms by May 23 for the first wave. 2027 dates are not posted.",
+  "deadline_text": "2027 camp is listed as June 26 to July 3, 2027. The page calls June 26 a Sunday, but it is a Saturday, so confirm. In 2026, deposits and first wave financial aid forms were due by May 23. 2027 deadlines are not posted.",
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Register and pay the deposit through the camp sign up page (IU Conferences payment page). Financial aid form is separate.",
   "url": "https://hoosierdebate.indiana.edu/debatecamp/index.html",
@@ -10028,7 +10041,7 @@
    "https://hoosierdebate.indiana.edu/debatecamp/sign%20up.html"
   ],
   "notes": "Labs may be cancelled if too few students sign up, and you would be offered another lab. Camp size is limited. The camp says it is cheaper than many other university camps.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -10073,11 +10086,11 @@
   "apply_url": null,
   "min_age": 14,
   "max_age": null,
-  "pay_detail": "Track 1 (private lessons plus group class) $800. Track 2 (group class only) $550. A $50 non-refundable deposit is credited to tuition.",
+  "pay_detail": "Track 1 (private lessons plus group class) $800. Track 2 (group class only) $550. Track 3 (private lessons only) $450. A $50 non-refundable deposit is credited to tuition.",
   "duration": "12 weeks, entirely on Zoom",
   "deadline_iso": "2027-01-11",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "needs_work_permit": false,
   "notes": "There is also a summer intensive linked from the page. Group class is Tuesdays 8:30 to 9:30 p.m. Eastern.",
@@ -10094,7 +10107,7 @@
    "arts-media"
   ],
   "what_you_do": "A 12-week online program for people who write music, of many ages and skill levels. You get private lessons (Track 1) and a weekly group class. It ends with a live play and recording of your new piece by IU student musicians.",
-  "who_can_apply": "People 14 and older (the page also welcomes adults). Parents of kids under 14 can email musicsp@iu.edu. You do not need an audition or past experience.",
+  "who_can_apply": "People 14 and older (the page also welcomes adults). Parents of kids under 14 can email musicsp@iu.edu. You do not need an audition. Tracks 1 and 2 expect you to read music. Track 3 takes beginners.",
   "paid_type": "fee-based",
   "season": "spring",
   "status": "closed-expect-reopen",
@@ -10105,7 +10118,7 @@
   "sources_fetched": [
    "https://jacobsacademy.indiana.edu/descriptions/composition-academy.html"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -10114,7 +10127,7 @@
   "deadline_iso": "2027-02-08",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "bloomington-iu-jacobs-dance-summer-intensives",
   "name": "Jacobs Dance Summer Intensives (Ballet and Contemporary)",
   "org": "Indiana University Jacobs School of Music, Jacobs Academy",
@@ -10144,7 +10157,7 @@
   ],
   "priority": 3,
   "notes": "Intense schedule (Monday to Friday, 9 AM to 5 PM). The student pays; this is not a job.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -10155,7 +10168,7 @@
   "duration": "1 week (June 21 to 27 in 2026)",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "needs_work_permit": false,
   "notes": "Confirm 2027 dates and prices.",
@@ -10182,18 +10195,18 @@
   "sources_fetched": [
    "https://jacobsacademy.indiana.edu/descriptions/summer-brass-academy.html"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Entering 8th grade through the summer after high school",
   "apply_url": null,
   "min_age": 13,
   "max_age": 18,
-  "pay_detail": "Tuition $775 plus a $100 registration fee credited to tuition. Optional housing with meals is $500 (2026 prices). Need-based aid and merit awards exist.",
-  "duration": "1 week",
+  "pay_detail": "Tuition $775 plus a $100 registration fee credited to tuition. Optional housing with meals was $500 in 2026; the 2027 rate is not set. Need-based aid and merit awards exist.",
+  "duration": "1 week (June 6 to 11, 2027)",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "needs_work_permit": false,
   "notes": "Check the 2027 dates and prices before you plan.",
@@ -10213,14 +10226,14 @@
   "paid_type": "fee-based",
   "season": "summer",
   "status": "closed-expect-reopen",
-  "deadline_text": "2026 workshop ran June 7 to 13, 2026. Registration, placement recording and payment were due May 8, 2026. Financial aid deadline was April 13, 2026. 2027 dates are not posted.",
-  "deadline_confidence": "last-year-pattern",
+  "deadline_text": "2027 workshop is June 6 to 11, 2027. Registration, placement recording and payment are due May 8, 2027. Financial aid is due April 13, 2027. No opening date is posted.",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Sign up online and pay the $100 fee and tuition. Then upload a placement recording that has not been edited. YouTube links are fine. Use the Jacobs audition portal.",
   "url": "https://jacobsacademy.indiana.edu/descriptions/summer-jazz-workshop.html",
   "sources_fetched": [
    "https://jacobsacademy.indiana.edu/descriptions/summer-jazz-workshop.html"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Currently in grades 8 to 12",
@@ -10229,7 +10242,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "bloomington-iu-jacobs-summer-music-clinic",
   "name": "IU Summer Music Clinic",
   "org": "Indiana University Jacobs School of Music, Jacobs Academy",
@@ -10241,15 +10254,15 @@
   "fields": [
    "arts-media"
   ],
-  "what_you_do": "You live on campus for a week. You rehearse and perform in a full orchestra or concert band with Jacobs faculty. You take sectionals and a master class. You also take one elective, such as conducting or jazz improvisation.",
+  "what_you_do": "You live on campus for four days. You rehearse and perform in a full orchestra or concert band with Jacobs faculty. You take sectionals and a master class. You also take one elective, such as conducting or jazz improvisation.",
   "who_can_apply": "Students currently in grades 8 to 12 who play in band or orchestra. Jazz band requires an audition on the first day.",
   "paid_type": "fee-based",
-  "pay_detail": "2026: residential tuition $1,120 (housing and meals); commuter tuition $815 (lunch and dinner); $100 non-refundable registration fee credited to tuition. Need-based financial aid is available.",
+  "pay_detail": "2027 estimates: residential tuition $800 (housing and meals); commuter tuition $550 (lunch and dinner); $100 non-refundable registration fee credited to tuition. Need-based financial aid is available.",
   "season": "summer",
-  "duration": "One week (June 14 to 20 in 2026)",
+  "duration": "4 days (June 16 to 19, 2027)",
   "status": "closed-expect-reopen",
-  "deadline_text": "2026 session June 14-20, 2026: registration and payment due May 8, 2026; financial aid application due April 13, 2026. 2027 dates not posted.",
-  "deadline_confidence": "last-year-pattern",
+  "deadline_text": "Summer 2027 session June 16 to 19, 2027: registration opens mid-December 2026 and closes April 15, 2027; financial aid application due April 23, 2027; payment due May 1, 2027.",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Online registration form plus the $100 registration fee, tuition by the payment deadline, then a Participant Agreement Form. Contact: musicsp@iu.edu.",
   "needs_work_permit": false,
   "url": "https://jacobsacademy.indiana.edu/descriptions/summer-music-clinic.html",
@@ -10258,22 +10271,22 @@
    "https://jacobsacademy.indiana.edu/all-programs/index.html"
   ],
   "priority": 3,
-  "notes": "Costs and dates are from the 2026 session page. The student pays; this is not a job. The Jacobs Academy also lists other pre-college summer programs.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "The 2027 prices are estimates. The student pays; this is not a job. The Jacobs Academy also lists other pre-college summer programs.",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "apply_url": null,
   "min_age": 12,
   "max_age": 19,
-  "pay_detail": "Tuition $2,400 plus a $100 deposit credited to tuition (2026 prices). Housing and meal plans cost extra. Financial aid and scholarships exist.",
-  "duration": "2 weeks (June 27 to July 11 in 2026)",
+  "pay_detail": "Tuition $2,425 plus a $100 deposit credited to tuition. Housing and meal plans cost extra (2027 rates are not set). Financial aid and scholarships exist.",
+  "duration": "2 weeks (June 19 to July 3, 2027)",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "needs_work_permit": false,
-  "notes": "The director is Dr. Elizabeth Yao (elizyao@iu.edu). Check the 2027 dates and prices.",
+  "notes": "The director is Dr. Elizabeth Yao (elizyao@iu.edu). Check the 2027 housing prices.",
   "id": "bloomington-iu-jacobs-summer-piano-academy",
   "name": "Summer Piano Academy (Jacobs School of Music)",
   "org": "Jacobs Academy, Jacobs School of Music, Indiana University Bloomington",
@@ -10285,33 +10298,33 @@
   "fields": [
    "arts-media"
   ],
-  "what_you_do": "A two-week summer program for serious young pianists with lessons and classes from master teachers. It has run for 39 years.",
+  "what_you_do": "A two-week summer program for serious young pianists with lessons and classes from master teachers. It has run for 40 years.",
   "who_can_apply": "Serious pianists ages 12 to 19. You must be able to practice several hours a day. You should play music that is early advanced to advanced. The director can admit exceptional students under 12. You must audition with a recording.",
   "paid_type": "fee-based",
   "season": "summer",
   "status": "closed-expect-reopen",
-  "deadline_text": "2026 application, audition and financial aid forms were due March 2, 2026, with acceptance notices March 13. 2027 dates are not posted.",
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Pay the $100 fee in the online sign-up form. Then upload a list of the music you play and two different pieces you play from memory. Send them as recordings to the Jacobs audition portal. Pay tuition only after you are accepted.",
+  "deadline_text": "Summer 2027 registration opens mid-December 2026. Application and audition are due March 22, 2027. Financial aid is due March 29, 2027. Tuition is due April 26, 2027.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Pay the $100 fee in the online sign-up form. Then upload a list of the music you play and two different pieces you play from memory. Send them as recordings to the Jacobs audition portal. You also need a letter from your piano teacher. Pay tuition only after you are accepted.",
   "url": "https://jacobsacademy.indiana.edu/descriptions/piano-academy.html",
   "sources_fetched": [
    "https://jacobsacademy.indiana.edu/descriptions/piano-academy.html"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "apply_url": null,
   "min_age": 14,
   "max_age": 18,
-  "pay_detail": "Tuition $900 plus a $100 registration fee credited to tuition. Optional housing with meals is $500 (2026 prices). Need-based aid exists.",
-  "duration": "1 week (July 5 to 11 in 2026)",
+  "pay_detail": "Tuition $900 plus a $100 registration fee credited to tuition. Optional housing with meals was $500 in 2026; the 2027 rate is not set. Need-based aid exists.",
+  "duration": "1 week (July 4 to 9, 2027)",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "needs_work_permit": false,
-  "notes": "Confirm 2027 dates and prices.",
+  "notes": "Confirm the 2027 housing price.",
   "id": "bloomington-iu-jacobs-summer-saxophone-academy",
   "name": "Summer Saxophone Academy (Jacobs School of Music)",
   "org": "Jacobs Academy, Jacobs School of Music, Indiana University Bloomington",
@@ -10328,28 +10341,28 @@
   "paid_type": "fee-based",
   "season": "summer",
   "status": "closed-expect-reopen",
-  "deadline_text": "2026 registration, payment and placement recording were due May 15, 2026. Financial aid deadline was April 13, 2026. 2027 dates are not posted.",
-  "deadline_confidence": "last-year-pattern",
+  "deadline_text": "Summer 2027 registration opens mid-December 2026. Registration, payment and placement recording are due May 15, 2027. Financial aid is due April 13, 2027.",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Finish the online sign-up and pay the $100 fee and tuition. Then upload a recording for placement in the Jacobs audition portal.",
   "url": "https://jacobsacademy.indiana.edu/descriptions/saxophone-academy.html",
   "sources_fetched": [
    "https://jacobsacademy.indiana.edu/descriptions/saxophone-academy.html"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "apply_url": null,
   "min_age": 12,
   "max_age": 18,
-  "pay_detail": "Tuition $3,200 plus a $100 audition fee credited to tuition (2026 prices). Housing and meal plans cost extra. Need-based aid and merit scholarships exist.",
-  "duration": "4 weeks (June 20 to July 18 in 2026)",
+  "pay_detail": "Tuition $3,400 plus a $100 audition fee credited to tuition. Housing and meal plans cost extra (2027 rates are not set). Need-based aid and merit scholarships exist.",
+  "duration": "4 weeks (June 19 to July 17, 2027)",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "needs_work_permit": false,
-  "notes": "Directed by Prof. Mimi Zweig (zweig@iu.edu). Confirm 2027 dates and prices.",
+  "notes": "Directed by Prof. Mimi Zweig (zweig@iu.edu). Confirm 2027 housing prices.",
   "id": "bloomington-iu-jacobs-summer-string-academy",
   "name": "Summer String Academy (Jacobs School of Music)",
   "org": "Jacobs Academy, Jacobs School of Music, Indiana University Bloomington",
@@ -10366,14 +10379,14 @@
   "paid_type": "fee-based",
   "season": "summer",
   "status": "closed-expect-reopen",
-  "deadline_text": "2026 application and audition were due February 9, 2026, with acceptance notices February 20 and tuition due March 2. 2027 dates are not posted.",
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Pay the $100 fee in the online sign-up form. Then upload two different pieces as recordings to the Jacobs audition portal. YouTube links are fine. Pay tuition only after you are accepted.",
+  "deadline_text": "Summer 2027 application and audition are due February 10, 2027, with acceptance notices by February 24 and tuition due March 4, 2027. The page says applications will open soon, with no day given.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Pay the $100 fee in the online sign-up form. Then upload two different pieces as recordings to the Jacobs audition portal. YouTube links are fine. You also need a letter from your main teacher. Pay tuition only after you are accepted.",
   "url": "https://jacobsacademy.indiana.edu/descriptions/summer-string-academy.html",
   "sources_fetched": [
    "https://jacobsacademy.indiana.edu/descriptions/summer-string-academy.html"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -10382,7 +10395,7 @@
   "deadline_iso": null,
   "apply_url": "https://apps.kelley.iu.edu/UGrad/Precollege/SprintCaseCompetition",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "bloomington-iu-kelley-sprint-case-competition",
   "name": "Kelley Sprint Case Competition",
   "org": "Indiana University Kelley School of Business",
@@ -10411,7 +10424,7 @@
   ],
   "priority": 3,
   "notes": "The page shows the August 28 and October 3 dates without a year; the date has already passed this fall. Travel costs are not discussed on the page. Expect it to repeat in fall 2027 but confirm.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Current sophomores, juniors and seniors (virtual); rising juniors and seniors (in-person)",
@@ -10421,7 +10434,7 @@
   "deadline_iso": "2027-03-19",
   "apply_url": "https://apps.kelley.iu.edu/UGrad/precollege/YoungWomen",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "bloomington-iu-kelley-womens-leadership-institute",
   "name": "Kelley Women's Leadership Institute",
   "org": "Indiana University Kelley School of Business",
@@ -10452,7 +10465,7 @@
   ],
   "priority": 2,
   "notes": "The page lists weekday dates (for example 'Wednesday April 7') that match 2027, and a fall 2026 virtual session (Oct 13 and 20, 2026) whose application closed Sept 25, 2026. Applications are not reviewed until after the deadline.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "bloomington-iu-luddy-cybersecurity-immersion-camp",
@@ -10488,10 +10501,10 @@
    "https://luddy.iu.edu/academics/highschool.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "Costs money. It is a camp, not a job. The page does not say whether it is residential or a day camp. Ask the summer camp team.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "bloomington-iu-luddy-precollege-stem-camp",
@@ -10528,10 +10541,10 @@
    "https://luddy.iu.edu/academics/highschool.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Costs money. It is a camp, not a job. The same page lists the Luddy Cybersecurity Immersion Camp, which has its own card.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Students completing grades 9 to 12",
@@ -10542,7 +10555,7 @@
   "duration": "3 weeks",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "needs_work_permit": false,
   "notes": "Costs a lot, so ask about aid. Run with Stages Bloomington. Confirm 2027 dates and cost with the program before applying.",
@@ -10569,14 +10582,14 @@
   "sources_fetched": [
    "https://theatre.indiana.edu/about/high-school-summer-programs/midsummer-theatre26.html"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Finishing junior year (rising seniors)",
-  "deadline_iso": null,
+  "deadline_iso": "2027-02-13",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "priority": 1,
   "max_age": null,
@@ -10599,17 +10612,18 @@
   "paid_type": "unpaid",
   "pay_detail": "Free if accepted. You pay your own travel to Bloomington and spending money. Travel scholarships may be available.",
   "season": "summer",
-  "duration": "5 days (June 21 to 25 in 2026)",
-  "status": "closed-expect-reopen",
-  "deadline_text": "2026 deadline was March 1 and decisions went out by March 25. 2027 dates are not posted.",
-  "deadline_confidence": "last-year-pattern",
+  "duration": "5 days (June 20 to 24, 2027)",
+  "status": "opens-soon",
+  "opens_iso": "2026-12-01",
+  "deadline_text": "The application opens Dec 1, 2026. The deadline is Feb 13, 2027. Decisions go out by March 5, 2027.",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Apply online with an application and essays. Check the box on the form if you want a travel scholarship. Questions: iurlp@iu.edu.",
   "url": "https://oneill.indiana.edu/undergraduate/academic-enrichment/rising-leaders/index.html",
-  "notes": "Check the page in the fall for 2027 dates. The page does not say if housing is on campus.",
+  "notes": "The page does not say if housing is on campus.",
   "sources_fetched": [
    "https://oneill.indiana.edu/undergraduate/academic-enrichment/rising-leaders/index.html"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "High school junior or senior",
@@ -10618,7 +10632,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "bloomington-iu-open-program",
   "name": "OPEN Program (take IU Bloomington classes while in high school)",
   "org": "Indiana University Bloomington, Undergraduate Education",
@@ -10649,7 +10663,7 @@
   ],
   "priority": 3,
   "notes": "Only for students who live close enough to commute to Bloomington. Costs are real college credit fees. Not a job.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "High school (specific grades not stated)",
@@ -10658,7 +10672,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "bloomington-iu-sese-sustainability-experience",
   "name": "Summer Experience in Sustainability and the Environment (SESE)",
   "org": "Indiana University, Environment, Society, and Sustainability Institute (ESSI)",
@@ -10689,14 +10703,14 @@
   ],
   "priority": 2,
   "notes": "Entirely online, so students anywhere can join. The page shows quotes from 9th, 10th and 11th grade alumni. Participants receive a certificate of completion.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "priority": 3,
   "max_age": null,
@@ -10729,7 +10743,7 @@
   "sources_fetched": [
    "https://environment.indiana.edu/pre-college-programs/yels.html"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "bloomington-monroe-county-4-h",
@@ -10765,10 +10779,10 @@
    "https://extension.purdue.edu/county/monroe/4-h/index.html"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "County 4-H camp is for grades 3 to 8, so older teens do not use it. The Extension office is at 3400 S Walnut St, Bloomington, IN 47401. This is a youth club, not a paid job.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -10779,7 +10793,7 @@
   "duration": null,
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "needs_work_permit": false,
   "notes": "You need an account on the volunteer network site. Parks volunteer pages on the city site list events, camps and clean-ups but do not state ages.",
@@ -10808,7 +10822,7 @@
    "https://bloomington.in.gov/volunteer",
    "https://www.bloomingtonvolunteernetwork.org/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Entering grade 7 or higher in the fall of the next school year",
@@ -10817,7 +10831,7 @@
   "deadline_iso": null,
   "apply_url": "https://www.volgistics.com/ex/portal.dll/ap?AP=268451798",
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-04",
   "id": "bloomington-wonderlab-teen-volunteer",
   "name": "Teen Volunteer",
   "org": "WonderLab Museum of Science, Health, and Technology",
@@ -10830,7 +10844,7 @@
    "science",
    "education"
   ],
-  "what_you_do": "Teens share their enthusiasm with museum visitors. The page lists no birthday party or outreach roles.",
+  "what_you_do": "Teens share their enthusiasm with museum visitors.",
   "who_can_apply": "Teens entering at least 7th grade in the fall of the next school year. Teens apply with the Teen Volunteer Application; adults 18 and over use a separate form.",
   "paid_type": "unpaid",
   "pay_detail": "Unpaid volunteer. Perks: free admission, 20 percent off in the gift store",
@@ -10848,16 +10862,16 @@
   ],
   "priority": 2,
   "notes": "Middle and high school volunteers work alongside college students and adults. Some roles (parties, outreach) need prior museum experience and training. Outreach events require your own transportation.",
-  "verified_on_label": "Oct 18, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Entering grade 9 per the Become a Volunteer page. The internship page says entering grades 9-12 or home-school equivalent. Graduating seniors may also apply.",
   "min_age": null,
   "max_age": null,
   "deadline_iso": null,
-  "apply_url": "https://www.volgistics.com/ex/portal.dll/ap?AP=268451798",
+  "apply_url": "https://www.volgistics.com/appform/343120870",
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-04",
   "id": "bloomington-wonderlab-wondercamp-high-school-intern",
   "name": "WonderCamp High School Summer Intern",
   "org": "WonderLab Museum of Science, Health, and Technology",
@@ -10877,10 +10891,10 @@
   "pay_detail": "Unpaid volunteer internship (the page describes it as volunteering your time)",
   "season": "summer",
   "duration": "Summer camp weeks; training also required the Saturday before each camp week",
-  "status": "closed-expect-reopen",
-  "deadline_text": "Applications for summer 2026 are closed. The page says to check back for summer 2027. Dates not posted.",
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Apply with the Teen Volunteer Application on WonderLab's Become a Volunteer page, choosing the WonderCamp internship; special training sessions are listed on the application form. Contact: 812-337-1337 ext. 221.",
+  "status": "open-now",
+  "deadline_text": "Applications for summer 2027 are open. No closing date is posted.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Use the Apply Here link on WonderLab's internship page. Special training sessions are listed on the application form. Contact: 812-337-1337 ext. 221.",
   "needs_work_permit": false,
   "url": "https://wonderlab.org/volunteer/internships-for-high-school-students/",
   "sources_fetched": [
@@ -10889,7 +10903,7 @@
   ],
   "priority": 2,
   "notes": "Unpaid. The Become a Volunteer page says WonderCamp interns must be entering grade 9 in the fall of the next school year, while the internship page says entering grades 9 to 12; use the stricter reading (grade 9 or older) unless WonderLab says otherwise.",
-  "verified_on_label": "Oct 18, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "boise-discovery-center-of-idaho-volunteers",

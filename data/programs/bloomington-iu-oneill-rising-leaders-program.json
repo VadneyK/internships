@@ -1,9 +1,9 @@
 {
   "grades": "Finishing junior year (rising seniors)",
-  "deadline_iso": null,
+  "deadline_iso": "2027-02-13",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "priority": 1,
   "max_age": null,
@@ -26,13 +26,14 @@
   "paid_type": "unpaid",
   "pay_detail": "Free if accepted. You pay your own travel to Bloomington and spending money. Travel scholarships may be available.",
   "season": "summer",
-  "duration": "5 days (June 21 to 25 in 2026)",
-  "status": "closed-expect-reopen",
-  "deadline_text": "2026 deadline was March 1 and decisions went out by March 25. 2027 dates are not posted.",
-  "deadline_confidence": "last-year-pattern",
+  "duration": "5 days (June 20 to 24, 2027)",
+  "status": "opens-soon",
+  "opens_iso": "2026-12-01",
+  "deadline_text": "The application opens Dec 1, 2026. The deadline is Feb 13, 2027. Decisions go out by March 5, 2027.",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Apply online with an application and essays. Check the box on the form if you want a travel scholarship. Questions: iurlp@iu.edu.",
   "url": "https://oneill.indiana.edu/undergraduate/academic-enrichment/rising-leaders/index.html",
-  "notes": "Check the page in the fall for 2027 dates. The page does not say if housing is on campus.",
+  "notes": "The page does not say if housing is on campus.",
   "sources_fetched": [
     "https://oneill.indiana.edu/undergraduate/academic-enrichment/rising-leaders/index.html"
   ]

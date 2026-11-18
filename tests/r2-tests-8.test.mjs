@@ -29,7 +29,7 @@ const PAGE_ALLOW = [
   ["eugene-nyc-youth-camping-conservation-crews", "eugene-nyc-youth-urban-community-forestry-crews", "portland-nyc-youth-community-crews"], // nwyouthcorps.workbrightats.com: one job board lists the crews for several cities
   ["portland-parks-lifeguard-swim-instructor-training", "portland-parks-recreation-youth-summer-jobs", "portland-youth-conservation-crew"], // governmentjobs.com/careers/portlandor: the City of Portland job board
   ["berkeley-youthworks", "ecology-center-youth-environmental-academy"], // berkeleyca.gov/youthworks: one page lists several programs
-  ["bloomington-wonderlab-teen-volunteer", "bloomington-wonderlab-wondercamp-high-school-intern", "columbus-worthington-libraries-volunteens"], // volgistics.com/ex/portal.dll/ap: volgistics.com is a volunteer portal host shared by several organizations
+  ["bloomington-wonderlab-teen-volunteer", "columbus-worthington-libraries-volunteens"], // volgistics.com/ex/portal.dll/ap: volgistics.com is a volunteer portal host shared by several organizations
   ["indiana-world-food-prize-youth-institute-purdue", "lafayette-purdue-agriculture-science-research-institute"], // ag.purdue.edu/department/oap/camps.html: one page lists several programs; each card links to its own section with a text fragment
   ["madison-bgc-dane-county-career-exploration-program", "madison-bgc-dane-county-summer-internship-program"], // bgcdc.org/whatweoffer/summerinternships: one page lists several programs; each card links to its own section with a text fragment
   ["twin-cities-juxtaposition-arts-jxtalabs-apprenticeships", "twin-cities-juxtaposition-arts-valt-drawing"], // forms.office.com/r/8Nkty1Xy0p: one application form covers several programs

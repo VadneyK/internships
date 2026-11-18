@@ -178,10 +178,6 @@ const SHARED_URL_ALLOW = new Map([
     ids: ["santa-barbara-ucsb-research-mentorship-program", "santa-barbara-ucsb-summer-research-academies"],
     reason: "Same link on 2 cards (UC Santa Barbara Summer Sessions). Not yet reviewed as a shared hub or a duplicate.",
   }],
-  ["https://www.volgistics.com/ex/portal.dll/ap?AP=268451798", {
-    ids: ["bloomington-wonderlab-teen-volunteer", "bloomington-wonderlab-wondercamp-high-school-intern"],
-    reason: "Same link on 2 cards (WonderLab Museum of Science, Health, and Technology). Not yet reviewed as a shared hub or a duplicate.",
-  }],
 
 ]);
 

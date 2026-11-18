@@ -1,16 +1,16 @@
 {
   "grades": null,
-  "apply_url": null,
+  "apply_url": "https://iubmsch-fireform.eas.iu.edu/online/form/index/cacademy22306",
   "min_age": null,
   "max_age": null,
-  "pay_detail": "$950, which includes lodging, meals, instruction, equipment use and supplies (2026 price).",
+  "pay_detail": "$950, which includes lodging, meals, instruction, equipment use and supplies.",
   "duration": "1 week",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "needs_work_permit": false,
-  "notes": "You must live on campus. The application page is at cinemaacademy.indiana.edu/summer-sessions/afc.html. Check the exact age rules there.",
+  "notes": "You must live on campus. Check the exact age rules on the page.",
   "id": "bloomington-iu-acting-for-the-camera",
   "name": "Acting for the Camera (IU summer program)",
   "org": "Department of Theatre and Drama and The Media School, Indiana University Bloomington",
@@ -26,12 +26,14 @@
   "who_can_apply": "High school students. The page does not state exact grades or ages. Highly selective, about 15 to 20 students.",
   "paid_type": "fee-based",
   "season": "summer",
-  "status": "closed-expect-reopen",
-  "deadline_text": "2026 session ran July 20 to 24, 2026. Students were told by April 26, 2026. 2027 dates are not posted.",
-  "deadline_confidence": "last-year-pattern",
+  "status": "open-now",
+  "deadline_text": "2027 session is July 19 to 23, 2027. Applications are open as of Nov 4, 2026, and decisions are rolling. No closing date is posted.",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Record a monologue of up to 90 seconds. Upload it to YouTube or Vimeo as unlisted. Then fill out the online application with the video link. The program can give you a monologue if you need one.",
-  "url": "https://theatre.indiana.edu/about/high-school-summer-programs/acting_for_the_camera.html",
+  "url": "https://cinemaacademy.indiana.edu/summer-sessions/afc.html",
   "sources_fetched": [
-    "https://theatre.indiana.edu/about/high-school-summer-programs/acting_for_the_camera.html"
+    "https://theatre.indiana.edu/about/high-school-summer-programs/acting_for_the_camera.html",
+    "https://cinemaacademy.indiana.edu/summer-sessions/afc.html",
+    "https://cinemaacademy.indiana.edu/registration/index.html"
   ]
 }
