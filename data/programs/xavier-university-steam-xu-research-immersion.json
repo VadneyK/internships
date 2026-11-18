@@ -2,7 +2,7 @@
   "grades": "Incoming grades 9 to 12",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "id": "xavier-university-steam-xu-research-immersion",
   "name": "STEAM@XU Research Immersion (summer pre-college)",
   "org": "Xavier University",
@@ -15,19 +15,19 @@
     "science",
     "education"
   ],
-  "what_you_do": "Spend one week on campus doing a hands-on research project led by Xavier faculty, with college readiness workshops. Choose a day camp or a residential stay.",
+  "what_you_do": "Spend one week on campus doing a hands-on research project led by Xavier faculty, with college readiness workshops. You stay in a campus residence hall.",
   "min_age": null,
   "max_age": null,
   "who_can_apply": "Incoming 9th to 12th graders.",
   "paid_type": "fee-based",
-  "pay_detail": "2026 prices: day camp $495 ($545 after May 1, 2026); residential $1,095 ($1,195 after May 1, 2026). Scholarships offered.",
+  "pay_detail": "$1,095, rising to $1,195 on May 1. The page still says May 1, 2026 under a 2027 title. Includes meals and housing. Scholarships offered.",
   "season": "summer",
-  "duration": "1 week (2026: July 19/20 to 24)",
+  "duration": "1 week, June 13 to 18, 2027",
   "status": "unconfirmed",
-  "deadline_text": "The page shows 2026 dates and prices under a 2027 title. The Summer Programs page says 2027 programs are being finalized and that 2027 scholarship applications are open.",
+  "deadline_text": "The program runs June 13 to 18, 2027. The page says registration launches soon and gives no date. The FAQ page still shows 2026 dates. The Summer Programs page says 2027 programs are being finalized and that 2027 scholarship applications are open.",
   "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Register online for the day camp or residential option; a separate summer program scholarship application is available. Questions: summerprograms@xavier.edu.",
+  "deadline_confidence": "unknown",
+  "how_to_apply": "Registration has not started. The page says it launches soon. A separate summer program scholarship application is open. Questions: summerprograms@xavier.edu.",
   "needs_work_permit": false,
   "url": "https://www.xavier.edu/summer-programs/steam-research-immersion",
   "sources_fetched": [
@@ -36,5 +36,5 @@
     "https://www.xavier.edu/events-and-conferences/summer-programs/faq"
   ],
   "priority": 2,
-  "notes": "Xavier's Summer Programs page also lists other high school options: Summer in Cincy (one-week residential pre-college), D'Artagnan Summer Business Academy (rising juniors and seniors), CSI Forensics Camp (grades 10 to 12) and STRONG eXplorer Career Camp. Check each page for 2027 prices. High school students who attend may get a $500 to $1,000 award if they later enroll. Checked 2026-10-10: the open 2027 scholarship applications are for the Summer Programs in general. The page gives no application dates for STEAM@XU, so left unconfirmed."
+  "notes": "Xavier's Summer Programs page also lists other high school options: Summer in Cincy (one-week residential pre-college), D'Artagnan Summer Business Academy (rising juniors and seniors), CSI Forensics Camp (grades 10 to 12) and STRONG eXplorer Career Camp. Check each page for 2027 prices. Rising 10th to 12th graders who attend may get a $500 to $1,000 award if they later enroll. As of Nov 4, 2026: the open 2027 scholarship applications are for the Summer Programs in general. No registration dates are posted, so left unconfirmed."
 }
