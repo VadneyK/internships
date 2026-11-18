@@ -4,8 +4,8 @@
   "grades": "High school juniors and seniors when you apply",
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-22",
-  "apply_url": null,
+  "verified_on": "2026-11-04",
+  "apply_url": "https://www.usajobs.gov/job/891154500",
   "deadline_iso": null,
   "needs_work_permit": false,
   "priority": 1,
@@ -27,15 +27,16 @@
   "paid_type": "unpaid",
   "pay_detail": "Unpaid. The page calls it a competitive volunteer program.",
   "season": "summer",
-  "duration": "Seven weeks, mid-June to early August (2027 dates to be decided)",
-  "status": "closed-expect-reopen",
-  "deadline_text": "Not open yet as of Oct 11. The page (updated Sept 14) says the 2027 job announcement is expected on USAJOBS in mid-October, with applications due at the end of January 2027. A lower line says applications generally open Nov 1, so the open date is not firm.",
-  "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Watch for the SHIP job announcement on USAJOBS and follow the application page linked from the SHIP page. The page says to read the application process page for the full steps.",
+  "duration": "Seven weeks, June 21 to August 6, 2027",
+  "status": "open-now",
+  "deadline_text": "The 2027 application is open as of Nov 4, 2026. The job post shows no closing date. The NIST page says applications generally close in the last week of January. The last day for letters of recommendation is Feb 12, 2027. Apply early.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "Apply through the SHIP job post on USAJOBS. Send a resume, a one page personal statement, your transcript, a signed availability form and proof of U.S. citizenship. You also need two letters of recommendation. One must be from a STEM teacher.",
   "url": "https://www.nist.gov/ship",
   "sources_fetched": [
     "https://www.nist.gov/ship",
-    "https://www.nist.gov/careers/student-opportunities"
+    "https://www.nist.gov/careers/student-opportunities",
+    "https://www.usajobs.gov/job/891154500"
   ],
-  "notes": "The page lists two NIST campuses (Boulder, CO and Gaithersburg, MD); this card is for Gaithersburg. The 2026 poster session was held in Gaithersburg on Aug 6, 2026. The exact application dates for 2027 were not final on the page, so check it again in late October."
+  "notes": "The page lists two NIST campuses (Boulder, CO and Gaithersburg, MD); this card is for Gaithersburg. The 2027 poster session is Aug 4. Do not share a Social Security number. Black it out on your citizenship document."
 }

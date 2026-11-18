@@ -16,22 +16,24 @@
   "who_can_apply": "Minimum age is 16. High school students use a separate application and must attend an in-person orientation. Needs a health screening (MMR, varicella, flu, TB testing) and availability to start within one month of applying.",
   "paid_type": "unpaid",
   "pay_detail": "Unpaid.",
-  "season": "year-round",
+  "season": "summer",
   "duration": "Not stated on the main page",
-  "status": "rolling",
-  "deadline_text": "No deadline stated.",
+  "status": "opens-soon",
+  "opens_iso": "2027-01-04",
+  "deadline_text": "High school applications for summer 2026 are closed. Summer 2027 applications open Jan 4, 2027 at 3:30 p.m. Sign up closes when spots fill.",
   "deadline_iso": null,
-  "deadline_confidence": "rolling",
-  "how_to_apply": "Submit the application form for high school students from the Holy Cross volunteer applications page, then complete a screening interview and orientation.",
+  "deadline_confidence": "confirmed-2026-27",
+  "how_to_apply": "When it opens, use the high school summer application on the Holy Cross volunteer applications page. Sign up for an info session too. Then complete a screening interview and orientation. Current juniors can ask their school's Internship Coordinator about a senior year internship.",
   "needs_work_permit": false,
   "url": "https://holycrosshealth.org/about-us/support-our-work/volunteer",
   "apply_url": "https://holycrosshealth.org/about-us/support-our-work/volunteer/applications",
   "sources_fetched": [
-    "https://holycrosshealth.org/about-us/support-our-work/volunteer"
+    "https://holycrosshealth.org/about-us/support-our-work/volunteer",
+    "https://holycrosshealth.org/about-us/support-our-work/volunteer/applications"
   ],
   "priority": 2,
   "notes": "Another site named holy-cross.com is Holy Cross in Fort Lauderdale, Florida; use holycrosshealth.org for Maryland. Background checks are required for volunteers 18 and older. Unpaid volunteering, so no work permit.",
   "grades": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09"
+  "verified_on": "2026-11-04"
 }
