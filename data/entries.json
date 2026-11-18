@@ -40193,7 +40193,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "fields": [
    "education"
@@ -40224,7 +40224,7 @@
   "sources_fetched": [
    "https://www.hendersonlibraries.com/volunteer"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "hennepin-county-library-steam-squad",
@@ -41886,10 +41886,10 @@
    "https://uofuhealth.utah.edu/huntsman/education-training/high-school"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "notes": "You must attend all 40 hours. A lab kit is mailed to your home. Contact: Monica Salas Jimenez, Monica.Salas@hci.utah.edu, 801-587-7885.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "huntsman-cancer-institute-hci-rise-virtual-program",
@@ -41931,10 +41931,10 @@
    "https://uofuhealth.utah.edu/huntsman/education-training/high-school"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "notes": "It is online only. The program manager is Jill Christian. Her email is Jill.Christian@hci.utah.edu.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "huntsman-cancer-institute-pathmaker-scholars",
@@ -50409,10 +50409,10 @@
    "https://files.lasvegasnevada.gov/education/Batteries-Included-Registration-Form.pdf"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "The registration form lists councils at several high schools and community centers. Check with the city for the current site list. A parent signs the form. The form says each council has an adult advisor.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -50420,7 +50420,7 @@
   "deadline_iso": null,
   "apply_url": "https://registration.lasvegasnevada.gov/NV/las-vegas-nv/catalog",
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "id": "las-vegas-city-parks-aquatics-lifeguard-jobs",
   "name": "City of Las Vegas Aquatics: Lifeguard Training and Pool Jobs",
   "org": "City of Las Vegas Parks and Recreation",
@@ -50440,18 +50440,20 @@
   "pay_detail": "Lifeguard $15 an hour. Lifeguard with water safety instructor $16. Assistant $14. Laborer $14. Pool manager $18. East side pools add 50 cents an hour.",
   "season": "year-round",
   "duration": "Year-round and seasonal jobs",
-  "status": "rolling",
-  "deadline_text": "The 2026 flyer says the city hires for winter starts in Jan 2026 and keeps hiring through spring and into summer until jobs are filled.",
-  "deadline_confidence": "rolling",
+  "status": "unconfirmed",
+  "deadline_text": "The 2026 flyer says hiring began for Jan 2026 starts and ran into summer. The job posting closed May 31, 2026. The flyer also mentions year-round jobs, so call to ask. 2027 dates are not posted.",
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Sign up for the lifeguard class on the city registration site. Then apply online for the Hourly Lifeguard job. Call Municipal Pool at 702-229-6309 or Pavilion Pool at 702-229-1488 to set your tryout swim and interview.",
   "needs_work_permit": null,
   "url": "https://files.lasvegasnevada.gov/parks-recreation/Aquatics/2026/Splash_for_Cash_2026.pdf",
   "sources_fetched": [
-   "https://files.lasvegasnevada.gov/parks-recreation/Aquatics/2026/Splash_for_Cash_2026.pdf"
+   "https://files.lasvegasnevada.gov/parks-recreation/Aquatics/2026/Splash_for_Cash_2026.pdf",
+   "https://www.governmentjobs.com/careers/lasvegas/jobs/4328274",
+   "https://www.lasvegasnevada.gov/Residents/Events/Details?id=aquatics-hiring-fair-may-9-2026"
   ],
   "priority": 1,
-  "notes": "Pay rates come from the 2026 city flyer and may change. The flyer says you must register in person to get the class fee discount. Fees are waived for current city employees.",
-  "verified_on_label": "Oct 13, 2026"
+  "notes": "Pay rates come from the 2026 city flyer and may change. The flyer says you must register in person to get the class fee discount. Fees are waived for current city employees and job applicants. The flyer and job posting say lifeguards must be 16. A May 2026 hiring fair page says 15 and a half. Ask the pool.",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -50459,7 +50461,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "id": "las-vegas-clark-county-aquatics-lifeguard-jobs",
   "name": "Clark County Aquatics: Lifeguard, Cashier and Swim Instructor Jobs",
   "org": "Clark County Parks and Recreation",
@@ -50490,7 +50492,7 @@
   ],
   "priority": 1,
   "notes": "The county notice has no date, so check that hiring is still open. Phone: (702) 455-1708. County pools are different from City of Las Vegas pools.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "las-vegas-clark-county-leaders-of-the-future",
@@ -50527,10 +50529,10 @@
    "https://www.clarkcountynv.gov/government/departments/parks___recreation/leaders-of-the-future"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Centers include Desert Breeze, Cambridge, Helen Meyer and Hollywood. Others are Moapa Valley, Paradise, Parkdale and Bob Price. Also on the list are Silverado Ranch, Walnut and Whitney. The last two are Pearson and Winchester Dondero. You are picked from the written application, the interview and open spots.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "las-vegas-csn-dual-enrollment",
@@ -50568,10 +50570,10 @@
    "https://www.csn.edu/dualcredit"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Classes are at the Charleston, Henderson and North Las Vegas campuses, at several centers, or online. Discount rates do not apply in summer. CSN also lists a CTE College Credit program. It gives free college credit for some high school career classes.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "las-vegas-csn-jumpstart-concurrent-enrollment",
@@ -50609,10 +50611,10 @@
    "https://www.csn.edu/dualcredit"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Partners include Clark County School District, charter schools and private schools in the Las Vegas area. Ask your counselor which Jumpstart classes your school offers.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "las-vegas-cyber-clinic-junior-member",
@@ -50640,7 +50642,7 @@
   "deadline_text": "No deadline is stated on the program page.",
   "deadline_iso": null,
   "deadline_confidence": "rolling",
-  "how_to_apply": "Use the Apply Now button on the program page. It links to jmprogram@cyberclinicofficial.org. Questions go to the same email.",
+  "how_to_apply": "Send a resume and your latest transcript. Use the Apply Now button on the program page. It links to jmprogram@cyberclinicofficial.org. Questions go to the same email.",
   "needs_work_permit": false,
   "url": "https://cyberclinicofficial.org/students",
   "apply_url": null,
@@ -50649,10 +50651,10 @@
    "https://www.unlv.edu/early-outreach/young-rebels/high-school"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "UNLV Early Outreach lists this program for high school students with weekly online workshops at no cost. The program page itself does not state the schedule, so ask before you plan around it.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -50660,7 +50662,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "fields": [
    "science",
@@ -50693,7 +50695,7 @@
    "https://discoverykidslv.org/support/volunteer/"
   ],
   "notes": "The page does not say if a parent must sign. Teen volunteers are not presenters; you can apply for presenter roles at 18.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -50701,7 +50703,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "fields": [
    "science",
@@ -50733,7 +50735,7 @@
   "sources_fetched": [
    "https://discoverykidslv.org/support/volunteer/youthworks-internship"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -50741,7 +50743,7 @@
   "deadline_iso": null,
   "apply_url": "https://employnvyouthhub.org/",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "fields": [
    "any"
@@ -50772,7 +50774,7 @@
   "sources_fetched": [
    "https://thelibrarydistrict.org/employnv/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -50780,7 +50782,7 @@
   "deadline_iso": null,
   "apply_url": "https://app.betterimpact.com/",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "fields": [
    "education"
@@ -50811,7 +50813,7 @@
   "sources_fetched": [
    "https://thelibrarydistrict.org/foundation/volunteer-opportunities/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -50819,7 +50821,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "fields": [
    "science",
@@ -50852,7 +50854,7 @@
   "sources_fetched": [
    "https://www.lvnhm.org/volunteer"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -50860,7 +50862,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "fields": [
    "environment",
@@ -50892,7 +50894,7 @@
   "sources_fetched": [
    "https://www.springspreserve.org/support/volunteer.html"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -50900,14 +50902,14 @@
   "deadline_iso": null,
   "apply_url": "https://www.volgistics.com/appform/1266155945",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "fields": [
    "health"
   ],
   "needs_work_permit": false,
   "status": "closed-expect-reopen",
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_confidence": "last-year-pattern",
   "id": "las-vegas-sunrise-hospital-medical-explorer-program",
   "name": "Medical Explorer Program",
   "org": "Sunrise Hospital & Medical Center",
@@ -50924,14 +50926,14 @@
   "pay_detail": "Unpaid volunteer program",
   "season": "school-year",
   "duration": "12 volunteer hours a month in the school year, 8 hours a week in summer. Must attend 75 percent of post activities.",
-  "deadline_text": "Fall 2026 applications close Oct 12, 2026 at noon. Applications open twice a year: summer (2026 window was Mar 2 to Apr 3) and fall (Sept 7 to Oct 12).",
-  "how_to_apply": "Use the Medical Explorer Application link on the volunteer page. It works only in the open window. Then you have an interview in person. To get in you need a background check, a drug test, a shot check and a TB blood test.",
-  "url": "https://sunrisehospital.com/volunteer",
-  "notes": "Process can take 4 to 6 weeks. The summer 2026 window was March 2 to April 3, so check the page for the next summer window. Adults 18 and over use a different application.",
+  "deadline_text": "Fall 2026 applications closed Oct 12, 2026 at noon. Applications open twice a year: summer (2026 window was Mar 2 to Apr 3) and fall (Sept 7 to Oct 12). 2027 dates are not posted.",
+  "how_to_apply": "Use the Medical Explorer Application link on the volunteer page. It works only in the open window. The page lists an interview, background check, drug test, shot check and TB blood test for adults. Ask if Explorers need them too.",
+  "url": "https://www.sunrisehealthinfo.com/locations/sunrise-hospital/about-us/volunteers",
+  "notes": "The adult process can take 4 to 6 weeks. The summer 2026 window was March 2 to April 3, so check the page for the next summer window. Adults 18 and over use a different application.",
   "sources_fetched": [
-   "https://sunrisehospital.com/volunteer"
+   "https://www.sunrisehealthinfo.com/locations/sunrise-hospital/about-us/volunteers"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -50939,7 +50941,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "id": "las-vegas-three-square-food-bank-volunteer",
   "name": "Volunteer at Three Square",
   "org": "Three Square Food Bank",
@@ -50971,7 +50973,7 @@
   ],
   "priority": 2,
   "notes": "Wear closed toe shoes and knee length shorts or pants. Groups should book 4 to 8 weeks ahead. Volunteer office: 702-644-3663 ext. 349.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -50979,7 +50981,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "fields": [
    "food-hospitality",
@@ -51011,7 +51013,7 @@
   "sources_fetched": [
    "https://www.unlv.edu/announcement/william-f-harrah-college-hospitality/2027-hospitality-exploration-summer-camp"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "8 to 12",
@@ -51019,7 +51021,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "id": "las-vegas-unlv-liberal-arts-high-school-summer-camps",
   "name": "UNLV College of Liberal Arts Summer Camps for High Schoolers",
   "org": "UNLV College of Liberal Arts",
@@ -51052,7 +51054,7 @@
   ],
   "priority": 3,
   "notes": "This is a 2026 news article. Check UNLV for the next summer list. The 2026 camp dates were Mock Trial June 1 to 5, Witnessing History June 8 to 12, Justice Law and Society June 15 to 17, Pathways to Success June 22 to 26, and Archaeology July 6 to 8.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Rising grades 9 to 12, plus select rising 8th graders",
@@ -51060,7 +51062,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "fields": [
    "education",
@@ -51092,7 +51094,7 @@
   "sources_fetched": [
    "https://yccr.sites.unlv.edu/programs/rssc/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "las-vegas-unlv-sistem-stem-talks",
@@ -51131,10 +51133,10 @@
    "https://www.unlv.edu/early-outreach/young-rebels/high-school"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "The program page does not list the session dates. A parent must sign the Parent Agreement Form. Students outside Southern Nevada can join the live virtual session.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -51142,7 +51144,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "id": "las-vegas-valley-health-system-teen-volunteer",
   "name": "Valley Health System Teen Volunteer Program",
   "org": "Valley Health System (Las Vegas hospitals)",
@@ -51174,7 +51176,7 @@
   ],
   "priority": 2,
   "notes": "The application lists these hospitals: Centennial Hills, Valley, Henderson, Summerlin, Spring Valley and West Henderson. You also need a health screening. That includes a TB skin test each year. You must go to an orientation. Summerlin Hospital volunteer office phone: 702-233-7532.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "lawrence-ku-design-camp",
@@ -67166,10 +67168,10 @@
    "https://extension.unr.edu/4h/program-overview.aspx"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "Activities also include a visit to the state museum and the Governor's Mansion. Ask Nevada 4-H for dates and cost.",
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "nevada-4h-youth-development",
@@ -67208,10 +67210,10 @@
    "https://extension.unr.edu/4h/join-4h.aspx"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-11",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "Also open to younger kids. Fee amounts are set by each county and club. Ask your county Extension office.",
-  "verified_on_label": "Oct 11, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "nevada-wnc-high-school-dual-credit",
@@ -67248,10 +67250,10 @@
    "https://wnc.edu/advising/high-school-programs/dual-credit.php"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "The page mentions a Fallon campus and Fernley offerings. After you pass a class, you must ask WNC to send your transcript to your high school. Allow up to five business days for WNC to process your school's approval.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "nevada-youth-legislature",
@@ -67289,10 +67291,10 @@
    "https://leg.state.nv.us/division/research/nyl/docs/NYL_Brochure_2024_FINAL_DIGITAL.pdf"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Each of the 21 state senators appoints one Youth Legislator. Meetings are often on weekday afternoons and may mean missing class. The brochure is the 2024 edition, so confirm the grade rule and dates with the program.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "new-brunswick-east-brunswick-counselor-in-training",
@@ -86123,10 +86125,10 @@
    "https://www.reno.gov/parks-and-recreation/recreation/aquatics/aquatic-training-and-certifications.php"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "This is a good step toward the City of Reno lifeguard class, which starts at age 15. You must attend every day of a session to be certified.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "reno-parks-lifeguard-certification-class",
@@ -86164,10 +86166,10 @@
    "https://www.reno.gov/parks-and-recreation/resources/jobs.php"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "You must attend every day of the class to be certified. A shorter $124 renewal class is for people with a valid lifeguard certificate, or one that ended in the last 30 days. The program page does not say if a work permit is needed.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -86175,7 +86177,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "fields": [
    "any",
@@ -86207,7 +86209,7 @@
   "sources_fetched": [
    "https://www.reno.gov/parks-and-recreation/resources/volunteers.php"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Entering grades 8 to 12",
@@ -86215,7 +86217,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "fields": [
    "science",
@@ -86235,7 +86237,7 @@
   "what_you_do": "Help run hands-on STEAM camp activities for kindergarten to 7th grade campers. Earn over 80 community service hours.",
   "min_age": null,
   "max_age": null,
-  "who_can_apply": "Open to grades 8 to 12.",
+  "who_can_apply": "Teens entering grades 8 to 12.",
   "paid_type": "unpaid",
   "pay_detail": "Unpaid volunteer role. Earns over 80 community service hours.",
   "season": "summer",
@@ -86248,7 +86250,7 @@
    "https://nvdm.org/support/volunteer-at-the-discovery/"
   ],
   "notes": "You must be free during Washoe County School District breaks.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "High school juniors",
@@ -86256,7 +86258,7 @@
   "deadline_iso": null,
   "apply_url": "https://nevada.formstack.com/forms/cbess",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "fields": [
    "health",
@@ -86273,7 +86275,7 @@
   ],
   "city": "Reno, NV",
   "type": "research",
-  "what_you_do": "Spend a week on campus plus 2 or more weeks online in a summer research program. Then plan a student led research project on a community health issue.",
+  "what_you_do": "Spend a week on campus plus 2 or more weeks online in a summer research program. Create a student led research project on a community health issue.",
   "min_age": null,
   "max_age": null,
   "who_can_apply": "Bilingual English and Spanish high school juniors in Northern Nevada. Up to 30 are chosen for the summer program.",
@@ -86284,11 +86286,11 @@
   "deadline_text": "No deadline or dates posted on the page.",
   "how_to_apply": "Fill out the CBESS Interest Form at nevada.formstack.com/forms/cbess. Questions: cbess@unr.edu or (775) 784-1110.",
   "url": "https://www.unr.edu/raggio-center/educational-research/community-of-bilingual-english-spanish-speakers/student-researchers",
-  "notes": "Chosen students also do an outreach internship. Up to 64 more juniors get a certificate. They must first finish some questionnaires.",
+  "notes": "Students who are picked also do an outreach internship. Another 64 juniors get a certificate. They must first fill out some forms.",
   "sources_fetched": [
    "https://www.unr.edu/raggio-center/educational-research/community-of-bilingual-english-spanish-speakers/student-researchers"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -86296,7 +86298,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "fields": [
    "engineering",
@@ -86313,22 +86315,22 @@
   ],
   "city": "Reno, NV",
   "type": "pre-college",
-  "what_you_do": "Pick one high school camp. The page lists the Aerospace Mini-Camp, the Engineering Adventures Camp and a Civil and Environmental Engineering Camp. Camp details are not posted yet.",
+  "what_you_do": "Pick one high school camp. The page lists two Aerospace Mini-Camp sessions and a Civil and Environmental Engineering Camp. Camp details are not posted yet.",
   "min_age": 14,
   "max_age": 17,
   "who_can_apply": "Teens ages 14 to 17.",
   "paid_type": "fee-based",
   "pay_detail": "Fee not listed on the page. A $50 non-refundable deposit can hold a spot; full payment is due within a month of registering. Scholarships available.",
   "season": "summer",
-  "duration": "Camp dates not listed on the page",
+  "duration": "Aerospace Mini-Camp June 28 to July 2 or July 8 to 9. Civil and Environmental Engineering Camp July 12 to 16. The page shows no year on these dates.",
   "deadline_text": "Summer 2027 registration opens February 1 (2027 inferred from the Summer 2027 label on the page).",
   "how_to_apply": "Sign up online when it opens on February 1. For a scholarship, add an essay on your interests and a teacher recommendation letter to the form. Questions: paigefroese@unr.edu.",
   "url": "https://www.unr.edu/engineering/about/outreach/k-12/camps",
-  "notes": "Camp prices and dates were not posted when this was checked. Check back before February.",
+  "notes": "Camp prices are not posted as of Nov 4, 2026. Check back before February.",
   "sources_fetched": [
    "https://www.unr.edu/engineering/about/outreach/k-12/camps"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "reno-unr-high-school-dual-enrollment",
@@ -86365,10 +86367,10 @@
    "https://www.unr.edu/admissions/dual-enrollment"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Earlier college work can place you into classes. So can SAT or ACT scores, AP or IB scores, or placement tests.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "reno-unr-women-in-stem-high-school",
@@ -86398,7 +86400,7 @@
   "deadline_text": "The program page lists the 2024 to 2025 application, which opened June 1, 2024 and stayed open until spots were full. No newer dates are posted.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Use the Apply now link on the Join Women in STEM page. A paper form can be picked up at the Dean's Office, 4th floor of the Davidson Mathematics and Science Center on campus.",
+  "how_to_apply": "The Apply now link on the Join Women in STEM page did not load as of Nov 4, 2026. Ask womeninstem@unr.edu or (775) 784-4561 how to apply. A paper form can be picked up at the Dean's Office, 4th floor of the Davidson Mathematics and Science Center on campus.",
   "needs_work_permit": false,
   "url": "https://www.unr.edu/women-in-stem/join-women-in-stem",
   "apply_url": null,
@@ -86407,10 +86409,10 @@
    "https://www.unr.edu/women-in-stem/about-the-program"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "The program page still shows the 2024 to 2025 year. Check with the program before you plan on it. It asks for four events in each of three event series, two advisor meetings and three mentor meetings during the year.",
-  "verified_on_label": "Oct 13, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -86419,7 +86421,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "fields": [
    "education"
@@ -86450,7 +86452,7 @@
   "sources_fetched": [
    "https://www.washoecountylibrary.us/teens/volunteen.php"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "rfu-campmed",

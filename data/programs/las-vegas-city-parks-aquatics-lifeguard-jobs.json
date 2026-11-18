@@ -4,7 +4,7 @@
   "deadline_iso": null,
   "apply_url": "https://registration.lasvegasnevada.gov/NV/las-vegas-nv/catalog",
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "id": "las-vegas-city-parks-aquatics-lifeguard-jobs",
   "name": "City of Las Vegas Aquatics: Lifeguard Training and Pool Jobs",
   "org": "City of Las Vegas Parks and Recreation",
@@ -24,15 +24,17 @@
   "pay_detail": "Lifeguard $15 an hour. Lifeguard with water safety instructor $16. Assistant $14. Laborer $14. Pool manager $18. East side pools add 50 cents an hour.",
   "season": "year-round",
   "duration": "Year-round and seasonal jobs",
-  "status": "rolling",
-  "deadline_text": "The 2026 flyer says the city hires for winter starts in Jan 2026 and keeps hiring through spring and into summer until jobs are filled.",
-  "deadline_confidence": "rolling",
+  "status": "unconfirmed",
+  "deadline_text": "The 2026 flyer says hiring began for Jan 2026 starts and ran into summer. The job posting closed May 31, 2026. The flyer also mentions year-round jobs, so call to ask. 2027 dates are not posted.",
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Sign up for the lifeguard class on the city registration site. Then apply online for the Hourly Lifeguard job. Call Municipal Pool at 702-229-6309 or Pavilion Pool at 702-229-1488 to set your tryout swim and interview.",
   "needs_work_permit": null,
   "url": "https://files.lasvegasnevada.gov/parks-recreation/Aquatics/2026/Splash_for_Cash_2026.pdf",
   "sources_fetched": [
-    "https://files.lasvegasnevada.gov/parks-recreation/Aquatics/2026/Splash_for_Cash_2026.pdf"
+    "https://files.lasvegasnevada.gov/parks-recreation/Aquatics/2026/Splash_for_Cash_2026.pdf",
+    "https://www.governmentjobs.com/careers/lasvegas/jobs/4328274",
+    "https://www.lasvegasnevada.gov/Residents/Events/Details?id=aquatics-hiring-fair-may-9-2026"
   ],
   "priority": 1,
-  "notes": "Pay rates come from the 2026 city flyer and may change. The flyer says you must register in person to get the class fee discount. Fees are waived for current city employees."
+  "notes": "Pay rates come from the 2026 city flyer and may change. The flyer says you must register in person to get the class fee discount. Fees are waived for current city employees and job applicants. The flyer and job posting say lifeguards must be 16. A May 2026 hiring fair page says 15 and a half. Ask the pool."
 }
