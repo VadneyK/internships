@@ -81824,14 +81824,14 @@
   "grades": null,
   "apply_url": null,
   "opens_iso": null,
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-10",
   "priority": 2,
   "min_age": 16,
   "max_age": 17,
   "needs_work_permit": false,
   "deadline_iso": null,
-  "notes": "Only these two AHN sites list a junior program for 16 and 17 year olds. Most other AHN volunteer roles are for adults. Check with the site for current openings.",
+  "notes": "The site blocked automated reading on Nov 4, 2026. Details here are from Oct 10, 2026. Only these two AHN sites list a junior program for 16 and 17 year olds. Most other AHN volunteer roles are for adults. Check with the site for current openings.",
   "id": "pittsburgh-ahn-junior-volunteer",
   "name": "AHN Junior Volunteer Program",
   "org": "Allegheny Health Network (Canonsburg Hospital and Wexford Health + Wellness Pavilion)",
@@ -81866,7 +81866,7 @@
   "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": true,
   "deadline_iso": null,
   "id": "pittsburgh-allegheny-county-parks-lifeguards",
@@ -81899,14 +81899,14 @@
   ],
   "priority": 1,
   "notes": "The county lifeguard course is 2 days with the American Red Cross. It is for ages 15 and up. It costs $250 for residents and $312 for non-residents. You need a physical first. If you get certified through the county and work at least 225 hours at a county pool that season, the $250 fee can be paid back in full. The Pennsylvania Department of Labor and Industry says minors under 18 need a work permit from their school district.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Entering 7th grade or higher",
   "apply_url": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "min_age": 13,
   "max_age": 18,
@@ -81940,7 +81940,7 @@
    "https://www.aswp.org/our-programs/nature-camps/",
    "https://www.aswp.org/about-us/career-and-volunteer-opportunities/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "pittsburgh-boys-girls-clubs-workforce-pathways",
@@ -81978,10 +81978,10 @@
    "https://bgcwpa.org/teen-workforce-pathways"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "Confirm first: ages, cost, schedule and whether any work is paid are not on the pages. The Clubs also run two Club Teen Centers (Downtown and McKeesport).",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "pittsburgh-carnegie-museums-camp-teen-volunteers",
@@ -82022,17 +82022,17 @@
    "https://form.jotform.com/230676499234163"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "The apply link above is the Natural History form. The Art museum form is https://form.jotform.com/230685138792162 and the Powdermill form is https://form.jotform.com/230595011446148. The Natural History page also lists a Teen Advisory Board with an interest form (https://form.jotform.com/243505851081150); its ages are not stated. The Kamin Science Center teen volunteers are a separate card.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-19",
+  "verified_on": "2026-11-04",
   "needs_work_permit": true,
   "deadline_iso": null,
   "id": "pittsburgh-citiparks-lifeguard",
@@ -82065,7 +82065,7 @@
   ],
   "priority": 1,
   "notes": "The posting says applicants 18 and under with no high school diploma or GED must show a valid work permit before they are hired. It also needs Pennsylvania Act 153 clearance, fingerprints and a medical exam. The job number in 2026 was 26-LG1A-01.",
-  "verified_on_label": "Oct 19, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -82132,11 +82132,12 @@
   "pay_detail": "Fully funded: tuition, housing and meals are free; limited travel help for families with transportation barriers",
   "season": "summer",
   "duration": "4 weeks, June 26 to July 24, 2027, residential",
-  "status": "open-now",
-  "deadline_text": "Application deadline February 1, 2027 (decisions April 1, 2027). The page does not post the date applications open.",
+  "status": "opens-soon",
+  "opens_iso": "2026-12-01",
+  "deadline_text": "Application opens December 1, 2026. Deadline February 1, 2027 (decisions April 1, 2027).",
   "deadline_iso": "2027-02-01",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Apply online through the CMU Pre-College application portal by February 1, 2027. Residential only; full participation required.",
+  "how_to_apply": "Apply online through the CMU Pre-College application portal from December 1, 2026 to February 1, 2027. Residential only; full participation required.",
   "needs_work_permit": false,
   "apply_url": "https://apply-precollege.studentaffairs.cmu.edu/apply/",
   "url": "https://www.cmu.edu/pre-college/academic-programs/computer-science-scholars.html",
@@ -82145,10 +82146,10 @@
    "https://www.cmu.edu/pre-college/admission/index.html"
   ],
   "priority": 2,
-  "notes": "Status is unconfirmed only because the application opening date is not posted; the 2027 deadlines are confirmed on the pages (the apply portal could not be read). Limited spots. The admission page lists two different dates for this application (February 1 and March 1, 2027); the page and the deadlines table both say February 1, 2027, so apply by then. Completers may be invited back to AI Scholars.",
+  "notes": "The apply portal could not be read. Limited spots. Completers may be invited back to AI Scholars.",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on": "2026-11-04",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "pittsburgh-cmu-pre-college-programs",
@@ -82168,14 +82169,15 @@
   "grades": "10th or 11th grade at time of application",
   "who_can_apply": "High school students at least 16 years old by June 26, 2027 who are in 10th or 11th grade when they apply.",
   "paid_type": "fee-based",
-  "pay_detail": "2026 prices ran from about $5,999 (3-week music, commuter) to $14,688 (summer session, residential, 2 courses), plus a $75 application fee and an $800 enrollment deposit. 2027 prices are posted in November 2026. Full scholarships for students with financial need.",
+  "pay_detail": "The cost page, headed 2026, runs from about $6,209 (3-week music, commuter) to $15,202 (summer session, residential, 2 courses), plus a $75 application fee and an $800 enrollment deposit. Full scholarships for students with financial need.",
   "season": "summer",
   "duration": "3 to 6 weeks depending on the program (summer 2027 starts June 26)",
-  "status": "open-now",
-  "deadline_text": "Basic application (rolling admission) deadline March 1, 2027. Scholarship deadline February 1, 2027 (decisions April 1, 2027). The page does not post the date applications open.",
+  "status": "opens-soon",
+  "opens_iso": "2026-12-01",
+  "deadline_text": "Application opens December 1, 2026. Basic application (rolling admission) deadline March 1, 2027. Scholarship deadline February 1, 2027 (decisions April 1, 2027).",
   "deadline_iso": "2027-03-01",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Apply online through the CMU Pre-College application portal. The scholarship option is only considered under the February 1, 2027 deadline.",
+  "how_to_apply": "Apply online through the CMU Pre-College application portal starting December 1, 2026. The scholarship option is only considered under the February 1, 2027 deadline.",
   "needs_work_permit": false,
   "apply_url": "https://apply-precollege.studentaffairs.cmu.edu/apply/",
   "url": "https://www.cmu.edu/pre-college/",
@@ -82185,10 +82187,10 @@
    "https://www.cmu.edu/pre-college/cost-financial-aid/index.html"
   ],
   "priority": 3,
-  "notes": "Status is unconfirmed only because the application opening date is not posted; the 2027 deadlines are confirmed on the pages (the apply portal could not be read). Expensive; shown so families know the cost and the scholarship route. The three fully funded programs (AI Scholars, CS Scholars, SAMS) cost nothing. Check the cost page again in November 2026 for 2027 prices.",
+  "notes": "The apply portal could not be read. Expensive; shown so families know the cost and the scholarship route. The three fully funded programs (AI Scholars, CS Scholars, SAMS) cost nothing.",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on": "2026-11-04",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "pittsburgh-cmu-summer-academy-math-science",
@@ -82212,11 +82214,12 @@
   "pay_detail": "No cost to scholars beyond travel to and from Pittsburgh",
   "season": "summer",
   "duration": "6 weeks in person, June 26 to August 7, 2027, plus a short virtual jumpstart June 21 and 22, 2027",
-  "status": "open-now",
-  "deadline_text": "Application deadline February 1, 2027 (decisions April 1, 2027). The page does not post the date applications open.",
+  "status": "opens-soon",
+  "opens_iso": "2026-12-01",
+  "deadline_text": "Application opens December 1, 2026. Deadline February 1, 2027 (decisions April 1, 2027).",
   "deadline_iso": "2027-02-01",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "The application opening date is not posted; apply online through the CMU Pre-College application portal by February 1, 2027. Residential only; scholars must attend the full program.",
+  "how_to_apply": "Apply online through the CMU Pre-College application portal from December 1, 2026 to February 1, 2027. Residential only; scholars must attend the full program.",
   "needs_work_permit": false,
   "apply_url": "https://apply-precollege.studentaffairs.cmu.edu/apply/",
   "url": "https://www.cmu.edu/pre-college/academic-programs/sams.html",
@@ -82226,17 +82229,17 @@
    "https://www.cmu.edu/pre-college/cost-financial-aid/index.html"
   ],
   "priority": 2,
-  "notes": "Status is unconfirmed only because the application opening date is not posted; the 2027 deadlines above are confirmed on the pages (the apply portal itself could not be read, it needs JavaScript). Competitive and limited spots. The page gives no application opening date. Scholars cannot take other summer programs that overlap. Questions: cmu-sams@andrew.cmu.edu.",
+  "notes": "The apply portal could not be read, it needs JavaScript. Competitive and limited spots. Scholars cannot take other summer programs that overlap. Questions: cmu-sams@andrew.cmu.edu.",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on": "2026-11-04",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "apply_url": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "min_age": null,
   "max_age": null,
@@ -82270,14 +82273,14 @@
    "https://www.duq.edu/academics/colleges-and-schools/pharmacy/special-events-and-programs/pharmacy-exploration-day.php",
    "https://www.duq.edu/news-and-stories/the-times/2026/summercamps.php"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "9 to 12",
   "apply_url": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "min_age": null,
   "max_age": null,
@@ -82309,14 +82312,14 @@
   "sources_fetched": [
    "https://www.pittsburghglasscenter.org/youth-programs/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "opens_iso": null,
   "apply_url": "https://www.partner4work.org/learn-earn",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": true,
   "deadline_iso": null,
   "id": "pittsburgh-grow-pittsburgh-urban-farmers-in-training",
@@ -82351,7 +82354,7 @@
   ],
   "priority": 1,
   "notes": "Work sites: Shiloh Farm (7209 Thomas Blvd., 15206) and the Grow Pittsburgh office (6587 Hamilton Ave. #2W). The year includes a Garden Youth Summit (2026: July 30). The Pennsylvania Department of Labor and Industry says minors under 18 need a work permit from their school district issuing officer.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "pittsburgh-job-corps-center",
@@ -82392,10 +82395,10 @@
    "https://www.jobcorps.gov/faqs"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "Mostly fits teens 16 and up who are out of school or want a different path. Housing: dorms are listed on the campus page. A center being listed on the Job Corps site does not prove it is enrolling right now, so confirm with an Admissions Representative. The training list above comes from the center's training page and may not be complete. Whether a state work permit applies was not checked.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "pittsburgh-kamin-science-center-teen-volunteers",
@@ -82418,7 +82421,7 @@
   "paid_type": "unpaid",
   "pay_detail": "Volunteer, unpaid",
   "season": "year-round",
-  "duration": "Summer Teen Program and School Year Teen Program (hours per week not stated)",
+  "duration": "Summer Teen Program: most roles one or two 4-hour shifts a week, up to 50 hours. School Year Teen Program: one 4-hour shift a week, up to 100 hours.",
   "status": "closed-expect-reopen",
   "deadline_text": "Summer Teen Program: applications open in January, deadline March 1. School Year Teen Program: applications June 1 to August 1 only. Both were closed on the day this page was read; the posted pattern is by month, with no year.",
   "deadline_iso": null,
@@ -82432,16 +82435,16 @@
   "priority": 2,
   "notes": "Teens accepted twice a year (summer and school year). The next summer window should open in January; confirm on the page.",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "apply_url": null,
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "apply_url": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "min_age": 11,
   "max_age": 17,
@@ -82475,14 +82478,14 @@
   "sources_fetched": [
    "https://kaminsciencecenter.org/build_a_visit/tour-your-future/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "apply_url": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "min_age": 13,
   "max_age": 19,
@@ -82515,7 +82518,7 @@
   "sources_fetched": [
    "https://www.kingsleyassociation.org/teen-lead"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "pittsburgh-learn-and-earn-summer",
@@ -82553,16 +82556,16 @@
   "priority": 1,
   "notes": "Questions: summer@partner4work.org or (412) 932-2950. A separate Year-Round Learn & Earn (fall, winter, spring work sessions) serves ages 16 to 23 in the City of Pittsburgh but only for people who already finished a summer. The page does not mention a work permit; the Pennsylvania Department of Labor and Industry says work permits are required for minors under 18, so ask your school or the program how to get one.",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "apply_url": null,
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "apply_url": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "min_age": null,
   "max_age": null,
@@ -82591,19 +82594,19 @@
   "status": "unconfirmed",
   "deadline_text": "No deadline posted. Meeting days are set by the group at its first meeting.",
   "deadline_confidence": "unknown",
-  "how_to_apply": "Fill out the in-person or the virtual application form on the page. Questions: Taylor Goodman, development coordinator, tgoodman@greaterpawv.wish.org.",
+  "how_to_apply": "Fill out the application form on the page. Questions: Taylor Goodman, development coordinator, tgoodman@greaterpawv.wish.org.",
   "url": "https://wish.org/greaterpawv/youth-leadership-council",
   "sources_fetched": [
    "https://wish.org/greaterpawv/youth-leadership-council"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "9 to 12",
   "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": null,
   "deadline_iso": null,
   "id": "pittsburgh-mattress-factory-teen-art-cooperative",
@@ -82636,7 +82639,7 @@
   ],
   "priority": 2,
   "notes": "This is a high-commitment program: you are expected to come most Thursdays. The 2026-27 call was not found on the pages.The museum is at 509 Jacksonia St, Pittsburgh, PA 15212.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "pittsburgh-national-aviary-teen-volunteers",
@@ -82674,16 +82677,16 @@
   "priority": 2,
   "notes": "Questions go to the volunteer contact on the National Aviary volunteer page.",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "apply_url": null,
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Finished 9th grade through graduating seniors",
   "apply_url": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "min_age": null,
   "max_age": null,
@@ -82716,7 +82719,7 @@
   "sources_fetched": [
    "https://pittsburghparks.org/education-programs/young-naturalists/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "pittsburgh-phipps-ecoleader-academy",
@@ -82753,10 +82756,10 @@
    "https://www.phipps.conservatory.org/classes-and-programs/for-educators/high-school-internships"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "The page lists two different dates for the final Youth Garden Summit, so confirm with Phipps. The stipend is not described as a job on the page. Paid work for people under 18 in Pennsylvania needs a work permit. See permit.html?state=pa for the exact permit and steps.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "pittsburgh-phipps-summer-camp-teen-volunteers",
@@ -82793,10 +82796,10 @@
    "https://phipps.conservatory.org/volunteer"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "Confirm first. The volunteer page gives no teen deadline or teen form. Ask Phipps for the current age rule and dates before you plan around this.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "pittsburgh-pitt-gene-team",
@@ -82833,10 +82836,10 @@
    "https://www.biology.pitt.edu/k-12-outreach/gene-team"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "notes": "No research experience is needed. Free PRT bus passes are available. The honorarium is not called a wage on the page. The page's dates (June 28 to July 16) are shorter than 'four weeks', so confirm the length. Paid work for people under 18 in Pennsylvania needs a work permit. See permit.html?state=pa for the exact permit and steps.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "pittsburgh-pitt-public-health-science-academy",
@@ -82874,17 +82877,17 @@
    "https://www.publichealth.pitt.edu/academics/public-health-science-academy/public-health-science-academy-how-apply"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "notes": "The main page says public high schools in one place and all high schools in another, so ask which applies to you. The award is not called a wage on the page. Paid work for people under 18 in Pennsylvania needs a work permit. See permit.html?state=pa for the exact permit and steps.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Sophomores, juniors and seniors",
   "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": null,
   "deadline_iso": null,
   "id": "pittsburgh-point-park-acap-accounting-careers",
@@ -82916,14 +82919,14 @@
   "sources_fetched": [
    "https://www.pointpark.edu/About/AboutPittsburgh/LivingandLearninginPittsburgh/Community-and-Summer-Programs/Youth-and-High-School-Students/Business-Camps/ACAP"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Entering grades 9 to 12 (or a high school graduate of that year)",
   "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": null,
   "deadline_iso": null,
   "id": "pittsburgh-point-park-csi-summer-camp",
@@ -82943,20 +82946,20 @@
   "max_age": null,
   "who_can_apply": "Students entering grades 9 to 12, or recent graduates. No experience needed. Residents must be at least 14 on the first day. Only the first 15 students who register and pay the deposit get in.",
   "paid_type": "fee-based",
-  "pay_detail": "Tuition $700 plus $100 non-refundable registration fee ($800 commuter). Room and board adds $750 ($1,550 resident). Payment plans are available.",
+  "pay_detail": "Tuition $750 plus $100 non-refundable registration fee ($850 commuter). Room and meals add $800 ($1,650 resident). Payment plans are available.",
   "season": "summer",
-  "duration": "1 week. 2026 sessions: July 20 to 24 and July 27 to 31 (day or residential)",
-  "status": "closed-expect-reopen",
-  "deadline_text": "2026 sessions ran July 20 to 24 and July 27 to 31. No registration deadline was listed. 2027 dates are not posted.",
-  "deadline_confidence": "last-year-pattern",
+  "duration": "1 week. 2027 sessions: July 19 to 23 and July 26 to 30 (day or residential)",
+  "status": "unconfirmed",
+  "deadline_text": "The 2027 sessions are July 19 to 23 and July 26 to 30, 2027. The page has a Register Here link but does not say if sign-ups have started. No deadline is listed.",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Register online through CampDoc using the Register Here link on the camp page. Contact summercamps@pointpark.edu or 412-392-3456.",
   "url": "https://www.pointpark.edu/About/AboutPittsburgh/LivingandLearninginPittsburgh/Community-and-Summer-Programs/Youth-and-High-School-Students/Arts-and-Sciences-Camps/CSISummerCamp",
   "priority": 3,
-  "notes": "Discounts: 30 percent off tuition for Point Park employees, alumni and immediate family, and $50 off for signing up more than one person or program. The schedule includes a firearm safety session. The schedule can change.",
+  "notes": "Discounts: 30 percent off tuition for Point Park employees, alumni and immediate family, and $50 off for signing up more than one person or program. The schedule includes a firearm safety session. The schedule can change. The page banner still says 2026, but the page says its 2027 facts come first. It does not repeat the age 14 rule, the limit of 15 students, the tours or the firearm session, so ask the camp.",
   "sources_fetched": [
    "https://www.pointpark.edu/About/AboutPittsburgh/LivingandLearninginPittsburgh/Community-and-Summer-Programs/Youth-and-High-School-Students/Arts-and-Sciences-Camps/CSISummerCamp"
   ],
-  "verified_on_label": "Oct 10, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -82964,7 +82967,7 @@
   "opens_iso": null,
   "apply_url": "https://app.campdoc.com/register/pointpark",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": null,
   "deadline_iso": null,
   "id": "pittsburgh-point-park-entrepreneurship-camp",
@@ -82996,14 +82999,14 @@
   "sources_fetched": [
    "https://www.pointpark.edu/About/AboutPittsburgh/LivingandLearninginPittsburgh/Community-and-Summer-Programs/Youth-and-High-School-Students/Business-Camps/Entrepreneurship-Camp"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Entering grades 9 to 12 (or a high school graduate of that year)",
   "opens_iso": null,
   "apply_url": "https://app.campdoc.com/register/pointpark",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": null,
   "deadline_iso": null,
   "id": "pittsburgh-point-park-sports-business-camp",
@@ -83036,14 +83039,14 @@
   "sources_fetched": [
    "https://www.pointpark.edu/About/AboutPittsburgh/LivingandLearninginPittsburgh/Community-and-Summer-Programs/Youth-and-High-School-Students/Business-Camps/Sports-Business-Camp"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": true,
   "deadline_iso": null,
   "id": "pittsburgh-sca-urban-green-high-school-crews",
@@ -83076,7 +83079,7 @@
   ],
   "priority": 1,
   "notes": "Crews have two adult leaders age 21 or older. The Pennsylvania Department of Labor and Industry says minors under 18 need a work permit from their school district issuing officer; ask SCA or your school how to get one. Check the SCA page often because it shows no openings right now.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "pittsburgh-upmc-childrens-teen-volunteer",
@@ -83114,9 +83117,9 @@
   "priority": 2,
   "notes": "Interviews are limited and selected by criteria. The volunteer office does not handle shadowing, internships or research requests; contact departments directly for those. Adult volunteer program is 18 and older.",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "apply_url": null,
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "pittsburgh-upmc-hillman-cancer-center-academy",
@@ -83167,7 +83170,7 @@
   "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": null,
   "deadline_iso": null,
   "id": "pittsburgh-warhol-tech25-teen-dj-academy",
@@ -83200,7 +83203,7 @@
   ],
   "priority": 2,
   "notes": "The Warhol teens page says applications are closed. The Tech25 page says 'apply now!' but gives no dates. Ask Warhol before you assume it is open. The Warhol teens page also lists paid Student Assistant jobs at the museum. No ages or dates are stated. Email teens@warhol.org or see Carnegie Museums careers.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "pittsburgh-warhol-youth-arts-council",
@@ -83238,8 +83241,8 @@
   "priority": 2,
   "notes": "The 2026-27 deadline was 2026-10-09, so email teens@warhol.org to ask whether late applications are accepted. The Warhol also hires paid Student Assistants and runs a free Teen DJ Academy (ages 14 to 18, stipend) and School of Drag (ages 14 to 18); see the Teens page. Paid work for people under 18 in Pennsylvania needs a work permit. See permit.html?state=pa for the exact permit and steps.",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on": "2026-11-04",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "pittsburgh-zoo-aquarium-summer-zoo-teens",
@@ -83287,7 +83290,7 @@
   "opens_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": null,
   "deadline_iso": null,
   "id": "pittsburgh-zoo-green-teens",
@@ -83320,7 +83323,7 @@
   "sources_fetched": [
    "https://www.pittsburghzoo.org/event/green-teens/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "pittsfield-roots-rising-youth-farm-crews",

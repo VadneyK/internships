@@ -19,11 +19,12 @@
   "pay_detail": "Fully funded: tuition, housing and meals are free; limited travel help for families with transportation barriers",
   "season": "summer",
   "duration": "4 weeks, June 26 to July 24, 2027, residential",
-  "status": "open-now",
-  "deadline_text": "Application deadline February 1, 2027 (decisions April 1, 2027). The page does not post the date applications open.",
+  "status": "opens-soon",
+  "opens_iso": "2026-12-01",
+  "deadline_text": "Application opens December 1, 2026. Deadline February 1, 2027 (decisions April 1, 2027).",
   "deadline_iso": "2027-02-01",
   "deadline_confidence": "confirmed-2026-27",
-  "how_to_apply": "Apply online through the CMU Pre-College application portal by February 1, 2027. Residential only; full participation required.",
+  "how_to_apply": "Apply online through the CMU Pre-College application portal from December 1, 2026 to February 1, 2027. Residential only; full participation required.",
   "needs_work_permit": false,
   "apply_url": "https://apply-precollege.studentaffairs.cmu.edu/apply/",
   "url": "https://www.cmu.edu/pre-college/academic-programs/computer-science-scholars.html",
@@ -32,7 +33,7 @@
     "https://www.cmu.edu/pre-college/admission/index.html"
   ],
   "priority": 2,
-  "notes": "Status is unconfirmed only because the application opening date is not posted; the 2027 deadlines are confirmed on the pages (the apply portal could not be read). Limited spots. The admission page lists two different dates for this application (February 1 and March 1, 2027); the page and the deadlines table both say February 1, 2027, so apply by then. Completers may be invited back to AI Scholars.",
+  "notes": "The apply portal could not be read. Limited spots. Completers may be invited back to AI Scholars.",
   "verified": "fetched",
-  "verified_on": "2026-10-10"
+  "verified_on": "2026-11-04"
 }
