@@ -6,10 +6,10 @@
   "deadline_iso": null,
   "apply_url": "https://allenneighborhoodcenter.dm.networkforgood.com/forms/youth-service-corps-registration",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": null,
   "priority": 3,
-  "notes": "The page does not say if teens are paid. Ask before you sign up. General phone: (517) 367-2468.",
+  "notes": "Limited to 20 youth. General phone: (517) 367-2468.",
   "fields": [
     "social-impact"
   ],
@@ -23,16 +23,17 @@
   "type": "leadership",
   "what_you_do": "Take part in a youth-led job and life skill program run by a neighborhood center in Lansing.",
   "who_can_apply": "Ages 11 to 17.",
-  "paid_type": "not-stated",
-  "pay_detail": "Not stated",
+  "paid_type": "unpaid",
+  "pay_detail": "Free. Teens may get gift cards for their service.",
   "season": "year-round",
-  "duration": "Not stated",
+  "duration": "Fall 2026: Mondays, 3:30 to 5 p.m.",
   "status": "unconfirmed",
-  "deadline_text": "Dates are not posted.",
+  "deadline_text": "Fall 2026 sessions meet Mondays, 3:30 to 5 p.m. Start and end dates are not posted.",
   "deadline_confidence": "unknown",
   "how_to_apply": "Fill out the YSC Registration Form. Send it to davidm@allenneighborhoodcenter.org. That is David McCarthy, who manages programs for all ages. You can also call (517) 999-3913.",
   "url": "https://www.allenneighborhoodcenter.org/youth-programs",
   "sources_fetched": [
-    "https://www.allenneighborhoodcenter.org/youth-programs"
+    "https://www.allenneighborhoodcenter.org/youth-programs",
+    "https://allenneighborhoodcenter.dm.networkforgood.com/forms/youth-service-corps-registration"
   ]
 }

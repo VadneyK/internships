@@ -20,7 +20,7 @@
   "pay_detail": "Paid. The parks page does not state the pay.",
   "season": "summer",
   "duration": "Part time and seasonal. Most hiring is for the summer months.",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "The page says most summer jobs post in February. 2027 summer jobs are not posted yet.",
   "deadline_iso": null,
@@ -34,8 +34,8 @@
     "https://www.lansingmi.gov/seasonal-jobs",
     "https://www.lansingmi.gov/employment-opportunities"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 1,
-  "notes": "The city's seasonal jobs page lists short term jobs. They include activity leaders, golf attendants, lifeguards and head lifeguards, sports officials and tennis teachers. In Michigan most workers under 18 need a work permit. You get it through your school."
+  "notes": "The city's seasonal jobs page lists short term jobs. They include activity leaders, golf attendants, lifeguards and head lifeguards, sports officials and tennis teachers. In Michigan most workers under 18 need a work permit. You get it through your school. The site blocked automated reading on Nov 4, 2026, so confirm details on the page."
 }
