@@ -43799,11 +43799,11 @@
   "pay_detail": "Unpaid.",
   "season": "school-year",
   "duration": "Spring 2027 session: Jan 4 to Jun 20, 2027; 1 shift per week, 3 to 4 hours",
-  "status": "opens-soon",
-  "opens_iso": "2026-11-05",
-  "deadline_text": "Spring 2027 registration opens Nov 5, 2026 at 4 p.m. and closes Nov 8, 2026 at 11:45 p.m. Inova also runs summer and fall sessions.",
-  "deadline_iso": "2026-11-08",
-  "deadline_confidence": "confirmed-2026-27",
+  "status": "closed-expect-reopen",
+  "opens_iso": null,
+  "deadline_text": "Spring 2027 registration ran Nov 5, 2026 at 4 p.m. to Nov 8, 2026 at 11:45 p.m. and is closed. Next dates not posted. Inova also runs summer and fall sessions.",
+  "deadline_iso": null,
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Register during the window through the 'High school students register here' link on Inova's student page. Spots are assigned by lottery, one entry per applicant, and the student handles all email.",
   "needs_work_permit": false,
   "url": "https://www.inova.org/our-services/inova-volunteer-services-system/students",
@@ -43815,8 +43815,8 @@
   "notes": "Mandatory student-and-parent info meetings are in mid-November 2026 and orientations in late December 2026 (dates differ by hospital; one of each is required). Unpaid volunteering, so no work permit.",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on": "2026-11-09",
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "intermountain-health-junior-volunteers",
@@ -65290,7 +65290,7 @@
   "grades": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "apply_url": null,
   "deadline_iso": null,
   "needs_work_permit": false,
@@ -65322,7 +65322,7 @@
    "https://nc4h.ces.ncsu.edu/get-involved/"
   ],
   "notes": "The teen page was updated April 30, 2026. Clover Crew is listed as new in 2026. Programs differ from county to county. The pages do not give a fee or the dates for the teen events.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "grades": "Middle and high school",
@@ -65369,7 +65369,7 @@
   "grades": "Middle and high school (the page says national FFA has members in grades 5 to 12)",
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "apply_url": null,
   "deadline_iso": null,
   "needs_work_permit": false,
@@ -65404,7 +65404,7 @@
    "https://www.ncffa.org/membership"
   ],
   "notes": "The state office is at 4111 Beryl Road, Raleigh, NC 27606, 919-515-4206. The site says North Carolina has over 47,000 FFA members. If your school has no ag program, the page explains how a school can start one.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "min_age": null,
@@ -65534,7 +65534,7 @@
   "grades": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "apply_url": null,
   "deadline_iso": null,
   "needs_work_permit": null,
@@ -65570,7 +65570,7 @@
    "https://oconaluftee.jobcorps.gov/"
   ],
   "notes": "Centers: Schenck, 98 Schenck Dr, Pisgah Forest, NC 28768. Kittrell, 1096 U.S. Highway 1 South, Kittrell, NC 27544. Oconaluftee, 502 Oconaluftee Job Corps Rd, Cherokee, NC 28719. No closure notice showed on the pages on 2026-10-09. The application asks for ID, Social Security number and proof of income. Only enter these on the official jobcorps.gov site, with a parent or guardian. A parent should ask an admissions representative about the rules for 16 and 17 year olds.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "id": "nc-lady-cardinal-mentorship",
@@ -65864,7 +65864,7 @@
   "grades": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "apply_url": null,
   "deadline_iso": null,
   "needs_work_permit": false,
@@ -65900,7 +65900,7 @@
    "https://www.skillsusanc.org/skillsusa-membership-deadline"
   ],
   "notes": "Contacts on the site: information line 919-675-1241, info@SkillsUSAnc.org, P.O. Box 88, Oxford, NC 27565. The March 1 date is described as an annual national deadline, not tied to a named year.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "min_age": null,
@@ -65908,7 +65908,7 @@
   "grades": "Second or third year of high school (rising juniors and seniors)",
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-16",
+  "verified_on": "2026-11-09",
   "apply_url": "https://www.cfnc.org/",
   "deadline_iso": "2027-01-05",
   "needs_work_permit": false,
@@ -65942,7 +65942,7 @@
    "https://www.ncssm.edu/admissions/apply"
   ],
   "notes": "2027 campuses: Appalachian State, East Carolina, UNC Charlotte and UNC Wilmington, with dates from June 20 to July 31. Contact: summerventures@ncssm.edu or 919-416-2747.",
-  "verified_on_label": "Oct 16, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "grades": null,
@@ -66033,7 +66033,7 @@
   "grades": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "apply_url": null,
   "deadline_iso": null,
   "needs_work_permit": false,
@@ -66068,7 +66068,7 @@
   "status": "rolling",
   "deadline_text": "No deadline. You can join any time through a local squadron.",
   "deadline_confidence": "rolling",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "min_age": 16,
@@ -66076,7 +66076,7 @@
   "grades": null,
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "apply_url": null,
   "deadline_iso": null,
   "needs_work_permit": true,
@@ -66112,7 +66112,7 @@
    "https://www.labor.nc.gov/workplace-rights/youth-employment-rules/apply-youth-employment-certificate"
   ],
   "notes": "The NC Department of Labor says youth under 18 who work in North Carolina must have a Youth Employment Certificate, started by the employer once you have a job offer. Some jobs are off limits to people under 18 unless a supervised practice agreement is approved. Specific openings and employers change, so use the Find Apprenticeship Opportunities tool.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "min_age": null,
@@ -66159,7 +66159,7 @@
   "grades": "Rising 6th graders through recent high school graduates (Junior Wildlife Assistant: grades 10 and 11 when you apply)",
   "opens_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "apply_url": null,
   "deadline_iso": null,
   "needs_work_permit": false,
@@ -66194,7 +66194,7 @@
    "https://www.nczoo.org/volunteer/teens/junior-wildlife-assistant"
   ],
   "notes": "Roles listed: Play Pals (middle school), Junior Wildlife Assistant (high school), Camp Crew (middle and high school), Zoo Futures (middle school). Zoo address: 4401 Zoo Parkway, Asheboro, NC 27205, 336-879-7001.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "grades": null,
@@ -66241,11 +66241,11 @@
   "apply_url": null,
   "opens_iso": "2027-01-06",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-09",
   "needs_work_permit": null,
   "max_age": null,
   "min_age": null,
-  "duration": "1 week residential (June 21-26 in 2026)",
+  "duration": "1 week residential (June 20 to 25 in 2027)",
   "pay_detail": "Free (room and meals included)",
   "id": "ncssm-inspire-stem-research",
   "name": "INSPIRE (STEM research for NC students)",
@@ -66264,17 +66264,17 @@
   "paid_type": "unpaid",
   "season": "summer",
   "status": "opens-soon",
-  "deadline_text": "2026 portal opened Jan 6 and closed March 5, 2026. Summer 2027 applications open January 6, 2027. No 2027 close date posted yet.",
+  "deadline_text": "2026 portal opened Jan 6 and closed March 5, 2026. Summer 2027 applications open January 6, 2027. The 2027 portal closes March 4, 2027.",
   "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Online application through the INSPIRE page. Contact inspire@ncssm.edu or 919-416-2784.",
   "url": "https://www.ncssm.edu/summer/inspire-program",
   "priority": 2,
-  "notes": "Held at NCSSM-Morganton in western NC, not in the Triangle. Dates are last year's.",
+  "notes": "Held at NCSSM-Morganton in western NC, not in the Triangle. The 2027 dates are posted.",
   "sources_fetched": [
    "https://www.ncssm.edu/summer/inspire-program"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "grades": "Current 8th graders apply; attend as rising 9th graders, then return as rising 10th graders",
@@ -86893,12 +86893,12 @@
    "education"
   ],
   "grades": null,
-  "opens_iso": "2026-11-08",
-  "deadline_iso": null,
+  "opens_iso": null,
+  "deadline_iso": "2026-11-29",
   "apply_url": null,
   "needs_work_permit": false,
   "verified": "fetched",
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-11-09",
   "priority": 2,
   "deadline_confidence": "confirmed-2026-27",
   "max_age": 18,
@@ -86916,15 +86916,15 @@
   "pay_detail": "Volunteer, unpaid",
   "season": "spring",
   "duration": "8 shifts over 16 weeks, every other weekend (Saturday or Sunday)",
-  "status": "opens-soon",
-  "deadline_text": "Spring semester applications open Sunday, November 8. Close date not posted. The Fall 2026 round is closed.",
+  "status": "open-now",
+  "deadline_text": "Spring semester applications opened Nov 8, 2026 and close Nov 29, 2026.",
   "how_to_apply": "Apply online on the museum's volunteer page. It is hard to get in. They look at writing, drive, growth and teamwork.",
   "url": "https://smv.org/get-involved/join-our-team/teen-volunteer",
   "notes": "The page labels these as 2027 spring applications, but its weekday and date pairs (Sunday, Nov 8 and Saturday, Jan 10) match 2026. Confirm the dates with the museum.",
   "sources_fetched": [
    "https://smv.org/get-involved/join-our-team/teen-volunteer"
   ],
-  "verified_on_label": "Oct 12, 2026"
+  "verified_on_label": "Nov 9, 2026"
  },
  {
   "grades": "11 to 12",
