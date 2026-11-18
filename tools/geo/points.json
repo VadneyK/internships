@@ -311,6 +311,16 @@
    ]
   },
   {
+   "key": "Chino Hills, CA",
+   "state": "CA",
+   "lat": 33.9451,
+   "lon": -117.7252,
+   "precision": "city",
+   "ids": [
+    "chino-hills-teen-advisory-board"
+   ]
+  },
+  {
    "key": "Chula Vista, CA",
    "state": "CA",
    "lat": 32.6277,
@@ -378,7 +388,8 @@
    "lon": -117.5655,
    "precision": "city",
    "ids": [
-    "corona-library-community-services-teen-volunteers"
+    "corona-library-community-services-teen-volunteers",
+    "corona-mayors-youth-council"
    ]
   },
   {
@@ -652,6 +663,16 @@
    ]
   },
   {
+   "key": "Hemet, CA",
+   "state": "CA",
+   "lat": 33.7341,
+   "lon": -116.9968,
+   "precision": "city",
+   "ids": [
+    "western-science-center-junior-volunteers"
+   ]
+  },
+  {
    "key": "Huntington Beach, CA",
    "state": "CA",
    "lat": 33.698,
@@ -798,6 +819,7 @@
    "precision": "city",
    "ids": [
     "loma-linda-university-discovery-program",
+    "loma-linda-university-health-volunteer-services",
     "va-loma-linda-summer-youth-volunteer-program"
    ]
   },
@@ -1051,6 +1073,7 @@
    "lon": -117.191,
    "precision": "city",
    "ids": [
+    "loma-linda-university-health-murrieta-volunteers",
     "murrieta-public-library-teen-volunteers",
     "murrieta-youth-advisory-committee"
    ]
@@ -1185,7 +1208,18 @@
    "lon": -116.3641,
    "precision": "city",
    "ids": [
+    "college-of-the-desert-free-early-college",
     "living-desert-zooteens-volunteer"
+   ]
+  },
+  {
+   "key": "Palm Springs, CA",
+   "state": "CA",
+   "lat": 33.8037,
+   "lon": -116.5383,
+   "precision": "city",
+   "ids": [
+    "palm-springs-library-teen-volunteers"
    ]
   },
   {
@@ -1365,6 +1399,7 @@
     "riverside-grow-youth-workforce-program",
     "riverside-johnny-martin-sotelo-youth-opportunity-center",
     "riverside-parks-rec-volunteen-internship-vip",
+    "riverside-police-youth-court-volunteers",
     "riverside-public-library-volunteer-14-plus",
     "ucr-bourns-ai-robotics-summer-camp",
     "ucr-stem-summer-camp-wildfire-science",
@@ -7345,6 +7380,7 @@
    "mission-hospital-high-school-auxiliary",
    "montana-conservation-corps-nps-expeditions-teens",
    "montana-conservation-corps-youth-corps-teens",
+   "mt-san-jacinto-college-dual-concurrent-enrollment",
    "mtc-high-school-internship-program",
    "nc-governors-school",
    "nc-job-corps-schenck-kittrell-oconaluftee",
@@ -7382,6 +7418,7 @@
    "stanford-health-care-teen-volunteer",
    "sutter-mills-peninsula-youth-volunteer",
    "sutter-pamf-mountain-view-sunnyvale-student-volunteer",
+   "torres-congressional-youth-advisory-committee",
    "twin-cities-childrens-minnesota-teen-summer-volunteers",
    "twin-cities-conservation-corps-youth-interns",
    "twin-cities-genesys-works-internship",

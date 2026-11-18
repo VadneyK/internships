@@ -501,6 +501,7 @@ chicago-windy-city-harvest-youth-farm	Chicago, IL	point	Chicago, IL	city	place:c
 chicago-youth-works-summer-jobs	Chicago, IL	point	Chicago, IL	city	place:city	
 chicagobility-ages-14-15	Chicago, IL	point	Chicago, IL	city	place:city	
 childrens-healthcare-of-atlanta-volunteen	Atlanta, GA	point	Atlanta, GA	city	place:city	
+chino-hills-teen-advisory-board	Chino Hills, CA	point	Chino Hills, CA	city	place:city	
 chla-high-school-summer-volunteer	Los Angeles, CA	point	Los Angeles, CA	city	place:city	
 chla-la-hip-high-school-internship	Los Angeles, CA	point	Los Angeles, CA	city	place:city	
 chp-explorer-post-east-sacramento	Sacramento, CA	point	Sacramento, CA	city	place:city	
@@ -547,6 +548,7 @@ cobb-schools-work-based-learning	Cobb County, GA	point	Cobb County, GA	county	co
 cobbworks-boss-young-professionals	Cobb County, GA	point	Cobb County, GA	county	county	
 college-of-alameda-concurrent-enrollment	Alameda, CA	point	Alameda, CA	manual	Census Gazetteer ZCTA 94501 (Alameda, CA) internal point	override: Alameda is an island city and the Gazetteer place point (37.7423, -122.2605) falls in San Francisco Bay water, outside the state outline; ZIP code area 94501 centroid from the Census Gazetteer ZCTA file lies on the island
 college-of-san-mateo-dual-enrollment	San Mateo, CA	point	San Mateo, CA	city	place:city	
+college-of-the-desert-free-early-college	Palm Desert, CA	point	Palm Desert, CA	city	place:city	
 college-park-composite-squadron-cap-cadets	College Park, MD (College Park Airport)	point	College Park, MD	city	place:city	
 college-park-greenbelt-youth-advisory-committee	Greenbelt, MD	point	Greenbelt, MD	city	place:city	
 college-park-luminis-doctors-community-student-volunteers	Lanham, MD	point	Lanham, MD	city	place:CDP	
@@ -629,6 +631,7 @@ cook-county-forest-preserves-youth-outdoor-ambassadors	Cook County, IL	point	Coo
 cook-county-opportunity-works-subsidized-internships	Suburban Cook County, IL	point	Cook County, IL	county	county	override: Suburban Cook County is Cook County outside Chicago; county point
 cook-memorial-library-teen-volunteers	Libertyville and Vernon Hills, IL (Lake County)	multi				several places before the state
 corona-library-community-services-teen-volunteers	Corona, CA	point	Corona, CA	city	place:city	
+corona-mayors-youth-council	Corona, CA	point	Corona, CA	city	place:city	
 cosi-youth-volunteer-program	Columbus, OH	point	Columbus, OH	city	place:city	
 cosmos-uc-davis	Davis, CA	point	Davis, CA	city	place:city	
 cosmos-uc-merced	Merced, CA	point	Merced, CA	city	place:city	
@@ -1295,6 +1298,8 @@ llnl-manufacturing-workshop	Livermore, CA	point	Livermore, CA	city	place:city
 llnl-sage-summer-camp	Livermore, CA	point	Livermore, CA	city	place:city	
 llnl-stem-with-phones-workshop	Livermore, CA	point	Livermore, CA	city	place:city	
 loma-linda-university-discovery-program	Loma Linda, CA	point	Loma Linda, CA	city	place:city	
+loma-linda-university-health-murrieta-volunteers	Murrieta, CA	point	Murrieta, CA	city	place:city	
+loma-linda-university-health-volunteer-services	Loma Linda, CA	point	Loma Linda, CA	city	place:city	
 long-beach-city-college-individual-dual-enrollment	Long Beach, CA	point	Long Beach, CA	city	place:city	
 long-beach-commission-on-youth-and-children	Long Beach, CA	point	Long Beach, CA	city	place:city	
 long-beach-junior-lifeguards-cadet-program	Long Beach, CA	point	Long Beach, CA	city	place:city	
@@ -1562,6 +1567,7 @@ mountain-view-teen-volunteer-summer-program	Mountain View, CA	point	Mountain Vie
 mountain-view-youth-advisory-committee	Mountain View, CA	point	Mountain View, CA	city	place:city	
 msm-grow-cells-cancer-research-summer	Atlanta, GA	point	Atlanta, GA	city	place:city	
 msm-health-careers-high-school-ambassadors	Atlanta, GA	point	Atlanta, GA	city	place:city	
+mt-san-jacinto-college-dual-concurrent-enrollment	San Jacinto, Menifee Valley, San Gorgonio Pass and Temecula Valley campuses, CA	multi				several places before the state
 mtc-high-school-internship-program	Bay Area (virtual sessions, final session in San Francisco)	multi				override: The Bay Area is a nine county region, not one place
 murfreesboro-ascension-saint-thomas-rutherford-junior-volunteer	Murfreesboro, TN	point	Murfreesboro, TN	city	place:city	
 murfreesboro-mtsu-csi-forensic-science-camp	Murfreesboro, TN	point	Murfreesboro, TN	city	place:city	
@@ -1932,6 +1938,7 @@ pacific-marine-mammal-center-junior-volunteers	Laguna Beach, CA	point	Laguna Bea
 pacoima-beautiful-agua-university	Pacoima, Los Angeles, CA	point	Los Angeles, CA	city	place:city	used the second name (Los Angeles) over the first (Pacoima)
 pacoima-beautiful-junior-field-rangers	Pacoima, Los Angeles, CA	point	Los Angeles, CA	city	place:city	used the second name (Los Angeles) over the first (Pacoima)
 palatine-library-teen-volunteers-and-tab	Palatine, IL	point	Palatine, IL	city	place:village	
+palm-springs-library-teen-volunteers	Palm Springs, CA	point	Palm Springs, CA	city	place:city	
 palo-alto-art-center-counselor-in-training	Palo Alto, CA	point	Palo Alto, CA	city	place:city	
 palo-alto-library-tlab	Palo Alto, CA	point	Palo Alto, CA	city	place:city	
 palo-alto-teen-advisory-board	Palo Alto, CA	point	Palo Alto, CA	city	place:city	
@@ -2158,6 +2165,7 @@ riverside-county-youth-advisory-councils	Riverside County, CA	point	Riverside Co
 riverside-grow-youth-workforce-program	Riverside, CA	point	Riverside, CA	city	place:city	
 riverside-johnny-martin-sotelo-youth-opportunity-center	Riverside, CA	point	Riverside, CA	city	place:city	
 riverside-parks-rec-volunteen-internship-vip	Riverside, CA	point	Riverside, CA	city	place:city	
+riverside-police-youth-court-volunteers	Riverside, CA	point	Riverside, CA	city	place:city	
 riverside-public-library-volunteer-14-plus	Riverside, CA	point	Riverside, CA	city	place:city	
 roanoke-science-museum-of-western-virginia-volunteer	Roanoke, VA	point	Roanoke, VA	city	place:city	
 rochester-general-hospital-student-volunteer-program	Rochester, NY	point	Rochester, NY	city	place:city	
@@ -2533,6 +2541,7 @@ thanksgiving-point-shetech-internship	Lehi, UT	point	Lehi, UT	city	place:city
 the-trade-collective-evanston	Evanston, IL	point	Evanston, IL	city	place:city	
 topeka-shawnee-county-public-library-teen-volunteer	Topeka, KS	point	Topeka, KS	city	place:city	
 topeka-zoo-ecoclub	Topeka, KS	point	Topeka, KS	city	place:city	
+torres-congressional-youth-advisory-committee	Chino, Chino Hills, Eastvale, Ontario, Montclair, Pomona, Fontana, Rancho Cucamonga and Upland, CA	multi				several places before the state
 tracy-aviary-individual-volunteer	Salt Lake City, UT	point	Salt Lake City, UT	city	place:city	
 travis-county-syep	Austin, TX	point	Austin, TX	city	place:city	
 treepeople-volunteer-events	Los Angeles, CA	point	Los Angeles, CA	city	place:city	
@@ -2763,6 +2772,7 @@ west-sac-lifeguard-swim-instructor	West Sacramento, CA	point	West Sacramento, CA
 west-sac-recreation-leader	West Sacramento, CA	point	West Sacramento, CA	city	place:city	
 west-sac-teen-heroes	West Sacramento, CA	point	West Sacramento, CA	city	place:city	
 west-valley-college-concurrent-enrollment	Saratoga, CA	point	Saratoga, CA	city	place:city	
+western-science-center-junior-volunteers	Hemet, CA	point	Hemet, CA	city	place:city	
 wharton-global-high-school-investment-competition	Online	online				
 wheaton-public-library-teen-volunteers-and-council	Wheaton, IL (DuPage County)	point	Wheaton, IL	city	place:city	
 wichita-art-museum-teen-studio-workshop	Wichita, KS	point	Wichita, KS	city	place:city	
