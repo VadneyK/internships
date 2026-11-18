@@ -20,10 +20,11 @@
   "pay_detail": "$25 application fee and, if offered an internship, $1,299 tuition for 3 undergraduate credits. Both can be waived with demonstrated financial need.",
   "season": "summer",
   "duration": "8 weeks, full time (Jun 18 to Aug 12 in 2026)",
-  "status": "closed-expect-reopen",
-  "deadline_text": "The 2026 ASSIP Application is now closed. The page posts no date for the 2027 cycle.",
-  "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
+  "status": "opens-soon",
+  "opens_iso": "2026-12-07",
+  "deadline_text": "The 2027 application opens Dec 7, 2026 and closes Feb 12, 2027. The page says 2027 program dates, tuition and mentors will be posted in November 2026.",
+  "deadline_iso": "2027-02-12",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Online application with a personal statement; interested mentors interview strong candidates and offers go out in early April. Request a fee waiver code from cosassip@gmu.edu if needed.",
   "needs_work_permit": false,
   "url": "https://science.gmu.edu/assip",
@@ -36,5 +37,5 @@
   "notes": "Labs are at the Fairfax campus, the Science and Technology Campus in Manassas, or Woodbridge; students arrange their own transportation and campus housing cannot be arranged for minors. This is a paid-by-the-student internship, not a job, so no work permit.",
   "grades": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09"
+  "verified_on": "2026-11-04"
 }
