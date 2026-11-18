@@ -22,7 +22,7 @@
   "duration": "1 week, residential",
   "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "The 2026 camp ran July 12 to 17, 2026. 2027 dates are not posted on the camp page.",
+  "deadline_text": "The 2026 camp ran July 12 to 17, 2026. The camp page posts no 2027 dates. The Summer College site lists PASA for June 20 to 25, 2027, and its application opens Dec 1, 2026.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Apply through Purdue's Summer College for High School Students (the camp page says the 2026 application was there). Questions: purdueag@purdue.edu.",
@@ -31,10 +31,11 @@
   "apply_url": null,
   "sources_fetched": [
     "https://ag.purdue.edu/department/oap/summer-programs/pasa-high-school.html",
-    "https://ag.purdue.edu/department/oap/summer-programs/index.html"
+    "https://ag.purdue.edu/department/oap/summer-programs/index.html",
+    "https://www.purdue.edu/summer-high-school/enrollment-options/Short-Term%20Courses.php"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "This is a camp, not a job, and it costs money. The Purdue ag summer programs index page describes the high school camp as a two-week experience. The camp page itself says one week. Confirm the length with purdueag@purdue.edu."
 }
