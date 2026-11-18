@@ -203,6 +203,30 @@ def fill_csp_hashes(page):
     return page.replace("{{script_hashes}}", "".join(hashes))
 
 
+AUTHOR_URL = "https://vadneyk.github.io/portfolio/"
+DATA_DESC = ("Internships, paid youth programs, research, volunteering and job shadowing for teens ages 12 to 18 in the US "
+             "and Vancouver, BC. Each row has the age rule, pay, season, deadline, how to apply and the program's official "
+             "link, written in our own words from the program's own page, with the date it was last read.")
+
+
+def home_jsonld(desc):
+    """Structured data for the English home page: the site, and the program data as a Dataset (CC BY 4.0).
+    A JSON-LD block is data, not a script the browser runs, so the Content-Security-Policy script-src does not apply to it."""
+    person = {"@type": "Person", "@id": AUTHOR_URL + "#kentaro", "name": "Kentaro Vadney", "url": AUTHOR_URL}
+    cc = "https://creativecommons.org/licenses/by/4.0/"
+    graph = [
+        {"@type": "WebSite", "@id": BASE + "#site", "url": BASE, "name": "How to Find Internships",
+         "alternateName": "Teen Internship Guide", "description": desc, "inLanguage": "en", "isAccessibleForFree": True,
+         "license": cc, "audience": {"@type": "Audience", "audienceType": "Teens ages 12 to 18"}, "author": person},
+        {"@type": "Dataset", "@id": BASE + "#data", "name": "Teen Internship Guide program data", "description": DATA_DESC,
+         "url": BASE + "find.html", "license": cc, "isAccessibleForFree": True, "creator": person,
+         "isPartOf": {"@id": BASE + "#site"},
+         "distribution": [{"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": BASE + "data/entries.csv"}]},
+    ]
+    data = json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False).replace("<", "\\u003c")
+    return '\n<script type="application/ld+json">' + data + "</script>"
+
+
 def build(name, lang="en"):
     raw = open(os.path.join(ES_DIR if lang == "es" else SRC, name + ".html"), encoding="utf-8").read()
     head, body = raw.split("\n---\n", 1)
@@ -235,6 +259,7 @@ def build(name, lang="en"):
         "issues": ISSUES,
         "robots": '\n<meta name="robots" content="noindex">' if fields.get("noindex") == "true" or (lang == "es" and es_draft(fields)) else "",
         "alternates": "",
+        "jsonld": home_jsonld(fields["desc"]) if name == "index" and lang == "en" else "",
         "lang_switch": "",
     }
     # A page with a Spanish twin: hreflang alternates both ways, and a language link at the end of the nav (inside Menu on a phone).
@@ -309,7 +334,7 @@ for _p in ES_PAGES:
 
 
 # robots.txt and sitemap.xml
-import datetime as _dt
+import datetime as _dt, html
 # leaders is unlisted until the owner approves it. ignition is listed since 2026-10-20: Kentaro shared it publicly (it stays out of the main nav).
 _pages = ["index"] + [p for p in PAGES if p != "leaders"]
 _today = meta.get("checked", _dt.date.today().isoformat())
@@ -318,4 +343,38 @@ _urls = "".join("  <url><loc>%s%s</loc><lastmod>%s</lastmod></url>\n" % (BASE, p
 _urls += "".join("  <url><loc>%s%s</loc><lastmod>%s</lastmod></url>\n" % (BASE, page_url(p, "es"), _today) for p in _es_live)
 open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + _urls + "</urlset>\n")
 open(os.path.join(ROOT, "robots.txt"), "w", encoding="utf-8").write("User-agent: *\nAllow: /\nSitemap: %ssitemap.xml\n" % BASE)
-print("wrote sitemap.xml and robots.txt")
+
+# llms.txt: a plain summary for AI answer engines, one line per listed page from that page's own title and description.
+# ignition and share are event pages, so they are in the sitemap but not in this summary.
+def _llms_line(p):
+    f = dict(re.findall(r"^(\w+):\s*(.*)$", open(os.path.join(SRC, p + ".html"), encoding="utf-8").read().split("\n---\n", 1)[0], flags=re.M))
+    first = re.split(r"(?<=[.!?])\s", html.unescape(f["desc"]))[0].rstrip(".")
+    return "- [%s](%s%s): %s" % (html.unescape(f["title"]), BASE, page_url(p, "en"), first)
+
+
+_llms = """# How to Find Internships: a Teen Guide for the US and Vancouver
+
+> A free, open-source guide for teens ages 12 to 18 in the US and Vancouver, BC. It lists real internships, paid youth programs, research, volunteering and job shadowing, with the deadlines that could be confirmed, the work-permit rules, and a message a teen can send to ask an adult for a chance.
+
+For each program the guide's writers opened the program's own website where it could be read, and wrote down the age rule, pay, dates and how to apply in their own words, with the date the page was last read. Programs that need the applicant to be 18 or a college student, that were discontinued, or that charge a lot to promise an "internship" are left out. The site has no sign-up, no ads and no tracking. The program data and written guides are under CC BY 4.0, and the code is under the MIT license. Credit line: "Teen Internship Guide by Kentaro Vadney and contributors, %(base)s". Deadlines and rules change, so check the program's official page before relying on a date.
+
+## Start here
+
+- [Home](%(base)s): what the guide is and where to begin
+- [Program data as CSV](%(base)sdata/entries.csv): every program, one row each, CC BY 4.0
+
+## Pages
+
+%(pages)s
+
+## Source
+
+- [Source code and data](https://github.com/VadneyK/internships): MIT code, CC BY 4.0 data and guides
+- [How to contribute](https://github.com/VadneyK/internships/blob/main/CONTRIBUTING.md)
+
+## Optional
+
+- [About the author](%(author)s): Kentaro Vadney's projects page
+""" % {"base": BASE, "author": AUTHOR_URL, "pages": "\n".join(_llms_line(p) for p in _pages if p not in ("index", "ignition", "share"))}
+open(os.path.join(ROOT, "llms.txt"), "w", encoding="utf-8").write(_llms)
+print("wrote sitemap.xml, robots.txt and llms.txt")
