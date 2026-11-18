@@ -19,20 +19,20 @@
   "paid_type": "stipend",
   "pay_detail": "A stipend after you finish. The amount is not stated on the program page.",
   "season": "summer",
-  "duration": "One week (June 15 to 24 in 2026)",
-  "status": "closed-expect-reopen",
-  "deadline_text": "The 2026 deadline was December 31, 2025 and the 2026 program ran June 15 to 24. The page lists no 2027 dates.",
-  "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
+  "duration": "One week, plus a one-day orientation. Summer 2027 dates are not listed.",
+  "status": "open-now",
+  "deadline_text": "Summer 2027 applications are due Feb 28, 2027.",
+  "deadline_iso": "2027-02-28",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Use the online form. You send a student application, a profile with short essays and one recommendation form.",
   "needs_work_permit": null,
   "url": "https://hsc.unm.edu/diversity/programs/community/path.html",
-  "apply_url": "https://app.smartsheet.com/b/publish?EQBCT=e5209316291f4ad784ad7ffe593a4be2",
+  "apply_url": "https://app.smartsheet.com/b/publish?EQBCT=2f781a433fcd4ea8adfe55d3fece2ba4",
   "sources_fetched": [
     "https://hsc.unm.edu/diversity/programs/community/path.html"
   ],
   "priority": 2,
-  "notes": "The page does not state an age. It says it focuses on health equity in African American communities and other communities of color. The page still showed the 2026 cycle when checked. Confirm the next dates.",
+  "notes": "The page does not state an age. Its focus is fair health care for African American communities and other communities of color.",
   "verified": "fetched",
-  "verified_on": "2026-10-13"
+  "verified_on": "2026-11-04"
 }
