@@ -46280,24 +46280,24 @@
   "paid_type": "fee-based",
   "pay_detail": "$300 per person (2026)",
   "season": "summer",
-  "duration": "4 days (June 2 to 5, 2026)",
+  "duration": "4 days (June 1 to 4, 2027)",
   "status": "closed-expect-reopen",
-  "deadline_text": "2026 conference was June 2 to 5. Registration closed April 15, 2026. The page does not give 2027 dates.",
+  "deadline_text": "The 2027 conference is June 1 to 4, 2027. No 2027 sign up date is posted. In 2026, registration closed April 15, 2026.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Fill out the Teen Conference Registration Form. Turn it in to your county Extension office by the deadline. You must be in Kentucky 4-H through 4-H Online.",
+  "how_to_apply": "Ask your county Extension office how to sign up for 2027. In 2026 you turned in a form to that office by the deadline. You must be in Kentucky 4-H through 4-H Online.",
   "needs_work_permit": null,
-  "url": "https://meade.mgcafe.uky.edu/events/state-teen-conference",
+  "url": "https://events.mgcafe.uky.edu/events/adair/2027/teen-conference",
   "apply_url": null,
   "sources_fetched": [
-   "https://meade.mgcafe.uky.edu/events/state-teen-conference",
+   "https://events.mgcafe.uky.edu/events/adair/2027/teen-conference",
    "https://4-h.mgcafe.uky.edu/leadership"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-11",
+  "verified_on": "2026-11-04",
   "priority": 2,
-  "notes": "Details come from the Meade County Extension listing for the state event. The Kentucky 4-H leadership page names the Teen Conference but gives no details. Scholarships are not mentioned there; ask your county office.",
-  "verified_on_label": "Oct 11, 2026"
+  "notes": "The 2027 page gives only the dates, place and a contact: patrick.allen@uky.edu. Grades, cost and the deadline come from a 2026 county page that is now gone, so confirm them with your county office. The state 4-H page names it but gives no details.",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "kentucky-4h-youth-development",
@@ -46333,10 +46333,10 @@
    "https://4-h.mgcafe.uky.edu/leadership"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-11",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Also open to younger kids; teen parts are the leader roles. Fees are not listed on the page. The four 4-H camps are Feltner, Lake Cumberland, West Kentucky and North Central.",
-  "verified_on_label": "Oct 11, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "kentucky-ffa-association",
@@ -46372,10 +46372,10 @@
    "https://kyffa.org/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-11",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "25,178 members in 186 chapters (per the page). Dues are not stated.",
-  "verified_on_label": "Oct 11, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "kentucky-governors-scholars-program",
@@ -46414,10 +46414,10 @@
    "https://gsp.ky.gov/applicants/Pages/Application-Selection-Process.aspx"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "notes": "The deadline_iso shown is the earlier of the two deadlines. Ask your school counselor which one applies to you. Scholars agree to stay all five weeks and may leave campus for one Family Day. Leaving early means no certificate.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "kentucky-governors-school-for-the-arts",
@@ -46455,10 +46455,10 @@
    "https://www.kentuckyperformingarts.org/education/governors-school-for-the-arts/gsa-2027-timeline"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 1,
-  "notes": "Dates may change, says the timeline page. Final auditions are held in person at Northern Kentucky University. Some are online. Email gsainfo@kentuckyperformingarts.org with questions. Or call 502-566-5192. The $35 or $50 application fee and the free or reduced lunch fee waiver are not on the GSA pages checked; confirm the fee with the GSA team before paying.",
-  "verified_on_label": "Oct 10, 2026",
+  "notes": "Dates may change, says the timeline page. Final auditions are in person at NKU. Some are online. Email gsainfo@kentuckyperformingarts.org with questions. Or call 502-566-5192.",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -46496,17 +46496,17 @@
    "https://www.kyscience.org/registration_abstracts.php"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "High school oral presenters may be picked to go to the American Junior Academy of Science (AJAS 2027, Feb 17 to 21 in Chicago). The page says the academy will pay for sign up, travel and rooms for at least 6 students in 2027. The sign up page does not print the year. Confirm the October dates with the Academy.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "opens_iso": null,
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "notes": "This is a state overview. Kentucky has 10 local workforce areas. In-school youth must be low-income and meet a listed barrier. Out-of-school youth must meet a listed barrier. Ask the youth career planner for your area about your case.",
   "needs_work_permit": null,
   "deadline_iso": null,
@@ -46538,7 +46538,7 @@
   "sources_fetched": [
    "https://kcc.ky.gov/Training/Pages/Youth.aspx"
   ],
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "key-club-high-school",
@@ -51625,10 +51625,10 @@
    "https://kyhorsepark.com/volunteer/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "The page says volunteers must be 18, or 16 for the Minor Program. Ask the coordinator which jobs minors can do and whether the barns are open to them.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "lexington-neighborhood-youth-council",
@@ -51665,10 +51665,10 @@
    "https://www.lexingtonky.gov/living/community-services/partners-youth/partners-youth-programs/neighborhood-youth-council"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "The page lists 2 phone numbers, 859-280-8004 and 859-280-8006. Confirm which one to call. There are 4 elected roles. They are Council Ambassador, Secretary, Treasurer and Parliamentarian.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "lexington-public-library-volunteer",
@@ -51704,10 +51704,10 @@
    "https://www.lexpublib.org/volunteer"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Background checks apply to volunteers 18 and older. The page has no separate teen program.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "lexington-summer-youth-job-training-program",
@@ -51743,10 +51743,10 @@
    "https://www.lexingtonky.gov/living/community-services/partners-youth/partners-youth-programs/summer-youth-job-training-program"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 1,
   "notes": "Partners for Youth is at 162 E. Main St., Suite 210, Lexington, KY 40507. Phone 859-280-8006. The page does not say whether a work permit is needed. Ask the office.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "lexington-uk-healthcare-jumpstart-program",
@@ -51782,10 +51782,10 @@
    "https://ukhealthcare.uky.edu/about/healthcare-jumpstart-program"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "The page does not list which districts take part. The program page says students who continue at BCTC can finish a healthcare associate degree in two years or less. A UK HealthCare scholarship has a work-back agreement, but students can choose another path with no commitment.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "lexington-uk-healthcare-summer-teen-volunteer",
@@ -51821,10 +51821,10 @@
    "https://ukhealthcare.uky.edu/wellness-community/volunteer-observe/volunteer"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
-  "notes": "The page says adults over 18 need a background check and drug screen. Teens do not. It also says volunteering here does not lead to a job in the University of Kentucky system. The office cannot offer internships or job shadowing. The page was updated Aug 3, 2026.",
-  "verified_on_label": "Oct 10, 2026"
+  "notes": "The page says adults over 18 need a background check and drug screen. Teens do not. It also says volunteering here does not lead to a job in the University of Kentucky system. The office cannot offer internships or job shadowing. The page was updated Oct 20, 2026.",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "lhs-teen-internship",
@@ -53597,7 +53597,7 @@
   "apply_url": "https://www.volgistics.com/appform/1024960769",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "max_age": null,
   "id": "louisville-baptist-health-junior-volunteer",
   "name": "Student Volunteer Program (Junior Volunteers)",
@@ -53628,13 +53628,13 @@
   "sources_fetched": [
    "https://www.baptisthealth.com/locations/baptist-health-louisville/volunteer-opportunities"
   ],
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "apply_url": null,
   "deadline_iso": null,
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-13",
   "max_age": null,
   "id": "louisville-dare-to-care-youth-volunteer",
@@ -53656,9 +53656,9 @@
   "pay_detail": "Unpaid volunteer role.",
   "season": "year-round",
   "duration": "Shift by shift. Shift lengths are not stated on the program page.",
-  "status": "year-round",
+  "status": "unconfirmed",
   "deadline_text": "Sign up any time. Shifts are posted on the volunteer calendar.",
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Make an account on the Dare to Care volunteer site. Pick a shift from the calendar. Groups send a group volunteer form instead.",
   "needs_work_permit": false,
   "url": "https://volunteer.daretocare.org/privacy/faqs/",
@@ -53667,7 +53667,7 @@
    "https://volunteer.daretocare.org/privacy/faqs/"
   ],
   "priority": 1,
-  "notes": "Wear closed-toe shoes and a shirt that covers your shoulders. You need an account on the volunteer site if you want school service hours verified. Ask for at least 3 business days. Some shifts have a ratio of 5 volunteers under 16 to 1 adult.",
+  "notes": "The FAQ page could not be read on Nov 4, 2026: the site blocked automated reading. Age rules are from Oct 13, 2026, so confirm them before you go. Wear closed-toe shoes and a shirt that covers your shoulders. You need an account on the volunteer site if you want school service hours verified. Ask for at least 3 business days. Some shifts have a ratio of 5 volunteers under 16 to 1 adult.",
   "verified_on_label": "Oct 13, 2026"
  },
  {
@@ -53675,7 +53675,7 @@
   "apply_url": "https://www.fraziermuseum.org/teen-volunteer-form",
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "max_age": 17,
   "id": "louisville-frazier-museum-teen-camp-volunteer",
   "name": "Teen Camp Volunteer",
@@ -53708,7 +53708,7 @@
   ],
   "priority": 2,
   "notes": "Camp dates, hours and the number of weeks are not on the program page. You only fill out the form once, even if you return in later years.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "louisville-free-public-library-teen-volunteer",
@@ -53745,17 +53745,17 @@
    "https://www.lfpl.org/form/youth-volunteer-application"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "The page says volunteer hours may be tracked and shared with the Library Foundation. The branch phone number is listed on the page as 574-1611.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "apply_url": null,
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "max_age": 23,
   "id": "louisville-kentucky-performing-arts-chorus-volunteer",
   "name": "Chorus Volunteer Program",
@@ -53786,7 +53786,7 @@
   "sources_fetched": [
    "https://www.kentuckyperformingarts.org/about-KPA/volunteers"
   ],
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "louisville-kentucky-science-center-youth-science-summit",
@@ -53816,7 +53816,7 @@
   "deadline_text": "The 2026 summit was Oct 20, 2026. The page says to check back for the 2027 date.",
   "deadline_iso": null,
   "deadline_confidence": "unknown",
-  "how_to_apply": "Fill out the registration form on the event page. A Zoom link is sent before the event.",
+  "how_to_apply": "Check the event page for the 2027 date and how to sign up. The 2026 event was free with sign up.",
   "needs_work_permit": false,
   "url": "https://kysciencecenter.org/programs/youth-science-summit/",
   "apply_url": null,
@@ -53824,17 +53824,17 @@
    "https://kysciencecenter.org/programs/youth-science-summit/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-21",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "One-time online event. The event page links to a recording of the October 21, 2025 summit.",
-  "verified_on_label": "Oct 21, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "apply_url": null,
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "max_age": 18,
   "id": "louisville-kentucky-shakespeare-globe-players",
   "name": "Globe Players",
@@ -53866,7 +53866,7 @@
   ],
   "priority": 2,
   "notes": "Rehearsals are at 616 Myrtle St. Ask about scholarships on the camp page. The company also offers a camp called The Mechanicals for ages 15 to 18, which costs $195 for 1 week or $295 for 2 weeks.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "louisville-muhammad-ali-center-council-of-students",
@@ -53903,10 +53903,10 @@
    "https://alicenter.org/our-work/chj/youth-leadership/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Past spring break trips listed on the page include Chicago, St. Louis and Washington, D.C. The fall retreat is at Camp Piomingo in Brandenburg, KY. The page says the program is free.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "louisville-nature-center-forest-restoration-volunteer",
@@ -53942,10 +53942,10 @@
    "https://www.louisvillenaturecenter.org/volunteer"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "The page gives no separate hours or rules for youth. The rule for ages 16 and up with adult help applies to Forest Restoration.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "louisville-norton-healthcare-summer-teen-volunteer",
@@ -53981,10 +53981,10 @@
    "https://nortonhealthcare.com/volunteer/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
-  "notes": "Norton Audubon, Brownsboro, Hospital, West Louisville, Women's and Children's, and Norton Children's Hospital each list a teen form for ages 14 to 17. Norton Women's and Children's also has a school year teen form. Norton Scott lists no teen program. The page says only some hospitals take teen volunteers all year. Openings are limited. The page says hospital volunteers must pass a background check and health screen. It does not say if that applies to teens.",
-  "verified_on_label": "Oct 10, 2026"
+  "notes": "Norton Audubon, Brownsboro, Hospital, West Louisville, Women's and Children's, and Norton Children's Hospital each list a teen form for ages 14 to 17. Norton Clark and King's Daughters' Health also list one. Norton Women's and Children's also has a school year teen form. Norton Scott lists no teen program. The page says only some hospitals take teen volunteers all year. Openings are limited. The page says hospital volunteers must pass a background check and health screen. It does not say if that applies to teens.",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "louisville-summerworks",
@@ -54004,9 +54004,9 @@
   "grades": null,
   "who_can_apply": "Young people who live in Jefferson County. The program page says ages 16 to 19. A 2025 news post from the same group said ages 16 to 21, counted on June 1.",
   "paid_type": "paid",
-  "pay_detail": "You earn a paycheck. No hourly rate is posted. Private employers pay the youth they hire directly.",
+  "pay_detail": "You earn a paycheck. For employers, the page recommends at least $15 an hour. Private employers pay the youth they hire directly.",
   "season": "summer",
-  "duration": "Summer. Length is not posted.",
+  "duration": "Summer. The employer section says 6 weeks, mid-June to late July.",
   "status": "closed-expect-reopen",
   "opens_iso": null,
   "deadline_text": "The page says to check back soon for summer 2027. In 2025 the group announced registration in March, and in 2026 in early February. No dates are posted yet.",
@@ -54021,10 +54021,10 @@
    "https://www.kentuckianaworks.org/news/2025/summerworks-kickoff"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 1,
-  "notes": "The two pages give different top ages (19 and 21), so check the age rule when registration opens. Pay rate, hours and work permit rules are not stated on either page. Ask the program.",
-  "verified_on_label": "Oct 10, 2026",
+  "notes": "The two pages give different top ages (19 and 21), so check the age rule when registration opens. Youth pay, hours and work permit rules are not stated on either page. Ask the program.",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -54032,7 +54032,7 @@
   "grades": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "notes": "A faculty committee picks who is interviewed. The program page does not say where you must live. Ask the coordinator at ashley.kareken@louisville.edu. The program page lists the 2026 pay and dates. They may change.",
   "needs_work_permit": null,
   "deadline_iso": null,
@@ -54065,7 +54065,7 @@
   "sources_fetched": [
    "https://centers.louisville.edu/brown-cancer-center/prospective-students/summer-research-program"
   ],
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "louisville-uofl-health-summer-teen-volunteer",
@@ -54093,7 +54093,7 @@
   "deadline_text": "The 2026 deadline was May 15, 2026. Selected applicants were emailed by the end of May. Dates for 2027 are not posted yet.",
   "deadline_iso": null,
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Fill out the online volunteer form. By the deadline, send an essay (at least 1 paragraph), a letter of recommendation, consent from a parent and shot and TB records.",
+  "how_to_apply": "Fill out the online volunteer form. By the deadline, send an essay (at least 1 paragraph), a letter of recommendation and shot records. If you are chosen, you get the parent consent form and TB test steps.",
   "needs_work_permit": false,
   "url": "https://uoflhealth.org/about/volunteer-information/summer-teen-volunteer-program/",
   "apply_url": "https://www.volgistics.com/appform/505788494",
@@ -54102,17 +54102,17 @@
    "https://uoflhealth.org/about/volunteer-information/summer-teen-volunteer-program/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "The main volunteer page says volunteers must be 16 or older. They need a flu shot from October to April. Questions: VolunteerServices@UofLHealth.org (the program page lists no phone number).",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "apply_url": null,
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "max_age": 17,
   "id": "louisville-ymca-camp-piomingo-leadership-development",
   "name": "Leadership Development (Leaders-In-Training and Counselors-In-Training)",
@@ -54120,7 +54120,7 @@
   "regions": [
    "kentucky"
   ],
-  "city": "Louisville, KY",
+  "city": "Brandenburg, KY",
   "type": "leadership",
   "fields": [
    "education",
@@ -54136,23 +54136,24 @@
   "status": "unconfirmed",
   "deadline_text": "The program page lists session dates with no year. Leaders-In-Training: June 13 to 25 and July 4 to 16. Counselors-In-Training: June 6 to 25 and July 4 to 23. No deadline is posted.",
   "deadline_confidence": "unknown",
-  "how_to_apply": "Leaders-In-Training: the program page lists the sessions and price tiers. Counselors-In-Training: enrollment is by application and then an interview. A monthly payment plan and financial help are offered.",
+  "how_to_apply": "Both programs sign up with the online form on the program page. Counselors-In-Training also has an application and an interview. A monthly payment plan and financial help are offered.",
   "needs_work_permit": false,
   "url": "https://www.ymcalouisville.org/programs/camps/camp-piomingo/teen-programs",
   "sources_fetched": [
    "https://www.ymcalouisville.org/programs/camps/camp-piomingo/teen-programs",
-   "https://www.ymcalouisville.org/locations/camp-piomingo/jobs"
+   "https://www.ymcalouisville.org/locations/camp-piomingo/jobs",
+   "https://www.ymcalouisville.org/locations/camp-piomingo"
   ],
   "priority": 3,
-  "notes": "This is a paid program for the teen, not a job. The program page does not name the camp town. Check the session dates before you plan, because the year is not shown.",
-  "verified_on_label": "Oct 13, 2026"
+  "notes": "This is a paid program for the teen, not a job. The camp is at 1950 Otter Creek Park Rd in Brandenburg, KY. Check the session dates before you plan, because the year is not shown.",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "apply_url": null,
   "deadline_iso": null,
   "verified": "fetched",
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-11-04",
   "max_age": null,
   "id": "louisville-ymca-lifeguard-training",
   "name": "YMCA Lifeguard Training",
@@ -54184,7 +54185,7 @@
   ],
   "priority": 1,
   "notes": "Course sites include Norton Commons and Oldham County, plus Clark County, Floyd County and Southeast branches. The program page does not say if work papers are needed for the job. Prices can differ by location.",
-  "verified_on_label": "Oct 13, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "louisville-zoo-volunteen",
@@ -54221,10 +54222,10 @@
    "https://louisvillezoo.org/about-the-zoo/volunteer-opportunities/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "The zoo page lists no season or hours for the youth program, so the season shown is a placeholder. It also describes a separate 50-member Zoo Youth Board for students ages 13 to 18. It does not say how to join, so ask the volunteer coordinator.",
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,

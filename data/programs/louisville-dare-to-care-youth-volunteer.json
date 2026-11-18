@@ -2,7 +2,7 @@
   "grades": null,
   "apply_url": null,
   "deadline_iso": null,
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-13",
   "max_age": null,
   "id": "louisville-dare-to-care-youth-volunteer",
@@ -24,9 +24,9 @@
   "pay_detail": "Unpaid volunteer role.",
   "season": "year-round",
   "duration": "Shift by shift. Shift lengths are not stated on the program page.",
-  "status": "year-round",
+  "status": "unconfirmed",
   "deadline_text": "Sign up any time. Shifts are posted on the volunteer calendar.",
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Make an account on the Dare to Care volunteer site. Pick a shift from the calendar. Groups send a group volunteer form instead.",
   "needs_work_permit": false,
   "url": "https://volunteer.daretocare.org/privacy/faqs/",
@@ -35,5 +35,5 @@
     "https://volunteer.daretocare.org/privacy/faqs/"
   ],
   "priority": 1,
-  "notes": "Wear closed-toe shoes and a shirt that covers your shoulders. You need an account on the volunteer site if you want school service hours verified. Ask for at least 3 business days. Some shifts have a ratio of 5 volunteers under 16 to 1 adult."
+  "notes": "The FAQ page could not be read on Nov 4, 2026: the site blocked automated reading. Age rules are from Oct 13, 2026, so confirm them before you go. Wear closed-toe shoes and a shirt that covers your shoulders. You need an account on the volunteer site if you want school service hours verified. Ask for at least 3 business days. Some shifts have a ratio of 5 volunteers under 16 to 1 adult."
 }
