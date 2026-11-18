@@ -5,11 +5,11 @@
   "opens_iso": null,
   "deadline_iso": null,
   "apply_url": null,
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "needs_work_permit": null,
   "priority": 2,
-  "notes": "Work-based learning is one of five services. Ask your school transition coordinator or counselor too.",
+  "notes": "Work-based learning is one of five services. Ask your school transition coordinator or counselor too. As of Nov 4, 2026, the state site blocked automated reading, so confirm these details first.",
   "fields": [
     "any"
   ],
@@ -27,9 +27,9 @@
   "pay_detail": "MRS pays for services in your employment plan. Not a wage.",
   "season": "year-round",
   "duration": "Ongoing",
-  "status": "rolling",
+  "status": "unconfirmed",
   "deadline_text": "No deadline. Apply any time.",
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Use the MRS Online Application. Forms MRS-4.0a (parent consent) and MRS-4.0b (school verification) are on the page. Phone 517-241-5324 or toll-free 800-605-6722.",
   "url": "https://www.michigan.gov/leo/bureaus-agencies/mrs/mrs-for-students",
   "sources_fetched": [

@@ -5,7 +5,7 @@
   "opens_iso": null,
   "deadline_iso": null,
   "apply_url": "https://www.michiganworks.org/",
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "needs_work_permit": null,
   "id": "michigan-wioa-youth-michigan-works",
@@ -27,9 +27,9 @@
   "pay_detail": "Not stated. The state page lists both paid and unpaid work experiences, including summer employment, as possible services.",
   "season": "year-round",
   "duration": "Varies by local agency",
-  "status": "year-round",
+  "status": "unconfirmed",
   "deadline_text": "Operated year round by local Michigan Works! agencies. No state deadline is posted.",
-  "deadline_confidence": "rolling",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Call Michigan Works! at 1-800-285-WORKS (9675). Or find your local agency by ZIP code at michiganworks.org. Then ask about WIOA Youth eligibility.",
   "url": "https://www.michigan.gov/leo/bureaus-agencies/wd/programs-services/workforce-innovation-and-opportunity-act-wioa-youth-program",
   "sources_fetched": [
@@ -40,5 +40,5 @@
     "https://www.michigan.gov/leo/bureaus-agencies/ber/wage-and-hour/youth-employment-standards-act-yesa"
   ],
   "priority": 2,
-  "notes": "Not open to every teen: eligibility depends on income and barriers, so a short call to the local agency is the real first step. The state page does not list a local application form or local youth contacts. Capital Area Michigan Works!' own site (camw.org) mentions WIOA and says 259 youth were served but does not describe its youth program in detail. Work experience for anyone under 18 in Michigan needs a work permit under the state's youth employment law."
+  "notes": "Not open to every teen: eligibility depends on income and barriers, so a short call to the local agency is the real first step. The state page does not list a local application form or local youth contacts. Capital Area Michigan Works!' own site (camw.org) mentions WIOA and says 259 youth were served but does not describe its youth program in detail. Work experience for anyone under 18 in Michigan needs a work permit under the state's youth employment law. As of Nov 4, 2026, the state site blocked automated reading, so confirm these details first."
 }
