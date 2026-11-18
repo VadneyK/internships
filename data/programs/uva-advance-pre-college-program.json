@@ -1,8 +1,8 @@
 {
-  "opens_iso": null,
+  "opens_iso": "2026-12-01",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "id": "uva-advance-pre-college-program",
   "name": "UVA Advance Pre-College Program",
   "org": "University of Virginia Summer and Special Academic Programs",
@@ -20,13 +20,13 @@
   "grades": "Rising 11th and 12th grade",
   "who_can_apply": "Rising high school juniors and seniors in good standing with a minimum 3.5 GPA in a college prep curriculum, age 15 or older on the first day and 18 or younger on the last day.",
   "paid_type": "fee-based",
-  "pay_detail": "The FAQ says the maximum aid package covers full tuition and fees for Virginia residents, which is $7,097 for 2026. The cost for other students and the full breakdown were not read. Small number of need-based aid packages.",
+  "pay_detail": "2027 total: $7,410 for Virginia residents, $15,522 for others. It covers tuition, fees, housing and meals. Small number of need-based aid packages. No aid for international students.",
   "season": "summer",
-  "duration": "4 weeks (2026: July 11 to August 7), residential",
-  "status": "closed-expect-reopen",
-  "deadline_text": "2026 cycle: application opened December 1; deadline March 1, 2026; teacher recommendation March 4; decisions March 31; accept by April 15. No 2027 dates posted yet.",
-  "deadline_iso": null,
-  "deadline_confidence": "last-year-pattern",
+  "duration": "4 weeks (2027: July 10 to August 6), residential",
+  "status": "opens-soon",
+  "deadline_text": "Summer 2027: application opens Dec 1, 2026; deadline Mar 1, 2027; teacher recommendation Mar 5, 2027; decisions Mar 31, 2027; accept by Apr 15, 2027.",
+  "deadline_iso": "2027-03-01",
+  "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Online application with transcripts, one teacher or administrator recommendation uploaded by the recommender, and a 350 to 500 word essay. Financial aid materials are due by March 1.",
   "needs_work_permit": false,
   "url": "https://summer.virginia.edu/uva-advance",
@@ -34,8 +34,9 @@
     "https://summer.virginia.edu/uva-advance",
     "https://summer.virginia.edu/apply-to-uva-advance",
     "https://summer.virginia.edu/uva-advance-faqs",
-    "https://summer.virginia.edu/uva-advance-academic-experience"
+    "https://summer.virginia.edu/uva-advance-academic-experience",
+    "https://summer.virginia.edu/uva-advance-program-details"
   ],
   "priority": 2,
-  "notes": "Residents live in an air-conditioned residence hall with a 10 pm curfew. Travel, books, laundry and spending money are not included. Questions: UVaAdvance@virginia.edu, 434-243-2241. The Cost and Payment page was not read."
+  "notes": "You live in a dorm with a 10 pm curfew. Travel, books, laundry and spending money cost extra. Questions: UVaAdvance@virginia.edu, 434-243-2241."
 }
