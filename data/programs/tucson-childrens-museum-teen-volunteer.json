@@ -4,7 +4,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "fields": [
     "education"
@@ -31,8 +31,9 @@
   "deadline_text": "No deadline stated. Tell them your due date if you need service hours.",
   "how_to_apply": "Use the Apply now link on the volunteer page. You give contact info, free times, hours wanted, consent from a guardian and photo permission. Call (520) 792-9985 with questions.",
   "url": "https://childrensmuseumtucson.org/volunteer/",
-  "notes": "The museum hours listed on the page disagree, so confirm shift times.",
+  "notes": "The volunteer form and the hours page list different open days, so confirm shift times.",
   "sources_fetched": [
-    "https://childrensmuseumtucson.org/volunteer/"
+    "https://childrensmuseumtucson.org/volunteer/",
+    "https://childrensmuseumtucson.org/tucson-hours/"
   ]
 }

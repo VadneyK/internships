@@ -2,9 +2,9 @@
   "grades": null,
   "opens_iso": null,
   "deadline_iso": null,
-  "apply_url": null,
+  "apply_url": "https://anc.apm.activecommunities.com/mesaaz/activity/search?onlineSiteId=0&locale=en-US&activity_select_param=2&activity_keyword=junior%20lifeguard&viewMode=list",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "fields": [
     "sports"
@@ -22,17 +22,18 @@
   "type": "volunteer",
   "what_you_do": "Volunteer at Mesa pools in summer. You build the skills and attitude to become a lifeguard later.",
   "min_age": 13,
-  "max_age": 15,
-  "who_can_apply": "Ages 13 to 15.",
+  "max_age": 16,
+  "who_can_apply": "Ages 13 to 16. You must swim 50 yards, tread water for 60 seconds and swim 10 yards underwater.",
   "paid_type": "unpaid",
   "pay_detail": "Volunteer role. The page says it leads to future lifeguarding.",
   "season": "summer",
-  "duration": "Summer. Exact dates not listed.",
+  "duration": "Summer, at least 30 volunteer hours. Exact dates not listed.",
   "deadline_text": "No dates posted. The page gives only the season.",
-  "how_to_apply": "The page gives no steps. Contact Mesa Aquatics at 480-644-7529 or aquatics@mesaaz.gov.",
+  "how_to_apply": "Use the sign-up link for Junior Lifeguards. The page does not say if sign-up is open. Questions: 480-644-7529 or aquatics@mesaaz.gov.",
   "url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/H.Y.P.E.-Teen-Programs",
-  "notes": "Part of the City of Mesa H.Y.P.E. Teen Programs page.",
+  "notes": "Part of the City of Mesa H.Y.P.E. Teen Programs page. That page says ages 13 to 15, but the Junior Lifeguarding page says 13 to 16. Confirm your age fits.",
   "sources_fetched": [
-    "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/H.Y.P.E.-Teen-Programs"
+    "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/H.Y.P.E.-Teen-Programs",
+    "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Pools-and-Aquatics/Junior-Lifeguarding"
   ]
 }
