@@ -4,7 +4,7 @@
   "min_age": 14,
   "max_age": 19,
   "apply_url": null,
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-09",
   "needs_work_permit": null,
   "priority": 1,
@@ -28,11 +28,11 @@
   "status": "unconfirmed",
   "deadline_text": "The city page does not post 2027 dates. It says YES places students with local employers for six weeks each summer.",
   "deadline_confidence": "unknown",
-  "how_to_apply": "Apply through the Youth Employment Services page on the Champaign Unit 4 School District website (linked from the city page). That school page would not load for us, so confirm the steps with the district.",
+  "how_to_apply": "Apply through the Youth Employment Services page on the Champaign Unit 4 School District website (linked from the city page). That school page could not be read, so confirm the steps with the district.",
   "url": "https://champaignil.gov/equity-and-engagement-department/community-outreach-and-engagement-division/youth-employment-services/",
   "sources_fetched": [
     "https://champaignil.gov/equity-and-engagement-department/community-outreach-and-engagement-division/youth-employment-services/",
     "https://champaignil.gov/2024/07/03/2024-summer-youth-employment-program/"
   ],
-  "notes": "Only for students who attend Champaign Unit 4 schools. Illinois work permit rules were not checked."
+  "notes": "Only for students who attend Champaign Unit 4 schools. Illinois work permit rules were not checked. The city site blocked automated reading on Nov 4, 2026, and the school page showed only its title, so details are from Oct 9, 2026."
 }
