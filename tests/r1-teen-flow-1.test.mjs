@@ -14,13 +14,13 @@ async function loadHome() {
   return page;
 }
 
-test("r1-teen-flow-1: main sections run hero, job-now, start, soon, secret, moves, offer, young", async () => {
+test("r1-teen-flow-1: main sections run hero, job-now, start, soon, secret, moves, inside, offer, young", async () => {
   const { document, errors } = await loadHome();
 
   const main = document.querySelector("main");
   assert.ok(main, "page has a main element");
   const order = [...main.querySelectorAll(":scope > section")].map((s) => s.id || "(hero)");
-  assert.deepEqual(order, ["(hero)", "job-now", "start", "soon", "secret", "moves", "offer", "young"]);
+  assert.deepEqual(order, ["(hero)", "job-now", "start", "soon", "secret", "moves", "inside", "offer", "young"]);
   assert.deepEqual(errors, [], "no script errors on the page");
 });
 
