@@ -2222,7 +2222,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "priority": 3,
   "notes": "This is a contest, not a job. The page is for the 2026 contest. Expect similar timing next year, from August to late September.",
@@ -2251,7 +2251,7 @@
   "sources_fetched": [
    "https://a2so.org/yac/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "High school",
@@ -2301,8 +2301,8 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
-  "needs_work_permit": null,
+  "verified_on": "2026-11-04",
+  "needs_work_permit": true,
   "id": "ann-arbor-aadl-teen-volunteer",
   "name": "Ann Arbor District Library Volunteer Program (teens and adults)",
   "org": "Ann Arbor District Library",
@@ -2315,8 +2315,8 @@
    "education",
    "any"
   ],
-  "what_you_do": "Prepare materials for library programs, give occasional program support and do shelf reading. Shelving books is done by paid staff.",
-  "who_can_apply": "Anyone 14 or older. Ages 14 to 17 need a signed permission slip from a parent or guardian.",
+  "what_you_do": "Prepare materials for library programs and give occasional program support. Shelving books is done by paid staff.",
+  "who_can_apply": "Anyone 14 or older. Ages 14 to 17 must get a work permit through the state Youth Employment Permit Portal. On school days they can only volunteer after 3:30 p.m.",
   "paid_type": "unpaid",
   "pay_detail": "Unpaid",
   "season": "year-round",
@@ -2324,28 +2324,28 @@
   "status": "unconfirmed",
   "deadline_text": "The page lists no open or close dates. Fill out the online form, then attend a volunteer orientation.",
   "deadline_confidence": "unknown",
-  "how_to_apply": "Fill out the online volunteer application. After review you are contacted with details on signing up for a required volunteer orientation, then you pick shifts.",
+  "how_to_apply": "Fill out the online volunteer application. Teens send it in along with the work permit application. After review you are contacted with details on signing up for a required volunteer orientation, then you pick shifts.",
   "url": "https://aadl.org/volunteer",
   "sources_fetched": [
    "https://aadl.org/volunteer",
    "https://www.michigan.gov/leo/bureaus-agencies/ber/wage-and-hour/youth-employment-standards-act-yesa"
   ],
   "priority": 1,
-  "notes": "Older library posts mention a summer teen volunteer program. The current page only describes the year-round program. Michigan's Youth Employment Standards Act covers employers of anyone under 18, including volunteers. Ask the program if you need a work permit.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "Older library posts mention a summer teen volunteer program. The current page only describes the year-round program.",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Rising juniors and seniors (ideal)",
   "min_age": null,
   "max_age": null,
   "opens_iso": null,
-  "deadline_iso": null,
+  "deadline_iso": "2027-01-08",
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": null,
   "priority": 1,
-  "notes": "The page shows an Interest Form Closed button even though it says the form opens Oct 12, so check the page for the current status. Commuter program, so you live at home.",
+  "notes": "Commuter program, so you live at home.",
   "fields": [
    "health",
    "science"
@@ -2365,7 +2365,7 @@
   "season": "summer",
   "duration": "8 weeks, June 14 to Aug 6, 2027. You must be on campus at least 35 of the 40 days.",
   "status": "open-now",
-  "deadline_text": "The BioMed Focus 2027 interest form closes January 8, 2027 at 11:59 pm, per the program About page. That page does not give an opening date. The card earlier said the form opens Monday, Oct 12, 2026; the About page does not confirm that.",
+  "deadline_text": "The BioMed Focus 2027 interest form closes January 8, 2027 at 11:59 pm, per the program About page. That page does not give an opening date.",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Fill out the online interest form. One letter of recommendation is required. The page does not describe the later steps.",
   "url": "https://biomed-focus.medicine.umich.edu/about",
@@ -2373,7 +2373,7 @@
    "https://biomed-focus.medicine.umich.edu/home",
    "https://biomed-focus.medicine.umich.edu/about"
   ],
-  "verified_on_label": "Oct 10, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -2383,7 +2383,7 @@
   "apply_url": null,
   "needs_work_permit": true,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Chelsea is about 15 miles west of Ann Arbor. The library page says teen volunteers need a work permit even though the role is unpaid.",
   "id": "ann-arbor-chelsea-district-library-teen-service-group",
@@ -2414,7 +2414,7 @@
   "sources_fetched": [
    "https://www.chelseadistrictlibrary.org/about-us/support-the-library/volunteer/"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -2424,7 +2424,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "needs_work_permit": null,
   "id": "ann-arbor-food-gatherers-volunteer",
   "name": "Food Gatherers Volunteer Shifts (warehouse and Community Kitchen)",
@@ -2455,7 +2455,7 @@
   ],
   "priority": 2,
   "notes": "Not teen-specific, but a steady way for teens 14 and up to earn volunteer hours. Warehouse work involves moderate lifting. Groups of four or more use a separate group form. Michigan's youth employment page (Youth Employment Standards Act) says the law covers employers of anyone under 18 including volunteers, so ask the program whether a work permit is needed.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "High school (finished 9th grade for summer)",
@@ -2465,7 +2465,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": true,
   "priority": 1,
   "notes": "Michigan requires a work permit for workers under 18. From Oct 2, 2026 permits come through the state Youth Employment Permit Portal.",
@@ -2497,7 +2497,7 @@
    "https://www.growinghope.net/youth---schools",
    "https://www.michigan.gov/leo/bureaus-agencies/ber/wage-and-hour/youth-employment-standards-act-yesa"
   ],
-  "verified_on_label": "Oct 10, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -2536,20 +2536,20 @@
    "https://discoverscienceandnature.org/volunteer"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 3,
   "notes": "The page is short. It gives no age rule, hours, training or start dates, so email first. The Hands-On Museum's old address (aahom.org/volunteer) now sends you to this page. The Leslie wildlife application link goes to a file named Adult_Volunteer_Application.pdf, so ask Leslie before a teen applies for wildlife work.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
   "min_age": 12,
   "max_age": 17,
-  "opens_iso": null,
+  "opens_iso": "2026-11-16",
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-04",
   "needs_work_permit": null,
   "id": "ann-arbor-hshv-junior-volunteer",
   "name": "Junior Volunteer Program at Humane Society of Huron Valley",
@@ -2569,8 +2569,8 @@
   "pay_detail": "$205 program fee for the 6 session training (training, T-shirt, supplies). Limited scholarships for families with financial need.",
   "season": "year-round",
   "duration": "6 training sessions, then a 2 to 4 hour per month volunteer commitment",
-  "status": "open-now",
-  "deadline_text": "Registration for the November sessions (Nov 2 to 19) opens Mon Oct 19 at 8am; for the December sessions (Nov 30 to Dec 17) it opens Mon Nov 16 at 8am. Sessions are offered monthly and fill quickly.",
+  "status": "opens-soon",
+  "deadline_text": "Registration for the December sessions (Nov 30 to Dec 17) opens Nov 16, 2026 at 8am. The November sessions (Nov 2 to 19) have started. Sessions are offered monthly and fill quickly.",
   "deadline_confidence": "confirmed-2026-27",
   "how_to_apply": "Online registration only, which opens about 30 days before each session. You must attend all six classes; there are no make-ups, refunds or transfers. A waitlist is available.",
   "url": "https://www.hshv.org/get-involved/volunteer/junior-volunteer",
@@ -2580,8 +2580,8 @@
    "https://www.michigan.gov/leo/bureaus-agencies/ber/wage-and-hour/youth-employment-standards-act-yesa"
   ],
   "priority": 1,
-  "notes": "Demand is higher than space, so you may wait months. After training you volunteer without a parent present. Inactive for 6 months or more means retaking the training. Shelter is at 3100 Cherry Hill Rd, Ann Arbor. Michigan's youth employment page (Youth Employment Standards Act) says the law covers employers of anyone under 18 including volunteers, so ask the program whether a work permit is needed.",
-  "verified_on_label": "Oct 18, 2026"
+  "notes": "Demand is higher than space, so you may wait months. After training you volunteer without a parent present. Inactive for 6 months or more means retaking the training. The page also says to come in every 90 days to stay active, so ask. Shelter is at 3100 Cherry Hill Rd, Ann Arbor. Michigan's youth employment page (Youth Employment Standards Act) says the law covers employers of anyone under 18 including volunteers, so ask the program whether a work permit is needed.",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -2591,7 +2591,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "priority": 3,
   "notes": "This camp costs money. Check the page in spring for 2027 dates.",
@@ -2620,7 +2620,7 @@
   "sources_fetched": [
    "https://marquee-arts.org/film-camp/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -2630,7 +2630,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "priority": 2,
   "notes": "This prepares you for internships. It is a course, not a job. The same agency runs SummerWorks, a paid summer program, for Washtenaw County.",
@@ -2660,7 +2660,7 @@
    "https://www.mwse.org/sye/",
    "https://www.mwse.org/mi-internship-prep/"
   ],
-  "verified_on_label": "Oct 10, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -2671,7 +2671,7 @@
   "deadline_iso": null,
   "apply_url": "https://www.neutral-zone.org/teen-registration-form",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "priority": 2,
   "notes": "This is a free teen center, not a paid job. Future Corps for high schoolers meets the first Monday of each month, 4 to 6 PM, and helps with first-job support. Neutral Zone is at 310 E Washington St, Ann Arbor.",
@@ -2703,7 +2703,7 @@
    "https://www.neutral-zone.org/",
    "https://www.neutral-zone.org/school-year-programs-202627"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -2713,7 +2713,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "priority": 3,
   "notes": "The page also lists a monthly Career Panel for youth 13 to 20. It is the third Thursday at 5 PM at the Ypsilanti Drop-In Center, and food is served. A Peer Outreach Worker team for youth 15 to 19 was coming back in winter. WorkZone paid internships are for ages 18 to 20.",
@@ -2742,7 +2742,7 @@
   "sources_fetched": [
    "https://ozonehouse.org/how-we-help/job-training-leadership/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "ann-arbor-parks-lifeguard-certification",
@@ -2781,10 +2781,10 @@
    "https://www.michigan.gov/leo/initiatives/youth-employment"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 1,
-  "notes": "The lifeguard certification page says 15 year olds can join the Lifeguard in Training Volunteer Program. The recertification section says 15 year olds can be eligible for a city lifeguard job. These two statements differ. Ask the pool at 734-794-6237 what age you can be hired. Michigan says minors must get a work permit before starting a job unless exempt. The permit comes through a Michigan school. See the state youth employment page. You get no refund of the course fee if you fail the course.",
-  "verified_on_label": "Oct 9, 2026"
+  "notes": "The lifeguard certification page says 15 year olds can join the Lifeguard in Training Volunteer Program. The recertification section says 15 year olds can be eligible for a city lifeguard job. These two statements differ. Ask the pool at 734-794-6237 what age you can be hired. Michigan says minors must get a work permit before starting a job unless exempt. The permit comes through the state Youth Employment Permit Portal. See the state youth employment page. You get no refund of the course fee if you fail the course.",
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -2794,7 +2794,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": null,
   "priority": 3,
   "notes": "Ask staff whether a teen needs a parent signature. The page does not say.",
@@ -2824,7 +2824,7 @@
    "https://www.a2gov.org/parks-and-recreation/",
    "https://www.a2gov.org/parks-and-recreation/administrative/volunteer-in-the-parks/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Rising 9th grade (CIT); high school (counselor)",
@@ -2834,7 +2834,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": null,
   "priority": 3,
   "notes": "Ask whether the job is paid before you apply. The page also lists College and Career Prep for high school students, Monday to Thursday during the school year.",
@@ -2865,7 +2865,7 @@
    "https://www.peaceneighborhoodcenter.org/",
    "https://peaceneighborhoodcenter.org/programs/youth-services/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "ann-arbor-summer-festival-volunteer",
@@ -2902,10 +2902,10 @@
    "https://www.a2sf.org/volunteer-opportunities/"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "Seasonal: shifts are in the summer festival only. Usher spots for 2026 were closed. Check the page in spring for 2027 sign-up.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -2915,7 +2915,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "needs_work_permit": true,
   "id": "ann-arbor-summerworks-washtenaw",
   "name": "SummerWorks (Washtenaw County Summer Youth Employment Program)",
@@ -2949,7 +2949,7 @@
   ],
   "priority": 1,
   "notes": "A paid internship is not guaranteed: the site says a subset of participants is selected, though staff aim to match everyone. After acceptance you need I-9 identification documents and a bank account in your name for pay (this is for payroll, not a fee). Professional development is Tuesday or Wednesday evenings online, then Fridays 10am to 2pm in person from June. Michigan requires a work permit for minors under 18 to work; as of Oct 2, 2026 permits are issued through the state's Youth Employment Permit Portal, not schools. Contact: mail@summerworks.info.",
-  "verified_on_label": "Oct 9, 2026",
+  "verified_on_label": "Nov 4, 2026",
   "limited": true
  },
  {
@@ -2960,7 +2960,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "needs_work_permit": null,
   "id": "ann-arbor-trinity-health-teen-volunteer",
   "name": "Trinity Health Ann Arbor Teen Volunteer Program",
@@ -2992,7 +2992,7 @@
   ],
   "priority": 1,
   "notes": "Requirements listed for volunteers: interview, two TB skin tests, proof of varicella and MMR immunity, Tdap, this year's flu shot, health clearance form, one non-relative reference, and orientation; background checks apply to volunteers 18 and over. Also on the same page: The Farm at Trinity Health takes volunteers age 15 and up (no background check under 18). The Apply Now link is http, not https, so it is not in the apply_url field. Volunteer office phone is on the page. Michigan's youth employment page (Youth Employment Standards Act) says the law covers employers of anyone under 18 including volunteers, so ask the program whether a work permit is needed.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "ann-arbor-umich-electrify-tech-camp",
@@ -3060,7 +3060,7 @@
   "pay_detail": "Free for students and families.",
   "season": "summer",
   "duration": "A 2 week residential summer camp (July 5 to 17 in 2026), then monthly Saturday sessions.",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "2026 camp: July 5 to 17, 2026. The application was due April 5, 2026. 2027 dates are not posted.",
   "deadline_iso": null,
@@ -3073,10 +3073,10 @@
    "https://mez.engin.umich.edu/future-ready-scholars/",
    "https://mez.engin.umich.edu/"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 1,
-  "notes": "The program page says the summer camp is on the Ann Arbor campus, and the MEZ home page calls it a 2 week residential camp. The Michigan Engineering Zone is in Detroit (3663 Woodward Ave). Questions: mezdetroit@umich.edu.",
+  "notes": "The site blocked automated reading on Nov 4, 2026. Details are from Oct 19, 2026, so confirm them on the page. The program page says the summer camp is on the Ann Arbor campus, and the MEZ home page calls it a 2 week residential camp. The Michigan Engineering Zone is in Detroit (3663 Woodward Ave). Questions: mezdetroit@umich.edu.",
   "verified_on_label": "Oct 19, 2026"
  },
  {
@@ -3145,11 +3145,11 @@
   "pay_detail": "Cost covers tuition, a dorm room and meals, and differs by institute. In 2026 the Jazz Institute was $1,950. The application fee is $75 (fee waivers exist). Merit and need based scholarships are offered.",
   "season": "summer",
   "duration": "1 to 4 weeks, June 20 to July 31, 2027, by institute (for example Jazz July 4 to 10, Musical Theatre Workshop July 11 to 31).",
-  "status": "open-now",
+  "status": "unconfirmed",
   "opens_iso": null,
-  "deadline_text": "MPulse 2027 applications are open now. The priority deadline is February 1, 2027. After that, institutes take applications until they are full.",
+  "deadline_text": "As of Oct 19, 2026, the page showed MPulse 2027 applications were open. The priority deadline was listed as February 1, 2027. After that, institutes take applications until they are full.",
   "deadline_iso": null,
-  "deadline_confidence": "confirmed-2026-27",
+  "deadline_confidence": "unknown",
   "how_to_apply": "Pick an institute on the MPulse page. Apply online through Acceptd and send an audition video or a portfolio. Apply by the priority deadline to be in the running for scholarships.",
   "needs_work_permit": false,
   "url": "https://smtd.umich.edu/engagement-outreach/youth-programs/mpulse/",
@@ -3158,10 +3158,10 @@
    "https://smtd.umich.edu/engagement-outreach/youth-programs/mpulse/",
    "https://smtd.umich.edu/engagement-outreach/youth-programs/mpulse/jazz-institute/"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 2,
-  "notes": "Need based aid is for families with income of $125,000 or less. Michigan residents with family income of $75,000 or less can apply for the Watson A. Young scholarship. Students under 18 live in Bursley Hall and may not leave campus alone. 2027 dates for Girls in Music and Technology and the Harp Institute are not set. Questions: mpulse@umich.edu.",
+  "notes": "The site blocked automated reading on Nov 4, 2026. Details are from Oct 19, 2026, so confirm them on the page. Need based aid is for families with income of $125,000 or less. Michigan residents with family income of $75,000 or less can apply for the Watson A. Young scholarship. Students under 18 live in Bursley Hall and may not leave campus alone. 2027 dates for Girls in Music and Technology and the Harp Institute are not set. Questions: mpulse@umich.edu.",
   "verified_on_label": "Oct 19, 2026"
  },
  {
@@ -3187,7 +3187,7 @@
   "pay_detail": "Free (grant funded). Daily lunch, local field trips and materials are included.",
   "season": "summer",
   "duration": "4 weeks, Monday to Thursday, 9 a.m. to 3:30 p.m. (July 13 to August 6 in 2026). Commuter program: you do not stay overnight.",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "Summer 2026 applications are closed. The early action deadline was February 1, 2026 and the final deadline was March 1, 2026. 2027 dates are not posted.",
   "deadline_iso": null,
@@ -3199,10 +3199,10 @@
   "sources_fetched": [
    "https://stamps.umich.edu/pre-college/summer"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 2,
-  "notes": "The 2026 program was new and based on Dr. Jouha Min's lab in the College of Engineering. Student artwork can go to the BioArtography program.",
+  "notes": "The site blocked automated reading on Nov 4, 2026. Details are from Oct 19, 2026, so confirm them on the page. The 2026 program was new and based on Dr. Jouha Min's lab in the College of Engineering. Student artwork can go to the BioArtography program.",
   "verified_on_label": "Oct 19, 2026"
  },
  {
@@ -3226,7 +3226,7 @@
   "pay_detail": "2026: $6,000 for a residential session (living on campus), or $750 online. Some full and partial scholarships go to students with need and merit.",
   "season": "summer",
   "duration": "2 weeks. 2026 sessions: online June 15 to 26; residential July 12 to 25 or July 26 to August 8.",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "Summer 2026 applications are closed. The early action deadline was February 1, 2026 and the final deadline was March 1, 2026. 2027 dates are not posted.",
   "deadline_iso": null,
@@ -3239,10 +3239,10 @@
    "https://stamps.umich.edu/pre-college/summer",
    "https://stamps.umich.edu/pre-college/fall"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 3,
-  "notes": "Michigan residents in a residential session can also apply for the Watson A. Young scholarship. Stamps is not running fall pre-college programs this year.",
+  "notes": "The site blocked automated reading on Nov 4, 2026. Details are from Oct 19, 2026, so confirm them on the page. Michigan residents in a residential session can also apply for the Watson A. Young scholarship. Stamps is not running fall pre-college programs this year.",
   "verified_on_label": "Oct 19, 2026"
  },
  {
@@ -3267,7 +3267,7 @@
   "pay_detail": "2026: $475 for the week, paid after you are accepted. Need based scholarships are on the application. Bring your own lunch.",
   "season": "summer",
   "duration": "One week, Monday to Friday, 8:30 a.m. to 5 p.m. (June 15 to 19 in 2026). Day camp only, no overnight option.",
-  "status": "closed-expect-reopen",
+  "status": "unconfirmed",
   "opens_iso": null,
   "deadline_text": "Applications open February 15 and close May 15. Spots go as applications come in, so apply early. 2027 camp dates are not posted.",
   "deadline_iso": null,
@@ -3280,10 +3280,10 @@
    "https://wise.umich.edu/k-12-families/wise-gise/",
    "https://wise.umich.edu/k-12-families/"
   ],
-  "verified": "fetched",
+  "verified": "snippet-only",
   "verified_on": "2026-10-19",
   "priority": 2,
-  "notes": "Full refund up to May 15; after that a $100 charge if you cancel. Michigan families can also ask about the Watson A. Young scholarship through U-M YouthHub. Some 6th graders are taken if there is room.",
+  "notes": "The site blocked automated reading on Nov 4, 2026. Details are from Oct 19, 2026, so confirm them on the page. Full refund up to May 15; after that a $100 charge if you cancel. Michigan families can also ask about the Watson A. Young scholarship through U-M YouthHub. Some 6th graders are taken if there is room.",
   "verified_on_label": "Oct 19, 2026",
   "limited": true
  },
@@ -3295,7 +3295,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": null,
   "priority": 2,
   "notes": "Pay and meeting schedule are not stated on the page. Neutral Zone is at 310 E Washington St, Ann Arbor, phone (734) 214-9995.",
@@ -3326,7 +3326,7 @@
    "https://www.neutral-zone.org/wcyc",
    "https://www.neutral-zone.org/school-year-programs-202627"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "High school",
@@ -3336,7 +3336,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "priority": 3,
   "notes": "Programs differ by school. Ann Arbor, Chelsea, Dexter, Lincoln, Manchester, Milan, Saline, Whitmore Lake and Ypsilanti each list their own. Washtenaw ISD phone: (734) 994-8100.",
@@ -3356,7 +3356,7 @@
   "city": "Washtenaw County, MI",
   "type": "school-pathway",
   "what_you_do": "Take career classes while in high school. Your school may offer health science, car repair, cooking, computer safety, hair and skin care, welding, drones and more.",
-  "who_can_apply": "Students in the county school districts that run each program. The page says to contact your district CTE director or high school counselor. Other-district rules are not stated.",
+  "who_can_apply": "Students in the county school districts that run each program. The page says to contact your district CTE director or high school counselor. Chelsea, Dexter, Lincoln, Manchester, Milan and Saline share programs across their schools. Other rules are not stated.",
   "paid_type": "unpaid",
   "pay_detail": "Not stated",
   "season": "school-year",
@@ -3370,7 +3370,7 @@
    "https://www.washtenawisd.org/career-technical-education-home/",
    "https://www.washtenawisd.org/career-technical-education/programs/high-school/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "9 to 12",
@@ -3379,7 +3379,7 @@
   "apply_url": null,
   "needs_work_permit": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "notes": "The page does not list application deadlines or information night dates. It links to an Academic Dates page. WCC dual enrollment is not a job.",
   "id": "ann-arbor-wcc-dual-enrollment",
@@ -3409,7 +3409,7 @@
   "sources_fetched": [
    "https://www.wccnet.edu/start-now/high-school/dual-enroll.php"
   ],
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": "Currently in 8th grade (9th grade program) or 9th or 10th grade (Middle College)",
@@ -3460,7 +3460,7 @@
   "deadline_iso": null,
   "apply_url": "https://volunteer.bloomerang.co/volunteer/#/join-party?k=yy0iehuoo53eo5&e=62270&fromOrg",
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "needs_work_permit": null,
   "id": "ann-arbor-ymca-youth-volunteer-corps",
   "name": "Youth Volunteer Corps and youth volunteer roles at the Ann Arbor YMCA",
@@ -3493,7 +3493,7 @@
   ],
   "priority": 2,
   "notes": "The page's own link to a Youth Volunteer Corps page was a dead link when checked, so details of YVC projects and dates are not confirmed. The Y also lists other volunteer roles that appear aimed at adults. Michigan's youth employment page (Youth Employment Standards Act) says the law covers employers of anyone under 18 including volunteers, so ask the program whether a work permit is needed.",
-  "verified_on_label": "Oct 9, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -3503,7 +3503,7 @@
   "deadline_iso": null,
   "apply_url": "https://forms.gle/tc1QX8U4zxAHhUb17",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": true,
   "priority": 2,
   "notes": "The library says teens need a work permit even for this volunteer role. Michigan rules cover volunteers under 18. Permits now go through the state Youth Employment Permit Portal (since Oct 2, 2026).",
@@ -3534,7 +3534,7 @@
    "https://www.ypsilibrary.org/volunteer/",
    "https://www.ypsilibrary.org/interests/teens/youth-volunteers/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "grades": null,
@@ -3544,7 +3544,7 @@
   "deadline_iso": null,
   "apply_url": "https://www.ypsilibrary.org/services/youth-services/teen-advisory-group-2/",
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": true,
   "priority": 2,
   "notes": "The library says TAG members must fill out a work permit. Pokemon card game helpers meet Thursdays 5 to 6 PM starting October 1.",
@@ -3561,7 +3561,7 @@
   "city": "Ypsilanti, MI",
   "type": "volunteer",
   "what_you_do": "Teen Advisory Group members plan teen events. They lead them, write grants and talk to youth groups. Other roles are event helper and teen librarian aide (waitlist). Grades 10 to 12 can start their own project.",
-  "who_can_apply": "Teens ages 14 to 18. Create Your Own Project is for grades 10 to 12. The page gives no grade rule for the Teen Advisory Group.",
+  "who_can_apply": "Teens ages 14 to 18. Create Your Own Project is for grades 10 to 12. The Teen Advisory Group is for grades 8 to 12. Teen Librarian Assistant is for grades 9 to 12.",
   "paid_type": "unpaid",
   "pay_detail": "Unpaid. Earn volunteer hours.",
   "season": "school-year",
@@ -3573,9 +3573,10 @@
   "url": "https://www.ypsilibrary.org/volunteer/",
   "sources_fetched": [
    "https://www.ypsilibrary.org/volunteer/",
-   "https://www.ypsilibrary.org/interests/teens/youth-volunteers/"
+   "https://www.ypsilibrary.org/interests/teens/youth-volunteers/",
+   "https://www.ypsilibrary.org/services/youth-services/teen-advisory-group-2/"
   ],
-  "verified_on_label": "Oct 10, 2026"
+  "verified_on_label": "Nov 4, 2026"
  },
  {
   "id": "aquarium-of-the-pacific-voluntens",
