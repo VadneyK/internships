@@ -227,6 +227,41 @@ def home_jsonld(desc):
     return '\n<script type="application/ld+json">' + data + "</script>"
 
 
+# Labels for the home page table. The same words as TYPES in assets/js/lib.js (tests/test_home_guide_table.py checks them).
+TYPE_LABELS = {
+    "paid-youth-program": "Paid youth program", "internship": "Internship", "research": "Research",
+    "volunteer": "Volunteer", "shadowing": "Job shadowing", "pre-college": "Pre-college",
+    "apprenticeship-trades": "Trades", "civic-government": "Government and civic", "virtual": "Online",
+    "entrepreneurship": "Start something", "school-pathway": "School pathway", "leadership": "Leadership",
+}
+
+
+def home_guide_table():
+    """The "What is in this guide" table and sentence on the home page, counted from data/entries-stats.json at build time.
+    Every number is a count of cards in that file. Nothing here is typed by hand."""
+    rows = json.load(open(os.path.join(ROOT, "data", "entries-stats.json"), encoding="utf-8"))
+    by = {}
+    for e in rows:
+        by.setdefault(e["type"], []).append(e)
+
+    def line(label, items):
+        paid = sum(1 for e in items if e.get("paid_type") in ("paid", "stipend"))
+        unpaid = sum(1 for e in items if e.get("paid_type") in ("unpaid", "unpaid-credit"))
+        other = len(items) - paid - unpaid
+        lo = [e["min_age"] for e in items if isinstance(e.get("min_age"), int)]
+        hi = [e["max_age"] for e in items if isinstance(e.get("max_age"), int)]
+        ages = "%d to %d" % (min(lo), max(hi)) if lo and hi else "Not stated"
+        cells = (len(items), "%d paid,<br>%d unpaid,<br>%d other" % (paid, unpaid, other), ages)
+        return '        <tr><th scope="row">%s</th>' % label + "".join("<td>%s</td>" % v for v in cells) + "</tr>"
+
+    body = [line(TYPE_LABELS[t], items) for t, items in sorted(by.items(), key=lambda kv: (-len(kv[1]), kv[0]))]
+    body.append(line("All programs", rows))
+    read = sum(1 for e in rows if e.get("verified") == "fetched")
+    sentence = ("As of %s, this guide lists %d programs for teens, and %d of them were read on the program&#39;s own official page."
+                % (meta.get("checked_label", ""), len(rows), read))
+    return {"guide_rows": "\n".join(body), "guide_sentence": sentence}
+
+
 def build(name, lang="en"):
     raw = open(os.path.join(ES_DIR if lang == "es" else SRC, name + ".html"), encoding="utf-8").read()
     head, body = raw.split("\n---\n", 1)
@@ -279,6 +314,8 @@ def build(name, lang="en"):
         rep.update(jobs_static())
     if name == "permit":
         rep.update(permit_static())
+    if name == "index" and lang == "en":
+        rep.update(home_guide_table())
     if name in ("map", "ignition"):  # the Ignition page shows the same map, opened on the Bay Area
         rep.update(map_static())
     # The "Text this to a parent" link and Copy link button that assets/js/common.js adds to a .share-parent row, shipped in the

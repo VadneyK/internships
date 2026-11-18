@@ -28,8 +28,8 @@ const ES_TO_EN = new Map(LINKS.map((l) => [new URL(l.es).href, new URL(l.en).hre
 // A function gets the English main and returns the elements to drop.
 const EN_ONLY = {
   index: {
-    reason: "the age picker and the closing-soon list are drawn by home.js from English program cards",
-    drop: (m) => ["#picker", "#hubHelp", "#matchStatus", "#matches", "#matchMore", "#soonNote", "#soonStatus"].map((s) => m.querySelector(s)),
+    reason: "the age picker and the closing-soon list are drawn by home.js from English program cards; the What is in this guide table (#inside) counts the English cards and has no reviewed Spanish wording yet",
+    drop: (m) => ["#picker", "#hubHelp", "#matchStatus", "#matches", "#matchMore", "#soonNote", "#soonStatus", "#inside"].map((s) => m.querySelector(s)),
   },
   playbook: { reason: "nothing: the people map and the message builder run in Spanish too (es-playbook.js)", drop: () => [] },
   rules: { reason: "nothing: the Rules page has no tool", drop: () => [] },

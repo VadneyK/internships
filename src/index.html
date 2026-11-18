@@ -147,6 +147,23 @@ scripts: home
   </div>
 </section>
 
+<section id="inside">
+  <div class="wrap">
+    <h2>What is in this guide</h2>
+    <p>{{guide_sentence}} Each card names that page and the date it was last read.</p>
+    <div class="tablewrap" tabindex="0" role="region" aria-label="What is in this guide, by kind of program">
+      <table style="font-size:.88rem;">
+        <caption class="small muted" style="caption-side:bottom; text-align:left; padding:.6rem .75rem;">Counted from the guide&#39;s own data, last checked {{checked}}. "Paid" means the program pays the teen a wage or a stipend. "Other" means it costs a fee, the pay varies, or the page does not state pay. "Ages" is the youngest and oldest age any card of that kind states.</caption>
+        <thead><tr><th scope="col">Kind of program</th><th scope="col">Count</th><th scope="col">Pay</th><th scope="col">Ages</th></tr></thead>
+        <tbody>
+{{guide_rows}}
+        </tbody>
+      </table>
+    </div>
+    <p class="small" style="margin:.8rem 0 0;"><a href="find.html">Browse all {{count}} programs</a> or <a href="data/entries.csv">download the list (CSV)</a>.</p>
+  </div>
+</section>
+
 <section id="offer">
   <div class="wrap">
     <div class="card" style="display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between;">
