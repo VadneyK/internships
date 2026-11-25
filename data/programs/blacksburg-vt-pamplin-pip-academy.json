@@ -5,7 +5,7 @@
   "max_age": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-11-04",
   "priority": 2,
   "needs_work_permit": false,
   "deadline_iso": null,
@@ -13,7 +13,8 @@
     "business-finance"
   ],
   "sources_fetched": [
-    "https://pamplin.vt.edu/admissions/ug/pip.html"
+    "https://pamplin.vt.edu/admissions/ug/pip.html",
+    "https://admit.vt.edu/register/pip2026"
   ],
   "season": "summer",
   "id": "blacksburg-vt-pamplin-pip-academy",
@@ -27,12 +28,12 @@
   "what_you_do": "Spend ten days on campus. Learn about business majors like money, sales, hotels and real estate. Work on a team project. Meet teachers, graduates and company partners.",
   "who_can_apply": "High school students who start their senior year in 2026-27. You need a GPA of 3.5 out of 4.0 or the same in another scale. You need to have done or be doing pre-calculus. You also write a short note about why you are interested.",
   "paid_type": "unpaid",
-  "pay_detail": "Free. The page says cost of attendance is covered except travel to and from Blacksburg. No pay.",
-  "duration": "10 days, residential (page dates: Thursday July 9 to Saturday July 18)",
+  "pay_detail": "An earlier version of the page said costs were covered except travel to and from Blacksburg. The page no longer states a cost, so ask PCOBrecruiting@vt.edu. No pay.",
+  "duration": "10 days, residential (2026 session was July 9 to 18, per an earlier version of the page)",
   "status": "closed-expect-reopen",
-  "deadline_text": "Application deadline not shown on the page. The page shows the 2026 session; the next one for seniors in 2027-28 is not posted.",
+  "deadline_text": "Application deadline not shown on the page. The 2026 application form is closed. The next session for seniors in 2027-28 is not posted.",
   "deadline_confidence": "last-year-pattern",
-  "how_to_apply": "Use the Apply now link on the PIP page and submit a statement of interest. Questions: PCOBrecruiting@vt.edu.",
+  "how_to_apply": "Submit a statement of interest. The page shows no apply link as of Nov 4, 2026. Questions: PCOBrecruiting@vt.edu.",
   "url": "https://pamplin.vt.edu/admissions/ug/pip.html",
-  "notes": "Only for rising seniors, so a teen has one chance to apply. Travel to Blacksburg is on the family."
+  "notes": "Only for rising seniors, so a teen has one chance to apply."
 }

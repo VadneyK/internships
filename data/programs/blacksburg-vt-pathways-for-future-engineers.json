@@ -10,7 +10,7 @@
   "fields": [
     "engineering"
   ],
-  "what_you_do": "A Virginia Tech College of Engineering program for first generation college students. It offers summer engineering programs. The page does not say how long they are or how they run.",
+  "what_you_do": "A Virginia Tech engineering program for students who would be the first in their family to go to college. It runs two-week summer programs with team design projects and lab work. It also gives college application help and campus visits.",
   "min_age": null,
   "max_age": null,
   "grades": "Entering grades 10, 11 or 12",
@@ -18,12 +18,12 @@
   "paid_type": "unpaid",
   "pay_detail": "Cost is not stated on the program pages. Ask pathways@vt.edu.",
   "season": "summer",
-  "duration": "Not stated on the page",
-  "status": "unconfirmed",
+  "duration": "Up to 2 weeks (2026: June 14 to 27 for rising seniors, June 21 to 27 for rising 10th and 11th graders)",
+  "status": "closed-expect-reopen",
   "opens_iso": null,
-  "deadline_text": "The pages link a 2026 summer program and a 2026 application. No 2027 dates are posted.",
+  "deadline_text": "The 2026 deadline was May 31, 2026. Camps ran in June 2026. No 2027 dates are posted.",
   "deadline_iso": null,
-  "deadline_confidence": "unknown",
+  "deadline_confidence": "last-year-pattern",
   "how_to_apply": "Send in the Pathways application linked on the page. Contact Perry Martin at pathways@vt.edu with questions.",
   "needs_work_permit": false,
   "url": "https://eng.vt.edu/ceed/ceed-pre-college-programs/pathways.html",
@@ -31,10 +31,11 @@
   "sources_fetched": [
     "https://eng.vt.edu/ceed/ceed-pre-college-programs/pathways.html",
     "https://eng.vt.edu/ceed/ceed-pre-college-programs/pathways/pre-college-program.html",
-    "https://eng.vt.edu/ceed/ceed-pre-college-programs.html"
+    "https://eng.vt.edu/ceed/ceed-pre-college-programs.html",
+    "https://admit.vt.edu/register/Pathways2026"
   ],
   "verified": "fetched",
-  "verified_on": "2026-10-18",
+  "verified_on": "2026-11-04",
   "priority": 2,
-  "notes": "Only for Virginia residents who would be first generation college students. The pages do not say whether the summer program is free. The eligibility text on the page mentions students entering grades in the fall of 2025, so it may be out of date. Check the application link before you plan."
+  "notes": "Only for Virginia residents who would be first generation college students. Dates are from 2026. The pages do not say whether the summer program is free. The eligibility text on the page mentions students entering grades in the fall of 2025, so it may be out of date. Check the application link before you plan."
 }
