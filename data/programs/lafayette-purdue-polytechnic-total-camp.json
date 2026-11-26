@@ -3,7 +3,7 @@
   "deadline_iso": null,
   "apply_url": null,
   "verified": "fetched",
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-11-04",
   "needs_work_permit": false,
   "priority": 3,
   "max_age": null,
@@ -25,14 +25,15 @@
   "status": "unconfirmed",
   "deadline_text": "The program page is out of date. It only lists the June 23 to 27, 2025 session and posts no 2026 or 2027 dates. Email techrecruit@purdue.edu to ask about the next camp before you apply.",
   "deadline_confidence": "unknown",
-  "how_to_apply": "The page has a Register Now button linking to the Summer College registration site, but it shows no year. Contact techrecruit@purdue.edu or 765-494-4935.",
+  "how_to_apply": "The page shows no way to apply. It says Summer 2025 registration is closed. Contact techrecruit@purdue.edu or 765-494-4935.",
   "id": "lafayette-purdue-polytechnic-total-camp",
   "name": "TOTAL Camp (Turned Onto Technology and Leadership)",
   "what_you_do": "A week on the Purdue campus to learn about tech degrees. You work on a week long project with Polytechnic teachers. You earn one college credit.",
   "who_can_apply": "Rising 10th and 11th graders. Age limit not stated.",
-  "url": "https://old.polytechnic.purdue.edu/summer-diversity-camps/total-camp",
-  "notes": "This page looks old (2025 dates). Check Purdue Polytechnic and the Summer College site for current dates and cost before planning. The 2025 page lists $350 per person, including activities, lodging, meals and a camp t-shirt.",
+  "url": "https://polytechnic.purdue.edu/events/total-stem-camp",
+  "notes": "This page looks old (2025 dates). Check Purdue Polytechnic and the Summer College site for current dates and cost before planning. An older 2025 page listed $350 per person, including activities, lodging, meals and a camp t-shirt. The 2027 Summer College list does not name this camp as of Nov 4, 2026.",
   "sources_fetched": [
-    "https://old.polytechnic.purdue.edu/summer-diversity-camps/total-camp"
+    "https://polytechnic.purdue.edu/events/total-stem-camp",
+    "https://www.purdue.edu/summer-high-school/enrollment-options/Short-Term%20Courses.php"
   ]
 }
